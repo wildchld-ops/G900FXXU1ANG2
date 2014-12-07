@@ -76,8 +76,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Integer;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/GenericProperty;-><init>()V
 
@@ -112,9 +110,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Integer;Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Lcom/nuance/connect/store/PersistentDataStore;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/GenericProperty;-><init>()V
 
@@ -153,11 +148,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Integer;Lcom/nuance/connect/store/PersistentDataStore;IILcom/nuance/connect/internal/Property$Verifier;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Lcom/nuance/connect/store/PersistentDataStore;
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -218,8 +208,6 @@
 
 .method private static _helper(Lcom/nuance/connect/internal/Property;Ljava/lang/Object;Lcom/nuance/connect/internal/Property$Source;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -354,7 +342,6 @@
 
 .method private allowOverride(Lcom/nuance/connect/internal/Property$Source;)Z
     .locals 4
-    .param p1    # Lcom/nuance/connect/internal/Property$Source;
 
     const/4 v1, 0x1
 
@@ -433,8 +420,6 @@
 
 .method private loadPersistedData(Ljava/lang/Integer;Lcom/nuance/connect/internal/Property$Source;)V
     .locals 3
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
 
     const/4 v0, 0x0
 
@@ -580,7 +565,6 @@
 
 .method public addListener(Lcom/nuance/connect/internal/Property$ValueListener;Z)V
     .locals 2
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -715,8 +699,6 @@
 
 .method public set(Ljava/lang/Object;Lcom/nuance/connect/internal/Property$Source;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/GenericProperty;->reference:Lcom/nuance/connect/internal/Property;
 
@@ -727,7 +709,6 @@
 
 .method public setOverrideFlags(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/internal/GenericProperty$IntegerProperty;->overrideFlags:I
 
@@ -736,8 +717,6 @@
 
 .method public setValue(Ljava/lang/Integer;Lcom/nuance/connect/internal/Property$Source;)V
     .locals 1
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/GenericProperty$IntegerProperty;->value:Ljava/lang/Integer;
 
@@ -785,8 +764,6 @@
 
 .method public bridge synthetic setValue(Ljava/lang/Object;Lcom/nuance/connect/internal/Property$Source;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -819,8 +796,6 @@
 
 .method public verify(Ljava/lang/Object;Lcom/nuance/connect/internal/Property$Source;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/GenericProperty$IntegerProperty;->verifier:Lcom/nuance/connect/internal/Property$Verifier;
 

@@ -57,8 +57,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/personalpage/PersonalPageSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/personalpage/PersonalPageSettings;->callLockType(I)V
 
@@ -121,7 +119,6 @@
 
 .method private initSuppotedPKG(Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
 
     const v7, 0x7f0b037a
 
@@ -268,7 +265,6 @@
 
 .method private requestSecretBoxVerify(Ljava/lang/Boolean;)V
     .locals 7
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v3, 0x0
 
@@ -529,9 +525,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -824,7 +817,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -981,9 +973,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v2, 0x7f040157
 
@@ -1051,8 +1040,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -1065,8 +1052,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 8
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x0
 

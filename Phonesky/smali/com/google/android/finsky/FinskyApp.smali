@@ -209,7 +209,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/FinskyApp;)Lcom/google/android/finsky/library/LibraryReplicators;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/FinskyApp;
 
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp;->mLibraryReplicators:Lcom/google/android/finsky/library/LibraryReplicators;
 
@@ -218,7 +217,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/FinskyApp;)Lcom/android/volley/Cache;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/FinskyApp;
 
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp;->mBitmapCache:Lcom/android/volley/Cache;
 
@@ -227,7 +225,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/FinskyApp;)Lcom/android/volley/RequestQueue;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/FinskyApp;
 
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp;->mBitmapRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -236,7 +233,6 @@
 
 .method private checkForCrashOnLastRun(Landroid/content/Context;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Ljava/io/File;
 
@@ -430,8 +426,6 @@
 
 .method private downloadSuicidalTabsky(Ljava/lang/String;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -486,7 +480,6 @@
 
 .method public static drain(Lcom/android/volley/RequestQueue;)V
     .locals 1
-    .param p0    # Lcom/android/volley/RequestQueue;
 
     invoke-virtual {p0}, Lcom/android/volley/RequestQueue;->getSequenceNumber()I
 
@@ -499,8 +492,6 @@
 
 .method public static drain(Lcom/android/volley/RequestQueue;I)V
     .locals 1
-    .param p0    # Lcom/android/volley/RequestQueue;
-    .param p1    # I
 
     new-instance v0, Lcom/google/android/finsky/FinskyApp$1;
 
@@ -589,7 +580,6 @@
 
 .method public static getCacheDir(Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -608,9 +598,6 @@
 
 .method private setupAccountLibrariesAndReplicator(Landroid/os/Handler;Landroid/os/Handler;Lcom/google/android/finsky/library/Accounts;)V
     .locals 7
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Lcom/google/android/finsky/library/Accounts;
 
     new-instance v2, Lcom/google/android/finsky/library/SQLiteLibrary;
 
@@ -675,7 +662,6 @@
 
 .method private static updateCachedWidgetUrls(Lcom/google/android/finsky/api/model/DfeToc;)Z
     .locals 9
-    .param p0    # Lcom/google/android/finsky/api/model/DfeToc;
 
     const/4 v8, 0x4
 
@@ -835,7 +821,6 @@
 
 .method private static updateWidgetUrl(Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -897,7 +882,6 @@
 # virtual methods
 .method public clearCacheAsync(Ljava/lang/Runnable;)V
     .locals 4
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -918,8 +902,6 @@
 
 .method public drainAllRequests(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -948,7 +930,6 @@
 
 .method public getAnalytics(Ljava/lang/String;)Lcom/google/android/finsky/analytics/Analytics;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/analytics/DfeAnalytics;
 
@@ -1019,7 +1000,6 @@
 
 .method public getClientMutationCache(Ljava/lang/String;)Lcom/google/android/finsky/utils/ClientMutationCache;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1149,7 +1129,6 @@
 
 .method public getDfeApi(Ljava/lang/String;)Lcom/google/android/finsky/api/DfeApi;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1276,7 +1255,6 @@
 
 .method public getEventLogger(Landroid/accounts/Account;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 4
-    .param p1    # Landroid/accounts/Account;
 
     iget-object v3, p0, Lcom/google/android/finsky/FinskyApp;->mEventLoggers:Ljava/util/Map;
 
@@ -1332,7 +1310,6 @@
 
 .method public getEventLogger(Ljava/lang/String;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1, p0}, Lcom/google/android/finsky/api/AccountHandler;->findAccount(Ljava/lang/String;Landroid/content/Context;)Landroid/accounts/Account;
 
@@ -1361,7 +1338,6 @@
 
 .method public getExperiments(Ljava/lang/String;)Lcom/google/android/finsky/experiments/FinskyExperiments;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/FinskyApp;->mExperimentsByAccountName:Ljava/util/Map;
 
@@ -1542,7 +1518,6 @@
 
 .method public getVendingApi(Ljava/lang/String;)Lcom/google/android/vending/remoting/api/VendingApi;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp;->mApiFactory:Lcom/google/android/vending/remoting/api/VendingApiFactory;
 
@@ -2320,7 +2295,6 @@
 
 .method public setToc(Lcom/google/android/finsky/api/model/DfeToc;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
 
     iget-object v2, p0, Lcom/google/android/finsky/FinskyApp;->mToc:Lcom/google/android/finsky/api/model/DfeToc;
 
@@ -2363,7 +2337,6 @@
 
 .method public switchCurrentAccount(Landroid/accounts/Account;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
 
     iget-object v2, p0, Lcom/google/android/finsky/FinskyApp;->mDfeApis:Ljava/util/Map;
 

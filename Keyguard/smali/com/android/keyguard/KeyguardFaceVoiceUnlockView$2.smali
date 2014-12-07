@@ -92,7 +92,6 @@
 
 .method public updateVolume(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceVoiceUnlockView$2;->this$0:Lcom/android/keyguard/KeyguardFaceVoiceUnlockView;
 

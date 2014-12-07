@@ -134,7 +134,6 @@
 
 .method public static setGateEnabled(Z)V
     .locals 3
-    .param p0    # Z
 
     sput-boolean p0, Landroid/util/GateConfig;->sGateEnabled:Z
 
@@ -179,7 +178,6 @@
 
 .method public static setGateLcdtextEnabled(Z)V
     .locals 3
-    .param p0    # Z
 
     sput-boolean p0, Landroid/util/GateConfig;->sGateLcdtextEnabled:Z
 

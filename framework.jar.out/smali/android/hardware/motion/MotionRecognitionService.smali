@@ -210,7 +210,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/16 v8, 0x15
 
@@ -656,7 +655,6 @@
 
 .method static synthetic access$000(Landroid/hardware/motion/MotionRecognitionService;)Landroid/hardware/motion/MotionRecognitionReactiveAlert;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mReactiveAlert:Landroid/hardware/motion/MotionRecognitionReactiveAlert;
 
@@ -665,7 +663,6 @@
 
 .method static synthetic access$100(Landroid/hardware/motion/MotionRecognitionService;)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     invoke-direct {p0}, Landroid/hardware/motion/MotionRecognitionService;->initializeMotionEngine()V
 
@@ -674,7 +671,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/motion/MotionRecognitionService;)Landroid/hardware/motion/MotionRecognitionSAR;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mSARmotion:Landroid/hardware/motion/MotionRecognitionSAR;
 
@@ -683,7 +679,6 @@
 
 .method static synthetic access$1100(Landroid/hardware/motion/MotionRecognitionService;)Landroid/hardware/motion/MotionRecognitionSmartFace;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mSmartFace:Landroid/hardware/motion/MotionRecognitionSmartFace;
 
@@ -692,8 +687,6 @@
 
 .method static synthetic access$1200(Landroid/hardware/motion/MotionRecognitionService;I)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionService;->sendMotionEvent(I)V
 
@@ -702,9 +695,6 @@
 
 .method static synthetic access$1300(Landroid/hardware/motion/MotionRecognitionService;IZ)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/motion/MotionRecognitionService;->useSensor(IZ)V
 
@@ -713,9 +703,6 @@
 
 .method static synthetic access$1400(Landroid/hardware/motion/MotionRecognitionService;IZ)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/motion/MotionRecognitionService;->enableSensor(IZ)V
 
@@ -724,7 +711,6 @@
 
 .method static synthetic access$1500(Landroid/hardware/motion/MotionRecognitionService;)[I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mrefCntEvents:[I
 
@@ -733,7 +719,6 @@
 
 .method static synthetic access$1600(Landroid/hardware/motion/MotionRecognitionService;)[I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mrefCntEvents_open:[I
 
@@ -742,7 +727,6 @@
 
 .method static synthetic access$1700(Landroid/hardware/motion/MotionRecognitionService;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mrefSmartScroll:I
 
@@ -751,7 +735,6 @@
 
 .method static synthetic access$1710(Landroid/hardware/motion/MotionRecognitionService;)I
     .locals 2
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mrefSmartScroll:I
 
@@ -764,7 +747,6 @@
 
 .method static synthetic access$1800(Landroid/hardware/motion/MotionRecognitionService;)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     invoke-direct {p0}, Landroid/hardware/motion/MotionRecognitionService;->updateRegisteredEvents()V
 
@@ -773,7 +755,6 @@
 
 .method static synthetic access$1900(Landroid/hardware/motion/MotionRecognitionService;)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     invoke-direct {p0}, Landroid/hardware/motion/MotionRecognitionService;->disableUnusedSensors()V
 
@@ -782,7 +763,6 @@
 
 .method static synthetic access$200(Landroid/hardware/motion/MotionRecognitionService;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionService;->refPanningDEnabled:I
 
@@ -791,7 +771,6 @@
 
 .method static synthetic access$2000(Landroid/hardware/motion/MotionRecognitionService;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mbmultiwindow:Z
 
@@ -800,7 +779,6 @@
 
 .method static synthetic access$210(Landroid/hardware/motion/MotionRecognitionService;)I
     .locals 2
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionService;->refPanningDEnabled:I
 
@@ -813,7 +791,6 @@
 
 .method static synthetic access$2100(Landroid/hardware/motion/MotionRecognitionService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mContext:Landroid/content/Context;
 
@@ -822,7 +799,6 @@
 
 .method static synthetic access$2200(Landroid/hardware/motion/MotionRecognitionService;)[I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mPostMotionVal:[I
 
@@ -831,11 +807,6 @@
 
 .method static synthetic access$2300(Landroid/hardware/motion/MotionRecognitionService;IIII)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/hardware/motion/MotionRecognitionService;->sendMotionEvent(IIII)V
 
@@ -844,8 +815,6 @@
 
 .method static synthetic access$2402(Landroid/hardware/motion/MotionRecognitionService;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionService;->mIsFlat:Z
 
@@ -854,7 +823,6 @@
 
 .method static synthetic access$300(Landroid/hardware/motion/MotionRecognitionService;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mbEnabledPanning:Z
 
@@ -863,8 +831,6 @@
 
 .method static synthetic access$302(Landroid/hardware/motion/MotionRecognitionService;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionService;->mbEnabledPanning:Z
 
@@ -873,8 +839,6 @@
 
 .method static synthetic access$400(Landroid/hardware/motion/MotionRecognitionService;I)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionService;->controlMotionSensor(I)Z
 
@@ -885,7 +849,6 @@
 
 .method static synthetic access$500(Landroid/hardware/motion/MotionRecognitionService;)Landroid/hardware/motion/MotionRecognitionFlipCover;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mFlipCover:Landroid/hardware/motion/MotionRecognitionFlipCover;
 
@@ -894,7 +857,6 @@
 
 .method static synthetic access$600(Landroid/hardware/motion/MotionRecognitionService;)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     invoke-direct {p0}, Landroid/hardware/motion/MotionRecognitionService;->finalizeMotionEngine()V
 
@@ -903,7 +865,6 @@
 
 .method static synthetic access$700(Landroid/hardware/motion/MotionRecognitionService;)Landroid/hardware/motion/MotionRecognitionSettings;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mMotionSettings:Landroid/hardware/motion/MotionRecognitionSettings;
 
@@ -912,7 +873,6 @@
 
 .method static synthetic access$800(Landroid/hardware/motion/MotionRecognitionService;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mregisteredEvents_open:I
 
@@ -921,7 +881,6 @@
 
 .method static synthetic access$900(Landroid/hardware/motion/MotionRecognitionService;)Landroid/hardware/motion/MotionRecognitionGrip;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionService;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionService;->mGripMotion:Landroid/hardware/motion/MotionRecognitionGrip;
 
@@ -930,7 +889,6 @@
 
 .method private controlMotionSensor(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1034,7 +992,6 @@
 
 .method private enableAllSensors(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1059,8 +1016,6 @@
 
 .method private enableSensor(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/hardware/motion/MotionRecognitionManager;->isValidMotionSensor(I)Z
 
@@ -1442,7 +1397,6 @@
 
 .method private isSensorEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1470,7 +1424,6 @@
 
 .method private isSensorUsed(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1498,14 +1451,12 @@
 
 .method private sendBroadcastIntent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method private sendMotionEvent(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1516,10 +1467,6 @@
 
 .method private sendMotionEvent(IIII)V
     .locals 26
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move/from16 v5, p1
 
@@ -2174,7 +2121,6 @@
 
 .method private sendMotionEvent(Landroid/hardware/motion/MREvent;)V
     .locals 3
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     invoke-virtual {p1}, Landroid/hardware/motion/MREvent;->getMotion()I
 
@@ -2296,8 +2242,6 @@
 
 .method private useSensor(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/hardware/motion/MotionRecognitionManager;->isValidMotionSensor(I)Z
 
@@ -2342,9 +2286,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v7, p0, Landroid/hardware/motion/MotionRecognitionService;->mContext:Landroid/content/Context;
 
@@ -2799,9 +2740,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;II)V
     .locals 19
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3723,7 +3661,6 @@
 
 .method public setLogPath(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3771,8 +3708,6 @@
 
 .method public setMotionAngle(Landroid/os/IBinder;I)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3906,12 +3841,6 @@
 
 .method public setMotionTiltLevel(IIIIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4009,7 +3938,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;)V
     .locals 12
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4378,8 +4306,6 @@
 
 .method public useMotionAlways(Landroid/os/IBinder;Z)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

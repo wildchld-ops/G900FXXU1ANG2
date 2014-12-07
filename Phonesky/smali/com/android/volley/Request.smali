@@ -58,9 +58,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Lcom/android/volley/Response$ErrorListener;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
 
     const/4 v1, 0x0
 
@@ -141,8 +138,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/android/volley/Response$ErrorListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
 
     const/4 v0, -0x1
 
@@ -153,7 +148,6 @@
 
 .method static synthetic access$000(Lcom/android/volley/Request;)Lcom/android/volley/VolleyLog$MarkerLog;
     .locals 1
-    .param p0    # Lcom/android/volley/Request;
 
     iget-object v0, p0, Lcom/android/volley/Request;->mEventLog:Lcom/android/volley/VolleyLog$MarkerLog;
 
@@ -162,7 +156,6 @@
 
 .method private encodeParameters(Ljava/util/Map;Ljava/lang/String;)[B
     .locals 7
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -284,7 +277,6 @@
 # virtual methods
 .method public addMarker(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/volley/VolleyLog$MarkerLog;->ENABLED:Z
 
@@ -387,7 +379,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/volley/Request;
 
@@ -400,7 +391,6 @@
 
 .method public deliverError(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/android/volley/Request;->mErrorListener:Lcom/android/volley/Response$ErrorListener;
 
@@ -424,7 +414,6 @@
 
 .method finish(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/volley/Request;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -861,7 +850,6 @@
 
 .method protected parseNetworkError(Lcom/android/volley/VolleyError;)Lcom/android/volley/VolleyError;
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     return-object p1
 .end method
@@ -880,7 +868,6 @@
 
 .method public setCacheEntry(Lcom/android/volley/Cache$Entry;)V
     .locals 0
-    .param p1    # Lcom/android/volley/Cache$Entry;
 
     iput-object p1, p0, Lcom/android/volley/Request;->mCacheEntry:Lcom/android/volley/Cache$Entry;
 
@@ -889,7 +876,6 @@
 
 .method public setRequestQueue(Lcom/android/volley/RequestQueue;)V
     .locals 0
-    .param p1    # Lcom/android/volley/RequestQueue;
 
     iput-object p1, p0, Lcom/android/volley/Request;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -898,7 +884,6 @@
 
 .method public setRetryPolicy(Lcom/android/volley/RetryPolicy;)V
     .locals 0
-    .param p1    # Lcom/android/volley/RetryPolicy;
 
     iput-object p1, p0, Lcom/android/volley/Request;->mRetryPolicy:Lcom/android/volley/RetryPolicy;
 
@@ -907,7 +892,6 @@
 
 .method public final setSequence(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -920,7 +904,6 @@
 
 .method public final setShouldCache(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/volley/Request;->mShouldCache:Z
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public getHostService(Lcom/nuance/connect/host/service/HostInterface$HostService;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/nuance/connect/host/service/HostInterface$HostService;
 
     sget-object v0, Lcom/nuance/connect/host/service/HostInterface$HostService;->HOST_BUILD_SETTINGS:Lcom/nuance/connect/host/service/HostInterface$HostService;
 

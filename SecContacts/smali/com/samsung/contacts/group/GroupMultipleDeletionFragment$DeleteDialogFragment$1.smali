@@ -32,8 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;Landroid/content/Context;ILjava/util/List;Landroid/view/LayoutInflater;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment$1;->this$0:Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;
 
@@ -48,9 +46,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 

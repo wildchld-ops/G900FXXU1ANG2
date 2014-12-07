@@ -36,8 +36,6 @@
 # virtual methods
 .method public declared-synchronized getAuthScheme(Ljava/lang/String;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/auth/AuthScheme;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -164,8 +162,6 @@
 
 .method public declared-synchronized register(Ljava/lang/String;Lorg/apache/http/auth/AuthSchemeFactory;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/auth/AuthSchemeFactory;
 
     monitor-enter p0
 
@@ -265,7 +261,6 @@
 
 .method public declared-synchronized unregister(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

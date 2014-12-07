@@ -68,7 +68,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/AppsUsageService;->mBinder:Lcom/google/android/play/IUserContentService$Stub;
 

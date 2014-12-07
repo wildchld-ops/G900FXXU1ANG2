@@ -260,7 +260,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->languageDownload:Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
 
@@ -269,7 +268,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadableLanguageList:Ljava/util/List;
 
@@ -278,7 +276,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mCurrentDownloadId:I
 
@@ -287,8 +284,6 @@
 
 .method static synthetic access$1002(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mCurrentDownloadId:I
 
@@ -297,8 +292,6 @@
 
 .method static synthetic access$102(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadableLanguageList:Ljava/util/List;
 
@@ -307,7 +300,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadedLanguageList:Ljava/util/List;
 
@@ -316,8 +308,6 @@
 
 .method static synthetic access$202(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadedLanguageList:Ljava/util/List;
 
@@ -326,7 +316,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mUpdateableLanguageList:Ljava/util/List;
 
@@ -335,8 +324,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mUpdateableLanguageList:Ljava/util/List;
 
@@ -345,7 +332,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->setSharedPreferencesList()V
 
@@ -354,13 +340,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;IIZZII)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->createNotification(IIZZII)V
 
@@ -369,7 +348,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadingLanguageList:Ljava/util/List;
 
@@ -378,7 +356,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mAppointedDownloadLanguageList:Ljava/util/List;
 
@@ -387,9 +364,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;IZ)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->modifySharedPreferenceByDownloadLanguage(IZ)V
 
@@ -398,7 +372,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)Lcom/diotek/ime/framework/engine/InputEngineManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -560,12 +533,6 @@
 
 .method private createNotification(IIZZII)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
 
     sget-object v13, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mContext:Landroid/content/Context;
 
@@ -940,7 +907,6 @@
 
 .method private getXt9LanguageId(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1121,7 +1087,6 @@
 
 .method private modifySharedPreferenceByDeleteLanguage(I)V
     .locals 9
-    .param p1    # I
 
     iget-object v7, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadableLanguageSharedPreference:Landroid/content/SharedPreferences;
 
@@ -1221,8 +1186,6 @@
 
 .method private modifySharedPreferenceByDownloadLanguage(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v9, -0x1
 
@@ -1423,7 +1386,6 @@
 
 .method public static newInstance(Landroid/content/Context;)Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->sInstance:Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
@@ -1808,7 +1770,6 @@
 # virtual methods
 .method public cancelDownload(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1917,7 +1878,6 @@
 
 .method protected deleteCacheTempFile(Ljava/io/File;)V
     .locals 1
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1942,7 +1902,6 @@
 
 .method public deleteLanguage(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->languageDownload:Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
@@ -2012,7 +1971,6 @@
 
 .method public download(I)Z
     .locals 5
-    .param p1    # I
 
     const-string v2, "ACDownloadManager"
 
@@ -2105,7 +2063,6 @@
 
 .method public dummyDownload(ILjava/util/List;)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2167,7 +2124,6 @@
 
 .method protected extractFiles(Ljava/io/File;)Ljava/util/List;
     .locals 17
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2730,7 +2686,6 @@
 
 .method public register(ILjava/util/List;)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3022,7 +2977,6 @@
 
 .method public setLivingLanguage(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->manager:Lcom/nuance/swypeconnect/ac/ACManager;
 
@@ -3049,8 +3003,6 @@
 
 .method public setUpdateState(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadCBs:Ljava/util/HashMap;
 
@@ -3088,7 +3040,6 @@
 
 .method public setUseLivingLanguageFromSetting(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "ACDownloadManager"
 
@@ -3199,7 +3150,6 @@
 
 .method public declared-synchronized startProgressBarThread(Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;
 
     monitor-enter p0
 
@@ -3419,7 +3369,6 @@
 
 .method public unregister(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->mDownloadCBs:Ljava/util/HashMap;
 

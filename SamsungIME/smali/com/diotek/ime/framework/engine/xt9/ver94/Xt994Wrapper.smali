@@ -1210,7 +1210,6 @@
 
 .method private changeKDBNum(I)V
     .locals 16
-    .param p1    # I
 
     const/4 v12, 0x0
 
@@ -1562,7 +1561,6 @@
 
 .method private checkExclusionPattern(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->mExclusionPattern:Ljava/util/regex/Pattern;
 
@@ -1589,7 +1587,6 @@
 
 .method private explicitSymbol(I)S
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1656,7 +1653,6 @@
 
 .method private getAWInputWords(I)Ljava/lang/CharSequence;
     .locals 12
-    .param p1    # I
 
     iget v6, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mSuggestionCount:I
 
@@ -2112,7 +2108,6 @@
 
 .method private getCPInputWords(I)Ljava/lang/CharSequence;
     .locals 9
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -2500,7 +2495,6 @@
 
 .method private getInputWords(I)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2566,7 +2560,6 @@
 
 .method private getKInputWordsMultiTap(I)Ljava/lang/CharSequence;
     .locals 11
-    .param p1    # I
 
     const/16 v6, 0x20
 
@@ -2702,7 +2695,6 @@
 
 .method private getKInputWordsPrediction(I)Ljava/lang/CharSequence;
     .locals 16
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -3006,7 +2998,6 @@
 
 .method private getLastTermPunctIndex(Ljava/lang/CharSequence;)I
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, -0x1
 
@@ -3067,7 +3058,6 @@
 
 .method private getStartWordIndex(Ljava/lang/CharSequence;)I
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, -0x1
 
@@ -3293,7 +3283,6 @@
 
 .method private getWordStartIndex(Ljava/lang/CharSequence;)I
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, -0x1
 
@@ -4655,7 +4644,6 @@
 
 .method private lookupChar(I)I
     .locals 12
-    .param p1    # I
 
     const/16 v5, 0x80
 
@@ -5118,7 +5106,6 @@
 
 .method private lookupCharForAlbanian(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_SQ:[S
 
@@ -5161,7 +5148,6 @@
 
 .method private lookupCharForArabic(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_AR:[S
 
@@ -5218,7 +5204,6 @@
 
 .method private lookupCharForArmenian(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_HY:[S
 
@@ -5243,7 +5228,6 @@
 
 .method private lookupCharForAzerbaijan(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_AZ:[S
 
@@ -5316,7 +5300,6 @@
 
 .method private lookupCharForBulgarian(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_BG:[S
 
@@ -5341,7 +5324,6 @@
 
 .method private lookupCharForDanish(I)I
     .locals 8
-    .param p1    # I
 
     const/16 v7, 0xe6
 
@@ -5469,7 +5451,6 @@
 
 .method private lookupCharForEstonian(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_ET:[S
 
@@ -5524,7 +5505,6 @@
 
 .method private lookupCharForGreek(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->KEYMAP_QWERTY_EL:[S
 
@@ -5549,7 +5529,6 @@
 
 .method private lookupCharForHebrew(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_HE:[S
 
@@ -5574,7 +5553,6 @@
 
 .method private lookupCharForIcelandic(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_IS:[S
 
@@ -5626,7 +5604,6 @@
 
 .method private lookupCharForKorean(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_KO:[S
 
@@ -5651,7 +5628,6 @@
 
 .method private lookupCharForLithuanian(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_LT:[S
 
@@ -5738,7 +5714,6 @@
 
 .method private lookupCharForRussian(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->EXTEND_KEYMAP_RU:[S
 
@@ -5763,7 +5738,6 @@
 
 .method private lookupCharForTHAI(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->KEYMAP_QWERTY_TH:[S
 
@@ -5788,7 +5762,6 @@
 
 .method private lookupCharForTurkish(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->KEYMAP_QWERTY_TR:[S
 
@@ -5857,7 +5830,6 @@
 
 .method private lookupCharForTurkishF(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->KEYMAP_QWERTY_TR_F:[S
 
@@ -5924,7 +5896,6 @@
 
 .method private lookupCharForVIETNAMESE(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -5951,7 +5922,6 @@
 
 .method private processKey(I)S
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -6005,9 +5975,6 @@
 
 .method private processTap(IFF)S
     .locals 7
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x1
 
@@ -6044,7 +6011,6 @@
 
 .method private readDBdataFromFile(B)Z
     .locals 14
-    .param p1    # B
 
     const/4 v13, 0x4
 
@@ -6583,7 +6549,6 @@
 
 .method private setAutoAppend(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -6631,7 +6596,6 @@
 
 .method private setAutoSubstitution(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -6724,7 +6688,6 @@
 
 .method private setInputLanguage(I)S
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0xe1
 
@@ -6855,7 +6818,6 @@
 
 .method private setInputMode(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -7013,7 +6975,6 @@
 
 .method private setNextWordPrediction(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -7115,7 +7076,6 @@
 
 .method private setRegionalCorrectionOn(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -7290,7 +7250,6 @@
 
 .method private setUDBDelayedReorder(Z)S
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -7315,7 +7274,6 @@
 
 .method private setWordCompletion(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -7363,7 +7321,6 @@
 
 .method private setWordCompletionPoint(S)V
     .locals 4
-    .param p1    # S
 
     const/4 v0, 0x0
 
@@ -7401,7 +7358,6 @@
 
 .method private toUpperCaseOfTurkish(I)C
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x69
 
@@ -7446,8 +7402,6 @@
 # virtual methods
 .method public DLMAddWord([CS)S
     .locals 2
-    .param p1    # [C
-    .param p2    # S
 
     const/high16 v0, 0x6b6f0000
 
@@ -7484,8 +7438,6 @@
 
 .method public addAutoSubstitution(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/16 v4, 0x14
 
@@ -7649,7 +7601,6 @@
 
 .method public addMyWord(Ljava/lang/CharSequence;)I
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v5, 0x14
 
@@ -7764,7 +7715,6 @@
 
 .method public checkXT9WordWrappingRule(C)Z
     .locals 3
-    .param p1    # C
 
     const/4 v0, 0x1
 
@@ -7836,7 +7786,6 @@
 
 .method public convertCharSequenceToCharArray(Ljava/lang/CharSequence;)[C
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -7869,7 +7818,6 @@
 
 .method public convertCharSequenceToShortArray(Ljava/lang/CharSequence;)[S
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -7904,8 +7852,6 @@
 
 .method public convertChartArrayToCharSequence([CI)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # [C
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7938,8 +7884,6 @@
 
 .method public convertShortArrayToCharSequence([SI)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # [S
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7974,7 +7918,6 @@
 
 .method public deleteAutoSubstitution(Ljava/lang/CharSequence;)I
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->convertCharSequenceToShortArray(Ljava/lang/CharSequence;)[S
 
@@ -8115,7 +8058,6 @@
 
 .method public deleteLdb(I)V
     .locals 1
-    .param p1    # I
 
     int-to-short v0, p1
 
@@ -8126,7 +8068,6 @@
 
 .method public deleteMyWord(Ljava/lang/CharSequence;)I
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -8185,8 +8126,6 @@
 
 .method public deleteWordFromLDB([CS)S
     .locals 2
-    .param p1    # [C
-    .param p2    # S
 
     iget-short v0, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->mInputLanguageId:S
 
@@ -8211,7 +8150,6 @@
 
 .method public doNextWordPredictionForXt9(Z)I
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -8226,7 +8164,6 @@
 
 .method public doNoteWordDoneForXt9(I)I
     .locals 27
-    .param p1    # I
 
     const/16 v24, 0x0
 
@@ -8637,7 +8574,6 @@
 
 .method public doNoteWordDoneForXt9WithoutIndex(I)I
     .locals 14
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -8784,9 +8720,6 @@
 
 .method public doRecaptureForXt9(Ljava/lang/String;SZ)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
-    .param p3    # Z
 
     const/4 v9, 0x1
 
@@ -8977,8 +8910,6 @@
 
 .method public findWordFromDLM([CS)Z
     .locals 2
-    .param p1    # [C
-    .param p2    # S
 
     invoke-static {p1, p2}, Lcom/diotek/ime/framework/engine/xt9/Xt9core;->ET9AWDLMFindWord([CS)S
 
@@ -8999,7 +8930,6 @@
 
 .method public findWordInUDB(Ljava/lang/CharSequence;)I
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->convertCharSequenceToShortArray(Ljava/lang/CharSequence;)[S
 
@@ -9032,7 +8962,6 @@
 
 .method public getActiveIndex([I)I
     .locals 3
-    .param p1    # [I
 
     const/4 v2, 0x0
 
@@ -9318,7 +9247,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;)I
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
 
@@ -9380,8 +9308,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;I)I
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -9398,7 +9324,6 @@
 
 .method public getExactCharSequence(Ljava/lang/StringBuilder;)I
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v5, 0x0
 
@@ -9665,8 +9590,6 @@
 
 .method public getKeyPositionByTap(II)I
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x1
 
@@ -9834,7 +9757,6 @@
 
 .method public getKeyPositions([Landroid/graphics/Rect;)I
     .locals 7
-    .param p1    # [Landroid/graphics/Rect;
 
     const/4 v3, 0x0
 
@@ -9938,7 +9860,6 @@
 
 .method public getLanguageIDForEngine(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -10371,7 +10292,6 @@
 
 .method public getMultiTapSequence(I)Ljava/lang/StringBuilder;
     .locals 13
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -10513,7 +10433,6 @@
 
 .method public getMyWordsList(Ljava/util/ArrayList;Z)I
     .locals 8
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10712,7 +10631,6 @@
 
 .method public getPredictWord(Ljava/lang/CharSequence;Ljava/util/ArrayList;)I
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10758,7 +10676,6 @@
 
 .method public getSuggestion(Ljava/util/ArrayList;Z)I
     .locals 6
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10856,9 +10773,6 @@
 
 .method getWrappingWordFromContextBuffer(Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;[I)Ljava/lang/StringBuilder;
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/StringBuilder;
-    .param p3    # [I
 
     const/4 v4, 0x0
 
@@ -10969,7 +10883,6 @@
 
 .method public getXt9LanguageId(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -11547,9 +11460,6 @@
 
 .method public getXt9Version([SS[S)S
     .locals 1
-    .param p1    # [S
-    .param p2    # S
-    .param p3    # [S
 
     invoke-static {p1, p2, p3}, Lcom/diotek/ime/framework/engine/xt9/Xt9core;->ET9GetCodeVersion([SS[S)S
 
@@ -12056,7 +11966,6 @@
 
 .method public inputCharSequence(Ljava/lang/CharSequence;)I
     .locals 27
-    .param p1    # Ljava/lang/CharSequence;
 
     move-object/from16 v0, p0
 
@@ -12502,7 +12411,6 @@
 
 .method public inputKey(I)I
     .locals 11
-    .param p1    # I
 
     const/16 v10, 0xe1
 
@@ -12754,8 +12662,6 @@
 
 .method public inputKey(ILandroid/graphics/PointF;)I
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     const/16 v10, 0xe1
 
@@ -13042,9 +12948,6 @@
 
 .method public isAutoAcceptBeforeTrace([Landroid/graphics/PointF;I[Z)Z
     .locals 7
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
-    .param p3    # [Z
 
     if-nez p1, :cond_0
 
@@ -13112,7 +13015,6 @@
 
 .method public declared-synchronized isContainInLanguageDB(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -13217,8 +13119,6 @@
 
 .method public isExistInAutoSubstitutions([SLjava/lang/StringBuilder;)I
     .locals 7
-    .param p1    # [S
-    .param p2    # Ljava/lang/StringBuilder;
 
     const/16 v6, 0x40
 
@@ -13304,8 +13204,6 @@
 
 .method public isExistInMyWords([SZ)I
     .locals 4
-    .param p1    # [S
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -13346,7 +13244,6 @@
 
 .method public isNumericCharacter(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x30
 
@@ -13369,7 +13266,6 @@
 
 .method public isSentenceTermPunct(I)Z
     .locals 2
-    .param p1    # I
 
     iget-short v0, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->mInputLanguageId:S
 
@@ -13402,7 +13298,6 @@
 
 .method public isSentenceTermPunct(Ljava/lang/CharSequence;)Z
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x1
 
@@ -13452,7 +13347,6 @@
 
 .method public isTextCharacter(I)Z
     .locals 10
-    .param p1    # I
 
     const/16 v9, 0x39
 
@@ -13654,7 +13548,6 @@
 
 .method public isTreatedAsLetter(I)Z
     .locals 2
-    .param p1    # I
 
     const-string v0, "\'-#_"
 
@@ -13687,9 +13580,6 @@
 
 .method public processTrace([Landroid/graphics/PointF;IB)S
     .locals 11
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
-    .param p3    # B
 
     if-nez p1, :cond_1
 
@@ -13840,7 +13730,6 @@
 
 .method public processWhenPickSuggestionManually(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -13912,7 +13801,6 @@
 
 .method public refreshContextBuffer(Z)I
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -14061,8 +13949,6 @@
 
 .method public refreshContextBuffer(ZZ)I
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -14242,7 +14128,6 @@
 
 .method public setActiveWordStatusChangable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->mIsActiveWordStatusChangable:Z
 
@@ -14357,7 +14242,6 @@
 
 .method public setChinesePhoneticIndex(I)V
     .locals 4
-    .param p1    # I
 
     int-to-byte v1, p1
 
@@ -14397,10 +14281,6 @@
 
 .method public setHwrPanelRect(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -14460,7 +14340,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/Keyboard;)V
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -14516,7 +14395,6 @@
 
 .method public setKeyboardDatabase(Lcom/diotek/ime/framework/engine/xt9/XT9KeyboardDatabase;)I
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/engine/xt9/XT9KeyboardDatabase;
 
     const/4 v0, 0x0
 
@@ -14529,8 +14407,6 @@
 
 .method public setKeyboardOffset(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     int-to-short v0, p1
 
@@ -14543,8 +14419,6 @@
 
 .method public setKeyboardSize(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     int-to-short v0, p1
 
@@ -14842,7 +14716,6 @@
 
 .method public setXt9AutoReplacementCondition(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mXt9AutoReplacementCondition:Z
 
@@ -14851,7 +14724,6 @@
 
 .method public updateAcuteAccentState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget v1, p0, Lcom/diotek/ime/framework/engine/xt9/ver94/Xt994Wrapper;->mImeInputLanguage:I
 
@@ -15639,8 +15511,6 @@
 
 .method public wordSelected(ILjava/lang/CharSequence;)I
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 
@@ -15751,7 +15621,6 @@
 
 .method public writeDBdataToFile(B)V
     .locals 13
-    .param p1    # B
 
     const/4 v11, 0x0
 
@@ -17916,11 +17785,6 @@
 
 .method public writeWordToDLM([CIIZZ)S
     .locals 9
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     const/high16 v0, 0x6b6f0000
 

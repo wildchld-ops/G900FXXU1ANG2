@@ -96,10 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,10 +114,6 @@
 
 .method private build(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     if-eqz p3, :cond_0
 
@@ -167,8 +159,6 @@
 
 .method private findAuthenticatorDescription([Landroid/accounts/AuthenticatorDescription;Ljava/lang/String;)Landroid/accounts/AuthenticatorDescription;
     .locals 5
-    .param p1    # [Landroid/accounts/AuthenticatorDescription;
-    .param p2    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -205,8 +195,6 @@
 
 .method private getAppIconForActivity(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v2, 0x0
 
@@ -241,8 +229,6 @@
 
 .method private getAppIconForAuthenticator(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -288,8 +274,6 @@
 
 .method private getAppIconForPackage(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -324,8 +308,6 @@
 
 .method private getAppIconForResource(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -342,7 +324,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)I
     .locals 3
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     invoke-virtual {p1}, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;->getUpdateTime()J
 
@@ -367,7 +348,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
@@ -390,7 +370,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -424,8 +403,6 @@
 
 .method protected final getAppIcon(Lcom/android/incallui/callerinfocard/CallerInfoCardConstants$Icon;Ljava/lang/Object;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Lcom/android/incallui/callerinfocard/CallerInfoCardConstants$Icon;
-    .param p2    # Ljava/lang/Object;
 
     sget-object v0, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem$1;->$SwitchMap$com$android$incallui$callerinfocard$CallerInfoCardConstants$Icon:[I
 
@@ -640,8 +617,6 @@
 
 .method protected getUpdateTimeString(Landroid/content/Context;J)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const/high16 v7, 0x40000
 
@@ -763,7 +738,6 @@
 
 .method protected setAppIcon(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/android/incallui/callerinfocard/CallerInfoCardConstants$Icon;->RESOURCE:Lcom/android/incallui/callerinfocard/CallerInfoCardConstants$Icon;
 
@@ -782,7 +756,6 @@
 
 .method public final setDirty(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;->mDirty:Z
 
@@ -794,8 +767,6 @@
 
 .method protected setMainText(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -817,8 +788,6 @@
 
 .method protected setTitle(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -831,15 +800,12 @@
 
 .method protected setUpdateTime(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method protected startActivity(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;->mContext:Landroid/content/Context;

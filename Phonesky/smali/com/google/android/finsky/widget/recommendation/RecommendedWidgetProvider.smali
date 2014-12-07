@@ -44,8 +44,6 @@
 
 .method private static varargs getBaseWithVisibleViews(Landroid/content/Context;[I)Landroid/widget/RemoteViews;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # [I
 
     new-instance v4, Landroid/widget/RemoteViews;
 
@@ -114,7 +112,6 @@
 
 .method private static getRecommendationsBrowseUrl(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -155,10 +152,6 @@
 
 .method private static getWidgetWithTitle(Landroid/content/Context;Ljava/lang/String;II)Landroid/widget/RemoteViews;
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v10, 0x1
 
@@ -330,8 +323,6 @@
 
 .method private static showAccountsNeeded(Landroid/content/Context;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Lcom/google/android/finsky/widget/recommendation/RecommendedWidgetProvider;->getAddAccountIntent(Landroid/content/Context;)Landroid/app/PendingIntent;
 
@@ -346,8 +337,6 @@
 
 .method private static showConfigurationNeeded(Landroid/content/Context;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-class v1, Lcom/google/android/finsky/widget/recommendation/RecommendedTrampoline;
 
@@ -364,10 +353,6 @@
 
 .method public static showData(Landroid/content/Context;ILjava/lang/String;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p0, p2, p1, p3}, Lcom/google/android/finsky/widget/recommendation/RecommendedWidgetProvider;->getWidgetWithTitle(Landroid/content/Context;Ljava/lang/String;II)Landroid/widget/RemoteViews;
 
@@ -384,9 +369,6 @@
 
 .method public static showError(Landroid/content/Context;ILjava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -417,10 +399,6 @@
 
 .method private static showInteractiveError(Landroid/content/Context;IILandroid/app/PendingIntent;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/app/PendingIntent;
 
     const/4 v1, 0x2
 
@@ -471,10 +449,6 @@
 
 .method public onAppWidgetOptionsChanged(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -495,9 +469,6 @@
 
 .method protected varargs updateWidgets(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 

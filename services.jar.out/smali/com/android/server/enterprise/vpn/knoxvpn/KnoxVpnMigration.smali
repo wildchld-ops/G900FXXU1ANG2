@@ -139,10 +139,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnStorageProvider;Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnStorageProvider;
-    .param p3    # Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -219,7 +215,6 @@
 
 .method private checkValidationForValues(Landroid/os/Bundle;)Z
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x5
 
@@ -2234,10 +2229,6 @@
 
 .method private replaceEnterpriseVpnInDb(ILjava/lang/String;Ljava/lang/String;I)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     if-eqz p2, :cond_0
 
@@ -2450,7 +2441,6 @@
 
 .method private replaceFipsVpnTableInDb(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -2529,7 +2519,6 @@
 
 .method private replaceVpnTableInDb(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -2673,8 +2662,6 @@
 
 .method private updateEnterpriseVpnInDb(Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -2807,7 +2794,6 @@
 
 .method private writePkgToDB(Landroid/content/ContentValues;)I
     .locals 14
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v9, 0x0
 
@@ -3325,7 +3311,6 @@
 
 .method private writeProfileToDB(Landroid/content/ContentValues;)I
     .locals 21
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v12, 0x0
 
@@ -4024,9 +4009,6 @@
 
 .method public deleteDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnMigration;->mStorageDbHelper:Lcom/android/server/enterprise/vpn/knoxvpn/VpnStorageHelper;
 
@@ -4039,10 +4021,6 @@
 
 .method public getDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4293,10 +4271,6 @@
 
 .method public putDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnMigration;->mStorageDbHelper:Lcom/android/server/enterprise/vpn/knoxvpn/VpnStorageHelper;
 
@@ -4449,8 +4423,6 @@
 
 .method public declared-synchronized sendMigrationSuccessIntent(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

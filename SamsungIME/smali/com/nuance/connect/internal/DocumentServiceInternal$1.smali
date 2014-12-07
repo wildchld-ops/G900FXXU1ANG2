@@ -89,8 +89,6 @@
 
 .method public handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DocumentServiceInternal$1;->this$0:Lcom/nuance/connect/internal/DocumentServiceInternal;
 

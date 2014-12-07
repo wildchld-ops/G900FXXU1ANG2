@@ -194,7 +194,6 @@
 
 .method public setAcceptLanguage(Ljava/util/Locale;)V
     .locals 2
-    .param p1    # Ljava/util/Locale;
 
     const-string v0, ""
 
@@ -255,7 +254,6 @@
 
 .method public setLanguageRange(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -268,7 +266,6 @@
 
 .method public setQValue(F)V
     .locals 4
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

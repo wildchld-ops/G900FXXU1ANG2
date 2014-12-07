@@ -45,12 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/receivers/Installer;Lcom/google/android/finsky/utils/Notifier;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/library/LibraryReplicators;Lcom/google/android/finsky/library/Accounts;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/receivers/Installer;
-    .param p3    # Lcom/google/android/finsky/utils/Notifier;
-    .param p4    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p5    # Lcom/google/android/finsky/library/LibraryReplicators;
-    .param p6    # Lcom/google/android/finsky/library/Accounts;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,8 +79,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/DfeNotificationManagerImpl;Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/DfeNotificationManagerImpl;
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/DfeNotificationManagerImpl;->handleNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
 
@@ -95,7 +87,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/DfeNotificationManagerImpl;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/DfeNotificationManagerImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/DfeNotificationManagerImpl;->mPendingAcks:Ljava/util/List;
 
@@ -104,7 +95,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/DfeNotificationManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/DfeNotificationManagerImpl;
 
     invoke-direct {p0}, Lcom/google/android/finsky/DfeNotificationManagerImpl;->savePendingAcks()V
 
@@ -113,7 +103,6 @@
 
 .method private ackNotification(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -138,7 +127,6 @@
 
 .method private ackPendingNotifications(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/DfeNotificationManagerImpl;->ackNotification(Ljava/lang/String;)V
 
@@ -178,7 +166,6 @@
 
 .method private static containsIabMutations(Lcom/google/android/finsky/protos/Library$LibraryUpdate;)Z
     .locals 9
-    .param p0    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
 
     const/4 v4, 0x1
 
@@ -231,7 +218,6 @@
 
 .method private handleCheckPromoOffersNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     const/4 v4, 0x1
 
@@ -270,7 +256,6 @@
 
 .method private handleInAppNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     iget-object v0, p0, Lcom/google/android/finsky/DfeNotificationManagerImpl;->mContext:Landroid/content/Context;
 
@@ -289,7 +274,6 @@
 
 .method private handleLibraryDirtyNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     const/4 v7, 0x1
 
@@ -409,7 +393,6 @@
 
 .method private handleNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     const/4 v8, 0x1
 
@@ -615,7 +598,6 @@
 
 .method private handlePurchaseDeclinedNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     const/4 v5, 0x0
 
@@ -670,7 +652,6 @@
 
 .method private handlePurchaseDeliveryNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 18
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     move-object/from16 v0, p1
 
@@ -807,7 +788,6 @@
 
 .method private handlePurchaseRemovalNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     const/4 v3, 0x0
 
@@ -936,7 +916,6 @@
 
 .method private handleUserNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/Notifications$Notification;->userNotificationData:Lcom/google/android/finsky/protos/Notifications$UserNotificationData;
 
@@ -1005,7 +984,6 @@
 
 .method private makeReplicatorDebugTag(Lcom/google/android/finsky/protos/Notifications$Notification;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1111,7 +1089,6 @@
 # virtual methods
 .method public processNotification(Lcom/google/android/finsky/protos/Notifications$Notification;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/Notifications$Notification;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 

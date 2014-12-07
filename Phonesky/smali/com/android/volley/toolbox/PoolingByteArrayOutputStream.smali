@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/toolbox/ByteArrayPool;I)V
     .locals 2
-    .param p1    # Lcom/android/volley/toolbox/ByteArrayPool;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
@@ -36,7 +34,6 @@
 
 .method private expand(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -122,7 +119,6 @@
 
 .method public declared-synchronized write(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -149,9 +145,6 @@
 
 .method public declared-synchronized write([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 

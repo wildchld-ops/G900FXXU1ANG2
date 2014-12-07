@@ -34,7 +34,6 @@
 
 .method public static base64Decode(Ljava/lang/String;)[B
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lorg/apache/http/impl/client/secgbaclient/util/GbaUtil;->Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
@@ -121,7 +120,6 @@
 
 .method public static base64Encode(Ljava/lang/String;)[B
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -184,7 +182,6 @@
 
 .method public static bytesToHexString([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -253,7 +250,6 @@
 
 .method private static hexCharToInt(C)I
     .locals 3
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -332,7 +328,6 @@
 
 .method public static hexStringToBytes(Ljava/lang/String;)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -390,7 +385,6 @@
 
 .method public static printRequest(Lorg/apache/http/HttpRequest;)V
     .locals 4
-    .param p0    # Lorg/apache/http/HttpRequest;
 
     sget-object v1, Lorg/apache/http/impl/client/secgbaclient/util/GbaUtil;->Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 
@@ -471,7 +465,6 @@
 
 .method public static printResponse(Lorg/apache/http/HttpResponse;)V
     .locals 4
-    .param p0    # Lorg/apache/http/HttpResponse;
 
     sget-object v1, Lorg/apache/http/impl/client/secgbaclient/util/GbaUtil;->Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 

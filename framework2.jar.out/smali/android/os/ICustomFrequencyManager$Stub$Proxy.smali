@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,10 +36,6 @@
 # virtual methods
 .method public acquireDVFSLock(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -98,10 +93,6 @@
 
 .method public acquirePersistentDVFSLock(IIILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -167,7 +158,6 @@
 
 .method public checkCPUBoostRange(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -230,7 +220,6 @@
 
 .method public checkFrameRateRange(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -293,7 +282,6 @@
 
 .method public checkGPUFrequencyRange(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -356,7 +344,6 @@
 
 .method public checkSysBusFrequencyRange(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -427,7 +414,6 @@
 
 .method public getRemainUsageTime(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -854,7 +840,6 @@
 
 .method public mpdUpdate(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -906,8 +891,6 @@
 
 .method public notifyWmAniationState(JZ)V
     .locals 5
-    .param p1    # J
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -968,9 +951,6 @@
 
 .method public releaseCPUCore(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1026,8 +1006,6 @@
 
 .method public releaseDVFSLock(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1081,9 +1059,6 @@
 
 .method public releaseGPU(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1139,8 +1114,6 @@
 
 .method public releasePersistentDVFSLock(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1194,9 +1167,6 @@
 
 .method public releaseSysBus(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1252,10 +1222,6 @@
 
 .method public requestCPUCore(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1313,8 +1279,6 @@
 
 .method public requestCPUUpdate(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1368,10 +1332,6 @@
 
 .method public requestGPU(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1429,9 +1389,6 @@
 
 .method public requestLCDFrameRate(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1487,9 +1444,6 @@
 
 .method public requestMMCBurstRate(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1545,7 +1499,6 @@
 
 .method public requestMpParameterUpdate(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1597,10 +1550,6 @@
 
 .method public requestSysBus(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1658,8 +1607,6 @@
 
 .method public restoreLCDFrameRate(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1713,7 +1660,6 @@
 
 .method public restoreMMCBurstRate(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1765,8 +1711,6 @@
 
 .method public reviewPackage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1820,8 +1764,6 @@
 
 .method public sendCommandToSSRM(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/appstate/SQLiteInstallerDataStore;Landroid/content/Context;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/SQLiteInstallerDataStore$Helper;->this$0:Lcom/google/android/finsky/appstate/SQLiteInstallerDataStore;
 
@@ -38,7 +37,6 @@
 
 .method private recreateDatabase(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     :try_start_0
     const-string v0, "DROP TABLE appstate"
@@ -62,7 +60,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE appstate (package_name STRING, auto_update INTEGER, desired_version INTEGER, download_uri STRING, delivery_data BLOB, delivery_data_timestamp_ms INTEGER,installer_state INTEGER, first_download_ms INTEGER, referrer STRING, account STRING, title STRING,flags INTEGER, continue_url STRING, last_notified_version INTEGER, last_update_timestamp_ms INTEGER, account_for_update STRING, auto_acquire_tags STRING, PRIMARY KEY (package_name))"
 
@@ -73,9 +70,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "Downgrading InstallerDataStore from %d to %d"
 
@@ -108,9 +102,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     packed-switch p2, :pswitch_data_0
 

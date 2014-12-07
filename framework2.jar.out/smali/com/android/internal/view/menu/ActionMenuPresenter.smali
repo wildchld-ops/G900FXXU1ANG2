@@ -74,7 +74,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/view/menu/ActionMenuPresenter;)Lcom/android/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu;
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/ActionMenuPresenter;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mActionButtonPopup:Lcom/android/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu;
 
@@ -131,8 +129,6 @@
 
 .method static synthetic access$102(Lcom/android/internal/view/menu/ActionMenuPresenter;Lcom/android/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu;)Lcom/android/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu;
     .locals 0
-    .param p0    # Lcom/android/internal/view/menu/ActionMenuPresenter;
-    .param p1    # Lcom/android/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mActionButtonPopup:Lcom/android/internal/view/menu/ActionMenuPresenter$ActionButtonSubmenu;
 
@@ -141,7 +137,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/view/menu/ActionMenuPresenter;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/ActionMenuPresenter;
 
     iget-boolean v0, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mIsParentThemeDeviceDefault:Z
 
@@ -150,8 +145,6 @@
 
 .method static synthetic access$302(Lcom/android/internal/view/menu/ActionMenuPresenter;Lcom/android/internal/view/menu/ActionMenuPresenter$OverflowPopup;)Lcom/android/internal/view/menu/ActionMenuPresenter$OverflowPopup;
     .locals 0
-    .param p0    # Lcom/android/internal/view/menu/ActionMenuPresenter;
-    .param p1    # Lcom/android/internal/view/menu/ActionMenuPresenter$OverflowPopup;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mOverflowPopup:Lcom/android/internal/view/menu/ActionMenuPresenter$OverflowPopup;
 
@@ -160,7 +153,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/view/menu/ActionMenuPresenter;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/ActionMenuPresenter;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mOverflowButton:Landroid/view/View;
 
@@ -169,8 +161,6 @@
 
 .method static synthetic access$502(Lcom/android/internal/view/menu/ActionMenuPresenter;Lcom/android/internal/view/menu/ActionMenuPresenter$OpenOverflowRunnable;)Lcom/android/internal/view/menu/ActionMenuPresenter$OpenOverflowRunnable;
     .locals 0
-    .param p0    # Lcom/android/internal/view/menu/ActionMenuPresenter;
-    .param p1    # Lcom/android/internal/view/menu/ActionMenuPresenter$OpenOverflowRunnable;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mPostedOpenRunnable:Lcom/android/internal/view/menu/ActionMenuPresenter$OpenOverflowRunnable;
 
@@ -179,7 +169,6 @@
 
 .method private findViewForItem(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v5, 0x0
 
@@ -238,8 +227,6 @@
 # virtual methods
 .method public bindItemView(Lcom/android/internal/view/menu/MenuItemImpl;Lcom/android/internal/view/menu/MenuView$ItemView;)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
-    .param p2    # Lcom/android/internal/view/menu/MenuView$ItemView;
 
     const/4 v2, 0x0
 
@@ -276,8 +263,6 @@
 
 .method public filterLeftoverView(Landroid/view/ViewGroup;I)Z
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -909,9 +894,6 @@
 
 .method public getItemView(Lcom/android/internal/view/menu/MenuItemImpl;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Lcom/android/internal/view/menu/MenuItemImpl;->getActionView()Landroid/view/View;
 
@@ -993,7 +975,6 @@
 
 .method public getMenuView(Landroid/view/ViewGroup;)Lcom/android/internal/view/menu/MenuView;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/BaseMenuPresenter;->getMenuView(Landroid/view/ViewGroup;)Lcom/android/internal/view/menu/MenuView;
 
@@ -1079,8 +1060,6 @@
 
 .method public initForMenu(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
 
     const/4 v7, 0x0
 
@@ -1289,8 +1268,6 @@
 
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/internal/view/menu/ActionMenuPresenter;->dismissPopupMenus()Z
 
@@ -1301,7 +1278,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 14
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-boolean v9, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mIsParentThemeDeviceDefault:Z
 
@@ -1549,7 +1525,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 5
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v1, p1
 
@@ -1597,7 +1572,6 @@
 
 .method public onSubMenuSelected(Lcom/android/internal/view/menu/SubMenuBuilder;)Z
     .locals 5
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     const/4 v2, 0x0
 
@@ -1684,7 +1658,6 @@
 
 .method public onSubUiVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1707,7 +1680,6 @@
 
 .method public setExpandedActionViewsExclusive(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mExpandedActionViewsExclusive:Z
 
@@ -1716,7 +1688,6 @@
 
 .method public setItemLimit(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mMaxItems:I
 
@@ -1729,7 +1700,6 @@
 
 .method public setMaxItemsSet(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mMaxItemsSet:Z
 
@@ -1738,7 +1708,6 @@
 
 .method public setReserveOverflow(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mReserveOverflow:Z
 
@@ -1751,8 +1720,6 @@
 
 .method public setWidthLimit(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iput p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mWidthLimit:I
 
@@ -1767,8 +1734,6 @@
 
 .method public setWidthLimitSet(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter;->mWidthLimitSet:Z
 
@@ -1779,8 +1744,6 @@
 
 .method public shouldIncludeItem(ILcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     invoke-virtual {p2}, Lcom/android/internal/view/menu/MenuItemImpl;->isActionButton()Z
 
@@ -1869,7 +1832,6 @@
 
 .method public updateMenuView(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v10, 0x1
 
@@ -2167,8 +2129,6 @@
 
 .method public updateWidthLimit(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 

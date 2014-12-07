@@ -882,9 +882,6 @@
 
 .method public static getErrorDialog(ILandroid/app/Activity;I)Landroid/app/Dialog;
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -899,11 +896,6 @@
 
 .method public static getErrorDialog(ILandroid/app/Activity;ILandroid/content/DialogInterface$OnCancelListener;I)Landroid/app/Dialog;
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
-    .param p4    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1166,9 +1158,6 @@
 
 .method public static getGooglePlayServicesAvailabilityRecoveryIntent(Landroid/content/Context;II)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1237,7 +1226,6 @@
 
 .method public static isGooglePlayServicesAvailable(Landroid/content/Context;)I
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/16 v0, 0x9
 

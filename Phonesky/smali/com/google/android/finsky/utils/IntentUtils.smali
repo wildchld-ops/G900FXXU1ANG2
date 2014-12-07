@@ -70,9 +70,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;Ljava/lang/String;Landroid/content/pm/PackageManager;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     invoke-static {p0, p1, p2}, Lcom/google/android/finsky/utils/IntentUtils;->createLaunchIntent(Ljava/lang/String;Ljava/lang/String;Landroid/content/pm/PackageManager;)Landroid/content/Intent;
 
@@ -83,9 +80,6 @@
 
 .method public static buildConsumptionAppLaunchIntent(Landroid/content/Context;ILjava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/google/android/finsky/utils/IntentUtils;->getConsumptionApp(I)Lcom/google/android/finsky/utils/IntentUtils$ConsumptionApp;
 
@@ -100,9 +94,6 @@
 
 .method public static buildConsumptionAppManageItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getBackend()I
 
@@ -121,9 +112,6 @@
 
 .method public static buildConsumptionAppViewItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getBackend()I
 
@@ -142,8 +130,6 @@
 
 .method public static buildShareIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -194,8 +180,6 @@
 
 .method public static canResolveIntent(Landroid/content/pm/PackageManager;Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -219,9 +203,6 @@
 
 .method public static canResolveUrl(Landroid/content/pm/PackageManager;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -246,9 +227,6 @@
 
 .method public static createAccountSpecificIntent(Landroid/content/Context;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -273,7 +251,6 @@
 
 .method public static createAggregatedHomeIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -286,11 +263,6 @@
 
 .method public static createBrowseIntent(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IZ)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -325,8 +297,6 @@
 
 .method public static createContinueUrlIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -377,9 +347,6 @@
 
 .method public static createCorpusIntent(Landroid/content/Context;ILcom/google/android/finsky/api/model/DfeToc;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/api/model/DfeToc;
 
     invoke-virtual {p2, p1}, Lcom/google/android/finsky/api/model/DfeToc;->getCorpus(I)Lcom/google/android/finsky/protos/Toc$CorpusMetadata;
 
@@ -418,8 +385,6 @@
 
 .method public static createForwardToMainActivityIntent(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "authAccount"
 
@@ -450,9 +415,6 @@
 
 .method public static createIntentForReceiver(Landroid/content/pm/PackageManager;Ljava/lang/String;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -522,9 +484,6 @@
 
 .method private static createLaunchIntent(Ljava/lang/String;Ljava/lang/String;Landroid/content/pm/PackageManager;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     const/4 v3, 0x0
 
@@ -571,9 +530,6 @@
 
 .method public static createMovieTrailerIntentForUrl(Landroid/content/pm/PackageManager;Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/IntentUtils;->isVideosAppTrailerPlaybackSupported(Landroid/content/pm/PackageManager;)Z
 
@@ -616,7 +572,6 @@
 
 .method public static createSendIntentForUrl(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -633,8 +588,6 @@
 
 .method public static createViewDocumentIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getDetailsUrl()Ljava/lang/String;
 
@@ -649,8 +602,6 @@
 
 .method public static createViewDocumentUrlIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -673,7 +624,6 @@
 
 .method public static createViewIntentForUrl(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
@@ -723,9 +673,6 @@
 
 .method public static createYouTubeIntentForUrl(Landroid/content/pm/PackageManager;Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -779,7 +726,6 @@
 
 .method public static getBackendId(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "com.google.android.apps.books"
 
@@ -867,7 +813,6 @@
 
 .method private static getConsumptionApp(I)Lcom/google/android/finsky/utils/IntentUtils$ConsumptionApp;
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -979,7 +924,6 @@
 
 .method public static getPackageName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1037,8 +981,6 @@
 
 .method private static isAppInstalled(Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1074,7 +1016,6 @@
 
 .method private static isBooksAppInstalled(Landroid/content/pm/PackageManager;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageManager;
 
     const-string v0, "com.google.android.apps.books"
 
@@ -1087,8 +1028,6 @@
 
 .method public static isConsumptionAppInstalled(Landroid/content/pm/PackageManager;I)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1149,7 +1088,6 @@
 
 .method private static isGPlusAppInstalled(Landroid/content/pm/PackageManager;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageManager;
 
     const-string v0, "com.google.android.apps.plus"
 
@@ -1162,7 +1100,6 @@
 
 .method private static isMagazinesAppInstalled(Landroid/content/pm/PackageManager;)Z
     .locals 6
-    .param p0    # Landroid/content/pm/PackageManager;
 
     const/4 v3, 0x1
 
@@ -1252,7 +1189,6 @@
 
 .method private static isMusicAppInstalled(Landroid/content/pm/PackageManager;)Z
     .locals 3
-    .param p0    # Landroid/content/pm/PackageManager;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1287,7 +1223,6 @@
 
 .method private static isVideosAppInstalled(Landroid/content/pm/PackageManager;)Z
     .locals 4
-    .param p0    # Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x0
 
@@ -1329,7 +1264,6 @@
 
 .method private static isVideosAppTrailerPlaybackSupported(Landroid/content/pm/PackageManager;)Z
     .locals 4
-    .param p0    # Landroid/content/pm/PackageManager;
 
     const/4 v2, 0x0
 
@@ -1389,8 +1323,6 @@
 
 .method private static makeResolvableIntent(Landroid/content/pm/PackageManager;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Landroid/content/Intent;
 
     const/high16 v1, 0x10000
 

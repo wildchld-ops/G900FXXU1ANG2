@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Z)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -83,7 +81,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 

@@ -49,8 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -157,7 +155,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/dialpad/DialpadHoverListener;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadHoverListener;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->mContext:Landroid/content/Context;
 
@@ -166,8 +163,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/dialpad/DialpadHoverListener;I)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadHoverListener;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->isEnableHapticFeedback(I)Z
 
@@ -178,7 +173,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/dialpad/DialpadHoverListener;)Lcom/android/dialer/dialpad/DialpadFragment;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadHoverListener;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->mDialpadFragment:Lcom/android/dialer/dialpad/DialpadFragment;
 
@@ -187,7 +181,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/dialpad/DialpadHoverListener;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadHoverListener;
 
     iget-boolean v0, p0, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->mSettingSoundEffects:Z
 
@@ -196,7 +189,6 @@
 
 .method static synthetic access$400(Lcom/samsung/dialer/dialpad/DialpadHoverListener;)[Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadHoverListener;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->mHoverEnter:[Z
 
@@ -205,7 +197,6 @@
 
 .method private createHoverPopupView(I)Landroid/view/View;
     .locals 15
-    .param p1    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->getHoverNumber(I)I
 
@@ -404,7 +395,6 @@
 
 .method private getHoverNumber(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -556,7 +546,6 @@
 
 .method private getHoverPopupBgImageId(I)I
     .locals 1
-    .param p1    # I
 
     const v0, 0x7f0201b2
 
@@ -595,7 +584,6 @@
 
 .method private getHoverPopupWindowOffset(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->mContext:Landroid/content/Context;
 
@@ -631,7 +619,6 @@
 
 .method private isEnableHapticFeedback(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -711,7 +698,6 @@
 
 .method private isEnableHoverEvent(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -781,9 +767,6 @@
 
 .method private setPhoto(Landroid/widget/ImageView;JJ)V
     .locals 7
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadHoverListener;->mContactPhotoManager:Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -822,8 +805,6 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const v10, 0x7f0801a3
 

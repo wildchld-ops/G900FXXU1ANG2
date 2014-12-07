@@ -73,7 +73,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 

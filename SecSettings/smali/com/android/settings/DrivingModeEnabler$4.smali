@@ -40,7 +40,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v2, p0, Lcom/android/settings/DrivingModeEnabler$4;->this$0:Lcom/android/settings/DrivingModeEnabler;
 

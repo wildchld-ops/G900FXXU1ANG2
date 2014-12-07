@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/android/volley/Response$ErrorListener;Lcom/google/protobuf/nano/MessageNano;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -174,7 +172,6 @@
 
 .method private static sanitizeHeaderValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
 

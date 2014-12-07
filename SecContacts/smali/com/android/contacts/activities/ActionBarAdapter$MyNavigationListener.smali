@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/activities/ActionBarAdapter;Lcom/android/contacts/activities/ActionBarAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/activities/ActionBarAdapter;
-    .param p2    # Lcom/android/contacts/activities/ActionBarAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/ActionBarAdapter$MyNavigationListener;-><init>(Lcom/android/contacts/activities/ActionBarAdapter;)V
 
@@ -48,8 +46,6 @@
 # virtual methods
 .method public onNavigationItemSelected(IJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/ActionBarAdapter$MyNavigationListener;->mIgnoreNavigationItemSelected:Z
 

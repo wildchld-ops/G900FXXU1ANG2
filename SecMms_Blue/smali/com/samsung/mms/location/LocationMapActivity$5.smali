@@ -36,7 +36,6 @@
 # virtual methods
 .method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const-string v0, "TAG"
 
@@ -72,7 +71,6 @@
 
 .method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const-string v0, "TAG"
 

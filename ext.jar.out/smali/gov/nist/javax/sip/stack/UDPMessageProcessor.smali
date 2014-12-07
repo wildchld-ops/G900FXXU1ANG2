@@ -26,9 +26,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/net/InetAddress;Lgov/nist/javax/sip/stack/SIPTransactionStack;I)V
     .locals 4
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -157,7 +154,6 @@
 # virtual methods
 .method public createMessageChannel(Lgov/nist/core/HostPort;)Lgov/nist/javax/sip/stack/MessageChannel;
     .locals 4
-    .param p1    # Lgov/nist/core/HostPort;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/UnknownHostException;
@@ -183,8 +179,6 @@
 
 .method public createMessageChannel(Ljava/net/InetAddress;I)Lgov/nist/javax/sip/stack/MessageChannel;
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

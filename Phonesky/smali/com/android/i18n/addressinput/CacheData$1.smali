@@ -40,7 +40,6 @@
 # virtual methods
 .method public onAdd(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/CacheData$1;->this$0:Lcom/android/i18n/addressinput/CacheData;
 

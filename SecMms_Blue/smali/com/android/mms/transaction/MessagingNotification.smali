@@ -653,10 +653,6 @@
 
 .method private static AddSstreamItem(Landroid/content/Context;ILjava/util/SortedSet;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;Z)V
     .locals 19
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p3    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -829,7 +825,6 @@
 
 .method static ConvertTimeMillisFromSMS(Ljava/lang/String;)J
     .locals 20
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -945,8 +940,6 @@
 
 .method public static SetFolderBox(Landroid/content/Intent;I)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Intent;
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -1020,7 +1013,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/model/SlideModel;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->getImage(Lcom/android/mms/model/SlideModel;)Landroid/graphics/Bitmap;
 
@@ -1031,7 +1023,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/model/SlideModel;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->getText(Lcom/android/mms/model/SlideModel;)Ljava/lang/String;
 
@@ -1042,8 +1033,6 @@
 
 .method static synthetic access$1200(Landroid/content/Context;I)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/mms/transaction/MessagingNotification;->getAttachmentTypeString(Landroid/content/Context;I)Ljava/lang/CharSequence;
 
@@ -1062,7 +1051,6 @@
 
 .method static synthetic access$1302(Landroid/os/ICustomFrequencyManager;)Landroid/os/ICustomFrequencyManager;
     .locals 0
-    .param p0    # Landroid/os/ICustomFrequencyManager;
 
     sput-object p0, Lcom/android/mms/transaction/MessagingNotification;->mCfmsService:Landroid/os/ICustomFrequencyManager;
 
@@ -1087,7 +1075,6 @@
 
 .method static synthetic access$1600(Landroid/content/Context;)I
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->getDownloadFailedMessageCount(Landroid/content/Context;)I
 
@@ -1098,7 +1085,6 @@
 
 .method static synthetic access$1700(Landroid/content/Context;)I
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->getNewCMASPresidentialCount(Landroid/content/Context;)I
 
@@ -1125,8 +1111,6 @@
 
 .method static synthetic access$300(Landroid/content/Context;[J)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # [J
 
     invoke-static {p0, p1}, Lcom/android/mms/transaction/MessagingNotification;->getUndeliveredMessageCount(Landroid/content/Context;[J)I
 
@@ -1137,7 +1121,6 @@
 
 .method static synthetic access$400(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->updateAllHistoryAsRead(Landroid/content/Context;)V
 
@@ -1146,11 +1129,6 @@
 
 .method static synthetic access$500(Landroid/content/Context;ZLjava/lang/CharSequence;JI)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # J
-    .param p5    # I
 
     invoke-static/range {p0 .. p5}, Lcom/android/mms/transaction/MessagingNotification;->updateDeliveryNotification(Landroid/content/Context;ZLjava/lang/CharSequence;JI)V
 
@@ -1159,7 +1137,6 @@
 
 .method static synthetic access$600(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->addNotiIntentType(Landroid/content/Intent;)Landroid/content/Intent;
 
@@ -1186,7 +1163,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/model/SlideshowModel;)I
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->getAttachmentTypeOnSlide(Lcom/android/mms/model/SlideshowModel;)I
 
@@ -1197,8 +1173,6 @@
 
 .method private static final addAlertNotificationInfos(Landroid/content/Context;Ljava/util/Set;Ljava/util/SortedSet;J)V
     .locals 23
-    .param p0    # Landroid/content/Context;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1507,8 +1481,6 @@
 
 .method private static final addMmsNotificationInfos(Landroid/content/Context;Ljava/util/Set;Ljava/util/SortedSet;J)V
     .locals 21
-    .param p0    # Landroid/content/Context;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1756,9 +1728,6 @@
 
 .method private static addMsgNotificationInfos(Landroid/content/Context;JILjava/util/SortedSet;Ljava/util/Set;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1835,7 +1804,6 @@
 
 .method private static addNotiIntentType(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const/high16 v0, 0x34000000
 
@@ -1852,8 +1820,6 @@
 
 .method private static final addSmsNotificationInfos(Landroid/content/Context;Ljava/util/Set;Ljava/util/SortedSet;J)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1886,9 +1852,6 @@
 
 .method private static final addSmsNotificationInfos(Landroid/content/Context;Ljava/util/Set;Ljava/util/SortedSet;ZJ)V
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p3    # Z
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2301,8 +2264,6 @@
 
 .method private static final addWpmNotificationInfos(Landroid/content/Context;Ljava/util/Set;Ljava/util/SortedSet;J)V
     .locals 21
-    .param p0    # Landroid/content/Context;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2559,7 +2520,6 @@
 
 .method public static blockingUpdateAllNotifications(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v1, -0x2
 
@@ -2590,7 +2550,6 @@
 
 .method public static blockingUpdateAllNotificationsForMarkAsRead(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v1, -0x2
 
@@ -2621,11 +2580,6 @@
 
 .method public static blockingUpdateMessageIndicator(Landroid/content/Context;JZJI)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # J
-    .param p6    # I
 
     const/4 v7, 0x0
 
@@ -2646,12 +2600,6 @@
 
 .method public static blockingUpdateMessageIndicator(Landroid/content/Context;JZJII)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
 
     const/4 v7, 0x0
 
@@ -2674,13 +2622,6 @@
 
 .method public static blockingUpdateMessageIndicator(Landroid/content/Context;JZJIIZ)V
     .locals 32
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
 
     const-string v4, "Mms/MessagingNotification"
 
@@ -3771,10 +3712,6 @@
 
 .method public static blockingUpdateNewMessageIndicator(Landroid/content/Context;Landroid/net/Uri;ZI)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -3785,11 +3722,6 @@
 
 .method public static blockingUpdateNewMessageIndicator(Landroid/content/Context;Landroid/net/Uri;ZII)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -3810,12 +3742,6 @@
 
 .method public static blockingUpdateNewMessageIndicator(Landroid/content/Context;Landroid/net/Uri;ZIIZ)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const-wide/16 v1, 0x0
 
@@ -3878,7 +3804,6 @@
 
 .method public static blockingUpdateNotificationAsRead(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v1, -0x2
 
@@ -3899,10 +3824,6 @@
 
 .method protected static buildTickerAlert(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/16 v7, 0xd
 
@@ -3991,11 +3912,6 @@
 
 .method protected static buildTickerMessage(Landroid/content/Context;Ljava/lang/String;Lcom/android/mms/data/Contact;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/data/Contact;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/16 v8, 0xd
 
@@ -4180,7 +4096,6 @@
 
 .method public static cancelAlarm(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -4191,8 +4106,6 @@
 
 .method public static cancelAlarm(Landroid/content/Context;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v3, "alarm"
 
@@ -4231,7 +4144,6 @@
 
 .method public static cancelCMASAlarm(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/high16 v6, 0x40000000
 
@@ -4334,8 +4246,6 @@
 
 .method public static cancelNotification(Landroid/content/Context;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -4448,8 +4358,6 @@
 
 .method public static cancelNotificationOnly(Landroid/content/Context;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v1, "notification"
 
@@ -4488,7 +4396,6 @@
 
 .method public static checkBadgeCount(Landroid/content/Context;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v1, -0x2
 
@@ -4556,8 +4463,6 @@
 
 .method private static checkVlingoAccepted(Landroid/content/Context;Z)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -4696,7 +4601,6 @@
 
 .method private static convertConcatenatedAddress(Landroid/content/Context;Ljava/util/SortedSet;)Ljava/lang/StringBuilder;
     .locals 14
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4933,11 +4837,6 @@
 
 .method private static createMultipleNotification(Landroid/content/Context;Ljava/util/SortedSet;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;ILandroid/app/Notification$Builder;Z)Landroid/app/Notification;
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p3    # I
-    .param p4    # Landroid/app/Notification$Builder;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5110,10 +5009,6 @@
 
 .method private static createSingleNotification(Landroid/content/Context;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;Landroid/app/Notification$Builder;Landroid/graphics/Bitmap;)Landroid/app/Notification;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p2    # Landroid/app/Notification$Builder;
-    .param p3    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -5288,11 +5183,6 @@
 
 .method private static createUniqueMultipleNotification(Landroid/content/Context;Ljava/util/SortedSet;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;ILandroid/app/Notification$Builder;Landroid/graphics/Bitmap;)Landroid/app/Notification;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p3    # I
-    .param p4    # Landroid/app/Notification$Builder;
-    .param p5    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5524,9 +5414,6 @@
 
 .method private static decideNotificationType(Landroid/content/Context;Landroid/app/Notification;Lcom/android/mms/data/Contact;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Lcom/android/mms/data/Contact;
 
     const/4 v0, 0x0
 
@@ -5537,10 +5424,6 @@
 
 .method private static decideNotificationType(Landroid/content/Context;Landroid/app/Notification;Lcom/android/mms/data/Contact;I)V
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Lcom/android/mms/data/Contact;
-    .param p3    # I
 
     const-string v15, "ril.cdma.inecmmode"
 
@@ -5948,7 +5831,6 @@
 
 .method private static deleteAllSstreamItems(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "samsung.personal"
 
@@ -5978,8 +5860,6 @@
 
 .method public static deleteHistoryForMms(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x2
 
@@ -6103,8 +5983,6 @@
 
 .method public static deleteHistoryForSms(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v5, 0x1
 
@@ -6214,8 +6092,6 @@
 
 .method private static findMostRecentNotification(JILjava/util/SortedSet;)Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
     .locals 6
-    .param p0    # J
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JI",
@@ -6324,9 +6200,6 @@
 
 .method private static foregroundPresidentialAlert(Landroid/content/Context;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getCMASProvider()I
 
@@ -6397,9 +6270,6 @@
 
 .method private static formatSenders(Landroid/content/Context;Ljava/util/ArrayList;IZ)Ljava/lang/CharSequence;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6496,7 +6366,6 @@
 
 .method private static getAttachmentTypeOnSlide(Lcom/android/mms/model/SlideshowModel;)I
     .locals 5
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v3, 0x1
 
@@ -6565,8 +6434,6 @@
 
 .method private static getAttachmentTypeString(Landroid/content/Context;I)Ljava/lang/CharSequence;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -6636,7 +6503,6 @@
 
 .method private static getBadgeCount(Landroid/content/ContentResolver;)I
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v8, 0x0
 
@@ -6763,7 +6629,6 @@
 
 .method public static getDisableVibrateVideo(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -6786,7 +6651,6 @@
 
 .method private static getDownloadFailedMessageCount(Landroid/content/Context;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -6913,7 +6777,6 @@
 
 .method private static getImage(Lcom/android/mms/model/SlideModel;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-virtual {p0}, Lcom/android/mms/model/SlideModel;->hasImage()Z
 
@@ -6959,8 +6822,6 @@
 
 .method private static getMmsDeliveryReportText(Landroid/content/Context;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -7017,8 +6878,6 @@
 
 .method private static getMmsReadReportText(Landroid/content/Context;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v1, 0x7f0c00a0
 
@@ -7095,8 +6954,6 @@
 
 .method private static getMmsSubject(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -7127,7 +6984,6 @@
 
 .method private static getMmsText(Lcom/android/mms/model/SlideshowModel;)Ljava/lang/String;
     .locals 6
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     const-string v0, ""
 
@@ -7224,8 +7080,6 @@
 
 .method private static getNewCMASCount(Landroid/content/Context;Landroid/content/ContentResolver;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v7, 0x0
 
@@ -7327,7 +7181,6 @@
 
 .method private static getNewCMASPresidentialCount(Landroid/content/Context;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -7431,7 +7284,6 @@
 
 .method public static getNewMessageCount(Landroid/content/Context;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -7516,8 +7368,6 @@
 
 .method private static getNewMissedCallSMS(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -7596,8 +7446,6 @@
 
 .method public static getNewMmsCount(Landroid/content/Context;Landroid/content/ContentResolver;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
 
     sget-object v2, Landroid/provider/Telephony$Mms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -7649,8 +7497,6 @@
 
 .method public static getNewSmsCount(Landroid/content/Context;Landroid/content/ContentResolver;)I
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v13, 0x0
 
@@ -7741,8 +7587,6 @@
 
 .method public static getNewWpmCount(Landroid/content/Context;Landroid/content/ContentResolver;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
 
     sget-object v2, Lcom/android/mms/ui/MessageUtils;->WAP_PUSH_MESSAGE_BY_ID_CONTENT_URI:Landroid/net/Uri;
 
@@ -7794,7 +7638,6 @@
 
 .method private static declared-synchronized getNotificationCountBySimSlot(Ljava/util/SortedSet;I)I
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7892,7 +7735,6 @@
 
 .method public static getPduPersister(Landroid/content/Context;)Lcom/google/android/mms/pdu/PduPersister;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/transaction/MessagingNotification;->sPduPersister:Lcom/google/android/mms/pdu/PduPersister;
 
@@ -7912,8 +7754,6 @@
 
 .method private static getSlideshowModel(Landroid/content/Context;Landroid/net/Uri;)Lcom/android/mms/model/SlideshowModel;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     :try_start_0
     invoke-static {p0}, Lcom/google/android/mms/pdu/PduPersister;->getPduPersister(Landroid/content/Context;)Lcom/google/android/mms/pdu/PduPersister;
@@ -7977,8 +7817,6 @@
 
 .method private static getSmsDeliveryReportText(Landroid/content/Context;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -8036,7 +7874,6 @@
 
 .method private static final getSmsNewDeliveryInfo(Landroid/content/Context;)Lcom/android/mms/transaction/MessagingNotification$MmsSmsDeliveryInfo;
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -8141,8 +7978,6 @@
 
 .method public static getSmsThreadId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const-wide/16 v9, -0x2
 
@@ -8333,7 +8168,6 @@
 
 .method private static getStreamBgImagePath(Landroid/content/Context;)Ljava/lang/String;
     .locals 15
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -8672,7 +8506,6 @@
 
 .method private static getSystemService(Ljava/lang/String;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -8681,7 +8514,6 @@
 
 .method private static getText(Lcom/android/mms/model/SlideModel;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-virtual {p0}, Lcom/android/mms/model/SlideModel;->hasText()Z
 
@@ -8708,8 +8540,6 @@
 
 .method public static getThreadId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const-wide/16 v9, -0x2
 
@@ -8900,8 +8730,6 @@
 
 .method private static getUndeliveredMessageCount(Landroid/content/Context;[J)I
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # [J
 
     const/4 v5, 0x0
 
@@ -9081,8 +8909,6 @@
 
 .method public static getWpmThreadId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const-wide/16 v9, -0x2
 
@@ -9273,7 +9099,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "Mms/MessagingNotification"
 
@@ -9322,10 +9147,6 @@
 
 .method private static initCmasAlertMessage(Landroid/content/Context;Ljava/lang/String;JI)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     const-string v1, "Mms/MessagingNotification"
 
@@ -9387,10 +9208,6 @@
 
 .method private static insertCallLogDB(Landroid/content/Context;Ljava/lang/String;Landroid/database/Cursor;Landroid/content/ContentResolver;)V
     .locals 28
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/content/ContentResolver;
 
     move-object/from16 v4, p1
 
@@ -9911,7 +9728,6 @@
 
 .method public static isBlockingModeEnabled(Landroid/content/Context;)Z
     .locals 14
-    .param p0    # Landroid/content/Context;
 
     const/4 v13, 0x1
 
@@ -10098,7 +9914,6 @@
 
 .method public static isDriveLinkRunning(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -10182,7 +9997,6 @@
 
 .method public static isFailedToDeliver(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -10204,7 +10018,6 @@
 
 .method public static isFailedToDownload(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -10226,7 +10039,6 @@
 
 .method private static isHebrew(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -10263,7 +10075,6 @@
 
 .method public static isPrayModeEnable(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -10322,10 +10133,6 @@
 
 .method private static isPresidentialCmas(Landroid/content/Context;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;IZ)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -10415,8 +10222,6 @@
 
 .method private static isValidThreadId(Landroid/content/Context;J)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const-wide v0, 0x7fffffffffffffffL
 
@@ -10437,7 +10242,6 @@
 
 .method public static isVlingoRunning(Landroid/content/Context;)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -10618,8 +10422,6 @@
 
 .method private static loadNotificationPref(Landroid/content/Context;I)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -10961,10 +10763,6 @@
 
 .method private static makeReadOutNewMessageString(Landroid/content/Context;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;IZ)Ljava/lang/StringBuffer;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -11086,7 +10884,6 @@
 
 .method public static nonBlockUpdateDownloadFailedNotification(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/mms/transaction/MessagingNotification$8;
 
@@ -11103,12 +10900,6 @@
 
 .method public static nonBlockingUpdateMessageIndicator(Landroid/content/Context;JZJII)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
 
     const-string v0, "Mms/MessagingNotification"
 
@@ -11141,10 +10932,6 @@
 
 .method public static nonBlockingUpdateNewMessageIndicator(Landroid/content/Context;Landroid/net/Uri;ZI)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # I
 
     const-string v0, "Mms/MessagingNotification"
 
@@ -11167,7 +10954,6 @@
 
 .method public static nonBlockingUpdateNotificationAsRead(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v1, -0x2
 
@@ -11188,7 +10974,6 @@
 
 .method public static nonBlockingUpdateSendFailedNotification(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/mms/transaction/MessagingNotification$5;
 
@@ -11205,10 +10990,6 @@
 
 .method private static notificationVibrate(Landroid/content/Context;Landroid/app/Notification;ZZ)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v6, 0x0
 
@@ -11526,8 +11307,6 @@
 
 .method public static notifyDownloadFailed(Landroid/content/Context;J)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v1, 0x1
 
@@ -11546,9 +11325,6 @@
 
 .method public static notifyDownloadFailed(Landroid/content/Context;JI)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -11567,11 +11343,6 @@
 
 .method private static notifyFailed(Landroid/content/Context;ZJZI)V
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # J
-    .param p4    # Z
-    .param p5    # I
 
     const-string v11, "Mms/MessagingNotification"
 
@@ -11905,10 +11676,6 @@
 
 .method private static notifyInConversation(Landroid/content/Context;JJILjava/util/SortedSet;Ljava/util/Set;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12088,7 +11855,6 @@
 
 .method public static notifySendFailed(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -12107,8 +11873,6 @@
 
 .method public static notifySendFailed(Landroid/content/Context;I)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -12127,8 +11891,6 @@
 
 .method public static notifySendFailed(Landroid/content/Context;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -12147,9 +11909,6 @@
 
 .method public static notifySendFailed(Landroid/content/Context;ZI)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -12168,7 +11927,6 @@
 
 .method private static playCmasTone(Landroid/content/Context;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v10, 0x7
 
@@ -12401,8 +12159,6 @@
 
 .method private static playInConversationNotificationSound(Landroid/content/Context;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x5
 
@@ -12520,7 +12276,6 @@
 
 .method private static playToneViaHeadset(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "audio"
 
@@ -12658,8 +12413,6 @@
 
 .method public static setBadge(Landroid/content/Context;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -12725,9 +12478,6 @@
 
 .method private static setCmasAlert(Landroid/content/Context;Landroid/app/Notification;I)V
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/Notification;
-    .param p2    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableLCDOn()Z
 
@@ -13263,9 +13013,6 @@
 
 .method private static setCmasNotiIcon(Landroid/content/Context;ZLcom/android/mms/transaction/MessagingNotification$NotificationInfo;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
 
     const/4 v4, 0x4
 
@@ -13340,8 +13087,6 @@
 
 .method private static setCmasReminder(Landroid/content/Context;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;)V
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
 
     const-string v1, "alarm"
 
@@ -13629,7 +13374,6 @@
 
 .method public static setCurrentlyDisplayedThreadId(J)V
     .locals 2
-    .param p0    # J
 
     sget-object v1, Lcom/android/mms/transaction/MessagingNotification;->sCurrentlyDisplayedThreadLock:Ljava/lang/Object;
 
@@ -13654,8 +13398,6 @@
 
 .method public static setDisableVibrateVideo(Landroid/content/Context;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/mms/transaction/MessagingNotification;->sDisableVibrateForCamera:Z
 
@@ -13682,7 +13424,6 @@
 
 .method private static setFlashNotification(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -13770,11 +13511,6 @@
 
 .method private static setNotificationAvatar(Landroid/content/Context;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;Landroid/app/Notification$Builder;Landroid/content/res/Resources;Z)Landroid/graphics/Bitmap;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p2    # Landroid/app/Notification$Builder;
-    .param p3    # Landroid/content/res/Resources;
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -13931,11 +13667,6 @@
 
 .method private static showMultipleThreadNotificationLockscreen(Landroid/content/Context;Ljava/lang/String;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;II)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {}, Lcom/android/mms/ui/MessageUtils;->isCurrentUserOwner()Z
 
@@ -14012,11 +13743,6 @@
 
 .method private static showNotificationDialog(Landroid/content/Context;JIJLjava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/ui/MessageUtils;->isCurrentUserOwner()Z
 
@@ -14067,9 +13793,6 @@
 
 .method private static showSingleNotificationLockscreen(Landroid/content/Context;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p2    # I
 
     invoke-static {}, Lcom/android/mms/ui/MessageUtils;->isCurrentUserOwner()Z
 
@@ -14183,9 +13906,6 @@
 
 .method private static startMessageAlertService(Landroid/content/Context;ILcom/android/mms/transaction/MessagingNotification$NotificationInfo;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
 
     const/4 v5, 0x1
 
@@ -14314,11 +14034,6 @@
 
 .method private static updateAlertNotification(Landroid/content/Context;ZILjava/util/SortedSet;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;I)V
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
-    .param p4    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14989,7 +14704,6 @@
 
 .method private static updateAllHistoryAsRead(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -15089,8 +14803,6 @@
 
 .method public static updateAlwaysHistoryForMms(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 23
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static/range {p0 .. p0}, Lcom/android/mms/MmsConfig;->isContextProviderForAlways(Landroid/content/Context;)Z
 
@@ -15616,8 +15328,6 @@
 
 .method public static updateAlwaysHistoryForSms(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {p0}, Lcom/android/mms/MmsConfig;->isContextProviderForAlways(Landroid/content/Context;)Z
 
@@ -15960,11 +15670,6 @@
 
 .method public static updateBadgeforNonDefault(Landroid/content/Context;JZJI)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # J
-    .param p6    # I
 
     const-string v0, "Mms/MessagingNotification"
 
@@ -16059,9 +15764,6 @@
 
 .method public static updateCMASRepeatNotifications(Landroid/content/Context;JJ)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
 
     const/4 v3, 0x0
 
@@ -16084,7 +15786,6 @@
 
 .method public static updateClass0SoundnVibrate(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -16095,8 +15796,6 @@
 
 .method public static updateClass0SoundnVibrate(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/mms/transaction/MessagingNotification;->loadNotificationPref(Landroid/content/Context;I)V
 
@@ -16137,11 +15836,6 @@
 
 .method private static updateDeliveryNotification(Landroid/content/Context;ZLjava/lang/CharSequence;JI)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # J
-    .param p5    # I
 
     sget-boolean v0, Lcom/android/mms/transaction/MessagingNotification;->sEnableNotification:Z
 
@@ -16167,7 +15861,6 @@
 
 .method public static updateDownloadFailedNotification(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->getDownloadFailedMessageCount(Landroid/content/Context;)I
 
@@ -16195,9 +15888,6 @@
 
 .method public static updateHistoryForMms(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;)Z
     .locals 33
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableLogs()Z
 
@@ -16937,8 +16627,6 @@
 
 .method public static updateHistoryForSms(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableLogs()Z
 
@@ -17717,9 +17405,6 @@
 
 .method public static updateMMSHistoryAsBlock(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)V
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -17850,10 +17535,6 @@
 
 .method public static updateMmsDataforInternalApp(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;I)Z
     .locals 34
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     const-string v3, "Mms/MessagingNotification"
 
@@ -18609,8 +18290,6 @@
 
 .method private updateMsgInsertedState(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static/range {p1 .. p1}, Lcom/android/mms/util/TelephonyPermission;->getInstance(Landroid/content/Context;)Lcom/android/mms/util/TelephonyPermission;
 
@@ -18804,10 +18483,6 @@
 
 .method private static updateNotification(Landroid/content/Context;ZILjava/util/SortedSet;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
-    .param p4    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18841,11 +18516,6 @@
 
 .method private static updateNotification(Landroid/content/Context;ZILjava/util/SortedSet;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;I)V
     .locals 39
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
-    .param p4    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -20000,8 +19670,6 @@
 
 .method public static updateNotificatoinAlert(Landroid/content/Context;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -20086,10 +19754,6 @@
 
 .method public static updateRepeatNotifications(Landroid/content/Context;JJI)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -20108,11 +19772,6 @@
 
 .method public static updateRepeatNotifications(Landroid/content/Context;JJII)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
 
     const/4 v3, 0x0
 
@@ -20135,11 +19794,6 @@
 
 .method public static updateReportNotification(Landroid/content/Context;IIJLjava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -20160,12 +19814,6 @@
 
 .method public static updateReportNotification(Landroid/content/Context;IIJLjava/lang/String;I)V
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     move/from16 v0, p6
 
@@ -20447,8 +20095,6 @@
 
 .method public static updateSMSHistoryAsBlock(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -20572,7 +20218,6 @@
 
 .method public static updateSendFailedNotification(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/MessagingNotification"
 
@@ -20607,8 +20252,6 @@
 
 .method public static updateSendFailedNotificationForThread(Landroid/content/Context;J)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v1, 0x2
 
@@ -20660,11 +20303,6 @@
 
 .method public static updateSmsDataforInternalApp(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 21
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-string v3, "Mms/MessagingNotification"
 
@@ -21123,8 +20761,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-wide/16 v1, -0x2
 

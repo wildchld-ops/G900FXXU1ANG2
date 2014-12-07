@@ -71,8 +71,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/volley/Cache;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/volley/Cache;
 
     const/4 v1, 0x0
 
@@ -127,7 +125,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;)Ljava/util/concurrent/LinkedBlockingQueue;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;->mQueue:Ljava/util/concurrent/LinkedBlockingQueue;
 
@@ -136,8 +133,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;Lcom/google/android/finsky/widget/consumption/ImageBatch;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ImageBatch;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -151,7 +146,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;)Ljava/util/concurrent/Semaphore;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;->mWaitLock:Ljava/util/concurrent/Semaphore;
 
@@ -160,8 +154,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;)[B
     .locals 1
-    .param p0    # Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;->loadFileFromUri(Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;)[B
 
@@ -172,10 +164,6 @@
 
 .method private static findBestSampleSize(IIII)I
     .locals 12
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v11, 0x40000000
 
@@ -218,9 +206,6 @@
 
 .method private getScaledBitmap([BII)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     if-eqz p2, :cond_0
 
@@ -356,7 +341,6 @@
 
 .method private handleBatchedRequest(Lcom/google/android/finsky/widget/consumption/ImageBatch;)V
     .locals 17
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ImageBatch;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -690,7 +674,6 @@
 
 .method private loadFileFromUri(Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;)[B
     .locals 10
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;
 
     const/4 v0, 0x1
 
@@ -872,7 +855,6 @@
 
 .method private loadFromBitmapLoader(Ljava/util/Map;Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p2    # Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -942,7 +924,6 @@
 
 .method private loadFromProvider(Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;
 
     const/4 v11, 0x1
 
@@ -1131,7 +1112,6 @@
 
 .method private static streamToBytes(Ljava/io/InputStream;)[B
     .locals 5
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1175,7 +1155,6 @@
 # virtual methods
 .method public enqueue(Lcom/google/android/finsky/widget/consumption/ImageBatch;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ImageBatch;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;->mQueue:Ljava/util/concurrent/LinkedBlockingQueue;
 

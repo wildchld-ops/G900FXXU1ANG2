@@ -33,7 +33,6 @@
 
 .method public static invalidateMyPeoplePageListCache(Lcom/google/android/finsky/api/DfeApi;)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
 
     const/4 v3, 0x1
 

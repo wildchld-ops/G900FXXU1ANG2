@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b0029
 
@@ -110,7 +109,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;->mContext:Landroid/content/Context;
 
@@ -119,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -128,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;->changeStatus()V
 
@@ -137,8 +133,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/GlassMsgQuickSettingButton;->updateActivateStatus(Z)V
 
@@ -179,7 +173,6 @@
 
 .method private isWlanAvailable(Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -221,7 +214,6 @@
 
 .method private setAirMessageData(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -285,7 +277,6 @@
 
 .method private showGuideDialog(I)V
     .locals 9
-    .param p1    # I
 
     const/high16 v8, -0x1000000
 
@@ -463,7 +454,6 @@
 
 .method private updateActivateStatus(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -604,7 +594,6 @@
 
 .method public onClick(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 

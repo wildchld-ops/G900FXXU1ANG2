@@ -26,8 +26,6 @@
 
 .method public static createIntent(Landroid/accounts/Account;[B)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # [B
 
     new-instance v0, Landroid/content/Intent;
 
@@ -58,8 +56,6 @@
 
 .method private displayMessage(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/promptforfop/PromptForFopActivity;->mAccount:Landroid/accounts/Account;
 
@@ -144,7 +140,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const v0, 0x7f040105
 
@@ -204,7 +199,6 @@
 
 .method public onFatalError(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/promptforfop/PromptForFopActivity;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 

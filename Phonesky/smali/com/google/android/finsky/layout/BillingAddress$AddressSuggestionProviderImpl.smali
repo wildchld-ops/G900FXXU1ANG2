@@ -46,9 +46,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/layout/BillingAddress;Lcom/google/android/finsky/placesapi/PlacesService;Lcom/android/volley/RequestQueue;Landroid/location/Location;)V
     .locals 0
-    .param p2    # Lcom/google/android/finsky/placesapi/PlacesService;
-    .param p3    # Lcom/android/volley/RequestQueue;
-    .param p4    # Landroid/location/Location;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/BillingAddress$AddressSuggestionProviderImpl;->this$0:Lcom/google/android/finsky/layout/BillingAddress;
 
@@ -67,7 +64,6 @@
 # virtual methods
 .method public getSuggestions(Ljava/lang/CharSequence;)Ljava/util/List;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -151,7 +147,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress$AddressSuggestionProviderImpl;->this$0:Lcom/google/android/finsky/layout/BillingAddress;
 
@@ -167,7 +162,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/placesapi/PlaceDetailResponse;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/placesapi/PlaceDetailResponse;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress$AddressSuggestionProviderImpl;->this$0:Lcom/google/android/finsky/layout/BillingAddress;
 
@@ -200,7 +194,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/placesapi/PlaceDetailResponse;
 
@@ -211,7 +204,6 @@
 
 .method public onSuggestionAccepted(Lcom/google/android/finsky/placesapi/PlaceAutocompletePrediction;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/placesapi/PlaceAutocompletePrediction;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress$AddressSuggestionProviderImpl;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -241,7 +233,6 @@
 
 .method public setCountry(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/BillingAddress$AddressSuggestionProviderImpl;->mCountry:Ljava/lang/String;
 

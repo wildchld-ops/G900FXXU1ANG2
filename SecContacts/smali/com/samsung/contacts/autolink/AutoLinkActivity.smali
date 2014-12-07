@@ -40,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/autolink/AutoLinkActivity;)Landroid/app/ActionBar;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkActivity;->mActionBar:Landroid/app/ActionBar;
 
@@ -78,7 +77,6 @@
 
 .method private showToast(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkActivity;->mHandler:Landroid/os/Handler;
 
@@ -95,7 +93,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -138,7 +135,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 

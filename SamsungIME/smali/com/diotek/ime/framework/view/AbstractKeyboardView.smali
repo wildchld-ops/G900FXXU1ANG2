@@ -651,8 +651,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x10104b6
 
@@ -669,9 +667,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1204,7 +1199,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->resetSwipeFlag()V
 
@@ -1213,7 +1207,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Lcom/diotek/ime/framework/view/AbstractKeyboardView$SwipeTracker;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mSwipeTracker:Lcom/diotek/ime/framework/view/AbstractKeyboardView$SwipeTracker;
 
@@ -1222,7 +1215,6 @@
 
 .method static synthetic access$1100(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mHoverView:Landroid/widget/LinearLayout;
 
@@ -1231,7 +1223,6 @@
 
 .method static synthetic access$1200(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPreviewTextView:Landroid/widget/TextView;
 
@@ -1240,7 +1231,6 @@
 
 .method static synthetic access$1300(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPreviewKeyTextView:Landroid/widget/TextView;
 
@@ -1249,7 +1239,6 @@
 
 .method static synthetic access$1400(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->isPointingAction()Z
 
@@ -1260,7 +1249,6 @@
 
 .method static synthetic access$1500(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Lcom/diotek/ime/framework/trace/KeyboardPointing;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPointing:Lcom/diotek/ime/framework/trace/KeyboardPointing;
 
@@ -1269,7 +1257,6 @@
 
 .method static synthetic access$1600(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsKeyRepeating:Z
 
@@ -1278,8 +1265,6 @@
 
 .method static synthetic access$1602(Lcom/diotek/ime/framework/view/AbstractKeyboardView;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsKeyRepeating:Z
 
@@ -1288,9 +1273,6 @@
 
 .method static synthetic access$1700(Lcom/diotek/ime/framework/view/AbstractKeyboardView;ILcom/diotek/ime/framework/view/tracker/PointerTracker;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->openMultiTouchPopupIfRequired(ILcom/diotek/ime/framework/view/tracker/PointerTracker;)Z
 
@@ -1301,7 +1283,6 @@
 
 .method static synthetic access$1800(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Lcom/diotek/ime/framework/trace/KeyboardTrace;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mTrace:Lcom/diotek/ime/framework/trace/KeyboardTrace;
 
@@ -1310,7 +1291,6 @@
 
 .method static synthetic access$1900(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)J
     .locals 2
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-wide v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mUpXcordinate:J
 
@@ -1319,7 +1299,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mSwipeThreshold:I
 
@@ -1328,7 +1307,6 @@
 
 .method static synthetic access$2000(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)J
     .locals 2
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-wide v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mUpYcordinate:J
 
@@ -1337,7 +1315,6 @@
 
 .method static synthetic access$2100(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mUpKeyIndex:I
 
@@ -1346,7 +1323,6 @@
 
 .method static synthetic access$2200(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mUpKeyCode:I
 
@@ -1355,7 +1331,6 @@
 
 .method static synthetic access$2300(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mlastDown:Z
 
@@ -1364,7 +1339,6 @@
 
 .method static synthetic access$2400(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPreviewPlacer:Landroid/widget/FrameLayout;
 
@@ -1373,7 +1347,6 @@
 
 .method static synthetic access$2500(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsMultiTouch:Z
 
@@ -1382,7 +1355,6 @@
 
 .method static synthetic access$2700(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->changeSymbolPopupPage()V
 
@@ -1391,9 +1363,6 @@
 
 .method static synthetic access$2800(Lcom/diotek/ime/framework/view/AbstractKeyboardView;II)Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->getNearestKey(II)Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -1404,7 +1373,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mDisambiguateSwipe:Z
 
@@ -1413,7 +1381,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mShowSplitDimMode:Ljava/lang/Runnable;
 
@@ -1422,7 +1389,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPointerQueue:Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;
 
@@ -1431,7 +1397,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mCheckSplitMode:Ljava/lang/Runnable;
 
@@ -1440,7 +1405,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Landroid/view/ScaleGestureDetector;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mScaleGestureDetector:Landroid/view/ScaleGestureDetector;
 
@@ -1449,7 +1413,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mUseScaleGestureDetector:Z
 
@@ -1458,8 +1421,6 @@
 
 .method static synthetic access$902(Lcom/diotek/ime/framework/view/AbstractKeyboardView;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mScaleGestureEvents:Z
 
@@ -1468,8 +1429,6 @@
 
 .method private adjustCase(Ljava/lang/CharSequence;Lcom/diotek/ime/framework/view/Keyboard$Key;)Ljava/lang/CharSequence;
     .locals 18
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     move-object/from16 v0, p0
 
@@ -2185,8 +2144,6 @@
 
 .method private changeDescriptionForExceptionalCase(Lcom/diotek/ime/framework/view/Keyboard$Key;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/high16 v4, 0x6b6f0000
 
@@ -2474,7 +2431,6 @@
 
 .method private changeDescriptionForSymbolLabel(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -3049,7 +3005,6 @@
 
 .method private changeToReadEachAlphabet(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v0, "abc"
 
@@ -3163,7 +3118,6 @@
 
 .method private computeProximityThreshold(Lcom/diotek/ime/framework/view/DefaultKeyboard;)V
     .locals 7
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
 
     if-nez p1, :cond_1
 
@@ -3235,7 +3189,6 @@
 
 .method private drawAllKey(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     const-string v4, "SamsungIME"
 
@@ -3320,8 +3273,6 @@
 
 .method private drawKey(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v12, 0x3
 
@@ -3656,7 +3607,6 @@
 
 .method private drawKeyAreaRects(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
     .annotation runtime Lcom/sec/android/inputmethod/annotation/EngineType;
         value = {
             "XT9"
@@ -4028,9 +3978,6 @@
 
 .method private drawKeyBackground(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;Landroid/graphics/drawable/Drawable;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x0
 
@@ -4095,9 +4042,6 @@
 
 .method private drawKeyBackground(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;Z)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -4124,9 +4068,6 @@
 
 .method private drawKeyIcon(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;Z)Z
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Z
 
     invoke-virtual {p2}, Lcom/diotek/ime/framework/view/Keyboard$Key;->getCurrentDrawableState()[I
 
@@ -4160,12 +4101,6 @@
 
 .method private drawKeyLabel(Landroid/graphics/Canvas;Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/String;Lcom/diotek/ime/framework/view/Keyboard$Key;Z)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p6    # Z
 
     if-nez p3, :cond_0
 
@@ -4474,7 +4409,6 @@
 
 .method private drawMiniKeyboardDivideLines(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v11, 0x0
 
@@ -4715,8 +4649,6 @@
 
 .method private drawSoftFuncKey(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;)V
     .locals 29
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     move-object/from16 v0, p0
 
@@ -5657,7 +5589,6 @@
 
 .method private drawSymPopupKeyboardDivideLines(Landroid/graphics/Canvas;)V
     .locals 16
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual/range {p0 .. p0}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->getSymbolPopupVerticalLine()Landroid/graphics/drawable/Drawable;
 
@@ -6661,7 +6592,6 @@
 
 .method private getKeyDescription(I)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -6802,8 +6732,6 @@
 
 .method private getKeyExtraLabel(Lcom/diotek/ime/framework/view/Keyboard$Key;Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -6822,7 +6750,6 @@
 
 .method private getKeyLabelDescription(Lcom/diotek/ime/framework/view/Keyboard$Key;)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v5, 0x1
 
@@ -6915,7 +6842,6 @@
 
 .method private getLaoSecondayKeyLabel(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_0
 
@@ -7226,9 +7152,6 @@
 
 .method private getMiniKeyboard(Lcom/diotek/ime/framework/view/KeboardKeyInfo;II)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 49
-    .param p1    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -8430,8 +8353,6 @@
 
 .method private getNearestKey(II)Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mKeyboard:Lcom/diotek/ime/framework/view/DefaultKeyboard;
 
@@ -8466,8 +8387,6 @@
 
 .method private getRelocatedKeyMinikeyboard(IZ)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v9, 0x1
 
@@ -8574,7 +8493,6 @@
 
 .method private getSymbolCount(Ljava/lang/CharSequence;)I
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -8690,9 +8608,6 @@
 
 .method private init(Landroid/inputmethodservice/InputMethodService;Landroid/util/AttributeSet;I)V
     .locals 8
-    .param p1    # Landroid/inputmethodservice/InputMethodService;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/16 v7, 0x1e0
 
@@ -9846,7 +9761,6 @@
 
 .method private invalidateTracePath(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mTrace:Lcom/diotek/ime/framework/trace/KeyboardTrace;
 
@@ -10073,7 +9987,6 @@
 
 .method private isCustomAreaEnableLanguage(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -10173,8 +10086,6 @@
 
 .method private isDrawSingleKey(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     if-eqz p2, :cond_0
 
@@ -10271,8 +10182,6 @@
 
 .method private isLanguageOnList([Lcom/diotek/ime/framework/common/Language;I)Z
     .locals 2
-    .param p1    # [Lcom/diotek/ime/framework/common/Language;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -10307,7 +10216,6 @@
 
 .method private isNeedLatelySymbolPopupOnKeypad(Lcom/diotek/ime/framework/view/KeboardKeyInfo;)Z
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
 
     const/4 v0, 0x0
 
@@ -10385,7 +10293,6 @@
 
 .method private isNeededSpaceInPreviewPopup(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -10496,7 +10403,6 @@
 
 .method private isPhonepadLabel(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x1
 
@@ -10588,7 +10494,6 @@
 
 .method private isPreviewEnableKey(Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v0, 0x0
 
@@ -10611,7 +10516,6 @@
 
 .method private isShiftKeyIndex(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -10660,7 +10564,6 @@
 
 .method private isSpaceKeyIndex(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -10696,7 +10599,6 @@
 
 .method private isStatusBarShowing(Landroid/view/IWindowManager;)Z
     .locals 5
-    .param p1    # Landroid/view/IWindowManager;
 
     const/4 v1, 0x0
 
@@ -10745,8 +10647,6 @@
 
 .method private isSupportingPreviewKey(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -10856,7 +10756,6 @@
 
 .method private onBufferDrawMovableSign(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v7, 0x40000000
 
@@ -10921,10 +10820,6 @@
 
 .method private onCancelEvent(Lcom/diotek/ime/framework/view/tracker/PointerTracker;IIJ)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p1, p2, p3, p4, p5}, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->onCancelEvent(IIJ)V
 
@@ -10948,11 +10843,6 @@
 
 .method private onDownEvent(Lcom/diotek/ime/framework/view/tracker/PointerTracker;IIJI)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # I
 
     if-nez p1, :cond_1
 
@@ -11039,10 +10929,6 @@
 
 .method private onUpEvent(Lcom/diotek/ime/framework/view/tracker/PointerTracker;IIJ)V
     .locals 8
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     const/4 v7, 0x0
 
@@ -11225,8 +11111,6 @@
 
 .method private openMultiTouchPopupIfRequired(ILcom/diotek/ime/framework/view/tracker/PointerTracker;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     const/4 v1, 0x0
 
@@ -11276,10 +11160,6 @@
 
 .method private processFlickMoveEvent(Landroid/view/MotionEvent;ZII)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -11554,8 +11434,6 @@
 
 .method private setAnimationForFunctionalMiniKeyboard(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     div-int/lit8 v0, p2, 0x2
 
@@ -11582,9 +11460,6 @@
 
 .method private setAnimationForMiniKeyboard(ILcom/diotek/ime/framework/view/KeboardKeyInfo;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
-    .param p3    # I
 
     const/16 v5, 0x8
 
@@ -11681,8 +11556,6 @@
 
 .method private setAnimationForUmlautMiniKeyboard(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     div-int/lit8 v0, p2, 0x2
 
@@ -11709,8 +11582,6 @@
 
 .method private setDefaultKey(Lcom/diotek/ime/framework/view/DefaultKeyboard;I)V
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p2    # I
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -11786,7 +11657,6 @@
 
 .method private setDownState(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -11894,8 +11764,6 @@
 
 .method private setTabletCjiSymbolKey(Lcom/diotek/ime/framework/view/Keyboard$Key;I)I
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
 
     iget-object v2, p1, Lcom/diotek/ime/framework/view/Keyboard$Key;->codes:[I
 
@@ -11974,7 +11842,6 @@
 # virtual methods
 .method protected addSymbolsToLatelyUsedList(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 
@@ -12091,7 +11958,6 @@
 
 .method public changeInvisiblePopupLayoutType(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->TAG:Ljava/lang/String;
 
@@ -12147,7 +12013,6 @@
 
 .method protected changeLabelToUpperCase(Ljava/lang/CharSequence;)C
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v5, 0x0
 
@@ -12194,7 +12059,6 @@
 
 .method public changePopupMiniKeyboardWindowLayoutType(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->TAG:Ljava/lang/String;
 
@@ -12246,7 +12110,6 @@
 
 .method public changePreviewModeForFlickableKeyboard(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -12416,8 +12279,6 @@
 
 .method public checkMultiTap(JI)V
     .locals 9
-    .param p1    # J
-    .param p3    # I
 
     const-wide/16 v7, 0x5dc
 
@@ -12760,10 +12621,6 @@
 
 .method public detectAndSendKey(IIIJ)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->isShown()Z
 
@@ -15355,8 +15212,6 @@
 
 .method public dismissPreviewbyTracker(JLcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mMultiTouchHandler:Lcom/diotek/ime/framework/view/AbstractKeyboardView$UIHandler;
 
@@ -15367,7 +15222,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v6, 0x1
 
@@ -15526,7 +15380,6 @@
 
 .method public dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->isTouchExplorationEnabled()Z
 
@@ -15696,7 +15549,6 @@
 
 .method protected drawHoverKey(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mKeys:[Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -15717,10 +15569,6 @@
 
 .method protected drawKeyExtraLabel(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;Ljava/lang/String;Z)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -15792,9 +15640,6 @@
 
 .method protected drawKeyIcon(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;Landroid/graphics/drawable/Drawable;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     iget v3, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mCurrentInputMethod:I
 
@@ -16781,11 +16626,6 @@
 
 .method protected drawKeyLabel(Landroid/graphics/Canvas;Lcom/diotek/ime/framework/view/Keyboard$Key;Ljava/lang/String;ZZ)V
     .locals 30
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
 
     move-object/from16 v0, p0
 
@@ -20485,7 +20325,6 @@
 
 .method public drawMovableSign(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsMovableMode:Z
 
@@ -20523,8 +20362,6 @@
 
 .method public getCoordinateInputView(Landroid/content/Context;Lcom/diotek/ime/framework/view/AbstractKeyboardView$Coordinate;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/diotek/ime/framework/view/AbstractKeyboardView$Coordinate;
 
     const/4 v7, 0x1
 
@@ -20706,9 +20543,6 @@
 
 .method protected getCurrentUmlautString(Lcom/diotek/ime/framework/view/KeboardKeyInfo;IZ)Ljava/lang/StringBuilder;
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/16 v4, 0xb
 
@@ -20879,8 +20713,6 @@
 
 .method public getDrawableLW(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
@@ -21022,7 +20854,6 @@
 
 .method protected getFont(I)Landroid/graphics/Typeface;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mFontManager:Lcom/diotek/ime/framework/common/FontManager;
 
@@ -21081,9 +20912,6 @@
 
 .method protected getKeyBackground(Lcom/diotek/ime/framework/view/Keyboard$Key;ZZ)Landroid/graphics/drawable/Drawable;
     .locals 10
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v6, 0x2e
 
@@ -21967,7 +21795,6 @@
 
 .method protected getKeyFlickPreviewLabel(Lcom/diotek/ime/framework/view/Keyboard$Key;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v0, 0x0
 
@@ -22017,7 +21844,6 @@
 
 .method protected getKeyIndex(Lcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v0, -0x1
 
@@ -22053,7 +21879,6 @@
 
 .method protected getKeyLabel(Lcom/diotek/ime/framework/view/Keyboard$Key;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     if-nez p1, :cond_0
 
@@ -22070,8 +21895,6 @@
 
 .method protected getKeyLabelColor(Lcom/diotek/ime/framework/view/Keyboard$Key;Z)I
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -22210,7 +22033,6 @@
 
 .method protected getKeyPreviewLabel(Lcom/diotek/ime/framework/view/Keyboard$Key;)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v6, 0x0
 
@@ -22520,7 +22342,6 @@
 
 .method protected getKeySpecialLabel(Lcom/diotek/ime/framework/view/Keyboard$Key;)Ljava/lang/String;
     .locals 13
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v12, 0x7
 
@@ -22832,7 +22653,6 @@
 
 .method protected getKeyTypeface(Lcom/diotek/ime/framework/view/Keyboard$Key;)Landroid/graphics/Typeface;
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v2, 0x0
 
@@ -23240,8 +23060,6 @@
 
 .method public getOCRIconDrawable(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -23336,8 +23154,6 @@
 
 .method protected getPointerTracker(IZ)Lcom/diotek/ime/framework/view/tracker/PointerTracker;
     .locals 11
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -23472,8 +23288,6 @@
 
 .method protected getPreviewEnterLabelSize(Lcom/diotek/ime/framework/view/Keyboard$Key;I)I
     .locals 8
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -23554,7 +23368,6 @@
 
 .method protected getPreviewKeyLabelColor(Lcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPressedKeyLabelColor:I
 
@@ -23702,9 +23515,6 @@
 
 .method protected getSpaceSlidingPreviewIcon(Lcom/diotek/ime/framework/view/Keyboard$Key;ILandroid/graphics/drawable/Drawable;)Lcom/diotek/ime/framework/view/SlidingLocaleDrawable;
     .locals 12
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPaint:Landroid/graphics/Paint;
 
@@ -24046,8 +23856,6 @@
 
 .method protected getTextFontSize(Lcom/diotek/ime/framework/view/Keyboard$Key;I)I
     .locals 15
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
 
     move/from16 v2, p2
 
@@ -24219,9 +24027,6 @@
 
 .method protected getTextFontSize(Ljava/lang/String;Landroid/graphics/RectF;I)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # I
 
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
 
@@ -24494,7 +24299,6 @@
 
 .method public getXOffsetForLaoCharacters(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -24574,7 +24378,6 @@
 
 .method public getYOffsetForIndianCharactersLandscape(Lcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/high16 v5, 0x70610000
 
@@ -24805,7 +24608,6 @@
 
 .method public getYOffsetForIndianCharactersPortrait(Lcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/high16 v4, 0x70610000
 
@@ -24922,7 +24724,6 @@
 
 .method public getYOffsetForLaoCharacters(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -25001,7 +24802,6 @@
 
 .method public getYOffsetForThaiCharacters(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -25135,9 +24935,6 @@
 
 .method public handleHwrTouchCancel(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -25146,9 +24943,6 @@
 
 .method public handleHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -25157,9 +24951,6 @@
 
 .method public handleHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -25168,9 +24959,6 @@
 
 .method public handleHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -25179,7 +24967,6 @@
 
 .method protected hasLongpressOperation(Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v2, 0x1
 
@@ -25348,7 +25135,6 @@
 
 .method protected hasMultiapLongKey(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x3132
 
@@ -25505,7 +25291,6 @@
 
 .method public invalidateDirtyRect(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mKeys:[Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -25568,9 +25353,6 @@
 
 .method public invalidateHoverKey(ILcom/diotek/ime/framework/view/tracker/PointerTracker;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p3    # Z
 
     if-ltz p1, :cond_0
 
@@ -25617,7 +25399,6 @@
 
 .method public invalidateKey(I)V
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -25643,7 +25424,6 @@
 
 .method public invalidateKey(Lcom/diotek/ime/framework/view/Keyboard$Key;)V
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     if-nez p1, :cond_0
 
@@ -25866,7 +25646,6 @@
 
 .method public invalidateKeyWithKeyCode(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mKeyboard:Lcom/diotek/ime/framework/view/DefaultKeyboard;
 
@@ -26046,7 +25825,6 @@
 
 .method public isFontSizeCalculationRequired(Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v1, 0x1
 
@@ -26264,7 +26042,6 @@
 
 .method protected isLeftKeyInKeypad(Lcom/diotek/ime/framework/view/KeboardKeyInfo;)Z
     .locals 7
-    .param p1    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
 
     const/4 v5, 0x0
 
@@ -26467,7 +26244,6 @@
 
 .method protected isNeedActiveKeyBackground(Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v1, 0x0
 
@@ -26509,8 +26285,6 @@
 
 .method protected isNeedFunctionKeyBackground(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -26605,7 +26379,6 @@
 
 .method public isNeedPopupPreview(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -26700,7 +26473,6 @@
 
 .method protected isPhonePad(I)Z
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -26766,7 +26538,6 @@
 
 .method public isPreviewEnabled(Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 7
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v3, 0x1
 
@@ -26838,7 +26609,6 @@
 
 .method protected isPreviewEnabledInputMethod(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -26915,7 +26685,6 @@
 
 .method protected isSupportPreview(Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v0, 0x0
 
@@ -27021,8 +26790,6 @@
 
 .method public isTextNotCentered(Lcom/diotek/ime/framework/view/Keyboard$Key;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -27421,9 +27188,6 @@
 
 .method protected isUsingMultiTapKey(IILcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v1, 0x0
 
@@ -27726,7 +27490,6 @@
 
 .method public movePopupKeyboard(Landroid/view/MotionEvent;)V
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x1
 
@@ -27874,10 +27637,6 @@
 
 .method public moveTrace(JJIJ)Z
     .locals 10
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # J
 
     const-wide/16 v0, 0x0
 
@@ -27997,7 +27756,6 @@
 
 .method public moveUpPopupKeyboard(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -28064,9 +27822,6 @@
 
 .method protected multiTouchShowKey(IILcom/diotek/ime/framework/view/tracker/PointerTracker;)Z
     .locals 47
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     move-object/from16 v0, p0
 
@@ -30207,9 +29962,6 @@
 
 .method public multiTouchShowPreview(ILcom/diotek/ime/framework/view/tracker/PointerTracker;I)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -30725,7 +30477,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x0
 
@@ -30813,7 +30564,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
 
     const/16 v8, 0x31
 
@@ -31065,7 +30815,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v6, 0xa
 
@@ -31347,11 +31096,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -31371,8 +31115,6 @@
 
 .method protected onLongPress(Lcom/diotek/ime/framework/view/Keyboard$Key;I)Z
     .locals 15
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->isShown()Z
 
@@ -33267,8 +33009,6 @@
 
 .method public onMeasure(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mKeyboard:Lcom/diotek/ime/framework/view/DefaultKeyboard;
 
@@ -33340,10 +33080,6 @@
 
 .method public onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -33358,7 +33094,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -33371,8 +33106,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;Z)Z
     .locals 71
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -37568,8 +37301,6 @@
 
 .method protected preparePopupMiniKeyboard(Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     new-instance v0, Landroid/widget/PopupWindow;
 
@@ -37631,7 +37362,6 @@
 
 .method protected preparePreview(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/widget/FrameLayout;
 
@@ -37694,11 +37424,6 @@
 
 .method public pressTrace(JJIIJ)Z
     .locals 9
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
 
     const-wide/16 v0, 0x0
 
@@ -37805,12 +37530,6 @@
 
 .method public releaseTrace(JJIIZJ)Z
     .locals 10
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mTrace:Lcom/diotek/ime/framework/trace/KeyboardTrace;
 
@@ -37883,11 +37602,6 @@
 
 .method public releaseTraceWithAnimation(JJIIZ)Z
     .locals 4
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     const/4 v0, 0x0
 
@@ -38274,10 +37988,6 @@
 
 .method protected resizeLabelSize(ILjava/lang/String;Landroid/graphics/Paint;F)F
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Paint;
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -38340,8 +38050,6 @@
 
 .method public sendAccessibilityEvent(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, -0x1
 
@@ -38532,7 +38240,6 @@
 
 .method public sendTalkbackDescription(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x80
 
@@ -38557,7 +38264,6 @@
 
 .method public setCandidateDotComPopupKeyboard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsHwrDotComPopupKeyboard:Z
 
@@ -38566,7 +38272,6 @@
 
 .method public setCurrentUmlautString(Ljava/lang/StringBuilder;)V
     .locals 0
-    .param p1    # Ljava/lang/StringBuilder;
 
     sput-object p1, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mCurrentUmlautString:Ljava/lang/StringBuilder;
 
@@ -38575,7 +38280,6 @@
 
 .method public setDrawLinePopupKeyboard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsNeedDrawLinePopupKeyboard:Z
 
@@ -38584,8 +38288,6 @@
 
 .method protected setExtraPaintParams(Landroid/graphics/Paint;Lcom/diotek/ime/framework/view/Keyboard$Key;)V
     .locals 1
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     invoke-virtual {p0, p2}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->getKeyExtraLabelColor(Lcom/diotek/ime/framework/view/Keyboard$Key;)I
 
@@ -38610,7 +38312,6 @@
 
 .method public setHoverEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsHover:Z
 
@@ -38619,7 +38320,6 @@
 
 .method public setInLangaugeChanging(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mInLangaugeChanging:Z
 
@@ -38628,7 +38328,6 @@
 
 .method public setInputLanguage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mInputLanguage:I
 
@@ -38637,7 +38336,6 @@
 
 .method public setIsLeftPopupKeyboard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsLeftPopupKeyboard:Z
 
@@ -38646,7 +38344,6 @@
 
 .method public setIsMiniKeyboardView(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsMiniKeyboardView:Z
 
@@ -38655,7 +38352,6 @@
 
 .method public setIsSymbolPopupKeyboard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsSymbolPopupKeyboard:Z
 
@@ -38664,7 +38360,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/DefaultKeyboard;)V
     .locals 18
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
 
     if-nez p1, :cond_0
 
@@ -39790,7 +39485,6 @@
 
 .method public setKeyboardWidth(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mKeyDetector:Lcom/diotek/ime/framework/view/tracker/KeyDetector;
 
@@ -39801,7 +39495,6 @@
 
 .method protected setLatelyUsedEmoticonText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     sput-object p1, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mLatelyUsedEmoticonText:Ljava/lang/CharSequence;
 
@@ -39810,7 +39503,6 @@
 
 .method public setLeftKeyboardMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mIsLeftKeyboard:Z
 
@@ -39819,12 +39511,6 @@
 
 .method protected setLocationTextViewPreview(Landroid/widget/TextView;Lcom/diotek/ime/framework/view/Keyboard$Key;IIII)V
     .locals 17
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     move-object/from16 v0, p0
 
@@ -40331,11 +40017,6 @@
 
 .method protected setLocationTextViewPreviewKey(Landroid/widget/TextView;IIII)V
     .locals 6
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v4, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -40488,7 +40169,6 @@
 
 .method public setMovableMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -40528,7 +40208,6 @@
 
 .method public setOnKeyboardActionListener(Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mKeyboardActionListener:Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;
 
@@ -40537,9 +40216,6 @@
 
 .method protected setPaintParams(Landroid/graphics/Paint;Lcom/diotek/ime/framework/view/Keyboard$Key;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Z
 
     invoke-virtual {p0, p2}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->getKeyLabelSize(Lcom/diotek/ime/framework/view/Keyboard$Key;)I
 
@@ -40566,7 +40242,6 @@
 
 .method public setPairView(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPairView:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -40575,7 +40250,6 @@
 
 .method public setPopupTouchUp(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mPopupTouchUp:Z
 
@@ -40584,9 +40258,6 @@
 
 .method protected setShadowLayer(Landroid/graphics/Paint;Lcom/diotek/ime/framework/view/Keyboard$Key;Z)V
     .locals 6
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Z
 
     const/16 v4, 0x20
 
@@ -40851,9 +40522,6 @@
 
 .method protected setShadowLayerForKorRangeBtn(Landroid/graphics/Paint;Lcom/diotek/ime/framework/view/Keyboard$Key;Z)V
     .locals 5
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # Z
 
     iget v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->mShadowRadius:F
 
@@ -41322,8 +40990,6 @@
 
 .method public showPopupMiniKeyboard(Lcom/diotek/ime/framework/view/KeboardKeyInfo;I)Z
     .locals 46
-    .param p1    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
-    .param p2    # I
 
     move-object/from16 v0, p1
 
@@ -45739,8 +45405,6 @@
 
 .method protected showPopupMiniKeyboard(Lcom/diotek/ime/framework/view/Keyboard$Key;I)Z
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/diotek/ime/framework/view/KeboardKeyInfo;->clone(Lcom/diotek/ime/framework/view/Keyboard$Key;)Lcom/diotek/ime/framework/view/KeboardKeyInfo;
 

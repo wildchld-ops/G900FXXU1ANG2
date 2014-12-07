@@ -372,17 +372,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;Landroid/content/Context;Lcom/android/server/power/Notifier;Lcom/android/server/LightsService;Lcom/android/server/TwilightService;Landroid/hardware/SensorManager;Lcom/android/server/display/DisplayManagerService;Lcom/android/server/power/SuspendBlocker;Lcom/android/server/power/DisplayBlanker;Lcom/android/server/power/DisplayPowerController$Callbacks;Landroid/os/Handler;)V
     .locals 10
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/server/power/Notifier;
-    .param p4    # Lcom/android/server/LightsService;
-    .param p5    # Lcom/android/server/TwilightService;
-    .param p6    # Landroid/hardware/SensorManager;
-    .param p7    # Lcom/android/server/display/DisplayManagerService;
-    .param p8    # Lcom/android/server/power/SuspendBlocker;
-    .param p9    # Lcom/android/server/power/DisplayBlanker;
-    .param p10    # Lcom/android/server/power/DisplayPowerController$Callbacks;
-    .param p11    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1182,7 +1171,6 @@
 
 .method static synthetic access$000(Lcom/android/server/power/DisplayPowerController;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     invoke-direct {p0}, Lcom/android/server/power/DisplayPowerController;->sendUpdatePowerState()V
 
@@ -1191,7 +1179,6 @@
 
 .method static synthetic access$100(Lcom/android/server/power/DisplayPowerController;)Lcom/android/server/power/DisplayPowerController$Callbacks;
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerController;->mCallbacks:Lcom/android/server/power/DisplayPowerController$Callbacks;
 
@@ -1200,9 +1187,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/power/DisplayPowerController;JZ)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
-    .param p1    # J
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/power/DisplayPowerController;->handleProximitySensorEvent(JZ)V
 
@@ -1211,7 +1195,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/power/DisplayPowerController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget-boolean v0, p0, Lcom/android/server/power/DisplayPowerController;->mLightSensorEnabled:Z
 
@@ -1220,7 +1203,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/power/DisplayPowerController;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget v0, p0, Lcom/android/server/power/DisplayPowerController;->mRecentLightSamples:I
 
@@ -1229,9 +1211,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/power/DisplayPowerController;JF)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
-    .param p1    # J
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/power/DisplayPowerController;->handleLightSensorEvent(JF)V
 
@@ -1240,7 +1219,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/power/DisplayPowerController;)Lcom/android/server/power/DisplayPowerController$DisplayControllerHandler;
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerController;->mHandler:Lcom/android/server/power/DisplayPowerController$DisplayControllerHandler;
 
@@ -1249,8 +1227,6 @@
 
 .method static synthetic access$1502(Lcom/android/server/power/DisplayPowerController;J)J
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/power/DisplayPowerController;->lastLightSensorEventTime:J
 
@@ -1259,8 +1235,6 @@
 
 .method static synthetic access$1602(Lcom/android/server/power/DisplayPowerController;F)F
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/server/power/DisplayPowerController;->lastLightSensorValue:F
 
@@ -1269,8 +1243,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/power/DisplayPowerController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/DisplayPowerController;->mTwilightChanged:Z
 
@@ -1279,7 +1251,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/power/DisplayPowerController;)F
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget v0, p0, Lcom/android/server/power/DisplayPowerController;->mTiltAngle:F
 
@@ -1288,8 +1259,6 @@
 
 .method static synthetic access$1802(Lcom/android/server/power/DisplayPowerController;F)F
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/server/power/DisplayPowerController;->mTiltAngle:F
 
@@ -1298,7 +1267,6 @@
 
 .method static synthetic access$200(Lcom/android/server/power/DisplayPowerController;)Lcom/android/server/power/SuspendBlocker;
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerController;->mDisplaySuspendBlocker:Lcom/android/server/power/SuspendBlocker;
 
@@ -1307,8 +1275,6 @@
 
 .method static synthetic access$300(Lcom/android/server/power/DisplayPowerController;Ljava/io/PrintWriter;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/DisplayPowerController;->dumpLocal(Ljava/io/PrintWriter;)V
 
@@ -1317,7 +1283,6 @@
 
 .method static synthetic access$400(Lcom/android/server/power/DisplayPowerController;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     invoke-direct {p0}, Lcom/android/server/power/DisplayPowerController;->updatePowerState()V
 
@@ -1326,7 +1291,6 @@
 
 .method static synthetic access$500(Lcom/android/server/power/DisplayPowerController;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     invoke-direct {p0}, Lcom/android/server/power/DisplayPowerController;->debounceProximitySensor()V
 
@@ -1335,7 +1299,6 @@
 
 .method static synthetic access$600(Lcom/android/server/power/DisplayPowerController;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     invoke-direct {p0}, Lcom/android/server/power/DisplayPowerController;->debounceLightSensor()V
 
@@ -1344,7 +1307,6 @@
 
 .method static synthetic access$700(Lcom/android/server/power/DisplayPowerController;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     invoke-direct {p0}, Lcom/android/server/power/DisplayPowerController;->printLastLightSensorEvent()V
 
@@ -1353,7 +1315,6 @@
 
 .method static synthetic access$800(Lcom/android/server/power/DisplayPowerController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget-boolean v0, p0, Lcom/android/server/power/DisplayPowerController;->mProximitySensorEnabled:Z
 
@@ -1362,7 +1323,6 @@
 
 .method static synthetic access$900(Lcom/android/server/power/DisplayPowerController;)F
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerController;
 
     iget v0, p0, Lcom/android/server/power/DisplayPowerController;->mProximityThreshold:F
 
@@ -1371,8 +1331,6 @@
 
 .method private animateScreenBrightness(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerController;->mPowerRequest:Lcom/android/server/power/DisplayPowerRequest;
 
@@ -1553,8 +1511,6 @@
 
 .method private applyLightSensorMeasurement(JF)V
     .locals 6
-    .param p1    # J
-    .param p3    # F
 
     iget v2, p0, Lcom/android/server/power/DisplayPowerController;->mRecentLightSamples:I
 
@@ -1633,8 +1589,6 @@
 
 .method private applyLightSensorMeasurementSEC(JF)V
     .locals 7
-    .param p1    # J
-    .param p3    # F
 
     const/4 v6, 0x1
 
@@ -1789,9 +1743,6 @@
 
 .method private static clamp(III)I
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-gt p0, p1, :cond_0
 
@@ -1813,7 +1764,6 @@
 
 .method private static clampAbsoluteBrightness(I)I
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1828,7 +1778,6 @@
 
 .method private clampScreenBrightness(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/power/DisplayPowerController;->mScreenBrightnessRangeMinimum:I
 
@@ -1866,8 +1815,6 @@
 
 .method private static createAutoBrightnessSpline([I[I)Landroid/util/Spline;
     .locals 13
-    .param p0    # [I
-    .param p1    # [I
 
     const/high16 v12, 0x3fa00000
 
@@ -2176,7 +2123,6 @@
 
 .method private dumpAutoBrightnessTables(Ljava/io/PrintWriter;)V
     .locals 11
-    .param p1    # Ljava/io/PrintWriter;
 
     :try_start_0
     iget-boolean v9, p0, Lcom/android/server/power/DisplayPowerController;->mDynamicAutoBrightnessEnabled:Z
@@ -2831,7 +2777,6 @@
 
 .method private dumpLocal(Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-virtual {p1}, Ljava/io/PrintWriter;->println()V
 
@@ -3521,8 +3466,6 @@
 
 .method private fileWriteInt(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -3625,7 +3568,6 @@
 
 .method private getDynamicAutoBrightnessHighHysteresis(F)F
     .locals 11
-    .param p1    # F
 
     const-wide v9, 0x3f847ae147ae147bL
 
@@ -3892,7 +3834,6 @@
 
 .method private getDynamicAutoBrightnessLowHysteresis(F)F
     .locals 11
-    .param p1    # F
 
     const-wide v9, 0x3f847ae147ae147bL
 
@@ -4159,7 +4100,6 @@
 
 .method private getDynamicAutoBrightnessValue(F)F
     .locals 11
-    .param p1    # F
 
     const-wide/16 v5, 0x0
 
@@ -4426,7 +4366,6 @@
 
 .method private getFinalBrightness(I)I
     .locals 4
-    .param p1    # I
 
     move v0, p1
 
@@ -4581,8 +4520,6 @@
 
 .method private getFinalDynamicAutoBrightnessValue(FF)I
     .locals 8
-    .param p1    # F
-    .param p2    # F
 
     const/4 v7, 0x2
 
@@ -4663,11 +4600,6 @@
 
 .method private getSlope(IIIIZ)D
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const-wide v8, 0x3f847ae147ae147bL
 
@@ -4742,9 +4674,6 @@
 
 .method private static getTwilightGamma(JJJ)F
     .locals 9
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
 
     const-wide/32 v7, 0x6ddd00
 
@@ -4820,8 +4749,6 @@
 
 .method private handleLightSensorEvent(JF)V
     .locals 2
-    .param p1    # J
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerController;->mHandler:Lcom/android/server/power/DisplayPowerController$DisplayControllerHandler;
 
@@ -4850,8 +4777,6 @@
 
 .method private handleProximitySensorEvent(JZ)V
     .locals 4
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -5412,9 +5337,6 @@
 
 .method private static lerp(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     sub-float v0, p1, p0
 
@@ -5427,7 +5349,6 @@
 
 .method private static normalizeAbsoluteBrightness(I)F
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/power/DisplayPowerController;->clampAbsoluteBrightness(I)I
 
@@ -5497,7 +5418,6 @@
 
 .method private static proximityToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -5535,8 +5455,6 @@
 
 .method private sendBrightnessLevel(FZ)V
     .locals 3
-    .param p1    # F
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -5661,7 +5579,6 @@
 
 .method private sendLux(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Lcom/android/server/power/DisplayPowerController;->mPowerRequest:Lcom/android/server/power/DisplayPowerRequest;
 
@@ -5836,7 +5753,6 @@
 
 .method private setAmbientLux(F)V
     .locals 2
-    .param p1    # F
 
     iput p1, p0, Lcom/android/server/power/DisplayPowerController;->mAmbientLux:F
 
@@ -5861,8 +5777,6 @@
 
 .method private setLightSensorEnabled(ZZ)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
 
     const-wide/16 v6, 0x64
 
@@ -5999,7 +5913,6 @@
 
 .method private setPendingProximityDebounceTime(J)V
     .locals 4
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/server/power/DisplayPowerController;->mPendingProximityDebounceTime:J
 
@@ -6021,7 +5934,6 @@
 
 .method private setProximitySensorEnabled(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, -0x1
 
@@ -6107,7 +6019,6 @@
 
 .method private setScreenOn(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerController;->mPowerState:Lcom/android/server/power/DisplayPowerState;
 
@@ -6206,7 +6117,6 @@
 
 .method private updateAmbientLux(J)V
     .locals 11
-    .param p1    # J
 
     const/4 v10, 0x0
 
@@ -6791,7 +6701,6 @@
 
 .method private updateAmbientLuxSEC(J)V
     .locals 9
-    .param p1    # J
 
     const/4 v8, 0x3
 
@@ -6934,7 +6843,6 @@
 
 .method private updateAutoBrightness(Z)V
     .locals 14
-    .param p1    # Z
 
     iget-boolean v2, p0, Lcom/android/server/power/DisplayPowerController;->mAmbientLuxValid:Z
 
@@ -7242,7 +7150,6 @@
 
 .method private updateAutoBrightnessSEC(Z)V
     .locals 17
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -8793,7 +8700,6 @@
 
 .method private static wantScreenOn(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -8820,7 +8726,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
 
     iget-object v1, p0, Lcom/android/server/power/DisplayPowerController;->mLock:Ljava/lang/Object;
 
@@ -9202,9 +9107,6 @@
 
 .method public requestPowerState(Lcom/android/server/power/DisplayPowerRequest;ZZ)Z
     .locals 5
-    .param p1    # Lcom/android/server/power/DisplayPowerRequest;
-    .param p2    # Z
-    .param p3    # Z
 
     sget-boolean v1, Lcom/android/server/power/DisplayPowerController;->DEBUG:Z
 

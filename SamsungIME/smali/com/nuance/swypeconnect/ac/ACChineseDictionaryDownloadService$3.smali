@@ -40,7 +40,6 @@
 # virtual methods
 .method public downloadComplete(Ljava/io/File;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$3;->this$0:Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
@@ -65,7 +64,6 @@
 
 .method public downloadFailed(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$3;->this$0:Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
@@ -83,7 +81,6 @@
 
 .method public downloadPercentage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$3;->this$0:Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
@@ -118,7 +115,6 @@
 
 .method public downloadStopped(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$3;->this$0:Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 

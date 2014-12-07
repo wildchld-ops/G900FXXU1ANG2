@@ -16,8 +16,6 @@
 # virtual methods
 .method public isSimDBInitializeNeeded(Landroid/content/Context;I)Z
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -233,9 +231,6 @@
 
 .method public makeSimDbService(Landroid/content/Context;ILandroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, 0x2
 

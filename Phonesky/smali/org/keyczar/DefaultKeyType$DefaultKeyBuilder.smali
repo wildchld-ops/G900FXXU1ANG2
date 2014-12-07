@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Lorg/keyczar/DefaultKeyType;Lorg/keyczar/DefaultKeyType$1;)V
     .locals 0
-    .param p1    # Lorg/keyczar/DefaultKeyType;
-    .param p2    # Lorg/keyczar/DefaultKeyType$1;
 
     invoke-direct {p0, p1}, Lorg/keyczar/DefaultKeyType$DefaultKeyBuilder;-><init>(Lorg/keyczar/DefaultKeyType;)V
 
@@ -52,7 +50,6 @@
 # virtual methods
 .method public read(Ljava/lang/String;)Lorg/keyczar/KeyczarKey;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

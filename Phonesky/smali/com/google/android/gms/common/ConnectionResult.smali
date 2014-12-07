@@ -31,8 +31,6 @@
 
 .method public constructor <init>(ILandroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

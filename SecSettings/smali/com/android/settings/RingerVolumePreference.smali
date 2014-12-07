@@ -158,8 +158,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -234,7 +232,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/RingerVolumePreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/RingerVolumePreference;
 
     invoke-direct {p0}, Lcom/android/settings/RingerVolumePreference;->updateSlidersAndMutedStates()V
 
@@ -243,7 +240,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/RingerVolumePreference;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/RingerVolumePreference;
 
     iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->mHandler:Landroid/os/Handler;
 
@@ -268,7 +264,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/RingerVolumePreference;)[Landroid/preference/VolumePreference$SeekBarVolumizer;
     .locals 1
-    .param p0    # Lcom/android/settings/RingerVolumePreference;
 
     iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->mSeekBarVolumizer:[Landroid/preference/VolumePreference$SeekBarVolumizer;
 
@@ -277,7 +272,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/RingerVolumePreference;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/android/settings/RingerVolumePreference;
 
     iget-object v0, p0, Lcom/android/settings/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
 
@@ -359,7 +353,6 @@
 
 .method private getApplicationLabel(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -407,7 +400,6 @@
 
 .method private getMediaVolumeUri(Landroid/content/Context;)Landroid/net/Uri;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -647,7 +639,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 18
-    .param p1    # Landroid/view/View;
 
     invoke-super/range {p0 .. p1}, Landroid/preference/VolumePreference;->onBindDialogView(Landroid/view/View;)V
 
@@ -1132,7 +1123,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 14
-    .param p1    # Z
 
     const/4 v13, 0x0
 
@@ -1376,9 +1366,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1417,7 +1404,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 2
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const/high16 v0, 0x1040000
 
@@ -1497,7 +1483,6 @@
 
 .method protected onSampleStarting(Landroid/preference/VolumePreference$SeekBarVolumizer;)V
     .locals 4
-    .param p1    # Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     invoke-super {p0, p1}, Landroid/preference/VolumePreference;->onSampleStarting(Landroid/preference/VolumePreference$SeekBarVolumizer;)V
 
@@ -1588,7 +1573,6 @@
 
 .method public setObject(Lcom/android/settings/SoundSettings;)V
     .locals 0
-    .param p1    # Lcom/android/settings/SoundSettings;
 
     iput-object p1, p0, Lcom/android/settings/RingerVolumePreference;->mVolume:Lcom/android/settings/SoundSettings;
 
@@ -1597,7 +1581,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Lcom/android/settings/RingerVolumePreference;->mOpenRingerVolumeDialog:Z
 

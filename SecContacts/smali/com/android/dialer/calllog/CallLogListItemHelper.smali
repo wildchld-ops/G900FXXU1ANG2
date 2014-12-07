@@ -16,9 +16,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/dialer/PhoneCallDetailsHelper;Lcom/android/dialer/calllog/PhoneNumberHelper;Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Lcom/android/dialer/PhoneCallDetailsHelper;
-    .param p2    # Lcom/android/dialer/calllog/PhoneNumberHelper;
-    .param p3    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +38,6 @@
 
 .method private configureCallSecondaryAction(Landroid/content/Context;Lcom/android/dialer/calllog/CallLogListItemViews;Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/calllog/CallLogListItemViews;
-    .param p3    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogListItemHelper;->mCallLogListItemHelperImpl:Lcom/samsung/dialer/impl/CallLogListItemHelperImpl;
 
@@ -54,8 +48,6 @@
 
 .method private configurePlaySecondaryAction(Lcom/android/dialer/calllog/CallLogListItemViews;Z)V
     .locals 0
-    .param p1    # Lcom/android/dialer/calllog/CallLogListItemViews;
-    .param p2    # Z
 
     return-void
 .end method
@@ -64,7 +56,6 @@
 # virtual methods
 .method public checkFontSize(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogListItemHelper;->mPhoneCallDetailsHelper:Lcom/android/dialer/PhoneCallDetailsHelper;
 
@@ -80,11 +71,6 @@
 
 .method public setPhoneCallDetails(Landroid/content/Context;Lcom/android/dialer/calllog/CallLogListItemViews;Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;ZI)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/calllog/CallLogListItemViews;
-    .param p3    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p4    # Z
-    .param p5    # I
 
     const/4 v8, 0x4
 
@@ -173,7 +159,6 @@
 
 .method public setScrollState(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogListItemHelper;->mPhoneCallDetailsHelper:Lcom/android/dialer/PhoneCallDetailsHelper;
 

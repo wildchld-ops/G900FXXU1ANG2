@@ -143,8 +143,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;Lcom/nuance/connect/host/service/HostInterface;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/nuance/connect/host/service/HostInterface;
 
     const-wide/high16 v2, -0x8000000000000000L
 
@@ -385,7 +383,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)Lcom/nuance/connect/store/PersistentDataStore;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->defaultStore:Lcom/nuance/connect/store/PersistentDataStore;
 
@@ -394,7 +391,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->devLog:Lcom/nuance/connect/util/Logger$Log;
 
@@ -403,7 +399,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)Lcom/nuance/connect/internal/ClientBinderInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->serviceBinder:Lcom/nuance/connect/internal/ClientBinderInternal;
 
@@ -412,7 +407,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->sendConnectConfig()V
 
@@ -421,9 +415,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;Landroid/os/Handler;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
 
@@ -432,7 +423,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal$IncomingHandler;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->mHandler:Lcom/nuance/connect/internal/ConnectServiceManagerInternal$IncomingHandler;
 
@@ -441,7 +431,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)Lcom/nuance/connect/internal/HandlerRegistry;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->handlerRegistry:Lcom/nuance/connect/internal/HandlerRegistry;
 
@@ -450,7 +439,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->services:Ljava/util/HashMap;
 
@@ -459,7 +447,6 @@
 
 .method private addService(Lcom/nuance/connect/internal/AbstactService;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/internal/AbstactService;
 
     iget-object v4, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->services:Ljava/util/HashMap;
 
@@ -526,7 +513,6 @@
 
 .method private getService(Lcom/nuance/connect/common/ConnectFeature;)Lcom/nuance/connect/internal/AbstactService;
     .locals 2
-    .param p1    # Lcom/nuance/connect/common/ConnectFeature;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->services:Ljava/util/HashMap;
 
@@ -545,8 +531,6 @@
 
 .method private handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
     .locals 18
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     move-object/from16 v0, p0
 
@@ -902,8 +886,6 @@
 
 .method public static make(Landroid/content/Context;Lcom/nuance/connect/host/service/HostInterface;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/nuance/connect/host/service/HostInterface;
 
     sget-object v0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->instance:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -924,7 +906,6 @@
 
 .method private registerServiceHandlers([Lcom/nuance/connect/internal/ConnectHandler;)V
     .locals 6
-    .param p1    # [Lcom/nuance/connect/internal/ConnectHandler;
 
     move-object v0, p1
 
@@ -1038,7 +1019,6 @@
 # virtual methods
 .method public dispatchAction(Lcom/nuance/connect/util/ConnectAction;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Lcom/nuance/connect/util/ConnectAction;
 
     new-instance v4, Landroid/os/Bundle;
 
@@ -1113,8 +1093,6 @@
 
 .method public dispatchAction(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/nuance/connect/util/ActionFilter;
 
@@ -1194,7 +1172,6 @@
 
 .method public getFeatureService(Lcom/nuance/connect/common/ConnectFeature;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Lcom/nuance/connect/common/ConnectFeature;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1905,7 +1882,6 @@
 
 .method getHostService(Lcom/nuance/connect/host/service/HostInterface$HostService;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/nuance/connect/host/service/HostInterface$HostService;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->hostInterface:Lcom/nuance/connect/host/service/HostInterface;
 
@@ -2416,8 +2392,6 @@
 
 .method public registerActionCallback(Lcom/nuance/connect/util/ActionDelegateCallback;Lcom/nuance/connect/util/ActionFilter;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/util/ActionDelegateCallback;
-    .param p2    # Lcom/nuance/connect/util/ActionFilter;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->actionHandlers:Ljava/util/HashMap;
 
@@ -2432,7 +2406,6 @@
 
 .method public registerActionCallback(Lcom/nuance/connect/util/ActionDelegateCallback;Ljava/util/List;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/util/ActionDelegateCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2477,7 +2450,6 @@
 
 .method public registerAppSettingsListener(Ljava/lang/String;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2496,7 +2468,6 @@
 
 .method public registerConnectionCallback(Lcom/nuance/connect/api/ConnectionCallback;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/api/ConnectionCallback;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->connectionCallbacks:Ljava/util/Set;
 
@@ -2507,7 +2478,6 @@
 
 .method public registerUserSettingsListener(Ljava/lang/String;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2596,7 +2566,6 @@
 
 .method public setHostInterface(Lcom/nuance/connect/host/service/HostInterface;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/host/service/HostInterface;
 
     if-eqz p1, :cond_0
 
@@ -2660,7 +2629,6 @@
 
 .method public unregisterActionCallback(Lcom/nuance/connect/util/ActionDelegateCallback;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/util/ActionDelegateCallback;
 
     iget-object v3, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->actionHandlers:Ljava/util/HashMap;
 
@@ -2721,7 +2689,6 @@
 
 .method public unregisterConnectionCallback(Lcom/nuance/connect/api/ConnectionCallback;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/api/ConnectionCallback;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectServiceManagerInternal;->connectionCallbacks:Ljava/util/Set;
 

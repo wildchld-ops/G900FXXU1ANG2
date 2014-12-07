@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/sec/InternalClipboardExService;Lcom/android/server/sec/InternalClipboardExService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p2    # Lcom/android/server/sec/InternalClipboardExService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/sec/InternalClipboardExService$ClipBoardDataUiEventImp;-><init>(Lcom/android/server/sec/InternalClipboardExService;)V
 
@@ -164,7 +162,6 @@
 
 .method public removeItem(I)V
     .locals 6
-    .param p1    # I
 
     monitor-enter p0
 
@@ -413,8 +410,6 @@
 
 .method public selectItem(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

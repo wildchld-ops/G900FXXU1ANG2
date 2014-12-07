@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/widget/ContactPhotoView;Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/samsung/contacts/widget/ContactPhotoView$PhotoBlurTask;->this$0:Lcom/samsung/contacts/widget/ContactPhotoView;
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Integer;
     .locals 2
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/samsung/contacts/widget/ContactPhotoView$PhotoBlurTask;->this$0:Lcom/samsung/contacts/widget/ContactPhotoView;
 
@@ -69,7 +67,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -82,7 +79,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # Ljava/lang/Integer;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -136,7 +132,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

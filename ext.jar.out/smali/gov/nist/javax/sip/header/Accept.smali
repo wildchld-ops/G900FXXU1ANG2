@@ -138,7 +138,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Accept;->mediaRange:Lgov/nist/javax/sip/header/MediaRange;
 
@@ -261,7 +260,6 @@
 
 .method public setContentSubType(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Accept;->mediaRange:Lgov/nist/javax/sip/header/MediaRange;
 
@@ -283,7 +281,6 @@
 
 .method public setContentType(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Accept;->mediaRange:Lgov/nist/javax/sip/header/MediaRange;
 
@@ -305,7 +302,6 @@
 
 .method public setMediaRange(Lgov/nist/javax/sip/header/MediaRange;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/MediaRange;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/Accept;->mediaRange:Lgov/nist/javax/sip/header/MediaRange;
 
@@ -314,7 +310,6 @@
 
 .method public setQValue(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

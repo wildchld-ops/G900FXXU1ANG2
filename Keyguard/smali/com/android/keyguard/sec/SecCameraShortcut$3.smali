@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/sec/SecCameraShortcut;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SecCameraShortcut$3;->this$0:Lcom/android/keyguard/sec/SecCameraShortcut;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x145
 

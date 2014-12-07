@@ -42,7 +42,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/parser/ParseExceptionListener;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/parser/ParseExceptionListener;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/StringMsgParser;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 4
-    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -109,7 +107,6 @@
 
 .method private processFirstLine(Ljava/lang/String;)Lgov/nist/javax/sip/message/SIPMessage;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -259,8 +256,6 @@
 
 .method private processHeader(Ljava/lang/String;Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -372,7 +367,6 @@
 
 .method public static setComputeContentLengthFromMessage(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lgov/nist/javax/sip/parser/StringMsgParser;->computeContentLengthFromMessage:Z
 
@@ -381,7 +375,6 @@
 
 .method private trimEndOfLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -444,7 +437,6 @@
 # virtual methods
 .method public parseAddress(Ljava/lang/String;)Lgov/nist/javax/sip/address/AddressImpl;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -466,7 +458,6 @@
 
 .method public parseHost(Ljava/lang/String;)Lgov/nist/core/Host;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -492,7 +483,6 @@
 
 .method public parseSIPHeader(Ljava/lang/String;)Lgov/nist/javax/sip/header/SIPHeader;
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -653,7 +643,6 @@
 
 .method public parseSIPMessage(Ljava/lang/String;)Lgov/nist/javax/sip/message/SIPMessage;
     .locals 14
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -971,7 +960,6 @@
 
 .method public parseSIPMessage([B)Lgov/nist/javax/sip/message/SIPMessage;
     .locals 14
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1265,7 +1253,6 @@
 
 .method public parseSIPRequestLine(Ljava/lang/String;)Lgov/nist/javax/sip/header/RequestLine;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1303,7 +1290,6 @@
 
 .method public parseSIPStatusLine(Ljava/lang/String;)Lgov/nist/javax/sip/header/StatusLine;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1341,7 +1327,6 @@
 
 .method public parseSIPUrl(Ljava/lang/String;)Lgov/nist/javax/sip/address/SipUri;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1395,7 +1380,6 @@
 
 .method public parseTelephoneNumber(Ljava/lang/String;)Lgov/nist/javax/sip/address/TelephoneNumber;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1417,7 +1401,6 @@
 
 .method public parseUrl(Ljava/lang/String;)Lgov/nist/javax/sip/address/GenericURI;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1437,7 +1420,6 @@
 
 .method public setParseExceptionListener(Lgov/nist/javax/sip/parser/ParseExceptionListener;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/parser/ParseExceptionListener;
 
     iput-object p1, p0, Lgov/nist/javax/sip/parser/StringMsgParser;->parseExceptionListener:Lgov/nist/javax/sip/parser/ParseExceptionListener;
 
@@ -1446,7 +1428,6 @@
 
 .method public setStrict(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/parser/StringMsgParser;->strict:Z
 

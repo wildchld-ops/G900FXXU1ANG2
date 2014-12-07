@@ -65,11 +65,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/os/IBinder;Landroid/view/SurfaceControl;ILandroid/os/IBinder;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/view/SurfaceControl;
-    .param p4    # I
-    .param p5    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,8 +99,6 @@
 
 .method private getTouchedWinAtPointLw(FF)Lcom/android/server/wm/WindowState;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -118,9 +111,6 @@
 
 .method private getTouchedWinAtPointLw(FFZ)Lcom/android/server/wm/WindowState;
     .locals 12
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     const/4 v5, 0x0
 
@@ -282,14 +272,6 @@
 
 .method private static obtainDragEvent(Lcom/android/server/wm/WindowState;IFFLjava/lang/Object;Landroid/content/ClipDescription;Landroid/content/ClipData;Z)Landroid/view/DragEvent;
     .locals 7
-    .param p0    # Lcom/android/server/wm/WindowState;
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Landroid/content/ClipDescription;
-    .param p6    # Landroid/content/ClipData;
-    .param p7    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
 
@@ -339,10 +321,6 @@
 
 .method private sendDragStartedLw(Lcom/android/server/wm/WindowState;FFLandroid/content/ClipDescription;)V
     .locals 11
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/content/ClipDescription;
 
     const/4 v4, 0x0
 
@@ -599,8 +577,6 @@
 
 .method broadcastDragStartedLw(FF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     iget-object v3, p0, Lcom/android/server/wm/DragState;->mData:Landroid/content/ClipData;
 
@@ -725,8 +701,6 @@
 
 .method notifyDropLw(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -739,9 +713,6 @@
 
 .method notifyDropLw(FFZ)Z
     .locals 19
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -1051,8 +1022,6 @@
 
 .method notifyMoveLw(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -1063,9 +1032,6 @@
 
 .method notifyMoveLw(FFZ)V
     .locals 15
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 
@@ -1293,7 +1259,6 @@
 
 .method register(Landroid/view/Display;)V
     .locals 11
-    .param p1    # Landroid/view/Display;
 
     const-wide v9, 0x12a05f200L
 
@@ -1571,7 +1536,6 @@
 
 .method sendDragStartedIfNeededLw(Lcom/android/server/wm/WindowState;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     iget-boolean v2, p0, Lcom/android/server/wm/DragState;->mDragInProgress:Z
 

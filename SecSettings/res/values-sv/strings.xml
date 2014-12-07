@@ -1379,7 +1379,7 @@ Du kan också visa eller dölja flerfönsterhandtaget genom att hålla ned bakå
     <string name="usb_tethering_errored_subtext">Fel vid USB-internetdelning</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB-internetdelning kan inte inaktiveras under tiden som Sidsynkronisering används. Om du inaktiverar USB-internetdelning så inaktiveras Sidsynkronisering.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB-internetdelning kan inte aktiveras under tiden som Sidsynkronisering används. Om du aktiverar USB-internetdelning så inaktiveras Sidsynkronisering.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-internetdelning</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-internetdelning</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Delar denna enhets Internetanslutning…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Enhetens Internetanslutning delas med 1 enhet</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Enhetens Internetanslutning delas med %d enheter</string>

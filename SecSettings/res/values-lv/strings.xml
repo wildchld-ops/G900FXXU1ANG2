@@ -1379,7 +1379,7 @@ Vairāklogu režīma turi var arī parādīt vai paslēpt, nospiežot un turot a
     <string name="usb_tethering_errored_subtext">USB piesaistes kļūda</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB piesaisti nevar deaktivizēt programmas SideSync lietošanas laikā. Ja deaktivizēsit USB piesaisti, tiks deaktivizēta arī programma SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB piesaisti nevar aktivizēt programmas SideSync lietošanas laikā. Ja aktivizēsit USB piesaisti, programma SideSync tiks deaktivizēta.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth piesaiste</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth piesaiste</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Koplieto šīs ierīces interneta savienojumu…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Ierīces interneta savienojums koplietots ar 1 ierīci</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Ierīces interneta savienojums koplietots ar %d ierīcēm</string>

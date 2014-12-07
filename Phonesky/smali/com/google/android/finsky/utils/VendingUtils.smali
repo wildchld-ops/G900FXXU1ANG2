@@ -20,7 +20,6 @@
 
 .method public static getScreenDimensions(Landroid/content/Context;)Landroid/util/Pair;
     .locals 7
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

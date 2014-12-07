@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,9 +65,6 @@
 # virtual methods
 .method public addBuddy(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ChatOnShot;->mChatOnBuddyList:Ljava/util/ArrayList;
 
@@ -194,7 +190,6 @@
 
 .method public getIndexByBuddyId(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -292,7 +287,6 @@
 
 .method public hasBuddyItem(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -665,7 +659,6 @@
 
 .method public startimagesend(Landroid/net/Uri;)V
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const-string v0, "ChatOnShot"
 
@@ -751,7 +744,6 @@
 
 .method public startvideosend(Landroid/net/Uri;)V
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const-string v0, "ChatOnShot"
 

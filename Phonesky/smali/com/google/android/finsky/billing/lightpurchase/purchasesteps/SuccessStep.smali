@@ -53,7 +53,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/SuccessStep;)Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/SuccessStep;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/SuccessStep;->getMultiStepFragment()Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;
 
@@ -66,7 +65,6 @@
 # virtual methods
 .method public getContinueButtonLabel(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v0, 0x0
 
@@ -89,9 +87,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040092
 

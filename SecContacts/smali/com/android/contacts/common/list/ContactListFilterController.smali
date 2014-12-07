@@ -36,7 +36,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/contacts/common/list/ContactListFilterController;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/contacts/common/list/ContactListFilterController;->sFilterController:Lcom/android/contacts/common/list/ContactListFilterControllerImpl;
 
@@ -58,14 +57,12 @@
 # virtual methods
 .method public addListener(Lcom/android/contacts/common/list/ContactListFilterController$ContactListFilterListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilterController$ContactListFilterListener;
 
     return-void
 .end method
 
 .method public checkFilterValidity(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -80,7 +77,6 @@
 
 .method public removeListener(Lcom/android/contacts/common/list/ContactListFilterController$ContactListFilterListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilterController$ContactListFilterListener;
 
     return-void
 .end method
@@ -93,15 +89,12 @@
 
 .method public setContactListFilter(Lcom/android/contacts/common/list/ContactListFilter;Z)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public setFilterType(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v1, -0x2
 

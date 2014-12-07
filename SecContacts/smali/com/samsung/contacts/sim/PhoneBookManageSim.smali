@@ -30,8 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/contacts/sim/PhoneBookSimOperation;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +46,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/PhoneBookManageSim;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookManageSim:Lcom/samsung/contacts/sim/PhoneBookManageSim;
 
@@ -92,7 +89,6 @@
 # virtual methods
 .method public SpecialCharOffset(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -105,9 +101,6 @@
 
 .method public copyAllNumberToSim(JII)I
     .locals 1
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -120,10 +113,6 @@
 
 .method public copyToPhone(JLjava/lang/String;Ljava/lang/String;Z)Z
     .locals 6
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -144,9 +133,6 @@
 
 .method public copyToSim(JIZ)I
     .locals 1
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -171,7 +157,6 @@
 
 .method public getAnrFieldCount(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -184,7 +169,6 @@
 
 .method public getByteArrayText(Ljava/lang/String;)[B
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -197,7 +181,6 @@
 
 .method public getDBNumberCount(J)I
     .locals 1
-    .param p1    # J
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -222,7 +205,6 @@
 
 .method public getEmailLength(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -247,7 +229,6 @@
 
 .method public getEnableCount(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -272,7 +253,6 @@
 
 .method public getNameLength(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -297,7 +277,6 @@
 
 .method public getNumberLength(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -310,7 +289,6 @@
 
 .method public getSimContactDetailIcon(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -323,7 +301,6 @@
 
 .method public getSimIcon(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -336,7 +313,6 @@
 
 .method public getSimName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -361,7 +337,6 @@
 
 .method public getSimType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -386,7 +361,6 @@
 
 .method public hasIccCard(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -399,7 +373,6 @@
 
 .method public isAnrFull(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -412,8 +385,6 @@
 
 .method public isAnrFull(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -426,7 +397,6 @@
 
 .method public isAnrSupported(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -439,8 +409,6 @@
 
 .method public isAnrSupported(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -465,7 +433,6 @@
 
 .method public isEmailFull(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -490,7 +457,6 @@
 
 .method public isSimDBReady(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -515,7 +481,6 @@
 
 .method public isSimEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -528,8 +493,6 @@
 
 .method public isSimEnabled(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -554,7 +517,6 @@
 
 .method public isSimFull(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -591,8 +553,6 @@
 
 .method public setFirstCheck(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -603,7 +563,6 @@
 
 .method public setSimInfoChanged(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -614,8 +573,6 @@
 
 .method public trimNonAsciiTextByLength(Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 
@@ -628,8 +585,6 @@
 
 .method public trimTextByLength(Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookManageSim;->mPhoneBookSimOperation:Lcom/samsung/contacts/sim/PhoneBookSimOperation;
 

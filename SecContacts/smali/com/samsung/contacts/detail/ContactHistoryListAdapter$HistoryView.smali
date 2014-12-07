@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryView;->this$0:Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
 

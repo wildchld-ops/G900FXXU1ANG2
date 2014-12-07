@@ -14,7 +14,6 @@
 
 .method public static handleException(Ljava/lang/Exception;)V
     .locals 3
-    .param p0    # Ljava/lang/Exception;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/RuntimeException;
@@ -80,8 +79,6 @@
 
 .method public static handleException(Ljava/lang/Exception;Lgov/nist/core/StackLogger;)V
     .locals 3
-    .param p0    # Ljava/lang/Exception;
-    .param p1    # Lgov/nist/core/StackLogger;
 
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
@@ -168,7 +165,6 @@
 
 .method public static handleException(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/Exception;
 
@@ -195,8 +191,6 @@
 
 .method public static handleException(Ljava/lang/String;Lgov/nist/core/StackLogger;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lgov/nist/core/StackLogger;
 
     invoke-interface {p1}, Lgov/nist/core/StackLogger;->logStackTrace()V
 

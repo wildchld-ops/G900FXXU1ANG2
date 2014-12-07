@@ -167,11 +167,6 @@
 
 .method public static fromValues(Landroid/content/Context;Lcom/android/contacts/model/dataitem/DataItem;ZJLcom/android/contacts/common/model/dataitem/DataKind;)Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p2    # Z
-    .param p3    # J
-    .param p5    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     new-instance v0, Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
 
@@ -449,8 +444,6 @@
 # virtual methods
 .method public click(Landroid/view/View;Lcom/android/contacts/detail/ContactDetailFragment$Listener;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$Listener;
 
     if-eqz p2, :cond_0
 
@@ -509,7 +502,6 @@
 
 .method public collapseWith(Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
 
     const/4 v1, 0x1
 
@@ -640,7 +632,6 @@
 
 .method public bridge synthetic collapseWith(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
 
@@ -651,7 +642,6 @@
 
 .method public setPresence(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;->presence:I
 
@@ -660,7 +650,6 @@
 
 .method public shouldCollapseWith(Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;)Z
     .locals 7
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
 
     const/4 v6, 0x0
 
@@ -789,7 +778,6 @@
 
 .method public bridge synthetic shouldCollapseWith(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
 

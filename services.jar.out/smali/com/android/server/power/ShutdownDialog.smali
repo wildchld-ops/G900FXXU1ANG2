@@ -114,7 +114,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const v0, 0x1030007
 
@@ -125,8 +124,6 @@
 
 .method private constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -253,7 +250,6 @@
 
 .method static synthetic access$000(Lcom/android/server/power/ShutdownDialog;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->mLogString:Ljava/lang/StringBuffer;
 
@@ -262,7 +258,6 @@
 
 .method static synthetic access$100(Lcom/android/server/power/ShutdownDialog;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->mLogView:Landroid/widget/TextView;
 
@@ -271,7 +266,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/power/ShutdownDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->mContext:Landroid/content/Context;
 
@@ -280,7 +274,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/power/ShutdownDialog;)Lcom/android/server/power/ShutdownDialog$StateDrawing;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->mStateDrawing:Lcom/android/server/power/ShutdownDialog$StateDrawing;
 
@@ -289,8 +282,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/power/ShutdownDialog;Lcom/android/server/power/ShutdownDialog$DrawState;)Lcom/android/server/power/ShutdownDialog$DrawState;
     .locals 0
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
-    .param p1    # Lcom/android/server/power/ShutdownDialog$DrawState;
 
     iput-object p1, p0, Lcom/android/server/power/ShutdownDialog;->mState:Lcom/android/server/power/ShutdownDialog$DrawState;
 
@@ -299,7 +290,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/power/ShutdownDialog;)Lcom/android/server/power/ShutdownDialog$DrawHandler;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->mDrawHandler:Lcom/android/server/power/ShutdownDialog$DrawHandler;
 
@@ -308,7 +298,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/power/ShutdownDialog;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->coverQmgList:Ljava/util/List;
 
@@ -317,7 +306,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/power/ShutdownDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-boolean v0, p0, Lcom/android/server/power/ShutdownDialog;->doLoopAnim:Z
 
@@ -326,8 +314,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/power/ShutdownDialog;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ShutdownDialog;->addToPlaylistIfExists(Ljava/lang/String;)Z
 
@@ -338,7 +324,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/power/ShutdownDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget v0, p0, Lcom/android/server/power/ShutdownDialog;->bitmapQFront:I
 
@@ -347,8 +332,6 @@
 
 .method static synthetic access$2202(Lcom/android/server/power/ShutdownDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/power/ShutdownDialog;->bitmapQFront:I
 
@@ -357,7 +340,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/power/ShutdownDialog;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->drawBufferLock:Ljava/lang/Object;
 
@@ -366,7 +348,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/power/ShutdownDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget v0, p0, Lcom/android/server/power/ShutdownDialog;->bitmapQRear:I
 
@@ -375,8 +356,6 @@
 
 .method static synthetic access$2402(Lcom/android/server/power/ShutdownDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/power/ShutdownDialog;->bitmapQRear:I
 
@@ -385,7 +364,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/power/ShutdownDialog;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->mImageView:Landroid/widget/ImageView;
 
@@ -394,7 +372,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/power/ShutdownDialog;)Landroid/media/MediaPlayer;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->mp:Landroid/media/MediaPlayer;
 
@@ -403,7 +380,6 @@
 
 .method static synthetic access$400(Lcom/android/server/power/ShutdownDialog;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->qmgList:Ljava/util/List;
 
@@ -412,7 +388,6 @@
 
 .method static synthetic access$500(Lcom/android/server/power/ShutdownDialog;)[Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->bitmapQ:[Landroid/graphics/Bitmap;
 
@@ -421,7 +396,6 @@
 
 .method static synthetic access$600(Lcom/android/server/power/ShutdownDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     invoke-direct {p0}, Lcom/android/server/power/ShutdownDialog;->getSystemVolume()I
 
@@ -432,7 +406,6 @@
 
 .method static synthetic access$700(Lcom/android/server/power/ShutdownDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownDialog;->shutdownSoundPath:Ljava/lang/String;
 
@@ -441,8 +414,6 @@
 
 .method static synthetic access$800(Lcom/android/server/power/ShutdownDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ShutdownDialog;->getShutdownSoundPath(Ljava/lang/String;)Ljava/lang/String;
 
@@ -453,8 +424,6 @@
 
 .method static synthetic access$900(Lcom/android/server/power/ShutdownDialog;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/ShutdownDialog;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ShutdownDialog;->prepareSound(Ljava/lang/String;)V
 
@@ -463,7 +432,6 @@
 
 .method private addToPlaylistIfExists(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 
@@ -759,7 +727,6 @@
 
 .method private getShutdownSoundPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -892,7 +859,6 @@
 
 .method private prepareSound(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1149,7 +1115,6 @@
 # virtual methods
 .method public appendTextLog(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/power/ShutdownDialog;->logHandler:Landroid/os/Handler;
 
@@ -1224,7 +1189,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, -0x1
 
@@ -1418,7 +1382,6 @@
 
 .method public waitForAnimEnd(I)Z
     .locals 9
-    .param p1    # I
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 

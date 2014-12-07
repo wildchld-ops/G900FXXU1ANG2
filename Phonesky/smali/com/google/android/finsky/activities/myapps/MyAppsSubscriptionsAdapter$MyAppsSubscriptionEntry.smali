@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsAdapter;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/LibraryInAppSubscriptionEntry;)V
     .locals 0
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Lcom/google/android/finsky/library/LibraryInAppSubscriptionEntry;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsAdapter$MyAppsSubscriptionEntry;->this$0:Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsAdapter;
 

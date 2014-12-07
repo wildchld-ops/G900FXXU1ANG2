@@ -1379,7 +1379,7 @@ Kontrolnik za več oken lahko prikažete ali skrijete tudi, če pritisnete in dr
     <string name="usb_tethering_errored_subtext">Napaka pri uporabi telefona kot modema po USB-ju</string>
     <string name="usb_tethering_on_during_sidesync_popup">Med uporabo aplikacije SideSync ne morete onemogočiti privezovanja prek USB. Če onemogočite privezovanje prek USB, boste onemogočili SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Med uporabo aplikacije SideSync ne morete omogočiti privezovanja prek USB. Če omogočite privezovanje prek USB, boste onemogočili SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Internet prek vmesnika Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Internet prek vmesnika Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Skupna raba internetne povezave v tej napravi …</string>
     <string name="bluetooth_tethering_device_connected_subtext">Lokalna internetna povezava v napravi je v souporabi z 1 napravo</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Lokalna internetna povezava v napravi je v souporabi z %d napravami</string>

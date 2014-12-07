@@ -231,13 +231,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;II)V
     .locals 16
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
 
     const/4 v7, 0x1
 
@@ -1708,7 +1701,6 @@
 
 .method private initAnimation(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -1961,7 +1953,6 @@
 # virtual methods
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -1981,7 +1972,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x0
 
@@ -1990,7 +1980,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x0
 
@@ -1999,7 +1988,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x0
 
@@ -2107,7 +2095,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLContextMenu;->initAnimation(I)V
 

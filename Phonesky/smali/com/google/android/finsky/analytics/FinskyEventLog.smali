@@ -32,9 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/accounts/Account;Lcom/google/android/finsky/experiments/FinskyExperiments;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Lcom/google/android/finsky/experiments/FinskyExperiments;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -192,9 +189,6 @@
 
 .method static synthetic access$000(JLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Z)V
     .locals 0
-    .param p0    # J
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p3    # Z
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/finsky/analytics/FinskyEventLog;->sendImpression(JLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Z)V
 
@@ -203,8 +197,6 @@
 
 .method private static addClickPath(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreClickEvent;)V
     .locals 5
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreClickEvent;
 
     const/4 v4, 0x0
 
@@ -256,8 +248,6 @@
 
 .method public static childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-interface {p1}, Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;->getPlayStoreUiElement()Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
@@ -301,8 +291,6 @@
 
 .method protected static cloneElement(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
     iget v0, p0, Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;->type:I
 
@@ -341,8 +329,6 @@
 
 .method private static deepCloneAndWipeChildren(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;)V
     .locals 6
-    .param p0    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->cloneElement(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;)V
 
@@ -389,8 +375,6 @@
 
 .method public static findOrAddChild(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;)Z
     .locals 7
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
     const/4 v1, 0x0
 
@@ -441,9 +425,6 @@
 
 .method public static flushImpression(Landroid/os/Handler;JLcom/google/android/finsky/layout/play/RootUiElementNode;)V
     .locals 2
-    .param p0    # Landroid/os/Handler;
-    .param p1    # J
-    .param p3    # Lcom/google/android/finsky/layout/play/RootUiElementNode;
 
     invoke-interface {p3}, Lcom/google/android/finsky/layout/play/RootUiElementNode;->getPlayStoreUiElement()Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
@@ -462,7 +443,6 @@
 
 .method public static flushImpressionAtRoot(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     :goto_0
     if-eqz p0, :cond_1
@@ -571,8 +551,6 @@
 
 .method public static isEqual(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;)Z
     .locals 4
-    .param p0    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
     const/4 v0, 0x1
 
@@ -651,7 +629,6 @@
 
 .method public static obtainPlayStoreUiElement(I)Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
     .locals 2
-    .param p0    # I
 
     invoke-static {}, Lcom/google/android/finsky/analytics/EventProtoCache;->getInstance()Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -733,8 +710,6 @@
 
 .method public static removeChild(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;)Z
     .locals 7
-    .param p0    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
     const/4 v5, 0x0
 
@@ -790,7 +765,6 @@
 
 .method private static requestImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-interface {p0}, Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;->getParentNode()Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -806,7 +780,6 @@
 
 .method public static requestImpressions(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p0    # Landroid/view/ViewGroup;
 
     if-eqz p0, :cond_0
 
@@ -818,7 +791,6 @@
 
 .method private static requestImpressionsImpl(Landroid/view/ViewGroup;)V
     .locals 6
-    .param p0    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -902,10 +874,6 @@
 
 .method public static rootImpression(Landroid/os/Handler;JLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p0    # Landroid/os/Handler;
-    .param p1    # J
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     if-eqz p4, :cond_0
 
@@ -932,10 +900,6 @@
 
 .method private static rootImpressionImpl(Landroid/os/Handler;JLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 5
-    .param p0    # Landroid/os/Handler;
-    .param p1    # J
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-interface {p3}, Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;->getPlayStoreUiElement()Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
@@ -1034,7 +998,6 @@
 
 .method private sendBackgroundEventToSinks(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreBackgroundActionEvent;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreBackgroundActionEvent;
 
     iget-object v1, p0, Lcom/google/android/finsky/analytics/FinskyEventLog;->mProtoCache:Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -1053,9 +1016,6 @@
 
 .method private static sendImpression(JLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Z)V
     .locals 5
-    .param p0    # J
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -1123,8 +1083,6 @@
 
 .method private serializeAndWrite(Ljava/lang/String;Lcom/google/android/finsky/analytics/PlayStore$PlayStoreLogEvent;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreLogEvent;
 
     const/4 v3, 0x0
 
@@ -1165,8 +1123,6 @@
 
 .method public static setServerLogCookie(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;[B)Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
-    .param p1    # [B
 
     if-eqz p1, :cond_0
 
@@ -1182,7 +1138,6 @@
 
 .method public static startNewImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-interface {p0}, Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;->getParentNode()Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -1216,12 +1171,6 @@
 # virtual methods
 .method public logBackgroundEvent(ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/google/android/finsky/analytics/PlayStore$AppData;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/google/android/finsky/analytics/PlayStore$AppData;
 
     const/4 v2, 0x1
 
@@ -1287,8 +1236,6 @@
 
 .method public logBackgroundEvent(I[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v2, 0x1
 
@@ -1316,7 +1263,6 @@
 
 .method public logBackgroundEvent(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreBackgroundActionEvent;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreBackgroundActionEvent;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->sendBackgroundEventToSinks(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreBackgroundActionEvent;)V
 
@@ -1325,9 +1271,6 @@
 
 .method public logClickEvent(I[BLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 4
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v3, 0x1
 
@@ -1376,7 +1319,6 @@
 
 .method public logClickEvent(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreClickEvent;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreClickEvent;
 
     iget-object v1, p0, Lcom/google/android/finsky/analytics/FinskyEventLog;->mProtoCache:Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -1395,7 +1337,6 @@
 
 .method public logClickEvent(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     if-nez p1, :cond_0
 
@@ -1418,9 +1359,6 @@
 
 .method public logClickEventWithClientCookie(ILcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v2, p0, Lcom/google/android/finsky/analytics/FinskyEventLog;->mProtoCache:Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -1467,9 +1405,6 @@
 
 .method public logDeepLinkEvent(ILjava/lang/String;[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
 
     const/4 v2, 0x1
 
@@ -1509,11 +1444,6 @@
 
 .method public logDeepLinkEvent(Ljava/lang/String;Ljava/lang/String;IZZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v3, 0x1
 
@@ -1564,7 +1494,6 @@
 
 .method public logImpressionEvent(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreImpressionEvent;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreImpressionEvent;
 
     iget-object v1, p0, Lcom/google/android/finsky/analytics/FinskyEventLog;->mProtoCache:Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -1583,7 +1512,6 @@
 
 .method public logNlpCleanupData(Lcom/google/android/finsky/analytics/PlayStore$NlpRepairStatus;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$NlpRepairStatus;
 
     iget-object v1, p0, Lcom/google/android/finsky/analytics/FinskyEventLog;->mProtoCache:Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -1608,8 +1536,6 @@
 
 .method public logOperationSuccessBackgroundEvent(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -1634,9 +1560,6 @@
 
 .method public logPathImpression(JILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 7
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v6, 0x1
 
@@ -1716,8 +1639,6 @@
 
 .method public logPathImpression(JLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 6
-    .param p1    # J
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v4, p0, Lcom/google/android/finsky/analytics/FinskyEventLog;->mProtoCache:Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -1787,14 +1708,6 @@
 
 .method public logPurchaseBackgroundEvent(ILjava/lang/String;ILjava/lang/String;I[BJJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # [B
-    .param p7    # J
-    .param p9    # J
 
     const-wide/16 v3, 0x0
 
@@ -1875,7 +1788,6 @@
 
 .method public logSearchEvent(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreSearchEvent;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreSearchEvent;
 
     iget-object v1, p0, Lcom/google/android/finsky/analytics/FinskyEventLog;->mProtoCache:Lcom/google/android/finsky/analytics/EventProtoCache;
 
@@ -1894,7 +1806,6 @@
 
 .method public logSessionData(Lcom/google/android/finsky/analytics/PlayStore$PlayStoreSessionData;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreSessionData;
 
     const/4 v2, 0x1
 
@@ -1917,10 +1828,6 @@
 
 .method public logSettingsBackgroundEvent(IILjava/lang/Integer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Integer;
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1967,10 +1874,6 @@
 
 .method public logSettingsForPackageEvent(IILjava/lang/Integer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Integer;
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -2010,8 +1913,6 @@
 
 .method public logWifiAutoUpdateAttempt(Lcom/google/android/finsky/analytics/PlayStore$WifiAutoUpdateAttempt;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$WifiAutoUpdateAttempt;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 

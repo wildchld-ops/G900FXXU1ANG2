@@ -196,7 +196,6 @@
 # virtual methods
 .method SSCPUControl(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -286,7 +285,6 @@
 
 .method SSGPUControl(I)V
     .locals 6
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/ssrm/fgapps/SWThermalStabilizer;->mSSGpuMaxFreq:I
 
@@ -380,7 +378,6 @@
 
 .method SSHeatControl(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -565,7 +562,6 @@
 
 .method changeCPUStep(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->mArmFreqTable:[I
 
@@ -626,7 +622,6 @@
 
 .method changeGPUStep(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->mGpuFreqTable:[I
 
@@ -1205,9 +1200,6 @@
 
 .method public onStatusNotiReceived(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v1, "SecurePlayback_play"
 

@@ -156,20 +156,6 @@
 
 .method public constructor <init>(IIIIIIIIIIIIIZ)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
-    .param p14    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -220,21 +206,6 @@
 
 .method public constructor <init>(IIIIIIIIIIIIIZI)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
-    .param p14    # Z
-    .param p15    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -285,22 +256,6 @@
 
 .method public constructor <init>(IIIIIIIIIIIIIZIZ)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
-    .param p14    # Z
-    .param p15    # I
-    .param p16    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -355,19 +310,6 @@
 
 .method public constructor <init>(IIIIIIIIIIIIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -382,20 +324,6 @@
 
 .method public constructor <init>(IIIIIIIIIIIIZI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Z
-    .param p14    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -412,21 +340,6 @@
 
 .method public constructor <init>(IIIIIIIIIIIIZIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Z
-    .param p14    # I
-    .param p15    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -449,14 +362,6 @@
 
 .method public constructor <init>(IIIIIIIZ)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -499,7 +404,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -628,7 +532,6 @@
 
 .method public constructor <init>(Landroid/telephony/SignalStrength;)V
     .locals 1
-    .param p1    # Landroid/telephony/SignalStrength;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -643,7 +546,6 @@
 
 .method public constructor <init>(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x63
 
@@ -908,7 +810,6 @@
 
 .method private is2G(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -957,7 +858,6 @@
 
 .method private is3GDataType(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1036,7 +936,6 @@
 
 .method private isCMCCNetwork(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -1086,7 +985,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SignalStrength"
 
@@ -1097,7 +995,6 @@
 
 .method public static makeSignalStrengthFromRilParcel(Landroid/os/Parcel;)Landroid/telephony/SignalStrength;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/telephony/SignalStrength;
 
@@ -1186,7 +1083,6 @@
 
 .method public static newFromBundle(Landroid/os/Bundle;)Landroid/telephony/SignalStrength;
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/telephony/SignalStrength;
 
@@ -1199,7 +1095,6 @@
 
 .method private setFromNotifierBundle(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "GsmSignalStrength"
 
@@ -1336,7 +1231,6 @@
 # virtual methods
 .method protected copyFrom(Landroid/telephony/SignalStrength;)V
     .locals 1
-    .param p1    # Landroid/telephony/SignalStrength;
 
     iget v0, p1, Landroid/telephony/SignalStrength;->mGsmSignalStrength:I
 
@@ -1415,7 +1309,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -1537,7 +1430,6 @@
 
 .method public fillInNotifierBundle(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "GsmSignalStrength"
 
@@ -3660,21 +3552,6 @@
 
 .method public initialize(IIIIIIIIIIIIIZI)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
-    .param p14    # Z
-    .param p15    # I
 
     move-object v1, p0
 
@@ -3719,19 +3596,6 @@
 
 .method public initialize(IIIIIIIIIIIIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Z
 
     iput p1, p0, Landroid/telephony/SignalStrength;->mGsmSignalStrength:I
 
@@ -3772,20 +3636,6 @@
 
 .method public initialize(IIIIIIIIIIIIZI)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Z
-    .param p14    # I
 
     invoke-virtual/range {p0 .. p13}, Landroid/telephony/SignalStrength;->initialize(IIIIIIIIIIIIZ)V
 
@@ -3796,14 +3646,6 @@
 
 .method public initialize(IIIIIIIZ)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
 
     const/16 v8, 0x63
 
@@ -3856,7 +3698,6 @@
 
 .method public setGsm(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/telephony/SignalStrength;->isGsm:Z
 
@@ -4123,8 +3964,6 @@
 
 .method public setSignalBarsLTE(II)V
     .locals 19
-    .param p1    # I
-    .param p2    # I
 
     move/from16 v0, p1
 
@@ -4745,8 +4584,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

@@ -6,9 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Ljava/net/Socket;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

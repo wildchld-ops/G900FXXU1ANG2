@@ -46,7 +46,6 @@
 # virtual methods
 .method public fromStringList([Ljava/lang/String;)Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -81,7 +80,6 @@
 
 .method public bridge synthetic fromStringList([Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/DebugActivity$3;->fromStringList([Ljava/lang/String;)Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
 
@@ -92,7 +90,6 @@
 
 .method public isSelected(Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;)Z
     .locals 3
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
 
     sget-object v2, Lcom/google/android/finsky/api/DfeApiConfig;->ipCountryOverride:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -139,7 +136,6 @@
 
 .method public bridge synthetic isSelected(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
 
@@ -152,7 +148,6 @@
 
 .method public selectItem(Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DebugActivity$3;->this$0:Lcom/google/android/finsky/activities/DebugActivity;
 
@@ -164,7 +159,6 @@
 
 .method public bridge synthetic selectItem(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
 

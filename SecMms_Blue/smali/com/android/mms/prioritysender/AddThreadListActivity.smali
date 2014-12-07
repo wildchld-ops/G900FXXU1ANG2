@@ -79,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/prioritysender/AddThreadListActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddThreadListActivity;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -88,7 +87,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/prioritysender/AddThreadListActivity;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddThreadListActivity;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -97,8 +95,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/prioritysender/AddThreadListActivity;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/prioritysender/AddThreadListActivity;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -107,8 +103,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/prioritysender/AddThreadListActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/prioritysender/AddThreadListActivity;->showToast(I)V
 
@@ -117,7 +111,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/prioritysender/AddThreadListActivity;)Lcom/android/mms/ui/ConversationListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddThreadListActivity;->mListAdapter:Lcom/android/mms/ui/ConversationListAdapter;
 
@@ -126,7 +119,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/prioritysender/AddThreadListActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     iget v0, p0, Lcom/android/mms/prioritysender/AddThreadListActivity;->mMaxCount:I
 
@@ -135,7 +127,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/prioritysender/AddThreadListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/prioritysender/AddThreadListActivity;->showMaxDialog()V
 
@@ -144,8 +135,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/prioritysender/AddThreadListActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/prioritysender/AddThreadListActivity;->updateEmptyScreen(I)V
 
@@ -154,7 +143,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/prioritysender/AddThreadListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/prioritysender/AddThreadListActivity;->startAsyncQuery()V
 
@@ -163,7 +151,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/prioritysender/AddThreadListActivity;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddThreadListActivity;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -172,7 +159,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/prioritysender/AddThreadListActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddThreadListActivity;->mContext:Landroid/content/Context;
 
@@ -273,7 +259,6 @@
 
 .method private showToast(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -358,7 +343,6 @@
 
 .method private updateEmptyScreen(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -587,7 +571,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -598,7 +581,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 

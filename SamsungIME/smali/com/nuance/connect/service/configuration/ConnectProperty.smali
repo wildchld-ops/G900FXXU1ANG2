@@ -49,11 +49,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/connect/service/ConnectClient;Ljava/lang/String;IZLjava/lang/Object;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,12 +99,6 @@
 
 .method protected constructor <init>(Lcom/nuance/connect/service/ConnectClient;Ljava/lang/String;IZLjava/lang/Object;I)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Ljava/lang/Object;
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -265,7 +254,6 @@
 # virtual methods
 .method public addListener(Lcom/nuance/connect/service/configuration/ConnectConfigurationListener;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfigurationListener;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectProperty;->listeners:Ljava/util/HashSet;
 
@@ -535,7 +523,6 @@
 
 .method public removeListener(Lcom/nuance/connect/service/configuration/ConnectConfigurationListener;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfigurationListener;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectProperty;->listeners:Ljava/util/HashSet;
 
@@ -546,7 +533,6 @@
 
 .method public sendValue(Lcom/nuance/connect/service/configuration/ConnectConfigurationListener;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfigurationListener;
 
     :try_start_0
     iget v1, p0, Lcom/nuance/connect/service/configuration/ConnectProperty;->type:I
@@ -629,7 +615,6 @@
 
 .method public setConfig(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v3, Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;->CONFIG:Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;
 
@@ -743,8 +728,6 @@
 
 .method public setConfigValue(ILcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -887,8 +870,6 @@
 
 .method public setConfigValue(Ljava/lang/String;Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1027,8 +1008,6 @@
 
 .method public setConfigValue(ZLcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1171,7 +1150,6 @@
 
 .method public setServerValue(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1248,7 +1226,6 @@
 
 .method public setServerValue(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectProperty;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1325,7 +1302,6 @@
 
 .method public setServerValue(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1402,7 +1378,6 @@
 
 .method public setServerValue(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

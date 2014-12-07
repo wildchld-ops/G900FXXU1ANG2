@@ -79,7 +79,6 @@
 
 .method private constructor <init>(Lcom/android/i18n/addressinput/LookupKey$Builder;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,8 +121,6 @@
 
 .method synthetic constructor <init>(Lcom/android/i18n/addressinput/LookupKey$Builder;Lcom/android/i18n/addressinput/LookupKey$1;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$Builder;
-    .param p2    # Lcom/android/i18n/addressinput/LookupKey$1;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/LookupKey;-><init>(Lcom/android/i18n/addressinput/LookupKey$Builder;)V
 
@@ -132,7 +129,6 @@
 
 .method static synthetic access$400(Lcom/android/i18n/addressinput/LookupKey;)Lcom/android/i18n/addressinput/LookupKey$KeyType;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey;->mKeyType:Lcom/android/i18n/addressinput/LookupKey$KeyType;
 
@@ -141,7 +137,6 @@
 
 .method static synthetic access$500(Lcom/android/i18n/addressinput/LookupKey;)Lcom/android/i18n/addressinput/LookupKey$ScriptType;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey;->mScriptType:Lcom/android/i18n/addressinput/LookupKey$ScriptType;
 
@@ -150,7 +145,6 @@
 
 .method static synthetic access$600(Lcom/android/i18n/addressinput/LookupKey;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey;->mLanguageCode:Ljava/lang/String;
 
@@ -167,7 +161,6 @@
 
 .method static synthetic access$800(Lcom/android/i18n/addressinput/LookupKey;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey;->mNodes:Ljava/util/Map;
 
@@ -351,7 +344,6 @@
 
 .method static hasValidKeyPrefix(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/i18n/addressinput/LookupKey$KeyType;->values()[Lcom/android/i18n/addressinput/LookupKey$KeyType;
 
@@ -400,7 +392,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 
@@ -445,7 +436,6 @@
 
 .method getKeyForUpperLevelField(Lcom/android/i18n/addressinput/AddressField;)Lcom/android/i18n/addressinput/LookupKey;
     .locals 10
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     const/4 v7, 0x0
 
@@ -561,7 +551,6 @@
 
 .method getValueForUpperLevelField(Lcom/android/i18n/addressinput/AddressField;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/addressinput/LookupKey;->getKeyForUpperLevelField(Lcom/android/i18n/addressinput/AddressField;)Lcom/android/i18n/addressinput/LookupKey;
 

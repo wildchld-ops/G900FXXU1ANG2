@@ -33,8 +33,6 @@
 # virtual methods
 .method public onRoutePresentationDisplayChanged(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 3
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->DEBUG:Z
     invoke-static {}, Lcom/android/keyguard/KeyguardDisplayManager;->access$000()Z
@@ -82,9 +80,6 @@
 
 .method public onRouteSelected(Landroid/media/MediaRouter;ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 3
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # I
-    .param p3    # Landroid/media/MediaRouter$RouteInfo;
 
     # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->DEBUG:Z
     invoke-static {}, Lcom/android/keyguard/KeyguardDisplayManager;->access$000()Z
@@ -142,9 +137,6 @@
 
 .method public onRouteUnselected(Landroid/media/MediaRouter;ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 3
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # I
-    .param p3    # Landroid/media/MediaRouter$RouteInfo;
 
     # getter for: Lcom/android/keyguard/KeyguardDisplayManager;->DEBUG:Z
     invoke-static {}, Lcom/android/keyguard/KeyguardDisplayManager;->access$000()Z

@@ -22,10 +22,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/google/protobuf/nano/MessageNano;Lcom/google/android/finsky/api/DfeApiContext;Ljava/lang/Class;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/protobuf/nano/MessageNano;
-    .param p3    # Lcom/google/android/finsky/api/DfeApiContext;
-    .param p6    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

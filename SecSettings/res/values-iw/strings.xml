@@ -1379,7 +1379,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">שגיאה בשימוש כמודם סלולארי USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">לא ניתן להשבית חיבור באמצעות התקן נייד מסוג USB בעת שימוש ב-SideSync. השבתת חיבור באמצעות התקן נייד מסוג USB תשבית את SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">לא ניתן להפעיל חיבור באמצעות התקן נייד מסוג USB בעת שימוש ב-SideSync. הפעלת חיבור באמצעות התקן נייד מסוג USB תשבית את SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>חיבור באמצעות התקן נייד מסוג Bluetooth‏</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>חיבור באמצעות התקן נייד מסוג Bluetooth‏</b></p></string>
     <string name="bluetooth_tethering_available_subtext">משתף את החיבור לאינטרנט של התקן זה…</string>
     <string name="bluetooth_tethering_device_connected_subtext">החיבור לאינטרנט של ההתקן משותף עם התקן אחד</string>
     <string name="bluetooth_tethering_devices_connected_subtext">החיבור לאינטרנט של ההתקן משותף עם %d התקנים</string>

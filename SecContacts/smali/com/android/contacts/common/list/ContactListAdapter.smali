@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -68,7 +67,6 @@
 
 .method protected static buildSectionIndexerUri(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
@@ -93,8 +91,6 @@
 # virtual methods
 .method public FavoritechangeCursor(ILandroid/database/Cursor;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->changeCursor(ILandroid/database/Cursor;)V
 
@@ -114,8 +110,6 @@
 
 .method protected bindAccountIcons(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 
@@ -182,8 +176,6 @@
 
 .method protected bindCheckBox(Lcom/android/contacts/common/list/ContactListItemView;Z)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Z
 
     invoke-virtual {p1, p2}, Lcom/android/contacts/common/list/ContactListItemView;->showCheckBox(Z)V
 
@@ -192,9 +184,6 @@
 
 .method protected bindGalPhoto(Lcom/android/contacts/common/list/ContactListItemView;ILandroid/database/Cursor;)V
     .locals 15
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/contacts/common/list/ContactListItemView;->removePhotoView()V
 
@@ -507,8 +496,6 @@
 
 .method protected bindName(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v1, 0x1
 
@@ -543,7 +530,6 @@
 
 .method protected bindNameAsGalSearchShowMore(Lcom/android/contacts/common/list/ContactListItemView;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
 
     const/4 v1, 0x1
 
@@ -572,9 +558,6 @@
 
 .method protected bindPhoto(Lcom/android/contacts/common/list/ContactListItemView;ILandroid/database/Cursor;)V
     .locals 15
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/contacts/common/list/ContactListItemView;->removePhotoView()V
 
@@ -681,16 +664,12 @@
 
 .method protected bindSearchSnippet(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     return-void
 .end method
 
 .method protected bindSectionHeaderAndDivider(Lcom/android/contacts/common/list/ContactListItemView;I)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -749,9 +728,6 @@
 
 .method protected bindSectionHeaderAndDivider(Lcom/android/contacts/common/list/ContactListItemView;ILandroid/database/Cursor;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v3, 0x0
 
@@ -798,8 +774,6 @@
 
 .method protected bindStarredIcon(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v0, 0xc
 
@@ -810,8 +784,6 @@
 
 .method public changeCursor(ILandroid/database/Cursor;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x1
 
@@ -860,7 +832,6 @@
 
 .method public getContactDisplayName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -895,7 +866,6 @@
 
 .method public getContactId(I)J
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -922,7 +892,6 @@
 
 .method public getContactLookupKey(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -949,7 +918,6 @@
 
 .method public getContactUri(I)Landroid/net/Uri;
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -994,8 +962,6 @@
 
 .method public getContactUri(ILandroid/database/Cursor;)Landroid/net/Uri;
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v6, 0x0
 
@@ -1105,7 +1071,6 @@
 
 .method public getLinkedContactCount(I)I
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;->getItem(I)Ljava/lang/Object;
@@ -1377,7 +1342,6 @@
 
 .method public hasPhoneNumber(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1405,7 +1369,6 @@
 
 .method protected hideCheckBox(Lcom/android/contacts/common/list/ContactListItemView;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
 
     invoke-virtual {p1}, Lcom/android/contacts/common/list/ContactListItemView;->hideCheckBox()V
 
@@ -1414,7 +1377,6 @@
 
 .method public isDeletableContact(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -1524,8 +1486,6 @@
 
 .method public isGalSearchShowMoreItem(ILandroid/database/Cursor;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v2, 0x1
 
@@ -1576,7 +1536,6 @@
 
 .method public isPreLoadContact(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -1619,8 +1578,6 @@
 
 .method public isSelectedContact(ILandroid/database/Cursor;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v4, 0x1
 
@@ -1710,7 +1667,6 @@
 
 .method public isSharableContact(I)Z
     .locals 12
-    .param p1    # I
 
     const/4 v10, 0x1
 
@@ -1826,7 +1782,6 @@
 
 .method public isSim2ContactOnly(I)Z
     .locals 8
-    .param p1    # I
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -1896,7 +1851,6 @@
 
 .method public isSimContact(I)Z
     .locals 8
-    .param p1    # I
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -1975,7 +1929,6 @@
 
 .method public isSimContactOnly(I)Z
     .locals 8
-    .param p1    # I
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -2045,11 +1998,6 @@
 
 .method protected newView(Landroid/content/Context;ILandroid/database/Cursor;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Landroid/view/ViewGroup;
 
     new-instance v0, Lcom/android/contacts/common/list/ContactListItemView;
 
@@ -2078,9 +2026,6 @@
 
 .method public setSelectedContact(JLjava/lang/String;J)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     iput-wide p1, p0, Lcom/android/contacts/common/list/ContactListAdapter;->mSelectedContactDirectoryId:J
 

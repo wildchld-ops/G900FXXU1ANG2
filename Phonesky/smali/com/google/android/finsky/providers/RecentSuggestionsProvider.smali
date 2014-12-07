@@ -56,7 +56,6 @@
 
 .method static synthetic access$002(Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
-    .param p0    # Ljava/lang/Boolean;
 
     sput-object p0, Lcom/google/android/finsky/providers/RecentSuggestionsProvider;->mIsGoogleTV:Ljava/lang/Boolean;
 
@@ -65,8 +64,6 @@
 
 .method public static sendSuggestionClickedLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -152,7 +149,6 @@
 
 .method public static setCurrentBackendId(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/google/android/finsky/providers/RecentSuggestionsProvider;->sCurrentBackendId:I
 
@@ -163,11 +159,6 @@
 # virtual methods
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v6, 0x0
 

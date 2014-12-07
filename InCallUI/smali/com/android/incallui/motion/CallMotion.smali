@@ -28,8 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/motion/CallMotion;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/motion/CallMotion;
 
     iget v0, p0, Lcom/android/incallui/motion/CallMotion;->mMotionType:I
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method protected dbg_enter(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -110,7 +109,6 @@
 
 .method protected dbg_leave(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -201,7 +199,6 @@
 
 .method protected nameValue(C)Lgov/nist/core/NameValue;
     .locals 11
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -402,7 +399,6 @@
 
 .method protected peekLine(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lgov/nist/core/ParserCore;->debug:Z
 

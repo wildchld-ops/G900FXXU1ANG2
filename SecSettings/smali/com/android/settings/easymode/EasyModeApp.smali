@@ -225,7 +225,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/easymode/EasyModeApp;)Lcom/android/settings/easymode/EasyModeEnabler;
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     iget-object v0, p0, Lcom/android/settings/easymode/EasyModeApp;->mEasyModeEnabler:Lcom/android/settings/easymode/EasyModeEnabler;
 
@@ -234,7 +233,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/easymode/EasyModeApp;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     iget-object v0, p0, Lcom/android/settings/easymode/EasyModeApp;->mPm:Landroid/content/pm/PackageManager;
 
@@ -243,7 +241,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/easymode/EasyModeApp;)I
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     iget v0, p0, Lcom/android/settings/easymode/EasyModeApp;->mModeState:I
 
@@ -252,7 +249,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/easymode/EasyModeApp;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     invoke-direct {p0}, Lcom/android/settings/easymode/EasyModeApp;->isDefaultEasyLauncher()Z
 
@@ -263,7 +259,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/easymode/EasyModeApp;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     invoke-virtual {p0}, Lcom/android/settings/easymode/EasyModeApp;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -274,7 +269,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/easymode/EasyModeApp;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     iget-object v0, p0, Lcom/android/settings/easymode/EasyModeApp;->easy_mode_select_all:Landroid/preference/CheckBoxPreference;
 
@@ -283,7 +277,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/easymode/EasyModeApp;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     invoke-direct {p0}, Lcom/android/settings/easymode/EasyModeApp;->checkLeastOnEasyMode()Z
 
@@ -294,7 +287,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/easymode/EasyModeApp;)V
     .locals 0
-    .param p0    # Lcom/android/settings/easymode/EasyModeApp;
 
     invoke-direct {p0}, Lcom/android/settings/easymode/EasyModeApp;->saveEasyModeApps()V
 
@@ -1457,7 +1449,6 @@
 
 .method private updateCheckBoxState(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -1825,9 +1816,6 @@
 
 .method private updatePreperence(Landroid/preference/Preference;Landroid/content/pm/ApplicationInfo;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings/easymode/EasyModeApp;->mPm:Landroid/content/pm/PackageManager;
 
@@ -2786,7 +2774,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -3061,9 +3048,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -3302,9 +3286,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3420,8 +3401,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 
@@ -3661,7 +3640,6 @@
 
 .method public setAllOptionCheck(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "EasyModeApp"
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/comm/CommandQueue;Lcom/nuance/connect/service/comm/Transaction;)V
     .locals 0
-    .param p2    # Lcom/nuance/connect/service/comm/Transaction;
 
     iput-object p1, p0, Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -61,7 +60,6 @@
 
 .method public isSame(Lcom/nuance/connect/service/comm/Transaction;)Z
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Transaction;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;->transaction:Lcom/nuance/connect/service/comm/Transaction;
 

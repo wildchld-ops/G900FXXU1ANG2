@@ -29,7 +29,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment;
 
@@ -64,8 +63,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment;->mListener:Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment$VerifyPinListener;
 
@@ -81,7 +78,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -146,7 +142,6 @@
 
 .method public setOnResultListener(Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment$VerifyPinListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment$VerifyPinListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment;->mListener:Lcom/google/android/finsky/billing/carrierbilling/fragment/VerifyPinDialogFragment$VerifyPinListener;
 

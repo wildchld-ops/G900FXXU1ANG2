@@ -20,7 +20,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/sim/PhoneBookSimOperation;-><init>(Landroid/content/Context;)V
 
@@ -31,9 +30,6 @@
 # virtual methods
 .method public copyAllNumberToSim(JII)I
     .locals 1
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     if-nez p3, :cond_0
 
@@ -52,9 +48,6 @@
 
 .method public copyToSim(JIZ)I
     .locals 1
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     if-nez p3, :cond_0
 
@@ -73,7 +66,6 @@
 
 .method public getAnrFieldCount(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x3e8
 
@@ -82,7 +74,6 @@
 
 .method public getEmailLength(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x3e8
 
@@ -91,7 +82,6 @@
 
 .method public getEnableCount(I)I
     .locals 2
-    .param p1    # I
 
     sget v0, Lcom/samsung/contacts/sim/PhoneBookSingleSimOperation;->mMaxCount:I
 
@@ -104,7 +94,6 @@
 
 .method public getNameLength(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x3e8
 
@@ -113,7 +102,6 @@
 
 .method public getNumberLength(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x3e8
 
@@ -122,7 +110,6 @@
 
 .method public getSimContactDetailIcon(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x3e8
 
@@ -131,7 +118,6 @@
 
 .method public getSimIcon(I)I
     .locals 1
-    .param p1    # I
 
     const v0, 0x7f0200b7
 
@@ -140,7 +126,6 @@
 
 .method public getSimName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookSingleSimOperation;->mContext:Landroid/content/Context;
 
@@ -155,7 +140,6 @@
 
 .method public getSimType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookSingleSimOperation;->NOT_USED_STR:Ljava/lang/String;
 
@@ -164,7 +148,6 @@
 
 .method public hasIccCard(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -179,8 +162,6 @@
 
 .method public isAnrFull(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -189,8 +170,6 @@
 
 .method public isAnrSupported(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -199,7 +178,6 @@
 
 .method public isEmailFull(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -208,7 +186,6 @@
 
 .method public isSimDBReady(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -217,7 +194,6 @@
 
 .method public isSimEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -226,8 +202,6 @@
 
 .method public isSimEnabled(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -236,7 +210,6 @@
 
 .method public isSimFull(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -253,7 +226,6 @@
 
 .method public setSimInfoChanged(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     return-void
 .end method

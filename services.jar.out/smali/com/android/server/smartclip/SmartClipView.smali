@@ -374,7 +374,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/16 v7, 0xa
 
@@ -616,8 +615,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/smartclip/SpenGestureManager;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/smartclip/SpenGestureManager;
 
     const/16 v7, 0xa
 
@@ -1077,7 +1074,6 @@
 
 .method static synthetic access$000(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsFirstMediaScan:Z
 
@@ -1086,8 +1082,6 @@
 
 .method static synthetic access$002(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsFirstMediaScan:Z
 
@@ -1096,7 +1090,6 @@
 
 .method static synthetic access$100(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsSendingBootMsg:Z
 
@@ -1105,7 +1098,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     invoke-direct {p0}, Lcom/android/server/smartclip/SmartClipView;->isVzwSetupRunning()Z
 
@@ -1116,8 +1108,6 @@
 
 .method static synthetic access$102(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsSendingBootMsg:Z
 
@@ -1126,8 +1116,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/smartclip/SmartClipView;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/smartclip/SmartClipView;->isTopActivity(Ljava/lang/String;)Z
 
@@ -1138,8 +1126,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mDisplayRoateChanged:Z
 
@@ -1148,8 +1134,6 @@
 
 .method static synthetic access$1302(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsLiveScreencapture:Z
 
@@ -1158,7 +1142,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/smartclip/SmartClipView;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mLongPressIntent:Landroid/content/Intent;
 
@@ -1167,7 +1150,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsKeyguardOn:Z
 
@@ -1176,7 +1158,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsEnableDoubleTapOnLockscreen:Z
 
@@ -1185,7 +1166,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsLiveGlanceView:Z
 
@@ -1194,7 +1174,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/smartclip/SmartClipView;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mPenMemoActionIntent:Landroid/content/Intent;
 
@@ -1203,8 +1182,6 @@
 
 .method static synthetic access$1802(Lcom/android/server/smartclip/SmartClipView;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SmartClipView;->mPenMemoActionIntent:Landroid/content/Intent;
 
@@ -1213,7 +1190,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/smartclip/SmartClipView;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -1222,7 +1198,6 @@
 
 .method static synthetic access$200(Lcom/android/server/smartclip/SmartClipView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mContext:Landroid/content/Context;
 
@@ -1231,7 +1206,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/smartclip/SmartClipView;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mTelephonyManager2:Landroid/telephony/TelephonyManager;
 
@@ -1240,7 +1214,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/smartclip/SmartClipView;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mDoubleTapIntent:Landroid/content/Intent;
 
@@ -1249,7 +1222,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/smartclip/SmartClipView;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mGesturePadBlockTaskList:Ljava/util/ArrayList;
 
@@ -1258,8 +1230,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/smartclip/SmartClipView;Ljava/util/ArrayList;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/android/server/smartclip/SmartClipView;->isTopActivity(Ljava/util/ArrayList;)Z
 
@@ -1270,7 +1240,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/smartclip/SmartClipView;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mGesturePadIntent:Landroid/content/Intent;
 
@@ -1279,7 +1248,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMedianValueForGesturePosX:I
 
@@ -1288,7 +1256,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMedianValueForGesturePosY:I
 
@@ -1297,7 +1264,6 @@
 
 .method static synthetic access$300(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsEnabledHapticFeedback:Z
 
@@ -1306,7 +1272,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsUsablePath:Z
 
@@ -1315,8 +1280,6 @@
 
 .method static synthetic access$3302(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsUsablePath:Z
 
@@ -1325,7 +1288,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/smartclip/SmartClipView;)Landroid/graphics/Path;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mPathOfCurve:Landroid/graphics/Path;
 
@@ -1334,7 +1296,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordX:I
 
@@ -1343,8 +1304,6 @@
 
 .method static synthetic access$3502(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordX:I
 
@@ -1353,7 +1312,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordX:I
 
@@ -1362,8 +1320,6 @@
 
 .method static synthetic access$3602(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordX:I
 
@@ -1372,7 +1328,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordY:I
 
@@ -1381,8 +1336,6 @@
 
 .method static synthetic access$3702(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordY:I
 
@@ -1391,7 +1344,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordY:I
 
@@ -1400,8 +1352,6 @@
 
 .method static synthetic access$3802(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordY:I
 
@@ -1410,7 +1360,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsUsableSecondPath:Z
 
@@ -1419,8 +1368,6 @@
 
 .method static synthetic access$3902(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsUsableSecondPath:Z
 
@@ -1429,7 +1376,6 @@
 
 .method static synthetic access$400(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mOutofVerticalThresholdToUp:Z
 
@@ -1438,7 +1384,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/smartclip/SmartClipView;)Landroid/graphics/Path;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mSecondPathOfCurve:Landroid/graphics/Path;
 
@@ -1447,8 +1392,6 @@
 
 .method static synthetic access$402(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mOutofVerticalThresholdToUp:Z
 
@@ -1457,7 +1400,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCropImageWidth:I
 
@@ -1466,8 +1408,6 @@
 
 .method static synthetic access$4102(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mCropImageWidth:I
 
@@ -1476,7 +1416,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCropImageHeight:I
 
@@ -1485,8 +1424,6 @@
 
 .method static synthetic access$4202(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mCropImageHeight:I
 
@@ -1495,7 +1432,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/smartclip/SmartClipView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     invoke-direct {p0}, Lcom/android/server/smartclip/SmartClipView;->GetDefaultDisplayBimap()Landroid/graphics/Bitmap;
 
@@ -1506,7 +1442,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/smartclip/SmartClipView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCropTempBitmap:Landroid/graphics/Bitmap;
 
@@ -1515,8 +1450,6 @@
 
 .method static synthetic access$4402(Lcom/android/server/smartclip/SmartClipView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SmartClipView;->mCropTempBitmap:Landroid/graphics/Bitmap;
 
@@ -1525,7 +1458,6 @@
 
 .method static synthetic access$4500(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCurrentDisplayWidth:I
 
@@ -1534,7 +1466,6 @@
 
 .method static synthetic access$4600(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCurrentDisplayHeight:I
 
@@ -1543,8 +1474,6 @@
 
 .method static synthetic access$4702(Lcom/android/server/smartclip/SmartClipView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SmartClipView;->mCropTempBitmapForAnimation:Landroid/graphics/Bitmap;
 
@@ -1553,7 +1482,6 @@
 
 .method static synthetic access$4800(Lcom/android/server/smartclip/SmartClipView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mScreenBitmap:Landroid/graphics/Bitmap;
 
@@ -1562,7 +1490,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/smartclip/SmartClipView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCropBitmap:Landroid/graphics/Bitmap;
 
@@ -1571,8 +1498,6 @@
 
 .method static synthetic access$4902(Lcom/android/server/smartclip/SmartClipView;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SmartClipView;->mCropBitmap:Landroid/graphics/Bitmap;
 
@@ -1581,7 +1506,6 @@
 
 .method static synthetic access$500(Lcom/android/server/smartclip/SmartClipView;)V
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     invoke-direct {p0}, Lcom/android/server/smartclip/SmartClipView;->startAniForLoadingService()V
 
@@ -1590,7 +1514,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordXForIntent:I
 
@@ -1599,8 +1522,6 @@
 
 .method static synthetic access$5002(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordXForIntent:I
 
@@ -1609,7 +1530,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordXForIntent:I
 
@@ -1618,8 +1538,6 @@
 
 .method static synthetic access$5102(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordXForIntent:I
 
@@ -1628,7 +1546,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordYForIntent:I
 
@@ -1637,8 +1554,6 @@
 
 .method static synthetic access$5202(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMaxCoordYForIntent:I
 
@@ -1647,7 +1562,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/smartclip/SmartClipView;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordYForIntent:I
 
@@ -1656,8 +1570,6 @@
 
 .method static synthetic access$5302(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mMinCoordYForIntent:I
 
@@ -1666,7 +1578,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/smartclip/SmartClipView;)Lcom/android/server/smartclip/SmartClipView$CroppingMatrix;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCroppingMatrix:Lcom/android/server/smartclip/SmartClipView$CroppingMatrix;
 
@@ -1675,7 +1586,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/smartclip/SmartClipView;)V
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     invoke-direct {p0}, Lcom/android/server/smartclip/SmartClipView;->setPointGroupClear()V
 
@@ -1684,8 +1594,6 @@
 
 .method static synthetic access$5602(Lcom/android/server/smartclip/SmartClipView;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mNumColsedCurves:I
 
@@ -1694,7 +1602,6 @@
 
 .method static synthetic access$5700(Lcom/android/server/smartclip/SmartClipView;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCropPointList:Ljava/util/ArrayList;
 
@@ -1703,7 +1610,6 @@
 
 .method static synthetic access$5800(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mIsStartingSuggestionService:Z
 
@@ -1712,8 +1618,6 @@
 
 .method static synthetic access$5802(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsStartingSuggestionService:Z
 
@@ -1722,7 +1626,6 @@
 
 .method static synthetic access$5900(Lcom/android/server/smartclip/SmartClipView;)Landroid/graphics/Path;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mPathOfCurveForDrawing:Landroid/graphics/Path;
 
@@ -1731,7 +1634,6 @@
 
 .method static synthetic access$600(Lcom/android/server/smartclip/SmartClipView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mLoadingAniImgView:Landroid/widget/ImageView;
 
@@ -1740,7 +1642,6 @@
 
 .method static synthetic access$6000(Lcom/android/server/smartclip/SmartClipView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mCropHandler:Landroid/os/Handler;
 
@@ -1749,7 +1650,6 @@
 
 .method static synthetic access$6100(Lcom/android/server/smartclip/SmartClipView;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView;->mFinishSaveImg:Z
 
@@ -1758,8 +1658,6 @@
 
 .method static synthetic access$702(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsLiveCropThread:Z
 
@@ -1768,8 +1666,6 @@
 
 .method static synthetic access$802(Lcom/android/server/smartclip/SmartClipView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsClosedCurve:Z
 
@@ -1778,7 +1674,6 @@
 
 .method static synthetic access$900(Lcom/android/server/smartclip/SmartClipView;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mPointers:Ljava/util/ArrayList;
 
@@ -1787,9 +1682,6 @@
 
 .method private checkClosedCurve(III)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1989,9 +1881,6 @@
 
 .method private checkClosedCurveForActionUp(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -2058,7 +1947,6 @@
 
 .method private getDegreesForRotation(I)F
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -3075,7 +2963,6 @@
 
 .method private isTopActivity(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/smartclip/SmartClipView;->getTopActivityComponentName()Landroid/content/ComponentName;
 
@@ -3196,11 +3083,6 @@
 
 .method private markMatrixForCropping(FFFFI)V
     .locals 16
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
 
     const/4 v10, 0x0
 
@@ -4271,7 +4153,6 @@
 
 .method private showToast(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mContext:Landroid/content/Context;
 
@@ -4404,9 +4285,6 @@
 # virtual methods
 .method public addSPenEvent(Landroid/view/MotionEvent;ZZ)V
     .locals 29
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
-    .param p3    # Z
 
     move/from16 v0, p2
 
@@ -6567,9 +6445,6 @@
 
 .method protected drawRect(Landroid/graphics/Canvas;Landroid/graphics/Rect;I)Z
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     new-instance v5, Landroid/graphics/Paint;
 
@@ -6785,9 +6660,6 @@
 
 .method public makePathForClosedCurve(IIZ)Z
     .locals 22
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -7274,7 +7146,6 @@
 
 .method public onDataExtractionResponseArrived(Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;
 
     iget-object v1, p1, Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;->mRepository:Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
@@ -7307,7 +7178,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v7, 0x1
 
@@ -7424,8 +7294,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -7450,8 +7318,6 @@
 
 .method protected requestDataExtractionFromView(Landroid/graphics/Rect;Z)Z
     .locals 11
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -7580,7 +7446,6 @@
 
 .method public resetVariable(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, -0x1
 
@@ -7685,7 +7550,6 @@
 
 .method public setCroppingMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mCroppingMode:I
 
@@ -7694,7 +7558,6 @@
 
 .method public setDoubleTapStateBySettingMenu(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsEnableDoubleTapOnLockscreen:Z
 
@@ -7703,7 +7566,6 @@
 
 .method public setFocusWindow(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView;->mFocusedWindow:I
 
@@ -7712,7 +7574,6 @@
 
 .method public setHapticEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView;->mIsEnabledHapticFeedback:Z
 
@@ -7721,7 +7582,6 @@
 
 .method public setPhoneWindowMangerFlag(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView;->mGestureEffectManager:Lcom/android/server/smartclip/GestureEffectManager;
 
@@ -7732,7 +7592,6 @@
 
 .method public setSmartClipDataRepository(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SmartClipView;->mSmartClipDataRepository:Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 

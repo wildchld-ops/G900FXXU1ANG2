@@ -76,7 +76,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirViewSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     iget-object v0, p0, Lcom/android/settings/AirViewSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirViewSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     iget-object v0, p0, Lcom/android/settings/AirViewSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -94,7 +92,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/AirViewSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     invoke-direct {p0}, Lcom/android/settings/AirViewSettings;->updateAirViewModeSummary()V
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/AirViewSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     invoke-direct {p0}, Lcom/android/settings/AirViewSettings;->updateState()V
 
@@ -112,7 +108,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/AirViewSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     iget-object v0, p0, Lcom/android/settings/AirViewSettings;->mContext:Landroid/content/Context;
 
@@ -121,8 +116,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/AirViewSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/AirViewSettings;->broadcastAirViewChanged(Z)V
 
@@ -131,7 +124,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/AirViewSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     invoke-direct {p0}, Lcom/android/settings/AirViewSettings;->updateMenuEnableState()V
 
@@ -140,7 +132,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/AirViewSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     invoke-direct {p0}, Lcom/android/settings/AirViewSettings;->updateAirviewSwitch()V
 
@@ -149,7 +140,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/AirViewSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     invoke-direct {p0}, Lcom/android/settings/AirViewSettings;->showAllOptionDisabledDialog()V
 
@@ -158,7 +148,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/AirViewSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     iget-object v0, p0, Lcom/android/settings/AirViewSettings;->mAirButtonSwitchPref:Landroid/preference/SwitchPreferenceScreen;
 
@@ -167,7 +156,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/AirViewSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewSettings;
 
     iget-object v0, p0, Lcom/android/settings/AirViewSettings;->mAirViewModeListPref:Landroid/preference/ListPreference;
 
@@ -176,7 +164,6 @@
 
 .method private broadcastAirViewChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -260,7 +247,6 @@
 
 .method public static isAllOptionDisabled(Landroid/content/ContentResolver;)Z
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x1
 
@@ -852,8 +838,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -981,7 +965,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x10
 
@@ -1236,8 +1219,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1275,7 +1256,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1339,8 +1319,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 11
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v8, 0x1
 
@@ -1542,8 +1520,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v4, 0x0
 

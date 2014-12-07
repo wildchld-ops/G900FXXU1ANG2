@@ -32,9 +32,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v8, 0x2
 
@@ -219,7 +216,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -281,7 +277,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -394,7 +389,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const v2, 0x7f080173
 
@@ -459,7 +453,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/activity/TransactionSafeActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -480,7 +473,6 @@
 
 .method setDeleteMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/ContactHistoryActivity;->mIsDeleteMode:Z
 
@@ -497,7 +489,6 @@
 
 .method setIsItemSelected(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/ContactHistoryActivity;->mIsItemSelected:Z
 

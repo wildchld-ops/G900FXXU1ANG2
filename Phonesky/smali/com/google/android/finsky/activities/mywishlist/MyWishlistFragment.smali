@@ -370,7 +370,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -442,7 +441,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -516,7 +514,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/library/AccountLibrary;->getAccount()Landroid/accounts/Account;
 
@@ -546,7 +543,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/mywishlist/MyWishlistFragment;->recordState()V
 

@@ -75,7 +75,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/ssrm/PreMonitor;->mSiopEnabled:Z
 
@@ -92,7 +91,6 @@
 
 .method static synthetic access$202(Landroid/os/DVFSHelper;)Landroid/os/DVFSHelper;
     .locals 0
-    .param p0    # Landroid/os/DVFSHelper;
 
     sput-object p0, Lcom/android/server/ssrm/PreMonitor;->mArmDVFSHelper:Landroid/os/DVFSHelper;
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$402(Landroid/os/DVFSHelper;)Landroid/os/DVFSHelper;
     .locals 0
-    .param p0    # Landroid/os/DVFSHelper;
 
     sput-object p0, Lcom/android/server/ssrm/PreMonitor;->mGpuDVFSHelper:Landroid/os/DVFSHelper;
 
@@ -234,7 +231,6 @@
 
 .method initialize(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x9eb10
 

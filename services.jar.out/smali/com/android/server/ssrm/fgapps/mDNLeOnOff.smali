@@ -133,7 +133,6 @@
 
 .method static synthetic access$000(Lcom/android/server/ssrm/fgapps/mDNLeOnOff;)V
     .locals 0
-    .param p0    # Lcom/android/server/ssrm/fgapps/mDNLeOnOff;
 
     invoke-direct {p0}, Lcom/android/server/ssrm/fgapps/mDNLeOnOff;->retrieveSettings()V
 
@@ -150,7 +149,6 @@
 
 .method static synthetic access$102(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/ssrm/fgapps/mDNLeOnOff;->delayOffset:I
 
@@ -219,7 +217,6 @@
 
 .method public onAnimationFinished(J)V
     .locals 6
-    .param p1    # J
 
     sget-wide v0, Lcom/android/server/ssrm/fgapps/mDNLeOnOff;->currentEndTime:J
 
@@ -277,7 +274,6 @@
 
 .method public onAnimationStarted(J)V
     .locals 3
-    .param p1    # J
 
     sget-wide v1, Lcom/android/server/ssrm/fgapps/mDNLeOnOff;->currentStartTime:J
 
@@ -429,7 +425,6 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/server/ssrm/fgapps/mDNLeOnOff;->getForegroundPackageName()Ljava/lang/String;
 
@@ -492,7 +487,6 @@
 
 .method public onMultiWindowStatusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "SSRMv2:mDNIeOnOff"
 
@@ -545,9 +539,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/server/ssrm/fgapps/FgAppListener;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/server/ssrm/fgapps/FgAppListener;->onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
 
@@ -625,7 +616,6 @@
 
 .method protected updatemDNIeSysFs(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/ssrm/fgapps/mDNLeOnOff;->mPowerManager:Landroid/os/PowerManager;
 

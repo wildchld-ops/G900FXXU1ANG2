@@ -30,7 +30,6 @@
 # virtual methods
 .method public getNotification(Lcom/nuance/connect/compat/NotificationCompat$Builder;)Landroid/app/Notification;
     .locals 5
-    .param p1    # Lcom/nuance/connect/compat/NotificationCompat$Builder;
 
     iget-object v0, p1, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 

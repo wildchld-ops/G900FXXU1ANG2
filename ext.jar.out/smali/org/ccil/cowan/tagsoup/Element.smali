@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Lorg/ccil/cowan/tagsoup/ElementType;Z)V
     .locals 2
-    .param p1    # Lorg/ccil/cowan/tagsoup/ElementType;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,7 +122,6 @@
 
 .method public canContain(Lorg/ccil/cowan/tagsoup/Element;)Z
     .locals 2
-    .param p1    # Lorg/ccil/cowan/tagsoup/Element;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/Element;->theType:Lorg/ccil/cowan/tagsoup/ElementType;
 
@@ -299,9 +296,6 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/Element;->theType:Lorg/ccil/cowan/tagsoup/ElementType;
 
@@ -314,7 +308,6 @@
 
 .method public setNext(Lorg/ccil/cowan/tagsoup/Element;)V
     .locals 0
-    .param p1    # Lorg/ccil/cowan/tagsoup/Element;
 
     iput-object p1, p0, Lorg/ccil/cowan/tagsoup/Element;->theNext:Lorg/ccil/cowan/tagsoup/Element;
 

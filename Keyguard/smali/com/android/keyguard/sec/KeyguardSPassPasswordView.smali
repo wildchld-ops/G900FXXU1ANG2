@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -38,8 +37,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/KeyguardAbsKeyInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mPasswordEntry:Landroid/widget/EditText;
 
@@ -79,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mShowImeAtScreenOn:Z
 
@@ -88,7 +83,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -97,7 +91,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -106,7 +99,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -115,7 +107,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardSPassPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -124,8 +115,6 @@
 
 .method private hasMultipleEnabledIMEsOrSubtypes(Landroid/view/inputmethod/InputMethodManager;Z)Z
     .locals 12
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -252,17 +241,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -277,7 +261,6 @@
 
 .method public hideBouncer(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isGgsmTablet()Z
 
@@ -568,8 +551,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mPasswordEntry:Landroid/widget/EditText;
 
@@ -582,7 +563,6 @@
 
 .method public onResume(I)V
     .locals 5
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->onResume(I)V
 
@@ -607,10 +587,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -687,7 +663,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSPassPasswordView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -696,7 +671,6 @@
 
 .method public showBouncer(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isGgsmTablet()Z
 

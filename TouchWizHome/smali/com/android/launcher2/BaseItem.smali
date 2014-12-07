@@ -46,7 +46,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/launcher2/BaseItem$Type;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem$Type;
 
     const/4 v2, -0x1
 
@@ -75,7 +74,6 @@
 
 .method public static getContainingFolderId(Lcom/android/launcher2/BaseItem;)J
     .locals 4
-    .param p0    # Lcom/android/launcher2/BaseItem;
 
     instance-of v2, p0, Lcom/android/launcher2/AppItem;
 
@@ -126,7 +124,6 @@
 
 .method public static isFolder(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p0    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/BaseItem;->mType:Lcom/android/launcher2/BaseItem$Type;
 
@@ -154,7 +151,6 @@
 
 .method public static isItemInFolder(Lcom/android/launcher2/BaseItem;)Z
     .locals 7
-    .param p0    # Lcom/android/launcher2/BaseItem;
 
     const/4 v2, 0x1
 
@@ -220,7 +216,6 @@
 
 .method public static isWidget(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p0    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/BaseItem;->mType:Lcom/android/launcher2/BaseItem$Type;
 
@@ -298,7 +293,6 @@
 
 .method public setPosition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/BaseItem;->mScreen:I
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public buildSetAggregationModeImpl(Ljava/lang/Long;I)Landroid/content/ContentProviderOperation$Builder;
     .locals 1
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/model/RawContactDelta$1;->this$0:Lcom/android/contacts/model/RawContactDelta;
 
@@ -88,7 +86,6 @@
 
 .method public possibleAddImpl(Ljava/util/ArrayList;Landroid/content/ContentProviderOperation$Builder;)V
     .locals 1
-    .param p2    # Landroid/content/ContentProviderOperation$Builder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

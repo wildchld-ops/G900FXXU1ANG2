@@ -1379,7 +1379,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">Грешка в USB сдвояване</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB привързването не може да се деактивира, докато използвате Странично синхронизиране. Деактивирането на USB привързване ще деактивира Странично синхронизиране.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB привързването не може да се активира, докато използвате Странично синхронизиране. Активирането на USB привързване ще деактивира Странично синхронизиране.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth привързване</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth привързване</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Интернет връзката на това устройство се споделя…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Интернет връзката на устройството се споделя с 1 устройство</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Интернет връзката на устройството се споделя с %d устройства</string>

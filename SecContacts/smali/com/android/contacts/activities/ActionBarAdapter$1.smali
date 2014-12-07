@@ -33,8 +33,6 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ActionBarAdapter$1;->this$0:Lcom/android/contacts/activities/ActionBarAdapter;
 

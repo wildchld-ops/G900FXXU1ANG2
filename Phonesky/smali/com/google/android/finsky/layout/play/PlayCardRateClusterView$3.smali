@@ -29,10 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;FFFFIII[I)V
     .locals 0
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView$3;->this$0:Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;
 
@@ -53,8 +49,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 7
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     iget v6, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView$3;->val$fullSlideDistance:I
 

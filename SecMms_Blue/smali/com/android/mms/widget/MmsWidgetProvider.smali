@@ -120,8 +120,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/widget/MmsWidgetProvider;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/widget/MmsWidgetProvider;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/widget/MmsWidgetProvider;->needToUpdate:Z
 
@@ -130,7 +128,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/widget/MmsWidgetProvider;)Lcom/android/mms/widget/NoticeDBControl;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/MmsWidgetProvider;
 
     iget-object v0, p0, Lcom/android/mms/widget/MmsWidgetProvider;->mDbControll:Lcom/android/mms/widget/NoticeDBControl;
 
@@ -139,7 +136,6 @@
 
 .method public static byteToString([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     const/4 v1, 0x0
 
@@ -172,7 +168,6 @@
 
 .method public static notifyDatasetChanged(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "MmsWidgetProvider"
 
@@ -193,8 +188,6 @@
 
 .method public static notifyDatasetChanged(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v1, "MmsWidgetProvider"
 
@@ -219,7 +212,6 @@
 
 .method public static notifyDefaultAppChanged(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const-string v4, "MmsWidgetProvider"
 
@@ -311,7 +303,6 @@
 
 .method public static refreshWidgetCount(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/appwidget/AppWidgetManager;->getInstance(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;
 
@@ -344,8 +335,6 @@
 
 .method private static setIntentForAdd(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -374,8 +363,6 @@
 
 .method public static setIntentForChangeWidget(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
 
     const/high16 v4, 0x8000000
 
@@ -443,8 +430,6 @@
 
 .method public static setIntentForClickListItem(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
 
     const/high16 v5, 0x8000000
 
@@ -518,8 +503,6 @@
 
 .method public static setIntentForComposer(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
 
     const/4 v5, 0x0
 
@@ -574,9 +557,6 @@
 
 .method public static setIntentForNoticeWidget(Landroid/content/Context;ILandroid/widget/RemoteViews;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     const v3, 0x7f0b014b
 
@@ -617,9 +597,6 @@
 
 .method public static setIntentForPriorityWidget(Landroid/content/Context;ILandroid/widget/RemoteViews;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     const v3, 0x7f0b014b
 
@@ -680,8 +657,6 @@
 
 .method public static setIntentForSettings(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -710,9 +685,6 @@
 
 .method public static setIntentForWidget(Landroid/content/Context;ILandroid/widget/RemoteViews;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     const v3, 0x7f0b030c
 
@@ -753,8 +725,6 @@
 
 .method private static setPriorityIntentForAdd(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
 
     const v5, 0x7f0b0147
 
@@ -795,8 +765,6 @@
 
 .method private static updateNoticeWidget(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Landroid/widget/RemoteViews;
 
@@ -829,8 +797,6 @@
 
 .method private static updatePriorityWidget(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Landroid/widget/RemoteViews;
 
@@ -863,8 +829,6 @@
 
 .method private static updateWidget(Landroid/content/Context;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v1, "MmsWidgetProvider"
 
@@ -921,8 +885,6 @@
 # virtual methods
 .method public onDeleted(Landroid/content/Context;[I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     invoke-super {p0, p1, p2}, Landroid/appwidget/AppWidgetProvider;->onDeleted(Landroid/content/Context;[I)V
 
@@ -933,7 +895,6 @@
 
 .method public onDisabled(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "MmsWidgetProvider"
 
@@ -995,7 +956,6 @@
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const-string v2, "MmsWidgetProvider"
 
@@ -1072,8 +1032,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v11, 0x0
 
@@ -1460,9 +1418,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     const/4 v11, 0x1
 
@@ -1626,7 +1581,6 @@
 
 .method public queryPhoneNumbers(J)Landroid/database/Cursor;
     .locals 10
-    .param p1    # J
 
     const/4 v5, 0x0
 
@@ -1722,8 +1676,6 @@
 
 .method public queryPhoneNumbers(JJ)Landroid/database/Cursor;
     .locals 10
-    .param p1    # J
-    .param p3    # J
 
     const/4 v5, 0x0
 

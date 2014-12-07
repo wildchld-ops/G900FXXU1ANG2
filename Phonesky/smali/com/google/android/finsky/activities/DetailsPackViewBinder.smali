@@ -56,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/DetailsPackViewBinder;)Lcom/google/android/finsky/api/model/DfeList;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsPackViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsPackViewBinder;->mItemListRequest:Lcom/google/android/finsky/api/model/DfeList;
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/DetailsPackViewBinder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsPackViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsPackViewBinder;->mMoreUrl:Ljava/lang/String;
 
@@ -74,7 +72,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/DetailsPackViewBinder;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsPackViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsPackViewBinder;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -83,7 +80,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/DetailsPackViewBinder;)Lcom/google/android/finsky/api/model/DfeToc;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsPackViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsPackViewBinder;->mToc:Lcom/google/android/finsky/api/model/DfeToc;
 
@@ -92,7 +88,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/DetailsPackViewBinder;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsPackViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsPackViewBinder;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -388,15 +383,6 @@
 # virtual methods
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v10, 0x1
 
@@ -427,16 +413,6 @@
 
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Z)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p10    # Z
 
     const/4 v0, 0x0
 
@@ -484,7 +460,6 @@
 
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
 
@@ -521,11 +496,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p5    # Lcom/google/android/finsky/api/model/DfeToc;
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/fragments/DetailsViewBinder;->init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
 

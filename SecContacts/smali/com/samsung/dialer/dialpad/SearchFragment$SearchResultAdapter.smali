@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/dialer/dialpad/SearchFragment;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/dialer/dialpad/SearchFragment$SearchResultAdapter;->this$0:Lcom/samsung/dialer/dialpad/SearchFragment;
 
@@ -57,9 +56,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 21
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 

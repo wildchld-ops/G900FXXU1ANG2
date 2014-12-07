@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/activities/ContactEditorActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/ContactEditorActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/activities/ContactEditorActivity;->hideInputMethod()V
 
@@ -129,7 +128,6 @@
 # virtual methods
 .method public createTabContent(Ljava/lang/String;)Landroid/view/View;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/view/View;
 
@@ -188,7 +186,6 @@
 
 .method public onAccountAdded(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactEditorActivity;->mTabHost:Landroid/widget/TabHost;
 
@@ -250,7 +247,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -465,8 +461,6 @@
 
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {p1}, Lcom/android/contacts/util/DialogManager;->isManagedId(I)Z
 
@@ -523,7 +517,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -619,7 +612,6 @@
 
 .method public onSetCurrentTab(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactEditorActivity;->mTabHost:Landroid/widget/TabHost;
 
@@ -683,7 +675,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "input_method"
 
@@ -846,7 +837,6 @@
 
 .method public tabVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v1, 0x8
 

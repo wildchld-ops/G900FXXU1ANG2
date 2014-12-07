@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/entity/ContentLengthStrategy;)V
     .locals 2
-    .param p1    # Lorg/apache/http/entity/ContentLengthStrategy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public deserialize(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpMessage;)Lorg/apache/http/HttpEntity;
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/HttpMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -74,8 +71,6 @@
 
 .method protected doDeserialize(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpMessage;)Lorg/apache/http/entity/BasicHttpEntity;
     .locals 10
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/HttpMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

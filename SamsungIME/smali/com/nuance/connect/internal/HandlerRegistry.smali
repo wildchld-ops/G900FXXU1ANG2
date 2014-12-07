@@ -71,7 +71,6 @@
 
 .method private mapMessages(Lcom/nuance/connect/internal/ConnectHandler;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/internal/ConnectHandler;
 
     invoke-interface {p1}, Lcom/nuance/connect/internal/ConnectHandler;->getMessageIDs()[I
 
@@ -144,7 +143,6 @@
 # virtual methods
 .method public add(Lcom/nuance/connect/internal/ConnectHandler;)Lcom/nuance/connect/internal/HandlerRegistry;
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/ConnectHandler;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/HandlerRegistry;->handlers:Ljava/util/Map;
 
@@ -174,7 +172,6 @@
 
 .method public add(Ljava/lang/String;)Lcom/nuance/connect/internal/HandlerRegistry;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/HandlerRegistry;->handlers:Ljava/util/Map;
 
@@ -196,7 +193,6 @@
 
 .method public getHandlerByName(Ljava/lang/String;)Lcom/nuance/connect/internal/ConnectHandler;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/HandlerRegistry;->handlers:Ljava/util/Map;
 
@@ -233,7 +229,6 @@
 
 .method public hasHandler(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/HandlerRegistry;->handlers:Ljava/util/Map;
 
@@ -280,8 +275,6 @@
 
 .method public tryHandleMessage(Landroid/os/Handler;Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/HandlerRegistry;->messageArray:Landroid/util/SparseArray;
 

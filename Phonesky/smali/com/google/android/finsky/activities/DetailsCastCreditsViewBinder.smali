@@ -117,9 +117,6 @@
 # virtual methods
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Z)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Z
 
     const v0, 0x7f090188
 

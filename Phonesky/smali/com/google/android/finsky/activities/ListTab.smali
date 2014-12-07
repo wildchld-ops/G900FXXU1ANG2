@@ -55,16 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/DfeApi;Landroid/view/LayoutInflater;Lcom/google/android/finsky/activities/TabbedAdapter$TabType;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/ClientMutationCache;IZ)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/api/DfeApi;
-    .param p5    # Landroid/view/LayoutInflater;
-    .param p6    # Lcom/google/android/finsky/activities/TabbedAdapter$TabType;
-    .param p7    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p8    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p9    # I
-    .param p10    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -153,7 +143,6 @@
 
 .method private bindList(Landroid/widget/ListView;)V
     .locals 8
-    .param p1    # Landroid/widget/ListView;
 
     const/4 v2, 0x1
 
@@ -195,8 +184,6 @@
 
 .method private createBinder(Landroid/content/Context;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     new-instance v0, Lcom/google/android/finsky/fragments/BucketedListBinder;
 
@@ -432,7 +419,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
 
@@ -469,7 +455,6 @@
 
 .method public getView(I)Landroid/view/View;
     .locals 7
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ListTab;->mListTabWrapper:Landroid/view/ViewGroup;
 
@@ -557,7 +542,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ListTab;->syncViewToState()V
 
@@ -566,7 +550,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/ListTab;->mRestoreBundle:Landroid/os/Bundle;
 
@@ -635,7 +618,6 @@
 
 .method public setTabSelected(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/ListTab;->mIsCurrentlySelected:Z
 

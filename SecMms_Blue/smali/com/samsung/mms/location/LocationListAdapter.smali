@@ -36,9 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/mms/location/PlaceDBAdapter;Ljava/util/Vector;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/mms/location/PlaceDBAdapter;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +77,6 @@
 
 .method static synthetic access$000(Lcom/samsung/mms/location/LocationListAdapter;)Lcom/samsung/mms/location/PlaceDBAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationListAdapter;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationListAdapter;->mPlaceDBAdapter:Lcom/samsung/mms/location/PlaceDBAdapter;
 
@@ -89,7 +85,6 @@
 
 .method static synthetic access$100(Lcom/samsung/mms/location/LocationListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationListAdapter;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationListAdapter;->mContext:Landroid/content/Context;
 
@@ -100,9 +95,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 16
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 

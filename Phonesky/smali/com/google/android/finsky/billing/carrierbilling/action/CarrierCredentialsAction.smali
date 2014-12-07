@@ -22,7 +22,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/action/CarrierCredentialsAction;)Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/action/CarrierCredentialsAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierCredentialsAction;->mDcbStorage:Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -44,10 +42,6 @@
 # virtual methods
 .method public run(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # Ljava/lang/Runnable;
 
     invoke-static {}, Lcom/google/android/finsky/billing/BillingLocator;->createDcbApi()Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;
 

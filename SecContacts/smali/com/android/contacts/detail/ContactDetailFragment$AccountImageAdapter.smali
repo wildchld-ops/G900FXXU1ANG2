@@ -56,7 +56,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/detail/ContactDetailFragment;Landroid/content/Context;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -93,7 +92,6 @@
 
 .method static synthetic access$3700(Lcom/android/contacts/detail/ContactDetailFragment$AccountImageAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment$AccountImageAdapter;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment$AccountImageAdapter;->mAccountIntents:Ljava/util/ArrayList;
 
@@ -102,7 +100,6 @@
 
 .method static synthetic access$3800(Lcom/android/contacts/detail/ContactDetailFragment$AccountImageAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment$AccountImageAdapter;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment$AccountImageAdapter;->mContext:Landroid/content/Context;
 
@@ -125,7 +122,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -134,7 +130,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -143,9 +138,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v4, 0x0
 

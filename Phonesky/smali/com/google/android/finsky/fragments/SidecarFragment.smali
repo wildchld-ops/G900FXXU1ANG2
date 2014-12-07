@@ -59,9 +59,6 @@
 # virtual methods
 .method public addAndRestoreFromSavedState(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/FragmentManager;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p1}, Landroid/support/v4/app/FragmentManager;->beginTransaction()Landroid/support/v4/app/FragmentTransaction;
 
@@ -107,7 +104,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -146,7 +142,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -199,7 +194,6 @@
 
 .method protected restoreFromSavedInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -247,7 +241,6 @@
 
 .method public setListener(Lcom/google/android/finsky/fragments/SidecarFragment$Listener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/fragments/SidecarFragment$Listener;
 
     iput-object p1, p0, Lcom/google/android/finsky/fragments/SidecarFragment;->mListener:Lcom/google/android/finsky/fragments/SidecarFragment$Listener;
 
@@ -267,8 +260,6 @@
 
 .method protected setState(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 

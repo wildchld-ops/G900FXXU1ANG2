@@ -108,7 +108,6 @@
 
 .method public static addFgAppListeners(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -141,7 +140,6 @@
 
 .method public static addMode(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -339,7 +337,6 @@
 
 .method setPredictedSurfaceTemperatue(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "dev.ssrm.pst"
 
@@ -368,7 +365,6 @@
 
 .method setSsrmInitResult(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v1, "dev.ssrm.init"
 

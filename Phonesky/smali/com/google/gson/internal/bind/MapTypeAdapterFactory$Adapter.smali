@@ -64,9 +64,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/gson/internal/bind/MapTypeAdapterFactory;Lcom/google/gson/Gson;Ljava/lang/reflect/Type;Lcom/google/gson/TypeAdapter;Ljava/lang/reflect/Type;Lcom/google/gson/TypeAdapter;Lcom/google/gson/internal/ObjectConstructor;)V
     .locals 1
-    .param p2    # Lcom/google/gson/Gson;
-    .param p3    # Ljava/lang/reflect/Type;
-    .param p5    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,7 +104,6 @@
 
 .method private keyToString(Lcom/google/gson/JsonElement;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/google/gson/JsonElement;
 
     invoke-virtual {p1}, Lcom/google/gson/JsonElement;->isJsonPrimitive()Z
 
@@ -196,7 +192,6 @@
 # virtual methods
 .method public bridge synthetic read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -212,7 +207,6 @@
 
 .method public read(Lcom/google/gson/stream/JsonReader;)Ljava/util/Map;
     .locals 8
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -384,8 +378,6 @@
 
 .method public bridge synthetic write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -401,7 +393,6 @@
 
 .method public write(Lcom/google/gson/stream/JsonWriter;Ljava/util/Map;)V
     .locals 9
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

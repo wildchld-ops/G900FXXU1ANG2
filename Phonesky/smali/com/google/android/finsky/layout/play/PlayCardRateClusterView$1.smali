@@ -40,8 +40,6 @@
 # virtual methods
 .method public onRate(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView$1;->this$0:Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;
 

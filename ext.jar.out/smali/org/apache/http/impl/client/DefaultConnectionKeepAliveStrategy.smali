@@ -19,8 +19,6 @@
 # virtual methods
 .method public getKeepAliveDuration(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)J
     .locals 8
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     if-nez p1, :cond_0
 

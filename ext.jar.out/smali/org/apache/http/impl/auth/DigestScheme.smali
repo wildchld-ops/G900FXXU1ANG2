@@ -106,7 +106,6 @@
 
 .method private createDigest(Lorg/apache/http/auth/Credentials;)Ljava/lang/String;
     .locals 25
-    .param p1    # Lorg/apache/http/auth/Credentials;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -738,8 +737,6 @@
 
 .method private createDigestHeader(Lorg/apache/http/auth/Credentials;Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 15
-    .param p1    # Lorg/apache/http/auth/Credentials;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -1004,7 +1001,6 @@
 
 .method private static createMessageDigest(Ljava/lang/String;)Ljava/security/MessageDigest;
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/auth/UnsupportedDigestAlgorithmException;
@@ -1050,7 +1046,6 @@
 
 .method private static encode([B)Ljava/lang/String;
     .locals 7
-    .param p0    # [B
 
     const/16 v6, 0x10
 
@@ -1156,8 +1151,6 @@
 # virtual methods
 .method public authenticate(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;
     .locals 5
-    .param p1    # Lorg/apache/http/auth/Credentials;
-    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -1300,8 +1293,6 @@
 
 .method public overrideParamter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/auth/RFC2617Scheme;->getParameters()Ljava/util/Map;
 
@@ -1314,7 +1305,6 @@
 
 .method public processChallenge(Lorg/apache/http/Header;)V
     .locals 6
-    .param p1    # Lorg/apache/http/Header;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/MalformedChallengeException;

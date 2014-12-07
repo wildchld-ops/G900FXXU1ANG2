@@ -1372,7 +1372,7 @@ You can also show or hide the multi window handle by pressing and holding the ba
     <string name="usb_tethering_errored_subtext">USB tethering error</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB tethering cannot be disabled while using SideSync. Disabling USB tethering will disable SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB tethering cannot be enabled while using SideSync. Enabling USB tethering will disable SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth tethering</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth tethering</b></p></string>
     <string name="bluetooth_tethering_available_subtext">"Sharing this device's Internet connection…"</string>
     <string name="bluetooth_tethering_device_connected_subtext">"Device's Internet connection shared with 1 device"</string>
     <string name="bluetooth_tethering_devices_connected_subtext">"Device's Internet connection shared with %d devices"</string>

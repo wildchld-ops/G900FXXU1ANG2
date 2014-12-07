@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -90,9 +87,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -121,7 +115,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/SecKeyguardFlightModeView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardFlightModeView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardFlightModeView;->TAG:Ljava/lang/String;
 
@@ -130,7 +123,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/SecKeyguardFlightModeView;)Landroid/view/animation/ScaleAnimation;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardFlightModeView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardFlightModeView;->mScalseAnimationLanding:Landroid/view/animation/ScaleAnimation;
 
@@ -139,8 +131,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/SecKeyguardFlightModeView;Landroid/view/animation/ScaleAnimation;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardFlightModeView;
-    .param p1    # Landroid/view/animation/ScaleAnimation;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/SecKeyguardFlightModeView;->startFlightAnimation(Landroid/view/animation/ScaleAnimation;)V
 
@@ -149,7 +139,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/SecKeyguardFlightModeView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardFlightModeView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardFlightModeView;->mFlightModeIcon:Landroid/widget/ImageView;
 
@@ -158,7 +147,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/SecKeyguardFlightModeView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardFlightModeView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardFlightModeView;->mContext:Landroid/content/Context;
 
@@ -323,7 +311,6 @@
 
 .method private startFlightAnimation(Landroid/view/animation/ScaleAnimation;)V
     .locals 4
-    .param p1    # Landroid/view/animation/ScaleAnimation;
 
     if-nez p1, :cond_0
 
@@ -420,7 +407,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardFlightModeView;->mConfirmDialog:Landroid/app/AlertDialog;
 

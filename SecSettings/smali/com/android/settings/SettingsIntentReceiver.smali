@@ -1645,7 +1645,6 @@
 
 .method private checkVOLanguage(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1831,7 +1830,6 @@
 
 .method private isPreffered(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/ArrayList;
 

@@ -128,7 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/NotificationSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/NotificationSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/NotificationSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -137,7 +136,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/NotificationSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/NotificationSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/NotificationSettings;->setElementEnable()V
 
@@ -146,7 +144,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/NotificationSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/NotificationSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/NotificationSettings;->setVibrateMenu()V
 
@@ -155,7 +152,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/settings/NotificationSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/NotificationSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/NotificationSettings;->setPreferenceSummary()V
 
@@ -164,7 +160,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/settings/NotificationSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/settings/NotificationSettings;
 
     iget-boolean v0, p0, Lcom/android/mms/settings/NotificationSettings;->mIsSwitchCheckState:Z
 
@@ -173,8 +168,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/settings/NotificationSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/settings/NotificationSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/settings/NotificationSettings;->mIsSwitchCheckState:Z
 
@@ -183,7 +176,6 @@
 
 .method private extractNotificationSound(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const v5, 0x7f0c04f3
 
@@ -247,8 +239,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -485,7 +475,6 @@
 
 .method private setMessageRepetitionSummary(Landroid/content/SharedPreferences;)V
     .locals 10
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v9, 0x2
 
@@ -1301,7 +1290,6 @@
 
 .method private setQuickMenu(Landroid/content/SharedPreferences;)V
     .locals 7
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v6, 0x1
 
@@ -1656,7 +1644,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -1823,7 +1810,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0}, Lcom/android/mms/settings/NotificationSettings;->setNotificationPreference()V
 
@@ -1890,7 +1876,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -1965,7 +1950,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2027,8 +2011,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "pref_key_enable_notifications"
 
@@ -2050,7 +2032,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -2143,8 +2124,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "pref_key_msg_reminder_alert"
 

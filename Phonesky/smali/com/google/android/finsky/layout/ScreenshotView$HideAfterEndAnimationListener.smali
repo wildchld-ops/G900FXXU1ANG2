@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/layout/ScreenshotView;Lcom/google/android/finsky/layout/ScreenshotView$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/ScreenshotView;
-    .param p2    # Lcom/google/android/finsky/layout/ScreenshotView$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/ScreenshotView$HideAfterEndAnimationListener;-><init>(Lcom/google/android/finsky/layout/ScreenshotView;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotView$HideAfterEndAnimationListener;->this$0:Lcom/google/android/finsky/layout/ScreenshotView;
 
@@ -64,14 +61,12 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method

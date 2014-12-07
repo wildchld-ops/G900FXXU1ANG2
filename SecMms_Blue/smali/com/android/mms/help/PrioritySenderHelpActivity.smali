@@ -72,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/help/PrioritySenderHelpActivity;)Lcom/android/mms/help/TwHelpAnimatedDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/help/PrioritySenderHelpActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/PrioritySenderHelpActivity;->mHelpDialog:Lcom/android/mms/help/TwHelpAnimatedDialog;
 
@@ -81,8 +80,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/help/PrioritySenderHelpActivity;Lcom/android/mms/help/TwHelpAnimatedDialog;)Lcom/android/mms/help/TwHelpAnimatedDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/help/PrioritySenderHelpActivity;
-    .param p1    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iput-object p1, p0, Lcom/android/mms/help/PrioritySenderHelpActivity;->mHelpDialog:Lcom/android/mms/help/TwHelpAnimatedDialog;
 
@@ -348,7 +345,6 @@
 
 .method private updatePointerPosition(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -418,7 +414,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "Mms/PrioritySenderHelpActivity"
 
@@ -450,7 +445,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x1
 
@@ -705,7 +699,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 

@@ -47,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/PinEntryDialog;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/PinEntryDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/PinEntryDialog;->syncOkButtonState()V
 
@@ -56,11 +55,6 @@
 
 .method public static getIntent(Landroid/content/Context;IILjava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -109,7 +103,6 @@
 
 .method private setPinResult(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -174,7 +167,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, -0x1
 

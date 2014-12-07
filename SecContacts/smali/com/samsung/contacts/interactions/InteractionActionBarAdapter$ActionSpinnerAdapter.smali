@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;Landroid/content/Context;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$ActionSpinnerAdapter;->this$0:Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method protected getDisplayValue(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$ActionSpinnerAdapter;->this$0:Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 
@@ -161,9 +159,6 @@
 
 .method public getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const v3, 0x1020014
 
@@ -202,9 +197,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 

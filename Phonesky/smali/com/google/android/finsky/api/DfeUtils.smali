@@ -6,7 +6,6 @@
 # direct methods
 .method public static createDetailsUrlFromId(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -31,8 +30,6 @@
 
 .method public static formSearchUrl(Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     sget-object v1, Lcom/google/android/finsky/api/DfeApi;->SEARCH_CHANNEL_URI:Landroid/net/Uri;
 
@@ -69,7 +66,6 @@
 
 .method public static getLegacyErrorCode(Lcom/android/volley/VolleyError;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/volley/VolleyError;
 
     instance-of v0, p0, Lcom/android/volley/ServerError;
 
@@ -124,8 +120,6 @@
 
 .method public static isSameDocumentDetailsUrl(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 

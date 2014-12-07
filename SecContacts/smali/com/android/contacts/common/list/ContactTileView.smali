@@ -66,8 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/common/list/ContactTileView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileView;->mContext:Landroid/content/Context;
 
@@ -89,7 +86,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/common/list/ContactTileView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileView;->mContext:Landroid/content/Context;
 
@@ -98,7 +94,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/common/list/ContactTileView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileView;->mPushState:Landroid/view/View;
 
@@ -107,7 +102,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/common/list/ContactTileView;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileView;->mGridCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -116,7 +110,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/common/list/ContactTileView;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileView;->mListCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -247,9 +240,6 @@
 
 .method public loadFromContact(Lcom/android/contacts/common/list/ContactTileAdapter$ContactEntry;IZ)V
     .locals 11
-    .param p1    # Lcom/android/contacts/common/list/ContactTileAdapter$ContactEntry;
-    .param p2    # I
-    .param p3    # Z
 
     if-eqz p1, :cond_e
 
@@ -816,7 +806,6 @@
 
 .method public setHorizontalDividerVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileView;->mHorizontalDivider:Landroid/view/View;
 
@@ -832,7 +821,6 @@
 
 .method public setItemSelected(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -875,7 +863,6 @@
 
 .method public setListener(Lcom/android/contacts/common/list/ContactTileView$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactTileView$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactTileView;->mListener:Lcom/android/contacts/common/list/ContactTileView$Listener;
 
@@ -884,7 +871,6 @@
 
 .method public setPhotoManager(Lcom/android/contacts/common/ContactPhotoManager;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/ContactPhotoManager;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactTileView;->mPhotoManager:Lcom/android/contacts/common/ContactPhotoManager;
 

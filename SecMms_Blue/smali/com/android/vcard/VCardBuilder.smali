@@ -211,7 +211,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -222,8 +221,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -938,7 +935,6 @@
 
 .method private appendPhoneticNameFields(Landroid/content/ContentValues;)V
     .locals 14
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v12, "data9"
 
@@ -2017,7 +2013,6 @@
 
 .method private appendTypeParameter(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/vcard/VCardBuilder;->mBuilder:Ljava/lang/StringBuilder;
 
@@ -2028,8 +2023,6 @@
 
 .method private appendTypeParameter(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/vcard/VCardBuilder;->mVCardType:I
 
@@ -2202,8 +2195,6 @@
 
 .method private appendUncommonPhoneType(Ljava/lang/StringBuilder;Ljava/lang/Integer;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/Integer;
 
     iget-boolean v1, p0, Lcom/android/vcard/VCardBuilder;->mIsDoCoMo:Z
 
@@ -2255,8 +2246,6 @@
 
 .method private buildSinglePartNameField(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -2355,7 +2344,6 @@
 
 .method private containsNonEmptyName(Landroid/content/ContentValues;)Z
     .locals 10
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v9, "data3"
 
@@ -2479,7 +2467,6 @@
 
 .method private encodeQuotedPrintable(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2611,7 +2598,6 @@
 
 .method private escapeCharacters(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/16 v6, 0x5c
 
@@ -2863,7 +2849,6 @@
 
 .method private varargs shouldAppendCharsetParam([Ljava/lang/String;)Z
     .locals 7
-    .param p1    # [Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -2911,7 +2896,6 @@
 
 .method private splitPhoneNumbers(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2994,7 +2978,6 @@
 
 .method private tryConstructPostalStruct(Landroid/content/ContentValues;)Lcom/android/vcard/VCardBuilder$PostalStruct;
     .locals 26
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v24, "data5"
 
@@ -3693,8 +3676,6 @@
 # virtual methods
 .method public appendAndroidSpecificProperty(Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v8, 0x1
 
@@ -3894,10 +3875,6 @@
 
 .method public appendEmailLine(ILjava/lang/String;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     packed-switch p1, :pswitch_data_0
 
@@ -4732,8 +4709,6 @@
 
 .method public appendLine(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4744,10 +4719,6 @@
 
 .method public appendLine(Ljava/lang/String;Ljava/lang/String;ZZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -4768,7 +4739,6 @@
 
 .method public appendLine(Ljava/lang/String;Ljava/util/List;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4789,8 +4759,6 @@
 
 .method public appendLine(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4823,10 +4791,6 @@
 
 .method public appendLine(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;ZZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4932,9 +4896,6 @@
 
 .method public appendLine(Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5072,9 +5033,6 @@
 
 .method public appendLine(Ljava/lang/String;Ljava/util/List;ZZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5105,8 +5063,6 @@
 
 .method public appendLineWithCharsetAndQPDetection(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -5117,7 +5073,6 @@
 
 .method public appendLineWithCharsetAndQPDetection(Ljava/lang/String;Ljava/util/List;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5138,8 +5093,6 @@
 
 .method public appendLineWithCharsetAndQPDetection(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5212,7 +5165,6 @@
 
 .method public appendLineWithCharsetAndQPDetection(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7322,7 +7274,6 @@
 
 .method public appendPhones(Ljava/util/List;Lcom/android/vcard/VCardPhoneNumberTranslationCallback;)Lcom/android/vcard/VCardBuilder;
     .locals 29
-    .param p2    # Lcom/android/vcard/VCardPhoneNumberTranslationCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7793,8 +7744,6 @@
 
 .method public appendPhotoLine(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -8008,11 +7957,6 @@
 
 .method public appendPostalLine(ILjava/lang/String;Landroid/content/ContentValues;ZZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-direct {p0, p3}, Lcom/android/vcard/VCardBuilder;->tryConstructPostalStruct(Landroid/content/ContentValues;)Lcom/android/vcard/VCardBuilder$PostalStruct;
 
@@ -8495,10 +8439,6 @@
 
 .method public appendTelLine(Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 10
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v9, 0x2
 

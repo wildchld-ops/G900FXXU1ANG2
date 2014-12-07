@@ -80,12 +80,6 @@
 
 .method static synthetic access$500(Lcom/google/android/play/layout/PlayPopupMenu;Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p0    # Lcom/google/android/play/layout/PlayPopupMenu;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/accounts/Account;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static/range {p0 .. p5}, Lcom/google/android/finsky/utils/PlayCardUtils;->configureActions(Lcom/google/android/play/layout/PlayPopupMenu;Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
 
@@ -94,7 +88,6 @@
 
 .method static synthetic access$600(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/PlayCardUtils;->convertCardTypeToUiElementType(I)I
 
@@ -105,11 +98,6 @@
 
 .method public static bindCard(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 10
-    .param p0    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v5, 0x0
 
@@ -138,16 +126,6 @@
 
 .method public static bindCard(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;ZLcom/google/android/finsky/utils/WishlistHelper$WishlistStatusListener;Lcom/google/android/finsky/layout/play/PlayCardDismissListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;ZI)V
     .locals 30
-    .param p0    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Z
-    .param p5    # Lcom/google/android/finsky/utils/WishlistHelper$WishlistStatusListener;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p8    # Z
-    .param p9    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -662,10 +640,6 @@
 
 .method private static bindCardReasons(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 14
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     invoke-virtual {p1}, Lcom/google/android/play/layout/PlayCardViewBase;->getReason1()Lcom/google/android/play/layout/PlayCardReason;
 
@@ -826,12 +800,6 @@
 
 .method private static bindReason(Lcom/google/android/play/layout/PlayCardReason;Lcom/google/android/finsky/protos/DocumentV2$Reason;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;ILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 23
-    .param p0    # Lcom/google/android/play/layout/PlayCardReason;
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$Reason;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # I
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     if-nez p1, :cond_0
 
@@ -1492,10 +1460,6 @@
 
 .method private static bindReasonUser(Lcom/google/android/finsky/layout/FifeImageView;Lcom/google/android/finsky/protos/DocumentV2$DocV2;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/FifeImageView;
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$DocV2;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Lcom/google/android/finsky/utils/PlayCardUtils$7;
 
@@ -1508,12 +1472,6 @@
 
 .method private static configureActions(Lcom/google/android/play/layout/PlayPopupMenu;Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 18
-    .param p0    # Lcom/google/android/play/layout/PlayPopupMenu;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/accounts/Account;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -1691,13 +1649,6 @@
 
 .method private static configureOverflowView(Lcom/google/android/play/layout/PlayCardViewBase;Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/WishlistHelper$WishlistStatusListener;Lcom/google/android/finsky/layout/play/PlayCardDismissListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 9
-    .param p0    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/utils/WishlistHelper$WishlistStatusListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1728,7 +1679,6 @@
 
 .method private static convertCardTypeToUiElementType(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1845,7 +1795,6 @@
 
 .method private static getDocDisplaySubtitle(Lcom/google/android/finsky/api/model/Document;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v0, 0x0
 
@@ -1982,7 +1931,6 @@
 
 .method public static resetLoggingData(Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 3
-    .param p0    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     invoke-virtual {p0}, Lcom/google/android/play/layout/PlayCardViewBase;->getLoggingData()Ljava/lang/Object;
 
@@ -2011,8 +1959,6 @@
 
 .method private static setLoggingDataIfNecessary(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-virtual {p0}, Lcom/google/android/play/layout/PlayCardViewBase;->getLoggingData()Ljava/lang/Object;
 
@@ -2039,8 +1985,6 @@
 
 .method private static updateContentDescription(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 12
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     const/4 v7, 0x0
 
@@ -2177,8 +2121,6 @@
 
 .method private static declared-synchronized updatePriceLabel(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 13
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     const/4 v11, 0x0
 

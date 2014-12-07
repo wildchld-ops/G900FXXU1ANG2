@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -33,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x1
 
@@ -146,8 +143,6 @@
 # virtual methods
 .method public configure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -218,7 +213,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 

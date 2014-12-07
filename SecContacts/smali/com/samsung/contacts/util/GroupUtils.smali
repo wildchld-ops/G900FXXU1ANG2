@@ -14,8 +14,6 @@
 
 .method public static generateGroupMemberFilterUriBuilder(Lcom/samsung/contacts/group/GroupInfo;I)Landroid/net/Uri$Builder;
     .locals 6
-    .param p0    # Lcom/samsung/contacts/group/GroupInfo;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -351,8 +349,6 @@
 
 .method public static generateGroupMemberUri(Lcom/samsung/contacts/group/GroupInfo;I)Landroid/net/Uri;
     .locals 5
-    .param p0    # Lcom/samsung/contacts/group/GroupInfo;
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/samsung/contacts/group/GroupInfo;->getTitle()Ljava/lang/String;
 
@@ -561,8 +557,6 @@
 
 .method public static getGroupTitle(Landroid/content/Context;Landroid/database/Cursor;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
 
     if-nez p1, :cond_1
 
@@ -702,7 +696,6 @@
 
 .method public static getMonthNameFormat(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -768,8 +761,6 @@
 
 .method public static getSectionTitle(Landroid/content/Context;Landroid/database/Cursor;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
 
     if-nez p1, :cond_0
 
@@ -851,7 +842,6 @@
 
 .method public static getSystemTitleRes(Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const v4, 0x7f0e028c
 
@@ -1162,7 +1152,6 @@
 
 .method public static isGroupEditable(Lcom/samsung/contacts/group/GroupInfo;)Z
     .locals 5
-    .param p0    # Lcom/samsung/contacts/group/GroupInfo;
 
     if-nez p0, :cond_1
 
@@ -1235,7 +1224,6 @@
 
 .method public static isIceGroupAvailable(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -1317,7 +1305,6 @@
 
 .method public static isKnoxReadOnlyGroup(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PersonalGroup"
 
@@ -1330,8 +1317,6 @@
 
 .method public static parseGroupType(Lcom/samsung/contacts/group/GroupInfo;Landroid/content/Context;)I
     .locals 6
-    .param p0    # Lcom/samsung/contacts/group/GroupInfo;
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v4, 0x0
 

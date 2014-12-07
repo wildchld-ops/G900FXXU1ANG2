@@ -27,10 +27,6 @@
 
 .method private buildItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -67,9 +63,6 @@
 # virtual methods
 .method public buildManageItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "android.intent.action.VIEW"
 
@@ -82,8 +75,6 @@
 
 .method public buildViewCollectionIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -106,9 +97,6 @@
 
 .method public buildViewItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p2}, Lcom/google/android/finsky/api/model/Document;->getAppDetails()Lcom/google/android/finsky/protos/DocDetails$AppDetails;
 

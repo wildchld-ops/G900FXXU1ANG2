@@ -297,8 +297,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/CallCardFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardFragment;->manageVoiceRecordingPopup(I)V
 
@@ -307,7 +305,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/CallCardFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/CallCardFragment;->destroyImageCache()V
 
@@ -316,7 +313,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/CallCardFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/CallCardFragment;->setCallCardAnimation()V
 
@@ -325,7 +321,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/CallCardFragment;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardFragment;
 
     iget v0, p0, Lcom/android/incallui/CallCardFragment;->mCurrentPeriodMarkIndex:I
 
@@ -334,8 +329,6 @@
 
 .method static synthetic access$302(Lcom/android/incallui/CallCardFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/CallCardFragment;->mCurrentPeriodMarkIndex:I
 
@@ -344,7 +337,6 @@
 
 .method static synthetic access$308(Lcom/android/incallui/CallCardFragment;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/CallCardFragment;
 
     iget v0, p0, Lcom/android/incallui/CallCardFragment;->mCurrentPeriodMarkIndex:I
 
@@ -357,7 +349,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/CallCardFragment;)[I
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardFragment;->mPeriodMarkList:[I
 
@@ -366,7 +357,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/CallCardFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardFragment;->mPeriodMark:Landroid/widget/ImageView;
 
@@ -396,8 +386,6 @@
 
 .method private dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
-    .param p2    # Landroid/view/View;
 
     if-nez p2, :cond_1
 
@@ -1724,7 +1712,6 @@
 
 .method private setupInCallPopupMenu(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "setupInCallPopupMenu()"
 
@@ -1875,15 +1862,12 @@
 # virtual methods
 .method public accessibilityCallCard(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public changeVideoLocation(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
@@ -1995,7 +1979,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
@@ -2046,7 +2029,6 @@
 
 .method public displayManageConferencePanel(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -2076,7 +2058,6 @@
 
 .method public enableCallerInfoCard(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -3265,7 +3246,6 @@
 
 .method public getIconForLabel(I)I
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3385,7 +3365,6 @@
 
 .method public getSurfaceViewHeight(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3394,7 +3373,6 @@
 
 .method public getSurfaceViewWidth(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3425,7 +3403,6 @@
 
 .method public infoVoiceRecording(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x82
 
@@ -3868,8 +3845,6 @@
 
 .method public manageAddCall(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     return-void
 .end method
@@ -3999,7 +3974,6 @@
 
 .method manageCallEndTimeBlink(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x64
 
@@ -4047,7 +4021,6 @@
 
 .method manageCardName(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/CallCardFragment;->mCardSubscriber:Landroid/widget/TextView;
 
@@ -4090,7 +4063,6 @@
 
 .method manageElapsedTimeTitle(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x9
 
@@ -4137,10 +4109,6 @@
 
 .method public manageHoldBtn(ZZZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     return-void
 .end method
@@ -4280,7 +4248,6 @@
 
 .method managePhoneNumberLocator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/CallCardFragment;->mPhoneNumberLocator:Landroid/widget/TextView;
 
@@ -4407,8 +4374,6 @@
 
 .method public manageSecondaryControlBtn(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     return-void
 .end method
@@ -4678,7 +4643,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -4703,7 +4667,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -4820,7 +4783,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -4829,9 +4791,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -5967,7 +5926,6 @@
 
 .method public setCardName(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, ""
 
@@ -6037,8 +5995,6 @@
 
 .method protected setDrawableToImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -6169,8 +6125,6 @@
 
 .method public setEriInfo(Lcom/android/services/telephony/common/Call;I)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # I
 
     const/16 v2, 0x8
 
@@ -6230,14 +6184,12 @@
 
 .method public setIncomingHideButton(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setLineControlEvent(B)V
     .locals 1
-    .param p1    # B
 
     const/4 v0, 0x1
 
@@ -6258,17 +6210,6 @@
 
 .method public setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/graphics/drawable/Drawable;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
 
     const-string v2, "Setting primary call"
 
@@ -6376,9 +6317,6 @@
 
 .method public setPrimaryCallElapsedTime(ZLjava/lang/String;J)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -6447,15 +6385,12 @@
 
 .method public setPrimaryCdnipNumber(ZLjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setPrimaryCityId(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "ecid_enable"
 
@@ -6537,16 +6472,12 @@
 
 .method public setPrimaryCnapName(ZLjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setPrimaryImage(Landroid/graphics/drawable/Drawable;Z)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     if-eqz p1, :cond_1
 
@@ -6589,7 +6520,6 @@
 
 .method public setPrimaryLabel(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -6631,7 +6561,6 @@
 
 .method public setPrimaryLabelAsImage(I)V
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_1
 
@@ -6673,8 +6602,6 @@
 
 .method public setPrimaryName(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -6841,7 +6768,6 @@
 
 .method public setPrimaryPhoneNumber(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -6960,7 +6886,6 @@
 
 .method public setPrimaryPhoneNumberLocator(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -6996,7 +6921,6 @@
 
 .method public setPrimaryPhotoVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardFragment;->mPhoto:Landroid/widget/ImageView;
 
@@ -7024,7 +6948,6 @@
 
 .method public setPrimarySimIconLabel(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -7050,7 +6973,6 @@
 
 .method public setPrimaryVisible(Z)V
     .locals 5
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -7105,29 +7027,18 @@
 
 .method public setSecondCallElapsedTime(ZLjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setSecondCallElapsedTimeEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setSecondary(ZLjava/lang/String;ZLjava/lang/String;Landroid/graphics/drawable/Drawable;ZZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/graphics/drawable/Drawable;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
 
     const/16 v3, 0x8
 
@@ -7303,8 +7214,6 @@
 
 .method public setSecondaryImage(Landroid/graphics/drawable/Drawable;Z)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     if-eqz p1, :cond_1
 
@@ -7468,7 +7377,6 @@
 
 .method public setUpInCallMenu(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const-string v0, "setUpInCallMenu()"
 
@@ -7498,7 +7406,6 @@
 
 .method public setVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
 
@@ -7536,7 +7443,6 @@
 
 .method public setVisibleCameraPreview(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -7720,15 +7626,12 @@
 
 .method public showCallerInfoCard(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public showExtraVolButton(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -7741,7 +7644,6 @@
 
 .method public showFarEndRecordingInfo(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -7827,21 +7729,18 @@
 
 .method public showHDIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showHDVoiceCallIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showHDVoiceIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -7886,14 +7785,12 @@
 
 .method public showIncomingHideButton(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showIncomingMsgForInternationalCall(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/CallCardFragment;->mIntCallInfo:Landroid/widget/TextView;
 
@@ -7927,8 +7824,6 @@
 
 .method public showIncomingPopupForSecondCall(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -8010,7 +7905,6 @@
 
 .method public showModifyCall(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -8023,21 +7917,18 @@
 
 .method public showNearEndRecordingInfo(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showWebEx(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public startCallCardAnimation(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -8494,16 +8385,12 @@
 
 .method public updateCallerInfoCard(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p3    # Z
 
     return-void
 .end method
 
 .method public updateConfUI(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -8516,7 +8403,6 @@
 
 .method public updateFarEndPreparingAnimationImage(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -8784,8 +8670,6 @@
 
 .method public updatePhotoringState(Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;I)V
     .locals 0
-    .param p1    # Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
-    .param p2    # I
 
     return-void
 .end method

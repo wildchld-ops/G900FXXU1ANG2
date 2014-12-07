@@ -214,7 +214,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -237,8 +236,6 @@
 
 .method private static concatSelections(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -300,7 +297,6 @@
 
 .method public delete(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/widget/NoticeDBControl;->mHelper:Lcom/android/mms/widget/NoticeDBHelper;
 
@@ -323,8 +319,6 @@
 
 .method public deletedSort(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -442,7 +436,6 @@
 
 .method public getContactId(Ljava/lang/String;)J
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -585,7 +578,6 @@
 
 .method public getThreadId(Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/util/HashSet;
 
@@ -606,7 +598,6 @@
 
 .method public idQuery(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -757,7 +748,6 @@
 
 .method public insert(Landroid/content/ContentValues;)J
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
 
     iget-object v1, p0, Lcom/android/mms/widget/NoticeDBControl;->mHelper:Lcom/android/mms/widget/NoticeDBHelper;
 
@@ -780,8 +770,6 @@
 
 .method public priorityQuery(Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -912,7 +900,6 @@
 
 .method public queryMmsBody(I)Ljava/lang/String;
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -1053,7 +1040,6 @@
 
 .method public queryReceiveMessage(J)Landroid/database/Cursor;
     .locals 6
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1150,8 +1136,6 @@
 
 .method public queryReceiveMessage(JI)Landroid/database/Cursor;
     .locals 7
-    .param p1    # J
-    .param p3    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1424,8 +1408,6 @@
 
 .method public update(Landroid/content/ContentValues;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/widget/NoticeDBControl;->mHelper:Lcom/android/mms/widget/NoticeDBHelper;
 
@@ -1448,8 +1430,6 @@
 
 .method public updatePriority(Landroid/content/ContentValues;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Landroid/provider/Telephony$MmsSms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -1530,8 +1510,6 @@
 
 .method public widgetid_update(Landroid/content/ContentValues;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/widget/NoticeDBControl;->mHelper:Lcom/android/mms/widget/NoticeDBHelper;
 

@@ -76,7 +76,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/AddonServiceInternal;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/AddonServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AddonServiceInternal;->addonList:Ljava/util/List;
 
@@ -128,7 +126,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/AddonServiceInternal;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/AddonServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AddonServiceInternal;->currentAddonDownloads:Ljava/util/Map;
 
@@ -137,7 +134,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/AddonServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/AddonServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AddonServiceInternal;->persistAddonList()V
 
@@ -146,7 +142,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/AddonServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/AddonServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AddonServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -163,7 +158,6 @@
 
 .method private getAddonList(Ljava/lang/String;)Ljava/util/List;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -522,7 +516,6 @@
 
 .method private setAddonList(Ljava/util/List;Ljava/lang/String;)V
     .locals 8
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -951,7 +944,6 @@
 
 .method public installAddon(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

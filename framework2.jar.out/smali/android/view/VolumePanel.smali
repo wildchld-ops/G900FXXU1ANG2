@@ -258,8 +258,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/media/AudioService;)V
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/AudioService;
 
     invoke-direct/range {p0 .. p0}, Landroid/os/Handler;-><init>()V
 
@@ -954,7 +952,6 @@
 
 .method static synthetic access$102(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Landroid/view/VolumePanel;->sConfirmSafeVolumeDialog:Landroid/app/AlertDialog;
 
@@ -963,7 +960,6 @@
 
 .method static synthetic access$200(Landroid/view/VolumePanel;)V
     .locals 0
-    .param p0    # Landroid/view/VolumePanel;
 
     invoke-direct {p0}, Landroid/view/VolumePanel;->forceTimeout()V
 
@@ -980,7 +976,6 @@
 
 .method static synthetic access$400(Landroid/view/VolumePanel;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Landroid/view/VolumePanel;
 
     iget-object v0, p0, Landroid/view/VolumePanel;->mDialog:Landroid/app/Dialog;
 
@@ -989,7 +984,6 @@
 
 .method static synthetic access$500(Landroid/view/VolumePanel;)Z
     .locals 1
-    .param p0    # Landroid/view/VolumePanel;
 
     iget-boolean v0, p0, Landroid/view/VolumePanel;->mIsShowingSCoverWarning:Z
 
@@ -998,8 +992,6 @@
 
 .method static synthetic access$502(Landroid/view/VolumePanel;Z)Z
     .locals 0
-    .param p0    # Landroid/view/VolumePanel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/VolumePanel;->mIsShowingSCoverWarning:Z
 
@@ -1008,7 +1000,6 @@
 
 .method static synthetic access$600(Landroid/view/VolumePanel;)V
     .locals 0
-    .param p0    # Landroid/view/VolumePanel;
 
     invoke-direct {p0}, Landroid/view/VolumePanel;->resetTimeout()V
 
@@ -1017,7 +1008,6 @@
 
 .method static synthetic access$700(Landroid/view/VolumePanel;)I
     .locals 1
-    .param p0    # Landroid/view/VolumePanel;
 
     iget v0, p0, Landroid/view/VolumePanel;->mActiveStreamType:I
 
@@ -1026,8 +1016,6 @@
 
 .method static synthetic access$702(Landroid/view/VolumePanel;I)I
     .locals 0
-    .param p0    # Landroid/view/VolumePanel;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/VolumePanel;->mActiveStreamType:I
 
@@ -1036,7 +1024,6 @@
 
 .method static synthetic access$800(Landroid/view/VolumePanel;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Landroid/view/VolumePanel;
 
     iget-object v0, p0, Landroid/view/VolumePanel;->mAudioManager:Landroid/media/AudioManager;
 
@@ -2088,7 +2075,6 @@
 
 .method private getOrCreateToneGenerator(I)Landroid/media/ToneGenerator;
     .locals 4
-    .param p1    # I
 
     const/16 v1, -0x64
 
@@ -2182,7 +2168,6 @@
 
 .method private getStreamMaxVolume(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x64
 
@@ -2222,7 +2207,6 @@
 
 .method private getStreamVolume(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x64
 
@@ -2262,7 +2246,6 @@
 
 .method private initCoverManager(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Landroid/view/VolumePanel;->mContext:Landroid/content/Context;
 
@@ -2308,7 +2291,6 @@
 
 .method private isMuted(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x64
 
@@ -2446,7 +2428,6 @@
 
 .method private reorderSliders(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0x8
 
@@ -2646,8 +2627,6 @@
 
 .method private setMusicIcon(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/view/VolumePanel;->mStreamControls:Ljava/util/HashMap;
 
@@ -2733,9 +2712,6 @@
 
 .method private setStreamVolume(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, -0x64
 
@@ -2769,7 +2745,6 @@
 
 .method private updateSlider(Landroid/view/VolumePanel$StreamControl;)V
     .locals 7
-    .param p1    # Landroid/view/VolumePanel$StreamControl;
 
     const v6, 0x108046b
 
@@ -3113,7 +3088,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -3620,7 +3594,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/VolumePanel;->mMoreButton:Landroid/view/View;
 
@@ -3698,7 +3671,6 @@
 
 .method protected onDisplaySafeVolumeWarning(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x5
 
@@ -4089,8 +4061,6 @@
 
 .method protected onMuteChanged(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v1, Landroid/view/VolumePanel;->LOGD:Z
 
@@ -4177,8 +4147,6 @@
 
 .method protected onPlaySound(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x3
 
@@ -4357,9 +4325,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 5
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -4520,8 +4485,6 @@
 
 .method protected onRemoteVolumeChanged(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -4719,8 +4682,6 @@
 
 .method protected onShowVolumeChanged(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/16 v11, 0x8
 
@@ -5151,8 +5112,6 @@
 
 .method protected declared-synchronized onSliderVisibilityChanged(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -5261,7 +5220,6 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 3
-    .param p1    # Landroid/widget/SeekBar;
 
     sget-boolean v0, Landroid/view/VolumePanel;->LOGD:Z
 
@@ -5397,7 +5355,6 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 5
-    .param p1    # Landroid/widget/SeekBar;
 
     const/16 v4, -0xc8
 
@@ -5466,8 +5423,6 @@
 
 .method protected onVolumeChanged(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -5858,7 +5813,6 @@
 
 .method public postDisplaySafeVolumeWarning(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v1, 0xb
 
@@ -5909,7 +5863,6 @@
 
 .method public postMasterMuteChanged(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x64
 
@@ -5920,7 +5873,6 @@
 
 .method public postMasterVolumeChanged(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x64
 
@@ -5931,8 +5883,6 @@
 
 .method public postMuteChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -5987,7 +5937,6 @@
 
 .method public postRemoteSliderVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v1, 0xa
 
@@ -6014,8 +5963,6 @@
 
 .method public postRemoteVolumeChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/16 v1, 0x8
 
@@ -6068,8 +6015,6 @@
 
 .method public postVolumeChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -6146,7 +6091,6 @@
 
 .method public setLayoutDirection(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/VolumePanel;->mPanel:Landroid/view/ViewGroup;
 
@@ -6159,7 +6103,6 @@
 
 .method public setSeekbarSlidingAnimation(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v3, p0, Landroid/view/VolumePanel;->mSliderGroup:Landroid/view/ViewGroup;
 

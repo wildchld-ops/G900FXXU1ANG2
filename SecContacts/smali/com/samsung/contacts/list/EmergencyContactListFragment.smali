@@ -52,7 +52,6 @@
 
 .method private callToEmergencyServiceContact(J)V
     .locals 13
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -196,7 +195,6 @@
 
 .method private callToNormalContact(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     if-nez p1, :cond_0
 
@@ -238,7 +236,6 @@
 
 .method public createCursorLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/samsung/contacts/list/EmergencyAndContactsLoader;
 
@@ -285,8 +282,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v0, 0x7f03004e
 
@@ -301,8 +296,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
 
@@ -372,8 +365,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/list/EmergencyContactListFragment;->getAdapter()Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -474,7 +465,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 4
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -546,8 +536,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -564,15 +552,12 @@
 
 .method protected setUnavailableVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->showCount(ILandroid/database/Cursor;)V
 

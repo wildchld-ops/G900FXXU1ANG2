@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;Lcom/samsung/contacts/interactions/InteractionContactTileListFragment$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
-    .param p2    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment$SelectAllTaskContacts;-><init>(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 4
-    .param p1    # [Ljava/lang/Boolean;
 
     const/4 v2, 0x0
 
@@ -89,7 +86,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Boolean;
 
@@ -102,7 +98,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 3
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v2, 0x0
 
@@ -137,7 +132,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

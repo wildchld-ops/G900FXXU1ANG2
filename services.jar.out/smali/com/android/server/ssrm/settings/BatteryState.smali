@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,7 +94,6 @@
 
 .method public compareTo(Lcom/android/server/ssrm/settings/BatteryState;)I
     .locals 2
-    .param p1    # Lcom/android/server/ssrm/settings/BatteryState;
 
     iget v0, p0, Lcom/android/server/ssrm/settings/BatteryState;->mTemperature:I
 
@@ -108,7 +106,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/ssrm/settings/BatteryState;
 
@@ -121,7 +118,6 @@
 
 .method setActive(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/ssrm/settings/BatteryState;->mActive:Z
 
@@ -143,7 +139,6 @@
 
 .method public setListener(Lcom/android/server/ssrm/settings/BatteryState$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/settings/BatteryState$Listener;
 
     iput-object p1, p0, Lcom/android/server/ssrm/settings/BatteryState;->mListener:Lcom/android/server/ssrm/settings/BatteryState$Listener;
 

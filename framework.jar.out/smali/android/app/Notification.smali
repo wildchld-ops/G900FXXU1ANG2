@@ -318,9 +318,6 @@
 
 .method public constructor <init>(ILjava/lang/CharSequence;J)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -367,13 +364,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;JLjava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # J
-    .param p6    # Ljava/lang/CharSequence;
-    .param p7    # Ljava/lang/CharSequence;
-    .param p8    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -424,7 +414,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -848,8 +837,6 @@
 
 .method static synthetic access$202(Landroid/app/Notification;Ljava/util/Map;)Ljava/util/Map;
     .locals 0
-    .param p0    # Landroid/app/Notification;
-    .param p1    # Ljava/util/Map;
 
     iput-object p1, p0, Landroid/app/Notification;->stringNamesMap:Ljava/util/Map;
 
@@ -858,7 +845,6 @@
 
 .method public static safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
 
     instance-of v0, p0, Landroid/os/Parcelable;
 
@@ -941,8 +927,6 @@
 
 .method public cloneInto(Landroid/app/Notification;Z)V
     .locals 10
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -1288,7 +1272,6 @@
 
 .method public setKnoxFlag(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/app/Notification;->knoxFlags:I
 
@@ -1301,10 +1284,6 @@
 
 .method public setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Landroid/app/PendingIntent;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1370,7 +1349,6 @@
 
 .method public setOriginalPackageName(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/app/Notification;->originalPackageName:Ljava/lang/CharSequence;
 
@@ -1379,7 +1357,6 @@
 
 .method public setUser(Landroid/os/UserHandle;)V
     .locals 2
-    .param p1    # Landroid/os/UserHandle;
 
     invoke-virtual {p1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -1928,8 +1905,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v6, 0x1
 

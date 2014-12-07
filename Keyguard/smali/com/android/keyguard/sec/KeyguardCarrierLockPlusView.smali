@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -64,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -176,7 +173,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mHandler:Landroid/os/Handler;
 
@@ -185,7 +181,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -194,7 +189,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mCallButton:Landroid/widget/Button;
 
@@ -203,7 +197,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mMccInfo:Ljava/lang/String;
 
@@ -212,8 +205,6 @@
 
 .method static synthetic access$302(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mMccInfo:Ljava/lang/String;
 
@@ -222,8 +213,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->updateButtonVisibility(I)V
 
@@ -232,7 +221,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mPhoneNumber:Ljava/lang/String;
 
@@ -241,7 +229,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mContext:Landroid/content/Context;
 
@@ -250,7 +237,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -259,8 +245,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->handleTimeout(I)V
 
@@ -269,7 +253,6 @@
 
 .method private handleTimeout(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -305,7 +288,6 @@
 
 .method private updateButtonVisibility(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -448,7 +430,6 @@
 # virtual methods
 .method public hideBouncer(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
@@ -812,14 +793,12 @@
 
 .method public onResume(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -828,7 +807,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -837,7 +815,6 @@
 
 .method public showBouncer(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockPlusView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 

@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/android/volley/Response$ErrorListener;Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadStatsRequest;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
-    .param p3    # Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadStatsRequest;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/vending/verifier/api/BaseVerificationRequest;-><init>(Ljava/lang/String;Lcom/android/volley/Response$ErrorListener;Lcom/google/protobuf/nano/MessageNano;)V
 
@@ -31,14 +28,12 @@
 # virtual methods
 .method protected deliverResponse(Lcom/android/volley/NetworkResponse;)V
     .locals 0
-    .param p1    # Lcom/android/volley/NetworkResponse;
 
     return-void
 .end method
 
 .method protected bridge synthetic deliverResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/volley/NetworkResponse;
 
@@ -49,7 +44,6 @@
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 1
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

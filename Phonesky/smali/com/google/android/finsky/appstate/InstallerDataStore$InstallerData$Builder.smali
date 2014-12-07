@@ -37,8 +37,6 @@
 
 .method public static buildUpon(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
 
@@ -158,7 +156,6 @@
 
 .method public setAccountForUpdate(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -170,7 +167,6 @@
 
 .method public setAccountName(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -182,7 +178,6 @@
 
 .method public setAutoAcquireTags([Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -194,7 +189,6 @@
 
 .method public setAutoUpdate(Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -206,7 +200,6 @@
 
 .method public setContinueUrl(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -218,8 +211,6 @@
 
 .method public setDeliveryData(Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;J)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -236,7 +227,6 @@
 
 .method public setDesiredVersion(I)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -248,7 +238,6 @@
 
 .method public setDownloadUri(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -260,7 +249,6 @@
 
 .method public setExternalReferrer(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -272,7 +260,6 @@
 
 .method public setFirstDownloadMs(J)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -284,7 +271,6 @@
 
 .method public setFlags(I)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -296,7 +282,6 @@
 
 .method public setInstallerState(I)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -308,7 +293,6 @@
 
 .method public setLastNotifiedVersion(I)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -320,7 +304,6 @@
 
 .method public setLastUpdateTimestampMS(J)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -332,7 +315,6 @@
 
 .method public setPackageName(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -344,7 +326,6 @@
 
 .method public setTitle(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData$Builder;->mInstance:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 

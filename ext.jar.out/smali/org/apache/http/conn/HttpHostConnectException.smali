@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/ConnectException;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Ljava/net/ConnectException;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter$1;->this$1:Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter;
 

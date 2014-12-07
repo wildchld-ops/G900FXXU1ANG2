@@ -124,7 +124,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -183,7 +182,6 @@
 
 .method private getAPKFileContents(Ljava/lang/String;)[B
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -293,7 +291,6 @@
 
 .method private isValidConfiguration([B)Z
     .locals 2
-    .param p1    # [B
 
     if-eqz p1, :cond_0
 
@@ -324,8 +321,6 @@
 
 .method private static readBytes(Ljava/io/InputStream;I)[B
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1306,8 +1301,6 @@
 
 .method private validateProperty(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1368,7 +1361,6 @@
 # virtual methods
 .method public addListener(Ljava/lang/String;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1387,7 +1379,6 @@
 
 .method public createFromDigest([B)Ljava/util/Map;
     .locals 5
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
@@ -1438,7 +1429,6 @@
 
 .method public final createFromString(Ljava/lang/String;)Ljava/util/Map;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1504,7 +1494,6 @@
 
 .method public getBoolean(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;)Ljava/lang/Boolean;
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1521,7 +1510,6 @@
 
 .method public final getConfigurationDigest(Z)[B
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -1546,7 +1534,6 @@
 
 .method public getConfigurationFromFileSystem(Ljava/lang/String;)[B
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1622,7 +1609,6 @@
 
 .method public getInteger(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;)Ljava/lang/Integer;
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1639,7 +1625,6 @@
 
 .method public getString(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1746,8 +1731,6 @@
 
 .method public overrideFromServer(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1786,8 +1769,6 @@
 
 .method public overrideFromServer(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1822,8 +1803,6 @@
 
 .method public overrideFromServer(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1862,8 +1841,6 @@
 
 .method public setProperty(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;Ljava/lang/Boolean;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
-    .param p2    # Ljava/lang/Boolean;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1882,8 +1859,6 @@
 
 .method public setProperty(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
-    .param p2    # Ljava/lang/Integer;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1902,8 +1877,6 @@
 
 .method public setProperty(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->propertyStore:Lcom/nuance/connect/internal/PropertyStore;
 
@@ -1990,8 +1963,6 @@
 
 .method public updateFromString(Ljava/lang/String;Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/configuration/ConnectProperty$ConfigurationType;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/service/configuration/ConnectConfiguration;->createFromString(Ljava/lang/String;)Ljava/util/Map;
 

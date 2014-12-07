@@ -25,13 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/model/Bucket;Lcom/google/android/finsky/api/model/BucketedList;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/api/model/Bucket;
-    .param p7    # Landroid/os/Bundle;
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -121,8 +114,6 @@
 
 .method private getEditorialFooterHeader(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -140,9 +131,6 @@
 
 .method private getEditorialFooterRow(Landroid/view/ViewGroup;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 21
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # I
 
     invoke-super/range {p0 .. p0}, Lcom/google/android/finsky/adapters/CardSimpleListAdapter;->getCount()I
 
@@ -489,8 +477,6 @@
 
 .method private getEditorialHeaderView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p1, :cond_0
 
@@ -543,7 +529,6 @@
 
 .method private getEditorialVideoWrapper(Landroid/widget/RelativeLayout;)Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
     .locals 2
-    .param p1    # Landroid/widget/RelativeLayout;
 
     new-instance v0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
 
@@ -624,7 +609,6 @@
 # virtual methods
 .method protected configureBucketRow(Lcom/google/android/finsky/layout/BucketRow;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/layout/BucketRow;
 
     const/4 v0, 0x1
 
@@ -665,7 +649,6 @@
 
 .method public getItemViewType(I)I
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter;->getFooterItemCount()I
 
@@ -736,9 +719,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter;->getItemViewType(I)I
 
@@ -819,8 +799,6 @@
 
 .method public onSaveInstanceState(Landroid/widget/ListView;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter;->mDetailsTextViewBinder:Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 

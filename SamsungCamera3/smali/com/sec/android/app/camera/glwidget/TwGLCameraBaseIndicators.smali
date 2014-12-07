@@ -668,10 +668,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v7, 0x1
 
@@ -762,8 +758,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIsHelpTextHidedByTimeOut:Z
 
@@ -772,7 +766,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -781,7 +774,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -790,7 +782,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -799,7 +790,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;)[Lcom/sec/android/app/camera/glwidget/TwGLFaceCircle;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFaceRect:[Lcom/sec/android/app/camera/glwidget/TwGLFaceCircle;
 
@@ -808,8 +798,6 @@
 
 .method private getBigRect([Lcom/sec/android/seccamera/SecCamera$Face;I)I
     .locals 6
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -936,9 +924,6 @@
 
 .method private getDownRect([Lcom/sec/android/seccamera/SecCamera$Face;II)I
     .locals 4
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -974,9 +959,6 @@
 
 .method private getLeftRect([Lcom/sec/android/seccamera/SecCamera$Face;II)I
     .locals 4
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1012,9 +994,6 @@
 
 .method private getRectPosition([Lcom/sec/android/seccamera/SecCamera$Face;II)I
     .locals 7
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x2
 
@@ -1139,9 +1118,6 @@
 
 .method private getRectPositionBasedScreen(ILandroid/graphics/RectF;I)I
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # I
 
     const/4 v3, 0x2
 
@@ -1347,8 +1323,6 @@
 
 .method private getRectPositionBasedScreenForVoiceGuide(ILandroid/graphics/RectF;)I
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/graphics/RectF;
 
     const/4 v5, 0x3
 
@@ -1852,9 +1826,6 @@
 
 .method private getRightRect([Lcom/sec/android/seccamera/SecCamera$Face;II)I
     .locals 4
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1890,9 +1861,6 @@
 
 .method private getUpRect([Lcom/sec/android/seccamera/SecCamera$Face;II)I
     .locals 4
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -4697,7 +4665,6 @@
 
 .method private needToSetShootingModeText(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->settingShootingModeToCommandId(I)I
 
@@ -4733,7 +4700,6 @@
 
 .method private prepareMatrixForFaceRect(Landroid/graphics/Matrix;)V
     .locals 9
-    .param p1    # Landroid/graphics/Matrix;
 
     const/4 v1, 0x1
 
@@ -4947,7 +4913,6 @@
 
 .method public declared-synchronized doesFaceRectContainsThisPoint(Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 8
-    .param p1    # Landroid/graphics/Point;
 
     monitor-enter p0
 
@@ -5613,8 +5578,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x3
 
@@ -7104,7 +7067,6 @@
 
 .method public onHide(Lcom/sec/android/app/camera/MenuBase;)V
     .locals 3
-    .param p1    # Lcom/sec/android/app/camera/MenuBase;
 
     instance-of v1, p1, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
@@ -7146,7 +7108,6 @@
 
 .method public onOnSideTouchIndicatorHideListener(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mIndicatorGroup:Lcom/sec/android/app/camera/glwidget/TwGLIndicatorGroup;
 
@@ -7162,7 +7123,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -7398,7 +7358,6 @@
 
 .method public resetFocus(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
@@ -7588,7 +7547,6 @@
 
 .method public setAudioRecordIndicator(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mAudioRecordIndicator:Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;
 
@@ -7628,7 +7586,6 @@
 
 .method public setAudioRecordIndicatorlevel([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mAudioRecordIndicator:Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;
 
@@ -7647,7 +7604,6 @@
 
 .method public setAutoNightDetectionIndicator(I)V
     .locals 4
-    .param p1    # I
 
     const v3, 0x7f0b011d
 
@@ -7706,8 +7662,6 @@
 
 .method public setBatteryLevel(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x3
 
@@ -7884,7 +7838,6 @@
 
 .method public setConnectingStateGPS(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
@@ -7935,7 +7888,6 @@
 
 .method public setCoverCameraMode(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -8012,7 +7964,6 @@
 
 .method public declared-synchronized setFaceCountChanged([Lcom/sec/android/seccamera/SecCamera$Face;)V
     .locals 6
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
 
     monitor-enter p0
 
@@ -8127,7 +8078,6 @@
 
 .method public declared-synchronized setFaceRectChanged([Lcom/sec/android/seccamera/SecCamera$Face;)V
     .locals 9
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
 
     const/16 v8, 0xa
 
@@ -8401,7 +8351,6 @@
 
 .method public setFlashIndicator(I)V
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -8434,7 +8383,6 @@
 
 .method public setFocusIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
@@ -8456,7 +8404,6 @@
 
 .method public setFocusRotationDegree(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
@@ -8472,7 +8419,6 @@
 
 .method protected setGPSIndicator(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGPSIndicator:Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
@@ -8525,7 +8471,6 @@
 
 .method public setGuideLineSize(Lcom/sec/android/app/camera/PreviewFrameLayout;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/PreviewFrameLayout;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mGuideLineView:Lcom/sec/android/app/camera/glwidget/TwGLGuideLineView;
 
@@ -8541,7 +8486,6 @@
 
 .method public setHelpText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
@@ -8559,7 +8503,6 @@
 
 .method public setRecordingModeIndicator(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mRecordingModeIndicator:Lcom/sec/android/app/camera/glwidget/TwGLRecordingModeIndicator;
 
@@ -8599,7 +8542,6 @@
 
 .method public setRemainCount(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x4
 
@@ -8665,7 +8607,6 @@
 
 .method public setRemoteViewfinderIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLCameraBaseIndicators"
 
@@ -8750,7 +8691,6 @@
 
 .method public setShareIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLCameraBaseIndicators"
 
@@ -8849,7 +8789,6 @@
 
 .method public setSideTouchIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -8908,7 +8847,6 @@
 
 .method public setSideTouchIndicatorState(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mSideBezelTouchIndicator:Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;
 
@@ -8924,7 +8862,6 @@
 
 .method public setStorageIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -8977,7 +8914,6 @@
 
 .method public setTimerIndicator(I)V
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -9010,8 +8946,6 @@
 
 .method public setTouchFocusRectCenter(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterX:I
 
@@ -9037,8 +8971,6 @@
 
 .method public setTouchFocusRectCenterWithoutAnimation(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mTouchFocusRectCenterX:I
 
@@ -9060,7 +8992,6 @@
 
 .method public setVoiceStatus(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "TwGLCameraBaseIndicators"
 
@@ -9134,7 +9065,6 @@
 
 .method public setZoomValue(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -9190,7 +9120,6 @@
 
 .method public showAutoNightDetectionIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mAutoNightDetectionIndicator:Lcom/sec/android/app/camera/glwidget/TwGLAutoNightDetectionIndicator;
 
@@ -9328,7 +9257,6 @@
 
 .method public showFocusIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mFocusButton:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
@@ -9433,7 +9361,6 @@
 
 .method public showVoiceInputIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;->mVoiceIndicator:Lcom/sec/android/app/camera/glwidget/TwGLVoiceIndicator;
 

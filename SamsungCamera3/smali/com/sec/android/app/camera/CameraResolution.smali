@@ -114,8 +114,6 @@
 
 .method public static compare(II)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0}, Lcom/sec/android/app/camera/CameraResolution;->getIntWidth(I)I
 
@@ -162,7 +160,6 @@
 
 .method public static getCamcorderProfileQualityLevel(I)I
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -217,7 +214,6 @@
 
 .method public static getIntHeight(I)I
     .locals 2
-    .param p0    # I
 
     const/16 v0, 0x990
 
@@ -470,7 +466,6 @@
 
 .method public static getIntWidth(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -688,7 +683,6 @@
 
 .method public static getResolutionFullString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -974,7 +968,6 @@
 
 .method public static getResolutionID(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0x23
 
@@ -1614,7 +1607,6 @@
 
 .method public static getResolutionString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1915,7 +1907,6 @@
 
 .method public static isSquareResolution(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1945,7 +1936,6 @@
 
 .method public static isWideResolution(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

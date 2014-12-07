@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/impl/HelpPeopleActivity;)[I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mOptionMenuLoc:[I
 
@@ -41,8 +40,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/impl/HelpPeopleActivity;[I)[I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mOptionMenuLoc:[I
 
@@ -51,7 +48,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/impl/HelpPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -60,7 +56,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/impl/HelpPeopleActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/impl/HelpPeopleActivity;->showAddaContactTutorialPopup()V
 
@@ -69,7 +64,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/impl/HelpPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -78,7 +72,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/impl/HelpPeopleActivity;)[I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mOptionMenuRect:[I
 
@@ -87,8 +80,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/impl/HelpPeopleActivity;[I)[I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mOptionMenuRect:[I
 
@@ -97,7 +88,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/impl/HelpPeopleActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/impl/HelpPeopleActivity;->showSpeedDialTutorialPopup()V
 
@@ -106,7 +96,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/impl/HelpPeopleActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mIsEasyMode:Z
 
@@ -115,7 +104,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/impl/HelpPeopleActivity;)[I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mCreateButtonLoc:[I
 
@@ -124,8 +112,6 @@
 
 .method static synthetic access$602(Lcom/samsung/contacts/impl/HelpPeopleActivity;[I)[I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mCreateButtonLoc:[I
 
@@ -134,7 +120,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/impl/HelpPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -143,7 +128,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/impl/HelpPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -152,7 +136,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/impl/HelpPeopleActivity;)[I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mCreateButtonRect:[I
 
@@ -161,8 +144,6 @@
 
 .method static synthetic access$902(Lcom/samsung/contacts/impl/HelpPeopleActivity;[I)[I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpPeopleActivity;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mCreateButtonRect:[I
 
@@ -409,7 +390,6 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/impl/HelpPeopleActivity;->mIsSpeedDialTutorialMode:Z
 
@@ -455,7 +435,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/activities/PeopleActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -507,7 +486,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/activities/PeopleActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -540,8 +518,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -567,7 +543,6 @@
 
 .method public onOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsMenuClosed(Landroid/view/Menu;)V
 
@@ -580,7 +555,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/activities/PeopleActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
@@ -630,7 +604,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/activities/PeopleActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

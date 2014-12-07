@@ -91,8 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const/16 v7, 0x5f
 
@@ -575,8 +573,6 @@
 
 .method public static getLocation(Landroid/content/Context;Landroid/net/Uri;)[D
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1257,8 +1253,6 @@
 
 .method public static getOrientation(Landroid/content/Context;Landroid/net/Uri;)I
     .locals 16
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -2005,11 +1999,6 @@
 
 .method private getResizedImageData(IIILandroid/net/Uri;Landroid/content/Context;)[B
     .locals 33
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Landroid/content/Context;
 
     move-object/from16 v0, p0
 
@@ -6734,8 +6723,6 @@
 
 .method private initFromContentUri(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -7109,8 +7096,6 @@
 
 .method private initFromFile(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     invoke-virtual {p2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
@@ -7218,7 +7203,6 @@
 
 .method private static isMMSUri(Landroid/net/Uri;)Z
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -7268,7 +7252,6 @@
 
 .method private static isMediaUri(Landroid/net/Uri;)Z
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -7309,8 +7292,6 @@
 
 .method public static rotateBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
 
     const/high16 v6, 0x40000000
 
@@ -7401,9 +7382,6 @@
 
 .method public getResizedImageAsPart(III)Lcom/google/android/mms/pdu/PduPart;
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v8, Lcom/google/android/mms/pdu/PduPart;
 
@@ -7556,7 +7534,6 @@
 
 .method public setRotate(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/UriImage;->mRotate:I
 

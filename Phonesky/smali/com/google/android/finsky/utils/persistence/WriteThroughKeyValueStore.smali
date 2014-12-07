@@ -61,7 +61,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/utils/persistence/KeyValueStore;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/utils/persistence/KeyValueStore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -92,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;)Lcom/google/android/finsky/utils/persistence/KeyValueStore;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;->mBackingStore:Lcom/google/android/finsky/utils/persistence/KeyValueStore;
 
@@ -101,8 +99,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;Ljava/util/Map;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
-    .param p1    # Ljava/util/Map;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;->handleDataLoaded(Ljava/util/Map;)V
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;->mHandler:Landroid/os/Handler;
 
@@ -233,7 +228,6 @@
 # virtual methods
 .method public delete(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;->ensureReadyAndOnMainThread()V
 
@@ -359,7 +353,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/util/Map;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -400,7 +393,6 @@
 
 .method public load(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;->ensureOnMainThread()V
 
@@ -438,7 +430,6 @@
 
 .method public put(Ljava/lang/String;Ljava/util/Map;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

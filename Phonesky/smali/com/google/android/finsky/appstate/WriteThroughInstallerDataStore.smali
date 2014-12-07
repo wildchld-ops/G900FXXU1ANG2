@@ -32,10 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/appstate/InstallerDataStore;Lcom/google/android/finsky/appstate/InstallerDataStore;Landroid/os/Handler;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore;
-    .param p2    # Lcom/google/android/finsky/appstate/InstallerDataStore;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;)Lcom/google/android/finsky/appstate/InstallerDataStore;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;->mPersistentStore:Lcom/google/android/finsky/appstate/InstallerDataStore;
 
@@ -69,7 +64,6 @@
 # virtual methods
 .method public declared-synchronized get(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -248,7 +242,6 @@
 
 .method public declared-synchronized load(Ljava/lang/Runnable;)Z
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     monitor-enter p0
 
@@ -314,7 +307,6 @@
 
 .method public declared-synchronized put(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     monitor-enter p0
 
@@ -347,8 +339,6 @@
 
 .method public declared-synchronized setAccount(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -381,8 +371,6 @@
 
 .method public declared-synchronized setAccountForUpdate(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -415,8 +403,6 @@
 
 .method public declared-synchronized setAutoAcquireTags(Ljava/lang/String;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -449,8 +435,6 @@
 
 .method public declared-synchronized setAutoUpdate(Ljava/lang/String;Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
 
     monitor-enter p0
 
@@ -483,8 +467,6 @@
 
 .method public declared-synchronized setContinueUrl(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -517,9 +499,6 @@
 
 .method public declared-synchronized setDeliveryData(Ljava/lang/String;Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;J)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
-    .param p3    # J
 
     monitor-enter p0
 
@@ -560,8 +539,6 @@
 
 .method public declared-synchronized setDesiredVersion(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -594,8 +571,6 @@
 
 .method public declared-synchronized setExternalReferrer(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -628,8 +603,6 @@
 
 .method public declared-synchronized setFirstDownloadMs(Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     monitor-enter p0
 
@@ -662,8 +635,6 @@
 
 .method public declared-synchronized setFlags(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -696,9 +667,6 @@
 
 .method public declared-synchronized setInstallerState(Ljava/lang/String;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -731,8 +699,6 @@
 
 .method public declared-synchronized setLastNotifiedVersion(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -765,8 +731,6 @@
 
 .method public setLastUpdateTimestampMs(Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;->mInMemoryStore:Lcom/google/android/finsky/appstate/InstallerDataStore;
 
@@ -785,8 +749,6 @@
 
 .method public declared-synchronized setTitle(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

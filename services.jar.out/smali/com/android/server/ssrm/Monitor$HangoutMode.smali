@@ -35,8 +35,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/Monitor;Landroid/content/Context;Landroid/os/Handler;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/server/ssrm/Monitor$HangoutMode;->this$0:Lcom/android/server/ssrm/Monitor;
 
@@ -77,7 +75,6 @@
 # virtual methods
 .method public onFgAppChanged(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

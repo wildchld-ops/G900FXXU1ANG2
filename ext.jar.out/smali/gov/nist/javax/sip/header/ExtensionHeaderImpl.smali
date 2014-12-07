@@ -25,7 +25,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/header/SIPHeader;-><init>(Ljava/lang/String;)V
 
@@ -158,7 +157,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/SIPHeader;->headerName:Ljava/lang/String;
 
@@ -167,7 +165,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/ExtensionHeaderImpl;->value:Ljava/lang/String;
 

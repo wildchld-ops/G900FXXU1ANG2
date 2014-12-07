@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "library.db"
 
@@ -32,7 +31,6 @@
 
 .method private recreateDatabase(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     :try_start_0
     const-string v0, "DROP TABLE ownership"
@@ -56,7 +54,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE ownership (account STRING, library_id STRING, backend INTEGER, doc_id STRING, doc_type INTEGER, offer_type INTEGER, document_hash INTEGER, subs_valid_until_time INTEGER, app_certificate_hash STRING, app_refund_pre_delivery_endtime_ms INTEGER, app_refund_post_delivery_window_ms INTEGER, subs_auto_renewing INTEGER, subs_initiation_time INTEGER, subs_trial_until_time INTEGER, inapp_purchase_data STRING, inapp_signature STRING, PRIMARY KEY (account, library_id, backend, doc_id, doc_type, offer_type))"
 
@@ -67,9 +64,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "Downgrading Library from %d to %d"
 
@@ -102,9 +96,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     packed-switch p2, :pswitch_data_0
 

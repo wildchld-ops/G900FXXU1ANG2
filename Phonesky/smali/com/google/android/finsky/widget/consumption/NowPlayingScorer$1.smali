@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/google/android/finsky/services/ConsumptionAppDoc;Lcom/google/android/finsky/services/ConsumptionAppDoc;)I
     .locals 3
-    .param p1    # Lcom/google/android/finsky/services/ConsumptionAppDoc;
-    .param p2    # Lcom/google/android/finsky/services/ConsumptionAppDoc;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/services/ConsumptionAppDoc;->getLastUpdateTimeMs()J
 
@@ -68,8 +66,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/services/ConsumptionAppDoc;
 

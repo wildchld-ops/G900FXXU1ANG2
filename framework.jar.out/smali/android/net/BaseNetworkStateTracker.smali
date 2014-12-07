@@ -61,7 +61,6 @@
 
 .method public constructor <init>(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -118,7 +117,6 @@
 # virtual methods
 .method public addStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/BaseNetworkStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -135,14 +133,12 @@
 
 .method public captivePortalCheckCompleted(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public defaultRouteSet(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/BaseNetworkStateTracker;->mDefaultRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -317,7 +313,6 @@
 
 .method public privateDnsRouteSet(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/BaseNetworkStateTracker;->mPrivateDnsRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -328,7 +323,6 @@
 
 .method public removeStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/BaseNetworkStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -339,21 +333,18 @@
 
 .method public setDependencyMet(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setPolicyDataEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setRadio(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -362,7 +353,6 @@
 
 .method public setTeardownRequested(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/BaseNetworkStateTracker;->mTeardownRequested:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -373,23 +363,18 @@
 
 .method public setUserDataEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setUserDataEnableEx(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public startMonitoring(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-static {p1}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -420,21 +405,18 @@
 
 .method public startSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 0
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     return-void
 .end method
 
 .method public stopSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 0
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     return-void
 .end method
 
 .method public supplyMessenger(Landroid/os/Messenger;)V
     .locals 0
-    .param p1    # Landroid/os/Messenger;
 
     return-void
 .end method

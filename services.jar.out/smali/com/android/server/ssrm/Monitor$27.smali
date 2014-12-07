@@ -36,8 +36,6 @@
 # virtual methods
 .method public execute(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/Monitor$27;->this$0:Lcom/android/server/ssrm/Monitor;
 

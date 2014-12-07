@@ -49,7 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/AddCreditCardFields;-><init>(Landroid/content/Context;)V
 
@@ -62,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/AddCreditCardFields;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -76,9 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/AddCreditCardFields;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -91,7 +85,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;->mNumberConcealed:Landroid/widget/TextView;
 
@@ -100,7 +93,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;)Landroid/widget/ImageButton;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;->mEditNumberButton:Landroid/widget/ImageButton;
 
@@ -109,8 +101,6 @@
 
 .method private animateToTranslationFadeIn(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -135,8 +125,6 @@
 
 .method private animateToTranslationFadeOut(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -209,7 +197,6 @@
 
 .method private concealNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;->mCurrentCardType:Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
@@ -901,7 +888,6 @@
 
 .method private restorePositions(Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs$State;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs$State;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;->getNumberTranslationY()I
 
@@ -1050,7 +1036,6 @@
 
 .method private restoreVisibilities(Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs$State;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs$State;
 
     const/4 v4, 0x4
 
@@ -1200,7 +1185,6 @@
 
 .method private setAnimationDelay(J)V
     .locals 2
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -1231,8 +1215,6 @@
 
 .method private setupNumberEnteredAnimation(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1305,7 +1287,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;->mEditNumberButton:Landroid/widget/ImageButton;
 
@@ -1405,11 +1386,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/google/android/finsky/layout/AddCreditCardFields;->onLayout(ZIIII)V
 
@@ -1431,8 +1407,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/google/android/finsky/layout/AddCreditCardFields;->onMeasure(II)V
 
@@ -1530,7 +1504,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Landroid/os/Bundle;
 

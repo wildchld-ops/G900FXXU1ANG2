@@ -115,8 +115,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mErrorMessage:Ljava/lang/String;
 
@@ -125,8 +123,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Ljava/util/List;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->importVCardFromSDCard(Ljava/util/List;)V
 
@@ -135,8 +131,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardFile;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardFile;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->importVCardFromSDCard(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardFile;)V
 
@@ -145,7 +139,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mImportPath:Ljava/lang/String;
 
@@ -154,7 +147,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mProgressDialogForScanVCard:Landroid/app/ProgressDialog;
 
@@ -163,8 +155,6 @@
 
 .method static synthetic access$1302(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mProgressDialogForScanVCard:Landroid/app/ProgressDialog;
 
@@ -173,7 +163,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->startVCardSelectAndImport()V
 
@@ -198,7 +187,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mIsBound:Z
 
@@ -207,7 +195,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->startImport()V
 
@@ -216,8 +203,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mIsBound:Z
 
@@ -226,7 +211,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardCacheThread;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mVCardCacheThread:Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardCacheThread;
 
@@ -235,8 +219,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardCacheThread;)Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardCacheThread;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardCacheThread;
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mVCardCacheThread:Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardCacheThread;
 
@@ -245,7 +227,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$ImportRequestConnection;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mConnection:Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$ImportRequestConnection;
 
@@ -262,7 +243,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Lcom/android/contacts/common/vcard/ImportRequest;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->request:Lcom/android/contacts/common/vcard/ImportRequest;
 
@@ -271,8 +251,6 @@
 
 .method static synthetic access$602(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Lcom/android/contacts/common/vcard/ImportRequest;)Lcom/android/contacts/common/vcard/ImportRequest;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Lcom/android/contacts/common/vcard/ImportRequest;
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->request:Lcom/android/contacts/common/vcard/ImportRequest;
 
@@ -281,7 +259,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mProgressDialogForCachingVCard:Landroid/app/ProgressDialog;
 
@@ -290,8 +267,6 @@
 
 .method static synthetic access$702(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mProgressDialogForCachingVCard:Landroid/app/ProgressDialog;
 
@@ -300,7 +275,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Lcom/android/contacts/common/model/account/AccountWithDataSet;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mAccount:Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
@@ -309,7 +283,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mAllVCardFileList:Ljava/util/List;
 
@@ -318,8 +291,6 @@
 
 .method static synthetic access$902(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mAllVCardFileList:Ljava/util/List;
 
@@ -457,7 +428,6 @@
 
 .method private getVCardFileSelectDialog(Z)Landroid/app/Dialog;
     .locals 13
-    .param p1    # Z
 
     iget-object v9, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mAllVCardFileList:Ljava/util/List;
 
@@ -622,7 +592,6 @@
 
 .method private importVCard(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x1
 
@@ -639,7 +608,6 @@
 
 .method private importVCard([Landroid/net/Uri;)V
     .locals 1
-    .param p1    # [Landroid/net/Uri;
 
     new-instance v0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$1;
 
@@ -652,7 +620,6 @@
 
 .method private importVCard([Ljava/lang/String;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     array-length v1, p1
 
@@ -683,7 +650,6 @@
 
 .method private importVCardFromSDCard(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardFile;)V
     .locals 4
-    .param p1    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardFile;
 
     const/4 v0, 0x1
 
@@ -919,9 +885,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     if-nez p1, :cond_0
 
@@ -989,7 +952,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1000,7 +962,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x1
 
@@ -1170,8 +1131,6 @@
 
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -1585,7 +1544,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     iget-object v3, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;->mActionBar:Landroid/app/ActionBar;
 
@@ -1700,7 +1658,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -1724,7 +1681,6 @@
 
 .method showFailureNotification(I)V
     .locals 4
-    .param p1    # I
 
     const-string v2, "notification"
 

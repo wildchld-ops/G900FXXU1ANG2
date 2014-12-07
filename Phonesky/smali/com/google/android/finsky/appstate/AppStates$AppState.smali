@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;
-    .param p3    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

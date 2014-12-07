@@ -552,8 +552,6 @@
 
 .method protected static varargs fetchConsumptionDataIfNecessary(Landroid/content/Context;[I)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # [I
 
     const/4 v11, 0x0
 
@@ -645,8 +643,6 @@
 
 .method private generateAccountNeededState(Landroid/content/Context;I)Landroid/widget/RemoteViews;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const v5, 0x7f0801a1
 
@@ -687,8 +683,6 @@
 
 .method private generateBaseTree(Landroid/content/Context;Z)Landroid/widget/RemoteViews;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -758,8 +752,6 @@
 
 .method private generateConfigurationState(Landroid/content/Context;I)Landroid/widget/RemoteViews;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const v5, 0x7f0801a0
 
@@ -800,9 +792,6 @@
 
 .method private generateDisabledState(Landroid/content/Context;II)Landroid/widget/RemoteViews;
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x1
 
@@ -894,9 +883,6 @@
 
 .method private generateUnavailableState(Landroid/content/Context;II)Landroid/widget/RemoteViews;
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const v10, 0x7f0801a0
 
@@ -997,12 +983,6 @@
 
 .method private generateViewTree(IILcom/google/android/finsky/api/model/DfeToc;Landroid/content/Context;Ljava/util/Map;II)Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$ViewTreeWrapper;
     .locals 37
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p4    # Landroid/content/Context;
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1624,11 +1604,6 @@
 
 .method private generateWidgetLayout(Landroid/content/Context;IIII)Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$WidgetLayout;
     .locals 25
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Lists;->newArrayList()Ljava/util/ArrayList;
 
@@ -1957,7 +1932,6 @@
 
 .method private static getBackends(I)[I
     .locals 2
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -1980,7 +1954,6 @@
 
 .method private static getBackgroundRes(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2050,7 +2023,6 @@
 
 .method private static getBlocks(I)[Lcom/google/android/finsky/widget/consumption/Block;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2089,10 +2061,6 @@
 
 .method private static getCachedImage(Landroid/content/Context;Ljava/util/Map;Landroid/net/Uri;II)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2160,7 +2128,6 @@
 
 .method private static getConsumptionData(I)Ljava/util/List;
     .locals 1
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2188,7 +2155,6 @@
 
 .method private static getConsumptionDocLists(I)Ljava/util/List;
     .locals 7
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2319,7 +2285,6 @@
 
 .method private static getEmptyBackgroundRes(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2389,7 +2354,6 @@
 
 .method private static getFallbackTitleRes(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2453,7 +2417,6 @@
 
 .method private static getHeaderIconRes(I)I
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2527,9 +2490,6 @@
 
 .method private static getHeaderIntent(Landroid/content/Context;II)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2579,7 +2539,6 @@
 
 .method private static getImageLoader(Landroid/content/Context;)Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider;->mImageLoader:Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;
 
@@ -2607,7 +2566,6 @@
 
 .method private static getLayout(Lcom/google/android/finsky/widget/consumption/NowPlayingArranger$Arrangement;)I
     .locals 3
-    .param p0    # Lcom/google/android/finsky/widget/consumption/NowPlayingArranger$Arrangement;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/NowPlayingArranger$Arrangement;->quadrantToData:[Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
 
@@ -2685,9 +2643,6 @@
 
 .method private static getTitleRes(Lcom/google/android/finsky/api/model/DfeToc;Landroid/content/Context;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -2751,8 +2706,6 @@
 
 .method private isConsumptionAppDisabled(Landroid/content/Context;I)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -2956,11 +2909,6 @@
 
 .method private populateWidget(Landroid/content/Context;Landroid/widget/RemoteViews;IIILjava/util/List;Ljava/util/List;Ljava/util/Map;)Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$ViewTreeWrapper;
     .locals 33
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3492,12 +3440,6 @@
 
 .method private updateHotseat(Landroid/content/Context;Lcom/google/android/finsky/api/model/DfeToc;Landroid/widget/RemoteViews;III)V
     .locals 23
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p3    # Landroid/widget/RemoteViews;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const v19, 0x7f0801ab
 
@@ -4081,12 +4023,6 @@
 # virtual methods
 .method protected findLargestBlock(Landroid/content/Context;IIIIZ)Lcom/google/android/finsky/widget/consumption/Block;
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     const/4 v5, 0x0
 
@@ -4248,10 +4184,6 @@
 
 .method public onAppWidgetOptionsChanged(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -4268,8 +4200,6 @@
 
 .method public onDeleted(Landroid/content/Context;[I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     move-object v1, p2
 
@@ -4318,8 +4248,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v11, 0x1
 
@@ -4534,14 +4462,6 @@
 
 .method protected populateWidget(Landroid/widget/RemoteViews;IIILandroid/content/Context;Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;IILjava/util/Map;)Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$ViewTreeWrapper;
     .locals 11
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/Context;
-    .param p6    # Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
-    .param p7    # I
-    .param p8    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4635,9 +4555,6 @@
 
 .method protected varargs updateWidgets(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Ljava/util/Map;[I)V
     .locals 30
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p4    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5000,9 +4917,6 @@
 
 .method protected varargs updateWidgets(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     invoke-static {p1}, Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider;->getImageLoader(Landroid/content/Context;)Lcom/google/android/finsky/widget/consumption/BatchedImageLoader;
 
@@ -5019,8 +4933,6 @@
 
 .method public warmImageCache(Landroid/content/Context;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v8, 0x0
 

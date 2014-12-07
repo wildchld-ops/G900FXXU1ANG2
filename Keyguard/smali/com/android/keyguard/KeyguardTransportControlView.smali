@@ -81,8 +81,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x0
 
@@ -251,8 +249,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardTransportControlView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardTransportControlView;->updatePlayPauseState(I)V
 
@@ -261,7 +257,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardTransportControlView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mCurrentPlayState:I
 
@@ -270,8 +265,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/KeyguardTransportControlView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardTransportControlView;->sendMediaButtonClick(I)V
 
@@ -280,7 +273,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/KeyguardTransportControlView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mSeekEnabled:Z
 
@@ -289,7 +281,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/KeyguardTransportControlView;)Ljava/util/Date;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mTempDate:Ljava/util/Date;
 
@@ -298,7 +289,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/KeyguardTransportControlView;)Ljava/text/DateFormat;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mFormat:Ljava/text/DateFormat;
 
@@ -307,7 +297,6 @@
 
 .method static synthetic access$1400(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mTransientSeekTimeElapsed:Landroid/widget/TextView;
 
@@ -316,7 +305,6 @@
 
 .method static synthetic access$1500(Lcom/android/keyguard/KeyguardTransportControlView;)Lcom/android/keyguard/KeyguardTransportControlView$FutureSeekRunnable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mFutureSeekRunnable:Lcom/android/keyguard/KeyguardTransportControlView$FutureSeekRunnable;
 
@@ -325,8 +313,6 @@
 
 .method static synthetic access$1600(Lcom/android/keyguard/KeyguardTransportControlView;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardTransportControlView;->setEnableMarquee(Z)V
 
@@ -335,7 +321,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardTransportControlView;)Lcom/android/keyguard/KeyguardTransportControlView$UpdateSeekBarRunnable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mUpdateSeekBars:Lcom/android/keyguard/KeyguardTransportControlView$UpdateSeekBarRunnable;
 
@@ -344,7 +329,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mTransientSeek:Landroid/view/View;
 
@@ -353,7 +337,6 @@
 
 .method static synthetic access$400(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/keyguard/KeyguardTransportControlView;->playbackPositionShouldMove(I)Z
 
@@ -364,8 +347,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardTransportControlView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardTransportControlView;->updateTransportControls(I)V
 
@@ -374,7 +355,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mBtnPrev:Landroid/widget/ImageView;
 
@@ -383,7 +363,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mBtnNext:Landroid/widget/ImageView;
 
@@ -392,7 +371,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardTransportControlView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mBtnPlay:Landroid/widget/ImageView;
 
@@ -401,7 +379,6 @@
 
 .method private static final playbackPositionShouldMove(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -747,7 +724,6 @@
 
 .method private sendMediaButtonClick(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mRemoteController:Landroid/media/RemoteController;
 
@@ -778,7 +754,6 @@
 
 .method private setEnableMarquee(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mTrackTitle:Landroid/widget/TextView;
 
@@ -803,9 +778,6 @@
 
 .method private static setVisibilityBasedOnFlag(Landroid/view/View;II)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
 
     and-int v0, p1, p2
 
@@ -828,7 +800,6 @@
 
 .method private updatePlayPauseState(I)V
     .locals 7
-    .param p1    # I
 
     iget v3, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mCurrentPlayState:I
 
@@ -923,7 +894,6 @@
 
 .method private updateTransportControls(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mTransportControlFlags:I
 
@@ -1031,7 +1001,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1320,7 +1289,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Lcom/android/keyguard/KeyguardTransportControlView$SavedState;
 
@@ -1480,7 +1448,6 @@
 
 .method scrubTo(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mRemoteController:Landroid/media/RemoteController;
 
@@ -1497,7 +1464,6 @@
 
 .method setBadgeIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mBadge:Landroid/widget/ImageView;
 
@@ -1540,7 +1506,6 @@
 
 .method setSeekBarDuration(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mTransientSeekBar:Landroid/widget/SeekBar;
 
@@ -1553,7 +1518,6 @@
 
 .method setSeekBarsEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x4
 
@@ -1654,7 +1618,6 @@
 
 .method public setTransportControlCallback(Lcom/android/keyguard/KeyguardViewBase$TransportControlCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardViewBase$TransportControlCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardTransportControlView;->mTransportControlCallback:Lcom/android/keyguard/KeyguardViewBase$TransportControlCallback;
 
@@ -1738,7 +1701,6 @@
 
 .method updateMetadata(Landroid/media/RemoteController$MetadataEditor;)V
     .locals 4
-    .param p1    # Landroid/media/RemoteController$MetadataEditor;
 
     invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 

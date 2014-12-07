@@ -205,7 +205,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -296,7 +295,6 @@
 
 .method private doBooleanCommand(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v2, Landroid/net/wifi/WifiNative;->DBG:Z
 
@@ -488,7 +486,6 @@
 
 .method private doIntCommand(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v2, Landroid/net/wifi/WifiNative;->DBG:Z
 
@@ -648,7 +645,6 @@
 
 .method private doStringCommand(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v2, Landroid/net/wifi/WifiNative;->DBG:Z
 
@@ -808,7 +804,6 @@
 
 .method private doStringCommandWithoutLogging(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/net/wifi/WifiNative;->DBG:Z
 
@@ -904,7 +899,6 @@
 
 .method private localLog(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/net/wifi/WifiNative;->mLocalLog:Landroid/util/LocalLog;
 
@@ -944,8 +938,6 @@
 
 .method private p2pGetParam(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1043,7 +1035,6 @@
 # virtual methods
 .method public addHs20Network(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1084,7 +1075,6 @@
 
 .method public addP2pDeviceDetectedByNfc(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1113,7 +1103,6 @@
 
 .method public addToBlacklist(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1164,8 +1153,6 @@
 
 .method public callSECApiBoolean(IZ)I
     .locals 12
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -1631,8 +1618,6 @@
 
 .method public callSECApiInt(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -2270,8 +2255,6 @@
 
 .method public callSECApiString(ILjava/lang/String;)I
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x4
 
@@ -2812,7 +2795,6 @@
 
 .method public callSECApiVoid(I)I
     .locals 9
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -3455,7 +3437,6 @@
 
 .method public callSECStringApiVoid(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -3708,7 +3689,6 @@
 
 .method public disableNetwork(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3737,8 +3717,6 @@
 
 .method public disableNetworkWithReason(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3789,7 +3767,6 @@
 
 .method public enableBackgroundScan(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -3810,8 +3787,6 @@
 
 .method public enableNetwork(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -3930,7 +3905,6 @@
 
 .method public getBssInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4075,7 +4049,6 @@
 
 .method public getGroupCapability(Ljava/lang/String;)I
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4215,8 +4188,6 @@
 
 .method public getNetworkVariable(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4417,8 +4388,6 @@
 
 .method public getSecuredNetworkVariable(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4481,7 +4450,6 @@
 
 .method public msapGasResponseGet(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -4560,8 +4528,6 @@
 
 .method public p2pConnect(Landroid/net/wifi/p2p/WifiP2pConfig;Z)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pConfig;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -4762,9 +4728,6 @@
 
 .method public p2pExtListen(ZII)Z
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -4851,7 +4814,6 @@
 
 .method public p2pFind(I)Z
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -4890,8 +4852,6 @@
 
 .method public p2pFind(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -5054,7 +5014,6 @@
 
 .method public p2pFlushFind(I)Z
     .locals 4
-    .param p1    # I
 
     const-string v1, "WifiNative"
 
@@ -5195,7 +5154,6 @@
 
 .method public p2pGetSsid(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "oper_ssid"
 
@@ -5208,7 +5166,6 @@
 
 .method public p2pGroupAdd(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5237,7 +5194,6 @@
 
 .method public p2pGroupAdd(Z)Z
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -5262,7 +5218,6 @@
 
 .method public p2pGroupRemove(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5329,8 +5284,6 @@
 
 .method public p2pInvite(Landroid/net/wifi/p2p/WifiP2pGroup;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5440,7 +5393,6 @@
 
 .method public p2pListen(I)Z
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -5479,7 +5431,6 @@
 
 .method public p2pPeer(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5508,7 +5459,6 @@
 
 .method public p2pProvisionDiscovery(Landroid/net/wifi/p2p/WifiP2pConfig;)Z
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pConfig;
 
     const/4 v0, 0x0
 
@@ -5641,8 +5591,6 @@
 
 .method public p2pReinvoke(ILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5696,7 +5644,6 @@
 
 .method public p2pReject(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5725,7 +5672,6 @@
 
 .method public p2pServDiscCancelReq(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5754,8 +5700,6 @@
 
 .method public p2pServDiscReq(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "P2P_SERV_DISC_REQ"
 
@@ -5812,7 +5756,6 @@
 
 .method public p2pServiceAdd(Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;)Z
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;
 
     invoke-virtual {p1}, Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;->getSupplicantQueryList()Ljava/util/List;
 
@@ -5878,7 +5821,6 @@
 
 .method public p2pServiceDel(Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;)Z
     .locals 8
-    .param p1    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;
 
     const/4 v5, 0x1
 
@@ -6034,8 +5976,6 @@
 
 .method public p2pSet(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6074,8 +6014,6 @@
 
 .method public p2pSetChannel(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -6248,7 +6186,6 @@
 
 .method public partialScan(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6343,7 +6280,6 @@
 
 .method public removeNetwork(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6384,7 +6320,6 @@
 
 .method public resetScanTimer(Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -6405,7 +6340,6 @@
 
 .method public s69_data_request(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v1, Landroid/net/wifi/WifiNative;->DBG:Z
 
@@ -6511,7 +6445,6 @@
 
 .method public s69_request(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v2, Landroid/net/wifi/WifiNative;->DBG:Z
 
@@ -6589,7 +6522,6 @@
 
 .method public scan(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -6629,7 +6561,6 @@
 
 .method public scanResults(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6664,7 +6595,6 @@
 
 .method public setBand(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6693,7 +6623,6 @@
 
 .method public setBatchedScanSettings(Landroid/net/wifi/BatchedScanSettings;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
 
     const v6, 0x7fffffff
 
@@ -6925,7 +6854,6 @@
 
 .method public setBluetoothCoexistenceMode(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6954,7 +6882,6 @@
 
 .method public setBluetoothCoexistenceScanMode(Z)Z
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -6979,7 +6906,6 @@
 
 .method public setConcurrencyPriority(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7008,7 +6934,6 @@
 
 .method public setConfigMethods(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7037,7 +6962,6 @@
 
 .method public setCountryCode(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7072,7 +6996,6 @@
 
 .method public setCountryRev(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7101,7 +7024,6 @@
 
 .method public setDeviceName(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7130,7 +7052,6 @@
 
 .method public setDeviceType(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7159,7 +7080,6 @@
 
 .method public setFullRoamScanPeriod(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7188,7 +7108,6 @@
 
 .method public setManufacturer(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7217,7 +7136,6 @@
 
 .method public setMiracastMode(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7244,7 +7162,6 @@
 
 .method public setModelName(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7273,7 +7190,6 @@
 
 .method public setModelNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7302,9 +7218,6 @@
 
 .method public setNetworkVariable(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -7372,8 +7285,6 @@
 
 .method public setP2pGroupIdle(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v1, Landroid/net/wifi/WifiNative;->mLock:Ljava/lang/Object;
 
@@ -7428,8 +7339,6 @@
 
 .method public setP2pPowerSave(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     sget-object v1, Landroid/net/wifi/WifiNative;->mLock:Ljava/lang/Object;
 
@@ -7516,7 +7425,6 @@
 
 .method public setP2pSsidPostfix(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7545,7 +7453,6 @@
 
 .method public setPersistentReconnect(Z)Z
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -7584,7 +7491,6 @@
 
 .method public setPowerSave(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -7605,7 +7511,6 @@
 
 .method public setRoamDelta(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7634,7 +7539,6 @@
 
 .method public setRoamMode(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7663,7 +7567,6 @@
 
 .method public setRoamScanPeriod(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7692,7 +7595,6 @@
 
 .method public setRoamTrigger(I)Z
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7721,7 +7623,6 @@
 
 .method public setScanInterval(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7748,7 +7649,6 @@
 
 .method public setSerialNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7777,7 +7677,6 @@
 
 .method public setSuspendOptimizations(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/net/wifi/WifiNative;->mSuspendOptEnabled:Z
 
@@ -7813,7 +7712,6 @@
 
 .method public setWfdDeviceInfo(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7842,7 +7740,6 @@
 
 .method public setWfdEnable(Z)Z
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7981,8 +7878,6 @@
 
 .method public startTdls(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -8055,7 +7950,6 @@
 
 .method public startWpsPbc(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -8100,8 +7994,6 @@
 
 .method public startWpsPbc(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Landroid/net/wifi/WifiNative;->mLock:Ljava/lang/Object;
 
@@ -8196,7 +8088,6 @@
 
 .method public startWpsPinDisplay(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -8241,8 +8132,6 @@
 
 .method public startWpsPinDisplay(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Landroid/net/wifi/WifiNative;->mLock:Ljava/lang/Object;
 
@@ -8337,7 +8226,6 @@
 
 .method public startWpsPinKeypad(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -8378,8 +8266,6 @@
 
 .method public startWpsPinKeypad(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -8446,8 +8332,6 @@
 
 .method public startWpsRegistrar(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

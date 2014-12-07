@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -69,7 +68,6 @@
 
 .method private manageHoldMenu(Landroid/view/MenuItem;)V
     .locals 14
-    .param p1    # Landroid/view/MenuItem;
 
     const v13, 0x7f070090
 
@@ -275,7 +273,6 @@
 
 .method private prepareOptionVTMenuForEasyMode(Landroid/view/Menu;)Z
     .locals 11
-    .param p1    # Landroid/view/Menu;
 
     const v10, 0x7f08028f
 
@@ -469,7 +466,6 @@
 
 .method mdmIsCameraEnabled(Z)Z
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -493,7 +489,6 @@
 
 .method protected optionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
-    .param p1    # Landroid/view/MenuItem;
 
     const/16 v7, 0x191
 
@@ -911,7 +906,6 @@
 
 .method protected prepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 31
-    .param p1    # Landroid/view/Menu;
 
     const-string v29, "prepareOptionsMenu()..."
 

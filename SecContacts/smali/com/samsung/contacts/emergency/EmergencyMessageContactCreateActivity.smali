@@ -74,7 +74,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;->setDoneButtonEnabled()V
 
@@ -83,7 +82,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;->mMenuCancel:Landroid/widget/Button;
 
@@ -92,7 +90,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;->mMenuDone:Landroid/widget/Button;
 
@@ -101,8 +98,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;->hideInputMethod(Landroid/view/View;)V
 
@@ -111,7 +106,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/emergency/EmergencyMessageContactCreateActivity;->saveEmergencyMessageContact()V
 
@@ -773,7 +767,6 @@
 
 .method private hideInputMethod(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const-string v1, "input_method"
 
@@ -973,7 +966,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -1153,7 +1145,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 

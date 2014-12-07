@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +109,6 @@
 
 .method public registerForLowSignal(Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/os/Handler;
 
     iget-object v0, p0, Lcom/samsung/contacts/util/ImsLowSignalHelper;->mImsLowSignalBase:Lcom/samsung/contacts/util/ImsLowSignalBase;
 
@@ -130,7 +128,6 @@
 
 .method public registerImsReceiver(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/util/ImsLowSignalHelper;->mImsLowSignalBase:Lcom/samsung/contacts/util/ImsLowSignalBase;
 
@@ -158,7 +155,6 @@
 
 .method public showErrorDialog(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/util/ImsLowSignalHelper;->mImsLowSignalBase:Lcom/samsung/contacts/util/ImsLowSignalBase;
 

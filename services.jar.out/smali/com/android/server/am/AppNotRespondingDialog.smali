@@ -24,11 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ActivityRecord;Z)V
     .locals 27
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/server/am/ProcessRecord;
-    .param p4    # Lcom/android/server/am/ActivityRecord;
-    .param p5    # Z
 
     move-object/from16 v0, p0
 
@@ -766,7 +761,6 @@
 
 .method static synthetic access$000(Lcom/android/server/am/AppNotRespondingDialog;)Lcom/android/server/am/ProcessRecord;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppNotRespondingDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppNotRespondingDialog;->mProc:Lcom/android/server/am/ProcessRecord;
 
@@ -775,7 +769,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/AppNotRespondingDialog;)Lcom/android/server/am/ActivityManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppNotRespondingDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppNotRespondingDialog;->mService:Lcom/android/server/am/ActivityManagerService;
 

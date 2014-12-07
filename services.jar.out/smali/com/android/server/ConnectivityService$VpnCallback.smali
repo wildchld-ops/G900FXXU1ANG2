@@ -33,10 +33,6 @@
 # virtual methods
 .method public addUidForwarding(Ljava/lang/String;IIZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/ConnectivityService$VpnCallback;->this$0:Lcom/android/server/ConnectivityService;
@@ -73,9 +69,6 @@
 
 .method public addUserForwarding(Ljava/lang/String;IZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const v2, 0x186a0
 
@@ -92,7 +85,6 @@
 
 .method public clearMarkedForwarding(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/ConnectivityService$VpnCallback;->this$0:Lcom/android/server/ConnectivityService;
@@ -117,10 +109,6 @@
 
 .method public clearUidForwarding(Ljava/lang/String;IIZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/ConnectivityService$VpnCallback;->this$0:Lcom/android/server/ConnectivityService;
@@ -157,9 +145,6 @@
 
 .method public clearUserForwarding(Ljava/lang/String;IZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const v2, 0x186a0
 
@@ -176,7 +161,6 @@
 
 .method public onStateChanged(Landroid/net/NetworkInfo;)V
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService$VpnCallback;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -198,7 +182,6 @@
 
 .method public override(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -407,7 +390,6 @@
 
 .method public protect(Landroid/os/ParcelFileDescriptor;)V
     .locals 2
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/ConnectivityService$VpnCallback;->this$0:Lcom/android/server/ConnectivityService;
@@ -505,7 +487,6 @@
 
 .method public setMarkedForwarding(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/ConnectivityService$VpnCallback;->this$0:Lcom/android/server/ConnectivityService;
@@ -530,7 +511,6 @@
 
 .method public setRoutes(Ljava/lang/String;Ljava/util/List;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

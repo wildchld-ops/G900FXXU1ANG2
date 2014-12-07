@@ -16,7 +16,6 @@
 # virtual methods
 .method protected getResponseCode(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->hasSucceeded()Z
 
@@ -57,7 +56,6 @@
 
 .method protected getResponseCodeFromError(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;
 
     const/4 v2, 0x1
 

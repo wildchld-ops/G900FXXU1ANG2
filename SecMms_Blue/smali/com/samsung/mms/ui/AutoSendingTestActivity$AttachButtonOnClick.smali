@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/mms/ui/AutoSendingTestActivity;Lcom/samsung/mms/ui/AutoSendingTestActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
-    .param p2    # Lcom/samsung/mms/ui/AutoSendingTestActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/ui/AutoSendingTestActivity$AttachButtonOnClick;-><init>(Lcom/samsung/mms/ui/AutoSendingTestActivity;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 

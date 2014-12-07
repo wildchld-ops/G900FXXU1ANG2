@@ -52,8 +52,6 @@
 # virtual methods
 .method protected getHeaderValue(Lorg/apache/http/HttpResponse;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -77,7 +75,6 @@
 
 .method protected getParamValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -137,8 +134,6 @@
 
 .method protected getSplitHeader(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -186,8 +181,6 @@
 
 .method protected parse(Lorg/apache/http/impl/client/secgbaclient/AuthenticationHeaders;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationHeaders;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method

@@ -199,8 +199,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/app/IActivityManager;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/IActivityManager;
 
     const/4 v7, 0x1
 
@@ -441,7 +439,6 @@
 
 .method private static DVFSLockType(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -469,7 +466,6 @@
 
 .method static synthetic access$200(Lcom/android/server/ssrm/CustomFrequencyManagerService;)Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/CustomFrequencyManagerService;
 
     iget-object v0, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mFreqReqList:Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;
 
@@ -478,7 +474,6 @@
 
 .method static synthetic access$300(Lcom/android/server/ssrm/CustomFrequencyManagerService;)Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLockList;
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/CustomFrequencyManagerService;
 
     iget-object v0, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mDVFSLocks:Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLockList;
 
@@ -487,7 +482,6 @@
 
 .method static synthetic access$400(Lcom/android/server/ssrm/CustomFrequencyManagerService;)Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLock;
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/CustomFrequencyManagerService;
 
     iget-object v0, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mCurrentDVFSMaxLock:Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLock;
 
@@ -496,7 +490,6 @@
 
 .method static synthetic access$500(Lcom/android/server/ssrm/CustomFrequencyManagerService;)Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLock;
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/CustomFrequencyManagerService;
 
     iget-object v0, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mCurrentDVFSMinLock:Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLock;
 
@@ -1118,8 +1111,6 @@
 
 .method public static logOnAll(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1128,8 +1119,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->DEBUG:Z
 
@@ -1143,7 +1132,6 @@
 
 .method private modifyGPUToValue(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -1184,7 +1172,6 @@
 
 .method private static onListScrollBoostEvent(Z)V
     .locals 6
-    .param p0    # Z
 
     const-string v3, "CustomFrequencyManagerService"
 
@@ -1242,7 +1229,6 @@
 
 .method private releaseAllLauncherCPUCoreLocks(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mFreqReqList:Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;
 
@@ -1325,7 +1311,6 @@
 
 .method private releaseAllLauncherDVFSLocks(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v4, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mDVFSLocks:Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLockList;
@@ -1475,8 +1460,6 @@
 
 .method static stringCheckFromPms(Ljava/lang/String;I)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v2, Ljava/io/File;
 
@@ -1591,8 +1574,6 @@
 # virtual methods
 .method acquireCpuDvfsLock(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->IS_TYPE_MRVL:Z
 
@@ -1676,10 +1657,6 @@
 
 .method public acquireDVFSLock(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x7
 
@@ -1796,12 +1773,6 @@
 
 .method acquireDVFSLockLocked(IILandroid/os/IBinder;IILjava/lang/String;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     const-string v1, "CustomFrequencyManagerService"
 
@@ -2157,10 +2128,6 @@
 
 .method public acquirePersistentDVFSLock(IIILjava/lang/String;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -2355,7 +2322,6 @@
 
 .method public checkCPUBoostRange(I)Z
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Lcom/android/server/ssrm/CustomFrequencyManagerService;->DEBUG:Z
 
@@ -2444,7 +2410,6 @@
 
 .method public checkCPUCoreRange(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2479,7 +2444,6 @@
 
 .method public checkFrameRateRange(I)Z
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2490,7 +2454,6 @@
 
 .method public checkGPUFrequencyRange(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2530,7 +2493,6 @@
 
 .method public checkSysBusFrequencyRange(I)Z
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Lcom/android/server/ssrm/CustomFrequencyManagerService;->DEBUG:Z
 
@@ -2623,9 +2585,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     sget-object v4, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mContext:Landroid/content/Context;
 
@@ -2787,7 +2746,6 @@
 
 .method public getRemainUsageTime(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Lcom/android/server/ssrm/fgapps/RemainingUsageTimeCalculator;->getRemainUsageTime(I)I
 
@@ -2862,7 +2820,6 @@
 
 .method public mpdUpdate(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -3077,8 +3034,6 @@
 
 .method public notifyWmAniationState(JZ)V
     .locals 1
-    .param p1    # J
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mBootComplete:Z
 
@@ -3134,9 +3089,6 @@
 
 .method public releaseCPUCore(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mFreqReqList:Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;
 
@@ -3161,9 +3113,6 @@
 
 .method releaseCPUCoreLocked(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -3550,7 +3499,6 @@
 
 .method releaseCpuDvfsLock(I)I
     .locals 3
-    .param p1    # I
 
     sget-boolean v0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->IS_TYPE_MRVL:Z
 
@@ -3602,8 +3550,6 @@
 
 .method public releaseDVFSLock(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "jf"
 
@@ -3705,8 +3651,6 @@
 
 .method releaseDVFSLockLocked(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -3990,9 +3934,6 @@
 
 .method public releaseGPU(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mFreqReqList:Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;
 
@@ -4438,8 +4379,6 @@
 
 .method public releasePersistentDVFSLock(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -4616,9 +4555,6 @@
 
 .method public releaseSysBus(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mFreqReqList:Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;
 
@@ -5048,10 +4984,6 @@
 
 .method public requestCPUCore(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/server/ssrm/SSRMUtil;->isStabilityTestCondition()Z
 
@@ -5449,8 +5381,6 @@
 
 .method public requestCPUUpdate(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -5703,10 +5633,6 @@
 
 .method public requestGPU(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -6152,9 +6078,6 @@
 
 .method public requestLCDFrameRate(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -6391,9 +6314,6 @@
 
 .method public requestMMCBurstRate(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "CustomFrequencyManagerService"
 
@@ -6408,7 +6328,6 @@
 
 .method public requestMpParameterUpdate(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v6, Lcom/android/server/ssrm/CustomFrequencyManagerService;->DEBUG:Z
 
@@ -6621,10 +6540,6 @@
 
 .method public requestSysBus(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -7038,8 +6953,6 @@
 
 .method public restoreLCDFrameRate(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -7272,7 +7185,6 @@
 
 .method public restoreMMCBurstRate(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     const-string v0, "CustomFrequencyManagerService"
 
@@ -7287,8 +7199,6 @@
 
 .method public reviewPackage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v1, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService;->mBootComplete:Z
 
@@ -7334,8 +7244,6 @@
 
 .method public sendCommandToSSRM(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "CLOCK_SET_TORCH_LIGHT"
 

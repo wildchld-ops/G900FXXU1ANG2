@@ -50,8 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
 
     const/4 v2, 0x0
 
@@ -137,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardMultiUserManager;)Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardMultiUserManager;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardMultiUserManager;->mKeyguardCallback:Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
 
@@ -240,7 +237,6 @@
 
 .method private notifyMultiUserInfo(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x1
 
@@ -514,7 +510,6 @@
 
 .method public onUserInfoChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "KeyguardMultiUserManager"
 
@@ -529,7 +524,6 @@
 
 .method public onUserRemoved(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/sec/KeyguardMultiUserManager;->updateAndNotifyMultiUserInfo()V
 
@@ -538,7 +532,6 @@
 
 .method public onUserSwitched(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/sec/KeyguardMultiUserManager;->updateAndNotifyMultiUserInfo()V
 

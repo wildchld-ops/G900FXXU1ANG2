@@ -42,7 +42,6 @@
 
 .method public static decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -67,7 +66,6 @@
 
 .method public static encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -92,8 +90,6 @@
 
 .method public static executeCommand(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -392,8 +388,6 @@
 
 .method public static logOnAll(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -402,8 +396,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/SSRMUtil;->DEBUG:Z
 
@@ -417,8 +409,6 @@
 
 .method public static readSysfs(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -648,8 +638,6 @@
 
 .method public static sendTspCmd(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "/sys/class/sec/tsp/cmd"
 
@@ -664,7 +652,6 @@
 
 .method public static setFactoryMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/ssrm/SSRMUtil;->mIsFactoryMode:Z
 
@@ -673,8 +660,6 @@
 
 .method public static updateJitterBooster(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/SSRMUtil;->mIsFactoryMode:Z
 
@@ -704,8 +689,6 @@
 
 .method public static updateSideTouch(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/SSRMUtil;->mIsFactoryMode:Z
 
@@ -728,8 +711,6 @@
 
 .method public static updateTouchBooster(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/SSRMUtil;->mIsFactoryMode:Z
 
@@ -752,8 +733,6 @@
 
 .method public static updateTouchKeyBooster(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/SSRMUtil;->mIsFactoryMode:Z
 
@@ -772,9 +751,6 @@
 
 .method public static writeSysfs(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 
@@ -1062,7 +1038,6 @@
 
 .method public static x([I)Ljava/lang/String;
     .locals 3
-    .param p0    # [I
 
     new-instance v1, Ljava/lang/StringBuilder;
 

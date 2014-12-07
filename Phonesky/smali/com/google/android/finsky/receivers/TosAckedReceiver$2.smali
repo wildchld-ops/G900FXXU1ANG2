@@ -54,7 +54,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/Tos$AcceptTosResponse;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/Tos$AcceptTosResponse;
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->acceptedTosToken:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 
@@ -77,7 +76,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Tos$AcceptTosResponse;
 

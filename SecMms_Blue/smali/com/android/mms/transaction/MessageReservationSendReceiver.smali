@@ -46,7 +46,6 @@
 
 .method private static getWhere(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableDelaySending()Z
 
@@ -87,9 +86,6 @@
 
 .method private sendMessage(Ljava/lang/String;JI)J
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     const-string v5, "Mms/MessageReservationSendReceiver"
 
@@ -183,9 +179,6 @@
 
 .method private sendMmsMessage(Ljava/lang/String;JI)J
     .locals 24
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     const-string v3, "Mms/MessageReservationSendReceiver"
 
@@ -527,9 +520,6 @@
 
 .method private sendSameTimeMessages(JLjava/lang/String;J)V
     .locals 24
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     const-string v5, "Mms/MessageReservationSendReceiver"
 
@@ -855,9 +845,6 @@
 
 .method private sendSmsMessage(Ljava/lang/String;JI)J
     .locals 27
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     const-string v2, "Mms/MessageReservationSendReceiver"
 
@@ -1394,9 +1381,6 @@
 
 .method public static setNextAlarm(Landroid/content/Context;JI)V
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
 
     const-string v0, "Mms/MessageReservationSendReceiver"
 
@@ -1681,8 +1665,6 @@
 # virtual methods
 .method public failSendMessageMMS(Landroid/net/Uri;J)Z
     .locals 18
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
 
     const-string v1, "Mms/MessageReservationSendReceiver"
 
@@ -1944,8 +1926,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "Mms/MessageReservationSendReceiver"
 

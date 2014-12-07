@@ -37,7 +37,6 @@
 
 .method public static setSimIconChanged(Z)V
     .locals 3
-    .param p0    # Z
 
     const-string v0, "ServiceNumbersTabActivity"
 
@@ -210,7 +209,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x4
 
@@ -274,7 +272,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -378,7 +375,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/ActivityGroup;->getLocalActivityManager()Landroid/app/LocalActivityManager;
 

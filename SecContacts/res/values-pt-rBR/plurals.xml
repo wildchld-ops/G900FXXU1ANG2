@@ -41,7 +41,7 @@
         <item quantity="one">Caixa Postal</item>
     </plurals>
     <plurals name="copied_N">
-        <item quantity="other">&amp;lt;%d> contatos copiados.</item>
+        <item quantity="other">&amp;amp;lt;%d> contatos copiados.</item>
         <item quantity="one">%d contato copiado.</item>
     </plurals>
 </resources>

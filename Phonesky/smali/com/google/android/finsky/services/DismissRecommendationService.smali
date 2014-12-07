@@ -20,11 +20,6 @@
 
 .method public static getDismissPendingIntent(Landroid/content/Context;ILcom/google/android/finsky/api/model/Document;II)Landroid/app/PendingIntent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -115,7 +110,6 @@
 # virtual methods
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 17
-    .param p1    # Landroid/content/Intent;
 
     const-string v12, "appWidgetId"
 

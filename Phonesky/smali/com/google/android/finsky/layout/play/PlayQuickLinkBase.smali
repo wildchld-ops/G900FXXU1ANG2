@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/google/android/play/layout/AccessibleRelativeLayout;-><init>(Landroid/content/Context;)V
 
@@ -48,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/layout/AccessibleRelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -76,12 +73,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/protos/Browse$QuickLink;ILcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Browse$QuickLink;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/16 v3, 0x8
 
@@ -214,7 +205,6 @@
 
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -279,11 +269,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/play/PlayQuickLinkBase;->getPaddingLeft()I
 
@@ -411,8 +396,6 @@
 
 .method protected onMeasure(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v12, 0x40000000
 

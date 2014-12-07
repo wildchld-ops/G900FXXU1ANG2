@@ -33,7 +33,6 @@
 # virtual methods
 .method public onFailure(Lcom/nuance/connect/service/comm/Command;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v3, 0x0
 
@@ -103,7 +102,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction$1;->this$1:Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
 

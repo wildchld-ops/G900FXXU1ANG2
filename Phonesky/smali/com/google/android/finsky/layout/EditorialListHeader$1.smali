@@ -40,7 +40,6 @@
 # virtual methods
 .method public onUrlSpanClicked(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/EditorialListHeader$1;->val$navigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 

@@ -34,8 +34,6 @@
 
 .method public constructor <init>(Lorg/keyczar/AesKey;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lorg/keyczar/AesKey;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

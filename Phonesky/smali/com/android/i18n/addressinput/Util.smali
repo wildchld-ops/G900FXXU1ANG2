@@ -112,9 +112,6 @@
 
 .method static buildNameToKeyMap([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/util/Map;
     .locals 10
-    .param p0    # [Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -338,7 +335,6 @@
 
 .method static checkNotNull(Ljava/lang/Object;)V
     .locals 1
-    .param p0    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -354,8 +350,6 @@
 
 .method static checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -376,7 +370,6 @@
 
 .method static getLanguageSubtag(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v2, "(\\w{2,3})(?:[-_]\\w{4})?(?:[-_]\\w{2})?"
 
@@ -415,8 +408,6 @@
 
 .method static getWidgetCompatibleLanguageCode(Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/util/Locale;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
@@ -492,7 +483,6 @@
 
 .method static isExplicitLatinScript(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -539,8 +529,6 @@
 
 .method static varargs joinAndSkipNulls(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -606,7 +594,6 @@
 
 .method static trimToNull(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

@@ -130,7 +130,6 @@
 
 .method public constructor <init>(Ljava/lang/Boolean;)V
     .locals 0
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-direct {p0}, Lcom/google/gson/JsonElement;-><init>()V
 
@@ -141,7 +140,6 @@
 
 .method public constructor <init>(Ljava/lang/Number;)V
     .locals 0
-    .param p1    # Ljava/lang/Number;
 
     invoke-direct {p0}, Lcom/google/gson/JsonElement;-><init>()V
 
@@ -152,7 +150,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/gson/JsonElement;-><init>()V
 
@@ -163,7 +160,6 @@
 
 .method private static isIntegral(Lcom/google/gson/JsonPrimitive;)Z
     .locals 3
-    .param p0    # Lcom/google/gson/JsonPrimitive;
 
     const/4 v1, 0x0
 
@@ -206,7 +202,6 @@
 
 .method private static isPrimitiveOrString(Ljava/lang/Object;)Z
     .locals 7
-    .param p0    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 
@@ -254,7 +249,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 11
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 
@@ -722,7 +716,6 @@
 
 .method setValue(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Ljava/lang/Character;
 

@@ -50,7 +50,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/Delivery$DeliveryResponse;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Delivery$DeliveryResponse;
 
     const/4 v6, 0x0
 
@@ -148,7 +147,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Delivery$DeliveryResponse;
 

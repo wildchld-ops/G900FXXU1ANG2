@@ -38,9 +38,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;Ljava/lang/String;ZZLcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;Ljava/lang/reflect/Field;Z)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$1;->this$0:Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;
 
@@ -71,8 +68,6 @@
 # virtual methods
 .method read(Lcom/google/gson/stream/JsonReader;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Lcom/google/gson/stream/JsonReader;
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -103,8 +98,6 @@
 
 .method write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

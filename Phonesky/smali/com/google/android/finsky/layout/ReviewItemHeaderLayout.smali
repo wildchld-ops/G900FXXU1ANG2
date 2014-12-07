@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -95,11 +92,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 12
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/ReviewItemHeaderLayout;->getPaddingTop()I
 
@@ -314,8 +306,6 @@
 
 .method protected onMeasure(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/16 v11, 0x8
 
@@ -485,7 +475,6 @@
 
 .method public setReviewInfo(Lcom/google/android/finsky/protos/DocumentV2$Review;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$Review;
 
     const/16 v10, 0x8
 

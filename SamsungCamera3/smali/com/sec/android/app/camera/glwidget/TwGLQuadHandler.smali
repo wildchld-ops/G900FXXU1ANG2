@@ -184,8 +184,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;I)V
     .locals 12
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
 
     const v5, -0x3a63c000
 
@@ -520,7 +518,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -529,7 +526,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;)Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onQuadHandlerMoveListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mQuadHandlerMoveListener:Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onQuadHandlerMoveListener;
 
@@ -538,7 +534,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mDisable:Z
 
@@ -547,9 +542,6 @@
 
 .method private applyMovement(Landroid/graphics/PointF;Landroid/graphics/PointF;I)V
     .locals 10
-    .param p1    # Landroid/graphics/PointF;
-    .param p2    # Landroid/graphics/PointF;
-    .param p3    # I
 
     const/4 v0, 0x4
 
@@ -799,9 +791,6 @@
 
 .method private filterMovement(Landroid/graphics/PointF;Landroid/graphics/PointF;I)Z
     .locals 12
-    .param p1    # Landroid/graphics/PointF;
-    .param p2    # Landroid/graphics/PointF;
-    .param p3    # I
 
     const/4 v6, 0x4
 
@@ -1368,7 +1357,6 @@
 
 .method private getHandleIndex(Lcom/sec/android/glview/TwGLView;)I
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mBackGround:Lcom/sec/android/glview/TwGLImage;
 
@@ -1410,8 +1398,6 @@
 
 .method private isConverxPolygon([Landroid/graphics/PointF;I)Z
     .locals 10
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1738,10 +1724,6 @@
 
 .method public getMaxValue(FFFF)F
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-static {p1, p2}, Ljava/lang/Math;->max(FF)F
 
@@ -1768,10 +1750,6 @@
 
 .method public getMinValue(FFFF)F
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-static {p1, p2}, Ljava/lang/Math;->min(FF)F
 
@@ -1840,7 +1818,6 @@
 
 .method public moveBy([F)[F
     .locals 10
-    .param p1    # [F
 
     const/4 v6, 0x0
 
@@ -2067,11 +2044,6 @@
 
 .method public onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 21
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     move-object/from16 v0, p0
 
@@ -2430,9 +2402,6 @@
 
 .method public onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, 0x1
 
@@ -2514,9 +2483,6 @@
 
 .method public onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 15
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const-string v2, "TwGLQuadrangleHandler"
 
@@ -2692,8 +2658,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/16 v2, 0x30
 
@@ -3088,7 +3052,6 @@
 
 .method public setDisable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mDisable:Z
 
@@ -3113,7 +3076,6 @@
 
 .method public setDragVibration(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mBackGround:Lcom/sec/android/glview/TwGLImage;
 
@@ -3124,7 +3086,6 @@
 
 .method public setHandlerAreaBottomBoundary(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mHandler_area_bottom_boundary:I
 
@@ -3133,7 +3094,6 @@
 
 .method public setHandlerAreaTopBoundary(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mHandler_area_top_boundary:I
 
@@ -3232,8 +3192,6 @@
 
 .method public setMaxSizeF(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -3248,8 +3206,6 @@
 
 .method public setMinSizeF(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -3264,14 +3220,6 @@
 
 .method public setPosition(FFFFFFFF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mPoints:[F
 
@@ -3645,9 +3593,6 @@
 
 .method public setPosition(FFI)V
     .locals 9
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mLeftTop:[F
 
@@ -4071,7 +4016,6 @@
 
 .method public setResizeHandleDragVibration(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -4096,7 +4040,6 @@
 
 .method public setonHandlerDragChangedListener(Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onHandlerDragChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onHandlerDragChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mHandlerDragChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onHandlerDragChangedListener;
 
@@ -4105,7 +4048,6 @@
 
 .method public setonQuadHandlerMoveListener(Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onQuadHandlerMoveListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onQuadHandlerMoveListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;->mQuadHandlerMoveListener:Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$onQuadHandlerMoveListener;
 

@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/AvailableSurfaceWidgetListProvider;Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;Z)V
     .locals 0
-    .param p2    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/AvailableSurfaceWidgetListProvider$AvailableSurfaceWidget;->this$0:Lcom/android/launcher2/AvailableSurfaceWidgetListProvider;
 
@@ -88,7 +86,6 @@
 
 .method public dump(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SurfaceWidget TODO"
 
@@ -99,7 +96,6 @@
 
 .method public getCellSpan([I)V
     .locals 2
-    .param p1    # [I
 
     sget-object v0, Lcom/android/launcher2/WorkspaceSpanCalculator;->INSTANCE:Lcom/android/launcher2/WorkspaceSpanCalculator;
 
@@ -122,8 +118,6 @@
 
 .method public getPreview(II)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x2
 

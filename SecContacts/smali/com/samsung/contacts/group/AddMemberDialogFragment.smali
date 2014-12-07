@@ -22,7 +22,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/app/Fragment;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -71,7 +70,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -99,7 +97,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

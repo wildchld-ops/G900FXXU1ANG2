@@ -64,7 +64,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,8 +104,6 @@
 
 .method private setFlag(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -154,7 +151,6 @@
 
 .method public setAutoCancel(Z)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x10
 
@@ -165,7 +161,6 @@
 
 .method public setContentIntent(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mContentIntent:Landroid/app/PendingIntent;
 
@@ -174,7 +169,6 @@
 
 .method public setContentText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mContentText:Ljava/lang/CharSequence;
 
@@ -183,7 +177,6 @@
 
 .method public setContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mContentTitle:Ljava/lang/CharSequence;
 
@@ -192,7 +185,6 @@
 
 .method public setDeleteIntent(Landroid/app/PendingIntent;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -203,7 +195,6 @@
 
 .method public setLargeIcon(Landroid/graphics/Bitmap;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mLargeIcon:Landroid/graphics/Bitmap;
 
@@ -212,7 +203,6 @@
 
 .method public setNumber(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNumber:I
 
@@ -221,7 +211,6 @@
 
 .method public setPriority(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mPriority:I
 
@@ -230,7 +219,6 @@
 
 .method public setSmallIcon(I)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -241,7 +229,6 @@
 
 .method public setStyle(Landroid/support/v4/app/NotificationCompat$Style;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Landroid/support/v4/app/NotificationCompat$Style;
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mStyle:Landroid/support/v4/app/NotificationCompat$Style;
 
@@ -263,7 +250,6 @@
 
 .method public setTicker(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 

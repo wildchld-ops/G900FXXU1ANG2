@@ -33,8 +33,6 @@
 # virtual methods
 .method public onRemoveCompleted(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PackageManagerUtils$2;->val$listener:Lcom/google/android/finsky/utils/PackageManagerUtils$FreeSpaceListener;
 

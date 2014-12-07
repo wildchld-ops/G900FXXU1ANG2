@@ -138,7 +138,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DirectPenInputSettings;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     iget-object v0, p0, Lcom/android/settings/DirectPenInputSettings;->mListView:Landroid/widget/ListView;
 
@@ -147,7 +146,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DirectPenInputSettings;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     iget-object v0, p0, Lcom/android/settings/DirectPenInputSettings;->mActivity:Landroid/app/Activity;
 
@@ -156,7 +154,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DirectPenInputSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     iget-object v0, p0, Lcom/android/settings/DirectPenInputSettings;->URI_PEN_WRITING_BUDDY:Ljava/lang/String;
 
@@ -165,7 +162,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DirectPenInputSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     iget-object v0, p0, Lcom/android/settings/DirectPenInputSettings;->ACCESSIBILITY_MAGNIFICATION_ENABLED:Ljava/lang/String;
 
@@ -174,7 +170,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/DirectPenInputSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/DirectPenInputSettings;->isShowEnablePopup:Z
 
@@ -183,8 +178,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/DirectPenInputSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/DirectPenInputSettings;->isShowEnablePopup:Z
 
@@ -193,7 +186,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/DirectPenInputSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DirectPenInputSettings;->setPreferenceEnabled()V
 
@@ -202,7 +194,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/DirectPenInputSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DirectPenInputSettings;->startTryIt()V
 
@@ -211,7 +202,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/DirectPenInputSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     iget-object v0, p0, Lcom/android/settings/DirectPenInputSettings;->URI_TEXT_SUGGESTION:Ljava/lang/String;
 
@@ -220,7 +210,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/DirectPenInputSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/DirectPenInputSettings;
 
     iget-object v0, p0, Lcom/android/settings/DirectPenInputSettings;->actionBarSwitch:Landroid/widget/Switch;
 
@@ -413,7 +402,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -496,7 +484,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 15
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -733,8 +720,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -770,7 +755,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -943,8 +927,6 @@
 
 .method public showEnableDialog(Ljava/lang/String;Z)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const v7, 0x7f090e9e
 

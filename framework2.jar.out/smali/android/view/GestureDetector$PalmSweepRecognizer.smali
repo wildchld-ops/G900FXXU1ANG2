@@ -155,7 +155,6 @@
 
 .method static synthetic access$600(Landroid/view/GestureDetector$PalmSweepRecognizer;)Z
     .locals 1
-    .param p0    # Landroid/view/GestureDetector$PalmSweepRecognizer;
 
     iget-boolean v0, p0, Landroid/view/GestureDetector$PalmSweepRecognizer;->mPreSweepDown:Z
 
@@ -164,8 +163,6 @@
 
 .method static synthetic access$602(Landroid/view/GestureDetector$PalmSweepRecognizer;Z)Z
     .locals 0
-    .param p0    # Landroid/view/GestureDetector$PalmSweepRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/GestureDetector$PalmSweepRecognizer;->mPreSweepDown:Z
 
@@ -174,7 +171,6 @@
 
 .method static synthetic access$700(Landroid/view/GestureDetector$PalmSweepRecognizer;)Z
     .locals 1
-    .param p0    # Landroid/view/GestureDetector$PalmSweepRecognizer;
 
     iget-boolean v0, p0, Landroid/view/GestureDetector$PalmSweepRecognizer;->mSweepDown:Z
 
@@ -183,8 +179,6 @@
 
 .method static synthetic access$702(Landroid/view/GestureDetector$PalmSweepRecognizer;Z)Z
     .locals 0
-    .param p0    # Landroid/view/GestureDetector$PalmSweepRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/GestureDetector$PalmSweepRecognizer;->mSweepDown:Z
 
@@ -195,7 +189,6 @@
 # virtual methods
 .method public CalculateHorizontalSweepData(Landroid/view/GestureDetector$SurfaceTouchSharingData;)V
     .locals 9
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     const/16 v8, 0x2d
 
@@ -556,7 +549,6 @@
 
 .method public GetRangeNum(Landroid/view/GestureDetector$SurfaceTouchSharingData;)I
     .locals 3
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     const/4 v0, 0x0
 
@@ -771,7 +763,6 @@
 
 .method public Process(Landroid/view/GestureDetector$SurfaceTouchSharingData;)V
     .locals 2
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/view/GestureDetector$PalmSweepRecognizer;->mSmeanX:F
 
@@ -801,7 +792,6 @@
 
 .method public RocognizeHorizontalSweepData(Landroid/view/GestureDetector$SurfaceTouchSharingData;)V
     .locals 9
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     const/high16 v4, 0x43960000
 
@@ -1322,7 +1312,6 @@
 
 .method public SetArrMaxTouchMajor(Landroid/view/GestureDetector$SurfaceTouchSharingData;)V
     .locals 3
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     invoke-virtual {p0, p1}, Landroid/view/GestureDetector$PalmSweepRecognizer;->GetRangeNum(Landroid/view/GestureDetector$SurfaceTouchSharingData;)I
 

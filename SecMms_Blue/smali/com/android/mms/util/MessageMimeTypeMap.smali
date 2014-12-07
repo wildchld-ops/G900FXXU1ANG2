@@ -58,7 +58,6 @@
 
 .method public static getFileExtensionFromUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const-string v4, ""
 
@@ -2746,8 +2745,6 @@
 
 .method private loadEntry(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/util/MessageMimeTypeMap;->mMimeTypeToExtensionMap:Ljava/util/HashMap;
 
@@ -2773,7 +2770,6 @@
 # virtual methods
 .method public getExtensionFromMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2806,7 +2802,6 @@
 
 .method public getExtensionListFromMimeType(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2873,7 +2868,6 @@
 
 .method public getMimeTypeFromExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2906,7 +2900,6 @@
 
 .method public hasExtension(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2933,7 +2926,6 @@
 
 .method public hasMimeType(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

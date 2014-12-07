@@ -30,7 +30,6 @@
 
 .method static synthetic access$000(Lcom/android/server/ShutdownActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ShutdownActivity;
 
     iget-boolean v0, p0, Lcom/android/server/ShutdownActivity;->mReboot:Z
 
@@ -39,7 +38,6 @@
 
 .method static synthetic access$100(Lcom/android/server/ShutdownActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ShutdownActivity;
 
     iget-boolean v0, p0, Lcom/android/server/ShutdownActivity;->mConfirm:Z
 
@@ -50,7 +48,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -145,8 +142,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 

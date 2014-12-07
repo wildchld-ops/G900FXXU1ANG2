@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/IWifiOffloadManager;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/IWifiOffloadManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +26,6 @@
 # virtual methods
 .method public canAppOffload(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -77,7 +75,6 @@
 
 .method public checkAppForWiFiOffloading(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -119,7 +116,6 @@
 
 .method public checkAppNeedsMoveToFront(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -247,7 +243,6 @@
 
 .method public deleteWifidetails(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -473,7 +468,6 @@
 
 .method public isAppInWiFiBlackList(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -519,7 +513,6 @@
 
 .method public isAppRequiresWifi(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -565,7 +558,6 @@
 
 .method public isAppinWhiteList(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -746,7 +738,6 @@
 
 .method public notifyDialogDisplayed(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -870,8 +861,6 @@
 
 .method public setAppRunOverWiFiResult(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -913,7 +902,6 @@
 
 .method public setDontuseWifiPressed(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -996,7 +984,6 @@
 
 .method public setTestCurrentBaseStationID(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -1038,7 +1025,6 @@
 
 .method public setWiFiDialogStatus(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -1203,8 +1189,6 @@
 
 .method public tempBlockPopup(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -1250,8 +1234,6 @@
 
 .method public tryToTurnOnWifi(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -1297,8 +1279,6 @@
 
 .method public updateNewBaseStations(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;

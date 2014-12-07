@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/mms/location/SearchHandler;Lcom/samsung/mms/location/SearchHandler$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/mms/location/SearchHandler;
-    .param p2    # Lcom/samsung/mms/location/SearchHandler$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/SearchHandler$SearchItemClickListener;-><init>(Lcom/samsung/mms/location/SearchHandler;)V
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

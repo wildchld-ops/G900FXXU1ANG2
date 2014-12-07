@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/download/DownloadQueueImpl;Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;)V
     .locals 0
-    .param p2    # Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;
 
     iput-object p1, p0, Lcom/google/android/finsky/download/DownloadQueueImpl$ListenerNotifier;->this$0:Lcom/google/android/finsky/download/DownloadQueueImpl;
 

@@ -24,7 +24,6 @@
 # virtual methods
 .method public getImage(I)I
     .locals 5
-    .param p1    # I
 
     const v1, 0x7f0202b2
 

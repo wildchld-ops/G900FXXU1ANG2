@@ -32,7 +32,6 @@
 
 .method public static isRapidInputMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -61,7 +60,6 @@
 
 .method public static isTalkBackExploreByTouchMode(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -154,9 +152,6 @@
 
 .method public static loadPhoto(Landroid/content/Context;JLandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v1, 0x0
 
@@ -311,7 +306,6 @@
 
 .method public static makeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -426,8 +420,6 @@
 
 .method public static placeCall(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -442,9 +434,6 @@
 
 .method public static showWait(IILjava/lang/String;)Z
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v2, 0x3b
 

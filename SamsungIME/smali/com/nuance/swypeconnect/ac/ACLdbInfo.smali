@@ -56,9 +56,6 @@
 
 .method private constructor <init>(ILjava/lang/Boolean;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Boolean;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +112,6 @@
 
 .method private static getChunkCount(Ljava/io/RandomAccessFile;)I
     .locals 4
-    .param p0    # Ljava/io/RandomAccessFile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -158,7 +154,6 @@
 
 .method private static getLDBEndAddress(Ljava/io/RandomAccessFile;)I
     .locals 8
-    .param p0    # Ljava/io/RandomAccessFile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -256,8 +251,6 @@
 
 .method private static getValueAtPosition(Ljava/io/RandomAccessFile;I)I
     .locals 2
-    .param p0    # Ljava/io/RandomAccessFile;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -277,7 +270,6 @@
 
 .method private static isALM(Ljava/io/RandomAccessFile;)Z
     .locals 8
-    .param p0    # Ljava/io/RandomAccessFile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -359,7 +351,6 @@
 
 .method public static load(Ljava/lang/String;)Lcom/nuance/swypeconnect/ac/ACLdbInfo;
     .locals 12
-    .param p0    # Ljava/lang/String;
 
     const/4 v9, 0x0
 

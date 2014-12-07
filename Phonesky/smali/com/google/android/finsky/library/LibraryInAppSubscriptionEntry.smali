@@ -12,18 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;IJJJJZLjava/lang/String;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
-    .param p12    # J
-    .param p14    # Z
-    .param p15    # Ljava/lang/String;
-    .param p16    # Ljava/lang/String;
 
     invoke-static/range {p8 .. p9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 

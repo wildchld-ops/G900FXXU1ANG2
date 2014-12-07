@@ -28,7 +28,6 @@
 
 .method private static findMethod(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,8 +85,6 @@
 
 .method public static viewSetSystemUiVisibility(Landroid/view/View;I)V
     .locals 7
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     const/4 v6, 0x1
 

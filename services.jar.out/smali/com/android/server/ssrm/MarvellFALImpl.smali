@@ -227,7 +227,6 @@
 
 .method private checkFileExistence(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -1426,7 +1425,6 @@
 # virtual methods
 .method public checkNodeExistence(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1443,7 +1441,6 @@
 
 .method public initSupportedFrequency(I)[I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1488,8 +1485,6 @@
 
 .method public modifyToValues(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1600,8 +1595,6 @@
 
 .method public nativeAcquireDVFSLock(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, -0x1
 
@@ -1651,7 +1644,6 @@
 
 .method public nativeReleaseDVFSLock(I)I
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1701,7 +1693,6 @@
 
 .method public revertToDefault(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

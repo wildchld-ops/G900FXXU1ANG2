@@ -42,8 +42,6 @@
 
 .method public onGrabbed(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView$1;->this$0:Lcom/android/keyguard/KeyguardSelectorView;
 
@@ -74,16 +72,12 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onReleased(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView$1;->this$0:Lcom/android/keyguard/KeyguardSelectorView;
 
@@ -113,8 +107,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v3, 0x1
 

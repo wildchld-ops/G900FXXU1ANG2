@@ -178,7 +178,6 @@
 
 .method public showErrorDialog(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/util/ImsLowSignalWfc;->TAG:Ljava/lang/String;
 

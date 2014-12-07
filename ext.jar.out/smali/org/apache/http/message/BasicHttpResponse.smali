@@ -19,9 +19,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/ProtocolVersion;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -36,7 +33,6 @@
 
 .method public constructor <init>(Lorg/apache/http/StatusLine;)V
     .locals 1
-    .param p1    # Lorg/apache/http/StatusLine;
 
     const/4 v0, 0x0
 
@@ -47,9 +43,6 @@
 
 .method public constructor <init>(Lorg/apache/http/StatusLine;Lorg/apache/http/ReasonPhraseCatalog;Ljava/util/Locale;)V
     .locals 2
-    .param p1    # Lorg/apache/http/StatusLine;
-    .param p2    # Lorg/apache/http/ReasonPhraseCatalog;
-    .param p3    # Ljava/util/Locale;
 
     invoke-direct {p0}, Lorg/apache/http/message/AbstractHttpMessage;-><init>()V
 
@@ -115,7 +108,6 @@
 
 .method protected getReason(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/message/BasicHttpResponse;->reasonCatalog:Lorg/apache/http/ReasonPhraseCatalog;
 
@@ -148,7 +140,6 @@
 
 .method public setEntity(Lorg/apache/http/HttpEntity;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpEntity;
 
     iput-object p1, p0, Lorg/apache/http/message/BasicHttpResponse;->entity:Lorg/apache/http/HttpEntity;
 
@@ -157,7 +148,6 @@
 
 .method public setLocale(Ljava/util/Locale;)V
     .locals 4
-    .param p1    # Ljava/util/Locale;
 
     if-nez p1, :cond_0
 
@@ -199,7 +189,6 @@
 
 .method public setReasonPhrase(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -252,7 +241,6 @@
 
 .method public setStatusCode(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lorg/apache/http/message/BasicHttpResponse;->statusline:Lorg/apache/http/StatusLine;
 
@@ -275,8 +263,6 @@
 
 .method public setStatusLine(Lorg/apache/http/ProtocolVersion;I)V
     .locals 2
-    .param p1    # Lorg/apache/http/ProtocolVersion;
-    .param p2    # I
 
     new-instance v0, Lorg/apache/http/message/BasicStatusLine;
 
@@ -293,9 +279,6 @@
 
 .method public setStatusLine(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Lorg/apache/http/ProtocolVersion;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/http/message/BasicStatusLine;
 
@@ -308,7 +291,6 @@
 
 .method public setStatusLine(Lorg/apache/http/StatusLine;)V
     .locals 2
-    .param p1    # Lorg/apache/http/StatusLine;
 
     if-nez p1, :cond_0
 

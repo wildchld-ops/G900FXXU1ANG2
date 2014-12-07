@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/http/message/AbstractHttpMessage;-><init>()V
 
@@ -57,9 +55,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/apache/http/ProtocolVersion;
 
     new-instance v0, Lorg/apache/http/message/BasicRequestLine;
 
@@ -72,7 +67,6 @@
 
 .method public constructor <init>(Lorg/apache/http/RequestLine;)V
     .locals 2
-    .param p1    # Lorg/apache/http/RequestLine;
 
     invoke-direct {p0}, Lorg/apache/http/message/AbstractHttpMessage;-><init>()V
 

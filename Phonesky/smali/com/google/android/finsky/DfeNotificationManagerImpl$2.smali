@@ -50,7 +50,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/AckNotification$AckNotificationResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/AckNotification$AckNotificationResponse;
 
     const-string v0, "Notification [%s] successfully ack\'d."
 
@@ -87,7 +86,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/AckNotification$AckNotificationResponse;
 

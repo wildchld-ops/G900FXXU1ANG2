@@ -80,9 +80,6 @@
 
 .method protected createResponseParser(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpResponseFactory;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/io/HttpMessageParser;
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/HttpResponseFactory;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/conn/DefaultResponseParser;
 
@@ -95,9 +92,6 @@
 
 .method protected createSessionInputBuffer(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionInputBuffer;
     .locals 4
-    .param p1    # Ljava/net/Socket;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -134,9 +128,6 @@
 
 .method protected createSessionOutputBuffer(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionOutputBuffer;
     .locals 4
-    .param p1    # Ljava/net/Socket;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -197,8 +188,6 @@
 
 .method public openCompleted(ZLorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -229,8 +218,6 @@
 
 .method public opening(Ljava/net/Socket;Lorg/apache/http/HttpHost;)V
     .locals 2
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Lorg/apache/http/HttpHost;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -363,7 +350,6 @@
 
 .method public sendRequestHeader(Lorg/apache/http/HttpRequest;)V
     .locals 8
-    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -492,10 +478,6 @@
 
 .method public update(Ljava/net/Socket;Lorg/apache/http/HttpHost;ZLorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Z
-    .param p4    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

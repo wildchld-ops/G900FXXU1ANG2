@@ -103,8 +103,6 @@
 
 .method public static getCacheFile(Landroid/content/Context;I)Ljava/io/File;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -157,7 +155,6 @@
 
 .method private getDataStateForBackend(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -194,7 +191,6 @@
 # virtual methods
 .method filter(Ljava/util/List;I)V
     .locals 25
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -542,7 +538,6 @@
 
 .method public getConsumptionAppData(I)Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -572,7 +567,6 @@
 
 .method public getConsumptionAppDataSize(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -601,7 +595,6 @@
 
 .method public hasConsumptionAppData(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -626,7 +619,6 @@
 
 .method public isLoadingData(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -649,8 +641,6 @@
 
 .method public setConsumptionAppData(Landroid/content/Context;ILjava/util/List;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -703,9 +693,6 @@
 
 .method public setConsumptionAppData(Landroid/content/Context;Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;Z)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -822,7 +809,6 @@
 
 .method public startLoading(I)V
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -848,8 +834,6 @@
 
 .method public updateWidgets(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 

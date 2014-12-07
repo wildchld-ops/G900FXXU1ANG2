@@ -43,14 +43,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/usb/UsbNotificationHandler;IIIZZLandroid/app/PendingIntent;ZLjava/lang/String;)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Landroid/app/PendingIntent;
-    .param p8    # Z
-    .param p9    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -95,13 +87,6 @@
 
 .method private declared-synchronized setUsbObserverNotification(IIIZZLandroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Landroid/app/PendingIntent;
-    .param p7    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -519,7 +504,6 @@
 
 .method public setNotificationStayed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/usb/UsbNotificationHandler$NotificatoinUnit;->mStayNofiBar:Z
 

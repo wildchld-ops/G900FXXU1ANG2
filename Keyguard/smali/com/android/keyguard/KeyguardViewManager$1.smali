@@ -33,7 +33,6 @@
 # virtual methods
 .method public onSetBackground(Landroid/graphics/Bitmap;)V
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x1
 

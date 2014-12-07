@@ -102,9 +102,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiSecSetupActivity;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiSecSetupActivity;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WifiSecSetupActivity;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -113,7 +110,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiSecSetupActivity;)Landroid/widget/PopupMenu;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiSecSetupActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiSecSetupActivity;->popup:Landroid/widget/PopupMenu;
 
@@ -122,8 +118,6 @@
 
 .method private handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/high16 v4, 0x3f800000
 
@@ -375,7 +369,6 @@
 
 .method private updateLayoutMargin(Landroid/content/res/Configuration;)V
     .locals 11
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v5, 0x2
 
@@ -749,7 +742,6 @@
 # virtual methods
 .method public isPackageExists(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -794,7 +786,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -840,7 +831,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -891,7 +881,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -1035,7 +1024,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     iget-object v2, p0, Lcom/android/settings/wifi/WifiSecSetupActivity;->popup:Landroid/widget/PopupMenu;
 
@@ -1089,7 +1077,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

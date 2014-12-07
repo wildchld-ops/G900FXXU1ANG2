@@ -16971,8 +16971,6 @@
 
 .method private vectorParsing(Landroid/graphics/Path;Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;)V
     .locals 9
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;
 
     const/4 v3, 0x0
 
@@ -16999,10 +16997,6 @@
 
 .method private vectorParsing(Landroid/graphics/Path;Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;FF)V
     .locals 9
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v5, 0x0
 
@@ -17029,12 +17023,6 @@
 
 .method private vectorParsing(Landroid/graphics/Path;Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;FFFF)V
     .locals 9
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v7, 0x0
 
@@ -17061,14 +17049,6 @@
 
 .method private vectorParsing(Landroid/graphics/Path;Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;FFFFFF)V
     .locals 11
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath$SVGCommand;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     const/4 v7, 0x0
 
@@ -17390,9 +17370,6 @@
 # virtual methods
 .method public getPath(IFF)Landroid/graphics/Path;
     .locals 2
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SecLockPatternMorphEffectPath;->path:[Landroid/graphics/Path;
 

@@ -29,15 +29,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,15 +90,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -208,7 +190,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

@@ -163,7 +163,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const v0, 0x7fffffff
 
@@ -230,8 +229,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -242,9 +239,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v11, 0x0
 
@@ -918,9 +912,6 @@
 
 .method private resolveAdjustedSize(III)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move v0, p1
 
@@ -1385,7 +1376,6 @@
 
 .method private static scaleTypeToScaleToFit(Landroid/widget/ImageView$ScaleType;)Landroid/graphics/Matrix$ScaleToFit;
     .locals 2
-    .param p0    # Landroid/widget/ImageView$ScaleType;
 
     sget-object v0, Landroid/widget/ImageView;->sS2FArray:[Landroid/graphics/Matrix$ScaleToFit;
 
@@ -1400,7 +1390,6 @@
 
 .method private updateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 
@@ -1704,7 +1693,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/ImageView;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1773,7 +1761,6 @@
 
 .method public onCreateDrawableState(I)[I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ImageView;->mState:[I
 
@@ -1836,7 +1823,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1955,7 +1941,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1972,7 +1957,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1989,8 +1973,6 @@
 
 .method protected onMeasure(II)V
     .locals 25
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct/range {p0 .. p0}, Landroid/widget/ImageView;->resolveUri()V
 
@@ -2409,7 +2391,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2435,7 +2416,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onRtlPropertiesChanged(I)V
 
@@ -2453,7 +2433,6 @@
 
 .method public setAdjustViewBounds(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2471,7 +2450,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2500,7 +2478,6 @@
 
 .method public setBaseline(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/ImageView;->mBaseline:I
 
@@ -2516,7 +2493,6 @@
 
 .method public setBaselineAlignBottom(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/ImageView;->mBaselineAlignBottom:Z
 
@@ -2532,7 +2508,6 @@
 
 .method public final setColorFilter(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2545,8 +2520,6 @@
 
 .method public final setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/PorterDuff$Mode;
 
     new-instance v0, Landroid/graphics/PorterDuffColorFilter;
 
@@ -2559,7 +2532,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Landroid/widget/ImageView;->mColorFilter:Landroid/graphics/ColorFilter;
 
@@ -2581,7 +2553,6 @@
 
 .method public setCropToPadding(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/ImageView;->mCropToPadding:Z
 
@@ -2599,10 +2570,6 @@
 
 .method protected setFrame(IIII)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->setFrame(IIII)Z
 
@@ -2619,7 +2586,6 @@
 
 .method public setImageAlpha(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2630,7 +2596,6 @@
 
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2651,7 +2616,6 @@
 
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v2, p0, Landroid/widget/ImageView;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2691,7 +2655,6 @@
 
 .method public setImageLevel(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2713,7 +2676,6 @@
 
 .method public setImageMatrix(Landroid/graphics/Matrix;)V
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     if-eqz p1, :cond_0
 
@@ -2762,7 +2724,6 @@
 
 .method public setImageResource(I)V
     .locals 4
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2809,8 +2770,6 @@
 
 .method public setImageState([IZ)V
     .locals 1
-    .param p1    # [I
-    .param p2    # Z
 
     iput-object p1, p0, Landroid/widget/ImageView;->mState:[I
 
@@ -2830,7 +2789,6 @@
 
 .method public setImageURI(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2893,7 +2851,6 @@
 
 .method public setMaxHeight(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2904,7 +2861,6 @@
 
 .method public setMaxWidth(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -2915,7 +2871,6 @@
 
 .method public setScaleType(Landroid/widget/ImageView$ScaleType;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView$ScaleType;
 
     if-nez p1, :cond_0
 
@@ -2958,7 +2913,6 @@
 
 .method public setSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setSelected(Z)V
 
@@ -2969,7 +2923,6 @@
 
 .method public setVisibility(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3001,7 +2954,6 @@
 
 .method public final setXfermode(Landroid/graphics/Xfermode;)V
     .locals 1
-    .param p1    # Landroid/graphics/Xfermode;
 
     iget-object v0, p0, Landroid/widget/ImageView;->mXfermode:Landroid/graphics/Xfermode;
 
@@ -3023,7 +2975,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/ImageView;->mDrawable:Landroid/graphics/drawable/Drawable;
 

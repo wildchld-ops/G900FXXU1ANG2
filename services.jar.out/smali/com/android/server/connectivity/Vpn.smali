@@ -128,11 +128,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/ConnectivityService$VpnCallback;Landroid/os/INetworkManagementService;Landroid/net/IConnectivityManager;I)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/ConnectivityService$VpnCallback;
-    .param p3    # Landroid/os/INetworkManagementService;
-    .param p4    # Landroid/net/IConnectivityManager;
-    .param p5    # I
 
     const/4 v1, 0x1
 
@@ -259,7 +254,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/service/sm/aidl/ISecurityManager;)Lcom/sec/android/service/sm/aidl/ISecurityManager;
     .locals 0
-    .param p0    # Lcom/sec/android/service/sm/aidl/ISecurityManager;
 
     sput-object p0, Lcom/android/server/connectivity/Vpn;->mSecurityManager:Lcom/sec/android/service/sm/aidl/ISecurityManager;
 
@@ -268,8 +262,6 @@
 
 .method static synthetic access$100(Lcom/android/server/connectivity/Vpn;I)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Vpn;->onUserAdded(I)V
 
@@ -278,7 +270,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/connectivity/Vpn;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-boolean v0, p0, Lcom/android/server/connectivity/Vpn;->mRouteInfo:Z
 
@@ -287,7 +278,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/connectivity/Vpn;)Lcom/android/server/ConnectivityService$VpnCallback;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mCallback:Lcom/android/server/ConnectivityService$VpnCallback;
 
@@ -296,8 +286,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/connectivity/Vpn;I)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Vpn;->hideNotification(I)V
 
@@ -306,7 +294,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/connectivity/Vpn;)Lcom/android/server/connectivity/Vpn$Connection;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mConnection:Lcom/android/server/connectivity/Vpn$Connection;
 
@@ -315,8 +302,6 @@
 
 .method static synthetic access$1302(Lcom/android/server/connectivity/Vpn;Lcom/android/server/connectivity/Vpn$Connection;)Lcom/android/server/connectivity/Vpn$Connection;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # Lcom/android/server/connectivity/Vpn$Connection;
 
     iput-object p1, p0, Lcom/android/server/connectivity/Vpn;->mConnection:Lcom/android/server/connectivity/Vpn$Connection;
 
@@ -325,7 +310,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/connectivity/Vpn;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
@@ -334,9 +318,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/connectivity/Vpn;Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/connectivity/Vpn;->updateState(Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;)V
 
@@ -345,8 +326,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/connectivity/Vpn;I)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Vpn;->sendInterfaceStateToKnoxVpn(I)V
 
@@ -355,7 +334,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/connectivity/Vpn;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-boolean v0, p0, Lcom/android/server/connectivity/Vpn;->mEnableTeardown:Z
 
@@ -364,8 +342,6 @@
 
 .method static synthetic access$200(Lcom/android/server/connectivity/Vpn;I)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Vpn;->onUserRemoved(I)V
 
@@ -374,7 +350,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/connectivity/Vpn;)Landroid/net/INetworkManagementEventObserver;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mObserver:Landroid/net/INetworkManagementEventObserver;
 
@@ -383,8 +358,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/connectivity/Vpn;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # [Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Vpn;->copyStringArray([Ljava/lang/String;)[Ljava/lang/String;
 
@@ -395,7 +368,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/connectivity/Vpn;)Landroid/net/IConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mConnService:Landroid/net/IConnectivityManager;
 
@@ -404,7 +376,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/connectivity/Vpn;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
@@ -413,7 +384,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/connectivity/Vpn;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
@@ -422,7 +392,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/connectivity/Vpn;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-boolean v0, p0, Lcom/android/server/connectivity/Vpn;->mdppModeEnabled:Z
 
@@ -431,7 +400,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/connectivity/Vpn;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Vpn;->securityManagerReady()Z
 
@@ -442,7 +410,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/connectivity/Vpn;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Vpn;->testStrongSwanIntegrity()Z
 
@@ -453,7 +420,6 @@
 
 .method static synthetic access$2800([B)V
     .locals 0
-    .param p0    # [B
 
     invoke-static {p0}, Lcom/android/server/connectivity/Vpn;->wipeByteArray([B)V
 
@@ -462,7 +428,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/connectivity/Vpn;)I
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget v0, p0, Lcom/android/server/connectivity/Vpn;->mUserId:I
 
@@ -471,8 +436,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/connectivity/Vpn;I)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Vpn;->addVpnUserLocked(I)V
 
@@ -481,7 +444,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/connectivity/Vpn;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
@@ -490,7 +452,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/connectivity/Vpn;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -499,7 +460,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/connectivity/Vpn;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -508,7 +468,6 @@
 
 .method static synthetic access$500(Lcom/android/server/connectivity/Vpn;)Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mLegacyVpnRunner:Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
@@ -517,8 +476,6 @@
 
 .method static synthetic access$502(Lcom/android/server/connectivity/Vpn;Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     iput-object p1, p0, Lcom/android/server/connectivity/Vpn;->mLegacyVpnRunner:Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
@@ -527,7 +484,6 @@
 
 .method static synthetic access$600(Lcom/android/server/connectivity/Vpn;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mInterface:Ljava/lang/String;
 
@@ -536,8 +492,6 @@
 
 .method static synthetic access$602(Lcom/android/server/connectivity/Vpn;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/connectivity/Vpn;->mInterface:Ljava/lang/String;
 
@@ -546,8 +500,6 @@
 
 .method static synthetic access$700(Lcom/android/server/connectivity/Vpn;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Vpn;->jniCheck(Ljava/lang/String;)I
 
@@ -558,7 +510,6 @@
 
 .method static synthetic access$800(Lcom/android/server/connectivity/Vpn;)Landroid/util/SparseBooleanArray;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mVpnUsers:Landroid/util/SparseBooleanArray;
 
@@ -567,8 +518,6 @@
 
 .method static synthetic access$802(Lcom/android/server/connectivity/Vpn;Landroid/util/SparseBooleanArray;)Landroid/util/SparseBooleanArray;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # Landroid/util/SparseBooleanArray;
 
     iput-object p1, p0, Lcom/android/server/connectivity/Vpn;->mVpnUsers:Landroid/util/SparseBooleanArray;
 
@@ -577,7 +526,6 @@
 
 .method static synthetic access$900(Lcom/android/server/connectivity/Vpn;)Lcom/android/internal/net/VpnConfig;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mConfig:Lcom/android/internal/net/VpnConfig;
 
@@ -586,8 +534,6 @@
 
 .method static synthetic access$902(Lcom/android/server/connectivity/Vpn;Lcom/android/internal/net/VpnConfig;)Lcom/android/internal/net/VpnConfig;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Vpn;
-    .param p1    # Lcom/android/internal/net/VpnConfig;
 
     iput-object p1, p0, Lcom/android/server/connectivity/Vpn;->mConfig:Lcom/android/internal/net/VpnConfig;
 
@@ -596,7 +542,6 @@
 
 .method private addVpnUserLocked(I)V
     .locals 14
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Vpn;->enforceControlPermission()V
 
@@ -794,8 +739,6 @@
 
 .method private checkHostPrepare(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -964,7 +907,6 @@
 
 .method private copyString(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toCharArray()[C
 
@@ -995,7 +937,6 @@
 
 .method private copyStringArray([Ljava/lang/String;)[Ljava/lang/String;
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1106,7 +1047,6 @@
 
 .method private static findIPv4DefaultRoute(Landroid/net/LinkProperties;)Landroid/net/RouteInfo;
     .locals 4
-    .param p0    # Landroid/net/LinkProperties;
 
     invoke-virtual {p0}, Landroid/net/LinkProperties;->getAllRoutes()Ljava/util/Collection;
 
@@ -1362,7 +1302,6 @@
 
 .method private hideNotification(I)V
     .locals 11
-    .param p1    # I
 
     const v10, 0x1081078
 
@@ -1762,7 +1701,6 @@
 
 .method private isVpnConnectionSecure([Ljava/lang/String;)Z
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1834,7 +1772,6 @@
 
 .method private onUserAdded(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1893,7 +1830,6 @@
 
 .method private onUserRemoved(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1954,7 +1890,6 @@
 
 .method private removeVpnUserLocked(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2041,7 +1976,6 @@
 
 .method private sendDnsToKnoxVpn(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2179,7 +2113,6 @@
 
 .method private sendInterfaceStateToKnoxVpn(I)V
     .locals 6
-    .param p1    # I
 
     sget-boolean v3, Lcom/android/server/connectivity/Vpn;->DBG:Z
 
@@ -2306,8 +2239,6 @@
 
 .method private sendMessageToMvp(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mMvpMessenger:Landroid/os/Messenger;
 
@@ -2362,9 +2293,6 @@
 
 .method private showNotification(Ljava/lang/String;Landroid/graphics/Bitmap;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -2617,10 +2545,6 @@
 
 .method private declared-synchronized startLegacyVpn(Lcom/android/internal/net/VpnConfig;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/internal/net/VpnConfig;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -2779,8 +2703,6 @@
 
 .method private updateState(Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "Vpn"
 
@@ -2835,7 +2757,6 @@
 
 .method private static wipeByteArray([B)V
     .locals 2
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -2860,9 +2781,6 @@
 # virtual methods
 .method public createNotification(Ljava/lang/String;Landroid/graphics/Bitmap;Landroid/app/PendingIntent;)Landroid/app/Notification;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/app/PendingIntent;
 
     const/4 v8, 0x1
 
@@ -2973,7 +2891,6 @@
 
 .method public declared-synchronized establish(Lcom/android/internal/net/VpnConfig;)Landroid/os/ParcelFileDescriptor;
     .locals 24
-    .param p1    # Lcom/android/internal/net/VpnConfig;
 
     monitor-enter p0
 
@@ -4284,7 +4201,6 @@
 
 .method public interfaceRemoved(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn;->mObserver:Landroid/net/INetworkManagementEventObserver;
@@ -4304,8 +4220,6 @@
 
 .method public declared-synchronized interfaceStatusChanged(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4339,7 +4253,6 @@
 
 .method public isAddressCovered(Ljava/net/InetAddress;)Z
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
 
     const/4 v0, 0x0
 
@@ -4387,8 +4300,6 @@
 
 .method public declared-synchronized prepare(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4680,8 +4591,6 @@
 
 .method public declared-synchronized prepareForMvp(Ljava/lang/String;Landroid/os/Messenger;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Messenger;
 
     const/4 v3, 0x1
 
@@ -4889,8 +4798,6 @@
 
 .method public protect(Landroid/os/ParcelFileDescriptor;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -4967,9 +4874,6 @@
 
 .method public refreshNotification(Ljava/lang/String;ZI)V
     .locals 26
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     sget-boolean v22, Lcom/android/server/connectivity/Vpn;->DBG:Z
 
@@ -5497,7 +5401,6 @@
 
 .method public setEnableNotifications(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/Vpn;->mEnableNotif:Z
 
@@ -5506,7 +5409,6 @@
 
 .method public setEnableTeardown(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/Vpn;->mEnableTeardown:Z
 
@@ -5515,17 +5417,12 @@
 
 .method public setUserDataEnableEx(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public startLegacyVpn(Lcom/android/internal/net/VpnProfile;Landroid/security/KeyStore;Landroid/net/LinkProperties;)V
     .locals 23
-    .param p1    # Lcom/android/internal/net/VpnProfile;
-    .param p2    # Landroid/security/KeyStore;
-    .param p3    # Landroid/net/LinkProperties;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/connectivity/Vpn;->enforceControlPermission()V
 

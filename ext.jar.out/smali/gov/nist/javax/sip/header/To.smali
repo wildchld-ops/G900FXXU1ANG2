@@ -25,7 +25,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/header/From;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/header/From;
 
     const-string v0, "To"
 
@@ -110,7 +109,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
 
     const/4 v1, 0x2
 
@@ -170,7 +168,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Ljavax/sip/header/ToHeader;
 
@@ -322,7 +319,6 @@
 
 .method public setTag(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

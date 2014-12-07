@@ -96,9 +96,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface;Landroid/view/Window;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface;
-    .param p3    # Landroid/view/Window;
 
     const/4 v4, 0x0
 
@@ -197,7 +194,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/AlertController;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mButtonPositive:Landroid/widget/Button;
 
@@ -206,7 +202,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/AlertController;)Landroid/os/Message;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mButtonPositiveMessage:Landroid/os/Message;
 
@@ -215,7 +210,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/app/AlertController;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget v0, p0, Lcom/android/internal/app/AlertController;->mSingleChoiceItemLayout:I
 
@@ -224,7 +218,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/app/AlertController;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget v0, p0, Lcom/android/internal/app/AlertController;->mListItemLayout:I
 
@@ -233,8 +226,6 @@
 
 .method static synthetic access$1202(Lcom/android/internal/app/AlertController;Landroid/widget/ListAdapter;)Landroid/widget/ListAdapter;
     .locals 0
-    .param p0    # Lcom/android/internal/app/AlertController;
-    .param p1    # Landroid/widget/ListAdapter;
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -243,8 +234,6 @@
 
 .method static synthetic access$1302(Lcom/android/internal/app/AlertController;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/app/AlertController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/app/AlertController;->mCheckedItem:I
 
@@ -253,8 +242,6 @@
 
 .method static synthetic access$1402(Lcom/android/internal/app/AlertController;Landroid/widget/ListView;)Landroid/widget/ListView;
     .locals 0
-    .param p0    # Lcom/android/internal/app/AlertController;
-    .param p1    # Landroid/widget/ListView;
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mListView:Landroid/widget/ListView;
 
@@ -263,7 +250,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/app/AlertController;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mButtonNegative:Landroid/widget/Button;
 
@@ -272,7 +258,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/app/AlertController;)Landroid/os/Message;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mButtonNegativeMessage:Landroid/os/Message;
 
@@ -281,7 +266,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/app/AlertController;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mButtonNeutral:Landroid/widget/Button;
 
@@ -290,7 +274,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/app/AlertController;)Landroid/os/Message;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mButtonNeutralMessage:Landroid/os/Message;
 
@@ -299,7 +282,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/app/AlertController;)Landroid/content/DialogInterface;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mDialogInterface:Landroid/content/DialogInterface;
 
@@ -308,7 +290,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/app/AlertController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mHandler:Landroid/os/Handler;
 
@@ -317,7 +298,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/app/AlertController;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget v0, p0, Lcom/android/internal/app/AlertController;->mListLayout:I
 
@@ -326,7 +306,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/app/AlertController;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/AlertController;
 
     iget v0, p0, Lcom/android/internal/app/AlertController;->mMultiChoiceItemLayout:I
 
@@ -335,7 +314,6 @@
 
 .method static canTextInput(Landroid/view/View;)Z
     .locals 5
-    .param p0    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -393,7 +371,6 @@
 
 .method private centerButton(Landroid/widget/Button;)V
     .locals 6
-    .param p1    # Landroid/widget/Button;
 
     const/4 v5, 0x0
 
@@ -444,13 +421,6 @@
 
 .method private setBackground(Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/view/View;ZLandroid/content/res/TypedArray;ZLandroid/view/View;)V
     .locals 24
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # Landroid/widget/LinearLayout;
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
-    .param p5    # Landroid/content/res/TypedArray;
-    .param p6    # Z
-    .param p7    # Landroid/view/View;
 
     const/16 v21, 0x0
 
@@ -1111,7 +1081,6 @@
 
 .method private setupContent(Landroid/widget/LinearLayout;)V
     .locals 6
-    .param p1    # Landroid/widget/LinearLayout;
 
     const v5, 0x10202e5
 
@@ -1216,7 +1185,6 @@
 
 .method private setupTitle(Landroid/widget/LinearLayout;)Z
     .locals 10
-    .param p1    # Landroid/widget/LinearLayout;
 
     const v6, 0x10202d5
 
@@ -1594,7 +1562,6 @@
 
 .method private static shouldCenterSingleButton(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -1627,7 +1594,6 @@
 # virtual methods
 .method public getButton(I)Landroid/widget/Button;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1661,7 +1627,6 @@
 
 .method public getIconAttributeResId(I)I
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/util/TypedValue;
 
@@ -1732,8 +1697,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mScrollView:Landroid/widget/ScrollView;
 
@@ -1760,8 +1723,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertController;->mScrollView:Landroid/widget/ScrollView;
 
@@ -1788,10 +1749,6 @@
 
 .method public setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;Landroid/os/Message;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/content/DialogInterface$OnClickListener;
-    .param p4    # Landroid/os/Message;
 
     if-nez p4, :cond_0
 
@@ -1846,7 +1803,6 @@
 
 .method public setCustomTitle(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mCustomTitleView:Landroid/view/View;
 
@@ -1855,7 +1811,6 @@
 
 .method public setIcon(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/app/AlertController;->mIconId:I
 
@@ -1889,7 +1844,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -1911,7 +1865,6 @@
 
 .method public setInverseBackgroundForced(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/AlertController;->mForceInverseBackground:Z
 
@@ -1920,7 +1873,6 @@
 
 .method public setMessage(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mMessage:Ljava/lang/CharSequence;
 
@@ -1938,7 +1890,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mTitle:Ljava/lang/CharSequence;
 
@@ -1956,7 +1907,6 @@
 
 .method public setView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mView:Landroid/view/View;
 
@@ -1969,11 +1919,6 @@
 
 .method public setView(Landroid/view/View;IIII)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iput-object p1, p0, Lcom/android/internal/app/AlertController;->mView:Landroid/view/View;
 

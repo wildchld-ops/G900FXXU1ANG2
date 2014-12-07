@@ -180,7 +180,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const-wide/16 v5, 0x0
 
@@ -299,7 +298,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/ReportingManager;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/ReportingManager;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/manager/ReportingManager;->reportingStatisticsEnabled:Z
 
@@ -308,8 +306,6 @@
 
 .method static synthetic access$002(Lcom/nuance/connect/service/manager/ReportingManager;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/ReportingManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/manager/ReportingManager;->reportingStatisticsEnabled:Z
 
@@ -318,7 +314,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/manager/ReportingManager;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/ReportingManager;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/manager/ReportingManager;->reportingUsageEnabled:Z
 
@@ -327,8 +322,6 @@
 
 .method static synthetic access$102(Lcom/nuance/connect/service/manager/ReportingManager;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/ReportingManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/manager/ReportingManager;->reportingUsageEnabled:Z
 
@@ -337,7 +330,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/service/manager/ReportingManager;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/ReportingManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/ReportingManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -346,9 +338,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/service/manager/ReportingManager;ZZ)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/ReportingManager;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/manager/ReportingManager;->sendReportTracking(ZZ)V
 
@@ -357,8 +346,6 @@
 
 .method private cleanStoredReports(JZ)V
     .locals 1
-    .param p1    # J
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -379,7 +366,6 @@
 
 .method private determineUsageNextRun(Z)V
     .locals 11
-    .param p1    # Z
 
     const-string v7, "REPORTING_LAST_RUN"
 
@@ -461,7 +447,6 @@
 
 .method private enforceLimits(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -571,7 +556,6 @@
 
 .method private processAggregateResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v3, 0x1
 
@@ -595,7 +579,6 @@
 
 .method private processIndividualResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v3, 0x0
 
@@ -621,7 +604,6 @@
 
 .method private processTrackingResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 8
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v4, p1, Lcom/nuance/connect/service/comm/Response;->parameters:Ljava/util/HashMap;
 
@@ -866,8 +848,6 @@
 
 .method private sendReportTracking(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -1038,7 +1018,6 @@
 
 .method private sendReports(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v11, 0x1
 
@@ -1238,7 +1217,6 @@
 
 .method private setLastRunToNow(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1281,7 +1259,6 @@
 # virtual methods
 .method public addStatFromBundle(Landroid/os/Bundle;)V
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "STAT_TYPE"
 
@@ -1512,8 +1489,6 @@
 
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -1772,7 +1747,6 @@
 
 .method public onFailure(Lcom/nuance/connect/service/comm/Command;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v3, 0x1
 
@@ -1830,7 +1804,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 
@@ -1889,7 +1862,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 

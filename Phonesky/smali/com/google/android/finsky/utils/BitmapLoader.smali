@@ -76,10 +76,6 @@
 
 .method public constructor <init>(Lcom/android/volley/RequestQueue;IILcom/google/android/finsky/utils/TentativeGcRunner;)V
     .locals 5
-    .param p1    # Lcom/android/volley/RequestQueue;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/utils/TentativeGcRunner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -194,7 +190,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/utils/BitmapLoader;)Lcom/google/android/finsky/utils/TentativeGcRunner;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader;->mTentativeGcRunner:Lcom/google/android/finsky/utils/TentativeGcRunner;
 
@@ -203,8 +198,6 @@
 
 .method static synthetic access$1002(Lcom/google/android/finsky/utils/BitmapLoader;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/BitmapLoader;->mRunnable:Ljava/lang/Runnable;
 
@@ -213,9 +206,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/utils/BitmapLoader;Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/utils/BitmapLoader;->onGetImageSuccess(Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
@@ -224,8 +214,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/utils/BitmapLoader;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/utils/BitmapLoader;->onGetImageError(Ljava/lang/String;)V
 
@@ -234,7 +222,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/utils/BitmapLoader;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader;->mInFlightRequests:Ljava/util/HashMap;
 
@@ -243,7 +230,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/utils/BitmapLoader;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader;->mBatchedResponses:Ljava/util/HashMap;
 
@@ -252,8 +238,6 @@
 
 .method private batchResponse(Ljava/lang/String;Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader;->mBatchedResponses:Ljava/util/HashMap;
 
@@ -283,11 +267,6 @@
 
 .method private get(Ljava/lang/String;ZLjava/lang/String;Lcom/google/android/finsky/utils/BitmapLoader$RemoteRequestCreator;Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;)Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader$RemoteRequestCreator;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;
 
     if-nez p2, :cond_0
 
@@ -394,9 +373,6 @@
 
 .method private static getCacheKey(Ljava/lang/String;II)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -437,7 +413,6 @@
 
 .method private onGetImageError(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/android/finsky/utils/BitmapLoader;->mInFlightRequests:Ljava/util/HashMap;
 
@@ -491,8 +466,6 @@
 
 .method private onGetImageSuccess(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v3, 0x1
 
@@ -568,7 +541,6 @@
 # virtual methods
 .method public drain(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/google/android/finsky/utils/BitmapLoader;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -671,8 +643,6 @@
 
 .method public get(Ljava/lang/String;Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;)Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;
 
     const/4 v0, 0x0
 
@@ -685,10 +655,6 @@
 
 .method public get(Ljava/lang/String;Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;II)Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p1, p3, p4}, Lcom/google/android/finsky/utils/BitmapLoader;->getCacheKey(Ljava/lang/String;II)Ljava/lang/String;
 

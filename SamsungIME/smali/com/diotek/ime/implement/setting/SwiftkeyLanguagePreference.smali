@@ -82,11 +82,6 @@
 
 .method public constructor <init>(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;Lcom/touchtype_fluency/util/LanguagePack;Landroid/content/SharedPreferences;ZZ)V
     .locals 9
-    .param p1    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
-    .param p2    # Lcom/touchtype_fluency/util/LanguagePack;
-    .param p3    # Landroid/content/SharedPreferences;
-    .param p4    # Z
-    .param p5    # Z
 
     const v8, 0x7f030090
 
@@ -495,8 +490,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->showDownloadingState(Z)V
 
@@ -505,8 +498,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;I)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->drawProgressBarComplete(I)V
 
@@ -515,7 +506,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->sharedPreferences:Landroid/content/SharedPreferences;
 
@@ -524,7 +514,6 @@
 
 .method static synthetic access$1100(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->languageNameTitle:Ljava/lang/String;
 
@@ -533,7 +522,6 @@
 
 .method static synthetic access$1200(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Lcom/touchtype_fluency/util/LanguagePackManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mLanguagePackManager:Lcom/touchtype_fluency/util/LanguagePackManager;
 
@@ -542,7 +530,6 @@
 
 .method static synthetic access$1300(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->statusTextView:Landroid/widget/TextView;
 
@@ -551,7 +538,6 @@
 
 .method static synthetic access$1400(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->enableCheckBox:Landroid/widget/CheckBox;
 
@@ -560,7 +546,6 @@
 
 .method static synthetic access$1500(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Lcom/visionobjects/resourcemanager/VOLanguagePack;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mVOLanguagePack:Lcom/visionobjects/resourcemanager/VOLanguagePack;
 
@@ -569,7 +554,6 @@
 
 .method static synthetic access$1600(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->checkVaildVOLP()Z
 
@@ -580,7 +564,6 @@
 
 .method static synthetic access$1700(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->downloadSwiftkeyLanguage()V
 
@@ -589,7 +572,6 @@
 
 .method static synthetic access$1800(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mIsCheckboxDontShowDownloadForRoam:Z
 
@@ -598,8 +580,6 @@
 
 .method static synthetic access$1802(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mIsCheckboxDontShowDownloadForRoam:Z
 
@@ -608,7 +588,6 @@
 
 .method static synthetic access$1900(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mIsCheckboxDontShowDownloadForWifi:Z
 
@@ -617,8 +596,6 @@
 
 .method static synthetic access$1902(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mIsCheckboxDontShowDownloadForWifi:Z
 
@@ -627,7 +604,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->cancelDownload()V
 
@@ -636,7 +612,6 @@
 
 .method static synthetic access$2000(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mVOLanguagePackManager:Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -645,7 +620,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->downloadlanguagepack()V
 
@@ -654,7 +628,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Lcom/touchtype_fluency/util/LanguagePack;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mLanguagePack:Lcom/touchtype_fluency/util/LanguagePack;
 
@@ -663,8 +636,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->drawProgressBar(Z)V
 
@@ -673,7 +644,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->parent:Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
@@ -682,8 +652,6 @@
 
 .method static synthetic access$702(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mIsDownloaded:Z
 
@@ -700,7 +668,6 @@
 
 .method static synthetic access$802(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->mlanguageID:Ljava/lang/String;
 
@@ -709,7 +676,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->sharedPreferencesEditor:Landroid/content/SharedPreferences$Editor;
 
@@ -718,8 +684,6 @@
 
 .method static synthetic access$902(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;Landroid/content/SharedPreferences$Editor;)Landroid/content/SharedPreferences$Editor;
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
-    .param p1    # Landroid/content/SharedPreferences$Editor;
 
     iput-object p1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->sharedPreferencesEditor:Landroid/content/SharedPreferences$Editor;
 
@@ -968,12 +932,6 @@
 
 .method private createNotification(IIZZII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
 
     iget-object v5, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->parent:Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
@@ -1498,7 +1456,6 @@
 
 .method private drawProgressBar(Z)V
     .locals 18
-    .param p1    # Z
 
     const/4 v14, 0x0
 
@@ -1765,7 +1722,6 @@
 
 .method private drawProgressBarComplete(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -1844,8 +1800,6 @@
 
 .method public static getLanguageID(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1985,7 +1939,6 @@
 
 .method private isDownloaded(Lcom/touchtype_fluency/util/LanguagePack;)Z
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     const/4 v0, 0x0
 
@@ -2035,7 +1988,6 @@
 
 .method private sendAccessibilityEvent(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -2071,7 +2023,6 @@
 
 .method private showDownloadingState(Z)V
     .locals 5
-    .param p1    # Z
 
     const v4, 0x7f0903ed
 
@@ -2181,7 +2132,6 @@
 
 .method private updateNotificationBar(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -2322,7 +2272,6 @@
 
 .method protected CheckandSettheViewState(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f0903ed
 
@@ -2590,7 +2539,6 @@
 
 .method public IntentForDialog(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -2925,8 +2873,6 @@
 
 .method public getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -2946,7 +2892,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;->CheckandSettheViewState(Landroid/view/View;)V
 

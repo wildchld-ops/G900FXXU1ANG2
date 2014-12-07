@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/KeyguardAbsKeyInputView;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$6;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
@@ -55,7 +53,6 @@
 
 .method public onTick(J)V
     .locals 7
-    .param p1    # J
 
     const/4 v6, 0x1
 

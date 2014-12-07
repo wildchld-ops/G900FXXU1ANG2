@@ -86,8 +86,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/iab/MarketBillingService;Ljava/lang/String;)Landroid/accounts/Account;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/MarketBillingService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/iab/MarketBillingService;->getPreferredAccount(Ljava/lang/String;)Landroid/accounts/Account;
 
@@ -98,8 +96,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/iab/MarketBillingService;Lcom/google/android/finsky/protos/VendingProtos$PurchaseResultProto;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/MarketBillingService;
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseResultProto;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/iab/MarketBillingService;->purchaseResultToResponseCode(Lcom/google/android/finsky/protos/VendingProtos$PurchaseResultProto;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
@@ -118,7 +114,6 @@
 
 .method private getPreferredAccount(Ljava/lang/String;)Landroid/accounts/Account;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1, p0}, Lcom/google/android/finsky/billing/iab/InAppBillingUtils;->getPreferredAccount(Ljava/lang/String;Landroid/content/Context;)Landroid/accounts/Account;
 
@@ -129,7 +124,6 @@
 
 .method private purchaseResultToResponseCode(Lcom/google/android/finsky/protos/VendingProtos$PurchaseResultProto;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseResultProto;
 
     iget v0, p1, Lcom/google/android/finsky/protos/VendingProtos$PurchaseResultProto;->resultCode:I
 
@@ -167,9 +161,6 @@
 
 .method public static sendNotify(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -206,10 +197,6 @@
 
 .method public static sendResponseCode(Landroid/content/Context;Ljava/lang/String;JLcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
     const/4 v6, 0x2
 
@@ -296,7 +283,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/iab/MarketBillingService;->mBinder:Lcom/android/vending/billing/IMarketBillingService$Stub;
 

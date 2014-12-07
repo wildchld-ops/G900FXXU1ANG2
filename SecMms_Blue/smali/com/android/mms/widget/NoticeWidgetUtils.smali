@@ -14,7 +14,6 @@
 
 .method public static getFormattedDate(J)Ljava/lang/String;
     .locals 4
-    .param p0    # J
 
     new-instance v1, Ljava/util/Date;
 

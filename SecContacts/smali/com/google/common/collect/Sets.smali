@@ -14,7 +14,6 @@
 
 .method static equalsImpl(Ljava/util/Set;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -178,7 +177,6 @@
 
 .method public static newHashSetWithExpectedSize(I)Ljava/util/HashSet;
     .locals 2
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

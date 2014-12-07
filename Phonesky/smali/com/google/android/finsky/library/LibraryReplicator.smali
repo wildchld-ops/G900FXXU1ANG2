@@ -94,12 +94,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/library/SQLiteLibrary;Lcom/google/android/finsky/library/AccountLibrary;Landroid/os/Handler;Landroid/os/Handler;Z)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/library/SQLiteLibrary;
-    .param p3    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -138,7 +132,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/library/LibraryReplicator;)Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mCurrentRequest:Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;
 
@@ -147,8 +140,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/library/LibraryReplicator;Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;)Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;
 
     iput-object p1, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mCurrentRequest:Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;
 
@@ -157,7 +148,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/library/LibraryReplicator;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mReplicationRequests:Ljava/util/List;
 
@@ -166,8 +156,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/library/LibraryReplicator;Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/library/LibraryReplicator;->scheduleRequestAtFront(Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;)V
 
@@ -176,7 +164,6 @@
 
 .method static synthetic access$1100(Lcom/google/android/finsky/library/LibraryReplicator;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mNotificationHandler:Landroid/os/Handler;
 
@@ -193,8 +180,6 @@
 
 .method static synthetic access$1300(Lcom/google/android/finsky/library/LibraryReplicator;J)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/library/LibraryReplicator;->handleNextRequest(J)V
 
@@ -203,7 +188,6 @@
 
 .method static synthetic access$1400(Lcom/google/android/finsky/library/LibraryReplicator;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mBackgroundHandler:Landroid/os/Handler;
 
@@ -212,7 +196,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/library/LibraryReplicator;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mEnableDebugging:Z
 
@@ -221,11 +204,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/library/LibraryReplicator;ILcom/google/android/finsky/protos/Library$LibraryUpdate;Lcom/android/volley/VolleyError;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p3    # Lcom/android/volley/VolleyError;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/library/LibraryReplicator;->recordDebugEvent(ILcom/google/android/finsky/protos/Library$LibraryUpdate;Lcom/android/volley/VolleyError;Ljava/lang/String;)V
 
@@ -234,8 +212,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/library/LibraryReplicator;Ljava/lang/String;)Lcom/google/android/finsky/protos/LibraryReplication$ClientLibraryState;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/library/LibraryReplicator;->buildLibraryState(Ljava/lang/String;)Lcom/google/android/finsky/protos/LibraryReplication$ClientLibraryState;
 
@@ -246,7 +222,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/library/LibraryReplicator;)Lcom/google/android/finsky/api/DfeApi;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -255,7 +230,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/library/LibraryReplicator;)Lcom/google/android/finsky/library/SQLiteLibrary;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mSQLiteLibrary:Lcom/google/android/finsky/library/SQLiteLibrary;
 
@@ -264,9 +238,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/library/LibraryReplicator;Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
-    .param p1    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/library/LibraryReplicator;->internalApplyLibraryUpdate(Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)Z
 
@@ -277,7 +248,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/library/LibraryReplicator;)Lcom/google/android/finsky/library/AccountLibrary;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mAccountLibrary:Lcom/google/android/finsky/library/AccountLibrary;
 
@@ -286,7 +256,6 @@
 
 .method private buildLibraryState(Ljava/lang/String;)Lcom/google/android/finsky/protos/LibraryReplication$ClientLibraryState;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -371,8 +340,6 @@
 
 .method private createLibraryEntry(Lcom/google/android/finsky/protos/Library$LibraryMutation;Ljava/lang/String;)Lcom/google/android/finsky/library/LibraryEntry;
     .locals 53
-    .param p1    # Lcom/google/android/finsky/protos/Library$LibraryMutation;
-    .param p2    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -704,7 +671,6 @@
 
 .method private getSupportedLibraries([Ljava/lang/String;)[Ljava/lang/String;
     .locals 8
-    .param p1    # [Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -792,7 +758,6 @@
 
 .method private declared-synchronized handleNextRequest(J)V
     .locals 2
-    .param p1    # J
 
     monitor-enter p0
 
@@ -825,8 +790,6 @@
 
 .method private internalApplyLibraryUpdate(Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)Z
     .locals 18
-    .param p1    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p2    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1201,7 +1164,6 @@
 
 .method private declared-synchronized notifyMutationListeners(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1252,10 +1214,6 @@
 
 .method private declared-synchronized recordDebugEvent(ILcom/google/android/finsky/protos/Library$LibraryUpdate;Lcom/android/volley/VolleyError;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p3    # Lcom/android/volley/VolleyError;
-    .param p4    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1331,7 +1289,6 @@
 
 .method private declared-synchronized scheduleRequestAtFront(Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicator$ReplicationRequest;
 
     monitor-enter p0
 
@@ -1375,7 +1332,6 @@
 # virtual methods
 .method public declared-synchronized addListener(Lcom/google/android/finsky/library/LibraryReplicator$Listener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicator$Listener;
 
     monitor-enter p0
 
@@ -1400,8 +1356,6 @@
 
 .method public applyLibraryUpdate(Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mBackgroundHandler:Landroid/os/Handler;
 
@@ -1416,7 +1370,6 @@
 
 .method public dumpState(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/google/android/finsky/library/LibraryReplicator;->mAccountLibrary:Lcom/google/android/finsky/library/AccountLibrary;
 
@@ -1582,9 +1535,6 @@
 
 .method public declared-synchronized replicate([Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/String;)V
     .locals 3
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 

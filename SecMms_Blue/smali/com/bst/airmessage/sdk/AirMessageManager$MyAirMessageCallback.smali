@@ -44,8 +44,6 @@
 
 .method public onReplyAirMessage(JLcom/bst/airmessage/sdk/AirMessage;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Lcom/bst/airmessage/sdk/AirMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -76,9 +74,6 @@
 
 .method public updateReplyAirMessageStatus(Ljava/lang/String;JJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

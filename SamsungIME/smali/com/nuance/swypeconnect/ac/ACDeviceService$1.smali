@@ -36,7 +36,6 @@
 # virtual methods
 .method public handle(Lcom/nuance/connect/util/ConnectAction;)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Lcom/nuance/connect/util/ConnectAction;
 
     invoke-virtual {p1}, Lcom/nuance/connect/util/ConnectAction;->getFilter()Lcom/nuance/connect/util/ActionFilter;
 

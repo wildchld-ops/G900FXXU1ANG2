@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0}, Landroid/database/AbstractCursor;-><init>()V
 
@@ -83,7 +80,6 @@
 
 .method public getDouble(I)D
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -116,7 +112,6 @@
 
 .method public getFloat(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -149,7 +144,6 @@
 
 .method public getInt(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -182,7 +176,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -215,7 +208,6 @@
 
 .method public getShort(I)S
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -248,7 +240,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -277,7 +268,6 @@
 
 .method public isNull(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -313,8 +303,6 @@
 
 .method public onMove(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -327,7 +315,6 @@
 
 .method public registerContentObserver(Landroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -338,7 +325,6 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -349,7 +335,6 @@
 
 .method public unregisterContentObserver(Landroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 
@@ -360,7 +345,6 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/ExtendedCursor;->mCursor:Landroid/database/Cursor;
 

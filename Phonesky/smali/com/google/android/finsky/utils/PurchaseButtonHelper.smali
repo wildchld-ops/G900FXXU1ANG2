@@ -16,7 +16,6 @@
 # direct methods
 .method static synthetic access$000(Lcom/google/android/finsky/protos/Common$Offer;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/protos/Common$Offer;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/PurchaseButtonHelper;->shouldAddFullText(Lcom/google/android/finsky/protos/Common$Offer;)Z
 
@@ -27,11 +26,6 @@
 
 .method private static addOfferActions(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/Common$Offer;Landroid/accounts/Account;Lcom/google/android/finsky/library/Library;Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;)V
     .locals 17
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Lcom/google/android/finsky/library/Library;
-    .param p4    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;
 
     const/4 v4, 0x4
 
@@ -389,7 +383,6 @@
 
 .method public static canCreateClickListener(Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;)Z
     .locals 2
-    .param p0    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;
 
     iget v0, p0, Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;->actionType:I
 
@@ -416,12 +409,6 @@
 
 .method public static getActionClickListener(Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;ILcom/google/android/finsky/navigationmanager/NavigationManager;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 10
-    .param p0    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v3, 0x4
 
@@ -596,8 +583,6 @@
 
 .method public static getActionStatus(Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;
-    .param p1    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;->reset()V
 
@@ -671,9 +656,6 @@
 
 .method public static getActionStyle(Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;ILcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;
 
     const/4 v0, 0x0
 
@@ -684,10 +666,6 @@
 
 .method private static getActionStyleForFormat(Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;IZLcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;
 
     const/4 v1, 0x4
 
@@ -994,9 +972,6 @@
 
 .method public static getActionStyleLong(Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;ILcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;
 
     const/4 v0, 0x1
 
@@ -1007,17 +982,6 @@
 
 .method private static getActionsForApp(Landroid/accounts/Account;Landroid/accounts/Account;ZLcom/google/android/finsky/receivers/Installer;Lcom/google/android/finsky/library/Library;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/Common$Offer;Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;)V
     .locals 5
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/receivers/Installer;
-    .param p4    # Lcom/google/android/finsky/library/Library;
-    .param p5    # Lcom/google/android/finsky/library/Libraries;
-    .param p6    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p7    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p8    # Lcom/google/android/finsky/api/model/Document;
-    .param p9    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p10    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;
 
     const/4 v3, 0x0
 
@@ -1176,13 +1140,6 @@
 
 .method private static getActionsForMagazine(Landroid/accounts/Account;Lcom/google/android/finsky/library/Library;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/Common$Offer;Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;)V
     .locals 8
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/library/Library;
-    .param p2    # Lcom/google/android/finsky/library/Libraries;
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p4    # Lcom/google/android/finsky/api/model/Document;
-    .param p5    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p6    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;
 
     if-eqz p5, :cond_0
 
@@ -1394,14 +1351,6 @@
 
 .method private static getActionsForMovie(Landroid/accounts/Account;ZLcom/google/android/finsky/library/Library;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/Common$Offer;Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;)V
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Z
-    .param p2    # Lcom/google/android/finsky/library/Library;
-    .param p3    # Lcom/google/android/finsky/library/Libraries;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
-    .param p6    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p7    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;
 
     const/4 v2, 0x7
 
@@ -1462,13 +1411,6 @@
 
 .method public static getDocumentActions(Landroid/accounts/Account;Lcom/google/android/finsky/receivers/Installer;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;)V
     .locals 22
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/receivers/Installer;
-    .param p2    # Lcom/google/android/finsky/library/Libraries;
-    .param p3    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
-    .param p6    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;
 
     invoke-virtual/range {p6 .. p6}, Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;->reset()V
 
@@ -1738,8 +1680,6 @@
 
 .method public static getListingStyle(Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;
-    .param p1    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;->reset()V
 
@@ -1923,7 +1863,6 @@
 
 .method private static shouldAddFullText(Lcom/google/android/finsky/protos/Common$Offer;)Z
     .locals 4
-    .param p0    # Lcom/google/android/finsky/protos/Common$Offer;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/protos/Common$Offer;->hasMicros:Z
 

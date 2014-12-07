@@ -77,7 +77,6 @@
 
 .method private static close(Ljava/io/InputStream;)V
     .locals 4
-    .param p0    # Ljava/io/InputStream;
 
     if-eqz p0, :cond_0
 
@@ -108,7 +107,6 @@
 
 .method static getAlternateFormatsForCountry(I)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 3
-    .param p0    # I
 
     sget-object v0, Lcom/android/i18n/phonenumbers/MetadataManager;->countryCodeSet:Ljava/util/Set;
 
@@ -179,7 +177,6 @@
 
 .method private static loadMetadataFromFile(I)V
     .locals 10
-    .param p0    # I
 
     const-class v7, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher;
 

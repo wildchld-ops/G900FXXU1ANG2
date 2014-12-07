@@ -78,7 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -89,8 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -144,7 +141,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/play/PlayListView;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayListView;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/play/PlayListView;->captureCardPositions()V
 
@@ -184,7 +180,6 @@
 
 .method private capture(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -228,7 +223,6 @@
 
 .method private disableClipChildren(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     instance-of v2, p1, Landroid/view/ViewGroup;
 
@@ -262,8 +256,6 @@
 
 .method private traverse(Landroid/view/View;Z)V
     .locals 18
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     move-object/from16 v0, p1
 
@@ -654,7 +646,6 @@
 # virtual methods
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/ListView;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -665,7 +656,6 @@
 
 .method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     check-cast p1, Landroid/widget/ListAdapter;
 
@@ -676,7 +666,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/ListAdapter;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/play/PlayListView;->getAdapter()Landroid/widget/ListAdapter;
 
@@ -719,7 +708,6 @@
 
 .method public setAnimateChanges(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-boolean v1, Lcom/google/android/finsky/layout/play/PlayListView;->ENABLE_ANIMATION:Z
 

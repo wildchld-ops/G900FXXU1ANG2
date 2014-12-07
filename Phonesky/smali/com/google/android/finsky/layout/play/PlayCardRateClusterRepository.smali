@@ -190,7 +190,6 @@
 
 .method public static getMetadata(I)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterRepository;->sClusters:[Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
 

@@ -56,13 +56,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;I)V
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     const/high16 v5, 0x40000000
 
@@ -257,8 +250,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;->setDrawHighlight(Z)V
 
@@ -279,7 +270,6 @@
 
 .method private setDrawHighlight(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->getContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -560,8 +550,6 @@
 
 .method public keyDownEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;->onKeyDownEvent(ILandroid/view/KeyEvent;)Z
 
@@ -572,8 +560,6 @@
 
 .method public keyUpEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;->onKeyUpEvent(ILandroid/view/KeyEvent;)Z
 
@@ -794,8 +780,6 @@
 
 .method public onKeyDownEvent(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -862,8 +846,6 @@
 
 .method public onKeyUpEvent(ILandroid/view/KeyEvent;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-wide/16 v9, 0xc8
 
@@ -1083,7 +1065,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x3
 
@@ -1393,9 +1374,6 @@
 
 .method public declared-synchronized setButtonResources(Ljava/lang/String;IZ)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -1491,7 +1469,6 @@
 
 .method public setDim(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setDim(Z)V
 
@@ -1500,7 +1477,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -1525,7 +1501,6 @@
 
 .method public setMute(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;->mMute:Z
 
@@ -1546,8 +1521,6 @@
 
 .method public setResourceOffset(FF)Z
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;->mResourceOffsetX:F
 
@@ -1616,8 +1589,6 @@
 
 .method public setSize(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v2, 0x40000000
 
@@ -1707,7 +1678,6 @@
 
 .method public setText(Lcom/sec/android/glview/TwGLText;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLText;
 
     if-eqz p1, :cond_0
 
@@ -1727,7 +1697,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -1768,12 +1737,6 @@
 
 .method public setText(Ljava/lang/String;FIIZZ)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     new-instance v1, Lcom/sec/android/glview/TwGLText;
 
@@ -1832,10 +1795,6 @@
 
 .method public setText(Ljava/lang/String;FIZ)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v10, 0x2
 
@@ -1886,7 +1845,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 

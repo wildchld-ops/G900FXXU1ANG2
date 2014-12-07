@@ -1903,8 +1903,8 @@ Siz yeni istifadəçi yaratdıqdan sonra həmin adam quraşdırma prosesindən k
     <string name="accessibility_screen_magnification_summary">"Bu özəllik aktivləşdirildikdə, Siz ekrana üçqat tıklamaqla ekranı böyüdə və kiçildə bilərsiniz.
 
 Böyüdüləndən sonra bunları edə bilərsiniz:
-"<li><ul>"Panorama: İki və daha artıq barmağı ekran üstündə sürüşdürün.
-"<li>Zoom dərəcəsini təyin edin: İki və daha çox barmağı ekran üstündə sürüşdürərək bir-birinə yaxınlaşdırın və ya bir-birindən uzaqlaşdırın.</li></ul></li>"
+"<ul><li>"Panorama: İki və daha artıq barmağı ekran üstündə sürüşdürün.
+"<li>Zoom dərəcəsini təyin edin: İki və daha çox barmağı ekran üstündə sürüşdürərək bir-birinə yaxınlaşdırın və ya bir-birindən uzaqlaşdırın.</li></li></ul>"
 
 Siz həmçinin barmağınızın altında olanı üçqat tıklayaraq saxlamaqla müvəqqəti böyüdə bilərsiniz. Bu böyüdülmüş halda, barmağınızı ekranda sürüşdürərək müxtəlif hissələr axtara bilərsiniz. Barmağınızı ekrandan çəkən kimi ekran öncəki halına qayıdacaq.
 

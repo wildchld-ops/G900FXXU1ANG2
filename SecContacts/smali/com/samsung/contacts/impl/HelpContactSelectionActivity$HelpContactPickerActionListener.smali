@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/impl/HelpContactSelectionActivity;Lcom/samsung/contacts/impl/HelpContactSelectionActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/impl/HelpContactSelectionActivity;
-    .param p2    # Lcom/samsung/contacts/impl/HelpContactSelectionActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/impl/HelpContactSelectionActivity$HelpContactPickerActionListener;-><init>(Lcom/samsung/contacts/impl/HelpContactSelectionActivity;)V
 

@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V
     .locals 0
-    .param p1    # Lorg/apache/http/params/HttpParams;
-    .param p2    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;-><init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V
 
@@ -27,7 +25,6 @@
 # virtual methods
 .method protected createConnectionPool(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;
     .locals 3
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantPool;
 
@@ -47,9 +44,6 @@
 
 .method public releaseConnection(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V
     .locals 9
-    .param p1    # Lorg/apache/http/conn/ManagedClientConnection;
-    .param p2    # J
-    .param p4    # Ljava/util/concurrent/TimeUnit;
 
     instance-of v5, p1, Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantBasicPooledConnAdapter;
 
@@ -114,8 +108,6 @@
 
 .method public requestConnection(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ClientConnectionRequest;
     .locals 3
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v2, p0, Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager;->connectionPool:Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;
 

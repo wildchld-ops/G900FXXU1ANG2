@@ -14,8 +14,6 @@
 
 .method public static areEqual(Landroid/net/Uri;Landroid/net/Uri;)Z
     .locals 1
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/net/Uri;
 
     if-nez p0, :cond_0
 
@@ -46,7 +44,6 @@
 
 .method public static isEncodedContactUri(Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
@@ -63,7 +60,6 @@
 
 .method public static parseUriOrNull(Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -82,7 +78,6 @@
 
 .method public static uriToString(Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/Uri;
 
     if-nez p0, :cond_0
 

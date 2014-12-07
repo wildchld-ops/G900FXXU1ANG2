@@ -187,7 +187,6 @@
 
 .method public static decodeWebSafe(Ljava/lang/String;)[B
     .locals 23
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/Base64DecodingException;
@@ -468,7 +467,6 @@
 
 .method public static encodeWebSafe([B)Ljava/lang/String;
     .locals 13
-    .param p0    # [B
 
     const/4 v12, 0x2
 
@@ -682,7 +680,6 @@
 
 .method private static getByte(I)B
     .locals 5
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/Base64DecodingException;
@@ -738,7 +735,6 @@
 
 .method private static isWhiteSpace(I)Z
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lorg/keyczar/util/Base64Coder;->DECODE:[B
 

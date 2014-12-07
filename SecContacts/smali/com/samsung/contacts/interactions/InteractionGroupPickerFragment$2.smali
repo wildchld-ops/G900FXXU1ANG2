@@ -46,8 +46,6 @@
 # virtual methods
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/CursorLoader;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     # getter for: Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->mContext:Landroid/content/Context;
     invoke-static {}, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->access$200()Landroid/content/Context;
@@ -133,8 +131,6 @@
 
 .method public bridge synthetic onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment$2;->onCreateLoader(ILandroid/os/Bundle;)Landroid/content/CursorLoader;
 
@@ -145,7 +141,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 2
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -196,8 +191,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 

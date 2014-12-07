@@ -30,11 +30,11 @@
     <dimen name="kg_singleclock_margin_top">6.0dip</dimen>
     <dimen name="kg_dualclock_margin_top">20.0dip</dimen>
     <dimen name="kg_status_line_button_font_size">18.0dip</dimen>
-    <dimen name="overlay_button_margin_top">13.0dip</dimen>
-    <dimen name="kg_message_area_top_margin">2.0dip</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_00b4">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_00b5">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_00b6">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_00b7">false</item>
+    <dimen name="overlay_button_margin_top">13.0dip</dimen>
+    <dimen name="kg_message_area_top_margin">2.0dip</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_00ba">false</item>
 </resources>

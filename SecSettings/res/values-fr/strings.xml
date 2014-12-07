@@ -1385,7 +1385,7 @@ Vous pouvez aussi afficher ou masquer la poignée des fenêtres multiples en mai
     <string name="usb_tethering_errored_subtext">Erreur modem USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Le modem USB ne peut pas être désactivé pendant que vous utilisez SideSync. La désactivation du modem USB va entraîner la désactivation de SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">"Le modem USB ne peut pas être activé pendant que vous utilisez SideSync. L'activation du modem USB va entraîner la désactivation de SideSync."</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Modem Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Modem Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Partager connexion Internet du périphérique…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Connexion Internet du périphérique partagée avec 1 périphérique</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Connexion Internet du périphérique partagée avec %d périphériques</string>

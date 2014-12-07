@@ -36,7 +36,6 @@
 # virtual methods
 .method public onRequestCancelled(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "LocationMapActivity"
 
@@ -49,7 +48,6 @@
 
 .method public onRequestComplete(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "LocationMapActivity"
 
@@ -62,8 +60,6 @@
 
 .method public onRequestError(Lcom/nbi/common/NBIException;Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIException;
-    .param p2    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "LocationMapActivity"
 
@@ -76,8 +72,6 @@
 
 .method public onRequestProgress(ILcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "LocationMapActivity"
 
@@ -90,7 +84,6 @@
 
 .method public onRequestStart(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "LocationMapActivity"
 
@@ -103,7 +96,6 @@
 
 .method public onRequestTimeOut(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "LocationMapActivity"
 
@@ -116,8 +108,6 @@
 
 .method public onSuggestionSearch(Lcom/nbi/search/singlesearch/SuggestionSearchInformation;Lcom/nbi/search/singlesearch/SuggestionSearchRequest;)V
     .locals 6
-    .param p1    # Lcom/nbi/search/singlesearch/SuggestionSearchInformation;
-    .param p2    # Lcom/nbi/search/singlesearch/SuggestionSearchRequest;
 
     if-eqz p1, :cond_1
 

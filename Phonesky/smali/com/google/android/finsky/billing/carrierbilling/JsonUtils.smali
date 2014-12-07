@@ -6,8 +6,6 @@
 # direct methods
 .method public static getBoolean(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 2
-    .param p0    # Lorg/json/JSONObject;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
@@ -33,8 +31,6 @@
 
 .method public static getInt(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Integer;
     .locals 4
-    .param p0    # Lorg/json/JSONObject;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -70,8 +66,6 @@
 
 .method public static getLong(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Long;
     .locals 5
-    .param p0    # Lorg/json/JSONObject;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -107,8 +101,6 @@
 
 .method public static getObject(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 2
-    .param p0    # Lorg/json/JSONObject;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
@@ -130,8 +122,6 @@
 
 .method public static getString(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Lorg/json/JSONObject;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -166,7 +156,6 @@
 
 .method public static toLowerCase(Lorg/json/JSONObject;)Lorg/json/JSONObject;
     .locals 5
-    .param p0    # Lorg/json/JSONObject;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;

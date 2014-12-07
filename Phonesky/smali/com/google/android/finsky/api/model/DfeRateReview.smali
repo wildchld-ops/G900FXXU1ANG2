@@ -25,10 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/DfeModel;-><init>()V
 
@@ -61,7 +57,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v0, 0x1
 
@@ -76,7 +71,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Rev$ReviewResponse;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/Rev$ReviewResponse;
 
     const/4 v0, 0x1
 
@@ -91,7 +85,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Rev$ReviewResponse;
 

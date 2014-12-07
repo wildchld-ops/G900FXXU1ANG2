@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/MultiSocketInputStream;I)V
     .locals 5
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -144,7 +143,6 @@
 
 .method private reconnect(I)Z
     .locals 12
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

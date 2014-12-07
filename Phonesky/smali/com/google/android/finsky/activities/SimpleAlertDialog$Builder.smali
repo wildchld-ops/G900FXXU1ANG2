@@ -55,7 +55,6 @@
 
 .method public configureDialog(Lcom/google/android/finsky/activities/SimpleAlertDialog;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/activities/SimpleAlertDialog;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -77,9 +76,6 @@
 
 .method public setCallback(Landroid/support/v4/app/Fragment;ILandroid/os/Bundle;)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mTarget:Landroid/support/v4/app/Fragment;
 
@@ -106,7 +102,6 @@
 
 .method public setCanceledOnTouchOutside(Z)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -119,11 +114,6 @@
 
 .method public setEventLog(I[BIILandroid/accounts/Account;)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/accounts/Account;
 
     if-nez p5, :cond_0
 
@@ -171,7 +161,6 @@
 
 .method public setLayoutId(I)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -184,7 +173,6 @@
 
 .method public setMessage(Ljava/lang/String;)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -197,7 +185,6 @@
 
 .method public setMessageHtml(Ljava/lang/String;)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -210,7 +197,6 @@
 
 .method public setMessageId(I)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -223,7 +209,6 @@
 
 .method public setNegativeId(I)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -236,7 +221,6 @@
 
 .method public setPositiveId(I)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -249,7 +233,6 @@
 
 .method public setTitleId(I)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 
@@ -262,7 +245,6 @@
 
 .method public setViewConfiguration(Landroid/os/Bundle;)Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;->mArguments:Landroid/os/Bundle;
 

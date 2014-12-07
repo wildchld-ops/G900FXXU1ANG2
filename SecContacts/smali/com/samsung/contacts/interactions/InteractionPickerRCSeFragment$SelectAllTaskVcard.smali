@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p2    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment$SelectAllTaskVcard;-><init>(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 2
-    .param p1    # [Ljava/lang/Boolean;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment$SelectAllTaskVcard;->this$0:Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
 
@@ -80,7 +77,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Boolean;
 
@@ -93,7 +89,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 5
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -133,7 +128,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

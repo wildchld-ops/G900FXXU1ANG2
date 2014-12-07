@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>([Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 8
-    .param p1    # [Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     const/16 v7, 0x40
 
@@ -222,8 +220,6 @@
 
 .method static synthetic access$002(Lcom/android/internal/database/SortCursor;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/database/SortCursor;
-    .param p1    # I
 
     iput p1, p0, Landroid/database/AbstractCursor;->mPos:I
 
@@ -232,8 +228,6 @@
 
 .method static synthetic access$102(Lcom/android/internal/database/SortCursor;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/database/SortCursor;
-    .param p1    # I
 
     iput p1, p0, Landroid/database/AbstractCursor;->mPos:I
 
@@ -316,7 +310,6 @@
 
 .method public getBlob(I)[B
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -425,7 +418,6 @@
 
 .method public getDouble(I)D
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -438,7 +430,6 @@
 
 .method public getFloat(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -451,7 +442,6 @@
 
 .method public getInt(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -464,7 +454,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -477,7 +466,6 @@
 
 .method public getShort(I)S
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -490,7 +478,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -503,7 +490,6 @@
 
 .method public getType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -516,7 +502,6 @@
 
 .method public isNull(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/database/SortCursor;->mCursor:Landroid/database/Cursor;
 
@@ -529,8 +514,6 @@
 
 .method public onMove(II)Z
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v12, -0x1
 
@@ -817,7 +800,6 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 3
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v2, p0, Lcom/android/internal/database/SortCursor;->mCursors:[Landroid/database/Cursor;
 
@@ -896,7 +878,6 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 3
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v2, p0, Lcom/android/internal/database/SortCursor;->mCursors:[Landroid/database/Cursor;
 

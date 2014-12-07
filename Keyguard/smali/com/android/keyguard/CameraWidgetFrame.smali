@@ -90,11 +90,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Lcom/android/keyguard/CameraWidgetFrame$Callbacks;Lcom/android/keyguard/KeyguardActivityLauncher;Lcom/android/keyguard/KeyguardActivityLauncher$CameraWidgetInfo;Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/keyguard/CameraWidgetFrame$Callbacks;
-    .param p3    # Lcom/android/keyguard/KeyguardActivityLauncher;
-    .param p4    # Lcom/android/keyguard/KeyguardActivityLauncher$CameraWidgetInfo;
-    .param p5    # Landroid/view/View;
 
     const v3, 0x7f060067
 
@@ -266,7 +261,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/CameraWidgetFrame;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     invoke-direct {p0}, Lcom/android/keyguard/CameraWidgetFrame;->transitionToCamera()V
 
@@ -275,7 +269,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/CameraWidgetFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     iget-boolean v0, p0, Lcom/android/keyguard/CameraWidgetFrame;->mTransitioning:Z
 
@@ -284,7 +277,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/CameraWidgetFrame;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     invoke-direct {p0}, Lcom/android/keyguard/CameraWidgetFrame;->render()V
 
@@ -293,7 +285,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/CameraWidgetFrame;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     invoke-direct {p0}, Lcom/android/keyguard/CameraWidgetFrame;->onSecureCameraActivityStarted()V
 
@@ -302,8 +293,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/CameraWidgetFrame;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/CameraWidgetFrame;->onKeyguardVisibilityChanged(Z)V
 
@@ -312,7 +301,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/CameraWidgetFrame;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     iget-object v0, p0, Lcom/android/keyguard/CameraWidgetFrame;->mHandler:Landroid/os/Handler;
 
@@ -321,7 +309,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/CameraWidgetFrame;)J
     .locals 2
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     iget-wide v0, p0, Lcom/android/keyguard/CameraWidgetFrame;->mLaunchCameraStart:J
 
@@ -330,8 +317,6 @@
 
 .method static synthetic access$302(Lcom/android/keyguard/CameraWidgetFrame;J)J
     .locals 0
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/keyguard/CameraWidgetFrame;->mLaunchCameraStart:J
 
@@ -356,7 +341,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/CameraWidgetFrame;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     iget-object v0, p0, Lcom/android/keyguard/CameraWidgetFrame;->mSecureCameraActivityStartedRunnable:Ljava/lang/Runnable;
 
@@ -365,7 +349,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/CameraWidgetFrame;)Lcom/android/keyguard/KeyguardActivityLauncher;
     .locals 1
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     iget-object v0, p0, Lcom/android/keyguard/CameraWidgetFrame;->mActivityLauncher:Lcom/android/keyguard/KeyguardActivityLauncher;
 
@@ -374,7 +357,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/CameraWidgetFrame;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     iget-object v0, p0, Lcom/android/keyguard/CameraWidgetFrame;->mTransitionToCameraEndAction:Ljava/lang/Runnable;
 
@@ -383,7 +365,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/CameraWidgetFrame;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/CameraWidgetFrame;
 
     invoke-direct {p0}, Lcom/android/keyguard/CameraWidgetFrame;->recover()V
 
@@ -435,9 +416,6 @@
 
 .method public static create(Landroid/content/Context;Lcom/android/keyguard/CameraWidgetFrame$Callbacks;Lcom/android/keyguard/KeyguardActivityLauncher;)Lcom/android/keyguard/CameraWidgetFrame;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/keyguard/CameraWidgetFrame$Callbacks;
-    .param p2    # Lcom/android/keyguard/KeyguardActivityLauncher;
 
     const/4 v0, 0x0
 
@@ -479,7 +457,6 @@
 
 .method private enableWindowExitAnimation(Z)V
     .locals 8
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getRootView()Landroid/view/View;
 
@@ -568,8 +545,6 @@
 
 .method private static getPreviewWidget(Landroid/content/Context;Lcom/android/keyguard/KeyguardActivityLauncher$CameraWidgetInfo;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/keyguard/KeyguardActivityLauncher$CameraWidgetInfo;
 
     iget v0, p1, Lcom/android/keyguard/KeyguardActivityLauncher$CameraWidgetInfo;->layoutId:I
 
@@ -592,7 +567,6 @@
 
 .method private static inflateGenericWidgetView(Landroid/content/Context;)Landroid/view/View;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -632,8 +606,6 @@
 
 .method private static inflateWidgetView(Landroid/content/Context;Lcom/android/keyguard/KeyguardActivityLauncher$CameraWidgetInfo;)Landroid/view/View;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/keyguard/KeyguardActivityLauncher$CameraWidgetInfo;
 
     sget-boolean v5, Lcom/android/keyguard/CameraWidgetFrame;->DEBUG:Z
 
@@ -757,7 +729,6 @@
 
 .method private onKeyguardVisibilityChanged(Z)V
     .locals 9
-    .param p1    # Z
 
     const-wide/16 v7, 0x0
 
@@ -2061,7 +2032,6 @@
 # virtual methods
 .method public onActive(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/CameraWidgetFrame;->mActive:Z
 
@@ -2082,7 +2052,6 @@
 
 .method public onBouncerShowing(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2102,7 +2071,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     sget-boolean v0, Lcom/android/keyguard/CameraWidgetFrame;->DEBUG:Z
 
@@ -2268,10 +2236,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sget-boolean v0, Lcom/android/keyguard/CameraWidgetFrame;->DEBUG:Z
 
@@ -2370,7 +2334,6 @@
 
 .method public onUserInteraction(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -2476,7 +2439,6 @@
 
 .method public setInsets(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     sget-boolean v0, Lcom/android/keyguard/CameraWidgetFrame;->DEBUG:Z
 
@@ -2514,14 +2476,12 @@
 
 .method public setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnLongClickListener;
 
     return-void
 .end method
 
 .method public setUseFastTransition(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/CameraWidgetFrame;->mUseFastTransition:Z
 

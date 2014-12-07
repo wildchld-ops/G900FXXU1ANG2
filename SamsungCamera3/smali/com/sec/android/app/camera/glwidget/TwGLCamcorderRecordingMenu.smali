@@ -1129,11 +1129,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;I)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -1292,7 +1287,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)Lcom/sec/android/glview/TwGLText;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mIndicatorRecRemainTimeText:Lcom/sec/android/glview/TwGLText;
 
@@ -1301,7 +1295,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mDualRecordingHandler:Landroid/os/Handler;
 
@@ -1310,7 +1303,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mDualRecordingTimeUpdateRepeat:I
 
@@ -1319,8 +1311,6 @@
 
 .method static synthetic access$220(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;I)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mDualRecordingTimeUpdateRepeat:I
 
@@ -1333,7 +1323,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1342,7 +1331,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1351,7 +1339,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1360,7 +1347,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1369,7 +1355,6 @@
 
 .method private hmsConvert(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0xa
 
@@ -5033,7 +5018,6 @@
 
 .method public doDimmingRecordingButtons(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mPauseButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -5222,7 +5206,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -5300,7 +5283,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v6, 0x2
 
@@ -5972,8 +5954,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -6001,8 +5981,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -6092,7 +6070,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -6675,7 +6652,6 @@
 
 .method public onRecordingDualModeSelected(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -8262,7 +8238,6 @@
 
 .method public setRecordingState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCamcorderRecordingMenu;->mRecordingState:I
 
@@ -8683,7 +8658,6 @@
 
 .method public updateProgressBarText(J)V
     .locals 13
-    .param p1    # J
 
     const-wide/16 v11, 0x0
 
@@ -9039,7 +9013,6 @@
 
 .method public updateRecordingTime(I)V
     .locals 9
-    .param p1    # I
 
     const-wide/16 v7, 0x3e8
 

@@ -63,8 +63,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -257,7 +255,6 @@
 
 .method private isSupport(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -600,7 +597,6 @@
 
 .method public getItem(I)Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;
     .locals 9
-    .param p1    # I
 
     iget-object v6, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonFrequentContactAdapter;->mData:Ljava/util/ArrayList;
 
@@ -677,7 +673,6 @@
 
 .method public onDismiss(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -698,7 +693,6 @@
 
 .method public onHide(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -719,7 +713,6 @@
 
 .method public onShow(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonFrequentContactAdapter;->updateData()V
 

@@ -93,7 +93,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/appstate/InstallerDataStore$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;-><init>()V
 
@@ -102,23 +101,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;IILcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;JILjava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IJLjava/lang/String;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
-    .param p6    # J
-    .param p8    # I
-    .param p9    # Ljava/lang/String;
-    .param p10    # J
-    .param p12    # Ljava/lang/String;
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
-    .param p15    # Ljava/lang/String;
-    .param p16    # I
-    .param p17    # J
-    .param p19    # Ljava/lang/String;
-    .param p20    # [Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -187,8 +169,6 @@
 
 .method static synthetic access$1002(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->externalReferrer:Ljava/lang/String;
 
@@ -197,8 +177,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->packageName:Ljava/lang/String;
 
@@ -207,8 +185,6 @@
 
 .method static synthetic access$1102(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->accountName:Ljava/lang/String;
 
@@ -217,8 +193,6 @@
 
 .method static synthetic access$1202(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->title:Ljava/lang/String;
 
@@ -227,8 +201,6 @@
 
 .method static synthetic access$1302(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->flags:I
 
@@ -237,8 +209,6 @@
 
 .method static synthetic access$1402(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->continueUrl:Ljava/lang/String;
 
@@ -247,8 +217,6 @@
 
 .method static synthetic access$1502(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;J)J
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->lastUpdateTimestampMs:J
 
@@ -257,8 +225,6 @@
 
 .method static synthetic access$1602(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->accountForUpdate:Ljava/lang/String;
 
@@ -267,8 +233,6 @@
 
 .method static synthetic access$1702(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->autoAcquireTags:[Ljava/lang/String;
 
@@ -277,8 +241,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;)Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->autoUpdate:Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
 
@@ -287,8 +249,6 @@
 
 .method static synthetic access$302(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->desiredVersion:I
 
@@ -297,8 +257,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->lastNotifiedVersion:I
 
@@ -307,8 +265,6 @@
 
 .method static synthetic access$502(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;)Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->deliveryData:Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
 
@@ -317,8 +273,6 @@
 
 .method static synthetic access$602(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;J)J
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->deliveryDataTimestampMs:J
 
@@ -327,8 +281,6 @@
 
 .method static synthetic access$702(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->installerState:I
 
@@ -337,8 +289,6 @@
 
 .method static synthetic access$802(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->downloadUri:Ljava/lang/String;
 
@@ -347,8 +297,6 @@
 
 .method static synthetic access$902(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;J)J
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->firstDownloadMs:J
 

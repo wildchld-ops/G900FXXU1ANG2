@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/remoting/RadioConnection;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/remoting/RadioConnection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +45,6 @@
 # virtual methods
 .method public ensureRouteToHost(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/finsky/remoting/RadioConnectionException;

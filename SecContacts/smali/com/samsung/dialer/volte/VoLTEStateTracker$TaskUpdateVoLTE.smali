@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/dialer/volte/VoLTEStateTracker;Lcom/samsung/dialer/volte/OnVoLTEStateChangedListener;)V
     .locals 0
-    .param p2    # Lcom/samsung/dialer/volte/OnVoLTEStateChangedListener;
 
     iput-object p1, p0, Lcom/samsung/dialer/volte/VoLTEStateTracker$TaskUpdateVoLTE;->this$0:Lcom/samsung/dialer/volte/VoLTEStateTracker;
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method protected varargs doInBackground([Landroid/content/Context;)Ljava/lang/Boolean;
     .locals 3
-    .param p1    # [Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -70,7 +68,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/content/Context;
 
@@ -83,7 +80,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Ljava/lang/Boolean;
 
     iget-object v0, p0, Lcom/samsung/dialer/volte/VoLTEStateTracker$TaskUpdateVoLTE;->mListener:Lcom/samsung/dialer/volte/OnVoLTEStateChangedListener;
 
@@ -98,7 +94,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

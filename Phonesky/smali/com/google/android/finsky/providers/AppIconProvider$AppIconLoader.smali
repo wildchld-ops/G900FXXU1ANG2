@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,7 +118,6 @@
 
 .method public static fileNameFromPackage(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -145,7 +142,6 @@
 
 .method public static declared-synchronized initialize([Ljava/io/File;)V
     .locals 8
-    .param p0    # [Ljava/io/File;
 
     const-class v6, Lcom/google/android/finsky/providers/AppIconProvider$AppIconLoader;
 
@@ -215,7 +211,6 @@
 
 .method public static isTempFileName(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "thmb_"
 
@@ -228,7 +223,6 @@
 
 .method public static packageNameFromFile(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x5
 
@@ -251,8 +245,6 @@
 
 .method public loadToFileFromBlob(Ljava/lang/String;Lcom/google/android/finsky/providers/AppIconProvider$TimedOnCompleteListener;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/providers/AppIconProvider$TimedOnCompleteListener;
 
     sget-object v2, Lcom/google/android/finsky/providers/AppIconProvider$AppIconLoader;->sIconCache:Lcom/google/android/finsky/providers/AppIconProvider$IconCache;
 
@@ -338,8 +330,6 @@
 
 .method public loadToFileFromUrl(Ljava/lang/String;Lcom/google/android/finsky/providers/AppIconProvider$TimedOnCompleteListener;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/providers/AppIconProvider$TimedOnCompleteListener;
 
     sget-object v2, Lcom/google/android/finsky/providers/AppIconProvider$AppIconLoader;->sIconCache:Lcom/google/android/finsky/providers/AppIconProvider$IconCache;
 

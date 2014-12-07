@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/DirectShareService;ILjava/lang/String;ZLjava/lang/String;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/DirectShareService$SendInfo;->this$0:Lcom/sec/android/app/camera/DirectShareService;
 

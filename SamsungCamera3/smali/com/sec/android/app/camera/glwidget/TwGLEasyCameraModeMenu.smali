@@ -123,11 +123,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x2
 
@@ -345,7 +340,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -425,8 +419,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x4
 
@@ -512,7 +504,6 @@
 
 .method public onSelect(Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;)V
     .locals 5
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
     const/16 v4, 0xcb
 
@@ -721,7 +712,6 @@
 
 .method public setResourceData(Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)V
     .locals 4
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     const/4 v3, 0x4
 

@@ -827,7 +827,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/Class;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -858,7 +857,6 @@
 
 .method public constructor <init>(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -972,8 +970,6 @@
 
 .method private constructor <init>(Landroid/content/Intent;Z)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1031,7 +1027,6 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1050,7 +1045,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1069,8 +1063,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1091,9 +1083,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/net/Uri;Landroid/content/Context;Ljava/lang/Class;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1130,8 +1119,6 @@
 
 .method public static createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
     .locals 7
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x0
 
@@ -1221,7 +1208,6 @@
 
 .method public static getIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/URISyntaxException;
@@ -1242,7 +1228,6 @@
 
 .method public static getIntentOld(Ljava/lang/String;)Landroid/content/Intent;
     .locals 22
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/URISyntaxException;
@@ -2066,7 +2051,6 @@
 
 .method private static makeClipItem(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;I)Landroid/content/ClipData$Item;
     .locals 5
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2145,7 +2129,6 @@
 
 .method public static makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/ComponentName;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2164,8 +2147,6 @@
 
 .method public static makeMainSelectorActivity(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2192,7 +2173,6 @@
 
 .method public static makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/ComponentName;
 
     invoke-static {p0}, Landroid/content/Intent;->makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -2207,7 +2187,6 @@
 
 .method public static normalizeMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -2249,9 +2228,6 @@
 
 .method public static parseIntent(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/content/Intent;
     .locals 12
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2437,8 +2413,6 @@
 
 .method public static parseUri(Ljava/lang/String;I)Landroid/content/Intent;
     .locals 13
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/URISyntaxException;
@@ -3037,9 +3011,6 @@
 
 .method private toUriInner(Ljava/lang/StringBuilder;Ljava/lang/String;I)V
     .locals 9
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/16 v8, 0x3b
 
@@ -3410,7 +3381,6 @@
 # virtual methods
 .method public addCategory(Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mCategories:Landroid/util/ArraySet;
 
@@ -3436,7 +3406,6 @@
 
 .method public addFlags(I)Landroid/content/Intent;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/content/Intent;->mFlags:I
 
@@ -3493,8 +3462,6 @@
 
 .method public fillIn(Landroid/content/Intent;I)I
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3755,7 +3722,6 @@
 
 .method public filterEquals(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -4071,7 +4037,6 @@
 
 .method public getBooleanArrayExtra(Ljava/lang/String;)[Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4094,8 +4059,6 @@
 
 .method public getBooleanExtra(Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4116,7 +4079,6 @@
 
 .method public getBundleExtra(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4139,7 +4101,6 @@
 
 .method public getByteArrayExtra(Ljava/lang/String;)[B
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4162,8 +4123,6 @@
 
 .method public getByteExtra(Ljava/lang/String;B)B
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # B
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4205,7 +4164,6 @@
 
 .method public getCharArrayExtra(Ljava/lang/String;)[C
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4228,8 +4186,6 @@
 
 .method public getCharExtra(Ljava/lang/String;C)C
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4250,7 +4206,6 @@
 
 .method public getCharSequenceArrayExtra(Ljava/lang/String;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4273,7 +4228,6 @@
 
 .method public getCharSequenceArrayListExtra(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4307,7 +4261,6 @@
 
 .method public getCharSequenceExtra(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4376,7 +4329,6 @@
 
 .method public getDoubleArrayExtra(Ljava/lang/String;)[D
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4399,8 +4351,6 @@
 
 .method public getDoubleExtra(Ljava/lang/String;D)D
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4421,7 +4371,6 @@
 
 .method public getExtra(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4436,8 +4385,6 @@
 
 .method public getExtra(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4493,7 +4440,6 @@
 
 .method public getFloatArrayExtra(Ljava/lang/String;)[F
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4516,8 +4462,6 @@
 
 .method public getFloatExtra(Ljava/lang/String;F)F
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4538,7 +4482,6 @@
 
 .method public getIBinderExtra(Ljava/lang/String;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4563,7 +4506,6 @@
 
 .method public getIntArrayExtra(Ljava/lang/String;)[I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4586,8 +4528,6 @@
 
 .method public getIntExtra(Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4608,7 +4548,6 @@
 
 .method public getIntegerArrayListExtra(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4642,7 +4581,6 @@
 
 .method public getLongArrayExtra(Ljava/lang/String;)[J
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4665,8 +4603,6 @@
 
 .method public getLongExtra(Ljava/lang/String;J)J
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4703,7 +4639,6 @@
 
 .method public getParcelableArrayExtra(Ljava/lang/String;)[Landroid/os/Parcelable;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4726,7 +4661,6 @@
 
 .method public getParcelableArrayListExtra(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -4760,7 +4694,6 @@
 
 .method public getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -4822,7 +4755,6 @@
 
 .method public getSerializableExtra(Ljava/lang/String;)Ljava/io/Serializable;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4845,7 +4777,6 @@
 
 .method public getShortArrayExtra(Ljava/lang/String;)[S
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4868,8 +4799,6 @@
 
 .method public getShortExtra(Ljava/lang/String;S)S
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4898,7 +4827,6 @@
 
 .method public getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4921,7 +4849,6 @@
 
 .method public getStringArrayListExtra(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4955,7 +4882,6 @@
 
 .method public getStringExtra(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -4994,7 +4920,6 @@
 
 .method public hasCategory(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mCategories:Landroid/util/ArraySet;
 
@@ -5021,7 +4946,6 @@
 
 .method public hasExtra(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5482,7 +5406,6 @@
 
 .method public putCharSequenceArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5515,8 +5438,6 @@
 
 .method public putExtra(Ljava/lang/String;B)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # B
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5538,8 +5459,6 @@
 
 .method public putExtra(Ljava/lang/String;C)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5561,8 +5480,6 @@
 
 .method public putExtra(Ljava/lang/String;D)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5584,8 +5501,6 @@
 
 .method public putExtra(Ljava/lang/String;F)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5607,8 +5522,6 @@
 
 .method public putExtra(Ljava/lang/String;I)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5641,8 +5554,6 @@
 
 .method public putExtra(Ljava/lang/String;J)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5664,8 +5575,6 @@
 
 .method public putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5687,8 +5596,6 @@
 
 .method public putExtra(Ljava/lang/String;Landroid/os/IBinder;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -5712,8 +5619,6 @@
 
 .method public putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Parcelable;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5735,8 +5640,6 @@
 
 .method public putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/Serializable;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5758,8 +5661,6 @@
 
 .method public putExtra(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5781,8 +5682,6 @@
 
 .method public putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5804,8 +5703,6 @@
 
 .method public putExtra(Ljava/lang/String;S)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5827,8 +5724,6 @@
 
 .method public putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5850,8 +5745,6 @@
 
 .method public putExtra(Ljava/lang/String;[B)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5873,8 +5766,6 @@
 
 .method public putExtra(Ljava/lang/String;[C)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [C
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5896,8 +5787,6 @@
 
 .method public putExtra(Ljava/lang/String;[D)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [D
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5919,8 +5808,6 @@
 
 .method public putExtra(Ljava/lang/String;[F)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5942,8 +5829,6 @@
 
 .method public putExtra(Ljava/lang/String;[I)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5965,8 +5850,6 @@
 
 .method public putExtra(Ljava/lang/String;[J)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [J
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -5988,8 +5871,6 @@
 
 .method public putExtra(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Landroid/os/Parcelable;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6011,8 +5892,6 @@
 
 .method public putExtra(Ljava/lang/String;[Ljava/lang/CharSequence;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6034,8 +5913,6 @@
 
 .method public putExtra(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6057,8 +5934,6 @@
 
 .method public putExtra(Ljava/lang/String;[S)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [S
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6080,8 +5955,6 @@
 
 .method public putExtra(Ljava/lang/String;[Z)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Z
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6103,7 +5976,6 @@
 
 .method public putExtras(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p1, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6145,7 +6017,6 @@
 
 .method public putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6167,7 +6038,6 @@
 
 .method public putIntegerArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6200,7 +6070,6 @@
 
 .method public putParcelableArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6233,7 +6102,6 @@
 
 .method public putStringArrayListExtra(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6266,7 +6134,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -6424,7 +6291,6 @@
 
 .method public removeCategory(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mCategories:Landroid/util/ArraySet;
 
@@ -6452,7 +6318,6 @@
 
 .method public removeExtra(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6480,7 +6345,6 @@
 
 .method public replaceExtras(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p1, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6513,7 +6377,6 @@
 
 .method public replaceExtras(Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -6534,7 +6397,6 @@
 
 .method public resolveActivity(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v1, p0, Landroid/content/Intent;->mComponent:Landroid/content/ComponentName;
 
@@ -6578,8 +6440,6 @@
 
 .method public resolveActivityInfo(Landroid/content/pm/PackageManager;I)Landroid/content/pm/ActivityInfo;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -6623,8 +6483,6 @@
 
 .method public resolveSystemService(Landroid/content/pm/PackageManager;I)Landroid/content/ComponentName;
     .locals 8
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # I
 
     iget-object v5, p0, Landroid/content/Intent;->mComponent:Landroid/content/ComponentName;
 
@@ -6749,7 +6607,6 @@
 
 .method public resolveType(Landroid/content/ContentResolver;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/ContentResolver;
 
     iget-object v0, p0, Landroid/content/Intent;->mType:Ljava/lang/String;
 
@@ -6795,7 +6652,6 @@
 
 .method public resolveType(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -6810,7 +6666,6 @@
 
 .method public resolveTypeIfNeeded(Landroid/content/ContentResolver;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
 
     iget-object v0, p0, Landroid/content/Intent;->mComponent:Landroid/content/ComponentName;
 
@@ -6831,7 +6686,6 @@
 
 .method public setAction(Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -6852,7 +6706,6 @@
 
 .method public setAllowFds(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -6868,7 +6721,6 @@
 
 .method public setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6890,8 +6742,6 @@
 
 .method public setClassName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ComponentName;
 
@@ -6904,8 +6754,6 @@
 
 .method public setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ComponentName;
 
@@ -6918,7 +6766,6 @@
 
 .method public setClipData(Landroid/content/ClipData;)V
     .locals 0
-    .param p1    # Landroid/content/ClipData;
 
     iput-object p1, p0, Landroid/content/Intent;->mClipData:Landroid/content/ClipData;
 
@@ -6927,7 +6774,6 @@
 
 .method public setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
 
     iput-object p1, p0, Landroid/content/Intent;->mComponent:Landroid/content/ComponentName;
 
@@ -6936,7 +6782,6 @@
 
 .method public setData(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Landroid/content/Intent;->mData:Landroid/net/Uri;
 
@@ -6949,7 +6794,6 @@
 
 .method public setDataAndNormalize(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p1}, Landroid/net/Uri;->normalizeScheme()Landroid/net/Uri;
 
@@ -6964,8 +6808,6 @@
 
 .method public setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 0
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/Intent;->mData:Landroid/net/Uri;
 
@@ -6976,8 +6818,6 @@
 
 .method public setDataAndTypeAndNormalize(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/net/Uri;->normalizeScheme()Landroid/net/Uri;
 
@@ -6996,7 +6836,6 @@
 
 .method public setExtrasClassLoader(Ljava/lang/ClassLoader;)V
     .locals 1
-    .param p1    # Ljava/lang/ClassLoader;
 
     iget-object v0, p0, Landroid/content/Intent;->mExtras:Landroid/os/Bundle;
 
@@ -7012,7 +6851,6 @@
 
 .method public setFlags(I)Landroid/content/Intent;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/Intent;->mFlags:I
 
@@ -7021,7 +6859,6 @@
 
 .method public setMultiWindowStyle(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     iput-object p1, p0, Landroid/content/Intent;->mMultiWindowStyle:Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -7030,7 +6867,6 @@
 
 .method public setPackage(Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -7054,7 +6890,6 @@
 
 .method public setSelector(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     if-ne p1, p0, :cond_0
 
@@ -7089,7 +6924,6 @@
 
 .method public setSourceBounds(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 
@@ -7112,7 +6946,6 @@
 
 .method public setType(Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -7125,7 +6958,6 @@
 
 .method public setTypeAndNormalize(Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/content/Intent;->normalizeMimeType(Ljava/lang/String;)Ljava/lang/String;
 
@@ -7140,7 +6972,6 @@
 
 .method public setWindowMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/Intent;->mWindowMode:I
 
@@ -7221,10 +7052,6 @@
 
 .method public toShortString(ZZZZ)Ljava/lang/String;
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7253,11 +7080,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;ZZZZ)V
     .locals 8
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     const/16 v2, 0x20
 
@@ -7646,7 +7468,6 @@
 
 .method public toUri(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -7787,8 +7608,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v4, 0x1
 

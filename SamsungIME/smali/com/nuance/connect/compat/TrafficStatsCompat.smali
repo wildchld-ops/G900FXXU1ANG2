@@ -78,7 +78,6 @@
 
 .method public static getUidRxBytes(I)J
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Landroid/net/TrafficStats;->getUidRxBytes(I)J
 
@@ -89,7 +88,6 @@
 
 .method public static getUidRxPackets(I)J
     .locals 8
-    .param p0    # I
 
     const/4 v7, 0x1
 
@@ -142,7 +140,6 @@
 
 .method public static getUidTxBytes(I)J
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Landroid/net/TrafficStats;->getUidTxBytes(I)J
 
@@ -153,7 +150,6 @@
 
 .method public static getUidTxPackets(I)J
     .locals 8
-    .param p0    # I
 
     const/4 v7, 0x1
 

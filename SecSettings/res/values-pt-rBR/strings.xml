@@ -1373,7 +1373,7 @@ Também é possível exibir ou ocultar a alça da multi janela mantendo pression
     <string name="usb_tethering_errored_subtext">Erro de ancoragem USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Não é possível desativar roteamento USB enquanto usa o SideSync. A desativação do roteamento USB desativará o SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Não é possível ativar o roteamento USB enquanto usa o SideSync. A ativação do roteamento USB desativará o SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Compartilhamento de Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Compartilhamento de Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Compartilhando conexão à Internet deste dispositivo</string>
     <string name="bluetooth_tethering_device_connected_subtext">Conexão de Internet do dispositivo compartilhada com 1 dispositivo</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Conexão de Internet do dispositivo compartilhada com %d dispositivos</string>

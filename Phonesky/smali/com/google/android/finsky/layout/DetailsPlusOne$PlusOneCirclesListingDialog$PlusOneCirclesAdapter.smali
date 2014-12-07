@@ -33,12 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -65,7 +59,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;)Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;->mPlusOneData:Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 
@@ -74,7 +67,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -83,7 +75,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;)Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;->mParentNode:Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -92,7 +83,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;)Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;->mDialog:Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog;
 
@@ -161,7 +151,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;->mPlusOneData:Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 
@@ -188,7 +177,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -197,7 +185,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;->mPlusOneData:Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 
@@ -220,9 +207,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v4, 0x4
 

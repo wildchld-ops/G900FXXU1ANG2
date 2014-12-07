@@ -34,7 +34,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -139,8 +138,6 @@
 
 .method updateOkButtonState(Landroid/app/AlertDialog;Landroid/widget/EditText;)V
     .locals 2
-    .param p1    # Landroid/app/AlertDialog;
-    .param p2    # Landroid/widget/EditText;
 
     const/4 v1, -0x1
 

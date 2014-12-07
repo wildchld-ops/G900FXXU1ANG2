@@ -47,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/AbstractTransaction;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/AbstractTransaction;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractTransaction;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -74,7 +73,6 @@
 
 .method public isSame(Lcom/nuance/connect/service/comm/Transaction;)Z
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Transaction;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/manager/AbstractTransaction;->getName()Ljava/lang/String;
 

@@ -19,7 +19,6 @@
 # virtual methods
 .method public determineLength(Lorg/apache/http/HttpMessage;)J
     .locals 9
-    .param p1    # Lorg/apache/http/HttpMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;

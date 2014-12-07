@@ -30,7 +30,6 @@
 # virtual methods
 .method public onPackageAdded(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/services/ContentSyncService;->get()Lcom/google/android/finsky/services/ContentSyncService$Facade;
 
@@ -43,8 +42,6 @@
 
 .method public onPackageAvailabilityChanged([Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {}, Lcom/google/android/finsky/services/ContentSyncService;->get()Lcom/google/android/finsky/services/ContentSyncService$Facade;
 
@@ -57,22 +54,18 @@
 
 .method public onPackageChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageFirstLaunch(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageRemoved(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {}, Lcom/google/android/finsky/services/ContentSyncService;->get()Lcom/google/android/finsky/services/ContentSyncService$Facade;
 

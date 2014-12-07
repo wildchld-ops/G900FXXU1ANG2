@@ -6,7 +6,6 @@
 # direct methods
 .method private static getConsumptionAppRequiredString(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -78,9 +77,6 @@
 
 .method private static getConsumptionIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/accounts/Account;
 
     const/4 v2, 0x0
 
@@ -152,7 +148,6 @@
 
 .method private static isConsumptionAppInstalled(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -251,9 +246,6 @@
 
 .method private static isConsumptionAppNeeded(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/accounts/Account;
 
     const/4 v5, 0x0
 
@@ -309,12 +301,6 @@
 
 .method public static openItem(Landroid/content/Context;Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;Landroid/support/v4/app/FragmentManager;Landroid/support/v4/app/Fragment;I)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/support/v4/app/FragmentManager;
-    .param p4    # Landroid/support/v4/app/Fragment;
-    .param p5    # I
 
     const/4 v3, 0x0
 
@@ -391,11 +377,6 @@
 
 .method public static showAppNeededDialog(Landroid/content/Context;ILandroid/support/v4/app/FragmentManager;Landroid/support/v4/app/Fragment;I)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/FragmentManager;
-    .param p3    # Landroid/support/v4/app/Fragment;
-    .param p4    # I
 
     invoke-static {p1}, Lcom/google/android/finsky/utils/IntentUtils;->getPackageName(I)Ljava/lang/String;
 
@@ -479,12 +460,6 @@
 
 .method public static showAppNeededDialogIfNeeded(Landroid/content/Context;Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;Landroid/support/v4/app/FragmentManager;Landroid/support/v4/app/Fragment;I)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/support/v4/app/FragmentManager;
-    .param p4    # Landroid/support/v4/app/Fragment;
-    .param p5    # I
 
     invoke-static {p0, p2, p1}, Lcom/google/android/finsky/navigationmanager/ConsumptionUtils;->isConsumptionAppNeeded(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)Z
 

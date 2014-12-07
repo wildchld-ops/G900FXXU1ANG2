@@ -156,7 +156,6 @@
 # virtual methods
 .method public getSimCardIcon(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/dialer/calllog/CallDurationTabActivity;->getSimIconIndex(I)I
 
@@ -244,7 +243,6 @@
 
 .method public getSimIconIndex(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -321,7 +319,6 @@
 
 .method public getSimName(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -428,7 +425,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onCreate(Landroid/os/Bundle;)V
 
@@ -453,8 +449,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -565,7 +559,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/ActivityGroup;->getLocalActivityManager()Landroid/app/LocalActivityManager;
 

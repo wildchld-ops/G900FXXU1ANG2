@@ -98,7 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x2
 
@@ -175,8 +174,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -187,9 +184,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x2
 
@@ -266,8 +260,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/AnimationLayer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/AnimationLayer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AnimationLayer;->mBlockEvents:Z
 
@@ -276,8 +268,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/AnimationLayer;J)J
     .locals 0
-    .param p0    # Lcom/android/launcher2/AnimationLayer;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/launcher2/AnimationLayer;->mLastBlockTime:J
 
@@ -374,8 +364,6 @@
 
 .method public static createAnimatorSequentialSet(Landroid/animation/Animator;Landroid/animation/Animator;)Landroid/animation/AnimatorSet;
     .locals 3
-    .param p0    # Landroid/animation/Animator;
-    .param p1    # Landroid/animation/Animator;
 
     new-instance v0, Landroid/animation/AnimatorSet;
 
@@ -400,8 +388,6 @@
 
 .method public static createAnimatorTogetherSet(Landroid/animation/Animator;Landroid/animation/Animator;)Landroid/animation/AnimatorSet;
     .locals 3
-    .param p0    # Landroid/animation/Animator;
-    .param p1    # Landroid/animation/Animator;
 
     new-instance v0, Landroid/animation/AnimatorSet;
 
@@ -426,7 +412,6 @@
 
 .method private dispatchOrientationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -523,10 +508,6 @@
 # virtual methods
 .method public animateDrop(ILjava/lang/Runnable;Landroid/view/View;Lcom/android/launcher2/ShadowBuilder;)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Landroid/view/View;
-    .param p4    # Lcom/android/launcher2/ShadowBuilder;
 
     const/4 v6, 0x0
 
@@ -596,15 +577,6 @@
 
 .method public animateIcon(ILjava/lang/Runnable;Landroid/view/View;Landroid/graphics/Bitmap;[I[IZIZ)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # [I
-    .param p6    # [I
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # Z
 
     invoke-direct {p0}, Lcom/android/launcher2/AnimationLayer;->cleanupFinishedAnimations()V
 
@@ -711,11 +683,6 @@
 
 .method public buildBasicAnim(ILjava/lang/Runnable;Landroid/view/View;Landroid/graphics/Bitmap;I)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # I
 
     invoke-direct {p0}, Lcom/android/launcher2/AnimationLayer;->cleanupFinishedAnimations()V
 
@@ -786,7 +753,6 @@
 
 .method public cancelAnimationFor(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/launcher2/AnimationLayer;->mAnimations:Ljava/util/List;
 
@@ -868,7 +834,6 @@
 
 .method public cancelAnimationsByGroup(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/launcher2/AnimationLayer;->mAnimations:Ljava/util/List;
 
@@ -922,14 +887,12 @@
 
 .method public dispatchConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v6, 0x0
 
@@ -1051,7 +1014,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     sget-boolean v1, Lcom/android/launcher2/Launcher;->sIsStopped:Z
 
@@ -1150,7 +1112,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/android/launcher2/AnimationLayer;->areTouchEventsBlocked()Z
 
@@ -1173,7 +1134,6 @@
 
 .method public dispatchWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1191,9 +1151,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # J
 
     const/4 v2, 0x1
 
@@ -1281,7 +1238,6 @@
 
 .method public findExistingAnimation(Landroid/view/View;)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/launcher2/AnimationLayer;->mAnimations:Ljava/util/List;
 
@@ -1329,7 +1285,6 @@
 
 .method public getAnimationForView(Landroid/view/View;)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -1364,7 +1319,6 @@
 
 .method public getDropOffset(Lcom/android/launcher2/ShadowBuilder;)[I
     .locals 6
-    .param p1    # Lcom/android/launcher2/ShadowBuilder;
 
     const/4 v5, 0x1
 
@@ -1399,11 +1353,6 @@
 
 .method public getLocationFromCellPos(IILcom/android/launcher2/CellLayout;Landroid/view/View;Landroid/graphics/Bitmap;)[I
     .locals 20
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/launcher2/CellLayout;
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/graphics/Bitmap;
 
     const/16 v16, 0x2
 
@@ -1811,8 +1760,6 @@
 
 .method public getLocationOfView(Landroid/view/View;Landroid/graphics/Bitmap;)[I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/android/launcher2/AnimationLayer;->mTmpPos:[I
 
@@ -1825,9 +1772,6 @@
 
 .method public getLocationOfView(Landroid/view/View;Landroid/graphics/Bitmap;[I)[I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # [I
 
     const/4 v0, 0x0
 
@@ -1840,10 +1784,6 @@
 
 .method public getLocationOfView(Landroid/view/View;Landroid/graphics/Bitmap;[IZ)[I
     .locals 14
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # [I
-    .param p4    # Z
 
     if-nez p3, :cond_0
 
@@ -2138,7 +2078,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -2167,11 +2106,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sget-object v0, Lcom/android/launcher2/AnimationLayer;->sRootLocationOnScreen:[I
 
@@ -2184,8 +2118,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/AnimationLayer;->mResources:Landroid/content/res/Resources;
 
@@ -2219,10 +2151,6 @@
 
 .method public updateExistingAnimationTo(Landroid/view/View;[IIZ)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # [I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0}, Lcom/android/launcher2/AnimationLayer;->cleanupFinishedAnimations()V
 

@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     const v7, 0x10a0065
 
@@ -195,7 +193,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/phone/Ticker;)Landroid/widget/TextSwitcher;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/Ticker;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mTextSwitcher:Landroid/widget/TextSwitcher;
 
@@ -204,7 +201,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/Ticker;)Landroid/text/TextPaint;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/Ticker;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mPaint:Landroid/text/TextPaint;
 
@@ -213,7 +209,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/phone/Ticker;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/Ticker;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mSegments:Ljava/util/ArrayList;
 
@@ -222,7 +217,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/phone/Ticker;)Landroid/widget/ImageSwitcher;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/Ticker;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mIconSwitcher:Landroid/widget/ImageSwitcher;
 
@@ -231,7 +225,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/phone/Ticker;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/Ticker;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/Ticker;->scheduleAdvance()V
 
@@ -240,8 +233,6 @@
 
 .method private static charSequencesEqual(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -291,7 +282,6 @@
 
 .method public static isGraphicOrEmoji(C)Z
     .locals 2
-    .param p0    # C
 
     invoke-static {p0}, Ljava/lang/Character;->getType(C)I
 
@@ -348,7 +338,6 @@
 # virtual methods
 .method public addEntry(Landroid/service/notification/StatusBarNotification;)V
     .locals 21
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     move-object/from16 v0, p0
 
@@ -852,7 +841,6 @@
 
 .method public removeEntry(Landroid/service/notification/StatusBarNotification;)V
     .locals 4
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/Ticker;->mSegments:Ljava/util/ArrayList;
 

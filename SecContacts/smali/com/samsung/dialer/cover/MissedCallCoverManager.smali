@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/Activity;
 
     const/4 v3, 0x1
 
@@ -97,7 +95,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/cover/MissedCallCoverManager;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCoverManager;
 
     iget-object v0, p0, Lcom/samsung/dialer/cover/MissedCallCoverManager;->mActivity:Landroid/app/Activity;
 
@@ -106,8 +103,6 @@
 
 .method static synthetic access$102(Lcom/samsung/dialer/cover/MissedCallCoverManager;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCoverManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/dialer/cover/MissedCallCoverManager;->mCoverOpen:Z
 
@@ -116,7 +111,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/cover/MissedCallCoverManager;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCoverManager;
 
     iget-boolean v0, p0, Lcom/samsung/dialer/cover/MissedCallCoverManager;->mInitCoverOpenState:Z
 
@@ -125,8 +119,6 @@
 
 .method static synthetic access$202(Lcom/samsung/dialer/cover/MissedCallCoverManager;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCoverManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/dialer/cover/MissedCallCoverManager;->mInitCoverOpenState:Z
 
@@ -384,12 +376,6 @@
 
 .method public updateMissedCallDialog(ZLcom/android/dialer/calllog/PhoneNumberHelper;Ljava/lang/String;[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Z
-    .param p2    # Lcom/android/dialer/calllog/PhoneNumberHelper;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const/4 v7, 0x1
 

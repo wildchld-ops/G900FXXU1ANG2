@@ -129,11 +129,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/store/PersistentDataStore;ZZLjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/store/PersistentDataStore;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -238,10 +233,6 @@
 
 .method private loadStoredSettings(ZZLjava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -576,7 +567,6 @@
 
 .method public registerUserSettingsListener(Ljava/lang/String;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -635,7 +625,6 @@
 
 .method public setBackgroundNetworkState(Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UserSettings;->backgroundNetworkState:Lcom/nuance/connect/internal/Property;
 
@@ -652,7 +641,6 @@
 
 .method public setDataCollectionAccepted(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UserSettings;->dataCollection:Lcom/nuance/connect/internal/Property;
 
@@ -669,7 +657,6 @@
 
 .method public setDlmSyncEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UserSettings;->dlmSyncEnabled:Lcom/nuance/connect/internal/Property;
 
@@ -686,7 +673,6 @@
 
 .method public setForegroundNetworkState(Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UserSettings;->foregroundNetworkState:Lcom/nuance/connect/internal/Property;
 
@@ -703,7 +689,6 @@
 
 .method public setLivingLanguageEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UserSettings;->livingLanguageEnabled:Lcom/nuance/connect/internal/Property;
 
@@ -720,7 +705,6 @@
 
 .method public setStatisticsCollectionAllowed(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UserSettings;->statisticsCollectionAllowed:Lcom/nuance/connect/internal/Property;
 

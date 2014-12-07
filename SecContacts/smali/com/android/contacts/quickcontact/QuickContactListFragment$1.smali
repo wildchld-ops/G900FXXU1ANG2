@@ -31,8 +31,6 @@
 
 .method private setButtonImage(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -75,8 +73,6 @@
 
 .method private setButtonImage(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_0
 
@@ -127,9 +123,6 @@
 
 .method private setImageVisibility(Landroid/view/View;II)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -178,7 +171,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment$1;->this$0:Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
@@ -196,7 +188,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -205,9 +196,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 33
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object/from16 v0, p0
 

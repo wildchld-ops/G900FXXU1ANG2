@@ -27,8 +27,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;Landroid/view/View;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;->this$0:Lcom/android/keyguard/sec/ContextualEventManager;
 
@@ -43,8 +41,6 @@
 
 .method protected constructor <init>(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 3
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;->this$0:Lcom/android/keyguard/sec/ContextualEventManager;
 
@@ -96,7 +92,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;->view:Landroid/view/View;
 
@@ -105,7 +100,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;->requestClass:Ljava/lang/String;
 
@@ -114,7 +108,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;)Landroid/widget/RemoteViews;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;->remoteViews:Landroid/widget/RemoteViews;
 
@@ -123,8 +116,6 @@
 
 .method static synthetic access$902(Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;Landroid/widget/RemoteViews;)Landroid/widget/RemoteViews;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;
-    .param p1    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/ContextualEventManager$ContextualEvent;->remoteViews:Landroid/widget/RemoteViews;
 

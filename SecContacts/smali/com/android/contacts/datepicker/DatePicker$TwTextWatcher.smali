@@ -36,9 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/datepicker/DatePicker;IIZ)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/contacts/datepicker/DatePicker$TwTextWatcher;->this$0:Lcom/android/contacts/datepicker/DatePicker;
 
@@ -192,17 +189,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -215,10 +207,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Lcom/android/contacts/datepicker/DatePicker$TwTextWatcher;->this$0:Lcom/android/contacts/datepicker/DatePicker;
 

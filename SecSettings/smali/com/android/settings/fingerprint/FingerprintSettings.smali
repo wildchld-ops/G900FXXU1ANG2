@@ -96,7 +96,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fingerprint/FingerprintSettings;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSettings;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerprintSettings;->mHandler:Landroid/os/Handler;
 
@@ -105,8 +104,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/fingerprint/FingerprintSettings;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSettings;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/fingerprint/FingerprintSettings;->mHandler:Landroid/os/Handler;
 
@@ -115,8 +112,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/fingerprint/FingerprintSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/fingerprint/FingerprintSettings;->mRegisterStarted:Z
 
@@ -125,7 +120,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fingerprint/FingerprintSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSettings;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/FingerprintSettings;->showSensorErrorDialog()V
 
@@ -134,7 +128,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/fingerprint/FingerprintSettings;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSettings;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerprintSettings;->mFingerprintManager:Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -616,7 +609,6 @@
 
 .method private updatedRegisterCatergory(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -701,9 +693,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v10, 0x0
 
@@ -903,7 +892,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1127,8 +1115,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1187,7 +1173,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1247,8 +1232,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 8
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x0
 

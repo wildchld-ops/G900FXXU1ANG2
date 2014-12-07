@@ -132,9 +132,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;Z)V
     .locals 0
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -154,7 +151,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lorg/keyczar/enums/CipherMode;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lorg/keyczar/enums/CipherMode;
 
@@ -193,8 +189,6 @@
 
 .method public getOutputSize(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lorg/keyczar/enums/CipherMode;->CBC:Lorg/keyczar/enums/CipherMode;
 

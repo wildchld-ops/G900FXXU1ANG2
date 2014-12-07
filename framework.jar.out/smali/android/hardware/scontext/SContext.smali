@@ -388,7 +388,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -399,7 +398,6 @@
 
 .method static getReportingMode(I)I
     .locals 2
-    .param p0    # I
 
     sget-object v0, Landroid/hardware/scontext/SContext;->sServiceReportingModes:[I
 
@@ -424,7 +422,6 @@
 
 .method static getServiceName(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     sget-object v0, Landroid/hardware/scontext/SContext;->sServiceList:[Ljava/lang/String;
 
@@ -449,7 +446,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -480,7 +476,6 @@
 
 .method setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/scontext/SContext;->mType:I
 
@@ -489,8 +484,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/hardware/scontext/SContext;->mType:I
 

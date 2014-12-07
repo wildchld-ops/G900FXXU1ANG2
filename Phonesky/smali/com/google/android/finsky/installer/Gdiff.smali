@@ -14,11 +14,6 @@
 # direct methods
 .method private static copyFromOriginal([BLjava/io/RandomAccessFile;Ljava/io/OutputStream;JI)V
     .locals 5
-    .param p0    # [B
-    .param p1    # Ljava/io/RandomAccessFile;
-    .param p2    # Ljava/io/OutputStream;
-    .param p3    # J
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -100,10 +95,6 @@
 
 .method private static copyFromPatch([BLjava/io/DataInputStream;Ljava/io/OutputStream;I)V
     .locals 4
-    .param p0    # [B
-    .param p1    # Ljava/io/DataInputStream;
-    .param p2    # Ljava/io/OutputStream;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -168,10 +159,6 @@
 
 .method public static patch(Ljava/io/RandomAccessFile;Ljava/io/InputStream;Ljava/io/OutputStream;J)J
     .locals 18
-    .param p0    # Ljava/io/RandomAccessFile;
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/io/OutputStream;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

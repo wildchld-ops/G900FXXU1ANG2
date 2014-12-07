@@ -41,8 +41,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,7 +97,6 @@
 
 .method public containsAttribute(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->attribs:Ljava/util/Map;
 
@@ -122,7 +119,6 @@
 
 .method public getAttribute(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->attribs:Ljava/util/Map;
 
@@ -209,7 +205,6 @@
 
 .method public isExpired(Ljava/util/Date;)Z
     .locals 4
-    .param p1    # Ljava/util/Date;
 
     if-nez p1, :cond_0
 
@@ -279,8 +274,6 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->attribs:Ljava/util/Map;
 
@@ -291,7 +284,6 @@
 
 .method public setComment(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->cookieComment:Ljava/lang/String;
 
@@ -300,7 +292,6 @@
 
 .method public setDomain(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -325,7 +316,6 @@
 
 .method public setExpiryDate(Ljava/util/Date;)V
     .locals 0
-    .param p1    # Ljava/util/Date;
 
     iput-object p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->cookieExpiryDate:Ljava/util/Date;
 
@@ -334,7 +324,6 @@
 
 .method public setPath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->cookiePath:Ljava/lang/String;
 
@@ -343,7 +332,6 @@
 
 .method public setSecure(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->isSecure:Z
 
@@ -352,7 +340,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->value:Ljava/lang/String;
 
@@ -361,7 +348,6 @@
 
 .method public setVersion(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/http/impl/cookie/BasicClientCookie;->cookieVersion:I
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/samsung/contacts/group/GroupInfo;
     .locals 8
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -75,7 +74,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/group/GroupInfo$1;->createFromParcel(Landroid/os/Parcel;)Lcom/samsung/contacts/group/GroupInfo;
 
@@ -86,7 +84,6 @@
 
 .method public newArray(I)[Lcom/samsung/contacts/group/GroupInfo;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/samsung/contacts/group/GroupInfo;
 
@@ -95,7 +92,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/group/GroupInfo$1;->newArray(I)[Lcom/samsung/contacts/group/GroupInfo;
 

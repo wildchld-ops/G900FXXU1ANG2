@@ -130,7 +130,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/BackgroundColorPicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mIsAnimating:Z
 
@@ -139,8 +138,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/BackgroundColorPicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mIsAnimating:Z
 
@@ -149,7 +146,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/BackgroundColorPicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mSaved:Z
 
@@ -158,8 +154,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/BackgroundColorPicker;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BackgroundColorPicker;->attachAppinfo(I)V
 
@@ -168,8 +162,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/BackgroundColorPicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mSaved:Z
 
@@ -178,7 +170,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/BackgroundColorPicker;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     iget-object v0, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mCustomThumnaildDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -187,7 +178,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/BackgroundColorPicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mEnableAnimation:Z
 
@@ -196,7 +186,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/BackgroundColorPicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mIsStartFromNonCustom:Z
 
@@ -205,8 +194,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/BackgroundColorPicker;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BackgroundColorPicker;->saveBackgroundStyleIndex(I)V
 
@@ -215,8 +202,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/BackgroundColorPicker;I)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BackgroundColorPicker;->saveBackgoundStyle(I)Z
 
@@ -227,10 +212,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/BackgroundColorPicker;ILandroid/widget/AdapterView;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # I
-    .param p2    # Landroid/widget/AdapterView;
-    .param p3    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/BackgroundColorPicker;->setImageView(ILandroid/widget/AdapterView;Landroid/view/View;)V
 
@@ -239,7 +220,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/BackgroundColorPicker;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     iget-object v0, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mMenuSave:Landroid/view/MenuItem;
 
@@ -248,7 +228,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/BackgroundColorPicker;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     iget-object v0, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mBackgroundDialog:Landroid/app/AlertDialog;
 
@@ -257,8 +236,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/ui/BackgroundColorPicker;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/BackgroundColorPicker;->mBackgroundDialog:Landroid/app/AlertDialog;
 
@@ -267,8 +244,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/BackgroundColorPicker;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BackgroundColorPicker;->startActivityforBackround(I)V
 
@@ -277,7 +252,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/BackgroundColorPicker;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BackgroundColorPicker;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BackgroundColorPicker;->setPrevSelectedItem()V
 
@@ -286,10 +260,6 @@
 
 .method public static addGalleryIntentExtras(Landroid/content/Intent;Landroid/net/Uri;II)V
     .locals 3
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -336,7 +306,6 @@
 
 .method private attachAppinfo(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -499,8 +468,6 @@
 
 .method private getCropImageIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/io/File;
 
@@ -539,7 +506,6 @@
 
 .method private makeBackgourndVertical(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -603,7 +569,6 @@
 
 .method public static pathForNewCameraPhoto(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -662,7 +627,6 @@
 
 .method private saveBackgoundStyle(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -742,7 +706,6 @@
 
 .method private saveBackgroundStyleIndex(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Mms/BackgroundColorPicker"
 
@@ -804,7 +767,6 @@
 
 .method private setCustomThumbnail(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x1
 
@@ -1072,8 +1034,6 @@
 
 .method private setImageView(ILandroid/widget/AdapterView;Landroid/view/View;)V
     .locals 10
-    .param p1    # I
-    .param p3    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1367,7 +1327,6 @@
 
 .method private startActivityforBackround(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1442,7 +1401,6 @@
 
 .method private startSelectBackgroundActivity(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -1507,7 +1465,6 @@
 
 .method private startTakePictureBackgroundActivity(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/mms/ui/BackgroundColorPicker;->generateTempPhotoFileName()Ljava/lang/String;
 
@@ -1752,9 +1709,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -1938,7 +1892,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x0
 
@@ -2056,7 +2009,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/mms/ui/MessageBubbleActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -2272,8 +2224,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 

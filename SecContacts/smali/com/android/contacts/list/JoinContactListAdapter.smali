@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -66,19 +65,12 @@
 
 .method protected bindHeaderView(Landroid/view/View;ILandroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     return-void
 .end method
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -179,7 +171,6 @@
 
 .method public changeCursor(Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x1
 
@@ -190,8 +181,6 @@
 
 .method public configureDefaultPartition(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -204,8 +193,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 9
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     const-wide/16 v7, 0x0
 
@@ -373,8 +360,6 @@
 
 .method public getContactUri(ILandroid/database/Cursor;)Landroid/net/Uri;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -405,10 +390,6 @@
 
 .method protected newHeaderView(Landroid/content/Context;ILandroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Landroid/view/ViewGroup;
 
     new-instance v0, Landroid/view/View;
 
@@ -419,11 +400,6 @@
 
 .method protected newView(Landroid/content/Context;ILandroid/database/Cursor;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -464,7 +440,6 @@
 
 .method public setSuggestedCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/list/JoinContactListAdapter;->mSuggestedCount:I
 
@@ -473,7 +448,6 @@
 
 .method public setSuggestionsCursor(Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -484,7 +458,6 @@
 
 .method public setTargetContactId(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/contacts/list/JoinContactListAdapter;->mTargetContactId:J
 

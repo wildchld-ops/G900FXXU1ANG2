@@ -30,8 +30,6 @@
 # virtual methods
 .method public shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 

@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity;->mSaveButton:Landroid/widget/Button;
 
@@ -35,7 +34,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity;)Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity;->mMyEmergencyInfoEditorFragment:Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -143,7 +140,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 

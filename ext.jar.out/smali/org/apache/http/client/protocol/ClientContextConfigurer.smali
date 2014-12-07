@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/protocol/HttpContext;)V
     .locals 2
-    .param p1    # Lorg/apache/http/protocol/HttpContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +57,6 @@
 
 .method public setAuthSchemeRegistry(Lorg/apache/http/auth/AuthSchemeRegistry;)V
     .locals 2
-    .param p1    # Lorg/apache/http/auth/AuthSchemeRegistry;
 
     iget-object v0, p0, Lorg/apache/http/client/protocol/ClientContextConfigurer;->context:Lorg/apache/http/protocol/HttpContext;
 
@@ -71,7 +69,6 @@
 
 .method public setCookieSpecRegistry(Lorg/apache/http/cookie/CookieSpecRegistry;)V
     .locals 2
-    .param p1    # Lorg/apache/http/cookie/CookieSpecRegistry;
 
     iget-object v0, p0, Lorg/apache/http/client/protocol/ClientContextConfigurer;->context:Lorg/apache/http/protocol/HttpContext;
 
@@ -84,7 +81,6 @@
 
 .method public setCookieStore(Lorg/apache/http/client/CookieStore;)V
     .locals 2
-    .param p1    # Lorg/apache/http/client/CookieStore;
 
     iget-object v0, p0, Lorg/apache/http/client/protocol/ClientContextConfigurer;->context:Lorg/apache/http/protocol/HttpContext;
 
@@ -97,7 +93,6 @@
 
 .method public setCredentialsProvider(Lorg/apache/http/client/CredentialsProvider;)V
     .locals 2
-    .param p1    # Lorg/apache/http/client/CredentialsProvider;
 
     iget-object v0, p0, Lorg/apache/http/client/protocol/ClientContextConfigurer;->context:Lorg/apache/http/protocol/HttpContext;
 

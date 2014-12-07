@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(B)V
     .locals 4
-    .param p1    # B
 
     const-string v0, "BadVersionNumber"
 

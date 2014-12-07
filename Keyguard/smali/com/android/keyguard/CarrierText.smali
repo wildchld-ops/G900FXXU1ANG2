@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -81,8 +78,6 @@
 
 .method private static concatenate(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -163,7 +158,6 @@
 
 .method private getStatusForIccState(Lcom/android/internal/telephony/IccCardConstants$State;)Lcom/android/keyguard/CarrierText$StatusMode;
     .locals 3
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     if-nez p1, :cond_0
 
@@ -288,8 +282,6 @@
 
 .method private makeCarrierStringOnEmergencyCapable(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/keyguard/CarrierText;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -311,9 +303,6 @@
 # virtual methods
 .method protected getCarrierTextForSimState(Lcom/android/internal/telephony/IccCardConstants$State;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
 
     const v5, 0x7f060054
 
@@ -667,9 +656,6 @@
 
 .method protected updateCarrierText(Lcom/android/internal/telephony/IccCardConstants$State;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/keyguard/CarrierText;->getCarrierTextForSimState(Lcom/android/internal/telephony/IccCardConstants$State;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 

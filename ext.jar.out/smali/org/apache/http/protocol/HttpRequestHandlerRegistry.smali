@@ -29,7 +29,6 @@
 # virtual methods
 .method public lookup(Ljava/lang/String;)Lorg/apache/http/protocol/HttpRequestHandler;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/protocol/HttpRequestHandlerRegistry;->matcher:Lorg/apache/http/protocol/UriPatternMatcher;
 
@@ -44,8 +43,6 @@
 
 .method protected matchUriRequestPattern(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -60,8 +57,6 @@
 
 .method public register(Ljava/lang/String;Lorg/apache/http/protocol/HttpRequestHandler;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/protocol/HttpRequestHandler;
 
     iget-object v0, p0, Lorg/apache/http/protocol/HttpRequestHandlerRegistry;->matcher:Lorg/apache/http/protocol/UriPatternMatcher;
 
@@ -72,7 +67,6 @@
 
 .method public setHandlers(Ljava/util/Map;)V
     .locals 1
-    .param p1    # Ljava/util/Map;
 
     iget-object v0, p0, Lorg/apache/http/protocol/HttpRequestHandlerRegistry;->matcher:Lorg/apache/http/protocol/UriPatternMatcher;
 
@@ -83,7 +77,6 @@
 
 .method public unregister(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/protocol/HttpRequestHandlerRegistry;->matcher:Lorg/apache/http/protocol/UriPatternMatcher;
 

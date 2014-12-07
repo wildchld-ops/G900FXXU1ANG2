@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Lorg/keyczar/AesKey;)V
     .locals 6
-    .param p1    # Lorg/keyczar/AesKey;
 
     const/4 v5, 0x0
 
@@ -69,7 +68,6 @@
 # virtual methods
 .method public getKey(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lorg/keyczar/ImportedKeyReader;->keys:Ljava/util/List;
 

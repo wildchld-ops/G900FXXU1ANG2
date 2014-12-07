@@ -51,8 +51,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/android/volley/Cache$Entry;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/volley/Cache$Entry;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,7 +89,6 @@
 
 .method public static readHeader(Ljava/io/InputStream;)Lcom/android/volley/toolbox/DiskBasedCache$CacheHeader;
     .locals 4
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -175,7 +172,6 @@
 # virtual methods
 .method public toCacheEntry([B)Lcom/android/volley/Cache$Entry;
     .locals 3
-    .param p1    # [B
 
     new-instance v0, Lcom/android/volley/Cache$Entry;
 
@@ -208,7 +204,6 @@
 
 .method public writeHeader(Ljava/io/OutputStream;)Z
     .locals 5
-    .param p1    # Ljava/io/OutputStream;
 
     const/4 v1, 0x1
 

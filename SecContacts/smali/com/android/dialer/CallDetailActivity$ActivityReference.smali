@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/dialer/CallDetailActivity;Lcom/android/dialer/CallDetailActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/dialer/CallDetailActivity;
-    .param p2    # Lcom/android/dialer/CallDetailActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/dialer/CallDetailActivity$ActivityReference;-><init>(Lcom/android/dialer/CallDetailActivity;)V
 

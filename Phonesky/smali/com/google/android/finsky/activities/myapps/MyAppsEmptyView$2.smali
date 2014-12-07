@@ -48,7 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsEmptyView$2;->val$navigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 

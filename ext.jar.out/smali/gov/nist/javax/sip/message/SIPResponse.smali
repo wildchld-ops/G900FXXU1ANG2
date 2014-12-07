@@ -22,7 +22,6 @@
 
 .method public static getReasonPhrase(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -360,7 +359,6 @@
 
 .method public static isFinalResponse(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xc8
 
@@ -383,8 +381,6 @@
 
 .method private final setBranch(Lgov/nist/javax/sip/header/Via;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lgov/nist/javax/sip/header/Via;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "ACK"
 
@@ -616,11 +612,6 @@
 
 .method public createRequest(Lgov/nist/javax/sip/address/SipUri;Lgov/nist/javax/sip/header/Via;Lgov/nist/javax/sip/header/CSeq;Lgov/nist/javax/sip/header/From;Lgov/nist/javax/sip/header/To;)Lgov/nist/javax/sip/message/SIPRequest;
     .locals 7
-    .param p1    # Lgov/nist/javax/sip/address/SipUri;
-    .param p2    # Lgov/nist/javax/sip/header/Via;
-    .param p3    # Lgov/nist/javax/sip/header/CSeq;
-    .param p4    # Lgov/nist/javax/sip/header/From;
-    .param p5    # Lgov/nist/javax/sip/header/To;
 
     new-instance v3, Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -874,7 +865,6 @@
 
 .method public encodeAsBytes(Ljava/lang/String;)[B
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -979,7 +969,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -1029,7 +1018,6 @@
 
 .method public getDialogId(Z)Ljava/lang/String;
     .locals 5
-    .param p1    # Z
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
@@ -1143,8 +1131,6 @@
 
 .method public getDialogId(ZLjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
@@ -1360,7 +1346,6 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -1446,7 +1431,6 @@
 
 .method public setReasonPhrase(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1479,7 +1463,6 @@
 
 .method public setSIPVersion(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/message/SIPResponse;->statusLine:Lgov/nist/javax/sip/header/StatusLine;
 
@@ -1490,7 +1473,6 @@
 
 .method public setStatusCode(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1537,7 +1519,6 @@
 
 .method public setStatusLine(Lgov/nist/javax/sip/header/StatusLine;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/StatusLine;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/SIPResponse;->statusLine:Lgov/nist/javax/sip/header/StatusLine;
 

@@ -48,14 +48,12 @@
 # virtual methods
 .method public onAttachmentChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAttachmentError(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -114,15 +112,12 @@
 
 .method public onProtocolChanged(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setAirMsg(Lcom/bst/airmessage/sdk/AirMessage;)V
     .locals 2
-    .param p1    # Lcom/bst/airmessage/sdk/AirMessage;
 
     if-eqz p1, :cond_0
 

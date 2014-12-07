@@ -1383,7 +1383,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">การ​เชื่อมโยงเครือข่ายด้วย USB ​ผิด​พลาด</string>
     <string name="usb_tethering_on_during_sidesync_popup">ไม่สามารถปิดใช้งานการแชร์อินเตอร์เน็ตผ่าน USB ในขณะที่ใช้ SideSync การปิดใช้งานการแชร์อินเตอร์เน็ตผ่าน USB จะปิดใช้งาน SideSync</string>
     <string name="usb_tethering_off_during_sidesync_popup">ไม่สามารถเปิดใช้งานการแชร์อินเตอร์เน็ตผ่าน USB ได้ในขณะที่ใช้ SideSync การเปิดใช้งานการแชร์อินเตอร์เน็ตผ่าน USB จะปิดการใช้งาน SideSync</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>การเชื่อมโยงเครือข่ายด้วยบลูทูธ</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>การเชื่อมโยงเครือข่ายด้วยบลูทูธ</b></p></string>
     <string name="bluetooth_tethering_available_subtext">กำลัง​แชร์​การ​เชื่อม​ต่อ​ อินเตอร์​เน็ต​ของ​อุปกรณ์​นี้…</string>
     <string name="bluetooth_tethering_device_connected_subtext">แชร์​การ​เชื่อม​ต่อ​อินเตอร์​เน็ต​ของ​อุปกรณ์​กับ 1 ​อุปกรณ์</string>
     <string name="bluetooth_tethering_devices_connected_subtext">แชร์​การ​เชื่อม​ต่อ​อินเตอร์​เน็ต​ของ​อุปกรณ์​กับ %d ​อุปกรณ์</string>

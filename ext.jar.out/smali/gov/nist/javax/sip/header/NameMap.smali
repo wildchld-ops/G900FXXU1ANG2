@@ -30,8 +30,6 @@
 
 .method public static addExtensionHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lgov/nist/javax/sip/header/NameMap;->nameMap:Ljava/util/Hashtable;
 
@@ -46,7 +44,6 @@
 
 .method public static getClassFromName(Ljava/lang/String;)Ljava/lang/Class;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -707,8 +704,6 @@
 
 .method protected static putNameMap(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lgov/nist/javax/sip/header/NameMap;->nameMap:Ljava/util/Hashtable;
 

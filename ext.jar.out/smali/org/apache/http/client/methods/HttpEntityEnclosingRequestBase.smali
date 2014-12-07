@@ -97,7 +97,6 @@
 
 .method public setEntity(Lorg/apache/http/HttpEntity;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpEntity;
 
     iput-object p1, p0, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;->entity:Lorg/apache/http/HttpEntity;
 

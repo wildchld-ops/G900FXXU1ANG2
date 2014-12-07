@@ -33,8 +33,6 @@
 # virtual methods
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
 
@@ -59,9 +57,6 @@
 
 .method public onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -180,8 +175,6 @@
 
 .method public shouldInterceptRequest(Landroid/webkit/WebView;Ljava/lang/String;)Landroid/webkit/WebResourceResponse;
     .locals 6
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/WebViewChallengeActivity$3;->this$0:Lcom/google/android/finsky/activities/WebViewChallengeActivity;
 
@@ -239,8 +232,6 @@
 
 .method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/WebViewChallengeActivity$3;->this$0:Lcom/google/android/finsky/activities/WebViewChallengeActivity;
 

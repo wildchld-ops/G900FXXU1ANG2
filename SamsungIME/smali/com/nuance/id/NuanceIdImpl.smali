@@ -20,7 +20,6 @@
 
 .method private bytesToStr([B)Ljava/lang/String;
     .locals 3
-    .param p1    # [B
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -57,7 +56,6 @@
 
 .method private strToBytes(Ljava/lang/String;)[B
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -114,7 +112,6 @@
 
 .method private toHex(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -179,7 +176,6 @@
 # virtual methods
 .method generateHash(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v5, "SHA-256"
@@ -277,7 +273,6 @@
 
 .method sha1hash(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v2, "SHA-1"

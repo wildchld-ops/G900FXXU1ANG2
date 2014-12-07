@@ -43,7 +43,6 @@
 
 .method private constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -350,7 +349,6 @@
 
 .method private static prepare(Z)V
     .locals 2
-    .param p0    # Z
 
     sget-object v0, Landroid/os/Looper;->sThreadLocal:Ljava/lang/ThreadLocal;
 
@@ -432,8 +430,6 @@
 # virtual methods
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -574,7 +570,6 @@
 
 .method public removeSyncBarrier(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Looper;->mQueue:Landroid/os/MessageQueue;
 
@@ -585,7 +580,6 @@
 
 .method public setMessageLogging(Landroid/util/Printer;)V
     .locals 0
-    .param p1    # Landroid/util/Printer;
 
     iput-object p1, p0, Landroid/os/Looper;->mLogging:Landroid/util/Printer;
 

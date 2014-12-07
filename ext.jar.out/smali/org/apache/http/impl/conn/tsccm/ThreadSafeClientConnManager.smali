@@ -19,8 +19,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V
     .locals 2
-    .param p1    # Lorg/apache/http/params/HttpParams;
-    .param p2    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +62,6 @@
 
 .method static synthetic access$000(Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;)Lorg/apache/commons/logging/Log;
     .locals 1
-    .param p0    # Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;
 
     iget-object v0, p0, Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;->log:Lorg/apache/commons/logging/Log;
 
@@ -89,8 +86,6 @@
 
 .method public closeIdleConnections(JLjava/util/concurrent/TimeUnit;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
 
     iget-object v0, p0, Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;->connectionPool:Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;
 
@@ -105,7 +100,6 @@
 
 .method protected createConnectionOperator(Lorg/apache/http/conn/scheme/SchemeRegistry;)Lorg/apache/http/conn/ClientConnectionOperator;
     .locals 1
-    .param p1    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     new-instance v0, Lorg/apache/http/impl/conn/DefaultClientConnectionOperator;
 
@@ -116,7 +110,6 @@
 
 .method protected createConnectionPool(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;
     .locals 3
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/conn/tsccm/ConnPoolByRoute;
 
@@ -177,7 +170,6 @@
 
 .method public getConnectionsInPool(Lorg/apache/http/conn/routing/HttpRoute;)I
     .locals 1
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     iget-object v0, p0, Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;->connectionPool:Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;
 
@@ -200,9 +192,6 @@
 
 .method public releaseConnection(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V
     .locals 10
-    .param p1    # Lorg/apache/http/conn/ManagedClientConnection;
-    .param p2    # J
-    .param p4    # Ljava/util/concurrent/TimeUnit;
 
     instance-of v0, p1, Lorg/apache/http/impl/conn/tsccm/BasicPooledConnAdapter;
 
@@ -403,8 +392,6 @@
 
 .method public requestConnection(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ClientConnectionRequest;
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v1, p0, Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;->connectionPool:Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;
 

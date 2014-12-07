@@ -22,8 +22,6 @@
 
 .method private static decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -54,8 +52,6 @@
 
 .method private static encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -86,7 +82,6 @@
 
 .method public static format(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -176,7 +171,6 @@
 
 .method public static isEncoded(Lorg/apache/http/HttpEntity;)Z
     .locals 3
-    .param p0    # Lorg/apache/http/HttpEntity;
 
     invoke-interface {p0}, Lorg/apache/http/HttpEntity;->getContentType()Lorg/apache/http/Header;
 
@@ -209,8 +203,6 @@
 
 .method public static parse(Ljava/net/URI;Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p0    # Ljava/net/URI;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -256,7 +248,6 @@
 
 .method public static parse(Lorg/apache/http/HttpEntity;)Ljava/util/List;
     .locals 5
-    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -329,8 +320,6 @@
 
 .method public static parse(Ljava/util/List;Ljava/util/Scanner;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/util/Scanner;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

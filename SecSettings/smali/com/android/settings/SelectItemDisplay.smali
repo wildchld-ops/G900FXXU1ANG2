@@ -42,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SelectItemDisplay;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mInflater:Landroid/view/LayoutInflater;
 
@@ -51,7 +50,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SelectItemDisplay;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mNetworkPopup:Landroid/widget/LinearLayout;
 
@@ -378,9 +376,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -442,7 +437,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 25
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v21, 0x1
 
@@ -1068,9 +1062,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 10
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

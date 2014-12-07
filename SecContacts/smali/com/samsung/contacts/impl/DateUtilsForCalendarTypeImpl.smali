@@ -22,20 +22,12 @@
 
 .method public static buildDataString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
 
     return-object p1
 .end method
 
 .method public static createDatePickerDialog(Landroid/content/Context;Lcom/android/contacts/common/model/dataitem/DataKind;Lcom/android/contacts/common/model/ValuesDelta;Lcom/android/contacts/common/model/account/AccountType$EventEditType;Lcom/samsung/contacts/impl/DateUtilsForCalendarTypeImpl$Listener;)Landroid/app/Dialog;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p2    # Lcom/android/contacts/common/model/ValuesDelta;
-    .param p3    # Lcom/android/contacts/common/model/account/AccountType$EventEditType;
-    .param p4    # Lcom/samsung/contacts/impl/DateUtilsForCalendarTypeImpl$Listener;
 
     iget-object v1, p1, Lcom/android/contacts/common/model/dataitem/DataKind;->fieldList:Ljava/util/List;
 
@@ -164,8 +156,6 @@
 
 .method public static formatDate(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/contacts/util/DateUtils;->formatDate(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -176,10 +166,6 @@
 
 .method public static rebuildDateView(Landroid/content/Context;Landroid/widget/Button;Lcom/android/contacts/common/model/dataitem/DataKind;Lcom/android/contacts/common/model/ValuesDelta;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/Button;
-    .param p2    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p3    # Lcom/android/contacts/common/model/ValuesDelta;
 
     iget-object v3, p2, Lcom/android/contacts/common/model/dataitem/DataKind;->fieldList:Ljava/util/List;
 

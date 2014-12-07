@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/ProtocolVersion;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/ProtocolVersion;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

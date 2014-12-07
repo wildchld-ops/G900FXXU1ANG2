@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/ssrm/CustomFrequencyManagerService;Lcom/android/server/ssrm/CustomFrequencyManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/CustomFrequencyManagerService;
-    .param p2    # Lcom/android/server/ssrm/CustomFrequencyManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;-><init>(Lcom/android/server/ssrm/CustomFrequencyManagerService;)V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method addRequest(Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequest;)V
     .locals 4
-    .param p1    # Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequest;
 
     iget-object v1, p1, Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequest;->binder:Landroid/os/IBinder;
 
@@ -676,7 +673,6 @@
 
 .method getAllCPUCoreLocks(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -744,9 +740,6 @@
 
 .method getIndex(Landroid/os/IBinder;ILjava/lang/String;)I
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -1537,9 +1530,6 @@
 
 .method removeRequest(Landroid/os/IBinder;ILjava/lang/String;)Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequest;
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequestList;->getIndex(Landroid/os/IBinder;ILjava/lang/String;)I
 

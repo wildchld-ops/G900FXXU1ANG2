@@ -641,7 +641,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/Launcher;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Launcher;
 
     invoke-direct {p0}, Lcom/android/launcher2/Launcher;->finishShowAllApps()V
 
@@ -650,7 +649,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/Launcher;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Launcher;
 
     invoke-direct {p0}, Lcom/android/launcher2/Launcher;->finishExitAllApps()V
 
@@ -659,7 +657,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/Launcher;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Launcher;
 
     invoke-direct {p0}, Lcom/android/launcher2/Launcher;->exitWidgetResizeMode()V
 
@@ -668,7 +665,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/Launcher;)Lcom/android/launcher2/LauncherModel;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Launcher;
 
     iget-object v0, p0, Lcom/android/launcher2/Launcher;->mModel:Lcom/android/launcher2/LauncherModel;
 
@@ -677,7 +673,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/Launcher;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/Launcher;
 
     invoke-direct {p0}, Lcom/android/launcher2/Launcher;->AllWidgetCount()I
 
@@ -688,7 +683,6 @@
 
 .method static synthetic access$702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/launcher2/Launcher;->sPopupMenuShowing:Z
 
@@ -1236,7 +1230,6 @@
 
 .method private addToHelpMenuOption(Landroid/view/MenuItem;)V
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -1430,9 +1423,6 @@
 
 .method private fillInHomeItem(Lcom/android/launcher2/HomeItem;Lcom/android/launcher2/Launcher$WidgetAddInfo;[I)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/HomeItem;
-    .param p2    # Lcom/android/launcher2/Launcher$WidgetAddInfo;
-    .param p3    # [I
 
     const/4 v1, -0x1
 
@@ -1820,8 +1810,6 @@
 
 .method public static hasPackage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -2312,7 +2300,6 @@
 
 .method private static isWifiOnly(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -2338,7 +2325,6 @@
 
 .method private processAsAndroidAppWidget(Lcom/android/launcher2/Launcher$WidgetAddInfo;)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/Launcher$WidgetAddInfo;
 
     const/4 v7, 0x0
 
@@ -2410,7 +2396,6 @@
 
 .method private processAsSamsungSurfaceWidget(Lcom/android/launcher2/Launcher$WidgetAddInfo;)Z
     .locals 7
-    .param p1    # Lcom/android/launcher2/Launcher$WidgetAddInfo;
 
     const/4 v6, 0x0
 
@@ -2457,7 +2442,6 @@
 
 .method private processAsSamsungWidget(Lcom/android/launcher2/Launcher$WidgetAddInfo;)Z
     .locals 9
-    .param p1    # Lcom/android/launcher2/Launcher$WidgetAddInfo;
 
     const/4 v5, 0x0
 
@@ -2508,7 +2492,6 @@
 
 .method private readOneLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string v6, ""
 
@@ -2825,8 +2808,6 @@
 
 .method public static requestDownloadingResource(Ljava/lang/String;Landroid/content/Context;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     move-object v0, p1
 
@@ -2890,7 +2871,6 @@
 
 .method static setHomeEditMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/launcher2/Launcher;->sIsHomeEditMode:Z
 
@@ -2899,7 +2879,6 @@
 
 .method static setHomeRemoveMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/launcher2/Launcher;->sIsHomeRemoveMode:Z
 
@@ -3033,7 +3012,6 @@
 
 .method private setupOptionsMenu(Landroid/view/Menu;)Z
     .locals 34
-    .param p1    # Landroid/view/Menu;
 
     move-object/from16 v0, p0
 
@@ -4230,7 +4208,6 @@
 
 .method public static startDrag(Landroid/view/View;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
 
     new-instance v0, Lcom/android/launcher2/ShadowBuilder;
 
@@ -4245,8 +4222,6 @@
 
 .method public static startDrag(Landroid/view/View;F)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # F
 
     new-instance v0, Lcom/android/launcher2/ShadowBuilder;
 
@@ -4261,11 +4236,6 @@
 
 .method private static final startDrag(Landroid/view/View;Landroid/content/ClipData;Lcom/android/launcher2/ShadowBuilder;Lcom/android/launcher2/DragState;I)Z
     .locals 26
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/content/ClipData;
-    .param p2    # Lcom/android/launcher2/ShadowBuilder;
-    .param p3    # Lcom/android/launcher2/DragState;
-    .param p4    # I
 
     const-string v5, "Launcher"
 
@@ -4715,8 +4685,6 @@
 
 .method public static startDrag(Landroid/view/View;Lcom/android/launcher2/ShadowBuilder;)Z
     .locals 4
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/android/launcher2/ShadowBuilder;
 
     invoke-virtual {p0}, Landroid/view/View;->getRootView()Landroid/view/View;
 
@@ -4739,8 +4707,6 @@
 
 .method private tryQueueWidgetAddViaIntent(Landroid/content/Intent;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -5150,7 +5116,6 @@
 
 .method public addStateAnimatorProvider(Lcom/android/launcher2/Launcher$StateAnimatorProvider;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Launcher$StateAnimatorProvider;
 
     iget-object v0, p0, Lcom/android/launcher2/Launcher;->mStateAnimatorProviders:Ljava/util/ArrayList;
 
@@ -5243,7 +5208,6 @@
 
 .method public bindHomeAppWidget(Lcom/android/launcher2/HomeWidgetItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeWidgetItem;
 
     invoke-virtual {p0}, Lcom/android/launcher2/Launcher;->setLoadOnResume()Z
 
@@ -5256,7 +5220,6 @@
 
 .method public bindHomeAppWidget_CP(Ljava/util/List;I)V
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5504,7 +5467,6 @@
 
 .method public bindHomeSamsungWidget(Lcom/android/launcher2/SamsungWidgetItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/SamsungWidgetItem;
 
     invoke-virtual {p0}, Lcom/android/launcher2/Launcher;->setLoadOnResume()Z
 
@@ -5517,7 +5479,6 @@
 
 .method public bindHomeSamsungWidget_CP(Ljava/util/List;I)V
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5537,8 +5498,6 @@
 
 .method public bindHomeShortcuts(Ljava/util/List;II)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5560,7 +5519,6 @@
 
 .method public bindHomeShortcuts_CP(Ljava/util/List;I)V
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5580,7 +5538,6 @@
 
 .method public bindHomeSurfaceWidget(Lcom/android/launcher2/SurfaceWidgetItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetItem;
 
     invoke-virtual {p0}, Lcom/android/launcher2/Launcher;->setLoadOnResume()Z
 
@@ -5593,7 +5550,6 @@
 
 .method public bindHomeSurfaceWidget_CP(Ljava/util/List;I)V
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5675,7 +5631,6 @@
 
 .method public bindPackagesChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/Launcher;->mSamsungWidgetPackageManager:Lcom/android/launcher2/SamsungWidgetPackageManager;
 
@@ -5715,7 +5670,6 @@
 
 .method public callDisableDialog(Lcom/android/launcher2/BaseItem;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v5, 0x0
 
@@ -5887,7 +5841,6 @@
 
 .method public createPopupMenu(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Lcom/android/launcher2/Launcher;->setMarketLabel()V
 
@@ -5951,7 +5904,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/KeyEvent;
 
     const v8, 0x7f0800af
 
@@ -6607,7 +6559,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -6711,8 +6662,6 @@
 
 .method public exitAllApps(ZZ)V
     .locals 14
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v10, p0, Lcom/android/launcher2/Launcher;->mMenuView:Lcom/android/launcher2/MenuView;
 
@@ -7106,7 +7055,6 @@
 
 .method public exitHelp(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -7401,7 +7349,6 @@
 
 .method public finishWallpaperGuide(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -8236,7 +8183,6 @@
 
 .method public menuWidgetsUpdated(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/launcher2/Launcher;->mOptionsMenu:Landroid/view/Menu;
 
@@ -8282,9 +8228,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -8569,7 +8512,6 @@
 
 .method public onClickAppMarketButton(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/launcher2/Launcher;->onClickAppMarketButton()V
 
@@ -8601,7 +8543,6 @@
 
 .method public onClickDownloadedButton(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     sget-object v0, Lcom/sec/dtl/launcher/Talk;->INSTANCE:Lcom/sec/dtl/launcher/Talk;
 
@@ -8626,7 +8567,6 @@
 
 .method public onClickPopupMenuButton(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -8936,7 +8876,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 21
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
 
@@ -10394,7 +10333,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -10592,7 +10530,6 @@
 
 .method public onGestureEvent(Lcom/samsung/android/service/gesture/GestureEvent;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/service/gesture/GestureEvent;
 
     const/4 v4, 0x0
 
@@ -10825,8 +10762,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getUnicodeChar()I
 
@@ -11103,7 +11038,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/Launcher;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -11114,7 +11048,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -11615,7 +11548,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 19
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x0
 
@@ -12106,7 +12038,6 @@
 
 .method public onOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsMenuClosed(Landroid/view/Menu;)V
 
@@ -12188,7 +12119,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 8
-    .param p1    # Landroid/view/Menu;
 
     const/4 v7, 0x1
 
@@ -12809,7 +12739,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "extra_home_view_hidden"
 
@@ -13018,7 +12947,6 @@
 
 .method public onTrimMemory(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Launcher"
 
@@ -13047,7 +12975,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onWindowFocusChanged(Z)V
 
@@ -13096,7 +13023,6 @@
 
 .method public removeStateAnimatorProvider(Lcom/android/launcher2/Launcher$StateAnimatorProvider;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Launcher$StateAnimatorProvider;
 
     iget-object v0, p0, Lcom/android/launcher2/Launcher;->mStateAnimatorProviders:Ljava/util/ArrayList;
 
@@ -13168,7 +13094,6 @@
 
 .method public saveToastPopup(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     const-string v2, "com.sec.android.app.launcher.prefs"
 
@@ -13197,7 +13122,6 @@
 
 .method public saveToastPopupForDisableDialog(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     const-string v2, "com.sec.android.app.launcher.prefs"
 
@@ -13226,7 +13150,6 @@
 
 .method public setContextualPageReceiver(Lcom/android/launcher2/ContextualPageReceiver;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/ContextualPageReceiver;
 
     iput-object p1, p0, Lcom/android/launcher2/Launcher;->mContextualPageReceiver:Lcom/android/launcher2/ContextualPageReceiver;
 
@@ -13235,7 +13158,6 @@
 
 .method public setEnableHeadlines(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/launcher2/Launcher;->sIsHeadlinesAppEnable:Z
 
@@ -13244,7 +13166,6 @@
 
 .method public setEnableHotWord(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/launcher2/Launcher;->getHotwordServiceClient()Lcom/google/android/hotword/client/HotwordServiceClient;
 
@@ -13257,7 +13178,6 @@
 
 .method public setEnableMenuButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/Launcher;->mMenuButtonView:Landroid/view/View;
 
@@ -13302,7 +13222,6 @@
 
 .method public setShowEmptyPageMessagePref(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Launcher;->mShowEmptyPageMsg:Z
 
@@ -13311,7 +13230,6 @@
 
 .method setSystemUiTransparency(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -13391,7 +13309,6 @@
 
 .method public setTransitionToAllApps(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Launcher;->mTransitioningToAllApps:Z
 
@@ -13400,7 +13317,6 @@
 
 .method public setWhichTransitionEffect(I)V
     .locals 4
-    .param p1    # I
 
     sput p1, Lcom/android/launcher2/Launcher;->sWhichTransitionEffect:I
 
@@ -13792,9 +13708,6 @@
 
 .method public startActivityForResult(Landroid/content/Intent;ILcom/android/launcher2/Launcher$ActivityResultCallback;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Lcom/android/launcher2/Launcher$ActivityResultCallback;
 
     iget-object v0, p0, Lcom/android/launcher2/Launcher;->mActivityCallbacks:Landroid/util/SparseArray;
 
@@ -13807,7 +13720,6 @@
 
 .method startActivitySafely(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -13820,8 +13732,6 @@
 
 .method startActivitySafely(Landroid/content/Intent;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -13834,9 +13744,6 @@
 
 .method startActivitySafely(Landroid/view/View;Landroid/content/Intent;Ljava/lang/Object;)Z
     .locals 15
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/Object;
 
     const/high16 v11, 0x10000000
 
@@ -14205,7 +14112,6 @@
 
 .method public startActivityWithTransition(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "from_right"
 
@@ -14226,8 +14132,6 @@
 
 .method public startActivityWithTransitionForHeadlines(Landroid/content/Intent;Z)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const v6, 0x7f0e0002
 
@@ -14401,7 +14305,6 @@
 
 .method public startMagazineApp(Z)V
     .locals 12
-    .param p1    # Z
 
     :try_start_0
     new-instance v4, Landroid/content/Intent;
@@ -14568,10 +14471,6 @@
 
 .method public startSearch(Ljava/lang/String;ZLandroid/os/Bundle;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Z
 
     if-nez p1, :cond_0
 
@@ -14651,7 +14550,6 @@
 
 .method public uninstallPackage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -14696,8 +14594,6 @@
 
 .method public updateMotionGestureListner(Lcom/android/launcher2/MenuAppsGrid$State;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     invoke-virtual {p0}, Lcom/android/launcher2/Launcher;->isAirMoveOninSettings()Z
 
@@ -14739,8 +14635,6 @@
 
 .method public updateMotionGestureListner(Lcom/android/launcher2/Workspace$State;Lcom/android/launcher2/Workspace$State;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Workspace$State;
-    .param p2    # Lcom/android/launcher2/Workspace$State;
 
     invoke-virtual {p0}, Lcom/android/launcher2/Launcher;->isAirMoveOninSettings()Z
 

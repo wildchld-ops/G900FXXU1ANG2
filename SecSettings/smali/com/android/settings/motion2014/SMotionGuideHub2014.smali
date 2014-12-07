@@ -215,7 +215,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -226,7 +225,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -235,7 +233,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mNotePageView:Landroid/preference/CheckBoxPreference;
 
@@ -244,7 +241,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -255,7 +251,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -266,7 +261,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mMotionDBItem:Ljava/lang/String;
 
@@ -275,7 +269,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mMotionType:Ljava/lang/String;
 
@@ -284,8 +277,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/motion2014/SMotionGuideHub2014;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->broadcastAirWakeupChanged(Z)V
 
@@ -294,7 +285,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -305,7 +295,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -316,7 +305,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -327,7 +315,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -338,7 +325,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -349,9 +335,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/motion2014/SMotionGuideHub2014;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->broadcastStatusChanged(Ljava/lang/String;Z)V
 
@@ -360,7 +343,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/motion2014/SMotionGuideHub2014;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     invoke-direct {p0}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->updateStatus()V
 
@@ -369,9 +351,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/motion2014/SMotionGuideHub2014;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->startTryActually(Ljava/lang/String;I)V
 
@@ -380,8 +359,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/motion2014/SMotionGuideHub2014;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->startTurnOverTryActually(Z)V
 
@@ -390,8 +367,6 @@
 
 .method static synthetic access$2402(Lcom/android/settings/motion2014/SMotionGuideHub2014;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mFolderDialog:Landroid/app/AlertDialog;
 
@@ -400,8 +375,6 @@
 
 .method static synthetic access$2502(Lcom/android/settings/motion2014/SMotionGuideHub2014;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mAirBrowseDialog:Landroid/app/AlertDialog;
 
@@ -410,8 +383,6 @@
 
 .method static synthetic access$2600(Lcom/android/settings/motion2014/SMotionGuideHub2014;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->showTalkBackDisableDialog(Ljava/lang/String;)V
 
@@ -420,7 +391,6 @@
 
 .method static synthetic access$2700(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mResolver:Landroid/content/ContentResolver;
 
@@ -429,7 +399,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mSmartPause:Landroid/preference/CheckBoxPreference;
 
@@ -438,8 +407,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/motion2014/SMotionGuideHub2014;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2014/SMotionGuideHub2014;->broadcastAirBrowseAndScrollChanged(Z)V
 
@@ -448,7 +415,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mEmailBody:Landroid/preference/CheckBoxPreference;
 
@@ -457,7 +423,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mSinglePhotoView:Landroid/preference/CheckBoxPreference;
 
@@ -466,7 +431,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mInternetWindow:Landroid/preference/CheckBoxPreference;
 
@@ -475,7 +439,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mNowPlayingOnMusic:Landroid/preference/CheckBoxPreference;
 
@@ -484,7 +447,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/motion2014/SMotionGuideHub2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/SMotionGuideHub2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/SMotionGuideHub2014;->mBGMOnLockScreen:Landroid/preference/CheckBoxPreference;
 
@@ -2776,7 +2738,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -3314,8 +3275,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -3543,7 +3502,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v2, 0x1
 
@@ -3599,7 +3557,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 18
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

@@ -143,7 +143,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,8 +153,6 @@
 
 .method private static bindPartialStatement(Landroid/database/sqlite/SQLiteStatement;Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteStatement;
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     const/4 v0, 0x1
 
@@ -216,7 +213,6 @@
 
 .method static getFullContentValues(Lcom/google/android/finsky/library/LibraryEntry;)Landroid/content/ContentValues;
     .locals 9
-    .param p0    # Lcom/google/android/finsky/library/LibraryEntry;
 
     new-instance v2, Landroid/content/ContentValues;
 
@@ -496,7 +492,6 @@
 # virtual methods
 .method public declared-synchronized add(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -639,7 +634,6 @@
 
 .method public declared-synchronized contains(Lcom/google/android/finsky/library/LibraryEntry;)Z
     .locals 4
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -684,7 +678,6 @@
 
 .method public declared-synchronized get(Lcom/google/android/finsky/library/LibraryEntry;)Lcom/google/android/finsky/library/LibraryEntry;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -762,7 +755,6 @@
 
 .method public declared-synchronized remove(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -849,8 +841,6 @@
 
 .method public declared-synchronized resetAccountLibrary(Landroid/accounts/Account;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

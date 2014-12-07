@@ -49,7 +49,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 13
-    .param p1    # Landroid/os/Message;
 
     iget-object v9, p0, Lcom/samsung/mms/location/LocationMapActivity$1;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 

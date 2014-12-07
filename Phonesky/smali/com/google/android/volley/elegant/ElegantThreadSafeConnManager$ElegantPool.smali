@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/conn/ClientConnectionOperator;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/impl/conn/tsccm/ConnPoolByRoute;-><init>(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/params/HttpParams;)V
 
@@ -27,7 +25,6 @@
 
 .method static synthetic access$000(Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantPool;)Ljava/util/concurrent/locks/Lock;
     .locals 1
-    .param p0    # Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantPool;
 
     iget-object v0, p0, Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantPool;->poolLock:Ljava/util/concurrent/locks/Lock;
 
@@ -36,7 +33,6 @@
 
 .method static synthetic access$100(Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantPool;)Ljava/util/concurrent/locks/Lock;
     .locals 1
-    .param p0    # Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantPool;
 
     iget-object v0, p0, Lcom/google/android/volley/elegant/ElegantThreadSafeConnManager$ElegantPool;->poolLock:Ljava/util/concurrent/locks/Lock;
 
@@ -47,11 +43,6 @@
 # virtual methods
 .method protected getEntryBlocking(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;Lorg/apache/http/impl/conn/tsccm/WaitingThreadAborter;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
     .locals 19
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # J
-    .param p5    # Ljava/util/concurrent/TimeUnit;
-    .param p6    # Lorg/apache/http/impl/conn/tsccm/WaitingThreadAborter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/conn/ConnectionPoolTimeoutException;,
@@ -398,8 +389,6 @@
 
 .method public requestPoolEntry(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/impl/conn/tsccm/PoolEntryRequest;
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lorg/apache/http/impl/conn/tsccm/WaitingThreadAborter;
 

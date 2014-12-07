@@ -53,8 +53,6 @@
 
 .method private imageMasking(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/Bitmap;
     .locals 11
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -226,8 +224,6 @@
 # virtual methods
 .method public manageAddCall(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -270,10 +266,6 @@
 
 .method public manageHoldBtn(ZZZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     if-eqz p1, :cond_0
 
@@ -314,7 +306,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallCardFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -323,7 +314,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -389,9 +379,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -465,8 +452,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Lcom/android/incallui/CallCardFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -555,11 +540,6 @@
 
 .method public setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/android/services/telephony/common/Call$DisconnectCause;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-super/range {p0 .. p5}, Lcom/android/incallui/CallCardFragment;->setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
 
@@ -723,8 +703,6 @@
 
 .method protected setDrawableToImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -735,9 +713,6 @@
 
 .method protected setDrawableToImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Z)V
     .locals 3
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Z
 
     if-nez p1, :cond_1
 
@@ -797,17 +772,6 @@
 
 .method public setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/graphics/drawable/Drawable;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
 
     invoke-super/range {p0 .. p11}, Lcom/android/incallui/CallCardFragment;->setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
 
@@ -822,9 +786,6 @@
 
 .method public setPrimaryCallElapsedTime(ZLjava/lang/String;J)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     iget-object v0, p0, Lcom/android/incallui/drivelink/CallCardDriveLinkFragment;->mElapsedTime:Landroid/widget/TextView;
 
@@ -866,8 +827,6 @@
 
 .method public setSecondCallElapsedTime(ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x4
 
@@ -965,7 +924,6 @@
 
 .method public setSecondCallElapsedTimeEnable(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/BaseFragment;->getPresenter()Lcom/android/incallui/Presenter;
 
@@ -1041,8 +999,6 @@
 
 .method public showManageConferenceCallBtn(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1116,7 +1072,6 @@
 
 .method public startCallCardAnimation(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -1274,7 +1229,6 @@
 
 .method updateBgColorForCallState(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 

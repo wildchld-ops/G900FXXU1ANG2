@@ -14,10 +14,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -176,7 +172,6 @@
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 5
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

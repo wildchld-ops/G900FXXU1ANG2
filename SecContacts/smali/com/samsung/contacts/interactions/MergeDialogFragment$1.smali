@@ -32,8 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/interactions/MergeDialogFragment;Landroid/content/Context;ILandroid/view/LayoutInflater;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/MergeDialogFragment$1;->this$0:Lcom/samsung/contacts/interactions/MergeDialogFragment;
 
@@ -48,9 +46,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 

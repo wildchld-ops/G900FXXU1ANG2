@@ -27,11 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/comm/CommandQueue;IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/RejectedExecutionHandler;)V
     .locals 8
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Ljava/util/concurrent/TimeUnit;
-    .param p8    # Ljava/util/concurrent/RejectedExecutionHandler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIJ",
@@ -82,7 +77,6 @@
 
 .method static synthetic access$2400(Lcom/nuance/connect/service/comm/CommandQueue$ConnectionPool;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue$ConnectionPool;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/comm/CommandQueue$ConnectionPool;->isPaused:Z
 
@@ -93,8 +87,6 @@
 # virtual methods
 .method protected beforeExecute(Ljava/lang/Thread;Ljava/lang/Runnable;)V
     .locals 3
-    .param p1    # Ljava/lang/Thread;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-super {p0, p1, p2}, Ljava/util/concurrent/ThreadPoolExecutor;->beforeExecute(Ljava/lang/Thread;Ljava/lang/Runnable;)V
 

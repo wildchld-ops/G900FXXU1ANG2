@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpEntity;)V
     .locals 4
-    .param p1    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -174,7 +173,6 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

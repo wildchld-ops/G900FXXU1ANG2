@@ -23,8 +23,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +35,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;JLcom/google/android/finsky/utils/Sha1Util$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Lcom/google/android/finsky/utils/Sha1Util$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/utils/Sha1Util$DigestResult;-><init>(Ljava/lang/String;J)V
 

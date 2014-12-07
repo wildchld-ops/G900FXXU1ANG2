@@ -14,7 +14,6 @@
 
 .method public static isDeviceLocalAccount(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -65,7 +64,6 @@
 
 .method public static isSimAccount(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

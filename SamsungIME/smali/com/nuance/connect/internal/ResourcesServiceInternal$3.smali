@@ -52,7 +52,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

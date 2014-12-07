@@ -23,7 +23,6 @@
 
 .method private static encodeUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -114,7 +113,6 @@
 # virtual methods
 .method requestObject(Ljava/lang/String;Lcom/android/i18n/addressinput/JsonpRequestBuilder$AsyncCallback;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -145,7 +143,6 @@
 
 .method setTimeout(I)V
     .locals 2
-    .param p1    # I
 
     # getter for: Lcom/android/i18n/addressinput/JsonpRequestBuilder$AsyncHttp;->CLIENT:Lorg/apache/http/client/HttpClient;
     invoke-static {}, Lcom/android/i18n/addressinput/JsonpRequestBuilder$AsyncHttp;->access$000()Lorg/apache/http/client/HttpClient;

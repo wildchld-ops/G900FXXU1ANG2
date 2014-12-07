@@ -16,7 +16,6 @@
 # virtual methods
 .method public getDoc(Ljava/lang/String;)Lorg/w3c/dom/Document;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -72,7 +71,6 @@
 
 .method public getDoc(Lorg/apache/http/HttpResponse;)Lorg/w3c/dom/Document;
     .locals 4
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     invoke-interface {p1}, Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;
 

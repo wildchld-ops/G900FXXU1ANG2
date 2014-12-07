@@ -25,9 +25,6 @@
 
 .method static showInfo(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "permission_info_dialog"
 
@@ -70,7 +67,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/view/ContextThemeWrapper;
 

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/samsung/contacts/sim/detail/DetailSimOperation;-><init>()V
 
@@ -27,18 +26,12 @@
 # virtual methods
 .method public addSimContextMenu(Landroid/content/Context;Landroid/view/ContextMenu;Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ContextMenu;
-    .param p3    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
 
     return-void
 .end method
 
 .method public createSelectSimDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -158,15 +151,12 @@
 
 .method public createSelectSimDialogIfNeeded(Landroid/content/Context;Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
 
     return-void
 .end method
 
 .method public getSimIconChanged(Landroid/content/Context;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -175,8 +165,6 @@
 
 .method public isEditable(Landroid/content/Context;Lcom/android/contacts/model/Contact;)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/model/Contact;
 
     const v7, 0x7f0e0364
 
@@ -299,8 +287,6 @@
 
 .method public isSim(Landroid/database/Cursor;I)Z
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -342,8 +328,6 @@
 
 .method public isSimDeactivate(Landroid/content/Context;Lcom/android/contacts/model/Contact;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/model/Contact;
 
     const/4 v5, 0x0
 
@@ -439,10 +423,6 @@
 
 .method public setSimIconIfNeeded(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;Landroid/content/res/Resources;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
-    .param p4    # Landroid/content/res/Resources;
 
     const/4 v0, 0x0
 

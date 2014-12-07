@@ -109,7 +109,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/NewModePreview;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/NewModePreview;
 
     iget-object v0, p0, Lcom/android/settings/NewModePreview;->mListView:Landroid/widget/ListView;
 
@@ -285,7 +284,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x2
 
@@ -516,7 +514,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -629,9 +626,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -691,8 +685,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -748,7 +740,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 

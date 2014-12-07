@@ -65,8 +65,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,8 +110,6 @@
 
 .method static getInstance(Ljava/lang/String;Z)Lcom/android/server/ssrm/ConditionUpdateHelper;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     new-instance v0, Lcom/android/server/ssrm/ConditionUpdateHelper;
 
@@ -128,7 +124,6 @@
 
 .method static onForegroundActivitiesChanged(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/ssrm/ConditionUpdateHelper;->mHelperList:Ljava/util/List;
 
@@ -164,8 +159,6 @@
 
 .method public static onSsrmStatusChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     sget-object v2, Lcom/android/server/ssrm/ConditionUpdateHelper;->mHelperList:Ljava/util/List;
 
@@ -203,7 +196,6 @@
 # virtual methods
 .method addPackageName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/ConditionUpdateHelper;->mPackageList:Ljava/util/List;
 
@@ -214,7 +206,6 @@
 
 .method addPackageNameList([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     move-object v0, p1
 
@@ -241,7 +232,6 @@
 
 .method addStatusName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/ConditionUpdateHelper;->mStatusList:Ljava/util/List;
 
@@ -252,7 +242,6 @@
 
 .method onForegroundActivitiesChangedInternal(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -322,8 +311,6 @@
 
 .method onSsrmStatusChangedInternal(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/ssrm/ConditionUpdateHelper;->mStatusList:Ljava/util/List;
 

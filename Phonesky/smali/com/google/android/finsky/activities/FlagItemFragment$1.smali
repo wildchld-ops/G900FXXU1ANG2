@@ -40,8 +40,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/RadioGroup;I)V
     .locals 2
-    .param p1    # Landroid/widget/RadioGroup;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemFragment$1;->val$buttonBar:Lcom/google/android/finsky/layout/ButtonBar;
 

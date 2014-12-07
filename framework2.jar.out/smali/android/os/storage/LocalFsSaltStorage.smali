@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/os/storage/SaltStorage;-><init>(I)V
 
@@ -57,8 +56,6 @@
 
 .method private storeSalt(Ljava/lang/String;[B)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     const/4 v6, 0x0
 
@@ -309,7 +306,6 @@
 
 .method public loadSalt(Ljava/lang/String;)[B
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -526,7 +522,6 @@
 
 .method public putSalt([B)Z
     .locals 1
-    .param p1    # [B
 
     invoke-direct {p0}, Landroid/os/storage/LocalFsSaltStorage;->getSaltFilePath()Ljava/lang/String;
 

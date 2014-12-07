@@ -33,7 +33,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/api/model/PaginatedList;-><init>(Ljava/lang/String;)V
 
@@ -48,8 +47,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/api/model/PaginatedList;-><init>(Ljava/lang/String;Z)V
 
@@ -64,8 +61,6 @@
 
 .method protected constructor <init>(Ljava/util/List;IZ)V
     .locals 1
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,7 +98,6 @@
 
 .method public getBackendId(I)I
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/BucketedList;->getBucketCount()I
 

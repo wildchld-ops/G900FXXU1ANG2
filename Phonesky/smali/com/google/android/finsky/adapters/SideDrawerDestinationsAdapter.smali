@@ -41,8 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -99,7 +97,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mUpdateRunnable:Ljava/lang/Runnable;
 
@@ -108,7 +105,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mUpdateHandler:Landroid/os/Handler;
 
@@ -117,7 +113,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;)Lcom/google/android/finsky/api/model/DfeToc;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mDfeToc:Lcom/google/android/finsky/api/model/DfeToc;
 
@@ -126,7 +121,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -135,8 +129,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->logMenuClickEvent(I)V
 
@@ -145,7 +137,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mContext:Landroid/content/Context;
 
@@ -154,7 +145,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
 
     iget v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mCurrentBackendId:I
 
@@ -409,7 +399,6 @@
 
 .method public static isTopLevelSideDrawerDestination(Lcom/google/android/finsky/navigationmanager/NavigationManager;)Z
     .locals 6
-    .param p0    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     const/4 v3, 0x1
 
@@ -476,7 +465,6 @@
 
 .method private logMenuClickEvent(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -501,7 +489,6 @@
 
 .method private makeMyCollectionAction(I)Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x3
 
@@ -566,7 +553,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mPrimaryActions:Ljava/util/List;
 
@@ -579,7 +565,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -588,7 +573,6 @@
 
 .method public getItemViewType(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mPrimaryActions:Ljava/util/List;
 
@@ -618,9 +602,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->getItemViewType(I)I
 
@@ -694,7 +675,6 @@
 
 .method public setToc(Lcom/google/android/finsky/api/model/DfeToc;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
 
     iput-object p1, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mDfeToc:Lcom/google/android/finsky/api/model/DfeToc;
 
@@ -705,7 +685,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;->mCurrentBackendId:I
 

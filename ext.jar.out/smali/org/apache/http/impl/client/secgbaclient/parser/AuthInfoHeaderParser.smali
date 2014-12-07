@@ -48,8 +48,6 @@
 
 .method private parse(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -79,8 +77,6 @@
 
 .method private setCNonce(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -142,8 +138,6 @@
 
 .method private setNonceCount(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -205,8 +199,6 @@
 
 .method private setQop(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -268,8 +260,6 @@
 
 .method private setRspAuth(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -333,7 +323,6 @@
 # virtual methods
 .method public authInfoHeaderParse(Lorg/apache/http/HttpResponse;)Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
     .locals 5
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/4 v0, 0x0
 

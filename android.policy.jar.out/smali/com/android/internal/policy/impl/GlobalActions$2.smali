@@ -23,11 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/policy/impl/GlobalActions;IIIIILjava/lang/String;)V
     .locals 6
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$2;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
@@ -222,7 +217,6 @@
 
 .method onToggle(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/GlobalActions$2;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 

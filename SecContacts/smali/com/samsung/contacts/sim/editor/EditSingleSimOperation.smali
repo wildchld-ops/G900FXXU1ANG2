@@ -30,9 +30,6 @@
 # virtual methods
 .method public addAccountType(Lcom/samsung/contacts/sim/editor/EditSimOperation$AddAccountTypeInterface;Lcom/android/contacts/common/model/account/AccountType;Lcom/android/contacts/common/model/account/AccountType;Ljava/util/Map;Ljava/util/Map;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$AddAccountTypeInterface;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p3    # Lcom/android/contacts/common/model/account/AccountType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,10 +60,6 @@
 
 .method public addSimAccounts(Landroid/accounts/Account;Lcom/android/contacts/common/model/account/AccountType;Landroid/accounts/Account;Lcom/android/contacts/common/model/account/AccountType;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p3    # Landroid/accounts/Account;
-    .param p4    # Lcom/android/contacts/common/model/account/AccountType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -110,12 +103,6 @@
 
 .method public addSpecialSIMTextWatcherIfNeeded(Lcom/samsung/contacts/sim/editor/EditSimOperation$AddSpecialSIMTextWatcherIfNeededIntefrace;Landroid/content/Context;ILcom/android/contacts/common/model/dataitem/DataKind;Landroid/widget/EditText;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$AddSpecialSIMTextWatcherIfNeededIntefrace;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p5    # Landroid/widget/EditText;
-    .param p6    # Ljava/lang/String;
 
     iget-object v0, p4, Lcom/android/contacts/common/model/dataitem/DataKind;->mimeType:Ljava/lang/String;
 
@@ -244,12 +231,6 @@
 
 .method public afterTextChangedForSim(Lcom/samsung/contacts/sim/editor/EditSimOperation$AfterTextChangedForSimInterface;Landroid/content/Context;ILandroid/text/Editable;Landroid/widget/EditText;Lcom/android/contacts/common/model/dataitem/DataKind;)V
     .locals 9
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$AfterTextChangedForSimInterface;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # Landroid/text/Editable;
-    .param p5    # Landroid/widget/EditText;
-    .param p6    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     invoke-virtual {p5}, Landroid/widget/TextView;->getInputType()I
 
@@ -537,12 +518,6 @@
 
 .method public buildDiffForSim(Lcom/samsung/contacts/sim/editor/EditSimOperation$BuildDiffForSimValuesDeltaInterface;Landroid/net/Uri;Landroid/content/ContentValues;ZZZ)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$BuildDiffForSimValuesDeltaInterface;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
 
     const/4 v0, 0x0
 
@@ -629,8 +604,6 @@
 
 .method public buildDiffForSim(Lcom/samsung/contacts/sim/editor/EditSimOperation$BuildDiffForSimInterface;Ljava/util/ArrayList;Landroid/content/Context;)V
     .locals 35
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$BuildDiffForSimInterface;
-    .param p3    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1688,8 +1661,6 @@
 
 .method public buildDiffForSim2(Lcom/samsung/contacts/sim/editor/EditSimOperation$BuildDiffForSimInterface;Ljava/util/ArrayList;Landroid/content/Context;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$BuildDiffForSimInterface;
-    .param p3    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1710,8 +1681,6 @@
 
 .method public checkValidLengthOfNameForSim(Landroid/content/Context;Lcom/android/contacts/model/RawContactDeltaList;)Z
     .locals 20
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/model/RawContactDeltaList;
 
     const/16 v18, 0x0
 
@@ -2072,7 +2041,6 @@
 
 .method public chkKorean(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2186,11 +2154,6 @@
 
 .method public ensureKindExistsSIMPhone(Lcom/samsung/contacts/sim/editor/EditSimOperation$EnsuerKindExistsSIMPhoneInterface;Landroid/content/Context;Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/account/AccountType;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$EnsuerKindExistsSIMPhoneInterface;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/contacts/model/RawContactDelta;
-    .param p4    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p5    # Ljava/lang/String;
 
     invoke-virtual {p4, p5}, Lcom/android/contacts/common/model/account/AccountType;->getKindForMimetype(Ljava/lang/String;)Lcom/android/contacts/common/model/dataitem/DataKind;
 
@@ -2401,7 +2364,6 @@
 
 .method public getAnrConfigValue(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -2420,8 +2382,6 @@
 
 .method public getWritableAccountsWithoutSim(Lcom/samsung/contacts/sim/editor/EditSimOperation$GetWritableAccountsWithoutSimInterface;Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
     .locals 4
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$GetWritableAccountsWithoutSimInterface;
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2500,8 +2460,6 @@
 
 .method public getWritableAccountsWithoutSim1(Lcom/samsung/contacts/sim/editor/EditSimOperation$GetWritableAccountsWithoutSimInterface;Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
     .locals 1
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$GetWritableAccountsWithoutSimInterface;
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2527,8 +2485,6 @@
 
 .method public getWritableAccountsWithoutSim2(Lcom/samsung/contacts/sim/editor/EditSimOperation$GetWritableAccountsWithoutSimInterface;Landroid/content/Context;Ljava/util/List;)Ljava/util/List;
     .locals 1
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation$GetWritableAccountsWithoutSimInterface;
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2554,8 +2510,6 @@
 
 .method public isEmailAvailable(Landroid/content/Context;I)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/contacts/sim/editor/EditSingleSimOperation;->isEmailCapable(Landroid/content/Context;I)Z
 
@@ -2586,8 +2540,6 @@
 
 .method public isEmailCapable(Landroid/content/Context;I)Z
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/samsung/contacts/sim/PhoneBookManageSim;->getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/PhoneBookManageSim;
 
@@ -2608,7 +2560,6 @@
 
 .method public isSim1Account(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/sim/editor/EditSingleSimOperation;->isSimAccount(Ljava/lang/String;)Z
 
@@ -2619,7 +2570,6 @@
 
 .method public isSim2Account(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2628,7 +2578,6 @@
 
 .method public isSimAccount(Lcom/android/contacts/common/model/account/AccountType;)Z
     .locals 2
-    .param p1    # Lcom/android/contacts/common/model/account/AccountType;
 
     if-eqz p1, :cond_0
 
@@ -2651,7 +2600,6 @@
 
 .method public isSimAccount(Lcom/android/contacts/model/RawContactDelta;)Z
     .locals 3
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
 
     if-eqz p1, :cond_0
 
@@ -2689,7 +2637,6 @@
 
 .method public isSimAccount(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "vnd.sec.contact.sim"
 
@@ -2737,8 +2684,6 @@
 
 .method public isSimFull(Landroid/content/Context;I)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/samsung/contacts/sim/PhoneBookManageSim;->getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/PhoneBookManageSim;
 
@@ -2753,7 +2698,6 @@
 
 .method public isTwoGSim(Landroid/content/Context;)Z
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/samsung/contacts/sim/PhoneBookManageSim;->getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/PhoneBookManageSim;
 
@@ -2774,10 +2718,6 @@
 
 .method public parseExtrasForSIM(Landroid/content/Context;Lcom/android/contacts/common/model/account/AccountType;Lcom/android/contacts/model/RawContactDelta;Landroid/os/Bundle;)V
     .locals 28
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p3    # Lcom/android/contacts/model/RawContactDelta;
-    .param p4    # Landroid/os/Bundle;
 
     if-eqz p4, :cond_0
 
@@ -2970,16 +2910,6 @@
 
 .method public parseExtrasForSIM(Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/dataitem/DataKind;Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZILandroid/content/Context;)Z
     .locals 17
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
-    .param p2    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Z
-    .param p9    # I
-    .param p10    # Landroid/content/Context;
 
     move-object/from16 v0, p3
 
@@ -3338,11 +3268,6 @@
 
 .method public readCurrentValueFromState(Landroid/content/Context;ILcom/android/contacts/common/model/ValuesDelta;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/contacts/common/model/ValuesDelta;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/samsung/contacts/sim/PhoneBookManageSim;->getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/PhoneBookManageSim;
 
@@ -3385,12 +3310,6 @@
 
 .method public removeSimAccountsIfUnavailable(Landroid/content/Context;ZLjava/util/ArrayList;Landroid/accounts/Account;Landroid/accounts/Account;Lcom/android/contacts/common/model/account/AccountType;Lcom/android/contacts/common/model/account/AccountType;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p4    # Landroid/accounts/Account;
-    .param p5    # Landroid/accounts/Account;
-    .param p6    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p7    # Lcom/android/contacts/common/model/account/AccountType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3484,13 +3403,6 @@
 
 .method public setLengthFilterForSIM(Landroid/content/Context;ILandroid/widget/EditText;Lcom/android/contacts/common/model/account/AccountType$EditField;Lcom/android/contacts/common/model/dataitem/DataKind;Lcom/android/contacts/common/model/ValuesDelta;I)I
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/widget/EditText;
-    .param p4    # Lcom/android/contacts/common/model/account/AccountType$EditField;
-    .param p5    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p6    # Lcom/android/contacts/common/model/ValuesDelta;
-    .param p7    # I
 
     const/4 v7, 0x0
 
@@ -3730,10 +3642,6 @@
 
 .method public setSimLayout(Landroid/content/Context;Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/account/AccountType;Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/model/RawContactDelta;
-    .param p3    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p4    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -3847,8 +3755,6 @@
 
 .method public showSimFullToast(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const v0, 0x7f0e0241
 
@@ -3865,8 +3771,6 @@
 
 .method public showSimInitializingToast(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const v0, 0x7f0e0364
 
@@ -3883,7 +3787,6 @@
 
 .method public whichSim(Lcom/android/contacts/model/RawContactDelta;)I
     .locals 4
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
 
     const/4 v0, -0x1
 
@@ -3948,7 +3851,6 @@
 
 .method public whichSim(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "vnd.sec.contact.sim"
 

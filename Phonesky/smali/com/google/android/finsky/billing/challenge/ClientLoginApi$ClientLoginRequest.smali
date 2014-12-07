@@ -33,10 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/challenge/ClientLoginApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 4
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p6    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

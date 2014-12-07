@@ -1188,7 +1188,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/MessageSmscActivityDS;)Landroid/widget/TabHost;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/MessageSmscActivityDS;
 
     iget-object v0, p0, Lcom/android/mms/settings/MessageSmscActivityDS;->mTabs:Landroid/widget/TabHost;
 
@@ -1205,7 +1204,6 @@
 
 .method static synthetic access$102(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/settings/MessageSmscActivityDS;->Smsc2:Ljava/lang/String;
 
@@ -1214,7 +1212,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/MessageSmscActivityDS;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/MessageSmscActivityDS;
 
     iget-object v0, p0, Lcom/android/mms/settings/MessageSmscActivityDS;->mSmscEditor:Landroid/widget/EditText;
 
@@ -1231,7 +1228,6 @@
 
 .method static synthetic access$302(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/settings/MessageSmscActivityDS;->Smsc1:Ljava/lang/String;
 
@@ -1240,7 +1236,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/settings/MessageSmscActivityDS;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/MessageSmscActivityDS;
 
     invoke-direct {p0}, Lcom/android/mms/settings/MessageSmscActivityDS;->UpdateSmsc()V
 
@@ -1249,7 +1244,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/settings/MessageSmscActivityDS;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/MessageSmscActivityDS;
 
     invoke-direct {p0}, Lcom/android/mms/settings/MessageSmscActivityDS;->cancel()V
 
@@ -1525,7 +1519,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1560,7 +1553,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const v8, 0x7f0b02e0
 
@@ -1875,7 +1867,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -1920,7 +1911,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1964,7 +1954,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x6
 
@@ -2028,7 +2017,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 

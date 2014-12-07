@@ -84,15 +84,6 @@
 
 .method constructor <init>(I[BIIIZZ[B[I)V
     .locals 2
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # [B
-    .param p9    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -145,7 +136,6 @@
 
 .method static synthetic access$000(Landroid/os/Parcel;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     invoke-static {p0}, Landroid/graphics/Bitmap;->nativeCreateFromParcel(Landroid/os/Parcel;)Landroid/graphics/Bitmap;
 
@@ -156,7 +146,6 @@
 
 .method static synthetic access$100(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/graphics/Bitmap;->nativeDestructor(I)V
 
@@ -165,7 +154,6 @@
 
 .method private checkGPUCompression(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->isGLCompressed()Z
 
@@ -191,8 +179,6 @@
 
 .method private checkPixelAccess(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/graphics/Bitmap;->checkXYSign(II)V
 
@@ -231,13 +217,6 @@
 
 .method private checkPixelsAccess(IIIIII[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [I
 
     invoke-static {p1, p2}, Landroid/graphics/Bitmap;->checkXYSign(II)V
 
@@ -345,7 +324,6 @@
 
 .method private checkRecycled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Landroid/graphics/Bitmap;->mRecycled:Z
 
@@ -363,8 +341,6 @@
 
 .method private static checkWidthHeight(II)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     if-gtz p0, :cond_0
 
@@ -393,8 +369,6 @@
 
 .method private static checkXYSign(II)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     if-gez p0, :cond_0
 
@@ -423,9 +397,6 @@
 
 .method public static createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap$Config;
 
     const/4 v0, 0x1
 
@@ -438,10 +409,6 @@
 
 .method private static createBitmap(IILandroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap$Config;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -454,7 +421,6 @@
 
 .method public static createBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -475,11 +441,6 @@
 
 .method public static createBitmap(Landroid/graphics/Bitmap;IIII)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -504,13 +465,6 @@
 
 .method public static createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
     .locals 17
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Matrix;
-    .param p6    # Z
 
     invoke-static/range {p1 .. p2}, Landroid/graphics/Bitmap;->checkXYSign(II)V
 
@@ -812,10 +766,6 @@
 
 .method public static createBitmap(Landroid/util/DisplayMetrics;IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/util/DisplayMetrics;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap$Config;
 
     const/4 v0, 0x1
 
@@ -828,11 +778,6 @@
 
 .method private static createBitmap(Landroid/util/DisplayMetrics;IILandroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
     .locals 8
-    .param p0    # Landroid/util/DisplayMetrics;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap$Config;
-    .param p4    # Z
 
     if-lez p1, :cond_0
 
@@ -895,13 +840,6 @@
 
 .method public static createBitmap(Landroid/util/DisplayMetrics;[IIIIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
     .locals 11
-    .param p0    # Landroid/util/DisplayMetrics;
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Bitmap$Config;
 
     invoke-static/range {p4 .. p5}, Landroid/graphics/Bitmap;->checkWidthHeight(II)V
 
@@ -994,11 +932,6 @@
 
 .method public static createBitmap(Landroid/util/DisplayMetrics;[IIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/util/DisplayMetrics;
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Bitmap$Config;
 
     const/4 v2, 0x0
 
@@ -1023,12 +956,6 @@
 
 .method public static createBitmap([IIIIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Bitmap$Config;
 
     const/4 v0, 0x0
 
@@ -1053,10 +980,6 @@
 
 .method public static createBitmap([IIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap$Config;
 
     const/4 v0, 0x0
 
@@ -1081,10 +1004,6 @@
 
 .method public static createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -1280,9 +1199,6 @@
 
 .method public static scaleFromDensity(III)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -1308,7 +1224,6 @@
 
 .method public static setDefaultDensity(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Landroid/graphics/Bitmap;->sDefaultDensity:I
 
@@ -1319,9 +1234,6 @@
 # virtual methods
 .method public compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap$CompressFormat;
-    .param p2    # I
-    .param p3    # Ljava/io/OutputStream;
 
     const-string v0, "Can\'t compress a recycled bitmap"
 
@@ -1369,8 +1281,6 @@
 
 .method public copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap$Config;
-    .param p2    # Z
 
     const-string v1, "Can\'t copy a recycled bitmap"
 
@@ -1400,7 +1310,6 @@
 
 .method public copyPixelsFromBuffer(Ljava/nio/Buffer;)V
     .locals 11
-    .param p1    # Ljava/nio/Buffer;
 
     const-string v7, "copyPixelsFromBuffer called on recycled bitmap"
 
@@ -1494,7 +1403,6 @@
 
 .method public copyPixelsToBuffer(Ljava/nio/Buffer;)V
     .locals 11
-    .param p1    # Ljava/nio/Buffer;
 
     const-string v7, "Critical: Access to pixel information is not available for compressed textures"
 
@@ -1592,7 +1500,6 @@
 
 .method public eraseColor(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Can\'t erase a recycled bitmap"
 
@@ -1634,8 +1541,6 @@
 
 .method public extractAlpha(Landroid/graphics/Paint;[I)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # [I
 
     const-string v2, "Can\'t extractAlpha on a recycled bitmap"
 
@@ -1799,8 +1704,6 @@
 
 .method public getPixel(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "Can\'t call getPixel() on a recycled bitmap"
 
@@ -1821,13 +1724,6 @@
 
 .method public getPixels([IIIIIII)V
     .locals 9
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const-string v0, "Can\'t call getPixels() on a recycled bitmap"
 
@@ -1897,7 +1793,6 @@
 
 .method public getScaledHeight(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -1914,7 +1809,6 @@
 
 .method public getScaledHeight(Landroid/graphics/Canvas;)I
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -1933,7 +1827,6 @@
 
 .method public getScaledHeight(Landroid/util/DisplayMetrics;)I
     .locals 3
-    .param p1    # Landroid/util/DisplayMetrics;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -1952,7 +1845,6 @@
 
 .method public getScaledWidth(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -1969,7 +1861,6 @@
 
 .method public getScaledWidth(Landroid/graphics/Canvas;)I
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -1988,7 +1879,6 @@
 
 .method public getScaledWidth(Landroid/util/DisplayMetrics;)I
     .locals 3
-    .param p1    # Landroid/util/DisplayMetrics;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -2125,9 +2015,6 @@
 
 .method public reconfigure(IILandroid/graphics/Bitmap$Config;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap$Config;
 
     const-string v0, "Can\'t call reconfigure() on a recycled bitmap"
 
@@ -2224,9 +2111,6 @@
 
 .method reinit(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iput p1, p0, Landroid/graphics/Bitmap;->mWidth:I
 
@@ -2239,7 +2123,6 @@
 
 .method public sameAs(Landroid/graphics/Bitmap;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eq p0, p1, :cond_0
 
@@ -2269,7 +2152,6 @@
 
 .method public setConfig(Landroid/graphics/Bitmap$Config;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap$Config;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -2286,7 +2168,6 @@
 
 .method public setDensity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/Bitmap;->mDensity:I
 
@@ -2295,7 +2176,6 @@
 
 .method public setHasAlpha(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/graphics/Bitmap;->mNativeBitmap:I
 
@@ -2306,7 +2186,6 @@
 
 .method public final setHasMipMap(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/graphics/Bitmap;->mNativeBitmap:I
 
@@ -2317,7 +2196,6 @@
 
 .method public setHeight(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -2334,7 +2212,6 @@
 
 .method public setImagePath(Landroid/util/TypedValue;)V
     .locals 2
-    .param p1    # Landroid/util/TypedValue;
 
     sget-boolean v1, Landroid/os/Build;->IS_ENG_SECURED:Z
 
@@ -2360,7 +2237,6 @@
 
 .method public setImagePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/os/Build;->IS_ENG_SECURED:Z
 
@@ -2374,7 +2250,6 @@
 
 .method public setLayoutBounds([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Landroid/graphics/Bitmap;->mLayoutBounds:[I
 
@@ -2383,7 +2258,6 @@
 
 .method public setNinePatchChunk([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Landroid/graphics/Bitmap;->mNinePatchChunk:[B
 
@@ -2392,9 +2266,6 @@
 
 .method public setPixel(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "Can\'t call setPixel() on a recycled bitmap"
 
@@ -2426,13 +2297,6 @@
 
 .method public setPixels([IIIIIII)V
     .locals 9
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const-string v0, "Can\'t call setPixels() on a recycled bitmap"
 
@@ -2503,7 +2367,6 @@
 
 .method public final setPremultiplied(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/graphics/Bitmap;->mIsPremultiplied:Z
 
@@ -2512,7 +2375,6 @@
 
 .method public setWidth(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -2529,8 +2391,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const-string v0, "Can\'t parcel a recycled bitmap"
 

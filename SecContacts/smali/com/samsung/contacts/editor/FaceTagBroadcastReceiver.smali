@@ -24,7 +24,6 @@
 
 .method private getContactId(Ljava/lang/String;)J
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v7, -0x1
 
@@ -151,8 +150,6 @@
 
 .method private getFirstWritableRawContactId(Landroid/content/ContentResolver;J)J
     .locals 10
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # J
 
     const/4 v8, 0x0
 
@@ -324,8 +321,6 @@
 
 .method private setPhoto(JLandroid/graphics/Bitmap;)V
     .locals 7
-    .param p1    # J
-    .param p3    # Landroid/graphics/Bitmap;
 
     iget-object v5, p0, Lcom/samsung/contacts/editor/FaceTagBroadcastReceiver;->mContext:Landroid/content/Context;
 
@@ -398,8 +393,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/FaceTagBroadcastReceiver;->mContext:Landroid/content/Context;
 

@@ -41,7 +41,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/DeleteConfirmDialogFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/DeleteConfirmDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/DeleteConfirmDialogFragment;->mContactIds:Ljava/util/ArrayList;
 
@@ -50,7 +49,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/DeleteConfirmDialogFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/DeleteConfirmDialogFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/DeleteConfirmDialogFragment;->mShouldShowWarningToast:Z
 
@@ -59,10 +57,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/app/Fragment;Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Z)V
     .locals 6
-    .param p0    # Landroid/app/FragmentManager;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -158,7 +152,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "DeleteConfirmDialogFragment"
 
@@ -245,7 +238,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "DeleteConfirmDialogFragment"
 

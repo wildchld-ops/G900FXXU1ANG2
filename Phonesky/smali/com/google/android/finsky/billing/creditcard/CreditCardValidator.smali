@@ -14,9 +14,6 @@
 # direct methods
 .method private static checkNumber(Ljava/lang/String;II)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -74,11 +71,6 @@
 
 .method public static validate(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/util/Set;)Lcom/google/android/finsky/billing/creditcard/CreditCardType;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -122,8 +114,6 @@
 
 .method private static validateCvc(Lcom/google/android/finsky/billing/creditcard/CreditCardType;Ljava/lang/String;Ljava/util/Set;)V
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/CreditCardType;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -158,9 +148,6 @@
 
 .method private static validateExpirationDate(Ljava/lang/String;Ljava/lang/String;ILjava/util/Set;)V
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

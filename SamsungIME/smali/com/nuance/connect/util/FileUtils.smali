@@ -18,8 +18,6 @@
 
 .method public static copy(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .locals 3
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -51,8 +49,6 @@
 
 .method public static copyFile(Ljava/io/File;Ljava/io/File;)Z
     .locals 8
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
 
     const/4 v6, 0x1
 
@@ -173,8 +169,6 @@
 
 .method public static copyFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 

@@ -16,10 +16,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Landroid/net/Uri;[B)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +32,6 @@
 
 .method public static fromResponse(Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadResponse;)Lcom/google/android/vending/verifier/api/PackageVerificationResult;
     .locals 6
-    .param p0    # Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadResponse;
 
     const/4 v0, 0x0
 

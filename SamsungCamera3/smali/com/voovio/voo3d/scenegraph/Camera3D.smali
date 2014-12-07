@@ -48,11 +48,6 @@
 # direct methods
 .method public constructor <init>(IIFFF)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/high16 v3, 0x3f800000
 
@@ -199,7 +194,6 @@
 
 .method public CopyTo(Lcom/voovio/voo3d/scenegraph/Camera3D;)V
     .locals 5
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
 
     iget v1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fPan:F
 
@@ -338,7 +332,6 @@
 
 .method public addFov(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fFov:F
 
@@ -351,7 +344,6 @@
 
 .method public addPan(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fPan:F
 
@@ -364,7 +356,6 @@
 
 .method public addRoll(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fRoll:F
 
@@ -377,7 +368,6 @@
 
 .method public addRotateX(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vRotation:Lcom/voovio/voo3d/data/Vector3;
 
@@ -392,7 +382,6 @@
 
 .method public addRotateY(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vRotation:Lcom/voovio/voo3d/data/Vector3;
 
@@ -407,7 +396,6 @@
 
 .method public addRotateZ(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vRotation:Lcom/voovio/voo3d/data/Vector3;
 
@@ -422,7 +410,6 @@
 
 .method public addTilt(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fTilt:F
 
@@ -563,9 +550,6 @@
 
 .method public lookAt(FFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vOut:Lcom/voovio/voo3d/data/Vector3;
 
@@ -620,8 +604,6 @@
 
 .method public moveHorizontallyForward(FZ)V
     .locals 3
-    .param p1    # F
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_ptPos:Lcom/voovio/voo3d/data/Vector3;
 
@@ -661,8 +643,6 @@
 
 .method public moveHorizontallySideways(FZ)V
     .locals 3
-    .param p1    # F
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_ptPos:Lcom/voovio/voo3d/data/Vector3;
 
@@ -702,8 +682,6 @@
 
 .method public moveVertically(FZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_ptPos:Lcom/voovio/voo3d/data/Vector3;
 
@@ -723,7 +701,6 @@
 
 .method public projectVector3D(Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/geometry/Point;
     .locals 8
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v5, p1, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -928,10 +905,6 @@
 
 .method public setDirection(FFFZ)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vOut:Lcom/voovio/voo3d/data/Vector3;
 
@@ -983,7 +956,6 @@
 
 .method public setFov(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fFov:F
 
@@ -994,7 +966,6 @@
 
 .method public setPan(F)V
     .locals 3
-    .param p1    # F
 
     iget v1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fPan:F
 
@@ -1035,10 +1006,6 @@
 
 .method public setPosition(FFFZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_ptPos:Lcom/voovio/voo3d/data/Vector3;
 
@@ -1074,7 +1041,6 @@
 
 .method public setRoll(F)V
     .locals 3
-    .param p1    # F
 
     iget v1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fRoll:F
 
@@ -1115,7 +1081,6 @@
 
 .method public setRotateX(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vRotation:Lcom/voovio/voo3d/data/Vector3;
 
@@ -1164,7 +1129,6 @@
 
 .method public setRotateY(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vRotation:Lcom/voovio/voo3d/data/Vector3;
 
@@ -1213,7 +1177,6 @@
 
 .method public setRotateZ(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_vRotation:Lcom/voovio/voo3d/data/Vector3;
 
@@ -1262,7 +1225,6 @@
 
 .method public setTilt(F)V
     .locals 3
-    .param p1    # F
 
     iget v1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_fTilt:F
 
@@ -1303,7 +1265,6 @@
 
 .method public setViewport(Lcom/voovio/voo3d/view/Viewport;)V
     .locals 0
-    .param p1    # Lcom/voovio/voo3d/view/Viewport;
 
     iput-object p1, p0, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_oViewport:Lcom/voovio/voo3d/view/Viewport;
 

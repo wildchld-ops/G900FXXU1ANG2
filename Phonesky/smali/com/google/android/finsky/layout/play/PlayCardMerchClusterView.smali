@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -23,8 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/play/PlayCardClusterView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -55,10 +52,6 @@
 # virtual methods
 .method public configureMerch(Lcom/google/android/finsky/utils/BitmapLoader;ILcom/google/android/finsky/protos/Doc$Image;Landroid/view/View$OnClickListener;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p4    # Landroid/view/View$OnClickListener;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/play/PlayCardMerchClusterView;->mContent:Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;
 

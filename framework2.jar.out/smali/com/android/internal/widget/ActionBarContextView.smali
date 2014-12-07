@@ -75,7 +75,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -86,8 +85,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010394
 
@@ -98,9 +95,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v7, 0x1
 
@@ -305,7 +299,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/widget/ActionBarContextView;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarContextView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarContextView;->mActionMode:Landroid/view/ActionMode;
 
@@ -314,7 +307,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/widget/ActionBarContextView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarContextView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -935,7 +927,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/view/ViewGroup$MarginLayoutParams;
 
@@ -988,7 +979,6 @@
 
 .method public initForMode(Landroid/view/ActionMode;)V
     .locals 13
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v12, 0x0
 
@@ -1313,14 +1303,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget v0, p0, Lcom/android/internal/widget/ActionBarContextView;->mAnimationMode:I
 
@@ -1340,21 +1328,18 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x0
 
@@ -1481,7 +1466,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
@@ -1528,11 +1512,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 15
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/View;->isLayoutRtl()Z
 
@@ -1807,8 +1786,6 @@
 
 .method protected onMeasure(II)V
     .locals 33
-    .param p1    # I
-    .param p2    # I
 
     const/16 v16, 0x0
 
@@ -2821,7 +2798,6 @@
 
 .method public setContentHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/AbsActionBarView;->mContentHeight:I
 
@@ -2830,7 +2806,6 @@
 
 .method public setCustomView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarContextView;->mCustomView:Landroid/view/View;
 
@@ -2868,7 +2843,6 @@
 
 .method public setSplitActionBar(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, -0x1
 
@@ -3015,7 +2989,6 @@
 
 .method public setSubtitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarContextView;->mSubtitle:Ljava/lang/CharSequence;
 
@@ -3026,7 +2999,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarContextView;->mTitle:Ljava/lang/CharSequence;
 
@@ -3037,7 +3009,6 @@
 
 .method public setTitleOptional(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarContextView;->mTitleOptional:Z
 
@@ -3083,8 +3054,6 @@
 
 .method public startActionModeForChild(Landroid/view/View;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ActionMode$Callback;
 
     const/4 v0, 0x0
 

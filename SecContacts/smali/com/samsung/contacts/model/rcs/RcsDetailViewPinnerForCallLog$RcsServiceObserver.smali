@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog$RcsServiceObserver;->this$0:Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog$RcsServiceObserver;->this$0:Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;
 

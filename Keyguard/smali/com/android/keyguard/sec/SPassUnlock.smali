@@ -105,7 +105,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -239,7 +238,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/SPassUnlock;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SPassUnlock;->mHandler:Landroid/os/Handler;
 
@@ -248,7 +246,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/SPassUnlock;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SPassUnlock;->mContext:Landroid/content/Context;
 
@@ -257,7 +254,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/SPassUnlock;)Lcom/android/keyguard/sec/SPassUnlock$SPassCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SPassUnlock;->mCallback:Lcom/android/keyguard/sec/SPassUnlock$SPassCallback;
 
@@ -266,7 +262,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/SPassUnlock;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SPassUnlock;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -275,8 +270,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/SPassUnlock;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/SPassUnlock;->startIdleAnimation(Z)V
 
@@ -285,8 +278,6 @@
 
 .method static synthetic access$502(Lcom/android/keyguard/sec/SPassUnlock;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/SPassUnlock;->mIsScanningAnimationFinished:Z
 
@@ -295,7 +286,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/SPassUnlock;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/SPassUnlock;->mIsIdentifyFinished:Z
 
@@ -304,7 +294,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/SPassUnlock;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/SPassUnlock;->mIsPassed:Z
 
@@ -313,7 +302,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/SPassUnlock;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/SPassUnlock;->startSucceedAnimation()V
 
@@ -322,7 +310,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/SPassUnlock;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SPassUnlock;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/SPassUnlock;->startFailedAnimation()V
 
@@ -493,7 +480,6 @@
 
 .method private setErrorCaseText(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -744,7 +730,6 @@
 
 .method private startIdleAnimation(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/keyguard/sec/SPassUnlock;->mIsCaptured:Z
 
@@ -1008,7 +993,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     const/4 v2, 0x0
 
@@ -1390,7 +1374,6 @@
 
 .method handlePokeWakelock(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/keyguard/sec/SPassUnlock;->mContext:Landroid/content/Context;
 
@@ -1472,7 +1455,6 @@
 
 .method public initializeView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-string v0, "SPassUnlock"
 
@@ -1487,9 +1469,6 @@
 
 .method public initializeViews(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
 
     check-cast p1, Landroid/widget/TextView;
 
@@ -1528,14 +1507,12 @@
 
 .method public onInit(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public registerCallback(Lcom/android/keyguard/sec/SPassUnlock$SPassCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/SPassUnlock$SPassCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SPassUnlock;->mCallback:Lcom/android/keyguard/sec/SPassUnlock$SPassCallback;
 
@@ -1544,7 +1521,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SPassUnlock;->mKeyguardScreenCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 

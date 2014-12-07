@@ -161,8 +161,6 @@
 
 .method public constructor <init>(Landroid/accounts/Account;Landroid/os/Handler;)V
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v5, 0x1
 
@@ -291,7 +289,6 @@
 
 .method public static getBackendFromLibraryId(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/library/AccountLibrary;->LIBRARY_ID_APPS:Ljava/lang/String;
 
@@ -366,7 +363,6 @@
 
 .method public static getLibraryIdFromBackend(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -444,7 +440,6 @@
 # virtual methods
 .method public declared-synchronized add(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -561,7 +556,6 @@
 
 .method public declared-synchronized addListener(Lcom/google/android/finsky/library/AccountLibrary$Listener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary$Listener;
 
     monitor-enter p0
 
@@ -586,7 +580,6 @@
 
 .method public declared-synchronized contains(Lcom/google/android/finsky/library/LibraryEntry;)Z
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -655,7 +648,6 @@
 
 .method public dumpState(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/google/android/finsky/library/AccountLibrary;->mAccount:Landroid/accounts/Account;
 
@@ -832,7 +824,6 @@
 
 .method public declared-synchronized get(Lcom/google/android/finsky/library/LibraryEntry;)Lcom/google/android/finsky/library/LibraryEntry;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -885,7 +876,6 @@
 
 .method public declared-synchronized getAppEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibraryAppEntry;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -942,7 +932,6 @@
 
 .method public declared-synchronized getInAppEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibraryInAppEntry;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -977,7 +966,6 @@
 
 .method public declared-synchronized getInAppPurchasesForPackage(Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1023,7 +1011,6 @@
 
 .method public declared-synchronized getInAppSubscriptionEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibraryInAppSubscriptionEntry;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1101,7 +1088,6 @@
 
 .method public getLibrary(Ljava/lang/String;)Lcom/google/android/finsky/library/HashingLibrary;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/AccountLibrary;->mLibraries:Ljava/util/Map;
 
@@ -1116,7 +1102,6 @@
 
 .method public declared-synchronized getMagazinesSubscriptionEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1151,7 +1136,6 @@
 
 .method public declared-synchronized getServerToken(Ljava/lang/String;)[B
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1180,7 +1164,6 @@
 
 .method public declared-synchronized getSubscriptionPurchasesForPackage(Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1245,7 +1228,6 @@
 
 .method public declared-synchronized remove(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -1309,7 +1291,6 @@
 
 .method public declared-synchronized resetLibrary(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1363,7 +1344,6 @@
 
 .method public declared-synchronized setAutoAcquireTags([Ljava/lang/String;)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1386,8 +1366,6 @@
 
 .method public declared-synchronized setServerToken(Ljava/lang/String;[B)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     monitor-enter p0
 
@@ -1466,7 +1444,6 @@
 
 .method public supportsLibrary(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/AccountLibrary;->mLibraries:Ljava/util/Map;
 

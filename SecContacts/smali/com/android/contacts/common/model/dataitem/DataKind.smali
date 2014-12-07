@@ -90,10 +90,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IIZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -126,11 +122,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IIZZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v1, 0x1
 
@@ -191,7 +182,6 @@
 
 .method public static toString(Ljava/text/SimpleDateFormat;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/text/SimpleDateFormat;
 
     if-nez p0, :cond_0
 
@@ -212,7 +202,6 @@
 # virtual methods
 .method public getKindString(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget v0, p0, Lcom/android/contacts/common/model/dataitem/DataKind;->titleRes:I
 

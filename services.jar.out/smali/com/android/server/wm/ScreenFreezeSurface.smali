@@ -16,13 +16,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/SurfaceSession;IIIIII)V
     .locals 8
-    .param p1    # Landroid/view/SurfaceSession;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/SurfaceControl$OutOfResourcesException;
@@ -114,7 +107,6 @@
 
 .method public setAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/server/wm/ScreenFreezeSurface;->mSurface:Landroid/view/SurfaceControl;
 
@@ -125,10 +117,6 @@
 
 .method public setMatrix(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget-object v0, p0, Lcom/android/server/wm/ScreenFreezeSurface;->mSurface:Landroid/view/SurfaceControl;
 
@@ -139,8 +127,6 @@
 
 .method public setPosition(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/server/wm/ScreenFreezeSurface;->mSurface:Landroid/view/SurfaceControl;
 

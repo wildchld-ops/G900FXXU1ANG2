@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/bluetooth/DevicePickerActivity;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/DevicePickerActivity;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/DevicePickerActivity;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/DevicePickerActivity;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mHelpDialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -78,8 +76,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/bluetooth/DevicePickerActivity;Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/DevicePickerActivity;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iput-object p1, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mHelpDialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -88,7 +84,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/bluetooth/DevicePickerActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/DevicePickerActivity;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mScanBtn:Landroid/widget/Button;
 
@@ -97,8 +92,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/bluetooth/DevicePickerActivity;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/DevicePickerActivity;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mScanBtn:Landroid/widget/Button;
 
@@ -173,7 +166,6 @@
 # virtual methods
 .method public ScanBtnStateUpdate(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mScanBtn:Landroid/widget/Button;
 
@@ -203,9 +195,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -564,8 +553,6 @@
 
 .method public showHelpDialog(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 

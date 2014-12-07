@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/ReviewsSortingDialog;)Lcom/google/android/finsky/activities/ReviewsSortingDialog$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewsSortingDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewsSortingDialog;->getListener()Lcom/google/android/finsky/activities/ReviewsSortingDialog$Listener;
 
@@ -70,7 +69,6 @@
 
 .method public static newInstance(Lcom/google/android/finsky/api/model/DfeReviews;)Lcom/google/android/finsky/activities/ReviewsSortingDialog;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/DfeReviews;
 
     new-instance v1, Lcom/google/android/finsky/activities/ReviewsSortingDialog;
 
@@ -97,7 +95,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/ReviewsSortingDialog;->getActivity()Landroid/support/v4/app/FragmentActivity;
 

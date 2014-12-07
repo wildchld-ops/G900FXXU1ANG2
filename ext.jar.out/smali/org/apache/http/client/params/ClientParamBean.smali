@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1}, Lorg/apache/http/params/HttpAbstractParamBean;-><init>(Lorg/apache/http/params/HttpParams;)V
 
@@ -17,7 +16,6 @@
 # virtual methods
 .method public setAllowCircularRedirects(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -30,7 +28,6 @@
 
 .method public setConnectionManagerFactory(Lorg/apache/http/conn/ClientConnectionManagerFactory;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ClientConnectionManagerFactory;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -43,7 +40,6 @@
 
 .method public setConnectionManagerFactoryClassName(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -56,7 +52,6 @@
 
 .method public setCookiePolicy(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -90,7 +85,6 @@
 
 .method public setDefaultHost(Lorg/apache/http/HttpHost;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -103,7 +97,6 @@
 
 .method public setHandleAuthentication(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -116,7 +109,6 @@
 
 .method public setHandleRedirects(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -129,7 +121,6 @@
 
 .method public setMaxRedirects(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -142,7 +133,6 @@
 
 .method public setRejectRelativeRedirect(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -155,7 +145,6 @@
 
 .method public setVirtualHost(Lorg/apache/http/HttpHost;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 

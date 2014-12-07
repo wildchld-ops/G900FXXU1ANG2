@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/LegacyActionBar$4;->this$0:Lcom/google/android/finsky/layout/LegacyActionBar;
 

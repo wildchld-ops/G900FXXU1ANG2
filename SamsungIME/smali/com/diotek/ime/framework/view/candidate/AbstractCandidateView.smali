@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -92,8 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -138,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;)Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mExpandCandidateLayout:Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;
 
@@ -408,7 +404,6 @@
 
 .method protected init(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -1333,7 +1328,6 @@
 
 .method public updateExpandButtonImage(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->setExpandButtonImage(Z)V
 

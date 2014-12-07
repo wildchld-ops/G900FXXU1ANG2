@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/RecipientFilterItem;Lcom/android/mms/ui/RecipientFilterItem$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/RecipientFilterItem;
-    .param p2    # Lcom/android/mms/ui/RecipientFilterItem$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/RecipientFilterItem$ContactProfileSyncTask;-><init>(Lcom/android/mms/ui/RecipientFilterItem;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # [Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -217,7 +214,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/net/Uri;
 
@@ -238,7 +234,6 @@
 
 .method protected onCancelled(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onCancelled(Ljava/lang/Object;)V
 
@@ -247,7 +242,6 @@
 
 .method protected bridge synthetic onCancelled(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/Bitmap;
 
@@ -258,7 +252,6 @@
 
 .method protected onPostExecute(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
@@ -282,7 +275,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/Bitmap;
 

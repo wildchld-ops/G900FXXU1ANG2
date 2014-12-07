@@ -19,7 +19,6 @@
 # virtual methods
 .method public resolveAddress(Ljavax/sip/address/Hop;)Ljavax/sip/address/Hop;
     .locals 4
-    .param p1    # Ljavax/sip/address/Hop;
 
     invoke-interface {p1}, Ljavax/sip/address/Hop;->getPort()I
 

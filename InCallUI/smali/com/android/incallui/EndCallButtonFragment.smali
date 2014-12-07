@@ -68,7 +68,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/EndCallButtonFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/EndCallButtonFragment;
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mHandler:Landroid/os/Handler;
 
@@ -99,7 +98,6 @@
 
 .method public enableAllButtons(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/EndCallButtonFragment;->enableVoiceCall(Z)V
 
@@ -123,7 +121,6 @@
 
 .method public enableCreateContact(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mCreateButton:Landroid/widget/Button;
 
@@ -139,7 +136,6 @@
 
 .method public enableIpCall(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mIpCallButton:Landroid/widget/Button;
 
@@ -155,7 +151,6 @@
 
 .method public enableSendMessage(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mSendMsgButton:Landroid/widget/Button;
 
@@ -171,7 +166,6 @@
 
 .method public enableUpdateExisting(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mUpdateButton:Landroid/widget/Button;
 
@@ -187,7 +181,6 @@
 
 .method public enableVideoCall(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mVideoCallButton:Landroid/widget/Button;
 
@@ -203,7 +196,6 @@
 
 .method public enableViewContact(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mViewButton:Landroid/widget/Button;
 
@@ -219,7 +211,6 @@
 
 .method public enableVoiceCall(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mVoiceCallButton:Landroid/widget/Button;
 
@@ -335,7 +326,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -344,7 +334,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -492,7 +481,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -501,9 +489,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040028
 
@@ -520,7 +505,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const v3, 0x7f0800e6
 
@@ -819,7 +803,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -897,7 +880,6 @@
 
 .method public setVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
 
@@ -937,7 +919,6 @@
 
 .method public showAllButtons(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/EndCallButtonFragment;->showCreateContact(Z)V
 
@@ -950,7 +931,6 @@
 
 .method public showCreateContact(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -1036,7 +1016,6 @@
 
 .method public showUpdateExisting(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mUpdateButton:Landroid/widget/Button;
 
@@ -1062,7 +1041,6 @@
 
 .method public showViewContact(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/EndCallButtonFragment;->mViewButton:Landroid/widget/Button;
 

@@ -35,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/PeopleDetailsStreamViewBinder;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/PeopleDetailsStreamViewBinder;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/PeopleDetailsStreamViewBinder;->requestData()V
 
@@ -201,9 +200,6 @@
 # virtual methods
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/os/Bundle;
 
     const v4, 0x7f0801ba
 
@@ -334,13 +330,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p5    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p6    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/fragments/DetailsViewBinder;->init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
 
@@ -449,7 +438,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/PeopleDetailsStreamViewBinder;->mAdapter:Lcom/google/android/finsky/adapters/PeopleDetailsStreamAdapter;
 

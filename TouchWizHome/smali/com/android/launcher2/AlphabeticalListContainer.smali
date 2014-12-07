@@ -61,8 +61,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x0
 
@@ -203,8 +201,6 @@
 
 .method private feedPtToIndexView(ILandroid/graphics/PointF;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     iget-object v5, p0, Lcom/android/launcher2/AlphabeticalListContainer;->mFastScrollIndexViews:Ljava/util/ArrayList;
 
@@ -305,11 +301,6 @@
 
 .method private getMatchingIndex(Ljava/lang/String;IIZZ)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v6, -0x1
 
@@ -455,9 +446,6 @@
 
 .method private getNextLevelIndexStr(ILjava/lang/String;Z)Ljava/lang/String;
     .locals 18
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -691,7 +679,6 @@
 
 .method private getSelection(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     new-instance v3, Ljava/lang/StringBuffer;
 
@@ -738,7 +725,6 @@
 
 .method private handleMove(Landroid/graphics/PointF;)Z
     .locals 7
-    .param p1    # Landroid/graphics/PointF;
 
     const/4 v6, 0x1
 
@@ -1011,9 +997,6 @@
 
 .method private showNextLevel(Landroid/graphics/PointF;Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Landroid/graphics/PointF;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v7, 0x1
 
@@ -1139,8 +1122,6 @@
 
 .method private updateList(ZLjava/lang/String;)V
     .locals 12
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1210,7 +1191,6 @@
 
 .method private updatePopup(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -1363,7 +1343,6 @@
 # virtual methods
 .method public addAppIconViewForDrag(Lcom/android/launcher2/AppIconView;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppIconView;
 
     const/4 v0, -0x1
 
@@ -1380,7 +1359,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -1409,7 +1387,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/Utilities;->onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;)V
 
@@ -1589,21 +1566,18 @@
 
 .method public onGroupCollapsed(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onGroupExpanded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -1701,11 +1675,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 26
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -2140,8 +2109,6 @@
 
 .method protected onMeasure(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
@@ -2152,18 +2119,12 @@
 
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 3
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/AlphabeticalListContainer;->mFastScrollIndexViews:Ljava/util/ArrayList;
 
@@ -2199,7 +2160,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -2263,7 +2223,6 @@
 
 .method public setAdapter(Lcom/android/launcher2/MenuAppsListAdapter;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsListAdapter;
 
     iget-object v0, p0, Lcom/android/launcher2/AlphabeticalListContainer;->mListView:Landroid/widget/ExpandableListView;
 
@@ -2286,7 +2245,6 @@
 
 .method public setOnChildClickListener(Landroid/widget/ExpandableListView$OnChildClickListener;)V
     .locals 1
-    .param p1    # Landroid/widget/ExpandableListView$OnChildClickListener;
 
     iget-object v0, p0, Lcom/android/launcher2/AlphabeticalListContainer;->mListView:Landroid/widget/ExpandableListView;
 
@@ -2302,7 +2260,6 @@
 
 .method public setOnGroupClickListener(Landroid/widget/ExpandableListView$OnGroupClickListener;)V
     .locals 1
-    .param p1    # Landroid/widget/ExpandableListView$OnGroupClickListener;
 
     iget-object v0, p0, Lcom/android/launcher2/AlphabeticalListContainer;->mListView:Landroid/widget/ExpandableListView;
 
@@ -2318,7 +2275,6 @@
 
 .method public setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
     .locals 1
-    .param p1    # Landroid/widget/AdapterView$OnItemLongClickListener;
 
     iget-object v0, p0, Lcom/android/launcher2/AlphabeticalListContainer;->mListView:Landroid/widget/ExpandableListView;
 

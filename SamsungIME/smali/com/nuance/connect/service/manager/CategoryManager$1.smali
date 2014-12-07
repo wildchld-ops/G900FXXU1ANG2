@@ -36,8 +36,6 @@
 # virtual methods
 .method public onLanguageUpdate([I[I)V
     .locals 7
-    .param p1    # [I
-    .param p2    # [I
 
     iget-object v4, p0, Lcom/nuance/connect/service/manager/CategoryManager$1;->this$0:Lcom/nuance/connect/service/manager/CategoryManager;
 
@@ -147,7 +145,6 @@
 
 .method public onLocaleUpdate(Ljava/util/Locale;)V
     .locals 3
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager$1;->this$0:Lcom/nuance/connect/service/manager/CategoryManager;
 

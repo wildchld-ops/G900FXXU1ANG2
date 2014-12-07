@@ -126,7 +126,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/AbstractCommandManager;-><init>(Lcom/nuance/connect/service/ConnectClient;)V
 
@@ -201,9 +200,6 @@
 
 .method private acceptDocumentTerms(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/nuance/connect/service/manager/DocumentManager;->buildDocId(III)Ljava/lang/String;
 
@@ -315,7 +311,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/DocumentManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/DocumentManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/DocumentManager;->reprocessList()V
 
@@ -324,9 +319,6 @@
 
 .method private buildDocId(III)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -589,7 +581,6 @@
 
 .method private getDocument(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -680,8 +671,6 @@
 
 .method private moveDoc(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -796,7 +785,6 @@
 
 .method private processGetDocumentResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v3, 0x1
 
@@ -873,7 +861,6 @@
 
 .method private processListResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 14
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v12, 0x1
 
@@ -1410,7 +1397,6 @@
 
 .method private sendDocumentToHost([Ljava/lang/String;)V
     .locals 13
-    .param p1    # [Ljava/lang/String;
 
     new-instance v9, Ljava/util/ArrayList;
 
@@ -1771,8 +1757,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -1847,7 +1831,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 
@@ -1867,7 +1850,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 
@@ -1951,7 +1933,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 

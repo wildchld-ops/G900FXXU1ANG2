@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -23,8 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -55,7 +52,6 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -124,7 +120,6 @@
 
 .method public setWidthPercentage(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/google/android/finsky/layout/HistogramBar;->mWidthPercentage:D
 

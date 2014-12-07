@@ -27,8 +27,6 @@
 
 .method public constructor <init>(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,9 +57,6 @@
 
 .method public retryRequest(Ljava/io/IOException;ILorg/apache/http/protocol/HttpContext;)Z
     .locals 5
-    .param p1    # Ljava/io/IOException;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
 
     const/4 v3, 0x1
 

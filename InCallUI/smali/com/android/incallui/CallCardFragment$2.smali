@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/incallui/CallCardFragment$2;->this$0:Lcom/android/incallui/CallCardFragment;
 

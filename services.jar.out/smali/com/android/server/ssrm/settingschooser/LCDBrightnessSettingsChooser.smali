@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/PowerManager;)V
     .locals 0
-    .param p1    # Landroid/os/PowerManager;
 
     invoke-direct {p0}, Lcom/android/server/ssrm/settings/SettingsChooser;-><init>()V
 

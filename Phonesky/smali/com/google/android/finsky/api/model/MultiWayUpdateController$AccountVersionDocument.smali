@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;ILcom/google/android/finsky/api/model/Document;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

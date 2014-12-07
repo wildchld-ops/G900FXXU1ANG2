@@ -85,8 +85,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -97,9 +95,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -182,7 +177,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/ScreenshotGallery;)Lcom/google/android/finsky/adapters/ImageStripAdapter;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ScreenshotGallery;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mImageStripAdapter:Lcom/google/android/finsky/adapters/ImageStripAdapter;
 
@@ -191,7 +185,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/ScreenshotGallery;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ScreenshotGallery;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mInFlightRequests:Ljava/util/List;
 
@@ -200,7 +193,6 @@
 
 .method static synthetic access$204(Lcom/google/android/finsky/layout/ScreenshotGallery;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ScreenshotGallery;
 
     iget v0, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mNumImagesFailed:I
 
@@ -213,7 +205,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/ScreenshotGallery;)Lcom/google/android/finsky/layout/LayoutSwitcher;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ScreenshotGallery;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mLayoutSwitcher:Lcom/google/android/finsky/layout/LayoutSwitcher;
 
@@ -222,7 +213,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/ScreenshotGallery;)Landroid/content/res/Resources;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ScreenshotGallery;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mResources:Landroid/content/res/Resources;
 
@@ -231,7 +221,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/layout/ScreenshotGallery;)Lcom/google/android/finsky/layout/HorizontalStrip;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ScreenshotGallery;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mImageStrip:Lcom/google/android/finsky/layout/HorizontalStrip;
 
@@ -914,10 +903,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;Z)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Z
 
     iput-object p2, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mBitmapLoader:Lcom/google/android/finsky/utils/BitmapLoader;
 
@@ -995,7 +980,6 @@
 
 .method public onImageChildViewTap(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotGallery;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -1008,11 +992,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
@@ -1031,7 +1010,6 @@
 
 .method public onVideoChildViewTap(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/ScreenshotGallery;->getContext()Landroid/content/Context;
 

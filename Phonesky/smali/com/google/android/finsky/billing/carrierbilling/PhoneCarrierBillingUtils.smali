@@ -91,7 +91,6 @@
 
 .method private static convertAddressFieldToInputField(Lcom/android/i18n/addressinput/AddressField;)Lcom/google/android/finsky/billing/carrierbilling/PhoneCarrierBillingUtils$AddressInputField;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/AddressField;
 
     sget-object v0, Lcom/google/android/finsky/billing/carrierbilling/PhoneCarrierBillingUtils;->addressMap:Ljava/util/EnumMap;
 
@@ -106,10 +105,6 @@
 
 .method public static getErrors(Ljava/lang/String;Ljava/lang/String;Lcom/android/i18n/addressinput/AddressProblems;Lcom/google/android/finsky/billing/BillingUtils$AddressMode;)Ljava/util/Collection;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/addressinput/AddressProblems;
-    .param p3    # Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -244,7 +239,6 @@
 
 .method public static getSubscriberInfo(Lcom/google/android/finsky/protos/BillingAddress$Address;)Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/protos/BillingAddress$Address;
 
     if-nez p0, :cond_0
 
@@ -295,7 +289,6 @@
 
 .method public static isPhoneNumberRequired(Lcom/google/android/finsky/billing/BillingUtils$AddressMode;)Z
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
 
     const/4 v0, 0x1
 
@@ -331,8 +324,6 @@
 
 .method public static subscriberInfoToAddress(Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;Lcom/google/android/finsky/billing/BillingUtils$AddressMode;)Lcom/google/android/finsky/protos/BillingAddress$Address;
     .locals 3
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
-    .param p1    # Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
 
     const/4 v2, 0x1
 
@@ -513,7 +504,6 @@
 
 .method public static subscriberInfoToAddressData(Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;)Lcom/android/i18n/addressinput/AddressData;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
 
     new-instance v0, Lcom/android/i18n/addressinput/AddressData$Builder;
 

@@ -78,7 +78,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -89,8 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -101,9 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -258,7 +252,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/widget/ChartSweepView;)V
     .locals 0
-    .param p0    # Lcom/android/settings/widget/ChartSweepView;
 
     invoke-direct {p0}, Lcom/android/settings/widget/ChartSweepView;->dispatchRequestEdit()V
 
@@ -267,10 +260,6 @@
 
 .method private buildClampRect(Landroid/graphics/Rect;JJF)Landroid/graphics/Rect;
     .locals 9
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # F
 
     iget-object v7, p0, Lcom/android/settings/widget/ChartSweepView;->mAxis:Lcom/android/settings/widget/ChartAxis;
 
@@ -407,7 +396,6 @@
 
 .method private computeClampRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 9
-    .param p1    # Landroid/graphics/Rect;
 
     iget-wide v2, p0, Lcom/android/settings/widget/ChartSweepView;->mValidAfter:J
 
@@ -455,7 +443,6 @@
 
 .method private dispatchOnSweep(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/widget/ChartSweepView;->mListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
 
@@ -486,7 +473,6 @@
 
 .method public static getLabelBottom(Lcom/android/settings/widget/ChartSweepView;)F
     .locals 2
-    .param p0    # Lcom/android/settings/widget/ChartSweepView;
 
     invoke-static {p0}, Lcom/android/settings/widget/ChartSweepView;->getLabelTop(Lcom/android/settings/widget/ChartSweepView;)F
 
@@ -507,7 +493,6 @@
 
 .method public static getLabelTop(Lcom/android/settings/widget/ChartSweepView;)F
     .locals 2
-    .param p0    # Lcom/android/settings/widget/ChartSweepView;
 
     invoke-virtual {p0}, Landroid/view/View;->getY()F
 
@@ -526,7 +511,6 @@
 
 .method public static getLabelWidth(Lcom/android/settings/widget/ChartSweepView;)F
     .locals 2
-    .param p0    # Lcom/android/settings/widget/ChartSweepView;
 
     iget-object v0, p0, Lcom/android/settings/widget/ChartSweepView;->mLabelLayout:Landroid/text/DynamicLayout;
 
@@ -687,7 +671,6 @@
 
 .method private getTouchDistanceFromTarget(Landroid/view/MotionEvent;)F
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v0, p0, Lcom/android/settings/widget/ChartSweepView;->mFollowAxis:I
 
@@ -944,14 +927,12 @@
 # virtual methods
 .method public addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnLayoutChangeListener;
 
     return-void
 .end method
 
 .method public addOnSweepListener(Lcom/android/settings/widget/ChartSweepView$OnSweepListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
 
     iput-object p1, p0, Lcom/android/settings/widget/ChartSweepView;->mListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
 
@@ -1043,7 +1024,6 @@
 
 .method init(Lcom/android/settings/widget/ChartAxis;)V
     .locals 1
-    .param p1    # Lcom/android/settings/widget/ChartAxis;
 
     const-string v0, "missing axis"
 
@@ -1210,8 +1190,6 @@
 
 .method public isTouchCloserTo(Landroid/view/MotionEvent;Lcom/android/settings/widget/ChartSweepView;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Lcom/android/settings/widget/ChartSweepView;
 
     invoke-direct {p0, p1}, Lcom/android/settings/widget/ChartSweepView;->getTouchDistanceFromTarget(Landroid/view/MotionEvent;)F
 
@@ -1255,7 +1233,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1394,11 +1371,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -1409,8 +1381,6 @@
 
 .method protected onMeasure(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -1737,7 +1707,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 24
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->isEnabled()Z
 
@@ -2636,14 +2605,12 @@
 
 .method public removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnLayoutChangeListener;
 
     return-void
 .end method
 
 .method public setDragInterval(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/widget/ChartSweepView;->mDragInterval:J
 
@@ -2652,7 +2619,6 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -2665,7 +2631,6 @@
 
 .method public setFollowAxis(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/widget/ChartSweepView;->mFollowAxis:I
 
@@ -2674,7 +2639,6 @@
 
 .method public setLabelColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/widget/ChartSweepView;->mLabelColor:I
 
@@ -2685,7 +2649,6 @@
 
 .method public setLabelMinSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/widget/ChartSweepView;->mLabelMinSize:I
 
@@ -2696,7 +2659,6 @@
 
 .method public setLabelTemplate(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/widget/ChartSweepView;->mLabelTemplateRes:I
 
@@ -2707,7 +2669,6 @@
 
 .method public setMaximumSetableValue(J)V
     .locals 1
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/widget/ChartSweepView;->mMaximumValue:J
 
@@ -2720,7 +2681,6 @@
 
 .method public setNeighborMargin(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/settings/widget/ChartSweepView;->mNeighborMargin:F
 
@@ -2729,7 +2689,6 @@
 
 .method public varargs setNeighbors([Lcom/android/settings/widget/ChartSweepView;)V
     .locals 0
-    .param p1    # [Lcom/android/settings/widget/ChartSweepView;
 
     iput-object p1, p0, Lcom/android/settings/widget/ChartSweepView;->mNeighbors:[Lcom/android/settings/widget/ChartSweepView;
 
@@ -2738,7 +2697,6 @@
 
 .method public setSweepDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
 
@@ -2809,8 +2767,6 @@
 
 .method public setValidRange(JJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
 
     iput-wide p1, p0, Lcom/android/settings/widget/ChartSweepView;->mValidAfter:J
 
@@ -2821,8 +2777,6 @@
 
 .method public setValidRangeDynamic(Lcom/android/settings/widget/ChartSweepView;Lcom/android/settings/widget/ChartSweepView;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/ChartSweepView;
-    .param p2    # Lcom/android/settings/widget/ChartSweepView;
 
     iput-object p1, p0, Lcom/android/settings/widget/ChartSweepView;->mValidAfterDynamic:Lcom/android/settings/widget/ChartSweepView;
 
@@ -2833,7 +2787,6 @@
 
 .method public setValue(J)V
     .locals 4
-    .param p1    # J
 
     iget-boolean v0, p0, Lcom/android/settings/widget/ChartSweepView;->mUsingMaximumSetableRestriction:Z
 
@@ -2891,7 +2844,6 @@
 
 .method public setVisibility(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3009,7 +2961,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/settings/widget/ChartSweepView;->mSweep:Landroid/graphics/drawable/Drawable;
 

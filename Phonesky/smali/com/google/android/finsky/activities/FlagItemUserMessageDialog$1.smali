@@ -40,8 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/FlagItemUserMessageDialog$1;->this$0:Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;
 

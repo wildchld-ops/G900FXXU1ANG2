@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/config/PreferenceFile;Lcom/google/android/finsky/config/PreferenceFile;Ljava/lang/String;Ljava/lang/Boolean;)V
     .locals 0
-    .param p2    # Lcom/google/android/finsky/config/PreferenceFile;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/google/android/finsky/config/PreferenceFile$3;->this$0:Lcom/google/android/finsky/config/PreferenceFile;
 
@@ -45,7 +42,6 @@
 # virtual methods
 .method protected read(Landroid/content/SharedPreferences;)Ljava/lang/Boolean;
     .locals 2
-    .param p1    # Landroid/content/SharedPreferences;
 
     iget-object v0, p0, Lcom/google/android/finsky/config/PreferenceFile$3;->mKey:Ljava/lang/String;
 
@@ -80,7 +76,6 @@
 
 .method protected bridge synthetic read(Landroid/content/SharedPreferences;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/config/PreferenceFile$3;->read(Landroid/content/SharedPreferences;)Ljava/lang/Boolean;
 
@@ -91,8 +86,6 @@
 
 .method protected write(Landroid/content/SharedPreferences$Editor;Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Landroid/content/SharedPreferences$Editor;
-    .param p2    # Ljava/lang/Boolean;
 
     if-nez p2, :cond_0
 
@@ -118,8 +111,6 @@
 
 .method protected bridge synthetic write(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/SharedPreferences$Editor;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Boolean;
 

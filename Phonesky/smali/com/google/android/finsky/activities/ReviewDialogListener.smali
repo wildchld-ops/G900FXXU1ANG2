@@ -20,12 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeDetails;Lcom/google/android/finsky/activities/ReviewSamplesViewBinder;Lcom/google/android/finsky/layout/RateReviewSection;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeDetails;
-    .param p5    # Lcom/google/android/finsky/activities/ReviewSamplesViewBinder;
-    .param p6    # Lcom/google/android/finsky/layout/RateReviewSection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/ReviewDialogListener;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialogListener;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialogListener;->refreshUserReview()V
 
@@ -51,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/ReviewDialogListener;)Lcom/google/android/finsky/activities/ReviewSamplesViewBinder;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialogListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewDialogListener;->mReviewSamplesViewBinder:Lcom/google/android/finsky/activities/ReviewSamplesViewBinder;
 
@@ -97,7 +89,6 @@
 
 .method public onDeleteReview(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewDialogListener;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -114,9 +105,6 @@
 
 .method public onRateReview(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
     new-instance v0, Lcom/google/android/finsky/api/model/DfeRateReview;
 
@@ -151,11 +139,6 @@
 
 .method public onSaveReview(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewDialogListener;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -180,8 +163,6 @@
 
 .method protected toast(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewDialogListener;->mContext:Landroid/content/Context;
 

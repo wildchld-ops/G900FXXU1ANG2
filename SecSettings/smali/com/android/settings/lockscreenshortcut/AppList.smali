@@ -146,7 +146,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/lockscreenshortcut/AppList;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/AppList;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/AppList;->mPm:Landroid/content/pm/PackageManager;
 
@@ -155,7 +154,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/lockscreenshortcut/AppList;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/AppList;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/AppList;->mIconCache:Ljava/util/HashMap;
 
@@ -164,7 +162,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/lockscreenshortcut/AppList;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/AppList;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/AppList;->NappList:Ljava/util/List;
 
@@ -601,7 +598,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x0
 
@@ -858,10 +854,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     new-instance v0, Landroid/content/Intent;
 

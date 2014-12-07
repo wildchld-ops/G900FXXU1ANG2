@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -60,9 +59,6 @@
 
 .method private configureSelection(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 4
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     if-nez p4, :cond_1
 
@@ -235,10 +231,6 @@
 # virtual methods
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v10, 0x0
 
@@ -528,8 +520,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 7
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     instance-of v5, p1, Lcom/android/contacts/common/list/ProfileAndContactsLoader;
 
@@ -788,9 +778,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 9
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     const-wide/16 v7, 0x0
 
@@ -889,7 +876,6 @@
 
 .method public setAttachPhotoMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/DefaultContactListAdapter;->mAttachPhotoMode:Z
 
@@ -898,7 +884,6 @@
 
 .method public setDisplayCallButton(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/DefaultContactListAdapter;->mShowCallButton:Z
 
@@ -907,7 +892,6 @@
 
 .method public setEditMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/DefaultContactListAdapter;->mEditMode:Z
 
@@ -916,7 +900,6 @@
 
 .method public setPhoneNumbersOnly(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/DefaultContactListAdapter;->isPhoneNumberOnly:Z
 
@@ -925,7 +908,6 @@
 
 .method public setRingToneMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/DefaultContactListAdapter;->mRingtoneMode:Z
 

@@ -39,7 +39,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/SecretZoo;I)V
     .locals 3
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -134,9 +133,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/SecretZoo;ILcom/android/server/SecretZoo$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/SecretZoo;
-    .param p2    # I
-    .param p3    # Lcom/android/server/SecretZoo$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/SecretZoo$Secret;-><init>(Lcom/android/server/SecretZoo;I)V
 
@@ -145,9 +141,6 @@
 
 .method static synthetic access$100(Lcom/android/server/SecretZoo$Secret;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/SecretZoo$Secret;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/SecretZoo$Secret;->store(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -158,7 +151,6 @@
 
 .method static synthetic access$200(Lcom/android/server/SecretZoo$Secret;)Z
     .locals 1
-    .param p0    # Lcom/android/server/SecretZoo$Secret;
 
     invoke-direct {p0}, Lcom/android/server/SecretZoo$Secret;->load()Z
 
@@ -169,7 +161,6 @@
 
 .method static synthetic access$300(Lcom/android/server/SecretZoo$Secret;)Z
     .locals 1
-    .param p0    # Lcom/android/server/SecretZoo$Secret;
 
     invoke-direct {p0}, Lcom/android/server/SecretZoo$Secret;->delete()Z
 
@@ -306,8 +297,6 @@
 
 .method private store(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -392,8 +381,6 @@
 
 .method private storeText(Ljava/io/File;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -628,7 +615,6 @@
 # virtual methods
 .method public loadText(Ljava/io/File;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/io/File;
 
     const/4 v6, 0x0
 

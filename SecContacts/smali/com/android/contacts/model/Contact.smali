@@ -173,31 +173,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/Uri;Landroid/net/Uri;Landroid/net/Uri;JLjava/lang/String;JJIJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/Integer;ZLjava/lang/String;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
-    .param p11    # I
-    .param p12    # J
-    .param p14    # Ljava/lang/String;
-    .param p15    # Ljava/lang/String;
-    .param p16    # Ljava/lang/String;
-    .param p17    # Ljava/lang/String;
-    .param p18    # Z
-    .param p19    # Ljava/lang/Integer;
-    .param p20    # Z
-    .param p21    # Ljava/lang/String;
-    .param p22    # Z
-    .param p23    # Z
-    .param p24    # Ljava/lang/String;
-    .param p25    # Ljava/lang/String;
-    .param p26    # Ljava/lang/String;
-    .param p27    # Ljava/lang/String;
-    .param p28    # Ljava/lang/String;
-    .param p29    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -318,9 +293,6 @@
 
 .method private constructor <init>(Landroid/net/Uri;Lcom/android/contacts/model/Contact$Status;Ljava/lang/Exception;)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/contacts/model/Contact$Status;
-    .param p3    # Ljava/lang/Exception;
 
     const-wide/16 v3, -0x1
 
@@ -416,8 +388,6 @@
 
 .method public constructor <init>(Landroid/net/Uri;Lcom/android/contacts/model/Contact;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/contacts/model/Contact;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -580,8 +550,6 @@
 
 .method public static forError(Landroid/net/Uri;Ljava/lang/Exception;)Lcom/android/contacts/model/Contact;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/Exception;
 
     new-instance v0, Lcom/android/contacts/model/Contact;
 
@@ -594,7 +562,6 @@
 
 .method public static forNotFound(Landroid/net/Uri;)Lcom/android/contacts/model/Contact;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     new-instance v0, Lcom/android/contacts/model/Contact;
 
@@ -611,7 +578,6 @@
 # virtual methods
 .method public addBlackListData(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/model/Contact;->mBlackList:Ljava/util/ArrayList;
 
@@ -884,7 +850,6 @@
 
 .method public getFirstWritableRawContactId(Landroid/content/Context;)J
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v3, -0x1
 
@@ -1043,7 +1008,6 @@
 
 .method public getPreloadRawContactId(Landroid/content/Context;)J
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v3, -0x1
 
@@ -1307,7 +1271,6 @@
 
 .method public isPreloadContact(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/model/Contact;->getPreloadRawContactId(Landroid/content/Context;)J
 
@@ -1348,7 +1311,6 @@
 
 .method public isWritableContact(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/model/Contact;->getFirstWritableRawContactId(Landroid/content/Context;)J
 
@@ -1373,11 +1335,6 @@
 
 .method public setDirectoryMetaData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     iput-object p1, p0, Lcom/android/contacts/model/Contact;->mDirectoryDisplayName:Ljava/lang/String;
 
@@ -1445,7 +1402,6 @@
 
 .method public setIsChangedBusinesscard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/model/Contact;->mIsChangedBusinesscard:Z
 
@@ -1454,7 +1410,6 @@
 
 .method setPhotoBinaryData([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/android/contacts/model/Contact;->mPhotoBinaryData:[B
 

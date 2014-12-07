@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -30,9 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/AbsHorizontalStrip;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -75,7 +70,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/HorizontalStrip;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/HorizontalStrip;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/HorizontalStrip;->syncChildViews()V
 
@@ -84,7 +78,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/HorizontalStrip;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/HorizontalStrip;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/HorizontalStrip;->recreateChildViews()V
 
@@ -93,7 +86,6 @@
 
 .method private getChildHeight(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/HorizontalStrip;->mAdapter:Lcom/google/android/finsky/adapters/ImageStripAdapter;
 
@@ -112,7 +104,6 @@
 
 .method private getChildWidth(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/HorizontalStrip;->mAdapter:Lcom/google/android/finsky/adapters/ImageStripAdapter;
 
@@ -131,7 +122,6 @@
 
 .method private getTotalChildWidth(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/layout/HorizontalStrip;->getChildAt(I)Landroid/view/View;
 
@@ -294,7 +284,6 @@
 # virtual methods
 .method protected getLeftEdgeOfChild(I)F
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -338,7 +327,6 @@
 
 .method protected getLeftEdgeOfChildOnLeft(F)F
     .locals 4
-    .param p1    # F
 
     const/4 v2, 0x0
 
@@ -393,7 +381,6 @@
 
 .method protected getLeftEdgeOfChildOnRight(F)F
     .locals 4
-    .param p1    # F
 
     const/4 v2, 0x0
 
@@ -573,11 +560,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 8
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v5, p0, Lcom/google/android/finsky/layout/HorizontalStrip;->mAdapter:Lcom/google/android/finsky/adapters/ImageStripAdapter;
 
@@ -714,8 +696,6 @@
 
 .method protected onMeasure(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
@@ -808,7 +788,6 @@
 
 .method public setAdapter(Lcom/google/android/finsky/adapters/ImageStripAdapter;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/adapters/ImageStripAdapter;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/HorizontalStrip;->mAdapter:Lcom/google/android/finsky/adapters/ImageStripAdapter;
 

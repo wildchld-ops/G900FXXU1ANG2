@@ -22,10 +22,6 @@
 
 .method public static fromHtml(Landroid/content/Context;Ljava/lang/String;Landroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/text/Html$ImageGetter;
-    .param p3    # Landroid/text/Html$TagHandler;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -216,9 +212,6 @@
 
 .method private static replaceSpan(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 3
-    .param p0    # Landroid/text/SpannableStringBuilder;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Landroid/text/SpannableStringBuilder;->getSpanStart(Ljava/lang/Object;)I
 

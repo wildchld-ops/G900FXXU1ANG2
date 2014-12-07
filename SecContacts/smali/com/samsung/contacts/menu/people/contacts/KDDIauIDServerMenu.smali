@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/OptionMenu;-><init>(Landroid/content/Context;)V
 
@@ -15,8 +14,6 @@
 
 .method private hasFriendsNote(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "jibe.android.activity"
 
@@ -48,8 +45,6 @@
 
 .method private isFriendsNoteIntentRegistered(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -80,8 +75,6 @@
 
 .method private showFriendNoteDialog(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 

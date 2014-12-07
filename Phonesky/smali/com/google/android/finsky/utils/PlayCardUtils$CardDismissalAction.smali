@@ -32,11 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/layout/play/PlayCardDismissListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/api/DfeApi;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +50,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -64,7 +58,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;)Lcom/google/android/play/layout/PlayCardViewBase;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;->mCard:Lcom/google/android/play/layout/PlayCardViewBase;
 
@@ -73,7 +66,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;)Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PlayCardUtils$CardDismissalAction;->mDismissListener:Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
 

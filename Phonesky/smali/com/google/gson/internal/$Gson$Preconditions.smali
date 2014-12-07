@@ -6,7 +6,6 @@
 # direct methods
 .method public static checkArgument(Z)V
     .locals 1
-    .param p0    # Z
 
     if-nez p0, :cond_0
 

@@ -23,7 +23,6 @@
 # virtual methods
 .method public addChargingCollectionFunctionAddress(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -52,7 +51,6 @@
 
 .method public addEventChargingFunctionAddress(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -81,8 +79,6 @@
 
 .method public delete(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v3, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -316,7 +312,6 @@
 
 .method public removeChargingCollectionFunctionAddress(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -358,7 +353,6 @@
 
 .method public removeEventChargingFunctionAddress(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -400,7 +394,6 @@
 
 .method public setChargingCollectionFunctionAddress(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -427,7 +420,6 @@
 
 .method public setEventChargingFunctionAddress(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -454,7 +446,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

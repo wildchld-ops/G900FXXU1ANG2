@@ -18,8 +18,6 @@
 
 .method public static show(Landroid/app/FragmentManager;I)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # I
 
     new-instance v0, Lcom/samsung/contacts/sim/list/SimInitializingDialogFragment;
 
@@ -38,7 +36,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v2, Lcom/samsung/contacts/sim/list/SimInitializingDialogFragment$1;
 

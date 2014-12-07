@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljavax/crypto/CipherSpi;-><init>()V
 
@@ -198,11 +197,6 @@
 # virtual methods
 .method protected engineDoFinal([BII[BI)I
     .locals 6
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [B
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/crypto/ShortBufferException;,
@@ -234,9 +228,6 @@
 
 .method protected engineDoFinal([BII)[B
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/crypto/IllegalBlockSizeException;,
@@ -285,7 +276,6 @@
 
 .method protected engineGetOutputSize(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/FixBrokenCipherSpiProvider$FixBrokenCipherSpi;->getInstance()Ljavax/crypto/Cipher;
 
@@ -314,10 +304,6 @@
 
 .method protected engineInit(ILjava/security/Key;Ljava/security/AlgorithmParameters;Ljava/security/SecureRandom;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/security/Key;
-    .param p3    # Ljava/security/AlgorithmParameters;
-    .param p4    # Ljava/security/SecureRandom;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;,
@@ -336,9 +322,6 @@
 
 .method protected engineInit(ILjava/security/Key;Ljava/security/SecureRandom;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/security/Key;
-    .param p3    # Ljava/security/SecureRandom;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;
@@ -356,10 +339,6 @@
 
 .method protected engineInit(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/security/Key;
-    .param p3    # Ljava/security/spec/AlgorithmParameterSpec;
-    .param p4    # Ljava/security/SecureRandom;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidKeyException;,
@@ -378,7 +357,6 @@
 
 .method protected engineSetMode(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/FixBrokenCipherSpiProvider$FixBrokenCipherSpi;->mMode:Ljava/lang/String;
 
@@ -387,7 +365,6 @@
 
 .method protected engineSetPadding(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/FixBrokenCipherSpiProvider$FixBrokenCipherSpi;->mPadding:Ljava/lang/String;
 
@@ -396,11 +373,6 @@
 
 .method protected engineUpdate([BII[BI)I
     .locals 6
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [B
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/crypto/ShortBufferException;
@@ -430,9 +402,6 @@
 
 .method protected engineUpdate([BII)[B
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/FixBrokenCipherSpiProvider$FixBrokenCipherSpi;->getInstance()Ljavax/crypto/Cipher;
 

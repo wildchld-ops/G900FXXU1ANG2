@@ -33,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     :try_start_0
     iget v0, p1, Landroid/os/Message;->what:I

@@ -40,7 +40,6 @@
 # virtual methods
 .method public onMutationsApplied(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicatorsImpl$1;->this$0:Lcom/google/android/finsky/library/LibraryReplicatorsImpl;
 

@@ -33,8 +33,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +49,6 @@
 
 .method private getFileContentAsString(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -122,7 +119,6 @@
 
 .method private getFullFilename(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/AndroidKeyczarReader;->mSubDirectory:Ljava/lang/String;
 
@@ -163,7 +159,6 @@
 # virtual methods
 .method public getKey(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

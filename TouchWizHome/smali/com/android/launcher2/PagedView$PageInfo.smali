@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/PagedView;Lcom/android/launcher2/PagedView$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # Lcom/android/launcher2/PagedView$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/PagedView$PageInfo;-><init>(Lcom/android/launcher2/PagedView;)V
 

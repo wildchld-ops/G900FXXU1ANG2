@@ -220,8 +220,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;I)V
     .locals 13
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
 
     const/4 v12, 0x4
 
@@ -646,7 +644,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;)Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerMoveListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mHandlerMoveListener:Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerMoveListener;
 
@@ -655,7 +652,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mDisable:Z
 
@@ -664,8 +660,6 @@
 
 .method private applyMovement(Landroid/graphics/PointF;I)V
     .locals 8
-    .param p1    # Landroid/graphics/PointF;
-    .param p2    # I
 
     new-instance v6, Landroid/graphics/PointF;
 
@@ -757,8 +751,6 @@
 
 .method private filterMovement(Landroid/graphics/PointF;I)V
     .locals 2
-    .param p1    # Landroid/graphics/PointF;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -805,7 +797,6 @@
 
 .method private getHandleIndex(Lcom/sec/android/glview/TwGLView;)I
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mBackGround:Lcom/sec/android/glview/TwGLImage;
 
@@ -847,10 +838,6 @@
 
 .method private growBy(Landroid/graphics/RectF;FFI)Landroid/graphics/RectF;
     .locals 7
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     const/high16 v6, 0x40000000
 
@@ -6083,7 +6070,6 @@
 
 .method public calcBoundary(Landroid/graphics/RectF;)Landroid/graphics/RectF;
     .locals 4
-    .param p1    # Landroid/graphics/RectF;
 
     new-instance v0, Landroid/graphics/RectF;
 
@@ -6218,9 +6204,6 @@
 
 .method public calcRotatePostion(Landroid/graphics/RectF;IZ)Landroid/graphics/RectF;
     .locals 23
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # I
-    .param p3    # Z
 
     const-wide/16 v15, 0x0
 
@@ -6877,9 +6860,6 @@
 
 .method public moveBy(Landroid/graphics/RectF;FF)Landroid/graphics/RectF;
     .locals 5
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v4, 0x0
 
@@ -6946,11 +6926,6 @@
 
 .method public onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -7037,9 +7012,6 @@
 
 .method public onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const-string v0, "TwGLHandler"
 
@@ -7065,9 +7037,6 @@
 
 .method public onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const-string v0, "TwGLHandler"
 
@@ -7105,8 +7074,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/16 v2, 0x30
 
@@ -7358,7 +7325,6 @@
 
 .method public setAspectRatioLocked(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -7496,7 +7462,6 @@
 
 .method public setDisable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mDisable:Z
 
@@ -7521,7 +7486,6 @@
 
 .method public setDragVibration(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mBackGround:Lcom/sec/android/glview/TwGLImage;
 
@@ -7532,7 +7496,6 @@
 
 .method public setDraggable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mDraggable:Z
 
@@ -7541,7 +7504,6 @@
 
 .method public setGrowable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mGrowBoundry:Z
 
@@ -7550,7 +7512,6 @@
 
 .method public setHandlerAreaBottomBoundary(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mHandler_area_bottom_boundary:I
 
@@ -7559,7 +7520,6 @@
 
 .method public setHandlerAreaTopBoundary(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mHandler_area_top_boundary:I
 
@@ -7658,7 +7618,6 @@
 
 .method public setMaxBoundRectF(Landroid/graphics/RectF;)V
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
 
     new-instance v0, Landroid/graphics/RectF;
 
@@ -7671,8 +7630,6 @@
 
 .method public setMaxSizeF(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/4 v3, 0x0
 
@@ -7720,8 +7677,6 @@
 
 .method public setMinSizeF(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/4 v3, 0x0
 
@@ -7769,10 +7724,6 @@
 
 .method public setPosition(FFFF)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v7, 0x0
 
@@ -8022,7 +7973,6 @@
 
 .method public setResizeHandleDragVibration(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -8047,7 +7997,6 @@
 
 .method public setSideLock(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mSideLock:I
 
@@ -8071,7 +8020,6 @@
 
 .method public setonHandlerDragChangedListener(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerDragChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerDragChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mHandlerDragChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerDragChangedListener;
 
@@ -8080,7 +8028,6 @@
 
 .method public setonHandlerMoveListener(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerMoveListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerMoveListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;->mHandlerMoveListener:Lcom/sec/android/app/camera/glwidget/TwGLRectHandler$onHandlerMoveListener;
 

@@ -87,7 +87,6 @@
 
 .method public setMajorVersion(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -112,7 +111,6 @@
 
 .method public setMinorVersion(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

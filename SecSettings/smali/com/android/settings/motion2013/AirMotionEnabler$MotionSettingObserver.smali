@@ -21,7 +21,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionEnabler$MotionSettingObserver;->this$0:Lcom/android/settings/motion2013/AirMotionEnabler;
 

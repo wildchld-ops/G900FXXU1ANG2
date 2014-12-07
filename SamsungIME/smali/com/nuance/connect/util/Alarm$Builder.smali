@@ -47,8 +47,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;Ljava/lang/Class;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -109,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/util/Alarm$Builder;)Lcom/nuance/connect/service/ConnectClient;
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-object v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->client:Lcom/nuance/connect/service/ConnectClient;
 
@@ -118,7 +115,6 @@
 
 .method static synthetic access$1000(Lcom/nuance/connect/util/Alarm$Builder;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-object v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->extras:Landroid/os/Bundle;
 
@@ -127,7 +123,6 @@
 
 .method static synthetic access$1100(Lcom/nuance/connect/util/Alarm$Builder;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-boolean v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->wakeDevice:Z
 
@@ -136,7 +131,6 @@
 
 .method static synthetic access$1200(Lcom/nuance/connect/util/Alarm$Builder;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->flags:I
 
@@ -145,7 +139,6 @@
 
 .method static synthetic access$1300(Lcom/nuance/connect/util/Alarm$Builder;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-boolean v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->repeating:Z
 
@@ -154,7 +147,6 @@
 
 .method static synthetic access$1400(Lcom/nuance/connect/util/Alarm$Builder;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-boolean v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->track:Z
 
@@ -163,7 +155,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/util/Alarm$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-object v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->requestingClassName:Ljava/lang/String;
 
@@ -172,7 +163,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/util/Alarm$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-object v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->alarmType:Ljava/lang/String;
 
@@ -181,7 +171,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/util/Alarm$Builder;)J
     .locals 2
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget-wide v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->actualTriggerTime:J
 
@@ -190,8 +179,6 @@
 
 .method static synthetic access$402(Lcom/nuance/connect/util/Alarm$Builder;J)J
     .locals 0
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->actualTriggerTime:J
 
@@ -200,7 +187,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/util/Alarm$Builder;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerDays:I
 
@@ -209,7 +195,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/util/Alarm$Builder;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerHours:I
 
@@ -218,7 +203,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/util/Alarm$Builder;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerMinutes:I
 
@@ -227,7 +211,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/util/Alarm$Builder;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerSeconds:I
 
@@ -236,7 +219,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/util/Alarm$Builder;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/Alarm$Builder;
 
     iget v0, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerMillis:I
 
@@ -259,7 +241,6 @@
 
 .method public days(I)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerDays:I
 
@@ -268,7 +249,6 @@
 
 .method public extras(Landroid/os/Bundle;)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->extras:Landroid/os/Bundle;
 
@@ -334,7 +314,6 @@
 
 .method public flags(I)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->flags:I
 
@@ -343,7 +322,6 @@
 
 .method public hours(I)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerHours:I
 
@@ -352,7 +330,6 @@
 
 .method public millis(I)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerMillis:I
 
@@ -361,7 +338,6 @@
 
 .method public minutes(I)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerMinutes:I
 
@@ -370,7 +346,6 @@
 
 .method public repeating(Z)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->repeating:Z
 
@@ -379,7 +354,6 @@
 
 .method public seconds(I)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->relativeTriggerSeconds:I
 
@@ -388,7 +362,6 @@
 
 .method public track(Z)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->track:Z
 
@@ -397,7 +370,6 @@
 
 .method public triggerTime(J)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->actualTriggerTime:J
 
@@ -406,7 +378,6 @@
 
 .method public wakeDevice(Z)Lcom/nuance/connect/util/Alarm$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/util/Alarm$Builder;->wakeDevice:Z
 

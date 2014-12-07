@@ -40,8 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/samsung/contacts/group/AddMemberDialogFragment$2;->val$adapter:Landroid/widget/ArrayAdapter;
 

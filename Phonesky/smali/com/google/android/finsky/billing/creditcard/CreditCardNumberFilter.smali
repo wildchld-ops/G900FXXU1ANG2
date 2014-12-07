@@ -9,7 +9,6 @@
 # direct methods
 .method public static getNumbers(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -53,8 +52,6 @@
 
 .method private static isAllowed(CC)Z
     .locals 1
-    .param p0    # C
-    .param p1    # C
 
     invoke-static {p0}, Lcom/google/android/finsky/billing/creditcard/CreditCardNumberFilter;->isNumber(C)Z
 
@@ -88,7 +85,6 @@
 
 .method private static isNumber(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -111,7 +107,6 @@
 
 .method private static isSeparator(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x20
 
@@ -137,12 +132,6 @@
 # virtual methods
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/Spanned;
-    .param p5    # I
-    .param p6    # I
 
     if-lez p5, :cond_0
 

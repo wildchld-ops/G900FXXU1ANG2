@@ -488,11 +488,6 @@
 
 .method constructor <init>(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;Ljava/lang/CharSequence;Ljava/lang/String;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;J)V
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;
-    .param p5    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -556,10 +551,6 @@
 
 .method static allNumberGroupsAreExactlyPresent(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/StringBuilder;[Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/StringBuilder;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -665,10 +656,6 @@
 
 .method static allNumberGroupsRemainGrouped(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/StringBuilder;[Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/StringBuilder;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -764,10 +751,6 @@
 
 .method static checkNumberGroupingIsValid(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;Lcom/android/i18n/phonenumbers/PhoneNumberUtil;Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$NumberGroupingChecker;)Z
     .locals 7
-    .param p0    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$NumberGroupingChecker;
 
     const/4 v5, 0x1
 
@@ -842,7 +825,6 @@
 
 .method static containsMoreThanOneSlash(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x2f
 
@@ -879,9 +861,6 @@
 
 .method static containsOnlyValidXChars(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;Lcom/android/i18n/phonenumbers/PhoneNumberUtil;)Z
     .locals 8
-    .param p0    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
     const/16 v7, 0x78
 
@@ -970,8 +949,6 @@
 
 .method private extractInnerMatch(Ljava/lang/String;I)Lcom/android/i18n/phonenumbers/PhoneNumberMatch;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v7, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher;->GROUP_SEPARATOR:Ljava/util/regex/Pattern;
 
@@ -1131,8 +1108,6 @@
 
 .method private extractMatch(Ljava/lang/CharSequence;I)Lcom/android/i18n/phonenumbers/PhoneNumberMatch;
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1225,7 +1200,6 @@
 
 .method private find(I)Lcom/android/i18n/phonenumbers/PhoneNumberMatch;
     .locals 8
-    .param p1    # I
 
     sget-object v4, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher;->PATTERN:Ljava/util/regex/Pattern;
 
@@ -1304,9 +1278,6 @@
 
 .method private static getNationalNumberGroups(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;)[Ljava/lang/String;
     .locals 6
-    .param p0    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
 
     if-nez p2, :cond_1
 
@@ -1372,7 +1343,6 @@
 
 .method private static isInvalidPunctuationSymbol(C)Z
     .locals 2
-    .param p0    # C
 
     const/16 v0, 0x25
 
@@ -1400,7 +1370,6 @@
 
 .method static isLatinLetter(C)Z
     .locals 4
-    .param p0    # C
 
     const/4 v1, 0x0
 
@@ -1483,8 +1452,6 @@
 
 .method static isNationalPrefixPresentIfRequired(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/PhoneNumberUtil;)Z
     .locals 10
-    .param p0    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p1    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
     const/4 v7, 0x1
 
@@ -1594,8 +1561,6 @@
 
 .method private static limit(II)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     if-ltz p0, :cond_0
 
@@ -1650,8 +1615,6 @@
 
 .method private parseAndVerify(Ljava/lang/String;I)Lcom/android/i18n/phonenumbers/PhoneNumberMatch;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1793,8 +1756,6 @@
 
 .method private static trimAfterFirstMatch(Ljava/util/regex/Pattern;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 3
-    .param p0    # Ljava/util/regex/Pattern;
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 

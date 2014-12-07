@@ -271,7 +271,6 @@
 
 .method public static buildExternalStorageAppCacheDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->throwIfUserRequired()V
 
@@ -286,7 +285,6 @@
 
 .method public static buildExternalStorageAppDataDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->throwIfUserRequired()V
 
@@ -301,7 +299,6 @@
 
 .method public static buildExternalStorageAppFilesDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->throwIfUserRequired()V
 
@@ -316,7 +313,6 @@
 
 .method public static buildExternalStorageAppMediaDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->throwIfUserRequired()V
 
@@ -331,7 +327,6 @@
 
 .method public static buildExternalStorageAppObbDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->throwIfUserRequired()V
 
@@ -346,8 +341,6 @@
 
 .method public static varargs buildPath(Ljava/io/File;[Ljava/lang/String;)Ljava/io/File;
     .locals 6
-    .param p0    # Ljava/io/File;
-    .param p1    # [Ljava/lang/String;
 
     move-object v1, p0
 
@@ -390,8 +383,6 @@
 
 .method public static varargs buildPaths([Ljava/io/File;[Ljava/lang/String;)[Ljava/io/File;
     .locals 3
-    .param p0    # [Ljava/io/File;
-    .param p1    # [Ljava/lang/String;
 
     array-length v2, p0
 
@@ -430,7 +421,6 @@
 
 .method private static getCanonicalPathOrNull(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -495,8 +485,6 @@
 
 .method static getDirectory(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Ljava/lang/System;->getenv(Ljava/lang/String;)Ljava/lang/String;
 
@@ -547,7 +535,6 @@
 
 .method public static getEmulatedStorageSource(I)Ljava/io/File;
     .locals 3
-    .param p0    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -586,7 +573,6 @@
 
 .method public static getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->throwIfUserRequired()V
 
@@ -813,7 +799,6 @@
 
 .method public static getStorageState(Ljava/io/File;)Ljava/lang/String;
     .locals 11
-    .param p0    # Ljava/io/File;
 
     :try_start_0
     invoke-virtual {p0}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
@@ -970,7 +955,6 @@
 
 .method public static getUserSystemDirectory(I)Ljava/io/File;
     .locals 4
-    .param p0    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -1097,7 +1081,6 @@
 
 .method public static maybeTranslateEmulatedPathToInternal(Ljava/io/File;)Ljava/io/File;
     .locals 6
-    .param p0    # Ljava/io/File;
 
     invoke-static {}, Landroid/os/Environment;->isExternalStorageEmulated()Z
 
@@ -1185,7 +1168,6 @@
 
 .method public static setUserRequired(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/os/Environment;->sUserRequired:Z
 

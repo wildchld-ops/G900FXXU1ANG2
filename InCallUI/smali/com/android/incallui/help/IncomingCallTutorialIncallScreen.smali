@@ -115,7 +115,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;->mHelpTabView:Landroid/widget/ImageView;
 
@@ -124,7 +123,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -133,7 +131,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;
 
     iget v0, p0, Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;->mBubbleCount:I
 
@@ -142,7 +139,6 @@
 
 .method static synthetic access$208(Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;
 
     iget v0, p0, Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;->mBubbleCount:I
 
@@ -155,7 +151,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -164,7 +159,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;
 
     invoke-direct {p0}, Lcom/android/incallui/help/IncomingCallTutorialIncallScreen;->showToast()V
 
@@ -173,7 +167,6 @@
 
 .method private animationInit(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f050003
 
@@ -443,7 +436,6 @@
 
 .method private setIncomingCallTutorialMode(Lcom/android/incallui/help/IncomingCallTutorialIncallScreen$IncomingCallTutorialStep;)V
     .locals 5
-    .param p1    # Lcom/android/incallui/help/IncomingCallTutorialIncallScreen$IncomingCallTutorialStep;
 
     const/4 v4, 0x0
 
@@ -680,7 +672,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -712,7 +703,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "IncomingCallTutorialIncallScreen"
 
@@ -777,7 +767,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -830,8 +819,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
@@ -852,8 +839,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v3, 0x1
 

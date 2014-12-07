@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -94,8 +93,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewLensFlare;->lensFlareEffect:Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
@@ -108,8 +105,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewLensFlare;->lensFlareEffect:Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
@@ -122,8 +117,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewLensFlare;->lensFlareEffect:Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
@@ -174,7 +167,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -191,8 +183,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewLensFlare;->lensFlareEffect:Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 

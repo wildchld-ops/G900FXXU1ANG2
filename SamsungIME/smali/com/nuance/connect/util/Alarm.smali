@@ -37,7 +37,6 @@
 # direct methods
 .method private constructor <init>(Lcom/nuance/connect/util/Alarm$Builder;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/util/Alarm$Builder;
 
     const/4 v4, 0x1
 
@@ -221,8 +220,6 @@
 
 .method synthetic constructor <init>(Lcom/nuance/connect/util/Alarm$Builder;Lcom/nuance/connect/util/Alarm$1;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/util/Alarm$Builder;
-    .param p2    # Lcom/nuance/connect/util/Alarm$1;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/util/Alarm;-><init>(Lcom/nuance/connect/util/Alarm$Builder;)V
 
@@ -231,8 +228,6 @@
 
 .method private generateAlarmId(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v4, 0x17
 

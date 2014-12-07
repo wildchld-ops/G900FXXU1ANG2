@@ -203,7 +203,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -425,9 +424,6 @@
 
 .method static synthetic access$000(Lcom/android/server/cover/CoverManagerService;Lcom/samsung/android/cover/CoverState;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/cover/CoverManagerService;->handleSendCoverSwitchState(Lcom/samsung/android/cover/CoverState;Z)V
 
@@ -436,8 +432,6 @@
 
 .method static synthetic access$100(Lcom/android/server/cover/CoverManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/CoverManagerService;->handleSendCoverAttachState(Z)V
 
@@ -446,7 +440,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/cover/CoverManagerService;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mUpdateSViewCoverWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -455,10 +448,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/cover/CoverManagerService;ZLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/cover/CoverManagerService;->disableCoverManagerLocked(ZLandroid/os/IBinder;Ljava/lang/String;)V
 
@@ -467,7 +456,6 @@
 
 .method static synthetic access$200(Lcom/android/server/cover/CoverManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
 
     invoke-direct {p0}, Lcom/android/server/cover/CoverManagerService;->handleHideSViewCover()V
 
@@ -476,7 +464,6 @@
 
 .method static synthetic access$300(Lcom/android/server/cover/CoverManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
 
     invoke-direct {p0}, Lcom/android/server/cover/CoverManagerService;->handleShowSViewCover()V
 
@@ -485,8 +472,6 @@
 
 .method static synthetic access$400(Lcom/android/server/cover/CoverManagerService;Lcom/samsung/android/cover/CoverState;)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/CoverManagerService;->handleUpdateSViewCoverState(Lcom/samsung/android/cover/CoverState;)V
 
@@ -495,8 +480,6 @@
 
 .method static synthetic access$500(Lcom/android/server/cover/CoverManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/CoverManagerService;->handleDisableCoverManagerLocked(Z)V
 
@@ -505,7 +488,6 @@
 
 .method static synthetic access$600(Lcom/android/server/cover/CoverManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
 
     invoke-direct {p0}, Lcom/android/server/cover/CoverManagerService;->handleStartFreezeScreen()V
 
@@ -514,7 +496,6 @@
 
 .method static synthetic access$700(Lcom/android/server/cover/CoverManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
 
     invoke-direct {p0}, Lcom/android/server/cover/CoverManagerService;->handleStopFreezeScreen()V
 
@@ -523,8 +504,6 @@
 
 .method static synthetic access$800(Lcom/android/server/cover/CoverManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/CoverManagerService;->handleSetPartialScreen(Z)V
 
@@ -533,7 +512,6 @@
 
 .method static synthetic access$900(Lcom/android/server/cover/CoverManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mListeners:Ljava/util/ArrayList;
 
@@ -542,9 +520,6 @@
 
 .method private disableCoverManagerLocked(ZLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v4, Lcom/android/server/cover/CoverManagerService;->SAFE_DEBUG:Z
 
@@ -783,7 +758,6 @@
 
 .method private getSupportSViewCoverHeight(I)I
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -814,7 +788,6 @@
 
 .method private getSupportSViewCoverWidth(I)I
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -845,8 +818,6 @@
 
 .method private getValueFromSysFS(Ljava/lang/String;I)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     move v5, p2
 
@@ -1009,8 +980,6 @@
 
 .method private getValueFromSysFS(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object v5, p2
 
@@ -1169,7 +1138,6 @@
 
 .method private handleDisableCoverManagerLocked(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-boolean v1, Lcom/android/server/cover/CoverManagerService;->SAFE_DEBUG:Z
 
@@ -1259,7 +1227,6 @@
 
 .method private handleSendCoverAttachState(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/android/server/cover/CoverManagerService;->mListeners:Ljava/util/ArrayList;
 
@@ -1322,8 +1289,6 @@
 
 .method private handleSendCoverSwitchState(Lcom/samsung/android/cover/CoverState;Z)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/cover/CoverManagerService;->mListeners:Ljava/util/ArrayList;
 
@@ -1388,7 +1353,6 @@
 
 .method private declared-synchronized handleSetPartialScreen(Z)V
     .locals 6
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1571,7 +1535,6 @@
 
 .method private handleUpdateSViewCoverState(Lcom/samsung/android/cover/CoverState;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mSViewCoverBaseServiceDelegate:Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;
 
@@ -1781,7 +1744,6 @@
 
 .method private isFileExists(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -1850,9 +1812,6 @@
 
 .method private manageDisableListLocked(ZLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -2144,7 +2103,6 @@
 
 .method private sendCoverAttachStateLocked(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v1, "CoverManager"
 
@@ -2194,7 +2152,6 @@
 
 .method private sendCoverInformationToAgent(Z)V
     .locals 5
-    .param p1    # Z
 
     const-string v2, "/sys/devices/w1_bus_master1/w1_master_check_sn"
 
@@ -2277,8 +2234,6 @@
 
 .method private sendCoverSwitchStateLocked(Lcom/samsung/android/cover/CoverState;Z)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -2354,8 +2309,6 @@
 
 .method private showRuggedizedPopup(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     const-string v2, "/sys/bus/w1/devices/w1_bus_master1/w1_master_cf"
 
@@ -2567,10 +2520,6 @@
 
 .method private updateCoverStateLocked(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -2581,11 +2530,6 @@
 
 .method private updateCoverStateLocked(ZIIII)V
     .locals 6
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -2606,7 +2550,6 @@
 
 .method private updateCoverSwitchStateLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -2617,7 +2560,6 @@
 
 .method private updateCoverVerificationLocked(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -2756,7 +2698,6 @@
 
 .method private updateCoverVerifyAndAttachStateLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -2771,7 +2712,6 @@
 
 .method private updatePowerStateLocked(Lcom/samsung/android/cover/CoverState;)V
     .locals 7
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     const/4 v3, 0x1
 
@@ -2908,8 +2848,6 @@
 
 .method private updateSViewCoverLocked(Lcom/samsung/android/cover/CoverState;Z)V
     .locals 2
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     const-string v0, "CoverManager"
 
@@ -2938,7 +2876,6 @@
 
 .method private updateSViewCoverServiceConnectionLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mSViewCoverBaseServiceDelegate:Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;
 
@@ -2964,7 +2901,6 @@
 
 .method private updateSViewCoverStateLocked(Lcom/samsung/android/cover/CoverState;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     const-string v1, "CoverManager"
 
@@ -3004,7 +2940,6 @@
 
 .method private updateSystemFeature(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     sget-boolean v1, Lcom/android/server/cover/CoverManagerService;->sIsSystemFeatureQueried:Z
 
@@ -3058,9 +2993,6 @@
 # virtual methods
 .method public disableCoverManager(ZLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/cover/CoverManagerService;->SAFE_DEBUG:Z
 
@@ -3122,9 +3054,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/cover/CoverManagerService;->mContext:Landroid/content/Context;
 
@@ -3655,8 +3584,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3672,9 +3599,6 @@
 
 .method public registerListenerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;I)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3838,7 +3762,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3997,8 +3920,6 @@
 
 .method public updateCoverSwitchState(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -4149,8 +4070,6 @@
 
 .method public updateCoverVerfiedState(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 

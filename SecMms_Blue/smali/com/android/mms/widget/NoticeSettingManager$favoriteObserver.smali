@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/widget/NoticeSettingManager;Lcom/android/mms/widget/NoticeSettingManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/widget/NoticeSettingManager;
-    .param p2    # Lcom/android/mms/widget/NoticeSettingManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/widget/NoticeSettingManager$favoriteObserver;-><init>(Lcom/android/mms/widget/NoticeSettingManager;)V
 
@@ -47,7 +45,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeSettingManager$favoriteObserver;->this$0:Lcom/android/mms/widget/NoticeSettingManager;
 

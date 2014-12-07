@@ -48,7 +48,6 @@
 # virtual methods
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, [B
 
@@ -59,7 +58,6 @@
 
 .method public onResponse([B)V
     .locals 1
-    .param p1    # [B
 
     iget-object v0, p0, Lcom/google/android/finsky/providers/AppIconProvider$AppIconLoader$1;->val$listener:Lcom/google/android/finsky/providers/AppIconProvider$TimedOnCompleteListener;
 

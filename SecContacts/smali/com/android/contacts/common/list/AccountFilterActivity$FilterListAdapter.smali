@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;Lcom/android/contacts/common/list/ContactListFilter;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p3    # Lcom/android/contacts/common/list/ContactListFilter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,7 +84,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/common/list/AccountFilterActivity$FilterListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/AccountFilterActivity$FilterListAdapter;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/AccountFilterActivity$FilterListAdapter;->mContext:Landroid/content/Context;
 
@@ -109,7 +106,6 @@
 
 .method public getItem(I)Lcom/android/contacts/common/list/ContactListFilter;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/AccountFilterActivity$FilterListAdapter;->mFilters:Ljava/util/List;
 
@@ -124,7 +120,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/AccountFilterActivity$FilterListAdapter;->getItem(I)Lcom/android/contacts/common/list/ContactListFilter;
 
@@ -135,7 +130,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -144,9 +138,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v2, 0x0
 

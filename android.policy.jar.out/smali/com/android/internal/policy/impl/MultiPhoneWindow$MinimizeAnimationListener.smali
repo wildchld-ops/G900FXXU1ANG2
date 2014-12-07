@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 5
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v4, -0x1
 
@@ -160,14 +159,12 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 5
-    .param p1    # Landroid/view/animation/Animation;
 
     const/16 v4, 0x8
 

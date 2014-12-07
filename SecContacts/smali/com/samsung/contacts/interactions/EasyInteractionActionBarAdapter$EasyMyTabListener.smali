@@ -33,8 +33,6 @@
 # virtual methods
 .method public onTabUnselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     invoke-virtual {p1}, Landroid/app/ActionBar$Tab;->getPosition()I
 

@@ -309,7 +309,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IC)V
     .locals 1
-    .param p3    # C
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(C)V"
@@ -325,8 +324,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ICLjava/lang/String;)V
     .locals 0
-    .param p3    # C
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(C",
@@ -346,7 +343,6 @@
 
 .method static of(C)Lcom/android/i18n/addressinput/AddressField;
     .locals 2
-    .param p0    # C
 
     sget-object v0, Lcom/android/i18n/addressinput/AddressField;->FIELD_MAPPING:Ljava/util/Map;
 
@@ -365,7 +361,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/i18n/addressinput/AddressField;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/i18n/addressinput/AddressField;
 

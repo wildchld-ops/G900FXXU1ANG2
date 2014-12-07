@@ -250,7 +250,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v5, 0x0
 
@@ -449,7 +448,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/AccountManager;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/AccountManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -458,7 +456,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/manager/AccountManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/AccountManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/AccountManager;->sendAccount()V
 
@@ -467,7 +464,6 @@
 
 .method private addAccount(Lcom/nuance/connect/internal/common/ConnectAccount;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/common/ConnectAccount;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AccountManager;->accountList:Ljava/util/Map;
 
@@ -495,7 +491,6 @@
 
 .method private addAccounts([Ljava/lang/String;)V
     .locals 8
-    .param p1    # [Ljava/lang/String;
 
     iget-object v4, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -675,7 +670,6 @@
 
 .method private containsAccount(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AccountManager;->accountList:Ljava/util/Map;
 
@@ -692,8 +686,6 @@
 
 .method private deleteActiveAccount(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p1, :cond_2
 
@@ -726,8 +718,6 @@
 
 .method private deleteDevice(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->client:Lcom/nuance/connect/service/ConnectClient;
 
@@ -903,7 +893,6 @@
 
 .method private finishAccountActivation(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/AccountManager;->getAccount(Ljava/lang/String;)Lcom/nuance/connect/internal/common/ConnectAccount;
 
@@ -959,8 +948,6 @@
 
 .method private finishRegisterAccount(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AccountManager;->accountList:Ljava/util/Map;
 
@@ -1032,7 +1019,6 @@
 
 .method private getAccount(Ljava/lang/String;)Lcom/nuance/connect/internal/common/ConnectAccount;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AccountManager;->accountList:Ljava/util/Map;
 
@@ -1266,7 +1252,6 @@
 
 .method private onResponseAccount(Lcom/nuance/connect/service/comm/Response;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v8, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1507,7 +1492,6 @@
 
 .method private onResponseAccountCheck(Lcom/nuance/connect/service/comm/Response;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v7, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1638,7 +1622,6 @@
 
 .method private onResponseDeleteAccount(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v2, 0x1
 
@@ -1662,7 +1645,6 @@
 
 .method private onResponseDeviceList(Lcom/nuance/connect/service/comm/Response;)V
     .locals 14
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2004,7 +1986,6 @@
 
 .method private onResponseNameDevice(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2024,7 +2005,6 @@
 
 .method private onResponseRegister(Lcom/nuance/connect/service/comm/Response;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2145,7 +2125,6 @@
 
 .method private onResponseReverify(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2217,7 +2196,6 @@
 
 .method private onResponseUnlinkDevice(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v3, 0x1
 
@@ -2270,7 +2248,6 @@
 
 .method private onResponseVerify(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2509,7 +2486,6 @@
 
 .method private sendDeleteAccount(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -2621,8 +2597,6 @@
 
 .method private sendNameDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2681,8 +2655,6 @@
 
 .method private sendRegister(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2811,8 +2783,6 @@
 
 .method private sendReverify(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2887,7 +2857,6 @@
 
 .method private sendUnlinkDevice(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2924,9 +2893,6 @@
 
 .method private sendVerify(Ljava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AccountManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -3046,8 +3012,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "REGISTRATION_ALERT"
 
@@ -3218,7 +3182,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 12
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 
@@ -3585,7 +3548,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 

@@ -90,8 +90,6 @@
 
 .method public SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-super {p0, p1, p2}, Landroid/sec/clipboard/data/ClipboardData;->SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
 
@@ -188,7 +186,6 @@
 
 .method public SetFirstImgPath(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v3, Landroid/sec/clipboard/data/ClipboardDefine;->INFO_DEBUG:Z
 
@@ -272,7 +269,6 @@
 
 .method public SetHTMLFragment(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/high16 v2, 0x40000
 
@@ -382,8 +378,6 @@
 
 .method public SetHTMLFragment(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     sget-boolean v0, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -533,8 +527,6 @@
 
 .method public SetHTMLFragmentWithImagePath(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x1
 
@@ -742,7 +734,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     sget-boolean v3, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -910,7 +901,6 @@
 
 .method public getDimensionsFromHTML(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string v2, ""
 
@@ -1038,8 +1028,6 @@
 
 .method public getFirstImage(II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -1384,7 +1372,6 @@
 
 .method protected readFormSource(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const-class v0, Ljava/lang/String;
 
@@ -1495,8 +1482,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     sget-boolean v0, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 

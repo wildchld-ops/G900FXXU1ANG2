@@ -19,10 +19,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p3    # Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -73,9 +69,6 @@
 # virtual methods
 .method public onAddressChallengeResult(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener$Result;Lcom/google/android/finsky/protos/BillingAddress$Address;[Z)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener$Result;
-    .param p2    # Lcom/google/android/finsky/protos/BillingAddress$Address;
-    .param p3    # [Z
 
     sget-object v5, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener$Result;->CANCELED:Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener$Result;
 
@@ -225,8 +218,6 @@
 
 .method public onCountryChanged(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-boolean v1, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFlow;->mFinishOnSwitchCountry:Z
 
@@ -282,7 +273,6 @@
 
 .method public resumeFromSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "address_widget"
 
@@ -318,7 +308,6 @@
 
 .method public saveState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFlow;->mAddressChallengeFragment:Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 

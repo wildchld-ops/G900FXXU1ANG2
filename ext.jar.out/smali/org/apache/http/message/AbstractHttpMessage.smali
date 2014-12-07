@@ -25,7 +25,6 @@
 
 .method protected constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 1
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,8 +43,6 @@
 # virtual methods
 .method public addHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -71,7 +68,6 @@
 
 .method public addHeader(Lorg/apache/http/Header;)V
     .locals 1
-    .param p1    # Lorg/apache/http/Header;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -82,7 +78,6 @@
 
 .method public containsHeader(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -107,7 +102,6 @@
 
 .method public getFirstHeader(Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -120,7 +114,6 @@
 
 .method public getHeaders(Ljava/lang/String;)[Lorg/apache/http/Header;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -133,7 +126,6 @@
 
 .method public getLastHeader(Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -177,7 +169,6 @@
 
 .method public headerIterator(Ljava/lang/String;)Lorg/apache/http/HeaderIterator;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -190,7 +181,6 @@
 
 .method public removeHeader(Lorg/apache/http/Header;)V
     .locals 1
-    .param p1    # Lorg/apache/http/Header;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -201,7 +191,6 @@
 
 .method public removeHeaders(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -246,8 +235,6 @@
 
 .method public setHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -273,7 +260,6 @@
 
 .method public setHeader(Lorg/apache/http/Header;)V
     .locals 1
-    .param p1    # Lorg/apache/http/Header;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -284,7 +270,6 @@
 
 .method public setHeaders([Lorg/apache/http/Header;)V
     .locals 1
-    .param p1    # [Lorg/apache/http/Header;
 
     iget-object v0, p0, Lorg/apache/http/message/AbstractHttpMessage;->headergroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -295,7 +280,6 @@
 
 .method public setParams(Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     if-nez p1, :cond_0
 

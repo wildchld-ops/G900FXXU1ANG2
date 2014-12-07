@@ -127,9 +127,6 @@
 
 .method public static delete(Landroid/content/Context;ILjava/lang/String;)I
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v14, Ljava/lang/StringBuilder;
 
@@ -578,7 +575,6 @@
 
 .method public static deleteAll(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -613,11 +609,6 @@
 
 .method public static insert(Landroid/content/Context;ILjava/lang/String;ZI)Landroid/net/Uri;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v3, 0x1
 

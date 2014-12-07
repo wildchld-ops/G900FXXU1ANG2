@@ -40,8 +40,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/google/android/finsky/config/PreferenceFile;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/config/PreferenceFile;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

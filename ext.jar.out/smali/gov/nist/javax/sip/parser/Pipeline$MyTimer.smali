@@ -25,7 +25,6 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/parser/Pipeline;Lgov/nist/javax/sip/parser/Pipeline;)V
     .locals 0
-    .param p2    # Lgov/nist/javax/sip/parser/Pipeline;
 
     iput-object p1, p0, Lgov/nist/javax/sip/parser/Pipeline$MyTimer;->this$0:Lgov/nist/javax/sip/parser/Pipeline;
 

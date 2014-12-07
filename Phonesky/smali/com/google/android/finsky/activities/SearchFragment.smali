@@ -55,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/SearchFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SearchFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SearchFragment;->mListView:Landroid/widget/ListView;
 
@@ -64,7 +63,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/SearchFragment;)Lcom/google/android/finsky/adapters/CardListAdapter;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SearchFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SearchFragment;->mAdapter:Lcom/google/android/finsky/adapters/CardListAdapter;
 
@@ -73,7 +71,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/SearchFragment;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SearchFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SearchFragment;->mSavedInstanceState:Landroid/os/Bundle;
 
@@ -82,8 +79,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/activities/SearchFragment;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/SearchFragment;
 
@@ -210,7 +205,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -374,7 +368,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -609,7 +602,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/SearchFragment;->recordState()V
 

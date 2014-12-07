@@ -33,8 +33,6 @@
 # virtual methods
 .method public packageInstalled(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PackageManagerUtils$1;->val$observer:Lcom/google/android/finsky/utils/PackageManagerUtils$PackageInstallObserver;
 

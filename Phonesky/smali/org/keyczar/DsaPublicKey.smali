@@ -68,7 +68,6 @@
 
 .method static synthetic access$000(Lorg/keyczar/DsaPublicKey;)Ljava/security/interfaces/DSAPublicKey;
     .locals 1
-    .param p0    # Lorg/keyczar/DsaPublicKey;
 
     iget-object v0, p0, Lorg/keyczar/DsaPublicKey;->jcePublicKey:Ljava/security/interfaces/DSAPublicKey;
 
@@ -176,10 +175,6 @@
 
 .method private initializeJceKey(Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;Ljava/math/BigInteger;)V
     .locals 3
-    .param p1    # Ljava/math/BigInteger;
-    .param p2    # Ljava/math/BigInteger;
-    .param p3    # Ljava/math/BigInteger;
-    .param p4    # Ljava/math/BigInteger;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -221,7 +216,6 @@
 
 .method static read(Ljava/lang/String;)Lorg/keyczar/DsaPublicKey;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

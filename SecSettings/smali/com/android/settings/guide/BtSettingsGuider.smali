@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     const/4 v2, 0x0
 
@@ -113,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/guide/BtSettingsGuider;)Lcom/android/settings/guide/BtSettingsGuider$GuideStates;
     .locals 1
-    .param p0    # Lcom/android/settings/guide/BtSettingsGuider;
 
     iget-object v0, p0, Lcom/android/settings/guide/BtSettingsGuider;->mShowedDialog:Lcom/android/settings/guide/BtSettingsGuider$GuideStates;
 
@@ -122,7 +120,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/guide/BtSettingsGuider;)Lcom/android/settings/guide/BtSettingsGuider$OnCloseHelpDialogListener;
     .locals 1
-    .param p0    # Lcom/android/settings/guide/BtSettingsGuider;
 
     iget-object v0, p0, Lcom/android/settings/guide/BtSettingsGuider;->onCloseHelpDialogListener:Lcom/android/settings/guide/BtSettingsGuider$OnCloseHelpDialogListener;
 
@@ -131,9 +128,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/guide/BtSettingsGuider;Lcom/android/settings/guide/BtSettingsGuider$BluetoothBroadcastActions;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/guide/BtSettingsGuider;
-    .param p1    # Lcom/android/settings/guide/BtSettingsGuider$BluetoothBroadcastActions;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/guide/BtSettingsGuider;->onReceive(Lcom/android/settings/guide/BtSettingsGuider$BluetoothBroadcastActions;Landroid/content/Intent;)V
 
@@ -163,7 +157,6 @@
 
 .method private initHelpDialogContent(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/settings/guide/GuiderBase;->mHelpDialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -204,8 +197,6 @@
 
 .method private initHelpDialogContent(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/guide/GuiderBase;->getActivity()Landroid/app/Activity;
 
@@ -275,7 +266,6 @@
 
 .method private invalidateHelpDialog(Lcom/android/settings/guide/BtSettingsGuider$GuideStates;)V
     .locals 6
-    .param p1    # Lcom/android/settings/guide/BtSettingsGuider$GuideStates;
 
     const/4 v1, -0x1
 
@@ -502,8 +492,6 @@
 
 .method private onDeviceBondStateChanged(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/16 v3, 0xc
 
@@ -603,8 +591,6 @@
 
 .method private onReceive(Lcom/android/settings/guide/BtSettingsGuider$BluetoothBroadcastActions;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Lcom/android/settings/guide/BtSettingsGuider$BluetoothBroadcastActions;
-    .param p2    # Landroid/content/Intent;
 
     const/high16 v2, -0x80000000
 
@@ -668,7 +654,6 @@
 
 .method private onScanningStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/guide/GuiderBase;->getFragment()Landroid/app/Fragment;
 
@@ -707,7 +692,6 @@
 
 .method private setFocus(Lcom/android/settings/guide/BtSettingsGuider$GuideStates;)V
     .locals 5
-    .param p1    # Lcom/android/settings/guide/BtSettingsGuider$GuideStates;
 
     invoke-virtual {p0}, Lcom/android/settings/guide/GuiderBase;->getActivity()Landroid/app/Activity;
 
@@ -779,9 +763,6 @@
 
 .method private showHelpDialog(IILcom/android/settings/guide/BtSettingsGuider$GuideStates;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/settings/guide/BtSettingsGuider$GuideStates;
 
     const/4 v0, 0x0
 
@@ -868,7 +849,6 @@
 # virtual methods
 .method protected changeHelpDialogState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/settings/guide/BtSettingsGuider;->mBTEnabled:Z
 
@@ -1038,14 +1018,12 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Lcom/android/settings/guide/BtSettingsGuider;->mShowedDialog:Lcom/android/settings/guide/BtSettingsGuider$GuideStates;
 
@@ -1063,7 +1041,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/settings/guide/BtSettingsGuider;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;
 
@@ -1164,8 +1141,6 @@
 
 .method public onKey(ILandroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v7, 0x6f
 
@@ -1389,7 +1364,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)V
     .locals 0
-    .param p1    # Landroid/view/MenuItem;
 
     return-void
 .end method
@@ -1419,7 +1393,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-static {}, Lcom/android/settings/guide/GuideModeHelper;->isTablet()Z
 
@@ -1656,14 +1629,12 @@
 
 .method public setEnabler(Lcom/android/settings/guide/GuideFragment$WrappedEnabler;)V
     .locals 0
-    .param p1    # Lcom/android/settings/guide/GuideFragment$WrappedEnabler;
 
     return-void
 .end method
 
 .method protected setGuidedActionBarClickable(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/guide/GuiderBase;->getActivity()Landroid/app/Activity;
 
@@ -1763,7 +1734,6 @@
 
 .method public showHelpDialog(Lcom/android/settings/guide/BtSettingsGuider$GuideStates;)V
     .locals 6
-    .param p1    # Lcom/android/settings/guide/BtSettingsGuider$GuideStates;
 
     const v5, 0x7f091463
 

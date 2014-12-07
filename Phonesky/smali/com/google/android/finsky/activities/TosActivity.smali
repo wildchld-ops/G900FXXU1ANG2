@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/TosActivity;)Lcom/google/android/finsky/api/model/DfeToc;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/TosActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TosActivity;->mToc:Lcom/google/android/finsky/api/model/DfeToc;
 
@@ -68,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/TosActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/TosActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TosActivity;->mAccount:Ljava/lang/String;
 
@@ -77,9 +75,6 @@
 
 .method public static getIntent(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/finsky/api/model/DfeToc;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/api/model/DfeToc;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -106,8 +101,6 @@
 
 .method public static requiresAcceptance(Ljava/lang/String;Lcom/google/android/finsky/api/model/DfeToc;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
 
     const/4 v2, 0x0
 
@@ -187,7 +180,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -458,7 +450,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

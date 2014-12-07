@@ -44,7 +44,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 4
-    .param p1    # Landroid/animation/ValueAnimator;
 
     const-string v1, "alpha"
 

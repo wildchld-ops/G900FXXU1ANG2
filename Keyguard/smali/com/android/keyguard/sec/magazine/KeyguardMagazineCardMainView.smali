@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/16 v6, 0xa
 
@@ -186,8 +185,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v6, 0xa
 
@@ -327,9 +324,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/16 v6, 0xa
 
@@ -469,7 +463,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->mMagazineCardControlHandler:Landroid/os/Handler;
 
@@ -478,8 +471,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->addCard(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
 
@@ -488,8 +479,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->removeCard(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
 
@@ -498,8 +487,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->updateCard(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
 
@@ -508,8 +495,6 @@
 
 .method static synthetic access$402(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->mIsWakeupActionBlocked:Z
 
@@ -518,7 +503,6 @@
 
 .method private addCard(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     if-nez p1, :cond_0
 
@@ -572,8 +556,6 @@
 
 .method private addCardView(Lcom/samsung/android/magazinecard/MagazineCardRecord;I)V
     .locals 5
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -649,8 +631,6 @@
 
 .method private comparePriority(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -751,7 +731,6 @@
 
 .method private findCardViewById(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -815,7 +794,6 @@
 
 .method private getCardViewPriorityPosition(Lcom/samsung/android/magazinecard/MagazineCardRecord;)I
     .locals 7
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     const/4 v4, -0x1
 
@@ -988,7 +966,6 @@
 
 .method private getScreenRectOfView(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -1031,7 +1008,6 @@
 
 .method private init(Landroid/content/Context;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1106,7 +1082,6 @@
 
 .method private isDisplayableCard(Lcom/samsung/android/magazinecard/MagazineCardRecord;)Z
     .locals 4
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     const-string v1, "KeyguardMagazineCardMainView"
 
@@ -1225,7 +1200,6 @@
 
 .method private removeCard(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     if-nez p1, :cond_0
 
@@ -1242,7 +1216,6 @@
 
 .method private removeCardView(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->findCardViewById(I)I
 
@@ -1434,7 +1407,6 @@
 
 .method private updateCard(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     iget v1, p1, Lcom/samsung/android/magazinecard/MagazineCardRecord;->mId:I
 
@@ -1479,7 +1451,6 @@
 
 .method private updateCardView(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     if-nez p1, :cond_0
 
@@ -1557,7 +1528,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -1706,7 +1676,6 @@
 
 .method public getScreenPointOfView(Landroid/view/View;)Landroid/graphics/Point;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -1735,8 +1704,6 @@
 
 .method public isPointInCard(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -1955,7 +1922,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->mKeyguardCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -1964,7 +1930,6 @@
 
 .method public setKeyguardHostView(Lcom/android/keyguard/KeyguardHostView;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardHostView;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->mKeyguardHostView:Lcom/android/keyguard/KeyguardHostView;
 
@@ -1973,7 +1938,6 @@
 
 .method public setOnKeyguardDismissAction(Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;->mKeyguardCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 

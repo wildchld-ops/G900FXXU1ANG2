@@ -44,7 +44,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/Object;
     .locals 11
-    .param p1    # [Ljava/lang/Integer;
 
     const/4 v10, 0x0
 
@@ -280,7 +279,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -293,7 +291,6 @@
 
 .method protected onPostExecute(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity$PerformScan;->this$0:Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 

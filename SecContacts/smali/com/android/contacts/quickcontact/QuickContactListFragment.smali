@@ -113,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mActions:Ljava/util/List;
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mIsEasyMode:Z
 
@@ -131,7 +129,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mContext:Landroid/content/Context;
 
@@ -140,7 +137,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mHasVideoCall:Z
 
@@ -149,7 +145,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mDefaultCountryIso:Ljava/lang/String;
 
@@ -158,7 +153,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mIsVoLteEnabled:Z
 
@@ -167,7 +161,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mHasPhone:Z
 
@@ -176,7 +169,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mHasSms:Z
 
@@ -185,7 +177,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Lcom/samsung/contacts/util/ImsLowSignalHelper;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mImsLowSignalHelper:Lcom/samsung/contacts/util/ImsLowSignalHelper;
 
@@ -194,7 +185,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/quickcontact/QuickContactListFragment;)Lcom/android/contacts/quickcontact/QuickContactListFragment$Listener;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mListener:Lcom/android/contacts/quickcontact/QuickContactListFragment$Listener;
 
@@ -232,7 +222,6 @@
 # virtual methods
 .method public SetMimeType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mMimeType:Ljava/lang/String;
 
@@ -249,7 +238,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -294,9 +282,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f0300fd
 
@@ -456,7 +441,6 @@
 
 .method public setListener(Lcom/android/contacts/quickcontact/QuickContactListFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/quickcontact/QuickContactListFragment$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mListener:Lcom/android/contacts/quickcontact/QuickContactListFragment$Listener;
 
@@ -465,7 +449,6 @@
 
 .method public setVoLteEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/quickcontact/QuickContactListFragment;->mIsVoLteEnabled:Z
 

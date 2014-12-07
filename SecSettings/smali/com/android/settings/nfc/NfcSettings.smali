@@ -80,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/nfc/NfcSettings;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcSettings;->mActivity:Landroid/app/Activity;
 
@@ -89,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/nfc/NfcSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcSettings;->mNfcHelpText:Landroid/preference/Preference;
 
@@ -98,8 +96,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/nfc/NfcSettings;Landroid/preference/Preference;)Landroid/preference/Preference;
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
-    .param p1    # Landroid/preference/Preference;
 
     iput-object p1, p0, Lcom/android/settings/nfc/NfcSettings;->mNfcHelpText:Landroid/preference/Preference;
 
@@ -108,7 +104,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/nfc/NfcSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
 
     invoke-direct {p0}, Lcom/android/settings/nfc/NfcSettings;->createHelpStep2Dialog()V
 
@@ -117,7 +112,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/nfc/NfcSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
 
     invoke-direct {p0}, Lcom/android/settings/nfc/NfcSettings;->createHelpStep1Dialog()V
 
@@ -126,7 +120,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/nfc/NfcSettings;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcSettings;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -135,8 +128,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/nfc/NfcSettings;Lcom/android/settings/helpdialog/TwHelpDialog;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
 
     iput-object p1, p0, Lcom/android/settings/nfc/NfcSettings;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -145,7 +136,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/nfc/NfcSettings;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcSettings;->mHelpStep1Dialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -154,8 +144,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/nfc/NfcSettings;Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcSettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iput-object p1, p0, Lcom/android/settings/nfc/NfcSettings;->mHelpStep1Dialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -344,7 +332,6 @@
 # virtual methods
 .method public isPackageExists(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -414,7 +401,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 31
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1059,8 +1045,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 

@@ -14,9 +14,6 @@
 
 .method public static getIntent(Landroid/content/Context;ILjava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -39,7 +36,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 

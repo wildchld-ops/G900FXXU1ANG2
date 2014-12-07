@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +92,6 @@
 # virtual methods
 .method public hideBouncer(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$Helper;->mMessageArea:Lcom/android/keyguard/KeyguardMessageArea;
 
@@ -111,8 +109,6 @@
 
 .method public setMessage(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -146,9 +142,6 @@
 
 .method public varargs setMessage(IZ[Ljava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # [Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -178,8 +171,6 @@
 
 .method public setMessage(Ljava/lang/CharSequence;Z)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -203,7 +194,6 @@
 
 .method public setTimeout(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$Helper;->mMessageArea:Lcom/android/keyguard/KeyguardMessageArea;
 
@@ -216,7 +206,6 @@
 
 .method public showBouncer(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$Helper;->mMessageArea:Lcom/android/keyguard/KeyguardMessageArea;
 

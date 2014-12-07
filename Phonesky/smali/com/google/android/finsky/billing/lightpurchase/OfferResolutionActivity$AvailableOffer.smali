@@ -27,10 +27,6 @@
 # direct methods
 .method private constructor <init>(Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;Lcom/google/android/finsky/protos/Common$Offer;[B)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p4    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,11 +43,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;Lcom/google/android/finsky/protos/Common$Offer;[BLcom/google/android/finsky/billing/lightpurchase/OfferResolutionActivity$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p4    # [B
-    .param p5    # Lcom/google/android/finsky/billing/lightpurchase/OfferResolutionActivity$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/billing/lightpurchase/OfferResolutionActivity$AvailableOffer;-><init>(Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;Lcom/google/android/finsky/protos/Common$Offer;[B)V
 

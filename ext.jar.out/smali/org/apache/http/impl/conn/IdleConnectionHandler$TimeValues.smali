@@ -23,9 +23,6 @@
 # direct methods
 .method constructor <init>(JJLjava/util/concurrent/TimeUnit;)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Ljava/util/concurrent/TimeUnit;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +55,6 @@
 
 .method static synthetic access$000(Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;
 
     iget-wide v0, p0, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeExpires:J
 
@@ -67,7 +63,6 @@
 
 .method static synthetic access$100(Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;)J
     .locals 2
-    .param p0    # Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;
 
     iget-wide v0, p0, Lorg/apache/http/impl/conn/IdleConnectionHandler$TimeValues;->timeAdded:J
 

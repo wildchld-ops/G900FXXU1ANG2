@@ -57,11 +57,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/Camera;Lcom/sec/android/glview/TwGLList;Lcom/sec/android/app/camera/MenuResourceDepot;Lcom/sec/android/app/camera/glwidget/TwGLModeMenu;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p2    # Lcom/sec/android/app/camera/Camera;
-    .param p3    # Lcom/sec/android/glview/TwGLList;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p5    # Lcom/sec/android/app/camera/glwidget/TwGLModeMenu;
 
     const/4 v0, 0x0
 
@@ -118,7 +113,6 @@
 
 .method public getItemWithData(Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;)Lcom/sec/android/app/camera/glwidget/TwGLModeItem;
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeMenu$TwGLMenuAdapter;->mItemList:Ljava/util/HashMap;
 
@@ -141,8 +135,6 @@
 
 .method public getView(ILcom/sec/android/glview/TwGLView;)Lcom/sec/android/glview/TwGLView;
     .locals 12
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     const/16 v11, 0xcb
 
@@ -380,7 +372,6 @@
 
 .method public setItemSubTitle(Lcom/sec/android/glview/TwGLView;)V
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLModeMenu$TwGLMenuAdapter;->getCount()I
 
@@ -444,7 +435,6 @@
 
 .method public setResourceData(Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeMenu$TwGLMenuAdapter;->mMenuResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 

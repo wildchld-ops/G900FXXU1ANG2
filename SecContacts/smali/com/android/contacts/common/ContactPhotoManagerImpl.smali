@@ -109,7 +109,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/contacts/common/ContactPhotoManager;-><init>()V
 
@@ -222,7 +221,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/common/ContactPhotoManagerImpl;)Landroid/util/LruCache;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManagerImpl;
 
     iget-object v0, p0, Lcom/android/contacts/common/ContactPhotoManagerImpl;->mBitmapHolderCache:Landroid/util/LruCache;
 
@@ -231,7 +229,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/common/ContactPhotoManagerImpl;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManagerImpl;
 
     iget v0, p0, Lcom/android/contacts/common/ContactPhotoManagerImpl;->mBitmapHolderCacheRedZoneBytes:I
 
@@ -240,10 +237,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/common/ContactPhotoManagerImpl;Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManagerImpl;
-    .param p1    # Ljava/util/Set;
-    .param p2    # Ljava/util/Set;
-    .param p3    # Ljava/util/Set;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/contacts/common/ContactPhotoManagerImpl;->obtainPhotoIdsAndUrisToLoad(Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;)V
 
@@ -268,11 +261,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/common/ContactPhotoManagerImpl;Ljava/lang/Object;[BZI)V
     .locals 0
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManagerImpl;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [B
-    .param p3    # Z
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/contacts/common/ContactPhotoManagerImpl;->cacheBitmap(Ljava/lang/Object;[BZI)V
 
@@ -281,7 +269,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/common/ContactPhotoManagerImpl;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManagerImpl;
 
     iget-object v0, p0, Lcom/android/contacts/common/ContactPhotoManagerImpl;->mMainThreadHandler:Landroid/os/Handler;
 
@@ -290,10 +277,6 @@
 
 .method private cacheBitmap(Ljava/lang/Object;[BZI)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [B
-    .param p3    # Z
-    .param p4    # I
 
     new-instance v0, Lcom/android/contacts/common/ContactPhotoManagerImpl$BitmapHolder;
 
@@ -329,8 +312,6 @@
 
 .method private static inflateBitmap(Lcom/android/contacts/common/ContactPhotoManagerImpl$BitmapHolder;I)V
     .locals 5
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManagerImpl$BitmapHolder;
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/common/ContactPhotoManagerImpl$BitmapHolder;->bytes:[B
 
@@ -403,10 +384,6 @@
 
 .method private loadCachedPhoto(Landroid/widget/ImageView;Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;ZJ)Z
     .locals 10
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;
-    .param p3    # Z
-    .param p4    # J
 
     const/4 v8, 0x0
 
@@ -601,9 +578,6 @@
 
 .method private loadPhotoByIdOrUri(Landroid/widget/ImageView;Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;J)V
     .locals 7
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;
-    .param p3    # J
 
     const/4 v3, 0x0
 
@@ -971,7 +945,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x1
 
@@ -1020,12 +993,6 @@
 
 .method public loadPhoto(Landroid/widget/ImageView;Landroid/net/Uri;IZLcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;J)V
     .locals 6
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
-    .param p6    # J
 
     if-nez p2, :cond_0
 
@@ -1060,11 +1027,6 @@
 
 .method public loadThumbnail(Landroid/widget/ImageView;JZLcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;J)V
     .locals 6
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
-    .param p4    # Z
-    .param p5    # Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
-    .param p6    # J
 
     const-wide/16 v0, 0x0
 
@@ -1103,7 +1065,6 @@
 
 .method public onTrimMemory(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x3c
 

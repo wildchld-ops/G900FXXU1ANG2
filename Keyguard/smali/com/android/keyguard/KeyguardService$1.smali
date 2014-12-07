@@ -48,7 +48,6 @@
 
 .method public dispatch(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -68,7 +67,6 @@
 
 .method public doKeyguardTimeout(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -190,8 +188,6 @@
 
 .method public keyguardDone(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -287,7 +283,6 @@
 
 .method public onScreenTurnedOff(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -307,7 +302,6 @@
 
 .method public onScreenTurnedOn(Lcom/android/internal/policy/IKeyguardShowCallback;)V
     .locals 1
-    .param p1    # Lcom/android/internal/policy/IKeyguardShowCallback;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -346,7 +340,6 @@
 
 .method public removeAdaptiveEvent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -366,7 +359,6 @@
 
 .method public removeContextualEvent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -386,9 +378,6 @@
 
 .method public setAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -408,8 +397,6 @@
 
 .method public setContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -429,7 +416,6 @@
 
 .method public setCurrentUser(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -449,7 +435,6 @@
 
 .method public setHidden(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -469,7 +454,6 @@
 
 .method public setKeyguardEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -508,9 +492,6 @@
 
 .method public updateAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -530,8 +511,6 @@
 
 .method public updateContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 
@@ -551,7 +530,6 @@
 
 .method public verifyUnlock(Lcom/android/internal/policy/IKeyguardExitCallback;)V
     .locals 1
-    .param p1    # Lcom/android/internal/policy/IKeyguardExitCallback;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService$1;->this$0:Lcom/android/keyguard/KeyguardService;
 

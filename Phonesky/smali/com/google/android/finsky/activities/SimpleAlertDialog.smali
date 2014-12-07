@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/SimpleAlertDialog;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/SimpleAlertDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/SimpleAlertDialog;->doPositiveClick()V
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/SimpleAlertDialog;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/SimpleAlertDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/SimpleAlertDialog;->doNegativeClick()V
 
@@ -54,7 +52,6 @@
 
 .method private buildAlertDialog(Landroid/os/Bundle;)Landroid/app/AlertDialog;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v2, Landroid/view/ContextThemeWrapper;
 
@@ -400,8 +397,6 @@
 
 .method private setCustomLayout(Landroid/app/AlertDialog;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/app/AlertDialog;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v3, "layoutId"
 
@@ -449,7 +444,6 @@
 
 .method private setMessageViewClickable(Landroid/app/AlertDialog;)V
     .locals 1
-    .param p1    # Landroid/app/AlertDialog;
 
     new-instance v0, Lcom/google/android/finsky/activities/SimpleAlertDialog$1;
 
@@ -462,7 +456,6 @@
 
 .method private setUpEventLogger(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -531,7 +524,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/DialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -542,7 +534,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/SimpleAlertDialog;->getArguments()Landroid/os/Bundle;
 

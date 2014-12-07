@@ -33,7 +33,6 @@
 
 .method private configureAboutSection(Landroid/preference/PreferenceScreen;)V
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const-string v3, "build-version"
 
@@ -82,7 +81,6 @@
 
 .method private configureAutoAddShortcuts(Landroid/preference/PreferenceScreen;)V
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const-string v2, "auto-add-shortcuts"
 
@@ -149,7 +147,6 @@
 
 .method private configureAutoUpdateMode(Landroid/preference/PreferenceScreen;)V
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -200,7 +197,6 @@
 
 .method private configureUpdateNotifications(Landroid/preference/PreferenceScreen;)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     const-string v1, "update-notifications"
 
@@ -229,7 +225,6 @@
 
 .method private configureUserControlsSection(Landroid/preference/PreferenceScreen;)V
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     sget-object v4, Lcom/google/android/finsky/config/G;->vendingHideContentRating:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -356,7 +351,6 @@
 
 .method private setContentFilterLevel(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v2, -0x64
 
@@ -451,9 +445,6 @@
 
 .method private startAuthChallenge(ZILandroid/os/Bundle;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -536,9 +527,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v7, 0x1e
 
@@ -888,7 +876,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x7
 
@@ -1001,7 +988,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1051,8 +1037,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 13
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -1297,8 +1281,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const-string v6, "auto-update-mode"
 

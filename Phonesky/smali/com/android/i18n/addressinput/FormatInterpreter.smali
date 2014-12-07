@@ -20,7 +20,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/i18n/addressinput/FormOptions;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/FormOptions;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,8 +56,6 @@
 
 .method private getFormatString(Lcom/android/i18n/addressinput/LookupKey$ScriptType;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/i18n/addressinput/LookupKey$ScriptType;->LOCAL:Lcom/android/i18n/addressinput/LookupKey$ScriptType;
 
@@ -85,8 +82,6 @@
 
 .method private getFormatSubStrings(Lcom/android/i18n/addressinput/LookupKey$ScriptType;Ljava/lang/String;)Ljava/util/List;
     .locals 10
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -257,8 +252,6 @@
 
 .method private getJsonValue(Ljava/lang/String;Lcom/android/i18n/addressinput/AddressDataKey;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/addressinput/AddressDataKey;
 
     invoke-static {p1}, Lcom/android/i18n/addressinput/Util;->checkNotNull(Ljava/lang/Object;)V
 
@@ -364,7 +357,6 @@
 
 .method private overrideFieldOrder(Ljava/lang/String;Ljava/util/List;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -507,7 +499,6 @@
 
 .method private removeAllRedundantSpaces(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -528,8 +519,6 @@
 # virtual methods
 .method getAddressFieldOrder(Lcom/android/i18n/addressinput/LookupKey$ScriptType;Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -652,8 +641,6 @@
 
 .method getEnvelopeAddress(Lcom/android/i18n/addressinput/AddressData;Ljava/lang/String;)Ljava/util/List;
     .locals 16
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

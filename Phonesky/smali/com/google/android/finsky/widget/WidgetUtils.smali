@@ -36,7 +36,6 @@
 
 .method public static getAwarenessThreshold(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -145,7 +144,6 @@
 
 .method public static getBackendIcon(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -212,8 +210,6 @@
 
 .method public static getDips(Landroid/content/Context;I)I
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -240,7 +236,6 @@
 
 .method public static getHotseatCheckIcon(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -309,7 +304,6 @@
 
 .method public static notifyAccountSwitch(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     sget-object v2, Lcom/google/android/finsky/widget/WidgetUtils;->SUPPORTED_BACKENDS:[I
 
@@ -355,7 +349,6 @@
 
 .method public static parseSparseIntArray(Ljava/lang/String;)Landroid/util/SparseIntArray;
     .locals 15
-    .param p0    # Ljava/lang/String;
 
     const/4 v14, 0x2
 
@@ -462,8 +455,6 @@
 
 .method public static registerLibraryMutationsListener(Landroid/content/Context;Lcom/google/android/finsky/library/LibraryReplicators;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicators;
 
     new-instance v0, Lcom/google/android/finsky/widget/WidgetUtils$1;
 
@@ -476,7 +467,6 @@
 
 .method public static serializeSparseIntArray(Landroid/util/SparseIntArray;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/util/SparseIntArray;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -542,7 +532,6 @@
 
 .method public static translate(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "all"
 
@@ -650,7 +639,6 @@
 
 .method public static translate(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

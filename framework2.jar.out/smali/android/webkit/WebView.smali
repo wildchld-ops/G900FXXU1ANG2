@@ -61,7 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -72,8 +71,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010085
 
@@ -84,9 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -97,10 +91,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILjava/util/Map;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -177,10 +167,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IZ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -203,9 +189,6 @@
 
 .method static synthetic access$1001(Landroid/webkit/WebView;ILandroid/graphics/Rect;)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->requestFocus(ILandroid/graphics/Rect;)Z
 
@@ -216,7 +199,6 @@
 
 .method static synthetic access$101(Landroid/webkit/WebView;)I
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
 
     invoke-super {p0}, Landroid/view/View;->getScrollBarStyle()I
 
@@ -227,8 +209,6 @@
 
 .method static synthetic access$1101(Landroid/webkit/WebView;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-super {p0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -237,16 +217,6 @@
 
 .method static synthetic access$1200(Landroid/webkit/WebView;IIIIIIIIZ)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
 
     invoke-virtual/range {p0 .. p9}, Landroid/view/View;->overScrollBy(IIIIIIIIZ)Z
 
@@ -257,8 +227,6 @@
 
 .method static synthetic access$1300(Landroid/webkit/WebView;I)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->awakenScrollBars(I)Z
 
@@ -269,9 +237,6 @@
 
 .method static synthetic access$1400(Landroid/webkit/WebView;IZ)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->awakenScrollBars(IZ)Z
 
@@ -282,7 +247,6 @@
 
 .method static synthetic access$1500(Landroid/webkit/WebView;)F
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
 
     invoke-virtual {p0}, Landroid/view/View;->getVerticalScrollFactor()F
 
@@ -293,7 +257,6 @@
 
 .method static synthetic access$1600(Landroid/webkit/WebView;)F
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
 
     invoke-virtual {p0}, Landroid/view/View;->getHorizontalScrollFactor()F
 
@@ -304,9 +267,6 @@
 
 .method static synthetic access$1700(Landroid/webkit/WebView;II)V
     .locals 0
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
@@ -315,7 +275,6 @@
 
 .method static synthetic access$1800(Landroid/webkit/WebView;)I
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
 
     invoke-virtual {p0}, Landroid/view/View;->getHorizontalScrollbarHeight()I
 
@@ -326,13 +285,6 @@
 
 .method static synthetic access$1901(Landroid/webkit/WebView;Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;IIII)V
     .locals 0
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-super/range {p0 .. p6}, Landroid/view/View;->onDrawVerticalScrollBar(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;IIII)V
 
@@ -341,8 +293,6 @@
 
 .method static synthetic access$2002(Landroid/webkit/WebView;I)I
     .locals 0
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/View;->mScrollX:I
 
@@ -351,9 +301,6 @@
 
 .method static synthetic access$201(Landroid/webkit/WebView;II)V
     .locals 0
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->scrollTo(II)V
 
@@ -362,8 +309,6 @@
 
 .method static synthetic access$2102(Landroid/webkit/WebView;I)I
     .locals 0
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/View;->mScrollY:I
 
@@ -372,7 +317,6 @@
 
 .method static synthetic access$301(Landroid/webkit/WebView;)V
     .locals 0
-    .param p0    # Landroid/webkit/WebView;
 
     invoke-super {p0}, Landroid/view/View;->computeScroll()V
 
@@ -381,8 +325,6 @@
 
 .method static synthetic access$401(Landroid/webkit/WebView;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
@@ -393,9 +335,6 @@
 
 .method static synthetic access$501(Landroid/webkit/WebView;ILandroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->performAccessibilityAction(ILandroid/os/Bundle;)Z
 
@@ -406,7 +345,6 @@
 
 .method static synthetic access$601(Landroid/webkit/WebView;)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
 
     invoke-super {p0}, Landroid/view/View;->performLongClick()Z
 
@@ -417,11 +355,6 @@
 
 .method static synthetic access$701(Landroid/webkit/WebView;IIII)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->setFrame(IIII)Z
 
@@ -432,8 +365,6 @@
 
 .method static synthetic access$801(Landroid/webkit/WebView;Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -444,8 +375,6 @@
 
 .method static synthetic access$901(Landroid/webkit/WebView;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p0    # Landroid/webkit/WebView;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onGenericMotionEvent(Landroid/view/MotionEvent;)Z
 
@@ -654,7 +583,6 @@
 
 .method public static findAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/webkit/WebView;->getFactory()Landroid/webkit/WebViewFactoryProvider;
 
@@ -727,8 +655,6 @@
 
 .method private setExtractionResultToSmartClipDataElement(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;Ljava/lang/String;)Z
     .locals 27
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
-    .param p2    # Ljava/lang/String;
 
     const/16 v24, 0x1
 
@@ -1251,7 +1177,6 @@
 
 .method public static setWebContentsDebuggingEnabled(Z)V
     .locals 1
-    .param p0    # Z
 
     invoke-static {}, Landroid/webkit/WebView;->getFactory()Landroid/webkit/WebViewFactoryProvider;
 
@@ -1295,8 +1220,6 @@
 # virtual methods
 .method public addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -1323,7 +1246,6 @@
 
 .method public canGoBackOrForward(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -1400,7 +1322,6 @@
 
 .method public clearCache(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -1619,7 +1540,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -1636,7 +1556,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -1653,7 +1572,6 @@
 
 .method public documentHasImages(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -1666,8 +1584,6 @@
 
 .method public dumpViewHierarchyWithProperties(Ljava/io/BufferedWriter;I)V
     .locals 1
-    .param p1    # Ljava/io/BufferedWriter;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -1688,7 +1604,6 @@
 
 .method public evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1711,8 +1626,6 @@
 
 .method public extractSmartClipData(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 5
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
-    .param p2    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     const-string v3, "WebView"
 
@@ -1759,7 +1672,6 @@
 
 .method public findAll(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1780,7 +1692,6 @@
 
 .method public findAllAsync(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -1793,8 +1704,6 @@
 
 .method public findHierarchyView(Ljava/lang/String;I)Landroid/view/View;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -1807,7 +1716,6 @@
 
 .method public findNext(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -1820,8 +1728,6 @@
 
 .method public flingScroll(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -1945,8 +1851,6 @@
 
 .method public getHttpAuthUsernamePassword(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -2192,7 +2096,6 @@
 
 .method public goBackOrForward(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -2255,9 +2158,6 @@
 
 .method public loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -2270,11 +2170,6 @@
 
 .method public loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -2297,7 +2192,6 @@
 
 .method public loadUrl(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -2310,7 +2204,6 @@
 
 .method public loadUrl(Ljava/lang/String;Ljava/util/Map;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2346,7 +2239,6 @@
 
 .method public offerSmartClipDataExtracted(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/webkit/WebView;->mSmartClipDataElement:Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
 
@@ -2417,8 +2309,6 @@
 
 .method public onChildViewAdded(Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2427,8 +2317,6 @@
 
 .method public onChildViewRemoved(Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2437,7 +2325,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2452,7 +2339,6 @@
 
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
     .locals 1
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2485,7 +2371,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2500,12 +2385,6 @@
 
 .method protected onDrawVerticalScrollBar(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;IIII)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2532,9 +2411,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2551,7 +2427,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2568,8 +2443,6 @@
 
 .method public onGlobalFocusChanged(Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2578,7 +2451,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2595,7 +2467,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2620,7 +2491,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2645,8 +2515,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2663,9 +2531,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2682,8 +2547,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2700,8 +2563,6 @@
 
 .method protected onMeasure(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/AbsoluteLayout;->onMeasure(II)V
 
@@ -2718,10 +2579,6 @@
 
 .method protected onOverScrolled(IIZZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2760,10 +2617,6 @@
 
 .method protected onScrollChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onScrollChanged(IIII)V
 
@@ -2780,10 +2633,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -2800,7 +2649,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2817,7 +2665,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2834,8 +2681,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -2854,7 +2699,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2871,7 +2715,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -2916,7 +2759,6 @@
 
 .method public pageDown(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -2931,7 +2773,6 @@
 
 .method public pageUp(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -2958,8 +2799,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -2992,8 +2831,6 @@
 
 .method public postUrl(Ljava/lang/String;[B)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3006,7 +2843,6 @@
 
 .method public refreshPlugins(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3029,7 +2865,6 @@
 
 .method public removeJavascriptInterface(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3042,9 +2877,6 @@
 
 .method public requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -3061,8 +2893,6 @@
 
 .method public requestFocus(ILandroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -3079,7 +2909,6 @@
 
 .method public requestFocusNodeHref(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3092,7 +2921,6 @@
 
 .method public requestImageRef(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3105,8 +2933,6 @@
 
 .method public restorePicture(Landroid/os/Bundle;Ljava/io/File;)Z
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/io/File;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3123,7 +2949,6 @@
 
 .method public restoreState(Landroid/os/Bundle;)Landroid/webkit/WebBackForwardList;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3150,9 +2975,6 @@
 
 .method public savePassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3167,8 +2989,6 @@
 
 .method public savePicture(Landroid/os/Bundle;Ljava/io/File;)Z
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/io/File;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3185,7 +3005,6 @@
 
 .method public saveState(Landroid/os/Bundle;)Landroid/webkit/WebBackForwardList;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3200,7 +3019,6 @@
 
 .method public saveWebArchive(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3213,8 +3031,6 @@
 
 .method public saveWebArchive(Ljava/lang/String;ZLandroid/webkit/ValueCallback;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3238,7 +3054,6 @@
 
 .method public setBackgroundColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -3253,7 +3068,6 @@
 
 .method public setCertificate(Landroid/net/http/SslCertificate;)V
     .locals 1
-    .param p1    # Landroid/net/http/SslCertificate;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3268,7 +3082,6 @@
 
 .method public setDownloadListener(Landroid/webkit/DownloadListener;)V
     .locals 1
-    .param p1    # Landroid/webkit/DownloadListener;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3281,7 +3094,6 @@
 
 .method setFindDialogFindListener(Landroid/webkit/WebView$FindListener;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebView$FindListener;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3297,7 +3109,6 @@
 
 .method public setFindListener(Landroid/webkit/WebView$FindListener;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebView$FindListener;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3313,10 +3124,6 @@
 
 .method protected setFrame(IIII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -3333,7 +3140,6 @@
 
 .method public setHorizontalScrollbarOverlay(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3346,10 +3152,6 @@
 
 .method public setHttpAuthUsernamePassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3362,7 +3164,6 @@
 
 .method public setInitialScale(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3375,8 +3176,6 @@
 
 .method public setLayerType(ILandroid/graphics/Paint;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Paint;
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
@@ -3393,7 +3192,6 @@
 
 .method public setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -3408,7 +3206,6 @@
 
 .method public setMapTrackballToArrowKeys(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3423,7 +3220,6 @@
 
 .method public setNetworkAvailable(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3436,7 +3232,6 @@
 
 .method public setOverScrollMode(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setOverScrollMode(I)V
 
@@ -3455,7 +3250,6 @@
 
 .method public setPictureListener(Landroid/webkit/WebView$PictureListener;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebView$PictureListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3470,7 +3264,6 @@
 
 .method public setScrollBarStyle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkit/WebView;->mProvider:Landroid/webkit/WebViewProvider;
 
@@ -3487,7 +3280,6 @@
 
 .method public setVerticalScrollbarOverlay(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3500,7 +3292,6 @@
 
 .method public setWebChromeClient(Landroid/webkit/WebChromeClient;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebChromeClient;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3513,7 +3304,6 @@
 
 .method public setWebViewClient(Landroid/webkit/WebViewClient;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebViewClient;
 
     invoke-direct {p0}, Landroid/webkit/WebView;->checkThread()V
 
@@ -3544,8 +3334,6 @@
 
 .method public showFindDialog(Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

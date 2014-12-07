@@ -153,7 +153,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;
 

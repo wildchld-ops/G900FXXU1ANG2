@@ -213,7 +213,6 @@
 
 .method public static appendTypeParamName(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/vcard/VCardConfig;->isVersion30(I)Z
 
@@ -241,7 +240,6 @@
 
 .method public static getNameOrderType(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0xc
 
@@ -250,7 +248,6 @@
 
 .method public static getVCardTypeFromString(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -328,7 +325,6 @@
 
 .method public static isDoCoMo(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x20000000
 
@@ -349,7 +345,6 @@
 
 .method public static isJapaneseDevice(I)Z
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/vcard/VCardConfig;->sJapaneseMobileTypeSet:Ljava/util/Set;
 
@@ -366,7 +361,6 @@
 
 .method public static isVersion21(I)Z
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x3
 
@@ -385,7 +379,6 @@
 
 .method public static isVersion30(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -404,7 +397,6 @@
 
 .method public static isVersion40(I)Z
     .locals 2
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x3
 
@@ -425,7 +417,6 @@
 
 .method public static needsToConvertPhoneticString(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x8000000
 
@@ -446,7 +437,6 @@
 
 .method public static onlyOneNoteFieldIsAvailable(I)Z
     .locals 1
-    .param p0    # I
 
     const v0, 0x38000008
 
@@ -465,7 +455,6 @@
 
 .method static refrainPhoneNumberFormatting(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x2000000
 
@@ -486,7 +475,6 @@
 
 .method public static shouldRefrainQPToNameProperties(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/vcard/VCardConfig;->shouldUseQuotedPrintable(I)Z
 
@@ -514,7 +502,6 @@
 
 .method public static shouldUseQuotedPrintable(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/vcard/VCardConfig;->isVersion30(I)Z
 
@@ -543,7 +530,6 @@
 
 .method public static usesAndroidSpecificProperty(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, -0x80000000
 
@@ -564,7 +550,6 @@
 
 .method public static usesDefactProperty(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x40000000
 

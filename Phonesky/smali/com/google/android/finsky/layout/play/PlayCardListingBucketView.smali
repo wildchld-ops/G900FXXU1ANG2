@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -34,8 +33,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/IdentifiableLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -56,8 +53,6 @@
 
 .method private bindBucketEntries(Ljava/util/List;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 10
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -165,10 +160,6 @@
 
 .method private bindBucketHeader(IILjava/lang/String;Landroid/view/View$OnClickListener;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/view/View$OnClickListener;
 
     const/4 v7, 0x1
 
@@ -242,8 +233,6 @@
 
 .method private getDisplayedColumnsForBucket(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardListingBucketView;->getDisplayedRowsForBucket(I)I
 
@@ -274,7 +263,6 @@
 
 .method private getDisplayedRowsForBucket(I)I
     .locals 4
-    .param p1    # I
 
     int-to-double v0, p1
 
@@ -303,11 +291,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/model/Bucket;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;Landroid/view/View$OnClickListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Bucket;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Landroid/view/View$OnClickListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardListingBucketView;->mUiElementProto:Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
@@ -344,11 +327,6 @@
 
 .method public bind(Lcom/google/android/finsky/api/model/Document;Ljava/util/List;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;Landroid/view/View$OnClickListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Landroid/view/View$OnClickListener;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -400,7 +378,6 @@
 
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
 
@@ -425,8 +402,6 @@
 
 .method public inflateGrid(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x0
 

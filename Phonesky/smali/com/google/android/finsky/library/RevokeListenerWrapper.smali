@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/library/LibraryReplicators;Landroid/accounts/Account;Lcom/android/volley/Response$Listener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicators;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,7 +65,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/RevokeResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/RevokeResponse;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/RevokeResponse;->libraryUpdate:Lcom/google/android/finsky/protos/Library$LibraryUpdate;
 
@@ -93,7 +90,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/RevokeResponse;
 

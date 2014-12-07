@@ -42,7 +42,6 @@
 
 .method private makeSelectLanguagePrefKey(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -69,8 +68,6 @@
 
 .method private parseAttribute(Lorg/xmlpull/v1/XmlPullParser;[Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v5, 0x3
 
@@ -175,8 +172,6 @@
 
 .method private parseXml(Landroid/content/res/XmlResourceParser;Landroid/content/Context;)Z
     .locals 13
-    .param p1    # Landroid/content/res/XmlResourceParser;
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -665,8 +660,6 @@
 
 .method private parseXml(Landroid/content/res/XmlResourceParser;Lcom/diotek/ime/framework/repository/Repository;)Z
     .locals 12
-    .param p1    # Landroid/content/res/XmlResourceParser;
-    .param p2    # Lcom/diotek/ime/framework/repository/Repository;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1010,8 +1003,6 @@
 # virtual methods
 .method public load(Lcom/diotek/ime/framework/repository/Repository;Landroid/content/res/Resources;)Z
     .locals 7
-    .param p1    # Lcom/diotek/ime/framework/repository/Repository;
-    .param p2    # Landroid/content/res/Resources;
 
     const/4 v4, 0x0
 
@@ -1108,7 +1099,6 @@
 
 .method public loadAndSetToPreference(Landroid/content/Context;)Z
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

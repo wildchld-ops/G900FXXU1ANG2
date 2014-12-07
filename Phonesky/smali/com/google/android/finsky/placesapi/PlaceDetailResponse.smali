@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/protos/BillingAddress$Address;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/BillingAddress$Address;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -21,8 +20,6 @@
 
 .method public static parseFromJson(Lorg/json/JSONObject;Lcom/google/android/finsky/placesapi/AdrMicroformatParser;)Lcom/google/android/finsky/placesapi/PlaceDetailResponse;
     .locals 5
-    .param p0    # Lorg/json/JSONObject;
-    .param p1    # Lcom/google/android/finsky/placesapi/AdrMicroformatParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLChatOnBuddyMenu;Lcom/sec/android/app/camera/glwidget/TwGLChatOnBuddyMenu$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLChatOnBuddyMenu;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLChatOnBuddyMenu$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLChatOnBuddyMenu$TwGLChatOnBuddyMenuAdapter;-><init>(Lcom/sec/android/app/camera/glwidget/TwGLChatOnBuddyMenu;)V
 
@@ -63,8 +61,6 @@
 
 .method public getView(ILcom/sec/android/glview/TwGLView;)Lcom/sec/android/glview/TwGLView;
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v2, 0x0
 

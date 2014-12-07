@@ -41,8 +41,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/WebViewChallengeActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/WebViewChallengeActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/WebViewChallengeActivity;->cancel(Ljava/lang/String;)V
 
@@ -51,8 +49,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/WebViewChallengeActivity;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/WebViewChallengeActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/WebViewChallengeActivity;->checkUrlAndLog(Ljava/lang/String;)Z
 
@@ -63,7 +59,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/WebViewChallengeActivity;)Lcom/google/android/finsky/protos/ChallengeProtos$WebViewChallenge;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/WebViewChallengeActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/WebViewChallengeActivity;->mChallenge:Lcom/google/android/finsky/protos/ChallengeProtos$WebViewChallenge;
 
@@ -72,8 +67,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/WebViewChallengeActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/WebViewChallengeActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/WebViewChallengeActivity;->onTargetUrlMatch(Ljava/lang/String;)V
 
@@ -82,7 +75,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/WebViewChallengeActivity;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/WebViewChallengeActivity;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/WebViewChallengeActivity;->mIsFirstPageLoad:Z
 
@@ -91,8 +83,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/activities/WebViewChallengeActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/WebViewChallengeActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/WebViewChallengeActivity;->mIsFirstPageLoad:Z
 
@@ -101,7 +91,6 @@
 
 .method private cancel(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -145,7 +134,6 @@
 
 .method private checkUrlAndLog(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -227,9 +215,6 @@
 
 .method public static createIntent(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/protos/ChallengeProtos$WebViewChallenge;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/protos/ChallengeProtos$WebViewChallenge;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -262,7 +247,6 @@
 
 .method private onTargetUrlMatch(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -364,7 +348,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x0
 
@@ -623,7 +606,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -656,7 +638,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

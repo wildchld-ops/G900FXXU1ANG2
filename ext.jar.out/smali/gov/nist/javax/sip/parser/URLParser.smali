@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
@@ -23,7 +22,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
@@ -180,7 +178,6 @@
 
 .method private final global_phone_number(Z)Lgov/nist/javax/sip/address/TelephoneNumber;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -284,7 +281,6 @@
 
 .method protected static isMark(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -316,7 +312,6 @@
 
 .method protected static isReserved(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -349,7 +344,6 @@
 
 .method protected static isReservedNoSlash(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -380,7 +374,6 @@
 
 .method protected static isUnreserved(C)Z
     .locals 1
-    .param p0    # C
 
     invoke-static {p0}, Lgov/nist/javax/sip/parser/Lexer;->isAlphaDigit(C)Z
 
@@ -408,7 +401,6 @@
 
 .method protected static isUserUnreserved(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -588,7 +580,6 @@
 
 .method private local_phone_number(Z)Lgov/nist/javax/sip/address/TelephoneNumber;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -702,7 +693,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 7
-    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1647,7 +1637,6 @@
 
 .method public final parseTelephoneNumber(Z)Lgov/nist/javax/sip/address/TelephoneNumber;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2001,7 +1990,6 @@
 
 .method public sipURL(Z)Lgov/nist/javax/sip/address/SipUri;
     .locals 14
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2333,7 +2321,6 @@
 
 .method public telURL(Z)Lgov/nist/javax/sip/address/TelURLImpl;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2411,7 +2398,6 @@
 
 .method public uriReference(Z)Lgov/nist/javax/sip/address/GenericURI;
     .locals 9
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

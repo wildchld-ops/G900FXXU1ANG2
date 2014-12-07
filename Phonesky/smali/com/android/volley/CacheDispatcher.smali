@@ -50,8 +50,6 @@
 
 .method public constructor <init>(Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/BlockingQueue;Lcom/android/volley/Cache;Lcom/android/volley/ResponseDelivery;)V
     .locals 1
-    .param p3    # Lcom/android/volley/Cache;
-    .param p4    # Lcom/android/volley/ResponseDelivery;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -88,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/android/volley/CacheDispatcher;)Ljava/util/concurrent/BlockingQueue;
     .locals 1
-    .param p0    # Lcom/android/volley/CacheDispatcher;
 
     iget-object v0, p0, Lcom/android/volley/CacheDispatcher;->mNetworkQueue:Ljava/util/concurrent/BlockingQueue;
 

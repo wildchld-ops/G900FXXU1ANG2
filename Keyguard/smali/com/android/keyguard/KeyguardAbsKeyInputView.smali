@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -62,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -115,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardAbsKeyInputView;)Lcom/android/keyguard/EmergencyButton;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEmergencyButton:Lcom/android/keyguard/EmergencyButton;
 
@@ -124,7 +120,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardAbsKeyInputView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mDummyEmergencyButton:Landroid/view/View;
 
@@ -133,7 +128,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardAbsKeyInputView;)Lcom/android/keyguard/sec/EmergencyCircleView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEmergencyCircleView:Lcom/android/keyguard/sec/EmergencyCircleView;
 
@@ -334,17 +328,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -413,7 +402,6 @@
 
 .method protected handleAttemptLockout(J)V
     .locals 8
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -459,7 +447,6 @@
 
 .method public hideBouncer(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isPreviousLook()Z
 
@@ -597,9 +584,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     if-eqz p2, :cond_0
 
@@ -867,8 +851,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -912,8 +894,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -926,7 +906,6 @@
 
 .method public onResume(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->reset()V
 
@@ -945,17 +924,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1034,7 +1008,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 2
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -1054,7 +1027,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 1
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -1071,7 +1043,6 @@
 
 .method protected shouldLockout(J)Z
     .locals 2
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1092,7 +1063,6 @@
 
 .method public showBouncer(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isPreviousLook()Z
 

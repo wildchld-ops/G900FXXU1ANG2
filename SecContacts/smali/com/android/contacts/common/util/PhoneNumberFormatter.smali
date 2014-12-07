@@ -40,8 +40,6 @@
 
 .method public static setPhoneNumberFormatting(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -50,8 +48,6 @@
 
 .method public static setPhoneNumberFormattingTextWatcher(Landroid/content/Context;Landroid/widget/TextView;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/TextView;
 
     new-instance v1, Lcom/android/contacts/common/util/PhoneNumberFormatter$TextWatcherLoadAsyncTask;
 

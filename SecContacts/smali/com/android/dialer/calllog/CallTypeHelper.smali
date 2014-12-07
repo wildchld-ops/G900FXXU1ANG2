@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +78,6 @@
 # virtual methods
 .method public getHighlightedColor(I)Ljava/lang/Integer;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 

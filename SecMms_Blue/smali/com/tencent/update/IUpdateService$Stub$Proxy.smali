@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public check(Lcom/tencent/update/IBinderCheckListener;)V
     .locals 5
-    .param p1    # Lcom/tencent/update/IBinderCheckListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -117,8 +115,6 @@
 
 .method public setVersionInfo(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -270,7 +266,6 @@
 
 .method public update(Lcom/tencent/update/IBinderUpdateListener;)[B
     .locals 6
-    .param p1    # Lcom/tencent/update/IBinderUpdateListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

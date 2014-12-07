@@ -92,7 +92,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,8 +114,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -141,8 +138,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -201,7 +196,6 @@
 
 .method public setBrowserTerminationCause(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/telephony/cat/CatEventDownload;->mBrowserTerminationCause:I
 
@@ -210,7 +204,6 @@
 
 .method public setEvent(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/telephony/cat/CatEventDownload;->mEvent:I
 
@@ -219,7 +212,6 @@
 
 .method public setLenguage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/internal/telephony/cat/CatEventDownload;->mLanguage:Ljava/lang/String;
 
@@ -228,8 +220,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/android/internal/telephony/cat/CatEventDownload;->mEvent:I
 

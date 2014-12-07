@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,8 +30,6 @@
 # virtual methods
 .method public apply(Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/common/format/PrefixHighlighter;->mImpl:Lcom/android/contacts/common/format/PrefixHighlighterImpl;
 
@@ -47,9 +44,6 @@
 
 .method public setText(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p2, p3}, Lcom/android/contacts/common/format/PrefixHighlighter;->apply(Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/CharSequence;
 

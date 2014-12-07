@@ -33,7 +33,6 @@
 # virtual methods
 .method public bringToForeground(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -74,7 +73,6 @@
 
 .method public bringToForegroundIgnoreState(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -115,8 +113,6 @@
 
 .method public onAudioModeChange(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     # getter for: Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
@@ -204,7 +200,6 @@
 
 .method public onChangeInContent(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService$1;->this$0:Lcom/android/incallui/CallHandlerService;
 
@@ -237,7 +232,6 @@
 
 .method public onDisconnect(Lcom/android/services/telephony/common/Call;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     :try_start_0
     # getter for: Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
@@ -389,7 +383,6 @@
 
 .method public onHdVoiceStatusChange(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -430,7 +423,6 @@
 
 .method public onHoldCallStateChange(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -471,7 +463,6 @@
 
 .method public onIncoming(Lcom/android/services/telephony/common/Call;Ljava/util/List;)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -557,8 +548,6 @@
 
 .method public onIncomingIconMode(Lcom/android/services/telephony/common/Call;Ljava/util/List;)V
     .locals 6
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Ljava/util/List;
 
     const-string v3, "reject_call_with_message_icon_mode"
 
@@ -681,9 +670,6 @@
 
 .method public onModifyCall(ZILjava/lang/String;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService$1;->this$0:Lcom/android/incallui/CallHandlerService;
 
@@ -722,8 +708,6 @@
 
 .method public onPhotoRingStateChange(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService$1;->this$0:Lcom/android/incallui/CallHandlerService;
 
@@ -752,8 +736,6 @@
 
 .method public onPostDialPause(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService$1;->this$0:Lcom/android/incallui/CallHandlerService;
 
@@ -784,8 +766,6 @@
 
 .method public onPostDialPauseComplete(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService$1;->this$0:Lcom/android/incallui/CallHandlerService;
 
@@ -816,8 +796,6 @@
 
 .method public onPostDialWait(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService$1;->this$0:Lcom/android/incallui/CallHandlerService;
 
@@ -848,7 +826,6 @@
 
 .method public onSupportedAudioModeChange(I)V
     .locals 6
-    .param p1    # I
 
     :try_start_0
     # getter for: Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
@@ -1008,7 +985,6 @@
 
 .method public onVoicePrivacyModeChange(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1075,7 +1051,6 @@
 
 .method public startCallService(Lcom/android/services/telephony/common/ICallCommandService;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/ICallCommandService;
 
     :try_start_0
     # getter for: Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;

@@ -61,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PenHovering;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PenHovering;
 
     invoke-direct {p0}, Lcom/android/settings/PenHovering;->updatePenHoveringSaving()V
 
@@ -508,7 +507,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -517,9 +515,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v0, "PenHovering"
 
@@ -558,7 +553,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "PenHovering"
 
@@ -688,8 +682,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -698,8 +690,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

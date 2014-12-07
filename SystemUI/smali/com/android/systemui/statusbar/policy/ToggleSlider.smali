@@ -56,7 +56,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -67,8 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -79,9 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 25
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct/range {p0 .. p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -1349,8 +1343,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/policy/ToggleSlider;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mIsTogglePressed:Z
 
@@ -1359,7 +1351,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/ToggleSlider;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mToggle:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1368,8 +1359,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/ToggleSlider;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/ToggleSlider;->adjustProgress(I)V
 
@@ -1378,7 +1367,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/ToggleSlider;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
@@ -1387,7 +1375,6 @@
 
 .method private adjustProgress(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1400,8 +1387,6 @@
 
 .method private updateIcon(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     sget-boolean v0, Lcom/android/systemui/statusbar/Feature;->mUseAnimatedBrightnessIcon:Z
 
@@ -1506,8 +1491,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 4
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -1652,7 +1635,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mLabel:Landroid/widget/TextView;
 
@@ -1673,9 +1655,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 4
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mListener:Lcom/android/systemui/statusbar/policy/ToggleSlider$Listener;
 
@@ -1731,9 +1710,6 @@
 
 .method public onProgressChanged(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;IZ)V
     .locals 11
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v10, 0x1
 
@@ -2042,7 +2018,6 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 4
-    .param p1    # Landroid/widget/SeekBar;
 
     const/4 v0, 0x1
 
@@ -2074,7 +2049,6 @@
 
 .method public onStartTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 4
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     const/4 v0, 0x1
 
@@ -2106,7 +2080,6 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 4
-    .param p1    # Landroid/widget/SeekBar;
 
     const/4 v0, 0x0
 
@@ -2138,7 +2111,6 @@
 
 .method public onStopTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 4
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     const/4 v0, 0x0
 
@@ -2170,7 +2142,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mToggle:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -2181,7 +2152,6 @@
 
 .method public setMax(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 
@@ -2192,7 +2162,6 @@
 
 .method public setOnChangedListener(Lcom/android/systemui/statusbar/policy/ToggleSlider$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/policy/ToggleSlider$Listener;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mListener:Lcom/android/systemui/statusbar/policy/ToggleSlider$Listener;
 
@@ -2201,7 +2170,6 @@
 
 .method public setSplitMax(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mTwSlider:Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
@@ -2212,7 +2180,6 @@
 
 .method public setSplitText(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -2406,7 +2373,6 @@
 
 .method public setSplitValue(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mTwSlider:Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
@@ -2417,7 +2383,6 @@
 
 .method public setValue(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/ToggleSlider;->mSlider:Landroid/widget/SeekBar;
 

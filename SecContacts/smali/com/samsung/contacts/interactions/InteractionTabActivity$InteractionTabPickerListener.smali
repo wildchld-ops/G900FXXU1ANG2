@@ -42,7 +42,6 @@
 
 .method public onInteractionDoneButtonStateUpdated(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$InteractionTabPickerListener;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
@@ -53,8 +52,6 @@
 
 .method public onInteractionSelectionChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "InteractionTabActivity"
 
@@ -319,7 +316,6 @@
 
 .method public onRecentListAction(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$InteractionTabPickerListener;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
@@ -330,7 +326,6 @@
 
 .method public onSingleSelectionAction(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$InteractionTabPickerListener;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
@@ -380,8 +375,6 @@
 
 .method public onSpeedDialSelectionAction(Landroid/net/Uri;J)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$InteractionTabPickerListener;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 

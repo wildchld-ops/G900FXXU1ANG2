@@ -29,11 +29,6 @@
 # direct methods
 .method private constructor <init>(JLandroid/net/Uri;IZLcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;
 
     iget-wide v0, p0, Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;->mId:J
 
@@ -61,9 +55,6 @@
 
 .method public static createFromThumbnailId(JZLcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;)Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;
     .locals 7
-    .param p0    # J
-    .param p2    # Z
-    .param p3    # Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
 
     new-instance v0, Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;
 
@@ -84,10 +75,6 @@
 
 .method public static createFromUri(Landroid/net/Uri;IZLcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;)Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;
     .locals 7
-    .param p0    # Landroid/net/Uri;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
 
     new-instance v0, Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;
 
@@ -110,8 +97,6 @@
 # virtual methods
 .method public applyDefaultImage(Landroid/widget/ImageView;J)V
     .locals 6
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/contacts/common/ContactPhotoManagerImpl$Request;->mDefaultProvider:Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
 
@@ -130,7 +115,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

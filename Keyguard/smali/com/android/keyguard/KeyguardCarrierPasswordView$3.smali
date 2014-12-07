@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/KeyguardCarrierPasswordView;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView$3;->this$0:Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
@@ -63,7 +61,6 @@
 
 .method public onTick(J)V
     .locals 3
-    .param p1    # J
 
     const/4 v2, 0x1
 

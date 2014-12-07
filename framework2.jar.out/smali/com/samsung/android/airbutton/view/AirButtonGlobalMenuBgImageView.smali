@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -156,7 +155,6 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuBgImageView;->mImageBoundary:Landroid/graphics/RectF;
 
@@ -210,7 +208,6 @@
 
 .method public setAnimationArc(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuBgImageView;->mCurrentAnimatingArc:F
 
@@ -221,8 +218,6 @@
 
 .method public startCloseAnimation(ILandroid/animation/Animator$AnimatorListener;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/animation/Animator$AnimatorListener;
 
     invoke-direct {p0}, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuBgImageView;->initVariables()V
 
@@ -287,7 +282,6 @@
 
 .method public startOpenAnimation(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuBgImageView;->initVariables()V
 

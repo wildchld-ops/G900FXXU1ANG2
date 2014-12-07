@@ -18,7 +18,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,60 +28,48 @@
 # virtual methods
 .method public debug(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public debug(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     return-void
 .end method
 
 .method public error(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public error(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     return-void
 .end method
 
 .method public fatal(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public fatal(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     return-void
 .end method
 
 .method public info(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public info(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     return-void
 .end method
@@ -137,30 +124,24 @@
 
 .method public trace(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public trace(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     return-void
 .end method
 
 .method public warn(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public warn(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     return-void
 .end method

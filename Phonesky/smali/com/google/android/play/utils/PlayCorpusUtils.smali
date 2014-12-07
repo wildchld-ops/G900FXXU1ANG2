@@ -6,8 +6,6 @@
 # direct methods
 .method public static getPlayActionButtonBackgroundDrawable(Landroid/content/Context;I)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -57,8 +55,6 @@
 
 .method public static getPrimaryTextColor(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

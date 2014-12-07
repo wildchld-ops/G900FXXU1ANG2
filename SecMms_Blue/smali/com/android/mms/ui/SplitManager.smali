@@ -106,11 +106,6 @@
 
 .method public constructor <init>(Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lcom/android/mms/ui/BoxListViewActivity;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/View;
-    .param p5    # Lcom/android/mms/ui/BoxListViewActivity;
 
     const/4 v1, 0x1
 
@@ -157,11 +152,6 @@
 
 .method public constructor <init>(Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lcom/android/mms/ui/ConversationComposer;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/View;
-    .param p5    # Lcom/android/mms/ui/ConversationComposer;
 
     const/4 v4, 0x1
 
@@ -266,7 +256,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SplitManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SplitManager;->mOnAnimate:Z
 
@@ -275,8 +264,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/SplitManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SplitManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SplitManager;->mOnAnimate:Z
 
@@ -285,7 +272,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SplitManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mStartX:I
 
@@ -294,8 +280,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/SplitManager;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SplitManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SplitManager;->mStartX:I
 
@@ -304,8 +288,6 @@
 
 .method static synthetic access$112(Lcom/android/mms/ui/SplitManager;I)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
-    .param p1    # I
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mStartX:I
 
@@ -318,7 +300,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SplitManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mEndX:I
 
@@ -327,7 +308,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SplitManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SplitManager;->mUseSplitMode:Z
 
@@ -336,7 +316,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/SplitManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mX:I
 
@@ -345,7 +324,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SplitManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mWidth:I
 
@@ -354,7 +332,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SplitManager;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SplitManager;->mLeftView:Landroid/view/View;
 
@@ -363,7 +340,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/SplitManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mOffset:I
 
@@ -372,7 +348,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/SplitManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mCount:I
 
@@ -381,8 +356,6 @@
 
 .method static synthetic access$828(Lcom/android/mms/ui/SplitManager;I)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
-    .param p1    # I
 
     iget v0, p0, Lcom/android/mms/ui/SplitManager;->mCount:I
 
@@ -395,7 +368,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/SplitManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SplitManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SplitManager;->animationLayout()Z
 
@@ -483,7 +455,6 @@
 # virtual methods
 .method public UpdateSplitPosition(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -996,7 +967,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SplitManager;->mIsAnimationEnable:Z
 
@@ -1005,8 +975,6 @@
 
 .method public setSplitMode(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v6, 0x8
 
@@ -1215,7 +1183,6 @@
 
 .method public setUseSplitMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v2, -0x1
 
@@ -1286,7 +1253,6 @@
 
 .method public setWidth(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SplitManager;->mWidth:I
 

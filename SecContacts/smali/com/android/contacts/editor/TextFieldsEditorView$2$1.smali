@@ -61,7 +61,6 @@
 
 .method public setExtfullyOccupiedCaseLen(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/editor/TextFieldsEditorView$2$1;->this$1:Lcom/android/contacts/editor/TextFieldsEditorView$2;
 
@@ -75,7 +74,6 @@
 
 .method public setTotalTextByte(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/editor/TextFieldsEditorView$2$1;->this$1:Lcom/android/contacts/editor/TextFieldsEditorView$2;
 

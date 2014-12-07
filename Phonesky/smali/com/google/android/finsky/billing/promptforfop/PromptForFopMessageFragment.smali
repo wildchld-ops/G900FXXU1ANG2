@@ -25,9 +25,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;I)Lcom/google/android/finsky/billing/promptforfop/PromptForFopMessageFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -74,7 +71,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopMessageFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -113,9 +109,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v4, 0x7f040108
 

@@ -6,7 +6,6 @@
 # direct methods
 .method public static secureHash([B)Ljava/lang/String;
     .locals 2
-    .param p0    # [B
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/Md5Util;->secureHashBytes([B)[B
 
@@ -23,7 +22,6 @@
 
 .method public static secureHashBytes([B)[B
     .locals 3
-    .param p0    # [B
 
     :try_start_0
     const-string v2, "MD5"

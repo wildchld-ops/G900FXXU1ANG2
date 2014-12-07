@@ -35,7 +35,6 @@
 
 .method static update(Landroid/content/Context;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 

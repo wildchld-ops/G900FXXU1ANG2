@@ -86,7 +86,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 3
-    .param p1    # Ljava/lang/StringBuffer;
 
     const/4 v2, 0x1
 
@@ -172,7 +171,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 
@@ -425,7 +423,6 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -538,7 +535,6 @@
 
 .method public removeParameter(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lgov/nist/javax/sip/address/AddressImpl;->address:Lgov/nist/javax/sip/address/GenericURI;
 
@@ -566,7 +562,6 @@
 
 .method public setAddess(Ljavax/sip/address/URI;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 
@@ -577,7 +572,6 @@
 
 .method public setAddressType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lgov/nist/javax/sip/address/AddressImpl;->addressType:I
 
@@ -586,7 +580,6 @@
 
 .method public setDisplayName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/AddressImpl;->displayName:Ljava/lang/String;
 
@@ -599,7 +592,6 @@
 
 .method public setURI(Ljavax/sip/address/URI;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 
@@ -610,7 +602,6 @@
 
 .method public setUser(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/AddressImpl;->address:Lgov/nist/javax/sip/address/GenericURI;
 

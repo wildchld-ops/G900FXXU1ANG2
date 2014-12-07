@@ -130,9 +130,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/gson/FieldNamingPolicy$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/gson/FieldNamingPolicy$1;
 
     invoke-direct {p0, p1, p2}, Lcom/google/gson/FieldNamingPolicy;-><init>(Ljava/lang/String;I)V
 
@@ -141,7 +138,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/gson/FieldNamingPolicy;->upperCaseFirstLetter(Ljava/lang/String;)Ljava/lang/String;
 
@@ -152,8 +148,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/google/gson/FieldNamingPolicy;->separateCamelCase(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -164,9 +158,6 @@
 
 .method private static modifyString(CLjava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # C
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -207,8 +198,6 @@
 
 .method private static separateCamelCase(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -258,7 +247,6 @@
 
 .method private static upperCaseFirstLetter(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -341,7 +329,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/gson/FieldNamingPolicy;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/gson/FieldNamingPolicy;
 

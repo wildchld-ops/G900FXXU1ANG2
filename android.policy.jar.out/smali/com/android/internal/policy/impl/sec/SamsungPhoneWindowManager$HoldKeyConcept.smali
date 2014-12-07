@@ -171,7 +171,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;->mKeyComponentsMap:Ljava/util/HashMap;
 
@@ -204,7 +203,6 @@
 
 .method public isSystemKeyEventRequested(I)Z
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -233,8 +231,6 @@
 
 .method public isSystemKeyEventRequested(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     monitor-enter p0
 
@@ -320,9 +316,6 @@
 
 .method public requestSystemKeyEvent(ILandroid/content/ComponentName;Z)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/16 v1, 0x1a
 
@@ -404,7 +397,6 @@
 
 .method public updateTopActivity(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     monitor-enter p0
 

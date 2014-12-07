@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/HttpTransportMetrics;Lorg/apache/http/io/HttpTransportMetrics;)V
     .locals 2
-    .param p1    # Lorg/apache/http/io/HttpTransportMetrics;
-    .param p2    # Lorg/apache/http/io/HttpTransportMetrics;
 
     const-wide/16 v0, 0x0
 
@@ -53,7 +51,6 @@
 # virtual methods
 .method public getMetric(Ljava/lang/String;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -292,8 +289,6 @@
 
 .method public setMetric(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lorg/apache/http/impl/HttpConnectionMetricsImpl;->metricsCache:Ljava/util/HashMap;
 

@@ -1379,7 +1379,7 @@ Voit myös näyttää tai piilottaa moni-ikkunan kahvan pitämällä paluunäpp�
     <string name="usb_tethering_errored_subtext">USB-yhteysvirhe</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB-yhteyden jakamista ei voi poistaa käytöstä SideSyncin käytön aikana. USB-yhteyden jakamisen poistaminen käytöstä poistaa SideSyncin käytöstä.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB-yhteyden jakamista ei voi ottaa käyttöön SideSyncin käytön aikana. USB-yhteyden jakamisen ottaminen käyttöön poistaa SideSyncin käytöstä.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-yhteys</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-yhteys</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Jaetaan laitteen Internet-yhteyttä…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Laitteen Internet-yhteys jaettu 1 laitteen kanssa</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Laitteen Internet-yhteys jaettu %d laitteen kanssa</string>

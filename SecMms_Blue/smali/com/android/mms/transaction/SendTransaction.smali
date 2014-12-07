@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -71,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/SendTransaction;)Landroid/net/http/AndroidHttpClient;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SendTransaction;
 
     iget-object v0, p0, Lcom/android/mms/transaction/SendTransaction;->httpClient:Landroid/net/http/AndroidHttpClient;
 
@@ -80,8 +75,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/transaction/SendTransaction;Landroid/net/http/AndroidHttpClient;)Landroid/net/http/AndroidHttpClient;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SendTransaction;
-    .param p1    # Landroid/net/http/AndroidHttpClient;
 
     iput-object p1, p0, Lcom/android/mms/transaction/SendTransaction;->httpClient:Landroid/net/http/AndroidHttpClient;
 
@@ -90,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/SendTransaction;)Lorg/apache/http/client/methods/HttpRequestBase;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SendTransaction;
 
     iget-object v0, p0, Lcom/android/mms/transaction/SendTransaction;->post:Lorg/apache/http/client/methods/HttpRequestBase;
 

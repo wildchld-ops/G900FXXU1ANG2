@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;-><init>(II)V
 
@@ -22,9 +20,6 @@
 # virtual methods
 .method public bridge synthetic addTile(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;II)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/play/PlayCardSingleCardClusterMetadata;->addTile(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;II)Lcom/google/android/finsky/layout/play/PlayCardSingleCardClusterMetadata;
 
@@ -35,9 +30,6 @@
 
 .method public addTile(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;II)Lcom/google/android/finsky/layout/play/PlayCardSingleCardClusterMetadata;
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;
-    .param p2    # I
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;->addTile(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;II)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
 
@@ -54,7 +46,6 @@
 
 .method public withMerchImageHSpan(I)Lcom/google/android/finsky/layout/play/PlayCardSingleCardClusterMetadata;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/play/PlayCardSingleCardClusterMetadata;->mMerchImageHSpan:I
 

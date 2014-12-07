@@ -6,7 +6,6 @@
 # direct methods
 .method public static toString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

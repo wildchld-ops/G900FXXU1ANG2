@@ -87,7 +87,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/utils/DocUtils$OfferFilter;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/utils/DocUtils$OfferFilter;
 
@@ -118,7 +117,6 @@
 # virtual methods
 .method public matches(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 

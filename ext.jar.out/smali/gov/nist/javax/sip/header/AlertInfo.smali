@@ -178,7 +178,6 @@
 
 .method public setAlertInfo(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/AlertInfo;->string:Ljava/lang/String;
 
@@ -187,7 +186,6 @@
 
 .method public setAlertInfo(Ljavax/sip/address/URI;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 

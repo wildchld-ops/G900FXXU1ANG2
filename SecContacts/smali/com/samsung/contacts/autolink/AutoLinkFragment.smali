@@ -193,7 +193,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/autolink/AutoLinkFragment;)Lcom/samsung/contacts/autolink/AutoLinkActivity$AutoLinkListner;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mListener:Lcom/samsung/contacts/autolink/AutoLinkActivity$AutoLinkListner;
 
@@ -202,7 +201,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/autolink/AutoLinkFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/autolink/AutoLinkFragment;->doneAction()V
 
@@ -211,7 +209,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/autolink/AutoLinkFragment;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mIdIndex:Ljava/util/HashMap;
 
@@ -220,8 +217,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/autolink/AutoLinkFragment;J)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/autolink/AutoLinkFragment;->getIdIndex(J)[Ljava/lang/String;
 
@@ -232,7 +227,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/autolink/AutoLinkFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mAutoLinkMembers:Ljava/util/ArrayList;
 
@@ -241,9 +235,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/autolink/AutoLinkFragment;Ljava/lang/String;Lcom/samsung/contacts/autolink/AutoLinkContactChildData;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/contacts/autolink/AutoLinkContactChildData;
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/autolink/AutoLinkFragment;->addAccountInformation(Ljava/lang/String;Lcom/samsung/contacts/autolink/AutoLinkContactChildData;)V
 
@@ -252,7 +243,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/autolink/AutoLinkFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/autolink/AutoLinkFragment;->setCheckItemList()V
 
@@ -261,7 +251,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/autolink/AutoLinkFragment;)Lcom/samsung/contacts/autolink/AutoLinkListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/autolink/AutoLinkFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mAdapter:Lcom/samsung/contacts/autolink/AutoLinkListAdapter;
 
@@ -270,8 +259,6 @@
 
 .method private addAccountInformation(Ljava/lang/String;Lcom/samsung/contacts/autolink/AutoLinkContactChildData;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/contacts/autolink/AutoLinkContactChildData;
 
     if-eqz p1, :cond_0
 
@@ -307,7 +294,6 @@
 
 .method private checkIsEmpty(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mViewCreated:Z
 
@@ -367,7 +353,6 @@
 
 .method private doSelectCheckBox(Lcom/samsung/contacts/autolink/AutoLinkData;)V
     .locals 13
-    .param p1    # Lcom/samsung/contacts/autolink/AutoLinkData;
 
     const v12, 0x7f0e0385
 
@@ -1260,7 +1245,6 @@
 
 .method private getIdIndex(J)[Ljava/lang/String;
     .locals 4
-    .param p1    # J
 
     iget-object v2, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mIdIndex:Ljava/util/HashMap;
 
@@ -2525,8 +2509,6 @@
 
 .method private putIdIndex(JI)V
     .locals 3
-    .param p1    # J
-    .param p3    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mIdIndex:Ljava/util/HashMap;
 
@@ -2881,7 +2863,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -2892,7 +2873,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -3000,8 +2980,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3152,8 +3130,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     iget-object v2, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mListener:Lcom/samsung/contacts/autolink/AutoLinkActivity$AutoLinkListner;
 
@@ -3207,9 +3183,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -3253,9 +3226,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3366,10 +3336,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 3
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-super/range {p0 .. p5}, Landroid/app/ListFragment;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
@@ -3402,7 +3368,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 4
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3528,8 +3493,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -3540,7 +3503,6 @@
 
 .method public onLoaderReset(Landroid/content/Loader;)V
     .locals 3
-    .param p1    # Landroid/content/Loader;
 
     const-string v0, "AutoLinkFragment"
 
@@ -3588,7 +3550,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mCheckItemList:Ljava/util/ArrayList;
 
@@ -3662,8 +3623,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/ListFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -3760,7 +3719,6 @@
 
 .method public setListener(Lcom/samsung/contacts/autolink/AutoLinkActivity$AutoLinkListner;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/autolink/AutoLinkActivity$AutoLinkListner;
 
     iput-object p1, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment;->mListener:Lcom/samsung/contacts/autolink/AutoLinkActivity$AutoLinkListner;
 
@@ -3769,9 +3727,6 @@
 
 .method public startSecondaryQuery(ILandroid/net/Uri;[Ljava/lang/String;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # [Ljava/lang/String;
 
     const/16 v10, 0x1e
 

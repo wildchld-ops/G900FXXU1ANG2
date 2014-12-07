@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/activities/ActionBarAdapter;Lcom/android/contacts/activities/ActionBarAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/activities/ActionBarAdapter;
-    .param p2    # Lcom/android/contacts/activities/ActionBarAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/ActionBarAdapter$MyTabListener;-><init>(Lcom/android/contacts/activities/ActionBarAdapter;)V
 
@@ -46,8 +44,6 @@
 
 .method private updateTabStyle(Landroid/app/ActionBar$Tab;Z)V
     .locals 3
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/app/ActionBar$Tab;->getCustomView()Landroid/view/View;
 
@@ -87,16 +83,12 @@
 # virtual methods
 .method public onTabReselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 0
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     return-void
 .end method
 
 .method public onTabSelected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 5
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     const/4 v4, 0x1
 
@@ -225,8 +217,6 @@
 
 .method public onTabUnselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 4
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     const/4 v3, 0x0
 

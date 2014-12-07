@@ -48,8 +48,6 @@
 
 .method private static varargs buildMessage(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     if-nez p1, :cond_1
 
@@ -205,8 +203,6 @@
 
 .method public static varargs d(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     sget-object v0, Lcom/android/volley/VolleyLog;->TAG:Ljava/lang/String;
 
@@ -221,8 +217,6 @@
 
 .method public static varargs e(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     sget-object v0, Lcom/android/volley/VolleyLog;->TAG:Ljava/lang/String;
 
@@ -237,9 +231,6 @@
 
 .method public static varargs e(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/Throwable;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     sget-object v0, Lcom/android/volley/VolleyLog;->TAG:Ljava/lang/String;
 
@@ -254,8 +245,6 @@
 
 .method public static varargs v(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/android/volley/VolleyLog;->DEBUG:Z
 
@@ -275,8 +264,6 @@
 
 .method public static varargs wtf(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     sget-object v0, Lcom/android/volley/VolleyLog;->TAG:Ljava/lang/String;
 

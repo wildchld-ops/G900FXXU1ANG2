@@ -190,8 +190,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/WirelessSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/WirelessSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/WirelessSettings;->updateSmartBondingState(Z)V
 
@@ -200,8 +198,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/WirelessSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/WirelessSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/WirelessSettings;->log(Ljava/lang/String;)V
 
@@ -210,8 +206,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/WirelessSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/WirelessSettings;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/WirelessSettings;->mManageMobilePlanMessage:Ljava/lang/String;
 
@@ -220,7 +214,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/WirelessSettings;)Lcom/android/settings/SmartNetworkPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/WirelessSettings;
 
     iget-object v0, p0, Lcom/android/settings/WirelessSettings;->mButtonSmartNetworkEnabled:Lcom/android/settings/SmartNetworkPreference;
 
@@ -229,7 +222,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/WirelessSettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/WirelessSettings;
 
     iget-object v0, p0, Lcom/android/settings/WirelessSettings;->mNfcWallet:Landroid/preference/PreferenceScreen;
 
@@ -238,7 +230,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/WirelessSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/WirelessSettings;
 
     invoke-direct {p0}, Lcom/android/settings/WirelessSettings;->updateSmsApplicationSetting()V
 
@@ -247,7 +238,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/WirelessSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/WirelessSettings;
 
     iget-object v0, p0, Lcom/android/settings/WirelessSettings;->mSmartBonding:Landroid/preference/Preference;
 
@@ -767,8 +757,6 @@
 
 .method public static isRadioAllowed(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -831,7 +819,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "WirelessSettings"
 
@@ -1144,7 +1131,6 @@
 
 .method private updateSmartBondingState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/WirelessSettings;->mSmartBonding:Landroid/preference/Preference;
 
@@ -3192,7 +3178,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3936,8 +3921,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 13
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-static {}, Lcom/android/settings/Utils;->isSearchEnable()Z
 
@@ -4766,7 +4749,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/RestrictedSettingsFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -4809,8 +4791,6 @@
 
 .method startActivityWithCheck(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     if-nez p1, :cond_1
 
@@ -4847,7 +4827,6 @@
 
 .method public updatePreference(Landroid/preference/PreferenceScreen;)V
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     invoke-virtual {p0}, Lcom/android/settings/WirelessSettings;->getActivity()Landroid/app/Activity;
 

@@ -14,7 +14,6 @@
 # direct methods
 .method public static getQuickLinksForStream(Landroid/content/Context;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -146,16 +145,6 @@
 
 .method public static getQuickLinksRow(Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/navigationmanager/NavigationManager;Landroid/view/LayoutInflater;Lcom/google/android/finsky/utils/BitmapLoader;Landroid/view/ViewGroup;Landroid/view/ViewGroup;[Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;IILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View;
     .locals 26
-    .param p0    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Landroid/view/LayoutInflater;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Landroid/view/ViewGroup;
-    .param p5    # Landroid/view/ViewGroup;
-    .param p6    # [Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     if-nez p7, :cond_1
 

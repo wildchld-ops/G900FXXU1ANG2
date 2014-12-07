@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, -0x1
 

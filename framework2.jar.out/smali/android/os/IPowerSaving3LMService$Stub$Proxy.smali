@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public disablePackageWhilePowerSaving(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -97,7 +95,6 @@
 
 .method public enablePackageWhilePowerSaving(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -217,7 +214,6 @@
 
 .method public isPackageDisabledWhilePowerSaving(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -280,7 +276,6 @@
 
 .method public setAllowedPackages(Ljava/util/Map;)Z
     .locals 6
-    .param p1    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -343,7 +338,6 @@
 
 .method public setPowerSavingMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -407,7 +401,6 @@
 
 .method public setisSimulatorPermitted(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

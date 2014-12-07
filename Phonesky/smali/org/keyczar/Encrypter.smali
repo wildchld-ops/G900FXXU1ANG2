@@ -37,7 +37,6 @@
 
 .method public constructor <init>(Lorg/keyczar/interfaces/KeyczarReader;)V
     .locals 1
-    .param p1    # Lorg/keyczar/interfaces/KeyczarReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -59,7 +58,6 @@
 # virtual methods
 .method public ciphertextSize(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -121,7 +119,6 @@
 
 .method public encrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -159,8 +156,6 @@
 
 .method public encrypt(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V
     .locals 12
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -318,7 +313,6 @@
 
 .method public encrypt([B)[B
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -356,7 +350,6 @@
 
 .method isAcceptablePurpose(Lorg/keyczar/enums/KeyPurpose;)Z
     .locals 1
-    .param p1    # Lorg/keyczar/enums/KeyPurpose;
 
     sget-object v0, Lorg/keyczar/enums/KeyPurpose;->ENCRYPT:Lorg/keyczar/enums/KeyPurpose;
 

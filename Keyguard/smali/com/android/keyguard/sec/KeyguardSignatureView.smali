@@ -108,7 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -119,8 +118,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -179,7 +176,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/keyguard/sec/EmergencyCircleView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mEmergencyCircleView:Lcom/android/keyguard/sec/EmergencyCircleView;
 
@@ -188,7 +184,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mRootLayout:Landroid/widget/FrameLayout;
 
@@ -197,7 +192,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mEmergencyCircleText:Landroid/widget/TextView;
 
@@ -206,7 +200,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mEmergencyButton:Landroid/widget/Button;
 
@@ -223,7 +216,6 @@
 
 .method static synthetic access$1302(Lcom/android/keyguard/sec/KeyguardSignatureView$IdentifyState;)Lcom/android/keyguard/sec/KeyguardSignatureView$IdentifyState;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView$IdentifyState;
 
     sput-object p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mState:Lcom/android/keyguard/sec/KeyguardSignatureView$IdentifyState;
 
@@ -248,7 +240,6 @@
 
 .method static synthetic access$1600(Lcom/android/keyguard/sec/KeyguardSignatureView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mTotalFailedSignatureAttempts:I
 
@@ -257,8 +248,6 @@
 
 .method static synthetic access$1602(Lcom/android/keyguard/sec/KeyguardSignatureView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mTotalFailedSignatureAttempts:I
 
@@ -267,7 +256,6 @@
 
 .method static synthetic access$1700(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -276,8 +264,6 @@
 
 .method static synthetic access$1800(Lcom/android/keyguard/sec/KeyguardSignatureView;J)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/KeyguardSignatureView;->handleAttemptLockout(J)V
 
@@ -286,7 +272,6 @@
 
 .method static synthetic access$1900(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -295,7 +280,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -304,7 +288,6 @@
 
 .method static synthetic access$2000(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mServiceConnection:Landroid/content/ServiceConnection;
 
@@ -313,7 +296,6 @@
 
 .method static synthetic access$2100(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -322,8 +304,6 @@
 
 .method static synthetic access$2202(Lcom/android/keyguard/sec/KeyguardSignatureView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mBoundToSignService:Z
 
@@ -332,7 +312,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardSignatureView;)Landroid/widget/ImageButton;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mBackupPIN:Landroid/widget/ImageButton;
 
@@ -341,7 +320,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardSignatureView;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignServiceRunningLock:Ljava/lang/Object;
 
@@ -350,7 +328,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/policy/ISignServiceInterface;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
 
@@ -359,8 +336,6 @@
 
 .method static synthetic access$502(Lcom/android/keyguard/sec/KeyguardSignatureView;Lcom/android/internal/policy/ISignServiceInterface;)Lcom/android/internal/policy/ISignServiceInterface;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
-    .param p1    # Lcom/android/internal/policy/ISignServiceInterface;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignService:Lcom/android/internal/policy/ISignServiceInterface;
 
@@ -369,7 +344,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/internal/widget/SignView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignView:Lcom/android/internal/widget/SignView;
 
@@ -378,7 +352,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/KeyguardSignatureView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mEngineStarted:Z
 
@@ -387,8 +360,6 @@
 
 .method static synthetic access$702(Lcom/android/keyguard/sec/KeyguardSignatureView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mEngineStarted:Z
 
@@ -397,7 +368,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/KeyguardSignatureView;)Lcom/android/keyguard/SecurityMessageDisplay;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
@@ -406,7 +376,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/KeyguardSignatureView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSignatureView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mGuideText:Ljava/lang/String;
 
@@ -415,7 +384,6 @@
 
 .method private handleAttemptLockout(J)V
     .locals 8
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mSignView:Lcom/android/internal/widget/SignView;
 
@@ -596,7 +564,6 @@
 
 .method public hideBouncer(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -958,7 +925,6 @@
 
 .method public onResume(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/sec/KeyguardSignatureView;->reset()V
 
@@ -1058,7 +1024,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -1067,7 +1032,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSignatureView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -1076,7 +1040,6 @@
 
 .method public showBouncer(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

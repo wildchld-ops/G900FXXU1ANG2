@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MmsRichContainer;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer$MessageOnKey;->this$0:Lcom/android/mms/ui/MmsRichContainer;
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 20
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     move-object/from16 v0, p0
 

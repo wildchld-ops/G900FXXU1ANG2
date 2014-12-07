@@ -16,7 +16,6 @@
 # virtual methods
 .method public getCachedLocation(Landroid/content/Context;)Landroid/location/Location;
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const-string v3, "location"
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 1
-    .param p1    # Landroid/location/Location;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationManager$LocationEventListener;->this$0:Lcom/nuance/connect/location/SwypeLocationManager;
 
@@ -48,7 +47,6 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/nuance/connect/location/SwypeLocationManager;->log:Lcom/nuance/connect/util/Logger$Log;
     invoke-static {}, Lcom/nuance/connect/location/SwypeLocationManager;->access$100()Lcom/nuance/connect/util/Logger$Log;
@@ -114,7 +112,6 @@
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/nuance/connect/location/SwypeLocationManager;->log:Lcom/nuance/connect/util/Logger$Log;
     invoke-static {}, Lcom/nuance/connect/location/SwypeLocationManager;->access$100()Lcom/nuance/connect/util/Logger$Log;
@@ -180,9 +177,6 @@
 
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     # getter for: Lcom/nuance/connect/location/SwypeLocationManager;->log:Lcom/nuance/connect/util/Logger$Log;
     invoke-static {}, Lcom/nuance/connect/location/SwypeLocationManager;->access$100()Lcom/nuance/connect/util/Logger$Log;

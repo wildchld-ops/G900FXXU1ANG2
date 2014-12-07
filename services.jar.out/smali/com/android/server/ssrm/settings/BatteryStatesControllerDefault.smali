@@ -92,7 +92,6 @@
 
 .method private createHandler(Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
 
     new-instance v0, Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault$1;
 
@@ -105,8 +104,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -115,7 +112,6 @@
 # virtual methods
 .method public addState(Lcom/android/server/ssrm/settings/BatteryState;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/BatteryState;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault;->mStates:Lcom/android/server/ssrm/settings/SortedArrayList;
 
@@ -199,7 +195,6 @@
 
 .method protected findAndSetActive(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault;->mStates:Lcom/android/server/ssrm/settings/SortedArrayList;
 
@@ -273,7 +268,6 @@
 
 .method protected findStateIndexByTemperature(I)Lcom/android/server/ssrm/settings/BatteryState;
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -360,7 +354,6 @@
 
 .method public getActiveBatteryState(Z)Lcom/android/server/ssrm/settings/BatteryState;
     .locals 5
-    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -432,7 +425,6 @@
 
 .method public removeState(Lcom/android/server/ssrm/settings/BatteryState;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/BatteryState;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault;->mStates:Lcom/android/server/ssrm/settings/SortedArrayList;
 
@@ -448,8 +440,6 @@
 
 .method protected setActiveState(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault;->mStates:Lcom/android/server/ssrm/settings/SortedArrayList;
 

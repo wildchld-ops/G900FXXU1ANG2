@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b012a
 
@@ -102,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/TouchSensitivityQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/TouchSensitivityQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/TouchSensitivityQuickSettingButton;->getTouchSensitivityEnabled()Z
 
@@ -141,7 +139,6 @@
 
 .method private setTouchSensitivityEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/TouchSensitivityQuickSettingButton;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -210,7 +207,6 @@
 
 .method public onClick(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 

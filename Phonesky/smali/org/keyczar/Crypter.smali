@@ -37,7 +37,6 @@
 
 .method public constructor <init>(Lorg/keyczar/interfaces/KeyczarReader;)V
     .locals 1
-    .param p1    # Lorg/keyczar/interfaces/KeyczarReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -59,7 +58,6 @@
 # virtual methods
 .method isAcceptablePurpose(Lorg/keyczar/enums/KeyPurpose;)Z
     .locals 1
-    .param p1    # Lorg/keyczar/enums/KeyPurpose;
 
     sget-object v0, Lorg/keyczar/enums/KeyPurpose;->DECRYPT_AND_ENCRYPT:Lorg/keyczar/enums/KeyPurpose;
 

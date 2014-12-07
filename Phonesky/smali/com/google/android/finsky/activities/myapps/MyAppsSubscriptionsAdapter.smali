@@ -87,10 +87,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/LayoutInflater;Lcom/google/android/finsky/utils/BitmapLoader;Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/LayoutInflater;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Landroid/view/View$OnClickListener;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -123,9 +119,6 @@
 # virtual methods
 .method public addEntry(Lcom/google/android/finsky/library/LibraryInAppSubscriptionEntry;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/Document;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/library/LibraryInAppSubscriptionEntry;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsAdapter;->mSubscriptions:Ljava/util/List;
 
@@ -166,7 +159,6 @@
 
 .method public getDocument(I)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsAdapter;->mSubscriptions:Ljava/util/List;
 
@@ -183,7 +175,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsAdapter;->mSubscriptions:Ljava/util/List;
 
@@ -200,7 +191,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -209,9 +199,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 25
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_1
 

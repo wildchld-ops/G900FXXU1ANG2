@@ -59,9 +59,6 @@
 # virtual methods
 .method public createStorage(Landroid/content/Context;II)Landroid/os/storage/SaltStorage;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     iput p2, p0, Landroid/os/storage/SaltStorageFactory;->mDeviceType:I
 

@@ -113,8 +113,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/net/wifi/Hs20ScanResult;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/Hs20ScanResult;
 
     const/4 v0, 0x0
 
@@ -147,7 +145,6 @@
 
 .method private static getPskType(Landroid/net/wifi/ScanResult;)Lcom/android/settings/wifi/hs20/Hs20AccessPoint$PskType;
     .locals 5
-    .param p0    # Landroid/net/wifi/ScanResult;
 
     iget-object v2, p0, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
@@ -220,7 +217,6 @@
 
 .method private static getSecurity(Landroid/net/wifi/ScanResult;)I
     .locals 3
-    .param p0    # Landroid/net/wifi/ScanResult;
 
     const/4 v0, 0x3
 
@@ -283,7 +279,6 @@
 
 .method private loadResult(Landroid/net/wifi/Hs20ScanResult;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/Hs20ScanResult;
 
     const/4 v2, 0x2
 
@@ -774,7 +769,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 6
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v3, 0x1
 
@@ -884,7 +878,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -923,7 +916,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const v7, 0x1020016
 
@@ -1092,7 +1084,6 @@
 
 .method public update(Landroid/net/wifi/WifiInfo;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiInfo;
 
     iget-object v1, p0, Lcom/android/settings/wifi/hs20/Hs20AccessPoint;->mInfo:Landroid/net/wifi/WifiInfo;
 
@@ -1124,8 +1115,6 @@
 
 .method update(Landroid/net/wifi/WifiInfo;Landroid/net/NetworkInfo$DetailedState;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiInfo;
-    .param p2    # Landroid/net/NetworkInfo$DetailedState;
 
     const/4 v1, 0x1
 

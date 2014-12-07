@@ -243,10 +243,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;ZI)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v3, 0x1
 
@@ -311,7 +307,6 @@
 
 .method private adjustListItemLayout(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/16 v5, 0xa
 
@@ -400,8 +395,6 @@
 
 .method private static getKey(Ljava/lang/String;J)J
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     const-string v0, "mms"
 
@@ -419,9 +412,6 @@
 
 .method private static getMmsSubject(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -456,9 +446,6 @@
 
 .method private updateAvatar(Landroid/content/Context;Ljava/lang/String;J)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v7, 0x1
 
@@ -717,7 +704,6 @@
 # virtual methods
 .method public addRecipients(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListAdapter;->mRecipients:Ljava/util/ArrayList;
 
@@ -741,9 +727,6 @@
 
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 37
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v5, 0x0
 
@@ -2189,7 +2172,6 @@
 
 .method public changeFontSize(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v10, 0x7
 
@@ -2493,8 +2475,6 @@
 
 .method public checkedListAdd(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/mms/ui/BoxListAdapter$MessageData;
 
@@ -2511,8 +2491,6 @@
 
 .method public checkedListContains(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/mms/ui/BoxListAdapter$MessageData;
 
@@ -2529,8 +2507,6 @@
 
 .method public checkedListRemove(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/mms/ui/BoxListAdapter$MessageData;
 
@@ -2557,10 +2533,6 @@
 
 .method public getBoxId(IIII)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/ui/BoxListAdapter;->isGroupSms(II)Z
 
@@ -2579,8 +2551,6 @@
 
 .method public getCachedMessageItem(JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 12
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2747,9 +2717,6 @@
 
 .method public getCachedMessageItemWpm(Landroid/net/Uri;JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 10
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3034,7 +3001,6 @@
 
 .method public getRecipientName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3066,7 +3032,6 @@
 
 .method public getRecipientString(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x3b
 
@@ -3195,8 +3160,6 @@
 
 .method public isCheckedMsgId(JLjava/lang/String;)Z
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/mms/ui/BoxListAdapter;->checkedListContains(JLjava/lang/String;)Z
 
@@ -3207,10 +3170,6 @@
 
 .method public isFailedSms(IIII)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/BoxListAdapter;->getBoxId(IIII)I
 
@@ -3233,8 +3192,6 @@
 
 .method public isGroupSms(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     if-ne p1, p2, :cond_0
 
@@ -3251,9 +3208,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListAdapter;->mFactory:Landroid/view/LayoutInflater;
 
@@ -3300,7 +3254,6 @@
 
 .method public onMovedToScrapHeap(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -3386,7 +3339,6 @@
 
 .method public refreshFontSize(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/mms/ui/MessagingPreferenceActivity;->getSystemFontSizeIndex(Landroid/content/Context;)I
 
@@ -3411,8 +3363,6 @@
 
 .method public setChecked(JLjava/lang/String;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/mms/ui/BoxListAdapter;->checkedListContains(JLjava/lang/String;)Z
 
@@ -3431,7 +3381,6 @@
 
 .method public setDeleteMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListAdapter;->mUseCheckbox:Z
 
@@ -3449,8 +3398,6 @@
 
 .method public setListItemSelected(JLjava/lang/String;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListAdapter;->mSelectedMsg:Lcom/android/mms/ui/BoxListAdapter$MessageData;
 
@@ -3475,7 +3422,6 @@
 
 .method public setListType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/BoxListAdapter;->mListType:I
 
@@ -3484,7 +3430,6 @@
 
 .method public setMultiMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListAdapter;->mIsMultiMode:Z
 
@@ -3498,7 +3443,6 @@
 
 .method public setMultiModeforBind(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListAdapter;->mIsMultiMode:Z
 
@@ -3527,7 +3471,6 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/ui/BoxListAdapter$OnContentChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/BoxListAdapter$OnContentChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListAdapter;->mOnContentChangedListener:Lcom/android/mms/ui/BoxListAdapter$OnContentChangedListener;
 
@@ -3536,7 +3479,6 @@
 
 .method public setSplitMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListAdapter;->mIsSplitMode:Z
 
@@ -3545,8 +3487,6 @@
 
 .method public toggleCheckBox(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/mms/ui/BoxListAdapter;->checkedListContains(JLjava/lang/String;)Z
 
@@ -3577,8 +3517,6 @@
 
 .method public updateRecipients(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/ui/BoxListAdapter;->mAddress:Landroid/widget/TextView;
 

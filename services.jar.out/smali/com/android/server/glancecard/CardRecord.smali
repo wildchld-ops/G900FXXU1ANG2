@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public declared-synchronized addCard(Lcom/samsung/android/glancecard/GlanceCardInfo;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/glancecard/GlanceCardInfo;
 
     monitor-enter p0
 
@@ -93,7 +91,6 @@
 
 .method public equals(Landroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     if-nez p1, :cond_0
 
@@ -131,7 +128,6 @@
 
 .method public declared-synchronized removeCard(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -185,7 +181,6 @@
 
 .method public declared-synchronized removeGroup(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 

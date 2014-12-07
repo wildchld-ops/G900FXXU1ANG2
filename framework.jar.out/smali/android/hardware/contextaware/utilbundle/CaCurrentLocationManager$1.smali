@@ -36,7 +36,6 @@
 # virtual methods
 .method public final onLocationChanged(Landroid/location/Location;)V
     .locals 12
-    .param p1    # Landroid/location/Location;
 
     invoke-virtual {p1}, Landroid/location/Location;->getAccuracy()F
 
@@ -123,7 +122,6 @@
 
 .method public final onProviderDisabled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Location service is disabled"
 
@@ -134,7 +132,6 @@
 
 .method public final onProviderEnabled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Location service is enabled"
 
@@ -145,9 +142,6 @@
 
 .method public final onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     packed-switch p2, :pswitch_data_0
 

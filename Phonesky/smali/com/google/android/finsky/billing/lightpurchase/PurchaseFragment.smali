@@ -80,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->onInitialized()V
 
@@ -89,8 +88,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->mDcbInitialized:Z
 
@@ -152,7 +149,6 @@
 
 .method private fail(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;
 
     const-string v0, "Purchase failed: %s"
 
@@ -379,7 +375,6 @@
 
 .method private initializeDcb(Ljava/lang/Runnable;)V
     .locals 4
-    .param p1    # Ljava/lang/Runnable;
 
     const/4 v3, 0x0
 
@@ -423,10 +418,6 @@
 
 .method public static newInstance(Landroid/accounts/Account;Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;[BLandroid/os/Bundle;)Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
-    .param p2    # [B
-    .param p3    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -701,8 +692,6 @@
 
 .method private showError(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const v1, 0x7f09014b
 
@@ -721,7 +710,6 @@
 
 .method private startChallenge(Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
 
     const/4 v5, 0x0
 
@@ -828,7 +816,6 @@
 # virtual methods
 .method public answerChallenge(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->mPurchaseFragment:Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
@@ -941,7 +928,6 @@
 
 .method public expand(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1066,7 +1052,6 @@
 
 .method public isDismissable(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1214,9 +1199,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1268,7 +1250,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1290,7 +1271,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1428,9 +1408,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040086
 
@@ -1469,7 +1446,6 @@
 
 .method public onDownloadOk(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->mParams:Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
 
@@ -1517,7 +1493,6 @@
 
 .method public onFlowCanceled(Lcom/google/android/finsky/billing/BillingFlowFragment;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->isResumed()Z
 
@@ -1546,8 +1521,6 @@
 
 .method public onFlowError(Lcom/google/android/finsky/billing/BillingFlowFragment;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->isResumed()Z
 
@@ -1580,8 +1553,6 @@
 
 .method public onFlowFinished(Lcom/google/android/finsky/billing/BillingFlowFragment;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;->isResumed()Z
 
@@ -1612,7 +1583,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1717,7 +1687,6 @@
 
 .method public onStateChange(Lcom/google/android/finsky/fragments/SidecarFragment;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/fragments/SidecarFragment;
 
     const/4 v5, 0x1
 
@@ -1823,8 +1792,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -2167,7 +2134,6 @@
 
 .method public setHostTitle(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -2178,7 +2144,6 @@
 
 .method public showProgress(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

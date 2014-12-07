@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/detail/LinkedContactActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/LinkedContactActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/LinkedContactActivity;->mLinkedContactsCount:I
 
@@ -35,7 +34,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/LinkedContactActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/LinkedContactActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/detail/LinkedContactActivity;->showJoinAggregateActivity()V
 
@@ -146,9 +144,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, -0x1
 
@@ -214,7 +209,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/samsung/contacts/detail/LinkedContactFragment;
 
@@ -238,7 +232,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -360,7 +353,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/samsung/contacts/detail/LinkedContactActivity;->mListFragment:Lcom/samsung/contacts/detail/LinkedContactFragment;
 
@@ -412,7 +404,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -439,7 +430,6 @@
 
 .method public setLinkedContactsCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/LinkedContactActivity;->mLinkedContactsCount:I
 

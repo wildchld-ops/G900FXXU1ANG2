@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,7 +24,6 @@
 
 .method public static getDetailContactUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     move-object v5, p0
 
@@ -89,7 +87,6 @@
 
 .method public static isDetailSmartClip(Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     if-eqz p0, :cond_0
 
@@ -118,7 +115,6 @@
 
 .method public static isListSmartClip(Landroid/net/Uri;)Z
     .locals 1
-    .param p0    # Landroid/net/Uri;
 
     if-eqz p0, :cond_0
 
@@ -149,8 +145,6 @@
 # virtual methods
 .method public updateMetaTag(ILandroid/net/Uri;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     packed-switch p1, :pswitch_data_0
 

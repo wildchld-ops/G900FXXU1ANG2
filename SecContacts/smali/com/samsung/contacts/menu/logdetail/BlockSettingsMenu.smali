@@ -67,7 +67,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/OptionMenu;-><init>(Landroid/content/Context;)V
 
@@ -108,7 +107,6 @@
 
 .method static synthetic access$302(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Lcom/samsung/contacts/menu/logdetail/BlockSettingsMenu;->blockNumberFullErrorDlg:Landroid/app/AlertDialog;
 
@@ -117,8 +115,6 @@
 
 .method private static openBlockNumberSettingDialog(Landroid/content/Context;Ljava/lang/String;)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const v11, 0x7f0e0410
 

@@ -14,8 +14,6 @@
 
 .method public static getDeclaredField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
     .locals 2
-    .param p0    # Ljava/lang/Class;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
@@ -37,8 +35,6 @@
 
 .method public static varargs getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,9 +68,6 @@
 
 .method public static varargs invoke(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .param p0    # Ljava/lang/reflect/Method;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
 
     :try_start_0
     invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -107,7 +100,6 @@
 
 .method public static unpackInvocationTargetException(Ljava/lang/reflect/InvocationTargetException;)Ljava/lang/RuntimeException;
     .locals 2
-    .param p0    # Ljava/lang/reflect/InvocationTargetException;
 
     invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 

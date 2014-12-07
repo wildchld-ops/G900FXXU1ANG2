@@ -40,8 +40,6 @@
 # virtual methods
 .method public onConnected(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager$2;->val$callback:Lcom/nuance/swypeconnect/ac/ACManager$ACConnectionCallback;
 
@@ -52,8 +50,6 @@
 
 .method public onConnectionStatus(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager$2;->val$callback:Lcom/nuance/swypeconnect/ac/ACManager$ACConnectionCallback;
 
@@ -64,7 +60,6 @@
 
 .method public onDisconnected(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager$2;->val$callback:Lcom/nuance/swypeconnect/ac/ACManager$ACConnectionCallback;
 

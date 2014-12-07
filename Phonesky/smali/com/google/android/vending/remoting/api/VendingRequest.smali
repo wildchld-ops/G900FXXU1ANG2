@@ -77,9 +77,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;Ljava/lang/Class;Lcom/google/protobuf/nano/MessageNano;Ljava/lang/Class;Lcom/android/volley/Response$Listener;Lcom/google/android/vending/remoting/api/VendingApiContext;Lcom/android/volley/Response$ErrorListener;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p6    # Lcom/google/android/vending/remoting/api/VendingApiContext;
-    .param p7    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -135,9 +132,6 @@
 
 .method public static make(Ljava/lang/String;Ljava/lang/Class;Lcom/google/protobuf/nano/MessageNano;Ljava/lang/Class;Lcom/android/volley/Response$Listener;Lcom/google/android/vending/remoting/api/VendingApiContext;Lcom/android/volley/Response$ErrorListener;)Lcom/google/android/vending/remoting/api/VendingRequest;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/vending/remoting/api/VendingApiContext;
-    .param p6    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -185,8 +179,6 @@
 # virtual methods
 .method public addExtraHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/vending/remoting/api/VendingRequest;->mExtraHeaders:Ljava/util/Map;
 
@@ -208,7 +200,6 @@
 
 .method public deliverError(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v0, p1, Lcom/android/volley/AuthFailureError;
 
@@ -228,7 +219,6 @@
 
 .method protected deliverResponse(Lcom/google/android/finsky/protos/VendingProtos$ResponseProto;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$ResponseProto;
 
     iget-object v2, p1, Lcom/google/android/finsky/protos/VendingProtos$ResponseProto;->response:[Lcom/google/android/finsky/protos/VendingProtos$ResponseProto$Response;
 
@@ -253,7 +243,6 @@
 
 .method protected bridge synthetic deliverResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/VendingProtos$ResponseProto;
 
@@ -365,8 +354,6 @@
 
 .method protected handlePendingNotifications(Lcom/google/android/finsky/protos/VendingProtos$ResponseProto;Z)Z
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$ResponseProto;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -416,7 +403,6 @@
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 7
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -127,7 +127,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
@@ -136,8 +135,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
@@ -148,8 +145,6 @@
 
 .method private loadContactHeaderData(Lcom/samsung/contacts/detail/TargetContactData;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/TargetContactData;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -204,7 +199,6 @@
 
 .method private loadPhotoBinaryData(Lcom/samsung/contacts/detail/TargetContactData;)V
     .locals 9
-    .param p1    # Lcom/samsung/contacts/detail/TargetContactData;
 
     iget-object v6, p1, Lcom/samsung/contacts/detail/TargetContactData;->mPhotoUri:Ljava/lang/String;
 

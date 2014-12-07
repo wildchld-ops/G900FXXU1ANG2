@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -21,8 +20,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -39,12 +36,6 @@
 # virtual methods
 .method public addSubscription(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/LibrarySubscriptionEntry;ILcom/google/android/finsky/layout/SubscriptionView$CancelListener;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/layout/SubscriptionView$CancelListener;
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/SubscriptionsSection;->mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -83,7 +74,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 

@@ -308,7 +308,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/InCallPresenter;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallPresenter;
 
     invoke-direct {p0}, Lcom/android/incallui/InCallPresenter;->updateCoverUI()V
 
@@ -317,7 +316,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/InCallPresenter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallPresenter;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->mContext:Landroid/content/Context;
 
@@ -326,7 +324,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/InCallPresenter;)Lcom/android/incallui/motion/CallAirMotion;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallPresenter;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->mCallAirMotion:Lcom/android/incallui/motion/CallAirMotion;
 
@@ -335,7 +332,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/InCallPresenter;)Lcom/android/incallui/InCallPresenter$InCallState;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallPresenter;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->mInCallState:Lcom/android/incallui/InCallPresenter$InCallState;
 
@@ -344,8 +340,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/InCallPresenter;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallPresenter;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/InCallPresenter;->showInCall(Z)V
 
@@ -354,7 +348,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/InCallPresenter;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallPresenter;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->ACTION_TPHONE_FINISHED:Ljava/lang/String;
 
@@ -363,7 +356,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/InCallPresenter;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallPresenter;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->INTENT_ACTION_MEDIASHARE_REGI:Ljava/lang/String;
 
@@ -783,7 +775,6 @@
 
 .method public static getPotentialStateFromCallList(Lcom/android/incallui/CallList;)Lcom/android/incallui/InCallPresenter$InCallState;
     .locals 3
-    .param p0    # Lcom/android/incallui/CallList;
 
     sget-object v0, Lcom/android/incallui/InCallPresenter$InCallState;->NO_CALLS:Lcom/android/incallui/InCallPresenter$InCallState;
 
@@ -853,8 +844,6 @@
 
 .method public static getPotentialStateFromCallList(Lcom/android/incallui/CallList;I)Lcom/android/incallui/InCallPresenter$InCallState;
     .locals 3
-    .param p0    # Lcom/android/incallui/CallList;
-    .param p1    # I
 
     sget-object v0, Lcom/android/incallui/InCallPresenter$InCallState;->NO_CALLS:Lcom/android/incallui/InCallPresenter$InCallState;
 
@@ -924,7 +913,6 @@
 
 .method private handleIMSCallFailError(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const-string v0, "feature_skt_tphone"
 
@@ -1036,8 +1024,6 @@
 
 .method private manageAirMotion(Lcom/android/services/telephony/common/Call;Z)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -1139,7 +1125,6 @@
 
 .method private maybeShowErrorDialogOnDisconnect(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-virtual {p0}, Lcom/android/incallui/InCallPresenter;->isActivityStarted()Z
 
@@ -1392,7 +1377,6 @@
 
 .method private showInCall(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/InCallPresenter;->getInCallIntent(Z)Landroid/content/Intent;
 
@@ -2120,7 +2104,6 @@
 # virtual methods
 .method public SetPhotoringBlocked(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -2137,7 +2120,6 @@
 
 .method public addAccessoryEventListener(Lcom/android/incallui/InCallPresenter$AccessoryEventListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$AccessoryEventListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2159,7 +2141,6 @@
 
 .method public addConfigurationChangeListener(Lcom/android/incallui/InCallPresenter$ConfigurationChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$ConfigurationChangeListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2181,7 +2162,6 @@
 
 .method public addIncomingCallListener(Lcom/android/incallui/InCallPresenter$IncomingCallListener;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/InCallPresenter$IncomingCallListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2227,7 +2207,6 @@
 
 .method public addListener(Lcom/android/incallui/InCallPresenter$InCallStateListener;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallStateListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2269,7 +2248,6 @@
 
 .method public addListenerOfManager(Lcom/android/incallui/InCallPresenter$InCallStateListener;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallStateListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2311,7 +2289,6 @@
 
 .method public addModifyCallListener(Lcom/android/incallui/InCallPresenter$ModifyCallListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$ModifyCallListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2333,7 +2310,6 @@
 
 .method public addWindowStatusListener(Lcom/android/incallui/InCallPresenter$WindowStatusChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$WindowStatusChangeListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2442,7 +2418,6 @@
 
 .method public bringToForeground(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/InCallPresenter;->isShowingInCallUi()Z
 
@@ -2464,7 +2439,6 @@
 
 .method public bringToForegroundIgnoreState(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -3455,7 +3429,6 @@
 
 .method public hangUpOngoingCall(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/incallui/InCallPresenter;->mCallList:Lcom/android/incallui/CallList;
 
@@ -3701,7 +3674,6 @@
 
 .method public notifySwitchCallScreen(I)V
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -3722,7 +3694,6 @@
 
 .method public onCallListChange(Lcom/android/incallui/CallList;)V
     .locals 7
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v6, 0x0
 
@@ -4141,14 +4112,12 @@
 
 .method public onCameraEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCaptureAndRecordEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -4357,7 +4326,6 @@
 
 .method public onDisconnect(Lcom/android/services/telephony/common/Call;)V
     .locals 6
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v5, 0x0
 
@@ -4575,7 +4543,6 @@
 
 .method public onHdVoiceStatusChange(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/incallui/CallCardPresenter;->getInstance()Lcom/android/incallui/CallCardPresenter;
 
@@ -4650,7 +4617,6 @@
 
 .method public onIncomingCall(Lcom/android/services/telephony/common/Call;)V
     .locals 14
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v12, 0x0
 
@@ -5015,8 +4981,6 @@
 
 .method public onPostDialCharPause(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->mInCallActivity:Lcom/android/incallui/InCallActivity;
 
@@ -5032,16 +4996,12 @@
 
 .method public onPostDialCharPauseComplete(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPostDialCharWait(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->mInCallActivity:Lcom/android/incallui/InCallActivity;
 
@@ -5057,7 +5017,6 @@
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {p1}, Lcom/android/incallui/InCallUtils;->setCallForwardingState(Z)V
 
@@ -5269,7 +5228,6 @@
 
 .method public onUiShowing(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->mStatusBarNotifier:Lcom/android/incallui/StatusBarNotifier;
 
@@ -5378,15 +5336,12 @@
 
 .method public onVideoCallEvent(ILsiso/vt/VideoTelephonyData;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lsiso/vt/VideoTelephonyData;
 
     return-void
 .end method
 
 .method public rejectCall(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/incallui/InCallPresenter;->mCallList:Lcom/android/incallui/CallList;
 
@@ -5426,7 +5381,6 @@
 
 .method public removeAccessoryEventListener(Lcom/android/incallui/InCallPresenter$AccessoryEventListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$AccessoryEventListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5439,7 +5393,6 @@
 
 .method public removeConfigurationChangeListener(Lcom/android/incallui/InCallPresenter$ConfigurationChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$ConfigurationChangeListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5452,7 +5405,6 @@
 
 .method public removeIncomingCallListener(Lcom/android/incallui/InCallPresenter$IncomingCallListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$IncomingCallListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5465,7 +5417,6 @@
 
 .method public removeListener(Lcom/android/incallui/InCallPresenter$InCallStateListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallStateListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5478,7 +5429,6 @@
 
 .method public removeListenerOfManager(Lcom/android/incallui/InCallPresenter$InCallStateListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallStateListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5491,7 +5441,6 @@
 
 .method public removeModifyCallListener(Lcom/android/incallui/InCallPresenter$ModifyCallListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$ModifyCallListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5504,7 +5453,6 @@
 
 .method public removeWindowStatusListener(Lcom/android/incallui/InCallPresenter$WindowStatusChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$WindowStatusChangeListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -5641,7 +5589,6 @@
 
 .method public setActivity(Lcom/android/incallui/InCallActivity;)V
     .locals 5
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     const/4 v3, 0x0
 
@@ -5862,7 +5809,6 @@
 
 .method public setOverlayPopup(Lcom/android/incallui/service/OverlayPopupService;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/service/OverlayPopupService;
 
     iput-object p1, p0, Lcom/android/incallui/InCallPresenter;->mOverlayPopupService:Lcom/android/incallui/service/OverlayPopupService;
 
@@ -5905,9 +5851,6 @@
 
 .method public setUp(Landroid/content/Context;Lcom/android/incallui/CallList;Lcom/android/incallui/AudioModeProvider;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/incallui/CallList;
-    .param p3    # Lcom/android/incallui/AudioModeProvider;
 
     const/4 v6, 0x0
 
@@ -6304,7 +6247,6 @@
 
 .method public switchCallScreen(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/InCallPresenter;->setSimIdToDisplay(I)V
 
@@ -6498,8 +6440,6 @@
 
 .method public updatePhotoringState(Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;I)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/incallui/InCallPresenter;->mInCallActivity:Lcom/android/incallui/InCallActivity;
 

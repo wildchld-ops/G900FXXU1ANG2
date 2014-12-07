@@ -203,7 +203,6 @@
 
 .method public declared-synchronized createSipStack(Ljava/util/Properties;)Ljavax/sip/SipStack;
     .locals 8
-    .param p1    # Ljava/util/Properties;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/PeerUnavailableException;

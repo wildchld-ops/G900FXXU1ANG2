@@ -81,7 +81,6 @@
 
 .method static synthetic access$000(Lorg/keyczar/RsaPrivateKey;)Lorg/keyczar/RsaPublicKey;
     .locals 1
-    .param p0    # Lorg/keyczar/RsaPrivateKey;
 
     iget-object v0, p0, Lorg/keyczar/RsaPrivateKey;->publicKey:Lorg/keyczar/RsaPublicKey;
 
@@ -90,7 +89,6 @@
 
 .method static synthetic access$100(Lorg/keyczar/RsaPrivateKey;)Ljava/security/interfaces/RSAPrivateCrtKey;
     .locals 1
-    .param p0    # Lorg/keyczar/RsaPrivateKey;
 
     iget-object v0, p0, Lorg/keyczar/RsaPrivateKey;->jcePrivateKey:Ljava/security/interfaces/RSAPrivateCrtKey;
 
@@ -196,7 +194,6 @@
 
 .method static read(Ljava/lang/String;)Lorg/keyczar/RsaPrivateKey;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

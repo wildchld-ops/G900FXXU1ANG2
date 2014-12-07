@@ -1821,23 +1821,6 @@
     <public type="drawable" name="vohwr_key_icon_handwriting_current_input_number_xml" id="0x7f020a0a" />
     <public type="drawable" name="vohwr_key_icon_handwriting_xml" id="0x7f020a0b" />
     <public type="drawable" name="vohwr_keypad_symbol_mode_bg" id="0x7f020a0d" />
-    <public type="drawable" name="handwriting_icon_setting" id="0x7f02022c" />
-    <public type="drawable" name="handwriting_icon_setting_dim" id="0x7f02022d" />
-    <public type="drawable" name="handwriting_icon_setting_pressed" id="0x7f02022e" />
-    <public type="drawable" name="handwriting_key_icon_emoticon_dim" id="0x7f02023a" />
-    <public type="drawable" name="handwriting_key_icon_emoticon_pressed" id="0x7f02023b" />
-    <public type="drawable" name="hwr_icon_hwr_pressed" id="0x7f020291" />
-    <public type="drawable" name="preview_qwerty_key_icon_clipboard" id="0x7f02069a" />
-    <public type="drawable" name="preview_qwerty_key_icon_ocr" id="0x7f0206a6" />
-    <public type="drawable" name="qwerty_key_icon_clipboard_center_dim" id="0x7f0206f7" />
-    <public type="drawable" name="qwerty_key_icon_orc" id="0x7f02074f" />
-    <public type="drawable" name="qwerty_key_icon_orc_dim" id="0x7f020750" />
-    <public type="drawable" name="qwerty_key_icon_orc_pressed" id="0x7f020751" />
-    <public type="drawable" name="qwerty_key_icon_space_center_dim" id="0x7f02076c" />
-    <public type="drawable" name="qwerty_key_icon_space_dim" id="0x7f020770" />
-    <public type="drawable" name="qwerty_key_icon_text" id="0x7f020782" />
-    <public type="drawable" name="qwerty_key_icon_text_dim" id="0x7f020783" />
-    <public type="drawable" name="qwerty_key_icon_text_pressed" id="0x7f020784" />
     <public type="drawable" name="APKTOOL_DUMMY_0006" id="0x7f020006" />
     <public type="drawable" name="APKTOOL_DUMMY_0007" id="0x7f020007" />
     <public type="drawable" name="APKTOOL_DUMMY_000a" id="0x7f02000a" />
@@ -1900,6 +1883,9 @@
     <public type="drawable" name="APKTOOL_DUMMY_0227" id="0x7f020227" />
     <public type="drawable" name="APKTOOL_DUMMY_0228" id="0x7f020228" />
     <public type="drawable" name="APKTOOL_DUMMY_0229" id="0x7f020229" />
+    <public type="drawable" name="handwriting_icon_setting" id="0x7f02022c" />
+    <public type="drawable" name="handwriting_icon_setting_dim" id="0x7f02022d" />
+    <public type="drawable" name="handwriting_icon_setting_pressed" id="0x7f02022e" />
     <public type="drawable" name="APKTOOL_DUMMY_022f" id="0x7f02022f" />
     <public type="drawable" name="APKTOOL_DUMMY_0230" id="0x7f020230" />
     <public type="drawable" name="APKTOOL_DUMMY_0231" id="0x7f020231" />
@@ -1911,6 +1897,8 @@
     <public type="drawable" name="APKTOOL_DUMMY_0237" id="0x7f020237" />
     <public type="drawable" name="APKTOOL_DUMMY_0238" id="0x7f020238" />
     <public type="drawable" name="APKTOOL_DUMMY_0239" id="0x7f020239" />
+    <public type="drawable" name="handwriting_key_icon_emoticon_dim" id="0x7f02023a" />
+    <public type="drawable" name="handwriting_key_icon_emoticon_pressed" id="0x7f02023b" />
     <public type="drawable" name="APKTOOL_DUMMY_0243" id="0x7f020243" />
     <public type="drawable" name="APKTOOL_DUMMY_0244" id="0x7f020244" />
     <public type="drawable" name="APKTOOL_DUMMY_0245" id="0x7f020245" />
@@ -1934,6 +1922,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_026d" id="0x7f02026d" />
     <public type="drawable" name="APKTOOL_DUMMY_026e" id="0x7f02026e" />
     <public type="drawable" name="APKTOOL_DUMMY_026f" id="0x7f02026f" />
+    <public type="drawable" name="hwr_icon_hwr_pressed" id="0x7f020291" />
     <public type="drawable" name="APKTOOL_DUMMY_029d" id="0x7f02029d" />
     <public type="drawable" name="APKTOOL_DUMMY_02b4" id="0x7f0202b4" />
     <public type="drawable" name="APKTOOL_DUMMY_02b7" id="0x7f0202b7" />
@@ -2223,9 +2212,11 @@
     <public type="drawable" name="APKTOOL_DUMMY_068e" id="0x7f02068e" />
     <public type="drawable" name="APKTOOL_DUMMY_068f" id="0x7f02068f" />
     <public type="drawable" name="APKTOOL_DUMMY_0690" id="0x7f020690" />
+    <public type="drawable" name="preview_qwerty_key_icon_clipboard" id="0x7f02069a" />
     <public type="drawable" name="APKTOOL_DUMMY_069c" id="0x7f02069c" />
     <public type="drawable" name="APKTOOL_DUMMY_069e" id="0x7f02069e" />
     <public type="drawable" name="APKTOOL_DUMMY_06a0" id="0x7f0206a0" />
+    <public type="drawable" name="preview_qwerty_key_icon_ocr" id="0x7f0206a6" />
     <public type="drawable" name="APKTOOL_DUMMY_06a7" id="0x7f0206a7" />
     <public type="drawable" name="APKTOOL_DUMMY_06a8" id="0x7f0206a8" />
     <public type="drawable" name="APKTOOL_DUMMY_06ad" id="0x7f0206ad" />
@@ -2275,6 +2266,7 @@
     <public type="drawable" name="APKTOOL_DUMMY_06e3" id="0x7f0206e3" />
     <public type="drawable" name="APKTOOL_DUMMY_06e4" id="0x7f0206e4" />
     <public type="drawable" name="APKTOOL_DUMMY_06eb" id="0x7f0206eb" />
+    <public type="drawable" name="qwerty_key_icon_clipboard_center_dim" id="0x7f0206f7" />
     <public type="drawable" name="APKTOOL_DUMMY_06ff" id="0x7f0206ff" />
     <public type="drawable" name="APKTOOL_DUMMY_0700" id="0x7f020700" />
     <public type="drawable" name="APKTOOL_DUMMY_0702" id="0x7f020702" />
@@ -2303,6 +2295,9 @@
     <public type="drawable" name="APKTOOL_DUMMY_0746" id="0x7f020746" />
     <public type="drawable" name="APKTOOL_DUMMY_0747" id="0x7f020747" />
     <public type="drawable" name="APKTOOL_DUMMY_0748" id="0x7f020748" />
+    <public type="drawable" name="qwerty_key_icon_orc" id="0x7f02074f" />
+    <public type="drawable" name="qwerty_key_icon_orc_dim" id="0x7f020750" />
+    <public type="drawable" name="qwerty_key_icon_orc_pressed" id="0x7f020751" />
     <public type="drawable" name="APKTOOL_DUMMY_0752" id="0x7f020752" />
     <public type="drawable" name="APKTOOL_DUMMY_0753" id="0x7f020753" />
     <public type="drawable" name="APKTOOL_DUMMY_0754" id="0x7f020754" />
@@ -2310,11 +2305,16 @@
     <public type="drawable" name="APKTOOL_DUMMY_0758" id="0x7f020758" />
     <public type="drawable" name="APKTOOL_DUMMY_0759" id="0x7f020759" />
     <public type="drawable" name="APKTOOL_DUMMY_075b" id="0x7f02075b" />
+    <public type="drawable" name="qwerty_key_icon_space_center_dim" id="0x7f02076c" />
+    <public type="drawable" name="qwerty_key_icon_space_dim" id="0x7f020770" />
     <public type="drawable" name="APKTOOL_DUMMY_0774" id="0x7f020774" />
     <public type="drawable" name="APKTOOL_DUMMY_0775" id="0x7f020775" />
     <public type="drawable" name="APKTOOL_DUMMY_077a" id="0x7f02077a" />
     <public type="drawable" name="APKTOOL_DUMMY_077b" id="0x7f02077b" />
     <public type="drawable" name="APKTOOL_DUMMY_0780" id="0x7f020780" />
+    <public type="drawable" name="qwerty_key_icon_text" id="0x7f020782" />
+    <public type="drawable" name="qwerty_key_icon_text_dim" id="0x7f020783" />
+    <public type="drawable" name="qwerty_key_icon_text_pressed" id="0x7f020784" />
     <public type="drawable" name="APKTOOL_DUMMY_078a" id="0x7f02078a" />
     <public type="drawable" name="APKTOOL_DUMMY_078b" id="0x7f02078b" />
     <public type="drawable" name="APKTOOL_DUMMY_078c" id="0x7f02078c" />
@@ -2762,9 +2762,9 @@
     <public type="layout" name="webview" id="0x7f0300a5" />
     <public type="layout" name="webview_gmail" id="0x7f0300a6" />
     <public type="layout" name="xt9_settings_languages_layout" id="0x7f0300a7" />
+    <public type="layout" name="APKTOOL_DUMMY_0038" id="0x7f030038" />
     <public type="layout" name="popup_not_split_modechange_layout" id="0x7f030039" />
     <public type="layout" name="popup_not_split_with_onehand_modechange_layout" id="0x7f03003b" />
-    <public type="layout" name="APKTOOL_DUMMY_0038" id="0x7f030038" />
     <public type="layout" name="APKTOOL_DUMMY_0055" id="0x7f030055" />
     <public type="layout" name="APKTOOL_DUMMY_009d" id="0x7f03009d" />
     <public type="anim" name="enter_expandcandidate" id="0x7f040000" />
@@ -6031,10 +6031,6 @@
     <public type="dimen" name="floating_qwerty_indian_kannada_symbol_third_row_horizontal_gap" id="0x7f0908ad" />
     <public type="dimen" name="floating_qwerty_indian_kannada_symbol_key_horizontal_gap" id="0x7f0908ae" />
     <public type="dimen" name="floating_qwerty_indian_malayalam_symbol_key_horizontal_gap" id="0x7f0908af" />
-    <public type="dimen" name="japanese_qwerty_key_last_horizontal_gap2" id="0x7f0908b8" />
-    <public type="dimen" name="japanese_qwerty_key_last_width_url_email_multi_language" id="0x7f0908b9" />
-    <public type="dimen" name="qwerty_email_url_last_line_horizontal_gap" id="0x7f0908ba" />
-    <public type="dimen" name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2" id="0x7f0908bb" />
     <public type="dimen" name="APKTOOL_DUMMY_071b" id="0x7f09071b" />
     <public type="dimen" name="APKTOOL_DUMMY_071c" id="0x7f09071c" />
     <public type="dimen" name="APKTOOL_DUMMY_071e" id="0x7f09071e" />
@@ -6167,6 +6163,10 @@
     <public type="dimen" name="APKTOOL_DUMMY_08b5" id="0x7f0908b5" />
     <public type="dimen" name="APKTOOL_DUMMY_08b6" id="0x7f0908b6" />
     <public type="dimen" name="APKTOOL_DUMMY_08b7" id="0x7f0908b7" />
+    <public type="dimen" name="japanese_qwerty_key_last_horizontal_gap2" id="0x7f0908b8" />
+    <public type="dimen" name="japanese_qwerty_key_last_width_url_email_multi_language" id="0x7f0908b9" />
+    <public type="dimen" name="qwerty_email_url_last_line_horizontal_gap" id="0x7f0908ba" />
+    <public type="dimen" name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2" id="0x7f0908bb" />
     <public type="dimen" name="APKTOOL_DUMMY_08bc" id="0x7f0908bc" />
     <public type="dimen" name="APKTOOL_DUMMY_08bd" id="0x7f0908bd" />
     <public type="dimen" name="APKTOOL_DUMMY_08be" id="0x7f0908be" />
@@ -7478,13 +7478,13 @@
     <public type="color" name="setting_select_input_languages_list_text_color_xml" id="0x7f0b005f" />
     <public type="color" name="settings_button_text_color_white_xml" id="0x7f0b0060" />
     <public type="color" name="settings_button_text_color_xml" id="0x7f0b0061" />
+    <public type="color" name="APKTOOL_DUMMY_0046" id="0x7f0b0046" />
     <public type="color" name="pressedkey_extra_labelcolor" id="0x7f0b0047" />
     <public type="color" name="pressed_numberkey_extra_labelcolor" id="0x7f0b0048" />
     <public type="color" name="numberkey_extra_labelcolor" id="0x7f0b0049" />
     <public type="color" name="phonepad_text_labelcolor" id="0x7f0b004a" />
     <public type="color" name="phonepad_text_labelcolor_press" id="0x7f0b004b" />
     <public type="color" name="phonepad_month_number_text_labelcolor" id="0x7f0b004c" />
-    <public type="color" name="APKTOOL_DUMMY_0046" id="0x7f0b0046" />
     <public type="color" name="APKTOOL_DUMMY_004d" id="0x7f0b004d" />
     <public type="color" name="APKTOOL_DUMMY_004e" id="0x7f0b004e" />
     <public type="color" name="APKTOOL_DUMMY_004f" id="0x7f0b004f" />

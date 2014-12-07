@@ -125,7 +125,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, -0x1
 
@@ -162,8 +161,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, -0x1
 
@@ -200,9 +197,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, -0x1
 
@@ -250,8 +244,6 @@
 
 .method static synthetic access$000(Landroid/widget/AdapterView;Landroid/os/Parcelable;)V
     .locals 0
-    .param p0    # Landroid/widget/AdapterView;
-    .param p1    # Landroid/os/Parcelable;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
@@ -260,7 +252,6 @@
 
 .method static synthetic access$100(Landroid/widget/AdapterView;)Landroid/os/Parcelable;
     .locals 1
-    .param p0    # Landroid/widget/AdapterView;
 
     invoke-virtual {p0}, Landroid/view/View;->onSaveInstanceState()Landroid/os/Parcelable;
 
@@ -271,7 +262,6 @@
 
 .method static synthetic access$200(Landroid/widget/AdapterView;)V
     .locals 0
-    .param p0    # Landroid/widget/AdapterView;
 
     invoke-direct {p0}, Landroid/widget/AdapterView;->fireOnSelected()V
 
@@ -280,7 +270,6 @@
 
 .method static synthetic access$300(Landroid/widget/AdapterView;)V
     .locals 0
-    .param p0    # Landroid/widget/AdapterView;
 
     invoke-direct {p0}, Landroid/widget/AdapterView;->performAccessibilityActionsOnSelected()V
 
@@ -405,7 +394,6 @@
 
 .method private updateEmptyStatus(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -477,7 +465,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -490,8 +477,6 @@
 
 .method public addView(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -504,9 +489,6 @@
 
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -519,8 +501,6 @@
 
 .method public addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -688,7 +668,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0}, Landroid/widget/AdapterView;->getSelectedView()Landroid/view/View;
 
@@ -940,7 +919,6 @@
 
 .method public getItemAtPosition(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/AdapterView;->getAdapter()Landroid/widget/Adapter;
 
@@ -966,7 +944,6 @@
 
 .method public getItemIdAtPosition(I)J
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/AdapterView;->getAdapter()Landroid/widget/Adapter;
 
@@ -1040,7 +1017,6 @@
 
 .method public getPositionForView(Landroid/view/View;)I
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v5, -0x1
 
@@ -1268,8 +1244,6 @@
 
 .method lookForSelectablePosition(IZ)I
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return p1
 .end method
@@ -1288,7 +1262,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1348,7 +1321,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1384,11 +1356,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
@@ -1401,8 +1368,6 @@
 
 .method public onRequestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onRequestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -1433,9 +1398,6 @@
 
 .method public performItemClick(Landroid/view/View;IJ)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v6, 0x1
 
@@ -1604,7 +1566,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -1617,7 +1578,6 @@
 
 .method public removeViewAt(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -1704,7 +1664,6 @@
 
 .method public setEmptyView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -1749,7 +1708,6 @@
 
 .method public setFocusable(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1807,7 +1765,6 @@
 
 .method public setFocusableInTouchMode(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1865,7 +1822,6 @@
 
 .method setNextSelectedPositionInt(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AdapterView;->mNextSelectedPosition:I
 
@@ -1897,7 +1853,6 @@
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 2
-    .param p1    # Landroid/view/View$OnClickListener;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -1910,7 +1865,6 @@
 
 .method public setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemClickListener;
 
     iput-object p1, p0, Landroid/widget/AdapterView;->mOnItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -1919,7 +1873,6 @@
 
 .method public setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
     .locals 1
-    .param p1    # Landroid/widget/AdapterView$OnItemLongClickListener;
 
     invoke-virtual {p0}, Landroid/view/View;->isLongClickable()Z
 
@@ -1939,7 +1892,6 @@
 
 .method public setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemSelectedListener;
 
     iput-object p1, p0, Landroid/widget/AdapterView;->mOnItemSelectedListener:Landroid/widget/AdapterView$OnItemSelectedListener;
 
@@ -1948,7 +1900,6 @@
 
 .method setSelectedPositionInt(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AdapterView;->mSelectedPosition:I
 
@@ -1966,7 +1917,6 @@
 
 .method public setTwNotifyOnKeyPressListener(Landroid/widget/AdapterView$OnTwNotifyKeyPressListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnTwNotifyKeyPressListener;
 
     iput-object p1, p0, Landroid/widget/AdapterView;->mOnTwNotifyKeyPressListener:Landroid/widget/AdapterView$OnTwNotifyKeyPressListener;
 
@@ -1975,10 +1925,6 @@
 
 .method public twNotifyKeyPress(Landroid/view/View;IJZ)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     iget-object v0, p0, Landroid/widget/AdapterView;->mOnTwNotifyKeyPressListener:Landroid/widget/AdapterView$OnTwNotifyKeyPressListener;
 

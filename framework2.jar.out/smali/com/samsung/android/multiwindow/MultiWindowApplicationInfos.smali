@@ -300,7 +300,6 @@
 
 .method private loadStringArray(ILjava/util/ArrayList;)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -366,7 +365,6 @@
 
 .method public getMaxPenWindow(Landroid/content/Context;)I
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mMaxPenWindowCount:I
 
@@ -475,8 +473,6 @@
 
 .method public isAvoidInheritStack(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -510,7 +506,6 @@
 
 .method public isAvoidLaunchStyleApp(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -536,7 +531,6 @@
 
 .method public isAvoidScaleOption(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -562,7 +556,6 @@
 
 .method public isDefaultAppList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mDefaultAppList:Ljava/util/ArrayList;
 
@@ -585,7 +578,6 @@
 
 .method public isDefaultPenAppList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mDefaultPenAppList:Ljava/util/ArrayList;
 
@@ -608,7 +600,6 @@
 
 .method public isFixedRatioApp(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -617,7 +608,6 @@
 
 .method public isHideAppList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mHideAppList:Ljava/util/ArrayList;
 
@@ -640,7 +630,6 @@
 
 .method public isNoTitleActivityList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mNoTitleActivityList:Ljava/util/ArrayList;
 
@@ -663,7 +652,6 @@
 
 .method public isSupporMultiInstance(Landroid/content/pm/ActivityInfo;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     const/4 v0, 0x0
 
@@ -716,7 +704,6 @@
 
 .method public isSupportApp(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mSupportAppList:Ljava/util/ArrayList;
 
@@ -748,7 +735,6 @@
 
 .method public isSupportComponentList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mSupportComponentList:Ljava/util/ArrayList;
 
@@ -771,7 +757,6 @@
 
 .method public isSupportFullScreenMinimizable(Landroid/content/pm/ActivityInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     if-eqz p1, :cond_0
 
@@ -799,7 +784,6 @@
 
 .method public isSupportMultiWindow(Landroid/content/pm/ActivityInfo;)Z
     .locals 5
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     const/4 v2, 0x0
 
@@ -900,7 +884,6 @@
 
 .method public isSupportPackageList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;->mSupportPackageList:Ljava/util/ArrayList;
 
@@ -923,7 +906,6 @@
 
 .method public isSupportPopup(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "com.sec.android.app.popupuireceiver"
 
@@ -963,7 +945,6 @@
 
 .method public isSupportPopupApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     const/4 v0, 0x0
 
@@ -1003,7 +984,6 @@
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 6
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     const/4 v3, 0x1
 

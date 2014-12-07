@@ -59,7 +59,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 3
-    .param p1    # Ljava/lang/StringBuffer;
 
     const/4 v2, -0x1
 
@@ -171,7 +170,6 @@
 
 .method public setExpires(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -196,7 +194,6 @@
 
 .method public setReasonCode(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -221,7 +218,6 @@
 
 .method public setRetryAfter(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -246,7 +242,6 @@
 
 .method public setState(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

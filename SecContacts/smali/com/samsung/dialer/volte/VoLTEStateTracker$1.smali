@@ -36,9 +36,6 @@
 # virtual methods
 .method public onReceive(IILcom/samsung/commonimsinterface/imscommon/IMSParameter;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/samsung/commonimsinterface/imscommon/IMSParameter;
 
     iget-object v1, p0, Lcom/samsung/dialer/volte/VoLTEStateTracker$1;->this$0:Lcom/samsung/dialer/volte/VoLTEStateTracker;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;Ljava/lang/ref/ReferenceQueue;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

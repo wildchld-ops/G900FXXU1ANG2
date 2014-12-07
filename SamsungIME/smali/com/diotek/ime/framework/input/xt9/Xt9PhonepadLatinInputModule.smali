@@ -586,8 +586,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v11, 0x19
 
@@ -1334,8 +1332,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->clearCandidateList()V
 
@@ -1438,8 +1434,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v3, 0x20
 
@@ -1612,8 +1606,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v8, 0x2
 
@@ -1927,15 +1919,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v4, 0x19
 
@@ -2073,8 +2062,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v3, 0x20
 

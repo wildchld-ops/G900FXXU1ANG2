@@ -74,10 +74,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;Landroid/widget/EditText;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/widget/EditText;
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,7 +96,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->mViewName:Landroid/widget/TextView;
 
@@ -109,7 +104,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->mViewNumber:Landroid/widget/TextView;
 
@@ -126,7 +120,6 @@
 
 .method static synthetic access$400(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->mContext:Landroid/content/Context;
 
@@ -135,7 +128,6 @@
 
 .method static synthetic access$500(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;)Lcom/samsung/dialer/dialpad/ContactItem;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->mMainItem:Lcom/samsung/dialer/dialpad/ContactItem;
 
@@ -144,8 +136,6 @@
 
 .method static synthetic access$600(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;Lcom/samsung/dialer/dialpad/ContactItem;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
-    .param p1    # Lcom/samsung/dialer/dialpad/ContactItem;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->setNumberDigitsView(Lcom/samsung/dialer/dialpad/ContactItem;)V
 
@@ -154,7 +144,6 @@
 
 .method static synthetic access$700(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->mResultArrayList:Ljava/util/ArrayList;
 
@@ -163,8 +152,6 @@
 
 .method static synthetic access$800(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;Lcom/samsung/dialer/dialpad/ContactItem;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
-    .param p1    # Lcom/samsung/dialer/dialpad/ContactItem;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->showNumberListDialog(Lcom/samsung/dialer/dialpad/ContactItem;)Z
 
@@ -175,7 +162,6 @@
 
 .method private setNumberDigitsView(Lcom/samsung/dialer/dialpad/ContactItem;)V
     .locals 5
-    .param p1    # Lcom/samsung/dialer/dialpad/ContactItem;
 
     if-eqz p1, :cond_0
 
@@ -273,9 +259,6 @@
 
 .method private setPhoto(Landroid/widget/ImageView;JJ)V
     .locals 7
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->mContactPhotoManager:Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -298,7 +281,6 @@
 
 .method private showNumberListDialog(Lcom/samsung/dialer/dialpad/ContactItem;)Z
     .locals 7
-    .param p1    # Lcom/samsung/dialer/dialpad/ContactItem;
 
     invoke-virtual {p1}, Lcom/samsung/dialer/dialpad/ContactItem;->getContactId()I
 
@@ -387,7 +369,6 @@
 
 .method private static toOneDigitChar(J)Ljava/lang/String;
     .locals 4
-    .param p0    # J
 
     const-string v0, "%01d"
 
@@ -492,10 +473,6 @@
 
 .method public getHighlightedString(Ljava/lang/String;III)Landroid/text/SpannableString;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-nez p1, :cond_1
 
@@ -619,12 +596,6 @@
 
 .method public setItemView(Lcom/samsung/dialer/dialpad/ContactItem;Landroid/widget/ImageView;Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/TextView;I)V
     .locals 18
-    .param p1    # Lcom/samsung/dialer/dialpad/ContactItem;
-    .param p2    # Landroid/widget/ImageView;
-    .param p3    # Landroid/widget/TextView;
-    .param p4    # Landroid/widget/TextView;
-    .param p5    # Landroid/widget/TextView;
-    .param p6    # I
 
     invoke-virtual/range {p1 .. p1}, Lcom/samsung/dialer/dialpad/ContactItem;->getPhotoId()I
 
@@ -895,7 +866,6 @@
 
 .method public setSearchLayout(Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 10
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1113,7 +1083,6 @@
 
 .method public setupView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     sget-object v1, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;->TAG:Ljava/lang/String;
 

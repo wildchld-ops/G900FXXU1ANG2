@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/model/rcs/RcsContactListPinner;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/contacts/model/rcs/RcsContactListPinner$1;->this$0:Lcom/samsung/contacts/model/rcs/RcsContactListPinner;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 7
-    .param p1    # Z
 
     const-string v4, "RcsContactListPinner"
 

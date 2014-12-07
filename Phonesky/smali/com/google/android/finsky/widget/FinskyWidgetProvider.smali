@@ -127,9 +127,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/widget/FinskyWidgetProvider;Landroid/content/Context;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/FinskyWidgetProvider;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/widget/FinskyWidgetProvider;->showError(Landroid/content/Context;I)V
 
@@ -138,11 +135,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/widget/FinskyWidgetProvider;Landroid/content/Context;ILcom/google/android/finsky/widget/WidgetTypeMap;Lcom/google/android/finsky/widget/WidgetModel;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/FinskyWidgetProvider;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/widget/WidgetTypeMap;
-    .param p4    # Lcom/google/android/finsky/widget/WidgetModel;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/widget/FinskyWidgetProvider;->rebindWidget(Landroid/content/Context;ILcom/google/android/finsky/widget/WidgetTypeMap;Lcom/google/android/finsky/widget/WidgetModel;)V
 
@@ -151,8 +143,6 @@
 
 .method private buildView(Landroid/content/Context;Lcom/google/android/finsky/widget/WidgetModel$PromotionalItem;)Landroid/widget/RemoteViews;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/widget/WidgetModel$PromotionalItem;
 
     new-instance v0, Landroid/widget/RemoteViews;
 
@@ -187,8 +177,6 @@
 
 .method private buildViewIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;)Landroid/app/PendingIntent;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-static {p1, p2}, Lcom/google/android/finsky/utils/IntentUtils;->createViewDocumentIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;)Landroid/content/Intent;
 
@@ -211,10 +199,6 @@
 
 .method private clearList(Landroid/content/Context;ILcom/google/android/finsky/widget/WidgetTypeMap;Lcom/google/android/finsky/widget/WidgetModel;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/widget/WidgetTypeMap;
-    .param p4    # Lcom/google/android/finsky/widget/WidgetModel;
 
     invoke-virtual {p4}, Lcom/google/android/finsky/widget/WidgetModel;->reset()V
 
@@ -225,8 +209,6 @@
 
 .method private getBackend(Lcom/google/android/finsky/widget/WidgetTypeMap;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/widget/WidgetTypeMap;
-    .param p2    # I
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -241,8 +223,6 @@
 
 .method private getDfeUrl(Lcom/google/android/finsky/widget/WidgetTypeMap;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/widget/WidgetTypeMap;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/FinskyWidgetProvider;->mUrls:Ljava/util/HashMap;
 
@@ -265,7 +245,6 @@
 
 .method protected static getLaunchMarketIntent(Landroid/content/Context;)Landroid/app/PendingIntent;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -286,8 +265,6 @@
 
 .method private getValidDocumentTypes(Lcom/google/android/finsky/widget/WidgetTypeMap;I)[I
     .locals 2
-    .param p1    # Lcom/google/android/finsky/widget/WidgetTypeMap;
-    .param p2    # I
 
     sget-object v0, Lcom/google/android/finsky/widget/FinskyWidgetProvider;->DOCUMENT_TYPES:Ljava/util/HashMap;
 
@@ -306,10 +283,6 @@
 
 .method private rebindWidget(Landroid/content/Context;ILcom/google/android/finsky/widget/WidgetTypeMap;Lcom/google/android/finsky/widget/WidgetModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/widget/WidgetTypeMap;
-    .param p4    # Lcom/google/android/finsky/widget/WidgetModel;
 
     const v6, 0x7f0801f4
 
@@ -405,10 +378,6 @@
 
 .method private refreshList(Landroid/content/Context;ILcom/google/android/finsky/widget/WidgetTypeMap;Lcom/google/android/finsky/widget/WidgetModel;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/widget/WidgetTypeMap;
-    .param p4    # Lcom/google/android/finsky/widget/WidgetModel;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -467,8 +436,6 @@
 
 .method private showEmptyState(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const v3, 0x7f080255
 
@@ -501,8 +468,6 @@
 
 .method private showError(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v0, Landroid/widget/RemoteViews;
 
@@ -529,9 +494,6 @@
 # virtual methods
 .method protected varargs updateWidgets(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     if-nez p3, :cond_1
 

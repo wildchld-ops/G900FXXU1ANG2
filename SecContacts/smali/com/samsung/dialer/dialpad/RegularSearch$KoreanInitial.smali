@@ -66,7 +66,6 @@
 
 .method private static getInitialSound(C)C
     .locals 3
-    .param p0    # C
 
     invoke-static {p0}, Lcom/samsung/dialer/dialpad/RegularSearch$KoreanInitial;->isKorean(C)Z
 
@@ -95,7 +94,6 @@
 
 .method private static isKorean(C)Z
     .locals 1
-    .param p0    # C
 
     const v0, 0xac00
 
@@ -118,8 +116,6 @@
 
 .method public static matchesInitial(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, -0x1
 

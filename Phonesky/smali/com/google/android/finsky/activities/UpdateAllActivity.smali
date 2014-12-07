@@ -52,8 +52,6 @@
 
 .method public static getIntent(Landroid/content/Context;Ljava/util/List;Z)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -89,7 +87,6 @@
 
 .method private installUpdate(Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/UpdateAllActivity;->mInstaller:Lcom/google/android/finsky/receivers/Installer;
 
@@ -122,7 +119,6 @@
 
 .method private setButtonText(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -305,8 +301,6 @@
 
 .method private showPage(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const v12, 0x7f050004
 
@@ -698,7 +692,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x4
 
@@ -832,7 +825,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x3
 
@@ -991,7 +983,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

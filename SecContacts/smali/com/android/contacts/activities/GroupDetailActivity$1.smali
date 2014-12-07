@@ -47,7 +47,6 @@
 
 .method public onContactSelected(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -113,7 +112,6 @@
 
 .method public onGroupSizeUpdated(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/contacts/activities/GroupDetailActivity$1;->this$0:Lcom/android/contacts/activities/GroupDetailActivity;
 
@@ -187,9 +185,6 @@
 
 .method public onRemoveMemberRequested(Landroid/content/Context;Ljava/util/ArrayList;ZI)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -283,7 +278,6 @@
 
 .method public onUpdateSelectMenu(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/activities/GroupDetailActivity$1;->this$0:Lcom/android/contacts/activities/GroupDetailActivity;
 

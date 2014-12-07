@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 3
-    .param p1    # [Landroid/accounts/Account;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout$1;->this$0:Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 

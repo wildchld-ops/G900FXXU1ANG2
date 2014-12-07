@@ -80,8 +80,6 @@
 
 .method public static getSuccessfullyInstalledClickedIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -160,7 +158,6 @@
 
 .method private logNotificationClick(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -179,7 +176,6 @@
 
 .method private newUpdateClicked(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/16 v0, 0x384
 
@@ -192,7 +188,6 @@
 
 .method private newUpdateNeedApprovalClicked(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/16 v0, 0x388
 
@@ -205,7 +200,6 @@
 
 .method private outstandingUpdateClicked(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/16 v0, 0x387
 
@@ -218,7 +212,6 @@
 
 .method private startMyDownloadsWithUpdateAllPromptIntent(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -251,9 +244,6 @@
 
 .method private successfullyInstalledClicked(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -304,7 +294,6 @@
 
 .method private successfullyUpdatedClicked(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/16 v0, 0x386
 
@@ -343,8 +332,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

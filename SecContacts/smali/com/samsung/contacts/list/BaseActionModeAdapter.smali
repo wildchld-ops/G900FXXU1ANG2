@@ -61,8 +61,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +77,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/list/BaseActionModeAdapter;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/list/BaseActionModeAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/list/BaseActionModeAdapter;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -88,7 +85,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/list/BaseActionModeAdapter;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/list/BaseActionModeAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/list/BaseActionModeAdapter;->mActivity:Landroid/app/Activity;
 
@@ -215,8 +211,6 @@
 
 .method private setActionContextBarVisibility(ZLandroid/view/ActionMode;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/view/ActionMode;
 
     if-eqz p2, :cond_0
 
@@ -357,8 +351,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/contacts/list/BaseActionModeAdapter;->doActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)V
 
@@ -369,8 +361,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v4, 0x1
 
@@ -444,7 +434,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
 
     invoke-direct {p0}, Lcom/samsung/contacts/list/BaseActionModeAdapter;->clearArrayOrMap()V
 
@@ -461,8 +450,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/contacts/list/BaseActionModeAdapter;->doPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)V
 
@@ -476,7 +463,6 @@
 
 .method public setActionModeMenu(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/list/BaseActionModeAdapter;->mMenuId:I
 

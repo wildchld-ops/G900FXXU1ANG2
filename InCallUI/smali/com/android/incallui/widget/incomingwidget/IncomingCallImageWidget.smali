@@ -56,7 +56,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -121,8 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -187,9 +184,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -313,11 +307,6 @@
 # virtual methods
 .method public addTouchArea(IIIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -455,7 +444,6 @@
 
 .method public dispatchTriggerEvent(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -495,8 +483,6 @@
 
 .method public enableArrowAnimation(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     packed-switch p1, :pswitch_data_0
 
@@ -877,7 +863,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "IncomingCallImageWidget"
 
@@ -888,11 +873,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
@@ -965,7 +945,6 @@
 
 .method protected setGrabbedState(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;->mGrabbedState:I
 
@@ -1034,8 +1013,6 @@
 
 .method public setHandleImageResource(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1067,7 +1044,6 @@
 
 .method public setOnTriggerListener(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget$OnTriggerListener;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget$OnTriggerListener;
 
     iput-object p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;->mOnTriggerListener:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget$OnTriggerListener;
 
@@ -1076,7 +1052,6 @@
 
 .method public setReachedRatio(D)V
     .locals 1
-    .param p1    # D
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;->mLeftHandle:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;
 
@@ -1091,7 +1066,6 @@
 
 .method public setTouchVibationMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;->mUseVibate:Z
 
@@ -1100,7 +1074,6 @@
 
 .method public setVisibility(I)V
     .locals 0
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1114,8 +1087,6 @@
 
 .method public setVisibility(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1147,7 +1118,6 @@
 
 .method public startAirMotionAnimation(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;->mLeftHandle:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;
 
@@ -1448,7 +1418,6 @@
 
 .method public declared-synchronized vibrate(J)V
     .locals 2
-    .param p1    # J
 
     monitor-enter p0
 

@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -53,8 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -69,8 +66,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->setState(I)V
 
@@ -79,8 +74,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->syncIndexOfItemToRate(Z)V
 
@@ -89,8 +82,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->syncState(Z)V
 
@@ -99,7 +90,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;)Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsContentScroller;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->mContentScroller:Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsContentScroller;
 
@@ -108,7 +98,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;)Lcom/google/android/finsky/adapters/OnCollapsedListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->mOnCollapsedListener:Lcom/google/android/finsky/adapters/OnCollapsedListener;
 
@@ -183,8 +172,6 @@
 
 .method public static isClusterDismissed(Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/api/model/Document;)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v1, 0x0
 
@@ -259,7 +246,6 @@
 
 .method private setState(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->mState:I
 
@@ -276,7 +262,6 @@
 
 .method private syncIndexOfItemToRate(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v9, 0x1
 
@@ -445,7 +430,6 @@
 
 .method private syncState(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -657,7 +641,6 @@
 
 .method private transitionToEmptyState(Z)V
     .locals 7
-    .param p1    # Z
 
     const-wide/16 v5, 0xfa
 
@@ -728,11 +711,6 @@
 # virtual methods
 .method public createContent(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/play/PlayCardDismissListener;Lcom/google/android/finsky/layout/play/PlayCardHeap;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayCardHeap;
 
     const/4 v7, 0x0
 
@@ -777,7 +755,6 @@
 
 .method public enableCollapseAnimation(Lcom/google/android/finsky/adapters/OnCollapsedListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/adapters/OnCollapsedListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->mOnCollapsedListener:Lcom/google/android/finsky/adapters/OnCollapsedListener;
 
@@ -998,8 +975,6 @@
 
 .method public onDismissDocument(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     const/4 v2, 0x0
 
@@ -1036,7 +1011,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/play/PlayCardQuickSuggestionsClusterView;->handleErrorOrNoSuggestionsResponse()V
 
@@ -1073,11 +1047,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -1165,8 +1134,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1258,10 +1225,6 @@
 
 .method public setMetadata(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;Lcom/google/android/finsky/api/model/Document;Ljava/util/List;Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

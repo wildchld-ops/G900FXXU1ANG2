@@ -33,9 +33,6 @@
 # virtual methods
 .method public onEncryptionStatusChanged(Ljava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x1
 

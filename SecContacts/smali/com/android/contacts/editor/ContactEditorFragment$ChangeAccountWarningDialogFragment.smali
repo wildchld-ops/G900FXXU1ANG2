@@ -57,10 +57,6 @@
 
 .method public static show(Lcom/android/contacts/editor/ContactEditorFragment;Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/account/AccountWithDataSet;Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 3
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p3    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     new-instance v0, Lcom/android/contacts/editor/ContactEditorFragment$ChangeAccountWarningDialogFragment;
 
@@ -91,7 +87,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v1, Lcom/android/contacts/editor/ContactEditorFragment$ChangeAccountWarningDialogFragment;->mCurrentAccount:Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
@@ -172,7 +167,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "currentState"
 

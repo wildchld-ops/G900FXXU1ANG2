@@ -17,7 +17,6 @@
 # direct methods
 .method private static digest(Ljava/io/InputStream;)Lcom/google/android/finsky/utils/Sha1Util$DigestResult;
     .locals 13
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -105,7 +104,6 @@
 
 .method public static secureHash(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -120,7 +118,6 @@
 
 .method public static secureHash([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     :try_start_0
     const-string v3, "SHA-1"
@@ -156,9 +153,6 @@
 
 .method public static verify(Ljava/io/InputStream;Ljava/lang/String;J)V
     .locals 4
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

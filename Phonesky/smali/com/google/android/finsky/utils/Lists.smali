@@ -25,7 +25,6 @@
 
 .method public static newArrayList(I)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

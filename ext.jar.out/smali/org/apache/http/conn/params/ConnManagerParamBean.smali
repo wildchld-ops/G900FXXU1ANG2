@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1}, Lorg/apache/http/params/HttpAbstractParamBean;-><init>(Lorg/apache/http/params/HttpParams;)V
 
@@ -17,7 +16,6 @@
 # virtual methods
 .method public setConnectionsPerRoute(Lorg/apache/http/conn/params/ConnPerRouteBean;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/params/ConnPerRouteBean;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -30,7 +28,6 @@
 
 .method public setMaxTotalConnections(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -43,7 +40,6 @@
 
 .method public setTimeout(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 

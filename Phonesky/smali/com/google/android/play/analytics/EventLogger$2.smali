@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ILjava/util/concurrent/Semaphore;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iput-object p3, p0, Lcom/google/android/play/analytics/EventLogger$2;->val$semaphore:Ljava/util/concurrent/Semaphore;
 

@@ -174,8 +174,6 @@
 
 .method public static getSettingDB(Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -200,9 +198,6 @@
 
 .method public static getSettingDB(Ljava/lang/String;II)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -227,7 +222,6 @@
 
 .method public static initialize(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/services/telephony/common/SystemDBInterface;->mContext:Landroid/content/Context;
 
@@ -1001,7 +995,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SystemDBInterface"
 
@@ -1012,8 +1005,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "SystemDBInterface"
 
@@ -1024,7 +1015,6 @@
 
 .method public static setDriveLinkModeOn(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "drivelink_mode"
 

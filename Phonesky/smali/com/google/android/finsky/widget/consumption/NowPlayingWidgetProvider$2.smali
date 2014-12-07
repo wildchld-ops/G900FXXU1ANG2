@@ -52,8 +52,6 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/List;
 
@@ -150,7 +148,6 @@
 
 .method getRowAverageHeight(Ljava/util/List;Landroid/content/Context;)I
     .locals 8
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -32,9 +30,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
@@ -47,7 +42,6 @@
 
 .method protected setAlphaLayer(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/contacts/widget/FrameLayoutWithOverlay;->mOverlay:Lcom/android/contacts/widget/AlphaTouchInterceptorOverlay;
 
@@ -58,7 +52,6 @@
 
 .method public setOverlayClickable(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/widget/FrameLayoutWithOverlay;->mOverlay:Lcom/android/contacts/widget/AlphaTouchInterceptorOverlay;
 
@@ -69,7 +62,6 @@
 
 .method public setOverlayOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/android/contacts/widget/FrameLayoutWithOverlay;->mOverlay:Lcom/android/contacts/widget/AlphaTouchInterceptorOverlay;
 

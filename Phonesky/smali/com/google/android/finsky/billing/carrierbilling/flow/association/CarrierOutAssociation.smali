@@ -64,12 +64,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,11 +88,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     invoke-static {}, Lcom/google/android/finsky/billing/BillingLocator;->getCarrierBillingStorage()Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -123,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;->verifyAssociation()V
 
@@ -132,8 +120,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;
-    .param p1    # Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;->dispatch(Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;)V
 
@@ -142,7 +128,6 @@
 
 .method private dispatch(Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;->mListener:Lcom/android/volley/Response$Listener;
 
@@ -178,7 +163,6 @@
 
 .method private formattedTextToSend(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -241,7 +225,6 @@
 
 .method private sendGutToCarrier(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;->mSmsAddress:Ljava/lang/String;
 
@@ -284,7 +267,6 @@
 
 .method private shouldRetryVerification(Lcom/android/volley/VolleyError;)Z
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget v1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;->mVerificationRetries:I
 
@@ -377,7 +359,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 4
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;->shouldRetryVerification(Lcom/android/volley/VolleyError;)Z
 
@@ -455,7 +436,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/CarrierBilling$InitiateAssociationResponse;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/CarrierBilling$InitiateAssociationResponse;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;->mListener:Lcom/android/volley/Response$Listener;
 
@@ -493,7 +473,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/CarrierBilling$InitiateAssociationResponse;
 
@@ -504,7 +483,6 @@
 
 .method public onResult(Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;
 
     sget-object v0, Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;->RESULT_ERROR:Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;
 
@@ -528,8 +506,6 @@
 
 .method public resumeState(Landroid/os/Bundle;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -586,7 +562,6 @@
 
 .method public saveState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "association_state"
 
@@ -611,7 +586,6 @@
 
 .method public setListener(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 0
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -633,7 +607,6 @@
 
 .method public start(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 0
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

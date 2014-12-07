@@ -81,7 +81,6 @@
 
 .method public getPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "OpenSSLHelper"
 

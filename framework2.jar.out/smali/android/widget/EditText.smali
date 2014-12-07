@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -21,8 +20,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101006e
 
@@ -33,9 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -60,7 +54,6 @@
 # virtual methods
 .method public dispatchWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchWindowFocusChanged(Z)V
 
@@ -94,7 +87,6 @@
 
 .method public extendSelection(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -155,9 +147,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 
@@ -185,7 +174,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -280,7 +268,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -297,7 +284,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -326,7 +312,6 @@
 
 .method public setCursorColor(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->setCursorColor(I)V
 
@@ -335,7 +320,6 @@
 
 .method public setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
     .locals 2
-    .param p1    # Landroid/text/TextUtils$TruncateAt;
 
     sget-object v0, Landroid/text/TextUtils$TruncateAt;->MARQUEE:Landroid/text/TextUtils$TruncateAt;
 
@@ -357,8 +341,6 @@
 
 .method public setNewActionPopupMenu(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setNewActionPopupMenu(IZ)V
 
@@ -367,7 +349,6 @@
 
 .method public setSelection(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -380,8 +361,6 @@
 
 .method public setSelection(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -394,8 +373,6 @@
 
 .method public setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/TextView$BufferType;
 
     sget-object v0, Landroid/widget/TextView$BufferType;->EDITABLE:Landroid/widget/TextView$BufferType;
 

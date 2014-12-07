@@ -16,8 +16,6 @@
 # virtual methods
 .method public parse(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Lorg/apache/http/cookie/SetCookie;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

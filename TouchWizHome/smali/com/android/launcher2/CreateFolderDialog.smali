@@ -100,8 +100,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/CreateFolderDialog;Landroid/app/Dialog;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/CreateFolderDialog;
-    .param p1    # Landroid/app/Dialog;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/CreateFolderDialog;->doAddMoreApps(Landroid/app/Dialog;)V
 
@@ -110,8 +108,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/CreateFolderDialog;Landroid/app/Dialog;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/CreateFolderDialog;
-    .param p1    # Landroid/app/Dialog;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/CreateFolderDialog;->doCreateFolder(Landroid/app/Dialog;)V
 
@@ -120,14 +116,6 @@
 
 .method static createAndShow(Landroid/app/FragmentManager;Lcom/android/launcher2/BaseItem;JJZZII)V
     .locals 10
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
 
     if-eqz p0, :cond_0
 
@@ -171,8 +159,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;Z)V
     .locals 3
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Z
 
     const-string v1, "CreateFolderDialog"
 
@@ -208,7 +194,6 @@
 
 .method private doAddMoreApps(Landroid/app/Dialog;)V
     .locals 5
-    .param p1    # Landroid/app/Dialog;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -296,7 +281,6 @@
 
 .method private doCreateFolder(Landroid/app/Dialog;)V
     .locals 11
-    .param p1    # Landroid/app/Dialog;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -499,13 +483,6 @@
 
 .method private init(Lcom/android/launcher2/BaseItem;JJZZII)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
 
     iput-object p1, p0, Lcom/android/launcher2/CreateFolderDialog;->mFolderChildItem:Lcom/android/launcher2/BaseItem;
 
@@ -533,7 +510,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     if-eqz p0, :cond_0
 
@@ -584,8 +560,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 11
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -794,7 +768,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -1127,7 +1100,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -1168,9 +1140,6 @@
 
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1179,7 +1148,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

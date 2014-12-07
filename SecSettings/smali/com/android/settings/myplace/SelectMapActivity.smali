@@ -112,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/myplace/SelectMapActivity;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mEditText:Landroid/widget/EditText;
 
@@ -121,7 +120,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/myplace/SelectMapActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/SelectMapActivity;->searchLocation()V
 
@@ -130,8 +128,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/myplace/SelectMapActivity;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myplace/SelectMapActivity;->getFromLocationName(Ljava/lang/String;)Z
 
@@ -142,7 +138,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/myplace/SelectMapActivity;)Landroid/location/Geocoder;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mGeo:Landroid/location/Geocoder;
 
@@ -151,8 +146,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/myplace/SelectMapActivity;D)I
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # D
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/myplace/SelectMapActivity;->convToInt(D)I
 
@@ -163,10 +156,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/myplace/SelectMapActivity;IILjava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/myplace/SelectMapActivity;->addMarker(IILjava/lang/String;)Z
 
@@ -177,9 +166,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/myplace/SelectMapActivity;II)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/myplace/SelectMapActivity;->moveToMarker(II)Z
 
@@ -190,8 +176,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/myplace/SelectMapActivity;Lcom/google/android/maps/GeoPoint;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # Lcom/google/android/maps/GeoPoint;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myplace/SelectMapActivity;->updateLocation(Lcom/google/android/maps/GeoPoint;)Ljava/lang/String;
 
@@ -202,7 +186,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/myplace/SelectMapActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mIsTabletConfig:Z
 
@@ -211,8 +194,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/myplace/SelectMapActivity;Lcom/google/android/maps/GeoPoint;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # Lcom/google/android/maps/GeoPoint;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myplace/SelectMapActivity;->moveToMarker(Lcom/google/android/maps/GeoPoint;)Z
 
@@ -223,7 +204,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/myplace/SelectMapActivity;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mSearchIcon:Landroid/widget/ImageView;
 
@@ -232,7 +212,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/myplace/SelectMapActivity;)I
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mMapMode:I
 
@@ -241,7 +220,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/myplace/SelectMapActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->TAG:Ljava/lang/String;
 
@@ -250,7 +228,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/myplace/SelectMapActivity;)Landroid/widget/ImageButton;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mCloseIcon:Landroid/widget/ImageButton;
 
@@ -259,7 +236,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/myplace/SelectMapActivity;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mSearchViewContainer:Landroid/widget/FrameLayout;
 
@@ -268,7 +244,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/myplace/SelectMapActivity;)Lcom/google/android/maps/MyLocationOverlay;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mMyLocationOverlay:Lcom/google/android/maps/MyLocationOverlay;
 
@@ -277,7 +252,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/myplace/SelectMapActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/SelectMapActivity;->showLocationDisabledDialog()V
 
@@ -286,7 +260,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/myplace/SelectMapActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity;->mLocation:Ljava/lang/String;
 
@@ -295,8 +268,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/myplace/SelectMapActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/SelectMapActivity;->mLocation:Ljava/lang/String;
 
@@ -305,7 +276,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/myplace/SelectMapActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/SelectMapActivity;->setMyLocationOverlay()V
 
@@ -314,8 +284,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/myplace/SelectMapActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/myplace/SelectMapActivity;->mResearch:Z
 
@@ -324,9 +292,6 @@
 
 .method private addMarker(IILjava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -377,7 +342,6 @@
 
 .method private convToDouble(I)D
     .locals 4
-    .param p1    # I
 
     int-to-double v0, p1
 
@@ -390,7 +354,6 @@
 
 .method private convToInt(D)I
     .locals 2
-    .param p1    # D
 
     const-wide v0, 0x412e848000000000L
 
@@ -409,7 +372,6 @@
 
 .method private getFromLocationName(Ljava/lang/String;)Z
     .locals 22
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual/range {p1 .. p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -674,10 +636,6 @@
 
 .method private getOverlay(IILandroid/graphics/drawable/Drawable;Ljava/lang/String;)Lcom/google/android/maps/OverlayItem;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Ljava/lang/String;
 
     new-instance v1, Lcom/google/android/maps/GeoPoint;
 
@@ -726,8 +684,6 @@
 
 .method private moveToMarker(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -790,7 +746,6 @@
 
 .method private moveToMarker(Lcom/google/android/maps/GeoPoint;)Z
     .locals 4
-    .param p1    # Lcom/google/android/maps/GeoPoint;
 
     const/4 v3, 0x1
 
@@ -1009,7 +964,6 @@
 
 .method private updateLocation(Lcom/google/android/maps/GeoPoint;)Ljava/lang/String;
     .locals 13
-    .param p1    # Lcom/google/android/maps/GeoPoint;
 
     const-string v12, ""
 
@@ -1335,7 +1289,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1346,7 +1299,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -1897,8 +1849,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1928,7 +1878,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -2028,7 +1977,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -2165,7 +2113,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/maps/MapActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

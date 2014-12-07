@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/fgapps/GovernorSD8974Pro;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/ssrm/fgapps/GovernorSD8974Pro$1;->this$0:Lcom/android/server/ssrm/fgapps/GovernorSD8974Pro;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v1, p1, Landroid/os/Message;->what:I
 

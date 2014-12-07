@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lsstream/lib/objs/Image;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lsstream/lib/objs/Image;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

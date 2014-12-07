@@ -105,7 +105,6 @@
 
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/PageFragment;->mImpressionHandler:Landroid/os/Handler;
 
@@ -152,7 +151,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -224,7 +222,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -243,7 +240,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -282,9 +278,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v2, 0x7f080139
 
@@ -419,7 +412,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/fragments/PageFragment;->canChangeFragmentManagerState()Z
 
@@ -473,7 +465,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "finsky.PageFragment.theme"
 
@@ -530,8 +521,6 @@
 
 .method protected setArgument(Ljava/lang/String;Landroid/os/Parcelable;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Parcelable;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/fragments/PageFragment;->getArguments()Landroid/os/Bundle;
 
@@ -544,8 +533,6 @@
 
 .method protected setArgument(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/fragments/PageFragment;->getArguments()Landroid/os/Bundle;
 
@@ -558,8 +545,6 @@
 
 .method protected setArgument(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/fragments/PageFragment;->getArguments()Landroid/os/Bundle;
 
@@ -572,7 +557,6 @@
 
 .method protected setDfeAccount(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -590,7 +574,6 @@
 
 .method protected setDfeToc(Lcom/google/android/finsky/api/model/DfeToc;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
 
     const-string v0, "finsky.PageFragment.toc"
 
@@ -601,7 +584,6 @@
 
 .method protected setTheme(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/fragments/PageFragment;->mTheme:I
 
@@ -642,7 +624,6 @@
 
 .method protected switchToError(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

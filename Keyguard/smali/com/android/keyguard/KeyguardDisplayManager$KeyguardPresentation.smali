@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/Display;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/Display;
 
     invoke-direct {p0, p1, p2}, Landroid/app/Presentation;-><init>(Landroid/content/Context;Landroid/view/Display;)V
 
@@ -55,7 +53,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mMarginLeft:I
 
@@ -64,7 +61,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mUsableWidth:I
 
@@ -73,7 +69,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mClock:Landroid/view/View;
 
@@ -82,7 +77,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mMarginTop:I
 
@@ -91,7 +85,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardDisplayManager$KeyguardPresentation;->mUsableHeight:I
 
@@ -102,7 +95,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 

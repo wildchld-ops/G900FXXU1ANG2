@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardScanThread;Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardScanThread;
-    .param p2    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardScanThread$CanceledException;-><init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$VCardScanThread;)V
 

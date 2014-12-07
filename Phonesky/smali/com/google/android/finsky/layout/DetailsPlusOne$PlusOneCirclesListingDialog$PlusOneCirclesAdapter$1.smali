@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     iget-object v3, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter$1;->this$0:Lcom/google/android/finsky/layout/DetailsPlusOne$PlusOneCirclesListingDialog$PlusOneCirclesAdapter;
 

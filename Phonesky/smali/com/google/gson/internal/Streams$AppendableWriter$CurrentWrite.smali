@@ -34,7 +34,6 @@
 # virtual methods
 .method public charAt(I)C
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->chars:[C
 
@@ -55,8 +54,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/lang/String;
 

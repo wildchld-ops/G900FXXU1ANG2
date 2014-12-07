@@ -56,9 +56,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p3}, Lcom/google/android/finsky/api/model/BucketedList;-><init>(Ljava/lang/String;)V
 
@@ -73,8 +70,6 @@
 
 .method private constructor <init>(Ljava/util/List;ILjava/lang/String;)V
     .locals 1
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -122,10 +117,6 @@
 
 .method synthetic constructor <init>(Ljava/util/List;ILjava/lang/String;Lcom/google/android/finsky/api/model/DfeSearch$1;)V
     .locals 0
-    .param p1    # Ljava/util/List;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeSearch$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/api/model/DfeSearch;-><init>(Ljava/util/List;ILjava/lang/String;)V
 
@@ -222,7 +213,6 @@
 
 .method protected getItemsFromResponse(Lcom/google/android/finsky/protos/Search$SearchResponse;)Ljava/util/List;
     .locals 11
-    .param p1    # Lcom/google/android/finsky/protos/Search$SearchResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -351,7 +341,6 @@
 
 .method protected bridge synthetic getItemsFromResponse(Ljava/lang/Object;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Search$SearchResponse;
 
@@ -364,7 +353,6 @@
 
 .method protected getNextPageUrl(Lcom/google/android/finsky/protos/Search$SearchResponse;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/Search$SearchResponse;
 
     const/4 v1, 0x0
 
@@ -396,7 +384,6 @@
 
 .method protected bridge synthetic getNextPageUrl(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Search$SearchResponse;
 
@@ -490,7 +477,6 @@
 
 .method protected makeRequest(Ljava/lang/String;)Lcom/android/volley/Request;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -512,7 +498,6 @@
 
 .method public setDfeApi(Lcom/google/android/finsky/api/DfeApi;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
 
     iput-object p1, p0, Lcom/google/android/finsky/api/model/DfeSearch;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -521,8 +506,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/google/android/finsky/api/model/DfeSearch;->mUrlOffsetList:Ljava/util/List;
 

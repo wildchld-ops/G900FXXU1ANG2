@@ -23,7 +23,6 @@
 # virtual methods
 .method public add(J)V
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/google/android/finsky/library/SumHasher;->mHash:J
 
@@ -44,7 +43,6 @@
 
 .method public remove(J)V
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/google/android/finsky/library/SumHasher;->mHash:J
 

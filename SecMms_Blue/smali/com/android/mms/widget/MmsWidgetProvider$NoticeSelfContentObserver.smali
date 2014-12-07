@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/widget/MmsWidgetProvider;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/widget/MmsWidgetProvider$NoticeSelfContentObserver;->this$0:Lcom/android/mms/widget/MmsWidgetProvider;
 
@@ -44,7 +43,6 @@
 
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 

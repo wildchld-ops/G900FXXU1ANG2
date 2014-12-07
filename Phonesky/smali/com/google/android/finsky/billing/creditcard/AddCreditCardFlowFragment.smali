@@ -93,8 +93,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;)Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->getAddressSpec(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;)Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
 
@@ -105,7 +103,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;)Lcom/google/android/finsky/layout/BillingAddress;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->mBillingAddress:Lcom/google/android/finsky/layout/BillingAddress;
 
@@ -114,7 +111,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->mMainView:Landroid/view/ViewGroup;
 
@@ -123,7 +119,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;)Lcom/google/android/finsky/layout/CreditCardNumberEditText;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->mCcNumberField:Lcom/google/android/finsky/layout/CreditCardNumberEditText;
 
@@ -132,7 +127,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->onBillingCountriesLoaded()V
 
@@ -141,8 +135,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->displayError(Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;)Landroid/widget/TextView;
 
@@ -318,7 +310,6 @@
 
 .method private displayError(Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;)Landroid/widget/TextView;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;->errorMessage:Ljava/lang/String;
 
@@ -390,7 +381,6 @@
 
 .method private getAddressSpec(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;)Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
 
     const/4 v2, 0x1
 
@@ -891,8 +881,6 @@
 
 .method private static makeInputValidationError(ILjava/lang/String;)Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -913,9 +901,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/billing/BillingUtils$CreateInstrumentUiMode;)Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/billing/BillingUtils$CreateInstrumentUiMode;
 
     new-instance v1, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
 
@@ -1039,7 +1024,6 @@
 
 .method private setupBillingCountriesWidgets(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->mSelectedCountry:Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
 
@@ -1179,7 +1163,6 @@
 
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -1192,7 +1175,6 @@
 
 .method public displayErrors([Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;)V
     .locals 5
-    .param p1    # [Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->clearErrorMessages()V
 
@@ -1238,7 +1220,6 @@
 
 .method public enableUi(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->mWidgetsInitialized:Z
 
@@ -1286,7 +1267,6 @@
 
 .method protected finishWithUpdateInstrumentResponse(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/InstrumentFlowFragment;->finishWithUpdateInstrumentResponse(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)V
 
@@ -1323,7 +1303,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     instance-of v0, p1, Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -1345,7 +1324,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -1415,7 +1393,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/InstrumentFlowFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1508,9 +1485,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     if-nez p2, :cond_0
 
@@ -1905,8 +1879,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;->cancel()V
 
@@ -1929,8 +1901,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -1962,7 +1932,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/InstrumentFlowFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2039,7 +2008,6 @@
 
 .method public onStateChange(Lcom/google/android/finsky/fragments/SidecarFragment;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/fragments/SidecarFragment;
 
     const/4 v1, 0x1
 

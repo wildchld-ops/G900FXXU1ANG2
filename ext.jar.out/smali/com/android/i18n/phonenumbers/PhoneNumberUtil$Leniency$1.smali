@@ -29,9 +29,6 @@
 # virtual methods
 .method verify(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;Lcom/android/i18n/phonenumbers/PhoneNumberUtil;)Z
     .locals 1
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
     invoke-virtual {p3, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->isPossibleNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
 

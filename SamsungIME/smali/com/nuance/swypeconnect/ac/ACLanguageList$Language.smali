@@ -33,12 +33,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;Ljava/lang/String;[ILjava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,7 +53,6 @@
 
 .method static synthetic access$000(Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;->isoCodeFull:Ljava/lang/String;
 
@@ -68,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;->englishName:Ljava/lang/String;
 
@@ -77,7 +69,6 @@
 
 .method static synthetic access$200(Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;)[I
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;->xt9LangId:[I
 
@@ -86,7 +77,6 @@
 
 .method static synthetic access$300(Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;)I
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;
 
     iget v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;->core:I
 
@@ -230,7 +220,6 @@
 
 .method public usesXT9Id(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;->xt9LangId:[I
 

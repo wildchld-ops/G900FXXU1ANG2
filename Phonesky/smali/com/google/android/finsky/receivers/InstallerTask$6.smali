@@ -56,7 +56,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/io/File;
     .locals 27
-    .param p1    # [Ljava/lang/Void;
 
     move-object/from16 v0, p0
 
@@ -1335,7 +1334,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -1348,7 +1346,6 @@
 
 .method protected onPostExecute(Ljava/io/File;)V
     .locals 8
-    .param p1    # Ljava/io/File;
 
     const/4 v3, 0x0
 
@@ -1481,7 +1478,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/io/File;
 

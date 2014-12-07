@@ -1157,7 +1157,6 @@
 
 .method public constructor <init>(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, -0x1
 
@@ -1732,7 +1731,6 @@
 
 .method private AddToButtonInPanel(Z)V
     .locals 17
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -2071,8 +2069,6 @@
 
 .method private CheckValidRecipient(Ljava/lang/String;[Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v5, 0x3
 
@@ -2214,8 +2210,6 @@
 
 .method private GetStrPixelWidth(Ljava/lang/String;Landroid/graphics/Paint;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Paint;
 
     const/4 v0, 0x0
 
@@ -2230,7 +2224,6 @@
 
 .method private IsNewMessageApk(Landroid/content/Intent;)Z
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -2292,8 +2285,6 @@
 
 .method private MakeToButtons(Ljava/lang/String;Z)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v7, 0x4
 
@@ -2724,9 +2715,6 @@
 
 .method private MakeToButtonsByRecipientEditor(ZZZ)Z
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -2739,10 +2727,6 @@
 
 .method private MakeToButtonsByRecipientEditor(ZZZZ)Z
     .locals 15
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v13, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mRecipientsEditor:Lcom/android/mms/ui/RecipientsEditor;
 
@@ -3046,7 +3030,6 @@
 
 .method private MakeToButtonsByString(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -3432,7 +3415,6 @@
 
 .method private RemoveToButton(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -3672,7 +3654,6 @@
 
 .method private UpdateToButtonPanel(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x1
 
@@ -3770,7 +3751,6 @@
 
 .method private UpdateWorkingRecipients(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -3956,8 +3936,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mLowSignal:Z
 
@@ -3966,7 +3944,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->resetMessage()V
 
@@ -3975,7 +3952,6 @@
 
 .method static synthetic access$10000(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsDeleteAnimation:Z
 
@@ -3984,8 +3960,6 @@
 
 .method static synthetic access$10002(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsDeleteAnimation:Z
 
@@ -3994,7 +3968,6 @@
 
 .method static synthetic access$10100(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->refreshCheckedList()V
 
@@ -4003,7 +3976,6 @@
 
 .method static synthetic access$10200(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDelAnimProgressDialog:Landroid/app/ProgressDialog;
 
@@ -4012,7 +3984,6 @@
 
 .method static synthetic access$10300(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSentMessage:Z
 
@@ -4021,8 +3992,6 @@
 
 .method static synthetic access$10302(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSentMessage:Z
 
@@ -4031,7 +4000,6 @@
 
 .method static synthetic access$10400(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDraftSavedOnStop:Z
 
@@ -4040,8 +4008,6 @@
 
 .method static synthetic access$10402(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDraftSavedOnStop:Z
 
@@ -4050,7 +4016,6 @@
 
 .method static synthetic access$10500(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsOnScreen:Z
 
@@ -4059,8 +4024,6 @@
 
 .method static synthetic access$10602(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mFlagDeletedAll:Z
 
@@ -4069,10 +4032,6 @@
 
 .method static synthetic access$10700(Lcom/android/mms/ui/ComposeMessageFragment;III)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/ComposeMessageFragment;->isUnderLength(III)Z
 
@@ -4083,8 +4042,6 @@
 
 .method static synthetic access$10800(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/data/Contact;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Lcom/android/mms/data/Contact;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->updatePresence(Lcom/android/mms/data/Contact;)V
 
@@ -4093,7 +4050,6 @@
 
 .method static synthetic access$10900(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->showAnimationFlag:Z
 
@@ -4102,8 +4058,6 @@
 
 .method static synthetic access$10902(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->showAnimationFlag:Z
 
@@ -4112,7 +4066,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->requestDrawPointerOnConverationList()V
 
@@ -4121,7 +4074,6 @@
 
 .method static synthetic access$11000(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->previewProgressDialog:Landroid/app/ProgressDialog;
 
@@ -4130,8 +4082,6 @@
 
 .method static synthetic access$11102(Lcom/android/mms/ui/ComposeMessageFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->toButtonLayoutHeight:I
 
@@ -4140,7 +4090,6 @@
 
 .method static synthetic access$11200(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mInvalidRecipientsDialog:Landroid/app/AlertDialog;
 
@@ -4149,7 +4098,6 @@
 
 .method static synthetic access$11300(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mToButtonDeleteHandler:Landroid/os/Handler;
 
@@ -4158,8 +4106,6 @@
 
 .method static synthetic access$11400(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ToButton;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Lcom/android/mms/ui/ToButton;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->showToButtonMenuDialog(Lcom/android/mms/ui/ToButton;)V
 
@@ -4168,7 +4114,6 @@
 
 .method static synthetic access$11500(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->setFocusOnPreToButton()Z
 
@@ -4179,7 +4124,6 @@
 
 .method static synthetic access$11600(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->setFocusOnNextToButton()Z
 
@@ -4190,8 +4134,6 @@
 
 .method static synthetic access$11700(Lcom/android/mms/ui/ComposeMessageFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->RemoveToButton(I)V
 
@@ -4200,8 +4142,6 @@
 
 .method static synthetic access$11800(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ToButton;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Lcom/android/mms/ui/ToButton;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->addToContact(Lcom/android/mms/ui/ToButton;)V
 
@@ -4210,8 +4150,6 @@
 
 .method static synthetic access$11900(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ToButton;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Lcom/android/mms/ui/ToButton;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->viewContact(Lcom/android/mms/ui/ToButton;)V
 
@@ -4220,10 +4158,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/ComposeMessageFragment;Ljava/lang/String;JZ)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/ComposeMessageFragment;->getMessageItem(Ljava/lang/String;JZ)Lcom/android/mms/ui/MessageItem;
 
@@ -4234,8 +4168,6 @@
 
 .method static synthetic access$12002(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsOpenToButtonMenu:Z
 
@@ -4244,8 +4176,6 @@
 
 .method static synthetic access$12102(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mToButtonDialog:Landroid/app/AlertDialog;
 
@@ -4254,8 +4184,6 @@
 
 .method static synthetic access$12200(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->pasteClipBoardData(Landroid/sec/clipboard/data/ClipboardData;)V
 
@@ -4264,7 +4192,6 @@
 
 .method static synthetic access$12300(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mClipboardHandler:Landroid/os/Handler;
 
@@ -4273,7 +4200,6 @@
 
 .method static synthetic access$12400(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->applyFontSize()V
 
@@ -4282,9 +4208,6 @@
 
 .method static synthetic access$12500(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ToButton;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Lcom/android/mms/ui/ToButton;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ComposeMessageFragment;->onClickToButton(Lcom/android/mms/ui/ToButton;Landroid/view/View;)V
 
@@ -4293,7 +4216,6 @@
 
 .method static synthetic access$12600(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->showGroupMesageInfolDialog()V
 
@@ -4302,8 +4224,6 @@
 
 .method static synthetic access$12702(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->isHeaderUpdateNeeded:Z
 
@@ -4312,7 +4232,6 @@
 
 .method static synthetic access$12800(Lcom/android/mms/ui/ComposeMessageFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mPriorityLevel:I
 
@@ -4321,8 +4240,6 @@
 
 .method static synthetic access$12802(Lcom/android/mms/ui/ComposeMessageFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mPriorityLevel:I
 
@@ -4331,8 +4248,6 @@
 
 .method static synthetic access$12900(Lcom/android/mms/ui/ComposeMessageFragment;I)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->isExtendEditField(I)Z
 
@@ -4343,8 +4258,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/ComposeMessageFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->changeThreadviewTextSizeTo(I)V
 
@@ -4353,8 +4266,6 @@
 
 .method static synthetic access$13000(Lcom/android/mms/ui/ComposeMessageFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->setEditingMode(Z)V
 
@@ -4363,7 +4274,6 @@
 
 .method static synthetic access$13100(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->setPriorityIcon()V
 
@@ -4372,7 +4282,6 @@
 
 .method static synthetic access$13200(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mNationalPrefixEnable:Z
 
@@ -4381,7 +4290,6 @@
 
 .method static synthetic access$13300(Lcom/android/mms/ui/ComposeMessageFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mNationalPrefixNum:Ljava/lang/String;
 
@@ -4390,8 +4298,6 @@
 
 .method static synthetic access$13400(Lcom/android/mms/ui/ComposeMessageFragment;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->findRecipientFromTobutton(Ljava/lang/String;)I
 
@@ -4402,9 +4308,6 @@
 
 .method static synthetic access$13500(Lcom/android/mms/ui/ComposeMessageFragment;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ComposeMessageFragment;->remove7DigitRecipient(Ljava/lang/String;I)V
 
@@ -4413,8 +4316,6 @@
 
 .method static synthetic access$13602(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mNetworkWarningDialog:Landroid/app/AlertDialog;
 
@@ -4423,7 +4324,6 @@
 
 .method static synthetic access$13700(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->dismissDialog()V
 
@@ -4432,9 +4332,6 @@
 
 .method static synthetic access$13800(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4448,8 +4345,6 @@
 
 .method static synthetic access$13900(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->addRecipientToContacts(Landroid/view/View;)V
 
@@ -4458,8 +4353,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->setFocusFailedIcon(Z)Z
 
@@ -4470,7 +4363,6 @@
 
 .method static synthetic access$14000(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->OnClickSendButton()V
 
@@ -4479,7 +4371,6 @@
 
 .method static synthetic access$14100(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposeEmoticonContainer:Landroid/widget/FrameLayout;
 
@@ -4488,7 +4379,6 @@
 
 .method static synthetic access$14200(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAppBody:Landroid/view/View;
 
@@ -4497,7 +4387,6 @@
 
 .method static synthetic access$14300(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsLandscape:Z
 
@@ -4506,7 +4395,6 @@
 
 .method static synthetic access$14400(Lcom/android/mms/ui/ComposeMessageFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposerHeightLandscape:I
 
@@ -4515,7 +4403,6 @@
 
 .method static synthetic access$14502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/ui/ComposeMessageFragment;->mKeypadHeightLandscape:I
 
@@ -4524,7 +4411,6 @@
 
 .method static synthetic access$14600(Lcom/android/mms/ui/ComposeMessageFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposerHeightPortrait:I
 
@@ -4533,7 +4419,6 @@
 
 .method static synthetic access$14702(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/ui/ComposeMessageFragment;->mKeypadHeightPortrait:I
 
@@ -4542,7 +4427,6 @@
 
 .method static synthetic access$14800(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmoticonsNoRecent:Landroid/widget/TextView;
 
@@ -4551,7 +4435,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->requestFocusOnConverationList()V
 
@@ -4560,9 +4443,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/widget/EditText;I)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ComposeMessageFragment;->getEditorLineDirection(Landroid/widget/EditText;I)I
 
@@ -4573,7 +4453,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEasyModeContactButtonLinear:Landroid/widget/LinearLayout;
 
@@ -4582,7 +4461,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmojiButton:Landroid/widget/Button;
 
@@ -4591,7 +4469,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmojiButtonLandscape:Landroid/widget/Button;
 
@@ -4600,7 +4477,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->updateNormalModeActionBar()V
 
@@ -4609,8 +4485,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/ui/ComposeMessageFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->UpdateToButtonPanel(Z)V
 
@@ -4619,8 +4493,6 @@
 
 .method static synthetic access$2602(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSendConfirmDialog:Landroid/app/AlertDialog;
 
@@ -4629,7 +4501,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->checkInputModeAndSendMessage()V
 
@@ -4638,7 +4509,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->AdjustMmsRecipient()V
 
@@ -4647,7 +4517,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->m_BtnReceiverAdd:Landroid/widget/Button;
 
@@ -4656,7 +4525,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ComposeMessageFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mFontSizeIndex:I
 
@@ -4665,7 +4533,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mRecipientButton:Landroid/widget/Button;
 
@@ -4674,8 +4541,6 @@
 
 .method static synthetic access$3102(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsRecpButtonShowing:Z
 
@@ -4684,7 +4549,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mRemoveComposer:Z
 
@@ -4693,10 +4557,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/ui/ComposeMessageFragment;ZZZ)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/ComposeMessageFragment;->MakeToButtonsByRecipientEditor(ZZZ)Z
 
@@ -4707,7 +4567,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mKeepToButtonVisible:Z
 
@@ -4716,8 +4575,6 @@
 
 .method static synthetic access$3402(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mKeepToButtonVisible:Z
 
@@ -4726,7 +4583,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsAnimationEnable:Z
 
@@ -4735,7 +4591,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->showAnimationFlagOnFocusChange:Z
 
@@ -4744,8 +4599,6 @@
 
 .method static synthetic access$3602(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->showAnimationFlagOnFocusChange:Z
 
@@ -4754,7 +4607,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/ui/ComposeMessageFragment;)Ljava/util/SortedMap;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mToButtonList:Ljava/util/SortedMap;
 
@@ -4763,7 +4615,6 @@
 
 .method static synthetic access$3800(Lcom/android/mms/ui/ComposeMessageFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->calcToButtonLayoutHeight()I
 
@@ -4774,8 +4625,6 @@
 
 .method static synthetic access$3900(Lcom/android/mms/ui/ComposeMessageFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->AddToButtonInPanel(Z)V
 
@@ -4784,8 +4633,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ComposeMessageFragment;I)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->isEditingMode(I)Z
 
@@ -4796,7 +4643,6 @@
 
 .method static synthetic access$4000(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->isLongPressed:Z
 
@@ -4805,8 +4651,6 @@
 
 .method static synthetic access$4002(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->isLongPressed:Z
 
@@ -4815,7 +4659,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->setFocusOnLastToButton()V
 
@@ -4824,8 +4667,6 @@
 
 .method static synthetic access$4200(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/view/KeyEvent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->findAvailableViewToFocus(Landroid/view/KeyEvent;)V
 
@@ -4834,7 +4675,6 @@
 
 .method static synthetic access$4300(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/android/mms/ui/ComposeMultiLockMessage;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mMultiLockMessage:Lcom/android/mms/ui/ComposeMultiLockMessage;
 
@@ -4843,7 +4683,6 @@
 
 .method static synthetic access$4400(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/android/mms/ui/ComposeDeleteMessage;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDeleteMessage:Lcom/android/mms/ui/ComposeDeleteMessage;
 
@@ -4852,7 +4691,6 @@
 
 .method static synthetic access$4500(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mBottomPanel:Landroid/view/View;
 
@@ -4861,8 +4699,6 @@
 
 .method static synthetic access$4602(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsAttachShowing:Z
 
@@ -4871,8 +4707,6 @@
 
 .method static synthetic access$4802(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDialogflag:Z
 
@@ -4881,8 +4715,6 @@
 
 .method static synthetic access$4902(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDiscardDraftConfirmDialog:Landroid/app/AlertDialog;
 
@@ -4891,7 +4723,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAttachListPanel:Landroid/widget/LinearLayout;
 
@@ -4900,9 +4731,6 @@
 
 .method static synthetic access$5000(Lcom/android/mms/ui/ComposeMessageFragment;ZI)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ComposeMessageFragment;->toastConvertInfo(ZI)V
 
@@ -4911,7 +4739,6 @@
 
 .method static synthetic access$5100(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/os/Vibrator;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mVibrator:Landroid/os/Vibrator;
 
@@ -4920,8 +4747,6 @@
 
 .method static synthetic access$5102(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/os/Vibrator;)Landroid/os/Vibrator;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/os/Vibrator;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mVibrator:Landroid/os/Vibrator;
 
@@ -4930,7 +4755,6 @@
 
 .method static synthetic access$5200(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mNoticeHandler:Landroid/os/Handler;
 
@@ -4939,7 +4763,6 @@
 
 .method static synthetic access$5300(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->updateThreadIdIfRunning()V
 
@@ -4948,8 +4771,6 @@
 
 .method static synthetic access$5400(Lcom/android/mms/ui/ComposeMessageFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->hideMessageList(Z)V
 
@@ -4958,7 +4779,6 @@
 
 .method static synthetic access$5500(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAttachDialog:Landroid/app/AlertDialog;
 
@@ -4967,8 +4787,6 @@
 
 .method static synthetic access$5502(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAttachDialog:Landroid/app/AlertDialog;
 
@@ -4977,7 +4795,6 @@
 
 .method static synthetic access$5600(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/android/mms/ui/IconListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAddTextAdapter:Lcom/android/mms/ui/IconListAdapter;
 
@@ -4986,8 +4803,6 @@
 
 .method static synthetic access$5602(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/IconListAdapter;)Lcom/android/mms/ui/IconListAdapter;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Lcom/android/mms/ui/IconListAdapter;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAddTextAdapter:Lcom/android/mms/ui/IconListAdapter;
 
@@ -4996,8 +4811,6 @@
 
 .method static synthetic access$5700(Lcom/android/mms/ui/ComposeMessageFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment;->chooseContact(I)V
 
@@ -5006,7 +4819,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEasyModeAttachButtonLinear:Landroid/widget/LinearLayout;
 
@@ -5015,7 +4827,6 @@
 
 .method static synthetic access$6000(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->saveMmsStateForWarningMode()V
 
@@ -5024,7 +4835,6 @@
 
 .method static synthetic access$6200(Lcom/android/mms/ui/ComposeMessageFragment;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mCreationgDialogHash:Ljava/util/HashSet;
 
@@ -5033,7 +4843,6 @@
 
 .method static synthetic access$6300(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->showEmoticonPanel()V
 
@@ -5042,7 +4851,6 @@
 
 .method static synthetic access$6400(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmoticonsLayout:Landroid/widget/RelativeLayout;
 
@@ -5051,7 +4859,6 @@
 
 .method static synthetic access$6500(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->hideEmoticonPanel()V
 
@@ -5060,8 +4867,6 @@
 
 .method static synthetic access$6602(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmoticonMode:Z
 
@@ -5070,8 +4875,6 @@
 
 .method static synthetic access$6702(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/widget/PopupWindow;)Landroid/widget/PopupWindow;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/widget/PopupWindow;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mPopupEmoticonContainer:Landroid/widget/PopupWindow;
 
@@ -5080,7 +4883,6 @@
 
 .method static synthetic access$6800(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/android/mms/ui/CustomScrollView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposerPanel:Lcom/android/mms/ui/CustomScrollView;
 
@@ -5089,7 +4891,6 @@
 
 .method static synthetic access$6900(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/AdapterView$OnItemClickListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mOnEmoticonSelectedListener:Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -5098,7 +4899,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAttachButton:Landroid/widget/Button;
 
@@ -5115,7 +4915,6 @@
 
 .method static synthetic access$7002(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmoticonCategory:I
 
@@ -5124,7 +4923,6 @@
 
 .method static synthetic access$7100(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/android/mms/ui/ComposeMessageFragment$EmoticonTabManager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmoticonTabManager:Lcom/android/mms/ui/ComposeMessageFragment$EmoticonTabManager;
 
@@ -5133,7 +4931,6 @@
 
 .method static synthetic access$7200(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDeleteTab:Landroid/widget/ImageView;
 
@@ -5142,8 +4939,6 @@
 
 .method static synthetic access$7202(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDeleteTab:Landroid/widget/ImageView;
 
@@ -5152,7 +4947,6 @@
 
 .method static synthetic access$7300(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEmoticonsPager:Landroid/support/v4/view/ViewPager;
 
@@ -5161,7 +4955,6 @@
 
 .method static synthetic access$7500(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mFocusedEdit:Landroid/widget/EditText;
 
@@ -5170,8 +4963,6 @@
 
 .method static synthetic access$7502(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/widget/EditText;)Landroid/widget/EditText;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/widget/EditText;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mFocusedEdit:Landroid/widget/EditText;
 
@@ -5180,7 +4971,6 @@
 
 .method static synthetic access$7600(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDeleteHandler:Landroid/os/Handler;
 
@@ -5189,8 +4979,6 @@
 
 .method static synthetic access$7602(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDeleteHandler:Landroid/os/Handler;
 
@@ -5199,7 +4987,6 @@
 
 .method static synthetic access$7700(Lcom/android/mms/ui/ComposeMessageFragment;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDeleteRunnable:Ljava/lang/Runnable;
 
@@ -5208,8 +4995,6 @@
 
 .method static synthetic access$7702(Lcom/android/mms/ui/ComposeMessageFragment;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mDeleteRunnable:Ljava/lang/Runnable;
 
@@ -5218,7 +5003,6 @@
 
 .method static synthetic access$7800(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mStartMethod:Z
 
@@ -5227,8 +5011,6 @@
 
 .method static synthetic access$7802(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mStartMethod:Z
 
@@ -5237,7 +5019,6 @@
 
 .method static synthetic access$7900(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mRefreshLocationDialog:Landroid/app/ProgressDialog;
 
@@ -5246,8 +5027,6 @@
 
 .method static synthetic access$7902(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mRefreshLocationDialog:Landroid/app/ProgressDialog;
 
@@ -5256,7 +5035,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEasyModeSendButtonLinear:Landroid/widget/LinearLayout;
 
@@ -5265,7 +5043,6 @@
 
 .method static synthetic access$8000(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/samsung/mms/location/LocationSensor;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mLocationSensor:Lcom/samsung/mms/location/LocationSensor;
 
@@ -5274,9 +5051,6 @@
 
 .method static synthetic access$8100(Lcom/android/mms/ui/ComposeMessageFragment;DD)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # D
-    .param p3    # D
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/ComposeMessageFragment;->getBaiduLocationMessage(DD)Ljava/lang/String;
 
@@ -5287,8 +5061,6 @@
 
 .method static synthetic access$8202(Lcom/android/mms/ui/ComposeMessageFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mGroupSnippetText:Ljava/lang/String;
 
@@ -5297,7 +5069,6 @@
 
 .method static synthetic access$8300(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -5306,7 +5077,6 @@
 
 .method static synthetic access$8400(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->updateDoneCancelBtn()V
 
@@ -5315,7 +5085,6 @@
 
 .method static synthetic access$8500(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSmartClip:Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip;
 
@@ -5324,8 +5093,6 @@
 
 .method static synthetic access$8602(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAirButtonSipCheck:Z
 
@@ -5334,7 +5101,6 @@
 
 .method static synthetic access$8700(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAttachListText:Landroid/widget/TextView;
 
@@ -5343,7 +5109,6 @@
 
 .method static synthetic access$8800(Lcom/android/mms/ui/ComposeMessageFragment;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAttachLayout:Landroid/widget/LinearLayout;
 
@@ -5352,9 +5117,6 @@
 
 .method static synthetic access$8900(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/model/AttachmentModel;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Lcom/android/mms/model/AttachmentModel;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ComposeMessageFragment;->attachmentListRemoveClick(Lcom/android/mms/model/AttachmentModel;I)V
 
@@ -5363,8 +5125,6 @@
 
 .method static synthetic access$9002(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->isSelectionActionMode:Z
 
@@ -5373,8 +5133,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/DialogFragment;)Landroid/app/DialogFragment;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Landroid/app/DialogFragment;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mLinkDialog:Landroid/app/DialogFragment;
 
@@ -5383,7 +5141,6 @@
 
 .method static synthetic access$9100(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->showHideActionbar()V
 
@@ -5392,8 +5149,6 @@
 
 .method static synthetic access$9202(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mPossiblePendingNotification:Z
 
@@ -5402,7 +5157,6 @@
 
 .method static synthetic access$9300(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->checkPendingNotification()V
 
@@ -5411,7 +5165,6 @@
 
 .method static synthetic access$9400(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->startMsgListCopytoSIMQuery()Z
 
@@ -5422,7 +5175,6 @@
 
 .method static synthetic access$9500(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/android/mms/ui/ComposeMessageFragment$queryEventRegulator;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mQueryEventRegulator:Lcom/android/mms/ui/ComposeMessageFragment$queryEventRegulator;
 
@@ -5431,7 +5183,6 @@
 
 .method static synthetic access$9600(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsDeleteWithAnimation:Z
 
@@ -5440,7 +5191,6 @@
 
 .method static synthetic access$9700(Lcom/android/mms/ui/ComposeMessageFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mShowConversationViewVerificationLog:Z
 
@@ -5449,8 +5199,6 @@
 
 .method static synthetic access$9702(Lcom/android/mms/ui/ComposeMessageFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mShowConversationViewVerificationLog:Z
 
@@ -5459,7 +5207,6 @@
 
 .method static synthetic access$9800(Lcom/android/mms/ui/ComposeMessageFragment;)Lcom/android/mms/ui/MessageListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mMsgListView:Lcom/android/mms/ui/MessageListView;
 
@@ -5468,7 +5215,6 @@
 
 .method static synthetic access$9900(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->sanityCheckConversation()V
 
@@ -5477,7 +5223,6 @@
 
 .method private addRecipientToContacts(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/16 v5, 0xc8
 
@@ -5660,7 +5405,6 @@
 
 .method private addToContact(Lcom/android/mms/ui/ToButton;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/ToButton;
 
     invoke-virtual {p1}, Lcom/android/mms/ui/ToButton;->getNumber()Ljava/lang/String;
 
@@ -5810,7 +5554,6 @@
 
 .method private attachWBimage(Landroid/graphics/Bitmap;)V
     .locals 13
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v1, 0x1
 
@@ -5903,8 +5646,6 @@
 
 .method private attachmentListRemoveClick(Lcom/android/mms/model/AttachmentModel;I)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/AttachmentModel;
-    .param p2    # I
 
     const/16 v2, 0x8
 
@@ -6242,8 +5983,6 @@
 
 .method private calculateNewSelection(Landroid/text/Editable;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/text/Editable;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1}, Landroid/text/Editable;->length()I
 
@@ -6283,8 +6022,6 @@
 
 .method public static cancelFailedDownloadNotification(Landroid/content/Intent;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->isFailedToDownload(Landroid/content/Intent;)Z
 
@@ -6309,8 +6046,6 @@
 
 .method public static cancelFailedToDeliverNotification(Landroid/content/Intent;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MessagingNotification;->isFailedToDeliver(Landroid/content/Intent;)Z
 
@@ -6335,7 +6070,6 @@
 
 .method private changeRecipientEditorTopMargin(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mRecipientsEditor:Lcom/android/mms/ui/RecipientsEditor;
 
@@ -6398,7 +6132,6 @@
 
 .method private changeThreadviewTextSizeTo(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x5
 
@@ -6464,7 +6197,6 @@
 
 .method private checkAndUpdateEditorSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mMmsRichContainer:Lcom/android/mms/ui/MmsRichContainer;
 
@@ -6547,7 +6279,6 @@
 
 .method private checkDuplicateComposerState(Landroid/content/Intent;)Z
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -7437,7 +7168,6 @@
 
 .method private chooseContact(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->isAdded()Z
 
@@ -7582,7 +7312,6 @@
 
 .method private closeRecipientsCursor(Lcom/android/mms/ui/RecipientsEditor;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/RecipientsEditor;
 
     if-nez p1, :cond_1
 
@@ -7606,8 +7335,6 @@
 
 .method private confirm7DigitCompletionDialog(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -7642,7 +7369,6 @@
 
 .method public static containsOwnBundle(Landroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_0
 
@@ -7671,9 +7397,6 @@
 
 .method private static copyContentCache(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;)V
     .locals 23
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -8058,8 +7781,6 @@
 
 .method private createAttachmentTypeAdapter(ZI)Lcom/android/mms/ui/IconListAdapter;
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableGridViewOnAddAttachmentMenu()Z
 
@@ -8149,8 +7870,6 @@
 
 .method public static createIntent(Landroid/content/Context;J)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     new-instance v0, Landroid/content/Intent;
 
@@ -8180,9 +7899,6 @@
 
 .method public static createIntent(Landroid/content/Context;JI)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -8218,9 +7934,6 @@
 
 .method public static createIntent(Landroid/content/Context;JZ)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -8250,10 +7963,6 @@
 
 .method public static createIntent(Landroid/content/Context;JZI)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -8579,7 +8288,6 @@
 
 .method private drawTopPanel(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -8628,7 +8336,6 @@
 
 .method private editMmsMessageItem(Lcom/android/mms/ui/MessageItem;)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v0, 0x1
 
@@ -8737,7 +8444,6 @@
 
 .method private editSmsMessageItem(Lcom/android/mms/ui/MessageItem;)V
     .locals 6
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v5, 0x0
 
@@ -8849,7 +8555,6 @@
 
 .method public static declared-synchronized fillCache(Z)V
     .locals 6
-    .param p0    # Z
 
     const/4 v1, 0x0
 
@@ -9005,7 +8710,6 @@
 
 .method private findAvailableViewToFocus(Landroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mEasyModeContactButtonLinear:Landroid/widget/LinearLayout;
 
@@ -9109,7 +8813,6 @@
 
 .method private findRecipientFromTobutton(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mToButtonList:Ljava/util/SortedMap;
 
@@ -9186,8 +8889,6 @@
 
 .method private getBaiduLocationMessage(DD)Ljava/lang/String;
     .locals 11
-    .param p1    # D
-    .param p3    # D
 
     new-instance v7, Ljava/lang/String;
 
@@ -9364,7 +9065,6 @@
 
 .method private getBody(Landroid/net/Uri;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x0
 
@@ -9452,7 +9152,6 @@
 
 .method public static getEasyModeOn(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -9481,8 +9180,6 @@
 
 .method private getEditorLineDirection(Landroid/widget/EditText;I)I
     .locals 3
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -9648,7 +9345,6 @@
 
 .method private getMessageDate(Landroid/net/Uri;)J
     .locals 11
-    .param p1    # Landroid/net/Uri;
 
     const/4 v10, 0x1
 
@@ -9772,9 +9468,6 @@
 
 .method private getMessageItem(Ljava/lang/String;JZ)Lcom/android/mms/ui/MessageItem;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -9959,8 +9652,6 @@
 
 .method public static getPreferenceAsBoolean(Ljava/lang/String;Z)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -10673,7 +10364,6 @@
 
 .method private handleForwardedMessage(Landroid/os/Bundle;)Z
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x2
 
@@ -11091,8 +10781,6 @@
 
 .method private handleSendIntent(Landroid/content/Intent;Landroid/os/Bundle;)Z
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -11198,7 +10886,6 @@
 
 .method private hasIntentData(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -11231,7 +10918,6 @@
 
 .method private hasRecipientData(Landroid/net/Uri;)Z
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -11462,7 +11148,6 @@
 
 .method private hideMessageList(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposerPanel:Lcom/android/mms/ui/CustomScrollView;
 
@@ -11473,7 +11158,6 @@
 
 .method private hideRecipientEditor(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -11552,8 +11236,6 @@
 
 .method private initActivityState(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 42
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     const-string v38, "Mms/ComposeMessageFragment"
 
@@ -16618,7 +16300,6 @@
 
 .method private initToButtonLayoutForGroup(Lcom/android/mms/data/ContactList;)V
     .locals 13
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     iget-object v10, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposeView:Landroid/view/View;
 
@@ -16875,7 +16556,6 @@
 
 .method private isEditingMode(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -16999,7 +16679,6 @@
 
 .method private isExtendEditField(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -17073,7 +16752,6 @@
 
 .method private isGprsCodeInFdnList([Ljava/lang/String;)Z
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -17123,7 +16801,6 @@
 
 .method private isHugeSize(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -17154,7 +16831,6 @@
 
 .method public static isInsertSenderInfoWhenFwdMsgEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -17173,7 +16849,6 @@
 
 .method private isNeedCreateThread(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -17257,7 +16932,6 @@
 
 .method private isRecipientInFdnList([Ljava/lang/String;)Z
     .locals 6
-    .param p1    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -17487,7 +17161,6 @@
 
 .method private isTemp(Lcom/android/mms/data/ContactList;)Z
     .locals 3
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const/4 v1, 0x1
 
@@ -17524,9 +17197,6 @@
 
 .method private isUnderLength(III)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     add-int v0, p1, p2
 
@@ -17711,7 +17381,6 @@
 
 .method private loadMultiDraft(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mWorkingMessage:Lcom/android/mms/data/WorkingMessage;
 
@@ -17801,7 +17470,6 @@
 
 .method private loadToButtonState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "toButtonRecipients"
 
@@ -17844,8 +17512,6 @@
 
 .method private onClickToButton(Lcom/android/mms/ui/ToButton;Landroid/view/View;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/ToButton;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p1}, Lcom/android/mms/ui/ToButton;->getMode()Z
 
@@ -17908,7 +17574,6 @@
 
 .method private onKeyboardStateChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -17960,7 +17625,6 @@
 
 .method private onOrientationChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mRecipientsEditor:Lcom/android/mms/ui/RecipientsEditor;
 
@@ -17986,7 +17650,6 @@
 
 .method private pasteClipBoardData(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 18
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v10, 0x0
 
@@ -18856,9 +18519,6 @@
 
 .method private processingDraftReload(JZI)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableMultiDraftMsgBox()Z
 
@@ -19195,8 +18855,6 @@
 
 .method private remove7DigitRecipient(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -19467,7 +19125,6 @@
 
 .method private requestSplitModeOnConverationList(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -19796,7 +19453,6 @@
 
 .method private saveDraftSync(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -20061,7 +19717,6 @@
 
 .method private saveMultiDraft(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -20269,7 +19924,6 @@
 
 .method private saveToButtonState(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->isRecipientsEditorVisible()Z
 
@@ -20361,7 +20015,6 @@
 
 .method private setActionbarHomeAsUp(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -20403,8 +20056,6 @@
 
 .method public static setAppPreferenceAsBoolean(Ljava/lang/String;Z)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
 
@@ -20431,7 +20082,6 @@
 
 .method private setAttachmentLayout(Landroid/widget/LinearLayout;Ljava/util/ArrayList;)V
     .locals 17
-    .param p1    # Landroid/widget/LinearLayout;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -20792,8 +20442,6 @@
 
 .method public static setBundle(Landroid/os/Bundle;Z)V
     .locals 0
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Z
 
     sput-object p0, Lcom/android/mms/ui/ComposeMessageFragment;->mBundle:Landroid/os/Bundle;
 
@@ -21441,7 +21089,6 @@
 
 .method private setConversation(Lcom/android/mms/data/Conversation;)V
     .locals 1
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -22034,7 +21681,6 @@
 
 .method private setEditingMode(Z)V
     .locals 14
-    .param p1    # Z
 
     const/16 v13, 0x8
 
@@ -22736,7 +22382,6 @@
 
 .method private setFocusFailedIcon(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -23050,7 +22695,6 @@
 
 .method public static setHighlightMsgID(J)V
     .locals 0
-    .param p0    # J
 
     sput-wide p0, Lcom/android/mms/ui/ComposeMessageFragment;->mHighlightMsgID:J
 
@@ -23059,7 +22703,6 @@
 
 .method private declared-synchronized setIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -23236,8 +22879,6 @@
 
 .method private setMultiMode(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v6, 0x8
 
@@ -23474,8 +23115,6 @@
 
 .method private setParentTop(Landroid/view/View;Z)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -23649,7 +23288,6 @@
 
 .method private setRecipientsEditorSpace(F)V
     .locals 4
-    .param p1    # F
 
     const/4 v3, 0x0
 
@@ -23801,7 +23439,6 @@
 
 .method private setTextFieldColor(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mTextFieldColor:I
 
@@ -23852,9 +23489,6 @@
 
 .method private showCreationDialog(ILandroid/content/DialogInterface$OnClickListener;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mCreationgDialogHash:Ljava/util/HashSet;
 
@@ -24264,7 +23898,6 @@
 
 .method private showErrorDialog(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->dismissDialog()V
 
@@ -24976,7 +24609,6 @@
 
 .method private showToButtonMenuDialog(Lcom/android/mms/ui/ToButton;)V
     .locals 12
-    .param p1    # Lcom/android/mms/ui/ToButton;
 
     const/4 v8, 0x2
 
@@ -25395,9 +25027,6 @@
 
 .method private threadSafeToast(Landroid/app/Activity;II)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1, p2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -25410,9 +25039,6 @@
 
 .method private threadSafeToast(Landroid/app/Activity;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->getToastHandler()Landroid/os/Handler;
 
@@ -25437,8 +25063,6 @@
 
 .method private toastConvertInfo(ZI)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -25637,10 +25261,6 @@
 
 .method private updateActionBarTitleForLocation(Landroid/content/Context;Lcom/android/mms/data/Contact;Landroid/widget/TextView;Landroid/widget/TextView;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/data/Contact;
-    .param p3    # Landroid/widget/TextView;
-    .param p4    # Landroid/widget/TextView;
 
     const/4 v4, 0x1
 
@@ -25795,7 +25415,6 @@
 
 .method private updateEditorSize(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mMmsRichContainer:Lcom/android/mms/ui/MmsRichContainer;
 
@@ -26516,14 +26135,12 @@
 
 .method private updatePresence(Lcom/android/mms/data/Contact;)V
     .locals 0
-    .param p1    # Lcom/android/mms/data/Contact;
 
     return-void
 .end method
 
 .method private updateRecipientHeader(Lcom/android/mms/data/Conversation;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mActivity:Landroid/app/Activity;
 
@@ -26672,7 +26289,6 @@
 
 .method private viewContact(Lcom/android/mms/ui/ToButton;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/ToButton;
 
     invoke-virtual {p1}, Lcom/android/mms/ui/ToButton;->getNumber()Ljava/lang/String;
 
@@ -26722,8 +26338,6 @@
 # virtual methods
 .method public MakeToButtonByContactList(Lcom/android/mms/data/ContactList;Z)V
     .locals 17
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # Z
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/mms/data/ContactList;->size()I
 
@@ -27135,8 +26749,6 @@
 
 .method public SetDeliveryReadReportView(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -27284,7 +26896,6 @@
 
 .method public alertExceedMmsRecipientsPopup(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -27341,7 +26952,6 @@
 
 .method public alertInvalidRecipientsPopup(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -27391,8 +27001,6 @@
 
 .method public alertInvalidRecipientsPopup(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -27929,7 +27537,6 @@
 
 .method public closeSearchView(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposeMenu:Lcom/android/mms/ui/ComposeMenu;
 
@@ -27968,7 +27575,6 @@
 
 .method public composeNewMessage(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -28868,8 +28474,6 @@
 
 .method protected convertDPtoPX(ILandroid/util/DisplayMetrics;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/util/DisplayMetrics;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->isAdded()Z
 
@@ -28915,7 +28519,6 @@
 
 .method protected convertToNewComposerModeIfNeeded(I)V
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -28984,7 +28587,6 @@
 
 .method public createAttachLeftListWidgetFromView(Landroid/view/View;)Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -29025,7 +28627,6 @@
 
 .method public createAttachListEasyWidgetFromView(Landroid/view/View;)Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -29066,7 +28667,6 @@
 
 .method public createAttachListWidgetFromView(Landroid/view/View;)Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -29107,7 +28707,6 @@
 
 .method public createRecipientButtonEasyListWidgetFromView(Landroid/view/View;)Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x2
 
@@ -29134,7 +28733,6 @@
 
 .method public createRecipientButtonListWidgetFromView(Landroid/view/View;)Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x2
 
@@ -29161,7 +28759,6 @@
 
 .method protected delayedUpdateSendButtonState(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mUpdateSendButtonHandler:Landroid/os/Handler;
 
@@ -29250,7 +28847,6 @@
 
 .method public disableMultiMode(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -29705,7 +29301,6 @@
 
 .method public editMessage(Lcom/android/mms/ui/MessageItem;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v3, 0x1
 
@@ -29859,7 +29454,6 @@
 
 .method public editMessageForEmpty(Lcom/android/mms/ui/MessageItem;)Z
     .locals 8
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v3, 0x1
 
@@ -30017,7 +29611,6 @@
 
 .method public editMessageItem(Lcom/android/mms/ui/MessageItem;)V
     .locals 7
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/16 v6, 0x8
 
@@ -30268,8 +29861,6 @@
 
 .method public enableMultiMode(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ComposeMessageFragment;->setMultiMode(IZ)Z
 
@@ -30280,7 +29871,6 @@
 
 .method public exitComposeMessageActivity(Ljava/lang/Runnable;)V
     .locals 5
-    .param p1    # Ljava/lang/Runnable;
 
     const/4 v4, 0x0
 
@@ -30445,7 +30035,6 @@
 
 .method public finishWB(Landroid/widget/EditText;)V
     .locals 3
-    .param p1    # Landroid/widget/EditText;
 
     const/4 v2, 0x0
 
@@ -30614,7 +30203,6 @@
 
 .method public getContactHeaderString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const/4 v4, 0x1
 
@@ -30929,9 +30517,6 @@
 
 .method public getMessageItemPublic(Ljava/lang/String;JZ)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/ComposeMessageFragment;->getMessageItem(Ljava/lang/String;JZ)Lcom/android/mms/ui/MessageItem;
 
@@ -31149,7 +30734,6 @@
 
 .method public getRawAttachableCountWithToast(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -31401,7 +30985,6 @@
 
 .method public getResourcesString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->isAdded()Z
 
@@ -31770,7 +31353,6 @@
 
 .method public handleCheckbox(Lcom/android/mms/ui/MessageListItem;)V
     .locals 8
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v7, 0x0
 
@@ -31868,10 +31450,6 @@
 
 .method public handleCreationModeDialog(Ljava/lang/String;Landroid/net/Uri;IZ)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # Z
 
     const v8, 0x7f0c0150
 
@@ -32079,7 +31657,6 @@
 
 .method public hasMmsContents(Lcom/android/mms/model/SlideshowModel;)Z
     .locals 1
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     if-eqz p1, :cond_1
 
@@ -32348,8 +31925,6 @@
 
 .method public initialize(Landroid/os/Bundle;J)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # J
 
     const/4 v7, 0x2
 
@@ -32770,9 +32345,6 @@
 
 .method protected insertEmoticon(Landroid/widget/EditText;Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-nez p1, :cond_0
 
@@ -33980,7 +33552,6 @@
 
 .method public messageContentShare(Lcom/android/mms/ui/MessageItem;)V
     .locals 13
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v5, Landroid/content/Intent;
 
@@ -34128,7 +33699,6 @@
 
 .method networkWarningDialogAndSend(Z)V
     .locals 13
-    .param p1    # Z
 
     const v12, 0x7f0c0398
 
@@ -34511,7 +34081,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -34960,9 +34529,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposerAttachmentHandler:Lcom/android/mms/util/HandleComposerAttachment;
 
@@ -34973,7 +34539,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -34994,7 +34559,6 @@
 
 .method public onAttachmentChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -35015,7 +34579,6 @@
 
 .method public onAttachmentChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -35052,7 +34615,6 @@
 
 .method public onAttachmentError(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mActivity:Landroid/app/Activity;
 
@@ -35067,7 +34629,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/16 v7, 0xd
 
@@ -35371,7 +34932,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 7
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v4, 0x0
 
@@ -35615,7 +35175,6 @@
 
 .method public onContextMenuClosed(Landroid/view/Menu;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mMmsRichContainer:Lcom/android/mms/ui/MmsRichContainer;
 
@@ -35647,7 +35206,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -35763,9 +35321,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -36411,9 +35966,6 @@
 
 .method public onDraftChanged(JZZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Z
 
     if-nez p4, :cond_0
 
@@ -36433,8 +35985,6 @@
 
 .method public onDraftContentsChanged(JZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -36451,8 +36001,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/4 v2, 0x0
 
@@ -36522,9 +36070,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v7, 0x6
 
@@ -36707,7 +36252,6 @@
 
 .method public onFlickingTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -36730,8 +36274,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -37489,8 +37031,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -37982,7 +37522,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 23
-    .param p1    # Landroid/content/Intent;
 
     const-string v19, "Mms/ComposeMessageFragment"
 
@@ -39098,7 +38637,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mComposeMenu:Lcom/android/mms/ui/ComposeMenu;
 
@@ -39331,7 +38869,6 @@
 
 .method public onPrepareComposerOptionsMenu(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mActivity:Landroid/app/Activity;
 
@@ -39361,8 +38898,6 @@
 
 .method public onProtocolChanged(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -39903,7 +39438,6 @@
 
 .method public onRichContainerFocusChange(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -40017,7 +39551,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -41110,7 +40643,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->restrictContactListener:Z
 
@@ -41258,7 +40790,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -41462,7 +40993,6 @@
 
 .method public parseMultiPicker(Ljava/util/ArrayList;I)V
     .locals 11
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41772,7 +41302,6 @@
 
 .method protected recycleBitmap(Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
 
     if-nez p1, :cond_0
 
@@ -41795,7 +41324,6 @@
 
 .method protected recycleBitmap(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     if-nez p1, :cond_0
 
@@ -41938,7 +41466,6 @@
 
 .method public refreshSignatureInEditor(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/16 v11, 0xa
 
@@ -42487,7 +42014,6 @@
 
 .method public saveDraft(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -42736,7 +42262,6 @@
 
 .method public saveDraftAndReset(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -43010,7 +42535,6 @@
 
 .method public sendMessage(Z)V
     .locals 24
-    .param p1    # Z
 
     const-string v19, "Mms/ComposeMessageFragment"
 
@@ -44485,7 +44009,6 @@
 
 .method protected sendSmsInInternationalRoaming(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -44551,7 +44074,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsAnimationEnable:Z
 
@@ -44560,8 +44082,6 @@
 
 .method public setAttachmentList(Lcom/android/mms/model/SlideshowModel;Z)V
     .locals 18
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
-    .param p2    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/mms/ui/ComposeMessageFragment;->isAdded()Z
 
@@ -45091,7 +44611,6 @@
 
 .method public setBubbleFontSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mBubbleFontSizeIndex:I
 
@@ -45100,7 +44619,6 @@
 
 .method public setContactIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mAddContactIntent:Landroid/content/Intent;
 
@@ -45138,7 +44656,6 @@
 
 .method public setDeleteAnimation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsDeleteAnimation:Z
 
@@ -45147,7 +44664,6 @@
 
 .method public setDeleteWithAnimation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mIsDeleteWithAnimation:Z
 
@@ -45156,7 +44672,6 @@
 
 .method public setErrorFlagInRecipientEditor(Z)V
     .locals 4
-    .param p1    # Z
 
     const v3, 0x7f0c037e
 
@@ -45222,7 +44737,6 @@
 
 .method protected setGroupMessageComposing(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/mms/ui/ComposeMessageFragment;->mIsGroupMessageComposing:Z
 
@@ -45231,9 +44745,6 @@
 
 .method protected setListNewPosition(IILandroid/database/Cursor;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     const-wide/16 v6, -0x1
 
@@ -45326,7 +44837,6 @@
 
 .method public setOnCloseListener(Lcom/android/mms/ui/OnEventListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnEventListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mOnCloseListener:Lcom/android/mms/ui/OnEventListener;
 
@@ -45335,7 +44845,6 @@
 
 .method public setOnSipUpListener(Lcom/android/mms/ui/OnEventListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnEventListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mOnSipUpListener:Lcom/android/mms/ui/OnEventListener;
 
@@ -45344,7 +44853,6 @@
 
 .method public setOnStateChangedListener(Lcom/android/mms/ui/OnEventListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnEventListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mOnStateChangeListener:Lcom/android/mms/ui/OnEventListener;
 
@@ -45353,7 +44861,6 @@
 
 .method public setRemoveComposer(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/ComposeMessageFragment"
 
@@ -45384,7 +44891,6 @@
 
 .method public setSelectAll(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -45395,7 +44901,6 @@
 
 .method public setSelectedIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSelectedPosition:I
 
@@ -45860,7 +45365,6 @@
 
 .method public setSentMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mSentMessage:Z
 
@@ -45869,7 +45373,6 @@
 
 .method public setSignatureAdded(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->isSignatureAdded:Z
 
@@ -45878,7 +45381,6 @@
 
 .method public setSizeString(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mMessageSizeText:Ljava/lang/String;
 
@@ -45910,8 +45412,6 @@
 
 .method public setSlideDuration(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mWorkingMessage:Lcom/android/mms/data/WorkingMessage;
 
@@ -45945,7 +45445,6 @@
 
 .method public setTranslateBtnMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mTranslateBtnMode:Z
 
@@ -45954,7 +45453,6 @@
 
 .method public setTranslateModeForComposer(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment;->mTranslateModeForComposer:Ljava/lang/String;
 
@@ -45963,7 +45461,6 @@
 
 .method public show7DigitCompletionConfirmDlg(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Lcom/android/mms/ui/ComposeMessageFragment$SevenDigitNumericListener;
 
@@ -45991,8 +45488,6 @@
 
 .method public showAddAttachmentDialog(ZI)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -46424,8 +45919,6 @@
 
 .method public showErrorPopup(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -46608,7 +46101,6 @@
 
 .method public showGroupRecipientBanner(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -47096,7 +46588,6 @@
 
 .method public showSip(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -47342,8 +46833,6 @@
 
 .method public showSizeString(Ljava/lang/CharSequence;[I)V
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [I
 
     const/4 v7, 0x2
 
@@ -47963,7 +47452,6 @@
 
 .method public showSubjectEditor(Z)V
     .locals 12
-    .param p1    # Z
 
     const/16 v7, 0x8
 
@@ -48497,7 +47985,6 @@
 
 .method public startDeleteAnimation([I)V
     .locals 4
-    .param p1    # [I
 
     const/4 v3, 0x1
 
@@ -48649,7 +48136,6 @@
 
 .method public startMessageReservedSettingActivity(Z)V
     .locals 5
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ComposeMessageFragment;->isAdded()Z
 
@@ -48701,7 +48187,6 @@
 
 .method public startMessageTransmitSettingsActivity(Z)V
     .locals 5
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -49076,7 +48561,6 @@
 
 .method public startSearchMenu(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -49319,10 +48803,6 @@
 
 .method protected updateCounter(Ljava/lang/CharSequence;III)I
     .locals 24
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v17, 0x0
 
@@ -50161,7 +49641,6 @@
 
 .method public updateMmsLayoutMode(Lcom/android/mms/ui/MessageItem;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v3, 0x1
 

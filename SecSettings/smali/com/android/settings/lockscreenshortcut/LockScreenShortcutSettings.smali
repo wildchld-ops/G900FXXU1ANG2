@@ -221,7 +221,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->Activityresult:Z
 
@@ -230,8 +229,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->Activityresult:Z
 
@@ -240,7 +237,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mShortCutButton:Ljava/util/ArrayList;
 
@@ -249,7 +245,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mIsOnDragging:Z
 
@@ -258,8 +253,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mIsOnDragging:Z
 
@@ -268,7 +261,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Lcom/android/settings/lockscreenshortcut/DeleteView;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mDeleteArea:Lcom/android/settings/lockscreenshortcut/DeleteView;
 
@@ -277,7 +269,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mOnDragItem:I
 
@@ -286,8 +277,6 @@
 
 .method static synthetic access$1202(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mOnDragItem:I
 
@@ -296,7 +285,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mDragShadowBuilder:Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;
 
@@ -305,8 +293,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;)Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;
 
     iput-object p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mDragShadowBuilder:Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;
 
@@ -315,12 +301,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Landroid/view/View;Landroid/content/ClipData;Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;Ljava/lang/Object;I)Z
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/ClipData;
-    .param p3    # Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->startDrag(Landroid/view/View;Landroid/content/ClipData;Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;Ljava/lang/Object;I)Z
 
@@ -331,8 +311,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Landroid/widget/ImageView;)V
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Landroid/widget/ImageView;
 
     invoke-direct {p0, p1}, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->changeShortCut(Landroid/widget/ImageView;)V
 
@@ -341,8 +319,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->removeShortcut(I)V
 
@@ -351,7 +327,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     invoke-direct {p0}, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->adjustCursorWidth()V
 
@@ -360,7 +335,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mAdditionImage:Z
 
@@ -369,8 +343,6 @@
 
 .method static synthetic access$1802(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mAdditionImage:Z
 
@@ -379,7 +351,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mPositionBar:Ljava/util/ArrayList;
 
@@ -388,7 +359,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Lcom/android/settings/lockscreenshortcut/LockScreenShortcutListManager;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mShortcutListMgr:Lcom/android/settings/lockscreenshortcut/LockScreenShortcutListManager;
 
@@ -397,7 +367,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mMainLayout:Landroid/widget/LinearLayout;
 
@@ -406,7 +375,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mAddButton:Landroid/widget/ImageView;
 
@@ -415,8 +383,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mAddButton:Landroid/widget/ImageView;
 
@@ -425,7 +391,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mAddButtonPositionBar:Landroid/widget/ImageView;
 
@@ -434,8 +399,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mAddButtonPositionBar:Landroid/widget/ImageView;
 
@@ -444,8 +407,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->showAddButton(Z)V
 
@@ -454,7 +415,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mIsOnSelecting:Z
 
@@ -463,8 +423,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mIsOnSelecting:Z
 
@@ -473,8 +431,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->pcheck:I
 
@@ -483,8 +439,6 @@
 
 .method private addShortcut(ILandroid/content/pm/ResolveInfo;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v11, 0x0
 
@@ -1015,8 +969,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     const-string v8, "LockScreenShortcutSettings"
 
@@ -1176,8 +1128,6 @@
 
 .method private loadAppIcon(Landroid/content/pm/ActivityInfo;I)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/pm/ActivityInfo;
-    .param p2    # I
 
     const-string v1, "LockScreenShortcutSettings"
 
@@ -1293,7 +1243,6 @@
 
 .method private removeShortcut(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;->mShortcutListMgr:Lcom/android/settings/lockscreenshortcut/LockScreenShortcutListManager;
 
@@ -1348,7 +1297,6 @@
 
 .method private setEnable(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -1952,7 +1900,6 @@
 # virtual methods
 .method public MakeShortcutList(Ljava/lang/String;)V
     .locals 21
-    .param p1    # Ljava/lang/String;
 
     const-string v17, "layout_inflater"
 
@@ -2788,9 +2735,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v10, 0x1
 
@@ -3023,8 +2967,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -3087,7 +3029,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x1e0
 

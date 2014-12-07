@@ -82,7 +82,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/service/MiniModeCallService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/MiniModeCallService;->stopLongClickCheck()V
 
@@ -91,7 +90,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/service/MiniModeCallService;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     iget-boolean v0, p0, Lcom/android/incallui/service/MiniModeCallService;->mIsOverMoveThreshold:Z
 
@@ -100,8 +98,6 @@
 
 .method static synthetic access$102(Lcom/android/incallui/service/MiniModeCallService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/service/MiniModeCallService;->mIsOverMoveThreshold:Z
 
@@ -110,7 +106,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/service/MiniModeCallService;)J
     .locals 2
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     iget-wide v0, p0, Lcom/android/incallui/service/MiniModeCallService;->mLastDownEventTime:J
 
@@ -119,8 +114,6 @@
 
 .method static synthetic access$202(Lcom/android/incallui/service/MiniModeCallService;J)J
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/incallui/service/MiniModeCallService;->mLastDownEventTime:J
 
@@ -129,7 +122,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/service/MiniModeCallService;)F
     .locals 1
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     iget v0, p0, Lcom/android/incallui/service/MiniModeCallService;->START_X:F
 
@@ -138,8 +130,6 @@
 
 .method static synthetic access$302(Lcom/android/incallui/service/MiniModeCallService;F)F
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/incallui/service/MiniModeCallService;->START_X:F
 
@@ -148,7 +138,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/service/MiniModeCallService;)F
     .locals 1
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     iget v0, p0, Lcom/android/incallui/service/MiniModeCallService;->START_Y:F
 
@@ -157,8 +146,6 @@
 
 .method static synthetic access$402(Lcom/android/incallui/service/MiniModeCallService;F)F
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/incallui/service/MiniModeCallService;->START_Y:F
 
@@ -167,7 +154,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/service/MiniModeCallService;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     iget v0, p0, Lcom/android/incallui/service/MiniModeCallService;->PREV_X:I
 
@@ -176,8 +162,6 @@
 
 .method static synthetic access$502(Lcom/android/incallui/service/MiniModeCallService;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/service/MiniModeCallService;->PREV_X:I
 
@@ -186,7 +170,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/service/MiniModeCallService;)Landroid/view/WindowManager$LayoutParams;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     iget-object v0, p0, Lcom/android/incallui/service/MiniModeCallService;->mWindowAttributes:Landroid/view/WindowManager$LayoutParams;
 
@@ -195,7 +178,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/service/MiniModeCallService;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     iget v0, p0, Lcom/android/incallui/service/MiniModeCallService;->PREV_Y:I
 
@@ -204,8 +186,6 @@
 
 .method static synthetic access$702(Lcom/android/incallui/service/MiniModeCallService;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/service/MiniModeCallService;->PREV_Y:I
 
@@ -214,7 +194,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/service/MiniModeCallService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/MiniModeCallService;->startLongClickCheck()V
 
@@ -223,7 +202,6 @@
 
 .method static synthetic access$900(Lcom/android/incallui/service/MiniModeCallService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/MiniModeCallService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/MiniModeCallService;->updateViewLayout()V
 
@@ -539,7 +517,6 @@
 
 .method protected initCustomLayout(Landroid/view/ViewGroup;)V
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Lcom/android/incallui/service/MiniModeCallService;->getContext()Landroid/content/Context;
 
@@ -558,7 +535,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -567,7 +543,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "MiniModeCallService"
 
@@ -687,7 +662,6 @@
 
 .method public onFocus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/service/MiniModeCallService;->mWindowAttributes:Landroid/view/WindowManager$LayoutParams;
 
@@ -758,9 +732,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x2
 

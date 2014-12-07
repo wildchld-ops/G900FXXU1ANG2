@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/download/DownloadQueueImpl;Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;Lcom/google/android/finsky/download/Download;I)V
     .locals 0
-    .param p2    # Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;
 
     iput-object p1, p0, Lcom/google/android/finsky/download/DownloadQueueImpl$5;->this$0:Lcom/google/android/finsky/download/DownloadQueueImpl;
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public updateListener(Lcom/google/android/finsky/download/DownloadQueueListener;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/download/DownloadQueueListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl$5;->val$download:Lcom/google/android/finsky/download/Download;
 

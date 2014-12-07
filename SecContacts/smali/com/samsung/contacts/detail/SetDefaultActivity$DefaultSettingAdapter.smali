@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/detail/SetDefaultActivity;Landroid/app/ListActivity;)V
     .locals 1
-    .param p2    # Landroid/app/ListActivity;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->this$0:Lcom/samsung/contacts/detail/SetDefaultActivity;
 
@@ -40,9 +39,6 @@
 
 .method private bindDetailView(ILandroid/view/View;Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
     const/16 v4, 0x8
 
@@ -336,9 +332,6 @@
 
 .method private getDetailEntryView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->getItem(I)Lcom/samsung/contacts/detail/SetDefaultActivity$ViewEntry;
 
@@ -384,9 +377,6 @@
 
 .method private getKindTitleEntryView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -438,8 +428,6 @@
 
 .method private getSeparatorEntryView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p1, :cond_0
 
@@ -491,7 +479,6 @@
 
 .method public getItem(I)Lcom/samsung/contacts/detail/SetDefaultActivity$ViewEntry;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->this$0:Lcom/samsung/contacts/detail/SetDefaultActivity;
 
@@ -511,7 +498,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->getItem(I)Lcom/samsung/contacts/detail/SetDefaultActivity$ViewEntry;
 
@@ -522,7 +508,6 @@
 
 .method public getItemId(I)J
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->this$0:Lcom/samsung/contacts/detail/SetDefaultActivity;
 
@@ -554,7 +539,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->this$0:Lcom/samsung/contacts/detail/SetDefaultActivity;
 
@@ -578,9 +562,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->getItemViewType(I)I
 
@@ -658,7 +639,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;->getItem(I)Lcom/samsung/contacts/detail/SetDefaultActivity$ViewEntry;
 

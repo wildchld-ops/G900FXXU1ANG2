@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -33,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -57,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;)Lcom/google/android/finsky/previews/PreviewController;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;->mConnection:Lcom/google/android/finsky/previews/PreviewController;
 
@@ -66,7 +62,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;)Lcom/google/android/finsky/layout/SongIndex;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;->mSongIndex:Lcom/google/android/finsky/layout/SongIndex;
 
@@ -75,8 +70,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;->setHighlighted(Z)V
 
@@ -85,7 +78,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/FreeSongOfTheDaySummary;->mPlaybackLegend:Landroid/widget/TextView;
 
@@ -94,7 +86,6 @@
 
 .method private setHighlighted(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x3
 
@@ -245,10 +236,6 @@
 
 .method public showSummary(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/navigationmanager/NavigationManager;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 16
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     move-object/from16 v0, p0
 

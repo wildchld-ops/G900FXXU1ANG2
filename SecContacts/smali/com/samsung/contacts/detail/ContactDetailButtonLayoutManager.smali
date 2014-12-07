@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,20 +32,12 @@
 # virtual methods
 .method public bindSecondaryActionButton(Lcom/samsung/contacts/detail/ContactDetailButtonLayoutManager$DetailViewCache;Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;Landroid/content/res/Resources;Z)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/ContactDetailButtonLayoutManager$DetailViewCache;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
-    .param p3    # Landroid/content/res/Resources;
-    .param p4    # Z
 
     return-void
 .end method
 
 .method public bindThirdActionButton(Lcom/samsung/contacts/detail/ContactDetailButtonLayoutManager$DetailViewCache;Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;Landroid/content/res/Resources;Z)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/ContactDetailButtonLayoutManager$DetailViewCache;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
-    .param p3    # Landroid/content/res/Resources;
-    .param p4    # Z
 
     return-void
 .end method

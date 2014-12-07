@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionInputBuffer;)V
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -115,9 +114,6 @@
 
 .method public read([BII)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

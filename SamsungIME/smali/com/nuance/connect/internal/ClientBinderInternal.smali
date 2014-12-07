@@ -52,9 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;Lcom/nuance/connect/internal/ClientBinderLifecycleCallback;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Lcom/nuance/connect/internal/ClientBinderLifecycleCallback;
 
     const/4 v2, 0x0
 
@@ -127,8 +124,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/ClientBinderInternal;Z)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ClientBinderInternal;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/ClientBinderInternal;->setConnectBoundState(Z)V
 
@@ -137,8 +132,6 @@
 
 .method static synthetic access$102(Lcom/nuance/connect/internal/ClientBinderInternal;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ClientBinderInternal;
-    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/ClientBinderInternal;->mOutboundMessenger:Landroid/os/Messenger;
 
@@ -147,7 +140,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/ClientBinderInternal;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ClientBinderInternal;
 
     iget-boolean v0, p0, Lcom/nuance/connect/internal/ClientBinderInternal;->connectBound:Z
 
@@ -156,7 +148,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/ClientBinderInternal;)Lcom/nuance/connect/internal/ClientBinderLifecycleCallback;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ClientBinderInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ClientBinderInternal;->lifecycleCallback:Lcom/nuance/connect/internal/ClientBinderLifecycleCallback;
 
@@ -165,8 +156,6 @@
 
 .method static synthetic access$402(Lcom/nuance/connect/internal/ClientBinderInternal;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ClientBinderInternal;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/ClientBinderInternal;->restart:Z
 
@@ -215,7 +204,6 @@
 
 .method private setConnectBoundState(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/ClientBinderInternal;->connectBound:Z
 
@@ -362,7 +350,6 @@
 
 .method public sendConnectMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -375,7 +362,6 @@
 
 .method public sendConnectMessage(Lcom/nuance/connect/internal/common/InternalMessages;)Z
     .locals 6
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
 
     const/high16 v3, -0x80000000
 
@@ -398,8 +384,6 @@
 
 .method public sendConnectMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
 
     const/high16 v3, -0x80000000
 
@@ -422,10 +406,6 @@
 
 .method public sendConnectMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;II)Z
     .locals 6
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -448,7 +428,6 @@
 
 .method public sendConnectPriorityMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x1
 
@@ -461,7 +440,6 @@
 
 .method public sendConnectPriorityMessage(Lcom/nuance/connect/internal/common/InternalMessages;)Z
     .locals 6
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
 
     const/high16 v3, -0x80000000
 
@@ -484,8 +462,6 @@
 
 .method public sendConnectPriorityMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
 
     const/high16 v3, -0x80000000
 
@@ -508,10 +484,6 @@
 
 .method public sendConnectPriorityMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;II)Z
     .locals 6
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -534,8 +506,6 @@
 
 .method protected sendMessage(Landroid/os/Message;Z)Z
     .locals 7
-    .param p1    # Landroid/os/Message;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/nuance/connect/internal/ClientBinderInternal;->getLock()[I
 
@@ -701,11 +671,6 @@
 
 .method protected sendMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;IIZ)Z
     .locals 4
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v2, 0x0
 

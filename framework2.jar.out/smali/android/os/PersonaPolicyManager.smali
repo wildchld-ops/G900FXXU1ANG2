@@ -2055,8 +2055,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/IPersonaPolicyManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -2090,7 +2088,6 @@
 # virtual methods
 .method public addLockOnImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2134,7 +2131,6 @@
 
 .method public getAirCommandEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2180,7 +2176,6 @@
 
 .method public getAllowAllShare(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2226,7 +2221,6 @@
 
 .method public getAllowContainerReset(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2272,7 +2266,6 @@
 
 .method public getAllowCustomBadgeIcon(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2318,7 +2311,6 @@
 
 .method public getAllowCustomColorIdentification(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2364,7 +2356,6 @@
 
 .method public getAllowCustomPersonaIcon(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2410,7 +2401,6 @@
 
 .method public getAllowDLNADataTransfer(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2456,7 +2446,6 @@
 
 .method public getAllowExportAndDeleteFiles(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2502,7 +2491,6 @@
 
 .method public getAllowExportFiles(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2548,7 +2536,6 @@
 
 .method public getAllowImportFiles(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2594,7 +2581,6 @@
 
 .method public getAllowPrint(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2640,7 +2626,6 @@
 
 .method public getAllowShortCutCreation(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2686,7 +2671,6 @@
 
 .method public getAllowUniversalCallerId(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2732,7 +2716,6 @@
 
 .method public getCameraModeChangeEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2778,7 +2761,6 @@
 
 .method public getDisableSwitchWidgetOnLockScreen(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2824,7 +2806,6 @@
 
 .method public getEncryptionStatus(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2870,7 +2851,6 @@
 
 .method public getGearSupportEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2916,7 +2896,6 @@
 
 .method public getModifyLockScreenTimeout(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -2962,7 +2941,6 @@
 
 .method public getPasswordLockPolicy(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3008,7 +2986,6 @@
 
 .method public getPenWindowEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3054,8 +3031,6 @@
 
 .method public getRCPDataPolicy(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3099,8 +3074,6 @@
 
 .method public getRCPNotificationPolicy(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3144,7 +3117,6 @@
 
 .method public getSecureKeystoreEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3190,7 +3162,6 @@
 
 .method public getSwitchNotifEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3236,7 +3207,6 @@
 
 .method public getSyncPolicy(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "all_contacts"
 
@@ -3288,7 +3258,6 @@
 
 .method public isBadgeRequiredFromOwner(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3370,8 +3339,6 @@
 
 .method public setAirCommandEnabled(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3413,8 +3380,6 @@
 
 .method public setAllowAllShare(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3456,8 +3421,6 @@
 
 .method public setAllowContainerReset(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3499,8 +3462,6 @@
 
 .method public setAllowCustomBadgeIcon(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3542,8 +3503,6 @@
 
 .method public setAllowCustomColorIdentification(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3585,8 +3544,6 @@
 
 .method public setAllowCustomPersonaIcon(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3628,8 +3585,6 @@
 
 .method public setAllowDLNADataTransfer(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3671,8 +3626,6 @@
 
 .method public setAllowExportAndDeleteFiles(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3714,8 +3667,6 @@
 
 .method public setAllowExportFiles(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3757,8 +3708,6 @@
 
 .method public setAllowImportFiles(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3800,8 +3749,6 @@
 
 .method public setAllowPrint(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3843,8 +3790,6 @@
 
 .method public setAllowShortCutCreation(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3886,8 +3831,6 @@
 
 .method public setAllowUniversalCallerId(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3929,8 +3872,6 @@
 
 .method public setCameraModeChangeEnabled(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -3972,8 +3913,6 @@
 
 .method public setDisableSwitchWidgetOnLockScreen(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4015,8 +3954,6 @@
 
 .method public setEncryptionStatus(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4058,8 +3995,6 @@
 
 .method public setGearSupportEnabled(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4101,8 +4036,6 @@
 
 .method public setModifyLockScreenTimeout(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4144,8 +4077,6 @@
 
 .method public setPasswordLockPolicy(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4187,8 +4118,6 @@
 
 .method public setPenWindowEnabled(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4230,9 +4159,6 @@
 
 .method public setRCPDataPolicy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4276,9 +4202,6 @@
 
 .method public setRCPNotificationPolicy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4322,8 +4245,6 @@
 
 .method public setSecureKeystoreEnabled(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4365,8 +4286,6 @@
 
 .method public setSwitchNotifEnabled(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
@@ -4408,8 +4327,6 @@
 
 .method public setSyncPolicy(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method

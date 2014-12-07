@@ -45,14 +45,6 @@
 # virtual methods
 .method public addInfo(Ljava/lang/String;ILjava/lang/String;ZLandroid/content/Intent;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Landroid/content/Intent;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/samsung/contacts/model/rcs/FeatureTagGrupper;->mFeatureTagsDetected:Ljava/util/LinkedHashMap;
 

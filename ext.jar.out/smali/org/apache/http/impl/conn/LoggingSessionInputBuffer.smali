@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/impl/conn/Wire;)V
     .locals 0
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/impl/conn/Wire;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +41,6 @@
 
 .method public isDataAvailable(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -93,7 +90,6 @@
 
 .method public read([B)I
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -128,9 +124,6 @@
 
 .method public read([BII)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -163,7 +156,6 @@
 
 .method public readLine(Lorg/apache/http/util/CharArrayBuffer;)I
     .locals 6
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

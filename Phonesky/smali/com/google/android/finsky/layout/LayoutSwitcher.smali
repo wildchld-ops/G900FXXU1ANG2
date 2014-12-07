@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;IIILcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,12 +70,6 @@
 
 .method public constructor <init>(Landroid/view/View;IIILcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,9 +106,6 @@
 
 .method public constructor <init>(Landroid/view/View;ILcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;
 
     const v3, 0x7f080131
 
@@ -140,7 +126,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/LayoutSwitcher;)Lcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LayoutSwitcher;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LayoutSwitcher;->mRetryListener:Lcom/google/android/finsky/layout/LayoutSwitcher$RetryButtonListener;
 
@@ -149,7 +134,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/LayoutSwitcher;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LayoutSwitcher;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/LayoutSwitcher;->mPendingLoad:Z
 
@@ -158,8 +142,6 @@
 
 .method private performSwitch(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -288,7 +270,6 @@
 
 .method private setDataVisible(Z)V
     .locals 3
-    .param p1    # Z
 
     iget v1, p0, Lcom/google/android/finsky/layout/LayoutSwitcher;->mDataLayoutId:I
 
@@ -328,8 +309,6 @@
 
 .method private setErrorVisible(ZLjava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/google/android/finsky/layout/LayoutSwitcher;->mContentLayout:Landroid/view/View;
 
@@ -389,7 +368,6 @@
 
 .method private setLoadingVisible(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/LayoutSwitcher;->mContentLayout:Landroid/view/View;
 
@@ -462,7 +440,6 @@
 
 .method public switchToDataMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/LayoutSwitcher;->mDataLayoutId:I
 
@@ -473,7 +450,6 @@
 
 .method public switchToErrorMode(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -484,7 +460,6 @@
 
 .method public switchToLoadingDelayed(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 

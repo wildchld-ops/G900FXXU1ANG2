@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public addGeofence(Lcom/samsung/location/SLocationParameter;)I
     .locals 6
-    .param p1    # Lcom/samsung/location/SLocationParameter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -128,7 +126,6 @@
 
 .method public removeGeofence(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -184,8 +181,6 @@
 
 .method public reportCellGeofenceDetected(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -239,7 +234,6 @@
 
 .method public reportCellGeofenceRequestFail(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -291,7 +285,6 @@
 
 .method public reportFlpHardwareLocation([Landroid/location/Location;)V
     .locals 5
-    .param p1    # [Landroid/location/Location;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -345,8 +338,6 @@
 
 .method public reportGpsGeofenceAddStatus(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -400,8 +391,6 @@
 
 .method public reportGpsGeofencePauseStatus(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -455,8 +444,6 @@
 
 .method public reportGpsGeofenceRemoveStatus(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -510,8 +497,6 @@
 
 .method public reportGpsGeofenceResumeStatus(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -565,15 +550,6 @@
 
 .method public reportGpsGeofenceStatus(IIDDDFFFJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -649,17 +625,6 @@
 
 .method public reportGpsGeofenceTransition(IIDDDFFFJIJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # J
-    .param p14    # I
-    .param p15    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -796,7 +761,6 @@
 
 .method public setFusedLocationHardware(Landroid/hardware/location/IFusedLocationHardware;)V
     .locals 5
-    .param p1    # Landroid/hardware/location/IFusedLocationHardware;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -860,7 +824,6 @@
 
 .method public setGeofenceCellInterface(Lcom/samsung/location/ISLocationCellInterface;)V
     .locals 5
-    .param p1    # Lcom/samsung/location/ISLocationCellInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -924,7 +887,6 @@
 
 .method public setGpsGeofenceHardware(Landroid/location/IGpsGeofenceHardware;)V
     .locals 5
-    .param p1    # Landroid/location/IGpsGeofenceHardware;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -988,8 +950,6 @@
 
 .method public startBatching(ILcom/samsung/location/ISLocationListener;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/samsung/location/ISLocationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1059,9 +1019,6 @@
 
 .method public startGeofence(ILcom/samsung/location/ISGeofenceListener;Landroid/app/PendingIntent;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/samsung/location/ISGeofenceListener;
-    .param p3    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1152,7 +1109,6 @@
 
 .method public stopBatching(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1208,8 +1164,6 @@
 
 .method public stopGeofence(ILandroid/app/PendingIntent;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1286,8 +1240,6 @@
 
 .method public updateBatchingOptions(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

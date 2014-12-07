@@ -69,7 +69,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/InCallButtonVideoFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mSmallTouchArea:Landroid/view/View;
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/InCallButtonVideoFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mResizedTouchArea:Landroid/view/View;
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/InCallButtonVideoFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mBigTouchArea:Landroid/view/View;
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/InCallButtonVideoFragment;)Lcom/android/incallui/vt/VideoCallManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonVideoFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/InCallButtonVideoFragment;->getVideoCallManager()Lcom/android/incallui/vt/VideoCallManager;
 
@@ -161,7 +157,6 @@
 
 .method private showOutgoingButtons(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -230,7 +225,6 @@
 
 .method private showPrimaryCallBanner(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -327,8 +321,6 @@
 
 .method private startAnimation(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -471,7 +463,6 @@
 
 .method private updateButtonState(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x5
 
@@ -499,7 +490,6 @@
 # virtual methods
 .method public enableSwitchButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -627,7 +617,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -636,7 +625,6 @@
 
 .method public onCameraEvent(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -757,21 +745,18 @@
 
 .method public onCaptureAndRecordEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCastingEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -907,9 +892,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -949,7 +931,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->onFinishInflate(Landroid/view/View;)V
 
@@ -1104,7 +1085,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1239,15 +1219,12 @@
 
 .method public onVideoCallEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onVideoCallEvent(ILsiso/vt/VideoTelephonyData;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lsiso/vt/VideoTelephonyData;
 
     return-void
 .end method
@@ -1282,7 +1259,6 @@
 
 .method public setCallState(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/InCallButtonVideoFragment;->updateButtonState(I)V
 
@@ -1291,7 +1267,6 @@
 
 .method public setHideShowButton(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mHideShowToggleButton:Landroid/widget/ToggleButton;
 
@@ -1321,7 +1296,6 @@
 
 .method public setVisibleByDialpad(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
 
@@ -1352,7 +1326,6 @@
 
 .method public setupActionBarItems(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->setupActionBarItems(Landroid/view/View;)V
 
@@ -1370,7 +1343,6 @@
 
 .method public showDialPadButton(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1417,7 +1389,6 @@
 
 .method public showGroupCall(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mSwitchVCButton:Landroid/widget/ImageButton;
 
@@ -1470,7 +1441,6 @@
 
 .method public showModifyCall(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mSwitchVTButton:Landroid/widget/ImageButton;
 
@@ -1502,7 +1472,6 @@
 
 .method public showMute(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -1530,7 +1499,6 @@
 
 .method public showSwitchButton(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/CallButtonFragment;->isDialpadVisible()Z
 
@@ -1611,7 +1579,6 @@
 
 .method public updateConfUI(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 

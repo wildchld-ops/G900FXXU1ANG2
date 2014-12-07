@@ -52,7 +52,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 3
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetCarousel$1;->mInternal:Landroid/view/animation/Interpolator;
 

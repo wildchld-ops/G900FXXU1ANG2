@@ -105,7 +105,6 @@
 
 .method public setExpires(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -146,7 +145,6 @@
 
 .method public setRefresher(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -159,7 +157,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

@@ -171,7 +171,6 @@
 
 .method public static GetCIDFromRoapTrigger(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -204,11 +203,6 @@
 
 .method static synthetic access$000(Lcom/android/server/DrmEventService;ILandroid/drm/DrmInfo;Landroid/drm/DrmInfoRequest;Landroid/content/Intent;)I
     .locals 1
-    .param p0    # Lcom/android/server/DrmEventService;
-    .param p1    # I
-    .param p2    # Landroid/drm/DrmInfo;
-    .param p3    # Landroid/drm/DrmInfoRequest;
-    .param p4    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/DrmEventService;->handleDbOperation(ILandroid/drm/DrmInfo;Landroid/drm/DrmInfoRequest;Landroid/content/Intent;)I
 
@@ -219,7 +213,6 @@
 
 .method static synthetic access$100(Lcom/android/server/DrmEventService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/DrmEventService;
 
     iget-boolean v0, p0, Lcom/android/server/DrmEventService;->isRegisteredBootTime:Z
 
@@ -228,7 +221,6 @@
 
 .method static synthetic access$200(Lcom/android/server/DrmEventService;)V
     .locals 0
-    .param p0    # Lcom/android/server/DrmEventService;
 
     invoke-direct {p0}, Lcom/android/server/DrmEventService;->registerReceiever()V
 
@@ -237,8 +229,6 @@
 
 .method static synthetic access$300(Lcom/android/server/DrmEventService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/server/DrmEventService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/DrmEventService;->userUpdateHandler(Landroid/content/Intent;)V
 
@@ -247,7 +237,6 @@
 
 .method private static checkForFileorDirectoryExists(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v3, Lcom/android/server/DrmEventService;->mIsOMAFL:Z
 
@@ -348,7 +337,6 @@
 
 .method private createIndexData(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -471,7 +459,6 @@
 
 .method private createTables(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -594,7 +581,6 @@
 
 .method private deleteDRMDBFile(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -609,7 +595,6 @@
 
 .method private static deleteLegacydb(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_2
 
@@ -934,10 +919,6 @@
 
 .method private declared-synchronized handleDbOperation(ILandroid/drm/DrmInfo;Landroid/drm/DrmInfoRequest;Landroid/content/Intent;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/drm/DrmInfo;
-    .param p3    # Landroid/drm/DrmInfoRequest;
-    .param p4    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -1185,7 +1166,6 @@
 
 .method private handleDrmInit(Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/server/DrmEventService;->setPermissions()V
 
@@ -1651,7 +1631,6 @@
 
 .method private userUpdateHandler(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1921,8 +1900,6 @@
 # virtual methods
 .method InitializeOmaIntent(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v2, Lcom/android/server/DrmEventService;->isLogEnabled:Z
 
@@ -2007,7 +1984,6 @@
 
 .method InitializeOmaIntent(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v2, Lcom/android/server/DrmEventService;->isLogEnabled:Z
 
@@ -2093,7 +2069,6 @@
 
 .method public handleNitztimeUpdation(Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
 
     const-wide/16 v4, 0x0
 
@@ -2628,7 +2603,6 @@
 
 .method public handleUserUpdatedTimeUpdation(Landroid/content/Intent;)V
     .locals 14
-    .param p1    # Landroid/content/Intent;
 
     const/4 v13, 0x0
 
@@ -2860,7 +2834,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     sget-boolean v0, Lcom/android/server/DrmEventService;->isLogEnabled:Z
 
@@ -3024,8 +2997,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v5, 0x3
 
@@ -3320,8 +3291,6 @@
 
 .method public processWapPush(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v11, 0x0
 

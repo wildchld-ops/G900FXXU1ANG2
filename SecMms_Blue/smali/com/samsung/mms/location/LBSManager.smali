@@ -70,7 +70,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nbi/location/LocationException;
@@ -136,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/samsung/mms/location/LBSManager;)Lcom/nbi/location/Location;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LBSManager;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LBSManager;->sCurrentBestLocation:Lcom/nbi/location/Location;
 
@@ -145,8 +143,6 @@
 
 .method static synthetic access$002(Lcom/samsung/mms/location/LBSManager;Lcom/nbi/location/Location;)Lcom/nbi/location/Location;
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LBSManager;
-    .param p1    # Lcom/nbi/location/Location;
 
     iput-object p1, p0, Lcom/samsung/mms/location/LBSManager;->sCurrentBestLocation:Lcom/nbi/location/Location;
 
@@ -155,7 +151,6 @@
 
 .method static synthetic access$100(Lcom/samsung/mms/location/LBSManager;)Ljava/util/concurrent/CopyOnWriteArraySet;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LBSManager;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LBSManager;->mOneFixLocationObservers:Ljava/util/concurrent/CopyOnWriteArraySet;
 
@@ -164,7 +159,6 @@
 
 .method static synthetic access$200(Lcom/samsung/mms/location/LBSManager;)Ljava/util/concurrent/CopyOnWriteArraySet;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LBSManager;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LBSManager;->mContiniousLocationObservers:Ljava/util/concurrent/CopyOnWriteArraySet;
 
@@ -288,7 +282,6 @@
 
 .method public static declared-synchronized init(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -511,7 +504,6 @@
 # virtual methods
 .method public cancelGetLocation(Lcom/nbi/location/LocationListener;)V
     .locals 2
-    .param p1    # Lcom/nbi/location/LocationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nbi/location/LocationException;
@@ -572,8 +564,6 @@
 
 .method public getOneFix(Lcom/nbi/location/LocationListener;I)V
     .locals 2
-    .param p1    # Lcom/nbi/location/LocationListener;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nbi/location/LocationException;
@@ -614,7 +604,6 @@
 
 .method public startReceivingFixes(Lcom/nbi/location/LocationListener;)V
     .locals 2
-    .param p1    # Lcom/nbi/location/LocationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nbi/location/LocationException;
@@ -655,7 +644,6 @@
 
 .method public stopReceivingFixes(Lcom/nbi/location/LocationListener;)V
     .locals 2
-    .param p1    # Lcom/nbi/location/LocationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nbi/location/LocationException;

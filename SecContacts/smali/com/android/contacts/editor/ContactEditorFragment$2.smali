@@ -44,14 +44,12 @@
 # virtual methods
 .method public onDeleteRequested(Lcom/android/contacts/editor/Editor;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/editor/Editor;
 
     return-void
 .end method
 
 .method public onRequest(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/editor/ContactEditorFragment$2;->val$activity:Landroid/app/Activity;
 

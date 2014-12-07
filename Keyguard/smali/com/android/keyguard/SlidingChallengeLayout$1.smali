@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/util/FloatProperty;-><init>(Ljava/lang/String;)V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public get(Lcom/android/keyguard/SlidingChallengeLayout;)Ljava/lang/Float;
     .locals 1
-    .param p1    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget v0, p1, Lcom/android/keyguard/SlidingChallengeLayout;->mHandleAlpha:F
 
@@ -50,7 +48,6 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/keyguard/SlidingChallengeLayout;
 
@@ -63,8 +60,6 @@
 
 .method public setValue(Lcom/android/keyguard/SlidingChallengeLayout;F)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p2    # F
 
     iput p2, p1, Lcom/android/keyguard/SlidingChallengeLayout;->mHandleAlpha:F
 
@@ -75,8 +70,6 @@
 
 .method public bridge synthetic setValue(Ljava/lang/Object;F)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # F
 
     check-cast p1, Lcom/android/keyguard/SlidingChallengeLayout;
 

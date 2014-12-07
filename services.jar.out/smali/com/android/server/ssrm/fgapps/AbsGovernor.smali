@@ -67,8 +67,6 @@
 # virtual methods
 .method addSysfsParam(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -158,8 +156,6 @@
 
 .method addSystemPropertiesParam(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -201,8 +197,6 @@
 
 .method final setSysfs(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/ssrm/fgapps/AbsGovernor;->sysfsList:Ljava/util/ArrayList;
 
@@ -225,8 +219,6 @@
 
 .method final setSystemProperties(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/ssrm/fgapps/AbsGovernor;->syspropList:Ljava/util/ArrayList;
 
@@ -249,7 +241,6 @@
 
 .method setTag(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/ssrm/fgapps/AbsGovernor;->TAG:Ljava/lang/String;
 

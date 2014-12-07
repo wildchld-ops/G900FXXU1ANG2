@@ -34,7 +34,6 @@
 
 .method private setSliderHandleAlpha(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardHostView$13;->this$0:Lcom/android/keyguard/KeyguardHostView;
 

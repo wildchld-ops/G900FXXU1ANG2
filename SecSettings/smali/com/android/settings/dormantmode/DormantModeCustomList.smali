@@ -101,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/dormantmode/DormantModeCustomList;)I
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantModeCustomList;
 
     iget v0, p0, Lcom/android/settings/dormantmode/DormantModeCustomList;->mSelectedPosition:I
 
@@ -110,8 +109,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/dormantmode/DormantModeCustomList;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantModeCustomList;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/dormantmode/DormantModeCustomList;->mSelectedPosition:I
 
@@ -122,7 +119,6 @@
 # virtual methods
 .method public makeDisablePopup(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -147,7 +143,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -276,9 +271,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v7, "custom_list_view"
 
@@ -452,7 +444,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -520,8 +511,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -561,8 +550,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v4, 0x7f090c9a
 
@@ -623,9 +610,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f04008f
 
@@ -640,7 +624,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 1
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -672,8 +655,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -705,7 +686,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 7
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v4, 0x1
 
@@ -819,7 +799,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -906,7 +885,6 @@
 
 .method protected setCustomListState(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     sput-object p1, Lcom/android/settings/dormantmode/DormantModeCustomList;->CUSTOM_LIST_STATE:Ljava/lang/String;
 

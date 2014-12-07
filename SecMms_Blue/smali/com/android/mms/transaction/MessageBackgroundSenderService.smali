@@ -138,7 +138,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     iget-boolean v0, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mListening:Z
 
@@ -147,7 +146,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/MessageBackgroundSenderService;->getSignatureText()Ljava/lang/String;
 
@@ -158,8 +156,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/transaction/MessageBackgroundSenderService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mListening:Z
 
@@ -168,7 +164,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Lcom/android/mms/transaction/MessageBackgroundSenderService$MessageStatusReceiver;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mMsgStatusReceiver:Lcom/android/mms/transaction/MessageBackgroundSenderService$MessageStatusReceiver;
 
@@ -185,7 +180,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mToast:Landroid/widget/Toast;
 
@@ -194,8 +188,6 @@
 
 .method static synthetic access$2402(Lcom/android/mms/transaction/MessageBackgroundSenderService;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mToast:Landroid/widget/Toast;
 
@@ -204,7 +196,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mContext:Landroid/content/Context;
 
@@ -213,8 +204,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/transaction/MessageBackgroundSenderService;Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/MessageBackgroundSenderService;->getMimeTypeFromUri(Landroid/net/Uri;)Ljava/lang/String;
 
@@ -225,8 +214,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/transaction/MessageBackgroundSenderService;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/MessageBackgroundSenderService;->isAttachSupportedType(Ljava/lang/String;)Z
 
@@ -237,7 +224,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Lcom/android/mms/transaction/MessageBackgroundSenderService$MsgBGSender;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mMsgSender:Lcom/android/mms/transaction/MessageBackgroundSenderService$MsgBGSender;
 
@@ -246,8 +232,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/transaction/MessageBackgroundSenderService;Lcom/android/mms/transaction/MessageBackgroundSenderService$MsgBGSender;)Lcom/android/mms/transaction/MessageBackgroundSenderService$MsgBGSender;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
-    .param p1    # Lcom/android/mms/transaction/MessageBackgroundSenderService$MsgBGSender;
 
     iput-object p1, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mMsgSender:Lcom/android/mms/transaction/MessageBackgroundSenderService$MsgBGSender;
 
@@ -256,7 +240,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessageBackgroundSenderService;->mHandler:Landroid/os/Handler;
 
@@ -265,7 +248,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/transaction/MessageBackgroundSenderService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/MessageBackgroundSenderService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/MessageBackgroundSenderService;->isSignatureEnabled()Z
 
@@ -276,7 +258,6 @@
 
 .method private getMimeTypeFromUri(Landroid/net/Uri;)Ljava/lang/String;
     .locals 14
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -628,7 +609,6 @@
 
 .method private isAttachSupportedType(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getMmsEnabled()Z
 
@@ -698,7 +678,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/MessageBackgroundSenderService"
 
@@ -835,9 +814,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "Mms/MessageBackgroundSenderService"
 

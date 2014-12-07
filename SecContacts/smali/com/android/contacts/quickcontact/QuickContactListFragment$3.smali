@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 

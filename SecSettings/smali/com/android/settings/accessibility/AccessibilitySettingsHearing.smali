@@ -75,7 +75,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->updateFlashNotificationSettingsScreen()V
 
@@ -84,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->updateAutohapticSettingsScreen()V
 
@@ -93,7 +91,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->mSoundDetectorPreferenceScreen:Landroid/preference/SwitchPreferenceScreen;
 
@@ -102,7 +99,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->mAllSoundOffCheckbox:Landroid/preference/CheckBoxPreference;
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -122,7 +117,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->mFlashNotificationCheckbox:Landroid/preference/CheckBoxPreference;
 
@@ -131,7 +125,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -142,7 +135,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -153,7 +145,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -164,7 +155,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->mAutoHapticCheckbox:Landroid/preference/CheckBoxPreference;
 
@@ -173,7 +163,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -184,7 +173,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;)Landroid/os/TactileAssist;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->mTactileAssist:Landroid/os/TactileAssist;
 
@@ -193,8 +181,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;Landroid/os/TactileAssist;)Landroid/os/TactileAssist;
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
-    .param p1    # Landroid/os/TactileAssist;
 
     iput-object p1, p0, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->mTactileAssist:Landroid/os/TactileAssist;
 
@@ -203,8 +189,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/accessibility/AccessibilitySettingsHearing;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsHearing;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -901,7 +885,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -931,9 +914,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -942,7 +922,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettingsHearing;->mCurConfig:Landroid/content/res/Configuration;
@@ -978,7 +957,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1103,7 +1081,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 12
-    .param p1    # I
 
     const/high16 v11, 0x1040000
 
@@ -1414,8 +1391,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const v9, 0x7f09094c
 
@@ -1720,7 +1695,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x0
 
@@ -1729,8 +1703,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 13
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-static {}, Lcom/android/settings/Utils;->isSearchEnable()Z
 

@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/ShareShot;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ShareShot$ShareTargetInfo;->this$0:Lcom/sec/android/app/camera/ShareShot;
 
@@ -72,7 +69,6 @@
 
 .method public setId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ShareShot$ShareTargetInfo;->mId:Ljava/lang/String;
 
@@ -81,7 +77,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ShareShot$ShareTargetInfo;->mName:Ljava/lang/String;
 
@@ -90,7 +85,6 @@
 
 .method public setSelect(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/ShareShot$ShareTargetInfo;->mSelected:Z
 

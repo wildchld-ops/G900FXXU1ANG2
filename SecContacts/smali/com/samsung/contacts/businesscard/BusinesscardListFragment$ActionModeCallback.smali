@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Lcom/samsung/contacts/businesscard/BusinesscardListFragment$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p2    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;-><init>(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)V
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
 
     invoke-direct {p0}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;->updateSelectionMenu()V
 
@@ -411,8 +408,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 9
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v8, 0x1
 
@@ -542,8 +537,6 @@
 
 .method public onContactSelected(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;->this$0:Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
@@ -619,8 +612,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v6, 0x0
 
@@ -776,7 +767,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v3, 0x0
 
@@ -823,8 +813,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 
@@ -981,7 +969,6 @@
 
 .method public setIsShowDone(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;->mIsShowDone:Z
 

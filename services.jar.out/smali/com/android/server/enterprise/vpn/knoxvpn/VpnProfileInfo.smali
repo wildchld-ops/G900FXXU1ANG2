@@ -90,9 +90,6 @@
 # virtual methods
 .method public declared-synchronized addPackageEntry(Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -292,7 +289,6 @@
 
 .method public getPackage(Ljava/lang/String;)Lcom/android/server/enterprise/vpn/knoxvpn/VpnPackageInfo;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/VpnProfileInfo;->mPackageMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -333,7 +329,6 @@
 
 .method public getPackageEntryForUid(I)Lcom/android/server/enterprise/vpn/knoxvpn/VpnPackageInfo;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/enterprise/vpn/knoxvpn/VpnProfileInfo;->mPackageMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -567,7 +562,6 @@
 
 .method public declared-synchronized removePackageEntry(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -607,7 +601,6 @@
 
 .method public declared-synchronized setActivateState(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -630,7 +623,6 @@
 
 .method public declared-synchronized setAdminId(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -653,7 +645,6 @@
 
 .method public declared-synchronized setChainingEnabled(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -676,7 +667,6 @@
 
 .method public declared-synchronized setContainerVpnState(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -716,7 +706,6 @@
 
 .method public declared-synchronized setInterfaceName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -739,7 +728,6 @@
 
 .method public declared-synchronized setIsRetry(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -762,7 +750,6 @@
 
 .method public declared-synchronized setMarkProfileForDeletion(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -785,7 +772,6 @@
 
 .method public declared-synchronized setPersonaId(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -808,7 +794,6 @@
 
 .method public declared-synchronized setProfileName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -831,7 +816,6 @@
 
 .method public declared-synchronized setProtocolType(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -854,7 +838,6 @@
 
 .method public declared-synchronized setRouteType(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -894,7 +877,6 @@
 
 .method public declared-synchronized setVendorPkgName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -917,7 +899,6 @@
 
 .method public declared-synchronized setVpnServiceType(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

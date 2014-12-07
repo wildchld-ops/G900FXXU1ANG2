@@ -36,7 +36,6 @@
 # virtual methods
 .method public onHandlerDragEnd(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$2;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
@@ -56,7 +55,6 @@
 
 .method public onHandlerDragStart(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$2;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 

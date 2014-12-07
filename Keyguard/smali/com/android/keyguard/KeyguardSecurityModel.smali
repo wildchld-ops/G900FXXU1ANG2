@@ -78,7 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -156,7 +155,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardSecurityModel;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSecurityModel;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSecurityModel;->mTelephonyMgr:Landroid/telephony/TelephonyManager;
 
@@ -165,8 +163,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardSecurityModel;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSecurityModel;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardSecurityModel;->unlockSimPin(Ljava/lang/String;)Z
 
@@ -185,7 +181,6 @@
 
 .method static synthetic access$402(Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
-    .param p0    # Ljava/lang/Boolean;
 
     sput-object p0, Lcom/android/keyguard/KeyguardSecurityModel;->sPinUnlocking:Ljava/lang/Boolean;
 
@@ -194,7 +189,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardSecurityModel;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSecurityModel;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSecurityModel;->mContext:Landroid/content/Context;
 
@@ -259,7 +253,6 @@
 
 .method private unlockSimPin(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -320,7 +313,6 @@
 
 .method private unlockSimPinIfNeeded(Lcom/android/internal/telephony/IccCardConstants$State;)Lcom/android/internal/telephony/IccCardConstants$State;
     .locals 8
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     move-object v2, p1
 
@@ -464,7 +456,6 @@
 # virtual methods
 .method public getAlternateFor(Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;)Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardSecurityModel;->isBiometricUnlockEnabled()Z
 
@@ -499,7 +490,6 @@
 
 .method public getBackupSecurityMode(Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;)Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
     .locals 2
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
 
     sget-object v0, Lcom/android/keyguard/KeyguardSecurityModel$2;->$SwitchMap$com$android$keyguard$KeyguardSecurityModel$SecurityMode:[I
 
@@ -1167,7 +1157,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardSecurityModel;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 

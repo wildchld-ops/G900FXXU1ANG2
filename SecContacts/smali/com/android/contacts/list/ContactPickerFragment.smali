@@ -83,7 +83,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/list/ContactPickerFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactPickerFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactPickerFragment;->mContext:Landroid/content/Context;
 
@@ -92,7 +91,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/list/ContactPickerFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactPickerFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactPickerFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -101,8 +99,6 @@
 
 .method static synthetic access$102(Lcom/android/contacts/list/ContactPickerFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactPickerFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/list/ContactPickerFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactPickerFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactPickerFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -120,7 +115,6 @@
 
 .method private showSearchProgress(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mSearchProgress:Landroid/view/View;
 
@@ -382,7 +376,6 @@
 
 .method public editContact(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactPickerFragment;->mListener:Lcom/android/contacts/list/OnContactPickerActionListener;
 
@@ -393,8 +386,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v1, 0x7f030054
 
@@ -469,8 +460,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
 
@@ -507,8 +496,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/android/contacts/list/ContactPickerFragment;->isLegacyCompatibilityMode()Z
 
@@ -604,9 +591,6 @@
 
 .method public onItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -624,7 +608,6 @@
 
 .method public onPickerResult(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactPickerFragment;->mListener:Lcom/android/contacts/list/OnContactPickerActionListener;
 
@@ -639,7 +622,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -672,8 +654,6 @@
 
 .method public onShortcutIntentCreated(Landroid/net/Uri;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactPickerFragment;->mListener:Lcom/android/contacts/list/OnContactPickerActionListener;
 
@@ -684,7 +664,6 @@
 
 .method public pickContact(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactPickerFragment;->mListener:Lcom/android/contacts/list/OnContactPickerActionListener;
 
@@ -695,7 +674,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->restoreSavedState(Landroid/os/Bundle;)V
 
@@ -742,7 +720,6 @@
 
 .method public setAttachPhotoMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mAttachPhotoMode:Z
 
@@ -751,7 +728,6 @@
 
 .method public setCreateContactEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mCreateContactEnabled:Z
 
@@ -760,7 +736,6 @@
 
 .method public setEditMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mEditMode:Z
 
@@ -769,7 +744,6 @@
 
 .method public setEmailMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mEmailMode:Z
 
@@ -778,7 +752,6 @@
 
 .method public setOnContactPickerActionListener(Lcom/android/contacts/list/OnContactPickerActionListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/OnContactPickerActionListener;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mListener:Lcom/android/contacts/list/OnContactPickerActionListener;
 
@@ -787,7 +760,6 @@
 
 .method public setRingToneMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mRingtoneMode:Z
 
@@ -796,7 +768,6 @@
 
 .method public setShortcutRequested(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactPickerFragment;->mShortcutRequested:Z
 
@@ -805,8 +776,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v4, 0x10
 

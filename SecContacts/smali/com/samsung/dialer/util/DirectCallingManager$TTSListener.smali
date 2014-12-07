@@ -27,7 +27,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -213,7 +212,6 @@
 
 .method public onUtteranceCompleted(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Logs/DirectCallingManager"
 

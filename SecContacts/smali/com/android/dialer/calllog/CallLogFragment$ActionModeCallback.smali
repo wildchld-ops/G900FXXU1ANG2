@@ -92,8 +92,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 14
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment$ActionModeCallback;->this$0:Lcom/android/dialer/calllog/CallLogFragment;
 
@@ -836,8 +834,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v4, 0x1
 
@@ -1015,7 +1011,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v4, 0x0
 
@@ -1114,8 +1109,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 19
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const-string v1, "CallLogFragment"
 
@@ -2396,8 +2389,6 @@
 
 .method public setActionContextBarVisibility(ZLandroid/view/ActionMode;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/view/ActionMode;
 
     if-eqz p2, :cond_0
 
@@ -2485,8 +2476,6 @@
 
 .method public toggleSelection(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 

@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -67,7 +65,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirViewEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirViewEnabler;->mContext:Landroid/content/Context;
 
@@ -76,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirViewEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/AirViewEnabler;->showAllOptionDisabledDialog()V
 
@@ -85,7 +81,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/AirViewEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirViewEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -94,8 +89,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/AirViewEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/AirViewEnabler;->broadcastAirViewChanged(Z)V
 
@@ -104,7 +97,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/AirViewEnabler;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirViewEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -113,7 +105,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/AirViewEnabler;)I
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewEnabler;
 
     iget v0, p0, Lcom/android/settings/AirViewEnabler;->mPosition:I
 
@@ -122,7 +113,6 @@
 
 .method private broadcastAirViewChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -433,8 +423,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -618,8 +606,6 @@
 
 .method public setHeaderPosition(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/AirViewEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -630,7 +616,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/widget/Switch;
 
     iget-object v0, p0, Lcom/android/settings/AirViewEnabler;->mSwitch:Landroid/widget/Switch;
 

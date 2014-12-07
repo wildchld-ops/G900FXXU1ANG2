@@ -30,7 +30,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 1
-    .param p1    # F
 
     mul-float v0, p1, p1
 

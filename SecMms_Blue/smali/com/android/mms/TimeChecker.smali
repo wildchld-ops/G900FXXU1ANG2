@@ -68,8 +68,6 @@
 
 .method public static sEnd(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 

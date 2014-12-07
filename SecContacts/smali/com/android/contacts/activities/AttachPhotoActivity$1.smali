@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContactLoaded(Lcom/android/contacts/model/Contact;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual {p1}, Lcom/android/contacts/model/Contact;->isNotFound()Z
 

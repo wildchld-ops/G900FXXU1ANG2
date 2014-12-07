@@ -154,7 +154,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/BoxListViewActivity;)Lcom/android/mms/ui/SplitManager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListViewActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListViewActivity;->mSplitManager:Lcom/android/mms/ui/SplitManager;
 
@@ -163,7 +162,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/BoxListViewActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListViewActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListViewActivity;->mSplitBar:Landroid/view/View;
 
@@ -172,8 +170,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/BoxListViewActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListViewActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListViewActivity;->mIsSplitBarTouch:Z
 
@@ -182,7 +178,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/BoxListViewActivity;)Lcom/android/mms/ui/BoxListFrame;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListViewActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListViewActivity;->mBoxList:Lcom/android/mms/ui/BoxListFrame;
 
@@ -191,7 +186,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/BoxListViewActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListViewActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BoxListViewActivity;->mIsFinish:Z
 
@@ -200,9 +194,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/BoxListViewActivity;IZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListViewActivity;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/BoxListViewActivity;->showEmptyScreen(IZ)V
 
@@ -822,7 +813,6 @@
 
 .method private isIntentForList(Landroid/content/Intent;)Z
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -870,7 +860,6 @@
 
 .method private static isIntentFromLauncher(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "android.intent.category.LAUNCHER"
 
@@ -1058,7 +1047,6 @@
 
 .method private refreshSplitManager(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -1184,8 +1172,6 @@
 
 .method private showEmptyScreen(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v4, 0x8
 
@@ -1371,7 +1357,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x1
 
@@ -1636,8 +1621,6 @@
 
 .method public getFromSearchView(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1859,7 +1842,6 @@
 
 .method public notifyBoxDataChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x2
 
@@ -1954,9 +1936,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v0, "Mms/BoxListViewActivity"
 
@@ -2103,7 +2082,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 10
-    .param p1    # Landroid/content/res/Configuration;
 
     const/16 v9, 0xc
 
@@ -2300,7 +2278,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const-string v0, "Mms/BoxListViewActivity"
 
@@ -2355,7 +2332,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -2713,8 +2689,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -2794,8 +2768,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v5, 0x4
 
@@ -2988,7 +2960,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -3072,7 +3043,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -3171,7 +3141,6 @@
 
 .method public onOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsMenuClosed(Landroid/view/Menu;)V
 
@@ -3245,7 +3214,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const-string v1, "Mms/BoxListViewActivity"
 
@@ -3506,7 +3474,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "Mms/BoxListViewActivity"
 
@@ -3700,7 +3667,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -3759,7 +3725,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/BoxListViewActivity"
 
@@ -3811,7 +3776,6 @@
 
 .method protected removeViewer(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -3964,7 +3928,6 @@
 
 .method protected startNotiViewer(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -4083,8 +4046,6 @@
 
 .method protected startViewer(Ljava/lang/String;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 

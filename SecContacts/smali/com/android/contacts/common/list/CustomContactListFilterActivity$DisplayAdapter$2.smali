@@ -44,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/CustomContactListFilterActivity$DisplayAdapter$2;->val$child:Lcom/android/contacts/common/list/CustomContactListFilterActivity$GroupDelta;
 

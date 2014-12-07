@@ -38,19 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/accounts/Account;Ljava/util/Locale;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Ljava/util/Locale;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
-    .param p11    # Ljava/lang/String;
-    .param p12    # Ljava/lang/String;
-    .param p13    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -271,7 +258,6 @@
 
 .method private checkRewrittenToSecureUrl(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/vending/remoting/api/VendingApiContext;->mContext:Landroid/content/Context;
 
@@ -313,7 +299,6 @@
 
 .method private static checkUrlIsSecure(Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/net/URL;
@@ -490,7 +475,6 @@
 
 .method public getRequestProperties(Z)Lcom/google/android/finsky/protos/VendingProtos$RequestPropertiesProto;
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/volley/AuthFailureError;
@@ -622,7 +606,6 @@
 
 .method public invalidateAuthToken(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -658,7 +641,6 @@
 
 .method public scheduleReauthentication(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 

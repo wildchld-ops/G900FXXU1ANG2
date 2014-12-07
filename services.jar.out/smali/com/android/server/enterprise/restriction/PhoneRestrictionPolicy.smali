@@ -73,7 +73,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -198,8 +197,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->deliveryBlockedMsgs(I)V
 
@@ -208,7 +205,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;)Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy$SmsMmsDeliveryHandler;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mSmsMmsDeliveryHandler:Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy$SmsMmsDeliveryHandler;
 
@@ -217,8 +213,6 @@
 
 .method static synthetic access$302(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mIsPhoneShuttingDown:Z
 
@@ -227,7 +221,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mSimPinBind:Ljava/lang/Runnable;
 
@@ -236,7 +229,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mSimPinHandler:Landroid/os/Handler;
 
@@ -245,7 +237,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mSimPinServiceConn:Landroid/content/ServiceConnection;
 
@@ -254,7 +245,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mContext:Landroid/content/Context;
 
@@ -263,8 +253,6 @@
 
 .method static synthetic access$802(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;Landroid/app/enterprise/ISimPinPolicy;)Landroid/app/enterprise/ISimPinPolicy;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
-    .param p1    # Landroid/app/enterprise/ISimPinPolicy;
 
     iput-object p1, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mSimPinService:Landroid/app/enterprise/ISimPinPolicy;
 
@@ -322,8 +310,6 @@
 
 .method private changeSimPinCodeService(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mSimPinService:Landroid/app/enterprise/ISimPinPolicy;
 
@@ -369,8 +355,6 @@
 
 .method private dataLimitCounter(Ljava/lang/String;J)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const-wide/16 v1, 0x0
 
@@ -410,7 +394,6 @@
 
 .method private deleteMessageFromStorageProvider(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -437,7 +420,6 @@
 
 .method private declared-synchronized deliveryBlockedMsgs(I)V
     .locals 17
-    .param p1    # I
 
     monitor-enter p0
 
@@ -898,7 +880,6 @@
 
 .method private enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -938,7 +919,6 @@
 
 .method private enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     if-nez p1, :cond_0
 
@@ -967,7 +947,6 @@
 
 .method private enforcePhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1075,9 +1054,6 @@
 
 .method private getRestrictionPattern(Landroid/app/enterprise/ContextInfo;ZLjava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1174,7 +1150,6 @@
 
 .method private getSmsMmsAllowed(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1217,9 +1192,6 @@
 
 .method private isNumberAllowed(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v12, 0x2
 
@@ -1440,7 +1412,6 @@
 
 .method private putDataCheckboxState(Z)Z
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -1527,8 +1498,6 @@
 
 .method private setIccLockEnabled(ZLjava/lang/String;)I
     .locals 5
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->mSimPinService:Landroid/app/enterprise/ISimPinPolicy;
 
@@ -2124,7 +2093,6 @@
 
 .method private validatePinCode(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -2179,8 +2147,6 @@
 # virtual methods
 .method public addIncomingCallExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "PhoneRestrictionPolicy"
 
@@ -2235,8 +2201,6 @@
 
 .method public addIncomingCallRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2291,8 +2255,6 @@
 
 .method public addIncomingSmsExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "PhoneRestrictionPolicy"
 
@@ -2347,8 +2309,6 @@
 
 .method public addIncomingSmsRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2949,8 +2909,6 @@
 
 .method public addOutgoingCallExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "PhoneRestrictionPolicy"
 
@@ -3005,8 +2963,6 @@
 
 .method public addOutgoingCallRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3061,8 +3017,6 @@
 
 .method public addOutgoingSmsExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "PhoneRestrictionPolicy"
 
@@ -3117,8 +3071,6 @@
 
 .method public addOutgoingSmsRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3169,8 +3121,6 @@
 
 .method public allowCallerIDDisplay(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3212,8 +3162,6 @@
 
 .method public allowCopyContactToSim(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3242,8 +3190,6 @@
 
 .method public allowIncomingMms(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3266,8 +3212,6 @@
 
 .method public allowIncomingSms(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3290,8 +3234,6 @@
 
 .method public allowOutgoingMms(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3314,8 +3256,6 @@
 
 .method public allowOutgoingSms(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3338,8 +3278,6 @@
 
 .method public allowWapPush(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3362,8 +3300,6 @@
 
 .method public blockMmsWithStorage(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3409,8 +3345,6 @@
 
 .method public blockSmsWithStorage(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3456,7 +3390,6 @@
 
 .method public canIncomingCall(Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -3626,7 +3559,6 @@
 
 .method public canIncomingSms(Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -3811,7 +3743,6 @@
 
 .method public canOutgoingCall(Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -3981,7 +3912,6 @@
 
 .method public canOutgoingSms(Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -4198,9 +4128,6 @@
 
 .method public changeSimPinCode(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4477,7 +4404,6 @@
 
 .method public checkEnableUseOfPacketData(Z)Z
     .locals 5
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -4532,7 +4458,6 @@
 
 .method public clearStoredBlockedMms(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x1
 
@@ -4565,7 +4490,6 @@
 
 .method public clearStoredBlockedSms(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x1
 
@@ -4718,8 +4642,6 @@
 
 .method public enableLimitNumberOfCalls(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -4879,8 +4801,6 @@
 
 .method public enableLimitNumberOfSms(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -5026,7 +4946,6 @@
 
 .method public getDataCallLimitEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -5073,8 +4992,6 @@
 
 .method public getEmergencyCallOnly(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5192,7 +5109,6 @@
 
 .method public getIncomingCallExceptionPatterns(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -5231,8 +5147,6 @@
 
 .method public getIncomingCallRestriction(Landroid/app/enterprise/ContextInfo;Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -5269,7 +5183,6 @@
 
 .method public getIncomingSmsExceptionPatterns(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -5308,8 +5221,6 @@
 
 .method public getIncomingSmsRestriction(Landroid/app/enterprise/ContextInfo;Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string/jumbo v0, "smsRestrictionIncomingPattern"
 
@@ -5322,8 +5233,6 @@
 
 .method public getLimitOfDataCalls(Landroid/app/enterprise/ContextInfo;I)J
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const-wide/16 v9, 0x0
 
@@ -5439,8 +5348,6 @@
 
 .method public getLimitOfIncomingCalls(Landroid/app/enterprise/ContextInfo;I)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -5566,8 +5473,6 @@
 
 .method public getLimitOfIncomingSms(Landroid/app/enterprise/ContextInfo;I)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5683,8 +5588,6 @@
 
 .method public getLimitOfOutgoingCalls(Landroid/app/enterprise/ContextInfo;I)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -5810,8 +5713,6 @@
 
 .method public getLimitOfOutgoingSms(Landroid/app/enterprise/ContextInfo;I)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5927,7 +5828,6 @@
 
 .method public getOutgoingCallExceptionPatterns(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -5966,8 +5866,6 @@
 
 .method public getOutgoingCallRestriction(Landroid/app/enterprise/ContextInfo;Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -6004,7 +5902,6 @@
 
 .method public getOutgoingSmsExceptionPatterns(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -6043,8 +5940,6 @@
 
 .method public getOutgoingSmsRestriction(Landroid/app/enterprise/ContextInfo;Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string/jumbo v0, "smsRestrictionOutgoingPattern"
 
@@ -6057,7 +5952,6 @@
 
 .method public getPinCode(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -6137,7 +6031,6 @@
 
 .method public isBlockMmsWithStorageEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6166,7 +6059,6 @@
 
 .method public isBlockSmsWithStorageEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6195,7 +6087,6 @@
 
 .method public isCallerIDDisplayAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -6257,7 +6148,6 @@
 
 .method public isCopyContactToSimAllowed(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -6364,7 +6254,6 @@
 
 .method public isCopyContactToSimAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -6409,7 +6298,6 @@
 
 .method public isIncomingMmsAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "allowIncomingMms"
 
@@ -6422,7 +6310,6 @@
 
 .method public isIncomingSmsAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6437,7 +6324,6 @@
 
 .method public isLimitNumberOfCallsEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -6502,7 +6388,6 @@
 
 .method public isLimitNumberOfSmsEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6558,7 +6443,6 @@
 
 .method public isOutgoingMmsAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "allowOutgoingMms"
 
@@ -6571,7 +6455,6 @@
 
 .method public isOutgoingSmsAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6586,7 +6469,6 @@
 
 .method public isSimLockedByAdmin(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -6626,7 +6508,6 @@
 
 .method public isWapPushAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -6693,9 +6574,6 @@
 
 .method public declared-synchronized lockUnlockCorporateSimCard(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/16 v3, 0xc
 
@@ -6888,14 +6766,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->updateDataLimitState()V
 
@@ -6920,14 +6796,12 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public removeIncomingCallExceptionPattern(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -6946,7 +6820,6 @@
 
 .method public removeIncomingCallRestriction(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -6965,7 +6838,6 @@
 
 .method public removeIncomingSmsExceptionPattern(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -6984,7 +6856,6 @@
 
 .method public removeIncomingSmsRestriction(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, ""
 
@@ -6997,7 +6868,6 @@
 
 .method public removeOutgoingCallExceptionPattern(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -7016,7 +6886,6 @@
 
 .method public removeOutgoingCallRestriction(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -7035,7 +6904,6 @@
 
 .method public removeOutgoingSmsExceptionPattern(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -7054,7 +6922,6 @@
 
 .method public removeOutgoingSmsRestriction(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, ""
 
@@ -7067,7 +6934,6 @@
 
 .method public resetCallsCount(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -7174,7 +7040,6 @@
 
 .method public resetDataCallLimitCounter(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -7225,7 +7090,6 @@
 
 .method public resetSmsCount(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -7318,8 +7182,6 @@
 
 .method public setDataCallLimitEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -7455,8 +7317,6 @@
 
 .method public setEmergencyCallOnly(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7493,8 +7353,6 @@
 
 .method public setIncomingCallExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -7537,8 +7395,6 @@
 
 .method public setIncomingCallRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -7581,8 +7437,6 @@
 
 .method public setIncomingSmsExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -7625,8 +7479,6 @@
 
 .method public setIncomingSmsRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7649,10 +7501,6 @@
 
 .method public setLimitOfDataCalls(Landroid/app/enterprise/ContextInfo;JJJ)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
 
     const-wide/16 v2, 0x0
 
@@ -7726,10 +7574,6 @@
 
 .method public setLimitOfIncomingCalls(Landroid/app/enterprise/ContextInfo;III)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -7819,10 +7663,6 @@
 
 .method public setLimitOfIncomingSms(Landroid/app/enterprise/ContextInfo;III)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -7902,10 +7742,6 @@
 
 .method public setLimitOfOutgoingCalls(Landroid/app/enterprise/ContextInfo;III)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -7995,10 +7831,6 @@
 
 .method public setLimitOfOutgoingSms(Landroid/app/enterprise/ContextInfo;III)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -8078,8 +7910,6 @@
 
 .method public setOutgoingCallExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -8122,8 +7952,6 @@
 
 .method public setOutgoingCallRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -8166,8 +7994,6 @@
 
 .method public setOutgoingSmsExceptionPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "PhoneRestrictionPolicy"
 
@@ -8210,8 +8036,6 @@
 
 .method public setOutgoingSmsRestriction(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -8234,12 +8058,6 @@
 
 .method public storeBlockedSmsMms(Landroid/app/enterprise/ContextInfo;Z[BLjava/lang/String;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;->enforceOwnerOnlyAndPhonePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -8346,7 +8164,6 @@
 
 .method public updateDateAndDataCallCounters(J)V
     .locals 13
-    .param p1    # J
 
     const/4 v12, 0x3
 

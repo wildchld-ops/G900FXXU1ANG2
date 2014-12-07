@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Ljava/net/InetAddress;ILcom/android/server/display/WfdBridgeBase$BridgeListner;)V
     .locals 3
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
-    .param p3    # Lcom/android/server/display/WfdBridgeBase$BridgeListner;
 
     const/4 v2, 0x0
 
@@ -189,9 +186,6 @@
 
 .method public request(Landroid/net/wifi/p2p/WifiP2pDevice;II)V
     .locals 8
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p2    # I
-    .param p3    # I
 
     const-string v3, ""
 
@@ -488,7 +482,6 @@
 
 .method public sendBusyflag(I)V
     .locals 8
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/display/WfdBridgeClient;->isConnected()Z
 
@@ -528,7 +521,6 @@
 
 .method public sendMsg(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)I
     .locals 2
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     iget-object v0, p1, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->mPeer:Lcom/android/server/display/WfdBridgeBase$BridgePeer;
 
@@ -543,7 +535,6 @@
 
 .method public updateClientDevice(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     return-void
 .end method

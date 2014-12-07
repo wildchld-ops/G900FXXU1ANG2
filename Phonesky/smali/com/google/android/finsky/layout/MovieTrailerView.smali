@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -39,9 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/YoutubeFrameView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -50,8 +44,6 @@
 
 .method private setCurtainCaption(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -78,9 +70,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v5, 0x0
 
@@ -209,7 +198,6 @@
 
 .method protected getClickIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/MovieTrailerView;->getContext()Landroid/content/Context;
 
@@ -268,11 +256,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/MovieTrailerView;->getWidth()I
 
@@ -425,8 +408,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 

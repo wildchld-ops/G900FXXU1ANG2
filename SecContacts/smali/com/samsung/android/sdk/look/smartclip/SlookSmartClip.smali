@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -45,7 +44,6 @@
 
 .method private isSupport(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -72,7 +70,6 @@
 # virtual methods
 .method public addMetaTag(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;
 
     const/4 v0, 0x1
 
@@ -95,7 +92,6 @@
 
 .method public removeMetaTag(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

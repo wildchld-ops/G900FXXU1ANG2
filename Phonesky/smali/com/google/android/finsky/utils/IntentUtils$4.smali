@@ -151,8 +151,6 @@
 # virtual methods
 .method public buildViewCollectionIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/IntentUtils$4;->buildIntent()Landroid/content/Intent;
 
@@ -173,9 +171,6 @@
 
 .method public buildViewItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/IntentUtils$4;->buildIntent()Landroid/content/Intent;
 

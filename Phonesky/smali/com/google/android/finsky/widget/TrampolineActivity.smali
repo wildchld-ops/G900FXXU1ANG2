@@ -17,9 +17,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/widget/TrampolineActivity;Lcom/google/android/finsky/api/model/DfeToc;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/TrampolineActivity;
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/widget/TrampolineActivity;->initialize(Lcom/google/android/finsky/api/model/DfeToc;I)V
 
@@ -28,7 +25,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/widget/TrampolineActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/TrampolineActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/widget/TrampolineActivity;->showNetworkNecessaryDialog()V
 
@@ -37,8 +33,6 @@
 
 .method public static getLaunchIntent(Landroid/content/Context;Ljava/lang/Class;I)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -68,8 +62,6 @@
 
 .method public static getPendingLaunchIntent(Landroid/content/Context;Ljava/lang/Class;I)Landroid/app/PendingIntent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,8 +95,6 @@
 
 .method private initialize(Lcom/google/android/finsky/api/model/DfeToc;I)V
     .locals 13
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # I
 
     const/4 v11, 0x0
 
@@ -338,7 +328,6 @@
 
 .method protected getCorpusName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -355,7 +344,6 @@
 
 .method protected isBackendEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -364,9 +352,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -392,7 +377,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -472,8 +456,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -486,8 +468,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 

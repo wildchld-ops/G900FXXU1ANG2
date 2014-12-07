@@ -23,7 +23,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/address/AddressImpl;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/address/AddressImpl;
 
     const-string v0, "Reply-To"
 

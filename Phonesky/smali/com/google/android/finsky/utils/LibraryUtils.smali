@@ -10,7 +10,6 @@
 # direct methods
 .method public static areRequiredSubsOwnedForAllDocs(Lcom/google/android/finsky/library/Library;Ljava/util/List;)Z
     .locals 14
-    .param p0    # Lcom/google/android/finsky/library/Library;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -133,8 +132,6 @@
 
 .method public static getFirstOwner(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/Libraries;)Landroid/accounts/Account;
     .locals 5
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/library/Libraries;->getAccountLibraries()Ljava/util/List;
 
@@ -181,9 +178,6 @@
 
 .method public static getOwnerWithCurrentAccount(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/Libraries;Landroid/accounts/Account;)Landroid/accounts/Account;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
-    .param p2    # Landroid/accounts/Account;
 
     invoke-virtual {p1, p2}, Lcom/google/android/finsky/library/Libraries;->getAccountLibrary(Landroid/accounts/Account;)Lcom/google/android/finsky/library/AccountLibrary;
 
@@ -221,8 +215,6 @@
 
 .method public static getOwnerWithCurrentAccount(Ljava/util/List;Lcom/google/android/finsky/library/Libraries;Landroid/accounts/Account;)Landroid/accounts/Account;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -274,9 +266,6 @@
 
 .method public static isAvailable(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/library/Library;)Z
     .locals 9
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Lcom/google/android/finsky/library/Library;
 
     const/4 v8, 0x2
 
@@ -408,9 +397,6 @@
 
 .method public static declared-synchronized isOfferOwned(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/Library;I)Z
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/library/Library;
-    .param p2    # I
 
     const-class v1, Lcom/google/android/finsky/utils/LibraryUtils;
 
@@ -441,9 +427,6 @@
 
 .method public static declared-synchronized isOfferOwned(Lcom/google/android/finsky/protos/Common$Docid;Lcom/google/android/finsky/library/Library;I)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p1    # Lcom/google/android/finsky/library/Library;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -521,8 +504,6 @@
 
 .method public static isOwned(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/Library;)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/library/Library;
 
     const/4 v2, 0x0
 

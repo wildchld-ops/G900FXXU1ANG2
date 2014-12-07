@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -111,7 +109,6 @@
 
 .method private savePreferences(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -169,8 +166,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/mms/ui/FontSizePreference;->savePreferences(I)V
 
@@ -181,7 +176,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -194,7 +188,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 5
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
@@ -250,7 +243,6 @@
 
 .method public setSummaryByIndex(I)V
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -276,7 +268,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSupport7StepFontSize()Z
 

@@ -6,9 +6,6 @@
 # direct methods
 .method public static getSavedExpansionState(Landroid/os/Bundle;Ljava/lang/String;I)I
     .locals 3
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p0, :cond_1
 
@@ -50,9 +47,6 @@
 
 .method public static saveExpansionState(Landroid/os/Bundle;Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 

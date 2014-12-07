@@ -33,7 +33,6 @@
 # virtual methods
 .method public queueChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/PlaylistControlButtons$1;->this$0:Lcom/google/android/finsky/layout/PlaylistControlButtons;
 

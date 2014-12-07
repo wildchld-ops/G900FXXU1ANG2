@@ -86,7 +86,6 @@
 
 .method private static getSocialNetworkServiceLoginList(Landroid/content/Context;)I
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -136,7 +135,6 @@
 
 .method private static isDefaultSmsApp(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -205,7 +203,6 @@
 
 .method private static isEmailLogin(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -236,7 +233,6 @@
 
 .method public static isKeyguardSecureLocked(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -285,7 +281,6 @@
 
 .method public static registers(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/incallui/callerinfocard/CallerInfoCardUtils;->mRegistered:Z
 
@@ -307,8 +302,6 @@
 
 .method public static sendBroadcastFacebookRequested(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -327,8 +320,6 @@
 
 .method public static sendBroadcastGooglePlusRequested(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -358,8 +349,6 @@
 
 .method public static sendBroadcastLinkedInRequested(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -378,11 +367,6 @@
 
 .method public static startQuery(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     const-string v0, "CallerInfoCardUtils"
 
@@ -435,11 +419,6 @@
 
 .method private static startQueryForAnniversary(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     const/16 v0, 0x66
 
@@ -470,11 +449,6 @@
 
 .method private static startQueryForBirthday(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     const/16 v0, 0x65
 
@@ -505,11 +479,6 @@
 
 .method private static startQueryForEmail(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -644,11 +613,6 @@
 
 .method private static startQueryForLastCallLog(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     const/16 v0, 0xc9
 
@@ -675,11 +639,6 @@
 
 .method private static startQueryForMemo(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     const/16 v0, 0x12d
 
@@ -714,11 +673,6 @@
 
 .method private static startQueryForMessage(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     if-eqz p1, :cond_0
 
@@ -958,11 +912,6 @@
 
 .method private static startQueryForPersonalEvents(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     invoke-static {p0, p1, p2, p3, p4}, Lcom/android/incallui/callerinfocard/CallerInfoCardUtils;->startQueryForBirthday(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
 
@@ -973,11 +922,6 @@
 
 .method private static startQueryForSocialNetworkService(Landroid/content/Context;ILcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     if-eqz p1, :cond_0
 
@@ -1265,7 +1209,6 @@
 
 .method public static unregisters(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/incallui/callerinfocard/CallerInfoCardUtils;->mRegistered:Z
 

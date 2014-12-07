@@ -14,7 +14,6 @@
 
 .method public static newInstance(I)Lcom/google/android/finsky/billing/ProgressDialogFragment;
     .locals 3
-    .param p0    # I
 
     new-instance v1, Lcom/google/android/finsky/billing/ProgressDialogFragment;
 
@@ -35,7 +34,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Lcom/google/android/finsky/billing/ProgressDialogFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Lcom/google/android/finsky/billing/ProgressDialogFragment;
 
@@ -61,7 +59,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 

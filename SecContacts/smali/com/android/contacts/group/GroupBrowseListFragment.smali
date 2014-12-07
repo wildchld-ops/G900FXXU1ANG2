@@ -86,11 +86,6 @@
 
 .method public onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
     .locals 11
-    .param p1    # Landroid/widget/ExpandableListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->getAdapter()Lcom/android/contacts/group/GroupBrowseListAdapter;
 
@@ -241,9 +236,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v0, "expanded_sections"
 
@@ -285,10 +277,6 @@
 
 .method public onGroupClick(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
     .locals 12
-    .param p1    # Landroid/widget/ExpandableListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p1}, Landroid/widget/ExpandableListView;->getExpandableListAdapter()Landroid/widget/ExpandableListAdapter;
 
@@ -441,9 +429,6 @@
 
 .method public onItemLongClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)Z
     .locals 11
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -568,7 +553,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "groupInfo"
 

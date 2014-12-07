@@ -50,10 +50,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/app/ResolverActivity;Landroid/content/Context;Landroid/content/Intent;[Landroid/content/Intent;I)V
     .locals 4
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # [Landroid/content/Intent;
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -130,7 +126,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;->mDeviceList:Ljava/util/List;
 
@@ -139,8 +134,6 @@
 
 .method private final bindView(Landroid/view/View;Lcom/android/internal/app/ResolverActivity$DisplayDeviceInfo;)V
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/internal/app/ResolverActivity$DisplayDeviceInfo;
 
     const v10, 0x1020014
 
@@ -322,8 +315,6 @@
 
 .method private final loadingProgressView(Landroid/view/View;Lcom/android/internal/app/ResolverActivity$DisplayDeviceInfo;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/internal/app/ResolverActivity$DisplayDeviceInfo;
 
     const v1, 0x1020014
 
@@ -372,7 +363,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;->mDeviceList:Ljava/util/List;
 
@@ -385,7 +375,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -394,7 +383,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;->getCount()I
 
@@ -438,9 +426,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v11, 0x1
 
@@ -690,7 +675,6 @@
 
 .method public setEmpty(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;->mEmpty:Z
 
@@ -699,7 +683,6 @@
 
 .method public setLoading(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;->mLoading:Z
 

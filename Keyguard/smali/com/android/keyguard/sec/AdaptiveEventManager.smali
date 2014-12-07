@@ -96,7 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -391,8 +390,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/AdaptiveEventManager;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/AdaptiveEventManager;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/AdaptiveEventManager;->handleUpdateWeather(Landroid/content/Intent;)V
 
@@ -401,7 +398,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/AdaptiveEventManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/AdaptiveEventManager;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mContext:Landroid/content/Context;
 
@@ -410,7 +406,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/AdaptiveEventManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/AdaptiveEventManager;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mCPName:Ljava/lang/String;
 
@@ -419,7 +414,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/keyguard/sec/AdaptiveEventManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/keyguard/sec/AdaptiveEventManager;->sInstance:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
@@ -439,7 +433,6 @@
 
 .method private getValidTemp(F)Ljava/lang/String;
     .locals 4
-    .param p1    # F
 
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
@@ -496,7 +489,6 @@
 
 .method private getWeatherTempUnit(I)I
     .locals 4
-    .param p1    # I
 
     const v3, 0x7f060128
 
@@ -608,7 +600,6 @@
 
 .method private handleUpdateWeather(Landroid/content/Intent;)V
     .locals 30
-    .param p1    # Landroid/content/Intent;
 
     const-string v27, "aw_daemon_service_key_weather_icon_num"
 
@@ -1670,7 +1661,6 @@
 
 .method private updateContainers(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "AdaptiveEventManager"
 
@@ -1860,7 +1850,6 @@
 
 .method public getWeatherIconImageResources(I)I
     .locals 3
-    .param p1    # I
 
     const-string v0, "AdaptiveEventManager"
 
@@ -2042,7 +2031,6 @@
 
 .method public removeAdaptiveEvent(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2129,9 +2117,6 @@
 
 .method public setAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     const/4 v5, 0x0
 
@@ -2347,7 +2332,6 @@
 
 .method protected setAdaptiveEventContainerSmall(Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;)V
     .locals 2
-    .param p1    # Lcom/android/keyguard/sec/AdaptiveEventContainerSmall;
 
     const-string v0, "AdaptiveEventManager"
 
@@ -2362,7 +2346,6 @@
 
 .method protected setWeatherInfoTrue(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager;->mWeatherInfoTrue:Z
 
@@ -2371,7 +2354,6 @@
 
 .method public toDigitString(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -2452,9 +2434,6 @@
 
 .method public updateAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     const/4 v4, 0x2
 

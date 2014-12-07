@@ -14,8 +14,6 @@
 
 .method public static newInstance(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Lcom/google/android/finsky/activities/FreeSongOfTheDayFragment;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/FreeSongOfTheDayFragment;
 
@@ -93,7 +91,6 @@
 
 .method protected rebindViews(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/FreeSongOfTheDayFragment;->rebindActionBar()V
 
@@ -219,7 +216,6 @@
 
 .method protected recordState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method

@@ -862,8 +862,6 @@
 
 .method public static appendPropertySimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     move-object v0, p0
 
@@ -872,8 +870,6 @@
 
 .method public static appendSimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     move-object v0, p0
 
@@ -882,8 +878,6 @@
 
 .method public static appendSocketNameSimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     move-object v0, p0
 
@@ -892,8 +886,6 @@
 
 .method private static booleanFeatureBuildCarrier(II)Z
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -1116,10 +1108,6 @@
 
 .method public static checkSimChanged(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v7, 0x1
 
@@ -1350,7 +1338,6 @@
 
 .method private static containsSimProfile(Lcom/android/internal/telephony/MultiSimManager$SimProfile;)I
     .locals 3
-    .param p0    # Lcom/android/internal/telephony/MultiSimManager$SimProfile;
 
     const/4 v0, 0x0
 
@@ -1399,8 +1386,6 @@
 
 .method public static featureSimSlot(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1489,7 +1474,6 @@
 
 .method public static getActivatedSimNum(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1553,7 +1537,6 @@
 
 .method public static getIndexSimProfile(I)I
     .locals 4
-    .param p0    # I
 
     const/4 v1, -0x1
 
@@ -1643,8 +1626,6 @@
 
 .method public static getIsSIMOn(Landroid/content/Context;I)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1675,7 +1656,6 @@
 
 .method public static getLogicalSimSlot(I)I
     .locals 4
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -1716,7 +1696,6 @@
 
 .method public static getPhysicalSimSlot(I)I
     .locals 6
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -1818,8 +1797,6 @@
 
 .method public static getSimCardIcon(Landroid/content/Context;I)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1914,8 +1891,6 @@
 
 .method public static getSimCardName(Landroid/content/Context;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2478,8 +2453,6 @@
 
 .method public static isActivatedSimSlot(Landroid/content/Context;I)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2533,7 +2506,6 @@
 
 .method public static isInsertedSimSlot(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -2722,7 +2694,6 @@
 
 .method private static loadSimProfileIdx(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2841,7 +2812,6 @@
 
 .method private static loadSimProfileTable(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -3197,7 +3167,6 @@
 
 .method private static saveSimProfileIdx(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -3318,7 +3287,6 @@
 
 .method private static saveSimProfileTable(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -3428,9 +3396,6 @@
 
 .method public static setIsSIMOn(Landroid/content/Context;IZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "MultiSimManager"
 
@@ -3479,9 +3444,6 @@
 
 .method public static setSimCardIcon(Landroid/content/Context;II)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "MultiSimManager"
 
@@ -3530,9 +3492,6 @@
 
 .method public static setSimCardName(Landroid/content/Context;ILjava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

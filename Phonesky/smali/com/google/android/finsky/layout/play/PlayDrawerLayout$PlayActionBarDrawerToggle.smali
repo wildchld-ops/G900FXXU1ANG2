@@ -23,11 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/layout/play/PlayDrawerLayout;Landroid/app/Activity;Landroid/support/v4/widget/DrawerLayout;III)V
     .locals 6
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Landroid/support/v4/widget/DrawerLayout;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout$PlayActionBarDrawerToggle;->this$0:Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
@@ -50,7 +45,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/play/PlayDrawerLayout$PlayActionBarDrawerToggle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout$PlayActionBarDrawerToggle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/play/PlayDrawerLayout$PlayActionBarDrawerToggle;->restoreAndResetBreadcrumb()V
 
@@ -99,7 +93,6 @@
 # virtual methods
 .method public onDrawerClosed(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/ActionBarDrawerToggle;->onDrawerClosed(Landroid/view/View;)V
 
@@ -110,7 +103,6 @@
 
 .method public onDrawerOpened(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/ActionBarDrawerToggle;->onDrawerOpened(Landroid/view/View;)V
 

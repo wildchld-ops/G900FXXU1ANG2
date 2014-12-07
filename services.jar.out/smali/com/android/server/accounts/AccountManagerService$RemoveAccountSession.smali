@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accounts/AccountManagerService;Lcom/android/server/accounts/AccountManagerService$UserAccounts;Landroid/accounts/IAccountManagerResponse;Landroid/accounts/Account;)V
     .locals 7
-    .param p2    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
-    .param p3    # Landroid/accounts/IAccountManagerResponse;
-    .param p4    # Landroid/accounts/Account;
 
     iput-object p1, p0, Lcom/android/server/accounts/AccountManagerService$RemoveAccountSession;->this$0:Lcom/android/server/accounts/AccountManagerService;
 
@@ -54,7 +51,6 @@
 # virtual methods
 .method public onResult(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x5
 
@@ -293,7 +289,6 @@
 
 .method protected toDebugString(J)Ljava/lang/String;
     .locals 2
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 

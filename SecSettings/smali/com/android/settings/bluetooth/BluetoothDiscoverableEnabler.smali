@@ -47,9 +47,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/settings/bluetooth/LocalBluetoothAdapter;Landroid/preference/CheckBoxPreference;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    .param p3    # Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,7 +109,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->updateCountdownSummary()V
 
@@ -121,7 +117,6 @@
 
 .method private static formatTimeRemaining(I)Ljava/lang/String;
     .locals 8
-    .param p0    # I
 
     const/4 v7, 0x1
 
@@ -277,7 +272,6 @@
 
 .method private setEnabled(Z)V
     .locals 10
-    .param p1    # Z
 
     const/16 v9, 0x17
 
@@ -507,7 +501,6 @@
 
 .method private updateTimerDisplay(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
 
@@ -597,7 +590,6 @@
 
 .method handleModeChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -692,7 +684,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 
@@ -902,7 +893,6 @@
 
 .method setDiscoverableTimeout(I)V
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -982,7 +972,6 @@
 
 .method setLocalDiscoverableTimeout(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v1, 0x78
 
@@ -1036,7 +1025,6 @@
 
 .method setNumberOfPairedDevices(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->mNumberOfPairedDevices:I
 

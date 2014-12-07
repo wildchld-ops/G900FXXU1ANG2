@@ -48,7 +48,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Integer;
     .locals 4
-    .param p1    # [Ljava/lang/Void;
 
     :try_start_0
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
@@ -86,7 +85,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -99,7 +97,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 7
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v6, 0x1
 
@@ -241,7 +238,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

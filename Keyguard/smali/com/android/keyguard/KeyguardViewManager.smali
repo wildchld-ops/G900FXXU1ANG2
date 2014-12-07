@@ -70,10 +70,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/ViewManager;Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewManager;
-    .param p3    # Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
-    .param p4    # Lcom/android/internal/widget/LockPatternUtils;
 
     const/4 v1, 0x0
 
@@ -128,7 +124,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardViewManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewManager;->mContext:Landroid/content/Context;
 
@@ -137,7 +132,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardViewManager;)Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewManager;->mKeyguardViewFrame:Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;
 
@@ -154,7 +148,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardViewManager;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardViewManager;->mTransportBitmapEnabled:Z
 
@@ -163,8 +156,6 @@
 
 .method static synthetic access$302(Lcom/android/keyguard/KeyguardViewManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardViewManager;->mTransportBitmapEnabled:Z
 
@@ -173,7 +164,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardViewManager;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewManager;->mKeyguardHost:Landroid/widget/FrameLayout;
 
@@ -182,7 +172,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardViewManager;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewManager;->shouldEnableScreenRotation()Z
 
@@ -193,10 +182,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/KeyguardViewManager;ZZLandroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/keyguard/KeyguardViewManager;->maybeCreateKeyguardLocked(ZZLandroid/os/Bundle;)V
 
@@ -205,7 +190,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/KeyguardViewManager;)Lcom/android/keyguard/KeyguardHostView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewManager;->mKeyguardView:Lcom/android/keyguard/KeyguardHostView;
 
@@ -214,7 +198,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardViewManager;)Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewManager;->mViewMediatorCallback:Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
 
@@ -223,7 +206,6 @@
 
 .method private inflateKeyguardView(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const v8, 0x7f0b0086
 
@@ -425,9 +407,6 @@
 
 .method private maybeCreateKeyguardLocked(ZZLandroid/os/Bundle;)V
     .locals 10
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v9, 0x2
 
@@ -738,7 +717,6 @@
 
 .method private maybeEnableScreenRotation(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x2
 
@@ -1224,7 +1202,6 @@
 
 .method public dispatch(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewManager;->mKeyguardView:Lcom/android/keyguard/KeyguardHostView;
 
@@ -1444,7 +1421,6 @@
 
 .method public declared-synchronized onScreenTurnedOn(Lcom/android/internal/policy/IKeyguardShowCallback;)V
     .locals 5
-    .param p1    # Lcom/android/internal/policy/IKeyguardShowCallback;
 
     monitor-enter p0
 
@@ -1626,7 +1602,6 @@
 
 .method public declared-synchronized reset(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     monitor-enter p0
 
@@ -1669,7 +1644,6 @@
 
 .method public setNeedsInput(Z)V
     .locals 4
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardViewManager;->mNeedsInput:Z
 
@@ -1756,7 +1730,6 @@
 
 .method public declared-synchronized show(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     monitor-enter p0
 
@@ -1957,7 +1930,6 @@
 
 .method updateShowWallpaper(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardViewManager;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
 

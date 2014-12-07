@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +50,6 @@
 # virtual methods
 .method public canPlaceCallsTo(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -205,7 +201,6 @@
 
 .method public canSendSmsTo(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Lcom/android/dialer/calllog/PhoneNumberHelper;->canPlaceCallsTo(Ljava/lang/CharSequence;)Z
 
@@ -216,8 +211,6 @@
 
 .method public getCallUri(Ljava/lang/String;Landroid/content/Context;)Landroid/net/Uri;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -265,8 +258,6 @@
 
 .method public getDisplayNumber(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -386,10 +377,6 @@
 
 .method public getDisplayNumber(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/String;Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/Context;
 
     const v7, 0x7f0e0225
 
@@ -721,7 +708,6 @@
 
 .method public isSipNumber(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -736,7 +722,6 @@
 
 .method public isVoicemailNumber(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -775,7 +760,6 @@
 
 .method public setScrollState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/dialer/calllog/PhoneNumberHelper;->mScrollState:I
 

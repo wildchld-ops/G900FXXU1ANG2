@@ -26,8 +26,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -40,7 +38,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/ssrm/SsrmDatabaseHelper;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/ssrm/SsrmDatabaseHelper;
 
@@ -80,7 +77,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "SSRMv2:SsrmDatabaseHelper"
 
@@ -97,9 +93,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "SSRMv2:SsrmDatabaseHelper"
 

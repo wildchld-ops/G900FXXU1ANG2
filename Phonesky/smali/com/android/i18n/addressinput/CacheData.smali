@@ -71,7 +71,6 @@
 
 .method public constructor <init>(Lcom/android/i18n/addressinput/ClientCacheManager;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/ClientCacheManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -114,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/i18n/addressinput/CacheData;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/CacheData;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/CacheData;->mBadKeys:Ljava/util/HashSet;
 
@@ -123,8 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/i18n/addressinput/CacheData;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/CacheData;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/CacheData;->notifyListenersAfterJobDone(Ljava/lang/String;)V
 
@@ -133,8 +129,6 @@
 
 .method static synthetic access$200(Lcom/android/i18n/addressinput/CacheData;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/CacheData;
-    .param p1    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/CacheData;->triggerDataLoadingEndIfNotNull(Lcom/android/i18n/addressinput/DataLoadListener;)V
 
@@ -143,7 +137,6 @@
 
 .method static synthetic access$300(Lcom/android/i18n/addressinput/CacheData;)Lcom/android/i18n/addressinput/JsoMap;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/CacheData;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/CacheData;->mCache:Lcom/android/i18n/addressinput/JsoMap;
 
@@ -152,7 +145,6 @@
 
 .method static synthetic access$600(Lcom/android/i18n/addressinput/CacheData;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/CacheData;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/CacheData;->mRequestedKeys:Ljava/util/HashSet;
 
@@ -161,7 +153,6 @@
 
 .method static synthetic access$700(Lcom/android/i18n/addressinput/CacheData;)Lcom/android/i18n/addressinput/ClientCacheManager;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/CacheData;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/CacheData;->mClientCacheManager:Lcom/android/i18n/addressinput/ClientCacheManager;
 
@@ -170,8 +161,6 @@
 
 .method private addListenerToTempStore(Lcom/android/i18n/addressinput/LookupKey;Lcom/android/i18n/addressinput/CacheData$CacheListener;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p2    # Lcom/android/i18n/addressinput/CacheData$CacheListener;
 
     invoke-static {p1}, Lcom/android/i18n/addressinput/Util;->checkNotNull(Ljava/lang/Object;)V
 
@@ -203,7 +192,6 @@
 
 .method private notifyListenersAfterJobDone(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v4, Lcom/android/i18n/addressinput/LookupKey$Builder;
 
@@ -257,7 +245,6 @@
 
 .method private triggerDataLoadingEndIfNotNull(Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     if-eqz p1, :cond_0
 
@@ -271,9 +258,6 @@
 # virtual methods
 .method fetchDynamicData(Lcom/android/i18n/addressinput/LookupKey;Lorg/json/JSONObject;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 9
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p2    # Lorg/json/JSONObject;
-    .param p3    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     const/4 v5, 0x0
 
@@ -501,7 +485,6 @@
 
 .method getFromRegionDataConstants(Lcom/android/i18n/addressinput/LookupKey;)V
     .locals 5
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
 
     const-string v2, "null key not allowed."
 
@@ -580,7 +563,6 @@
 
 .method public getObj(Ljava/lang/String;)Lcom/android/i18n/addressinput/JsoMap;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "null key not allowed"
 
@@ -605,7 +587,6 @@
 
 .method public setUrl(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Cannot set URL of address data server to null."
 

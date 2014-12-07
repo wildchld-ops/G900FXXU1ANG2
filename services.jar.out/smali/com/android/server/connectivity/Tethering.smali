@@ -421,11 +421,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Landroid/net/INetworkStatsService;Landroid/net/IConnectivityManager;Landroid/os/Looper;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Landroid/net/INetworkStatsService;
-    .param p4    # Landroid/net/IConnectivityManager;
-    .param p5    # Landroid/os/Looper;
 
     const/4 v7, 0x2
 
@@ -668,7 +663,6 @@
 
 .method static synthetic access$100(Lcom/android/server/connectivity/Tethering;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
@@ -677,7 +671,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/connectivity/Tethering;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mIfaces:Ljava/util/HashMap;
 
@@ -686,8 +679,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/connectivity/Tethering;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->blockInternetSharingByActiveSync(Ljava/lang/String;)V
 
@@ -696,7 +687,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-boolean v0, p0, Lcom/android/server/connectivity/Tethering;->wifiVendorTethered:Z
 
@@ -705,7 +695,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-boolean v0, p0, Lcom/android/server/connectivity/Tethering;->wifiTethered:Z
 
@@ -730,7 +719,6 @@
 
 .method static synthetic access$1502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/connectivity/Tethering;->clients:I
 
@@ -739,7 +727,6 @@
 
 .method static synthetic access$1602(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/connectivity/Tethering;->mLastClients:I
 
@@ -748,8 +735,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/connectivity/Tethering;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/Tethering;->add_client_event:Z
 
@@ -758,8 +743,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/connectivity/Tethering;I)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->showTetheredNotification(I)V
 
@@ -776,7 +759,6 @@
 
 .method static synthetic access$200(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-boolean v0, p0, Lcom/android/server/connectivity/Tethering;->mRndisEnabled:Z
 
@@ -793,8 +775,6 @@
 
 .method static synthetic access$202(Lcom/android/server/connectivity/Tethering;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/Tethering;->mRndisEnabled:Z
 
@@ -803,7 +783,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/connectivity/Tethering;)Landroid/app/Notification;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mTetheredNotification:Landroid/app/Notification;
 
@@ -812,8 +791,6 @@
 
 .method static synthetic access$2202(Lcom/android/server/connectivity/Tethering;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/Tethering;->locale_changed_event:Z
 
@@ -822,8 +799,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/connectivity/Tethering;I)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->showTetheredVendorNotification(I)V
 
@@ -832,8 +807,6 @@
 
 .method static synthetic access$2402(Lcom/android/server/connectivity/Tethering;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/Tethering;->mIsBootComplete:Z
 
@@ -842,7 +815,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/connectivity/Tethering;)Landroid/app/enterprise/knoxcustom/KnoxCustomManager;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mKnoxCustomManager:Landroid/app/enterprise/knoxcustom/KnoxCustomManager;
 
@@ -851,8 +823,6 @@
 
 .method static synthetic access$2502(Lcom/android/server/connectivity/Tethering;Landroid/app/enterprise/knoxcustom/KnoxCustomManager;)Landroid/app/enterprise/knoxcustom/KnoxCustomManager;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Landroid/app/enterprise/knoxcustom/KnoxCustomManager;
 
     iput-object p1, p0, Lcom/android/server/connectivity/Tethering;->mKnoxCustomManager:Landroid/app/enterprise/knoxcustom/KnoxCustomManager;
 
@@ -861,8 +831,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/connectivity/Tethering;Z)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->configureUsbIface(Z)Z
 
@@ -873,7 +841,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/connectivity/Tethering;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->sendTetherStateChangedBroadcast()V
 
@@ -882,7 +849,6 @@
 
 .method static synthetic access$300(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-boolean v0, p0, Lcom/android/server/connectivity/Tethering;->mUsbTetherRequested:Z
 
@@ -891,8 +857,6 @@
 
 .method static synthetic access$302(Lcom/android/server/connectivity/Tethering;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/Tethering;->mUsbTetherRequested:Z
 
@@ -901,7 +865,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/connectivity/Tethering;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->showDialogOnInternetSharingBlockedByActiveSync()V
 
@@ -910,7 +873,6 @@
 
 .method static synthetic access$400(Lcom/android/server/connectivity/Tethering;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mPublicSync:Ljava/lang/Object;
 
@@ -919,7 +881,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/connectivity/Tethering;)Landroid/net/INetworkStatsService;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mStatsService:Landroid/net/INetworkStatsService;
 
@@ -928,7 +889,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->isLightTheme()Z
 
@@ -939,8 +899,6 @@
 
 .method static synthetic access$500(Lcom/android/server/connectivity/Tethering;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->tetherUsb(Z)V
 
@@ -949,7 +907,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/connectivity/Tethering;)Landroid/net/IConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mConnService:Landroid/net/IConnectivityManager;
 
@@ -966,7 +923,6 @@
 
 .method static synthetic access$5900(Lcom/android/server/connectivity/Tethering;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mDhcpRange:[Ljava/lang/String;
 
@@ -975,7 +931,6 @@
 
 .method static synthetic access$600(Lcom/android/server/connectivity/Tethering;)Lcom/android/internal/util/StateMachine;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mTetherMasterSM:Lcom/android/internal/util/StateMachine;
 
@@ -984,7 +939,6 @@
 
 .method static synthetic access$6200(Lcom/android/server/connectivity/Tethering;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mDefaultDnsServers:[Ljava/lang/String;
 
@@ -993,7 +947,6 @@
 
 .method static synthetic access$6500(Lcom/android/server/connectivity/Tethering;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mDefault6DnsServers:[Ljava/lang/String;
 
@@ -1002,7 +955,6 @@
 
 .method static synthetic access$700(Lcom/android/server/connectivity/Tethering;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/Tethering;->isInternetSharingBlockedByActiveSync()Z
 
@@ -1013,7 +965,6 @@
 
 .method static synthetic access$7300(Lcom/android/server/connectivity/Tethering;)Ljava/util/Collection;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mUpstreamIfaceTypes:Ljava/util/Collection;
 
@@ -1022,7 +973,6 @@
 
 .method static synthetic access$7400(Lcom/android/server/connectivity/Tethering;)I
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget v0, p0, Lcom/android/server/connectivity/Tethering;->mPreferredUpstreamMobileApn:I
 
@@ -1031,7 +981,6 @@
 
 .method static synthetic access$800(Lcom/android/server/connectivity/Tethering;)Landroid/os/INetworkManagementService;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering;->mNMService:Landroid/os/INetworkManagementService;
 
@@ -1040,8 +989,6 @@
 
 .method static synthetic access$900(Lcom/android/server/connectivity/Tethering;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Tethering;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering;->isUsb(Ljava/lang/String;)Z
 
@@ -1052,7 +999,6 @@
 
 .method private blockInternetSharingByActiveSync(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/connectivity/Tethering;->mIfaces:Ljava/util/HashMap;
 
@@ -1228,7 +1174,6 @@
 
 .method private configureUsbIface(Z)Z
     .locals 14
-    .param p1    # Z
 
     const-string v11, "Tethering"
 
@@ -1720,7 +1665,6 @@
 
 .method private isUsb(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/connectivity/Tethering;->mPublicSync:Ljava/lang/Object;
 
@@ -1775,7 +1719,6 @@
 
 .method private notifyTetheringActiveToRIL(Z)V
     .locals 8
-    .param p1    # Z
 
     sget-boolean v5, Lcom/android/server/connectivity/Tethering;->mIsTetherActive:Z
 
@@ -2526,8 +2469,6 @@
 
 .method private sendWifiApPowerModeAlarmIntent(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2546,7 +2487,6 @@
 
 .method private setWifiApTxPowerMode(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2818,7 +2758,6 @@
 
 .method private showTetheredNotification(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -3032,7 +2971,6 @@
 
 .method private showTetheredVendorNotification(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -3255,7 +3193,6 @@
 
 .method private tetherUsb(Z)V
     .locals 10
-    .param p1    # Z
 
     const-string v7, "Tethering"
 
@@ -3358,20 +3295,12 @@
 # virtual methods
 .method public addressRemoved(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public addressUpdated(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -3771,9 +3700,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering;->mContext:Landroid/content/Context;
 
@@ -4145,7 +4071,6 @@
 
 .method public getLastTetherError(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -4526,7 +4451,6 @@
 
 .method public interfaceAdded(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "Tethering"
 
@@ -4692,16 +4616,12 @@
 
 .method public interfaceClassDataActivityChanged(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public interfaceLinkStateChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "Tethering"
 
@@ -4742,7 +4662,6 @@
 
 .method public interfaceRemoved(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "Tethering"
 
@@ -4839,8 +4758,6 @@
 
 .method public interfaceStatusChanged(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v3, "Tethering"
 
@@ -5014,7 +4931,6 @@
 
 .method public isBluetooth(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/connectivity/Tethering;->mPublicSync:Ljava/lang/Object;
 
@@ -5069,7 +4985,6 @@
 
 .method public isWifi(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/connectivity/Tethering;->mPublicSync:Ljava/lang/Object;
 
@@ -5124,8 +5039,6 @@
 
 .method public limitReached(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
@@ -5391,7 +5304,6 @@
 
 .method public setUsbTethering(Z)I
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -5610,7 +5522,6 @@
 
 .method public tether(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x14
 
@@ -5844,7 +5755,6 @@
 
 .method public untether(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "Tethering"
 

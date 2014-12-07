@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/keyczar/interfaces/KeyType;)V
     .locals 3
-    .param p1    # Lorg/keyczar/interfaces/KeyType;
 
     const-string v0, "InvalidTypeInInput"
 

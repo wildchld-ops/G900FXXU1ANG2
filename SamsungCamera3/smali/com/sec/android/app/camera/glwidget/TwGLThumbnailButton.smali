@@ -157,11 +157,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFZZ)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v6, 0x0
 
@@ -340,9 +335,6 @@
 
 .method private update(Landroid/graphics/Bitmap;IZ)V
     .locals 12
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v11, 0x0
 
@@ -633,7 +625,6 @@
 
 .method public lockButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->mButtonLocked:Z
 
@@ -680,7 +671,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x0
 
@@ -729,7 +719,6 @@
 
 .method public setRotatableForCoverMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;->mFrameButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -755,8 +744,6 @@
 
 .method public update(Landroid/graphics/Bitmap;I)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     div-int/lit8 v1, p2, 0xa
 
@@ -773,7 +760,6 @@
 
 .method public update(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -792,7 +778,6 @@
 
 .method public declared-synchronized update(Z)V
     .locals 14
-    .param p1    # Z
 
     const/4 v13, 0x2
 

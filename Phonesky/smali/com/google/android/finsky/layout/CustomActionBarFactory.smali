@@ -6,7 +6,6 @@
 # direct methods
 .method public static getInstance(Landroid/app/Activity;)Lcom/google/android/finsky/layout/CustomActionBar;
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     invoke-static {}, Lcom/google/android/finsky/layout/CustomActionBarFactory;->shouldUseSystemActionBar()Z
 

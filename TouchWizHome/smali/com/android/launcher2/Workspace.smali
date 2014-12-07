@@ -272,8 +272,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -284,9 +282,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, 0x3
 
@@ -694,8 +689,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/Workspace;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Workspace;->mIsSwitchingState:Z
 
@@ -704,7 +697,6 @@
 
 .method static synthetic access$1000(Lcom/android/launcher2/Workspace;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget v0, p0, Lcom/android/launcher2/Workspace;->mDisplayWidth:I
 
@@ -713,8 +705,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/Workspace;Landroid/animation/AnimatorSet;)Landroid/animation/AnimatorSet;
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Landroid/animation/AnimatorSet;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace;->mAnimator:Landroid/animation/AnimatorSet;
 
@@ -723,7 +713,6 @@
 
 .method static synthetic access$1100(Lcom/android/launcher2/Workspace;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget v0, p0, Lcom/android/launcher2/Workspace;->mDisplayHeight:I
 
@@ -732,7 +721,6 @@
 
 .method static synthetic access$1200(Lcom/android/launcher2/Workspace;)Lcom/android/launcher2/Workspace$State;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mStateAfterFirstLayout:Lcom/android/launcher2/Workspace$State;
 
@@ -741,8 +729,6 @@
 
 .method static synthetic access$1300(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Workspace$State;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Lcom/android/launcher2/Workspace$State;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/Workspace;->changeState(Lcom/android/launcher2/Workspace$State;)V
 
@@ -751,7 +737,6 @@
 
 .method static synthetic access$1400(Lcom/android/launcher2/Workspace;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Workspace;->mIsDragOccuring:Z
 
@@ -760,7 +745,6 @@
 
 .method static synthetic access$1500(Lcom/android/launcher2/Workspace;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Workspace;->mDragFromMenu:Z
 
@@ -769,8 +753,6 @@
 
 .method static synthetic access$1502(Lcom/android/launcher2/Workspace;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Workspace;->mDragFromMenu:Z
 
@@ -779,7 +761,6 @@
 
 .method static synthetic access$1600(Lcom/android/launcher2/Workspace;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     invoke-direct {p0}, Lcom/android/launcher2/Workspace;->refreshHotseat()V
 
@@ -788,8 +769,6 @@
 
 .method static synthetic access$1702(Lcom/android/launcher2/Workspace;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace;->mDelayedResizeRunnable:Ljava/lang/Runnable;
 
@@ -798,7 +777,6 @@
 
 .method static synthetic access$1800(Lcom/android/launcher2/Workspace;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Workspace;->mExitResizeDueToNewDrag:Z
 
@@ -807,7 +785,6 @@
 
 .method static synthetic access$1900(Lcom/android/launcher2/Workspace;)Lcom/android/launcher2/Folder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mFolder:Lcom/android/launcher2/Folder;
 
@@ -816,8 +793,6 @@
 
 .method static synthetic access$1902(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Folder;)Lcom/android/launcher2/Folder;
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Lcom/android/launcher2/Folder;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace;->mFolder:Lcom/android/launcher2/Folder;
 
@@ -826,7 +801,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/Workspace;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     invoke-direct {p0}, Lcom/android/launcher2/Workspace;->getWorkspaceAndHotseatCellLayouts()Ljava/util/List;
 
@@ -837,11 +811,6 @@
 
 .method static synthetic access$2100(Lcom/android/launcher2/Workspace;Landroid/content/res/Resources;Lcom/android/launcher2/CellLayout;Lcom/android/launcher2/Workspace$CellOrient;Z)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lcom/android/launcher2/CellLayout;
-    .param p3    # Lcom/android/launcher2/Workspace$CellOrient;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/launcher2/Workspace;->changeOrientationChild(Landroid/content/res/Resources;Lcom/android/launcher2/CellLayout;Lcom/android/launcher2/Workspace$CellOrient;Z)V
 
@@ -850,7 +819,6 @@
 
 .method static synthetic access$2200(Lcom/android/launcher2/Workspace;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mWidgetsToBind:Ljava/util/List;
 
@@ -859,8 +827,6 @@
 
 .method static synthetic access$2302(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Workspace$BindWidgetsState;)Lcom/android/launcher2/Workspace$BindWidgetsState;
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Lcom/android/launcher2/Workspace$BindWidgetsState;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace;->mBindWidgetsState:Lcom/android/launcher2/Workspace$BindWidgetsState;
 
@@ -869,7 +835,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/Workspace;)Lcom/android/launcher2/Workspace$State;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mState:Lcom/android/launcher2/Workspace$State;
 
@@ -878,8 +843,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Workspace$State;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Workspace;
-    .param p1    # Lcom/android/launcher2/Workspace$State;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/Workspace;->setTransitionEffectBasedOnState(Lcom/android/launcher2/Workspace$State;)V
 
@@ -888,7 +851,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/Workspace;)Lcom/android/launcher2/HomeView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -897,7 +859,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/Workspace;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -906,7 +867,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/Workspace;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget v0, p0, Lcom/android/launcher2/Workspace;->mWallpaperWidth:I
 
@@ -915,7 +875,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/Workspace;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget v0, p0, Lcom/android/launcher2/Workspace;->mWallpaperHeight:I
 
@@ -924,7 +883,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/Workspace;)Landroid/app/WallpaperManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Workspace;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mWallpaperManager:Landroid/app/WallpaperManager;
 
@@ -933,7 +891,6 @@
 
 .method private backgroundAlphaInterpolator(F)F
     .locals 4
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -969,8 +926,6 @@
 
 .method private calculateglassAlpha(FZ)F
     .locals 6
-    .param p1    # F
-    .param p2    # Z
 
     const v5, 0x3f2b851f
 
@@ -1025,10 +980,6 @@
 
 .method private changeOrientationChild(Landroid/content/res/Resources;Lcom/android/launcher2/CellLayout;Lcom/android/launcher2/Workspace$CellOrient;Z)V
     .locals 7
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lcom/android/launcher2/CellLayout;
-    .param p3    # Lcom/android/launcher2/Workspace$CellOrient;
-    .param p4    # Z
 
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1255,7 +1206,6 @@
 
 .method private changeOrientationIfRequired(Landroid/content/res/Configuration;)Z
     .locals 25
-    .param p1    # Landroid/content/res/Configuration;
 
     move-object/from16 v0, p0
 
@@ -1967,7 +1917,6 @@
 
 .method private changeState(Lcom/android/launcher2/Workspace$State;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/Workspace$State;
 
     const/4 v0, 0x1
 
@@ -1982,7 +1931,6 @@
 
 .method private createAndBindWidget(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     sget-object v0, Lcom/android/launcher2/Workspace$30;->$SwitchMap$com$android$launcher2$BaseItem$Type:[I
 
@@ -2036,9 +1984,6 @@
 
 .method public static createDragBitmap(Landroid/view/View;Landroid/graphics/Canvas;I)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -2151,8 +2096,6 @@
 
 .method private createExternalDragOutline(Landroid/graphics/Canvas;I)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -2243,10 +2186,6 @@
 
 .method private static drawDragView(Landroid/view/View;Landroid/graphics/Canvas;IZ)V
     .locals 21
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v6, Landroid/graphics/Rect;
 
@@ -2742,7 +2681,6 @@
 
 .method private getViewForTag(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
     .locals 11
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-direct {p0}, Lcom/android/launcher2/Workspace;->getWorkspaceAndHotseatCellLayoutChildren()Ljava/util/ArrayList;
 
@@ -2966,9 +2904,6 @@
 
 .method private handleFolderClick(Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/FolderIconView;Z)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Lcom/android/launcher2/FolderIconView;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/launcher2/Workspace;->mFolder:Lcom/android/launcher2/Folder;
 
@@ -3144,7 +3079,6 @@
 
 .method private isGoogleSearchWidget(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -3230,7 +3164,6 @@
 
 .method private loadAnimationOnThis(I)Landroid/animation/Animator;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -3249,8 +3182,6 @@
 
 .method private loadWhenRotationSkipList(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -3529,7 +3460,6 @@
 
 .method private onWallpaperTap(Landroid/view/MotionEvent;)V
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -3600,9 +3530,6 @@
 
 .method private openFolder(Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/FolderIconView;Z)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Lcom/android/launcher2/FolderIconView;
-    .param p3    # Z
 
     const/4 v5, 0x1
 
@@ -4154,14 +4081,12 @@
 
 .method private setScrollDirection(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method private setTransitionEffectBasedOnState(Lcom/android/launcher2/Workspace$State;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Workspace$State;
 
     sget-object v0, Lcom/android/launcher2/Workspace$State;->NORMAL:Lcom/android/launcher2/Workspace$State;
 
@@ -4561,8 +4486,6 @@
 
 .method private wallpaperTravelToScreenHeightRatio(II)F
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x3f8ccccd
 
@@ -4571,8 +4494,6 @@
 
 .method private wallpaperTravelToScreenWidthRatio(II)F
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     int-to-float v7, p1
 
@@ -4621,8 +4542,6 @@
 
 .method public addFocusables(Ljava/util/ArrayList;II)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4652,7 +4571,6 @@
 
 .method public addItem(Lcom/android/launcher2/HomeItem;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     const/4 v1, 0x0
 
@@ -4742,7 +4660,6 @@
 
 .method public addStateAnimatorProvider(Lcom/android/launcher2/Workspace$StateAnimatorProvider;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Workspace$StateAnimatorProvider;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mStateAnimatorProviders:Ljava/util/ArrayList;
 
@@ -4838,8 +4755,6 @@
 
 .method protected cardTransform(Landroid/view/View;F)V
     .locals 24
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/16 v21, 0x0
 
@@ -5522,10 +5437,6 @@
 
 .method changeState(Lcom/android/launcher2/Workspace$State;ZILcom/android/launcher2/BaseItem;)V
     .locals 25
-    .param p1    # Lcom/android/launcher2/Workspace$State;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Lcom/android/launcher2/BaseItem;
 
     const-string v3, "Launcher.Workspace"
 
@@ -6965,9 +6876,6 @@
 
 .method createDragOutline(Landroid/view/View;Landroid/graphics/Canvas;I)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -7079,10 +6987,6 @@
 
 .method createWidgetPreviewDragOutline(IILandroid/graphics/Canvas;I)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Canvas;
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -7111,9 +7015,6 @@
 
 .method createWidgetPreviewDragOutline(Landroid/view/View;Landroid/graphics/Canvas;I)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -7138,7 +7039,6 @@
 
 .method protected determineScrollingStart(Landroid/view/MotionEvent;)V
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const v8, 0x3f060a92
 
@@ -7309,7 +7209,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual {p1}, Landroid/view/DragEvent;->getAction()I
 
@@ -7371,7 +7270,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getFastScrollFactor()Lcom/android/launcher2/ScalarAnimator;
 
@@ -7438,8 +7336,6 @@
 
 .method public dispatchUnhandledMove(Landroid/view/View;I)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/Workspace;->mIsSwitchingState:Z
 
@@ -7460,8 +7356,6 @@
 
 .method public enterSurfaceWidgetResizeMode(Lcom/android/launcher2/SurfaceWidgetView;Lcom/android/launcher2/CellLayout;)V
     .locals 5
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetView;
-    .param p2    # Lcom/android/launcher2/CellLayout;
 
     instance-of v2, p2, Lcom/android/launcher2/CellLayoutWithResizableWidgets;
 
@@ -7553,8 +7447,6 @@
 
 .method public enterWidgetResizeMode(Lcom/android/launcher2/LauncherAppWidgetHostView;Lcom/android/launcher2/CellLayout;)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/LauncherAppWidgetHostView;
-    .param p2    # Lcom/android/launcher2/CellLayout;
 
     const/4 v8, 0x0
 
@@ -7745,7 +7637,6 @@
 
 .method public exitWidgetResizeMode(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -7978,7 +7869,6 @@
 
 .method public getDragOutline(Landroid/view/View;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mDragOutline:Landroid/graphics/Bitmap;
 
@@ -8070,7 +7960,6 @@
 
 .method public getHitRect(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v2, 0x0
 
@@ -8156,10 +8045,6 @@
 
 .method public getPageIndicatorManager(Lcom/android/launcher2/PagedView;III)Lcom/android/launcher2/PageIndicatorManager;
     .locals 1
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Lcom/android/launcher2/PageIndicatorPreviewManager;
 
@@ -8222,7 +8107,6 @@
 
 .method protected getUnEncumberedPagedViewBounds(Landroid/graphics/Rect;)Z
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v9, 0x1
 
@@ -8422,8 +8306,6 @@
 
 .method public insertWorkspaceScreen(IZ)Lcom/android/launcher2/CellLayout;
     .locals 12
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v11, -0x1
 
@@ -8529,8 +8411,6 @@
 
 .method public invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 2
-    .param p1    # [I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/android/launcher2/Workspace;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -8674,7 +8554,6 @@
 
 .method public isPageAddedForDrag(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -8714,10 +8593,6 @@
 
 .method protected isTransformedTouchPointInView(FFLandroid/view/View;Landroid/graphics/PointF;)Z
     .locals 5
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/PointF;
 
     iget-object v3, p0, Lcom/android/launcher2/Workspace;->mState:Lcom/android/launcher2/Workspace$State;
 
@@ -8808,8 +8683,6 @@
 
 .method mapPointFromSelfToChild(Landroid/view/View;[F)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # [F
 
     const/4 v4, 0x1
 
@@ -8866,7 +8739,6 @@
 
 .method moveToDefaultScreen(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/launcher2/LauncherApplication;->getHomeScreenIndex()I
 
@@ -8893,8 +8765,6 @@
 
 .method moveToLeftScreen(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getCurrentPage()I
 
@@ -8984,7 +8854,6 @@
 
 .method public newPage(Z)I
     .locals 8
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -9104,7 +8973,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const/4 v13, 0x0
 
@@ -9308,7 +9176,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -9360,7 +9227,6 @@
 
 .method public onDragEndedWithItem(Lcom/android/launcher2/BaseItem;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v3, 0x0
 
@@ -9442,7 +9308,6 @@
 
 .method public onDragStartedWithItem(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Workspace;->mIsDragOccuring:Z
 
@@ -9547,7 +9412,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Workspace;->mFixedWallpaper:Z
 
@@ -9563,9 +9427,6 @@
 
 .method public onEnterScrollArea(III)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, -0x1
 
@@ -9879,7 +9740,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x2
 
@@ -10205,11 +10065,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 8
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getCurrentPage()I
 
@@ -10462,7 +10317,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 14
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/PagedView;->onLongClick(Landroid/view/View;)Z
 
@@ -10899,8 +10753,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Lcom/android/launcher2/Workspace;->getOpenFolder()Lcom/android/launcher2/Folder;
 
@@ -10925,7 +10777,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/PagedView;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
@@ -10952,8 +10803,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Workspace;->mIsSwitchingState:Z
 
@@ -10962,7 +10811,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -11052,7 +10900,6 @@
 
 .method protected onViewAdded(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/PagedView;->onViewAdded(Landroid/view/View;)V
 
@@ -11135,8 +10982,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -11166,7 +11011,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -11184,7 +11028,6 @@
 
 .method pauseScreen(I)V
     .locals 10
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -11460,7 +11303,6 @@
 
 .method removeHelpAppItem(Lcom/android/launcher2/HomeItem;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     iget-object v4, p0, Lcom/android/launcher2/Workspace;->mWidgetsToBind:Ljava/util/List;
 
@@ -11755,7 +11597,6 @@
 
 .method public removeStateAnimatorProvider(Lcom/android/launcher2/Workspace$StateAnimatorProvider;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Workspace$StateAnimatorProvider;
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mStateAnimatorProviders:Ljava/util/ArrayList;
 
@@ -11781,7 +11622,6 @@
 
 .method public restoreOpenFolder(Lcom/android/launcher2/HomeFolderItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/HomeFolderItem;
 
     const/4 v1, 0x0
 
@@ -11872,7 +11712,6 @@
 
 .method resumeScreen(I)V
     .locals 11
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -12088,10 +11927,6 @@
 
 .method public sendWidgetResizeIntent(IILandroid/content/ComponentName;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -12128,7 +11963,6 @@
 
 .method setAllEmptyMessageVisibility(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -12175,7 +12009,6 @@
 
 .method public setAllPagesVisibility(I)V
     .locals 4
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -12219,7 +12052,6 @@
 
 .method public setBackgroundDarken(F)V
     .locals 2
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/Workspace;->mBackgroundDarken:F
 
@@ -12251,7 +12083,6 @@
 
 .method public setDragOutline(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace;->mDragOutline:Landroid/graphics/Bitmap;
 
@@ -12260,8 +12091,6 @@
 
 .method setDummyPanelProperties(FI)V
     .locals 3
-    .param p1    # F
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -12290,7 +12119,6 @@
 
 .method public setHorizontalWallpaperOffset(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mWallpaperOffset:Lcom/android/launcher2/Workspace$WallpaperOffsetInterpolator;
 
@@ -12303,8 +12131,6 @@
 
 .method public setPageVisibility(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -12319,7 +12145,6 @@
 
 .method public setPageZoom(F)V
     .locals 5
-    .param p1    # F
 
     const/high16 v4, 0x3f800000
 
@@ -12379,7 +12204,6 @@
 
 .method public setVerticalWallpaperOffset(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace;->mWallpaperOffset:Lcom/android/launcher2/Workspace$WallpaperOffsetInterpolator;
 
@@ -12491,7 +12315,6 @@
 
 .method public setWorkspaceAccessibilityEnabled(Z)V
     .locals 7
-    .param p1    # Z
 
     iget-object v4, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -12570,7 +12393,6 @@
 
 .method setup(Lcom/android/launcher2/HomeView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -12860,9 +12682,6 @@
 
 .method protected snapToPage(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -12888,8 +12707,6 @@
 
 .method protected spiralTransform(Landroid/view/View;F)V
     .locals 23
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     sget-boolean v20, Lcom/android/launcher2/Launcher;->CSCFEATURE_LAUNCHER_DISABLETILTEFFECT:Z
 
@@ -13815,7 +13632,6 @@
 
 .method startDrag(Landroid/view/View;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -13934,8 +13750,6 @@
 
 .method public syncPageItems(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -14033,8 +13847,6 @@
 
 .method protected updatePageTransform(Landroid/view/View;F)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     sget-boolean v1, Lcom/android/launcher2/Launcher;->sIsHeadlinesAppEnable:Z
 
@@ -14094,8 +13906,6 @@
 
 .method protected updatePageTransformWithoutTilt(Landroid/view/View;F)V
     .locals 16
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     if-nez p1, :cond_0
 
@@ -14473,7 +14283,6 @@
 
 .method updateShortcutsAndSurfaceWidgets(Ljava/util/List;Z)V
     .locals 24
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

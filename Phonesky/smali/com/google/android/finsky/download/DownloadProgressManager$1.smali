@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/download/DownloadProgressManager;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/google/android/finsky/download/DownloadProgressManager$1;->this$0:Lcom/google/android/finsky/download/DownloadProgressManager;
 
@@ -42,7 +41,6 @@
 
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadProgressManager$1;->this$0:Lcom/google/android/finsky/download/DownloadProgressManager;
 

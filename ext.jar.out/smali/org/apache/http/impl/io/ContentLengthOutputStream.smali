@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionOutputBuffer;J)V
     .locals 3
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # J
 
     const-wide/16 v1, 0x0
 
@@ -103,7 +101,6 @@
 
 .method public write(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -149,7 +146,6 @@
 
 .method public write([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -167,9 +163,6 @@
 
 .method public write([BII)V
     .locals 6
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

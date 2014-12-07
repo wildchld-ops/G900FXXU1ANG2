@@ -122,7 +122,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, -0x1
 
@@ -399,7 +398,6 @@
 
 .method static synthetic access$000(Lcom/android/server/VibratorService;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->mVibrations:Ljava/util/LinkedList;
 
@@ -408,7 +406,6 @@
 
 .method static synthetic access$100(Lcom/android/server/VibratorService;)Lcom/android/server/VibratorService$Vibration;
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->mCurrentVibration:Lcom/android/server/VibratorService$Vibration;
 
@@ -417,7 +414,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/VibratorService;)Landroid/os/WorkSource;
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->mTmpWorkSource:Landroid/os/WorkSource;
 
@@ -426,7 +422,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/VibratorService;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -435,7 +430,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/VibratorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-boolean v0, p0, Lcom/android/server/VibratorService;->USE_VIBETONZ:Z
 
@@ -444,11 +438,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/VibratorService;JILjava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/VibratorService;->doVibratorOn(JILjava/lang/String;I)V
 
@@ -457,7 +446,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/VibratorService;)I
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget v0, p0, Lcom/android/server/VibratorService;->mDefaultMagnitude:I
 
@@ -466,8 +454,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/VibratorService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/VibratorService;->mDefaultMagnitude:I
 
@@ -476,9 +462,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/VibratorService;JI)V
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/VibratorService;->doVibratorOn(JI)V
 
@@ -487,8 +470,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/VibratorService;Lcom/android/server/VibratorService$Vibration;)V
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
-    .param p1    # Lcom/android/server/VibratorService$Vibration;
 
     invoke-direct {p0, p1}, Lcom/android/server/VibratorService;->unlinkVibration(Lcom/android/server/VibratorService$Vibration;)V
 
@@ -497,7 +478,6 @@
 
 .method static synthetic access$200(Lcom/android/server/VibratorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
 
     invoke-direct {p0}, Lcom/android/server/VibratorService;->doCancelVibrateLocked()V
 
@@ -506,7 +486,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/VibratorService;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->mTypeURIs:[Ljava/lang/String;
 
@@ -515,7 +494,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/VibratorService;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -524,7 +502,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/VibratorService;)Lcom/immersion/android/ImmVibe;
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->mVibe:Lcom/immersion/android/ImmVibe;
 
@@ -533,8 +510,6 @@
 
 .method static synthetic access$2302(Lcom/android/server/VibratorService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/VibratorService;->mImmVibeTouchMagnitude:I
 
@@ -543,7 +518,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/VibratorService;)[I
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-object v0, p0, Lcom/android/server/VibratorService;->levelToMagnitude:[I
 
@@ -552,8 +526,6 @@
 
 .method static synthetic access$2502(Lcom/android/server/VibratorService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/VibratorService;->mImmVibeCallMagnitude:I
 
@@ -562,7 +534,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/VibratorService;)I
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget v0, p0, Lcom/android/server/VibratorService;->mImmVibeNotiMagnitude:I
 
@@ -571,8 +542,6 @@
 
 .method static synthetic access$2602(Lcom/android/server/VibratorService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/VibratorService;->mImmVibeNotiMagnitude:I
 
@@ -581,7 +550,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/VibratorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/VibratorService;
 
     iget-boolean v0, p0, Lcom/android/server/VibratorService;->USE_SET_MAX_MAGNITUE:Z
 
@@ -590,7 +558,6 @@
 
 .method static synthetic access$300(Lcom/android/server/VibratorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
 
     invoke-direct {p0}, Lcom/android/server/VibratorService;->startNextVibrationLocked()V
 
@@ -599,7 +566,6 @@
 
 .method static synthetic access$400(Lcom/android/server/VibratorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/VibratorService;
 
     invoke-direct {p0}, Lcom/android/server/VibratorService;->updateInputDeviceVibrators()V
 
@@ -608,7 +574,6 @@
 
 .method private closeDevice(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/server/VibratorService;->mVibe:Lcom/immersion/android/ImmVibe;
@@ -839,8 +804,6 @@
 
 .method private doVibratorOn(JI)V
     .locals 6
-    .param p1    # J
-    .param p3    # I
 
     iget-object v3, p0, Lcom/android/server/VibratorService;->mInputDeviceVibrators:Ljava/util/ArrayList;
 
@@ -932,10 +895,6 @@
 
 .method private doVibratorOn(JILjava/lang/String;I)V
     .locals 10
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     iget-object v9, p0, Lcom/android/server/VibratorService;->mInputDeviceVibrators:Ljava/util/ArrayList;
 
@@ -1017,7 +976,6 @@
 
 .method private getMagnitude(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/os/SystemVibrator$MagnitudeType;->valueOf(Ljava/lang/String;)Landroid/os/SystemVibrator$MagnitudeType;
 
@@ -1073,7 +1031,6 @@
 
 .method private isAll0([J)Z
     .locals 6
-    .param p1    # [J
 
     array-length v0, p1
 
@@ -1108,7 +1065,6 @@
 
 .method private openDevice(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x5
 
@@ -1303,7 +1259,6 @@
 
 .method private removeVibrationLocked(Landroid/os/IBinder;)Lcom/android/server/VibratorService$Vibration;
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/VibratorService;->mVibrations:Ljava/util/LinkedList;
 
@@ -1420,7 +1375,6 @@
 
 .method private setVibeStrength(I)V
     .locals 5
-    .param p1    # I
 
     :try_start_0
     iget-object v2, p0, Lcom/android/server/VibratorService;->mVibe:Lcom/immersion/android/ImmVibe;
@@ -1500,7 +1454,6 @@
 
 .method private startVibrationLocked(Lcom/android/server/VibratorService$Vibration;)V
     .locals 8
-    .param p1    # Lcom/android/server/VibratorService$Vibration;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/VibratorService;->mAppOpsService:Lcom/android/internal/app/IAppOpsService;
@@ -1705,7 +1658,6 @@
 
 .method private unlinkVibration(Lcom/android/server/VibratorService$Vibration;)V
     .locals 2
-    .param p1    # Lcom/android/server/VibratorService$Vibration;
 
     # getter for: Lcom/android/server/VibratorService$Vibration;->mPattern:[J
     invoke-static {p1}, Lcom/android/server/VibratorService$Vibration;->access$1100(Lcom/android/server/VibratorService$Vibration;)[J
@@ -1941,7 +1893,6 @@
 
 .method private verifyIncomingUid(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1985,9 +1936,6 @@
 
 .method private vibrate(ILjava/lang/String;I)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -2074,7 +2022,6 @@
 # virtual methods
 .method public cancelVibrate(Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v3, p0, Lcom/android/server/VibratorService;->mContext:Landroid/content/Context;
 
@@ -2207,7 +2154,6 @@
 
 .method public onInputDeviceAdded(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/VibratorService;->updateInputDeviceVibrators()V
 
@@ -2216,7 +2162,6 @@
 
 .method public onInputDeviceChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/VibratorService;->updateInputDeviceVibrators()V
 
@@ -2225,7 +2170,6 @@
 
 .method public onInputDeviceRemoved(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/VibratorService;->updateInputDeviceVibrators()V
 
@@ -2279,7 +2223,6 @@
 
 .method public setMagnitude(I)V
     .locals 1
-    .param p1    # I
 
     if-gez p1, :cond_1
 
@@ -2369,10 +2312,6 @@
 
 .method public vibrate(ILjava/lang/String;JLandroid/os/IBinder;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/VibratorService;->mContext:Landroid/content/Context;
 
@@ -2525,9 +2464,6 @@
 
 .method public vibrateCall(ILjava/lang/String;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v0, "VibratorService"
 
@@ -2544,10 +2480,6 @@
 
 .method public vibrateImmVibe(ILjava/lang/String;II)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     iget-boolean v3, p0, Lcom/android/server/VibratorService;->USE_VIBETONZ:Z
 
@@ -2704,10 +2636,6 @@
 
 .method public vibrateImmVibeMagnitudeType(ILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const-string v1, "VibratorService"
 
@@ -2742,10 +2670,6 @@
 
 .method public vibrateImmVibePattern(ILjava/lang/String;[BI)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # I
 
     iget-boolean v0, p0, Lcom/android/server/VibratorService;->USE_VIBETONZ:Z
 
@@ -2886,10 +2810,6 @@
 
 .method public vibrateImmVibePatternMagnitudeType(ILjava/lang/String;[BLjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
 
     const-string v1, "VibratorService"
 
@@ -2924,11 +2844,6 @@
 
 .method public vibrateMagnitude(ILjava/lang/String;JLandroid/os/IBinder;I)V
     .locals 15
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Landroid/os/IBinder;
-    .param p6    # I
 
     iget-boolean v2, p0, Lcom/android/server/VibratorService;->USE_VIBETONZ:Z
 
@@ -3163,11 +3078,6 @@
 
 .method public vibrateMagnitudeType(ILjava/lang/String;JLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Landroid/os/IBinder;
-    .param p6    # Ljava/lang/String;
 
     const-string v0, "VibratorService"
 
@@ -3212,9 +3122,6 @@
 
 .method public vibrateNotification(ILjava/lang/String;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v0, "VibratorService"
 
@@ -3231,11 +3138,6 @@
 
 .method public vibratePattern(ILjava/lang/String;[JILandroid/os/IBinder;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [J
-    .param p4    # I
-    .param p5    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/VibratorService;->mContext:Landroid/content/Context;
 
@@ -3421,12 +3323,6 @@
 
 .method public vibratePatternByMagnitude(ILjava/lang/String;[JILandroid/os/IBinder;I)V
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [J
-    .param p4    # I
-    .param p5    # Landroid/os/IBinder;
-    .param p6    # I
 
     iget-object v2, p0, Lcom/android/server/VibratorService;->mContext:Landroid/content/Context;
 
@@ -3675,12 +3571,6 @@
 
 .method public vibratePatternByMagnitudeType(ILjava/lang/String;[JILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [J
-    .param p4    # I
-    .param p5    # Landroid/os/IBinder;
-    .param p6    # Ljava/lang/String;
 
     const-string v0, "VibratorService"
 

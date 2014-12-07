@@ -49,7 +49,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/DetailsPlusOne$ParcelablePlusOneData;)Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne$ParcelablePlusOneData;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$ParcelablePlusOneData;->mPlusOneData:Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 
@@ -79,8 +77,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne$ParcelablePlusOneData;->mPlusOneData:Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 

@@ -35,14 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Landroid/view/LayoutInflater;Lcom/google/android/finsky/activities/TabbedAdapter$TabType;Lcom/google/android/finsky/api/model/DfeBrowse;Lcom/google/android/finsky/api/model/DfeToc;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Landroid/view/LayoutInflater;
-    .param p5    # Lcom/google/android/finsky/activities/TabbedAdapter$TabType;
-    .param p6    # Lcom/google/android/finsky/api/model/DfeBrowse;
-    .param p7    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p8    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +85,6 @@
 # virtual methods
 .method public getView(I)Landroid/view/View;
     .locals 11
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/CategoryTab;->mCategoryView:Landroid/view/ViewGroup;
 
@@ -179,7 +170,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -194,7 +184,6 @@
 
 .method public setTabSelected(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/CategoryTab;->mIsCurrentlySelected:Z
 

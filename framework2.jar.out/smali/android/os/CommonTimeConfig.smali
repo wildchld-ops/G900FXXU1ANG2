@@ -156,7 +156,6 @@
 
 .method static synthetic access$000(Landroid/os/CommonTimeConfig;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/os/CommonTimeConfig;
 
     iget-object v0, p0, Landroid/os/CommonTimeConfig;->mListenerLock:Ljava/lang/Object;
 
@@ -165,7 +164,6 @@
 
 .method static synthetic access$100(Landroid/os/CommonTimeConfig;)Landroid/os/CommonTimeConfig$OnServerDiedListener;
     .locals 1
-    .param p0    # Landroid/os/CommonTimeConfig;
 
     iget-object v0, p0, Landroid/os/CommonTimeConfig;->mServerDiedListener:Landroid/os/CommonTimeConfig$OnServerDiedListener;
 
@@ -553,7 +551,6 @@
 
 .method public setAutoDisable(Z)I
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -590,7 +587,6 @@
 
 .method public setClientSyncInterval(I)I
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -617,7 +613,6 @@
 
 .method public setMasterAnnounceInterval(I)I
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -644,7 +639,6 @@
 
 .method public setMasterElectionEndpoint(Ljava/net/InetSocketAddress;)I
     .locals 2
-    .param p1    # Ljava/net/InetSocketAddress;
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -671,7 +665,6 @@
 
 .method public setMasterElectionGroupId(J)I
     .locals 2
-    .param p1    # J
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -698,7 +691,6 @@
 
 .method public setMasterElectionPriority(B)I
     .locals 2
-    .param p1    # B
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -725,7 +717,6 @@
 
 .method public setNetworkBinding(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -757,7 +748,6 @@
 
 .method public setPanicThreshold(I)I
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/os/CommonTimeConfig;->checkDeadServer()Z
 
@@ -784,7 +774,6 @@
 
 .method public setServerDiedListener(Landroid/os/CommonTimeConfig$OnServerDiedListener;)V
     .locals 2
-    .param p1    # Landroid/os/CommonTimeConfig$OnServerDiedListener;
 
     iget-object v1, p0, Landroid/os/CommonTimeConfig;->mListenerLock:Ljava/lang/Object;
 

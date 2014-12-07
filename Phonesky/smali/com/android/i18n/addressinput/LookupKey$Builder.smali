@@ -37,7 +37,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/i18n/addressinput/LookupKey$KeyType;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$KeyType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +59,6 @@
 
 .method constructor <init>(Lcom/android/i18n/addressinput/LookupKey;)V
     .locals 6
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,7 +144,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x3
 
@@ -489,7 +486,6 @@
 
 .method static synthetic access$000(Lcom/android/i18n/addressinput/LookupKey$Builder;)Lcom/android/i18n/addressinput/LookupKey$KeyType;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey$Builder;->keyType:Lcom/android/i18n/addressinput/LookupKey$KeyType;
 
@@ -498,7 +494,6 @@
 
 .method static synthetic access$100(Lcom/android/i18n/addressinput/LookupKey$Builder;)Lcom/android/i18n/addressinput/LookupKey$ScriptType;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey$Builder;->script:Lcom/android/i18n/addressinput/LookupKey$ScriptType;
 
@@ -507,8 +502,6 @@
 
 .method static synthetic access$102(Lcom/android/i18n/addressinput/LookupKey$Builder;Lcom/android/i18n/addressinput/LookupKey$ScriptType;)Lcom/android/i18n/addressinput/LookupKey$ScriptType;
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey$Builder;
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/LookupKey$Builder;->script:Lcom/android/i18n/addressinput/LookupKey$ScriptType;
 
@@ -517,7 +510,6 @@
 
 .method static synthetic access$200(Lcom/android/i18n/addressinput/LookupKey$Builder;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey$Builder;->nodes:Ljava/util/Map;
 
@@ -526,7 +518,6 @@
 
 .method static synthetic access$300(Lcom/android/i18n/addressinput/LookupKey$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/LookupKey$Builder;->languageCode:Ljava/lang/String;
 
@@ -535,8 +526,6 @@
 
 .method static synthetic access$302(Lcom/android/i18n/addressinput/LookupKey$Builder;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/LookupKey$Builder;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/LookupKey$Builder;->languageCode:Ljava/lang/String;
 
@@ -559,7 +548,6 @@
 
 .method setAddressData(Lcom/android/i18n/addressinput/AddressData;)Lcom/android/i18n/addressinput/LookupKey$Builder;
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
 
     invoke-virtual {p1}, Lcom/android/i18n/addressinput/AddressData;->getLanguageCode()Ljava/lang/String;
 

@@ -6,9 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/ViewInterface;Lcom/android/mms/model/Model;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/ViewInterface;
-    .param p3    # Lcom/android/mms/model/Model;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/Presenter;-><init>(Landroid/content/Context;Lcom/android/mms/ui/ViewInterface;Lcom/android/mms/model/Model;)V
 
@@ -17,8 +14,6 @@
 
 .method private presentFirstSlide(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/SlideModel;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/SlideModel;
 
     invoke-virtual {p2}, Lcom/android/mms/model/SlideModel;->hasImage()Z
 
@@ -91,8 +86,6 @@
 
 .method private presentImageThumbnail(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/ImageModel;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/ImageModel;
 
     invoke-virtual {p2}, Lcom/android/mms/model/MediaModel;->isDrmProtected()Z
 
@@ -127,7 +120,6 @@
 
 .method private presentLocationSlide(Lcom/android/mms/ui/SlideViewInterface;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
 
     invoke-interface {p1}, Lcom/android/mms/ui/SlideViewInterface;->reset()V
 
@@ -170,8 +162,6 @@
 
 .method private presentLocationThumbnail(Lcom/android/mms/ui/SlideViewInterface;Lcom/samsung/mms/model/LocationVcardModel;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/samsung/mms/model/LocationVcardModel;
 
     invoke-virtual {p2}, Lcom/android/mms/model/MediaModel;->getUri()Landroid/net/Uri;
 
@@ -196,8 +186,6 @@
 
 .method private presentVideoThumbnail(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/VideoModel;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/VideoModel;
 
     invoke-virtual {p2}, Lcom/android/mms/model/MediaModel;->isDrmProtected()Z
 
@@ -232,8 +220,6 @@
 
 .method private showDrmAudioIcon(Lcom/android/mms/ui/SlideViewInterface;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/mms/ui/Presenter;->mContext:Landroid/content/Context;
@@ -287,8 +273,6 @@
 
 .method private showDrmIcon(Lcom/android/mms/ui/SlideViewInterface;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/mms/ui/Presenter;->mContext:Landroid/content/Context;
@@ -344,8 +328,6 @@
 # virtual methods
 .method public onModelChanged(Lcom/android/mms/model/Model;Z)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/Model;
-    .param p2    # Z
 
     return-void
 .end method
@@ -438,7 +420,6 @@
 
 .method public present(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -491,8 +472,6 @@
 
 .method protected presentAudioThumbnail(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/AudioModel;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/AudioModel;
 
     invoke-virtual {p2}, Lcom/android/mms/model/MediaModel;->isDrmProtected()Z
 

@@ -33,8 +33,6 @@
 # virtual methods
 .method public onProgressChanged(Lcom/tencent/update/BinderUpdateInfo;I)V
     .locals 3
-    .param p1    # Lcom/tencent/update/BinderUpdateInfo;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/spam/HelpActivity$7$1;->this$1:Lcom/android/mms/spam/HelpActivity$7;
 
@@ -65,8 +63,6 @@
 
 .method public onUpdateEvent(Lcom/tencent/update/BinderUpdateInfo;I)V
     .locals 3
-    .param p1    # Lcom/tencent/update/BinderUpdateInfo;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/spam/HelpActivity$7$1;->this$1:Lcom/android/mms/spam/HelpActivity$7;
 

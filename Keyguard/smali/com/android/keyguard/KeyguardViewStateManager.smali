@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/keyguard/KeyguardHostView;)V
     .locals 4
-    .param p1    # Lcom/android/keyguard/KeyguardHostView;
 
     const/4 v1, 0x2
 
@@ -109,7 +108,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardViewStateManager;)Lcom/android/keyguard/KeyguardSecurityView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewStateManager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardSecurityContainer:Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -118,7 +116,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardViewStateManager;)Lcom/android/keyguard/KeyguardWidgetPager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewStateManager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardWidgetPager:Lcom/android/keyguard/KeyguardWidgetPager;
 
@@ -127,8 +124,6 @@
 
 .method private getChallengeTopRelativeToFrame(Lcom/android/keyguard/KeyguardWidgetFrame;I)I
     .locals 3
-    .param p1    # Lcom/android/keyguard/KeyguardWidgetFrame;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -159,9 +154,6 @@
 
 .method private mapPoint(Landroid/view/View;Landroid/view/View;[I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # [I
 
     const/4 v7, 0x1
 
@@ -270,7 +262,6 @@
 # virtual methods
 .method public fadeInSecurity(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardSecurityContainer:Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -301,7 +292,6 @@
 
 .method public fadeOutSecurity(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardSecurityContainer:Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -398,7 +388,6 @@
 
 .method public onAddView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardWidgetNavigation:Lcom/android/keyguard/sec/KeyguardWidgetNavigation;
 
@@ -414,7 +403,6 @@
 
 .method public onBouncerStateChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -584,8 +572,6 @@
 
 .method public onPageSwitched(Landroid/view/View;I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -722,8 +708,6 @@
 
 .method public onPageSwitching(Landroid/view/View;I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v7, -0x1
 
@@ -829,7 +813,6 @@
 
 .method public onRemoveView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardWidgetNavigation:Lcom/android/keyguard/sec/KeyguardWidgetNavigation;
 
@@ -845,8 +828,6 @@
 
 .method public onScrollPositionChanged(FI)V
     .locals 3
-    .param p1    # F
-    .param p2    # I
 
     iput p2, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mChallengeTop:I
 
@@ -884,7 +865,6 @@
 
 .method public onScrollStateChanged(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x3
 
@@ -1078,7 +1058,6 @@
 
 .method public setChallengeLayout(Lcom/android/keyguard/ChallengeLayout;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/ChallengeLayout;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mChallengeLayout:Lcom/android/keyguard/ChallengeLayout;
 
@@ -1089,7 +1068,6 @@
 
 .method public setExpandChallengeView(Landroid/widget/ImageButton;)V
     .locals 0
-    .param p1    # Landroid/widget/ImageButton;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mExpandChallengeView:Landroid/widget/ImageButton;
 
@@ -1098,7 +1076,6 @@
 
 .method public setKeyguardWidgetNavigation(Lcom/android/keyguard/sec/KeyguardWidgetNavigation;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/KeyguardWidgetNavigation;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardWidgetNavigation:Lcom/android/keyguard/sec/KeyguardWidgetNavigation;
 
@@ -1107,7 +1084,6 @@
 
 .method public setPagedView(Lcom/android/keyguard/KeyguardWidgetPager;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardWidgetPager;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardWidgetPager:Lcom/android/keyguard/KeyguardWidgetPager;
 
@@ -1118,7 +1094,6 @@
 
 .method public setSecurityViewContainer(Lcom/android/keyguard/KeyguardSecurityView;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityView;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardSecurityContainer:Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -1127,7 +1102,6 @@
 
 .method public showBouncer(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardViewStateManager;->mKeyguardHostView:Lcom/android/keyguard/KeyguardHostView;
 

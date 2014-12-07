@@ -68,7 +68,6 @@
 
 .method public parseResKeyFromIsimResponse([B)V
     .locals 9
-    .param p1    # [B
 
     const/4 v8, 0x2
 

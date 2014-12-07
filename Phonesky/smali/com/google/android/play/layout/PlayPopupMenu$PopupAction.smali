@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;ZLcom/google/android/play/layout/PlayPopupMenu$OnActionSelectedListener;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/play/layout/PlayPopupMenu$OnActionSelectedListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +39,6 @@
 
 .method static synthetic access$000(Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;->mTitle:Ljava/lang/CharSequence;
 
@@ -51,7 +47,6 @@
 
 .method static synthetic access$100(Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;)Z
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;
 
     iget-boolean v0, p0, Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;->mIsEnabled:Z
 
@@ -60,7 +55,6 @@
 
 .method static synthetic access$200(Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;)Lcom/google/android/play/layout/PlayPopupMenu$OnActionSelectedListener;
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayPopupMenu$PopupAction;->mActionListener:Lcom/google/android/play/layout/PlayPopupMenu$OnActionSelectedListener;
 

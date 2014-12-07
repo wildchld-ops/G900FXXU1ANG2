@@ -28,7 +28,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/google/android/finsky/billing/BillingLocator;->sDeviceInService:Z
 
@@ -463,7 +462,6 @@
 
 .method public static initCarrierBillingStorage(Ljava/lang/Runnable;)V
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 

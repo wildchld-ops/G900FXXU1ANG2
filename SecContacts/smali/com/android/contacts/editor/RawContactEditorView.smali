@@ -81,7 +81,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -118,8 +117,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -156,7 +153,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/editor/RawContactEditorView;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/RawContactEditorView;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/RawContactEditorView;->showAddInformationPopupWindow()V
 
@@ -165,7 +161,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/editor/RawContactEditorView;)Lcom/android/contacts/editor/PhoneticNameEditorView;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/RawContactEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/RawContactEditorView;->mPhoneticName:Lcom/android/contacts/editor/PhoneticNameEditorView;
 
@@ -174,7 +169,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/editor/RawContactEditorView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/RawContactEditorView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -183,8 +177,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/editor/RawContactEditorView;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/RawContactEditorView;
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/editor/RawContactEditorView;->runWhenWindowFocused(Ljava/lang/Runnable;)V
 
@@ -193,8 +185,6 @@
 
 .method private addField(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const v3, 0x7f0300ce
 
@@ -892,7 +882,6 @@
 
 .method private getPositionToAddAt(Lcom/android/contacts/common/model/dataitem/DataKind;)I
     .locals 4
-    .param p1    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     const/4 v1, 0x0
 
@@ -1015,7 +1004,6 @@
 
 .method private inflateGroupMemberShipView(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/contacts/editor/RawContactEditorView;->mGroupMembershipKind:Lcom/android/contacts/common/model/dataitem/DataKind;
 
@@ -1140,7 +1128,6 @@
 
 .method private postWhenWindowFocused(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/contacts/editor/RawContactEditorView$3;
 
@@ -1153,7 +1140,6 @@
 
 .method private runWhenWindowFocused(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Landroid/view/View;->hasWindowFocus()Z
 
@@ -1471,7 +1457,6 @@
 
 .method protected buildPhoneType(I)Lcom/android/contacts/common/model/account/AccountType$EditType;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Lcom/android/contacts/common/model/account/AccountType$EditType;
 
@@ -1798,7 +1783,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Landroid/os/Bundle;
 
@@ -1895,7 +1879,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
@@ -1935,7 +1918,6 @@
 
 .method public setAutoAddToDefaultGroup(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/editor/RawContactEditorView;->mAutoAddToDefaultGroup:Z
 
@@ -1944,7 +1926,6 @@
 
 .method public setAutoAddToICEGroup(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/editor/RawContactEditorView;->mAutoAddToICEGroup:Z
 
@@ -1964,7 +1945,6 @@
 
 .method public setEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -2041,7 +2021,6 @@
 
 .method public setGroupMetaData(Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/contacts/editor/RawContactEditorView;->mGroupMetaData:Landroid/database/Cursor;
 
@@ -2077,7 +2056,6 @@
 
 .method public setListener(Lcom/android/contacts/editor/BaseRawContactEditorView$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/editor/BaseRawContactEditorView$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/editor/BaseRawContactEditorView;->mListener:Lcom/android/contacts/editor/BaseRawContactEditorView$Listener;
 
@@ -2086,8 +2064,6 @@
 
 .method public setMoreData(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "custom_ringtone"
 
@@ -2150,10 +2126,6 @@
 
 .method public setState(Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/account/AccountType;Lcom/android/contacts/editor/ViewIdGenerator;Z)V
     .locals 37
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p3    # Lcom/android/contacts/editor/ViewIdGenerator;
-    .param p4    # Z
 
     move-object/from16 v0, p1
 

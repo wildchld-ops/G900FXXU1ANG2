@@ -75,9 +75,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -86,8 +83,6 @@
 
 .method static synthetic access$1102(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$CheckoutPurchaseError;)Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$CheckoutPurchaseError;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$CheckoutPurchaseError;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mCheckoutPurchaseError:Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$CheckoutPurchaseError;
 
@@ -96,9 +91,6 @@
 
 .method static synthetic access$1200(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -107,9 +99,6 @@
 
 .method static synthetic access$1300(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -118,9 +107,6 @@
 
 .method static synthetic access$1400(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -129,7 +115,6 @@
 
 .method static synthetic access$1500(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)J
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->getCommitServerLatencyMs()J
 
@@ -140,7 +125,6 @@
 
 .method static synthetic access$1600(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)J
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->getTimeElapsedSinceCommitMs()J
 
@@ -151,7 +135,6 @@
 
 .method static synthetic access$1700(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mPreparePurchaseParams:Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
 
@@ -160,7 +143,6 @@
 
 .method static synthetic access$1800(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)Lcom/google/android/finsky/api/DfeApi;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -169,9 +151,6 @@
 
 .method static synthetic access$1900(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;[Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # [Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->handleLibraryUpdates([Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)V
 
@@ -180,9 +159,6 @@
 
 .method static synthetic access$2000(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -191,8 +167,6 @@
 
 .method static synthetic access$2102(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;)Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mCompleteChallenge:Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
 
@@ -201,9 +175,6 @@
 
 .method static synthetic access$2200(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -212,9 +183,6 @@
 
 .method static synthetic access$2300(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -223,9 +191,6 @@
 
 .method static synthetic access$2400(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -234,9 +199,6 @@
 
 .method static synthetic access$2500(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -245,8 +207,6 @@
 
 .method static synthetic access$2602(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;Lcom/android/volley/VolleyError;)Lcom/android/volley/VolleyError;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mVolleyError:Lcom/android/volley/VolleyError;
 
@@ -255,11 +215,6 @@
 
 .method static synthetic access$2700(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;ILcom/android/volley/VolleyError;JJ)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # Lcom/android/volley/VolleyError;
-    .param p3    # J
-    .param p5    # J
 
     invoke-direct/range {p0 .. p6}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->logVolleyError(ILcom/android/volley/VolleyError;JJ)V
 
@@ -268,9 +223,6 @@
 
 .method static synthetic access$2800(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -279,9 +231,6 @@
 
 .method static synthetic access$2900(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->setState(II)V
 
@@ -290,8 +239,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;)Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mPrepareChallenge:Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
 
@@ -300,7 +247,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)Lcom/google/android/finsky/protos/Purchase$ClientCart;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mCart:Lcom/google/android/finsky/protos/Purchase$ClientCart;
 
@@ -309,8 +255,6 @@
 
 .method static synthetic access$502(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;Lcom/google/android/finsky/protos/Purchase$ClientCart;)Lcom/google/android/finsky/protos/Purchase$ClientCart;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # Lcom/google/android/finsky/protos/Purchase$ClientCart;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mCart:Lcom/google/android/finsky/protos/Purchase$ClientCart;
 
@@ -319,8 +263,6 @@
 
 .method static synthetic access$602(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;[B)[B
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mServerLogsCookie:[B
 
@@ -329,7 +271,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)J
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->getPrepareServerLatencyMs()J
 
@@ -340,7 +281,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)J
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->getTimeElapsedSincePrepareMs()J
 
@@ -351,11 +291,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;IIJJ)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
 
     invoke-direct/range {p0 .. p6}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->log(IIJJ)V
 
@@ -364,7 +299,6 @@
 
 .method private static bundleToMap(Landroid/os/Bundle;)Ljava/util/Map;
     .locals 4
-    .param p0    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -422,8 +356,6 @@
 
 .method public static extractExtraPurchaseData(Lcom/google/android/finsky/protos/Library$LibraryUpdate;Lcom/google/android/finsky/protos/Common$Docid;)Landroid/os/Bundle;
     .locals 9
-    .param p0    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
 
     iget-object v0, p0, Lcom/google/android/finsky/protos/Library$LibraryUpdate;->mutation:[Lcom/google/android/finsky/protos/Library$LibraryMutation;
 
@@ -685,8 +617,6 @@
 
 .method private handleLibraryUpdates([Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)V
     .locals 6
-    .param p1    # [Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p2    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -760,10 +690,6 @@
 
 .method private log(IIJJ)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mEventLogger:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -794,10 +720,6 @@
 
 .method private logVolleyError(ILcom/android/volley/VolleyError;JJ)V
     .locals 11
-    .param p1    # I
-    .param p2    # Lcom/android/volley/VolleyError;
-    .param p3    # J
-    .param p5    # J
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;->mEventLogger:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -834,7 +756,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -857,7 +778,6 @@
 # virtual methods
 .method public commit(Landroid/os/Bundle;Ljava/util/Map;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1020,7 +940,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -1065,7 +984,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1152,10 +1070,6 @@
 
 .method public prepare(Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;Ljava/lang/String;Landroid/os/Bundle;Lcom/google/android/finsky/api/DfeApi$GaiaAuthParameters;Ljava/util/Map;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Lcom/google/android/finsky/api/DfeApi$GaiaAuthParameters;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1285,7 +1199,6 @@
 
 .method protected restoreFromSavedInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->restoreFromSavedInstanceState(Landroid/os/Bundle;)V
 

@@ -153,7 +153,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lorg/apache/http/impl/auth/NTLMScheme$State;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lorg/apache/http/impl/auth/NTLMScheme$State;
 

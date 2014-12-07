@@ -260,7 +260,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -314,7 +313,6 @@
 
 .method static synthetic access$002(Landroid/bluetooth/IBluetooth;)Landroid/bluetooth/IBluetooth;
     .locals 0
-    .param p0    # Landroid/bluetooth/IBluetooth;
 
     sput-object p0, Landroid/bluetooth/BluetoothDevice;->sService:Landroid/bluetooth/IBluetooth;
 
@@ -323,7 +321,6 @@
 
 .method public static convertPinToBytes(Ljava/lang/String;)[B
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -635,9 +632,6 @@
 # virtual methods
 .method public authorizeService(Landroid/os/ParcelUuid;ZZ)Z
     .locals 4
-    .param p1    # Landroid/os/ParcelUuid;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -764,9 +758,6 @@
 
 .method public connectGatt(Landroid/content/Context;ZLandroid/bluetooth/BluetoothGattCallback;)Landroid/bluetooth/BluetoothGatt;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/bluetooth/BluetoothGattCallback;
 
     const/4 v6, 0x0
 
@@ -871,8 +862,6 @@
 
 .method public createBondOutOfBand([B[B)Z
     .locals 1
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v0, 0x0
 
@@ -881,7 +870,6 @@
 
 .method public createInsecureRfcommSocket(I)Landroid/bluetooth/BluetoothSocket;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -911,7 +899,6 @@
 
 .method public createInsecureRfcommSocketToServiceRecord(Ljava/util/UUID;)Landroid/bluetooth/BluetoothSocket;
     .locals 8
-    .param p1    # Ljava/util/UUID;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -943,7 +930,6 @@
 
 .method public createRfcommSocket(I)Landroid/bluetooth/BluetoothSocket;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -973,7 +959,6 @@
 
 .method public createRfcommSocketToServiceRecord(Ljava/util/UUID;)Landroid/bluetooth/BluetoothSocket;
     .locals 8
-    .param p1    # Ljava/util/UUID;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1042,7 +1027,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/bluetooth/BluetoothDevice;
 
@@ -1442,7 +1426,6 @@
 
 .method public getServiceChannel(Landroid/os/ParcelUuid;)I
     .locals 1
-    .param p1    # Landroid/os/ParcelUuid;
 
     const/high16 v0, -0x80000000
 
@@ -1579,9 +1562,6 @@
 
 .method public monitorRawRssi(III)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -1708,7 +1688,6 @@
 
 .method public setAlias(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1751,7 +1730,6 @@
 
 .method public setBluetoothClass(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1794,8 +1772,6 @@
 
 .method public setDeviceOutOfBandData([B[B)Z
     .locals 1
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v0, 0x0
 
@@ -1804,7 +1780,6 @@
 
 .method public setLeHwSetup(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1847,7 +1822,6 @@
 
 .method public setPairingConfirmation(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1890,7 +1864,6 @@
 
 .method public setPasskey(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1899,7 +1872,6 @@
 
 .method public setPin([B)Z
     .locals 5
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -1946,7 +1918,6 @@
 
 .method public setRemoteBrsf(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothDevice;->mRemoteBrsf:I
 
@@ -1963,7 +1934,6 @@
 
 .method public setRemoteRssf(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Landroid/bluetooth/BluetoothDevice;->mRemoteBssf:I
 
@@ -1972,7 +1942,6 @@
 
 .method public setTrust(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1981,7 +1950,6 @@
 
 .method public setTxPower(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2024,7 +1992,6 @@
 
 .method public setValueNREC(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothDevice;->mValueNREC:I
 
@@ -2033,7 +2000,6 @@
 
 .method public setValueWBS(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothDevice;->mValueWBS:I
 
@@ -2050,8 +2016,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothDevice;->mAddress:Ljava/lang/String;
 

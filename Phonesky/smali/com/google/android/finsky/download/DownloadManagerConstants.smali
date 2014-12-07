@@ -80,7 +80,6 @@
 
 .method public static getContentUriString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/download/DownloadManagerConstants;->isFroyoDownloadManager()Z
 
@@ -207,7 +206,6 @@
 
 .method public static isStatusCompleted(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xc8
 
@@ -240,7 +238,6 @@
 
 .method public static isStatusSuccess(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xc8
 
@@ -263,7 +260,6 @@
 
 .method public static sniffDownloadManagerVersion(Landroid/net/Uri;)V
     .locals 5
-    .param p0    # Landroid/net/Uri;
 
     const/4 v4, 0x1
 

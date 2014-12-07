@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/ReviewsFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/ReviewsFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewsFragment;->reloadReviews()V
 
@@ -68,8 +67,6 @@
 
 .method public static newInstance(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;)Lcom/google/android/finsky/activities/ReviewsFragment;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     new-instance v0, Lcom/google/android/finsky/activities/ReviewsFragment;
 
@@ -251,7 +248,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -381,7 +377,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -408,9 +403,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/fragments/PageFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -509,9 +501,6 @@
 
 .method public onRateReview(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
     new-instance v0, Lcom/google/android/finsky/api/model/DfeRateReview;
 
@@ -546,8 +535,6 @@
 
 .method public onReviewFilterChanged(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/ReviewsFragment;->mFilterByVersion:Z
 
@@ -566,7 +553,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewsFragment;->recordState()V
 
@@ -581,7 +567,6 @@
 
 .method public onSortingChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewsFragment;->mReviewsData:Lcom/google/android/finsky/api/model/DfeReviews;
 
@@ -648,8 +633,6 @@
 
 .method protected toast(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewsFragment;->mContext:Landroid/content/Context;
 

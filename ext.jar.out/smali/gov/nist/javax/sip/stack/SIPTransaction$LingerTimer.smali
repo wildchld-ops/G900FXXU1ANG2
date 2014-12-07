@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPTransaction;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction$LingerTimer;->this$0:Lgov/nist/javax/sip/stack/SIPTransaction;
 

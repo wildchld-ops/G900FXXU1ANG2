@@ -52,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Landroid/net/Uri;)Ljava/lang/Integer;
     .locals 2
-    .param p1    # [Landroid/net/Uri;
 
     array-length v0, p1
 
@@ -86,7 +85,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/net/Uri;
 
@@ -99,7 +97,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 5
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v3, 0x0
 
@@ -258,7 +255,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

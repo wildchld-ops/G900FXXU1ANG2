@@ -1380,7 +1380,7 @@ Paspaudę ir palaikę grįžimo mygtuką galite parodyti arba paslėpti kelių l
     <string name="usb_tethering_errored_subtext">USB jungimo klaida</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB siejimo negalima išjungti naudojant „SideSync“. Išjungus USB siejimą, „SideSync“ taip pat bus išjungta.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB siejimo negalima įjungti naudojant „SideSync“. Įjungus USB siejimą, „SideSync“ bus išjungta.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>„Bluetooth“ siejimas</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>„Bluetooth“ siejimas</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Bendrinamas šio įrenginio interneto ryšys…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Įrenginio interneto ryšys bendrinamas su 1 įrenginiu</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Įrenginio interneto ryšys bendrinamas su %d įrenginiais (-ių).</string>

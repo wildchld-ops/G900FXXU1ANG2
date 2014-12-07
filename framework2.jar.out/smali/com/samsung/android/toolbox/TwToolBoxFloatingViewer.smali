@@ -361,7 +361,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/16 v7, 0xff
 
@@ -1588,7 +1587,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mSipVisible:Z
 
@@ -1597,8 +1595,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mSipVisible:Z
 
@@ -1607,7 +1603,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mVisibleFloatingStyle:Z
 
@@ -1616,7 +1611,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->getSCoverState()Z
 
@@ -1627,7 +1621,6 @@
 
 .method static synthetic access$10000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveBtnFocusedCover:Landroid/graphics/drawable/Drawable;
 
@@ -1636,7 +1629,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCoverOpen:Z
 
@@ -1645,8 +1637,6 @@
 
 .method static synthetic access$1102(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCoverOpen:Z
 
@@ -1655,7 +1645,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/service/dreams/IDreamManager;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mDreamManager:Landroid/service/dreams/IDreamManager;
 
@@ -1664,7 +1653,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mKeyguardShowing:Z
 
@@ -1673,8 +1661,6 @@
 
 .method static synthetic access$1302(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mKeyguardShowing:Z
 
@@ -1683,7 +1669,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->isEnableOTA()Z
 
@@ -1694,7 +1679,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mOTAShowing:Z
 
@@ -1703,8 +1687,6 @@
 
 .method static synthetic access$1502(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mOTAShowing:Z
 
@@ -1713,7 +1695,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mUpdateVisibility:Ljava/lang/Runnable;
 
@@ -1722,7 +1703,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->updateVisibility()Z
 
@@ -1733,7 +1713,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mHiddenToolBox:Z
 
@@ -1742,7 +1721,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mDisableFloatingViewer:Z
 
@@ -1751,7 +1729,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->BLOCK_LIST:[Ljava/lang/String;
 
@@ -1760,7 +1737,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mGlobalRect:Landroid/graphics/Rect;
 
@@ -1769,7 +1745,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCheckEnvironment:Ljava/lang/Runnable;
 
@@ -1778,7 +1753,6 @@
 
 .method static synthetic access$2200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTouchUpOrCancelRunnable:Ljava/lang/Runnable;
 
@@ -1787,8 +1761,6 @@
 
 .method static synthetic access$2302(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mValidUser:Z
 
@@ -1797,7 +1769,6 @@
 
 .method static synthetic access$2400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->isValidUser()Z
 
@@ -1808,7 +1779,6 @@
 
 .method static synthetic access$2500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->loadCenterPosition()V
 
@@ -1817,7 +1787,6 @@
 
 .method static synthetic access$2600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mGoToPositionAndromeda:Ljava/lang/Runnable;
 
@@ -1826,7 +1795,6 @@
 
 .method static synthetic access$2700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->clearToolBox()V
 
@@ -1835,7 +1803,6 @@
 
 .method static synthetic access$2800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->prepareToolBoxLinear()V
 
@@ -1844,8 +1811,6 @@
 
 .method static synthetic access$2902(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mReseting:Z
 
@@ -1854,7 +1819,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCurrentPackage:Ljava/lang/String;
 
@@ -1863,7 +1827,6 @@
 
 .method static synthetic access$3000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mPlayAnimationWakeupRunnable:Ljava/lang/Runnable;
 
@@ -1872,8 +1835,6 @@
 
 .method static synthetic access$302(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCurrentPackage:Ljava/lang/String;
 
@@ -1882,8 +1843,6 @@
 
 .method static synthetic access$3100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->startActivityOrTask(Landroid/content/Intent;)V
 
@@ -1892,7 +1851,6 @@
 
 .method static synthetic access$3200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/content/res/Resources;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mResources:Landroid/content/res/Resources;
 
@@ -1901,8 +1859,6 @@
 
 .method static synthetic access$3302(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mDeivceProvisioned:Z
 
@@ -1911,7 +1867,6 @@
 
 .method static synthetic access$3400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -1920,8 +1875,6 @@
 
 .method static synthetic access$3502(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mExploreByTouchMode:Z
 
@@ -1930,7 +1883,6 @@
 
 .method static synthetic access$3600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mKidsMode:Z
 
@@ -1939,8 +1891,6 @@
 
 .method static synthetic access$3602(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mKidsMode:Z
 
@@ -1949,7 +1899,6 @@
 
 .method static synthetic access$3700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->onToolLongClick()V
 
@@ -1958,7 +1907,6 @@
 
 .method static synthetic access$3800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->onToolClick()V
 
@@ -1967,7 +1915,6 @@
 
 .method static synthetic access$3900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->playAnimationEnter()V
 
@@ -1976,7 +1923,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mPlayAnimationFadeOutRunnable:Ljava/lang/Runnable;
 
@@ -1985,7 +1931,6 @@
 
 .method static synthetic access$4000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->playAnimationSleep()V
 
@@ -1994,7 +1939,6 @@
 
 .method static synthetic access$4100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->playAnimationWakeup()V
 
@@ -2003,7 +1947,6 @@
 
 .method static synthetic access$4200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->playAnimationExpand()V
 
@@ -2012,7 +1955,6 @@
 
 .method static synthetic access$4300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->playAnimationCollapse()V
 
@@ -2021,7 +1963,6 @@
 
 .method static synthetic access$4400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->playAnimationFadeIn()V
 
@@ -2030,7 +1971,6 @@
 
 .method static synthetic access$4500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->playAnimationFadeOut()V
 
@@ -2039,7 +1979,6 @@
 
 .method static synthetic access$4600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTargetX:I
 
@@ -2048,7 +1987,6 @@
 
 .method static synthetic access$4700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCenterX:I
 
@@ -2057,8 +1995,6 @@
 
 .method static synthetic access$4702(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCenterX:I
 
@@ -2067,8 +2003,6 @@
 
 .method static synthetic access$4712(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCenterX:I
 
@@ -2081,7 +2015,6 @@
 
 .method static synthetic access$4800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTargetY:I
 
@@ -2090,7 +2023,6 @@
 
 .method static synthetic access$4900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCenterY:I
 
@@ -2099,8 +2031,6 @@
 
 .method static synthetic access$4902(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCenterY:I
 
@@ -2109,8 +2039,6 @@
 
 .method static synthetic access$4912(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mCenterY:I
 
@@ -2123,7 +2051,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTracking:Z
 
@@ -2132,8 +2059,6 @@
 
 .method static synthetic access$5000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->setEnableVSync(Z)V
 
@@ -2142,7 +2067,6 @@
 
 .method static synthetic access$5100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mNeedSaveCenterPosition:Z
 
@@ -2151,8 +2075,6 @@
 
 .method static synthetic access$5102(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mNeedSaveCenterPosition:Z
 
@@ -2161,7 +2083,6 @@
 
 .method static synthetic access$5200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->saveCenterPosition()V
 
@@ -2170,7 +2091,6 @@
 
 .method static synthetic access$5300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->SCALED_APPROACH_SLOP:I
 
@@ -2179,7 +2099,6 @@
 
 .method static synthetic access$5400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/view/Choreographer;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mChoreographer:Landroid/view/Choreographer;
 
@@ -2188,7 +2107,6 @@
 
 .method static synthetic access$5500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mGoToPositionCallback:Ljava/lang/Runnable;
 
@@ -2197,7 +2115,6 @@
 
 .method static synthetic access$5600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->goToPositionAndromeda()V
 
@@ -2206,7 +2123,6 @@
 
 .method static synthetic access$5700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEditAfterScreenCapture:I
 
@@ -2215,8 +2131,6 @@
 
 .method static synthetic access$5702(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEditAfterScreenCapture:I
 
@@ -2225,7 +2139,6 @@
 
 .method static synthetic access$5800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$TwToolBoxLongPressPanel;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTwToolBoxLongPressPanel:Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$TwToolBoxLongPressPanel;
 
@@ -2234,8 +2147,6 @@
 
 .method static synthetic access$5902(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mMovingByAnimation:Z
 
@@ -2244,7 +2155,6 @@
 
 .method static synthetic access$600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mAbsX:I
 
@@ -2253,8 +2163,6 @@
 
 .method static synthetic access$6002(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mMainCharacterDegree:I
 
@@ -2263,8 +2171,6 @@
 
 .method static synthetic access$6102(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;F)F
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mExpandProgressValue:F
 
@@ -2273,7 +2179,6 @@
 
 .method static synthetic access$6200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)F
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEnterProgressValue:F
 
@@ -2282,8 +2187,6 @@
 
 .method static synthetic access$6202(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;F)F
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEnterProgressValue:F
 
@@ -2292,7 +2195,6 @@
 
 .method static synthetic access$6300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelPosition:I
 
@@ -2301,8 +2203,6 @@
 
 .method static synthetic access$6302(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelPosition:I
 
@@ -2311,7 +2211,6 @@
 
 .method static synthetic access$6400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->LONG_PRESS_PANEL_HEIGHT_PX:I
 
@@ -2320,7 +2219,6 @@
 
 .method static synthetic access$6500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelShowing:Z
 
@@ -2329,8 +2227,6 @@
 
 .method static synthetic access$6502(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelShowing:Z
 
@@ -2339,7 +2235,6 @@
 
 .method static synthetic access$6600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mUpdateLongPressPanelRect:Ljava/lang/Runnable;
 
@@ -2348,7 +2243,6 @@
 
 .method static synthetic access$6700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelRemoveAnimating:Z
 
@@ -2357,8 +2251,6 @@
 
 .method static synthetic access$6702(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelRemoveAnimating:Z
 
@@ -2367,7 +2259,6 @@
 
 .method static synthetic access$6800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelRemoveBtnPosition:I
 
@@ -2376,8 +2267,6 @@
 
 .method static synthetic access$6802(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelRemoveBtnPosition:I
 
@@ -2386,7 +2275,6 @@
 
 .method static synthetic access$6900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)F
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelRemoveBtnAngle:F
 
@@ -2395,8 +2283,6 @@
 
 .method static synthetic access$6902(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;F)F
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelRemoveBtnAngle:F
 
@@ -2405,7 +2291,6 @@
 
 .method static synthetic access$700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mAbsY:I
 
@@ -2414,8 +2299,6 @@
 
 .method static synthetic access$7002(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;F)F
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTurnOffEffectRatio:F
 
@@ -2424,7 +2307,6 @@
 
 .method static synthetic access$7100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->getTorchStatus()Z
 
@@ -2435,7 +2317,6 @@
 
 .method static synthetic access$7200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->toggleTorch()V
 
@@ -2444,7 +2325,6 @@
 
 .method static synthetic access$7300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->screenCapture()V
 
@@ -2453,7 +2333,6 @@
 
 .method static synthetic access$7400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mScreenWriteRecovery:Ljava/lang/Runnable;
 
@@ -2462,7 +2341,6 @@
 
 .method static synthetic access$7500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/util/DisplayMetrics;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
@@ -2471,7 +2349,6 @@
 
 .method static synthetic access$7600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingBgArea:Landroid/graphics/Rect;
 
@@ -2480,7 +2357,6 @@
 
 .method static synthetic access$7700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingEditBtn:Landroid/graphics/drawable/Drawable;
 
@@ -2489,7 +2365,6 @@
 
 .method static synthetic access$7800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingEditBg:Landroid/graphics/drawable/Drawable;
 
@@ -2498,7 +2373,6 @@
 
 .method static synthetic access$7900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveBtn:Landroid/graphics/drawable/Drawable;
 
@@ -2507,10 +2381,6 @@
 
 .method static synthetic access$800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;III)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->onTouchUpOrCancel(III)V
 
@@ -2519,7 +2389,6 @@
 
 .method static synthetic access$8000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveBg:Landroid/graphics/drawable/Drawable;
 
@@ -2528,7 +2397,6 @@
 
 .method static synthetic access$8100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-boolean v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mIsTablet:Z
 
@@ -2537,7 +2405,6 @@
 
 .method static synthetic access$8200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->FIXED_SHORTCUT_SHADOW_HEIGHT_PX:I
 
@@ -2546,7 +2413,6 @@
 
 .method static synthetic access$8300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingEditBtnArea:Landroid/graphics/Rect;
 
@@ -2555,7 +2421,6 @@
 
 .method static synthetic access$8400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveBtnArea:Landroid/graphics/Rect;
 
@@ -2564,7 +2429,6 @@
 
 .method static synthetic access$8500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingEditBgArea:Landroid/graphics/Rect;
 
@@ -2573,7 +2437,6 @@
 
 .method static synthetic access$8600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveBgArea:Landroid/graphics/Rect;
 
@@ -2582,7 +2445,6 @@
 
 .method static synthetic access$8700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingEditConflictArea:Landroid/graphics/Rect;
 
@@ -2591,7 +2453,6 @@
 
 .method static synthetic access$8800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveConflictArea:Landroid/graphics/Rect;
 
@@ -2600,7 +2461,6 @@
 
 .method static synthetic access$8900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingMsgEdit:Ljava/lang/String;
 
@@ -2609,7 +2469,6 @@
 
 .method static synthetic access$900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mPlayAnimationFadeInRunnable:Ljava/lang/Runnable;
 
@@ -2618,7 +2477,6 @@
 
 .method static synthetic access$9000(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Paint;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTextPaint:Landroid/graphics/Paint;
 
@@ -2627,7 +2485,6 @@
 
 .method static synthetic access$9100(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingMsgRemove:Ljava/lang/String;
 
@@ -2636,7 +2493,6 @@
 
 .method static synthetic access$9200(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->LONG_PRESS_PANEL_TOP_EMPTY_SPACE_PX:I
 
@@ -2645,7 +2501,6 @@
 
 .method static synthetic access$9300(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxCharacter;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mMainCharacter:Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxCharacter;
 
@@ -2654,7 +2509,6 @@
 
 .method static synthetic access$9400(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingBg:Landroid/graphics/drawable/Drawable;
 
@@ -2663,7 +2517,6 @@
 
 .method static synthetic access$9500(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingEditBtnFocused:Landroid/graphics/drawable/Drawable;
 
@@ -2672,7 +2525,6 @@
 
 .method static synthetic access$9600(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveBtnFocused:Landroid/graphics/drawable/Drawable;
 
@@ -2681,7 +2533,6 @@
 
 .method static synthetic access$9700(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTextBounds:Landroid/graphics/Rect;
 
@@ -2690,7 +2541,6 @@
 
 .method static synthetic access$9800(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/animation/AnimatorSet;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mLongPressPanelRemoveBtnAnimator:Landroid/animation/AnimatorSet;
 
@@ -2699,7 +2549,6 @@
 
 .method static synthetic access$9900(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mEndFloatingRemoveBtnCoverArea:Landroid/graphics/Rect;
 
@@ -3008,10 +2857,6 @@
 
 .method private drawToolBox(Landroid/graphics/Canvas;IIZ)V
     .locals 32
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v10, 0x0
 
@@ -4612,8 +4457,6 @@
 
 .method private goToPosition(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTargetX:I
 
@@ -4647,8 +4490,6 @@
 
 .method private goToPositionOneShot(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x2
 
@@ -4774,8 +4615,6 @@
 
 .method private initializeFunctionShortcut(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxMenu;I)Z
     .locals 6
-    .param p1    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxMenu;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -5305,7 +5144,6 @@
 
 .method private isEnabledPkg(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -5349,11 +5187,6 @@
 
 .method private isPointInCircle(DDDII)Z
     .locals 13
-    .param p1    # D
-    .param p3    # D
-    .param p5    # D
-    .param p7    # I
-    .param p8    # I
 
     move/from16 v0, p7
 
@@ -5846,8 +5679,6 @@
 
 .method private onTouchDown(II)V
     .locals 16
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -6205,8 +6036,6 @@
 
 .method private onTouchMove(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;->mTouchMode:Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$TouchMode;
 
@@ -6287,9 +6116,6 @@
 
 .method private onTouchUpOrCancel(III)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -9063,7 +8889,6 @@
 
 .method private setEnableVSync(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -9100,7 +8925,6 @@
 
 .method private startActivityOrTask(Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_0
 
@@ -9461,7 +9285,6 @@
 # virtual methods
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -9647,7 +9470,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -9707,10 +9529,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -9775,7 +9593,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -9899,8 +9716,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 

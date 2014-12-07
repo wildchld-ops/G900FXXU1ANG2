@@ -14,8 +14,6 @@
 
 .method public static createIntent(Landroid/accounts/Account;Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
 
     const/4 v1, 0x0
 
@@ -72,7 +70,6 @@
 
 .method protected onFinish(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
 
     const/4 v6, 0x0
 

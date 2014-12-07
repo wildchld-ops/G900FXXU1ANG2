@@ -23,7 +23,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/header/SIPObject;-><init>()V
 
@@ -54,7 +53,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/SIPHeader;->headerName:Ljava/lang/String;
 
@@ -86,7 +84,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p1    # Ljava/lang/StringBuffer;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/header/SIPHeader;->encodeBody()Ljava/lang/String;
 
@@ -213,7 +210,6 @@
 
 .method public setHeaderName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/SIPHeader;->headerName:Ljava/lang/String;
 

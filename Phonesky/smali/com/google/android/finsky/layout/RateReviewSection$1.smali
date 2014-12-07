@@ -40,9 +40,6 @@
 # virtual methods
 .method public onRatingChanged(Landroid/widget/RatingBar;FZ)V
     .locals 4
-    .param p1    # Landroid/widget/RatingBar;
-    .param p2    # F
-    .param p3    # Z
 
     if-nez p3, :cond_0
 

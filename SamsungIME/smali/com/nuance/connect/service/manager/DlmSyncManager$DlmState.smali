@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -292,7 +291,6 @@
 
 .method public setPullTransactionId(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/manager/DlmSyncManager$DlmState;->pullTransID:Ljava/lang/String;
 
@@ -305,7 +303,6 @@
 
 .method public setRestoreTransactionId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/manager/DlmSyncManager$DlmState;->restoreTransID:Ljava/lang/String;
 

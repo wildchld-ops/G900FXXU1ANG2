@@ -101,9 +101,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -204,8 +201,6 @@
 
 .method private changeFontSize(ILandroid/view/View;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     invoke-static {}, Lcom/android/mms/ui/MessagingPreferenceActivity;->isUsingMsgFontSize()Z
 
@@ -386,7 +381,6 @@
 
 .method private formatContactListString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     if-nez p1, :cond_1
 
@@ -513,8 +507,6 @@
 
 .method private static getKey(Ljava/lang/String;J)J
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     const-string v0, "mms"
 
@@ -532,7 +524,6 @@
 
 .method private isCursorValid(Landroid/database/Cursor;)Z
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-interface {p1}, Landroid/database/Cursor;->isClosed()Z
 
@@ -566,8 +557,6 @@
 
 .method private isInboxMessage(Ljava/lang/String;Landroid/database/Cursor;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v2, 0x1
 
@@ -620,8 +609,6 @@
 
 .method private updateAvatarView(Lcom/android/mms/data/ContactList;J)V
     .locals 10
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # J
 
     const/4 v9, 0x1
 
@@ -852,9 +839,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 15
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     move-object/from16 v10, p1
 
@@ -1422,7 +1406,6 @@
 
 .method public changeAvatarSizewhenchangeFontSize(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/16 v6, 0x5a
 
@@ -1511,8 +1494,6 @@
 
 .method public changeFontSize7Step(ILandroid/view/View;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     const v5, 0x7f0a00dd
 
@@ -1701,7 +1682,6 @@
 
 .method public checkMessageIdForLockedMessages(Landroid/database/Cursor;)V
     .locals 9
-    .param p1    # Landroid/database/Cursor;
 
     new-instance v4, Ljava/util/ArrayList;
 
@@ -1866,9 +1846,6 @@
 
 .method public getCachedMessageItem(Ljava/lang/String;JLandroid/database/Cursor;)Lcom/android/mms/ui/BaseMessageItem;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Landroid/database/Cursor;
 
     iget-object v3, p0, Lcom/android/mms/ui/LockedMessageListAdapter;->mMessageItemCache:Ljava/util/LinkedHashMap;
 
@@ -1994,8 +1971,6 @@
 
 .method public isCheckedMessageId(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "sms"
 
@@ -2055,9 +2030,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/android/mms/ui/LockedMessageListAdapter;->mFactory:Landroid/view/LayoutInflater;
 
@@ -2139,7 +2111,6 @@
 
 .method public setAnimation(Lcom/android/mms/animation/MsgListAnimation;)V
     .locals 0
-    .param p1    # Lcom/android/mms/animation/MsgListAnimation;
 
     iput-object p1, p0, Lcom/android/mms/ui/LockedMessageListAdapter;->mMsgListAnimation:Lcom/android/mms/animation/MsgListAnimation;
 
@@ -2148,7 +2119,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/LockedMessageListAdapter;->mIsAnimationEnable:Z
 
@@ -2157,9 +2127,6 @@
 
 .method public setCheckedItem(JLjava/lang/String;Z)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const-string v0, "sms"
 
@@ -2268,7 +2235,6 @@
 
 .method public setMessageListMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/mms/ui/LockedMessageListAdapter;->mIsMsgMultiMode:Z
 
@@ -2287,7 +2253,6 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/ui/LockedMessageListAdapter$OnContentChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/LockedMessageListAdapter$OnContentChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/LockedMessageListAdapter;->mOnContentChangedListener:Lcom/android/mms/ui/LockedMessageListAdapter$OnContentChangedListener;
 

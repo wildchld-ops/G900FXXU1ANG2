@@ -76,8 +76,6 @@
 
 .method public hideFragment(Landroid/support/v4/app/Fragment;Z)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Z
 
     iget-boolean v1, p0, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->mSaveInstanceStateCalled:Z
 
@@ -225,7 +223,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -330,8 +327,6 @@
 
 .method public onError(Lcom/google/android/finsky/billing/BillingFlow;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlow;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -358,9 +353,6 @@
 
 .method public onFinished(Lcom/google/android/finsky/billing/BillingFlow;ZLandroid/os/Bundle;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlow;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -493,7 +485,6 @@
 
 .method public onFlowCanceled(Lcom/google/android/finsky/billing/BillingFlowFragment;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
 
     const/4 v1, 0x0
 
@@ -506,8 +497,6 @@
 
 .method public onFlowError(Lcom/google/android/finsky/billing/BillingFlowFragment;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -518,8 +507,6 @@
 
 .method public onFlowFinished(Lcom/google/android/finsky/billing/BillingFlowFragment;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -532,16 +519,12 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -599,7 +582,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -667,9 +649,6 @@
 
 .method public persistFragment(Landroid/os/Bundle;Ljava/lang/String;Landroid/support/v4/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/support/v4/app/Fragment;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -682,8 +661,6 @@
 
 .method public restoreFragment(Landroid/os/Bundle;Ljava/lang/String;)Landroid/support/v4/app/Fragment;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -698,7 +675,6 @@
 
 .method public setHostTitle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->getString(I)Ljava/lang/String;
 
@@ -711,7 +687,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->mTitleView:Landroid/widget/TextView;
 
@@ -722,8 +697,6 @@
 
 .method public showDialogFragment(Landroid/support/v4/app/DialogFragment;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/support/v4/app/DialogFragment;
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->mSaveInstanceStateCalled:Z
 
@@ -769,9 +742,6 @@
 
 .method public showFragment(Landroid/support/v4/app/Fragment;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget-boolean v1, p0, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->mSaveInstanceStateCalled:Z
 
@@ -809,7 +779,6 @@
 
 .method public showProgress(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->mSaveInstanceStateCalled:Z
 
@@ -840,7 +809,6 @@
 
 .method protected startOrResumeFlow(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

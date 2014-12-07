@@ -36,8 +36,6 @@
 # virtual methods
 .method public add(Ljava/lang/String;Lcom/google/gson/JsonElement;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/gson/JsonElement;
 
     if-nez p2, :cond_0
 
@@ -81,7 +79,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-eq p1, p0, :cond_0
 

@@ -39,9 +39,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/net/InetAddress;Lgov/nist/javax/sip/stack/SIPTransactionStack;I)V
     .locals 1
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
-    .param p3    # I
 
     const-string v0, "tls"
 
@@ -72,7 +69,6 @@
 # virtual methods
 .method protected declared-synchronized cacheMessageChannel(Lgov/nist/javax/sip/stack/TLSMessageChannel;)V
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/stack/TLSMessageChannel;
 
     monitor-enter p0
 
@@ -184,7 +180,6 @@
 
 .method public declared-synchronized createMessageChannel(Lgov/nist/core/HostPort;)Lgov/nist/javax/sip/stack/MessageChannel;
     .locals 5
-    .param p1    # Lgov/nist/core/HostPort;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -324,8 +319,6 @@
 
 .method public declared-synchronized createMessageChannel(Ljava/net/InetAddress;I)Lgov/nist/javax/sip/stack/MessageChannel;
     .locals 6
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -525,7 +518,6 @@
 
 .method protected declared-synchronized remove(Lgov/nist/javax/sip/stack/TLSMessageChannel;)V
     .locals 4
-    .param p1    # Lgov/nist/javax/sip/stack/TLSMessageChannel;
 
     monitor-enter p0
 

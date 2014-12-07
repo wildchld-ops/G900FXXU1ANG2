@@ -125,8 +125,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/ClassZeroActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ClassZeroActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ClassZeroActivity;->mRead:Z
 
@@ -135,7 +133,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ClassZeroActivity;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ClassZeroActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/ClassZeroActivity;->mDialog:Landroid/app/AlertDialog;
 
@@ -144,7 +141,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ClassZeroActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ClassZeroActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ClassZeroActivity;->cancelNotification()V
 
@@ -153,7 +149,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ClassZeroActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ClassZeroActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ClassZeroActivity;->saveMessage()V
 
@@ -162,7 +157,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ClassZeroActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ClassZeroActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ClassZeroActivity;->processNextMessage()V
 
@@ -181,8 +175,6 @@
 
 .method private displayZeroMessage(Landroid/content/Intent;Z)V
     .locals 17
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const-string v14, "pdu"
 
@@ -521,7 +513,6 @@
 
 .method private extractContentValues(Landroid/telephony/SmsMessage;)Landroid/content/ContentValues;
     .locals 6
-    .param p1    # Landroid/telephony/SmsMessage;
 
     const/4 v2, 0x1
 
@@ -694,7 +685,6 @@
 
 .method private formatCBNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
@@ -811,7 +801,6 @@
 
 .method private queueMsgFromIntent(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "Mms/display_00"
 
@@ -859,7 +848,6 @@
 
 .method private replaceMessage(Landroid/telephony/SmsMessage;)Landroid/net/Uri;
     .locals 18
-    .param p1    # Landroid/telephony/SmsMessage;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/mms/ui/ClassZeroActivity;->extractContentValues(Landroid/telephony/SmsMessage;)Landroid/content/ContentValues;
 
@@ -1026,7 +1014,6 @@
 
 .method private storeMessage(Landroid/telephony/SmsMessage;)Landroid/net/Uri;
     .locals 4
-    .param p1    # Landroid/telephony/SmsMessage;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ClassZeroActivity;->extractContentValues(Landroid/telephony/SmsMessage;)Landroid/content/ContentValues;
 
@@ -1055,7 +1042,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -1141,7 +1127,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/display_00"
 
@@ -1158,7 +1143,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

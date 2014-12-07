@@ -132,7 +132,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -155,8 +154,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/model/rcs/RcsDetailViewSharedFile;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/model/rcs/RcsDetailViewSharedFile;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/model/rcs/RcsDetailViewSharedFile;->getIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -167,8 +164,6 @@
 
 .method static addMimeType(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/samsung/contacts/model/rcs/RcsDetailViewSharedFile;->sMimeType:Ljava/util/HashMap;
 
@@ -179,7 +174,6 @@
 
 .method private getExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x2e
 
@@ -212,7 +206,6 @@
 
 .method private getIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -243,7 +236,6 @@
 
 .method private getMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/model/rcs/RcsDetailViewSharedFile;->getExtension(Ljava/lang/String;)Ljava/lang/String;
 
@@ -304,8 +296,6 @@
 # virtual methods
 .method public SetDataAndAction(Landroid/view/View;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

@@ -26,8 +26,6 @@
 
 .method static synthetic access$000(Landroid/database/Cursor;Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/mms/spam/SpamUtils;->extractSpamMessageInfo(Landroid/database/Cursor;Ljava/lang/String;)Landroid/content/ContentValues;
 
@@ -38,9 +36,6 @@
 
 .method private static extractSpamMessageInfo(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 8
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -96,8 +91,6 @@
 
 .method private static extractSpamMessageInfo(Landroid/database/Cursor;Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "sms"
 
@@ -137,7 +130,6 @@
 
 .method private static extractSpamMmsInfo(Landroid/database/Cursor;)Landroid/content/ContentValues;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -167,7 +159,6 @@
 
 .method private static extractSpamSmsInfo(Landroid/database/Cursor;)Landroid/content/ContentValues;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -205,9 +196,6 @@
 
 .method public static restoreSpamMessage(JLjava/lang/String;Landroid/content/ContentValues;)Z
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const-string v0, "sms"
 
@@ -247,8 +235,6 @@
 
 .method public static restoreSpamMms(JLandroid/content/ContentValues;)Z
     .locals 12
-    .param p0    # J
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v10, 0x0
 
@@ -360,8 +346,6 @@
 
 .method public static restoreSpamSms(JLandroid/content/ContentValues;)Z
     .locals 12
-    .param p0    # J
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v8, 0x1
 

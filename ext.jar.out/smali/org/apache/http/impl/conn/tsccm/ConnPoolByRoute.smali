@@ -50,8 +50,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ClientConnectionOperator;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;-><init>()V
 
@@ -115,8 +113,6 @@
 # virtual methods
 .method protected createEntry(Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;Lorg/apache/http/conn/ClientConnectionOperator;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
     .locals 4
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
-    .param p2    # Lorg/apache/http/conn/ClientConnectionOperator;
 
     iget-object v1, p0, Lorg/apache/http/impl/conn/tsccm/ConnPoolByRoute;->log:Lorg/apache/commons/logging/Log;
 
@@ -331,7 +327,6 @@
 
 .method protected deleteEntry(Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
 
     invoke-virtual {p1}, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;->getPlannedRoute()Lorg/apache/http/conn/routing/HttpRoute;
 
@@ -512,10 +507,6 @@
 
 .method public freeEntry(Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;ZJLjava/util/concurrent/TimeUnit;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
-    .param p2    # Z
-    .param p3    # J
-    .param p5    # Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {p1}, Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;->getPlannedRoute()Lorg/apache/http/conn/routing/HttpRoute;
 
@@ -665,7 +656,6 @@
 
 .method public getConnectionsInPool(Lorg/apache/http/conn/routing/HttpRoute;)I
     .locals 3
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     const/4 v1, 0x0
 
@@ -707,11 +697,6 @@
 
 .method protected getEntryBlocking(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;Lorg/apache/http/impl/conn/tsccm/WaitingThreadAborter;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
     .locals 11
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # J
-    .param p5    # Ljava/util/concurrent/TimeUnit;
-    .param p6    # Lorg/apache/http/impl/conn/tsccm/WaitingThreadAborter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/conn/ConnectionPoolTimeoutException;,
@@ -1161,8 +1146,6 @@
 
 .method protected getFreeEntry(Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;Ljava/lang/Object;)Lorg/apache/http/impl/conn/tsccm/BasicPoolEntry;
     .locals 6
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -1409,8 +1392,6 @@
 
 .method protected getRoutePool(Lorg/apache/http/conn/routing/HttpRoute;Z)Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
     .locals 4
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1464,7 +1445,6 @@
 
 .method protected handleLostEntry(Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 3
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     iget-object v1, p0, Lorg/apache/http/impl/conn/tsccm/AbstractConnPool;->poolLock:Ljava/util/concurrent/locks/Lock;
 
@@ -1518,7 +1498,6 @@
 
 .method protected newRouteSpecificPool(Lorg/apache/http/conn/routing/HttpRoute;)Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     new-instance v0, Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
 
@@ -1535,8 +1514,6 @@
 
 .method protected newWaitingThread(Ljava/util/concurrent/locks/Condition;Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;)Lorg/apache/http/impl/conn/tsccm/WaitingThread;
     .locals 1
-    .param p1    # Ljava/util/concurrent/locks/Condition;
-    .param p2    # Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
 
     new-instance v0, Lorg/apache/http/impl/conn/tsccm/WaitingThread;
 
@@ -1547,7 +1524,6 @@
 
 .method protected notifyWaitingThread(Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/RouteSpecificPool;
 
     const/4 v1, 0x0
 
@@ -1694,8 +1670,6 @@
 
 .method public requestPoolEntry(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/impl/conn/tsccm/PoolEntryRequest;
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lorg/apache/http/impl/conn/tsccm/WaitingThreadAborter;
 

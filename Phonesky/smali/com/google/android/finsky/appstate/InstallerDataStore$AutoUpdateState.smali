@@ -106,7 +106,6 @@
 
 .method public static valueOf(I)Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
     .locals 7
-    .param p0    # I
 
     invoke-static {}, Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;->values()[Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
 
@@ -162,7 +161,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
 

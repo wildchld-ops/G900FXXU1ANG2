@@ -40,9 +40,6 @@
 # virtual methods
 .method public bridge synthetic serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonSerializationContext;
 
     check-cast p1, Lorg/keyczar/interfaces/KeyType;
 
@@ -55,9 +52,6 @@
 
 .method public serialize(Lorg/keyczar/interfaces/KeyType;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
     .locals 2
-    .param p1    # Lorg/keyczar/interfaces/KeyType;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonSerializationContext;
 
     new-instance v0, Lcom/google/gson/JsonPrimitive;
 

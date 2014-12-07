@@ -95,11 +95,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 10
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v8, 0x0
 
@@ -200,7 +195,6 @@
 
 .method private addItem(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList;->mNumOfItem:I
 
@@ -337,9 +331,6 @@
 # virtual methods
 .method public addThumbnail([BII)V
     .locals 15
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -459,7 +450,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList;->mThumbnailCloseButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -601,7 +591,6 @@
 
 .method public setOnThumbnailListCloseListener(Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList$OnThumbnailListCloseListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList$OnThumbnailListCloseListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList;->mOnThumbnailListCloseListener:Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList$OnThumbnailListCloseListener;
 

@@ -79,8 +79,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/Folder;Lcom/android/launcher2/FolderIconView;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/Folder;
-    .param p2    # Lcom/android/launcher2/FolderIconView;
 
     const/4 v2, 0x0
 
@@ -177,7 +175,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/FolderAnimator;)Lcom/android/launcher2/FolderIconView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mIcon:Lcom/android/launcher2/FolderIconView;
 
@@ -186,7 +183,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/FolderAnimator;)Lcom/android/launcher2/AnimationLayer;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mAnimationLayer:Lcom/android/launcher2/AnimationLayer;
 
@@ -195,8 +191,6 @@
 
 .method static synthetic access$1020(Lcom/android/launcher2/FolderAnimator;I)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
-    .param p1    # I
 
     iget v0, p0, Lcom/android/launcher2/FolderAnimator;->mNumCloseAnimsRunning:I
 
@@ -209,7 +203,6 @@
 
 .method static synthetic access$1100(Lcom/android/launcher2/FolderAnimator;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mFolderHoverAnim:Ljava/util/ArrayList;
 
@@ -218,9 +211,6 @@
 
 .method static synthetic access$1200(Lcom/android/launcher2/FolderAnimator;IZ)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/FolderAnimator;->animHoverGroup(IZ)I
 
@@ -231,7 +221,6 @@
 
 .method static synthetic access$1300(Lcom/android/launcher2/FolderAnimator;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mCloseAnims:Ljava/util/ArrayList;
 
@@ -240,7 +229,6 @@
 
 .method static synthetic access$1400(Lcom/android/launcher2/FolderAnimator;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mPostDrawPlate:Ljava/lang/Runnable;
 
@@ -249,7 +237,6 @@
 
 .method static synthetic access$1500(Lcom/android/launcher2/FolderAnimator;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     invoke-direct {p0}, Lcom/android/launcher2/FolderAnimator;->drawPlate()V
 
@@ -258,7 +245,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/FolderAnimator;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mOpenAnimations:Ljava/util/ArrayList;
 
@@ -267,8 +253,6 @@
 
 .method static synthetic access$302(Lcom/android/launcher2/FolderAnimator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/FolderAnimator;->mAnimatingOpen:Z
 
@@ -277,9 +261,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/FolderAnimator;Lcom/android/launcher2/AppIconView;Z)[I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
-    .param p1    # Lcom/android/launcher2/AppIconView;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/FolderAnimator;->getIconRelativeToAnimationLayer(Lcom/android/launcher2/AppIconView;Z)[I
 
@@ -290,7 +271,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/FolderAnimator;)[I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mTempIconPos:[I
 
@@ -299,8 +279,6 @@
 
 .method static synthetic access$502(Lcom/android/launcher2/FolderAnimator;[I)[I
     .locals 0
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/android/launcher2/FolderAnimator;->mTempIconPos:[I
 
@@ -309,8 +287,6 @@
 
 .method static synthetic access$602(Lcom/android/launcher2/FolderAnimator;I)I
     .locals 0
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/FolderAnimator;->mFolderOpenOri:I
 
@@ -319,7 +295,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/FolderAnimator;)Lcom/android/launcher2/Folder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderAnimator;->mFolder:Lcom/android/launcher2/Folder;
 
@@ -328,7 +303,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/FolderAnimator;)[I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     invoke-direct {p0}, Lcom/android/launcher2/FolderAnimator;->getLocationOfFolderIcon()[I
 
@@ -339,7 +313,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/FolderAnimator;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderAnimator;
 
     invoke-direct {p0}, Lcom/android/launcher2/FolderAnimator;->getNewImageView()Landroid/widget/ImageView;
 
@@ -350,8 +323,6 @@
 
 .method private animHoverGroup(IZ)I
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x4
 
@@ -410,8 +381,6 @@
 
 .method private animationNeeded(Landroid/view/View;I)Z
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -500,7 +469,6 @@
 
 .method private buildAnimForItem(Lcom/android/launcher2/BaseItem;)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 9
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v8, 0x1
 
@@ -569,10 +537,6 @@
 
 .method private buildAnimation([ILcom/android/launcher2/AnimationLayer$Anim;I[I)Landroid/animation/ValueAnimator$AnimatorUpdateListener;
     .locals 6
-    .param p1    # [I
-    .param p2    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p3    # I
-    .param p4    # [I
 
     move-object v3, p1
 
@@ -593,12 +557,6 @@
 
 .method private buildCloseAnimation([ILcom/android/launcher2/AnimationLayer$Anim;I[IZZ)Landroid/animation/ValueAnimator$AnimatorUpdateListener;
     .locals 15
-    .param p1    # [I
-    .param p2    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # Z
-    .param p6    # Z
 
     if-eqz p1, :cond_2
 
@@ -987,7 +945,6 @@
 
 .method private drawPlate_(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
@@ -1015,7 +972,6 @@
 
 .method private getAppIconOffset(I)[I
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x1
 
@@ -1157,8 +1113,6 @@
 
 .method private getIconRelativeToAnimationLayer(Lcom/android/launcher2/AppIconView;Z)[I
     .locals 8
-    .param p1    # Lcom/android/launcher2/AppIconView;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -1447,7 +1401,6 @@
 
 .method private startHoveringLocation(I)Lcom/android/launcher2/FolderIconHelper$LocFolder;
     .locals 7
-    .param p1    # I
 
     sget-object v2, Lcom/android/launcher2/FolderIconHelper$LocFolder;->NOMAL:Lcom/android/launcher2/FolderIconHelper$LocFolder;
 
@@ -1560,7 +1513,6 @@
 # virtual methods
 .method FadeInHoverIcon(I)V
     .locals 23
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1903,7 +1855,6 @@
 
 .method animateClose(Lcom/android/launcher2/DragState;)V
     .locals 28
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/4 v1, 0x0
 
@@ -2624,9 +2575,6 @@
 
 .method animateCloseAnimsEnd(Lcom/android/launcher2/DragState;ZZ)V
     .locals 17
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # Z
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -3741,7 +3689,6 @@
 
 .method animatePlate(Z)Z
     .locals 11
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -3922,8 +3869,6 @@
 
 .method bounceItemInIconAt(Lcom/android/launcher2/BaseItem;I)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/FolderAnimator;->buildAnimForItem(Lcom/android/launcher2/BaseItem;)Lcom/android/launcher2/AnimationLayer$Anim;
 
@@ -4265,7 +4210,6 @@
 
 .method cleanupCloseAnims(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/launcher2/FolderAnimator;->mCloseAnims:Ljava/util/ArrayList;
 
@@ -4453,7 +4397,6 @@
 
 .method finishBouncingItem(Lcom/android/launcher2/BaseItem;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v2, 0x0
 
@@ -4655,8 +4598,6 @@
 
 .method setCloseAnimsAlpha(FLcom/android/launcher2/AnimationLayer$Anim;)V
     .locals 4
-    .param p1    # F
-    .param p2    # Lcom/android/launcher2/AnimationLayer$Anim;
 
     iget-object v2, p0, Lcom/android/launcher2/FolderAnimator;->mCloseAnims:Ljava/util/ArrayList;
 
@@ -4707,7 +4648,6 @@
 
 .method public setFolderHoveringEndTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/launcher2/FolderAnimator;->mFolderHoveringEndTime:J
 
@@ -4797,7 +4737,6 @@
 
 .method updateToNewIcon(Lcom/android/launcher2/FolderIconView;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/FolderIconView;
 
     iput-object p1, p0, Lcom/android/launcher2/FolderAnimator;->mIcon:Lcom/android/launcher2/FolderIconView;
 

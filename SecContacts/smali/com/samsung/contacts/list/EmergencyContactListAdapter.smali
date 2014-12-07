@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -31,7 +30,6 @@
 
 .method private configureProjection(Landroid/content/CursorLoader;)V
     .locals 3
-    .param p1    # Landroid/content/CursorLoader;
 
     invoke-virtual {p1}, Landroid/content/CursorLoader;->getProjection()[Ljava/lang/String;
 
@@ -75,7 +73,6 @@
 
 .method private configureSelection(Landroid/content/CursorLoader;)V
     .locals 2
-    .param p1    # Landroid/content/CursorLoader;
 
     invoke-virtual {p1}, Landroid/content/CursorLoader;->getSelection()Ljava/lang/String;
 
@@ -130,8 +127,6 @@
 # virtual methods
 .method public changeCursor(ILandroid/database/Cursor;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/common/list/ContactListAdapter;->changeCursor(ILandroid/database/Cursor;)V
 
@@ -191,8 +186,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 2
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->isSearchMode()Z
 
@@ -240,7 +233,6 @@
 
 .method public getEmergencyContactId(I)J
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/common/widget/CompositeCursorAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -292,7 +284,6 @@
 
 .method public isEmergencyContact(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/contacts/list/EmergencyContactListAdapter;->mEmergencyContactsCount:I
 
@@ -311,8 +302,6 @@
 
 .method public setCustomIndexer(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/contacts/common/list/IndexerListAdapter;->getIndexer()Landroid/widget/SectionIndexer;
 
@@ -330,7 +319,6 @@
 
 .method public setEmergencyContactsCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/list/EmergencyContactListAdapter;->mEmergencyContactsCount:I
 
@@ -339,7 +327,6 @@
 
 .method public setFavoritesCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/list/EmergencyContactListAdapter;->mFavoritesCount:I
 
@@ -348,7 +335,6 @@
 
 .method public setFrequentsCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/list/EmergencyContactListAdapter;->mFrequentsCount:I
 

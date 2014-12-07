@@ -291,7 +291,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/sec/enterprise/knox/seams/ISEAMS$Stub;-><init>()V
 
@@ -362,7 +361,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/SEAMService;->bootCompleted:Z
 
@@ -371,7 +369,6 @@
 
 .method private declared-synchronized broadcastStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -451,10 +448,6 @@
 
 .method private checkSEAMSPermission(IILjava/lang/String;Z)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v3, 0x0
 
@@ -538,9 +531,6 @@
 
 .method private checkSEAMSPermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -608,10 +598,6 @@
 
 .method private constructLabelEntry(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v1, 0x2c
 
@@ -654,8 +640,6 @@
 
 .method private copyFiles(Ljava/lang/String;[B)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     const/4 v4, 0x0
 
@@ -886,7 +870,6 @@
 
 .method private encodeBase16([B)Ljava/lang/String;
     .locals 6
-    .param p1    # [B
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -941,11 +924,6 @@
 
 .method private getAVCDetails(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Scanner;Ljava/lang/StringBuilder;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/util/Scanner;
-    .param p5    # Ljava/lang/StringBuilder;
 
     :goto_0
     :try_start_0
@@ -1147,8 +1125,6 @@
 
 .method private static getInstance(ILandroid/content/Context;)Lcom/android/server/SEAMSContainer;
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/SEAMService;->instance:[Lcom/android/server/SEAMSContainer;
 
@@ -1226,7 +1202,6 @@
 
 .method private getMdmProperties(I)I
     .locals 3
-    .param p1    # I
 
     const-string v1, "persist.sys.mdm.auto"
 
@@ -1255,7 +1230,6 @@
 
 .method private getOtherContainerStrings(Ljava/lang/String;)[Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x3
 
@@ -1450,7 +1424,6 @@
 
 .method private isPersona(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x64
 
@@ -1473,12 +1446,6 @@
 
 .method private processAVCLine(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/util/Scanner;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/StringBuilder;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/util/Scanner;
 
     const-string v0, "all"
 
@@ -1579,11 +1546,6 @@
 
 .method private processAllowedLine(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/StringBuilder;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const-string v0, "all"
 
@@ -1696,12 +1658,6 @@
 
 .method private static processDeniedLine(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/util/Scanner;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuilder;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/util/Scanner;
 
     const-string v0, "all"
 
@@ -1903,7 +1859,6 @@
 
 .method private relabelAppDir(Landroid/content/pm/ApplicationInfo;)I
     .locals 6
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     const/4 v1, 0x0
 
@@ -1939,8 +1894,6 @@
 
 .method private relabelDataLocked(ILjava/lang/Object;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0}, Lcom/android/server/SEAMService;->createDrsHandlerThreadIfNeeded()V
 
@@ -2206,8 +2159,6 @@
 
 .method private setMdmPropertiesLocked(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "persist.sys.mdm.auto"
 
@@ -2265,7 +2216,6 @@
 
 .method private setPolicyUpdateProperty(Z)I
     .locals 5
-    .param p1    # Z
 
     const/4 v1, -0x1
 
@@ -2459,10 +2409,6 @@
 
 .method public addAppToContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const-class v13, Lcom/android/server/SEAMService$2Local;
 
@@ -2797,7 +2743,6 @@
 
 .method public getAMSLog(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v10, 0x0
 
@@ -2958,7 +2903,6 @@
 
 .method public getAMSLogLevel(Landroid/app/enterprise/ContextInfo;)I
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-class v4, Lcom/android/server/SEAMService$6Local;
 
@@ -3048,7 +2992,6 @@
 
 .method public getAMSMode(Landroid/app/enterprise/ContextInfo;)I
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x1
 
@@ -3144,7 +3087,6 @@
 
 .method public getAVCLog(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -3391,9 +3333,6 @@
 
 .method public getDataType(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -3524,9 +3463,6 @@
 
 .method public getDomain(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -3657,8 +3593,6 @@
 
 .method public getPackageNamesFromSEContainer(II)[Ljava/lang/String;
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -3779,7 +3713,6 @@
 
 .method public getSEAMSLog(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v8, 0x0
 
@@ -4108,8 +4041,6 @@
 
 .method public getSEContainerIDsFromPackageName(Ljava/lang/String;I)[I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -4233,7 +4164,6 @@
 
 .method public getSELinuxMode(Landroid/app/enterprise/ContextInfo;)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-class v2, Lcom/android/server/SEAMService$18Local;
 
@@ -4296,7 +4226,6 @@
 
 .method public getSepolicyVersion(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-class v3, Lcom/android/server/SEAMService$19Local;
 
@@ -4356,7 +4285,6 @@
 
 .method public getSignatureFromCertificate([B)Ljava/lang/String;
     .locals 10
-    .param p1    # [B
 
     const/4 v6, 0x0
 
@@ -4451,7 +4379,6 @@
 
 .method public getSignatureFromPackage(Ljava/lang/String;)Ljava/lang/String;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const-class v10, Lcom/android/server/SEAMService$21Local;
 
@@ -4782,10 +4709,6 @@
 
 .method public isAuthorized(IILjava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4828,7 +4751,6 @@
 
 .method public isSEAndroidLogDumpStateInclude(Landroid/app/enterprise/ContextInfo;)I
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x1
 
@@ -4919,7 +4841,6 @@
 
 .method public isSEPolicyAutoUpdateChangeAllowed(Landroid/app/enterprise/ContextInfo;)I
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -4955,7 +4876,6 @@
 
 .method public isSEPolicyAutoUpdateEnabled(Landroid/app/enterprise/ContextInfo;)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -5045,7 +4965,6 @@
 
 .method public loadContainerSetting(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -5145,7 +5064,6 @@
 
 .method public relabelAppDir(Ljava/lang/String;)I
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const-class v11, Lcom/android/server/SEAMService$23Local;
 
@@ -5309,7 +5227,6 @@
 
 .method public relabelData(Landroid/app/enterprise/ContextInfo;)I
     .locals 24
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-class v20, Lcom/android/server/SEAMService$24Local;
 
@@ -5640,10 +5557,6 @@
 
 .method public removeAppFromContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const-class v13, Lcom/android/server/SEAMService$25Local;
 
@@ -5803,7 +5716,6 @@
 
 .method public removeSEContainer(I)I
     .locals 7
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -5873,8 +5785,6 @@
 
 .method public setAMSLogLevel(Landroid/app/enterprise/ContextInfo;I)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -5945,8 +5855,6 @@
 
 .method public setSEAndroidLogDumpStateInclude(Landroid/app/enterprise/ContextInfo;Z)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 

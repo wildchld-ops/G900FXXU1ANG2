@@ -77,8 +77,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;->mSelectedCount:I
 
@@ -87,8 +85,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;->mTotalCount:I
 
@@ -214,7 +210,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/android/contacts/common/list/ContactEntryListFragment;
 
@@ -238,7 +233,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -253,7 +247,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -373,7 +366,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -422,7 +414,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -468,7 +459,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;->mMenuDone:Landroid/view/MenuItem;
 
@@ -483,7 +473,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -510,7 +499,6 @@
 
 .method protected setButtonClickable(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;->mDoneButtonClickable:Z
 

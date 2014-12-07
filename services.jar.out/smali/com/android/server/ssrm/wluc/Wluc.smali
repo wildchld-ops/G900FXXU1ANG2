@@ -34,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,8 +56,6 @@
 
 .method protected static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/ssrm/SSRMUtil;->logOnEng(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -248,7 +244,6 @@
 
 .method public onCheckUpdateSchedule(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     sget-object v2, Lcom/android/server/ssrm/wluc/Wluc;->TAG:Ljava/lang/String;
@@ -286,7 +281,6 @@
 
 .method public onMsgReceivedFromWlucThread(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const/16 v6, 0x63
 
@@ -525,7 +519,6 @@
 
 .method public onUpdateCheck(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     sget-object v2, Lcom/android/server/ssrm/wluc/Wluc;->TAG:Ljava/lang/String;
@@ -678,7 +671,6 @@
 
 .method public updateWlucDatabase(I)V
     .locals 8
-    .param p1    # I
 
     sget-object v4, Lcom/android/server/ssrm/wluc/Wluc;->TAG:Ljava/lang/String;
 

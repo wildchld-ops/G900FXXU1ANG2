@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/List;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,9 +52,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Lcom/samsung/contacts/detail/ContactDetailDialogList$DialogData;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/samsung/contacts/detail/ContactDetailDialogList$DialogData;
 
     iget-object v2, p3, Lcom/samsung/contacts/detail/ContactDetailDialogList$DialogData;->type:Ljava/lang/String;
 
@@ -105,9 +100,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -142,8 +134,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactDetailDialogListAdapter;->mInflater:Landroid/view/LayoutInflater;
 

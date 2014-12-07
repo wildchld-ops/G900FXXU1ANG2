@@ -32,10 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/res/Resources;Lcom/android/dialer/calllog/CallTypeHelper;Lcom/android/dialer/calllog/PhoneNumberHelper;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lcom/android/dialer/calllog/CallTypeHelper;
-    .param p4    # Lcom/android/dialer/calllog/PhoneNumberHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,8 +100,6 @@
 
 .method private adjustListItemLayoutBy7FontSize(Landroid/content/Context;Lcom/android/dialer/PhoneCallDetailsViews;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/PhoneCallDetailsViews;
 
     const/16 v3, 0x140
 
@@ -210,7 +204,6 @@
 # virtual methods
 .method public checkFontSize(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -231,7 +224,6 @@
 
 .method public setCurrentTimeForTest(J)V
     .locals 1
-    .param p1    # J
 
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -244,11 +236,6 @@
 
 .method public setPhoneCallDetails(Landroid/content/Context;Lcom/android/dialer/PhoneCallDetailsViews;Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;ZI)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/PhoneCallDetailsViews;
-    .param p3    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p4    # Z
-    .param p5    # I
 
     iget-object v0, p0, Lcom/android/dialer/PhoneCallDetailsHelper;->mPhoneCallDetailsHelperImpl:Lcom/samsung/dialer/impl/PhoneCallDetailsHelperImpl;
 
@@ -275,7 +262,6 @@
 
 .method public setScrollState(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/PhoneCallDetailsHelper;->mPhoneNumberHelper:Lcom/android/dialer/calllog/PhoneNumberHelper;
 

@@ -18,9 +18,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/receivers/RemoveAssetReceiver;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/RemoveAssetReceiver;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/receivers/RemoveAssetReceiver;->finishOnReceive(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -29,8 +26,6 @@
 
 .method private finishOnReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v4, "asset_package"
 
@@ -96,7 +91,6 @@
 
 .method public static initialize(Lcom/google/android/finsky/utils/Notifier;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/Notifier;
 
     sput-object p0, Lcom/google/android/finsky/receivers/RemoveAssetReceiver;->sNotificationHelper:Lcom/google/android/finsky/utils/Notifier;
 
@@ -105,10 +99,6 @@
 
 .method private notifyRemovingKnownApp(Ljava/lang/String;Ljava/lang/String;ZLcom/google/android/finsky/appstate/AppStates$AppState;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     iget-object v0, p4, Lcom/google/android/finsky/appstate/AppStates$AppState;->packageManagerState:Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;
 
@@ -134,9 +124,6 @@
 
 .method private removePackage(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v8, "Removing package \'%s\'. Malicious=\'%s\'"
 
@@ -243,8 +230,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

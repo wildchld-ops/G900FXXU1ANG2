@@ -99,7 +99,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;)Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment$Listener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->mListener:Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment$Listener;
 
@@ -108,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->mNameEditText:Landroid/widget/EditText;
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->mContext:Landroid/content/Context;
 
@@ -134,7 +131,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->mRawContactId:Ljava/lang/String;
 
@@ -143,8 +139,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;Landroid/database/Cursor;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->bindData(Landroid/database/Cursor;)V
 
@@ -153,7 +147,6 @@
 
 .method private bindData(Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v2, 0x1
 
@@ -250,7 +243,6 @@
 
 .method private setupEditorView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const v6, 0x7f0e04a3
 
@@ -463,7 +455,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -474,9 +465,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0300e6
 
@@ -1000,7 +988,6 @@
 
 .method public setListener(Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->mListener:Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment$Listener;
 
@@ -1009,7 +996,6 @@
 
 .method public setNoDetail(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->mNoDetail:Z
 
@@ -1018,8 +1004,6 @@
 
 .method public setProfileInfo(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorFragment;->mRawContactId:Ljava/lang/String;
 

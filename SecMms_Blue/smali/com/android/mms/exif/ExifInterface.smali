@@ -1496,7 +1496,6 @@
 
 .method protected static closeSilently(Ljava/io/Closeable;)V
     .locals 1
-    .param p0    # Ljava/io/Closeable;
 
     if-eqz p0, :cond_0
 
@@ -1517,8 +1516,6 @@
 
 .method public static convertLatOrLongToDouble([Lcom/android/mms/exif/Rational;Ljava/lang/String;)D
     .locals 13
-    .param p0    # [Lcom/android/mms/exif/Rational;
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -1593,8 +1590,6 @@
 
 .method public static defineTag(IS)I
     .locals 2
-    .param p0    # I
-    .param p1    # S
 
     const v0, 0xffff
 
@@ -1609,8 +1604,6 @@
 
 .method private doExifStreamIO(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .locals 5
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1646,7 +1639,6 @@
 
 .method protected static getAllowedIfdFlagsFromInfo(I)I
     .locals 1
-    .param p0    # I
 
     ushr-int/lit8 v0, p0, 0x18
 
@@ -1655,7 +1647,6 @@
 
 .method protected static getAllowedIfdsFromInfo(I)[I
     .locals 10
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/mms/exif/ExifInterface;->getAllowedIfdFlagsFromInfo(I)I
 
@@ -1750,7 +1741,6 @@
 
 .method protected static getComponentCountFromInfo(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0xffff
 
@@ -1761,7 +1751,6 @@
 
 .method protected static getFlagsFromAllowedIfds([I)I
     .locals 8
-    .param p0    # [I
 
     if-eqz p0, :cond_0
 
@@ -1823,7 +1812,6 @@
 
 .method public static getOrientationValueForRotation(I)S
     .locals 1
-    .param p0    # I
 
     rem-int/lit16 p0, p0, 0x168
 
@@ -1867,7 +1855,6 @@
 
 .method public static getRotationForOrientationValue(S)I
     .locals 1
-    .param p0    # S
 
     const/4 v0, 0x0
 
@@ -1907,7 +1894,6 @@
 
 .method public static getTrueIfd(I)I
     .locals 1
-    .param p0    # I
 
     ushr-int/lit8 v0, p0, 0x10
 
@@ -1916,7 +1902,6 @@
 
 .method public static getTrueTagKey(I)S
     .locals 1
-    .param p0    # I
 
     int-to-short v0, p0
 
@@ -1925,7 +1910,6 @@
 
 .method protected static getTypeFromInfo(I)S
     .locals 1
-    .param p0    # I
 
     shr-int/lit8 v0, p0, 0x10
 
@@ -3468,8 +3452,6 @@
 
 .method protected static isIfdAllowed(II)Z
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -3514,7 +3496,6 @@
 
 .method protected static isOffsetTag(S)Z
     .locals 2
-    .param p0    # S
 
     sget-object v0, Lcom/android/mms/exif/ExifInterface;->sOffsetTags:Ljava/util/HashSet;
 
@@ -3531,7 +3512,6 @@
 
 .method private static toExifLatLong(D)[Lcom/android/mms/exif/Rational;
     .locals 10
-    .param p0    # D
 
     const-wide/16 v8, 0x1
 
@@ -3604,9 +3584,6 @@
 # virtual methods
 .method public addDateTimeStampTag(IJLjava/util/TimeZone;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/util/TimeZone;
 
     const/4 v1, 0x0
 
@@ -3657,7 +3634,6 @@
 
 .method public addGpsDateTimeStampTag(J)Z
     .locals 11
-    .param p1    # J
 
     const/4 v2, 0x1
 
@@ -3765,8 +3741,6 @@
 
 .method public addGpsTags(DD)Z
     .locals 8
-    .param p1    # D
-    .param p3    # D
 
     const-wide/16 v6, 0x0
 
@@ -3856,9 +3830,6 @@
 
 .method public buildTag(IILjava/lang/Object;)Lcom/android/mms/exif/ExifTag;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     const/4 v7, 0x0
 
@@ -3934,8 +3905,6 @@
 
 .method public buildTag(ILjava/lang/Object;)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {p1}, Lcom/android/mms/exif/ExifInterface;->getTrueIfd(I)I
 
@@ -3950,7 +3919,6 @@
 
 .method protected buildUninitializedTag(I)Lcom/android/mms/exif/ExifTag;
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifInterface;->getTagInfo()Landroid/util/SparseIntArray;
 
@@ -4017,7 +3985,6 @@
 
 .method public deleteTag(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4030,8 +3997,6 @@
 
 .method public deleteTag(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifInterface;->mData:Lcom/android/mms/exif/ExifData;
 
@@ -4046,7 +4011,6 @@
 
 .method public forceRewriteExif(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -4065,7 +4029,6 @@
 
 .method public forceRewriteExif(Ljava/lang/String;Ljava/util/Collection;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4199,8 +4162,6 @@
 
 .method public getActualTagCount(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -4244,7 +4205,6 @@
 
 .method public getDefinedTagCount(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifInterface;->getTagInfo()Landroid/util/SparseIntArray;
 
@@ -4271,7 +4231,6 @@
 
 .method public getDefinedTagDefaultIfd(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifInterface;->getTagInfo()Landroid/util/SparseIntArray;
 
@@ -4298,7 +4257,6 @@
 
 .method public getDefinedTagType(I)S
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifInterface;->getTagInfo()Landroid/util/SparseIntArray;
 
@@ -4325,7 +4283,6 @@
 
 .method public getExifWriterStream(Ljava/io/OutputStream;)Ljava/io/OutputStream;
     .locals 3
-    .param p1    # Ljava/io/OutputStream;
 
     if-nez p1, :cond_0
 
@@ -4351,7 +4308,6 @@
 
 .method public getExifWriterStream(Ljava/lang/String;)Ljava/io/OutputStream;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -4469,7 +4425,6 @@
 
 .method public getTag(I)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4484,8 +4439,6 @@
 
 .method public getTag(II)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p2}, Lcom/android/mms/exif/ExifTag;->isValidIfd(I)Z
 
@@ -4514,7 +4467,6 @@
 
 .method public getTagByteValue(I)Ljava/lang/Byte;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4529,8 +4481,6 @@
 
 .method public getTagByteValue(II)Ljava/lang/Byte;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTagByteValues(II)[B
 
@@ -4562,7 +4512,6 @@
 
 .method public getTagByteValues(I)[B
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4577,8 +4526,6 @@
 
 .method public getTagByteValues(II)[B
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -4601,8 +4548,6 @@
 
 .method protected getTagDefinition(SI)I
     .locals 2
-    .param p1    # S
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifInterface;->getTagInfo()Landroid/util/SparseIntArray;
 
@@ -4621,7 +4566,6 @@
 
 .method protected getTagDefinitionForTag(Lcom/android/mms/exif/ExifTag;)I
     .locals 4
-    .param p1    # Lcom/android/mms/exif/ExifTag;
 
     invoke-virtual {p1}, Lcom/android/mms/exif/ExifTag;->getDataType()S
 
@@ -4648,10 +4592,6 @@
 
 .method protected getTagDefinitionForTag(SSII)I
     .locals 17
-    .param p1    # S
-    .param p2    # S
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual/range {p0 .. p1}, Lcom/android/mms/exif/ExifInterface;->getTagDefinitionsForTagId(S)[I
 
@@ -4753,7 +4693,6 @@
 
 .method protected getTagDefinitionsForTagId(S)[I
     .locals 11
-    .param p1    # S
 
     invoke-static {}, Lcom/android/mms/exif/IfdData;->getIfds()[I
 
@@ -4849,7 +4788,6 @@
 
 .method public getTagIntValue(I)Ljava/lang/Integer;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4864,8 +4802,6 @@
 
 .method public getTagIntValue(II)Ljava/lang/Integer;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTagIntValues(II)[I
 
@@ -4897,7 +4833,6 @@
 
 .method public getTagIntValues(I)[I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4912,8 +4847,6 @@
 
 .method public getTagIntValues(II)[I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -4936,7 +4869,6 @@
 
 .method public getTagLongValue(I)Ljava/lang/Long;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4951,8 +4883,6 @@
 
 .method public getTagLongValue(II)Ljava/lang/Long;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTagLongValues(II)[J
 
@@ -4984,7 +4914,6 @@
 
 .method public getTagLongValues(I)[J
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -4999,8 +4928,6 @@
 
 .method public getTagLongValues(II)[J
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -5023,7 +4950,6 @@
 
 .method public getTagRationalValue(I)Lcom/android/mms/exif/Rational;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -5038,8 +4964,6 @@
 
 .method public getTagRationalValue(II)Lcom/android/mms/exif/Rational;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTagRationalValues(II)[Lcom/android/mms/exif/Rational;
 
@@ -5071,7 +4995,6 @@
 
 .method public getTagRationalValues(I)[Lcom/android/mms/exif/Rational;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -5086,8 +5009,6 @@
 
 .method public getTagRationalValues(II)[Lcom/android/mms/exif/Rational;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -5110,7 +5031,6 @@
 
 .method public getTagStringValue(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -5125,8 +5045,6 @@
 
 .method public getTagStringValue(II)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -5149,7 +5067,6 @@
 
 .method public getTagValue(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -5164,8 +5081,6 @@
 
 .method public getTagValue(II)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -5188,7 +5103,6 @@
 
 .method public getTagsForIfdId(I)Ljava/util/List;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -5210,7 +5124,6 @@
 
 .method public getTagsForTagId(S)Ljava/util/List;
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(S)",
@@ -5346,7 +5259,6 @@
 
 .method public isTagCountDefined(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -5390,7 +5302,6 @@
 
 .method public readExif(Ljava/io/InputStream;)V
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -5455,7 +5366,6 @@
 
 .method public readExif(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -5514,7 +5424,6 @@
 
 .method public readExif([B)V
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -5544,7 +5453,6 @@
 
 .method public removeTagDefinition(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifInterface;->getTagInfo()Landroid/util/SparseIntArray;
 
@@ -5567,7 +5475,6 @@
 
 .method public rewriteExif(Ljava/lang/String;Ljava/util/Collection;)Z
     .locals 19
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5767,7 +5674,6 @@
 
 .method public rewriteExif(Ljava/nio/ByteBuffer;Ljava/util/Collection;)Z
     .locals 8
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5866,7 +5772,6 @@
 
 .method public setCompressedThumbnail(Landroid/graphics/Bitmap;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -5901,7 +5806,6 @@
 
 .method public setCompressedThumbnail([B)Z
     .locals 1
-    .param p1    # [B
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifInterface;->mData:Lcom/android/mms/exif/ExifData;
 
@@ -5937,7 +5841,6 @@
 
 .method public setTag(Lcom/android/mms/exif/ExifTag;)Lcom/android/mms/exif/ExifTag;
     .locals 1
-    .param p1    # Lcom/android/mms/exif/ExifTag;
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifInterface;->mData:Lcom/android/mms/exif/ExifData;
 
@@ -5950,11 +5853,6 @@
 
 .method public setTagDefinition(SISS[I)I
     .locals 17
-    .param p1    # S
-    .param p2    # I
-    .param p3    # S
-    .param p4    # S
-    .param p5    # [I
 
     sget-object v14, Lcom/android/mms/exif/ExifInterface;->sBannedDefines:Ljava/util/HashSet;
 
@@ -6117,9 +6015,6 @@
 
 .method public setTagValue(IILjava/lang/Object;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/exif/ExifInterface;->getTag(II)Lcom/android/mms/exif/ExifTag;
 
@@ -6142,8 +6037,6 @@
 
 .method public setTagValue(ILjava/lang/Object;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/exif/ExifInterface;->getDefinedTagDefaultIfd(I)I
 
@@ -6195,8 +6088,6 @@
 
 .method public writeExif(Landroid/graphics/Bitmap;Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6234,8 +6125,6 @@
 
 .method public writeExif(Landroid/graphics/Bitmap;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -6288,8 +6177,6 @@
 
 .method public writeExif(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6323,8 +6210,6 @@
 
 .method public writeExif(Ljava/io/InputStream;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -6373,8 +6258,6 @@
 
 .method public writeExif(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -6432,8 +6315,6 @@
 
 .method public writeExif([BLjava/io/OutputStream;)V
     .locals 3
-    .param p1    # [B
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6471,8 +6352,6 @@
 
 .method public writeExif([BLjava/lang/String;)V
     .locals 4
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,

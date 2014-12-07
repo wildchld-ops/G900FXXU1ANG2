@@ -84,8 +84,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;Lcom/google/android/finsky/protos/CommonDevice$BillingProfile;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$BillingProfile;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->handleSuccess(Lcom/google/android/finsky/protos/CommonDevice$BillingProfile;)V
 
@@ -94,7 +92,6 @@
 
 .method static synthetic access$1100(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->handleError()V
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$1200(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     iget v0, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mLastCarrierBillingStateInstance:I
 
@@ -112,8 +108,6 @@
 
 .method static synthetic access$1202(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mLastCarrierBillingStateInstance:I
 
@@ -122,7 +116,6 @@
 
 .method static synthetic access$1300(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)Lcom/google/android/finsky/billing/ProgressDialogFragment;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mProgressFragment:Lcom/google/android/finsky/billing/ProgressDialogFragment;
 
@@ -131,8 +124,6 @@
 
 .method static synthetic access$1302(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;Lcom/google/android/finsky/billing/ProgressDialogFragment;)Lcom/google/android/finsky/billing/ProgressDialogFragment;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p1    # Lcom/google/android/finsky/billing/ProgressDialogFragment;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mProgressFragment:Lcom/google/android/finsky/billing/ProgressDialogFragment;
 
@@ -141,7 +132,6 @@
 
 .method static synthetic access$1400(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)Lcom/google/android/finsky/billing/lightpurchase/billingprofile/Dcb2ProvisioningSidecar;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mDcb2ProvisioningSidecar:Lcom/google/android/finsky/billing/lightpurchase/billingprofile/Dcb2ProvisioningSidecar;
 
@@ -150,7 +140,6 @@
 
 .method static synthetic access$1500(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->addDcb2()V
 
@@ -159,8 +148,6 @@
 
 .method static synthetic access$1600(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->onDcbError(Ljava/lang/String;)V
 
@@ -169,7 +156,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)Lcom/google/android/finsky/billing/BillingProfileBaseFragment$BillingProfileListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mBillingProfileListener:Lcom/google/android/finsky/billing/BillingProfileBaseFragment$BillingProfileListener;
 
@@ -178,7 +164,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)Lcom/google/android/finsky/billing/lightpurchase/billingprofile/BillingProfileSidecar;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mBillingProfileSidecar:Lcom/google/android/finsky/billing/lightpurchase/billingprofile/BillingProfileSidecar;
 
@@ -187,7 +172,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->addCreditCard()V
 
@@ -196,7 +180,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->redeemCheckoutCode()V
 
@@ -205,8 +188,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;Lcom/google/android/finsky/protos/CommonDevice$TopupInfo;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$TopupInfo;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->topup(Lcom/google/android/finsky/protos/CommonDevice$TopupInfo;)V
 
@@ -215,8 +196,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->addDcb3(Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;)V
 
@@ -225,7 +204,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->ensureProvisionedAndAddDcb2()V
 
@@ -234,7 +212,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
 
     iget v0, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mLastBillingProfileStateInstance:I
 
@@ -243,8 +220,6 @@
 
 .method static synthetic access$902(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mLastBillingProfileStateInstance:I
 
@@ -289,7 +264,6 @@
 
 .method private addDcb3(Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mAccount:Landroid/accounts/Account;
 
@@ -308,7 +282,6 @@
 
 .method private billingProfileOptionToActionEntry(Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;)Lcom/google/android/finsky/billing/BillingProfileBaseFragment$ActionEntry;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;
 
     iget v0, p1, Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;->type:I
 
@@ -495,7 +468,6 @@
 
 .method private getDcbAction(Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;)Lcom/google/android/finsky/billing/BillingProfileBaseFragment$ActionEntry;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->isDcb3SetupOption(Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;)Z
 
@@ -613,7 +585,6 @@
 
 .method private handleSuccess(Lcom/google/android/finsky/protos/CommonDevice$BillingProfile;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$BillingProfile;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mProfile:Lcom/google/android/finsky/protos/CommonDevice$BillingProfile;
 
@@ -628,7 +599,6 @@
 
 .method private isDcb3SetupOption(Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;)Z
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/CommonDevice$BillingProfileOption;->carrierBillingInstrumentStatus:Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;
 
@@ -655,7 +625,6 @@
 
 .method private onDcbError(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->renderProfile()V
 
@@ -738,7 +707,6 @@
 
 .method private topup(Lcom/google/android/finsky/protos/CommonDevice$TopupInfo;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$TopupInfo;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->mAccount:Landroid/accounts/Account;
 
@@ -759,7 +727,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const-string v0, "Not using tree impressions."
 
@@ -810,9 +777,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, -0x1
 
@@ -918,7 +882,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, -0x1
 
@@ -1023,8 +986,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x5
 
@@ -1059,8 +1020,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x5
 
@@ -1103,7 +1062,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1231,8 +1189,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/support/v4/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -1435,7 +1391,6 @@
 
 .method protected shouldRender([Lcom/google/android/finsky/protos/CommonDevice$Instrument;)Z
     .locals 1
-    .param p1    # [Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
     const/4 v0, 0x1
 

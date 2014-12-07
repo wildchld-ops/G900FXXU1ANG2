@@ -33,9 +33,6 @@
 # virtual methods
 .method public onRefreshCarrierInfo(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 
@@ -85,8 +82,6 @@
 
 .method public onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;I)V
     .locals 4
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText$1;->this$0:Lcom/android/keyguard/MSimCarrierText;
 

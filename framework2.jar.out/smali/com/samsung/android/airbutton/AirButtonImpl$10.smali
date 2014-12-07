@@ -36,9 +36,6 @@
 # virtual methods
 .method public onItemSelected(Landroid/view/View;ILjava/lang/Object;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     const/high16 v5, 0x14000000
 

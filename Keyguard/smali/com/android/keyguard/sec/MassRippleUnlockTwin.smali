@@ -97,7 +97,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -246,7 +245,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/MassRippleUnlockTwin;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/MassRippleUnlockTwin;
 
     iget v0, p0, Lcom/android/keyguard/sec/MassRippleUnlockTwin;->soundNum:I
 
@@ -255,7 +253,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/MassRippleUnlockTwin;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/MassRippleUnlockTwin;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/MassRippleUnlockTwin;->isSystemSoundChecked:Z
 
@@ -264,7 +261,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/MassRippleUnlockTwin;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/MassRippleUnlockTwin;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/MassRippleUnlockTwin;->mSoundPool:Landroid/media/SoundPool;
 
@@ -273,7 +269,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/MassRippleUnlockTwin;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/MassRippleUnlockTwin;
 
     iget v0, p0, Lcom/android/keyguard/sec/MassRippleUnlockTwin;->soundTime:I
 
@@ -388,7 +383,6 @@
 
 .method private playDragSound(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -440,7 +434,6 @@
 
 .method private playSound(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -630,8 +623,6 @@
 
 .method public getCircleSize(IZ)F
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/high16 v2, 0x43910000
 
@@ -672,8 +663,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v12, 0x0
 
@@ -1112,8 +1101,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1122,8 +1109,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -1134,8 +1119,6 @@
 
 .method public moveToDistanceIs20percent(FF)Z
     .locals 16
-    .param p1    # F
-    .param p2    # F
 
     move-object/from16 v0, p0
 
@@ -1393,7 +1376,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -1507,10 +1489,6 @@
 
 .method public rippeDown(FFIZ)V
     .locals 15
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
-    .param p4    # Z
 
     iget v2, p0, Lcom/android/keyguard/sec/MassRippleUnlockTwin;->mMovingRippleCount:I
 
@@ -1852,7 +1830,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -2001,8 +1978,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 6
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v5, 0x1
 

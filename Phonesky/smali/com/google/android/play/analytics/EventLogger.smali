@@ -112,16 +112,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/play/analytics/EventLogger$LogSource;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Lcom/google/android/play/analytics/EventLogger$Configuration;Landroid/accounts/Account;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/play/analytics/EventLogger$LogSource;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Lcom/google/android/play/analytics/EventLogger$Configuration;
-    .param p11    # Landroid/accounts/Account;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -387,8 +377,6 @@
 
 .method static synthetic access$000(Lcom/google/android/play/analytics/EventLogger;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/google/android/play/analytics/EventLogger;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/google/android/play/analytics/EventLogger;->dispatchMessage(Landroid/os/Message;)V
 
@@ -397,7 +385,6 @@
 
 .method private addEventImpl(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -485,8 +472,6 @@
 
 .method private createByteArrayFrom(Ljava/io/InputStream;I)[B
     .locals 4
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -522,7 +507,6 @@
 
 .method private dispatchMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget v1, p1, Landroid/os/Message;->what:I
 
@@ -601,7 +585,6 @@
 
 .method private getAuthToken(Landroid/accounts/Account;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/accounts/Account;
 
     const/4 v0, 0x0
 
@@ -734,7 +717,6 @@
 
 .method private handleResponse(Lorg/apache/http/HttpResponse;)V
     .locals 10
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     :try_start_0
     invoke-interface {p1}, Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;
@@ -894,9 +876,6 @@
 
 .method private static maybeRenameLegacyDir(Landroid/accounts/Account;Ljava/io/File;Ljava/io/File;)V
     .locals 2
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     if-eqz p0, :cond_0
 
@@ -940,7 +919,6 @@
 
 .method private queueUpload(J)V
     .locals 8
-    .param p1    # J
 
     const/4 v6, 0x3
 
@@ -1084,7 +1062,6 @@
 
 .method private setNextUploadTimeAfter(J)V
     .locals 4
-    .param p1    # J
 
     iget-wide v2, p0, Lcom/google/android/play/analytics/EventLogger;->mMinDelayBetweenUploadsMs:J
 
@@ -1456,10 +1433,6 @@
 
 .method private uploadLog(Landroid/accounts/Account;Lcom/google/android/play/analytics/ClientAnalytics$LogRequest;Ljava/lang/String;I)Z
     .locals 29
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/play/analytics/ClientAnalytics$LogRequest;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2076,8 +2049,6 @@
 
 .method private writeRawVarint32(ILjava/io/OutputStream;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2109,10 +2080,6 @@
 # virtual methods
 .method public varargs logEvent(Ljava/lang/String;Lcom/google/android/play/analytics/ClientAnalytics$ActiveExperiments;[B[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/play/analytics/ClientAnalytics$ActiveExperiments;
-    .param p3    # [B
-    .param p4    # [Ljava/lang/String;
 
     if-eqz p4, :cond_0
 
@@ -2239,8 +2206,6 @@
 
 .method public onWrite(Lcom/google/android/play/analytics/ClientAnalytics$LogEvent;Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Lcom/google/android/play/analytics/ClientAnalytics$LogEvent;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2289,8 +2254,6 @@
 
 .method public bridge synthetic onWrite(Ljava/lang/Object;Ljava/io/OutputStream;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

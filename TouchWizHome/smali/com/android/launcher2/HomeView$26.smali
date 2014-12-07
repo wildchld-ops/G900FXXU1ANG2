@@ -56,7 +56,6 @@
 
 .method public onBindSuccess(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/launcher2/HomeView$26;->val$widget:Lcom/android/launcher2/HomeWidgetItem;
 

@@ -57,15 +57,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/layout/EpisodeList;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
-    .param p2    # Lcom/google/android/finsky/layout/EpisodeList;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Z
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v2, 0x0
 
@@ -120,9 +111,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -135,13 +123,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/fragments/PageFragment;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/fragments/PageFragment;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p6    # Lcom/google/android/finsky/library/Libraries;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/SeasonListViewBinder;->mContext:Landroid/content/Context;
 
@@ -246,7 +227,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SeasonListViewBinder;->mContext:Landroid/content/Context;
 
@@ -269,7 +249,6 @@
 
 .method public restoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/SeasonListViewBinder;->mRestoreBundle:Landroid/os/Bundle;
 
@@ -278,7 +257,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SeasonListViewBinder;->mLayout:Landroid/view/View;
 

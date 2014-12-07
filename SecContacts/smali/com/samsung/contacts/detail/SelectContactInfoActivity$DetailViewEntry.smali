@@ -76,11 +76,6 @@
 
 .method public static fromValues(Landroid/content/Context;Lcom/android/contacts/model/dataitem/DataItem;ZJLcom/android/contacts/common/model/dataitem/DataKind;)Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p2    # Z
-    .param p3    # J
-    .param p5    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     new-instance v0, Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
@@ -194,7 +189,6 @@
 # virtual methods
 .method public collapseWith(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 3
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;->mimetype:Ljava/lang/String;
 
@@ -248,7 +242,6 @@
 
 .method public bridge synthetic collapseWith(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
@@ -259,7 +252,6 @@
 
 .method public shouldCollapseWith(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)Z
     .locals 5
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     const/4 v0, 0x0
 
@@ -301,7 +293,6 @@
 
 .method public bridge synthetic shouldCollapseWith(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 

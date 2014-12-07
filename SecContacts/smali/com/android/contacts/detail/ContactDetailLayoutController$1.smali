@@ -62,7 +62,6 @@
 
 .method private createTabCarouselAnimator(F)V
     .locals 4
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController$1;->this$0:Lcom/android/contacts/detail/ContactDetailLayoutController;
 
@@ -128,7 +127,6 @@
 # virtual methods
 .method public onPageScrollStateChanged(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/contacts/detail/ContactDetailLayoutController$1;->this$0:Lcom/android/contacts/detail/ContactDetailLayoutController;
 
@@ -286,9 +284,6 @@
 
 .method public onPageScrolled(IFI)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailLayoutController$1;->this$0:Lcom/android/contacts/detail/ContactDetailLayoutController;
 
@@ -344,7 +339,6 @@
 
 .method public onPageSelected(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController$1;->this$0:Lcom/android/contacts/detail/ContactDetailLayoutController;
 

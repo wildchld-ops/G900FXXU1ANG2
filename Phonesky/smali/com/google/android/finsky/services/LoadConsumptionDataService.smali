@@ -20,7 +20,6 @@
 
 .method public static isBackendSupported(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -50,7 +49,6 @@
 
 .method public static isSupportedDataType(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -74,8 +72,6 @@
 
 .method private readDataFromCache(Landroid/content/Context;I)Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v2, Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
 
@@ -131,8 +127,6 @@
 
 .method public static varargs scheduleAlarmForUpdate(Landroid/content/Context;[I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # [I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -163,7 +157,6 @@
 # virtual methods
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 17
-    .param p1    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/google/android/finsky/services/ConsumptionAppDataCache;->get()Lcom/google/android/finsky/services/ConsumptionAppDataCache;
 

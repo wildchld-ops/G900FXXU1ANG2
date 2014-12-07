@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/voovio/sweep/Voovio;)V
     .locals 0
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -160,8 +159,6 @@
 
 .method public draw(Ljavax/microedition/khronos/opengles/GL10;F)V
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # F
 
     const/16 v1, 0xde1
 

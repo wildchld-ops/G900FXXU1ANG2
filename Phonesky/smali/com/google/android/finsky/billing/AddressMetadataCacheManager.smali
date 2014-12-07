@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/Cache;)V
     .locals 0
-    .param p1    # Lcom/android/volley/Cache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +25,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/android/finsky/billing/AddressMetadataCacheManager;->mCache:Lcom/android/volley/Cache;
 
@@ -108,8 +106,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Lcom/android/volley/Cache$Entry;
 

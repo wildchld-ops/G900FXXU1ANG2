@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,8 +69,6 @@
 
 .method private setFlag(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -119,7 +116,6 @@
 
 .method public setAutoCancel(Z)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x10
 
@@ -130,7 +126,6 @@
 
 .method public setContent(Landroid/widget/RemoteViews;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -141,7 +136,6 @@
 
 .method public setContentInfo(Ljava/lang/CharSequence;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mContentInfo:Ljava/lang/CharSequence;
 
@@ -150,7 +144,6 @@
 
 .method public setContentIntent(Landroid/app/PendingIntent;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mContentIntent:Landroid/app/PendingIntent;
 
@@ -159,7 +152,6 @@
 
 .method public setContentText(Ljava/lang/CharSequence;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mContentText:Ljava/lang/CharSequence;
 
@@ -168,7 +160,6 @@
 
 .method public setContentTitle(Ljava/lang/CharSequence;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mContentTitle:Ljava/lang/CharSequence;
 
@@ -177,7 +168,6 @@
 
 .method public setDefaults(I)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -201,7 +191,6 @@
 
 .method public setDeleteIntent(Landroid/app/PendingIntent;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -212,8 +201,6 @@
 
 .method public setFullScreenIntent(Landroid/app/PendingIntent;Z)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mFullScreenIntent:Landroid/app/PendingIntent;
 
@@ -226,7 +213,6 @@
 
 .method public setLargeIcon(Landroid/graphics/Bitmap;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mLargeIcon:Landroid/graphics/Bitmap;
 
@@ -235,9 +221,6 @@
 
 .method public setLights(III)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -300,7 +283,6 @@
 
 .method public setNumber(I)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNumber:I
 
@@ -309,7 +291,6 @@
 
 .method public setOngoing(Z)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x2
 
@@ -320,7 +301,6 @@
 
 .method public setOnlyAlertOnce(Z)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x8
 
@@ -331,7 +311,6 @@
 
 .method public setSmallIcon(I)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -342,8 +321,6 @@
 
 .method public setSmallIcon(II)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -358,7 +335,6 @@
 
 .method public setSound(Landroid/net/Uri;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -375,8 +351,6 @@
 
 .method public setSound(Landroid/net/Uri;I)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -391,7 +365,6 @@
 
 .method public setTicker(Ljava/lang/CharSequence;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -402,8 +375,6 @@
 
 .method public setTicker(Ljava/lang/CharSequence;Landroid/widget/RemoteViews;)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -416,7 +387,6 @@
 
 .method public setVibrate([J)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # [J
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 
@@ -427,7 +397,6 @@
 
 .method public setWhen(J)Lcom/nuance/connect/compat/NotificationCompat$Builder;
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/nuance/connect/compat/NotificationCompat$Builder;->mNotification:Landroid/app/Notification;
 

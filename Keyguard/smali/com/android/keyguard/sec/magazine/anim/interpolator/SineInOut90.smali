@@ -110,7 +110,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 13
-    .param p1    # F
 
     const/4 v12, 0x0
 

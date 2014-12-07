@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/mms/util/SaveRestoreOperation;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/samsung/mms/util/SaveRestoreOperation$BackgroundQueryHandler;->this$0:Lcom/samsung/mms/util/SaveRestoreOperation;
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 19
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     packed-switch p1, :pswitch_data_0
 

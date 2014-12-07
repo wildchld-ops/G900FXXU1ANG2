@@ -29,11 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

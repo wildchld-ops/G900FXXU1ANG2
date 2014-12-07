@@ -58,7 +58,6 @@
 
 .method public static getCachedNetworkInfo(Landroid/content/Context;)Landroid/net/NetworkInfo;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/google/android/finsky/receivers/NetworkStateChangedReceiver;->sLock:Ljava/lang/Object;
 
@@ -90,7 +89,6 @@
 
 .method private static updateCachedNetworkInfo(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v2, Lcom/google/android/finsky/receivers/NetworkStateChangedReceiver;->sLock:Ljava/lang/Object;
 
@@ -129,8 +127,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {p1}, Lcom/google/android/finsky/receivers/NetworkStateChangedReceiver;->updateCachedNetworkInfo(Landroid/content/Context;)V
 

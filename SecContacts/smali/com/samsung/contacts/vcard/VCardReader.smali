@@ -46,10 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;II)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -107,8 +103,6 @@
 
 .method private initFromContentUri(ILandroid/net/Uri;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -281,7 +275,6 @@
 
 .method private parseV21card(Ljava/io/InputStream;)V
     .locals 4
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -326,7 +319,6 @@
 
 .method private parseV30card(Ljava/io/InputStream;)V
     .locals 4
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -373,8 +365,6 @@
 
 .method private parseVcard(ILjava/io/InputStream;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -576,7 +566,6 @@
 
 .method public onEntryCreated(Lcom/android/vcard/VCardEntry;)V
     .locals 3
-    .param p1    # Lcom/android/vcard/VCardEntry;
 
     iget v1, p0, Lcom/samsung/contacts/vcard/VCardReader;->mStart:I
 

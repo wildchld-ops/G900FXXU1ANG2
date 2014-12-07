@@ -16,7 +16,6 @@
 # virtual methods
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onAttachFragment(Landroid/app/Fragment;)V
 
@@ -40,7 +39,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 

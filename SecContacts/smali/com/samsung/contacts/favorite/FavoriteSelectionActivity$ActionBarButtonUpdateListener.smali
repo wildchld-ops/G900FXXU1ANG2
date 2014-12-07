@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;Lcom/samsung/contacts/favorite/FavoriteSelectionActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;
-    .param p2    # Lcom/samsung/contacts/favorite/FavoriteSelectionActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/favorite/FavoriteSelectionActivity$ActionBarButtonUpdateListener;-><init>(Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onDoneButtonStateUpdated(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionActivity$ActionBarButtonUpdateListener;->this$0:Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;
 
@@ -57,8 +54,6 @@
 
 .method public onSelectionChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionActivity$ActionBarButtonUpdateListener;->this$0:Lcom/samsung/contacts/favorite/FavoriteSelectionActivity;
 

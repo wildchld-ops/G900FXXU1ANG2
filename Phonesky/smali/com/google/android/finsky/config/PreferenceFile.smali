@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +37,6 @@
 
 .method public static commit(Landroid/content/SharedPreferences$Editor;)Z
     .locals 2
-    .param p0    # Landroid/content/SharedPreferences$Editor;
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -64,7 +61,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/google/android/finsky/config/PreferenceFile;->sContext:Landroid/content/Context;
 
@@ -91,8 +87,6 @@
 
 .method public prefixPreference(Ljava/lang/String;Ljava/lang/Boolean;)Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Boolean;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -115,8 +109,6 @@
 
 .method public prefixPreference(Ljava/lang/String;Ljava/lang/Integer;)Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -139,8 +131,6 @@
 
 .method public prefixPreference(Ljava/lang/String;Ljava/lang/Long;)Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -163,8 +153,6 @@
 
 .method public prefixPreference(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -187,8 +175,6 @@
 
 .method public value(Ljava/lang/String;Ljava/lang/Boolean;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Boolean;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -211,8 +197,6 @@
 
 .method public value(Ljava/lang/String;Ljava/lang/Integer;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -235,8 +219,6 @@
 
 .method public value(Ljava/lang/String;Ljava/lang/Long;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -259,8 +241,6 @@
 
 .method public value(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

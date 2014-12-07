@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpEntityEnclosingRequest;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpEntityEnclosingRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -104,7 +103,6 @@
 
 .method public setEntity(Lorg/apache/http/HttpEntity;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpEntity;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/EntityEnclosingRequestWrapper;->entity:Lorg/apache/http/HttpEntity;
 

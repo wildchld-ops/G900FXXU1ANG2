@@ -56,8 +56,6 @@
 
 .method public onSaveFinished(ILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/android/contacts/activities/GroupEditorActivity$1;->this$0:Lcom/android/contacts/activities/GroupEditorActivity;
 
@@ -107,7 +105,6 @@
 
 .method public onUpdateDoneButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/activities/GroupEditorActivity$1;->this$0:Lcom/android/contacts/activities/GroupEditorActivity;
 

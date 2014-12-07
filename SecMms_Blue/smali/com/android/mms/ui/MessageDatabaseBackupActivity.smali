@@ -126,7 +126,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MessageDatabaseBackupActivity;)Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mWorkThread:Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
 
@@ -135,8 +134,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/MessageDatabaseBackupActivity;Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;)Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
-    .param p1    # Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mWorkThread:Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
 
@@ -145,7 +142,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/MessageDatabaseBackupActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mEventHandler:Landroid/os/Handler;
 
@@ -234,8 +230,6 @@
 
 .method private getProgressDialog(Ljava/lang/String;Ljava/lang/String;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mDlgProg:Landroid/app/ProgressDialog;
 
@@ -386,7 +380,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const v11, 0x7f0b0196
 
@@ -675,7 +668,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x0
 
@@ -874,8 +866,6 @@
 
 .method public onProgressDlgCompleted(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 
@@ -905,8 +895,6 @@
 
 .method public onProgressDlgStart(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->getProgressDialog(Ljava/lang/String;Ljava/lang/String;)Landroid/app/ProgressDialog;
 

@@ -10,12 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFI)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     const/4 v2, 0x0
 
@@ -105,13 +99,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIF)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # F
 
     const/4 v2, 0x0
 
@@ -203,10 +190,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFI)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -550,7 +533,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -561,7 +543,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -593,8 +574,6 @@
 
 .method public setSize(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->setSize(FF)V
 
@@ -612,7 +591,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 

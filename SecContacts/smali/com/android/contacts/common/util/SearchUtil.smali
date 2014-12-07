@@ -14,7 +14,6 @@
 
 .method public static cleanStartAndEndOfSearchQuery(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -108,8 +107,6 @@
 
 .method static contains(Ljava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, -0x1
 
@@ -226,8 +223,6 @@
 
 .method static findNextTokenStart(Ljava/lang/String;I)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     move v1, p1
 

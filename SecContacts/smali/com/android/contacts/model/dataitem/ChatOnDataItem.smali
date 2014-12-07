@@ -16,8 +16,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/ContentValues;Z)V
     .locals 1
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/contacts/model/dataitem/DataItem;-><init>(Landroid/content/ContentValues;)V
 

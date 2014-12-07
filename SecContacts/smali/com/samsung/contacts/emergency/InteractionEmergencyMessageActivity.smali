@@ -41,8 +41,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;->mContactsCount:I
 
@@ -51,7 +49,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;->mMaxContactsNumber:I
 
@@ -60,7 +57,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;)Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;->mInteractionEmergencyMessageFragment:Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
@@ -69,7 +65,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;->mDeleteMenuItem:Landroid/view/MenuItem;
 
@@ -190,7 +185,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -225,7 +219,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;->mIsRecreatedInstance:Z
 
@@ -245,7 +238,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -327,7 +319,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -354,7 +345,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -394,7 +384,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 

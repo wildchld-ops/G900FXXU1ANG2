@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const v0, 0x1030335
 
@@ -551,7 +550,6 @@
 
 .method private switchTo(Lcom/android/internal/policy/impl/RecentApplicationsDialog$RecentTag;)V
     .locals 4
-    .param p1    # Lcom/android/internal/policy/impl/RecentApplicationsDialog$RecentTag;
 
     iget-object v2, p1, Lcom/android/internal/policy/impl/RecentApplicationsDialog$RecentTag;->info:Landroid/app/ActivityManager$RecentTaskInfo;
 
@@ -697,7 +695,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/RecentApplicationsDialog;->mIcons:[Landroid/view/View;
 
@@ -733,7 +730,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -1132,8 +1128,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v6, 0x1
 

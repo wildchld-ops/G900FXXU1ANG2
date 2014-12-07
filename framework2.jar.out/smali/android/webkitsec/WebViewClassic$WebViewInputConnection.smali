@@ -88,8 +88,6 @@
 
 .method private limitReplaceTextByMaxLength(Ljava/lang/CharSequence;I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -199,7 +197,6 @@
 
 .method private sendCharacter(C)V
     .locals 10
-    .param p1    # C
 
     const/4 v9, 0x0
 
@@ -270,7 +267,6 @@
 
 .method private sendKey(I)V
     .locals 15
-    .param p1    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -329,9 +325,6 @@
 
 .method private setNewText(IILjava/lang/CharSequence;)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     const/4 v11, 0x1
 
@@ -664,8 +657,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/webkitsec/WebViewClassic$WebViewInputConnection;->setComposingText(Ljava/lang/CharSequence;I)Z
 
@@ -678,8 +669,6 @@
 
 .method public deleteSurroundingText(II)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, -0x1
 
@@ -805,8 +794,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;
     .locals 6
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -914,7 +901,6 @@
 
 .method public initEditorInfo(Landroid/webkitsec/WebViewCore$TextFieldInitData;)V
     .locals 10
-    .param p1    # Landroid/webkitsec/WebViewCore$TextFieldInitData;
 
     const/16 v9, 0x800
 
@@ -1242,7 +1228,6 @@
 
 .method public performContextMenuAction(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -1341,7 +1326,6 @@
 
 .method public performEditorAction(I)Z
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x42
 
@@ -1440,8 +1424,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "com.sec.android.inputmethod.axt9.MoveFocusPrev"
 
@@ -1497,7 +1479,6 @@
 
 .method public replaceSelection(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -1540,7 +1521,6 @@
 
 .method public replaceText(Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -1589,7 +1569,6 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/KeyEvent;
 
     const/16 v10, 0x70
 
@@ -1934,7 +1913,6 @@
 
 .method public setAutoFillable(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v1, p0, Landroid/webkitsec/WebViewClassic$WebViewInputConnection;->this$0:Landroid/webkitsec/WebViewClassic;
 
@@ -2024,8 +2002,6 @@
 
 .method public setComposingRegion(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/inputmethod/BaseInputConnection;->setComposingRegion(II)Z
 
@@ -2038,8 +2014,6 @@
 
 .method public setComposingText(Ljava/lang/CharSequence;I)Z
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -2123,7 +2097,6 @@
 
 .method public setIfTextArea(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebViewClassic$WebViewInputConnection;->mIsTextArea:Z
 
@@ -2132,7 +2105,6 @@
 
 .method public setIsPasswordField(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebViewClassic$WebViewInputConnection;->mIsPasswordField:Z
 
@@ -2141,8 +2113,6 @@
 
 .method public setSelection(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/inputmethod/BaseInputConnection;->setSelection(II)Z
 
@@ -2155,7 +2125,6 @@
 
 .method public setTextAndKeepSelection(Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -2227,9 +2196,6 @@
 
 .method public setTextAndSelectionIfNeeded(Ljava/lang/CharSequence;II)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -2281,7 +2247,6 @@
 
 .method public setupEditorInfo(Landroid/view/inputmethod/EditorInfo;)V
     .locals 4
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     iget-object v3, p0, Landroid/webkitsec/WebViewClassic$WebViewInputConnection;->this$0:Landroid/webkitsec/WebViewClassic;
 

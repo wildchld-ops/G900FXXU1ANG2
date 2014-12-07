@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -262,7 +259,6 @@
 # virtual methods
 .method public bindNavigationManager(Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -271,10 +267,6 @@
 
 .method public configure(Lcom/google/android/finsky/protos/Doc$Image;Lcom/google/android/finsky/protos/Doc$Image;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p2    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -363,7 +355,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x1
 
@@ -504,7 +495,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -664,7 +654,6 @@
 
 .method public setAccountListEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;->mAccountListEnabled:Z
 
@@ -680,7 +669,6 @@
 
 .method public setNavigationMode(I)V
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -731,7 +719,6 @@
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     if-eqz p1, :cond_0
 
@@ -760,7 +747,6 @@
 
 .method public setOnNavigationModeChangeListener(Lcom/google/android/finsky/layout/play/DrawerProfileInfoView$OnNavigationModeChangeListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/DrawerProfileInfoView$OnNavigationModeChangeListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;->mListener:Lcom/google/android/finsky/layout/play/DrawerProfileInfoView$OnNavigationModeChangeListener;
 

@@ -71,8 +71,6 @@
 
 .method private action_down(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->lastMoveX:I
 
@@ -122,8 +120,6 @@
 
 .method private action_move(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->lastMoveX:I
 
@@ -185,8 +181,6 @@
 
 .method private action_up(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->lastMoveX:I
 
@@ -248,7 +242,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -394,8 +387,6 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -465,8 +456,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x4
 

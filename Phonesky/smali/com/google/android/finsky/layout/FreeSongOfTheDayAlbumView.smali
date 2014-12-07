@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -38,8 +37,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -119,9 +116,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/FreeSongOfTheDayAlbumView;->mHeader:Landroid/widget/TextView;
 
@@ -140,9 +134,6 @@
 
 .method public init(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/FreeSongOfTheDayAlbumView;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 

@@ -26,8 +26,6 @@
 # virtual methods
 .method protected onError(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/google/android/finsky/utils/GcmRegistrationIdHelper;->onGcmError(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -36,8 +34,6 @@
 
 .method protected onMessage(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {p1, p2}, Lcom/google/android/finsky/utils/GcmRegistrationIdHelper;->onGcmMessage(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -46,8 +42,6 @@
 
 .method protected onRegistered(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/google/android/finsky/utils/GcmRegistrationIdHelper;->onGcmRegistered(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -56,8 +50,6 @@
 
 .method protected onUnregistered(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/google/android/finsky/utils/GcmRegistrationIdHelper;->onGcmUnregistered(Landroid/content/Context;Ljava/lang/String;)V
 

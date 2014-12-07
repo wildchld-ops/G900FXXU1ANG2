@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MessageDatabaseBackupActivity;Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;->this$0:Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
@@ -51,7 +49,6 @@
 
 .method private CopyDir(Ljava/io/File;)V
     .locals 6
-    .param p1    # Ljava/io/File;
 
     if-nez p1, :cond_0
 
@@ -168,7 +165,6 @@
 
 .method private CopyFile(Ljava/io/File;)V
     .locals 14
-    .param p1    # Ljava/io/File;
 
     if-nez p1, :cond_0
 
@@ -681,7 +677,6 @@
 
 .method private CreateDir(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -875,7 +870,6 @@
 
 .method private CreateSecurityKey(Ljava/lang/String;)[B
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x10
 
@@ -939,8 +933,6 @@
 
 .method private DecryptFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -992,8 +984,6 @@
 
 .method private EncryptFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1045,9 +1035,6 @@
 
 .method private ExcuteZip(Ljava/util/zip/ZipOutputStream;Ljava/lang/String;Ljava/io/File;)Z
     .locals 17
-    .param p1    # Ljava/util/zip/ZipOutputStream;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
 
     const/4 v4, 0x1
 
@@ -1270,7 +1257,6 @@
 
 .method private MessageDataBackup(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -1453,8 +1439,6 @@
 
 .method private MessageDbToZip(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1758,8 +1742,6 @@
 
 .method private unZip(Ljava/lang/String;Ljava/lang/String;)V
     .locals 24
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v3, 0x1000
 
@@ -2591,8 +2573,6 @@
 # virtual methods
 .method public ConvertEncryptedFileToZip(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;->DecryptFile(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -2635,8 +2615,6 @@
 
 .method public ConvertZipToEncryptedFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;->EncryptFile(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -2694,7 +2672,6 @@
 
 .method public DeleteDir(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     new-instance v3, Ljava/io/File;
 
@@ -2747,7 +2724,6 @@
 
 .method public DeleteDir(Ljava/io/File;)Z
     .locals 9
-    .param p1    # Ljava/io/File;
 
     const/4 v5, 0x0
 
@@ -2856,7 +2832,6 @@
 
 .method public MessageDbBackup(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -2943,7 +2918,6 @@
 
 .method public MessageDbRestore(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -3324,9 +3298,6 @@
 
 .method public setData(ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput p1, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;->mWorkMode:I
 

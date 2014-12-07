@@ -547,8 +547,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 23
-    .param p1    # I
-    .param p2    # [I
 
     move-object/from16 v0, p0
 
@@ -2020,8 +2018,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v11, 0x20
 
@@ -2298,8 +2294,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v2, 0x0
 
@@ -2347,9 +2341,6 @@
 
 .method public onCharacterKey(I[IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # Z
 
     const/4 v6, 0x2
 
@@ -2498,16 +2489,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v12, 0x1
 
@@ -2775,8 +2762,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v6, 0x20
 

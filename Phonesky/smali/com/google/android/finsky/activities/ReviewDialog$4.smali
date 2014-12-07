@@ -44,9 +44,6 @@
 # virtual methods
 .method public onRatingChanged(Landroid/widget/RatingBar;FZ)V
     .locals 5
-    .param p1    # Landroid/widget/RatingBar;
-    .param p2    # F
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/google/android/finsky/activities/ReviewDialog$4;->this$0:Lcom/google/android/finsky/activities/ReviewDialog;
 

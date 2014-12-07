@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -21,7 +20,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/utils/ApplicationDismissedDeferrer;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/ApplicationDismissedDeferrer;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/ApplicationDismissedDeferrer;->isContextPackageInBackground()Z
 
@@ -112,8 +110,6 @@
 # virtual methods
 .method public runOnApplicationClose(Ljava/lang/Runnable;I)V
     .locals 4
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # I
 
     new-instance v0, Landroid/os/Handler;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onIndexSelected(I)V
     .locals 2
-    .param p1    # I
 
     if-gez p1, :cond_0
 

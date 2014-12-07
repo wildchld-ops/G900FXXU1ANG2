@@ -140,7 +140,6 @@
 
 .method private checkCombination([I)Z
     .locals 4
-    .param p1    # [I
 
     const/4 v1, 0x1
 
@@ -474,7 +473,6 @@
 
 .method public static getHBScrpt(I)I
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x900
 
@@ -614,7 +612,6 @@
 
 .method private getHoldKeyCodeForSmallLcd(I)I
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x5
 
@@ -2136,7 +2133,6 @@
 
 .method private getHoldKeyLabelForSmallLcd(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
@@ -5648,7 +5644,6 @@
 
 .method private getToggledKeyCodeForSmallLcd(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -6695,7 +6690,6 @@
 
 .method private getToggledKeyLabelForSmallLcd(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x1
 
@@ -7770,7 +7764,6 @@
 
 .method public getThirdModeKeyCode(I)I
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x4
 
@@ -9185,7 +9178,6 @@
 
 .method public getThirdModeKeyLabel(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x1
 
@@ -10104,7 +10096,6 @@
 
 .method public getToggledKeyCode(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x4
 
@@ -11085,7 +11076,6 @@
 
 .method public getToggledKeyLabel(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x1
 
@@ -12093,9 +12083,6 @@
 
 .method public getVowelKeyCode(IIZ)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v6, 0x5
 
@@ -13787,9 +13774,6 @@
 
 .method public getVowelKeyLabel(Ljava/lang/String;IZ)Ljava/lang/CharSequence;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v10, 0x4
 
@@ -15508,7 +15492,6 @@
 
 .method public handleRegionalCharacter([I)V
     .locals 8
-    .param p1    # [I
 
     const/16 v7, 0x200b
 
@@ -16168,9 +16151,6 @@
 
 .method public init(Lcom/diotek/ime/framework/input/QwertyIndianInputModule;Lcom/diotek/ime/framework/common/InputManager;I)V
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/input/QwertyIndianInputModule;
-    .param p2    # Lcom/diotek/ime/framework/common/InputManager;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -16334,9 +16314,6 @@
 
 .method public init(Lcom/diotek/ime/framework/input/SwiftkeyQwertyIndianInputModule;Lcom/diotek/ime/framework/common/InputManager;I)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/input/SwiftkeyQwertyIndianInputModule;
-    .param p2    # Lcom/diotek/ime/framework/common/InputManager;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -16435,9 +16412,6 @@
 
 .method public init(Lcom/diotek/ime/framework/input/xt9/Xt9QwertyIndianInputModule;Lcom/diotek/ime/framework/common/InputManager;I)V
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/input/xt9/Xt9QwertyIndianInputModule;
-    .param p2    # Lcom/diotek/ime/framework/common/InputManager;
-    .param p3    # I
 
     const/16 v5, 0x1e0
 
@@ -16611,8 +16585,6 @@
 
 .method public isConsonant(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -16830,8 +16802,6 @@
 
 .method public isDependentVowel(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -17131,7 +17101,6 @@
 
 .method public isHalant(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x94d
 
@@ -17187,8 +17156,6 @@
 
 .method public isIndependentVowel(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -17423,7 +17390,6 @@
 
 .method public isIndianFunctionKey(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x1f3
 
@@ -17451,7 +17417,6 @@
 
 .method public isNuktaSymbol(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x93c
 
@@ -17495,7 +17460,6 @@
 
 .method public isSpecialMatra(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -17519,8 +17483,6 @@
 
 .method public isSpecialVowel(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -17689,7 +17651,6 @@
 
 .method public sendAshokaKey([I)V
     .locals 4
-    .param p1    # [I
 
     const/4 v3, 0x1
 
@@ -17737,7 +17698,6 @@
 
 .method public setIndianLanguageHbScript(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x2
 
@@ -17849,7 +17809,6 @@
 
 .method public setLangScriptId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/IndianInputModule;->langScriptId:I
 
@@ -17858,7 +17817,6 @@
 
 .method public setPrevLangScriptId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/IndianInputModule;->prevLangScriptId:I
 
@@ -17867,7 +17825,6 @@
 
 .method public validCharToProcess(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Character;->isLetter(I)Z
 

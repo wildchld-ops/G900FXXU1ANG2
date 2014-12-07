@@ -87,7 +87,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/preference/ServiceNumbersFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->sendAccessibilityEvent()V
 
@@ -96,7 +95,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/preference/ServiceNumbersFragment;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->mCursor:Landroid/database/Cursor;
 
@@ -105,8 +103,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/preference/ServiceNumbersFragment;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->mCursor:Landroid/database/Cursor;
 
@@ -115,8 +111,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/preference/ServiceNumbersFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->displayProgress(Z)V
 
@@ -125,7 +119,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/preference/ServiceNumbersFragment;)Lcom/samsung/contacts/preference/ServiceNumbersFragment$ServiceNumberListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->mAdapter:Lcom/samsung/contacts/preference/ServiceNumbersFragment$ServiceNumberListAdapter;
 
@@ -134,7 +127,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/preference/ServiceNumbersFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->mListView:Landroid/widget/ListView;
 
@@ -143,7 +135,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/preference/ServiceNumbersFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->mEmptyView:Landroid/view/View;
 
@@ -152,7 +143,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/preference/ServiceNumbersFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->mEmptyTitleView:Landroid/widget/TextView;
 
@@ -226,7 +216,6 @@
 
 .method private displayProgress(Z)V
     .locals 5
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -488,9 +477,6 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -577,10 +563,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 6
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget-object v3, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment;->mAdapter:Lcom/samsung/contacts/preference/ServiceNumbersFragment$ServiceNumberListAdapter;
 
@@ -657,8 +639,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p2, :cond_0
 

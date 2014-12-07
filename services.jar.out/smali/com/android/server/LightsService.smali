@@ -234,7 +234,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/16 v7, 0xb
 
@@ -488,7 +487,6 @@
 
 .method static synthetic access$000(Lcom/android/server/LightsService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-boolean v0, p0, Lcom/android/server/LightsService;->mUsePatternLED:Z
 
@@ -497,8 +495,6 @@
 
 .method static synthetic access$002(Lcom/android/server/LightsService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/LightsService;->mUsePatternLED:Z
 
@@ -525,7 +521,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/LightsService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-boolean v0, p0, Lcom/android/server/LightsService;->mIsLEDChanged:Z
 
@@ -534,8 +529,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/LightsService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/LightsService;->mIsLEDChanged:Z
 
@@ -544,7 +537,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/LightsService;)I
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget v0, p0, Lcom/android/server/LightsService;->mNativePointer:I
 
@@ -553,13 +545,6 @@
 
 .method static synthetic access$1300(IIIIIII)V
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-static/range {p0 .. p6}, Lcom/android/server/LightsService;->setLight_native(IIIIIII)V
 
@@ -568,7 +553,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/LightsService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mContext:Landroid/content/Context;
 
@@ -577,7 +561,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/LightsService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mLightHandler:Landroid/os/Handler;
 
@@ -586,7 +569,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/LightsService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-boolean v0, p0, Lcom/android/server/LightsService;->mButtonLightEnable:Z
 
@@ -595,7 +577,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/LightsService;)I
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget v0, p0, Lcom/android/server/LightsService;->mButtonBrightness:I
 
@@ -604,7 +585,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/LightsService;)I
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget v0, p0, Lcom/android/server/LightsService;->mButtonLightTimeout:I
 
@@ -613,8 +593,6 @@
 
 .method static synthetic access$1902(Lcom/android/server/LightsService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/LightsService;->mInitCompleteForSvcLED:Z
 
@@ -623,7 +601,6 @@
 
 .method static synthetic access$200(Lcom/android/server/LightsService;)Landroid/os/HandlerThread;
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mSvcLEDThread:Landroid/os/HandlerThread;
 
@@ -632,7 +609,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/LightsService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-boolean v0, p0, Lcom/android/server/LightsService;->mUseSoftwareAutoBrightness:Z
 
@@ -641,8 +617,6 @@
 
 .method static synthetic access$2002(Lcom/android/server/LightsService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/LightsService;->mUseSoftwareAutoBrightness:Z
 
@@ -651,7 +625,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/LightsService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-boolean v0, p0, Lcom/android/server/LightsService;->mUseLEDAutoBrightness:Z
 
@@ -660,8 +633,6 @@
 
 .method static synthetic access$2102(Lcom/android/server/LightsService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/LightsService;->mUseLEDAutoBrightness:Z
 
@@ -678,8 +649,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/LightsService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/LightsService;->setSvcLedLightLocked(I)V
 
@@ -688,7 +657,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/LightsService;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mUpdateSvcLEDPendingIntent:Landroid/app/PendingIntent;
 
@@ -697,7 +665,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/LightsService;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mAlarmManagerForSvcLED:Landroid/app/AlarmManager;
 
@@ -706,7 +673,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/LightsService;)I
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget v0, p0, Lcom/android/server/LightsService;->mUpdateSvcLEDDelay:I
 
@@ -715,13 +681,6 @@
 
 .method static synthetic access$300(Lcom/android/server/LightsService;IIIIIZ)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     invoke-direct/range {p0 .. p6}, Lcom/android/server/LightsService;->setSvcLedStateLocked(IIIIIZ)V
 
@@ -730,7 +689,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/LightsService;)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
 
     invoke-direct {p0}, Lcom/android/server/LightsService;->handleForcedSvcLEDTask()V
 
@@ -739,7 +697,6 @@
 
 .method static synthetic access$400(Lcom/android/server/LightsService;)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
 
     invoke-direct {p0}, Lcom/android/server/LightsService;->acquireWakeLockForLED()V
 
@@ -748,8 +705,6 @@
 
 .method static synthetic access$500(Lcom/android/server/LightsService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/LightsService;->enableSvcLEDLightSensorLocked(Z)V
 
@@ -758,7 +713,6 @@
 
 .method static synthetic access$600(Lcom/android/server/LightsService;)Lcom/android/server/LightsService$SvcLEDHandler;
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mSvcLEDHandler:Lcom/android/server/LightsService$SvcLEDHandler;
 
@@ -767,8 +721,6 @@
 
 .method static synthetic access$602(Lcom/android/server/LightsService;Lcom/android/server/LightsService$SvcLEDHandler;)Lcom/android/server/LightsService$SvcLEDHandler;
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # Lcom/android/server/LightsService$SvcLEDHandler;
 
     iput-object p1, p0, Lcom/android/server/LightsService;->mSvcLEDHandler:Lcom/android/server/LightsService$SvcLEDHandler;
 
@@ -777,7 +729,6 @@
 
 .method static synthetic access$700(Lcom/android/server/LightsService;)I
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget v0, p0, Lcom/android/server/LightsService;->mDelayForcedSvcLEDTask:I
 
@@ -786,8 +737,6 @@
 
 .method static synthetic access$702(Lcom/android/server/LightsService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/LightsService;->mDelayForcedSvcLEDTask:I
 
@@ -796,7 +745,6 @@
 
 .method static synthetic access$800(Lcom/android/server/LightsService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/LightsService;
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mH:Landroid/os/Handler;
 
@@ -805,8 +753,6 @@
 
 .method static synthetic access$900(Lcom/android/server/LightsService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/LightsService;->clearSvcLedStateLocked(I)V
 
@@ -890,7 +836,6 @@
 
 .method private clearSvcLedStateLocked(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -913,7 +858,6 @@
 
 .method private enableSvcLEDLightSensorLocked(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/LightsService;->mUseLEDAutoBrightness:Z
 
@@ -974,8 +918,6 @@
 
 .method private fileWriteInt(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1064,8 +1006,6 @@
 
 .method private fileWriteString(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1341,7 +1281,6 @@
 
 .method private setSvcLedLightLocked(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1583,12 +1522,6 @@
 
 .method private setSvcLedStateLocked(IIIIIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     const/16 v1, 0xa
 
@@ -1897,7 +1830,6 @@
 
 .method public getLight(I)Lcom/android/server/LightsService$Light;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/LightsService;->mLights:[Lcom/android/server/LightsService$Light;
 
@@ -1908,7 +1840,6 @@
 
 .method public setBrightnessButtonLight(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x2
 

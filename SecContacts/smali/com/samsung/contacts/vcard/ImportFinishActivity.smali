@@ -48,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/vcard/ImportFinishActivity;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/vcard/ImportFinishActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportFinishActivity;->mIntent:Landroid/content/Intent;
 
@@ -59,7 +58,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 

@@ -129,7 +129,6 @@
 
 .method public checkPolicy(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -226,7 +225,6 @@
 
 .method public loadPolicy(Ljava/util/Map;)Z
     .locals 8
-    .param p1    # Ljava/util/Map;
 
     new-instance v4, Ljava/util/ArrayList;
 
@@ -327,8 +325,6 @@
 
 .method public updatePolicy(Ljava/lang/String;Z)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v3, 0x1
 

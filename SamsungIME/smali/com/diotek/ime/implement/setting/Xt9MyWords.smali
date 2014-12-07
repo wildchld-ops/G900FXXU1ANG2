@@ -47,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/Xt9MyWords;)Landroid/widget/ArrayAdapter;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWords;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWords;->mArrayAdapter:Landroid/widget/ArrayAdapter;
 
@@ -195,7 +194,6 @@
 
 .method private setDeleteMenuItemEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWords;->mMenu:Landroid/view/Menu;
 
@@ -219,7 +217,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -262,7 +259,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -342,7 +338,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -396,7 +391,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -448,7 +442,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 

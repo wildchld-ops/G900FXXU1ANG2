@@ -23,7 +23,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/address/AddressImpl;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/address/AddressImpl;
 
     const-string v0, "Record-Route"
 
@@ -56,7 +55,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
 
     const/4 v1, 0x2
 

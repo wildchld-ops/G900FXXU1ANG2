@@ -139,7 +139,6 @@
 
 .method public static returnTexture(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/voovio/sweep/TexturePool;->m_aTextureIDs:[I
 

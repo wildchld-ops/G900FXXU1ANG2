@@ -30,7 +30,6 @@
 # virtual methods
 .method public onCardAttachedToWindow(Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 1
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     # getter for: Lcom/google/android/finsky/utils/PlayCardUtils;->sWindowAttachedCards:Ljava/util/List;
     invoke-static {}, Lcom/google/android/finsky/utils/PlayCardUtils;->access$100()Ljava/util/List;
@@ -44,7 +43,6 @@
 
 .method public onCardDetachedFromWindow(Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 1
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     # getter for: Lcom/google/android/finsky/utils/PlayCardUtils;->sWindowAttachedCards:Ljava/util/List;
     invoke-static {}, Lcom/google/android/finsky/utils/PlayCardUtils;->access$100()Ljava/util/List;

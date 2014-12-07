@@ -93,7 +93,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -104,8 +103,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010421
 
@@ -116,9 +113,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 16
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct/range {p0 .. p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -931,7 +925,6 @@
 
 .method static synthetic access$000(Landroid/widget/TimePicker;)Z
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-boolean v0, p0, Landroid/widget/TimePicker;->mIsAm:Z
 
@@ -940,8 +933,6 @@
 
 .method static synthetic access$002(Landroid/widget/TimePicker;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/TimePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/TimePicker;->mIsAm:Z
 
@@ -950,7 +941,6 @@
 
 .method static synthetic access$100(Landroid/widget/TimePicker;)V
     .locals 0
-    .param p0    # Landroid/widget/TimePicker;
 
     invoke-direct {p0}, Landroid/widget/TimePicker;->updateAmPmControl()V
 
@@ -959,7 +949,6 @@
 
 .method static synthetic access$1100(Landroid/widget/TimePicker;)Z
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-boolean v0, p0, Landroid/widget/TimePicker;->TW_DEBUG:Z
 
@@ -968,7 +957,6 @@
 
 .method static synthetic access$1200(Landroid/widget/TimePicker;)[Landroid/widget/EditText;
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-object v0, p0, Landroid/widget/TimePicker;->mPickerTexts:[Landroid/widget/EditText;
 
@@ -977,7 +965,6 @@
 
 .method static synthetic access$1300(Landroid/widget/TimePicker;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -986,7 +973,6 @@
 
 .method static synthetic access$200(Landroid/widget/TimePicker;)V
     .locals 0
-    .param p0    # Landroid/widget/TimePicker;
 
     invoke-direct {p0}, Landroid/widget/TimePicker;->onTimeChanged()V
 
@@ -995,7 +981,6 @@
 
 .method static synthetic access$300(Landroid/widget/TimePicker;)V
     .locals 0
-    .param p0    # Landroid/widget/TimePicker;
 
     invoke-direct {p0}, Landroid/widget/TimePicker;->updateInputState()V
 
@@ -1004,7 +989,6 @@
 
 .method static synthetic access$400(Landroid/widget/TimePicker;)Landroid/widget/NumberPicker;
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-object v0, p0, Landroid/widget/TimePicker;->mHourSpinner:Landroid/widget/NumberPicker;
 
@@ -1013,7 +997,6 @@
 
 .method static synthetic access$500(Landroid/widget/TimePicker;)Landroid/widget/NumberPicker;
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-object v0, p0, Landroid/widget/TimePicker;->mMinuteSpinner:Landroid/widget/NumberPicker;
 
@@ -1022,7 +1005,6 @@
 
 .method static synthetic access$600(Landroid/widget/TimePicker;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-object v0, p0, Landroid/widget/TimePicker;->mAmPmButton:Landroid/widget/Button;
 
@@ -1031,7 +1013,6 @@
 
 .method static synthetic access$700(Landroid/widget/TimePicker;)Landroid/widget/NumberPicker;
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-object v0, p0, Landroid/widget/TimePicker;->mAmPmSpinner:Landroid/widget/NumberPicker;
 
@@ -1040,7 +1021,6 @@
 
 .method static synthetic access$800(Landroid/widget/TimePicker;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/TimePicker;
 
     iget-object v0, p0, Landroid/widget/TimePicker;->mAmPmStrings:[Ljava/lang/String;
 
@@ -1228,8 +1208,6 @@
 
 .method private setCurrentHour(Ljava/lang/Integer;Z)V
     .locals 2
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Z
 
     const/16 v1, 0xc
 
@@ -1317,7 +1295,6 @@
 
 .method private setCurrentLocale(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Landroid/widget/TimePicker;->mCurrentLocale:Ljava/util/Locale;
 
@@ -1500,9 +1477,6 @@
 
 .method private trySetContentDescription(Landroid/view/View;II)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1882,7 +1856,6 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0, p1}, Landroid/widget/TimePicker;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2009,7 +1982,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2022,7 +1994,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2039,7 +2010,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2056,7 +2026,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 5
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2125,7 +2094,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -2223,7 +2191,6 @@
 
 .method public setCurrentHour(Ljava/lang/Integer;)V
     .locals 1
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v0, 0x1
 
@@ -2234,7 +2201,6 @@
 
 .method public setCurrentMinute(Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # Ljava/lang/Integer;
 
     if-nez p1, :cond_1
 
@@ -2264,7 +2230,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/TimePicker;->mIsEnabled:Z
 
@@ -2318,7 +2283,6 @@
 
 .method public setIs24HourView(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v3, 0x0
 
@@ -2418,7 +2382,6 @@
 
 .method public setOnTimeChangedListener(Landroid/widget/TimePicker$OnTimeChangedListener;)V
     .locals 0
-    .param p1    # Landroid/widget/TimePicker$OnTimeChangedListener;
 
     iput-object p1, p0, Landroid/widget/TimePicker;->mOnTimeChangedListener:Landroid/widget/TimePicker$OnTimeChangedListener;
 

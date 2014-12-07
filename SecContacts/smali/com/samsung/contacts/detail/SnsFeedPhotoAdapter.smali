@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
 
@@ -60,9 +59,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/View;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p1, Landroid/support/v4/view/ViewPager;
 
@@ -87,8 +83,6 @@
 
 .method public instantiateItem(Landroid/view/View;I)Ljava/lang/Object;
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/samsung/contacts/detail/SnsFeedPhotoAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -141,8 +135,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     if-ne p1, p2, :cond_0
 
@@ -159,7 +151,6 @@
 
 .method public setClickTargetView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/SnsFeedPhotoAdapter;->mClickTargetView:Landroid/view/View;
 

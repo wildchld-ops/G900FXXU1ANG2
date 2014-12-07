@@ -45,8 +45,6 @@
 
 .method static synthetic access$002(Lcom/android/contacts/activities/GroupEditorActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/GroupEditorActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/GroupEditorActivity;->mIsDoneBtnEnabled:Z
 
@@ -55,7 +53,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/activities/GroupEditorActivity;)Lcom/android/contacts/group/GroupEditorFragment;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/GroupEditorActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/GroupEditorActivity;->mFragment:Lcom/android/contacts/group/GroupEditorFragment;
 
@@ -139,7 +136,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -227,8 +223,6 @@
 
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {p1}, Lcom/android/contacts/util/DialogManager;->isManagedId(I)Z
 
@@ -285,7 +279,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -351,7 +344,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -401,7 +393,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/android/contacts/activities/GroupEditorActivity;->mSaveButton:Landroid/widget/Button;
 

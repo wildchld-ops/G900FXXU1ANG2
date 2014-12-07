@@ -184,7 +184,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Lcom/android/contacts/common/list/ContactTileAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -193,7 +192,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mIsRecreatedInstance:Z
 
@@ -202,7 +200,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Lcom/android/contacts/common/list/ContactTileAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -211,7 +208,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Lcom/android/contacts/common/list/ContactTileAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -220,7 +216,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mContext:Landroid/content/Context;
 
@@ -229,8 +224,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;Z)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->doSelectAllAction(Z)Z
 
@@ -241,8 +234,6 @@
 
 .method static synthetic access$1502(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mShowMaxCountDialog:Z
 
@@ -251,7 +242,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mIsSelectAllTaskRunning:Z
 
@@ -260,8 +250,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mIsSelectAllTaskRunning:Z
 
@@ -270,7 +258,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mEmptyTitleView:Landroid/widget/TextView;
 
@@ -279,7 +266,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mTileEmptyView:Landroid/view/View;
 
@@ -288,7 +274,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mListView:Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
@@ -297,8 +282,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->showSelectAllHeader(Z)V
 
@@ -307,7 +290,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Lcom/android/contacts/common/list/ContactTileAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -316,7 +298,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mSelectedContactHashMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -325,7 +306,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;)Lcom/android/contacts/common/list/ContactTileAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -334,9 +314,6 @@
 
 .method private addSelectedDataInfo(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -461,7 +438,6 @@
 
 .method private doSelectAllAction(Z)Z
     .locals 22
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -910,7 +886,6 @@
 
 .method private makeSelectedInfo(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;)Ljava/lang/String;
     .locals 9
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 
     iget-object v1, p1, Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;->dataId:Ljava/lang/String;
 
@@ -992,8 +967,6 @@
 
 .method private removeContactFromSelectAll(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1028,7 +1001,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -1089,7 +1061,6 @@
 
 .method private updateSelectAllState(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1324,7 +1295,6 @@
 
 .method public getSelectedContactName(Lcom/samsung/contacts/interactions/InteractionContactDatas;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas;
 
     iget-object v0, p1, Lcom/samsung/contacts/interactions/InteractionContactDatas;->mDisplayName:Ljava/lang/String;
 
@@ -1333,10 +1303,6 @@
 
 .method protected inflateAndSetupView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;I)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
 
     const v4, 0x7f030112
 
@@ -1509,8 +1475,6 @@
 
 .method protected isSelectedContact(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1556,7 +1520,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Lcom/android/contacts/list/ContactTileListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1621,7 +1584,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -1655,9 +1617,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f030059
 
@@ -1670,10 +1629,6 @@
 
 .method public onDataChosen(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;Ljava/lang/String;ZLandroid/net/Uri;)V
     .locals 6
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Landroid/net/Uri;
 
     const-wide/16 v0, 0x0
 
@@ -1886,11 +1841,6 @@
 
 .method public onQueryCompleted(Landroid/database/Cursor;Ljava/lang/String;Landroid/net/Uri;ZI)V
     .locals 8
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
-    .param p5    # I
 
     const/4 v7, 0x1
 
@@ -2024,7 +1974,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mTempHashMap:Ljava/util/HashMap;
 
@@ -2197,10 +2146,6 @@
 
 .method public pickContact(Landroid/net/Uri;IIZ)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
@@ -2245,7 +2190,6 @@
 
 .method protected removeContact(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mSelectedContactHashMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -2258,7 +2202,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/list/ContactTileListFragment;->restoreSavedState(Landroid/os/Bundle;)V
 
@@ -2367,7 +2310,6 @@
 
 .method public setColumnCount(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -2378,7 +2320,6 @@
 
 .method public setContactsRequest(Lcom/android/contacts/list/ContactsRequest;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/ContactsRequest;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mRequest:Lcom/android/contacts/list/ContactsRequest;
 
@@ -2387,8 +2328,6 @@
 
 .method protected setDoneButton(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -2461,7 +2400,6 @@
 
 .method public setIsFragmentShowing(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mIsFragmentShowing:Z
 
@@ -2470,9 +2408,6 @@
 
 .method public setMMSinformation(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mActionCode:I
 
@@ -2485,7 +2420,6 @@
 
 .method public setOnMultiDataPickerActionListener(Lcom/samsung/contacts/listener/InteractionListPickerListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;->mListener:Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
@@ -2494,7 +2428,6 @@
 
 .method protected showMaxCountAlertDialog(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 

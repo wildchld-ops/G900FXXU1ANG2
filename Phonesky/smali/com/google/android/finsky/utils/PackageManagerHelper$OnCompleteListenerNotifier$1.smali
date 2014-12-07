@@ -36,8 +36,6 @@
 # virtual methods
 .method public packageInstalled(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 

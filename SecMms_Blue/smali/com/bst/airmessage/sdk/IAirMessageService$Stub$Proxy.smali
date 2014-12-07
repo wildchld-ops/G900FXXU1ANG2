@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -166,7 +165,6 @@
 
 .method public registerCallback(Lcom/bst/airmessage/sdk/IAirMessageCallback;)V
     .locals 5
-    .param p1    # Lcom/bst/airmessage/sdk/IAirMessageCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -291,7 +289,6 @@
 
 .method public unregisterCallback(Lcom/bst/airmessage/sdk/IAirMessageCallback;)V
     .locals 5
-    .param p1    # Lcom/bst/airmessage/sdk/IAirMessageCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -355,7 +352,6 @@
 
 .method public updateReplyMessageStatus(Lcom/bst/airmessage/sdk/ReplyStatus;)V
     .locals 5
-    .param p1    # Lcom/bst/airmessage/sdk/ReplyStatus;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -18,9 +18,6 @@
 
 .method public static getBoolean(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/MethodReflector;->getClass(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -77,7 +74,6 @@
 
 .method public static getClass(Ljava/lang/String;)Ljava/lang/Class;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -153,9 +149,6 @@
 
 .method public static getDouble(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)D
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/MethodReflector;->getClass(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -212,7 +205,6 @@
 
 .method public static getField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -248,8 +240,6 @@
 
 .method public static getFieldValue(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -306,9 +296,6 @@
 
 .method public static getFieldValue(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -356,9 +343,6 @@
 
 .method public static getFloat(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)F
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/MethodReflector;->getClass(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -415,9 +399,6 @@
 
 .method public static getInt(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/MethodReflector;->getClass(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -480,9 +461,6 @@
 
 .method public static getLong(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)J
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/MethodReflector;->getClass(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -539,7 +517,6 @@
 
 .method public static varargs getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -597,8 +574,6 @@
 
 .method public static varargs getMethod(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -657,9 +632,6 @@
 
 .method public static varargs invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 7
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # [Ljava/lang/Object;
 
     const/4 v3, 0x0
 

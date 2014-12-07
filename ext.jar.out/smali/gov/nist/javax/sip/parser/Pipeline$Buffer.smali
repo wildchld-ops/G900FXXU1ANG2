@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/parser/Pipeline;[BI)V
     .locals 1
-    .param p2    # [B
-    .param p3    # I
 
     iput-object p1, p0, Lgov/nist/javax/sip/parser/Pipeline$Buffer;->this$0:Lgov/nist/javax/sip/parser/Pipeline;
 

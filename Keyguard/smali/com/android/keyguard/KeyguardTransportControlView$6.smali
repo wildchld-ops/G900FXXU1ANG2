@@ -33,7 +33,6 @@
 # virtual methods
 .method public onScreenTurnedOff(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$6;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 

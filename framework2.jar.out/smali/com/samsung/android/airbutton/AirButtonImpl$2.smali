@@ -36,16 +36,12 @@
 # virtual methods
 .method public onAnimationStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onFinished(IZZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     if-eqz p2, :cond_0
 

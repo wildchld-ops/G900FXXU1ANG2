@@ -27,37 +27,30 @@
 # virtual methods
 .method public onPackageAdded(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageAvailabilityChanged([Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onPackageChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageFirstLaunch(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageRemoved(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
 

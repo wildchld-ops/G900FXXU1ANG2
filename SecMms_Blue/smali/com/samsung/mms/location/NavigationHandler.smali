@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/mms/location/LocationMapActivity;Lcom/nbi/map/android/MapView;Lcom/nbi/map/android/MapConfiguration;)V
     .locals 1
-    .param p1    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p2    # Lcom/nbi/map/android/MapView;
-    .param p3    # Lcom/nbi/map/android/MapConfiguration;
 
     const/4 v0, 0x0
 
@@ -75,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/samsung/mms/location/NavigationHandler;)Lcom/samsung/mms/location/LocationMapActivity;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/NavigationHandler;
 
     iget-object v0, p0, Lcom/samsung/mms/location/NavigationHandler;->mMainActivity:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -84,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/samsung/mms/location/NavigationHandler;)Lcom/nbi/map/android/MapView;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/NavigationHandler;
 
     iget-object v0, p0, Lcom/samsung/mms/location/NavigationHandler;->mMapView:Lcom/nbi/map/android/MapView;
 
@@ -93,8 +88,6 @@
 
 .method static synthetic access$200(Lcom/samsung/mms/location/NavigationHandler;I)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/NavigationHandler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/NavigationHandler;->performMapZoom(I)V
 
@@ -168,7 +161,6 @@
 
 .method private performMapZoom(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 

@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/SubscriptionsViewBinder;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SubscriptionsViewBinder;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mDestroyed:Z
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/SubscriptionsViewBinder;)Lcom/google/android/finsky/layout/SubscriptionsSection;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SubscriptionsViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mSubscriptionsSection:Lcom/google/android/finsky/layout/SubscriptionsSection;
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/SubscriptionsViewBinder;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SubscriptionsViewBinder;
 
     iget v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mSubscriptionItemLayoutId:I
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/SubscriptionsViewBinder;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SubscriptionsViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mSavedState:Landroid/os/Bundle;
 
@@ -72,7 +68,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/SubscriptionsViewBinder;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SubscriptionsViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mContext:Landroid/content/Context;
 
@@ -81,7 +76,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/activities/SubscriptionsViewBinder;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/SubscriptionsViewBinder;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->rebindViews()V
 
@@ -90,7 +84,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/activities/SubscriptionsViewBinder;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/SubscriptionsViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mContext:Landroid/content/Context;
 
@@ -99,8 +92,6 @@
 
 .method private cancelSubscription(Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -147,7 +138,6 @@
 
 .method private getLibraryAppSubscriptionEntry(Lcom/google/android/finsky/api/model/Document;)Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v5, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mLibraries:Lcom/google/android/finsky/library/Libraries;
 
@@ -222,7 +212,6 @@
 
 .method private getLibraryMagazineSubscriptionEntry(Lcom/google/android/finsky/api/model/Document;)Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -590,13 +579,6 @@
 # virtual methods
 .method public bind(Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/layout/SubscriptionsSection;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/Document;ILandroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Lcom/google/android/finsky/layout/SubscriptionsSection;
-    .param p3    # Lcom/google/android/finsky/api/DfeApi;
-    .param p4    # Lcom/google/android/finsky/api/model/Document;
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mFragment:Landroid/support/v4/app/Fragment;
 
@@ -619,10 +601,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/library/Libraries;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/fragments/DetailsViewBinder;->init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
 
@@ -647,8 +625,6 @@
 
 .method public onCancel(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/LibrarySubscriptionEntry;)V
     .locals 13
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mFragment:Landroid/support/v4/app/Fragment;
 
@@ -796,7 +772,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->rebindViews()V
 
@@ -805,8 +780,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->rebindViews()V
 
@@ -815,8 +788,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const-string v2, "authAccount"
 
@@ -839,7 +810,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SubscriptionsViewBinder;->mSubscriptionsSection:Lcom/google/android/finsky/layout/SubscriptionsSection;
 

@@ -60,7 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -122,8 +121,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/keystore/TimaKeystoreService;Ljava/io/File;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/keystore/TimaKeystoreService;
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/keystore/TimaKeystoreService;->removeUserKeyDirectory(Ljava/io/File;)Z
 
@@ -134,9 +131,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/keystore/TimaKeystoreService;ILjava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/keystore/TimaKeystoreService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/keystore/TimaKeystoreService;->deletePackageRecord(ILjava/lang/String;)Z
 
@@ -147,8 +141,6 @@
 
 .method private deletePackageRecord(ILjava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x2
 
@@ -215,9 +207,6 @@
 
 .method private insertOrUpdatePackageRecord(ILjava/lang/String;Z)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -272,7 +261,6 @@
 
 .method private removeUserKeyDirectory(Ljava/io/File;)Z
     .locals 6
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
@@ -386,8 +374,6 @@
 # virtual methods
 .method public enableTimaKeystore(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     sget-boolean v2, Lcom/android/server/enterprise/keystore/TimaKeystoreService;->DBG:Z
 
@@ -449,7 +435,6 @@
 
 .method public isTimaKeystoreEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -487,8 +472,6 @@
 
 .method public isTimaKeystoreEnabledForPackage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -659,7 +642,6 @@
 
 .method public isTimaKeystoreEnabledInDB(Landroid/app/enterprise/ContextInfo;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x0
 
@@ -805,21 +787,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

@@ -118,7 +118,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x7
 
@@ -361,8 +360,6 @@
 
 .method static synthetic access$1002(Landroid/hardware/scontext/SContextService;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/hardware/scontext/SContextService;->mPedometerDiffInfo:Landroid/os/Bundle;
 
@@ -371,8 +368,6 @@
 
 .method static synthetic access$1100(Landroid/hardware/scontext/SContextService;I)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/SContextService;->removeSContextService(I)V
 
@@ -381,7 +376,6 @@
 
 .method static synthetic access$1200(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/CopyOnWriteArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -390,7 +384,6 @@
 
 .method static synthetic access$1300(Landroid/hardware/scontext/SContextService;)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     invoke-direct {p0}, Landroid/hardware/scontext/SContextService;->showListenerList()V
 
@@ -399,7 +392,6 @@
 
 .method static synthetic access$1500(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mLatestRegisteredListenerMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -408,9 +400,6 @@
 
 .method static synthetic access$300(Landroid/hardware/scontext/SContextService;ILandroid/os/Bundle;)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/scontext/SContextService;->updateSContext(ILandroid/os/Bundle;)V
 
@@ -419,8 +408,6 @@
 
 .method static synthetic access$400(Landroid/hardware/scontext/SContextService;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/SContextService;->updatePedometerInfo(Landroid/os/Bundle;)Landroid/os/Bundle;
 
@@ -431,7 +418,6 @@
 
 .method static synthetic access$500(Landroid/hardware/scontext/SContextService;)I
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget v0, p0, Landroid/hardware/scontext/SContextService;->mAirMotionFeatureLevel:I
 
@@ -440,7 +426,6 @@
 
 .method static synthetic access$600(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/locks/ReentrantLock;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mMutex:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -449,7 +434,6 @@
 
 .method static synthetic access$700(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mUsedServiceMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -458,7 +442,6 @@
 
 .method static synthetic access$800(Landroid/hardware/scontext/SContextService;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mPowerManager:Landroid/os/PowerManager;
 
@@ -467,7 +450,6 @@
 
 .method static synthetic access$900(Landroid/hardware/scontext/SContextService;)I
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget v0, p0, Landroid/hardware/scontext/SContextService;->mPedometerExceptionMode:I
 
@@ -476,8 +458,6 @@
 
 .method static synthetic access$902(Landroid/hardware/scontext/SContextService;I)I
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/scontext/SContextService;->mPedometerExceptionMode:I
 
@@ -486,8 +466,6 @@
 
 .method private addSContextService(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x2
 
@@ -983,8 +961,6 @@
 
 .method private divideReferenceData(I[B)Z
     .locals 6
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v2, 0x0
 
@@ -1038,7 +1014,6 @@
 
 .method private encodeLog(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v5, "ro.debug_level"
 
@@ -1102,8 +1077,6 @@
 
 .method private notifyListeners(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, ""
 
@@ -1186,7 +1159,6 @@
 
 .method private removeSContextService(I)V
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1654,8 +1626,6 @@
 
 .method private sendPropertyToCAE(ILandroid/os/Bundle;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v12, 0x2a
 
@@ -2302,8 +2272,6 @@
 
 .method private sendReferenceDataToCAE(I[B)Z
     .locals 6
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v5, 0x1
 
@@ -2525,7 +2493,6 @@
 
 .method private updatePedometerInfo(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -3217,8 +3184,6 @@
 
 .method private declared-synchronized updateSContext(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     monitor-enter p0
 
@@ -3311,8 +3276,6 @@
 # virtual methods
 .method public changeParameters(Landroid/os/IBinder;Landroid/hardware/scontext/SContextProperty;)Z
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3525,9 +3488,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v6, p0, Landroid/hardware/scontext/SContextService;->mContext:Landroid/content/Context;
 
@@ -3795,8 +3755,6 @@
 
 .method public initializeSContextService(Landroid/os/IBinder;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3979,8 +3937,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;Landroid/hardware/scontext/SContextProperty;)V
     .locals 17
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4365,8 +4321,6 @@
 
 .method public requestToUpdate(Landroid/os/IBinder;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4542,8 +4496,6 @@
 
 .method public setReferenceData(I[B)Z
     .locals 4
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v0, 0x0
 
@@ -4603,8 +4555,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;I)Z
     .locals 13
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

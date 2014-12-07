@@ -20,7 +20,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;->mMaxContactsNumber:I
 
@@ -29,7 +28,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;->mContactsCount:I
 
@@ -38,9 +36,6 @@
 
 .method public static show(Landroid/app/FragmentManager;II)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;
 
@@ -70,7 +65,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -156,7 +150,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -177,7 +170,6 @@
 
 .method public setContactsCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;->mContactsCount:I
 
@@ -186,7 +178,6 @@
 
 .method public setMaxContactsNumber(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/emergency/EmergencyMessageContactAddDialog;->mMaxContactsNumber:I
 

@@ -173,8 +173,6 @@
 
 .method protected constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/MessageChannel;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
-    .param p2    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     const/4 v2, 0x1
 
@@ -362,7 +360,6 @@
 
 .method static synthetic access$000(Lgov/nist/javax/sip/stack/SIPTransaction;)Lgov/nist/javax/sip/stack/MessageChannel;
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
 
@@ -513,7 +510,6 @@
 
 .method public addEventListener(Lgov/nist/javax/sip/stack/SIPTransactionEventListener;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->eventListeners:Ljava/util/Set;
 
@@ -591,7 +587,6 @@
 
 .method public doesCancelMatchTransaction(Lgov/nist/javax/sip/message/SIPRequest;)Z
     .locals 8
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     const/4 v2, 0x0
 
@@ -913,7 +908,6 @@
 
 .method protected final enableRetransmissionTimer(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPTransaction;->isInviteTransaction()Z
 
@@ -948,7 +942,6 @@
 
 .method protected final enableTimeoutTimer(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -1781,7 +1774,6 @@
 
 .method protected raiseErrorEvent(I)V
     .locals 5
-    .param p1    # I
 
     new-instance v1, Lgov/nist/javax/sip/stack/SIPTransactionErrorEvent;
 
@@ -1937,7 +1929,6 @@
 
 .method public removeEventListener(Lgov/nist/javax/sip/stack/SIPTransactionEventListener;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionEventListener;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->eventListeners:Ljava/util/Set;
 
@@ -2024,7 +2015,6 @@
 
 .method public sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2056,10 +2046,6 @@
 
 .method protected sendMessage([BLjava/net/InetAddress;IZ)V
     .locals 2
-    .param p1    # [B
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2077,7 +2063,6 @@
 
 .method public setApplicationData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->applicationData:Ljava/lang/Object;
 
@@ -2086,7 +2071,6 @@
 
 .method public final setBranch(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->branch:Ljava/lang/String;
 
@@ -2098,7 +2082,6 @@
 
 .method public setEncapsulatedChannel(Lgov/nist/javax/sip/stack/MessageChannel;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->encapsulatedChannel:Lgov/nist/javax/sip/stack/MessageChannel;
 
@@ -2119,7 +2102,6 @@
 
 .method public setOriginalRequest(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 4
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->originalRequest:Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -2360,7 +2342,6 @@
 
 .method public setRetransmitTimer(I)V
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -2429,7 +2410,6 @@
 
 .method public setState(Ljavax/sip/TransactionState;)V
     .locals 3
-    .param p1    # Ljavax/sip/TransactionState;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPTransaction;->currentState:Ljavax/sip/TransactionState;
 

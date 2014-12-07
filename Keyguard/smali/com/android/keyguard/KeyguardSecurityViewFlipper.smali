@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -32,8 +31,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ViewFlipper;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -48,8 +45,6 @@
 
 .method private makeChildMeasureSpec(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -91,7 +86,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/keyguard/KeyguardSecurityViewFlipper$LayoutParams;
 
@@ -100,7 +94,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Lcom/android/keyguard/KeyguardSecurityViewFlipper;->generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/keyguard/KeyguardSecurityViewFlipper$LayoutParams;
 
@@ -111,7 +104,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/keyguard/KeyguardSecurityViewFlipper$LayoutParams;
 
@@ -136,7 +128,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/FrameLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Lcom/android/keyguard/KeyguardSecurityViewFlipper;->generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/keyguard/KeyguardSecurityViewFlipper$LayoutParams;
 
@@ -147,7 +138,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/keyguard/KeyguardSecurityViewFlipper$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/keyguard/KeyguardSecurityViewFlipper$LayoutParams;
 
@@ -188,7 +178,6 @@
 
 .method public hideBouncer(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardSecurityViewFlipper;->getSecurityView()Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -260,8 +249,6 @@
 
 .method protected onMeasure(II)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -511,7 +498,6 @@
 
 .method public onResume(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardSecurityViewFlipper;->getSecurityView()Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -527,7 +513,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -622,7 +607,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardSecurityViewFlipper;->getSecurityView()Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -638,7 +622,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 1
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardSecurityViewFlipper;->getSecurityView()Lcom/android/keyguard/KeyguardSecurityView;
 
@@ -654,7 +637,6 @@
 
 .method public showBouncer(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardSecurityViewFlipper;->getSecurityView()Lcom/android/keyguard/KeyguardSecurityView;
 

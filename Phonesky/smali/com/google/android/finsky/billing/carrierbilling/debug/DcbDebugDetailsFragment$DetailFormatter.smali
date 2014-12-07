@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDetail;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDetail;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

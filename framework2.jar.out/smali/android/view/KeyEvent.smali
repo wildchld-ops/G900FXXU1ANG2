@@ -997,8 +997,6 @@
 
 .method public constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1021,11 +1019,6 @@
 
 .method public constructor <init>(JJIII)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1052,12 +1045,6 @@
 
 .method public constructor <init>(JJIIII)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1086,14 +1073,6 @@
 
 .method public constructor <init>(JJIIIIII)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1122,15 +1101,6 @@
 
 .method public constructor <init>(JJIIIIIII)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1161,16 +1131,6 @@
 
 .method public constructor <init>(JJIIIIIIII)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1203,17 +1163,6 @@
 
 .method public constructor <init>(JJIIIIIIIII)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1244,10 +1193,6 @@
 
 .method public constructor <init>(JLjava/lang/String;II)V
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -1282,7 +1227,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1357,7 +1301,6 @@
 
 .method public constructor <init>(Landroid/view/KeyEvent;)V
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1414,8 +1357,6 @@
 
 .method private constructor <init>(Landroid/view/KeyEvent;I)V
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/view/InputEvent;-><init>()V
 
@@ -1466,9 +1407,6 @@
 
 .method public constructor <init>(Landroid/view/KeyEvent;JI)V
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # J
-    .param p4    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1523,8 +1461,6 @@
 
 .method static synthetic access$076(Landroid/view/KeyEvent;I)I
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # I
 
     iget v0, p0, Landroid/view/KeyEvent;->mFlags:I
 
@@ -1537,7 +1473,6 @@
 
 .method public static actionToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1575,8 +1510,6 @@
 
 .method public static changeAction(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -1587,8 +1520,6 @@
 
 .method public static changeFlags(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -1601,9 +1532,6 @@
 
 .method public static changeTimeRepeat(Landroid/view/KeyEvent;JI)Landroid/view/KeyEvent;
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # J
-    .param p3    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -1614,10 +1542,6 @@
 
 .method public static changeTimeRepeat(Landroid/view/KeyEvent;JII)Landroid/view/KeyEvent;
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -1634,7 +1558,6 @@
 
 .method public static createFromParcelBody(Landroid/os/Parcel;)Landroid/view/KeyEvent;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -1645,8 +1568,6 @@
 
 .method public static getDeadChar(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/view/KeyCharacterMap;->getDeadChar(II)I
 
@@ -1673,7 +1594,6 @@
 
 .method public static final isConfirmKey(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1698,7 +1618,6 @@
 
 .method public static final isGamepadButton(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1752,7 +1671,6 @@
 
 .method public static isModifierKey(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1787,7 +1705,6 @@
 
 .method public static keyCodeFromString(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -1853,7 +1770,6 @@
 
 .method public static keyCodeToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     sget-object v1, Landroid/view/KeyEvent;->KEYCODE_SYMBOLIC_NAMES:Landroid/util/SparseArray;
 
@@ -1878,11 +1794,6 @@
 
 .method private static metaStateFilterDirectionalModifiers(IIIII)I
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -1993,8 +1904,6 @@
 
 .method public static metaStateHasModifiers(II)Z
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2072,7 +1981,6 @@
 
 .method public static metaStateHasNoModifiers(I)Z
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/KeyEvent;->normalizeMetaState(I)I
 
@@ -2097,7 +2005,6 @@
 
 .method public static metaStateToString(I)Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     if-nez p0, :cond_1
 
@@ -2174,7 +2081,6 @@
 
 .method public static normalizeMetaState(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit16 v0, p0, 0xc0
 
@@ -2295,18 +2201,6 @@
 
 .method public static obtain(JJIIIIIIIIILjava/lang/String;)Landroid/view/KeyEvent;
     .locals 1
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Ljava/lang/String;
 
     invoke-static {}, Landroid/view/KeyEvent;->obtain()Landroid/view/KeyEvent;
 
@@ -2341,17 +2235,6 @@
 
 .method public static obtain(JJIIIIIIIILjava/lang/String;)Landroid/view/KeyEvent;
     .locals 2
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # Ljava/lang/String;
 
     invoke-static {}, Landroid/view/KeyEvent;->obtain()Landroid/view/KeyEvent;
 
@@ -2388,7 +2271,6 @@
 
 .method public static obtain(Landroid/view/KeyEvent;)Landroid/view/KeyEvent;
     .locals 3
-    .param p0    # Landroid/view/KeyEvent;
 
     invoke-static {}, Landroid/view/KeyEvent;->obtain()Landroid/view/KeyEvent;
 
@@ -4211,7 +4093,6 @@
 
 .method public final dispatch(Landroid/view/KeyEvent$Callback;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent$Callback;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4226,9 +4107,6 @@
 
 .method public final dispatch(Landroid/view/KeyEvent$Callback;Landroid/view/KeyEvent$DispatcherState;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/view/KeyEvent$Callback;
-    .param p2    # Landroid/view/KeyEvent$DispatcherState;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -4487,7 +4365,6 @@
 
 .method public getKeyData(Landroid/view/KeyCharacterMap$KeyData;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyCharacterMap$KeyData;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4516,7 +4393,6 @@
 
 .method public getMatch([C)C
     .locals 1
-    .param p1    # [C
 
     const/4 v0, 0x0
 
@@ -4529,8 +4405,6 @@
 
 .method public getMatch([CI)C
     .locals 2
-    .param p1    # [C
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getKeyCharacterMap()Landroid/view/KeyCharacterMap;
 
@@ -4623,7 +4497,6 @@
 
 .method public getUnicodeChar(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getKeyCharacterMap()Landroid/view/KeyCharacterMap;
 
@@ -4652,7 +4525,6 @@
 
 .method public final hasModifiers(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/KeyEvent;->mMetaState:I
 
@@ -5115,7 +4987,6 @@
 
 .method public final setSource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/KeyEvent;->mSource:I
 
@@ -5124,7 +4995,6 @@
 
 .method public final setTainted(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -5334,8 +5204,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x2
 

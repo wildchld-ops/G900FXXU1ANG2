@@ -275,8 +275,6 @@
 
 .method public static canRate(Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/api/model/Document;)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v2, 0x1
 
@@ -316,7 +314,6 @@
 
 .method public static docidToBackend(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v2, "[:-]"
 
@@ -375,7 +372,6 @@
 
 .method private static extractPackageNameForInApp(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x3a
 
@@ -416,7 +412,6 @@
 
 .method public static extractSkuForInApp(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x3a
 
@@ -453,7 +448,6 @@
 
 .method public static getAvailabilityRestrictionResourceId(Lcom/google/android/finsky/api/model/Document;)I
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/Document;->getAvailabilityRestriction()I
 
@@ -554,9 +548,6 @@
 
 .method public static getListingOffer(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/protos/Common$Offer;
     .locals 11
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Lcom/google/android/finsky/library/Library;
 
     const/4 v10, 0x1
 
@@ -669,7 +660,6 @@
 
 .method public static getLowestPricedOffer(Ljava/util/List;Z)Lcom/google/android/finsky/protos/Common$Offer;
     .locals 11
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -757,7 +747,6 @@
 
 .method public static getMagazineCurrentIssueDocument(Lcom/google/android/finsky/api/model/Document;)Lcom/google/android/finsky/api/model/Document;
     .locals 3
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/Document;->getDocumentType()I
 
@@ -827,9 +816,6 @@
 
 .method public static getMagazineIssueOffer(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/protos/Common$Offer;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Lcom/google/android/finsky/library/Library;
 
     const/4 v1, 0x0
 
@@ -883,7 +869,6 @@
 
 .method public static getMusicSubscriptionDocid(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -975,7 +960,6 @@
 
 .method private static getOfferDiscountRatio(Lcom/google/android/finsky/protos/Common$Offer;)F
     .locals 9
-    .param p0    # Lcom/google/android/finsky/protos/Common$Offer;
 
     const-wide/16 v7, 0x0
 
@@ -1015,9 +999,6 @@
 
 .method public static getOfferWithLargestDiscountIfAny(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/protos/Common$Offer;
     .locals 13
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Lcom/google/android/finsky/library/Library;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/Document;->getDocumentType()I
 
@@ -1186,7 +1167,6 @@
 
 .method public static getPackageNameForInApp(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "inapp:"
 
@@ -1211,7 +1191,6 @@
 
 .method public static getPackageNameForSubscription(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "subs:"
 
@@ -1236,9 +1215,6 @@
 
 .method public static getSubscriptions(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/library/Library;)Ljava/util/List;
     .locals 6
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Lcom/google/android/finsky/library/Library;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1316,8 +1292,6 @@
 
 .method public static hasAutoRenewingSubscriptions(Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/api/model/Document;)Z
     .locals 8
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getBackend()I
 
@@ -1402,7 +1376,6 @@
 
 .method public static hasDiscount(Lcom/google/android/finsky/protos/Common$Offer;)Z
     .locals 2
-    .param p0    # Lcom/google/android/finsky/protos/Common$Offer;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/DocUtils;->getOfferDiscountRatio(Lcom/google/android/finsky/protos/Common$Offer;)F
 
@@ -1427,7 +1400,6 @@
 
 .method public static isInAppDocid(Lcom/google/android/finsky/protos/Common$Docid;)Z
     .locals 2
-    .param p0    # Lcom/google/android/finsky/protos/Common$Docid;
 
     iget v0, p0, Lcom/google/android/finsky/protos/Common$Docid;->backend:I
 
@@ -1461,8 +1433,6 @@
 
 .method public static packageHasAutoRenewingSubscriptions(Lcom/google/android/finsky/library/Libraries;Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/library/Libraries;->getAccountLibraries()Ljava/util/List;
 

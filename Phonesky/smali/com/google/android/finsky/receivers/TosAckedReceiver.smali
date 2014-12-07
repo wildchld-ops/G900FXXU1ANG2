@@ -14,10 +14,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/receivers/TosAckedReceiver;Ljava/lang/String;ZLcom/google/android/finsky/api/model/DfeToc;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/TosAckedReceiver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/receivers/TosAckedReceiver;->ackTos(Ljava/lang/String;ZLcom/google/android/finsky/api/model/DfeToc;)V
 
@@ -26,9 +22,6 @@
 
 .method private ackTos(Ljava/lang/String;ZLcom/google/android/finsky/api/model/DfeToc;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -75,8 +68,6 @@
 
 .method private fetchToc(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -113,8 +104,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 

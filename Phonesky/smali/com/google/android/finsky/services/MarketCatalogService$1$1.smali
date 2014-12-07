@@ -48,7 +48,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/MarketCatalogService$1$1;->val$sem:Ljava/util/concurrent/Semaphore;
 
@@ -59,7 +58,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Toc$TocResponse;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/Toc$TocResponse;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/Toc$TocResponse;->corpus:[Lcom/google/android/finsky/protos/Toc$CorpusMetadata;
 

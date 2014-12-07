@@ -12,7 +12,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,7 +22,6 @@
 
 .method private resetOptionMenu(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-interface {p1}, Landroid/view/Menu;->size()I
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected configureCommon(Landroid/view/Menu;)V
     .locals 20
-    .param p1    # Landroid/view/Menu;
 
     const v18, 0x7f080317
 
@@ -719,7 +716,6 @@
 
 .method protected configureFlagship(Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
 
     return-void
 .end method
@@ -729,7 +725,6 @@
 
 .method public configureVisibility(Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/controller/CallDetailOptionsMenuController;->resetOptionMenu(Landroid/view/Menu;)V
 

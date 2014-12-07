@@ -42,7 +42,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/i18n/addressinput/AddressData$Builder;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressData$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -208,8 +207,6 @@
 
 .method synthetic constructor <init>(Lcom/android/i18n/addressinput/AddressData$Builder;Lcom/android/i18n/addressinput/AddressData$1;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/AddressData$Builder;
-    .param p2    # Lcom/android/i18n/addressinput/AddressData$1;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/AddressData;-><init>(Lcom/android/i18n/addressinput/AddressData$Builder;)V
 
@@ -252,7 +249,6 @@
 
 .method public getFieldValue(Lcom/android/i18n/addressinput/AddressField;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     sget-object v0, Lcom/android/i18n/addressinput/AddressData$1;->$SwitchMap$com$android$i18n$addressinput$AddressField:[I
 

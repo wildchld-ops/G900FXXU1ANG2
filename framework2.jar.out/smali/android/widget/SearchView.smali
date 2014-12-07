@@ -124,7 +124,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -135,8 +134,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -572,7 +569,6 @@
 
 .method static synthetic access$000(Landroid/widget/SearchView;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
 
     invoke-direct {p0}, Landroid/widget/SearchView;->updateFocusedState()V
 
@@ -581,7 +577,6 @@
 
 .method static synthetic access$100(Landroid/widget/SearchView;)Landroid/widget/CursorAdapter;
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mSuggestionsAdapter:Landroid/widget/CursorAdapter;
 
@@ -590,7 +585,6 @@
 
 .method static synthetic access$1000(Landroid/widget/SearchView;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mVoiceButton:Landroid/view/View;
 
@@ -599,7 +593,6 @@
 
 .method static synthetic access$1100(Landroid/widget/SearchView;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
 
     invoke-direct {p0}, Landroid/widget/SearchView;->onVoiceClicked()V
 
@@ -608,7 +601,6 @@
 
 .method static synthetic access$1200(Landroid/widget/SearchView;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
 
     invoke-direct {p0}, Landroid/widget/SearchView;->forceSuggestionQuery()V
 
@@ -617,7 +609,6 @@
 
 .method static synthetic access$1300(Landroid/widget/SearchView;)Landroid/app/SearchableInfo;
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
@@ -626,10 +617,6 @@
 
 .method static synthetic access$1400(Landroid/widget/SearchView;Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/SearchView;->onSuggestionsKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -640,10 +627,6 @@
 
 .method static synthetic access$1600(Landroid/widget/SearchView;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/SearchView;->launchQuerySearch(ILjava/lang/String;Ljava/lang/String;)V
 
@@ -652,10 +635,6 @@
 
 .method static synthetic access$1700(Landroid/widget/SearchView;IILjava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/SearchView;->onItemClicked(IILjava/lang/String;)Z
 
@@ -666,8 +645,6 @@
 
 .method static synthetic access$1800(Landroid/widget/SearchView;I)Z
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/SearchView;->onItemSelected(I)Z
 
@@ -678,8 +655,6 @@
 
 .method static synthetic access$1900(Landroid/widget/SearchView;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1}, Landroid/widget/SearchView;->onTextChanged(Ljava/lang/CharSequence;)V
 
@@ -688,7 +663,6 @@
 
 .method static synthetic access$200(Landroid/widget/SearchView;)Landroid/view/View$OnFocusChangeListener;
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mOnQueryTextFocusChangeListener:Landroid/view/View$OnFocusChangeListener;
 
@@ -697,7 +671,6 @@
 
 .method static synthetic access$300(Landroid/widget/SearchView;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
 
     invoke-direct {p0}, Landroid/widget/SearchView;->adjustDropDownSizeAndPosition()V
 
@@ -706,7 +679,6 @@
 
 .method static synthetic access$400(Landroid/widget/SearchView;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mSearchButton:Landroid/view/View;
 
@@ -715,7 +687,6 @@
 
 .method static synthetic access$500(Landroid/widget/SearchView;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
 
     invoke-direct {p0}, Landroid/widget/SearchView;->onSearchClicked()V
 
@@ -724,7 +695,6 @@
 
 .method static synthetic access$600(Landroid/widget/SearchView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mCloseButton:Landroid/widget/ImageView;
 
@@ -733,7 +703,6 @@
 
 .method static synthetic access$700(Landroid/widget/SearchView;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
 
     invoke-direct {p0}, Landroid/widget/SearchView;->onCloseClicked()V
 
@@ -742,7 +711,6 @@
 
 .method static synthetic access$800(Landroid/widget/SearchView;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/widget/SearchView;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mSubmitButton:Landroid/view/View;
 
@@ -751,7 +719,6 @@
 
 .method static synthetic access$900(Landroid/widget/SearchView;)V
     .locals 0
-    .param p0    # Landroid/widget/SearchView;
 
     invoke-direct {p0}, Landroid/widget/SearchView;->onSubmitQuery()V
 
@@ -925,12 +892,6 @@
 
 .method private createIntent(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1000,9 +961,6 @@
 
 .method private createIntentFromSuggestion(Landroid/database/Cursor;ILjava/lang/String;)Landroid/content/Intent;
     .locals 12
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     const-string/jumbo v0, "suggest_intent_action"
@@ -1169,8 +1127,6 @@
 
 .method private createVoiceAppSearchIntent(Landroid/content/Intent;Landroid/app/SearchableInfo;)Landroid/content/Intent;
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/app/SearchableInfo;
 
     invoke-virtual {p2}, Landroid/app/SearchableInfo;->getSearchActivity()Landroid/content/ComponentName;
 
@@ -1328,8 +1284,6 @@
 
 .method private createVoiceWebSearchIntent(Landroid/content/Intent;Landroid/app/SearchableInfo;)Landroid/content/Intent;
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/app/SearchableInfo;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -1384,8 +1338,6 @@
 
 .method private static getActionKeyMessage(Landroid/database/Cursor;Landroid/app/SearchableInfo$ActionKeyInfo;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/app/SearchableInfo$ActionKeyInfo;
 
     const/4 v1, 0x0
 
@@ -1412,7 +1364,6 @@
 
 .method private getDecoratedHint(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v10, 0x1
 
@@ -1707,7 +1658,6 @@
 
 .method static isLandscapeMode(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1765,7 +1715,6 @@
 
 .method private launchIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_0
 
@@ -1814,9 +1763,6 @@
 
 .method private launchQuerySearch(ILjava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1847,9 +1793,6 @@
 
 .method private launchSuggestion(IILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/widget/SearchView;->mSuggestionsAdapter:Landroid/widget/CursorAdapter;
 
@@ -1967,9 +1910,6 @@
 
 .method private onItemClicked(IILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2002,7 +1942,6 @@
 
 .method private onItemSelected(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/SearchView;->mOnSuggestionListener:Landroid/widget/SearchView$OnSuggestionListener;
 
@@ -2140,9 +2079,6 @@
 
 .method private onSuggestionsKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/16 v8, 0x15
 
@@ -2322,7 +2258,6 @@
 
 .method private onTextChanged(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -2487,7 +2422,6 @@
 
 .method private rewriteQueryFromSuggestion(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/widget/SearchView;->mQueryTextView:Landroid/widget/SearchView$SearchAutoComplete;
 
@@ -2538,7 +2472,6 @@
 
 .method private setImeVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -2582,7 +2515,6 @@
 
 .method private setQuery(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/widget/SearchView;->mQueryTextView:Landroid/widget/SearchView$SearchAutoComplete;
 
@@ -3013,7 +2945,6 @@
 
 .method private updateSubmitButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v0, 0x8
 
@@ -3052,7 +2983,6 @@
 
 .method private updateViewsVisibility(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -3145,7 +3075,6 @@
 
 .method private updateVoiceButton(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v0, 0x8
 
@@ -3419,7 +3348,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -3436,7 +3364,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -3453,8 +3380,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v1, p0, Landroid/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
@@ -3510,8 +3435,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/widget/SearchView;->isIconified()Z
 
@@ -3611,7 +3534,6 @@
 
 .method onQueryRefine(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1}, Landroid/widget/SearchView;->setQuery(Ljava/lang/CharSequence;)V
 
@@ -3620,7 +3542,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/SearchView;->mQueryTextView:Landroid/widget/SearchView$SearchAutoComplete;
 
@@ -3656,7 +3577,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
@@ -3667,8 +3587,6 @@
 
 .method public requestFocus(ILandroid/graphics/Rect;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 
@@ -3722,7 +3640,6 @@
 
 .method public setAppSearchData(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mAppSearchData:Landroid/os/Bundle;
 
@@ -3731,7 +3648,6 @@
 
 .method public setIconified(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -3748,7 +3664,6 @@
 
 .method public setIconifiedByDefault(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/SearchView;->mIconifiedByDefault:Z
 
@@ -3769,7 +3684,6 @@
 
 .method public setImeOptions(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/SearchView;->mQueryTextView:Landroid/widget/SearchView$SearchAutoComplete;
 
@@ -3780,7 +3694,6 @@
 
 .method public setInputType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/SearchView;->mQueryTextView:Landroid/widget/SearchView$SearchAutoComplete;
 
@@ -3791,7 +3704,6 @@
 
 .method public setMaxWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/SearchView;->mMaxWidth:I
 
@@ -3802,7 +3714,6 @@
 
 .method public setOnCloseListener(Landroid/widget/SearchView$OnCloseListener;)V
     .locals 0
-    .param p1    # Landroid/widget/SearchView$OnCloseListener;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mOnCloseListener:Landroid/widget/SearchView$OnCloseListener;
 
@@ -3811,7 +3722,6 @@
 
 .method public setOnQueryTextFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnFocusChangeListener;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mOnQueryTextFocusChangeListener:Landroid/view/View$OnFocusChangeListener;
 
@@ -3820,7 +3730,6 @@
 
 .method public setOnQueryTextListener(Landroid/widget/SearchView$OnQueryTextListener;)V
     .locals 0
-    .param p1    # Landroid/widget/SearchView$OnQueryTextListener;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mOnQueryChangeListener:Landroid/widget/SearchView$OnQueryTextListener;
 
@@ -3829,7 +3738,6 @@
 
 .method public setOnSearchClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mOnSearchClickListener:Landroid/view/View$OnClickListener;
 
@@ -3838,7 +3746,6 @@
 
 .method public setOnSuggestionListener(Landroid/widget/SearchView$OnSuggestionListener;)V
     .locals 0
-    .param p1    # Landroid/widget/SearchView$OnSuggestionListener;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mOnSuggestionListener:Landroid/widget/SearchView$OnSuggestionListener;
 
@@ -3847,8 +3754,6 @@
 
 .method public setQuery(Ljava/lang/CharSequence;Z)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/widget/SearchView;->mQueryTextView:Landroid/widget/SearchView$SearchAutoComplete;
 
@@ -3885,7 +3790,6 @@
 
 .method public setQueryHint(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mQueryHint:Ljava/lang/CharSequence;
 
@@ -3896,7 +3800,6 @@
 
 .method public setQueryRefinementEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/SearchView;->mQueryRefinement:Z
 
@@ -3928,7 +3831,6 @@
 
 .method public setSearchableInfo(Landroid/app/SearchableInfo;)V
     .locals 2
-    .param p1    # Landroid/app/SearchableInfo;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mSearchable:Landroid/app/SearchableInfo;
 
@@ -3969,7 +3871,6 @@
 
 .method public setSubmitButtonEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/SearchView;->mSubmitButtonEnabled:Z
 
@@ -3984,7 +3885,6 @@
 
 .method public setSuggestionsAdapter(Landroid/widget/CursorAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/CursorAdapter;
 
     iput-object p1, p0, Landroid/widget/SearchView;->mSuggestionsAdapter:Landroid/widget/CursorAdapter;
 

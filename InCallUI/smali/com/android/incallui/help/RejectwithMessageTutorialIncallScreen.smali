@@ -185,7 +185,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     invoke-direct {p0}, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->showToast()V
 
@@ -194,7 +193,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mSendMsgTip:Landroid/widget/FrameLayout;
 
@@ -203,7 +201,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     invoke-direct {p0}, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->hideDragUpAnimation()V
 
@@ -212,7 +209,6 @@
 
 .method static synthetic access$1100(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mrejectMsgTip:Landroid/widget/FrameLayout;
 
@@ -221,7 +217,6 @@
 
 .method static synthetic access$1200(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)[Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mDragUpList:[Landroid/graphics/drawable/AnimationDrawable;
 
@@ -230,7 +225,6 @@
 
 .method static synthetic access$1300(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)[Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mDragUpImageView:[Landroid/widget/ImageView;
 
@@ -239,7 +233,6 @@
 
 .method static synthetic access$1400(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mBubbleCount:I
 
@@ -248,7 +241,6 @@
 
 .method static synthetic access$1408(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mBubbleCount:I
 
@@ -261,7 +253,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mSendMsgTipBubble:Landroid/widget/FrameLayout;
 
@@ -270,7 +261,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mSendMsgComplete:Landroid/widget/FrameLayout;
 
@@ -279,7 +269,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mBubbleAnimation2:Landroid/view/animation/Animation;
 
@@ -288,7 +277,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mIncomingCallWidget:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 
@@ -297,7 +285,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mShowAnimation:Landroid/view/animation/Animation;
 
@@ -306,7 +293,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -315,7 +301,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -324,7 +309,6 @@
 
 .method static synthetic access$900(Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectwithMessageTutorialIncallScreen;->mRejectCallWithMsgHandle:Landroid/widget/LinearLayout;
 
@@ -333,7 +317,6 @@
 
 .method private buttonAnimationInit(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f050003
 
@@ -548,7 +531,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 7
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v6, 0x0
 
@@ -706,7 +688,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const v11, 0x7f080234
 
@@ -1197,8 +1178,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
@@ -1275,8 +1254,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 

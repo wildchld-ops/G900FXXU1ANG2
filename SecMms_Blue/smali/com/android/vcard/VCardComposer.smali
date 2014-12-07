@@ -180,7 +180,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     sget v0, Lcom/android/vcard/VCardConfig;->VCARD_TYPE_DEFAULT:I
 
@@ -195,8 +194,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -209,9 +206,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -222,10 +216,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;Z)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -248,9 +238,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IZ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -261,11 +248,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/ContentResolver;ILjava/lang/String;Z)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/4 v0, 0x1
 
@@ -470,8 +452,6 @@
 
 .method private createOneEntryInternal(Ljava/lang/String;Ljava/lang/reflect/Method;)Ljava/lang/String;
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/reflect/Method;
 
     new-instance v10, Ljava/util/HashMap;
 
@@ -819,11 +799,6 @@
 
 .method private initInterCursorCreationPart(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -968,7 +943,6 @@
 
 .method private initInterFirstPart(Landroid/net/Uri;)Z
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -1065,7 +1039,6 @@
 
 .method private isSimcardAccount(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1488,7 +1461,6 @@
 
 .method public createOneEntry(Ljava/lang/reflect/Method;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/reflect/Method;
 
     iget-boolean v1, p0, Lcom/android/vcard/VCardComposer;->mIsDoCoMo:Z
 
@@ -1617,7 +1589,6 @@
 
 .method public init(Landroid/database/Cursor;)Z
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -1655,10 +1626,6 @@
 
 .method public init(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/vcard/VCardComposer;->sContactsProjection:[Ljava/lang/String;
 
@@ -1683,11 +1650,6 @@
 
 .method public init(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)Z
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/net/Uri;
 
     sget-object v2, Lcom/android/vcard/VCardComposer;->sContactsProjection:[Ljava/lang/String;
 
@@ -1712,12 +1674,6 @@
 
 .method public init(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)Z
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -1769,8 +1725,6 @@
 
 .method public init(Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1795,7 +1749,6 @@
 
 .method public initWithRawContactsEntityUri(Landroid/net/Uri;)Z
     .locals 7
-    .param p1    # Landroid/net/Uri;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1850,7 +1803,6 @@
 
 .method public setPhoneNumberTranslationCallback(Lcom/android/vcard/VCardPhoneNumberTranslationCallback;)V
     .locals 0
-    .param p1    # Lcom/android/vcard/VCardPhoneNumberTranslationCallback;
 
     iput-object p1, p0, Lcom/android/vcard/VCardComposer;->mPhoneTranslationCallback:Lcom/android/vcard/VCardPhoneNumberTranslationCallback;
 

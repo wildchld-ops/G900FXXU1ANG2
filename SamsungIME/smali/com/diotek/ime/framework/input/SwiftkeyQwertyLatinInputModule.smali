@@ -14,7 +14,6 @@
 
 .method private composingForLao(I)I
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0xeb5
 
@@ -127,7 +126,6 @@
 
 .method private isAcceptableThai(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1356,8 +1354,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 23
-    .param p1    # I
-    .param p2    # [I
 
     move-object/from16 v0, p0
 
@@ -3104,8 +3100,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v11, 0x20
 
@@ -3634,8 +3628,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 11
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v9, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -3956,16 +3948,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v10, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -4393,8 +4381,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v9, 0x20
 

@@ -309,7 +309,6 @@
 
 .method static synthetic access$000(Lcom/android/dialer/calllog/CallLogFragment;)Lcom/android/contacts/activities/PeopleActivity;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mActivity:Lcom/android/contacts/activities/PeopleActivity;
 
@@ -318,7 +317,6 @@
 
 .method static synthetic access$100(Lcom/android/dialer/calllog/CallLogFragment;)Landroid/app/KeyguardManager;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mKeyguardManager:Landroid/app/KeyguardManager;
 
@@ -327,8 +325,6 @@
 
 .method static synthetic access$1000(Lcom/android/dialer/calllog/CallLogFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/dialer/calllog/CallLogFragment;->updateSelectAllState(Z)V
 
@@ -337,8 +333,6 @@
 
 .method static synthetic access$1100(Lcom/android/dialer/calllog/CallLogFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/dialer/calllog/CallLogFragment;->showSelectAllHeader(Z)V
 
@@ -347,7 +341,6 @@
 
 .method static synthetic access$1200(Lcom/android/dialer/calllog/CallLogFragment;)Lcom/samsung/contacts/listener/ContextualActionbarListener;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mCABListener:Lcom/samsung/contacts/listener/ContextualActionbarListener;
 
@@ -356,7 +349,6 @@
 
 .method static synthetic access$1300(Lcom/android/dialer/calllog/CallLogFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-boolean v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mIsDeleteDlgShowing:Z
 
@@ -365,8 +357,6 @@
 
 .method static synthetic access$1302(Lcom/android/dialer/calllog/CallLogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mIsDeleteDlgShowing:Z
 
@@ -375,7 +365,6 @@
 
 .method static synthetic access$1400(Lcom/android/dialer/calllog/CallLogFragment;)I
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mDeleteOp:I
 
@@ -384,8 +373,6 @@
 
 .method static synthetic access$1402(Lcom/android/dialer/calllog/CallLogFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mDeleteOp:I
 
@@ -394,8 +381,6 @@
 
 .method static synthetic access$1500(Lcom/android/dialer/calllog/CallLogFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/dialer/calllog/CallLogFragment;->showDeleteConfirmDlg(I)V
 
@@ -404,7 +389,6 @@
 
 .method static synthetic access$1600(Lcom/android/dialer/calllog/CallLogFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-boolean v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mMultiSelectEnabled:Z
 
@@ -413,8 +397,6 @@
 
 .method static synthetic access$1602(Lcom/android/dialer/calllog/CallLogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mMultiSelectEnabled:Z
 
@@ -423,8 +405,6 @@
 
 .method static synthetic access$1700(Lcom/android/dialer/calllog/CallLogFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/dialer/calllog/CallLogFragment;->getSelectedItemInfo(I)V
 
@@ -433,7 +413,6 @@
 
 .method static synthetic access$1800(Lcom/android/dialer/calllog/CallLogFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-boolean v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mDeleteOnlyMode:Z
 
@@ -442,8 +421,6 @@
 
 .method static synthetic access$1802(Lcom/android/dialer/calllog/CallLogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mDeleteOnlyMode:Z
 
@@ -452,7 +429,6 @@
 
 .method static synthetic access$1900(Lcom/android/dialer/calllog/CallLogFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSelectedNumber:Ljava/lang/String;
 
@@ -461,7 +437,6 @@
 
 .method static synthetic access$200(Lcom/android/dialer/calllog/CallLogFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSwipeCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -470,7 +445,6 @@
 
 .method static synthetic access$2000(Lcom/android/dialer/calllog/CallLogFragment;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSelectedItemsInfo:Ljava/util/HashMap;
 
@@ -479,7 +453,6 @@
 
 .method static synthetic access$2100(Lcom/android/dialer/calllog/CallLogFragment;)I
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mCallType:I
 
@@ -488,7 +461,6 @@
 
 .method static synthetic access$2200(Lcom/android/dialer/calllog/CallLogFragment;)I
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mLogType:I
 
@@ -497,8 +469,6 @@
 
 .method static synthetic access$2302(Lcom/android/dialer/calllog/CallLogFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mLimitedItemId:J
 
@@ -507,7 +477,6 @@
 
 .method static synthetic access$2400(Lcom/android/dialer/calllog/CallLogFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSelectedName:Ljava/lang/String;
 
@@ -516,8 +485,6 @@
 
 .method static synthetic access$2502(Lcom/android/dialer/calllog/CallLogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mIsRejectDlgShowing:Z
 
@@ -526,7 +493,6 @@
 
 .method static synthetic access$2600(Lcom/android/dialer/calllog/CallLogFragment;)J
     .locals 2
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-wide v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mTime:J
 
@@ -535,7 +501,6 @@
 
 .method static synthetic access$2700(Lcom/android/dialer/calllog/CallLogFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-boolean v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mShowDelProgressDlg:Z
 
@@ -544,8 +509,6 @@
 
 .method static synthetic access$2702(Lcom/android/dialer/calllog/CallLogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mShowDelProgressDlg:Z
 
@@ -554,7 +517,6 @@
 
 .method static synthetic access$2800(Lcom/android/dialer/calllog/CallLogFragment;)Lcom/android/dialer/calllog/CallLogFragment$PerformScan;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->preformScanThread:Lcom/android/dialer/calllog/CallLogFragment$PerformScan;
 
@@ -563,8 +525,6 @@
 
 .method static synthetic access$2802(Lcom/android/dialer/calllog/CallLogFragment;Lcom/android/dialer/calllog/CallLogFragment$PerformScan;)Lcom/android/dialer/calllog/CallLogFragment$PerformScan;
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Lcom/android/dialer/calllog/CallLogFragment$PerformScan;
 
     iput-object p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->preformScanThread:Lcom/android/dialer/calllog/CallLogFragment$PerformScan;
 
@@ -573,7 +533,6 @@
 
 .method static synthetic access$2900(Lcom/android/dialer/calllog/CallLogFragment;)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     invoke-direct {p0}, Lcom/android/dialer/calllog/CallLogFragment;->showProgress()V
 
@@ -582,7 +541,6 @@
 
 .method static synthetic access$300(Lcom/android/dialer/calllog/CallLogFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mContext:Landroid/content/Context;
 
@@ -591,7 +549,6 @@
 
 .method static synthetic access$3000(Lcom/android/dialer/calllog/CallLogFragment;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->delprogressdlg:Landroid/app/ProgressDialog;
 
@@ -600,9 +557,6 @@
 
 .method static synthetic access$3100(Lcom/android/dialer/calllog/CallLogFragment;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/dialer/calllog/CallLogFragment;->updateOnTransition(ZZ)V
 
@@ -611,7 +565,6 @@
 
 .method static synthetic access$3200(Lcom/android/dialer/calllog/CallLogFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -620,7 +573,6 @@
 
 .method static synthetic access$400(Lcom/android/dialer/calllog/CallLogFragment;)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     invoke-direct {p0}, Lcom/android/dialer/calllog/CallLogFragment;->setSwipePopupPref()V
 
@@ -629,7 +581,6 @@
 
 .method static synthetic access$500(Lcom/android/dialer/calllog/CallLogFragment;)Lcom/android/dialer/calllog/CallLogAdapter;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mAdapter:Lcom/android/dialer/calllog/CallLogAdapter;
 
@@ -638,7 +589,6 @@
 
 .method static synthetic access$700(Lcom/android/dialer/calllog/CallLogFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-boolean v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mResetMissedCheck:Z
 
@@ -647,8 +597,6 @@
 
 .method static synthetic access$702(Lcom/android/dialer/calllog/CallLogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mResetMissedCheck:Z
 
@@ -657,7 +605,6 @@
 
 .method static synthetic access$800(Lcom/android/dialer/calllog/CallLogFragment;)Lcom/android/dialer/calllog/CallLogFragment$UnlockReceiver;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->unlockReceiver:Lcom/android/dialer/calllog/CallLogFragment$UnlockReceiver;
 
@@ -666,8 +613,6 @@
 
 .method static synthetic access$802(Lcom/android/dialer/calllog/CallLogFragment;Lcom/android/dialer/calllog/CallLogFragment$UnlockReceiver;)Lcom/android/dialer/calllog/CallLogFragment$UnlockReceiver;
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
-    .param p1    # Lcom/android/dialer/calllog/CallLogFragment$UnlockReceiver;
 
     iput-object p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->unlockReceiver:Lcom/android/dialer/calllog/CallLogFragment$UnlockReceiver;
 
@@ -676,7 +621,6 @@
 
 .method static synthetic access$900(Lcom/android/dialer/calllog/CallLogFragment;)V
     .locals 0
-    .param p0    # Lcom/android/dialer/calllog/CallLogFragment;
 
     invoke-direct {p0}, Lcom/android/dialer/calllog/CallLogFragment;->updateSweepActionFeasibility()V
 
@@ -773,9 +717,6 @@
 
 .method private fillUpCallLog(Ljava/io/File;II)V
     .locals 21
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual/range {p1 .. p1}, Ljava/io/File;->exists()Z
 
@@ -1358,7 +1299,6 @@
 
 .method private nullViewDrawable(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -1401,7 +1341,6 @@
 
 .method private nullViewDrawablesRecursive(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_1
 
@@ -1489,8 +1428,6 @@
 
 .method private saveFragmentView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     iput-object p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -1850,7 +1787,6 @@
 
 .method private updateOnEntry(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Lcom/android/dialer/calllog/CallLogFragment$UpdateOnEntry;
 
@@ -2006,7 +1942,6 @@
 
 .method private updateSelectAllState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSelectAllHeaderView:Landroid/view/View;
 
@@ -2171,10 +2106,6 @@
 # virtual methods
 .method public callLoginsert(Ljava/lang/String;IIJ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     const-string v1, "CallLogFragment"
 
@@ -2449,7 +2380,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Lcom/samsung/dialer/widget/CallLogListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -2982,7 +2912,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x1
 
@@ -3625,7 +3554,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -4387,7 +4315,6 @@
 
 .method public onVoicemailStatusFetched(Landroid/database/Cursor;)V
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v2, 0x1
 
@@ -4796,7 +4723,6 @@
 
 .method public setDeleteOnlyMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mDeleteOnlyMode:Z
 
@@ -4805,7 +4731,6 @@
 
 .method public setMenuVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/samsung/dialer/widget/CallLogListFragment;->setMenuVisibility(Z)V
 
@@ -4839,7 +4764,6 @@
 
 .method protected final setSweepActionBarCallBack(Lcom/samsung/dialer/widget/CallLogListSweepActionHandler;)V
     .locals 0
-    .param p1    # Lcom/samsung/dialer/widget/CallLogListSweepActionHandler;
 
     iput-object p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSweepActionBarCallBack:Lcom/samsung/dialer/widget/CallLogListSweepActionHandler;
 
@@ -4872,7 +4796,6 @@
 
 .method protected final setSweepActionListener(Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionListener;
 
     iput-object p1, p0, Lcom/android/dialer/calllog/CallLogFragment;->mSweepActionListener:Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionListener;
 

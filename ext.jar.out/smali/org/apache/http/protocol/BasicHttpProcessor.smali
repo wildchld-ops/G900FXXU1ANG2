@@ -34,7 +34,6 @@
 # virtual methods
 .method public final addInterceptor(Lorg/apache/http/HttpRequestInterceptor;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpRequestInterceptor;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/protocol/BasicHttpProcessor;->addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;)V
 
@@ -43,8 +42,6 @@
 
 .method public final addInterceptor(Lorg/apache/http/HttpRequestInterceptor;I)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpRequestInterceptor;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lorg/apache/http/protocol/BasicHttpProcessor;->addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;I)V
 
@@ -53,7 +50,6 @@
 
 .method public final addInterceptor(Lorg/apache/http/HttpResponseInterceptor;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpResponseInterceptor;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/protocol/BasicHttpProcessor;->addResponseInterceptor(Lorg/apache/http/HttpResponseInterceptor;)V
 
@@ -62,8 +58,6 @@
 
 .method public final addInterceptor(Lorg/apache/http/HttpResponseInterceptor;I)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpResponseInterceptor;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lorg/apache/http/protocol/BasicHttpProcessor;->addResponseInterceptor(Lorg/apache/http/HttpResponseInterceptor;I)V
 
@@ -72,7 +66,6 @@
 
 .method public addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpRequestInterceptor;
 
     if-nez p1, :cond_0
 
@@ -100,8 +93,6 @@
 
 .method public addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;I)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpRequestInterceptor;
-    .param p2    # I
 
     if-gez p2, :cond_0
 
@@ -155,7 +146,6 @@
 
 .method public addResponseInterceptor(Lorg/apache/http/HttpResponseInterceptor;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpResponseInterceptor;
 
     if-nez p1, :cond_0
 
@@ -183,8 +173,6 @@
 
 .method public addResponseInterceptor(Lorg/apache/http/HttpResponseInterceptor;I)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpResponseInterceptor;
-    .param p2    # I
 
     if-gez p2, :cond_0
 
@@ -299,7 +287,6 @@
 
 .method protected copyInterceptors(Lorg/apache/http/protocol/BasicHttpProcessor;)V
     .locals 2
-    .param p1    # Lorg/apache/http/protocol/BasicHttpProcessor;
 
     iget-object v0, p0, Lorg/apache/http/protocol/BasicHttpProcessor;->requestInterceptors:Ljava/util/List;
 
@@ -332,7 +319,6 @@
 
 .method public getRequestInterceptor(I)Lorg/apache/http/HttpRequestInterceptor;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/protocol/BasicHttpProcessor;->requestInterceptors:Ljava/util/List;
 
@@ -390,7 +376,6 @@
 
 .method public getResponseInterceptor(I)Lorg/apache/http/HttpResponseInterceptor;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/protocol/BasicHttpProcessor;->responseInterceptors:Ljava/util/List;
 
@@ -448,8 +433,6 @@
 
 .method public process(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpRequest;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -492,8 +475,6 @@
 
 .method public process(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -536,7 +517,6 @@
 
 .method public removeRequestInterceptorByClass(Ljava/lang/Class;)V
     .locals 3
-    .param p1    # Ljava/lang/Class;
 
     iget-object v2, p0, Lorg/apache/http/protocol/BasicHttpProcessor;->requestInterceptors:Ljava/util/List;
 
@@ -581,7 +561,6 @@
 
 .method public removeResponseInterceptorByClass(Ljava/lang/Class;)V
     .locals 3
-    .param p1    # Ljava/lang/Class;
 
     iget-object v2, p0, Lorg/apache/http/protocol/BasicHttpProcessor;->responseInterceptors:Ljava/util/List;
 
@@ -626,7 +605,6 @@
 
 .method public setInterceptors(Ljava/util/List;)V
     .locals 4
-    .param p1    # Ljava/util/List;
 
     if-nez p1, :cond_0
 

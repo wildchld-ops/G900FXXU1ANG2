@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;Lcom/samsung/contacts/interactions/AddToRejectListInteraction$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p2    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction$QueryForAddToRejectTask;-><init>(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
     .locals 9
-    .param p1    # [Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     const/4 v6, 0x0
 
@@ -121,7 +118,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
@@ -134,7 +130,6 @@
 
 .method protected onPostExecute(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 4
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     iget-object v1, p0, Lcom/samsung/contacts/interactions/AddToRejectListInteraction$QueryForAddToRejectTask;->this$0:Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
 
@@ -183,7 +178,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 

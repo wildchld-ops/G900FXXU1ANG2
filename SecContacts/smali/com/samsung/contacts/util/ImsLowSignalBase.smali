@@ -195,7 +195,6 @@
 
 .method protected setAlertDialog(Landroid/app/AlertDialog;)V
     .locals 0
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/samsung/contacts/util/ImsLowSignalBase;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -204,7 +203,6 @@
 
 .method protected setImsOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/util/ImsLowSignalBase;->mImsOn:Z
 
@@ -213,7 +211,6 @@
 
 .method protected setLowSignal(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/util/ImsLowSignalBase;->mLowSignal:Z
 

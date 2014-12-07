@@ -38,7 +38,6 @@
 
 .method public static parseFromJson(Lorg/json/JSONObject;)Lcom/google/android/finsky/placesapi/PlaceAutocompleteResponse;
     .locals 4
-    .param p0    # Lorg/json/JSONObject;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;

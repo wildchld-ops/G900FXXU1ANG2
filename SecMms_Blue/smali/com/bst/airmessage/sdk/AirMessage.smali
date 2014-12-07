@@ -78,7 +78,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -159,11 +158,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -182,12 +176,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -314,7 +302,6 @@
 
 .method public setCategory(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->category:Ljava/lang/String;
 
@@ -323,7 +310,6 @@
 
 .method public setData(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->data:Landroid/os/Bundle;
 
@@ -332,7 +318,6 @@
 
 .method public setGroupId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->groupId:Ljava/lang/String;
 
@@ -341,7 +326,6 @@
 
 .method public setMessageId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->messageId:Ljava/lang/String;
 
@@ -350,7 +334,6 @@
 
 .method public setMineType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->mineType:Ljava/lang/String;
 
@@ -359,7 +342,6 @@
 
 .method public setProxyCategory(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->proxyCategory:Ljava/lang/String;
 
@@ -368,7 +350,6 @@
 
 .method public setReceiveTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->receiveTime:J
 
@@ -377,7 +358,6 @@
 
 .method public setReplyId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->replyId:Ljava/lang/String;
 
@@ -386,7 +366,6 @@
 
 .method public setSenderId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->senderId:Ljava/lang/String;
 
@@ -395,7 +374,6 @@
 
 .method public setSenderName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->senderName:Ljava/lang/String;
 
@@ -404,7 +382,6 @@
 
 .method public setSenderProfile(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->senderProfile:Ljava/lang/String;
 
@@ -413,7 +390,6 @@
 
 .method public setThreadId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessage;->threadId:Ljava/lang/String;
 
@@ -422,8 +398,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/bst/airmessage/sdk/AirMessage;->senderId:Ljava/lang/String;
 

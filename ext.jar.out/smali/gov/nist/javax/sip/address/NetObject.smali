@@ -650,7 +650,6 @@
 
 .method public debugDump(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lgov/nist/core/GenericObject;->indentation:I
 
@@ -667,7 +666,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 17
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1078,7 +1076,6 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 23
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 

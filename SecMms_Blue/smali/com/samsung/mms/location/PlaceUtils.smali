@@ -124,7 +124,6 @@
 
 .method public static createNBIPlaceFromSDK(Lcom/samsung/mms/location/Place;)Lcom/nbi/map/data/Place;
     .locals 13
-    .param p0    # Lcom/samsung/mms/location/Place;
 
     const/4 v1, 0x0
 
@@ -233,7 +232,6 @@
 
 .method public static createSDKPlaceFromNBI(Lcom/nbi/map/data/Place;)Lcom/samsung/mms/location/Place;
     .locals 9
-    .param p0    # Lcom/nbi/map/data/Place;
 
     new-instance v4, Lcom/samsung/mms/location/PlaceBuilder;
 
@@ -418,7 +416,6 @@
 
 .method private static getNBIPhoneType(I)I
     .locals 3
-    .param p0    # I
 
     sget-object v2, Lcom/samsung/mms/location/PlaceUtils;->phoneNumberTypes:Ljava/util/HashMap;
 

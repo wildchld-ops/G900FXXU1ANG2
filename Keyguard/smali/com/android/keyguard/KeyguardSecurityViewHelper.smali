@@ -42,7 +42,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/keyguard/KeyguardSecurityViewHelper;->mCanceled:Z
 
@@ -51,10 +50,6 @@
 
 .method public static hideBouncer(Lcom/android/keyguard/SecurityMessageDisplay;Landroid/view/View;Landroid/graphics/drawable/Drawable;I)V
     .locals 5
-    .param p0    # Lcom/android/keyguard/SecurityMessageDisplay;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -231,10 +226,6 @@
 
 .method public static showBouncer(Lcom/android/keyguard/SecurityMessageDisplay;Landroid/view/View;Landroid/graphics/drawable/Drawable;I)V
     .locals 5
-    .param p0    # Lcom/android/keyguard/SecurityMessageDisplay;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -343,10 +334,6 @@
 
 .method public static startAnimationView(Lcom/android/keyguard/SecurityMessageDisplay;Landroid/view/View;Landroid/view/View;I)V
     .locals 5
-    .param p0    # Lcom/android/keyguard/SecurityMessageDisplay;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -430,9 +417,6 @@
 
 .method private static startViewAnimation(Landroid/view/View;Landroid/view/animation/ScaleAnimation;I)V
     .locals 4
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/animation/ScaleAnimation;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 

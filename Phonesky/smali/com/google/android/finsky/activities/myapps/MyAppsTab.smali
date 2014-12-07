@@ -67,12 +67,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/google/android/finsky/activities/AuthenticatedActivity;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;
-    .param p6    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -168,7 +162,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/myapps/MyAppsTab;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTab;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->saveCurrentSelection()V
 
@@ -177,7 +170,6 @@
 
 .method private final getKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -214,7 +206,6 @@
 
 .method private makeDefaultSelection(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->getListView()Landroid/widget/ListView;
 
@@ -373,8 +364,6 @@
 
 .method private selectDocumentAtPosition(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->getAdapter()Lcom/google/android/finsky/activities/myapps/MyAppsListAdapter;
 
@@ -435,8 +424,6 @@
 
 .method protected configureEmptyUI(ZI)V
     .locals 6
-    .param p1    # Z
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->getFullView()Landroid/view/View;
 
@@ -506,7 +493,6 @@
 
 .method protected getPositionForView(Landroid/view/View;)I
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v4, -0x1
 
@@ -628,7 +614,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -704,7 +689,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->mLastVolleyError:Lcom/android/volley/VolleyError;
 
@@ -715,7 +699,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -856,8 +839,6 @@
 
 .method selectDocument(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->isDataReady()Z
 
@@ -919,7 +900,6 @@
 
 .method public setTabSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->mIsSelectedTab:Z
 

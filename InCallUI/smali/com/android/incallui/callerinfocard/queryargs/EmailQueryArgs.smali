@@ -19,8 +19,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/callerinfocard/queryargs/CallerInfoCardQueryArgs;-><init>(ILjava/lang/Object;)V
 

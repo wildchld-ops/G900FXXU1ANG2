@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/mms/location/SearchHandler;Lcom/nbi/map/data/Place;)V
     .locals 1
-    .param p2    # Lcom/nbi/map/data/Place;
 
     iput-object p1, p0, Lcom/samsung/mms/location/SearchHandler$LocationContextMenuClickListener;->this$0:Lcom/samsung/mms/location/SearchHandler;
 
@@ -53,7 +52,6 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 7
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x1
 

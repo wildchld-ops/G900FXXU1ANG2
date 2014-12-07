@@ -43,9 +43,6 @@
 # virtual methods
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/ViewBinder;->mContext:Landroid/content/Context;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public dismiss(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$9;->this$0:Lcom/android/keyguard/KeyguardHostView;
 
@@ -262,7 +261,6 @@
 
 .method public setOnDismissAction(Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$9;->this$0:Lcom/android/keyguard/KeyguardHostView;
 
@@ -273,7 +271,6 @@
 
 .method public showBackupSecurity(Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$9;->this$0:Lcom/android/keyguard/KeyguardHostView;
 
@@ -285,7 +282,6 @@
 
 .method public showWipeDialog(I)V
     .locals 8
-    .param p1    # I
 
     move v0, p1
 
@@ -379,7 +375,6 @@
 
 .method public userActivity(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$9;->this$0:Lcom/android/keyguard/KeyguardHostView;
 

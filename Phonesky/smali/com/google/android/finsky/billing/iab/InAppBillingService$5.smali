@@ -54,7 +54,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/BuyInstruments$CheckIabPromoResponse;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$CheckIabPromoResponse;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService$5;->val$responseCode:[Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
@@ -83,7 +82,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/BuyInstruments$CheckIabPromoResponse;
 

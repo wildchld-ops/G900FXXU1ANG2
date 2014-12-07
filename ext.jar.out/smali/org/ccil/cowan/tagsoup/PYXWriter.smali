@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Ljava/io/Writer;)V
     .locals 1
-    .param p1    # Ljava/io/Writer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,9 +61,6 @@
 # virtual methods
 .method public adup([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -86,9 +82,6 @@
 
 .method public aname([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -122,9 +115,6 @@
 
 .method public aval([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -148,9 +138,6 @@
 
 .method public cdsect([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -164,9 +151,6 @@
 
 .method public characters([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -180,9 +164,6 @@
 
 .method public cmnt([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -194,9 +175,6 @@
 
 .method public comment([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -210,9 +188,6 @@
 
 .method public decl([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -261,9 +236,6 @@
 
 .method public endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -294,7 +266,6 @@
 
 .method public endEntity(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -306,7 +277,6 @@
 
 .method public endPrefixMapping(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -318,9 +288,6 @@
 
 .method public entity([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -332,9 +299,6 @@
 
 .method public eof([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -350,9 +314,6 @@
 
 .method public etag([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -386,9 +347,6 @@
 
 .method public gi([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -414,9 +372,6 @@
 
 .method public ignorableWhitespace([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -430,9 +385,6 @@
 
 .method public pcdata([CII)V
     .locals 4
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -544,9 +496,6 @@
 
 .method public pi([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -566,9 +515,6 @@
 
 .method public pitarget([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -596,8 +542,6 @@
 
 .method public processingInstruction(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -629,14 +573,12 @@
 
 .method public setDocumentLocator(Lorg/xml/sax/Locator;)V
     .locals 0
-    .param p1    # Lorg/xml/sax/Locator;
 
     return-void
 .end method
 
 .method public skippedEntity(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -648,9 +590,6 @@
 
 .method public stagc([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -662,9 +601,6 @@
 
 .method public stage([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -693,9 +629,6 @@
 
 .method public startDTD(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -718,10 +651,6 @@
 
 .method public startElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lorg/xml/sax/Attributes;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -805,7 +734,6 @@
 
 .method public startEntity(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -817,8 +745,6 @@
 
 .method public startPrefixMapping(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;

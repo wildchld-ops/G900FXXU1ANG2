@@ -424,7 +424,6 @@
 
 .method static synthetic access$000(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/nbi/map/android/MapView;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mapView:Lcom/nbi/map/android/MapView;
 
@@ -433,7 +432,6 @@
 
 .method static synthetic access$100(Lcom/samsung/mms/location/LocationMapActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-boolean v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->followMe:Z
 
@@ -442,7 +440,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/nbi/search/singlesearch/SuggestionSearchRequest;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mSuggestionSearchRequest:Lcom/nbi/search/singlesearch/SuggestionSearchRequest;
 
@@ -451,8 +448,6 @@
 
 .method static synthetic access$102(Lcom/samsung/mms/location/LocationMapActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->followMe:Z
 
@@ -461,7 +456,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/mms/location/LocationMapActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     invoke-direct {p0}, Lcom/samsung/mms/location/LocationMapActivity;->doSubSearch()V
 
@@ -470,10 +464,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/mms/location/LocationMapActivity;Lcom/nbi/map/android/Pin;ZZ)I
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Lcom/nbi/map/android/Pin;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/mms/location/LocationMapActivity;->addPinToMap(Lcom/nbi/map/android/Pin;ZZ)I
 
@@ -484,7 +474,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/samsung/mms/location/PinBubbleView;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->pinBubble:Lcom/samsung/mms/location/PinBubbleView;
 
@@ -493,7 +482,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/samsung/mms/location/PlaceDBAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->recPlaceDBAdapter:Lcom/samsung/mms/location/PlaceDBAdapter;
 
@@ -502,7 +490,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/mms/location/LocationMapActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->currentFocusMode:I
 
@@ -511,8 +498,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/mms/location/LocationMapActivity;I)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/LocationMapActivity;->adjustViewsBasedOnFocus(I)V
 
@@ -521,7 +506,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->addLocationClickListener:Landroid/view/View$OnClickListener;
 
@@ -530,8 +514,6 @@
 
 .method static synthetic access$172(Lcom/samsung/mms/location/LocationMapActivity;I)Z
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->followMe:Z
 
@@ -546,7 +528,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->vzNavigateListener:Landroid/view/View$OnClickListener;
 
@@ -555,9 +536,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/mms/location/LocationMapActivity;II)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/mms/location/LocationMapActivity;->dropPin(II)V
 
@@ -566,7 +544,6 @@
 
 .method static synthetic access$200(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mapViewRedrawHandler:Landroid/os/Handler;
 
@@ -575,7 +552,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/mms/location/LocationMapActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->startupMode:I
 
@@ -584,7 +560,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mediaBitmap:Landroid/graphics/Bitmap;
 
@@ -593,7 +568,6 @@
 
 .method static synthetic access$2200(Lcom/samsung/mms/location/LocationMapActivity;)D
     .locals 2
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-wide v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mediaLatitude:D
 
@@ -602,7 +576,6 @@
 
 .method static synthetic access$2300(Lcom/samsung/mms/location/LocationMapActivity;)D
     .locals 2
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-wide v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mediaLongitude:D
 
@@ -611,7 +584,6 @@
 
 .method static synthetic access$2400(Lcom/samsung/mms/location/LocationMapActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->accuracyString:Ljava/lang/String;
 
@@ -620,8 +592,6 @@
 
 .method static synthetic access$2402(Lcom/samsung/mms/location/LocationMapActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->accuracyString:Ljava/lang/String;
 
@@ -630,7 +600,6 @@
 
 .method static synthetic access$2500(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/nbi/map/geocode/ReverseGeocodeRequest;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mediaLookup:Lcom/nbi/map/geocode/ReverseGeocodeRequest;
 
@@ -639,7 +608,6 @@
 
 .method static synthetic access$2600(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->progressBar:Landroid/view/View;
 
@@ -648,7 +616,6 @@
 
 .method static synthetic access$2700(Lcom/samsung/mms/location/LocationMapActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     invoke-direct {p0}, Lcom/samsung/mms/location/LocationMapActivity;->createMapImage()Ljava/lang/String;
 
@@ -659,7 +626,6 @@
 
 .method static synthetic access$2800(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->locationMenuList:Landroid/widget/ListView;
 
@@ -668,7 +634,6 @@
 
 .method static synthetic access$2900(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->btnRecent:Landroid/widget/Button;
 
@@ -677,7 +642,6 @@
 
 .method static synthetic access$300(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/widget/CursorAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mSuggestionCurAdapter:Landroid/widget/CursorAdapter;
 
@@ -686,7 +650,6 @@
 
 .method static synthetic access$3000(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->btnFavorite:Landroid/widget/Button;
 
@@ -695,7 +658,6 @@
 
 .method static synthetic access$3100(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/nbi/map/android/MapView$OnPinEventListener;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mapPinEventListener:Lcom/nbi/map/android/MapView$OnPinEventListener;
 
@@ -704,8 +666,6 @@
 
 .method static synthetic access$3200(Lcom/samsung/mms/location/LocationMapActivity;Lcom/nbi/map/data/Place;)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Lcom/nbi/map/data/Place;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/LocationMapActivity;->shiftMapToLocation(Lcom/nbi/map/data/Place;)V
 
@@ -714,7 +674,6 @@
 
 .method static synthetic access$3300(Lcom/samsung/mms/location/LocationMapActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-boolean v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->firstTracking:Z
 
@@ -723,8 +682,6 @@
 
 .method static synthetic access$3302(Lcom/samsung/mms/location/LocationMapActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->firstTracking:Z
 
@@ -733,7 +690,6 @@
 
 .method static synthetic access$3400(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/samsung/mms/location/NavigationHandler;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->navigationHandler:Lcom/samsung/mms/location/NavigationHandler;
 
@@ -742,7 +698,6 @@
 
 .method static synthetic access$3500(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mContext:Landroid/content/Context;
 
@@ -751,7 +706,6 @@
 
 .method static synthetic access$3600(Lcom/samsung/mms/location/LocationMapActivity;)D
     .locals 2
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-wide v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->lastLatitude:D
 
@@ -760,8 +714,6 @@
 
 .method static synthetic access$3602(Lcom/samsung/mms/location/LocationMapActivity;D)D
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->lastLatitude:D
 
@@ -770,7 +722,6 @@
 
 .method static synthetic access$3700(Lcom/samsung/mms/location/LocationMapActivity;)D
     .locals 2
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-wide v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->lastLongitude:D
 
@@ -779,8 +730,6 @@
 
 .method static synthetic access$3702(Lcom/samsung/mms/location/LocationMapActivity;D)D
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->lastLongitude:D
 
@@ -789,7 +738,6 @@
 
 .method static synthetic access$3800(Lcom/samsung/mms/location/LocationMapActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-boolean v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->bInitFirstLocation:Z
 
@@ -798,8 +746,6 @@
 
 .method static synthetic access$3802(Lcom/samsung/mms/location/LocationMapActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->bInitFirstLocation:Z
 
@@ -808,7 +754,6 @@
 
 .method static synthetic access$3900(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/nbi/location/LocationListener;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->locationListener:Lcom/nbi/location/LocationListener;
 
@@ -817,7 +762,6 @@
 
 .method static synthetic access$400(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/nbi/search/singlesearch/SuggestionSearchInformation;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mSuggestionSearchInfo:Lcom/nbi/search/singlesearch/SuggestionSearchInformation;
 
@@ -826,8 +770,6 @@
 
 .method static synthetic access$4000(Lcom/samsung/mms/location/LocationMapActivity;I)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/LocationMapActivity;->dropPinOnMapCenter(I)V
 
@@ -836,8 +778,6 @@
 
 .method static synthetic access$402(Lcom/samsung/mms/location/LocationMapActivity;Lcom/nbi/search/singlesearch/SuggestionSearchInformation;)Lcom/nbi/search/singlesearch/SuggestionSearchInformation;
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Lcom/nbi/search/singlesearch/SuggestionSearchInformation;
 
     iput-object p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->mSuggestionSearchInfo:Lcom/nbi/search/singlesearch/SuggestionSearchInformation;
 
@@ -846,10 +786,6 @@
 
 .method static synthetic access$4100(Lcom/samsung/mms/location/LocationMapActivity;DDZ)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # D
-    .param p3    # D
-    .param p5    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/samsung/mms/location/LocationMapActivity;->requestReverseLocation(DDZ)V
 
@@ -858,8 +794,6 @@
 
 .method static synthetic access$4202(Lcom/samsung/mms/location/LocationMapActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->isStartupSearch:Z
 
@@ -868,7 +802,6 @@
 
 .method static synthetic access$4300(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mMyLocation:Landroid/view/MenuItem;
 
@@ -877,7 +810,6 @@
 
 .method static synthetic access$4400(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mFavoriteLocation:Landroid/view/MenuItem;
 
@@ -886,7 +818,6 @@
 
 .method static synthetic access$4500(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mRecentLocation:Landroid/view/MenuItem;
 
@@ -895,7 +826,6 @@
 
 .method static synthetic access$4600(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mSearchMenuItem:Landroid/view/MenuItem;
 
@@ -904,8 +834,6 @@
 
 .method static synthetic access$4702(Lcom/samsung/mms/location/LocationMapActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->searchPerformed:Z
 
@@ -914,7 +842,6 @@
 
 .method static synthetic access$4800(Lcom/samsung/mms/location/LocationMapActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     invoke-direct {p0}, Lcom/samsung/mms/location/LocationMapActivity;->launchLocationSettings()V
 
@@ -923,8 +850,6 @@
 
 .method static synthetic access$4902(Lcom/samsung/mms/location/LocationMapActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->mAutoWifiDialogHasDismissed:Z
 
@@ -933,7 +858,6 @@
 
 .method static synthetic access$500(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->searchResultsList:Landroid/widget/ListView;
 
@@ -942,7 +866,6 @@
 
 .method static synthetic access$600(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/samsung/mms/location/PlaceDBAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->favPlaceDBAdapter:Lcom/samsung/mms/location/PlaceDBAdapter;
 
@@ -951,7 +874,6 @@
 
 .method static synthetic access$700(Lcom/samsung/mms/location/LocationMapActivity;)Lcom/samsung/mms/location/SearchHandlerListener;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->searchHandlerListener:Lcom/samsung/mms/location/SearchHandlerListener;
 
@@ -960,7 +882,6 @@
 
 .method static synthetic access$800(Lcom/samsung/mms/location/LocationMapActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->singleSubSearchIndex:I
 
@@ -969,8 +890,6 @@
 
 .method static synthetic access$802(Lcom/samsung/mms/location/LocationMapActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->singleSubSearchIndex:I
 
@@ -979,7 +898,6 @@
 
 .method static synthetic access$900(Lcom/samsung/mms/location/LocationMapActivity;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/LocationMapActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mSearchView:Landroid/widget/SearchView;
 
@@ -988,9 +906,6 @@
 
 .method private addPinToMap(Lcom/nbi/map/android/Pin;ZZ)I
     .locals 3
-    .param p1    # Lcom/nbi/map/android/Pin;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, -0x1
 
@@ -1034,7 +949,6 @@
 
 .method private adjustViewsBasedOnFocus(I)V
     .locals 22
-    .param p1    # I
 
     move/from16 v0, p1
 
@@ -2152,7 +2066,6 @@
 
 .method private displayLoadErrorDialog(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     new-instance v0, Lcom/samsung/mms/location/LocationMapActivity$6;
 
@@ -2212,8 +2125,6 @@
 
 .method private dropPin(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -2224,9 +2135,6 @@
 
 .method private dropPin(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -2317,7 +2225,6 @@
 
 .method private dropPinOnMapCenter(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->mapView:Lcom/nbi/map/android/MapView;
 
@@ -2342,8 +2249,6 @@
 
 .method private static floatComp(FF)Z
     .locals 3
-    .param p0    # F
-    .param p1    # F
 
     const v0, 0x38d1b717
 
@@ -2372,7 +2277,6 @@
 
 .method private getMediaContentPath(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 10
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -2523,7 +2427,6 @@
 
 .method private getUriBitmap(Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 14
-    .param p1    # Landroid/net/Uri;
 
     const/4 v13, 0x1
 
@@ -3089,8 +2992,6 @@
 
 .method private requestReverseLocation(DD)V
     .locals 6
-    .param p1    # D
-    .param p3    # D
 
     const/4 v5, 0x1
 
@@ -3107,9 +3008,6 @@
 
 .method private requestReverseLocation(DDZ)V
     .locals 17
-    .param p1    # D
-    .param p3    # D
-    .param p5    # Z
 
     move-object/from16 v0, p0
 
@@ -3226,7 +3124,6 @@
 
 .method private scaleBitmapForBubble(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v6, 0x1
 
@@ -3290,7 +3187,6 @@
 
 .method private searchLocation(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/samsung/mms/location/LocationMapActivity;->mSuggestionSearchRequest:Lcom/nbi/search/singlesearch/SuggestionSearchRequest;
 
@@ -3366,22 +3262,6 @@
 
 .method private setAllViewsVisibility(ZZZZZZZZZZZZZZZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
-    .param p12    # Z
-    .param p13    # Z
-    .param p14    # Z
-    .param p15    # Z
-    .param p16    # Z
 
     iget-object v3, p0, Lcom/samsung/mms/location/LocationMapActivity;->btnRecent:Landroid/widget/Button;
 
@@ -3704,7 +3584,6 @@
 
 .method private setFollowMe(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/LocationMapActivity;->followMe:Z
 
@@ -3719,7 +3598,6 @@
 
 .method private shiftMapToLocation(Lcom/nbi/map/data/Place;)V
     .locals 7
-    .param p1    # Lcom/nbi/map/data/Place;
 
     const/4 v6, 0x1
 
@@ -3887,7 +3765,6 @@
 
 .method private suggestionChangeRequest(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
@@ -3974,9 +3851,6 @@
 # virtual methods
 .method public doSearch(ILjava/lang/String;Lcom/nbi/map/data/Coordinates;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/nbi/map/data/Coordinates;
 
     iget v1, p0, Lcom/samsung/mms/location/LocationMapActivity;->currentFocusMode:I
 
@@ -4032,9 +3906,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 26
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, -0x1
 
@@ -4720,7 +4591,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -4767,7 +4637,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -5099,7 +4968,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5133,7 +5001,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 13
-    .param p1    # Landroid/view/Menu;
 
     const v12, 0x7f0b0315
 
@@ -5519,8 +5386,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x4
 
@@ -5670,7 +5535,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 13
-    .param p1    # Landroid/view/MenuItem;
 
     const-wide/16 v9, 0x0
 
@@ -5990,7 +5854,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget v0, p0, Lcom/samsung/mms/location/LocationMapActivity;->startupMode:I
 
@@ -6010,7 +5873,6 @@
 
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "LocationMapActivity"
 
@@ -6043,7 +5905,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/LocationMapActivity;->searchLocation(Ljava/lang/String;)V
 

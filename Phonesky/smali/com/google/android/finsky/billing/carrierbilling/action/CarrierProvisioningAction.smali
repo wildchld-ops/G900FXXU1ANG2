@@ -28,8 +28,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/action/CarrierProvisioningAction;)Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/action/CarrierProvisioningAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierProvisioningAction;->mDcbStorage:Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -51,8 +48,6 @@
 
 .method private fetchProvisioning(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,9 +70,6 @@
 
 .method private fetchProvisioning(Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/Runnable;
 
     iget-object v4, p0, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierProvisioningAction;->mDcbStorage:Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -121,7 +113,6 @@
 
 .method public static shouldFetchProvisioning(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;)Z
     .locals 9
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -166,11 +157,6 @@
 
 .method static shouldFetchProvisioning(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;JJJJ)Z
     .locals 7
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
 
     const/4 v3, 0x1
 
@@ -246,7 +232,6 @@
 
 .method private updateBillingPreferences(J)V
     .locals 7
-    .param p1    # J
 
     sget-object v2, Lcom/google/android/finsky/config/G;->vendingCarrierProvisioningRefreshFrequencyMs:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -301,8 +286,6 @@
 # virtual methods
 .method public forceRun(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v0, 0x0
 
@@ -313,9 +296,6 @@
 
 .method public forceRun(Ljava/lang/Runnable;Ljava/lang/Runnable;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p3, p1, p2}, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierProvisioningAction;->fetchProvisioning(Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
@@ -324,7 +304,6 @@
 
 .method public run(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierProvisioningAction;->mDcbStorage:Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -366,7 +345,6 @@
 
 .method public runIfNotOnWifi(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierProvisioningAction;->shouldRunIfNotOnWifi(Landroid/content/Context;)Z
 
@@ -384,7 +362,6 @@
 
 .method public shouldRunIfNotOnWifi(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 

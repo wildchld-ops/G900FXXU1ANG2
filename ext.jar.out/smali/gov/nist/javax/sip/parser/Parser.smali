@@ -17,7 +17,6 @@
 
 .method public static final checkToken(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -84,7 +83,6 @@
 # virtual methods
 .method protected createParseException(Ljava/lang/String;)Ljava/text/ParseException;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/text/ParseException;
 

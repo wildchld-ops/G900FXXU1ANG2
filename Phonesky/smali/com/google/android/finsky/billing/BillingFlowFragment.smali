@@ -44,7 +44,6 @@
 
 .method public fail(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingFlowFragment;->mHost:Lcom/google/android/finsky/billing/BillingFlowFragment$BillingFlowHost;
 
@@ -55,7 +54,6 @@
 
 .method public finish(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingFlowFragment;->mHost:Lcom/google/android/finsky/billing/BillingFlowFragment$BillingFlowHost;
 
@@ -66,7 +64,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 

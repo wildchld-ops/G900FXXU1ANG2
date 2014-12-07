@@ -89,17 +89,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/api/model/BucketedList;[Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;Ljava/lang/String;ZZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p5    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p6    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p8    # [Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Z
-    .param p11    # Z
-    .param p12    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -493,10 +482,6 @@
 
 .method private bindCluster(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;Lcom/google/android/finsky/layout/play/PlayCardClusterView;Landroid/view/View$OnClickListener;)V
     .locals 20
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayCardClusterView;
-    .param p4    # Landroid/view/View$OnClickListener;
 
     invoke-virtual/range {p3 .. p3}, Lcom/google/android/finsky/layout/play/PlayCardClusterView;->hasHeader()Z
 
@@ -644,10 +629,6 @@
 
 .method private bindLooseItem(Lcom/google/android/finsky/api/model/Document;ILandroid/view/View;Z)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
 
     move-object v0, p3
 
@@ -722,7 +703,6 @@
 
 .method private endLastEntry(Ljava/util/List;I)V
     .locals 4
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -769,8 +749,6 @@
 
 .method private getBannerHeaderView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v10, 0x0
 
@@ -935,7 +913,6 @@
 
 .method private getCardListAdapterViewType(I)I
     .locals 10
-    .param p1    # I
 
     const/16 v7, 0xe
 
@@ -1210,8 +1187,6 @@
 
 .method private getContainerFilterView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -1251,9 +1226,6 @@
 
 .method private getGenericCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -1312,7 +1284,6 @@
 
 .method private getGenericClusterMetadata(Lcom/google/android/finsky/api/model/Document;)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v5, 0x0
 
@@ -1392,11 +1363,6 @@
 
 .method private getLooseItemRow(IILandroid/view/View;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
-    .param p5    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/adapters/CardListAdapter;->mShowLooseItemReasons:Z
 
@@ -1419,9 +1385,6 @@
 
 .method private getMerchBanner(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -1502,9 +1465,6 @@
 
 .method private getMerchCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x0
 
@@ -1579,7 +1539,6 @@
 
 .method private getMerchClusterMetadata(Lcom/google/android/finsky/api/model/Document;)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getChildCount()I
 
@@ -1618,8 +1577,6 @@
 
 .method private getMoreResultsStringForCluster(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;)Ljava/lang/String;
     .locals 12
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
 
     const-wide/16 v10, 0x0
 
@@ -1736,9 +1693,6 @@
 
 .method private getOrderedCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -1833,9 +1787,6 @@
 
 .method private getPersonCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -1896,9 +1847,6 @@
 
 .method private getPersonFollowCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -1971,8 +1919,6 @@
 
 .method private getPlainHeaderView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -2032,9 +1978,6 @@
 
 .method private getQuickSuggestionsCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v4, 0x0
 
@@ -2108,9 +2051,6 @@
 
 .method private getRateCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v4, 0x0
 
@@ -2174,10 +2114,6 @@
 
 .method private getRowOfLooseItemsWithReasons(IILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
 
     if-eqz p3, :cond_2
 
@@ -2346,11 +2282,6 @@
 
 .method private getRowOfLooseItemsWithoutReasons(IILandroid/view/View;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
-    .param p5    # I
 
     if-nez p3, :cond_0
 
@@ -2542,9 +2473,6 @@
 
 .method private getSingleDocCluster(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 15
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -2721,7 +2649,6 @@
 
 .method public static hasRestoreData(Landroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_0
 
@@ -3072,9 +2999,6 @@
 # virtual methods
 .method protected bindSpinnerData(Lcom/google/android/finsky/layout/play/Identifiable;Landroid/widget/Spinner;Landroid/view/View;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/layout/play/Identifiable;
-    .param p2    # Landroid/widget/Spinner;
-    .param p3    # Landroid/view/View;
 
     iget-object v3, p0, Lcom/google/android/finsky/adapters/CardListAdapter;->mBucketedList:Lcom/google/android/finsky/api/model/BucketedList;
 
@@ -3175,8 +3099,6 @@
 
 .method protected getClusterClickListener(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p1}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->hasClickListener(Lcom/google/android/finsky/api/model/Document;)Z
 
@@ -3211,7 +3133,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/CardListAdapter;->mItems:Ljava/util/ArrayList;
 
@@ -3224,7 +3145,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/CardListAdapter;->getCardListAdapterViewType(I)I
 
@@ -3283,7 +3203,6 @@
 
 .method public getSignalStrengthForCluster(Lcom/google/android/finsky/api/model/Document;)I
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v5, 0x2
 
@@ -3365,9 +3284,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 19
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-direct/range {p0 .. p1}, Lcom/google/android/finsky/adapters/CardListAdapter;->getCardListAdapterViewType(I)I
 
@@ -3793,7 +3709,6 @@
 
 .method protected isDismissed(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-static {p1}, Lcom/google/android/finsky/utils/PlayUtils;->isDismissable(Lcom/google/android/finsky/api/model/Document;)Z
 
@@ -3869,8 +3784,6 @@
 
 .method public onDismissDocument(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     const/4 v5, 0x0
 
@@ -3915,7 +3828,6 @@
 
 .method public onMovedToScrapHeap(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     instance-of v1, p1, Lcom/google/android/finsky/layout/play/PlayCardClusterView;
 
@@ -3937,8 +3849,6 @@
 
 .method public onRestoreInstanceState(Landroid/widget/ListView;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v6, -0x1
 
@@ -4014,8 +3924,6 @@
 
 .method public onSaveInstanceState(Landroid/widget/ListView;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Lcom/google/android/finsky/adapters/FinskyListAdapter;->onSaveInstanceState(Landroid/widget/ListView;Landroid/os/Bundle;)V
 
@@ -4098,18 +4006,12 @@
 
 .method public onWishlistStatusChanged(Ljava/lang/String;ZZ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     return-void
 .end method
 
 .method public restoreDespiteColumnCountChange(Landroid/widget/ListView;Ljava/util/ArrayList;II)V
     .locals 22
-    .param p1    # Landroid/widget/ListView;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

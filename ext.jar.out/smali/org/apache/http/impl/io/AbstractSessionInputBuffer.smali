@@ -53,7 +53,6 @@
 
 .method private lineFromLineBuffer(Lorg/apache/http/util/CharArrayBuffer;)I
     .locals 5
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -147,8 +146,6 @@
 
 .method private lineFromReadBuffer(Lorg/apache/http/util/CharArrayBuffer;I)I
     .locals 5
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -342,9 +339,6 @@
 
 .method protected init(Ljava/io/InputStream;ILorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     const/4 v0, 0x0
 
@@ -494,7 +488,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -520,9 +513,6 @@
 
 .method public read([BII)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -585,7 +575,6 @@
 
 .method public readLine(Lorg/apache/http/util/CharArrayBuffer;)I
     .locals 8
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

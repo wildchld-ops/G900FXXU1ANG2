@@ -1395,7 +1395,7 @@ Wi-Fi와 모바일 핫스팟은 동시에 실행할 수 없습니다."</string>
     <string name="usb_tethering_errored_subtext">USB 테더링 오류</string>
     <string name="usb_tethering_on_during_sidesync_popup">[사이드 싱크] 사용 중에 [USB 테더링]을 해제할 수 없습니다. [USB 테더링]을 해제하면 [사이드 싱크]도 해제됩니다.</string>
     <string name="usb_tethering_off_during_sidesync_popup">[사이드 싱크] 사용 중에 [USB 테더링]을 실행할 수 없습니다. [USB 테더링]을 실행하면 [사이드 싱크]도 해제됩니다.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>블루투스 테더링</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>블루투스 테더링</b></p></string>
     <string name="bluetooth_tethering_available_subtext">이 디바이스의 인터넷 연결을 공유하는 중…</string>
     <string name="bluetooth_tethering_device_connected_subtext">기기의 인터넷 연결을 기기 1개와 공유함</string>
     <string name="bluetooth_tethering_devices_connected_subtext">기기의 인터넷 연결을 기기 %d개와 공유함</string>

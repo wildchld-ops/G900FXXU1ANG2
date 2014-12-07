@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -97,7 +96,6 @@
 # virtual methods
 .method public delete(Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
 
     const/4 v3, 0x1
 
@@ -182,10 +180,6 @@
 
 .method public init(Landroid/app/Activity;ILjava/lang/String;Z)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iput-object p3, p0, Lcom/android/mms/ui/ToButton;->mNumber:Ljava/lang/String;
 
@@ -308,7 +302,6 @@
 
 .method public setOnClickListenerToButton(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ToButton;->mChildView:Landroid/widget/LinearLayout;
 
@@ -319,7 +312,6 @@
 
 .method public setOnLongClickListenerToButton(Landroid/view/View$OnLongClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnLongClickListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ToButton;->mChildView:Landroid/widget/LinearLayout;
 
@@ -330,7 +322,6 @@
 
 .method public setSelected(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ToButton;->mTextView:Landroid/widget/TextView;
 
@@ -345,7 +336,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/ToButton;->mTextView:Landroid/widget/TextView;
 

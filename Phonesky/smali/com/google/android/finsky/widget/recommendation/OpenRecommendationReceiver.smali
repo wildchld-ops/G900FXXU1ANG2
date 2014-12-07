@@ -14,10 +14,6 @@
 
 .method public static getIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;II)Landroid/app/PendingIntent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -104,8 +100,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v2, "viewIntent"
 

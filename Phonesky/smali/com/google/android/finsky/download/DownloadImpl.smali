@@ -74,18 +74,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Landroid/net/Uri;JJLcom/google/android/finsky/download/obb/Obb;ZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/net/Uri;
-    .param p8    # J
-    .param p10    # J
-    .param p12    # Lcom/google/android/finsky/download/obb/Obb;
-    .param p13    # Z
-    .param p14    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,8 +112,6 @@
 # virtual methods
 .method public createDownloadRequest(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/download/DownloadRequest;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/download/DownloadRequest;
 
@@ -160,7 +146,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p1, p0, :cond_0
 
@@ -322,7 +307,6 @@
 
 .method public setContentUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/google/android/finsky/download/DownloadImpl;->mContentUri:Landroid/net/Uri;
 
@@ -331,7 +315,6 @@
 
 .method public setHttpStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/download/DownloadImpl;->mHttpStatus:I
 
@@ -340,7 +323,6 @@
 
 .method public setProgress(Lcom/google/android/finsky/download/DownloadProgress;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/DownloadProgress;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -374,7 +356,6 @@
 
 .method public setState(Lcom/google/android/finsky/download/Download$DownloadState;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/download/Download$DownloadState;
 
     const/4 v4, 0x2
 

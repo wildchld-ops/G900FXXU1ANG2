@@ -40,7 +40,6 @@
 # virtual methods
 .method public addRequest(Lcom/google/android/finsky/api/DfeApi;Ljava/util/List;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -200,7 +199,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/MultiDfeBulkDetails;->mLastVolleyError:Lcom/android/volley/VolleyError;
 

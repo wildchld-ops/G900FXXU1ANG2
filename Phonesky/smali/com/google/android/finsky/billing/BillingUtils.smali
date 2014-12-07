@@ -15,7 +15,6 @@
 # direct methods
 .method public static addressDataFromInstrumentAddress(Lcom/google/android/finsky/protos/BillingAddress$Address;)Lcom/android/i18n/addressinput/AddressData;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/protos/BillingAddress$Address;
 
     new-instance v0, Lcom/android/i18n/addressinput/AddressData$Builder;
 
@@ -120,7 +119,6 @@
 
 .method public static findCountry(Ljava/lang/String;Ljava/util/List;)Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -194,7 +192,6 @@
 
 .method public static getAddressFormOptions(Lcom/google/android/finsky/billing/BillingUtils$AddressMode;)Lcom/android/i18n/addressinput/FormOptions;
     .locals 3
-    .param p0    # Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
 
     new-instance v1, Lcom/android/i18n/addressinput/FormOptions$Builder;
 
@@ -268,8 +265,6 @@
 
 .method public static getDefaultCountry(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -296,7 +291,6 @@
 
 .method public static getFopVersion(Lcom/google/android/finsky/protos/CommonDevice$Instrument;)I
     .locals 4
-    .param p0    # Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
     const/4 v1, 0x2
 
@@ -343,7 +337,6 @@
 
 .method public static getLine1Number(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const-string v4, "phone"
 
@@ -427,7 +420,6 @@
 
 .method public static getSimCountry(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "phone"
 
@@ -450,7 +442,6 @@
 
 .method public static getTopMostView(Landroid/view/ViewGroup;Ljava/util/Collection;)Landroid/view/View;
     .locals 5
-    .param p0    # Landroid/view/ViewGroup;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -527,8 +518,6 @@
 
 .method public static getViewOffsetToChild(Landroid/view/ViewGroup;Landroid/view/View;)I
     .locals 2
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/graphics/Rect;
 
@@ -543,7 +532,6 @@
 
 .method public static instrumentAddressFromAddressData(Lcom/android/i18n/addressinput/AddressData;Ljava/util/List;)Lcom/google/android/finsky/protos/BillingAddress$Address;
     .locals 3
-    .param p0    # Lcom/android/i18n/addressinput/AddressData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -813,7 +801,6 @@
 
 .method public static isEmptyOrSpaces(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     if-eqz p0, :cond_0
 
@@ -851,7 +838,6 @@
 
 .method public static replaceLanguageAndRegion(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "%lang%"
 
@@ -908,7 +894,6 @@
 
 .method public static replaceLocale(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v2, "%locale%"
 

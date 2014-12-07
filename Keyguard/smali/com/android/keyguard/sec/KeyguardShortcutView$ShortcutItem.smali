@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/content/Context;Landroid/content/ComponentName;Z)V
     .locals 12
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->this$0:Lcom/android/keyguard/sec/KeyguardShortcutView;
 
@@ -477,7 +474,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->mIntent:Landroid/content/Intent;
 
@@ -512,7 +508,6 @@
 
 .method public onPressed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->mIcon:Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;
 
@@ -523,7 +518,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 26
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -1526,7 +1520,6 @@
 
 .method public setBadgeCount(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->mIcon:Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;
 
@@ -1537,7 +1530,6 @@
 
 .method public setOpacity(D)V
     .locals 1
-    .param p1    # D
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutItem;->mIcon:Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;
 

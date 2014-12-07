@@ -42,8 +42,6 @@
 # virtual methods
 .method public getChild(IZ)Lcom/android/dialer/dialpad/SmartDialTrie$Node;
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_2
 

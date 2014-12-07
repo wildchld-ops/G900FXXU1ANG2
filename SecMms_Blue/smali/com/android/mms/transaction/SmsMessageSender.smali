@@ -101,10 +101,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;J)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     const-wide/16 v7, 0x0
 
@@ -312,11 +308,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;JI)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/transaction/SmsMessageSender;-><init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;J)V
 
@@ -327,12 +318,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;JII)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/transaction/SmsMessageSender;-><init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;J)V
 
@@ -345,12 +330,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;JIZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/transaction/SmsMessageSender;-><init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;J)V
 
@@ -376,11 +355,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;JJ)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/transaction/SmsMessageSender;-><init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;J)V
 
@@ -391,11 +365,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;JZ)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/transaction/SmsMessageSender;-><init>(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;J)V
 
@@ -406,16 +375,6 @@
 
 .method private static addMessageToUri(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZZJLandroid/content/ContentValues;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # J
-    .param p10    # Landroid/content/ContentValues;
 
     const/4 v3, 0x0
 
@@ -514,17 +473,6 @@
 
 .method private static addMessageToUri(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZZJLandroid/content/ContentValues;I)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # J
-    .param p10    # Landroid/content/ContentValues;
-    .param p11    # I
 
     const/4 v3, 0x0
 
@@ -631,17 +579,6 @@
 
 .method private static addMessageToUri(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;ZZJLandroid/content/ContentValues;Z)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # J
-    .param p10    # Landroid/content/ContentValues;
-    .param p11    # Z
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -764,8 +701,6 @@
 
 .method private static getBGSenderValues(JI)Landroid/content/ContentValues;
     .locals 3
-    .param p0    # J
-    .param p2    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -794,7 +729,6 @@
 
 .method private static getCallbackValues(Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -809,8 +743,6 @@
 
 .method private static getGroupValues(JI)Landroid/content/ContentValues;
     .locals 3
-    .param p0    # J
-    .param p2    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -839,8 +771,6 @@
 
 .method private static getKTSMSDeliveryReadReportValues(ILjava/lang/String;)Landroid/content/ContentValues;
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -885,7 +815,6 @@
 
 .method private static getLockedValues(Z)Landroid/content/ContentValues;
     .locals 3
-    .param p0    # Z
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -904,7 +833,6 @@
 
 .method private getOutgoingServiceCenter(J)Ljava/lang/String;
     .locals 11
-    .param p1    # J
 
     const/4 v10, 0x0
 
@@ -1026,7 +954,6 @@
 
 .method private queueMessage(J)Z
     .locals 18
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1628,8 +1555,6 @@
 
 .method private updateGroupSms(JJ)V
     .locals 7
-    .param p1    # J
-    .param p3    # J
 
     const/4 v6, 0x0
 
@@ -1759,7 +1684,6 @@
 # virtual methods
 .method public queueMessageForPending(J)Z
     .locals 14
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1901,7 +1825,6 @@
 
 .method public sendMessage(J)Z
     .locals 1
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1917,8 +1840,6 @@
 
 .method public sendSpamRec(JLandroid/net/Uri;)Z
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1932,7 +1853,6 @@
 
 .method public setLocked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/transaction/SmsMessageSender;->mLocked:Z
 
@@ -1941,7 +1861,6 @@
 
 .method public setPriorityLevel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/transaction/SmsMessageSender;->mPriorityLevel:I
 
@@ -1950,8 +1869,6 @@
 
 .method public setServiceCommand(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iput p1, p0, Lcom/android/mms/transaction/SmsMessageSender;->mSmsSvcCmd:I
 

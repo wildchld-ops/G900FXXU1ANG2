@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/ActivityThread;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/ActivityThread$mRunnable;->this$0:Landroid/app/ActivityThread;
 

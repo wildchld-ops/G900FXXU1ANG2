@@ -122,7 +122,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -203,7 +202,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/ResourcesServiceInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -212,7 +210,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/ResourcesServiceInternal;)Lcom/nuance/connect/internal/ConnectResources;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -221,7 +218,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/ResourcesServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -230,10 +226,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/ResourcesServiceInternal;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/nuance/connect/internal/ResourcesServiceInternal;->processResourcesXML(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -242,7 +234,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/internal/ResourcesServiceInternal;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->catIdsToLocale:Ljava/util/HashMap;
 
@@ -251,8 +242,6 @@
 
 .method static synthetic access$402(Lcom/nuance/connect/internal/ResourcesServiceInternal;Ljava/util/HashMap;)Ljava/util/HashMap;
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
-    .param p1    # Ljava/util/HashMap;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->catIdsToLocale:Ljava/util/HashMap;
 
@@ -261,8 +250,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/internal/ResourcesServiceInternal;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/ResourcesServiceInternal;->normalizeLocaleString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -273,7 +260,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/internal/ResourcesServiceInternal;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->queueCallbacks:Ljava/util/HashMap;
 
@@ -290,8 +276,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/internal/ResourcesServiceInternal;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/ResourcesServiceInternal;->checkLanguageComplete(Ljava/lang/String;)V
 
@@ -300,7 +284,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/internal/ResourcesServiceInternal;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ResourcesServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->processingStatus:Ljava/util/HashMap;
 
@@ -309,7 +292,6 @@
 
 .method private checkLanguageComplete(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/util/Locale;
 
@@ -360,7 +342,6 @@
 
 .method private normalizeLocaleString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -383,9 +364,6 @@
 
 .method private processResourcesXML(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p3}, Lcom/nuance/connect/internal/ResourcesServiceInternal;->normalizeLocaleString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -476,7 +454,6 @@
 # virtual methods
 .method getBestMatch(Ljava/util/Locale;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/util/Locale;
 
     const/4 v0, 0x0
 
@@ -644,7 +621,6 @@
 
 .method public getBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -685,8 +661,6 @@
 
 .method public getLanguageBitmap(Ljava/lang/String;Ljava/util/Locale;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Locale;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -703,7 +677,6 @@
 
 .method public getLanguageString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -716,8 +689,6 @@
 
 .method public getLanguageString(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Locale;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -746,7 +717,6 @@
 
 .method public getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -759,7 +729,6 @@
 
 .method public isLanguageAvailable(Ljava/util/Locale;)Z
     .locals 3
-    .param p1    # Ljava/util/Locale;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/internal/ResourcesServiceInternal;->getBestMatch(Ljava/util/Locale;)Ljava/lang/String;
 
@@ -780,7 +749,6 @@
 
 .method public isLanguageProcessing(Ljava/util/Locale;)Z
     .locals 2
-    .param p1    # Ljava/util/Locale;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/internal/ResourcesServiceInternal;->getBestMatch(Ljava/util/Locale;)Ljava/lang/String;
 
@@ -797,8 +765,6 @@
 
 .method public setBitmap(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -809,9 +775,6 @@
 
 .method public setLanguageBitmap(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Locale;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -826,8 +789,6 @@
 
 .method public setLanguageString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -838,9 +799,6 @@
 
 .method public setLanguageString(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Locale;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -855,8 +813,6 @@
 
 .method public setString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->resources:Lcom/nuance/connect/internal/ConnectResources;
 
@@ -867,8 +823,6 @@
 
 .method public subscribe(Ljava/util/Locale;Lcom/nuance/connect/api/ResourcesService$ProcessingCallback;)V
     .locals 9
-    .param p1    # Ljava/util/Locale;
-    .param p2    # Lcom/nuance/connect/api/ResourcesService$ProcessingCallback;
 
     iget-object v6, p0, Lcom/nuance/connect/internal/ResourcesServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1149,7 +1103,6 @@
 
 .method public unsubscribe(Ljava/util/Locale;)V
     .locals 3
-    .param p1    # Ljava/util/Locale;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/internal/ResourcesServiceInternal;->getBestMatch(Ljava/util/Locale;)Ljava/lang/String;
 

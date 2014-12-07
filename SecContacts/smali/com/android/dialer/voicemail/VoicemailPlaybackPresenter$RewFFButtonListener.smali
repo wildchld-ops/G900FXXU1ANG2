@@ -52,8 +52,6 @@
 
 .method synthetic constructor <init>(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter;Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$1;)V
     .locals 0
-    .param p1    # Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter;
-    .param p2    # Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$1;
 
     invoke-direct {p0, p1}, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$RewFFButtonListener;-><init>(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter;)V
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$2500(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$RewFFButtonListener;)Ljava/util/TimerTask;
     .locals 1
-    .param p0    # Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$RewFFButtonListener;
 
     iget-object v0, p0, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$RewFFButtonListener;->mTimer:Ljava/util/TimerTask;
 
@@ -95,8 +92,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/16 v7, 0x63
 

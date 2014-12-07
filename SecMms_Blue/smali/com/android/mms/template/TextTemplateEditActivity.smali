@@ -101,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/template/TextTemplateEditActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateEditActivity;
 
     invoke-direct {p0}, Lcom/android/mms/template/TextTemplateEditActivity;->TextTemplateSipHide()V
 
@@ -110,7 +109,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/template/TextTemplateEditActivity;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateEditActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateEditActivity;->mEditor:Landroid/widget/EditText;
 
@@ -119,7 +117,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/template/TextTemplateEditActivity;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateEditActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateEditActivity;->mToast:Landroid/widget/Toast;
 
@@ -128,8 +125,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/template/TextTemplateEditActivity;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateEditActivity;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/mms/template/TextTemplateEditActivity;->mToast:Landroid/widget/Toast;
 
@@ -140,7 +135,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -390,8 +384,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x52
 
@@ -453,7 +445,6 @@
 
 .method public updateTextCounter(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v1, "%d/%d"
 

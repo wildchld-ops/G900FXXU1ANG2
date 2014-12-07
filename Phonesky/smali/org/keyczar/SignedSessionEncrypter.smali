@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lorg/keyczar/Encrypter;Lorg/keyczar/Signer;)V
     .locals 1
-    .param p1    # Lorg/keyczar/Encrypter;
-    .param p2    # Lorg/keyczar/Signer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method public encrypt([B)[B
     .locals 6
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -145,7 +142,6 @@
 
 .method public newSession(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

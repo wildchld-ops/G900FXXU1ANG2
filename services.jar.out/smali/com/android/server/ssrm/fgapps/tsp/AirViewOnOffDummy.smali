@@ -16,8 +16,6 @@
 # virtual methods
 .method protected calculateAirViewStatus(Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$SettingsAirViewInfo;)I
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;
-    .param p2    # Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$SettingsAirViewInfo;
 
     const/4 v0, 0x0
 

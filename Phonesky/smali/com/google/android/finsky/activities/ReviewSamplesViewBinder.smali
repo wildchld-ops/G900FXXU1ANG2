@@ -34,11 +34,6 @@
 # virtual methods
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/Document;ZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Z
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     if-nez p4, :cond_1
 
@@ -99,11 +94,6 @@
 
 .method public init(Landroid/content/Context;Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Lcom/google/android/finsky/api/DfeApi;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-super {p0, p1, p3, p4}, Lcom/google/android/finsky/fragments/DetailsViewBinder;->init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
 
@@ -392,7 +382,6 @@
 
 .method public onRateReview(Lcom/google/android/finsky/protos/DocumentV2$Review;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$Review;
 
     iget-object v2, p0, Lcom/google/android/finsky/activities/ReviewSamplesViewBinder;->mContainerFragment:Landroid/support/v4/app/Fragment;
 

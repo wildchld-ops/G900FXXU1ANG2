@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -53,8 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -73,7 +70,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/RecipientFilterItem;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientFilterItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientFilterItem;->mAvatar:Landroid/widget/ImageView;
 
@@ -82,7 +78,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/RecipientFilterItem;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientFilterItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientFilterItem;->mContext:Landroid/content/Context;
 
@@ -91,7 +86,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/RecipientFilterItem;)Lcom/android/mms/ui/RecipientsAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientFilterItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientFilterItem;->mAdapter:Lcom/android/mms/ui/RecipientsAdapter;
 
@@ -100,9 +94,6 @@
 
 .method private findSearchKeywordPosition(Ljava/util/regex/Pattern;Ljava/lang/String;[I)Z
     .locals 5
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [I
 
     const/4 v3, 0x0
 
@@ -215,7 +206,6 @@
 
 .method private isDependentVowel(C)Z
     .locals 1
-    .param p1    # C
 
     sparse-switch p1, :sswitch_data_0
 
@@ -375,8 +365,6 @@
 # virtual methods
 .method public bind(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 28
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v18, 0x0
 
@@ -1709,7 +1697,6 @@
 
 .method public setAdapter(Lcom/android/mms/ui/RecipientsAdapter;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/RecipientsAdapter;
 
     iput-object p1, p0, Lcom/android/mms/ui/RecipientFilterItem;->mAdapter:Lcom/android/mms/ui/RecipientsAdapter;
 

@@ -35,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -46,7 +45,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -319,8 +317,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 7
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -437,9 +433,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040161
 

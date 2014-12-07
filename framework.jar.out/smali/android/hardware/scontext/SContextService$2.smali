@@ -36,7 +36,6 @@
 # virtual methods
 .method public onGetSensorHubData(Landroid/hardware/sensorhub/SensorHubEvent;)V
     .locals 8
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEvent;
 
     const/4 v4, 0x3
 

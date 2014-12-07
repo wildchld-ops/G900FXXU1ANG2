@@ -43,9 +43,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;ZI)V
     .locals 3
-    .param p2    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
-    .param p3    # Z
-    .param p4    # I
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment$DataQueryTask;->this$0:Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
@@ -236,7 +233,6 @@
 
 .method private getUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
@@ -257,8 +253,6 @@
 # virtual methods
 .method protected varargs doInBackground(Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -356,8 +350,6 @@
 
 .method protected bridge synthetic doInBackground(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
@@ -419,8 +411,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
@@ -461,7 +451,6 @@
 
 .method protected bridge synthetic onPreExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 

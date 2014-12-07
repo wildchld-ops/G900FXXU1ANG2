@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -21,8 +20,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     new-instance v0, Lcom/google/android/volley/GoogleHttpClient;
 
@@ -39,8 +36,6 @@
 
 .method private constructor <init>(Lcom/google/android/volley/GoogleHttpClient;Z)V
     .locals 2
-    .param p1    # Lcom/google/android/volley/GoogleHttpClient;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/volley/toolbox/HttpClientStack;-><init>(Lorg/apache/http/client/HttpClient;)V
 

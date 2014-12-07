@@ -56,7 +56,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/widget/NoticeEditActivity;Landroid/app/Activity;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 1
-    .param p2    # Landroid/app/Activity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -95,7 +94,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;->noticeConversationList:Ljava/util/ArrayList;
 
@@ -104,7 +102,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;->noticeConversationListClone:Ljava/util/ArrayList;
 
@@ -113,9 +110,6 @@
 
 .method private drawEditScreen(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     new-instance v3, Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter$ViewHolder;
 
@@ -256,7 +250,6 @@
 # virtual methods
 .method public allowDrag(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -265,8 +258,6 @@
 
 .method public allowDrop(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -275,8 +266,6 @@
 
 .method public dropDone(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;->noticeConversationList:Ljava/util/ArrayList;
 
@@ -348,7 +337,6 @@
 
 .method public getItem(I)Lcom/android/mms/widget/NoticeEditActivity$NoticeWidgetData;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;->noticeConversationList:Ljava/util/ArrayList;
 
@@ -363,7 +351,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;->getItem(I)Lcom/android/mms/widget/NoticeEditActivity$NoticeWidgetData;
 
@@ -374,7 +361,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeEditActivity$NoticeAdapter;->noticeConversationList:Ljava/util/ArrayList;
 
@@ -412,9 +398,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 

@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/nuance/connect/service/manager/interfaces/Manager;Lcom/nuance/connect/service/manager/interfaces/Manager;)I
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/manager/interfaces/Manager;
-    .param p2    # Lcom/nuance/connect/service/manager/interfaces/Manager;
 
     invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -108,8 +106,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/nuance/connect/service/manager/interfaces/Manager;
 

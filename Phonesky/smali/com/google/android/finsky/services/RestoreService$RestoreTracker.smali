@@ -148,8 +148,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/services/RestoreService;Lcom/google/android/finsky/services/RestoreService$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/services/RestoreService;
-    .param p2    # Lcom/google/android/finsky/services/RestoreService$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;-><init>(Lcom/google/android/finsky/services/RestoreService;)V
 
@@ -158,7 +156,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;)Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mAccountStore:Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
 
@@ -167,7 +164,6 @@
 
 .method static synthetic access$1508(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;)I
     .locals 2
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mStartupRefCount:I
 
@@ -180,7 +176,6 @@
 
 .method static synthetic access$1510(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;)I
     .locals 2
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mStartupRefCount:I
 
@@ -193,9 +188,6 @@
 
 .method static synthetic access$1700(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;Landroid/content/Context;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->initPackagesStore(Landroid/content/Context;Ljava/lang/Runnable;)V
 
@@ -204,8 +196,6 @@
 
 .method static synthetic access$1800(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->writePackageStatus(Ljava/lang/String;)V
 
@@ -214,10 +204,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)Lcom/google/android/finsky/services/RestoreService$AccountFetchStatus;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/util/Map;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->convertEntryToStatus(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)Lcom/google/android/finsky/services/RestoreService$AccountFetchStatus;
 
@@ -228,7 +214,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mAccountStatusMap:Ljava/util/Map;
 
@@ -237,7 +222,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;)Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mPackagesStore:Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
 
@@ -246,10 +230,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)Lcom/google/android/finsky/services/RestoreService$PackageInstallStatus;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/util/Map;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->convertEntryToPackageStatus(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)Lcom/google/android/finsky/services/RestoreService$PackageInstallStatus;
 
@@ -260,7 +240,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/services/RestoreService$RestoreTracker;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mPackageStatusMap:Ljava/util/Map;
 
@@ -269,8 +248,6 @@
 
 .method private convertEntryToPackageStatus(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)Lcom/google/android/finsky/services/RestoreService$PackageInstallStatus;
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -570,8 +547,6 @@
 
 .method private convertEntryToStatus(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)Lcom/google/android/finsky/services/RestoreService$AccountFetchStatus;
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -753,8 +728,6 @@
 
 .method private initPackagesStore(Landroid/content/Context;Ljava/lang/Runnable;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mPackagesStore:Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
 
@@ -801,7 +774,6 @@
 
 .method private writeAccountStatus(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
 
@@ -854,7 +826,6 @@
 
 .method private writePackageStatus(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
 
@@ -935,9 +906,6 @@
 # virtual methods
 .method public finishAccount(Ljava/lang/String;ZI)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1017,9 +985,6 @@
 
 .method public finishPackage(Ljava/lang/String;ZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     if-eqz p2, :cond_3
 
@@ -1061,8 +1026,6 @@
 
 .method public initAccountStore(Landroid/content/Context;Ljava/lang/Runnable;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mAccountStore:Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
 
@@ -1109,7 +1072,6 @@
 
 .method public isAccountInFlight(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mAccountStatusMap:Ljava/util/Map;
 
@@ -1138,9 +1100,6 @@
 
 .method public onInstallPackageEvent(Ljava/lang/String;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p3    # I
 
     const/4 v9, 0x2
 
@@ -1325,8 +1284,6 @@
 
 .method public startAccount(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mAccountStatusMap:Ljava/util/Map;
 
@@ -1372,10 +1329,6 @@
 
 .method public startPackage(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mPackageStatusMap:Ljava/util/Map;
 
@@ -1491,7 +1444,6 @@
 
 .method public tryAgainOrDeleteAccount(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1564,7 +1516,6 @@
 
 .method public tryAgainPackage(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1632,8 +1583,6 @@
 
 .method public writePackageRetryTime(Ljava/lang/String;J)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v1, p0, Lcom/google/android/finsky/services/RestoreService$RestoreTracker;->mPackageStatusMap:Ljava/util/Map;
 

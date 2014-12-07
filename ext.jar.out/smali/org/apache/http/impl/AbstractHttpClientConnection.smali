@@ -105,8 +105,6 @@
 
 .method protected createRequestWriter(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/io/HttpMessageWriter;
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/io/HttpRequestWriter;
 
@@ -119,9 +117,6 @@
 
 .method protected createResponseParser(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpResponseFactory;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/io/HttpMessageParser;
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/HttpResponseFactory;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/io/HttpResponseParser;
 
@@ -172,9 +167,6 @@
 
 .method protected init(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     if-nez p1, :cond_0
 
@@ -237,7 +229,6 @@
 
 .method public isResponseAvailable(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -312,7 +303,6 @@
 
 .method public receiveResponseEntity(Lorg/apache/http/HttpResponse;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -387,7 +377,6 @@
 
 .method public sendRequestEntity(Lorg/apache/http/HttpEntityEnclosingRequest;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpEntityEnclosingRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -433,7 +422,6 @@
 
 .method public sendRequestHeader(Lorg/apache/http/HttpRequest;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

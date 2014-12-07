@@ -12,10 +12,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/message/LineParser;Lorg/apache/http/HttpResponseFactory;Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/message/LineParser;
-    .param p3    # Lorg/apache/http/HttpResponseFactory;
-    .param p4    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1, p2, p4}, Lorg/apache/http/impl/io/AbstractMessageParser;-><init>(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/message/LineParser;Lorg/apache/http/params/HttpParams;)V
 
@@ -47,7 +43,6 @@
 # virtual methods
 .method protected parseHead(Lorg/apache/http/io/SessionInputBuffer;)Lorg/apache/http/HttpMessage;
     .locals 5
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

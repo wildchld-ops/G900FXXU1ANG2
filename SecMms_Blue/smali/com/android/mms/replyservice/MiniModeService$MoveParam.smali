@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/replyservice/MiniModeService;IIII)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iput-object p1, p0, Lcom/android/mms/replyservice/MiniModeService$MoveParam;->this$0:Lcom/android/mms/replyservice/MiniModeService;
 

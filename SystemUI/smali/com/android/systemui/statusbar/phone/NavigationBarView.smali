@@ -77,8 +77,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -181,7 +179,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/NavigationBarView;)Lcom/android/systemui/statusbar/DelegateViewHelper;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
@@ -190,7 +187,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/phone/NavigationBarView;)Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBarTransitions:Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;
 
@@ -199,8 +195,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/phone/NavigationBarView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCameraDisabledByDpm:Z
 
@@ -209,7 +203,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/phone/NavigationBarView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->isCameraDisabledByDpm()Z
 
@@ -220,8 +213,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/phone/NavigationBarView;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->enableAccessibility(Z)V
 
@@ -230,9 +221,6 @@
 
 .method private static dumpButton(Ljava/io/PrintWriter;Ljava/lang/String;Landroid/view/View;)V
     .locals 2
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -386,7 +374,6 @@
 
 .method private enableAccessibility(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -492,7 +479,6 @@
 
 .method private getIcons(Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     const v1, 0x7f02004a
 
@@ -545,7 +531,6 @@
 
 .method private getResourceName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -673,7 +658,6 @@
 
 .method private postCheckForInvalidLayout(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -692,8 +676,6 @@
 
 .method private setVisibleOrGone(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -715,7 +697,6 @@
 
 .method private static visibilityToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -795,9 +776,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v9, 0x3
 
@@ -1221,7 +1199,6 @@
 
 .method public notifyScreenOn(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mScreenOn:Z
 
@@ -1280,7 +1257,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
@@ -1293,11 +1269,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
@@ -1338,10 +1309,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-lez p1, :cond_1
 
@@ -1375,7 +1342,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDeadZone:Lcom/android/systemui/statusbar/policy/DeadZone;
 
@@ -1497,7 +1463,6 @@
 
 .method public setBar(Lcom/android/systemui/statusbar/BaseStatusBar;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
@@ -1508,7 +1473,6 @@
 
 .method public setDelegateView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView;->mDelegateHelper:Lcom/android/systemui/statusbar/DelegateViewHelper;
 
@@ -1519,7 +1483,6 @@
 
 .method public setDisabledFlags(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1530,8 +1493,6 @@
 
 .method public setDisabledFlags(IZ)V
     .locals 13
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v11, 0x4
 
@@ -1782,7 +1743,6 @@
 
 .method public setLayoutDirection(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1799,7 +1759,6 @@
 
 .method public setMenuVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1810,8 +1769,6 @@
 
 .method public setMenuVisibility(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     if-nez p2, :cond_0
 
@@ -1848,7 +1805,6 @@
 
 .method public setNavigationIconHints(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1859,8 +1815,6 @@
 
 .method public setNavigationIconHints(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -1966,7 +1920,6 @@
 
 .method public setSlippery(Z)V
     .locals 5
-    .param p1    # Z
 
     const/high16 v4, 0x20000000
 

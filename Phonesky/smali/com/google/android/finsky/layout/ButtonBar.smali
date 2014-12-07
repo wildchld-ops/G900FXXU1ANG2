@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -72,7 +70,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ButtonBar;->mClickListener:Lcom/google/android/finsky/layout/ButtonBar$ClickListener;
 
@@ -104,7 +101,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -164,7 +160,6 @@
 
 .method public setClickListener(Lcom/google/android/finsky/layout/ButtonBar$ClickListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/layout/ButtonBar$ClickListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/ButtonBar;->mClickListener:Lcom/google/android/finsky/layout/ButtonBar$ClickListener;
 
@@ -181,7 +176,6 @@
 
 .method public setNegativeButtonTitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ButtonBar;->mNegativeButton:Landroid/widget/Button;
 
@@ -192,7 +186,6 @@
 
 .method public setNegativeButtonTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ButtonBar;->mNegativeButton:Landroid/widget/Button;
 
@@ -203,7 +196,6 @@
 
 .method public setPositiveButtonEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ButtonBar;->mPositiveButton:Landroid/widget/Button;
 
@@ -214,7 +206,6 @@
 
 .method public setPositiveButtonTitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ButtonBar;->mPositiveButton:Landroid/widget/Button;
 
@@ -225,7 +216,6 @@
 
 .method public setPositiveButtonVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/ButtonBar;->mPositiveButton:Landroid/widget/Button;
 

@@ -100,8 +100,6 @@
 
 .method public static createAggregatedGroupDataLoader(Landroid/content/Context;Ljava/lang/String;)Landroid/content/CursorLoader;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/CursorLoader;
 
@@ -130,8 +128,6 @@
 
 .method public static createAggregatedGroupMemberLoader(Landroid/content/Context;Ljava/lang/String;)Landroid/content/CursorLoader;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -184,8 +180,6 @@
 
 .method public static createGoogleGroupDataLoader(Landroid/content/Context;J)Landroid/content/CursorLoader;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -216,8 +210,6 @@
 
 .method public static createGoogleGroupMemberLoader(Landroid/content/Context;J)Landroid/content/CursorLoader;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v4, 0x0
 

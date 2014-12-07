@@ -91,7 +91,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -102,8 +101,6 @@
 
 .method synthetic constructor <init>(Landroid/content/Context;Lcom/android/server/am/AppStateBroadcaster$1;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/AppStateBroadcaster$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/AppStateBroadcaster;-><init>(Landroid/content/Context;)V
 
@@ -112,9 +109,6 @@
 
 .method private BroadcastAppState(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -174,7 +168,6 @@
 
 .method public static SendApplicationFocusGain(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/am/AppStateBroadcaster;->instance:Lcom/android/server/am/AppStateBroadcaster;
 
@@ -196,7 +189,6 @@
 
 .method public static SendApplicationFocusLoss(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/am/AppStateBroadcaster;->instance:Lcom/android/server/am/AppStateBroadcaster;
 
@@ -218,7 +210,6 @@
 
 .method public static SendApplicationStart(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/am/AppStateBroadcaster;->instance:Lcom/android/server/am/AppStateBroadcaster;
 
@@ -240,8 +231,6 @@
 
 .method public static SendApplicationStop(Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/am/AppStateBroadcaster;->instance:Lcom/android/server/am/AppStateBroadcaster;
 
@@ -281,7 +270,6 @@
 
 .method static synthetic access$002(Lcom/android/server/am/AppStateBroadcaster;)Lcom/android/server/am/AppStateBroadcaster;
     .locals 0
-    .param p0    # Lcom/android/server/am/AppStateBroadcaster;
 
     sput-object p0, Lcom/android/server/am/AppStateBroadcaster;->instance:Lcom/android/server/am/AppStateBroadcaster;
 

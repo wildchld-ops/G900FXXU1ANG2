@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
 
     const v0, 0x1090009
 
@@ -40,9 +38,6 @@
 # virtual methods
 .method public getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -84,9 +79,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/adapters/SearchAdapter$StringBasedSpinnerAdapter;->getContext()Landroid/content/Context;
 

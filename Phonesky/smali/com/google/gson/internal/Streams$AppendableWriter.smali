@@ -29,7 +29,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Appendable;)V
     .locals 1
-    .param p1    # Ljava/lang/Appendable;
 
     invoke-direct {p0}, Ljava/io/Writer;-><init>()V
 
@@ -46,8 +45,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Appendable;Lcom/google/gson/internal/Streams$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Appendable;
-    .param p2    # Lcom/google/gson/internal/Streams$1;
 
     invoke-direct {p0, p1}, Lcom/google/gson/internal/Streams$AppendableWriter;-><init>(Ljava/lang/Appendable;)V
 
@@ -70,7 +67,6 @@
 
 .method public write(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -88,9 +84,6 @@
 
 .method public write([CII)V
     .locals 3
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

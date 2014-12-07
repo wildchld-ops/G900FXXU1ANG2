@@ -1379,7 +1379,7 @@ De asemenea, puteţi afişa sau ascunde mânerul ferestrelor multiple apăsând 
     <string name="usb_tethering_errored_subtext">Eroare furnizare acces la Internet prin USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Furnizarea accesului la internet prin USB nu poate fi dezactivată când utilizaţi Sincronizarea ecranelor. Dacă dezactivaţi furnizarea accesului la internet prin USB, se va dezactiva Sincronizarea ecr.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Furnizarea accesului la internet prin USB nu poate fi activată când utilizaţi Sincronizarea ecranelor. Dacă activaţi furnizarea accesului la internet prin USB, se va dezactiva Sincronizarea ecr.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Tethering prin Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Tethering prin Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Se partaj. conex. la Internet a dispozitivului…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Conexiunea la Internet a dispozitivului partajată cu 1 dispozitiv</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Conexiunea la Internet a dispozitivului partajată cu %d dispozitive</string>

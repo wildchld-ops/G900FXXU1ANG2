@@ -124,8 +124,6 @@
 
 .method static synthetic access$002(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mValid:Z
 
@@ -134,8 +132,6 @@
 
 .method static synthetic access$1002(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mMultipleSelectMode:Z
 
@@ -144,8 +140,6 @@
 
 .method static synthetic access$102(Lcom/android/contacts/list/ContactsRequest;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/list/ContactsRequest;->mActionCode:I
 
@@ -154,8 +148,6 @@
 
 .method static synthetic access$1102(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mDisplayTab:Z
 
@@ -164,8 +156,6 @@
 
 .method static synthetic access$1202(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mGroupSelectionMode:Z
 
@@ -174,8 +164,6 @@
 
 .method static synthetic access$1302(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mShowSelectedText:Z
 
@@ -184,8 +172,6 @@
 
 .method static synthetic access$1402(Lcom/android/contacts/list/ContactsRequest;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/list/ContactsRequest;->mExtra:I
 
@@ -194,8 +180,6 @@
 
 .method static synthetic access$202(Lcom/android/contacts/list/ContactsRequest;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mRedirectIntent:Landroid/content/Intent;
 
@@ -204,8 +188,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/list/ContactsRequest;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mTitle:Ljava/lang/CharSequence;
 
@@ -214,8 +196,6 @@
 
 .method static synthetic access$402(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mSearchMode:Z
 
@@ -224,8 +204,6 @@
 
 .method static synthetic access$502(Lcom/android/contacts/list/ContactsRequest;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mQueryString:Ljava/lang/String;
 
@@ -234,8 +212,6 @@
 
 .method static synthetic access$602(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mIncludeProfile:Z
 
@@ -244,8 +220,6 @@
 
 .method static synthetic access$702(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mLegacyCompatibilityMode:Z
 
@@ -254,8 +228,6 @@
 
 .method static synthetic access$802(Lcom/android/contacts/list/ContactsRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mDirectorySearchEnabled:Z
 
@@ -264,8 +236,6 @@
 
 .method static synthetic access$902(Lcom/android/contacts/list/ContactsRequest;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactsRequest;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mContactUri:Landroid/net/Uri;
 
@@ -276,7 +246,6 @@
 # virtual methods
 .method public copyFrom(Lcom/android/contacts/list/ContactsRequest;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/list/ContactsRequest;
 
     iget-boolean v0, p1, Lcom/android/contacts/list/ContactsRequest;->mValid:Z
 
@@ -519,7 +488,6 @@
 
 .method public setAccountName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mAccountName:Ljava/lang/String;
 
@@ -528,7 +496,6 @@
 
 .method public setAccountType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mAccountType:Ljava/lang/String;
 
@@ -537,7 +504,6 @@
 
 .method public setActionCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/list/ContactsRequest;->mActionCode:I
 
@@ -546,7 +512,6 @@
 
 .method public setActivityTitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mTitle:Ljava/lang/CharSequence;
 
@@ -555,7 +520,6 @@
 
 .method public setChangeDisplayMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mChangeDisplayMode:Z
 
@@ -564,7 +528,6 @@
 
 .method public setChatFirstMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mShowChatFirst:Z
 
@@ -573,7 +536,6 @@
 
 .method public setChatVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mChatVisible:Z
 
@@ -582,7 +544,6 @@
 
 .method public setContactUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mContactUri:Landroid/net/Uri;
 
@@ -591,7 +552,6 @@
 
 .method public setDirectSendIntentMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mDirectSendIntentMode:Z
 
@@ -600,7 +560,6 @@
 
 .method public setDirectorySearchEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mDirectorySearchEnabled:Z
 
@@ -609,7 +568,6 @@
 
 .method public setExtraValue(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/list/ContactsRequest;->mExtra:I
 
@@ -618,7 +576,6 @@
 
 .method public setGroupSelectionMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mGroupSelectionMode:Z
 
@@ -627,7 +584,6 @@
 
 .method public setGroupSendType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/list/ContactsRequest;->mGroupSendType:I
 
@@ -636,7 +592,6 @@
 
 .method public setHideCreateLabel(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mhidecreatelabel:Z
 
@@ -645,7 +600,6 @@
 
 .method public setIncludeProfile(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mIncludeProfile:Z
 
@@ -654,7 +608,6 @@
 
 .method public setKeepTabState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mKeepTabState:Z
 
@@ -663,7 +616,6 @@
 
 .method public setLegacyCompatibilityMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mLegacyCompatibilityMode:Z
 
@@ -672,7 +624,6 @@
 
 .method public setMutiSelectMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mMultipleSelectMode:Z
 
@@ -681,7 +632,6 @@
 
 .method public setQueryString(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactsRequest;->mQueryString:Ljava/lang/String;
 
@@ -690,7 +640,6 @@
 
 .method public setSearchMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mSearchMode:Z
 
@@ -699,7 +648,6 @@
 
 .method public setSelectedText(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mShowSelectedText:Z
 
@@ -708,7 +656,6 @@
 
 .method public setTabMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactsRequest;->mDisplayTab:Z
 
@@ -909,8 +856,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

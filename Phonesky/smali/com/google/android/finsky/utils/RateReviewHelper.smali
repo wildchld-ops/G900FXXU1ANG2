@@ -61,8 +61,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/utils/RateReviewHelper;->showReviewError(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$100(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/RateReviewHelper;->showReviewDeleteError(Landroid/content/Context;)V
 
@@ -80,8 +77,6 @@
 
 .method public static checkAndConfirmGPlus(Landroid/support/v4/app/FragmentActivity;Lcom/google/android/finsky/utils/RateReviewHelper$CheckAndConfirmGPlusListener;)V
     .locals 4
-    .param p0    # Landroid/support/v4/app/FragmentActivity;
-    .param p1    # Lcom/google/android/finsky/utils/RateReviewHelper$CheckAndConfirmGPlusListener;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -108,9 +103,6 @@
 
 .method public static deleteReview(Lcom/google/android/finsky/api/model/Document;Landroid/content/Context;Lcom/google/android/finsky/utils/RateReviewHelper$RateReviewListener;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/utils/RateReviewHelper$RateReviewListener;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -139,7 +131,6 @@
 
 .method public static getRatingAccessibilityDescription(F)I
     .locals 2
-    .param p0    # F
 
     sget-object v0, Lcom/google/android/finsky/utils/RateReviewHelper;->ACCESSIBILITY_DESCRIPTION_MAP:[I
 
@@ -154,7 +145,6 @@
 
 .method public static getRatingDescription(F)I
     .locals 2
-    .param p0    # F
 
     sget-object v0, Lcom/google/android/finsky/utils/RateReviewHelper;->DESCRIPTION_MAP:[I
 
@@ -169,10 +159,6 @@
 
 .method public static rateDocument(Lcom/google/android/finsky/api/model/Document;ILandroid/support/v4/app/FragmentActivity;Lcom/google/android/finsky/utils/RateReviewHelper$RateReviewListener;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/FragmentActivity;
-    .param p3    # Lcom/google/android/finsky/utils/RateReviewHelper$RateReviewListener;
 
     new-instance v0, Lcom/google/android/finsky/utils/RateReviewHelper$7;
 
@@ -185,7 +171,6 @@
 
 .method private static showReviewDeleteError(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-eqz p0, :cond_0
 
@@ -205,8 +190,6 @@
 
 .method private static showReviewError(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -246,13 +229,6 @@
 
 .method public static updateReview(Lcom/google/android/finsky/api/model/Document;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;Landroid/content/Context;Lcom/google/android/finsky/utils/RateReviewHelper$RateReviewListener;)V
     .locals 13
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/api/model/Document;
-    .param p5    # Landroid/content/Context;
-    .param p6    # Lcom/google/android/finsky/utils/RateReviewHelper$RateReviewListener;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 

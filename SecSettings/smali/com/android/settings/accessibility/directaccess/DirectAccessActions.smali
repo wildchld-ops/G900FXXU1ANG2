@@ -65,7 +65,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -140,7 +139,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mContext:Landroid/content/Context;
 
@@ -149,8 +147,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;Lcom/android/settings/accessibility/directaccess/DirectAccessActions$ToggleAction$State;)Lcom/android/settings/accessibility/directaccess/DirectAccessActions$ToggleAction$State;
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
-    .param p1    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions$ToggleAction$State;
 
     iput-object p1, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mNegativeColorState:Lcom/android/settings/accessibility/directaccess/DirectAccessActions$ToggleAction$State;
 
@@ -159,7 +155,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;)Lcom/android/settings/accessibility/directaccess/DirectAccessActions$MyAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mAdapter:Lcom/android/settings/accessibility/directaccess/DirectAccessActions$MyAdapter;
 
@@ -168,7 +163,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;)Landroid/view/accessibility/AccessibilityManager;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
@@ -177,7 +171,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;)Lcom/android/settings/accessibility/directaccess/DirectAccessActions$DirectAccessActionsDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mDialog:Lcom/android/settings/accessibility/directaccess/DirectAccessActions$DirectAccessActionsDialog;
 
@@ -186,7 +179,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mItems:Ljava/util/ArrayList;
 
@@ -195,7 +187,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
     iget-boolean v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mKeyguardShowing:Z
 
@@ -204,7 +195,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
     iget-boolean v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mDeviceProvisioned:Z
 
@@ -275,7 +265,6 @@
 # virtual methods
 .method public callAccessControlMode(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -313,7 +302,6 @@
 
 .method public callAccessibilitySettings(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -332,7 +320,6 @@
 
 .method public changeNegativeModeSystemSetting(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -698,8 +685,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mAdapter:Lcom/android/settings/accessibility/directaccess/DirectAccessActions$MyAdapter;
 
@@ -714,7 +699,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     return-void
 .end method
@@ -963,8 +947,6 @@
 
 .method public showDialog(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions;->mKeyguardShowing:Z
 

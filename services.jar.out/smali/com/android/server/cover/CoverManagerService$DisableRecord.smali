@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/cover/CoverManagerService;Lcom/android/server/cover/CoverManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/cover/CoverManagerService;
-    .param p2    # Lcom/android/server/cover/CoverManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/CoverManagerService$DisableRecord;-><init>(Lcom/android/server/cover/CoverManagerService;)V
 

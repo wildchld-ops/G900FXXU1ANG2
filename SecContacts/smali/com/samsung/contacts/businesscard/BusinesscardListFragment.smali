@@ -103,7 +103,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -112,8 +111,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->updateSelectAllState(Z)V
 
@@ -122,7 +119,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -131,8 +127,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->showSelectAllHeader(Z)V
 
@@ -141,8 +135,6 @@
 
 .method static synthetic access$1302(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mIsSelectionMode:Z
 
@@ -151,7 +143,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->addSelectAllHeaderView()V
 
@@ -160,7 +151,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -169,8 +159,6 @@
 
 .method static synthetic access$1502(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -179,7 +167,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->removeSelectAllHeader()V
 
@@ -188,7 +175,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mActionModeCallback:Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
 
@@ -197,8 +183,6 @@
 
 .method static synthetic access$1702(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;)Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p1    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
 
     iput-object p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mActionModeCallback:Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
 
@@ -207,7 +191,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -216,7 +199,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mTotalCount:I
 
@@ -225,7 +207,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -234,7 +215,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -243,8 +223,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -253,7 +231,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -262,7 +239,6 @@
 
 .method static synthetic access$2200(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -271,7 +247,6 @@
 
 .method static synthetic access$2300(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -280,7 +255,6 @@
 
 .method static synthetic access$2400(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -289,7 +263,6 @@
 
 .method static synthetic access$2500(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -298,7 +271,6 @@
 
 .method static synthetic access$2600(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -307,7 +279,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mSelectedContactIds:Ljava/util/ArrayList;
 
@@ -316,7 +287,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mContext:Landroid/content/Context;
 
@@ -325,7 +295,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mSelectedTextView:Landroid/widget/TextView;
 
@@ -334,8 +303,6 @@
 
 .method static synthetic access$602(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mSelectedTextView:Landroid/widget/TextView;
 
@@ -344,7 +311,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->refreshSelectAllState()V
 
@@ -353,7 +319,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -362,7 +327,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/businesscard/BusinesscardListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -426,7 +390,6 @@
 
 .method private configureEmptyView(Z)V
     .locals 7
-    .param p1    # Z
 
     const/16 v4, 0x8
 
@@ -645,7 +608,6 @@
 
 .method private setVisibleAccountfilterHeaderView(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->getView()Landroid/view/View;
 
@@ -677,7 +639,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -745,7 +706,6 @@
 
 .method private updateSelectAllState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -970,8 +930,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v0, 0x7f03000f
 
@@ -1016,7 +974,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1071,7 +1028,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1118,8 +1074,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
 
@@ -1291,8 +1245,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mActionModeCallback:Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
 
@@ -1362,9 +1314,6 @@
 
 .method public onItemLongClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)Z
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1398,7 +1347,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 2
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1485,8 +1433,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -1497,7 +1443,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "selectedIds"
 
@@ -1524,8 +1469,6 @@
 
 .method public onScrollStateChanged(Lcom/sec/android/touchwiz/widget/TwAbsListView;I)V
     .locals 1
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwAbsListView;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onScrollStateChanged(Lcom/sec/android/touchwiz/widget/TwAbsListView;I)V
 
@@ -1541,7 +1484,6 @@
 
 .method public reOrder(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->setBusinesscardSortOrder(I)V
 
@@ -1560,7 +1502,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -1601,7 +1542,6 @@
 
 .method public setBusinesscardSortOrder(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->getAdapter()Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -1616,7 +1556,6 @@
 
 .method public startActionMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;->mActionModeCallback:Lcom/samsung/contacts/businesscard/BusinesscardListFragment$ActionModeCallback;
 

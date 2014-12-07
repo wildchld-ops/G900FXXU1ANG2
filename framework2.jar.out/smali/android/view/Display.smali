@@ -70,10 +70,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/display/DisplayManagerGlobal;ILandroid/view/DisplayInfo;Landroid/view/DisplayAdjustments;)V
     .locals 1
-    .param p1    # Landroid/hardware/display/DisplayManagerGlobal;
-    .param p2    # I
-    .param p3    # Landroid/view/DisplayInfo;
-    .param p4    # Landroid/view/DisplayAdjustments;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -128,9 +124,6 @@
 
 .method public static hasAccess(III)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     and-int/lit8 v0, p1, 0x4
 
@@ -158,7 +151,6 @@
 
 .method public static typeToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -306,8 +298,6 @@
 
 .method public getCurrentSizeRange(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 1
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     monitor-enter p0
 
@@ -370,7 +360,6 @@
 
 .method public getDisplayInfo(Landroid/view/DisplayInfo;)Z
     .locals 1
-    .param p1    # Landroid/view/DisplayInfo;
 
     monitor-enter p0
 
@@ -475,7 +464,6 @@
 
 .method public getMetrics(Landroid/util/DisplayMetrics;)V
     .locals 2
-    .param p1    # Landroid/util/DisplayMetrics;
 
     monitor-enter p0
 
@@ -542,7 +530,6 @@
 
 .method public getOverscanInsets(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     monitor-enter p0
 
@@ -609,7 +596,6 @@
 
 .method public getRealMetrics(Landroid/util/DisplayMetrics;)V
     .locals 3
-    .param p1    # Landroid/util/DisplayMetrics;
 
     monitor-enter p0
 
@@ -644,7 +630,6 @@
 
 .method public getRealSize(Landroid/graphics/Point;)V
     .locals 1
-    .param p1    # Landroid/graphics/Point;
 
     monitor-enter p0
 
@@ -679,7 +664,6 @@
 
 .method public getRectSize(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     monitor-enter p0
 
@@ -776,7 +760,6 @@
 
 .method public getSize(Landroid/graphics/Point;)V
     .locals 3
-    .param p1    # Landroid/graphics/Point;
 
     monitor-enter p0
 
@@ -853,7 +836,6 @@
 
 .method public hasAccess(I)Z
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/view/Display;->mFlags:I
 

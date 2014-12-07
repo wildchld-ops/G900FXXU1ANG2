@@ -481,7 +481,6 @@
 
 .method static synthetic access$000(Landroid/media/MediaPlayer;)[Landroid/media/SubtitleTrack;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mInbandSubtitleTracks:[Landroid/media/SubtitleTrack;
 
@@ -490,7 +489,6 @@
 
 .method static synthetic access$100(Landroid/media/MediaPlayer;)Landroid/media/SubtitleController;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mSubtitleController:Landroid/media/SubtitleController;
 
@@ -499,7 +497,6 @@
 
 .method static synthetic access$1000(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$TimeProvider;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mTimeProvider:Landroid/media/MediaPlayer$TimeProvider;
 
@@ -508,7 +505,6 @@
 
 .method static synthetic access$1100(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnBufferingUpdateListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnBufferingUpdateListener:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
 
@@ -517,7 +513,6 @@
 
 .method static synthetic access$1200(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnSeekCompleteListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnSeekCompleteListener:Landroid/media/MediaPlayer$OnSeekCompleteListener;
 
@@ -526,7 +521,6 @@
 
 .method static synthetic access$1300(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnVideoSizeChangedListener:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
 
@@ -535,8 +529,6 @@
 
 .method static synthetic access$1402(Landroid/media/MediaPlayer;Z)Z
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/MediaPlayer;->mIsVideo:Z
 
@@ -545,7 +537,6 @@
 
 .method static synthetic access$1500(Landroid/media/MediaPlayer;)Z
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-boolean v0, p0, Landroid/media/MediaPlayer;->mIsStart:Z
 
@@ -554,7 +545,6 @@
 
 .method static synthetic access$1600(Landroid/media/MediaPlayer;)Z
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-boolean v0, p0, Landroid/media/MediaPlayer;->mAIAContext:Z
 
@@ -563,9 +553,6 @@
 
 .method static synthetic access$1700(Landroid/media/MediaPlayer;Ljava/lang/String;[Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Landroid/media/MediaPlayer;->sendBroadcastingIntent(Ljava/lang/String;[Ljava/lang/Object;)Z
 
@@ -576,7 +563,6 @@
 
 .method static synthetic access$1800(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnErrorListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnErrorListener:Landroid/media/MediaPlayer$OnErrorListener;
 
@@ -585,7 +571,6 @@
 
 .method static synthetic access$1900(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnPlayReadyErrorListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnPlayReadyErrorListener:Landroid/media/MediaPlayer$OnPlayReadyErrorListener;
 
@@ -594,7 +579,6 @@
 
 .method static synthetic access$200(Landroid/media/MediaPlayer;)Ljava/util/Vector;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOpenSubtitleSources:Ljava/util/Vector;
 
@@ -603,7 +587,6 @@
 
 .method static synthetic access$2000(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnInfoListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnInfoListener:Landroid/media/MediaPlayer$OnInfoListener;
 
@@ -612,7 +595,6 @@
 
 .method static synthetic access$2100(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnTimedTextListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnTimedTextListener:Landroid/media/MediaPlayer$OnTimedTextListener;
 
@@ -621,7 +603,6 @@
 
 .method static synthetic access$2200(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnSubtitleDataListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnSubtitleDataListener:Landroid/media/MediaPlayer$OnSubtitleDataListener;
 
@@ -630,8 +611,6 @@
 
 .method static synthetic access$2302(Landroid/media/MediaPlayer;Z)Z
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/MediaPlayer;->mContextAwareSend:Z
 
@@ -640,8 +619,6 @@
 
 .method static synthetic access$2402(Landroid/media/MediaPlayer;I)I
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/MediaPlayer;->mContextAwareId:I
 
@@ -650,8 +627,6 @@
 
 .method static synthetic access$2502(Landroid/media/MediaPlayer;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mContextAwareUri:Ljava/lang/String;
 
@@ -660,8 +635,6 @@
 
 .method static synthetic access$2700(Landroid/media/MediaPlayer;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Landroid/media/MediaPlayer;->handleProxyBroadcast(Landroid/content/Intent;)V
 
@@ -670,7 +643,6 @@
 
 .method static synthetic access$300(Landroid/media/MediaPlayer;)Ljava/util/Vector;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOutOfBandSubtitleTracks:Ljava/util/Vector;
 
@@ -679,7 +651,6 @@
 
 .method static synthetic access$400(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$EventHandler;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mEventHandler:Landroid/media/MediaPlayer$EventHandler;
 
@@ -688,7 +659,6 @@
 
 .method static synthetic access$500(Landroid/media/MediaPlayer;)I
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget v0, p0, Landroid/media/MediaPlayer;->mNativeContext:I
 
@@ -697,7 +667,6 @@
 
 .method static synthetic access$600(Landroid/media/MediaPlayer;)V
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
 
     invoke-direct {p0}, Landroid/media/MediaPlayer;->scanInternalSubtitleTracks()V
 
@@ -706,7 +675,6 @@
 
 .method static synthetic access$700(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnPreparedListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnPreparedListener:Landroid/media/MediaPlayer$OnPreparedListener;
 
@@ -715,7 +683,6 @@
 
 .method static synthetic access$800(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer$OnCompletionListener;
     .locals 1
-    .param p0    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mOnCompletionListener:Landroid/media/MediaPlayer$OnCompletionListener;
 
@@ -724,8 +691,6 @@
 
 .method static synthetic access$900(Landroid/media/MediaPlayer;Z)V
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/media/MediaPlayer;->stayAwake(Z)V
 
@@ -734,7 +699,6 @@
 
 .method private static availableMimeTypeForExternalSource(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "application/x-subrip"
 
@@ -753,8 +717,6 @@
 
 .method public static create(Landroid/content/Context;I)Landroid/media/MediaPlayer;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -842,8 +804,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/MediaPlayer;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -856,9 +816,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/net/Uri;Landroid/view/SurfaceHolder;)Landroid/media/MediaPlayer;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/view/SurfaceHolder;
 
     :try_start_0
     new-instance v1, Landroid/media/MediaPlayer;
@@ -953,8 +910,6 @@
 
 .method private getAudioFilePath(Landroid/net/Uri;Landroid/content/Context;)Ljava/lang/String;
     .locals 10
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -1090,8 +1045,6 @@
 
 .method private getRingTonePath(Landroid/net/Uri;Landroid/content/Context;)Ljava/lang/String;
     .locals 13
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -1335,7 +1288,6 @@
 
 .method private handleProxyBroadcast(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "proxy"
 
@@ -1369,7 +1321,6 @@
 
 .method private isVideoScalingModeSupported(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1415,11 +1366,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 7
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     const/16 v6, 0xc8
 
@@ -1533,7 +1479,6 @@
 
 .method private registerMediaMapping(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -1627,8 +1572,6 @@
 
 .method private selectOrDeselectInbandTrack(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1684,8 +1627,6 @@
 
 .method private selectOrDeselectTrack(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1786,8 +1727,6 @@
 
 .method private varargs sendBroadcastingIntent(Ljava/lang/String;[Ljava/lang/Object;)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     move-object/from16 v0, p2
 
@@ -2010,9 +1949,6 @@
 
 .method private setDataSource(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -2145,7 +2081,6 @@
 
 .method private setupProxyListener(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Landroid/content/IntentFilter;
 
@@ -2185,7 +2120,6 @@
 
 .method private stayAwake(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/media/MediaPlayer;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -2269,8 +2203,6 @@
 # virtual methods
 .method public addSubtitleSource(Ljava/io/InputStream;Landroid/media/MediaFormat;)V
     .locals 6
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Landroid/media/MediaFormat;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -2333,9 +2265,6 @@
 
 .method public addTimedTextSource(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -2454,10 +2383,6 @@
 
 .method public addTimedTextSource(Ljava/io/FileDescriptor;JJLjava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -2543,8 +2468,6 @@
 
 .method public addTimedTextSource(Ljava/io/FileDescriptor;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -2569,8 +2492,6 @@
 
 .method public addTimedTextSource(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -2747,7 +2668,6 @@
 
 .method public deselectTrack(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -2788,8 +2708,6 @@
 
 .method public getFullDumpSubtitle(Ljava/io/FileDescriptor;Ljava/lang/String;)[B
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -2974,7 +2892,6 @@
 
 .method public getIntParameter(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -3012,8 +2929,6 @@
 
 .method public getMetadata(ZZ)Landroid/media/Metadata;
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -3177,7 +3092,6 @@
 
 .method public getParcelParameter(I)Landroid/os/Parcel;
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -3190,7 +3104,6 @@
 
 .method public getStringParameter(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -3294,8 +3207,6 @@
 
 .method public invoke(Landroid/os/Parcel;Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1, p2}, Landroid/media/MediaPlayer;->native_invoke(Landroid/os/Parcel;Landroid/os/Parcel;)I
 
@@ -3399,7 +3310,6 @@
 
 .method public onSubtitleTrackSelected(Landroid/media/SubtitleTrack;)V
     .locals 4
-    .param p1    # Landroid/media/SubtitleTrack;
 
     iget v1, p0, Landroid/media/MediaPlayer;->mSelectedSubtitleTrackIndex:I
 
@@ -4273,7 +4183,6 @@
 
 .method public selectTrack(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -4289,7 +4198,6 @@
 
 .method public setAIAContext(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "MediaPlayer"
 
@@ -4335,8 +4243,6 @@
 
 .method public setDataSource(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -4355,8 +4261,6 @@
 
 .method public setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/Map;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4611,7 +4515,6 @@
 
 .method public setDataSource(Ljava/io/FileDescriptor;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -4635,9 +4538,6 @@
 
 .method public setDataSource(Ljava/io/FileDescriptor;JJ)V
     .locals 0
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # J
-    .param p4    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -4655,7 +4555,6 @@
 
 .method public setDataSource(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -4674,7 +4573,6 @@
 
 .method public setDataSource(Ljava/lang/String;Ljava/util/Map;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4765,7 +4663,6 @@
 
 .method public setDisplay(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mSurfaceHolder:Landroid/view/SurfaceHolder;
 
@@ -4918,7 +4815,6 @@
 
 .method public setOnBufferingUpdateListener(Landroid/media/MediaPlayer$OnBufferingUpdateListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnBufferingUpdateListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnBufferingUpdateListener:Landroid/media/MediaPlayer$OnBufferingUpdateListener;
 
@@ -4927,7 +4823,6 @@
 
 .method public setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnCompletionListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnCompletionListener:Landroid/media/MediaPlayer$OnCompletionListener;
 
@@ -4936,7 +4831,6 @@
 
 .method public setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnErrorListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnErrorListener:Landroid/media/MediaPlayer$OnErrorListener;
 
@@ -4945,7 +4839,6 @@
 
 .method public setOnInfoListener(Landroid/media/MediaPlayer$OnInfoListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnInfoListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnInfoListener:Landroid/media/MediaPlayer$OnInfoListener;
 
@@ -4954,7 +4847,6 @@
 
 .method public setOnPlayReadyErrorListener(Landroid/media/MediaPlayer$OnPlayReadyErrorListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnPlayReadyErrorListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnPlayReadyErrorListener:Landroid/media/MediaPlayer$OnPlayReadyErrorListener;
 
@@ -4963,7 +4855,6 @@
 
 .method public setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnPreparedListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnPreparedListener:Landroid/media/MediaPlayer$OnPreparedListener;
 
@@ -4972,7 +4863,6 @@
 
 .method public setOnSeekCompleteListener(Landroid/media/MediaPlayer$OnSeekCompleteListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnSeekCompleteListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnSeekCompleteListener:Landroid/media/MediaPlayer$OnSeekCompleteListener;
 
@@ -4981,7 +4871,6 @@
 
 .method public setOnSubtitleDataListener(Landroid/media/MediaPlayer$OnSubtitleDataListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnSubtitleDataListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnSubtitleDataListener:Landroid/media/MediaPlayer$OnSubtitleDataListener;
 
@@ -4990,7 +4879,6 @@
 
 .method public setOnTimedTextListener(Landroid/media/MediaPlayer$OnTimedTextListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnTimedTextListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnTimedTextListener:Landroid/media/MediaPlayer$OnTimedTextListener;
 
@@ -4999,7 +4887,6 @@
 
 .method public setOnVideoSizeChangedListener(Landroid/media/MediaPlayer$OnVideoSizeChangedListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mOnVideoSizeChangedListener:Landroid/media/MediaPlayer$OnVideoSizeChangedListener;
 
@@ -5008,8 +4895,6 @@
 
 .method public setParameter(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -5031,8 +4916,6 @@
 
 .method public setParameter(ILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -5051,7 +4934,6 @@
 
 .method public setRetransmitEndpoint(Ljava/net/InetSocketAddress;)V
     .locals 6
-    .param p1    # Ljava/net/InetSocketAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -5114,7 +4996,6 @@
 
 .method public setScreenOnWhilePlaying(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/media/MediaPlayer;->mScreenOnWhilePlaying:Z
 
@@ -5143,8 +5024,6 @@
 
 .method public setSoundAlive(Landroid/os/Parcel;Landroid/os/Parcel;)I
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1, p2}, Landroid/media/MediaPlayer;->invoke(Landroid/os/Parcel;Landroid/os/Parcel;)V
 
@@ -5155,8 +5034,6 @@
 
 .method public setSubtitleAnchor(Landroid/media/SubtitleController;Landroid/media/SubtitleController$Anchor;)V
     .locals 1
-    .param p1    # Landroid/media/SubtitleController;
-    .param p2    # Landroid/media/SubtitleController$Anchor;
 
     iput-object p1, p0, Landroid/media/MediaPlayer;->mSubtitleController:Landroid/media/SubtitleController;
 
@@ -5169,7 +5046,6 @@
 
 .method public setSurface(Landroid/view/Surface;)V
     .locals 2
-    .param p1    # Landroid/view/Surface;
 
     iget-boolean v0, p0, Landroid/media/MediaPlayer;->mScreenOnWhilePlaying:Z
 
@@ -5197,7 +5073,6 @@
 
 .method public setVideoScalingMode(I)V
     .locals 5
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/MediaPlayer;->isVideoScalingModeSupported(I)Z
 
@@ -5277,7 +5152,6 @@
 
 .method public setVolume(F)V
     .locals 0
-    .param p1    # F
 
     invoke-virtual {p0, p1, p1}, Landroid/media/MediaPlayer;->setVolume(FF)V
 
@@ -5289,8 +5163,6 @@
 
 .method public setWakeMode(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 

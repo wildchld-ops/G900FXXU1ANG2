@@ -72,8 +72,6 @@
 
 .method static showInfo(Landroid/support/v4/app/FragmentManager;Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;)V
     .locals 4
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 
     const-string v2, "plus_one_circles_dialog"
 
@@ -116,7 +114,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 

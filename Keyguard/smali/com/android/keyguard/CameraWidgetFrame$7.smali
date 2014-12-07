@@ -35,7 +35,6 @@
 # virtual methods
 .method onKeyguardVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/keyguard/CameraWidgetFrame$7;->mShowing:Z
 

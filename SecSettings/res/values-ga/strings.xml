@@ -1373,7 +1373,7 @@ Is féidir leat an hanla ilfhuinneoige a thaispeáint nó a fholú tríd an gcna
     <string name="usb_tethering_errored_subtext">Earráid le nascaireacht USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Ní féidir nascaireacht USB a dhíchumasú agus Taobhshioncronú á úsáid. Díchumasófar Taobhshioncronú má dhéantar Nascaireacht USB a dhíchumasú.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Ní féidir nascaireacht USB a chumasú agus Taobhshioncronú á úsáid. Díchumasófar Taobhshioncronú má dhéantar Nascaireacht USB a chumasú.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Nascaireacht Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Nascaireacht Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Nasc Idirlín an ghléis seo á chomhroinnt…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Tá nasc Idirlín an ghléis á chomhroinnt le gléas amháin</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Tá nasc Idirlín an ghléis á chomhroinnt le %d gléas</string>

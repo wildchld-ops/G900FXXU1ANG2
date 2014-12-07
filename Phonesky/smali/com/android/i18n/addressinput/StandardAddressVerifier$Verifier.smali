@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/i18n/addressinput/StandardAddressVerifier;Lcom/android/i18n/addressinput/AddressData;Lcom/android/i18n/addressinput/AddressProblems;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 0
-    .param p2    # Lcom/android/i18n/addressinput/AddressData;
-    .param p3    # Lcom/android/i18n/addressinput/AddressProblems;
-    .param p4    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/StandardAddressVerifier$Verifier;->this$0:Lcom/android/i18n/addressinput/StandardAddressVerifier;
 

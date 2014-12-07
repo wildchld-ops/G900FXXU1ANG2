@@ -36,7 +36,6 @@
 # virtual methods
 .method public onUpdateSaveButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity$1;->this$0:Lcom/samsung/contacts/emergency/MyEmergencyInfoEditorActivity;
 

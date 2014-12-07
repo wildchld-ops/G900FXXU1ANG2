@@ -29,6 +29,7 @@
     <public type="drawable" name="hover_indicator" id="0x7f020317" />
     <public type="drawable" name="hover_tooltip_bg" id="0x7f020319" />
     <public type="drawable" name="action_bar_divider" id="0x7f020000" />
+    <public type="drawable" name="APKTOOL_DUMMY_0001" id="0x7f020001" />
     <public type="drawable" name="assistant_menu_icon_camera_gallery" id="0x7f020003" />
     <public type="drawable" name="assistant_menu_icon_camera_switch_camera" id="0x7f020004" />
     <public type="drawable" name="async_icon_front" id="0x7f020005" />
@@ -205,6 +206,7 @@
     <public type="drawable" name="camera_help_dim" id="0x7f0200b0" />
     <public type="drawable" name="camera_help_focus" id="0x7f0200b1" />
     <public type="drawable" name="camera_indicator_gps_connection_01" id="0x7f0200b2" />
+    <public type="drawable" name="APKTOOL_DUMMY_00b3" id="0x7f0200b3" />
     <public type="drawable" name="camera_indicator_smile_shot" id="0x7f0200b4" />
     <public type="drawable" name="camera_iso_100" id="0x7f0200b5" />
     <public type="drawable" name="camera_iso_100_dim" id="0x7f0200b6" />
@@ -475,6 +477,9 @@
     <public type="drawable" name="camera_photo_size_2048x1536" id="0x7f0201bf" />
     <public type="drawable" name="camera_photo_size_2048x1536_dim" id="0x7f0201c0" />
     <public type="drawable" name="camera_photo_size_2048x1536_press" id="0x7f0201c1" />
+    <public type="drawable" name="APKTOOL_DUMMY_01c2" id="0x7f0201c2" />
+    <public type="drawable" name="APKTOOL_DUMMY_01c3" id="0x7f0201c3" />
+    <public type="drawable" name="APKTOOL_DUMMY_01c4" id="0x7f0201c4" />
     <public type="drawable" name="camera_photo_size_2m" id="0x7f0201c5" />
     <public type="drawable" name="camera_photo_size_2m_dim" id="0x7f0201c6" />
     <public type="drawable" name="camera_photo_size_2m_press" id="0x7f0201c7" />
@@ -809,6 +814,7 @@
     <public type="drawable" name="help_popup_picker_t_c" id="0x7f020314" />
     <public type="drawable" name="help_tap_2" id="0x7f020315" />
     <public type="drawable" name="help_tap_3" id="0x7f020316" />
+    <public type="drawable" name="APKTOOL_DUMMY_0318" id="0x7f020318" />
     <public type="drawable" name="ic_launcher_camera_record" id="0x7f02031a" />
     <public type="drawable" name="ic_wifi_direct_audio" id="0x7f02031b" />
     <public type="drawable" name="ic_wifi_direct_camera" id="0x7f02031c" />
@@ -856,6 +862,7 @@
     <public type="drawable" name="mode_beauty_face" id="0x7f020346" />
     <public type="drawable" name="mode_download" id="0x7f020347" />
     <public type="drawable" name="mode_dual" id="0x7f020349" />
+    <public type="drawable" name="APKTOOL_DUMMY_034a" id="0x7f02034a" />
     <public type="drawable" name="mode_golf" id="0x7f02034b" />
     <public type="drawable" name="mode_magic_shot" id="0x7f02034c" />
     <public type="drawable" name="mode_manage_effect" id="0x7f02034d" />
@@ -887,12 +894,17 @@
     <public type="drawable" name="nce_awb_press" id="0x7f020368" />
     <public type="drawable" name="nfc_connect_view_bg" id="0x7f020369" />
     <public type="drawable" name="rainbow" id="0x7f020371" />
+    <public type="drawable" name="APKTOOL_DUMMY_0378" id="0x7f020378" />
     <public type="drawable" name="side_touch_display_bar" id="0x7f020379" />
     <public type="drawable" name="side_touch_display_bar_blue" id="0x7f02037a" />
     <public type="drawable" name="side_touch_display_bar_press" id="0x7f02037b" />
     <public type="drawable" name="side_touch_display_bar_red" id="0x7f02037c" />
+    <public type="drawable" name="APKTOOL_DUMMY_037d" id="0x7f02037d" />
+    <public type="drawable" name="APKTOOL_DUMMY_037e" id="0x7f02037e" />
     <public type="drawable" name="side_touch_display_touch_arrow" id="0x7f02037f" />
     <public type="drawable" name="side_touch_display_touch_icon" id="0x7f020380" />
+    <public type="drawable" name="APKTOOL_DUMMY_0381" id="0x7f020381" />
+    <public type="drawable" name="APKTOOL_DUMMY_0382" id="0x7f020382" />
     <public type="drawable" name="sound_shot_auto" id="0x7f020383" />
     <public type="drawable" name="sound_shot_auto_mic" id="0x7f020384" />
     <public type="drawable" name="sound_shot_auto_mic_02" id="0x7f020385" />
@@ -913,6 +925,8 @@
     <public type="drawable" name="sound_shot_quickview_screen_mic" id="0x7f020394" />
     <public type="drawable" name="sound_shot_quickview_screen_mic_02" id="0x7f020395" />
     <public type="drawable" name="sound_shot_timer_icon" id="0x7f020396" />
+    <public type="drawable" name="APKTOOL_DUMMY_0397" id="0x7f020397" />
+    <public type="drawable" name="APKTOOL_DUMMY_0398" id="0x7f020398" />
     <public type="drawable" name="soundshot_rec_eq_bar_01" id="0x7f020399" />
     <public type="drawable" name="soundshot_rec_eq_bar_02" id="0x7f02039a" />
     <public type="drawable" name="soundshot_rec_eq_bar_03" id="0x7f02039b" />
@@ -968,20 +982,6 @@
     <public type="drawable" name="video_stabilization_off_press" id="0x7f0203d3" />
     <public type="drawable" name="video_stabilization_press" id="0x7f0203d4" />
     <public type="drawable" name="videooverlay" id="0x7f0203d5" />
-    <public type="drawable" name="APKTOOL_DUMMY_0001" id="0x7f020001" />
-    <public type="drawable" name="APKTOOL_DUMMY_00b3" id="0x7f0200b3" />
-    <public type="drawable" name="APKTOOL_DUMMY_01c2" id="0x7f0201c2" />
-    <public type="drawable" name="APKTOOL_DUMMY_01c3" id="0x7f0201c3" />
-    <public type="drawable" name="APKTOOL_DUMMY_01c4" id="0x7f0201c4" />
-    <public type="drawable" name="APKTOOL_DUMMY_0318" id="0x7f020318" />
-    <public type="drawable" name="APKTOOL_DUMMY_034a" id="0x7f02034a" />
-    <public type="drawable" name="APKTOOL_DUMMY_0378" id="0x7f020378" />
-    <public type="drawable" name="APKTOOL_DUMMY_037d" id="0x7f02037d" />
-    <public type="drawable" name="APKTOOL_DUMMY_037e" id="0x7f02037e" />
-    <public type="drawable" name="APKTOOL_DUMMY_0381" id="0x7f020381" />
-    <public type="drawable" name="APKTOOL_DUMMY_0382" id="0x7f020382" />
-    <public type="drawable" name="APKTOOL_DUMMY_0397" id="0x7f020397" />
-    <public type="drawable" name="APKTOOL_DUMMY_0398" id="0x7f020398" />
     <public type="layout" name="aqua_key_select_dialog" id="0x7f030001" />
     <public type="layout" name="aqua_protection_dialog" id="0x7f030002" />
     <public type="layout" name="cropimage" id="0x7f030003" />

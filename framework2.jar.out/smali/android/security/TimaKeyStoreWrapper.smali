@@ -50,7 +50,6 @@
 # direct methods
 .method private constructor <init>(Landroid/service/tima/ITimaService;)V
     .locals 1
-    .param p1    # Landroid/service/tima/ITimaService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,7 +108,6 @@
 # virtual methods
 .method public contains(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -122,8 +120,6 @@
 
 .method public contains(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/security/TimaKeyStoreWrapper;->mBinder:Landroid/service/tima/ITimaService;
@@ -153,7 +149,6 @@
 
 .method public delete(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -166,8 +161,6 @@
 
 .method public delete(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/security/TimaKeyStoreWrapper;->mBinder:Landroid/service/tima/ITimaService;
@@ -197,8 +190,6 @@
 
 .method public get(Ljava/lang/String;[C)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # [C
 
     :try_start_0
     iget-object v1, p0, Landroid/security/TimaKeyStoreWrapper;->mBinder:Landroid/service/tima/ITimaService;
@@ -228,7 +219,6 @@
 
 .method public getmtime(Ljava/lang/String;)J
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v3, -0x1
 
@@ -298,10 +288,6 @@
 
 .method public put(Ljava/lang/String;[BI[C)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # [C
 
     const/4 v1, -0x1
 
@@ -356,7 +342,6 @@
 
 .method public saw(Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -369,8 +354,6 @@
 
 .method public saw(Ljava/lang/String;I)[Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/security/TimaKeyStoreWrapper;->mBinder:Landroid/service/tima/ITimaService;

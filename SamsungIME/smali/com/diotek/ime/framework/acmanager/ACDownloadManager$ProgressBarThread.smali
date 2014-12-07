@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;)V
     .locals 1
-    .param p2    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ProgressBarThread;->this$0:Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 

@@ -41,9 +41,6 @@
 
 .method public constructor <init>(ILorg/keyczar/enums/KeyStatus;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lorg/keyczar/enums/KeyStatus;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -70,7 +67,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

@@ -34,7 +34,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/GroupChangeOrderActivity;)Lcom/samsung/contacts/group/GroupChangeOrderListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupChangeOrderActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupChangeOrderActivity;->mFragment:Lcom/samsung/contacts/group/GroupChangeOrderListFragment;
 
@@ -43,8 +42,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/group/GroupChangeOrderActivity;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupChangeOrderActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupChangeOrderActivity;->updateDoneButtonState(Z)V
 
@@ -109,7 +106,6 @@
 
 .method private updateDoneButtonState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupChangeOrderActivity;->mIsDoneButtonEnable:Z
 
@@ -122,7 +118,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -153,7 +148,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -213,7 +207,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupChangeOrderActivity;->mDoneButton:Landroid/widget/Button;
 

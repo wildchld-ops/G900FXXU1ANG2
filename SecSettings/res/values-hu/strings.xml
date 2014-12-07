@@ -1379,7 +1379,7 @@ A Vissza gombot nyomva tartva is megjelenítheti vagy elrejtheti a Több ablak k
     <string name="usb_tethering_errored_subtext">USB-internetmegosztási hiba</string>
     <string name="usb_tethering_on_during_sidesync_popup">Az USB internetmegosztás nem tiltható le a SideSync használata közben. Az USB internetmegosztás letiltása letiltja a SideSync alkalmazást.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Az USB internetmegosztás nem engedélyezhető le a SideSync használata közben. Az USB internetmegosztás engedélyezése letiltja a SideSync alkalmazást.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-internetmegosztás</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-internetmegosztás</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Az eszköz internetkapcsolatának megosztása…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Az eszköz internetkapcsolata 1 eszközzel megosztva</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Az eszköz internetkapcsolata %d eszközzel megosztva</string>

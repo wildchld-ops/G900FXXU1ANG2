@@ -472,8 +472,6 @@
 
 .method static synthetic access$000(Lcom/android/server/ssrm/BatteryCoolDownMode;I)I
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/BatteryCoolDownMode;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/BatteryCoolDownMode;->killActiveApplications(I)I
 
@@ -572,7 +570,6 @@
 
 .method private getRunningTasks(Landroid/app/ActivityManager;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Landroid/app/ActivityManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -672,7 +669,6 @@
 
 .method private killActiveApplications(I)I
     .locals 17
-    .param p1    # I
 
     invoke-static {}, Lcom/android/server/ssrm/Monitor;->getMonitorInstance()Lcom/android/server/ssrm/Monitor;
 
@@ -922,7 +918,6 @@
 
 .method private static x([I)Ljava/lang/String;
     .locals 1
-    .param p0    # [I
 
     invoke-static {p0}, Lcom/android/server/ssrm/SSRMUtil;->x([I)Ljava/lang/String;
 
@@ -935,8 +930,6 @@
 # virtual methods
 .method public changePermissons(Ljava/io/File;I)I
     .locals 10
-    .param p1    # Ljava/io/File;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1030,8 +1023,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -1135,7 +1126,6 @@
 
 .method public showCoolDownAlert(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -1222,8 +1212,6 @@
 
 .method public startBatteryCoolDownMode(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x2
 

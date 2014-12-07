@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,15 +36,6 @@
 # virtual methods
 .method public addAppToken(ILandroid/view/IApplicationToken;IIIZZII)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/IApplicationToken;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -147,8 +137,6 @@
 
 .method public addWindowToken(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -210,10 +198,6 @@
 
 .method public changeDisplayScale(IFFF)V
     .locals 5
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -271,7 +255,6 @@
 
 .method public clearForcedDisplayDensity(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -323,7 +306,6 @@
 
 .method public clearForcedDisplaySize(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -375,7 +357,6 @@
 
 .method public closeSystemDialogs(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -427,8 +408,6 @@
 
 .method public disableKeyguard(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -531,9 +510,6 @@
 
 .method public dispatchAirButtonHitTest(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -589,8 +565,6 @@
 
 .method public dispatchSmartClipDataExtractionEvent(Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -712,7 +686,6 @@
 
 .method public exitKeyguardSecurely(Landroid/view/IOnKeyguardExitResult;)V
     .locals 5
-    .param p1    # Landroid/view/IOnKeyguardExitResult;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -776,7 +749,6 @@
 
 .method public freezeRotation(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -828,7 +800,6 @@
 
 .method public getAnimationScale(I)F
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -937,7 +908,6 @@
 
 .method public getAppOrientation(Landroid/view/IApplicationToken;)I
     .locals 6
-    .param p1    # Landroid/view/IApplicationToken;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1005,7 +975,6 @@
 
 .method public getBaseDisplayDensity(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1061,8 +1030,6 @@
 
 .method public getBaseDisplaySize(ILandroid/graphics/Point;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1123,7 +1090,6 @@
 
 .method public getCompatibleMagnificationSpecForWindow(Landroid/os/IBinder;)Landroid/view/MagnificationSpec;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1248,7 +1214,6 @@
 
 .method public getInitialDisplayDensity(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1304,8 +1269,6 @@
 
 .method public getInitialDisplaySize(ILandroid/graphics/Point;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1586,8 +1549,6 @@
 
 .method public getWindowFrame(Landroid/os/IBinder;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1768,7 +1729,6 @@
 
 .method public inputMethodClientHasFocus(Lcom/android/internal/view/IInputMethodClient;)Z
     .locals 6
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2383,8 +2343,6 @@
 
 .method public isSystemKeyEventRequested(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2533,7 +2491,6 @@
 
 .method public lockNow(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2604,8 +2561,6 @@
 
 .method public openSession(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;)Landroid/view/IWindowSession;
     .locals 6
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2688,10 +2643,6 @@
 
 .method public overridePendingAppTransition(Ljava/lang/String;IILandroid/os/IRemoteCallback;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IRemoteCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2761,10 +2712,6 @@
 
 .method public overridePendingAppTransitionScaleUp(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2822,11 +2769,6 @@
 
 .method public overridePendingAppTransitionThumb(Landroid/graphics/Bitmap;IILandroid/os/IRemoteCallback;Z)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IRemoteCallback;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2929,7 +2871,6 @@
 
 .method public pauseKeyDispatching(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2981,8 +2922,6 @@
 
 .method public prepareAppTransition(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3043,7 +2982,6 @@
 
 .method public reenableKeyguard(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3095,7 +3033,6 @@
 
 .method public registerEasyOneHandWatcher(Landroid/sec/easyonehand/IEasyOneHandWatcher;)V
     .locals 5
-    .param p1    # Landroid/sec/easyonehand/IEasyOneHandWatcher;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3159,7 +3096,6 @@
 
 .method public removeAdaptiveEvent(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3211,7 +3147,6 @@
 
 .method public removeAppToken(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3263,7 +3198,6 @@
 
 .method public removeContextualEvent(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3315,7 +3249,6 @@
 
 .method public removeRotationWatcher(Landroid/view/IRotationWatcher;)V
     .locals 5
-    .param p1    # Landroid/view/IRotationWatcher;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3379,7 +3312,6 @@
 
 .method public removeWindowToken(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3431,9 +3363,6 @@
 
 .method public requestSystemKeyEvent(ILandroid/content/ComponentName;Z)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3534,7 +3463,6 @@
 
 .method public resumeKeyDispatching(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3586,11 +3514,6 @@
 
 .method public screenshotApplications(Landroid/os/IBinder;IIIZ)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3677,9 +3600,6 @@
 
 .method public setAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3773,8 +3693,6 @@
 
 .method public setAnimationScale(IF)V
     .locals 5
-    .param p1    # I
-    .param p2    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3828,7 +3746,6 @@
 
 .method public setAnimationScales([F)V
     .locals 5
-    .param p1    # [F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3880,8 +3797,6 @@
 
 .method public setAppGroupId(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3935,8 +3850,6 @@
 
 .method public setAppOrientation(Landroid/view/IApplicationToken;I)V
     .locals 5
-    .param p1    # Landroid/view/IApplicationToken;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4002,17 +3915,6 @@
 
 .method public setAppStartingWindow(Landroid/os/IBinder;Ljava/lang/String;ILandroid/content/res/CompatibilityInfo;Ljava/lang/CharSequence;IIIILandroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/res/CompatibilityInfo;
-    .param p5    # Ljava/lang/CharSequence;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Landroid/os/IBinder;
-    .param p11    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4132,8 +4034,6 @@
 
 .method public setAppVisibility(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4194,7 +4094,6 @@
 
 .method public setAppWillBeHidden(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4246,8 +4145,6 @@
 
 .method public setContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4320,7 +4217,6 @@
 
 .method public setCurrentInputMethodClient(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4372,7 +4268,6 @@
 
 .method public setEventDispatching(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4431,8 +4326,6 @@
 
 .method public setFocusedApp(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4493,8 +4386,6 @@
 
 .method public setForcedDisplayDensity(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4548,9 +4439,6 @@
 
 .method public setForcedDisplaySize(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4606,7 +4494,6 @@
 
 .method public setInTouchMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4665,7 +4552,6 @@
 
 .method public setInputFilter(Landroid/view/IInputFilter;)V
     .locals 5
-    .param p1    # Landroid/view/IInputFilter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4729,7 +4615,6 @@
 
 .method public setMagnificationCallbacks(Landroid/view/IMagnificationCallbacks;)V
     .locals 5
-    .param p1    # Landroid/view/IMagnificationCallbacks;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4793,7 +4678,6 @@
 
 .method public setMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 5
-    .param p1    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4864,7 +4748,6 @@
 
 .method public setNewConfiguration(Landroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4935,11 +4818,6 @@
 
 .method public setOverscan(IIIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4999,7 +4877,6 @@
 
 .method public setSpecialKeysFilter(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5051,7 +4928,6 @@
 
 .method public setStrictModeVisualIndicatorPreference(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5103,7 +4979,6 @@
 
 .method public setTouchExplorationEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5162,7 +5037,6 @@
 
 .method public showStrictModeViolation(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5221,8 +5095,6 @@
 
 .method public startAppFreezingScreen(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5276,8 +5148,6 @@
 
 .method public startFreezingScreen(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5331,7 +5201,6 @@
 
 .method public startViewServer(I)Z
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5399,7 +5268,6 @@
 
 .method public statusBarVisibilityChanged(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5443,8 +5311,6 @@
 
 .method public stopAppFreezingScreen(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5663,7 +5529,6 @@
 
 .method public unregisterEasyOneHandWatcher(Landroid/sec/easyonehand/IEasyOneHandWatcher;)V
     .locals 5
-    .param p1    # Landroid/sec/easyonehand/IEasyOneHandWatcher;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5727,9 +5592,6 @@
 
 .method public updateAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5823,8 +5685,6 @@
 
 .method public updateContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5897,7 +5757,6 @@
 
 .method public updateCoverManagerDisableState(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5956,8 +5815,6 @@
 
 .method public updateOrientationFromAppTokens(Landroid/content/res/Configuration;Landroid/os/IBinder;)Landroid/content/res/Configuration;
     .locals 6
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6050,8 +5907,6 @@
 
 .method public updateRotation(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6127,8 +5982,6 @@
 
 .method public waitForWindowDrawn(Landroid/os/IBinder;Landroid/os/IRemoteCallback;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/IRemoteCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6205,7 +6058,6 @@
 
 .method public watchRotation(Landroid/view/IRotationWatcher;)I
     .locals 6
-    .param p1    # Landroid/view/IRotationWatcher;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -80,7 +80,6 @@
 
 .method public setAuthScheme(Lorg/apache/http/auth/AuthScheme;)V
     .locals 0
-    .param p1    # Lorg/apache/http/auth/AuthScheme;
 
     if-nez p1, :cond_0
 
@@ -97,7 +96,6 @@
 
 .method public setAuthScope(Lorg/apache/http/auth/AuthScope;)V
     .locals 0
-    .param p1    # Lorg/apache/http/auth/AuthScope;
 
     iput-object p1, p0, Lorg/apache/http/auth/AuthState;->authScope:Lorg/apache/http/auth/AuthScope;
 
@@ -106,7 +104,6 @@
 
 .method public setCredentials(Lorg/apache/http/auth/Credentials;)V
     .locals 0
-    .param p1    # Lorg/apache/http/auth/Credentials;
 
     iput-object p1, p0, Lorg/apache/http/auth/AuthState;->credentials:Lorg/apache/http/auth/Credentials;
 

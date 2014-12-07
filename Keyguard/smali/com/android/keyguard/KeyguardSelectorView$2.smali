@@ -44,7 +44,6 @@
 
 .method public onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;)V
     .locals 1
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView$2;->this$0:Lcom/android/keyguard/KeyguardSelectorView;
 

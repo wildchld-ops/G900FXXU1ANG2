@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -58,8 +57,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -70,9 +67,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -143,7 +137,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/MultiPaneChallengeLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MultiPaneChallengeLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mScrimView:Landroid/view/View;
 
@@ -182,8 +175,6 @@
 
 .method private findScrimView(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const v1, 0x7f0b008f
 
@@ -238,9 +229,6 @@
 
 .method private getVirtualHeight(Lcom/android/keyguard/MultiPaneChallengeLayout$LayoutParams;II)I
     .locals 4
-    .param p1    # Lcom/android/keyguard/MultiPaneChallengeLayout$LayoutParams;
-    .param p2    # I
-    .param p3    # I
 
     move v1, p2
 
@@ -297,7 +285,6 @@
 
 .method private isPointInView(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mWidgetContainer:Landroid/view/View;
 
@@ -324,8 +311,6 @@
 
 .method private isPointInView(Landroid/view/MotionEvent;Landroid/view/View;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -415,11 +400,6 @@
 
 .method private layoutWithGravity(IILandroid/view/View;Landroid/graphics/Rect;Z)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Z
 
     invoke-virtual/range {p3 .. p3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1047,7 +1027,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/keyguard/MultiPaneChallengeLayout$LayoutParams;
 
@@ -1056,7 +1035,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/MultiPaneChallengeLayout;->isPointInView(Landroid/view/MotionEvent;)Z
 
@@ -1108,7 +1086,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/keyguard/MultiPaneChallengeLayout$LayoutParams;
 
@@ -1123,7 +1100,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/keyguard/MultiPaneChallengeLayout$LayoutParams;
 
@@ -1264,11 +1240,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 15
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v4, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mTempRect:Landroid/graphics/Rect;
 
@@ -1429,8 +1400,6 @@
 
 .method protected onMeasure(II)V
     .locals 18
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -1967,8 +1936,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-boolean v0, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mIsBouncing:Z
 
@@ -1988,7 +1955,6 @@
 
 .method public setInsets(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mInsets:Landroid/graphics/Rect;
 
@@ -1999,7 +1965,6 @@
 
 .method public setIsSecured(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mIsSecured:Z
 
@@ -2008,7 +1973,6 @@
 
 .method public setOnBouncerStateChangedListener(Lcom/android/keyguard/ChallengeLayout$OnBouncerStateChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/ChallengeLayout$OnBouncerStateChangedListener;
 
     iput-object p1, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mBouncerListener:Lcom/android/keyguard/ChallengeLayout$OnBouncerStateChangedListener;
 
@@ -2017,7 +1981,6 @@
 
 .method setScrimView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/MultiPaneChallengeLayout;->mScrimView:Landroid/view/View;
 

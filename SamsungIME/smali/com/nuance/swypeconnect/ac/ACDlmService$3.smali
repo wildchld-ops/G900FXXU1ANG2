@@ -55,7 +55,6 @@
 
 .method public processDlmDelete(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService$3;->this$0:Lcom/nuance/swypeconnect/ac/ACDlmService;
 
@@ -75,7 +74,6 @@
 
 .method public processEvent(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService$3;->this$0:Lcom/nuance/swypeconnect/ac/ACDlmService;
 

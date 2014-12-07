@@ -16,10 +16,6 @@
 # virtual methods
 .method public setContactPhoto(Landroid/content/Context;[BLcom/samsung/contacts/widget/ContactPhotoView;J)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # [B
-    .param p3    # Lcom/samsung/contacts/widget/ContactPhotoView;
-    .param p4    # J
 
     invoke-virtual {p0, p3, p4, p5}, Lcom/android/contacts/util/ImageViewDrawableSetter;->setTarget(Lcom/samsung/contacts/widget/ContactPhotoView;J)V
 

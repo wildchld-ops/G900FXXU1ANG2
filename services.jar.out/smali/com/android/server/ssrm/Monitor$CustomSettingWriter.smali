@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/Monitor;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/ssrm/Monitor$CustomSettingWriter;->this$0:Lcom/android/server/ssrm/Monitor;
 
@@ -58,7 +57,6 @@
 
 .method protected convertToValue(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
@@ -69,7 +67,6 @@
 
 .method protected bridge synthetic convertToValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/server/ssrm/Monitor$CustomSettingWriter;->convertToValue(Ljava/lang/String;)Ljava/lang/Integer;
 

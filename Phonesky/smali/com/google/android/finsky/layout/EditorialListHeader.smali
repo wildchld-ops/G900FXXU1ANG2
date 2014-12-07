@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -29,8 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -53,13 +50,6 @@
 # virtual methods
 .method public bind(ILcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/DocumentV2$EditorialSeriesContainer;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p6    # Lcom/google/android/finsky/api/model/Document;
-    .param p7    # Lcom/google/android/finsky/protos/DocumentV2$EditorialSeriesContainer;
 
     iput p1, p0, Lcom/google/android/finsky/layout/EditorialListHeader;->mColumnCount:I
 
@@ -233,11 +223,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x1
 
@@ -423,8 +408,6 @@
 
 .method protected onMeasure(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 

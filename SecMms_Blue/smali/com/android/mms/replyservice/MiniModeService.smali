@@ -631,8 +631,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/replyservice/MiniModeService;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/replyservice/MiniModeService;->handleClose(I)V
 
@@ -641,7 +639,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mDimView:Landroid/view/View;
 
@@ -650,7 +647,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/replyservice/MiniModeService;)Lcom/sec/minimode/manager/MiniModeAppManager;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mAppManager:Lcom/sec/minimode/manager/MiniModeAppManager;
 
@@ -659,8 +655,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/replyservice/MiniModeService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mLastFocus:Z
 
@@ -669,7 +663,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mFirstShow:Z
 
@@ -678,8 +671,6 @@
 
 .method static synthetic access$1202(Lcom/android/mms/replyservice/MiniModeService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mFirstShow:Z
 
@@ -696,8 +687,6 @@
 
 .method static synthetic access$1400(Landroid/graphics/Rect;Landroid/graphics/Rect;)Lcom/android/mms/replyservice/MiniModeService$Vec2D;
     .locals 1
-    .param p0    # Landroid/graphics/Rect;
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-static {p0, p1}, Lcom/android/mms/replyservice/MiniModeService;->calculateGoingInsideVector(Landroid/graphics/Rect;Landroid/graphics/Rect;)Lcom/android/mms/replyservice/MiniModeService$Vec2D;
 
@@ -708,9 +697,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/replyservice/MiniModeService;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/replyservice/MiniModeService;->calculateNextPosition(Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
 
@@ -721,7 +707,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/replyservice/MiniModeService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mSavedSoftInputMode:I
 
@@ -730,8 +715,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/replyservice/MiniModeService;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mSavedSoftInputMode:I
 
@@ -740,7 +723,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mDimEnabled:Z
 
@@ -749,7 +731,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mDecorContentView:Landroid/view/ViewGroup;
 
@@ -758,7 +739,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View$OnLayoutChangeListener;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
@@ -767,7 +747,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mContentView:Landroid/view/View;
 
@@ -776,7 +755,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mAnimView:Landroid/view/View;
 
@@ -785,7 +763,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mResizeHandler:Landroid/view/View;
 
@@ -794,7 +771,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mIsResizeHandlerShown:Z
 
@@ -803,8 +779,6 @@
 
 .method static synthetic access$2202(Lcom/android/mms/replyservice/MiniModeService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mIsResizeHandlerShown:Z
 
@@ -813,7 +787,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/replyservice/MiniModeService;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mOverlayTitleBar:Landroid/widget/RelativeLayout;
 
@@ -822,7 +795,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mIsOverlayTitleBarShown:Z
 
@@ -831,8 +803,6 @@
 
 .method static synthetic access$2402(Lcom/android/mms/replyservice/MiniModeService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mIsOverlayTitleBarShown:Z
 
@@ -841,7 +811,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/replyservice/MiniModeService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     invoke-direct {p0}, Lcom/android/mms/replyservice/MiniModeService;->startDrag()V
 
@@ -850,7 +819,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mStartDrag:Z
 
@@ -859,7 +827,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/replyservice/MiniModeService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     invoke-direct {p0}, Lcom/android/mms/replyservice/MiniModeService;->endDrag()V
 
@@ -868,7 +835,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mIsMinimized:Z
 
@@ -877,8 +843,6 @@
 
 .method static synthetic access$2802(Lcom/android/mms/replyservice/MiniModeService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mIsMinimized:Z
 
@@ -887,7 +851,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/replyservice/MiniModeService;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mMinimizedBar:Landroid/widget/RelativeLayout;
 
@@ -896,7 +859,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/replyservice/MiniModeService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mOldDecorViewWidth:I
 
@@ -905,7 +867,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/replyservice/MiniModeService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget v0, p0, Lcom/android/mms/replyservice/MiniModeService;->MINIMIZED_TITLE_BAR_WIDTH:I
 
@@ -914,8 +875,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/replyservice/MiniModeService;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mOldDecorViewWidth:I
 
@@ -924,7 +883,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/replyservice/MiniModeService;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mDialog:Landroid/app/Dialog;
 
@@ -933,7 +891,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mTitleView:Landroid/view/View;
 
@@ -942,7 +899,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/replyservice/MiniModeService;)Lcom/android/mms/replyservice/MiniModeService$MinimizedBarTouchListener;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mMinimizedBarTouchListener:Lcom/android/mms/replyservice/MiniModeService$MinimizedBarTouchListener;
 
@@ -951,7 +907,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mAttached:Z
 
@@ -960,7 +915,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/replyservice/MiniModeService;)Lcom/android/mms/replyservice/MiniModeService$TouchListener;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mTouchListener:Lcom/android/mms/replyservice/MiniModeService$TouchListener;
 
@@ -969,7 +923,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/replyservice/MiniModeService;)Lcom/android/mms/replyservice/MiniModeService$Resizable;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mResizeDirection:Lcom/android/mms/replyservice/MiniModeService$Resizable;
 
@@ -978,7 +931,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/replyservice/MiniModeService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mHideResizeHandler:Ljava/lang/Runnable;
 
@@ -987,7 +939,6 @@
 
 .method static synthetic access$3800(Lcom/android/mms/replyservice/MiniModeService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mHideOverlayTitleBar:Ljava/lang/Runnable;
 
@@ -996,7 +947,6 @@
 
 .method static synthetic access$3900(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mCalculatedBodyView:Landroid/view/View;
 
@@ -1005,7 +955,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/replyservice/MiniModeService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mOldDecorViewHeight:I
 
@@ -1014,7 +963,6 @@
 
 .method static synthetic access$4000(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mOverlayFrameLP:Landroid/view/ViewGroup$LayoutParams;
 
@@ -1023,8 +971,6 @@
 
 .method static synthetic access$4002(Lcom/android/mms/replyservice/MiniModeService;Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     iput-object p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mOverlayFrameLP:Landroid/view/ViewGroup$LayoutParams;
 
@@ -1033,8 +979,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/replyservice/MiniModeService;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mOldDecorViewHeight:I
 
@@ -1043,7 +987,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/replyservice/MiniModeService;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mOverlayFrame:Landroid/widget/RelativeLayout;
 
@@ -1052,7 +995,6 @@
 
 .method static synthetic access$4200(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mOverlayFrameWindow:Landroid/view/View;
 
@@ -1061,7 +1003,6 @@
 
 .method static synthetic access$4300(Lcom/android/mms/replyservice/MiniModeService;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mMinimumSize:Landroid/graphics/Rect;
 
@@ -1070,7 +1011,6 @@
 
 .method static synthetic access$4400(Lcom/android/mms/replyservice/MiniModeService;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mMaximumSize:Landroid/graphics/Rect;
 
@@ -1079,7 +1019,6 @@
 
 .method static synthetic access$4500(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mCalculatedBodyViewLP:Landroid/view/ViewGroup$LayoutParams;
 
@@ -1088,8 +1027,6 @@
 
 .method static synthetic access$4502(Lcom/android/mms/replyservice/MiniModeService;Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     iput-object p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mCalculatedBodyViewLP:Landroid/view/ViewGroup$LayoutParams;
 
@@ -1106,7 +1043,6 @@
 
 .method static synthetic access$4700(Lcom/android/mms/replyservice/MiniModeService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mMinimizeFunctionRequested:Z
 
@@ -1115,7 +1051,6 @@
 
 .method static synthetic access$4800(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mOverlayTitleBarLP:Landroid/view/ViewGroup$LayoutParams;
 
@@ -1124,8 +1059,6 @@
 
 .method static synthetic access$4802(Lcom/android/mms/replyservice/MiniModeService;Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     iput-object p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mOverlayTitleBarLP:Landroid/view/ViewGroup$LayoutParams;
 
@@ -1134,7 +1067,6 @@
 
 .method static synthetic access$4900(Lcom/android/mms/replyservice/MiniModeService;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mMainActivity:Landroid/content/ComponentName;
 
@@ -1143,7 +1075,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/replyservice/MiniModeService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mHandler:Landroid/os/Handler;
 
@@ -1152,7 +1083,6 @@
 
 .method static synthetic access$5000(Lcom/android/mms/replyservice/MiniModeService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mLaunchMainRunnable:Ljava/lang/Runnable;
 
@@ -1161,7 +1091,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/replyservice/MiniModeService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget v0, p0, Lcom/android/mms/replyservice/MiniModeService;->lastKeyCode:I
 
@@ -1170,8 +1099,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/replyservice/MiniModeService;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/replyservice/MiniModeService;->lastKeyCode:I
 
@@ -1180,7 +1107,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/KeyEvent;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->lastKeyEvent:Landroid/view/KeyEvent;
 
@@ -1189,8 +1115,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/replyservice/MiniModeService;Landroid/view/KeyEvent;)Landroid/view/KeyEvent;
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
-    .param p1    # Landroid/view/KeyEvent;
 
     iput-object p1, p0, Lcom/android/mms/replyservice/MiniModeService;->lastKeyEvent:Landroid/view/KeyEvent;
 
@@ -1199,7 +1123,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/replyservice/MiniModeService;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     invoke-direct {p0}, Lcom/android/mms/replyservice/MiniModeService;->getComponentName()Landroid/content/ComponentName;
 
@@ -1210,7 +1133,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/replyservice/MiniModeService;)Landroid/view/Window;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/MiniModeService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mWindow:Landroid/view/Window;
 
@@ -1219,8 +1141,6 @@
 
 .method private static calculateGoingInsideVector(Landroid/graphics/Rect;Landroid/graphics/Rect;)Lcom/android/mms/replyservice/MiniModeService$Vec2D;
     .locals 25
-    .param p0    # Landroid/graphics/Rect;
-    .param p1    # Landroid/graphics/Rect;
 
     new-instance v18, Landroid/graphics/Rect;
 
@@ -1644,8 +1564,6 @@
 
 .method private calculateNextPosition(Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 13
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
@@ -1972,8 +1890,6 @@
 
 .method private calculateRotatedPosition(Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 16
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -2432,7 +2348,6 @@
 
 .method private findBodyView(Landroid/view/View;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_1
 
@@ -2506,7 +2421,6 @@
 
 .method private handleClose(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/MiniModeService"
 
@@ -3354,7 +3268,6 @@
 
 .method private isNeededToSave(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3566,7 +3479,6 @@
 
 .method private setPopupSlideAnimation(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     sget v1, Lcom/android/mms/replyservice/MiniModeService;->ANIMATION_POPUP_Y_START:F
 
@@ -3599,8 +3511,6 @@
 
 .method private shiftDownMiniAppPosition(II)Landroid/graphics/Point;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/graphics/Point;
 
@@ -3619,8 +3529,6 @@
 
 .method private shiftMiniAppPosition(II)Landroid/graphics/Point;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/graphics/Point;
 
@@ -3856,7 +3764,6 @@
 
 .method protected enableBg(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -3898,7 +3805,6 @@
 
 .method protected enableDim(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/mms/replyservice/MiniModeService;->mDimEnabled:Z
 
@@ -3987,7 +3893,6 @@
 
 .method public enableDragRestriction(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/mms/replyservice/MiniModeService;->mIsDragRestricted:Z
 
@@ -3996,7 +3901,6 @@
 
 .method public enableMinimizeFeature(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mMinimizeFunctionRequested:Z
 
@@ -4005,7 +3909,6 @@
 
 .method public enableResizeFeature(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/MiniModeService;->mResizeFunctionRequested:Z
 
@@ -4014,7 +3917,6 @@
 
 .method public enableResizeHandler(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-boolean v0, Lcom/android/mms/replyservice/MiniModeService;->ENABLE_RESIZE_FEATURE:Z
 
@@ -4052,7 +3954,6 @@
 
 .method public findViewById(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mContentView:Landroid/view/View;
 
@@ -4065,7 +3966,6 @@
 
 .method public findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mContentView:Landroid/view/View;
 
@@ -4543,8 +4443,6 @@
 
 .method public move(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mWindowAttributes:Landroid/view/WindowManager$LayoutParams;
 
@@ -4570,7 +4468,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -4579,7 +4476,6 @@
 
 .method protected onClose(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4588,7 +4484,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 10
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Service;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -5381,7 +5276,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mDialog:Landroid/app/Dialog;
 
@@ -5404,7 +5298,6 @@
 
 .method protected onSaveInstanceState(I)Landroid/os/Bundle;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/replyservice/MiniModeService;->onSaveInstanceState()Landroid/os/Bundle;
 
@@ -5415,9 +5308,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v6, "Mms/MiniModeService"
 
@@ -5719,7 +5609,6 @@
 
 .method protected onWindowFocusChanged(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -5728,7 +5617,6 @@
 
 .method public setAttributes(Landroid/view/WindowManager$LayoutParams;)V
     .locals 3
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     const/4 v1, -0x1
 
@@ -5846,17 +5734,12 @@
 
 .method public setClosingAnimation(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setContentView(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, -0x1
 
@@ -5877,11 +5760,6 @@
 
 .method public setContentView(IIIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v1, p0, Lcom/android/mms/replyservice/MiniModeService;->mContentView:Landroid/view/View;
 
@@ -5970,9 +5848,6 @@
 
 .method public setContentView(Landroid/view/View;II)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, -0x1
 
@@ -5993,10 +5868,6 @@
 
 .method public setContentView(Landroid/view/View;III)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, -0x1
 
@@ -6017,11 +5888,6 @@
 
 .method public setContentView(Landroid/view/View;IIII)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     if-nez p1, :cond_0
 
@@ -6084,10 +5950,6 @@
 
 .method protected setContentViewInner(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -6187,9 +6049,6 @@
 
 .method protected setCustomResizeHandler(Lcom/android/mms/replyservice/MiniModeService$Resizable;Landroid/graphics/drawable/BitmapDrawable;I)V
     .locals 9
-    .param p1    # Lcom/android/mms/replyservice/MiniModeService$Resizable;
-    .param p2    # Landroid/graphics/drawable/BitmapDrawable;
-    .param p3    # I
 
     const/16 v8, 0xf
 
@@ -6446,7 +6305,6 @@
 
 .method protected setDimAmount(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService;->mDimView:Landroid/view/View;
 

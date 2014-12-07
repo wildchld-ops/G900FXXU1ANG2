@@ -44,13 +44,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     const/4 v0, -0x1
 
@@ -155,7 +148,6 @@
 
 .method public setFilterPriority(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/dialpad/ContactItem;->filterPriority:I
 
@@ -164,7 +156,6 @@
 
 .method public setHighlightEndIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/dialpad/ContactItem;->highlightEndIndex:I
 
@@ -173,7 +164,6 @@
 
 .method public setHighlightStartIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/dialpad/ContactItem;->highlightStartIndex:I
 
@@ -182,7 +172,6 @@
 
 .method public setNumber(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dialer/dialpad/ContactItem;->number:Ljava/lang/String;
 
@@ -191,7 +180,6 @@
 
 .method public setPhoneType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dialer/dialpad/ContactItem;->phoneType:Ljava/lang/String;
 
@@ -200,7 +188,6 @@
 
 .method public setSearchType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/dialpad/ContactItem;->searchType:I
 

@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosWebViewClient;->this$0:Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;
 
@@ -49,8 +47,6 @@
 # virtual methods
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -87,10 +83,6 @@
 
 .method public onReceivedError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

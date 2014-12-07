@@ -33,7 +33,6 @@
 # virtual methods
 .method public getItem(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -51,7 +50,6 @@
 
 .method public removeData(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -86,8 +84,6 @@
 
 .method public updateData(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

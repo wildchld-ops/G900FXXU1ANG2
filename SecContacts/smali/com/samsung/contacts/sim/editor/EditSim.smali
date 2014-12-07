@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/sim/editor/EditSimOperation;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/sim/editor/EditSimOperation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

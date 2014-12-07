@@ -1264,7 +1264,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 6
-    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1319,7 +1318,6 @@
 
 .method private static nicechar(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/16 v0, 0xa
 
@@ -1391,8 +1389,6 @@
 
 .method private save(ILorg/ccil/cowan/tagsoup/ScanHandler;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lorg/ccil/cowan/tagsoup/ScanHandler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1473,8 +1469,6 @@
 
 .method private unread(Ljava/io/PushbackReader;I)V
     .locals 1
-    .param p1    # Ljava/io/PushbackReader;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1527,8 +1521,6 @@
 
 .method public resetDocumentLocator(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/ccil/cowan/tagsoup/HTMLScanner;->thePublicid:Ljava/lang/String;
 
@@ -1549,8 +1541,6 @@
 
 .method public scan(Ljava/io/Reader;Lorg/ccil/cowan/tagsoup/ScanHandler;)V
     .locals 10
-    .param p1    # Ljava/io/Reader;
-    .param p2    # Lorg/ccil/cowan/tagsoup/ScanHandler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

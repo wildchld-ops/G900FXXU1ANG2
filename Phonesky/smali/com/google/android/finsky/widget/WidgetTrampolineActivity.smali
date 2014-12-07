@@ -16,8 +16,6 @@
 # virtual methods
 .method public finish(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 

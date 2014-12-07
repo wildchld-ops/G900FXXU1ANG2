@@ -100,9 +100,6 @@
 
 .method private declared-synchronized addStatisticsData(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     monitor-enter p0
 
@@ -113,7 +110,6 @@
 
 .method private asyncExecute(Lcom/android/server/pm/Installer$AsyncCmd;)Z
     .locals 6
-    .param p1    # Lcom/android/server/pm/Installer$AsyncCmd;
 
     const/4 v3, 0x1
 
@@ -320,7 +316,6 @@
 
 .method private deleteKey(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -421,7 +416,6 @@
 
 .method private execute(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/Installer;->transaction(Ljava/lang/String;)Ljava/lang/String;
 
@@ -527,8 +521,6 @@
 
 .method private readBytes([BI)Z
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -738,7 +730,6 @@
 
 .method private declared-synchronized transaction(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -795,7 +786,6 @@
 
 .method private writeCmd(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -848,7 +838,6 @@
 
 .method private writeCmdToSocket(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -972,9 +961,6 @@
 
 .method public asyncDexopt(Ljava/lang/String;IZ)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const/16 v2, 0x20
 
@@ -1041,8 +1027,6 @@
 
 .method public clearUserData(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v2, 0x20
 
@@ -1073,10 +1057,6 @@
 
 .method public createUserData(Ljava/lang/String;IILjava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v2, 0x20
 
@@ -1123,7 +1103,6 @@
 
 .method public decrypt(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x20
 
@@ -1210,8 +1189,6 @@
 
 .method public deleteCacheFiles(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v2, 0x20
 
@@ -1242,9 +1219,6 @@
 
 .method public dexopt(Ljava/lang/String;IZ)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const/16 v2, 0x20
 
@@ -1287,9 +1261,6 @@
 
 .method public fixUid(Ljava/lang/String;II)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v2, 0x20
 
@@ -1324,7 +1295,6 @@
 
 .method public freeCache(J)I
     .locals 2
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1367,13 +1337,6 @@
 
 .method public getSizeInfo(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/pm/PackageStats;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/content/pm/PackageStats;
 
     const/4 v4, -0x1
 
@@ -1521,10 +1484,6 @@
 
 .method public install(Ljava/lang/String;IILjava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v2, 0x20
 
@@ -1571,9 +1530,6 @@
 
 .method public linkNativeLibraryDirectory(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/16 v2, 0x20
 
@@ -1643,8 +1599,6 @@
 
 .method public movedex(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v2, 0x20
 
@@ -1675,9 +1629,6 @@
 
 .method public overlayTmpfs(Ljava/lang/String;II)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v2, 0x20
 
@@ -1890,8 +1841,6 @@
 
 .method public remove(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v2, 0x20
 
@@ -1922,8 +1871,6 @@
 
 .method public removeRL(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v2, 0x20
 
@@ -1954,7 +1901,6 @@
 
 .method public removeUserDataDirs(I)I
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1981,8 +1927,6 @@
 
 .method public rename(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v2, 0x20
 
@@ -2013,7 +1957,6 @@
 
 .method public rmdex(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2040,9 +1983,6 @@
 
 .method public unEncryptData(Ljava/lang/String;II)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v3, 0x20
 

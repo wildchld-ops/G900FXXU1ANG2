@@ -24,7 +24,6 @@
 # direct methods
 .method private constructor <init>(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
-    .param p2    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$MultiChoiceListener;-><init>(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;)V
 
@@ -45,7 +42,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$MultiChoiceListener;)Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$MultiChoiceListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$MultiChoiceListener;->mTab:Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 
@@ -126,8 +122,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$MultiChoiceListener;->mTab:Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 
@@ -159,8 +153,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     invoke-virtual {p1}, Landroid/view/ActionMode;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -182,7 +174,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 2
-    .param p1    # Landroid/view/ActionMode;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$MultiChoiceListener;->mTab:Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 
@@ -208,10 +199,6 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 8
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$MultiChoiceListener;->getCheckedDocuments()Ljava/util/List;
 
@@ -274,8 +261,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 

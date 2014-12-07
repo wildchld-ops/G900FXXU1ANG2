@@ -107,8 +107,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -185,8 +183,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/location/SwypeLocationManager;Landroid/location/Location;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/location/SwypeLocationManager;->processLocationUpdate(Landroid/location/Location;)V
 
@@ -203,7 +199,6 @@
 
 .method static synthetic access$1000(Lcom/nuance/connect/location/SwypeLocationManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->ctx:Landroid/content/Context;
 
@@ -212,7 +207,6 @@
 
 .method static synthetic access$1100(Lcom/nuance/connect/location/SwypeLocationManager;)Lcom/nuance/connect/location/SwypeLocationSettings;
     .locals 1
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->aggregateSettings:Lcom/nuance/connect/location/SwypeLocationSettings;
 
@@ -221,9 +215,6 @@
 
 .method static synthetic access$1200(Lcom/nuance/connect/location/SwypeLocationManager;Lcom/nuance/connect/location/SwypeLocation;Lcom/nuance/connect/location/SwypeLocationSettings;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
-    .param p1    # Lcom/nuance/connect/location/SwypeLocation;
-    .param p2    # Lcom/nuance/connect/location/SwypeLocationSettings;
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/location/SwypeLocationManager;->sendUpdate(Lcom/nuance/connect/location/SwypeLocation;Lcom/nuance/connect/location/SwypeLocationSettings;)V
 
@@ -232,7 +223,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/location/SwypeLocationManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/location/SwypeLocationManager;->setupLocationService()V
 
@@ -241,7 +231,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/location/SwypeLocationManager;)Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
     .locals 1
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->currentMode:Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
 
@@ -250,8 +239,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/location/SwypeLocationManager;Z)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/location/SwypeLocationManager;->updateActiveListeners(Z)V
 
@@ -260,7 +247,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/location/SwypeLocationManager;)J
     .locals 2
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     iget-wide v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->lastLocationProcessed:J
 
@@ -269,7 +255,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/location/SwypeLocationManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/location/SwypeLocationManager;->attemptFetchOnce()V
 
@@ -278,7 +263,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/location/SwypeLocationManager;)Landroid/location/LocationManager;
     .locals 1
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->locationManager:Landroid/location/LocationManager;
 
@@ -287,7 +271,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/location/SwypeLocationManager;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     iget-boolean v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->attemptOnceGPS:Z
 
@@ -296,7 +279,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/location/SwypeLocationManager;)Lcom/nuance/connect/location/SwypeLocationManager$LocationEventListener;
     .locals 1
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->gpsListener:Lcom/nuance/connect/location/SwypeLocationManager$LocationEventListener;
 
@@ -305,8 +287,6 @@
 
 .method static synthetic access$902(Lcom/nuance/connect/location/SwypeLocationManager;Lcom/nuance/connect/location/SwypeLocationManager$LocationEventListener;)Lcom/nuance/connect/location/SwypeLocationManager$LocationEventListener;
     .locals 0
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationManager;
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationManager$LocationEventListener;
 
     iput-object p1, p0, Lcom/nuance/connect/location/SwypeLocationManager;->gpsListener:Lcom/nuance/connect/location/SwypeLocationManager$LocationEventListener;
 
@@ -465,8 +445,6 @@
 
 .method private isBetterLocation(Lcom/nuance/connect/location/SwypeLocation;Lcom/nuance/connect/location/SwypeLocation;)Z
     .locals 11
-    .param p1    # Lcom/nuance/connect/location/SwypeLocation;
-    .param p2    # Lcom/nuance/connect/location/SwypeLocation;
 
     const/4 v6, 0x0
 
@@ -552,7 +530,6 @@
 
 .method private declared-synchronized processLocationUpdate(Landroid/location/Location;)V
     .locals 5
-    .param p1    # Landroid/location/Location;
 
     monitor-enter p0
 
@@ -853,8 +830,6 @@
 
 .method private declared-synchronized sendUpdate(Lcom/nuance/connect/location/SwypeLocation;Lcom/nuance/connect/location/SwypeLocationSettings;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/location/SwypeLocation;
-    .param p2    # Lcom/nuance/connect/location/SwypeLocationSettings;
 
     monitor-enter p0
 
@@ -1192,7 +1167,6 @@
 
 .method private startNewLocationPattern(Lcom/nuance/connect/location/SwypeLocationSettings;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationSettings;
 
     const/high16 v4, 0x42c80000
 
@@ -1652,7 +1626,6 @@
 
 .method private declared-synchronized updateActiveListeners(Z)V
     .locals 7
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1772,7 +1745,6 @@
 
 .method public checkPermission(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationManager;->ctx:Landroid/content/Context;
 
@@ -1822,8 +1794,6 @@
 
 .method public registerListener(Lcom/nuance/connect/location/SwypeLocationListener;Lcom/nuance/connect/location/SwypeLocationSettings;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationListener;
-    .param p2    # Lcom/nuance/connect/location/SwypeLocationSettings;
 
     sget-object v0, Lcom/nuance/connect/location/SwypeLocationManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1857,7 +1827,6 @@
 
 .method public unregisterListener(Lcom/nuance/connect/location/SwypeLocationListener;)Z
     .locals 5
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationListener;
 
     const/4 v0, 0x0
 

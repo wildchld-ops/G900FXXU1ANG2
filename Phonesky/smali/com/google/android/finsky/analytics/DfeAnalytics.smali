@@ -86,8 +86,6 @@
 
 .method public constructor <init>(Landroid/os/Handler;Lcom/google/android/finsky/api/DfeApi;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/analytics/DfeAnalytics;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/analytics/DfeAnalytics;
 
     invoke-direct {p0}, Lcom/google/android/finsky/analytics/DfeAnalytics;->flushLogs()V
 
@@ -178,7 +175,6 @@
 
 .method private scheduleFlush(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/analytics/DfeAnalytics;->mHandler:Landroid/os/Handler;
 
@@ -226,7 +222,6 @@
 # virtual methods
 .method public logAdMobPageView(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

@@ -101,7 +101,6 @@
 
 .method private setGrandeDisplayView(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v9, 0x0
 
@@ -344,7 +343,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -373,7 +371,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 

@@ -87,10 +87,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/library/Accounts;Lcom/google/android/finsky/library/SQLiteLibrary;Landroid/os/Handler;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/Accounts;
-    .param p2    # Lcom/google/android/finsky/library/SQLiteLibrary;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -143,7 +139,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/library/Libraries;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-direct {p0}, Lcom/google/android/finsky/library/Libraries;->fireAllLibrariesLoaded()V
 
@@ -152,7 +147,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/library/Libraries;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-direct {p0}, Lcom/google/android/finsky/library/Libraries;->runAndClearLoadingCallbacks()V
 
@@ -161,8 +155,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/library/Libraries;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/library/Libraries;->mLoadedAccountHash:I
 
@@ -171,7 +163,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/library/Libraries;)Lcom/google/android/finsky/library/SQLiteLibrary;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/Libraries;->mSQLiteLibrary:Lcom/google/android/finsky/library/SQLiteLibrary;
 
@@ -180,7 +171,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/library/Libraries;)Lcom/google/android/finsky/library/Accounts;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/Libraries;->mAccounts:Lcom/google/android/finsky/library/Accounts;
 
@@ -189,8 +179,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/library/Libraries;->notifyLibraryChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
 
@@ -199,7 +187,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/library/Libraries;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/Libraries;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/Libraries;->mListeners:Ljava/util/List;
 
@@ -265,7 +252,6 @@
 
 .method private notifyLibraryChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/Libraries;->mNotificationHandler:Landroid/os/Handler;
 
@@ -336,7 +322,6 @@
 
 .method private setupAccountLibrary(Landroid/accounts/Account;)Lcom/google/android/finsky/library/AccountLibrary;
     .locals 2
-    .param p1    # Landroid/accounts/Account;
 
     new-instance v0, Lcom/google/android/finsky/library/AccountLibrary;
 
@@ -357,7 +342,6 @@
 # virtual methods
 .method public declared-synchronized addListener(Lcom/google/android/finsky/library/Libraries$Listener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/Libraries$Listener;
 
     monitor-enter p0
 
@@ -484,7 +468,6 @@
 
 .method public declared-synchronized contains(Lcom/google/android/finsky/library/LibraryEntry;)Z
     .locals 4
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -591,7 +574,6 @@
 
 .method public declared-synchronized get(Lcom/google/android/finsky/library/LibraryEntry;)Lcom/google/android/finsky/library/LibraryEntry;
     .locals 5
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     monitor-enter p0
 
@@ -679,7 +661,6 @@
 
 .method public declared-synchronized getAccountLibrary(Landroid/accounts/Account;)Lcom/google/android/finsky/library/AccountLibrary;
     .locals 1
-    .param p1    # Landroid/accounts/Account;
 
     monitor-enter p0
 
@@ -708,8 +689,6 @@
 
 .method public declared-synchronized getAppEntries(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -786,7 +765,6 @@
 
 .method public declared-synchronized getAppOwners(Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -824,8 +802,6 @@
 
 .method public declared-synchronized getAppOwners(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1055,7 +1031,6 @@
 
 .method public declared-synchronized load(Ljava/lang/Runnable;)V
     .locals 13
-    .param p1    # Ljava/lang/Runnable;
 
     const/4 v1, 0x1
 
@@ -1355,7 +1330,6 @@
 
 .method public remove(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -1366,7 +1340,6 @@
 
 .method public declared-synchronized removeListener(Lcom/google/android/finsky/library/Libraries$Listener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/Libraries$Listener;
 
     monitor-enter p0
 

@@ -36,9 +36,6 @@
 # virtual methods
 .method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # F
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     new-instance v0, Lcom/android/mms/replyservice/MiniModeService$Vec2D;
 

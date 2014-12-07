@@ -19,7 +19,6 @@
 # virtual methods
 .method public addSimMenu(Landroid/content/Context;Landroid/widget/ArrayAdapter;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -173,9 +172,6 @@
 
 .method public disableEdit(Landroid/content/Context;Lcom/android/contacts/common/list/ContactListAdapter;I)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/common/list/ContactListAdapter;
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -240,9 +236,6 @@
 
 .method public excludeSimContactIfNecessary(Landroid/content/Context;Ljava/lang/StringBuilder;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/StringBuilder;
-    .param p3    # Z
 
     invoke-static {p1}, Lcom/samsung/contacts/sim/PhoneBookManageSim;->getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/PhoneBookManageSim;
 
@@ -349,9 +342,6 @@
 
 .method public getCallIntent(Landroid/content/Context;Ljava/lang/String;I)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p2, p1}, Lcom/android/contacts/common/CallUtil;->getCallIntent(Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
 
@@ -362,8 +352,6 @@
 
 .method public getImportExportSimMenuString(Landroid/content/Context;I)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const v6, 0x7f0e0423
 
@@ -473,7 +461,6 @@
 
 .method public getSimInitString(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const v5, 0x7f0e0366
 
@@ -539,7 +526,6 @@
 
 .method public isSimSupportedButNotReady(Landroid/content/Context;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -616,8 +602,6 @@
 
 .method public setSelectionArgsForJoin(Lcom/android/contacts/list/JoinContactLoader;J)V
     .locals 3
-    .param p1    # Lcom/android/contacts/list/JoinContactLoader;
-    .param p2    # J
 
     const-string v0, "_id!=? AND link_type1!=? AND link_type1!=?"
 
@@ -654,7 +638,6 @@
 
 .method public shouldHandleImportRequest(Landroid/content/Context;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -663,9 +646,6 @@
 
 .method public shouldSkipLoadAccountFilter(Lcom/samsung/contacts/sim/PhoneBookManageSim;Lcom/android/contacts/common/model/account/AccountWithDataSet;Z)Z
     .locals 3
-    .param p1    # Lcom/samsung/contacts/sim/PhoneBookManageSim;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p3    # Z
 
     const/4 v0, 0x1
 

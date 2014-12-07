@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/samsung/dialer/dialpad/ContactItem;Lcom/samsung/dialer/dialpad/ContactItem;)I
     .locals 8
-    .param p1    # Lcom/samsung/dialer/dialpad/ContactItem;
-    .param p2    # Lcom/samsung/dialer/dialpad/ContactItem;
 
     const/4 v5, 0x0
 
@@ -218,8 +216,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/dialer/dialpad/ContactItem;
 

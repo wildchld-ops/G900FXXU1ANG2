@@ -72,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/installer/MultiUserCoordinatorService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/installer/MultiUserCoordinatorService;
 
     iget-object v0, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService;->mListeners:Ljava/util/HashMap;
 
@@ -81,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/installer/MultiUserCoordinatorService;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/installer/MultiUserCoordinatorService;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService;->DEBUG_FORCE_BUSY_WITH_DELAY:Z
 
@@ -90,7 +88,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/installer/MultiUserCoordinatorService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/installer/MultiUserCoordinatorService;
 
     iget-object v0, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService;->mDebugPackageJustReleased:Ljava/lang/String;
 
@@ -99,8 +96,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/installer/MultiUserCoordinatorService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/installer/MultiUserCoordinatorService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService;->mDebugPackageJustReleased:Ljava/lang/String;
 
@@ -109,7 +104,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/installer/MultiUserCoordinatorService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/installer/MultiUserCoordinatorService;
 
     iget-object v0, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService;->mPackageOwners:Ljava/util/HashMap;
 
@@ -118,7 +112,6 @@
 
 .method public static createBindIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -139,7 +132,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService;->mBinder:Lcom/google/android/finsky/installer/IMultiUserCoordinatorService$Stub;
 

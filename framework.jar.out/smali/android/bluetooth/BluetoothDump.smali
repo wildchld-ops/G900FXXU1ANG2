@@ -50,7 +50,6 @@
 
 .method public static BtLog(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -217,7 +216,6 @@
 # virtual methods
 .method public putLogs(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 

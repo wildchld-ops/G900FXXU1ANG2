@@ -110,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/list/SIMContactPickerFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/list/SIMContactPickerFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/list/SIMContactPickerFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -182,7 +181,6 @@
 
 .method private setDoneButton(I)V
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_2
 
@@ -223,7 +221,6 @@
 
 .method private showSearchProgress(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/contacts/list/SIMContactPickerFragment;->mSearchProgress:Landroid/view/View;
 
@@ -244,7 +241,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -307,7 +303,6 @@
 
 .method private updateSelectAll(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/list/SIMContactPickerFragment;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -633,8 +628,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const-string v0, "SIMContactPickerFragment"
 
@@ -729,7 +722,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -796,7 +788,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -817,8 +808,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -937,9 +926,6 @@
 
 .method protected onHeaderViewClick(Landroid/view/View;IJ)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onHeaderViewClick(Landroid/view/View;IJ)V
 
@@ -964,8 +950,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/list/SIMContactPickerFragment;->getAdapter()Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -1016,7 +1000,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 3
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1098,8 +1081,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -1110,7 +1091,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "SIMContactPickerFragment"
 
@@ -1147,7 +1127,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "SIMContactPickerFragment"
 
@@ -1252,7 +1231,6 @@
 
 .method public setFilter(Lcom/android/contacts/common/list/ContactListFilter;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
 
     iput-object p1, p0, Lcom/samsung/contacts/list/SIMContactPickerFragment;->mFilter:Lcom/android/contacts/common/list/ContactListFilter;
 
@@ -1261,7 +1239,6 @@
 
 .method public setOnSIMContactPickerActionListener(Lcom/samsung/contacts/listener/OnSIMContactPickerActionListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/OnSIMContactPickerActionListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/list/SIMContactPickerFragment;->mListener:Lcom/samsung/contacts/listener/OnSIMContactPickerActionListener;
 
@@ -1270,7 +1247,6 @@
 
 .method public setSelectAllAtFirstLoad(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/list/SIMContactPickerFragment;->selectAllAtFirstLoad:Z
 
@@ -1279,8 +1255,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v4, 0x10
 

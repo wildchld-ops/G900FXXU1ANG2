@@ -42,7 +42,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardDisplayManager;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardDisplayManager;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardDisplayManager;->mShowing:Z
 
@@ -168,7 +166,6 @@
 
 .method protected updateDisplays(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v3, 0x1
 

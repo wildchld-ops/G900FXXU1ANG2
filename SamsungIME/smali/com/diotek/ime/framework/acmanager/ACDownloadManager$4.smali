@@ -36,8 +36,6 @@
 # virtual methods
 .method public connected(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "ACDownloadManager"
 
@@ -76,8 +74,6 @@
 
 .method public connectionStatus(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "ACDownloadManager"
 
@@ -116,7 +112,6 @@
 
 .method public disconnected(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "ACDownloadManager"
 

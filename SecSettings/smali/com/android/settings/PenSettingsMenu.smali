@@ -193,7 +193,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PenSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/PenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/PenSettingsMenu;->mPenHovering:Landroid/preference/SwitchPreferenceScreen;
 
@@ -202,7 +201,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/PenSettingsMenu;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/PenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/PenSettingsMenu;->mPenHoveringSound:Landroid/preference/CheckBoxPreference;
 
@@ -211,7 +209,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/PenSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/PenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/PenSettingsMenu;->mWritingBuddy:Landroid/preference/SwitchPreferenceScreen;
 
@@ -368,7 +365,6 @@
 
 .method private makeTalkBackMagnificationDisablePopup(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings/PenSettingsMenu;->mTalkbackMagnificationDisableDialog:Landroid/app/AlertDialog;
 
@@ -506,7 +502,6 @@
 
 .method private sendLossPreventionAlert(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1244,7 +1239,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -2181,8 +2175,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -2952,8 +2944,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x1
 

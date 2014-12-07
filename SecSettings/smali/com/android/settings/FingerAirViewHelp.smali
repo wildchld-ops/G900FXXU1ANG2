@@ -47,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/FingerAirViewHelp;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewHelp;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewHelp;->mDBItem:Ljava/lang/String;
 
@@ -56,8 +55,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/FingerAirViewHelp;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/FingerAirViewHelp;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/FingerAirViewHelp;->showTurnOnDialog(Ljava/lang/String;)V
 
@@ -66,7 +63,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/FingerAirViewHelp;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewHelp;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewHelp;->mHelpType:Ljava/lang/String;
 
@@ -75,7 +71,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/FingerAirViewHelp;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewHelp;
 
     iget-boolean v0, p0, Lcom/android/settings/FingerAirViewHelp;->mIsKMenutree:Z
 
@@ -84,7 +79,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/FingerAirViewHelp;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewHelp;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewHelp;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -93,7 +87,6 @@
 
 .method private broadcastFingerAirViewChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -283,7 +276,6 @@
 
 .method private showTurnOnDialog(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -568,7 +560,6 @@
 # virtual methods
 .method public enableAirViewAndInforPreview(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -629,8 +620,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -726,7 +715,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v7, 0x10
 
@@ -831,9 +819,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 21
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v16, 0x0
 
@@ -1836,7 +1821,6 @@
 
 .method public startTryActually(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "information_preview_splanner"
 

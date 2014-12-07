@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;
-    .param p2    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity$EmergencyFragmentListener;-><init>(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageActivity;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onShowCount(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x1
 

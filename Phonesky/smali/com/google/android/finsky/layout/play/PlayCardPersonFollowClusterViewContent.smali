@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -49,8 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;->mCircles:Ljava/util/List;
 
@@ -88,8 +84,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;->mCircles:Ljava/util/List;
 
@@ -98,7 +92,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;)Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;->mProfileFollowButton:Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
 
@@ -107,7 +100,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;->mDocument:Lcom/google/android/finsky/api/model/Document;
 
@@ -118,9 +110,6 @@
 # virtual methods
 .method public configurePersonProfile(Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/Document;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v6, 0x0
 
@@ -245,7 +234,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterViewContent;->mProfileFollowButton:Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
 
@@ -375,11 +363,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 22
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->onLayout(ZIIII)V
 
@@ -738,8 +721,6 @@
 
 .method protected onMeasure(II)V
     .locals 22
-    .param p1    # I
-    .param p2    # I
 
     invoke-super/range {p0 .. p2}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->onMeasure(II)V
 

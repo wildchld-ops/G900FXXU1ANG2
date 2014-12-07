@@ -107,7 +107,6 @@
 
 .method public static checkNeedToChangeWindowSize(I)V
     .locals 6
-    .param p0    # I
 
     const/4 v5, 0x0
 
@@ -267,7 +266,6 @@
 # virtual methods
 .method public WeightedMean(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -662,7 +660,6 @@
 
 .method resetTemperature(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "TemperatureCalculator"
 

@@ -96,8 +96,6 @@
 
 .method private static bootCommand(Landroid/content/Context;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -279,7 +277,6 @@
 
 .method private static getTrustedCerts(Ljava/io/File;)Ljava/util/HashSet;
     .locals 7
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -525,8 +522,6 @@
 
 .method public static installPackage(Landroid/content/Context;Ljava/io/File;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -608,7 +603,6 @@
 
 .method public static rebootWipeCache(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -654,8 +648,6 @@
 
 .method public static rebootWipeCustomerPartition(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -669,7 +661,6 @@
 
 .method public static rebootWipeUserData(Landroid/content/Context;)V
     .locals 12
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -807,9 +798,6 @@
 
 .method public static verifyPackage(Ljava/io/File;Landroid/os/RecoverySystem$ProgressListener;Ljava/io/File;)V
     .locals 46
-    .param p0    # Ljava/io/File;
-    .param p1    # Landroid/os/RecoverySystem$ProgressListener;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

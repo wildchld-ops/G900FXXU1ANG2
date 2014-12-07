@@ -480,7 +480,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -495,7 +494,6 @@
 
 .method protected static getCompatibilityDeviceProperty(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     const-class v2, Landroid/os/Build;
@@ -533,8 +531,6 @@
 
 .method private readString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object v1, p2
 
@@ -564,7 +560,6 @@
 # virtual methods
 .method public compareDeviceProperties(Ljava/util/HashMap;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 9
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -692,7 +687,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Lcom/nuance/id/NuanceId;
 
@@ -773,7 +767,6 @@
 
 .method protected getDeviceProperty(Ljava/lang/String;)Ljava/lang/String;
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     const-string v17, "ID"
 

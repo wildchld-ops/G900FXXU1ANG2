@@ -33,7 +33,6 @@
 # virtual methods
 .method public onCoverStateChanged(Lcom/samsung/android/sdk/cover/ScoverState;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/cover/ScoverState;
 
     const-string v0, "CircleUnlockRippleRenderer"
 

@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionOutputBuffer;)V
     .locals 1
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -34,8 +33,6 @@
 
 .method public constructor <init>(Lorg/apache/http/io/SessionOutputBuffer;I)V
     .locals 1
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -176,9 +173,6 @@
 
 .method protected flushCacheWithAppend([BII)V
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -224,7 +218,6 @@
 
 .method public write(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -274,7 +267,6 @@
 
 .method public write([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -292,9 +284,6 @@
 
 .method public write([BII)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

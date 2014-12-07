@@ -170,7 +170,6 @@
 
 .method public static createStrequentLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

@@ -19,9 +19,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/message/LineParser;Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/message/LineParser;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     const/4 v1, -0x1
 
@@ -82,10 +79,6 @@
 
 .method public static parseHeaders(Lorg/apache/http/io/SessionInputBuffer;IILorg/apache/http/message/LineParser;)[Lorg/apache/http/Header;
     .locals 11
-    .param p0    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lorg/apache/http/message/LineParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

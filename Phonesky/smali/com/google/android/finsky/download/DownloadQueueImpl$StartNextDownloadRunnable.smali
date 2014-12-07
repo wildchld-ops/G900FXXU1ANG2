@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/download/DownloadQueueImpl;Lcom/google/android/finsky/download/DownloadQueueImpl$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/DownloadQueueImpl;
-    .param p2    # Lcom/google/android/finsky/download/DownloadQueueImpl$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/download/DownloadQueueImpl$StartNextDownloadRunnable;-><init>(Lcom/google/android/finsky/download/DownloadQueueImpl;)V
 

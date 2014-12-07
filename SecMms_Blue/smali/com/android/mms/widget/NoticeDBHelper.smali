@@ -32,7 +32,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "message_notice.db"
 
@@ -49,7 +48,6 @@
 
 .method static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/mms/widget/NoticeDBHelper;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/mms/widget/NoticeDBHelper;
 
@@ -103,7 +101,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -248,9 +245,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "NoticeDBHelper"
 

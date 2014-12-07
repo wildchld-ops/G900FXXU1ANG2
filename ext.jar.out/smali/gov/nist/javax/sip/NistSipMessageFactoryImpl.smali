@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/SipStackImpl;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/SipStackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,8 +25,6 @@
 # virtual methods
 .method public newSIPServerRequest(Lgov/nist/javax/sip/message/SIPRequest;Lgov/nist/javax/sip/stack/MessageChannel;)Lgov/nist/javax/sip/stack/ServerRequestInterface;
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
-    .param p2    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     if-eqz p2, :cond_0
 
@@ -148,8 +145,6 @@
 
 .method public newSIPServerResponse(Lgov/nist/javax/sip/message/SIPResponse;Lgov/nist/javax/sip/stack/MessageChannel;)Lgov/nist/javax/sip/stack/ServerResponseInterface;
     .locals 6
-    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
-    .param p2    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     const/4 v0, 0x0
 

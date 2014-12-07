@@ -224,8 +224,6 @@
 
 .method constructor <init>(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, -0x1
 
@@ -282,7 +280,6 @@
 
 .method static synthetic access$100(Landroid/view/HardwareRenderer$GlRenderer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Landroid/view/HardwareRenderer$GlRenderer;
 
     iget-object v0, p0, Landroid/view/HardwareRenderer$GlRenderer;->mRedrawClip:Landroid/graphics/Rect;
 
@@ -291,9 +288,6 @@
 
 .method static synthetic access$200(Landroid/view/HardwareRenderer$GlRenderer;Landroid/view/View$AttachInfo;I)V
     .locals 0
-    .param p0    # Landroid/view/HardwareRenderer$GlRenderer;
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/view/HardwareRenderer$GlRenderer;->handleFunctorStatus(Landroid/view/View$AttachInfo;I)V
 
@@ -302,8 +296,6 @@
 
 .method static synthetic access$300(IF)I
     .locals 1
-    .param p0    # I
-    .param p1    # F
 
     invoke-static {p0, p1}, Landroid/view/HardwareRenderer$GlRenderer;->dpToPx(IF)I
 
@@ -322,9 +314,6 @@
 
 .method private beginFrame(Landroid/view/HardwareCanvas;Landroid/graphics/Rect;I)Landroid/graphics/Rect;
     .locals 5
-    .param p1    # Landroid/view/HardwareCanvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -390,8 +379,6 @@
 
 .method private buildDisplayList(Landroid/view/View;Landroid/view/HardwareCanvas;)Landroid/view/DisplayList;
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/HardwareCanvas;
 
     const-wide/16 v8, 0x8
 
@@ -798,7 +785,6 @@
 
 .method private createSurface(Landroid/view/Surface;)Z
     .locals 6
-    .param p1    # Landroid/view/Surface;
 
     sget-object v1, Landroid/view/HardwareRenderer$GlRenderer;->sEgl:Ljavax/microedition/khronos/egl/EGL10;
 
@@ -936,8 +922,6 @@
 
 .method private debugDirtyRegions(Landroid/graphics/Rect;Landroid/view/HardwareCanvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/view/HardwareCanvas;
 
     iget-boolean v0, p0, Landroid/view/HardwareRenderer$GlRenderer;->mDebugDirtyRegions:Z
 
@@ -984,10 +968,6 @@
 
 .method private debugOverdraw(Landroid/view/View$AttachInfo;Landroid/graphics/Rect;Landroid/view/HardwareCanvas;Landroid/view/DisplayList;)V
     .locals 8
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/view/HardwareCanvas;
-    .param p4    # Landroid/view/DisplayList;
 
     const/4 v7, 0x1
 
@@ -1105,8 +1085,6 @@
 
 .method private static dpToPx(IF)I
     .locals 2
-    .param p0    # I
-    .param p1    # F
 
     int-to-float v0, p0
 
@@ -1123,10 +1101,6 @@
 
 .method private drawDisplayList(Landroid/view/View$AttachInfo;Landroid/view/HardwareCanvas;Landroid/view/DisplayList;I)I
     .locals 9
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # Landroid/view/HardwareCanvas;
-    .param p3    # Landroid/view/DisplayList;
-    .param p4    # I
 
     const-wide/16 v7, 0x8
 
@@ -1199,9 +1173,6 @@
 
 .method private drawOverdrawCounter(Landroid/view/HardwareCanvas;FF)V
     .locals 7
-    .param p1    # Landroid/view/HardwareCanvas;
-    .param p2    # F
-    .param p3    # F
 
     const v6, 0x3e8f5c29
 
@@ -1307,7 +1278,6 @@
 
 .method private endBuildDisplayListProfiling(J)V
     .locals 5
-    .param p1    # J
 
     iget-boolean v3, p0, Landroid/view/HardwareRenderer$GlRenderer;->mProfileEnabled:Z
 
@@ -1337,7 +1307,6 @@
 
 .method private fallback(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1361,8 +1330,6 @@
 
 .method private handleFunctorStatus(Landroid/view/View$AttachInfo;I)V
     .locals 4
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # I
 
     and-int/lit8 v0, p2, 0x1
 
@@ -1480,7 +1447,6 @@
 
 .method private prepareFrame(Landroid/graphics/Rect;)I
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     const-wide/16 v2, 0x8
 
@@ -1509,7 +1475,6 @@
 
 .method private static printConfig(Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 5
-    .param p0    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v4, 0x0
 
@@ -1878,8 +1843,6 @@
 
 .method private static search([Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1912,7 +1875,6 @@
 
 .method private setupPaint(F)Landroid/graphics/Paint;
     .locals 4
-    .param p1    # F
 
     const/4 v3, 0x0
 
@@ -1997,7 +1959,6 @@
 
 .method private swapBuffers(I)V
     .locals 8
-    .param p1    # I
 
     and-int/lit8 v5, p1, 0x4
 
@@ -2059,8 +2020,6 @@
 # virtual methods
 .method attachFunctor(Landroid/view/View$AttachInfo;I)Z
     .locals 4
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/HardwareRenderer$GlRenderer;->mCanvas:Landroid/view/HardwareCanvas;
 
@@ -2209,9 +2168,6 @@
 
 .method createContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     iget v3, p0, Landroid/view/HardwareRenderer$GlRenderer;->mGlVersion:I
 
@@ -2306,7 +2262,6 @@
 
 .method createEglSurface(Landroid/view/Surface;)Ljavax/microedition/khronos/opengles/GL;
     .locals 2
-    .param p1    # Landroid/view/Surface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/Surface$OutOfResourcesException;
@@ -2399,7 +2354,6 @@
 
 .method destroy(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -2504,7 +2458,6 @@
 
 .method detachFunctor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/HardwareRenderer$GlRenderer;->mCanvas:Landroid/view/HardwareCanvas;
 
@@ -2520,10 +2473,6 @@
 
 .method draw(Landroid/view/View;Landroid/view/View$AttachInfo;Landroid/view/HardwareRenderer$HardwareDrawCallbacks;Landroid/graphics/Rect;)V
     .locals 15
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View$AttachInfo;
-    .param p3    # Landroid/view/HardwareRenderer$HardwareDrawCallbacks;
-    .param p4    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/view/HardwareRenderer$GlRenderer;->canDraw()Z
 
@@ -2873,7 +2822,6 @@
 
 .method dumpGfxInfo(Ljava/io/PrintWriter;)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
 
     const/4 v2, 0x0
 
@@ -3065,7 +3013,6 @@
 
 .method initialize(Landroid/view/Surface;)Z
     .locals 6
-    .param p1    # Landroid/view/Surface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/Surface$OutOfResourcesException;
@@ -3378,7 +3325,6 @@
 
 .method invalidate(Landroid/view/Surface;)V
     .locals 6
-    .param p1    # Landroid/view/Surface;
 
     const/4 v5, 0x1
 
@@ -3451,7 +3397,6 @@
 
 .method loadSystemProperties(Landroid/view/Surface;)Z
     .locals 14
-    .param p1    # Landroid/view/Surface;
 
     const/4 v0, 0x0
 
@@ -3701,7 +3646,6 @@
 
 .method onPreDraw(Landroid/graphics/Rect;)I
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -3710,7 +3654,6 @@
 
 .method setName(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/view/HardwareRenderer$GlRenderer;->mName:Ljava/lang/String;
 
@@ -3741,8 +3684,6 @@
 
 .method setup(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/HardwareRenderer$GlRenderer;->validate()Z
 
@@ -3764,7 +3705,6 @@
 
 .method updateSurface(Landroid/view/Surface;)V
     .locals 1
-    .param p1    # Landroid/view/Surface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/Surface$OutOfResourcesException;

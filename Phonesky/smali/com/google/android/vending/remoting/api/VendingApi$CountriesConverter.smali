@@ -68,7 +68,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto;
 
     if-eqz p1, :cond_0
 
@@ -105,7 +104,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto;
 

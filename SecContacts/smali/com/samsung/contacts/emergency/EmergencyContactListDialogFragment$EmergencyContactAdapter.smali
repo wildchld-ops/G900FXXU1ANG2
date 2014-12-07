@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment$EmergencyContactAdapter;->this$0:Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
@@ -34,10 +33,6 @@
 # virtual methods
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -71,8 +66,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 5
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     sget-object v3, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 

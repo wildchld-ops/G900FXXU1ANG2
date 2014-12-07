@@ -53,9 +53,6 @@
 
 .method private constructor <init>(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,10 +71,6 @@
 
 .method synthetic constructor <init>(IIZLcom/google/android/finsky/adapters/CardListAdapter$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Lcom/google/android/finsky/adapters/CardListAdapter$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;-><init>(IIZ)V
 
@@ -86,7 +79,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;->mIsLooseItemRow:Z
 
@@ -95,7 +87,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;
 
     iget v0, p0, Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;->mTrueEndIndex:I
 
@@ -104,8 +95,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;->mTrueEndIndex:I
 
@@ -114,7 +103,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;
 
     iget v0, p0, Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;->mTrueStartIndex:I
 
@@ -133,8 +121,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/google/android/finsky/adapters/CardListAdapter$ItemEntry;->mTrueStartIndex:I
 

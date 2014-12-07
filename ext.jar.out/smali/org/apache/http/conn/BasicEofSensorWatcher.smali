@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/conn/ManagedClientConnection;Z)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ManagedClientConnection;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +40,6 @@
 # virtual methods
 .method public eofDetected(Ljava/io/InputStream;)Z
     .locals 2
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -83,7 +80,6 @@
 
 .method public streamAbort(Ljava/io/InputStream;)Z
     .locals 1
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -101,7 +97,6 @@
 
 .method public streamClosed(Ljava/io/InputStream;)Z
     .locals 2
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

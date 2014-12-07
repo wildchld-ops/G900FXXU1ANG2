@@ -60,16 +60,6 @@
 # direct methods
 .method private constructor <init>(JLjava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
-    .param p11    # Ljava/lang/String;
-    .param p12    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +94,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -218,16 +207,6 @@
 
 .method public static createForTest(JLjava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/contacts/util/StreamItemEntry;
     .locals 13
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
-    .param p11    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/contacts/util/StreamItemEntry;
 
@@ -258,8 +237,6 @@
 
 .method private static getLong(Landroid/database/Cursor;Ljava/lang/String;)J
     .locals 3
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -274,8 +251,6 @@
 
 .method private static getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -292,7 +267,6 @@
 # virtual methods
 .method public addPhoto(Lcom/android/contacts/util/StreamItemPhotoEntry;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/util/StreamItemPhotoEntry;
 
     iget-object v0, p0, Lcom/android/contacts/util/StreamItemEntry;->mPhotos:Ljava/util/List;
 
@@ -303,7 +277,6 @@
 
 .method public compareTo(Lcom/android/contacts/util/StreamItemEntry;)I
     .locals 4
-    .param p1    # Lcom/android/contacts/util/StreamItemEntry;
 
     iget-wide v0, p0, Lcom/android/contacts/util/StreamItemEntry;->mTimestamp:J
 
@@ -339,7 +312,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/util/StreamItemEntry;
 
@@ -352,7 +324,6 @@
 
 .method public decodeHtml(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 

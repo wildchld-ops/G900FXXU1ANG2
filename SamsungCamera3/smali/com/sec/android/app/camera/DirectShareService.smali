@@ -97,7 +97,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/DirectShareService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/DirectShareService;->mNotificationProgressText:Ljava/lang/String;
 
@@ -106,8 +105,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/app/camera/DirectShareService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/DirectShareService;->mNotificationProgressText:Ljava/lang/String;
 
@@ -116,7 +113,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/DirectShareService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/DirectShareService;->mNotificationTitle:Ljava/lang/String;
 
@@ -125,7 +121,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/DirectShareService;)Landroid/app/NotificationManager;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/DirectShareService;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -134,8 +129,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/DirectShareService;Landroid/app/NotificationManager;)Landroid/app/NotificationManager;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
-    .param p1    # Landroid/app/NotificationManager;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/DirectShareService;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -144,7 +137,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/DirectShareService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/DirectShareService;->mNotificationResultText:Ljava/lang/String;
 
@@ -153,8 +145,6 @@
 
 .method static synthetic access$302(Lcom/sec/android/app/camera/DirectShareService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/DirectShareService;->mNotificationResultText:Ljava/lang/String;
 
@@ -163,7 +153,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/DirectShareService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/DirectShareService;->mToastTest:Ljava/lang/String;
 
@@ -172,8 +161,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/app/camera/DirectShareService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/DirectShareService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/DirectShareService;->mToastTest:Ljava/lang/String;
 
@@ -198,7 +185,6 @@
 
 .method public getReceiverList(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -269,7 +255,6 @@
 
 .method public getType(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -375,7 +360,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -466,9 +450,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
@@ -576,7 +557,6 @@
 
 .method public reTransferSendIntent(ILjava/util/ArrayList;)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -656,7 +636,6 @@
 
 .method public removeCompletedState(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/DirectShareService;->mSendInfoList:Ljava/util/ArrayList;
 

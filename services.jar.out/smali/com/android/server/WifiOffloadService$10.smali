@@ -74,7 +74,6 @@
 
 .method private calculateDataUsageforInterface(Landroid/net/NetworkTemplate;)J
     .locals 10
-    .param p1    # Landroid/net/NetworkTemplate;
 
     iget v7, p0, Lcom/android/server/WifiOffloadService$10;->uid:I
 
@@ -174,9 +173,6 @@
 
 .method private getDataUsageForUid(ILandroid/net/INetworkStatsSession;Landroid/net/NetworkTemplate;)J
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/net/INetworkStatsSession;
-    .param p3    # Landroid/net/NetworkTemplate;
 
     const-wide/16 v6, 0x0
 

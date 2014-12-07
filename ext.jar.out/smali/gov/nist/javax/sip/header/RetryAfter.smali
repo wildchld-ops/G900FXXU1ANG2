@@ -216,7 +216,6 @@
 
 .method public setComment(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -241,7 +240,6 @@
 
 .method public setDuration(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -268,7 +266,6 @@
 
 .method public setRetryAfter(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

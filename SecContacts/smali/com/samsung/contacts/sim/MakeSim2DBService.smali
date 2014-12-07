@@ -359,9 +359,6 @@
 
 .method private CompareAdnData(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     :goto_0
     const-string v0, "1"
@@ -429,9 +426,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/sim/MakeSim2DBService;II)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/sim/MakeSim2DBService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/sim/MakeSim2DBService;->doInitAction(II)V
 
@@ -440,8 +434,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/sim/MakeSim2DBService;I)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/sim/MakeSim2DBService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/sim/MakeSim2DBService;->doQueryAction(I)V
 
@@ -450,8 +442,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/sim/MakeSim2DBService;I)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/sim/MakeSim2DBService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/sim/MakeSim2DBService;->doAirPlaneAction(I)V
 
@@ -460,9 +450,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/sim/MakeSim2DBService;II)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/sim/MakeSim2DBService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/sim/MakeSim2DBService;->doCheckAdnAttribute(II)V
 
@@ -471,10 +458,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/sim/MakeSim2DBService;IIZ)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/sim/MakeSim2DBService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/contacts/sim/MakeSim2DBService;->doBtSapAction(IIZ)V
 
@@ -1325,9 +1308,6 @@
 
 .method private doBtSapAction(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -1611,8 +1591,6 @@
 
 .method private doCheckSimState(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     iget-object v8, p0, Lcom/samsung/contacts/sim/MakeSim2DBService;->mTelMan:Landroid/telephony/TelephonyManager;
 
@@ -2002,9 +1980,6 @@
 
 .method private doCompareData(III)V
     .locals 18
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v11, 0x0
 
@@ -2487,7 +2462,6 @@
 
 .method private doDeleteSIMProfile(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/samsung/contacts/sim/MakeSim2DBService;->TAG:Ljava/lang/String;
 
@@ -2695,9 +2669,6 @@
 
 .method private doDeleteSimDB(III)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -2975,8 +2946,6 @@
 
 .method private doInitAction(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/sim/MakeSim2DBService;->doCheckSimState(II)V
 
@@ -3292,7 +3261,6 @@
 
 .method private doQueryAction(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/sim/MakeSim2DBService;->mMakeSimOperation:Lcom/samsung/contacts/sim/makesimdbservice/MakeSimOperation;
 
@@ -4304,9 +4272,6 @@
 
 .method private doWriteSimDB(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -4541,7 +4506,6 @@
 
 .method private getColumnIndex(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const-string v1, "name"
 
@@ -4627,8 +4591,6 @@
 
 .method private getIntPreferenceValue(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -5259,9 +5221,6 @@
 
 .method private sendMessage(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/sim/MakeSim2DBService;->mServiceHandler:Lcom/samsung/contacts/sim/MakeSim2DBService$ServiceHandler;
 
@@ -5284,8 +5243,6 @@
 
 .method private setIntPreferenceValue(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -5401,7 +5358,6 @@
 
 .method private updateAdnDeletedStatus(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -5432,7 +5388,6 @@
 
 .method private updateSettingStatus(J)V
     .locals 7
-    .param p1    # J
 
     const/4 v6, 0x0
 
@@ -5528,7 +5483,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -5671,9 +5625,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 12
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x3
 

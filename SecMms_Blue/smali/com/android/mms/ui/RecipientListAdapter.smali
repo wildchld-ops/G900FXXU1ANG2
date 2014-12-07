@@ -52,8 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -108,9 +106,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v8, 0x0
 
@@ -274,7 +269,6 @@
 
 .method public setContactInfo(Lcom/android/mms/data/Contact;)V
     .locals 0
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iput-object p1, p0, Lcom/android/mms/ui/RecipientListAdapter;->mContact:Lcom/android/mms/data/Contact;
 
@@ -283,7 +277,6 @@
 
 .method public setContactInfo(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -298,7 +291,6 @@
 
 .method public updateAvatarView(Landroid/widget/QuickContactBadge;)V
     .locals 5
-    .param p1    # Landroid/widget/QuickContactBadge;
 
     const/4 v4, 0x1
 

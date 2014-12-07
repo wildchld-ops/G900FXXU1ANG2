@@ -126,10 +126,6 @@
 
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;Ljava/lang/String;JZ)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -192,7 +188,6 @@
 
 .method private final addBroadcastToHistoryLocked(Lcom/android/server/am/BroadcastRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
 
     const/4 v4, 0x1
 
@@ -251,9 +246,6 @@
 
 .method private final deliverToRegisteredReceiverLocked(Lcom/android/server/am/BroadcastRecord;Lcom/android/server/am/BroadcastFilter;Z)V
     .locals 17
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
-    .param p2    # Lcom/android/server/am/BroadcastFilter;
-    .param p3    # Z
 
     const/16 v16, 0x0
 
@@ -1064,7 +1056,6 @@
 
 .method private final makeBroadcastSummaryToStringLocked(Landroid/content/Intent;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -1110,15 +1101,6 @@
 
 .method private static performReceiveLocked(Lcom/android/server/am/ProcessRecord;Landroid/content/IIntentReceiver;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;ZZI)V
     .locals 10
-    .param p0    # Lcom/android/server/am/ProcessRecord;
-    .param p1    # Landroid/content/IIntentReceiver;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1164,8 +1146,6 @@
 
 .method private final processCurBroadcastLocked(Lcom/android/server/am/BroadcastRecord;Lcom/android/server/am/ProcessRecord;)V
     .locals 12
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1302,7 +1282,6 @@
 # virtual methods
 .method public backgroundServicesFinishedLocked(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1352,7 +1331,6 @@
 
 .method final broadcastTimeoutLocked(Z)V
     .locals 19
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1881,13 +1859,6 @@
 
 .method final dumpLocked(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;IZLjava/lang/String;Z)Z
     .locals 15
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
 
     iget-object v10, p0, Lcom/android/server/am/BroadcastQueue;->mParallelBroadcasts:Ljava/util/ArrayList;
 
@@ -2805,7 +2776,6 @@
 
 .method public enqueueOrderedBroadcastLocked(Lcom/android/server/am/BroadcastRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
 
     iget-object v0, p0, Lcom/android/server/am/BroadcastQueue;->mOrderedBroadcasts:Ljava/util/ArrayList;
 
@@ -2816,7 +2786,6 @@
 
 .method public enqueueParallelBroadcastLocked(Lcom/android/server/am/BroadcastRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
 
     iget-object v0, p0, Lcom/android/server/am/BroadcastQueue;->mParallelBroadcasts:Ljava/util/ArrayList;
 
@@ -2827,12 +2796,6 @@
 
 .method public finishReceiverLocked(Lcom/android/server/am/BroadcastRecord;ILjava/lang/String;Landroid/os/Bundle;ZZ)Z
     .locals 9
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
-    .param p6    # Z
 
     iget v3, p1, Lcom/android/server/am/BroadcastRecord;->state:I
 
@@ -3146,7 +3109,6 @@
 
 .method public getMatchingOrderedReceiver(Landroid/os/IBinder;)Lcom/android/server/am/BroadcastRecord;
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/am/BroadcastQueue;->mOrderedBroadcasts:Ljava/util/ArrayList;
 
@@ -3183,7 +3145,6 @@
 
 .method public isPendingBroadcastProcessLocked(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/am/BroadcastQueue;->mPendingBroadcast:Lcom/android/server/am/BroadcastRecord;
 
@@ -3210,7 +3171,6 @@
 
 .method final logBroadcastReceiverDiscardLocked(Lcom/android/server/am/BroadcastRecord;)V
     .locals 11
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
 
     const/4 v10, 0x4
 
@@ -3440,7 +3400,6 @@
 
 .method final processNextBroadcast(Z)V
     .locals 44
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -6288,7 +6247,6 @@
 
 .method public final replaceOrderedBroadcastLocked(Lcom/android/server/am/BroadcastRecord;)Z
     .locals 3
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
 
     iget-object v1, p0, Lcom/android/server/am/BroadcastQueue;->mOrderedBroadcasts:Ljava/util/ArrayList;
 
@@ -6341,7 +6299,6 @@
 
 .method public final replaceParallelBroadcastLocked(Lcom/android/server/am/BroadcastRecord;)Z
     .locals 3
-    .param p1    # Lcom/android/server/am/BroadcastRecord;
 
     iget-object v1, p0, Lcom/android/server/am/BroadcastQueue;->mParallelBroadcasts:Ljava/util/ArrayList;
 
@@ -6424,7 +6381,6 @@
 
 .method public sendPendingBroadcastsLocked(Lcom/android/server/am/ProcessRecord;)Z
     .locals 9
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     const/4 v6, 0x0
 
@@ -6532,7 +6488,6 @@
 
 .method final setBroadcastTimeoutLocked(J)V
     .locals 3
-    .param p1    # J
 
     iget-boolean v1, p0, Lcom/android/server/am/BroadcastQueue;->mPendingBroadcastTimeoutMessage:Z
 
@@ -6560,7 +6515,6 @@
 
 .method public skipCurrentReceiverLocked(Lcom/android/server/am/ProcessRecord;)V
     .locals 8
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     const/4 v6, 0x0
 
@@ -6634,7 +6588,6 @@
 
 .method public skipPendingBroadcastLocked(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/am/BroadcastQueue;->mPendingBroadcast:Lcom/android/server/am/BroadcastRecord;
 

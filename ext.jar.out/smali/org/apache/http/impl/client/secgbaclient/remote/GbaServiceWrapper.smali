@@ -59,7 +59,6 @@
 
 .method public constructor <init>(Ljava/lang/Class;Ljava/lang/Object;)V
     .locals 4
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -169,7 +168,6 @@
 
 .method private varargs getMethod(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -242,8 +240,6 @@
 # virtual methods
 .method public generateGbaKey([B[B)[B
     .locals 10
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v6, 0x2
 
@@ -482,8 +478,6 @@
 
 .method public getGbaKey([B[B)[B
     .locals 10
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v6, 0x2
 
@@ -778,7 +772,6 @@
 
 .method public getIsimResponse(Ljava/lang/String;)[B
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -981,8 +974,6 @@
 
 .method public getNafId([B[B)[B
     .locals 10
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v6, 0x2
 
@@ -1221,9 +1212,6 @@
 
 .method public storeGbaBootstrapParams([BLjava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x3
 

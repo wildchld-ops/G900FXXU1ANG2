@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/play/analytics/EventLogger;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/google/android/play/analytics/EventLogger$1;->this$0:Lcom/google/android/play/analytics/EventLogger;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public dispatchMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/google/android/play/analytics/EventLogger$1;->this$0:Lcom/google/android/play/analytics/EventLogger;
 

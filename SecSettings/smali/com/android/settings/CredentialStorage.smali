@@ -54,7 +54,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/CredentialStorage;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/CredentialStorage;
 
     iget-object v0, p0, Lcom/android/settings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -63,8 +62,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/CredentialStorage;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/CredentialStorage;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/settings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -73,7 +70,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/CredentialStorage;)Landroid/security/KeyStore;
     .locals 1
-    .param p0    # Lcom/android/settings/CredentialStorage;
 
     iget-object v0, p0, Lcom/android/settings/CredentialStorage;->mKeyStore:Landroid/security/KeyStore;
 
@@ -82,7 +78,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/CredentialStorage;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/CredentialStorage;
 
     iget-boolean v0, p0, Lcom/android/settings/CredentialStorage;->mIsShowingConfigureKeyGuardDialog:Z
 
@@ -91,8 +86,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/CredentialStorage;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/CredentialStorage;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/CredentialStorage;->mIsShowingConfigureKeyGuardDialog:Z
 
@@ -101,7 +94,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/CredentialStorage;)I
     .locals 1
-    .param p0    # Lcom/android/settings/CredentialStorage;
 
     iget v0, p0, Lcom/android/settings/CredentialStorage;->mRetriesRemaining:I
 
@@ -110,8 +102,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/CredentialStorage;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/CredentialStorage;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/CredentialStorage;->mRetriesRemaining:I
 
@@ -120,7 +110,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/CredentialStorage;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CredentialStorage;
 
     invoke-direct {p0}, Lcom/android/settings/CredentialStorage;->ensureKeyGuard()V
 
@@ -129,7 +118,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/CredentialStorage;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CredentialStorage;
 
     invoke-direct {p0}, Lcom/android/settings/CredentialStorage;->handleUnlockOrInstall()V
 
@@ -227,7 +215,6 @@
 
 .method private getCertificateFromBytes([B)Ljava/security/cert/Certificate;
     .locals 6
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -281,8 +268,6 @@
 
 .method private getFormattedPrivateKey(Ljava/security/interfaces/RSAPrivateKey;Ljava/security/interfaces/RSAPublicKey;)[B
     .locals 14
-    .param p1    # Ljava/security/interfaces/RSAPrivateKey;
-    .param p2    # Ljava/security/interfaces/RSAPublicKey;
 
     const/4 v0, 0x3
 
@@ -447,7 +432,6 @@
 
 .method private getPrivateKeyFromBytes([B)Ljava/security/PrivateKey;
     .locals 4
-    .param p1    # [B
 
     const/4 v2, 0x0
 
@@ -567,7 +551,6 @@
 
 .method private installCertificateinCCM(Landroid/os/Bundle;)V
     .locals 16
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x0
 
@@ -1251,7 +1234,6 @@
 
 .method private isHardwareBackedKey([B)Z
     .locals 7
-    .param p1    # [B
 
     :try_start_0
     new-instance v2, Lcom/android/org/bouncycastle/asn1/ASN1InputStream;
@@ -1311,7 +1293,6 @@
 
 .method private trimByteArray([B)[B
     .locals 4
-    .param p1    # [B
 
     const/4 v3, 0x0
 
@@ -1353,9 +1334,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 

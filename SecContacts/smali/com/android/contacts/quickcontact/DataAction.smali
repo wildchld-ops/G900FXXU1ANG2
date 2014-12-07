@@ -49,10 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/contacts/model/dataitem/DataItem;Lcom/android/contacts/common/model/dataitem/DataKind;Ljava/lang/String;)V
     .locals 37
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p3    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -1335,10 +1331,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/android/contacts/common/model/dataitem/DataKind;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1858,11 +1850,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1952,7 +1939,6 @@
 
 .method public static setIsEasyMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/contacts/quickcontact/DataAction;->mIsEasyMode:Z
 
@@ -1961,7 +1947,6 @@
 
 .method public static setPhoneAvailable(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/contacts/quickcontact/DataAction;->mHasPhone:Z
 
@@ -1970,7 +1955,6 @@
 
 .method public static setSmsAvailable(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/contacts/quickcontact/DataAction;->mHasSms:Z
 
@@ -1981,7 +1965,6 @@
 # virtual methods
 .method public collapseWith(Lcom/android/contacts/quickcontact/Action;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/quickcontact/DataAction;->shouldCollapseWith(Lcom/android/contacts/quickcontact/Action;)Z
 
@@ -1995,7 +1978,6 @@
 
 .method public bridge synthetic collapseWith(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/quickcontact/Action;
 
@@ -2183,7 +2165,6 @@
 
 .method public setPresence(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/quickcontact/DataAction;->mPresence:I
 
@@ -2192,7 +2173,6 @@
 
 .method public shouldCollapseWith(Lcom/android/contacts/quickcontact/Action;)Z
     .locals 6
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
 
     const/4 v1, 0x0
 
@@ -2261,7 +2241,6 @@
 
 .method public bridge synthetic shouldCollapseWith(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/quickcontact/Action;
 

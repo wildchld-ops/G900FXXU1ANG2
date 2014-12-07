@@ -130,7 +130,6 @@
 
 .method public static getFileUriForContentUri(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 9
-    .param p0    # Landroid/net/Uri;
 
     const/4 v8, 0x0
 

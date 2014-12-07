@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/sqlite/SQLDataSource;-><init>(Landroid/content/Context;)V
 
@@ -73,8 +72,6 @@
 
 .method private generateAggregatePoint(Landroid/content/ContentValues;Lorg/json/JSONObject;)Lorg/json/JSONObject;
     .locals 8
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Lorg/json/JSONObject;
 
     new-instance v4, Lorg/json/JSONObject;
 
@@ -260,7 +257,6 @@
 
 .method private generateIndividualPoint(Landroid/content/ContentValues;)Lorg/json/JSONObject;
     .locals 5
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v2, 0x0
 
@@ -436,7 +432,6 @@
 
 .method private makePlaceholders(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -473,7 +468,6 @@
 # virtual methods
 .method public clearAggregate(J)Z
     .locals 7
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -526,7 +520,6 @@
 
 .method public clearIndividual(J)Z
     .locals 7
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -589,12 +582,6 @@
 
 .method public createAggregatePoint(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Z
     .locals 36
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
 
     if-eqz p1, :cond_0
 
@@ -1286,11 +1273,6 @@
 
 .method public createIndividualPoint(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
 
     const/4 v3, 0x0
 
@@ -1531,8 +1513,6 @@
 
 .method public getAggregatePoints([Ljava/lang/String;J)Lorg/json/JSONArray;
     .locals 20
-    .param p1    # [Ljava/lang/String;
-    .param p2    # J
 
     new-instance v11, Lorg/json/JSONArray;
 
@@ -1832,8 +1812,6 @@
 
 .method public getIndividualPoints([Ljava/lang/String;J)Lorg/json/JSONArray;
     .locals 18
-    .param p1    # [Ljava/lang/String;
-    .param p2    # J
 
     new-instance v11, Lorg/json/JSONArray;
 
@@ -2492,7 +2470,6 @@
 
 .method public limitAggregate(I)Z
     .locals 18
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -2663,7 +2640,6 @@
 
 .method public limitIndividual(I)Z
     .locals 18
-    .param p1    # I
 
     const/4 v10, 0x0
 

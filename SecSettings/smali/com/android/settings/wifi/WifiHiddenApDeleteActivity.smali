@@ -89,7 +89,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->removeListItems()V
 
@@ -98,7 +97,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->mSelectAllCheckbox:Landroid/view/View;
 
@@ -107,7 +105,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->mList:Ljava/util/ArrayList;
 
@@ -116,7 +113,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->mListView:Landroid/widget/ListView;
 
@@ -125,7 +121,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)F
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->enableOpacity:F
 
@@ -134,7 +129,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->mRemoveTextView:Landroid/widget/TextView;
 
@@ -143,7 +137,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->mRemoveButton:Landroid/view/View;
 
@@ -152,7 +145,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;)F
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteActivity;->disableOpacity:F
 
@@ -424,7 +416,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, -0x2
 
@@ -598,7 +589,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x5
 
@@ -659,7 +649,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

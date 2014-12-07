@@ -34,7 +34,6 @@
 
 .method private static initialize(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -176,7 +175,6 @@
 
 .method public static isCameraIntentRegistered(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -193,7 +191,6 @@
 
 .method public static isEasyModeSupported(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/contacts/util/PhoneCapabilityTester;->sIsInitialized:Z
 
@@ -209,7 +206,6 @@
 
 .method public static isEmergencyModeSupported(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/contacts/util/PhoneCapabilityTester;->sIsInitialized:Z
 
@@ -225,8 +221,6 @@
 
 .method public static isIntentRegistered(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -257,7 +251,6 @@
 
 .method public static isPhone(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/contacts/util/PhoneCapabilityTester;->sIsInitialized:Z
 
@@ -273,7 +266,6 @@
 
 .method public static isSipPhone(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/contacts/util/PhoneCapabilityTester;->sIsInitialized:Z
 
@@ -289,7 +281,6 @@
 
 .method public static isSmsCapable(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/contacts/util/PhoneCapabilityTester;->sIsInitialized:Z
 
@@ -305,7 +296,6 @@
 
 .method public static isSmsIntentRegistered(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -332,7 +322,6 @@
 
 .method public static isUsingTwoPanes(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -349,7 +338,6 @@
 
 .method public static isVibrator(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/contacts/util/PhoneCapabilityTester;->sIsInitialized:Z
 
@@ -365,7 +353,6 @@
 
 .method public static isVideoCall(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/contacts/util/PhoneCapabilityTester;->sIsInitialized:Z
 

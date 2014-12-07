@@ -50,7 +50,6 @@
 # virtual methods
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lorg/json/JSONArray;
 
@@ -61,7 +60,6 @@
 
 .method public onResponse(Lorg/json/JSONArray;)V
     .locals 4
-    .param p1    # Lorg/json/JSONArray;
 
     :try_start_0
     iget-object v1, p0, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$ThirdPartySearchSuggestor$1;->this$0:Lcom/google/android/finsky/providers/RecentSuggestionsProvider$ThirdPartySearchSuggestor;

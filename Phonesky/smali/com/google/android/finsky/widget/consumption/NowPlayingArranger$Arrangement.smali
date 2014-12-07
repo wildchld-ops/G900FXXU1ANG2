@@ -117,8 +117,6 @@
 
 .method public constructor <init>([Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;I)V
     .locals 0
-    .param p1    # [Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -131,9 +129,6 @@
 
 .method public static getLocation(III)B
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x3
 

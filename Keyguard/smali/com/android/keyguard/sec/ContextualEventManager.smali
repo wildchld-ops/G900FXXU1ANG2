@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -191,9 +190,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/ContextualEventManager;->handleUpdateMissedAdded(Ljava/lang/String;Landroid/widget/RemoteViews;)V
 
@@ -202,8 +198,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualEventManager;->handleUpdateMissedEventRemoved(Ljava/lang/String;)V
 
@@ -212,7 +206,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/ContextualEventManager;)Landroid/widget/RemoteViews$OnClickHandler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager;->mOnClickHandler:Landroid/widget/RemoteViews$OnClickHandler;
 
@@ -221,9 +214,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/ContextualEventManager;->handleUpdateEventAdded(Ljava/lang/String;Landroid/widget/RemoteViews;)V
 
@@ -232,8 +222,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualEventManager;->handleUpdateEventRemoved(Ljava/lang/String;)V
 
@@ -242,9 +230,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/ContextualEventManager;->handleUpdateEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
 
@@ -253,9 +238,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/ContextualEventManager;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/ContextualEventManager;->handleUpdateFlightMode(Ljava/lang/String;I)V
 
@@ -264,7 +246,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/ContextualEventManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager;->mContext:Landroid/content/Context;
 
@@ -273,7 +254,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/ContextualEventManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualEventManager;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager;->mUpdateHandler:Landroid/os/Handler;
 
@@ -282,7 +262,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/keyguard/sec/ContextualEventManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/keyguard/sec/ContextualEventManager;->sInstance:Lcom/android/keyguard/sec/ContextualEventManager;
 
@@ -323,8 +302,6 @@
 
 .method private handleUpdateEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/4 v3, 0x0
 
@@ -489,8 +466,6 @@
 
 .method private handleUpdateEventAdded(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     if-eqz p2, :cond_0
 
@@ -666,7 +641,6 @@
 
 .method private handleUpdateEventRemoved(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/keyguard/sec/ContextualEventManager;->mViewStack:Ljava/util/ArrayList;
 
@@ -712,8 +686,6 @@
 
 .method private handleUpdateFlightMode(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v2, "ContextualEventManager"
 
@@ -854,8 +826,6 @@
 
 .method private handleUpdateMissedAdded(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const-string v2, "ContextualEventManager"
 
@@ -985,7 +955,6 @@
 
 .method private handleUpdateMissedEventRemoved(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager;->mSecKeyguardMissedEventView:Lcom/android/keyguard/sec/SecKeyguardMissedEventView;
 
@@ -998,7 +967,6 @@
 
 .method private isRequestClassMissedEvent(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "com.android.phone"
 
@@ -1038,7 +1006,6 @@
 
 .method private isRequestClassMusic(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "music"
 
@@ -1074,7 +1041,6 @@
 # virtual methods
 .method public animateMissedEvent(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_1
 
@@ -1630,7 +1596,6 @@
 
 .method public registerContextualEventManagerCallback(Lcom/android/keyguard/sec/SecKeyguardMissedEventView$ContextualEventManagerCallback;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/sec/SecKeyguardMissedEventView$ContextualEventManagerCallback;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualEventManager;->mSecKeyguardMissedEventView:Lcom/android/keyguard/sec/SecKeyguardMissedEventView;
 
@@ -1646,7 +1611,6 @@
 
 .method public removeContextualEvent(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/16 v7, 0x1338
 
@@ -1894,8 +1858,6 @@
 
 .method public setContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/16 v8, 0x1337
 
@@ -2164,7 +2126,6 @@
 
 .method protected setContextualEventContainer(Lcom/android/keyguard/sec/ContextualEventContainer;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/ContextualEventContainer;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/ContextualEventManager;->mContextualEventContainer:Lcom/android/keyguard/sec/ContextualEventContainer;
 
@@ -2173,8 +2134,6 @@
 
 .method public setContextualMusicEvent(Ljava/lang/String;Landroid/view/View;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/view/View;
 
     const-string v2, "ContextualEventManager"
 
@@ -2270,7 +2229,6 @@
 
 .method public setOnClickHandler(Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 2
-    .param p1    # Landroid/widget/RemoteViews$OnClickHandler;
 
     const-string v0, "ContextualEventManager"
 
@@ -2310,8 +2268,6 @@
 
 .method public updateContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/16 v5, 0x1335
 

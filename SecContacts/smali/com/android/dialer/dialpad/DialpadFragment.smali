@@ -540,7 +540,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/dialer/dialpad/DialpadFragment;->needToShowDialpadChooser:Z
 
@@ -549,8 +548,6 @@
 
 .method static synthetic access$1102(Lcom/android/dialer/dialpad/DialpadFragment;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
-    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/dialer/dialpad/DialpadFragment;->mMessenger:Landroid/os/Messenger;
 
@@ -559,8 +556,6 @@
 
 .method static synthetic access$1202(Lcom/android/dialer/dialpad/DialpadFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/dialpad/DialpadFragment;->mIsServiceJustConnected:Z
 
@@ -569,7 +564,6 @@
 
 .method static synthetic access$1300(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/dialer/dialpad/DialpadFragment;->stripSeparators(Ljava/lang/String;)Ljava/lang/String;
 
@@ -580,8 +574,6 @@
 
 .method static synthetic access$1400(Lcom/android/dialer/dialpad/DialpadFragment;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/dialer/dialpad/DialpadFragment;->sendMessage(Ljava/lang/String;)V
 
@@ -590,8 +582,6 @@
 
 .method static synthetic access$200(Lcom/android/dialer/dialpad/DialpadFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/dialer/dialpad/DialpadFragment;->updateCallIcon_SPR(Z)V
 
@@ -600,7 +590,6 @@
 
 .method static synthetic access$300(Lcom/android/dialer/dialpad/DialpadFragment;)Lcom/samsung/contacts/util/ImsLowSignalHelper;
     .locals 1
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
 
     iget-object v0, p0, Lcom/android/dialer/dialpad/DialpadFragment;->mImsLowSignalHelper:Lcom/samsung/contacts/util/ImsLowSignalHelper;
 
@@ -609,8 +598,6 @@
 
 .method static synthetic access$400(Lcom/android/dialer/dialpad/DialpadFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/dialer/dialpad/DialpadFragment;->updateCallIcon(Z)V
 
@@ -619,7 +606,6 @@
 
 .method static synthetic access$502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/dialer/dialpad/DialpadFragment;->isSpeedPopupRunnging:Z
 
@@ -636,7 +622,6 @@
 
 .method static synthetic access$602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/dialer/dialpad/DialpadFragment;->mIsAirplaneModeOn:Z
 
@@ -645,7 +630,6 @@
 
 .method static synthetic access$800(Lcom/android/dialer/dialpad/DialpadFragment;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
 
     iget-object v0, p0, Lcom/android/dialer/dialpad/DialpadFragment;->mRecipients:Landroid/widget/EditText;
 
@@ -654,7 +638,6 @@
 
 .method static synthetic access$900(Lcom/android/dialer/dialpad/DialpadFragment;)V
     .locals 0
-    .param p0    # Lcom/android/dialer/dialpad/DialpadFragment;
 
     invoke-direct {p0}, Lcom/android/dialer/dialpad/DialpadFragment;->handleDialButtonClickWithEmptyDigits()V
 
@@ -842,7 +825,6 @@
 
 .method private clickDialkey(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1766,7 +1748,6 @@
 
 .method private static final isNonSeparator(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -2213,7 +2194,6 @@
 
 .method private nullViewDrawable(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -2256,7 +2236,6 @@
 
 .method private nullViewDrawablesRecursive(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_1
 
@@ -3557,7 +3536,6 @@
 
 .method private static stripSeparators(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -3876,7 +3854,6 @@
 # virtual methods
 .method protected addDialButtonsListener(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f080198
 
@@ -3977,7 +3954,6 @@
 
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 5
-    .param p1    # Landroid/text/Editable;
 
     const/4 v4, 0x0
 
@@ -4094,10 +4070,6 @@
 
 .method protected assembleDialer(Landroid/view/View;Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/LayoutInflater;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -4348,10 +4320,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5846,7 +5814,6 @@
 
 .method public keyPressed(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -7729,7 +7696,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-virtual {p0, p1}, Lcom/android/dialer/dialpad/DialpadFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -7740,7 +7706,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -7916,7 +7881,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
 
     return-void
 .end method
@@ -8797,10 +8761,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-boolean v1, p0, Lcom/android/dialer/dialpad/DialpadFragment;->mWasEmptyBeforeTextChange:Z
 
@@ -8824,8 +8784,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/high16 v2, 0x3f800000
 
@@ -9013,9 +8971,6 @@
 
 .method public saveFragmentView(Landroid/view/View;Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/LayoutInflater;
-    .param p3    # Landroid/view/ViewGroup;
 
     iput-object p1, p0, Lcom/android/dialer/dialpad/DialpadFragment;->mFragmentView:Landroid/view/View;
 
@@ -9400,7 +9355,6 @@
 
 .method public setStartedFromNewIntent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/dialpad/DialpadFragment;->mStartedFromNewIntent:Z
 

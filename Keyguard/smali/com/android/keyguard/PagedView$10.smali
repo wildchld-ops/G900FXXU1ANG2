@@ -54,7 +54,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 5
-    .param p1    # F
 
     iget v0, p0, Lcom/android/keyguard/PagedView$10;->mCount:I
 

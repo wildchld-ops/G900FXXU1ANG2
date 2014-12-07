@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -36,8 +35,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -84,7 +81,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardFMMView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardFMMView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -93,7 +89,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardFMMView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardFMMView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -102,7 +97,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardFMMView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardFMMView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -111,7 +105,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardFMMView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardFMMView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -120,8 +113,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardFMMView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardFMMView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/KeyguardFMMView;->handleTimeout(I)V
 
@@ -156,7 +147,6 @@
 
 .method private handleTimeout(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

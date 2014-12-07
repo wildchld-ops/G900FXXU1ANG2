@@ -964,9 +964,9 @@
     <public type="integer" name="folderIcon_animation_GapX" id="0x7f0b002b" />
     <public type="integer" name="folderIcon_animation_GapY" id="0x7f0b002c" />
     <public type="integer" name="folderIcon_animation_Scale" id="0x7f0b002d" />
+    <public type="integer" name="APKTOOL_DUMMY_002e" id="0x7f0b002e" />
     <public type="integer" name="folderIcon_animation_OffsetX" id="0x7f0b002f" />
     <public type="integer" name="folderIcon_animation_OffsetY" id="0x7f0b0030" />
-    <public type="integer" name="APKTOOL_DUMMY_002e" id="0x7f0b002e" />
     <public type="integer" name="APKTOOL_DUMMY_0031" id="0x7f0b0031" />
     <public type="fraction" name="config_menuBgDarkenAmountNormal" id="0x7f0c0000" />
     <public type="fraction" name="config_bgDarkenAmountEdit" id="0x7f0c0001" />
@@ -1250,6 +1250,27 @@
     <public type="dimen" name="menu_title_bar_button_text_size" id="0x7f0d01b8" />
     <public type="dimen" name="ged_home_CellWidth" id="0x7f0d0062" />
     <public type="dimen" name="ged_home_CellHeight" id="0x7f0d0063" />
+    <public type="dimen" name="APKTOOL_DUMMY_0083" id="0x7f0d0083" />
+    <public type="dimen" name="APKTOOL_DUMMY_00ee" id="0x7f0d00ee" />
+    <public type="dimen" name="APKTOOL_DUMMY_00ef" id="0x7f0d00ef" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f0" id="0x7f0d00f0" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f1" id="0x7f0d00f1" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f2" id="0x7f0d00f2" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f3" id="0x7f0d00f3" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f4" id="0x7f0d00f4" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f5" id="0x7f0d00f5" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f6" id="0x7f0d00f6" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f7" id="0x7f0d00f7" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f8" id="0x7f0d00f8" />
+    <public type="dimen" name="APKTOOL_DUMMY_00f9" id="0x7f0d00f9" />
+    <public type="dimen" name="APKTOOL_DUMMY_00fa" id="0x7f0d00fa" />
+    <public type="dimen" name="APKTOOL_DUMMY_00fb" id="0x7f0d00fb" />
+    <public type="dimen" name="APKTOOL_DUMMY_00fc" id="0x7f0d00fc" />
+    <public type="dimen" name="APKTOOL_DUMMY_00fd" id="0x7f0d00fd" />
+    <public type="dimen" name="APKTOOL_DUMMY_00fe" id="0x7f0d00fe" />
+    <public type="dimen" name="APKTOOL_DUMMY_00ff" id="0x7f0d00ff" />
+    <public type="dimen" name="APKTOOL_DUMMY_0100" id="0x7f0d0100" />
+    <public type="dimen" name="APKTOOL_DUMMY_0101" id="0x7f0d0101" />
     <public type="dimen" name="pgIndicatorNormalPreviewHeight" id="0x7f0d0113" />
     <public type="dimen" name="pgIndicatorNormalPreviewWidth" id="0x7f0d0114" />
     <public type="dimen" name="pgIndicatorSelectedPreviewHeight" id="0x7f0d0115" />
@@ -1385,6 +1406,23 @@
     <public type="dimen" name="help_hub_set_wallpaper_livewallpaper_layout_marginTop" id="0x7f0d019a" />
     <public type="dimen" name="help_hub_set_wallpaper_wallpaper_layout_marginLeft" id="0x7f0d019b" />
     <public type="dimen" name="help_hub_set_wallpaper_wallpaper_layout_marginTop" id="0x7f0d019c" />
+    <public type="dimen" name="APKTOOL_DUMMY_019d" id="0x7f0d019d" />
+    <public type="dimen" name="APKTOOL_DUMMY_019e" id="0x7f0d019e" />
+    <public type="dimen" name="APKTOOL_DUMMY_01a0" id="0x7f0d01a0" />
+    <public type="dimen" name="APKTOOL_DUMMY_01a3" id="0x7f0d01a3" />
+    <public type="dimen" name="APKTOOL_DUMMY_01a4" id="0x7f0d01a4" />
+    <public type="dimen" name="APKTOOL_DUMMY_01a7" id="0x7f0d01a7" />
+    <public type="dimen" name="APKTOOL_DUMMY_01a8" id="0x7f0d01a8" />
+    <public type="dimen" name="APKTOOL_DUMMY_01a9" id="0x7f0d01a9" />
+    <public type="dimen" name="APKTOOL_DUMMY_01aa" id="0x7f0d01aa" />
+    <public type="dimen" name="APKTOOL_DUMMY_01ab" id="0x7f0d01ab" />
+    <public type="dimen" name="APKTOOL_DUMMY_01ac" id="0x7f0d01ac" />
+    <public type="dimen" name="APKTOOL_DUMMY_01ad" id="0x7f0d01ad" />
+    <public type="dimen" name="APKTOOL_DUMMY_01af" id="0x7f0d01af" />
+    <public type="dimen" name="APKTOOL_DUMMY_01b0" id="0x7f0d01b0" />
+    <public type="dimen" name="APKTOOL_DUMMY_01b1" id="0x7f0d01b1" />
+    <public type="dimen" name="APKTOOL_DUMMY_01b3" id="0x7f0d01b3" />
+    <public type="dimen" name="APKTOOL_DUMMY_01b6" id="0x7f0d01b6" />
     <public type="dimen" name="menu_title_bar_text_max_width" id="0x7f0d01b9" />
     <public type="dimen" name="menu_title_bar_selectedText_max_width" id="0x7f0d01ba" />
     <public type="dimen" name="quicknavi_padding_top" id="0x7f0d01bb" />
@@ -1496,44 +1534,6 @@
     <public type="dimen" name="help_hub_home_insert_item_pointer_up_margin_top" id="0x7f0d0225" />
     <public type="dimen" name="help_hub_viewWidgets_text_margin_right" id="0x7f0d0226" />
     <public type="dimen" name="help_hub_viewWidgets_text_margin_bottom" id="0x7f0d0227" />
-    <public type="dimen" name="APKTOOL_DUMMY_0083" id="0x7f0d0083" />
-    <public type="dimen" name="APKTOOL_DUMMY_00ee" id="0x7f0d00ee" />
-    <public type="dimen" name="APKTOOL_DUMMY_00ef" id="0x7f0d00ef" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f0" id="0x7f0d00f0" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f1" id="0x7f0d00f1" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f2" id="0x7f0d00f2" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f3" id="0x7f0d00f3" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f4" id="0x7f0d00f4" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f5" id="0x7f0d00f5" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f6" id="0x7f0d00f6" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f7" id="0x7f0d00f7" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f8" id="0x7f0d00f8" />
-    <public type="dimen" name="APKTOOL_DUMMY_00f9" id="0x7f0d00f9" />
-    <public type="dimen" name="APKTOOL_DUMMY_00fa" id="0x7f0d00fa" />
-    <public type="dimen" name="APKTOOL_DUMMY_00fb" id="0x7f0d00fb" />
-    <public type="dimen" name="APKTOOL_DUMMY_00fc" id="0x7f0d00fc" />
-    <public type="dimen" name="APKTOOL_DUMMY_00fd" id="0x7f0d00fd" />
-    <public type="dimen" name="APKTOOL_DUMMY_00fe" id="0x7f0d00fe" />
-    <public type="dimen" name="APKTOOL_DUMMY_00ff" id="0x7f0d00ff" />
-    <public type="dimen" name="APKTOOL_DUMMY_0100" id="0x7f0d0100" />
-    <public type="dimen" name="APKTOOL_DUMMY_0101" id="0x7f0d0101" />
-    <public type="dimen" name="APKTOOL_DUMMY_019d" id="0x7f0d019d" />
-    <public type="dimen" name="APKTOOL_DUMMY_019e" id="0x7f0d019e" />
-    <public type="dimen" name="APKTOOL_DUMMY_01a0" id="0x7f0d01a0" />
-    <public type="dimen" name="APKTOOL_DUMMY_01a3" id="0x7f0d01a3" />
-    <public type="dimen" name="APKTOOL_DUMMY_01a4" id="0x7f0d01a4" />
-    <public type="dimen" name="APKTOOL_DUMMY_01a7" id="0x7f0d01a7" />
-    <public type="dimen" name="APKTOOL_DUMMY_01a8" id="0x7f0d01a8" />
-    <public type="dimen" name="APKTOOL_DUMMY_01a9" id="0x7f0d01a9" />
-    <public type="dimen" name="APKTOOL_DUMMY_01aa" id="0x7f0d01aa" />
-    <public type="dimen" name="APKTOOL_DUMMY_01ab" id="0x7f0d01ab" />
-    <public type="dimen" name="APKTOOL_DUMMY_01ac" id="0x7f0d01ac" />
-    <public type="dimen" name="APKTOOL_DUMMY_01ad" id="0x7f0d01ad" />
-    <public type="dimen" name="APKTOOL_DUMMY_01af" id="0x7f0d01af" />
-    <public type="dimen" name="APKTOOL_DUMMY_01b0" id="0x7f0d01b0" />
-    <public type="dimen" name="APKTOOL_DUMMY_01b1" id="0x7f0d01b1" />
-    <public type="dimen" name="APKTOOL_DUMMY_01b3" id="0x7f0d01b3" />
-    <public type="dimen" name="APKTOOL_DUMMY_01b6" id="0x7f0d01b6" />
     <public type="dimen" name="APKTOOL_DUMMY_0228" id="0x7f0d0228" />
     <public type="dimen" name="APKTOOL_DUMMY_0229" id="0x7f0d0229" />
     <public type="dimen" name="APKTOOL_DUMMY_022a" id="0x7f0d022a" />
@@ -1890,7 +1890,6 @@
     <public type="style" name="MenuIcon" id="0x7f0f001a" />
     <public type="style" name="MenuIcon.Folder" id="0x7f0f001b" />
     <public type="style" name="MenuIcon.FolderItem" id="0x7f0f001c" />
-    <public type="style" name="HomeIconMovie" id="0x7f0f001d" />
     <public type="style" name="APKTOOL_DUMMY_000a" id="0x7f0f000a" />
     <public type="style" name="APKTOOL_DUMMY_000b" id="0x7f0f000b" />
     <public type="style" name="APKTOOL_DUMMY_000c" id="0x7f0f000c" />
@@ -1898,6 +1897,7 @@
     <public type="style" name="APKTOOL_DUMMY_000e" id="0x7f0f000e" />
     <public type="style" name="APKTOOL_DUMMY_000f" id="0x7f0f000f" />
     <public type="style" name="APKTOOL_DUMMY_0010" id="0x7f0f0010" />
+    <public type="style" name="HomeIconMovie" id="0x7f0f001d" />
     <public type="style" name="APKTOOL_DUMMY_001e" id="0x7f0f001e" />
     <public type="menu" name="options_menu" id="0x7f100000" />
 </resources>

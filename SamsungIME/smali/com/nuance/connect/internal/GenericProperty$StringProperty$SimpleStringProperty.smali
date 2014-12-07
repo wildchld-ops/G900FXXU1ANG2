@@ -30,8 +30,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lcom/nuance/connect/internal/Property$Source;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

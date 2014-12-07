@@ -20,7 +20,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;->mCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -29,8 +28,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;->neverShowAddToRejectListTipsAgain(Landroid/content/Context;)V
 
@@ -39,8 +36,6 @@
 
 .method private addToRejectList(Landroid/app/Activity;Z)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;->mContactUri:Landroid/net/Uri;
 
@@ -51,7 +46,6 @@
 
 .method private static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -62,7 +56,6 @@
 
 .method private neverShowAddToRejectListTipsAgain(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -87,7 +80,6 @@
 
 .method private setContactUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;->mContactUri:Landroid/net/Uri;
 
@@ -96,7 +88,6 @@
 
 .method public static shouldShowAddToRejectListTips(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -115,10 +106,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/app/Activity;Landroid/net/Uri;Z)V
     .locals 3
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     new-instance v0, Lcom/samsung/contacts/interactions/AddToRejectListTipsDialogFragment;
 
@@ -164,7 +151,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -293,7 +279,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "isCheckBoxChecked"
 

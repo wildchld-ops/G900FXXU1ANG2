@@ -50,7 +50,6 @@
 
 .method private createCustomSearchbar(Z)V
     .locals 7
-    .param p1    # Z
 
     const v4, 0x7f080216
 
@@ -209,7 +208,6 @@
 
 .method private dismissProgressAndFinish(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/contacts/activities/JoinContactActivity;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -396,7 +394,6 @@
 
 .method private updateSelectionCount(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/activities/JoinContactActivity;->mSelectedButtonText:Ljava/lang/String;
 
@@ -448,8 +445,6 @@
 # virtual methods
 .method public configureEmptyView(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v4, 0x10
 
@@ -588,7 +583,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 3
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/android/contacts/list/JoinContactListFragment;
 
@@ -620,7 +614,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const-wide/16 v5, -0x1
 
@@ -772,7 +765,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -811,8 +803,6 @@
 
 .method public onListUpdated(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Lcom/android/contacts/activities/JoinContactActivity;->configureEmptyView(ZZ)V
 
@@ -821,7 +811,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -845,7 +834,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -886,7 +874,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const v0, 0x7f080173
 
@@ -917,7 +904,6 @@
 
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/activities/JoinContactActivity;->mListFragment:Lcom/android/contacts/list/JoinContactListFragment;
 
@@ -932,7 +918,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -969,7 +954,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1025,7 +1009,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "targetContactId"
 
@@ -1072,7 +1055,6 @@
 
 .method public onSelectionUpdated(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 

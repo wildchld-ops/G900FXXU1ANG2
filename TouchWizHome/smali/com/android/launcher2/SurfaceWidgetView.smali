@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -39,8 +38,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -63,10 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/SurfaceWidgetView;Lcom/android/launcher2/SurfaceWidgetItem;Landroid/view/ViewGroup$LayoutParams;Lcom/android/launcher2/SurfaceWidgetView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/SurfaceWidgetView;
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetItem;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
-    .param p3    # Lcom/android/launcher2/SurfaceWidgetView;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher2/SurfaceWidgetView;->restartWidget(Lcom/android/launcher2/SurfaceWidgetItem;Landroid/view/ViewGroup$LayoutParams;Lcom/android/launcher2/SurfaceWidgetView;)V
 
@@ -81,9 +74,6 @@
 
 .method private notifyPositionOffset(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Lcom/android/launcher2/SurfaceWidgetView;->getTag()Ljava/lang/Object;
 
@@ -113,9 +103,6 @@
 
 .method private restartWidget(Lcom/android/launcher2/SurfaceWidgetItem;Landroid/view/ViewGroup$LayoutParams;Lcom/android/launcher2/SurfaceWidgetView;)V
     .locals 5
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetItem;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
-    .param p3    # Lcom/android/launcher2/SurfaceWidgetView;
 
     const/4 v4, 0x0
 
@@ -439,10 +426,6 @@
 
 .method public layout(IIII)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/TextureView;->layout(IIII)V
 
@@ -645,10 +628,6 @@
 
 .method public onPageScroll(IIII)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/SurfaceWidgetView;->getX()F
 
@@ -719,10 +698,6 @@
 
 .method public onSizeChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/TextureView;->onSizeChanged(IIII)V
 
@@ -748,7 +723,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x1
 
@@ -925,8 +899,6 @@
 
 .method public onVisibilityChanged(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/TextureView;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -998,8 +970,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1051,8 +1021,6 @@
 
 .method public repositionSurfaceWidget(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/SurfaceWidgetView;->getWidth()I
 
@@ -1073,8 +1041,6 @@
 
 .method public resizeSurfaceWidgetView(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "SurfaceWidgetView"
 
@@ -1131,10 +1097,6 @@
 
 .method public setFrame(IIII)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v9, 0x3f000000
 
@@ -1213,8 +1175,6 @@
 
 .method public surfaceWidgetCrashed(Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/Exception;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -1460,7 +1420,6 @@
 
 .method public updateContentDescription(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/launcher2/SurfaceWidgetView;->mPendingAccessibilityAction:Z
 

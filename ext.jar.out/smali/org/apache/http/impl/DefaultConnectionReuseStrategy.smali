@@ -19,7 +19,6 @@
 # virtual methods
 .method protected createTokenIterator(Lorg/apache/http/HeaderIterator;)Lorg/apache/http/TokenIterator;
     .locals 1
-    .param p1    # Lorg/apache/http/HeaderIterator;
 
     new-instance v0, Lorg/apache/http/message/BasicTokenIterator;
 
@@ -30,8 +29,6 @@
 
 .method public keepAlive(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Z
     .locals 12
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     if-nez p1, :cond_0
 

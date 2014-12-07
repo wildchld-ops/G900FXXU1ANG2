@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;Lcom/google/android/finsky/billing/creditcard/CreditCardSaver$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
-    .param p2    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver$EscrowResponseListener;-><init>(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;)V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -67,7 +64,6 @@
 
 .method public onResponse(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver$EscrowResponseListener;->this$0:Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
 

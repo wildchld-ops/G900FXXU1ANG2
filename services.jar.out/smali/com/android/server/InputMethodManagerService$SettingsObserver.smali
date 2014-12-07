@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/InputMethodManagerService;Landroid/os/Handler;)V
     .locals 3
-    .param p2    # Landroid/os/Handler;
 
     const/4 v2, 0x0
 
@@ -72,7 +71,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$SettingsObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 

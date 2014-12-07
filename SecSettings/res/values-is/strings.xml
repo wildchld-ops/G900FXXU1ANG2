@@ -1373,7 +1373,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">Villa við USB-netaðgang</string>
     <string name="usb_tethering_on_during_sidesync_popup">Ekki er hægt að slökkva á USB-tjóðrun á meðan tölvusamnýting er notuð. Ef slökkt er á USB-tjóðrun verður slökkt á tölvusamnýtingu.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Ekki er hægt að kveikja á USB-tjóðrun á meðan tölvusamnýting er notuð. Ef kveikt er á USB-tjóðrun verður slökkt á tölvusamnýtingu.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-tjóðrun</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-tjóðrun</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Nettenging tækisins er samnýtt…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Staðbundin nettenging tækisins samnýtt með 1 tæki</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Staðbundin nettenging tækisins samnýtt með %d tækjum</string>

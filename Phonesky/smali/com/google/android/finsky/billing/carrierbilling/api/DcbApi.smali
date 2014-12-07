@@ -46,8 +46,6 @@
 
 .method public constructor <init>(Lcom/android/volley/RequestQueue;Lcom/google/android/finsky/billing/carrierbilling/api/DcbApiContext;)V
     .locals 0
-    .param p1    # Lcom/android/volley/RequestQueue;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/api/DcbApiContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;)Lcom/android/volley/RequestQueue;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -69,7 +66,6 @@
 
 .method static buildCredentials(Lorg/json/JSONObject;)Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingCredentials;
     .locals 9
-    .param p0    # Lorg/json/JSONObject;
 
     const/4 v6, 0x0
 
@@ -205,7 +201,6 @@
 
 .method private static buildEncryptedSubscriberInfo(Lorg/json/JSONObject;)Lcom/google/android/finsky/billing/carrierbilling/model/EncryptedSubscriberInfo;
     .locals 5
-    .param p0    # Lorg/json/JSONObject;
 
     const/4 v3, 0x0
 
@@ -309,7 +304,6 @@
 
 .method static buildProvisioning(Lorg/json/JSONObject;)Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;
     .locals 10
-    .param p0    # Lorg/json/JSONObject;
 
     const/4 v7, 0x0
 
@@ -565,9 +559,6 @@
 
 .method private static buildSubscriberInfo(Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;)Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/json/JSONObject;
 
     if-nez p2, :cond_0
 
@@ -755,9 +746,6 @@
 
 .method public getCredentials(Ljava/lang/String;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -827,8 +815,6 @@
 
 .method getCredentialsParametersAsJsonObject(Ljava/lang/String;Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;->getBaseParametersAsJsonObject()Lorg/json/JSONObject;
@@ -880,8 +866,6 @@
 
 .method public getProvisioning(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -974,7 +958,6 @@
 
 .method getProvisioningParametersAsJsonObject(Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;->getBaseParametersAsJsonObject()Lorg/json/JSONObject;

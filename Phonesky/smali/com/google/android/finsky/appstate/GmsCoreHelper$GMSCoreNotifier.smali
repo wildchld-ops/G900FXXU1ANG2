@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,8 +34,6 @@
 
 .method private static reconnectNlp(Landroid/content/Context;Ljava/lang/String;)V
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -233,9 +230,6 @@
 
 .method private setAutoUpdate(Ljava/lang/String;Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -266,7 +260,6 @@
 # virtual methods
 .method public onPackageAdded(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -378,15 +371,12 @@
 
 .method public onPackageAvailabilityChanged([Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onPackageChanged(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/GmsCoreHelper$GMSCoreNotifier;->mContext:Landroid/content/Context;
 
@@ -397,15 +387,12 @@
 
 .method public onPackageFirstLaunch(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageRemoved(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 

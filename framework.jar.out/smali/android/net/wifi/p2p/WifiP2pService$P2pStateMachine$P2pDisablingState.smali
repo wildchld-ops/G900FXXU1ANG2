@@ -94,7 +94,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine$P2pDisablingState;->this$1:Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;
 

@@ -63,8 +63,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/keyguard/KeyguardFaceVoiceUnlockView$VoiceUnlockViewCallback;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/keyguard/KeyguardFaceVoiceUnlockView$VoiceUnlockViewCallback;
 
     const/4 v8, -0x2
 
@@ -310,7 +308,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/FaceVoiceUnlock;)Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
     .locals 1
-    .param p0    # Lcom/android/keyguard/FaceVoiceUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mWakeUpCmdRecognizer:Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
@@ -319,8 +316,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/FaceVoiceUnlock;Lcom/samsung/voiceshell/WakeUpCmdRecognizer;)Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
     .locals 0
-    .param p0    # Lcom/android/keyguard/FaceVoiceUnlock;
-    .param p1    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
     iput-object p1, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mWakeUpCmdRecognizer:Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
@@ -329,7 +324,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/FaceVoiceUnlock;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/FaceVoiceUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mContext:Landroid/content/Context;
 
@@ -338,7 +332,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/FaceVoiceUnlock;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/FaceVoiceUnlock;
 
     iget-boolean v0, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mVoiceVerifyStarted:Z
 
@@ -347,8 +340,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/FaceVoiceUnlock;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/FaceVoiceUnlock;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mVoiceVerifyStarted:Z
 
@@ -357,8 +348,6 @@
 
 .method static synthetic access$302(Lcom/android/keyguard/FaceVoiceUnlock;Lcom/android/internal/policy/IFaceLockInterface;)Lcom/android/internal/policy/IFaceLockInterface;
     .locals 0
-    .param p0    # Lcom/android/keyguard/FaceVoiceUnlock;
-    .param p1    # Lcom/android/internal/policy/IFaceLockInterface;
 
     iput-object p1, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mService:Lcom/android/internal/policy/IFaceLockInterface;
 
@@ -367,7 +356,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/FaceVoiceUnlock;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/FaceVoiceUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mHandler:Landroid/os/Handler;
 
@@ -517,11 +505,6 @@
 
 .method private startUi(Landroid/os/IBinder;IIII)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const-string v0, "FULLockscreen"
 
@@ -742,7 +725,6 @@
 
 .method private updateVolume(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "FULLockscreen"
 
@@ -761,16 +743,12 @@
 # virtual methods
 .method public OnEnrollResult(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public OnRmsForWave(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/FaceVoiceUnlock;->updateVolume(I)V
 
@@ -779,15 +757,12 @@
 
 .method public OnSpectrumData([I)V
     .locals 0
-    .param p1    # [I
 
     return-void
 .end method
 
 .method public OnVerifyResult(IS)V
     .locals 4
-    .param p1    # I
-    .param p2    # S
 
     const/4 v3, 0x1
 
@@ -1007,7 +982,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -1082,7 +1056,6 @@
 
 .method handlePokeWakelock(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mContext:Landroid/content/Context;
 
@@ -1338,7 +1311,6 @@
 
 .method handleUnlock(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -1482,7 +1454,6 @@
 
 .method public initializeView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-string v0, "FULLockscreen"
 
@@ -1505,7 +1476,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/FaceVoiceUnlock;->mKeyguardScreenCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 

@@ -363,8 +363,6 @@
 
 .method private setConnectionType(Lorg/apache/http/util/CharArrayBuffer;I)V
     .locals 1
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # I
 
     const-string v0, "Close"
 
@@ -502,7 +500,6 @@
 
 .method public getHeaders(Landroid/net/http/Headers$HeaderCallback;)V
     .locals 5
-    .param p1    # Landroid/net/http/Headers$HeaderCallback;
 
     const/4 v2, 0x0
 
@@ -677,7 +674,6 @@
 
 .method public parseHeader(Lorg/apache/http/util/CharArrayBuffer;)V
     .locals 11
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
 
     const-wide/16 v9, -0x1
 
@@ -1206,7 +1202,6 @@
 
 .method public setAcceptRanges(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1219,7 +1214,6 @@
 
 .method public setCacheControl(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1232,7 +1226,6 @@
 
 .method public setContentDisposition(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1245,7 +1238,6 @@
 
 .method public setContentEncoding(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1258,7 +1250,6 @@
 
 .method public setContentLength(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/http/Headers;->contentLength:J
 
@@ -1267,7 +1258,6 @@
 
 .method public setContentType(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1280,7 +1270,6 @@
 
 .method public setEtag(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1293,7 +1282,6 @@
 
 .method public setExpires(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1306,7 +1294,6 @@
 
 .method public setLastModified(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1319,7 +1306,6 @@
 
 .method public setLocation(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1332,7 +1318,6 @@
 
 .method public setProxyAuthenticate(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1345,7 +1330,6 @@
 
 .method public setWwwAuthenticate(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 
@@ -1358,7 +1342,6 @@
 
 .method public setXPermittedCrossDomainPolicies(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/http/Headers;->mHeaders:[Ljava/lang/String;
 

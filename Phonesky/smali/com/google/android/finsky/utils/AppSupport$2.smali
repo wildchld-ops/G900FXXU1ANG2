@@ -40,7 +40,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v1, p1, Lcom/android/volley/NetworkError;
 

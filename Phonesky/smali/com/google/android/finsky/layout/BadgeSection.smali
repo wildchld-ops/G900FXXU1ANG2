@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -33,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/SeparatorLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -43,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/BadgeSection;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/BadgeSection;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/BadgeSection;->expand()V
 
@@ -227,7 +223,6 @@
 
 .method private createSecondaryBadgeRow(Lcom/google/android/finsky/protos/DocAnnotations$Badge;)Lcom/google/android/finsky/layout/BadgeRow;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/DocAnnotations$Badge;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/BadgeSection;->mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -342,12 +337,6 @@
 # virtual methods
 .method public configure(Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p3, p0, Lcom/google/android/finsky/layout/BadgeSection;->mDocument:Lcom/google/android/finsky/api/model/Document;
 
@@ -425,7 +414,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, ""
 

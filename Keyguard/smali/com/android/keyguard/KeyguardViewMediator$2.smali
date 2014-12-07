@@ -59,7 +59,6 @@
 
 .method public keyguardDone(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator$2;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -132,7 +131,6 @@
 
 .method public resetStateLocked(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator$2;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -144,7 +142,6 @@
 
 .method public setNeedsInput(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator$2;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -171,7 +168,6 @@
 
 .method public userActivity(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator$2;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 

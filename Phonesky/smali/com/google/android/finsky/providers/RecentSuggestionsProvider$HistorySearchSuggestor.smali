@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/database/Cursor;Landroid/content/Context;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/content/Context;
 
     invoke-direct {p0, p1, p3}, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$AsyncSuggestionAuthority;-><init>(Ljava/lang/String;Landroid/content/Context;)V
 
@@ -36,7 +33,6 @@
 # virtual methods
 .method protected makeRequest(Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;
 
     const/4 v1, 0x0
 

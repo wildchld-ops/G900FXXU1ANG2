@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;Lcom/google/android/finsky/appstate/PackageStateRepository;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;
-    .param p2    # Lcom/google/android/finsky/appstate/PackageStateRepository;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +32,6 @@
 
 .method private getAllBlocking(Z)Ljava/util/Collection;
     .locals 8
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -182,7 +179,6 @@
 
 .method public getApp(Ljava/lang/String;)Lcom/google/android/finsky/appstate/AppStates$AppState;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/android/finsky/appstate/AppStates;->mStateStore:Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;
 
@@ -309,8 +305,6 @@
 
 .method public getOwnedByAccountBlocking(Lcom/google/android/finsky/library/Libraries;Z)Ljava/util/Map;
     .locals 13
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -464,7 +458,6 @@
 
 .method public load(Ljava/lang/Runnable;)Z
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/AppStates;->mStateStore:Lcom/google/android/finsky/appstate/WriteThroughInstallerDataStore;
 

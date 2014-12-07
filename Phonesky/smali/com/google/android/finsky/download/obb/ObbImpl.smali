@@ -27,12 +27,6 @@
 # direct methods
 .method constructor <init>(ZLjava/lang/String;ILjava/lang/String;JI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -168,7 +162,6 @@
 
 .method private logFinalizeProblem(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x0
 
@@ -378,7 +371,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -775,7 +767,6 @@
 
 .method public setState(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x5
 

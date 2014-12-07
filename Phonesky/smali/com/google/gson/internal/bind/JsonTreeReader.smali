@@ -43,7 +43,6 @@
 
 .method private expect(Lcom/google/gson/stream/JsonToken;)V
     .locals 3
-    .param p1    # Lcom/google/gson/stream/JsonToken;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

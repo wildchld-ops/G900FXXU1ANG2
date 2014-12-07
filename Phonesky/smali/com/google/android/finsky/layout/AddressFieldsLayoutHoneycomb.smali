@@ -69,7 +69,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -80,8 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -92,9 +89,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/AddressFieldsLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -210,7 +204,6 @@
 
 .method private invokeOnHeightChanged(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AddressFieldsLayoutHoneycomb;->mOnHeightChangedListener:Lcom/google/android/finsky/layout/OnHeightOffsetChangedListener;
 
@@ -255,7 +248,6 @@
 
 .method private setChildrenViewVisibility(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/google/android/finsky/layout/AddressFieldsLayoutHoneycomb;->mFieldContainer:Landroid/widget/LinearLayout;
 
@@ -386,14 +378,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v3, 0x4
 
@@ -507,21 +497,18 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 8
-    .param p1    # Landroid/animation/ValueAnimator;
 
     const/high16 v7, 0x3f800000
 
@@ -686,8 +673,6 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -768,7 +753,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Landroid/os/Bundle;
 
@@ -829,10 +813,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/layout/AddressFieldsLayout;->onSizeChanged(IIII)V
 
@@ -1007,7 +987,6 @@
 
 .method public setOnHeightOffsetChangedListener(Lcom/google/android/finsky/layout/OnHeightOffsetChangedListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/OnHeightOffsetChangedListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/AddressFieldsLayoutHoneycomb;->mOnHeightChangedListener:Lcom/google/android/finsky/layout/OnHeightOffsetChangedListener;
 

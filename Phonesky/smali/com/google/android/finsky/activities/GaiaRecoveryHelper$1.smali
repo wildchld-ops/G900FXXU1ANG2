@@ -38,7 +38,6 @@
 # virtual methods
 .method protected varargs doInBackground([Landroid/content/Context;)Landroid/app/PendingIntent;
     .locals 6
-    .param p1    # [Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -95,7 +94,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/content/Context;
 
@@ -108,7 +106,6 @@
 
 .method protected onPostExecute(Landroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     # setter for: Lcom/google/android/finsky/activities/GaiaRecoveryHelper;->sGaiaAuthIntent:Landroid/app/PendingIntent;
     invoke-static {p1}, Lcom/google/android/finsky/activities/GaiaRecoveryHelper;->access$102(Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
@@ -118,7 +115,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/app/PendingIntent;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/contacts/detail/ContactLoaderFragment;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactLoaderFragment$6;->this$0:Lcom/android/contacts/detail/ContactLoaderFragment;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     # getter for: Lcom/android/contacts/detail/ContactLoaderFragment;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/contacts/detail/ContactLoaderFragment;->access$000()Ljava/lang/String;

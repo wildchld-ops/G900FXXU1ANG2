@@ -36,7 +36,6 @@
 # virtual methods
 .method public onWindowFocusChanged(Z)V
     .locals 12
-    .param p1    # Z
 
     const/16 v11, 0x30
 

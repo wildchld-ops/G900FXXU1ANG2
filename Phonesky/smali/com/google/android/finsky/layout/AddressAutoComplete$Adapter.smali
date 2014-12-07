@@ -45,8 +45,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/layout/AddressAutoComplete;Landroid/content/Context;I)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;->this$0:Lcom/google/android/finsky/layout/AddressAutoComplete;
 
@@ -57,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;->mPredictions:Ljava/util/List;
 
@@ -66,8 +63,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;->mPredictions:Ljava/util/List;
 
@@ -114,7 +109,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;->getItem(I)Ljava/lang/String;
 
@@ -125,7 +119,6 @@
 
 .method public getItem(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AddressAutoComplete$Adapter;->mPredictions:Ljava/util/List;
 

@@ -62,7 +62,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v0, -0x1
 
@@ -105,7 +104,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/mms/transaction/ReservationManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/ReservationManager"
 
@@ -131,7 +129,6 @@
 
 .method private getWhere(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableDelaySending()Z
 
@@ -172,9 +169,6 @@
 
 .method private makeAlarmIntent(Ljava/lang/String;JI)Landroid/app/PendingIntent;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     const-string v2, "Mms/ReservationManager"
 
@@ -260,10 +254,6 @@
 
 .method private registerAlarm(Ljava/lang/String;JJI)V
     .locals 25
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     const-string v2, "Mms/ReservationManager"
 
@@ -672,11 +662,6 @@
 # virtual methods
 .method public addMms(Lcom/google/android/mms/pdu/PduPersister;Lcom/google/android/mms/pdu/SendReq;Lcom/android/mms/model/SlideshowModel;JI)J
     .locals 13
-    .param p1    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p2    # Lcom/google/android/mms/pdu/SendReq;
-    .param p3    # Lcom/android/mms/model/SlideshowModel;
-    .param p4    # J
-    .param p6    # I
 
     const-string v1, "Mms/ReservationManager"
 
@@ -759,14 +744,6 @@
 
 .method public addSms(JLjava/lang/String;Ljava/lang/String;JZZII)J
     .locals 14
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # I
-    .param p10    # I
 
     const-string v1, "Mms/ReservationManager"
 
@@ -953,9 +930,6 @@
 
 .method public cancelAlarm(Ljava/lang/String;JI)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     const-wide/16 v3, -0x1
 
@@ -1201,7 +1175,6 @@
 
 .method public getServiceState(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -1853,10 +1826,6 @@
 
 .method public setAlarm(Ljava/lang/String;JJI)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     const-string v1, "Mms/ReservationManager"
 

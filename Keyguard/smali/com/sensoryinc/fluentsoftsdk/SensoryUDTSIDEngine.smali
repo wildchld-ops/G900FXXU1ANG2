@@ -78,8 +78,6 @@
 
 .method public checkResultEnroll(SS)I
     .locals 3
-    .param p1    # S
-    .param p2    # S
 
     iget-wide v1, p0, Lcom/sensoryinc/fluentsoftsdk/SensoryUDTSIDEngine;->m_lSessionValue:J
 
@@ -140,8 +138,6 @@
 
 .method public consistencyCheckEnroll(S[S)I
     .locals 7
-    .param p1    # S
-    .param p2    # [S
 
     iget-wide v3, p0, Lcom/sensoryinc/fluentsoftsdk/SensoryUDTSIDEngine;->m_lSessionValue:J
 
@@ -260,8 +256,6 @@
 
 .method public doEnrollModel(Ljava/lang/String;S)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     const-string v1, "SensoryUDTSIDEngine"
 
@@ -366,8 +360,6 @@
 
 .method public loadModels(Ljava/lang/String;S)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     const-wide/16 v10, 0x0
 
@@ -514,8 +506,6 @@
 
 .method public processEnroll([SI)I
     .locals 6
-    .param p1    # [S
-    .param p2    # I
 
     iget-wide v0, p0, Lcom/sensoryinc/fluentsoftsdk/SensoryUDTSIDEngine;->m_lSessionValue:J
 
@@ -554,10 +544,6 @@
 
 .method public processVerify([SILjava/lang/String;[S)I
     .locals 8
-    .param p1    # [S
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [S
 
     const/4 v7, 0x0
 
@@ -662,7 +648,6 @@
 
 .method public setSessionValue(J)V
     .locals 5
-    .param p1    # J
 
     const-wide/16 v3, 0x0
 

@@ -53,7 +53,6 @@
 
 .method setKey(Ljava/lang/String;)Lcom/android/i18n/addressinput/RegionData$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Key should not be null."
 
@@ -69,7 +68,6 @@
 
 .method setName(Ljava/lang/String;)Lcom/android/i18n/addressinput/RegionData$Builder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/RegionData$Builder;->mData:Lcom/android/i18n/addressinput/RegionData;
 

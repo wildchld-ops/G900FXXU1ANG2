@@ -79,7 +79,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -97,7 +96,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lorg/keyczar/enums/RsaPadding;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lorg/keyczar/enums/RsaPadding;
 
@@ -128,7 +126,6 @@
 # virtual methods
 .method public computeFullHash(Ljava/security/interfaces/RSAPublicKey;)[B
     .locals 5
-    .param p1    # Ljava/security/interfaces/RSAPublicKey;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

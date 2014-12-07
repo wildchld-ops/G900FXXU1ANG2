@@ -114,7 +114,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "android.intent.action.INSERT_OR_EDIT_FOR_HELP"
 

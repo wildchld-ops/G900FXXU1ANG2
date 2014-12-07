@@ -58,8 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/usb/IUsbManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/usb/IUsbManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,8 +70,6 @@
 
 .method private static propertyContainsFunction(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x2c
 
@@ -340,7 +336,6 @@
 
 .method public hasPermission(Landroid/hardware/usb/UsbAccessory;)Z
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -370,7 +365,6 @@
 
 .method public hasPermission(Landroid/hardware/usb/UsbDevice;)Z
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -400,7 +394,6 @@
 
 .method public isFunctionEnabled(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "sys.usb.config"
 
@@ -543,7 +536,6 @@
 
 .method public openAccessory(Landroid/hardware/usb/UsbAccessory;)Landroid/os/ParcelFileDescriptor;
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -573,7 +565,6 @@
 
 .method public openDevice(Landroid/hardware/usb/UsbDevice;)Landroid/hardware/usb/UsbDeviceConnection;
     .locals 7
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     :try_start_0
     invoke-virtual {p1}, Landroid/hardware/usb/UsbDevice;->getDeviceName()Ljava/lang/String;
@@ -622,8 +613,6 @@
 
 .method public requestPermission(Landroid/hardware/usb/UsbAccessory;Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Landroid/app/PendingIntent;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -655,8 +644,6 @@
 
 .method public requestPermission(Landroid/hardware/usb/UsbDevice;Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Landroid/app/PendingIntent;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -688,7 +675,6 @@
 
 .method public restoreCurrentFunctions(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -714,7 +700,6 @@
 
 .method public saveCurrentFunctions(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -740,8 +725,6 @@
 
 .method public setCurrentFunction(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v1, "UsbManager"
 
@@ -813,7 +796,6 @@
 
 .method public setMassStorageBackingFile(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/usb/UsbManager;->mService:Landroid/hardware/usb/IUsbManager;
@@ -839,7 +821,6 @@
 
 .method public setUsb30Mode(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "UsbManager"
 

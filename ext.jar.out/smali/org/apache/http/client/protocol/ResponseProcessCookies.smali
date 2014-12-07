@@ -31,7 +31,6 @@
 
 .method private cookieToString(Lorg/apache/http/cookie/Cookie;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lorg/apache/http/cookie/Cookie;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -134,10 +133,6 @@
 
 .method private processCookies(Lorg/apache/http/HeaderIterator;Lorg/apache/http/cookie/CookieSpec;Lorg/apache/http/cookie/CookieOrigin;Lorg/apache/http/client/CookieStore;)V
     .locals 8
-    .param p1    # Lorg/apache/http/HeaderIterator;
-    .param p2    # Lorg/apache/http/cookie/CookieSpec;
-    .param p3    # Lorg/apache/http/cookie/CookieOrigin;
-    .param p4    # Lorg/apache/http/client/CookieStore;
 
     :cond_0
     :goto_0
@@ -338,8 +333,6 @@
 # virtual methods
 .method public process(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V
     .locals 6
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

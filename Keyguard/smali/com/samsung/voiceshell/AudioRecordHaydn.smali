@@ -108,9 +108,6 @@
 
 .method public constructor <init>(Lcom/samsung/voiceshell/VoiceEngineResultListener;ZZ)V
     .locals 5
-    .param p1    # Lcom/samsung/voiceshell/VoiceEngineResultListener;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v4, 0x2
 
@@ -262,7 +259,6 @@
 
 .method public static SetRecordingMode(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->m_nRecordingMode:I
 
@@ -271,7 +267,6 @@
 
 .method static synthetic access$000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget-object v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
 
@@ -280,7 +275,6 @@
 
 .method static synthetic access$100(Lcom/samsung/voiceshell/AudioRecordHaydn;)Lcom/samsung/voiceshell/VoiceEngineResultListener;
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget-object v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
@@ -289,7 +283,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget-boolean v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->isCustomVoiceTalkEnable:Z
 
@@ -298,7 +291,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->processedSample:I
 
@@ -307,8 +299,6 @@
 
 .method static synthetic access$1102(Lcom/samsung/voiceshell/AudioRecordHaydn;I)I
     .locals 0
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->processedSample:I
 
@@ -317,7 +307,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
 
@@ -326,8 +315,6 @@
 
 .method static synthetic access$1202(Lcom/samsung/voiceshell/AudioRecordHaydn;I)I
     .locals 0
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->oldrms:I
 
@@ -352,7 +339,6 @@
 
 .method static synthetic access$200(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget-boolean v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->isRunning_all:Z
 
@@ -361,7 +347,6 @@
 
 .method static synthetic access$300(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget-boolean v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
 
@@ -370,8 +355,6 @@
 
 .method static synthetic access$302(Lcom/samsung/voiceshell/AudioRecordHaydn;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->isRecording:Z
 
@@ -380,7 +363,6 @@
 
 .method static synthetic access$400(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
 
@@ -389,8 +371,6 @@
 
 .method static synthetic access$402(Lcom/samsung/voiceshell/AudioRecordHaydn;I)I
     .locals 0
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->readLength:I
 
@@ -399,7 +379,6 @@
 
 .method static synthetic access$500(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->readSize:I
 
@@ -408,7 +387,6 @@
 
 .method static synthetic access$600(Lcom/samsung/voiceshell/AudioRecordHaydn;)Z
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget-boolean v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->weHaveNoModel:Z
 
@@ -425,7 +403,6 @@
 
 .method static synthetic access$702(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->m_nRecordingMode:I
 
@@ -434,7 +411,6 @@
 
 .method static synthetic access$800(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
 
@@ -443,7 +419,6 @@
 
 .method static synthetic access$900(Lcom/samsung/voiceshell/AudioRecordHaydn;)I
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/AudioRecordHaydn;
 
     iget v0, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
 
@@ -753,8 +728,6 @@
 # virtual methods
 .method public SendHandlerMessage(IS)V
     .locals 5
-    .param p1    # I
-    .param p2    # S
 
     iget-object v2, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->TAG:Ljava/lang/String;
 
@@ -1021,7 +994,6 @@
 
 .method public rmsSendHandlerMessage(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->handler:Landroid/os/Handler;
 
@@ -1048,7 +1020,6 @@
 
 .method public setAdaptation(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -1126,7 +1097,6 @@
 
 .method public setConsoleInitReturn(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->consoleInitReturn:J
 
@@ -1135,7 +1105,6 @@
 
 .method public setCustomVoiceTalkFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->isCustomVoiceTalkEnable:Z
 
@@ -1144,7 +1113,6 @@
 
 .method public setSampleRate(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->sampleRate:I
 
@@ -1153,7 +1121,6 @@
 
 .method public setVoiceEngineResultListener(Lcom/samsung/voiceshell/VoiceEngineResultListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
     iput-object p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
@@ -1162,7 +1129,6 @@
 
 .method public setWakeUpType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->mWakeUpType:I
 
@@ -1171,7 +1137,6 @@
 
 .method public setWeHaveNoModel(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->weHaveNoModel:Z
 
@@ -1180,7 +1145,6 @@
 
 .method public spectrumSendHandlerMessage([I)V
     .locals 3
-    .param p1    # [I
 
     iget-object v2, p0, Lcom/samsung/voiceshell/AudioRecordHaydn;->handler:Landroid/os/Handler;
 

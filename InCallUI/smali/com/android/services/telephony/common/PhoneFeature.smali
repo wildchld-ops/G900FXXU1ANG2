@@ -128,7 +128,6 @@
 
 .method public static hasFeature(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -524,7 +523,6 @@
 
 .method public static hasSensorHub(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -883,7 +881,6 @@
 
 .method public static makeFeature(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/services/telephony/common/PhoneFeature;->mContext:Landroid/content/Context;
 

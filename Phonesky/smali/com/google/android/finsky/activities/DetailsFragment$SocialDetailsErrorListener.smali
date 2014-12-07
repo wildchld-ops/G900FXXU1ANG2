@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/activities/DetailsFragment;Lcom/google/android/finsky/activities/DetailsFragment$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/activities/DetailsFragment;
-    .param p2    # Lcom/google/android/finsky/activities/DetailsFragment$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/DetailsFragment$SocialDetailsErrorListener;-><init>(Lcom/google/android/finsky/activities/DetailsFragment;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 5
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v4, 0x1
 

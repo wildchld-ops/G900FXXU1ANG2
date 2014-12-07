@@ -149,7 +149,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/UrlBasedPageFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -207,7 +206,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -339,7 +337,6 @@
 
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsDataBasedFragment;->mSavedInstanceState:Landroid/os/Bundle;
 
@@ -528,7 +525,6 @@
 
 .method protected setInitialDocument(Lcom/google/android/finsky/api/model/Document;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const-string v0, "finsky.DetailsDataBasedFragment.document"
 
@@ -539,7 +535,6 @@
 
 .method protected updateDocument(Lcom/google/android/finsky/api/model/Document;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/DetailsDataBasedFragment;->mDocument:Lcom/google/android/finsky/api/model/Document;
 

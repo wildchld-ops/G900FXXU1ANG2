@@ -223,7 +223,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v5, 0x3
 
@@ -444,7 +443,6 @@
 
 .method private processDeviceValidateRequest(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p1, Lcom/nuance/connect/service/comm/Response;->parameters:Ljava/util/HashMap;
 
@@ -462,7 +460,6 @@
 
 .method private processRegisterDeviceAckResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v3, 0x0
 
@@ -629,7 +626,6 @@
 
 .method private processRegisterDeviceResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v3, 0x3
 
@@ -760,7 +756,6 @@
 
 .method private processRequestConfigurationResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 14
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v13, 0x1
 
@@ -1289,7 +1284,6 @@
 
 .method private processRequestSwyperIdResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     sget-object v0, Lcom/nuance/connect/internal/common/InternalMessages;->MESSAGE_COMMAND_DEVICE_GET_SWYPER:Lcom/nuance/connect/internal/common/InternalMessages;
 
@@ -1349,7 +1343,6 @@
 
 .method private processUpdateDeviceRegistrationResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     sget-object v3, Lcom/nuance/connect/internal/common/InternalMessages;->MESSAGE_COMMAND_DEVICE_UPDATE:Lcom/nuance/connect/internal/common/InternalMessages;
 
@@ -1484,7 +1477,6 @@
 
 .method private processValidateDeviceRegistrationResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     sget-object v0, Lcom/nuance/connect/internal/common/InternalMessages;->MESSAGE_COMMAND_DEVICE_VALIDATE:Lcom/nuance/connect/internal/common/InternalMessages;
 
@@ -1751,8 +1743,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -1890,7 +1880,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/DeviceManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2029,7 +2018,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 

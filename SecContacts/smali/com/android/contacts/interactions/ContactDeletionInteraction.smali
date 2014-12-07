@@ -93,7 +93,6 @@
 
 .method private setFinishActivityWhenDone(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/interactions/ContactDeletionInteraction;->mFinishActivityWhenDone:Z
 
@@ -102,7 +101,6 @@
 
 .method private setTestLoaderManager(Lcom/android/contacts/interactions/TestLoaderManager;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/interactions/TestLoaderManager;
 
     iput-object p1, p0, Lcom/android/contacts/interactions/ContactDeletionInteraction;->mTestLoaderManager:Lcom/android/contacts/interactions/TestLoaderManager;
 
@@ -111,8 +109,6 @@
 
 .method private showDialog(ILandroid/net/Uri;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -169,9 +165,6 @@
 
 .method public static start(Landroid/app/Activity;Landroid/net/Uri;Z)Lcom/android/contacts/interactions/ContactDeletionInteraction;
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -184,10 +177,6 @@
 
 .method static startWithTestLoaderManager(Landroid/app/Activity;Landroid/net/Uri;ZLcom/android/contacts/interactions/TestLoaderManager;)Lcom/android/contacts/interactions/ContactDeletionInteraction;
     .locals 4
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Lcom/android/contacts/interactions/TestLoaderManager;
 
     if-nez p1, :cond_0
 
@@ -249,7 +238,6 @@
 # virtual methods
 .method protected doDeleteContact(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/interactions/ContactDeletionInteraction;->mContext:Landroid/content/Context;
 
@@ -314,7 +302,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -352,7 +339,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -363,8 +349,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -443,7 +427,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v0, 0x0
 
@@ -458,7 +441,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 25
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -865,8 +847,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -892,7 +872,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -967,7 +946,6 @@
 
 .method public setContactUri(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/interactions/ContactDeletionInteraction;->mContactUri:Landroid/net/Uri;
 

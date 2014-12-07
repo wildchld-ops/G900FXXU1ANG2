@@ -58,7 +58,6 @@
 # virtual methods
 .method public onFailure(Ljava/lang/Throwable;)V
     .locals 3
-    .param p1    # Ljava/lang/Throwable;
 
     const-string v0, "CacheData"
 
@@ -128,7 +127,6 @@
 
 .method public onSuccess(Lcom/android/i18n/addressinput/JsoMap;)V
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/JsoMap;
 
     iget-object v1, p0, Lcom/android/i18n/addressinput/CacheData$2;->val$handler:Lcom/android/i18n/addressinput/CacheData$JsonHandler;
 
@@ -159,7 +157,6 @@
 
 .method public bridge synthetic onSuccess(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/i18n/addressinput/JsoMap;
 

@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Lsstream/lib/covers/MessengerProvider;Landroid/os/Bundle;Lsstream/lib/covers/StreamUpdateListener;Z)V
     .locals 0
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Lsstream/lib/covers/StreamUpdateListener;
-    .param p4    # Z
 
     iput-object p1, p0, Lsstream/lib/covers/MessengerProvider$Request;->this$0:Lsstream/lib/covers/MessengerProvider;
 

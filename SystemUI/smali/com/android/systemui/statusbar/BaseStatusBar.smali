@@ -288,7 +288,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/BaseStatusBar;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar;->mDeviceProvisioned:Z
 
@@ -297,8 +296,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/BaseStatusBar;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/BaseStatusBar;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar;->mDeviceProvisioned:Z
 
@@ -307,7 +304,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/BaseStatusBar;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/BaseStatusBar;->FlipFontSwitched()V
 
@@ -316,8 +312,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/BaseStatusBar;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/BaseStatusBar;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/BaseStatusBar;->handleTimeout(I)V
 
@@ -326,8 +320,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/BaseStatusBar;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/BaseStatusBar;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/BaseStatusBar;->startApplicationDetailsActivity(Ljava/lang/String;)V
 
@@ -336,8 +328,6 @@
 
 .method private addNotificationViews(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/systemui/statusbar/BaseStatusBar;->createNotificationViews(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)Lcom/android/systemui/statusbar/NotificationData$Entry;
 
@@ -422,7 +412,6 @@
 
 .method private handleTimeout(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -627,8 +616,6 @@
 
 .method static sendCloseSystemWindows(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/app/ActivityManagerNative;->isSystemReady()Z
 
@@ -657,7 +644,6 @@
 
 .method public static setIsNetworkAvailable(Z)V
     .locals 3
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/systemui/statusbar/BaseStatusBar;->isNetworkAvailable:Z
 
@@ -690,7 +676,6 @@
 
 .method private startApplicationDetailsActivity(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -737,8 +722,6 @@
 
 .method private updateNotificationViews(Lcom/android/systemui/statusbar/NotificationData$Entry;Landroid/service/notification/StatusBarNotification;)V
     .locals 7
-    .param p1    # Lcom/android/systemui/statusbar/NotificationData$Entry;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     invoke-virtual {p2}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
@@ -964,7 +947,6 @@
 # virtual methods
 .method protected addNotificationViews(Lcom/android/systemui/statusbar/NotificationData$Entry;)V
     .locals 2
-    .param p1    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     if-nez p1, :cond_0
 
@@ -993,8 +975,6 @@
 
 .method protected applyLegacyRowBackground(Landroid/service/notification/StatusBarNotification;Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/service/notification/StatusBarNotification;
-    .param p2    # Landroid/view/View;
 
     const v6, 0x7f020177
 
@@ -1087,7 +1067,6 @@
 
 .method public blockRecentWindow(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar;->mBlockRecents:Z
 
@@ -1155,8 +1134,6 @@
 
 .method protected createNotificationViews(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)Lcom/android/systemui/statusbar/NotificationData$Entry;
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     const/4 v9, 0x0
 
@@ -1443,9 +1420,6 @@
 
 .method handleNotificationError(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/BaseStatusBar;->removeNotification(Landroid/os/IBinder;)V
 
@@ -1527,8 +1501,6 @@
 
 .method public inflateViews(Lcom/android/systemui/statusbar/NotificationData$Entry;Landroid/view/ViewGroup;)Z
     .locals 24
-    .param p1    # Lcom/android/systemui/statusbar/NotificationData$Entry;
-    .param p2    # Landroid/view/ViewGroup;
 
     move-object/from16 v0, p0
 
@@ -2003,8 +1975,6 @@
 
 .method protected isTopNotification(Landroid/view/ViewGroup;Lcom/android/systemui/statusbar/NotificationData$Entry;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     if-eqz p1, :cond_0
 
@@ -2029,10 +1999,6 @@
 
 .method public makeClicker(Landroid/app/PendingIntent;Ljava/lang/String;Ljava/lang/String;I)Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;
     .locals 6
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     new-instance v0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker;
 
@@ -2053,7 +2019,6 @@
 
 .method public notificationIsForCurrentUser(Landroid/service/notification/StatusBarNotification;)Z
     .locals 3
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     iget v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar;->mCurrentUserId:I
 
@@ -2081,7 +2046,6 @@
 
 .method protected notifyHeadsUpScreenOn(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -2101,7 +2065,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
@@ -2172,7 +2135,6 @@
 
 .method public pokeWakelock(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2298,7 +2260,6 @@
 
 .method protected removeNotificationViews(Landroid/os/IBinder;)Landroid/service/notification/StatusBarNotification;
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar;->mNotificationData:Lcom/android/systemui/statusbar/NotificationData;
 
@@ -2368,15 +2329,12 @@
 
 .method public setInteracting(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public setMaxBrightness(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -2386,7 +2344,6 @@
 
 .method protected shouldInterrupt(Landroid/service/notification/StatusBarNotification;)Z
     .locals 12
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     const/4 v8, 0x0
 
@@ -2557,7 +2514,6 @@
 
 .method protected showNotificationEvenIfUnprovisioned(Landroid/service/notification/StatusBarNotification;)Z
     .locals 7
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     const/4 v4, 0x1
 
@@ -3299,8 +3255,6 @@
 
 .method public updateNotification(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 26
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     move-object/from16 v0, p0
 
@@ -3877,8 +3831,6 @@
 
 .method protected updateNotificationVetoButton(Landroid/view/View;Landroid/service/notification/StatusBarNotification;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     const v4, 0x7f080085
 
@@ -4038,14 +3990,12 @@
 
 .method public userSwitched(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected visibilityChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar;->mPanelSlightlyVisible:Z
 
@@ -4072,7 +4022,6 @@
 
 .method protected workAroundBadLayerDrawableOpacity(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method

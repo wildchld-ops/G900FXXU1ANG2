@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPDialog;Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 1
-    .param p2    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 

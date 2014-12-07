@@ -105,7 +105,6 @@
 # virtual methods
 .method public onAllocatingSoon(I)V
     .locals 2
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/utils/TentativeGcRunner;->mEnabled:Z
 

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/entity/ContentLengthStrategy;)V
     .locals 2
-    .param p1    # Lorg/apache/http/entity/ContentLengthStrategy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method protected doSerialize(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/HttpMessage;)Ljava/io/OutputStream;
     .locals 4
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # Lorg/apache/http/HttpMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -85,9 +82,6 @@
 
 .method public serialize(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/HttpMessage;Lorg/apache/http/HttpEntity;)V
     .locals 3
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # Lorg/apache/http/HttpMessage;
-    .param p3    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

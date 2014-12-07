@@ -28,7 +28,6 @@
 # virtual methods
 .method public setAccountDisplayLabel(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/samsung/contacts/detail/LinkedContactEntry;->accountType:Ljava/lang/String;
 

@@ -24,7 +24,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public static getSDPFieldName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -86,7 +84,6 @@
 
 .method public static isAlpha(C)Z
     .locals 3
-    .param p0    # C
 
     const/4 v0, 0x1
 
@@ -146,7 +143,6 @@
 
 .method public static isAlphaDigit(C)Z
     .locals 3
-    .param p0    # C
 
     const/4 v0, 0x1
 
@@ -221,7 +217,6 @@
 
 .method public static isDigit(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x7f
 
@@ -255,7 +250,6 @@
 
 .method public static isHexDigit(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x41
 
@@ -307,7 +301,6 @@
 
 .method public consume(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lgov/nist/core/StringTokenizer;->ptr:I
 
@@ -480,7 +473,6 @@
 
 .method public getNextToken(C)Ljava/lang/String;
     .locals 5
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -566,7 +558,6 @@
 
 .method public lookAhead(I)C
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

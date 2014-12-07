@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/MenuAppsGrid$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateEdit;-><init>(Lcom/android/launcher2/MenuAppsGrid;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public enter(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 10
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -234,7 +231,6 @@
 
 .method public exit(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 6
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -352,8 +348,6 @@
 
 .method public onClickAppItem(Lcom/android/launcher2/AppItem;Landroid/view/View;)Z
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/launcher2/MenuAppsGrid$StateEdit;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -381,8 +375,6 @@
 
 .method public preOpenFolder(Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/Folder;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Lcom/android/launcher2/Folder;
 
     new-instance v0, Lcom/android/launcher2/MenuAppsGrid$StateEdit$1;
 

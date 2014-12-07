@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/detail/ContactHistoryDialogFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryDialogFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/ContactHistoryDialogFragment;->mChecked:Z
 
@@ -35,8 +34,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/detail/ContactHistoryDialogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryDialogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/ContactHistoryDialogFragment;->mChecked:Z
 
@@ -45,7 +42,6 @@
 
 .method private static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -56,7 +52,6 @@
 
 .method public static setDoNotShowAgainDialog(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/detail/ContactHistoryDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -81,7 +76,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/app/Fragment;)V
     .locals 6
-    .param p0    # Landroid/app/FragmentManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -163,7 +157,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 

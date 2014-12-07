@@ -254,11 +254,6 @@
 
 .method public constructor <init>(ILjava/lang/String;III)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, -0x1
 
@@ -361,12 +356,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;III)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v4, 0x0
 
@@ -477,7 +466,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PersonaInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const/4 v4, 0x0
 
@@ -732,7 +720,6 @@
 
 .method public constructor <init>(Landroid/content/pm/UserInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/UserInfo;
 
     const/4 v4, 0x0
 
@@ -863,7 +850,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v6, 0x0
 
@@ -1268,8 +1254,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/PersonaInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/PersonaInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PersonaInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -1433,7 +1417,6 @@
 
 .method public getSdpProcessInfoWL(Ljava/lang/String;)Landroid/content/pm/SdpProcessInfo;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1724,8 +1707,6 @@
 
 .method public isSdpWhiteListed(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1841,7 +1822,6 @@
 
 .method public setAdminPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->adminPackageName:Ljava/lang/String;
 
@@ -1850,7 +1830,6 @@
 
 .method public setAdminUid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->adminUid:I
 
@@ -1859,7 +1838,6 @@
 
 .method public setBridgeSyncing(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->mBridgeSyncing:I
 
@@ -1868,7 +1846,6 @@
 
 .method public setCreatorUid(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "PersonaInfo"
 
@@ -1911,7 +1888,6 @@
 
 .method public setHandlerApkLocation(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->handlerApkLocation:Ljava/lang/String;
 
@@ -1920,7 +1896,6 @@
 
 .method public setHandlerPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->handlerPackageName:Ljava/lang/String;
 
@@ -1929,7 +1904,6 @@
 
 .method public setHandlerServiceName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->handlerServiceName:Ljava/lang/String;
 
@@ -1972,7 +1946,6 @@
 
 .method public setPartitionUpgrading(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/pm/PersonaInfo;->mPartitionUpgrading:Z
 
@@ -1981,7 +1954,6 @@
 
 .method public setSdpActive(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "PersonaInfo"
 
@@ -2070,7 +2042,6 @@
 
 .method public setSetupWizardApkLocation(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PersonaInfo"
 
@@ -2101,7 +2072,6 @@
 
 .method public setType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->type:Ljava/lang/String;
 
@@ -2110,7 +2080,6 @@
 
 .method public setsamsungAccount(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->samsungAccount:Ljava/lang/String;
 
@@ -2179,8 +2148,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

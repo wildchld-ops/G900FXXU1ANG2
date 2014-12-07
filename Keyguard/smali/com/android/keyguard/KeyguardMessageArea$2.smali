@@ -33,7 +33,6 @@
 # virtual methods
 .method public onRefreshBatteryInfo(Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;)V
     .locals 5
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
 
     const/4 v2, 0x1
 
@@ -115,7 +114,6 @@
 
 .method public onScreenTurnedOff(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMessageArea$2;->this$0:Lcom/android/keyguard/KeyguardMessageArea;
 

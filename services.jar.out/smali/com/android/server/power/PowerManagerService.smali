@@ -1166,7 +1166,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/power/PowerManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mNoUserActivitySent:Z
 
@@ -1175,8 +1174,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/power/PowerManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService;->mNoUserActivitySent:Z
 
@@ -1185,7 +1182,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/power/PowerManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -1194,7 +1190,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/power/PowerManagerService;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mUserActivityIntent:Landroid/content/Intent;
 
@@ -1203,7 +1198,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/power/PowerManagerService;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mNoUserActivityIntent:Landroid/content/Intent;
 
@@ -1212,7 +1206,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -1221,7 +1214,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->updateSettingsLocked()V
 
@@ -1230,8 +1222,6 @@
 
 .method static synthetic access$1776(Lcom/android/server/power/PowerManagerService;I)I
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/power/PowerManagerService;->mDirty:I
 
@@ -1244,7 +1234,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->updatePowerStateLocked()V
 
@@ -1253,8 +1242,6 @@
 
 .method static synthetic access$2402(Lcom/android/server/power/PowerManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService;->mProximityPositive:Z
 
@@ -1263,8 +1250,6 @@
 
 .method static synthetic access$2584(Lcom/android/server/power/PowerManagerService;Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1291,9 +1276,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/power/PowerManagerService;JI)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/power/PowerManagerService;->goToSleepNoUpdateLocked(JI)Z
 
@@ -1304,8 +1286,6 @@
 
 .method static synthetic access$2784(Lcom/android/server/power/PowerManagerService;Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1332,8 +1312,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/power/PowerManagerService;J)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/power/PowerManagerService;->wakeUpNoUpdateLocked(J)Z
 
@@ -1344,7 +1322,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/power/PowerManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->getDebugLevel()I
 
@@ -1355,7 +1332,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/power/SuspendBlocker;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mAutoPowerOffSuspendBlocker:Lcom/android/server/power/SuspendBlocker;
 
@@ -1364,8 +1340,6 @@
 
 .method static synthetic access$3102(Lcom/android/server/power/PowerManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService;->mMonitorEnabled:Z
 
@@ -1374,8 +1348,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/power/PowerManagerService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/PowerManagerService;->handleBatteryStateChangedLocked(Landroid/content/Intent;)V
 
@@ -1384,7 +1356,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->startWatchingForBootAnimationFinished()V
 
@@ -1393,7 +1364,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->scheduleSandmanLocked()V
 
@@ -1402,7 +1372,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->handleSettingsChangedLocked()V
 
@@ -1411,7 +1380,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/power/PowerManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget v0, p0, Lcom/android/server/power/PowerManagerService;->mDockState:I
 
@@ -1420,8 +1388,6 @@
 
 .method static synthetic access$3602(Lcom/android/server/power/PowerManagerService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/power/PowerManagerService;->mDockState:I
 
@@ -1430,7 +1396,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mAutoPowerOffLock:Ljava/lang/Object;
 
@@ -1439,7 +1404,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/power/PowerManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mShutdownByAutoPowerOff:Z
 
@@ -1448,11 +1412,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/power/PowerManagerService;ZZLjava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/power/PowerManagerService;->shutdownOrRebootInternal(ZZLjava/lang/String;Z)V
 
@@ -1461,7 +1420,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->handleUserActivityTimeout()V
 
@@ -1470,7 +1428,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->handleSandman()V
 
@@ -1479,7 +1436,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->handleScreenOnBlockerReleased()V
 
@@ -1488,7 +1444,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->checkIfBootAnimationFinished()V
 
@@ -1497,7 +1452,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->handleAutoPowerOffTime()V
 
@@ -1506,7 +1460,6 @@
 
 .method static synthetic access$4500(Landroid/os/WorkSource;)Landroid/os/WorkSource;
     .locals 1
-    .param p0    # Landroid/os/WorkSource;
 
     invoke-static {p0}, Lcom/android/server/power/PowerManagerService;->copyWorkSource(Landroid/os/WorkSource;)Landroid/os/WorkSource;
 
@@ -1517,8 +1470,6 @@
 
 .method static synthetic access$4600(Lcom/android/server/power/PowerManagerService;Lcom/android/server/power/PowerManagerService$WakeLock;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/PowerManagerService;->handleWakeLockDeath(Lcom/android/server/power/PowerManagerService$WakeLock;)V
 
@@ -1527,7 +1478,6 @@
 
 .method static synthetic access$4700(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/power/PowerManagerService;->nativeReleaseSuspendBlocker(Ljava/lang/String;)V
 
@@ -1536,7 +1486,6 @@
 
 .method static synthetic access$4800(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/power/PowerManagerService;->nativeAcquireSuspendBlocker(Ljava/lang/String;)V
 
@@ -1545,7 +1494,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->doFakeShutdown()V
 
@@ -1554,7 +1502,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/power/PowerManagerService$PowerManagerHandler;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mHandler:Lcom/android/server/power/PowerManagerService$PowerManagerHandler;
 
@@ -1563,7 +1510,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mLockBlankUnblankDisplay:Ljava/lang/Object;
 
@@ -1572,7 +1518,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/power/PowerManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mPendingUpdateBlankUnblankDisplay:Z
 
@@ -1581,8 +1526,6 @@
 
 .method static synthetic access$5202(Lcom/android/server/power/PowerManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService;->mPendingUpdateBlankUnblankDisplay:Z
 
@@ -1591,7 +1534,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/power/PowerManagerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mHandlerBlankUnblankDisplay:Landroid/os/Handler;
 
@@ -1600,7 +1542,6 @@
 
 .method static synthetic access$5500(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Lcom/android/server/power/PowerManagerService;->nativeSetInteractive(Z)V
 
@@ -1609,7 +1550,6 @@
 
 .method static synthetic access$5600(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/display/DisplayManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mDisplayManagerService:Lcom/android/server/display/DisplayManagerService;
 
@@ -1618,7 +1558,6 @@
 
 .method static synthetic access$5700(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Lcom/android/server/power/PowerManagerService;->nativeSetAutoSuspend(Z)V
 
@@ -1627,8 +1566,6 @@
 
 .method static synthetic access$5802(Lcom/android/server/power/PowerManagerService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/power/PowerManagerService;->mNativeUserActivityCount:I
 
@@ -1637,7 +1574,6 @@
 
 .method static synthetic access$5900(Lcom/android/server/power/PowerManagerService;)J
     .locals 2
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-wide v0, p0, Lcom/android/server/power/PowerManagerService;->mDelayTimePrintWakeLock:J
 
@@ -1646,8 +1582,6 @@
 
 .method static synthetic access$5902(Lcom/android/server/power/PowerManagerService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/power/PowerManagerService;->mDelayTimePrintWakeLock:J
 
@@ -1656,8 +1590,6 @@
 
 .method static synthetic access$5914(Lcom/android/server/power/PowerManagerService;J)J
     .locals 2
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/server/power/PowerManagerService;->mDelayTimePrintWakeLock:J
 
@@ -1670,7 +1602,6 @@
 
 .method static synthetic access$6000(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mPrintWakeLockAperiodicallyRunnable:Ljava/lang/Runnable;
 
@@ -1679,7 +1610,6 @@
 
 .method static synthetic access$6100(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/power/PowerManagerService$TimeMeasurement;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mTimeMeasurement:Lcom/android/server/power/PowerManagerService$TimeMeasurement;
 
@@ -1688,7 +1618,6 @@
 
 .method static synthetic access$6200(Lcom/android/server/power/PowerManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mForceDisableWakeLock:Z
 
@@ -1697,8 +1626,6 @@
 
 .method static synthetic access$6302(Lcom/android/server/power/PowerManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService;->mIsFakeShutdown:Z
 
@@ -1707,7 +1634,6 @@
 
 .method static synthetic access$6600(Lcom/android/server/power/PowerManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget v0, p0, Lcom/android/server/power/PowerManagerService;->mWakefulness:I
 
@@ -1716,7 +1642,6 @@
 
 .method static synthetic access$6700(Lcom/android/server/power/PowerManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mTouchKeyForceDisable:Z
 
@@ -1725,7 +1650,6 @@
 
 .method static synthetic access$6800(Lcom/android/server/power/PowerManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mTouchKeyForceDisableOverrideFromSystemPowerSaveMode:Z
 
@@ -1734,7 +1658,6 @@
 
 .method static synthetic access$6900(Lcom/android/server/power/PowerManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mIsReadyCoverFromPWM:Z
 
@@ -1743,8 +1666,6 @@
 
 .method static synthetic access$6902(Lcom/android/server/power/PowerManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService;->mIsReadyCoverFromPWM:Z
 
@@ -1753,8 +1674,6 @@
 
 .method static synthetic access$7000(Lcom/android/server/power/PowerManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/power/PowerManagerService;->handleSmartStay(Z)V
 
@@ -1763,7 +1682,6 @@
 
 .method static synthetic access$7100(Lcom/android/server/power/PowerManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->printWakeLockLocked()V
 
@@ -1772,13 +1690,6 @@
 
 .method private acquireWakeLockInternal(Landroid/os/IBinder;ILjava/lang/String;Ljava/lang/String;Landroid/os/WorkSource;II)V
     .locals 13
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/WorkSource;
-    .param p6    # I
-    .param p7    # I
 
     iget-object v12, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -2035,7 +1946,6 @@
 
 .method private applyWakeLockFlagsOnAcquireLocked(Lcom/android/server/power/PowerManagerService$WakeLock;)V
     .locals 3
-    .param p1    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mAutoPowerOffLock:Ljava/lang/Object;
 
@@ -2141,7 +2051,6 @@
 
 .method private applyWakeLockFlagsOnReleaseLocked(Lcom/android/server/power/PowerManagerService$WakeLock;)V
     .locals 6
-    .param p1    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     iget v0, p1, Lcom/android/server/power/PowerManagerService$WakeLock;->mFlags:I
 
@@ -2748,8 +2657,6 @@
 
 .method private checkWorkSourceObjectId(ILcom/android/server/power/PowerManagerService$WakeLock;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     const/4 v2, 0x0
 
@@ -2796,7 +2703,6 @@
 
 .method private static copyWorkSource(Landroid/os/WorkSource;)Landroid/os/WorkSource;
     .locals 1
-    .param p0    # Landroid/os/WorkSource;
 
     if-eqz p0, :cond_0
 
@@ -2815,7 +2721,6 @@
 
 .method private crashInternal(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Lcom/android/server/power/PowerManagerService$5;
 
@@ -2890,7 +2795,6 @@
 
 .method private createSuspendBlockerLocked(Ljava/lang/String;)Lcom/android/server/power/SuspendBlocker;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/server/power/PowerManagerService$SuspendBlockerImpl;
 
@@ -3020,7 +2924,6 @@
 
 .method private findWakeLockIndexLocked(Landroid/os/IBinder;)I
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mWakeLocks:Ljava/util/ArrayList;
 
@@ -3210,7 +3113,6 @@
 
 .method private getScreenDimDurationLocked(I)I
     .locals 5
-    .param p1    # I
 
     const/16 v0, 0x1b58
 
@@ -3363,8 +3265,6 @@
 
 .method private goToSleepFromNative(JI)V
     .locals 3
-    .param p1    # J
-    .param p3    # I
 
     const-string v0, "PowerManagerService"
 
@@ -3433,8 +3333,6 @@
 
 .method private goToSleepInternal(JI)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -3466,8 +3364,6 @@
 
 .method private goToSleepNoUpdateLocked(JI)Z
     .locals 9
-    .param p1    # J
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -3888,7 +3784,6 @@
 
 .method private handleBatteryStateChangedLocked(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string/jumbo v0, "status"
 
@@ -4323,7 +4218,6 @@
 
 .method private handleSmartStay(Z)V
     .locals 10
-    .param p1    # Z
 
     const-string v8, "PowerManagerService"
 
@@ -4569,7 +4463,6 @@
 
 .method private handleWakeLockDeath(Lcom/android/server/power/PowerManagerService$WakeLock;)V
     .locals 6
-    .param p1    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     const-string v1, "PowerManagerService"
 
@@ -4934,7 +4827,6 @@
 
 .method private isPreSmartStayNeeded(J)Z
     .locals 5
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -4971,7 +4863,6 @@
 
 .method private static isScreenLock(Lcom/android/server/power/PowerManagerService$WakeLock;)Z
     .locals 2
-    .param p0    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     iget v0, p0, Lcom/android/server/power/PowerManagerService$WakeLock;->mFlags:I
 
@@ -5044,7 +4935,6 @@
 
 .method private isSmartStayNeeded(J)Z
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/server/power/PowerManagerService;->mNextTimeoutForSmartStay:J
 
@@ -5095,7 +4985,6 @@
 
 .method private static isValidAutoBrightnessAdjustment(F)Z
     .locals 1
-    .param p0    # F
 
     const/high16 v0, -0x40800000
 
@@ -5122,7 +5011,6 @@
 
 .method private static isValidBrightness(I)Z
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -5143,7 +5031,6 @@
 
 .method private isWakeLockLevelSupportedInternal(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -5215,7 +5102,6 @@
 
 .method public static lowLevelReboot(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "PowerManagerService"
 
@@ -5336,7 +5222,6 @@
 
 .method private napInternal(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -5368,7 +5253,6 @@
 
 .method private napNoUpdateLocked(J)Z
     .locals 3
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -5485,7 +5369,6 @@
 
 .method private notifyWakeLockAcquiredLocked(Lcom/android/server/power/PowerManagerService$WakeLock;)V
     .locals 7
-    .param p1    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mSystemReady:Z
 
@@ -5517,7 +5400,6 @@
 
 .method private notifyWakeLockReleasedLocked(Lcom/android/server/power/PowerManagerService$WakeLock;)V
     .locals 7
-    .param p1    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService;->mSystemReady:Z
 
@@ -5553,8 +5435,6 @@
 
 .method private preventAutoPowerOffInternal(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/power/PowerManagerService;->mAutoPowerOffLock:Ljava/lang/Object;
 
@@ -6600,7 +6480,6 @@
 
 .method private readOneLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v3, ""
 
@@ -6942,8 +6821,6 @@
 
 .method private releaseWakeLockInternal(Landroid/os/IBinder;I)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7232,9 +7109,6 @@
 
 .method private resetAutoPowerOffTimerFromNative(JII)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/power/PowerManagerService;->resetAutoPowerOffTimerInternal(J)V
 
@@ -7243,7 +7117,6 @@
 
 .method private resetAutoPowerOffTimerInternal(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mAutoPowerOffLock:Ljava/lang/Object;
 
@@ -7340,7 +7213,6 @@
 
 .method private resetAutoPowerOffTimerNoUpdateLocked(J)Z
     .locals 5
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mAutoPowerOffLock:Ljava/lang/Object;
 
@@ -7482,8 +7354,6 @@
 
 .method private setAttentionLightInternal(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7518,7 +7388,6 @@
 
 .method private setButtonTimeoutOverrideFromWindowManagerInternal(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7580,7 +7449,6 @@
 
 .method private setMaximumScreenOffTimeoutFromDeviceAdminInternal(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7613,7 +7481,6 @@
 
 .method private setScreenBrightnessOverrideFromWindowManagerInternal(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7673,7 +7540,6 @@
 
 .method private setScreenDimDurationOverrideFromWindowManagerInternal(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7735,7 +7601,6 @@
 
 .method private setStayOnSettingInternal(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -7752,7 +7617,6 @@
 
 .method private setTemporaryScreenAutoBrightnessAdjustmentSettingOverrideInternal(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7792,7 +7656,6 @@
 
 .method private setTemporaryScreenBrightnessSettingOverrideInternal(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7830,7 +7693,6 @@
 
 .method private setUserActivityTimeoutLocked(J)V
     .locals 4
-    .param p1    # J
 
     iget-boolean v2, p0, Lcom/android/server/power/PowerManagerService;->mBootCompleted:Z
 
@@ -7879,7 +7741,6 @@
 
 .method private setUserActivityTimeoutOverrideFromWindowManagerInternal(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -7988,9 +7849,6 @@
 
 .method private shouldWakeUpWhenPluggedOrUnpluggedLocked(ZIZ)Z
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x4
 
@@ -8059,10 +7917,6 @@
 
 .method private shutdownOrRebootInternal(ZZLjava/lang/String;Z)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v3, 0x1
 
@@ -8309,8 +8163,6 @@
 
 .method private updateAutoPowerOffTimeLocked(JI)V
     .locals 10
-    .param p1    # J
-    .param p3    # I
 
     const-wide/16 v8, 0x3e8
 
@@ -8380,7 +8232,6 @@
 
 .method private updateDisplayPowerStateLocked(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -8756,7 +8607,6 @@
 
 .method private updateDreamLocked(I)V
     .locals 1
-    .param p1    # I
 
     and-int/lit16 v0, p1, 0xbf7
 
@@ -8770,7 +8620,6 @@
 
 .method private updateInputDeviceLightStateLocked(I)V
     .locals 11
-    .param p1    # I
 
     and-int/lit16 v7, p1, 0x743b
 
@@ -9185,7 +9034,6 @@
 
 .method private updateIsPoweredLocked(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -10220,7 +10068,6 @@
 
 .method private updateStayOnLocked(I)V
     .locals 3
-    .param p1    # I
 
     and-int/lit16 v1, p1, 0x120
 
@@ -10384,8 +10231,6 @@
 
 .method private updateUserActivitySummaryLocked(JI)V
     .locals 12
-    .param p1    # J
-    .param p3    # I
 
     and-int/lit8 v0, p3, 0x26
 
@@ -10840,7 +10685,6 @@
 
 .method private updateWakeLockSummaryLocked(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -10989,8 +10833,6 @@
 
 .method private updateWakeLockWorkSourceInternal(Landroid/os/IBinder;Landroid/os/WorkSource;)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/WorkSource;
 
     const/4 v1, 0x0
 
@@ -11092,7 +10934,6 @@
 
 .method private updateWakefulnessLocked(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -11308,9 +11149,6 @@
 
 .method private userActivityFromNative(JII)V
     .locals 6
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Lcom/android/server/power/PowerManagerService;->mNativeUserActivityCount:I
 
@@ -11402,10 +11240,6 @@
 
 .method private userActivityInternal(JIII)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -11446,10 +11280,6 @@
 
 .method private userActivityNoUpdateLocked(JIII)Z
     .locals 6
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v5, 0x2
 
@@ -11631,7 +11461,6 @@
 
 .method private wakeUpFromNative(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mTimeMeasurement:Lcom/android/server/power/PowerManagerService$TimeMeasurement;
 
@@ -11770,7 +11599,6 @@
 
 .method private wakeUpInternal(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -11802,8 +11630,6 @@
 
 .method private wakeUpInternal(JZ)V
     .locals 4
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -11868,7 +11694,6 @@
 
 .method private wakeUpNoUpdateLocked(J)Z
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -11881,8 +11706,6 @@
 
 .method private wakeUpNoUpdateLocked(JZ)Z
     .locals 9
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v8, 0x1
 
@@ -12172,7 +11995,6 @@
 
 .method private static wakefulnessToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -12216,11 +12038,6 @@
 # virtual methods
 .method public acquireWakeLock(Landroid/os/IBinder;ILjava/lang/String;Ljava/lang/String;Landroid/os/WorkSource;)V
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/WorkSource;
 
     const/4 v2, 0x0
 
@@ -12317,11 +12134,6 @@
 
 .method public acquireWakeLockWithUid(Landroid/os/IBinder;ILjava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     new-instance v5, Landroid/os/WorkSource;
 
@@ -12344,7 +12156,6 @@
 
 .method public crash(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "PowerManagerService"
 
@@ -12407,9 +12218,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -14554,7 +14362,6 @@
 
 .method public forceDisableWakeLock(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -14699,7 +14506,6 @@
 
 .method public getCurrentBrightness(Z)F
     .locals 5
-    .param p1    # Z
 
     const-string v2, "PowerManagerService"
 
@@ -14756,7 +14562,6 @@
 
 .method public getProcessName(I)Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const-string v9, ""
 
@@ -15018,8 +14823,6 @@
 
 .method public goToSleep(JI)V
     .locals 5
-    .param p1    # J
-    .param p3    # I
 
     const-string v2, "PowerManagerService"
 
@@ -15129,13 +14932,6 @@
 
 .method public init(Landroid/content/Context;Lcom/android/server/LightsService;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/BatteryService;Lcom/android/internal/app/IBatteryStats;Lcom/android/internal/app/IAppOpsService;Lcom/android/server/display/DisplayManagerService;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/LightsService;
-    .param p3    # Lcom/android/server/am/ActivityManagerService;
-    .param p4    # Lcom/android/server/BatteryService;
-    .param p5    # Lcom/android/internal/app/IBatteryStats;
-    .param p6    # Lcom/android/internal/app/IAppOpsService;
-    .param p7    # Lcom/android/server/display/DisplayManagerService;
 
     const-string v0, "PowerManagerService"
 
@@ -15318,7 +15114,6 @@
 
 .method public isWakeLockLevelSupported(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -15367,7 +15162,6 @@
 
 .method public nap(J)V
     .locals 5
-    .param p1    # J
 
     const-string v2, "PowerManagerService"
 
@@ -15443,8 +15237,6 @@
 
 .method public preventAutoPowerOff(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const-string v4, "PowerManagerService"
 
@@ -15515,9 +15307,6 @@
 
 .method public reboot(ZLjava/lang/String;Z)V
     .locals 10
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v9, 0x1
 
@@ -15660,8 +15449,6 @@
 
 .method public releaseWakeLock(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -15717,10 +15504,6 @@
 
 .method public setAlpmModeLocked(ZIILandroid/os/IBinder;)V
     .locals 9
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IBinder;
 
     iget-object v6, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -15934,8 +15717,6 @@
 
 .method public setAttentionLight(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
 
     const-string v2, "PowerManagerService"
 
@@ -16008,7 +15789,6 @@
 
 .method public setAutoBrightnessForEbookOnly(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "PowerManagerService"
 
@@ -16073,8 +15853,6 @@
 
 .method public setAutoBrightnessLimit(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, -0x1
 
@@ -16230,7 +16008,6 @@
 
 .method public setButtonBrightnessLimit(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -16287,7 +16064,6 @@
 
 .method public setButtonBrightnessOverrideFromWindowManager(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -16302,7 +16078,6 @@
 
 .method public setButtonTimeoutOverrideFromWindowManager(J)V
     .locals 5
-    .param p1    # J
 
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -16335,7 +16110,6 @@
 
 .method public setForceUnblankDisplay(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "PowerManagerService"
 
@@ -16402,7 +16176,6 @@
 
 .method public setFpsLevel(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -16470,7 +16243,6 @@
 
 .method public setKeyboardVisibility(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -16566,9 +16338,6 @@
 
 .method public setMasterBrightnessAdjustmentFromSSRM(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "PowerManagerService"
 
@@ -16702,8 +16471,6 @@
 
 .method public setMasterBrightnessLimit(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/16 v4, 0xff
 
@@ -16899,7 +16666,6 @@
 
 .method public setMaximumScreenOffTimeoutFromDeviceAdmin(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "PowerManagerService"
 
@@ -16954,7 +16720,6 @@
 
 .method public setPolicy(Landroid/view/WindowManagerPolicy;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManagerPolicy;
 
     const-string v0, "PowerManagerService"
 
@@ -16985,7 +16750,6 @@
 
 .method public setRatioOfAutoBrightness(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -17046,7 +16810,6 @@
 
 .method public setScreenBrightnessOverrideFromWindowManager(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -17079,7 +16842,6 @@
 
 .method public setScreenDimDurationOverrideFromWindowManager(J)V
     .locals 5
-    .param p1    # J
 
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -17112,7 +16874,6 @@
 
 .method public setStayOnSetting(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "PowerManagerService"
 
@@ -17175,7 +16936,6 @@
 
 .method public setSystemPowerSaveMode(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "PowerManagerService"
 
@@ -17240,7 +17000,6 @@
 
 .method public setTemporaryScreenAutoBrightnessAdjustmentSettingOverride(F)V
     .locals 5
-    .param p1    # F
 
     const-string v2, "PowerManagerService"
 
@@ -17303,7 +17062,6 @@
 
 .method public setTemporaryScreenBrightnessSettingOverride(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "PowerManagerService"
 
@@ -17366,8 +17124,6 @@
 
 .method public setThermalBrightnessLimit(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -17404,7 +17160,6 @@
 
 .method public setUserActivityTimeoutOverrideFromWindowManager(J)V
     .locals 5
-    .param p1    # J
 
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mContext:Landroid/content/Context;
 
@@ -17437,8 +17192,6 @@
 
 .method public shutdown(ZZ)V
     .locals 11
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v10, 0x0
 
@@ -17626,8 +17379,6 @@
 
 .method public systemReady(Lcom/android/server/TwilightService;Lcom/android/server/dreams/DreamManagerService;)V
     .locals 18
-    .param p1    # Lcom/android/server/TwilightService;
-    .param p2    # Lcom/android/server/dreams/DreamManagerService;
 
     const-string v2, "PowerManagerService"
 
@@ -18302,8 +18053,6 @@
 
 .method public updateBlockedUids(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -18389,7 +18138,6 @@
 
 .method public updateCoverState(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -18503,7 +18251,6 @@
 
 .method public updateLidState(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService;->mLock:Ljava/lang/Object;
 
@@ -18563,8 +18310,6 @@
 
 .method public updateWakeLockUids(Landroid/os/IBinder;[I)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # [I
 
     const/4 v1, 0x0
 
@@ -18597,8 +18342,6 @@
 
 .method public updateWakeLockWorkSource(Landroid/os/IBinder;Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/WorkSource;
 
     const/4 v4, 0x0
 
@@ -18662,9 +18405,6 @@
 
 .method public userActivity(JII)V
     .locals 13
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     const-string v1, "PowerManagerService"
 
@@ -18849,7 +18589,6 @@
 
 .method public wakeUp(J)V
     .locals 6
-    .param p1    # J
 
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService;->mTimeMeasurement:Lcom/android/server/power/PowerManagerService$TimeMeasurement;
 

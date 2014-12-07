@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;Landroid/view/ViewRootImpl$InputStage;)V
     .locals 0
-    .param p2    # Landroid/view/ViewRootImpl$InputStage;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl$ViewPostImeInputStage;->this$0:Landroid/view/ViewRootImpl;
 
@@ -32,7 +31,6 @@
 
 .method private processGenericMotionEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 2
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v0, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mEvent:Landroid/view/InputEvent;
 
@@ -61,7 +59,6 @@
 
 .method private processKeyEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 7
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/4 v4, 0x2
 
@@ -394,7 +391,6 @@
 
 .method private processPointerEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 3
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/4 v1, 0x1
 
@@ -438,7 +434,6 @@
 
 .method private processTrackballEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 2
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v0, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mEvent:Landroid/view/InputEvent;
 
@@ -467,7 +462,6 @@
 
 .method private processWritingBuddyKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -559,7 +553,6 @@
 # virtual methods
 .method protected onProcess(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 2
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v1, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mEvent:Landroid/view/InputEvent;
 

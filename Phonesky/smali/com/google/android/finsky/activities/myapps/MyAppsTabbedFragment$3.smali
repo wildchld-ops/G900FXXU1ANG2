@@ -46,7 +46,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/ModifyLibrary$ModifyLibraryResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/ModifyLibrary$ModifyLibraryResponse;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/ModifyLibrary$ModifyLibraryResponse;->libraryUpdate:Lcom/google/android/finsky/protos/Library$LibraryUpdate;
 
@@ -97,7 +96,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/ModifyLibrary$ModifyLibraryResponse;
 

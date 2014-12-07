@@ -373,7 +373,6 @@
 
 .method setBrowserMainPage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mBrowserMainPageOn:Z
 
@@ -382,7 +381,6 @@
 
 .method setClearCover(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mClearCoverOn:Z
 
@@ -391,7 +389,6 @@
 
 .method setContactDialerVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mContactDialerOn:Z
 
@@ -400,7 +397,6 @@
 
 .method setGripVolumeDown(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mGripVolumeDownOn:Z
 
@@ -409,7 +405,6 @@
 
 .method setLandscape(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mLandscape:Z
 
@@ -418,7 +413,6 @@
 
 .method setLockScreen(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mLockScreenOn:Z
 
@@ -427,7 +421,6 @@
 
 .method setMultiWindow(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mMultiWindowOn:Z
 
@@ -436,7 +429,6 @@
 
 .method setPatternLockVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mPatternLockOn:Z
 
@@ -445,7 +437,6 @@
 
 .method setPenAttached(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mPenAttached:Z
 
@@ -454,7 +445,6 @@
 
 .method setPhoneDialerVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mPhoneDialerOn:Z
 
@@ -463,7 +453,6 @@
 
 .method setSIP(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mSIPOn:Z
 
@@ -472,7 +461,6 @@
 
 .method setStatusBar(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;->mStatusBarOn:Z
 

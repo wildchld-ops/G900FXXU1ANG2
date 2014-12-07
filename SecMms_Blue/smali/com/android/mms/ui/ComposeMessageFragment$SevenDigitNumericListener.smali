@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Ljava/lang/String;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -53,8 +52,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 

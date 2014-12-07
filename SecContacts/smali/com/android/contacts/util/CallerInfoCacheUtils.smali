@@ -14,7 +14,6 @@
 
 .method public static sendUpdateCallerInfoCacheIntent(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 

@@ -10,7 +10,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lorg/keyczar/exceptions/KeyczarException;-><init>(Ljava/lang/String;)V
 
@@ -19,7 +18,6 @@
 
 .method public constructor <init>([B)V
     .locals 5
-    .param p1    # [B
 
     const/4 v3, 0x1
 

@@ -27,7 +27,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "Content-Length"
 
@@ -64,7 +63,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ContentLength;->contentLength:Ljava/lang/Integer;
 
@@ -91,7 +89,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -133,7 +130,6 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lgov/nist/javax/sip/header/ContentLength;
 
@@ -152,7 +148,6 @@
 
 .method public setContentLength(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

@@ -5375,7 +5375,6 @@
 
 .method public getCommandId(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/command/CommandIdMap;->mIDMap:Ljava/util/List;
 
@@ -5419,8 +5418,6 @@
 
 .method public getCommandId(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/command/CommandIdMap;->mIDMap:Ljava/util/List;
 
@@ -5462,7 +5459,6 @@
 
 .method public getMenuIDByCommandID(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/command/CommandIdMap;->mIDMap:Ljava/util/List;
 
@@ -5513,7 +5509,6 @@
 
 .method public getModeIDByCommandID(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/command/CommandIdMap;->mIDMap:Ljava/util/List;
 

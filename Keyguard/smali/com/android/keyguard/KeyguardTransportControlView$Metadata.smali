@@ -41,7 +41,6 @@
 
 .method static synthetic access$1700(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->artist:Ljava/lang/String;
 
@@ -50,8 +49,6 @@
 
 .method static synthetic access$1702(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->artist:Ljava/lang/String;
 
@@ -60,7 +57,6 @@
 
 .method static synthetic access$1800(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->trackTitle:Ljava/lang/String;
 
@@ -69,8 +65,6 @@
 
 .method static synthetic access$1802(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->trackTitle:Ljava/lang/String;
 
@@ -79,7 +73,6 @@
 
 .method static synthetic access$1900(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->albumTitle:Ljava/lang/String;
 
@@ -88,8 +81,6 @@
 
 .method static synthetic access$1902(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->albumTitle:Ljava/lang/String;
 
@@ -98,7 +89,6 @@
 
 .method static synthetic access$2000(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;)J
     .locals 2
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
 
     iget-wide v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->duration:J
 
@@ -107,8 +97,6 @@
 
 .method static synthetic access$2002(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;J)J
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->duration:J
 
@@ -117,7 +105,6 @@
 
 .method static synthetic access$2100(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->bitmap:Landroid/graphics/Bitmap;
 
@@ -126,8 +113,6 @@
 
 .method static synthetic access$2102(Lcom/android/keyguard/KeyguardTransportControlView$Metadata;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardTransportControlView$Metadata;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardTransportControlView$Metadata;->bitmap:Landroid/graphics/Bitmap;
 

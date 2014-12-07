@@ -14,8 +14,6 @@
 
 .method public static getEnableIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -78,8 +76,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 

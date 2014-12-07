@@ -114,7 +114,6 @@
 
 .method public reportLoadState(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 

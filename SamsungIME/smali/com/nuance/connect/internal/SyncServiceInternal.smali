@@ -67,7 +67,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -138,7 +137,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/SyncServiceInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/SyncServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/SyncServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -147,7 +145,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/SyncServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/SyncServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/SyncServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -156,7 +153,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/SyncServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/SyncServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/SyncServiceInternal;->sendDLMSyncStatus()V
 
@@ -279,7 +275,6 @@
 
 .method public restoreRequest(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/nuance/connect/internal/SyncServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -326,7 +321,6 @@
 
 .method public setDLMSyncStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/SyncServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 

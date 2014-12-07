@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/core/ThreadAuditor$ThreadHandle;)V
     .locals 0
-    .param p2    # Lgov/nist/core/ThreadAuditor$ThreadHandle;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack$PingTimer;->this$0:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 

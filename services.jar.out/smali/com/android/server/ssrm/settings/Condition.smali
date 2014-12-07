@@ -59,7 +59,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,8 +93,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/settings/Condition;->DEBUG:Z
 
@@ -111,7 +108,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 
@@ -192,7 +188,6 @@
 
 .method public registerLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/Condition;->mLevels:Lcom/android/server/ssrm/settings/SortedArrayList;
 
@@ -212,7 +207,6 @@
 
 .method public setListener(Lcom/android/server/ssrm/settings/Condition$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/settings/Condition$Listener;
 
     iput-object p1, p0, Lcom/android/server/ssrm/settings/Condition;->mListener:Lcom/android/server/ssrm/settings/Condition$Listener;
 
@@ -221,7 +215,6 @@
 
 .method public signal(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/settings/Condition;->TAG:Ljava/lang/String;
 
@@ -387,7 +380,6 @@
 
 .method public unregisterLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/Condition;->mLevels:Lcom/android/server/ssrm/settings/SortedArrayList;
 

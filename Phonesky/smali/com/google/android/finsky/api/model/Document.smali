@@ -78,7 +78,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/DocumentV2$DocV2;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$DocV2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -202,7 +201,6 @@
 
 .method public static isPreorderOffer(Lcom/google/android/finsky/protos/Common$Offer;)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/protos/Common$Offer;
 
     const/4 v0, 0x1
 
@@ -644,7 +642,6 @@
 
 .method public getChildAt(I)Lcom/google/android/finsky/api/model/Document;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/Document;->mChildDocuments:[Lcom/google/android/finsky/api/model/Document;
 
@@ -1026,7 +1023,6 @@
 
 .method public getFormattedPrice(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/api/model/Document;->getOffer(I)Lcom/google/android/finsky/protos/Common$Offer;
 
@@ -1079,7 +1075,6 @@
 
 .method public getImages(I)Ljava/util/List;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1351,7 +1346,6 @@
 
 .method public getOffer(I)Lcom/google/android/finsky/protos/Common$Offer;
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/Document;->getAvailableOffers()Ljava/util/List;
 
@@ -2560,7 +2554,6 @@
 
 .method public hasImages(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/Document;->getImageTypeMap()Ljava/util/Map;
 
@@ -3250,7 +3243,6 @@
 
 .method public needsCheckoutFlow(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/api/model/Document;->getOffer(I)Lcom/google/android/finsky/protos/Common$Offer;
 
@@ -3271,7 +3263,6 @@
 
 .method public setDescription(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/Document;->mDocument:Lcom/google/android/finsky/protos/DocumentV2$DocV2;
 
@@ -3339,8 +3330,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/Document;->mDocument:Lcom/google/android/finsky/protos/DocumentV2$DocV2;
 

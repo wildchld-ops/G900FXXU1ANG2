@@ -1379,7 +1379,7 @@ Također je moguć prikaz ili skrivanje ručice za više prozora pritiskom i dr�
     <string name="usb_tethering_errored_subtext">Greška USB dijeljenja veze</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB dijeljenje ne može se isključiti dok koristite SideSync. Isključivanje USB dijeljena isključit će SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB dijeljenje ne može se uključiti dok koristite SideSync. Uključivanje USB dijeljena isključit će SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth dijeljenje</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth dijeljenje</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Dijeljenje internet veze uređaja…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Internet veza uređaja dijeljena s 1 uređajem</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Internet veza uređaja dijeljena s %d uređaja</string>

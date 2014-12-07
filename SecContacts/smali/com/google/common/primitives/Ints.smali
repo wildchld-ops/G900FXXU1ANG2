@@ -14,7 +14,6 @@
 
 .method public static saturatedCast(J)I
     .locals 2
-    .param p0    # J
 
     const-wide/32 v0, 0x7fffffff
 

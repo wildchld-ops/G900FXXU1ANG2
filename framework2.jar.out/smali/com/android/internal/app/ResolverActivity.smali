@@ -243,7 +243,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/ResolverActivity;)Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mAdapter:Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;
 
@@ -252,7 +251,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mIsDeviceDefault:Z
 
@@ -261,7 +259,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/app/ResolverActivity;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     invoke-direct {p0}, Lcom/android/internal/app/ResolverActivity;->initDeviceList()V
 
@@ -270,7 +267,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/app/ResolverActivity;)Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mDeviceAdapter:Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;
 
@@ -279,7 +275,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/app/ResolverActivity;)Lcom/samsung/android/sconnect/extern/ISconnect;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mISconnect:Lcom/samsung/android/sconnect/extern/ISconnect;
 
@@ -288,8 +283,6 @@
 
 .method static synthetic access$1202(Lcom/android/internal/app/ResolverActivity;Lcom/samsung/android/sconnect/extern/ISconnect;)Lcom/samsung/android/sconnect/extern/ISconnect;
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Lcom/samsung/android/sconnect/extern/ISconnect;
 
     iput-object p1, p0, Lcom/android/internal/app/ResolverActivity;->mISconnect:Lcom/samsung/android/sconnect/extern/ISconnect;
 
@@ -298,7 +291,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/app/ResolverActivity;)Landroid/widget/ExpandableHeightGridView;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mGridDevice:Landroid/widget/ExpandableHeightGridView;
 
@@ -307,7 +299,6 @@
 
 .method static synthetic access$1500(Lcom/android/internal/app/ResolverActivity;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget v0, p0, Lcom/android/internal/app/ResolverActivity;->mMaxColumns:I
 
@@ -316,7 +307,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/app/ResolverActivity;)Lcom/samsung/android/sconnect/extern/ISconnectCallback;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mCallback:Lcom/samsung/android/sconnect/extern/ISconnectCallback;
 
@@ -325,7 +315,6 @@
 
 .method static synthetic access$1700(Lcom/android/internal/app/ResolverActivity;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     invoke-direct {p0}, Lcom/android/internal/app/ResolverActivity;->DeviceListUpdate()V
 
@@ -334,7 +323,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/app/ResolverActivity;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget v0, p0, Lcom/android/internal/app/ResolverActivity;->mDeviceIndex:I
 
@@ -343,7 +331,6 @@
 
 .method static synthetic access$1808(Lcom/android/internal/app/ResolverActivity;)I
     .locals 2
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget v0, p0, Lcom/android/internal/app/ResolverActivity;->mDeviceIndex:I
 
@@ -356,7 +343,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/app/ResolverActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mPhoneNumber:Ljava/lang/String;
 
@@ -365,8 +351,6 @@
 
 .method static synthetic access$1902(Lcom/android/internal/app/ResolverActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/internal/app/ResolverActivity;->mPhoneNumber:Ljava/lang/String;
 
@@ -375,7 +359,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/app/ResolverActivity;)Landroid/widget/AbsListView;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mListView:Landroid/widget/AbsListView;
 
@@ -384,7 +367,6 @@
 
 .method static synthetic access$2000(Lcom/android/internal/app/ResolverActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mDeviceName:Ljava/lang/String;
 
@@ -393,8 +375,6 @@
 
 .method static synthetic access$2002(Lcom/android/internal/app/ResolverActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/internal/app/ResolverActivity;->mDeviceName:Ljava/lang/String;
 
@@ -403,7 +383,6 @@
 
 .method static synthetic access$2100(Lcom/android/internal/app/ResolverActivity;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mDrawableIcon:Landroid/graphics/drawable/Drawable;
 
@@ -412,8 +391,6 @@
 
 .method static synthetic access$2102(Lcom/android/internal/app/ResolverActivity;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/internal/app/ResolverActivity;->mDrawableIcon:Landroid/graphics/drawable/Drawable;
 
@@ -422,8 +399,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/app/ResolverActivity;Landroid/widget/TextView;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Landroid/widget/TextView;
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->setSubtitleBackground(Landroid/widget/TextView;)V
 
@@ -432,8 +407,6 @@
 
 .method static synthetic access$2300(Lcom/android/internal/app/ResolverActivity;Landroid/widget/TextView;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Landroid/widget/TextView;
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->setSubtitleColor(Landroid/widget/TextView;)V
 
@@ -442,8 +415,6 @@
 
 .method static synthetic access$2400(Lcom/android/internal/app/ResolverActivity;I)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->getDevType(I)I
 
@@ -454,8 +425,6 @@
 
 .method static synthetic access$2500(Lcom/android/internal/app/ResolverActivity;I)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->getNetType(I)I
 
@@ -466,7 +435,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mIsGridType:Z
 
@@ -475,7 +443,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mAlwaysUseOption:Z
 
@@ -484,7 +451,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/app/ResolverActivity;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mPm:Landroid/content/pm/PackageManager;
 
@@ -493,7 +459,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mShowExtended:Z
 
@@ -502,8 +467,6 @@
 
 .method static synthetic access$602(Lcom/android/internal/app/ResolverActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/ResolverActivity;->mShowExtended:Z
 
@@ -512,7 +475,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mApplyResolverAdv:Z
 
@@ -521,7 +483,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/app/ResolverActivity;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget v0, p0, Lcom/android/internal/app/ResolverActivity;->mIconSize:I
 
@@ -530,8 +491,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/app/ResolverActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->clearDeviceList(Z)V
 
@@ -540,7 +499,6 @@
 
 .method private addApplicationGridView(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -609,7 +567,6 @@
 
 .method private addDeviceGridView(Landroid/content/Intent;)V
     .locals 14
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -827,7 +784,6 @@
 
 .method private applyResolverAdv(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
 
@@ -874,7 +830,6 @@
 
 .method private checkBtWifiStatus(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -998,7 +953,6 @@
 
 .method private clearDeviceList(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1078,7 +1032,6 @@
 
 .method private deviceItemClick(I)V
     .locals 13
-    .param p1    # I
 
     iget-object v9, p0, Lcom/android/internal/app/ResolverActivity;->mDeviceAdapter:Lcom/android/internal/app/ResolverActivity$DeviceListAdapter;
 
@@ -1679,7 +1632,6 @@
 
 .method private getDevType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -1698,7 +1650,6 @@
 
 .method private getNetType(I)I
     .locals 1
-    .param p1    # I
 
     and-int/lit8 v0, p1, 0x4
 
@@ -1828,7 +1779,6 @@
 
 .method private isSupportResolverAdv(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -1896,7 +1846,6 @@
 
 .method private openPhoto(J)V
     .locals 13
-    .param p1    # J
 
     const/4 v12, 0x0
 
@@ -2091,7 +2040,6 @@
 
 .method private setSubtitleBackground(Landroid/widget/TextView;)V
     .locals 5
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/View;->getPaddingLeft()I
 
@@ -2132,7 +2080,6 @@
 
 .method private setSubtitleColor(Landroid/widget/TextView;)V
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mIsLightTheme:Z
 
@@ -2219,7 +2166,6 @@
 # virtual methods
 .method protected GetContactInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2460,7 +2406,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -2570,8 +2515,6 @@
 
 .method getIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     :try_start_0
     iget v2, p0, Lcom/android/internal/app/ResolverActivity;->mIconDpi:I
@@ -2595,7 +2538,6 @@
 
 .method public getIntentFromNetType(I)Landroid/content/Intent;
     .locals 11
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2715,7 +2657,6 @@
 
 .method loadIconForResolveInfo(Landroid/content/pm/ResolveInfo;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -2834,7 +2775,6 @@
 
 .method public onButtonClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -2867,7 +2807,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -2900,11 +2839,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;Landroid/content/Intent;Ljava/lang/CharSequence;[Landroid/content/Intent;Ljava/util/List;Z)V
     .locals 18
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # [Landroid/content/Intent;
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3797,9 +3731,6 @@
 
 .method protected onIntentSelected(Landroid/content/pm/ResolveInfo;Landroid/content/Intent;Z)V
     .locals 29
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -4378,9 +4309,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4511,7 +4439,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -4655,7 +4582,6 @@
 
 .method showAppDetails(Landroid/content/pm/ResolveInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -4696,8 +4622,6 @@
 
 .method startSelected(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 

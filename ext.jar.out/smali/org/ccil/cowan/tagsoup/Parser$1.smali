@@ -36,7 +36,6 @@
 # virtual methods
 .method public autoDetectingReader(Ljava/io/InputStream;)Ljava/io/Reader;
     .locals 1
-    .param p1    # Ljava/io/InputStream;
 
     new-instance v0, Ljava/io/InputStreamReader;
 

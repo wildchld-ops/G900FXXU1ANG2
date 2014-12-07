@@ -32,12 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;Lcom/google/android/finsky/receivers/PackageMonitorReceiver;Lcom/google/android/finsky/receivers/Installer;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/library/Libraries;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver;
-    .param p4    # Lcom/google/android/finsky/receivers/Installer;
-    .param p5    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p6    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;-><init>(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;)V
 
@@ -54,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;)Lcom/google/android/finsky/receivers/Installer;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->mInstaller:Lcom/google/android/finsky/receivers/Installer;
 
@@ -63,13 +56,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;Ljava/lang/String;ZLjava/lang/String;ZZZ)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
 
     invoke-direct/range {p0 .. p6}, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->refundAndUninstallAsset(Ljava/lang/String;ZLjava/lang/String;ZZZ)V
 
@@ -78,10 +64,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->confirmRefundApp(Ljava/lang/String;Ljava/lang/String;Z)V
 
@@ -121,9 +103,6 @@
 
 .method private confirmRefundApp(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget-object v4, p0, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->mContainerFragment:Lcom/google/android/finsky/fragments/PageFragment;
 
@@ -236,7 +215,6 @@
 
 .method private refreshByPackageName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -276,12 +254,6 @@
 
 .method private refundAndUninstallAsset(Ljava/lang/String;ZLjava/lang/String;ZZZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
 
     const/4 v2, 0x1
 
@@ -310,7 +282,6 @@
 
 .method private refundApp(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "package_name"
 
@@ -341,11 +312,6 @@
 
 .method private uninstallAsset(Ljava/lang/String;ZZZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     if-eqz p2, :cond_0
 
@@ -401,7 +367,6 @@
 
 .method private updateLayoutVisibility(Landroid/view/ViewGroup;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
 
     const/16 v1, 0x8
 
@@ -443,9 +408,6 @@
 # virtual methods
 .method public varargs bind(Lcom/google/android/finsky/api/model/Document;Z[Landroid/view/View;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Z
-    .param p3    # [Landroid/view/View;
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->bind(Lcom/google/android/finsky/api/model/Document;Z[Landroid/view/View;)V
 
@@ -475,14 +437,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/fragments/PageFragment;ZLjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/fragments/PageFragment;
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-super/range {p0 .. p8}, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->init(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/fragments/PageFragment;ZLjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
 
@@ -520,9 +474,6 @@
 
 .method public onInstallPackageEvent(Ljava/lang/String;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -550,7 +501,6 @@
 
 .method public onPackageAdded(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->refreshByPackageName(Ljava/lang/String;)V
 
@@ -559,15 +509,12 @@
 
 .method public onPackageAvailabilityChanged([Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onPackageChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->refreshByPackageName(Ljava/lang/String;)V
 
@@ -576,15 +523,12 @@
 
 .method public onPackageFirstLaunch(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageRemoved(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -595,8 +539,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->onPositiveClick(ILandroid/os/Bundle;)V
 
@@ -661,7 +603,6 @@
 
 .method protected setupActionButtons(Z)V
     .locals 26
-    .param p1    # Z
 
     const v3, 0x7f0800af
 
@@ -1235,7 +1176,6 @@
 
 .method protected showDynamicStatus(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->showDynamicStatus(I)V
 

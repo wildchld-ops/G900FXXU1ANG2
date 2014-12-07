@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/Camera;Landroid/hardware/Camera;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/hardware/Camera;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/hardware/Camera$EventHandler;->this$0:Landroid/hardware/Camera;
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const/16 v7, 0x101
 

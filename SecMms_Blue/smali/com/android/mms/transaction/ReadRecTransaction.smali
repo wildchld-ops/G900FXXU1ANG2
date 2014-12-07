@@ -17,10 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/transaction/Transaction;-><init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;)V
 

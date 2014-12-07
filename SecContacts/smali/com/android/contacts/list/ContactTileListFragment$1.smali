@@ -36,8 +36,6 @@
 # virtual methods
 .method public onItemCheckedStateChanged(JZ)V
     .locals 3
-    .param p1    # J
-    .param p3    # Z
 
     if-eqz p3, :cond_1
 

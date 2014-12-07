@@ -52,11 +52,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/android/volley/Response$Listener;IILandroid/graphics/Bitmap$Config;Lcom/android/volley/Response$ErrorListener;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Bitmap$Config;
-    .param p6    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -100,7 +95,6 @@
 
 .method private doParse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 12
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -240,10 +234,6 @@
 
 .method static findBestSampleSize(IIII)I
     .locals 12
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v11, 0x40000000
 
@@ -286,10 +276,6 @@
 
 .method private static getResizedDimension(IIII)I
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-nez p0, :cond_0
 
@@ -357,7 +343,6 @@
 # virtual methods
 .method protected deliverResponse(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/android/volley/toolbox/ImageRequest;->mListener:Lcom/android/volley/Response$Listener;
 
@@ -368,7 +353,6 @@
 
 .method protected bridge synthetic deliverResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/Bitmap;
 
@@ -387,7 +371,6 @@
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 6
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

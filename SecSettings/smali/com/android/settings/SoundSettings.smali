@@ -271,7 +271,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SoundSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
 
@@ -280,7 +279,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SoundSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mNotificationPreference:Landroid/preference/Preference;
 
@@ -289,7 +287,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/SoundSettings;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
 
@@ -298,7 +295,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/SoundSettings;)Lcom/android/settings/DefaultRingtonePreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mRingtone:Lcom/android/settings/DefaultRingtonePreference;
 
@@ -307,7 +303,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/SoundSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     invoke-direct {p0}, Lcom/android/settings/SoundSettings;->setSystemSound()V
 
@@ -316,7 +311,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/SoundSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     invoke-direct {p0}, Lcom/android/settings/SoundSettings;->getPhoneSilentModeSettingValue()Ljava/lang/String;
 
@@ -327,7 +321,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/SoundSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mVibrateWhenRinging:Landroid/preference/CheckBoxPreference;
 
@@ -336,7 +329,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/SoundSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mSoundMode:Landroid/preference/ListPreference;
 
@@ -345,7 +337,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SoundSettings;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mLoadSoundEffectRunnable:Ljava/lang/Runnable;
 
@@ -354,7 +345,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SoundSettings;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mUnloadSoundEffectRunnable:Ljava/lang/Runnable;
 
@@ -363,7 +353,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/SoundSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mRingtone2Preference:Landroid/preference/Preference;
 
@@ -372,8 +361,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/SoundSettings;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SoundSettings;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/settings/SoundSettings;->handleDockChange(Landroid/content/Intent;)V
 
@@ -382,7 +369,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/SoundSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mAudioOutput:Landroid/preference/ListPreference;
 
@@ -391,7 +377,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/SoundSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mHapticFeedback:Landroid/preference/CheckBoxPreference;
 
@@ -400,7 +385,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/SoundSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SoundSettings;
 
     iget-object v0, p0, Lcom/android/settings/SoundSettings;->mSipFeedbackVibration:Landroid/preference/CheckBoxPreference;
 
@@ -409,10 +393,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/SoundSettings;ILandroid/preference/Preference;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/SoundSettings;
-    .param p1    # I
-    .param p2    # Landroid/preference/Preference;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/SoundSettings;->updateRingtoneName(ILandroid/preference/Preference;I)V
 
@@ -1302,7 +1282,6 @@
 
 .method private updateRingtoneData(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -2128,7 +2107,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 35
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -5551,7 +5529,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -5572,8 +5549,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 

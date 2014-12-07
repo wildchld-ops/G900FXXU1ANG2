@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPDialog;Ljavax/sip/ClientTransaction;)V
     .locals 0
-    .param p2    # Ljavax/sip/ClientTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog$ReInviteSender;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 

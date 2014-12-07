@@ -1373,7 +1373,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">USB 網絡共享錯誤</string>
     <string name="usb_tethering_on_during_sidesync_popup">使用 SideSync 時無法停用 USB 網絡共享。停用 USB 網絡共享將停用 SideSync。</string>
     <string name="usb_tethering_off_during_sidesync_popup">使用 SideSync 時無法啟用 USB 網絡共享。啟用 USB 網絡共享將停用 SideSync。</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>藍牙網絡共享</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>藍牙網絡共享</b></p></string>
     <string name="bluetooth_tethering_available_subtext">正在分享此裝置中的互聯網連接…</string>
     <string name="bluetooth_tethering_device_connected_subtext">與 1 個裝置分享裝置的互聯網連接</string>
     <string name="bluetooth_tethering_devices_connected_subtext">與 %d 個裝置分享裝置的互聯網連接</string>

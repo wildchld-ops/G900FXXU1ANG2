@@ -351,7 +351,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -362,8 +361,6 @@
 
 .method public constructor <init>(ILandroid/accounts/Account;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/accounts/Account;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -382,10 +379,6 @@
 
 .method private addEmail(ILjava/lang/String;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mEmailList:Ljava/util/List;
 
@@ -411,11 +404,6 @@
 
 .method private addIm(ILjava/lang/String;Ljava/lang/String;IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mImList:Ljava/util/List;
 
@@ -451,16 +439,6 @@
 
 .method private addNewOrganization(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Z
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mOrganizationList:Ljava/util/List;
 
@@ -506,12 +484,6 @@
 
 .method private addNewOrganization(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Z
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mOrganizationList:Ljava/util/List;
 
@@ -549,7 +521,6 @@
 
 .method private addNickName(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mNicknameList:Ljava/util/List;
 
@@ -575,7 +546,6 @@
 
 .method private addNote(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mNoteList:Ljava/util/List;
 
@@ -603,10 +573,6 @@
 
 .method private addPhone(ILjava/lang/String;Ljava/lang/String;Z)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iget-object v8, p0, Lcom/android/vcard/VCardEntry;->mPhoneList:Ljava/util/List;
 
@@ -722,9 +688,6 @@
 
 .method private addPhotoBytes(Ljava/lang/String;[BZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # Z
 
     iget-object v1, p0, Lcom/android/vcard/VCardEntry;->mPhotoList:Ljava/util/List;
 
@@ -762,9 +725,6 @@
 
 .method private addPostal(ILjava/util/List;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -805,10 +765,6 @@
 
 .method private addSip(Ljava/lang/String;ILjava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mSipList:Ljava/util/List;
 
@@ -834,7 +790,6 @@
 
 .method public static buildFromResolver(Landroid/content/ContentResolver;)Lcom/android/vcard/VCardEntry;
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
 
     sget-object v0, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
@@ -847,8 +802,6 @@
 
 .method public static buildFromResolver(Landroid/content/ContentResolver;Landroid/net/Uri;)Lcom/android/vcard/VCardEntry;
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -1384,8 +1337,6 @@
 
 .method private handleOrgValue(ILjava/util/List;Ljava/util/Map;Z)V
     .locals 18
-    .param p1    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1832,7 +1783,6 @@
 
 .method private handleSipCase(Ljava/lang/String;Ljava/util/Collection;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1984,7 +1934,6 @@
 
 .method private handleTitleValue(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -2057,7 +2006,6 @@
 
 .method private iterateOneList(Ljava/util/List;Lcom/android/vcard/VCardEntry$EntryElementIterator;)V
     .locals 3
-    .param p2    # Lcom/android/vcard/VCardEntry$EntryElementIterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2410,7 +2358,6 @@
 # virtual methods
 .method public addChild(Lcom/android/vcard/VCardEntry;)V
     .locals 1
-    .param p1    # Lcom/android/vcard/VCardEntry;
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry;->mChildren:Ljava/util/List;
 
@@ -2432,7 +2379,6 @@
 
 .method public addProperty(Lcom/android/vcard/VCardProperty;)V
     .locals 34
-    .param p1    # Lcom/android/vcard/VCardProperty;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/vcard/VCardProperty;->getName()Ljava/lang/String;
 
@@ -4111,7 +4057,6 @@
 
 .method public constructInsertOperations(Landroid/content/ContentResolver;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4481,7 +4426,6 @@
 
 .method public final iterateAllData(Lcom/android/vcard/VCardEntry$EntryElementIterator;)V
     .locals 1
-    .param p1    # Lcom/android/vcard/VCardEntry$EntryElementIterator;
 
     invoke-interface {p1}, Lcom/android/vcard/VCardEntry$EntryElementIterator;->onIterationStarted()V
 

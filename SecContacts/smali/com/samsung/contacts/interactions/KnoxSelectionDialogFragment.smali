@@ -14,9 +14,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 4
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v1, Lcom/samsung/contacts/interactions/KnoxSelectionDialogFragment;
 
@@ -50,7 +47,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

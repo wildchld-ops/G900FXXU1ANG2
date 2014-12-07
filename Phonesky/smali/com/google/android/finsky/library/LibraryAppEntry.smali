@@ -28,13 +28,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;IJ[Ljava/lang/String;JJ)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # [Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
 
     sget-object v4, Lcom/google/android/finsky/library/AccountLibrary;->LIBRARY_ID_APPS:Ljava/lang/String;
 
@@ -75,7 +68,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 9
-    .param p1    # Ljava/lang/Object;
 
     const/4 v6, 0x1
 
@@ -167,7 +159,6 @@
 
 .method public hasMatchingCertificateHash([Ljava/lang/String;)Z
     .locals 10
-    .param p1    # [Ljava/lang/String;
 
     const/4 v8, 0x1
 

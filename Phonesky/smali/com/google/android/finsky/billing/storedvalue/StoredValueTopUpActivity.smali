@@ -59,8 +59,6 @@
 
 .method public static createIntent(Ljava/lang/String;Lcom/google/android/finsky/protos/CommonDevice$TopupInfo;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$TopupInfo;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -117,9 +115,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -169,7 +164,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -313,9 +307,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -345,8 +336,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -427,8 +416,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -444,7 +431,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -455,7 +441,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -501,7 +486,6 @@
 
 .method public onStateChange(Lcom/google/android/finsky/fragments/SidecarFragment;)V
     .locals 13
-    .param p1    # Lcom/google/android/finsky/fragments/SidecarFragment;
 
     const/4 v12, 0x0
 

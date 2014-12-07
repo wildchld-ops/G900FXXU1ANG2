@@ -46,8 +46,6 @@
 # virtual methods
 .method public addCommand(Ljava/lang/String;[I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;->commands:Ljava/util/HashMap;
 
@@ -58,7 +56,6 @@
 
 .method public getName(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;->commands:Ljava/util/HashMap;
 
@@ -79,7 +76,6 @@
 
 .method public getResponses(Ljava/lang/String;)[I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;->commands:Ljava/util/HashMap;
 
@@ -110,7 +106,6 @@
 
 .method public hasName(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;->commands:Ljava/util/HashMap;
 
@@ -133,8 +128,6 @@
 
 .method public isCommandFor(Ljava/lang/String;Lcom/nuance/connect/service/comm/Command;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v0, 0x0
 
@@ -160,8 +153,6 @@
 
 .method public isExpectedResponse(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;->getResponses(Ljava/lang/String;)[I
 
@@ -196,8 +187,6 @@
 
 .method public isResponseFor(Ljava/lang/String;Lcom/nuance/connect/service/comm/Response;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v0, 0x0
 

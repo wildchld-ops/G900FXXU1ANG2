@@ -229,7 +229,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/detail/ContactLoaderFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mUpdateRequestedSnsTypes:Ljava/util/ArrayList;
 
@@ -238,7 +237,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/detail/ContactLoaderFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mIsEasymode:Z
 
@@ -247,7 +245,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/detail/ContactLoaderFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mIsEmergencyMode:Z
 
@@ -256,7 +253,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/detail/ContactLoaderFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/detail/ContactLoaderFragment;->requestSnsFeedsUpdate()V
 
@@ -265,7 +261,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/detail/ContactLoaderFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mUpdatedSnsTypes:Ljava/util/ArrayList;
 
@@ -274,7 +269,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/detail/ContactLoaderFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/detail/ContactLoaderFragment;->startSnsFeedsLoading()V
 
@@ -283,7 +277,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/detail/ContactLoaderFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mContext:Landroid/content/Context;
 
@@ -292,7 +285,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/detail/ContactLoaderFragment;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mLookupUri:Landroid/net/Uri;
 
@@ -301,7 +293,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/detail/ContactLoaderFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/detail/ContactLoaderFragment;->clearSnsData()V
 
@@ -310,7 +301,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/detail/ContactLoaderFragment;)Lcom/android/contacts/model/Contact;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mContactData:Lcom/android/contacts/model/Contact;
 
@@ -319,8 +309,6 @@
 
 .method static synthetic access$702(Lcom/android/contacts/detail/ContactLoaderFragment;Lcom/android/contacts/model/Contact;)Lcom/android/contacts/model/Contact;
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mContactData:Lcom/android/contacts/model/Contact;
 
@@ -329,8 +317,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/detail/ContactLoaderFragment;Lcom/android/contacts/model/Contact;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactLoaderFragment;->clearSnsDataIfNeeded(Lcom/android/contacts/model/Contact;)V
 
@@ -339,7 +325,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/detail/ContactLoaderFragment;)Lcom/android/contacts/detail/ContactLoaderFragment$ContactLoaderFragmentListener;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactLoaderFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mListener:Lcom/android/contacts/detail/ContactLoaderFragment$ContactLoaderFragmentListener;
 
@@ -525,7 +510,6 @@
 
 .method private areRawContactsChanged(Lcom/android/contacts/model/Contact;)Z
     .locals 11
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     const/4 v9, 0x1
 
@@ -695,7 +679,6 @@
 
 .method private clearSnsDataIfNeeded(Lcom/android/contacts/model/Contact;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactLoaderFragment;->areRawContactsChanged(Lcom/android/contacts/model/Contact;)Z
 
@@ -733,7 +716,6 @@
 
 .method private getPhoneNumbers(J)Ljava/util/ArrayList;
     .locals 11
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J)",
@@ -2019,7 +2001,6 @@
 
 .method private setRejectListMenu(Landroid/view/MenuItem;)V
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mOptionsMenuRejectListVisible:Z
 
@@ -2116,7 +2097,6 @@
 # virtual methods
 .method public handleKeyDown(I)Z
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2659,7 +2639,6 @@
 
 .method public loadUri(Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x1
 
@@ -2734,7 +2713,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -2768,7 +2746,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -2779,7 +2756,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -2820,8 +2796,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mContext:Landroid/content/Context;
 
@@ -2844,9 +2818,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -3367,7 +3338,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 13
-    .param p1    # Landroid/view/Menu;
 
     iget-object v12, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mContext:Landroid/content/Context;
 
@@ -3533,7 +3503,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "contactUri"
 
@@ -3548,7 +3517,6 @@
 
 .method public setListener(Lcom/android/contacts/detail/ContactLoaderFragment$ContactLoaderFragmentListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/detail/ContactLoaderFragment$ContactLoaderFragmentListener;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactLoaderFragment;->mListener:Lcom/android/contacts/detail/ContactLoaderFragment$ContactLoaderFragmentListener;
 

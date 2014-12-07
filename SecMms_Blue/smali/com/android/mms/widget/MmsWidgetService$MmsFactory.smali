@@ -45,8 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -147,7 +145,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/widget/MmsWidgetService$MmsFactory;)V
     .locals 0
-    .param p0    # Lcom/android/mms/widget/MmsWidgetService$MmsFactory;
 
     invoke-direct {p0}, Lcom/android/mms/widget/MmsWidgetService$MmsFactory;->notifyDataChanged()V
 
@@ -489,7 +486,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -540,7 +536,6 @@
 
 .method public getViewAt(I)Landroid/widget/RemoteViews;
     .locals 16
-    .param p1    # I
 
     const-string v10, "Mms/WidgetService"
 
@@ -1487,7 +1482,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v0, "Mms/WidgetService"
 

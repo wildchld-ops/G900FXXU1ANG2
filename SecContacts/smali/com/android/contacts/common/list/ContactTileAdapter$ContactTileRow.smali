@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/common/list/ContactTileAdapter;Landroid/content/Context;I)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactTileAdapter$ContactTileRow;->this$0:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -52,10 +50,6 @@
 
 .method private addTileFromEntry(Lcom/android/contacts/common/list/ContactTileAdapter$ContactEntry;IZZ)V
     .locals 11
-    .param p1    # Lcom/android/contacts/common/list/ContactTileAdapter$ContactEntry;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v7, p0, Lcom/android/contacts/common/list/ContactTileAdapter$ContactTileRow;->mContext:Landroid/content/Context;
 
@@ -542,7 +536,6 @@
 
 .method private onMeasureForTiles(I)V
     .locals 13
-    .param p1    # I
 
     const/high16 v12, 0x40000000
 
@@ -657,8 +650,6 @@
 # virtual methods
 .method public configureRow(Ljava/util/ArrayList;ZZ)V
     .locals 5
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -722,11 +713,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter$ContactTileRow;->mItemViewType:I
 
@@ -752,8 +738,6 @@
 
 .method protected onMeasure(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter$ContactTileRow;->mItemViewType:I
 

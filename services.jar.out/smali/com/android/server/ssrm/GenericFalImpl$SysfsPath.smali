@@ -51,8 +51,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/GenericFalImpl$ChipVendor;Lcom/android/server/ssrm/GenericFalImpl$PlatformType;)V
     .locals 3
-    .param p1    # Lcom/android/server/ssrm/GenericFalImpl$ChipVendor;
-    .param p2    # Lcom/android/server/ssrm/GenericFalImpl$PlatformType;
 
     const/4 v2, 0x0
 

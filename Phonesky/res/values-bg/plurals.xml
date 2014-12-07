@@ -56,23 +56,23 @@
         <item quantity="one">звезда</item>
     </plurals>
     <plurals name="review_author_stars_title_comment">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s звезди – „%3$s“ – „%4$s“</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s звезда – „%3$s“ – „%4$s“</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звезди – „%3$s“ – „%4$s“</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звезда – „%3$s“ – „%4$s“</item>
     </plurals>
     <plurals name="review_author_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s звезди – „%3$s“</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s звезда – „%3$s“</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звезди – „%3$s“</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звезда – „%3$s“</item>
     </plurals>
     <plurals name="review_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s звезди&amp;lt;/b> „%2$s“</item>
-        <item quantity="one">&amp;lt;b>%1$s звезда&amp;lt;/b> „%2$s“</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s звезди&amp;amp;lt;/b> „%2$s“</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s звезда&amp;amp;lt;/b> „%2$s“</item>
     </plurals>
     <plurals name="review_author_stars">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s звезди</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s звезда</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звезди</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звезда</item>
     </plurals>
     <plurals name="review_just_stars">
-        <item quantity="other">Оцени това с &amp;lt;b>%1$s звезди&amp;lt;/b></item>
-        <item quantity="one">Оцени това с &amp;lt;b>%1$s звезда&amp;lt;/b></item>
+        <item quantity="other">Оцени това с &amp;amp;lt;b>%1$s звезди&amp;amp;lt;/b></item>
+        <item quantity="one">Оцени това с &amp;amp;lt;b>%1$s звезда&amp;amp;lt;/b></item>
     </plurals>
 </resources>

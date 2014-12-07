@@ -94,10 +94,6 @@
 
 .method public eglCreateContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljavax/microedition/khronos/egl/EGLContext;[I)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLContext;
-    .param p4    # [I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/gles_jni/EGLImpl;->_eglCreateContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljavax/microedition/khronos/egl/EGLContext;[I)I
 
@@ -120,9 +116,6 @@
 
 .method public eglCreatePbufferSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;[I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # [I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/gles_jni/EGLImpl;->_eglCreatePbufferSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;[I)I
 
@@ -145,10 +138,6 @@
 
 .method public eglCreatePixmapSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljava/lang/Object;[I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # [I
 
     new-instance v1, Lcom/google/android/gles_jni/EGLSurfaceImpl;
 
@@ -178,10 +167,6 @@
 
 .method public eglCreateWindowSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljava/lang/Object;[I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # [I
 
     const/4 v2, 0x0
 
@@ -385,7 +370,6 @@
 
 .method public declared-synchronized eglGetCurrentSurface(I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -436,7 +420,6 @@
 
 .method public declared-synchronized eglGetDisplay(Ljava/lang/Object;)Ljavax/microedition/khronos/egl/EGLDisplay;
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     monitor-enter p0
 

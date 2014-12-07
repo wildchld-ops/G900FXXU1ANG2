@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,11 +61,6 @@
 
 .method public static createDefaultClickIntent(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -118,8 +112,6 @@
 
 .method private declared-synchronized drawableToBitmap(Landroid/graphics/drawable/Drawable;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 14
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -279,11 +271,6 @@
 
 .method private static logNotification(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)V
     .locals 6
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/Intent;
 
     sget-object v2, Lcom/google/android/finsky/config/G;->debugOptionsEnabled:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -358,7 +345,6 @@
 
 .method private logNotificationImpression(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -383,11 +369,6 @@
 
 .method private showAppMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v6, -0x1
 
@@ -410,12 +391,6 @@
 
 .method private showAppNotificationOnly(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const/4 v2, 0x0
 
@@ -466,12 +441,6 @@
 
 .method private showAppNotificationOrAlert(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/NotificationManager;->mListener:Lcom/google/android/finsky/utils/NotificationListener;
 
@@ -520,12 +489,6 @@
 
 .method private showDocNotification(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/NotificationManager;->mListener:Lcom/google/android/finsky/utils/NotificationListener;
 
@@ -566,17 +529,6 @@
 
 .method private showNewNotification(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/graphics/Bitmap;ILandroid/content/Intent;ZLandroid/content/Intent;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # Landroid/graphics/Bitmap;
-    .param p8    # I
-    .param p9    # Landroid/content/Intent;
-    .param p10    # Z
-    .param p11    # Landroid/content/Intent;
 
     new-instance v1, Landroid/support/v4/app/NotificationCompat$Builder;
 
@@ -728,9 +680,6 @@
 
 .method private showSuccessfulNewInstallMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/utils/NotificationManager;->mContext:Landroid/content/Context;
 
@@ -842,8 +791,6 @@
 
 .method private showSuccessfulUpdateMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1402,7 +1349,6 @@
 # virtual methods
 .method public hideAllMessagesForPackage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/utils/NotificationManager;->mContext:Landroid/content/Context;
 
@@ -1481,7 +1427,6 @@
 
 .method public setNotificationListener(Lcom/google/android/finsky/utils/NotificationListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/utils/NotificationListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/NotificationManager;->mListener:Lcom/google/android/finsky/utils/NotificationListener;
 
@@ -1490,11 +1435,6 @@
 
 .method public showDownloadErrorMessage(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Z)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/4 v8, 0x2
 
@@ -1643,8 +1583,6 @@
 
 .method public showExternalStorageFull(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1699,8 +1637,6 @@
 
 .method public showExternalStorageMissing(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1755,10 +1691,6 @@
 
 .method public showInstallationFailureMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/utils/NotificationManager;->hideInstallingMessage()V
 
@@ -1783,9 +1715,6 @@
 
 .method public showInstallingMessage(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -1884,8 +1813,6 @@
 
 .method public showInternalStorageFull(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1940,8 +1867,6 @@
 
 .method public showMaliciousAssetRemovedMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1990,9 +1915,6 @@
 
 .method public showMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2019,7 +1941,6 @@
 
 .method public showNewUpdatesAvailableMessage(Ljava/util/List;I)V
     .locals 17
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2608,8 +2529,6 @@
 
 .method public showNormalAssetRemovedMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -2664,12 +2583,6 @@
 
 .method public showNotification(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/content/Intent;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/content/Intent;
 
     invoke-static {p4}, Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
 
@@ -3349,11 +3262,6 @@
 
 .method public showPurchaseErrorMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const v5, 0x108008a
 
@@ -3376,9 +3284,6 @@
 
 .method public showSubscriptionsWarningMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const v5, 0x108008a
 
@@ -3401,10 +3306,6 @@
 
 .method public showSuccessfulInstallMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/utils/NotificationManager;->hideInstallingMessage()V
 
@@ -3423,7 +3324,6 @@
 
 .method public showUpdatesNeedApprovalMessage(Ljava/util/List;I)V
     .locals 17
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/quickcontact/QuickContactActivity;Landroid/app/FragmentManager;)V
     .locals 0
-    .param p2    # Landroid/app/FragmentManager;
 
     iput-object p1, p0, Lcom/android/contacts/quickcontact/QuickContactActivity$ViewPagerAdapter;->this$0:Lcom/android/contacts/quickcontact/QuickContactActivity;
 
@@ -51,7 +50,6 @@
 
 .method public getItem(I)Landroid/app/Fragment;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/contacts/quickcontact/QuickContactActivity$ViewPagerAdapter;->this$0:Lcom/android/contacts/quickcontact/QuickContactActivity;
 
@@ -92,7 +90,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     move-object v0, p1
 

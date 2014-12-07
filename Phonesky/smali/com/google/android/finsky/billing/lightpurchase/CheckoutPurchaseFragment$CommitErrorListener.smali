@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p2    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$CommitErrorListener;-><init>(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 8
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v7, 0x3
 

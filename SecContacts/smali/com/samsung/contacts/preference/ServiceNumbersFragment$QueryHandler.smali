@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/preference/ServiceNumbersFragment;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment$QueryHandler;->this$0:Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
@@ -38,9 +37,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     if-eqz p3, :cond_0
 

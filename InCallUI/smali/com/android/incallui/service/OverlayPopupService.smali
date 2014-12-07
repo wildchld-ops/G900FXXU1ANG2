@@ -64,9 +64,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/service/OverlayPopupService;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/OverlayPopupService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/service/OverlayPopupService;->log(Ljava/lang/String;Z)V
 
@@ -75,7 +72,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/service/OverlayPopupService;)Landroid/app/StatusBarManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/OverlayPopupService;
 
     iget-object v0, p0, Lcom/android/incallui/service/OverlayPopupService;->mStatusBarManager:Landroid/app/StatusBarManager;
 
@@ -84,7 +80,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/service/OverlayPopupService;)Lcom/android/incallui/InCallPresenter$InCallState;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/OverlayPopupService;
 
     iget-object v0, p0, Lcom/android/incallui/service/OverlayPopupService;->mState:Lcom/android/incallui/InCallPresenter$InCallState;
 
@@ -93,7 +88,6 @@
 
 .method private getCallToShow(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
     .locals 3
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/16 v2, 0x65
 
@@ -155,7 +149,6 @@
 
 .method private getPhotoDrawable(Lcom/android/services/telephony/common/Call;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -256,7 +249,6 @@
 
 .method private static isConference(Lcom/android/services/telephony/common/Call;)Z
     .locals 1
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -279,7 +271,6 @@
 
 .method private static isGenericConference(Lcom/android/services/telephony/common/Call;)Z
     .locals 1
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -304,8 +295,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "OverlayPopupService"
 
@@ -778,8 +767,6 @@
 
 .method private shouldDismiss(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)Z
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v0, 0x1
 
@@ -862,7 +849,6 @@
 # virtual methods
 .method public checkCallStatus(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -992,7 +978,6 @@
 
 .method protected initCustomLayout(Landroid/view/ViewGroup;)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
 
     const-string v1, "OverlayPopupService"
 
@@ -1142,7 +1127,6 @@
 
 .method public onChronometerTick(Landroid/widget/Chronometer;)V
     .locals 14
-    .param p1    # Landroid/widget/Chronometer;
 
     const-wide/32 v12, 0x36ee80
 
@@ -1483,8 +1467,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 5
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/16 v4, 0x8
 
@@ -1607,7 +1589,6 @@
 
 .method setTTS(J)V
     .locals 17
-    .param p1    # J
 
     const-wide/32 v13, 0x36ee80
 

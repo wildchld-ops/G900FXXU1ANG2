@@ -69,7 +69,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/activities/ShowOrCreateActivity;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ShowOrCreateActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ShowOrCreateActivity;->mCreateExtras:Landroid/os/Bundle;
 
@@ -80,7 +79,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -394,7 +392,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     new-instance v1, Ljava/util/ArrayList;
 

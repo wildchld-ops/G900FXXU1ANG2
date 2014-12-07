@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -89,8 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -101,9 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -138,7 +132,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/Hotseat;)Lcom/android/launcher2/HomeView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Hotseat;
 
     iget-object v0, p0, Lcom/android/launcher2/Hotseat;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -147,7 +140,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/Hotseat;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/Hotseat;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Hotseat;->mShowHotseatTitle:Z
 
@@ -156,7 +148,6 @@
 
 .method public static normalizeContents(Landroid/content/Context;Ljava/util/List;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -221,7 +212,6 @@
 # virtual methods
 .method public addItem(Lcom/android/launcher2/HomeItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     iget-object v0, p0, Lcom/android/launcher2/Hotseat;->mContent:Lcom/android/launcher2/CellLayoutHotseat;
 
@@ -234,7 +224,6 @@
 
 .method public addItemCP(Lcom/android/launcher2/HomeItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     iget-object v0, p0, Lcom/android/launcher2/Hotseat;->mContentCP:Lcom/android/launcher2/CellLayoutHotseat;
 
@@ -247,9 +236,6 @@
 
 .method checkHotSeatInteraction(Lcom/android/launcher2/DragState;ILandroid/view/View;)Z
     .locals 9
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -442,10 +428,6 @@
 
 .method public collectWorkspaceStateAnimators(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Workspace$State;Lcom/android/launcher2/Workspace$State;Lcom/android/launcher2/BaseItem;Ljava/util/ArrayList;)V
     .locals 12
-    .param p1    # Lcom/android/launcher2/Workspace;
-    .param p2    # Lcom/android/launcher2/Workspace$State;
-    .param p3    # Lcom/android/launcher2/Workspace$State;
-    .param p4    # Lcom/android/launcher2/BaseItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -838,7 +820,6 @@
 
 .method public dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/Utilities;->onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;)V
 
@@ -849,7 +830,6 @@
 
 .method getCellXFromOrder(I)I
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/Hotseat;->mIsLandscape:Z
 
@@ -863,8 +843,6 @@
 
 .method getCellYFromOrder(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/Hotseat;->mIsLandscape:Z
 
@@ -883,7 +861,6 @@
 
 .method public getDragOutline(Landroid/view/View;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/launcher2/Hotseat;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -916,8 +893,6 @@
 
 .method getOrderInHotseat(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/Hotseat;->mIsLandscape:Z
 
@@ -955,14 +930,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 8
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v7, 0x0
 
@@ -1037,14 +1010,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 8
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v7, 0x2
 
@@ -1119,7 +1090,6 @@
 
 .method public onDragEndedWithItem(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v1, p0, Lcom/android/launcher2/Hotseat;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -1134,7 +1104,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v7, 0x0
 
@@ -1287,7 +1256,6 @@
 
 .method public onDragStartedWithItem(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/launcher2/Hotseat;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -1349,7 +1317,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -1661,9 +1628,6 @@
 
 .method public setDimHotseatItems(Lcom/android/launcher2/CellLayoutHotseat;ZZ)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/CellLayoutHotseat;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-virtual {p1}, Lcom/android/launcher2/CellLayout;->getPageChildCount()I
 
@@ -1699,7 +1663,6 @@
 
 .method setDragInContentArea(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Hotseat;->mDragInContentArea:Z
 
@@ -1708,7 +1671,6 @@
 
 .method public setup(Lcom/android/launcher2/HomeView;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     const/4 v2, 0x1
 

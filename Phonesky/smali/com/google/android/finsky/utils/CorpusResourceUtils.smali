@@ -6,7 +6,6 @@
 # direct methods
 .method public static getCorpusCellContentDescriptionResource(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -78,7 +77,6 @@
 
 .method public static getCorpusCellContentLongDescriptionResource(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -142,7 +140,6 @@
 
 .method public static getCorpusCellContentReasonDescriptionResource(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -206,7 +203,6 @@
 
 .method public static getCorpusMyCollectionDescription(I)Ljava/lang/String;
     .locals 6
-    .param p0    # I
 
     const/4 v4, 0x0
 
@@ -276,7 +272,6 @@
 
 .method public static getCorpusSpinnerDrawable(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -321,7 +316,6 @@
 
 .method public static getDescriptionHeaderStringId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -345,8 +339,6 @@
 
 .method public static getItemThumbnailContentDescription(Lcom/google/android/finsky/api/model/Document;Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 5
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v1, 0x0
 
@@ -527,8 +519,6 @@
 
 .method public static getLargeDetailsIconHeight(Landroid/content/Context;I)I
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v1, 0x7f0b0053
 
@@ -579,8 +569,6 @@
 
 .method public static getLargeDetailsIconWidth(Landroid/content/Context;I)I
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v1, 0x7f0b0053
 
@@ -631,7 +619,6 @@
 
 .method public static getMenuExpanderMaximized(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -681,7 +668,6 @@
 
 .method public static getMenuExpanderMinimized(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -731,7 +717,6 @@
 
 .method public static getNoSearchResultsMessageId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -800,7 +785,6 @@
 
 .method public static getOpenButtonStringId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -840,7 +824,6 @@
 
 .method public static getOwnedItemIndicator(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -914,8 +897,6 @@
 
 .method public static getPlayActionBarBackgroundDrawable(Landroid/content/Context;I)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -965,8 +946,6 @@
 
 .method public static getPrimaryColor(Landroid/content/Context;I)I
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1024,7 +1003,6 @@
 
 .method public static getPurchaseButtonLockIcon(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1074,7 +1052,6 @@
 
 .method public static getPurchaseButtonPlayIcon(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1124,7 +1101,6 @@
 
 .method public static getPurchaseButtonWalletIcon(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1174,7 +1150,6 @@
 
 .method public static getQuickLinkPrismBackground(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1248,8 +1223,6 @@
 
 .method public static getRateString(Landroid/content/res/Resources;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1398,7 +1371,6 @@
 
 .method public static getRatingBarLayoutId(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1472,7 +1444,6 @@
 
 .method public static getRatingBarWideLayoutId(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1546,7 +1517,6 @@
 
 .method public static getRecommendationWidgetStripResourceId(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1621,8 +1591,6 @@
 
 .method public static getRegularDetailsIconHeight(Landroid/content/Context;I)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v1, 0x7f0b002b
 
@@ -1707,7 +1675,6 @@
 
 .method public static getReviewEditDrawable(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1781,8 +1748,6 @@
 
 .method public static getSecondaryTextColor(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1840,7 +1805,6 @@
 
 .method public static getShareHeaderId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

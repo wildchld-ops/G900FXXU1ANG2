@@ -52,8 +52,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/DfeModel;-><init>()V
 
@@ -64,7 +62,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/Browse$BrowseResponse;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Browse$BrowseResponse;
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/DfeModel;-><init>()V
 
@@ -77,7 +74,6 @@
 # virtual methods
 .method public buildContentList(Lcom/google/android/finsky/api/DfeApi;)Lcom/google/android/finsky/api/model/DfeList;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/DfeBrowse;->isReady()Z
 
@@ -117,7 +113,6 @@
 
 .method public buildPromoList(Lcom/google/android/finsky/api/DfeApi;)Lcom/google/android/finsky/api/model/DfeList;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/DfeBrowse;->hasPromotionalItems()Z
 
@@ -315,7 +310,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Browse$BrowseResponse;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Browse$BrowseResponse;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/DfeBrowse;->clearErrors()V
 
@@ -328,7 +322,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Browse$BrowseResponse;
 
@@ -339,8 +332,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/DfeBrowse;->mBrowseResponse:Lcom/google/android/finsky/protos/Browse$BrowseResponse;
 

@@ -18,7 +18,6 @@
 # direct methods
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;
 
     invoke-static {p0}, Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender;->dispatch(Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;)V
 
@@ -35,7 +34,6 @@
 
 .method private static dispatch(Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;)V
     .locals 2
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener$SmsSenderResult;
 
     sget-object v0, Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender;->mListener:Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener;
 
@@ -64,11 +62,6 @@
 
 .method public static send(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/billing/carrierbilling/flow/association/SmsSender$SmsSendListener;
 
     const/4 v3, 0x0
 

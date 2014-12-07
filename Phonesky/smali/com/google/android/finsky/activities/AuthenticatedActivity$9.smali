@@ -36,7 +36,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     return-void
 .end method

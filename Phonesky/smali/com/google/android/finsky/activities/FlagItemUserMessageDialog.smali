@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;)Lcom/google/android/finsky/activities/FlagItemUserMessageDialog$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;->getListener()Lcom/google/android/finsky/activities/FlagItemUserMessageDialog$Listener;
 
@@ -37,7 +36,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;->mMessage:Ljava/lang/String;
 
@@ -46,8 +44,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;->mMessage:Ljava/lang/String;
 
@@ -93,7 +89,6 @@
 
 .method public static newInstance(I)Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;
     .locals 3
-    .param p0    # I
 
     new-instance v1, Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;
 
@@ -116,7 +111,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -213,7 +207,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemUserMessageDialog;->mMessage:Ljava/lang/String;
 

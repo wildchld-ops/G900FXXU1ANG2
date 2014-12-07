@@ -88,9 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;Lcom/samsung/android/airbutton/Attributes;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;
-    .param p3    # Lcom/samsung/android/airbutton/Attributes;
 
     const/16 v3, 0xc8
 
@@ -713,8 +710,6 @@
 
 .method private getAngle(DD)D
     .locals 8
-    .param p1    # D
-    .param p3    # D
 
     const-wide/16 v6, 0x0
 
@@ -754,8 +749,6 @@
 
 .method private getDistanceFromCenter(DD)D
     .locals 9
-    .param p1    # D
-    .param p3    # D
 
     const-wide/16 v1, 0x0
 
@@ -776,7 +769,6 @@
 
 .method private getItemIndex(Landroid/view/MotionEvent;)I
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -911,8 +903,6 @@
 
 .method private playFocusAnimation(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -1014,7 +1004,6 @@
 
 .method private playHideDescriptionAnimation(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v2, 0x2
 
@@ -1200,7 +1189,6 @@
 
 .method private playMoveFocusAnimation(F)V
     .locals 5
-    .param p1    # F
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonQuickCommandView;->mMoveFocusAnimation:Landroid/animation/ObjectAnimator;
 
@@ -1266,8 +1254,6 @@
 
 .method private playShowDescriptionAnimation(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x2
 
@@ -1857,7 +1843,6 @@
 # virtual methods
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -2533,7 +2518,6 @@
 
 .method protected onTouchDown(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, -0x1
 
@@ -2558,7 +2542,6 @@
 
 .method protected onTouchMove(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -2721,7 +2704,6 @@
 
 .method protected onTouchUp(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/airbutton/view/AirButtonQuickCommandView;->getItemIndex(Landroid/view/MotionEvent;)I
 
@@ -2745,8 +2727,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -2755,21 +2735,18 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected showHoverEnterAnimation(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected showHoverExitAnimation(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

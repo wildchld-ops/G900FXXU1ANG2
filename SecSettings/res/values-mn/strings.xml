@@ -1381,7 +1381,7 @@ Wi-Fi ба Хөдөлгөөнт голомт зэрэг ажиллах боло�
     <string name="usb_tethering_errored_subtext">USB холболтын алдаа</string>
     <string name="usb_tethering_on_during_sidesync_popup">SideSync-ийг ашиглаж байх үед USB холболтыг идэвхгүй болгох боломжгүй. USB холболтыг идэвхгүй болгоход SideSync-ийг идэвхгүй болгоно</string>
     <string name="usb_tethering_off_during_sidesync_popup">SideSync-ийг ашиглаж байх үед USB холболтыг идэвхжүүлэх боломжгүй. USB холболтыг идэвхжүүлэхэд SideSync-ийг идэвхгүй болгоно</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth интернет цацагч</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth интернет цацагч</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Төхөөрөмжийн Интернэт холболтыг хуваалцаж байна…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Төхөөрөмжийн интернэт холболтыг 1 төхөөрөмжтэй хуваалцсан</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Төхөөрөмжийн интернэт холболтыг %d төхөөрөмжтэй хуваалцсан</string>

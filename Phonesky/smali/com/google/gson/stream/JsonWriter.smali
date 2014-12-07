@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Writer;)V
     .locals 2
-    .param p1    # Ljava/io/Writer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -149,7 +148,6 @@
 
 .method private beforeValue(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -275,9 +273,6 @@
 
 .method private close(Lcom/google/gson/stream/JsonScope;Lcom/google/gson/stream/JsonScope;Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
     .locals 4
-    .param p1    # Lcom/google/gson/stream/JsonScope;
-    .param p2    # Lcom/google/gson/stream/JsonScope;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -420,8 +415,6 @@
 
 .method private open(Lcom/google/gson/stream/JsonScope;Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
     .locals 1
-    .param p1    # Lcom/google/gson/stream/JsonScope;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -467,7 +460,6 @@
 
 .method private replaceTop(Lcom/google/gson/stream/JsonScope;)V
     .locals 2
-    .param p1    # Lcom/google/gson/stream/JsonScope;
 
     iget-object v0, p0, Lcom/google/gson/stream/JsonWriter;->stack:Ljava/util/List;
 
@@ -486,7 +478,6 @@
 
 .method private string(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -861,7 +852,6 @@
 
 .method public name(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -937,7 +927,6 @@
 
 .method public final setHtmlSafe(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/gson/stream/JsonWriter;->htmlSafe:Z
 
@@ -946,7 +935,6 @@
 
 .method public final setIndent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -977,7 +965,6 @@
 
 .method public final setLenient(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/gson/stream/JsonWriter;->lenient:Z
 
@@ -986,7 +973,6 @@
 
 .method public final setSerializeNulls(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/gson/stream/JsonWriter;->serializeNulls:Z
 
@@ -995,7 +981,6 @@
 
 .method public value(J)Lcom/google/gson/stream/JsonWriter;
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1021,7 +1006,6 @@
 
 .method public value(Ljava/lang/Number;)Lcom/google/gson/stream/JsonWriter;
     .locals 4
-    .param p1    # Ljava/lang/Number;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1111,7 +1095,6 @@
 
 .method public value(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1141,7 +1124,6 @@
 
 .method public value(Z)Lcom/google/gson/stream/JsonWriter;
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

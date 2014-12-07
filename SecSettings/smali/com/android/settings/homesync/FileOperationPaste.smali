@@ -67,10 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/settings/homesync/FileOperationProgress;Ljava/util/ArrayList;Lcom/android/settings/homesync/FileOperationPaste$PasteType;Lcom/android/settings/homesync/FileOperationPaste$RequestType;)V
     .locals 7
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/settings/homesync/FileOperationProgress;
-    .param p4    # Lcom/android/settings/homesync/FileOperationPaste$PasteType;
-    .param p5    # Lcom/android/settings/homesync/FileOperationPaste$RequestType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -186,9 +182,6 @@
 
 .method private CopyFile(Ljava/io/File;Ljava/io/File;Lcom/android/settings/homesync/FileOperationPaste$EncryptionType;)Z
     .locals 39
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
-    .param p3    # Lcom/android/settings/homesync/FileOperationPaste$EncryptionType;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -896,8 +889,6 @@
 
 .method private CopyFileForPrivate(Ljava/io/File;Ljava/io/File;)Z
     .locals 15
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     iget-boolean v0, p0, Lcom/android/settings/homesync/FileOperation;->bIsoperationCancelled:Z
 
@@ -1011,8 +1002,6 @@
 
 .method private CopyFileWithDecryption(Ljava/io/File;Ljava/io/File;)Z
     .locals 15
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     iget-boolean v0, p0, Lcom/android/settings/homesync/FileOperation;->bIsoperationCancelled:Z
 
@@ -1137,8 +1126,6 @@
 
 .method private CopyFileWithEncryption(Ljava/io/File;Ljava/io/File;)Z
     .locals 15
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     iget-boolean v0, p0, Lcom/android/settings/homesync/FileOperation;->bIsoperationCancelled:Z
 
@@ -1267,7 +1254,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/homesync/FileOperationPaste;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/FileOperationPaste;
 
     iget-object v0, p0, Lcom/android/settings/homesync/FileOperationPaste;->mFolderList:Ljava/util/ArrayList;
 
@@ -1276,7 +1262,6 @@
 
 .method private checkDestStorageSpace(J)Z
     .locals 5
-    .param p1    # J
 
     const-wide/16 v1, 0x0
 
@@ -1326,7 +1311,6 @@
 
 .method private gather(Lcom/android/settings/homesync/FileOperationPaste$PasteInfo;Ljava/util/ArrayList;)J
     .locals 11
-    .param p1    # Lcom/android/settings/homesync/FileOperationPaste$PasteInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1486,9 +1470,6 @@
 
 .method private prepareDestPathForPrivate(Ljava/lang/String;Ljava/lang/String;Lcom/android/settings/homesync/FileOperationPaste$EncryptionType;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/settings/homesync/FileOperationPaste$EncryptionType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2439,7 +2420,6 @@
 
 .method public setAccountName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/homesync/FileOperationPaste;->mAccountName:Ljava/lang/String;
 

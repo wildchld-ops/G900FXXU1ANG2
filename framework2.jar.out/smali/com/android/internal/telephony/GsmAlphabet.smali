@@ -1689,8 +1689,6 @@
 
 .method public static CountGsmSeptets(Ljava/lang/CharSequence;Z)Lcom/android/internal/telephony/GsmAlphabet$TextEncodingDetails;
     .locals 27
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Z
 
     sget-boolean v25, Lcom/android/internal/telephony/GsmAlphabet;->sDisableCountryEncodingCheck:Z
 
@@ -2372,9 +2370,6 @@
 
 .method public static CountGsmSeptetsWithEmail(Ljava/lang/CharSequence;ZI)Lcom/android/internal/telephony/GsmAlphabet$TextEncodingDetails;
     .locals 31
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Z
-    .param p2    # I
 
     const-string v28, "GSM"
 
@@ -3213,7 +3208,6 @@
 
 .method public static charToGsm(C)I
     .locals 4
-    .param p0    # C
 
     const/16 v3, 0x20
 
@@ -3247,8 +3241,6 @@
 
 .method public static charToGsm(CZ)I
     .locals 5
-    .param p0    # C
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -3314,7 +3306,6 @@
 
 .method public static charToGsmExtended(C)I
     .locals 5
-    .param p0    # C
 
     const/16 v4, 0x20
 
@@ -3346,7 +3337,6 @@
 
 .method public static convertEachCharacter(C)C
     .locals 4
-    .param p0    # C
 
     const/4 v3, -0x1
 
@@ -3401,7 +3391,6 @@
 
 .method private static convertNonGSMCharacter(C)C
     .locals 4
-    .param p0    # C
 
     move v0, p0
 
@@ -4172,7 +4161,6 @@
 
 .method public static countGsmSeptets(C)I
     .locals 3
-    .param p0    # C
 
     const/4 v1, 0x0
 
@@ -4196,8 +4184,6 @@
 
 .method public static countGsmSeptets(CZ)I
     .locals 4
-    .param p0    # C
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -4251,8 +4237,6 @@
 
 .method public static countGsmSeptets(Ljava/lang/CharSequence;Z)I
     .locals 4
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -4290,10 +4274,6 @@
 
 .method public static countGsmSeptetsUsingTables(Ljava/lang/CharSequence;ZII)I
     .locals 11
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, -0x1
 
@@ -4511,11 +4491,6 @@
 
 .method public static findGsmSeptetLimitIndex(Ljava/lang/String;IIII)I
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v7, -0x1
 
@@ -4637,9 +4612,6 @@
 
 .method public static gsm7BitPackedToString([BII)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -4662,10 +4634,6 @@
 
 .method public static gsm7BitPackedToString([BIII)Ljava/lang/String;
     .locals 10
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -4781,12 +4749,6 @@
 
 .method public static gsm7BitPackedToString([BIIIII)Ljava/lang/String;
     .locals 15
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -5116,9 +5078,6 @@
 
 .method public static gsm8BitUnpackedToString([BII)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, ""
 
@@ -5131,10 +5090,6 @@
 
 .method public static gsm8BitUnpackedToString([BIILjava/lang/String;)Ljava/lang/String;
     .locals 16
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -5384,7 +5339,6 @@
 
 .method public static gsmExtendedToChar(I)C
     .locals 4
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -5435,7 +5389,6 @@
 
 .method public static gsmToChar(I)C
     .locals 2
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -5464,9 +5417,6 @@
 
 .method private static packSmsChar([BII)V
     .locals 4
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     div-int/lit8 v0, p1, 0x8
 
@@ -5504,7 +5454,6 @@
 
 .method static declared-synchronized setEnabledLockingShiftTables([I)V
     .locals 2
-    .param p0    # [I
 
     const-class v1, Lcom/android/internal/telephony/GsmAlphabet;
 
@@ -5533,7 +5482,6 @@
 
 .method static declared-synchronized setEnabledSingleShiftTables([I)V
     .locals 2
-    .param p0    # [I
 
     const-class v1, Lcom/android/internal/telephony/GsmAlphabet;
 
@@ -5585,7 +5533,6 @@
 
 .method public static stringToGsm7BitPacked(Ljava/lang/String;)[B
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -5605,9 +5552,6 @@
 
 .method public static stringToGsm7BitPacked(Ljava/lang/String;II)[B
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -5627,11 +5571,6 @@
 
 .method public static stringToGsm7BitPacked(Ljava/lang/String;IZII)[B
     .locals 15
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -5795,8 +5734,6 @@
 
 .method public static stringToGsm7BitPackedWithHeader(Ljava/lang/String;[B)[B
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -5814,10 +5751,6 @@
 
 .method public static stringToGsm7BitPackedWithHeader(Ljava/lang/String;[BII)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/telephony/EncodeException;
@@ -5874,7 +5807,6 @@
 
 .method public static stringToGsm8BitPacked(Ljava/lang/String;)[B
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -5895,10 +5827,6 @@
 
 .method public static stringToGsm8BitUnpackedField(Ljava/lang/String;[BII)V
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const/16 v11, 0x20
 

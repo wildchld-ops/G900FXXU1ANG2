@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Ljava/lang/reflect/Type;)V
     .locals 0
-    .param p0    # Ljava/lang/reflect/Type;
 
     invoke-static {p0}, Lcom/google/gson/internal/$Gson$Types;->checkNotPrimitive(Ljava/lang/reflect/Type;)V
 
@@ -41,7 +40,6 @@
 
 .method static synthetic access$100(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     invoke-static {p0}, Lcom/google/gson/internal/$Gson$Types;->hashCodeOrZero(Ljava/lang/Object;)I
 
@@ -52,7 +50,6 @@
 
 .method public static arrayOf(Ljava/lang/reflect/Type;)Ljava/lang/reflect/GenericArrayType;
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
 
     new-instance v0, Lcom/google/gson/internal/$Gson$Types$GenericArrayTypeImpl;
 
@@ -63,7 +60,6 @@
 
 .method public static canonicalize(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 7
-    .param p0    # Ljava/lang/reflect/Type;
 
     instance-of v4, p0, Ljava/lang/Class;
 
@@ -174,7 +170,6 @@
 
 .method private static checkNotPrimitive(Ljava/lang/reflect/Type;)V
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
 
     instance-of v0, p0, Ljava/lang/Class;
 
@@ -235,8 +230,6 @@
 
 .method static equal(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-eq p0, p1, :cond_0
 
@@ -262,8 +255,6 @@
 
 .method public static equals(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Z
     .locals 12
-    .param p0    # Ljava/lang/reflect/Type;
-    .param p1    # Ljava/lang/reflect/Type;
 
     const/4 v8, 0x1
 
@@ -497,7 +488,6 @@
 
 .method public static getArrayComponentType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
 
     instance-of v0, p0, Ljava/lang/reflect/GenericArrayType;
 
@@ -524,7 +514,6 @@
 
 .method public static getCollectionElementType(Ljava/lang/reflect/Type;Ljava/lang/Class;)Ljava/lang/reflect/Type;
     .locals 3
-    .param p0    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -579,7 +568,6 @@
 
 .method static getGenericSupertype(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Type;
     .locals 6
-    .param p0    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -709,7 +697,6 @@
 
 .method public static getMapKeyAndValueTypes(Ljava/lang/reflect/Type;Ljava/lang/Class;)[Ljava/lang/reflect/Type;
     .locals 6
-    .param p0    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -780,7 +767,6 @@
 
 .method public static getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;
     .locals 7
-    .param p0    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -932,7 +918,6 @@
 
 .method static getSupertype(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Type;
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -964,7 +949,6 @@
 
 .method private static hashCodeOrZero(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     if-eqz p0, :cond_0
 
@@ -983,8 +967,6 @@
 
 .method private static indexOf([Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 2
-    .param p0    # [Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -1018,9 +1000,6 @@
 
 .method public static varargs newParameterizedTypeWithOwner(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/ParameterizedType;
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
-    .param p1    # Ljava/lang/reflect/Type;
-    .param p2    # [Ljava/lang/reflect/Type;
 
     new-instance v0, Lcom/google/gson/internal/$Gson$Types$ParameterizedTypeImpl;
 
@@ -1031,8 +1010,6 @@
 
 .method public static resolve(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 21
-    .param p0    # Ljava/lang/reflect/Type;
-    .param p2    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1373,7 +1350,6 @@
 
 .method static resolveTypeVariable(Ljava/lang/reflect/Type;Ljava/lang/Class;Ljava/lang/reflect/TypeVariable;)Ljava/lang/reflect/Type;
     .locals 4
-    .param p0    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1426,7 +1402,6 @@
 
 .method public static subtypeOf(Ljava/lang/reflect/Type;)Ljava/lang/reflect/WildcardType;
     .locals 3
-    .param p0    # Ljava/lang/reflect/Type;
 
     new-instance v0, Lcom/google/gson/internal/$Gson$Types$WildcardTypeImpl;
 
@@ -1447,7 +1422,6 @@
 
 .method public static supertypeOf(Ljava/lang/reflect/Type;)Ljava/lang/reflect/WildcardType;
     .locals 5
-    .param p0    # Ljava/lang/reflect/Type;
 
     const/4 v4, 0x1
 
@@ -1472,7 +1446,6 @@
 
 .method public static typeToString(Ljava/lang/reflect/Type;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
 
     instance-of v0, p0, Ljava/lang/Class;
 

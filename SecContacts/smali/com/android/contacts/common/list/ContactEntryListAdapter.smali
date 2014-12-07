@@ -64,7 +64,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/IndexerListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -107,7 +106,6 @@
 
 .method private getPartitionByDirectoryId(J)I
     .locals 5
-    .param p1    # J
 
     invoke-virtual {p0}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->getPartitionCount()I
 
@@ -152,7 +150,6 @@
 
 .method private updateIndexer(Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 
@@ -222,7 +219,6 @@
 
 .method protected applyDataRestriction(Landroid/net/Uri$Builder;)V
     .locals 3
-    .param p1    # Landroid/net/Uri$Builder;
 
     iget-boolean v1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mDataRestrictedByCallingPackage:Z
 
@@ -298,9 +294,6 @@
 
 .method protected bindHeaderView(Landroid/view/View;ILandroid/database/Cursor;)V
     .locals 18
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     move-object/from16 v0, p0
 
@@ -535,13 +528,6 @@
 
 .method protected bindQuickContact(Lcom/android/contacts/common/list/ContactListItemView;ILandroid/database/Cursor;IIII)V
     .locals 20
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const-wide/16 v7, 0x0
 
@@ -731,8 +717,6 @@
 
 .method public changeCursor(ILandroid/database/Cursor;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     invoke-virtual {p0}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->getPartitionCount()I
 
@@ -800,7 +784,6 @@
 
 .method public changeCursor(Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -811,7 +794,6 @@
 
 .method public changeDirectories(Landroid/database/Cursor;)V
     .locals 16
-    .param p1    # Landroid/database/Cursor;
 
     invoke-interface/range {p1 .. p1}, Landroid/database/Cursor;->getCount()I
 
@@ -1098,7 +1080,6 @@
 
 .method protected clearPinnedHeaderContactsCount(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     check-cast p1, Lcom/android/contacts/common/list/ContactListPinnedHeaderView;
 
@@ -1111,8 +1092,6 @@
 
 .method public configureDefaultPartition(ZZ)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, -0x1
 
@@ -1206,8 +1185,6 @@
 
 .method protected createPinnedSectionHeaderView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     new-instance v0, Lcom/android/contacts/common/list/ContactListPinnedHeaderView;
 
@@ -1231,10 +1208,6 @@
 
 .method protected getContactUri(ILandroid/database/Cursor;II)Landroid/net/Uri;
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # I
 
     invoke-interface {p2, p3}, Landroid/database/Cursor;->getLong(I)J
 
@@ -1352,8 +1325,6 @@
 
 .method public getItemViewType(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/common/list/IndexerListAdapter;->getItemViewType(II)I
 
@@ -1409,9 +1380,6 @@
 
 .method public getQuantityText(III)Ljava/lang/String;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -1510,7 +1478,6 @@
 
 .method protected isEasAccountPartition(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->getPartition(I)Lcom/android/common/widget/CompositeCursorAdapter$Partition;
 
@@ -1553,7 +1520,6 @@
 
 .method protected isEasAccountPartition(J)Z
     .locals 5
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -1649,7 +1615,6 @@
 
 .method public isGalSearchShowMore(I)Z
     .locals 6
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->getPartitionForPosition(I)I
 
@@ -1740,7 +1705,6 @@
 
 .method public isPhotoSupported(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->getPartition(I)Lcom/android/common/widget/CompositeCursorAdapter$Partition;
 
@@ -1791,7 +1755,6 @@
 
 .method public isUserProfile(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -1854,10 +1817,6 @@
 
 .method protected newHeaderView(Landroid/content/Context;ILandroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -1929,7 +1888,6 @@
 
 .method public onDataReloadDirectoryPartition(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->getPartition(I)Lcom/android/common/widget/CompositeCursorAdapter$Partition;
 
@@ -2005,7 +1963,6 @@
 
 .method public setContactNameDisplayOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mDisplayOrder:I
 
@@ -2014,7 +1971,6 @@
 
 .method public setDarkTheme(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mDarkTheme:Z
 
@@ -2023,7 +1979,6 @@
 
 .method public setDataRestrictedByCallingPackage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mDataRestrictedByCallingPackage:Z
 
@@ -2032,7 +1987,6 @@
 
 .method protected setDefaultFilterHeaderText(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/contacts/common/list/ContactEntryListAdapter;->getContext()Landroid/content/Context;
 
@@ -2053,7 +2007,6 @@
 
 .method public setDirectoryResultLimit(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mDirectoryResultLimit:I
 
@@ -2062,7 +2015,6 @@
 
 .method public setDirectorySearchMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mDirectorySearchMode:I
 
@@ -2071,7 +2023,6 @@
 
 .method public setDisplayPhotos(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mDisplayPhotos:Z
 
@@ -2080,7 +2031,6 @@
 
 .method public setEasyMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mIsEasyMode:Z
 
@@ -2089,7 +2039,6 @@
 
 .method public setEmptyListEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mEmptyListEnabled:Z
 
@@ -2098,7 +2047,6 @@
 
 .method public setFilter(Lcom/android/contacts/common/list/ContactListFilter;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mFilter:Lcom/android/contacts/common/list/ContactListFilter;
 
@@ -2107,7 +2055,6 @@
 
 .method public setHandleCounts([I)V
     .locals 3
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -2132,7 +2079,6 @@
 
 .method protected setHugeFontEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mHughFontEnabled:Z
 
@@ -2141,7 +2087,6 @@
 
 .method public setIncludeProfile(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mIncludeProfile:Z
 
@@ -2150,7 +2095,6 @@
 
 .method public setMultiSelectEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mMultiSelectEnabled:Z
 
@@ -2166,7 +2110,6 @@
 
 .method public setMultiSelectionMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mIsMultiSelectionMode:Z
 
@@ -2175,7 +2118,6 @@
 
 .method public setPhotoLoader(Lcom/android/contacts/common/ContactPhotoManager;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/ContactPhotoManager;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mPhotoLoader:Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -2184,7 +2126,6 @@
 
 .method protected setPinnedHeaderContactsCount(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mProfileExists:Z
 
@@ -2207,8 +2148,6 @@
 
 .method protected setPinnedSectionTitle(Landroid/view/View;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
 
     check-cast p1, Lcom/android/contacts/common/list/ContactListPinnedHeaderView;
 
@@ -2219,7 +2158,6 @@
 
 .method public setProfileExists(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mProfileExists:Z
 
@@ -2251,7 +2189,6 @@
 
 .method public setQueryString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mQueryString:Ljava/lang/String;
 
@@ -2284,7 +2221,6 @@
 
 .method public setQuickContactEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mQuickContactEnabled:Z
 
@@ -2293,7 +2229,6 @@
 
 .method public setSearchMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mSearchMode:Z
 
@@ -2302,7 +2237,6 @@
 
 .method public setSelectionVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mSelectionVisible:Z
 
@@ -2311,7 +2245,6 @@
 
 .method public setSortOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mSortOrder:I
 
@@ -2320,7 +2253,6 @@
 
 .method public setVoLteEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter;->mIsVoLteEnabled:Z
 

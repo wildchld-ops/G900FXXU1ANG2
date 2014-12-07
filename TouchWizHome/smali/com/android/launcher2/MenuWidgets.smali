@@ -199,8 +199,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x3
 
@@ -401,7 +399,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuWidgetsFragment;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mMenuWidgetsFragment:Lcom/android/launcher2/MenuWidgetsFragment;
 
@@ -410,7 +407,6 @@
 
 .method static synthetic access$1100(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mStateNormal:Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
 
@@ -419,7 +415,6 @@
 
 .method static synthetic access$1200(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mStateUninstall:Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
 
@@ -428,7 +423,6 @@
 
 .method static synthetic access$1300(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mStateSearch:Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
 
@@ -437,7 +431,6 @@
 
 .method static synthetic access$1400(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mStatePageEdit:Lcom/android/launcher2/MenuWidgets$WidgetStateObj;
 
@@ -446,8 +439,6 @@
 
 .method static synthetic access$1800(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/WidgetFolderView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Lcom/android/launcher2/WidgetFolderView;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuWidgets;->openWidgetFolder(Lcom/android/launcher2/WidgetFolderView;)V
 
@@ -456,8 +447,6 @@
 
 .method static synthetic access$1900(Lcom/android/launcher2/MenuWidgets;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuWidgets;->clickNotAllowed(Landroid/view/View;)V
 
@@ -466,7 +455,6 @@
 
 .method static synthetic access$2000(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuTitleBarManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mTitleBarManager:Lcom/android/launcher2/MenuTitleBarManager;
 
@@ -475,8 +463,6 @@
 
 .method static synthetic access$202(Lcom/android/launcher2/MenuWidgets;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/MenuWidgets;->mListenerAttached:Z
 
@@ -485,7 +471,6 @@
 
 .method static synthetic access$2100(Lcom/android/launcher2/MenuWidgets;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     invoke-direct {p0}, Lcom/android/launcher2/MenuWidgets;->getDesiredChildPageWidth()I
 
@@ -496,7 +481,6 @@
 
 .method static synthetic access$2200(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuStateAnimatorSet;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mStateAnimatorSet:Lcom/android/launcher2/MenuStateAnimatorSet;
 
@@ -505,8 +489,6 @@
 
 .method static synthetic access$2300(Lcom/android/launcher2/MenuWidgets;Z)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuWidgets;->setDragInProgress(Z)V
 
@@ -515,7 +497,6 @@
 
 .method static synthetic access$2400(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/WidgetFolder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mWidgetFolder:Lcom/android/launcher2/WidgetFolder;
 
@@ -524,8 +505,6 @@
 
 .method static synthetic access$2402(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/WidgetFolder;)Lcom/android/launcher2/WidgetFolder;
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Lcom/android/launcher2/WidgetFolder;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuWidgets;->mWidgetFolder:Lcom/android/launcher2/WidgetFolder;
 
@@ -534,7 +513,6 @@
 
 .method static synthetic access$2500(Lcom/android/launcher2/MenuWidgets;)Lcom/android/launcher2/MenuView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mTabHost:Lcom/android/launcher2/MenuView;
 
@@ -543,7 +521,6 @@
 
 .method static synthetic access$2600(Lcom/android/launcher2/MenuWidgets;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mDarkenLayerTouchListener:Landroid/view/View$OnTouchListener;
 
@@ -552,10 +529,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/MenuWidgets;Ljava/lang/String;Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;
-    .param p3    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher2/MenuWidgets;->loadWidgetPreviewsInBackground(Ljava/lang/String;Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
 
@@ -564,7 +537,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/MenuWidgets;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets;->mRunningTasks:Ljava/util/List;
 
@@ -573,9 +545,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/MenuWidgets;Ljava/lang/String;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/MenuWidgets;->onSyncWidgetPageItems(Ljava/lang/String;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
 
@@ -584,9 +553,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/PagedViewGridLayout;I)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Lcom/android/launcher2/PagedViewGridLayout;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/MenuWidgets;->isPageValid(Lcom/android/launcher2/PagedViewGridLayout;I)Z
 
@@ -597,7 +563,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/MenuWidgets;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget v0, p0, Lcom/android/launcher2/MenuWidgets;->mPreviewWidth:I
 
@@ -606,7 +571,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/MenuWidgets;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
 
     iget v0, p0, Lcom/android/launcher2/MenuWidgets;->mPreviewHeight:I
 
@@ -615,13 +579,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/PagedViewGridLayout;ILjava/util/List;III)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Lcom/android/launcher2/PagedViewGridLayout;
-    .param p2    # I
-    .param p3    # Ljava/util/List;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/android/launcher2/MenuWidgets;->prepareLoadWidgetPreviewsTask(Lcom/android/launcher2/PagedViewGridLayout;ILjava/util/List;III)V
 
@@ -777,7 +734,6 @@
 
 .method private beginDraggingWidget(Lcom/android/launcher2/PagedViewWidget;)V
     .locals 12
-    .param p1    # Lcom/android/launcher2/PagedViewWidget;
 
     const/4 v11, 0x0
 
@@ -940,7 +896,6 @@
 
 .method private cancelAllTasks(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/launcher2/MenuWidgets;->mRunningTasks:Ljava/util/List;
 
@@ -977,7 +932,6 @@
 
 .method private changeOrientationIfRequired(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1146,7 +1100,6 @@
 
 .method private clickNotAllowed(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const v4, 0x7f0e0004
 
@@ -1266,7 +1219,6 @@
 
 .method private getApplicationLabel(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1396,7 +1348,6 @@
 
 .method private getSleepForPage(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1518,7 +1469,6 @@
 
 .method private getThreadPriorityForPage(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1550,8 +1500,6 @@
 
 .method private isPageValid(Lcom/android/launcher2/PagedViewGridLayout;I)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/PagedViewGridLayout;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -1580,9 +1528,6 @@
 
 .method private loadWidgetPreviewsInBackground(Ljava/lang/String;Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;
-    .param p3    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
     if-eqz p3, :cond_0
 
@@ -1698,8 +1643,6 @@
 
 .method private onSyncWidgetPageItems(Ljava/lang/String;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
     if-eqz p2, :cond_0
 
@@ -1939,7 +1882,6 @@
 
 .method private openWidgetFolder(Lcom/android/launcher2/WidgetFolderView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/WidgetFolderView;
 
     new-instance v0, Lcom/android/launcher2/MenuWidgets$MenuWidgetsFolderMgr;
 
@@ -1985,11 +1927,6 @@
 
 .method private prepareLoadWidgetPreviewsTask(Lcom/android/launcher2/PagedViewGridLayout;ILjava/util/List;III)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/PagedViewGridLayout;
-    .param p2    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2191,7 +2128,6 @@
 
 .method private setDragInProgress(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/MenuWidgets;->mDragInProgress:Z
 
@@ -2292,8 +2228,6 @@
 
 .method private syncWidgetPageItems(IZ)V
     .locals 31
-    .param p1    # I
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -3013,7 +2947,6 @@
 
 .method private syncWidgetRotation(I)V
     .locals 41
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -4140,7 +4073,6 @@
 # virtual methods
 .method protected beginDragging(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -4223,7 +4155,6 @@
 
 .method cleanupCache(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/launcher2/MenuWidgets;->mWidgets:Ljava/util/List;
 
@@ -4339,14 +4270,12 @@
 
 .method protected determineDraggingStart(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method protected getAssociatedLowerPageBound(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4355,7 +4284,6 @@
 
 .method protected getAssociatedUpperPageBound(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageCount()I
 
@@ -4487,8 +4415,6 @@
 
 .method public handleWidgetStateChange(Lcom/android/launcher2/MenuWidgets$WidgetState;Lcom/android/launcher2/MenuWidgets$WidgetState;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$WidgetState;
 
     sget-boolean v1, Lcom/android/launcher2/MenuWidgets;->DEBUGGABLE:Z
 
@@ -4594,7 +4520,6 @@
 
 .method public isUninstallable(Lcom/android/launcher2/HomePendingItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomePendingItem;
 
     iget-boolean v0, p1, Lcom/android/launcher2/HomePendingItem;->mSystemApp:Z
 
@@ -4633,7 +4558,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     instance-of v2, p1, Lcom/android/launcher2/PagedViewWidget;
 
@@ -4668,7 +4592,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -4681,8 +4604,6 @@
 
 .method protected onDataReady(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/launcher2/MenuWidgets;->updatePageCounts()V
 
@@ -4727,7 +4648,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -4769,8 +4689,6 @@
 
 .method protected onMeasure(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -4899,7 +4817,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "Launcher.MenuWidgets"
 
@@ -4951,21 +4868,18 @@
 
 .method protected onUnhandledTap(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     instance-of v2, p1, Lcom/android/launcher2/PagedViewGridLayout;
 
@@ -4995,8 +4909,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -5018,7 +4930,6 @@
 
 .method protected overScroll(F)V
     .locals 0
-    .param p1    # F
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/PagedView;->acceleratedOverScroll(F)V
 
@@ -5041,7 +4952,6 @@
 
 .method public refreshWidgetStateModel(Lcom/android/launcher2/MenuWidgets$WidgetState;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
 
     if-eqz p1, :cond_0
 
@@ -5057,7 +4967,6 @@
 
 .method public refreshWidgetStateView(Lcom/android/launcher2/MenuWidgets$WidgetState;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
 
     if-eqz p1, :cond_0
 
@@ -5073,7 +4982,6 @@
 
 .method restorePageForIndex(I)V
     .locals 0
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -5172,7 +5080,6 @@
 
 .method public setFilter(Lcom/android/launcher2/MenuWidgets$Filter;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuWidgets$Filter;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuWidgets;->mFilter:Lcom/android/launcher2/MenuWidgets$Filter;
 
@@ -5181,7 +5088,6 @@
 
 .method public setMenuWidgetsFragment(Lcom/android/launcher2/MenuWidgetsFragment;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuWidgetsFragment;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuWidgets;->mMenuWidgetsFragment:Lcom/android/launcher2/MenuWidgetsFragment;
 
@@ -5190,7 +5096,6 @@
 
 .method public setSearchString(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuWidgets;->mSearchString:Ljava/lang/String;
 
@@ -5199,7 +5104,6 @@
 
 .method public setTabHost(Lcom/android/launcher2/MenuView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuWidgets;->mTabHost:Lcom/android/launcher2/MenuView;
 
@@ -5235,7 +5139,6 @@
 
 .method public setWidgetTextVisible(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -5286,8 +5189,6 @@
 
 .method public syncPageItems(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/MenuWidgets;->syncWidgetPageItems(IZ)V
 
@@ -5432,7 +5333,6 @@
 
 .method public updatePackages(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -5591,8 +5491,6 @@
 
 .method protected updatePageTransform(Landroid/view/View;F)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/4 v6, 0x0
 

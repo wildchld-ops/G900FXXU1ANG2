@@ -28,9 +28,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p3, Landroid/view/View;
 
@@ -43,7 +40,6 @@
 
 .method public enableSwipe(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -64,7 +60,6 @@
 
 .method public finishUpdate(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     return-void
 .end method
@@ -79,7 +74,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -110,8 +104,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -171,8 +163,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/view/View;
 
@@ -191,8 +181,6 @@
 
 .method public restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # Ljava/lang/ClassLoader;
 
     return-void
 .end method
@@ -207,7 +195,6 @@
 
 .method public setAboutFragmentView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailViewPagerAdapter;->mAboutFragmentView:Landroid/view/View;
 
@@ -216,7 +203,6 @@
 
 .method public setUpdatesFragmentView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailViewPagerAdapter;->mUpdatesFragmentView:Landroid/view/View;
 
@@ -225,7 +211,6 @@
 
 .method public startUpdate(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     return-void
 .end method

@@ -179,8 +179,6 @@
 
 .method static synthetic access$002(Lcom/diotek/ime/framework/view/AbstractViewController;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractViewController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mOneHandViewClicked:Z
 
@@ -189,7 +187,6 @@
 
 .method private getLabelFromKeyCode(ILjava/util/List;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -6175,7 +6172,6 @@
 # virtual methods
 .method public changeInputMode(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/view/AbstractViewController;->dismissPopupKeyboard()V
 
@@ -6188,7 +6184,6 @@
 
 .method public changeValidSymbolsPage(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/view/AbstractViewController;->setSymbolPage(I)V
 
@@ -6458,7 +6453,6 @@
 
 .method public getCandiateView(Z)Landroid/view/View;
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -6786,7 +6780,6 @@
 
 .method public getInputView(Z)Landroid/view/View;
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x7
 
@@ -7087,7 +7080,6 @@
 
 .method public getLabelFromCurrentView(I)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -7241,7 +7233,6 @@
 
 .method public getPhoneticSpellScrollView(Z)Landroid/view/View;
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -7412,7 +7403,6 @@
 
 .method public getSpellView(Z)Landroid/view/View;
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -7594,7 +7584,6 @@
 
 .method public invalidateKey(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mCurrentView:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -7974,7 +7963,6 @@
 
 .method public onChangeInputLanuage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     return-void
 .end method
@@ -7990,7 +7978,6 @@
 
 .method public onMagnifyStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mCurrentView:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -8152,7 +8139,6 @@
 
 .method public sendTalkbackDescription(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mCurrentView:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -8168,8 +8154,6 @@
 
 .method public sendTouchEvent(Landroid/view/MotionEvent;Z)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -8187,7 +8171,6 @@
 
 .method public setCurrentThaiVowelPageNum(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mCurrentThaiVowelPageNum:I
 
@@ -8196,7 +8179,6 @@
 
 .method public setEmoticonCategory(Ljava/util/ArrayList;I)V
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8335,7 +8317,6 @@
 
 .method public setInputView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/view/AbstractViewController;->isEnableOneHandKeypad()Z
 
@@ -8367,7 +8348,6 @@
 
 .method public setOneHandBgDim(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mOneHandDimView:Landroid/widget/ImageView;
 
@@ -8474,7 +8454,6 @@
 
 .method public setOneHandLayoutShownWithOption(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -8589,7 +8568,6 @@
 
 .method public setPhoneticSpellLayout(Ljava/util/ArrayList;Z)V
     .locals 4
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8753,7 +8731,6 @@
 
 .method public setSecondarySymbolStatus(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -8825,8 +8802,6 @@
 
 .method public showDiscoverability(ILandroid/view/View;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mCurrentView:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -9190,8 +9165,6 @@
 
 .method public showSwiftkeyRemoveTermDialog(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -9278,7 +9251,6 @@
 
 .method public showTipsDialogByIndex(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mCurrentView:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -9459,8 +9431,6 @@
 
 .method public showXt9_9RemoveTermDialog(Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v7, 0x8
 
@@ -10733,8 +10703,6 @@
 
 .method public updateSpellView(Ljava/lang/CharSequence;Z)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mSpellView:Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;
 
@@ -10765,7 +10733,6 @@
 
 .method public updateThaiKeyboard(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 

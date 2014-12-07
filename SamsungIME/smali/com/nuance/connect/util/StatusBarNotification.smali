@@ -34,8 +34,6 @@
 
 .method static synthetic access$002(Lcom/nuance/connect/util/StatusBarNotification;Lcom/nuance/connect/service/ConnectClient;)Lcom/nuance/connect/service/ConnectClient;
     .locals 0
-    .param p0    # Lcom/nuance/connect/util/StatusBarNotification;
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification;->client:Lcom/nuance/connect/service/ConnectClient;
 
@@ -44,7 +42,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/util/StatusBarNotification;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/nuance/connect/util/StatusBarNotification;
 
     iget-object v0, p0, Lcom/nuance/connect/util/StatusBarNotification;->messageBundle:Landroid/os/Bundle;
 
@@ -53,7 +50,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/util/StatusBarNotification;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/util/StatusBarNotification;
 
     invoke-direct {p0}, Lcom/nuance/connect/util/StatusBarNotification;->send()V
 

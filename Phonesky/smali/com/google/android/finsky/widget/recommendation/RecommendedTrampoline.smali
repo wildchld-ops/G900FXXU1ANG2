@@ -24,7 +24,6 @@
 
 .method protected getCorpusName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 

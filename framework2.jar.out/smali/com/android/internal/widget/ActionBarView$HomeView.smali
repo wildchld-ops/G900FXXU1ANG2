@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x1
 
@@ -146,7 +143,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/widget/ActionBarView$HomeView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView$HomeView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView$HomeView;->mUpView:Landroid/widget/ImageView;
 
@@ -157,7 +153,6 @@
 # virtual methods
 .method public dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
@@ -168,7 +163,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/ActionBarView$HomeView;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -270,7 +264,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -380,11 +373,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 27
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v25, p5, p3
 
@@ -688,7 +676,6 @@
 
 .method public onMagneticUI(Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x1
 
@@ -849,8 +836,6 @@
 
 .method protected onMeasure(II)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -1210,7 +1195,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1236,7 +1220,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView$HomeView;->mIconView:Landroid/widget/ImageView;
 
@@ -1247,7 +1230,6 @@
 
 .method public setShowIcon(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/internal/widget/ActionBarView$HomeView;->mIconView:Landroid/widget/ImageView;
 
@@ -1268,7 +1250,6 @@
 
 .method public setShowUp(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/internal/widget/ActionBarView$HomeView;->mUpView:Landroid/widget/ImageView;
 
@@ -1289,7 +1270,6 @@
 
 .method public setUpIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/ActionBarView$HomeView;->mUpIndicatorRes:I
 
@@ -1318,7 +1298,6 @@
 
 .method public setUpIndicator(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView$HomeView;->mUpView:Landroid/widget/ImageView;
 
@@ -1341,8 +1320,6 @@
 
 .method public setUpWithAnimation(ZJ)V
     .locals 11
-    .param p1    # Z
-    .param p2    # J
 
     const/4 v10, 0x0
 

@@ -196,7 +196,6 @@
 
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -213,7 +212,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -228,7 +226,6 @@
 
 .method private initialize(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x50
 
@@ -556,7 +553,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -601,8 +597,6 @@
 
 .method public setProperty(Ljava/lang/String;D)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextProperty;->mProperty:Landroid/os/Bundle;
 
@@ -613,8 +607,6 @@
 
 .method public setProperty(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextProperty;->mProperty:Landroid/os/Bundle;
 
@@ -625,8 +617,6 @@
 
 .method public setProperty(Ljava/lang/String;J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextProperty;->mProperty:Landroid/os/Bundle;
 
@@ -637,8 +627,6 @@
 
 .method public setProperty(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextProperty;->mProperty:Landroid/os/Bundle;
 
@@ -649,8 +637,6 @@
 
 .method public setProperty(Ljava/lang/String;[I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextProperty;->mProperty:Landroid/os/Bundle;
 
@@ -661,8 +647,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/hardware/scontext/SContextProperty;->mType:I
 

@@ -1379,7 +1379,7 @@ També pot mostrar o amagar el controlador de finestra múltiple mantenint premu
     <string name="usb_tethering_errored_subtext">Error de tethering USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">"No es pot deshabilitar el tethering USB mentre s'utilitza SideSync. Si deshabilita el tethering USB, es deshabilitarà SideSync."</string>
     <string name="usb_tethering_off_during_sidesync_popup">"No es pot habilitar el tethering USB mentre s'utilitza SideSync. Si habilita el tethering USB, es deshabilitarà SideSync."</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Tethering Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Tethering Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">"Compartint connexió Internet d'aquest disposit…"</string>
     <string name="bluetooth_tethering_device_connected_subtext">Connexió a Internet del dispositiu compartida amb 1 dispositiu</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Connexió a Internet del dispositiu compartida amb %d dispositius</string>

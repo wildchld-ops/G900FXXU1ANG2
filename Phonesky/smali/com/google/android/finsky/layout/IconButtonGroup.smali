@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -83,7 +80,6 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -136,11 +132,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x0
 
@@ -218,8 +209,6 @@
 
 .method protected onMeasure(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v7, 0x40000000
 
@@ -327,7 +316,6 @@
 
 .method public setAllowIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/layout/IconButtonGroup;->mAllowIcon:Z
 
@@ -338,7 +326,6 @@
 
 .method public setContentDescription(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/IconButtonGroup;->mAccessibilityOverlay:Landroid/view/View;
 
@@ -349,7 +336,6 @@
 
 .method public setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setEnabled(Z)V
 
@@ -398,7 +384,6 @@
 
 .method public setIconDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/IconButtonGroup;->mContinueButtonIcon:Landroid/widget/ImageView;
 
@@ -411,7 +396,6 @@
 
 .method public setLabelBackgroundColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/IconButtonGroup;->mContinueButtonLabel:Landroid/widget/TextView;
 
@@ -422,7 +406,6 @@
 
 .method public setLabelBackgroundResource(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/IconButtonGroup;->mContinueButtonLabel:Landroid/widget/TextView;
 
@@ -433,7 +416,6 @@
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 2
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/IconButtonGroup;->mAccessibilityOverlay:Landroid/view/View;
 
@@ -458,7 +440,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/IconButtonGroup;->mContinueButtonLabel:Landroid/widget/TextView;
 

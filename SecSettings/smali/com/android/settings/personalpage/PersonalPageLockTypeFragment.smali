@@ -144,7 +144,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;
 
     iget-object v0, p0, Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;->mHandler:Landroid/os/Handler;
 
@@ -153,8 +152,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;->mHandler:Landroid/os/Handler;
 
@@ -163,7 +160,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;
 
     iget-object v0, p0, Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;->mFingerprintManager:Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -172,7 +168,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -183,7 +178,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;
 
     invoke-direct {p0}, Lcom/android/settings/personalpage/PersonalPageLockTypeFragment;->showSensorErrorDialog()V
 
@@ -316,7 +310,6 @@
 
 .method private onPrivatemodeResultForTablet(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -605,9 +598,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -824,7 +814,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -932,9 +921,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040153
 
@@ -1176,7 +1162,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

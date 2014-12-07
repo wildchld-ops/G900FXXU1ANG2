@@ -45,7 +45,6 @@
 
 .method public constructor <init>([B)V
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -77,7 +76,6 @@
 
 .method static synthetic access$000(Lorg/keyczar/HmacKey;)Ljavax/crypto/SecretKey;
     .locals 1
-    .param p0    # Lorg/keyczar/HmacKey;
 
     iget-object v0, p0, Lorg/keyczar/HmacKey;->hmacKey:Ljavax/crypto/SecretKey;
 
@@ -107,7 +105,6 @@
 
 .method static generate(I)Lorg/keyczar/HmacKey;
     .locals 2
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -129,7 +126,6 @@
 
 .method private initJceKey([B)V
     .locals 4
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -169,7 +165,6 @@
 
 .method static read(Ljava/lang/String;)Lorg/keyczar/HmacKey;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

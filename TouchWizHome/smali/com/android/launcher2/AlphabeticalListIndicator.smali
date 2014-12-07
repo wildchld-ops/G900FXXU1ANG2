@@ -107,7 +107,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -226,8 +225,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v9, -0x1
 
@@ -563,10 +560,6 @@
 
 .method private addGroupRange(Ljava/lang/String;Ljava/lang/StringBuffer;II)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuffer;
-    .param p3    # I
-    .param p4    # I
 
     move v0, p3
 
@@ -591,10 +584,6 @@
 
 .method private addOverflowGroupRange(Ljava/lang/String;Ljava/lang/StringBuffer;II)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuffer;
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p1, p3}, Ljava/lang/String;->charAt(I)C
 
@@ -658,11 +647,6 @@
 
 .method private compute(Ljava/lang/String;Ljava/lang/StringBuffer;Landroid/graphics/RectF;Landroid/graphics/PointF;Z)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuffer;
-    .param p3    # Landroid/graphics/RectF;
-    .param p4    # Landroid/graphics/PointF;
-    .param p5    # Z
 
     const/4 v5, 0x1
 
@@ -768,10 +752,6 @@
 
 .method private computeBounds(IILandroid/graphics/RectF;Landroid/graphics/PointF;)Z
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/RectF;
-    .param p4    # Landroid/graphics/PointF;
 
     new-instance v7, Landroid/graphics/RectF;
 
@@ -1028,9 +1008,6 @@
 
 .method private computeWorkingStr(Ljava/lang/String;Ljava/lang/StringBuffer;I)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuffer;
-    .param p3    # I
 
     const/4 v9, 0x1
 
@@ -1144,14 +1121,6 @@
 
 .method private drawChar(Landroid/graphics/Canvas;Landroid/graphics/Rect;FCFFFZ)V
     .locals 16
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # F
-    .param p4    # C
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # Z
 
     const/4 v1, 0x1
 
@@ -1314,9 +1283,6 @@
 
 .method private getCellIndexForPt(Landroid/graphics/RectF;Landroid/graphics/PointF;Ljava/lang/StringBuffer;)I
     .locals 6
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/PointF;
-    .param p3    # Ljava/lang/StringBuffer;
 
     invoke-virtual {p3}, Ljava/lang/StringBuffer;->length()I
 
@@ -1371,7 +1337,6 @@
 
 .method private getCharsWouldFit(F)I
     .locals 5
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
@@ -1402,7 +1367,6 @@
 
 .method private isCellIndexValid(I)Z
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -1419,9 +1383,6 @@
 
 .method private tryUpdateCellIndexForOverflowGrp(ILandroid/graphics/RectF;Landroid/graphics/PointF;)Z
     .locals 14
-    .param p1    # I
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # Landroid/graphics/PointF;
 
     iget-object v12, p0, Lcom/android/launcher2/AlphabeticalListIndicator;->mWorkingStr:Ljava/lang/StringBuffer;
 
@@ -1540,7 +1501,6 @@
 # virtual methods
 .method public Contains(Landroid/graphics/PointF;)Z
     .locals 5
-    .param p1    # Landroid/graphics/PointF;
 
     new-instance v0, Landroid/graphics/RectF;
 
@@ -1595,7 +1555,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 17
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-static/range {p0 .. p1}, Lcom/android/launcher2/Utilities;->onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;)V
 
@@ -1983,7 +1942,6 @@
 
 .method public feedPt(Landroid/graphics/PointF;)I
     .locals 4
-    .param p1    # Landroid/graphics/PointF;
 
     const/4 v1, 0x1
 
@@ -2259,11 +2217,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -2314,7 +2267,6 @@
 
 .method public setAllowWiggle(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AlphabeticalListIndicator;->mAllowWiggle:Z
 
@@ -2323,8 +2275,6 @@
 
 .method public setIndexStr(Ljava/lang/String;Landroid/graphics/PointF;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/PointF;
 
     iput-object p1, p0, Lcom/android/launcher2/AlphabeticalListIndicator;->mIndexStr:Ljava/lang/String;
 
@@ -2335,7 +2285,6 @@
 
 .method public setPressedImmediate(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -2426,7 +2375,6 @@
 
 .method public updateBounds(Landroid/graphics/PointF;)Z
     .locals 7
-    .param p1    # Landroid/graphics/PointF;
 
     const/4 v6, 0x0
 

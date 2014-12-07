@@ -1365,7 +1365,7 @@ Magagawa mo ring ipakita o itago ang handle ng multi window sa pamamagitan ng pa
     <string name="usb_tethering_errored_subtext">Error sa pag-tether ng USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Hindi maaaring hindi paganahin ang USB tethering habang ginagamit ang SideSync. Ang hindi pagpapagana sa USB tethering ay hindi magpapagana sa SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Hindi maaaring paganahin ang USB tethering habang ginagamit ang SideSync. Ang pagpapagana sa USB tethering ay hindi magpapagana sa SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth tethering</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth tethering</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Ibinabahagi ang Internet connection ng device…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Ang koneksyon sa Internet ng device ay ibinabahagi sa 1 device.</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Ang koneksyon sa Internet ng device ay ibinabahagi sa %d device.</string>

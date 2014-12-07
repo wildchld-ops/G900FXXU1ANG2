@@ -68,7 +68,6 @@
 
 .method public static SetDataPath(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "VoiceEngine"
 
@@ -294,11 +293,6 @@
 
 .method public processBuffer([SILjava/lang/String;[S[S)I
     .locals 8
-    .param p1    # [S
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [S
-    .param p5    # [S
 
     const/4 v7, 0x0
 
@@ -347,7 +341,6 @@
 
 .method public setAdaptationModelPath(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -394,7 +387,6 @@
 
 .method public setIsRunningAdaptation(Z)V
     .locals 3
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -439,7 +431,6 @@
 
 .method public setIsRunningVoiceEngine(Z)V
     .locals 3
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -484,7 +475,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/voiceshell/VoiceEngine;->m_engineMode:I
 

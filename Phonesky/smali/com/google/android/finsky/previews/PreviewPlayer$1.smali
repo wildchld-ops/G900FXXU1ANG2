@@ -243,7 +243,6 @@
 
 .method public queueChanged(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/google/android/finsky/previews/PreviewPlayer$1;->this$0:Lcom/google/android/finsky/previews/PreviewPlayer;
 

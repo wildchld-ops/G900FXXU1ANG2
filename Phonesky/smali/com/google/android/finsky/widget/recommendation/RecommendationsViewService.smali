@@ -16,7 +16,6 @@
 # virtual methods
 .method public onGetViewFactory(Landroid/content/Intent;)Landroid/widget/RemoteViewsService$RemoteViewsFactory;
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 

@@ -56,23 +56,23 @@
         <item quantity="one">inkanyezi</item>
     </plurals>
     <plurals name="review_author_stars_title_comment">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s izinkanyezi - %3$s - %4$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s inkanyezi - %3$s - %4$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s izinkanyezi - %3$s - %4$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s inkanyezi - %3$s - %4$s</item>
     </plurals>
     <plurals name="review_author_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s izinkanyeni - %3$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s inkanyezi - %3$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s izinkanyeni - %3$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s inkanyezi - %3$s</item>
     </plurals>
     <plurals name="review_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s izinkanyezi&amp;lt;/b> %2$s</item>
-        <item quantity="one">&amp;lt;b>%1$s inkanyezi&amp;lt;/b> %2$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s izinkanyezi&amp;amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s inkanyezi&amp;amp;lt;/b> %2$s</item>
     </plurals>
     <plurals name="review_author_stars">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s izinkanyezi</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s inkanyezi</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s izinkanyezi</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s inkanyezi</item>
     </plurals>
     <plurals name="review_just_stars">
-        <item quantity="other">Ilinganiswe &amp;lt;b>%1$s izinkanyezi&amp;lt;/b></item>
-        <item quantity="one">Ilinganiswe &amp;lt;b>%1$s inkanyezi&amp;lt;/b></item>
+        <item quantity="other">Ilinganiswe &amp;amp;lt;b>%1$s izinkanyezi&amp;amp;lt;/b></item>
+        <item quantity="one">Ilinganiswe &amp;amp;lt;b>%1$s inkanyezi&amp;amp;lt;/b></item>
     </plurals>
 </resources>

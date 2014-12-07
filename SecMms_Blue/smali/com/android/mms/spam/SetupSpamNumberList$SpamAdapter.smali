@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/spam/SetupSpamNumberList;Landroid/app/Activity;Ljava/util/ArrayList;)V
     .locals 1
-    .param p2    # Landroid/app/Activity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,9 +74,6 @@
 
 .method private drawDeleteScreen(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     new-instance v2, Lcom/android/mms/spam/SetupSpamNumberList$SpamAdapter$ViewHolder;
 
@@ -172,9 +168,6 @@
 
 .method private drawNormalScreen(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const v11, 0x7f0b0143
 
@@ -752,7 +745,6 @@
 
 .method public getItem(I)Lcom/android/mms/spam/SpamFilter$SpamFilterData;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamNumberList$SpamAdapter;->spamList:Ljava/util/ArrayList;
 
@@ -767,7 +759,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/spam/SetupSpamNumberList$SpamAdapter;->getItem(I)Lcom/android/mms/spam/SpamFilter$SpamFilterData;
 
@@ -778,7 +769,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamNumberList$SpamAdapter;->spamList:Ljava/util/ArrayList;
 
@@ -799,9 +789,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 

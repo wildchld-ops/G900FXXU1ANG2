@@ -63,7 +63,6 @@
 
 .method private hideSoftKeyboard(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -94,7 +93,6 @@
 # virtual methods
 .method public displayResultData(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -183,7 +181,6 @@
 
 .method public displayResultDataExtra(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -241,7 +238,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/samsung/dialer/dialpad/SearchFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -269,8 +265,6 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/RegularSearchFragment;->mListView:Landroid/widget/ListView;
 
@@ -286,8 +280,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/RegularSearchFragment;->mListView:Landroid/widget/ListView;
 

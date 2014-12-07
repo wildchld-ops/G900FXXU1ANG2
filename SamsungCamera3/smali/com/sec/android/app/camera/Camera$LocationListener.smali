@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Ljava/lang/String;Lcom/sec/android/app/camera/Camera;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v0, 0x1
 
@@ -106,7 +104,6 @@
 
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 5
-    .param p1    # Landroid/location/Location;
 
     const/4 v4, 0x2
 
@@ -197,7 +194,6 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -231,16 +227,12 @@
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const-string v0, "Camera3"
 

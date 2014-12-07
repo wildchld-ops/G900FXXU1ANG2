@@ -39,7 +39,6 @@
 
 .method public constructor <init>(Lgov/nist/core/LexerCore;)V
     .locals 1
-    .param p1    # Lgov/nist/core/LexerCore;
 
     invoke-direct {p0}, Lgov/nist/core/ParserCore;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/core/ParserCore;-><init>()V
 
@@ -95,7 +93,6 @@
 
 .method private isIPv6Address(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/16 v8, 0x3a
 
@@ -170,7 +167,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 8
-    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -588,7 +584,6 @@
 
 .method public hostPort(Z)Lgov/nist/core/HostPort;
     .locals 9
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

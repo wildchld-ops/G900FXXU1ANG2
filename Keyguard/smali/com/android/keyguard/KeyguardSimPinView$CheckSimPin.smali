@@ -23,7 +23,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/keyguard/KeyguardSimPinView;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardSimPinView$CheckSimPin;->this$0:Lcom/android/keyguard/KeyguardSimPinView;
 

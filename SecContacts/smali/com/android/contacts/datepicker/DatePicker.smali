@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -64,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -76,9 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -424,7 +418,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/datepicker/DatePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
 
     iget-boolean v0, p0, Lcom/android/contacts/datepicker/DatePicker;->isNumMonth:Z
 
@@ -433,7 +426,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/datepicker/DatePicker;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
 
     invoke-direct {p0}, Lcom/android/contacts/datepicker/DatePicker;->adjustMaxDay()V
 
@@ -442,8 +434,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/datepicker/DatePicker;Landroid/widget/NumberPicker;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
-    .param p1    # Landroid/widget/NumberPicker;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/datepicker/DatePicker;->hideSoftInput(Landroid/widget/NumberPicker;)V
 
@@ -452,7 +442,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/datepicker/DatePicker;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
 
     iget-object v0, p0, Lcom/android/contacts/datepicker/DatePicker;->mYearToggle:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -461,7 +450,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/datepicker/DatePicker;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
 
     invoke-direct {p0}, Lcom/android/contacts/datepicker/DatePicker;->updateSpinners()V
 
@@ -470,7 +458,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/datepicker/DatePicker;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
 
     iget v0, p0, Lcom/android/contacts/datepicker/DatePicker;->mDateFormat:I
 
@@ -479,8 +466,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/datepicker/DatePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/datepicker/DatePicker;->setOrderByDateFormat(I)V
 
@@ -489,7 +474,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/datepicker/DatePicker;)[Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/contacts/datepicker/DatePicker;
 
     iget-object v0, p0, Lcom/android/contacts/datepicker/DatePicker;->mPickerTexts:[Landroid/widget/EditText;
 
@@ -543,7 +527,6 @@
 
 .method private adjustPickerLayout(Landroid/widget/NumberPicker;)V
     .locals 5
-    .param p1    # Landroid/widget/NumberPicker;
 
     if-eqz p1, :cond_0
 
@@ -604,8 +587,6 @@
 
 .method private getCalendarForLocale(Ljava/util/Calendar;Ljava/util/Locale;)Ljava/util/Calendar;
     .locals 3
-    .param p1    # Ljava/util/Calendar;
-    .param p2    # Ljava/util/Locale;
 
     if-nez p1, :cond_0
 
@@ -648,7 +629,6 @@
 
 .method private hideSoftInput(Landroid/widget/NumberPicker;)V
     .locals 3
-    .param p1    # Landroid/widget/NumberPicker;
 
     invoke-virtual {p0}, Lcom/android/contacts/datepicker/DatePicker;->getContext()Landroid/content/Context;
 
@@ -678,7 +658,6 @@
 
 .method private setCurrentLocale(Ljava/util/Locale;)V
     .locals 4
-    .param p1    # Ljava/util/Locale;
 
     iget-object v1, p0, Lcom/android/contacts/datepicker/DatePicker;->mCurrentLocale:Ljava/util/Locale;
 
@@ -746,8 +725,6 @@
 
 .method private setImeOptions(Landroid/widget/NumberPicker;I)V
     .locals 5
-    .param p1    # Landroid/widget/NumberPicker;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -804,7 +781,6 @@
 
 .method private setOrderByDateFormat(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x3
 
@@ -1051,7 +1027,6 @@
 
 .method private setTextWatcher(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x4
 
@@ -1506,9 +1481,6 @@
 
 .method public init(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1519,10 +1491,6 @@
 
 .method public init(IIIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -1588,7 +1556,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -1800,7 +1767,6 @@
 
 .method public reorderPickers([Ljava/lang/String;)V
     .locals 11
-    .param p1    # [Ljava/lang/String;
 
     new-instance v6, Ljava/lang/String;
 
@@ -2029,7 +1995,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setEnabled(Z)V
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/activities/PeopleActivity;Landroid/app/Activity;)V
     .locals 0
-    .param p2    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/contacts/activities/PeopleActivity$ContactTabPagerAdapter;->this$0:Lcom/android/contacts/activities/PeopleActivity;
 
@@ -65,8 +64,6 @@
 
 .method protected getFragment(ILandroid/app/FragmentTransaction;)Landroid/app/Fragment;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/app/FragmentTransaction;
 
     invoke-virtual {p0}, Lcom/android/contacts/activities/PeopleActivity$ContactTabPagerAdapter;->isSearchMode()Z
 
@@ -190,7 +187,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Lcom/android/contacts/activities/PeopleActivity$ContactTabPagerAdapter;->isSearchMode()Z
 

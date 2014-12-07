@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -102,8 +101,6 @@
 
 .method public createSettingFromString(Ljava/lang/String;Ljava/lang/String;)Lcom/android/server/ssrm/settings/Setting;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,7 +133,6 @@
 
 .method protected onExtraInitialized(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -192,7 +188,6 @@
 
 .method setExtraData(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

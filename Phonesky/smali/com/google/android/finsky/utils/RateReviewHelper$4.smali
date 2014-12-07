@@ -48,7 +48,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 5
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v1, p0, Lcom/google/android/finsky/utils/RateReviewHelper$4;->val$clientMutationCache:Lcom/google/android/finsky/utils/ClientMutationCache;
 

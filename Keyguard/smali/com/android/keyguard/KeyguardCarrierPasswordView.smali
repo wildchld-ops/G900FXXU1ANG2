@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -67,8 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -79,9 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -170,7 +164,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -179,7 +172,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->countryCode:Ljava/lang/String;
 
@@ -188,7 +180,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Lcom/android/keyguard/SecurityMessageDisplay;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
@@ -197,7 +188,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardCarrierPasswordView;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCarrierPasswordView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mBackupPin:Landroid/widget/EditText;
 
@@ -206,7 +196,6 @@
 
 .method private handleAttemptLockout(J)V
     .locals 8
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mBackupPin:Landroid/widget/EditText;
 
@@ -239,7 +228,6 @@
 
 .method private onCheckSecondLockResult(Z)V
     .locals 5
-    .param p1    # Z
 
     sget-object v2, Lcom/android/keyguard/KeyguardCarrierPasswordView;->DEBUG:Ljava/lang/Boolean;
 
@@ -356,24 +344,18 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public hideBouncer(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -388,7 +370,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -408,9 +389,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     if-eqz p2, :cond_0
 
@@ -542,8 +520,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mBackupPin:Landroid/widget/EditText;
 
@@ -556,7 +532,6 @@
 
 .method public onResume(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardCarrierPasswordView;->reset()V
 
@@ -565,10 +540,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -670,7 +641,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -679,7 +649,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardCarrierPasswordView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -688,7 +657,6 @@
 
 .method public showBouncer(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

@@ -131,8 +131,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -152,7 +150,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lorg/keyczar/enums/KeyPurpose;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lorg/keyczar/enums/KeyPurpose;
 

@@ -45,8 +45,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/detail/ContactDetailUpdatesFragment;Lcom/android/contacts/util/StreamItemEntry;)Lcom/android/contacts/common/model/account/AccountType;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailUpdatesFragment;
-    .param p1    # Lcom/android/contacts/util/StreamItemEntry;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailUpdatesFragment;->getAccountTypeForStreamItemEntry(Lcom/android/contacts/util/StreamItemEntry;)Lcom/android/contacts/common/model/account/AccountType;
 
@@ -57,7 +55,6 @@
 
 .method private getAccountTypeForStreamItemEntry(Lcom/android/contacts/util/StreamItemEntry;)Lcom/android/contacts/common/model/account/AccountType;
     .locals 3
-    .param p1    # Lcom/android/contacts/util/StreamItemEntry;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -100,7 +97,6 @@
 
 .method public handleKeyDown(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -109,9 +105,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailUpdatesFragment;->mInflater:Landroid/view/LayoutInflater;
 
@@ -130,8 +123,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/ListFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -181,7 +172,6 @@
 
 .method public requestToMoveToOffset(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/ListFragment;->getListView()Landroid/widget/ListView;
 
@@ -204,8 +194,6 @@
 
 .method public setData(Landroid/net/Uri;Lcom/android/contacts/model/Contact;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/contacts/model/Contact;
 
     if-nez p2, :cond_1
 
@@ -237,7 +225,6 @@
 
 .method public setVerticalScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView$OnScrollListener;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailUpdatesFragment;->mVerticalScrollListener:Landroid/widget/AbsListView$OnScrollListener;
 

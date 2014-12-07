@@ -20,8 +20,6 @@
 
 .method private static CheckMultiMediaValidation(Landroid/content/Context;Landroid/net/Uri;)I
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/16 v11, 0x9
 
@@ -175,8 +173,6 @@
 
 .method public static openChatRoom(Landroid/content/Context;[Ljava/lang/String;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -287,10 +283,6 @@
 
 .method public static sendAppLinkMessage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -475,9 +467,6 @@
 
 .method public static sendMultiMediaMessage(Landroid/content/Context;Landroid/net/Uri;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;)I
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -633,10 +622,6 @@
 
 .method public static sendMultiMediaMessage(Landroid/content/Context;[Ljava/lang/String;Landroid/net/Uri;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;)I
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -788,12 +773,6 @@
 
 .method public static sendMultiMediaMessageBG(Landroid/content/Context;J[Ljava/lang/String;Landroid/net/Uri;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;Z)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
-    .param p6    # Z
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "2.0.1"
         versionCode = 0x1312db1
@@ -1018,10 +997,6 @@
 
 .method public static sendMultiMediaMessageWithText(Landroid/content/Context;Landroid/net/Uri;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;Ljava/lang/String;)I
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
-    .param p3    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -1182,11 +1157,6 @@
 
 .method static sendMultiMediaMessageWithText(Landroid/content/Context;[Ljava/lang/String;Landroid/net/Uri;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
-    .param p4    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -1367,8 +1337,6 @@
 
 .method public static sendTextMessage(Landroid/content/Context;Ljava/lang/String;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -1504,9 +1472,6 @@
 
 .method public static sendTextMessage(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -1656,11 +1621,6 @@
 
 .method public static sendTextMessageBG(Landroid/content/Context;J[Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "2.0.1"
         versionCode = 0x1312db1
@@ -1839,9 +1799,6 @@
 
 .method public static sendTextMessageWithURL(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -1999,10 +1956,6 @@
 
 .method public static sendTextMessageWithURL(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd

@@ -29,8 +29,6 @@
 # virtual methods
 .method public onConditionSignaled(Lcom/android/server/ssrm/settings/Condition;Lcom/android/server/ssrm/settings/SortedArrayList;Z)V
     .locals 11
-    .param p1    # Lcom/android/server/ssrm/settings/Condition;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -160,8 +158,6 @@
 
 .method protected onTemperatureChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/ssrm/settings/LevelsControllerDefault;->mLevelsStack:Ljava/util/Stack;
 
@@ -199,7 +195,6 @@
 
 .method public removeLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     invoke-super {p0, p1}, Lcom/android/server/ssrm/settings/LevelsController;->removeLevel(Lcom/android/server/ssrm/settings/Level;)V
 
@@ -219,7 +214,6 @@
 
 .method setDefaultLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/LevelsControllerDefault;->mLevelsStack:Ljava/util/Stack;
 

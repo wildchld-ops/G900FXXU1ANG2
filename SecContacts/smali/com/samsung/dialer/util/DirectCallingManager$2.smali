@@ -94,7 +94,6 @@
 # virtual methods
 .method public onMotionListener(Landroid/hardware/motion/MREvent;)V
     .locals 3
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     const-string v0, "Logs/DirectCallingManager"
 

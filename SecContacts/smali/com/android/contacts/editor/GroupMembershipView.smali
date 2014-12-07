@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -75,8 +74,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -89,9 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -104,7 +98,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/editor/GroupMembershipView;)Lcom/android/contacts/model/RawContactDelta;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/GroupMembershipView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/GroupMembershipView;->mState:Lcom/android/contacts/model/RawContactDelta;
 
@@ -113,7 +106,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/editor/GroupMembershipView;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/GroupMembershipView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/GroupMembershipView;->mSelectedGroupIds:Ljava/util/List;
 
@@ -122,7 +114,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/editor/GroupMembershipView;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/GroupMembershipView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/GroupMembershipView;->mSelectedGroupNames:Ljava/util/List;
 
@@ -131,7 +122,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/editor/GroupMembershipView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/GroupMembershipView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/GroupMembershipView;->mAccountType:Ljava/lang/String;
 
@@ -140,7 +130,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/editor/GroupMembershipView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/GroupMembershipView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/GroupMembershipView;->mAccountName:Ljava/lang/String;
 
@@ -149,7 +138,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/editor/GroupMembershipView;)Lcom/samsung/contacts/editor/MoreEditorView$MoreEditorListener;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/GroupMembershipView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/GroupMembershipView;->mListener:Lcom/samsung/contacts/editor/MoreEditorView$MoreEditorListener;
 
@@ -158,7 +146,6 @@
 
 .method private getGroupId(Ljava/lang/String;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 22
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -746,8 +733,6 @@
 
 .method private hasMembership(JLjava/lang/String;)Z
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1218,7 +1203,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -1236,7 +1220,6 @@
 
 .method public setGroupMetaData(Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v4, 0x5
 
@@ -1353,7 +1336,6 @@
 
 .method public setKind(Lcom/android/contacts/common/model/dataitem/DataKind;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     iput-object p1, p0, Lcom/android/contacts/editor/GroupMembershipView;->mKind:Lcom/android/contacts/common/model/dataitem/DataKind;
 
@@ -1386,7 +1368,6 @@
 
 .method public setListener(Lcom/samsung/contacts/editor/MoreEditorView$MoreEditorListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/editor/MoreEditorView$MoreEditorListener;
 
     iput-object p1, p0, Lcom/android/contacts/editor/GroupMembershipView;->mListener:Lcom/samsung/contacts/editor/MoreEditorView$MoreEditorListener;
 
@@ -1395,7 +1376,6 @@
 
 .method public setOnClickListener(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Lcom/android/contacts/editor/GroupMembershipView$1;
 
@@ -1408,7 +1388,6 @@
 
 .method public setState(Lcom/android/contacts/model/RawContactDelta;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
 
     iput-object p1, p0, Lcom/android/contacts/editor/GroupMembershipView;->mState:Lcom/android/contacts/model/RawContactDelta;
 

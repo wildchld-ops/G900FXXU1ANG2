@@ -28,7 +28,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->mCreateText:Landroid/widget/TextView;
 
@@ -37,8 +36,6 @@
 
 .method private applyImage(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuffer;
 
@@ -71,7 +68,6 @@
 
 .method public static checkShowContactTipsAgain(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -90,7 +86,6 @@
 
 .method public static doNotShowContactTipsAgain(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -115,7 +110,6 @@
 
 .method public static getCheckedState(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -134,7 +128,6 @@
 
 .method private static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -145,7 +138,6 @@
 
 .method public static neverShowContactTipsAgain(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -170,7 +162,6 @@
 
 .method public static shouldShowContactTips(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -189,8 +180,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;
 
@@ -225,7 +214,6 @@
 
 .method public static showContactTipsAgain(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -250,8 +238,6 @@
 
 .method public static storeCheckedState(Landroid/content/Context;Z)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p0}, Lcom/samsung/contacts/interactions/ContactTipsDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -276,7 +262,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -405,7 +390,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

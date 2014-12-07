@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const v0, 0x3f666666
 
@@ -39,8 +38,6 @@
 
 .method public constructor <init>(Landroid/view/View;F)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/UpdateableShadowBuilder;-><init>(Landroid/view/View;)V
 
@@ -75,8 +72,6 @@
 
 .method public constructor <init>(Landroid/view/View;Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/UpdateableShadowBuilder;-><init>(Landroid/view/View;)V
 
@@ -103,8 +98,6 @@
 
 .method private createBitmap(Landroid/view/View;F)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     instance-of v3, p1, Lcom/android/launcher2/SurfaceWidgetView;
 
@@ -172,7 +165,6 @@
 
 .method private init(Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
 
     const/4 v9, 0x1
 
@@ -588,7 +580,6 @@
 
 .method public onDrawShadow(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v7, p0, Lcom/android/launcher2/ShadowBuilder;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -740,8 +731,6 @@
 
 .method public onProvideShadowMetrics(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 3
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     iget-object v0, p0, Lcom/android/launcher2/ShadowBuilder;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -834,7 +823,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/launcher2/ShadowBuilder;->mBitmap:Landroid/graphics/Bitmap;
 

@@ -84,8 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -112,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/BillingAddress;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/BillingAddress;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mCountries:Ljava/util/List;
 
@@ -121,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/BillingAddress;)Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/BillingAddress;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mSelectedCountry:Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
 
@@ -130,7 +126,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/BillingAddress;)Lcom/google/android/finsky/layout/BillingAddress$BillingCountryChangeListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/BillingAddress;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mCountryChangeListener:Lcom/google/android/finsky/layout/BillingAddress$BillingCountryChangeListener;
 
@@ -139,7 +134,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/BillingAddress;)Lcom/android/i18n/addressinput/AddressWidget;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/BillingAddress;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mAddressWidget:Lcom/android/i18n/addressinput/AddressWidget;
 
@@ -148,7 +142,6 @@
 
 .method private static addressFieldToAddressEnum(Lcom/android/i18n/addressinput/AddressField;)I
     .locals 2
-    .param p0    # Lcom/android/i18n/addressinput/AddressField;
 
     sget-object v0, Lcom/google/android/finsky/layout/BillingAddress$2;->$SwitchMap$com$android$i18n$addressinput$AddressField:[I
 
@@ -217,7 +210,6 @@
 
 .method private addressProblemsToInputValidationErrors(Lcom/android/i18n/addressinput/AddressProblems;Ljava/util/List;)V
     .locals 7
-    .param p1    # Lcom/android/i18n/addressinput/AddressProblems;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -352,7 +344,6 @@
 
 .method private static createValidationError(I)Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
 
@@ -369,8 +360,6 @@
 
 .method private static createValidationErrorWithMessage(ILjava/lang/String;)Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/finsky/layout/BillingAddress;->createValidationError(I)Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
 
@@ -407,7 +396,6 @@
 
 .method private onHeightOffsetChangedHoneycomb(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mPhoneNumber:Landroid/widget/EditText;
 
@@ -497,7 +485,6 @@
 
 .method private static populatedRequiredFieldsFromAddressType(I)[I
     .locals 8
-    .param p0    # I
 
     const/4 v7, 0x2
 
@@ -601,7 +588,6 @@
 
 .method private static validateEmailAddress(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     sget-object v0, Landroid/util/Patterns;->EMAIL_ADDRESS:Ljava/util/regex/Pattern;
 
@@ -652,7 +638,6 @@
 
 .method public displayError(Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;)Landroid/widget/TextView;
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
 
     const v8, 0x7f090052
 
@@ -1386,7 +1371,6 @@
 
 .method public onHeightOffsetChanged(F)V
     .locals 2
-    .param p1    # F
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -1411,7 +1395,6 @@
 
 .method public restoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v0, Lcom/google/android/finsky/layout/BillingAddress;->KEY_ADDRESS_SPEC:Ljava/lang/String;
 
@@ -1457,7 +1440,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mAddressSpec:Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
 
@@ -1503,8 +1485,6 @@
 
 .method public setAddressSpec(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
-    .param p2    # Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
 
     const/4 v0, 0x0
 
@@ -1515,9 +1495,6 @@
 
 .method public setAddressSpec(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;Lcom/google/android/finsky/protos/BillingAddress$Address;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
-    .param p2    # Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
-    .param p3    # Lcom/google/android/finsky/protos/BillingAddress$Address;
 
     const/16 v4, 0x8
 
@@ -2009,7 +1986,6 @@
 
 .method public setBillingCountryChangeListener(Lcom/google/android/finsky/layout/BillingAddress$BillingCountryChangeListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/BillingAddress$BillingCountryChangeListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/BillingAddress;->mCountryChangeListener:Lcom/google/android/finsky/layout/BillingAddress$BillingCountryChangeListener;
 
@@ -2018,7 +1994,6 @@
 
 .method public setDefaultName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mNameEntry:Landroid/widget/EditText;
 
@@ -2042,7 +2017,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mNameEntry:Landroid/widget/EditText;
 
@@ -2077,14 +2051,12 @@
 
 .method public setInitializationStateListener(Lcom/google/android/finsky/layout/BillingAddress$InitializationStateListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/BillingAddress$InitializationStateListener;
 
     return-void
 .end method
 
 .method public setNameInputHint(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/BillingAddress;->mNameEntry:Landroid/widget/EditText;
 
@@ -2095,7 +2067,6 @@
 
 .method public setOnHeightOffsetChangedListener(Lcom/google/android/finsky/layout/OnHeightOffsetChangedListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/OnHeightOffsetChangedListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/BillingAddress;->mParentListener:Lcom/google/android/finsky/layout/OnHeightOffsetChangedListener;
 
@@ -2104,7 +2075,6 @@
 
 .method public setPhoneNumber(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

@@ -44,7 +44,6 @@
 
 .method static buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -127,7 +126,6 @@
 
 .method private static checkObserver(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderMonoAudio;->sSettingsObserver:Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderMonoAudio$SettingsObserver;
 
@@ -205,7 +203,6 @@
 
 .method private static getWidgetMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -251,7 +248,6 @@
 
 .method private toggleWidgetMode(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -310,8 +306,6 @@
 
 .method private static updateButtons(Landroid/widget/RemoteViews;Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/widget/RemoteViews;
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f0b0018
 
@@ -376,7 +370,6 @@
 
 .method public static updateWidget(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderMonoAudio;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
@@ -423,7 +416,6 @@
 # virtual methods
 .method public onDisabled(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderMonoAudio;->sSettingsObserver:Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderMonoAudio$SettingsObserver;
 
@@ -443,7 +435,6 @@
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderMonoAudio;->checkObserver(Landroid/content/Context;)V
 
@@ -452,8 +443,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2}, Landroid/appwidget/AppWidgetProvider;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -498,9 +487,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     const-string v2, "AccessibilityWidgetProviderMonoAudio"
 

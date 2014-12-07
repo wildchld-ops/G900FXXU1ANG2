@@ -14,7 +14,6 @@
 
 .method public constructor <init>(Lcom/android/volley/NetworkResponse;)V
     .locals 0
-    .param p1    # Lcom/android/volley/NetworkResponse;
 
     invoke-direct {p0, p1}, Lcom/android/volley/VolleyError;-><init>(Lcom/android/volley/NetworkResponse;)V
 
@@ -23,7 +22,6 @@
 
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/volley/VolleyError;-><init>(Ljava/lang/Throwable;)V
 

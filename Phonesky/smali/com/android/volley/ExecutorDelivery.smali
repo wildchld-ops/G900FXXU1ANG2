@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public postError(Lcom/android/volley/Request;Lcom/android/volley/VolleyError;)V
     .locals 4
-    .param p2    # Lcom/android/volley/VolleyError;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -91,7 +89,6 @@
 
 .method public postResponse(Lcom/android/volley/Request;Lcom/android/volley/Response;Ljava/lang/Runnable;)V
     .locals 2
-    .param p3    # Ljava/lang/Runnable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

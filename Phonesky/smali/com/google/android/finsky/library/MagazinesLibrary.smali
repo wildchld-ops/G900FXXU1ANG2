@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/library/LibraryHasher;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/LibraryHasher;
 
     const/4 v0, 0x6
 
@@ -19,7 +18,6 @@
 # virtual methods
 .method public getSubscriptionEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/library/LibraryEntry;
 

@@ -29,7 +29,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MotionDialogOffFragment;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MotionDialogOffFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MotionDialogOffFragment;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -38,8 +37,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/MotionDialogOffFragment;Landroid/graphics/drawable/AnimationDrawable;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 0
-    .param p0    # Lcom/android/launcher2/MotionDialogOffFragment;
-    .param p1    # Landroid/graphics/drawable/AnimationDrawable;
 
     iput-object p1, p0, Lcom/android/launcher2/MotionDialogOffFragment;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -48,7 +45,6 @@
 
 .method static createAndShow(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     invoke-static {p0}, Lcom/android/launcher2/MotionDialogOffFragment;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -82,7 +78,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "MotionDialogOff"
 
@@ -102,7 +97,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v0, "MotionDialogOff"
 
@@ -163,7 +157,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -187,7 +180,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -196,7 +188,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 18
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher2/MotionDialogOffFragment;->getActivity()Landroid/app/Activity;
 
@@ -546,7 +537,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v3, 0x0
 
@@ -600,7 +590,6 @@
 
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Lcom/android/launcher2/MotionDialogOffFragment;->getActivity()Landroid/app/Activity;
 

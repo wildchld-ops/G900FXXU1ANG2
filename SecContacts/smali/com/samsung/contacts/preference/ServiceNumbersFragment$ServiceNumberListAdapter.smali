@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/preference/ServiceNumbersFragment;Landroid/content/Context;ILandroid/database/Cursor;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/samsung/contacts/preference/ServiceNumbersFragment$ServiceNumberListAdapter;->this$0:Lcom/samsung/contacts/preference/ServiceNumbersFragment;
 
@@ -36,9 +33,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -87,9 +81,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ResourceCursorAdapter;->newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
 

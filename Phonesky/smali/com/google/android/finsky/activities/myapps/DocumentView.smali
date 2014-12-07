@@ -69,7 +69,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -80,8 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -172,8 +169,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/myapps/DocumentView;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/myapps/DocumentView;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/myapps/DocumentView;->bind(Landroid/os/Bundle;)V
 
@@ -182,7 +177,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/myapps/DocumentView;)Lcom/google/android/finsky/activities/myapps/DocumentView$DocumentActionHandler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/DocumentView;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView;->mHandler:Lcom/google/android/finsky/activities/myapps/DocumentView$DocumentActionHandler;
 
@@ -191,7 +185,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/myapps/DocumentView;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/DocumentView;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView;->mIsSystemPackage:Z
 
@@ -200,7 +193,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/myapps/DocumentView;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/DocumentView;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView;->mHasSubscriptions:Z
 
@@ -209,7 +201,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/myapps/DocumentView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/DocumentView;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView;->mRebindRunnable:Ljava/lang/Runnable;
 
@@ -218,7 +209,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/activities/myapps/DocumentView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/DocumentView;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView;->mUiHandler:Landroid/os/Handler;
 
@@ -227,7 +217,6 @@
 
 .method private bind(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/myapps/DocumentView;->resetViewState()V
 
@@ -274,8 +263,6 @@
 
 .method private bindAutoUpdate(Landroid/support/v4/app/Fragment;Z)V
     .locals 6
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Z
 
     const v1, 0x7f080022
 
@@ -352,7 +339,6 @@
 
 .method private bindButtons(Lcom/google/android/finsky/activities/AppActionAnalyzer;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/activities/AppActionAnalyzer;
 
     const/4 v3, 0x3
 
@@ -503,7 +489,6 @@
 
 .method private bindLoading(Z)V
     .locals 5
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -543,9 +528,6 @@
 
 .method private bindPermissions(Landroid/support/v4/app/FragmentManager;Landroid/os/Bundle;Z)V
     .locals 13
-    .param p1    # Landroid/support/v4/app/FragmentManager;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Z
 
     const v1, 0x7f08010a
 
@@ -641,7 +623,6 @@
 
 .method private bindSubscriptions(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const v0, 0x7f0800c3
 
@@ -745,7 +726,6 @@
 
 .method private showButtons(Lcom/google/android/finsky/activities/AppActionAnalyzer;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/activities/AppActionAnalyzer;
 
     const/4 v8, 0x0
 
@@ -935,11 +915,6 @@
 # virtual methods
 .method public bind(Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/activities/myapps/DocumentView$DocumentActionHandler;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Lcom/google/android/finsky/activities/myapps/DocumentView$DocumentActionHandler;
-    .param p5    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView;->mDocument:Lcom/google/android/finsky/api/model/Document;
 
@@ -1062,7 +1037,6 @@
 
 .method public init(Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/myapps/DocumentView;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -1170,7 +1144,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     return-void
 .end method
@@ -1255,8 +1228,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x3
 
@@ -1272,8 +1243,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x3
 

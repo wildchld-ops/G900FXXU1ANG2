@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public removeItem(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -105,8 +103,6 @@
 
 .method public selectItem(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

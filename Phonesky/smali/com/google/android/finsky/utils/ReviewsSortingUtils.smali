@@ -62,7 +62,6 @@
 
 .method public static convertDataSortTypeToDisplayIndex(Lcom/google/android/finsky/api/model/DfeReviews;)I
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/DfeReviews;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/DfeReviews;->getSortType()I
 
@@ -101,7 +100,6 @@
 
 .method public static convertDisplayIndexToDataSortType(I)I
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -129,7 +127,6 @@
 
 .method public static getAllDisplayStrings(Landroid/content/Context;)[Ljava/lang/CharSequence;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v2, Lcom/google/android/finsky/utils/ReviewsSortingUtils;->sSortingInfoArray:[Lcom/google/android/finsky/utils/ReviewsSortingUtils$SortingInfo;
 
@@ -168,8 +165,6 @@
 
 .method public static getDisplayString(Landroid/content/Context;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v0, Lcom/google/android/finsky/utils/ReviewsSortingUtils;->sSortingInfoArray:[Lcom/google/android/finsky/utils/ReviewsSortingUtils$SortingInfo;
 

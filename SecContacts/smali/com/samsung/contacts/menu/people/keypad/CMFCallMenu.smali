@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/OptionMenu;-><init>(Landroid/content/Context;)V
 
@@ -37,7 +36,6 @@
 
 .method protected placeCallExtraService(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/menu/OptionMenu;->getContext()Landroid/content/Context;
 

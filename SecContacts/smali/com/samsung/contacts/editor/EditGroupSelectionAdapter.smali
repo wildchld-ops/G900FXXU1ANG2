@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,8 +59,6 @@
 # virtual methods
 .method public bindView(Lcom/samsung/contacts/editor/EditGroupSelectionAdapter$GroupCache;I)V
     .locals 5
-    .param p1    # Lcom/samsung/contacts/editor/EditGroupSelectionAdapter$GroupCache;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Lcom/samsung/contacts/editor/EditGroupSelectionAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -128,9 +124,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -157,7 +150,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/editor/EditGroupSelectionAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -174,7 +166,6 @@
 
 .method public newView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Lcom/samsung/contacts/editor/EditGroupSelectionAdapter;->mInflater:Landroid/view/LayoutInflater;
 

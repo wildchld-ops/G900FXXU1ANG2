@@ -93,7 +93,6 @@
 
 .method private declared-synchronized deserializeToDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -166,7 +165,6 @@
 # virtual methods
 .method public bridge synthetic read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -182,7 +180,6 @@
 
 .method public read(Lcom/google/gson/stream/JsonReader;)Ljava/util/Date;
     .locals 2
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -218,8 +215,6 @@
 
 .method public bridge synthetic write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -235,8 +230,6 @@
 
 .method public declared-synchronized write(Lcom/google/gson/stream/JsonWriter;Ljava/util/Date;)V
     .locals 2
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
-    .param p2    # Ljava/util/Date;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

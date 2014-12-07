@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -50,8 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -106,8 +103,6 @@
 
 .method private getCardFromHeap(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;Lcom/google/android/finsky/layout/play/PlayCardHeap;)Lcom/google/android/play/layout/PlayCardViewBase;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayCardHeap;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->mInflater:Landroid/view/LayoutInflater;
 
@@ -126,7 +121,6 @@
 
 .method private getCellSize(I)F
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->mMetadata:Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
 
@@ -159,9 +153,6 @@
 # virtual methods
 .method public bindCardAt(IILcom/google/android/finsky/layout/play/PlayCardDismissListener;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->getCardChildAt(I)Lcom/google/android/play/layout/PlayCardViewBase;
 
@@ -174,10 +165,6 @@
 
 .method public bindCardContent(Lcom/google/android/play/layout/PlayCardViewBase;IILcom/google/android/finsky/layout/play/PlayCardDismissListener;)V
     .locals 16
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
 
     const/4 v2, 0x0
 
@@ -341,12 +328,6 @@
 
 .method public createContent(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/play/PlayCardDismissListener;Lcom/google/android/finsky/layout/play/PlayCardHeap;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayCardHeap;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p2, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -409,7 +390,6 @@
 
 .method public getCardChildAt(I)Lcom/google/android/play/layout/PlayCardViewBase;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->getIndexOfFirstCard()I
 
@@ -444,7 +424,6 @@
 
 .method public getCardChildIndex(Landroid/view/View;)I
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -507,7 +486,6 @@
 
 .method public getLeadingGap(I)I
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->getCellSize(I)F
 
@@ -556,7 +534,6 @@
 
 .method public getTrailingGap(I)I
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->getCellSize(I)F
 
@@ -585,11 +562,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 19
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->getHeight()I
 
@@ -779,8 +751,6 @@
 
 .method protected onMeasure(II)V
     .locals 20
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
@@ -1010,7 +980,6 @@
 
 .method public setCardContentVerticalPadding(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->mCardContentPaddingTop:I
 
@@ -1023,8 +992,6 @@
 
 .method public setMetadata(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;Ljava/util/List;Lcom/google/android/finsky/utils/ClientMutationCache;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
-    .param p3    # Lcom/google/android/finsky/utils/ClientMutationCache;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1108,7 +1075,6 @@
 
 .method protected tileIndexToDocumentIndex(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method

@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/WindowOrientationListener;)V
     .locals 2
-    .param p1    # Lcom/android/internal/policy/impl/WindowOrientationListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/WindowOrientationListener$ScreenOrientationEventListenerImpl;->resetLocked()V
 
@@ -111,15 +109,12 @@
 
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 8
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const/4 v3, 0x1
 

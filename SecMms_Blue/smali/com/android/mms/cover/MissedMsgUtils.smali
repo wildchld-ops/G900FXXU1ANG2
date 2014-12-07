@@ -18,11 +18,6 @@
 
 .method private static confirmReadReportDialog(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Lcom/samsung/android/sdk/cover/ScoverManager;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
-    .param p4    # Lcom/samsung/android/sdk/cover/ScoverManager;
 
     const/4 v4, -0x2
 
@@ -116,11 +111,6 @@
 
 .method public static handleReadReportDataOne(Landroid/content/Context;JILjava/lang/Runnable;Lcom/samsung/android/sdk/cover/ScoverManager;)V
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
-    .param p5    # Lcom/samsung/android/sdk/cover/ScoverManager;
 
     const-wide/16 v3, 0x0
 
@@ -362,11 +352,6 @@
 
 .method public static handleReadReportOne(Landroid/content/Context;JILjava/lang/Runnable;Lcom/samsung/android/sdk/cover/ScoverManager;)V
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
-    .param p5    # Lcom/samsung/android/sdk/cover/ScoverManager;
 
     const-wide/16 v2, 0x0
 

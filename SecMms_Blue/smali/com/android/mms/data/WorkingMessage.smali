@@ -336,8 +336,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Lcom/android/mms/data/WorkingMessage$MessageStatusListener;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/data/WorkingMessage$MessageStatusListener;
 
     const/4 v5, 0x1
 
@@ -420,10 +418,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/data/WorkingMessage;Lcom/android/mms/data/Conversation;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/data/WorkingMessage;->preSendSmsWorker(Lcom/android/mms/data/Conversation;Ljava/lang/String;I)V
 
@@ -432,8 +426,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/data/WorkingMessage;Lcom/android/mms/data/Conversation;)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-direct {p0, p1}, Lcom/android/mms/data/WorkingMessage;->updateSendStats(Lcom/android/mms/data/Conversation;)V
 
@@ -442,7 +434,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/data/WorkingMessage;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -451,11 +442,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/data/WorkingMessage;JLjava/lang/String;IZ)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/data/WorkingMessage;->updateDraftSmsMessage(JLjava/lang/String;IZ)Landroid/net/Uri;
 
@@ -466,7 +452,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/data/WorkingMessage;)Lcom/android/mms/data/WorkingMessage$MessageStatusListener;
     .locals 1
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mStatusListener:Lcom/android/mms/data/WorkingMessage$MessageStatusListener;
 
@@ -475,8 +460,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/data/WorkingMessage;J)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/data/WorkingMessage;->deleteDraftSmsMessage(J)V
 
@@ -485,14 +468,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/data/WorkingMessage;Lcom/android/mms/data/Conversation;Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;IZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p4    # Lcom/android/mms/model/SlideshowModel;
-    .param p5    # Lcom/google/android/mms/pdu/SendReq;
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct/range {p0 .. p7}, Lcom/android/mms/data/WorkingMessage;->sendMmsWorker(Lcom/android/mms/data/Conversation;Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;IZ)V
 
@@ -501,7 +476,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/data/WorkingMessage;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mMessageUri:Landroid/net/Uri;
 
@@ -510,8 +484,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/data/WorkingMessage;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/data/WorkingMessage;->mMessageUri:Landroid/net/Uri;
 
@@ -520,7 +492,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/data/WorkingMessage;)Lcom/android/mms/model/SlideshowModel;
     .locals 1
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mSlideshow:Lcom/android/mms/model/SlideshowModel;
 
@@ -529,7 +500,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/data/WorkingMessage;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mContext:Landroid/content/Context;
 
@@ -538,10 +508,6 @@
 
 .method static synthetic access$600(Lcom/google/android/mms/pdu/PduPersister;Lcom/google/android/mms/pdu/SendReq;Lcom/android/mms/model/SlideshowModel;Landroid/content/Context;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p1    # Lcom/google/android/mms/pdu/SendReq;
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
-    .param p3    # Landroid/content/Context;
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/mms/data/WorkingMessage;->createDraftMmsMessage(Lcom/google/android/mms/pdu/PduPersister;Lcom/google/android/mms/pdu/SendReq;Lcom/android/mms/model/SlideshowModel;Landroid/content/Context;)Landroid/net/Uri;
 
@@ -552,10 +518,6 @@
 
 .method static synthetic access$700(Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;)V
     .locals 0
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
-    .param p3    # Lcom/google/android/mms/pdu/SendReq;
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/mms/data/WorkingMessage;->updateDraftMmsMessage(Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;)V
 
@@ -564,9 +526,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/data/WorkingMessage;JZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # J
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/data/WorkingMessage;->deleteDuplicateMmsDraft(JZ)V
 
@@ -575,8 +534,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/data/WorkingMessage;Lcom/android/mms/data/Conversation;)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/WorkingMessage;
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-direct {p0, p1}, Lcom/android/mms/data/WorkingMessage;->updateReplyAllStatus(Lcom/android/mms/data/Conversation;)V
 
@@ -585,8 +542,6 @@
 
 .method private addOldMedia(Lcom/android/mms/model/SlideModel;Lcom/android/mms/model/MediaModel;)V
     .locals 2
-    .param p1    # Lcom/android/mms/model/SlideModel;
-    .param p2    # Lcom/android/mms/model/MediaModel;
 
     if-eqz p2, :cond_0
 
@@ -607,7 +562,6 @@
 
 .method private addressContainEmail(Lcom/android/mms/data/Conversation;)Z
     .locals 4
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-virtual {p1}, Lcom/android/mms/data/Conversation;->getRecipients()Lcom/android/mms/data/ContactList;
 
@@ -650,8 +604,6 @@
 
 .method private addressContainsEmailToMms(Lcom/android/mms/data/Conversation;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -786,10 +738,6 @@
 
 .method private appendMedia(IILandroid/net/Uri;Z)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1092,9 +1040,6 @@
 
 .method private asyncDelete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, "Mms/WorkingMessage"
 
@@ -1143,7 +1088,6 @@
 
 .method private asyncDeleteDraftMmsMessage(J)V
     .locals 4
-    .param p1    # J
 
     const-string v1, "Mms/WorkingMessage"
 
@@ -1196,7 +1140,6 @@
 
 .method private asyncSendMms(Lcom/android/mms/data/Conversation;)V
     .locals 17
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     move-object/from16 v0, p0
 
@@ -1538,7 +1481,6 @@
 
 .method private asyncSendSms(Lcom/android/mms/data/Conversation;)V
     .locals 7
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     const/4 v6, 0x0
 
@@ -1675,8 +1617,6 @@
 
 .method private asyncSendSms(Lcom/android/mms/data/Conversation;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSmsSubject()Z
 
@@ -1781,7 +1721,6 @@
 
 .method private asyncUpdateDraftMmsMessage(Lcom/android/mms/data/Conversation;)V
     .locals 10
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     const-string v7, "Mms/WorkingMessage"
 
@@ -1965,9 +1904,6 @@
 
 .method private asyncUpdateDraftSmsMessage(Lcom/android/mms/data/Conversation;Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "Mms/WorkingMessage"
 
@@ -2036,7 +1972,6 @@
 
 .method private calculateMaxEmailLength(Lcom/android/mms/data/ContactList;)V
     .locals 7
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableIS41Email()Z
 
@@ -2095,10 +2030,6 @@
 
 .method private changeMedia(IILandroid/net/Uri;Z)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -3063,8 +2994,6 @@
 
 .method private checkMediaFileName(ILjava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3270,10 +3199,6 @@
 
 .method private static createDraftMmsMessage(Lcom/google/android/mms/pdu/PduPersister;Lcom/google/android/mms/pdu/SendReq;Lcom/android/mms/model/SlideshowModel;Landroid/content/Context;)Landroid/net/Uri;
     .locals 10
-    .param p0    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p1    # Lcom/google/android/mms/pdu/SendReq;
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
-    .param p3    # Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -3332,8 +3257,6 @@
 
 .method public static createEmpty(Landroid/content/Context;Lcom/android/mms/data/WorkingMessage$MessageStatusListener;)Lcom/android/mms/data/WorkingMessage;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/WorkingMessage$MessageStatusListener;
 
     const-string v1, "Mms/WorkingMessage"
 
@@ -3350,7 +3273,6 @@
 
 .method private deleteDraftSmsMessage(J)V
     .locals 5
-    .param p1    # J
 
     const-string v0, "Mms/WorkingMessage"
 
@@ -3395,8 +3317,6 @@
 
 .method private deleteDuplicateMmsDraft(JZ)V
     .locals 9
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v7, 0x0
 
@@ -3548,11 +3468,6 @@
 
 .method private deleteMmsMessage(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;Lcom/android/mms/data/Conversation;Z)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Lcom/android/mms/data/Conversation;
-    .param p5    # Z
 
     const-string v1, "Mms/WorkingMessage"
 
@@ -3724,7 +3639,6 @@
 
 .method private static hasId(Landroid/net/Uri;)Z
     .locals 6
-    .param p0    # Landroid/net/Uri;
 
     const-wide/16 v2, -0x1
 
@@ -3802,9 +3716,6 @@
 
 .method public static load(Landroid/content/Context;Lcom/android/mms/ui/ComposeMessageFragment;Landroid/net/Uri;)Lcom/android/mms/data/WorkingMessage;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Landroid/net/Uri;
 
     new-instance v1, Lcom/android/mms/data/WorkingMessage;
 
@@ -3902,11 +3813,6 @@
 
 .method public static load(Landroid/content/Context;Lcom/android/mms/ui/ComposeMessageFragment;Landroid/net/Uri;ZZ)Lcom/android/mms/data/WorkingMessage;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # Z
 
     new-instance v1, Lcom/android/mms/data/WorkingMessage;
 
@@ -4004,9 +3910,6 @@
 
 .method public static loadDraft(Landroid/content/Context;Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/data/Conversation;)Lcom/android/mms/data/WorkingMessage;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Lcom/android/mms/data/Conversation;
 
     new-instance v0, Lcom/android/mms/data/WorkingMessage;
 
@@ -4031,9 +3934,6 @@
 
 .method public static loadDraftDelete(Landroid/content/Context;Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/data/Conversation;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Lcom/android/mms/data/Conversation;
 
     new-instance v0, Lcom/android/mms/data/WorkingMessage;
 
@@ -4058,7 +3958,6 @@
 
 .method private loadFromConversation(Lcom/android/mms/data/Conversation;)Z
     .locals 9
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     const/4 v5, 0x1
 
@@ -4186,7 +4085,6 @@
 
 .method private loadFromDraftUri(Landroid/net/Uri;)Z
     .locals 31
-    .param p1    # Landroid/net/Uri;
 
     const-string v2, "Mms/WorkingMessage"
 
@@ -5133,7 +5031,6 @@
 
 .method private loadFromUri(Landroid/net/Uri;)Z
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x1
 
@@ -5210,9 +5107,6 @@
 
 .method private loadFromUri(Landroid/net/Uri;ZZ)Z
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -5327,9 +5221,6 @@
 
 .method public static loadMultiDraft(Landroid/content/Context;Lcom/android/mms/ui/ComposeMessageFragment;Landroid/net/Uri;)Lcom/android/mms/data/WorkingMessage;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Landroid/net/Uri;
 
     new-instance v0, Lcom/android/mms/data/WorkingMessage;
 
@@ -5354,8 +5245,6 @@
 
 .method private makeSendReq(Lcom/android/mms/data/Conversation;Ljava/lang/CharSequence;)Lcom/google/android/mms/pdu/SendReq;
     .locals 9
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v8, 0x1
 
@@ -5539,7 +5428,6 @@
 
 .method private static normalizeMmsPartFileName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/16 v4, 0x5f
 
@@ -5595,9 +5483,6 @@
 
 .method private preSendSmsWorker(Lcom/android/mms/data/Conversation;Ljava/lang/String;I)V
     .locals 19
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -5820,9 +5705,6 @@
 
 .method private prepareForSave(ZZLjava/lang/String;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/data/WorkingMessage;->syncWorkingRecipients()V
 
@@ -5860,9 +5742,6 @@
 
 .method private readDraftMmsMessage(Landroid/content/Context;JLjava/lang/StringBuilder;)Landroid/net/Uri;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/StringBuilder;
 
     const/4 v5, 0x0
 
@@ -6034,7 +5913,6 @@
 
 .method private readDraftSmsMessage(Lcom/android/mms/data/Conversation;)Ljava/lang/String;
     .locals 16
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/mms/data/Conversation;->getThreadId()J
 
@@ -6246,8 +6124,6 @@
 
 .method private readPriorityMms(Landroid/content/Context;J)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const/4 v5, 0x0
 
@@ -6371,7 +6247,6 @@
 
 .method private removeAttachmentIfEmpty(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x4
 
@@ -6386,7 +6261,6 @@
 
 .method private removeLengthMMSIfNotOver(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -6441,7 +6315,6 @@
 
 .method private removeSubjectIfEmpty(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/mms/data/WorkingMessage;->hasSubject()Z
 
@@ -6459,13 +6332,6 @@
 
 .method private sendMmsWorker(Lcom/android/mms/data/Conversation;Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;IZ)V
     .locals 34
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p4    # Lcom/android/mms/model/SlideshowModel;
-    .param p5    # Lcom/google/android/mms/pdu/SendReq;
-    .param p6    # I
-    .param p7    # Z
 
     move-object/from16 v0, p0
 
@@ -7211,12 +7077,6 @@
 
 .method private sendSmsWorker(Ljava/lang/String;Ljava/lang/String;JIZZ)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
 
     iget-object v1, p0, Lcom/android/mms/data/WorkingMessage;->mUsageFrequencyAccumulator:Lcom/android/mms/util/UsageFrequencyAccumulator;
 
@@ -7380,8 +7240,6 @@
 
 .method private setText(ILjava/lang/CharSequence;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -7437,7 +7295,6 @@
 
 .method private static stateString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -7552,7 +7409,6 @@
 
 .method private syncCallbackNumberToSlideshow(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/16 v9, 0xa
 
@@ -7750,9 +7606,6 @@
 
 .method private syncDelete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mContext:Landroid/content/Context;
 
@@ -7765,7 +7618,6 @@
 
 .method private syncDeleteDraftMmsMessage(J)V
     .locals 5
-    .param p1    # J
 
     const-string v1, "Mms/WorkingMessage"
 
@@ -8067,8 +7919,6 @@
 
 .method private syncUpdateDraftMmsMessage(Lcom/android/mms/data/Conversation;Z)V
     .locals 24
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Z
 
     const-string v2, "Mms/WorkingMessage"
 
@@ -8513,9 +8363,6 @@
 
 .method private syncUpdateDraftSmsMessage(Lcom/android/mms/data/Conversation;Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "Mms/WorkingMessage"
 
@@ -8609,10 +8456,6 @@
 
 .method private static updateDraftMmsMessage(Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;)V
     .locals 5
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
-    .param p3    # Lcom/google/android/mms/pdu/SendReq;
 
     const-string v2, "Mms/WorkingMessage"
 
@@ -8802,10 +8645,6 @@
 
 .method private updateDraftSmsMessage(JLjava/lang/String;IZ)Landroid/net/Uri;
     .locals 16
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
 
     const-string v2, "Mms/WorkingMessage"
 
@@ -9183,7 +9022,6 @@
 
 .method private updateReplyAllStatus(Lcom/android/mms/data/Conversation;)V
     .locals 8
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     const/4 v0, 0x1
 
@@ -9247,7 +9085,6 @@
 
 .method private updateSendStats(Lcom/android/mms/data/Conversation;)V
     .locals 8
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-virtual {p1}, Lcom/android/mms/data/Conversation;->getRecipients()Lcom/android/mms/data/ContactList;
 
@@ -9350,9 +9187,6 @@
 
 .method private updateState(IZZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v4, 0x20
 
@@ -9588,7 +9422,6 @@
 # virtual methods
 .method public addSlide(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -9803,7 +9636,6 @@
 
 .method public addWorkingRecipients(Lcom/android/mms/data/ContactList;)V
     .locals 8
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     new-instance v1, Lcom/android/mms/data/ContactList;
 
@@ -9983,7 +9815,6 @@
 
 .method public asyncDeleteDraftSmsMessage(Lcom/android/mms/data/Conversation;)V
     .locals 5
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     const-string v2, "Mms/WorkingMessage"
 
@@ -10027,7 +9858,6 @@
 
 .method public checkIfAddressContainsEmailToMms(Ljava/util/List;Ljava/lang/CharSequence;)Z
     .locals 12
-    .param p2    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10189,8 +10019,6 @@
 
 .method public checkMaxSlide(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mSlideshow:Lcom/android/mms/model/SlideshowModel;
 
@@ -10217,7 +10045,6 @@
 
 .method public cloneWorkingMessage_ForSplitMmsSend(Lcom/android/mms/data/WorkingMessage;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/WorkingMessage;
 
     const/4 v1, 0x0
 
@@ -10258,7 +10085,6 @@
 
 .method public correctAttachmentState(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v4, 0x5
 
@@ -10629,9 +10455,6 @@
 
 .method protected createPendingSmsMessage(Ljava/lang/String;Ljava/lang/String;J)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-string v1, ";"
 
@@ -11615,7 +11438,6 @@
 
 .method public getText(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -11640,7 +11462,6 @@
 
 .method public getTextLengthFromAllSlide(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -12027,8 +11848,6 @@
 
 .method public isAddPossible(ILcom/android/mms/model/SlideModel;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/SlideModel;
 
     const/4 v1, 0x1
 
@@ -12313,7 +12132,6 @@
 
 .method public isLengthRequiresMMS(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x4
 
@@ -12624,8 +12442,6 @@
 
 .method public isMmsExceededSizewhenPastedText(ILjava/lang/CharSequence;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x1
 
@@ -12803,7 +12619,6 @@
 
 .method public isPendingSizeOver(Landroid/content/Context;)Z
     .locals 13
-    .param p1    # Landroid/content/Context;
 
     const/4 v12, 0x1
 
@@ -12994,7 +12809,6 @@
 
 .method public loadFromUri_onlySlideshowModel(Landroid/net/Uri;)Z
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x1
 
@@ -13051,8 +12865,6 @@
 
 .method public loadRecipients(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const-string v1, "Mms/WorkingMessage"
 
@@ -13359,7 +13171,6 @@
 
 .method public readStateFromBundle(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -13427,7 +13238,6 @@
 
 .method public removeFakeMmsForDraft(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -13457,7 +13267,6 @@
 
 .method public removeRecipient(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/data/WorkingMessage;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -13470,7 +13279,6 @@
 
 .method public removeSlide(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -13527,7 +13335,6 @@
 
 .method public saveAsMms(Z)Landroid/net/Uri;
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -13693,7 +13500,6 @@
 
 .method public saveDraft(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -13706,8 +13512,6 @@
 
 .method public saveDraft(ZZ)Z
     .locals 11
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v10, 0x1
 
@@ -13997,7 +13801,6 @@
 
 .method public saveDraftSync(Z)Z
     .locals 12
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -14684,13 +14487,6 @@
 
 .method public setAttachment(Landroid/content/ContentResolver;IILandroid/net/Uri;ZZZ)I
     .locals 8
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableNGMLocation()Z
 
@@ -15324,7 +15120,6 @@
 
 .method public setAttachmentType(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -15359,8 +15154,6 @@
 
 .method public setConversation(Lcom/android/mms/data/Conversation;Z)V
     .locals 5
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -15530,7 +15323,6 @@
 
 .method public setDelayedDeliveryTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/data/WorkingMessage;->mDelayedDeliveryTime:J
 
@@ -15539,7 +15331,6 @@
 
 .method public setEmojiRequiresMms(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v0, 0x80
 
@@ -15552,7 +15343,6 @@
 
 .method public setFlag_splitMmsOnGoing(I)I
     .locals 3
-    .param p1    # I
 
     sput p1, Lcom/android/mms/data/WorkingMessage;->splitMmsOnGoing:I
 
@@ -15592,8 +15382,6 @@
 
 .method public setGroupConversation(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v1, 0x40
 
@@ -15616,7 +15404,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/data/WorkingMessage;->mHandler:Landroid/os/Handler;
 
@@ -15625,8 +15412,6 @@
 
 .method public setHasEmail(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -15651,8 +15436,6 @@
 
 .method public setHasMultipleRecipients(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v1, 0x40
 
@@ -15687,7 +15470,6 @@
 
 .method public setIsSignatureAdded(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/WorkingMessage;->mIsSignatureAdded:Z
 
@@ -15696,7 +15478,6 @@
 
 .method public setLengthRequiresMms(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -15739,7 +15520,6 @@
 
 .method public setMessageDeliveryReport(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/WorkingMessage;->mMessageDeliveryReport:Z
 
@@ -15748,7 +15528,6 @@
 
 .method public setMessageReadReport(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/WorkingMessage;->mMessageReadReport:Z
 
@@ -15757,7 +15536,6 @@
 
 .method public setMessageUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/data/WorkingMessage;->mMessageUri:Landroid/net/Uri;
 
@@ -15844,7 +15622,6 @@
 
 .method public setMsgBody(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableAirMessage()Z
 
@@ -15864,7 +15641,6 @@
 
 .method public setMyLocation(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Mms/WorkingMessage"
 
@@ -15895,7 +15671,6 @@
 
 .method public setPriority(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/WorkingMessage"
 
@@ -15930,7 +15705,6 @@
 
 .method public setRecipients(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/WorkingMessage;->mRecipients:Ljava/lang/String;
 
@@ -15939,8 +15713,6 @@
 
 .method public setReplyAllGroupConversation(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v1, 0x10
 
@@ -15967,7 +15739,6 @@
 
 .method public setReserveDeliveryTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/data/WorkingMessage;->mReserveDeliveryTime:J
 
@@ -15976,8 +15747,6 @@
 
 .method public setSubject(Ljava/lang/CharSequence;Z)V
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     const/4 v8, 0x2
 
@@ -16245,7 +16014,6 @@
 
 .method public setWorkingRecipients(Lcom/android/mms/data/ContactList;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     iput-object p1, p0, Lcom/android/mms/data/WorkingMessage;->mWorkingRecipients:Lcom/android/mms/data/ContactList;
 
@@ -16357,10 +16125,6 @@
 
 .method public updateState(IZZZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     const/16 v4, 0x20
 
@@ -16581,8 +16345,6 @@
 
 .method public updateText(ILjava/lang/CharSequence;)I
     .locals 15
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const-string v11, "Mms/WorkingMessage"
 
@@ -16887,8 +16649,6 @@
 
 .method public writeStateToBundle(Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

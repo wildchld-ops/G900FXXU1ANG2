@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/commons/logging/Log;)V
     .locals 0
-    .param p1    # Lorg/apache/commons/logging/Log;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -21,8 +20,6 @@
 
 .method private wire(Ljava/lang/String;Ljava/io/InputStream;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -157,7 +154,6 @@
 
 .method public input(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -181,7 +177,6 @@
 
 .method public input(Ljava/io/InputStream;)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -208,7 +203,6 @@
 
 .method public input(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -237,7 +231,6 @@
 
 .method public input([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -268,9 +261,6 @@
 
 .method public input([BII)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -301,7 +291,6 @@
 
 .method public output(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -325,7 +314,6 @@
 
 .method public output(Ljava/io/InputStream;)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -352,7 +340,6 @@
 
 .method public output(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -381,7 +368,6 @@
 
 .method public output([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -412,9 +398,6 @@
 
 .method public output([BII)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

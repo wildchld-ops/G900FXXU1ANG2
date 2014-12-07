@@ -194,7 +194,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/help/AirButtonMainActivity;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirButtonMainActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->helpguide:Landroid/widget/RelativeLayout;
 
@@ -203,7 +202,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/help/AirButtonMainActivity;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirButtonMainActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->helpguide2:Landroid/widget/RelativeLayout;
 
@@ -212,7 +210,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/help/AirButtonMainActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirButtonMainActivity;
 
     iget v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->mTextColor:I
 
@@ -221,7 +218,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/help/AirButtonMainActivity;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirButtonMainActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->mMediaView:Landroid/widget/ImageView;
 
@@ -230,7 +226,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/help/AirButtonMainActivity;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirButtonMainActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->mediaViewPort:Landroid/widget/RelativeLayout;
 
@@ -239,7 +234,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/help/AirButtonMainActivity;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirButtonMainActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->mView:Landroid/widget/LinearLayout;
 
@@ -248,7 +242,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/help/AirButtonMainActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirButtonMainActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->infoCompleteTutorial:Landroid/widget/Button;
 
@@ -2383,7 +2376,6 @@
 
 .method public createWidgetFromView(Landroid/view/View;)Lcom/samsung/android/airbutton/AirButtonImpl;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x2
 
@@ -2727,7 +2719,6 @@
 
 .method public hideInfoBubble(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -2746,7 +2737,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2759,7 +2749,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -2885,7 +2874,6 @@
 
 .method protected showDialog(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/help/AirButtonMainActivity;->mHelpDialog:Lcom/android/mms/help/TwHelpAnimatedDialog;
 

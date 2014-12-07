@@ -56,23 +56,23 @@
         <item quantity="one">звездица</item>
     </plurals>
     <plurals name="review_author_stars_title_comment">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s звездице(а) – %3$s – %4$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s звездица – %3$s – %4$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звездице(а) – %3$s – %4$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звездица – %3$s – %4$s</item>
     </plurals>
     <plurals name="review_author_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s звездице(а) – %3$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s звездица – %3$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звездице(а) – %3$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звездица – %3$s</item>
     </plurals>
     <plurals name="review_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s звездице(а)&amp;lt;/b> %2$s</item>
-        <item quantity="one">&amp;lt;b>%1$s звездица&amp;lt;/b> %2$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s звездице(а)&amp;amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s звездица&amp;amp;lt;/b> %2$s</item>
     </plurals>
     <plurals name="review_author_stars">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s звездице(а)</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s звездица</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звездице(а)</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s звездица</item>
     </plurals>
     <plurals name="review_just_stars">
-        <item quantity="other">Оценио/ла је: &amp;lt;b>%1$s звездице(а)&amp;lt;/b></item>
-        <item quantity="one">Оценио/ла је: &amp;lt;b>%1$s звездица&amp;lt;/b></item>
+        <item quantity="other">Оценио/ла је: &amp;amp;lt;b>%1$s звездице(а)&amp;amp;lt;/b></item>
+        <item quantity="one">Оценио/ла је: &amp;amp;lt;b>%1$s звездица&amp;amp;lt;/b></item>
     </plurals>
 </resources>

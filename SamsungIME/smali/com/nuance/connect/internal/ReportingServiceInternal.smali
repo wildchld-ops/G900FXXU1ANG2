@@ -59,7 +59,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -86,7 +85,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/ReportingServiceInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ReportingServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ReportingServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -95,7 +93,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/ReportingServiceInternal;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ReportingServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ReportingServiceInternal;->getUsageCollectionStatus()Z
 
@@ -106,7 +103,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/ReportingServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ReportingServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ReportingServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -115,7 +111,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/ReportingServiceInternal;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ReportingServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ReportingServiceInternal;->getStatisticsCollectionStatus()Z
 
@@ -208,7 +203,6 @@
 
 .method public setStatisticsDataCollectionState(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -231,7 +225,6 @@
 
 .method public setUsageDataCollectionState(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 

@@ -174,7 +174,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -239,7 +238,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/PhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mInvalidatePanelMenuFeatures:I
 
@@ -248,8 +246,6 @@
 
 .method static synthetic access$002(Lcom/android/internal/policy/impl/PhoneWindow;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mInvalidatePanelMenuFeatures:I
 
@@ -258,7 +254,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/policy/impl/PhoneWindow;)Lcom/android/internal/widget/ActionBarView;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mActionBar:Lcom/android/internal/widget/ActionBarView;
 
@@ -267,8 +262,6 @@
 
 .method static synthetic access$102(Lcom/android/internal/policy/impl/PhoneWindow;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mInvalidatePanelMenuPosted:Z
 
@@ -277,7 +270,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/policy/impl/PhoneWindow;)Lcom/android/internal/view/menu/ContextMenuBuilder;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContextMenu:Lcom/android/internal/view/menu/ContextMenuBuilder;
 
@@ -286,8 +278,6 @@
 
 .method static synthetic access$1102(Lcom/android/internal/policy/impl/PhoneWindow;Lcom/android/internal/view/menu/ContextMenuBuilder;)Lcom/android/internal/view/menu/ContextMenuBuilder;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # Lcom/android/internal/view/menu/ContextMenuBuilder;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContextMenu:Lcom/android/internal/view/menu/ContextMenuBuilder;
 
@@ -296,7 +286,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/PhoneWindow;)Lcom/android/internal/view/menu/MenuDialogHelper;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContextMenuHelper:Lcom/android/internal/view/menu/MenuDialogHelper;
 
@@ -305,8 +294,6 @@
 
 .method static synthetic access$1202(Lcom/android/internal/policy/impl/PhoneWindow;Lcom/android/internal/view/menu/MenuDialogHelper;)Lcom/android/internal/view/menu/MenuDialogHelper;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # Lcom/android/internal/view/menu/MenuDialogHelper;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContextMenuHelper:Lcom/android/internal/view/menu/MenuDialogHelper;
 
@@ -315,7 +302,6 @@
 
 .method static synthetic access$1500(Lcom/android/internal/policy/impl/PhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     invoke-virtual {p0}, Landroid/view/Window;->getLocalFeatures()I
 
@@ -326,7 +312,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/policy/impl/PhoneWindow;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContentParent:Landroid/view/ViewGroup;
 
@@ -335,8 +320,6 @@
 
 .method static synthetic access$1700(Lcom/android/internal/policy/impl/PhoneWindow;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/Window;->setDefaultWindowFormat(I)V
 
@@ -345,7 +328,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/policy/impl/PhoneWindow;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PhoneWindow;->openPanelsAfterRestore()V
 
@@ -354,7 +336,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/policy/impl/PhoneWindow;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PhoneWindow;->dismissContextMenu()V
 
@@ -363,10 +344,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/PhoneWindow;ILcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # I
-    .param p2    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
-    .param p3    # Landroid/view/Menu;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/internal/policy/impl/PhoneWindow;->callOnPanelClosed(ILcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;Landroid/view/Menu;)V
 
@@ -375,7 +352,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/PhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mPanelChordingKey:I
 
@@ -384,7 +360,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/PhoneWindow;)Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mPreparedPanel:Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
@@ -393,11 +368,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/PhoneWindow;Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;ILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/internal/policy/impl/PhoneWindow;->performPanelShortcut(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;ILandroid/view/KeyEvent;I)Z
 
@@ -408,9 +378,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/PhoneWindow;IZ)Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/PhoneWindow;->getPanelState(IZ)Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
@@ -421,9 +388,6 @@
 
 .method private callOnPanelClosed(ILcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;Landroid/view/Menu;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
-    .param p3    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/view/Window;->getCallback()Landroid/view/Window$Callback;
 
@@ -478,7 +442,6 @@
 
 .method private static clearMenuViews(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;)V
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
     const/4 v0, 0x0
 
@@ -563,7 +526,6 @@
 
 .method private static ensureFindoFeatureChecked(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-eqz p0, :cond_0
 
@@ -593,7 +555,6 @@
 
 .method private getActivityCount(Landroid/content/Intent;)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/view/Window;->getContext()Landroid/content/Context;
 
@@ -618,7 +579,6 @@
 
 .method private getCircularProgressBar(Z)Landroid/widget/ProgressBar;
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mCircularProgressBar:Landroid/widget/ProgressBar;
 
@@ -667,8 +627,6 @@
 
 .method private getDrawableState(IZ)Lcom/android/internal/policy/impl/PhoneWindow$DrawableFeatureState;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -742,7 +700,6 @@
 
 .method private getHorizontalProgressBar(Z)Landroid/widget/ProgressBar;
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mHorizontalProgressBar:Landroid/widget/ProgressBar;
 
@@ -851,8 +808,6 @@
 
 .method private getPanelState(IZ)Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -865,9 +820,6 @@
 
 .method private getPanelState(IZLcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;)Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
     const/4 v5, 0x0
 
@@ -1009,8 +961,6 @@
 
 .method private hideProgressBars(Landroid/widget/ProgressBar;Landroid/widget/ProgressBar;)V
     .locals 5
-    .param p1    # Landroid/widget/ProgressBar;
-    .param p2    # Landroid/widget/ProgressBar;
 
     const/4 v4, 0x4
 
@@ -2305,7 +2255,6 @@
 
 .method private loadImageURI(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -2363,8 +2312,6 @@
 
 .method private openPanel(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;Landroid/view/KeyEvent;)V
     .locals 18
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
-    .param p2    # Landroid/view/KeyEvent;
 
     move-object/from16 v0, p1
 
@@ -2866,10 +2813,6 @@
 
 .method private performPanelShortcut(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;ILandroid/view/KeyEvent;I)Z
     .locals 3
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -2932,7 +2875,6 @@
 
 .method private reopenMenu(Z)V
     .locals 8
-    .param p1    # Z
 
     const/16 v7, 0x8
 
@@ -3223,8 +3165,6 @@
 
 .method private showProgressBars(Landroid/widget/ProgressBar;Landroid/widget/ProgressBar;)V
     .locals 4
-    .param p1    # Landroid/widget/ProgressBar;
-    .param p2    # Landroid/widget/ProgressBar;
 
     const/4 v3, 0x0
 
@@ -3267,9 +3207,6 @@
 
 .method private updateDrawable(ILcom/android/internal/policy/impl/PhoneWindow$DrawableFeatureState;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/internal/policy/impl/PhoneWindow$DrawableFeatureState;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContentParent:Landroid/view/ViewGroup;
 
@@ -3371,9 +3308,6 @@
 
 .method private updateInt(IIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContentParent:Landroid/view/ViewGroup;
 
@@ -3429,7 +3363,6 @@
 
 .method private updateProgressBars(I)V
     .locals 10
-    .param p1    # I
 
     const/16 v9, 0x8
 
@@ -3573,8 +3506,6 @@
 # virtual methods
 .method public addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContentParent:Landroid/view/ViewGroup;
 
@@ -3617,7 +3548,6 @@
 
 .method checkCloseActionMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-boolean v1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mClosingActionMenu:Z
 
@@ -3710,7 +3640,6 @@
 
 .method public final closePanel(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -3770,8 +3699,6 @@
 
 .method public final closePanel(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;Z)V
     .locals 4
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -3870,7 +3797,6 @@
 
 .method doInvalidatePanelMenu(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -3945,7 +3871,6 @@
 
 .method public findMenuPanel(Landroid/view/Menu;)Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mPanels:[Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
@@ -4004,7 +3929,6 @@
 
 .method protected generateLayout(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;)Landroid/view/ViewGroup;
     .locals 22
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/Window;->getWindowStyle()Landroid/content/res/TypedArray;
 
@@ -5609,7 +5533,6 @@
 
 .method protected initializePanelContent(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;)Z
     .locals 6
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
     const/4 v3, 0x1
 
@@ -5712,7 +5635,6 @@
 
 .method protected initializePanelDecor(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;)Z
     .locals 3
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
@@ -5743,7 +5665,6 @@
 
 .method protected initializePanelMenu(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;)Z
     .locals 9
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
 
     const/4 v8, 0x1
 
@@ -5808,7 +5729,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;)V
     .locals 1
-    .param p1    # Landroid/view/InputEvent;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PhoneWindow;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
@@ -5821,7 +5741,6 @@
 
 .method public invalidatePanelMenu(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -5863,8 +5782,6 @@
 
 .method public isShortcutKey(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -5903,7 +5820,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x0
 
@@ -5980,9 +5896,6 @@
 
 .method protected onDrawableChanged(ILandroid/graphics/drawable/Drawable;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
 
     const/4 v1, 0x3
 
@@ -6028,8 +5941,6 @@
 
 .method protected onIntChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x2
 
@@ -6070,9 +5981,6 @@
 
 .method protected onKeyDown(IILandroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/high16 v7, 0x800000
 
@@ -6425,8 +6333,6 @@
 
 .method public final onKeyDownPanel(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -6492,9 +6398,6 @@
 
 .method protected onKeyUp(IILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -6640,8 +6543,6 @@
 
 .method public final onKeyUpPanel(ILandroid/view/KeyEvent;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -6861,8 +6762,6 @@
 
 .method public onMenuItemSelected(Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-virtual {p0}, Landroid/view/Window;->getCallback()Landroid/view/Window$Callback;
 
@@ -6903,7 +6802,6 @@
 
 .method public onMenuModeChange(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     const/4 v0, 0x1
 
@@ -6971,8 +6869,6 @@
 
 .method public final openPanel(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     if-nez p1, :cond_1
 
@@ -7040,8 +6936,6 @@
 
 .method public performContextMenuIdentifierAction(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContextMenu:Lcom/android/internal/view/menu/ContextMenuBuilder;
 
@@ -7064,9 +6958,6 @@
 
 .method public performPanelIdentifierAction(III)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -7114,10 +7005,6 @@
 
 .method public performPanelShortcut(IILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
-    .param p4    # I
 
     const/4 v0, 0x1
 
@@ -7134,8 +7021,6 @@
 
 .method public final preparePanel(Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;Landroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$PanelFeatureState;
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v8, 0x0
 
@@ -7417,7 +7302,6 @@
 
 .method public requestFeature(I)Z
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -7506,7 +7390,6 @@
 
 .method public restoreHierarchyState(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, -0x1
 
@@ -7727,7 +7610,6 @@
 
 .method sendCloseSystemWindows(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/view/Window;->getContext()Landroid/content/Context;
 
@@ -7740,7 +7622,6 @@
 
 .method public final setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mBackgroundDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -7771,8 +7652,6 @@
 
 .method public final setChildDrawable(ILandroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 
@@ -7791,8 +7670,6 @@
 
 .method public final setChildInt(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -7803,7 +7680,6 @@
 
 .method public final setContainer(Landroid/view/Window;)V
     .locals 0
-    .param p1    # Landroid/view/Window;
 
     invoke-super {p0, p1}, Landroid/view/Window;->setContainer(Landroid/view/Window;)V
 
@@ -7812,7 +7688,6 @@
 
 .method public setContentView(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContentParent:Landroid/view/ViewGroup;
 
@@ -7854,7 +7729,6 @@
 
 .method public setContentView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, -0x1
 
@@ -7869,8 +7743,6 @@
 
 .method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mContentParent:Landroid/view/ViewGroup;
 
@@ -7910,7 +7782,6 @@
 
 .method public setDefaultIcon(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mResourcesSetFlags:I
 
@@ -7986,7 +7857,6 @@
 
 .method public setDefaultLogo(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mResourcesSetFlags:I
 
@@ -8022,8 +7892,6 @@
 
 .method protected final setFeatureDefaultDrawable(ILandroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 
@@ -8047,8 +7915,6 @@
 
 .method public final setFeatureDrawable(ILandroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
 
@@ -8078,8 +7944,6 @@
 
 .method public setFeatureDrawableAlpha(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -8103,8 +7967,6 @@
 
 .method public final setFeatureDrawableResource(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -8154,8 +8016,6 @@
 
 .method public final setFeatureDrawableUri(ILandroid/net/Uri;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -8206,10 +8066,6 @@
 
 .method protected setFeatureFromAttrs(ILandroid/content/res/TypedArray;II)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/res/TypedArray;
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p2, p3}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -8250,8 +8106,6 @@
 
 .method public final setFeatureInt(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -8262,7 +8116,6 @@
 
 .method public setIcon(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mIconRes:I
 
@@ -8292,8 +8145,6 @@
 
 .method public setLocalFocus(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/PhoneWindow;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
@@ -8306,7 +8157,6 @@
 
 .method public setLogo(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mLogoRes:I
 
@@ -8330,7 +8180,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mTitleView:Landroid/widget/TextView;
 
@@ -8360,7 +8209,6 @@
 
 .method public setTitleColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mTitleView:Landroid/widget/TextView;
 
@@ -8378,7 +8226,6 @@
 
 .method public setUiOptions(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mUiOptions:I
 
@@ -8387,8 +8234,6 @@
 
 .method public setUiOptions(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mUiOptions:I
 
@@ -8407,7 +8252,6 @@
 
 .method public setVolumeControlStream(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mVolumeControlStreamType:I
 
@@ -8416,7 +8260,6 @@
 
 .method public superDispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mDecor:Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
@@ -8429,7 +8272,6 @@
 
 .method public superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mDecor:Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
@@ -8442,7 +8284,6 @@
 
 .method public superDispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mDecor:Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
@@ -8455,7 +8296,6 @@
 
 .method public superDispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mDecor:Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
@@ -8468,7 +8308,6 @@
 
 .method public superDispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mDecor:Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
@@ -8481,7 +8320,6 @@
 
 .method public takeInputQueue(Landroid/view/InputQueue$Callback;)V
     .locals 0
-    .param p1    # Landroid/view/InputQueue$Callback;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mTakeInputQueueCallback:Landroid/view/InputQueue$Callback;
 
@@ -8490,7 +8328,6 @@
 
 .method public takeKeyEvents(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mDecor:Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
@@ -8501,7 +8338,6 @@
 
 .method public takeSurface(Landroid/view/SurfaceHolder$Callback2;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder$Callback2;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindow;->mTakeSurfaceCallback:Landroid/view/SurfaceHolder$Callback2;
 
@@ -8510,8 +8346,6 @@
 
 .method public final togglePanel(ILandroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -8536,8 +8370,6 @@
 
 .method protected final updateDrawable(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 

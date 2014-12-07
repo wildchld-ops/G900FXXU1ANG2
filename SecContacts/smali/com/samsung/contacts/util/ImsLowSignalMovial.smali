@@ -298,7 +298,6 @@
 
 .method public showErrorDialog(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/samsung/contacts/util/ImsLowSignalBase;->dismissDialog()V
 

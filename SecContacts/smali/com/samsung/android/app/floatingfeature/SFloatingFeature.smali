@@ -141,7 +141,6 @@
 # virtual methods
 .method public getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/samsung/android/app/floatingfeature/SFloatingFeature;->mTarget:Lcom/samsung/android/feature/IFloatingFeature;
 

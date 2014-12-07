@@ -500,8 +500,6 @@
 
 .method public static containsAllUuids([Landroid/os/ParcelUuid;[Landroid/os/ParcelUuid;)Z
     .locals 8
-    .param p0    # [Landroid/os/ParcelUuid;
-    .param p1    # [Landroid/os/ParcelUuid;
 
     const/4 v6, 0x0
 
@@ -566,8 +564,6 @@
 
 .method public static containsAnyUuid([Landroid/os/ParcelUuid;[Landroid/os/ParcelUuid;)Z
     .locals 8
-    .param p0    # [Landroid/os/ParcelUuid;
-    .param p1    # [Landroid/os/ParcelUuid;
 
     const/4 v6, 0x0
 
@@ -641,7 +637,6 @@
 
 .method public static getServiceIdentifierFromParcelUuid(Landroid/os/ParcelUuid;)I
     .locals 7
-    .param p0    # Landroid/os/ParcelUuid;
 
     invoke-virtual {p0}, Landroid/os/ParcelUuid;->getUuid()Ljava/util/UUID;
 
@@ -666,7 +661,6 @@
 
 .method public static isAdvAudioDist(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->AdvAudioDist:Landroid/os/ParcelUuid;
 
@@ -679,7 +673,6 @@
 
 .method public static isAudioSink(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->AudioSink:Landroid/os/ParcelUuid;
 
@@ -692,7 +685,6 @@
 
 .method public static isAudioSource(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->AudioSource:Landroid/os/ParcelUuid;
 
@@ -705,7 +697,6 @@
 
 .method public static isAvrcpController(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->AvrcpController:Landroid/os/ParcelUuid;
 
@@ -718,7 +709,6 @@
 
 .method public static isAvrcpTarget(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->AvrcpTarget:Landroid/os/ParcelUuid;
 
@@ -731,7 +721,6 @@
 
 .method public static isBnep(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->BNEP:Landroid/os/ParcelUuid;
 
@@ -744,7 +733,6 @@
 
 .method public static isDun(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->DUN:Landroid/os/ParcelUuid;
 
@@ -757,7 +745,6 @@
 
 .method public static isFtp(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->FileTransfer:Landroid/os/ParcelUuid;
 
@@ -770,7 +757,6 @@
 
 .method public static isHandsfree(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->Handsfree:Landroid/os/ParcelUuid;
 
@@ -783,7 +769,6 @@
 
 .method public static isHeadset(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->HSP:Landroid/os/ParcelUuid;
 
@@ -796,7 +781,6 @@
 
 .method public static isInputDevice(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->Hid:Landroid/os/ParcelUuid;
 
@@ -809,7 +793,6 @@
 
 .method public static isMap(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->MAP:Landroid/os/ParcelUuid;
 
@@ -822,7 +805,6 @@
 
 .method public static isMas(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->MAS:Landroid/os/ParcelUuid;
 
@@ -835,7 +817,6 @@
 
 .method public static isMns(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->MNS:Landroid/os/ParcelUuid;
 
@@ -848,7 +829,6 @@
 
 .method public static isNap(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->NAP:Landroid/os/ParcelUuid;
 
@@ -861,7 +841,6 @@
 
 .method public static isOpp(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->ObexObjectPush:Landroid/os/ParcelUuid;
 
@@ -874,7 +853,6 @@
 
 .method public static isPanu(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->PANU:Landroid/os/ParcelUuid;
 
@@ -887,7 +865,6 @@
 
 .method public static isPbap(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->PhoneBookAccess:Landroid/os/ParcelUuid;
 
@@ -900,7 +877,6 @@
 
 .method public static isSap(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->SIM_ACC:Landroid/os/ParcelUuid;
 
@@ -913,7 +889,6 @@
 
 .method public static isSerialPort(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     sget-object v0, Landroid/bluetooth/BluetoothUuid;->SerialPort:Landroid/os/ParcelUuid;
 
@@ -926,8 +901,6 @@
 
 .method public static isUuidPresent([Landroid/os/ParcelUuid;Landroid/os/ParcelUuid;)Z
     .locals 7
-    .param p0    # [Landroid/os/ParcelUuid;
-    .param p1    # Landroid/os/ParcelUuid;
 
     const/4 v5, 0x1
 

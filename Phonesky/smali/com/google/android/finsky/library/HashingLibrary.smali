@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/library/LibraryHasher;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/LibraryHasher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +25,6 @@
 # virtual methods
 .method public add(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/library/HashingLibrary;->contains(Lcom/google/android/finsky/library/LibraryEntry;)Z
 
@@ -63,7 +61,6 @@
 
 .method public remove(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/library/HashingLibrary;->get(Lcom/google/android/finsky/library/LibraryEntry;)Lcom/google/android/finsky/library/LibraryEntry;
 

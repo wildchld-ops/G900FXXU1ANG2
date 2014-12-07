@@ -14,8 +14,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/swypeconnect/ac/ACManager;Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACManager;
-    .param p2    # Lcom/nuance/connect/store/PersistentDataStore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,9 +38,6 @@
 # virtual methods
 .method public backgroundData(ZZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -77,9 +72,6 @@
 
 .method public foregroundData(ZZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -162,7 +154,6 @@
 
 .method public setConcurrentConnectionLimit(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -196,7 +187,6 @@
 
 .method public setCustomerString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACConfiguration;->config:Lcom/nuance/connect/api/ConfigService;
 
@@ -207,7 +197,6 @@
 
 .method public setDownloadIdleTimeout(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -238,7 +227,6 @@
 
 .method public setLogLevel(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACConfiguration;->config:Lcom/nuance/connect/api/ConfigService;
 
@@ -249,7 +237,6 @@
 
 .method public setRefreshInterval(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;

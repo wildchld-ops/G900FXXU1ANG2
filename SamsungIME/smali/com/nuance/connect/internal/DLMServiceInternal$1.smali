@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLocation(Lcom/nuance/connect/location/SwypeLocation;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/location/SwypeLocation;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal$1;->this$0:Lcom/nuance/connect/internal/DLMServiceInternal;
 
@@ -59,7 +58,6 @@
 
 .method public onLocationComplete(Lcom/nuance/connect/location/SwypeLocation;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/location/SwypeLocation;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal$1;->this$0:Lcom/nuance/connect/internal/DLMServiceInternal;
 

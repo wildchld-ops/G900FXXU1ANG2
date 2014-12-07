@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,10 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +104,6 @@
 
 .method public static formatSizeString(J)Ljava/lang/String;
     .locals 10
-    .param p0    # J
 
     const/4 v9, 0x1
 
@@ -183,8 +176,6 @@
 
 .method public static getDateTime(Landroid/content/Context;Landroid/net/Uri;)I
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v5, 0x0
 
@@ -334,8 +325,6 @@
 
 .method public static getMmsSize(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 19
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const-wide/16 v13, 0x0
 
@@ -569,8 +558,6 @@
 
 .method public static getSubject(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x1
 
@@ -698,10 +685,6 @@
 
 .method public static makeReadReport(Landroid/content/Context;IIJ)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -794,9 +777,6 @@
 
 .method public static makeReadReportSubject(Landroid/content/Context;ILjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -975,7 +955,6 @@
 
 .method public setMmsSize(I)V
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -986,7 +965,6 @@
 
 .method public setRecvAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/ReadReportData;->mRecvAddress:Ljava/lang/String;
 
@@ -995,7 +973,6 @@
 
 .method public setRecvTime(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/ReadReportData;->mRecvTime:Ljava/lang/String;
 
@@ -1004,7 +981,6 @@
 
 .method public setSubject(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/ReadReportData;->mSubject:Ljava/lang/String;
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 4
-    .param p1    # Landroid/view/animation/Animation;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -63,14 +62,12 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method

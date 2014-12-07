@@ -6,9 +6,6 @@
 # direct methods
 .method public static getSummaryViewBinder(Lcom/google/android/finsky/api/model/DfeToc;ILandroid/accounts/Account;)Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;
     .locals 7
-    .param p0    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p1    # I
-    .param p2    # Landroid/accounts/Account;
 
     packed-switch p1, :pswitch_data_0
 

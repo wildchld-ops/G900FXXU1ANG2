@@ -14,10 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljavax/sip/ClientTransaction;Ljavax/sip/Dialog;Ljavax/sip/message/Response;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljavax/sip/ClientTransaction;
-    .param p3    # Ljavax/sip/Dialog;
-    .param p4    # Ljavax/sip/message/Response;
 
     invoke-direct {p0, p1}, Ljava/util/EventObject;-><init>(Ljava/lang/Object;)V
 

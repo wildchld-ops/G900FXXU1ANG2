@@ -105,9 +105,6 @@
 
 .method protected createRequestParser(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/HttpRequestFactory;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/io/HttpMessageParser;
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/HttpRequestFactory;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/io/HttpRequestParser;
 
@@ -120,8 +117,6 @@
 
 .method protected createResponseWriter(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/io/HttpMessageWriter;
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/io/HttpResponseWriter;
 
@@ -172,9 +167,6 @@
 
 .method protected init(Lorg/apache/http/io/SessionInputBuffer;Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
-    .param p2    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     if-nez p1, :cond_0
 
@@ -264,7 +256,6 @@
 
 .method public receiveRequestEntity(Lorg/apache/http/HttpEntityEnclosingRequest;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpEntityEnclosingRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -326,7 +317,6 @@
 
 .method public sendResponseEntity(Lorg/apache/http/HttpResponse;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -359,7 +349,6 @@
 
 .method public sendResponseHeader(Lorg/apache/http/HttpResponse;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

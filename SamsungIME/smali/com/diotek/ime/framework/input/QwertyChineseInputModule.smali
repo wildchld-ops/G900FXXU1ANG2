@@ -322,8 +322,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v12, 0x1
 
@@ -812,7 +810,6 @@
 
 .method private removeDivChar([C)Ljava/lang/String;
     .locals 6
-    .param p1    # [C
 
     const/4 v4, 0x0
 
@@ -908,8 +905,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v3, -0x7a
 
@@ -1016,17 +1011,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1035,9 +1025,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1046,9 +1033,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1057,7 +1041,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x0
 
@@ -1174,8 +1157,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v7, 0x1
 
@@ -1371,8 +1352,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v9, 0xa
 

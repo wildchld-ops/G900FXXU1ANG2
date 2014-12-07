@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -72,9 +71,6 @@
 
 .method private configureSelection(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 4
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     if-nez p4, :cond_1
 
@@ -218,8 +214,6 @@
 # virtual methods
 .method protected bindName(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v4, 0x1
 
@@ -335,10 +329,6 @@
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v10, 0x0
 
@@ -499,8 +489,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 6
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     const-string v4, "SIMContactListAdapter"
 
@@ -667,9 +655,6 @@
 
 .method protected configureProjection(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 2
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -725,9 +710,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 5
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     const-wide/16 v3, 0x0
 
@@ -848,7 +830,6 @@
 
 .method public getContactLookupKey(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/list/SIMContactListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -923,7 +904,6 @@
 
 .method public setActionCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/list/SIMContactListAdapter;->mActionCode:I
 

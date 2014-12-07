@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -180,7 +175,6 @@
 
 .method public setStatus(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/CategoryServiceInternal$AddonDictionaryImpl;->status:Ljava/lang/String;
 

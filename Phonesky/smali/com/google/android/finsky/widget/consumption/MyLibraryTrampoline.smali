@@ -24,8 +24,6 @@
 
 .method public finish(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -101,7 +99,6 @@
 
 .method protected getCorpusName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -144,7 +141,6 @@
 
 .method protected isBackendEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 

@@ -151,7 +151,6 @@
 
 .method private getIntentInstance(Ljava/lang/String;)Ljava/lang/Object;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -283,7 +282,6 @@
 
 .method private varargs getMethod(Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -356,8 +354,6 @@
 # virtual methods
 .method public bindService(Ljava/lang/String;Ljava/lang/Object;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x3
 
@@ -487,7 +483,6 @@
 
 .method public startService(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -585,7 +580,6 @@
 
 .method public unbindService(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 

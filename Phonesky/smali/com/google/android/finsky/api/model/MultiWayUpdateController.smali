@@ -75,8 +75,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/appstate/InstallerDataStore;Lcom/google/android/finsky/library/Libraries;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore;
-    .param p2    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/MultiDfeBulkDetails;-><init>()V
 
@@ -93,7 +91,6 @@
 
 .method private blacklistPackage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/api/model/MultiWayUpdateController;->sPackageBlacklist:Ljava/util/Set;
 
@@ -115,8 +112,6 @@
 
 .method private captureUpdateAccount(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/android/finsky/api/model/MultiWayUpdateController;->mInstallerDataStore:Lcom/google/android/finsky/appstate/InstallerDataStore;
 
@@ -172,8 +167,6 @@
 
 .method private isAutoAcquireAttempt(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -233,8 +226,6 @@
 
 .method public static selectAccountsForUpdateChecks(Lcom/google/android/finsky/appstate/InstallerDataStore;Ljava/lang/String;Ljava/util/Map;)V
     .locals 12
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -457,8 +448,6 @@
 
 .method private startAutoAcquire(Ljava/lang/String;Lcom/google/android/finsky/api/model/MultiWayUpdateController$AccountVersionDocument;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/api/model/MultiWayUpdateController$AccountVersionDocument;
 
     const/4 v2, 0x1
 
@@ -695,8 +684,6 @@
 
 .method protected addToAutoAcquireWorkList(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/MultiWayUpdateController;->mAppToAccountTagMatchList:Ljava/util/List;
 
@@ -722,7 +709,6 @@
 
 .method protected captureAutoAcquireTags(Lcom/google/android/finsky/api/model/Document;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getAppDetails()Lcom/google/android/finsky/protos/DocDetails$AppDetails;
 
@@ -801,7 +787,6 @@
 
 .method protected captureVariesByAccount(Lcom/google/android/finsky/api/model/Document;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v8, 0x0
 
@@ -1346,7 +1331,6 @@
 
 .method protected collectAutoAcquireApps(Ljava/util/Map;[Lcom/google/android/finsky/api/model/MultiWayUpdateController$AccountAutoAcquireTags;)V
     .locals 11
-    .param p2    # [Lcom/google/android/finsky/api/model/MultiWayUpdateController$AccountAutoAcquireTags;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1486,8 +1470,6 @@
 
 .method protected findAccountWithMatchingTags([Ljava/lang/String;[Lcom/google/android/finsky/api/model/MultiWayUpdateController$AccountAutoAcquireTags;)Ljava/lang/String;
     .locals 13
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Lcom/google/android/finsky/api/model/MultiWayUpdateController$AccountAutoAcquireTags;
 
     move-object v3, p2
 
@@ -1564,7 +1546,6 @@
 
 .method protected generatePackageMap(Z)Ljava/util/Map;
     .locals 11
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",

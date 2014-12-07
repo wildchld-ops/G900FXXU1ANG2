@@ -53,7 +53,6 @@
 
 .method private static getPackageName(Landroid/content/Intent;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -117,7 +116,6 @@
 # virtual methods
 .method public attach(Lcom/google/android/finsky/receivers/PackageMonitorReceiver$PackageStatusListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver$PackageStatusListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/PackageMonitorReceiver;->mListeners:Ljava/util/List;
 
@@ -128,7 +126,6 @@
 
 .method public detach(Lcom/google/android/finsky/receivers/PackageMonitorReceiver$PackageStatusListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver$PackageStatusListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/PackageMonitorReceiver;->mListeners:Ljava/util/List;
 
@@ -139,8 +136,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

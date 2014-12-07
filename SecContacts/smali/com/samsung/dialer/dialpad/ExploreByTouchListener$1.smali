@@ -37,9 +37,6 @@
 # virtual methods
 .method public performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 

@@ -1074,7 +1074,6 @@
 
 .method public static createParser(Ljava/lang/String;)Lgov/nist/javax/sip/parser/HeaderParser;
     .locals 10
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

@@ -12136,7 +12136,6 @@
 
 .method private constructor <init>(Ljava/lang/String;I[Ljava/lang/String;)V
     .locals 1
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -12158,7 +12157,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/i18n/addressinput/RegionDataConstants$RegionDataEnum;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/i18n/addressinput/RegionDataConstants$RegionDataEnum;
 

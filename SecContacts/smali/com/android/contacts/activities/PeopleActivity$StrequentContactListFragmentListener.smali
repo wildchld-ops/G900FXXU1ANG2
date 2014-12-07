@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/activities/PeopleActivity;Lcom/android/contacts/activities/PeopleActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/activities/PeopleActivity;
-    .param p2    # Lcom/android/contacts/activities/PeopleActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/PeopleActivity$StrequentContactListFragmentListener;-><init>(Lcom/android/contacts/activities/PeopleActivity;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onContactSelected(Landroid/net/Uri;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity$StrequentContactListFragmentListener;->this$0:Lcom/android/contacts/activities/PeopleActivity;
 

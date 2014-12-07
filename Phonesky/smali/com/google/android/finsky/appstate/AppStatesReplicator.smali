@@ -39,12 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/library/Accounts;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/vending/remoting/api/VendingApiFactory;Landroid/os/Handler;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/Accounts;
-    .param p2    # Lcom/google/android/finsky/library/Libraries;
-    .param p3    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p4    # Lcom/google/android/vending/remoting/api/VendingApiFactory;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +65,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/appstate/AppStatesReplicator;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/appstate/AppStatesReplicator;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/AppStatesReplicator;->mNotificationHandler:Landroid/os/Handler;
 
@@ -80,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/appstate/AppStatesReplicator;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/AppStatesReplicator;
 
     invoke-direct {p0}, Lcom/google/android/finsky/appstate/AppStatesReplicator;->internalReplicate()V
 
@@ -89,10 +81,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/appstate/AppStatesReplicator;III)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/AppStatesReplicator;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/appstate/AppStatesReplicator;->handleContentSyncResponse(III)V
 
@@ -101,7 +89,6 @@
 
 .method private static getAccountList(Ljava/util/Map;Landroid/accounts/Account;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -141,9 +128,6 @@
 
 .method private declared-synchronized handleContentSyncResponse(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -542,8 +526,6 @@
 
 .method private makeInstallState(Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;J)Lcom/google/android/finsky/protos/VendingProtos$ContentSyncRequestProto$AssetInstallState;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;
-    .param p2    # J
 
     const/4 v3, 0x1
 
@@ -590,7 +572,6 @@
 
 .method private makeSystemApp(Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;)Lcom/google/android/finsky/protos/VendingProtos$ContentSyncRequestProto$SystemApp;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;
 
     const/4 v3, 0x1
 
@@ -637,8 +618,6 @@
 
 .method private performRequests(Ljava/util/List;[I[ILjava/util/List;Ljava/util/List;)V
     .locals 18
-    .param p2    # [I
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -991,7 +970,6 @@
 
 .method computeConfigurationHash(Ljava/util/List;Ljava/lang/String;)I
     .locals 4
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1039,7 +1017,6 @@
 
 .method computeHash(Ljava/util/Collection;I)I
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1061,7 +1038,6 @@
 
 .method public load(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/google/android/finsky/appstate/AppStatesReplicator$1;
 
@@ -1080,12 +1056,6 @@
 
 .method makeContentSyncRequest(IILjava/util/List;IILjava/util/List;IJ)Lcom/google/android/finsky/protos/VendingProtos$ContentSyncRequestProto;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p4    # I
-    .param p5    # I
-    .param p7    # I
-    .param p8    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1234,7 +1204,6 @@
 
 .method public declared-synchronized replicate(Lcom/google/android/finsky/appstate/AppStatesReplicator$Listener;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/appstate/AppStatesReplicator$Listener;
 
     monitor-enter p0
 

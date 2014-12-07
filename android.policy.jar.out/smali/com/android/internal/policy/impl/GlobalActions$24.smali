@@ -33,7 +33,6 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 4
-    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v3, 0x3
 

@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/quickcontact/QuickContactActivity;Lcom/android/contacts/quickcontact/QuickContactActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/quickcontact/QuickContactActivity;
-    .param p2    # Lcom/android/contacts/quickcontact/QuickContactActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/quickcontact/QuickContactActivity$PageChangeListener;-><init>(Lcom/android/contacts/quickcontact/QuickContactActivity;)V
 
@@ -47,8 +45,6 @@
 
 .method private renderSelectedRectangle(IF)V
     .locals 5
-    .param p1    # I
-    .param p2    # F
 
     iget-object v3, p0, Lcom/android/contacts/quickcontact/QuickContactActivity$PageChangeListener;->this$0:Lcom/android/contacts/quickcontact/QuickContactActivity;
 
@@ -106,7 +102,6 @@
 # virtual methods
 .method public onPageScrollStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/support/v4/view/ViewPager$SimpleOnPageChangeListener;->onPageScrollStateChanged(I)V
 
@@ -117,9 +112,6 @@
 
 .method public onPageScrolled(IFI)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/quickcontact/QuickContactActivity$PageChangeListener;->renderSelectedRectangle(IF)V
 
@@ -128,7 +120,6 @@
 
 .method public onPageSelected(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/quickcontact/QuickContactActivity$PageChangeListener;->this$0:Lcom/android/contacts/quickcontact/QuickContactActivity;
 

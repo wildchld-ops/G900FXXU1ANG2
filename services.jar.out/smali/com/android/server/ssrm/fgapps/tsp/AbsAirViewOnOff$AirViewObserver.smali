@@ -37,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$AirViewObserver;->this$0:Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff;
 

@@ -26,10 +26,6 @@
 # direct methods
 .method public constructor <init>(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -456,8 +452,6 @@
 
 .method public draw(Ljavax/microedition/khronos/opengles/GL10;F)V
     .locals 10
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # F
 
     const/16 v9, 0xb71
 
@@ -594,8 +588,6 @@
 
 .method public setTextureSize(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/gles/Snapshot;->m_szTexture:Lcom/voovio/geometry/Point;
 

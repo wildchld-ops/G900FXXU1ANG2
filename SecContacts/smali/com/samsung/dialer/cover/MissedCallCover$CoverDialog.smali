@@ -45,10 +45,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/dialer/cover/MissedCallCover;Landroid/content/Context;[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p2    # Landroid/content/Context;
-    .param p3    # [Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v7, 0x0
 

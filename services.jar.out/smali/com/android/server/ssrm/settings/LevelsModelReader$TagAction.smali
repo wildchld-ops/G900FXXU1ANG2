@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/settings/LevelsModelReader;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/ssrm/settings/LevelsModelReader$TagAction;->this$0:Lcom/android/server/ssrm/settings/LevelsModelReader;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method doAction(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
 
     iget-object v4, p0, Lcom/android/server/ssrm/settings/LevelsModelReader$TagAction;->mTag:Ljava/lang/String;
 
@@ -147,8 +145,6 @@
 
 .method handleEndNestedTag(Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
 
     return-void
 .end method
@@ -161,8 +157,6 @@
 
 .method handleStartNestedTag(Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
 
     return-void
 .end method

@@ -14,8 +14,6 @@
 
 .method public static makeSms(Landroid/content/Context;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/contacts/util/PhoneCapabilityTester;->isSmsIntentRegistered(Landroid/content/Context;)Z
 

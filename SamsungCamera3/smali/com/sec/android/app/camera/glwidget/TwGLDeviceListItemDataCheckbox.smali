@@ -14,12 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFZ)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Z
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -174,10 +168,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFZ)V
     .locals 5
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     const/4 v4, 0x4
 

@@ -6,8 +6,6 @@
 # direct methods
 .method protected constructor <init>(Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;Lorg/apache/http/impl/conn/AbstractPoolEntry;)V
     .locals 0
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager;
-    .param p2    # Lorg/apache/http/impl/conn/AbstractPoolEntry;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/impl/conn/AbstractPooledConnAdapter;-><init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/impl/conn/AbstractPoolEntry;)V
 

@@ -1192,7 +1192,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/GridSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/GridSettings;->mBatteryPresent:Z
 
@@ -1201,8 +1200,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/GridSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/GridSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/GridSettings;->mBatteryPresent:Z
 
@@ -1211,7 +1208,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/GridSettings;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     invoke-direct {p0}, Lcom/android/settings/GridSettings;->makeFavoriteIntent()Landroid/content/Intent;
 
@@ -1222,7 +1218,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/GridSettings;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mFirstPage:Ljava/util/List;
 
@@ -1231,9 +1226,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/GridSettings;Ljava/util/List;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/GridSettings;
-    .param p1    # Ljava/util/List;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/GridSettings;->updateHeaderList(Ljava/util/List;Z)V
 
@@ -1242,7 +1234,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/GridSettings;)Lcom/android/settings/accounts/AuthenticatorHelper;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -1251,7 +1242,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/GridSettings;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mSecondPage:Ljava/util/List;
 
@@ -1260,7 +1250,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/GridSettings;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mThirdPage:Ljava/util/List;
 
@@ -1269,7 +1258,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/GridSettings;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mFourthPage:Ljava/util/List;
 
@@ -1278,7 +1266,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/GridSettings;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mFifthPage:Ljava/util/List;
 
@@ -1287,7 +1274,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/GridSettings;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mSixthPage:Ljava/util/List;
 
@@ -1296,7 +1282,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/GridSettings;)[Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mPagerListView:[Landroid/widget/ListView;
 
@@ -1305,7 +1290,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/GridSettings;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->pager:Landroid/support/v4/view/ViewPager;
 
@@ -1314,8 +1298,6 @@
 
 .method static synthetic access$2002(Lcom/android/settings/GridSettings;Landroid/preference/PreferenceActivity$Header;)Landroid/preference/PreferenceActivity$Header;
     .locals 0
-    .param p0    # Lcom/android/settings/GridSettings;
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     iput-object p1, p0, Lcom/android/settings/GridSettings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -1324,8 +1306,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/GridSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/GridSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/GridSettings;->isExpanding:Z
 
@@ -1334,8 +1314,6 @@
 
 .method static synthetic access$2102(Lcom/android/settings/GridSettings;Landroid/preference/PreferenceActivity$Header;)Landroid/preference/PreferenceActivity$Header;
     .locals 0
-    .param p0    # Lcom/android/settings/GridSettings;
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     iput-object p1, p0, Lcom/android/settings/GridSettings;->mLastHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -1344,7 +1322,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/GridSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/GridSettings;->mOpenSearchHierarchy:Z
 
@@ -1361,7 +1338,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/GridSettings;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -1370,8 +1346,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/GridSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/GridSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/GridSettings;->switchToParent(Ljava/lang/String;)V
 
@@ -1388,7 +1362,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/GridSettings;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->viewTypeDialog:Landroid/app/Dialog;
 
@@ -1397,7 +1370,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/GridSettings;)Lcom/android/settings/HeaderListManager;
     .locals 1
-    .param p0    # Lcom/android/settings/GridSettings;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->listManager:Lcom/android/settings/HeaderListManager;
 
@@ -1568,7 +1540,6 @@
 
 .method private highlightHeader(I)V
     .locals 4
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -2006,7 +1977,6 @@
 
 .method private switchToHeaderLocal(Landroid/preference/PreferenceActivity$Header;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v0, 0x1
 
@@ -4249,7 +4219,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/settings/GridSettings;->mSGD:Landroid/view/ScaleGestureDetector;
 
@@ -4417,7 +4386,6 @@
 
 .method public getRealValue(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4538,7 +4506,6 @@
 
 .method public isGiditemChecked(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4547,7 +4514,6 @@
 
 .method protected isValidFragment(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4586,7 +4552,6 @@
 
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 1
-    .param p1    # [Landroid/accounts/Account;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -5407,10 +5372,6 @@
 
 .method public onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/preference/PreferenceActivity;->onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
 
@@ -5505,7 +5466,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x2
 
@@ -6309,8 +6269,6 @@
 
 .method public onGridItemSelected(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/android/settings/GridSettings;->isExpanding:Z
 
@@ -6420,9 +6378,6 @@
 
 .method public onItemLongClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)Z
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6440,8 +6395,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x54
 
@@ -6881,7 +6834,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -7101,7 +7053,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -7168,7 +7119,6 @@
 
 .method public shouldUpRecreateTask(Landroid/content/Intent;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -7404,7 +7354,6 @@
 
 .method public switchToHeader(Landroid/preference/PreferenceActivity$Header;)V
     .locals 7
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v3, 0x0
 

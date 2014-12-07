@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;Lcom/google/android/finsky/billing/creditcard/CreditCardSaver$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
-    .param p2    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver$EscrowErrorListener;-><init>(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 4
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v3, 0x1
 

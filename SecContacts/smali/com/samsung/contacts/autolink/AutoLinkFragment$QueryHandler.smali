@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/autolink/AutoLinkFragment;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/autolink/AutoLinkFragment$QueryHandler;->this$0:Lcom/samsung/contacts/autolink/AutoLinkFragment;
 
@@ -57,9 +56,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 19
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     move-object/from16 v0, p0
 

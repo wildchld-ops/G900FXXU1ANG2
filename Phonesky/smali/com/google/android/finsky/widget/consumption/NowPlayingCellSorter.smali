@@ -42,9 +42,6 @@
 
 .method private getCellDescriptor(III)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -85,9 +82,6 @@
 # virtual methods
 .method public getSortedIndex(III)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/widget/consumption/NowPlayingCellSorter;->getCellDescriptor(III)Ljava/lang/String;
 
@@ -124,7 +118,6 @@
 
 .method public sort(Ljava/util/List;Landroid/content/res/Resources;)V
     .locals 20
-    .param p2    # Landroid/content/res/Resources;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

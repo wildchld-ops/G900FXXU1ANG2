@@ -37,7 +37,6 @@
 
 .method private static matchCredentials(Ljava/util/HashMap;Lorg/apache/http/auth/AuthScope;)Lorg/apache/http/auth/Credentials;
     .locals 7
-    .param p1    # Lorg/apache/http/auth/AuthScope;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -139,7 +138,6 @@
 
 .method public declared-synchronized getCredentials(Lorg/apache/http/auth/AuthScope;)Lorg/apache/http/auth/Credentials;
     .locals 2
-    .param p1    # Lorg/apache/http/auth/AuthScope;
 
     monitor-enter p0
 
@@ -180,8 +178,6 @@
 
 .method public declared-synchronized setCredentials(Lorg/apache/http/auth/AuthScope;Lorg/apache/http/auth/Credentials;)V
     .locals 2
-    .param p1    # Lorg/apache/http/auth/AuthScope;
-    .param p2    # Lorg/apache/http/auth/Credentials;
 
     monitor-enter p0
 

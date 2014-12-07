@@ -55,7 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const/4 v13, 0x2
 
@@ -278,7 +277,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;->mSoundPool:Landroid/media/SoundPool;
 
@@ -287,8 +285,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;Landroid/media/SoundPool;)Landroid/media/SoundPool;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;
-    .param p1    # Landroid/media/SoundPool;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;->mSoundPool:Landroid/media/SoundPool;
 
@@ -297,8 +293,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;->releaseSoundRunnable:Ljava/lang/Runnable;
 
@@ -354,7 +348,6 @@
 
 .method private makeResBitmap(I)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -463,7 +456,6 @@
 
 .method private playSound(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -645,8 +637,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -703,8 +693,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;->mView:Lcom/sec/android/visualeffect/watercolor/WaterColorView;
 
@@ -717,8 +705,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewWaterColor;->mView:Lcom/sec/android/visualeffect/watercolor/WaterColorView;
 
@@ -733,7 +719,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v4, 0x2
 
@@ -863,7 +848,6 @@
 
 .method public setContextualWallpaper(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_0
 
@@ -885,7 +869,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -910,8 +893,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "WaterColor_KeyguardEffectView"
 

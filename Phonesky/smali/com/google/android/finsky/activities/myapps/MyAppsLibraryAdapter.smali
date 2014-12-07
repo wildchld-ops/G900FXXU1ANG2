@@ -59,13 +59,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/activities/AuthenticatedActivity;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Landroid/view/View$OnClickListener;Lcom/google/android/finsky/layout/play/PlayCardViewMyApps$OnArchiveActionListener;Landroid/view/View$OnLongClickListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Landroid/view/View$OnClickListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayCardViewMyApps$OnArchiveActionListener;
-    .param p6    # Landroid/view/View$OnLongClickListener;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v1, 0x1
 
@@ -94,8 +87,6 @@
 
 .method private getAccountSwitcherView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -123,10 +114,6 @@
 
 .method private getDocView(ILcom/google/android/finsky/api/model/Document;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
 
     const/4 v8, 0x1
 
@@ -231,7 +218,6 @@
 
 .method public static getViewDoc(Landroid/view/View;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -294,7 +280,6 @@
 
 .method public getDocument(I)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -307,7 +292,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;->mHasAccountSwitcher:Z
 
@@ -339,7 +323,6 @@
 
 .method public getItemViewType(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -443,9 +426,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;->getItemViewType(I)I
 
@@ -531,7 +511,6 @@
 
 .method public isEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     iget-boolean v1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;->mCanClickOnInstalledApps:Z
 
@@ -599,7 +578,6 @@
 
 .method public setCanClickOnInstalledApps(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;->mCanClickOnInstalledApps:Z
 
@@ -610,7 +588,6 @@
 
 .method public setDfeList(Lcom/google/android/finsky/api/model/DfeList;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/DfeList;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;->mList:Lcom/google/android/finsky/api/model/DfeList;
 

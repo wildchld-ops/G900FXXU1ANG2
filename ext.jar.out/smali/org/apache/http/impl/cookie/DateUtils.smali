@@ -102,7 +102,6 @@
 
 .method public static formatDate(Ljava/util/Date;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/util/Date;
 
     const-string v0, "EEE, dd MMM yyyy HH:mm:ss zzz"
 
@@ -115,8 +114,6 @@
 
 .method public static formatDate(Ljava/util/Date;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/util/Date;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -153,7 +150,6 @@
 
 .method public static parseDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/cookie/DateParseException;
@@ -171,8 +167,6 @@
 
 .method public static parseDate(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/Date;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/cookie/DateParseException;
@@ -190,9 +184,6 @@
 
 .method public static parseDate(Ljava/lang/String;[Ljava/lang/String;Ljava/util/Date;)Ljava/util/Date;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/util/Date;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/impl/cookie/DateParseException;

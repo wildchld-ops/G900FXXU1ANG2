@@ -104,14 +104,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/receivers/Installer;Lcom/google/android/finsky/installer/InstallPolicies;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/utils/BitmapLoader;Landroid/view/View$OnClickListener;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$BucketsChangedListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/receivers/Installer;
-    .param p3    # Lcom/google/android/finsky/installer/InstallPolicies;
-    .param p4    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p6    # Landroid/view/View$OnClickListener;
-    .param p7    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$BucketsChangedListener;
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v4, 0x0
 
@@ -246,7 +238,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mUnsortedDocuments:Ljava/util/List;
 
@@ -255,7 +246,6 @@
 
 .method static synthetic access$1300(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Lcom/google/android/finsky/installer/InstallPolicies;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mInstallPolicies:Lcom/google/android/finsky/installer/InstallPolicies;
 
@@ -264,10 +254,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;Lcom/google/android/finsky/api/model/Document;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->getDownloadingDocView(Lcom/google/android/finsky/api/model/Document;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -278,12 +264,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;Lcom/google/android/finsky/api/model/Document;Landroid/view/View;Landroid/view/ViewGroup;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentState;Z)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentState;
-    .param p5    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->getDocView(Lcom/google/android/finsky/api/model/Document;Landroid/view/View;Landroid/view/ViewGroup;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentState;Z)Landroid/view/View;
 
@@ -294,11 +274,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;ILandroid/view/View;Landroid/view/ViewGroup;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->getHeaderView(ILandroid/view/View;Landroid/view/ViewGroup;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;)Landroid/view/View;
 
@@ -309,7 +284,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mUpdatesSectionAdapter:Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
 
@@ -318,7 +292,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mDownloadingSectionAdapter:Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
 
@@ -327,7 +300,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Lcom/google/android/finsky/receivers/Installer;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mInstaller:Lcom/google/android/finsky/receivers/Installer;
 
@@ -484,11 +456,6 @@
 
 .method private getDocView(Lcom/google/android/finsky/api/model/Document;Landroid/view/View;Landroid/view/ViewGroup;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentState;Z)Landroid/view/View;
     .locals 5
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentState;
-    .param p5    # Z
 
     const/4 v4, 0x0
 
@@ -537,9 +504,6 @@
 
 .method private getDownloadingDocView(Lcom/google/android/finsky/api/model/Document;Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v7, 0x3
 
@@ -649,10 +613,6 @@
 
 .method private getHeaderView(ILandroid/view/View;Landroid/view/ViewGroup;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;)Landroid/view/View;
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
 
     if-nez p2, :cond_0
 
@@ -843,7 +803,6 @@
 
 .method public static getViewDoc(Landroid/view/View;)Lcom/google/android/finsky/api/model/Document;
     .locals 2
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1130,7 +1089,6 @@
 
 .method public getDocument(I)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -1143,7 +1101,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mAggregatedAdapter:Lcom/google/android/finsky/adapters/AggregatedAdapter;
 
@@ -1156,7 +1113,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -1165,7 +1121,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mAggregatedAdapter:Lcom/google/android/finsky/adapters/AggregatedAdapter;
 
@@ -1204,9 +1159,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mAggregatedAdapter:Lcom/google/android/finsky/adapters/AggregatedAdapter;
 
@@ -1227,7 +1179,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mAggregatedAdapter:Lcom/google/android/finsky/adapters/AggregatedAdapter;
 

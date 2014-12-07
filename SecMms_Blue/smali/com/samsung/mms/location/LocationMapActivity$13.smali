@@ -36,7 +36,6 @@
 # virtual methods
 .method public locationUpdated(Lcom/nbi/location/Location;)V
     .locals 13
-    .param p1    # Lcom/nbi/location/Location;
 
     if-eqz p1, :cond_5
 
@@ -501,7 +500,6 @@
 
 .method public onLocationError(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "LocationMapActivity"
 
@@ -538,7 +536,6 @@
 
 .method public providerStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "LocationMapActivity"
 

@@ -26,7 +26,6 @@
 # direct methods
 .method private constructor <init>(Lcom/google/android/volley/GoogleHttpClient;Lorg/apache/http/conn/scheme/SocketFactory;)V
     .locals 0
-    .param p2    # Lorg/apache/http/conn/scheme/SocketFactory;
 
     iput-object p1, p0, Lcom/google/android/volley/GoogleHttpClient$WrappedSocketFactory;->this$0:Lcom/google/android/volley/GoogleHttpClient;
 
@@ -39,9 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/volley/GoogleHttpClient;Lorg/apache/http/conn/scheme/SocketFactory;Lcom/google/android/volley/GoogleHttpClient$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/volley/GoogleHttpClient;
-    .param p2    # Lorg/apache/http/conn/scheme/SocketFactory;
-    .param p3    # Lcom/google/android/volley/GoogleHttpClient$1;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/volley/GoogleHttpClient$WrappedSocketFactory;-><init>(Lcom/google/android/volley/GoogleHttpClient;Lorg/apache/http/conn/scheme/SocketFactory;)V
 
@@ -52,12 +48,6 @@
 # virtual methods
 .method public final connectSocket(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;
     .locals 7
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # I
-    .param p6    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -115,7 +105,6 @@
 
 .method public final isSecure(Ljava/net/Socket;)Z
     .locals 1
-    .param p1    # Ljava/net/Socket;
 
     iget-object v0, p0, Lcom/google/android/volley/GoogleHttpClient$WrappedSocketFactory;->mDelegate:Lorg/apache/http/conn/scheme/SocketFactory;
 

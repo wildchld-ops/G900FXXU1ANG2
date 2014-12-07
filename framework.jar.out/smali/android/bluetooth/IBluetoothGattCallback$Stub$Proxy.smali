@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,14 +52,6 @@
 
 .method public onCharacteristicRead(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -164,13 +155,6 @@
 
 .method public onCharacteristicWrite(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -272,10 +256,6 @@
 
 .method public onClientConnectionState(IIZLjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -340,8 +320,6 @@
 
 .method public onClientRegistered(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -395,16 +373,6 @@
 
 .method public onDescriptorRead(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # I
-    .param p9    # Landroid/os/ParcelUuid;
-    .param p10    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -528,15 +496,6 @@
 
 .method public onDescriptorWrite(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # I
-    .param p9    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -658,8 +617,6 @@
 
 .method public onExecuteWrite(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -713,13 +670,6 @@
 
 .method public onGetCharacteristic(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -821,14 +771,6 @@
 
 .method public onGetDescriptor(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # I
-    .param p8    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -948,13 +890,6 @@
 
 .method public onGetIncludedService(Ljava/lang/String;IILandroid/os/ParcelUuid;IILandroid/os/ParcelUuid;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1056,10 +991,6 @@
 
 .method public onGetService(Ljava/lang/String;IILandroid/os/ParcelUuid;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1136,7 +1067,6 @@
 
 .method public onListen(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1188,8 +1118,6 @@
 
 .method public onMonitorRssi(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1243,13 +1171,6 @@
 
 .method public onNotify(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1351,9 +1272,6 @@
 
 .method public onReadRemoteRssi(Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1409,9 +1327,6 @@
 
 .method public onScanResult(Ljava/lang/String;I[B)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1467,8 +1382,6 @@
 
 .method public onSearchComplete(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

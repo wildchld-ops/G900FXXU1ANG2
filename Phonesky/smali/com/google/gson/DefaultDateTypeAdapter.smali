@@ -54,8 +54,6 @@
 
 .method public constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -74,7 +72,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/text/SimpleDateFormat;
 
@@ -93,8 +90,6 @@
 
 .method constructor <init>(Ljava/text/DateFormat;Ljava/text/DateFormat;)V
     .locals 3
-    .param p1    # Ljava/text/DateFormat;
-    .param p2    # Ljava/text/DateFormat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -127,7 +122,6 @@
 
 .method private deserializeToDate(Lcom/google/gson/JsonElement;)Ljava/util/Date;
     .locals 4
-    .param p1    # Lcom/google/gson/JsonElement;
 
     iget-object v2, p0, Lcom/google/gson/DefaultDateTypeAdapter;->localFormat:Ljava/text/DateFormat;
 
@@ -228,9 +222,6 @@
 # virtual methods
 .method public bridge synthetic deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/google/gson/JsonElement;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonDeserializationContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonParseException;
@@ -246,9 +237,6 @@
 
 .method public deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/util/Date;
     .locals 4
-    .param p1    # Lcom/google/gson/JsonElement;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonDeserializationContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonParseException;
@@ -349,9 +337,6 @@
 
 .method public bridge synthetic serialize(Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonSerializationContext;
 
     check-cast p1, Ljava/util/Date;
 
@@ -364,9 +349,6 @@
 
 .method public serialize(Ljava/util/Date;Ljava/lang/reflect/Type;Lcom/google/gson/JsonSerializationContext;)Lcom/google/gson/JsonElement;
     .locals 3
-    .param p1    # Ljava/util/Date;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonSerializationContext;
 
     iget-object v2, p0, Lcom/google/gson/DefaultDateTypeAdapter;->localFormat:Ljava/text/DateFormat;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPlaceReceived(Lcom/nbi/map/data/Place;)V
     .locals 2
-    .param p1    # Lcom/nbi/map/data/Place;
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity$15;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -83,8 +82,6 @@
 
 .method public onResultsReturned(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 

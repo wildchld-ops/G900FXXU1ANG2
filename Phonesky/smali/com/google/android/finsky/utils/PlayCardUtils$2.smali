@@ -36,7 +36,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     # invokes: Lcom/google/android/finsky/utils/PlayCardUtils;->updateTrackedCardPrices()V
     invoke-static {}, Lcom/google/android/finsky/utils/PlayCardUtils;->access$000()V

@@ -75,7 +75,6 @@
 
 .method public constructor <init>(Lorg/keyczar/interfaces/KeyczarReader;)V
     .locals 9
-    .param p1    # Lorg/keyczar/interfaces/KeyczarReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -285,7 +284,6 @@
 # virtual methods
 .method getKey([B)Lorg/keyczar/KeyczarKey;
     .locals 3
-    .param p1    # [B
 
     iget-object v0, p0, Lorg/keyczar/Keyczar;->hashMap:Ljava/util/HashMap;
 

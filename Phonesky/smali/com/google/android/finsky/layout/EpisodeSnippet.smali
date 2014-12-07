@@ -61,8 +61,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/SeparatorRelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -107,7 +105,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/EpisodeSnippet;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/EpisodeSnippet;
 
     iget v0, p0, Lcom/google/android/finsky/layout/EpisodeSnippet;->mBaseRowHeight:I
 
@@ -116,7 +113,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/EpisodeSnippet;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/EpisodeSnippet;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/EpisodeSnippet;->toggleExpandedVisibility()V
 
@@ -125,7 +121,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/EpisodeSnippet;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/EpisodeSnippet;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/EpisodeSnippet;->logCurrentState()V
 
@@ -134,7 +129,6 @@
 
 .method private static clearBuyButtonStyle(Lcom/google/android/play/layout/PlayActionButton;)V
     .locals 3
-    .param p0    # Lcom/google/android/play/layout/PlayActionButton;
 
     const/4 v0, 0x1
 
@@ -238,7 +232,6 @@
 
 .method private static setBuyButtonStyle(Lcom/google/android/play/layout/PlayActionButton;)V
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayActionButton;
 
     const/4 v0, 0x0
 
@@ -255,7 +248,6 @@
 
 .method private setExpandedContentVisibility(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -436,15 +428,6 @@
 
 .method public static updateBuyButtonState(Landroid/content/res/Resources;Lcom/google/android/play/layout/PlayActionButton;Landroid/widget/TextView;Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/Document;ZLcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 23
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Landroid/view/View;
-    .param p4    # Lcom/google/android/finsky/api/model/Document;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
-    .param p6    # Z
-    .param p7    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v4, 0x0
 
@@ -786,7 +769,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -1047,13 +1029,6 @@
 
 .method public setEpisodeDetails(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/navigationmanager/NavigationManager;ZLcom/google/android/finsky/layout/EpisodeSnippet$OnCollapsedStateChanged;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Z
-    .param p6    # Lcom/google/android/finsky/layout/EpisodeSnippet$OnCollapsedStateChanged;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/EpisodeSnippet;->mSeasonDocument:Lcom/google/android/finsky/api/model/Document;
 

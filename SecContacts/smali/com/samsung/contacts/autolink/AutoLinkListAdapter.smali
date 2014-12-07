@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,8 +69,6 @@
 
 .method private bindView(Landroid/view/View;Lcom/samsung/contacts/autolink/AutoLinkData;)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/contacts/autolink/AutoLinkData;
 
     const/4 v11, 0x3
 
@@ -347,9 +343,6 @@
 
 .method private drawPhoto(Landroid/widget/ImageView;[BJ)V
     .locals 6
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # [B
-    .param p3    # J
 
     move-object v2, p2
 
@@ -428,7 +421,6 @@
 
 .method public getItem(I)Lcom/samsung/contacts/autolink/AutoLinkData;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkListAdapter;->mAutoLinkMembers:Ljava/util/ArrayList;
 
@@ -443,7 +435,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/autolink/AutoLinkListAdapter;->getItem(I)Lcom/samsung/contacts/autolink/AutoLinkData;
 
@@ -454,7 +445,6 @@
 
 .method public getItemId(I)J
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/autolink/AutoLinkListAdapter;->mAutoLinkMembers:Ljava/util/ArrayList;
 
@@ -485,9 +475,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v3, p0, Lcom/samsung/contacts/autolink/AutoLinkListAdapter;->mAutoLinkMembers:Ljava/util/ArrayList;
 
@@ -528,7 +515,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/autolink/AutoLinkListAdapter;->getItem(I)Lcom/samsung/contacts/autolink/AutoLinkData;
 

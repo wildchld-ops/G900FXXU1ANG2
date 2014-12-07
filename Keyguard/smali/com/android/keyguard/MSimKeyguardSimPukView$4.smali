@@ -21,9 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/MSimKeyguardSimPukView;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/keyguard/MSimKeyguardSimPukView$4;->this$0:Lcom/android/keyguard/MSimKeyguardSimPukView;
 
@@ -36,7 +33,6 @@
 # virtual methods
 .method onSimLockChangedResponse(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/MSimKeyguardSimPukView$4;->this$0:Lcom/android/keyguard/MSimKeyguardSimPukView;
 

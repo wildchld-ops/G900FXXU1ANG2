@@ -57,8 +57,6 @@
 
 .method synthetic constructor <init>(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;Lcom/diotek/ime/framework/acmanager/ACDownloadManager$1;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
-    .param p2    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager$1;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;-><init>(Lcom/diotek/ime/framework/acmanager/ACDownloadManager;)V
 
@@ -69,7 +67,6 @@
 # virtual methods
 .method public downloadComplete(Ljava/io/File;)Z
     .locals 9
-    .param p1    # Ljava/io/File;
 
     const/4 v3, 0x1
 
@@ -346,7 +343,6 @@
 
 .method public downloadFailed(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -411,7 +407,6 @@
 
 .method public downloadPercentage(I)V
     .locals 8
-    .param p1    # I
 
     const/16 v5, 0x64
 
@@ -645,7 +640,6 @@
 
 .method public downloadStopped(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -744,7 +738,6 @@
 
 .method public register(Ljava/util/List;I)V
     .locals 0
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -764,7 +757,6 @@
 
 .method public setCurrentUpdateState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;->mIsUpdateDownload:Z
 

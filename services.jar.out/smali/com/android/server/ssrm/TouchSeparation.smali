@@ -321,9 +321,6 @@
 
 .method public static notifyFgAppChanged(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-boolean v1, Lcom/android/server/ssrm/Feature;->SSRM_TOUCH_SEPARATION:Z
 
@@ -343,9 +340,6 @@
 
 .method private onFgAppChanged(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p2}, Lcom/android/server/ssrm/TouchSeparation;->checkTouchFilterPackage(Ljava/lang/String;)I
 
@@ -404,7 +398,6 @@
 
 .method checkTouchFilterPackage(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/TouchSeparation;->mTouchZeroMap:Ljava/util/HashMap;
 
@@ -440,8 +433,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -652,7 +643,6 @@
 
 .method protected updateTouchModeSysFS(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/ssrm/TouchSeparation;->mCurrentTouchState:I
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public process(Landroid/view/KeyEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x17
 

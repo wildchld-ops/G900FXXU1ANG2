@@ -146,8 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/GestureDetector$OnGestureListener;
 
     const/4 v0, 0x0
 
@@ -158,9 +156,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/GestureDetector$OnGestureListener;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -220,10 +215,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;Landroid/os/Handler;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/GestureDetector$OnGestureListener;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;Landroid/os/Handler;)V
 
@@ -232,7 +223,6 @@
 
 .method public constructor <init>(Landroid/view/GestureDetector$OnGestureListener;)V
     .locals 1
-    .param p1    # Landroid/view/GestureDetector$OnGestureListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -245,8 +235,6 @@
 
 .method public constructor <init>(Landroid/view/GestureDetector$OnGestureListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/view/GestureDetector$OnGestureListener;
-    .param p2    # Landroid/os/Handler;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -259,7 +247,6 @@
 
 .method static synthetic access$000(Landroid/view/GestureDetector;)Landroid/view/MotionEvent;
     .locals 1
-    .param p0    # Landroid/view/GestureDetector;
 
     iget-object v0, p0, Landroid/view/GestureDetector;->mCurrentDownEvent:Landroid/view/MotionEvent;
 
@@ -268,8 +255,6 @@
 
 .method static synthetic access$002(Landroid/view/GestureDetector;Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 0
-    .param p0    # Landroid/view/GestureDetector;
-    .param p1    # Landroid/view/MotionEvent;
 
     iput-object p1, p0, Landroid/view/GestureDetector;->mCurrentDownEvent:Landroid/view/MotionEvent;
 
@@ -278,7 +263,6 @@
 
 .method static synthetic access$100(Landroid/view/GestureDetector;)Landroid/view/GestureDetector$OnGestureListener;
     .locals 1
-    .param p0    # Landroid/view/GestureDetector;
 
     iget-object v0, p0, Landroid/view/GestureDetector;->mListener:Landroid/view/GestureDetector$OnGestureListener;
 
@@ -287,7 +271,6 @@
 
 .method static synthetic access$200(Landroid/view/GestureDetector;)V
     .locals 0
-    .param p0    # Landroid/view/GestureDetector;
 
     invoke-direct {p0}, Landroid/view/GestureDetector;->dispatchLongPress()V
 
@@ -296,7 +279,6 @@
 
 .method static synthetic access$300(Landroid/view/GestureDetector;)Landroid/view/GestureDetector$OnDoubleTapListener;
     .locals 1
-    .param p0    # Landroid/view/GestureDetector;
 
     iget-object v0, p0, Landroid/view/GestureDetector;->mDoubleTapListener:Landroid/view/GestureDetector$OnDoubleTapListener;
 
@@ -305,7 +287,6 @@
 
 .method static synthetic access$400(Landroid/view/GestureDetector;)Z
     .locals 1
-    .param p0    # Landroid/view/GestureDetector;
 
     iget-boolean v0, p0, Landroid/view/GestureDetector;->mStillDown:Z
 
@@ -314,8 +295,6 @@
 
 .method static synthetic access$502(Landroid/view/GestureDetector;Z)Z
     .locals 0
-    .param p0    # Landroid/view/GestureDetector;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/GestureDetector;->mDeferConfirmSingleTap:Z
 
@@ -442,7 +421,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     iget-object v4, p0, Landroid/view/GestureDetector;->mListener:Landroid/view/GestureDetector$OnGestureListener;
 
@@ -534,9 +512,6 @@
 
 .method private isConsideredDoubleTap(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -630,7 +605,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 41
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -1945,7 +1919,6 @@
 
 .method public onTouchEvent_ex(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x0
 
@@ -2221,7 +2194,6 @@
 
 .method public setIsLongpressEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/GestureDetector;->mIsLongpressEnabled:Z
 
@@ -2230,7 +2202,6 @@
 
 .method public setOnDoubleTapListener(Landroid/view/GestureDetector$OnDoubleTapListener;)V
     .locals 0
-    .param p1    # Landroid/view/GestureDetector$OnDoubleTapListener;
 
     iput-object p1, p0, Landroid/view/GestureDetector;->mDoubleTapListener:Landroid/view/GestureDetector$OnDoubleTapListener;
 

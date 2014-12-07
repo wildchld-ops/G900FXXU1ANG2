@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -62,8 +59,6 @@
 # virtual methods
 .method public setSecondaryAction(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/dialer/CallDetailActivity$ViewEntry;->secondaryIntent:Landroid/content/Intent;
 
@@ -74,8 +69,6 @@
 
 .method public setTertiaryAction(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/dialer/CallDetailActivity$ViewEntry;->tertiaryIntent:Landroid/content/Intent;
 

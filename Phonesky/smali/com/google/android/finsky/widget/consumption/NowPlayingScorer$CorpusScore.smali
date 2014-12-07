@@ -31,7 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;-><init>()V
 
@@ -40,7 +39,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;
 
     iget v0, p0, Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;->score:I
 
@@ -49,8 +47,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;->score:I
 
@@ -59,7 +55,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;)J
     .locals 2
-    .param p0    # Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;
 
     iget-wide v0, p0, Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;->lastInteractionMs:J
 
@@ -68,8 +63,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;J)J
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;->lastInteractionMs:J
 

@@ -14,8 +14,6 @@
 
 .method public static doAfterDraw(Landroid/view/View;Ljava/lang/Runnable;)V
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/contacts/util/SchedulingUtils$2;
 
@@ -32,8 +30,6 @@
 
 .method public static doAfterLayout(Landroid/view/View;Ljava/lang/Runnable;)V
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/contacts/util/SchedulingUtils$1;
 

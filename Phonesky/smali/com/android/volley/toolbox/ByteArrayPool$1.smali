@@ -38,8 +38,6 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, [B
 
@@ -54,8 +52,6 @@
 
 .method public compare([B[B)I
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
 
     array-length v0, p1
 

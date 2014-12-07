@@ -47,7 +47,6 @@
 # virtual methods
 .method get(Lorg/keyczar/KeyczarKey;)Lorg/keyczar/interfaces/Stream;
     .locals 1
-    .param p1    # Lorg/keyczar/KeyczarKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,7 +70,6 @@
 
 .method getQueue(Lorg/keyczar/KeyczarKey;)Lorg/keyczar/StreamQueue;
     .locals 3
-    .param p1    # Lorg/keyczar/KeyczarKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -120,7 +118,6 @@
 
 .method put(Lorg/keyczar/KeyczarKey;Lorg/keyczar/interfaces/Stream;)V
     .locals 1
-    .param p1    # Lorg/keyczar/KeyczarKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

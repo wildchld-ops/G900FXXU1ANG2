@@ -113,7 +113,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v7, 0x0
 
@@ -258,7 +257,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/MassTensionUnlockView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/MassTensionUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/MassTensionUnlockView;->mCircleCenterDot:Landroid/widget/ImageView;
 
@@ -267,7 +265,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/MassTensionUnlockView;)Landroid/view/animation/AnimationSet;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/MassTensionUnlockView;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/MassTensionUnlockView;->createBouncerAnimation()Landroid/view/animation/AnimationSet;
 
@@ -462,8 +459,6 @@
 
 .method private setLineAnim(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v1, 0x3f800000
 
@@ -512,8 +507,6 @@
 
 .method private setOuterCircle(Landroid/view/View;D)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # D
 
     const/16 v1, 0xff
 
@@ -624,8 +617,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 26
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -3582,8 +3573,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -3592,15 +3581,12 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3615,7 +3601,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -3716,7 +3701,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -3859,8 +3843,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     return-void
 .end method

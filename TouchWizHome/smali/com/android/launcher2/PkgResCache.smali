@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/LauncherApplication;)V
     .locals 12
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
 
     const/16 v11, 0x140
 
@@ -223,8 +222,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/LauncherApplication;I)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/PkgResCache;-><init>(Lcom/android/launcher2/LauncherApplication;)V
 
@@ -259,8 +256,6 @@
 
 .method private createDefaultBitmap(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     iget v2, p0, Lcom/android/launcher2/PkgResCache;->mIconDpi:I
 
@@ -279,9 +274,6 @@
 
 .method private loadTitleAndIcon(Ljava/lang/String;Lcom/android/launcher2/PkgResCache$TitleIconInfo;Landroid/content/pm/ComponentInfo;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/PkgResCache$TitleIconInfo;
-    .param p3    # Landroid/content/pm/ComponentInfo;
 
     move-object/from16 v0, p2
 
@@ -742,7 +734,6 @@
 
 .method public getIcon(Landroid/content/Intent;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -766,7 +757,6 @@
 
 .method public getIcon(Landroid/content/pm/ResolveInfo;)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v3, 0x0
 
@@ -935,7 +925,6 @@
 
 .method public getTitle(Landroid/content/Intent;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -959,7 +948,6 @@
 
 .method public getTitle(Landroid/content/pm/ResolveInfo;)Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v7, 0x0
 
@@ -1167,8 +1155,6 @@
 
 .method public getTitleAndIcon(Lcom/android/launcher2/PkgResCache$TitleIconInfo;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/PkgResCache$TitleIconInfo;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -1201,8 +1187,6 @@
 
 .method public getTitleAndIcon(Lcom/android/launcher2/PkgResCache$TitleIconInfo;Landroid/content/pm/ResolveInfo;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/PkgResCache$TitleIconInfo;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v4, 0x0
 
@@ -1293,9 +1277,6 @@
 
 .method public loadBitmap(Landroid/content/res/Resources;ILjava/lang/String;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1387,9 +1368,6 @@
 
 .method public loadString(Landroid/content/res/Resources;ILjava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1445,8 +1423,6 @@
 
 .method public refreshTitleAndIcon(Landroid/content/ComponentName;Lcom/android/launcher2/PkgResCache$TitleIconInfo;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/android/launcher2/PkgResCache$TitleIconInfo;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/launcher2/PkgResCache;->mPkgMgr:Landroid/content/pm/PackageManager;
@@ -1481,7 +1457,6 @@
 
 .method removePackage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/launcher2/PkgResCache;->mPkgCache:Ljava/util/HashMap;
 

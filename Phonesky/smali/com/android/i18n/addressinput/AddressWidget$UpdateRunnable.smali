@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/i18n/addressinput/AddressWidget;Lcom/android/i18n/addressinput/AddressField;)V
     .locals 0
-    .param p2    # Lcom/android/i18n/addressinput/AddressField;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/AddressWidget$UpdateRunnable;->this$0:Lcom/android/i18n/addressinput/AddressWidget;
 

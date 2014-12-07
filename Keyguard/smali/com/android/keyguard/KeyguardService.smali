@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardService;)Lcom/android/keyguard/KeyguardViewMediator;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardService;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService;->mKeyguardViewMediator:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -122,16 +121,12 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardService;->mBinder:Lcom/android/internal/policy/IKeyguardService$Stub;
 

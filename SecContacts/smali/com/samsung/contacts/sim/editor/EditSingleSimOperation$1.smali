@@ -64,7 +64,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 3
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Lcom/samsung/contacts/sim/editor/EditSingleSimOperation$1;->val$context:Landroid/content/Context;
 
@@ -120,20 +119,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-eqz p1, :cond_0
 

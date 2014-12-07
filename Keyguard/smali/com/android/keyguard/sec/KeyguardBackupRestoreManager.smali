@@ -78,7 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,7 +128,6 @@
 
 .method static synthetic access$002(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->basePath:Ljava/lang/String;
 
@@ -146,7 +144,6 @@
 
 .method static synthetic access$102(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;->source:Ljava/lang/String;
 
@@ -155,9 +152,6 @@
 
 .method private createBackupFiles(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -262,8 +256,6 @@
 
 .method private createBackupWallpaperXmlFiles(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -291,7 +283,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/keyguard/sec/KeyguardBackupRestoreManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "KeyguardBackupRestoreManager"
 
@@ -317,7 +308,6 @@
 
 .method private hasFile(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -402,7 +392,6 @@
 
 .method private makeDir(Ljava/lang/String;)Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -483,7 +472,6 @@
 # virtual methods
 .method public chageFileAttr(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -539,8 +527,6 @@
 
 .method public copyBackupFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v3, 0x0
 
@@ -687,7 +673,6 @@
 
 .method public disableLiveWallpaper(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -706,7 +691,6 @@
 
 .method public getLockscreenWallpaperpath(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -725,7 +709,6 @@
 
 .method public isLiveWallpaper(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -751,9 +734,6 @@
 
 .method public launchKeyguardBackuporRestore(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "KeyguardBackupRestoreManager"
 
@@ -780,8 +760,6 @@
 
 .method public pushRestoreFiles(Landroid/content/Context;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -919,7 +897,6 @@
 
 .method public registerKeyguardBackupRestoreReceiver(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -942,8 +919,6 @@
 
 .method public setLockscreenWallpaperpath(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -960,7 +935,6 @@
 
 .method public splitFileName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "/"
 
@@ -983,9 +957,6 @@
 
 .method public startBackup(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v11, "KeyguardBackupRestoreManager"
 
@@ -1345,9 +1316,6 @@
 
 .method public startRestore(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v9, "KeyguardBackupRestoreManager"
 

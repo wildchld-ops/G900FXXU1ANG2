@@ -53,8 +53,6 @@
 # virtual methods
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     check-cast p1, Landroid/view/ViewGroup;
 
@@ -148,12 +146,6 @@
 
 .method public init(Landroid/content/Context;Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Lcom/google/android/finsky/api/DfeApi;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewListViewBinder;->mData:Ljava/lang/Object;
 
@@ -361,7 +353,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewListViewBinder;->mReviewList:Landroid/widget/ListView;
 
@@ -377,7 +368,6 @@
 
 .method public onRateReview(Lcom/google/android/finsky/protos/DocumentV2$Review;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$Review;
 
     iget-object v2, p0, Lcom/google/android/finsky/activities/ReviewListViewBinder;->mContainerFragment:Landroid/support/v4/app/Fragment;
 
@@ -426,7 +416,6 @@
 
 .method public setData(Lcom/google/android/finsky/api/model/DfeReviews;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/DfeReviews;
 
     const/4 v0, 0x0
 
@@ -474,7 +463,6 @@
 
 .method public bridge synthetic setData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/api/model/DfeReviews;
 

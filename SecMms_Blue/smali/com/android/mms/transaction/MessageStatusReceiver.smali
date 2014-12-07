@@ -70,7 +70,6 @@
 
 .method public static convertStatusCDMAToGSM(I)I
     .locals 5
-    .param p0    # I
 
     shr-int/lit8 v1, p0, 0x18
 
@@ -139,7 +138,6 @@
 
 .method private error(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MessageStatusReceiver"
 
@@ -168,7 +166,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MessageStatusReceiver"
 
@@ -197,9 +194,6 @@
 
 .method private updateMessageStatus(Landroid/content/Context;Landroid/net/Uri;[B)Landroid/telephony/SmsMessage;
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # [B
 
     invoke-static/range {p3 .. p3}, Landroid/telephony/SmsMessage;->createFromPdu([B)Landroid/telephony/SmsMessage;
 
@@ -465,8 +459,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v3, "com.android.mms.transaction.MessageStatusReceiver.MESSAGE_STATUS_RECEIVED"
 

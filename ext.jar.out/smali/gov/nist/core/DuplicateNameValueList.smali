@@ -107,7 +107,6 @@
 
 .method public delete(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -156,7 +155,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 4
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v3, p0, Lgov/nist/core/DuplicateNameValueList;->nameValueMap:Lgov/nist/core/MultiValueMapImpl;
 
@@ -225,7 +223,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -319,7 +316,6 @@
 
 .method public getNameValue(Ljava/lang/String;)Ljava/util/Collection;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/core/DuplicateNameValueList;->nameValueMap:Lgov/nist/core/MultiValueMapImpl;
 
@@ -361,7 +357,6 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lgov/nist/core/DuplicateNameValueList;->getValue(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -397,7 +392,6 @@
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -420,7 +414,6 @@
 
 .method public hasNameValue(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/core/DuplicateNameValueList;->nameValueMap:Lgov/nist/core/MultiValueMapImpl;
 
@@ -490,8 +483,6 @@
 
 .method public put(Ljava/lang/String;Lgov/nist/core/NameValue;)Lgov/nist/core/NameValue;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/core/DuplicateNameValueList;->nameValueMap:Lgov/nist/core/MultiValueMapImpl;
 
@@ -506,7 +497,6 @@
 
 .method public remove(Ljava/lang/Object;)Lgov/nist/core/NameValue;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/core/DuplicateNameValueList;->nameValueMap:Lgov/nist/core/MultiValueMapImpl;
 
@@ -521,7 +511,6 @@
 
 .method public set(Lgov/nist/core/NameValue;)V
     .locals 2
-    .param p1    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/core/DuplicateNameValueList;->nameValueMap:Lgov/nist/core/MultiValueMapImpl;
 
@@ -540,8 +529,6 @@
 
 .method public set(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -560,7 +547,6 @@
 
 .method public setSeparator(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/core/DuplicateNameValueList;->separator:Ljava/lang/String;
 

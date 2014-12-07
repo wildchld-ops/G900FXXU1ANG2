@@ -1379,7 +1379,7 @@ Anda juga boleh tunjukkan atau sembunyikan pemegang berbilang tetingkap dengan m
     <string name="usb_tethering_errored_subtext">Ralat penambatan USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Penambatan USB tidak boleh dinyahaktifkan apabila menggunakan SideSync. Menyahaktifkan penambatan USB akan menyahaktifkan SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Penambatan USB tidak boleh diaktifkan apabila menggunakan SideSync. Mengaktifkan penambatan USB akan menyahaktifkan SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Penambatan Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Penambatan Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Berkongsi sambungan Internet peranti ini…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Sambungan Internet peranti dikongsi dengan 1 peranti</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Sambungan Internet peranti dikongsi dengan %d peranti</string>

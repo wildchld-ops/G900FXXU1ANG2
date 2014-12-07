@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/keyguard/KeyguardTransportControlView;Lcom/android/keyguard/KeyguardTransportControlView$1;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardTransportControlView;
-    .param p2    # Lcom/android/keyguard/KeyguardTransportControlView$1;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardTransportControlView$UpdateSeekBarRunnable;-><init>(Lcom/android/keyguard/KeyguardTransportControlView;)V
 

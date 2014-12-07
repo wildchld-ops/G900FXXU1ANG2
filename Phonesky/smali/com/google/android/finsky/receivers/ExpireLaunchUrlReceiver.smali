@@ -14,8 +14,6 @@
 
 .method public static cancel(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/google/android/finsky/receivers/ExpireLaunchUrlReceiver;->shouldSetAlarm(Ljava/lang/String;)Z
 
@@ -46,8 +44,6 @@
 
 .method private static createPendingIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -72,7 +68,6 @@
 
 .method private static hasContinueUrl(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -111,8 +106,6 @@
 
 .method public static schedule(Landroid/content/Context;Ljava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/google/android/finsky/receivers/ExpireLaunchUrlReceiver;->shouldSetAlarm(Ljava/lang/String;)Z
 
@@ -163,7 +156,6 @@
 
 .method private static shouldSetAlarm(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -192,8 +184,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 

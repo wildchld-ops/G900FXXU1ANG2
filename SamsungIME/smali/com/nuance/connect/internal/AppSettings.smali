@@ -75,7 +75,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/store/PersistentDataStore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -322,7 +321,6 @@
 
 .method public registerSettingsListener(Lcom/nuance/connect/internal/AppSettings$Key;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/AppSettings$Key;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -345,7 +343,6 @@
 
 .method public registerSettingsListener(Ljava/lang/String;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -364,7 +361,6 @@
 
 .method public setConnectionConcurrentLimit(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AppSettings;->connectionConcurrentLimit:Lcom/nuance/connect/internal/Property;
 
@@ -381,7 +377,6 @@
 
 .method public setCustomerString(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AppSettings;->customerString:Lcom/nuance/connect/internal/Property;
 
@@ -394,7 +389,6 @@
 
 .method public setDownloadIdleTimeout(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AppSettings;->downloadIdleTimeout:Lcom/nuance/connect/internal/Property;
 
@@ -411,7 +405,6 @@
 
 .method public setLogLevel(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AppSettings;->oemLogLevel:Lcom/nuance/connect/internal/Property;
 
@@ -428,7 +421,6 @@
 
 .method public setRefreshInterval(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AppSettings;->refreshInterval:Lcom/nuance/connect/internal/Property;
 

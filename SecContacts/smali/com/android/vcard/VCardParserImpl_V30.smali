@@ -24,7 +24,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/vcard/VCardParserImpl_V21;-><init>(I)V
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/vcard/VCardParserImpl_V21;-><init>(ILjava/lang/String;)V
 
@@ -51,9 +48,6 @@
 
 .method private splitAndPutParam(Lcom/android/vcard/VCardProperty;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -241,7 +235,6 @@
 
 .method public static unescapeCharacter(C)Ljava/lang/String;
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x6e
 
@@ -267,7 +260,6 @@
 
 .method public static unescapeText(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -340,7 +332,6 @@
 # virtual methods
 .method protected encodeParamValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "ISO-8859-1"
 
@@ -355,7 +346,6 @@
 
 .method protected getBase64(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -656,7 +646,6 @@
 
 .method protected handleAgent(Lcom/android/vcard/VCardProperty;)V
     .locals 2
-    .param p1    # Lcom/android/vcard/VCardProperty;
 
     iget-boolean v0, p0, Lcom/android/vcard/VCardParserImpl_V30;->mEmittedAgentWarning:Z
 
@@ -678,9 +667,6 @@
 
 .method protected handleAnyParam(Lcom/android/vcard/VCardProperty;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/vcard/VCardParserImpl_V30;->splitAndPutParam(Lcom/android/vcard/VCardProperty;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -689,8 +675,6 @@
 
 .method protected handleParamWithoutName(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/vcard/VCardParserImpl_V30;->handleType(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
 
@@ -699,8 +683,6 @@
 
 .method protected handleParams(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -770,8 +752,6 @@
 
 .method protected handleType(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "TYPE"
 
@@ -782,7 +762,6 @@
 
 .method protected maybeUnescapeText(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/vcard/VCardParserImpl_V30;->unescapeText(Ljava/lang/String;)Ljava/lang/String;
 
@@ -793,7 +772,6 @@
 
 .method protected readBeginVCard(Z)Z
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

@@ -57,9 +57,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/ImageView;Lcom/samsung/contacts/detail/FaceTaggedPhotoInfo;Ljava/util/WeakHashMap;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/ImageView;
-    .param p3    # Lcom/samsung/contacts/detail/FaceTaggedPhotoInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -89,7 +86,6 @@
 
 .method private getBitmap(I)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # I
 
     iget-object v7, p0, Lcom/samsung/contacts/detail/FaceTaggedPhotoLoader;->mContext:Landroid/content/Context;
 
@@ -214,7 +210,6 @@
 
 .method private getOrientation(Landroid/net/Uri;)I
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const/4 v8, 0x0
 
@@ -267,8 +262,6 @@
 
 .method private getRotatedBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -305,7 +298,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 7
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v6, 0x1
 
@@ -495,7 +487,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -508,7 +499,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 8
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v5, 0x0
 
@@ -632,7 +622,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

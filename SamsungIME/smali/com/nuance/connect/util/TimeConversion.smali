@@ -24,7 +24,6 @@
 
 .method public static convertDaysToMillis(I)J
     .locals 4
-    .param p0    # I
 
     int-to-long v0, p0
 
@@ -37,7 +36,6 @@
 
 .method public static convertDaysToTimeStamp(I)J
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/nuance/connect/util/TimeConversion;->convertDaysToMillis(I)J
 
@@ -52,8 +50,6 @@
 
 .method public static convertDaysToTimeStamp(IJ)J
     .locals 2
-    .param p0    # I
-    .param p1    # J
 
     invoke-static {p0}, Lcom/nuance/connect/util/TimeConversion;->convertDaysToMillis(I)J
 
@@ -68,7 +64,6 @@
 
 .method public static convertHoursToMillis(I)J
     .locals 4
-    .param p0    # I
 
     int-to-long v0, p0
 
@@ -81,7 +76,6 @@
 
 .method public static convertHoursToTimeStamp(I)J
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/nuance/connect/util/TimeConversion;->convertHoursToMillis(I)J
 
@@ -96,8 +90,6 @@
 
 .method public static convertHoursToTimeStamp(IJ)J
     .locals 2
-    .param p0    # I
-    .param p1    # J
 
     invoke-static {p0}, Lcom/nuance/connect/util/TimeConversion;->convertHoursToMillis(I)J
 
@@ -112,7 +104,6 @@
 
 .method public static convertMillisToTimeStamp(J)J
     .locals 2
-    .param p0    # J
 
     invoke-static {}, Lcom/nuance/connect/util/TimeConversion;->getCurrentTime()J
 
@@ -127,8 +118,6 @@
 
 .method public static convertMillisToTimeStamp(JJ)J
     .locals 2
-    .param p0    # J
-    .param p2    # J
 
     add-long v0, p2, p0
 
@@ -137,7 +126,6 @@
 
 .method public static convertMinutesToMillis(I)J
     .locals 4
-    .param p0    # I
 
     int-to-long v0, p0
 
@@ -150,7 +138,6 @@
 
 .method public static convertMinutesToTimeStamp(I)J
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/nuance/connect/util/TimeConversion;->convertMinutesToMillis(I)J
 
@@ -165,8 +152,6 @@
 
 .method public static convertMinutesToTimeStamp(IJ)J
     .locals 2
-    .param p0    # I
-    .param p1    # J
 
     invoke-static {p0}, Lcom/nuance/connect/util/TimeConversion;->convertMinutesToMillis(I)J
 
@@ -181,7 +166,6 @@
 
 .method public static convertSecondsToMillis(J)J
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x3e8
 
@@ -192,7 +176,6 @@
 
 .method public static convertSecondsToTimeStamp(J)J
     .locals 2
-    .param p0    # J
 
     invoke-static {p0, p1}, Lcom/nuance/connect/util/TimeConversion;->convertSecondsToMillis(J)J
 
@@ -207,8 +190,6 @@
 
 .method public static convertSecondsToTimeStamp(JJ)J
     .locals 2
-    .param p0    # J
-    .param p2    # J
 
     invoke-static {p0, p1}, Lcom/nuance/connect/util/TimeConversion;->convertSecondsToMillis(J)J
 

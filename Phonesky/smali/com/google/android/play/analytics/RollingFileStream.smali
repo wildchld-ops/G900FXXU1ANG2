@@ -70,11 +70,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;JJLcom/google/android/play/analytics/RollingFileStream$WriteCallbacks;)V
     .locals 6
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -657,7 +652,6 @@
 
 .method private toByteArray(Ljava/io/File;)[B
     .locals 9
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

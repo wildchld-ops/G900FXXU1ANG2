@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method protected bindEmailAddress(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v4, 0x1
 
@@ -84,8 +81,6 @@
 
 .method protected bindName(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x5
 
@@ -100,8 +95,6 @@
 
 .method protected bindPhoto(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v1, 0x4
 
@@ -148,8 +141,6 @@
 
 .method protected bindSectionHeaderAndDivider(Lcom/android/contacts/common/list/ContactListItemView;I)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -208,10 +199,6 @@
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     move-object v0, p1
 
@@ -230,8 +217,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 5
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -352,7 +337,6 @@
 
 .method public getContactDisplayName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/list/EmailAddressListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -371,7 +355,6 @@
 
 .method public getDataUri(I)Landroid/net/Uri;
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/list/EmailAddressListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -396,11 +379,6 @@
 
 .method protected newView(Landroid/content/Context;ILandroid/database/Cursor;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Landroid/view/ViewGroup;
 
     new-instance v0, Lcom/android/contacts/common/list/ContactListItemView;
 

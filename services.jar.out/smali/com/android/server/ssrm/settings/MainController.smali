@@ -44,7 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/ssrm/settings/MainController$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/settings/MainController$1;
 
     invoke-direct {p0}, Lcom/android/server/ssrm/settings/MainController;-><init>()V
 
@@ -63,8 +62,6 @@
 # virtual methods
 .method public addLevelGetCondition(Lcom/android/server/ssrm/settings/Level;Ljava/lang/String;)Lcom/android/server/ssrm/settings/Condition;
     .locals 3
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -117,7 +114,6 @@
 
 .method public addLevelSetConditions(Lcom/android/server/ssrm/settings/Level;Ljava/util/Set;)V
     .locals 5
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -230,7 +226,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     monitor-enter p0
 
@@ -269,7 +264,6 @@
 
 .method public getCondition(Ljava/lang/String;)Lcom/android/server/ssrm/settings/Condition;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/MainController;->mConditions:Ljava/util/HashMap;
 
@@ -294,7 +288,6 @@
 
 .method public initialize(Lcom/android/server/ssrm/settings/LevelsFactory;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/LevelsFactory;
 
     const/4 v0, 0x0
 
@@ -305,8 +298,6 @@
 
 .method public initialize(Lcom/android/server/ssrm/settings/LevelsFactory;Ljava/io/InputStream;Ljava/util/List;)V
     .locals 4
-    .param p1    # Lcom/android/server/ssrm/settings/LevelsFactory;
-    .param p2    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -447,7 +438,6 @@
 
 .method public removeLevel(Lcom/android/server/ssrm/settings/Condition;)V
     .locals 6
-    .param p1    # Lcom/android/server/ssrm/settings/Condition;
 
     monitor-enter p0
 
@@ -524,7 +514,6 @@
 
 .method public removeLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 3
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     monitor-enter p0
 
@@ -581,7 +570,6 @@
 
 .method public setTemperature(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

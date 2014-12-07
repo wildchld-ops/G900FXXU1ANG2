@@ -73,7 +73,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -84,8 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -116,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/CarrierText;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mCarrierText:Lcom/android/keyguard/CarrierText;
 
@@ -125,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/MSimCarrierText;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mMSimCarrierText:Lcom/android/keyguard/MSimCarrierText;
 
@@ -134,7 +129,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/os/CountDownTimer;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mCountdownTimer:Landroid/os/CountDownTimer;
 
@@ -143,8 +137,6 @@
 
 .method static synthetic access$1002(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;Landroid/os/CountDownTimer;)Landroid/os/CountDownTimer;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
-    .param p1    # Landroid/os/CountDownTimer;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mCountdownTimer:Landroid/os/CountDownTimer;
 
@@ -153,7 +145,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/SecurityMessageDisplay;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
@@ -162,8 +153,6 @@
 
 .method static synthetic access$1202(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mTotalFailedSPassAttempts:I
 
@@ -172,7 +161,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -181,7 +169,6 @@
 
 .method static synthetic access$1400(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->maybeStartBiometricUnlock()V
 
@@ -190,7 +177,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mDummyEmergencyButton:Landroid/view/View;
 
@@ -199,7 +185,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/sec/EmergencyCircleView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mEmergencyCircleView:Lcom/android/keyguard/sec/EmergencyCircleView;
 
@@ -208,7 +193,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mKeyguardSecurityCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -217,7 +201,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->isDeviceDisabledForMaxFailedAttempt()Z
 
@@ -228,7 +211,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->disableDevicePermanently()V
 
@@ -237,7 +219,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/keyguard/BiometricSensorUnlock;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mBiometricUnlock:Lcom/android/keyguard/BiometricSensorUnlock;
 
@@ -246,7 +227,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/KeyguardSPassUnlockView;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSPassUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -536,7 +516,6 @@
 
 .method private maybeEnableFallback(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$AccountAnalyzer;
 
@@ -764,7 +743,6 @@
 # virtual methods
 .method public hideBouncer(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isPreviousLook()Z
 
@@ -1190,11 +1168,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
@@ -1237,7 +1210,6 @@
 
 .method public onResume(I)V
     .locals 4
-    .param p1    # I
 
     const-string v2, "KeyguardSPassView"
 
@@ -1272,7 +1244,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
@@ -1425,7 +1396,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mKeyguardSecurityCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -1449,7 +1419,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -1458,7 +1427,6 @@
 
 .method public showBouncer(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isPreviousLook()Z
 

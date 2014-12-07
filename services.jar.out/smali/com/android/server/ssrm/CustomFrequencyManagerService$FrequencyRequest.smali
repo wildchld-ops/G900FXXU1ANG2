@@ -36,12 +36,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/CustomFrequencyManagerService;IILandroid/os/IBinder;Ljava/lang/String;II)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IBinder;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
 
     iput-object p1, p0, Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequest;->this$0:Lcom/android/server/ssrm/CustomFrequencyManagerService;
 

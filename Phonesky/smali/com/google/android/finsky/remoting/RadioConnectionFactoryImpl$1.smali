@@ -30,7 +30,6 @@
 # virtual methods
 .method public ensureRouteToHost(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method

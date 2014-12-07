@@ -33,7 +33,6 @@
 # virtual methods
 .method public notePauseComponent(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -118,8 +117,6 @@
 
 .method public noteResumeComponent(Landroid/content/ComponentName;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -60,12 +60,6 @@
 
 .method protected static declared-synchronized addEntryToMac(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
     .locals 34
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const-class v30, Lcom/android/server/SEAMSContainer;
 
@@ -1646,8 +1640,6 @@
 
 .method private static checkCategory(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v5, ","
 
@@ -1690,10 +1682,6 @@
 
 .method public static checkCategoryRange(Ljava/lang/String;III)I
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v6, ","
 
@@ -1848,10 +1836,6 @@
 
 .method private static checkContainerIDEntryExists(Lorg/w3c/dom/Element;Ljava/lang/String;Ljava/lang/String;I)Lorg/w3c/dom/Element;
     .locals 4
-    .param p0    # Lorg/w3c/dom/Element;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     if-nez p0, :cond_1
 
@@ -2005,8 +1989,6 @@
 
 .method private static checkTrustedEntryExists(Lorg/w3c/dom/Element;Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 4
-    .param p0    # Lorg/w3c/dom/Element;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -2068,9 +2050,6 @@
 
 .method private static checkTrustedEntryExists(Lorg/w3c/dom/Element;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 4
-    .param p0    # Lorg/w3c/dom/Element;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2123,7 +2102,6 @@
 
 .method private static getContainerType(I)I
     .locals 3
-    .param p0    # I
 
     const/16 v2, 0xc7
 
@@ -2173,7 +2151,6 @@
 
 .method public static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2211,9 +2188,6 @@
 
 .method protected static declared-synchronized isContainerEmpty(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)I
     .locals 21
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-class v18, Lcom/android/server/SEAMSContainer;
 
@@ -2536,8 +2510,6 @@
 
 .method private static removeCategory(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2619,11 +2591,6 @@
 
 .method protected static declared-synchronized removeEntryFromMac(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 30
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-class v26, Lcom/android/server/SEAMSContainer;
 
@@ -3275,7 +3242,6 @@
 # virtual methods
 .method public activateDomain(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -3284,10 +3250,6 @@
 
 .method public addAppToContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, -0x1
 
@@ -3296,13 +3258,6 @@
 
 .method protected declared-synchronized addSEAppContext(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     monitor-enter p0
 
@@ -3863,8 +3818,6 @@
 
 .method public createSEContainer(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -3873,7 +3826,6 @@
 
 .method public deActivateDomain(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -3890,8 +3842,6 @@
 
 .method public getPackageNamesFromSEContainer(II)[Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3900,12 +3850,6 @@
 
 .method protected getSEAppContextLine(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     const/4 v0, 0x0
 
@@ -3931,8 +3875,6 @@
 
 .method public getSEContainerIDsFromPackageName(Ljava/lang/String;I)[I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3941,7 +3883,6 @@
 
 .method protected getSignatureFromPackage(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4021,7 +3962,6 @@
 
 .method public isProcessRunning(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/SEAMSContainer;->mContext:Landroid/content/Context;
 
@@ -4078,9 +4018,6 @@
 
 .method public loadContainerSetting(Ljava/lang/String;IZ)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, -0x1
 
@@ -4128,10 +4065,6 @@
 
 .method public removeAppFromContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, -0x1
 
@@ -4140,13 +4073,6 @@
 
 .method protected declared-synchronized removeSEAppContext(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)I
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     monitor-enter p0
 
@@ -4677,9 +4603,6 @@
 
 .method public removeSEContainer(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -4688,7 +4611,6 @@
 
 .method public restartApp(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 

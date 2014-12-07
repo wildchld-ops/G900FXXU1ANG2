@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -49,8 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -189,7 +186,6 @@
 
 .method private getMerchImageOffset(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/layout/play/PlayMerchBannerView;->mColumnCount:I
 
@@ -224,8 +220,6 @@
 
 .method private measureTexts(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v12, 0x40000000
 
@@ -363,7 +357,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -376,12 +369,6 @@
 
 .method public configureMerch(Lcom/google/android/finsky/protos/DocumentV2$NextBanner;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/protos/Doc$Image;Landroid/view/View$OnClickListener;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;[B)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$NextBanner;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p4    # Landroid/view/View$OnClickListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p6    # [B
 
     const/4 v2, 0x0
 
@@ -497,7 +484,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v6, 0x0
 
@@ -627,7 +613,6 @@
 
 .method public init(I)V
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -710,11 +695,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 14
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/play/PlayMerchBannerView;->getWidth()I
 
@@ -853,7 +833,6 @@
 
 .method public onLoaded(Landroid/widget/ImageView;)V
     .locals 0
-    .param p1    # Landroid/widget/ImageView;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/play/PlayMerchBannerView;->configureImageFadingEdge()V
 
@@ -862,8 +841,6 @@
 
 .method protected onMeasure(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v8, 0x40000000
 

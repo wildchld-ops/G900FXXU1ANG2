@@ -64,7 +64,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/i18n/addressinput/DataSource;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/DataSource;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,8 +76,6 @@
 
 .method private constructor <init>(Lcom/android/i18n/addressinput/FieldVerifier;Lcom/android/i18n/addressinput/AddressVerificationNodeData;)V
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/FieldVerifier;
-    .param p2    # Lcom/android/i18n/addressinput/AddressVerificationNodeData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -155,8 +152,6 @@
 
 .method private isKnownInScript(Lcom/android/i18n/addressinput/LookupKey$ScriptType;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -281,7 +276,6 @@
 
 .method private static parseAddressFields(Ljava/lang/String;)Ljava/util/Set;
     .locals 10
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -398,7 +392,6 @@
 
 .method private static parseRequireString(Ljava/lang/String;)Ljava/util/Set;
     .locals 9
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -491,7 +484,6 @@
 
 .method private populate(Lcom/android/i18n/addressinput/AddressVerificationNodeData;)V
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/AddressVerificationNodeData;
 
     const/4 v2, 0x2
 
@@ -840,11 +832,6 @@
 # virtual methods
 .method protected check(Lcom/android/i18n/addressinput/LookupKey$ScriptType;Lcom/android/i18n/addressinput/AddressProblemType;Lcom/android/i18n/addressinput/AddressField;Ljava/lang/String;Lcom/android/i18n/addressinput/AddressProblems;)Z
     .locals 6
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
-    .param p2    # Lcom/android/i18n/addressinput/AddressProblemType;
-    .param p3    # Lcom/android/i18n/addressinput/AddressField;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/i18n/addressinput/AddressProblems;
 
     const/4 v2, 0x1
 
@@ -1012,7 +999,6 @@
 
 .method refineVerifier(Ljava/lang/String;)Lcom/android/i18n/addressinput/FieldVerifier;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

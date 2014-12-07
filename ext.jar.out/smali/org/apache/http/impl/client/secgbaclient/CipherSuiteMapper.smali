@@ -111,7 +111,6 @@
 # virtual methods
 .method public getCipherSuiteId(Ljava/lang/String;)[B
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

@@ -252,8 +252,6 @@
 
 .method static synthetic access$000(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/launcher2/MenuAppModel;->integerCompare(II)I
 
@@ -264,8 +262,6 @@
 
 .method static synthetic access$100(JJ)I
     .locals 1
-    .param p0    # J
-    .param p2    # J
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/launcher2/MenuAppModel;->longCompare(JJ)I
 
@@ -284,7 +280,6 @@
 
 .method private checkEditMode(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/MenuAppModel;->mInEditMode:Z
 
@@ -320,7 +315,6 @@
 
 .method private findActivitiesForPackage(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -371,8 +365,6 @@
 
 .method private static integerCompare(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -394,8 +386,6 @@
 
 .method private static longCompare(JJ)I
     .locals 2
-    .param p0    # J
-    .param p2    # J
 
     const/4 v0, 0x0
 
@@ -421,7 +411,6 @@
 
 .method private normalizeModel(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppModel;->mAppItems:Ljava/util/Map;
 
@@ -571,7 +560,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/launcher2/MenuAppModel;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/launcher2/MenuAppModel;
 
@@ -784,7 +772,6 @@
 
 .method public changeFolderColor(Lcom/android/launcher2/AppFolderItem;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/AppFolderItem;
 
     iget-wide v2, p1, Lcom/android/launcher2/BaseItem;->mId:J
 
@@ -828,7 +815,6 @@
 
 .method public changeFolderName(Lcom/android/launcher2/AppFolderItem;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/AppFolderItem;
 
     iget-wide v2, p1, Lcom/android/launcher2/BaseItem;->mId:J
 
@@ -1315,8 +1301,6 @@
 
 .method public editInsertItemOnNewScreen(Lcom/android/launcher2/AppItem;I)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -1381,7 +1365,6 @@
 
 .method public editIsDirty(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1677,7 +1660,6 @@
 
 .method public findDisabledItemById(Ljava/lang/Long;)Lcom/android/launcher2/AppItem;
     .locals 4
-    .param p1    # Ljava/lang/Long;
 
     const/4 v0, 0x0
 
@@ -1707,7 +1689,6 @@
 
 .method public findItemById(J)Lcom/android/launcher2/AppItem;
     .locals 3
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -2638,7 +2619,6 @@
 
 .method normalizeAppMap(Ljava/util/Map;Lcom/android/launcher2/MenuAppModel$Normalizer;Z)Ljava/util/List;
     .locals 5
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2793,7 +2773,6 @@
 
 .method public setFolderToDelete(Lcom/android/launcher2/AppFolderItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/AppFolderItem;
 
     const/4 v0, 0x1
 
@@ -2806,7 +2785,6 @@
 
 .method public setLauncherApplication(Lcom/android/launcher2/LauncherApplication;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppModel;->mApplication:Lcom/android/launcher2/LauncherApplication;
 
@@ -2890,7 +2868,6 @@
 
 .method public setNormalizer(Lcom/android/launcher2/MenuAppModel$Normalizer;I)V
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

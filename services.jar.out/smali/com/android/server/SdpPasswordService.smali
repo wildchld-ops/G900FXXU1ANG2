@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,7 +55,6 @@
 
 .method private getSdpSaltStorageLocked(I)Landroid/os/storage/SaltStorage;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/SdpPasswordService;->mSdpKeySaltStorages:Landroid/util/SparseArray;
 
@@ -90,9 +88,6 @@
 # virtual methods
 .method public changePassword(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -155,8 +150,6 @@
 
 .method public createPassword(ILjava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -209,7 +202,6 @@
 
 .method public getSdpSaltStorage(I)Landroid/os/storage/SaltStorage;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/SdpPasswordService;->mSdpKeySaltStorages:Landroid/util/SparseArray;
 
@@ -236,8 +228,6 @@
 
 .method public hashPassword(ILjava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -296,7 +286,6 @@
 
 .method public removePassword(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -314,7 +314,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -325,7 +324,6 @@
 
 .method private chkChinese(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x31bf
 
@@ -376,7 +374,6 @@
 
 .method private chkKorean(C)Z
     .locals 1
-    .param p1    # C
 
     const v0, 0xd7a3
 
@@ -436,7 +433,6 @@
 
 .method private deleteItemByContactsId(J)Z
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -465,7 +461,6 @@
 
 .method private isGSMCharacters(C)Z
     .locals 3
-    .param p1    # C
 
     const-string v0, "PhoneBookSimOperation"
 
@@ -681,7 +676,6 @@
 
 .method private isTwoByteGsmDefaultCharacters(C)Z
     .locals 3
-    .param p1    # C
 
     const-string v0, "PhoneBookSimOperation"
 
@@ -861,7 +855,6 @@
 # virtual methods
 .method public SpecialCharOffset(Ljava/lang/String;)I
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1000,8 +993,6 @@
 
 .method public copyAllNumberToSim(JI)I
     .locals 33
-    .param p1    # J
-    .param p3    # I
 
     invoke-static {}, Lcom/samsung/contacts/sim/editor/EditSim;->getOperation()Lcom/samsung/contacts/sim/editor/EditSimOperation;
 
@@ -1745,10 +1736,6 @@
 
 .method public copyToPhone(JLjava/lang/String;Ljava/lang/String;Z)Z
     .locals 35
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     invoke-static {}, Lcom/samsung/contacts/sim/editor/EditSim;->getOperation()Lcom/samsung/contacts/sim/editor/EditSimOperation;
 
@@ -3010,8 +2997,6 @@
 
 .method public copyToSim(JZ)I
     .locals 35
-    .param p1    # J
-    .param p3    # Z
 
     const-wide/16 v10, -0x1
 
@@ -3934,7 +3919,6 @@
 
 .method public getByteArrayText(Ljava/lang/String;)[B
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5387,7 +5371,6 @@
 
 .method public isAnrFull(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x2
 
@@ -5729,7 +5712,6 @@
 
 .method public isAnrSupported(I)Z
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/contacts/sim/PhoneBookSimOperation;->mAnrMaxIndex:[I
 
@@ -6557,8 +6539,6 @@
 
 .method public setFirstCheck(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-nez p1, :cond_1
 
@@ -6583,8 +6563,6 @@
 
 .method public trimNonAsciiTextByLength(Ljava/lang/String;I)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v3, Ljava/lang/StringBuffer;
 
@@ -6642,8 +6620,6 @@
 
 .method public trimTextByLength(Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v2, Ljava/lang/StringBuffer;
 

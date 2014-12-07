@@ -227,8 +227,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/enterprise/application/ApplicationPolicy;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     const/4 v1, 0x0
 
@@ -293,9 +291,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/wifi/WifiPolicy;Landroid/net/wifi/WifiConfiguration;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/wifi/WifiPolicy;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/wifi/WifiPolicy;->edmAddOrUpdateTask(Landroid/net/wifi/WifiConfiguration;I)V
 
@@ -304,7 +299,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/wifi/WifiPolicy;)Landroid/app/enterprise/EnterpriseDeviceManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/wifi/WifiPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -315,7 +309,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/wifi/WifiPolicy;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/wifi/WifiPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->updateWpsBlockedNetworks()Z
 
@@ -326,7 +319,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/enterprise/wifi/WifiPolicy;->isBootCompleted:Z
 
@@ -335,7 +327,6 @@
 
 .method private addOrUpdateNetwork(Landroid/net/wifi/WifiConfiguration;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -359,8 +350,6 @@
 
 .method private addToBlocked(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getBlockedList(I)Ljava/util/Set;
 
@@ -451,8 +440,6 @@
 
 .method private asyncEnableNetwork(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     sget-boolean v1, Lcom/android/server/enterprise/wifi/WifiPolicy;->isBootCompleted:Z
 
@@ -482,7 +469,6 @@
 
 .method private computeprefixLength(Ljava/net/InetAddress;)I
     .locals 7
-    .param p1    # Ljava/net/InetAddress;
 
     const/4 v2, 0x0
 
@@ -532,7 +518,6 @@
 
 .method private static convertToQuotedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v2, 0x22
 
@@ -595,7 +580,6 @@
 
 .method private disableNetwork(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v0, 0x1
 
@@ -628,7 +612,6 @@
 
 .method private disableNetwork(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -663,8 +646,6 @@
 
 .method private edmAddOrUpdateTask(Landroid/net/wifi/WifiConfiguration;I)V
     .locals 13
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -974,7 +955,6 @@
 
 .method private enableNetwork(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1012,8 +992,6 @@
 
 .method private enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mCallerUid:I
 
@@ -1050,7 +1028,6 @@
 
 .method private enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1092,8 +1069,6 @@
 
 .method private enforceWifiPermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mCallerUid:I
 
@@ -1130,7 +1105,6 @@
 
 .method private enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1147,7 +1121,6 @@
 
 .method private getAdminUid(Landroid/app/enterprise/ContextInfo;)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -1444,7 +1417,6 @@
 
 .method private getBlockedList(I)Ljava/util/Set;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1500,7 +1472,6 @@
 
 .method private getConfigByNetworkId(I)Landroid/net/wifi/WifiConfiguration;
     .locals 8
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1584,9 +1555,6 @@
 
 .method private getEnterpriseFieldValue(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1799,7 +1767,6 @@
 
 .method static getLinkSecurity(Landroid/net/wifi/WifiConfiguration;)I
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-static {p0}, Landroid/app/enterprise/WifiPolicy;->getLinkSecurity(Landroid/net/wifi/WifiConfiguration;)I
 
@@ -1810,9 +1777,6 @@
 
 .method private getNetworkAddress(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1892,7 +1856,6 @@
 
 .method private getNetworkBySSID(Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1965,8 +1928,6 @@
 
 .method private getNetworkConfiguration(ILjava/lang/String;)Landroid/net/wifi/WifiConfiguration;
     .locals 37
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v34, 0x2
 
@@ -3136,7 +3097,6 @@
 
 .method private getNetworkIdBySSID(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -3203,8 +3163,6 @@
 
 .method private getNetworkLinkSecurity(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getNetworkConfiguration(ILjava/lang/String;)Landroid/net/wifi/WifiConfiguration;
 
@@ -3229,7 +3187,6 @@
 
 .method private getNetworkLinkSecurity(Landroid/net/wifi/WifiConfiguration;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v4, 0x2
 
@@ -3339,9 +3296,6 @@
 
 .method private getNetworkWEPKey(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -3385,7 +3339,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/wifi/WifiPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -3398,7 +3351,6 @@
 
 .method private getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -3421,7 +3373,6 @@
 
 .method private isBlocked(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getAllBlockedList()Ljava/util/Set;
 
@@ -3470,7 +3421,6 @@
 
 .method private isIpAddress(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -3506,8 +3456,6 @@
 
 .method private isNetworkSecure(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -3568,7 +3516,6 @@
 
 .method private declared-synchronized isWifiNetworkSsidBlacklisted(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3607,7 +3554,6 @@
 
 .method private isWifiSsidRestrictionActive(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/enterprise/wifi/WifiPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
@@ -3992,8 +3938,6 @@
 
 .method private static lookupString(Ljava/lang/String;[Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     array-length v1, p1
 
@@ -4034,8 +3978,6 @@
 
 .method private makeBitSet(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/BitSet;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     new-instance v1, Ljava/util/BitSet;
 
@@ -4083,8 +4025,6 @@
 
 .method private makeString(Ljava/util/BitSet;[Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/util/BitSet;
-    .param p2    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -4156,8 +4096,6 @@
 
 .method private putString(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -4180,7 +4118,6 @@
 
 .method private static removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -4228,8 +4165,6 @@
 
 .method private removeFromBlocked(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getBlockedList(I)Ljava/util/Set;
 
@@ -4244,7 +4179,6 @@
 
 .method private saveBlockedList(ILjava/util/Set;)V
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4316,7 +4250,6 @@
 
 .method private sendCacheUpdateCommand(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, -0x2710
 
@@ -4327,8 +4260,6 @@
 
 .method private sendCacheUpdateCommand(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -4362,10 +4293,6 @@
 
 .method private setEnterpriseFieldValue(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -4569,10 +4496,6 @@
 
 .method private setNetworkAddress(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4628,8 +4551,6 @@
 
 .method private setNetworkConfiguration(ILandroid/net/wifi/WifiConfiguration;)Z
     .locals 20
-    .param p1    # I
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
 
     new-instance v6, Landroid/content/ContentValues;
 
@@ -5331,8 +5252,6 @@
 
 .method private setNetworkLastSSID(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v8, p0, Lcom/android/server/enterprise/wifi/WifiPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -5440,10 +5359,6 @@
 
 .method private setNetworkWEPKey(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;ILjava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -5539,7 +5454,6 @@
 
 .method private updateNetworkLastSSID(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/wifi/WifiPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -5672,8 +5586,6 @@
 # virtual methods
 .method public activateWifiSsidRestriction(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5700,8 +5612,6 @@
 
 .method public addBlockedNetwork(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5738,9 +5648,6 @@
 
 .method public addUrlForNetworkProxyBypass(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -5870,7 +5777,6 @@
 
 .method public addWifiSsidToBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5971,7 +5877,6 @@
 
 .method public addWifiSsidToWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6072,8 +5977,6 @@
 
 .method public allowOpenWifiAp(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -6143,8 +6046,6 @@
 
 .method public allowWifiApSettingUserModification(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6167,8 +6068,6 @@
 
 .method public clearUrlsFromNetworkProxyBypassList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -6236,7 +6135,6 @@
 
 .method public clearWifiSsidBlackList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x2
 
@@ -6303,7 +6201,6 @@
 
 .method public clearWifiSsidWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x2
 
@@ -6370,8 +6267,6 @@
 
 .method public edmAddOrUpdate(Landroid/net/wifi/WifiConfiguration;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceSystemUser()V
 
@@ -6738,7 +6633,6 @@
 
 .method public getAllWifiSsidBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6835,7 +6729,6 @@
 
 .method public getAllWifiSsidWhiteLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6932,7 +6825,6 @@
 
 .method public getAllowUserPolicyChanges(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -6977,9 +6869,6 @@
 
 .method public getAllowUserProfiles(Landroid/app/enterprise/ContextInfo;ZI)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v4, -0x1
 
@@ -7042,7 +6931,6 @@
 
 .method public getAutomaticConnectionToWifi(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -7087,7 +6975,6 @@
 
 .method public getBlockedNetworks(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7141,7 +7028,6 @@
 
 .method public getDHCPEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -7175,7 +7061,6 @@
 
 .method public getDefaultGateway(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7202,7 +7087,6 @@
 
 .method public getDefaultIp(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7229,7 +7113,6 @@
 
 .method public getDefaultPrimaryDNS(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7256,7 +7139,6 @@
 
 .method public getDefaultSecondaryDNS(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7283,7 +7165,6 @@
 
 .method public getDefaultSubnetMask(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7310,7 +7191,6 @@
 
 .method public getMinimumRequiredSecurity(Landroid/app/enterprise/ContextInfo;)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -7358,8 +7238,6 @@
 
 .method public getNetworkAnonymousIdValue(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "anonymous_identity"
 
@@ -7372,8 +7250,6 @@
 
 .method public getNetworkCaCertification(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "ca_cert"
 
@@ -7411,8 +7287,6 @@
 
 .method public getNetworkClientCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "client_cert"
 
@@ -7450,8 +7324,6 @@
 
 .method public getNetworkDHCPEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -7483,8 +7355,6 @@
 
 .method public getNetworkEAPType(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "eap"
 
@@ -7497,8 +7367,6 @@
 
 .method public getNetworkGateway(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "networkStaticGateway"
 
@@ -7511,8 +7379,6 @@
 
 .method public getNetworkIdentityValue(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "identity"
 
@@ -7525,8 +7391,6 @@
 
 .method public getNetworkIp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "networkStaticIp"
 
@@ -7539,8 +7403,6 @@
 
 .method public getNetworkKeystoreEngineId(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -7601,8 +7463,6 @@
 
 .method public getNetworkLinkSecurity(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7621,8 +7481,6 @@
 
 .method public getNetworkPSK(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -7656,8 +7514,6 @@
 
 .method public getNetworkPassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "password"
 
@@ -7684,8 +7540,6 @@
 
 .method public getNetworkPhase2(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "phase2"
 
@@ -7714,8 +7568,6 @@
 
 .method public getNetworkPrimaryDNS(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "networkStaticPrimaryDns"
 
@@ -7728,8 +7580,6 @@
 
 .method public getNetworkPrivateKey(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "key_id"
 
@@ -7777,8 +7627,6 @@
 
 .method public getNetworkProxyEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -7820,8 +7668,6 @@
 
 .method public getNetworkProxyHostName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -7865,8 +7711,6 @@
 
 .method public getNetworkProxyPort(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -7910,7 +7754,6 @@
 
 .method public getNetworkSSIDList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7982,8 +7825,6 @@
 
 .method public getNetworkSecondaryDNS(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "networkStaticSecondaryDns"
 
@@ -7996,8 +7837,6 @@
 
 .method public getNetworkSubnetMask(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "networkStaticSubnetMask"
 
@@ -8010,8 +7849,6 @@
 
 .method public getNetworkWEPKey1(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey1:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -8028,8 +7865,6 @@
 
 .method public getNetworkWEPKey2(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey2:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -8046,8 +7881,6 @@
 
 .method public getNetworkWEPKey3(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey3:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -8064,8 +7897,6 @@
 
 .method public getNetworkWEPKey4(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey4:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -8082,8 +7913,6 @@
 
 .method public getNetworkWEPKeyId(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -8116,7 +7945,6 @@
 
 .method public getPasswordHidden(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -8166,7 +7994,6 @@
 
 .method public getPromptCredentialsEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -8211,7 +8038,6 @@
 
 .method public getTlsCertificateSecurityLevel(Landroid/app/enterprise/ContextInfo;)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -8263,8 +8089,6 @@
 
 .method public getUrlsFromNetworkProxyBypassList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8342,7 +8166,6 @@
 
 .method public getWifiApSetting(Landroid/app/enterprise/ContextInfo;)Landroid/net/wifi/WifiConfiguration;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -8375,8 +8198,6 @@
 
 .method public getWifiProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/WifiAdminProfile;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -8800,8 +8621,6 @@
 
 .method public getWifiSsidRestrictionList(Landroid/app/enterprise/ContextInfo;I)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8868,7 +8687,6 @@
 
 .method public isEnterpriseNetwork(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->getAllEnterpriseSSIDs()Ljava/util/List;
 
@@ -8887,9 +8705,6 @@
 
 .method public isNetworkBlocked(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {p2}, Lcom/android/server/enterprise/wifi/WifiPolicy;->convertToQuotedString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -8934,8 +8749,6 @@
 
 .method public isNetworkSecure(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -8961,7 +8774,6 @@
 
 .method public isOpenWifiApAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -9006,8 +8818,6 @@
 
 .method public isWifiAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -9065,7 +8875,6 @@
 
 .method public isWifiApSettingUserModificationAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -9110,7 +8919,6 @@
 
 .method public isWifiSsidRestrictionActive(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -9127,7 +8935,6 @@
 
 .method public isWifiStateChangeAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -9172,14 +8979,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -9194,15 +8999,12 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public removeBlockedNetwork(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -9264,8 +9066,6 @@
 
 .method public removeNetworkConfiguration(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, -0x1
 
@@ -9494,9 +9294,6 @@
 
 .method public removeUrlFromNetworkProxyBypassList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -9668,7 +9465,6 @@
 
 .method public removeWifiSsidFromBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9781,7 +9577,6 @@
 
 .method public removeWifiSsidFromWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9886,8 +9681,6 @@
 
 .method public setAllowUserPolicyChanges(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -9916,8 +9709,6 @@
 
 .method public setAllowUserProfiles(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -9948,8 +9739,6 @@
 
 .method public setAutomaticConnectionToWifi(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -9978,8 +9767,6 @@
 
 .method public setDHCPEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -10028,8 +9815,6 @@
 
 .method public setDefaultGateway(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -10065,8 +9850,6 @@
 
 .method public setDefaultIp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -10102,8 +9885,6 @@
 
 .method public setDefaultPrimaryDNS(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -10139,8 +9920,6 @@
 
 .method public setDefaultSecondaryDNS(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -10176,8 +9955,6 @@
 
 .method public setDefaultSubnetMask(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -10215,8 +9992,6 @@
 
 .method public setMinimumRequiredSecurity(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 16
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -10395,9 +10170,6 @@
 
 .method public setNetworkAnonymousIdValue(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "anonymous_identity"
 
@@ -10410,9 +10182,6 @@
 
 .method public setNetworkCaCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -10433,9 +10202,6 @@
 
 .method public setNetworkClientCertification(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -10456,9 +10222,6 @@
 
 .method public setNetworkDHCPEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -10501,9 +10264,6 @@
 
 .method public setNetworkGateway(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "networkStaticGateway"
 
@@ -10516,9 +10276,6 @@
 
 .method public setNetworkIdentityValue(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -10556,9 +10313,6 @@
 
 .method public setNetworkIp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "networkStaticIp"
 
@@ -10571,9 +10325,6 @@
 
 .method public setNetworkLinkSecurity(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v7, "WifiPolicyService"
 
@@ -10972,9 +10723,6 @@
 
 .method public setNetworkPSK(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -11059,9 +10807,6 @@
 
 .method public setNetworkPassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -11105,9 +10850,6 @@
 
 .method public setNetworkPhase2(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -11128,9 +10870,6 @@
 
 .method public setNetworkPrimaryDNS(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "networkStaticPrimaryDns"
 
@@ -11143,9 +10882,6 @@
 
 .method public setNetworkPrivateKey(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -11166,9 +10902,6 @@
 
 .method public setNetworkProxyEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -11224,9 +10957,6 @@
 
 .method public setNetworkProxyHostName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -11312,9 +11042,6 @@
 
 .method public setNetworkProxyPort(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -11386,9 +11113,6 @@
 
 .method public setNetworkSSID(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v10, "WifiPolicyService"
 
@@ -11664,9 +11388,6 @@
 
 .method public setNetworkSecondaryDNS(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "networkStaticSecondaryDns"
 
@@ -11679,9 +11400,6 @@
 
 .method public setNetworkSubnetMask(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "networkStaticSubnetMask"
 
@@ -11694,9 +11412,6 @@
 
 .method public setNetworkWEPKey1(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey1:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -11713,9 +11428,6 @@
 
 .method public setNetworkWEPKey2(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey2:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -11732,9 +11444,6 @@
 
 .method public setNetworkWEPKey3(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey3:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -11751,9 +11460,6 @@
 
 .method public setNetworkWEPKey4(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;->wepkey4:Lcom/android/server/enterprise/wifi/WifiPolicy$mWepKeyIndex;
 
@@ -11770,9 +11476,6 @@
 
 .method public setNetworkWEPKeyId(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -11823,8 +11526,6 @@
 
 .method public setPasswordHidden(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -11847,8 +11548,6 @@
 
 .method public setPromptCredentialsEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -11877,8 +11576,6 @@
 
 .method public setTlsCertificateSecurityLevel(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -11920,8 +11617,6 @@
 
 .method public setWifi(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -11982,8 +11677,6 @@
 
 .method public setWifiAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -12041,10 +11734,6 @@
 
 .method public setWifiApSetting(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -12371,8 +12060,6 @@
 
 .method public setWifiProfile(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/WifiAdminProfile;)Z
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/WifiAdminProfile;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -13206,8 +12893,6 @@
 
 .method public setWifiStateChangeAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/wifi/WifiPolicy;->enforceOwnerOnlyAndWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 

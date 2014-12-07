@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/interactions/InteractionTabActivity;Landroid/app/Activity;)V
     .locals 0
-    .param p2    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$InteractionTabPagerAdapter;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
@@ -123,8 +122,6 @@
 
 .method protected getFragment(ILandroid/app/FragmentTransaction;)Landroid/app/Fragment;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/app/FragmentTransaction;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$InteractionTabPagerAdapter;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
@@ -216,7 +213,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$InteractionTabPagerAdapter;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 

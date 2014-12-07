@@ -22,7 +22,6 @@
 
 .method public static findHighestPriorityReason(Lcom/google/android/finsky/protos/DocumentV2$SuggestionReasons;)Lcom/google/android/finsky/protos/DocumentV2$Reason;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/protos/DocumentV2$SuggestionReasons;
 
     const/4 v0, 0x0
 
@@ -35,8 +34,6 @@
 
 .method public static findHighestPriorityReason(Lcom/google/android/finsky/protos/DocumentV2$SuggestionReasons;Lcom/google/android/finsky/protos/DocumentV2$Reason;)Lcom/google/android/finsky/protos/DocumentV2$Reason;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/protos/DocumentV2$SuggestionReasons;
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$Reason;
 
     if-nez p0, :cond_1
 
@@ -111,8 +108,6 @@
 
 .method public static getFeaturedGridColumnCount(Landroid/content/res/Resources;D)I
     .locals 4
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # D
 
     const v2, 0x7f0a0007
 
@@ -163,8 +158,6 @@
 
 .method public static getFillColor(Lcom/google/android/finsky/protos/Doc$Image;I)I
     .locals 5
-    .param p0    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p1    # I
 
     iget-object v2, p0, Lcom/google/android/finsky/protos/Doc$Image;->fillColorRgb:Ljava/lang/String;
 
@@ -240,7 +233,6 @@
 
 .method public static getItalicSafeString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -265,7 +257,6 @@
 
 .method public static getRegularGridColumnCount(Landroid/content/res/Resources;)I
     .locals 4
-    .param p0    # Landroid/content/res/Resources;
 
     const v2, 0x7f0a0007
 
@@ -310,9 +301,6 @@
 
 .method public static getStreamQuickLinkColumnCount(Landroid/content/res/Resources;II)I
     .locals 10
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x2
 
@@ -387,8 +375,6 @@
 
 .method public static getTextColor(Lcom/google/android/finsky/protos/DocumentV2$NextBanner;I)I
     .locals 5
-    .param p0    # Lcom/google/android/finsky/protos/DocumentV2$NextBanner;
-    .param p1    # I
 
     iget-object v2, p0, Lcom/google/android/finsky/protos/DocumentV2$NextBanner;->colorTextArgb:Ljava/lang/String;
 
@@ -470,7 +456,6 @@
 
 .method public static hasReasons(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     if-eqz p0, :cond_0
 
@@ -503,7 +488,6 @@
 
 .method public static isDismissable(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/PlayUtils;->hasReasons(Lcom/google/android/finsky/api/model/Document;)Z
 
@@ -530,7 +514,6 @@
 
 .method public static isVisibleOnScreen(Landroid/view/View;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
 
     sget-object v0, Lcom/google/android/finsky/utils/PlayUtils;->sTempRect:Landroid/graphics/Rect;
 
@@ -543,8 +526,6 @@
 
 .method public static removeClusterFromStream(Lcom/google/android/finsky/layout/play/PlayCardClusterView;Lcom/google/android/finsky/adapters/OnCollapsedListener;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardClusterView;
-    .param p1    # Lcom/google/android/finsky/adapters/OnCollapsedListener;
 
     sget-boolean v0, Lcom/google/android/finsky/layout/play/PlayListView;->ENABLE_ANIMATION:Z
 
@@ -575,9 +556,6 @@
 
 .method public static sendAccessibilityEventWithText(Landroid/content/Context;Ljava/lang/String;Landroid/view/View;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/view/View;
 
     const-string v4, "accessibility"
 
@@ -641,9 +619,6 @@
 
 .method public static setErrorOnTextView(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p2}, Landroid/widget/TextView;->setError(Ljava/lang/CharSequence;)V
 

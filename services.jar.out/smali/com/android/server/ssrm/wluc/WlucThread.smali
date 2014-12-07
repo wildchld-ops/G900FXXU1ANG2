@@ -305,10 +305,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -331,7 +327,6 @@
 
 .method public static IsWifiOnlyModel(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -368,7 +363,6 @@
 
 .method private checkDownload(Ljava/net/URL;)Z
     .locals 18
-    .param p1    # Ljava/net/URL;
 
     :try_start_0
     invoke-static {}, Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;
@@ -718,7 +712,6 @@
 
 .method private checkUpdate(Ljava/net/URL;)Z
     .locals 17
-    .param p1    # Ljava/net/URL;
 
     :try_start_0
     invoke-static {}, Lorg/xmlpull/v1/XmlPullParserFactory;->newInstance()Lorg/xmlpull/v1/XmlPullParserFactory;
@@ -1024,9 +1017,6 @@
 
 .method private downloadApk(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 22
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1906,9 +1896,6 @@
 
 .method private getResultUpdateCheck(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/16 v6, 0x5a
 
@@ -2293,8 +2280,6 @@
 
 .method protected static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/ssrm/SSRMUtil;->logOnEng(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2303,7 +2288,6 @@
 
 .method public static x([I)Ljava/lang/String;
     .locals 1
-    .param p0    # [I
 
     invoke-static {p0}, Lcom/android/server/ssrm/SSRMUtil;->x([I)Ljava/lang/String;
 

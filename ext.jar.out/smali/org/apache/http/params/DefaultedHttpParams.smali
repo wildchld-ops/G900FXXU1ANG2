@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/params/HttpParams;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Lorg/apache/http/params/AbstractHttpParams;-><init>()V
 
@@ -65,7 +63,6 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lorg/apache/http/params/DefaultedHttpParams;->local:Lorg/apache/http/params/HttpParams;
 
@@ -91,7 +88,6 @@
 
 .method public removeParameter(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/http/params/DefaultedHttpParams;->local:Lorg/apache/http/params/HttpParams;
 
@@ -104,8 +100,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lorg/apache/http/params/DefaultedHttpParams;->local:Lorg/apache/http/params/HttpParams;
 

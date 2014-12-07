@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -156,7 +155,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->isAirPlaneMode:I
 
@@ -165,8 +163,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->isAirPlaneMode:I
 
@@ -175,7 +171,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -184,7 +179,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -193,7 +187,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -202,8 +195,6 @@
 
 .method static synthetic access$1200(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->setMobileDataEnabled(Z)V
 
@@ -212,7 +203,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->mMobileData:Z
 
@@ -221,8 +211,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->mMobileData:Z
 
@@ -231,7 +219,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->getMobileData()Z
 
@@ -242,8 +229,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->updateActivateStatus(Z)V
 
@@ -252,7 +237,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -261,8 +245,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;I)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->getMobileDataAsSlot(I)Z
 
@@ -273,7 +255,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->onORGDisplayMobileDataOnAlert()V
 
@@ -282,7 +263,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -291,7 +271,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -363,7 +342,6 @@
 
 .method private getMobileDataAsSlot(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -822,7 +800,6 @@
 
 .method private setMobileData(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -879,7 +856,6 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MobileDataQuickSettingButton;->mMobileData:Z
 
@@ -959,7 +935,6 @@
 
 .method private setORGMobileData(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "STATUSBAR-MobileDataQuickSettingButton"
 
@@ -998,7 +973,6 @@
 
 .method private updateActivateStatus(Z)V
     .locals 5
-    .param p1    # Z
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
@@ -1145,7 +1119,6 @@
 
 .method public onClick(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x1
 

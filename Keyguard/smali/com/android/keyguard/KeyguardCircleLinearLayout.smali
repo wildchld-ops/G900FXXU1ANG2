@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -63,8 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -75,9 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x3
 
@@ -124,7 +118,6 @@
 
 .method private PressButton(I)V
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -168,7 +161,6 @@
 
 .method private SetCoreView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->coreView:Landroid/widget/FrameLayout;
 
@@ -190,10 +182,6 @@
 
 .method private SetSideView(Landroid/view/View;III)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -227,7 +215,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardCircleLinearLayout;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mPosStartX:I
 
@@ -236,7 +223,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/KeyguardCircleLinearLayout;)Lcom/android/keyguard/sec/KeyguardEffectViewMain;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mUnlockView:Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
@@ -245,8 +231,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/KeyguardCircleLinearLayout;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mPosStartX:I
 
@@ -255,7 +239,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardCircleLinearLayout;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mPosStartY:I
 
@@ -264,8 +247,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/KeyguardCircleLinearLayout;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mPosStartY:I
 
@@ -274,8 +255,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardCircleLinearLayout;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardCircleLinearLayout;->PressButton(I)V
 
@@ -284,7 +263,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/KeyguardCircleLinearLayout;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->coreView:Landroid/widget/FrameLayout;
 
@@ -293,7 +271,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/KeyguardCircleLinearLayout;)D
     .locals 2
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
 
     iget-wide v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mSecondBorder:D
 
@@ -302,7 +279,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardCircleLinearLayout;)D
     .locals 2
-    .param p0    # Lcom/android/keyguard/KeyguardCircleLinearLayout;
 
     iget-wide v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mFirstBorder:D
 
@@ -313,7 +289,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -542,9 +517,6 @@
 
 .method public setButtonPosition(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mPositionButton:[[I
 
@@ -567,7 +539,6 @@
 
 .method public setCallback(Lcom/android/keyguard/KeyguardCircleLinearLayout$CircleLinearLayoutCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardCircleLinearLayout$CircleLinearLayoutCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardCircleLinearLayout;->mCallback:Lcom/android/keyguard/KeyguardCircleLinearLayout$CircleLinearLayoutCallback;
 

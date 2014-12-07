@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/services/FetchConsumptionDataService;ILjava/util/concurrent/Semaphore;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/util/concurrent/Semaphore;
 
     iput-object p1, p0, Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;->this$0:Lcom/google/android/finsky/services/FetchConsumptionDataService;
 
@@ -46,8 +44,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;Lcom/google/android/play/IUserContentService;)Lcom/google/android/play/IUserContentService;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;
-    .param p1    # Lcom/google/android/play/IUserContentService;
 
     iput-object p1, p0, Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;->mService:Lcom/google/android/play/IUserContentService;
 
@@ -56,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;
 
     invoke-direct {p0}, Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;->getDataFromService()V
 
@@ -65,7 +60,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;)Ljava/util/concurrent/Semaphore;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/FetchConsumptionDataService$ConsumptionAppServiceConn;->mLock:Ljava/util/concurrent/Semaphore;
 
@@ -243,8 +237,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     # getter for: Lcom/google/android/finsky/services/FetchConsumptionDataService;->sFetchThread:Ljava/util/concurrent/ExecutorService;
     invoke-static {}, Lcom/google/android/finsky/services/FetchConsumptionDataService;->access$300()Ljava/util/concurrent/ExecutorService;
@@ -262,7 +254,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x0
 

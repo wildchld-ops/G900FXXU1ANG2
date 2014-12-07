@@ -60,9 +60,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageManager;Lcom/google/android/finsky/receivers/PackageMonitorReceiver;Landroid/app/admin/DevicePolicyManager;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver;
-    .param p3    # Landroid/app/admin/DevicePolicyManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +83,6 @@
 
 .method private static computeCertificateHashes(Landroid/content/pm/PackageInfo;)[Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/pm/PackageInfo;
 
     iget-object v3, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -123,7 +119,6 @@
 
 .method private createPackageState(Landroid/content/pm/PackageInfo;)Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;
     .locals 13
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     const/4 v11, 0x1
 
@@ -266,7 +261,6 @@
 
 .method private isActiveDeviceAdmin(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -317,8 +311,6 @@
 
 .method private refreshEntry(Ljava/lang/String;Z)Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -373,7 +365,6 @@
 # virtual methods
 .method public canLaunch(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/PackageManagerRepository;->mPackageManager:Landroid/content/pm/PackageManager;
 
@@ -396,7 +387,6 @@
 
 .method public declared-synchronized get(Ljava/lang/String;)Lcom/google/android/finsky/appstate/PackageStateRepository$PackageState;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -505,7 +495,6 @@
 
 .method public getVersionName(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -535,7 +524,6 @@
 
 .method public declared-synchronized invalidate(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -560,7 +548,6 @@
 
 .method public onPackageAdded(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -571,8 +558,6 @@
 
 .method public onPackageAvailabilityChanged([Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     move-object v0, p1
 
@@ -599,7 +584,6 @@
 
 .method public onPackageChanged(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -610,15 +594,12 @@
 
 .method public onPackageFirstLaunch(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageRemoved(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 

@@ -24,9 +24,6 @@
 
 .method public final verify(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/net/ssl/SSLException;

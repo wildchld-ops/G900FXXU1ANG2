@@ -144,7 +144,6 @@
 
 .method public sign(Ljava/nio/ByteBuffer;)V
     .locals 3
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -176,7 +175,6 @@
 
 .method public updateSign(Ljava/nio/ByteBuffer;)V
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -204,7 +202,6 @@
 
 .method public updateVerify(Ljava/nio/ByteBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -220,7 +217,6 @@
 
 .method public verify(Ljava/nio/ByteBuffer;)Z
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

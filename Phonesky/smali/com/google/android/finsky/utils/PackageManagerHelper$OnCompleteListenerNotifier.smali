@@ -56,17 +56,6 @@
 # direct methods
 .method private constructor <init>(Landroid/net/Uri;Ljava/lang/String;JLjava/lang/String;ZZLcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;ZLjava/lang/String;Lcom/google/android/finsky/protos/AndroidAppDelivery$EncryptionParams;Z)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;
-    .param p9    # Z
-    .param p10    # Ljava/lang/String;
-    .param p11    # Lcom/google/android/finsky/protos/AndroidAppDelivery$EncryptionParams;
-    .param p12    # Z
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -107,18 +96,6 @@
 
 .method synthetic constructor <init>(Landroid/net/Uri;Ljava/lang/String;JLjava/lang/String;ZZLcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;ZLjava/lang/String;Lcom/google/android/finsky/protos/AndroidAppDelivery$EncryptionParams;ZLcom/google/android/finsky/utils/PackageManagerHelper$1;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;
-    .param p9    # Z
-    .param p10    # Ljava/lang/String;
-    .param p11    # Lcom/google/android/finsky/protos/AndroidAppDelivery$EncryptionParams;
-    .param p12    # Z
-    .param p13    # Lcom/google/android/finsky/utils/PackageManagerHelper$1;
 
     invoke-direct/range {p0 .. p12}, Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;-><init>(Landroid/net/Uri;Ljava/lang/String;JLjava/lang/String;ZZLcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;ZLjava/lang/String;Lcom/google/android/finsky/protos/AndroidAppDelivery$EncryptionParams;Z)V
 
@@ -127,7 +104,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;->mPackageName:Ljava/lang/String;
 
@@ -136,7 +112,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;)Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;->mPostInstallCallback:Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;
 
@@ -145,7 +120,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;->mHandler:Landroid/os/Handler;
 
@@ -154,7 +128,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;->mShowErrorNotifications:Z
 
@@ -165,7 +138,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Landroid/net/Uri;
     .locals 6
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v2, 0x0
 
@@ -243,7 +215,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -256,7 +227,6 @@
 
 .method protected onPostExecute(Landroid/net/Uri;)V
     .locals 17
-    .param p1    # Landroid/net/Uri;
 
     move-object/from16 v0, p0
 
@@ -699,7 +669,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/Uri;
 

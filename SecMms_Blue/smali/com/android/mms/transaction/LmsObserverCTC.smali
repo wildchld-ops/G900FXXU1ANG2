@@ -40,7 +40,6 @@
 
 .method private static dbSelectionForLmsToken(Landroid/telephony/LmsTokenCTC;)Landroid/util/Pair;
     .locals 4
-    .param p0    # Landroid/telephony/LmsTokenCTC;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,9 +85,6 @@
 
 .method public static onLmsReceived(Landroid/net/Uri;Landroid/telephony/LmsTokenCTC;I)V
     .locals 13
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/telephony/LmsTokenCTC;
-    .param p2    # I
 
     const/4 v4, 0x0
 

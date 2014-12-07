@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -29,8 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -91,9 +88,6 @@
 # virtual methods
 .method public addDescriptionRow(Ljava/lang/String;Lcom/google/android/finsky/protos/Doc$Image;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/ListingSection;->makeDescriptionRow()Lcom/google/android/finsky/layout/ListingDescriptionRow;
 
@@ -176,10 +170,6 @@
 
 .method public populate(Ljava/lang/String;Ljava/lang/String;IZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/ListingSection;->mDescriptionContainer:Landroid/widget/LinearLayout;
 

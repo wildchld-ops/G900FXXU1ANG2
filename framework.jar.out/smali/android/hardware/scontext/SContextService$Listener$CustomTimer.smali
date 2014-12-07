@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/scontext/SContextService$Listener;Landroid/hardware/scontext/SContextService$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/scontext/SContextService$Listener;
-    .param p2    # Landroid/hardware/scontext/SContextService$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/SContextService$Listener$CustomTimer;-><init>(Landroid/hardware/scontext/SContextService$Listener;)V
 

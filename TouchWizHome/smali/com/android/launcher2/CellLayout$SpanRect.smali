@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/CellLayout;II)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/launcher2/CellLayout$SpanRect;->this$0:Lcom/android/launcher2/CellLayout;
 

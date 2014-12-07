@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public blockWifiPopup(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -126,7 +123,6 @@
 
 .method public canAppOffload(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -189,7 +185,6 @@
 
 .method public checkAppForWiFiOffloading(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -260,7 +255,6 @@
 
 .method public checkAppNeedsMoveToFront(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -361,7 +355,6 @@
 
 .method public deleteNetwork(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -697,7 +690,6 @@
 
 .method public isAppInWiFiBlackList(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -760,7 +752,6 @@
 
 .method public isAppinWhiteList(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -996,7 +987,6 @@
 
 .method public isWifiOnlyApp(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1059,7 +1049,6 @@
 
 .method public notifyDialogDisplayed(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1209,8 +1198,6 @@
 
 .method public setAppRunOverWiFiResult(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1271,7 +1258,6 @@
 
 .method public setCurrentTestBaseStationID(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1323,7 +1309,6 @@
 
 .method public setDontuseWifiPressed(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1578,8 +1563,6 @@
 
 .method public tryToTurnOnWifi(Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1659,8 +1642,6 @@
 
 .method public updateBaseStationIDs(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1714,7 +1695,6 @@
 
 .method public updateDialogStatus(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

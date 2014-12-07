@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Landroid/net/Uri;Lcom/samsung/contacts/util/RingtoneRecommendationHelper$Listener;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper$Listener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,8 +50,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->mRecommendUri:Landroid/net/Uri;
 
@@ -63,7 +58,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
 
     iget-object v0, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->mUri:Landroid/net/Uri;
 
@@ -72,7 +66,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
 
     invoke-direct {p0}, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->returnResult()V
 
@@ -81,7 +74,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
 
     iget-object v0, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->mActivity:Landroid/app/Activity;
 
@@ -90,7 +82,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
 
     iget v0, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->mOffset:I
 
@@ -99,7 +90,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
 
     iget-object v0, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -108,8 +98,6 @@
 
 .method static synthetic access$502(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -118,7 +106,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/util/RingtoneRecommendationHelper;)Lcom/samsung/contacts/util/RingtoneRecommendationHelper$Listener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/util/RingtoneRecommendationHelper;
 
     iget-object v0, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper;->mListener:Lcom/samsung/contacts/util/RingtoneRecommendationHelper$Listener;
 
@@ -186,7 +173,6 @@
 
 .method public getRingtoneRecommendation(Lcom/samsung/audio/Smat;)V
     .locals 9
-    .param p1    # Lcom/samsung/audio/Smat;
 
     const/4 v7, 0x0
 
@@ -329,7 +315,6 @@
 
 .method public isRecommendSupported(Lcom/samsung/audio/Smat;)Z
     .locals 13
-    .param p1    # Lcom/samsung/audio/Smat;
 
     const/4 v12, 0x1
 

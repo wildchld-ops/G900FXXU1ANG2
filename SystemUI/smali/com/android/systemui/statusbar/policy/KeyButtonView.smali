@@ -56,8 +56,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -68,9 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/high16 v4, 0x3f800000
 
@@ -262,7 +257,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v10, 0x3f000000
 
@@ -368,7 +362,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v7, 0x20
 
@@ -555,8 +548,6 @@
 
 .method sendEvent(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -569,9 +560,6 @@
 
 .method sendEvent(IIJ)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     and-int/lit16 v1, p2, 0x80
 
@@ -622,7 +610,6 @@
 
 .method public setDrawingAlpha(F)V
     .locals 1
-    .param p1    # F
 
     const/high16 v0, 0x437f0000
 
@@ -639,7 +626,6 @@
 
 .method public setGlowAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mGlowBG:Landroid/graphics/drawable/Drawable;
 
@@ -658,7 +644,6 @@
 
 .method public setGlowScale(F)V
     .locals 9
-    .param p1    # F
 
     const/high16 v7, 0x40000000
 
@@ -751,7 +736,6 @@
 
 .method public setPressed(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x2
 
@@ -918,8 +902,6 @@
 
 .method public setQuiescentAlpha(FZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/KeyButtonView;->mAnimateToQuiescent:Landroid/animation/Animator;
 

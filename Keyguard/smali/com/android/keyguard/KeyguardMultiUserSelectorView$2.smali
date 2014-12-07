@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Landroid/content/pm/UserInfo;Landroid/content/pm/UserInfo;)I
     .locals 2
-    .param p1    # Landroid/content/pm/UserInfo;
-    .param p2    # Landroid/content/pm/UserInfo;
 
     iget v0, p1, Landroid/content/pm/UserInfo;->serialNumber:I
 
@@ -60,8 +58,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/pm/UserInfo;
 

@@ -76,8 +76,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Landroid/accounts/Account;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,8 +110,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->mIsCancelingPreorder:Z
 
@@ -122,10 +118,6 @@
 
 .method private configureActionButton(Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;ILcom/google/android/finsky/library/Libraries;)V
     .locals 9
-    .param p1    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p2    # Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/library/Libraries;
 
     const/4 v3, 0x0
 
@@ -252,9 +244,6 @@
 
 .method private configureCancelButton(Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)V
     .locals 3
-    .param p1    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/accounts/Account;
 
     const/4 v0, 0x0
 
@@ -286,7 +275,6 @@
 
 .method private getDiscountOfferNote(Lcom/google/android/finsky/library/Libraries;)Ljava/lang/CharSequence;
     .locals 10
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
 
     iget-object v7, p0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->mAccount:Landroid/accounts/Account;
 
@@ -362,8 +350,6 @@
 
 .method private static getListPriceNoteResourceId(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/Common$Offer;)I
     .locals 3
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/protos/Common$Offer;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/Document;->getDocumentType()I
 
@@ -562,9 +548,6 @@
 # virtual methods
 .method public varargs bind(Lcom/google/android/finsky/api/model/Document;Z[Landroid/view/View;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Z
-    .param p3    # [Landroid/view/View;
 
     iput-object p3, p0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->mLayouts:[Landroid/view/View;
 
@@ -629,9 +612,6 @@
 
 .method protected configureLaunchButton(Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)V
     .locals 4
-    .param p1    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/accounts/Account;
 
     const/4 v0, 0x0
 
@@ -668,11 +648,6 @@
 
 .method protected displayActionButtonsIfNecessary(Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;)Z
     .locals 17
-    .param p1    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p2    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p3    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p4    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p5    # Lcom/google/android/play/layout/PlayActionButton;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -905,11 +880,6 @@
 
 .method protected displayActionButtonsIfNecessaryNew(Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;)Z
     .locals 12
-    .param p1    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p2    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p3    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p4    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p5    # Lcom/google/android/play/layout/PlayActionButton;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -1069,7 +1039,6 @@
 
 .method protected findViewById(I)Landroid/view/View;
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->mLayouts:[Landroid/view/View;
 
@@ -1107,8 +1076,6 @@
 
 .method protected getBuyButtonLoggingElementType(ZI)I
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     const/16 v0, 0xdd
 
@@ -1159,8 +1126,6 @@
 
 .method protected final getBuyButtonString(ZI)Ljava/lang/String;
     .locals 8
-    .param p1    # Z
-    .param p2    # I
 
     const v7, 0x7f09014f
 
@@ -1281,8 +1246,6 @@
 
 .method protected getCancelPreorderClickListener(Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/accounts/Account;
 
     new-instance v0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder$2;
 
@@ -1293,8 +1256,6 @@
 
 .method protected getDownloadClickListener(Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/accounts/Account;
 
     const/4 v0, 0x0
 
@@ -1303,14 +1264,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/fragments/PageFragment;ZLjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/fragments/PageFragment;
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->mContext:Landroid/content/Context;
 
@@ -1337,16 +1290,12 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -1430,7 +1379,6 @@
 
 .method public setDynamicFeaturesVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -1449,7 +1397,6 @@
 
 .method protected setupActionButtons(Z)V
     .locals 8
-    .param p1    # Z
 
     const/16 v7, 0x8
 
@@ -1542,10 +1489,6 @@
 
 .method protected setupBuyButtons(Landroid/accounts/Account;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Z)V
     .locals 11
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p3    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -1630,7 +1573,6 @@
 
 .method protected setupCreator(Lcom/google/android/finsky/layout/DecoratedTextView;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/DecoratedTextView;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -1869,7 +1811,6 @@
 
 .method protected showDynamicStatus(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;->mDynamicSection:Landroid/view/ViewGroup;
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v4, p0, Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost$1;->this$1:Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;
 
@@ -122,14 +121,12 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method

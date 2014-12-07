@@ -38,7 +38,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/MasterClearModemReset;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MasterClearModemReset;
 
     invoke-direct {p0}, Lcom/android/settings/MasterClearModemReset;->sendMasterClearIntent()V
 
@@ -177,7 +176,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -224,8 +222,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v4, 0x0
 

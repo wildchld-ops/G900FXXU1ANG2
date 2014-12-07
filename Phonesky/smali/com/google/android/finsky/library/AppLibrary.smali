@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/library/LibraryHasher;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/LibraryHasher;
 
     const/4 v0, 0x3
 
@@ -55,7 +54,6 @@
 # virtual methods
 .method public add(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/library/LibraryEntry;->getDocType()I
 
@@ -93,8 +91,6 @@
 
 .method public dumpState(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "FinskyLibrary"
 
@@ -217,7 +213,6 @@
 
 .method public getAppEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibraryAppEntry;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -246,7 +241,6 @@
 
 .method public getInAppEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibraryInAppEntry;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/library/LibraryEntry;
 
@@ -275,7 +269,6 @@
 
 .method getInAppPurchasesForPackage(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -336,7 +329,6 @@
 
 .method public getSubscriptionEntry(Ljava/lang/String;)Lcom/google/android/finsky/library/LibraryInAppSubscriptionEntry;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/library/LibraryEntry;
 
@@ -365,7 +357,6 @@
 
 .method getSubscriptionPurchasesForPackage(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -473,7 +464,6 @@
 
 .method public remove(Lcom/google/android/finsky/library/LibraryEntry;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/LibraryEntry;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/library/LibraryEntry;->getDocType()I
 

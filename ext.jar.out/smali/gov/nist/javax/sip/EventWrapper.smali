@@ -12,8 +12,6 @@
 # direct methods
 .method constructor <init>(Ljava/util/EventObject;Lgov/nist/javax/sip/stack/SIPTransaction;)V
     .locals 0
-    .param p1    # Ljava/util/EventObject;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

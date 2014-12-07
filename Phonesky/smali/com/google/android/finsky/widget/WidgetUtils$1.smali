@@ -36,8 +36,6 @@
 # virtual methods
 .method public onMutationsApplied(Lcom/google/android/finsky/library/AccountLibrary;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/google/android/finsky/widget/WidgetUtils$1;->val$context:Landroid/content/Context;
 

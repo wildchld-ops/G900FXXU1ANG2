@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$State;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher$State;
 

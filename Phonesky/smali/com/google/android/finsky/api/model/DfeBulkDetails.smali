@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/util/List;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -178,7 +177,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;
 
     iput-object p1, p0, Lcom/google/android/finsky/api/model/DfeBulkDetails;->mBulkDetailsResponse:Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;
 
@@ -189,7 +187,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;
 

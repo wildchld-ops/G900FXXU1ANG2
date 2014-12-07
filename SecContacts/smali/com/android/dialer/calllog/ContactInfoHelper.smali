@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,9 +24,6 @@
 
 .method private formatPhoneNumber(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -67,7 +62,6 @@
 
 .method private lookupContactFromUri(Landroid/net/Uri;)Lcom/android/dialer/calllog/ContactInfo;
     .locals 12
-    .param p1    # Landroid/net/Uri;
 
     const/4 v11, 0x0
 
@@ -236,8 +230,6 @@
 
 .method private queryContactInfoForPhoneNumber(Ljava/lang/String;Ljava/lang/String;)Lcom/android/dialer/calllog/ContactInfo;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -369,7 +361,6 @@
 
 .method private queryContactInfoForSipAddress(Ljava/lang/String;)Lcom/android/dialer/calllog/ContactInfo;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/samsung/dialer/calllog/LogsDBProvider;->PHOTE_LOOKUP_WITH_PROFILE:Landroid/net/Uri;
 
@@ -404,8 +395,6 @@
 # virtual methods
 .method public lookupNumber(Ljava/lang/String;Ljava/lang/String;)Lcom/android/dialer/calllog/ContactInfo;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->isUriNumber(Ljava/lang/String;)Z
 

@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/util/ActionFilter;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/util/ActionFilter;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

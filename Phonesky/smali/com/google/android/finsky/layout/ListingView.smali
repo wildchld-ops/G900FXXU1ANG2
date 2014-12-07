@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -31,8 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/SeparatorLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -47,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/ListingView;)Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ListingView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ListingView;->mParentNode:Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -56,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/ListingView;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ListingView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ListingView;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -65,9 +60,6 @@
 
 .method private addEmailLinkSection(ILjava/lang/String;I)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -136,7 +128,6 @@
 
 .method private addFlagContentSection(Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     const/4 v6, 0x0
 
@@ -203,10 +194,6 @@
 
 .method private addWebLinkSection(ILjava/lang/String;II)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -261,8 +248,6 @@
 
 .method private setupHeader(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -285,10 +270,6 @@
 # virtual methods
 .method public bindFlagContent(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/navigationmanager/NavigationManager;ZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Z
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/ListingView;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -354,8 +335,6 @@
 
 .method public bindLinks(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 22
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/layout/ListingView;->getContext()Landroid/content/Context;
 
@@ -754,8 +733,6 @@
 
 .method public bindProductDetails(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getProductDetails()Lcom/google/android/finsky/protos/DocDetails$ProductDetails;
 
@@ -852,8 +829,6 @@
 
 .method public bindRentalTerms(Lcom/google/android/finsky/api/model/Document;I)V
     .locals 13
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
 
     const/4 v8, 0x0
 

@@ -24,11 +24,6 @@
 
 .method private static addExtensionsForConfig(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;[I[ILjava/util/Set;)V
     .locals 10
-    .param p0    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # [I
-    .param p4    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

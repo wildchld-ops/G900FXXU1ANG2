@@ -34,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/group/SubGroupDetailActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/SubGroupDetailActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/group/SubGroupDetailActivity;->mInteractionMode:Z
 
@@ -43,7 +42,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/SubGroupDetailActivity;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/SubGroupDetailActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/SubGroupDetailActivity;->mIntent:Landroid/content/Intent;
 
@@ -54,9 +52,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, -0x1
 
@@ -75,7 +70,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -158,7 +152,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -186,7 +179,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "GroupInfo"
 

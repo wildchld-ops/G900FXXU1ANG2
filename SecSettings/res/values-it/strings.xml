@@ -1385,7 +1385,7 @@ Potete inoltre visualizzare o nascondere il cursore del multischermo tenendo pre
     <string name="usb_tethering_errored_subtext">Errore tethering USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">"Impossibile disattivare il tethering USB durante l'utilizzo di SideSync. Se disattivate il tethering USB verrà disattivato anche SideSync."</string>
     <string name="usb_tethering_off_during_sidesync_popup">"Impossibile attivare il tethering USB durante l'utilizzo di SideSync. Se attivate il tethering USB verrà disattivato SideSync."</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Tethering Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Tethering Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Condivisione connessione dati in corso…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Connessione Internet del dispositivo condivisa con 1 dispositivo</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Connessione Internet del dispositivo condivisa con %d dispositivi</string>

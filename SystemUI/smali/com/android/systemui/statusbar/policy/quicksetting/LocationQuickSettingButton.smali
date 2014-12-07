@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -106,7 +105,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->readLocationMode()I
 
@@ -117,8 +115,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;I)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->isGpsOn(I)Z
 
@@ -129,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->mGpsActivated:Z
 
@@ -138,8 +133,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->mGpsActivated:Z
 
@@ -148,7 +141,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->mDisabledByUserRestrictions:Z
 
@@ -157,8 +149,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->mDisabledByUserRestrictions:Z
 
@@ -167,7 +157,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->isUserLocationRestricted()Z
 
@@ -178,7 +167,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->mIsPrefChecked:Z
 
@@ -187,8 +175,6 @@
 
 .method static synthetic access$502(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->mIsPrefChecked:Z
 
@@ -197,7 +183,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -206,8 +191,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/LocationQuickSettingButton;->setGpsMode(Z)V
 
@@ -224,7 +207,6 @@
 
 .method private isGpsOn(I)Z
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -352,7 +334,6 @@
 
 .method private setGpsMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, -0x2
 
@@ -413,7 +394,6 @@
 
 .method private showConfirmPopup(Z)V
     .locals 13
-    .param p1    # Z
 
     const/4 v12, 0x0
 
@@ -779,7 +759,6 @@
 
 .method public onClick(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x3
 

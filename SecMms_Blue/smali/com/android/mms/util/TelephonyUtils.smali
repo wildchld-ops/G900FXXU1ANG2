@@ -84,7 +84,6 @@
 
 .method private static Iso8859_1ToUTF8([B)Ljava/lang/String;
     .locals 3
-    .param p0    # [B
 
     :try_start_0
     new-instance v1, Ljava/lang/String;
@@ -114,9 +113,6 @@
 
 .method public static calculateMaxTextLength(Ljava/lang/CharSequence;II)I
     .locals 9
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -278,8 +274,6 @@
 
 .method public static changeApn(Landroid/content/Context;I)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -405,8 +399,6 @@
 
 .method public static checkCSAvailability(Landroid/content/Context;Z)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const v7, 0x7f0c0403
 
@@ -791,8 +783,6 @@
 
 .method public static checkCSAvailability_KT(Landroid/content/Context;Z)Z
     .locals 23
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2155,8 +2145,6 @@
 
 .method public static checkCSAvailability_KorOpen(Landroid/content/Context;Z)Z
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2726,8 +2714,6 @@
 
 .method public static checkCSAvailability_LGU(Landroid/content/Context;Z)Z
     .locals 29
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -4732,8 +4718,6 @@
 
 .method public static checkCSAvailability_SKT(Landroid/content/Context;Z)Z
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -5808,8 +5792,6 @@
 
 .method public static checkPSAvailability(Landroid/content/Context;Z)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -6168,8 +6150,6 @@
 
 .method public static checkPSAvailability_KT(Landroid/content/Context;Z)Z
     .locals 26
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -7329,8 +7309,6 @@
 
 .method public static checkPSAvailability_KorOpen(Landroid/content/Context;Z)Z
     .locals 27
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -7962,8 +7940,6 @@
 
 .method public static checkPSAvailability_LGU(Landroid/content/Context;Z)Z
     .locals 30
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -9762,8 +9738,6 @@
 
 .method public static checkPSAvailability_SKT(Landroid/content/Context;Z)Z
     .locals 26
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -10808,7 +10782,6 @@
 
 .method public static checkPreferredApn(Landroid/content/Context;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -10991,8 +10964,6 @@
 
 .method public static connectSpecificTidService(Landroid/content/Context;Lcom/android/mms/ui/MessageItem;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/high16 v10, 0x10000000
 
@@ -11185,7 +11156,6 @@
 
 .method public static final convertCharaterforKOR(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const-string v3, "Mms/TelephonyUtils"
 
@@ -11351,8 +11321,6 @@
 
 .method public static deleteExpiredMMS(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -11376,8 +11344,6 @@
 
 .method private static getApnId(Landroid/content/Context;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -11529,7 +11495,6 @@
 
 .method public static getApnName(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -11585,7 +11550,6 @@
 
 .method public static getByteSize(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -11631,8 +11595,6 @@
 
 .method public static getByteSizeKsc5601(Ljava/lang/String;I)I
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -11686,7 +11648,6 @@
 
 .method public static getByteSizeUtf8(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -11751,8 +11712,6 @@
 
 .method public static getBytesByCharSet(Ljava/lang/String;Ljava/lang/String;)[B
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0, p1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
@@ -11798,7 +11757,6 @@
 
 .method public static getCurrentApn(Landroid/content/Context;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -11916,7 +11874,6 @@
 
 .method public static getDataNetworkEnabled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -11977,7 +11934,6 @@
 
 .method public static getDataRoamingEnabled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -12036,7 +11992,6 @@
 
 .method public static getFdnList(Landroid/content/Context;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -12049,8 +12004,6 @@
 
 .method public static getFdnList(Landroid/content/Context;I)[Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -12205,7 +12158,6 @@
 
 .method public static getFileNameMaxLength(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -12287,7 +12239,6 @@
 
 .method private static getFileNameMaxLengthForContentsLocation(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0x64
 
@@ -12429,7 +12380,6 @@
 
 .method private static getFileNameMaxLengthForFileSystem(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xff
 
@@ -12646,7 +12596,6 @@
 
 .method private static getHandsetInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "1"
 
@@ -12727,8 +12676,6 @@
 
 .method public static getMessageCalculateParam(Ljava/lang/CharSequence;Lcom/android/mms/data/ContactList;)[I
     .locals 12
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const/4 v11, 0x4
 
@@ -13049,7 +12996,6 @@
 
 .method public static getMessageFromSos(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/16 v8, 0x1b
 
@@ -13133,8 +13079,6 @@
 
 .method public static getMessageIdbyUri(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x1
 
@@ -13244,7 +13188,6 @@
 
 .method public static getMidByContentLocation(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Mms/TelephonyUtils"
 
@@ -13301,8 +13244,6 @@
 
 .method public static getMultiSimCardCapability(II)I
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -13468,7 +13409,6 @@
 
 .method public static getPhoneServiceState(Landroid/content/Context;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -13574,7 +13514,6 @@
 
 .method public static getPhysicalSimSlot(I)I
     .locals 4
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -13619,7 +13558,6 @@
 
 .method public static getSmsc(Landroid/content/SharedPreferences;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v2, 0x0
 
@@ -13684,7 +13622,6 @@
 
 .method public static getStringByteSize(Ljava/lang/String;)[I
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x4
 
@@ -13926,7 +13863,6 @@
 
 .method private static hasOnlyPhoneDigit(Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -13994,7 +13930,6 @@
 
 .method public static isAirplaneModeOn(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -14018,7 +13953,6 @@
 
 .method public static isAvaliableNumber(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -14108,7 +14042,6 @@
 
 .method public static isCdmaRoamingActive(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -14293,7 +14226,6 @@
 
 .method public static isDualNumber(Lcom/android/mms/data/ContactList;)Z
     .locals 7
-    .param p0    # Lcom/android/mms/data/ContactList;
 
     const/4 v4, 0x1
 
@@ -14346,8 +14278,6 @@
 
 .method public static isDuplicateMMSbyMId(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -14464,7 +14394,6 @@
 
 .method public static isEnableLinkUrlService(Lcom/android/mms/ui/MessageItem;)Z
     .locals 3
-    .param p0    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v0, 0x0
 
@@ -14502,7 +14431,6 @@
 
 .method public static isEnableSpecificTidService(Lcom/android/mms/ui/MessageItem;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageItem;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/MessageItem;->getTeleserviceId()I
 
@@ -14549,7 +14477,6 @@
 
 .method public static isFdnEnabled(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -14629,7 +14556,6 @@
 
 .method public static isGSMOnly(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -14854,7 +14780,6 @@
 
 .method public static isImsRegistered(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -15048,7 +14973,6 @@
 
 .method public static isInternationalNumber(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -15636,7 +15560,6 @@
 
 .method public static isNetworkRoaming(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "phone"
 
@@ -15663,7 +15586,6 @@
 
 .method public static isNotKorUsim(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -15972,7 +15894,6 @@
 
 .method public static isRoaming(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v0, ""
 
@@ -16037,7 +15958,6 @@
 
 .method public static isSKTSIM(Landroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const v8, 0x7f0c02c9
 
@@ -16211,7 +16131,6 @@
 
 .method public static isSimReady(I)Z
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Landroid/telephony/MultiSimTelephonyManager;->getDefault(I)Landroid/telephony/MultiSimTelephonyManager;
 
@@ -16248,7 +16167,6 @@
 
 .method public static isSosMessage(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0x1b
 
@@ -16311,7 +16229,6 @@
 
 .method public static isTestSimCard(Landroid/content/Context;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x1
 
@@ -16462,8 +16379,6 @@
 
 .method public static isVirginNetworkSpecialAddress(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "phone"
 
@@ -16506,7 +16421,6 @@
 
 .method public static isVoiceCallAvailabe(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -16523,8 +16437,6 @@
 
 .method public static substringByByteSize(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -16562,8 +16474,6 @@
 
 .method public static substringByByteSizeKsc5601(Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -16682,8 +16592,6 @@
 
 .method public static substringByByteSizeUtf8(Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -16834,7 +16742,6 @@
 
 .method private static toIso8859_1String([B)Ljava/lang/String;
     .locals 3
-    .param p0    # [B
 
     :try_start_0
     new-instance v1, Ljava/lang/String;

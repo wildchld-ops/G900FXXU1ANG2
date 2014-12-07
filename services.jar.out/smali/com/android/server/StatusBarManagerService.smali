@@ -313,8 +313,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/WindowManagerService;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/WindowManagerService;
 
     const/4 v4, 0x0
 
@@ -435,11 +433,6 @@
 
 .method static synthetic access$000(Lcom/android/server/StatusBarManagerService;IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/StatusBarManagerService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/StatusBarManagerService;->disableInternal(IILandroid/os/IBinder;Ljava/lang/String;)V
 
@@ -448,10 +441,6 @@
 
 .method static synthetic access$200(Lcom/android/server/StatusBarManagerService;ILandroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 0
-    .param p0    # Lcom/android/server/StatusBarManagerService;
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/service/notification/StatusBarNotification;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/StatusBarManagerService;->sendNotification(ILandroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
 
@@ -460,10 +449,6 @@
 
 .method private disableInternal(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -490,10 +475,6 @@
 
 .method private disableLocked(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/android/server/StatusBarManagerService;->manageDisableListLocked(IILandroid/os/IBinder;Ljava/lang/String;)V
 
@@ -607,10 +588,6 @@
 
 .method private notificationMatches(Landroid/service/notification/StatusBarNotification;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Landroid/service/notification/StatusBarNotification;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getId()I
 
@@ -655,9 +632,6 @@
 
 .method private sendNotification(ILandroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/service/notification/StatusBarNotification;
 
     const/4 v5, 0x0
 
@@ -1044,8 +1018,6 @@
 
 .method private updateUiVisibilityLocked(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/StatusBarManagerService;->mSystemUiVisibility:I
 
@@ -1069,7 +1041,6 @@
 # virtual methods
 .method public addNotification(Landroid/service/notification/StatusBarNotification;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     iget-object v2, p0, Lcom/android/server/StatusBarManagerService;->mNotifications:Ljava/util/HashMap;
 
@@ -1152,7 +1123,6 @@
 
 .method public blockRecentWindow(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBarService()V
 
@@ -1251,9 +1221,6 @@
 
 .method public disable(ILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/server/StatusBarManagerService;->mCurrentUserId:I
 
@@ -1264,10 +1231,6 @@
 
 .method public disableAsUser(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/StatusBarManagerService;->disableInternal(IILandroid/os/IBinder;Ljava/lang/String;)V
 
@@ -1276,9 +1239,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/StatusBarManagerService;->mContext:Landroid/content/Context;
 
@@ -1869,7 +1829,6 @@
 
 .method gatherDisableActionsLocked(I)I
     .locals 8
-    .param p1    # I
 
     iget-object v6, p0, Lcom/android/server/StatusBarManagerService;->mDisableRecords:Ljava/util/ArrayList;
 
@@ -2060,7 +2019,6 @@
 
 .method public getAllNotificationsForBridge(Z)Ljava/util/List;
     .locals 10
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -2394,7 +2352,6 @@
 
 .method isNotificationAllowed(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -2442,8 +2399,6 @@
 
 .method isNotificationAllowed(Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     move-object v0, p2
 
@@ -2514,10 +2469,6 @@
 
 .method manageDisableListLocked(IILandroid/os/IBinder;Ljava/lang/String;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -2887,8 +2838,6 @@
 
 .method public onHardKeyboardStatusChange(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mHandler:Landroid/os/Handler;
 
@@ -2903,9 +2852,6 @@
 
 .method public onNotificationClear(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBarService()V
 
@@ -2918,9 +2864,6 @@
 
 .method public onNotificationClick(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBarService()V
 
@@ -2933,12 +2876,6 @@
 
 .method public onNotificationError(Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBarService()V
 
@@ -2999,9 +2936,6 @@
 
 .method public registerStatusBar(Lcom/android/internal/statusbar/IStatusBar;Lcom/android/internal/statusbar/StatusBarIconList;Ljava/util/List;Ljava/util/List;[ILjava/util/List;)V
     .locals 8
-    .param p1    # Lcom/android/internal/statusbar/IStatusBar;
-    .param p2    # Lcom/android/internal/statusbar/StatusBarIconList;
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3303,7 +3237,6 @@
 
 .method public removeIcon(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -3390,7 +3323,6 @@
 
 .method public removeNotification(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/StatusBarManagerService;->mNotifications:Ljava/util/HashMap;
 
@@ -3477,7 +3409,6 @@
 
 .method public setCallBackground(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -3504,7 +3435,6 @@
 
 .method public setCurrentUser(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/StatusBarManagerService;->mCurrentUserId:I
 
@@ -3513,7 +3443,6 @@
 
 .method public setHardKeyboardEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mHandler:Landroid/os/Handler;
 
@@ -3528,11 +3457,6 @@
 
 .method public setIcon(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -3635,8 +3559,6 @@
 
 .method public setIconVisibility(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -3739,9 +3661,6 @@
 
 .method public setImeWindowStatus(Landroid/os/IBinder;II)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -3780,7 +3699,6 @@
 
 .method public setMaxBrightness(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -3827,7 +3745,6 @@
 
 .method public setMultiWindowBg(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
@@ -3898,7 +3815,6 @@
 
 .method public setNotificationCallbacks(Lcom/android/server/StatusBarManagerService$NotificationCallbacks;)V
     .locals 0
-    .param p1    # Lcom/android/server/StatusBarManagerService$NotificationCallbacks;
 
     iput-object p1, p0, Lcom/android/server/StatusBarManagerService;->mNotificationCallbacks:Lcom/android/server/StatusBarManagerService$NotificationCallbacks;
 
@@ -3907,7 +3823,6 @@
 
 .method public setPanelExpandState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/StatusBarManagerService;->mPanelExpandState:Z
 
@@ -3916,7 +3831,6 @@
 
 .method public setSemiTransparentMode(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
@@ -3994,8 +3908,6 @@
 
 .method public setSystemUiVisibility(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBarService()V
 
@@ -4034,7 +3946,6 @@
 
 .method public setTransGradationMode(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
@@ -4112,15 +4023,12 @@
 
 .method public setTransGradationModeColor(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setUseWindowTrans(Z)V
     .locals 1
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/server/StatusBarManagerService;->bUseWindowTransGradation:Z
 
@@ -4140,7 +4048,6 @@
 
 .method public setWindowSemiTransparentMode(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
@@ -4211,8 +4118,6 @@
 
 .method public setWindowState(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
@@ -4237,7 +4142,6 @@
 
 .method public setWindowTransGradationMode(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
 
@@ -4391,7 +4295,6 @@
 
 .method public topAppWindowChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBar()V
 
@@ -4426,9 +4329,6 @@
 
 .method public triggerNotificationClick(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/server/StatusBarManagerService;->enforceStatusBarService()V
 
@@ -4496,8 +4396,6 @@
 
 .method public updateNotification(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     iget-object v1, p0, Lcom/android/server/StatusBarManagerService;->mNotifications:Ljava/util/HashMap;
 

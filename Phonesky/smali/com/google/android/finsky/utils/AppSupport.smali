@@ -15,7 +15,6 @@
 # direct methods
 .method public static showRefundFailureDialog(Landroid/support/v4/app/FragmentManager;)V
     .locals 4
-    .param p0    # Landroid/support/v4/app/FragmentManager;
 
     new-instance v1, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
 
@@ -44,11 +43,6 @@
 
 .method public static showUninstallConfirmationDialog(Ljava/lang/String;Landroid/support/v4/app/Fragment;ZZZ)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-virtual {p1}, Landroid/support/v4/app/Fragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -137,9 +131,6 @@
 
 .method public static silentRefund(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/utils/AppSupport$RefundListener;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/utils/AppSupport$RefundListener;
 
     invoke-interface {p2}, Lcom/google/android/finsky/utils/AppSupport$RefundListener;->onRefundStart()V
 

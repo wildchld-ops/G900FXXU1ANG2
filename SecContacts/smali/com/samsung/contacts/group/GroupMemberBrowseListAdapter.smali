@@ -223,7 +223,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -234,8 +233,6 @@
 # virtual methods
 .method protected bindName(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v1, 0x1
 
@@ -299,9 +296,6 @@
 
 .method protected bindPhoto(Lcom/android/contacts/common/list/ContactListItemView;ILandroid/database/Cursor;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     iget v1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListAdapter;->mMode:I
 
@@ -361,9 +355,6 @@
 
 .method protected bindSectionHeaderAndDivider(Lcom/android/contacts/common/list/ContactListItemView;ILandroid/database/Cursor;)V
     .locals 10
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     const v9, 0x7f0e0297
 
@@ -537,10 +528,6 @@
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v9, 0x0
 
@@ -719,8 +706,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 7
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     const/4 v6, 0x1
 
@@ -893,8 +878,6 @@
 
 .method protected configureProjection(Landroid/content/CursorLoader;I)V
     .locals 5
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # I
 
     const/4 v4, 0x7
 
@@ -981,9 +964,6 @@
 
 .method protected configureSelection(Landroid/content/CursorLoader;JI)V
     .locals 8
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # I
 
     const/4 v7, 0x2
 
@@ -1231,9 +1211,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;JI)V
     .locals 4
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # I
 
     const-wide/16 v2, 0x0
 
@@ -1334,7 +1311,6 @@
 
 .method protected createFilterUriBuilder(I)Landroid/net/Uri$Builder;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListAdapter;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -1374,7 +1350,6 @@
 
 .method public isDefaultIce(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1431,8 +1406,6 @@
 
 .method public setEmergencyContactsInfo(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListAdapter;->mFromEmergencyDialer:Z
 
@@ -1443,7 +1416,6 @@
 
 .method public setGroupInfo(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListAdapter;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -1452,7 +1424,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListAdapter;->mMode:I
 
@@ -1461,7 +1432,6 @@
 
 .method public setMultiSelectionMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListAdapter;->mIsMultiSelectionMode:Z
 

@@ -300,7 +300,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -343,7 +342,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/data/Contact$ContactsCache;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact$ContactsCache;
 
     invoke-direct {p0}, Lcom/android/mms/data/Contact$ContactsCache;->checkContactProviderAvailible()Z
 
@@ -354,9 +352,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/data/Contact$ContactsCache;Lcom/android/mms/data/Contact;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact$ContactsCache;
-    .param p1    # Lcom/android/mms/data/Contact;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/data/Contact$ContactsCache;->updateContact(Lcom/android/mms/data/Contact;Z)V
 
@@ -482,8 +477,6 @@
 
 .method private contactChanged(Lcom/android/mms/data/Contact;Lcom/android/mms/data/Contact;)Z
     .locals 12
-    .param p1    # Lcom/android/mms/data/Contact;
-    .param p2    # Lcom/android/mms/data/Contact;
 
     const/4 v7, 0x0
 
@@ -879,7 +872,6 @@
 
 .method private static containsAlpha(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -930,8 +922,6 @@
 
 .method private fillPhoneTypeContact(Lcom/android/mms/data/Contact;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Contact;
-    .param p2    # Landroid/database/Cursor;
 
     monitor-enter p1
 
@@ -1083,8 +1073,6 @@
 
 .method private findBestMatch(Landroid/database/Cursor;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1209,7 +1197,6 @@
 
 .method private getContactInfoForEmailAddress(Ljava/lang/String;)Lcom/android/mms/data/Contact;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1384,7 +1371,6 @@
 
 .method private getContactInfoForPhoneNumber(Ljava/lang/String;)Lcom/android/mms/data/Contact;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x3b
 
@@ -2097,7 +2083,6 @@
 
 .method private getContactMatchCliDigitNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getContactMatchCliDigit()I
 
@@ -2134,7 +2119,6 @@
 
 .method private getGroupAlert(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 12
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const/4 v9, 0x0
 
@@ -2315,7 +2299,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/mms/data/Contact$ContactsCache;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/mms/data/Contact$ContactsCache;
 
@@ -2351,8 +2334,6 @@
 
 .method private getRingtoneFromContactCursor(Lcom/android/mms/data/Contact;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v1, 0xb
 
@@ -2388,7 +2369,6 @@
 
 .method private getStatusIconResourceId(I)I
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -2407,7 +2387,6 @@
 
 .method private isAlphaNumber(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -2453,8 +2432,6 @@
 
 .method private key(Ljava/lang/String;Ljava/nio/CharBuffer;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/nio/CharBuffer;
 
     invoke-virtual {p2}, Ljava/nio/Buffer;->clear()Ljava/nio/Buffer;
 
@@ -2504,7 +2481,6 @@
 
 .method private loadAvatarData(Lcom/android/mms/data/Contact;)[B
     .locals 9
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const/4 v2, 0x0
 
@@ -2708,8 +2684,6 @@
 
 .method private updateContact(Lcom/android/mms/data/Contact;Z)V
     .locals 7
-    .param p1    # Lcom/android/mms/data/Contact;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -3183,7 +3157,6 @@
 
 .method public get(Ljava/lang/String;)Lcom/android/mms/data/Contact;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3386,8 +3359,6 @@
 
 .method public get(Ljava/lang/String;Z)Lcom/android/mms/data/Contact;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3586,7 +3557,6 @@
 
 .method public getContactInfo(J)Lcom/android/mms/data/Contact;
     .locals 3
-    .param p1    # J
 
     new-instance v0, Lcom/android/mms/data/Contact;
 
@@ -3617,8 +3587,6 @@
 
 .method public getContactInfo(JLjava/lang/String;)Lcom/android/mms/data/Contact;
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/mms/data/Contact;
 
@@ -3649,7 +3617,6 @@
 
 .method public getContactInfo(Ljava/lang/String;)Lcom/android/mms/data/Contact;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Lcom/android/mms/data/Contact;
 
@@ -3821,7 +3788,6 @@
 
 .method public popTask(Lcom/android/mms/data/Contact;)Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;
     .locals 1
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact$ContactsCache;->mTaskQueue:Lcom/android/mms/data/Contact$ContactsCache$TaskStack;
 
@@ -3834,7 +3800,6 @@
 
 .method public pushTask(Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;)V
     .locals 1
-    .param p1    # Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact$ContactsCache;->mTaskQueue:Lcom/android/mms/data/Contact$ContactsCache$TaskStack;
 
@@ -3845,7 +3810,6 @@
 
 .method public queryContactInfoById(J)Lcom/android/mms/data/Contact;
     .locals 8
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -4103,7 +4067,6 @@
 
 .method public updateContactList(Lcom/android/mms/data/ContactList;)V
     .locals 4
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const-string v2, "Mms/ContactsCache"
 

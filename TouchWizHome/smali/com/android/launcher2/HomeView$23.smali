@@ -37,7 +37,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     const-string v2, "Launcher.HomeView"
 
@@ -88,7 +87,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     invoke-virtual {p1}, Landroid/animation/Animator;->removeAllListeners()V
 

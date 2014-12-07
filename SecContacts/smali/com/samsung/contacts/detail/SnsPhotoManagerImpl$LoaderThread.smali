@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/detail/SnsPhotoManagerImpl;Landroid/content/ContentResolver;)V
     .locals 1
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/SnsPhotoManagerImpl$LoaderThread;->this$0:Lcom/samsung/contacts/detail/SnsPhotoManagerImpl;
 
@@ -538,7 +537,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

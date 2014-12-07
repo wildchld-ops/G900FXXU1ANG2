@@ -66,7 +66,6 @@
 
 .method public static showLimitedPurchaseUI(Landroid/app/Activity;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -87,7 +86,6 @@
 
 .method public static showLimitedUserUI(Landroid/app/Activity;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -110,8 +108,6 @@
 # virtual methods
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/AccessRestrictedActivity;->finish()V
 
@@ -120,8 +116,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/AccessRestrictedActivity;->finish()V
 

@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -83,8 +82,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -95,9 +92,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -190,8 +184,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/CellLayoutHotseat;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/CellLayoutHotseat;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CellLayoutHotseat;->mReorderPosted:Z
 
@@ -200,8 +192,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/CellLayoutHotseat;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/CellLayoutHotseat;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CellLayoutHotseat;->mRemoveEmptySpacePosted:Z
 
@@ -327,9 +317,6 @@
 
 .method private setupAllAppsIcon(Landroid/content/Context;Lcom/android/launcher2/AllappsIcon;Z)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/AllappsIcon;
-    .param p3    # Z
 
     const/4 v7, 0x1
 
@@ -513,7 +500,6 @@
 
 .method public addItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayout;->getPageItemCount()I
 
@@ -579,7 +565,6 @@
 
 .method public beginBind(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -608,8 +593,6 @@
 
 .method cellToPosition(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayoutHotseat;->getCellCount()I
 
@@ -696,7 +679,6 @@
 
 .method getCellXFromPos(I)I
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/CellLayoutHotseat;->mIsLandscape:Z
 
@@ -710,7 +692,6 @@
 
 .method getCellYFromPos(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayoutHotseat;->getCellCount()I
 
@@ -751,8 +732,6 @@
 
 .method public inflateAllAppsIcon(Lcom/android/launcher2/Hotseat;Z)Lcom/android/launcher2/AllappsIcon;
     .locals 8
-    .param p1    # Lcom/android/launcher2/Hotseat;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -1083,7 +1062,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 15
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/DragEvent;->getLocalState()Ljava/lang/Object;
 
@@ -1477,7 +1455,6 @@
 
 .method public onFailedDrop(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v0, 0x0
 
@@ -1519,7 +1496,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1670,8 +1646,6 @@
 
 .method protected onMeasure(II)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -1831,7 +1805,6 @@
 
 .method public onViewAddedToLayout(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/CellLayoutNoGap;->onViewAddedToLayout(Landroid/view/View;)V
 
@@ -1942,7 +1915,6 @@
 
 .method public realTimeReorder(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayoutNoGap;->hasAnimatingChild()Z
 
@@ -2117,7 +2089,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/CellLayoutNoGap;->removeItem(Lcom/android/launcher2/BaseItem;)Z
 
@@ -2137,7 +2108,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/CellLayout;->removeView(Landroid/view/View;)V
 
@@ -2153,9 +2123,6 @@
 
 .method public setAllAppsIconDimState(ZZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayoutHotseat;->mAllappsIcon:Lcom/android/launcher2/AllappsIcon;
 
@@ -2175,7 +2142,6 @@
 
 .method public setContextualAwareHotset(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CellLayoutHotseat;->mIsContextualAwareHotseat:Z
 
@@ -2184,8 +2150,6 @@
 
 .method public setGridSize(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v0, Lcom/android/launcher2/CellLayoutHotseat;->DEBUGGABLE:Z
 
@@ -2240,8 +2204,6 @@
 
 .method public setup(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -2256,11 +2218,6 @@
 
 .method visualizeDropLocation(Landroid/view/View;Landroid/graphics/Bitmap;[III)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # I
 
     iget-boolean v2, p0, Lcom/android/launcher2/CellLayoutNoGap;->mDisabled:Z
 

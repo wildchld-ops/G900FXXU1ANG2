@@ -70,7 +70,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/services/ContentSyncService;)Lcom/google/android/finsky/appstate/AppStatesReplicator$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/ContentSyncService;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/ContentSyncService;->mReplicationListener:Lcom/google/android/finsky/appstate/AppStatesReplicator$Listener;
 
@@ -79,7 +78,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/services/ContentSyncService;)Lcom/google/android/finsky/appstate/AppStatesReplicator;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/ContentSyncService;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/ContentSyncService;->mAppStatesReplicator:Lcom/google/android/finsky/appstate/AppStatesReplicator;
 
@@ -96,8 +94,6 @@
 
 .method static synthetic access$302(Lcom/google/android/finsky/services/ContentSyncService;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/ContentSyncService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/services/ContentSyncService;->mReplicating:Z
 
@@ -106,7 +102,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/services/ContentSyncService;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/ContentSyncService;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/services/ContentSyncService;->mReplicationRequested:Z
 
@@ -185,8 +180,6 @@
 
 .method public static setupListeners(Lcom/google/android/finsky/library/LibraryReplicators;Lcom/google/android/finsky/receivers/PackageMonitorReceiver;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicators;
-    .param p1    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver;
 
     new-instance v0, Lcom/google/android/finsky/services/ContentSyncService$3;
 
@@ -207,7 +200,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -216,9 +208,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/services/ContentSyncService;->mReplicating:Z
 

@@ -518,10 +518,6 @@
     <dimen name="qwerty_indian_symbol_first_col_fourth_line_horizontal_gap">104.0px</dimen>
     <dimen name="qwerty_default_indian_tamil_symbol_vertical_gap">22.0px</dimen>
     <dimen name="qwerty_indian_tamil_symbol_top_vertical_gap">33.0px</dimen>
-    <dimen name="japanese_qwerty_key_last_horizontal_gap2">40.0px</dimen>
-    <dimen name="japanese_qwerty_key_last_width_url_email_multi_language">120.0px</dimen>
-    <dimen name="qwerty_email_url_last_line_horizontal_gap">27.0px</dimen>
-    <dimen name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2">227.0px</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_071b">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_071c">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_071e">false</item>
@@ -654,6 +650,10 @@
     <item type="dimen" name="APKTOOL_DUMMY_08b5">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_08b6">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_08b7">false</item>
+    <dimen name="japanese_qwerty_key_last_horizontal_gap2">40.0px</dimen>
+    <dimen name="japanese_qwerty_key_last_width_url_email_multi_language">120.0px</dimen>
+    <dimen name="qwerty_email_url_last_line_horizontal_gap">27.0px</dimen>
+    <dimen name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2">227.0px</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_08bc">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_08bd">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_08be">false</item>

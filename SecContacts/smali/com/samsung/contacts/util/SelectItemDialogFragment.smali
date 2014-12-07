@@ -26,10 +26,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/util/SelectItemDialogFragment;IILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/util/SelectItemDialogFragment;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/contacts/util/SelectItemDialogFragment;->onItemSelected(IILjava/lang/String;)V
 
@@ -38,9 +34,6 @@
 
 .method private onItemSelected(IILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/samsung/contacts/util/SelectItemDialogFragment;->sListener:Lcom/samsung/contacts/util/SelectItemDialogFragment$Listener;
 
@@ -56,11 +49,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Lcom/samsung/contacts/util/SelectItemDialogFragment$Listener;IILjava/util/ArrayList;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/samsung/contacts/util/SelectItemDialogFragment$Listener;
-    .param p2    # I
-    .param p3    # I
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -126,7 +114,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v2, Landroid/app/AlertDialog$Builder;
 

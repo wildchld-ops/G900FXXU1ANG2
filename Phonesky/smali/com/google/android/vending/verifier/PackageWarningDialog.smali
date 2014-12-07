@@ -72,11 +72,6 @@
 
 .method public static show(Landroid/content/Context;IZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -119,8 +114,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 1
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/google/android/vending/verifier/PackageWarningDialog;->mButtonBar:Lcom/google/android/finsky/layout/ButtonBar;
 
@@ -131,7 +124,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x0
 

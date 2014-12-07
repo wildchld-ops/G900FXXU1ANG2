@@ -144,7 +144,6 @@
 
 .method private setActionbar(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -407,7 +406,6 @@
 
 .method public onAction(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -431,7 +429,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -472,7 +469,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -518,7 +514,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialActivity;->tutorialDialog:Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
@@ -536,7 +531,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialActivity;->mOptionMenuController:Lcom/samsung/contacts/menu/controller/PeopleOptionsMenuControllerImpl;
 
@@ -617,7 +611,6 @@
 
 .method public requestSmartDialSearch(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -683,7 +676,6 @@
 
 .method public setDigit(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialActivity;->mDialpadFragment:Lcom/android/dialer/dialpad/DialpadFragment;
 

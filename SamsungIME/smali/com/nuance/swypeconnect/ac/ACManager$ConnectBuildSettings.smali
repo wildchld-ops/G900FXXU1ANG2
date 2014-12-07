@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/swypeconnect/ac/ACManager;Lcom/nuance/swypeconnect/ac/ACManager$ACConfig;Lcom/nuance/swypeconnect/ac/ACBuildConfig;)V
     .locals 3
-    .param p2    # Lcom/nuance/swypeconnect/ac/ACManager$ACConfig;
-    .param p3    # Lcom/nuance/swypeconnect/ac/ACBuildConfig;
 
     iput-object p1, p0, Lcom/nuance/swypeconnect/ac/ACManager$ConnectBuildSettings;->this$0:Lcom/nuance/swypeconnect/ac/ACManager;
 

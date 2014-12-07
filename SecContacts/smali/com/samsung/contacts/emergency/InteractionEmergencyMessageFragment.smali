@@ -107,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mMaxContactsNumber:I
 
@@ -116,7 +115,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mContactsCount:I
 
@@ -125,7 +123,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mContext:Landroid/content/Context;
 
@@ -134,7 +131,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->addSelectAllHeader()V
 
@@ -143,7 +139,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->removeSelectAllHeader()V
 
@@ -152,7 +147,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -161,8 +155,6 @@
 
 .method static synthetic access$1302(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -171,8 +163,6 @@
 
 .method static synthetic access$1402(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$ActionModeCallback;)Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$ActionModeCallback;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
-    .param p1    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$ActionModeCallback;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mActionModeCallback:Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$ActionModeCallback;
 
@@ -181,7 +171,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -190,7 +179,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -199,7 +187,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -208,7 +195,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -217,7 +203,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -226,7 +211,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mSelectedContactIds:Ljava/util/ArrayList;
 
@@ -235,7 +219,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mContext:Landroid/content/Context;
 
@@ -244,7 +227,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -253,7 +235,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -262,8 +243,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->updateSelectAllState(Z)V
 
@@ -272,7 +251,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mDeleteMenuItem:Landroid/view/MenuItem;
 
@@ -281,8 +259,6 @@
 
 .method static synthetic access$802(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;Landroid/view/MenuItem;)Landroid/view/MenuItem;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
-    .param p1    # Landroid/view/MenuItem;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mDeleteMenuItem:Landroid/view/MenuItem;
 
@@ -291,7 +267,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAddContactLayout:Landroid/view/View;
 
@@ -353,7 +328,6 @@
 
 .method private configureEmptyView(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mListContainer:Landroid/view/View;
 
@@ -458,7 +432,6 @@
 
 .method private updateSelectAllState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -541,8 +514,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const-string v1, "InteractionEmergencyMessageFragment"
 
@@ -563,7 +534,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -610,8 +580,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v4, 0x0
 
@@ -726,9 +694,6 @@
 
 .method protected onHeaderViewClick(Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->isMultiSelectEnabled()Z
 
@@ -800,8 +765,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mActionModeCallback:Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$ActionModeCallback;
 
@@ -846,9 +809,6 @@
 
 .method public onItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -866,9 +826,6 @@
 
 .method public onItemLongClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)Z
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -912,7 +869,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 2
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -969,8 +925,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -981,7 +935,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "selectedContactIds"
 
@@ -996,7 +949,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->restoreSavedState(Landroid/os/Bundle;)V
 
@@ -1021,7 +973,6 @@
 
 .method public setAddContactButtonEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mAddContactButton:Landroid/view/View;
 
@@ -1032,7 +983,6 @@
 
 .method public setListener(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mListener:Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$Listener;
 
@@ -1041,7 +991,6 @@
 
 .method public setMaxContactsNumber(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;->mMaxContactsNumber:I
 
@@ -1050,8 +999,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v2, 0x0
 

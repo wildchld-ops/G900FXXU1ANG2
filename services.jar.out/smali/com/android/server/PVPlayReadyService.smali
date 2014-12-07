@@ -58,8 +58,6 @@
 
 .method static synthetic access$000(JJ)V
     .locals 0
-    .param p0    # J
-    .param p2    # J
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/server/PVPlayReadyService;->nitzReceived(JJ)V
 
@@ -127,7 +125,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -186,8 +183,6 @@
 
 .method public onNetworkStateChanged(JJ)V
     .locals 3
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v1, 0x0
 
@@ -207,9 +202,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 

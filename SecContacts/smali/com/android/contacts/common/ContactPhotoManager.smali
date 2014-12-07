@@ -69,7 +69,6 @@
 
 .method public static declared-synchronized createContactPhotoManager(Landroid/content/Context;)Lcom/android/contacts/common/ContactPhotoManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -96,9 +95,6 @@
 
 .method public static getDefaultAvatarResId(Landroid/content/Context;IZ)I
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -150,10 +146,6 @@
 
 .method public static getDefaultAvatarResId(Landroid/content/Context;IZJ)I
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v0, 0x1
 
@@ -203,9 +195,6 @@
 
 .method public static getDefaultAvatarResId(ZZJ)I
     .locals 1
-    .param p0    # Z
-    .param p1    # Z
-    .param p2    # J
 
     const v0, 0x7f02007e
 
@@ -229,9 +218,6 @@
 
 .method public static getDefaultShortCutResId(ZZJ)I
     .locals 1
-    .param p0    # Z
-    .param p1    # Z
-    .param p2    # J
 
     const v0, 0x7f020081
 
@@ -240,7 +226,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/contacts/common/ContactPhotoManager;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -290,10 +275,6 @@
 # virtual methods
 .method public final loadDirectoryPhoto(Landroid/widget/ImageView;Landroid/net/Uri;ZJ)V
     .locals 8
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # J
 
     const/4 v3, -0x1
 
@@ -316,11 +297,6 @@
 
 .method public final loadPhoto(Landroid/widget/ImageView;Landroid/net/Uri;IZJ)V
     .locals 8
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # J
 
     sget-object v5, Lcom/android/contacts/common/ContactPhotoManager;->DEFAULT_AVATAR:Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
 
@@ -346,10 +322,6 @@
 
 .method public final loadThumbnail(Landroid/widget/ImageView;JZJ)V
     .locals 8
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
-    .param p4    # Z
-    .param p5    # J
 
     sget-object v5, Lcom/android/contacts/common/ContactPhotoManager;->DEFAULT_AVATAR:Lcom/android/contacts/common/ContactPhotoManager$DefaultImageProvider;
 
@@ -373,7 +345,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -386,7 +357,6 @@
 
 .method public onTrimMemory(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

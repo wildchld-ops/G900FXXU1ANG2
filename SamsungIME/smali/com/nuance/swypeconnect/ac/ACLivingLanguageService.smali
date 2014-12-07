@@ -32,8 +32,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/connect/api/LivingLanguageService;Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/api/LivingLanguageService;
-    .param p2    # Lcom/nuance/connect/store/PersistentDataStore;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACService;-><init>()V
 
@@ -58,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -158,7 +155,6 @@
 
 .method public registerCallback(Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$ACLivingLanguageCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$ACLivingLanguageCallback;
 
     new-instance v0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$1;
 
@@ -177,8 +173,6 @@
 
 .method public setLivingLanguageStatus(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;->service:Lcom/nuance/connect/api/LivingLanguageService;
 
@@ -201,7 +195,6 @@
 
 .method public unregisterCallback(Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$ACLivingLanguageCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$ACLivingLanguageCallback;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;->livinglanguageCallbacks:Ljava/util/Map;
 

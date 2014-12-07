@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -293,7 +292,6 @@
 
 .method public setAction(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->action:Ljava/lang/String;
 
@@ -302,7 +300,6 @@
 
 .method public setExtras(Landroid/os/Bundle;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->extras:Landroid/os/Bundle;
 
@@ -311,7 +308,6 @@
 
 .method public setFlagMultiline(Z)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->flagMultiline:Z
 
@@ -320,7 +316,6 @@
 
 .method public setId(I)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->id:I
 
@@ -329,7 +324,6 @@
 
 .method public setMessage(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->message:Ljava/lang/String;
 
@@ -338,7 +332,6 @@
 
 .method public setMessageId(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->messageId:Ljava/lang/String;
 
@@ -347,7 +340,6 @@
 
 .method public setReplaceText(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->replaceText:Ljava/lang/String;
 
@@ -356,7 +348,6 @@
 
 .method public setReplaceTextDecorator(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->replaceTextDecorator:Ljava/lang/String;
 
@@ -365,7 +356,6 @@
 
 .method public setTarget(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->target:Ljava/lang/String;
 
@@ -374,7 +364,6 @@
 
 .method public setTitleId(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->titleId:Ljava/lang/String;
 
@@ -383,7 +372,6 @@
 
 .method public setTitleReplaceText(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->titleReplaceText:Ljava/lang/String;
 
@@ -392,7 +380,6 @@
 
 .method public setTitleReplaceTextDecorator(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->titleReplaceTextDecorator:Ljava/lang/String;
 
@@ -401,7 +388,6 @@
 
 .method public setType(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->type:Ljava/lang/String;
 
@@ -410,7 +396,6 @@
 
 .method public setUrl(Ljava/lang/String;)Lcom/nuance/connect/util/StatusBarNotification$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/StatusBarNotification$Builder;->url:Ljava/lang/String;
 

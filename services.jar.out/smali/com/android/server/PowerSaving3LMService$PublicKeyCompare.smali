@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,7 +55,6 @@
 
 .method private extractPublicKey([B)Ljava/security/PublicKey;
     .locals 7
-    .param p1    # [B
 
     :try_start_0
     const-string v4, "X509"
@@ -116,7 +114,6 @@
 # virtual methods
 .method public comparePublicKey([B)Z
     .locals 4
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Lcom/android/server/PowerSaving3LMService$PublicKeyCompare;->extractPublicKey([B)Ljava/security/PublicKey;
 

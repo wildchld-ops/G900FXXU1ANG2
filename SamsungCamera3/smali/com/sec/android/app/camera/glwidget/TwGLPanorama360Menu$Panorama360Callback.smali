@@ -251,8 +251,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu;Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;)V
     .locals 20
-    .param p2    # Lcom/sec/android/app/camera/Camera;
-    .param p3    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;
 
     move-object/from16 v0, p1
 
@@ -1436,8 +1434,6 @@
 
 .method static synthetic access$10000(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->savePanoramaSetting(Ljava/lang/String;)V
 
@@ -1446,8 +1442,6 @@
 
 .method static synthetic access$1002(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->registered_gyroscope:Z
 
@@ -1456,9 +1450,6 @@
 
 .method static synthetic access$10100(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->saveUseImageSetting(Ljava/util/ArrayList;Ljava/lang/String;)V
 
@@ -1467,8 +1458,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->pcPrepareShooting(Z)V
 
@@ -1477,7 +1466,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->pcPanoramaInitialize()V
 
@@ -1486,7 +1474,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->isStartShooting:Z
 
@@ -1495,8 +1482,6 @@
 
 .method static synthetic access$1776(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;I)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->isStartShooting:Z
 
@@ -1511,7 +1496,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mWaitTime:I
 
@@ -1520,8 +1504,6 @@
 
 .method static synthetic access$1802(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mWaitTime:I
 
@@ -1530,7 +1512,6 @@
 
 .method static synthetic access$2400(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mProgressPopup:Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
 
@@ -1539,8 +1520,6 @@
 
 .method static synthetic access$2402(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;)Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mProgressPopup:Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
 
@@ -1549,7 +1528,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mUseImageList:Ljava/util/ArrayList;
 
@@ -1558,7 +1536,6 @@
 
 .method static synthetic access$3200(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mFinishShootingAsync:Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;
 
@@ -1567,8 +1544,6 @@
 
 .method static synthetic access$3700(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->pcMoveToNextStateByAttachStatus(I)V
 
@@ -1577,7 +1552,6 @@
 
 .method static synthetic access$3800(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSensorLockObj:Ljava/lang/Object;
 
@@ -1586,7 +1560,6 @@
 
 .method static synthetic access$3900(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->isShootable:Z
 
@@ -1595,8 +1568,6 @@
 
 .method static synthetic access$3902(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->isShootable:Z
 
@@ -1605,7 +1576,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSaveImagePathList:Ljava/util/ArrayList;
 
@@ -1614,7 +1584,6 @@
 
 .method static synthetic access$4000(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mContextActivity:Lcom/sec/android/app/camera/Camera;
 
@@ -1623,7 +1592,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mMorphoImageStitcher:Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;
 
@@ -1632,7 +1600,6 @@
 
 .method static synthetic access$5200(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mStatus:[I
 
@@ -1641,7 +1608,6 @@
 
 .method static synthetic access$5600(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mHandler:Landroid/os/Handler;
 
@@ -1650,7 +1616,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mPanoramaState:I
 
@@ -1659,8 +1624,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mPanoramaState:I
 
@@ -1669,7 +1632,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->pcResetShootingWaitProcess()V
 
@@ -1678,7 +1640,6 @@
 
 .method static synthetic access$7400(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mOutputType:I
 
@@ -1687,8 +1648,6 @@
 
 .method static synthetic access$7402(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mOutputType:I
 
@@ -1697,8 +1656,6 @@
 
 .method static synthetic access$7602(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mFinishFlg:Z
 
@@ -1707,7 +1664,6 @@
 
 .method static synthetic access$7700(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)[J
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mDateTaken:[J
 
@@ -1716,7 +1672,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Landroid/hardware/SensorManager;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSensorManager:Landroid/hardware/SensorManager;
 
@@ -1725,7 +1680,6 @@
 
 .method static synthetic access$8500(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSaveInputDataDirPath:Ljava/lang/String;
 
@@ -1734,7 +1688,6 @@
 
 .method static synthetic access$8600(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSensorInfoMngList:Ljava/util/ArrayList;
 
@@ -1743,7 +1696,6 @@
 
 .method static synthetic access$8800(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSaveDirPath:Ljava/lang/String;
 
@@ -1752,8 +1704,6 @@
 
 .method static synthetic access$8802(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSaveDirPath:Ljava/lang/String;
 
@@ -1762,7 +1712,6 @@
 
 .method static synthetic access$9000(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$SaveInputDataThread;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mSavePreviewSDThread:Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$SaveInputDataThread;
 
@@ -1771,8 +1720,6 @@
 
 .method static synthetic access$902(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->registered_accelerometer:Z
 
@@ -1781,7 +1728,6 @@
 
 .method static synthetic access$9100(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->mCurSensorIndex:[I
 
@@ -1790,9 +1736,6 @@
 
 .method static synthetic access$9800(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->saveSensorData(Ljava/util/ArrayList;Ljava/lang/String;)V
 
@@ -1801,10 +1744,6 @@
 
 .method static synthetic access$9900(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;Ljava/util/ArrayList;[Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # [Ljava/util/ArrayList;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;->saveSensorDataSummary(Ljava/util/ArrayList;[Ljava/util/ArrayList;Ljava/lang/String;)V
 
@@ -1813,7 +1752,6 @@
 
 .method private createName(J)Ljava/lang/String;
     .locals 1
-    .param p1    # J
 
     const-string v0, "yyyy-MM-dd_kk-mm-ss"
 
@@ -1830,7 +1768,6 @@
 
 .method private getSaveInputFileName(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$SensorInfoManager;)Ljava/lang/String;
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$SensorInfoManager;
 
     const/4 v8, 0x1
 
@@ -1941,10 +1878,6 @@
 
 .method private pcCheckAngle([D[DDJ)Z
     .locals 8
-    .param p1    # [D
-    .param p2    # [D
-    .param p3    # D
-    .param p5    # J
 
     const/4 v3, 0x1
 
@@ -2036,7 +1969,6 @@
 
 .method private pcGetInitialSfMode(I)I
     .locals 4
-    .param p1    # I
 
     const-string v1, "TwGLPanorama360Menu"
 
@@ -2118,7 +2050,6 @@
 
 .method private pcGetShootingSfMode(I)I
     .locals 4
-    .param p1    # I
 
     const-string v1, "TwGLPanorama360Menu"
 
@@ -2200,7 +2131,6 @@
 
 .method private pcIsStopPanoramaShooting(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2296,7 +2226,6 @@
 
 .method private pcMoveToNextStateByAttachStatus(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -3126,7 +3055,6 @@
 
 .method private pcPanoramaPreview([B)V
     .locals 31
-    .param p1    # [B
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -4215,7 +4143,6 @@
 
 .method private pcPanoramaProcess([B)V
     .locals 21
-    .param p1    # [B
 
     const-string v2, "TwGLPanorama360Menu"
 
@@ -4743,7 +4670,6 @@
 
 .method private pcPrepareShooting(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x4
 
@@ -4978,7 +4904,6 @@
 
 .method private pcRestartToStartupPreview(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "TwGLPanorama360Menu"
 
@@ -5242,8 +5167,6 @@
 
 .method private savePanoramaInputData(Ljava/lang/String;Z)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v10, 0x0
 
@@ -5487,7 +5410,6 @@
 
 .method private savePanoramaSetting(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const-string v6, "TwGLPanorama360Menu"
 
@@ -5886,7 +5808,6 @@
 
 .method private saveSensorData(Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 11
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6021,7 +5942,6 @@
 
 .method private saveSensorDataSummary(Ljava/util/ArrayList;[Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 19
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6272,7 +6192,6 @@
 
 .method private saveUseImageSetting(Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 13
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6579,9 +6498,6 @@
 
 .method private toStringSensorData(Lcom/sec/android/app/camera/panorama360/core/MorphoSensorFusion$SensorData;IJ)Ljava/lang/String;
     .locals 11
-    .param p1    # Lcom/sec/android/app/camera/panorama360/core/MorphoSensorFusion$SensorData;
-    .param p2    # I
-    .param p3    # J
 
     const-string v6, "%05d"
 
@@ -6752,7 +6668,6 @@
 
 .method private toStringSensorDataSummary(Ljava/util/ArrayList;I)Ljava/lang/String;
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6871,23 +6786,18 @@
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onPreviewFrame([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 4
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const/4 v2, 0x0
 
@@ -7059,7 +6969,6 @@
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 22
-    .param p1    # Landroid/hardware/SensorEvent;
 
     move-object/from16 v0, p0
 
@@ -8182,8 +8091,6 @@
 
 .method public pcRestartShooting(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -8456,9 +8363,6 @@
 
 .method public pcStopShooting(ZZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v5, 0x2
 

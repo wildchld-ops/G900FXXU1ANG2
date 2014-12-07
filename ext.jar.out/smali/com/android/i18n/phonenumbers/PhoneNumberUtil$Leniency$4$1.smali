@@ -36,10 +36,6 @@
 # virtual methods
 .method public checkGroups(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/StringBuilder;[Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p3    # Ljava/lang/StringBuilder;
-    .param p4    # [Ljava/lang/String;
 
     invoke-static {p1, p2, p3, p4}, Lcom/android/i18n/phonenumbers/PhoneNumberMatcher;->allNumberGroupsAreExactlyPresent(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/StringBuilder;[Ljava/lang/String;)Z
 

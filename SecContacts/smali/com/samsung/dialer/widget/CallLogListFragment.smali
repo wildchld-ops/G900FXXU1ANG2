@@ -256,8 +256,6 @@
 
 .method private setListShown(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const v5, 0x10a0001
 
@@ -396,9 +394,6 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x1090014
 
@@ -443,18 +438,12 @@
 
 .method public onListItemClick(Lcom/sec/android/touchwiz/widget/TwListView;Landroid/view/View;IJ)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     return-void
 .end method
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -465,7 +454,6 @@
 
 .method public setListAdapter(Landroid/widget/ListAdapter;)V
     .locals 4
-    .param p1    # Landroid/widget/ListAdapter;
 
     const/4 v2, 0x0
 

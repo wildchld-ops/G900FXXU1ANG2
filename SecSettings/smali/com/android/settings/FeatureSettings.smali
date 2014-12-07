@@ -132,7 +132,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/FeatureSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureSettings;->mAirMotion:Landroid/preference/SwitchPreferenceScreen;
 
@@ -141,7 +140,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/FeatureSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureSettings;->mAirView:Landroid/preference/SwitchPreferenceScreen;
 
@@ -150,7 +148,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/FeatureSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureSettings;->mSmartStay:Landroid/preference/SwitchPreferenceScreen;
 
@@ -159,7 +156,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/FeatureSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureSettings;->mSmartPause:Landroid/preference/SwitchPreferenceScreen;
 
@@ -168,7 +164,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/FeatureSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureSettings;->mSmartScroll:Landroid/preference/SwitchPreferenceScreen;
 
@@ -177,7 +172,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/FeatureSettings;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
@@ -186,8 +180,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/FeatureSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/FeatureSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/FeatureSettings;->turnOnEasyMode(Z)V
 
@@ -196,8 +188,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/FeatureSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/FeatureSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/FeatureSettings;->turnOnOPMode(Z)V
 
@@ -206,7 +196,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/FeatureSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureSettings;->mMulti:Landroid/preference/SwitchPreferenceScreen;
 
@@ -4912,7 +4901,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -4942,7 +4930,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -6222,8 +6209,6 @@
 
 .method public showGuideDialog(Landroid/view/View;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

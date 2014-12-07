@@ -65,8 +65,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/dialer/impl/CallLogGroupingImpl$GroupCreatorImpl;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/dialer/impl/CallLogGroupingImpl$GroupCreatorImpl;
 
     const/4 v1, 0x0
 
@@ -107,12 +105,6 @@
 
 .method private equalPhoneNumbers(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -153,8 +145,6 @@
 # virtual methods
 .method public addGroups(Landroid/database/Cursor;Z)V
     .locals 37
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     const-string v3, "CallLogGroupingImpl"
 

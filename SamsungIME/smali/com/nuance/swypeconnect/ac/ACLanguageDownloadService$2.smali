@@ -48,7 +48,6 @@
 # virtual methods
 .method public downloadComplete(Ljava/io/File;)Z
     .locals 4
-    .param p1    # Ljava/io/File;
 
     iget-object v1, p0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$2;->this$0:Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
 
@@ -99,7 +98,6 @@
 
 .method public downloadFailed(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$2;->this$0:Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
 
@@ -117,7 +115,6 @@
 
 .method public downloadPercentage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$2;->this$0:Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
 
@@ -152,7 +149,6 @@
 
 .method public downloadStopped(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$2;->this$0:Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
 

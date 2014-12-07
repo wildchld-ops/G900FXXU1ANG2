@@ -17,9 +17,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/message/LineFormatter;Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # Lorg/apache/http/message/LineFormatter;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +58,6 @@
 # virtual methods
 .method public write(Lorg/apache/http/HttpMessage;)V
     .locals 5
-    .param p1    # Lorg/apache/http/HttpMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

@@ -123,7 +123,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -176,7 +175,6 @@
 
 .method private adjustListItemLayoutByFontSizeDetail(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/util/DisplayMetrics;
 
@@ -325,8 +323,6 @@
 
 .method private bindViewDetail(Landroid/view/View;Landroid/database/Cursor;)V
     .locals 16
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v13, 0x3
 
@@ -646,7 +642,6 @@
 
 .method private formatDuration(J)Ljava/lang/String;
     .locals 9
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -799,9 +794,6 @@
 # virtual methods
 .method public addGroup(IIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "CallLogAdapter"
 
@@ -816,7 +808,6 @@
 
 .method protected addGroups(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const-string v0, "CallLogAdapter"
 
@@ -835,9 +826,6 @@
 
 .method public bindChildView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const-string v0, "CallLogAdapter"
 
@@ -852,11 +840,6 @@
 
 .method public bindGroupView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;IZ)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Z
 
     const-string v0, "CallLogAdapter"
 
@@ -871,9 +854,6 @@
 
 .method public bindStandAloneView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const-string v0, "CallLogAdapter"
 
@@ -898,10 +878,6 @@
 
 .method enqueueRequest(Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/dialer/calllog/ContactInfo;
-    .param p4    # Z
 
     new-instance v0, Lcom/samsung/dialer/calllog/CallDetailAllCallsAdapter$ContactInfoRequest;
 
@@ -953,9 +929,6 @@
 
 .method injectContactInfoForTest(Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/dialer/calllog/ContactInfo;
 
     new-instance v0, Lcom/samsung/dialer/calllog/CallDetailAllCallsAdapter$NumberWithCountryIso;
 
@@ -990,8 +963,6 @@
 
 .method public newChildView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     const-string v1, "CallLogAdapter"
 
@@ -1020,8 +991,6 @@
 
 .method public newGroupView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     const-string v1, "CallLogAdapter"
 
@@ -1050,8 +1019,6 @@
 
 .method public newStandAloneView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     const-string v2, "CallLogAdapter"
 

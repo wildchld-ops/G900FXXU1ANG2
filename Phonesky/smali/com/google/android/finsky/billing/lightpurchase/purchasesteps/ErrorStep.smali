@@ -37,9 +37,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;Z)Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/ErrorStep;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v1, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/ErrorStep;
 
@@ -70,7 +67,6 @@
 # virtual methods
 .method public getContinueButtonLabel(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     const v0, 0x7f090212
 
@@ -133,9 +129,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v3, 0x7f04008d
 

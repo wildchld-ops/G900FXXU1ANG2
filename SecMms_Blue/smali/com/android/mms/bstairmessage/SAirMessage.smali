@@ -74,7 +74,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x2
 
@@ -285,7 +284,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/bstairmessage/SAirMessage;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/bstairmessage/SAirMessage;
 
     iget-object v0, p0, Lcom/android/mms/bstairmessage/SAirMessage;->mContext:Landroid/content/Context;
 
@@ -294,7 +292,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/bstairmessage/SAirMessage;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/bstairmessage/SAirMessage;
 
     iget-object v0, p0, Lcom/android/mms/bstairmessage/SAirMessage;->BUNDLE_EXTRA_SMSBODY_KEY:Ljava/lang/String;
 
@@ -303,7 +300,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/mms/bstairmessage/SAirMessage;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/bstairmessage/SAirMessage;->sInstance:Lcom/android/mms/bstairmessage/SAirMessage;
 
@@ -327,7 +323,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/SAirMessage"
 
@@ -384,9 +379,6 @@
 
 .method public MsgSendMMSToAirMsg(Landroid/content/Context;JZ)V
     .locals 39
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Z
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1055,7 +1047,6 @@
 
 .method public MsgSendSMSToAirMsg(Landroid/content/Context;)V
     .locals 18
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1340,7 +1331,6 @@
 
 .method public isEnableDelaySending(Landroid/content/Context;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 

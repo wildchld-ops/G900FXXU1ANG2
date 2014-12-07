@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/keyguard/KeyguardSecurityModel;Lcom/android/keyguard/KeyguardSecurityModel$1;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityModel;
-    .param p2    # Lcom/android/keyguard/KeyguardSecurityModel$1;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardSecurityModel$WaitIccIdTask;-><init>(Lcom/android/keyguard/KeyguardSecurityModel;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected varargs declared-synchronized doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 7
-    .param p1    # [Ljava/lang/Void;
 
     monitor-enter p0
 
@@ -175,7 +172,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -188,7 +184,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     # getter for: Lcom/android/keyguard/KeyguardSecurityModel;->sPinLock:Ljava/lang/Object;
     invoke-static {}, Lcom/android/keyguard/KeyguardSecurityModel;->access$300()Ljava/lang/Object;
@@ -251,7 +246,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

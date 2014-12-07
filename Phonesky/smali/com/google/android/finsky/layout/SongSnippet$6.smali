@@ -89,8 +89,6 @@
 # virtual methods
 .method protected update(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongSnippet$6;->this$0:Lcom/google/android/finsky/layout/SongSnippet;
 

@@ -182,7 +182,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
@@ -207,8 +206,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -219,9 +216,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -333,8 +327,6 @@
 
 .method private forceUniformHeight(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -406,8 +398,6 @@
 
 .method private forceUniformWidth(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -479,11 +469,6 @@
 
 .method private setChildFrame(Landroid/view/View;IIII)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     add-int v0, p2, p4
 
@@ -498,7 +483,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -507,7 +491,6 @@
 
 .method drawDividersHorizontal(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getVirtualChildCount()I
 
@@ -662,7 +645,6 @@
 
 .method drawDividersVertical(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getVirtualChildCount()I
 
@@ -775,8 +757,6 @@
 
 .method drawHorizontalDivider(Landroid/graphics/Canvas;I)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/LinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
@@ -817,8 +797,6 @@
 
 .method drawVerticalDivider(Landroid/graphics/Canvas;I)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/LinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
@@ -906,7 +884,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/LinearLayout$LayoutParams;
 
@@ -917,7 +894,6 @@
 
 .method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
 
@@ -928,7 +904,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -943,7 +918,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
 
@@ -1105,8 +1079,6 @@
 
 .method getChildrenSkipCount(Landroid/view/View;I)I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1139,7 +1111,6 @@
 
 .method getLocationOffset(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -1148,7 +1119,6 @@
 
 .method getNextLocationOffset(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -1173,7 +1143,6 @@
 
 .method getVirtualChildAt(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -1202,7 +1171,6 @@
 
 .method protected hasDividerBeforeChildAt(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -1304,10 +1272,6 @@
 
 .method layoutHorizontal(IIII)V
     .locals 30
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->isLayoutRtl()Z
 
@@ -1678,10 +1642,6 @@
 
 .method layoutVertical(IIII)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move-object/from16 v0, p0
 
@@ -1943,12 +1903,6 @@
 
 .method measureChildBeforeLayout(Landroid/view/View;IIIII)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     move-object v0, p0
 
@@ -1969,8 +1923,6 @@
 
 .method measureHorizontal(II)V
     .locals 46
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -3726,7 +3678,6 @@
 
 .method measureNullChild(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3735,8 +3686,6 @@
 
 .method measureVertical(II)V
     .locals 37
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -4891,7 +4840,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/widget/LinearLayout;->mDivider:Landroid/graphics/drawable/Drawable;
 
@@ -4919,7 +4867,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -4936,7 +4883,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -4953,11 +4899,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget v0, p0, Landroid/widget/LinearLayout;->mOrientation:I
 
@@ -4978,8 +4919,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/widget/LinearLayout;->mOrientation:I
 
@@ -5000,7 +4939,6 @@
 
 .method public setBaselineAligned(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -5011,7 +4949,6 @@
 
 .method public setBaselineAlignedChildIndex(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -5066,7 +5003,6 @@
 
 .method public setDividerDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -5116,7 +5052,6 @@
 
 .method public setDividerPadding(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/LinearLayout;->mDividerPadding:I
 
@@ -5125,7 +5060,6 @@
 
 .method public setGravity(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -5161,7 +5095,6 @@
 
 .method public setHorizontalGravity(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -5193,7 +5126,6 @@
 
 .method public setMeasureWithLargestChildEnabled(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -5204,7 +5136,6 @@
 
 .method public setOrientation(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/LinearLayout;->mOrientation:I
 
@@ -5220,7 +5151,6 @@
 
 .method public setShowDividers(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/LinearLayout;->mShowDividers:I
 
@@ -5236,7 +5166,6 @@
 
 .method public setVerticalGravity(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -5264,7 +5193,6 @@
 
 .method public setWeightSum(F)V
     .locals 1
-    .param p1    # F
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 

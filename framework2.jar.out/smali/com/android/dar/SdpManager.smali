@@ -98,8 +98,6 @@
 # virtual methods
 .method public addColumn(Landroid/net/Uri;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -117,7 +115,6 @@
 
 .method public getState(I)I
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -137,8 +134,6 @@
 
 .method public isSensitiveColumn(Landroid/net/Uri;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -158,7 +153,6 @@
 
 .method public onBoot(I)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -200,9 +194,6 @@
 
 .method public onChangePassword(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -222,7 +213,6 @@
 
 .method public onDeviceLocked(I)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -264,8 +254,6 @@
 
 .method public onDeviceUnlocked(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -307,8 +295,6 @@
 
 .method public onUserAdded(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -350,7 +336,6 @@
 
 .method public onUserRemoved(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

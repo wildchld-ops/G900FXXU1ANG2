@@ -125,8 +125,6 @@
 
 .method public constructor <init>(ILcom/samsung/dialer/calllog/DirectCallActivityInterface;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/dialer/calllog/DirectCallActivityInterface;
 
     const/4 v0, 0x0
 
@@ -163,8 +161,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/calllog/DirectCallingManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/DirectCallingManager;->tryToCall(Ljava/lang/String;)V
 
@@ -173,8 +169,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/calllog/DirectCallingManager;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/DirectCallingManager;->setIsSpeechRecorgnizing(Z)V
 
@@ -183,7 +177,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/dialer/calllog/DirectCallingManager;)Lcom/samsung/dialer/calllog/DirectCallingManager$UnlockReceiver;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mUnlockReceiver:Lcom/samsung/dialer/calllog/DirectCallingManager$UnlockReceiver;
 
@@ -192,8 +185,6 @@
 
 .method static synthetic access$1002(Lcom/samsung/dialer/calllog/DirectCallingManager;Lcom/samsung/dialer/calllog/DirectCallingManager$UnlockReceiver;)Lcom/samsung/dialer/calllog/DirectCallingManager$UnlockReceiver;
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # Lcom/samsung/dialer/calllog/DirectCallingManager$UnlockReceiver;
 
     iput-object p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mUnlockReceiver:Lcom/samsung/dialer/calllog/DirectCallingManager$UnlockReceiver;
 
@@ -202,8 +193,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/dialer/calllog/DirectCallingManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/DirectCallingManager;->readyForCall(Ljava/lang/String;)V
 
@@ -212,7 +201,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/dialer/calllog/DirectCallingManager;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/DirectCallingManager;->isCall()Z
 
@@ -223,7 +211,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/dialer/calllog/DirectCallingManager;)J
     .locals 2
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-wide v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mLastTime:J
 
@@ -232,8 +219,6 @@
 
 .method static synthetic access$1602(Lcom/samsung/dialer/calllog/DirectCallingManager;J)J
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mLastTime:J
 
@@ -242,7 +227,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/dialer/calllog/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->x:F
 
@@ -251,8 +235,6 @@
 
 .method static synthetic access$1702(Lcom/samsung/dialer/calllog/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->x:F
 
@@ -261,7 +243,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/dialer/calllog/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->y:F
 
@@ -270,8 +251,6 @@
 
 .method static synthetic access$1802(Lcom/samsung/dialer/calllog/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->y:F
 
@@ -280,7 +259,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/dialer/calllog/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->z:F
 
@@ -289,8 +267,6 @@
 
 .method static synthetic access$1902(Lcom/samsung/dialer/calllog/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->z:F
 
@@ -307,7 +283,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/dialer/calllog/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->lastX:F
 
@@ -316,8 +291,6 @@
 
 .method static synthetic access$2002(Lcom/samsung/dialer/calllog/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->lastX:F
 
@@ -326,7 +299,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mIsStartedProximitySensor:Z
 
@@ -335,7 +307,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/dialer/calllog/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->lastY:F
 
@@ -344,8 +315,6 @@
 
 .method static synthetic access$2102(Lcom/samsung/dialer/calllog/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->lastY:F
 
@@ -354,7 +323,6 @@
 
 .method static synthetic access$2200(Lcom/samsung/dialer/calllog/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->lastZ:F
 
@@ -363,8 +331,6 @@
 
 .method static synthetic access$2202(Lcom/samsung/dialer/calllog/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->lastZ:F
 
@@ -373,7 +339,6 @@
 
 .method static synthetic access$2300(Lcom/samsung/dialer/calllog/DirectCallingManager;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-boolean v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mIsSpeechRecorgnizing:Z
 
@@ -382,7 +347,6 @@
 
 .method static synthetic access$2400(Lcom/samsung/dialer/calllog/DirectCallingManager;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/DirectCallingManager;->registerAccelerometer()V
 
@@ -391,7 +355,6 @@
 
 .method static synthetic access$2500(Lcom/samsung/dialer/calllog/DirectCallingManager;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/DirectCallingManager;->unregisterAccelerometer()V
 
@@ -400,7 +363,6 @@
 
 .method static synthetic access$2600(Lcom/samsung/dialer/calllog/DirectCallingManager;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
@@ -409,8 +371,6 @@
 
 .method static synthetic access$2702(Lcom/samsung/dialer/calllog/DirectCallingManager;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->IsTTSInitiated:Z
 
@@ -427,7 +387,6 @@
 
 .method static synthetic access$2802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->bErrorSpeech:Z
 
@@ -436,8 +395,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/calllog/DirectCallingManager;I)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/DirectCallingManager;->updateProximitySensorMode(I)V
 
@@ -446,7 +403,6 @@
 
 .method static synthetic access$400(Lcom/samsung/dialer/calllog/DirectCallingManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mHandler:Landroid/os/Handler;
 
@@ -455,7 +411,6 @@
 
 .method static synthetic access$500(Lcom/samsung/dialer/calllog/DirectCallingManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mContext:Landroid/content/Context;
 
@@ -464,7 +419,6 @@
 
 .method static synthetic access$600(Lcom/samsung/dialer/calllog/DirectCallingManager;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/DirectCallingManager;->registerMotionRecognition()V
 
@@ -473,8 +427,6 @@
 
 .method static synthetic access$700(Lcom/samsung/dialer/calllog/DirectCallingManager;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/DirectCallingManager;->setTextToSpeech(Landroid/content/Context;)V
 
@@ -483,7 +435,6 @@
 
 .method static synthetic access$800(Lcom/samsung/dialer/calllog/DirectCallingManager;)Lcom/samsung/dialer/calllog/DirectCallingManager$AirMotionReceiver;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mAirMotionReceiver:Lcom/samsung/dialer/calllog/DirectCallingManager$AirMotionReceiver;
 
@@ -492,8 +443,6 @@
 
 .method static synthetic access$802(Lcom/samsung/dialer/calllog/DirectCallingManager;Lcom/samsung/dialer/calllog/DirectCallingManager$AirMotionReceiver;)Lcom/samsung/dialer/calllog/DirectCallingManager$AirMotionReceiver;
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
-    .param p1    # Lcom/samsung/dialer/calllog/DirectCallingManager$AirMotionReceiver;
 
     iput-object p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mAirMotionReceiver:Lcom/samsung/dialer/calllog/DirectCallingManager$AirMotionReceiver;
 
@@ -502,7 +451,6 @@
 
 .method static synthetic access$900(Lcom/samsung/dialer/calllog/DirectCallingManager;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/DirectCallingManager;
 
     iget-boolean v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mPaused:Z
 
@@ -582,7 +530,6 @@
 
 .method private readyForCall(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/DirectCallingManager;->tryToCall(Ljava/lang/String;)V
 
@@ -773,7 +720,6 @@
 
 .method private setContext(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mContext:Landroid/content/Context;
 
@@ -792,7 +738,6 @@
 
 .method private setIsSpeechRecorgnizing(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Logs/DirectCallingManager"
 
@@ -823,7 +768,6 @@
 
 .method private setMotionSensor(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -848,14 +792,12 @@
 
 .method private setTextToSpeech(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     return-void
 .end method
 
 .method private speakText(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1147,7 +1089,6 @@
 
 .method private updateProximitySensorMode(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1229,7 +1170,6 @@
 # virtual methods
 .method protected AnalizeRecorgnitionPartialResult(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "results_recognition"
 
@@ -1294,7 +1234,6 @@
 
 .method protected AnalizeRecorgnitionResult(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "results_recognition"
 
@@ -1359,7 +1298,6 @@
 
 .method public getPickupToCallOut(Landroid/content/Context;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1437,7 +1375,6 @@
 
 .method protected onResultErrorCode(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -1614,7 +1551,6 @@
 
 .method public pause(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/samsung/dialer/calllog/DirectCallingManager;->getPickupToCallOut(Landroid/content/Context;)Z
 
@@ -1660,7 +1596,6 @@
 
 .method public resume(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -1794,7 +1729,6 @@
 
 .method public setFinishTutorialListener(Lcom/samsung/dialer/calllog/DirectCallingManager$DirectCallingEvent;)V
     .locals 0
-    .param p1    # Lcom/samsung/dialer/calllog/DirectCallingManager$DirectCallingEvent;
 
     iput-object p1, p0, Lcom/samsung/dialer/calllog/DirectCallingManager;->mFinishTutorial:Lcom/samsung/dialer/calllog/DirectCallingManager$DirectCallingEvent;
 

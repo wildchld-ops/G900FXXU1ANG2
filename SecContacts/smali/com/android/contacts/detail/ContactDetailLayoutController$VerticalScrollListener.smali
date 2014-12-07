@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/detail/ContactDetailLayoutController;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailLayoutController$VerticalScrollListener;->this$0:Lcom/android/contacts/detail/ContactDetailLayoutController;
 
@@ -41,10 +40,6 @@
 # virtual methods
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 6
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v3, p0, Lcom/android/contacts/detail/ContactDetailLayoutController$VerticalScrollListener;->this$0:Lcom/android/contacts/detail/ContactDetailLayoutController;
 
@@ -175,8 +170,6 @@
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 2
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     if-nez p2, :cond_0
 

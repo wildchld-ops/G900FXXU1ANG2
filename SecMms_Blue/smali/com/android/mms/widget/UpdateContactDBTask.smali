@@ -137,7 +137,6 @@
 # virtual methods
 .method public bitmapToByteArray(Landroid/graphics/Bitmap;)[B
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
 
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
@@ -185,7 +184,6 @@
 
 .method protected varargs doInBackground([Lcom/android/mms/widget/UpdateFavoriteDBData;)Ljava/lang/Boolean;
     .locals 46
-    .param p1    # [Lcom/android/mms/widget/UpdateFavoriteDBData;
 
     const/4 v4, 0x0
 
@@ -915,7 +913,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/mms/widget/UpdateFavoriteDBData;
 
@@ -928,9 +925,6 @@
 
 .method public queryPhoneNumbers(Landroid/content/Context;JJ)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # J
 
     const/4 v5, 0x0
 

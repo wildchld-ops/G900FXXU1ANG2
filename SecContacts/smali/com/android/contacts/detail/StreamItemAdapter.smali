@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View$OnClickListener;
-    .param p3    # Landroid/view/View$OnClickListener;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -92,7 +89,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -115,7 +111,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -134,7 +129,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -151,9 +145,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v10, 0x1
 
@@ -269,7 +260,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

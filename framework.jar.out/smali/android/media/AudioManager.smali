@@ -566,7 +566,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -653,7 +652,6 @@
 
 .method static synthetic access$000(Landroid/media/AudioManager;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/AudioManager;
 
     iget-object v0, p0, Landroid/media/AudioManager;->mFocusListenerLock:Ljava/lang/Object;
 
@@ -662,8 +660,6 @@
 
 .method static synthetic access$100(Landroid/media/AudioManager;Ljava/lang/String;)Landroid/media/AudioManager$OnAudioFocusChangeListener;
     .locals 1
-    .param p0    # Landroid/media/AudioManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/media/AudioManager;->findFocusListener(Ljava/lang/String;)Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
@@ -674,7 +670,6 @@
 
 .method static synthetic access$200(Landroid/media/AudioManager;)Landroid/media/AudioManager$FocusEventHandlerDelegate;
     .locals 1
-    .param p0    # Landroid/media/AudioManager;
 
     iget-object v0, p0, Landroid/media/AudioManager;->mAudioFocusEventHandlerDelegate:Landroid/media/AudioManager$FocusEventHandlerDelegate;
 
@@ -683,7 +678,6 @@
 
 .method private findFocusListener(Ljava/lang/String;)Landroid/media/AudioManager$OnAudioFocusChangeListener;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/AudioManager;->mAudioFocusIdListenerMap:Ljava/util/HashMap;
 
@@ -771,7 +765,6 @@
 
 .method private getIdForAudioFocusListener(Landroid/media/AudioManager$OnAudioFocusChangeListener;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
     const/16 v4, 0x40
 
@@ -971,7 +964,6 @@
 
 .method public static isValidRingerMode(I)Z
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -1083,7 +1075,6 @@
 
 .method public static setMediaSilentMode(Z)V
     .locals 4
-    .param p0    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1111,7 +1102,6 @@
 
 .method public static setSmartVoumeEnable(Z)V
     .locals 4
-    .param p0    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1141,7 +1131,6 @@
 # virtual methods
 .method public abandonAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I
     .locals 6
-    .param p1    # Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
     const/4 v2, 0x0
 
@@ -1244,8 +1233,6 @@
 
 .method public adjustLocalOrRemoteStreamVolume(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x3
 
@@ -1310,8 +1297,6 @@
 
 .method public adjustMasterVolume(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1345,9 +1330,6 @@
 
 .method public adjustStreamVolume(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1396,9 +1378,6 @@
 
 .method public adjustSuggestedStreamVolume(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1447,8 +1426,6 @@
 
 .method public adjustVolume(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1497,8 +1474,6 @@
 
 .method public avrcpSupportsAbsoluteVolume(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1553,7 +1528,6 @@
 
 .method public dispatchMediaKeyEvent(Landroid/view/KeyEvent;)V
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1581,7 +1555,6 @@
 
 .method public forceVolumeControlStream(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1611,7 +1584,6 @@
 
 .method public getDevicesForStream(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1675,7 +1647,6 @@
 
 .method public getLastAudibleStreamVolume(I)I
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -1842,7 +1813,6 @@
 
 .method public getOutputLatency(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Landroid/media/AudioSystem;->getOutputLatency(I)I
 
@@ -1853,7 +1823,6 @@
 
 .method public getParameters(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/media/AudioSystem;->getParameters(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1864,7 +1833,6 @@
 
 .method public getProperty(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1970,7 +1938,6 @@
 
 .method public getRouting(I)I
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1981,7 +1948,6 @@
 
 .method public getStreamMaxVolume(I)I
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -2024,7 +1990,6 @@
 
 .method public getStreamVolume(I)I
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -2067,7 +2032,6 @@
 
 .method public getVibrateSetting(I)I
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -2099,8 +2063,6 @@
 
 .method public handleKeyDown(Landroid/view/KeyEvent;I)V
     .locals 12
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const/16 v11, 0x18
 
@@ -2282,8 +2244,6 @@
 
 .method public handleKeyUp(Landroid/view/KeyEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -2751,7 +2711,6 @@
 
 .method public isStreamMute(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -2886,7 +2845,6 @@
 
 .method public playSoundEffect(I)V
     .locals 5
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -2952,8 +2910,6 @@
 
 .method public playSoundEffect(IF)V
     .locals 5
-    .param p1    # I
-    .param p2    # F
 
     if-ltz p1, :cond_0
 
@@ -3007,8 +2963,6 @@
 
 .method public preDispatchKeyEvent(Landroid/view/KeyEvent;I)V
     .locals 7
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const/16 v6, 0x8
 
@@ -3062,7 +3016,6 @@
 
 .method public registerAudioFocusListener(Landroid/media/AudioManager$OnAudioFocusChangeListener;)V
     .locals 3
-    .param p1    # Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
     iget-object v1, p0, Landroid/media/AudioManager;->mFocusListenerLock:Ljava/lang/Object;
 
@@ -3111,7 +3064,6 @@
 
 .method public registerMediaButtonEventReceiver(Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     if-nez p1, :cond_0
 
@@ -3128,7 +3080,6 @@
 
 .method public registerMediaButtonEventReceiver(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v4, 0x0
 
@@ -3184,7 +3135,6 @@
 
 .method public registerMediaButtonEventReceiverForCalls(Landroid/content/ComponentName;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     if-nez p1, :cond_0
 
@@ -3217,8 +3167,6 @@
 
 .method public registerMediaButtonIntent(Landroid/app/PendingIntent;Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/ComponentName;
 
     if-nez p1, :cond_0
 
@@ -3283,7 +3231,6 @@
 
 .method public registerRemoteControlClient(Landroid/media/RemoteControlClient;)V
     .locals 6
-    .param p1    # Landroid/media/RemoteControlClient;
 
     if-eqz p1, :cond_0
 
@@ -3357,7 +3304,6 @@
 
 .method public registerRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;)V
     .locals 1
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     const/4 v0, -0x1
 
@@ -3368,9 +3314,6 @@
 
 .method public registerRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -3419,7 +3362,6 @@
 
 .method public registerRemoteController(Landroid/media/RemoteController;)Z
     .locals 10
-    .param p1    # Landroid/media/RemoteController;
 
     const/4 v6, 0x0
 
@@ -3551,9 +3493,6 @@
 
 .method public remoteControlDisplayUsesBitmapSize(Landroid/media/IRemoteControlDisplay;II)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -3602,8 +3541,6 @@
 
 .method public remoteControlDisplayWantsPlaybackPositionSync(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -3652,9 +3589,6 @@
 
 .method public requestAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I
     .locals 10
-    .param p1    # Landroid/media/AudioManager$OnAudioFocusChangeListener;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -3805,8 +3739,6 @@
 
 .method public requestAudioFocusForCall(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -3866,8 +3798,6 @@
 
 .method public setBluetoothA2dpDeviceConnectionState(Landroid/bluetooth/BluetoothDevice;I)I
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -3930,7 +3860,6 @@
 
 .method public setBluetoothA2dpOn(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3939,7 +3868,6 @@
 
 .method public setBluetoothScoOn(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -3987,7 +3915,6 @@
 
 .method public setMasterMute(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -3998,8 +3925,6 @@
 
 .method public setMasterMute(ZI)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4029,8 +3954,6 @@
 
 .method public setMasterVolume(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4064,7 +3987,6 @@
 
 .method public setMicrophoneMute(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-static {p1}, Landroid/media/AudioSystem;->muteMicrophone(Z)I
 
@@ -4073,7 +3995,6 @@
 
 .method public setMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4103,8 +4024,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4137,7 +4056,6 @@
 
 .method public setParameters(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
@@ -4146,7 +4064,6 @@
 
 .method public setRadioSpeakerOn(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4174,9 +4091,6 @@
 
 .method public setRemoteControlClientCommand(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4246,8 +4160,6 @@
 
 .method public setRemoteControlClientPlaybackPosition(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     const-wide/16 v2, 0x0
 
@@ -4316,7 +4228,6 @@
 
 .method public setRingerMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {p1}, Landroid/media/AudioManager;->isValidRingerMode(I)Z
 
@@ -4353,9 +4264,6 @@
 
 .method public setRouting(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4364,7 +4272,6 @@
 
 .method public setSpeakerphoneOn(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4412,7 +4319,6 @@
 
 .method public setStatusbarHasVolumeSlider(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4440,8 +4346,6 @@
 
 .method public setStreamMute(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4471,8 +4375,6 @@
 
 .method public setStreamSolo(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4502,9 +4404,6 @@
 
 .method public setStreamVolume(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4553,8 +4452,6 @@
 
 .method public setVibrateSetting(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4582,9 +4479,6 @@
 
 .method public setWiredDeviceConnectionState(IILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4628,7 +4522,6 @@
 
 .method public setWiredHeadsetOn(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4637,7 +4530,6 @@
 
 .method public shouldVibrate(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4778,7 +4670,6 @@
 
 .method public unregisterAudioFocusListener(Landroid/media/AudioManager$OnAudioFocusChangeListener;)V
     .locals 3
-    .param p1    # Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
     iget-object v1, p0, Landroid/media/AudioManager;->mFocusListenerLock:Ljava/lang/Object;
 
@@ -4809,7 +4700,6 @@
 
 .method public unregisterMediaButtonEventReceiver(Landroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     if-nez p1, :cond_0
 
@@ -4824,7 +4714,6 @@
 
 .method public unregisterMediaButtonEventReceiver(Landroid/content/ComponentName;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v3, 0x0
 
@@ -4882,7 +4771,6 @@
 
 .method public unregisterMediaButtonIntent(Landroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # Landroid/app/PendingIntent;
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 
@@ -4926,7 +4814,6 @@
 
 .method public unregisterRemoteControlClient(Landroid/media/RemoteControlClient;)V
     .locals 5
-    .param p1    # Landroid/media/RemoteControlClient;
 
     if-eqz p1, :cond_0
 
@@ -4990,7 +4877,6 @@
 
 .method public unregisterRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     if-nez p1, :cond_0
 
@@ -5039,7 +4925,6 @@
 
 .method public unregisterRemoteController(Landroid/media/RemoteController;)V
     .locals 5
-    .param p1    # Landroid/media/RemoteController;
 
     if-nez p1, :cond_0
 
@@ -5096,9 +4981,6 @@
 
 .method public updateRemoteControlClientMetadata(IILandroid/media/Rating;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/Rating;
 
     invoke-static {}, Landroid/media/AudioManager;->getService()Landroid/media/IAudioService;
 

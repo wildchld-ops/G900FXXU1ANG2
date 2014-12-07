@@ -71,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/ReviewDialog;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialog;->syncButtonEnabledState()V
 
@@ -80,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/ReviewDialog;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/ReviewDialog;->mClickDebounce:Z
 
@@ -89,8 +87,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/activities/ReviewDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/ReviewDialog;->mClickDebounce:Z
 
@@ -99,7 +95,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/ReviewDialog;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialog;->isEditingReview()Z
 
@@ -110,7 +105,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/ReviewDialog;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewDialog;->mEventLogger:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -119,7 +113,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/ReviewDialog;)Lcom/google/android/finsky/activities/ReviewDialog$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialog;->getListener()Lcom/google/android/finsky/activities/ReviewDialog$Listener;
 
@@ -130,7 +123,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/activities/ReviewDialog;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialog;->getUserRating()I
 
@@ -141,7 +133,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/activities/ReviewDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialog;->getUserTitle()Ljava/lang/String;
 
@@ -152,7 +143,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/activities/ReviewDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialog;->getUserComment()Ljava/lang/String;
 
@@ -163,7 +153,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/activities/ReviewDialog;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewDialog;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewDialog;->mAuthor:Lcom/google/android/finsky/api/model/Document;
 
@@ -281,14 +270,6 @@
 
 .method public static newInstance(ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/DocumentV2$Review;II[B)Lcom/google/android/finsky/activities/ReviewDialog;
     .locals 5
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Lcom/google/android/finsky/protos/DocumentV2$Review;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [B
 
     new-instance v1, Lcom/google/android/finsky/activities/ReviewDialog;
 
@@ -467,7 +448,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -496,7 +476,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewDialog;->getListener()Lcom/google/android/finsky/activities/ReviewDialog$Listener;
 
@@ -519,7 +498,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 31
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/activities/ReviewDialog;->getArguments()Landroid/os/Bundle;
 
@@ -1306,7 +1284,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "previous_rating"
 

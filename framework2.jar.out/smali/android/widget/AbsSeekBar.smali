@@ -88,7 +88,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -147,8 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -207,9 +204,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -356,7 +350,6 @@
 
 .method static synthetic access$000(Landroid/widget/AbsSeekBar;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsSeekBar;
 
     iget v0, p0, Landroid/widget/AbsSeekBar;->currentProgressLevel:I
 
@@ -365,8 +358,6 @@
 
 .method static synthetic access$002(Landroid/widget/AbsSeekBar;I)I
     .locals 0
-    .param p0    # Landroid/widget/AbsSeekBar;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AbsSeekBar;->currentProgressLevel:I
 
@@ -375,7 +366,6 @@
 
 .method static synthetic access$100(Landroid/widget/AbsSeekBar;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsSeekBar;
 
     iget-boolean v0, p0, Landroid/widget/AbsSeekBar;->isMuteNow:Z
 
@@ -554,10 +544,6 @@
 
 .method private setThumbPos(ILandroid/graphics/drawable/Drawable;FI)V
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # F
-    .param p4    # I
 
     iget v8, p0, Landroid/view/View;->mPaddingLeft:I
 
@@ -636,8 +622,6 @@
 
 .method private trackHoverEvent(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -705,7 +689,6 @@
 
 .method private trackTouchEvent(Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -855,8 +838,6 @@
 
 .method private updateThumbPos(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -1105,7 +1086,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/widget/ProgressBar;->invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -1199,7 +1179,6 @@
 
 .method protected declared-synchronized onDraw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     monitor-enter p0
 
@@ -1249,16 +1228,12 @@
 
 .method onHoverChanged(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1379,7 +1354,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/ProgressBar;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1396,7 +1370,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/ProgressBar;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1447,8 +1420,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1511,8 +1482,6 @@
 
 .method protected declared-synchronized onMeasure(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1629,8 +1598,6 @@
 
 .method onProgressRefresh(FZ)V
     .locals 10
-    .param p1    # F
-    .param p2    # Z
 
     const v8, 0x461c4000
 
@@ -1881,7 +1848,6 @@
 
 .method public onResolveDrawables(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/ProgressBar;->onResolveDrawables(I)V
 
@@ -1899,7 +1865,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 5
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onRtlPropertiesChanged(I)V
 
@@ -1945,10 +1910,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/ProgressBar;->onSizeChanged(IIII)V
 
@@ -1959,7 +1920,6 @@
 
 .method protected onSlidingRefresh(I)V
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/ProgressBar;->onSlidingRefresh(I)V
 
@@ -1989,9 +1949,6 @@
 
 .method onStartTrackingHover(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
@@ -2056,7 +2013,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -2252,8 +2208,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -2353,7 +2307,6 @@
 
 .method public setHoverPopupType(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->isHoveringUIEnabled()Z
 
@@ -2407,7 +2360,6 @@
 
 .method public setKeyProgressIncrement(I)V
     .locals 0
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -2421,7 +2373,6 @@
 
 .method public declared-synchronized setMax(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2502,7 +2453,6 @@
 
 .method public setMuteAnimation(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/AbsSeekBar;->misSeebarAnimationAvailable:Z
 
@@ -2516,7 +2466,6 @@
 
 .method public setSlidingAnimation(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/AbsSeekBar;->misSeebarAnimationAvailable:Z
 
@@ -2530,7 +2479,6 @@
 
 .method public setThumb(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x1
 
@@ -2649,7 +2597,6 @@
 
 .method public setThumbOffset(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AbsSeekBar;->mThumbOffset:I
 
@@ -2660,7 +2607,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/AbsSeekBar;->mThumb:Landroid/graphics/drawable/Drawable;
 

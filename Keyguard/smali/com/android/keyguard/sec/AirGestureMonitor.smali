@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +46,6 @@
 
 .method private handleAirMove(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -83,7 +81,6 @@
 # virtual methods
 .method public onGestureEvent(Lcom/samsung/android/service/gesture/GestureEvent;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/service/gesture/GestureEvent;
 
     const/4 v2, 0x1
 
@@ -140,7 +137,6 @@
 
 .method public registerCallback(Lcom/android/keyguard/sec/AirGestureMonitor$AirGestureMonitorCallback;)V
     .locals 4
-    .param p1    # Lcom/android/keyguard/sec/AirGestureMonitor$AirGestureMonitorCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/AirGestureMonitor;->mCallbacks:Lcom/android/keyguard/sec/AirGestureMonitor$AirGestureMonitorCallback;
 

@@ -219,7 +219,6 @@
 
 .method public declared-synchronized ping(Lgov/nist/core/ThreadAuditor$ThreadHandle;)V
     .locals 1
-    .param p1    # Lgov/nist/core/ThreadAuditor$ThreadHandle;
 
     monitor-enter p0
 
@@ -244,7 +243,6 @@
 
 .method public declared-synchronized removeThread(Ljava/lang/Thread;)V
     .locals 1
-    .param p1    # Ljava/lang/Thread;
 
     monitor-enter p0
 
@@ -293,7 +291,6 @@
 
 .method public setPingIntervalInMillisecs(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lgov/nist/core/ThreadAuditor;->pingIntervalInMillisecs:J
 

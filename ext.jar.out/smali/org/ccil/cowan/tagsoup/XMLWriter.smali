@@ -201,7 +201,6 @@
 
 .method public constructor <init>(Ljava/io/Writer;)V
     .locals 5
-    .param p1    # Ljava/io/Writer;
 
     const/4 v4, 0x0
 
@@ -330,7 +329,6 @@
 
 .method public constructor <init>(Lorg/xml/sax/XMLReader;)V
     .locals 5
-    .param p1    # Lorg/xml/sax/XMLReader;
 
     const/4 v4, 0x0
 
@@ -459,8 +457,6 @@
 
 .method public constructor <init>(Lorg/xml/sax/XMLReader;Ljava/io/Writer;)V
     .locals 5
-    .param p1    # Lorg/xml/sax/XMLReader;
-    .param p2    # Ljava/io/Writer;
 
     const/4 v4, 0x0
 
@@ -589,9 +585,6 @@
 
 .method private booleanAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -662,9 +655,6 @@
 
 .method private doPrefix(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget-object v3, p0, Lorg/ccil/cowan/tagsoup/XMLWriter;->nsSupport:Lorg/xml/sax/helpers/NamespaceSupport;
 
@@ -924,7 +914,6 @@
 
 .method private init(Ljava/io/Writer;)V
     .locals 1
-    .param p1    # Ljava/io/Writer;
 
     invoke-virtual {p0, p1}, Lorg/ccil/cowan/tagsoup/XMLWriter;->setOutput(Ljava/io/Writer;)V
 
@@ -963,7 +952,6 @@
 
 .method private write(C)V
     .locals 2
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -991,7 +979,6 @@
 
 .method private write(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1019,7 +1006,6 @@
 
 .method private writeAttributes(Lorg/xml/sax/Attributes;)V
     .locals 7
-    .param p1    # Lorg/xml/sax/Attributes;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1110,10 +1096,6 @@
 
 .method private writeEsc([CIIZ)V
     .locals 3
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1312,10 +1294,6 @@
 
 .method private writeName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1382,7 +1360,6 @@
 # virtual methods
 .method public characters(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1404,9 +1381,6 @@
 
 .method public characters([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1445,9 +1419,6 @@
 
 .method public comment([CII)V
     .locals 4
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1506,8 +1477,6 @@
 
 .method public dataElement(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1533,9 +1502,6 @@
 
 .method public dataElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1561,11 +1527,6 @@
 
 .method public dataElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lorg/xml/sax/Attributes;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1583,7 +1544,6 @@
 
 .method public emptyElement(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1603,8 +1563,6 @@
 
 .method public emptyElement(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1622,10 +1580,6 @@
 
 .method public emptyElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lorg/xml/sax/Attributes;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1721,7 +1675,6 @@
 
 .method public endElement(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1739,8 +1692,6 @@
 
 .method public endElement(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1756,9 +1707,6 @@
 
 .method public endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1934,7 +1882,6 @@
 
 .method public endEntity(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1961,7 +1908,6 @@
 
 .method public forceNSDecl(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/XMLWriter;->forcedDeclTable:Ljava/util/Hashtable;
 
@@ -1974,8 +1920,6 @@
 
 .method public forceNSDecl(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lorg/ccil/cowan/tagsoup/XMLWriter;->setPrefix(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1986,7 +1930,6 @@
 
 .method public getOutputProperty(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/XMLWriter;->outputProperties:Ljava/util/Properties;
 
@@ -1999,7 +1942,6 @@
 
 .method public getPrefix(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/XMLWriter;->prefixTable:Ljava/util/Hashtable;
 
@@ -2014,9 +1956,6 @@
 
 .method public ignorableWhitespace([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2034,8 +1973,6 @@
 
 .method public processingInstruction(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2092,7 +2029,6 @@
 
 .method public setOutput(Ljava/io/Writer;)V
     .locals 2
-    .param p1    # Ljava/io/Writer;
 
     if-nez p1, :cond_0
 
@@ -2115,8 +2051,6 @@
 
 .method public setOutputProperty(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -2232,8 +2166,6 @@
 
 .method public setPrefix(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/XMLWriter;->prefixTable:Ljava/util/Hashtable;
 
@@ -2255,9 +2187,6 @@
 
 .method public startDTD(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2494,7 +2423,6 @@
 
 .method public startElement(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2514,8 +2442,6 @@
 
 .method public startElement(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2533,10 +2459,6 @@
 
 .method public startElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lorg/xml/sax/Attributes;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2632,7 +2554,6 @@
 
 .method public startEntity(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;

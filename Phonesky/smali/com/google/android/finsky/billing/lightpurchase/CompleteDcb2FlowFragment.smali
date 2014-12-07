@@ -18,8 +18,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;->initializeBilling(Landroid/os/Bundle;)V
 
@@ -28,8 +26,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;->onBillingInitialized(Landroid/os/Bundle;)V
 
@@ -38,7 +34,6 @@
 
 .method private fetchTocAndInitializeBilling(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -72,7 +67,6 @@
 
 .method private initializeBilling(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment$2;
 
@@ -91,7 +85,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -112,7 +105,6 @@
 
 .method private onBillingInitialized(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/google/android/finsky/billing/BillingLocator;->getCarrierBillingStorage()Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -192,7 +184,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->onCreate(Landroid/os/Bundle;)V
 

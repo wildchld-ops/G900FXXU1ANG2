@@ -20,9 +20,6 @@
 
 .method public static load(Landroid/content/Context;II)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -71,7 +68,6 @@
 # virtual methods
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 

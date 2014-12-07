@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
 
@@ -29,8 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -41,7 +38,6 @@
 # virtual methods
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -88,7 +84,6 @@
 
 .method public setDefaultValueIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/activities/SettingsAutoUpdateListPreference;->mDefaultValueIndex:I
 
@@ -99,7 +94,6 @@
 
 .method public setListId(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/activities/SettingsAutoUpdateListPreference;->mListId:I
 

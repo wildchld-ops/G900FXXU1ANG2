@@ -28,9 +28,6 @@
 
 .method public static createChooserIntent(Landroid/content/Context;Landroid/content/Intent;I)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 

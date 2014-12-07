@@ -6,8 +6,6 @@
 # direct methods
 .method public static findAccount(Ljava/lang/String;Landroid/content/Context;)Landroid/accounts/Account;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -59,7 +57,6 @@
 
 .method public static getAccountFromPreferences(Landroid/content/Context;Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;)Landroid/accounts/Account;
     .locals 3
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -105,7 +102,6 @@
 
 .method public static getAccounts(Landroid/content/Context;)[Landroid/accounts/Account;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -122,7 +118,6 @@
 
 .method public static getFirstAccount(Landroid/content/Context;)Landroid/accounts/Account;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/google/android/finsky/api/AccountHandler;->getAccounts(Landroid/content/Context;)[Landroid/accounts/Account;
 
@@ -147,8 +142,6 @@
 
 .method public static hasAccount(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/api/AccountHandler;->findAccount(Ljava/lang/String;Landroid/content/Context;)Landroid/accounts/Account;
 
@@ -169,7 +162,6 @@
 
 .method public static saveAccountToPreferences(Landroid/accounts/Account;Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;)V
     .locals 1
-    .param p0    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

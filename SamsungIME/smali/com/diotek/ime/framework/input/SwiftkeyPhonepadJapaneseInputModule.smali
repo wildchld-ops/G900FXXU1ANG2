@@ -140,8 +140,6 @@
 
 .method private commitSelectedTextAndUpdateComposing(Landroid/view/inputmethod/InputConnection;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->deleteBlockText()V
 
@@ -498,8 +496,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 16
-    .param p1    # I
-    .param p2    # [I
 
     move-object/from16 v0, p0
 
@@ -920,7 +916,6 @@
 
 .method private processReplaceKey(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -1032,8 +1027,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v2, 0x0
 
@@ -1104,8 +1097,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 11
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v10, 0x0
 
@@ -1342,8 +1333,6 @@
 
 .method private replaceShiftVoice(ILjava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1478,7 +1467,6 @@
 # virtual methods
 .method protected addCurrentTextToCandidate(Ljava/util/ArrayList;Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1627,8 +1615,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v9, 0x1
 
@@ -1779,16 +1765,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v9, 0x1
 
@@ -1944,15 +1926,12 @@
 
 .method public previewTrace(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public processLeftKeyEvent(I[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v4, 0x1
 
@@ -1985,8 +1964,6 @@
 
 .method protected processMultiTapSymbolicKey(I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x1
 
@@ -2072,8 +2049,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v3, 0x0
 
@@ -2217,7 +2192,6 @@
 
 .method public toUpperCaseOfTurkish(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x69
 

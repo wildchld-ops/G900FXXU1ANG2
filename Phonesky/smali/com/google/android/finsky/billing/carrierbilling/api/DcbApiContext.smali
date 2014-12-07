@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

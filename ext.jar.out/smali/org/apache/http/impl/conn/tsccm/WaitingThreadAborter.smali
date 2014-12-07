@@ -41,7 +41,6 @@
 
 .method public setWaitingThread(Lorg/apache/http/impl/conn/tsccm/WaitingThread;)V
     .locals 1
-    .param p1    # Lorg/apache/http/impl/conn/tsccm/WaitingThread;
 
     iput-object p1, p0, Lorg/apache/http/impl/conn/tsccm/WaitingThreadAborter;->waitingThread:Lorg/apache/http/impl/conn/tsccm/WaitingThread;
 

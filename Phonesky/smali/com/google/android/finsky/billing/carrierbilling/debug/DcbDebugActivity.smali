@@ -133,7 +133,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->updateStatus()V
 
@@ -142,7 +141,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->updateStatusRunnable:Ljava/lang/Runnable;
 
@@ -151,9 +149,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->refreshCredentials(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
@@ -162,9 +157,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->refreshProvisioning(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
@@ -173,9 +165,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->refreshDcbParams(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
@@ -184,7 +173,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->displayProvisioning()V
 
@@ -193,7 +181,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->displayCredentials()V
 
@@ -202,7 +189,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->displayDcbParams()V
 
@@ -327,7 +313,6 @@
 
 .method private handleMenuClearItem(I)V
     .locals 4
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -383,7 +368,6 @@
 
 .method private handleMenuRefreshItem(I)V
     .locals 4
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -445,7 +429,6 @@
 
 .method private handleMenuViewDetails(I)V
     .locals 4
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -515,8 +498,6 @@
 
 .method private refreshCredentials(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 4
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity$ErrorRunnable;
 
@@ -547,8 +528,6 @@
 
 .method private refreshDcbParams(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -571,8 +550,6 @@
 
 .method private refreshProvisioning(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity$ErrorRunnable;
 
@@ -669,7 +646,6 @@
 
 .method private static whichField(Landroid/view/View;)I
     .locals 4
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getId()I
 
@@ -734,7 +710,6 @@
 # virtual methods
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -786,7 +761,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const v5, 0x7f0800a9
 
@@ -937,9 +911,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 8
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v4, 0x1
 
@@ -1029,7 +1000,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -1046,7 +1016,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

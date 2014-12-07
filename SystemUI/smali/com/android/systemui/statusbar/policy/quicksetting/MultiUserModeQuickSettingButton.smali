@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -136,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;->queryForUserInformation()V
 
@@ -145,7 +143,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -154,7 +151,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -163,7 +159,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -172,8 +167,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;->mUserName:Ljava/lang/String;
 
@@ -182,8 +175,6 @@
 
 .method static synthetic access$502(Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;->mAvatar:Landroid/graphics/drawable/Drawable;
 
@@ -192,8 +183,6 @@
 
 .method static synthetic access$602(Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;
-    .param p1    # Landroid/os/AsyncTask;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/MultiUserModeQuickSettingButton;->mUserInfoTask:Landroid/os/AsyncTask;
 
@@ -202,7 +191,6 @@
 
 .method public static copyBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Landroid/graphics/Bitmap;
 
     const/4 v5, 0x0
 
@@ -235,7 +223,6 @@
 
 .method public static drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x0
 
@@ -673,7 +660,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -754,7 +740,6 @@
 
 .method public onClick(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "STATUSBAR-MultiUserModeQuickSettingButton"
 

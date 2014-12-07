@@ -59,8 +59,6 @@
 # virtual methods
 .method public declared-synchronized broadcastFailure(Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/Exception;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -111,8 +109,6 @@
 
 .method public declared-synchronized broadcastFailure(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -159,7 +155,6 @@
 
 .method public declared-synchronized setContext(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 

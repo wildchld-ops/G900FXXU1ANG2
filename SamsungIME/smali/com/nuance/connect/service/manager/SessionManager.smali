@@ -149,7 +149,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v3, 0x2
 
@@ -260,7 +259,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/SessionManager;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/SessionManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/SessionManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -269,7 +267,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/manager/SessionManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/SessionManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/SessionManager;->determineNextPoll()V
 
@@ -278,8 +275,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/service/manager/SessionManager;Z)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/SessionManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/SessionManager;->poll(Z)V
 
@@ -494,7 +489,6 @@
 
 .method private poll(Z)V
     .locals 7
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/manager/SessionManager;->getSessionId()Ljava/lang/String;
 
@@ -561,7 +555,6 @@
 
 .method private processCreateSessionResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     sget-object v0, Lcom/nuance/connect/internal/common/InternalMessages;->MESSAGE_COMMAND_SESSION_CREATE:Lcom/nuance/connect/internal/common/InternalMessages;
 
@@ -620,7 +613,6 @@
 
 .method private processInvalidateSessionResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget v0, p1, Lcom/nuance/connect/service/comm/Response;->status:I
 
@@ -646,7 +638,6 @@
 
 .method private processPollResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     sget-object v4, Lcom/nuance/connect/internal/common/InternalMessages;->MESSAGE_COMMAND_SYSTEM_POLL:Lcom/nuance/connect/internal/common/InternalMessages;
 
@@ -793,8 +784,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "poll"
 
@@ -933,7 +922,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 
@@ -1017,7 +1005,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p1, Lcom/nuance/connect/service/comm/Response;->transactionId:Ljava/lang/String;
 

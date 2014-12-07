@@ -1379,7 +1379,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">Помилка прив’язки USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Прив’язку USB неможливо вимкнути під час використання SideSync. Вимкнення прив’язки USB призведе до вимкнення SideSync</string>
     <string name="usb_tethering_off_during_sidesync_popup">Прив’язку USB неможливо увімкнути під час використання SideSync. Увімкнення прив’язки USB призведе до вимкнення SideSync</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Прив’язка Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Прив’язка Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Відкрито спільний доступ до підкл. до Інтернету</string>
     <string name="bluetooth_tethering_device_connected_subtext">Підключення пристрою до Інтернету спільно використовується з 1 пристроєм</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Підключення пристрою до Інтернету спільно використовується з %d пристроями</string>

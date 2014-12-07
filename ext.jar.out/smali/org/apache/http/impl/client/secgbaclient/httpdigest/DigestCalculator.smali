@@ -58,10 +58,6 @@
 
 .method public constructor <init>(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;Ljava/lang/String;Ljava/lang/String;[B)V
     .locals 1
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
 
     const/4 v0, 0x0
 
@@ -535,7 +531,6 @@
 
 .method private calcMD5(Ljava/lang/String;)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v2, "MD5"
@@ -755,7 +750,6 @@
 
 .method private getAuthHeaderParamVal(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     invoke-virtual {p1}, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;->getUserName()Ljava/lang/String;
 

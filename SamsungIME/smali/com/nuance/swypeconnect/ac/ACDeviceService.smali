@@ -48,8 +48,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/swypeconnect/ac/ACManager;Lcom/nuance/connect/api/ConfigService;)V
     .locals 3
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACManager;
-    .param p2    # Lcom/nuance/connect/api/ConfigService;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACService;-><init>()V
 
@@ -106,7 +104,6 @@
 
 .method static synthetic access$000(Lcom/nuance/swypeconnect/ac/ACDeviceService;)Lcom/nuance/connect/util/ActionFilter;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDeviceService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDeviceService;->swyperIdFilter:Lcom/nuance/connect/util/ActionFilter;
 
@@ -115,7 +112,6 @@
 
 .method static synthetic access$100(Lcom/nuance/swypeconnect/ac/ACDeviceService;)V
     .locals 0
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDeviceService;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACDeviceService;->notifyCallbacksOfSwyperId()V
 
@@ -124,7 +120,6 @@
 
 .method static synthetic access$200(Lcom/nuance/swypeconnect/ac/ACDeviceService;)Lcom/nuance/connect/util/ActionFilter;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDeviceService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDeviceService;->deviceIdFilter:Lcom/nuance/connect/util/ActionFilter;
 
@@ -133,7 +128,6 @@
 
 .method static synthetic access$300(Lcom/nuance/swypeconnect/ac/ACDeviceService;)V
     .locals 0
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDeviceService;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACDeviceService;->notifyCallbacksOfDeviceId()V
 
@@ -248,7 +242,6 @@
 
 .method public registerCallback(Lcom/nuance/swypeconnect/ac/ACDeviceService$ACDeviceCallback;)V
     .locals 4
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACDeviceService$ACDeviceCallback;
 
     iget-object v2, p0, Lcom/nuance/swypeconnect/ac/ACDeviceService;->deviceCallbacks:Ljava/util/Set;
 
@@ -316,7 +309,6 @@
 
 .method public unregisterCallback(Lcom/nuance/swypeconnect/ac/ACDeviceService$ACDeviceCallback;)V
     .locals 3
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACDeviceService$ACDeviceCallback;
 
     iget-object v1, p0, Lcom/nuance/swypeconnect/ac/ACDeviceService;->deviceCallbacks:Ljava/util/Set;
 

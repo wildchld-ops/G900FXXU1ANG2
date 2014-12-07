@@ -91,7 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x2
 
@@ -261,7 +260,6 @@
 
 .method public static getRemainUsageTime(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/server/ssrm/fgapps/RemainingUsageTimeCalculator;->mFinalRemainingTime:[I
 
@@ -795,7 +793,6 @@
 
 .method initStartChecking(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/ssrm/fgapps/RemainingUsageTimeCalculator;->mStartLevel:I
 
@@ -816,7 +813,6 @@
 
 .method public onBatteryChange(I)V
     .locals 6
-    .param p1    # I
 
     const-wide/16 v0, -0x1
 
@@ -1094,7 +1090,6 @@
 
 .method updateRemainUsageTimeWithHistory(J)V
     .locals 18
-    .param p1    # J
 
     const/4 v5, 0x0
 

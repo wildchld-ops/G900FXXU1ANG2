@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/ssrm/MarvellFALImpl;Ljava/lang/String;I)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/ssrm/MarvellFALImpl$DVFSLockIntentSender;->this$0:Lcom/android/server/ssrm/MarvellFALImpl;
 

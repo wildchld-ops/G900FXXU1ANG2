@@ -36,7 +36,6 @@
 
 .method public constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/os/storage/SaltStorage;-><init>(I)V
 
@@ -61,8 +60,6 @@
 
 .method private delSalt(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const-string v3, "SDP.TimaSaltStorage"
 
@@ -193,7 +190,6 @@
 
 .method private generateSecretKey(Ljava/lang/String;)Ljavax/crypto/SecretKey;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const-string v9, "SDP.TimaSaltStorage"
 
@@ -277,7 +273,6 @@
 
 .method private getEntryPassword(I)Ljava/security/KeyStore$ProtectionParameter;
     .locals 4
-    .param p1    # I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -330,8 +325,6 @@
 
 .method private getSalt(II)Ljava/lang/String;
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -677,8 +670,6 @@
 
 .method private getSaltForTima20(II)Ljava/lang/String;
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/16 v9, 0x20
 
@@ -974,9 +965,6 @@
 
 .method private putSalt(ILjava/lang/String;I)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -1181,9 +1169,6 @@
 
 .method private putSaltForTima20(Ljava/lang/String;II)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/os/storage/TimaSaltStorage;->getTimaService()Landroid/service/tima/ITimaService;
 
@@ -1321,7 +1306,6 @@
 
 .method public putSalt([B)Z
     .locals 3
-    .param p1    # [B
 
     iget v0, p0, Landroid/os/storage/SaltStorage;->mPersonaId:I
 

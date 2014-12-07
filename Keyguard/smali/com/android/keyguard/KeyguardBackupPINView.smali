@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -40,8 +39,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/KeyguardAbsKeyInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -62,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardBackupPINView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardBackupPINView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardBackupPINView;->mShowImeAtScreenOn:Z
 
@@ -71,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardBackupPINView;)Lcom/android/keyguard/EmergencyButton;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardBackupPINView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardBackupPINView;->mEmergencyButton:Lcom/android/keyguard/EmergencyButton;
 
@@ -80,7 +75,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardBackupPINView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardBackupPINView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardBackupPINView;->mDummyEmergencyButton:Landroid/view/View;
 
@@ -89,7 +83,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardBackupPINView;)Lcom/android/keyguard/sec/EmergencyCircleView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardBackupPINView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardBackupPINView;->mEmergencyCircleView:Lcom/android/keyguard/sec/EmergencyCircleView;
 
@@ -300,7 +293,6 @@
 
 .method public onResume(I)V
     .locals 5
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->onResume(I)V
 

@@ -24,7 +24,6 @@
 # virtual methods
 .method public dialCheckNumber(Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

@@ -29,9 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Landroid/widget/TextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +49,6 @@
 
 .method static synthetic access$2600(Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;->mLock:Ljava/lang/Object;
 
@@ -61,7 +57,6 @@
 
 .method static synthetic access$2700(Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;->mRunnable:Ljava/lang/Runnable;
 
@@ -70,8 +65,6 @@
 
 .method static synthetic access$2702(Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;->mRunnable:Ljava/lang/Runnable;
 
@@ -80,7 +73,6 @@
 
 .method static synthetic access$2800(Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;->mTemporaryTextView:Landroid/widget/TextView;
 
@@ -91,7 +83,6 @@
 # virtual methods
 .method public setDurationText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;->mDurationTextView:Landroid/widget/TextView;
 
@@ -102,7 +93,6 @@
 
 .method public setPermanentText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;->mPermanentTextView:Landroid/widget/TextView;
 
@@ -113,9 +103,6 @@
 
 .method public setTemporaryText(Ljava/lang/String;JLjava/util/concurrent/TimeUnit;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Ljava/util/concurrent/TimeUnit;
 
     iget-object v1, p0, Lcom/android/dialer/CallDetailActivity$TextViewWithMessagesController;->mLock:Ljava/lang/Object;
 

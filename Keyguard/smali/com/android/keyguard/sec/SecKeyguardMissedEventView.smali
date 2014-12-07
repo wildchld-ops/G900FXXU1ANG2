@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -69,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -89,9 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -110,7 +104,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/SecKeyguardMissedEventView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardMissedEventView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -119,7 +112,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/SecKeyguardMissedEventView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardMissedEventView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -566,7 +558,6 @@
 
 .method public registerContextualEventManagerCallback(Lcom/android/keyguard/sec/SecKeyguardMissedEventView$ContextualEventManagerCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/SecKeyguardMissedEventView$ContextualEventManagerCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SecKeyguardMissedEventView;->mCallbacks:Lcom/android/keyguard/sec/SecKeyguardMissedEventView$ContextualEventManagerCallback;
 
@@ -585,7 +576,6 @@
 
 .method removeMissedEventView(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -739,9 +729,6 @@
 
 .method setMissedEventView(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
 
     const/4 v5, 0x1
 
@@ -913,7 +900,6 @@
 
 .method public setOnClickHandler(Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 3
-    .param p1    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardMissedEventView;->mMsgRemoteViews:Landroid/widget/RemoteViews;
 
@@ -959,7 +945,6 @@
 
 .method public showBouncer(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 

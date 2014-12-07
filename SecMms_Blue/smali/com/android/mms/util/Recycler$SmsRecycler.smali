@@ -169,11 +169,6 @@
 
 .method private getSegmentedLastDate(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;J[Ljava/lang/String;)J
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # J
-    .param p6    # [Ljava/lang/String;
 
     const-wide/16 v8, 0x0
 
@@ -352,10 +347,6 @@
 
 .method private segmentedDelete(Landroid/content/Context;Landroid/content/ContentResolver;JJ)J
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # J
-    .param p5    # J
 
     const/4 v10, 0x0
 
@@ -454,7 +445,6 @@
 # virtual methods
 .method protected anyThreadOverLimit(Landroid/content/Context;)Z
     .locals 13
-    .param p1    # Landroid/content/Context;
 
     const/4 v12, 0x0
 
@@ -654,9 +644,6 @@
 
 .method protected deleteMessagesForThread(Landroid/content/Context;JI)V
     .locals 22
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # I
 
     const-string v2, "Mms/Recycler:SMS"
 
@@ -1495,8 +1482,6 @@
 
 .method protected dumpMessage(Landroid/database/Cursor;Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/Context;
 
     const/4 v3, 0x4
 
@@ -1595,7 +1580,6 @@
 
 .method protected getAllThreads(Landroid/content/Context;)Landroid/database/Cursor;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -1622,7 +1606,6 @@
 
 .method public getMessageLimit(Landroid/content/Context;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1651,7 +1634,6 @@
 
 .method protected getThreadId(Landroid/database/Cursor;)J
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -1664,8 +1646,6 @@
 
 .method public setMessageLimit(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 

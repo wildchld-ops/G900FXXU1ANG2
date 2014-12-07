@@ -36,7 +36,6 @@
 # virtual methods
 .method public onTouchEvent(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardPatternView$4;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 

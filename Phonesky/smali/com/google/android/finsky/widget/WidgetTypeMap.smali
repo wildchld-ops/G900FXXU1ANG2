@@ -14,7 +14,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/google/android/finsky/utils/persistence/FileBasedKeyValueStore;
 
@@ -41,7 +40,6 @@
 
 .method constructor <init>(Lcom/google/android/finsky/utils/persistence/KeyValueStore;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/utils/persistence/KeyValueStore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +58,6 @@
 
 .method private static buildKey(Ljava/lang/Class;I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,7 +104,6 @@
 
 .method public static get(Landroid/content/Context;)Lcom/google/android/finsky/widget/WidgetTypeMap;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/google/android/finsky/widget/WidgetTypeMap;->sInstance:Lcom/google/android/finsky/widget/WidgetTypeMap;
 
@@ -127,8 +123,6 @@
 
 .method private getWidgets(Ljava/lang/Class;Ljava/lang/String;Z)[I
     .locals 11
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -266,7 +260,6 @@
 # virtual methods
 .method public delete(Ljava/lang/Class;I)V
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -290,7 +283,6 @@
 
 .method public get(Ljava/lang/Class;I)Ljava/lang/String;
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -333,7 +325,6 @@
 
 .method public getWidgets(Ljava/lang/Class;Ljava/lang/String;)[I
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -357,7 +348,6 @@
 
 .method public getWidgetsOfExactType(Ljava/lang/Class;Ljava/lang/String;)[I
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -381,8 +371,6 @@
 
 .method public put(Ljava/lang/Class;ILjava/lang/String;)V
     .locals 5
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

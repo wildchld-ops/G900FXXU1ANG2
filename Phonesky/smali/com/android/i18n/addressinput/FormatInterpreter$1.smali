@@ -50,8 +50,6 @@
 # virtual methods
 .method public compare(Lcom/android/i18n/addressinput/AddressField;Lcom/android/i18n/addressinput/AddressField;)I
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
-    .param p2    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormatInterpreter$1;->val$fieldPriority:Ljava/util/Map;
 
@@ -84,8 +82,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/i18n/addressinput/AddressField;
 

@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -38,8 +37,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -50,9 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -65,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/CreditCardNumberEditText;)Lcom/google/android/finsky/billing/creditcard/CreditCardType;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/CreditCardNumberEditText;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/CreditCardNumberEditText;->mCurrentType:Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
@@ -74,8 +67,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/layout/CreditCardNumberEditText;Lcom/google/android/finsky/billing/creditcard/CreditCardType;)Lcom/google/android/finsky/billing/creditcard/CreditCardType;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/CreditCardNumberEditText;
-    .param p1    # Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/CreditCardNumberEditText;->mCurrentType:Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
@@ -84,7 +75,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/CreditCardNumberEditText;)Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnCreditCardTypeChangedListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/CreditCardNumberEditText;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/CreditCardNumberEditText;->mOnCreditCardTypeChangedListener:Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnCreditCardTypeChangedListener;
 
@@ -93,7 +83,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/CreditCardNumberEditText;)Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnValidNumberEnteredListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/CreditCardNumberEditText;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/CreditCardNumberEditText;->mOnNumberEnteredListener:Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnValidNumberEnteredListener;
 
@@ -102,7 +91,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/CreditCardNumberEditText;)Landroid/content/res/ColorStateList;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/CreditCardNumberEditText;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/CreditCardNumberEditText;->mOriginalTextColors:Landroid/content/res/ColorStateList;
 
@@ -143,7 +131,6 @@
 
 .method public setOnCreditCardTypeChangedListener(Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnCreditCardTypeChangedListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnCreditCardTypeChangedListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/CreditCardNumberEditText;->mOnCreditCardTypeChangedListener:Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnCreditCardTypeChangedListener;
 
@@ -152,7 +139,6 @@
 
 .method public setOnNumberEnteredListener(Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnValidNumberEnteredListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnValidNumberEnteredListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/CreditCardNumberEditText;->mOnNumberEnteredListener:Lcom/google/android/finsky/layout/CreditCardNumberEditText$OnValidNumberEnteredListener;
 

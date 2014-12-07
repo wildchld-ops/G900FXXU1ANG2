@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SettingsEmergencySettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/SettingsEmergencySettings;
 
     iget-object v0, p0, Lcom/android/settings/SettingsEmergencySettings;->mMobilePreference:Landroid/preference/PreferenceScreen;
 
@@ -45,7 +44,6 @@
 
 .method private resizeIcon(I)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # I
 
     const v6, 0x3f07ae14
 
@@ -110,7 +108,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -296,8 +293,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x1
 

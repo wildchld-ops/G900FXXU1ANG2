@@ -27,7 +27,6 @@
 # virtual methods
 .method public preBind(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/api/model/Document;)V
     .locals 1
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",

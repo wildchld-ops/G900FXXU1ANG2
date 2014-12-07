@@ -421,7 +421,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/BrightnessPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mBrightnessPreference:Lcom/android/settings/BrightnessPreference;
 
@@ -430,7 +429,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->updateAccelerometerRotationCheckbox()V
 
@@ -439,7 +437,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/DisplaySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mSmartPause:Landroid/preference/CheckBoxPreference;
 
@@ -448,7 +445,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/DisplaySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mClearfont:Landroid/preference/CheckBoxPreference;
 
@@ -457,7 +453,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/FontSizeListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mFontSize:Lcom/android/settings/FontSizeListPreference;
 
@@ -466,7 +461,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->removeEnabledScreenReaderValue()V
 
@@ -475,7 +469,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/DisplaySettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mContextualPage:Landroid/preference/SwitchPreferenceScreen;
 
@@ -484,9 +477,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/DisplaySettings;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/DisplaySettings;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/DisplaySettings;->broadcastSmartScreenStatusChanged(Ljava/lang/String;Z)V
 
@@ -495,7 +485,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->updateAnimation()V
 
@@ -504,7 +493,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->stopAnimation()V
 
@@ -513,7 +501,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/DisplaySettings;->updateAccelerometerRotationSecondCheckbox()V
 
@@ -522,7 +509,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DisplaySettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mScreenTimeoutPreference:Landroid/preference/ListPreference;
 
@@ -531,7 +517,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/DisplaySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mAutoAdjustTouch:Landroid/preference/CheckBoxPreference;
 
@@ -540,7 +525,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/DisplaySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mMultiWindowPref:Landroid/preference/CheckBoxPreference;
 
@@ -549,7 +533,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/DisplaySettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mReadingMode:Landroid/preference/SwitchPreferenceScreen;
 
@@ -558,7 +541,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/DisplaySettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mInformativeScreenSwitch:Landroid/preference/SwitchPreferenceScreen;
 
@@ -567,7 +549,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/DisplaySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -576,7 +557,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/DisplaySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/DisplaySettings;->mSmartStay:Landroid/preference/CheckBoxPreference;
 
@@ -1688,7 +1668,6 @@
 
 .method private removeDisplayPreference(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -3011,7 +2990,6 @@
 # virtual methods
 .method public createSmartScreenGuideDialog(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getActivity()Landroid/app/Activity;
 
@@ -3301,7 +3279,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -3331,7 +3308,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v1, p0, Lcom/android/settings/DisplaySettings;->mBrightnessPreference:Lcom/android/settings/BrightnessPreference;
 
@@ -6552,7 +6528,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 

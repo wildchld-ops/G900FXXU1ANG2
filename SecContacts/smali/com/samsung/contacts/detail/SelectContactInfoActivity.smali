@@ -302,8 +302,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/detail/SelectContactInfoActivity;Lcom/android/contacts/model/Contact;)Lcom/android/contacts/model/Contact;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SelectContactInfoActivity;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->mContactData:Lcom/android/contacts/model/Contact;
 
@@ -312,7 +310,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/SelectContactInfoActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SelectContactInfoActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->bindData()V
 
@@ -321,7 +318,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/detail/SelectContactInfoActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SelectContactInfoActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->mAllEntries:Ljava/util/ArrayList;
 
@@ -330,7 +326,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/detail/SelectContactInfoActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SelectContactInfoActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->mSelectAllChecked:Z
 
@@ -339,7 +334,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/detail/SelectContactInfoActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SelectContactInfoActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->mCheckedList:Ljava/util/ArrayList;
 
@@ -348,9 +342,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/detail/SelectContactInfoActivity;Landroid/widget/TextView;I)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SelectContactInfoActivity;
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->setMaxLines(Landroid/widget/TextView;I)V
 
@@ -432,9 +423,6 @@
 
 .method private buildEmailEntries(Lcom/android/contacts/model/dataitem/DataItem;Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;Lcom/android/contacts/common/model/dataitem/DataKind;)V
     .locals 9
-    .param p1    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p2    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
-    .param p3    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     invoke-virtual {p1}, Lcom/android/contacts/model/dataitem/DataItem;->isSuperPrimary()Z
 
@@ -841,7 +829,6 @@
 
 .method private buildEventDateEntries(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->mContext:Landroid/content/Context;
 
@@ -874,9 +861,6 @@
 
 .method private buildImActions(Landroid/content/Context;Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;Lcom/android/contacts/model/dataitem/ImDataItem;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
-    .param p3    # Lcom/android/contacts/model/dataitem/ImDataItem;
 
     const/4 v3, 0x5
 
@@ -946,8 +930,6 @@
 
 .method private buildImEntries(Lcom/android/contacts/model/dataitem/DataItem;Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p2    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->mContext:Landroid/content/Context;
 
@@ -964,8 +946,6 @@
 
 .method private buildNicknameEntries(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;Z)V
     .locals 3
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
-    .param p2    # Z
 
     if-eqz p2, :cond_1
 
@@ -1011,7 +991,6 @@
 
 .method private buildNoteEntries(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1034,8 +1013,6 @@
 
 .method private buildOrganizationEntries(Lcom/android/contacts/model/dataitem/DataItem;Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p2    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     check-cast p1, Lcom/android/contacts/model/dataitem/OrganizationDataItem;
 
@@ -1066,8 +1043,6 @@
 
 .method private buildPhoneEntries(Lcom/android/contacts/model/dataitem/DataItem;Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p2    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     move-object v0, p1
 
@@ -1144,7 +1119,6 @@
 
 .method private buildPostalEntries(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1167,7 +1141,6 @@
 
 .method private buildRelationDateEntries(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1190,7 +1163,6 @@
 
 .method private buildSipAddressEntries(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1213,7 +1185,6 @@
 
 .method private buildWebsteEntries(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/detail/SelectContactInfoActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1339,8 +1310,6 @@
 
 .method private parseData(Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/SelectContactInfoActivity$DetailViewEntry;
-    .param p2    # Ljava/lang/StringBuilder;
 
     if-nez p1, :cond_1
 
@@ -1451,8 +1420,6 @@
 
 .method private setMaxLines(Landroid/widget/TextView;I)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1718,7 +1685,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1807,7 +1773,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1846,9 +1811,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1965,7 +1927,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1999,7 +1960,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const v0, 0x7f080173
 
@@ -2030,7 +1990,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "checkedList"
 

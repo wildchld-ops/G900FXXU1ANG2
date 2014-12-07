@@ -36,14 +36,12 @@
 # virtual methods
 .method public onTabReselected(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onTabSelected(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment$1;->this$0:Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
@@ -55,7 +53,6 @@
 
 .method public onTabUnselected(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

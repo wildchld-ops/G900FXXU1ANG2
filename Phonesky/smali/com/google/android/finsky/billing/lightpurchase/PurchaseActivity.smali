@@ -62,10 +62,6 @@
 
 .method public static createIntent(Landroid/accounts/Account;Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;[BLandroid/os/Bundle;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
-    .param p2    # [B
-    .param p3    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -98,8 +94,6 @@
 
 .method private dismissIfPossible(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseActivity;->getPurchaseFragment()Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
 
@@ -159,7 +153,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const-string v0, "Not using tree impressions."
 
@@ -174,7 +167,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     sget-boolean v0, Lcom/google/android/finsky/billing/lightpurchase/PurchaseActivity;->DISABLE_DISMISS_ON_TOUCH_OUTSIDE:Z
 
@@ -392,7 +384,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -524,7 +515,6 @@
 
 .method protected onFinish(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
 
     const/4 v7, 0x0
 

@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
 
     const/4 v4, 0x0
 
@@ -80,9 +79,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;JZ)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
-    .param p2    # J
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -125,8 +121,6 @@
 
 .method public static getMaxMode(Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;)Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
     .locals 2
-    .param p0    # Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
 
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
 
@@ -151,7 +145,6 @@
 # virtual methods
 .method public addType(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->typeRequested:Ljava/util/HashSet;
 
@@ -245,7 +238,6 @@
 
 .method public hasType(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->typeRequested:Ljava/util/HashSet;
 
@@ -264,7 +256,6 @@
 
 .method public merge(Lcom/nuance/connect/location/SwypeLocationSettings;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationSettings;
 
     const/4 v2, 0x1
 
@@ -403,7 +394,6 @@
 
 .method public setActiveSearch(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->activeSearch:Z
 
@@ -412,7 +402,6 @@
 
 .method public setGeocode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->geocode:Z
 
@@ -421,7 +410,6 @@
 
 .method public setGeocodeInterval(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->geoCodeInterval:J
 
@@ -430,7 +418,6 @@
 
 .method public setInterval(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->interval:J
 
@@ -439,7 +426,6 @@
 
 .method public setLastGeocodeTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->lastGeocode:J
 
@@ -448,7 +434,6 @@
 
 .method public setMode(Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
 
     iput-object p1, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->mode:Lcom/nuance/connect/location/SwypeLocationSettings$LocationMode;
 
@@ -457,7 +442,6 @@
 
 .method public setTotalTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/nuance/connect/location/SwypeLocationSettings;->totalTime:J
 

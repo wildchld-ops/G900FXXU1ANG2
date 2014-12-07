@@ -13,8 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,7 +27,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/util/StringDecorator;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/util/StringDecorator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +37,6 @@
 
 .method private findResourceById(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 

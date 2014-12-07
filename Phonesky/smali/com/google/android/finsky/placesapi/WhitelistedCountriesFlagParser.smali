@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,7 +74,6 @@
 
 .method private static getApplicationVersion(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -110,8 +108,6 @@
 
 .method static parse(Ljava/lang/String;I)Ljava/util/Set;
     .locals 14
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -272,7 +268,6 @@
 # virtual methods
 .method public isCountryEnabled(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/placesapi/WhitelistedCountriesFlagParser;->mEnabledCountries:Ljava/util/Set;
 

@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Lcom/android/dialer/CallDetailActivity;)V
     .locals 2
-    .param p1    # Lcom/android/dialer/CallDetailActivity;
 
     const/4 v1, 0x0
 
@@ -137,7 +136,6 @@
 
 .method public static final getCurrentCountryIso(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "country_detector"
 
@@ -238,7 +236,6 @@
 
 .method public generateTelUri(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;->TAG:Ljava/lang/String;
 
@@ -318,7 +315,6 @@
 
 .method public pinFillDataAtTheEnd(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;->generateTelUri(Ljava/lang/String;)Ljava/lang/String;
 
@@ -767,7 +763,6 @@
 
 .method readDataFromQueryOwn(Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Landroid/database/Cursor;
 
     sget-object v4, Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;->TAG:Ljava/lang/String;
 

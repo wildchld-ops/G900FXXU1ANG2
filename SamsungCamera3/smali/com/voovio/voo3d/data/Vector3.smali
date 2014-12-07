@@ -30,9 +30,6 @@
 
 .method public constructor <init>(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +46,6 @@
 # virtual methods
 .method public add(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -111,7 +107,6 @@
 
 .method public copy(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p1, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -130,7 +125,6 @@
 
 .method public cross(Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 6
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     new-instance v0, Lcom/voovio/voo3d/data/Vector3;
 
@@ -183,8 +177,6 @@
 
 .method public cross(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector3;->y:F
 
@@ -239,7 +231,6 @@
 
 .method public dot(Lcom/voovio/voo3d/data/Vector3;)F
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -268,8 +259,6 @@
 
 .method public dotPerp(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)F
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     invoke-static {}, Lcom/voovio/voo3d/data/Vector3Pool;->getVector3()Lcom/voovio/voo3d/data/Vector3;
 
@@ -288,7 +277,6 @@
 
 .method public equals(Lcom/voovio/voo3d/data/Vector3;)Z
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -327,7 +315,6 @@
 
 .method public getAngle(Lcom/voovio/voo3d/data/Vector3;)F
     .locals 9
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v5, 0x0
 
@@ -405,8 +392,6 @@
 
 .method public getAngle(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)F
     .locals 9
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     const/high16 v1, 0x3f800000
 
@@ -633,9 +618,6 @@
 
 .method public reset(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iput p1, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -648,8 +630,6 @@
 
 .method public rotateAxis(FLcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p1    # F
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     invoke-static {}, Lcom/voovio/voo3d/data/Matrix4Pool;->getMatrix4()Lcom/voovio/voo3d/data/Matrix4;
 
@@ -674,7 +654,6 @@
 
 .method public rotateY(F)V
     .locals 6
-    .param p1    # F
 
     iget v2, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -719,7 +698,6 @@
 
 .method public scale(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -744,7 +722,6 @@
 
 .method public sub(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -787,7 +764,6 @@
 
 .method public toString(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/text/DecimalFormat;
 
@@ -864,7 +840,6 @@
 
 .method public unitCross(Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 6
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     new-instance v0, Lcom/voovio/voo3d/data/Vector3;
 
@@ -919,8 +894,6 @@
 
 .method public unitCross(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector3;->y:F
 

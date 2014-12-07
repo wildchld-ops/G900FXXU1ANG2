@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/BoxListFrame;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$BoxListQueryHandler;->this$0:Lcom/android/mms/ui/BoxListFrame;
 
@@ -36,9 +35,6 @@
 # virtual methods
 .method protected onDeleteComplete(ILjava/lang/Object;I)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     const/16 v7, 0x66
 
@@ -201,9 +197,6 @@
 
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v5, 0x1
 
@@ -527,7 +520,6 @@
 
 .method public setmDeleteEventHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$BoxListQueryHandler;->mDeleteEventHandler:Landroid/os/Handler;
 

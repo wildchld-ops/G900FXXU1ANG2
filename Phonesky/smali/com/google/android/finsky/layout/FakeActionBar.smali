@@ -25,15 +25,12 @@
 # virtual methods
 .method public addTab(Ljava/lang/String;Lcom/google/android/finsky/layout/CustomActionBar$TabListener;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/layout/CustomActionBar$TabListener;
 
     return-void
 .end method
 
 .method public autoUpdateButtonClicked(Landroid/support/v4/app/FragmentActivity;)V
     .locals 0
-    .param p1    # Landroid/support/v4/app/FragmentActivity;
 
     return-void
 .end method
@@ -46,8 +43,6 @@
 
 .method public configureMenu(Landroid/app/Activity;Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/view/Menu;
 
     return-void
 .end method
@@ -84,16 +79,12 @@
 
 .method public initialize(Lcom/google/android/finsky/navigationmanager/NavigationManager;Landroid/app/Activity;Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     return-void
 .end method
 
 .method public searchButtonClicked(Landroid/app/Activity;)Z
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     const/4 v0, 0x0
 
@@ -102,21 +93,18 @@
 
 .method public setSelectedTab(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public shareButtonClicked(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     return-void
 .end method
 
 .method public updateBreadcrumb(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/FakeActionBar;->mBreadcrumb:Ljava/lang/String;
 
@@ -125,7 +113,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/FakeActionBar;->mBackendId:I
 
@@ -138,14 +125,12 @@
 
 .method public updateSearchQuery(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public wishlistButtonClicked(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     return-void
 .end method

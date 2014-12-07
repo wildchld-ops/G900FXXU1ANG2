@@ -39,8 +39,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter;Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter;
-    .param p2    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;-><init>(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter;)V
 
@@ -49,7 +47,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mWrapper:Landroid/widget/RelativeLayout;
 
@@ -58,8 +55,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;Landroid/widget/RelativeLayout;)Landroid/widget/RelativeLayout;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
-    .param p1    # Landroid/widget/RelativeLayout;
 
     iput-object p1, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mWrapper:Landroid/widget/RelativeLayout;
 
@@ -68,7 +63,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mTitle:Landroid/widget/TextView;
 
@@ -77,8 +71,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mTitle:Landroid/widget/TextView;
 
@@ -87,7 +79,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mDescription:Landroid/widget/TextView;
 
@@ -96,8 +87,6 @@
 
 .method static synthetic access$302(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mDescription:Landroid/widget/TextView;
 
@@ -106,7 +95,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;)Lcom/google/android/finsky/layout/HeroGraphicView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mVideoImage:Lcom/google/android/finsky/layout/HeroGraphicView;
 
@@ -115,8 +103,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;Lcom/google/android/finsky/layout/HeroGraphicView;)Lcom/google/android/finsky/layout/HeroGraphicView;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;
-    .param p1    # Lcom/google/android/finsky/layout/HeroGraphicView;
 
     iput-object p1, p0, Lcom/google/android/finsky/adapters/EditorialBucketListAdapter$EditorialVideoHolder;->mVideoImage:Lcom/google/android/finsky/layout/HeroGraphicView;
 

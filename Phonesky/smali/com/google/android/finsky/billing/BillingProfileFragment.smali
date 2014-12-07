@@ -42,12 +42,6 @@
 
 .method private addEntry(Landroid/view/ViewGroup;Ljava/lang/String;IZLjava/lang/String;Landroid/view/View$OnClickListener;)V
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/view/View$OnClickListener;
 
     const/4 v5, 0x0
 
@@ -156,8 +150,6 @@
 
 .method public static newInstance(Landroid/accounts/Account;Ljava/lang/String;)Lcom/google/android/finsky/billing/BillingProfileFragment;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -323,7 +315,6 @@
 
 .method protected notifyListenerOnInstrumentSelected(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/BillingProfileFragment;->getListener()Lcom/google/android/finsky/billing/BillingProfileFragment$Listener;
 
@@ -339,7 +330,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -357,9 +347,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f04001e
 
@@ -444,7 +431,6 @@
 
 .method protected onFatalError(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/BillingProfileFragment;->renderProfile()V
 
@@ -485,7 +471,6 @@
 
 .method protected onInstrumentCreated(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileFragment;->notifyListenerOnInstrumentSelected(Ljava/lang/String;)V
 
@@ -494,8 +479,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x6
 
@@ -514,8 +497,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x6
 
@@ -534,7 +515,6 @@
 
 .method protected onStoredValueAdded(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -639,7 +619,6 @@
 
 .method protected renderInstruments([Lcom/google/android/finsky/protos/CommonDevice$Instrument;)V
     .locals 17
-    .param p1    # [Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
     move-object/from16 v0, p0
 

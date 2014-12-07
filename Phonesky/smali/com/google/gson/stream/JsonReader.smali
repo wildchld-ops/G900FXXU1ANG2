@@ -75,7 +75,6 @@
 
 .method public constructor <init>(Ljava/io/Reader;)V
     .locals 3
-    .param p1    # Ljava/io/Reader;
 
     const/4 v2, 0x1
 
@@ -137,7 +136,6 @@
 
 .method static synthetic access$000(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/stream/JsonToken;
     .locals 1
-    .param p0    # Lcom/google/gson/stream/JsonReader;
 
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->token:Lcom/google/gson/stream/JsonToken;
 
@@ -146,8 +144,6 @@
 
 .method static synthetic access$002(Lcom/google/gson/stream/JsonReader;Lcom/google/gson/stream/JsonToken;)Lcom/google/gson/stream/JsonToken;
     .locals 0
-    .param p0    # Lcom/google/gson/stream/JsonReader;
-    .param p1    # Lcom/google/gson/stream/JsonToken;
 
     iput-object p1, p0, Lcom/google/gson/stream/JsonReader;->token:Lcom/google/gson/stream/JsonToken;
 
@@ -156,7 +152,6 @@
 
 .method static synthetic access$100(Lcom/google/gson/stream/JsonReader;)I
     .locals 1
-    .param p0    # Lcom/google/gson/stream/JsonReader;
 
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->getLineNumber()I
 
@@ -167,7 +162,6 @@
 
 .method static synthetic access$200(Lcom/google/gson/stream/JsonReader;)I
     .locals 1
-    .param p0    # Lcom/google/gson/stream/JsonReader;
 
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->getColumnNumber()I
 
@@ -178,8 +172,6 @@
 
 .method static synthetic access$302(Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/gson/stream/JsonReader;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/gson/stream/JsonReader;->value:Ljava/lang/String;
 
@@ -188,7 +180,6 @@
 
 .method static synthetic access$400(Lcom/google/gson/stream/JsonReader;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/gson/stream/JsonReader;
 
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->name:Ljava/lang/String;
 
@@ -197,8 +188,6 @@
 
 .method static synthetic access$402(Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/gson/stream/JsonReader;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/gson/stream/JsonReader;->name:Ljava/lang/String;
 
@@ -731,9 +720,6 @@
 
 .method private decodeNumber([CII)Lcom/google/gson/stream/JsonToken;
     .locals 6
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/16 v5, 0x2d
 
@@ -873,7 +859,6 @@
 
 .method private expect(Lcom/google/gson/stream/JsonToken;)V
     .locals 3
-    .param p1    # Lcom/google/gson/stream/JsonToken;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -960,7 +945,6 @@
 
 .method private fillBuffer(I)Z
     .locals 12
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1217,7 +1201,6 @@
 
 .method private nextInArray(Z)Lcom/google/gson/stream/JsonToken;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1346,7 +1329,6 @@
 
 .method private nextInObject(Z)Lcom/google/gson/stream/JsonToken;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1502,7 +1484,6 @@
 
 .method private nextLiteral(Z)Ljava/lang/String;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1696,7 +1677,6 @@
 
 .method private nextNonWhitespace(Z)I
     .locals 9
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1902,7 +1882,6 @@
 
 .method private nextString(C)Ljava/lang/String;
     .locals 9
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2204,7 +2183,6 @@
 
 .method private push(Lcom/google/gson/stream/JsonScope;)V
     .locals 4
-    .param p1    # Lcom/google/gson/stream/JsonScope;
 
     const/4 v3, 0x0
 
@@ -2523,7 +2501,6 @@
 
 .method private skipTo(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2650,7 +2627,6 @@
 
 .method private syntaxError(Ljava/lang/String;)Ljava/io/IOException;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4110,7 +4086,6 @@
 
 .method public final setLenient(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
 

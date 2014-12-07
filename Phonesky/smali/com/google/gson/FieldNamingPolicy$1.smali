@@ -29,7 +29,6 @@
 # virtual methods
 .method public translateName(Ljava/lang/reflect/Field;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/reflect/Field;
 
     invoke-virtual {p1}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 

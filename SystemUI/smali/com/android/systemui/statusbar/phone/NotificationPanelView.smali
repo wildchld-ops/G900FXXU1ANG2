@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/PanelView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -34,7 +32,6 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
@@ -75,7 +72,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v3, 0x0
 
@@ -110,8 +106,6 @@
 
 .method public fling(FZ)V
     .locals 4
-    .param p1    # F
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
 
@@ -255,11 +249,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/android/systemui/statusbar/phone/PanelView;->onLayout(ZIIII)V
 
@@ -277,7 +266,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x2
 
@@ -473,7 +461,6 @@
 
 .method public setStatusBar(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NotificationPanelView;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 

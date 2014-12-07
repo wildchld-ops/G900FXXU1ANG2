@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener$TosResult;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener$TosResult;
 

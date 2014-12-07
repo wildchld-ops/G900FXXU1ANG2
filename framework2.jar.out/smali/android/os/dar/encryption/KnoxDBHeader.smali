@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(I[B)V
     .locals 7
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v6, 0x0
 
@@ -168,7 +166,6 @@
 
 .method public constructor <init>([B)V
     .locals 11
-    .param p1    # [B
 
     const/4 v8, 0x0
 
@@ -352,7 +349,6 @@
 
 .method public static byteArrayToInt([B)I
     .locals 4
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -395,7 +391,6 @@
 
 .method public static intToByteArray(I)[B
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -440,7 +435,6 @@
 # virtual methods
 .method public dump(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v2, p0, Landroid/os/dar/encryption/KnoxDBHeader;->isValid:Z
 

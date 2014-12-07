@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPServerTransaction;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPServerTransaction$RetransmissionAlertTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPServerTransaction;
 

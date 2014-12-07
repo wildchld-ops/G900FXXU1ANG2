@@ -71,7 +71,6 @@
 
 .method private sendSIOPExceptionIntent(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-boolean v1, Lcom/android/server/ssrm/fgapps/ScreenMirroringBooster;->mExceptionEnabled:Z
 
@@ -457,9 +456,6 @@
 # virtual methods
 .method public onStatusNotiReceived(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "SecurePlayback_play"
 

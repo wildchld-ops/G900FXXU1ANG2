@@ -117,13 +117,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/ActivityThread;Landroid/content/pm/ApplicationInfo;Landroid/content/res/CompatibilityInfo;Landroid/app/ActivityThread;Ljava/lang/ClassLoader;ZZ)V
     .locals 6
-    .param p1    # Landroid/app/ActivityThread;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p3    # Landroid/content/res/CompatibilityInfo;
-    .param p4    # Landroid/app/ActivityThread;
-    .param p5    # Ljava/lang/ClassLoader;
-    .param p6    # Z
-    .param p7    # Z
 
     const/4 v5, 0x0
 
@@ -317,11 +310,6 @@
 
 .method public constructor <init>(Landroid/app/ActivityThread;Ljava/lang/String;Landroid/content/Context;Landroid/content/pm/ApplicationInfo;Landroid/content/res/CompatibilityInfo;)V
     .locals 3
-    .param p1    # Landroid/app/ActivityThread;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/content/pm/ApplicationInfo;
-    .param p5    # Landroid/content/res/CompatibilityInfo;
 
     const/4 v2, 0x0
 
@@ -422,8 +410,6 @@
 
 .method private static combineLibs([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # [Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     const/16 v8, 0x3a
 
@@ -526,7 +512,6 @@
 
 .method private static getLibrariesFor(Ljava/lang/String;)[Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -741,8 +726,6 @@
 # virtual methods
 .method public forgetReceiverDispatcher(Landroid/content/Context;Landroid/content/BroadcastReceiver;)Landroid/content/IIntentReceiver;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/BroadcastReceiver;
 
     iget-object v5, p0, Landroid/app/LoadedApk;->mReceivers:Landroid/util/ArrayMap;
 
@@ -962,8 +945,6 @@
 
 .method public final forgetServiceDispatcher(Landroid/content/Context;Landroid/content/ServiceConnection;)Landroid/app/IServiceConnection;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ServiceConnection;
 
     iget-object v5, p0, Landroid/app/LoadedApk;->mServices:Landroid/util/ArrayMap;
 
@@ -1207,7 +1188,6 @@
 
 .method public getAssets(Landroid/app/ActivityThread;)Landroid/content/res/AssetManager;
     .locals 1
-    .param p1    # Landroid/app/ActivityThread;
 
     invoke-virtual {p0, p1}, Landroid/app/LoadedApk;->getResources(Landroid/app/ActivityThread;)Landroid/content/res/Resources;
 
@@ -1492,11 +1472,6 @@
 
 .method public getReceiverDispatcher(Landroid/content/BroadcastReceiver;Landroid/content/Context;Landroid/os/Handler;Landroid/app/Instrumentation;Z)Landroid/content/IIntentReceiver;
     .locals 11
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/app/Instrumentation;
-    .param p5    # Z
 
     iget-object v10, p0, Landroid/app/LoadedApk;->mReceivers:Landroid/util/ArrayMap;
 
@@ -1660,7 +1635,6 @@
 
 .method public getResources(Landroid/app/ActivityThread;)Landroid/content/res/Resources;
     .locals 3
-    .param p1    # Landroid/app/ActivityThread;
 
     iget-object v0, p0, Landroid/app/LoadedApk;->mResources:Landroid/content/res/Resources;
 
@@ -1686,10 +1660,6 @@
 
 .method public final getServiceDispatcher(Landroid/content/ServiceConnection;Landroid/content/Context;Landroid/os/Handler;I)Landroid/app/IServiceConnection;
     .locals 6
-    .param p1    # Landroid/content/ServiceConnection;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # I
 
     iget-object v5, p0, Landroid/app/LoadedApk;->mServices:Landroid/util/ArrayMap;
 
@@ -1801,8 +1771,6 @@
 
 .method public makeApplication(ZLandroid/app/Instrumentation;)Landroid/app/Application;
     .locals 8
-    .param p1    # Z
-    .param p2    # Landroid/app/Instrumentation;
 
     iget-object v5, p0, Landroid/app/LoadedApk;->mApplication:Landroid/app/Application;
 
@@ -1983,9 +1951,6 @@
 
 .method public removeContextRegistrations(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/StrictMode;->vmRegistrationLeaksEnabled()Z
 
@@ -2300,7 +2265,6 @@
 
 .method public setCompatibilityInfo(Landroid/content/res/CompatibilityInfo;)V
     .locals 1
-    .param p1    # Landroid/content/res/CompatibilityInfo;
 
     iget-object v0, p0, Landroid/app/LoadedApk;->mDisplayAdjustments:Landroid/view/DisplayAdjustments;
 

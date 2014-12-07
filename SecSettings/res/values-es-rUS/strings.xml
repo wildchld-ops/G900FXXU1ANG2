@@ -1380,7 +1380,7 @@ También puede mostrar u ocultar el indicador de las ventanas múltiples al mant
     <string name="usb_tethering_errored_subtext">Error de anclaje a red de USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">No es posible desactivar el anclaje a red USB mientras se usa Sincronización paralela. La desactivación del anclaje a red USB desactivará Sincronización paralela.</string>
     <string name="usb_tethering_off_during_sidesync_popup">No es posible activar el anclaje a red USB mientras esta usando Sincronización paralela. La activación del anclaje a red USB desactivará Sincronización paralela.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Conexión a red Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Conexión a red Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Compartiendo la conexión a Internet de este dispositivo…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Conexión a Internet del dispositivo compartida con 1 dispositivo</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Conexión a Internet del dispositivo compartida con %d dispositivos</string>

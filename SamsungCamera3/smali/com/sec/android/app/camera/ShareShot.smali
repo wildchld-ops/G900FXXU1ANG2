@@ -112,7 +112,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 3
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v2, 0x0
 
@@ -206,7 +205,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/ShareShot;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/ShareShot;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ShareShot;->mActiveIp:Ljava/lang/String;
 
@@ -215,8 +213,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/app/camera/ShareShot;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/ShareShot;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ShareShot;->mActiveIp:Ljava/lang/String;
 
@@ -225,8 +221,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/ShareShot;Lcom/samsung/dmc/ux/db/UserInfo;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/ShareShot;
-    .param p1    # Lcom/samsung/dmc/ux/db/UserInfo;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/ShareShot;->onReceiveActivateMsg(Lcom/samsung/dmc/ux/db/UserInfo;)V
 
@@ -235,7 +229,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/ShareShot;)Lcom/samsung/shareshot/IShareShotCallbackRegister;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/ShareShot;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ShareShot;->iShootShareCallbackRegister:Lcom/samsung/shareshot/IShareShotCallbackRegister;
 
@@ -244,8 +237,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/ShareShot;Lcom/samsung/shareshot/IShareShotCallbackRegister;)Lcom/samsung/shareshot/IShareShotCallbackRegister;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/ShareShot;
-    .param p1    # Lcom/samsung/shareshot/IShareShotCallbackRegister;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ShareShot;->iShootShareCallbackRegister:Lcom/samsung/shareshot/IShareShotCallbackRegister;
 
@@ -254,7 +245,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/ShareShot;)Lcom/samsung/shareshot/IShareShotServiceCallback;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/ShareShot;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ShareShot;->callback:Lcom/samsung/shareshot/IShareShotServiceCallback;
 
@@ -347,7 +337,6 @@
 
 .method private onReceiveActivateMsg(Lcom/samsung/dmc/ux/db/UserInfo;)V
     .locals 2
-    .param p1    # Lcom/samsung/dmc/ux/db/UserInfo;
 
     const-string v0, "ShareShot"
 
@@ -374,7 +363,6 @@
 
 .method private onUserCancelSelected(Lcom/samsung/shareshot/User;)V
     .locals 3
-    .param p1    # Lcom/samsung/shareshot/User;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/ShareShot;->iShootShareService:Lcom/samsung/shareshot/IShareShotService;
@@ -406,7 +394,6 @@
 
 .method private onUserSelected(Lcom/samsung/shareshot/User;)V
     .locals 3
-    .param p1    # Lcom/samsung/shareshot/User;
 
     invoke-virtual {p1}, Lcom/samsung/shareshot/User;->getUserInfo()Lcom/samsung/dmc/ux/db/UserInfo;
 
@@ -453,7 +440,6 @@
 # virtual methods
 .method public addShareTarget(Lcom/sec/android/app/camera/ShareShot$ShareTargetInfo;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/ShareShot$ShareTargetInfo;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ShareShot;->mShareTargetList:Ljava/util/ArrayList;
 
@@ -464,9 +450,6 @@
 
 .method public addShareTarget(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     new-instance v0, Lcom/sec/android/app/camera/ShareShot$ShareTargetInfo;
 
@@ -491,7 +474,6 @@
 
 .method public checkWifiConnection(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v1, "ShareShot"
 
@@ -830,7 +812,6 @@
 
 .method public manageLocalService(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -1037,7 +1018,6 @@
 
 .method public onPreviewFileReceived(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1128,7 +1108,6 @@
 
 .method public onRunSNSAfterConnect(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1186,8 +1165,6 @@
 
 .method public onUserSelectionListChanged(Lcom/samsung/shareshot/User;Z)V
     .locals 3
-    .param p1    # Lcom/samsung/shareshot/User;
-    .param p2    # Z
 
     const-string v0, "ShareShot"
 
@@ -1230,7 +1207,6 @@
 
 .method public produceGSPersonalSettingInfoValue(Ljava/lang/String;)Lcom/samsung/dmc/ux/db/PersonalSettingInfo;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1398,7 +1374,6 @@
 
 .method public runComfirmedDialog(Lcom/samsung/shareshot/User;)V
     .locals 3
-    .param p1    # Lcom/samsung/shareshot/User;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1455,7 +1430,6 @@
 
 .method public runDialog(Lcom/samsung/shareshot/User;)V
     .locals 3
-    .param p1    # Lcom/samsung/shareshot/User;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1528,7 +1502,6 @@
 
 .method public searchUser(Lcom/samsung/dmc/ux/db/UserInfo;)Lcom/samsung/shareshot/User;
     .locals 7
-    .param p1    # Lcom/samsung/dmc/ux/db/UserInfo;
 
     const/4 v3, 0x0
 
@@ -1610,7 +1583,6 @@
 
 .method public searchUser(Ljava/lang/String;)Lcom/samsung/shareshot/User;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1702,8 +1674,6 @@
 
 .method public searchUser(Ljava/util/List;II)Lcom/samsung/shareshot/User;
     .locals 7
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1823,8 +1793,6 @@
 
 .method public sendIntentForDirectShareFileTransfer(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -2014,7 +1982,6 @@
 
 .method public setDirectShareInfo([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ShareShot;->mDirectShareInfo:[Ljava/lang/String;
 
@@ -2023,7 +1990,6 @@
 
 .method public setSelectTarget(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ShareShot;->mShareTargetList:Ljava/util/ArrayList;
 
@@ -2063,8 +2029,6 @@
 
 .method public setSelectTarget(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/sec/android/app/camera/ShareShot;->mShareTargetList:Ljava/util/ArrayList;
 

@@ -577,8 +577,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;I)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;->getViewType(I)I
 
@@ -589,9 +587,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;->getView(Landroid/view/ViewGroup;I)Landroid/view/View;
 
@@ -885,7 +880,6 @@
 
 .method private getPackageInfo(Landroid/content/Context;)Landroid/content/pm/PackageInfo;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -920,8 +914,6 @@
 
 .method private getPermissionView(Landroid/view/ViewGroup;Lcom/google/android/finsky/layout/AppSecurityPermissions$DetailsEntry;)Landroid/view/View;
     .locals 12
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Lcom/google/android/finsky/layout/AppSecurityPermissions$DetailsEntry;
 
     const/16 v10, 0x8
 
@@ -1088,7 +1080,6 @@
 
 .method private getTogglerView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -1115,8 +1106,6 @@
 
 .method private getView(Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;->getViewType(I)I
 
@@ -1191,7 +1180,6 @@
 
 .method private getViewType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions$AppPermissionAdapter;->mDangerousList:Ljava/util/List;
 
@@ -1235,7 +1223,6 @@
 
 .method private isDisplayablePermission(Landroid/content/pm/PermissionInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/PermissionInfo;
 
     const/4 v0, 0x1
 
@@ -1259,7 +1246,6 @@
 
 .method private loadLocalAssetPermissions(Landroid/content/pm/PackageInfo;)Ljava/util/Set;
     .locals 6
-    .param p1    # Landroid/content/pm/PackageInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1310,7 +1296,6 @@
 # virtual methods
 .method protected configureExpander(Landroid/widget/TextView;)V
     .locals 4
-    .param p1    # Landroid/widget/TextView;
 
     const/4 v3, 0x0
 

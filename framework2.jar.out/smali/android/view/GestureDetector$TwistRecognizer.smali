@@ -139,8 +139,6 @@
 # virtual methods
 .method public AngleFilter(Landroid/view/GestureDetector$SurfaceTouchSharingData;I)I
     .locals 5
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
-    .param p2    # I
 
     const/4 v4, 0x2
 
@@ -204,7 +202,6 @@
 
 .method public CompensatedAngle(Landroid/view/GestureDetector$SurfaceTouchSharingData;)V
     .locals 4
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     const/16 v3, 0x5a
 
@@ -466,8 +463,6 @@
 
 .method public Process(Landroid/view/MotionEvent;Landroid/view/GestureDetector$SurfaceTouchSharingData;)V
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     const/4 v5, 0x0
 

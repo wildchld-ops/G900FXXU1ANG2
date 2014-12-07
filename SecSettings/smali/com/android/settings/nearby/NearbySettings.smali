@@ -109,7 +109,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/nearby/NearbySettings;)Lcom/android/settings/nearby/DownloadListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbySettings;->mDownloadTo:Lcom/android/settings/nearby/DownloadListPreference;
 
@@ -118,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/nearby/NearbySettings;)Lcom/android/settings/nearby/NearbyEnabler;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbySettings;->mNearbyEnabler:Lcom/android/settings/nearby/NearbyEnabler;
 
@@ -127,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/nearby/NearbySettings;)Lcom/android/settings/nearby/AcceptListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbySettings;->mAcceptDevice:Lcom/android/settings/nearby/AcceptListPreference;
 
@@ -136,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/nearby/NearbySettings;)Lcom/android/settings/nearby/RejectListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbySettings;->mRejectDevice:Lcom/android/settings/nearby/RejectListPreference;
 
@@ -145,7 +141,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/nearby/NearbySettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbySettings;->mContext:Landroid/content/Context;
 
@@ -154,7 +149,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/nearby/NearbySettings;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbySettings;->mHandler:Landroid/os/Handler;
 
@@ -163,7 +157,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/nearby/NearbySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->openSearchDetailMenu()V
 
@@ -172,8 +165,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/nearby/NearbySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/nearby/NearbySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/nearby/NearbySettings;->bSelfFinish:Z
 
@@ -609,7 +600,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "NearbySettings"
 
@@ -675,7 +665,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 15
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1110,8 +1099,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x0
 
@@ -1217,7 +1204,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const-string v0, "NearbySettings"
 
@@ -1391,7 +1377,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 11
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v6, 0x1
 
@@ -1789,7 +1774,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "NearbySettings"
 

@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -41,8 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x1
 
@@ -230,7 +227,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
@@ -378,8 +374,6 @@
 
 .method protected onMeasure(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -546,7 +540,6 @@
 
 .method public setIcon(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -585,8 +578,6 @@
 
 .method public setText(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/google/android/play/layout/PlayCardPriceView;->getResources()Landroid/content/res/Resources;
 
@@ -605,8 +596,6 @@
 
 .method public setText(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -617,9 +606,6 @@
 
 .method public setText(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, 0x0
 

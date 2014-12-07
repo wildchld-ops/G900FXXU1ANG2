@@ -38,7 +38,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/i18n/addressinput/AddressField;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -291,7 +290,6 @@
 
 .method setFieldName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/AddressUIComponent;->mFieldName:Ljava/lang/String;
 
@@ -300,7 +298,6 @@
 
 .method setView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/AddressUIComponent;->mView:Landroid/view/View;
 

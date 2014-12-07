@@ -106,7 +106,6 @@
 
 .method public constructor <init>(Lcom/android/server/power/DisplayPowerRequest;)V
     .locals 2
-    .param p1    # Lcom/android/server/power/DisplayPowerRequest;
 
     const/4 v0, -0x1
 
@@ -149,7 +148,6 @@
 # virtual methods
 .method public copyFrom(Lcom/android/server/power/DisplayPowerRequest;)V
     .locals 1
-    .param p1    # Lcom/android/server/power/DisplayPowerRequest;
 
     iget v0, p1, Lcom/android/server/power/DisplayPowerRequest;->screenState:I
 
@@ -228,7 +226,6 @@
 
 .method public equals(Lcom/android/server/power/DisplayPowerRequest;)Z
     .locals 2
-    .param p1    # Lcom/android/server/power/DisplayPowerRequest;
 
     if-eqz p1, :cond_0
 
@@ -355,7 +352,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/android/server/power/DisplayPowerRequest;
 

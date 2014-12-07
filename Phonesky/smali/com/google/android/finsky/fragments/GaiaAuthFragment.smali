@@ -67,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/fragments/GaiaAuthFragment;)Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/fragments/GaiaAuthFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->mNode:Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -76,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/fragments/GaiaAuthFragment;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/fragments/GaiaAuthFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->mEventLogger:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/fragments/GaiaAuthFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/fragments/GaiaAuthFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->verifyInput()V
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/fragments/GaiaAuthFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/fragments/GaiaAuthFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->success()V
 
@@ -103,8 +99,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/fragments/GaiaAuthFragment;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/fragments/GaiaAuthFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->failure(I)V
 
@@ -113,7 +107,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/fragments/GaiaAuthFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/fragments/GaiaAuthFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->failure()V
 
@@ -122,7 +115,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/fragments/GaiaAuthFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/fragments/GaiaAuthFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->mAccountName:Ljava/lang/String;
 
@@ -207,7 +199,6 @@
 
 .method private failure(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -296,9 +287,6 @@
 
 .method public static newInstance(Ljava/lang/String;ZLcom/google/android/finsky/protos/ChallengeProtos$AuthenticationChallenge;)Lcom/google/android/finsky/fragments/GaiaAuthFragment;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # Lcom/google/android/finsky/protos/ChallengeProtos$AuthenticationChallenge;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -368,7 +356,6 @@
 
 .method private verifyGaia(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/billing/challenge/ClientLoginApi;
 
@@ -425,9 +412,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v0, 0x64
 
@@ -455,7 +439,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -512,7 +495,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -570,9 +552,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 12
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v8, 0x7f04007a
 
@@ -811,8 +790,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -828,8 +805,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -845,7 +820,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -860,7 +834,6 @@
 
 .method public setListener(Lcom/google/android/finsky/fragments/GaiaAuthFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/fragments/GaiaAuthFragment$Listener;
 
     iput-object p1, p0, Lcom/google/android/finsky/fragments/GaiaAuthFragment;->mListener:Lcom/google/android/finsky/fragments/GaiaAuthFragment$Listener;
 

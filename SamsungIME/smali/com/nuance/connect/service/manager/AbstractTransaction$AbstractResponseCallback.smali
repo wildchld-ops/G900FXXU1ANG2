@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCancel(Lcom/nuance/connect/service/comm/Command;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractTransaction$AbstractResponseCallback;->this$0:Lcom/nuance/connect/service/manager/AbstractTransaction;
 
@@ -101,9 +100,6 @@
 
 .method public onDownloadStatusResponse(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractTransaction$AbstractResponseCallback;->this$0:Lcom/nuance/connect/service/manager/AbstractTransaction;
 
@@ -121,7 +117,6 @@
 
 .method public onFailure(Lcom/nuance/connect/service/comm/Command;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractTransaction$AbstractResponseCallback;->this$0:Lcom/nuance/connect/service/manager/AbstractTransaction;
 
@@ -138,7 +133,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractTransaction$AbstractResponseCallback;->this$0:Lcom/nuance/connect/service/manager/AbstractTransaction;
 
@@ -162,7 +156,6 @@
 
 .method public onIOExceptionResponse(Lcom/nuance/connect/service/comm/Command;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractTransaction$AbstractResponseCallback;->this$0:Lcom/nuance/connect/service/manager/AbstractTransaction;
 

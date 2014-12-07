@@ -120,10 +120,6 @@
 
 .method public static MakeMsg(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     if-nez p0, :cond_0
 
@@ -135,8 +131,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -160,9 +154,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -214,9 +205,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -232,7 +220,6 @@
 
 .method public static dumpCursor(Landroid/database/Cursor;)V
     .locals 12
-    .param p0    # Landroid/database/Cursor;
 
     invoke-interface {p0}, Landroid/database/Cursor;->getColumnCount()I
 
@@ -399,8 +386,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -426,9 +411,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -482,9 +464,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -500,8 +479,6 @@
 
 .method public static end(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -538,7 +515,6 @@
 
 .method public static filterOutDigits(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -585,7 +561,6 @@
 
 .method public static filterOutDigits([Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # [Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuffer;
 
@@ -628,8 +603,6 @@
 
 .method public static getCsStr(Ljava/lang/String;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const-string v2, ""
 
@@ -745,7 +718,6 @@
 
 .method public static getLengthString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -819,7 +791,6 @@
 
 .method public static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/Throwable;
 
     invoke-static {p0}, Landroid/util/secutil/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
 
@@ -830,8 +801,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -857,9 +826,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -913,9 +879,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -931,8 +894,6 @@
 
 .method public static isLoggable(Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const-string v0, "Mms:transaction"
 
@@ -967,7 +928,6 @@
 
 .method private static isSugar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x2d
 
@@ -1007,9 +967,6 @@
 
 .method public static varargs log(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1060,8 +1017,6 @@
 
 .method public static logWithTrace(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x9
 
@@ -1159,8 +1114,6 @@
 
 .method public static m(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -1190,9 +1143,6 @@
 
 .method public static m(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -1250,8 +1200,6 @@
 
 .method public static s(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/mms/Log;->sPrintSecured:Z
 
@@ -1275,8 +1223,6 @@
 
 .method private static varargs safeFormat(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     const-string v1, ""
 
@@ -1338,8 +1284,6 @@
 
 .method public static start(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1376,16 +1320,12 @@
 
 .method public static t(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public static toast(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1424,8 +1364,6 @@
 
 .method public static usedTime(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -1499,8 +1437,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -1524,9 +1460,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -1578,9 +1511,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -1594,8 +1524,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -1621,9 +1549,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 
@@ -1677,9 +1602,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget v0, Lcom/android/mms/Log;->sLevel:I
 

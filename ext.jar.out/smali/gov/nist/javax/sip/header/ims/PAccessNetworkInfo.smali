@@ -32,7 +32,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/header/ims/PAccessNetworkInfo;-><init>()V
 
@@ -154,7 +153,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lgov/nist/javax/sip/header/ims/PAccessNetworkInfoHeader;
 
@@ -243,7 +241,6 @@
 
 .method public setAccessType(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -263,7 +260,6 @@
 
 .method public setCGI3GPP(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -290,7 +286,6 @@
 
 .method public setCI3GPP2(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -317,7 +312,6 @@
 
 .method public setDSLLocation(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -344,7 +338,6 @@
 
 .method public setExtensionAccessInfo(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -369,8 +362,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     const-string v0, "cgi-3gpp"
 
@@ -430,7 +421,6 @@
 
 .method public setUtranCellID3GPP(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -457,7 +447,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

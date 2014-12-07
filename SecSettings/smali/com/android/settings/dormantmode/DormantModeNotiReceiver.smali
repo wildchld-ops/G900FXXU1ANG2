@@ -14,7 +14,6 @@
 
 .method private cancelOnGoingAlarm(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -55,7 +54,6 @@
 
 .method private isSetTime(Landroid/content/Context;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -161,7 +159,6 @@
 
 .method private setOnGoingAlarm(Landroid/content/Context;)V
     .locals 21
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -597,7 +594,6 @@
 # virtual methods
 .method public notificationClear(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const v1, 0x7f020541
 
@@ -616,7 +612,6 @@
 
 .method public notificationCreate(Landroid/content/Context;)V
     .locals 22
-    .param p1    # Landroid/content/Context;
 
     const v14, 0x7f020541
 
@@ -987,8 +982,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

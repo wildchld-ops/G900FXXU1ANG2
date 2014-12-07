@@ -405,7 +405,6 @@
 
 .method public static final getOperatorFromString(Ljava/lang/String;)Lcom/android/systemui/statusbar/policy/NetworkController$Operator;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p0}, Lcom/android/systemui/statusbar/policy/NetworkController$Operator;->valueOf(Ljava/lang/String;)Lcom/android/systemui/statusbar/policy/NetworkController$Operator;
@@ -427,7 +426,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/systemui/statusbar/policy/NetworkController$Operator;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/systemui/statusbar/policy/NetworkController$Operator;
 

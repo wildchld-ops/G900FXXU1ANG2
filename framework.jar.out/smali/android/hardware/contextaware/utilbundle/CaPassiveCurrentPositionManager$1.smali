@@ -36,7 +36,6 @@
 # virtual methods
 .method public final onLocationChanged(Landroid/location/Location;)V
     .locals 18
-    .param p1    # Landroid/location/Location;
 
     invoke-virtual/range {p1 .. p1}, Landroid/location/Location;->getProvider()Ljava/lang/String;
 
@@ -231,7 +230,6 @@
 
 .method public final onProviderDisabled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Location service is disabled"
 
@@ -242,7 +240,6 @@
 
 .method public final onProviderEnabled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Location service is enabled"
 
@@ -253,9 +250,6 @@
 
 .method public final onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     return-void
 .end method

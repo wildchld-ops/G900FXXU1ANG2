@@ -208,8 +208,6 @@
 
 .method public static getDateFormat(Ljava/util/Calendar;Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 16
-    .param p0    # Ljava/util/Calendar;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -1276,7 +1274,6 @@
 
 .method public static isKoreaPatentIssue(Landroid/app/PendingIntent;)Z
     .locals 3
-    .param p0    # Landroid/app/PendingIntent;
 
     const-string v1, "ro.csc.sales_code"
 
@@ -1448,9 +1445,6 @@
 
 .method private static isModelNameInLocalConfig(Landroid/content/Context;ILjava/lang/String;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1746,7 +1740,6 @@
 
 .method public static isShortcutDAWithPendingIntent(Landroid/app/PendingIntent;)Z
     .locals 2
-    .param p0    # Landroid/app/PendingIntent;
 
     const-string v0, "com.sec.android.widgetapp.notificationwidget"
 
@@ -2071,7 +2064,6 @@
 
 .method public static loadSCafeConfig(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/keyguard/sec/KeyguardProperties;->mIsSCafeConfigLoaded:Z
 
@@ -2135,7 +2127,6 @@
 
 .method public static loadWholeKeyguardLocalConfig(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -2251,7 +2242,6 @@
 
 .method public static shouldShowPopupForDualClock(Landroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v8, -0x2
 

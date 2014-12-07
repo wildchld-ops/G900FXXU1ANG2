@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -63,8 +62,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/menu/EnhancedAssistantMenu;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->mEditActionClick(Landroid/content/Context;)V
 
@@ -73,8 +70,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/menu/EnhancedAssistantMenu;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->mDeleteActionClick(Landroid/content/Context;)V
 
@@ -83,8 +78,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/menu/EnhancedAssistantMenu;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->mFavoriteDetailActionClick(Landroid/content/Context;)V
 
@@ -93,7 +86,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/menu/EnhancedAssistantMenu;)Lcom/android/contacts/activities/ActionBarAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
 
     iget-object v0, p0, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->mActionBarAdapter:Lcom/android/contacts/activities/ActionBarAdapter;
 
@@ -102,7 +94,6 @@
 
 .method private mDeleteActionClick(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     check-cast p1, Lcom/android/contacts/activities/ContactDetailActivity;
 
@@ -121,7 +112,6 @@
 
 .method private mEditActionClick(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -146,7 +136,6 @@
 
 .method private mFavoriteDetailActionClick(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->mLookupUri:Landroid/net/Uri;
 
@@ -178,8 +167,6 @@
 
 .method private updateAssistantMenuIcon(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -254,7 +241,6 @@
 
 .method public removeAssistantMenuIcon(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -286,7 +272,6 @@
 
 .method public setStarState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->isStarred:Z
 
@@ -316,9 +301,6 @@
 
 .method public updateAssistantMenuIcon_ContactDetail(Ljava/lang/String;Landroid/net/Uri;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->misAlreadyUpdateIcon:Z
 
@@ -361,10 +343,6 @@
 
 .method public updateAssistantMenuIcon_ContactMain(ILcom/android/contacts/activities/ActionBarAdapter;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/contacts/activities/ActionBarAdapter;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iget-boolean v2, p0, Lcom/samsung/contacts/menu/EnhancedAssistantMenu;->misAlreadyUpdateIcon:Z
 

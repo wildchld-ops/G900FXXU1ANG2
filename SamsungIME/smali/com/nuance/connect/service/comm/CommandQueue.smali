@@ -148,7 +148,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v2, 0x3
 
@@ -375,7 +374,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/comm/CommandQueue;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -384,7 +382,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/comm/CommandQueue;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->defaultDelaySeconds:I
 
@@ -393,7 +390,6 @@
 
 .method static synthetic access$1000(Lcom/nuance/connect/service/comm/CommandQueue;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->activeTransactions:Ljava/util/List;
 
@@ -402,8 +398,6 @@
 
 .method static synthetic access$102(Lcom/nuance/connect/service/comm/CommandQueue;I)I
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->defaultDelaySeconds:I
 
@@ -412,7 +406,6 @@
 
 .method static synthetic access$1100(Lcom/nuance/connect/service/comm/CommandQueue;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->pendingQueue:Ljava/util/List;
 
@@ -421,8 +414,6 @@
 
 .method static synthetic access$1200(Lcom/nuance/connect/service/comm/CommandQueue;Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/comm/CommandQueue;->processTransaction(Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;)V
 
@@ -431,7 +422,6 @@
 
 .method static synthetic access$1300(Lcom/nuance/connect/service/comm/CommandQueue;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->mainHandler:Landroid/os/Handler;
 
@@ -440,7 +430,6 @@
 
 .method static synthetic access$1400(Lcom/nuance/connect/service/comm/CommandQueue;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->active:Z
 
@@ -449,7 +438,6 @@
 
 .method static synthetic access$1500(Lcom/nuance/connect/service/comm/CommandQueue;)Lcom/nuance/connect/service/ConnectClient;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->client:Lcom/nuance/connect/service/ConnectClient;
 
@@ -458,7 +446,6 @@
 
 .method static synthetic access$1600(Lcom/nuance/connect/service/comm/CommandQueue;)Lcom/nuance/connect/service/comm/CommandQueue$MessageHandler;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->connectionHandler:Lcom/nuance/connect/service/comm/CommandQueue$MessageHandler;
 
@@ -467,7 +454,6 @@
 
 .method static synthetic access$1700(Lcom/nuance/connect/service/comm/CommandQueue;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->goodConnection:Z
 
@@ -476,8 +462,6 @@
 
 .method static synthetic access$1702(Lcom/nuance/connect/service/comm/CommandQueue;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->goodConnection:Z
 
@@ -486,8 +470,6 @@
 
 .method static synthetic access$1802(Lcom/nuance/connect/service/comm/CommandQueue;I)I
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->backdownCounter:I
 
@@ -496,8 +478,6 @@
 
 .method static synthetic access$1902(Lcom/nuance/connect/service/comm/CommandQueue;I)I
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->backdownDelay:I
 
@@ -506,7 +486,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/service/comm/CommandQueue;)Lcom/nuance/connect/service/comm/AnalyticsDataUsageScribeImpl;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->analyticsScribe:Lcom/nuance/connect/service/comm/AnalyticsDataUsageScribeImpl;
 
@@ -515,7 +494,6 @@
 
 .method static synthetic access$2000(Lcom/nuance/connect/service/comm/CommandQueue;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->sessionId:Ljava/lang/String;
 
@@ -524,8 +502,6 @@
 
 .method static synthetic access$2002(Lcom/nuance/connect/service/comm/CommandQueue;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->sessionId:Ljava/lang/String;
 
@@ -534,7 +510,6 @@
 
 .method static synthetic access$2100(Lcom/nuance/connect/service/comm/CommandQueue;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->deviceId:Ljava/lang/String;
 
@@ -543,8 +518,6 @@
 
 .method static synthetic access$2102(Lcom/nuance/connect/service/comm/CommandQueue;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->deviceId:Ljava/lang/String;
 
@@ -553,7 +526,6 @@
 
 .method static synthetic access$2200(Lcom/nuance/connect/service/comm/CommandQueue;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->requestKey:Ljava/lang/String;
 
@@ -562,7 +534,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/service/comm/CommandQueue;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->delayTimeoutSeconds:I
 
@@ -571,8 +542,6 @@
 
 .method static synthetic access$302(Lcom/nuance/connect/service/comm/CommandQueue;I)I
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->delayTimeoutSeconds:I
 
@@ -581,7 +550,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/service/comm/CommandQueue;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->concurrentThreadCount:I
 
@@ -590,8 +558,6 @@
 
 .method static synthetic access$402(Lcom/nuance/connect/service/comm/CommandQueue;I)I
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->concurrentThreadCount:I
 
@@ -600,7 +566,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/service/comm/CommandQueue;)Lcom/nuance/connect/service/comm/CommandQueue$ConnectionPool;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->executor:Lcom/nuance/connect/service/comm/CommandQueue$ConnectionPool;
 
@@ -609,7 +574,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/service/comm/CommandQueue;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->broadcastResponseEnabled:Z
 
@@ -618,8 +582,6 @@
 
 .method static synthetic access$602(Lcom/nuance/connect/service/comm/CommandQueue;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->broadcastResponseEnabled:Z
 
@@ -628,8 +590,6 @@
 
 .method static synthetic access$702(Lcom/nuance/connect/service/comm/CommandQueue;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->hasConnectivity:Z
 
@@ -638,7 +598,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/service/comm/CommandQueue;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/comm/CommandQueue;->resetTimers()V
 
@@ -647,7 +606,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/service/comm/CommandQueue;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/comm/CommandQueue;->processQueue()V
 
@@ -656,7 +614,6 @@
 
 .method private static fib(I)I
     .locals 7
-    .param p0    # I
 
     const/4 v6, 0x1
 
@@ -768,7 +725,6 @@
 
 .method private isCommandInQueue(Ljava/lang/String;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1241,7 +1197,6 @@
 
 .method private processTransaction(Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;
 
     invoke-virtual {p1}, Lcom/nuance/connect/service/comm/CommandQueue$TransactionRunnable;->getTransaction()Lcom/nuance/connect/service/comm/Transaction;
 
@@ -1375,7 +1330,6 @@
 
 .method private removeTransaction(Lcom/nuance/connect/service/comm/Transaction;)Z
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Transaction;
 
     iget-object v3, p0, Lcom/nuance/connect/service/comm/CommandQueue;->activeTransactions:Ljava/util/List;
 
@@ -1483,8 +1437,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/comm/CommandQueue;->mqttEnabled:Z
 
@@ -1496,8 +1448,6 @@
 
 .method protected handleMessage(Lcom/nuance/connect/service/comm/CommandQueue$MessageHandler;Landroid/os/Message;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/comm/CommandQueue$MessageHandler;
-    .param p2    # Landroid/os/Message;
 
     const/4 v0, 0x1
 
@@ -1658,7 +1608,6 @@
 
 .method public registerResponseListener(Lcom/nuance/connect/service/ConnectClient$ResponseListener;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/ConnectClient$ResponseListener;
 
     iput-object p1, p0, Lcom/nuance/connect/service/comm/CommandQueue;->responseListener:Lcom/nuance/connect/service/ConnectClient$ResponseListener;
 
@@ -1679,7 +1628,6 @@
 
 .method public sendCommand(Lcom/nuance/connect/service/comm/Command;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     new-instance v0, Lcom/nuance/connect/service/comm/SingleCommandTransaction;
 
@@ -1692,7 +1640,6 @@
 
 .method public sendTransaction(Lcom/nuance/connect/service/comm/Transaction;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/comm/Transaction;
 
     iget-object v4, p0, Lcom/nuance/connect/service/comm/CommandQueue;->activeTransactions:Ljava/util/List;
 

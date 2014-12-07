@@ -14,8 +14,6 @@
 
 .method private static appendQuotedBytes([BLjava/lang/StringBuffer;)V
     .locals 8
-    .param p0    # [B
-    .param p1    # Ljava/lang/StringBuffer;
 
     const/16 v7, 0x5c
 
@@ -106,7 +104,6 @@
 
 .method private static deCamelCaseify(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuffer;
 
@@ -174,7 +171,6 @@
 
 .method private static escapeString(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -321,10 +317,6 @@
 
 .method private static print(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/lang/StringBuffer;)V
     .locals 18
-    .param p0    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/StringBuffer;
-    .param p4    # Ljava/lang/StringBuffer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -665,7 +657,6 @@
 
 .method private static sanitizeString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v2, 0xc8
 

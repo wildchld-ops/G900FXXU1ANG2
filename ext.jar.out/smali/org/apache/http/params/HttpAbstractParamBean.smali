@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -47,9 +44,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -58,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/editor/MoreEditorView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/MoreEditorView;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/MoreEditorView;->mType:Ljava/lang/String;
 
@@ -67,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/editor/MoreEditorView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/MoreEditorView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -76,7 +68,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/editor/MoreEditorView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/MoreEditorView;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/MoreEditorView;->mData:Ljava/lang/String;
 
@@ -85,7 +76,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/editor/MoreEditorView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/MoreEditorView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -190,7 +180,6 @@
 
 .method public setData(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/MoreEditorView;->mData:Ljava/lang/String;
 
@@ -212,7 +201,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -242,13 +230,6 @@
 
 .method public setState(Lcom/android/contacts/common/model/dataitem/DataKind;Lcom/android/contacts/common/model/ValuesDelta;Lcom/android/contacts/model/RawContactDelta;ZLcom/android/contacts/editor/ViewIdGenerator;Ljava/lang/String;Lcom/samsung/contacts/editor/MoreEditorView$MoreEditorListener;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p2    # Lcom/android/contacts/common/model/ValuesDelta;
-    .param p3    # Lcom/android/contacts/model/RawContactDelta;
-    .param p4    # Z
-    .param p5    # Lcom/android/contacts/editor/ViewIdGenerator;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Lcom/samsung/contacts/editor/MoreEditorView$MoreEditorListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/MoreEditorView;->mKind:Lcom/android/contacts/common/model/dataitem/DataKind;
 

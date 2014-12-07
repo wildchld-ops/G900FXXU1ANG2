@@ -43,7 +43,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$1;
 
     invoke-direct {p0}, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;-><init>()V
 

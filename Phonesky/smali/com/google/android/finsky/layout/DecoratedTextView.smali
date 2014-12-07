@@ -9,7 +9,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/google/android/play/layout/PlayTextView;-><init>(Landroid/content/Context;)V
 
@@ -18,8 +17,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/layout/PlayTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -30,9 +27,6 @@
 # virtual methods
 .method public loadDecoration(Lcom/google/android/finsky/utils/BitmapLoader;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p1, p2, p0, p3, p3}, Lcom/google/android/finsky/utils/BitmapLoader;->get(Ljava/lang/String;Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;II)Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
@@ -52,7 +46,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;->getBitmap()Landroid/graphics/Bitmap;
 
@@ -71,7 +64,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 

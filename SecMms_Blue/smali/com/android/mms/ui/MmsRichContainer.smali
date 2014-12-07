@@ -135,7 +135,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -208,8 +207,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -282,7 +279,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MmsRichContainer;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsRichContainer;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -291,7 +287,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/MmsRichContainer;)Landroid/text/TextWatcher;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsRichContainer;->mParentTextWatcher:Landroid/text/TextWatcher;
 
@@ -300,7 +295,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/MmsRichContainer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -309,7 +303,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/MmsRichContainer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -318,7 +311,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/MmsRichContainer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -327,7 +319,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/MmsRichContainer;)Lcom/android/mms/ui/OnEventListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsRichContainer;->mOnSipUpListener:Lcom/android/mms/ui/OnEventListener;
 
@@ -336,7 +327,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/MmsRichContainer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -345,7 +335,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/MmsRichContainer;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MmsRichContainer;->isNeedToBlockTheKey:Z
 
@@ -354,8 +343,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/MmsRichContainer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MmsRichContainer;->isNeedToBlockTheKey:Z
 
@@ -364,7 +351,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/MmsRichContainer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -373,8 +359,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/MmsRichContainer;Landroid/view/View;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MmsRichContainer;->getFocusedAudioView(Landroid/view/View;)Landroid/widget/LinearLayout;
 
@@ -385,8 +369,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/MmsRichContainer;Landroid/view/View;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MmsRichContainer;->getFocusedMediaView(Landroid/view/View;)Landroid/widget/RelativeLayout;
 
@@ -397,8 +379,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/MmsRichContainer;Landroid/view/View;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MmsRichContainer;->getFocussedLocationView(Landroid/view/View;)Landroid/widget/RelativeLayout;
 
@@ -409,7 +389,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/MmsRichContainer;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsRichContainer;->mHandler:Landroid/os/Handler;
 
@@ -418,9 +397,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/MmsRichContainer;II)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MmsRichContainer;->setDeleteAnimation(II)V
 
@@ -429,9 +405,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/MmsRichContainer;Landroid/view/View;Z)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsRichContainer;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MmsRichContainer;->pageHasContents(Landroid/view/View;Z)Z
 
@@ -442,8 +415,6 @@
 
 .method private calcParams(Landroid/graphics/Bitmap;Landroid/widget/RelativeLayout$LayoutParams;)Landroid/widget/RelativeLayout$LayoutParams;
     .locals 13
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/widget/RelativeLayout$LayoutParams;
 
     const/high16 v12, 0x43100000
 
@@ -623,7 +594,6 @@
 
 .method private getFocusedAudioView(Landroid/view/View;)Landroid/widget/LinearLayout;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -646,7 +616,6 @@
 
 .method private getFocusedMediaView(Landroid/view/View;)Landroid/widget/RelativeLayout;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -669,7 +638,6 @@
 
 .method private getFocusedPageDivierView(Landroid/view/View;)Landroid/widget/RelativeLayout;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f0b022c
 
@@ -684,7 +652,6 @@
 
 .method private getFocussedLocationView(Landroid/view/View;)Landroid/widget/RelativeLayout;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -734,7 +701,6 @@
 
 .method public static getTopPaddingPerFontSizeIndex(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -792,8 +758,6 @@
 
 .method private getVisibleEditText(IZ)Landroid/widget/EditText;
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v6, 0x8
 
@@ -940,8 +904,6 @@
 
 .method private pageHasContents(Landroid/view/View;Z)Z
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -1229,8 +1191,6 @@
 
 .method private resetLayoutAttr(Lcom/android/mms/model/SlideModel;I)V
     .locals 6
-    .param p1    # Lcom/android/mms/model/SlideModel;
-    .param p2    # I
 
     const/16 v5, 0x8
 
@@ -1429,8 +1389,6 @@
 
 .method private setDeleteAnimation(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -1476,9 +1434,6 @@
 
 .method private setEditorTopPadding(Landroid/view/View;II)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -1525,8 +1480,6 @@
 
 .method private setWeight(Landroid/view/View;F)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     move-object v0, p1
 
@@ -1667,7 +1620,6 @@
 # virtual methods
 .method public addPage(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x3
 
@@ -1833,7 +1785,6 @@
 
 .method public addTextChangedListener(Landroid/text/TextWatcher;)V
     .locals 2
-    .param p1    # Landroid/text/TextWatcher;
 
     const-string v0, "Mms/MmsRichContainer"
 
@@ -1848,7 +1799,6 @@
 
 .method public changeFontSize(I)V
     .locals 5
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mFontSizeIndex:I
 
@@ -1895,7 +1845,6 @@
 
 .method public changeLayout(Lcom/android/mms/data/WorkingMessage;)V
     .locals 11
-    .param p1    # Lcom/android/mms/data/WorkingMessage;
 
     const/high16 v10, 0x3f800000
 
@@ -2106,7 +2055,6 @@
 
 .method public changeTextColor(I)V
     .locals 8
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mTextColor:I
 
@@ -2194,7 +2142,6 @@
 
 .method public clearFocusEditText(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2242,7 +2189,6 @@
 
 .method public getEditText(Landroid/view/View;)Landroid/widget/EditText;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -2416,7 +2362,6 @@
 
 .method public hasContents(Z)Z
     .locals 6
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -2516,7 +2461,6 @@
 
 .method public hasOnlySignatureText(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2630,8 +2574,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     invoke-virtual {p2}, Landroid/view/DragEvent;->getAction()I
 
@@ -2915,7 +2857,6 @@
 
 .method public removePage(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -2946,7 +2887,6 @@
 
 .method public removeTextChangedListener(Landroid/text/TextWatcher;)V
     .locals 2
-    .param p1    # Landroid/text/TextWatcher;
 
     const-string v0, "Mms/MmsRichContainer"
 
@@ -2972,8 +2912,6 @@
 
 .method public setAudioAndKeyListener(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v3, 0xc
 
@@ -3032,7 +2970,6 @@
 
 .method public setBitmapforWB(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -3041,7 +2978,6 @@
 
 .method public setClipExMgr(Landroid/sec/clipboard/ClipboardExManager;)V
     .locals 0
-    .param p1    # Landroid/sec/clipboard/ClipboardExManager;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mClipExMgr:Landroid/sec/clipboard/ClipboardExManager;
 
@@ -3050,7 +2986,6 @@
 
 .method public setComposer(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -3059,8 +2994,6 @@
 
 .method public setEditorFontSize(Landroid/view/View;F)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/4 v3, 0x1
 
@@ -3101,7 +3034,6 @@
 
 .method public setEnabledEditTextAll(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -3150,7 +3082,6 @@
 
 .method public setFocusEditText(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -3203,8 +3134,6 @@
 
 .method public setFocusEditText(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -3380,7 +3309,6 @@
 
 .method public setFontSizeIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mFontSizeIndex:I
 
@@ -3389,7 +3317,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mHandler:Landroid/os/Handler;
 
@@ -3498,7 +3425,6 @@
 
 .method public setHint(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -3523,7 +3449,6 @@
 
 .method public setHintRes(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mHintResId:I
 
@@ -3532,8 +3457,6 @@
 
 .method public setImageAndKeyListener(Landroid/graphics/Bitmap;I)V
     .locals 11
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -3716,7 +3639,6 @@
 
 .method public setLastElementFocus(Landroid/view/ViewGroup;)V
     .locals 5
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -3766,11 +3688,6 @@
 
 .method public setLocationAndKeyListener(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/16 v8, 0xe
 
@@ -3874,7 +3791,6 @@
 
 .method public setMMSLayout(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "Mms/MmsRichContainer"
 
@@ -3893,7 +3809,6 @@
 
 .method public setOnSipUpListener(Lcom/android/mms/ui/OnEventListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnEventListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mOnSipUpListener:Lcom/android/mms/ui/OnEventListener;
 
@@ -3902,7 +3817,6 @@
 
 .method public setPageDivider(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -3979,7 +3893,6 @@
 
 .method public setPasteEvent(Lcom/android/mms/ui/ComposeMessageFragment$IClipboardDataPasteEventImpl;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment$IClipboardDataPasteEventImpl;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mPasteEvent:Lcom/android/mms/ui/ComposeMessageFragment$IClipboardDataPasteEventImpl;
 
@@ -3988,7 +3901,6 @@
 
 .method public setRichEditorAction(Landroid/widget/TextView$OnEditorActionListener;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView$OnEditorActionListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mEditorActionListener:Landroid/widget/TextView$OnEditorActionListener;
 
@@ -3997,9 +3909,6 @@
 
 .method public setTextAndKeyListener(Landroid/widget/EditText;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -4016,7 +3925,6 @@
 
 .method public setTextColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/MmsRichContainer;->mTextColor:I
 
@@ -4025,8 +3933,6 @@
 
 .method public setVideoAndKeyListener(Landroid/net/Uri;I)V
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -4226,8 +4132,6 @@
 
 .method public setWritingBuddy(Landroid/widget/EditText;Z)V
     .locals 2
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getMmsEnabled()Z
 
@@ -4277,8 +4181,6 @@
 
 .method public update(Lcom/android/mms/data/WorkingMessage;I)V
     .locals 19
-    .param p1    # Lcom/android/mms/data/WorkingMessage;
-    .param p2    # I
 
     const-string v2, "Mms/MmsRichContainer"
 

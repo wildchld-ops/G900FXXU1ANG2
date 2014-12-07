@@ -23,10 +23,6 @@
 
 .method public static createPopupMenu(Landroid/content/Context;Landroid/view/View;Lcom/android/contacts/editor/PhotoActionPopup$Listener;I)Landroid/app/AlertDialog;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/contacts/editor/PhotoActionPopup$Listener;
-    .param p3    # I
 
     const/4 v7, 0x4
 
@@ -193,7 +189,6 @@
 
 .method private static isAvailableAvatar(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -223,7 +218,6 @@
 
 .method private static isAvailableSNote(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -293,7 +287,6 @@
 
 .method private static isAvailableTaggedPicture(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 

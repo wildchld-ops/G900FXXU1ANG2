@@ -28,10 +28,6 @@
 
 .method public static show(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;II)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -60,7 +56,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

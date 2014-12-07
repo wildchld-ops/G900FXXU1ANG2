@@ -122,8 +122,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/service/manager/CategoryManager;Lcom/nuance/connect/service/ConnectClient;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/manager/CategoryManager;
-    .param p2    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v3, 0x1
 
@@ -198,9 +196,6 @@
 
 .method private findVariantLanguageCategory(ILjava/lang/String;I)Ljava/lang/String;
     .locals 16
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -650,7 +645,6 @@
 
 .method private processNextCategory(I)V
     .locals 24
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1236,8 +1230,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -1258,7 +1250,6 @@
 
 .method public init(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1289,7 +1280,6 @@
 
 .method install(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1386,7 +1376,6 @@
 
 .method public isSupported(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;->typesSupported:Ljava/util/List;
 
@@ -1403,7 +1392,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const/4 v10, 0x3
 
@@ -1589,8 +1577,6 @@
 
 .method sendInstallInfo(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v5, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;->categoriesManaged:Ljava/util/ArrayList;
 
@@ -1694,7 +1680,6 @@
 
 .method sendLivingLanguageUpdateStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;->client:Lcom/nuance/connect/service/ConnectClient;
 
@@ -1711,7 +1696,6 @@
 
 .method setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;->enabled:Z
 
@@ -1736,7 +1720,6 @@
 
 .method setInstallMetadata(Lcom/nuance/connect/util/InstallMetadata;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/util/InstallMetadata;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;->log:Lcom/nuance/connect/util/Logger$Log;
 

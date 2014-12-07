@@ -130,7 +130,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -147,7 +146,6 @@
 
 .method private static extractResponseSignature(Ljava/lang/String;)[B
     .locals 9
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/finsky/api/DfeResponseVerifier$DfeResponseVerifierException;
@@ -253,7 +251,6 @@
 
 .method private static declared-synchronized getFallbackReader(Landroid/content/Context;)Lorg/keyczar/interfaces/KeyczarReader;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-class v2, Lcom/google/android/finsky/api/DfeResponseVerifier;
 
@@ -314,7 +311,6 @@
 
 .method private static declared-synchronized getProdReader(Landroid/content/Context;)Lorg/keyczar/interfaces/KeyczarReader;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/google/android/finsky/api/DfeResponseVerifier;
 
@@ -356,10 +352,6 @@
 
 .method private internalVerify(Lorg/keyczar/interfaces/KeyczarReader;[B[BLjava/lang/String;)Z
     .locals 8
-    .param p1    # Lorg/keyczar/interfaces/KeyczarReader;
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/finsky/api/DfeResponseVerifier$DfeResponseVerifierException;
@@ -514,8 +506,6 @@
 
 .method public verify([BLjava/lang/String;)V
     .locals 6
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/finsky/api/DfeResponseVerifier$DfeResponseVerifierException;

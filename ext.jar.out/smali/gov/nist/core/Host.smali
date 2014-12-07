@@ -50,7 +50,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -91,8 +90,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Lgov/nist/core/GenericObject;-><init>()V
 
@@ -115,7 +112,6 @@
 
 .method private isIPv6Address(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -142,7 +138,6 @@
 
 .method public static isIPv6Reference(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -176,8 +171,6 @@
 
 .method private setHost(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x3
 
@@ -280,7 +273,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget v0, p0, Lgov/nist/core/Host;->addressType:I
 
@@ -325,7 +317,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -552,7 +543,6 @@
 
 .method public setAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lgov/nist/core/Host;->setHostAddress(Ljava/lang/String;)V
 
@@ -561,7 +551,6 @@
 
 .method public setHostAddress(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -572,7 +561,6 @@
 
 .method public setHostname(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -128,8 +127,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -138,8 +135,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -148,8 +143,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     return-void
 .end method
@@ -180,7 +173,6 @@
 
 .method public setContextualWallpaper(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "WallpaperWidget"
 
@@ -202,7 +194,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -242,8 +233,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     return-void
 .end method

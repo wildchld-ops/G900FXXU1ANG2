@@ -55,11 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;IZLcom/android/contacts/model/RawContactDeltaList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Lcom/android/contacts/model/RawContactDeltaList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,8 +93,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/detail/PhotoSelectionHandler;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/PhotoSelectionHandler;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->startTakePhotoActivity(Ljava/lang/String;)V
 
@@ -108,8 +101,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/detail/PhotoSelectionHandler;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/PhotoSelectionHandler;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->startPickFromGalleryActivity(Ljava/lang/String;)V
 
@@ -118,7 +109,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/detail/PhotoSelectionHandler;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/PhotoSelectionHandler;
 
     invoke-direct {p0}, Lcom/android/contacts/detail/PhotoSelectionHandler;->startPickFromSNoteActivity()V
 
@@ -127,7 +117,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/detail/PhotoSelectionHandler;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/PhotoSelectionHandler;
 
     invoke-direct {p0}, Lcom/android/contacts/detail/PhotoSelectionHandler;->startPickFromSMemoActivity()V
 
@@ -136,8 +125,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/detail/PhotoSelectionHandler;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/PhotoSelectionHandler;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->startPickFromTaggedPictureActivity(Ljava/lang/String;)V
 
@@ -146,8 +133,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/detail/PhotoSelectionHandler;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/PhotoSelectionHandler;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->startPickFromAvatarActivity(Ljava/lang/String;)V
 
@@ -186,8 +171,6 @@
 
 .method private doCropPhoto(Landroid/net/Uri;Landroid/net/Uri;)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
 
     :try_start_0
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getCropImageIntent(Landroid/net/Uri;Landroid/net/Uri;)Landroid/content/Intent;
@@ -229,7 +212,6 @@
 
 .method private doCropPhoto(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -305,7 +287,6 @@
 
 .method private getAvatarPickIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -376,8 +357,6 @@
 
 .method private getCropImageIntent(Landroid/net/Uri;Landroid/net/Uri;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -400,8 +379,6 @@
 
 .method private getCropImageIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/io/File;
 
@@ -438,8 +415,6 @@
 
 .method private getCropSNoteIntent(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     new-instance v2, Ljava/io/File;
 
@@ -468,7 +443,6 @@
 
 .method private getPhotoPickIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mContext:Landroid/content/Context;
 
@@ -625,7 +599,6 @@
 
 .method private getTaggedPhotoPickIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -676,7 +649,6 @@
 
 .method private static getTakePhotoIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -731,7 +703,6 @@
 
 .method private startPickFromAvatarActivity(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getAvatarPickIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -746,7 +717,6 @@
 
 .method private startPickFromGalleryActivity(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getPhotoPickIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -789,7 +759,6 @@
 
 .method private startPickFromTaggedPictureActivity(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getTaggedPhotoPickIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -804,7 +773,6 @@
 
 .method private startTakePhotoActivity(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getTakePhotoIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -836,7 +804,6 @@
 
 .method protected doCropSNote(Landroid/net/Uri;)V
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const/4 v8, 0x1
 
@@ -1037,9 +1004,6 @@
 
 .method public handlePhotoActivityResult(IILandroid/content/Intent;)Z
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getListener()Lcom/android/contacts/detail/PhotoSelectionHandler$PhotoActionListener;
 
@@ -1286,7 +1250,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getListener()Lcom/android/contacts/detail/PhotoSelectionHandler$PhotoActionListener;
 
@@ -1357,7 +1320,6 @@
 
 .method public setDirectoryContact(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mIsDirectoryContact:Z
 
@@ -1366,7 +1328,6 @@
 
 .method public setPhotoMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mPhotoMode:I
 
@@ -1375,7 +1336,6 @@
 
 .method public setState(Lcom/android/contacts/model/RawContactDeltaList;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/model/RawContactDeltaList;
 
     iput-object p1, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mState:Lcom/android/contacts/model/RawContactDeltaList;
 

@@ -42,8 +42,6 @@
 
 .method public constructor <init>(Lcom/samsung/contacts/widget/ContactPhotoView;Landroid/content/Context;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/widget/ContactPhotoView;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -137,7 +135,6 @@
 # virtual methods
 .method protected getPhotoBitmap(Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     :try_start_0
     const-string v3, "ImageViewDrawableSetter"
@@ -215,8 +212,6 @@
 
 .method protected setCompressedImage(Landroid/graphics/Bitmap;J)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -356,7 +351,6 @@
 
 .method public setDefaultBackgroundColor(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v0, p0, Lcom/samsung/dialer/util/CallDetailDrawableSetter;->mTarget:Lcom/samsung/contacts/widget/ContactPhotoView;
 
@@ -377,7 +371,6 @@
 
 .method public setDefaultBackgroundColorWithAlpha(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/samsung/dialer/util/CallDetailDrawableSetter;->mTarget:Lcom/samsung/contacts/widget/ContactPhotoView;
 
@@ -392,7 +385,6 @@
 
 .method public setResources(Landroid/content/res/Resources;)V
     .locals 0
-    .param p1    # Landroid/content/res/Resources;
 
     iput-object p1, p0, Lcom/samsung/dialer/util/CallDetailDrawableSetter;->mResources:Landroid/content/res/Resources;
 
@@ -401,7 +393,6 @@
 
 .method protected setTarget(Lcom/samsung/contacts/widget/ContactPhotoView;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     const/4 v1, 0x0
 
@@ -421,9 +412,6 @@
 
 .method public setupPhoto(Landroid/net/Uri;JLcom/samsung/contacts/widget/ContactPhotoView;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     iput-wide p2, p0, Lcom/samsung/dialer/util/CallDetailDrawableSetter;->mContactId:J
 

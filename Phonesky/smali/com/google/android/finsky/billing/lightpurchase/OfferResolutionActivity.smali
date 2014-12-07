@@ -109,11 +109,6 @@
 
 .method public static createIntent(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/DocUtils$OfferFilter;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Lcom/google/android/finsky/utils/DocUtils$OfferFilter;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -157,7 +152,6 @@
 
 .method public static extractAvailableOffer(Landroid/content/Intent;)Lcom/google/android/finsky/billing/lightpurchase/OfferResolutionActivity$AvailableOffer;
     .locals 6
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "OfferResolutionActivity.docid"
 
@@ -401,7 +395,6 @@
 
 .method private showError(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
 
@@ -862,7 +855,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const-string v0, "Not using tree impressions."
 
@@ -928,7 +920,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -991,7 +982,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1217,7 +1207,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/utils/ErrorStrings;->get(Landroid/content/Context;Lcom/android/volley/VolleyError;)Ljava/lang/String;
 
@@ -1230,16 +1219,12 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 

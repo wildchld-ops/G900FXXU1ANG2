@@ -75,7 +75,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/activities/PhotoSelectionActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/activities/PhotoSelectionActivity;->displayPhoto()V
 
@@ -84,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/activities/PhotoSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mAnimationPending:Z
 
@@ -93,8 +91,6 @@
 
 .method static synthetic access$102(Lcom/android/contacts/activities/PhotoSelectionActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mAnimationPending:Z
 
@@ -103,7 +99,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/activities/PhotoSelectionActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/activities/PhotoSelectionActivity;->animatePhotoOpen()V
 
@@ -112,7 +107,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/activities/PhotoSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mIsDirectoryContact:Z
 
@@ -121,7 +115,6 @@
 
 .method static synthetic access$1400(Lcom/android/contacts/activities/PhotoSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mSubActivityInProgress:Z
 
@@ -130,8 +123,6 @@
 
 .method static synthetic access$1402(Lcom/android/contacts/activities/PhotoSelectionActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mSubActivityInProgress:Z
 
@@ -140,7 +131,6 @@
 
 .method static synthetic access$1500(Lcom/android/contacts/activities/PhotoSelectionActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mCurrentPhotoFile:Ljava/lang/String;
 
@@ -149,8 +139,6 @@
 
 .method static synthetic access$1502(Lcom/android/contacts/activities/PhotoSelectionActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mCurrentPhotoFile:Ljava/lang/String;
 
@@ -159,7 +147,6 @@
 
 .method static synthetic access$1600(Lcom/android/contacts/activities/PhotoSelectionActivity;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mCurrentPhotoUri:Landroid/net/Uri;
 
@@ -168,8 +155,6 @@
 
 .method static synthetic access$1602(Lcom/android/contacts/activities/PhotoSelectionActivity;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mCurrentPhotoUri:Landroid/net/Uri;
 
@@ -178,7 +163,6 @@
 
 .method static synthetic access$1900(Lcom/android/contacts/activities/PhotoSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mIsProfile:Z
 
@@ -187,7 +171,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/activities/PhotoSelectionActivity;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mPhotoView:Landroid/widget/ImageView;
 
@@ -196,7 +179,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/activities/PhotoSelectionActivity;)Landroid/animation/AnimatorListenerAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mAnimationListener:Landroid/animation/AnimatorListenerAdapter;
 
@@ -205,7 +187,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/activities/PhotoSelectionActivity;)Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mPhotoHandler:Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;
 
@@ -214,7 +195,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/activities/PhotoSelectionActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/activities/PhotoSelectionActivity;->finishImmediatelyWithNoAnimation()V
 
@@ -289,7 +269,6 @@
 
 .method private animatePhoto(Landroid/view/ViewGroup$MarginLayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity;->mPhotoAnimator:Landroid/animation/ObjectAnimator;
 
@@ -602,8 +581,6 @@
 
 .method private getAdjustedExpandedPhotoSize(Landroid/view/View;I)I
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -784,9 +761,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -841,7 +815,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -864,7 +837,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1054,7 +1026,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "currentphotofile"
 

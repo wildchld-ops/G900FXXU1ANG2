@@ -278,8 +278,6 @@
 
 .method public static getMetadata(IZ)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 2
-    .param p0    # I
-    .param p1    # Z
 
     sget-object v0, Lcom/google/android/finsky/layout/play/PlayCardPersonFollowClusterRepository;->sClusters:[Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
 

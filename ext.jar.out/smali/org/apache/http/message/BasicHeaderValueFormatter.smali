@@ -37,9 +37,6 @@
 
 .method public static final formatElements([Lorg/apache/http/HeaderElement;ZLorg/apache/http/message/HeaderValueFormatter;)Ljava/lang/String;
     .locals 1
-    .param p0    # [Lorg/apache/http/HeaderElement;
-    .param p1    # Z
-    .param p2    # Lorg/apache/http/message/HeaderValueFormatter;
 
     if-nez p2, :cond_0
 
@@ -61,9 +58,6 @@
 
 .method public static final formatHeaderElement(Lorg/apache/http/HeaderElement;ZLorg/apache/http/message/HeaderValueFormatter;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lorg/apache/http/HeaderElement;
-    .param p1    # Z
-    .param p2    # Lorg/apache/http/message/HeaderValueFormatter;
 
     if-nez p2, :cond_0
 
@@ -85,9 +79,6 @@
 
 .method public static final formatNameValuePair(Lorg/apache/http/NameValuePair;ZLorg/apache/http/message/HeaderValueFormatter;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lorg/apache/http/NameValuePair;
-    .param p1    # Z
-    .param p2    # Lorg/apache/http/message/HeaderValueFormatter;
 
     if-nez p2, :cond_0
 
@@ -109,9 +100,6 @@
 
 .method public static final formatParameters([Lorg/apache/http/NameValuePair;ZLorg/apache/http/message/HeaderValueFormatter;)Ljava/lang/String;
     .locals 1
-    .param p0    # [Lorg/apache/http/NameValuePair;
-    .param p1    # Z
-    .param p2    # Lorg/apache/http/message/HeaderValueFormatter;
 
     if-nez p2, :cond_0
 
@@ -135,9 +123,6 @@
 # virtual methods
 .method protected doFormatValue(Lorg/apache/http/util/CharArrayBuffer;Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/16 v3, 0x22
 
@@ -213,7 +198,6 @@
 
 .method protected estimateElementsLen([Lorg/apache/http/HeaderElement;)I
     .locals 4
-    .param p1    # [Lorg/apache/http/HeaderElement;
 
     if-eqz p1, :cond_0
 
@@ -258,7 +242,6 @@
 
 .method protected estimateHeaderElementLen(Lorg/apache/http/HeaderElement;)I
     .locals 5
-    .param p1    # Lorg/apache/http/HeaderElement;
 
     if-nez p1, :cond_1
 
@@ -321,7 +304,6 @@
 
 .method protected estimateNameValuePairLen(Lorg/apache/http/NameValuePair;)I
     .locals 3
-    .param p1    # Lorg/apache/http/NameValuePair;
 
     if-nez p1, :cond_1
 
@@ -359,7 +341,6 @@
 
 .method protected estimateParametersLen([Lorg/apache/http/NameValuePair;)I
     .locals 4
-    .param p1    # [Lorg/apache/http/NameValuePair;
 
     if-eqz p1, :cond_0
 
@@ -404,9 +385,6 @@
 
 .method public formatElements(Lorg/apache/http/util/CharArrayBuffer;[Lorg/apache/http/HeaderElement;Z)Lorg/apache/http/util/CharArrayBuffer;
     .locals 4
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # [Lorg/apache/http/HeaderElement;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -463,9 +441,6 @@
 
 .method public formatHeaderElement(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/HeaderElement;Z)Lorg/apache/http/util/CharArrayBuffer;
     .locals 6
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # Lorg/apache/http/HeaderElement;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -544,9 +519,6 @@
 
 .method public formatNameValuePair(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/NameValuePair;Z)Lorg/apache/http/util/CharArrayBuffer;
     .locals 4
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # Lorg/apache/http/NameValuePair;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -599,9 +571,6 @@
 
 .method public formatParameters(Lorg/apache/http/util/CharArrayBuffer;[Lorg/apache/http/NameValuePair;Z)Lorg/apache/http/util/CharArrayBuffer;
     .locals 4
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # [Lorg/apache/http/NameValuePair;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -658,7 +627,6 @@
 
 .method protected isSeparator(C)Z
     .locals 1
-    .param p1    # C
 
     const-string v0, " ;,:@()<>\\\"/[]?={}\t"
 
@@ -681,7 +649,6 @@
 
 .method protected isUnsafe(C)Z
     .locals 1
-    .param p1    # C
 
     const-string v0, "\"\\"
 

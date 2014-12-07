@@ -39,7 +39,6 @@
 
 .method public processChallenge(Lorg/apache/http/Header;)V
     .locals 9
-    .param p1    # Lorg/apache/http/Header;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/MalformedChallengeException;

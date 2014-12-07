@@ -72,7 +72,6 @@
 
 .method private getCurrentSymbolPageModeId(I)I
     .locals 13
-    .param p1    # I
 
     const/16 v12, 0x8
 
@@ -924,7 +923,6 @@
 
 .method private getFloatingKeyboardXmlId(I)I
     .locals 16
-    .param p1    # I
 
     const/high16 v13, -0x10000
 
@@ -2688,7 +2686,6 @@
 
 .method private getFloatingPhonePadKeyboardXmlId(I)I
     .locals 20
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -4900,7 +4897,6 @@
 
 .method private getFloatingPhonepadNumberPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 9
-    .param p1    # Z
 
     const v8, 0x656e4742
 
@@ -5317,7 +5313,6 @@
 
 .method private getFloatingPhonepadSymbolPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 10
-    .param p1    # Z
 
     const v9, 0x656e4742
 
@@ -5651,7 +5646,6 @@
 
 .method private getHWRSymbolKeyboardXmlId(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6027,7 +6021,6 @@
 
 .method private getNoHwrFloatingKeyboardXmlId(I)I
     .locals 16
-    .param p1    # I
 
     const/high16 v13, -0x10000
 
@@ -7615,7 +7608,6 @@
 
 .method private getNoHwrNumberPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 12
-    .param p1    # Z
 
     const/4 v11, 0x0
 
@@ -8456,7 +8448,6 @@
 
 .method private getNoHwrSplitRightKeyboardXmlId(I)I
     .locals 16
-    .param p1    # I
 
     const/high16 v13, -0x10000
 
@@ -10042,7 +10033,6 @@
 
 .method private getNoHwrSymbolPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 10
-    .param p1    # Z
 
     const/4 v9, 0x0
 
@@ -11801,7 +11791,6 @@
 
 .method private getNumberPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 10
-    .param p1    # Z
 
     const-string v7, "SamsungIME"
 
@@ -13810,7 +13799,6 @@
 
 .method private getOneHandPhonepadXmlId(I)I
     .locals 20
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -15616,7 +15604,6 @@
 
 .method private getOneHandQwertyKeyboardXmlId(I)I
     .locals 20
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -18268,7 +18255,6 @@
 
 .method private getPhonePadCurrentSymbolPageModeId(I)I
     .locals 8
-    .param p1    # I
 
     iget-object v6, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -19491,7 +19477,6 @@
 
 .method private getPhonepadXmlId(I)I
     .locals 20
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -20783,7 +20768,6 @@
 
 .method private getQwertyKeyboardXmlId(I)I
     .locals 17
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -21545,7 +21529,6 @@
 
 .method private getQwertyNoHwrKeyboardXmlId(I)I
     .locals 18
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -23014,7 +22997,6 @@
 
 .method private getSplitLeftKeyboardXmlId(I)I
     .locals 14
-    .param p1    # I
 
     const/4 v12, 0x2
 
@@ -24700,7 +24682,6 @@
 
 .method private getSplitNumberPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 11
-    .param p1    # Z
 
     const-string v8, "SamsungIME"
 
@@ -25273,7 +25254,6 @@
 
 .method private getSplitRightKeyboardXmlId(I)I
     .locals 14
-    .param p1    # I
 
     const/4 v12, 0x2
 
@@ -28406,7 +28386,6 @@
 
 .method private getSymbolPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 14
-    .param p1    # Z
 
     const-string v11, "SamsungIME"
 
@@ -30656,7 +30635,6 @@
 
 .method private getTextKeyboardModeId(Landroid/view/inputmethod/EditorInfo;)I
     .locals 12
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     if-eqz p1, :cond_0
 
@@ -31101,7 +31079,6 @@
 
 .method private getTextPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 9
-    .param p1    # Z
 
     const-string v6, "SamsungIME"
 
@@ -31338,7 +31315,6 @@
 
 .method private getValidSymbolsPage(I)I
     .locals 9
-    .param p1    # I
 
     const v8, 0x7f0a0004
 
@@ -31562,9 +31538,6 @@
 
 .method private setCurrentKeyboardInfo(Lcom/diotek/ime/framework/view/DefaultKeyboard;II)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p2    # I
-    .param p3    # I
 
     iput p2, p0, Lcom/diotek/ime/implement/view/ViewControllerImpl;->mXmlID:I
 
@@ -31601,7 +31574,6 @@
 
 .method protected getCNFloatingKeyboardViewRscId(I)I
     .locals 2
-    .param p1    # I
 
     const v0, 0x7f030019
 
@@ -31617,7 +31589,6 @@
 
 .method protected getCNKeyboardViewRscId(I)I
     .locals 2
-    .param p1    # I
 
     const v0, 0x7f030018
 
@@ -31912,7 +31883,6 @@
 
 .method protected getCurrentPopupKeyboard(Z)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 9
-    .param p1    # Z
 
     const/16 v8, 0x8
 
@@ -32155,7 +32125,6 @@
 
 .method protected getEmoticonLayoutRscId(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x8
 
@@ -32195,7 +32164,6 @@
 
 .method protected getFloatingEmoticonKeyboardViewRscId(I)I
     .locals 2
-    .param p1    # I
 
     const v0, 0x7f03000f
 
@@ -32245,7 +32213,6 @@
 
 .method protected getHWREmoticonLayoutRscId(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x8
 
@@ -32264,7 +32231,6 @@
 
 .method protected getHWRFloatingKeyboardViewRscId(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -32353,7 +32319,6 @@
 
 .method public getKeyboardKeyList(Z)Ljava/util/List;
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -32422,7 +32387,6 @@
 
 .method protected getKeyboardOneHandDimView(Landroid/widget/FrameLayout;)Landroid/widget/ImageView;
     .locals 1
-    .param p1    # Landroid/widget/FrameLayout;
 
     const v0, 0x7f080026
 
@@ -32437,7 +32401,6 @@
 
 .method protected getKeyboardOneHandLayout(Landroid/widget/FrameLayout;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p1    # Landroid/widget/FrameLayout;
 
     const v0, 0x7f080020
 
@@ -32452,8 +32415,6 @@
 
 .method protected getKeyboardOneHandLayoutView(Landroid/widget/LinearLayout;Z)Landroid/widget/LinearLayout;
     .locals 1
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -32482,7 +32443,6 @@
 
 .method protected getKeyboardOneHandTalkBackDimView(Landroid/widget/LinearLayout;)Landroid/widget/ImageView;
     .locals 1
-    .param p1    # Landroid/widget/LinearLayout;
 
     const v0, 0x7f080026
 
@@ -32497,8 +32457,6 @@
 
 .method protected getKeyboardOneHandView(Landroid/widget/LinearLayout;Z)Landroid/widget/ImageView;
     .locals 1
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -32535,7 +32493,6 @@
 
 .method protected getKeyboardView(Landroid/widget/LinearLayout;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/widget/LinearLayout;
 
     const v0, 0x7f08000d
 
@@ -32548,7 +32505,6 @@
 
 .method protected getKeyboardViewRscId(I)I
     .locals 2
-    .param p1    # I
 
     const v0, 0x7f030017
 
@@ -32621,7 +32577,6 @@
 
 .method protected getOneHandKeyboardViewRscId(I)I
     .locals 2
-    .param p1    # I
 
     const v0, 0x7f03001d
 
@@ -32681,7 +32636,6 @@
 
 .method protected getSplitKeyboardViewRscId(Z)I
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -32698,7 +32652,6 @@
 
 .method protected getThaiTextKeyboard(I)Lcom/diotek/ime/framework/view/DefaultKeyboard;
     .locals 12
-    .param p1    # I
 
     const/4 v6, 0x2
 
@@ -33368,7 +33321,6 @@
 
 .method protected getVOHWRKeyboardViewRscId(I)I
     .locals 1
-    .param p1    # I
 
     const v0, 0x7f030021
 
@@ -33641,7 +33593,6 @@
 
 .method public onChangeInputLanuage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v3, 0x0
 
@@ -33806,7 +33757,6 @@
 
 .method public setCurrentThaiVowelPageNum(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/AbstractViewController;->mCurrentThaiVowelPageNum:I
 
@@ -33815,7 +33765,6 @@
 
 .method public setSecondarySymbolStatus(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/diotek/ime/framework/view/AbstractViewController;->setSecondarySymbolStatus(I)V
 
@@ -33824,7 +33773,6 @@
 
 .method protected setSymbolPage(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/view/ViewControllerImpl;->getValidSymbolsPage(I)I
 

@@ -18,7 +18,6 @@
 
 .method public static createIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -73,7 +72,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LightInstrumentActivity;->onCreate(Landroid/os/Bundle;)V
 

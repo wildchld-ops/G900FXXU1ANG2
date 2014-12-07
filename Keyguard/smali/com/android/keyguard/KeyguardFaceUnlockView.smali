@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -104,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardFaceUnlockView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mLastRotation:I
 
@@ -113,8 +109,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/KeyguardFaceUnlockView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mLastRotation:I
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardFaceUnlockView;)Lcom/android/keyguard/BiometricSensorUnlock;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mBiometricUnlock:Lcom/android/keyguard/BiometricSensorUnlock;
 
@@ -132,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardFaceUnlockView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardFaceUnlockView;->maybeStartBiometricUnlock()V
 
@@ -141,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardFaceUnlockView;)Lcom/android/keyguard/sec/EmergencyCircleView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mEmergencyCircleView:Lcom/android/keyguard/sec/EmergencyCircleView;
 
@@ -150,7 +141,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/KeyguardFaceUnlockView;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mRootLayout:Landroid/widget/FrameLayout;
 
@@ -159,7 +149,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardFaceUnlockView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mEmergencyCircleText:Landroid/widget/TextView;
 
@@ -168,7 +157,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardFaceUnlockView;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mEmergencyButton:Landroid/widget/Button;
 
@@ -177,7 +165,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/KeyguardFaceUnlockView;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mIsShowingLock:Ljava/lang/Object;
 
@@ -186,7 +173,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/KeyguardFaceUnlockView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mIsShowing:Z
 
@@ -195,8 +181,6 @@
 
 .method static synthetic access$802(Lcom/android/keyguard/KeyguardFaceUnlockView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mIsShowing:Z
 
@@ -205,7 +189,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardFaceUnlockView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardFaceUnlockView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -382,7 +365,6 @@
 # virtual methods
 .method public hideBouncer(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
@@ -600,11 +582,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
@@ -674,7 +651,6 @@
 
 .method public onResume(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -752,7 +728,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mKeyguardSecurityCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -767,7 +742,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -776,7 +750,6 @@
 
 .method public showBouncer(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 

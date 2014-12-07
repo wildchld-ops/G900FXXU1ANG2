@@ -367,8 +367,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     const/high16 v9, 0x3f800000
 
@@ -1059,11 +1057,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;FFFZ)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->ripple(FFFZ)V
 
@@ -1072,7 +1065,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)F
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->defaultY:F
 
@@ -1081,8 +1073,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mLongPressRunnable:Ljava/lang/Runnable;
 
@@ -1091,8 +1081,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->setHoverEnable(Z)V
 
@@ -1101,8 +1089,6 @@
 
 .method static synthetic access$1202(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mDefaultRunnable:Ljava/lang/Runnable;
 
@@ -1111,7 +1097,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->setFalseDefaultEffectFlag()V
 
@@ -1120,7 +1105,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->soundNum:I
 
@@ -1129,7 +1113,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->isSystemSoundChecked:Z
 
@@ -1138,7 +1121,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mSoundPool:Landroid/media/SoundPool;
 
@@ -1147,7 +1129,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->soundTime:I
 
@@ -1156,7 +1137,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mLandscape:Z
 
@@ -1165,7 +1145,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)F
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->defaultX:F
 
@@ -1174,7 +1153,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mScreenWidth:I
 
@@ -1183,7 +1161,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 
     iget v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mScreenHeight:I
 
@@ -2149,7 +2126,6 @@
 
 .method private playDragSound(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2193,7 +2169,6 @@
 
 .method private playSound(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2227,7 +2202,6 @@
 
 .method private playSound_gravity(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -3808,7 +3782,6 @@
 
 .method public EffectEnable(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -4254,7 +4227,6 @@
 
 .method public getInterpolation70(F)F
     .locals 13
-    .param p1    # F
 
     const/4 v12, 0x0
 
@@ -4354,7 +4326,6 @@
 
 .method public getInterpolation80(F)F
     .locals 13
-    .param p1    # F
 
     const/4 v12, 0x0
 
@@ -6707,7 +6678,6 @@
 
 .method public onSContextChanged(Landroid/hardware/scontext/SContextEvent;)V
     .locals 10
-    .param p1    # Landroid/hardware/scontext/SContextEvent;
 
     const/4 v5, 0x1
 
@@ -7537,7 +7507,6 @@
 
 .method public setContextualWallpaper(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_0
 
@@ -7566,9 +7535,6 @@
 
 .method public setGravityTexture(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
 
@@ -7642,8 +7608,6 @@
 
 .method public setSoundRID(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mRDownId:I
 
@@ -7739,7 +7703,6 @@
 
 .method public setWaterTexture(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->bitmapWater:Landroid/graphics/Bitmap;
 
@@ -7891,11 +7854,6 @@
 
 .method public startLongPressCheck(Landroid/view/View;FFJF)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # J
-    .param p6    # F
 
     iput p2, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->tmx:F
 
@@ -7921,11 +7879,6 @@
 
 .method public startLongPressCheck2(Landroid/view/View;FFJF)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # J
-    .param p6    # F
 
     iput p2, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->tmx:F
 
@@ -7951,7 +7904,6 @@
 
 .method public stopLongPressCheck(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;->mLongPressRunnable:Ljava/lang/Runnable;
 

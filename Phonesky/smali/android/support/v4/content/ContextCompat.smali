@@ -6,9 +6,6 @@
 # direct methods
 .method public static startActivities(Landroid/content/Context;[Landroid/content/Intent;Landroid/os/Bundle;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 

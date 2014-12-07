@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -28,8 +27,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/play/PlayCardClusterView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -38,8 +35,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->mRejectTouchEvents:Z
 
@@ -48,8 +43,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardViewRate;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->fadeOutCard(Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
 
@@ -58,8 +51,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardViewRate;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->startSlideTransition(Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
 
@@ -68,8 +59,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardViewRate;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->onSlideTransitionCompleted(Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
 
@@ -78,7 +67,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;)Lcom/google/android/finsky/adapters/OnCollapsedListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->mOnCollapsedListener:Lcom/google/android/finsky/adapters/OnCollapsedListener;
 
@@ -87,7 +75,6 @@
 
 .method private fadeOutCard(Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardViewRate;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->getContext()Landroid/content/Context;
 
@@ -116,8 +103,6 @@
 
 .method public static isClusterDismissed(Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/api/model/Document;)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v1, 0x0
 
@@ -175,7 +160,6 @@
 
 .method private onSlideTransitionCompleted(Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardViewRate;
 
     const/4 v5, 0x0
 
@@ -244,7 +228,6 @@
 
 .method private startSlideTransition(Lcom/google/android/finsky/layout/play/PlayCardViewRate;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardViewRate;
 
     const/4 v2, 0x0
 
@@ -321,7 +304,6 @@
 
 .method private transitionToEmptyState(Z)V
     .locals 7
-    .param p1    # Z
 
     const-wide/16 v5, 0xfa
 
@@ -392,11 +374,6 @@
 # virtual methods
 .method public createContent(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/play/PlayCardDismissListener;Lcom/google/android/finsky/layout/play/PlayCardHeap;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayCardDismissListener;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayCardHeap;
 
     move-object v0, p0
 
@@ -466,7 +443,6 @@
 
 .method public enableCollapseAnimation(Lcom/google/android/finsky/adapters/OnCollapsedListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/adapters/OnCollapsedListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->mOnCollapsedListener:Lcom/google/android/finsky/adapters/OnCollapsedListener;
 
@@ -491,8 +467,6 @@
 
 .method public onDismissDocument(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->mClientMutationCache:Lcom/google/android/finsky/utils/ClientMutationCache;
 
@@ -527,7 +501,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/play/PlayCardRateClusterView;->mRejectTouchEvents:Z
 
@@ -553,11 +526,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -645,8 +613,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 

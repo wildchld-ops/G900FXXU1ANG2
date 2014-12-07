@@ -42,7 +42,6 @@
 
 .method static isWfcProvisioned(Landroid/content/Context;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v8, 0x1
 

@@ -31,10 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +85,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;
 
     iget v0, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;->mAppWidgetId:I
 
@@ -98,7 +93,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;)Lcom/google/android/finsky/widget/WidgetTypeMap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;->mTypeMap:Lcom/google/android/finsky/widget/WidgetTypeMap;
 
@@ -107,9 +101,6 @@
 
 .method private getChildViewAt(III)Landroid/widget/RemoteViews;
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;->mItems:Lcom/google/android/finsky/widget/recommendation/RecommendationList;
 
@@ -192,7 +183,6 @@
 
 .method private getLastMeasuredWidth(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;->mContext:Landroid/content/Context;
 
@@ -227,12 +217,6 @@
 
 .method private static getLayoutRes(Landroid/content/Context;IIIII)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const v2, 0x7f04011a
 
@@ -366,7 +350,6 @@
 
 .method private getRecommendationItems(I)Lcom/google/android/finsky/widget/recommendation/RecommendationList;
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationsViewFactory;->mContext:Landroid/content/Context;
 
@@ -430,8 +413,6 @@
 
 .method public static varargs notifyDataSetChanged(Landroid/content/Context;[I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # [I
 
     invoke-static {p0}, Landroid/appwidget/AppWidgetManager;->getInstance(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;
 
@@ -464,11 +445,6 @@
 
 .method private static populateItem(Landroid/content/Context;Landroid/widget/RemoteViews;Lcom/google/android/finsky/widget/recommendation/Recommendation;Landroid/graphics/Bitmap;I)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Lcom/google/android/finsky/widget/recommendation/Recommendation;
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # I
 
     invoke-virtual {p2}, Lcom/google/android/finsky/widget/recommendation/Recommendation;->getDocument()Lcom/google/android/finsky/api/model/Document;
 
@@ -563,12 +539,6 @@
 
 .method private static setIntents(Landroid/content/Context;Landroid/widget/RemoteViews;Lcom/google/android/finsky/widget/recommendation/Recommendation;III)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Lcom/google/android/finsky/widget/recommendation/Recommendation;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p2}, Lcom/google/android/finsky/widget/recommendation/Recommendation;->getDocument()Lcom/google/android/finsky/api/model/Document;
 
@@ -631,7 +601,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -658,7 +627,6 @@
 
 .method public getViewAt(I)Landroid/widget/RemoteViews;
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x2
 

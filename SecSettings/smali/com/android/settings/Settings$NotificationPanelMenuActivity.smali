@@ -27,8 +27,6 @@
 # virtual methods
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Lcom/android/settings/Settings;->getIntent()Landroid/content/Intent;
 

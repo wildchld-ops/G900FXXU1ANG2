@@ -23,7 +23,6 @@
 # direct methods
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiCallingEnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCallingEnabler;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/WifiCallingEnabler;->mIsWfcProvisioned:Z
 
@@ -32,8 +31,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/WifiCallingEnabler;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiCallingEnabler;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/WifiCallingEnabler;->mIsWfcProvisioned:Z
 
@@ -42,7 +39,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiCallingEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCallingEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiCallingEnabler;->mContext:Landroid/content/Context;
 
@@ -51,8 +47,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiCallingEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiCallingEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiCallingEnabler;->updateWfcState(Z)V
 
@@ -61,7 +55,6 @@
 
 .method private updateWfcState(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -104,8 +97,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 

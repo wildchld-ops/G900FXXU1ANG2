@@ -6,8 +6,6 @@
 # direct methods
 .method private static addFifeOptions(Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v3, 0x1
 
@@ -92,9 +90,6 @@
 
 .method public static buildFifeUrl(Ljava/lang/String;II)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -152,10 +147,6 @@
 
 .method public static buildFifeUrlWithScaling(Landroid/content/Context;Ljava/lang/String;II)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0}, Lcom/google/android/finsky/receivers/NetworkStateChangedReceiver;->getCachedNetworkInfo(Landroid/content/Context;)Landroid/net/NetworkInfo;
 
@@ -186,8 +177,6 @@
 
 .method public static getBestImage(Ljava/util/List;II)Lcom/google/android/finsky/protos/Doc$Image;
     .locals 10
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -304,9 +293,6 @@
 
 .method public static getBestImageUrl(Landroid/content/Context;Ljava/util/List;II)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -362,10 +348,6 @@
 
 .method public static getImageFromDocument(Lcom/google/android/finsky/api/model/Document;II[I)Lcom/google/android/finsky/protos/Doc$Image;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     const/4 v0, 0x0
 
@@ -402,7 +384,6 @@
 
 .method private static getNetworkScaleFactor(Landroid/net/NetworkInfo;)F
     .locals 4
-    .param p0    # Landroid/net/NetworkInfo;
 
     sget-object v2, Lcom/google/android/finsky/config/G;->percentOfImageSize3G:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -530,11 +511,6 @@
 
 .method public static getPageHeaderBannerUrlFromDocument(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;ZII)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     if-eqz p2, :cond_0
 
@@ -559,10 +535,6 @@
 
 .method public static getPromoBitmapUrlFromDocument(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;II)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x2
 

@@ -170,9 +170,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Z)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -197,13 +194,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;ZZZZZ)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
 
     const/4 v8, 0x0
 
@@ -232,15 +222,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;ZZZZZZZ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
 
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
@@ -273,7 +254,6 @@
 
 .method private computeFormattedPhoneNumbers(Lcom/android/contacts/model/Contact;)V
     .locals 11
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual {p0}, Landroid/content/Loader;->getContext()Landroid/content/Context;
 
@@ -347,9 +327,6 @@
 
 .method private cursorColumnToContentValues(Landroid/database/Cursor;Landroid/content/ContentValues;I)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # I
 
     invoke-interface {p1, p3}, Landroid/database/Cursor;->getType(I)I
 
@@ -626,8 +603,6 @@
 
 .method private loadContactEntity(Landroid/content/ContentResolver;Landroid/net/Uri;)Lcom/android/contacts/model/Contact;
     .locals 24
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
 
     const-string v2, "entities"
 
@@ -906,8 +881,6 @@
 
 .method private loadContactHeaderData(Landroid/database/Cursor;Landroid/net/Uri;)Lcom/android/contacts/model/Contact;
     .locals 36
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/net/Uri;
 
     const-string v1, "directory"
 
@@ -1327,7 +1300,6 @@
 
 .method private loadDataValues(Landroid/database/Cursor;)Landroid/content/ContentValues;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1456,7 +1428,6 @@
 
 .method private loadDirectoryMetaData(Lcom/android/contacts/model/Contact;)V
     .locals 16
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/contacts/model/Contact;->getDirectoryId()J
 
@@ -1631,7 +1602,6 @@
 
 .method private loadFaceTaggedPhotos(Lcom/android/contacts/model/Contact;)V
     .locals 21
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     sget-object v3, Lcom/android/contacts/model/ContactLoader;->TAG:Ljava/lang/String;
 
@@ -2116,7 +2086,6 @@
 
 .method private loadGroupMetaData(Lcom/android/contacts/model/Contact;)V
     .locals 17
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     new-instance v14, Ljava/lang/StringBuilder;
 
@@ -2400,7 +2369,6 @@
 
 .method private loadInvitableAccountTypes(Lcom/android/contacts/model/Contact;)V
     .locals 8
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     new-instance v3, Lcom/google/common/collect/ImmutableList$Builder;
 
@@ -2490,7 +2458,6 @@
 
 .method private loadPhotoBinaryData(Lcom/android/contacts/model/Contact;)V
     .locals 19
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/contacts/model/Contact;->getPhotoUri()Ljava/lang/String;
 
@@ -2726,7 +2693,6 @@
 
 .method private loadRawContactValues(Landroid/database/Cursor;)Landroid/content/ContentValues;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -3052,7 +3018,6 @@
 
 .method private loadStreamItems(Lcom/android/contacts/model/Contact;)V
     .locals 25
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Loader;->getContext()Landroid/content/Context;
 
@@ -4068,7 +4033,6 @@
 
 .method public bridge synthetic deliverResult(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/model/Contact;
 
@@ -4340,7 +4304,6 @@
 
 .method public setCustomEmailAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/model/ContactLoader;->mCustomEmailAddress:Ljava/lang/String;
 

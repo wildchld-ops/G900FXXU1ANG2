@@ -88,8 +88,6 @@
 
 .method public static addBuddy(Landroid/content/Context;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -195,9 +193,6 @@
 
 .method public static addBuddyBackground(Landroid/content/Context;JLjava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "2.0.1"
         versionCode = 0x1312db1
@@ -338,8 +333,6 @@
 
 .method protected static addPassword(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -368,10 +361,6 @@
 
 .method public static getBuddyList(Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -481,8 +470,6 @@
 
 .method public static getBuddyProfileImage(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -701,7 +688,6 @@
 
 .method public static getMyProfile(Landroid/content/Context;)Landroid/database/Cursor;
     .locals 9
-    .param p0    # Landroid/content/Context;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -884,9 +870,6 @@
 
 .method public static pickBuddy(Landroid/content/Context;[Ljava/lang/String;I)Landroid/content/Intent;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd

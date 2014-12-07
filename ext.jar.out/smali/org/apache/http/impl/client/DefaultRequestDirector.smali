@@ -131,18 +131,6 @@
 
 .method public constructor <init>(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/conn/routing/HttpRoutePlanner;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/HttpRequestRetryHandler;Lorg/apache/http/client/RedirectHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/UserTokenHandler;Lorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Lorg/apache/http/protocol/HttpRequestExecutor;
-    .param p2    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p3    # Lorg/apache/http/ConnectionReuseStrategy;
-    .param p4    # Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
-    .param p5    # Lorg/apache/http/conn/routing/HttpRoutePlanner;
-    .param p6    # Lorg/apache/http/protocol/HttpProcessor;
-    .param p7    # Lorg/apache/http/client/HttpRequestRetryHandler;
-    .param p8    # Lorg/apache/http/client/RedirectHandler;
-    .param p9    # Lorg/apache/http/client/AuthenticationHandler;
-    .param p10    # Lorg/apache/http/client/AuthenticationHandler;
-    .param p11    # Lorg/apache/http/client/UserTokenHandler;
-    .param p12    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -448,9 +436,6 @@
 
 .method private copyAllHeaders(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/impl/client/RoutedRequest;
     .locals 22
-    .param p1    # Lorg/apache/http/HttpRequest;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;
@@ -710,9 +695,6 @@
 
 .method private executeOriginal(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 31
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -1883,9 +1865,6 @@
 
 .method private executeSB(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 65
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -4015,10 +3994,6 @@
 
 .method private processChallenges(Ljava/util/Map;Lorg/apache/http/auth/AuthState;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V
     .locals 6
-    .param p2    # Lorg/apache/http/auth/AuthState;
-    .param p3    # Lorg/apache/http/client/AuthenticationHandler;
-    .param p4    # Lorg/apache/http/HttpResponse;
-    .param p5    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4237,9 +4212,6 @@
 
 .method private updateAuthState(Lorg/apache/http/auth/AuthState;Lorg/apache/http/HttpHost;Lorg/apache/http/client/CredentialsProvider;)V
     .locals 9
-    .param p1    # Lorg/apache/http/auth/AuthState;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Lorg/apache/http/client/CredentialsProvider;
 
     invoke-virtual {p1}, Lorg/apache/http/auth/AuthState;->isValid()Z
 
@@ -4386,7 +4358,6 @@
 
 .method private wrapRequest(Lorg/apache/http/HttpRequest;)Lorg/apache/http/impl/client/RequestWrapper;
     .locals 1
-    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -4418,8 +4389,6 @@
 # virtual methods
 .method protected createConnectRequest(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpRequest;
     .locals 10
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     invoke-virtual {p1}, Lorg/apache/http/conn/routing/HttpRoute;->getTargetHost()Lorg/apache/http/HttpHost;
 
@@ -4511,9 +4480,6 @@
 
 .method protected createTunnelToProxy(Lorg/apache/http/conn/routing/HttpRoute;ILorg/apache/http/protocol/HttpContext;)Z
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -4532,8 +4498,6 @@
 
 .method protected createTunnelToTarget(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)Z
     .locals 21
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -5107,9 +5071,6 @@
 
 .method protected determineRoute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/conn/routing/HttpRoute;
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;
@@ -5259,8 +5220,6 @@
 
 .method protected establishRoute(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;)V
     .locals 8
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -5550,9 +5509,6 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 10
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -5951,12 +5907,6 @@
 
 .method protected execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;JJLjava/net/InetAddress;)Lorg/apache/http/HttpResponse;
     .locals 37
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -7671,13 +7621,6 @@
 
 .method protected execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;JJLjava/net/InetAddress;Ljava/net/InetAddress;)Lorg/apache/http/HttpResponse;
     .locals 35
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Ljava/net/InetAddress;
-    .param p9    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -9439,18 +9382,6 @@
 
 .method protected execute([Lorg/apache/http/HttpHost;[Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;JJJIZJI[Lorg/apache/http/HttpHost;I)Lorg/apache/http/HttpResponse;
     .locals 43
-    .param p1    # [Lorg/apache/http/HttpHost;
-    .param p2    # [Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # I
-    .param p11    # Z
-    .param p12    # J
-    .param p14    # I
-    .param p15    # [Lorg/apache/http/HttpHost;
-    .param p16    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -11148,8 +11079,6 @@
 
 .method protected getFullContentLength(Lorg/apache/http/HttpResponse;J)J
     .locals 9
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # J
 
     const-wide/16 v3, 0x0
 
@@ -11229,9 +11158,6 @@
 
 .method protected handleResponse(Lorg/apache/http/impl/client/RoutedRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/impl/client/RoutedRequest;
     .locals 23
-    .param p1    # Lorg/apache/http/impl/client/RoutedRequest;
-    .param p2    # Lorg/apache/http/HttpResponse;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -11832,7 +11758,6 @@
 
 .method isRangeRequestProper(Lorg/apache/http/HttpRequest;)I
     .locals 11
-    .param p1    # Lorg/apache/http/HttpRequest;
 
     const/4 v5, -0x1
 
@@ -12009,7 +11934,6 @@
 
 .method isTargetAddressProper(Ljava/net/InetAddress;)Z
     .locals 1
-    .param p1    # Ljava/net/InetAddress;
 
     invoke-virtual {p1}, Ljava/net/InetAddress;->isAnyLocalAddress()Z
 
@@ -12055,11 +11979,6 @@
 
 .method protected reconnect(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;Ljava/net/InetAddress;Ljava/net/InetAddress;)V
     .locals 18
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -12587,8 +12506,6 @@
 
 .method protected rewriteRequestURI(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 6
-    .param p1    # Lorg/apache/http/impl/client/RequestWrapper;
-    .param p2    # Lorg/apache/http/conn/routing/HttpRoute;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -12689,9 +12606,6 @@
 
 .method protected setParameter(Lorg/apache/http/params/HttpParams;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Lorg/apache/http/params/HttpParams;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     :try_start_0
     sget-boolean v3, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z

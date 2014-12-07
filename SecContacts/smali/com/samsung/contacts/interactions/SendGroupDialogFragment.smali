@@ -20,7 +20,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/SendGroupDialogFragment;)Lcom/samsung/contacts/group/GroupInfo;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/SendGroupDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/SendGroupDialogFragment;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -29,7 +28,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/SendGroupDialogFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/SendGroupDialogFragment;
 
     iget v0, p0, Lcom/samsung/contacts/interactions/SendGroupDialogFragment;->mGroupType:I
 
@@ -38,8 +36,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 5
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -98,7 +94,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v3, Landroid/app/AlertDialog$Builder;
 

@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/DateTimeIntentReceiver;Landroid/content/Context;Ljava/lang/String;)V
     .locals 12
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;->this$0:Lcom/android/settings/DateTimeIntentReceiver;
 
@@ -519,7 +517,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;->mContext:Landroid/content/Context;
 
@@ -528,7 +525,6 @@
 
 .method private formatOffset(I)[C
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x3
 
@@ -629,7 +625,6 @@
 
 .method private getAutoState(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -708,7 +703,6 @@
 
 .method private set24Hour(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;->mContext:Landroid/content/Context;
 
@@ -786,7 +780,6 @@
 
 .method getTimeZoneName(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x3
 
@@ -930,7 +923,6 @@
 
 .method getTimeZoneText(Ljava/util/TimeZone;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/util/TimeZone;
 
     new-instance v5, Ljava/util/Date;
 
@@ -1007,7 +999,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1370,8 +1361,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1400,7 +1389,6 @@
 
 .method public updateTimeAndDateDisplay(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/text/format/DateFormat;->getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 

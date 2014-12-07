@@ -117,8 +117,6 @@
 
 .method public static getTypePrecedence(Ljava/lang/String;I)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -158,7 +156,6 @@
 
 .method private static getTypePrecedenceList(Ljava/lang/String;)[I
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

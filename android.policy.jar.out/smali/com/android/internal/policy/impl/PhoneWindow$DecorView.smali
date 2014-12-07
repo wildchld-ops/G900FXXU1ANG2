@@ -64,8 +64,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/PhoneWindow;Landroid/content/Context;I)V
     .locals 3
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -124,7 +122,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;)Lcom/android/internal/widget/ActionBarContextView;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mActionModeView:Lcom/android/internal/widget/ActionBarContextView;
 
@@ -133,7 +130,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;)Landroid/widget/PopupWindow;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mActionModePopup:Landroid/widget/PopupWindow;
 
@@ -142,7 +138,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mShowActionModePopup:Ljava/lang/Runnable;
 
@@ -151,7 +146,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mActionMode:Landroid/view/ActionMode;
 
@@ -160,8 +154,6 @@
 
 .method static synthetic access$302(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mActionMode:Landroid/view/ActionMode;
 
@@ -332,8 +324,6 @@
 
 .method private isOutOfBounds(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, -0x5
 
@@ -371,7 +361,6 @@
 
 .method private updateNavigationGuard(Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -504,7 +493,6 @@
 
 .method private updateStatusGuard(Landroid/graphics/Rect;)V
     .locals 11
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v5, 0x0
 
@@ -692,7 +680,6 @@
 # virtual methods
 .method public dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -731,7 +718,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v6, 0x0
 
@@ -923,7 +909,6 @@
 
 .method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x0
 
@@ -1058,7 +1043,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -1097,7 +1081,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -1136,7 +1119,6 @@
 
 .method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -1175,7 +1157,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->draw(Landroid/graphics/Canvas;)V
 
@@ -1205,7 +1186,6 @@
 
 .method protected fitSystemWindows(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mFrameOffsets:Landroid/graphics/Rect;
 
@@ -1278,7 +1258,6 @@
 
 .method public onCloseSystemDialogs(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->mFeatureId:I
 
@@ -1386,7 +1365,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -1469,8 +1447,6 @@
 
 .method protected onMeasure(II)V
     .locals 19
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1932,7 +1908,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -1943,7 +1918,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
@@ -1993,7 +1967,6 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2060,7 +2033,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -2078,10 +2050,6 @@
 
 .method protected setFrame(IIII)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->setFrame(IIII)Z
 
@@ -2200,7 +2168,6 @@
 
 .method public setSurfaceFormat(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -2211,7 +2178,6 @@
 
 .method public setSurfaceKeepScreenOn(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v1, 0x80
 
@@ -2234,7 +2200,6 @@
 
 .method public setSurfaceType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -2245,7 +2210,6 @@
 
 .method public setWindowBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
@@ -2277,7 +2241,6 @@
 
 .method public setWindowFrame(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getForeground()Landroid/graphics/drawable/Drawable;
 
@@ -2309,7 +2272,6 @@
 
 .method public showContextMenuForChild(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -2425,7 +2387,6 @@
 
 .method public startActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 11
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     const/4 v10, 0x0
 
@@ -2729,8 +2690,6 @@
 
 .method public startActionModeForChild(Landroid/view/View;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ActionMode$Callback;
 
     invoke-virtual {p0, p2}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->startActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
 
@@ -2751,7 +2710,6 @@
 
 .method public superDispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
 
@@ -2762,7 +2720,6 @@
 
 .method public superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -2845,7 +2802,6 @@
 
 .method public superDispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
 
@@ -2856,7 +2812,6 @@
 
 .method public superDispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -2867,7 +2822,6 @@
 
 .method public superDispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
 

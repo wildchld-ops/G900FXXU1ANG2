@@ -49,7 +49,6 @@
 # direct methods
 .method private constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning$Builder;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -170,8 +169,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning$Builder;Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning$Builder;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;-><init>(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning$Builder;)V
 
@@ -182,7 +179,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

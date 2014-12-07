@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -78,9 +75,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -146,7 +140,6 @@
 # virtual methods
 .method public createBadgeDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 21
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -448,7 +441,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 18
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -873,7 +865,6 @@
 
 .method public onPressed(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->mIsPressed:Z
 
@@ -891,7 +882,6 @@
 
 .method public setBadgeCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->mBadgeCount:I
 
@@ -900,7 +890,6 @@
 
 .method public setDistanceRatio(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView$ShortcutImageView;->mDistanceRatio:D
 

@@ -35,7 +35,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -71,7 +70,6 @@
 
 .method protected logClickEvent(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/LoggingDialogFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -84,7 +82,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/DialogFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -106,7 +103,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -155,7 +151,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/LoggingDialogFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 

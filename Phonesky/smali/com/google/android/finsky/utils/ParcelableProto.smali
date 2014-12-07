@@ -98,8 +98,6 @@
 
 .method public static getProtoFromBundle(Landroid/os/Bundle;Ljava/lang/String;)Lcom/google/protobuf/nano/MessageNano;
     .locals 2
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -134,8 +132,6 @@
 
 .method public static getProtoFromIntent(Landroid/content/Intent;Ljava/lang/String;)Lcom/google/protobuf/nano/MessageNano;
     .locals 2
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -170,8 +166,6 @@
 
 .method public static getProtoFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Lcom/google/protobuf/nano/MessageNano;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Ljava/lang/ClassLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -243,8 +237,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/ParcelableProto;->mSerialized:[B
 

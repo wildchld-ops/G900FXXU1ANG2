@@ -111,8 +111,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -222,7 +220,6 @@
 
 .method public static appTransitionToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -318,8 +315,6 @@
 
 .method private static computePivot(IF)F
     .locals 3
-    .param p0    # I
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 
@@ -352,10 +347,6 @@
 
 .method private createScaleUpAnimationLocked(IZII)Landroid/view/animation/Animation;
     .locals 16
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     const/4 v11, 0x0
 
@@ -534,7 +525,6 @@
 
 .method private getCachedAnimations(Landroid/view/WindowManager$LayoutParams;)Lcom/android/server/AttributeCache$Entry;
     .locals 5
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     if-eqz p1, :cond_2
 
@@ -590,8 +580,6 @@
 
 .method private getCachedAnimations(Ljava/lang/String;I)Lcom/android/server/AttributeCache$Entry;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p1, :cond_1
 
@@ -629,8 +617,6 @@
 
 .method private loadAnimation(Ljava/lang/String;I)Landroid/view/animation/Animation;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -751,11 +737,6 @@
 
 .method createThumbnailAnimationLocked(IZZII)Landroid/view/animation/Animation;
     .locals 24
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # I
 
     move-object/from16 v0, p0
 
@@ -1171,7 +1152,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1384,7 +1364,6 @@
 
 .method getStartingPoint(Landroid/graphics/Point;)V
     .locals 1
-    .param p1    # Landroid/graphics/Point;
 
     iget v0, p0, Lcom/android/server/wm/AppTransition;->mNextAppTransitionStartX:I
 
@@ -1478,7 +1457,6 @@
 
 .method isTransitionEqual(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/wm/AppTransition;->mNextAppTransition:I
 
@@ -1535,8 +1513,6 @@
 
 .method loadAnimation(Landroid/view/WindowManager$LayoutParams;I)Landroid/view/animation/Animation;
     .locals 5
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1578,11 +1554,6 @@
 
 .method loadAnimation(Landroid/view/WindowManager$LayoutParams;IZII)Landroid/view/animation/Animation;
     .locals 8
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x4
 
@@ -1783,10 +1754,6 @@
 
 .method overridePendingAppTransition(Ljava/lang/String;IILandroid/os/IRemoteCallback;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IRemoteCallback;
 
     invoke-virtual {p0}, Lcom/android/server/wm/AppTransition;->isTransitionSet()Z
 
@@ -1823,10 +1790,6 @@
 
 .method overridePendingAppTransitionScaleUp(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -1862,11 +1825,6 @@
 
 .method overridePendingAppTransitionThumb(Landroid/graphics/Bitmap;IILandroid/os/IRemoteCallback;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IRemoteCallback;
-    .param p5    # Z
 
     invoke-virtual {p0}, Lcom/android/server/wm/AppTransition;->isTransitionSet()Z
 
@@ -1959,7 +1917,6 @@
 
 .method setAppTransition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/AppTransition;->mNextAppTransition:I
 
@@ -1968,7 +1925,6 @@
 
 .method public setCurrentUser(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/AppTransition;->mCurrentUserId:I
 

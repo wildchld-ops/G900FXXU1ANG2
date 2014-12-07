@@ -198,9 +198,6 @@
 
 .method private constructor <init>(Ljava/io/InputStream;ILcom/android/mms/exif/ExifInterface;)V
     .locals 5
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/exif/ExifInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -345,8 +342,6 @@
 
 .method private checkAllowed(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/exif/ExifParser;->mInterface:Lcom/android/mms/exif/ExifInterface;
 
@@ -375,7 +370,6 @@
 
 .method private checkOffsetOrImageTag(Lcom/android/mms/exif/ExifTag;)V
     .locals 9
-    .param p1    # Lcom/android/mms/exif/ExifTag;
 
     const/4 v8, 0x4
 
@@ -652,7 +646,6 @@
 
 .method private isIfdRequested(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -830,9 +823,6 @@
 
 .method protected static parse(Ljava/io/InputStream;ILcom/android/mms/exif/ExifInterface;)Lcom/android/mms/exif/ExifParser;
     .locals 1
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # I
-    .param p2    # Lcom/android/mms/exif/ExifInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -849,8 +839,6 @@
 
 .method protected static parse(Ljava/io/InputStream;Lcom/android/mms/exif/ExifInterface;)Lcom/android/mms/exif/ExifParser;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Lcom/android/mms/exif/ExifInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1151,7 +1139,6 @@
 
 .method private registerCompressedImage(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifParser;->mCorrespondingEvent:Ljava/util/TreeMap;
 
@@ -1174,8 +1161,6 @@
 
 .method private registerIfd(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifParser;->mCorrespondingEvent:Ljava/util/TreeMap;
 
@@ -1200,8 +1185,6 @@
 
 .method private registerUncompressedStrip(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifParser;->mCorrespondingEvent:Ljava/util/TreeMap;
 
@@ -1224,7 +1207,6 @@
 
 .method private seekTiffData(Ljava/io/InputStream;)Z
     .locals 10
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1364,7 +1346,6 @@
 
 .method private skipTo(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1973,7 +1954,6 @@
 
 .method protected read([B)I
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1991,9 +1971,6 @@
 
 .method protected read([BII)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2011,7 +1988,6 @@
 
 .method protected readFullTagValue(Lcom/android/mms/exif/ExifTag;)V
     .locals 11
-    .param p1    # Lcom/android/mms/exif/ExifTag;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2551,7 +2527,6 @@
 
 .method protected readString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2569,8 +2544,6 @@
 
 .method protected readString(ILjava/nio/charset/Charset;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/charset/Charset;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2661,7 +2634,6 @@
 
 .method protected registerForTagValue(Lcom/android/mms/exif/ExifTag;)V
     .locals 4
-    .param p1    # Lcom/android/mms/exif/ExifTag;
 
     invoke-virtual {p1}, Lcom/android/mms/exif/ExifTag;->getOffset()I
 

@@ -38,12 +38,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;II)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const-wide/high16 v7, -0x8000000000000000L
 
@@ -70,14 +64,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;IIJJ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,10 +97,6 @@
 
 .method public static fromDocId(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/protos/Common$Docid;I)Lcom/google/android/finsky/library/LibraryEntry;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p3    # I
 
     new-instance v0, Lcom/google/android/finsky/library/LibraryEntry;
 
@@ -137,10 +119,6 @@
 
 .method public static fromDocument(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;I)Lcom/google/android/finsky/library/LibraryEntry;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # I
 
     new-instance v0, Lcom/google/android/finsky/library/LibraryEntry;
 
@@ -171,7 +149,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -432,9 +409,6 @@
 
 .method public updateInPlace(Ljava/lang/String;Lcom/google/android/finsky/protos/Common$Docid;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/google/android/finsky/library/LibraryEntry;->mLibraryId:Ljava/lang/String;
 

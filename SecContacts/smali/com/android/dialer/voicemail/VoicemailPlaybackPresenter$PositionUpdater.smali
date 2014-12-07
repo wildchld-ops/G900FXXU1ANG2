@@ -43,8 +43,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter;Ljava/util/concurrent/ScheduledExecutorService;I)V
     .locals 1
-    .param p2    # Ljava/util/concurrent/ScheduledExecutorService;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;->this$0:Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter;
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$2700(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;
 
     iget-object v0, p0, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;->mLock:Ljava/lang/Object;
 
@@ -84,7 +81,6 @@
 
 .method static synthetic access$2800(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;)Ljava/util/concurrent/ScheduledFuture;
     .locals 1
-    .param p0    # Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;
 
     iget-object v0, p0, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;->mScheduledFuture:Ljava/util/concurrent/ScheduledFuture;
 
@@ -93,7 +89,6 @@
 
 .method static synthetic access$3000(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;)I
     .locals 1
-    .param p0    # Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;
 
     iget v0, p0, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;->prevPos:I
 
@@ -102,8 +97,6 @@
 
 .method static synthetic access$3002(Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;I)I
     .locals 0
-    .param p0    # Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;->prevPos:I
 
@@ -131,8 +124,6 @@
 
 .method public startUpdating(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     iget-object v7, p0, Lcom/android/dialer/voicemail/VoicemailPlaybackPresenter$PositionUpdater;->mLock:Ljava/lang/Object;
 

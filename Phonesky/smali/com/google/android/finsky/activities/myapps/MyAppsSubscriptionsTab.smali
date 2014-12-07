@@ -39,13 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/activities/AuthenticatedActivity;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;Landroid/os/Bundle;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     invoke-direct/range {p0 .. p6}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;-><init>(Lcom/google/android/finsky/activities/AuthenticatedActivity;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;Landroid/os/Bundle;)V
 
@@ -82,7 +75,6 @@
 
 .method protected getDocumentForView(Landroid/view/View;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -111,7 +103,6 @@
 
 .method public getView(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsTab;->mSubscriptionsView:Landroid/view/ViewGroup;
 
@@ -351,9 +342,6 @@
 
 .method public onInstallPackageEvent(Ljava/lang/String;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p3    # I
 
     sget-object v0, Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;->INSTALLED:Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
 
@@ -374,7 +362,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsSubscriptionsTab;->requestData()V
 

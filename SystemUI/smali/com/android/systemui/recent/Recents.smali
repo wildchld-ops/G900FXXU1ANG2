@@ -194,9 +194,6 @@
 
 .method public toggleRecents(Landroid/view/Display;ILandroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/Display;
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     :try_start_0
     sget-boolean v4, Lcom/android/systemui/statusbar/Feature;->mUseRecentsTrayConcept:Z

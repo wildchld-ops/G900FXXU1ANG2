@@ -15,7 +15,6 @@
 # direct methods
 .method public static parse(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/JsonElement;
     .locals 3
-    .param p0    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonParseException;
@@ -91,8 +90,6 @@
 
 .method public static write(Lcom/google/gson/JsonElement;Lcom/google/gson/stream/JsonWriter;)V
     .locals 1
-    .param p0    # Lcom/google/gson/JsonElement;
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -108,7 +105,6 @@
 
 .method public static writerForAppendable(Ljava/lang/Appendable;)Ljava/io/Writer;
     .locals 2
-    .param p0    # Ljava/lang/Appendable;
 
     instance-of v0, p0, Ljava/io/Writer;
 

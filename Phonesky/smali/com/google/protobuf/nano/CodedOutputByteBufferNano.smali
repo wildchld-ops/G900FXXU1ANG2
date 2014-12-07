@@ -22,9 +22,6 @@
 # direct methods
 .method private constructor <init>([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,8 +38,6 @@
 
 .method public static computeBoolSize(IZ)I
     .locals 2
-    .param p0    # I
-    .param p1    # Z
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -59,7 +54,6 @@
 
 .method public static computeBoolSizeNoTag(Z)I
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x1
 
@@ -68,8 +62,6 @@
 
 .method public static computeBytesSize(I[B)I
     .locals 2
-    .param p0    # I
-    .param p1    # [B
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -86,7 +78,6 @@
 
 .method public static computeBytesSizeNoTag([B)I
     .locals 2
-    .param p0    # [B
 
     array-length v0, p0
 
@@ -103,8 +94,6 @@
 
 .method public static computeDoubleSize(ID)I
     .locals 2
-    .param p0    # I
-    .param p1    # D
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -121,7 +110,6 @@
 
 .method public static computeDoubleSizeNoTag(D)I
     .locals 1
-    .param p0    # D
 
     const/16 v0, 0x8
 
@@ -130,8 +118,6 @@
 
 .method public static computeFixed64Size(IJ)I
     .locals 2
-    .param p0    # I
-    .param p1    # J
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -148,7 +134,6 @@
 
 .method public static computeFixed64SizeNoTag(J)I
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0x8
 
@@ -157,8 +142,6 @@
 
 .method public static computeFloatSize(IF)I
     .locals 2
-    .param p0    # I
-    .param p1    # F
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -175,7 +158,6 @@
 
 .method public static computeFloatSizeNoTag(F)I
     .locals 1
-    .param p0    # F
 
     const/4 v0, 0x4
 
@@ -184,8 +166,6 @@
 
 .method public static computeGroupSize(ILcom/google/protobuf/nano/MessageNano;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Lcom/google/protobuf/nano/MessageNano;
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -204,7 +184,6 @@
 
 .method public static computeGroupSizeNoTag(Lcom/google/protobuf/nano/MessageNano;)I
     .locals 1
-    .param p0    # Lcom/google/protobuf/nano/MessageNano;
 
     invoke-virtual {p0}, Lcom/google/protobuf/nano/MessageNano;->getSerializedSize()I
 
@@ -215,8 +194,6 @@
 
 .method public static computeInt32Size(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -233,7 +210,6 @@
 
 .method public static computeInt32SizeNoTag(I)I
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -252,8 +228,6 @@
 
 .method public static computeInt64Size(IJ)I
     .locals 2
-    .param p0    # I
-    .param p1    # J
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -270,7 +244,6 @@
 
 .method public static computeInt64SizeNoTag(J)I
     .locals 1
-    .param p0    # J
 
     invoke-static {p0, p1}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeRawVarint64Size(J)I
 
@@ -281,8 +254,6 @@
 
 .method public static computeMessageSize(ILcom/google/protobuf/nano/MessageNano;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Lcom/google/protobuf/nano/MessageNano;
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -299,7 +270,6 @@
 
 .method public static computeMessageSizeNoTag(Lcom/google/protobuf/nano/MessageNano;)I
     .locals 2
-    .param p0    # Lcom/google/protobuf/nano/MessageNano;
 
     invoke-virtual {p0}, Lcom/google/protobuf/nano/MessageNano;->getSerializedSize()I
 
@@ -316,7 +286,6 @@
 
 .method public static computeRawVarint32Size(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, -0x80
 
@@ -366,7 +335,6 @@
 
 .method public static computeRawVarint64Size(J)I
     .locals 4
-    .param p0    # J
 
     const-wide/16 v2, 0x0
 
@@ -495,8 +463,6 @@
 
 .method public static computeStringSize(ILjava/lang/String;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -513,7 +479,6 @@
 
 .method public static computeStringSizeNoTag(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     const-string v2, "UTF-8"
@@ -550,7 +515,6 @@
 
 .method public static computeTagSize(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -567,8 +531,6 @@
 
 .method public static computeUInt64Size(IJ)I
     .locals 2
-    .param p0    # I
-    .param p1    # J
 
     invoke-static {p0}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeTagSize(I)I
 
@@ -585,7 +547,6 @@
 
 .method public static computeUInt64SizeNoTag(J)I
     .locals 1
-    .param p0    # J
 
     invoke-static {p0, p1}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->computeRawVarint64Size(J)I
 
@@ -596,9 +557,6 @@
 
 .method public static newInstance([BII)Lcom/google/protobuf/nano/CodedOutputByteBufferNano;
     .locals 1
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;
 
@@ -644,8 +602,6 @@
 
 .method public writeBool(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -663,7 +619,6 @@
 
 .method public writeBoolNoTag(Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -687,8 +642,6 @@
 
 .method public writeBytes(I[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -706,7 +659,6 @@
 
 .method public writeBytesNoTag([B)V
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -724,8 +676,6 @@
 
 .method public writeDouble(ID)V
     .locals 1
-    .param p1    # I
-    .param p2    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -743,7 +693,6 @@
 
 .method public writeDoubleNoTag(D)V
     .locals 2
-    .param p1    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -761,8 +710,6 @@
 
 .method public writeFixed64(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -780,7 +727,6 @@
 
 .method public writeFixed64NoTag(J)V
     .locals 0
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -794,8 +740,6 @@
 
 .method public writeFloat(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -813,7 +757,6 @@
 
 .method public writeFloatNoTag(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -831,8 +774,6 @@
 
 .method public writeGroup(ILcom/google/protobuf/nano/MessageNano;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/google/protobuf/nano/MessageNano;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -854,7 +795,6 @@
 
 .method public writeGroupNoTag(Lcom/google/protobuf/nano/MessageNano;)V
     .locals 0
-    .param p1    # Lcom/google/protobuf/nano/MessageNano;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -868,8 +808,6 @@
 
 .method public writeInt32(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -887,7 +825,6 @@
 
 .method public writeInt32NoTag(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -911,8 +848,6 @@
 
 .method public writeInt64(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -930,7 +865,6 @@
 
 .method public writeInt64NoTag(J)V
     .locals 0
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -944,8 +878,6 @@
 
 .method public writeMessage(ILcom/google/protobuf/nano/MessageNano;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/google/protobuf/nano/MessageNano;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -963,7 +895,6 @@
 
 .method public writeMessageNoTag(Lcom/google/protobuf/nano/MessageNano;)V
     .locals 1
-    .param p1    # Lcom/google/protobuf/nano/MessageNano;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -983,7 +914,6 @@
 
 .method public writeRawByte(B)V
     .locals 3
-    .param p1    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1022,7 +952,6 @@
 
 .method public writeRawByte(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1038,7 +967,6 @@
 
 .method public writeRawBytes([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1056,9 +984,6 @@
 
 .method public writeRawBytes([BII)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1101,7 +1026,6 @@
 
 .method public writeRawLittleEndian32(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1135,7 +1059,6 @@
 
 .method public writeRawLittleEndian64(J)V
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1223,7 +1146,6 @@
 
 .method public writeRawVarint32(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1253,7 +1175,6 @@
 
 .method public writeRawVarint64(J)V
     .locals 4
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1295,8 +1216,6 @@
 
 .method public writeString(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1314,7 +1233,6 @@
 
 .method public writeStringNoTag(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1338,8 +1256,6 @@
 
 .method public writeTag(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1357,8 +1273,6 @@
 
 .method public writeUInt64(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1376,7 +1290,6 @@
 
 .method public writeUInt64NoTag(J)V
     .locals 0
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -1642,7 +1642,6 @@
 
 .method private createRawContact(Landroid/content/Intent;)V
     .locals 17
-    .param p1    # Landroid/content/Intent;
 
     const-string v14, "accountName"
 
@@ -1847,15 +1846,6 @@
 
 .method public static createSaveContactIntent(Landroid/content/Context;Lcom/android/contacts/model/RawContactDeltaList;Ljava/lang/String;IZLjava/lang/Class;Ljava/lang/String;JLandroid/net/Uri;Landroid/content/ContentValues;)Landroid/content/Intent;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/model/RawContactDeltaList;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # Landroid/net/Uri;
-    .param p10    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1913,15 +1903,6 @@
 
 .method public static createSaveContactIntent(Landroid/content/Context;Lcom/android/contacts/model/RawContactDeltaList;Ljava/lang/String;IZLjava/lang/Class;Ljava/lang/String;JLjava/lang/String;Landroid/content/ContentValues;)Landroid/content/Intent;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/model/RawContactDeltaList;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # Ljava/lang/String;
-    .param p10    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3297,7 +3278,6 @@
 
 .method private deliverCallback(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/contacts/ContactSaveService;->mMainHandler:Landroid/os/Handler;
 
@@ -3312,7 +3292,6 @@
 
 .method private getInsertedRawContactId(Ljava/util/ArrayList;[Landroid/content/ContentProviderResult;)J
     .locals 5
-    .param p2    # [Landroid/content/ContentProviderResult;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3392,8 +3371,6 @@
 
 .method private getRawContactId(Lcom/android/contacts/model/RawContactDeltaList;Ljava/util/ArrayList;[Landroid/content/ContentProviderResult;)J
     .locals 4
-    .param p1    # Lcom/android/contacts/model/RawContactDeltaList;
-    .param p3    # [Landroid/content/ContentProviderResult;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3430,7 +3407,6 @@
 
 .method private isNameInserted(Lcom/android/contacts/model/RawContactDeltaList;)Z
     .locals 7
-    .param p1    # Lcom/android/contacts/model/RawContactDeltaList;
 
     const/4 v4, 0x0
 
@@ -4531,7 +4507,6 @@
 
 .method private saveContact(Landroid/content/Intent;)V
     .locals 49
-    .param p1    # Landroid/content/Intent;
 
     const-string v5, "state"
 
@@ -5509,8 +5484,6 @@
 
 .method private saveUpdatedPhoto(JLandroid/net/Uri;)Z
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -5523,9 +5496,6 @@
 
 .method private saveUpdatedPhoto(JLandroid/net/Uri;Z)Z
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
 
     sget-object v1, Landroid/provider/ContactsContract$RawContacts;->CONTENT_URI:Landroid/net/Uri;
 
@@ -5558,8 +5528,6 @@
 
 .method private saveUpdatedPhoto(JLjava/io/File;)Z
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/io/File;
 
     const/4 v0, 0x0
 
@@ -6118,7 +6086,6 @@
 
 .method private showToast(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/ContactSaveService;->mMainHandler:Landroid/os/Handler;
 
@@ -6419,7 +6386,6 @@
 
 .method public static unregisterListener(Lcom/android/contacts/ContactSaveService$Listener;)V
     .locals 1
-    .param p0    # Lcom/android/contacts/ContactSaveService$Listener;
 
     sget-object v0, Lcom/android/contacts/ContactSaveService;->sListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -6827,8 +6793,6 @@
 
 .method private updatePhoto(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -6852,7 +6816,6 @@
 # virtual methods
 .method deliverCallbackOnUiThread(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     sget-object v2, Lcom/android/contacts/ContactSaveService;->sListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -6923,7 +6886,6 @@
 
 .method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -6960,7 +6922,6 @@
 
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

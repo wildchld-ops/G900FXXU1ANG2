@@ -217,7 +217,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x2
 
@@ -488,7 +487,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->setting_is_changed()V
 
@@ -497,8 +495,6 @@
 
 .method static synthetic access$102(Lcom/android/server/AdaptiveDisplayColorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/AdaptiveDisplayColorService;->isLockScreenOn:Z
 
@@ -507,7 +503,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/AdaptiveDisplayColorService;)Lcom/android/server/AdaptiveDisplayColorService$ForeGroundThread;
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget-object v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mForeGroundThread:Lcom/android/server/AdaptiveDisplayColorService$ForeGroundThread;
 
@@ -516,8 +511,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/AdaptiveDisplayColorService;Lcom/android/server/AdaptiveDisplayColorService$ForeGroundThread;)Lcom/android/server/AdaptiveDisplayColorService$ForeGroundThread;
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # Lcom/android/server/AdaptiveDisplayColorService$ForeGroundThread;
 
     iput-object p1, p0, Lcom/android/server/AdaptiveDisplayColorService;->mForeGroundThread:Lcom/android/server/AdaptiveDisplayColorService$ForeGroundThread;
 
@@ -526,7 +519,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/AdaptiveDisplayColorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget-boolean v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mThreadEnableCondition:Z
 
@@ -535,7 +527,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/AdaptiveDisplayColorService;)Landroid/app/ActivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget-object v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mActivityManager:Landroid/app/ActivityManager;
 
@@ -544,8 +535,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/AdaptiveDisplayColorService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/AdaptiveDisplayColorService;->monitorForegroundBrowser(Ljava/lang/String;)V
 
@@ -554,7 +543,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/AdaptiveDisplayColorService;)I
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mLightSensorDelay:I
 
@@ -563,8 +551,6 @@
 
 .method static synthetic access$1602(Lcom/android/server/AdaptiveDisplayColorService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/AdaptiveDisplayColorService;->mLightSensorDelay:I
 
@@ -573,7 +559,6 @@
 
 .method static synthetic access$1610(Lcom/android/server/AdaptiveDisplayColorService;)I
     .locals 2
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mLightSensorDelay:I
 
@@ -586,7 +571,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->getRgbFromLightSensor()V
 
@@ -595,7 +579,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/AdaptiveDisplayColorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget-boolean v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mSensorValueValid:Z
 
@@ -604,7 +587,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/AdaptiveDisplayColorService;)I
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mLightSensorR:I
 
@@ -613,7 +595,6 @@
 
 .method static synthetic access$200(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->boot_complete()V
 
@@ -622,7 +603,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/AdaptiveDisplayColorService;)I
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mLightSensorG:I
 
@@ -631,7 +611,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/AdaptiveDisplayColorService;)I
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->mLightSensorB:I
 
@@ -640,12 +619,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/AdaptiveDisplayColorService;JIIII)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/android/server/AdaptiveDisplayColorService;->handleRgbSensorEvent(JIIII)V
 
@@ -654,7 +627,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->sendRgbAverage()V
 
@@ -663,8 +635,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/AdaptiveDisplayColorService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/AdaptiveDisplayColorService;->enableRgbSensor(Z)V
 
@@ -673,7 +643,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->animateScrRGB()V
 
@@ -682,7 +651,6 @@
 
 .method static synthetic access$300(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->receive_screen_on_intent()V
 
@@ -691,7 +659,6 @@
 
 .method static synthetic access$400(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->receive_screen_off_intent()V
 
@@ -700,8 +667,6 @@
 
 .method static synthetic access$502(Lcom/android/server/AdaptiveDisplayColorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/AdaptiveDisplayColorService;->mMultiWindowOn:Z
 
@@ -710,7 +675,6 @@
 
 .method static synthetic access$600(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->emergency_mode_changed_intent()V
 
@@ -719,8 +683,6 @@
 
 .method static synthetic access$702(Lcom/android/server/AdaptiveDisplayColorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/AdaptiveDisplayColorService;->mEbookScenarioEnabled:Z
 
@@ -729,7 +691,6 @@
 
 .method static synthetic access$800(Lcom/android/server/AdaptiveDisplayColorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->receive_ebookmode_intent()V
 
@@ -738,7 +699,6 @@
 
 .method static synthetic access$900(Lcom/android/server/AdaptiveDisplayColorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/AdaptiveDisplayColorService;
 
     iget-boolean v0, p0, Lcom/android/server/AdaptiveDisplayColorService;->DEBUG:Z
 
@@ -1187,7 +1147,6 @@
 
 .method private enableRgbSensor(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x3
 
@@ -1296,8 +1255,6 @@
 
 .method private fileWriteString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1516,7 +1473,6 @@
 
 .method private getStringFromFile(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1745,11 +1701,6 @@
 
 .method private handleRgbSensorEvent(JIIII)V
     .locals 3
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Lcom/android/server/AdaptiveDisplayColorService;->isInBoundary()I
 
@@ -1831,8 +1782,6 @@
 
 .method private max_num(II)I
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     if-lt p1, p2, :cond_0
 
@@ -1847,8 +1796,6 @@
 
 .method private min_num(II)I
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     if-ge p1, p2, :cond_0
 
@@ -1863,7 +1810,6 @@
 
 .method private monitorForegroundBrowser(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -2194,10 +2140,6 @@
 
 .method private sendForcedRGB(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     add-int v1, p1, p2
 
@@ -4106,10 +4048,6 @@
 
 .method private setAverageValue(IIII)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v9, 0x0
 

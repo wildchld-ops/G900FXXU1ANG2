@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/protos/Toc$CarrierBillingConfig;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Toc$CarrierBillingConfig;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,7 +22,6 @@
 # virtual methods
 .method createCarrierBillingParameters(Lcom/google/android/finsky/protos/Toc$CarrierBillingConfig;)Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingParameters;
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/Toc$CarrierBillingConfig;
 
     const/4 v4, 0x0
 
@@ -118,7 +116,6 @@
 
 .method public run(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierParamsAction;->mConfig:Lcom/google/android/finsky/protos/Toc$CarrierBillingConfig;
 

@@ -167,7 +167,6 @@
 
 .method public isGiditemChecked(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/favorite/FavoriteMenuList;->mAdapter:Lcom/android/settings/favorite/FavoriteMenuList$FavoriteAdapter;
 
@@ -180,7 +179,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -278,7 +276,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -344,8 +341,6 @@
 
 .method public onGridItemSelected(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 6
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     const/16 v4, 0xc
 
@@ -406,9 +401,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -482,7 +474,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

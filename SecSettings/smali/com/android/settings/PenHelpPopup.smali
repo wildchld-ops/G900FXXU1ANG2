@@ -20,7 +20,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PenHelpPopup;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PenHelpPopup;
 
     invoke-direct {p0}, Lcom/android/settings/PenHelpPopup;->closePopup()V
 
@@ -274,8 +273,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "PenHelpPopup"
 

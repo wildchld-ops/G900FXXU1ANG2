@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;Lcom/android/dialer/dialpad/DialpadFragment$DialpadVariables;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/dialer/dialpad/DialpadFragment$DialpadVariables;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +50,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/impl/DialpadImpl;)Lcom/android/dialer/dialpad/DialpadFragment;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialpadImpl;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialpadImpl;->mDialpadFragment:Lcom/android/dialer/dialpad/DialpadFragment;
 
@@ -86,14 +82,12 @@
 
 .method public checkPrefixNumber(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public customListener(Lcom/android/dialer/dialpad/DialpadFragment;)V
     .locals 2
-    .param p1    # Lcom/android/dialer/dialpad/DialpadFragment;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialpadImpl;->mFragmentView:Landroid/view/View;
 
@@ -123,7 +117,6 @@
 
 .method public dialNumber(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/samsung/dialer/impl/DialpadImpl;->mContext:Landroid/content/Context;
 
@@ -229,8 +222,6 @@
 
 .method public doSpeedDialCall(IJ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     const/4 v0, 0x0
 
@@ -308,7 +299,6 @@
 
 .method public onCustomClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -605,28 +595,24 @@
 
 .method public setCheckPrefixNumber(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setLocalLayout(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public setLocalLayoutText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setLocalName(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
@@ -732,7 +718,6 @@
 
 .method public showSpeedDialDlg(I)V
     .locals 5
-    .param p1    # I
 
     const-string v1, "DialpadImpl"
 

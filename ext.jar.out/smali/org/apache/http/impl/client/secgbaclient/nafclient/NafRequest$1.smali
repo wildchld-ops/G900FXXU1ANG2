@@ -38,8 +38,6 @@
 
 .method private injectHostname(Ljava/net/Socket;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-class v2, Ljava/net/InetAddress;
@@ -85,12 +83,6 @@
 # virtual methods
 .method public connectSocket(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;
     .locals 7
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # I
-    .param p6    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -137,10 +129,6 @@
 
 .method public createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
     .locals 1
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -160,7 +148,6 @@
 
 .method public isSecure(Ljava/net/Socket;)Z
     .locals 1
-    .param p1    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

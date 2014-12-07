@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/nuance/connect/service/comm/CommandQueue;Lcom/nuance/connect/service/comm/CommandQueue$1;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/CommandQueue;
-    .param p2    # Lcom/nuance/connect/service/comm/CommandQueue$1;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/comm/CommandQueue$NetworkExpirer;-><init>(Lcom/nuance/connect/service/comm/CommandQueue;)V
 
@@ -135,7 +133,6 @@
 
 .method public setExpirer(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/nuance/connect/service/comm/CommandQueue$NetworkExpirer;->dispose:Ljava/lang/Runnable;
 

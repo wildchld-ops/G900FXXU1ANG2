@@ -168,8 +168,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mShowMaxCountDialog:Z
 
@@ -178,7 +176,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mSelectedContactHashMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -187,9 +184,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;II)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->setDoneButton(II)V
 
@@ -198,8 +192,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mIsSelectAllTaskRunning:Z
 
@@ -208,8 +200,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;Z)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->doSelectAllAction(Z)Z
 
@@ -220,8 +210,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->showMaxCountAlertDialog(Z)V
 
@@ -230,9 +218,6 @@
 
 .method private addSelectedContact(Ljava/lang/String;ILandroid/net/Uri;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -291,8 +276,6 @@
 
 .method private addSelectedDataInfo(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
-    .param p2    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -355,7 +338,6 @@
 
 .method private doSelectAllAction(Z)Z
     .locals 22
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -849,8 +831,6 @@
 
 .method private isSelectedContact(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -885,7 +865,6 @@
 
 .method private makeSelectedInfo(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;)Ljava/lang/String;
     .locals 8
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 
     iget-object v1, p1, Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;->dataId:Ljava/lang/String;
 
@@ -1085,8 +1064,6 @@
 
 .method private removeContact(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1142,8 +1119,6 @@
 
 .method private removeContactFromSelectAll(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1197,8 +1172,6 @@
 
 .method private setDoneButton(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mListener:Lcom/samsung/contacts/listener/InteractionCommonPickerListener;
 
@@ -1215,7 +1188,6 @@
 
 .method private showMaxCountAlertDialog(Z)V
     .locals 10
-    .param p1    # Z
 
     const v9, 0x104000a
 
@@ -1541,7 +1513,6 @@
 
 .method public getSelectedContactName(Lcom/samsung/contacts/interactions/InteractionContactDatas;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->getContactNameDisplayOrder()I
 
@@ -1572,7 +1543,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1602,7 +1572,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -1636,10 +1605,6 @@
 
 .method public onDataChosen(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;Ljava/lang/String;ZLandroid/net/Uri;)V
     .locals 5
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Landroid/net/Uri;
 
     const-wide/16 v0, 0x0
 
@@ -1757,17 +1722,12 @@
 
 .method protected onItemClick(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     return-void
 .end method
 
 .method public onItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 9
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2024,7 +1984,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 3
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2139,8 +2098,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -2203,11 +2160,6 @@
 
 .method public declared-synchronized onQueryCompleted(Landroid/database/Cursor;Ljava/lang/String;Landroid/net/Uri;ZI)V
     .locals 7
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
-    .param p5    # I
 
     monitor-enter p0
 
@@ -2337,7 +2289,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2520,10 +2471,6 @@
 
 .method public pickContact(Landroid/net/Uri;IIZ)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
@@ -2570,7 +2517,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->restoreSavedState(Landroid/os/Bundle;)V
 
@@ -2689,7 +2635,6 @@
 
 .method public setFromEmergencyMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mIsFromEmergencyMessage:Z
 
@@ -2698,7 +2643,6 @@
 
 .method public setGroupInfo(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -2707,7 +2651,6 @@
 
 .method public setInteractionGroupMemberSelectionUpdateListener(Lcom/samsung/contacts/listener/InteractionCommonPickerListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/InteractionCommonPickerListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mListener:Lcom/samsung/contacts/listener/InteractionCommonPickerListener;
 
@@ -2716,9 +2659,6 @@
 
 .method public setMMSinformation(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mActionCode:I
 
@@ -2731,7 +2671,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mMode:I
 
@@ -2740,7 +2679,6 @@
 
 .method public setSendingMSG(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberPickerFragment;->mIsSendingMSG:Z
 
@@ -2749,8 +2687,6 @@
 
 .method protected updateDoneButton(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

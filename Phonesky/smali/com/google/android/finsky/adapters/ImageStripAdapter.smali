@@ -41,14 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;IIZILcom/google/android/finsky/adapters/ImageStripAdapter$OnImageChildViewTapListener;Lcom/google/android/finsky/adapters/ImageStripAdapter$OnVideoChildViewTapListener;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # Lcom/google/android/finsky/adapters/ImageStripAdapter$OnImageChildViewTapListener;
-    .param p8    # Lcom/google/android/finsky/adapters/ImageStripAdapter$OnVideoChildViewTapListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -103,8 +95,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/ImageStripAdapter;I)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/ImageStripAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/ImageStripAdapter;->toVideoIndex(I)I
 
@@ -115,7 +105,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/adapters/ImageStripAdapter;)Lcom/google/android/finsky/adapters/ImageStripAdapter$OnVideoChildViewTapListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/ImageStripAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ImageStripAdapter;->mVideoChildTappedListener:Lcom/google/android/finsky/adapters/ImageStripAdapter$OnVideoChildViewTapListener;
 
@@ -124,8 +113,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/adapters/ImageStripAdapter;I)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/ImageStripAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/ImageStripAdapter;->toImageIndex(I)I
 
@@ -136,7 +123,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/adapters/ImageStripAdapter;)Lcom/google/android/finsky/adapters/ImageStripAdapter$OnImageChildViewTapListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/ImageStripAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ImageStripAdapter;->mImageChildTappedListener:Lcom/google/android/finsky/adapters/ImageStripAdapter$OnImageChildViewTapListener;
 
@@ -145,7 +131,6 @@
 
 .method private toImageIndex(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/adapters/ImageStripAdapter;->mImageIndexOffset:I
 
@@ -156,7 +141,6 @@
 
 .method private toVideoIndex(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
@@ -177,7 +161,6 @@
 
 .method public getImageAt(I)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ImageStripAdapter;->mImages:[Landroid/graphics/drawable/Drawable;
 
@@ -188,9 +171,6 @@
 
 .method public getImageDimensionAt(ILcom/google/android/finsky/protos/Doc$Image$Dimension;F)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/protos/Doc$Image$Dimension;
-    .param p3    # F
 
     const/4 v3, 0x1
 
@@ -268,9 +248,6 @@
 
 .method public getViewAt(Landroid/content/Context;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -346,7 +323,6 @@
 
 .method public hasImageDimensionAt(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -412,7 +388,6 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ImageStripAdapter;->mDataSetObservable:Landroid/database/DataSetObservable;
 
@@ -423,8 +398,6 @@
 
 .method public setImageAt(ILandroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ImageStripAdapter;->mImages:[Landroid/graphics/drawable/Drawable;
 
@@ -437,8 +410,6 @@
 
 .method public setImageDimensionAt(ILcom/google/android/finsky/protos/Doc$Image$Dimension;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/protos/Doc$Image$Dimension;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ImageStripAdapter;->mImageDimensions:[Lcom/google/android/finsky/protos/Doc$Image$Dimension;
 

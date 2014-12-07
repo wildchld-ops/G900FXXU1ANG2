@@ -14,7 +14,6 @@
 
 .method private checkPrerequisites(Landroid/os/Bundle;)Z
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -126,8 +125,6 @@
 
 .method private reportVerificationOk(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -144,8 +141,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 

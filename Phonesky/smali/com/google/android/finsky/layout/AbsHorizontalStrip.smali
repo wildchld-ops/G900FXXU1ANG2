@@ -42,9 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -111,8 +108,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/AbsHorizontalStrip;F)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/AbsHorizontalStrip;
-    .param p1    # F
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/AbsHorizontalStrip;->updateScrollPosition(F)V
 
@@ -162,9 +157,6 @@
 
 .method private onTouchEventDone(FFZ)V
     .locals 20
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     invoke-static/range {p2 .. p2}, Ljava/lang/Math;->abs(F)F
 
@@ -707,8 +699,6 @@
 
 .method private onTouchEventDown(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/google/android/finsky/layout/AbsHorizontalStrip;->mLastMotionX:F
 
@@ -721,8 +711,6 @@
 
 .method private onTouchEventMove(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/4 v6, 0x0
 
@@ -856,7 +844,6 @@
 
 .method private updateScrollPosition(F)V
     .locals 2
-    .param p1    # F
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/layout/AbsHorizontalStrip;->limitScrollPosition(F)F
 
@@ -879,7 +866,6 @@
 # virtual methods
 .method protected clampToTotalStripWidth(F)F
     .locals 3
-    .param p1    # F
 
     const/4 v2, 0x0
 
@@ -928,8 +914,6 @@
 
 .method protected createScrollAnimation(FJ)Lcom/google/android/finsky/layout/AbsHorizontalStrip$AnimationRunnable;
     .locals 1
-    .param p1    # F
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/AbsHorizontalStrip;->getScrollPosition()F
 
@@ -946,7 +930,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->draw(Landroid/graphics/Canvas;)V
 
@@ -1115,7 +1098,6 @@
 
 .method protected limitScrollPosition(F)F
     .locals 3
-    .param p1    # F
 
     const/4 v1, 0x0
 
@@ -1156,7 +1138,6 @@
 
 .method protected onChildAcquiredFocus(I)V
     .locals 6
-    .param p1    # I
 
     iget v4, p0, Lcom/google/android/finsky/layout/AbsHorizontalStrip;->mTotalChildrenWidth:F
 
@@ -1222,7 +1203,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1325,7 +1305,6 @@
 
 .method public declared-synchronized onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1424,8 +1403,6 @@
 
 .method protected runScrollAnimation(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v0, 0x447a0000
 
@@ -1452,7 +1429,6 @@
 
 .method public setLayoutMargin(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/AbsHorizontalStrip;->mLayoutMargin:I
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView$9;->this$0:Lcom/samsung/contacts/impl/TutorialPopupView;
 

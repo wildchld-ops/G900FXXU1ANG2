@@ -66,7 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -77,8 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/KeyguardAbsKeyInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -161,7 +158,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardSmartcardPINView;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSmartcardPINView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSmartcardPINView;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -170,7 +166,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/keyguard/KeyguardSmartcardPINView;->mSmartcardAuthProgress:Z
 
@@ -187,7 +182,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardSmartcardPINView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSmartcardPINView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSmartcardPINView;->mHandler:Landroid/os/Handler;
 
@@ -196,10 +190,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardSmartcardPINView;ZLjava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardSmartcardPINView;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/keyguard/KeyguardSmartcardPINView;->verifyPasswordAndUnlock(ZLjava/lang/String;I)V
 
@@ -208,9 +198,6 @@
 
 .method private verifyPasswordAndUnlock(ZLjava/lang/String;I)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -546,7 +533,6 @@
 
 .method public onResume(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/keyguard/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
 

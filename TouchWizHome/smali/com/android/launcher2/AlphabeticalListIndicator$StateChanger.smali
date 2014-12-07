@@ -74,7 +74,6 @@
 
 .method public postToQueue(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/AlphabeticalListIndicator$StateChanger;->this$0:Lcom/android/launcher2/AlphabeticalListIndicator;
 

@@ -33,14 +33,6 @@
 # virtual methods
 .method public onCharacteristicRead(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # [B
 
     const-string v2, "BluetoothGatt"
 
@@ -269,13 +261,6 @@
 
 .method public onCharacteristicWrite(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
 
     const-string v2, "BluetoothGatt"
 
@@ -527,10 +512,6 @@
 
 .method public onClientConnectionState(IIZLjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -682,8 +663,6 @@
 
 .method public onClientRegistered(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -933,16 +912,6 @@
 
 .method public onDescriptorRead(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # I
-    .param p9    # Landroid/os/ParcelUuid;
-    .param p10    # [B
 
     const-string v2, "BluetoothGatt"
 
@@ -1200,15 +1169,6 @@
 
 .method public onDescriptorWrite(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # I
-    .param p9    # Landroid/os/ParcelUuid;
 
     const-string v2, "BluetoothGatt"
 
@@ -1471,8 +1431,6 @@
 
 .method public onExecuteWrite(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "BluetoothGatt"
 
@@ -1557,13 +1515,6 @@
 
 .method public onGetCharacteristic(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # I
 
     const-string v0, "BluetoothGatt"
 
@@ -1659,14 +1610,6 @@
 
 .method public onGetDescriptor(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # I
-    .param p8    # Landroid/os/ParcelUuid;
 
     const-string v2, "BluetoothGatt"
 
@@ -1768,13 +1711,6 @@
 
 .method public onGetIncludedService(Ljava/lang/String;IILandroid/os/ParcelUuid;IILandroid/os/ParcelUuid;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
 
     const-string v2, "BluetoothGatt"
 
@@ -1885,10 +1821,6 @@
 
 .method public onGetService(Ljava/lang/String;IILandroid/os/ParcelUuid;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
 
     const-string v0, "BluetoothGatt"
 
@@ -1972,7 +1904,6 @@
 
 .method public onListen(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "BluetoothGatt"
 
@@ -2001,8 +1932,6 @@
 
 .method public onMonitorRssi(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "BluetoothGatt"
 
@@ -2087,13 +2016,6 @@
 
 .method public onNotify(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # [B
 
     const-string v3, "BluetoothGatt"
 
@@ -2210,9 +2132,6 @@
 
 .method public onReadRemoteRssi(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "BluetoothGatt"
 
@@ -2307,17 +2226,12 @@
 
 .method public onScanResult(Ljava/lang/String;I[B)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [B
 
     return-void
 .end method
 
 .method public onSearchComplete(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "BluetoothGatt"
 

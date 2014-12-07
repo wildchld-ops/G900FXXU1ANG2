@@ -1379,7 +1379,7 @@ Lisaks saate näidata või peita mitmikakna sanga, kui vajutate ja hoiate all ta
     <string name="usb_tethering_errored_subtext">USB-modemi tõrge</string>
     <string name="usb_tethering_on_during_sidesync_popup">"USB-modemit ei saa desaktiveerida SideSync'i kasutamise ajal. USB-modemi desaktiveerimisel desaktiveeritakse SideSync."</string>
     <string name="usb_tethering_off_during_sidesync_popup">"USB-modemit ei saa aktiveerida SideSync'i kasutamise ajal. USB-modemi aktiveerimisel desaktiveeritakse SideSync."</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-modem</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-modem</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Selle seadme internetiühenduse jagamine…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Seadme internetiühendust jagatakse ühe seadmega</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Seadme internetiühendust jagatakse %d seadmega</string>

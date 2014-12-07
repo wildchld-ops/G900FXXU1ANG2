@@ -65,8 +65,6 @@
 
 .method public static initCause(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     .locals 3
-    .param p0    # Ljava/lang/Throwable;
-    .param p1    # Ljava/lang/Throwable;
 
     sget-object v0, Lorg/apache/http/util/ExceptionUtils;->INIT_CAUSE_METHOD:Ljava/lang/reflect/Method;
 

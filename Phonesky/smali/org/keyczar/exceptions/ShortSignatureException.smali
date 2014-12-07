@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "SignatureTooShort"
 

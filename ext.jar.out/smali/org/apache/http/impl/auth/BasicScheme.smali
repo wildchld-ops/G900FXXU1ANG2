@@ -22,9 +22,6 @@
 
 .method public static authenticate(Lorg/apache/http/auth/Credentials;Ljava/lang/String;Z)Lorg/apache/http/Header;
     .locals 5
-    .param p0    # Lorg/apache/http/auth/Credentials;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-nez p0, :cond_0
 
@@ -137,8 +134,6 @@
 # virtual methods
 .method public authenticate(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;
     .locals 3
-    .param p1    # Lorg/apache/http/auth/Credentials;
-    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -212,7 +207,6 @@
 
 .method public processChallenge(Lorg/apache/http/Header;)V
     .locals 1
-    .param p1    # Lorg/apache/http/Header;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/MalformedChallengeException;

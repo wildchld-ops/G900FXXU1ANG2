@@ -187,7 +187,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/Launcher;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/Launcher;
 
     const/4 v1, 0x0
 
@@ -224,7 +223,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/ContextualPageManager;)Lcom/android/launcher2/Workspace;
     .locals 1
-    .param p0    # Lcom/android/launcher2/ContextualPageManager;
 
     iget-object v0, p0, Lcom/android/launcher2/ContextualPageManager;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -233,9 +231,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/ContextualPageManager;ZI)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/ContextualPageManager;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/ContextualPageManager;->moveToScreen(ZI)V
 
@@ -244,8 +239,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/ContextualPageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/ContextualPageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/ContextualPageManager;->removePage(I)V
 
@@ -254,7 +247,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/ContextualPageManager;)Lcom/android/launcher2/Launcher;
     .locals 1
-    .param p0    # Lcom/android/launcher2/ContextualPageManager;
 
     iget-object v0, p0, Lcom/android/launcher2/ContextualPageManager;->mLauncher:Lcom/android/launcher2/Launcher;
 
@@ -263,8 +255,6 @@
 
 .method private duplicateCheckOfAwareHotseat(ILjava/util/ArrayList;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -314,7 +304,6 @@
 
 .method private getEmotionalTitleText(Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/launcher2/ContextualPageManager;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -872,9 +861,6 @@
 
 .method private loadHotseatItemContainer(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Z)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1125,8 +1111,6 @@
 
 .method private moveToFirstAndRemoveAfter(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "ContextualPageManager"
 
@@ -1181,7 +1165,6 @@
 
 .method private moveToNextAndRemoveAfter(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "ContextualPageManager"
 
@@ -1246,8 +1229,6 @@
 
 .method private moveToScreen(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     const-string v0, "ContextualPageManager"
 
@@ -1327,8 +1308,6 @@
 
 .method private noMoveAndRemoveAfter(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "ContextualPageManager"
 
@@ -1371,7 +1350,6 @@
 
 .method private removePage(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "ContextualPageManager"
 
@@ -1453,7 +1431,6 @@
 
 .method private removeWidgetHost(I)V
     .locals 13
-    .param p1    # I
 
     iget-object v10, p0, Lcom/android/launcher2/ContextualPageManager;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -1679,7 +1656,6 @@
 
 .method private setBadgeCounts(Lcom/android/launcher2/HomeShortcutItem;Ljava/util/Map;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/HomeShortcutItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1735,7 +1711,6 @@
 
 .method private setLaunchableHotsetItems(I)V
     .locals 12
-    .param p1    # I
 
     iget-object v10, p0, Lcom/android/launcher2/ContextualPageManager;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -1886,7 +1861,6 @@
 # virtual methods
 .method public addContextualPage(I)Z
     .locals 21
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -2630,7 +2604,6 @@
 
 .method public addPostBindList(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Lcom/android/launcher2/ContextualPageManager;->mPostBindList:Ljava/util/ArrayList;
 
@@ -2641,7 +2614,6 @@
 
 .method public changeStateTitleText(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/ContextualPageManager;->getContextualPage(I)Lcom/android/launcher2/CellLayout;
 
@@ -2704,7 +2676,6 @@
 
 .method public checkAndBindHotseatCPItems(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2843,7 +2814,6 @@
 
 .method public displayEmotionalTitleText(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/ContextualPageManager;->getContextualPage(I)Lcom/android/launcher2/CellLayout;
 
@@ -2870,8 +2840,6 @@
 
 .method public displayEmotionalTitleText(Landroid/widget/TextView;I)V
     .locals 20
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
 
     const-string v11, ""
 
@@ -3341,7 +3309,6 @@
 
 .method public getContextualPage(I)Lcom/android/launcher2/CellLayout;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -3409,7 +3376,6 @@
 
 .method public getContextualPageIndex(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -3467,7 +3433,6 @@
 
 .method public getContextualPageType(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3552,7 +3517,6 @@
 
 .method public getHotseatAwareItems(I)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -3590,7 +3554,6 @@
 
 .method protected getHotseatItems(I)Ljava/util/ArrayList;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -3814,7 +3777,6 @@
 
 .method public initContextualPage(Lcom/android/launcher2/HomeView;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     const/4 v2, 0x1
 
@@ -3871,7 +3833,6 @@
 
 .method isContextualPageHotseat(Landroid/view/View;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -4062,7 +4023,6 @@
 
 .method public reconfigurationContextualPageLayout(Lcom/android/launcher2/CellLayout;)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/CellLayout;
 
     iget-object v11, p0, Lcom/android/launcher2/ContextualPageManager;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -4445,7 +4405,6 @@
 
 .method public removeContextualPage(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -4652,7 +4611,6 @@
 
 .method public setCurrentArtist(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/launcher2/ContextualPageManager;->currentArtist:Ljava/lang/String;
 
@@ -4661,7 +4619,6 @@
 
 .method public setHasPostWork(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/ContextualPageManager;->mHasPostWork:Z
 
@@ -4670,7 +4627,6 @@
 
 .method public setIsMusicPlaying(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/ContextualPageManager;->isMusicPlaying:Z
 
@@ -4679,8 +4635,6 @@
 
 .method public setupContextualAwareHotSeat(Landroid/content/Context;I)V
     .locals 20
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v3, 0x0
 

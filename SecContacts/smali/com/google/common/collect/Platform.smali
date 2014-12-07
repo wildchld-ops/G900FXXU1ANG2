@@ -33,7 +33,6 @@
 
 .method static newArray([Ljava/lang/Object;I)[Ljava/lang/Object;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -65,7 +64,6 @@
 
 .method static tryWeakKeys(Lcom/google/common/collect/MapMaker;)Lcom/google/common/collect/MapMaker;
     .locals 1
-    .param p0    # Lcom/google/common/collect/MapMaker;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMaker;->weakKeys()Lcom/google/common/collect/MapMaker;
 

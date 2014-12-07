@@ -365,7 +365,6 @@
 
 .method public onBatteryChange(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, -0x1
 
@@ -476,14 +475,12 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method updateLowBatteryMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v0, -0x1
 

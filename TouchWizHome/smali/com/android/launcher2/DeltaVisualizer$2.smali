@@ -44,7 +44,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 13
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-object v11, p0, Lcom/android/launcher2/DeltaVisualizer$2;->val$a:Lcom/android/launcher2/AnimationLayer$Anim;
 

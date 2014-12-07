@@ -53,8 +53,6 @@
 
 .method public static show(Landroid/content/Context;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -85,7 +83,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

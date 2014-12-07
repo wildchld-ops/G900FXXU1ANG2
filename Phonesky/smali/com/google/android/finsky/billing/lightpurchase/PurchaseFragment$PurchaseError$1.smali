@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -59,7 +58,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;
 
@@ -70,7 +68,6 @@
 
 .method public newArray(I)[Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;
 
@@ -79,7 +76,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError$1;->newArray(I)[Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment$PurchaseError;
 

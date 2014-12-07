@@ -14,7 +14,6 @@
 
 .method public static extractLookupPart(Landroid/net/Uri;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -74,7 +73,6 @@
 
 .method public static rcsServiceUriFromContactLookupUri(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-static {p0}, Lcom/samsung/contacts/model/rcs/RcsUriUtils;->extractLookupPart(Landroid/net/Uri;)Ljava/lang/String;
 

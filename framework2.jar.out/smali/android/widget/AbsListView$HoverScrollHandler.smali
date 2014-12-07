@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/AbsListView;Landroid/widget/AbsListView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # Landroid/widget/AbsListView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/AbsListView$HoverScrollHandler;-><init>(Landroid/widget/AbsListView;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     iget v7, p1, Landroid/os/Message;->what:I
 

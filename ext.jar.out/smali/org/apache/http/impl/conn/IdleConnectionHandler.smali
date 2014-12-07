@@ -56,9 +56,6 @@
 # virtual methods
 .method public add(Lorg/apache/http/HttpConnection;JLjava/util/concurrent/TimeUnit;)V
     .locals 8
-    .param p1    # Lorg/apache/http/HttpConnection;
-    .param p2    # J
-    .param p4    # Ljava/util/concurrent/TimeUnit;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -259,7 +256,6 @@
 
 .method public closeIdleConnections(J)V
     .locals 10
-    .param p1    # J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -404,7 +400,6 @@
 
 .method public remove(Lorg/apache/http/HttpConnection;)Z
     .locals 6
-    .param p1    # Lorg/apache/http/HttpConnection;
 
     const/4 v1, 0x1
 

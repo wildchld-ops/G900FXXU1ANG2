@@ -167,7 +167,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/services/DailyHygiene;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/DailyHygiene;
 
     invoke-direct {p0}, Lcom/google/android/finsky/services/DailyHygiene;->onLoaded()V
 
@@ -176,8 +175,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/services/DailyHygiene;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/DailyHygiene;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/services/DailyHygiene;->flushEventLogs(Z)V
 
@@ -186,7 +183,6 @@
 
 .method private flushEventLogs(Z)V
     .locals 9
-    .param p1    # Z
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -243,7 +239,6 @@
 
 .method public static goMakeHygieneIfDirty(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -519,8 +514,6 @@
 
 .method private static jitter(JF)J
     .locals 2
-    .param p0    # J
-    .param p2    # F
 
     invoke-static {}, Ljava/lang/Math;->random()D
 
@@ -537,9 +530,6 @@
 
 .method protected static jitterLogic(JFF)J
     .locals 4
-    .param p0    # J
-    .param p2    # F
-    .param p3    # F
 
     const/high16 v1, 0x3f800000
 
@@ -676,7 +666,6 @@
 
 .method private reschedule(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -874,8 +863,6 @@
 
 .method public static schedule(Landroid/content/Context;J)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -908,7 +895,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -917,9 +903,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x2
 

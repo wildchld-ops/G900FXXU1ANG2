@@ -1369,7 +1369,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">USB টিথাৰিং ত্ৰুটি</string>
     <string name="usb_tethering_on_during_sidesync_popup">SideSync ব্যৱহাৰ কৰাৰ সময়ত USB টিথাৰিং অক্ষম কৰিব নোৱাৰে৷ USB টিথাৰিং অক্ষম কৰি থাকিলে SideSync অক্ষম কৰিব৷</string>
     <string name="usb_tethering_off_during_sidesync_popup">SideSync ব্যৱহাৰ কৰাৰ সময়ত SB টিথাৰিং সক্ষম কৰিব নোৱাৰে৷ USB টিথাৰিং সক্ষম কৰি থাকিলে SideSync অক্ষম কৰিব৷</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>ব্লুটুথ টিথাৰিং</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>ব্লুটুথ টিথাৰিং</b></p></string>
     <string name="bluetooth_tethering_available_subtext">এই ডিভাইচৰ ইণ্টাৰনেট সংযোগ ভাগ-বতৰা কৰিছে…</string>
     <string name="bluetooth_tethering_device_connected_subtext">ডিভাইচৰ ইণ্টাৰনেট সংযোগ 1 টা ডিভাইচৰ সৈতে ভাগ-বতৰা হৈছে</string>
     <string name="bluetooth_tethering_devices_connected_subtext">ডিভাইচৰ ইণ্টাৰনেট সংযোগ %d টা ডিভাইচৰ সৈতে ভাগ-বতৰা হৈছে</string>

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onRefundComplete(Lcom/google/android/finsky/utils/AppSupport$RefundResult;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/utils/AppSupport$RefundResult;
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Lcom/google/android/finsky/utils/UninstallRefundTracker$3;->$SwitchMap$com$google$android$finsky$utils$AppSupport$RefundResult:[I
 

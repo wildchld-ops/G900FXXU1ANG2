@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -53,9 +52,6 @@
 
 .method private log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 9
-    .param p1    # Ljava/util/logging/Level;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Throwable;
 
     const/4 v4, 0x2
 
@@ -122,7 +118,6 @@
 # virtual methods
 .method public debug(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
 
@@ -139,8 +134,6 @@
 
 .method public debug(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v0, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
 
@@ -155,7 +148,6 @@
 
 .method public error(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -172,8 +164,6 @@
 
 .method public error(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v0, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -188,7 +178,6 @@
 
 .method public fatal(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -205,8 +194,6 @@
 
 .method public fatal(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v0, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
@@ -242,7 +229,6 @@
 
 .method public info(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 
@@ -259,8 +245,6 @@
 
 .method public info(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v0, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 
@@ -371,7 +355,6 @@
 
 .method public trace(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Ljava/util/logging/Level;->FINEST:Ljava/util/logging/Level;
 
@@ -388,8 +371,6 @@
 
 .method public trace(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v0, Ljava/util/logging/Level;->FINEST:Ljava/util/logging/Level;
 
@@ -404,7 +385,6 @@
 
 .method public warn(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 
@@ -421,8 +401,6 @@
 
 .method public warn(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v0, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
 

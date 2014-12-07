@@ -50,14 +50,12 @@
 
 .method public sign(Ljava/nio/ByteBuffer;)V
     .locals 0
-    .param p1    # Ljava/nio/ByteBuffer;
 
     return-void
 .end method
 
 .method public updateSign(Ljava/nio/ByteBuffer;)V
     .locals 0
-    .param p1    # Ljava/nio/ByteBuffer;
 
     return-void
 .end method

@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/Uri;II)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,8 +39,6 @@
 
 .method public static merge(Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;)Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;
     .locals 5
-    .param p0    # Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;->uri:Landroid/net/Uri;
 
@@ -93,9 +88,6 @@
 # virtual methods
 .method public satisfies(Landroid/net/Uri;II)Z
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/ImageBatch$ImageSpec;->uri:Landroid/net/Uri;
 

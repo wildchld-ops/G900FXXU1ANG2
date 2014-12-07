@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -65,9 +64,6 @@
 
 .method public constructor <init>(IILandroid/content/Context;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,10 +94,6 @@
 
 .method public constructor <init>(IILandroid/content/Context;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Context;
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,7 +126,6 @@
 
 .method private createUserDBAndConnect(I)Landroid/sec/clipboard/data/file/FileManager;
     .locals 7
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -354,7 +345,6 @@
 
 .method private findFileManagerIndex(I)I
     .locals 5
-    .param p1    # I
 
     const-string v2, "ClipboardServiceEx"
 
@@ -479,8 +469,6 @@
 
 .method private initializeClipboardDataMgr(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/4 v11, 0x0
 
@@ -714,7 +702,6 @@
 # virtual methods
 .method public UpdateClipboardDB(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/sec/clipboard/data/ClipboardDataMgr;->mContainerID:I
 
@@ -736,7 +723,6 @@
 
 .method public declared-synchronized addData(Landroid/sec/clipboard/data/ClipboardData;)Z
     .locals 11
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v10, 0x2
 
@@ -917,7 +903,6 @@
 
 .method public getItem(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -985,8 +970,6 @@
 
 .method public multiUserMode(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -1251,7 +1234,6 @@
 
 .method public removeData(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1387,8 +1369,6 @@
 
 .method public updateData(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v0, 0x1
 

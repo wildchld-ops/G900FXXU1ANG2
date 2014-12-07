@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/conn/scheme/SchemeRegistry;Ljava/net/ProxySelector;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/scheme/SchemeRegistry;
-    .param p2    # Ljava/net/ProxySelector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,9 +48,6 @@
 # virtual methods
 .method protected chooseProxy(Ljava/util/List;Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Ljava/net/Proxy;
     .locals 5
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Lorg/apache/http/HttpRequest;
-    .param p4    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -148,9 +143,6 @@
 
 .method protected determineProxy(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpHost;
     .locals 10
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;
@@ -293,9 +285,6 @@
 
 .method public determineRoute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/conn/routing/HttpRoute;
     .locals 8
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;
@@ -416,7 +405,6 @@
 
 .method protected getHost(Ljava/net/InetSocketAddress;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/net/InetSocketAddress;
 
     invoke-virtual {p1}, Ljava/net/InetSocketAddress;->isUnresolved()Z
 
@@ -453,7 +441,6 @@
 
 .method public setProxySelector(Ljava/net/ProxySelector;)V
     .locals 0
-    .param p1    # Ljava/net/ProxySelector;
 
     iput-object p1, p0, Lorg/apache/http/impl/conn/ProxySelectorRoutePlanner;->proxySelector:Ljava/net/ProxySelector;
 

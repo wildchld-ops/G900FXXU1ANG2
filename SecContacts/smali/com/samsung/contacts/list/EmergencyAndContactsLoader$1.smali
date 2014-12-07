@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/list/EmergencyAndContactsLoader;[Landroid/database/Cursor;Landroid/database/Cursor;)V
     .locals 0
-    .param p2    # [Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/samsung/contacts/list/EmergencyAndContactsLoader$1;->this$0:Lcom/samsung/contacts/list/EmergencyAndContactsLoader;
 

@@ -31,9 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
-    .param p4    # Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,7 +56,6 @@
 # virtual methods
 .method protected deliverResponse(Lcom/google/android/vending/verifier/api/PackageVerificationResult;)V
     .locals 1
-    .param p1    # Lcom/google/android/vending/verifier/api/PackageVerificationResult;
 
     iget-object v0, p0, Lcom/google/android/vending/verifier/api/PackageVerificationRequest;->mListener:Lcom/android/volley/Response$Listener;
 
@@ -70,7 +66,6 @@
 
 .method protected bridge synthetic deliverResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/vending/verifier/api/PackageVerificationResult;
 
@@ -81,7 +76,6 @@
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 4
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

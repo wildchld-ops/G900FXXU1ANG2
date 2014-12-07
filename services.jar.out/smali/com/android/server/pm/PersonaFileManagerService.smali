@@ -32,7 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/pm/IPersonaFileHandler$Stub;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method private static checkCallerPermissionFor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "PersonaFileManagerService"
 
@@ -282,7 +280,6 @@
 
 .method private isEncryptionEnabled(I)Ljava/lang/Boolean;
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -328,10 +325,6 @@
 # virtual methods
 .method public changeEncryptionKey(ILjava/lang/String;Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -392,9 +385,6 @@
 
 .method public createPartition(ILjava/lang/String;Z)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -455,7 +445,6 @@
 
 .method public isEncrypted(I)Z
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -516,9 +505,6 @@
 
 .method public mount(ILjava/lang/String;Z)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -579,8 +565,6 @@
 
 .method public removePartition(IZ)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -641,7 +625,6 @@
 
 .method public unmount(I)Z
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

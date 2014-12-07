@@ -86,16 +86,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BLjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # [B
-    .param p10    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -150,7 +140,6 @@
 
 .method private setAlgorithm(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const/4 v0, 0x0
 
@@ -177,7 +166,6 @@
 
 .method private setCnonce(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 3
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     invoke-static {}, Lorg/apache/http/impl/client/secgbaclient/Cnonce;->getCnonce()Ljava/lang/String;
 
@@ -210,8 +198,6 @@
 
 .method private setDigestResponse(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -262,7 +248,6 @@
 
 .method private setNonce(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const/4 v0, 0x0
 
@@ -289,7 +274,6 @@
 
 .method private setNonceCount(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 1
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const-string v0, "00000001"
 
@@ -304,7 +288,6 @@
 
 .method private setOpaque(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const/4 v0, 0x0
 
@@ -331,7 +314,6 @@
 
 .method private setQop(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const/4 v0, 0x0
 
@@ -358,7 +340,6 @@
 
 .method private setRealm(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const/4 v0, 0x0
 
@@ -385,7 +366,6 @@
 
 .method private setResponse(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 5
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const/4 v0, 0x0
 
@@ -436,7 +416,6 @@
 
 .method private setUri(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     const/4 v0, 0x0
 
@@ -463,7 +442,6 @@
 
 .method private setUserName(Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;)V
     .locals 3
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeader;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->userName:Ljava/lang/String;
 
@@ -675,7 +653,6 @@
 
 .method public setAlgorithm(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->algorithm:Ljava/lang/String;
 
@@ -684,7 +661,6 @@
 
 .method public setCnonce(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->cnonce:Ljava/lang/String;
 
@@ -693,7 +669,6 @@
 
 .method public setEntityBody([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->entityBody:[B
 
@@ -702,7 +677,6 @@
 
 .method public setGbaServiceKey(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->gbaServiceKey:Ljava/lang/String;
 
@@ -711,7 +685,6 @@
 
 .method public setHttpMethod(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->httpMethod:Ljava/lang/String;
 
@@ -720,7 +693,6 @@
 
 .method public setNonce(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->nonce:Ljava/lang/String;
 
@@ -729,7 +701,6 @@
 
 .method public setNonceCount(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->nonceCount:Ljava/lang/String;
 
@@ -738,7 +709,6 @@
 
 .method public setOpaque(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->opaque:Ljava/lang/String;
 
@@ -747,7 +717,6 @@
 
 .method public setQop(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->qop:Ljava/lang/String;
 
@@ -756,7 +725,6 @@
 
 .method public setRealm(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->realm:Ljava/lang/String;
 
@@ -765,7 +733,6 @@
 
 .method public setUri(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->uri:Ljava/lang/String;
 
@@ -774,7 +741,6 @@
 
 .method public setUserName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthorizationHeaderCreater;->userName:Ljava/lang/String;
 

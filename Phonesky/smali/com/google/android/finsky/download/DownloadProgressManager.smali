@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/download/DownloadQueueImpl;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -123,7 +122,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/download/DownloadProgressManager;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/download/DownloadProgressManager;
 
     invoke-direct {p0}, Lcom/google/android/finsky/download/DownloadProgressManager;->onDownloadProgress()V
 
@@ -132,7 +130,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/download/DownloadProgressManager;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadProgressManager;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadProgressManager;->mCursor:Landroid/database/Cursor;
 
@@ -141,8 +138,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/download/DownloadProgressManager;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/download/DownloadProgressManager;
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/google/android/finsky/download/DownloadProgressManager;->mCursor:Landroid/database/Cursor;
 
@@ -151,7 +146,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/download/DownloadProgressManager;)Landroid/os/HandlerThread;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadProgressManager;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadProgressManager;->mHandlerThread:Landroid/os/HandlerThread;
 
@@ -160,7 +154,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/download/DownloadProgressManager;)Lcom/google/android/finsky/download/DownloadQueueImpl;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadProgressManager;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadProgressManager;->mDownloadQueueImpl:Lcom/google/android/finsky/download/DownloadQueueImpl;
 
@@ -232,7 +225,6 @@
 
 .method private generateDownloadProgressFromCursor(Landroid/database/Cursor;)Ljava/util/Map;
     .locals 20
-    .param p1    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

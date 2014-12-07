@@ -72,8 +72,6 @@
 
 .method public static getNumberList(Landroid/content/Context;I)Ljava/util/ArrayList;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

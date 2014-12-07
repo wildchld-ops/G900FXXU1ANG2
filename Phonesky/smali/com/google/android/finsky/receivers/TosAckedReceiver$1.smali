@@ -44,7 +44,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const-string v0, "Error fetching TOC: %s"
 
@@ -63,7 +62,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Toc$TocResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/Toc$TocResponse;
 
     new-instance v0, Lcom/google/android/finsky/api/model/DfeToc;
 

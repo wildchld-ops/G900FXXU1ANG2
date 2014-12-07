@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/speeddial/SpeedDialActivity;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialActivity$DataBrowseListAdapter;->this$0:Lcom/samsung/contacts/speeddial/SpeedDialActivity;
 
@@ -54,8 +52,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/speeddial/SpeedDialActivity$DataBrowseListAdapter;I)J
     .locals 2
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialActivity$DataBrowseListAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/speeddial/SpeedDialActivity$DataBrowseListAdapter;->getId(I)J
 
@@ -66,7 +62,6 @@
 
 .method private getId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialActivity$DataBrowseListAdapter;->mDataIdList:Ljava/util/ArrayList;
 
@@ -101,9 +96,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const v6, 0x1020014
 
@@ -170,9 +162,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/CursorAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 

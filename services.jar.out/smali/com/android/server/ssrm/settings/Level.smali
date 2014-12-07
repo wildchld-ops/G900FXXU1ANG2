@@ -48,7 +48,6 @@
 # virtual methods
 .method public addBatteryState(Lcom/android/server/ssrm/settings/BatteryState;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/BatteryState;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/Level;->mBatteryStatesController:Lcom/android/server/ssrm/settings/BatteryStatesController;
 
@@ -67,7 +66,6 @@
 
 .method public compareTo(Lcom/android/server/ssrm/settings/Level;)I
     .locals 3
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     invoke-virtual {p0}, Lcom/android/server/ssrm/settings/Level;->getConditions()Ljava/util/List;
 
@@ -107,7 +105,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/ssrm/settings/Level;
 
@@ -138,7 +135,6 @@
 
 .method public getActiveBatteryState(Z)Lcom/android/server/ssrm/settings/BatteryState;
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/Level;->mBatteryStatesController:Lcom/android/server/ssrm/settings/BatteryStatesController;
 
@@ -178,7 +174,6 @@
 
 .method public initialize(Lcom/android/server/ssrm/settings/BatteryControllerFactory;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/BatteryControllerFactory;
 
     iput-object p1, p0, Lcom/android/server/ssrm/settings/Level;->mBatteryControllerFactory:Lcom/android/server/ssrm/settings/BatteryControllerFactory;
 
@@ -231,7 +226,6 @@
 
 .method public removeBatteryState(Lcom/android/server/ssrm/settings/BatteryState;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/BatteryState;
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/Level;->mBatteryStatesController:Lcom/android/server/ssrm/settings/BatteryStatesController;
 
@@ -242,7 +236,6 @@
 
 .method setCondition(Lcom/android/server/ssrm/settings/Condition;)V
     .locals 2
-    .param p1    # Lcom/android/server/ssrm/settings/Condition;
 
     if-nez p1, :cond_0
 
@@ -266,8 +259,6 @@
 
 .method public setTemperature(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/ssrm/settings/Level;->mBatteryStatesController:Lcom/android/server/ssrm/settings/BatteryStatesController;
 

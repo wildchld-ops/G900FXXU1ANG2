@@ -102,7 +102,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -257,7 +256,6 @@
 
 .method public static limitChargingCurrent(I)V
     .locals 4
-    .param p0    # I
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -330,7 +328,6 @@
 
 .method public static setDynamicFpsLevel(I)V
     .locals 6
-    .param p0    # I
 
     sget v3, Lcom/android/server/ssrm/Limiter;->mCurrentDynamicFpsLevel:I
 
@@ -434,7 +431,6 @@
 # virtual methods
 .method public ControlIPATemperature(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -685,7 +681,6 @@
 
 .method public broadcastSiopLevelIntent(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/ssrm/Limiter;->mPreviousSiopLevel:I
 
@@ -711,7 +706,6 @@
 
 .method public isAvailableGpuFreq(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -749,7 +743,6 @@
 
 .method public final limitArmCoreNum(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/ssrm/Limiter;->mArmCoreNumTable:[I
 
@@ -805,7 +798,6 @@
 
 .method public limitArmMaxFreq(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->mArmFreqTable:[I
 
@@ -878,7 +870,6 @@
 
 .method public limitCameraRecordingFps(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -909,7 +900,6 @@
 
 .method public limitCameraStart(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -940,7 +930,6 @@
 
 .method public limitFlashLed(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -971,7 +960,6 @@
 
 .method public limitGPUFreq(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->mGpuFreqTable:[I
 
@@ -1041,7 +1029,6 @@
 
 .method public limitGPUFreqForGame(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->mGpuFreqTable:[I
 
@@ -1117,7 +1104,6 @@
 
 .method public limitRecording(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -1148,7 +1134,6 @@
 
 .method public limitSmartBonding(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -1211,7 +1196,6 @@
 
 .method public setIPAHotPlugOutThreshold(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/ssrm/Limiter;->TAG:Ljava/lang/String;
 
@@ -1274,7 +1258,6 @@
 
 .method public setResetBatteryCharging(Z)V
     .locals 6
-    .param p1    # Z
 
     const-string v0, "/sys/class/power_supply/battery/batt_slate_mode"
 

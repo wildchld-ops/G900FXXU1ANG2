@@ -141,7 +141,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/previews/PreviewPlayer;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mStatusListeners:Ljava/util/List;
 
@@ -150,8 +149,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/previews/PreviewPlayer;Lcom/android/volley/toolbox/JsonObjectRequest;)Lcom/android/volley/toolbox/JsonObjectRequest;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
-    .param p1    # Lcom/android/volley/toolbox/JsonObjectRequest;
 
     iput-object p1, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mCurrentUnrollRequest:Lcom/android/volley/toolbox/JsonObjectRequest;
 
@@ -160,7 +157,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/previews/PreviewPlayer;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
 
     invoke-direct {p0}, Lcom/google/android/finsky/previews/PreviewPlayer;->notifyError()V
 
@@ -169,8 +165,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/previews/PreviewPlayer;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/previews/PreviewPlayer;->setModeToStreaming(Ljava/lang/String;)Ljava/lang/String;
 
@@ -181,7 +175,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/previews/PreviewPlayer;)Lcom/google/android/finsky/previews/MediaPlayerWrapper;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mPlayer:Lcom/google/android/finsky/previews/MediaPlayerWrapper;
 
@@ -190,7 +183,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/previews/PreviewPlayer;)Lcom/google/android/finsky/previews/StatusListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mListenerProxy:Lcom/google/android/finsky/previews/StatusListener;
 
@@ -199,8 +191,6 @@
 
 .method static synthetic access$602(Lcom/google/android/finsky/previews/PreviewPlayer;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mAudioFocusState:I
 
@@ -209,7 +199,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/previews/PreviewPlayer;)Lcom/google/android/finsky/protos/DocDetails$SongDetails;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mCurrentTrack:Lcom/google/android/finsky/protos/DocDetails$SongDetails;
 
@@ -218,7 +207,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/previews/PreviewPlayer;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/previews/PreviewPlayer;
 
     invoke-direct {p0}, Lcom/google/android/finsky/previews/PreviewPlayer;->playNextTrack()Z
 
@@ -229,7 +217,6 @@
 
 .method private isCurrentTrack(Lcom/google/android/finsky/protos/DocDetails$SongDetails;)Z
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/DocDetails$SongDetails;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mCurrentTrack:Lcom/google/android/finsky/protos/DocDetails$SongDetails;
 
@@ -393,7 +380,6 @@
 
 .method private setModeToStreaming(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
 
@@ -545,7 +531,6 @@
 # virtual methods
 .method public addStatusListener(Lcom/google/android/finsky/previews/StatusListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/previews/StatusListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mStatusListeners:Ljava/util/List;
 
@@ -640,7 +625,6 @@
 
 .method public notifyListener(Lcom/google/android/finsky/previews/StatusListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/previews/StatusListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mPlayer:Lcom/google/android/finsky/previews/MediaPlayerWrapper;
 
@@ -698,7 +682,6 @@
 
 .method public play(Lcom/google/android/finsky/protos/DocDetails$SongDetails;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/DocDetails$SongDetails;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -775,7 +758,6 @@
 
 .method public removeStatusListener(Lcom/google/android/finsky/previews/StatusListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/previews/StatusListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mStatusListeners:Ljava/util/List;
 
@@ -843,7 +825,6 @@
 
 .method public togglePlayback(Lcom/google/android/finsky/protos/DocDetails$SongDetails;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/DocDetails$SongDetails;
 
     iget-object v1, p0, Lcom/google/android/finsky/previews/PreviewPlayer;->mCurrentUnrollRequest:Lcom/android/volley/toolbox/JsonObjectRequest;
 

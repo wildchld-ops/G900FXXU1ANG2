@@ -14,8 +14,6 @@
 
 .method private constructor <init>(Lorg/json/JSONObject;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lorg/json/JSONObject;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -29,7 +27,6 @@
 
 .method private constructor <init>(Lorg/json/JSONTokener;)V
     .locals 0
-    .param p1    # Lorg/json/JSONTokener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -43,7 +40,6 @@
 
 .method static buildJsoMap(Ljava/lang/String;)Lcom/android/i18n/addressinput/JsoMap;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -73,7 +69,6 @@
 
 .method private getObject(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -91,7 +86,6 @@
 # virtual methods
 .method containsKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -102,7 +96,6 @@
 
 .method public bridge synthetic get(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -118,7 +111,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-super {p0, p1}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
@@ -164,7 +156,6 @@
 
 .method public getInt(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-super {p0, p1}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
@@ -215,7 +206,6 @@
 
 .method getObj(Ljava/lang/String;)Lcom/android/i18n/addressinput/JsoMap;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ClassCastException;,
@@ -317,7 +307,6 @@
 
 .method mergeData(Lcom/android/i18n/addressinput/JsoMap;)V
     .locals 5
-    .param p1    # Lcom/android/i18n/addressinput/JsoMap;
 
     if-nez p1, :cond_1
 
@@ -388,8 +377,6 @@
 
 .method putObj(Ljava/lang/String;Lorg/json/JSONObject;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/json/JSONObject;
 
     :try_start_0
     invoke-super {p0, p1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;

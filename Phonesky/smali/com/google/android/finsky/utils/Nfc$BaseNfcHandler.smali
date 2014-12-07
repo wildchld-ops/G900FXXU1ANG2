@@ -26,7 +26,6 @@
 # direct methods
 .method private constructor <init>(Lcom/google/android/finsky/activities/DetailsDataBasedFragment;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/DetailsDataBasedFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,8 +46,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/activities/DetailsDataBasedFragment;Lcom/google/android/finsky/utils/Nfc$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/activities/DetailsDataBasedFragment;
-    .param p2    # Lcom/google/android/finsky/utils/Nfc$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/utils/Nfc$BaseNfcHandler;-><init>(Lcom/google/android/finsky/activities/DetailsDataBasedFragment;)V
 

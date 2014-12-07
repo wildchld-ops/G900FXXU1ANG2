@@ -80,7 +80,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -361,7 +360,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/ContextualWidgetMonitor;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->mHandler:Landroid/os/Handler;
 
@@ -370,7 +368,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/ContextualWidgetMonitor;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->isRoamingFeature()Z
 
@@ -381,7 +378,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/ContextualWidgetMonitor;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->isIgnoreNationalRoaming()Z
 
@@ -392,7 +388,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/ContextualWidgetMonitor;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->mShowMissedWidgetBecauseOfRoaming:Z
 
@@ -401,8 +396,6 @@
 
 .method static synthetic access$302(Lcom/android/keyguard/sec/ContextualWidgetMonitor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->mShowMissedWidgetBecauseOfRoaming:Z
 
@@ -411,7 +404,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/ContextualWidgetMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->handleMissedEventUpdate()V
 
@@ -420,8 +412,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/ContextualWidgetMonitor;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->handleMusicWidgetUpdate(Z)V
 
@@ -430,8 +420,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/ContextualWidgetMonitor;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->handleRemoteWidgetUpdate(Z)V
 
@@ -440,8 +428,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/ContextualWidgetMonitor;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->handleSecMusicWidgetUpdate(Z)V
 
@@ -450,8 +436,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/ContextualWidgetMonitor;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->handleFMRadioWidgetUpdate(Z)V
 
@@ -460,7 +444,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/ContextualWidgetMonitor;)Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidgetMonitorCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/ContextualWidgetMonitor;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->mCallbacks:Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidgetMonitorCallback;
 
@@ -469,7 +452,6 @@
 
 .method private addContextualWidget(Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidget;)V
     .locals 2
-    .param p1    # Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidget;
 
     sget-object v0, Lcom/android/keyguard/sec/ContextualWidgetMonitor$4;->$SwitchMap$com$android$keyguard$sec$ContextualWidgetMonitor$ContextualWidget:[I
 
@@ -531,7 +513,6 @@
 
 .method private appWidget(Landroid/content/ComponentName;)V
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->getWidgetId(Landroid/content/ComponentName;)I
 
@@ -646,7 +627,6 @@
 
 .method private getContextualWidgetId(Landroid/content/ComponentName;)I
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v3, 0x0
 
@@ -700,7 +680,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/keyguard/sec/ContextualWidgetMonitor;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->sInstance:Lcom/android/keyguard/sec/ContextualWidgetMonitor;
 
@@ -720,7 +699,6 @@
 
 .method private getWidgetId(Landroid/content/ComponentName;)I
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v3, 0x0
 
@@ -774,7 +752,6 @@
 
 .method private handleFMRadioWidgetUpdate(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -819,7 +796,6 @@
 
 .method private handleMusicWidgetUpdate(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -840,7 +816,6 @@
 
 .method private handleRemoteWidgetUpdate(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -861,7 +836,6 @@
 
 .method private handleSecMusicWidgetUpdate(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1054,7 +1028,6 @@
 
 .method private removeContextualWidget(Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidget;)V
     .locals 2
-    .param p1    # Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidget;
 
     sget-object v0, Lcom/android/keyguard/sec/ContextualWidgetMonitor$4;->$SwitchMap$com$android$keyguard$sec$ContextualWidgetMonitor$ContextualWidget:[I
 
@@ -1116,7 +1089,6 @@
 
 .method private removeWidget(Landroid/content/ComponentName;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->getWidgetId(Landroid/content/ComponentName;)I
 
@@ -1231,7 +1203,6 @@
 
 .method public registerCallback(Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidgetMonitorCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidgetMonitorCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/ContextualWidgetMonitor;->mCallbacks:Lcom/android/keyguard/sec/ContextualWidgetMonitor$ContextualWidgetMonitorCallback;
 

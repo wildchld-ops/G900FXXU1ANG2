@@ -31,7 +31,6 @@
 # virtual methods
 .method public bridge synthetic handleResponse(Lorg/apache/http/HttpResponse;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/client/ClientProtocolException;,
@@ -48,7 +47,6 @@
 
 .method public handleResponse(Lorg/apache/http/HttpResponse;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/client/HttpResponseException;,

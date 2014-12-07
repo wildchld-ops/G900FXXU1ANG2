@@ -123,7 +123,6 @@
 
 .method static synthetic access$100(Landroid/service/dreams/DreamService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/service/dreams/DreamService;
 
     iget-object v0, p0, Landroid/service/dreams/DreamService;->TAG:Ljava/lang/String;
 
@@ -132,7 +131,6 @@
 
 .method static synthetic access$200(Landroid/service/dreams/DreamService;)V
     .locals 0
-    .param p0    # Landroid/service/dreams/DreamService;
 
     invoke-direct {p0}, Landroid/service/dreams/DreamService;->safelyFinish()V
 
@@ -141,8 +139,6 @@
 
 .method static synthetic access$300(Landroid/service/dreams/DreamService;Landroid/os/IBinder;)V
     .locals 0
-    .param p0    # Landroid/service/dreams/DreamService;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Landroid/service/dreams/DreamService;->attach(Landroid/os/IBinder;)V
 
@@ -151,7 +147,6 @@
 
 .method static synthetic access$400(Landroid/service/dreams/DreamService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/service/dreams/DreamService;
 
     iget-object v0, p0, Landroid/service/dreams/DreamService;->mHandler:Landroid/os/Handler;
 
@@ -160,7 +155,6 @@
 
 .method static synthetic access$500(Landroid/service/dreams/DreamService;)V
     .locals 0
-    .param p0    # Landroid/service/dreams/DreamService;
 
     invoke-direct {p0}, Landroid/service/dreams/DreamService;->detach()V
 
@@ -169,9 +163,6 @@
 
 .method private applyFlags(III)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     xor-int/lit8 v0, p3, -0x1
 
@@ -186,8 +177,6 @@
 
 .method private applySystemUiVisibilityFlags(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/service/dreams/DreamService;->mWindow:Landroid/view/Window;
 
@@ -223,8 +212,6 @@
 
 .method private applyWindowFlags(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/service/dreams/DreamService;->mWindow:Landroid/view/Window;
 
@@ -264,7 +251,6 @@
 
 .method private final attach(Landroid/os/IBinder;)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
 
     const/16 v8, 0x7e7
 
@@ -774,8 +760,6 @@
 
 .method private getSystemUiVisibilityFlagValue(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/service/dreams/DreamService;->mWindow:Landroid/view/Window;
 
@@ -819,8 +803,6 @@
 
 .method private getWindowFlagValue(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/service/dreams/DreamService;->mWindow:Landroid/view/Window;
 
@@ -923,8 +905,6 @@
 # virtual methods
 .method public addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/service/dreams/DreamService;->getWindow()Landroid/view/Window;
 
@@ -937,7 +917,6 @@
 
 .method public dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Landroid/service/dreams/DreamService;->mInteractive:Z
 
@@ -1003,7 +982,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1072,7 +1050,6 @@
 
 .method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-boolean v0, p0, Landroid/service/dreams/DreamService;->mInteractive:Z
 
@@ -1108,7 +1085,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x0
 
@@ -1117,7 +1093,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Landroid/service/dreams/DreamService;->mInteractive:Z
 
@@ -1153,7 +1128,6 @@
 
 .method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Landroid/service/dreams/DreamService;->mInteractive:Z
 
@@ -1189,9 +1163,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -1334,7 +1305,6 @@
 
 .method public findViewById(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/service/dreams/DreamService;->getWindow()Landroid/view/Window;
 
@@ -1428,14 +1398,12 @@
 
 .method public onActionModeFinished(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     return-void
 .end method
 
 .method public onActionModeStarted(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     return-void
 .end method
@@ -1448,7 +1416,6 @@
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     iget-boolean v0, p0, Landroid/service/dreams/DreamService;->mDebug:Z
 
@@ -1537,8 +1504,6 @@
 
 .method public onCreatePanelMenu(ILandroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -1547,7 +1512,6 @@
 
 .method public onCreatePanelView(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1617,8 +1581,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -1627,8 +1589,6 @@
 
 .method public onMenuOpened(ILandroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -1637,17 +1597,12 @@
 
 .method public onPanelClosed(ILandroid/view/Menu;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     return-void
 .end method
 
 .method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -1664,21 +1619,18 @@
 
 .method public onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     return-void
 .end method
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     const/4 v0, 0x0
 
@@ -1687,7 +1639,6 @@
 
 .method public setContentView(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/service/dreams/DreamService;->getWindow()Landroid/view/Window;
 
@@ -1700,7 +1651,6 @@
 
 .method public setContentView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/service/dreams/DreamService;->getWindow()Landroid/view/Window;
 
@@ -1713,8 +1663,6 @@
 
 .method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/service/dreams/DreamService;->getWindow()Landroid/view/Window;
 
@@ -1727,7 +1675,6 @@
 
 .method public setDebug(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/service/dreams/DreamService;->mDebug:Z
 
@@ -1736,7 +1683,6 @@
 
 .method public setFullscreen(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/service/dreams/DreamService;->mFullscreen:Z
 
@@ -1761,7 +1707,6 @@
 
 .method public setInteractive(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/service/dreams/DreamService;->mInteractive:Z
 
@@ -1770,7 +1715,6 @@
 
 .method public setLowProfile(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/service/dreams/DreamService;->mLowProfile:Z
 
@@ -1795,7 +1739,6 @@
 
 .method public setScreenBright(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/service/dreams/DreamService;->mScreenBright:Z
 

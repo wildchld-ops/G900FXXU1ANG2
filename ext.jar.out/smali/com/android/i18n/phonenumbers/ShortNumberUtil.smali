@@ -24,7 +24,6 @@
 
 .method constructor <init>(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +34,6 @@
 
 .method private matchesEmergencyNumberHelper(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -129,8 +125,6 @@
 # virtual methods
 .method public connectsToEmergencyNumber(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -143,8 +137,6 @@
 
 .method public isEmergencyNumber(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

@@ -26,7 +26,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/connect/util/Logger$LoggerType;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/util/Logger$LoggerType;
 
     const-string v0, ""
 
@@ -37,8 +36,6 @@
 
 .method protected constructor <init>(Lcom/nuance/connect/util/Logger$LoggerType;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/util/Logger$LoggerType;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +59,6 @@
 # virtual methods
 .method public d(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x3
 
@@ -75,8 +71,6 @@
 
 .method public d(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x3
 
@@ -87,7 +81,6 @@
 
 .method public e(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x6
 
@@ -100,8 +93,6 @@
 
 .method public e(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x6
 
@@ -112,7 +103,6 @@
 
 .method public i(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x4
 
@@ -125,8 +115,6 @@
 
 .method public i(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x4
 
@@ -137,7 +125,6 @@
 
 .method public isLoggable(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -184,9 +171,6 @@
 
 .method protected log(ILjava/lang/Object;Ljava/lang/Throwable;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/util/Logger$DeveloperLog;->isLoggable(I)Z
 
@@ -310,7 +294,6 @@
 
 .method public v(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x2
 
@@ -323,8 +306,6 @@
 
 .method public v(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x2
 
@@ -335,7 +316,6 @@
 
 .method public w(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x5
 
@@ -348,8 +328,6 @@
 
 .method public w(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x5
 

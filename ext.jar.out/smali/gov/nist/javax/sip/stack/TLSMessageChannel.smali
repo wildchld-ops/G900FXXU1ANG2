@@ -43,10 +43,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/net/InetAddress;ILgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/TLSMessageProcessor;)V
     .locals 3
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
-    .param p3    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
-    .param p4    # Lgov/nist/javax/sip/stack/TLSMessageProcessor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -123,9 +119,6 @@
 
 .method protected constructor <init>(Ljava/net/Socket;Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/TLSMessageProcessor;)V
     .locals 4
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
-    .param p3    # Lgov/nist/javax/sip/stack/TLSMessageProcessor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -259,8 +252,6 @@
 
 .method private sendMessage([BZ)V
     .locals 10
-    .param p1    # [B
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -444,7 +435,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -620,11 +610,6 @@
 
 .method public handleException(Ljava/text/ParseException;Lgov/nist/javax/sip/message/SIPMessage;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/text/ParseException;
-    .param p2    # Lgov/nist/javax/sip/message/SIPMessage;
-    .param p3    # Ljava/lang/Class;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -876,7 +861,6 @@
 
 .method public processMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 24
-    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -2194,7 +2178,6 @@
 
 .method public sendMessage(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 7
-    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2247,10 +2230,6 @@
 
 .method public sendMessage([BLjava/net/InetAddress;IZ)V
     .locals 10
-    .param p1    # [B
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2351,7 +2330,6 @@
 
 .method public setHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
     .locals 0
-    .param p1    # Ljavax/net/ssl/HandshakeCompletedListener;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/TLSMessageChannel;->handshakeCompletedListener:Ljavax/net/ssl/HandshakeCompletedListener;
 

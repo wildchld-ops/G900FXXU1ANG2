@@ -48,7 +48,6 @@
 
 .method private saveAccount(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     const-string v0, "com.osp.app.signin"
 
@@ -70,7 +69,6 @@
 
 .method private saveAccountAndReturnResult(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/ContactEditorAccountsChangedActivity;->saveAccount(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
 
@@ -103,7 +101,6 @@
 
 .method public onAccountSelected(Lcom/android/contacts/common/model/account/AccountWithDataSet;)Z
     .locals 4
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     const/4 v1, 0x1
 
@@ -199,9 +196,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -247,7 +241,6 @@
 
 .method public onAttentionDialogDetached(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/ContactEditorAccountsChangedActivity;->saveAccountAndReturnResult(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
 
@@ -256,7 +249,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 

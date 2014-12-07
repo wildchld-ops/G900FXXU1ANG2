@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;->mSPref:Landroid/content/SharedPreferences;
 
@@ -69,8 +68,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;->createLanguageList(Z)V
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;->settingActivity:Landroid/app/Activity;
 
@@ -154,7 +150,6 @@
 
 .method private createLanguageList(Z)V
     .locals 18
-    .param p1    # Z
 
     invoke-virtual/range {p0 .. p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -674,7 +669,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x400
 
@@ -849,9 +843,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f03006f
 
@@ -866,7 +857,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

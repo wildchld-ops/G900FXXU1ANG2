@@ -47,11 +47,6 @@
 
 .method public static getIntent(Landroid/content/Context;Ljava/lang/String;ZLcom/google/android/finsky/protos/ChallengeProtos$Challenge;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/protos/ChallengeProtos$Challenge;
-    .param p4    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -98,7 +93,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -191,7 +185,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -210,8 +203,6 @@
 
 .method public onSuccess(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/GaiaAuthActivity;->getAuthChallenge()Lcom/google/android/finsky/protos/ChallengeProtos$AuthenticationChallenge;
 

@@ -127,7 +127,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -144,7 +143,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mIsMultiSelectionMode:Z
 
@@ -153,7 +151,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -162,7 +159,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -171,7 +167,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -180,7 +175,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -189,7 +183,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -198,7 +191,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -207,7 +199,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -216,7 +207,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -225,7 +215,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -234,7 +223,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -243,7 +231,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -252,7 +239,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -261,7 +247,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -270,10 +255,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;Ljava/util/ArrayList;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->buildDialog(Ljava/util/ArrayList;ILjava/lang/String;)V
 
@@ -282,7 +263,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -291,7 +271,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -300,7 +279,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mContext:Landroid/content/Context;
 
@@ -309,8 +287,6 @@
 
 .method private buildDialog(Ljava/util/ArrayList;ILjava/lang/String;)V
     .locals 4
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -366,8 +342,6 @@
 
 .method private inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->getContext()Landroid/content/Context;
 
@@ -388,8 +362,6 @@
 
 .method private setButtonEvent2(Lcom/samsung/contacts/businesscard/BusinesscardListAdapter$ViewCache;Landroid/database/Cursor;)V
     .locals 11
-    .param p1    # Lcom/samsung/contacts/businesscard/BusinesscardListAdapter$ViewCache;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v9, 0x3
 
@@ -644,10 +616,6 @@
 # virtual methods
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 20
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1077,8 +1045,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 5
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     instance-of v3, p1, Lcom/android/contacts/common/list/ProfileAndContactsLoader;
 
@@ -1180,8 +1146,6 @@
 
 .method public getContactUri(ILandroid/database/Cursor;)Landroid/net/Uri;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v3, 0x0
 
@@ -1212,11 +1176,6 @@
 
 .method protected getView(ILandroid/database/Cursor;ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x0
 
@@ -1259,11 +1218,6 @@
 
 .method protected newView(Landroid/content/Context;ILandroid/database/Cursor;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Landroid/view/ViewGroup;
 
     const/4 v4, 0x1
 
@@ -1413,7 +1367,6 @@
 
 .method public setCustomSortOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mCurrentOrder:I
 
@@ -1422,7 +1375,6 @@
 
 .method public setMultiSelectionMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardListAdapter;->mIsMultiSelectionMode:Z
 

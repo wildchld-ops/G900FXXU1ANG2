@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/detail/ContactDetailFragment;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,8 +23,6 @@
 
 .method public static register(Landroid/app/Activity;Lcom/android/contacts/detail/ContactDetailFragment;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -58,7 +55,6 @@
 # virtual methods
 .method public createNdefMessage(Landroid/nfc/NfcEvent;)Landroid/nfc/NdefMessage;
     .locals 14
-    .param p1    # Landroid/nfc/NfcEvent;
 
     const/4 v11, 0x0
 

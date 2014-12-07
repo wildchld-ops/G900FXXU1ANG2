@@ -13,8 +13,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/message/BasicHttpRequest;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -23,9 +21,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/ProtocolVersion;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/apache/http/ProtocolVersion;
 
     new-instance v0, Lorg/apache/http/message/BasicRequestLine;
 
@@ -38,7 +33,6 @@
 
 .method public constructor <init>(Lorg/apache/http/RequestLine;)V
     .locals 0
-    .param p1    # Lorg/apache/http/RequestLine;
 
     invoke-direct {p0, p1}, Lorg/apache/http/message/BasicHttpRequest;-><init>(Lorg/apache/http/RequestLine;)V
 
@@ -91,7 +85,6 @@
 
 .method public setEntity(Lorg/apache/http/HttpEntity;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpEntity;
 
     iput-object p1, p0, Lorg/apache/http/message/BasicHttpEntityEnclosingRequest;->entity:Lorg/apache/http/HttpEntity;
 

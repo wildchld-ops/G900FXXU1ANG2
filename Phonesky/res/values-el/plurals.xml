@@ -56,23 +56,23 @@
         <item quantity="one">αστέρι</item>
     </plurals>
     <plurals name="review_author_stars_title_comment">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s αστέρια - %3$s - %4$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s αστέρι - %3$s - %4$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s αστέρια - %3$s - %4$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s αστέρι - %3$s - %4$s</item>
     </plurals>
     <plurals name="review_author_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s αστέρια - %3$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s αστέρι - %3$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s αστέρια - %3$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s αστέρι - %3$s</item>
     </plurals>
     <plurals name="review_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s αστέρια&amp;lt;/b> %2$s</item>
-        <item quantity="one">&amp;lt;b>%1$s αστέρι&amp;lt;/b> %2$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s αστέρια&amp;amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s αστέρι&amp;amp;lt;/b> %2$s</item>
     </plurals>
     <plurals name="review_author_stars">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s αστέρια</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s αστέρι</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s αστέρια</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s αστέρι</item>
     </plurals>
     <plurals name="review_just_stars">
-        <item quantity="other">Βαθμολογία &amp;lt;b>%1$s αστέρια&amp;lt;/b></item>
-        <item quantity="one">Βαθμολογία &amp;lt;b>%1$s αστέρι&amp;lt;/b></item>
+        <item quantity="other">Βαθμολογία &amp;amp;lt;b>%1$s αστέρια&amp;amp;lt;/b></item>
+        <item quantity="one">Βαθμολογία &amp;amp;lt;b>%1$s αστέρι&amp;amp;lt;/b></item>
     </plurals>
 </resources>

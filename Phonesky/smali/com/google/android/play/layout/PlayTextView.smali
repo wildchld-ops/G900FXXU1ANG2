@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -62,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -385,7 +382,6 @@
 
 .method static synthetic access$000(Lcom/google/android/play/layout/PlayTextView;)V
     .locals 0
-    .param p0    # Lcom/google/android/play/layout/PlayTextView;
 
     invoke-direct {p0}, Lcom/google/android/play/layout/PlayTextView;->handleClick()V
 
@@ -394,8 +390,6 @@
 
 .method static synthetic access$102(Lcom/google/android/play/layout/PlayTextView;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/play/layout/PlayTextView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/play/layout/PlayTextView;->mUrlSpanClicked:Z
 
@@ -404,7 +398,6 @@
 
 .method static synthetic access$200(Lcom/google/android/play/layout/PlayTextView;)Lcom/google/android/play/layout/PlayTextView$UrlClickHandler;
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayTextView;
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayTextView;->mUrlClickHandler:Lcom/google/android/play/layout/PlayTextView$UrlClickHandler;
 
@@ -473,7 +466,6 @@
 
 .method private selfishifyUrlSpans(Ljava/lang/CharSequence;)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v10, 0x0
 
@@ -564,7 +556,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 23
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/widget/TextView;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -839,8 +830,6 @@
 
 .method protected onMeasure(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->onMeasure(II)V
 
@@ -888,8 +877,6 @@
 
 .method public setContent(Lcom/google/android/play/layout/PlayTextView$UrlClickHandler;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Lcom/google/android/play/layout/PlayTextView$UrlClickHandler;
-    .param p2    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/google/android/play/layout/PlayTextView;->mUrlClickHandler:Lcom/google/android/play/layout/PlayTextView$UrlClickHandler;
 
@@ -928,8 +915,6 @@
 
 .method public setContentColorId(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/google/android/play/layout/PlayTextView;->getResources()Landroid/content/res/Resources;
 
@@ -959,8 +944,6 @@
 
 .method public setContentColorStateListId(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/google/android/play/layout/PlayTextView;->getResources()Landroid/content/res/Resources;
 
@@ -994,7 +977,6 @@
 
 .method public setDecorationBitmap(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -1032,7 +1014,6 @@
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 2
-    .param p1    # Landroid/view/View$OnClickListener;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

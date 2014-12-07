@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/SipStackImpl;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/SipStackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,9 +28,6 @@
 
 .method private sendBadRequestResponse(Lgov/nist/javax/sip/message/SIPRequest;Lgov/nist/javax/sip/stack/SIPServerTransaction;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
-    .param p3    # Ljava/lang/String;
 
     const/16 v3, 0x190
 
@@ -104,8 +100,6 @@
 
 .method private sendCallOrTransactionDoesNotExistResponse(Lgov/nist/javax/sip/message/SIPRequest;Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     const/16 v3, 0x1e1
 
@@ -173,8 +167,6 @@
 
 .method private sendLoopDetectedResponse(Lgov/nist/javax/sip/message/SIPRequest;Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     const/16 v3, 0x1e2
 
@@ -229,8 +221,6 @@
 
 .method private sendRequestPendingResponse(Lgov/nist/javax/sip/message/SIPRequest;Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 6
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     const/16 v4, 0x1eb
 
@@ -308,8 +298,6 @@
 
 .method private sendServerInternalErrorResponse(Lgov/nist/javax/sip/message/SIPRequest;Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 6
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     iget-object v4, p0, Lgov/nist/javax/sip/DialogFilter;->sipStack:Lgov/nist/javax/sip/SipStackImpl;
 
@@ -411,8 +399,6 @@
 
 .method public processRequest(Lgov/nist/javax/sip/message/SIPRequest;Lgov/nist/javax/sip/stack/MessageChannel;)V
     .locals 42
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
-    .param p2    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     move-object/from16 v0, p0
 
@@ -3797,8 +3783,6 @@
 
 .method public processResponse(Lgov/nist/javax/sip/message/SIPResponse;Lgov/nist/javax/sip/stack/MessageChannel;)V
     .locals 16
-    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
-    .param p2    # Lgov/nist/javax/sip/stack/MessageChannel;
 
     const/4 v12, 0x0
 
@@ -4680,9 +4664,6 @@
 
 .method public processResponse(Lgov/nist/javax/sip/message/SIPResponse;Lgov/nist/javax/sip/stack/MessageChannel;Lgov/nist/javax/sip/stack/SIPDialog;)V
     .locals 12
-    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
-    .param p2    # Lgov/nist/javax/sip/stack/MessageChannel;
-    .param p3    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget-object v8, p0, Lgov/nist/javax/sip/DialogFilter;->sipStack:Lgov/nist/javax/sip/SipStackImpl;
 

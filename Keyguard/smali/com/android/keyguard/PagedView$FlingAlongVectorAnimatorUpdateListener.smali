@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Landroid/graphics/PointF;Landroid/graphics/Rect;JF)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/PointF;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # J
-    .param p6    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +80,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 9
-    .param p1    # Landroid/animation/ValueAnimator;
 
     const/high16 v8, 0x447a0000
 

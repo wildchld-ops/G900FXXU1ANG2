@@ -306,8 +306,6 @@
 
 .method public static getMetadata(II)Lcom/google/android/finsky/layout/play/PlayCardSingleCardClusterMetadata;
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x0
 

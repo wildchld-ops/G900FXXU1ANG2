@@ -34,7 +34,6 @@
 # virtual methods
 .method public displayResultData(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -102,7 +101,6 @@
 
 .method public displayResultDataExtra(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -119,7 +117,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/samsung/dialer/dialpad/SearchFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -146,7 +143,6 @@
 
 .method public onKeywordChanged(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/SearchFragment;->mLastKeyword:Ljava/lang/String;
 

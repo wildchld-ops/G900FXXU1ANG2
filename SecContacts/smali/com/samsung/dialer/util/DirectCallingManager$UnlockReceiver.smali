@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/dialer/util/DirectCallingManager;Lcom/samsung/dialer/util/DirectCallingManager$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/dialer/util/DirectCallingManager;
-    .param p2    # Lcom/samsung/dialer/util/DirectCallingManager$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/util/DirectCallingManager$UnlockReceiver;-><init>(Lcom/samsung/dialer/util/DirectCallingManager;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

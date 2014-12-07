@@ -80,8 +80,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;I)V
     .locals 6
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -166,9 +164,6 @@
 
 .method private adjustScaleForDrag(FIF)F
     .locals 1
-    .param p1    # F
-    .param p2    # I
-    .param p3    # F
 
     iget v0, p0, Lcom/android/launcher2/PageIndicator;->mCurrentPage:I
 
@@ -194,7 +189,6 @@
 
 .method private getPreviewPageWidth(F)I
     .locals 3
-    .param p1    # F
 
     iget v1, p0, Lcom/android/launcher2/PagePreviewIndicator;->mNormalPreviewWidth:I
 
@@ -217,7 +211,6 @@
 # virtual methods
 .method animateDragMode(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/launcher2/PagePreviewIndicator;->mDragMode:Lcom/android/launcher2/ScalarAnimator;
 
@@ -228,9 +221,6 @@
 
 .method draw(Landroid/graphics/Canvas;Lcom/android/launcher2/PagedView;J)Z
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/android/launcher2/PagedView;
-    .param p3    # J
 
     invoke-virtual {p0, p2, p3, p4}, Lcom/android/launcher2/PagePreviewIndicator;->setupIndicatorPreviews(Lcom/android/launcher2/PagedView;J)V
 
@@ -243,12 +233,6 @@
 
 .method public drawIndicatorDots(Landroid/graphics/Canvas;Lcom/android/launcher2/PagedView;IIIJ)Z
     .locals 30
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/android/launcher2/PagedView;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # J
 
     const/16 v28, 0x0
 
@@ -904,11 +888,6 @@
 
 .method public drawPagePreview(Landroid/graphics/Canvas;ILandroid/graphics/Rect;FLcom/android/launcher2/PagedView;)Z
     .locals 16
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # F
-    .param p5    # Lcom/android/launcher2/PagedView;
 
     const/4 v15, 0x0
 
@@ -1227,12 +1206,6 @@
 
 .method public drawPreviewContent(Landroid/graphics/Canvas;ILandroid/graphics/Rect;FLjava/util/List;Lcom/android/launcher2/Launcher;Lcom/android/launcher2/PositionDelta;)V
     .locals 22
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # F
-    .param p6    # Lcom/android/launcher2/Launcher;
-    .param p7    # Lcom/android/launcher2/PositionDelta;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1569,8 +1542,6 @@
 
 .method public getItemSpan(Lcom/android/launcher2/BaseItem;[I)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # [I
 
     const/4 v3, 0x0
 
@@ -1618,9 +1589,6 @@
 
 .method public getOutlineForItem(IIZ)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x1
 
@@ -1658,7 +1626,6 @@
 
 .method public getPreviewPageHeight(F)I
     .locals 3
-    .param p1    # F
 
     iget v1, p0, Lcom/android/launcher2/PagePreviewIndicator;->mNormalPreviewHeight:I
 
@@ -1687,7 +1654,6 @@
 
 .method public setupDimens(Landroid/content/res/Resources;)V
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v3, 0x0
 
@@ -1890,8 +1856,6 @@
 
 .method setupIndicatorPreviews(Lcom/android/launcher2/PagedView;J)V
     .locals 16
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # J
 
     move-object/from16 v0, p0
 

@@ -56,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/group/SubGroupBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/SubGroupBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/SubGroupBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -65,8 +64,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/SubGroupBrowseListFragment;Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/SubGroupBrowseListFragment;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/SubGroupBrowseListFragment;->createGoogleGroupsLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/group/SubGroupBrowseListFragment;)Lcom/samsung/contacts/group/SubGroupBrowseListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/SubGroupBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/SubGroupBrowseListFragment;->mAdapter:Lcom/samsung/contacts/group/SubGroupBrowseListAdapter;
 
@@ -86,7 +82,6 @@
 
 .method private createGoogleGroupsLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -235,7 +230,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -246,9 +240,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f03012e
 
@@ -297,9 +288,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -348,7 +336,6 @@
 
 .method public setGroupInfo(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/SubGroupBrowseListFragment;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -357,7 +344,6 @@
 
 .method public setListener(Lcom/samsung/contacts/group/SubGroupBrowseListFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/SubGroupBrowseListFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/SubGroupBrowseListFragment;->mListener:Lcom/samsung/contacts/group/SubGroupBrowseListFragment$Listener;
 

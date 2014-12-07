@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/contacts/common/list/ContactEntryListAdapter$1;Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter$1$1;->this$1:Lcom/android/contacts/common/list/ContactEntryListAdapter$1;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public onDrawShadow(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter$1$1;->val$photoView:Landroid/view/View;
 
@@ -49,8 +47,6 @@
 
 .method public onProvideShadowMetrics(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 4
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     iget-object v2, p0, Lcom/android/contacts/common/list/ContactEntryListAdapter$1$1;->val$photoView:Landroid/view/View;
 

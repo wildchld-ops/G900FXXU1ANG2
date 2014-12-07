@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p2    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar$RedemptionListener;-><init>(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;)V
 
@@ -58,7 +56,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar$RedemptionListener;->this$0:Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
 
@@ -79,7 +76,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/PromoCode$RedeemCodeResponse;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/PromoCode$RedeemCodeResponse;
 
     const/4 v3, 0x3
 
@@ -234,7 +230,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/PromoCode$RedeemCodeResponse;
 

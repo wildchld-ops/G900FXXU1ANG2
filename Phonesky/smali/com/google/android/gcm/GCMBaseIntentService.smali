@@ -84,8 +84,6 @@
 
 .method private constructor <init>(Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/IntentService;-><init>(Ljava/lang/String;)V
 
@@ -96,7 +94,6 @@
 
 .method protected varargs constructor <init>([Ljava/lang/String;)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     invoke-static {p1}, Lcom/google/android/gcm/GCMBaseIntentService;->getName([Ljava/lang/String;)Ljava/lang/String;
 
@@ -109,7 +106,6 @@
 
 .method private static getName(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -172,7 +168,6 @@
 
 .method private static getName([Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # [Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/gcm/GCMRegistrar;->getFlatSenderIds([Ljava/lang/String;)Ljava/lang/String;
 
@@ -187,8 +182,6 @@
 
 .method private handleRegistration(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v12, "registration_id"
 
@@ -461,9 +454,6 @@
 
 .method static runIntentInService(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     sget-object v2, Lcom/google/android/gcm/GCMBaseIntentService;->LOCK:Ljava/lang/Object;
 
@@ -528,7 +518,6 @@
 # virtual methods
 .method protected getSenderIds(Landroid/content/Context;)[Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/google/android/gcm/GCMBaseIntentService;->mSenderIds:[Ljava/lang/String;
 
@@ -550,8 +539,6 @@
 
 .method protected onDeletedMessages(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     return-void
 .end method
@@ -561,7 +548,6 @@
 
 .method public final onHandleIntent(Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/android/gcm/GCMBaseIntentService;->getApplicationContext()Landroid/content/Context;
@@ -934,8 +920,6 @@
 
 .method protected onRecoverableError(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

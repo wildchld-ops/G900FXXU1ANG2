@@ -23,7 +23,6 @@
 
 .method private getCorpusName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/widget/WidgetConfigurationActivity;->getIntent()Landroid/content/Intent;
 
@@ -58,7 +57,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

@@ -36,9 +36,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/library/Libraries;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p3    # Lcom/google/android/finsky/library/Libraries;
 
     const/4 v3, 0x0
 
@@ -298,7 +295,6 @@
 
 .method public static canRemoveFromLibrary(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 8
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v5, 0x1
 
@@ -388,7 +384,6 @@
 
 .method private findAccountInOwners(Ljava/lang/String;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -449,8 +444,6 @@
 
 .method protected static findCertificateMatch([Ljava/lang/String;[Lcom/google/android/finsky/protos/DocDetails$CertificateSet;)Z
     .locals 10
-    .param p0    # [Ljava/lang/String;
-    .param p1    # [Lcom/google/android/finsky/protos/DocDetails$CertificateSet;
 
     const/4 v7, 0x0
 
@@ -532,10 +525,6 @@
 
 .method public static getInstallAccount(Ljava/lang/String;Landroid/accounts/Account;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/library/Libraries;)Landroid/accounts/Account;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p3    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-virtual {p3, p0}, Lcom/google/android/finsky/library/Libraries;->getAppOwners(Ljava/lang/String;)Ljava/util/List;
 
@@ -617,7 +606,6 @@
 
 .method private static getRefundAccount(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/util/List;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -643,8 +631,6 @@
 
 .method static internalGetRefundAccount(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Ljava/util/List;J)Ljava/lang/String;
     .locals 9
-    .param p0    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -724,10 +710,6 @@
 # virtual methods
 .method public getAppDetailsAccount(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/library/Libraries;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p4    # Lcom/google/android/finsky/library/Libraries;
 
     invoke-virtual {p3}, Lcom/google/android/finsky/appstate/AppStates;->getInstallerDataStore()Lcom/google/android/finsky/appstate/InstallerDataStore;
 
@@ -816,7 +798,6 @@
 
 .method public hasConversionUpdateAvailable(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 5
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v1, 0x1
 
@@ -890,7 +871,6 @@
 
 .method public hasUpdateAvailable(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/AppActionAnalyzer;->isInstalledOwnedPackage:Z
 

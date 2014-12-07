@@ -148,7 +148,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$Listener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mListener:Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$Listener;
 
@@ -157,7 +156,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mGroupType:I
 
@@ -166,7 +164,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->refreshSelectAllState()V
 
@@ -175,7 +172,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -184,7 +180,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -193,8 +188,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->updateSelectAllState(Z)V
 
@@ -203,7 +196,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->isActionModeAvailable()Z
 
@@ -214,8 +206,6 @@
 
 .method static synthetic access$1502(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mIsSelectionMode:Z
 
@@ -224,7 +214,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->addSelectAllHeaderView()V
 
@@ -233,7 +222,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mSelectedDefaultIceIds:Ljava/util/ArrayList;
 
@@ -242,7 +230,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mShouldActionAsText:Z
 
@@ -251,8 +238,6 @@
 
 .method static synthetic access$1802(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mShouldActionAsText:Z
 
@@ -261,7 +246,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->removeSelectAllHeader()V
 
@@ -270,7 +254,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -279,8 +262,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->setAddMemberButtonVisibility(Z)V
 
@@ -289,8 +270,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -299,7 +278,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mActionModeCallback:Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;
 
@@ -308,8 +286,6 @@
 
 .method static synthetic access$2102(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;)Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p1    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mActionModeCallback:Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;
 
@@ -318,7 +294,6 @@
 
 .method static synthetic access$2200(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -327,7 +302,6 @@
 
 .method static synthetic access$2300(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mTotalCount:I
 
@@ -336,7 +310,6 @@
 
 .method static synthetic access$2400(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -345,7 +318,6 @@
 
 .method static synthetic access$2500(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -354,7 +326,6 @@
 
 .method static synthetic access$2600(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -363,7 +334,6 @@
 
 .method static synthetic access$2700(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -372,7 +342,6 @@
 
 .method static synthetic access$2800(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -381,7 +350,6 @@
 
 .method static synthetic access$2900(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -390,7 +358,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -399,7 +366,6 @@
 
 .method static synthetic access$3000(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -408,7 +374,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -417,8 +382,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -427,7 +390,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -436,7 +398,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mFromEmergencyDialer:Z
 
@@ -445,7 +406,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mSelectedContactIds:Ljava/util/ArrayList;
 
@@ -555,7 +515,6 @@
 
 .method private makeACallAndFinishActivity(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_3
 
@@ -733,7 +692,6 @@
 
 .method private setAddMemberButtonVisibility(Z)V
     .locals 4
-    .param p1    # Z
 
     const v3, 0x7f08002b
 
@@ -784,7 +742,6 @@
 
 .method private setSearchBarVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->getView()Landroid/view/View;
 
@@ -813,7 +770,6 @@
 
 .method private showSearchProgress(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mSearchProgress:Landroid/view/View;
 
@@ -834,7 +790,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mSelectAllHeaderView:Landroid/view/View;
 
@@ -860,7 +815,6 @@
 
 .method private updateSelectAllState(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1203,8 +1157,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v1, 0x7f0300b8
 
@@ -1287,7 +1239,6 @@
 
 .method public loadGroup(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 8
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     const/4 v7, 0x5
 
@@ -1497,7 +1448,6 @@
 
 .method public loadGroupWithReload(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->loadGroup(Lcom/samsung/contacts/group/GroupInfo;)V
 
@@ -1508,7 +1458,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1616,9 +1565,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -1638,8 +1584,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -1773,8 +1717,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # J
 
     iget-boolean v4, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mFromEmergencyDialer:Z
 
@@ -1856,9 +1798,6 @@
 
 .method public onItemLongClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)Z
     .locals 3
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1909,7 +1848,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 4
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1998,8 +1936,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -2010,7 +1946,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v1, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mProgress:Ljava/lang/ref/WeakReference;
 
@@ -2099,7 +2034,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -2162,8 +2096,6 @@
 
 .method public setEmergencyContactsInfo(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mFromEmergencyDialer:Z
 
@@ -2192,7 +2124,6 @@
 
 .method public setListener(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mListener:Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$Listener;
 
@@ -2201,7 +2132,6 @@
 
 .method public showActionAsText(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;->mShouldActionAsText:Z
 
@@ -2210,8 +2140,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v3, 0x1
 
@@ -2401,7 +2329,6 @@
 
 .method public showProgress(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/lang/ref/WeakReference;
 

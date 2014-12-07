@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -58,10 +56,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -90,8 +84,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/CarrierText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -45,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/MSimCarrierText;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimCarrierText;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText;->mPlmn:[Ljava/lang/CharSequence;
 
@@ -54,7 +50,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/MSimCarrierText;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimCarrierText;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText;->mSpn:[Ljava/lang/CharSequence;
 
@@ -63,7 +58,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/MSimCarrierText;)[Lcom/android/internal/telephony/IccCardConstants$State;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimCarrierText;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimCarrierText;->mSimState:[Lcom/android/internal/telephony/IccCardConstants$State;
 
@@ -150,9 +144,6 @@
 
 .method protected updateCarrierText([Lcom/android/internal/telephony/IccCardConstants$State;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 10
-    .param p1    # [Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # [Ljava/lang/CharSequence;
-    .param p3    # [Ljava/lang/CharSequence;
 
     const v9, 0x7f0600d8
 

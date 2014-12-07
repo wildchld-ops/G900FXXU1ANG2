@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +85,6 @@
 
 .method public addCallMultiSim(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -138,7 +136,6 @@
 
 .method public answerCall(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -190,7 +187,6 @@
 
 .method public answerCallWithSpeaker(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -242,8 +238,6 @@
 
 .method public answerMessage(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -421,7 +415,6 @@
 
 .method public disconnectCall(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -473,7 +466,6 @@
 
 .method public displayTPhone(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -525,7 +517,6 @@
 
 .method public explicitCallTransfer(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -743,7 +734,6 @@
 
 .method public getNameFromFDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -799,7 +789,6 @@
 
 .method public getNameFromSDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -908,7 +897,6 @@
 
 .method public hangUp(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -960,8 +948,6 @@
 
 .method public hold(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1022,7 +1008,6 @@
 
 .method public holdMultiSim(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1614,7 +1599,6 @@
 
 .method public isWBMode(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1726,7 +1710,6 @@
 
 .method public mergeMultiSim(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1778,7 +1761,6 @@
 
 .method public mute(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1837,7 +1819,6 @@
 
 .method public onNewIncomingRcsSession(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1889,8 +1870,6 @@
 
 .method public playDtmfTone(CZ)V
     .locals 5
-    .param p1    # C
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1951,7 +1930,6 @@
 
 .method public postDialCancel(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2003,7 +1981,6 @@
 
 .method public postDialWaitContinue(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2055,9 +2032,6 @@
 
 .method public rejectCall(Lcom/android/services/telephony/common/Call;ZLjava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2144,8 +2118,6 @@
 
 .method public requestModifyCall(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2199,8 +2171,6 @@
 
 .method public requestRcsObserver(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2254,8 +2224,6 @@
 
 .method public respondModifyCall(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2316,8 +2284,6 @@
 
 .method public sendMessage(Lcom/android/services/telephony/common/Call;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2390,8 +2356,6 @@
 
 .method public sendSecBluetoothATCommand(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2445,7 +2409,6 @@
 
 .method public separateCall(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2497,7 +2460,6 @@
 
 .method public setAudioMode(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2598,7 +2560,6 @@
 
 .method public setCallProtectionValue(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2657,7 +2618,6 @@
 
 .method public setCurrentVisibleSimId(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2709,8 +2669,6 @@
 
 .method public setEndCallNumberForLGTRAD(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2775,7 +2733,6 @@
 
 .method public setShowingIncomingPopup(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2834,7 +2791,6 @@
 
 .method public setSoundPath(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2886,7 +2842,6 @@
 
 .method public setSystemBarNavigationEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2994,7 +2949,6 @@
 
 .method public speaker(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3200,7 +3154,6 @@
 
 .method public swapMultiSim(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

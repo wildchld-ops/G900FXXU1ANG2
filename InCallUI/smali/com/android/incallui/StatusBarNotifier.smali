@@ -53,8 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/incallui/ContactInfoCache;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/incallui/ContactInfoCache;
 
     const/4 v1, 0x0
 
@@ -111,10 +109,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/StatusBarNotifier;Lcom/android/services/telephony/common/Call;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/StatusBarNotifier;
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/incallui/StatusBarNotifier;->buildAndSendNotification(Lcom/android/services/telephony/common/Call;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
 
@@ -123,9 +117,6 @@
 
 .method private declared-synchronized buildAndSendNotification(Lcom/android/services/telephony/common/Call;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 20
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -512,12 +503,6 @@
 
 .method private checkForChangeAndSaveData(IILandroid/graphics/Bitmap;Ljava/lang/String;IZ)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Z
 
     const/4 v3, 0x0
 
@@ -727,9 +712,6 @@
 
 .method private configureFullScreenIntent(Landroid/app/Notification;Landroid/app/PendingIntent;Lcom/android/services/telephony/common/Call;)V
     .locals 3
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Lcom/android/services/telephony/common/Call;
 
     const/4 v2, 0x1
 
@@ -792,7 +774,6 @@
 
 .method private getCallToShow(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # Lcom/android/incallui/CallList;
 
     if-nez p1, :cond_1
 
@@ -825,7 +806,6 @@
 
 .method private getContentString(Lcom/android/services/telephony/common/Call;)I
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const v0, 0x7f07008b
 
@@ -883,8 +863,6 @@
 
 .method private getContentTitle(Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -967,7 +945,6 @@
 
 .method private getIconToDisplay(Lcom/android/services/telephony/common/Call;)I
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-virtual {p1}, Lcom/android/services/telephony/common/Call;->getState()I
 
@@ -1037,8 +1014,6 @@
 
 .method private getLargeIconToDisplay(Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p2    # Z
 
     const v5, 0x7f0c022f
 
@@ -1136,8 +1111,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "StatusBarNotifier"
 
@@ -1199,8 +1172,6 @@
 
 .method private showNotification(Lcom/android/services/telephony/common/Call;Z)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -1311,9 +1282,6 @@
 
 .method private updateInCallNotification(ZLcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p3    # Lcom/android/incallui/CallList;
 
     const/4 v3, 0x0
 
@@ -1480,9 +1448,6 @@
 # virtual methods
 .method public makeNotification(Lcom/android/services/telephony/common/Call;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p3    # Z
 
     new-instance v0, Lcom/android/incallui/StatusBarNotifier$2;
 
@@ -1593,7 +1558,6 @@
 
 .method public needToShowAsFullScreen(Lcom/android/incallui/CallList;)Z
     .locals 8
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v5, 0x1
 
@@ -1918,14 +1882,12 @@
 
 .method public onCoverStatusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/incallui/InCallPresenter;->getInstance()Lcom/android/incallui/InCallPresenter;
 
@@ -1946,8 +1908,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const-string v0, "onStateChange"
 
@@ -1960,8 +1920,6 @@
 
 .method public updateNotification(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const-string v0, "updateNotification "
 

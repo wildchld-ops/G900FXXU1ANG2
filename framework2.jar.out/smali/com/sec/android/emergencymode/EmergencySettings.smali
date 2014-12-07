@@ -18,8 +18,6 @@
 
 .method private static get(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -154,9 +152,6 @@
 
 .method public static getBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p0, p1}, Lcom/sec/android/emergencymode/EmergencySettings;->get(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -177,9 +172,6 @@
 
 .method public static getDouble(Landroid/content/ContentResolver;Ljava/lang/String;D)D
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     invoke-static {p0, p1}, Lcom/sec/android/emergencymode/EmergencySettings;->get(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -225,8 +217,6 @@
 
 .method public static getEmergencyNumber(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -430,9 +420,6 @@
 
 .method public static getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p0, p1}, Lcom/sec/android/emergencymode/EmergencySettings;->get(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -478,9 +465,6 @@
 
 .method public static getLong(Landroid/content/ContentResolver;Ljava/lang/String;J)J
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-static {p0, p1}, Lcom/sec/android/emergencymode/EmergencySettings;->get(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -526,9 +510,6 @@
 
 .method public static getString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/sec/android/emergencymode/EmergencySettings;->get(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -547,7 +528,6 @@
 
 .method private static makeEmergencyNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -628,9 +608,6 @@
 
 .method public static put(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 

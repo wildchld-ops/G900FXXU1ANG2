@@ -66,9 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/ActivityStackSupervisor;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityManagerService;
-    .param p3    # Lcom/android/server/am/ActivityStackSupervisor;
 
     const/16 v1, 0xa
 
@@ -174,7 +171,6 @@
 
 .method private getBackgroundTasks(I)Ljava/util/List;
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -399,7 +395,6 @@
 
 .method private final killProcessTask(Lcom/android/server/am/TaskRecord;)V
     .locals 10
-    .param p1    # Lcom/android/server/am/TaskRecord;
 
     move-object v5, p1
 
@@ -532,8 +527,6 @@
 
 .method private killUnneededProcessLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -647,7 +640,6 @@
 
 .method private recentTaskForIdLocked(I)Lcom/android/server/am/TaskRecord;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/am/SmartTaskControler;->mAms:Lcom/android/server/am/ActivityManagerService;
 
@@ -698,7 +690,6 @@
 # virtual methods
 .method public final cleanUpTask(I)V
     .locals 9
-    .param p1    # I
 
     sget-boolean v6, Lcom/android/server/am/SmartTaskControler;->DEBUG:Z
 
@@ -1017,7 +1008,6 @@
 
 .method public isHomeProcessDead(Lcom/android/server/am/ProcessRecord;)Z
     .locals 10
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     const/4 v7, 0x0
 
@@ -1339,8 +1329,6 @@
 
 .method public removeTask(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 

@@ -54,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fmm/RemoteControls;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fmm/RemoteControls;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     iget-object v0, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -74,7 +72,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/fmm/RemoteControls;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-direct {p0}, Lcom/android/settings/fmm/RemoteControls;->setServiceFlagOn()I
 
@@ -85,7 +82,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/fmm/RemoteControls;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -96,7 +92,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fmm/RemoteControls;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     iget-object v0, p0, Lcom/android/settings/fmm/RemoteControls;->mSharedPreferences:Landroid/content/SharedPreferences;
 
@@ -105,7 +100,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/fmm/RemoteControls;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -116,7 +110,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/fmm/RemoteControls;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-direct {p0}, Lcom/android/settings/fmm/RemoteControls;->setServiceFlagOff()I
 
@@ -127,7 +120,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/fmm/RemoteControls;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -138,7 +130,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/fmm/RemoteControls;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-direct {p0}, Lcom/android/settings/fmm/RemoteControls;->getServiceFlag()I
 
@@ -149,7 +140,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/fmm/RemoteControls;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls;
 
     invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -171,8 +161,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_3
 
@@ -415,7 +403,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -497,9 +484,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f0401ba
 

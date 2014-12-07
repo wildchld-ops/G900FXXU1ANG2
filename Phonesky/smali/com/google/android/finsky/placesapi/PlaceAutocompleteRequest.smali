@@ -14,8 +14,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -54,7 +54,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;
 
     iget-object v1, p1, Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;->entry:[Lcom/google/android/finsky/protos/Details$BulkDetailsEntry;
 
@@ -119,7 +118,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Details$BulkDetailsResponse;
 

@@ -1385,7 +1385,7 @@ Możesz także wyświetlać i ukrywać uchwyt wielu okien, naciskając i przytrz
     <string name="usb_tethering_errored_subtext">Błąd routera USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Nie można wyłączyć routera USB podczas korzystania z aplikacji SideSync. Wyłączenie routera USB spowoduje wyłączenie aplikacji SideSync</string>
     <string name="usb_tethering_off_during_sidesync_popup">Nie można włączyć routera USB podczas korzystania z aplikacji SideSync. Włączenie routera USB spowoduje wyłączenie aplikacji SideSync</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Router Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Router Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Udostępnianie poł. internet. tego urządzenia…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Internet udostępniono urządzeniom: 1</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Internet udostępniono urządzeniom: %d</string>

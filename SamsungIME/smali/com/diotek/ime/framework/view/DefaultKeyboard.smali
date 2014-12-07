@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -94,9 +92,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -153,11 +148,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;II)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -214,13 +204,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;IIZZ)V
     .locals 16
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/diotek/ime/framework/view/Keyboard;-><init>(Landroid/content/Context;ILjava/lang/CharSequence;II)V
 
@@ -651,15 +634,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;[IIIZZ)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # [Landroid/graphics/drawable/Drawable;
-    .param p5    # [I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Z
 
     move-object v0, p0
 
@@ -845,14 +819,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;[Ljava/lang/String;IIZZ)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # Z
 
     move-object v0, p0
 
@@ -1056,16 +1022,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;[Ljava/lang/String;[Landroid/graphics/drawable/Drawable;[IIIZZ)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [Landroid/graphics/drawable/Drawable;
-    .param p6    # [I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
-    .param p10    # Z
 
     move-object v1, p0
 
@@ -1353,15 +1309,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/String;IIZZ)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Z
 
     move-object v1, p0
 
@@ -1647,7 +1594,6 @@
 
 .method public getKey(I)Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/view/Keyboard;->getKeys()Ljava/util/List;
 
@@ -1724,7 +1670,6 @@
 
 .method public getShortCutPhrasePrefKey(I)Ljava/lang/String;
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -1911,7 +1856,6 @@
 
 .method public setLandscape(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/DefaultKeyboard;->mIsLandscape:Z
 
@@ -1920,7 +1864,6 @@
 
 .method public setPopupMiniKeyboardType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/DefaultKeyboard;->mPopupMiniKeyboardType:I
 
@@ -1929,10 +1872,6 @@
 
 .method public setUseCustomArea(ZZZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/DefaultKeyboard;->mIsTabletModel:Z
 
@@ -1947,7 +1886,6 @@
 
 .method public setUseCustomArea([Z)V
     .locals 0
-    .param p1    # [Z
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/DefaultKeyboard;->mUseCustomArea:[Z
 

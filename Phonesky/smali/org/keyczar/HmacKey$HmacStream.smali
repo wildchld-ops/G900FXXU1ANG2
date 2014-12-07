@@ -127,7 +127,6 @@
 
 .method public sign(Ljava/nio/ByteBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
 
     iget-object v0, p0, Lorg/keyczar/HmacKey$HmacStream;->hmac:Ljavax/crypto/Mac;
 
@@ -142,7 +141,6 @@
 
 .method public updateSign(Ljava/nio/ByteBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
 
     iget-object v0, p0, Lorg/keyczar/HmacKey$HmacStream;->hmac:Ljavax/crypto/Mac;
 
@@ -153,7 +151,6 @@
 
 .method public updateVerify(Ljava/nio/ByteBuffer;)V
     .locals 0
-    .param p1    # Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1}, Lorg/keyczar/HmacKey$HmacStream;->updateSign(Ljava/nio/ByteBuffer;)V
 
@@ -162,7 +159,6 @@
 
 .method public verify(Ljava/nio/ByteBuffer;)Z
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 

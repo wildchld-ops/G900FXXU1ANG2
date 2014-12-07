@@ -21,8 +21,6 @@
 # direct methods
 .method protected constructor <init>(Lorg/apache/http/impl/conn/SingleClientConnManager;Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 0
-    .param p2    # Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;
-    .param p3    # Lorg/apache/http/conn/routing/HttpRoute;
 
     iput-object p1, p0, Lorg/apache/http/impl/conn/SingleClientConnManager$ConnAdapter;->this$0:Lorg/apache/http/impl/conn/SingleClientConnManager;
 

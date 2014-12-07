@@ -139,7 +139,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SPenSettingsMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SPenSettingsMenu;
 
     invoke-direct {p0}, Lcom/android/settings/SPenSettingsMenu;->updateState()V
 
@@ -148,7 +147,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SPenSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/SPenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/SPenSettingsMenu;->mPenAirViewSwitchPref:Landroid/preference/SwitchPreferenceScreen;
 
@@ -157,7 +155,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SPenSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/SPenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/SPenSettingsMenu;->mAirCommandSwitchPref:Landroid/preference/SwitchPreferenceScreen;
 
@@ -166,7 +163,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SPenSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/SPenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/SPenSettingsMenu;->mDirectPenInputSwitchPref:Landroid/preference/SwitchPreferenceScreen;
 
@@ -175,7 +171,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/SPenSettingsMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/SPenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/SPenSettingsMenu;->mContext:Landroid/content/Context;
 
@@ -184,7 +179,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/SPenSettingsMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SPenSettingsMenu;
 
     invoke-direct {p0}, Lcom/android/settings/SPenSettingsMenu;->showAllOptionDisabledDialog()V
 
@@ -193,7 +187,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/SPenSettingsMenu;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SPenSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/SPenSettingsMenu;->mSoundHapticFeedbackCheckPref:Landroid/preference/CheckBoxPreference;
 
@@ -359,7 +352,6 @@
 
 .method private makeTalkBackMagnificationDisablePopup(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const v8, 0x7f09090f
 
@@ -568,7 +560,6 @@
 
 .method private sendLossPreventionAlert(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1131,7 +1122,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1573,8 +1563,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1612,7 +1600,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1680,8 +1667,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v6, 0x1
 
@@ -2092,8 +2077,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x0
 

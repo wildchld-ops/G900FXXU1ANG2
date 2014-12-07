@@ -114,9 +114,6 @@
 
 .method private addTypeAdaptersForDate(Ljava/lang/String;IILjava/util/List;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -271,8 +268,6 @@
 
 .method public registerTypeAdapter(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/GsonBuilder;
     .locals 4
-    .param p1    # Ljava/lang/reflect/Type;
-    .param p2    # Ljava/lang/Object;
 
     instance-of v1, p2, Lcom/google/gson/JsonSerializer;
 

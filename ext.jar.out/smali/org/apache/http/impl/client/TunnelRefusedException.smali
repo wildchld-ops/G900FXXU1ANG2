@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lorg/apache/http/HttpResponse;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/HttpResponse;
 
     invoke-direct {p0, p1}, Lorg/apache/http/HttpException;-><init>(Ljava/lang/String;)V
 

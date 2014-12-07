@@ -18,7 +18,6 @@
 
 .method private isIndianUnicodeBlock(Ljava/lang/Character$UnicodeBlock;)Z
     .locals 1
-    .param p1    # Ljava/lang/Character$UnicodeBlock;
 
     sget-object v0, Ljava/lang/Character$UnicodeBlock;->DEVANAGARI:Ljava/lang/Character$UnicodeBlock;
 
@@ -72,9 +71,6 @@
 # virtual methods
 .method public doApply(Ljava/lang/CharSequence;Ljava/lang/String;I)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, -0x1
 

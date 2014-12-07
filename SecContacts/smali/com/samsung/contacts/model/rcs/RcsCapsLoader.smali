@@ -45,8 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
@@ -242,7 +240,6 @@
 # virtual methods
 .method public deliverResult(Lcom/samsung/contacts/model/rcs/RcsCaps;)V
     .locals 3
-    .param p1    # Lcom/samsung/contacts/model/rcs/RcsCaps;
 
     invoke-virtual {p0}, Landroid/content/Loader;->isReset()Z
 
@@ -324,7 +321,6 @@
 
 .method public bridge synthetic deliverResult(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/model/rcs/RcsCaps;
 
@@ -335,7 +331,6 @@
 
 .method public getRcsCapsItems(Landroid/database/Cursor;)Lcom/samsung/contacts/model/rcs/RcsCapsItem;
     .locals 25
-    .param p1    # Landroid/database/Cursor;
 
     const-string v2, "feature_tag"
 
@@ -731,7 +726,6 @@
 
 .method readDataFromQueryOwn(Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Landroid/database/Cursor;
 
     sget-object v4, Lcom/samsung/contacts/model/rcs/RcsCapsLoader;->TAG:Ljava/lang/String;
 

@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/List;Landroid/content/Context;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -68,9 +66,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     move-object v0, p3
 
@@ -95,8 +90,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/ScreenshotsActivity$ImagePagerAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -129,8 +122,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     if-ne p1, p2, :cond_0
 

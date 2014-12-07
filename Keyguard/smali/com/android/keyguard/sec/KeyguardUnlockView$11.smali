@@ -36,7 +36,6 @@
 # virtual methods
 .method public showShortcutHelpText(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardUnlockView$11;->this$0:Lcom/android/keyguard/sec/KeyguardUnlockView;
 

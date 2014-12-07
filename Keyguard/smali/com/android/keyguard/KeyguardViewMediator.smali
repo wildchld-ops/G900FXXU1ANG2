@@ -184,8 +184,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -996,8 +994,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/KeyguardViewMediator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardViewMediator;->mSwitchingUser:Z
 
@@ -1006,8 +1002,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardViewMediator;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->resetStateLocked(Landroid/os/Bundle;)V
 
@@ -1016,7 +1010,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/KeyguardViewMediator;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mScreenOffByProxSensor:Z
 
@@ -1025,8 +1018,6 @@
 
 .method static synthetic access$1102(Lcom/android/keyguard/KeyguardViewMediator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardViewMediator;->mSuppressNextLockSound:Z
 
@@ -1035,8 +1026,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/KeyguardViewMediator;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->doKeyguardLocked(Landroid/os/Bundle;)V
 
@@ -1045,7 +1034,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/KeyguardViewMediator;)Lcom/android/keyguard/KeyguardUpdateMonitor;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mUpdateMonitor:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
@@ -1054,7 +1042,6 @@
 
 .method static synthetic access$1400(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->doKeyguardLocked()V
 
@@ -1063,7 +1050,6 @@
 
 .method static synthetic access$1500(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->userActivity()V
 
@@ -1072,7 +1058,6 @@
 
 .method static synthetic access$1600(Lcom/android/keyguard/KeyguardViewMediator;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mHandler:Landroid/os/Handler;
 
@@ -1081,7 +1066,6 @@
 
 .method static synthetic access$1700(Lcom/android/keyguard/KeyguardViewMediator;)Lcom/android/keyguard/KeyguardViewManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mKeyguardViewManager:Lcom/android/keyguard/KeyguardViewManager;
 
@@ -1090,8 +1074,6 @@
 
 .method static synthetic access$1802(Lcom/android/keyguard/KeyguardViewMediator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardViewMediator;->mKeyguardDonePending:Z
 
@@ -1100,7 +1082,6 @@
 
 .method static synthetic access$1900(Lcom/android/keyguard/KeyguardViewMediator;)Lcom/android/keyguard/KeyguardDisplayManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mKeyguardDisplayManager:Lcom/android/keyguard/KeyguardDisplayManager;
 
@@ -1109,7 +1090,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->adjustStatusBarLocked()V
 
@@ -1118,9 +1098,6 @@
 
 .method static synthetic access$2000(Lcom/android/keyguard/KeyguardViewMediator;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/KeyguardViewMediator;->handleKeyguardDone(ZZ)V
 
@@ -1129,7 +1106,6 @@
 
 .method static synthetic access$2100(Lcom/android/keyguard/KeyguardViewMediator;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mIsUsbAlreadyConnected:Z
 
@@ -1138,8 +1114,6 @@
 
 .method static synthetic access$2102(Lcom/android/keyguard/KeyguardViewMediator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardViewMediator;->mIsUsbAlreadyConnected:Z
 
@@ -1148,8 +1122,6 @@
 
 .method static synthetic access$2202(Lcom/android/keyguard/KeyguardViewMediator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardViewMediator;->mNeedReenableAdbAfterUnlock:Z
 
@@ -1158,7 +1130,6 @@
 
 .method static synthetic access$2300(Lcom/android/keyguard/KeyguardViewMediator;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->isAdbEnabled()Z
 
@@ -1169,8 +1140,6 @@
 
 .method static synthetic access$2400(Lcom/android/keyguard/KeyguardViewMediator;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->setAdbModeEnabled(Z)V
 
@@ -1179,7 +1148,6 @@
 
 .method static synthetic access$2600(Lcom/android/keyguard/KeyguardViewMediator;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mPM:Landroid/os/PowerManager;
 
@@ -1188,7 +1156,6 @@
 
 .method static synthetic access$2700(Lcom/android/keyguard/KeyguardViewMediator;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mDelayedShowingSequence:I
 
@@ -1197,7 +1164,6 @@
 
 .method static synthetic access$2800(Lcom/android/keyguard/KeyguardViewMediator;)Lcom/samsung/android/sdk/cover/ScoverManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
 
@@ -1206,7 +1172,6 @@
 
 .method static synthetic access$2900(Lcom/android/keyguard/KeyguardViewMediator;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->isFactoryMode()Z
 
@@ -1217,7 +1182,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardViewMediator;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
@@ -1226,8 +1190,6 @@
 
 .method static synthetic access$3000(Lcom/android/keyguard/KeyguardViewMediator;Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->isGear1(Landroid/bluetooth/BluetoothDevice;)Z
 
@@ -1238,7 +1200,6 @@
 
 .method static synthetic access$3100(Lcom/android/keyguard/KeyguardViewMediator;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mWearabledevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -1247,8 +1208,6 @@
 
 .method static synthetic access$3102(Lcom/android/keyguard/KeyguardViewMediator;Landroid/bluetooth/BluetoothDevice;)Landroid/bluetooth/BluetoothDevice;
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewMediator;->mWearabledevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -1257,8 +1216,6 @@
 
 .method static synthetic access$3200(Lcom/android/keyguard/KeyguardViewMediator;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->handleShow(Landroid/os/Bundle;)V
 
@@ -1267,7 +1224,6 @@
 
 .method static synthetic access$3300(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->handleHide()V
 
@@ -1276,8 +1232,6 @@
 
 .method static synthetic access$3400(Lcom/android/keyguard/KeyguardViewMediator;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->handleReset(Landroid/os/Bundle;)V
 
@@ -1286,7 +1240,6 @@
 
 .method static synthetic access$3500(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->handleVerifyUnlock()V
 
@@ -1295,7 +1248,6 @@
 
 .method static synthetic access$3600(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->handleNotifyScreenOff()V
 
@@ -1304,8 +1256,6 @@
 
 .method static synthetic access$3700(Lcom/android/keyguard/KeyguardViewMediator;Lcom/android/internal/policy/IKeyguardShowCallback;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Lcom/android/internal/policy/IKeyguardShowCallback;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->handleNotifyScreenOn(Lcom/android/internal/policy/IKeyguardShowCallback;)V
 
@@ -1314,7 +1264,6 @@
 
 .method static synthetic access$3800(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->handleKeyguardDoneDrawing()V
 
@@ -1323,8 +1272,6 @@
 
 .method static synthetic access$3900(Lcom/android/keyguard/KeyguardViewMediator;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->handleSetHidden(Z)V
 
@@ -1333,7 +1280,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/KeyguardViewMediator;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardViewMediator;->checkUnlockEffectVarification()V
 
@@ -1342,8 +1288,6 @@
 
 .method static synthetic access$4000(Lcom/android/keyguard/KeyguardViewMediator;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewMediator;->handleUpdateRSSI(Landroid/os/Bundle;)V
 
@@ -1352,7 +1296,6 @@
 
 .method static synthetic access$4100(Lcom/android/keyguard/KeyguardViewMediator;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mOutOfRangeAlertRunnable:Ljava/lang/Runnable;
 
@@ -1369,7 +1312,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardViewMediator;)Lcom/android/keyguard/sec/KeyguardMultiUserManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mKeyguardMum:Lcom/android/keyguard/sec/KeyguardMultiUserManager;
 
@@ -1378,7 +1320,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardViewMediator;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -1395,7 +1336,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/KeyguardViewMediator;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mScreenOn:Z
 
@@ -1404,7 +1344,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardViewMediator;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewMediator;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mExternallyEnabled:Z
 
@@ -3525,7 +3464,6 @@
 
 .method private handleSetHidden(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3922,7 +3860,6 @@
 
 .method private initCoverManager(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Lcom/samsung/android/sdk/cover/Scover;
 
@@ -4706,7 +4643,6 @@
 
 .method public dispatch(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardViewMediator;->mHandler:Landroid/os/Handler;
 
@@ -4725,7 +4661,6 @@
 
 .method public doKeyguardTimeout(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v2, 0xd
 
@@ -4779,7 +4714,6 @@
 
 .method protected handleDispatchEvent(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mKeyguardViewManager:Lcom/android/keyguard/KeyguardViewManager;
 
@@ -5849,7 +5783,6 @@
 
 .method public removeAdaptiveEvent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
@@ -5864,7 +5797,6 @@
 
 .method public removeContextualEvent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
@@ -5922,9 +5854,6 @@
 
 .method public setAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
@@ -5939,8 +5868,6 @@
 
 .method public setContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
@@ -5955,7 +5882,6 @@
 
 .method public setCurrentUser(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -6310,9 +6236,6 @@
 
 .method public updateAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
@@ -6327,8 +6250,6 @@
 
 .method public updateContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
@@ -6343,7 +6264,6 @@
 
 .method public userActivity(J)V
     .locals 5
-    .param p1    # J
 
     const/4 v4, 0x0
 

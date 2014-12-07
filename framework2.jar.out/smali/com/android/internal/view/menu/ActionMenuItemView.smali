@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -73,8 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -85,9 +82,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v8, 0x1
 
@@ -322,7 +316,6 @@
 # virtual methods
 .method public dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -357,7 +350,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/ActionMenuItemView;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -408,8 +400,6 @@
 
 .method public initialize(Lcom/android/internal/view/menu/MenuItemImpl;I)V
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItemView;->mItemData:Lcom/android/internal/view/menu/MenuItemImpl;
 
@@ -521,7 +511,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenuItemView;->mItemInvoker:Lcom/android/internal/view/menu/MenuBuilder$ItemInvoker;
 
@@ -539,7 +528,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -566,7 +554,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 20
-    .param p1    # Landroid/view/View;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/internal/view/menu/ActionMenuItemView;->hasText()Z
 
@@ -826,7 +813,6 @@
 
 .method public onMagneticUI(Landroid/view/MotionEvent;)V
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v13, 0x1
 
@@ -1069,8 +1055,6 @@
 
 .method protected onMeasure(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v2, p0, Lcom/android/internal/view/menu/ActionMenuItemView;->mIsMultiWindow:Z
 
@@ -1298,7 +1282,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1332,21 +1315,18 @@
 
 .method public setCheckable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setChecked(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setExpandedFormat(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/view/menu/ActionMenuItemView;->mExpandedFormat:Z
 
@@ -1368,7 +1348,6 @@
 
 .method public setHovered(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/internal/view/menu/ActionMenuItemView;->hasText()Z
 
@@ -1387,7 +1366,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 7
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v6, 0x0
 
@@ -1459,7 +1437,6 @@
 
 .method public setItemInvoker(Lcom/android/internal/view/menu/MenuBuilder$ItemInvoker;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder$ItemInvoker;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItemView;->mItemInvoker:Lcom/android/internal/view/menu/MenuBuilder$ItemInvoker;
 
@@ -1468,10 +1445,6 @@
 
 .method public setPadding(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/ActionMenuItemView;->mSavedPaddingLeft:I
 
@@ -1482,15 +1455,12 @@
 
 .method public setShortcut(ZC)V
     .locals 0
-    .param p1    # Z
-    .param p2    # C
 
     return-void
 .end method
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItemView;->mTitle:Ljava/lang/CharSequence;
 

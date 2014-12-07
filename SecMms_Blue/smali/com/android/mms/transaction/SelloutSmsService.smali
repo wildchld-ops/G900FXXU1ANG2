@@ -127,7 +127,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/SelloutSmsService;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/SelloutSmsService;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -136,8 +135,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/transaction/SelloutSmsService;Landroid/telephony/TelephonyManager;)Landroid/telephony/TelephonyManager;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
-    .param p1    # Landroid/telephony/TelephonyManager;
 
     iput-object p1, p0, Lcom/android/mms/transaction/SelloutSmsService;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -146,8 +143,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/SelloutSmsService;I)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SelloutSmsService;->isSelloutNetwork(I)Z
 
@@ -158,8 +153,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/transaction/SelloutSmsService;I)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SelloutSmsService;->isSelloutSim(I)Z
 
@@ -170,7 +163,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/transaction/SelloutSmsService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/SelloutSmsService;->mContext:Landroid/content/Context;
 
@@ -199,8 +191,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/transaction/SelloutSmsService;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SelloutSmsService;->sendSelloutSMS(I)V
 
@@ -209,7 +199,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/transaction/SelloutSmsService;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/SelloutSmsService;->mTelephonyManager2:Landroid/telephony/TelephonyManager;
 
@@ -218,7 +207,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/transaction/SelloutSmsService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SelloutSmsService;
 
     iget v0, p0, Lcom/android/mms/transaction/SelloutSmsService;->mServiceStartId:I
 
@@ -227,7 +215,6 @@
 
 .method private isSelloutNetwork(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -412,7 +399,6 @@
 
 .method private isSelloutSim(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -585,7 +571,6 @@
 
 .method private sendSelloutSMS(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -802,7 +787,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -891,8 +875,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iput p2, p0, Lcom/android/mms/transaction/SelloutSmsService;->mServiceStartId:I
 

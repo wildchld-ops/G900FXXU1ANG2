@@ -65,8 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityManagerService;
 
     const/4 v1, 0x0
 
@@ -150,7 +148,6 @@
 
 .method private getStackBoxByZone(I)Landroid/app/ActivityManager$StackBoxInfo;
     .locals 9
-    .param p1    # I
 
     const/high16 v8, 0x3f800000
 
@@ -534,7 +531,6 @@
 
 .method private getTopTaskIdByZone(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -628,8 +624,6 @@
 
 .method public exchangeTopTaskToZone(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -1027,7 +1021,6 @@
 
 .method public getFrontActivityMultiWindowStyle(I)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/am/MultiWindowFacadeService;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 
@@ -1135,7 +1128,6 @@
 
 .method public getMultiWindowStyle(Landroid/os/IBinder;)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/am/MultiWindowFacadeService;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 
@@ -1226,7 +1218,6 @@
 
 .method public getStackBound(Landroid/os/IBinder;)Landroid/graphics/Rect;
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v2, 0x0
 
@@ -1287,7 +1278,6 @@
 
 .method public getStackBoxPosition(Landroid/os/IBinder;)Landroid/graphics/Point;
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v2, 0x0
 
@@ -1348,7 +1338,6 @@
 
 .method public getStackOriginalBound(Landroid/os/IBinder;)Landroid/graphics/Rect;
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v2, 0x0
 
@@ -1409,7 +1398,6 @@
 
 .method public getZoneBounds(I)Landroid/graphics/Rect;
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1531,7 +1519,6 @@
 
 .method public minimizeAll(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v3, Lcom/android/server/am/MultiWindowFacadeService;->SAFE_DEBUG:Z
 
@@ -1698,7 +1685,6 @@
 
 .method public minimizeWindow(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/am/MultiWindowFacadeService;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 
@@ -1742,8 +1728,6 @@
 
 .method public moveOnlySpecificTaskToFront(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/am/MultiWindowFacadeService;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 
@@ -1795,7 +1779,6 @@
 
 .method public requestSplitPreview(Z)V
     .locals 1
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/server/am/MultiWindowPolicy;->sPreviewSplitEnabled:Z
 
@@ -1808,7 +1791,6 @@
 
 .method public setCenterBarPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v1, p0, Lcom/android/server/am/MultiWindowFacadeService;->mLock:Ljava/lang/Object;
 
@@ -1837,7 +1819,6 @@
 
 .method public setFocusAppByZone(I)V
     .locals 8
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1933,8 +1914,6 @@
 
 .method public setMultiWindowStyle(Landroid/os/IBinder;Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     iget-object v2, p0, Lcom/android/server/am/MultiWindowFacadeService;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 
@@ -1994,7 +1973,6 @@
 
 .method public setMultiWindowTrayOpenState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowFacadeService;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
@@ -2005,7 +1983,6 @@
 
 .method public setPreviewFullAppZone(I)V
     .locals 1
-    .param p1    # I
 
     sget v0, Lcom/android/server/am/MultiWindowPolicy;->sPreviewNormalAppZone:I
 
@@ -2023,8 +2000,6 @@
 
 .method public setStackBound(Landroid/os/IBinder;Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v1, -0x1
 
@@ -2098,7 +2073,6 @@
 
 .method public setWindowManager(Lcom/android/server/wm/WindowManagerService;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
 
     iput-object p1, p0, Lcom/android/server/am/MultiWindowFacadeService;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
@@ -2186,7 +2160,6 @@
 
 .method public updateIsolatedCenterPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowFacadeService;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 

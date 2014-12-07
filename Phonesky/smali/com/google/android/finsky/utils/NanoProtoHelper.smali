@@ -222,7 +222,6 @@
 
 .method public static streamToBytes(Ljava/io/InputStream;)[B
     .locals 5
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

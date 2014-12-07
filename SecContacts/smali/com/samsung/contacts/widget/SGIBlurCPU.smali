@@ -14,8 +14,6 @@
 
 .method public static fastblur(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 42
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 

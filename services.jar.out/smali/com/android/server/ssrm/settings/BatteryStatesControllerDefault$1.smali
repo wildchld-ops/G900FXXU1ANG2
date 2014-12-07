@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault$1;->this$0:Lcom/android/server/ssrm/settings/BatteryStatesControllerDefault;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     sget-boolean v1, Lcom/android/server/ssrm/Monitor;->sIsHeavyAppFg:Z
 

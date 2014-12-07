@@ -59,7 +59,6 @@
 
 .method public setSeqNumber(J)V
     .locals 3
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -111,7 +110,6 @@
 
 .method public setSequenceNumber(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

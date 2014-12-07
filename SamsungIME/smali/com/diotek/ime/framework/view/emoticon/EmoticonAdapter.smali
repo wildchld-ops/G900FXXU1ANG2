@@ -74,8 +74,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/List;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -147,7 +145,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;)Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter$EmoticonAdapterListener;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mEmoticonAdapterListener:Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter$EmoticonAdapterListener;
 
@@ -174,7 +171,6 @@
 
 .method private setClickListener(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     new-instance v0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter$1;
 
@@ -189,9 +185,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x0
 
@@ -458,7 +451,6 @@
 
 .method public setEmoticonAdapterListener(Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter$EmoticonAdapterListener;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter$EmoticonAdapterListener;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mEmoticonAdapterListener:Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter$EmoticonAdapterListener;
 
@@ -467,7 +459,6 @@
 
 .method public setEmoticonHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mItemheight:I
 
@@ -476,7 +467,6 @@
 
 .method public setEmoticonWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mItemwidth:I
 
@@ -485,7 +475,6 @@
 
 .method public setFontSize(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mFontSize:F
 
@@ -494,7 +483,6 @@
 
 .method public setItemBackgroundResId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mItemBackgroundResId:I
 
@@ -503,10 +491,6 @@
 
 .method public setItemMargin(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mItemMarginLeft:I
 
@@ -521,10 +505,6 @@
 
 .method public setItemPadding(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mItemPaddingLeft:I
 
@@ -539,7 +519,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;)V
     .locals 0
-    .param p1    # Landroid/graphics/Typeface;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/emoticon/EmoticonAdapter;->mTypeface:Landroid/graphics/Typeface;
 

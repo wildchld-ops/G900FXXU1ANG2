@@ -125,9 +125,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/PlugInShootingModesStorage;Landroid/content/Context;Ljava/lang/String;)Landroid/content/res/Resources;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/PlugInShootingModesStorage;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->getPackageResources(Landroid/content/Context;Ljava/lang/String;)Landroid/content/res/Resources;
 
@@ -138,8 +135,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/PlugInShootingModesStorage;Ljava/util/HashMap;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/PlugInShootingModesStorage;
-    .param p1    # Ljava/util/HashMap;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->setImagesCache(Ljava/util/HashMap;)V
 
@@ -148,7 +143,6 @@
 
 .method private declared-synchronized addAutoMode(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -215,8 +209,6 @@
 
 .method public static checkShootingModeVersion(ILjava/lang/String;)Lcom/sec/android/app/camera/PlugInShootingModesStorage$VersionErrors;
     .locals 5
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -376,8 +368,6 @@
 
 .method private getBitmap(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->mCachedImagesMap:Ljava/util/HashMap;
 
@@ -410,8 +400,6 @@
 
 .method public static getCachedBitmap(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {}, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/PlugInShootingModesStorage;
 
@@ -426,7 +414,6 @@
 
 .method private declared-synchronized getCameraShootingModeOrder(Lcom/sec/android/app/camera/Camera;Ljava/util/HashSet;)Ljava/lang/String;
     .locals 12
-    .param p1    # Lcom/sec/android/app/camera/Camera;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -682,8 +669,6 @@
 
 .method public static getMode(ILjava/lang/String;)Lcom/sec/android/app/camera/PlugInShootingModesStorage$PlugInShootingMode;
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/PlugInShootingModesStorage;
 
@@ -811,8 +796,6 @@
 
 .method private declared-synchronized getPackageResources(Landroid/content/Context;Ljava/lang/String;)Landroid/content/res/Resources;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -942,8 +925,6 @@
 
 .method public static getResources(Landroid/content/Context;Ljava/lang/String;)Landroid/content/res/Resources;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/PlugInShootingModesStorage;
 
@@ -958,8 +939,6 @@
 
 .method public static isShootingModeAvailable(ILjava/lang/String;)Z
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->getMode(ILjava/lang/String;)Lcom/sec/android/app/camera/PlugInShootingModesStorage$PlugInShootingMode;
 
@@ -980,8 +959,6 @@
 
 .method public static loadExternalLibrary(ILjava/lang/String;)V
     .locals 5
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "PlugInShootingModesStorage"
 
@@ -1185,7 +1162,6 @@
 
 .method public getBackCameraShootingModeOrder(Lcom/sec/android/app/camera/Camera;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -1210,7 +1186,6 @@
 
 .method public declared-synchronized getExternalModes(I)Ljava/util/Map;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1271,7 +1246,6 @@
 
 .method public getFrontCameraShootingModeOrder(Lcom/sec/android/app/camera/Camera;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -1296,7 +1270,6 @@
 
 .method public declared-synchronized getModesListsAt(I)Ljava/util/Map$Entry;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1472,7 +1445,6 @@
 
 .method public declared-synchronized setExternalModes(Landroid/content/Context;Landroid/util/SparseArray;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

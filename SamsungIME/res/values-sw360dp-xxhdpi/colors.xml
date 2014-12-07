@@ -30,13 +30,13 @@
     <color name="tutorial_helptext_color">#ff1e1e1e</color>
     <color name="hwr_popup_guide_text_color">#fff5f5f5</color>
     <color name="hwr_popup_guide_sub_text_color">#ff262626</color>
+    <item type="color" name="APKTOOL_DUMMY_0046">false</item>
     <color name="pressedkey_extra_labelcolor">#ff383838</color>
     <color name="pressed_numberkey_extra_labelcolor">#ff122438</color>
     <color name="numberkey_extra_labelcolor">#7f000000</color>
     <color name="phonepad_text_labelcolor">#7f000000</color>
     <color name="phonepad_text_labelcolor_press">#7f000000</color>
     <color name="phonepad_month_number_text_labelcolor">#ff3c3c3c</color>
-    <item type="color" name="APKTOOL_DUMMY_0046">false</item>
     <item type="color" name="APKTOOL_DUMMY_004d">false</item>
     <item type="color" name="APKTOOL_DUMMY_004e">false</item>
     <item type="color" name="APKTOOL_DUMMY_004f">false</item>

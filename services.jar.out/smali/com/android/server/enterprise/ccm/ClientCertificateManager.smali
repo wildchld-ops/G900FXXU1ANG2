@@ -91,7 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x1
 
@@ -308,8 +307,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/ccm/ClientCertificateManager;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/ccm/ClientCertificateManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->registerPersonaObserver(I)V
 
@@ -318,8 +315,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/ccm/ClientCertificateManager;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/ccm/ClientCertificateManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->unregisterPersonaObserver(I)V
 
@@ -328,10 +323,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/ccm/ClientCertificateManager;IZZ)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/ccm/ClientCertificateManager;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->updateLockStatus(IZZ)Z
 
@@ -342,8 +333,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/ccm/ClientCertificateManager;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/ccm/ClientCertificateManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->deleteCertificateProfile(I)Z
 
@@ -354,8 +343,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/ccm/ClientCertificateManager;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/ccm/ClientCertificateManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->deleteCCMProfile(I)Z
 
@@ -402,9 +389,6 @@
 
 .method private checkAliasExists(IILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v3, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -530,7 +514,6 @@
 
 .method private checkRegex(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
@@ -554,7 +537,6 @@
 
 .method private deleteCCMProfile(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -635,9 +617,6 @@
 
 .method private deleteCCMProfileUsingAdminId(IIZ)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v8, 0x2
 
@@ -756,7 +735,6 @@
 
 .method private deleteCertificateProfile(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -833,9 +811,6 @@
 
 .method private deleteCertificateProfileUsingAdminId(IIZ)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v8, 0x2
 
@@ -961,10 +936,6 @@
 
 .method private deleteCertificateUsingAdminId(IIILjava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     sget-boolean v5, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -1097,7 +1068,6 @@
 
 .method private enforceAdminPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1119,7 +1089,6 @@
 
 .method private enforcePermission(Landroid/app/enterprise/ContextInfo;)V
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1151,8 +1120,6 @@
 
 .method private getAdminIdForCaller(Landroid/app/enterprise/ContextInfo;I)I
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -1426,7 +1393,6 @@
 
 .method private getErrorMessage(J)Ljava/lang/String;
     .locals 1
-    .param p1    # J
 
     invoke-static {p1, p2}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->ccm_get_error_message(J)Ljava/lang/String;
 
@@ -1437,8 +1403,6 @@
 
 .method private getPackageUid(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -1616,7 +1580,6 @@
 
 .method private getValidString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1707,9 +1670,6 @@
 
 .method private insertOrUpdateCCMProfile(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/ccm/CCMProfile;J)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/ccm/CCMProfile;
-    .param p3    # J
 
     sget-boolean v10, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -2088,11 +2048,6 @@
 
 .method private insertOrUpdateCertificateProfile(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/ccm/CertificateProfile;IIZ)Z
     .locals 16
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/ccm/CertificateProfile;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     sget-boolean v13, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -2618,7 +2573,6 @@
 
 .method private registerPersonaObserver(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->mPersonaMgr:Landroid/os/PersonaManager;
 
@@ -2707,7 +2661,6 @@
 
 .method private unregisterPersonaObserver(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->mPersonaObservers:Ljava/util/HashMap;
 
@@ -2741,9 +2694,6 @@
 
 .method private updateLockStatus(IZZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -2819,8 +2769,6 @@
 
 .method private validateCallerContainer(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -2975,9 +2923,6 @@
 
 .method private validatePackageExemption(IILjava/lang/String;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -3154,8 +3099,6 @@
 
 .method private validatePackageList(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/ccm/CertificateProfile;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/ccm/CertificateProfile;
 
     const/4 v8, 0x1
 
@@ -3391,10 +3334,6 @@
 
 .method private verifyCertificateInstaller(IIILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3548,8 +3487,6 @@
 # virtual methods
 .method public addPackageToExemptList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -3698,7 +3635,6 @@
 
 .method public deleteCCMProfile(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -3833,8 +3769,6 @@
 
 .method public deleteCSRProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v12, 0x4
 
@@ -4043,8 +3977,6 @@
 
 .method public deleteCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -4225,12 +4157,6 @@
 
 .method public generateCSR(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)[B
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
 
     const/4 v2, 0x0
 
@@ -4342,10 +4268,6 @@
 
 .method public generateCSRUsingTemplate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[B
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -4644,7 +4566,6 @@
 
 .method public getAliasesForCaller(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4744,8 +4665,6 @@
 
 .method public getAliasesForPackage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4975,7 +4894,6 @@
 
 .method public getCCMProfile(Landroid/app/enterprise/ContextInfo;)Lcom/sec/enterprise/knox/ccm/CCMProfile;
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v10, 0x0
 
@@ -5386,8 +5304,6 @@
 
 .method public getSlotIdForCaller(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v5, -0x1
 
@@ -5493,9 +5409,6 @@
 
 .method public getSlotIdForPackage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)J
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v12, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -5982,10 +5895,6 @@
 
 .method public installCertificate(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/ccm/CertificateProfile;[BLjava/lang/String;)Z
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/ccm/CertificateProfile;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
 
     sget-boolean v4, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -6452,15 +6361,6 @@
 
 .method public installObject(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I[BLjava/lang/String;Z)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # [B
-    .param p8    # Ljava/lang/String;
-    .param p9    # Z
 
     sget-boolean v2, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -6675,11 +6575,6 @@
 
 .method public installObjectWithType(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I[BLjava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # [B
-    .param p5    # Ljava/lang/String;
 
     sget-boolean v2, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -6909,7 +6804,6 @@
 
 .method public isCCMPolicyEnabledByAdmin(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -7001,7 +6895,6 @@
 
 .method public isCCMPolicyEnabledForCaller(Landroid/app/enterprise/ContextInfo;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x0
 
@@ -7142,8 +7035,6 @@
 
 .method public isCCMPolicyEnabledForPackage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -7399,14 +7290,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 
@@ -7492,18 +7381,12 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public registerForDefaultCertificate(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;Z)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/4 v3, -0x1
 
@@ -7652,8 +7535,6 @@
 
 .method public removePackageFromExemptList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -7800,8 +7681,6 @@
 
 .method public setCCMProfile(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/ccm/CCMProfile;)Z
     .locals 23
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/ccm/CCMProfile;
 
     const/4 v14, 0x1
 
@@ -8334,8 +8213,6 @@
 
 .method public setCSRProfile(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/ccm/CSRProfile;)Z
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/ccm/CSRProfile;
 
     sget-boolean v4, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->DBG:Z
 

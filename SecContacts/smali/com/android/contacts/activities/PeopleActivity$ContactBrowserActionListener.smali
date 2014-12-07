@@ -125,7 +125,6 @@
 
 .method public onViewContactAction(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iget-object v1, p0, Lcom/android/contacts/activities/PeopleActivity$ContactBrowserActionListener;->this$0:Lcom/android/contacts/activities/PeopleActivity;
 

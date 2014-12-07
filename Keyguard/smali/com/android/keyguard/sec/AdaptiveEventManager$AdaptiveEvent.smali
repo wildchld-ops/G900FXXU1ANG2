@@ -25,8 +25,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/keyguard/sec/AdaptiveEventManager;Ljava/lang/String;Landroid/view/View;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
@@ -41,8 +39,6 @@
 
 .method protected constructor <init>(Lcom/android/keyguard/sec/AdaptiveEventManager;Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 
@@ -68,7 +64,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
 
@@ -77,8 +72,6 @@
 
 .method static synthetic access$302(Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$AdaptiveEvent;->view:Landroid/view/View;
 

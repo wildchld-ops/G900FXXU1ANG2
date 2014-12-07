@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,7 +22,6 @@
 # virtual methods
 .method public resolveIntent(Landroid/content/Intent;)Lcom/android/contacts/list/ContactsRequest;
     .locals 17
-    .param p1    # Landroid/content/Intent;
 
     new-instance v9, Lcom/android/contacts/list/ContactsRequest;
 
@@ -1334,9 +1332,6 @@
 
 .method public setSubphonebookIntent(Ljava/lang/String;Lcom/android/contacts/list/ContactsRequest;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/contacts/list/ContactsRequest;
-    .param p3    # Landroid/content/Intent;
 
     const/16 v7, 0xaa
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/ScrollView;Landroid/widget/ScrollView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/ScrollView;
-    .param p2    # Landroid/widget/ScrollView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/ScrollView$HoverScrollHandler;-><init>(Landroid/widget/ScrollView;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const/4 v10, 0x4
 

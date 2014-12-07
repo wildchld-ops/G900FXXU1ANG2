@@ -67,7 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 8
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v7, 0x4
 
@@ -309,7 +308,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/FolderIconHelper$AppIconData;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderIconHelper$AppIconData;->FOLDER_ICON_RECT:Landroid/graphics/Rect;
 
@@ -318,7 +316,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/FolderIconHelper$AppIconData;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
     iget v0, p0, Lcom/android/launcher2/FolderIconHelper$AppIconData;->APP_ICON_SIZE:I
 
@@ -327,7 +324,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/FolderIconHelper$AppIconData;)F
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
     iget v0, p0, Lcom/android/launcher2/FolderIconHelper$AppIconData;->APP_ICON_SCALE_FACTOR:F
 
@@ -336,7 +332,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/FolderIconHelper$AppIconData;)F
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
     iget v0, p0, Lcom/android/launcher2/FolderIconHelper$AppIconData;->NORMAL_ICON_SCALE_FACTOR:F
 
@@ -345,7 +340,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/FolderIconHelper$AppIconData;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
     iget v0, p0, Lcom/android/launcher2/FolderIconHelper$AppIconData;->NORMAL_ICON_SIZE:I
 
@@ -354,9 +348,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/FolderIconHelper$AppIconData;Ljava/util/List;I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconHelper$AppIconData;
-    .param p1    # Ljava/util/List;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/FolderIconHelper$AppIconData;->getBitmap(Ljava/util/List;I)Landroid/graphics/Bitmap;
 
@@ -367,7 +358,6 @@
 
 .method private getBitmap(Ljava/util/List;I)Landroid/graphics/Bitmap;
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -408,7 +398,6 @@
 # virtual methods
 .method public getAppIconXYCord(I)[F
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x2
 

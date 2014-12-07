@@ -155,9 +155,6 @@
 
 .method private addIpPolicyRules(ILjava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v4, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnFirewallHelper;->DBG:Z
 
@@ -314,9 +311,6 @@
 
 .method private addIpRoute(ILjava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v4, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnFirewallHelper;->DBG:Z
 
@@ -479,9 +473,6 @@
 
 .method private addIpTableMangleNatRules(IILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -838,9 +829,6 @@
 
 .method private addIpTableMangleNatRulesForRange(IILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -1223,7 +1211,6 @@
 
 .method private createChainInMangleTable(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1373,9 +1360,6 @@
 
 .method private removeIpTableMangleNatRules(IILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1553,9 +1537,6 @@
 
 .method private removeIpTableMangleNatRulesForRange(IILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const v5, 0x186a0
 
@@ -1759,7 +1740,6 @@
 
 .method private declared-synchronized runSingleCommand(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1865,7 +1845,6 @@
 
 .method public addIpRouteAndPolicyRules(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x6
 
@@ -1892,8 +1871,6 @@
 
 .method public addIpTableMangleNatRules(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x4
 
@@ -1908,8 +1885,6 @@
 
 .method public addIpTableMangleNatRulesForRange(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x4
 
@@ -1924,7 +1899,6 @@
 
 .method public addMangleExceptionsForUid(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -1939,8 +1913,6 @@
 
 .method public addMangleExceptionsForUid(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2073,7 +2045,6 @@
 
 .method public removeIpRouteAndPolicyRules(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x6
 
@@ -2100,8 +2071,6 @@
 
 .method public removeIpTableMangleNatRules(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x4
 
@@ -2116,8 +2085,6 @@
 
 .method public removeIpTableMangleNatRulesForRange(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x4
 
@@ -2132,7 +2099,6 @@
 
 .method public removeMangleExceptionsForUid(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -2147,8 +2113,6 @@
 
 .method public removeMangleExceptionsForUid(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 

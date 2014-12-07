@@ -77,7 +77,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/cover/CoverManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/android/cover/CoverManager;
 
     iget-object v0, p0, Lcom/samsung/android/cover/CoverManager;->mContext:Landroid/content/Context;
 
@@ -211,7 +209,6 @@
 # virtual methods
 .method public disableCoverManager(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/cover/CoverManager;->getService()Lcom/samsung/android/cover/ICoverManager;
@@ -395,7 +392,6 @@
 
 .method isSupportTypeOfCover(I)Z
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -427,7 +423,6 @@
 
 .method public registerListener(Lcom/samsung/android/cover/CoverManager$CoverStateListener;)V
     .locals 10
-    .param p1    # Lcom/samsung/android/cover/CoverManager$CoverStateListener;
 
     const-string v7, "CoverManager"
 
@@ -628,7 +623,6 @@
 
 .method public registerListener(Lcom/samsung/android/cover/CoverManager$StateListener;)V
     .locals 10
-    .param p1    # Lcom/samsung/android/cover/CoverManager$StateListener;
 
     const-string v7, "CoverManager"
 
@@ -827,8 +821,6 @@
 
 .method public setCoverModeToWindow(Landroid/view/Window;I)V
     .locals 3
-    .param p1    # Landroid/view/Window;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/samsung/android/cover/CoverManager;->isSupportSViewCover()Z
 
@@ -879,7 +871,6 @@
 
 .method public unregisterListener(Lcom/samsung/android/cover/CoverManager$CoverStateListener;)V
     .locals 8
-    .param p1    # Lcom/samsung/android/cover/CoverManager$CoverStateListener;
 
     const-string v5, "CoverManager"
 
@@ -1029,7 +1020,6 @@
 
 .method public unregisterListener(Lcom/samsung/android/cover/CoverManager$StateListener;)V
     .locals 8
-    .param p1    # Lcom/samsung/android/cover/CoverManager$StateListener;
 
     const-string v5, "CoverManager"
 

@@ -41,7 +41,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/QcFalImpl$PlatformType;)V
     .locals 2
-    .param p1    # Lcom/android/server/ssrm/QcFalImpl$PlatformType;
 
     const/4 v1, 0x0
 

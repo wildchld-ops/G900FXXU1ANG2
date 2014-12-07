@@ -36,7 +36,6 @@
 # virtual methods
 .method public onBillingCountryChanged(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment$1;->this$0:Lcom/google/android/finsky/billing/creditcard/AddCreditCardFlowFragment;
 

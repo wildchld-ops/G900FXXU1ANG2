@@ -100,7 +100,6 @@
 
 .method constructor <init>(Ljava/lang/CharSequence;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -167,15 +166,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
     .locals 12
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/TextPaint;
-    .param p5    # I
-    .param p6    # Landroid/text/Layout$Alignment;
-    .param p7    # F
-    .param p8    # F
-    .param p9    # Z
 
     const/4 v10, 0x0
 
@@ -208,17 +198,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V
     .locals 14
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/TextPaint;
-    .param p5    # I
-    .param p6    # Landroid/text/Layout$Alignment;
-    .param p7    # F
-    .param p8    # F
-    .param p9    # Z
-    .param p10    # Landroid/text/TextUtils$TruncateAt;
-    .param p11    # I
 
     sget-object v7, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
@@ -255,16 +234,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZ)V
     .locals 14
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/TextPaint;
-    .param p5    # I
-    .param p6    # Landroid/text/Layout$Alignment;
-    .param p7    # Landroid/text/TextDirectionHeuristic;
-    .param p8    # F
-    .param p9    # F
-    .param p10    # Z
 
     const/4 v11, 0x0
 
@@ -301,19 +270,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZLandroid/text/TextUtils$TruncateAt;II)V
     .locals 15
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/TextPaint;
-    .param p5    # I
-    .param p6    # Landroid/text/Layout$Alignment;
-    .param p7    # Landroid/text/TextDirectionHeuristic;
-    .param p8    # F
-    .param p9    # F
-    .param p10    # Z
-    .param p11    # Landroid/text/TextUtils$TruncateAt;
-    .param p12    # I
-    .param p13    # I
 
     if-nez p11, :cond_0
 
@@ -509,13 +465,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Z
 
     const/4 v2, 0x0
 
@@ -546,14 +495,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZ)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # Landroid/text/TextDirectionHeuristic;
-    .param p6    # F
-    .param p7    # F
-    .param p8    # Z
 
     const/4 v2, 0x0
 
@@ -586,16 +527,6 @@
 
 .method private calculateEllipsis(II[FIFLandroid/text/TextUtils$TruncateAt;IFLandroid/text/TextPaint;Z)V
     .locals 25
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # F
-    .param p6    # Landroid/text/TextUtils$TruncateAt;
-    .param p7    # I
-    .param p8    # F
-    .param p9    # Landroid/text/TextPaint;
-    .param p10    # Z
 
     cmpg-float v22, p8, p5
 
@@ -1106,8 +1037,6 @@
 
 .method private static final isIdeographic(CZ)Z
     .locals 3
-    .param p0    # C
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1539,35 +1468,6 @@
 
 .method private out(Ljava/lang/CharSequence;IIIIIIIFF[Landroid/text/style/LineHeightSpan;[ILandroid/graphics/Paint$FontMetricsInt;ZZ[BIZIZZ[C[FILandroid/text/TextUtils$TruncateAt;FFLandroid/text/TextPaint;Z)I
     .locals 28
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # F
-    .param p10    # F
-    .param p11    # [Landroid/text/style/LineHeightSpan;
-    .param p12    # [I
-    .param p13    # Landroid/graphics/Paint$FontMetricsInt;
-    .param p14    # Z
-    .param p15    # Z
-    .param p16    # [B
-    .param p17    # I
-    .param p18    # Z
-    .param p19    # I
-    .param p20    # Z
-    .param p21    # Z
-    .param p22    # [C
-    .param p23    # [F
-    .param p24    # I
-    .param p25    # Landroid/text/TextUtils$TruncateAt;
-    .param p26    # F
-    .param p27    # F
-    .param p28    # Landroid/text/TextPaint;
-    .param p29    # Z
 
     move-object/from16 v0, p0
 
@@ -2118,18 +2018,6 @@
 
 .method generate(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/TextDirectionHeuristic;FFZZFLandroid/text/TextUtils$TruncateAt;)V
     .locals 133
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/TextPaint;
-    .param p5    # I
-    .param p6    # Landroid/text/TextDirectionHeuristic;
-    .param p7    # F
-    .param p8    # F
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # F
-    .param p12    # Landroid/text/TextUtils$TruncateAt;
 
     const/4 v5, 0x0
 
@@ -3645,7 +3533,6 @@
 
 .method public getEllipsisCount(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/text/StaticLayout;->mColumns:I
 
@@ -3674,7 +3561,6 @@
 
 .method public getEllipsisStart(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/text/StaticLayout;->mColumns:I
 
@@ -3711,7 +3597,6 @@
 
 .method public getLineContainsTab(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/StaticLayout;->mLines:[I
 
@@ -3750,7 +3635,6 @@
 
 .method public getLineDescent(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/text/StaticLayout;->mLines:[I
 
@@ -3788,7 +3672,6 @@
 
 .method public final getLineDirections(I)Landroid/text/Layout$Directions;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/StaticLayout;->mLineDirections:[Landroid/text/Layout$Directions;
 
@@ -3799,7 +3682,6 @@
 
 .method public getLineForVertical(I)I
     .locals 6
-    .param p1    # I
 
     iget v1, p0, Landroid/text/StaticLayout;->mLineCount:I
 
@@ -3848,7 +3730,6 @@
 
 .method public getLineStart(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/StaticLayout;->mLines:[I
 
@@ -3869,7 +3750,6 @@
 
 .method public getLineTop(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/text/StaticLayout;->mLines:[I
 
@@ -3905,7 +3785,6 @@
 
 .method public getParagraphDirection(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/StaticLayout;->mLines:[I
 

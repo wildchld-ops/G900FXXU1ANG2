@@ -10,8 +10,6 @@
 # direct methods
 .method public static customizeDeviceConfiguration(Landroid/content/Context;Lcom/google/android/finsky/protos/DeviceConfigurationProto;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/protos/DeviceConfigurationProto;
 
     const/4 v10, 0x1
 
@@ -427,7 +425,6 @@
 
 .method private static getKeyboardConfigId(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -465,7 +462,6 @@
 
 .method private static getNavigationId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -507,7 +503,6 @@
 
 .method private static getScreenLayoutSizeId(I)I
     .locals 2
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0xf
 
@@ -551,7 +546,6 @@
 
 .method private static getTouchScreenId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

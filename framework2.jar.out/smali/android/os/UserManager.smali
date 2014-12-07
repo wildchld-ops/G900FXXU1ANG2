@@ -58,8 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IUserManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IUserManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,7 +70,6 @@
 
 .method public static declared-synchronized get(Landroid/content/Context;)Landroid/os/UserManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Landroid/os/UserManager;
 
@@ -172,7 +169,6 @@
 # virtual methods
 .method public checkRestrictionsChallenge(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -202,8 +198,6 @@
 
 .method public createUser(Ljava/lang/String;I)Landroid/content/pm/UserInfo;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -233,7 +227,6 @@
 
 .method public getApplicationRestrictions(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -279,8 +272,6 @@
 
 .method public getApplicationRestrictions(Ljava/lang/String;Landroid/os/UserHandle;)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -334,7 +325,6 @@
 
 .method public getSerialNumberForUser(Landroid/os/UserHandle;)J
     .locals 2
-    .param p1    # Landroid/os/UserHandle;
 
     invoke-virtual {p1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -373,7 +363,6 @@
 
 .method public getUserForSerialNumber(J)Landroid/os/UserHandle;
     .locals 2
-    .param p1    # J
 
     long-to-int v1, p1
 
@@ -408,7 +397,6 @@
 
 .method public getUserHandle(I)I
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -454,7 +442,6 @@
 
 .method public getUserIcon(I)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -484,7 +471,6 @@
 
 .method public getUserInfo(I)Landroid/content/pm/UserInfo;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -563,7 +549,6 @@
 
 .method public getUserRestrictions(Landroid/os/UserHandle;)Landroid/os/Bundle;
     .locals 3
-    .param p1    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -597,7 +582,6 @@
 
 .method public getUserSerialNumber(I)I
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -683,7 +667,6 @@
 
 .method public getUsers(Z)Ljava/util/List;
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -751,7 +734,6 @@
 
 .method public hasUserRestriction(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Process;->myUserHandle()Landroid/os/UserHandle;
 
@@ -766,8 +748,6 @@
 
 .method public hasUserRestriction(Ljava/lang/String;Landroid/os/UserHandle;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/UserHandle;
 
     invoke-virtual {p0, p2}, Landroid/os/UserManager;->getUserRestrictions(Landroid/os/UserHandle;)Landroid/os/Bundle;
 
@@ -850,7 +830,6 @@
 
 .method public isUserRunning(Landroid/os/UserHandle;)Z
     .locals 5
-    .param p1    # Landroid/os/UserHandle;
 
     const/4 v1, 0x0
 
@@ -882,7 +861,6 @@
 
 .method public isUserRunningOrStopping(Landroid/os/UserHandle;)Z
     .locals 4
-    .param p1    # Landroid/os/UserHandle;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -939,7 +917,6 @@
 
 .method public removeUser(I)Z
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -969,9 +946,6 @@
 
 .method public setApplicationRestrictions(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -1021,7 +995,6 @@
 
 .method public setGuestEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -1063,7 +1036,6 @@
 
 .method public setRestrictionsChallenge(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -1093,8 +1065,6 @@
 
 .method public setUserIcon(ILandroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -1120,8 +1090,6 @@
 
 .method public setUserName(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -1147,8 +1115,6 @@
 
 .method public setUserRestriction(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/os/UserManager;->getUserRestrictions()Landroid/os/Bundle;
 
@@ -1163,9 +1129,6 @@
 
 .method public setUserRestriction(Ljava/lang/String;ZLandroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/UserHandle;
 
     invoke-virtual {p0, p3}, Landroid/os/UserManager;->getUserRestrictions(Landroid/os/UserHandle;)Landroid/os/Bundle;
 
@@ -1180,7 +1143,6 @@
 
 .method public setUserRestrictions(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/os/Process;->myUserHandle()Landroid/os/UserHandle;
 
@@ -1193,8 +1155,6 @@
 
 .method public setUserRestrictions(Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;
@@ -1224,7 +1184,6 @@
 
 .method public wipeUser(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/UserManager;->mService:Landroid/os/IUserManager;

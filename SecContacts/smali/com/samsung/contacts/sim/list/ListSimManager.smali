@@ -16,8 +16,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Lcom/samsung/contacts/sim/list/ListSimOperation;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/sim/list/ListSimOperation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +28,6 @@
 
 .method public static createSimSupportedContactLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/samsung/contacts/util/LoadCscFeatureUtils;->getInstance()Lcom/samsung/contacts/util/LoadCscFeatureUtils;
 
@@ -59,7 +56,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/list/ListSimManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v2, Lcom/samsung/contacts/sim/list/ListSimManager;
 
@@ -143,8 +139,6 @@
 
 .method public disableEdit(Lcom/android/contacts/common/list/ContactListAdapter;I)Z
     .locals 2
-    .param p1    # Lcom/android/contacts/common/list/ContactListAdapter;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/sim/list/ListSimManager;->mListSimOperation:Lcom/samsung/contacts/sim/list/ListSimOperation;
 
@@ -159,8 +153,6 @@
 
 .method public excludeSimContactIfNecessary(Ljava/lang/StringBuilder;Z)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/sim/list/ListSimManager;->mListSimOperation:Lcom/samsung/contacts/sim/list/ListSimOperation;
 
@@ -173,8 +165,6 @@
 
 .method public getCallIntent(Ljava/lang/String;I)Landroid/content/Intent;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/sim/list/ListSimManager;->mListSimOperation:Lcom/samsung/contacts/sim/list/ListSimOperation;
 
@@ -189,7 +179,6 @@
 
 .method public getImportExportSimMenuString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/sim/list/ListSimManager;->mListSimOperation:Lcom/samsung/contacts/sim/list/ListSimOperation;
 
@@ -232,8 +221,6 @@
 
 .method public setSelectionArgsForJoin(Lcom/android/contacts/list/JoinContactLoader;J)V
     .locals 1
-    .param p1    # Lcom/android/contacts/list/JoinContactLoader;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/sim/list/ListSimManager;->mListSimOperation:Lcom/samsung/contacts/sim/list/ListSimOperation;
 
@@ -258,8 +245,6 @@
 
 .method public shouldSkipLoadAccountFilter(Lcom/android/contacts/common/model/account/AccountWithDataSet;Z)Z
     .locals 4
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p2    # Z
 
     const/4 v1, 0x1
 

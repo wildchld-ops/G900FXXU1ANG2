@@ -27,7 +27,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/header/CallIdentifier;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/header/CallIdentifier;
 
     const-string v0, "In-Reply-To"
 
@@ -103,7 +102,6 @@
 
 .method public setCallId(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

@@ -44,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/DeviceConfigurationHelper;->doNextRequest(Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;)V
 
@@ -53,8 +52,6 @@
 
 .method public static customizeDeviceConfiguration(Landroid/content/Context;Lcom/google/android/finsky/protos/DeviceConfigurationProto;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/protos/DeviceConfigurationProto;
 
     const/4 v10, 0x1
 
@@ -151,7 +148,6 @@
 
 .method private static doNextRequest(Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;
 
     const/4 v3, 0x0
 
@@ -214,7 +210,6 @@
 
 .method private static doUploadDeviceConfiguration(Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;)V
     .locals 11
-    .param p0    # Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;
 
     iget-object v3, p0, Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;->dfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -582,7 +577,6 @@
 
 .method private static getKeyboardConfigId(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -620,7 +614,6 @@
 
 .method private static getNavigationId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -662,7 +655,6 @@
 
 .method private static getScreenLayoutSizeId(I)I
     .locals 2
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0xf
 
@@ -720,7 +712,6 @@
 
 .method private static getTouchScreenId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -766,9 +757,6 @@
 
 .method private static postUploadRequest(Lcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/DeviceConfigurationHelper$Listener;)V
     .locals 3
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
-    .param p1    # Z
-    .param p2    # Lcom/google/android/finsky/utils/DeviceConfigurationHelper$Listener;
 
     new-instance v0, Lcom/google/android/finsky/utils/DeviceConfigurationHelper$RequestRecord;
 
@@ -796,8 +784,6 @@
 
 .method public static requestToken(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/utils/DeviceConfigurationHelper$Listener;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
-    .param p1    # Lcom/google/android/finsky/utils/DeviceConfigurationHelper$Listener;
 
     const/4 v0, 0x0
 
@@ -808,8 +794,6 @@
 
 .method public static uploadGcmRegistrationId(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

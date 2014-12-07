@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;)Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;->mListener:Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener;
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;)Lcom/google/android/finsky/layout/ButtonBar;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;->mButtonBar:Lcom/google/android/finsky/layout/ButtonBar;
 
@@ -54,9 +52,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;
 
@@ -85,7 +80,6 @@
 
 .method private setUpTos(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const v1, 0x7f090069
 
@@ -119,8 +113,6 @@
 # virtual methods
 .method getCarrierTosWebViewClient(Landroid/view/View;Landroid/view/View;)Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosWebViewClient;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosWebViewClient;
 
@@ -139,7 +131,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/LoggingDialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -154,7 +145,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -331,7 +321,6 @@
 
 .method public setOnResultListener(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment;->mListener:Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener;
 

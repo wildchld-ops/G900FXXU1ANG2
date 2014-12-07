@@ -94,8 +94,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->switchSelectedTab(I)V
 
@@ -104,7 +102,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -113,9 +110,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->refundDocument(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -124,7 +118,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -133,7 +126,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mContext:Landroid/content/Context;
 
@@ -142,7 +134,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)Lcom/google/android/finsky/activities/myapps/DocumentView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mDocView:Lcom/google/android/finsky/activities/myapps/DocumentView;
 
@@ -151,7 +142,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mContext:Landroid/content/Context;
 
@@ -160,7 +150,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -169,7 +158,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)Lcom/google/android/finsky/api/DfeApi;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -178,7 +166,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->dismissArchiveProgressDialog()V
 
@@ -335,8 +322,6 @@
 
 .method private configureViewPager(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v4, 0x8
 
@@ -458,8 +443,6 @@
 
 .method public static newInstance(Lcom/google/android/finsky/api/model/DfeToc;Z)Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p1    # Z
 
     new-instance v0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
@@ -585,8 +568,6 @@
 
 .method private refundDocument(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -743,7 +724,6 @@
 
 .method private showAccountSelectorIfNecessary(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mAccountSelector:Lcom/google/android/finsky/layout/AccountSelectorView;
 
@@ -777,7 +757,6 @@
 
 .method private switchSelectedTab(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -876,7 +855,6 @@
 # virtual methods
 .method public adjustMenu(Ljava/util/List;Landroid/view/Menu;)V
     .locals 5
-    .param p2    # Landroid/view/Menu;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1147,7 +1125,6 @@
 
 .method handleMenuItem(Ljava/util/List;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p2    # Landroid/view/MenuItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1194,7 +1171,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1313,7 +1289,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1348,8 +1323,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1377,7 +1350,6 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mUseActionBarTabs:Z
 
@@ -1393,9 +1365,6 @@
 
 .method public onPageScrolled(IFI)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mUseActionBarTabs:Z
 
@@ -1411,7 +1380,6 @@
 
 .method public onPageSelected(I)V
     .locals 6
-    .param p1    # I
 
     iget-boolean v1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->mUseActionBarTabs:Z
 
@@ -1479,8 +1447,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1590,8 +1556,6 @@
 
 .method public onRefundComplete(Lcom/google/android/finsky/utils/AppSupport$RefundResult;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/utils/AppSupport$RefundResult;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment$5;->$SwitchMap$com$google$android$finsky$utils$AppSupport$RefundResult:[I
 
@@ -1654,7 +1618,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;->recordState()V
 
@@ -1693,7 +1656,6 @@
 
 .method public openDocDetails(Lcom/google/android/finsky/api/model/Document;)V
     .locals 16
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     move-object/from16 v0, p0
 

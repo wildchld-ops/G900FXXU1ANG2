@@ -44,8 +44,6 @@
 
 .method private static getOrCreateThreadId(Landroid/content/Context;[Ljava/lang/String;)J
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     new-instance v3, Ljava/util/HashSet;
 
@@ -83,7 +81,6 @@
 # virtual methods
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 28
-    .param p1    # Landroid/content/Intent;
 
     const-string v6, "NoConfirmationSendService onHandleIntent"
 

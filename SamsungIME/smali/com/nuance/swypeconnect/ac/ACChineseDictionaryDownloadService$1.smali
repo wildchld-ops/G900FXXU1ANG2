@@ -36,7 +36,6 @@
 # virtual methods
 .method public complete(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$1;->this$0:Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 

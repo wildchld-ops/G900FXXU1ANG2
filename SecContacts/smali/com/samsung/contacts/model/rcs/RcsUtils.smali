@@ -36,7 +36,6 @@
 
 .method public static buildDialog(Landroid/content/Context;Ljava/util/ArrayList;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -236,7 +235,6 @@
 
 .method public static refreshRCSeSettingValue(Landroid/content/Context;)V
     .locals 12
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/samsung/contacts/model/rcs/RcsUtils;->refreshRCSValue()V
 

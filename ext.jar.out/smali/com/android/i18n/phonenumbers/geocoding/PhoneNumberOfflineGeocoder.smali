@@ -56,7 +56,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +86,6 @@
 
 .method private canBeGeocoded(Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;)Z
     .locals 1
-    .param p1    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;->FIXED_LINE:Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
@@ -115,7 +113,6 @@
 
 .method private static close(Ljava/io/InputStream;)V
     .locals 4
-    .param p0    # Ljava/io/InputStream;
 
     if-eqz p0, :cond_0
 
@@ -146,10 +143,6 @@
 
 .method private getAreaDescriptionForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->getCountryCode()I
 
@@ -245,8 +238,6 @@
 
 .method private getCountryNameForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/util/Locale;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -300,10 +291,6 @@
 
 .method private getPhonePrefixDescriptions(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/geocoding/AreaCodeMap;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->mappingFileProvider:Lcom/android/i18n/phonenumbers/geocoding/MappingFileProvider;
 
@@ -347,8 +334,6 @@
 
 .method private getRegionDisplayName(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Locale;
 
     if-eqz p1, :cond_0
 
@@ -390,7 +375,6 @@
 
 .method private loadAreaCodeMapFromFile(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const-class v5, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;
 
@@ -591,7 +575,6 @@
 
 .method private mayFallBackToEnglish(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "zh"
 
@@ -632,8 +615,6 @@
 # virtual methods
 .method public getDescriptionForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/util/Locale;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -673,9 +654,6 @@
 
 .method public getDescriptionForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/util/Locale;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -715,8 +693,6 @@
 
 .method public getDescriptionForValidNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/util/Locale;
 
     invoke-virtual {p2}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
@@ -751,9 +727,6 @@
 
 .method public getDescriptionForValidNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/util/Locale;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/geocoding/PhoneNumberOfflineGeocoder;->phoneUtil:Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 

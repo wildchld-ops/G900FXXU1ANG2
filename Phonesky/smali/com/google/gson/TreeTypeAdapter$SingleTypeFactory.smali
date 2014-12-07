@@ -60,8 +60,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Object;Lcom/google/gson/reflect/TypeToken;ZLjava/lang/Class;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -137,11 +135,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Object;Lcom/google/gson/reflect/TypeToken;ZLjava/lang/Class;Lcom/google/gson/TreeTypeAdapter$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lcom/google/gson/reflect/TypeToken;
-    .param p3    # Z
-    .param p4    # Ljava/lang/Class;
-    .param p5    # Lcom/google/gson/TreeTypeAdapter$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/gson/TreeTypeAdapter$SingleTypeFactory;-><init>(Ljava/lang/Object;Lcom/google/gson/reflect/TypeToken;ZLjava/lang/Class;)V
 
@@ -152,7 +145,6 @@
 # virtual methods
 .method public create(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
     .locals 8
-    .param p1    # Lcom/google/gson/Gson;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

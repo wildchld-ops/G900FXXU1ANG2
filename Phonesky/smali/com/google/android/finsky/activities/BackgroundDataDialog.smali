@@ -22,7 +22,6 @@
 
 .method public static dismissExisting(Landroid/support/v4/app/FragmentManager;)V
     .locals 3
-    .param p0    # Landroid/support/v4/app/FragmentManager;
 
     const-string v2, "bg_data_dialog"
 
@@ -44,8 +43,6 @@
 
 .method public static show(Landroid/support/v4/app/FragmentManager;Landroid/app/Activity;)V
     .locals 2
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # Landroid/app/Activity;
 
     const-string v1, "bg_data_dialog"
 
@@ -74,7 +71,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/DialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -106,7 +102,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v3, Landroid/app/AlertDialog$Builder;
 

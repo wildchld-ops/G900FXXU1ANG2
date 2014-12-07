@@ -73,7 +73,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/group/GroupChangeOrderListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupChangeOrderListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupChangeOrderListFragment;->mContext:Landroid/content/Context;
 
@@ -82,7 +81,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/GroupChangeOrderListFragment;)Lcom/samsung/contacts/group/GroupChangeOrderListFragment$ReOrderListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupChangeOrderListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupChangeOrderListFragment;->mAdapter:Lcom/samsung/contacts/group/GroupChangeOrderListFragment$ReOrderListAdapter;
 
@@ -91,7 +89,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/group/GroupChangeOrderListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupChangeOrderListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/group/GroupChangeOrderListFragment;->updateDoneButton()V
 
@@ -201,7 +198,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -262,7 +258,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -281,9 +276,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -446,7 +438,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/samsung/contacts/group/GroupChangeOrderListFragment;->getGroupOrderList()Ljava/util/ArrayList;
 
@@ -467,7 +458,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -488,7 +478,6 @@
 
 .method public setActionBarButtonUpdateListener(Lcom/samsung/contacts/listener/ButtonUpdateListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/ButtonUpdateListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupChangeOrderListFragment;->mListener:Lcom/samsung/contacts/listener/ButtonUpdateListener;
 

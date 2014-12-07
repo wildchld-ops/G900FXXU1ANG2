@@ -31,7 +31,6 @@
 # virtual methods
 .method public addHeader(Lorg/apache/http/Header;)V
     .locals 1
-    .param p1    # Lorg/apache/http/Header;
 
     if-nez p1, :cond_0
 
@@ -83,7 +82,6 @@
 
 .method public containsHeader(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -172,7 +170,6 @@
 
 .method public getCondensedHeader(Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -258,7 +255,6 @@
 
 .method public getFirstHeader(Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -305,7 +301,6 @@
 
 .method public getHeaders(Ljava/lang/String;)[Lorg/apache/http/Header;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -367,7 +362,6 @@
 
 .method public getLastHeader(Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lorg/apache/http/message/HeaderGroup;->headers:Ljava/util/List;
 
@@ -428,7 +422,6 @@
 
 .method public iterator(Ljava/lang/String;)Lorg/apache/http/HeaderIterator;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/http/message/BasicListHeaderIterator;
 
@@ -441,7 +434,6 @@
 
 .method public removeHeader(Lorg/apache/http/Header;)V
     .locals 1
-    .param p1    # Lorg/apache/http/Header;
 
     if-nez p1, :cond_0
 
@@ -458,7 +450,6 @@
 
 .method public setHeaders([Lorg/apache/http/Header;)V
     .locals 3
-    .param p1    # [Lorg/apache/http/Header;
 
     invoke-virtual {p0}, Lorg/apache/http/message/HeaderGroup;->clear()V
 
@@ -488,7 +479,6 @@
 
 .method public updateHeader(Lorg/apache/http/Header;)V
     .locals 4
-    .param p1    # Lorg/apache/http/Header;
 
     if-nez p1, :cond_0
 

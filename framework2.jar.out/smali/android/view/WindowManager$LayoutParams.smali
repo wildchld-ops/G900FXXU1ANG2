@@ -862,7 +862,6 @@
 
 .method public constructor <init>(I)V
     .locals 6
-    .param p1    # I
 
     const/high16 v5, 0x3f800000
 
@@ -919,8 +918,6 @@
 
 .method public constructor <init>(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v5, 0x3f800000
 
@@ -979,9 +976,6 @@
 
 .method public constructor <init>(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v5, 0x3f800000
 
@@ -1040,11 +1034,6 @@
 
 .method public constructor <init>(IIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v5, 0x0
 
@@ -1101,13 +1090,6 @@
 
 .method public constructor <init>(IIIIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v5, 0x0
 
@@ -1168,7 +1150,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     const/high16 v5, 0x3f800000
 
@@ -1413,7 +1394,6 @@
 
 .method public static mayUseInputMethod(I)Z
     .locals 1
-    .param p0    # I
 
     const v0, 0x20008
 
@@ -1485,7 +1465,6 @@
 
 .method public final copyFrom(Landroid/view/WindowManager$LayoutParams;)I
     .locals 7
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     const/high16 v6, 0x80000
 
@@ -1955,7 +1934,6 @@
 
 .method public debug(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2093,7 +2071,6 @@
 
 .method public scale(F)V
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x3f000000
 
@@ -2160,7 +2137,6 @@
 
 .method public final setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     if-nez p1, :cond_0
 
@@ -2643,8 +2619,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/view/ViewGroup$LayoutParams;->width:I
 

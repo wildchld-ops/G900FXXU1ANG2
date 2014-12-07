@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDropAction(Landroid/view/DragEvent;)V
     .locals 13
-    .param p1    # Landroid/view/DragEvent;
 
     const/high16 v12, 0x40000
 

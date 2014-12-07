@@ -79,7 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -90,8 +89,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -124,7 +121,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/AppSecurityPermissions;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions;->mContext:Landroid/content/Context;
 
@@ -133,7 +129,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/AppSecurityPermissions;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions;->mPackageManager:Landroid/content/pm/PackageManager;
 
@@ -150,7 +145,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/layout/AppSecurityPermissions;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions;->mPackageName:Ljava/lang/String;
 
@@ -159,7 +153,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/layout/AppSecurityPermissions;)Landroid/support/v4/app/FragmentManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions;->mFragmentManager:Landroid/support/v4/app/FragmentManager;
 
@@ -168,8 +161,6 @@
 
 .method static synthetic access$702(Lcom/google/android/finsky/layout/AppSecurityPermissions;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions;->mExpansionState:I
 
@@ -178,7 +169,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/layout/AppSecurityPermissions;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/AppSecurityPermissions;->isCollapsed()Z
 
@@ -189,7 +179,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/layout/AppSecurityPermissions;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/AppSecurityPermissions;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/AppSecurityPermissions;->setNormalPermissionsVisibility()V
 
@@ -539,11 +528,6 @@
 # virtual methods
 .method public bindInfo(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/FragmentManager;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p6    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -658,7 +642,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

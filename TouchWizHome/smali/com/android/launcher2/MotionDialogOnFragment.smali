@@ -30,7 +30,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MotionDialogOnFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MotionDialogOnFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MotionDialogOnFragment;->mReminder:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -39,7 +38,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/MotionDialogOnFragment;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MotionDialogOnFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MotionDialogOnFragment;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -48,8 +46,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/MotionDialogOnFragment;Landroid/graphics/drawable/AnimationDrawable;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 0
-    .param p0    # Lcom/android/launcher2/MotionDialogOnFragment;
-    .param p1    # Landroid/graphics/drawable/AnimationDrawable;
 
     iput-object p1, p0, Lcom/android/launcher2/MotionDialogOnFragment;->mAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -58,7 +54,6 @@
 
 .method static createAndShow(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     invoke-static {p0}, Lcom/android/launcher2/MotionDialogOnFragment;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -92,7 +87,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "MotionDialogOn"
 
@@ -112,7 +106,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v0, "MotionDialogOn"
 
@@ -173,7 +166,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -197,8 +189,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -260,7 +250,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -269,7 +258,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 15
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/launcher2/MotionDialogOnFragment;->getActivity()Landroid/app/Activity;
 
@@ -539,7 +527,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v3, 0x0
 
@@ -593,7 +580,6 @@
 
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Lcom/android/launcher2/MotionDialogOnFragment;->getActivity()Landroid/app/Activity;
 

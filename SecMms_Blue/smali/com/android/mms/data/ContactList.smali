@@ -59,8 +59,6 @@
 
 .method public static getByIds(Ljava/lang/String;Z)Lcom/android/mms/data/ContactList;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     new-instance v3, Lcom/android/mms/data/ContactList;
 
@@ -118,7 +116,6 @@
 
 .method public static getByNumbers(Ljava/lang/Iterable;Z)Lcom/android/mms/data/ContactList;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -172,9 +169,6 @@
 
 .method public static getByNumbers(Ljava/lang/String;ZZ)Lcom/android/mms/data/ContactList;
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v9, 0x3b
 
@@ -393,7 +387,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -461,7 +454,6 @@
 
 .method public formatNames(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -539,7 +531,6 @@
 
 .method public formatNamesAndNumbers(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -588,7 +579,6 @@
 
 .method public formatNumbers(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -637,7 +627,6 @@
 
 .method public formattedNames(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -698,8 +687,6 @@
 
 .method public getNumbers(ZZ)[Ljava/lang/String;
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     new-instance v3, Ljava/util/ArrayList;
 

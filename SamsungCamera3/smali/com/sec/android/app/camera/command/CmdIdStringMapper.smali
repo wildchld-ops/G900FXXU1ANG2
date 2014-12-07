@@ -14,7 +14,6 @@
 
 .method public static getString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 

@@ -94,7 +94,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -107,8 +106,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -119,9 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -284,7 +278,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardWidgetFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetFrame;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mPerformAppWidgetSizeUpdateOnBootComplete:Z
 
@@ -293,8 +286,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/KeyguardWidgetFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mPerformAppWidgetSizeUpdateOnBootComplete:Z
 
@@ -303,7 +294,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardWidgetFrame;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetFrame;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardWidgetFrame;->performAppWidgetSizeCallbacksIfNecessary()V
 
@@ -312,7 +302,6 @@
 
 .method private drawGradientOverlay(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mGradientPaint:Landroid/graphics/Paint;
 
@@ -337,7 +326,6 @@
 
 .method private drawHoveringOverDeleteOverlay(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mIsHoveringOverDeleteDropTarget:Z
 
@@ -432,7 +420,6 @@
 
 .method private setWidgetHeight(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -547,7 +534,6 @@
 # virtual methods
 .method public adjustFrame(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
@@ -593,7 +579,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
@@ -612,7 +597,6 @@
 
 .method protected drawBg(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v4, 0x437f0000
 
@@ -705,10 +689,6 @@
 
 .method public fadeFrame(Ljava/lang/Object;ZFI)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
-    .param p3    # F
-    .param p4    # I
 
     const/4 v4, 0x1
 
@@ -875,7 +855,6 @@
 
 .method public hideFrame(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -890,7 +869,6 @@
 
 .method public hideFrameTouched(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -913,7 +891,6 @@
 
 .method public onActive(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -938,7 +915,6 @@
 
 .method public onBouncerShowing(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -965,7 +941,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -1049,8 +1024,6 @@
 
 .method protected onMeasure(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -1061,10 +1034,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -1136,7 +1105,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x3
 
@@ -1216,7 +1184,6 @@
 
 .method public onUserInteraction(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1225,7 +1192,6 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
 
@@ -1261,7 +1227,6 @@
 
 .method public setBackgroundAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mBackgroundAlpha:F
 
@@ -1281,7 +1246,6 @@
 
 .method public setContentAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mContentAlpha:F
 
@@ -1299,7 +1263,6 @@
 
 .method public setFrameHeight(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1376,7 +1339,6 @@
 
 .method setIsHoveringOverDeleteDropTarget(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-boolean v2, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mIsHoveringOverDeleteDropTarget:Z
 
@@ -1428,7 +1390,6 @@
 
 .method public setIsReordering(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mIsReordering:Z
 
@@ -1437,7 +1398,6 @@
 
 .method public setMaxChallengeTop(I)V
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mMaxChallengeTop:I
 
@@ -1503,8 +1463,6 @@
 
 .method setOverScrollAmount(FZ)V
     .locals 3
-    .param p1    # F
-    .param p2    # Z
 
     iget v1, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mOverScrollAmount:F
 
@@ -1566,7 +1524,6 @@
 
 .method public setWidgetLockedSmall(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1582,7 +1539,6 @@
 
 .method public setWorkerHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardWidgetFrame;->mWorkerHandler:Landroid/os/Handler;
 
@@ -1591,7 +1547,6 @@
 
 .method public showFrame(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -1606,7 +1561,6 @@
 
 .method public shrinkWidget(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 

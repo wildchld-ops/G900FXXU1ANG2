@@ -36,7 +36,6 @@
 # virtual methods
 .method public onFinished(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x1
 

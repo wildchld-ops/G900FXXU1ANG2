@@ -36,11 +36,6 @@
 # virtual methods
 .method public onPinBubbleDraw(Lcom/nbi/map/android/MapView;Landroid/graphics/Canvas;III)V
     .locals 1
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity$8;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -56,10 +51,6 @@
 
 .method public onPinBubbleGetRectangle(Lcom/nbi/map/android/MapView;III)Lcom/nbi/map/data/Rectangle;
     .locals 15
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual/range {p1 .. p2}, Lcom/nbi/map/android/MapView;->getPin(I)Lcom/nbi/map/android/Pin;
 
@@ -398,9 +389,6 @@
 
 .method public onPinDragEnd(Lcom/nbi/map/android/MapView;ILcom/nbi/map/data/Coordinates;)Z
     .locals 4
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # I
-    .param p3    # Lcom/nbi/map/data/Coordinates;
 
     iget-object v1, p0, Lcom/samsung/mms/location/LocationMapActivity$8;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -450,8 +438,6 @@
 
 .method public onPinDragRequest(Lcom/nbi/map/android/MapView;I)Z
     .locals 12
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # I
 
     const/4 v11, 0x4
 
@@ -549,9 +535,6 @@
 
 .method public onPinDrop(Lcom/nbi/map/android/MapView;II)Z
     .locals 3
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/samsung/mms/location/LocationMapActivity$8;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -585,8 +568,6 @@
 
 .method public onPinDropped(Lcom/nbi/map/android/MapView;I)V
     .locals 3
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/samsung/mms/location/LocationMapActivity$8;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -619,8 +600,6 @@
 
 .method public onPinSelected(Lcom/nbi/map/android/MapView;I)V
     .locals 6
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # I
 
     const/4 v5, 0x4
 
@@ -679,9 +658,6 @@
 
 .method public onPinTouched(Lcom/nbi/map/android/MapView;IZ)Z
     .locals 6
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v5, 0x3
 
@@ -733,8 +709,6 @@
 
 .method public onPinTrafficBubbleTouched(Lcom/nbi/map/android/MapView;Lcom/nbi/map/data/TrafficIncident;)V
     .locals 0
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # Lcom/nbi/map/data/TrafficIncident;
 
     return-void
 .end method

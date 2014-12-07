@@ -88,9 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/accessibility/IAccessibilityManager;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/accessibility/IAccessibilityManager;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -156,8 +153,6 @@
 
 .method static synthetic access$000(Landroid/view/accessibility/AccessibilityManager;I)V
     .locals 0
-    .param p0    # Landroid/view/accessibility/AccessibilityManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/view/accessibility/AccessibilityManager;->setState(I)V
 
@@ -166,7 +161,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/view/accessibility/AccessibilityManager;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     sget-object v4, Landroid/view/accessibility/AccessibilityManager;->sInstanceSync:Ljava/lang/Object;
 
@@ -334,7 +328,6 @@
 
 .method private setState(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -403,8 +396,6 @@
 # virtual methods
 .method public addAccessibilityInteractionConnection(Landroid/view/IWindow;Landroid/view/accessibility/IAccessibilityInteractionConnection;)I
     .locals 3
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/view/accessibility/IAccessibilityInteractionConnection;
 
     :try_start_0
     iget-object v1, p0, Landroid/view/accessibility/AccessibilityManager;->mService:Landroid/view/accessibility/IAccessibilityManager;
@@ -436,7 +427,6 @@
 
 .method public addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;
 
     sget-object v1, Landroid/view/accessibility/AccessibilityManager;->sListenerSync:Ljava/lang/Object;
 
@@ -465,7 +455,6 @@
 
 .method public addTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
     iget-object v0, p0, Landroid/view/accessibility/AccessibilityManager;->mTouchExplorationStateChangeListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -478,7 +467,6 @@
 
 .method public assistantMenuRegister(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     const-string v1, "AccessibilityManager"
@@ -516,7 +504,6 @@
 
 .method public assistantMenuUpdate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     :try_start_0
     iget-object v1, p0, Landroid/view/accessibility/AccessibilityManager;->mService:Landroid/view/accessibility/IAccessibilityManager;
@@ -620,7 +607,6 @@
 
 .method public getEnabledAccessibilityServiceList(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -797,7 +783,6 @@
 
 .method public removeAccessibilityInteractionConnection(Landroid/view/IWindow;)V
     .locals 3
-    .param p1    # Landroid/view/IWindow;
 
     :try_start_0
     iget-object v1, p0, Landroid/view/accessibility/AccessibilityManager;->mService:Landroid/view/accessibility/IAccessibilityManager;
@@ -823,7 +808,6 @@
 
 .method public removeAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;)Z
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;
 
     sget-object v1, Landroid/view/accessibility/AccessibilityManager;->sListenerSync:Ljava/lang/Object;
 
@@ -852,7 +836,6 @@
 
 .method public removeTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
     iget-object v0, p0, Landroid/view/accessibility/AccessibilityManager;->mTouchExplorationStateChangeListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -865,7 +848,6 @@
 
 .method public sendAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 7
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-boolean v4, p0, Landroid/view/accessibility/AccessibilityManager;->mIsEnabled:Z
 

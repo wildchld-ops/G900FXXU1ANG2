@@ -180,7 +180,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -215,10 +214,6 @@
 
 .method public static addPeriodicSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;J)V
     .locals 6
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # J
 
     const/4 v1, 0x0
 
@@ -318,8 +313,6 @@
 
 .method public static addStatusChangeListener(ILandroid/content/SyncStatusObserver;)Ljava/lang/Object;
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/content/SyncStatusObserver;
 
     if-nez p1, :cond_0
 
@@ -361,8 +354,6 @@
 
 .method public static cancelSync(Landroid/accounts/Account;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -501,8 +492,6 @@
 
 .method public static getIsSyncable(Landroid/accounts/Account;Ljava/lang/String;)I
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -559,7 +548,6 @@
 
 .method public static getMasterSyncAutomaticallyAsUser(I)Z
     .locals 3
-    .param p0    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -588,8 +576,6 @@
 
 .method public static getPeriodicSyncs(Landroid/accounts/Account;Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -658,8 +644,6 @@
 
 .method public static getSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -688,9 +672,6 @@
 
 .method public static getSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;I)Z
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -719,8 +700,6 @@
 
 .method public static getSyncStatus(Landroid/accounts/Account;Ljava/lang/String;)Landroid/content/SyncStatusInfo;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -749,8 +728,6 @@
 
 .method public static isSyncActive(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -779,8 +756,6 @@
 
 .method public static isSyncPending(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -809,30 +784,18 @@
 
 .method private maybeLogQueryToEventLog(JLandroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method private maybeLogUpdateToEventLog(JLandroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public static removePeriodicSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {p2}, Landroid/content/ContentResolver;->validateSyncExtrasBundle(Landroid/os/Bundle;)V
 
@@ -861,7 +824,6 @@
 
 .method public static removeStatusChangeListener(Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -896,9 +858,6 @@
 
 .method public static requestSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p2, :cond_0
 
@@ -938,7 +897,6 @@
 
 .method public static requestSync(Landroid/content/SyncRequest;)V
     .locals 1
-    .param p0    # Landroid/content/SyncRequest;
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -960,7 +918,6 @@
 
 .method private samplePercentForDuration(J)I
     .locals 4
-    .param p1    # J
 
     const-wide/16 v2, 0x1f4
 
@@ -989,9 +946,6 @@
 
 .method public static setIsSyncable(Landroid/accounts/Account;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -1013,10 +967,6 @@
 
 .method public static setIsSyncable(Landroid/accounts/Account;Ljava/lang/String;II)V
     .locals 1
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -1038,7 +988,6 @@
 
 .method public static setMasterSyncAutomatically(Z)V
     .locals 1
-    .param p0    # Z
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -1060,8 +1009,6 @@
 
 .method public static setMasterSyncAutomaticallyAsUser(ZI)V
     .locals 1
-    .param p0    # Z
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -1083,9 +1030,6 @@
 
 .method public static setSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -1107,10 +1051,6 @@
 
 .method public static setSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;ZI)V
     .locals 1
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -1132,7 +1072,6 @@
 
 .method public static syncErrorStringToInt(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1208,7 +1147,6 @@
 
 .method public static syncErrorToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -1240,7 +1178,6 @@
 
 .method public static validateSyncExtrasBundle(Landroid/os/Bundle;)V
     .locals 8
-    .param p0    # Landroid/os/Bundle;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
@@ -1357,7 +1294,6 @@
 # virtual methods
 .method public final acquireContentProviderClient(Landroid/net/Uri;)Landroid/content/ContentProviderClient;
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
 
@@ -1382,7 +1318,6 @@
 
 .method public final acquireContentProviderClient(Ljava/lang/String;)Landroid/content/ContentProviderClient;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireProvider(Ljava/lang/String;)Landroid/content/IContentProvider;
 
@@ -1407,8 +1342,6 @@
 
 .method protected acquireExistingProvider(Landroid/content/Context;Ljava/lang/String;)Landroid/content/IContentProvider;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroid/content/ContentResolver;->acquireProvider(Landroid/content/Context;Ljava/lang/String;)Landroid/content/IContentProvider;
 
@@ -1419,7 +1352,6 @@
 
 .method public final acquireExistingProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -1460,7 +1392,6 @@
 
 .method public final acquireProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -1498,7 +1429,6 @@
 
 .method public final acquireProvider(Ljava/lang/String;)Landroid/content/IContentProvider;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1519,7 +1449,6 @@
 
 .method public final acquireUnstableContentProviderClient(Landroid/net/Uri;)Landroid/content/ContentProviderClient;
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireUnstableProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
 
@@ -1544,7 +1473,6 @@
 
 .method public final acquireUnstableContentProviderClient(Ljava/lang/String;)Landroid/content/ContentProviderClient;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireUnstableProvider(Ljava/lang/String;)Landroid/content/IContentProvider;
 
@@ -1572,7 +1500,6 @@
 
 .method public final acquireUnstableProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -1614,7 +1541,6 @@
 
 .method public final acquireUnstableProvider(Ljava/lang/String;)Landroid/content/IContentProvider;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1635,7 +1561,6 @@
 
 .method public appNotRespondingViaProvider(Landroid/content/IContentProvider;)V
     .locals 2
-    .param p1    # Landroid/content/IContentProvider;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -1648,7 +1573,6 @@
 
 .method public applyBatch(Ljava/lang/String;Ljava/util/ArrayList;)[Landroid/content/ContentProviderResult;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1720,8 +1644,6 @@
 
 .method public final bulkInsert(Landroid/net/Uri;[Landroid/content/ContentValues;)I
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Landroid/content/ContentValues;
 
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
 
@@ -1808,10 +1730,6 @@
 
 .method public final call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -1900,7 +1818,6 @@
 
 .method public cancelSync(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1925,7 +1842,6 @@
 
 .method public final canonicalize(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -1970,16 +1886,12 @@
 
 .method public checkVerizonAPIPermission(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public final delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
 
@@ -2164,7 +2076,6 @@
 
 .method public getResourceId(Landroid/net/Uri;)Landroid/content/ContentResolver$OpenResourceIdResult;
     .locals 11
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -2418,8 +2329,6 @@
 
 .method public getStreamTypes(Landroid/net/Uri;Ljava/lang/String;)[Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2462,7 +2371,6 @@
 
 .method public final getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -2639,8 +2547,6 @@
 
 .method public final insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v11, 0x0
 
@@ -2729,8 +2635,6 @@
 
 .method public notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/ContentObserver;
 
     const/4 v0, 0x1
 
@@ -2741,9 +2645,6 @@
 
 .method public notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;Z)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/ContentObserver;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -2756,10 +2657,6 @@
 
 .method public notifyChange(Landroid/net/Uri;Landroid/database/ContentObserver;ZI)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/ContentObserver;
-    .param p3    # Z
-    .param p4    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -2815,8 +2712,6 @@
 
 .method public final openAssetFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -2834,9 +2729,6 @@
 
 .method public final openAssetFileDescriptor(Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;
     .locals 17
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/CancellationSignal;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3346,8 +3238,6 @@
 
 .method public final openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3365,9 +3255,6 @@
 
 .method public final openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/CancellationSignal;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3425,7 +3312,6 @@
 
 .method public final openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
     .locals 9
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3545,7 +3431,6 @@
 
 .method public final openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
     .locals 1
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3563,8 +3448,6 @@
 
 .method public final openOutputStream(Landroid/net/Uri;Ljava/lang/String;)Ljava/io/OutputStream;
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3603,9 +3486,6 @@
 
 .method public final openTypedAssetFileDescriptor(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/res/AssetFileDescriptor;
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3623,10 +3503,6 @@
 
 .method public final openTypedAssetFileDescriptor(Landroid/net/Uri;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/CancellationSignal;)Landroid/content/res/AssetFileDescriptor;
     .locals 16
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Landroid/os/CancellationSignal;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3970,11 +3846,6 @@
 
 .method public final query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -3999,12 +3870,6 @@
 
 .method public final query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
     .locals 24
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/CancellationSignal;
 
     invoke-virtual/range {p0 .. p1}, Landroid/content/ContentResolver;->acquireUnstableProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
 
@@ -4328,9 +4193,6 @@
 
 .method public final registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Landroid/database/ContentObserver;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -4343,10 +4205,6 @@
 
 .method public final registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Landroid/database/ContentObserver;
-    .param p4    # I
 
     :try_start_0
     invoke-static {}, Landroid/content/ContentResolver;->getContentService()Landroid/content/IContentService;
@@ -4372,8 +4230,6 @@
 
 .method public releasePersistableUriPermission(Landroid/net/Uri;I)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -4401,8 +4257,6 @@
 
 .method public startSync(Landroid/net/Uri;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/os/Bundle;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4453,8 +4307,6 @@
 
 .method public takePersistableUriPermission(Landroid/net/Uri;I)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -4476,7 +4328,6 @@
 
 .method public final uncanonicalize(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -4521,7 +4372,6 @@
 
 .method public final unregisterContentObserver(Landroid/database/ContentObserver;)V
     .locals 2
-    .param p1    # Landroid/database/ContentObserver;
 
     :try_start_0
     invoke-virtual {p1}, Landroid/database/ContentObserver;->releaseContentObserver()Landroid/database/IContentObserver;
@@ -4553,10 +4403,6 @@
 
 .method public final update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/ContentResolver;->acquireProvider(Landroid/net/Uri;)Landroid/content/IContentProvider;
 

@@ -16,7 +16,6 @@
 # virtual methods
 .method public getImage(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

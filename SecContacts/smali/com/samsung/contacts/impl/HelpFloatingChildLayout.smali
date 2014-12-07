@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/quickcontact/FloatingChildLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -24,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)Lcom/samsung/contacts/impl/HelpImpl;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpFloatingChildLayout;->mHelp:Lcom/samsung/contacts/impl/HelpImpl;
 
@@ -33,8 +30,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;Lcom/samsung/contacts/impl/HelpImpl;)Lcom/samsung/contacts/impl/HelpImpl;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
-    .param p1    # Lcom/samsung/contacts/impl/HelpImpl;
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/HelpFloatingChildLayout;->mHelp:Lcom/samsung/contacts/impl/HelpImpl;
 
@@ -43,7 +38,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mChild:Landroid/view/View;
 
@@ -52,7 +46,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     iget v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mForegroundPhase:I
 
@@ -61,8 +54,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mForegroundPhase:I
 
@@ -71,7 +62,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     iget v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mForegroundPhase:I
 
@@ -80,8 +70,6 @@
 
 .method static synthetic access$502(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mForegroundPhase:I
 
@@ -90,7 +78,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     invoke-direct {p0}, Lcom/samsung/contacts/impl/HelpFloatingChildLayout;->showTutorial()V
 
@@ -99,7 +86,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mChild:Landroid/view/View;
 
@@ -108,7 +94,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mChild:Landroid/view/View;
 
@@ -117,7 +102,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/impl/HelpFloatingChildLayout;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpFloatingChildLayout;->mContext:Landroid/content/Context;
 
@@ -147,8 +131,6 @@
 # virtual methods
 .method protected animateScale(ZLjava/lang/Runnable;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/Runnable;
 
     const/high16 v2, 0x3f800000
 
@@ -266,8 +248,6 @@
 
 .method protected setClickListeners(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 

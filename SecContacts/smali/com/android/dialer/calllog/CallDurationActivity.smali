@@ -151,7 +151,6 @@
 
 .method private static formatArabicDuration(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x660
 
@@ -208,7 +207,6 @@
 
 .method private formatDuration(J)Ljava/lang/String;
     .locals 10
-    .param p1    # J
 
     const-wide/16 v2, 0x0
 
@@ -857,7 +855,6 @@
 
 .method private static toTwoDigitChar(J)Ljava/lang/String;
     .locals 4
-    .param p0    # J
 
     const-string v0, "%02d"
 
@@ -884,7 +881,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -1460,7 +1456,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1483,7 +1478,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

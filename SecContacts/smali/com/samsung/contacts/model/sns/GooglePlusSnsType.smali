@@ -78,8 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/contacts/model/RawContact;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/model/RawContact;
 
     invoke-direct {p0}, Lcom/samsung/contacts/model/sns/SnsType;-><init>()V
 
@@ -148,7 +146,6 @@
 
 .method public getSnsFeedItem(Landroid/database/Cursor;)Lcom/samsung/contacts/model/SnsFeeds$SnsFeedItem;
     .locals 14
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v2, 0x7
 

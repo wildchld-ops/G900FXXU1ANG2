@@ -47,8 +47,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;Lcom/samsung/contacts/detail/ContactHistoryListAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
-    .param p2    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;-><init>(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;)V
 
@@ -57,7 +55,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->checkBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -66,8 +63,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Lcom/sec/android/touchwiz/widget/TwCheckBox;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->checkBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -76,7 +71,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->listItemView:Landroid/widget/LinearLayout;
 
@@ -85,8 +79,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Landroid/widget/LinearLayout;)Landroid/widget/LinearLayout;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Landroid/widget/LinearLayout;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->listItemView:Landroid/widget/LinearLayout;
 
@@ -95,7 +87,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->iSendType:Landroid/widget/ImageView;
 
@@ -104,8 +95,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->iSendType:Landroid/widget/ImageView;
 
@@ -114,7 +103,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tTime:Landroid/widget/TextView;
 
@@ -123,8 +111,6 @@
 
 .method static synthetic access$502(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tTime:Landroid/widget/TextView;
 
@@ -133,7 +119,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tDuration:Landroid/widget/TextView;
 
@@ -142,8 +127,6 @@
 
 .method static synthetic access$602(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tDuration:Landroid/widget/TextView;
 
@@ -152,7 +135,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tNumber:Landroid/widget/TextView;
 
@@ -161,8 +143,6 @@
 
 .method static synthetic access$702(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tNumber:Landroid/widget/TextView;
 
@@ -171,7 +151,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tContents:Landroid/widget/TextView;
 
@@ -180,8 +159,6 @@
 
 .method static synthetic access$802(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tContents:Landroid/widget/TextView;
 
@@ -190,7 +167,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->iType:Landroid/widget/ImageView;
 
@@ -199,8 +175,6 @@
 
 .method static synthetic access$902(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->iType:Landroid/widget/ImageView;
 

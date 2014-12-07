@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -45,8 +44,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -57,9 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -108,7 +102,6 @@
 
 .method private getTimeToLock(I)J
     .locals 8
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/keyguard/KeyguardMultiPersonaSelectorView;->context:Landroid/content/Context;
 
@@ -158,7 +151,6 @@
 
 .method private isLocked(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -346,7 +338,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -529,7 +520,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v0, "KeyguardMultiPersonaSelectorView"
 

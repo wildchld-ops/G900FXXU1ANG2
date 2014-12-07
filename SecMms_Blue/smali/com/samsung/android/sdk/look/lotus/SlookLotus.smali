@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -101,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/sdk/look/lotus/SlookLotus;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$ISlookLotusActionListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus;->mSlookLotusActionListener:Lcom/samsung/android/sdk/look/lotus/SlookLotus$ISlookLotusActionListener;
 
@@ -243,7 +241,6 @@
 
 .method public addLeaf(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;
 
     const-string v0, "SlookLotus"
 
@@ -496,7 +493,6 @@
 
 .method public removeGroup(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SlookLotus"
 
@@ -560,7 +556,6 @@
 
 .method public removeLeaf(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SlookLotus"
 
@@ -624,7 +619,6 @@
 
 .method public setSlookLotusActionListener(Lcom/samsung/android/sdk/look/lotus/SlookLotus$ISlookLotusActionListener;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$ISlookLotusActionListener;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus;->mSlookLotusActionListener:Lcom/samsung/android/sdk/look/lotus/SlookLotus$ISlookLotusActionListener;
 
@@ -701,7 +695,6 @@
 
 .method public updateLeaf(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;
 
     const-string v0, "SlookLotus"
 

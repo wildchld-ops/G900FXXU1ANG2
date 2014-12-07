@@ -37,8 +37,6 @@
 
 .method public setFromIndex(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setFromIndex(Ljava/lang/Object;I)V
 
@@ -47,8 +45,6 @@
 
 .method public setItemCount(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setItemCount(Ljava/lang/Object;I)V
 
@@ -57,8 +53,6 @@
 
 .method public setScrollable(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setScrollable(Ljava/lang/Object;Z)V
 
@@ -67,8 +61,6 @@
 
 .method public setSource(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/view/View;
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setSource(Ljava/lang/Object;Landroid/view/View;)V
 
@@ -77,8 +69,6 @@
 
 .method public setToIndex(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setToIndex(Ljava/lang/Object;I)V
 

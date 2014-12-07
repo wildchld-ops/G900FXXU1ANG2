@@ -36,7 +36,6 @@
 # virtual methods
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -73,7 +72,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/samsung/contacts/list/SIMContactPickerFragment$1;->this$0:Lcom/samsung/contacts/list/SIMContactPickerFragment;
 

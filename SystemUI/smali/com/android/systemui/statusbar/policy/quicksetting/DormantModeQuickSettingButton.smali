@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b010e
 
@@ -127,7 +126,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -145,7 +142,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -154,8 +150,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;->setMode(I)V
 
@@ -164,7 +158,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;->mState:Z
 
@@ -173,8 +166,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;->mState:Z
 
@@ -183,7 +174,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;->getMode()I
 
@@ -310,7 +300,6 @@
 
 .method public static isVoiceCapable(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "phone"
 
@@ -341,7 +330,6 @@
 
 .method public static isWifiOnly(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -563,7 +551,6 @@
 
 .method private setMode(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/DormantModeQuickSettingButton;->getMode()I
 
@@ -773,7 +760,6 @@
 
 .method public onClick(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x1
 

@@ -21,9 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/KeyguardViewMediator;Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/os/Handler$Callback;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewMediator$6;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -36,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v2, 0x0
 

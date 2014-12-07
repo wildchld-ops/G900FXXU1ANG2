@@ -35,7 +35,6 @@
 # virtual methods
 .method handleStartTag(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
 
     const/4 v4, 0x0
 

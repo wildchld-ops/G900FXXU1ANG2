@@ -386,7 +386,6 @@
 
 .method private isFunctionKey(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -562,7 +561,6 @@
 # virtual methods
 .method public getKeySection(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/effect/HapticSoundEffectController;->isFunctionKey(I)Z
 
@@ -653,7 +651,6 @@
 
 .method public playKeySound(I)V
     .locals 8
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/effect/HapticSoundEffectController;->mSoundEffectOn:Z
 
@@ -741,8 +738,6 @@
 
 .method public playKeySound(IZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/effect/HapticSoundEffectController;->mSoundEffectOn:Z
 
@@ -898,7 +893,6 @@
 
 .method public setSoundEffectOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/effect/HapticSoundEffectController;->mSoundEffectOn:Z
 

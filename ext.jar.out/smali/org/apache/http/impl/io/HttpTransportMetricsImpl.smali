@@ -35,7 +35,6 @@
 
 .method public incrementBytesTransferred(J)V
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Lorg/apache/http/impl/io/HttpTransportMetricsImpl;->bytesTransferred:J
 
@@ -58,7 +57,6 @@
 
 .method public setBytesTransferred(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lorg/apache/http/impl/io/HttpTransportMetricsImpl;->bytesTransferred:J
 

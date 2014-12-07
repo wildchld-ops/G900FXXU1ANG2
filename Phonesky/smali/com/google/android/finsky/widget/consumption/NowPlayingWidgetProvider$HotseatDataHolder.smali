@@ -37,7 +37,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;->mHasDismissedHotseat:Z
 
@@ -46,8 +45,6 @@
 
 .method private static flushData(ILcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;)V
     .locals 5
-    .param p0    # I
-    .param p1    # Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;
 
     const-string v0, ""
 
@@ -224,7 +221,6 @@
 
 .method public static loadDataFromDisk(I)Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;
     .locals 12
-    .param p0    # I
 
     const/4 v11, 0x1
 
@@ -392,8 +388,6 @@
 
 .method public static writeBackendChecked(II)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -442,7 +436,6 @@
 
 .method public static writeHotseatDismissed(I)V
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;->loadDataFromDisk(I)Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider$HotseatDataHolder;
 
@@ -461,7 +454,6 @@
 # virtual methods
 .method public isBackendChecked(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

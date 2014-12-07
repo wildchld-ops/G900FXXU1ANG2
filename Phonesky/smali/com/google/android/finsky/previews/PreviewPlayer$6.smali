@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 2
-    .param p1    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer$6;->this$0:Lcom/google/android/finsky/previews/PreviewPlayer;
 

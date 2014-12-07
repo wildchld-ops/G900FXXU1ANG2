@@ -133,7 +133,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/mms/ui/AutoSendingTestActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mBtAttach:Landroid/widget/Button;
 
@@ -142,8 +141,6 @@
 
 .method static synthetic access$1102(Lcom/samsung/mms/ui/AutoSendingTestActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mContentType:Ljava/lang/String;
 
@@ -152,8 +149,6 @@
 
 .method static synthetic access$1202(Lcom/samsung/mms/ui/AutoSendingTestActivity;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mMediaUri:Landroid/net/Uri;
 
@@ -162,7 +157,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/mms/ui/AutoSendingTestActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     invoke-direct {p0}, Lcom/samsung/mms/ui/AutoSendingTestActivity;->createRecipientDialog()V
 
@@ -171,7 +165,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/mms/ui/AutoSendingTestActivity;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     invoke-direct {p0}, Lcom/samsung/mms/ui/AutoSendingTestActivity;->getAddressPreference()[Ljava/lang/String;
 
@@ -182,7 +175,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/mms/ui/AutoSendingTestActivity;)Lcom/android/mms/model/SlideshowModel;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mSlideshow:Lcom/android/mms/model/SlideshowModel;
 
@@ -191,12 +183,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/mms/ui/AutoSendingTestActivity;Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;J)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p3    # Lcom/android/mms/model/SlideshowModel;
-    .param p4    # Lcom/google/android/mms/pdu/SendReq;
-    .param p5    # J
 
     invoke-direct/range {p0 .. p6}, Lcom/samsung/mms/ui/AutoSendingTestActivity;->sendMmsWorker(Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;J)V
 
@@ -205,7 +191,6 @@
 
 .method static synthetic access$200(Lcom/samsung/mms/ui/AutoSendingTestActivity;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     invoke-direct {p0}, Lcom/samsung/mms/ui/AutoSendingTestActivity;->getSharedPreference()Landroid/content/SharedPreferences;
 
@@ -216,7 +201,6 @@
 
 .method static synthetic access$300(Lcom/samsung/mms/ui/AutoSendingTestActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mContext:Landroid/content/Context;
 
@@ -233,7 +217,6 @@
 
 .method static synthetic access$502(Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
-    .param p0    # Landroid/app/Dialog;
 
     sput-object p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mDialogPassword:Landroid/app/Dialog;
 
@@ -242,7 +225,6 @@
 
 .method static synthetic access$600(Lcom/samsung/mms/ui/AutoSendingTestActivity;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mEditRecipient:Landroid/widget/EditText;
 
@@ -251,7 +233,6 @@
 
 .method static synthetic access$700(Lcom/samsung/mms/ui/AutoSendingTestActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     iget-boolean v0, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->bSendingFlag:Z
 
@@ -260,7 +241,6 @@
 
 .method static synthetic access$800(Lcom/samsung/mms/ui/AutoSendingTestActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/mms/ui/AutoSendingTestActivity;
 
     invoke-direct {p0}, Lcom/samsung/mms/ui/AutoSendingTestActivity;->startSendMessage()V
 
@@ -277,7 +257,6 @@
 
 .method static synthetic access$902(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Landroid/app/AlertDialog;
 
     sput-object p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->alertDialog:Landroid/app/AlertDialog;
 
@@ -286,9 +265,6 @@
 
 .method private static createDraftMmsMessage(Lcom/google/android/mms/pdu/PduPersister;Lcom/google/android/mms/pdu/SendReq;Lcom/android/mms/model/SlideshowModel;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p1    # Lcom/google/android/mms/pdu/SendReq;
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
 
     :try_start_0
     invoke-virtual {p2}, Lcom/android/mms/model/SlideshowModel;->toPduBody()Lcom/google/android/mms/pdu/PduBody;
@@ -964,7 +940,6 @@
 
 .method private static makeSendReq([Ljava/lang/String;)Lcom/google/android/mms/pdu/SendReq;
     .locals 6
-    .param p0    # [Ljava/lang/String;
 
     new-instance v1, Lcom/google/android/mms/pdu/SendReq;
 
@@ -994,7 +969,6 @@
 
 .method private onClickedIsMMS(Landroid/widget/CheckBox;)V
     .locals 5
-    .param p1    # Landroid/widget/CheckBox;
 
     const/4 v4, 0x1
 
@@ -1084,8 +1058,6 @@
 
 .method private resizeMedia(Lcom/android/mms/model/ImageModel;I)V
     .locals 5
-    .param p1    # Lcom/android/mms/model/ImageModel;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1155,7 +1127,6 @@
 
 .method private saveAddressPreference(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1257,11 +1228,6 @@
 
 .method private sendMmsWorker(Landroid/net/Uri;Lcom/google/android/mms/pdu/PduPersister;Lcom/android/mms/model/SlideshowModel;Lcom/google/android/mms/pdu/SendReq;J)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p3    # Lcom/android/mms/model/SlideshowModel;
-    .param p4    # Lcom/google/android/mms/pdu/SendReq;
-    .param p5    # J
 
     new-instance v1, Lcom/android/mms/transaction/MmsMessageSender;
 
@@ -1323,7 +1289,6 @@
 
 .method private showDialogPassword(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     sget-object v7, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mDialogPassword:Landroid/app/Dialog;
 
@@ -1993,7 +1958,6 @@
 
 .method private startSendMessage(Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -2185,7 +2149,6 @@
 # virtual methods
 .method public AttachButtonChange(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->mBtAttach:Landroid/widget/Button;
 
@@ -2243,9 +2206,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/samsung/mms/ui/AutoSendingTestActivity;->TAG:Ljava/lang/String;
 
@@ -2426,7 +2386,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     instance-of v1, p1, Landroid/widget/CheckBox;
 
@@ -2448,7 +2407,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -2543,7 +2501,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v7, 0x1
 
@@ -2745,7 +2702,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 

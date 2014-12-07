@@ -44,7 +44,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/AuthenticatedActivity$7;->this$0:Lcom/google/android/finsky/activities/AuthenticatedActivity;
 
@@ -59,7 +58,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Toc$TocResponse;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/Toc$TocResponse;
 
     const/4 v4, 0x1
 

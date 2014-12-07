@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -130,7 +129,6 @@
 
 .method private trimToSize(I)V
     .locals 6
-    .param p1    # I
 
     :goto_0
     iget v3, p0, Lcom/google/android/finsky/utils/LruCache;->size:I

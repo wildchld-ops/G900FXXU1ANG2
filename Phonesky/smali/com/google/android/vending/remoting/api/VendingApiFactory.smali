@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/volley/RequestQueue;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/volley/RequestQueue;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +42,6 @@
 
 .method private getApiContext(Landroid/accounts/Account;)Lcom/google/android/vending/remoting/api/VendingApiContext;
     .locals 19
-    .param p1    # Landroid/accounts/Account;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -173,7 +170,6 @@
 # virtual methods
 .method public getApi(Ljava/lang/String;)Lcom/google/android/vending/remoting/api/VendingApi;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/android/vending/remoting/api/VendingApiFactory;->mVendingApiMap:Ljava/util/Map;
 

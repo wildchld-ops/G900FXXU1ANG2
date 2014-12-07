@@ -14,7 +14,6 @@
 
 .method public static setTouchListenerForSoundEffect(Landroid/view/View;)V
     .locals 2
-    .param p0    # Landroid/view/View;
 
     instance-of v0, p0, Landroid/widget/SearchView;
 

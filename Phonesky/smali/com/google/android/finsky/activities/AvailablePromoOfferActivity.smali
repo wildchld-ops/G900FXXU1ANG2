@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -35,7 +34,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;)Lcom/google/android/finsky/protos/CheckPromoOffer$AvailablePromoOffer;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;->mAvailablePromoOffer:Lcom/google/android/finsky/protos/CheckPromoOffer$AvailablePromoOffer;
 
@@ -44,7 +42,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;->mAccountName:Ljava/lang/String;
 
@@ -53,7 +50,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -62,7 +58,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;->setResultAndFinish()V
 
@@ -131,8 +126,6 @@
 
 .method public static getIntent(Ljava/lang/String;Lcom/google/android/finsky/protos/CheckPromoOffer$AvailablePromoOffer;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/protos/CheckPromoOffer$AvailablePromoOffer;
 
     new-instance v1, Landroid/os/Bundle;
 
@@ -169,7 +162,6 @@
 
 .method private replaceUrlsWithHandlers(Ljava/lang/CharSequence;)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v10, 0x0
 
@@ -249,7 +241,6 @@
 # virtual methods
 .method public getDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -286,9 +277,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v1, 0x64
 
@@ -330,7 +318,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -433,16 +420,12 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v0, 0x65
 
@@ -923,7 +906,6 @@
 
 .method public showUrlWebView(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 

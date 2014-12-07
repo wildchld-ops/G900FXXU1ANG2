@@ -37,7 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/services/RestoreService$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/services/RestoreService$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/services/RestoreService$PackageInstallStatus;-><init>()V
 

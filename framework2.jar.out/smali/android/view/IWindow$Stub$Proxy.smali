@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public closeSystemDialogs(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,9 +87,6 @@
 
 .method public dispatchAirButtonHitTest(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -139,7 +134,6 @@
 
 .method public dispatchAppVisibility(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -193,7 +187,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)V
     .locals 5
-    .param p1    # Landroid/view/DragEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -297,7 +290,6 @@
 
 .method public dispatchScreenState(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -351,7 +343,6 @@
 
 .method public dispatchSmartClipDataExtractionEvent(Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -414,10 +405,6 @@
 
 .method public dispatchSystemUiVisibilityChanged(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -467,12 +454,6 @@
 
 .method public dispatchWallpaperCommand(Ljava/lang/String;IIILandroid/os/Bundle;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -557,11 +538,6 @@
 
 .method public dispatchWallpaperOffsets(FFFFZ)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -664,9 +640,6 @@
 
 .method public executeCommand(Ljava/lang/String;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -741,8 +714,6 @@
 
 .method public moved(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -788,12 +759,6 @@
 
 .method public resized(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ZLandroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Z
-    .param p6    # Landroid/content/res/Configuration;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -945,8 +910,6 @@
 
 .method public windowFocusChanged(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -21,7 +21,6 @@
 # direct methods
 .method private constructor <init>(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
@@ -34,8 +33,6 @@
 
 .method synthetic constructor <init>(Ljava/io/InputStream;Lcom/android/volley/toolbox/DiskBasedCache$1;)V
     .locals 0
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Lcom/android/volley/toolbox/DiskBasedCache$1;
 
     invoke-direct {p0, p1}, Lcom/android/volley/toolbox/DiskBasedCache$CountingInputStream;-><init>(Ljava/io/InputStream;)V
 
@@ -44,7 +41,6 @@
 
 .method static synthetic access$100(Lcom/android/volley/toolbox/DiskBasedCache$CountingInputStream;)I
     .locals 1
-    .param p0    # Lcom/android/volley/toolbox/DiskBasedCache$CountingInputStream;
 
     iget v0, p0, Lcom/android/volley/toolbox/DiskBasedCache$CountingInputStream;->bytesRead:I
 
@@ -81,9 +77,6 @@
 
 .method public read([BII)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

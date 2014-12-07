@@ -133,7 +133,6 @@
 
 .method private checkWaitingForVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 6
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     const/4 v5, 0x0
 
@@ -340,7 +339,6 @@
 
 .method public getImage(Lcom/voovio/sweep/Voovio;)Z
     .locals 30
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -952,7 +950,6 @@
 
 .method public isWaitingForReady(Lcom/voovio/sweep/Transition;)Z
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Transition;
 
     iget-object v0, p0, Lcom/voovio/sweep/ResourceManager;->m_oWaitingForTransition:Lcom/voovio/sweep/Transition;
 
@@ -971,7 +968,6 @@
 
 .method public isWaitingForReady(Lcom/voovio/sweep/Voovio;)Z
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     iget-object v0, p0, Lcom/voovio/sweep/ResourceManager;->m_oWaitingForVoovio:Lcom/voovio/sweep/Voovio;
 
@@ -1217,7 +1213,6 @@
 
 .method public prepareVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     const/4 v2, 0x0
 
@@ -1260,7 +1255,6 @@
 
 .method public setCurrentVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 7
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     iget-object v5, p0, Lcom/voovio/sweep/ResourceManager;->m_oSweep:Lcom/voovio/sweep/Sweep;
 
@@ -1377,7 +1371,6 @@
 
 .method public setListener(Lcom/voovio/sweep/ResourceManager$OnReadyListener;)V
     .locals 0
-    .param p1    # Lcom/voovio/sweep/ResourceManager$OnReadyListener;
 
     iput-object p1, p0, Lcom/voovio/sweep/ResourceManager;->m_oListener:Lcom/voovio/sweep/ResourceManager$OnReadyListener;
 
@@ -1386,8 +1379,6 @@
 
 .method public setState(Lcom/voovio/sweep/Voovio;I)V
     .locals 5
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # I
 
     const/4 v4, -0x1
 
@@ -1461,7 +1452,6 @@
 
 .method public setSweep(Lcom/voovio/sweep/Sweep;)V
     .locals 7
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     invoke-virtual {p0}, Lcom/voovio/sweep/ResourceManager;->ClearQueue()V
 
@@ -1615,7 +1605,6 @@
 
 .method public waitForReady(Lcom/voovio/sweep/Transition;)V
     .locals 2
-    .param p1    # Lcom/voovio/sweep/Transition;
 
     iput-object p1, p0, Lcom/voovio/sweep/ResourceManager;->m_oWaitingForTransition:Lcom/voovio/sweep/Transition;
 
@@ -1655,7 +1644,6 @@
 
 .method public waitForReady(Lcom/voovio/sweep/Voovio;)V
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     iput-object p1, p0, Lcom/voovio/sweep/ResourceManager;->m_oWaitingForVoovio:Lcom/voovio/sweep/Voovio;
 

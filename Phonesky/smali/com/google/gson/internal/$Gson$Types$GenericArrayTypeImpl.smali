@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/reflect/Type;)V
     .locals 1
-    .param p1    # Ljava/lang/reflect/Type;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +45,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
 

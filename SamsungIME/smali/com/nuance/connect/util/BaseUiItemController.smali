@@ -25,7 +25,6 @@
 # virtual methods
 .method public getDisplayStateForItem(Lcom/nuance/connect/util/BaseUiItemController$IUiItem;)Lcom/nuance/connect/util/BaseUiItemController$MenuDisplayState;
     .locals 1
-    .param p1    # Lcom/nuance/connect/util/BaseUiItemController$IUiItem;
 
     sget-object v0, Lcom/nuance/connect/util/BaseUiItemController$MenuDisplayState;->HIDDEN:Lcom/nuance/connect/util/BaseUiItemController$MenuDisplayState;
 

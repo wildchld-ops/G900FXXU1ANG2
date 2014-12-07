@@ -20,8 +20,6 @@
 # virtual methods
 .method public hideFragment(Landroid/support/v4/app/Fragment;Z)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/ChallengeActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -53,8 +51,6 @@
 
 .method public onError(Lcom/google/android/finsky/billing/BillingFlow;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlow;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -78,9 +74,6 @@
 
 .method public onFinished(Lcom/google/android/finsky/billing/BillingFlow;ZLandroid/os/Bundle;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlow;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
 
     if-eqz p2, :cond_0
 
@@ -113,7 +106,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -124,9 +116,6 @@
 
 .method public persistFragment(Landroid/os/Bundle;Ljava/lang/String;Landroid/support/v4/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/support/v4/app/Fragment;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/ChallengeActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -139,8 +128,6 @@
 
 .method public restoreFragment(Landroid/os/Bundle;Ljava/lang/String;)Landroid/support/v4/app/Fragment;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/ChallengeActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -155,8 +142,6 @@
 
 .method public showDialogFragment(Landroid/support/v4/app/DialogFragment;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/support/v4/app/DialogFragment;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/ChallengeActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -194,9 +179,6 @@
 
 .method public showFragment(Landroid/support/v4/app/Fragment;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/ChallengeActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -224,7 +206,6 @@
 
 .method public showProgress(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

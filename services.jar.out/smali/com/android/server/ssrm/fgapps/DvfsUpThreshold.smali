@@ -120,8 +120,6 @@
 # virtual methods
 .method addExceptionPackage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/fgapps/DvfsUpThreshold;->mUpThresholdExceptionMap:Ljava/util/HashMap;
 
@@ -201,7 +199,6 @@
 
 .method isExceptionPackage(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -269,16 +266,12 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onStatusNotiReceived(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "FullScreen"
 
@@ -320,7 +313,6 @@
 
 .method public setBrowserBenchmark(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/fgapps/DvfsUpThreshold;->TAG:Ljava/lang/String;
 
@@ -365,7 +357,6 @@
 
 .method protected updateThresholdSysFS(I)V
     .locals 6
-    .param p1    # I
 
     const-string v0, "/sys/devices/system/cpu/cpufreq/ondemand/up_threshold_h"
 

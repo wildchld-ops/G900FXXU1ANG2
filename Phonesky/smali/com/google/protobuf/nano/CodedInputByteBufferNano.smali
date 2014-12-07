@@ -28,9 +28,6 @@
 # direct methods
 .method private constructor <init>([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +58,6 @@
 
 .method public static newInstance([B)Lcom/google/protobuf/nano/CodedInputByteBufferNano;
     .locals 2
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -76,9 +72,6 @@
 
 .method public static newInstance([BII)Lcom/google/protobuf/nano/CodedInputByteBufferNano;
     .locals 1
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/google/protobuf/nano/CodedInputByteBufferNano;
 
@@ -133,7 +126,6 @@
 # virtual methods
 .method public checkLastTagWas(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/nano/InvalidProtocolBufferNanoException;
@@ -212,7 +204,6 @@
 
 .method public popLimit(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/protobuf/nano/CodedInputByteBufferNano;->currentLimit:I
 
@@ -223,7 +214,6 @@
 
 .method public pushLimit(I)I
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/nano/InvalidProtocolBufferNanoException;
@@ -390,8 +380,6 @@
 
 .method public readGroup(Lcom/google/protobuf/nano/MessageNano;I)V
     .locals 2
-    .param p1    # Lcom/google/protobuf/nano/MessageNano;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -468,7 +456,6 @@
 
 .method public readMessage(Lcom/google/protobuf/nano/MessageNano;)V
     .locals 4
-    .param p1    # Lcom/google/protobuf/nano/MessageNano;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -555,7 +542,6 @@
 
 .method public readRawBytes(I)[B
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1073,7 +1059,6 @@
 
 .method public rewindToPosition(I)V
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Lcom/google/protobuf/nano/CodedInputByteBufferNano;->bufferPos:I
 
@@ -1162,7 +1147,6 @@
 
 .method public skipField(I)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1270,7 +1254,6 @@
 
 .method public skipRawBytes(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -621,7 +621,6 @@
 
 .method private getCallerName(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getContext()Landroid/content/Context;
 
@@ -973,8 +972,6 @@
 
 .method private maintainIncomingState(ILcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -1477,7 +1474,6 @@
 
 .method private showCallRoamingGuardDialog(Lcom/android/services/telephony/common/Call;)V
     .locals 7
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const v6, 0x7f070193
 
@@ -1657,7 +1653,6 @@
 
 .method private startActivity(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getContext()Landroid/content/Context;
@@ -1798,7 +1793,6 @@
 
 .method public dismissCallRoamingGuardDialog(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -1816,7 +1810,6 @@
 
 .method public hangUpThenAnswer(I)V
     .locals 5
-    .param p1    # I
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2199,7 +2192,6 @@
 
 .method public onCallListChange(Lcom/android/incallui/CallList;)V
     .locals 4
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v2, 0x1
 
@@ -2301,7 +2293,6 @@
 
 .method public onCallStateChanged(Lcom/android/services/telephony/common/Call;)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v4, 0x1
 
@@ -2567,7 +2558,6 @@
 
 .method public onDisconnect(Lcom/android/services/telephony/common/Call;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v3, 0x0
 
@@ -2730,7 +2720,6 @@
 
 .method public onHangUpThenAnswer(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     iget v0, p0, Lcom/android/incallui/AnswerPresenter;->mCallId:I
 
@@ -2760,7 +2749,6 @@
 
 .method public onIncomingCall(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2825,7 +2813,6 @@
 
 .method public onUiReady(Lcom/android/incallui/AnswerPresenter$AnswerUi;)V
     .locals 5
-    .param p1    # Lcom/android/incallui/AnswerPresenter$AnswerUi;
 
     const/4 v4, 0x0
 
@@ -2901,7 +2888,6 @@
 
 .method public bridge synthetic onUiReady(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/AnswerPresenter$AnswerUi;
 
@@ -3017,7 +3003,6 @@
 
 .method public onUiUnready(Lcom/android/incallui/AnswerPresenter$AnswerUi;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/AnswerPresenter$AnswerUi;
 
     invoke-super {p0, p1}, Lcom/android/incallui/Presenter;->onUiUnready(Lcom/android/incallui/Ui;)V
 
@@ -3047,7 +3032,6 @@
 
 .method public bridge synthetic onUiUnready(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/AnswerPresenter$AnswerUi;
 
@@ -3098,7 +3082,6 @@
 
 .method public rejectCallWithMessage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "sendTextToDefaultActivity()..."
 
@@ -3168,7 +3151,6 @@
 
 .method public setConfigurationLocale(Ljava/util/Locale;)Ljava/util/Locale;
     .locals 6
-    .param p1    # Ljava/util/Locale;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -3243,7 +3225,6 @@
 
 .method public startAirMotionAnimation(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 

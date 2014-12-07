@@ -35,8 +35,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/storedvalue/StoredValueTopUpActivity$ListSidecar;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/billing/storedvalue/StoredValueTopUpActivity$ListSidecar;->newInstance(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/storedvalue/StoredValueTopUpActivity$ListSidecar;
 
@@ -47,8 +45,6 @@
 
 .method private static newInstance(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/storedvalue/StoredValueTopUpActivity$ListSidecar;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -132,7 +128,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -249,7 +244,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/storedvalue/StoredValueTopUpActivity$ListSidecar;->mLastError:Lcom/android/volley/VolleyError;
 
@@ -264,7 +258,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -279,7 +272,6 @@
 
 .method protected restoreFromSavedInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->restoreFromSavedInstanceState(Landroid/os/Bundle;)V
 

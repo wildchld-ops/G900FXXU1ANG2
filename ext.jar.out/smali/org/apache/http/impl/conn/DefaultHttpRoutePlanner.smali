@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/conn/scheme/SchemeRegistry;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public determineRoute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/conn/routing/HttpRoute;
     .locals 8
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;

@@ -14,7 +14,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 1
-    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -32,7 +31,6 @@
 
 .method private test([Ljava/lang/String;)V
     .locals 7
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

@@ -36,7 +36,6 @@
 # virtual methods
 .method public handleAttemptLockout(J)V
     .locals 9
-    .param p1    # J
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 

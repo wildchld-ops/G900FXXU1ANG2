@@ -44,11 +44,6 @@
 
 .method public static composeQuickContactsIntent(Landroid/content/Context;Landroid/graphics/Rect;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
 
     move-object v0, p0
 
@@ -109,11 +104,6 @@
 
 .method public static composeQuickContactsIntent(Landroid/content/Context;Landroid/view/View;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/content/Intent;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -210,11 +200,6 @@
 
 .method public static showQuickContact(Landroid/content/Context;Landroid/graphics/Rect;Landroid/net/Uri;I[Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/provider/ContactsContract$QuickContact;->composeQuickContactsIntent(Landroid/content/Context;Landroid/graphics/Rect;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/content/Intent;
 
@@ -227,11 +212,6 @@
 
 .method public static showQuickContact(Landroid/content/Context;Landroid/view/View;Landroid/net/Uri;I[Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/provider/ContactsContract$QuickContact;->composeQuickContactsIntent(Landroid/content/Context;Landroid/view/View;Landroid/net/Uri;I[Ljava/lang/String;)Landroid/content/Intent;
 

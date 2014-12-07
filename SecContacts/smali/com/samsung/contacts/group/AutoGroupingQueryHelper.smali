@@ -57,8 +57,6 @@
 # virtual methods
 .method public getGroupCountcursor(Landroid/content/Context;I)Landroid/database/Cursor;
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v11, 0x0
 

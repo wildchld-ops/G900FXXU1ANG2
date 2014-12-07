@@ -104,7 +104,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mDeviceList:Landroid/preference/PreferenceScreen;
 
@@ -113,8 +112,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -123,7 +120,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->removeSelectedList()V
 
@@ -132,7 +128,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mSelectAllCheck:Landroid/view/View;
 
@@ -141,7 +136,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mCurrentSelected:Landroid/preference/Preference;
 
@@ -150,8 +144,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -160,7 +152,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mActivity:Landroid/app/Activity;
 
@@ -169,7 +160,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mAddButton:Landroid/view/View;
 
@@ -186,7 +176,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mDeleteClicked:Z
 
@@ -195,7 +184,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->startDeletePreference()V
 
@@ -204,7 +192,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mDeleteButton:Landroid/view/View;
 
@@ -213,7 +200,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->isKmodelUI:Z
 
@@ -222,7 +208,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->changeActionBar()V
 
@@ -231,7 +216,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->isAnyDeviceChecked()Z
 
@@ -738,7 +722,6 @@
 
 .method private updateEmptyView(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -786,7 +769,6 @@
 
 .method private updateOptionsMenuIcon(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, -0x2
 
@@ -837,7 +819,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1284,8 +1265,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget v4, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mDialogType:I
 
@@ -1372,7 +1351,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x2
 
@@ -1429,7 +1407,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1446,7 +1423,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x3
 
@@ -1585,8 +1561,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x5
 
@@ -1695,7 +1669,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 7
-    .param p1    # Landroid/view/MenuItem;
 
     const/16 v6, 0xa
 
@@ -1813,8 +1786,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -1857,8 +1828,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 
@@ -1943,7 +1912,6 @@
 
 .method public removeSelectedDevice(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedList;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -1989,8 +1957,6 @@
 
 .method public showAlreadyInTableToast(Ljava/lang/String;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x1
 

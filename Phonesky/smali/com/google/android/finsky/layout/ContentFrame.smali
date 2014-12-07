@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -25,8 +24,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -37,9 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/16 v7, 0x8
 
@@ -114,8 +108,6 @@
 
 .method public setDataLayout(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ContentFrame;->mInflater:Landroid/view/LayoutInflater;
 
@@ -126,9 +118,6 @@
 
 .method public setDataLayout(Landroid/view/LayoutInflater;II)V
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p2, :cond_0
 

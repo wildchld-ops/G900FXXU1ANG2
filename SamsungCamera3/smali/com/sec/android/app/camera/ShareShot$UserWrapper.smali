@@ -182,7 +182,6 @@
 
 .method private contain(Lcom/samsung/shareshot/User;Ljava/util/List;)Z
     .locals 4
-    .param p1    # Lcom/samsung/shareshot/User;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -294,7 +293,6 @@
 # virtual methods
 .method public changeUser(Lcom/samsung/shareshot/User;)V
     .locals 5
-    .param p1    # Lcom/samsung/shareshot/User;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/ShareShot$UserWrapper;->this$0:Lcom/sec/android/app/camera/ShareShot;
 
@@ -551,7 +549,6 @@
 
 .method public getUserFromList(I)Lcom/samsung/shareshot/User;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -616,7 +613,6 @@
 
 .method public searchUser(Ljava/lang/String;)Lcom/samsung/shareshot/User;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/sec/android/app/camera/ShareShot$UserWrapper;->this$0:Lcom/sec/android/app/camera/ShareShot;
 
@@ -694,8 +690,6 @@
 
 .method public selectUser(Lcom/samsung/shareshot/User;Z)V
     .locals 3
-    .param p1    # Lcom/samsung/shareshot/User;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/ShareShot$UserWrapper;->this$0:Lcom/sec/android/app/camera/ShareShot;
 

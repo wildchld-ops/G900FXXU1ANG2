@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/LinearLayout;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/LinearLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/impl/CallDetailImpl;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/CallDetailImpl;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/CallDetailImpl;->mContext:Landroid/content/Context;
 
@@ -64,8 +61,6 @@
 # virtual methods
 .method public setCustomDetailHistoryInfo(Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;Landroid/widget/RelativeLayout;)V
     .locals 2
-    .param p1    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p2    # Landroid/widget/RelativeLayout;
 
     invoke-static {}, Lcom/samsung/contacts/model/rcs/RcsUtils;->isRCSeFeatureEnabled()Z
 
@@ -109,16 +104,12 @@
 
 .method public setCustomDetailInfo([Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;Landroid/widget/RelativeLayout;Lcom/android/dialer/calllog/PhoneNumberHelper;)V
     .locals 0
-    .param p1    # [Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p2    # Landroid/widget/RelativeLayout;
-    .param p3    # Lcom/android/dialer/calllog/PhoneNumberHelper;
 
     return-void
 .end method
 
 .method public setCustomListener(Lcom/android/dialer/CallDetailActivity$ViewEntry;)V
     .locals 3
-    .param p1    # Lcom/android/dialer/CallDetailActivity$ViewEntry;
 
     const/4 v2, 0x0
 

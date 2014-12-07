@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -167,7 +166,6 @@
 
 .method public gatherTransparentRegion(Landroid/graphics/Region;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Region;
 
     const/4 v0, 0x0
 
@@ -184,8 +182,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const-string v1, "CircleUnlockRipple"
 
@@ -229,8 +225,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -239,8 +233,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     return-void
 .end method
@@ -259,7 +251,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -335,7 +326,6 @@
 
 .method public setContextualWallpaper(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_0
 
@@ -359,7 +349,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -390,8 +379,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "CircleUnlockRipple"
 

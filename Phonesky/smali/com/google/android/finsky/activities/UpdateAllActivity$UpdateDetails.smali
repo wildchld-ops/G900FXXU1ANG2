@@ -72,7 +72,6 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -177,9 +176,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/installer/InstallPolicies$UpdateWarnings;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/installer/InstallPolicies$UpdateWarnings;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -244,7 +240,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;->packageName:Ljava/lang/String;
 
@@ -253,7 +248,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;->packageTitle:Ljava/lang/String;
 
@@ -262,7 +256,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;->permissions:Ljava/util/ArrayList;
 
@@ -271,7 +264,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;
 
     iget v0, p0, Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;->versionCode:I
 
@@ -280,7 +272,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/UpdateAllActivity$UpdateDetails;->reason:Ljava/lang/String;
 
@@ -379,8 +370,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

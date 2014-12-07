@@ -87,7 +87,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mGroupsToDelete:Ljava/util/ArrayList;
 
@@ -96,7 +95,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;)Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$ListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mAdapter:Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$ListAdapter;
 
@@ -113,7 +111,6 @@
 
 .method static synthetic access$202(Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mContext:Landroid/content/Context;
 
@@ -122,8 +119,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->configureEmptyView(Z)V
 
@@ -132,8 +127,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->showSelectAllHeader(Z)V
 
@@ -142,7 +135,6 @@
 
 .method static synthetic access$502(Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
     .locals 0
-    .param p0    # Ljava/lang/ref/WeakReference;
 
     sput-object p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mProgress:Ljava/lang/ref/WeakReference;
 
@@ -151,7 +143,6 @@
 
 .method private addGroup(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mGroupsToDelete:Ljava/util/ArrayList;
 
@@ -162,7 +153,6 @@
 
 .method private configureEmptyView(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v1, 0x8
 
@@ -277,7 +267,6 @@
 
 .method private removeGroup(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mGroupsToDelete:Ljava/util/ArrayList;
 
@@ -288,8 +277,6 @@
 
 .method private setDoneButton(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -321,7 +308,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mSelectAllHeaderView:Landroid/view/View;
 
@@ -347,7 +333,6 @@
 
 .method private updateSelectAll(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -537,7 +522,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -554,7 +538,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -601,9 +584,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v4, 0x8
 
@@ -764,9 +744,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -982,7 +959,6 @@
 
 .method public setMultipleDeletionUpdateListener(Lcom/samsung/contacts/listener/ButtonUpdateListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/ButtonUpdateListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;->mListener:Lcom/samsung/contacts/listener/ButtonUpdateListener;
 

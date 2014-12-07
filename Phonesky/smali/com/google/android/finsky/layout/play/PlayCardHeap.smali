@@ -37,8 +37,6 @@
 # virtual methods
 .method public getCard(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;Landroid/view/LayoutInflater;)Lcom/google/android/play/layout/PlayCardViewBase;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;
-    .param p2    # Landroid/view/LayoutInflater;
 
     const/4 v3, 0x0
 
@@ -96,7 +94,6 @@
 
 .method public recycle(Lcom/google/android/finsky/layout/play/PlayCardClusterView;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterView;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 

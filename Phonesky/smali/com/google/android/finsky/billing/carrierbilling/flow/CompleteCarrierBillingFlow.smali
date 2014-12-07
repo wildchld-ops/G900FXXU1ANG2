@@ -54,11 +54,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Lcom/google/android/finsky/analytics/FinskyEventLog;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p3    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p4    # Lcom/google/android/finsky/analytics/FinskyEventLog;
-    .param p5    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/google/android/finsky/billing/BillingLocator;->getCarrierBillingStorage()Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -97,12 +92,6 @@
 
 .method constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;Lcom/google/android/finsky/analytics/FinskyEventLog;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p3    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p4    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
-    .param p5    # Lcom/google/android/finsky/analytics/FinskyEventLog;
-    .param p6    # Landroid/os/Bundle;
 
     invoke-direct {p0, p2, p3, p6}, Lcom/google/android/finsky/billing/BillingFlow;-><init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Landroid/os/Bundle;)V
 
@@ -145,7 +134,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;)Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingPasswordDialogFragment;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;->mPasswordFragment:Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingPasswordDialogFragment;
 
@@ -154,8 +142,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;)Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;->mProvisioning:Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;
 
@@ -164,7 +150,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;)Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;->mStorage:Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -173,8 +158,6 @@
 
 .method static synthetic access$602(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;->mCredentialsCheckPerformed:Z
 
@@ -183,8 +166,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;->fail(Ljava/lang/String;)V
 
@@ -303,9 +284,6 @@
 
 .method credentialTimeStillValid(JJJ)Z
     .locals 3
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     sub-long v0, p1, p3
 
@@ -326,7 +304,6 @@
 
 .method credentialsStillValid(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingCredentials;)Z
     .locals 7
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingCredentials;
 
     if-eqz p1, :cond_0
 
@@ -384,8 +361,6 @@
 
 .method public onCarrierBillingPasswordResult(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingPasswordDialogFragment$CarrierBillingPasswordResultListener$PasswordResult;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingPasswordDialogFragment$CarrierBillingPasswordResultListener$PasswordResult;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -478,7 +453,6 @@
 
 .method public onCarrierTosResult(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener$TosResult;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener$TosResult;
 
     const/4 v2, 0x0
 
@@ -984,7 +958,6 @@
 
 .method public resumeFromSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;->mState:Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow$State;
 
@@ -1113,7 +1086,6 @@
 
 .method public saveState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "state"
 

@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 5
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v4, 0x1
 
@@ -86,7 +85,6 @@
 # virtual methods
 .method public transform(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 11
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v9, 0x0
 

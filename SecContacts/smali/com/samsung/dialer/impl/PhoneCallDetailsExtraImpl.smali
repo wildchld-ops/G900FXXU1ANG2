@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -92,7 +90,6 @@
 # virtual methods
 .method public getCnamIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -173,8 +170,6 @@
 
 .method public setVvmInfo(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iput p1, p0, Lcom/samsung/dialer/impl/PhoneCallDetailsExtraImpl;->vvmId:I
 

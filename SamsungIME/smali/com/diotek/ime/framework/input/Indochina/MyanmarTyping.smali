@@ -52,11 +52,6 @@
 
 .method private static combineMyanmarWithPlusKey(Landroid/view/inputmethod/InputConnection;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 10
-    .param p0    # Landroid/view/inputmethod/InputConnection;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/16 v9, 0x1004
 
@@ -391,11 +386,6 @@
 
 .method private static combineMyanmarWithoutPlusKey(Landroid/view/inputmethod/InputConnection;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p0    # Landroid/view/inputmethod/InputConnection;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/16 v6, 0x103d
 
@@ -2180,8 +2170,6 @@
 
 .method public static getMyanmarCode(Landroid/view/inputmethod/InputConnection;I)I
     .locals 9
-    .param p0    # Landroid/view/inputmethod/InputConnection;
-    .param p1    # I
 
     const/4 v8, 0x3
 
@@ -2314,7 +2302,6 @@
 
 .method private static isBasicConsonal(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2346,7 +2333,6 @@
 
 .method private static isConsonalCanCombile103B(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2378,7 +2364,6 @@
 
 .method private static isConsonalCanCombile103BTo107E(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2410,7 +2395,6 @@
 
 .method private static isDoubleHeightConsonant(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2442,7 +2426,6 @@
 
 .method private static isDoubleHeightConsonant_3_33(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2474,7 +2457,6 @@
 
 .method private static isDoubleWidthConsonant(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2506,7 +2488,6 @@
 
 .method private static isOtherConsonal(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2538,7 +2519,6 @@
 
 .method private static isSingleWithConsonant(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2570,7 +2550,6 @@
 
 .method private static isStackedConsonants(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2602,7 +2581,6 @@
 
 .method private static isVowelDown(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2634,7 +2612,6 @@
 
 .method private static isVowelSignDown(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2666,7 +2643,6 @@
 
 .method private static isVowelSignsUp(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2698,7 +2674,6 @@
 
 .method private static isVowelUp(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 

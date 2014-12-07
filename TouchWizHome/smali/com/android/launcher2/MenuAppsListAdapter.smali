@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/widget/BaseExpandableListAdapter;-><init>()V
 
@@ -42,8 +41,6 @@
 
 .method private setListItemData(Lcom/android/launcher2/AppItem;Landroid/view/View;)V
     .locals 5
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/view/View;
 
     const v3, 0x7f080084
 
@@ -103,8 +100,6 @@
 
 .method private setListSubItemData(Lcom/android/launcher2/AppItem;Landroid/widget/TextView;)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/widget/TextView;
 
     const/4 v6, 0x0
 
@@ -199,8 +194,6 @@
 
 .method public getChild(II)Lcom/android/launcher2/AppItem;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/MenuAppsListAdapter;->mApps:Ljava/util/List;
 
@@ -221,8 +214,6 @@
 
 .method public bridge synthetic getChild(II)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/launcher2/MenuAppsListAdapter;->getChild(II)Lcom/android/launcher2/AppItem;
 
@@ -233,8 +224,6 @@
 
 .method public getChildId(II)J
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     int-to-long v0, p2
 
@@ -243,11 +232,6 @@
 
 .method public getChildView(IIZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/ViewGroup;
 
     if-nez p4, :cond_0
 
@@ -285,7 +269,6 @@
 
 .method public getChildrenCount(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/MenuAppsListAdapter;->getGroup(I)Lcom/android/launcher2/AppItem;
 
@@ -314,7 +297,6 @@
 
 .method public getGroup(I)Lcom/android/launcher2/AppItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsListAdapter;->mApps:Ljava/util/List;
 
@@ -329,7 +311,6 @@
 
 .method public bridge synthetic getGroup(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/MenuAppsListAdapter;->getGroup(I)Lcom/android/launcher2/AppItem;
 
@@ -362,7 +343,6 @@
 
 .method public getGroupId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -371,10 +351,6 @@
 
 .method public getGroupView(IZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
 
     if-nez p3, :cond_0
 
@@ -416,8 +392,6 @@
 
 .method public isChildSelectable(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -426,7 +400,6 @@
 
 .method public onGroupCollapsed(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/BaseExpandableListAdapter;->onGroupCollapsed(I)V
 
@@ -444,7 +417,6 @@
 
 .method public onGroupExpanded(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/BaseExpandableListAdapter;->onGroupExpanded(I)V
 
@@ -481,7 +453,6 @@
 
 .method public setListener(Lcom/android/launcher2/MenuAppsListAdapter$MenuAppsListAdapterListener;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsListAdapter$MenuAppsListAdapterListener;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsListAdapter;->mListener:Lcom/android/launcher2/MenuAppsListAdapter$MenuAppsListAdapterListener;
 
@@ -490,7 +461,6 @@
 
 .method setTab(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/widget/BaseExpandableListAdapter;->notifyDataSetChanged()V
 

@@ -42,9 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/widget/consumption/NowPlayingCellSorter;III)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Lcom/google/android/finsky/widget/consumption/NowPlayingCellSorter$CellInformation;->this$0:Lcom/google/android/finsky/widget/consumption/NowPlayingCellSorter;
 
@@ -63,7 +60,6 @@
 # virtual methods
 .method public compareTo(Lcom/google/android/finsky/widget/consumption/NowPlayingCellSorter$CellInformation;)I
     .locals 6
-    .param p1    # Lcom/google/android/finsky/widget/consumption/NowPlayingCellSorter$CellInformation;
 
     const/4 v0, 0x1
 
@@ -153,7 +149,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/widget/consumption/NowPlayingCellSorter$CellInformation;
 

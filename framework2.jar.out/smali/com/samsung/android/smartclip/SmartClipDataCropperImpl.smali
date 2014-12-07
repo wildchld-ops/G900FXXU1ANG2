@@ -43,8 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;
 
     const/high16 v3, 0x3f800000
 
@@ -67,10 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;Landroid/graphics/Rect;Landroid/graphics/RectF;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/RectF;
 
     const/4 v1, 0x0
 
@@ -132,8 +126,6 @@
 
 .method private adjustMetaAreaRect(Landroid/view/View;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v6, 0x0
 
@@ -251,7 +243,6 @@
 
 .method private getMainResultFromExtractionResult(I)I
     .locals 1
-    .param p1    # I
 
     and-int/lit16 v0, p1, 0xff
 
@@ -260,7 +251,6 @@
 
 .method private getOpaqueBackgroundRect(Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)Landroid/graphics/Rect;
     .locals 9
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     move-object v2, p1
 
@@ -364,8 +354,6 @@
 
 .method private removeSmartClipDataElementByRect(Lcom/samsung/android/smartclip/SmartClipDataElementImpl;Landroid/graphics/Rect;)Z
     .locals 6
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v4, 0x0
 
@@ -439,10 +427,6 @@
 
 .method private traverseView(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)Z
     .locals 27
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
-    .param p3    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
-    .param p4    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     const/4 v14, 0x0
 
@@ -821,10 +805,6 @@
 
 .method private traverseViewForDragAndDrop(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)Z
     .locals 22
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
-    .param p3    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
-    .param p4    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     const/4 v10, 0x0
 
@@ -1148,7 +1128,6 @@
 # virtual methods
 .method protected addIntentMetaTag(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;)V
     .locals 6
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
 
     iget-object v3, p0, Lcom/samsung/android/smartclip/SmartClipDataCropperImpl;->mContext:Landroid/content/Context;
 
@@ -1226,7 +1205,6 @@
 
 .method public doExtractSmartClipData(Landroid/view/View;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x1
 
@@ -1388,9 +1366,6 @@
 
 .method public extractDefaultSmartClipData(Landroid/view/View;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
-    .param p3    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     const/4 v2, 0x1
 
@@ -1521,9 +1496,6 @@
 
 .method public extractDefaultSmartClipData_GoogleChromeView(Landroid/view/View;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
-    .param p3    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1635,9 +1607,6 @@
 
 .method public extractDefaultSmartClipData_ImageView(Landroid/view/View;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
-    .param p3    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     const-string/jumbo v0, "plain_text"
 
@@ -1669,9 +1638,6 @@
 
 .method public extractDefaultSmartClipData_TextView(Landroid/view/View;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
-    .param p3    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     const-string/jumbo v9, "plain_text"
 
@@ -1811,9 +1777,6 @@
 
 .method public extractDefaultSmartClipData_TextureView(Landroid/view/View;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
-    .param p3    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     const-string/jumbo v0, "plain_text"
 
@@ -1845,9 +1808,6 @@
 
 .method public extractDefaultSmartClipData_YoutubePlayerView(Landroid/view/View;Lcom/samsung/android/smartclip/SmartClipDataElementImpl;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
-    .param p3    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     const/4 v1, 0x1
 
@@ -2089,7 +2049,6 @@
 
 .method protected findElementIndexFromPendingList(Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)I
     .locals 3
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     iget-object v2, p0, Lcom/samsung/android/smartclip/SmartClipDataCropperImpl;->mPendingElements:Ljava/util/ArrayList;
 
@@ -2146,7 +2105,6 @@
 
 .method protected getParentList(Landroid/view/View;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2210,7 +2168,6 @@
 
 .method public getScreenPointOfView(Landroid/view/View;)Landroid/graphics/Point;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -2239,7 +2196,6 @@
 
 .method public getScreenRectOfView(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -2335,7 +2291,6 @@
 
 .method public sendExtractionResultToSmartClipService(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Z
     .locals 7
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     const/4 v3, 0x0
 
@@ -2475,8 +2430,6 @@
 
 .method public setPendingExtractionResult(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
 
     check-cast p2, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 

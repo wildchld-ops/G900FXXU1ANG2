@@ -36,7 +36,6 @@
 # virtual methods
 .method public dismiss(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -77,28 +76,24 @@
 
 .method public setOnDismissAction(Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;
 
     return-void
 .end method
 
 .method public showBackupSecurity(Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
 
     return-void
 .end method
 
 .method public showWipeDialog(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public userActivity(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method

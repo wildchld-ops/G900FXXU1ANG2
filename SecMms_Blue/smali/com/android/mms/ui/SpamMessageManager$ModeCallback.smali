@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/SpamMessageManager;Lcom/android/mms/ui/SpamMessageManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p2    # Lcom/android/mms/ui/SpamMessageManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager$ModeCallback;-><init>(Lcom/android/mms/ui/SpamMessageManager;)V
 
@@ -52,7 +50,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SpamMessageManager$ModeCallback;)Landroid/view/Menu;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager$ModeCallback;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager$ModeCallback;->mOptionMenu:Landroid/view/Menu;
 
@@ -63,8 +60,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v1, 0x0
 
@@ -171,8 +166,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -350,7 +343,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v3, 0x0
 
@@ -455,10 +447,6 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 11
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     iget-object v9, p0, Lcom/android/mms/ui/SpamMessageManager$ModeCallback;->this$0:Lcom/android/mms/ui/SpamMessageManager;
 
@@ -656,8 +644,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 8
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v4, 0x0
 

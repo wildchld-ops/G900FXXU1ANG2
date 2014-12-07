@@ -1379,7 +1379,7 @@ Můžete také zobrazit nebo skrýt úchyt více oken stisknutím a přidržení
     <string name="usb_tethering_errored_subtext">Chyba sdílení připojení přes USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Sdílení připojení přes USB nelze vypnout během používání aplikace SideSync. Vypnutím sdílení připojení přes USB se vypne aplikace SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Sdílení připojení přes USB nelze zapnout během používání aplikace SideSync. Zapnutím sdílení připojení přes USB se vypne aplikace SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Sdílení připojení Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Sdílení připojení Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Sdílení připojení tohoto zařízení k Internetu…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Připojení zařízení k Internetu je sdíleno s 1 zařízením</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Připojení zařízení k Internetu je sdíleno s %d zařízeními</string>

@@ -428,8 +428,6 @@
 
 .method public static getDataDirForUser(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -494,11 +492,6 @@
 
 .method public addPreferredActivity(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;I)V
     .locals 2
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # I
-    .param p3    # [Landroid/content/ComponentName;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # I
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -511,7 +504,6 @@
 
 .method public varargs buildPermissionRequestIntent([Ljava/lang/String;)Landroid/content/Intent;
     .locals 7
-    .param p1    # [Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -582,7 +574,6 @@
 
 .method public checkVerizonAPIPermission(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -708,7 +699,6 @@
 
 .method public getCSCPackageItemIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -717,7 +707,6 @@
 
 .method public getCSCPackageItemText(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -801,8 +790,6 @@
 
 .method public getPackageArchiveInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-wide/16 v3, 0x0
 
@@ -879,8 +866,6 @@
 
 .method public getPackageSizeInfo(Ljava/lang/String;Landroid/content/pm/IPackageStatsObserver;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageStatsObserver;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1023,7 +1008,6 @@
 
 .method public getSystemFeatureLevel(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

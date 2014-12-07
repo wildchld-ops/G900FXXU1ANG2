@@ -47,19 +47,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider;ILjava/lang/String;IILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
-    .param p11    # J
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
-    .param p15    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;->this$0:Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider;
 
@@ -94,7 +81,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;)I
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;->mCallType:I
 
@@ -103,7 +89,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;)I
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;->mLogType:I
 
@@ -112,7 +97,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;->mLookupURI:Ljava/lang/String;
 
@@ -211,7 +195,6 @@
 
 .method public setGroupCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;->mGroupCount:I
 
@@ -220,7 +203,6 @@
 
 .method public setImage1(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;->mImage1:Ljava/lang/String;
 

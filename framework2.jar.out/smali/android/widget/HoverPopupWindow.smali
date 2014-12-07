@@ -178,7 +178,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -191,8 +190,6 @@
 
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -261,7 +258,6 @@
 
 .method static synthetic access$000(Landroid/widget/HoverPopupWindow;)V
     .locals 0
-    .param p0    # Landroid/widget/HoverPopupWindow;
 
     invoke-direct {p0}, Landroid/widget/HoverPopupWindow;->dismissPopup()V
 
@@ -270,7 +266,6 @@
 
 .method static synthetic access$100(Landroid/widget/HoverPopupWindow;)V
     .locals 0
-    .param p0    # Landroid/widget/HoverPopupWindow;
 
     invoke-direct {p0}, Landroid/widget/HoverPopupWindow;->showPopup()V
 
@@ -279,7 +274,6 @@
 
 .method static synthetic access$200(Landroid/widget/HoverPopupWindow;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/widget/HoverPopupWindow;
 
     iget-object v0, p0, Landroid/widget/HoverPopupWindow;->mDismissPopupRunnable:Ljava/lang/Runnable;
 
@@ -633,8 +627,6 @@
 
 .method private pointInValidHoverArea(FF)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/widget/HoverPopupWindow;->mHoverPaddingLeft:I
 
@@ -915,10 +907,6 @@
 # virtual methods
 .method protected computePopupPosition(Landroid/view/View;III)V
     .locals 42
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move-object/from16 v0, p0
 
@@ -2208,10 +2196,6 @@
 
 .method protected computePopupPositionInternal(Landroid/graphics/Rect;Landroid/graphics/Rect;II)V
     .locals 15
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
-    .param p4    # I
 
     move-object/from16 v0, p1
 
@@ -3550,8 +3534,6 @@
 
 .method protected convertDPtoPX(FLandroid/util/DisplayMetrics;)I
     .locals 2
-    .param p1    # F
-    .param p2    # Landroid/util/DisplayMetrics;
 
     if-nez p2, :cond_0
 
@@ -3940,7 +3922,6 @@
 
 .method protected isFingerHoveringSettingsEnabled(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x3
 
@@ -4159,7 +4140,6 @@
 
 .method protected isHoveringSettingEnabled(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4301,7 +4281,6 @@
 
 .method protected isMouseHoveringSettingsEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4336,7 +4315,6 @@
 
 .method protected isSPenHoveringSettingsEnabled(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x3
 
@@ -4454,7 +4432,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -4737,7 +4714,6 @@
 
 .method protected postDismiss(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/HoverPopupWindow;->mParentView:Landroid/view/View;
 
@@ -4754,7 +4730,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4765,7 +4740,6 @@
 
 .method public setAnimationStyle(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mAnimationStyle:I
 
@@ -4785,7 +4759,6 @@
 
 .method public setContent(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4800,7 +4773,6 @@
 
 .method public setContent(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -4821,8 +4793,6 @@
 
 .method public setContent(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iput-object p1, p0, Landroid/widget/HoverPopupWindow;->mContentView:Landroid/view/View;
 
@@ -4837,7 +4807,6 @@
 
 .method public setContent(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/widget/HoverPopupWindow;->mContentText:Ljava/lang/CharSequence;
 
@@ -4850,7 +4819,6 @@
 
 .method public setDismissTouchableHPWOnActionUp(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->mDismissTouchableHPWOnActionUp:Z
 
@@ -4859,7 +4827,6 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4870,7 +4837,6 @@
 
 .method public setFHAnimationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -4883,8 +4849,6 @@
 
 .method public setFHAnimationEnabledByApp(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -4908,7 +4872,6 @@
 
 .method public setFHGuideLineEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -4921,8 +4884,6 @@
 
 .method public setFHGuideLineEnabledByApp(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -4958,7 +4919,6 @@
 
 .method public setFHSoundAndHapticEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->mIsFHSoundAndHapticEnabled:Z
 
@@ -4967,7 +4927,6 @@
 
 .method public setGuideLineEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->mIsGuideLineEnabled:Z
 
@@ -4976,7 +4935,6 @@
 
 .method public setGuideLineFadeOffset(I)V
     .locals 2
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -4993,8 +4951,6 @@
 
 .method public setGuideLineStyle(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mGuideRingDrawableId:I
 
@@ -5005,7 +4961,6 @@
 
 .method public setHoverDetectTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mHoverDetectTimeMS:I
 
@@ -5014,10 +4969,6 @@
 
 .method public setHoverPaddingArea(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mHoverPaddingLeft:I
 
@@ -5054,7 +5005,6 @@
 
 .method public setHoverPopupListener(Landroid/widget/HoverPopupWindow$HoverPopupListener;)V
     .locals 0
-    .param p1    # Landroid/widget/HoverPopupWindow$HoverPopupListener;
 
     iput-object p1, p0, Landroid/widget/HoverPopupWindow;->mListener:Landroid/widget/HoverPopupWindow$HoverPopupListener;
 
@@ -5063,7 +5013,6 @@
 
 .method public setHoverPopupPreShowListener(Landroid/widget/HoverPopupWindow$HoverPopupPreShowListener;)V
     .locals 0
-    .param p1    # Landroid/widget/HoverPopupWindow$HoverPopupPreShowListener;
 
     iput-object p1, p0, Landroid/widget/HoverPopupWindow;->mPreShowListener:Landroid/widget/HoverPopupWindow$HoverPopupPreShowListener;
 
@@ -5072,7 +5021,6 @@
 
 .method public setHoverPopupToolType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mToolType:I
 
@@ -5081,8 +5029,6 @@
 
 .method public setHoveringPoint(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mHoveringPointX:I
 
@@ -5093,7 +5039,6 @@
 
 .method public setInfoPickerColorToAndMoreBottomImg(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->mIsSetInfoPickerColorToAndMoreBottomImg:Z
 
@@ -5102,7 +5047,6 @@
 
 .method public setInfoPickerMoveEabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -5115,8 +5059,6 @@
 
 .method public setInfoPickerMoveEabledByApp(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -5140,7 +5082,6 @@
 
 .method protected setInstanceByType(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -5164,7 +5105,6 @@
 
 .method public setInstanceOfDialer(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->misDialer:Z
 
@@ -5173,7 +5113,6 @@
 
 .method public setInstanceOfProgressBar(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->mIsProgressBar:Z
 
@@ -5182,7 +5121,6 @@
 
 .method public setPopupGravity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mPopupGravity:I
 
@@ -5191,8 +5129,6 @@
 
 .method public setPopupPosOffset(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow;->mPopupOffsetX:I
 
@@ -5203,7 +5139,6 @@
 
 .method public setShowPopupAlways(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->mShowPopupAlways:Z
 
@@ -5212,7 +5147,6 @@
 
 .method public setTouchablePopup(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow;->mIsPopupTouchable:Z
 
@@ -5244,7 +5178,6 @@
 
 .method public show(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -5428,7 +5361,6 @@
 
 .method protected showPenPointEffect(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -5570,10 +5502,6 @@
 
 .method public updateHoverPopup(Landroid/view/View;III)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 

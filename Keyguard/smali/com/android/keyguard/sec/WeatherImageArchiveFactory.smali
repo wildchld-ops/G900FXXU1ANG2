@@ -14,7 +14,6 @@
 
 .method public static make(Ljava/lang/String;)Lcom/android/keyguard/sec/AbstractWeatherImageArchive;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Cmaweather"
 

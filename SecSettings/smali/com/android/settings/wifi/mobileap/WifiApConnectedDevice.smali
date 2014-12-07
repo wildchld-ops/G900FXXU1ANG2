@@ -35,11 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -101,8 +96,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;->showDialog(I)V
 
@@ -111,7 +104,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;->dialog:Landroid/app/AlertDialog;
 
@@ -120,7 +112,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;->mContext:Landroid/content/Context;
 
@@ -129,7 +120,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;->mDeviceName:Ljava/lang/String;
 
@@ -173,7 +163,6 @@
 
 .method private showDialog(I)V
     .locals 8
-    .param p1    # I
 
     const/16 v5, 0xa
 
@@ -276,7 +265,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     instance-of v1, p1, Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;
 
@@ -305,7 +293,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -350,7 +337,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v8, 0x1
 
@@ -558,8 +544,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     instance-of v4, p1, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
@@ -695,9 +679,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 

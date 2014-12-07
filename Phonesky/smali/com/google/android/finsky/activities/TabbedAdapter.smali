@@ -68,19 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/LayoutInflater;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeBrowse;Lcom/google/android/finsky/api/model/DfeList;Lcom/google/android/finsky/api/model/DfeList;ILandroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/LayoutInflater;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/api/DfeApi;
-    .param p6    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p7    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p8    # Lcom/google/android/finsky/api/model/DfeBrowse;
-    .param p9    # Lcom/google/android/finsky/api/model/DfeList;
-    .param p10    # Lcom/google/android/finsky/api/model/DfeList;
-    .param p11    # I
-    .param p12    # Landroid/os/Bundle;
-    .param p13    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
 
@@ -309,8 +296,6 @@
 
 .method private generateTabList(Landroid/os/Bundle;Lcom/google/android/finsky/api/model/DfeList;)V
     .locals 16
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Lcom/google/android/finsky/api/model/DfeList;
 
     invoke-direct/range {p0 .. p1}, Lcom/google/android/finsky/activities/TabbedAdapter;->restoreScrollPositions(Landroid/os/Bundle;)Ljava/util/List;
 
@@ -620,8 +605,6 @@
 
 .method private static getCategoryNameForBackend(Landroid/content/Context;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -648,7 +631,6 @@
 
 .method private getDfeListForListTab(I)Lcom/google/android/finsky/api/model/DfeList;
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -942,7 +924,6 @@
 
 .method private restoreDfeLists(Landroid/os/Bundle;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1007,7 +988,6 @@
 
 .method private restoreScrollPositions(Landroid/os/Bundle;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1135,9 +1115,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     move-object v0, p3
 
@@ -1194,7 +1171,6 @@
 
 .method public finishUpdate(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     return-void
 .end method
@@ -1213,7 +1189,6 @@
 
 .method public bridge synthetic getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/TabbedAdapter;->getPageTitle(I)Ljava/lang/String;
 
@@ -1224,7 +1199,6 @@
 
 .method public getPageTitle(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TabbedAdapter;->mTabTitles:Ljava/util/List;
 
@@ -1257,7 +1231,6 @@
 
 .method public getPageWidth(I)F
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1312,8 +1285,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 18
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1601,8 +1572,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lcom/google/android/finsky/activities/ViewPagerTab;
 
@@ -1627,7 +1596,6 @@
 
 .method public onPageAboutToBeSelected(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TabbedAdapter;->mTabSelectionTracker:Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;
 
@@ -1639,7 +1607,6 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TabbedAdapter;->mTabSelectionTracker:Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;
 
@@ -1651,7 +1618,6 @@
 
 .method public onPageSelected(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1709,7 +1675,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "TabbedAdapter.TabParcels"
 
@@ -1732,8 +1697,6 @@
 
 .method public restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # Ljava/lang/ClassLoader;
 
     return-void
 .end method
@@ -1748,7 +1711,6 @@
 
 .method public startUpdate(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     return-void
 .end method

@@ -106,7 +106,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/activities/ContactDetailActivity;)Lcom/android/contacts/model/Contact;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mContactData:Lcom/android/contacts/model/Contact;
 
@@ -115,8 +114,6 @@
 
 .method static synthetic access$002(Lcom/android/contacts/activities/ContactDetailActivity;Lcom/android/contacts/model/Contact;)Lcom/android/contacts/model/Contact;
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     iput-object p1, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mContactData:Lcom/android/contacts/model/Contact;
 
@@ -125,7 +122,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/activities/ContactDetailActivity;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mLookupUri:Landroid/net/Uri;
 
@@ -134,8 +130,6 @@
 
 .method static synthetic access$102(Lcom/android/contacts/activities/ContactDetailActivity;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mLookupUri:Landroid/net/Uri;
 
@@ -144,7 +138,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/activities/ContactDetailActivity;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mStarredMenuItem:Landroid/view/MenuItem;
 
@@ -153,7 +146,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/activities/ContactDetailActivity;)Lcom/android/contacts/detail/ContactDetailLayoutController;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mContactDetailLayoutController:Lcom/android/contacts/detail/ContactDetailLayoutController;
 
@@ -162,7 +154,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/activities/ContactDetailActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->misAssistantMenuVisibility:Z
 
@@ -171,7 +162,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/activities/ContactDetailActivity;)Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mAssistantMenu:Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
 
@@ -180,7 +170,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/activities/ContactDetailActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->misStarred:Z
 
@@ -189,8 +178,6 @@
 
 .method static synthetic access$602(Lcom/android/contacts/activities/ContactDetailActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/ContactDetailActivity;->misStarred:Z
 
@@ -199,7 +186,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/activities/ContactDetailActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mHandler:Landroid/os/Handler;
 
@@ -208,7 +194,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/activities/ContactDetailActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mIsButtonPressed:Z
 
@@ -217,8 +202,6 @@
 
 .method static synthetic access$802(Lcom/android/contacts/activities/ContactDetailActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/ContactDetailActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/ContactDetailActivity;->mIsButtonPressed:Z
 
@@ -342,9 +325,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -503,7 +483,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/android/contacts/detail/ContactLoaderFragment;
 
@@ -817,7 +796,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -869,8 +847,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -915,7 +891,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1059,7 +1034,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-static {p0}, Lcom/android/contacts/ContactsUtils;->isEmergencyMode(Landroid/content/Context;)Z
 
@@ -1265,7 +1239,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/activity/TransactionSafeActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

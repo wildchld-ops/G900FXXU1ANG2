@@ -47,7 +47,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Event;->eventType:Ljava/lang/String;
 
@@ -100,7 +99,6 @@
 
 .method public match(Lgov/nist/javax/sip/header/Event;)Z
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/header/Event;
 
     const/4 v0, 0x0
 
@@ -203,7 +201,6 @@
 
 .method public setEventId(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -230,7 +227,6 @@
 
 .method public setEventType(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

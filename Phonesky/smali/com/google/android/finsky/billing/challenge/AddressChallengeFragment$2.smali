@@ -36,7 +36,6 @@
 # virtual methods
 .method public onBillingCountryChanged(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$2;->this$0:Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 

@@ -34,7 +34,6 @@
 
 .method public static getCallIntent(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -47,8 +46,6 @@
 
 .method public static getCallIntent(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
 
     const/high16 v3, 0x10000000
 
@@ -103,8 +100,6 @@
 
 .method public static getCallIntent(Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -117,9 +112,6 @@
 
 .method public static getCallIntent(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     invoke-static {}, Lcom/samsung/contacts/util/LoadCscFeatureUtils;->getInstance()Lcom/samsung/contacts/util/LoadCscFeatureUtils;
 
@@ -406,7 +398,6 @@
 
 .method public static getCallUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

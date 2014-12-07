@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/IdentifiableViewGroup;-><init>(Landroid/content/Context;)V
 
@@ -22,8 +21,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/IdentifiableViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -34,11 +31,6 @@
 # virtual methods
 .method protected onLayout(ZIIII)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/BucketRow;->getPaddingLeft()I
 
@@ -97,8 +89,6 @@
 
 .method protected onMeasure(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/4 v11, 0x0
 
@@ -234,7 +224,6 @@
 
 .method public setSameChildHeight(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/layout/BucketRow;->mSameChildHeight:Z
 

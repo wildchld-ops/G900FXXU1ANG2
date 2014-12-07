@@ -38,8 +38,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/connect/api/DLMService;Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/api/DLMService;
-    .param p2    # Lcom/nuance/connect/store/PersistentDataStore;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACService;-><init>()V
 
@@ -58,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/nuance/swypeconnect/ac/ACDlmService;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDlmService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -67,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/nuance/swypeconnect/ac/ACDlmService;)Lcom/nuance/connect/api/DLMService;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDlmService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService;->service:Lcom/nuance/connect/api/DLMService;
 
@@ -76,7 +72,6 @@
 
 .method static synthetic access$200(Lcom/nuance/swypeconnect/ac/ACDlmService;)Lcom/nuance/swypeconnect/ac/ACDlmService$ACAlphaDlmDb;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDlmService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService;->alphaDlmDb:Lcom/nuance/swypeconnect/ac/ACDlmService$ACAlphaDlmDb;
 
@@ -85,7 +80,6 @@
 
 .method static synthetic access$300(Lcom/nuance/swypeconnect/ac/ACDlmService;)Lcom/nuance/swypeconnect/ac/ACDlmService$ACKoreanDlmDb;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDlmService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService;->koreanDlmDb:Lcom/nuance/swypeconnect/ac/ACDlmService$ACKoreanDlmDb;
 
@@ -94,7 +88,6 @@
 
 .method static synthetic access$400(Lcom/nuance/swypeconnect/ac/ACDlmService;)Lcom/nuance/swypeconnect/ac/ACDlmService$ACChineseDlmDb;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACDlmService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService;->chineseDlmDb:Lcom/nuance/swypeconnect/ac/ACDlmService$ACChineseDlmDb;
 
@@ -105,7 +98,6 @@
 # virtual methods
 .method public bindAlphaDlm(Lcom/nuance/swypeconnect/ac/ACDlmService$ACAlphaDlmDb;)Lcom/nuance/swypeconnect/ac/ACDlmService$ACAlphaDlmEventCallback;
     .locals 4
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACDlmService$ACAlphaDlmDb;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -152,7 +144,6 @@
 
 .method public bindChineseDlm(Lcom/nuance/swypeconnect/ac/ACDlmService$ACChineseDlmDb;)Lcom/nuance/swypeconnect/ac/ACDlmService$ACChineseDlmEventCallback;
     .locals 4
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACDlmService$ACChineseDlmDb;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -199,7 +190,6 @@
 
 .method public bindKoreanDlm(Lcom/nuance/swypeconnect/ac/ACDlmService$ACKoreanDlmDb;)Lcom/nuance/swypeconnect/ac/ACDlmService$ACKoreanDlmEventCallback;
     .locals 4
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACDlmService$ACKoreanDlmDb;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;

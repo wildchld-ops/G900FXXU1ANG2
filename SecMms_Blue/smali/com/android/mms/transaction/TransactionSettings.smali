@@ -64,8 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -1104,9 +1102,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1137,8 +1132,6 @@
 
 .method private static isValidApnType(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1242,7 +1235,6 @@
 
 .method public getValidProxyAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v4, ""
 

@@ -131,7 +131,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Ljava/util/ArrayList;)V
     .locals 4
-    .param p0    # Landroid/app/FragmentManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -190,7 +189,6 @@
 
 .method protected initializeGroupLabelEditText(Landroid/widget/EditText;)V
     .locals 4
-    .param p1    # Landroid/widget/EditText;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
 
@@ -225,7 +223,6 @@
 
 .method protected isTitleDuplicated(Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -436,7 +433,6 @@
 
 .method protected onCompleted(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

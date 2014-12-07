@@ -57,7 +57,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -94,8 +93,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/WindowManagerService;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/WindowManagerService;
 
     const/4 v1, 0x0
 
@@ -132,7 +129,6 @@
 
 .method static synthetic access$000(Lcom/android/server/glancecard/GlanceCardManagerService;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/server/glancecard/GlanceCardManagerService;
 
     iget-object v0, p0, Lcom/android/server/glancecard/GlanceCardManagerService;->mCurrentComponent:Landroid/content/ComponentName;
 
@@ -141,7 +137,6 @@
 
 .method static synthetic access$100(Lcom/android/server/glancecard/GlanceCardManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/glancecard/GlanceCardManagerService;
 
     invoke-direct {p0}, Lcom/android/server/glancecard/GlanceCardManagerService;->checkGlanceSettingIsEnabled()Z
 
@@ -160,10 +155,6 @@
 
 .method static synthetic access$300(Lcom/android/server/glancecard/GlanceCardManagerService;Landroid/content/ComponentName;II)V
     .locals 0
-    .param p0    # Lcom/android/server/glancecard/GlanceCardManagerService;
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/glancecard/GlanceCardManagerService;->sendCardsAndCommand(Landroid/content/ComponentName;II)V
 
@@ -206,7 +197,6 @@
 
 .method private getCardArray(Landroid/content/ComponentName;)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -240,7 +230,6 @@
 
 .method private getCardRecord(Landroid/content/ComponentName;)Lcom/android/server/glancecard/CardRecord;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v3, p0, Lcom/android/server/glancecard/GlanceCardManagerService;->mCardRecordArray:Ljava/util/ArrayList;
 
@@ -319,9 +308,6 @@
 
 .method private sendCardsAndCommand(Landroid/content/ComponentName;II)V
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
 
     const v6, 0x186a0
 
@@ -518,7 +504,6 @@
 # virtual methods
 .method public addAllCard(Landroid/content/ComponentName;Ljava/util/List;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -654,8 +639,6 @@
 
 .method public addCard(Landroid/content/ComponentName;Lcom/samsung/android/glancecard/GlanceCardInfo;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/samsung/android/glancecard/GlanceCardInfo;
 
     sget-object v1, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -726,7 +709,6 @@
 
 .method public close(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     sget-object v0, Lcom/android/server/glancecard/GlanceCardManagerService;->mBinderList:Ljava/util/HashMap;
 
@@ -788,7 +770,6 @@
 
 .method public getAllCardIds(Landroid/content/ComponentName;)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -877,7 +858,6 @@
 
 .method public getListenerAsBinder(Landroid/content/ComponentName;)Landroid/os/IBinder;
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     sget-object v1, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -974,7 +954,6 @@
 
 .method public hide(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x6
 
@@ -987,7 +966,6 @@
 
 .method public removeAllCard(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     sget-object v2, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -1040,8 +1018,6 @@
 
 .method public removeCard(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -1093,8 +1069,6 @@
 
 .method public removeCardFromTray(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -1142,8 +1116,6 @@
 
 .method public removeGroup(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -1178,8 +1150,6 @@
 
 .method public setListenerAsBinder(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     sget-object v0, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -1248,7 +1218,6 @@
 
 .method public show(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x5
 
@@ -1261,8 +1230,6 @@
 
 .method public updateCard(Landroid/content/ComponentName;Lcom/samsung/android/glancecard/GlanceCardInfo;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/samsung/android/glancecard/GlanceCardInfo;
 
     sget-object v1, Lcom/android/server/glancecard/GlanceCardManagerService;->TAG:Ljava/lang/String;
 
@@ -1359,7 +1326,6 @@
 
 .method public updateCards(Landroid/content/ComponentName;Ljava/util/List;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

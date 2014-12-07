@@ -44,7 +44,7 @@
         <item quantity="one">Anda mempunyai %1$d kemas kini tersedia. Adakah anda ingin memasang kemas kini itu?</item>
     </plurals>
     <plurals name="star_rating_review_bold_formatting">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> memberikan nilai %2$d bintang</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> memberikan nilai %2$d bintang</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> memberikan nilai %2$d bintang</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> memberikan nilai %2$d bintang</item>
     </plurals>
 </resources>

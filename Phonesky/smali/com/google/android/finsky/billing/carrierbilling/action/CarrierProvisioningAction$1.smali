@@ -54,7 +54,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;
 
     const/4 v9, 0x0
 
@@ -155,7 +154,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;
 

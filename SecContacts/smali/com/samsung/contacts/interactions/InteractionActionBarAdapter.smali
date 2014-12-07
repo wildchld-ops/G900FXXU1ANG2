@@ -90,11 +90,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/app/ActionBar;IZLandroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActionBar;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -266,7 +261,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->sendAccessibilityEvent()V
 
@@ -275,7 +269,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;)Lcom/android/contacts/common/list/ContactListFilterController;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->mFilterController:Lcom/android/contacts/common/list/ContactListFilterController;
 
@@ -284,7 +277,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->isUpdateTabPosition:Z
 
@@ -293,8 +285,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->isUpdateTabPosition:Z
 
@@ -303,7 +293,6 @@
 
 .method private saveLastTabPreference(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->mPrefs:Landroid/content/SharedPreferences;
 
@@ -435,8 +424,6 @@
 # virtual methods
 .method protected addTab(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->mActionBar:Landroid/app/ActionBar;
 
@@ -467,7 +454,6 @@
 
 .method protected changeTabIfOverflow(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -510,7 +496,6 @@
 
 .method protected createActionSpinnerAdapter(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$ActionSpinnerAdapter;
 
@@ -583,7 +568,6 @@
 
 .method protected getDescriptionString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -663,7 +647,6 @@
 
 .method public getPositionByTabState(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -904,7 +887,6 @@
 
 .method public getTabStateByPosition(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1173,7 +1155,6 @@
 
 .method protected restoreCurrentTab(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 
@@ -1211,7 +1192,6 @@
 
 .method protected setBlockFavoritesTab(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->blockFavoritesTab:Z
 
@@ -1220,7 +1200,6 @@
 
 .method protected setBlockLogsTab(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->blockLogsTab:Z
 
@@ -1229,7 +1208,6 @@
 
 .method public setContactListFilterController(Lcom/android/contacts/common/list/ContactListFilterController;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilterController;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->mFilterController:Lcom/android/contacts/common/list/ContactListFilterController;
 
@@ -1238,7 +1216,6 @@
 
 .method public setCurrentTab(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->mListener:Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$Listener;
 
@@ -1423,7 +1400,6 @@
 
 .method public setListener(Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->mListener:Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$Listener;
 

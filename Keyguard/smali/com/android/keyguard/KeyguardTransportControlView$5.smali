@@ -42,9 +42,6 @@
 # virtual methods
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 3
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     if-eqz p3, :cond_1
 
@@ -122,7 +119,6 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$5;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
@@ -144,7 +140,6 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$5;->mProgress:I
 

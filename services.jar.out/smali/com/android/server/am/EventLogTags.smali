@@ -110,10 +110,6 @@
 
 .method public static writeAmActivityFullyDrawnTime(IILjava/lang/String;J)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/16 v0, 0x755a
 
@@ -156,10 +152,6 @@
 
 .method public static writeAmActivityLaunchTime(IILjava/lang/String;J)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/16 v0, 0x7539
 
@@ -202,11 +194,6 @@
 
 .method public static writeAmAnr(IILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v0, 0x7538
 
@@ -253,11 +240,6 @@
 
 .method public static writeAmBroadcastDiscardApp(IILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v0, 0x7549
 
@@ -304,11 +286,6 @@
 
 .method public static writeAmBroadcastDiscardFilter(IILjava/lang/String;II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/16 v0, 0x7548
 
@@ -359,14 +336,6 @@
 
 .method public static writeAmCrash(IILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     const/16 v0, 0x7557
 
@@ -429,16 +398,6 @@
 
 .method public static writeAmCreateActivity(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
 
     const/16 v0, 0x7535
 
@@ -513,11 +472,6 @@
 
 .method public static writeAmCreateService(IILjava/lang/String;II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/16 v0, 0x754e
 
@@ -568,11 +522,6 @@
 
 .method public static writeAmCreateStack(IIIILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const v0, 0x12c4b0
 
@@ -623,8 +572,6 @@
 
 .method public static writeAmCreateTask(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0x7534
 
@@ -655,9 +602,6 @@
 
 .method public static writeAmCreateTaskToStack(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x12c4b4
 
@@ -696,12 +640,6 @@
 
 .method public static writeAmDestroyActivity(IIILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/16 v0, 0x7542
 
@@ -756,9 +694,6 @@
 
 .method public static writeAmDestroyService(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x754f
 
@@ -797,7 +732,6 @@
 
 .method public static writeAmDropProcess(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x7551
 
@@ -808,9 +742,6 @@
 
 .method public static writeAmExchangeTaskToStack(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x12c4b3
 
@@ -849,11 +780,6 @@
 
 .method public static writeAmFailedToPause(IILjava/lang/String;Ljava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v0, 0x753c
 
@@ -900,12 +826,6 @@
 
 .method public static writeAmFinishActivity(IIILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/16 v0, 0x7531
 
@@ -960,8 +880,6 @@
 
 .method public static writeAmFocusStack(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const v0, 0x12c4b5
 
@@ -988,11 +906,6 @@
 
 .method public static writeAmKill(IILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v0, 0x7547
 
@@ -1039,7 +952,6 @@
 
 .method public static writeAmLowMemory(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x7541
 
@@ -1050,9 +962,6 @@
 
 .method public static writeAmMoveTaskToStack(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x12c4b2
 
@@ -1091,15 +1000,6 @@
 
 .method public static writeAmNewIntent(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
 
     const/16 v0, 0x7533
 
@@ -1166,8 +1066,6 @@
 
 .method public static writeAmOnPausedCalled(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0x7545
 
@@ -1194,8 +1092,6 @@
 
 .method public static writeAmOnResumeCalled(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0x7546
 
@@ -1222,10 +1118,6 @@
 
 .method public static writeAmPauseActivity(IILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/16 v0, 0x753d
 
@@ -1268,9 +1160,6 @@
 
 .method public static writeAmProcBad(IILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v0, 0x753f
 
@@ -1305,9 +1194,6 @@
 
 .method public static writeAmProcBound(IILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v0, 0x753a
 
@@ -1342,10 +1228,6 @@
 
 .method public static writeAmProcDied(IILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/16 v0, 0x753b
 
@@ -1388,9 +1270,6 @@
 
 .method public static writeAmProcGood(IILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v0, 0x7540
 
@@ -1425,12 +1304,6 @@
 
 .method public static writeAmProcStart(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/16 v0, 0x753e
 
@@ -1481,9 +1354,6 @@
 
 .method public static writeAmProcessCrashedTooMuch(ILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v0, 0x7550
 
@@ -1518,10 +1388,6 @@
 
 .method public static writeAmProcessStartTimeout(IIILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/16 v0, 0x7555
 
@@ -1564,10 +1430,6 @@
 
 .method public static writeAmProviderLostProcess(ILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/16 v0, 0x7554
 
@@ -1606,11 +1468,6 @@
 
 .method public static writeAmRelaunchActivity(IIILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v0, 0x7544
 
@@ -1661,11 +1518,6 @@
 
 .method public static writeAmRelaunchResumeActivity(IIILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v0, 0x7543
 
@@ -1716,8 +1568,6 @@
 
 .method public static writeAmRemoveStack(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const v0, 0x12c4b1
 
@@ -1744,11 +1594,6 @@
 
 .method public static writeAmRestartActivity(IIILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v0, 0x7536
 
@@ -1799,11 +1644,6 @@
 
 .method public static writeAmResumeActivity(IIILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v0, 0x7537
 
@@ -1854,9 +1694,6 @@
 
 .method public static writeAmScheduleServiceRestart(ILjava/lang/String;J)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const/16 v0, 0x7553
 
@@ -1891,10 +1728,6 @@
 
 .method public static writeAmServiceCrashedTooMuch(IILjava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/16 v0, 0x7552
 
@@ -1937,7 +1770,6 @@
 
 .method public static writeAmSwitchUser(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x7559
 
@@ -1948,8 +1780,6 @@
 
 .method public static writeAmTaskToFront(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0x7532
 
@@ -1980,12 +1810,6 @@
 
 .method public static writeAmWtf(IILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/16 v0, 0x7558
 
@@ -2036,7 +1860,6 @@
 
 .method public static writeBootProgressAmsReady(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xbe0
 
@@ -2047,7 +1870,6 @@
 
 .method public static writeBootProgressEnableScreen(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xbea
 
@@ -2058,7 +1880,6 @@
 
 .method public static writeConfigurationChanged(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xa9f
 
@@ -2069,12 +1890,6 @@
 
 .method public static writeCpu(IIIIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v0, 0xaa1
 

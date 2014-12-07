@@ -16,7 +16,6 @@
 # virtual methods
 .method public dbgPrint(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lgov/nist/core/GenericObject;->indentation:I
 

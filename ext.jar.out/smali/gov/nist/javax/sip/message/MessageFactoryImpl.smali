@@ -50,7 +50,6 @@
 
 .method static synthetic access$000(Lgov/nist/javax/sip/message/MessageFactoryImpl;)Z
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/message/MessageFactoryImpl;
 
     iget-boolean v0, p0, Lgov/nist/javax/sip/message/MessageFactoryImpl;->testing:Z
 
@@ -85,10 +84,6 @@
 # virtual methods
 .method public createMultipartMimeContent(Ljavax/sip/header/ContentTypeHeader;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Lgov/nist/javax/sip/message/MultipartMimeContent;
     .locals 7
-    .param p1    # Ljavax/sip/header/ContentTypeHeader;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const-string v5, "boundary"
 
@@ -135,7 +130,6 @@
 
 .method public createRequest(Ljava/lang/String;)Ljavax/sip/message/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -208,14 +202,6 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;)Ljavax/sip/message/Request;
     .locals 4
-    .param p1    # Ljavax/sip/address/URI;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljavax/sip/header/CallIdHeader;
-    .param p4    # Ljavax/sip/header/CSeqHeader;
-    .param p5    # Ljavax/sip/header/FromHeader;
-    .param p6    # Ljavax/sip/header/ToHeader;
-    .param p7    # Ljava/util/List;
-    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -284,16 +270,6 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;Ljava/lang/Object;)Ljavax/sip/message/Request;
     .locals 3
-    .param p1    # Ljavax/sip/address/URI;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljavax/sip/header/CallIdHeader;
-    .param p4    # Ljavax/sip/header/CSeqHeader;
-    .param p5    # Ljavax/sip/header/FromHeader;
-    .param p6    # Ljavax/sip/header/ToHeader;
-    .param p7    # Ljava/util/List;
-    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
-    .param p9    # Ljavax/sip/header/ContentTypeHeader;
-    .param p10    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -366,16 +342,6 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;[B)Ljavax/sip/message/Request;
     .locals 3
-    .param p1    # Ljavax/sip/address/URI;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljavax/sip/header/CallIdHeader;
-    .param p4    # Ljavax/sip/header/CSeqHeader;
-    .param p5    # Ljavax/sip/header/FromHeader;
-    .param p6    # Ljavax/sip/header/ToHeader;
-    .param p7    # Ljava/util/List;
-    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
-    .param p9    # Ljavax/sip/header/ContentTypeHeader;
-    .param p10    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -448,16 +414,6 @@
 
 .method public createRequest(Ljavax/sip/address/URI;Ljava/lang/String;Ljavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;[BLjavax/sip/header/ContentTypeHeader;)Ljavax/sip/message/Request;
     .locals 4
-    .param p1    # Ljavax/sip/address/URI;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljavax/sip/header/CallIdHeader;
-    .param p4    # Ljavax/sip/header/CSeqHeader;
-    .param p5    # Ljavax/sip/header/FromHeader;
-    .param p6    # Ljavax/sip/header/ToHeader;
-    .param p7    # Ljava/util/List;
-    .param p8    # Ljavax/sip/header/MaxForwardsHeader;
-    .param p9    # [B
-    .param p10    # Ljavax/sip/header/ContentTypeHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -536,13 +492,6 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;)Ljavax/sip/message/Response;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljavax/sip/header/CallIdHeader;
-    .param p3    # Ljavax/sip/header/CSeqHeader;
-    .param p4    # Ljavax/sip/header/FromHeader;
-    .param p5    # Ljavax/sip/header/ToHeader;
-    .param p6    # Ljava/util/List;
-    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -605,15 +554,6 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljava/lang/Object;Ljavax/sip/header/ContentTypeHeader;)Ljavax/sip/message/Response;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljavax/sip/header/CallIdHeader;
-    .param p3    # Ljavax/sip/header/CSeqHeader;
-    .param p4    # Ljavax/sip/header/FromHeader;
-    .param p5    # Ljavax/sip/header/ToHeader;
-    .param p6    # Ljava/util/List;
-    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
-    .param p8    # Ljava/lang/Object;
-    .param p9    # Ljavax/sip/header/ContentTypeHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -692,15 +632,6 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;Ljava/lang/Object;)Ljavax/sip/message/Response;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljavax/sip/header/CallIdHeader;
-    .param p3    # Ljavax/sip/header/CSeqHeader;
-    .param p4    # Ljavax/sip/header/FromHeader;
-    .param p5    # Ljavax/sip/header/ToHeader;
-    .param p6    # Ljava/util/List;
-    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
-    .param p8    # Ljavax/sip/header/ContentTypeHeader;
-    .param p9    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -806,15 +737,6 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;Ljavax/sip/header/ContentTypeHeader;[B)Ljavax/sip/message/Response;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljavax/sip/header/CallIdHeader;
-    .param p3    # Ljavax/sip/header/CSeqHeader;
-    .param p4    # Ljavax/sip/header/FromHeader;
-    .param p5    # Ljavax/sip/header/ToHeader;
-    .param p6    # Ljava/util/List;
-    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
-    .param p8    # Ljavax/sip/header/ContentTypeHeader;
-    .param p9    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -920,15 +842,6 @@
 
 .method public createResponse(ILjavax/sip/header/CallIdHeader;Ljavax/sip/header/CSeqHeader;Ljavax/sip/header/FromHeader;Ljavax/sip/header/ToHeader;Ljava/util/List;Ljavax/sip/header/MaxForwardsHeader;[BLjavax/sip/header/ContentTypeHeader;)Ljavax/sip/message/Response;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljavax/sip/header/CallIdHeader;
-    .param p3    # Ljavax/sip/header/CSeqHeader;
-    .param p4    # Ljavax/sip/header/FromHeader;
-    .param p5    # Ljavax/sip/header/ToHeader;
-    .param p6    # Ljava/util/List;
-    .param p7    # Ljavax/sip/header/MaxForwardsHeader;
-    .param p8    # [B
-    .param p9    # Ljavax/sip/header/ContentTypeHeader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -999,8 +912,6 @@
 
 .method public createResponse(ILjavax/sip/message/Request;)Ljavax/sip/message/Response;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljavax/sip/message/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1046,10 +957,6 @@
 
 .method public createResponse(ILjavax/sip/message/Request;Ljavax/sip/header/ContentTypeHeader;Ljava/lang/Object;)Ljavax/sip/message/Response;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljavax/sip/message/Request;
-    .param p3    # Ljavax/sip/header/ContentTypeHeader;
-    .param p4    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1096,10 +1003,6 @@
 
 .method public createResponse(ILjavax/sip/message/Request;Ljavax/sip/header/ContentTypeHeader;[B)Ljavax/sip/message/Response;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljavax/sip/message/Request;
-    .param p3    # Ljavax/sip/header/ContentTypeHeader;
-    .param p4    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1150,7 +1053,6 @@
 
 .method public createResponse(Ljava/lang/String;)Ljavax/sip/message/Response;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1195,7 +1097,6 @@
 
 .method public setDefaultContentEncodingCharset(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;,
@@ -1221,7 +1122,6 @@
 
 .method public setDefaultServerHeader(Ljavax/sip/header/ServerHeader;)V
     .locals 0
-    .param p1    # Ljavax/sip/header/ServerHeader;
 
     sput-object p1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->server:Ljavax/sip/header/ServerHeader;
 
@@ -1230,7 +1130,6 @@
 
 .method public setDefaultUserAgentHeader(Ljavax/sip/header/UserAgentHeader;)V
     .locals 0
-    .param p1    # Ljavax/sip/header/UserAgentHeader;
 
     sput-object p1, Lgov/nist/javax/sip/message/MessageFactoryImpl;->userAgent:Ljavax/sip/header/UserAgentHeader;
 
@@ -1239,7 +1138,6 @@
 
 .method public setStrict(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/message/MessageFactoryImpl;->strict:Z
 
@@ -1248,7 +1146,6 @@
 
 .method public setTest(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/message/MessageFactoryImpl;->testing:Z
 

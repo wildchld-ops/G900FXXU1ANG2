@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/previews/PreviewPlayer$4;->this$0:Lcom/google/android/finsky/previews/PreviewPlayer;
 

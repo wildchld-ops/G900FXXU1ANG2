@@ -55,8 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -149,7 +147,6 @@
 
 .method private getAudioDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -210,7 +207,6 @@
 
 .method private getFilter(Landroid/os/Bundle;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -317,10 +313,6 @@
 
 .method private getThumbNail(IILjava/lang/String;I)Landroid/graphics/drawable/Drawable;
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -472,8 +464,6 @@
 
 .method private getUri(II)Landroid/net/Uri;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -527,7 +517,6 @@
 
 .method private isSupport(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -766,7 +755,6 @@
 
 .method public getItem(I)Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;
     .locals 9
-    .param p1    # I
 
     iget-object v7, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonRecentMediaAdapter;->mData:Ljava/util/ArrayList;
 
@@ -819,7 +807,6 @@
 
 .method public onDismiss(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -840,7 +827,6 @@
 
 .method public onHide(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -861,7 +847,6 @@
 
 .method public onShow(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonRecentMediaAdapter;->updateData()V
 

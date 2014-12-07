@@ -14,8 +14,6 @@
 
 .method public static formatFileSize(Landroid/content/Context;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -28,9 +26,6 @@
 
 .method private static formatFileSize(Landroid/content/Context;JZ)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v6, 0x2
 
@@ -279,7 +274,6 @@
 
 .method public static formatIpAddress(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -296,8 +290,6 @@
 
 .method public static formatShortFileSize(Landroid/content/Context;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v0, 0x1
 

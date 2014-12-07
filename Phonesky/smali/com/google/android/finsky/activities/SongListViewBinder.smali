@@ -69,7 +69,6 @@
 
 .method private populateFromLibrary(Lcom/google/android/finsky/library/Library;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/library/Library;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SongListViewBinder;->mLayout:Landroid/view/View;
 
@@ -170,17 +169,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/layout/SongList;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIZLcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/layout/SongList;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Lcom/google/android/finsky/library/Libraries;
-    .param p10    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p11    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v1, 0x2
 
@@ -320,7 +308,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/SongListViewBinder;->mContext:Landroid/content/Context;
 
@@ -343,7 +330,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/SongListViewBinder;->populateFromLibrary(Lcom/google/android/finsky/library/Library;)V
 
@@ -352,7 +338,6 @@
 
 .method public restoreInstanceState(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const-string v5, "SongListViewBinder.InitialDocumentsOwned"
 
@@ -393,7 +378,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 

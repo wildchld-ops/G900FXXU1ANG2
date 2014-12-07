@@ -47,7 +47,6 @@
 
 .method private pickPostalAddress(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/list/PostalAddressPickerFragment;->mListener:Lcom/android/contacts/list/OnPostalAddressPickerActionListener;
 
@@ -104,8 +103,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v1, 0x7f030054
 
@@ -138,8 +135,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
@@ -180,8 +175,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/android/contacts/list/PostalAddressPickerFragment;->isLegacyCompatibilityMode()Z
 
@@ -222,7 +215,6 @@
 
 .method public setOnPostalAddressPickerActionListener(Lcom/android/contacts/list/OnPostalAddressPickerActionListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/OnPostalAddressPickerActionListener;
 
     iput-object p1, p0, Lcom/android/contacts/list/PostalAddressPickerFragment;->mListener:Lcom/android/contacts/list/OnPostalAddressPickerActionListener;
 
@@ -231,8 +223,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 

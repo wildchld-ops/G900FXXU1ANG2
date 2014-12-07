@@ -102,7 +102,6 @@
 # virtual methods
 .method public getCardCustomizer(Lcom/google/android/play/layout/PlayCardViewBase;)Lcom/google/android/finsky/utils/PlayCardCustomizer;
     .locals 3
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,7 +130,6 @@
 
 .method public registerCardCustomizer(ILcom/google/android/finsky/utils/PlayCardCustomizer;)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

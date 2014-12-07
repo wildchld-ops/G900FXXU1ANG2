@@ -21,9 +21,6 @@
 # direct methods
 .method private constructor <init>(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p2, p3}, Lcom/google/android/finsky/activities/FlagItemFragment$FlagType;-><init>(II)V
 
@@ -34,7 +31,6 @@
 
 .method public static getAppFlags(Z)Ljava/util/List;
     .locals 7
-    .param p0    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -140,9 +136,6 @@
 # virtual methods
 .method public postFlag(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 

@@ -74,9 +74,6 @@
 
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/DisplayContent;Lcom/android/server/wm/StackBox;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
-    .param p3    # Lcom/android/server/wm/StackBox;
 
     const/4 v0, 0x2
 
@@ -87,10 +84,6 @@
 
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/DisplayContent;Lcom/android/server/wm/StackBox;I)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
-    .param p3    # Lcom/android/server/wm/StackBox;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -156,8 +149,6 @@
 
 .method private checkFixedBound(Landroid/graphics/Rect;Z)Z
     .locals 17
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     new-instance v8, Landroid/graphics/Point;
 
@@ -943,7 +934,6 @@
 
 .method contains(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/wm/StackBox;->mStackBoxId:I
 
@@ -983,8 +973,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1159,7 +1147,6 @@
 
 .method gatherLeafStackBox(Ljava/util/ArrayList;Lcom/android/server/wm/StackBox;)V
     .locals 1
-    .param p2    # Lcom/android/server/wm/StackBox;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1257,7 +1244,6 @@
 
 .method getEnableSplitstackId(Lcom/samsung/android/multiwindow/MultiWindowStyle;)I
     .locals 9
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v6, 0x1
 
@@ -1516,7 +1502,6 @@
 
 .method getStackBounds(I)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/StackBox;->mStack:Lcom/android/server/wm/TaskStack;
 
@@ -1596,7 +1581,6 @@
 
 .method public getStackBounds(Lcom/android/server/wm/AppWindowToken;)Landroid/graphics/Rect;
     .locals 1
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     const/4 v0, 0x0
 
@@ -1609,8 +1593,6 @@
 
 .method public getStackBounds(Lcom/android/server/wm/AppWindowToken;Z)Landroid/graphics/Rect;
     .locals 8
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # Z
 
     const/4 v7, 0x3
 
@@ -1812,7 +1794,6 @@
 
 .method getStackBoxForStackId(I)Lcom/android/server/wm/StackBox;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wm/StackBox;->mStack:Lcom/android/server/wm/TaskStack;
 
@@ -1992,7 +1973,6 @@
 
 .method public getStackOriginalBound(Lcom/android/server/wm/AppWindowToken;)Landroid/graphics/Rect;
     .locals 1
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     const/4 v0, 0x1
 
@@ -2143,7 +2123,6 @@
 
 .method final isFloatingStackBox(Z)Z
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -2555,8 +2534,6 @@
 
 .method resize(IF)Z
     .locals 3
-    .param p1    # I
-    .param p2    # F
 
     const/4 v0, 0x1
 
@@ -2621,7 +2598,6 @@
 
 .method public resizeWeight(Z)Z
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -2800,8 +2776,6 @@
 
 .method setStackBoxSizes(Landroid/graphics/Rect;Z)Z
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     const/4 v8, 0x1
 
@@ -3178,10 +3152,6 @@
 
 .method split(IIIF)Lcom/android/server/wm/TaskStack;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     const/4 v3, 0x0
 
@@ -3347,8 +3317,6 @@
 
 .method stackIdFromPoint(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -3450,7 +3418,6 @@
 
 .method switchBounds(I)Z
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/server/wm/StackBox;->mStackBoxId:I
 
@@ -3472,7 +3439,6 @@
 
 .method switchUserStacks(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/StackBox;->mStack:Lcom/android/server/wm/TaskStack;
 

@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/RequestQueue;Lcom/google/android/vending/remoting/api/VendingApiContext;)V
     .locals 0
-    .param p1    # Lcom/android/volley/RequestQueue;
-    .param p2    # Lcom/google/android/vending/remoting/api/VendingApiContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,8 +34,6 @@
 # virtual methods
 .method public ackNotifications(Lcom/google/android/finsky/protos/VendingProtos$AckNotificationsRequestProto;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$AckNotificationsRequestProto;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +76,6 @@
 
 .method public checkForPendingNotifications(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -122,8 +117,6 @@
 
 .method public checkLicense(Lcom/google/android/finsky/protos/VendingProtos$CheckLicenseRequestProto;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$CheckLicenseRequestProto;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -164,10 +157,6 @@
 
 .method public flagAsset(Ljava/lang/String;ILjava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -241,7 +230,6 @@
 
 .method public getBillingCountries(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -287,8 +275,6 @@
 
 .method public getInAppPurchaseInformation(Lcom/google/android/finsky/protos/VendingProtos$InAppPurchaseInformationRequestProto;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$InAppPurchaseInformationRequestProto;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -329,8 +315,6 @@
 
 .method public recordBillingEvent(Lcom/google/android/finsky/protos/VendingProtos$BillingEventRequestProto;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$BillingEventRequestProto;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -373,8 +357,6 @@
 
 .method public restoreApplications(Lcom/google/android/finsky/protos/VendingProtos$RestoreApplicationsRequestProto;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$RestoreApplicationsRequestProto;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -417,8 +399,6 @@
 
 .method public restoreInAppTransactions(Lcom/google/android/finsky/protos/VendingProtos$InAppRestoreTransactionsRequestProto;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$InAppRestoreTransactionsRequestProto;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -459,8 +439,6 @@
 
 .method public syncContent(Lcom/google/android/finsky/protos/VendingProtos$ContentSyncRequestProto;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$ContentSyncRequestProto;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

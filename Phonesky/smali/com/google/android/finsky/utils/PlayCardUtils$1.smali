@@ -30,9 +30,6 @@
 # virtual methods
 .method public onInstallPackageEvent(Ljava/lang/String;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p3    # I
 
     # invokes: Lcom/google/android/finsky/utils/PlayCardUtils;->updateTrackedCardPrices()V
     invoke-static {}, Lcom/google/android/finsky/utils/PlayCardUtils;->access$000()V

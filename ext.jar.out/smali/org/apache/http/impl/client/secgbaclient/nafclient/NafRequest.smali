@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -208,8 +207,6 @@
 
 .method private getCurrentCipherSuite(Lorg/apache/http/client/RequestDirector;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lorg/apache/http/client/RequestDirector;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     const/4 v0, 0x0
 
@@ -264,7 +261,6 @@
 
 .method private getCurrentCipherSuiteFromRequestContext(Lorg/apache/http/protocol/HttpContext;)Ljava/lang/String;
     .locals 7
-    .param p1    # Lorg/apache/http/protocol/HttpContext;
 
     const/4 v2, 0x0
 
@@ -338,7 +334,6 @@
 
 .method private getCurrentCipherSuiteFromRequestDirector(Lorg/apache/http/client/RequestDirector;)Ljava/lang/String;
     .locals 10
-    .param p1    # Lorg/apache/http/client/RequestDirector;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;,
@@ -458,7 +453,6 @@
 
 .method private static registerClientConnection(Lorg/apache/http/client/HttpClient;)V
     .locals 5
-    .param p0    # Lorg/apache/http/client/HttpClient;
 
     new-instance v0, Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest$1;
 
@@ -519,8 +513,6 @@
 
 .method public declared-synchronized create(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpHost;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpRequest;
-    .param p2    # Lorg/apache/http/HttpHost;
 
     monitor-enter p0
 
@@ -618,11 +610,6 @@
 
 .method public declared-synchronized createAndSendRequest(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpHost;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/client/RequestDirector;Ljava/lang/String;)Lorg/apache/http/HttpResponse;
     .locals 5
-    .param p1    # Lorg/apache/http/HttpRequest;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
-    .param p4    # Lorg/apache/http/client/RequestDirector;
-    .param p5    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -866,8 +853,6 @@
 
 .method public declared-synchronized sendRequest(Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/client/RequestDirector;)Lorg/apache/http/HttpResponse;
     .locals 10
-    .param p1    # Lorg/apache/http/protocol/HttpContext;
-    .param p2    # Lorg/apache/http/client/RequestDirector;
 
     monitor-enter p0
 
@@ -1236,7 +1221,6 @@
 
 .method public setNafAuthorizationHeaderVal(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest;->nafAuthorizationHeaderVal:Ljava/lang/String;
 

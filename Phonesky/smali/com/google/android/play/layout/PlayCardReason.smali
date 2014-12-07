@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/layout/PlaySeparatorLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -169,11 +166,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 17
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/play/layout/PlayCardReason;->getHeight()I
 
@@ -347,8 +339,6 @@
 
 .method protected onMeasure(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v10, 0x40000000
 
@@ -463,8 +453,6 @@
 
 .method public setReasonText(Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayCardReason;->mReason:Landroid/widget/TextView;
 
@@ -477,7 +465,6 @@
 
 .method public setSizeMode(I)V
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 

@@ -226,7 +226,6 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -442,7 +441,6 @@
 
 .method public setBrowserDashMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/SyncFrequencyScenario;->mBrowserDashMode:Z
 

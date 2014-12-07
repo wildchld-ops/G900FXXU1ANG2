@@ -48,7 +48,6 @@
 
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper$MyContentObserver;->this$1:Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;
 

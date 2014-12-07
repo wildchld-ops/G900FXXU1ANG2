@@ -54,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mIsTranslated:Z
 
@@ -63,8 +62,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/activities/DetailsTextViewBinder;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mIsTranslated:Z
 
@@ -73,7 +70,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->updateDescription()V
 
@@ -82,7 +78,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     iget v0, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mFullHeight:I
 
@@ -91,8 +86,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/activities/DetailsTextViewBinder;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mFullHeight:I
 
@@ -101,7 +94,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     iget v0, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mTruncatedHeight:I
 
@@ -110,8 +102,6 @@
 
 .method static synthetic access$302(Lcom/google/android/finsky/activities/DetailsTextViewBinder;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mTruncatedHeight:I
 
@@ -120,7 +110,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mFooterIcon:Landroid/widget/ImageView;
 
@@ -129,7 +118,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->configureContent()V
 
@@ -138,8 +126,6 @@
 
 .method static synthetic access$602(Lcom/google/android/finsky/activities/DetailsTextViewBinder;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mUrlSpanClicked:Z
 
@@ -148,7 +134,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -157,7 +142,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/activities/DetailsTextViewBinder;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->handleClick()V
 
@@ -166,7 +150,6 @@
 
 .method private collapseContent(Z)V
     .locals 8
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -372,7 +355,6 @@
 
 .method private selfishifyUrlSpans(Ljava/lang/CharSequence;)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v10, 0x0
 
@@ -517,13 +499,6 @@
 # virtual methods
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;ILjava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Ljava/lang/CharSequence;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/16 v3, 0x8
 
@@ -744,10 +719,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -768,11 +739,6 @@
 
 .method public init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;IZ)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # I
-    .param p5    # Z
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/fragments/DetailsViewBinder;->init(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
 
@@ -791,7 +757,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mLayout:Landroid/view/View;
 
@@ -845,7 +810,6 @@
 
 .method public setDefaultMaxLines(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder;->mDefaultMaxLines:I
 

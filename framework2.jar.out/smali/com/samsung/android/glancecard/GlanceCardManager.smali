@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -166,7 +165,6 @@
 
 .method public addCard(Lcom/samsung/android/glancecard/GlanceCardInfo;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/glancecard/GlanceCardInfo;
 
     :try_start_0
     sget-object v3, Lcom/samsung/android/glancecard/GlanceCardManager;->TAG:Ljava/lang/String;
@@ -475,7 +473,6 @@
 
 .method public removeCard(I)Z
     .locals 6
-    .param p1    # I
 
     :try_start_0
     sget-object v3, Lcom/samsung/android/glancecard/GlanceCardManager;->TAG:Ljava/lang/String;
@@ -553,7 +550,6 @@
 
 .method public removeGroup(I)Z
     .locals 6
-    .param p1    # I
 
     :try_start_0
     sget-object v3, Lcom/samsung/android/glancecard/GlanceCardManager;->TAG:Ljava/lang/String;
@@ -631,11 +627,6 @@
 
 .method public sendTrayAction(Landroid/content/ComponentName;IILandroid/os/Bundle;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Landroid/content/Intent;
 
     sget-object v5, Lcom/samsung/android/glancecard/GlanceCardManager;->TAG:Ljava/lang/String;
 
@@ -816,7 +807,6 @@
 
 .method public setGlanceCardChangedListener(Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     sget-object v3, Lcom/samsung/android/glancecard/GlanceCardManager;->TAG:Ljava/lang/String;
@@ -969,7 +959,6 @@
 
 .method public updateCard(Lcom/samsung/android/glancecard/GlanceCardInfo;)Z
     .locals 5
-    .param p1    # Lcom/samsung/android/glancecard/GlanceCardInfo;
 
     :try_start_0
     sget-object v3, Lcom/samsung/android/glancecard/GlanceCardManager;->TAG:Ljava/lang/String;

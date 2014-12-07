@@ -54,10 +54,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/dialer/calllog/ContactInfoHelper;Lcom/samsung/dialer/calllog/CallLogContactsSync$CallLogNotify;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/calllog/ContactInfoHelper;
-    .param p3    # Lcom/samsung/dialer/calllog/CallLogContactsSync$CallLogNotify;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,7 +108,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/calllog/CallLogContactsSync;)Lcom/samsung/dialer/calllog/CallLogContactsSync$CallLogNotify;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallLogContactsSync;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallLogContactsSync;->mCallLogNotify:Lcom/samsung/dialer/calllog/CallLogContactsSync$CallLogNotify;
 
@@ -121,7 +116,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/calllog/CallLogContactsSync;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallLogContactsSync;
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/CallLogContactsSync;->startRequestProcessing()V
 
@@ -130,7 +124,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/calllog/CallLogContactsSync;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallLogContactsSync;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallLogContactsSync;->mRequests:Ljava/util/LinkedList;
 
@@ -139,10 +132,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/calllog/CallLogContactsSync;Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallLogContactsSync;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/dialer/calllog/ContactInfo;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/dialer/calllog/CallLogContactsSync;->queryContactInfo(Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;)Z
 
@@ -153,7 +142,6 @@
 
 .method static synthetic access$400(Lcom/samsung/dialer/calllog/CallLogContactsSync;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallLogContactsSync;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallLogContactsSync;->mHandler:Landroid/os/Handler;
 
@@ -162,9 +150,6 @@
 
 .method private queryContactInfo(Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/dialer/calllog/ContactInfo;
 
     const/4 v3, 0x0
 
@@ -268,10 +253,6 @@
 
 .method private updateCallLogContactInfoCache(Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;Lcom/android/dialer/calllog/ContactInfo;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/dialer/calllog/ContactInfo;
-    .param p4    # Lcom/android/dialer/calllog/ContactInfo;
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -764,8 +745,6 @@
 # virtual methods
 .method public callLogInfoMatches(Lcom/android/dialer/calllog/ContactInfo;Lcom/android/dialer/calllog/ContactInfo;)Z
     .locals 2
-    .param p1    # Lcom/android/dialer/calllog/ContactInfo;
-    .param p2    # Lcom/android/dialer/calllog/ContactInfo;
 
     iget-object v0, p1, Lcom/android/dialer/calllog/ContactInfo;->name:Ljava/lang/String;
 
@@ -806,10 +785,6 @@
 
 .method public enqueueRequest(Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/dialer/calllog/ContactInfo;
-    .param p4    # Z
 
     new-instance v0, Lcom/samsung/dialer/calllog/ContactInfoRequest;
 
@@ -883,7 +858,6 @@
 
 .method public getContactInfoFromCallLog(Landroid/database/Cursor;)Lcom/android/dialer/calllog/ContactInfo;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     new-instance v0, Lcom/android/dialer/calllog/ContactInfo;
 
@@ -983,7 +957,6 @@
 
 .method public sendEmptyMessage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallLogContactsSync;->mHandler:Landroid/os/Handler;
 

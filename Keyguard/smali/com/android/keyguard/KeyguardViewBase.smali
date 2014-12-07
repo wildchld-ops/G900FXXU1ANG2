@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -35,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -49,7 +46,6 @@
 
 .method private interceptMediaKey(Landroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/KeyEvent;
 
     const/16 v8, 0xa8
 
@@ -300,7 +296,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardViewBase;->interceptMediaKey(Landroid/view/KeyEvent;)Z
 
@@ -323,7 +318,6 @@
 
 .method public dispatchSystemUiVisibilityChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchSystemUiVisibilityChanged(I)V
 
@@ -343,7 +337,6 @@
 
 .method handleMediaKeyEvent(Landroid/view/KeyEvent;)V
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
 
     const-string v2, "audio"
 
@@ -404,7 +397,6 @@
 
 .method public setViewMediatorCallback(Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewBase;->mViewMediatorCallback:Lcom/android/keyguard/KeyguardViewMediator$ViewMediatorCallback;
 

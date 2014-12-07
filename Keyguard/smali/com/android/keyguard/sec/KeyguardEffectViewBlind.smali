@@ -67,7 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/high16 v2, 0x3f800000
 
@@ -182,7 +181,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->mSoundPool:Landroid/media/SoundPool;
 
@@ -191,8 +189,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Landroid/media/SoundPool;)Landroid/media/SoundPool;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Landroid/media/SoundPool;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->mSoundPool:Landroid/media/SoundPool;
 
@@ -201,7 +197,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isHandleUnlock:Z
 
@@ -210,8 +205,6 @@
 
 .method static synthetic access$1002(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isHandleUnlock:Z
 
@@ -220,8 +213,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->releaseSoundRunnable:Ljava/lang/Runnable;
 
@@ -230,7 +221,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isAsyncPostExecuted:Z
 
@@ -239,8 +229,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isAsyncPostExecuted:Z
 
@@ -249,7 +237,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Lcom/sec/android/visualeffect/blind/BlindEffect;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->blindEffect:Lcom/sec/android/visualeffect/blind/BlindEffect;
 
@@ -258,8 +245,6 @@
 
 .method static synthetic access$302(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Lcom/sec/android/visualeffect/blind/BlindEffect;)Lcom/sec/android/visualeffect/blind/BlindEffect;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->blindEffect:Lcom/sec/android/visualeffect/blind/BlindEffect;
 
@@ -268,7 +253,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->mContext:Landroid/content/Context;
 
@@ -277,7 +261,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->setBackground()Landroid/graphics/Bitmap;
 
@@ -288,7 +271,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isOnConfigurationChanged:Z
 
@@ -297,8 +279,6 @@
 
 .method static synthetic access$602(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isOnConfigurationChanged:Z
 
@@ -307,7 +287,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isShow:Z
 
@@ -316,8 +295,6 @@
 
 .method static synthetic access$702(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isShow:Z
 
@@ -326,7 +303,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isCleanUp:Z
 
@@ -335,8 +311,6 @@
 
 .method static synthetic access$802(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isCleanUp:Z
 
@@ -345,7 +319,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isUpdate:Z
 
@@ -354,8 +327,6 @@
 
 .method static synthetic access$902(Lcom/android/keyguard/sec/KeyguardEffectViewBlind;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewBlind;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewBlind;->isUpdate:Z
 
@@ -486,7 +457,6 @@
 
 .method private playSound(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -807,8 +777,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -861,8 +829,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -871,8 +837,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -903,7 +867,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -995,7 +958,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -1032,8 +994,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 2
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "BlindEffect"
 

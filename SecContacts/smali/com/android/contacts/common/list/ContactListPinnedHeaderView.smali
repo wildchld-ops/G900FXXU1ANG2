@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v7, 0x10
 
@@ -222,7 +220,6 @@
 
 .method private isViewMeasurable(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -247,11 +244,6 @@
 # virtual methods
 .method protected onLayout(ZIIII)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v6, p4, p2
 
@@ -373,8 +365,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v5, 0x40000000
 
@@ -453,7 +443,6 @@
 
 .method public setCountView(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -526,7 +515,6 @@
 
 .method public setSectionHeader(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v2, 0x8
 

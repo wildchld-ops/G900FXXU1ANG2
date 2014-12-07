@@ -29,8 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/download/DownloadQueue;I)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/download/DownloadQueue;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -53,10 +51,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/utils/SelfUpdateScheduler;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/SelfUpdateScheduler;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/utils/SelfUpdateScheduler;->startSelfUpdateDownload(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -65,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/utils/SelfUpdateScheduler;)Lcom/google/android/finsky/analytics/PlayStore$AppData;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/SelfUpdateScheduler;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/SelfUpdateScheduler;->mLogAppData:Lcom/google/android/finsky/analytics/PlayStore$AppData;
 
@@ -74,7 +67,6 @@
 
 .method private static computeClientHashes(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -150,7 +142,6 @@
 
 .method public static declared-synchronized getCertificateHash(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/google/android/finsky/utils/SelfUpdateScheduler;
 
@@ -182,7 +173,6 @@
 
 .method public static declared-synchronized getCertificateHashSelfUpdateMD5(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/google/android/finsky/utils/SelfUpdateScheduler;
 
@@ -214,9 +204,6 @@
 
 .method private startSelfUpdateDownload(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/download/DownloadImpl;
 
@@ -291,7 +278,6 @@
 # virtual methods
 .method public checkForSelfUpdate(Lcom/google/android/finsky/protos/Toc$TocResponse;)V
     .locals 16
-    .param p1    # Lcom/google/android/finsky/protos/Toc$TocResponse;
 
     move-object/from16 v0, p0
 
@@ -518,14 +504,12 @@
 
 .method public onCancel(Lcom/google/android/finsky/download/Download;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     return-void
 .end method
 
 .method public onComplete(Lcom/google/android/finsky/download/Download;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const/4 v3, 0x0
 
@@ -631,8 +615,6 @@
 
 .method public onError(Lcom/google/android/finsky/download/Download;I)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -688,22 +670,18 @@
 
 .method public onNotificationClicked(Lcom/google/android/finsky/download/Download;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     return-void
 .end method
 
 .method public onProgress(Lcom/google/android/finsky/download/Download;Lcom/google/android/finsky/download/DownloadProgress;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # Lcom/google/android/finsky/download/DownloadProgress;
 
     return-void
 .end method
 
 .method public onStart(Lcom/google/android/finsky/download/Download;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const/4 v3, 0x0
 

@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PackageManager;)V
     .locals 0
-    .param p1    # Landroid/content/pm/PackageManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,8 +34,6 @@
 
 .method private getResourceDrawable(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -64,7 +61,6 @@
 
 .method private getResourcesForResourceName(Ljava/lang/String;)Landroid/content/res/Resources;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailDisplayUtils$DefaultImageGetter;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -112,7 +108,6 @@
 # virtual methods
 .method public getDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 

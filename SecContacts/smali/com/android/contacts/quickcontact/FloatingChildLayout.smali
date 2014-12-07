@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -126,7 +124,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/quickcontact/FloatingChildLayout;)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mBackgroundAnimator:Landroid/animation/ObjectAnimator;
 
@@ -135,7 +132,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/quickcontact/FloatingChildLayout;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mCreateExtras:Landroid/os/Bundle;
 
@@ -144,7 +140,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/quickcontact/FloatingChildLayout;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mIsProfile:Z
 
@@ -153,7 +148,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/quickcontact/FloatingChildLayout;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -162,7 +156,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/quickcontact/FloatingChildLayout;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -171,7 +164,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/quickcontact/FloatingChildLayout;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -180,7 +172,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/quickcontact/FloatingChildLayout;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -189,9 +180,6 @@
 
 .method private static clampDimension(III)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-le p1, p2, :cond_0
 
@@ -270,9 +258,6 @@
 
 .method private static layoutChild(Landroid/view/View;II)V
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -295,8 +280,6 @@
 # virtual methods
 .method protected animateScale(ZLjava/lang/Runnable;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/Runnable;
 
     const/high16 v2, 0x3f800000
 
@@ -500,7 +483,6 @@
 
 .method public hideContent(Ljava/lang/Runnable;)Z
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
 
     const/4 v0, 0x1
 
@@ -592,11 +574,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mChild:Landroid/view/View;
 
@@ -712,7 +689,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mOutsideTouchListener:Landroid/view/View$OnTouchListener;
 
@@ -735,7 +711,6 @@
 
 .method public setBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const-string v0, "FloatingChildLayout"
 
@@ -748,7 +723,6 @@
 
 .method public setBackgroundColorAlpha(I)V
     .locals 1
-    .param p1    # I
 
     shl-int/lit8 v0, p1, 0x18
 
@@ -759,7 +733,6 @@
 
 .method public setChildTargetScreen(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     iput-object p1, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mTargetScreen:Landroid/graphics/Rect;
 
@@ -770,8 +743,6 @@
 
 .method protected setClickListeners(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Lcom/android/contacts/quickcontact/FloatingChildLayout$3;
 
@@ -790,7 +761,6 @@
 
 .method public setCreateExtras(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mCreateExtras:Landroid/os/Bundle;
 
@@ -799,7 +769,6 @@
 
 .method public setIsProfile(Ljava/lang/Boolean;)V
     .locals 1
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -812,7 +781,6 @@
 
 .method public setOnOutsideTouchListener(Landroid/view/View$OnTouchListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iput-object p1, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mOutsideTouchListener:Landroid/view/View$OnTouchListener;
 
@@ -821,7 +789,6 @@
 
 .method public showContent(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget v0, p0, Lcom/android/contacts/quickcontact/FloatingChildLayout;->mForegroundPhase:I
 

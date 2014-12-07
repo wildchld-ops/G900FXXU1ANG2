@@ -58,7 +58,6 @@
 
 .method public onCheckAndConfirmGPlusPassed(Lcom/google/android/finsky/api/model/Document;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->internalFakeItemRaterEnabled:Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
 

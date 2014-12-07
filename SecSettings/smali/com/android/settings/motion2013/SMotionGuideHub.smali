@@ -167,7 +167,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion2013/SMotionGuideHub;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/SMotionGuideHub;->mMotionDBItem:Ljava/lang/String;
 
@@ -176,7 +175,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion2013/SMotionGuideHub;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
 
     invoke-direct {p0}, Lcom/android/settings/motion2013/SMotionGuideHub;->showMotionDialog()V
 
@@ -185,8 +183,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->broadcastAirMoveChanged(Z)V
 
@@ -195,8 +191,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->broadcastAirPinChanged(Z)V
 
@@ -205,8 +199,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->broadcastAirCallAcceptChanged(Z)V
 
@@ -215,8 +207,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->broadcastArcMotionQuickGlanceChanged(Z)V
 
@@ -225,8 +215,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->startTurnOverTryActually(Z)V
 
@@ -235,8 +223,6 @@
 
 .method static synthetic access$1502(Lcom/android/settings/motion2013/SMotionGuideHub;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/motion2013/SMotionGuideHub;->mFolderDialog:Landroid/app/AlertDialog;
 
@@ -245,7 +231,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion2013/SMotionGuideHub;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/SMotionGuideHub;->mMotionType:Ljava/lang/String;
 
@@ -254,8 +239,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion2013/SMotionGuideHub;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->startTryActually(Ljava/lang/String;)V
 
@@ -264,7 +247,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/motion2013/SMotionGuideHub;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/SMotionGuideHub;->mResolver:Landroid/content/ContentResolver;
 
@@ -273,7 +255,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/motion2013/SMotionGuideHub;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/SMotionGuideHub;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -282,7 +263,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/motion2013/SMotionGuideHub;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/SMotionGuideHub;->mListView:Landroid/widget/ListView;
 
@@ -291,8 +271,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->sendGlanceViewCheck(Z)V
 
@@ -301,8 +279,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->broadcastAirScrollChanged(Z)V
 
@@ -311,8 +287,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/motion2013/SMotionGuideHub;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/SMotionGuideHub;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/SMotionGuideHub;->broadcastAirBrowseChanged(Z)V
 
@@ -3667,7 +3641,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -3877,8 +3850,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v0, "default"
 
@@ -4035,7 +4006,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v2, 0x1
 
@@ -5209,8 +5179,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 

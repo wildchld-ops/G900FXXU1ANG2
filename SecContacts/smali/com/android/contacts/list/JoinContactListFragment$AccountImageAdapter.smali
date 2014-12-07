@@ -84,7 +84,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -93,7 +92,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -102,9 +100,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 

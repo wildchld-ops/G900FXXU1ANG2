@@ -112,7 +112,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/group/GroupMultiSelectionActivity;)Lcom/samsung/contacts/group/GroupInfo;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMultiSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultiSelectionActivity;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -121,8 +120,6 @@
 
 .method static synthetic access$602(Lcom/samsung/contacts/group/GroupMultiSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMultiSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/group/GroupMultiSelectionActivity;->mSelectedCount:I
 
@@ -131,8 +128,6 @@
 
 .method static synthetic access$702(Lcom/samsung/contacts/group/GroupMultiSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMultiSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/group/GroupMultiSelectionActivity;->mTotalCount:I
 
@@ -366,7 +361,6 @@
 
 .method private getIntentInfo(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -650,7 +644,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;
 
@@ -691,7 +684,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -788,7 +780,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -881,7 +872,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -926,7 +916,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -1025,7 +1014,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultiSelectionActivity;->mMenuDone:Landroid/view/MenuItem;
 
@@ -1042,7 +1030,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1087,7 +1074,6 @@
 
 .method protected setButtonClickable(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMultiSelectionActivity;->mDoneButtonClickable:Z
 

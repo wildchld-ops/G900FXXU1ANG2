@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/gms/common/data/d;)V
     .locals 0
-    .param p1    # Lcom/google/android/gms/common/data/d;
 
     invoke-direct {p0, p1}, Lcom/google/android/gms/common/data/DataBuffer;-><init>(Lcom/google/android/gms/common/data/d;)V
 
@@ -27,7 +26,6 @@
 # virtual methods
 .method public get(I)Lcom/google/android/gms/people/model/Circle;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Lcom/google/android/gms/internal/bz;
 
@@ -44,7 +42,6 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/gms/people/model/CircleBuffer;->get(I)Lcom/google/android/gms/people/model/Circle;
 

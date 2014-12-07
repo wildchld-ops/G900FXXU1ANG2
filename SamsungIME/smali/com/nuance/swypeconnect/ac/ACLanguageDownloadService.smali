@@ -96,8 +96,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/connect/api/LanguageService;Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/api/LanguageService;
-    .param p2    # Lcom/nuance/connect/store/PersistentDataStore;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -156,7 +154,6 @@
 
 .method static synthetic access$000(Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;->downloaded:Ljava/util/HashMap;
 
@@ -165,7 +162,6 @@
 
 .method static synthetic access$100(Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;)V
     .locals 0
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;->save()V
 
@@ -174,7 +170,6 @@
 
 .method private addSupportedLanguage(Lcom/nuance/swypeconnect/ac/ACLdbInfo;)V
     .locals 7
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACLdbInfo;
 
     const/4 v3, 0x1
 
@@ -364,8 +359,6 @@
 
 .method private addSupportedLanguage(Ljava/lang/Integer;[Lcom/nuance/swypeconnect/ac/ACLdbInfo;)V
     .locals 8
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # [Lcom/nuance/swypeconnect/ac/ACLdbInfo;
 
     const/4 v6, 0x1
 
@@ -457,10 +450,6 @@
 
 .method private generateSupportedHashMap(Ljava/lang/Integer;ZIZ)Ljava/util/HashMap;
     .locals 3
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -515,7 +504,6 @@
 
 .method private isDownloaded(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -579,7 +567,6 @@
 
 .method private isPreinstalled(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -635,7 +622,6 @@
 
 .method private isSupported(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -659,8 +645,6 @@
 
 .method private isUpdateAvailable(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -983,8 +967,6 @@
 # virtual methods
 .method public addExistingLanguage(Ljava/lang/Integer;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # [Ljava/lang/String;
 
     if-eqz p2, :cond_1
 
@@ -1020,7 +1002,6 @@
 
 .method public addExistingLanguage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/nuance/swypeconnect/ac/ACLdbInfo;->load(Ljava/lang/String;)Lcom/nuance/swypeconnect/ac/ACLdbInfo;
 
@@ -1033,7 +1014,6 @@
 
 .method public addSupportedLanguage(Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v2, 0x0
 
@@ -1052,7 +1032,6 @@
 
 .method public cancelDownload(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -1100,8 +1079,6 @@
 
 .method public downloadLanguage(ILcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadFileCallback;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadFileCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -1244,9 +1221,6 @@
 
 .method public downloadLanguageFlavor(ILjava/lang/String;Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadFileCallback;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadFileCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -1699,8 +1673,6 @@
 
 .method public isFlavorAvailable(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1779,7 +1751,6 @@
 
 .method public languageUninstalled(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -1860,7 +1831,6 @@
 
 .method public registerCallback(Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadListCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadListCallback;
 
     new-instance v0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$3;
 
@@ -1879,7 +1849,6 @@
 
 .method public removeSupportedLanguage(Ljava/lang/Integer;)V
     .locals 4
-    .param p1    # Ljava/lang/Integer;
 
     iget-object v1, p0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;->supportedLangs:Ljava/util/HashMap;
 
@@ -1970,7 +1939,6 @@
 
 .method public unregisterCallback(Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadListCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService$ACLanguageDownloadListCallback;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguageDownloadService;->languageCallbacks:Ljava/util/Map;
 

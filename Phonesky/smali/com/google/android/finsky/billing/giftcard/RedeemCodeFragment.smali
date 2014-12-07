@@ -105,8 +105,6 @@
 
 .method private installApp(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;)V
     .locals 11
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v2, 0x1
 
@@ -179,9 +177,6 @@
 
 .method public static newInstance(Ljava/lang/String;ILjava/lang/String;)Lcom/google/android/finsky/billing/giftcard/RedeemCodeFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -210,7 +205,6 @@
 
 .method private performSuccessAction(Lcom/google/android/finsky/protos/PromoCode$PostSuccessAction;)Z
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/PromoCode$PostSuccessAction;
 
     const/4 v0, 0x0
 
@@ -331,9 +325,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 
@@ -399,7 +390,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -439,9 +429,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040086
 
@@ -456,8 +443,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x2
 
@@ -471,8 +456,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x2
 
@@ -502,7 +485,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -610,7 +592,6 @@
 
 .method public onStateChange(Lcom/google/android/finsky/fragments/SidecarFragment;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/fragments/SidecarFragment;
 
     const/4 v10, 0x0
 
@@ -905,8 +886,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -971,7 +950,6 @@
 
 .method public redeem(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/giftcard/RedeemCodeFragment;->mSidecar:Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
 

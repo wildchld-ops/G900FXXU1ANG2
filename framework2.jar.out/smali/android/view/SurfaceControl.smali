@@ -81,12 +81,6 @@
 
 .method public constructor <init>(Landroid/view/SurfaceSession;Ljava/lang/String;IIII)V
     .locals 3
-    .param p1    # Landroid/view/SurfaceSession;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/SurfaceControl$OutOfResourcesException;
@@ -188,7 +182,6 @@
 
 .method public static blankDisplay(Landroid/os/IBinder;)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     if-nez p0, :cond_0
 
@@ -254,8 +247,6 @@
 
 .method public static createDisplay(Ljava/lang/String;Z)Landroid/os/IBinder;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     if-nez p0, :cond_0
 
@@ -277,7 +268,6 @@
 
 .method public static destroyDisplay(Landroid/os/IBinder;)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     if-nez p0, :cond_0
 
@@ -297,7 +287,6 @@
 
 .method public static getBuiltInDisplay(I)Landroid/os/IBinder;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/SurfaceControl;->nativeGetBuiltInDisplay(I)Landroid/os/IBinder;
 
@@ -308,8 +297,6 @@
 
 .method public static getDisplayInfo(Landroid/os/IBinder;Landroid/view/SurfaceControl$PhysicalDisplayInfo;)Z
     .locals 2
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Landroid/view/SurfaceControl$PhysicalDisplayInfo;
 
     if-nez p0, :cond_0
 
@@ -457,8 +444,6 @@
 
 .method public static screenshot(II)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -483,10 +468,6 @@
 
 .method public static screenshot(IIII)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -511,8 +492,6 @@
 
 .method public static screenshot(Landroid/os/IBinder;Landroid/view/Surface;)V
     .locals 7
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Landroid/view/Surface;
 
     const/4 v2, 0x0
 
@@ -535,10 +514,6 @@
 
 .method public static screenshot(Landroid/os/IBinder;Landroid/view/Surface;II)V
     .locals 7
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Landroid/view/Surface;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -561,12 +536,6 @@
 
 .method public static screenshot(Landroid/os/IBinder;Landroid/view/Surface;IIII)V
     .locals 7
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Landroid/view/Surface;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -589,13 +558,6 @@
 
 .method private static screenshot(Landroid/os/IBinder;Landroid/view/Surface;IIIIZ)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Landroid/view/Surface;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     if-nez p0, :cond_0
 
@@ -634,8 +596,6 @@
 
 .method public static setDisplayLayerStack(Landroid/os/IBinder;I)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -655,10 +615,6 @@
 
 .method public static setDisplayProjection(Landroid/os/IBinder;ILandroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 10
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     if-nez p0, :cond_0
 
@@ -720,8 +676,6 @@
 
 .method public static setDisplaySurface(Landroid/os/IBinder;Landroid/view/Surface;)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Landroid/view/Surface;
 
     if-nez p0, :cond_0
 
@@ -769,7 +723,6 @@
 
 .method public static unblankDisplay(Landroid/os/IBinder;)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     if-nez p0, :cond_0
 
@@ -892,7 +845,6 @@
 
 .method public setAlpha(F)V
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1027,8 +979,6 @@
 
 .method public setFlags(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1041,7 +991,6 @@
 
 .method public setLayer(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1054,7 +1003,6 @@
 
 .method public setLayerStack(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1067,10 +1015,6 @@
 
 .method public setMatrix(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1083,7 +1027,6 @@
 
 .method public setMatrix3D([F)V
     .locals 1
-    .param p1    # [F
 
     iget v0, p0, Landroid/view/SurfaceControl;->mNativeObject:I
 
@@ -1094,8 +1037,6 @@
 
 .method public setPosition(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1108,8 +1049,6 @@
 
 .method public setSize(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1122,7 +1061,6 @@
 
 .method public setTransparentRegionHint(Landroid/graphics/Region;)V
     .locals 1
-    .param p1    # Landroid/graphics/Region;
 
     invoke-direct {p0}, Landroid/view/SurfaceControl;->checkNotReleased()V
 
@@ -1135,7 +1073,6 @@
 
 .method public setVRCinemaMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/view/SurfaceControl;->mNativeObject:I
 
@@ -1146,7 +1083,6 @@
 
 .method public setVRDepth(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/view/SurfaceControl;->mNativeObject:I
 
@@ -1157,7 +1093,6 @@
 
 .method public setVRMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/view/SurfaceControl;->mNativeObject:I
 
@@ -1168,7 +1103,6 @@
 
 .method public setWindowCrop(Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 

@@ -43,7 +43,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/parser/Pipeline;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/parser/Pipeline;
 
     const/4 v1, 0x0
 
@@ -56,9 +55,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/parser/SIPMessageListener;Lgov/nist/javax/sip/parser/Pipeline;I)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/parser/SIPMessageListener;
-    .param p2    # Lgov/nist/javax/sip/parser/Pipeline;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -69,10 +65,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/parser/SIPMessageListener;Lgov/nist/javax/sip/parser/Pipeline;ZI)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/parser/SIPMessageListener;
-    .param p2    # Lgov/nist/javax/sip/parser/Pipeline;
-    .param p3    # Z
-    .param p4    # I
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/PipelinedMsgParser;-><init>()V
 
@@ -147,7 +139,6 @@
 
 .method private readLine(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -709,7 +700,6 @@
 
 .method public setMessageListener(Lgov/nist/javax/sip/parser/SIPMessageListener;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/parser/SIPMessageListener;
 
     iput-object p1, p0, Lgov/nist/javax/sip/parser/PipelinedMsgParser;->sipMessageListener:Lgov/nist/javax/sip/parser/SIPMessageListener;
 

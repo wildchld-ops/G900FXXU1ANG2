@@ -132,7 +132,6 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/tsp/SideTouch;->mIsAppForeground:Z
 
@@ -143,7 +142,6 @@
 
 .method public setCameraEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "SSRMv2:TSP:SideTouch"
 
@@ -176,7 +174,6 @@
 
 .method public setMultiverseEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "SSRMv2:TSP:SideTouch"
 

@@ -120,17 +120,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIILjava/lang/String;FIZ)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # F
-    .param p10    # I
-    .param p11    # Z
 
     const/4 v3, 0x0
 
@@ -286,13 +275,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;FIZ)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
-    .param p5    # F
-    .param p6    # I
-    .param p7    # Z
 
     const/4 v3, 0x0
 
@@ -444,8 +426,6 @@
 
 .method private getBreakIndex(Ljava/lang/String;I)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -730,7 +710,6 @@
 
 .method private getNumOfNewLineChar(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -819,8 +798,6 @@
 
 .method private insertEllipsis(Ljava/lang/String;I)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -933,8 +910,6 @@
 
 .method private isFadingNeeded(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mPaint:Landroid/graphics/Paint;
 
@@ -967,7 +942,6 @@
 
 .method private wordBreak(I)Ljava/util/List;
     .locals 13
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -3172,8 +3146,6 @@
 
 .method public setAlign(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mHAlign:I
 
@@ -3186,7 +3158,6 @@
 
 .method public setBold(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mBold:Z
 
@@ -3197,8 +3168,6 @@
 
 .method public setBoldColor(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mBold:Z
 
@@ -3211,7 +3180,6 @@
 
 .method public setColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mColor:I
 
@@ -3222,7 +3190,6 @@
 
 .method public setDynamicHeight(F)V
     .locals 1
-    .param p1    # F
 
     float-to-int v0, p1
 
@@ -3247,7 +3214,6 @@
 
 .method public setFadingEdge(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mFadingEdge:Z
 
@@ -3256,7 +3222,6 @@
 
 .method public setFadingEdgeWidth(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mFadingEdgeWidth:F
 
@@ -3267,7 +3232,6 @@
 
 .method public setFontSize(I)V
     .locals 2
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -3351,7 +3315,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -3380,8 +3343,6 @@
 
 .method public setLayout(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -3428,7 +3389,6 @@
 
 .method public setLineSpace(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mLineSpace:I
 
@@ -3437,7 +3397,6 @@
 
 .method public setShadowColor(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mShadowColor:I
 
@@ -3453,11 +3412,6 @@
 
 .method public setShadowLayer(ZFFFI)V
     .locals 2
-    .param p1    # Z
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -3522,8 +3476,6 @@
 
 .method public setShadowOffset(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -3559,7 +3511,6 @@
 
 .method public setShadowRadius(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mShadowRadius:F
 
@@ -3577,7 +3528,6 @@
 
 .method public setShadowVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mShadow:Z
 
@@ -3588,8 +3538,6 @@
 
 .method public setSize(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->setSize(FF)V
 
@@ -3608,9 +3556,6 @@
 
 .method public setStroke(ZFI)V
     .locals 2
-    .param p1    # Z
-    .param p2    # F
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -3653,7 +3598,6 @@
 
 .method public setStrokeColor(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mStrokeColor:I
 
@@ -3669,7 +3613,6 @@
 
 .method public setStrokeVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mStroke:Z
 
@@ -3685,7 +3628,6 @@
 
 .method public setStrokeWidth(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mStrokeWidth:F
 
@@ -3703,7 +3645,6 @@
 
 .method public declared-synchronized setText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3773,9 +3714,6 @@
 
 .method public setText(Ljava/lang/String;FI)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLStringTexture;->mText:Ljava/lang/String;
 
@@ -3861,7 +3799,6 @@
 
 .method public setTextScaleX(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mPaint:Landroid/graphics/Paint;
 
@@ -3874,7 +3811,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;)V
     .locals 1
-    .param p1    # Landroid/graphics/Typeface;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLStringTexture;->mPaint:Landroid/graphics/Paint;
 
@@ -3885,7 +3821,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 

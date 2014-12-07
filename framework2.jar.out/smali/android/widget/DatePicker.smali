@@ -133,7 +133,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -144,8 +143,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101035c
 
@@ -156,9 +153,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 23
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct/range {p0 .. p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -1462,7 +1456,6 @@
 
 .method static synthetic access$000(Landroid/widget/DatePicker;)Ljava/util/Calendar;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mCurrentDate:Ljava/util/Calendar;
 
@@ -1471,7 +1464,6 @@
 
 .method static synthetic access$100(Landroid/widget/DatePicker;)Ljava/util/Calendar;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mTempDate:Ljava/util/Calendar;
 
@@ -1480,7 +1472,6 @@
 
 .method static synthetic access$1000(Landroid/widget/DatePicker;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mDaySpinnerInput:Landroid/widget/EditText;
 
@@ -1489,7 +1480,6 @@
 
 .method static synthetic access$1100(Landroid/widget/DatePicker;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mMonthSpinnerInput:Landroid/widget/EditText;
 
@@ -1498,7 +1488,6 @@
 
 .method static synthetic access$1200(Landroid/widget/DatePicker;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mYearSpinnerInput:Landroid/widget/EditText;
 
@@ -1507,7 +1496,6 @@
 
 .method static synthetic access$1300(Landroid/widget/DatePicker;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mSpinners:Landroid/widget/LinearLayout;
 
@@ -1516,9 +1504,6 @@
 
 .method static synthetic access$1400(Landroid/widget/DatePicker;CLjava/lang/String;)I
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
-    .param p1    # C
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/DatePicker;->getValueFromWBResult(CLjava/lang/String;)I
 
@@ -1529,7 +1514,6 @@
 
 .method static synthetic access$200(Landroid/widget/DatePicker;)Landroid/widget/NumberPicker;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mDaySpinner:Landroid/widget/NumberPicker;
 
@@ -1538,8 +1522,6 @@
 
 .method static synthetic access$2000(Landroid/widget/DatePicker;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/widget/DatePicker;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/widget/DatePicker;->twLog(Ljava/lang/String;)V
 
@@ -1548,8 +1530,6 @@
 
 .method static synthetic access$2102(Landroid/widget/DatePicker;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/DatePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/DatePicker;->isMonthJan:Z
 
@@ -1558,7 +1538,6 @@
 
 .method static synthetic access$2200(Landroid/widget/DatePicker;)[Landroid/widget/EditText;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mPickerTexts:[Landroid/widget/EditText;
 
@@ -1567,7 +1546,6 @@
 
 .method static synthetic access$2300(Landroid/widget/DatePicker;)Z
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     invoke-direct {p0}, Landroid/widget/DatePicker;->usingNumericMonths()Z
 
@@ -1578,7 +1556,6 @@
 
 .method static synthetic access$2400(Landroid/widget/DatePicker;)Ljava/util/Locale;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mCurrentLocale:Ljava/util/Locale;
 
@@ -1587,7 +1564,6 @@
 
 .method static synthetic access$2500(Landroid/widget/DatePicker;)I
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget v0, p0, Landroid/widget/DatePicker;->mNumberOfMonths:I
 
@@ -1596,7 +1572,6 @@
 
 .method static synthetic access$2600(Landroid/widget/DatePicker;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mShortMonths:[Ljava/lang/String;
 
@@ -1605,7 +1580,6 @@
 
 .method static synthetic access$2700(Landroid/widget/DatePicker;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1614,7 +1588,6 @@
 
 .method static synthetic access$300(Landroid/widget/DatePicker;)Landroid/widget/NumberPicker;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mMonthSpinner:Landroid/widget/NumberPicker;
 
@@ -1623,7 +1596,6 @@
 
 .method static synthetic access$400(Landroid/widget/DatePicker;)Landroid/widget/NumberPicker;
     .locals 1
-    .param p0    # Landroid/widget/DatePicker;
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mYearSpinner:Landroid/widget/NumberPicker;
 
@@ -1632,10 +1604,6 @@
 
 .method static synthetic access$500(Landroid/widget/DatePicker;III)V
     .locals 0
-    .param p0    # Landroid/widget/DatePicker;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/DatePicker;->setDate(III)V
 
@@ -1644,7 +1612,6 @@
 
 .method static synthetic access$600(Landroid/widget/DatePicker;)V
     .locals 0
-    .param p0    # Landroid/widget/DatePicker;
 
     invoke-direct {p0}, Landroid/widget/DatePicker;->updateSpinners()V
 
@@ -1653,7 +1620,6 @@
 
 .method static synthetic access$700(Landroid/widget/DatePicker;)V
     .locals 0
-    .param p0    # Landroid/widget/DatePicker;
 
     invoke-direct {p0}, Landroid/widget/DatePicker;->updateCalendarView()V
 
@@ -1662,7 +1628,6 @@
 
 .method static synthetic access$800(Landroid/widget/DatePicker;)V
     .locals 0
-    .param p0    # Landroid/widget/DatePicker;
 
     invoke-direct {p0}, Landroid/widget/DatePicker;->notifyDateChanged()V
 
@@ -1671,7 +1636,6 @@
 
 .method static synthetic access$900(Landroid/widget/DatePicker;)V
     .locals 0
-    .param p0    # Landroid/widget/DatePicker;
 
     invoke-direct {p0}, Landroid/widget/DatePicker;->updateInputState()V
 
@@ -1680,8 +1644,6 @@
 
 .method private getCalendarForLocale(Ljava/util/Calendar;Ljava/util/Locale;)Ljava/util/Calendar;
     .locals 3
-    .param p1    # Ljava/util/Calendar;
-    .param p2    # Ljava/util/Locale;
 
     if-nez p1, :cond_0
 
@@ -1708,8 +1670,6 @@
 
 .method private getValueFromWBResult(CLjava/lang/String;)I
     .locals 8
-    .param p1    # C
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -1851,9 +1811,6 @@
 
 .method private isNewDate(III)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -1928,8 +1885,6 @@
 
 .method private parseDate(Ljava/lang/String;Ljava/util/Calendar;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Calendar;
 
     :try_start_0
     iget-object v1, p0, Landroid/widget/DatePicker;->mDateFormat:Ljava/text/DateFormat;
@@ -2172,7 +2127,6 @@
 
 .method private setCurrentLocale(Ljava/util/Locale;)V
     .locals 6
-    .param p1    # Ljava/util/Locale;
 
     iget-object v1, p0, Landroid/widget/DatePicker;->mCurrentLocale:Ljava/util/Locale;
 
@@ -2292,9 +2246,6 @@
 
 .method private setDate(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/widget/DatePicker;->mCurrentDate:Ljava/util/Calendar;
 
@@ -2350,9 +2301,6 @@
 
 .method private setImeOptions(Landroid/widget/NumberPicker;II)V
     .locals 4
-    .param p1    # Landroid/widget/NumberPicker;
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v3, 0x2000000
 
@@ -2387,7 +2335,6 @@
 
 .method private setTextWatcher(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x4
 
@@ -2753,9 +2700,6 @@
 
 .method private trySetContentDescription(Landroid/view/View;II)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2777,7 +2721,6 @@
 
 .method private twLog(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -3433,7 +3376,6 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0, p1}, Landroid/widget/DatePicker;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -3569,10 +3511,6 @@
 
 .method public init(IIILandroid/widget/DatePicker$OnDateChangedListener;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/widget/DatePicker$OnDateChangedListener;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/DatePicker;->setDate(III)V
 
@@ -3595,7 +3533,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3608,7 +3545,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -3625,7 +3561,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -3642,7 +3577,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 6
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -3673,7 +3607,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -3768,7 +3701,6 @@
 
 .method public setCalendarViewShown(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/widget/DatePicker;->mCalendarView:Landroid/widget/CalendarView;
 
@@ -3789,7 +3721,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/DatePicker;->mIsEnabled:Z
 
@@ -3828,7 +3759,6 @@
 
 .method public setMaxDate(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x6
 
@@ -3908,7 +3838,6 @@
 
 .method public setMinDate(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x6
 
@@ -3988,7 +3917,6 @@
 
 .method public setSpinnersShown(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/widget/DatePicker;->mSpinners:Landroid/widget/LinearLayout;
 
@@ -4009,9 +3937,6 @@
 
 .method public updateDate(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/DatePicker;->isNewDate(III)Z
 

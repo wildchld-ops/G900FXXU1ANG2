@@ -27,7 +27,6 @@
 
 .method static synthetic access$002(Lcom/android/dialer/SpecialCharSequenceMgr$QueryHandler;)Lcom/android/dialer/SpecialCharSequenceMgr$QueryHandler;
     .locals 0
-    .param p0    # Lcom/android/dialer/SpecialCharSequenceMgr$QueryHandler;
 
     sput-object p0, Lcom/android/dialer/SpecialCharSequenceMgr;->sPreviousAdnQueryHandler:Lcom/android/dialer/SpecialCharSequenceMgr$QueryHandler;
 
@@ -75,9 +74,6 @@
 
 .method static handleAdnEntry(Landroid/content/Context;Ljava/lang/String;Landroid/widget/EditText;)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/EditText;
 
     const-string v1, "phone"
 
@@ -335,9 +331,6 @@
 
 .method public static handleChars(Landroid/content/Context;Ljava/lang/String;Landroid/widget/EditText;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/EditText;
 
     const/4 v0, 0x0
 
@@ -350,10 +343,6 @@
 
 .method static handleChars(Landroid/content/Context;Ljava/lang/String;ZLandroid/widget/EditText;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/widget/EditText;
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->stripSeparators(Ljava/lang/String;)Ljava/lang/String;
 
@@ -403,9 +392,6 @@
 
 .method static handleIMEIDisplay(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -457,8 +443,6 @@
 
 .method static handlePinEntry(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -522,8 +506,6 @@
 
 .method private static handleRegulatoryInfoDisplay(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "*#07#"
 
@@ -601,8 +583,6 @@
 
 .method static handleSecretCode(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -679,8 +659,6 @@
 
 .method private static showIMEIPanel(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v2, "phone"
 
@@ -731,8 +709,6 @@
 
 .method private static showMEIDPanel(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v2, "phone"
 

@@ -23,10 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/common/GooglePlayServicesClient$ConnectionCallbacks;Lcom/google/android/gms/common/GooglePlayServicesClient$OnConnectionFailedListener;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/gms/common/GooglePlayServicesClient$ConnectionCallbacks;
-    .param p3    # Lcom/google/android/gms/common/GooglePlayServicesClient$OnConnectionFailedListener;
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -47,11 +43,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/common/GooglePlayServicesClient$ConnectionCallbacks;Lcom/google/android/gms/common/GooglePlayServicesClient$OnConnectionFailedListener;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/gms/common/GooglePlayServicesClient$ConnectionCallbacks;
-    .param p3    # Lcom/google/android/gms/common/GooglePlayServicesClient$OnConnectionFailedListener;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/gms/internal/ci;
 
@@ -76,7 +67,6 @@
 
 .method constructor <init>(Lcom/google/android/gms/internal/ci;)V
     .locals 0
-    .param p1    # Lcom/google/android/gms/internal/ci;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,13 +99,6 @@
 
 .method public loadCircles(Lcom/google/android/gms/people/PeopleClient$OnCirclesLoadedListener;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Z)V
     .locals 8
-    .param p1    # Lcom/google/android/gms/people/PeopleClient$OnCirclesLoadedListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
 
     iget-object v0, p0, Lcom/google/android/gms/people/PeopleClient;->ln:Lcom/google/android/gms/internal/ci;
 
@@ -140,10 +123,6 @@
 
 .method public loadPeople(Lcom/google/android/gms/people/PeopleClient$OnPeopleLoadedListener;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;)V
     .locals 1
-    .param p1    # Lcom/google/android/gms/people/PeopleClient$OnPeopleLoadedListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
 
     iget-object v0, p0, Lcom/google/android/gms/people/PeopleClient;->ln:Lcom/google/android/gms/internal/ci;
 

@@ -33,9 +33,6 @@
 
 .method public constructor <init>(IIF)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,7 +85,6 @@
 
 .method public retry(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/volley/VolleyError;

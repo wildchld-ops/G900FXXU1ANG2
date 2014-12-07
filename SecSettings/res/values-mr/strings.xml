@@ -1374,7 +1374,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">USB तेथरिंग त्रुटी</string>
     <string name="usb_tethering_on_during_sidesync_popup">SideSync वापरत असताना USB तेथरिंग अक्षम करता येऊ शकत नाही. USB तेथरिंग अक्षम केल्‍याने SideSync अक्षम होईल.</string>
     <string name="usb_tethering_off_during_sidesync_popup">SideSync वापरत असताना USB तेथरिंग सक्षम करता येऊ शकत नाही. USB तेथरिंग सक्षम केल्‍याने SideSync अक्षम होईल.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>ब्लूटूथ तेथरिंग</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>ब्लूटूथ तेथरिंग</b></p></string>
     <string name="bluetooth_tethering_available_subtext">या उपकरणचे इंटरनेट कनेक्शन शेअर करत आहे…</string>
     <string name="bluetooth_tethering_device_connected_subtext">उपकरणचे इंटरनेट कनेक्शन 1 उपकरण बरोबर शेयर केले</string>
     <string name="bluetooth_tethering_devices_connected_subtext">उपकरणचे इंटरनेट कनेक्शन %d उपकरणांन बरोबर शेयर केले</string>

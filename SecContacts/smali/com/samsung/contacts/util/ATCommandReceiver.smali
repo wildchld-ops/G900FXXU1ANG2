@@ -83,7 +83,6 @@
 
 .method private getCountToStringFormat(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "0"
 
@@ -164,7 +163,6 @@
 
 .method private sendResponse(I)V
     .locals 6
-    .param p1    # I
 
     const-string v3, "ATCommandReceiver"
 
@@ -256,8 +254,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v2, "ATCommandReceiver"
 

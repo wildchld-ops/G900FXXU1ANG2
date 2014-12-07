@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public connectWifiDisplay(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -97,8 +95,6 @@
 
 .method public connectWifiDisplayWithMode(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -152,7 +148,6 @@
 
 .method public connectWifiDisplayWithPin(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -204,14 +199,6 @@
 
 .method public createVirtualDisplay(Landroid/os/IBinder;Ljava/lang/String;Ljava/lang/String;IIILandroid/view/Surface;I)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/view/Surface;
-    .param p8    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -447,10 +434,6 @@
 
 .method public enableWfdServiceWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -508,8 +491,6 @@
 
 .method public enableWifiDisplay(Landroid/net/wifi/p2p/WifiP2pDevice;I)V
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -582,7 +563,6 @@
 
 .method public forgetWifiDisplay(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -687,7 +667,6 @@
 
 .method public getDisplayInfo(I)Landroid/view/DisplayInfo;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -767,7 +746,6 @@
 
 .method public getLastConnectedDisplay(Z)Landroid/hardware/display/WifiDisplay;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -968,7 +946,6 @@
 
 .method public isConnWithPinSupported(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1527,7 +1504,6 @@
 
 .method public registerCallback(Landroid/hardware/display/IDisplayManagerCallback;)V
     .locals 5
-    .param p1    # Landroid/hardware/display/IDisplayManagerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1591,7 +1567,6 @@
 
 .method public releaseVirtualDisplay(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1643,7 +1618,6 @@
 
 .method public renameDongle(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1695,8 +1669,6 @@
 
 .method public renameWifiDisplay(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1897,9 +1869,6 @@
 
 .method public setParameter(IILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

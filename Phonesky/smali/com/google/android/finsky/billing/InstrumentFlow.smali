@@ -6,9 +6,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/billing/BillingFlow;-><init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Landroid/os/Bundle;)V
 
@@ -19,7 +16,6 @@
 # virtual methods
 .method protected finishWithUpdateInstrumentResponse(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     new-instance v0, Landroid/os/Bundle;
 

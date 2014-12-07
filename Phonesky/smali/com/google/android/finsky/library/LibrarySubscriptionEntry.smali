@@ -14,16 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;IJLjava/lang/Long;JJZ)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # J
-    .param p8    # Ljava/lang/Long;
-    .param p9    # J
-    .param p11    # J
-    .param p13    # Z
 
     const/16 v7, 0xf
 

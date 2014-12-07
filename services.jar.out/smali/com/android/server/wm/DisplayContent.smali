@@ -120,8 +120,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/Display;Lcom/android/server/wm/WindowManagerService;)V
     .locals 9
-    .param p1    # Landroid/view/Display;
-    .param p2    # Lcom/android/server/wm/WindowManagerService;
 
     const/4 v5, 0x1
 
@@ -365,8 +363,6 @@
 # virtual methods
 .method addStackBox(Lcom/android/server/wm/StackBox;Z)V
     .locals 4
-    .param p1    # Lcom/android/server/wm/StackBox;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -450,8 +446,6 @@
 
 .method addTask(Lcom/android/server/wm/Task;Z)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/Task;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -462,9 +456,6 @@
 
 .method addTask(Lcom/android/server/wm/Task;ZZ)V
     .locals 14
-    .param p1    # Lcom/android/server/wm/Task;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v10, p0, Lcom/android/server/wm/DisplayContent;->mTaskHistory:Ljava/util/ArrayList;
 
@@ -698,8 +689,6 @@
 
 .method addTopLevelStackBox(Lcom/android/server/wm/StackBox;I)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/StackBox;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -910,10 +899,6 @@
 
 .method createStack(IIIF)Lcom/android/server/wm/TaskStack;
     .locals 20
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     const/4 v10, 0x0
 
@@ -1370,9 +1355,6 @@
 
 .method createStack(IILandroid/graphics/Rect;)Lcom/android/server/wm/TaskStack;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v3, 0x1
 
@@ -1435,8 +1417,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1981,7 +1961,6 @@
 
 .method getAppTopLevelStackBoxIndex(Lcom/android/server/wm/StackBox;)I
     .locals 1
-    .param p1    # Lcom/android/server/wm/StackBox;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayContent;->mAppTopLevelStackBoxes:Ljava/util/ArrayList;
 
@@ -2018,7 +1997,6 @@
 
 .method getDisplayInfo(I)Landroid/view/DisplayInfo;
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -2060,7 +2038,6 @@
 
 .method getLogicalDisplayRect(Landroid/graphics/Rect;)V
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Lcom/android/server/wm/DisplayContent;->updateDisplayInfo()V
 
@@ -2095,7 +2072,6 @@
 
 .method public getRootCurrentStackBox(I)Lcom/android/server/wm/StackBox;
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -2203,7 +2179,6 @@
 
 .method public getRootStackBox(I)Lcom/android/server/wm/StackBox;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wm/DisplayContent;->mStackBoxes:Ljava/util/ArrayList;
 
@@ -2252,7 +2227,6 @@
 
 .method getStackBounds(I)Landroid/graphics/Rect;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/DisplayContent;->mStackBoxes:Ljava/util/ArrayList;
 
@@ -2326,7 +2300,6 @@
 
 .method getStackBoxInfo(Lcom/android/server/wm/StackBox;)Landroid/app/ActivityManager$StackBoxInfo;
     .locals 4
-    .param p1    # Lcom/android/server/wm/StackBox;
 
     new-instance v0, Landroid/app/ActivityManager$StackBoxInfo;
 
@@ -2415,8 +2388,6 @@
 
 .method public getStackBoxInfoByStackId(ILcom/android/server/wm/WindowManagerService$LEVEL;)Landroid/app/ActivityManager$StackBoxInfo;
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/server/wm/WindowManagerService$LEVEL;
 
     const/4 v0, 0x0
 
@@ -2440,8 +2411,6 @@
 
 .method public getStackBoxInfoByStackId(Ljava/util/ArrayList;ILcom/android/server/wm/WindowManagerService$LEVEL;)Landroid/app/ActivityManager$StackBoxInfo;
     .locals 4
-    .param p2    # I
-    .param p3    # Lcom/android/server/wm/WindowManagerService$LEVEL;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2653,7 +2622,6 @@
 
 .method public getStackOrder(Z)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -2817,7 +2785,6 @@
 
 .method public getWindowOrder(Lcom/android/server/wm/WindowState;)I
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     iget-object v1, p0, Lcom/android/server/wm/DisplayContent;->mWindows:Lcom/android/server/wm/WindowList;
 
@@ -2876,7 +2843,6 @@
 
 .method public hasAccess(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayContent;->mDisplay:Landroid/view/Display;
 
@@ -3017,7 +2983,6 @@
 
 .method public isAppTopLevelStackBox(Lcom/android/server/wm/StackBox;)Z
     .locals 3
-    .param p1    # Lcom/android/server/wm/StackBox;
 
     const/4 v1, 0x0
 
@@ -3117,7 +3082,6 @@
 
 .method moveHomeStackBox(Z)Z
     .locals 6
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -3261,8 +3225,6 @@
 
 .method moveStackBox(Lcom/android/server/wm/StackBox;Z)Z
     .locals 10
-    .param p1    # Lcom/android/server/wm/StackBox;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -3517,7 +3479,6 @@
 
 .method removeStackBox(Lcom/android/server/wm/StackBox;)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/StackBox;
 
     const/4 v0, 0x0
 
@@ -3530,8 +3491,6 @@
 
 .method removeStackBox(Lcom/android/server/wm/StackBox;Z)Z
     .locals 7
-    .param p1    # Lcom/android/server/wm/StackBox;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -3641,7 +3600,6 @@
 
 .method removeTask(Lcom/android/server/wm/Task;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/Task;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayContent;->mTaskHistory:Ljava/util/ArrayList;
 
@@ -3780,8 +3738,6 @@
 
 .method resizeStack(IF)Z
     .locals 4
-    .param p1    # I
-    .param p2    # F
 
     const/4 v2, 0x1
 
@@ -3863,7 +3819,6 @@
 
 .method public resizeWeight(Ljava/util/ArrayList;Z)Z
     .locals 3
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4014,7 +3969,6 @@
 
 .method setStackBoxSize(Landroid/graphics/Rect;)Z
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v4, 0x1
 
@@ -4103,7 +4057,6 @@
 
 .method setTouchExcludeRegion(Lcom/android/server/wm/TaskStack;)V
     .locals 8
-    .param p1    # Lcom/android/server/wm/TaskStack;
 
     const/4 v7, 0x1
 
@@ -4266,8 +4219,6 @@
 
 .method stackIdFromPoint(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, -0x1
 
@@ -4376,7 +4327,6 @@
 
 .method switchStack(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -4423,8 +4373,6 @@
 
 .method switchUserStacks(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/wm/DisplayContent;->getWindowList()Lcom/android/server/wm/WindowList;
 

@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -92,8 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -148,9 +145,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -205,8 +199,6 @@
 
 .method static synthetic access$002(Lcom/android/dialer/dialpad/EllipsisTextView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/dialpad/EllipsisTextView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/dialpad/EllipsisTextView;->mEllipsized:Z
 
@@ -225,17 +217,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -292,9 +279,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/EditText;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
@@ -332,10 +316,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v10, 0x0
 
@@ -610,7 +590,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -650,7 +629,6 @@
 
 .method public sendAccessibilityEventUnchecked(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 6
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v5, 0x0
 
@@ -731,7 +709,6 @@
 
 .method public setFontSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/dialer/dialpad/EllipsisTextView;->mFontSize:I
 
@@ -740,7 +717,6 @@
 
 .method public setMaxTextSize(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/dialer/dialpad/EllipsisTextView;->mMaxTextSize:F
 
@@ -749,7 +725,6 @@
 
 .method public setMinTextSize(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/dialer/dialpad/EllipsisTextView;->mMinTextSize:F
 
@@ -758,7 +733,6 @@
 
 .method public setScaledDensity(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/dialer/dialpad/EllipsisTextView;->mScaledDensity:F
 
@@ -767,7 +741,6 @@
 
 .method public setScaledWidth(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/dialer/dialpad/EllipsisTextView;->mScaledWidth:F
 

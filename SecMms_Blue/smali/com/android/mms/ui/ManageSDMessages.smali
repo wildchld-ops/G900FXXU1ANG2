@@ -246,7 +246,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/ManageSDMessages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -255,8 +254,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/ui/ManageSDMessages;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSDMessages;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -265,7 +262,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/ManageSDMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSDMessages;->finish:Z
 
@@ -274,8 +270,6 @@
 
 .method static synthetic access$1202(Lcom/android/mms/ui/ManageSDMessages;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ManageSDMessages;->finish:Z
 
@@ -284,7 +278,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/ManageSDMessages;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mProgress:Landroid/app/ProgressDialog;
 
@@ -293,8 +286,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/ManageSDMessages;I)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSDMessages;->copyToPhoneMemory(I)Z
 
@@ -305,7 +296,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/ManageSDMessages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mUncheckItems:Ljava/util/ArrayList;
 
@@ -314,7 +304,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/ManageSDMessages;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mContext:Landroid/content/Context;
 
@@ -323,7 +312,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/ManageSDMessages;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -332,8 +320,6 @@
 
 .method static synthetic access$1702(Lcom/android/mms/ui/ManageSDMessages;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSDMessages;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -342,7 +328,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/ManageSDMessages;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mSelectAllLayout:Landroid/widget/LinearLayout;
 
@@ -351,7 +336,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/ManageSDMessages;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mSDCardMultiActionMode:Landroid/view/ActionMode;
 
@@ -360,8 +344,6 @@
 
 .method static synthetic access$1902(Lcom/android/mms/ui/ManageSDMessages;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSDMessages;->mSDCardMultiActionMode:Landroid/view/ActionMode;
 
@@ -370,7 +352,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ManageSDMessages;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -379,7 +360,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/ManageSDMessages;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mListMultiMode:I
 
@@ -388,8 +368,6 @@
 
 .method static synthetic access$2002(Lcom/android/mms/ui/ManageSDMessages;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ManageSDMessages;->mListMultiMode:I
 
@@ -398,7 +376,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/ui/ManageSDMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mIsSelectAllmode:Z
 
@@ -407,8 +384,6 @@
 
 .method static synthetic access$2102(Lcom/android/mms/ui/ManageSDMessages;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ManageSDMessages;->mIsSelectAllmode:Z
 
@@ -417,7 +392,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/ui/ManageSDMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mIsLastItemOfSelectAll:Z
 
@@ -426,8 +400,6 @@
 
 .method static synthetic access$2202(Lcom/android/mms/ui/ManageSDMessages;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ManageSDMessages;->mIsLastItemOfSelectAll:Z
 
@@ -436,7 +408,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ManageSDMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSDMessages;->getSDList()V
 
@@ -445,7 +416,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ManageSDMessages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->arMsgItem:Ljava/util/ArrayList;
 
@@ -454,7 +424,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/ManageSDMessages;)Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mMsgListAdapter:Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;
 
@@ -463,8 +432,6 @@
 
 .method static synthetic access$502(Lcom/android/mms/ui/ManageSDMessages;Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;)Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSDMessages;->mMsgListAdapter:Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;
 
@@ -473,7 +440,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ManageSDMessages;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mMessageListView:Landroid/widget/ListView;
 
@@ -482,8 +448,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/ManageSDMessages;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSDMessages;->updateState(I)V
 
@@ -492,7 +456,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/ManageSDMessages;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages;->mHandler:Landroid/os/Handler;
 
@@ -501,8 +464,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/ui/ManageSDMessages;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ManageSDMessages;->showMenu:Z
 
@@ -511,7 +472,6 @@
 
 .method private copyToPhoneMemory(I)Z
     .locals 16
-    .param p1    # I
 
     new-instance v8, Ljava/io/File;
 
@@ -1084,7 +1044,6 @@
 
 .method private updateState(I)V
     .locals 4
-    .param p1    # I
 
     const v3, 0x7f0c0270
 
@@ -1181,7 +1140,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1295,7 +1253,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 7
-    .param p1    # I
 
     const v4, 0x7f0c026e
 
@@ -1429,9 +1386,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 7
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1527,7 +1481,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/ManageSDMessages;->setIntent(Landroid/content/Intent;)V
 
@@ -1544,7 +1497,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -1590,8 +1542,6 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
 
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onPrepareDialog(ILandroid/app/Dialog;)V
 
@@ -1635,7 +1585,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -1693,7 +1642,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Mms/ManageSDMessages"
 

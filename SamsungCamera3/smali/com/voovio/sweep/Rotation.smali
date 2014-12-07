@@ -24,7 +24,6 @@
 
 .method public constructor <init>(Lcom/voovio/sweep/Sweep;)V
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     const/4 v2, 0x2
 
@@ -75,9 +74,6 @@
 # virtual methods
 .method public GetPositionAndDirection(FLcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 4
-    .param p1    # F
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v3, 0x0
 
@@ -211,11 +207,6 @@
 
 .method public Setup(Lcom/voovio/sweep/Transition;Lcom/voovio/sweep/Voovio;Lcom/voovio/voo3d/scenegraph/Camera3D;Lcom/voovio/sweep/FrustumLimiter;Z)V
     .locals 25
-    .param p1    # Lcom/voovio/sweep/Transition;
-    .param p2    # Lcom/voovio/sweep/Voovio;
-    .param p3    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p4    # Lcom/voovio/sweep/FrustumLimiter;
-    .param p5    # Z
 
     move-object/from16 v0, p1
 
@@ -1350,10 +1341,6 @@
 
 .method public compute_v2(Lcom/voovio/sweep/Transition;Lcom/voovio/sweep/Voovio;Lcom/voovio/voo3d/scenegraph/Camera3D;Lcom/voovio/sweep/FrustumLimiter;)V
     .locals 23
-    .param p1    # Lcom/voovio/sweep/Transition;
-    .param p2    # Lcom/voovio/sweep/Voovio;
-    .param p3    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p4    # Lcom/voovio/sweep/FrustumLimiter;
 
     move-object/from16 v0, p1
 

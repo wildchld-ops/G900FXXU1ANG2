@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101006b
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/GroupMessagingRecipientsEditor;)Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/GroupMessagingRecipientsEditor;
 
     iget-object v0, p0, Lcom/android/mms/ui/GroupMessagingRecipientsEditor;->mGroupList:Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
@@ -84,7 +81,6 @@
 
 .method public static contactToToken(Lcom/android/mms/data/Contact;)Ljava/lang/CharSequence;
     .locals 5
-    .param p0    # Lcom/android/mms/data/Contact;
 
     new-instance v1, Landroid/text/SpannableString;
 
@@ -243,7 +239,6 @@
 
 .method public constructContactsFromValidRecipients(Z)Lcom/android/mms/data/ContactList;
     .locals 5
-    .param p1    # Z
 
     new-instance v2, Lcom/android/mms/data/ContactList;
 
@@ -377,7 +372,6 @@
 
 .method public formatInvalidNumbers(Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -463,7 +457,6 @@
 
 .method public hasInvalidRecipient(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -518,7 +511,6 @@
 
 .method public hasValidRecipient(Z)Z
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/mms/ui/GroupMessagingRecipientsEditor;->mRecipients:Ljava/util/List;
 
@@ -574,7 +566,6 @@
 
 .method public onFilterComplete(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/AutoCompleteTextView;->onFilterComplete(I)V
 
@@ -591,8 +582,6 @@
 
 .method public onPrivateIMECommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/mms/ui/GroupMessagingRecipientsEditor;->m_PICListener:Lcom/android/mms/ui/OnPrivateIMECommandListener;
 
@@ -617,7 +606,6 @@
 
 .method public populate(Lcom/android/mms/data/ContactList;)V
     .locals 4
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     new-instance v2, Landroid/text/SpannableStringBuilder;
 
@@ -684,7 +672,6 @@
 
 .method public setComposer(Lcom/android/mms/ui/GroupMessagingRecipientListActivity;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
     iput-object p1, p0, Lcom/android/mms/ui/GroupMessagingRecipientsEditor;->mGroupList:Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
@@ -693,7 +680,6 @@
 
 .method public setOnPrivateIMECommandListener(Lcom/android/mms/ui/OnPrivateIMECommandListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnPrivateIMECommandListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/GroupMessagingRecipientsEditor;->m_PICListener:Lcom/android/mms/ui/OnPrivateIMECommandListener;
 
@@ -702,7 +688,6 @@
 
 .method public setRecipients([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/mms/ui/GroupMessagingRecipientsEditor;->mRecipients:Ljava/util/List;
 

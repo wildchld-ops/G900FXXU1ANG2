@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu$TwGLDeviceListMenuAdapter;-><init>(Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;)V
 
@@ -65,8 +63,6 @@
 
 .method public getView(ILcom/sec/android/glview/TwGLView;)Lcom/sec/android/glview/TwGLView;
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v2, 0x0
 

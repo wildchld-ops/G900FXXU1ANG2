@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/smishing/PackageAuthorityActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/smishing/PackageAuthorityActivity;
 
     iget-object v0, p0, Lcom/android/mms/smishing/PackageAuthorityActivity;->mContext:Landroid/content/Context;
 
@@ -67,7 +66,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/smishing/PackageAuthorityActivity;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/smishing/PackageAuthorityActivity;
 
     iget-object v0, p0, Lcom/android/mms/smishing/PackageAuthorityActivity;->mSwitch:Landroid/widget/Switch;
 
@@ -76,7 +74,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/smishing/PackageAuthorityActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/smishing/PackageAuthorityActivity;
 
     iget-object v0, p0, Lcom/android/mms/smishing/PackageAuthorityActivity;->mSmsPackageList:Ljava/util/ArrayList;
 
@@ -85,7 +82,6 @@
 
 .method private updateEmptyScreen(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x8
 
@@ -124,7 +120,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -205,7 +200,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -254,7 +248,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -330,7 +323,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -362,7 +354,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v1, p0, Lcom/android/mms/smishing/PackageAuthorityActivity;->mContext:Landroid/content/Context;
 

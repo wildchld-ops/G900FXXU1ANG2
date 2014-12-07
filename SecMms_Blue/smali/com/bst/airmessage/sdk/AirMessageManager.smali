@@ -36,7 +36,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method static synthetic access$000(Lcom/bst/airmessage/sdk/AirMessageManager;)Lcom/bst/airmessage/sdk/IAirMessageCallback;
     .locals 1
-    .param p0    # Lcom/bst/airmessage/sdk/AirMessageManager;
 
     iget-object v0, p0, Lcom/bst/airmessage/sdk/AirMessageManager;->mCallback:Lcom/bst/airmessage/sdk/IAirMessageCallback;
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/bst/airmessage/sdk/AirMessageManager;)Lcom/bst/airmessage/sdk/IAirMessageService;
     .locals 1
-    .param p0    # Lcom/bst/airmessage/sdk/AirMessageManager;
 
     iget-object v0, p0, Lcom/bst/airmessage/sdk/AirMessageManager;->mService:Lcom/bst/airmessage/sdk/IAirMessageService;
 
@@ -84,8 +81,6 @@
 
 .method static synthetic access$102(Lcom/bst/airmessage/sdk/AirMessageManager;Lcom/bst/airmessage/sdk/IAirMessageService;)Lcom/bst/airmessage/sdk/IAirMessageService;
     .locals 0
-    .param p0    # Lcom/bst/airmessage/sdk/AirMessageManager;
-    .param p1    # Lcom/bst/airmessage/sdk/IAirMessageService;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessageManager;->mService:Lcom/bst/airmessage/sdk/IAirMessageService;
 
@@ -94,8 +89,6 @@
 
 .method static synthetic access$202(Lcom/bst/airmessage/sdk/AirMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/bst/airmessage/sdk/AirMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/bst/airmessage/sdk/AirMessageManager;->isServiceConnected:Z
 
@@ -104,7 +97,6 @@
 
 .method static synthetic access$300(Lcom/bst/airmessage/sdk/AirMessageManager;)Lcom/bst/airmessage/sdk/AirMessageManager$MyAirMessageCallback;
     .locals 1
-    .param p0    # Lcom/bst/airmessage/sdk/AirMessageManager;
 
     iget-object v0, p0, Lcom/bst/airmessage/sdk/AirMessageManager;->mInnerlCallback:Lcom/bst/airmessage/sdk/AirMessageManager$MyAirMessageCallback;
 
@@ -141,7 +133,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/bst/airmessage/sdk/AirMessageManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/bst/airmessage/sdk/AirMessageManager;
 
@@ -304,7 +295,6 @@
 
 .method public registerCallback(Lcom/bst/airmessage/sdk/IAirMessageCallback;)V
     .locals 0
-    .param p1    # Lcom/bst/airmessage/sdk/IAirMessageCallback;
 
     iput-object p1, p0, Lcom/bst/airmessage/sdk/AirMessageManager;->mCallback:Lcom/bst/airmessage/sdk/IAirMessageCallback;
 
@@ -356,7 +346,6 @@
 
 .method public showSingleAirMessage(Lcom/bst/airmessage/sdk/AirMessage;)V
     .locals 1
-    .param p1    # Lcom/bst/airmessage/sdk/AirMessage;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -371,7 +360,6 @@
 
 .method public unregisterCallback(Lcom/bst/airmessage/sdk/IAirMessageCallback;)V
     .locals 1
-    .param p1    # Lcom/bst/airmessage/sdk/IAirMessageCallback;
 
     const/4 v0, 0x0
 
@@ -382,7 +370,6 @@
 
 .method public updateReplyMessageStatus(Lcom/bst/airmessage/sdk/ReplyStatus;)V
     .locals 2
-    .param p1    # Lcom/bst/airmessage/sdk/ReplyStatus;
 
     iget-boolean v1, p0, Lcom/bst/airmessage/sdk/AirMessageManager;->isServiceConnected:Z
 

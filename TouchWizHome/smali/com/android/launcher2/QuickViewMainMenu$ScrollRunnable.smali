@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/QuickViewMainMenu;Lcom/android/launcher2/QuickViewMainMenu$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/QuickViewMainMenu;
-    .param p2    # Lcom/android/launcher2/QuickViewMainMenu$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/QuickViewMainMenu$ScrollRunnable;-><init>(Lcom/android/launcher2/QuickViewMainMenu;)V
 
@@ -148,7 +146,6 @@
 
 .method setDirection(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/QuickViewMainMenu$ScrollRunnable;->mDirection:I
 

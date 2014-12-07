@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -62,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -100,7 +97,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardSelectorView;)Lcom/android/internal/widget/multiwaveview/GlowPadView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mGlowPadView:Lcom/android/internal/widget/multiwaveview/GlowPadView;
 
@@ -109,7 +105,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardSelectorView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -118,7 +113,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardSelectorView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -127,7 +121,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardSelectorView;)Lcom/android/keyguard/KeyguardActivityLauncher;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mActivityLauncher:Lcom/android/keyguard/KeyguardActivityLauncher;
 
@@ -136,7 +129,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/KeyguardSelectorView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -145,7 +137,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardSelectorView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mIsBouncing:Z
 
@@ -154,7 +145,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardSelectorView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mFadeView:Landroid/view/View;
 
@@ -163,7 +153,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/KeyguardSelectorView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardSelectorView;->updateTargets()V
 
@@ -172,7 +161,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/KeyguardSelectorView;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -181,7 +169,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardSelectorView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardSelectorView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -394,8 +381,6 @@
 # virtual methods
 .method doTransition(Landroid/view/View;F)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mAnim:Landroid/animation/ObjectAnimator;
 
@@ -431,7 +416,6 @@
 
 .method public hideBouncer(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -450,7 +434,6 @@
 
 .method public isTargetPresent(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardSelectorView;->mGlowPadView:Lcom/android/internal/widget/multiwaveview/GlowPadView;
 
@@ -545,7 +528,6 @@
 
 .method public onResume(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -564,7 +546,6 @@
 
 .method public setCarrierArea(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardSelectorView;->mFadeView:Landroid/view/View;
 
@@ -573,7 +554,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardSelectorView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -582,7 +562,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardSelectorView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -591,7 +570,6 @@
 
 .method public showBouncer(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 

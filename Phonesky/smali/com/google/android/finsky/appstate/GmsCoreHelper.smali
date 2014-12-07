@@ -78,9 +78,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/appstate/AppStates;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
-    .param p2    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p3    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,8 +136,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/download/Download;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/download/Download;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/appstate/GmsCoreHelper;->installNlpCleanup(Lcom/google/android/finsky/download/Download;Ljava/lang/String;)V
 
@@ -149,8 +144,6 @@
 
 .method private static checkForNlpDamage(Lcom/google/android/finsky/FinskyApp;Lcom/google/android/finsky/analytics/PlayStore$NlpRepairStatus;)Z
     .locals 19
-    .param p0    # Lcom/google/android/finsky/FinskyApp;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$NlpRepairStatus;
 
     sget v16, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -680,7 +673,6 @@
 
 .method public static cleanupNlp(Lcom/google/android/finsky/FinskyApp;)V
     .locals 10
-    .param p0    # Lcom/google/android/finsky/FinskyApp;
 
     const/4 v9, 0x0
 
@@ -892,8 +884,6 @@
 
 .method private static downloadAndInstallNlpCleanup(Lcom/google/android/finsky/FinskyApp;Lcom/google/android/finsky/analytics/PlayStore$NlpRepairStatus;)V
     .locals 17
-    .param p0    # Lcom/google/android/finsky/FinskyApp;
-    .param p1    # Lcom/google/android/finsky/analytics/PlayStore$NlpRepairStatus;
 
     new-instance v1, Lcom/google/android/finsky/analytics/PlayStore$AppData;
 
@@ -1130,8 +1120,6 @@
 
 .method private static getListener(Lcom/google/android/finsky/analytics/FinskyEventLog;Ljava/lang/String;)Lcom/google/android/finsky/download/DownloadQueueListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/analytics/FinskyEventLog;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/appstate/GmsCoreHelper$1;
 
@@ -1182,7 +1170,6 @@
 
 .method private installGmsCore(Lcom/google/android/finsky/api/model/Document;)V
     .locals 14
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v13, 0x2
 
@@ -1317,8 +1304,6 @@
 
 .method private static installNlpCleanup(Lcom/google/android/finsky/download/Download;Ljava/lang/String;)V
     .locals 9
-    .param p0    # Lcom/google/android/finsky/download/Download;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1371,7 +1356,6 @@
 
 .method private static isCommonNlpRepairStatus(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -1393,7 +1377,6 @@
 
 .method public static isGmsCore(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/Document;->getAppDetails()Lcom/google/android/finsky/protos/DocDetails$AppDetails;
 
@@ -1418,7 +1401,6 @@
 
 .method public static isGmsCore(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/appstate/GmsCoreHelper;->PACKAGE_NAME:Ljava/lang/String;
 
@@ -1488,7 +1470,6 @@
 # virtual methods
 .method public updateGmsCore(Lcom/google/android/finsky/api/model/Document;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v5, 0x1
 

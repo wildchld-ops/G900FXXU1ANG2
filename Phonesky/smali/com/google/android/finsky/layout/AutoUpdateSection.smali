@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/SeparatorLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -30,7 +28,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/AutoUpdateSection;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/AutoUpdateSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AutoUpdateSection;->mCheckBox:Landroid/widget/CheckBox;
 
@@ -39,12 +36,6 @@
 
 .method static synthetic access$100(Landroid/support/v4/app/FragmentManager;Lcom/google/android/finsky/appstate/AppStates;Ljava/lang/String;ZZLandroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Landroid/content/Context;
 
     invoke-static/range {p0 .. p5}, Lcom/google/android/finsky/layout/AutoUpdateSection;->updateAutoUpdateForThisApp(Landroid/support/v4/app/FragmentManager;Lcom/google/android/finsky/appstate/AppStates;Ljava/lang/String;ZZLandroid/content/Context;)V
 
@@ -53,9 +44,6 @@
 
 .method public static handleAutoUpdateButtonClick(Landroid/support/v4/app/FragmentActivity;Lcom/google/android/finsky/navigationmanager/NavigationManager;Z)V
     .locals 7
-    .param p0    # Landroid/support/v4/app/FragmentActivity;
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -128,7 +116,6 @@
 
 .method public static isAutoUpdateEnabled(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -184,10 +171,6 @@
 
 .method public static isAutoUpdateVisible(Ljava/lang/String;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/receivers/Installer;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
-    .param p2    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p3    # Lcom/google/android/finsky/receivers/Installer;
 
     const/4 v3, 0x1
 
@@ -263,12 +246,6 @@
 
 .method private static updateAutoUpdateForThisApp(Landroid/support/v4/app/FragmentManager;Lcom/google/android/finsky/appstate/AppStates;Ljava/lang/String;ZZLandroid/content/Context;)V
     .locals 9
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Landroid/content/Context;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -416,11 +393,6 @@
 # virtual methods
 .method public bind(Ljava/lang/String;Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/receivers/Installer;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Lcom/google/android/finsky/library/Libraries;
-    .param p4    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p5    # Lcom/google/android/finsky/receivers/Installer;
 
     const/4 v7, 0x1
 

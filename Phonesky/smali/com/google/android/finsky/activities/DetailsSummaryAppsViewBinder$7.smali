@@ -40,8 +40,6 @@
 # virtual methods
 .method public onRefundComplete(Lcom/google/android/finsky/utils/AppSupport$RefundResult;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/utils/AppSupport$RefundResult;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/telephony/IccCardConstants$State;I)V
     .locals 0
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +35,6 @@
 
 .method static fromIntent(Landroid/content/Intent;)Lcom/android/keyguard/KeyguardUpdateMonitor$SimArgs;
     .locals 8
-    .param p0    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 

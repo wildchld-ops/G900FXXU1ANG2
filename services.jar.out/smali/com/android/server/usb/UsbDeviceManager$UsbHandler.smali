@@ -79,7 +79,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/usb/UsbDeviceManager;Landroid/os/Looper;)V
     .locals 11
-    .param p2    # Landroid/os/Looper;
 
     const/4 v7, 0x0
 
@@ -516,7 +515,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/usb/UsbDeviceManager$UsbHandler;)Z
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->isUsb30Available()Z
 
@@ -527,7 +525,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/usb/UsbDeviceManager$UsbHandler;)Z
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->isUsb30Enabled()Z
 
@@ -538,7 +535,6 @@
 
 .method static synthetic access$400(Lcom/android/server/usb/UsbDeviceManager$UsbHandler;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->updateUsbNotification()V
 
@@ -547,7 +543,6 @@
 
 .method static synthetic access$500(Lcom/android/server/usb/UsbDeviceManager$UsbHandler;)Z
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
 
     iget-boolean v0, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mPowerConnected:Z
 
@@ -556,8 +551,6 @@
 
 .method static synthetic access$502(Lcom/android/server/usb/UsbDeviceManager$UsbHandler;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mPowerConnected:Z
 
@@ -566,7 +559,6 @@
 
 .method static synthetic access$600(Lcom/android/server/usb/UsbDeviceManager$UsbHandler;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->updateUsbDisplay()V
 
@@ -575,7 +567,6 @@
 
 .method private isChargingMode(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -938,7 +929,6 @@
 
 .method private setAdbEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     # getter for: Lcom/android/server/usb/UsbDeviceManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/usb/UsbDeviceManager;->access$200()Ljava/lang/String;
@@ -1042,8 +1032,6 @@
 
 .method private setEnabledFunctions(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p1, :cond_4
 
@@ -1286,7 +1274,6 @@
 
 .method private setUsbConfig(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/usb/UsbDeviceManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/usb/UsbDeviceManager;->access$200()Ljava/lang/String;
@@ -1878,7 +1865,6 @@
 
 .method private updateUsbCableState(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -3066,7 +3052,6 @@
 
 .method private waitForState(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3142,8 +3127,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
 
     const-string v1, "  USB Device State:"
 
@@ -3613,7 +3596,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const/16 v10, 0x64
 
@@ -4286,8 +4268,6 @@
 
 .method public sendMessage(ILjava/lang/Object;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->removeMessages(I)V
 
@@ -4304,9 +4284,6 @@
 
 .method public sendMessage(ILjava/lang/Object;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->removeMessages(I)V
 
@@ -4335,8 +4312,6 @@
 
 .method public sendMessage(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->removeMessages(I)V
 
@@ -4363,9 +4338,6 @@
 
 .method public sendMessage(IZZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -4404,7 +4376,6 @@
 
 .method public setUsb30Mode(Z)V
     .locals 6
-    .param p1    # Z
 
     new-instance v0, Ljava/io/File;
 
@@ -4535,7 +4506,6 @@
 
 .method public declared-synchronized updateState(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

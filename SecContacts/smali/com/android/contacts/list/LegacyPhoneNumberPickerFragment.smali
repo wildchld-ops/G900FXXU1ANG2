@@ -52,7 +52,6 @@
 
 .method protected startPhoneNumberShortcutIntent(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

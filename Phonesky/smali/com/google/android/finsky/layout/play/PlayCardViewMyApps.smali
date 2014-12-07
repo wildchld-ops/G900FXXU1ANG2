@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -62,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/layout/PlayCardViewBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -118,7 +115,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 2
-    .param p1    # I
 
     add-int/lit8 v1, p1, 0x1
 
@@ -166,11 +162,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/google/android/play/layout/PlayCardViewBase;->onLayout(ZIIII)V
 
@@ -296,8 +287,6 @@
 
 .method protected onMeasure(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Lcom/google/android/finsky/layout/play/PlayCardViewMyApps;->measureThumbnailSpanningHeight(I)V
 
@@ -308,8 +297,6 @@
 
 .method public setArchivable(ZLcom/google/android/finsky/layout/play/PlayCardViewMyApps$OnArchiveActionListener;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayCardViewMyApps$OnArchiveActionListener;
 
     const/4 v2, 0x0
 
@@ -376,7 +363,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/play/PlayCardViewMyApps;->mChecked:Z
 

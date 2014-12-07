@@ -218,13 +218,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;II)V
     .locals 11
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
 
     const/4 v7, 0x1
 
@@ -553,7 +546,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;)Lcom/sec/android/app/camera/ShareShot;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;->mShareShot:Lcom/sec/android/app/camera/ShareShot;
 
@@ -562,8 +554,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;->mPosition:I
 
@@ -572,7 +562,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -597,7 +586,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;)Lcom/sec/android/glview/TwGLList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;->mList:Lcom/sec/android/glview/TwGLList;
 
@@ -606,7 +594,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;->mItemList:Ljava/util/ArrayList;
 
@@ -639,7 +626,6 @@
 
 .method public getCheckPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;->mItemList:Ljava/util/ArrayList;
 
@@ -670,7 +656,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -690,7 +675,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 3
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v2, 0x0
 
@@ -782,7 +766,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -824,7 +807,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLDeviceListMenu;->refreshMenuPosition()V
 

@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/widget/consumption/NowPlayingWidgetProvider;Ljava/util/List;ZI)V
     .locals 0
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

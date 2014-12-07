@@ -58,7 +58,6 @@
 
 .method public static isNetworkConnected(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -71,9 +70,6 @@
 
 .method public static isNetworkConnected(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v8, "DMSUtil"
 
@@ -572,7 +568,6 @@
 
 .method public static isTablet(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

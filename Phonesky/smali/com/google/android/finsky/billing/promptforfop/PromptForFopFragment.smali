@@ -80,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -89,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->notifyListenerOnNoneSelected()V
 
@@ -98,7 +96,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -107,7 +104,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->toggleMore()V
 
@@ -116,7 +112,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;)Lcom/google/android/finsky/analytics/FinskyEventLog;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -125,7 +120,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->showMoreDetailsDialog()V
 
@@ -134,8 +128,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->selectItem(I)V
 
@@ -144,10 +136,6 @@
 
 .method private addActionEntry(Landroid/view/ViewGroup;Lcom/google/android/finsky/billing/BillingProfileBaseFragment$ActionEntry;IZ)V
     .locals 7
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment$ActionEntry;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v6, 0x0
 
@@ -382,8 +370,6 @@
 
 .method public static newInstance(Landroid/accounts/Account;[B)Landroid/support/v4/app/Fragment;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # [B
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -423,7 +409,6 @@
 
 .method private notifyListenerOnFatalError(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->getListener()Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment$Listener;
 
@@ -469,7 +454,6 @@
 
 .method private selectItem(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -851,7 +835,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget v0, p0, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->mSelectedIndex:I
 
@@ -877,7 +860,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -925,9 +907,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v8, 0x7f040107
 
@@ -1269,7 +1248,6 @@
 
 .method protected onFatalError(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->notifyListenerOnFatalError(Ljava/lang/String;)V
 
@@ -1278,7 +1256,6 @@
 
 .method protected onInstrumentCreated(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->notifyListenerOnInstrumentCreated()V
 
@@ -1287,8 +1264,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x6
 
@@ -1311,8 +1286,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x6
 
@@ -1329,7 +1302,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1356,7 +1328,6 @@
 
 .method protected onStoredValueAdded(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/promptforfop/PromptForFopFragment;->notifyListenerOnInstrumentCreated()V
 
@@ -1365,8 +1336,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -1524,14 +1493,12 @@
 
 .method protected renderInstruments([Lcom/google/android/finsky/protos/CommonDevice$Instrument;)V
     .locals 0
-    .param p1    # [Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
     return-void
 .end method
 
 .method protected shouldRender([Lcom/google/android/finsky/protos/CommonDevice$Instrument;)Z
     .locals 3
-    .param p1    # [Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
     const/4 v0, 0x0
 

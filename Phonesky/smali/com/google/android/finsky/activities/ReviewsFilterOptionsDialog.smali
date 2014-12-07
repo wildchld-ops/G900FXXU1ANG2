@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;)[Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;->mChecked:[Z
 
@@ -41,7 +40,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;)Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;->getListener()Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog$Listener;
 
@@ -89,8 +87,6 @@
 
 .method public static newInstance(ZZ)Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;
     .locals 3
-    .param p0    # Z
-    .param p1    # Z
 
     new-instance v1, Lcom/google/android/finsky/activities/ReviewsFilterOptionsDialog;
 
@@ -117,7 +113,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 

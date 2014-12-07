@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/ActivityThread;Landroid/os/UserHandle;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActivityThread;
-    .param p3    # Landroid/os/UserHandle;
 
     invoke-direct {p0, p1}, Landroid/content/ContentResolver;-><init>(Landroid/content/Context;)V
 
@@ -78,7 +75,6 @@
 
 .method private isSupportedAuth(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -119,8 +115,6 @@
 # virtual methods
 .method protected acquireExistingProvider(Landroid/content/Context;Ljava/lang/String;)Landroid/content/IContentProvider;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroid/app/ContextImpl$KnoxApplicationContentResolver;->acquireProvider(Landroid/content/Context;Ljava/lang/String;)Landroid/content/IContentProvider;
 
@@ -131,8 +125,6 @@
 
 .method protected acquireProvider(Landroid/content/Context;Ljava/lang/String;)Landroid/content/IContentProvider;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -177,8 +169,6 @@
 
 .method protected acquireUnstableProvider(Landroid/content/Context;Ljava/lang/String;)Landroid/content/IContentProvider;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -223,7 +213,6 @@
 
 .method public appNotRespondingViaProvider(Landroid/content/IContentProvider;)V
     .locals 2
-    .param p1    # Landroid/content/IContentProvider;
 
     iget-object v0, p0, Landroid/app/ContextImpl$KnoxApplicationContentResolver;->mMainThread:Landroid/app/ActivityThread;
 
@@ -238,7 +227,6 @@
 
 .method public releaseProvider(Landroid/content/IContentProvider;)Z
     .locals 2
-    .param p1    # Landroid/content/IContentProvider;
 
     iget-object v0, p0, Landroid/app/ContextImpl$KnoxApplicationContentResolver;->mMainThread:Landroid/app/ActivityThread;
 
@@ -253,7 +241,6 @@
 
 .method public releaseUnstableProvider(Landroid/content/IContentProvider;)Z
     .locals 2
-    .param p1    # Landroid/content/IContentProvider;
 
     iget-object v0, p0, Landroid/app/ContextImpl$KnoxApplicationContentResolver;->mMainThread:Landroid/app/ActivityThread;
 
@@ -268,7 +255,6 @@
 
 .method public unstableProviderDied(Landroid/content/IContentProvider;)V
     .locals 3
-    .param p1    # Landroid/content/IContentProvider;
 
     iget-object v0, p0, Landroid/app/ContextImpl$KnoxApplicationContentResolver;->mMainThread:Landroid/app/ActivityThread;
 

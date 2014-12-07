@@ -38,8 +38,6 @@
 # virtual methods
 .method public onTabReselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     # getter for: Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->mTalkBackEnable:Z
     invoke-static {}, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;->access$000()Z
@@ -59,8 +57,6 @@
 
 .method public onTabSelected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 3
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$MyTabListener;->this$0:Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 
@@ -150,8 +146,6 @@
 
 .method public onTabUnselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 3
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     invoke-virtual {p1}, Landroid/app/ActionBar$Tab;->getTag()Ljava/lang/Object;
 

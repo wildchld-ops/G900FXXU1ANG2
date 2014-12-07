@@ -24,7 +24,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/OptionMenu;-><init>(Landroid/content/Context;)V
 
@@ -51,8 +50,6 @@
 
 .method public static showDeleteHistoryLogsConfirmDlg(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const v5, 0x7f0e0323
 

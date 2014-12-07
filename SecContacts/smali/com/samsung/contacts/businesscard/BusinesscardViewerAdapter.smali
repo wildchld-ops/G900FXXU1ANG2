@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -62,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;->mContext:Landroid/content/Context;
 
@@ -71,10 +68,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;Ljava/util/ArrayList;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;->buildDialog(Ljava/util/ArrayList;ILjava/lang/String;)V
 
@@ -83,8 +76,6 @@
 
 .method private bindDatas(Landroid/view/View;Landroid/database/Cursor;)V
     .locals 22
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/database/Cursor;
 
     const v20, 0x7f080052
 
@@ -563,8 +554,6 @@
 
 .method private buildDialog(Ljava/util/ArrayList;ILjava/lang/String;)V
     .locals 4
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -639,9 +628,6 @@
 
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p1, Landroid/support/v4/view/ViewPager;
 
@@ -654,7 +640,6 @@
 
 .method public finishUpdate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-string v0, "1"
 
@@ -679,8 +664,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 9
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -764,8 +747,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/view/View;
 
@@ -784,8 +765,6 @@
 
 .method public restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # Ljava/lang/ClassLoader;
 
     const-string v0, "1"
 
@@ -812,7 +791,6 @@
 
 .method public setCursor(Landroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;->mCursor:Landroid/database/Cursor;
 
@@ -821,7 +799,6 @@
 
 .method public setVolteEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;->mIsVoLTEEnable:Z
 
@@ -830,7 +807,6 @@
 
 .method public startUpdate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-string v0, "1"
 

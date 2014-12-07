@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -38,8 +37,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -50,9 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/high16 v1, -0x80000000
 
@@ -99,8 +93,6 @@
 
 .method static synthetic access$002(Lcom/android/contacts/detail/ContactDetailFragmentCarousel;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragmentCarousel;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/detail/ContactDetailFragmentCarousel;->mCurrentPage:I
 
@@ -109,7 +101,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/detail/ContactDetailFragmentCarousel;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragmentCarousel;
 
     invoke-direct {p0}, Lcom/android/contacts/detail/ContactDetailFragmentCarousel;->snapToEdgeSmooth()V
 
@@ -303,7 +294,6 @@
 
 .method public enableSwipe(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragmentCarousel;->mEnableSwipe:Z
 
@@ -347,8 +337,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v5, 0x40000000
 
@@ -450,10 +438,6 @@
 
 .method protected onScrollChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onScrollChanged(IIII)V
 
@@ -467,8 +451,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -521,7 +503,6 @@
 
 .method public setCurrentPage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/detail/ContactDetailFragmentCarousel;->mCurrentPage:I
 
@@ -532,8 +513,6 @@
 
 .method public setFragmentViews(Lcom/android/contacts/widget/FrameLayoutWithOverlay;Lcom/android/contacts/widget/FrameLayoutWithOverlay;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/widget/FrameLayoutWithOverlay;
-    .param p2    # Lcom/android/contacts/widget/FrameLayoutWithOverlay;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragmentCarousel;->mAboutFragment:Lcom/android/contacts/widget/FrameLayoutWithOverlay;
 

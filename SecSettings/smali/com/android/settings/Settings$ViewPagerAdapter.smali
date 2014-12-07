@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/Settings;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/Settings$ViewPagerAdapter;->this$0:Lcom/android/settings/Settings;
 
@@ -38,9 +37,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/View;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p1, Landroid/support/v4/view/ViewPager;
 
@@ -61,8 +57,6 @@
 
 .method public instantiateItem(Landroid/view/View;I)Ljava/lang/Object;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const v6, 0x7f07002f
 
@@ -514,8 +508,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 

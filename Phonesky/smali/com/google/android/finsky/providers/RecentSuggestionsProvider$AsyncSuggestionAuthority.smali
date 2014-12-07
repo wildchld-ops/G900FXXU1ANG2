@@ -93,8 +93,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -121,9 +119,6 @@
 # virtual methods
 .method protected addRow(ILjava/lang/Object;Ljava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -146,12 +141,6 @@
 
 .method protected addRow(ILjava/lang/Object;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     sget-object v1, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$AsyncSuggestionAuthority;->COLUMNS:[Ljava/lang/String;
 

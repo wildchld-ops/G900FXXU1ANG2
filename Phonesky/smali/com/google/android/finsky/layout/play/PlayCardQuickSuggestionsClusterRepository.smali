@@ -982,9 +982,6 @@
 
 .method public static getMetadata(IIZ)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {p0}, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;->getAspectRatio(I)F
 

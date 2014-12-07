@@ -48,7 +48,6 @@
 
 .method protected constructor <init>(Lorg/apache/http/client/methods/HttpUriRequest;Lcom/android/i18n/addressinput/JsonpRequestBuilder$AsyncCallback;)V
     .locals 0
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

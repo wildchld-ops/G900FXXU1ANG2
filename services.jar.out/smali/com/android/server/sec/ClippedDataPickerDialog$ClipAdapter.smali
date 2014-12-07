@@ -71,9 +71,6 @@
 
 .method private getBitmap(Landroid/sec/clipboard/data/ClipboardData;II)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v11, 0x1
 
@@ -480,7 +477,6 @@
 
 .method private getDataTypeFromView(Landroid/view/View;)I
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -515,7 +511,6 @@
 
 .method private getExifOrientation(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, -0x1
 
@@ -596,7 +591,6 @@
 
 .method private getFilename(Landroid/net/Uri;)Ljava/lang/String;
     .locals 10
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -689,9 +683,6 @@
 
 .method private setClippedDataIntoView(Landroid/view/View;ILandroid/view/View;)V
     .locals 18
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -1383,7 +1374,6 @@
 
 .method private setOnClickListenerToBodyView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Lcom/android/server/sec/ClippedDataPickerDialog$ClipAdapter$1;
 
@@ -1396,7 +1386,6 @@
 
 .method private setOnTouchListenerToWebView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Lcom/android/server/sec/ClippedDataPickerDialog$ClipAdapter$2;
 
@@ -1409,9 +1398,6 @@
 
 .method private updateViewVisibility(Landroid/view/View;IZ)Landroid/view/View;
     .locals 17
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1965,7 +1951,6 @@
 
 .method public final getItem(I)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1996,7 +1981,6 @@
 
 .method public final getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -2005,9 +1989,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v7, 0x0
 
@@ -2185,8 +2166,6 @@
 
 .method public rotateBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     const/high16 v3, 0x40000000
 

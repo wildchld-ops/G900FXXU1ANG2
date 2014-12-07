@@ -95,7 +95,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/os/storage/ExternalStorageFormatter;)Landroid/os/storage/StorageVolume;
     .locals 1
-    .param p0    # Lcom/android/internal/os/storage/ExternalStorageFormatter;
 
     iget-object v0, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mStorageVolume:Landroid/os/storage/StorageVolume;
 
@@ -104,7 +103,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/os/storage/ExternalStorageFormatter;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/os/storage/ExternalStorageFormatter;
 
     iget-boolean v0, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mFactoryReset:Z
 
@@ -113,7 +111,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/os/storage/ExternalStorageFormatter;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/os/storage/ExternalStorageFormatter;
 
     iget-boolean v0, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mAlwaysReset:Z
 
@@ -122,7 +119,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/os/storage/ExternalStorageFormatter;)Landroid/os/storage/StorageManager;
     .locals 1
-    .param p0    # Lcom/android/internal/os/storage/ExternalStorageFormatter;
 
     iget-object v0, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mStorageManager:Landroid/os/storage/StorageManager;
 
@@ -131,7 +127,6 @@
 
 .method private isSDCard(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mStorageVolumes:[Landroid/os/storage/StorageVolume;
 
@@ -244,7 +239,6 @@
 # virtual methods
 .method fail(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -311,7 +305,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -320,7 +313,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Lcom/android/internal/os/storage/ExternalStorageFormatter;->getMountService()Landroid/os/storage/IMountService;
 
@@ -485,9 +477,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -701,7 +690,6 @@
 
 .method public updateProgressDialog(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/storage/ExternalStorageFormatter;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -753,7 +741,6 @@
 
 .method updateProgressState(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v7, "mounted"
 

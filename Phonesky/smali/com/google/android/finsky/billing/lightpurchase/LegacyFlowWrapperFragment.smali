@@ -68,8 +68,6 @@
 
 .method public hideFragment(Landroid/support/v4/app/Fragment;Z)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Z
 
     const-string v0, "Not implemented."
 
@@ -118,8 +116,6 @@
 
 .method public onError(Lcom/google/android/finsky/billing/BillingFlow;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlow;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p2}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->fail(Ljava/lang/String;)V
 
@@ -128,9 +124,6 @@
 
 .method public onFinished(Lcom/google/android/finsky/billing/BillingFlow;ZLandroid/os/Bundle;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlow;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
 
     if-eqz p2, :cond_0
 
@@ -147,7 +140,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/BillingFlowFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -173,9 +165,6 @@
 
 .method public persistFragment(Landroid/os/Bundle;Ljava/lang/String;Landroid/support/v4/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/support/v4/app/Fragment;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -188,8 +177,6 @@
 
 .method public restoreFragment(Landroid/os/Bundle;Ljava/lang/String;)Landroid/support/v4/app/Fragment;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -204,8 +191,6 @@
 
 .method public showDialogFragment(Landroid/support/v4/app/DialogFragment;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/DialogFragment;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -218,9 +203,6 @@
 
 .method public showFragment(Landroid/support/v4/app/Fragment;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "Not implemented."
 
@@ -235,7 +217,6 @@
 
 .method public showProgress(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->getFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -278,7 +259,6 @@
 
 .method protected startOrResumeLegacyFlow(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->getLegacyPurchaseFlow()Lcom/google/android/finsky/billing/BillingFlow;
 

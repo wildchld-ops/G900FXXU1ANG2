@@ -12,8 +12,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/swypeconnect/ac/ACManager;Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACManager;
-    .param p2    # Lcom/nuance/connect/store/PersistentDataStore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

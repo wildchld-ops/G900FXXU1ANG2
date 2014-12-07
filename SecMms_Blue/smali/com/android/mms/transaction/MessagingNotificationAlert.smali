@@ -93,8 +93,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/MessagingNotificationAlert;Landroid/media/MediaPlayer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/MessagingNotificationAlert;
-    .param p1    # Landroid/media/MediaPlayer;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/MessagingNotificationAlert;->setVolume(Landroid/media/MediaPlayer;)V
 
@@ -103,7 +101,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/MessagingNotificationAlert;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/MessagingNotificationAlert;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/MessagingNotificationAlert;->speakNewMessageInfo()V
 
@@ -429,7 +426,6 @@
 
 .method private makeTone(I)V
     .locals 8
-    .param p1    # I
 
     const-string v6, "audio"
 
@@ -595,7 +591,6 @@
 
 .method private maybeUpdateTtsLanguage(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -693,7 +688,6 @@
 
 .method private setVolume(Landroid/media/MediaPlayer;)V
     .locals 5
-    .param p1    # Landroid/media/MediaPlayer;
 
     if-nez p1, :cond_1
 
@@ -1089,7 +1083,6 @@
 # virtual methods
 .method public getTtsLocalString(I)Ljava/lang/String;
     .locals 7
-    .param p1    # I
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
 
@@ -1186,7 +1179,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -1266,8 +1258,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 11
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -1589,7 +1579,6 @@
 
 .method public onUtteranceCompleted(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/mms/transaction/MessagingNotificationAlert;->mServiceStartId:I
 

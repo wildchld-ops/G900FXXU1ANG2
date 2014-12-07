@@ -17,7 +17,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 6
-    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -62,16 +61,12 @@
 # virtual methods
 .method public resetDocumentLocator(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public scan(Ljava/io/Reader;Lorg/ccil/cowan/tagsoup/ScanHandler;)V
     .locals 10
-    .param p1    # Ljava/io/Reader;
-    .param p2    # Lorg/ccil/cowan/tagsoup/ScanHandler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

@@ -53,7 +53,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->fadeOutProgressBar()V
 
@@ -62,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->fadeInFragment()V
 
@@ -71,8 +69,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->syncContinueButton(Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;)V
 
@@ -81,7 +77,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->mButtonBarVisible:Z
 
@@ -90,7 +85,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->mFragmentContainer:Landroid/view/View;
 
@@ -195,7 +189,6 @@
 
 .method private fadeOutView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -403,8 +396,6 @@
 
 .method public logClick(ILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -417,7 +408,6 @@
 
 .method public logImpression(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -436,7 +426,6 @@
 
 .method public logImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/multistep/MultiStepFragment;->mEventLog:Lcom/google/android/finsky/analytics/FinskyEventLog;
 
@@ -449,7 +438,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -495,7 +483,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -548,8 +535,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/support/v4/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 

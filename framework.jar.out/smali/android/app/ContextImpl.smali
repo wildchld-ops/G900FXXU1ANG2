@@ -754,7 +754,6 @@
 
 .method public constructor <init>(Landroid/app/ContextImpl;)V
     .locals 2
-    .param p1    # Landroid/app/ContextImpl;
 
     const/4 v1, 0x0
 
@@ -851,7 +850,6 @@
 
 .method static synthetic access$100(Landroid/app/ContextImpl;)Landroid/view/Display;
     .locals 1
-    .param p0    # Landroid/app/ContextImpl;
 
     iget-object v0, p0, Landroid/app/ContextImpl;->mDisplay:Landroid/view/Display;
 
@@ -860,10 +858,6 @@
 
 .method private bindServiceCommon(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z
     .locals 11
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
 
     if-nez p2, :cond_0
 
@@ -1052,7 +1046,6 @@
 
 .method static createSystemContext(Landroid/app/ActivityThread;)Landroid/app/ContextImpl;
     .locals 3
-    .param p0    # Landroid/app/ActivityThread;
 
     new-instance v0, Landroid/app/ContextImpl;
 
@@ -1073,11 +1066,6 @@
 
 .method private enforce(Ljava/lang/String;IZILjava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     if-eqz p2, :cond_2
 
@@ -1199,12 +1187,6 @@
 
 .method private enforceForUri(IIZILandroid/net/Uri;Ljava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Landroid/net/Uri;
-    .param p6    # Ljava/lang/String;
 
     if-eqz p2, :cond_2
 
@@ -1340,7 +1322,6 @@
 
 .method private ensureDirsExistOrFilter([Ljava/io/File;)[Ljava/io/File;
     .locals 8
-    .param p1    # [Ljava/io/File;
 
     array-length v5, p1
 
@@ -1696,7 +1677,6 @@
 
 .method static getImpl(Landroid/content/Context;)Landroid/app/ContextImpl;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     :goto_0
     instance-of v1, p0, Landroid/content/ContextWrapper;
@@ -1814,7 +1794,6 @@
 
 .method private static getVzwLocationManager(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/app/ContextImpl;
 
     const/4 v0, 0x0
 
@@ -1837,7 +1816,6 @@
 
 .method private static loadVzwLbsFromFramework(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 8
-    .param p0    # Landroid/app/ContextImpl;
 
     const/4 v4, 0x0
 
@@ -1982,8 +1960,6 @@
 
 .method private makeFilename(Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     sget-char v0, Ljava/io/File;->separatorChar:C
 
@@ -2033,12 +2009,6 @@
 
 .method private registerReceiverInternal(Landroid/content/BroadcastReceiver;ILandroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;Landroid/content/Context;)Landroid/content/Intent;
     .locals 9
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # I
-    .param p3    # Landroid/content/IntentFilter;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -2149,8 +2119,6 @@
 
 .method private static registerService(Ljava/lang/String;Landroid/app/ContextImpl$ServiceFetcher;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/app/ContextImpl$ServiceFetcher;
 
     instance-of v0, p1, Landroid/app/ContextImpl$StaticServiceFetcher;
 
@@ -2174,9 +2142,6 @@
 
 .method static setFilePermissionsFromMode(Ljava/lang/String;II)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -2203,8 +2168,6 @@
 
 .method private startServiceCommon(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/ComponentName;
     .locals 8
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v3, 0x0
 
@@ -2401,8 +2364,6 @@
 
 .method private stopServiceCommon(Landroid/content/Intent;Landroid/os/UserHandle;)Z
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v2, 0x0
 
@@ -2482,7 +2443,6 @@
 
 .method private uriModeFlagToString(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2538,8 +2498,6 @@
 
 .method private validateFilePath(Ljava/lang/String;Z)Ljava/io/File;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -2621,7 +2579,6 @@
 
 .method private validateServiceIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -2726,9 +2683,6 @@
 # virtual methods
 .method public bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -2745,10 +2699,6 @@
 
 .method public bindServiceAsUser(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/app/ContextImpl;->bindServiceCommon(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z
 
@@ -2759,7 +2709,6 @@
 
 .method public checkCallingOrSelfPermission(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2789,8 +2738,6 @@
 
 .method public checkCallingOrSelfUriPermission(Landroid/net/Uri;I)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -2809,7 +2756,6 @@
 
 .method public checkCallingPermission(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2851,8 +2797,6 @@
 
 .method public checkCallingUriPermission(Landroid/net/Uri;I)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -2883,9 +2827,6 @@
 
 .method public checkPermission(Ljava/lang/String;II)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -2922,10 +2863,6 @@
 
 .method public checkUriPermission(Landroid/net/Uri;III)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2951,12 +2888,6 @@
 
 .method public checkUriPermission(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;III)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v0, 0x0
 
@@ -3023,7 +2954,6 @@
 
 .method public createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
     .locals 7
-    .param p1    # Landroid/content/res/Configuration;
 
     if-nez p1, :cond_0
 
@@ -3081,7 +3011,6 @@
 
 .method public createDisplayContext(Landroid/view/Display;)Landroid/content/Context;
     .locals 8
-    .param p1    # Landroid/view/Display;
 
     const/4 v3, 0x0
 
@@ -3141,8 +3070,6 @@
 
 .method public createPackageContext(Ljava/lang/String;I)Landroid/content/Context;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -3172,9 +3099,6 @@
 
 .method public createPackageContextAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)Landroid/content/Context;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/UserHandle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -3352,7 +3276,6 @@
 
 .method public deleteDatabase(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3380,7 +3303,6 @@
 
 .method public deleteFile(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getFilesDir()Ljava/io/File;
 
@@ -3399,8 +3321,6 @@
 
 .method public enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/app/ContextImpl;->checkCallingOrSelfPermission(Ljava/lang/String;)I
 
@@ -3425,9 +3345,6 @@
 
 .method public enforceCallingOrSelfUriPermission(Landroid/net/Uri;ILjava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroid/app/ContextImpl;->checkCallingOrSelfUriPermission(Landroid/net/Uri;I)I
 
@@ -3454,8 +3371,6 @@
 
 .method public enforceCallingPermission(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/app/ContextImpl;->checkCallingPermission(Ljava/lang/String;)I
 
@@ -3480,9 +3395,6 @@
 
 .method public enforceCallingUriPermission(Landroid/net/Uri;ILjava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroid/app/ContextImpl;->checkCallingUriPermission(Landroid/net/Uri;I)I
 
@@ -3509,10 +3421,6 @@
 
 .method public enforcePermission(Ljava/lang/String;IILjava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3}, Landroid/app/ContextImpl;->checkPermission(Ljava/lang/String;II)I
 
@@ -3535,11 +3443,6 @@
 
 .method public enforceUriPermission(Landroid/net/Uri;IIILjava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/app/ContextImpl;->checkUriPermission(Landroid/net/Uri;III)I
 
@@ -3564,13 +3467,6 @@
 
 .method public enforceUriPermission(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p6}, Landroid/app/ContextImpl;->checkUriPermission(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;III)I
 
@@ -3882,7 +3778,6 @@
 
 .method public getDatabasePath(Ljava/lang/String;)Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3895,8 +3790,6 @@
 
 .method public getDir(Ljava/lang/String;I)Ljava/io/File;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3946,7 +3839,6 @@
 
 .method public getDisplayAdjustments(I)Landroid/view/DisplayAdjustments;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ContextImpl;->mDisplayAdjustments:Landroid/view/DisplayAdjustments;
 
@@ -4012,7 +3904,6 @@
 
 .method public getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/app/ContextImpl;->getExternalFilesDirs(Ljava/lang/String;)[Ljava/io/File;
 
@@ -4027,7 +3918,6 @@
 
 .method public getExternalFilesDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/app/ContextImpl;->mSync:Ljava/lang/Object;
 
@@ -4086,7 +3976,6 @@
 
 .method public getFileStreamPath(Ljava/lang/String;)Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getFilesDir()Ljava/io/File;
 
@@ -4463,8 +4352,6 @@
 
 .method public getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-class v6, Landroid/app/ContextImpl;
 
@@ -4587,7 +4474,6 @@
 
 .method public getSharedPrefsFile(Ljava/lang/String;)Ljava/io/File;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->getPreferencesDir()Ljava/io/File;
 
@@ -4632,7 +4518,6 @@
 
 .method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -4831,9 +4716,6 @@
 
 .method public grantUriPermission(Ljava/lang/String;Landroid/net/Uri;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -4861,9 +4743,6 @@
 
 .method final init(Landroid/app/LoadedApk;Landroid/os/IBinder;Landroid/app/ActivityThread;)V
     .locals 7
-    .param p1    # Landroid/app/LoadedApk;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/app/ActivityThread;
 
     const/4 v4, 0x0
 
@@ -4888,12 +4767,6 @@
 
 .method final init(Landroid/app/LoadedApk;Landroid/os/IBinder;Landroid/app/ActivityThread;Landroid/content/res/Resources;Ljava/lang/String;Landroid/os/UserHandle;)V
     .locals 7
-    .param p1    # Landroid/app/LoadedApk;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/app/ActivityThread;
-    .param p4    # Landroid/content/res/Resources;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/UserHandle;
 
     const/4 v3, 0x0
 
@@ -5060,9 +4933,6 @@
 
 .method final init(Landroid/content/res/Resources;Landroid/app/ActivityThread;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/app/ActivityThread;
-    .param p3    # Landroid/os/UserHandle;
 
     const/4 v0, 0x0
 
@@ -5111,7 +4981,6 @@
 
 .method public openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -5135,8 +5004,6 @@
 
 .method public openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -5219,9 +5086,6 @@
 
 .method public openOrCreateDatabase(Ljava/lang/String;ILandroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
 
     const/4 v0, 0x0
 
@@ -5234,10 +5098,6 @@
 
 .method public openOrCreateDatabase(Ljava/lang/String;ILandroid/database/sqlite/SQLiteDatabase$CursorFactory;Landroid/database/DatabaseErrorHandler;)Landroid/database/sqlite/SQLiteDatabase;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
-    .param p4    # Landroid/database/DatabaseErrorHandler;
 
     const/4 v3, 0x1
 
@@ -5291,8 +5151,6 @@
 
 .method final performFinalCleanup(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ContextImpl;->mPackageInfo:Landroid/app/LoadedApk;
 
@@ -5307,8 +5165,6 @@
 
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/IntentFilter;
 
     const/4 v0, 0x0
 
@@ -5321,10 +5177,6 @@
 
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
     .locals 7
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/IntentFilter;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Handler;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getUserId()I
 
@@ -5353,11 +5205,6 @@
 
 .method public registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
     .locals 7
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Landroid/content/IntentFilter;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Handler;
 
     invoke-virtual {p2}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -5386,7 +5233,6 @@
 
 .method public removeStickyBroadcast(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -5443,8 +5289,6 @@
 
 .method public removeStickyBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -5501,8 +5345,6 @@
 
 .method public revokeUriPermission(Landroid/net/Uri;I)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -5530,8 +5372,6 @@
 
 .method final scheduleFinalCleanup(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ContextImpl;->mMainThread:Landroid/app/ActivityThread;
 
@@ -5542,7 +5382,6 @@
 
 .method public sendBroadcast(Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -5604,8 +5443,6 @@
 
 .method public sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -5667,9 +5504,6 @@
 
 .method public sendBroadcast(Landroid/content/Intent;Ljava/lang/String;I)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -5731,8 +5565,6 @@
 
 .method public sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -5792,9 +5624,6 @@
 
 .method public sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -5854,8 +5683,6 @@
 
 .method public sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -5917,14 +5744,6 @@
 
 .method public sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;ILandroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/BroadcastReceiver;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -6057,13 +5876,6 @@
 
 .method public sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/BroadcastReceiver;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/os/Bundle;
 
     const/4 v3, -0x1
 
@@ -6090,14 +5902,6 @@
 
 .method public sendOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/BroadcastReceiver;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -6228,7 +6032,6 @@
 
 .method public sendStickyBroadcast(Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -6290,8 +6093,6 @@
 
 .method public sendStickyBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     invoke-virtual {p0}, Landroid/app/ContextImpl;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -6351,12 +6152,6 @@
 
 .method public sendStickyOrderedBroadcast(Landroid/content/Intent;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/BroadcastReceiver;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -6489,13 +6284,6 @@
 
 .method public sendStickyOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Landroid/content/BroadcastReceiver;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -6626,7 +6414,6 @@
 
 .method final setOuterContext(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/app/ContextImpl;->mOuterContext:Landroid/content/Context;
 
@@ -6635,7 +6422,6 @@
 
 .method public setTheme(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/ContextImpl;->mThemeResource:I
 
@@ -6644,7 +6430,6 @@
 
 .method public setWallpaper(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6662,7 +6447,6 @@
 
 .method public setWallpaper(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6680,7 +6464,6 @@
 
 .method public startActivities([Landroid/content/Intent;)V
     .locals 1
-    .param p1    # [Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -6693,8 +6476,6 @@
 
 .method public startActivities([Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -6754,9 +6535,6 @@
 
 .method public startActivitiesAsUser([Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 8
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     const/4 v3, 0x0
 
@@ -6818,7 +6596,6 @@
 
 .method public startActivity(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -6831,8 +6608,6 @@
 
 .method public startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -6890,9 +6665,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -6952,8 +6724,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v0, 0x0
 
@@ -6964,9 +6734,6 @@
 
 .method public startInstrumentation(Landroid/content/ComponentName;Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -7017,11 +6784,6 @@
 
 .method public startIntentSender(Landroid/content/IntentSender;Landroid/content/Intent;III)V
     .locals 7
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -7049,12 +6811,6 @@
 
 .method public startIntentSender(Landroid/content/IntentSender;Landroid/content/Intent;IIILandroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -7137,7 +6893,6 @@
 
 .method public startService(Landroid/content/Intent;)Landroid/content/ComponentName;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -7152,8 +6907,6 @@
 
 .method public startServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/ComponentName;
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     invoke-direct {p0, p1, p2}, Landroid/app/ContextImpl;->startServiceCommon(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/ComponentName;
 
@@ -7164,7 +6917,6 @@
 
 .method public stopService(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/app/ContextImpl;->warnIfCallingFromSystemProcess()V
 
@@ -7179,8 +6931,6 @@
 
 .method public stopServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     invoke-direct {p0, p1, p2}, Landroid/app/ContextImpl;->stopServiceCommon(Landroid/content/Intent;Landroid/os/UserHandle;)Z
 
@@ -7191,7 +6941,6 @@
 
 .method public unbindService(Landroid/content/ServiceConnection;)V
     .locals 3
-    .param p1    # Landroid/content/ServiceConnection;
 
     if-nez p1, :cond_0
 
@@ -7247,7 +6996,6 @@
 
 .method public unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     .locals 3
-    .param p1    # Landroid/content/BroadcastReceiver;
 
     iget-object v1, p0, Landroid/app/ContextImpl;->mPackageInfo:Landroid/app/LoadedApk;
 

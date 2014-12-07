@@ -42,8 +42,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,9 +102,6 @@
 
 .method private executeDialpadSearch(Ljava/lang/String;ZZ)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialpadSearchImpl;->mSearchViewUpdater:Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
 
@@ -208,7 +203,6 @@
 
 .method public static executeRegularSearch(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -521,7 +515,6 @@
 
 .method public onKeywordChanged(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -532,8 +525,6 @@
 
 .method public onKeywordChanged(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -544,9 +535,6 @@
 
 .method public onKeywordChanged(Ljava/lang/String;ZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     iget v0, p0, Lcom/samsung/dialer/impl/DialpadSearchImpl;->mMode:I
 

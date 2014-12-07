@@ -166,10 +166,6 @@
 
 .method static declared-synchronized addorUpdateAccount(Landroid/app/enterprise/ContextInfo;Lcom/android/server/enterprise/email/AccountMetaData;ZLandroid/content/Context;)J
     .locals 24
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # Lcom/android/server/enterprise/email/AccountMetaData;
-    .param p2    # Z
-    .param p3    # Landroid/content/Context;
 
     const-class v22, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -832,9 +828,6 @@
 
 .method static declared-synchronized deleteAccount(Landroid/app/enterprise/ContextInfo;JLandroid/content/Context;)Z
     .locals 20
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     const-class v19, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -1154,9 +1147,6 @@
 
 .method static deleteAccountTableRow(IJLandroid/content/Context;)Z
     .locals 7
-    .param p0    # I
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1241,8 +1231,6 @@
 
 .method private static deleteAccountsTableRow(JLandroid/content/Context;)Z
     .locals 9
-    .param p0    # J
-    .param p2    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1413,9 +1401,6 @@
 
 .method private static deleteHostAuthTableRow(Landroid/net/Uri;JLandroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/net/Uri;
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1496,13 +1481,6 @@
 
 .method private static getAccount(Landroid/net/Uri;Landroid/net/Uri;Landroid/net/Uri;JLandroid/content/Context;ZLandroid/app/enterprise/ContextInfo;)Lcom/android/server/enterprise/email/AccountMetaData;
     .locals 32
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # J
-    .param p5    # Landroid/content/Context;
-    .param p6    # Z
-    .param p7    # Landroid/app/enterprise/ContextInfo;
 
     const/16 v18, 0x0
 
@@ -2654,7 +2632,6 @@
 
 .method private static getAccountCBContentUri(I)Landroid/net/Uri;
     .locals 2
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -2701,7 +2678,6 @@
 
 .method private static getAccountContentUri(I)Landroid/net/Uri;
     .locals 2
-    .param p0    # I
 
     if-gtz p0, :cond_0
 
@@ -2754,9 +2730,6 @@
 
 .method static declared-synchronized getAccountDetails(Landroid/app/enterprise/ContextInfo;JLandroid/content/Context;)Lcom/android/server/enterprise/email/AccountMetaData;
     .locals 10
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     const-class v9, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -2805,10 +2778,6 @@
 
 .method static declared-synchronized getAccountDetails(Landroid/app/enterprise/ContextInfo;JLandroid/content/Context;Z)Lcom/android/server/enterprise/email/AccountMetaData;
     .locals 10
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
-    .param p4    # Z
 
     const-class v9, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -2863,13 +2832,6 @@
 
 .method static declared-synchronized getAccountId(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLandroid/content/Context;)J
     .locals 11
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Landroid/content/Context;
 
     const-class v10, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -2946,15 +2908,6 @@
 
 .method private static getAccountIdInternal(Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLandroid/content/Context;Landroid/app/enterprise/ContextInfo;)J
     .locals 19
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # Landroid/content/Context;
-    .param p8    # Landroid/app/enterprise/ContextInfo;
 
     const-wide/16 v7, -0x1
 
@@ -3392,8 +3345,6 @@
 
 .method static declared-synchronized getAccountIds(Landroid/app/enterprise/ContextInfo;Landroid/content/Context;)[J
     .locals 19
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # Landroid/content/Context;
 
     const-class v18, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -3627,8 +3578,6 @@
 
 .method private static getAccountType(ZI)Ljava/lang/String;
     .locals 1
-    .param p0    # Z
-    .param p1    # I
 
     if-eqz p0, :cond_0
 
@@ -3649,9 +3598,6 @@
 
 .method private static getAccountsDBRowId(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)J
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -3989,9 +3935,6 @@
 
 .method static declared-synchronized getCBAAlias(Landroid/app/enterprise/ContextInfo;JLandroid/content/Context;)Ljava/lang/String;
     .locals 15
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     const-class v14, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -4239,8 +4182,6 @@
 
 .method public static getContainerizedAction(ILjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     if-gtz p0, :cond_0
 
@@ -4287,8 +4228,6 @@
 
 .method public static getContainerizedString(ILjava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     if-gez p0, :cond_0
 
@@ -4305,7 +4244,6 @@
 
 .method private static getEasDomainAndUserFromLogin(Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4398,7 +4336,6 @@
 
 .method public static getEasPackageName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     if-gtz p0, :cond_0
 
@@ -4419,7 +4356,6 @@
 
 .method public static getEmailPackageName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     if-gtz p0, :cond_0
 
@@ -4440,7 +4376,6 @@
 
 .method private static getHostAuthContentUri(I)Landroid/net/Uri;
     .locals 2
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -4487,11 +4422,6 @@
 
 .method private static getHostAuthFlags(IZZZLandroid/content/Context;)I
     .locals 4
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -4551,8 +4481,6 @@
 
 .method public static getPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/sec/enterprise/knox/EnterpriseContainerManager;->getContainerizedPackageName(ILjava/lang/String;)Ljava/lang/String;
 
@@ -4591,7 +4519,6 @@
 
 .method static getPackageNameForUid(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     sget v0, Lcom/android/server/enterprise/email/SettingsUtils;->preCallingUid:I
 
@@ -4634,10 +4561,6 @@
 
 .method static getPassword(IJLandroid/content/Context;I)[Ljava/lang/String;
     .locals 9
-    .param p0    # I
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -4726,7 +4649,6 @@
 
 .method private static getPoliciesContentUri(I)Landroid/net/Uri;
     .locals 2
-    .param p0    # I
 
     if-gtz p0, :cond_0
 
@@ -4779,7 +4701,6 @@
 
 .method public static getSecurityPassword(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4821,8 +4742,6 @@
 
 .method public static getSyncEmailIndexbyMaxTruncationSize(Ljava/lang/String;I)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v1, 0x3
 
@@ -4958,8 +4877,6 @@
 
 .method public static getTruncationSizebySyncEmailIndex(Ljava/lang/String;I)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v4, 0x32
 
@@ -5089,7 +5006,6 @@
 
 .method static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5127,12 +5043,6 @@
 
 .method private static insertAccountTableRow(ILcom/android/server/enterprise/email/AccountMetaData;JJZLandroid/content/Context;)J
     .locals 16
-    .param p0    # I
-    .param p1    # Lcom/android/server/enterprise/email/AccountMetaData;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Landroid/content/Context;
 
     const-wide/16 v8, -0x1
 
@@ -5798,11 +5708,6 @@
 
 .method private static insertAccountsTableRow(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLandroid/content/Context;)J
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -6026,11 +5931,6 @@
 
 .method private static insertHostAuthTableRow(Landroid/net/Uri;Lcom/android/server/enterprise/email/AccountMetaData;ZZLandroid/content/Context;)J
     .locals 15
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Lcom/android/server/enterprise/email/AccountMetaData;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Landroid/content/Context;
 
     const-wide/16 v8, -0x1
 
@@ -6455,9 +6355,6 @@
 
 .method private static isExistingAccount(Landroid/net/Uri;JLandroid/content/Context;)Z
     .locals 10
-    .param p0    # Landroid/net/Uri;
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     const/4 v8, 0x1
 
@@ -6585,7 +6482,6 @@
 
 .method static isValidEmailAddress(Ljava/lang/String;)Z
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -6663,11 +6559,6 @@
 
 .method private static loadHostAuth(Landroid/net/Uri;JLcom/android/server/enterprise/email/AccountMetaData;ZLandroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/net/Uri;
-    .param p1    # J
-    .param p3    # Lcom/android/server/enterprise/email/AccountMetaData;
-    .param p4    # Z
-    .param p5    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -7193,9 +7084,6 @@
 
 .method static declared-synchronized sendAccountsChangedBroadcast(ILandroid/content/Context;I)V
     .locals 10
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const-class v6, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -7348,9 +7236,6 @@
 
 .method static declared-synchronized setAsDefaultAccount(Landroid/app/enterprise/ContextInfo;JLandroid/content/Context;)Z
     .locals 17
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     const-class v14, Lcom/android/server/enterprise/email/SettingsUtils;
 
@@ -7660,8 +7545,6 @@
 
 .method static setPackageNameForUid(ILjava/lang/String;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     sput p0, Lcom/android/server/enterprise/email/SettingsUtils;->preCallingUid:I
 
@@ -7696,13 +7579,6 @@
 
 .method static setPassword(IJLjava/lang/String;Landroid/content/Context;ZZI)V
     .locals 6
-    .param p0    # I
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/Context;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
 
     new-instance v3, Landroid/content/Intent;
 
@@ -7841,8 +7717,6 @@
 
 .method public static setSecurityPassword(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

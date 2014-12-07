@@ -124,8 +124,6 @@
 # virtual methods
 .method public declared-synchronized add(Ljava/lang/String;J)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     monitor-enter p0
 
@@ -206,7 +204,6 @@
 
 .method public declared-synchronized finish(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

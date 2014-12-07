@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/group/GroupMultiSelectionActivity;Lcom/samsung/contacts/group/GroupMultiSelectionActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupMultiSelectionActivity;
-    .param p2    # Lcom/samsung/contacts/group/GroupMultiSelectionActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMultiSelectionActivity$GroupAccountSelectionUpdateListener;-><init>(Lcom/samsung/contacts/group/GroupMultiSelectionActivity;)V
 
@@ -81,7 +79,6 @@
 
 .method public onDoneButtonStateUpdated(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultiSelectionActivity$GroupAccountSelectionUpdateListener;->this$0:Lcom/samsung/contacts/group/GroupMultiSelectionActivity;
 
@@ -92,8 +89,6 @@
 
 .method public onSelectionChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultiSelectionActivity$GroupAccountSelectionUpdateListener;->this$0:Lcom/samsung/contacts/group/GroupMultiSelectionActivity;
 

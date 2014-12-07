@@ -6,8 +6,6 @@
 # direct methods
 .method public static ceil(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     add-int v0, p0, p1
 

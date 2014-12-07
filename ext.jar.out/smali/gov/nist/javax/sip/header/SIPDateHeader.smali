@@ -90,7 +90,6 @@
 
 .method public setDate(Lgov/nist/javax/sip/header/SIPDate;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/SIPDate;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/SIPDateHeader;->date:Lgov/nist/javax/sip/header/SIPDate;
 
@@ -99,7 +98,6 @@
 
 .method public setDate(Ljava/util/Calendar;)V
     .locals 3
-    .param p1    # Ljava/util/Calendar;
 
     if-eqz p1, :cond_0
 

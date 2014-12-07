@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/layout/EpisodeList;Landroid/content/Context;Ljava/util/List;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,7 +60,6 @@
 
 .method private getSeasonTitle(Lcom/google/android/finsky/api/model/Document;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getTitle()Ljava/lang/String;
 
@@ -78,9 +76,6 @@
 # virtual methods
 .method public getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -153,9 +148,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/EpisodeList$SeasonListAdapter;->getContext()Landroid/content/Context;
 

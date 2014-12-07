@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/HomeView;Landroid/view/View;I)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView$ChangeHotseatState;->this$0:Lcom/android/launcher2/HomeView;
 

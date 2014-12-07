@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -35,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -65,11 +62,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -157,7 +149,6 @@
 
 .method public setCurrentMaxLines(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsTextLayout;->mContentView:Landroid/widget/TextView;
 
@@ -170,7 +161,6 @@
 
 .method public setDefaultMaxLines(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/DetailsTextLayout;->mDefaultMaxLines:I
 
@@ -181,7 +171,6 @@
 
 .method public setMetricsListener(Lcom/google/android/finsky/layout/DetailsTextLayout$MetricsListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/DetailsTextLayout$MetricsListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/DetailsTextLayout;->mMetricsListener:Lcom/google/android/finsky/layout/DetailsTextLayout$MetricsListener;
 

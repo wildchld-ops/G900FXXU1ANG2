@@ -37,7 +37,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$12;->val$onAnimationEndRunnable:Ljava/lang/Runnable;
 

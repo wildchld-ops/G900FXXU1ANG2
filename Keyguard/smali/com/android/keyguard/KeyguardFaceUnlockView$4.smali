@@ -58,7 +58,6 @@
 
 .method public onKeyguardVisibilityChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -160,7 +159,6 @@
 
 .method public onPhoneStateChanged(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -261,7 +259,6 @@
 
 .method public onUserSwitchComplete(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView$4;->this$0:Lcom/android/keyguard/KeyguardFaceUnlockView;
 
@@ -283,7 +280,6 @@
 
 .method public onUserSwitching(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardFaceUnlockView$4;->this$0:Lcom/android/keyguard/KeyguardFaceUnlockView;
 

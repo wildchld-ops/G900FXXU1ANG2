@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +59,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -112,7 +109,6 @@
 
 .method public setParentNode(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/PlayCardUtils$CardUiElementNode;->mParentNode:Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -121,7 +117,6 @@
 
 .method public setSentImpression(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/utils/PlayCardUtils$CardUiElementNode;->mSentImpression:Z
 

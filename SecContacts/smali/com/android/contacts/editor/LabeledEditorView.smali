@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -99,8 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x1
 
@@ -127,9 +124,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -156,7 +150,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/editor/LabeledEditorView;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-boolean v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mIsAttachedToWindow:Z
 
@@ -165,7 +158,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/editor/LabeledEditorView;)Lcom/android/contacts/editor/Editor$EditorListener;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mListener:Lcom/android/contacts/editor/Editor$EditorListener;
 
@@ -174,7 +166,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/editor/LabeledEditorView;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mLabel:Landroid/widget/Spinner;
 
@@ -183,7 +174,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/editor/LabeledEditorView;)Lcom/android/contacts/model/RawContactDelta;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mState:Lcom/android/contacts/model/RawContactDelta;
 
@@ -192,7 +182,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/editor/LabeledEditorView;)Lcom/android/contacts/common/model/dataitem/DataKind;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mKind:Lcom/android/contacts/common/model/dataitem/DataKind;
 
@@ -201,7 +190,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/editor/LabeledEditorView;)Lcom/android/contacts/common/model/account/AccountType$EditType;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mType:Lcom/android/contacts/common/model/account/AccountType$EditType;
 
@@ -210,8 +198,6 @@
 
 .method static synthetic access$402(Lcom/android/contacts/editor/LabeledEditorView;Lcom/android/contacts/common/model/account/AccountType$EditType;)Lcom/android/contacts/common/model/account/AccountType$EditType;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
-    .param p1    # Lcom/android/contacts/common/model/account/AccountType$EditType;
 
     iput-object p1, p0, Lcom/android/contacts/editor/LabeledEditorView;->mType:Lcom/android/contacts/common/model/account/AccountType$EditType;
 
@@ -220,7 +206,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/editor/LabeledEditorView;)Lcom/android/contacts/common/model/ValuesDelta;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mEntry:Lcom/android/contacts/common/model/ValuesDelta;
 
@@ -229,7 +214,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/editor/LabeledEditorView;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/LabeledEditorView;->rebuildLabel()V
 
@@ -238,7 +222,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/editor/LabeledEditorView;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/LabeledEditorView;->reBuildEditors()V
 
@@ -247,7 +230,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/editor/LabeledEditorView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -256,7 +238,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/editor/LabeledEditorView;)Lcom/android/contacts/editor/LabeledEditorView$EditTypeAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/LabeledEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mEditTypeAdapter:Lcom/android/contacts/editor/LabeledEditorView$EditTypeAdapter;
 
@@ -409,7 +390,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -612,7 +592,6 @@
 
 .method private setupLabelButton(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -661,7 +640,6 @@
 # virtual methods
 .method public createDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -804,8 +782,6 @@
 
 .method protected isFieldChanged(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/contacts/editor/LabeledEditorView;->mEntry:Lcom/android/contacts/common/model/ValuesDelta;
 
@@ -950,8 +926,6 @@
 
 .method public onFieldChanged(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mEntry:Lcom/android/contacts/common/model/ValuesDelta;
 
@@ -1089,7 +1063,6 @@
 
 .method protected onTypeSelectionChange(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/editor/LabeledEditorView;->mEditTypeAdapter:Lcom/android/contacts/editor/LabeledEditorView$EditTypeAdapter;
 
@@ -1238,8 +1211,6 @@
 
 .method protected saveValue(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mEntry:Lcom/android/contacts/common/model/ValuesDelta;
 
@@ -1250,7 +1221,6 @@
 
 .method public setDeletable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/editor/LabeledEditorView;->mIsDeletable:Z
 
@@ -1261,7 +1231,6 @@
 
 .method public setDeleteButtonVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/editor/LabeledEditorView;->mIsDeletable:Z
 
@@ -1287,7 +1256,6 @@
 
 .method public setEditorListener(Lcom/android/contacts/editor/Editor$EditorListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/editor/Editor$EditorListener;
 
     iput-object p1, p0, Lcom/android/contacts/editor/LabeledEditorView;->mListener:Lcom/android/contacts/editor/Editor$EditorListener;
 
@@ -1296,7 +1264,6 @@
 
 .method public setEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -1343,11 +1310,6 @@
 
 .method public setValues(Lcom/android/contacts/common/model/dataitem/DataKind;Lcom/android/contacts/common/model/ValuesDelta;Lcom/android/contacts/model/RawContactDelta;ZLcom/android/contacts/editor/ViewIdGenerator;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p2    # Lcom/android/contacts/common/model/ValuesDelta;
-    .param p3    # Lcom/android/contacts/model/RawContactDelta;
-    .param p4    # Z
-    .param p5    # Lcom/android/contacts/editor/ViewIdGenerator;
 
     const/4 v1, 0x0
 
@@ -1435,7 +1397,6 @@
 
 .method showDialog(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -1456,8 +1417,6 @@
 
 .method updateCustomDialogOkButtonState(Landroid/app/AlertDialog;Landroid/widget/EditText;)V
     .locals 2
-    .param p1    # Landroid/app/AlertDialog;
-    .param p2    # Landroid/widget/EditText;
 
     const/4 v1, -0x1
 

@@ -14,7 +14,6 @@
 
 .method public static decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p0    # Ljava/lang/String;
 
     const/16 v10, 0x25
 

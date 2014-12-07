@@ -36,8 +36,6 @@
 # virtual methods
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment$2;->this$0:Lcom/android/contacts/detail/ContactDetailFragment;
 

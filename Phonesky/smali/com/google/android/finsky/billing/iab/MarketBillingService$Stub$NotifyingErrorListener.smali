@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/iab/MarketBillingService$Stub;Ljava/lang/String;J)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/iab/MarketBillingService$Stub$NotifyingErrorListener;->this$1:Lcom/google/android/finsky/billing/iab/MarketBillingService$Stub;
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 5
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const-string v0, "Server error on InAppPurchaseInformationRequest: %s"
 

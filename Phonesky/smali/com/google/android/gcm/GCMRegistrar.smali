@@ -12,7 +12,6 @@
 # direct methods
 .method public static checkDevice(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -80,7 +79,6 @@
 
 .method static clearRegistrationId(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, ""
 
@@ -93,7 +91,6 @@
 
 .method private static getAppVersion(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -146,7 +143,6 @@
 
 .method static getBackoff(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/google/android/gcm/GCMRegistrar;->getGCMPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -165,7 +161,6 @@
 
 .method static varargs getFlatSenderIds([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -222,7 +217,6 @@
 
 .method private static getGCMPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "com.google.android.gcm"
 
@@ -237,7 +231,6 @@
 
 .method public static getRegistrationId(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/high16 v6, -0x80000000
 
@@ -315,8 +308,6 @@
 
 .method static varargs internalRegister(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -393,7 +384,6 @@
 
 .method static internalUnregister(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -452,7 +442,6 @@
 
 .method public static isRegistered(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/google/android/gcm/GCMRegistrar;->getRegistrationId(Landroid/content/Context;)Ljava/lang/String;
 
@@ -477,8 +466,6 @@
 
 .method public static varargs register(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/gcm/GCMRegistrar;->resetBackoff(Landroid/content/Context;)V
 
@@ -489,7 +476,6 @@
 
 .method static resetBackoff(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "GCMRegistrar"
 
@@ -526,8 +512,6 @@
 
 .method static setBackoff(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Lcom/google/android/gcm/GCMRegistrar;->getGCMPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -548,8 +532,6 @@
 
 .method static setRegistrationId(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/gcm/GCMRegistrar;->getGCMPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -608,7 +590,6 @@
 
 .method static declared-synchronized setRetryBroadcastReceiver(Landroid/content/Context;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const-class v6, Lcom/google/android/gcm/GCMRegistrar;
 
@@ -776,7 +757,6 @@
 
 .method static setRetryReceiverClassName(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "GCMRegistrar"
 

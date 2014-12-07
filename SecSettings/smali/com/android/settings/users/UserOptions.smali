@@ -61,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/users/UserOptions;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/UserOptions;
 
     invoke-direct {p0}, Lcom/android/settings/users/UserOptions;->removeThisUser()V
 
@@ -70,7 +69,6 @@
 
 .method private onRemoveUserClicked(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -176,7 +174,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -337,7 +334,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -427,8 +423,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -477,7 +471,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -504,8 +497,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 

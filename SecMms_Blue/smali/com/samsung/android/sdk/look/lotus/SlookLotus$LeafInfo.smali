@@ -91,7 +91,6 @@
 
 .method private constructor <init>(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -515,8 +514,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;Lcom/samsung/android/sdk/look/lotus/SlookLotus$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
-    .param p2    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;-><init>(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)V
 
@@ -525,7 +522,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;)Lcom/samsung/android/glancecard/GlanceCardInfo;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo;->mCardInfo:Lcom/samsung/android/glancecard/GlanceCardInfo;
 

@@ -61,16 +61,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIJJLandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # J
-    .param p12    # Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,7 +112,6 @@
 # virtual methods
 .method public compareTo(Lcom/samsung/contacts/model/SnsFeeds$SnsFeedItem;)I
     .locals 1
-    .param p1    # Lcom/samsung/contacts/model/SnsFeeds$SnsFeedItem;
 
     const/4 v0, 0x0
 
@@ -131,7 +120,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/model/SnsFeeds$SnsFeedItem;
 

@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDetailExtractor;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDetailExtractor;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/support/v4/app/DialogFragment;-><init>()V
 
@@ -34,7 +32,6 @@
 
 .method private buildView(Landroid/app/AlertDialog;)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/app/AlertDialog;
 
     new-instance v2, Landroid/widget/ListView;
 
@@ -99,7 +96,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 

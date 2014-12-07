@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/Camera;Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$42;->this$0:Lcom/sec/android/app/camera/Camera;
 

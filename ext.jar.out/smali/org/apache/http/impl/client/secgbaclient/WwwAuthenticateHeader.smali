@@ -130,7 +130,6 @@
 
 .method public setAlgorithm(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;->algorithm:Ljava/lang/String;
 
@@ -139,7 +138,6 @@
 
 .method public setNonce(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;->nonce:Ljava/lang/String;
 
@@ -148,7 +146,6 @@
 
 .method public setOpaque(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;->opaque:Ljava/lang/String;
 
@@ -157,7 +154,6 @@
 
 .method public setQop(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;->qop:Ljava/lang/String;
 
@@ -166,7 +162,6 @@
 
 .method public setRealm(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;->realm:Ljava/lang/String;
 
@@ -175,7 +170,6 @@
 
 .method public setScheme(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;->scheme:Ljava/lang/String;
 
@@ -184,7 +178,6 @@
 
 .method public setStale(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;->stale:Z
 

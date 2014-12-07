@@ -86,7 +86,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-boolean v0, p0, Lgov/nist/javax/sip/header/Contact;->wildCardFlag:Z
 
@@ -152,7 +151,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Ljavax/sip/header/ContactHeader;
 
@@ -344,7 +342,6 @@
 
 .method public setAddress(Ljavax/sip/address/Address;)V
     .locals 2
-    .param p1    # Ljavax/sip/address/Address;
 
     if-nez p1, :cond_0
 
@@ -370,7 +367,6 @@
 
 .method public setContactList(Lgov/nist/javax/sip/header/ContactList;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/ContactList;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/Contact;->contactList:Lgov/nist/javax/sip/header/ContactList;
 
@@ -379,7 +375,6 @@
 
 .method public setExpires(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -396,8 +391,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -442,7 +435,6 @@
 
 .method public setPubGruuParam(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -455,7 +447,6 @@
 
 .method public setQValue(F)V
     .locals 3
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -505,7 +496,6 @@
 
 .method public setSipInstanceParam(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -518,7 +508,6 @@
 
 .method public setTempGruuParam(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/ParametersHeader;->parameters:Lgov/nist/core/NameValueList;
 
@@ -541,7 +530,6 @@
 
 .method public setWildCardFlag(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 

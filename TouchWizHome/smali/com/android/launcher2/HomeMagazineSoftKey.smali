@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -49,9 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -60,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/HomeMagazineSoftKey;)Landroid/widget/ImageButton;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeMagazineSoftKey;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeMagazineSoftKey;->mAppsBtn:Landroid/widget/ImageButton;
 
@@ -69,7 +62,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/HomeMagazineSoftKey;)Lcom/android/launcher2/HomeView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeMagazineSoftKey;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeMagazineSoftKey;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -102,8 +94,6 @@
 
 .method public getNextButton(Ljava/lang/String;I)Landroid/widget/ImageButton;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -177,7 +167,6 @@
 
 .method public setup(Lcom/android/launcher2/HomeView;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     const/4 v3, 0x0
 

@@ -1379,7 +1379,7 @@ Stlačením a podržaním tlačidla návratu môžete tiež zobraziť alebo skry
     <string name="usb_tethering_errored_subtext">Chyba zdieľania pripojenia USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Počas používania aplikácie Súbežná synchronizácia nemožno vypnúť zdieľanie pripojenia USB. Vypnutím zdieľania pripojenia USB sa vypne aplikácia Súbežná synchronizácia.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Počas používania aplikácie Súbežná synchronizácia nemožno zapnúť zdieľanie pripojenia USB. Zapnutím zdieľania pripojenia USB sa vypne aplikácia Súbežná synchronizácia.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Zdieľanie pripojenia cez Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Zdieľanie pripojenia cez Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Zdieľa sa internet. pripojenie tohto zariadenia…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Internetové pripojenie zariadenia sa zdieľa s 1 zariadením</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Internetové pripojenie zariadenia sa zdieľa s %d zariadeniami</string>

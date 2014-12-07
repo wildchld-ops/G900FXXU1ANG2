@@ -36,8 +36,6 @@
 # virtual methods
 .method public ellipsized(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/dialer/dialpad/EllipsisTextView$1;->this$0:Lcom/android/dialer/dialpad/EllipsisTextView;
 

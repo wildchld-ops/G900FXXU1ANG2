@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -51,8 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -87,7 +84,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mIsFetching:Z
 
@@ -96,8 +92,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/GooglePlusShareSection;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mIsFetching:Z
 
@@ -106,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/GooglePlusShareSection;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/GooglePlusShareSection;->updateUi()V
 
@@ -115,9 +108,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/layout/GooglePlusShareSection;Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/GooglePlusShareSection;->updateWithDocument(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;)V
 
@@ -126,7 +116,6 @@
 
 .method static synthetic access$1100(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Lcom/google/android/finsky/api/model/DfeList;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mItemListRequest:Lcom/google/android/finsky/api/model/DfeList;
 
@@ -135,7 +124,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Lcom/android/volley/toolbox/JsonObjectRequest;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mRequest:Lcom/android/volley/toolbox/JsonObjectRequest;
 
@@ -144,8 +132,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/layout/GooglePlusShareSection;Lcom/android/volley/toolbox/JsonObjectRequest;)Lcom/android/volley/toolbox/JsonObjectRequest;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
-    .param p1    # Lcom/android/volley/toolbox/JsonObjectRequest;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mRequest:Lcom/android/volley/toolbox/JsonObjectRequest;
 
@@ -154,8 +140,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/GooglePlusShareSection;Lcom/google/android/finsky/api/model/Document;)Lcom/android/volley/Response$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/GooglePlusShareSection;->createJsonListener(Lcom/google/android/finsky/api/model/Document;)Lcom/android/volley/Response$Listener;
 
@@ -166,7 +150,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Lcom/android/volley/Response$ErrorListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mUnrollErrorListener:Lcom/android/volley/Response$ErrorListener;
 
@@ -175,7 +158,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Lcom/android/volley/RequestQueue;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
@@ -184,7 +166,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mParentNode:Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -193,7 +174,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Landroid/support/v4/app/Fragment;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mFragment:Landroid/support/v4/app/Fragment;
 
@@ -202,8 +182,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/layout/GooglePlusShareSection;Lcom/google/android/finsky/api/model/Document;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/GooglePlusShareSection;->buildBaseShareIntent(Lcom/google/android/finsky/api/model/Document;)Landroid/content/Intent;
 
@@ -214,7 +192,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/layout/GooglePlusShareSection;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/GooglePlusShareSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/GooglePlusShareSection;->mAlbumDocument:Lcom/google/android/finsky/api/model/Document;
 
@@ -223,7 +200,6 @@
 
 .method private buildBaseShareIntent(Lcom/google/android/finsky/api/model/Document;)Landroid/content/Intent;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getShareUrl()Ljava/lang/String;
 
@@ -262,7 +238,6 @@
 
 .method private createJsonListener(Lcom/google/android/finsky/api/model/Document;)Lcom/android/volley/Response$Listener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -284,7 +259,6 @@
 
 .method private isSharingSupported(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 5
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v3, 0x0
 
@@ -368,8 +342,6 @@
 
 .method private updateWithDocument(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;)V
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v7, 0x0
 
@@ -506,9 +478,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/model/Document;Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/16 v2, 0x8
 

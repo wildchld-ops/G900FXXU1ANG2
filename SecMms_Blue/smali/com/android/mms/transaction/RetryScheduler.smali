@@ -25,7 +25,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/RetryScheduler;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/RetryScheduler;
 
     iget-boolean v0, p0, Lcom/android/mms/transaction/RetryScheduler;->mWifiCall:Z
 
@@ -61,8 +59,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/transaction/RetryScheduler;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/RetryScheduler;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/transaction/RetryScheduler;->mWifiCall:Z
 
@@ -71,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/RetryScheduler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/RetryScheduler;
 
     iget-object v0, p0, Lcom/android/mms/transaction/RetryScheduler;->mContext:Landroid/content/Context;
 
@@ -88,7 +83,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/mms/transaction/RetryScheduler;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/transaction/RetryScheduler;->sInstance:Lcom/android/mms/transaction/RetryScheduler;
 
@@ -108,7 +102,6 @@
 
 .method private getResponseStatus(J)I
     .locals 9
-    .param p1    # J
 
     const/4 v8, 0x0
 
@@ -215,7 +208,6 @@
 
 .method private getResponseText(J)Ljava/lang/String;
     .locals 9
-    .param p1    # J
 
     const/4 v8, 0x0
 
@@ -322,7 +314,6 @@
 
 .method private getRetrieveStatus(J)I
     .locals 9
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -490,8 +481,6 @@
 
 .method private scheduleRetry(Landroid/net/Uri;Lcom/android/mms/transaction/Transaction;)V
     .locals 40
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/mms/transaction/Transaction;
 
     invoke-static/range {p1 .. p1}, Landroid/content/ContentUris;->parseId(Landroid/net/Uri;)J
 
@@ -1530,7 +1519,6 @@
 
 .method public static setRetryAlarm(Landroid/content/Context;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/google/android/mms/pdu/PduPersister;->getPduPersister(Landroid/content/Context;)Lcom/google/android/mms/pdu/PduPersister;
 
@@ -1684,7 +1672,6 @@
 
 .method public update(Lcom/android/mms/transaction/Observable;)V
     .locals 7
-    .param p1    # Lcom/android/mms/transaction/Observable;
 
     :try_start_0
     move-object v0, p1

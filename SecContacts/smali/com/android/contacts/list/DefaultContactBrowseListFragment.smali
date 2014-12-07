@@ -214,7 +214,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -223,7 +222,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -232,8 +230,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->showEmptyUserProfile(Z)V
 
@@ -242,9 +238,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->showMultiSelectModeSearchView(ZZ)V
 
@@ -253,7 +246,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mMovetoKnoxMode:Z
 
@@ -262,8 +254,6 @@
 
 .method static synthetic access$1302(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mMovetoKnoxMode:Z
 
@@ -272,7 +262,6 @@
 
 .method static synthetic access$1400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mSelectedUris:Ljava/util/HashMap;
 
@@ -281,7 +270,6 @@
 
 .method static synthetic access$1500(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/samsung/contacts/listener/ContextualActionbarListener;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mCABListener:Lcom/samsung/contacts/listener/ContextualActionbarListener;
 
@@ -290,7 +278,6 @@
 
 .method static synthetic access$1600(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mIsRecreatedInstance:Z
 
@@ -299,7 +286,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mDeleteOnlyMode:Z
 
@@ -308,8 +294,6 @@
 
 .method static synthetic access$1702(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mDeleteOnlyMode:Z
 
@@ -318,7 +302,6 @@
 
 .method static synthetic access$1800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mShouldHideShareViaMenu:Z
 
@@ -327,8 +310,6 @@
 
 .method static synthetic access$1802(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mShouldHideShareViaMenu:Z
 
@@ -337,7 +318,6 @@
 
 .method static synthetic access$1900(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mShouldHideDeleteMenu:Z
 
@@ -346,8 +326,6 @@
 
 .method static synthetic access$1902(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mShouldHideDeleteMenu:Z
 
@@ -356,7 +334,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -365,7 +342,6 @@
 
 .method static synthetic access$2000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAccountFilterHeader:Landroid/view/View;
 
@@ -374,7 +350,6 @@
 
 .method static synthetic access$2100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -383,7 +358,6 @@
 
 .method static synthetic access$2200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -392,7 +366,6 @@
 
 .method static synthetic access$2300(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -401,7 +374,6 @@
 
 .method static synthetic access$2400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mSelectedPreLoadContacts:Ljava/util/ArrayList;
 
@@ -410,8 +382,6 @@
 
 .method static synthetic access$2402(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mSelectedPreLoadContacts:Ljava/util/ArrayList;
 
@@ -420,7 +390,6 @@
 
 .method static synthetic access$2500(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mSelectedSimContacts:Ljava/util/ArrayList;
 
@@ -429,8 +398,6 @@
 
 .method static synthetic access$2502(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mSelectedSimContacts:Ljava/util/ArrayList;
 
@@ -439,7 +406,6 @@
 
 .method static synthetic access$2600(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -448,7 +414,6 @@
 
 .method static synthetic access$2700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -457,7 +422,6 @@
 
 .method static synthetic access$2800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -466,7 +430,6 @@
 
 .method static synthetic access$2900(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -475,7 +438,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -484,7 +446,6 @@
 
 .method static synthetic access$3000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -493,7 +454,6 @@
 
 .method static synthetic access$3100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -502,7 +462,6 @@
 
 .method static synthetic access$3200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -511,8 +470,6 @@
 
 .method static synthetic access$3300(Lcom/android/contacts/list/DefaultContactBrowseListFragment;J)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->copyToDialingScreen(J)V
 
@@ -521,7 +478,6 @@
 
 .method static synthetic access$3400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -530,7 +486,6 @@
 
 .method static synthetic access$3500(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -539,7 +494,6 @@
 
 .method static synthetic access$3600(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -548,9 +502,6 @@
 
 .method static synthetic access$3700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;JZ)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # J
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->addToVipList(JZ)V
 
@@ -559,7 +510,6 @@
 
 .method static synthetic access$3800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -568,8 +518,6 @@
 
 .method static synthetic access$3802(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mActionMode:Landroid/view/ActionMode;
 
@@ -578,8 +526,6 @@
 
 .method static synthetic access$3902(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;)Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;
 
     iput-object p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mActionModeAdapter:Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;
 
@@ -588,7 +534,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -597,7 +542,6 @@
 
 .method static synthetic access$4000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -606,8 +550,6 @@
 
 .method static synthetic access$402(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -616,7 +558,6 @@
 
 .method static synthetic access$4100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -625,7 +566,6 @@
 
 .method static synthetic access$4200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -634,7 +574,6 @@
 
 .method static synthetic access$4300(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -643,7 +582,6 @@
 
 .method static synthetic access$4400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -652,7 +590,6 @@
 
 .method static synthetic access$4500(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -661,7 +598,6 @@
 
 .method static synthetic access$4600(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -670,7 +606,6 @@
 
 .method static synthetic access$4700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -679,7 +614,6 @@
 
 .method static synthetic access$4800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -688,7 +622,6 @@
 
 .method static synthetic access$4900(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -697,7 +630,6 @@
 
 .method static synthetic access$5000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -706,8 +638,6 @@
 
 .method static synthetic access$502(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mCustomSearchMode:Z
 
@@ -716,7 +646,6 @@
 
 .method static synthetic access$5100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -725,7 +654,6 @@
 
 .method static synthetic access$5200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -734,7 +662,6 @@
 
 .method static synthetic access$5300(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -743,7 +670,6 @@
 
 .method static synthetic access$5400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -752,7 +678,6 @@
 
 .method static synthetic access$5500(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -761,7 +686,6 @@
 
 .method static synthetic access$5600(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -770,7 +694,6 @@
 
 .method static synthetic access$5700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -779,7 +702,6 @@
 
 .method static synthetic access$5800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -788,7 +710,6 @@
 
 .method static synthetic access$5900(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -797,7 +718,6 @@
 
 .method static synthetic access$6000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -806,7 +726,6 @@
 
 .method static synthetic access$6100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -815,7 +734,6 @@
 
 .method static synthetic access$6200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -824,7 +742,6 @@
 
 .method static synthetic access$6300(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -833,7 +750,6 @@
 
 .method static synthetic access$6400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -842,7 +758,6 @@
 
 .method static synthetic access$6500(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -851,7 +766,6 @@
 
 .method static synthetic access$6600(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -860,7 +774,6 @@
 
 .method static synthetic access$6700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -869,7 +782,6 @@
 
 .method static synthetic access$6800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -878,7 +790,6 @@
 
 .method static synthetic access$6900(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -887,7 +798,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -896,7 +806,6 @@
 
 .method static synthetic access$7000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -905,7 +814,6 @@
 
 .method static synthetic access$7100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -914,7 +822,6 @@
 
 .method static synthetic access$7200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -923,7 +830,6 @@
 
 .method static synthetic access$7400(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -932,7 +838,6 @@
 
 .method static synthetic access$7500(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -941,7 +846,6 @@
 
 .method static synthetic access$7600(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -950,7 +854,6 @@
 
 .method static synthetic access$7700(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Lcom/android/contacts/common/list/ContactEntryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -959,7 +862,6 @@
 
 .method static synthetic access$7800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -968,7 +870,6 @@
 
 .method static synthetic access$7900(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -977,7 +878,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -986,7 +886,6 @@
 
 .method static synthetic access$8000(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -995,7 +894,6 @@
 
 .method static synthetic access$8100(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -1004,7 +902,6 @@
 
 .method static synthetic access$8200(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -1013,7 +910,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/list/DefaultContactBrowseListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -1022,7 +918,6 @@
 
 .method private addClickListener(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const v2, 0x7f080307
 
@@ -1064,7 +959,6 @@
 
 .method private addClickListenerEasymode(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f08030a
 
@@ -1083,7 +977,6 @@
 
 .method private addEmptyUserProfileHeader(Landroid/view/LayoutInflater;)V
     .locals 9
-    .param p1    # Landroid/view/LayoutInflater;
 
     const/4 v8, 0x1
 
@@ -1415,7 +1308,6 @@
 
 .method private adjustTotalCountText(I)V
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->getContext()Landroid/content/Context;
 
@@ -1676,7 +1568,6 @@
 
 .method private getUnavailableView(Landroid/view/View;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f080304
 
@@ -1761,7 +1652,6 @@
 
 .method private removeClickListener(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -1786,7 +1676,6 @@
 
 .method private removeClickListenerEasymode(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f08030a
 
@@ -1803,7 +1692,6 @@
 
 .method private showEmptyUserProfile(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -1882,8 +1770,6 @@
 
 .method private showMultiSelectModeSearchView(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1909,7 +1795,6 @@
 
 .method private showSearchProgress(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mSearchProgress:Landroid/view/View;
 
@@ -2109,7 +1994,6 @@
 
 .method public createCursorLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mContext:Landroid/content/Context;
 
@@ -2384,8 +2268,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
@@ -2436,9 +2318,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -2476,9 +2355,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/contacts/list/ContactBrowseListFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -2512,8 +2388,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 8
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -2756,9 +2630,6 @@
 
 .method protected onHeaderViewClick(Landroid/view/View;IJ)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     iget-object v1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mMessageContainer:Landroid/widget/FrameLayout;
 
@@ -2839,8 +2710,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mActionModeAdapter:Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;
 
@@ -2871,9 +2740,6 @@
 
 .method public onItemLongClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)Z
     .locals 8
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3019,8 +2885,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -3287,7 +3151,6 @@
 
 .method public setContextualActionbarListener(Lcom/samsung/contacts/listener/ContextualActionbarListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/ContextualActionbarListener;
 
     iput-object p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mCABListener:Lcom/samsung/contacts/listener/ContextualActionbarListener;
 
@@ -3296,7 +3159,6 @@
 
 .method public setCreateButtonVisibility(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mCreateButton:Landroid/view/View;
 
@@ -3326,7 +3188,6 @@
 
 .method public setDeleteOnlyMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mDeleteOnlyMode:Z
 
@@ -3335,7 +3196,6 @@
 
 .method public setFilter(Lcom/android/contacts/common/list/ContactListFilter;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
 
     invoke-super {p0, p1}, Lcom/android/contacts/list/ContactBrowseListFragment;->setFilter(Lcom/android/contacts/common/list/ContactListFilter;)V
 
@@ -3346,7 +3206,6 @@
 
 .method public setMovetoKnoxMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mMovetoKnoxMode:Z
 
@@ -3420,7 +3279,6 @@
 
 .method public setProviderStatus(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mProviderStatus:I
 
@@ -3434,7 +3292,6 @@
 
 .method public setSearchMode(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->isSearchMode()Z
 
@@ -3458,7 +3315,6 @@
 
 .method protected setUnavailableVisible(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v4, 0x8
 
@@ -3569,7 +3425,6 @@
 
 .method public setVoLteEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->mIsVoLteEnabled:Z
 
@@ -3604,8 +3459,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v10, 0x10
 
@@ -4130,7 +3983,6 @@
 
 .method public updateUnavailableView(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/contacts/list/DefaultContactBrowseListFragment;->isSearchMode()Z
 

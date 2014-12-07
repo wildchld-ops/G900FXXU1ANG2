@@ -58,7 +58,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/PlusProfile$PlusProfileResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/PlusProfile$PlusProfileResponse;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/GPlusUtils$1;->val$activity:Landroid/support/v4/app/FragmentActivity;
 
@@ -103,7 +102,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/PlusProfile$PlusProfileResponse;
 

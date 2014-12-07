@@ -18,7 +18,6 @@
 
 .method public static isDataNetworkDisable(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -97,7 +96,6 @@
 
 .method public static isMmsNetworkAvailable(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -158,7 +156,6 @@
 
 .method public static isMobileAvailable(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -186,8 +183,6 @@
 
 .method public static isMsgNetworkAvailable(Landroid/content/Context;Z)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -303,7 +298,6 @@
 
 .method public static isNetWorkConnected(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "connectivity"
 
@@ -338,7 +332,6 @@
 
 .method public static isNetworkAvailable(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -408,7 +401,6 @@
 
 .method public static isWifiAvailable(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "connectivity"
 

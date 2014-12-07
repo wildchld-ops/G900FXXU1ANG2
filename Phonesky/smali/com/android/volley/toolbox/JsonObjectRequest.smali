@@ -17,10 +17,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/json/JSONObject;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -64,9 +60,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/json/JSONObject;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -110,7 +103,6 @@
 # virtual methods
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 5
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

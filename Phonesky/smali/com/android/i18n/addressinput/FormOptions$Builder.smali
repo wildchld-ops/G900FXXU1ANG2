@@ -161,7 +161,6 @@
 
 .method static synthetic access$000(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mBaseId:Ljava/lang/String;
 
@@ -170,7 +169,6 @@
 
 .method static synthetic access$100(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/util/EnumSet;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mHiddenFields:Ljava/util/EnumSet;
 
@@ -179,7 +177,6 @@
 
 .method static synthetic access$200(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/util/EnumSet;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mReadonlyFields:Ljava/util/EnumSet;
 
@@ -188,7 +185,6 @@
 
 .method static synthetic access$300(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/util/EnumSet;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mRequiredFields:Ljava/util/EnumSet;
 
@@ -197,7 +193,6 @@
 
 .method static synthetic access$400(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/util/EnumMap;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mCustomLabels:Ljava/util/EnumMap;
 
@@ -206,7 +201,6 @@
 
 .method static synthetic access$500(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mOverrideFieldOrder:Ljava/util/Map;
 
@@ -215,7 +209,6 @@
 
 .method static synthetic access$600(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/util/EnumMap;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mMaxLengths:Ljava/util/EnumMap;
 
@@ -224,7 +217,6 @@
 
 .method static synthetic access$700(Lcom/android/i18n/addressinput/FormOptions$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions$Builder;->mServerUrl:Ljava/lang/String;
 
@@ -247,7 +239,6 @@
 
 .method public hide(Lcom/android/i18n/addressinput/AddressField;)Lcom/android/i18n/addressinput/FormOptions$Builder;
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     if-nez p1, :cond_0
 

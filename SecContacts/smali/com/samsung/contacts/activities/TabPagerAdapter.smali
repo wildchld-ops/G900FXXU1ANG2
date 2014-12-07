@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/TabPagerAdapter;->mCurTransaction:Landroid/app/FragmentTransaction;
 
@@ -65,7 +61,6 @@
 
 .method public finishUpdate(Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/TabPagerAdapter;->mCurTransaction:Landroid/app/FragmentTransaction;
 
@@ -100,8 +95,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/activities/TabPagerAdapter;->mCurTransaction:Landroid/app/FragmentTransaction;
 
@@ -155,8 +148,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -182,8 +173,6 @@
 
 .method public restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # Ljava/lang/ClassLoader;
 
     return-void
 .end method
@@ -198,9 +187,6 @@
 
 .method public setPrimaryItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     move-object v0, p3
 
@@ -236,7 +222,6 @@
 
 .method public setSearchMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/samsung/contacts/activities/TabPagerAdapter;->mTabPagerAdapterSearchMode:Z
 

@@ -49,7 +49,6 @@
 
 .method public setActionBarDescription(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -80,8 +79,6 @@
 
 .method public setActionBarUpIndicator(Landroid/graphics/drawable/Drawable;I)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar$3;->this$0:Lcom/google/android/finsky/layout/LegacyActionBar;
 

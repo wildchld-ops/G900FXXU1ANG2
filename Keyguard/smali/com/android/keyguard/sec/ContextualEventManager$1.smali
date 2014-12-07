@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/sec/ContextualEventManager;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/ContextualEventManager$1;->this$0:Lcom/android/keyguard/sec/ContextualEventManager;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 

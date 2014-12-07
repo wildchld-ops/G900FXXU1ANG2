@@ -2913,7 +2913,6 @@
 
 .method public static findLanguageByLanguageId(I)Lcom/nuance/swypeconnect/ac/ACLanguageList$Language;
     .locals 3
-    .param p0    # I
 
     sget-object v2, Lcom/nuance/swypeconnect/ac/ACLanguageList;->languageList:Ljava/util/Map;
 
@@ -2967,7 +2966,6 @@
 
 .method public static findLanguageIdByFullLangCode(Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -3128,7 +3126,6 @@
 
 .method public static findLanguageNameById(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     sget-object v2, Lcom/nuance/swypeconnect/ac/ACLanguageList;->languageList:Ljava/util/Map;
 

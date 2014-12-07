@@ -24,8 +24,6 @@
 
 .method public static varargs getString(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     const/16 v2, 0x21
 

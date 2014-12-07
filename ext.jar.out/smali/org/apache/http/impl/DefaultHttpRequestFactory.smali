@@ -81,8 +81,6 @@
 
 .method private static isOneOf([Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -119,8 +117,6 @@
 # virtual methods
 .method public newHttpRequest(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/HttpRequest;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/MethodNotSupportedException;
@@ -200,7 +196,6 @@
 
 .method public newHttpRequest(Lorg/apache/http/RequestLine;)Lorg/apache/http/HttpRequest;
     .locals 4
-    .param p1    # Lorg/apache/http/RequestLine;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/MethodNotSupportedException;

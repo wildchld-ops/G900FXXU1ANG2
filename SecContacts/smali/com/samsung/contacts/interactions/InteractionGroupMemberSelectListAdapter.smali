@@ -217,7 +217,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMemberBrowseListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -234,10 +233,6 @@
 # virtual methods
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v9, 0x0
 
@@ -364,8 +359,6 @@
 
 .method protected configureProjection(Landroid/content/CursorLoader;I)V
     .locals 6
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # I
 
     const/16 v5, 0x122
 
@@ -464,9 +457,6 @@
 
 .method protected configureSelection(Landroid/content/CursorLoader;JI)V
     .locals 9
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # I
 
     const/4 v8, 0x5
 
@@ -809,9 +799,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;JI)V
     .locals 4
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # I
 
     const-wide/16 v2, 0x0
 
@@ -901,7 +888,6 @@
 
 .method protected createFilterUriBuilder(I)Landroid/net/Uri$Builder;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberSelectListAdapter;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -939,7 +925,6 @@
 
 .method public setActionCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberSelectListAdapter;->mActionCode:I
 
@@ -948,7 +933,6 @@
 
 .method public setIsFromEmergencyMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupMemberSelectListAdapter;->mIsFromEmergencyMessage:Z
 

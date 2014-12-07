@@ -19,7 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -246,8 +245,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -285,8 +282,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -295,8 +290,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const-string v0, "VisualEffectCircleUnlockEffect"
 
@@ -375,7 +368,6 @@
 
 .method public setHidden(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewNone;->circleEffect:Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
@@ -412,8 +404,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 2
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "VisualEffectCircleUnlockEffect"
 

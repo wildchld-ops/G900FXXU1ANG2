@@ -254,7 +254,6 @@
 
 .method private getPermissionInfo(Ljava/util/List;Ljava/lang/String;)Ljava/util/List;
     .locals 10
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -340,11 +339,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;IILcom/google/android/finsky/activities/UpdateApprovalFragment$ApprovalType;Ljava/util/ArrayList;)Lcom/google/android/finsky/activities/UpdateApprovalFragment;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/activities/UpdateApprovalFragment$ApprovalType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -421,7 +415,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -432,9 +425,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f04013b
 
@@ -491,7 +481,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

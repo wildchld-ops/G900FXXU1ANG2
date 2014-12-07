@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/SipStackImpl;Lgov/nist/javax/sip/clientauthutils/AccountManager;Ljavax/sip/header/HeaderFactory;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/SipStackImpl;
-    .param p2    # Lgov/nist/javax/sip/clientauthutils/AccountManager;
-    .param p3    # Ljavax/sip/header/HeaderFactory;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,9 +49,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/SipStackImpl;Lgov/nist/javax/sip/clientauthutils/SecureAccountManager;Ljavax/sip/header/HeaderFactory;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/SipStackImpl;
-    .param p2    # Lgov/nist/javax/sip/clientauthutils/SecureAccountManager;
-    .param p3    # Ljavax/sip/header/HeaderFactory;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -83,11 +77,6 @@
 
 .method private getAuthorization(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/sip/header/WWWAuthenticateHeader;Lgov/nist/javax/sip/clientauthutils/UserCredentialHash;)Ljavax/sip/header/AuthorizationHeader;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljavax/sip/header/WWWAuthenticateHeader;
-    .param p5    # Lgov/nist/javax/sip/clientauthutils/UserCredentialHash;
 
     const/4 v14, 0x0
 
@@ -255,11 +244,6 @@
 
 .method private getAuthorization(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/sip/header/WWWAuthenticateHeader;Lgov/nist/javax/sip/clientauthutils/UserCredentials;)Ljavax/sip/header/AuthorizationHeader;
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljavax/sip/header/WWWAuthenticateHeader;
-    .param p5    # Lgov/nist/javax/sip/clientauthutils/UserCredentials;
 
     const/16 v16, 0x0
 
@@ -445,7 +429,6 @@
 
 .method private removeBranchID(Ljavax/sip/message/Request;)V
     .locals 2
-    .param p1    # Ljavax/sip/message/Request;
 
     const-string v1, "Via"
 
@@ -466,10 +449,6 @@
 # virtual methods
 .method public handleChallenge(Ljavax/sip/message/Response;Ljavax/sip/ClientTransaction;Ljavax/sip/SipProvider;I)Ljavax/sip/ClientTransaction;
     .locals 30
-    .param p1    # Ljavax/sip/message/Response;
-    .param p2    # Ljavax/sip/ClientTransaction;
-    .param p3    # Ljavax/sip/SipProvider;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;,
@@ -1190,7 +1169,6 @@
 
 .method public removeCachedAuthenticationHeaders(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1212,7 +1190,6 @@
 
 .method public setAuthenticationHeaders(Ljavax/sip/message/Request;)V
     .locals 8
-    .param p1    # Ljavax/sip/message/Request;
 
     move-object v4, p1
 

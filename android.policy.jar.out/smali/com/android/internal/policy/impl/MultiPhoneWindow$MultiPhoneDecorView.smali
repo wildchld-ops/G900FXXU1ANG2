@@ -43,8 +43,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/content/Context;I)V
     .locals 3
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -79,7 +77,6 @@
 
 .method private dispatchOutSideTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -218,7 +215,6 @@
 # virtual methods
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v7, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneDecorView;->this$0:Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
@@ -643,7 +639,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 19
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -2247,7 +2242,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, -0x2
 
@@ -2414,7 +2408,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->onWindowFocusChanged(Z)V
 
@@ -2458,7 +2451,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v4, 0x3
 

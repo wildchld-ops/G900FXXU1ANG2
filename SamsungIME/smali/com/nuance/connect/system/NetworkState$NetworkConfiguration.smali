@@ -51,9 +51,6 @@
 
 .method public constructor <init>(ZZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -76,7 +73,6 @@
 
 .method public static fromString(Ljava/lang/String;)Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -194,7 +190,6 @@
 
 .method public setConnectionStableRequirement(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;->connectionStableRequirement:I
 
@@ -203,9 +198,6 @@
 
 .method public setNetworkState(ZZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;->wifiEnabled:Z
 

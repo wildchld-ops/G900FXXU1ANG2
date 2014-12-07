@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPDialog;J)V
     .locals 0
-    .param p2    # J
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;->this$0:Lgov/nist/javax/sip/stack/SIPDialog;
 

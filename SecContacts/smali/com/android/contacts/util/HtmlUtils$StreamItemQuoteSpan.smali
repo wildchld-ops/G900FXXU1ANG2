@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/text/style/QuoteSpan;-><init>(I)V
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public getLeadingMargin(Z)I
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/contacts/util/HtmlUtils$StreamItemQuoteSpan;->mWidth:I
 

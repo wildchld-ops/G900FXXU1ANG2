@@ -36,8 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     sget-object v0, Lcom/android/launcher2/guide/GuideFragment;->GMode:Ljava/lang/String;
 

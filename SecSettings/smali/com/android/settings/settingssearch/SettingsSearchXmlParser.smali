@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -123,7 +122,6 @@
 
 .method private getParentNameForTabView(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const-string v3, ""
 
@@ -183,8 +181,6 @@
 # virtual methods
 .method public getHeaderItemsFromRes(ILjava/lang/String;)Ljava/util/ArrayList;
     .locals 19
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -778,8 +774,6 @@
 
 .method public getPreferencesScreenItemsFromRes(ILjava/lang/String;)Ljava/util/ArrayList;
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

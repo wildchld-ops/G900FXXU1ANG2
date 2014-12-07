@@ -39,10 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;IZ)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -77,7 +73,6 @@
 
 .method protected getItemsFromResponse(Lcom/google/android/finsky/protos/Rev$ReviewResponse;)Ljava/util/List;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/Rev$ReviewResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,7 +98,6 @@
 
 .method protected bridge synthetic getItemsFromResponse(Ljava/lang/Object;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Rev$ReviewResponse;
 
@@ -116,7 +110,6 @@
 
 .method protected getNextPageUrl(Lcom/google/android/finsky/protos/Rev$ReviewResponse;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/Rev$ReviewResponse;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/Rev$ReviewResponse;->nextPageUrl:Ljava/lang/String;
 
@@ -125,7 +118,6 @@
 
 .method protected bridge synthetic getNextPageUrl(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Rev$ReviewResponse;
 
@@ -172,7 +164,6 @@
 
 .method protected makeRequest(Ljava/lang/String;)Lcom/android/volley/Request;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -228,8 +219,6 @@
 
 .method public setFilters(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/api/model/DfeReviews;->mFilterByVersion:Z
 
@@ -240,7 +229,6 @@
 
 .method public setSortType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/api/model/DfeReviews;->mSortType:I
 

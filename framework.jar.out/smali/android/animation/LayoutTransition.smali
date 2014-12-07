@@ -638,7 +638,6 @@
 
 .method static synthetic access$000(Landroid/animation/LayoutTransition;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->layoutChangeListenerMap:Ljava/util/HashMap;
 
@@ -647,7 +646,6 @@
 
 .method static synthetic access$100(Landroid/animation/LayoutTransition;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->pendingAnimations:Ljava/util/HashMap;
 
@@ -664,7 +662,6 @@
 
 .method static synthetic access$1100(Landroid/animation/LayoutTransition;)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->mChangingDelay:J
 
@@ -673,7 +670,6 @@
 
 .method static synthetic access$1200(Landroid/animation/LayoutTransition;)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->mChangingStagger:J
 
@@ -682,7 +678,6 @@
 
 .method static synthetic access$1300(Landroid/animation/LayoutTransition;)Landroid/animation/TimeInterpolator;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->mChangingInterpolator:Landroid/animation/TimeInterpolator;
 
@@ -699,7 +694,6 @@
 
 .method static synthetic access$1500(Landroid/animation/LayoutTransition;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->currentChangingAnimations:Ljava/util/LinkedHashMap;
 
@@ -708,7 +702,6 @@
 
 .method static synthetic access$1600(Landroid/animation/LayoutTransition;)Z
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     invoke-direct {p0}, Landroid/animation/LayoutTransition;->hasListeners()Z
 
@@ -719,7 +712,6 @@
 
 .method static synthetic access$1700(Landroid/animation/LayoutTransition;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->mListeners:Ljava/util/ArrayList;
 
@@ -728,7 +720,6 @@
 
 .method static synthetic access$1800(Landroid/animation/LayoutTransition;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->currentAppearingAnimations:Ljava/util/LinkedHashMap;
 
@@ -737,7 +728,6 @@
 
 .method static synthetic access$1900(Landroid/animation/LayoutTransition;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->currentDisappearingAnimations:Ljava/util/LinkedHashMap;
 
@@ -746,7 +736,6 @@
 
 .method static synthetic access$200(Landroid/animation/LayoutTransition;)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->mChangingAppearingDelay:J
 
@@ -755,7 +744,6 @@
 
 .method static synthetic access$300(Landroid/animation/LayoutTransition;)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->staggerDelay:J
 
@@ -764,8 +752,6 @@
 
 .method static synthetic access$314(Landroid/animation/LayoutTransition;J)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
-    .param p1    # J
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->staggerDelay:J
 
@@ -778,7 +764,6 @@
 
 .method static synthetic access$400(Landroid/animation/LayoutTransition;)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->mChangingAppearingStagger:J
 
@@ -787,7 +772,6 @@
 
 .method static synthetic access$500(Landroid/animation/LayoutTransition;)Landroid/animation/TimeInterpolator;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->mChangingAppearingInterpolator:Landroid/animation/TimeInterpolator;
 
@@ -804,7 +788,6 @@
 
 .method static synthetic access$700(Landroid/animation/LayoutTransition;)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->mChangingDisappearingDelay:J
 
@@ -813,7 +796,6 @@
 
 .method static synthetic access$800(Landroid/animation/LayoutTransition;)J
     .locals 2
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-wide v0, p0, Landroid/animation/LayoutTransition;->mChangingDisappearingStagger:J
 
@@ -822,7 +804,6 @@
 
 .method static synthetic access$900(Landroid/animation/LayoutTransition;)Landroid/animation/TimeInterpolator;
     .locals 1
-    .param p0    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->mChangingDisappearingInterpolator:Landroid/animation/TimeInterpolator;
 
@@ -831,9 +812,6 @@
 
 .method private addChild(Landroid/view/ViewGroup;Landroid/view/View;Z)V
     .locals 7
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
 
     const/4 v6, 0x2
 
@@ -970,9 +948,6 @@
 
 .method private removeChild(Landroid/view/ViewGroup;Landroid/view/View;Z)V
     .locals 7
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
 
     const/16 v6, 0x8
 
@@ -1083,8 +1058,6 @@
 
 .method private runAppearingTransition(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
 
     iget-object v5, p0, Landroid/animation/LayoutTransition;->currentDisappearingAnimations:Ljava/util/LinkedHashMap;
 
@@ -1199,9 +1172,6 @@
 
 .method private runChangeTransition(Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 20
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -1382,8 +1352,6 @@
 
 .method private runDisappearingTransition(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
 
     iget-object v6, p0, Landroid/animation/LayoutTransition;->currentAppearingAnimations:Ljava/util/LinkedHashMap;
 
@@ -1502,11 +1470,6 @@
 
 .method private setupChangeAnimation(Landroid/view/ViewGroup;ILandroid/animation/Animator;JLandroid/view/View;)V
     .locals 12
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Landroid/animation/Animator;
-    .param p4    # J
-    .param p6    # Landroid/view/View;
 
     iget-object v2, p0, Landroid/animation/LayoutTransition;->layoutChangeListenerMap:Ljava/util/HashMap;
 
@@ -1654,8 +1617,6 @@
 # virtual methods
 .method public addChild(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -1666,7 +1627,6 @@
 
 .method public addTransitionListener(Landroid/animation/LayoutTransition$TransitionListener;)V
     .locals 1
-    .param p1    # Landroid/animation/LayoutTransition$TransitionListener;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->mListeners:Ljava/util/ArrayList;
 
@@ -1835,7 +1795,6 @@
 
 .method public cancel(I)V
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2004,7 +1963,6 @@
 
 .method public disableTransitionType(I)V
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2070,7 +2028,6 @@
 
 .method public enableTransitionType(I)V
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2182,7 +2139,6 @@
 
 .method public getAnimator(I)Landroid/animation/Animator;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2228,7 +2184,6 @@
 
 .method public getDuration(I)J
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2276,7 +2231,6 @@
 
 .method public getInterpolator(I)Landroid/animation/TimeInterpolator;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2322,7 +2276,6 @@
 
 .method public getStagger(I)J
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2361,7 +2314,6 @@
 
 .method public getStartDelay(I)J
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2426,8 +2378,6 @@
 
 .method public hideChild(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2440,9 +2390,6 @@
 
 .method public hideChild(Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     const/16 v0, 0x8
 
@@ -2524,7 +2471,6 @@
 
 .method public isTransitionTypeEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2615,7 +2561,6 @@
 
 .method public layoutChange(Landroid/view/ViewGroup;)V
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getWindowVisibility()I
 
@@ -2653,8 +2598,6 @@
 
 .method public removeChild(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -2665,7 +2608,6 @@
 
 .method public removeTransitionListener(Landroid/animation/LayoutTransition$TransitionListener;)V
     .locals 1
-    .param p1    # Landroid/animation/LayoutTransition$TransitionListener;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition;->mListeners:Ljava/util/ArrayList;
 
@@ -2684,7 +2626,6 @@
 
 .method public setAnimateParentHierarchy(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/animation/LayoutTransition;->mAnimateParentHierarchy:Z
 
@@ -2693,8 +2634,6 @@
 
 .method public setAnimator(ILandroid/animation/Animator;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/animation/Animator;
 
     packed-switch p1, :pswitch_data_0
 
@@ -2740,8 +2679,6 @@
 
 .method public setDuration(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     packed-switch p1, :pswitch_data_0
 
@@ -2787,7 +2724,6 @@
 
 .method public setDuration(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/animation/LayoutTransition;->mChangingAppearingDuration:J
 
@@ -2804,8 +2740,6 @@
 
 .method public setInterpolator(ILandroid/animation/TimeInterpolator;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/animation/TimeInterpolator;
 
     packed-switch p1, :pswitch_data_0
 
@@ -2851,8 +2785,6 @@
 
 .method public setStagger(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     packed-switch p1, :pswitch_data_0
 
@@ -2889,8 +2821,6 @@
 
 .method public setStartDelay(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     packed-switch p1, :pswitch_data_0
 
@@ -2936,8 +2866,6 @@
 
 .method public showChild(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2950,9 +2878,6 @@
 
 .method public showChild(Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     const/16 v0, 0x8
 

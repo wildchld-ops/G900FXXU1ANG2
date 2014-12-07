@@ -254,16 +254,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/Session;Landroid/view/IWindow;Lcom/android/server/wm/WindowToken;Lcom/android/server/wm/WindowState;IILandroid/view/WindowManager$LayoutParams;ILcom/android/server/wm/DisplayContent;)V
     .locals 15
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/server/wm/Session;
-    .param p3    # Landroid/view/IWindow;
-    .param p4    # Lcom/android/server/wm/WindowToken;
-    .param p5    # Lcom/android/server/wm/WindowState;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/view/WindowManager$LayoutParams;
-    .param p9    # I
-    .param p10    # Lcom/android/server/wm/DisplayContent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1231,9 +1221,6 @@
 
 .method private static applyInsets(Landroid/graphics/Region;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 5
-    .param p0    # Landroid/graphics/Region;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1266,7 +1253,6 @@
 
 .method private getStackBounds(Lcom/android/server/wm/TaskStack;)Landroid/graphics/Rect;
     .locals 2
-    .param p1    # Lcom/android/server/wm/TaskStack;
 
     if-eqz p1, :cond_0
 
@@ -1371,8 +1357,6 @@
 
 .method private needSetContainingFrameAsStackBounds(ZZ)Z
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/server/wm/WindowState;->isArrangedUpperSideInputMethod()Z
 
@@ -1411,12 +1395,6 @@
 
 .method private reverseFrame(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/graphics/Rect;
 
     new-instance v4, Landroid/graphics/Rect;
 
@@ -1555,7 +1533,6 @@
 
 .method private setToastScaleInfo(Lcom/android/server/wm/WindowState;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v4, 0x1
 
@@ -1800,12 +1777,6 @@
 
 .method public computeFrameLw(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 45
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/graphics/Rect;
 
     const/4 v3, 0x1
 
@@ -4223,7 +4194,6 @@
 
 .method public disableHideSViewCoverOnce(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowState;->mToken:Lcom/android/server/wm/WindowToken;
 
@@ -4265,9 +4235,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/high16 v6, 0x3f800000
 
@@ -5562,7 +5529,6 @@
 
 .method public getNeedsMenuLw(Landroid/view/WindowManagerPolicy$WindowState;)Z
     .locals 6
-    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
 
     const/4 v3, 0x0
 
@@ -5817,7 +5783,6 @@
 
 .method public getTouchableRegion(Landroid/graphics/Region;)V
     .locals 10
-    .param p1    # Landroid/graphics/Region;
 
     const/high16 v9, 0x3f000000
 
@@ -6198,7 +6163,6 @@
 
 .method public hideLw(Z)Z
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -6213,8 +6177,6 @@
 
 .method hideLw(ZZ)Z
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -6227,9 +6189,6 @@
 
 .method public hideLw(ZZZ)Z
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v5, 0x1
 
@@ -6844,8 +6803,6 @@
 
 .method isFullscreen(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -7045,10 +7002,6 @@
 
 .method isIdentityMatrix(FFFF)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const v5, 0x3f800054
 
@@ -7823,7 +7776,6 @@
 
 .method public registerFocusObserver(Landroid/view/IWindowFocusObserver;)V
     .locals 2
-    .param p1    # Landroid/view/IWindowFocusObserver;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowState;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -7915,8 +7867,6 @@
 
 .method public reportFocusChangedSerialized(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     :try_start_0
     iget-object v3, p0, Lcom/android/server/wm/WindowState;->mClient:Landroid/view/IWindow;
@@ -7999,7 +7949,6 @@
 
 .method public setAppOpVisibilityLw(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -8025,7 +7974,6 @@
 
 .method setConfiguration(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iput-object p1, p0, Lcom/android/server/wm/WindowState;->mConfiguration:Landroid/content/res/Configuration;
 
@@ -8038,7 +7986,6 @@
 
 .method setInputChannel(Landroid/view/InputChannel;)V
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowState;->mInputChannel:Landroid/view/InputChannel;
 
@@ -8162,7 +8109,6 @@
 
 .method public setShowToOwnerOnlyLocked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wm/WindowState;->mShowToOwnerOnly:Z
 
@@ -8249,7 +8195,6 @@
 
 .method public showLw(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -8262,8 +8207,6 @@
 
 .method showLw(ZZ)Z
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -8533,7 +8476,6 @@
 
 .method public unregisterFocusObserver(Landroid/view/IWindowFocusObserver;)V
     .locals 2
-    .param p1    # Landroid/view/IWindowFocusObserver;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowState;->mService:Lcom/android/server/wm/WindowManagerService;
 

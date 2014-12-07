@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/impl/HelpContactEditorActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpContactEditorActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/ContactEditorActivity;->mFinishActivityOnSaveCompleted:Z
 
@@ -41,7 +40,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/impl/HelpContactEditorActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpContactEditorActivity;
 
     iget v0, p0, Lcom/samsung/contacts/impl/HelpContactEditorActivity;->mTutorialMode:I
 
@@ -50,8 +48,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/impl/HelpContactEditorActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpContactEditorActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/ContactEditorActivity;->mContactSaveRequested:Z
 
@@ -60,7 +56,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/impl/HelpContactEditorActivity;)[I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/HelpContactEditorActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpContactEditorActivity;->mSaveButtonLocation:[I
 
@@ -69,8 +64,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/impl/HelpContactEditorActivity;[I)[I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/HelpContactEditorActivity;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/HelpContactEditorActivity;->mSaveButtonLocation:[I
 
@@ -113,7 +106,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 

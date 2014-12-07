@@ -67,8 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/LoaderManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/LoaderManager;
 
     const/4 v0, 0x0
 
@@ -89,8 +87,6 @@
 
 .method private checkAutoGroup(Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v11, 0x3
 
@@ -624,10 +620,6 @@
 # virtual methods
 .method protected bindChildView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 15
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Z
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1294,10 +1286,6 @@
 
 .method protected bindGroupView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Z
 
     const/4 v6, 0x0
 
@@ -1520,11 +1508,6 @@
 
 .method public getChildView(IIZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter;->getChild(II)Landroid/database/Cursor;
 
@@ -1569,7 +1552,6 @@
 
 .method protected getChildrenCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 13
-    .param p1    # Landroid/database/Cursor;
 
     if-nez p1, :cond_0
 
@@ -2065,7 +2047,6 @@
 
 .method public getGoogleAccountsInfo(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -2326,10 +2307,6 @@
 
 .method public getGroupView(IZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter;->getGroup(I)Landroid/database/Cursor;
 
@@ -2641,10 +2618,6 @@
 
 .method protected newChildView(Landroid/content/Context;Landroid/database/Cursor;ZLandroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
-    .param p4    # Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -2743,10 +2716,6 @@
 
 .method protected newGroupView(Landroid/content/Context;Landroid/database/Cursor;ZLandroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
-    .param p4    # Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -2845,8 +2814,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2933,7 +2900,6 @@
 
 .method public onGroupCollapsed(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter;->onGroupCollapsed(I)V
 
@@ -2946,7 +2912,6 @@
 
 .method public onGroupExpanded(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/BaseExpandableListAdapter;->onGroupExpanded(I)V
 
@@ -2959,7 +2924,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 4
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3018,8 +2982,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -3075,7 +3037,6 @@
 
 .method public setDefaultIceCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter;->mDefaultIceCount:I
 
@@ -3084,7 +3045,6 @@
 
 .method public setOnGroupSectionActionListener(Lcom/android/contacts/group/GroupBrowseListAdapter$onGroupSectionActionListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/group/GroupBrowseListAdapter$onGroupSectionActionListener;
 
     iput-object p1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter;->mListener:Lcom/android/contacts/group/GroupBrowseListAdapter$onGroupSectionActionListener;
 
@@ -3093,7 +3053,6 @@
 
 .method public setRecreatedInstance(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter;->mShouldInitNotAssignedLoader:Z
 
@@ -3104,7 +3063,6 @@
 
 .method public setSelectedGroup(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iput-object p1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter;->mSelectedGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -3113,7 +3071,6 @@
 
 .method public swapCursor(Landroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter;->mCursor:Landroid/database/Cursor;
 

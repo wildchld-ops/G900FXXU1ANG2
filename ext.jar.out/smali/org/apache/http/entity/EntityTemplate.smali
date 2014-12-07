@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/entity/ContentProducer;)V
     .locals 2
-    .param p1    # Lorg/apache/http/entity/ContentProducer;
 
     invoke-direct {p0}, Lorg/apache/http/entity/AbstractHttpEntity;-><init>()V
 
@@ -81,7 +80,6 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

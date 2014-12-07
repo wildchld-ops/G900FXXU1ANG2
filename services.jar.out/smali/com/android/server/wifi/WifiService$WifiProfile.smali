@@ -72,7 +72,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/wifi/WifiService$WifiProfile;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService$WifiProfile;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService$WifiProfile;->checkNetworkName()V
 
@@ -539,7 +538,6 @@
 
 .method private convertToQuotedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -570,7 +568,6 @@
 
 .method private getGeneralNwInfoFromFile(Ljava/lang/String;)[Lcom/android/server/wifi/WifiService$ApInfo;
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/wifi/WifiService;->DBG:Z
     invoke-static {}, Lcom/android/server/wifi/WifiService;->access$100()Z
@@ -993,7 +990,6 @@
 
 .method private getPrevNetworkNameFromFile(Ljava/lang/String;)[Lcom/android/server/wifi/WifiService$ApInfo;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -1319,7 +1315,6 @@
 
 .method private getVendorApInfoFromFile(Ljava/lang/String;)[Lcom/android/server/wifi/WifiService$ApInfo;
     .locals 33
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/wifi/WifiService;->DBG:Z
     invoke-static {}, Lcom/android/server/wifi/WifiService;->access$100()Z

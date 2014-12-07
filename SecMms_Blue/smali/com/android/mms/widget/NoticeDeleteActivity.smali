@@ -167,7 +167,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/widget/NoticeDeleteActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->mCheckedList:Ljava/util/ArrayList;
 
@@ -176,7 +175,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/widget/NoticeDeleteActivity;)Lcom/android/mms/widget/NoticeDeleteActivity$NoticeAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->mNoticeWidgetAdapter:Lcom/android/mms/widget/NoticeDeleteActivity$NoticeAdapter;
 
@@ -185,7 +183,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/widget/NoticeDeleteActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->mNoticeDeleteList:Ljava/util/ArrayList;
 
@@ -194,7 +191,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/widget/NoticeDeleteActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->mNoticeConversationList:Ljava/util/ArrayList;
 
@@ -203,8 +199,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/widget/NoticeDeleteActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->mNoticeConversationList:Ljava/util/ArrayList;
 
@@ -213,7 +207,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/widget/NoticeDeleteActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
 
     invoke-direct {p0}, Lcom/android/mms/widget/NoticeDeleteActivity;->updateNoticeList()V
 
@@ -222,7 +215,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/widget/NoticeDeleteActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
 
     invoke-direct {p0}, Lcom/android/mms/widget/NoticeDeleteActivity;->updatePriorityNoticeList()V
 
@@ -231,7 +223,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/widget/NoticeDeleteActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->mAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -240,8 +231,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/widget/NoticeDeleteActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/widget/NoticeDeleteActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->selectAllUserUnchecked:Z
 
@@ -250,8 +239,6 @@
 
 .method private formatMessage(Landroid/database/Cursor;Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Lcom/android/mms/data/ContactList;
 
     const-string v2, ", "
 
@@ -401,7 +388,6 @@
 
 .method private isCmas(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x64
 
@@ -1066,8 +1052,6 @@
 
 .method private updateAvatar(Landroid/database/Cursor;Lcom/android/mms/data/ContactList;)[B
     .locals 8
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Lcom/android/mms/data/ContactList;
 
     const v7, 0x7f020269
 
@@ -1538,7 +1522,6 @@
 # virtual methods
 .method public bitmapToByteArray(Landroid/graphics/Bitmap;)[B
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_0
 
@@ -1567,7 +1550,6 @@
 
 .method public byteArrayToBitmap([B)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # [B
 
     if-nez p1, :cond_0
 
@@ -1590,7 +1572,6 @@
 
 .method public getSpeedDialDefaultImage(J)I
     .locals 3
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeDeleteActivity;->SPEEDDIAL_DEFAULT_IMAGES:[I
 
@@ -1611,8 +1592,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 5
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -1794,7 +1773,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1829,7 +1807,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x2
 
@@ -2013,7 +1990,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x0
 
@@ -2089,7 +2065,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -2202,7 +2177,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2217,7 +2191,6 @@
 
 .method public processCancelButton(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/mms/widget/NoticeDeleteActivity;->finish()V
 
@@ -2226,7 +2199,6 @@
 
 .method public processDoneButton(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -2287,7 +2259,6 @@
 
 .method public processPriorityDoneButton(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 

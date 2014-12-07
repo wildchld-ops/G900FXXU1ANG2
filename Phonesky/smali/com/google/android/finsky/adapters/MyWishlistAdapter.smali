@@ -19,13 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/api/model/BucketedList;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p5    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p6    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -83,7 +76,6 @@
 # virtual methods
 .method protected isDismissed(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/MyWishlistAdapter;->mDismissedDocIds:Ljava/util/Set;
 
@@ -112,9 +104,6 @@
 
 .method public onWishlistStatusChanged(Ljava/lang/String;ZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     if-nez p3, :cond_0
 

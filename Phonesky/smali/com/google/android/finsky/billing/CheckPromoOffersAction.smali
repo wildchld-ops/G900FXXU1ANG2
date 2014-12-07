@@ -30,8 +30,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/activities/MainActivity;Lcom/google/android/finsky/api/DfeApi;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/MainActivity;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/CheckPromoOffersAction;)Landroid/accounts/Account;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/CheckPromoOffersAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/CheckPromoOffersAction;->mAccount:Landroid/accounts/Account;
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/CheckPromoOffersAction;)Lcom/google/android/finsky/activities/MainActivity;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/CheckPromoOffersAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/CheckPromoOffersAction;->mActivity:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -72,7 +68,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/google/android/finsky/billing/CheckPromoOffersAction;->sRunning:Z
 
@@ -81,7 +76,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/CheckPromoOffersAction;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/CheckPromoOffersAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/CheckPromoOffersAction;->mCallback:Ljava/lang/Runnable;
 
@@ -110,7 +104,6 @@
 # virtual methods
 .method public run(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/CheckPromoOffersAction;->mCallback:Ljava/lang/Runnable;
 

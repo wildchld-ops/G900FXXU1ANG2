@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     const/4 v1, 0x0
 
@@ -83,7 +82,6 @@
 # virtual methods
 .method protected bridge synthetic checkAndSet(Z)Lcom/android/incallui/BaseFragment;
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/EndCallButtonFragmentManager;->checkAndSet(Z)Lcom/android/incallui/EndCallButtonFragment;
 
@@ -94,7 +92,6 @@
 
 .method protected checkAndSet(Z)Lcom/android/incallui/EndCallButtonFragment;
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -422,7 +419,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -437,7 +433,6 @@
 
 .method public onCoverStatusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/EndCallButtonFragmentManager;->mIsCoverClosed:Z
 
@@ -476,15 +471,12 @@
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v0, 0x0
 
@@ -495,7 +487,6 @@
 
 .method protected bridge synthetic setCurrentFragment(Lcom/android/incallui/BaseFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/BaseFragment;
 
     check-cast p1, Lcom/android/incallui/EndCallButtonFragment;
 
@@ -506,7 +497,6 @@
 
 .method protected setCurrentFragment(Lcom/android/incallui/EndCallButtonFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/EndCallButtonFragment;
 
     iput-object p1, p0, Lcom/android/incallui/EndCallButtonFragmentManager;->currentFragment:Lcom/android/incallui/EndCallButtonFragment;
 
@@ -515,8 +505,6 @@
 
 .method protected setFragment(Ljava/lang/Enum;Z)V
     .locals 4
-    .param p1    # Ljava/lang/Enum;
-    .param p2    # Z
 
     const v0, 0x7f08012b
 

@@ -40,8 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/AccessibleLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -50,8 +48,6 @@
 
 .method private configureContentDescription(Lcom/google/android/finsky/api/model/Document;Z)V
     .locals 18
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Z
 
     invoke-virtual/range {p1 .. p1}, Lcom/google/android/finsky/api/model/Document;->hasRating()Z
 
@@ -571,7 +567,6 @@
 
 .method private configureItemTextInfo(Lcom/google/android/finsky/api/model/Document;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v0, 0x0
 
@@ -629,7 +624,6 @@
 
 .method private configureRating(Lcom/google/android/finsky/api/model/Document;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v8, 0x4
 
@@ -716,7 +710,6 @@
 
 .method private isIABSupported(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getAppDetails()Lcom/google/android/finsky/protos/DocDetails$AppDetails;
 
@@ -743,7 +736,6 @@
 # virtual methods
 .method protected configureAlbumDetailsByline(Lcom/google/android/finsky/api/model/Document;)V
     .locals 17
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual/range {p1 .. p1}, Lcom/google/android/finsky/api/model/Document;->getAlbumDetails()Lcom/google/android/finsky/protos/DocDetails$AlbumDetails;
 
@@ -1021,8 +1013,6 @@
 
 .method protected configureAppDetailsByline(Lcom/google/android/finsky/api/model/Document;Z)V
     .locals 14
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Z
 
     const-string v8, ""
 
@@ -1192,7 +1182,6 @@
 
 .method protected configureBookDetailsByline(Lcom/google/android/finsky/api/model/Document;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/16 v8, 0x15
 
@@ -1353,7 +1342,6 @@
 
 .method protected configureMagazineDetailsByline(Lcom/google/android/finsky/api/model/Document;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const v6, 0x7f040055
 
@@ -1428,7 +1416,6 @@
 
 .method protected configureMovieDetailsByline(Lcom/google/android/finsky/api/model/Document;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/16 v11, 0x15
 
@@ -1561,7 +1548,6 @@
 
 .method public setDocument(Lcom/google/android/finsky/api/model/Document;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const v2, 0x7f040054
 

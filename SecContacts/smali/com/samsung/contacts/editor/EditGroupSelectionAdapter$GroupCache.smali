@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/editor/EditGroupSelectionAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/editor/EditGroupSelectionAdapter$1;
 
     invoke-direct {p0}, Lcom/samsung/contacts/editor/EditGroupSelectionAdapter$GroupCache;-><init>()V
 

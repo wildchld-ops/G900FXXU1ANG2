@@ -33,9 +33,6 @@
 # virtual methods
 .method public onDownloadStatusResponse(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     if-ltz p2, :cond_1
 
@@ -113,7 +110,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction$3;->this$1:Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
 
@@ -125,7 +121,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction$3;->this$1:Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
 

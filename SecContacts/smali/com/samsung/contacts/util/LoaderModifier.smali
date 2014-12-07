@@ -32,8 +32,6 @@
 
 .method public static configureForWritableContactExcludingSim(Landroid/content/Context;Ljava/lang/StringBuilder;Ljava/util/List;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -168,7 +166,6 @@
 
 .method public static setFakeQueryParameter(Landroid/content/CursorLoader;)V
     .locals 3
-    .param p0    # Landroid/content/CursorLoader;
 
     invoke-virtual {p0}, Landroid/content/CursorLoader;->getUri()Landroid/net/Uri;
 

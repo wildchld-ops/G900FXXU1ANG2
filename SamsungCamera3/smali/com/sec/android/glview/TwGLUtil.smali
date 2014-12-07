@@ -46,7 +46,6 @@
 
 .method public static Assert(Z)V
     .locals 1
-    .param p0    # Z
 
     if-nez p0, :cond_0
 
@@ -62,8 +61,6 @@
 
 .method public static final calculateSampleSize(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     if-lt p0, p1, :cond_0
 
@@ -107,9 +104,6 @@
 
 .method public static clamp(III)I
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-le p0, p2, :cond_0
 
@@ -131,7 +125,6 @@
 
 .method public static closeSilently(Ljava/io/Closeable;)V
     .locals 1
-    .param p0    # Ljava/io/Closeable;
 
     if-nez p0, :cond_0
 
@@ -154,10 +147,6 @@
 
 .method public static distance(FFFF)F
     .locals 4
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     sub-float v0, p0, p2
 
@@ -182,8 +171,6 @@
 
 .method public static equals(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-eq p0, p1, :cond_2
 
@@ -210,8 +197,6 @@
 
 .method public static floatEquals(DD)Z
     .locals 4
-    .param p0    # D
-    .param p2    # D
 
     sub-double v0, p0, p2
 
@@ -274,7 +259,6 @@
 
 .method public static getAlphaOnAnimation(F)Landroid/view/animation/Animation;
     .locals 3
-    .param p0    # F
 
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
@@ -291,7 +275,6 @@
 
 .method public static getBlinkAnimation(Z)Landroid/view/animation/Animation;
     .locals 3
-    .param p0    # Z
 
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
@@ -321,7 +304,6 @@
 
 .method public static getByteBufferFromByteArray([B)Ljava/nio/ByteBuffer;
     .locals 2
-    .param p0    # [B
 
     array-length v1, p0
 
@@ -340,10 +322,6 @@
 
 .method public static getExpandAnimation(Landroid/view/View;IIZ)Landroid/view/animation/Animation;
     .locals 10
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v9, Landroid/view/animation/AnimationSet;
 
@@ -824,10 +802,6 @@
 
 .method public static getExpandAnimation(Lcom/sec/android/glview/TwGLView;IIZ)Landroid/view/animation/Animation;
     .locals 10
-    .param p0    # Lcom/sec/android/glview/TwGLView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v9, Landroid/view/animation/AnimationSet;
 
@@ -1330,9 +1304,6 @@
 
 .method public static getFadeAnimation(Landroid/view/View;IZ)Landroid/view/animation/Animation;
     .locals 11
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v9, Landroid/view/animation/AnimationSet;
 
@@ -1540,9 +1511,6 @@
 
 .method public static getFadeAnimation(Lcom/sec/android/glview/TwGLView;IZ)Landroid/view/animation/Animation;
     .locals 12
-    .param p0    # Lcom/sec/android/glview/TwGLView;
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v9, Landroid/view/animation/AnimationSet;
 
@@ -1758,7 +1726,6 @@
 
 .method public static getFloatBufferFromFloatArray([F)Ljava/nio/FloatBuffer;
     .locals 3
-    .param p0    # [F
 
     array-length v2, p0
 
@@ -1789,10 +1756,6 @@
 
 .method public static getGLCoordinateFromScreenCoordinate(Lcom/sec/android/glview/TwGLContext;[FFF)V
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
-    .param p1    # [F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -1807,23 +1770,18 @@
 
 .method public static getGLDistanceFromScreenDistanceX(Lcom/sec/android/glview/TwGLContext;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
-    .param p1    # F
 
     return p1
 .end method
 
 .method public static getGLDistanceFromScreenDistanceY(Lcom/sec/android/glview/TwGLContext;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
-    .param p1    # F
 
     return p1
 .end method
 
 .method public static getGLOrientationByDisplayOrientation(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1861,7 +1819,6 @@
 
 .method public static final getGLOrientationBySystemOrientation(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -1914,10 +1871,6 @@
 
 .method public static getScreenCoordinateFromGLCoordinate(Lcom/sec/android/glview/TwGLContext;[FFF)V
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
-    .param p1    # [F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -1932,25 +1885,18 @@
 
 .method public static getScreenDistanceFromGLDistanceX(Lcom/sec/android/glview/TwGLContext;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
-    .param p1    # F
 
     return p1
 .end method
 
 .method public static getScreenDistanceFromGLDistanceY(Lcom/sec/android/glview/TwGLContext;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
-    .param p1    # F
 
     return p1
 .end method
 
 .method public static getSlideInAnimation(Landroid/view/View;IZ)Landroid/view/animation/Animation;
     .locals 9
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Z
 
     const-wide/16 v7, 0x12c
 
@@ -2089,9 +2035,6 @@
 
 .method public static getSlideInAnimation(Lcom/sec/android/glview/TwGLView;IZ)Landroid/view/animation/Animation;
     .locals 9
-    .param p0    # Lcom/sec/android/glview/TwGLView;
-    .param p1    # I
-    .param p2    # Z
 
     const-wide/16 v7, 0x12c
 
@@ -2234,9 +2177,6 @@
 
 .method public static getSlideOutAnimation(Landroid/view/View;IZ)Landroid/view/animation/Animation;
     .locals 9
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Z
 
     const-wide/16 v7, 0x12c
 
@@ -2375,9 +2315,6 @@
 
 .method public static getSlideOutAnimation(Lcom/sec/android/glview/TwGLView;IZ)Landroid/view/animation/Animation;
     .locals 9
-    .param p0    # Lcom/sec/android/glview/TwGLView;
-    .param p1    # I
-    .param p2    # Z
 
     const-wide/16 v7, 0x12c
 
@@ -2559,7 +2496,6 @@
 
 .method public static isPowerOf2(I)Z
     .locals 1
-    .param p0    # I
 
     neg-int v0, p0
 
@@ -2580,7 +2516,6 @@
 
 .method public static nextPowerOf2(I)I
     .locals 1
-    .param p0    # I
 
     add-int/lit8 p0, p0, -0x1
 
@@ -2611,8 +2546,6 @@
 
 .method public static rotate(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 8
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
 
     const/high16 v3, 0x40000000
 
@@ -2685,7 +2618,6 @@
 
 .method public static roundOrientation(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/android/glview/TwGLContext;->getLastOrientation()I
 
@@ -2771,7 +2703,6 @@
 
 .method public static toGLMatrix([F)[F
     .locals 7
-    .param p0    # [F
 
     const/4 v6, 0x5
 

@@ -89,8 +89,6 @@
 
 .method public handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
     .locals 10
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     const/4 v8, 0x1
 

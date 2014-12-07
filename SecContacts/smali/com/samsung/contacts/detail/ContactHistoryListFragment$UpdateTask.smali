@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)V
     .locals 1
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -59,7 +58,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -72,7 +70,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 17
-    .param p1    # [Ljava/lang/Void;
 
     move-object/from16 v0, p0
 

@@ -57,8 +57,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/sim/SIMManagementDialogFragment;I)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/sim/SIMManagementDialogFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/sim/SIMManagementDialogFragment;->handleImportRequest(I)Z
 
@@ -69,7 +67,6 @@
 
 .method private handleImportRequest(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -142,7 +139,6 @@
 
 .method public static show(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     new-instance v0, Lcom/samsung/contacts/sim/SIMManagementDialogFragment;
 
@@ -159,8 +155,6 @@
 # virtual methods
 .method public onAccountChosen(Lcom/android/contacts/common/model/account/AccountWithDataSet;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -189,7 +183,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 

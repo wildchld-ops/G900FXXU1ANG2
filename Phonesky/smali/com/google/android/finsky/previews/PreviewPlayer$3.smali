@@ -46,7 +46,6 @@
 # virtual methods
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lorg/json/JSONObject;
 
@@ -57,7 +56,6 @@
 
 .method public onResponse(Lorg/json/JSONObject;)V
     .locals 7
-    .param p1    # Lorg/json/JSONObject;
 
     const/4 v6, 0x1
 

@@ -78,7 +78,6 @@
 
 .method public static checkMultiWindowFeature(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v2, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->sQueriedTypeMultiWindow:Z
 
@@ -353,7 +352,6 @@
 
 .method public static isSupportCommonUI(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -364,7 +362,6 @@
 
 .method public static isSupportFixedSplitView(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -375,7 +372,6 @@
 
 .method public static isSupportFreeStyle(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -386,7 +382,6 @@
 
 .method public static isSupportFreeStyleDocking(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -397,7 +392,6 @@
 
 .method public static isSupportFreeStyleLaunch(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -408,7 +402,6 @@
 
 .method public static isSupportMinimize(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -419,7 +412,6 @@
 
 .method public static isSupportMultiInstance(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -430,7 +422,6 @@
 
 .method public static isSupportMultiWindow(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -441,7 +432,6 @@
 
 .method public static isSupportMultiWindowLaunch(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -452,7 +442,6 @@
 
 .method public static isSupportQuadView(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -463,7 +452,6 @@
 
 .method public static isSupportScaleWindow(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -474,7 +462,6 @@
 
 .method public static isSupportSplitFullScreen(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/android/multiwindow/MultiWindowFeatures;->checkMultiWindowFeature(Landroid/content/Context;)V
 

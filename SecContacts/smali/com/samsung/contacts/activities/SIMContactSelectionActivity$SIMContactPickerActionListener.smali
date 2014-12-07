@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Lcom/samsung/contacts/activities/SIMContactSelectionActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p2    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/activities/SIMContactSelectionActivity$SIMContactPickerActionListener;-><init>(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)V
 
@@ -57,8 +55,6 @@
 # virtual methods
 .method public deleteAfterWarningDialog(Landroid/content/Context;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity$SIMContactPickerActionListener;->this$0:Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
@@ -131,8 +127,6 @@
 
 .method public exportAfterWarningDialog(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -173,8 +167,6 @@
 
 .method public exportAfterWarningDialog(Landroid/content/Context;Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1155,8 +1147,6 @@
 
 .method public onInteractionSelectionChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity$SIMContactPickerActionListener;->this$0:Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
@@ -1222,9 +1212,6 @@
 
 .method public showAlertDialog(Landroid/content/Context;II)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 

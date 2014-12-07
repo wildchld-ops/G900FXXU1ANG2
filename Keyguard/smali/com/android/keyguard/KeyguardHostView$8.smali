@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAddView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$8;->this$0:Lcom/android/keyguard/KeyguardHostView;
 
@@ -64,8 +63,6 @@
 
 .method public onRemoveView(Landroid/view/View;Z)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 

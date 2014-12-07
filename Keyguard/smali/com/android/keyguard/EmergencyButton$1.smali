@@ -33,7 +33,6 @@
 # virtual methods
 .method onPhoneStateChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/keyguard/EmergencyButton$1;->this$0:Lcom/android/keyguard/EmergencyButton;
 
@@ -60,7 +59,6 @@
 
 .method public onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;)V
     .locals 2
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     iget-object v1, p0, Lcom/android/keyguard/EmergencyButton$1;->this$0:Lcom/android/keyguard/EmergencyButton;
 

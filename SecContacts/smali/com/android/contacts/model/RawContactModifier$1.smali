@@ -30,8 +30,6 @@
 # virtual methods
 .method public insertChildImpl(Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/dataitem/DataKind;)Lcom/android/contacts/common/model/ValuesDelta;
     .locals 1
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
-    .param p2    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     invoke-static {p1, p2}, Lcom/android/contacts/model/RawContactModifier;->insertChild(Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/dataitem/DataKind;)Lcom/android/contacts/common/model/ValuesDelta;
 

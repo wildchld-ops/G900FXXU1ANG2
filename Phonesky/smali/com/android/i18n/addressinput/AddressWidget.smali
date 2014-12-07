@@ -377,10 +377,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/layout/AddressFieldsLayout;Lcom/android/i18n/addressinput/FormOptions;Lcom/android/i18n/addressinput/ClientCacheManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/layout/AddressFieldsLayout;
-    .param p3    # Lcom/android/i18n/addressinput/FormOptions;
-    .param p4    # Lcom/android/i18n/addressinput/ClientCacheManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -425,11 +421,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/layout/AddressFieldsLayout;Lcom/android/i18n/addressinput/FormOptions;Lcom/android/i18n/addressinput/ClientCacheManager;Lcom/android/i18n/addressinput/AddressData;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/layout/AddressFieldsLayout;
-    .param p3    # Lcom/android/i18n/addressinput/FormOptions;
-    .param p4    # Lcom/android/i18n/addressinput/ClientCacheManager;
-    .param p5    # Lcom/android/i18n/addressinput/AddressData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -489,11 +480,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/layout/AddressFieldsLayout;Lcom/android/i18n/addressinput/FormOptions;Lcom/android/i18n/addressinput/ClientCacheManager;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/layout/AddressFieldsLayout;
-    .param p3    # Lcom/android/i18n/addressinput/FormOptions;
-    .param p4    # Lcom/android/i18n/addressinput/ClientCacheManager;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -549,7 +535,6 @@
 
 .method static synthetic access$000(Lcom/android/i18n/addressinput/AddressWidget;)V
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/AddressWidget;
 
     invoke-direct {p0}, Lcom/android/i18n/addressinput/AddressWidget;->updateFields()V
 
@@ -558,8 +543,6 @@
 
 .method static synthetic access$100(Lcom/android/i18n/addressinput/AddressWidget;Lcom/android/i18n/addressinput/AddressField;)V
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/AddressWidget;
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/AddressWidget;->updateInputWidget(Lcom/android/i18n/addressinput/AddressField;)V
 
@@ -800,11 +783,6 @@
 
 .method private createView(Lcom/google/android/finsky/layout/AddressFieldsLayout;Lcom/android/i18n/addressinput/AddressUIComponent;Ljava/lang/String;ZZ)Landroid/view/View;
     .locals 8
-    .param p1    # Lcom/google/android/finsky/layout/AddressFieldsLayout;
-    .param p2    # Lcom/android/i18n/addressinput/AddressUIComponent;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v5, 0x0
 
@@ -1012,7 +990,6 @@
 
 .method private findSpinnerByView(Landroid/view/View;)Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/i18n/addressinput/AddressWidget;->mSpinners:Ljava/util/ArrayList;
 
@@ -1051,7 +1028,6 @@
 
 .method private getAdminAreaFieldName(Lcom/android/i18n/addressinput/AddressVerificationNodeData;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/i18n/addressinput/AddressVerificationNodeData;
 
     sget-object v2, Lcom/android/i18n/addressinput/AddressDataKey;->STATE_NAME_TYPE:Lcom/android/i18n/addressinput/AddressDataKey;
 
@@ -1093,7 +1069,6 @@
 
 .method private static getDefaultRegionCode(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "US"
 
@@ -1137,7 +1112,6 @@
 
 .method private getErrorMessageIdForInvalidEntryIn(Lcom/android/i18n/addressinput/AddressField;)I
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     sget-object v0, Lcom/android/i18n/addressinput/AddressWidget$4;->$SwitchMap$com$android$i18n$addressinput$AddressField:[I
 
@@ -1208,8 +1182,6 @@
 
 .method public static getFullEnvelopeAddress(Lcom/android/i18n/addressinput/AddressData;Landroid/content/Context;)Ljava/util/List;
     .locals 2
-    .param p0    # Lcom/android/i18n/addressinput/AddressData;
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1242,7 +1214,6 @@
 
 .method private getRegionData(Lcom/android/i18n/addressinput/AddressField;)Ljava/util/List;
     .locals 6
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1444,7 +1415,6 @@
 
 .method private getZipFieldName(Lcom/android/i18n/addressinput/AddressVerificationNodeData;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/i18n/addressinput/AddressVerificationNodeData;
 
     sget-object v2, Lcom/android/i18n/addressinput/AddressDataKey;->ZIP_NAME_TYPE:Lcom/android/i18n/addressinput/AddressDataKey;
 
@@ -1487,10 +1457,6 @@
 
 .method private init(Landroid/content/Context;Lcom/google/android/finsky/layout/AddressFieldsLayout;Lcom/android/i18n/addressinput/FormOptions;Lcom/android/i18n/addressinput/ClientCacheManager;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/layout/AddressFieldsLayout;
-    .param p3    # Lcom/android/i18n/addressinput/FormOptions;
-    .param p4    # Lcom/android/i18n/addressinput/ClientCacheManager;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/AddressWidget;->mContext:Landroid/content/Context;
 
@@ -1601,8 +1567,6 @@
 
 .method private initializeFieldsWithAddress(Lcom/android/i18n/addressinput/AddressData;Z)V
     .locals 9
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
-    .param p2    # Z
 
     iget-object v6, p0, Lcom/android/i18n/addressinput/AddressWidget;->mFormatInterpreter:Lcom/android/i18n/addressinput/FormatInterpreter;
 
@@ -1695,7 +1659,6 @@
 
 .method public static isValidRegionCode(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/i18n/addressinput/RegionDataConstants;->getCountryFormatMap()Ljava/util/Map;
 
@@ -1920,7 +1883,6 @@
 
 .method private updateChildNodes(Landroid/widget/AdapterView;I)V
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2007,7 +1969,6 @@
 
 .method private updateInputWidget(Lcom/android/i18n/addressinput/AddressField;)V
     .locals 4
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v3, p0, Lcom/android/i18n/addressinput/AddressWidget;->mSpinners:Ljava/util/ArrayList;
 
@@ -2126,7 +2087,6 @@
 
 .method public displayErrorMessageForInvalidEntryIn(Lcom/android/i18n/addressinput/AddressField;)Landroid/widget/TextView;
     .locals 5
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v3, p0, Lcom/android/i18n/addressinput/AddressWidget;->mInputWidgets:Ljava/util/EnumMap;
 
@@ -2334,7 +2294,6 @@
 
 .method public getNameForField(Lcom/android/i18n/addressinput/AddressField;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v1, p0, Lcom/android/i18n/addressinput/AddressWidget;->mInputWidgets:Ljava/util/EnumMap;
 
@@ -2361,7 +2320,6 @@
 
 .method public getViewForField(Lcom/android/i18n/addressinput/AddressField;)Landroid/view/View;
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v1, p0, Lcom/android/i18n/addressinput/AddressWidget;->mInputWidgets:Ljava/util/EnumMap;
 
@@ -2398,9 +2356,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2471,7 +2426,6 @@
 
 .method public renderFormWithSavedAddress(Lcom/android/i18n/addressinput/AddressData;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/AddressWidget;->mSavedAddress:Lcom/android/i18n/addressinput/AddressData;
 
@@ -2486,7 +2440,6 @@
 
 .method public restoreInstanceState(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const-string v7, "address_data"
 
@@ -2572,7 +2525,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const-string v5, "address_data"
 
@@ -2647,7 +2599,6 @@
 
 .method public setAddressFromSuggestion(Lcom/android/i18n/addressinput/AddressData;)V
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
 
     sget-object v2, Lcom/android/i18n/addressinput/AddressField;->ADDRESS_LINE_1:Lcom/android/i18n/addressinput/AddressField;
 
@@ -2696,7 +2647,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/i18n/addressinput/AddressWidget;->mInputWidgets:Ljava/util/EnumMap;
 
@@ -2742,7 +2692,6 @@
 
 .method public setFormOptions(Lcom/android/i18n/addressinput/FormOptions;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/FormOptions;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/AddressWidget;->mFormOptions:Lcom/android/i18n/addressinput/FormOptions;
 
@@ -2751,7 +2700,6 @@
 
 .method public setSuggestionProvider(Lcom/google/android/finsky/layout/AddressSuggestionProvider;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/AddressSuggestionProvider;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/AddressWidget;->mSuggestionProvider:Lcom/google/android/finsky/layout/AddressSuggestionProvider;
 
@@ -2789,7 +2737,6 @@
 
 .method public updateWidgetOnCountryChange(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/AddressWidget;->mCurrentRegion:Ljava/lang/String;
 

@@ -35,7 +35,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -46,8 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -58,9 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/play/layout/AccessibleRelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -83,7 +77,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 2
-    .param p1    # I
 
     add-int/lit8 v1, p1, 0x1
 
@@ -105,7 +98,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/CheckedRelativeLayout;->mChecked:Z
 

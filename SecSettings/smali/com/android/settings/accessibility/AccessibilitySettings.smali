@@ -226,7 +226,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/AccessibilitySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettings;->updateLockScreenRotationCheckbox()V
 
@@ -235,7 +234,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mToggleAutoRotateScreen2ndPreference:Landroid/preference/CheckBoxPreference;
 
@@ -244,7 +242,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -255,7 +252,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -266,7 +262,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mDirectAccess:Landroid/preference/SwitchPreferenceScreen;
 
@@ -275,7 +270,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -286,7 +280,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mNotificationReminder:Landroid/preference/SwitchPreferenceScreen;
 
@@ -295,7 +288,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -306,7 +298,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -317,7 +308,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/accessibility/AccessibilitySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1851,7 +1841,6 @@
 # virtual methods
 .method public isPackageExists(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1925,7 +1914,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1955,9 +1943,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1966,7 +1951,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mCurConfig:Landroid/content/res/Configuration;
@@ -2002,7 +1986,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -2357,8 +2340,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -2394,7 +2375,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 7
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x1
 
@@ -2579,8 +2559,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -2691,7 +2669,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     const-string v0, "AccessibilitySettings"
 

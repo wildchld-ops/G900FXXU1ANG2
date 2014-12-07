@@ -36,7 +36,6 @@
 # virtual methods
 .method public locationUpdated(Lcom/nbi/location/Location;)V
     .locals 3
-    .param p1    # Lcom/nbi/location/Location;
 
     iget-object v2, p0, Lcom/samsung/mms/location/LBSManager$2;->this$0:Lcom/samsung/mms/location/LBSManager;
 
@@ -107,7 +106,6 @@
 
 .method public onLocationError(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/samsung/mms/location/LBSManager$2;->this$0:Lcom/samsung/mms/location/LBSManager;
 
@@ -152,7 +150,6 @@
 
 .method public providerStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/samsung/mms/location/LBSManager$2;->this$0:Lcom/samsung/mms/location/LBSManager;
 

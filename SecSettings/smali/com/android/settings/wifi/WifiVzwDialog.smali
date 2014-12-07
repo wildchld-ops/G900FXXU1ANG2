@@ -187,10 +187,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/settings/wifi/AccessPoint;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Lcom/android/settings/wifi/AccessPoint;
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -299,11 +295,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/settings/wifi/AccessPoint;ZZ)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Lcom/android/settings/wifi/AccessPoint;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v3, 0x1
 
@@ -422,7 +413,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiVzwDialog;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiVzwDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiVzwDialog;->sToast:Landroid/widget/Toast;
 
@@ -431,8 +421,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/WifiVzwDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiVzwDialog;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiVzwDialog;->sToast:Landroid/widget/Toast;
 
@@ -441,7 +429,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiVzwDialog;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiVzwDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiVzwDialog;->pToast:Landroid/widget/Toast;
 
@@ -450,8 +437,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/WifiVzwDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiVzwDialog;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiVzwDialog;->pToast:Landroid/widget/Toast;
 
@@ -460,7 +445,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiVzwDialog;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiVzwDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiVzwDialog;->mTextViewChangedHandler:Landroid/os/Handler;
 
@@ -469,9 +453,6 @@
 
 .method private addRow(Landroid/view/ViewGroup;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/WifiVzwDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
@@ -1143,8 +1124,6 @@
 
 .method private setSelection(Landroid/widget/Spinner;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/widget/Spinner;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -3682,7 +3661,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiVzwDialog;->mTextViewChangedHandler:Landroid/os/Handler;
 
@@ -3697,10 +3675,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -5101,7 +5075,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 27
-    .param p1    # Landroid/os/Bundle;
 
     const-string v23, "WifiVzwDialog"
 
@@ -8037,10 +8010,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 1
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiVzwDialog;->mSecuritySpinner:Landroid/widget/Spinner;
 
@@ -8083,17 +8052,12 @@
 
 .method public onNothingSelected(Landroid/widget/AdapterView;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView;
 
     return-void
 .end method
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

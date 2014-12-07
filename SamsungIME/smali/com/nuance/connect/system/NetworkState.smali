@@ -82,8 +82,6 @@
 
 .method public constructor <init>(Landroid/net/NetworkInfo;J)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,9 +122,6 @@
 
 .method private static isValidConnection(IZLcom/nuance/connect/system/NetworkState$NetworkConfiguration;)Z
     .locals 2
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     const/4 v0, 0x0
 
@@ -206,8 +201,6 @@
 
 .method public static isValidConnection(Landroid/net/NetworkInfo;Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)Z
     .locals 3
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     const/4 v0, 0x0
 
@@ -259,7 +252,6 @@
 
 .method public hasConnectivity(Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)Z
     .locals 2
-    .param p1    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     iget-boolean v0, p0, Lcom/nuance/connect/system/NetworkState;->hasConnectivity:Z
 
@@ -304,7 +296,6 @@
 
 .method public isSame(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -376,7 +367,6 @@
 
 .method public isStableConnection(Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)Z
     .locals 5
-    .param p1    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/system/NetworkState;->hasConnectivity(Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)Z
 

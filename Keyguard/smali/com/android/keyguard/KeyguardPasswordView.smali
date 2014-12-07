@@ -19,7 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -30,8 +29,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/KeyguardAbsKeyInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -56,7 +53,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardPasswordView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardPasswordView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardPasswordView;->mShowImeAtScreenOn:Z
 
@@ -65,8 +61,6 @@
 
 .method private hasMultipleEnabledIMEsOrSubtypes(Landroid/view/inputmethod/InputMethodManager;Z)Z
     .locals 12
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -374,7 +368,6 @@
 
 .method public onResume(I)V
     .locals 5
-    .param p1    # I
 
     const-string v1, "kjh"
 
@@ -433,7 +426,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->onWindowFocusChanged(Z)V
 
@@ -481,7 +473,6 @@
 
 .method public showBouncer(I)V
     .locals 3
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->showBouncer(I)V
 

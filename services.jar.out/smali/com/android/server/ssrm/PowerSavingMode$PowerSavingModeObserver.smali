@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/PowerSavingMode;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/ssrm/PowerSavingMode$PowerSavingModeObserver;->this$0:Lcom/android/server/ssrm/PowerSavingMode;
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/ssrm/PowerSavingMode$PowerSavingModeObserver;->this$0:Lcom/android/server/ssrm/PowerSavingMode;
 
@@ -53,7 +51,6 @@
 
 .method registerUriByName(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/PowerSavingMode$PowerSavingModeObserver;->mContext:Landroid/content/Context;
 

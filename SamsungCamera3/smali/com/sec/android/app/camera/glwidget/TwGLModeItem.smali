@@ -226,14 +226,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;I)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
-    .param p7    # Lcom/sec/android/app/camera/command/MenuCommand;
-    .param p8    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -318,7 +310,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
 
     const/4 v6, 0x0
 
@@ -395,7 +386,6 @@
 
 .method private initContent(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -1100,8 +1090,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->mMenuId:I
 
@@ -1129,7 +1117,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 
@@ -1207,8 +1194,6 @@
 
 .method public onFocusChanged(Lcom/sec/android/glview/TwGLView;I)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -1231,8 +1216,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1306,7 +1289,6 @@
 
 .method public setDraggable(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setDraggable(Z)V
 
@@ -1333,7 +1315,6 @@
 
 .method public setHighlightImage(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1370,10 +1351,6 @@
 
 .method public setMargin(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->mButton:Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;
 
@@ -1458,7 +1435,6 @@
 
 .method public setModeItemSubTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->mButton:Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;
 
@@ -1469,7 +1445,6 @@
 
 .method public setMute(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->mButton:Lcom/sec/android/app/camera/glwidget/TwGLModeItemButton;
 
@@ -1485,7 +1460,6 @@
 
 .method public setNextFocusDownView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->getButton()Lcom/sec/android/glview/TwGLView;
 
@@ -1500,7 +1474,6 @@
 
 .method public setNextFocusLeftView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->getButton()Lcom/sec/android/glview/TwGLView;
 
@@ -1515,7 +1488,6 @@
 
 .method public setNextFocusRightView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->getButton()Lcom/sec/android/glview/TwGLView;
 
@@ -1530,7 +1502,6 @@
 
 .method public setNextFocusUpView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->getButton()Lcom/sec/android/glview/TwGLView;
 
@@ -1545,7 +1516,6 @@
 
 .method public setOnSelectListener(Lcom/sec/android/app/camera/glwidget/TwGLModeItem$OnSelectListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLModeItem$OnSelectListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeItem;->mOnSelectListener:Lcom/sec/android/app/camera/glwidget/TwGLModeItem$OnSelectListener;
 
@@ -1554,7 +1524,6 @@
 
 .method public setOnTouchListener(Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -1565,7 +1534,6 @@
 
 .method public setSelect(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

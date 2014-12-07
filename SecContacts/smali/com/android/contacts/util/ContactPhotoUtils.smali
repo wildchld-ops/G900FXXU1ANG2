@@ -48,8 +48,6 @@
 
 .method public static addCropExtras(Landroid/content/Intent;I)V
     .locals 3
-    .param p0    # Landroid/content/Intent;
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -88,9 +86,6 @@
 
 .method public static addGalleryIntentExtras(Landroid/content/Intent;Landroid/net/Uri;I)V
     .locals 3
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -133,8 +128,6 @@
 
 .method public static addPhotoPickerExtras(Landroid/content/Intent;Landroid/net/Uri;)V
     .locals 2
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/net/Uri;
 
     const-string v0, "crop"
 
@@ -163,7 +156,6 @@
 
 .method public static compressBitmap(Landroid/graphics/Bitmap;)[B
     .locals 6
-    .param p0    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -237,9 +229,6 @@
 
 .method public static fastblur(Landroid/content/Context;Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     invoke-static {p1, p2}, Lcom/samsung/contacts/widget/SGIBlurCPU;->fastblur(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
 
@@ -250,7 +239,6 @@
 
 .method public static generateTempCroppedImageUri(Landroid/content/Context;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "com.android.contacts.files"
 
@@ -325,7 +313,6 @@
 
 .method public static generateTempImageUri(Landroid/content/Context;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "com.android.contacts.files"
 
@@ -350,7 +337,6 @@
 
 .method public static generateTempPhotoFile(Landroid/content/Context;)Ljava/io/File;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Ljava/io/File;
 
@@ -419,8 +405,6 @@
 
 .method public static getBitmapFromUri(Landroid/content/Context;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -456,7 +440,6 @@
 
 .method public static getDefaultPhotoBackgroundColor(J)I
     .locals 3
-    .param p0    # J
 
     const v0, 0x7f0a005f
 
@@ -515,7 +498,6 @@
 
 .method public static getDefaultPhotoBackgroundColorAlphaAdded(J)I
     .locals 3
-    .param p0    # J
 
     const v0, 0x7f0a0064
 
@@ -574,8 +556,6 @@
 
 .method public static pathForCroppedPhoto(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -618,7 +598,6 @@
 
 .method public static pathForNewCameraPhoto(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -641,8 +620,6 @@
 
 .method private static pathForTempPhoto(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
@@ -663,9 +640,6 @@
 
 .method public static savePhotoFromBitmapToUri(Landroid/content/Context;Landroid/graphics/Bitmap;Landroid/net/Uri;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -748,10 +722,6 @@
 
 .method public static savePhotoFromUriToUri(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;Z)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     const/4 v6, 0x0
 

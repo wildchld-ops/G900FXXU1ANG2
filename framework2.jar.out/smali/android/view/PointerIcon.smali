@@ -258,7 +258,6 @@
 
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -269,8 +268,6 @@
 
 .method synthetic constructor <init>(ILandroid/view/PointerIcon$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/view/PointerIcon$1;
 
     invoke-direct {p0, p1}, Landroid/view/PointerIcon;-><init>(I)V
 
@@ -279,8 +276,6 @@
 
 .method static synthetic access$102(Landroid/view/PointerIcon;I)I
     .locals 0
-    .param p0    # Landroid/view/PointerIcon;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/PointerIcon;->mSystemIconResourceId:I
 
@@ -297,9 +292,6 @@
 
 .method public static createCustomIcon(Landroid/graphics/Bitmap;FF)Landroid/view/PointerIcon;
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # F
-    .param p2    # F
 
     if-nez p0, :cond_0
 
@@ -331,7 +323,6 @@
 
 .method public static getDefaultIcon(Landroid/content/Context;)Landroid/view/PointerIcon;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/16 v0, 0x3e8
 
@@ -554,8 +545,6 @@
 
 .method public static getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/16 v7, 0x2711
 
@@ -912,7 +901,6 @@
 
 .method private static getSystemIconStyleIndex(I)I
     .locals 8
-    .param p0    # I
 
     const/4 v4, 0x5
 
@@ -1250,8 +1238,6 @@
 
 .method public static loadCustomIcon(Landroid/content/res/Resources;I)Landroid/view/PointerIcon;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -1277,8 +1263,6 @@
 
 .method private loadResource(Landroid/content/res/Resources;I)V
     .locals 9
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
@@ -1392,7 +1376,6 @@
 
 .method public static registerHoveringSpenCustomIcon(Landroid/graphics/drawable/Drawable;)I
     .locals 8
-    .param p0    # Landroid/graphics/drawable/Drawable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1559,7 +1542,6 @@
 
 .method public static registerMouseCustomIcon(Landroid/graphics/drawable/Drawable;)I
     .locals 8
-    .param p0    # Landroid/graphics/drawable/Drawable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1726,7 +1708,6 @@
 
 .method public static removeHoveringSpenCustomIcon(I)V
     .locals 3
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1766,7 +1747,6 @@
 
 .method public static removeMouseCustomIcon(I)V
     .locals 3
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1806,8 +1786,6 @@
 
 .method public static setHoveringSpenCustomIcon(ILandroid/graphics/Bitmap;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/graphics/Bitmap;
 
     move v0, p0
 
@@ -1854,7 +1832,6 @@
 
 .method public static setHoveringSpenCustomIcon(Landroid/graphics/Bitmap;)I
     .locals 2
-    .param p0    # Landroid/graphics/Bitmap;
 
     sget v0, Landroid/view/PointerIcon;->mCustomIconCurrentId:I
 
@@ -1917,8 +1894,6 @@
 
 .method public static setHoveringSpenIcon(ILandroid/graphics/drawable/Drawable;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1936,9 +1911,6 @@
 
 .method public static setHoveringSpenIcon(ILandroid/graphics/drawable/Drawable;I)I
     .locals 8
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2087,9 +2059,6 @@
 
 .method public static setHoveringSpenIcon(ILandroid/graphics/drawable/Drawable;Landroid/graphics/Point;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2107,10 +2076,6 @@
 
 .method public static setHoveringSpenIcon(ILandroid/graphics/drawable/Drawable;Landroid/graphics/Point;I)I
     .locals 8
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2259,8 +2224,6 @@
 
 .method public static setHoveringSpenIcon(II)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2276,9 +2239,6 @@
 
 .method public static setHoveringSpenIcon(III)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2306,9 +2266,6 @@
 
 .method public static setHoveringSpenIcon(IILandroid/graphics/Point;)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2324,10 +2281,6 @@
 
 .method public static setHoveringSpenIcon(IILandroid/graphics/Point;I)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2355,8 +2308,6 @@
 
 .method public static setIcon(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2427,8 +2378,6 @@
 
 .method public static setIcon(ILandroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2497,9 +2446,6 @@
 
 .method public static setIcon(ILandroid/graphics/drawable/Drawable;Landroid/graphics/Point;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2572,8 +2518,6 @@
 
 .method public static setMouseCustomIcon(ILandroid/graphics/Bitmap;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/graphics/Bitmap;
 
     move v0, p0
 
@@ -2620,7 +2564,6 @@
 
 .method public static setMouseCustomIcon(Landroid/graphics/Bitmap;)I
     .locals 2
-    .param p0    # Landroid/graphics/Bitmap;
 
     sget v0, Landroid/view/PointerIcon;->mMouseCustomIconCurrentId:I
 
@@ -2683,8 +2626,6 @@
 
 .method public static setMouseIcon(ILandroid/graphics/drawable/Drawable;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2702,9 +2643,6 @@
 
 .method public static setMouseIcon(ILandroid/graphics/drawable/Drawable;I)I
     .locals 8
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2853,9 +2791,6 @@
 
 .method public static setMouseIcon(ILandroid/graphics/drawable/Drawable;Landroid/graphics/Point;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2873,10 +2808,6 @@
 
 .method public static setMouseIcon(ILandroid/graphics/drawable/Drawable;Landroid/graphics/Point;I)I
     .locals 8
-    .param p0    # I
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3025,8 +2956,6 @@
 
 .method public static setMouseIcon(II)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3042,9 +2971,6 @@
 
 .method public static setMouseIcon(III)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3072,9 +2998,6 @@
 
 .method public static setMouseIcon(IILandroid/graphics/Point;)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3090,10 +3013,6 @@
 
 .method public static setMouseIcon(IILandroid/graphics/Point;I)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3121,9 +3040,6 @@
 
 .method public static setMousePointerIcon(IILandroid/graphics/Point;)Z
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
 
     sget v0, Landroid/view/PointerIcon;->mMouseIconType:I
 
@@ -3178,9 +3094,6 @@
 
 .method public static setPointerIcon(IILandroid/graphics/Point;)Z
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
 
     const/16 v3, 0x14
 
@@ -3314,9 +3227,6 @@
 
 .method private static validateHotSpot(Landroid/graphics/Bitmap;FF)V
     .locals 2
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -3383,7 +3293,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -3543,7 +3452,6 @@
 
 .method public load(Landroid/content/Context;)Landroid/view/PointerIcon;
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -3594,8 +3502,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/view/PointerIcon;->mStyle:I
 

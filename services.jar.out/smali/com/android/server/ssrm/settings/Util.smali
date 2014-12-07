@@ -14,8 +14,6 @@
 
 .method static indentText(Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v5, Ljava/lang/StringBuilder;
 

@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +35,6 @@
 
 .method public static setLanguagePacksManager(Lcom/visionobjects/resourcemanager/VOLanguagePackManager;)V
     .locals 0
-    .param p0    # Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
     sput-object p0, Lcom/visionobjects/resourcemanager/VOLanguagePack;->languagePacksManager:Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -85,7 +83,6 @@
 
 .method public downloadLanguage(Lcom/touchtype_fluency/util/ProgressListener;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/util/ProgressListener;
 
     iput-object p1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePack;->listener:Lcom/touchtype_fluency/util/ProgressListener;
 
@@ -110,7 +107,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/visionobjects/resourcemanager/VOLanguagePack;
 
@@ -171,7 +167,6 @@
 
 .method public getResources(Ljava/lang/String;)[Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/visionobjects/resourcemanager/VOLanguagePack;->languagePacksManager:Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -306,7 +301,6 @@
 
 .method public resetDownloadListener(Lcom/touchtype_fluency/util/ProgressListener;)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/util/ProgressListener;
 
     iput-object p1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePack;->listener:Lcom/touchtype_fluency/util/ProgressListener;
 
@@ -315,7 +309,6 @@
 
 .method public setPrevState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePack;->mPrevState:I
 
@@ -324,7 +317,6 @@
 
 .method public setProgress(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePack;->mProgress:I
 
@@ -344,7 +336,6 @@
 
 .method public setState(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePack;->mState:I
 

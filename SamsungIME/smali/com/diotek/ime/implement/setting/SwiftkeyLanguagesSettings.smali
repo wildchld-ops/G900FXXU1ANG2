@@ -106,7 +106,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->sendSupportLanguage()V
 
@@ -115,7 +114,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->updateSwiftkeyList()V
 
@@ -124,7 +122,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->updateListComplete()V
 
@@ -133,7 +130,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->updateListFail()V
 
@@ -142,7 +138,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->mIsCheckboxDontShowDownloadList:Z
 
@@ -151,8 +146,6 @@
 
 .method static synthetic access$502(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->mIsCheckboxDontShowDownloadList:Z
 
@@ -161,7 +154,6 @@
 
 .method static synthetic access$602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->isDialogShownState:Z
 
@@ -245,7 +237,6 @@
 
 .method private exitSwiftkeyLanguageSettings(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;->getSelectedHandwritingLanguageList()Ljava/lang/StringBuilder;
 
@@ -443,7 +434,6 @@
 
 .method private isInsertedHandwritingLanguage(Ljava/lang/StringBuilder;)Z
     .locals 8
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v5, 0x1
 
@@ -532,7 +522,6 @@
 
 .method private isRemovedHandwritingLanguage(Ljava/lang/StringBuilder;)Z
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
 
@@ -652,8 +641,6 @@
 
 .method private showHandwritingLanguageSettingDialog(Landroid/content/Context;Z)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -998,7 +985,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1055,9 +1041,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceActivity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1070,7 +1053,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
 
@@ -1103,7 +1085,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 8
-    .param p1    # Landroid/view/Menu;
 
     const v7, 0x7f0d009f
 
@@ -1168,8 +1149,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -1247,7 +1226,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -1346,7 +1324,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 8
-    .param p1    # Landroid/view/Menu;
 
     const v7, 0x7f0d009f
 

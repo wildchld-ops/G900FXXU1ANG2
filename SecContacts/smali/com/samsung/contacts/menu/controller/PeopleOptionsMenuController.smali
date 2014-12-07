@@ -10,7 +10,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -133,7 +132,6 @@
 
 .method private resetOptionMenu(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-interface {p1}, Landroid/view/Menu;->size()I
 
@@ -164,9 +162,6 @@
 # virtual methods
 .method protected configureCommon(Landroid/view/Menu;II)V
     .locals 46
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
-    .param p3    # I
 
     const v41, 0x7f080351
 
@@ -1435,9 +1430,6 @@
 
 .method protected configureFlagship(Landroid/view/Menu;II)V
     .locals 7
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1565,9 +1557,6 @@
 
 .method public configureVisibility(Landroid/view/Menu;II)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/controller/PeopleOptionsMenuController;->resetOptionMenu(Landroid/view/Menu;)V
 

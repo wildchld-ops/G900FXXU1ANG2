@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/dialer/calllog/CallLogGroupBuilder$GroupCreator;Landroid/content/Context;)V
     .locals 2
-    .param p1    # Lcom/android/dialer/calllog/CallLogGroupBuilder$GroupCreator;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,8 +47,6 @@
 # virtual methods
 .method public addGroupImpl(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogGroupBuilder;->mGroupCreator:Lcom/android/dialer/calllog/CallLogGroupBuilder$GroupCreator;
 
@@ -63,8 +59,6 @@
 
 .method public addGroups(Landroid/database/Cursor;Z)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     const-string v0, "CallLogGroupBuilder"
 
@@ -81,8 +75,6 @@
 
 .method compareSipAddresses(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v9, 0x40
 
@@ -173,8 +165,6 @@
 
 .method equalNumbers(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->isUriNumber(Ljava/lang/String;)Z
 

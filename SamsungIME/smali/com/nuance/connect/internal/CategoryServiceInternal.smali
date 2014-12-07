@@ -248,7 +248,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     const/4 v2, 0x1
 
@@ -357,7 +356,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/CategoryServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -366,7 +364,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/CategoryServiceInternal;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-boolean v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->livingLanguageStatus:Z
 
@@ -375,7 +372,6 @@
 
 .method static synthetic access$1000(Lcom/nuance/connect/internal/CategoryServiceInternal;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-boolean v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->livingLanguageUpdatesPending:Z
 
@@ -384,8 +380,6 @@
 
 .method static synthetic access$1002(Lcom/nuance/connect/internal/CategoryServiceInternal;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->livingLanguageUpdatesPending:Z
 
@@ -402,7 +396,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/CategoryServiceInternal;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->dictionaryDownloadCallbacks:Ljava/util/Map;
 
@@ -411,7 +404,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/CategoryServiceInternal;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->redownloadCallbacks:Ljava/util/Map;
 
@@ -420,7 +412,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/internal/CategoryServiceInternal;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->availableDownloadDictionaries:Ljava/util/HashMap;
 
@@ -429,7 +420,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/internal/CategoryServiceInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -438,7 +428,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/internal/CategoryServiceInternal;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-boolean v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->dictionaryListReceived:Z
 
@@ -447,8 +436,6 @@
 
 .method static synthetic access$602(Lcom/nuance/connect/internal/CategoryServiceInternal;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->dictionaryListReceived:Z
 
@@ -457,7 +444,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/internal/CategoryServiceInternal;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->livingLanguageCallbacks:Ljava/util/Set;
 
@@ -466,7 +452,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/internal/CategoryServiceInternal;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->sendHotwordsStatus:Ljava/lang/Runnable;
 
@@ -475,7 +460,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/internal/CategoryServiceInternal;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/CategoryServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->mHandler:Landroid/os/Handler;
 
@@ -484,7 +468,6 @@
 
 .method private subscribe(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -503,7 +486,6 @@
 
 .method private unsubscribe(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -524,7 +506,6 @@
 # virtual methods
 .method public cancelDownload(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->availableDownloadDictionaries:Ljava/util/HashMap;
 
@@ -731,8 +712,6 @@
 
 .method public installDictionary(Ljava/lang/String;Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryDownloadCallback;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryDownloadCallback;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->availableDownloadDictionaries:Ljava/util/HashMap;
 
@@ -858,7 +837,6 @@
 
 .method public isCategoryLivingLanguage(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -945,7 +923,6 @@
 
 .method public markDictionaryInstalled(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1059,7 +1036,6 @@
 
 .method public registerCallback(Lcom/nuance/connect/api/LivingLanguageService$Callback;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/api/LivingLanguageService$Callback;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->livingLanguageCallbacks:Ljava/util/Set;
 
@@ -1070,7 +1046,6 @@
 
 .method public registerDictionaryListCallback(Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryListCallback;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryListCallback;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->dictionaryListCallbacks:Ljava/util/Set;
 
@@ -1108,7 +1083,6 @@
 
 .method public removeDictionary(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->availableDownloadDictionaries:Ljava/util/HashMap;
 
@@ -1208,7 +1182,6 @@
 
 .method public setLivingLanguageStatus(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1280,8 +1253,6 @@
 
 .method public setLivingLanguageStatus(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -1313,7 +1284,6 @@
 
 .method public unregisterCallback(Lcom/nuance/connect/api/LivingLanguageService$Callback;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/api/LivingLanguageService$Callback;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->livingLanguageCallbacks:Ljava/util/Set;
 
@@ -1334,7 +1304,6 @@
 
 .method public unregisterDictionaryListCallback(Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryListCallback;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryListCallback;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/CategoryServiceInternal;->dictionaryListCallbacks:Ljava/util/Set;
 

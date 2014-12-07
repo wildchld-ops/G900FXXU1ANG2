@@ -35,7 +35,6 @@
 
 .method public final setTemperature(I)V
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/server/ssrm/settings/BatteryStatesController;->mTemperature:I
 

@@ -286,10 +286,6 @@
 
 .method private constructor <init>(Ljava/lang/String;III[Ljava/lang/String;[I)V
     .locals 1
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [Ljava/lang/String;
-    .param p6    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II[",
@@ -319,7 +315,6 @@
 
 .method private static arraySum([I)I
     .locals 5
-    .param p0    # [I
 
     const/4 v3, 0x0
 
@@ -378,7 +373,6 @@
 
 .method public static getTypeForNumber(Ljava/lang/String;)Lcom/google/android/finsky/billing/creditcard/CreditCardType;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/billing/creditcard/CreditCardType;->values()[Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
@@ -415,7 +409,6 @@
 
 .method public static getTypeForPrefix(Ljava/lang/String;)Lcom/google/android/finsky/billing/creditcard/CreditCardType;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/billing/creditcard/CreditCardType;->values()[Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
@@ -452,7 +445,6 @@
 
 .method public static normalizeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, " "
 
@@ -467,7 +459,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/billing/creditcard/CreditCardType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
@@ -498,7 +489,6 @@
 # virtual methods
 .method public concealNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -558,7 +548,6 @@
 
 .method public formatNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -659,7 +648,6 @@
 
 .method protected hasValidChecksum(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -733,7 +721,6 @@
 
 .method public hasValidLength(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -756,7 +743,6 @@
 
 .method public isValidNumber(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/creditcard/CreditCardType;->hasValidLength(Ljava/lang/String;)Z
 
@@ -789,7 +775,6 @@
 
 .method public isValidPrefix(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x2
 
@@ -955,7 +940,6 @@
 
 .method public limitLength(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

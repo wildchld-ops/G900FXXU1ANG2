@@ -91,9 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/contacts/common/list/ContactTileView$Listener;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/common/list/ContactTileView$Listener;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/DefaultContactListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -152,8 +149,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/common/list/ContactTileAdapter;I)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactTileAdapter;->getLayoutResourceId(I)I
 
@@ -164,7 +159,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/common/list/ContactTileAdapter;)Lcom/android/contacts/common/ContactPhotoManager;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileAdapter;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mPhotoManager:Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -173,7 +167,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/common/list/ContactTileAdapter;)Lcom/android/contacts/common/list/ContactTileView$Listener;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileAdapter;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mListener:Lcom/android/contacts/common/list/ContactTileView$Listener;
 
@@ -182,7 +175,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/common/list/ContactTileAdapter;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileAdapter;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mSelectionMode:Z
 
@@ -191,7 +183,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/common/list/ContactTileAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileAdapter;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mPaddingInPixels:I
 
@@ -200,7 +191,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/common/list/ContactTileAdapter;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileAdapter;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mPrefs:Landroid/content/SharedPreferences;
 
@@ -209,7 +199,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/common/list/ContactTileAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactTileAdapter;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mSelectedContactIds:Ljava/util/ArrayList;
 
@@ -218,7 +207,6 @@
 
 .method private getDivider(I)Landroid/view/View;
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -275,7 +263,6 @@
 
 .method private getDividerPosition(Landroid/database/Cursor;)I
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     if-eqz p1, :cond_0
 
@@ -331,7 +318,6 @@
 
 .method private getLayoutResourceId(I)I
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -427,8 +413,6 @@
 
 .method protected createContactEntryFromCursor(Landroid/database/Cursor;I)Lcom/android/contacts/common/list/ContactTileAdapter$ContactEntry;
     .locals 10
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -651,7 +635,6 @@
 
 .method public declared-synchronized getContactId(I)J
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -684,7 +667,6 @@
 
 .method public getContactUri(I)Landroid/net/Uri;
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -896,7 +878,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/common/list/ContactTileAdapter;->getItem(I)Ljava/util/ArrayList;
 
@@ -907,7 +888,6 @@
 
 .method public getItem(I)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1010,7 +990,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -1019,7 +998,6 @@
 
 .method public getItemViewType(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1075,7 +1053,6 @@
 
 .method public getLookupKey(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mContactCursor:Landroid/database/Cursor;
 
@@ -1102,7 +1079,6 @@
 
 .method public declared-synchronized getPosition(Ljava/lang/Long;)I
     .locals 6
-    .param p1    # Ljava/lang/Long;
 
     const/4 v5, -0x1
 
@@ -1245,7 +1221,6 @@
 
 .method protected getRowCount(I)I
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1268,9 +1243,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -1364,7 +1336,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mDividerPosition:I
 
@@ -1389,7 +1360,6 @@
 
 .method public isSharableContact(I)Z
     .locals 12
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -1578,7 +1548,6 @@
 
 .method public setColumnCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mColumnCount:I
 
@@ -1587,7 +1556,6 @@
 
 .method public setContactCursor(Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 
@@ -1732,9 +1700,6 @@
 
 .method public declared-synchronized setItemChecked(Ljava/lang/Long;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -1792,7 +1757,6 @@
 
 .method public setOnItemCheckedStateChangedListener(Lcom/android/contacts/common/list/ContactTileAdapter$onItemCheckedStateChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactTileAdapter$onItemCheckedStateChangedListener;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mCheckStateListener:Lcom/android/contacts/common/list/ContactTileAdapter$onItemCheckedStateChangedListener;
 
@@ -1801,7 +1765,6 @@
 
 .method public setPhotoLoader(Lcom/android/contacts/common/ContactPhotoManager;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/ContactPhotoManager;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mPhotoManager:Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -1810,7 +1773,6 @@
 
 .method public setSelectionMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactTileAdapter;->mSelectionMode:Z
 

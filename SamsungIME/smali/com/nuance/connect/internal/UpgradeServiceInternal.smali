@@ -69,7 +69,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -90,8 +89,6 @@
 
 .method static synthetic access$002(Lcom/nuance/connect/internal/UpgradeServiceInternal;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->upgradeAvailable:Z
 
@@ -100,8 +97,6 @@
 
 .method static synthetic access$102(Lcom/nuance/connect/internal/UpgradeServiceInternal;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->upgradeDownloading:Z
 
@@ -110,7 +105,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/UpgradeServiceInternal;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
 
     iget-boolean v0, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->upgradeCanceled:Z
 
@@ -119,8 +113,6 @@
 
 .method static synthetic access$202(Lcom/nuance/connect/internal/UpgradeServiceInternal;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->upgradeCanceled:Z
 
@@ -129,7 +121,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/UpgradeServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -138,8 +129,6 @@
 
 .method static synthetic access$402(Lcom/nuance/connect/internal/UpgradeServiceInternal;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->upgradeDownloaded:Z
 
@@ -148,7 +137,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/internal/UpgradeServiceInternal;)Lcom/nuance/connect/util/ConnectNotification;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->notification:Lcom/nuance/connect/util/ConnectNotification;
 
@@ -157,8 +145,6 @@
 
 .method static synthetic access$502(Lcom/nuance/connect/internal/UpgradeServiceInternal;Lcom/nuance/connect/util/ConnectNotification;)Lcom/nuance/connect/util/ConnectNotification;
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
-    .param p1    # Lcom/nuance/connect/util/ConnectNotification;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->notification:Lcom/nuance/connect/util/ConnectNotification;
 
@@ -167,7 +153,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/internal/UpgradeServiceInternal;)I
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
 
     iget v0, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->upgradeProgress:I
 
@@ -176,8 +161,6 @@
 
 .method static synthetic access$602(Lcom/nuance/connect/internal/UpgradeServiceInternal;I)I
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/UpgradeServiceInternal;
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/internal/UpgradeServiceInternal;->upgradeProgress:I
 

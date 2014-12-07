@@ -29,8 +29,6 @@
 
 .method public static newInstance(Ljava/lang/String;Z)Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     new-instance v1, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog;
 
@@ -61,8 +59,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog;->mListener:Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog$CarrierBillingErrorListener;
 
@@ -88,7 +84,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -141,7 +136,6 @@
 
 .method public setOnResultListener(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog$CarrierBillingErrorListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog$CarrierBillingErrorListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog;->mListener:Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog$CarrierBillingErrorListener;
 

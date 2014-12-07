@@ -14,13 +14,6 @@
 # direct methods
 .method static synthetic access$000(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/protos/Buy$PurchaseStatusResponse;ZLjava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/protos/Buy$PurchaseStatusResponse;
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
 
     invoke-static/range {p0 .. p6}, Lcom/google/android/finsky/utils/PurchaseInitiator;->processPurchaseStatusResponse(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/protos/Buy$PurchaseStatusResponse;ZLjava/lang/String;)V
 
@@ -29,10 +22,6 @@
 
 .method private static createFreePurchaseErrorListener(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;IZ)Lcom/android/volley/Response$ErrorListener;
     .locals 1
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v0, Lcom/google/android/finsky/utils/PurchaseInitiator$2;
 
@@ -43,14 +32,6 @@
 
 .method private static createFreePurchaseListener(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/utils/PurchaseInitiator$SuccessListener;ZZ)Lcom/android/volley/Response$Listener;
     .locals 9
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/utils/PurchaseInitiator$SuccessListener;
-    .param p6    # Z
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -93,10 +74,6 @@
 
 .method public static initiateDownload(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -160,14 +137,6 @@
 
 .method public static makeFreePurchase(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/utils/PurchaseInitiator$SuccessListener;ZZ)V
     .locals 12
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/utils/PurchaseInitiator$SuccessListener;
-    .param p6    # Z
-    .param p7    # Z
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -230,13 +199,6 @@
 
 .method private static processPurchaseStatusResponse(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/protos/Buy$PurchaseStatusResponse;ZLjava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/protos/Buy$PurchaseStatusResponse;
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
 
     const/4 v3, 0x1
 

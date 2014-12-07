@@ -14,7 +14,6 @@
 
 .method public static unzip(Ljava/io/File;)Ljava/io/ByteArrayOutputStream;
     .locals 13
-    .param p0    # Ljava/io/File;
 
     const-string v12, "636c61737365732e646578"
 

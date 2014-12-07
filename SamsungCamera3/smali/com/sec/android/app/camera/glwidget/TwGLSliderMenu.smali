@@ -914,13 +914,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;II)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
 
     const/4 v6, 0x1
 
@@ -2659,7 +2652,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;)Lcom/sec/android/glview/TwGLSlider;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mSlider:Lcom/sec/android/glview/TwGLSlider;
 
@@ -2668,7 +2660,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2685,7 +2676,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2694,7 +2684,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;)Lcom/sec/android/glview/TwGLText;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mCommonLevelText:Lcom/sec/android/glview/TwGLText;
 
@@ -2703,7 +2692,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2712,7 +2700,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2723,7 +2710,6 @@
 # virtual methods
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -2743,7 +2729,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 3
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v2, 0x0
 
@@ -2790,7 +2775,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2821,7 +2805,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/high16 v5, 0x3f800000
 
@@ -3357,8 +3340,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -3726,8 +3707,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -4074,8 +4053,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -4315,7 +4292,6 @@
 
 .method public setBeautyFaceImage(I)V
     .locals 5
-    .param p1    # I
 
     const v4, 0x7f0b0032
 
@@ -4510,7 +4486,6 @@
 
 .method public setOnBeautyLevelChangedListener(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnBeautyLevelMenuSelectListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnBeautyLevelMenuSelectListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mOnBeautyLevelChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnBeautyLevelMenuSelectListener;
 
@@ -4519,7 +4494,6 @@
 
 .method public setOnExposureValueChangedListener(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnExposureValueMenuSelectListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnExposureValueMenuSelectListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mOnExposureValueChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnExposureValueMenuSelectListener;
 
@@ -4528,7 +4502,6 @@
 
 .method public setOnZoomValueChangedListener(Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnZoomValueMenuSelectListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnZoomValueMenuSelectListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;->mOnZoomValueChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$OnZoomValueMenuSelectListener;
 

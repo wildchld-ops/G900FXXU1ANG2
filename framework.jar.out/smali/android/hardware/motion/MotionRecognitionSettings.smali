@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v4, -0x1
 
@@ -300,7 +298,6 @@
 
 .method private getregisteredMotionforEvents(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -409,8 +406,6 @@
 # virtual methods
 .method public getSettingMotionSensitivity(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x5
 
@@ -595,7 +590,6 @@
 
 .method public isActivatedEvent(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -633,7 +627,6 @@
 
 .method public isActivatedMotion(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionSettings;->mCurrentEnabledMotions:I
 
@@ -752,7 +745,6 @@
 
 .method public isOpenAPIMotion(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionSettings;->mRegisteredMotionsforOpen:I
 
@@ -773,7 +765,6 @@
 
 .method public isSettingMotion(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionSettings;->mCurrentMotionSettings:I
 
@@ -797,7 +788,6 @@
 
 .method public setRegisteredEvents(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MotionRecognitionSettings;->mRegisteredMotions:I
 
@@ -806,8 +796,6 @@
 
 .method public setRegisteredEvents(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/hardware/motion/MotionRecognitionSettings;->mRegisteredMotions:I
 

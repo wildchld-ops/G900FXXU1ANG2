@@ -15,10 +15,6 @@
 # direct methods
 .method public constructor <init>(I[BLcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v0, 0x0
 
@@ -37,7 +33,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
 
@@ -100,10 +95,6 @@
 
 .method public reset(I[BLcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->obtainPlayStoreUiElement(I)Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 
@@ -129,7 +120,6 @@
 
 .method public setServerLogsCookie([B)V
     .locals 1
-    .param p1    # [B
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/GenericUiElementNode;->mUiElementProto:Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElement;
 

@@ -58,7 +58,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/BuyInstruments$CheckInstrumentResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$CheckInstrumentResponse;
 
     iget-boolean v1, p1, Lcom/google/android/finsky/protos/BuyInstruments$CheckInstrumentResponse;->userHasValidInstrument:Z
 
@@ -86,7 +85,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/BuyInstruments$CheckInstrumentResponse;
 

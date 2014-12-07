@@ -64,7 +64,6 @@
 # virtual methods
 .method public enter(Lcom/android/launcher2/MenuWidgets$WidgetState;Ljava/util/List;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -178,7 +177,6 @@
 
 .method public exit(Lcom/android/launcher2/MenuWidgets$WidgetState;Ljava/util/List;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -340,7 +338,6 @@
 
 .method public getPage(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets$WidgetStatePageEdit;->this$0:Lcom/android/launcher2/MenuWidgets;
 
@@ -374,7 +371,6 @@
 
 .method public getPagesLocationOnScreen([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets$WidgetStatePageEdit;->this$0:Lcom/android/launcher2/MenuWidgets;
 
@@ -432,16 +428,12 @@
 
 .method public movePage(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onClickWidget(Lcom/android/launcher2/HomePendingItem;Landroid/view/View;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/HomePendingItem;
-    .param p2    # Landroid/view/View;
 
     return-void
 .end method
@@ -562,7 +554,6 @@
 
 .method public bridge synthetic restore(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuWidgets$WidgetStateObj;->restore(Landroid/os/Bundle;)V
 
@@ -571,7 +562,6 @@
 
 .method public bridge synthetic save(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuWidgets$WidgetStateObj;->save(Landroid/os/Bundle;)V
 

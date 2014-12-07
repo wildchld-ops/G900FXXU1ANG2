@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
@@ -23,8 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -37,11 +34,6 @@
 
 .method private getAlternateAccountOwnerText(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/AccountLibrary;Lcom/google/android/finsky/library/Libraries;Landroid/accounts/Account;Lcom/google/android/finsky/api/model/DfeToc;)Ljava/lang/String;
     .locals 9
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p3    # Lcom/google/android/finsky/library/Libraries;
-    .param p4    # Landroid/accounts/Account;
-    .param p5    # Lcom/google/android/finsky/api/model/DfeToc;
 
     const v8, 0x7f090297
 
@@ -170,11 +162,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/model/Document;Landroid/widget/ImageView;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/library/Libraries;Landroid/accounts/Account;)V
     .locals 20
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/widget/ImageView;
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p4    # Lcom/google/android/finsky/library/Libraries;
-    .param p5    # Landroid/accounts/Account;
 
     invoke-virtual/range {p4 .. p5}, Lcom/google/android/finsky/library/Libraries;->getAccountLibrary(Landroid/accounts/Account;)Lcom/google/android/finsky/library/AccountLibrary;
 

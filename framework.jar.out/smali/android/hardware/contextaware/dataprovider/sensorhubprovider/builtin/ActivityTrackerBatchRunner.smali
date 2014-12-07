@@ -14,10 +14,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/handler/builtin/ActivityTrackerProvider;-><init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -168,8 +164,6 @@
 
 .method protected final parseData([BI)I
     .locals 11
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v8, -0x1
 

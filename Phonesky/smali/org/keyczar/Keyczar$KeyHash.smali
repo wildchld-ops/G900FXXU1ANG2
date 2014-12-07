@@ -23,7 +23,6 @@
 # direct methods
 .method private constructor <init>(Lorg/keyczar/Keyczar;[B)V
     .locals 2
-    .param p2    # [B
 
     iput-object p1, p0, Lorg/keyczar/Keyczar$KeyHash;->this$0:Lorg/keyczar/Keyczar;
 
@@ -49,9 +48,6 @@
 
 .method synthetic constructor <init>(Lorg/keyczar/Keyczar;[BLorg/keyczar/Keyczar$1;)V
     .locals 0
-    .param p1    # Lorg/keyczar/Keyczar;
-    .param p2    # [B
-    .param p3    # Lorg/keyczar/Keyczar$1;
 
     invoke-direct {p0, p1, p2}, Lorg/keyczar/Keyczar$KeyHash;-><init>(Lorg/keyczar/Keyczar;[B)V
 
@@ -62,7 +58,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lorg/keyczar/Keyczar$KeyHash;
 

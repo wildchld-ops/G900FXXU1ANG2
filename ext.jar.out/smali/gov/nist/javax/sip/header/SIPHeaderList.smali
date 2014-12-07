@@ -72,7 +72,6 @@
 
 .method protected constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -94,7 +93,6 @@
 
 .method public static setPrettyEncode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lgov/nist/javax/sip/header/SIPHeaderList;->prettyEncode:Z
 
@@ -105,7 +103,6 @@
 # virtual methods
 .method public add(ILgov/nist/javax/sip/header/SIPHeader;)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITHDR;)V"
@@ -127,8 +124,6 @@
 
 .method public bridge synthetic add(ILjava/lang/Object;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lgov/nist/javax/sip/header/SIPHeader;
 
@@ -139,7 +134,6 @@
 
 .method public add(Lgov/nist/javax/sip/header/SIPHeader;Z)V
     .locals 0
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(THDR;Z)V"
@@ -178,7 +172,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lgov/nist/javax/sip/header/SIPHeader;
 
@@ -191,7 +184,6 @@
 
 .method public addAll(ILjava/util/Collection;)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -360,7 +352,6 @@
 
 .method public concatenate(Lgov/nist/javax/sip/header/SIPHeaderList;Z)V
     .locals 1
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -392,7 +383,6 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
 
@@ -436,7 +426,6 @@
 
 .method public debugDump(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const-string v4, ""
 
@@ -585,7 +574,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 4
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v2, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
 
@@ -773,7 +761,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 4
-    .param p1    # Ljava/lang/StringBuffer;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/header/SIPHeaderList;->listIterator()Ljava/util/ListIterator;
 
@@ -834,7 +821,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -904,7 +890,6 @@
 
 .method public get(I)Lgov/nist/javax/sip/header/SIPHeader;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)THDR;"
@@ -924,7 +909,6 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lgov/nist/javax/sip/header/SIPHeaderList;->get(I)Lgov/nist/javax/sip/header/SIPHeader;
 
@@ -1108,7 +1092,6 @@
 
 .method public indexOf(Lgov/nist/core/GenericObject;)I
     .locals 1
-    .param p1    # Lgov/nist/core/GenericObject;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
 
@@ -1121,7 +1104,6 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
 
@@ -1173,7 +1155,6 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
 
@@ -1207,7 +1188,6 @@
 
 .method public listIterator(I)Ljava/util/ListIterator;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1340,7 +1320,6 @@
 
 .method public remove(I)Lgov/nist/javax/sip/header/SIPHeader;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)THDR;"
@@ -1360,7 +1339,6 @@
 
 .method public bridge synthetic remove(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lgov/nist/javax/sip/header/SIPHeaderList;->remove(I)Lgov/nist/javax/sip/header/SIPHeader;
 
@@ -1402,7 +1380,6 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/SIPHeaderList;->hlist:Ljava/util/List;
 
@@ -1501,7 +1478,6 @@
 
 .method public set(ILgov/nist/javax/sip/header/SIPHeader;)Lgov/nist/javax/sip/header/SIPHeader;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITHDR;)THDR;"
@@ -1521,8 +1497,6 @@
 
 .method public bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lgov/nist/javax/sip/header/SIPHeader;
 
@@ -1562,8 +1536,6 @@
 
 .method public subList(II)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",

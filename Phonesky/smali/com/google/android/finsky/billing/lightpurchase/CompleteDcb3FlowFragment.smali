@@ -14,8 +14,6 @@
 
 .method public static newInstance(Landroid/accounts/Account;Lcom/google/android/finsky/protos/CommonDevice$Instrument;)Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb3FlowFragment;
     .locals 4
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -86,7 +84,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/LegacyFlowWrapperFragment;->onCreate(Landroid/os/Bundle;)V
 

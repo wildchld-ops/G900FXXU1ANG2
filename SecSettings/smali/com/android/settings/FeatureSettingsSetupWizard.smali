@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/FeatureSettingsSetupWizard;)V
     .locals 0
-    .param p0    # Lcom/android/settings/FeatureSettingsSetupWizard;
 
     invoke-direct {p0}, Lcom/android/settings/FeatureSettingsSetupWizard;->setEasyMode()V
 
@@ -172,7 +171,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const v6, 0x7f090af8
 

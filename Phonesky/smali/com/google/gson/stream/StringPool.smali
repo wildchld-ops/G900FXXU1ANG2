@@ -26,9 +26,6 @@
 # virtual methods
 .method public get([CII)Ljava/lang/String;
     .locals 7
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 

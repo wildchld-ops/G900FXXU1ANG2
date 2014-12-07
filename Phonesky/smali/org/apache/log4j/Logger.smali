@@ -51,7 +51,6 @@
 # virtual methods
 .method public debug(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     sget-boolean v0, Lcom/google/android/finsky/utils/DfeLog;->DEBUG:Z
 

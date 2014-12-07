@@ -43,7 +43,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/utils/BitmapLoader;Lcom/android/volley/Request;Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;)V
     .locals 1
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,7 +74,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;)Lcom/android/volley/Request;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;->request:Lcom/android/volley/Request;
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;->responseBitmap:Landroid/graphics/Bitmap;
 
@@ -93,8 +90,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;->responseBitmap:Landroid/graphics/Bitmap;
 
@@ -103,7 +98,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;->handlers:Ljava/util/List;
 
@@ -114,7 +108,6 @@
 # virtual methods
 .method public addHandler(Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;->handlers:Ljava/util/List;
 
@@ -125,7 +118,6 @@
 
 .method public removeHandlerAndCancelIfNecessary(Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;)Z
     .locals 1
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader$RequestListenerWrapper;->handlers:Ljava/util/List;
 

@@ -54,7 +54,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/VendingProtos$InAppRestoreTransactionsResponseProto;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$InAppRestoreTransactionsResponseProto;
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/VendingProtos$InAppRestoreTransactionsResponseProto;->signedResponse:Lcom/google/android/finsky/protos/VendingProtos$SignedDataProto;
 
@@ -112,7 +111,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/VendingProtos$InAppRestoreTransactionsResponseProto;
 

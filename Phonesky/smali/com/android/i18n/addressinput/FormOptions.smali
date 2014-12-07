@@ -91,7 +91,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/i18n/addressinput/FormOptions$Builder;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/FormOptions$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -196,8 +195,6 @@
 
 .method synthetic constructor <init>(Lcom/android/i18n/addressinput/FormOptions$Builder;Lcom/android/i18n/addressinput/FormOptions$1;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/FormOptions$Builder;
-    .param p2    # Lcom/android/i18n/addressinput/FormOptions$1;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/FormOptions;-><init>(Lcom/android/i18n/addressinput/FormOptions$Builder;)V
 
@@ -208,7 +205,6 @@
 # virtual methods
 .method getCustomFieldOrder(Ljava/lang/String;)[Lcom/android/i18n/addressinput/AddressField;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -251,7 +247,6 @@
 
 .method isHidden(Lcom/android/i18n/addressinput/AddressField;)Z
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions;->mHiddenFields:Ljava/util/EnumSet;
 
@@ -264,7 +259,6 @@
 
 .method isReadonly(Lcom/android/i18n/addressinput/AddressField;)Z
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/FormOptions;->mReadonlyFields:Ljava/util/EnumSet;
 

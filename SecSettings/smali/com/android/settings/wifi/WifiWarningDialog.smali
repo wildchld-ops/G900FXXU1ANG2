@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiWarningDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiWarningDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiWarningDialog;->wifiWarningDialogPressOK()V
 
@@ -35,7 +34,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiWarningDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiWarningDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiWarningDialog;->wifiWarningDialogPressCancel()V
 
@@ -386,7 +384,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "WifiWarningDialog"
 

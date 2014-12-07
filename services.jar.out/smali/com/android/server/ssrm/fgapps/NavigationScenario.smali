@@ -80,7 +80,6 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 8
-    .param p1    # Z
 
     const v7, 0x13d620
 

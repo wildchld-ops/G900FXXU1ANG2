@@ -50,7 +50,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/vending/verifier/api/PackageVerificationResult;)V
     .locals 7
-    .param p1    # Lcom/google/android/vending/verifier/api/PackageVerificationResult;
 
     const/4 v6, 0x0
 
@@ -198,7 +197,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/vending/verifier/api/PackageVerificationResult;
 

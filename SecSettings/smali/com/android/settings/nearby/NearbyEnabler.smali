@@ -156,7 +156,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -225,8 +224,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreferenceScreen;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreferenceScreen;
 
     const/4 v1, 0x0
 
@@ -295,8 +292,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -365,14 +360,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;Landroid/preference/PreferenceScreen;Landroid/preference/MultiSelectListPreference;Landroid/preference/MultiSelectListPreference;Landroid/preference/MultiSelectListPreference;Lcom/android/settings/nearby/DownloadListPreference;Landroid/preference/ListPreference;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
-    .param p3    # Landroid/preference/PreferenceScreen;
-    .param p4    # Landroid/preference/MultiSelectListPreference;
-    .param p5    # Landroid/preference/MultiSelectListPreference;
-    .param p6    # Landroid/preference/MultiSelectListPreference;
-    .param p7    # Lcom/android/settings/nearby/DownloadListPreference;
-    .param p8    # Landroid/preference/ListPreference;
 
     const/4 v3, 0x0
 
@@ -445,7 +432,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/nearby/NearbyEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbyEnabler;->mContext:Landroid/content/Context;
 
@@ -454,7 +440,6 @@
 
 .method static synthetic access$1102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/nearby/NearbyEnabler;->isShowWifiCheckingPopup:Z
 
@@ -463,7 +448,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/nearby/NearbyEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbyEnabler;->mNearbySwitch:Landroid/widget/Switch;
 
@@ -472,7 +456,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/nearby/NearbyEnabler;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbyEnabler;->mNearbySwitchPref:Landroid/preference/SwitchPreferenceScreen;
 
@@ -481,8 +464,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/nearby/NearbyEnabler;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/nearby/NearbyEnabler;->checkDeviceName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -493,7 +474,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/nearby/NearbyEnabler;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbyEnabler;->mNearbyDeviceName:Landroid/preference/PreferenceScreen;
 
@@ -502,8 +482,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/nearby/NearbyEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/nearby/NearbyEnabler;->switchPreference(Z)V
 
@@ -512,8 +490,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/nearby/NearbyEnabler;Ljava/util/HashSet;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
-    .param p1    # Ljava/util/HashSet;
 
     invoke-direct {p0, p1}, Lcom/android/settings/nearby/NearbyEnabler;->getListString(Ljava/util/HashSet;)Ljava/lang/String;
 
@@ -524,7 +500,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/nearby/NearbyEnabler;)Lcom/android/settings/nearby/IMediaServer;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nearby/NearbyEnabler;->mIMediaServer:Lcom/android/settings/nearby/IMediaServer;
 
@@ -533,8 +508,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/nearby/NearbyEnabler;Lcom/android/settings/nearby/IMediaServer;)Lcom/android/settings/nearby/IMediaServer;
     .locals 0
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
-    .param p1    # Lcom/android/settings/nearby/IMediaServer;
 
     iput-object p1, p0, Lcom/android/settings/nearby/NearbyEnabler;->mIMediaServer:Lcom/android/settings/nearby/IMediaServer;
 
@@ -543,7 +516,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/nearby/NearbyEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/nearby/NearbyEnabler;->setCheckedState()V
 
@@ -552,7 +524,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/nearby/NearbyEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nearby/NearbyEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/nearby/NearbyEnabler;->setDefaultValues()V
 
@@ -561,7 +532,6 @@
 
 .method private checkDeviceName(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const-string v5, "NearbyEnabler"
 
@@ -2364,7 +2334,6 @@
 
 .method private switchPreference(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2852,8 +2821,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 6
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -2970,8 +2937,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 
@@ -3549,7 +3514,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 4
-    .param p1    # Landroid/widget/Switch;
 
     const-string v0, "NearbyEnabler"
 

@@ -73,8 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -89,10 +87,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILandroid/widget/RemoteViews$OnClickHandler;Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
-    .param p4    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -153,7 +147,6 @@
 
 .method static synthetic access$000(Landroid/appwidget/AppWidgetHost;)Z
     .locals 1
-    .param p0    # Landroid/appwidget/AppWidgetHost;
 
     invoke-direct {p0}, Landroid/appwidget/AppWidgetHost;->isLocalBinder()Z
 
@@ -164,9 +157,6 @@
 
 .method public static allocateAppWidgetIdForPackage(IILjava/lang/String;)I
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/appwidget/AppWidgetHost;->checkCallerIsSystem()V
 
@@ -299,7 +289,6 @@
 
 .method public static deleteAllHosts(I)V
     .locals 3
-    .param p0    # I
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetHost;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -324,8 +313,6 @@
 
 .method public static deleteAppWidgetIdForSystem(II)V
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Landroid/appwidget/AppWidgetHost;->checkCallerIsSystem()V
 
@@ -444,9 +431,6 @@
 
 .method public final createView(Landroid/content/Context;ILandroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetHostView;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/appwidget/AppWidgetProviderInfo;
 
     iget-object v4, p0, Landroid/appwidget/AppWidgetHost;->mContext:Landroid/content/Context;
 
@@ -537,7 +521,6 @@
 
 .method public deleteAppWidgetId(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Landroid/appwidget/AppWidgetHost;->mViews:Ljava/util/HashMap;
 
@@ -669,9 +652,6 @@
 
 .method protected onCreateView(Landroid/content/Context;ILandroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetHostView;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/appwidget/AppWidgetProviderInfo;
 
     new-instance v0, Landroid/appwidget/AppWidgetHostView;
 
@@ -684,8 +664,6 @@
 
 .method protected onProviderChanged(ILandroid/appwidget/AppWidgetProviderInfo;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
 
     iget v1, p2, Landroid/appwidget/AppWidgetProviderInfo;->minWidth:I
 
@@ -904,9 +882,6 @@
 
 .method updateAppWidgetView(ILandroid/widget/RemoteViews;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
 
     iget-object v2, p0, Landroid/appwidget/AppWidgetHost;->mViews:Ljava/util/HashMap;
 
@@ -949,9 +924,6 @@
 
 .method viewDataChanged(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-boolean v1, p0, Landroid/appwidget/AppWidgetHost;->mNoProductShip:Z
 

@@ -65,7 +65,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -118,8 +117,6 @@
 
 .method static synthetic access$000(Lcom/android/server/VoIPInterfaceManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/VoIPInterfaceManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/VoIPInterfaceManager;->log(Ljava/lang/String;)V
 
@@ -128,7 +125,6 @@
 
 .method private createTelUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "createTelUrl()..."
 
@@ -163,7 +159,6 @@
 
 .method private dump_calltype_w_index(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/VoIPInterfaceManager;->callTypeList:Ljava/util/ArrayList;
 
@@ -307,7 +302,6 @@
 
 .method private getCallSessionInfo_w_pkgName(Ljava/lang/String;)Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/VoIPInterfaceManager;->getCallTypeIndex_w_pkgName(Ljava/lang/String;)I
 
@@ -376,7 +370,6 @@
 
 .method private getCallTypeIndex_w_callstate(Lcom/android/server/VoIPInterfaceManager$CallState;)I
     .locals 4
-    .param p1    # Lcom/android/server/VoIPInterfaceManager$CallState;
 
     const/4 v2, -0x1
 
@@ -1035,7 +1028,6 @@
 
 .method private getCallTypeIndex_w_pkgName(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/VoIPInterfaceManager;->callTypeList:Ljava/util/ArrayList;
 
@@ -1294,7 +1286,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "VoIPInterfaceManager"
 
@@ -1305,8 +1296,6 @@
 
 .method private log(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/VoIPInterfaceManager;->dbg_level:I
 
@@ -1376,9 +1365,6 @@
 
 .method private sendVoIPBroadcast(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1448,8 +1434,6 @@
 
 .method private updateStatusBar(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1601,7 +1585,6 @@
 
 .method public callInVoIP(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1660,7 +1643,6 @@
 
 .method public canUseBTInVoIP(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1764,7 +1746,6 @@
 
 .method public convertVoIPStateToCallState(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1922,10 +1903,6 @@
 
 .method public createCallSession(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/IVoIPCallbackInterface;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/IVoIPCallbackInterface;
 
     const/4 v3, 0x0
 
@@ -2128,7 +2105,6 @@
 
 .method public destroyCallSession(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "destroyCallSession()..."
 
@@ -2233,7 +2209,6 @@
 
 .method public dumpCallSessionInfoDB(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2678,7 +2653,6 @@
 
 .method public getCallSessionInfo(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -3483,7 +3457,6 @@
 
 .method public getVoIPCallCount(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/VoIPInterfaceManager;->getCallSessionInfo_w_pkgName(Ljava/lang/String;)Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
@@ -4547,8 +4520,6 @@
 
 .method public notifyCallStateforVoIP(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v3, "notifyCallStateforVoIP()... :  = "
 
@@ -4594,10 +4565,6 @@
 
 .method public notifyMissedCallforVoIP(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     const-string v1, "notifyMissedCallforVoIP()... :  = "
 
@@ -4776,7 +4743,6 @@
 
 .method public setBTUserWantsAudioOn(Z)Z
     .locals 4
-    .param p1    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -4877,8 +4843,6 @@
 
 .method public setEngMode(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -4924,8 +4888,6 @@
 
 .method public setUseBTInVoIP(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -5008,8 +4970,6 @@
 
 .method public setUseHoldInVoIP(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -5092,8 +5052,6 @@
 
 .method public setVoIPActive(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5167,8 +5125,6 @@
 
 .method public setVoIPAlerting(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5242,8 +5198,6 @@
 
 .method public setVoIPCallCount(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/VoIPInterfaceManager;->getCallSessionInfo_w_pkgName(Ljava/lang/String;)Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
@@ -5290,8 +5244,6 @@
 
 .method public setVoIPDialing(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5367,8 +5319,6 @@
 
 .method public setVoIPDisconnected(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5442,8 +5392,6 @@
 
 .method public setVoIPDisconnecting(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5517,8 +5465,6 @@
 
 .method public setVoIPHolding(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5592,7 +5538,6 @@
 
 .method public setVoIPIdle(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "setVoIPIdle()..."
 
@@ -5607,7 +5552,6 @@
 
 .method public setVoIPInCallAlert(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string/jumbo v2, "setVoIPInCallAlert()..."
 
@@ -5634,8 +5578,6 @@
 
 .method public setVoIPIncoming(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -5711,8 +5653,6 @@
 
 .method public setVoIPRinging(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5786,8 +5726,6 @@
 
 .method public setVoIPWaiting(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -5863,8 +5801,6 @@
 
 .method public startVoIPCheckBC(JLjava/lang/String;)V
     .locals 12
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/VoIPInterfaceManager;->mContext:Landroid/content/Context;
 

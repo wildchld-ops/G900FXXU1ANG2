@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/ArrayList;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +79,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/model/rcs/RcsUtils$RcsCapsAdapter;->mList:Ljava/util/ArrayList;
 
@@ -93,7 +91,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -102,7 +99,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -111,9 +107,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v3, p0, Lcom/samsung/contacts/model/rcs/RcsUtils$RcsCapsAdapter;->mContext:Landroid/content/Context;
 
@@ -183,7 +176,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -192,14 +184,12 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 0
-    .param p1    # Landroid/database/DataSetObserver;
 
     return-void
 .end method
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 0
-    .param p1    # Landroid/database/DataSetObserver;
 
     return-void
 .end method

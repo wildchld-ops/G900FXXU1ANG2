@@ -30,11 +30,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -96,9 +91,6 @@
 
 .method protected static final fromMap(Ljava/lang/String;Ljava/util/Map;Ljava/lang/ClassLoader;)Lorg/apache/http/util/VersionInfo;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/util/Map;
-    .param p2    # Ljava/lang/ClassLoader;
 
     const/4 v1, 0x1
 
@@ -216,8 +208,6 @@
 
 .method public static final loadVersionInfo(Ljava/lang/String;Ljava/lang/ClassLoader;)Lorg/apache/http/util/VersionInfo;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/ClassLoader;
 
     if-nez p0, :cond_0
 
@@ -331,8 +321,6 @@
 
 .method public static final loadVersionInfo([Ljava/lang/String;Ljava/lang/ClassLoader;)[Lorg/apache/http/util/VersionInfo;
     .locals 5
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/ClassLoader;
 
     if-nez p0, :cond_0
 

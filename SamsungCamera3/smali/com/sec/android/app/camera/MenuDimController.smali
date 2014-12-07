@@ -166,7 +166,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v1, 0x0
 
@@ -211,7 +210,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/MenuDimController;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/MenuDimController;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuDimController;->mUserSettingValueList:Ljava/util/HashMap;
 
@@ -220,7 +218,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/MenuDimController;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/MenuDimController;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuDimController;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -229,7 +226,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/MenuDimController;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/MenuDimController;
 
     iget v0, p0, Lcom/sec/android/app/camera/MenuDimController;->mPreviousFlashValue:I
 
@@ -238,7 +234,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/MenuDimController;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/MenuDimController;
 
     iget v0, p0, Lcom/sec/android/app/camera/MenuDimController;->mPreviousMeteringValue:I
 
@@ -247,7 +242,6 @@
 
 .method private merge([Z)V
     .locals 4
-    .param p1    # [Z
 
     const/4 v0, 0x0
 
@@ -280,7 +274,6 @@
 # virtual methods
 .method public declared-synchronized addButton(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     monitor-enter p0
 
@@ -333,7 +326,6 @@
 
 .method public getDim(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -360,7 +352,6 @@
 
 .method public getDimArray([Z)V
     .locals 3
-    .param p1    # [Z
 
     const/4 v2, 0x0
 
@@ -375,7 +366,6 @@
 
 .method public getSavedUserSettingValues(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuDimController;->mUserSettingValueList:Ljava/util/HashMap;
 
@@ -406,7 +396,6 @@
 
 .method public getkeyFromCommandId(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -696,7 +685,6 @@
 
 .method public processDim(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -756,8 +744,6 @@
 
 .method public declared-synchronized refreshButtonDim(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x3
 
@@ -8867,7 +8853,6 @@
 
 .method public declared-synchronized removeButton(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     monitor-enter p0
 
@@ -8962,8 +8947,6 @@
 
 .method declared-synchronized setDim(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -8999,7 +8982,6 @@
 
 .method public setDimArray([Z)V
     .locals 3
-    .param p1    # [Z
 
     const/4 v2, 0x0
 
@@ -9014,7 +8996,6 @@
 
 .method public varargs setSettingDefault([I)V
     .locals 8
-    .param p1    # [I
 
     const/4 v7, 0x1
 

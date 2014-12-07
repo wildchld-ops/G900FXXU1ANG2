@@ -95,7 +95,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -219,8 +218,6 @@
 
 .method protected createCommand(Ljava/lang/String;Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;)Lcom/nuance/connect/service/comm/Command;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -235,9 +232,6 @@
 
 .method protected createCommand(Ljava/lang/String;Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;Lcom/nuance/connect/service/comm/ResponseCallback;)Lcom/nuance/connect/service/comm/Command;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;
-    .param p3    # Lcom/nuance/connect/service/comm/ResponseCallback;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -252,8 +246,6 @@
 
 .method protected createCommand(Ljava/lang/String;Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;Ljava/util/HashMap;)Lcom/nuance/connect/service/comm/Command;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -277,9 +269,6 @@
 
 .method protected createCommand(Ljava/lang/String;Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;Ljava/util/HashMap;Lcom/nuance/connect/service/comm/ResponseCallback;)Lcom/nuance/connect/service/comm/Command;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/nuance/connect/service/comm/Command$REQUEST_TYPE;
-    .param p4    # Lcom/nuance/connect/service/comm/ResponseCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -370,7 +359,6 @@
 
 .method protected finishTransaction(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->activeTransactions:Ljava/util/Map;
 
@@ -402,7 +390,6 @@
 
 .method protected getActiveTransaction(Ljava/lang/String;)Lcom/nuance/connect/service/comm/Transaction;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->activeTransactions:Ljava/util/Map;
 
@@ -575,7 +562,6 @@
 
 .method protected isTransactionActive(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->activeTransactions:Ljava/util/Map;
 
@@ -661,23 +647,18 @@
 
 .method public onCancel(Lcom/nuance/connect/service/comm/Command;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     return-void
 .end method
 
 .method public onDownloadStatusResponse(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onFailure(Lcom/nuance/connect/service/comm/Command;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -712,14 +693,12 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     return-void
 .end method
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -728,14 +707,12 @@
 
 .method public onIOExceptionResponse(Lcom/nuance/connect/service/comm/Command;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     return-void
 .end method
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     return-void
 .end method
@@ -760,8 +737,6 @@
 
 .method protected preProcessResponse(Lcom/nuance/connect/service/comm/Response;I)Z
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -776,8 +751,6 @@
 
 .method protected preProcessResponse(Ljava/lang/Enum;Ljava/lang/String;I)Z
     .locals 10
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -989,9 +962,6 @@
 
 .method protected preProcessResponse(Ljava/lang/String;II)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1089,7 +1059,6 @@
 
 .method protected removePreference(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->client:Lcom/nuance/connect/service/ConnectClient;
 
@@ -1104,7 +1073,6 @@
 
 .method protected removePreferences([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     move-object v0, p1
 
@@ -1141,7 +1109,6 @@
 
 .method protected sendCommand(Lcom/nuance/connect/service/comm/Command;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1296,7 +1263,6 @@
 
 .method protected setLastCommand(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->lastCommand:Ljava/lang/String;
 
@@ -1327,7 +1293,6 @@
 
 .method protected setMessagesHandled([Lcom/nuance/connect/internal/common/InternalMessages;)V
     .locals 3
-    .param p1    # [Lcom/nuance/connect/internal/common/InternalMessages;
 
     array-length v1, p1
 
@@ -1365,7 +1330,6 @@
 
 .method protected startTransaction(Lcom/nuance/connect/service/comm/Transaction;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Transaction;
 
     if-nez p1, :cond_0
 

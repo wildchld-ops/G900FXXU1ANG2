@@ -14,9 +14,6 @@
 
 .method private flushBufferData(Landroid/app/backup/BackupDataOutput;Ljava/io/ByteArrayOutputStream;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/app/backup/BackupDataOutput;
-    .param p2    # Ljava/io/ByteArrayOutputStream;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -42,7 +39,6 @@
 
 .method public static registerWithBackup(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/google/android/finsky/utils/VendingPreferences;->BACKED_UP:Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
 
@@ -70,11 +66,6 @@
 
 .method private writeData(Landroid/app/backup/BackupDataOutput;Ljava/io/ByteArrayOutputStream;Ljava/io/DataOutputStream;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Landroid/app/backup/BackupDataOutput;
-    .param p2    # Ljava/io/ByteArrayOutputStream;
-    .param p3    # Ljava/io/DataOutputStream;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -90,11 +81,6 @@
 
 .method private writeData(Landroid/app/backup/BackupDataOutput;Ljava/io/ByteArrayOutputStream;Ljava/io/DataOutputStream;Ljava/lang/String;J)V
     .locals 0
-    .param p1    # Landroid/app/backup/BackupDataOutput;
-    .param p2    # Ljava/io/ByteArrayOutputStream;
-    .param p3    # Ljava/io/DataOutputStream;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -110,11 +96,6 @@
 
 .method private writeData(Landroid/app/backup/BackupDataOutput;Ljava/io/ByteArrayOutputStream;Ljava/io/DataOutputStream;Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Landroid/app/backup/BackupDataOutput;
-    .param p2    # Ljava/io/ByteArrayOutputStream;
-    .param p3    # Ljava/io/DataOutputStream;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -132,9 +113,6 @@
 # virtual methods
 .method public onBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V
     .locals 13
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -324,9 +302,6 @@
 
 .method public onRestore(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V
     .locals 18
-    .param p1    # Landroid/app/backup/BackupDataInput;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

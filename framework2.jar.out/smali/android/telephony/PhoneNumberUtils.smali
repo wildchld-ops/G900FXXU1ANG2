@@ -972,7 +972,6 @@
 
 .method public static DocomoNetworkPortionToCalledPartyBCD(Ljava/lang/String;)[B
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortion(Ljava/lang/String;)Ljava/lang/String;
 
@@ -989,8 +988,6 @@
 
 .method private static DocomoNumberToCalledPartyBCDHelper(Ljava/lang/String;Z)[B
     .locals 18
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
@@ -1297,7 +1294,6 @@
 
 .method private static KorMsgbcdToChar(B)C
     .locals 1
-    .param p0    # B
 
     const/16 v0, 0xa
 
@@ -1354,7 +1350,6 @@
 
 .method public static SetPlaceEmergencyCallInAirplanemode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/telephony/PhoneNumberUtils;->mPlaceEmergencyCallInAirplanemode:Z
 
@@ -1363,9 +1358,6 @@
 
 .method private static appendPwCharBackToOrigDialStr(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1406,8 +1398,6 @@
 
 .method public static assistedDialFromContactList(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
     .locals 28
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     const-string v5, "PhoneNumberUtils"
@@ -3317,8 +3307,6 @@
 
 .method public static assistedDialFromDialPad(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
     .locals 15
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     const-string v12, "PhoneNumberUtils"
@@ -3979,7 +3967,6 @@
 
 .method private static bcdToChar(B)C
     .locals 1
-    .param p0    # B
 
     const/16 v0, 0xa
 
@@ -4032,9 +4019,6 @@
 
 .method public static calledPartyBCDFragmentToString([BII)Ljava/lang/String;
     .locals 2
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4053,9 +4037,6 @@
 
 .method public static calledPartyBCDToString([BII)Ljava/lang/String;
     .locals 12
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const/4 v11, 0x5
 
@@ -4297,7 +4278,6 @@
 
 .method public static cdmaCheckAndProcessPlusCode(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4369,8 +4349,6 @@
 
 .method public static cdmaCheckAndProcessPlusCode(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4442,9 +4420,6 @@
 
 .method public static cdmaCheckAndProcessPlusCodeByNumberFormat(Ljava/lang/String;II)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -4573,10 +4548,6 @@
 
 .method public static cdmaCheckAndProcessPlusCodeByNumberFormat(Ljava/lang/String;IILandroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Context;
 
     const/4 v7, 0x1
 
@@ -4706,7 +4677,6 @@
 
 .method public static cdmaCheckAndProcessPlusCodeForSms(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -4760,7 +4730,6 @@
 
 .method private static charToBCD(C)I
     .locals 3
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -4839,9 +4808,6 @@
 
 .method private static checkPrefixIsIgnorable(Ljava/lang/String;II)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -4894,9 +4860,6 @@
 
 .method public static compare(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -4917,8 +4880,6 @@
 
 .method public static compare(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4931,9 +4892,6 @@
 
 .method public static compare(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -4954,8 +4912,6 @@
 
 .method public static compareLoosely(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -5409,8 +5365,6 @@
 
 .method public static compareStrictly(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -5423,9 +5377,6 @@
 
 .method public static compareStrictly(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 20
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p0, :cond_0
 
@@ -5827,7 +5778,6 @@
 
 .method public static convertAndStrip(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->convertKeypadLettersToDigits(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5842,7 +5792,6 @@
 
 .method public static convertKeypadLettersToDigits(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -5892,7 +5841,6 @@
 
 .method public static convertPreDial(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -5956,9 +5904,6 @@
 
 .method public static convertSMSDestinationAddress(Ljava/lang/String;Landroid/content/Context;I)Ljava/lang/String;
     .locals 17
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual/range {p0 .. p0}, Ljava/lang/String;->length()I
 
@@ -6835,7 +6780,6 @@
 
 .method public static extractNetworkPortion(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -6944,7 +6888,6 @@
 
 .method public static extractNetworkPortionAlt(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -7016,8 +6959,6 @@
 
 .method public static extractNetworkPortionchangePlusCode(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -7095,7 +7036,6 @@
 
 .method public static extractPostDialPortion(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -7149,7 +7089,6 @@
 
 .method private static findDialableIndexFromPostDialStr(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -7186,7 +7125,6 @@
 
 .method public static formatJapaneseNumber(Landroid/text/Editable;)V
     .locals 0
-    .param p0    # Landroid/text/Editable;
 
     invoke-static {p0}, Landroid/telephony/JapanesePhoneNumberFormatter;->format(Landroid/text/Editable;)V
 
@@ -7195,7 +7133,6 @@
 
 .method public static formatKRnpNumber(Landroid/text/Editable;)V
     .locals 13
-    .param p0    # Landroid/text/Editable;
 
     invoke-interface {p0}, Landroid/text/Editable;->length()I
 
@@ -8006,7 +7943,6 @@
 
 .method public static formatNanpNumber(Landroid/text/Editable;)V
     .locals 14
-    .param p0    # Landroid/text/Editable;
 
     invoke-interface {p0}, Landroid/text/Editable;->length()I
 
@@ -8265,7 +8201,6 @@
 
 .method public static formatNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
@@ -8290,8 +8225,6 @@
 
 .method public static formatNumber(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
@@ -8308,8 +8241,6 @@
 
 .method public static formatNumber(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "#"
 
@@ -8384,9 +8315,6 @@
 
 .method public static formatNumber(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -8503,8 +8431,6 @@
 
 .method public static formatNumber(Landroid/text/Editable;I)V
     .locals 6
-    .param p0    # Landroid/text/Editable;
-    .param p1    # I
 
     const/16 v5, 0x31
 
@@ -8604,8 +8530,6 @@
 
 .method public static formatNumberToE164(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getInstance()Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
@@ -8644,7 +8568,6 @@
 
 .method public static getCurrentOtaCountryIdd(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -8719,7 +8642,6 @@
 
 .method public static getCurrentOtaCountryNanp(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -8815,7 +8737,6 @@
 
 .method public static getEmergencyServiceCategory(Ljava/lang/String;)Ljava/lang/String;
     .locals 24
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -9314,7 +9235,6 @@
 
 .method public static getEmergencyServiceCategoryforkor(Ljava/lang/String;)Ljava/lang/String;
     .locals 30
-    .param p0    # Ljava/lang/String;
 
     const-string v17, "112,911,999,000,08,110,118,119,122,113,125,111,117"
 
@@ -11745,7 +11665,6 @@
 
 .method public static getFormatTypeForLocale(Ljava/util/Locale;)I
     .locals 2
-    .param p0    # Ljava/util/Locale;
 
     invoke-virtual {p0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
 
@@ -11760,7 +11679,6 @@
 
 .method protected static getFormatTypeFromCountryCode(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v2, Landroid/telephony/PhoneNumberUtils;->NANP_COUNTRIES:[Ljava/lang/String;
 
@@ -11812,7 +11730,6 @@
 
 .method public static getLTNContactsMatchLength(Landroid/content/Context;)I
     .locals 15
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x7
 
@@ -12147,8 +12064,6 @@
 
 .method public static getNumberFromIntent(Landroid/content/Intent;Landroid/content/Context;)Ljava/lang/String;
     .locals 13
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -12341,8 +12256,6 @@
 
 .method private static getOtaCountry(Landroid/content/Context;Z)Landroid/database/Cursor;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -12406,7 +12319,6 @@
 
 .method public static getStrippedReversed(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortionAlt(Ljava/lang/String;)Ljava/lang/String;
 
@@ -12433,7 +12345,6 @@
 
 .method public static getUsernameFromUriNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x40
 
@@ -12496,7 +12407,6 @@
 
 .method public static getVoiceMailNumberForGlobalMode(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x2
 
@@ -12708,7 +12618,6 @@
 
 .method private static indexOfLastNetworkChar(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -12745,10 +12654,6 @@
 
 .method private static internalCalledPartyBCDFragmentToString(Ljava/lang/StringBuilder;[BII)V
     .locals 5
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     move v2, p2
 
@@ -12809,8 +12714,6 @@
 
 .method private static internalGetStrippedReversed(Ljava/lang/String;I)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -12859,7 +12762,6 @@
 
 .method public static final is12Key(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -12892,7 +12794,6 @@
 
 .method public static isCheckInvalidNumber(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -12934,7 +12835,6 @@
 
 .method public static isCheckValidRange(C)Z
     .locals 2
-    .param p0    # C
 
     const/4 v0, 0x1
 
@@ -12982,7 +12882,6 @@
 
 .method private static isCountryCallingCode(I)Z
     .locals 1
-    .param p0    # I
 
     if-lez p0, :cond_0
 
@@ -13009,7 +12908,6 @@
 
 .method private static isDefaultPlusCode(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/16 v4, 0x31
 
@@ -13059,7 +12957,6 @@
 
 .method public static final isDialable(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -13100,7 +12997,6 @@
 
 .method public static isDialable(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -13139,7 +13035,6 @@
 
 .method public static isEmergencyNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -13162,8 +13057,6 @@
 
 .method public static isEmergencyNumber(Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isEmergencyNumber(Ljava/lang/String;)Z
 
@@ -13174,8 +13067,6 @@
 
 .method public static isEmergencyNumber(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isEmergencyNumber(Ljava/lang/String;)Z
 
@@ -13186,9 +13077,6 @@
 
 .method protected static isEmergencyNumberInternal(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isEmergencyNumber(Ljava/lang/String;)Z
 
@@ -13199,8 +13087,6 @@
 
 .method protected static isEmergencyNumberInternal(Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -13213,8 +13099,6 @@
 
 .method public static isExactOrPotentialLocalEmergencyNumber(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -13245,7 +13129,6 @@
 
 .method public static isGlobalPhoneNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -13274,7 +13157,6 @@
 
 .method public static isISODigit(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -13297,7 +13179,6 @@
 
 .method public static isLTNSpecialNumber(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -13346,8 +13227,6 @@
 
 .method public static isLocalEmergencyNumber(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isEmergencyNumber(Ljava/lang/String;)Z
 
@@ -13358,9 +13237,6 @@
 
 .method public static isLocalEmergencyNumber(Ljava/lang/String;Landroid/content/Context;I)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p0, p1}, Landroid/telephony/PhoneNumberUtils;->isLocalEmergencyNumber(Ljava/lang/String;Landroid/content/Context;)Z
 
@@ -13371,9 +13247,6 @@
 
 .method protected static isLocalEmergencyNumberInternal(Ljava/lang/String;Landroid/content/Context;Z)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const-string v3, "country_detector"
 
@@ -13455,7 +13328,6 @@
 
 .method private static isNanp(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/16 v4, 0xa
 
@@ -13531,7 +13403,6 @@
 
 .method public static final isNonSeparator(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -13580,7 +13451,6 @@
 
 .method protected static isNonSeparator(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -13619,7 +13489,6 @@
 
 .method private static isOneNanp(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -13663,7 +13532,6 @@
 
 .method private static isPause(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x70
 
@@ -13687,7 +13555,6 @@
 
 .method public static isPotentialEmergencyNumber(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isEmergencyNumber(Ljava/lang/String;)Z
 
@@ -13698,8 +13565,6 @@
 
 .method public static isPotentialEmergencyNumber(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isEmergencyNumber(Ljava/lang/String;)Z
 
@@ -13710,8 +13575,6 @@
 
 .method public static isPotentialLocalEmergencyNumber(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isEmergencyNumber(Ljava/lang/String;)Z
 
@@ -13722,9 +13585,6 @@
 
 .method public static isPotentialLocalEmergencyNumber(Ljava/lang/String;Landroid/content/Context;I)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p0, p1}, Landroid/telephony/PhoneNumberUtils;->isPotentialLocalEmergencyNumber(Ljava/lang/String;Landroid/content/Context;)Z
 
@@ -13735,7 +13595,6 @@
 
 .method public static final isReallyDialable(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -13772,7 +13631,6 @@
 
 .method private static isSeparator(C)Z
     .locals 1
-    .param p0    # C
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isDialable(C)Z
 
@@ -13811,7 +13669,6 @@
 
 .method public static final isStartsPostDial(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x2c
 
@@ -13835,7 +13692,6 @@
 
 .method private static isToneWait(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x77
 
@@ -13859,7 +13715,6 @@
 
 .method private static isTwoToNine(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x32
 
@@ -13882,7 +13737,6 @@
 
 .method public static isUriNumber(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -13916,7 +13770,6 @@
 
 .method public static isVoiceMailNumber(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -13994,8 +13847,6 @@
 
 .method public static isVoiceMailNumber(Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->isVoiceMailNumber(Ljava/lang/String;)Z
 
@@ -14006,8 +13857,6 @@
 
 .method public static isVoiceMailNumberForGlobalMode(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -14052,7 +13901,6 @@
 
 .method public static isWellFormedSmsAddress(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortion(Ljava/lang/String;)Ljava/lang/String;
 
@@ -14091,7 +13939,6 @@
 
 .method protected static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PhoneNumberUtils"
 
@@ -14102,8 +13949,6 @@
 
 .method private static matchIntlPrefix(Ljava/lang/String;I)Z
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v7, 0x31
 
@@ -14235,8 +14080,6 @@
 
 .method private static matchIntlPrefixAndCC(Ljava/lang/String;I)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v6, 0x31
 
@@ -14410,8 +14253,6 @@
 
 .method private static matchTrunkPrefix(Ljava/lang/String;I)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -14452,8 +14293,6 @@
 
 .method private static minPositive(II)I
     .locals 0
-    .param p0    # I
-    .param p1    # I
 
     if-ltz p0, :cond_2
 
@@ -14487,7 +14326,6 @@
 
 .method public static networkPortionToCalledPartyBCD(Ljava/lang/String;)[B
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortion(Ljava/lang/String;)Ljava/lang/String;
 
@@ -14504,7 +14342,6 @@
 
 .method public static networkPortionToCalledPartyBCDWithLength(Ljava/lang/String;)[B
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortion(Ljava/lang/String;)Ljava/lang/String;
 
@@ -14521,7 +14358,6 @@
 
 .method public static normalizeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -14630,7 +14466,6 @@
 
 .method public static numberToCalledPartyBCD(Ljava/lang/String;)[B
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -14643,8 +14478,6 @@
 
 .method private static numberToCalledPartyBCDHelper(Ljava/lang/String;Z)[B
     .locals 15
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -14813,8 +14646,6 @@
 
 .method public static processCLIRDigitsWithinNetworkDial(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/16 v10, 0x38
 
@@ -14948,8 +14779,6 @@
 
 .method private static processPlusCodeWithinNanp(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -15042,7 +14871,6 @@
 
 .method private static processPlusCodeWithinNanp(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -15098,8 +14926,6 @@
 
 .method private static processPlusCodeWithinNanp(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -15155,7 +14981,6 @@
 
 .method private static removeDashes(Landroid/text/Editable;)V
     .locals 3
-    .param p0    # Landroid/text/Editable;
 
     const/4 v0, 0x0
 
@@ -15191,7 +15016,6 @@
 
 .method public static replaceUnicodeDigits(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -15246,8 +15070,6 @@
 
 .method private static retrieveAssistedParams(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v11, 0x2
 
@@ -16041,8 +15863,6 @@
 
 .method private static startWithCountryCode(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -16215,8 +16035,6 @@
 
 .method public static stringFromStringAndTOA(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     if-nez p0, :cond_1
 
@@ -16270,7 +16088,6 @@
 
 .method public static stripSeparators(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -16336,7 +16153,6 @@
 
 .method public static toCallerIDMinMatch(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/telephony/PhoneNumberUtils;->extractNetworkPortionAlt(Ljava/lang/String;)Ljava/lang/String;
 
@@ -16471,7 +16287,6 @@
 
 .method public static toaFromString(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -16504,8 +16319,6 @@
 
 .method private static tryGetCountryCallingCodeAndNewIndex(Ljava/lang/String;Z)Landroid/telephony/PhoneNumberUtils$CountryCallingCodeAndNewIndex;
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/16 v10, 0x36
 
@@ -16725,7 +16538,6 @@
 
 .method private static tryGetISODigit(C)I
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -16748,8 +16560,6 @@
 
 .method private static tryGetTrunkPrefixOmittedIndex(Ljava/lang/String;I)I
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v3, -0x1
 

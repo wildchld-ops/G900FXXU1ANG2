@@ -172,7 +172,6 @@
 
 .method public static setAcConnected(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/ssrm/DeviceStatus;->sAcConnected:Z
 
@@ -181,7 +180,6 @@
 
 .method public static setBatteryRemaining(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/ssrm/DeviceStatus;->sBatteyRemaining:I
 
@@ -190,7 +188,6 @@
 
 .method public static setBatteryTemperature(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/ssrm/DeviceStatus;->sBatteyTemperature:I
 
@@ -199,7 +196,6 @@
 
 .method public static setPowerConnected(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/ssrm/DeviceStatus;->sPowerConnected:Z
 
@@ -208,7 +204,6 @@
 
 .method public static setPowerSavingMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/ssrm/DeviceStatus;->sPowerSavingMode:Z
 
@@ -217,7 +212,6 @@
 
 .method public static setUsbConnected(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/ssrm/DeviceStatus;->sUsbConnected:Z
 

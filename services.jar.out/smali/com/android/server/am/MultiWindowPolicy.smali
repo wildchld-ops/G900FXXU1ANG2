@@ -58,8 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityManagerService;
 
     const/4 v0, 0x0
 
@@ -256,8 +254,6 @@
 # virtual methods
 .method public applyMultiInstanceStyle(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/ActivityRecord;)V
     .locals 8
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v2, 0x0
 
@@ -447,8 +443,6 @@
 
 .method public applyMultiWindowLaunchStyle(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/ActivityRecord;)V
     .locals 12
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v11, 0x3
 
@@ -900,10 +894,6 @@
 
 .method public applyMultiWindowStyle(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ActivityRecord;Landroid/os/IBinder;)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 11
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
-    .param p3    # Lcom/android/server/am/ActivityRecord;
-    .param p4    # Landroid/os/IBinder;
 
     const/4 v4, 0x0
 
@@ -1915,9 +1905,6 @@
 
 .method public arrangeMultiWindowStyle(Lcom/android/server/am/ActivityStack;IZ)V
     .locals 5
-    .param p1    # Lcom/android/server/am/ActivityStack;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v4, 0x1
 
@@ -1999,8 +1986,6 @@
 
 .method public checkCenterBarPosition(IF)F
     .locals 8
-    .param p1    # I
-    .param p2    # F
 
     const v7, 0x3f666666
 
@@ -2083,7 +2068,6 @@
 
 .method findBaseZone(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0xf
 
@@ -2135,8 +2119,6 @@
 
 .method public getAvailableSplitStack(ILcom/samsung/android/multiwindow/MultiWindowStyle;)Lcom/android/server/am/ActivityStack;
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v4, 0x0
 
@@ -2217,8 +2199,6 @@
 
 .method public getEnableMultiInstance(Landroid/content/pm/ActivityInfo;Landroid/content/Intent;)Z
     .locals 8
-    .param p1    # Landroid/content/pm/ActivityInfo;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v7, 0x3
 
@@ -2347,9 +2327,6 @@
 
 .method public getRelativeStackId(Lcom/android/server/am/ActivityStack;IZ)I
     .locals 7
-    .param p1    # Lcom/android/server/am/ActivityStack;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -2515,8 +2492,6 @@
 
 .method public getRunningTaskCnt(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/TaskRecord;)I
     .locals 17
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/TaskRecord;
 
     const/4 v2, 0x0
 
@@ -2789,7 +2764,6 @@
 
 .method public getStackBoxPosition(Lcom/android/server/am/ActivityRecord;)I
     .locals 9
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v5, 0x5
 
@@ -2931,8 +2905,6 @@
 
 .method public getStackBoxWeight(II)F
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/am/MultiWindowPolicy;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 
@@ -3018,7 +2990,6 @@
 
 .method public isAvoidScaleApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     if-nez p1, :cond_0
 
@@ -3072,7 +3043,6 @@
 
 .method public isMultiWindowApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowPolicy;->mApplicationInfos:Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;
 
@@ -3085,7 +3055,6 @@
 
 .method public isNoTitleActivity(Landroid/content/pm/ActivityInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowPolicy;->mApplicationInfos:Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;
 
@@ -3100,7 +3069,6 @@
 
 .method public isSupportFullScreenMinimizable(Landroid/content/pm/ActivityInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowPolicy;->mApplicationInfos:Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;
 
@@ -3113,7 +3081,6 @@
 
 .method public isSupportPopupApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowPolicy;->mApplicationInfos:Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;
 
@@ -3126,7 +3093,6 @@
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowPolicy;->mApplicationInfos:Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;
 
@@ -3139,7 +3105,6 @@
 
 .method public setCenterBarPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     iput-object p1, p0, Lcom/android/server/am/MultiWindowPolicy;->mCenterBarPoint:Landroid/graphics/Point;
 
@@ -3154,7 +3119,6 @@
 
 .method public setCenterBarPointByOrientation(Landroid/graphics/Point;)V
     .locals 0
-    .param p1    # Landroid/graphics/Point;
 
     iput-object p1, p0, Lcom/android/server/am/MultiWindowPolicy;->mCenterBarPoint:Landroid/graphics/Point;
 
@@ -3163,7 +3127,6 @@
 
 .method public setFloatingBounds(Lcom/android/server/am/ActivityRecord;)V
     .locals 41
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v9, 0x0
 
@@ -3982,8 +3945,6 @@
 
 .method public setMultiWindowStyleToStack(Lcom/android/server/am/ActivityStack;Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 6
-    .param p1    # Lcom/android/server/am/ActivityStack;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     if-eqz p1, :cond_0
 

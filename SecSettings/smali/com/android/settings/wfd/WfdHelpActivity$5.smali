@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ZLandroid/nfc/NfcAdapter;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-boolean p2, p0, Lcom/android/settings/wfd/WfdHelpActivity$5;->val$desiredState:Z
 

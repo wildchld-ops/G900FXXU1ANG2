@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/detail/ContactHistoryListFragment;Landroid/content/Context;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/util/WeakAsyncTask;-><init>(Ljava/lang/Object;)V
 
@@ -65,8 +63,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
@@ -81,7 +77,6 @@
 
 .method protected varargs doInBackground(Lcom/samsung/contacts/detail/ContactHistoryListFragment;[Ljava/util/ArrayList;)Ljava/lang/Void;
     .locals 11
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -230,8 +225,6 @@
 
 .method protected onPostExecute(Lcom/samsung/contacts/detail/ContactHistoryListFragment;Ljava/lang/Void;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
-    .param p2    # Ljava/lang/Void;
 
     const/16 v1, 0x8
 
@@ -306,8 +299,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
@@ -320,7 +311,6 @@
 
 .method protected onPreExecute(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)V
     .locals 4
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment$DeleteTask;->context:Landroid/content/Context;
 
@@ -397,7 +387,6 @@
 
 .method protected bridge synthetic onPreExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 

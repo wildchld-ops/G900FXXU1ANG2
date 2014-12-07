@@ -46,12 +46,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApiProvider;Lcom/google/android/finsky/library/SQLiteLibrary;Lcom/google/android/finsky/library/Libraries;Landroid/os/Handler;Landroid/os/Handler;Z)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApiProvider;
-    .param p2    # Lcom/google/android/finsky/library/SQLiteLibrary;
-    .param p3    # Lcom/google/android/finsky/library/Libraries;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,9 +80,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/library/LibraryReplicatorsImpl;Lcom/google/android/finsky/library/AccountLibrary;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicatorsImpl;
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/library/LibraryReplicatorsImpl;->notifyListeners(Lcom/google/android/finsky/library/AccountLibrary;Ljava/lang/String;)V
 
@@ -97,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/library/LibraryReplicatorsImpl;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicatorsImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicatorsImpl;->mReplicators:Ljava/util/Map;
 
@@ -106,7 +96,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/library/LibraryReplicatorsImpl;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicatorsImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicatorsImpl;->mNotificationHandler:Landroid/os/Handler;
 
@@ -115,8 +104,6 @@
 
 .method private declared-synchronized notifyListeners(Lcom/google/android/finsky/library/AccountLibrary;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -163,7 +150,6 @@
 # virtual methods
 .method public declared-synchronized addListener(Lcom/google/android/finsky/library/LibraryReplicators$Listener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicators$Listener;
 
     monitor-enter p0
 
@@ -188,9 +174,6 @@
 
 .method public applyLibraryUpdate(Landroid/accounts/Account;Lcom/google/android/finsky/protos/Library$LibraryUpdate;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicatorsImpl;->mLibraries:Lcom/google/android/finsky/library/Libraries;
 
@@ -337,10 +320,6 @@
 
 .method public replicateAccount(Landroid/accounts/Account;[Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/google/android/finsky/library/LibraryReplicatorsImpl;->mLibraries:Lcom/google/android/finsky/library/Libraries;
 
@@ -365,8 +344,6 @@
 
 .method public replicateAllAccounts(Ljava/lang/Runnable;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicatorsImpl;->mLibraries:Lcom/google/android/finsky/library/Libraries;
 

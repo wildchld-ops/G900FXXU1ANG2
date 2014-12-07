@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lorg/apache/http/conn/scheme/SocketFactory;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/conn/scheme/SocketFactory;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,7 +98,6 @@
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -238,7 +234,6 @@
 
 .method public final resolvePort(I)I
     .locals 1
-    .param p1    # I
 
     if-lez p1, :cond_0
 

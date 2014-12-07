@@ -43,8 +43,6 @@
 
 .method public constructor <init>(Landroid/view/View;Z)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,8 +79,6 @@
 
 .method constructor <init>(Landroid/view/inputmethod/InputMethodManager;Z)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,7 +105,6 @@
 
 .method private convertBracket(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v5, 0x300b
 
@@ -391,7 +386,6 @@
 
 .method public static getComposingSpanEnd(Landroid/text/Spannable;)I
     .locals 1
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/view/inputmethod/BaseInputConnection;->COMPOSING:Ljava/lang/Object;
 
@@ -404,7 +398,6 @@
 
 .method public static getComposingSpanStart(Landroid/text/Spannable;)I
     .locals 1
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/view/inputmethod/BaseInputConnection;->COMPOSING:Ljava/lang/Object;
 
@@ -417,7 +410,6 @@
 
 .method private isBracketChar(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v0, "<>{}[]()\u00ab\u00bb\u300a\u300b"
 
@@ -446,8 +438,6 @@
 
 .method private isRTLText(Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v3, 0xa
 
@@ -775,7 +765,6 @@
 
 .method public static final removeComposingSpans(Landroid/text/Spannable;)V
     .locals 6
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v3, Landroid/view/inputmethod/BaseInputConnection;->COMPOSING:Ljava/lang/Object;
 
@@ -825,9 +814,6 @@
 
 .method private replaceText(Ljava/lang/CharSequence;IZ)V
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v6, -0x1
 
@@ -1108,7 +1094,6 @@
 
 .method public static setComposingSpans(Landroid/text/Spannable;)V
     .locals 2
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -1123,9 +1108,6 @@
 
 .method public static setComposingSpans(Landroid/text/Spannable;II)V
     .locals 8
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v7, 0x121
 
@@ -1205,7 +1187,6 @@
 
 .method public clearMetaKeyStates(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -1228,7 +1209,6 @@
 
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)Z
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     const/4 v0, 0x0
 
@@ -1237,7 +1217,6 @@
 
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)Z
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     const/4 v0, 0x0
 
@@ -1246,8 +1225,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1262,8 +1239,6 @@
 
 .method public deleteSurroundingText(II)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, -0x1
 
@@ -1405,7 +1380,6 @@
 
 .method public getCursorCapsMode(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1481,8 +1455,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;
     .locals 1
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1491,7 +1463,6 @@
 
 .method public getSelectedText(I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1545,8 +1516,6 @@
 
 .method public getTextAfterCursor(II)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -1621,8 +1590,6 @@
 
 .method public getTextBeforeCursor(II)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/inputmethod/BaseInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -1689,7 +1656,6 @@
 
 .method public performContextMenuAction(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1698,7 +1664,6 @@
 
 .method public performEditorAction(I)Z
     .locals 15
-    .param p1    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -1759,8 +1724,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -1775,7 +1738,6 @@
 
 .method public reportFullscreenMode(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/inputmethod/BaseInputConnection;->mIMM:Landroid/view/inputmethod/InputMethodManager;
 
@@ -1788,7 +1750,6 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v1, p0, Landroid/view/inputmethod/BaseInputConnection;->mIMM:Landroid/view/inputmethod/InputMethodManager;
 
@@ -1853,8 +1814,6 @@
 
 .method public setComposingRegion(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/16 v7, 0x121
 
@@ -1947,8 +1906,6 @@
 
 .method public setComposingText(Ljava/lang/CharSequence;I)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1959,8 +1916,6 @@
 
 .method public setSelection(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 

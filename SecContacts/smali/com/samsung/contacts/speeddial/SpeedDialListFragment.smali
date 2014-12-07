@@ -223,7 +223,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
 
     iget v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->mStartNumber:I
 
@@ -232,8 +231,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->mIsRangeChange:Z
 
@@ -242,7 +239,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->mSpdlRange:Landroid/widget/TextView;
 
@@ -251,7 +247,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;)Landroid/os/Parcelable;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->mListState:Landroid/os/Parcelable;
 
@@ -260,8 +255,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;Landroid/os/Parcelable;)Landroid/os/Parcelable;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
-    .param p1    # Landroid/os/Parcelable;
 
     iput-object p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->mListState:Landroid/os/Parcelable;
 
@@ -270,7 +263,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->mSpeedDialList:Landroid/widget/ListView;
 
@@ -279,7 +271,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->makedefaultList()V
 
@@ -288,8 +279,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;Landroid/database/Cursor;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->makeSpdlList(Landroid/database/Cursor;)V
 
@@ -390,7 +379,6 @@
 
 .method private makeSpdlList(Landroid/database/Cursor;)V
     .locals 19
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v7, 0x0
 
@@ -946,7 +934,6 @@
 # virtual methods
 .method protected deletespdl(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -1082,8 +1069,6 @@
 
 .method protected insertspdl(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     const/4 v4, 0x0
 
@@ -1156,7 +1141,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1167,7 +1151,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1271,9 +1254,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v4, 0x7f020162
 
@@ -1438,9 +1418,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1552,7 +1529,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment;->mSpeedDialList:Landroid/widget/ListView;
 

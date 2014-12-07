@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/UDPMessageChannel;Ljava/lang/String;I)V
     .locals 3
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/UDPMessageChannel$PingBackTimerTask;->this$0:Lgov/nist/javax/sip/stack/UDPMessageChannel;
 

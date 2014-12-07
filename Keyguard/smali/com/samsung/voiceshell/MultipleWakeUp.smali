@@ -52,7 +52,6 @@
 
 .method public static SetDataPath(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "MultipleWakeUp"
 
@@ -165,8 +164,6 @@
 
 .method public static getMultipleWakeUpIntent(ILandroid/content/Context;)Landroid/content/Intent;
     .locals 13
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -886,7 +883,6 @@
 
 .method public static readDataFromFile(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

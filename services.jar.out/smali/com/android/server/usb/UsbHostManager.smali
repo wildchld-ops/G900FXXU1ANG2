@@ -116,8 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/usb/UsbNotificationHandler;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/usb/UsbNotificationHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -208,7 +206,6 @@
 
 .method static synthetic access$000(Lcom/android/server/usb/UsbHostManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbHostManager;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbHostManager;->dealWithDevicesOnBootComplete()V
 
@@ -217,7 +214,6 @@
 
 .method static synthetic access$100(Lcom/android/server/usb/UsbHostManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbHostManager;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbHostManager;->monitorUsbHostBus()V
 
@@ -234,7 +230,6 @@
 
 .method static synthetic access$300(Lcom/android/server/usb/UsbHostManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbHostManager;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbHostManager;->getPowerManager()V
 
@@ -243,7 +238,6 @@
 
 .method static synthetic access$400(Lcom/android/server/usb/UsbHostManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbHostManager;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbHostManager;->turnOnLcd()V
 
@@ -260,7 +254,6 @@
 
 .method static synthetic access$600(Lcom/android/server/usb/UsbHostManager;)Lcom/android/server/usb/UsbNotificationHandler;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbHostManager;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbHostManager;->mHandler:Lcom/android/server/usb/UsbNotificationHandler;
 
@@ -269,7 +262,6 @@
 
 .method static synthetic access$700(Lcom/android/server/usb/UsbHostManager;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbHostManager;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbHostManager;->mLock:Ljava/lang/Object;
 
@@ -278,10 +270,6 @@
 
 .method private attachedUsbHostDock(Ljava/lang/String;III)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x3
 
@@ -888,7 +876,6 @@
 
 .method private detachedUsbHostDock(Ljava/lang/String;)V
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1475,8 +1462,6 @@
 
 .method private findUsbHostDevice(Ljava/lang/String;[I)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     iget-object v13, p0, Lcom/android/server/usb/UsbHostManager;->mLock:Ljava/lang/Object;
 
@@ -1659,8 +1644,6 @@
 
 .method private isBlackListed(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -1741,9 +1724,6 @@
 
 .method private isBlackListed(III)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -1770,7 +1750,6 @@
 
 .method private isBlackListed(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/usb/UsbHostManager;->mHostBlacklist:[Ljava/lang/String;
 
@@ -1842,14 +1821,6 @@
 
 .method private usbDeviceAdded(Ljava/lang/String;IIIII[I[I)V
     .locals 32
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [I
-    .param p8    # [I
 
     sget-object v4, Lcom/android/server/usb/UsbHostManager;->TAG:Ljava/lang/String;
 
@@ -2411,7 +2382,6 @@
 
 .method private usbDeviceRemoved(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/usb/UsbHostManager;->mLock:Ljava/lang/Object;
 
@@ -2481,11 +2451,6 @@
 # virtual methods
 .method displayNotification(Ljava/lang/String;IIIZ)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v8, 0x2
 
@@ -2687,8 +2652,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;)V
     .locals 22
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
 
     move-object/from16 v0, p0
 
@@ -3360,7 +3323,6 @@
 
 .method public getDeviceList(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v3, p0, Lcom/android/server/usb/UsbHostManager;->mLock:Ljava/lang/Object;
 
@@ -3422,7 +3384,6 @@
 
 .method public openDevice(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/usb/UsbHostManager;->mLock:Ljava/lang/Object;
 
@@ -3514,7 +3475,6 @@
 
 .method public setCurrentSettings(Lcom/android/server/usb/UsbSettingsManager;)V
     .locals 2
-    .param p1    # Lcom/android/server/usb/UsbSettingsManager;
 
     iget-object v1, p0, Lcom/android/server/usb/UsbHostManager;->mLock:Ljava/lang/Object;
 

@@ -107,7 +107,6 @@
 
 .method static synthetic access$5000(Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;)[J
     .locals 1
-    .param p0    # Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->socketSpeed:[J
 
@@ -116,8 +115,6 @@
 
 .method private getBlockForWithID(II)[J
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -355,7 +352,6 @@
 
 .method private getContinuousChunk(I)[J
     .locals 17
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -1165,7 +1161,6 @@
 
 .method private getMinNotReadBlock(I)[J
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1415,8 +1410,6 @@
 
 .method private getNewBuf(II)[J
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x4
 
@@ -1915,7 +1908,6 @@
 
 .method private statusToStr(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1969,8 +1961,6 @@
 # virtual methods
 .method public block(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -2196,8 +2186,6 @@
 
 .method public getNextHTTPBlock(ILorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;)[J
     .locals 30
-    .param p1    # I
-    .param p2    # Lorg/apache/http/impl/client/MultiSocketInputStream$DataBuffer;
 
     move-object/from16 v0, p0
 
@@ -3761,8 +3749,6 @@
 
 .method public setSpeed(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lorg/apache/http/impl/client/MultiSocketInputStream$BlockManager;->socketSpeed:[J
 

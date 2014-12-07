@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v1, -0x1
 
@@ -237,7 +236,6 @@
 # virtual methods
 .method public getPairedAccount(Ljava/lang/String;)Landroid/accounts/Account;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -271,7 +269,6 @@
 
 .method public getPairedAccountType(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -303,7 +300,6 @@
 
 .method public getSSOAccount(Ljava/lang/String;)Landroid/accounts/Account;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -337,7 +333,6 @@
 
 .method public declared-synchronized getSSOAccountEntry(Ljava/lang/String;)Lcom/android/settings/accounts/SnsAccountManager$SnsAccountEntry;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -425,7 +420,6 @@
 
 .method public getSSOAccountLabel(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -443,7 +437,6 @@
 
 .method public getSSOAccountType(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -461,7 +454,6 @@
 
 .method public getServiceAppName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -479,7 +471,6 @@
 
 .method public getSnsAccountType(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

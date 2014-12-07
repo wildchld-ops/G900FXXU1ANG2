@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -36,8 +35,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -48,9 +45,6 @@
 
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,7 +94,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpHost;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpHost;
 
     iget-object v0, p1, Lorg/apache/http/HttpHost;->hostname:Ljava/lang/String;
 
@@ -132,7 +125,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

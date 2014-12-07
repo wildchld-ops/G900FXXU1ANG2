@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -23,8 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -35,8 +32,6 @@
 # virtual methods
 .method public addExtraBadge(Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/protos/Doc$Image;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # Lcom/google/android/finsky/protos/Doc$Image;
 
     if-nez p2, :cond_0
 
@@ -117,11 +112,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 6
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
@@ -220,12 +210,6 @@
 
 .method public setPrimaryBadge(Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/api/model/DfeToc;ILcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/protos/DocAnnotations$Badge;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p5    # Lcom/google/android/finsky/protos/DocAnnotations$Badge;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/BadgeRow;->getBadgeSize()I
 

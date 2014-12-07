@@ -54,7 +54,6 @@
 # virtual methods
 .method public run(Lcom/google/android/finsky/receivers/PackageMonitorReceiver$PackageStatusListener;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver$PackageStatusListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/PackageMonitorReceiver$2;->val$packageName:Ljava/lang/String;
 
@@ -67,7 +66,6 @@
 
 .method public bridge synthetic run(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/receivers/PackageMonitorReceiver$PackageStatusListener;
 

@@ -118,7 +118,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v5, 0x1
 
@@ -235,8 +234,6 @@
 
 .method static synthetic access$002(Lcom/nuance/connect/service/manager/UpgradeManager;Z)Z
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/UpgradeManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->hasConnectivity:Z
 
@@ -455,7 +452,6 @@
 
 .method private processUpgradeAPKResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1432,8 +1428,6 @@
 
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1684,7 +1678,6 @@
 
 .method public onCancel(Lcom/nuance/connect/service/comm/Command;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     invoke-super {p0, p1}, Lcom/nuance/connect/service/manager/AbstractCommandManager;->onCancel(Lcom/nuance/connect/service/comm/Command;)V
 
@@ -1706,9 +1699,6 @@
 
 .method public onDownloadStatusResponse(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 
@@ -1762,7 +1752,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1790,7 +1779,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 
@@ -1923,7 +1911,6 @@
 
 .method public onIOExceptionResponse(Lcom/nuance/connect/service/comm/Command;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v2, 0x0
 
@@ -2018,7 +2005,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2173,7 +2159,6 @@
 
 .method protected processAckResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2246,7 +2231,6 @@
 
 .method protected processCheckResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2313,7 +2297,6 @@
 
 .method protected processStatusResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/UpgradeManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2440,8 +2423,6 @@
 
 .method public sendStatus(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->managerStartState:Lcom/nuance/connect/service/manager/AbstractCommandManager$ManagerState;
 

@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/MenuAppsGrid$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToHide;-><init>(Lcom/android/launcher2/MenuAppsGrid;)V
 

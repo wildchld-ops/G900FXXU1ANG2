@@ -26,7 +26,6 @@
 # virtual methods
 .method public save(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -171,7 +170,6 @@
 
 .method public setTutorialMode(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/impl/HelpContactEditorFragment;->mTutorialMode:I
 

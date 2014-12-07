@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/LoaderManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/LoaderManager;
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/group/GroupBrowseListAdapter;-><init>(Landroid/content/Context;Landroid/app/LoaderManager;)V
 
@@ -22,10 +20,6 @@
 # virtual methods
 .method protected bindChildView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Z
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/contacts/group/GroupBrowseListAdapter;->bindChildView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
 
@@ -46,10 +40,6 @@
 
 .method protected bindGroupView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Z
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/contacts/group/GroupBrowseListAdapter;->bindGroupView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
 
@@ -83,7 +73,6 @@
 
 .method public setCalllingPackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupBrowseListAdapter;->mCallingPackage:Ljava/lang/String;
 

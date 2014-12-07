@@ -75,7 +75,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v3, 0x0
 
@@ -190,7 +189,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/system/Connectivity;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/system/Connectivity;
 
     invoke-direct {p0}, Lcom/nuance/connect/system/Connectivity;->checkAvailableNetworkConnections()V
 
@@ -199,8 +197,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/system/Connectivity;I)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/system/Connectivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/system/Connectivity;->setStableCellularTime(I)V
 
@@ -209,8 +205,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/system/Connectivity;I)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/system/Connectivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/system/Connectivity;->setStableWifiTime(I)V
 
@@ -424,7 +418,6 @@
 
 .method private getStableConnectionRequirement(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/nuance/connect/system/Connectivity;->connectionChangeStableCellularRequirement:I
 
@@ -457,7 +450,6 @@
 
 .method private requireStableConnection(I)Z
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/nuance/connect/system/Connectivity;->requireStableCellularTime:Z
 
@@ -621,8 +613,6 @@
 
 .method private setNetworkState(Landroid/net/NetworkInfo;Lcom/nuance/connect/system/NetworkState;)Lcom/nuance/connect/system/NetworkState;
     .locals 10
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Lcom/nuance/connect/system/NetworkState;
 
     const/4 v9, 0x0
 
@@ -720,7 +710,6 @@
 
 .method private setStableCellularTime(I)V
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_2
 
@@ -767,7 +756,6 @@
 
 .method private setStableWifiTime(I)V
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_2
 
@@ -816,8 +804,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v2, p0, Lcom/nuance/connect/system/Connectivity;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -938,7 +924,6 @@
 
 .method public registerNetworkListener(Lcom/nuance/connect/system/NetworkListener;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/system/NetworkListener;
 
     iget-object v0, p0, Lcom/nuance/connect/system/Connectivity;->networkListeners:Ljava/util/Set;
 
@@ -949,7 +934,6 @@
 
 .method public unregisterNetworkListener(Lcom/nuance/connect/system/NetworkListener;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/system/NetworkListener;
 
     iget-object v0, p0, Lcom/nuance/connect/system/Connectivity;->networkListeners:Ljava/util/Set;
 

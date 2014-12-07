@@ -139,7 +139,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v5, 0x2
 
@@ -262,7 +261,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/LanguageManager;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -271,7 +269,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/manager/LanguageManager;)Lcom/nuance/connect/util/InstallMetadata;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager;->languageInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -280,7 +277,6 @@
 
 .method static synthetic access$1100(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/nuance/connect/service/manager/LanguageManager;->getTransactionName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -291,8 +287,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/service/manager/LanguageManager;Z)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/LanguageManager;->sendDownloadLanguagesStatus(Z)V
 
@@ -301,9 +295,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/service/manager/LanguageManager;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/manager/LanguageManager;->notifyUserOfFailedInstall(Ljava/lang/String;I)V
 
@@ -312,9 +303,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/service/manager/LanguageManager;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/manager/LanguageManager;->sendLanguageDownloadProgress(Ljava/lang/String;I)V
 
@@ -323,9 +311,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/service/manager/LanguageManager;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/manager/LanguageManager;->cleanUpFromFailedInstall(Ljava/lang/String;Z)V
 
@@ -334,8 +319,6 @@
 
 .method private cleanUpFromFailedInstall(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/LanguageManager;->languageInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -438,7 +421,6 @@
 
 .method private static getTransactionName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -495,8 +477,6 @@
 
 .method private notifyUserOfFailedInstall(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Landroid/os/Bundle;
 
@@ -656,7 +636,6 @@
 
 .method private processRequestLanguagesListResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v9, 0x1
 
@@ -984,7 +963,6 @@
 
 .method private processSendStatusResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     return-void
 .end method
@@ -1013,7 +991,6 @@
 
 .method private sendDownloadLanguagesStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -1058,8 +1035,6 @@
 
 .method private sendLanguageDownloadProgress(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/LanguageManager;->languageInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -1212,8 +1187,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -1234,7 +1207,6 @@
 
 .method public finishLanguageInstall(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/LanguageManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1499,7 +1471,6 @@
 
 .method public getLanguagePack(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/LanguageManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1623,7 +1594,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const/4 v8, 0x1
 
@@ -1962,7 +1932,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 
@@ -2173,9 +2142,6 @@
 
 .method public sendStatus(Ljava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/LanguageManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2260,7 +2226,6 @@
 
 .method public uninstallLanguage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2309,7 +2274,6 @@
 
 .method public uninstallLanguages(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/nuance/connect/service/manager/LanguageManager;->log:Lcom/nuance/connect/util/Logger$Log;
 

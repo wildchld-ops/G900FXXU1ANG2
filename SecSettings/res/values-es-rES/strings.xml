@@ -1379,7 +1379,7 @@ También puede mostrar u ocultar el controlador de multi window manteniendo puls
     <string name="usb_tethering_errored_subtext">Error de modem USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">El anclaje a red USB no se puede desactivar mientras esté usando SideSync. Al desactivar el anclaje a red USB se desactivará SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">El anclaje a red USB no se puede activar mientras esté usando SideSync. Al activar el anclaje a red USB se desactivará SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Modem Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Modem Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Compartiendo conexión Internet este dispositivo…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Conexión a Internet del dispositivo compartida con 1 dispositivo</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Conexión a Internet del dispositivo compartida con %d dispositivos</string>

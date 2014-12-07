@@ -40,7 +40,6 @@
 
 .method public static asByteArray(Ljava/util/UUID;)[B
     .locals 9
-    .param p0    # Ljava/util/UUID;
 
     const/16 v8, 0x10
 
@@ -105,7 +104,6 @@
 
 .method public static final base64ToString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -122,7 +120,6 @@
 
 .method public static bytesToString([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     const/4 v3, 0x1
 
@@ -155,7 +152,6 @@
 
 .method public static final decodeString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -178,8 +174,6 @@
 
 .method public static final decodeString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
@@ -200,7 +194,6 @@
 
 .method public static final decrypt([B)[B
     .locals 9
-    .param p0    # [B
 
     invoke-static {p0}, Lcom/nuance/connect/util/EncryptUtils;->decryptAESKey([B)[B
 
@@ -456,7 +449,6 @@
 
 .method private static decryptAESKey([B)[B
     .locals 11
-    .param p0    # [B
 
     const/16 v9, 0x10
 
@@ -739,7 +731,6 @@
 
 .method public static final decryptString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "75DE491A38FD348E06C1B0313A97CB00"
 
@@ -754,9 +745,6 @@
 
 .method public static final decryptString(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "UTF-8"
 
@@ -777,9 +765,6 @@
 
 .method public static final decryptString(Ljava/lang/String;[BI)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -808,9 +793,6 @@
 
 .method public static final decryptStringBase64(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
@@ -825,7 +807,6 @@
 
 .method public static final encodeByteArray([B)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -838,8 +819,6 @@
 
 .method public static final encodeByteArray([BI)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
@@ -850,7 +829,6 @@
 
 .method public static final encodeString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -863,8 +841,6 @@
 
 .method public static final encodeString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const-string v1, "UTF-8"
 
@@ -885,7 +861,6 @@
 
 .method public static final encryptString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "75DE491A38FD348E06C1B0313A97CB00"
 
@@ -900,9 +875,6 @@
 
 .method public static final encryptString(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p0, :cond_0
 
@@ -925,9 +897,6 @@
 
 .method public static final encryptStringBase64(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p0, :cond_0
 
@@ -956,7 +925,6 @@
 
 .method public static getBytesOfFile(Ljava/lang/String;)[B
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1115,7 +1083,6 @@
 
 .method public static final hashPassword(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     const-string v2, "SHA-1"
@@ -1188,7 +1155,6 @@
 
 .method public static final md5(Ljava/io/File;)Ljava/lang/String;
     .locals 23
-    .param p0    # Ljava/io/File;
 
     const/16 v19, 0x0
 
@@ -1889,7 +1855,6 @@
 
 .method public static final md5([B)Ljava/lang/String;
     .locals 9
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -2022,8 +1987,6 @@
 
 .method public static final secretDecrypt([B[B)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
-    .param p1    # [B
 
     :try_start_0
     new-instance v2, Ljavax/crypto/spec/SecretKeySpec;
@@ -2097,8 +2060,6 @@
 
 .method public static final secretEncrypt(Ljava/lang/String;Ljava/lang/String;)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v2, Ljavax/crypto/spec/SecretKeySpec;
@@ -2182,8 +2143,6 @@
 
 .method public static final secretEncrypt(Ljava/lang/String;[B)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     :try_start_0
     new-instance v2, Ljavax/crypto/spec/SecretKeySpec;
@@ -2257,7 +2216,6 @@
 
 .method public static sha1(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     const-string v4, "SHA1"
@@ -2348,7 +2306,6 @@
 
 .method public static shrinkUUID(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
@@ -2373,7 +2330,6 @@
 
 .method public static strToBytes(Ljava/lang/String;)[B
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 

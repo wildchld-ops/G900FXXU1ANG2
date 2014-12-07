@@ -14,9 +14,6 @@
 
 .method public static getViewBySelector(IZZ)I
     .locals 3
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -101,7 +98,6 @@
 
 .method private static selectItemIndexForContentsShared(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -155,7 +151,6 @@
 
 .method private static selectItemIndexForOrange(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -201,7 +196,6 @@
 
 .method private static selectItemIndexForVVM(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -255,8 +249,6 @@
 
 .method public static setRenameViewbyArray(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     return-void
 .end method

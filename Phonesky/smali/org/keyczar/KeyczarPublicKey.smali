@@ -6,7 +6,6 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lorg/keyczar/KeyczarKey;-><init>(I)V
 

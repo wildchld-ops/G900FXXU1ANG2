@@ -22,7 +22,6 @@
 
 .method public static IsFileExist(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 

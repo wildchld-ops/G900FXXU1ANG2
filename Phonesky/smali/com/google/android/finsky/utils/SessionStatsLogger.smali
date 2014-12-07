@@ -10,7 +10,6 @@
 # direct methods
 .method public static logSessionStatsIfNecessary(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v1, Lcom/google/android/finsky/utils/SessionStatsLogger;->sHaveLoggedSessionStats:Z
 
@@ -62,7 +61,6 @@
 
 .method private static logSessionStatsImpl(Landroid/content/Context;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v8, 0x0
 

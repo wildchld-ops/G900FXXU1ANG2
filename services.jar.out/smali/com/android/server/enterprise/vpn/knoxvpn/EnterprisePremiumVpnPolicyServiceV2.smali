@@ -273,7 +273,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -390,7 +389,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Lcom/mocana/vpn/android/velo/IEnterpriseMocanaVpnService;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mMocanaService:Lcom/mocana/vpn/android/velo/IEnterpriseMocanaVpnService;
 
@@ -399,8 +397,6 @@
 
 .method static synthetic access$002(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Lcom/mocana/vpn/android/velo/IEnterpriseMocanaVpnService;)Lcom/mocana/vpn/android/velo/IEnterpriseMocanaVpnService;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Lcom/mocana/vpn/android/velo/IEnterpriseMocanaVpnService;
 
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mMocanaService:Lcom/mocana/vpn/android/velo/IEnterpriseMocanaVpnService;
 
@@ -417,7 +413,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->runAllVpnService()V
 
@@ -426,7 +421,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->handleMocanaServiceDisconnect()V
 
@@ -435,7 +429,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Lcom/android/server/enterprise/storage/EdmStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mEDMStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -444,8 +437,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->removeVpnConnectionForPerAppVpn(Ljava/lang/String;)Z
 
@@ -456,8 +447,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->removeVpnConnectionAfterAdminRemoval(Ljava/lang/String;)V
 
@@ -466,7 +455,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$LooperThread;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->getLooperThread()Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$LooperThread;
 
@@ -477,7 +465,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$LooperThread;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mLooperThread:Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$LooperThread;
 
@@ -486,7 +473,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->addIptableBlockingRulesAfterBootComplete()V
 
@@ -495,7 +481,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->profileNameVpnMap:Ljava/util/HashMap;
 
@@ -504,7 +489,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnFirewallHelper;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mFirewallHelper:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnFirewallHelper;
 
@@ -513,7 +497,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnInterfaceList;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->vpninterfacelist:Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnInterfaceList;
 
@@ -522,8 +505,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;I)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->startUidOfPersona(I)I
 
@@ -534,8 +515,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;I)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->stopUidOfPersona(I)I
 
@@ -546,11 +525,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->setDnsSystemProperty(Ljava/lang/String;IILjava/lang/String;)V
 
@@ -559,7 +533,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->profileErrorMessage:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -568,7 +541,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->createNotification()V
 
@@ -577,7 +549,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->cancelNotification()V
 
@@ -586,10 +557,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->unsetDnsSystemProperty(Ljava/lang/String;II)V
 
@@ -598,9 +565,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->createNotification(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -609,7 +573,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->printPackageVpnMap()V
 
@@ -618,7 +581,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->printProfileVpnMap()V
 
@@ -635,7 +597,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mKnoxVpnHelper:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;
 
@@ -644,7 +605,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->kvpn_install_type:Z
 
@@ -653,7 +613,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->checkIfProfileExist()Z
 
@@ -664,9 +623,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->updatePackageData(Ljava/lang/String;I)Z
 
@@ -677,9 +633,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;I)Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->getVpnObjectFromDB(Ljava/lang/String;I)Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;
 
@@ -690,8 +643,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->addToHashMap(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;)V
 
@@ -700,8 +651,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->refreshDomainInHashMap(Ljava/lang/String;)V
 
@@ -710,7 +659,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->findUid()I
 
@@ -721,7 +669,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->packageNameVpnMap:Ljava/util/HashMap;
 
@@ -730,8 +677,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->deleteUIDFromPackageData(Ljava/lang/String;)Z
 
@@ -742,8 +687,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->removeFromHashMapByPackageName(Ljava/lang/String;)V
 
@@ -752,7 +695,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->createVpnFromDatabase()V
 
@@ -761,7 +703,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     iget v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->addAllorPerAppFlag:I
 
@@ -770,8 +711,6 @@
 
 .method static synthetic access$4002(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;I)I
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->addAllorPerAppFlag:I
 
@@ -780,8 +719,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->checkIfProfileAddedAllPackagesToVpn(Ljava/lang/String;)Z
 
@@ -792,8 +729,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->clearDatabaseAfterContainerRemoval(I)V
 
@@ -802,7 +737,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->setupIntentFilter()V
 
@@ -811,7 +745,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->initializeHashtable()V
 
@@ -820,7 +753,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->checkVpnModeOfOperationAfterNewinstall()Z
 
@@ -831,7 +763,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->checkPackagesOnStartup()V
 
@@ -848,7 +779,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->printVpnState()V
 
@@ -857,7 +787,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->isNetworkConnected()Z
 
@@ -1081,7 +1010,6 @@
 
 .method private addToHashMap(Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;)V
     .locals 8
-    .param p1    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;
 
     sget-object v7, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->syncObj:Ljava/lang/Object;
 
@@ -1181,8 +1109,6 @@
 
 .method private addVpnProfileToDatabase(ILcom/sec/enterprise/knox/EnterprisePremiumVpnConnection;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/EnterprisePremiumVpnConnection;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1779,7 +1705,6 @@
 
 .method private byteArrayToArrayListConverter(Ljava/lang/String;)Ljava/util/List;
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2142,7 +2067,6 @@
 
 .method private checkForSystemUIDApplicationForVpn(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2216,8 +2140,6 @@
 
 .method private checkIfAdminHasVpnPermission(ILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mContext:Landroid/content/Context;
 
@@ -2355,7 +2277,6 @@
 
 .method private checkIfContainerHasAddAllPackagesEnabled(I)Z
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x1
 
@@ -2503,7 +2424,6 @@
 
 .method private checkIfContainerHasPerApplicationEnabled(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2649,7 +2569,6 @@
 
 .method private checkIfProfileAddedAllPackagesToVpn(Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v13, 0x1
 
@@ -2883,8 +2802,6 @@
 
 .method private checkIfProfileHasAddAllPackagesEnabled(Ljava/lang/String;I)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -3042,7 +2959,6 @@
 
 .method private checkIfProfileHasDefaultRouteEnabled(Ljava/lang/String;)I
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -3489,7 +3405,6 @@
 
 .method private clearDatabaseAfterContainerRemoval(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -3588,7 +3503,6 @@
 
 .method private convertIntegerToBooleanInDatabase(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -4140,8 +4054,6 @@
 
 .method private createNotification(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -4775,7 +4687,6 @@
 
 .method private deleteUIDFromPackageData(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -4836,7 +4747,6 @@
 
 .method private declared-synchronized getCidFromDatabase(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5064,7 +4974,6 @@
 
 .method private getKnoxTunName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -5299,8 +5208,6 @@
 
 .method private getUidOfPackageWithUserId(Ljava/lang/String;I)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, -0x1
 
@@ -5344,7 +5251,6 @@
 
 .method private getUserIdOfPackage(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -5388,8 +5294,6 @@
 
 .method private getVpnObjectFromDB(Ljava/lang/String;I)Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -5962,8 +5866,6 @@
 
 .method private handleMocanaServiceDisconnectForContainerPackages(Ljava/lang/String;Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2$VpnState;
 
     const/4 v0, 0x0
 
@@ -6621,7 +6523,6 @@
 
 .method private insertFipsModeInDatabase(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -6749,7 +6650,6 @@
 
 .method private isPackageInstalled(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -6850,8 +6750,6 @@
 
 .method private isPackageInstalledInPersona(Ljava/lang/String;I)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -6972,7 +6870,6 @@
 
 .method private killVpnService(I)V
     .locals 0
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/Process;->killProcess(I)V
 
@@ -7748,7 +7645,6 @@
 
 .method private refreshDomainInHashMap(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     sget-object v6, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->mNotificationMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -8012,7 +7908,6 @@
 
 .method private removeFromHashMapByPackageName(Ljava/lang/String;)V
     .locals 20
-    .param p1    # Ljava/lang/String;
 
     sget-object v17, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->syncObj:Ljava/lang/Object;
 
@@ -8681,7 +8576,6 @@
 
 .method private removeFromHashMapByProfileName(Ljava/lang/String;)V
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     sget-object v16, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->syncObj:Ljava/lang/Object;
 
@@ -9130,7 +9024,6 @@
 
 .method private removeVpnConnectionAfterAdminRemoval(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -9223,7 +9116,6 @@
 
 .method private removeVpnConnectionForPerAppVpn(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -9368,7 +9260,6 @@
 
 .method private restartPerAppVpnService(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -9923,10 +9814,6 @@
 
 .method private setDnsSystemProperty(Ljava/lang/String;IILjava/lang/String;)V
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     if-eqz p1, :cond_8
 
@@ -10379,7 +10266,6 @@
 
 .method private startUidOfPersona(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -10620,7 +10506,6 @@
 
 .method private stopUidOfPersona(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -10728,7 +10613,6 @@
 
 .method private stopVpnConnectionAfterAdminRemoval(I)V
     .locals 18
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -10989,7 +10873,6 @@
 
 .method private stopVpnConnectionIfContainerRemoved(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -11267,9 +11150,6 @@
 
 .method private unsetDnsSystemProperty(Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v4, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
 
@@ -11392,8 +11272,6 @@
 
 .method private updateFipsModeInDatabase(IZ)Z
     .locals 14
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, -0x1
 
@@ -11536,9 +11414,6 @@
 
 .method private declared-synchronized updateNotification(Ljava/lang/String;IZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -11670,8 +11545,6 @@
 
 .method private declared-synchronized updatePackageData(Ljava/lang/String;I)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -12076,8 +11949,6 @@
 # virtual methods
 .method public declared-synchronized addAllPackagesToProfile(ILjava/lang/String;)Z
     .locals 23
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -13004,9 +12875,6 @@
 
 .method public addVpnProfileToApp(ILjava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 28
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -14152,7 +14020,6 @@
 
 .method public containerPackageListFromVpnDatabase(I)[Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -14289,9 +14156,6 @@
 
 .method public enableDefaultRoute(Ljava/lang/String;Ljava/lang/String;Z)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14443,7 +14307,6 @@
 
 .method public declared-synchronized getAllEnterpriseVpnConnections(Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14595,8 +14458,6 @@
 
 .method public getAllPackagesForProfile(ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 19
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -14882,8 +14743,6 @@
 
 .method public getCACertificate(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15023,7 +14882,6 @@
 
 .method public getDomainsByProfileName(Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15049,8 +14907,6 @@
 
 .method public declared-synchronized getEnterpriseVpnConnection(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15209,8 +15065,6 @@
 
 .method public getErrorString(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15345,8 +15199,6 @@
 
 .method public getForwardRoutes(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15488,7 +15340,6 @@
 
 .method public getInstalledPackages(I)[Ljava/lang/String;
     .locals 16
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->getPackageManager()Landroid/content/pm/IPackageManager;
@@ -15618,7 +15469,6 @@
 
 .method public getProfilesByDomain(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15703,8 +15553,6 @@
 
 .method public getState(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15839,8 +15687,6 @@
 
 .method public getUserCertificate(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16110,8 +15956,6 @@
 
 .method public isDefaultRouteEnabled(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16268,7 +16112,6 @@
 
 .method public notifyContainerAppLaunch(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
 
@@ -16281,7 +16124,6 @@
 
 .method public onAdminAdded(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -16366,7 +16208,6 @@
 
 .method public onAdminRemoved(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
 
@@ -16397,8 +16238,6 @@
 
 .method public onContainerCreation(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
 
@@ -16443,8 +16282,6 @@
 
 .method public onContainerRemoved(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
 
@@ -16489,7 +16326,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
 
@@ -16551,8 +16387,6 @@
 
 .method public onPreContainerRemoval(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
 
@@ -16597,9 +16431,6 @@
 
 .method public declared-synchronized removeEnterpriseVpnConnection(Ljava/lang/String;Ljava/lang/String;Lcom/mocana/vpn/android/velo/IEnterpriseStatusCallback;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/mocana/vpn/android/velo/IEnterpriseStatusCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16924,8 +16755,6 @@
 
 .method public removeVpnForApplication(ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -17252,10 +17081,6 @@
 
 .method public setCACertificate(Ljava/lang/String;Ljava/lang/String;[BLjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17411,7 +17236,6 @@
 
 .method public setDnsToVpn(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17458,8 +17282,6 @@
 
 .method public declared-synchronized setEnterprisePremiumVpnConnection(Lcom/sec/enterprise/knox/EnterprisePremiumVpnConnection;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 11
-    .param p1    # Lcom/sec/enterprise/knox/EnterprisePremiumVpnConnection;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17977,8 +17799,6 @@
 
 .method public setForwardRoutes(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18133,10 +17953,6 @@
 
 .method public setUserCertificate(Ljava/lang/String;Ljava/lang/String;[BLjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18292,7 +18108,6 @@
 
 .method public setVpnFrameworkSystemProperty(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "net.vpn.framework"
 
@@ -18303,7 +18118,6 @@
 
 .method public declared-synchronized setVpnModeOfOperation(Z)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 11
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -18576,9 +18390,6 @@
 
 .method public startConnection(Ljava/lang/String;Ljava/lang/String;Lcom/mocana/vpn/android/velo/IEnterpriseStatusCallback;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/mocana/vpn/android/velo/IEnterpriseStatusCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18798,9 +18609,6 @@
 
 .method public stopConnection(Ljava/lang/String;Ljava/lang/String;Lcom/mocana/vpn/android/velo/IEnterpriseStatusCallback;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/mocana/vpn/android/velo/IEnterpriseStatusCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

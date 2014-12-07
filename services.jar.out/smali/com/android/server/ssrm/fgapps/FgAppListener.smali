@@ -140,9 +140,6 @@
 
 .method protected static fileIntToSysfs(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -245,8 +242,6 @@
 
 .method protected static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/ssrm/SSRMUtil;->logOnEng(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -255,9 +250,6 @@
 
 .method public static notifyFgAppChanged(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v3, Lcom/android/server/ssrm/fgapps/FgAppListener;->instances:Ljava/util/Map;
 
@@ -307,7 +299,6 @@
 
 .method public static onBrowserDashModeForAll(Z)V
     .locals 4
-    .param p0    # Z
 
     sget-object v3, Lcom/android/server/ssrm/fgapps/FgAppListener;->instances:Ljava/util/Map;
 
@@ -357,9 +348,6 @@
 
 .method private onFgAppChangedImpl(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     sget-object v1, Lcom/android/server/ssrm/fgapps/FgAppListener;->mContext:Landroid/content/Context;
 
@@ -413,8 +401,6 @@
 
 .method public static onReceiveForAll(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v3, Lcom/android/server/ssrm/fgapps/FgAppListener;->instances:Ljava/util/Map;
 
@@ -464,7 +450,6 @@
 
 .method public static onSIPVisibilityChangedForAll(Z)V
     .locals 4
-    .param p0    # Z
 
     sget-object v3, Lcom/android/server/ssrm/fgapps/FgAppListener;->mScenarioInfo:Lcom/android/server/ssrm/fgapps/FgAppListener$ScenarioInfo;
 
@@ -524,7 +509,6 @@
 
 .method public static onUsbConnectionStatusChangedForAll(Z)V
     .locals 4
-    .param p0    # Z
 
     sget-object v3, Lcom/android/server/ssrm/fgapps/FgAppListener;->mScenarioInfo:Lcom/android/server/ssrm/fgapps/FgAppListener$ScenarioInfo;
 
@@ -591,7 +575,6 @@
 
 .method public static register(Ljava/lang/Class;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/fgapps/FgAppListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -624,8 +607,6 @@
 
 .method protected static writeStringToSysfs(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "Monitor"
 
@@ -779,7 +760,6 @@
 # virtual methods
 .method protected addPackage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ssrm/fgapps/FgAppListener;->mPackagesMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -824,7 +804,6 @@
 
 .method protected isPackageExist(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -853,16 +832,12 @@
 
 .method protected onBrowserDashMode(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/server/ssrm/fgapps/FgAppListener;
 
     const/4 v8, 0x0
 
@@ -1182,8 +1157,6 @@
 
 .method readFromSysfs(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/server/ssrm/SSRMUtil;->readSysfs(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 

@@ -78,12 +78,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;)V
     .locals 13
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -214,13 +208,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;F)V
     .locals 13
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
-    .param p7    # F
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -341,14 +328,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;FI)V
     .locals 13
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
-    .param p7    # F
-    .param p8    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -469,15 +448,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;FIZ)V
     .locals 13
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
-    .param p7    # F
-    .param p8    # I
-    .param p9    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -602,10 +572,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
 
     const/high16 v1, 0x41a80000
 
@@ -698,11 +664,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;F)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
-    .param p5    # F
 
     const/4 v8, 0x1
 
@@ -785,12 +746,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;FI)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
-    .param p5    # F
-    .param p6    # I
 
     const/4 v8, 0x1
 
@@ -871,13 +826,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;FIZ)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
-    .param p5    # F
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
 
@@ -974,8 +922,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
 
     const/high16 v1, 0x41a80000
 
@@ -1066,10 +1012,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;FI)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
-    .param p4    # I
 
     const/4 v8, 0x1
 
@@ -1150,11 +1092,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;FIZ)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v8, 0x1
 
@@ -1237,9 +1174,6 @@
 
 .method static getBreakIndex(Landroid/graphics/Paint;Ljava/lang/String;F)I
     .locals 5
-    .param p0    # Landroid/graphics/Paint;
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -1306,8 +1240,6 @@
 
 .method public static getIndexOfDelimiters(Ljava/lang/String;I)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -1370,8 +1302,6 @@
 
 .method public static getLastIndexOfDelimiters(Ljava/lang/String;I)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -1434,10 +1364,6 @@
 
 .method public static measureRows(FLjava/lang/String;FLandroid/graphics/Typeface;)I
     .locals 11
-    .param p0    # F
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # Landroid/graphics/Typeface;
 
     if-nez p1, :cond_0
 
@@ -1948,7 +1874,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -1959,8 +1884,6 @@
 
 .method public setAlign(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x3
 
@@ -2179,7 +2102,6 @@
 
 .method public setBold(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2195,8 +2117,6 @@
 
 .method public setBoldColor(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2212,7 +2132,6 @@
 
 .method public setColor(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/TwGLText;->mColor:I
 
@@ -2238,7 +2157,6 @@
 
 .method public setFadingEdge(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2254,7 +2172,6 @@
 
 .method public setFadingEdgeWidth(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2270,7 +2187,6 @@
 
 .method public setFontSize(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/TwGLText;->mSize:F
 
@@ -2302,7 +2218,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 3
-    .param p1    # F
 
     monitor-enter p0
 
@@ -2354,7 +2269,6 @@
 
 .method public setPaddings(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setPaddings(Landroid/graphics/Rect;)V
 
@@ -2414,7 +2328,6 @@
 
 .method public setShadowColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2430,11 +2343,6 @@
 
 .method public setShadowLayer(ZFFFI)V
     .locals 6
-    .param p1    # Z
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2460,8 +2368,6 @@
 
 .method public setShadowOffset(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2477,7 +2383,6 @@
 
 .method public setShadowRadius(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2493,7 +2398,6 @@
 
 .method public setShadowVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2511,8 +2415,6 @@
 
 .method public setSize(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->setSize(FF)V
 
@@ -2570,7 +2472,6 @@
 
 .method public final setStringName(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLView;->mGLContext:Lcom/sec/android/glview/TwGLContext;
 
@@ -2606,9 +2507,6 @@
 
 .method public setStroke(ZFI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # F
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2624,7 +2522,6 @@
 
 .method public setStrokeColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2640,7 +2537,6 @@
 
 .method public setStrokeVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2656,7 +2552,6 @@
 
 .method public setStrokeWidth(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2672,7 +2567,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -2737,9 +2631,6 @@
 
 .method public setText(Ljava/lang/String;FI)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
 
     if-nez p1, :cond_1
 
@@ -2796,7 +2687,6 @@
 
 .method public setTextFont(Landroid/graphics/Typeface;)V
     .locals 1
-    .param p1    # Landroid/graphics/Typeface;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2807,7 +2697,6 @@
 
 .method public setTextScaleX(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLText;->mString:Lcom/sec/android/glview/TwGLStringTexture;
 
@@ -2823,7 +2712,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 3
-    .param p1    # F
 
     monitor-enter p0
 

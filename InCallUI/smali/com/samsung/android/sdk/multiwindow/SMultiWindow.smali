@@ -110,7 +110,6 @@
 # virtual methods
 .method public isFeatureEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 

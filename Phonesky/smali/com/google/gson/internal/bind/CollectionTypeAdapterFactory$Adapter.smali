@@ -53,8 +53,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/gson/internal/bind/CollectionTypeAdapterFactory;Lcom/google/gson/Gson;Ljava/lang/reflect/Type;Lcom/google/gson/TypeAdapter;Lcom/google/gson/internal/ObjectConstructor;)V
     .locals 1
-    .param p2    # Lcom/google/gson/Gson;
-    .param p3    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -88,7 +86,6 @@
 # virtual methods
 .method public bridge synthetic read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -104,7 +101,6 @@
 
 .method public read(Lcom/google/gson/stream/JsonReader;)Ljava/util/Collection;
     .locals 4
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -172,8 +168,6 @@
 
 .method public bridge synthetic write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -189,7 +183,6 @@
 
 .method public write(Lcom/google/gson/stream/JsonWriter;Ljava/util/Collection;)V
     .locals 3
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

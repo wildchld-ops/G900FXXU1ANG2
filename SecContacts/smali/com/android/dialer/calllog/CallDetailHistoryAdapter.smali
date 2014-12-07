@@ -81,11 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/LayoutInflater;[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;ZLandroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/LayoutInflater;
-    .param p3    # [Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p4    # Z
-    .param p5    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -180,7 +175,6 @@
 
 .method static synthetic access$000(Lcom/android/dialer/calllog/CallDetailHistoryAdapter;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallDetailHistoryAdapter;->mControls:Landroid/view/View;
 
@@ -189,7 +183,6 @@
 
 .method static synthetic access$100(Lcom/android/dialer/calllog/CallDetailHistoryAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallDetailHistoryAdapter;->mContext:Landroid/content/Context;
 
@@ -198,8 +191,6 @@
 
 .method private adjustListItemLayoutBy7FontSize(Landroid/content/Context;Landroid/widget/TextView;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/TextView;
 
     const/16 v3, 0x140
 
@@ -278,7 +269,6 @@
 
 .method private canPlaceCallsTo(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -420,7 +410,6 @@
 
 .method private formatDuration(J)Ljava/lang/String;
     .locals 11
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -811,7 +800,6 @@
 
 .method private getCallTypeDrawable(I)I
     .locals 3
-    .param p1    # I
 
     const v0, 0x7f020170
 
@@ -888,7 +876,6 @@
 
 .method private getSMSExistence(J)Z
     .locals 10
-    .param p1    # J
 
     const/4 v9, 0x1
 
@@ -999,9 +986,6 @@
 
 .method private initVVM(ILjava/lang/String;Landroid/view/View;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallDetailHistoryAdapter;->mContext:Landroid/content/Context;
 
@@ -1026,7 +1010,6 @@
 
 .method private isAutoBlockedLog(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x1
 
@@ -1132,7 +1115,6 @@
 
 .method private static toOneDigitChar(J)I
     .locals 4
-    .param p0    # J
 
     const-string v0, "%01d"
 
@@ -1222,7 +1204,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1243,7 +1224,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1262,7 +1242,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -2089,7 +2068,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/dialer/calllog/CallDetailHistoryAdapter;->bDeleteView:Z
 
@@ -2108,7 +2086,6 @@
 
 .method public setScrollState(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CallDetailHistoryAdapter"
 
@@ -2139,7 +2116,6 @@
 
 .method public updateData([Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;)V
     .locals 3
-    .param p1    # [Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
     iput-object p1, p0, Lcom/android/dialer/calllog/CallDetailHistoryAdapter;->mPhoneCallDetailsImpl:[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 

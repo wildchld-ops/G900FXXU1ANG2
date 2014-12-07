@@ -55,7 +55,6 @@
 
 .method public static limitMaxBrightness(I)V
     .locals 4
-    .param p0    # I
 
     const-string v1, "SSRMv2:PreMonitor"
 
@@ -105,7 +104,6 @@
 
 .method public static limitMaxButtonBrightness(I)V
     .locals 4
-    .param p0    # I
 
     const-string v1, "SSRMv2:PreMonitor"
 

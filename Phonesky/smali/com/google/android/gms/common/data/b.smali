@@ -59,7 +59,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -119,7 +118,6 @@
 
 .method protected getInteger(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/gms/common/data/b;->mDataHolder:Lcom/google/android/gms/common/data/d;
 
@@ -136,7 +134,6 @@
 
 .method protected getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/gms/common/data/b;->mDataHolder:Lcom/google/android/gms/common/data/d;
 

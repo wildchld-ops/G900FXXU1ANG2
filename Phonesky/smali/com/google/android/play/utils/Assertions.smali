@@ -6,8 +6,6 @@
 # direct methods
 .method public static checkArgument(ZLjava/lang/String;)V
     .locals 1
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -28,8 +26,6 @@
 
 .method public static checkState(ZLjava/lang/String;)V
     .locals 1
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;

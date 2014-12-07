@@ -57,11 +57,6 @@
 # direct methods
 .method public constructor <init>(IIILjava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -138,11 +133,6 @@
 
 .method private generateHashCode(IILjava/lang/String;JLjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     const/4 v0, 0x6
 
@@ -199,9 +189,6 @@
 
 .method public static getCompoundKey(III)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -252,8 +239,6 @@
 
 .method public static getPrimaryKey(II)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -292,7 +277,6 @@
 # virtual methods
 .method public compareTo(Lcom/nuance/connect/internal/common/Document;)I
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/common/Document;
 
     iget v0, p0, Lcom/nuance/connect/internal/common/Document;->type:I
 
@@ -334,7 +318,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/nuance/connect/internal/common/Document;
 
@@ -347,7 +330,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -525,7 +507,6 @@
 
 .method public setAcceptedTimestamp(J)V
     .locals 7
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/nuance/connect/internal/common/Document;->acceptedTimestamp:J
 

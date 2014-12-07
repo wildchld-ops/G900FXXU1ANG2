@@ -50,7 +50,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/VendingProtos$CheckLicenseResponseProto;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$CheckLicenseResponseProto;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/LicensingService$1$1;->val$listener:Lcom/android/vending/licensing/ILicenseResultListener;
 
@@ -68,7 +67,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/VendingProtos$CheckLicenseResponseProto;
 

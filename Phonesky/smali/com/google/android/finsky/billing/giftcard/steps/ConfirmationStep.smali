@@ -39,7 +39,6 @@
 
 .method public static newInstance(Lcom/google/android/finsky/protos/PromoCode$UserConfirmationChallenge;)Lcom/google/android/finsky/billing/giftcard/steps/ConfirmationStep;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/protos/PromoCode$UserConfirmationChallenge;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -68,7 +67,6 @@
 # virtual methods
 .method public getContinueButtonLabel(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/giftcard/steps/ConfirmationStep;->mChallenge:Lcom/google/android/finsky/protos/PromoCode$UserConfirmationChallenge;
 
@@ -105,7 +103,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -128,9 +125,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v9, 0x8
 

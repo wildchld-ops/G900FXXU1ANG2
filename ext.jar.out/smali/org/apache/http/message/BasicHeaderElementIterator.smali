@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HeaderIterator;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HeaderIterator;
 
     sget-object v0, Lorg/apache/http/message/BasicHeaderValueParser;->DEFAULT:Lorg/apache/http/message/BasicHeaderValueParser;
 
@@ -32,8 +31,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HeaderIterator;Lorg/apache/http/message/HeaderValueParser;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HeaderIterator;
-    .param p2    # Lorg/apache/http/message/HeaderValueParser;
 
     const/4 v0, 0x0
 

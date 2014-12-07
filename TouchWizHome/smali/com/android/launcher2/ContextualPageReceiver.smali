@@ -64,7 +64,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x5
 
@@ -107,7 +106,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/ContextualPageReceiver;)[Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/ContextualPageReceiver;
 
     iget-object v0, p0, Lcom/android/launcher2/ContextualPageReceiver;->POSTED_FLAG:[Z
 
@@ -132,7 +130,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/ContextualPageReceiver;)[Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/ContextualPageReceiver;
 
     iget-object v0, p0, Lcom/android/launcher2/ContextualPageReceiver;->mPageActive:[Z
 
@@ -149,7 +146,6 @@
 
 .method static synthetic access$672(I)I
     .locals 1
-    .param p0    # I
 
     sget v0, Lcom/android/launcher2/ContextualPageReceiver;->mCpBitFlag:I
 
@@ -162,7 +158,6 @@
 
 .method static synthetic access$676(I)I
     .locals 1
-    .param p0    # I
 
     sget v0, Lcom/android/launcher2/ContextualPageReceiver;->mCpBitFlag:I
 
@@ -322,8 +317,6 @@
 
 .method public static initialize(Landroid/content/Context;Lcom/android/launcher2/ContextualPageManager;)Lcom/android/launcher2/ContextualPageReceiver;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/ContextualPageManager;
 
     const/4 v5, 0x1
 
@@ -438,9 +431,6 @@
 
 .method private declared-synchronized runDealyedReceiverEvent(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -502,8 +492,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 27
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

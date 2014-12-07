@@ -36,8 +36,6 @@
 # virtual methods
 .method add(Lcom/android/i18n/addressinput/AddressField;Lcom/android/i18n/addressinput/AddressProblemType;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
-    .param p2    # Lcom/android/i18n/addressinput/AddressProblemType;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/AddressProblems;->mProblems:Ljava/util/Map;
 
@@ -48,7 +46,6 @@
 
 .method public getProblem(Lcom/android/i18n/addressinput/AddressField;)Lcom/android/i18n/addressinput/AddressProblemType;
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/AddressProblems;->mProblems:Ljava/util/Map;
 

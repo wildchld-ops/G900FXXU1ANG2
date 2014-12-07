@@ -77,7 +77,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/MainActivity;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/MainActivity;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -86,11 +85,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/MainActivity;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/activities/MainActivity;->showErrorDialogForCode(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Z
 
@@ -101,7 +95,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/MainActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/MainActivity;->hideErrorMessage()V
 
@@ -110,7 +103,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/MainActivity;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/MainActivity;->mSavedInstanceState:Landroid/os/Bundle;
 
@@ -119,8 +111,6 @@
 
 .method static synthetic access$302(Lcom/google/android/finsky/activities/MainActivity;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/MainActivity;->mSavedInstanceState:Landroid/os/Bundle;
 
@@ -129,7 +119,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/MainActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/MainActivity;->handleIntent()V
 
@@ -138,7 +127,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/activities/MainActivity;)Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/MainActivity;->mDrawerLayout:Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
@@ -147,7 +135,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/activities/MainActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/MainActivity;->initializeBilling()V
 
@@ -156,7 +143,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/activities/MainActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/MainActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/MainActivity;->initializeBillingCountries()V
 
@@ -165,8 +151,6 @@
 
 .method private buildAnalyticsUrl(Ljava/lang/String;Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -274,7 +258,6 @@
 
 .method private checkHasPromoOffers(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/google/android/finsky/billing/CheckPromoOffersAction;
 
@@ -295,8 +278,6 @@
 
 .method public static getMyDownloadsIntent(Landroid/content/Context;Z)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -664,7 +645,6 @@
 
 .method private handleSearchIntent(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -722,7 +702,6 @@
 
 .method private handleViewIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "deepLink"
 
@@ -843,7 +822,6 @@
 
 .method private launchUrlInBrowser(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -870,7 +848,6 @@
 
 .method private logMenuClickEvent(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/MainActivity;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -1000,7 +977,6 @@
 
 .method private maybeShowErrorDialog(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const-string v5, "error_html_message"
 
@@ -1201,7 +1177,6 @@
 
 .method private openInBrowser(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/MainActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1271,7 +1246,6 @@
 
 .method private setDebugActivityEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/MainActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1302,7 +1276,6 @@
 
 .method private setupDcbDebugMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const v1, 0x7f08025f
 
@@ -1325,7 +1298,6 @@
 
 .method private setupDebugMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const v1, 0x7f08025e
 
@@ -1348,10 +1320,6 @@
 
 .method private showErrorDialogForCode(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1406,7 +1374,6 @@
 
 .method private showErrorMessage(Lcom/android/volley/VolleyError;)V
     .locals 5
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-boolean v3, p0, Lcom/google/android/finsky/activities/MainActivity;->mStateSaved:Z
 
@@ -1489,7 +1456,6 @@
 
 .method private showMismatchedCertificatesDialog(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
 
@@ -1764,7 +1730,6 @@
 
 .method public getDfeApi(Ljava/lang/String;)Lcom/google/android/finsky/api/DfeApi;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -1807,7 +1772,6 @@
 
 .method protected handleAuthenticationError(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v2, p1, Lcom/android/volley/AuthFailureError;
 
@@ -1838,9 +1802,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -2179,7 +2140,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2196,7 +2156,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/MainActivity;->mSavedInstanceState:Landroid/os/Bundle;
 
@@ -2291,7 +2250,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -2344,8 +2302,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v4, 0x1
 
@@ -2442,8 +2398,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -2511,7 +2465,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/MainActivity;->setIntent(Landroid/content/Intent;)V
 
@@ -2538,7 +2491,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -2658,8 +2610,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -2767,7 +2717,6 @@
 
 .method protected onPostCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->onPostCreate(Landroid/os/Bundle;)V
 
@@ -2784,7 +2733,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -2870,7 +2818,6 @@
 
 .method protected onReady(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/SessionStatsLogger;->logSessionStatsIfNecessary(Landroid/content/Context;)V
 
@@ -2989,7 +2936,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/MainActivity;->mSavedInstanceState:Landroid/os/Bundle;
 
@@ -3122,9 +3068,6 @@
 
 .method public showErrorDialog(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -3179,7 +3122,6 @@
 
 .method public updateBreadcrumb(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/MainActivity;->mActionBar:Lcom/google/android/finsky/layout/CustomActionBar;
 
@@ -3190,7 +3132,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/MainActivity;->mActionBar:Lcom/google/android/finsky/layout/CustomActionBar;
 

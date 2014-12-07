@@ -49,9 +49,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/os/Looper;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -116,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/server/usb/UsbNotificationHandler;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbNotificationHandler;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbNotificationHandler;->TAG:Ljava/lang/String;
 
@@ -125,10 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/server/usb/UsbNotificationHandler;III)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbNotificationHandler;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/usb/UsbNotificationHandler;->sendMessageDelayed(III)V
 
@@ -137,7 +129,6 @@
 
 .method static synthetic access$200(Lcom/android/server/usb/UsbNotificationHandler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbNotificationHandler;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbNotificationHandler;->mContext:Landroid/content/Context;
 
@@ -146,9 +137,6 @@
 
 .method private sendMessageDelayed(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0, p1}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
@@ -205,7 +193,6 @@
 
 .method public clearNotification(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/usb/UsbNotificationHandler;->map:Ljava/util/HashMap;
 
@@ -249,7 +236,6 @@
 
 .method public clearNotification(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
@@ -270,8 +256,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
 
     const-string v3, "  Notification : "
 
@@ -376,13 +360,6 @@
 
 .method public enqueueNotification(IIIZLandroid/app/PendingIntent;ZLjava/lang/String;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/app/PendingIntent;
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -409,14 +386,6 @@
 
 .method public enqueueNotification(IIIZZLandroid/app/PendingIntent;ZLjava/lang/String;)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Landroid/app/PendingIntent;
-    .param p7    # Z
-    .param p8    # Ljava/lang/String;
 
     new-instance v1, Lcom/android/server/usb/UsbNotificationHandler$NotificatoinUnit;
 
@@ -487,12 +456,6 @@
 
 .method public enqueueNotification(IIIZZLjava/lang/String;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -519,7 +482,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     iget v2, p1, Landroid/os/Message;->what:I
 

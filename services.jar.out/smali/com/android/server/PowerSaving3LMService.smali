@@ -96,7 +96,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/PowerSaving3LMService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
 
     iget-boolean v0, p0, Lcom/android/server/PowerSaving3LMService;->mPowerSavingEnabled:Z
 
@@ -105,7 +104,6 @@
 
 .method static synthetic access$200(Lcom/android/server/PowerSaving3LMService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
 
     iget-object v0, p0, Lcom/android/server/PowerSaving3LMService;->mContext:Landroid/content/Context;
 
@@ -114,7 +112,6 @@
 
 .method static synthetic access$400(Lcom/android/server/PowerSaving3LMService;)V
     .locals 0
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
 
     invoke-direct {p0}, Lcom/android/server/PowerSaving3LMService;->setForgroundPackage()V
 
@@ -123,7 +120,6 @@
 
 .method static synthetic access$500(Lcom/android/server/PowerSaving3LMService;)V
     .locals 0
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
 
     invoke-direct {p0}, Lcom/android/server/PowerSaving3LMService;->enablePowerSaving()V
 
@@ -132,8 +128,6 @@
 
 .method static synthetic access$600(Lcom/android/server/PowerSaving3LMService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/PowerSaving3LMService;->setForgroundPackage(Ljava/lang/String;)V
 
@@ -142,7 +136,6 @@
 
 .method static synthetic access$700(Lcom/android/server/PowerSaving3LMService;)V
     .locals 0
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
 
     invoke-direct {p0}, Lcom/android/server/PowerSaving3LMService;->disablePowerSaving()V
 
@@ -151,8 +144,6 @@
 
 .method static synthetic access$800(Lcom/android/server/PowerSaving3LMService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/PowerSaving3LMService;->removeUserData(I)V
 
@@ -161,8 +152,6 @@
 
 .method static synthetic access$902(Lcom/android/server/PowerSaving3LMService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/PowerSaving3LMService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/PowerSaving3LMService;->mCurrentUserId:I
 
@@ -481,7 +470,6 @@
 
 .method private removeUserData(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/PowerSaving3LMService;->mUserData:Landroid/util/SparseArray;
 
@@ -574,7 +562,6 @@
 
 .method private setForgroundPackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/PowerSaving3LMService;->mForgroundPackage:Ljava/lang/String;
 
@@ -585,7 +572,6 @@
 # virtual methods
 .method public disablePackageWhilePowerSaving(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/PowerSaving3LMService;->isAccessPermitted()Z
 
@@ -631,7 +617,6 @@
 
 .method public enablePackageWhilePowerSaving(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/PowerSaving3LMService;->isAccessPermitted()Z
 
@@ -710,7 +695,6 @@
 
 .method public init(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/4 v11, 0x0
 
@@ -801,7 +785,6 @@
 
 .method public isPackageDisabledWhilePowerSaving(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -887,7 +870,6 @@
 
 .method public setAllowedPackages(Ljava/util/Map;)Z
     .locals 3
-    .param p1    # Ljava/util/Map;
 
     invoke-direct {p0}, Lcom/android/server/PowerSaving3LMService;->isAccessPermitted()Z
 
@@ -933,7 +915,6 @@
 
 .method public setPowerSavingMode(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/PowerSaving3LMService;->isAccessPermitted()Z
 
@@ -959,7 +940,6 @@
 
 .method public setisSimulatorPermitted(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "PowerSavingService"
 

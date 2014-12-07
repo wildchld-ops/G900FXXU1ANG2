@@ -14,8 +14,6 @@
 
 .method public static getSnsType(Landroid/content/Context;Lcom/android/contacts/model/RawContact;)Lcom/samsung/contacts/model/sns/SnsType;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/model/RawContact;
 
     invoke-virtual {p1, p0}, Lcom/android/contacts/model/RawContact;->getAccountType(Landroid/content/Context;)Lcom/android/contacts/common/model/account/AccountType;
 
@@ -69,9 +67,6 @@
 
 .method public static isSns3SupportedAccount(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -95,9 +90,6 @@
 
 .method private static whichAccount(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

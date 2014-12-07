@@ -158,7 +158,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->clearSelection()V
 
@@ -167,8 +166,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;Ljava/lang/String;)[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->getPhoneCallDetailsForUri(Ljava/lang/String;)[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
@@ -179,7 +176,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->updateSelectionMenu()V
 
@@ -196,7 +192,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -205,7 +200,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mNumber:Ljava/lang/String;
 
@@ -214,8 +208,6 @@
 
 .method static synthetic access$202(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mNumber:Ljava/lang/String;
 
@@ -224,7 +216,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)Lcom/android/dialer/calllog/PhoneNumberHelper;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mPhoneNumberHelper:Lcom/android/dialer/calllog/PhoneNumberHelper;
 
@@ -233,7 +224,6 @@
 
 .method static synthetic access$400(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mAdapter:Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
@@ -242,8 +232,6 @@
 
 .method static synthetic access$402(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;Lcom/android/dialer/calllog/CallDetailHistoryAdapter;)Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
-    .param p1    # Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
     iput-object p1, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mAdapter:Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
@@ -252,7 +240,6 @@
 
 .method static synthetic access$500(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mListView:Landroid/widget/ListView;
 
@@ -261,9 +248,6 @@
 
 .method static synthetic access$600(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;II)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->setDoneButton(II)V
 
@@ -272,7 +256,6 @@
 
 .method static synthetic access$700(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
 
     iget v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mScrollState:I
 
@@ -281,8 +264,6 @@
 
 .method static synthetic access$702(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mScrollState:I
 
@@ -291,8 +272,6 @@
 
 .method static synthetic access$800(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->setSelectAllChecked(Z)V
 
@@ -301,8 +280,6 @@
 
 .method static synthetic access$900(Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->updateSelectAllState(Z)V
 
@@ -393,7 +370,6 @@
 
 .method private getPhoneCallDetailsForUri(Ljava/lang/String;)[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
     .locals 41
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p0}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -996,8 +972,6 @@
 
 .method private setDoneButton(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "CallDetailDeleteActivity"
 
@@ -1055,7 +1029,6 @@
 
 .method private setSelectAllChecked(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1112,7 +1085,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -1175,7 +1147,6 @@
 
 .method private updateData(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mAsyncTaskExecutor:Lcom/android/dialer/util/AsyncTaskExecutor;
 
@@ -1196,7 +1167,6 @@
 
 .method private updateSelectAllState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mSelectAllHeaderView:Landroid/view/View;
 
@@ -1313,8 +1283,6 @@
 
 .method public addSelectedLog(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "CallDetailDeleteActivity"
 
@@ -1396,7 +1364,6 @@
 
 .method public isPositionChecked(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mSelection:Ljava/util/HashMap;
 
@@ -1427,7 +1394,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1600,7 +1566,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1637,7 +1602,6 @@
 
 .method public onDoneButtonStateUpdated(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "CallDetailDeleteActivity"
 
@@ -1668,7 +1632,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1827,7 +1790,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mMenuDone:Landroid/view/MenuItem;
 
@@ -1895,8 +1857,6 @@
 
 .method public onSelectionChanged(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->updateSelectionMenu()V
 
@@ -1905,7 +1865,6 @@
 
 .method public removeLog(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mSelection:Ljava/util/HashMap;
 
@@ -1950,7 +1909,6 @@
 
 .method protected setButtonClickable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity;->mDoneButtonClickable:Z
 

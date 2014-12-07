@@ -77,8 +77,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/server/accessibility/AccessibilityManagerService;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$000(Lcom/android/server/accessibility/AccessibilityInputFilter;)Landroid/view/Choreographer;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityInputFilter;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityInputFilter;->mChoreographer:Landroid/view/Choreographer;
 
@@ -126,8 +123,6 @@
 
 .method static synthetic access$100(Lcom/android/server/accessibility/AccessibilityInputFilter;J)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityInputFilter;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/AccessibilityInputFilter;->processBatchedEvents(J)V
 
@@ -136,7 +131,6 @@
 
 .method static synthetic access$200(Lcom/android/server/accessibility/AccessibilityInputFilter;)Lcom/android/server/accessibility/AccessibilityInputFilter$MotionEventHolder;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityInputFilter;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityInputFilter;->mEventQueue:Lcom/android/server/accessibility/AccessibilityInputFilter$MotionEventHolder;
 
@@ -145,7 +139,6 @@
 
 .method static synthetic access$300(Lcom/android/server/accessibility/AccessibilityInputFilter;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityInputFilter;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityInputFilter;->scheduleProcessBatchedEvents()V
 
@@ -154,8 +147,6 @@
 
 .method private batchMotionEvent(Landroid/view/MotionEvent;I)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityInputFilter;->mEventQueue:Lcom/android/server/accessibility/AccessibilityInputFilter$MotionEventHolder;
 
@@ -288,8 +279,6 @@
 
 .method private handleMotionEvent(Landroid/view/MotionEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityInputFilter;->mEventHandler:Lcom/android/server/accessibility/EventStreamTransformation;
 
@@ -321,8 +310,6 @@
 
 .method private onKeyEvent(Landroid/view/KeyEvent;I)V
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -380,8 +367,6 @@
 
 .method private onMotionEvent(Landroid/view/MotionEvent;I)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -502,7 +487,6 @@
 
 .method private processBatchedEvents(J)V
     .locals 5
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -643,7 +627,6 @@
 
 .method notifyAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityInputFilter;->mEventHandler:Lcom/android/server/accessibility/EventStreamTransformation;
 
@@ -659,7 +642,6 @@
 
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 0
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     return-void
 .end method
@@ -672,8 +654,6 @@
 
 .method public onInputEvent(Landroid/view/InputEvent;I)V
     .locals 8
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     const/16 v7, 0x4002
 
@@ -896,9 +876,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p3}, Landroid/view/InputFilter;->sendInputEvent(Landroid/view/InputEvent;I)V
 
@@ -921,7 +898,6 @@
 
 .method setEnabledFeatures(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/accessibility/AccessibilityInputFilter;->mEnabledFeatures:I
 
@@ -952,7 +928,6 @@
 
 .method public setNext(Lcom/android/server/accessibility/EventStreamTransformation;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/EventStreamTransformation;
 
     return-void
 .end method

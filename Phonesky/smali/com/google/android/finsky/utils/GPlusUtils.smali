@@ -22,10 +22,6 @@
 # direct methods
 .method static synthetic access$000(Landroid/app/Activity;Ljava/lang/String;Ljava/util/ArrayList;Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;)V
     .locals 0
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/ArrayList;
-    .param p3    # Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/finsky/utils/GPlusUtils;->launchCirclePicker(Landroid/app/Activity;Ljava/lang/String;Ljava/util/ArrayList;Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;)V
 
@@ -34,7 +30,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/GPlusUtils;->gaiaIdToPeopleQualifiedId(Ljava/lang/String;)Ljava/lang/String;
 
@@ -45,9 +40,6 @@
 
 .method public static checkGPlusAndLaunchCirclePicker(Landroid/support/v4/app/FragmentActivity;Ljava/lang/String;Ljava/util/ArrayList;Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;)V
     .locals 4
-    .param p0    # Landroid/support/v4/app/FragmentActivity;
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -87,7 +79,6 @@
 
 .method private static checkGooglePlayServices(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->isGooglePlayServicesAvailable(Landroid/content/Context;)I
 
@@ -108,7 +99,6 @@
 
 .method private static checkGooglePlayServicesShowErrorDialogs(Landroid/app/Activity;)Z
     .locals 2
-    .param p0    # Landroid/app/Activity;
 
     invoke-static {p0}, Lcom/google/android/gms/common/GooglePlayServicesUtil;->isGooglePlayServicesAvailable(Landroid/content/Context;)I
 
@@ -137,8 +127,6 @@
 
 .method public static circlePickerOnActivityResult(ILandroid/content/Intent;)V
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Lcom/google/android/finsky/utils/GPlusUtils;->sLastCirclePickerListener:Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;
 
@@ -174,7 +162,6 @@
 
 .method private static gaiaIdToPeopleQualifiedId(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -199,9 +186,6 @@
 
 .method public static getCircles(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/finsky/utils/GPlusUtils$GetCirclesListener;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/utils/GPlusUtils$GetCirclesListener;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/GPlusUtils;->checkGooglePlayServices(Landroid/content/Context;)Z
 
@@ -242,7 +226,6 @@
 
 .method public static getCirclesString(Ljava/util/List;Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/res/Resources;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -325,9 +308,6 @@
 
 .method private static launchCirclePicker(Landroid/app/Activity;Ljava/lang/String;Ljava/util/ArrayList;Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/utils/GPlusUtils$CirclePickerListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -402,7 +382,6 @@
 
 .method public static launchGPlusSignUp(Landroid/app/Activity;)V
     .locals 4
-    .param p0    # Landroid/app/Activity;
 
     const/4 v3, 0x0
 

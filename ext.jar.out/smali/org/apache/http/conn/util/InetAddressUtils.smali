@@ -52,7 +52,6 @@
 
 .method public static isIPv4Address(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/http/conn/util/InetAddressUtils;->IPV4_PATTERN:Ljava/util/regex/Pattern;
 
@@ -69,7 +68,6 @@
 
 .method public static isIPv6Address(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lorg/apache/http/conn/util/InetAddressUtils;->isIPv6StdAddress(Ljava/lang/String;)Z
 
@@ -97,7 +95,6 @@
 
 .method public static isIPv6HexCompressedAddress(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/http/conn/util/InetAddressUtils;->IPV6_HEX_COMPRESSED_PATTERN:Ljava/util/regex/Pattern;
 
@@ -114,7 +111,6 @@
 
 .method public static isIPv6StdAddress(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/http/conn/util/InetAddressUtils;->IPV6_STD_PATTERN:Ljava/util/regex/Pattern;
 

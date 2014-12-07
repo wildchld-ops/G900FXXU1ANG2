@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/utils/BitmapLoader;Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;)V
     .locals 0
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;->this$0:Lcom/google/android/finsky/utils/BitmapLoader;
 
@@ -51,8 +47,6 @@
 
 .method static synthetic access$802(Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -61,7 +55,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;)Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;->mBitmapLoaded:Lcom/google/android/finsky/utils/BitmapLoader$BitmapLoadedHandler;
 

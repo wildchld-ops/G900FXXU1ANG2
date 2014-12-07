@@ -45,7 +45,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingMode2014;)V
     .locals 0
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingMode2014;
 
     invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerSavingMode2014;->updateUIPowerSaving()V
 
@@ -54,7 +53,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingMode2014;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingMode2014;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingMode2014;->mDataPowerSavingCheck:Landroid/preference/CheckBoxPreference;
 
@@ -63,7 +61,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerSavingMode2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingMode2014;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -74,7 +71,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/powersavingmode/PowerSavingMode2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingMode2014;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -172,7 +168,6 @@
 # virtual methods
 .method public getEntryByValue(I)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/settings/powersavingmode/PowerSavingMode2014;->mEnableSettings:Landroid/preference/ListPreference;
 
@@ -337,7 +332,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v7, 0x10
 
@@ -555,7 +549,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -613,8 +606,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x1
 
@@ -731,8 +722,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const v9, 0x7f09003e
 

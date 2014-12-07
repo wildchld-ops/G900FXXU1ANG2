@@ -26,8 +26,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,9 +38,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Lorg/apache/commons/logging/impl/WeakHashtable$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Lorg/apache/commons/logging/impl/WeakHashtable$1;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/commons/logging/impl/WeakHashtable$Entry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -53,7 +48,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -203,7 +197,6 @@
 
 .method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

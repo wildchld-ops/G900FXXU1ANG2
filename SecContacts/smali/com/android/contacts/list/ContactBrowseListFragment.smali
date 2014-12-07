@@ -573,7 +573,6 @@
 
 .method private restoreSelectedUri(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -643,7 +642,6 @@
 
 .method private saveSelectedUri(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Lcom/android/contacts/list/ContactBrowseListFragment;->isSearchMode()Z
 
@@ -696,11 +694,6 @@
 
 .method private setSelectedContactUri(Landroid/net/Uri;ZZZZ)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     iput-boolean p3, p0, Lcom/android/contacts/list/ContactBrowseListFragment;->mSmoothScrollRequested:Z
 
@@ -907,7 +900,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -928,7 +920,6 @@
 
 .method protected onContactUriQueryFinished(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -945,7 +936,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 1
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -971,8 +961,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -998,7 +986,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "filter"
 
@@ -1131,7 +1118,6 @@
 
 .method protected requestSelectionToScreen(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -1163,7 +1149,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->restoreSavedState(Landroid/os/Bundle;)V
 
@@ -1323,7 +1308,6 @@
 
 .method public setFilter(Lcom/android/contacts/common/list/ContactListFilter;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
 
     const/4 v0, 0x1
 
@@ -1334,8 +1318,6 @@
 
 .method public setFilter(Lcom/android/contacts/common/list/ContactListFilter;Z)V
     .locals 3
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactBrowseListFragment;->mFilter:Lcom/android/contacts/common/list/ContactListFilter;
 
@@ -1409,7 +1391,6 @@
 
 .method public setOnContactListActionListener(Lcom/android/contacts/list/OnContactBrowserActionListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/OnContactBrowserActionListener;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactBrowseListFragment;->mListener:Lcom/android/contacts/list/OnContactBrowserActionListener;
 
@@ -1418,8 +1399,6 @@
 
 .method public setQueryString(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iput-boolean p2, p0, Lcom/android/contacts/list/ContactBrowseListFragment;->mDelaySelection:Z
 
@@ -1430,7 +1409,6 @@
 
 .method public setSearchMode(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/contacts/list/ContactBrowseListFragment;->isSearchMode()Z
 
@@ -1453,7 +1431,6 @@
 
 .method public setSelectedContactUri(Landroid/net/Uri;)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x1
 
@@ -1474,7 +1451,6 @@
 
 .method public setSelectionRequired(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactBrowseListFragment;->mSelectionRequired:Z
 
@@ -1499,7 +1475,6 @@
 
 .method public viewContact(Landroid/net/Uri;)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 

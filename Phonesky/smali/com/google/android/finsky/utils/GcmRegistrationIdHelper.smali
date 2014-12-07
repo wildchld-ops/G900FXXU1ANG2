@@ -6,7 +6,6 @@
 # direct methods
 .method public static getRegistrationId(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -46,8 +45,6 @@
 
 .method public static onGcmError(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "%s"
 
@@ -66,8 +63,6 @@
 
 .method public static onGcmMessage(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-boolean v0, Lcom/google/android/finsky/utils/FinskyLog;->DEBUG:Z
 
@@ -95,8 +90,6 @@
 
 .method public static onGcmRegistered(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/google/android/finsky/utils/FinskyLog;->DEBUG:Z
 
@@ -134,8 +127,6 @@
 
 .method public static onGcmUnregistered(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "GcmUnregistered - invalidating and requesting new id."
 
@@ -164,7 +155,6 @@
 
 .method public static setRegisteredOnServer(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->gcmRegistrationIdOnServer:Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
 
@@ -175,8 +165,6 @@
 
 .method public static uploadIfNotRegistered(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
 
     invoke-static {p0}, Lcom/google/android/gcm/GCMRegistrar;->getRegistrationId(Landroid/content/Context;)Ljava/lang/String;
 

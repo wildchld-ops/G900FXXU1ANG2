@@ -296,7 +296,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/ConnectClient;)Lcom/nuance/connect/service/configuration/ConnectConfiguration;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->connectConfiguration:Lcom/nuance/connect/service/configuration/ConnectConfiguration;
 
@@ -305,9 +304,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/ConnectClient;ZI)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/ConnectClient;->reconfigureLogger(ZI)V
 
@@ -316,7 +312,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/service/ConnectClient;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -325,7 +320,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/service/ConnectClient;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->sendStopMessage:Ljava/lang/Runnable;
 
@@ -334,7 +328,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/service/ConnectClient;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->triggerTimes:Ljava/util/List;
 
@@ -343,7 +336,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/service/ConnectClient;)J
     .locals 2
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
 
     iget-wide v0, p0, Lcom/nuance/connect/service/ConnectClient;->lastMessageProcessed:J
 
@@ -352,7 +344,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/service/ConnectClient;)Lcom/nuance/connect/service/comm/CommandQueue;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->commandQueue:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -361,8 +352,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/service/ConnectClient;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/ConnectClient;->sendMessageToHost(Landroid/os/Message;)V
 
@@ -371,7 +360,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/service/ConnectClient;)Lcom/nuance/connect/store/PersistentDataStore;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/ConnectClient;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->defaultStore:Lcom/nuance/connect/store/PersistentDataStore;
 
@@ -380,8 +368,6 @@
 
 .method private getMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;)Landroid/os/Message;
     .locals 5
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v2, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -509,8 +495,6 @@
 
 .method private reconfigureLogger(ZI)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     sget-object v0, Lcom/nuance/connect/util/Logger$OutputMode;->ANDROID_LOG:Lcom/nuance/connect/util/Logger$OutputMode;
 
@@ -523,7 +507,6 @@
 
 .method private sendMessageToHost(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/nuance/connect/service/ConnectClient;->mHostMessenger:Landroid/os/Messenger;
 
@@ -552,8 +535,6 @@
 
 .method private setStartAlarm(JLjava/lang/String;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -628,7 +609,6 @@
 
 .method private startClientAfterAlarm(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -678,7 +658,6 @@
 # virtual methods
 .method public addAlarm(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -737,7 +716,6 @@
 
 .method public addLanguageListener(Lcom/nuance/connect/service/manager/interfaces/LanguageListener;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/manager/interfaces/LanguageListener;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->languageListeners:Ljava/util/HashSet;
 
@@ -752,7 +730,6 @@
 
 .method public addListener(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -777,7 +754,6 @@
 
 .method public addListener(Lcom/nuance/connect/service/manager/interfaces/AccountListener;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/manager/interfaces/AccountListener;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->accountListeners:Ljava/util/HashSet;
 
@@ -792,7 +768,6 @@
 
 .method public addListener(Ljava/lang/String;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -813,8 +788,6 @@
 
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v1, "INITIAL_STARTUP_ALARM"
 
@@ -860,7 +833,6 @@
 
 .method public getBoolean(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;)Ljava/lang/Boolean;
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getConfiguration()Lcom/nuance/connect/service/configuration/ConnectConfiguration;
 
@@ -947,7 +919,6 @@
 
 .method public getCoreForLanguage(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1065,7 +1036,6 @@
 
 .method public getInteger(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;)Ljava/lang/Integer;
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getConfiguration()Lcom/nuance/connect/service/configuration/ConnectConfiguration;
 
@@ -1108,7 +1078,6 @@
 
 .method public getString(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getConfiguration()Lcom/nuance/connect/service/configuration/ConnectConfiguration;
 
@@ -1123,7 +1092,6 @@
 
 .method protected handleCommand(Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
 
     if-eqz p1, :cond_0
 
@@ -1412,8 +1380,6 @@
 
 .method protected handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     const/4 v10, 0x1
 
@@ -1909,7 +1875,6 @@
 
 .method public managerStartComplete(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1971,7 +1936,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2194,7 +2158,6 @@
 
 .method public onRebind(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2225,9 +2188,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/service/ConnectClient;->handleCommand(Landroid/content/Intent;)V
 
@@ -2238,7 +2198,6 @@
 
 .method public onTrimMemory(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2269,7 +2228,6 @@
 
 .method public onUnbind(Landroid/content/Intent;)Z
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/app/Service;->onUnbind(Landroid/content/Intent;)Z
 
@@ -2304,7 +2262,6 @@
 
 .method public performTask(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "MESSAGE_AVAILABLE"
 
@@ -2589,7 +2546,6 @@
 
 .method public postMessage(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -2606,8 +2562,6 @@
 
 .method public postMessage(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getHandler()Landroid/os/Handler;
 
@@ -2629,7 +2583,6 @@
 
 .method public postMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -2640,7 +2593,6 @@
 
 .method public postMessage(Lcom/nuance/connect/internal/common/InternalMessages;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
 
     iget-object v1, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -2659,8 +2611,6 @@
 
 .method public postMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/ConnectClient;->getMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;)Landroid/os/Message;
 
@@ -2673,8 +2623,6 @@
 
 .method public postMessageDelayed(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -2691,8 +2639,6 @@
 
 .method public postMessageDelayed(Landroid/os/Message;J)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -2703,8 +2649,6 @@
 
 .method public postMessageDelayed(Lcom/nuance/connect/internal/common/InternalMessages;J)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # J
 
     iget-object v1, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -2723,9 +2667,6 @@
 
 .method public postMessageDelayed(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;J)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # J
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/ConnectClient;->getMessage(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;)Landroid/os/Message;
 
@@ -2738,8 +2679,6 @@
 
 .method public postMessageWithInt(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getHandler()Landroid/os/Handler;
 
@@ -2769,8 +2708,6 @@
 
 .method public postMessageWithString(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getHandler()Landroid/os/Handler;
 
@@ -2800,7 +2737,6 @@
 
 .method public processMQTTCommand(Lcom/nuance/connect/service/comm/Command;)Z
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v0, 0x0
 
@@ -2809,9 +2745,6 @@
 
 .method public processReceivedServerMessage(Ljava/lang/String;Ljava/lang/String;Lcom/nuance/connect/service/comm/Response;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->registry:Lcom/nuance/connect/service/manager/ManagerRegistry;
 
@@ -2822,7 +2755,6 @@
 
 .method public registerServices(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2926,7 +2858,6 @@
 
 .method public removeMessages(Lcom/nuance/connect/internal/common/InternalMessages;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->msgHandler:Lcom/nuance/connect/service/ConnectClient$MessageHandler;
 
@@ -2941,7 +2872,6 @@
 
 .method public sendCommand(Lcom/nuance/connect/service/comm/Command;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->commandQueue:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -2952,7 +2882,6 @@
 
 .method public sendMessageToHost(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2967,8 +2896,6 @@
 
 .method public sendMessageToHost(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -2985,8 +2912,6 @@
 
 .method public sendMessageToHost(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3011,7 +2936,6 @@
 
 .method public sendMessageToHost(Lcom/nuance/connect/internal/common/InternalMessages;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
 
     const/4 v1, 0x0
 
@@ -3030,8 +2954,6 @@
 
 .method public sendMessageToHost(Lcom/nuance/connect/internal/common/InternalMessages;Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -3178,8 +3100,6 @@
 
 .method public sendMessageToHostDelayed(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/nuance/connect/service/ConnectClient$6;
 
@@ -3198,8 +3118,6 @@
 
 .method public sendMessageToHostDelayed(Landroid/os/Message;I)V
     .locals 4
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
 
     new-instance v0, Lcom/nuance/connect/service/ConnectClient$8;
 
@@ -3218,8 +3136,6 @@
 
 .method public sendMessageToHostDelayed(Lcom/nuance/connect/internal/common/InternalMessages;I)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/internal/common/InternalMessages;
-    .param p2    # I
 
     new-instance v0, Lcom/nuance/connect/service/ConnectClient$7;
 
@@ -3238,7 +3154,6 @@
 
 .method public sendTransaction(Lcom/nuance/connect/service/comm/Transaction;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Transaction;
 
     iget-object v0, p0, Lcom/nuance/connect/service/ConnectClient;->commandQueue:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -3249,8 +3164,6 @@
 
 .method public declared-synchronized setCurrentLanguageInfo([I[I)V
     .locals 4
-    .param p1    # [I
-    .param p2    # [I
 
     monitor-enter p0
 
@@ -3308,7 +3221,6 @@
 
 .method public setCurrentLocaleInfo(Ljava/util/Locale;)V
     .locals 4
-    .param p1    # Ljava/util/Locale;
 
     if-eqz p1, :cond_1
 
@@ -3378,8 +3290,6 @@
 
 .method public setProperty(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;Ljava/lang/Boolean;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
-    .param p2    # Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getConfiguration()Lcom/nuance/connect/service/configuration/ConnectConfiguration;
 
@@ -3392,8 +3302,6 @@
 
 .method public setProperty(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;Ljava/lang/Integer;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
-    .param p2    # Ljava/lang/Integer;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getConfiguration()Lcom/nuance/connect/service/configuration/ConnectConfiguration;
 
@@ -3406,8 +3314,6 @@
 
 .method public setProperty(Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/nuance/connect/service/ConnectClient;->getConfiguration()Lcom/nuance/connect/service/configuration/ConnectConfiguration;
 

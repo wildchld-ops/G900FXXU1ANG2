@@ -49,14 +49,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/util/HashMap;DDLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p3    # D
-    .param p5    # D
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
-    .param p11    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -137,7 +129,6 @@
 
 .method public static createPlace([B)Lcom/samsung/mms/location/Place;
     .locals 9
-    .param p0    # [B
 
     const/4 v6, 0x0
 

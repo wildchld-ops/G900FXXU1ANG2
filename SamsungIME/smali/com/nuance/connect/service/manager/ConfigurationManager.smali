@@ -217,7 +217,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v3, 0x1
 
@@ -366,7 +365,6 @@
 
 .method private isPropertyReceived(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/ConfigurationManager;->properties:Ljava/util/HashMap;
 
@@ -405,7 +403,6 @@
 
 .method private preloadProperty(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;->valueOf(Ljava/lang/String;)Lcom/nuance/connect/service/configuration/ConnectConfiguration$ConfigProperty;
 
@@ -429,7 +426,6 @@
 
 .method private propertyReceived(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/ConfigurationManager;->properties:Ljava/util/HashMap;
 
@@ -781,7 +777,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 16
-    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x0
 

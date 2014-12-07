@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/contacts/detail/LinkedContactAdapter$LinkedContactItemCache;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/detail/LinkedContactAdapter$LinkedContactItemCache;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/LinkedContactAdapter$BitmapTask;->context:Landroid/content/Context;
 
@@ -75,7 +72,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -88,7 +84,6 @@
 
 .method protected onPostExecute(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/LinkedContactAdapter$BitmapTask;->mCache:Lcom/samsung/contacts/detail/LinkedContactAdapter$LinkedContactItemCache;
 
@@ -124,7 +119,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/Bitmap;
 

@@ -147,7 +147,6 @@
 
 .method public static isPrimitive(Ljava/lang/reflect/Type;)Z
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
 
     sget-object v0, Lcom/google/gson/internal/Primitives;->PRIMITIVE_TO_WRAPPER_TYPE:Ljava/util/Map;
 
@@ -160,7 +159,6 @@
 
 .method public static isWrapperType(Ljava/lang/reflect/Type;)Z
     .locals 2
-    .param p0    # Ljava/lang/reflect/Type;
 
     sget-object v0, Lcom/google/gson/internal/Primitives;->WRAPPER_TO_PRIMITIVE_TYPE:Ljava/util/Map;
 

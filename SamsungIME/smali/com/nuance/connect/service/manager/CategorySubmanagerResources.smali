@@ -79,8 +79,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/service/manager/CategoryManager;Lcom/nuance/connect/service/ConnectClient;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/manager/CategoryManager;
-    .param p2    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,7 +133,6 @@
 
 .method private subscribeToResources(Ljava/util/Locale;)V
     .locals 16
-    .param p1    # Ljava/util/Locale;
 
     move-object/from16 v0, p0
 
@@ -507,8 +504,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -529,7 +524,6 @@
 
 .method public init(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerResources;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -560,7 +554,6 @@
 
 .method install(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerResources;->categoryInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -661,7 +654,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x1
 
@@ -708,7 +700,6 @@
 
 .method processNextCategory(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerResources;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -842,7 +833,6 @@
 
 .method setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerResources;->enabled:Z
 
@@ -860,7 +850,6 @@
 
 .method setInstallMetadata(Lcom/nuance/connect/util/InstallMetadata;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/util/InstallMetadata;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/CategorySubmanagerResources;->log:Lcom/nuance/connect/util/Logger$Log;
 

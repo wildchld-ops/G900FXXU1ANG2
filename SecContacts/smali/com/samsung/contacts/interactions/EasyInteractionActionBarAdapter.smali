@@ -15,11 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/ActionBar;IZLandroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActionBar;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/os/Bundle;
 
     invoke-direct/range {p0 .. p5}, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;-><init>(Landroid/content/Context;Landroid/app/ActionBar;IZLandroid/os/Bundle;)V
 
@@ -34,7 +29,6 @@
 # virtual methods
 .method protected changeTabIfOverflow(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -55,7 +49,6 @@
 
 .method protected createActionSpinnerAdapter(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/samsung/contacts/interactions/EasyInteractionActionBarAdapter$EasyActionSpinnerAdapter;
 
@@ -88,7 +81,6 @@
 
 .method protected getDescriptionString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -132,14 +124,12 @@
 
 .method public getPositionByTabState(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
 
 .method public getTabStateByPosition(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
@@ -181,7 +171,6 @@
 
 .method protected restoreCurrentTab(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 

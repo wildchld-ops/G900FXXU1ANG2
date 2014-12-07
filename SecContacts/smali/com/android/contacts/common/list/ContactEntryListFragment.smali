@@ -180,7 +180,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/common/list/ContactEntryListFragment;)Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactEntryListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mListView:Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
@@ -371,8 +370,6 @@
 
 .method private loadDirectoryPartitionDelayed(ILcom/android/contacts/common/list/DirectoryPartition;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/contacts/common/list/DirectoryPartition;
 
     const/4 v3, 0x1
 
@@ -439,7 +436,6 @@
 
 .method private startLoadingDirectoryPartition(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -499,7 +495,6 @@
 # virtual methods
 .method protected addTwIndexScroll(Landroid/database/Cursor;)V
     .locals 8
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v7, 0x1
 
@@ -1202,7 +1197,6 @@
 
 .method public createCursorLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1500,8 +1494,6 @@
 
 .method protected loadDirectoryPartition(ILcom/android/contacts/common/list/DirectoryPartition;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/android/contacts/common/list/DirectoryPartition;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -1620,7 +1612,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1637,7 +1628,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1696,8 +1686,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1794,9 +1782,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -2102,8 +2087,6 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mListView:Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
@@ -2119,9 +2102,6 @@
 
 .method protected onHeaderViewClick(Landroid/view/View;IJ)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     return-void
 .end method
@@ -2131,9 +2111,6 @@
 
 .method public onItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2235,7 +2212,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 5
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2341,8 +2317,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -2368,8 +2342,6 @@
 
 .method protected onPartitionLoaded(ILandroid/database/Cursor;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -2571,11 +2543,6 @@
 
 .method public onQueryCompleted(Landroid/database/Cursor;Ljava/lang/String;Landroid/net/Uri;ZI)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
-    .param p5    # I
 
     return-void
 .end method
@@ -2671,7 +2638,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2791,10 +2757,6 @@
 
 .method public onScroll(Lcom/sec/android/touchwiz/widget/TwAbsListView;III)V
     .locals 2
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwAbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mTwIndexScrollView:Lcom/sec/android/touchwiz/widget/TwLangIndexScrollView;
 
@@ -2812,8 +2774,6 @@
 
 .method public onScrollStateChanged(Lcom/sec/android/touchwiz/widget/TwAbsListView;I)V
     .locals 2
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwAbsListView;
-    .param p2    # I
 
     const/4 v0, 0x2
 
@@ -2928,8 +2888,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mListView:Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
@@ -2962,9 +2920,6 @@
 
 .method protected reLoadDirectoryPartitionDelayed(ILcom/android/contacts/common/list/DirectoryPartition;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/contacts/common/list/DirectoryPartition;
-    .param p3    # I
 
     const/4 v3, 0x2
 
@@ -3011,7 +2966,6 @@
 
 .method public reloadDataDirectoryPartition(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -3030,7 +2984,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -3179,7 +3132,6 @@
 
 .method protected setContactNameDisplayOrder(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mDisplayOrder:I
 
@@ -3197,7 +3149,6 @@
 
 .method public setContactsRequest(Lcom/android/contacts/list/ContactsRequest;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/ContactsRequest;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mRequest:Lcom/android/contacts/list/ContactsRequest;
 
@@ -3206,7 +3157,6 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mContext:Landroid/content/Context;
 
@@ -3217,7 +3167,6 @@
 
 .method public setDirectoryResultLimit(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mDirectoryResultLimit:I
 
@@ -3226,7 +3175,6 @@
 
 .method public setDirectorySearchMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mDirectorySearchMode:I
 
@@ -3235,7 +3183,6 @@
 
 .method public setEasyMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mIsEasyMode:Z
 
@@ -3244,7 +3191,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mEnabled:Z
 
@@ -3276,7 +3222,6 @@
 
 .method public setFakeQueryModeEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mFakeQueryModeEnabled:Z
 
@@ -3285,7 +3230,6 @@
 
 .method public setIncludeProfile(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mIncludeProfile:Z
 
@@ -3303,7 +3247,6 @@
 
 .method public setLegacyCompatibilityMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mLegacyCompatibility:Z
 
@@ -3312,7 +3255,6 @@
 
 .method public setLoaderManager(Landroid/app/LoaderManager;)V
     .locals 0
-    .param p1    # Landroid/app/LoaderManager;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mLoaderManager:Landroid/app/LoaderManager;
 
@@ -3321,7 +3263,6 @@
 
 .method public setMultiSelectEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mMultiSelectEnabled:Z
 
@@ -3330,7 +3271,6 @@
 
 .method public setPhotoLoaderEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mPhotoLoaderEnabled:Z
 
@@ -3351,8 +3291,6 @@
 
 .method public setQueryString(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3411,7 +3349,6 @@
 
 .method public setQuickContactEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mQuickContactEnabled:Z
 
@@ -3420,7 +3357,6 @@
 
 .method public setSearchMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -3509,7 +3445,6 @@
 
 .method public setSectionHeaderDisplayEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mSectionHeaderDisplayEnabled:Z
 
@@ -3536,7 +3471,6 @@
 
 .method public setSelectionVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mSelectionVisible:Z
 
@@ -3545,7 +3479,6 @@
 
 .method public setSortOrder(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mSortOrder:I
 
@@ -3563,7 +3496,6 @@
 
 .method protected final setSweepActionBarCallBack(Lcom/samsung/contacts/sweepaction/ContactListSweepActionHandler;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/sweepaction/ContactListSweepActionHandler;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mSweepActionBarCallBack:Lcom/samsung/contacts/sweepaction/ContactListSweepActionHandler;
 
@@ -3572,7 +3504,6 @@
 
 .method public setSweepActionEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mSweepActionEnabled:Z
 
@@ -3588,7 +3519,6 @@
 
 .method protected final setSweepActionListener(Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionListener;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mSweepActionListener:Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionListener;
 
@@ -3597,7 +3527,6 @@
 
 .method public setVerticalScrollbarPosition(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mVerticalScrollbarPosition:I
 
@@ -3613,7 +3542,6 @@
 
 .method public setVisibleScrollbarEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mVisibleScrollbarEnabled:Z
 
@@ -3629,7 +3557,6 @@
 
 .method public setVisibleTwIndexScrollbarEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactEntryListFragment;->mVisibleTwIndexScrollbarEnabled:Z
 
@@ -3653,8 +3580,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     return-void
 .end method

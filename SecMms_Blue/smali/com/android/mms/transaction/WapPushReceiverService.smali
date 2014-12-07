@@ -80,8 +80,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/transaction/WapPushReceiverService;Lcom/android/mms/transaction/WapPushMessage;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService;
-    .param p1    # Lcom/android/mms/transaction/WapPushMessage;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/WapPushReceiverService;->handleSiMessage(Lcom/android/mms/transaction/WapPushMessage;)V
 
@@ -90,8 +88,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/transaction/WapPushReceiverService;Lcom/android/mms/transaction/WapPushMessage;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService;
-    .param p1    # Lcom/android/mms/transaction/WapPushMessage;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/WapPushReceiverService;->handleSlMeeesage(Lcom/android/mms/transaction/WapPushMessage;)V
 
@@ -100,7 +96,6 @@
 
 .method private deleteWPMInfo(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -161,7 +156,6 @@
 
 .method private handleSiMessage(Lcom/android/mms/transaction/WapPushMessage;)V
     .locals 12
-    .param p1    # Lcom/android/mms/transaction/WapPushMessage;
 
     const-wide/16 v10, -0x1
 
@@ -674,7 +668,6 @@
 
 .method private handleSlMeeesage(Lcom/android/mms/transaction/WapPushMessage;)V
     .locals 12
-    .param p1    # Lcom/android/mms/transaction/WapPushMessage;
 
     const/4 v8, 0x1
 
@@ -1017,7 +1010,6 @@
 
 .method private insertWPMInfo(Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v0, "Mms/WapPushReceiverService"
 
@@ -1060,8 +1052,6 @@
 
 .method public static processHref(Ljava/lang/String;Landroid/content/Context;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const-string v3, "wtai://"
 
@@ -1152,7 +1142,6 @@
 
 .method private selectWPMInfo(Lcom/android/mms/transaction/WapPushMessage;)Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
     .locals 3
-    .param p1    # Lcom/android/mms/transaction/WapPushMessage;
 
     const/4 v0, 0x0
 
@@ -1210,9 +1199,6 @@
 
 .method private selectWPMInfo(Ljava/lang/String;ILjava/lang/String;)Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1334,8 +1320,6 @@
 
 .method private selectWPMInfoByHref(ILjava/lang/String;)Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "type=? and href=?"
 
@@ -1397,8 +1381,6 @@
 
 .method private selectWPMInfoBySiId(ILjava/lang/String;)Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "type=? and si_id=?"
 
@@ -1462,7 +1444,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/WapPushReceiverService"
 
@@ -1529,9 +1510,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "Mms/WapPushReceiverService"
 

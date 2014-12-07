@@ -26,7 +26,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/previews/StatusListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/previews/StatusListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +62,6 @@
 
 .method public static setupOnBackStackChangedListener(Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     new-instance v0, Lcom/google/android/finsky/previews/PreviewController$1;
 
@@ -104,7 +102,6 @@
 
 .method public getStatusUpdate(Lcom/google/android/finsky/previews/StatusListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/previews/StatusListener;
 
     sget-object v0, Lcom/google/android/finsky/previews/PreviewController;->mPlayer:Lcom/google/android/finsky/previews/PreviewPlayer;
 
@@ -144,7 +141,6 @@
 
 .method public togglePlayback(Lcom/google/android/finsky/protos/DocDetails$SongDetails;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/DocDetails$SongDetails;
 
     sget-object v0, Lcom/google/android/finsky/previews/PreviewController;->mPlayer:Lcom/google/android/finsky/previews/PreviewPlayer;
 

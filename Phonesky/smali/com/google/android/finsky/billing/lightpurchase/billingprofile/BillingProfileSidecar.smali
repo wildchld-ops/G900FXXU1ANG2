@@ -57,8 +57,6 @@
 
 .method public static newInstance(Landroid/accounts/Account;Ljava/lang/String;)Lcom/google/android/finsky/billing/lightpurchase/billingprofile/BillingProfileSidecar;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -111,7 +109,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/BillingProfileSidecar;->getArguments()Landroid/os/Bundle;
 
@@ -160,7 +157,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/BillingProfileSidecar;->mVolleyError:Lcom/android/volley/VolleyError;
 
@@ -175,7 +171,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/BuyInstruments$BillingProfileResponse;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$BillingProfileResponse;
 
     const/4 v2, 0x4
 
@@ -227,7 +222,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/BuyInstruments$BillingProfileResponse;
 
@@ -238,7 +232,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -262,7 +255,6 @@
 
 .method protected restoreFromSavedInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->restoreFromSavedInstanceState(Landroid/os/Bundle;)V
 

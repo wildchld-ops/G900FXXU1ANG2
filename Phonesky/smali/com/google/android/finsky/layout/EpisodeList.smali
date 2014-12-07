@@ -94,8 +94,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -122,7 +120,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/EpisodeList;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/EpisodeList;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/EpisodeList;->mSelectedSeason:Lcom/google/android/finsky/api/model/Document;
 
@@ -155,8 +152,6 @@
 
 .method private setDefaultSelectionState(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/EpisodeList;->mSeasonIdFromBundle:Ljava/lang/String;
 
@@ -185,7 +180,6 @@
 
 .method private setEpisodeList(Lcom/google/android/finsky/api/model/Document;Ljava/util/List;)V
     .locals 13
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -382,7 +376,6 @@
 
 .method private shouldEnableLoadingOverlay(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -521,7 +514,6 @@
 # virtual methods
 .method public addSeasonSelectionListener(Lcom/google/android/finsky/layout/EpisodeList$SeasonSelectionListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/EpisodeList$SeasonSelectionListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/EpisodeList;->mSeasonSelectedListener:Lcom/google/android/finsky/layout/EpisodeList$SeasonSelectionListener;
 
@@ -530,7 +522,6 @@
 
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/analytics/FinskyEventLog;->childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
 
@@ -671,8 +662,6 @@
 
 .method public onCollapsedStateChanged(Lcom/google/android/finsky/layout/EpisodeSnippet;Z)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/layout/EpisodeSnippet;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/google/android/finsky/layout/EpisodeList;->mEpisodeSnippets:Ljava/util/Map;
 
@@ -850,7 +839,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 4
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v3, 0x0
 
@@ -954,9 +942,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1037,7 +1022,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/EpisodeList;->mSelectedSeason:Lcom/google/android/finsky/api/model/Document;
 
@@ -1076,7 +1060,6 @@
 
 .method public restoreInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "SeasonListViewBinder.SelectedSeasonId"
 
@@ -1146,7 +1129,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/EpisodeList;->getSelectedSeasonId()Ljava/lang/String;
 
@@ -1216,15 +1198,6 @@
 
 .method public setSeasonList(Lcom/google/android/finsky/fragments/PageFragment;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Landroid/os/Bundle;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/fragments/PageFragment;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/library/Libraries;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p6    # Landroid/os/Bundle;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

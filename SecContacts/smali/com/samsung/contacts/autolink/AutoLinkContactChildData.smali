@@ -109,7 +109,6 @@
 # virtual methods
 .method public addRawContactId(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/autolink/AutoLinkContactChildData;->mRawContactIdList:Ljava/util/ArrayList;
 
@@ -143,7 +142,6 @@
 
 .method public declared-synchronized clickCheck(Lcom/samsung/contacts/autolink/AutoLinkContactParentData;Ljava/util/ArrayList;)Z
     .locals 4
-    .param p1    # Lcom/samsung/contacts/autolink/AutoLinkContactParentData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -251,8 +249,6 @@
 
 .method public setCheck(ZLcom/samsung/contacts/autolink/AutoLinkContactParentData;)Z
     .locals 4
-    .param p1    # Z
-    .param p2    # Lcom/samsung/contacts/autolink/AutoLinkContactParentData;
 
     const/4 v1, 0x1
 

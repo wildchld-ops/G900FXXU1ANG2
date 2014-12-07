@@ -100,7 +100,6 @@
 
 .method protected constructor <init>(Lcom/sec/chaton/clientapi/ChatONMessage$Builder;)V
     .locals 2
-    .param p1    # Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,

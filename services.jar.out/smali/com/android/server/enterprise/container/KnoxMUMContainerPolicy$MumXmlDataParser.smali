@@ -84,7 +84,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 1
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
 
     iput-object p1, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$MumXmlDataParser;->this$0:Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
@@ -107,8 +106,6 @@
 
 .method private containsProductName(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

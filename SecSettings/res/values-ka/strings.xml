@@ -1373,7 +1373,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">USB ნოუთბუქით მობილური ინტერნეტ-კავშირის შეცდომა</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB მობილურ ინტერნეტს ვერ გათიშავთ, სანამ იყენებთ SideSync-ს. თუ USB მობილურ ინტერნეტს გამორთავთ, გამოირთვება SideSync</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB მობილურ ინტერნეტს ვერ ჩართავთ, სანამ იყენებთ SideSync-ს. თუ USB მობილურ ინტერნეტს ჩართავთ, გამოირთვება SideSync</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>მობილური ინტერნეტი Bluetooth-ით</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>მობილური ინტერნეტი Bluetooth-ით</b></p></string>
     <string name="bluetooth_tethering_available_subtext">ზიარდება ამ მოწყობილობის ინტერნეტ-კავშირი…</string>
     <string name="bluetooth_tethering_device_connected_subtext">მოწყობილობის ინტერნეტ-კავშირი გაზიარებულია 1 მოწყობილობასთან</string>
     <string name="bluetooth_tethering_devices_connected_subtext">მოწყობილობის ინტერნეტ-კავშირი გაზიარებულია %d მოწყობილობასთან</string>

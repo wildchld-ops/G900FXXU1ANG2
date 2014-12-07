@@ -94,8 +94,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Z)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -234,7 +232,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/impl/DialerTutorialDialog;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->runSetStep:Ljava/lang/Runnable;
 
@@ -243,7 +240,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/impl/DialerTutorialDialog;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->rlTutorialDialog:Landroid/widget/RelativeLayout;
 
@@ -252,7 +248,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/dialer/impl/DialerTutorialDialog;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -261,7 +256,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/dialer/impl/DialerTutorialDialog;)I
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->aniTime:I
 
@@ -270,7 +264,6 @@
 
 .method static synthetic access$1108(Lcom/samsung/dialer/impl/DialerTutorialDialog;)I
     .locals 2
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->aniTime:I
 
@@ -283,7 +276,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/dialer/impl/DialerTutorialDialog;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -292,7 +284,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/impl/DialerTutorialDialog;)[Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->btnNumbers:[Landroid/view/View;
 
@@ -301,7 +292,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/impl/DialerTutorialDialog;)I
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->stepDialAnimation:I
 
@@ -310,7 +300,6 @@
 
 .method static synthetic access$308(Lcom/samsung/dialer/impl/DialerTutorialDialog;)I
     .locals 2
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->stepDialAnimation:I
 
@@ -323,7 +312,6 @@
 
 .method static synthetic access$400(Lcom/samsung/dialer/impl/DialerTutorialDialog;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->viewTarget:Landroid/view/View;
 
@@ -332,7 +320,6 @@
 
 .method static synthetic access$500(Lcom/samsung/dialer/impl/DialerTutorialDialog;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->imgPointer:Landroid/widget/ImageView;
 
@@ -341,7 +328,6 @@
 
 .method static synthetic access$600(Lcom/samsung/dialer/impl/DialerTutorialDialog;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     invoke-direct {p0}, Lcom/samsung/dialer/impl/DialerTutorialDialog;->setTouchArea()V
 
@@ -350,7 +336,6 @@
 
 .method static synthetic access$700(Lcom/samsung/dialer/impl/DialerTutorialDialog;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     invoke-direct {p0}, Lcom/samsung/dialer/impl/DialerTutorialDialog;->setPosition()V
 
@@ -359,7 +344,6 @@
 
 .method static synthetic access$800(Lcom/samsung/dialer/impl/DialerTutorialDialog;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     invoke-direct {p0}, Lcom/samsung/dialer/impl/DialerTutorialDialog;->runAnimation()V
 
@@ -368,7 +352,6 @@
 
 .method static synthetic access$900(Lcom/samsung/dialer/impl/DialerTutorialDialog;)Lcom/samsung/dialer/impl/DialerTutorialActivity;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/DialerTutorialDialog;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->mActivity:Lcom/samsung/dialer/impl/DialerTutorialActivity;
 
@@ -377,7 +360,6 @@
 
 .method private animationInit(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const v1, 0x7f040008
 
@@ -518,9 +500,6 @@
 
 .method public static final getTutorialDialog(Landroid/app/Activity;Ljava/lang/String;Z)Lcom/samsung/dialer/impl/DialerTutorialDialog;
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -1264,7 +1243,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, -0x1
 
@@ -1413,8 +1391,6 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const v10, 0x7f0801a3
 
@@ -1641,8 +1617,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -1781,7 +1755,6 @@
 
 .method protected setDialButtonForAni([Landroid/view/View;)V
     .locals 0
-    .param p1    # [Landroid/view/View;
 
     iput-object p1, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->btnNumbers:[Landroid/view/View;
 
@@ -1790,7 +1763,6 @@
 
 .method protected setMsg(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->msg:I
 
@@ -1799,7 +1771,6 @@
 
 .method protected setPointerVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->visibilityPointer:Z
 
@@ -1822,7 +1793,6 @@
 
 .method protected setTargetView(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->resTarget:I
 
@@ -1831,7 +1801,6 @@
 
 .method protected setTargetView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->viewTarget:Landroid/view/View;
 
@@ -1840,7 +1809,6 @@
 
 .method protected setTouchType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->touchType:I
 
@@ -1849,7 +1817,6 @@
 
 .method protected showToast(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/samsung/dialer/impl/DialerTutorialDialog;->mActivity:Lcom/samsung/dialer/impl/DialerTutorialActivity;
 

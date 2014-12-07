@@ -53,7 +53,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -80,7 +79,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/MessageServiceInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/MessageServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/MessageServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -89,7 +87,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/MessageServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/MessageServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/MessageServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -98,8 +95,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/MessageServiceInternal;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/MessageServiceInternal;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/MessageServiceInternal;->blockNotificationSend(Ljava/lang/String;)Z
 
@@ -118,7 +113,6 @@
 
 .method private blockNotificationSend(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Lcom/nuance/connect/util/ActionFilter;
 

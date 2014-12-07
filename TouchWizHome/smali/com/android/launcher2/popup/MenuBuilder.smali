@@ -156,7 +156,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -229,10 +228,6 @@
 
 .method private addInternal(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
 
     invoke-static {p3}, Lcom/android/launcher2/popup/MenuBuilder;->getOrdering(I)I
 
@@ -282,7 +277,6 @@
 
 .method private dispatchPresenterUpdate(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/android/launcher2/popup/MenuBuilder;->mPresenters:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -344,7 +338,6 @@
 
 .method private dispatchRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const-string v6, "android:menu:presenters"
 
@@ -422,7 +415,6 @@
 
 .method private dispatchSaveInstanceState(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v6, p0, Lcom/android/launcher2/popup/MenuBuilder;->mPresenters:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -501,7 +493,6 @@
 
 .method private dispatchSubMenuSelected(Lcom/android/launcher2/popup/SubMenuBuilder;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/popup/SubMenuBuilder;
 
     iget-object v4, p0, Lcom/android/launcher2/popup/MenuBuilder;->mPresenters:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -565,7 +556,6 @@
 
 .method private static findInsertIndex(Ljava/util/ArrayList;I)I
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -615,7 +605,6 @@
 
 .method private static getOrdering(I)I
     .locals 3
-    .param p0    # I
 
     const/high16 v1, -0x10000
 
@@ -658,8 +647,6 @@
 
 .method private removeItemAtInt(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-ltz p1, :cond_0
 
@@ -691,11 +678,6 @@
 
 .method private setHeaderInternal(ILjava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;Landroid/view/View;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # Landroid/graphics/drawable/Drawable;
-    .param p5    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -760,7 +742,6 @@
 
 .method private setShortcutsVisibleInner(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -791,7 +772,6 @@
 # virtual methods
 .method public add(I)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -810,10 +790,6 @@
 
 .method public add(IIII)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuBuilder;->mResources:Landroid/content/res/Resources;
 
@@ -830,10 +806,6 @@
 
 .method public add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/launcher2/popup/MenuBuilder;->addInternal(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
@@ -844,7 +816,6 @@
 
 .method public add(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -857,14 +828,6 @@
 
 .method public addIntentOptions(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # [Landroid/content/Intent;
-    .param p6    # Landroid/content/Intent;
-    .param p7    # I
-    .param p8    # [Landroid/view/MenuItem;
 
     iget-object v10, p0, Lcom/android/launcher2/popup/MenuBuilder;->mContext:Landroid/content/Context;
 
@@ -991,7 +954,6 @@
 
 .method public addMenuPresenter(Lcom/android/launcher2/popup/MenuPresenter;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/popup/MenuPresenter;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuBuilder;->mPresenters:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1014,7 +976,6 @@
 
 .method public addSubMenu(I)Landroid/view/SubMenu;
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1033,10 +994,6 @@
 
 .method public addSubMenu(IIII)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuBuilder;->mResources:Landroid/content/res/Resources;
 
@@ -1053,10 +1010,6 @@
 
 .method public addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/launcher2/popup/MenuBuilder;->addInternal(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
@@ -1077,7 +1030,6 @@
 
 .method public addSubMenu(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -1178,7 +1130,6 @@
 
 .method final close(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v3, p0, Lcom/android/launcher2/popup/MenuBuilder;->mIsClosing:Z
 
@@ -1240,7 +1191,6 @@
 
 .method public collapseItemActionView(Lcom/android/launcher2/popup/MenuItemImpl;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/popup/MenuItemImpl;
 
     iget-object v4, p0, Lcom/android/launcher2/popup/MenuBuilder;->mPresenters:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1321,8 +1271,6 @@
 
 .method dispatchMenuItemSelected(Lcom/android/launcher2/popup/MenuBuilder;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuBuilder;->mCallback:Lcom/android/launcher2/popup/MenuBuilder$Callback;
 
@@ -1349,7 +1297,6 @@
 
 .method public expandItemActionView(Lcom/android/launcher2/popup/MenuItemImpl;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/popup/MenuItemImpl;
 
     iget-object v4, p0, Lcom/android/launcher2/popup/MenuBuilder;->mPresenters:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1423,7 +1370,6 @@
 
 .method public findGroupIndex(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1436,8 +1382,6 @@
 
 .method public findGroupIndex(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/popup/MenuBuilder;->size()I
 
@@ -1483,7 +1427,6 @@
 
 .method public findItem(I)Landroid/view/MenuItem;
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/popup/MenuBuilder;->size()I
 
@@ -1545,7 +1488,6 @@
 
 .method public findItemIndex(I)I
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/popup/MenuBuilder;->size()I
 
@@ -1586,8 +1528,6 @@
 
 .method findItemWithShortcutForKey(ILandroid/view/KeyEvent;)Lcom/android/launcher2/popup/MenuItemImpl;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v8, 0x0
 
@@ -1713,8 +1653,6 @@
 
 .method findItemsWithShortcutForKey(Ljava/util/List;ILandroid/view/KeyEvent;)V
     .locals 11
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2047,7 +1985,6 @@
 
 .method public getItem(I)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuBuilder;->mItems:Ljava/util/ArrayList;
 
@@ -2227,8 +2164,6 @@
 
 .method public isShortcutKey(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/launcher2/popup/MenuBuilder;->findItemWithShortcutForKey(ILandroid/view/KeyEvent;)Lcom/android/launcher2/popup/MenuItemImpl;
 
@@ -2257,7 +2192,6 @@
 
 .method onItemActionRequestChanged(Lcom/android/launcher2/popup/MenuItemImpl;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuItemImpl;
 
     const/4 v0, 0x1
 
@@ -2270,7 +2204,6 @@
 
 .method onItemVisibleChanged(Lcom/android/launcher2/popup/MenuItemImpl;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuItemImpl;
 
     const/4 v0, 0x1
 
@@ -2283,7 +2216,6 @@
 
 .method onItemsChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2311,8 +2243,6 @@
 
 .method public performIdentifierAction(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/popup/MenuBuilder;->findItem(I)Landroid/view/MenuItem;
 
@@ -2327,8 +2257,6 @@
 
 .method public performItemAction(Landroid/view/MenuItem;I)Z
     .locals 7
-    .param p1    # Landroid/view/MenuItem;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -2430,9 +2358,6 @@
 
 .method public performShortcut(ILandroid/view/KeyEvent;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/launcher2/popup/MenuBuilder;->findItemWithShortcutForKey(ILandroid/view/KeyEvent;)Lcom/android/launcher2/popup/MenuItemImpl;
 
@@ -2461,7 +2386,6 @@
 
 .method public removeGroup(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/popup/MenuBuilder;->findGroupIndex(I)I
 
@@ -2519,7 +2443,6 @@
 
 .method public removeItem(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/popup/MenuBuilder;->findItemIndex(I)I
 
@@ -2534,7 +2457,6 @@
 
 .method public removeItemAt(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2545,7 +2467,6 @@
 
 .method public removeMenuPresenter(Lcom/android/launcher2/popup/MenuPresenter;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/popup/MenuPresenter;
 
     iget-object v3, p0, Lcom/android/launcher2/popup/MenuBuilder;->mPresenters:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -2590,7 +2511,6 @@
 
 .method public restorePresenterStates(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/popup/MenuBuilder;->dispatchRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -2599,7 +2519,6 @@
 
 .method public savePresenterStates(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/popup/MenuBuilder;->dispatchSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2608,7 +2527,6 @@
 
 .method public setCallback(Lcom/android/launcher2/popup/MenuBuilder$Callback;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder$Callback;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuBuilder;->mCallback:Lcom/android/launcher2/popup/MenuBuilder$Callback;
 
@@ -2617,7 +2535,6 @@
 
 .method public setCurrentMenuInfo(Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 0
-    .param p1    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuBuilder;->mCurrentMenuInfo:Landroid/view/ContextMenu$ContextMenuInfo;
 
@@ -2626,7 +2543,6 @@
 
 .method public setDefaultShowAsAction(I)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/popup/MenuBuilder;->mDefaultShowAsAction:I
 
@@ -2635,7 +2551,6 @@
 
 .method setExclusiveItemChecked(Landroid/view/MenuItem;)V
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getGroupId()I
 
@@ -2705,9 +2620,6 @@
 
 .method public setGroupCheckable(IZZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v3, p0, Lcom/android/launcher2/popup/MenuBuilder;->mItems:Ljava/util/ArrayList;
 
@@ -2749,8 +2661,6 @@
 
 .method public setGroupEnabled(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/launcher2/popup/MenuBuilder;->mItems:Ljava/util/ArrayList;
 
@@ -2790,8 +2700,6 @@
 
 .method public setGroupVisible(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v4, p0, Lcom/android/launcher2/popup/MenuBuilder;->mItems:Ljava/util/ArrayList;
 
@@ -2846,7 +2754,6 @@
 
 .method protected setHeaderIconInt(I)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2867,7 +2774,6 @@
 
 .method protected setHeaderIconInt(Landroid/graphics/drawable/Drawable;)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 6
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
 
@@ -2888,7 +2794,6 @@
 
 .method protected setHeaderTitleInt(I)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2909,7 +2814,6 @@
 
 .method protected setHeaderTitleInt(Ljava/lang/CharSequence;)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 
@@ -2930,7 +2834,6 @@
 
 .method protected setHeaderViewInt(Landroid/view/View;)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -2951,7 +2854,6 @@
 
 .method public setOptionalIconsVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/popup/MenuBuilder;->mOptionalIconsVisible:Z
 
@@ -2960,7 +2862,6 @@
 
 .method public setQwertyMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/popup/MenuBuilder;->mQwertyMode:Z
 
@@ -2973,7 +2874,6 @@
 
 .method public setShortcutsVisible(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/popup/MenuBuilder;->mShortcutsVisible:Z
 

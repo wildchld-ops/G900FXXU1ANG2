@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     new-instance v0, Lcom/android/keyguard/PagedView$9$1$1;
 

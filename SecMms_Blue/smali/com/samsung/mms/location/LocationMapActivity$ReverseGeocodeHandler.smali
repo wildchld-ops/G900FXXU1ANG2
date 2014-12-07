@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/mms/location/LocationMapActivity;DD)V
     .locals 0
-    .param p2    # D
-    .param p4    # D
 
     iput-object p1, p0, Lcom/samsung/mms/location/LocationMapActivity$ReverseGeocodeHandler;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onRequestCancelled(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "ReverseGeocode"
 
@@ -59,7 +56,6 @@
 
 .method public onRequestComplete(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "ReverseGeocode"
 
@@ -72,8 +68,6 @@
 
 .method public onRequestError(Lcom/nbi/common/NBIException;Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIException;
-    .param p2    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "ReverseGeocode"
 
@@ -86,8 +80,6 @@
 
 .method public onRequestProgress(ILcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "ReverseGeocode"
 
@@ -100,7 +92,6 @@
 
 .method public onRequestStart(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "ReverseGeocode"
 
@@ -113,7 +104,6 @@
 
 .method public onRequestTimeOut(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "ReverseGeocode"
 
@@ -126,8 +116,6 @@
 
 .method public onReverseGeocode(Lcom/nbi/map/geocode/ReverseGeocodeInformation;Lcom/nbi/map/geocode/ReverseGeocodeRequest;)V
     .locals 10
-    .param p1    # Lcom/nbi/map/geocode/ReverseGeocodeInformation;
-    .param p2    # Lcom/nbi/map/geocode/ReverseGeocodeRequest;
 
     const/4 v9, 0x1
 

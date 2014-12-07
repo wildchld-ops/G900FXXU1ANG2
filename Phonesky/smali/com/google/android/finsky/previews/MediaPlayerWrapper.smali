@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/previews/StatusListener;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/previews/StatusListener;
 
     const/4 v2, 0x0
 
@@ -111,7 +110,6 @@
 
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 2
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/4 v0, 0x7
 
@@ -144,9 +142,6 @@
 
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0x8
 
@@ -177,7 +172,6 @@
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/4 v0, 0x3
 
@@ -314,7 +308,6 @@
 
 .method public setDataSource(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -332,7 +325,6 @@
 
 .method public setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnCompletionListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/previews/MediaPlayerWrapper;->mOnCompletionListener:Landroid/media/MediaPlayer$OnCompletionListener;
 
@@ -341,7 +333,6 @@
 
 .method public setOnPreparedListener(Landroid/media/MediaPlayer$OnPreparedListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer$OnPreparedListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/previews/MediaPlayerWrapper;->mOnPreparedListener:Landroid/media/MediaPlayer$OnPreparedListener;
 

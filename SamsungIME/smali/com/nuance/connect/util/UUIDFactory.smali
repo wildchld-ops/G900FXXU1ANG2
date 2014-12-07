@@ -72,7 +72,6 @@
 
 .method private static generateTimeChunk(J)J
     .locals 10
-    .param p0    # J
 
     const-wide/16 v4, 0x2710
 
@@ -115,7 +114,6 @@
 
 .method public static final generateUUID(J)Ljava/util/UUID;
     .locals 5
-    .param p0    # J
 
     invoke-static {p0, p1}, Lcom/nuance/connect/util/UUIDFactory;->generateTimeChunk(J)J
 

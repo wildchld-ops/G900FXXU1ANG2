@@ -124,7 +124,6 @@
 
 .method public static getObject(I)Ljavax/sip/DialogState;
     .locals 4
-    .param p0    # I
 
     :try_start_0
     invoke-static {}, Ljavax/sip/DialogState;->values()[Ljavax/sip/DialogState;
@@ -167,7 +166,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Ljavax/sip/DialogState;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Ljavax/sip/DialogState;
 

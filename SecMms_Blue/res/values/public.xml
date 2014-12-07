@@ -468,6 +468,9 @@
     <public type="drawable" name="message_btn_current_location_dim" id="0x7f020158" />
     <public type="drawable" name="message_btn_current_location_normal" id="0x7f020159" />
     <public type="drawable" name="message_btn_current_location_press" id="0x7f02015a" />
+    <public type="drawable" name="APKTOOL_DUMMY_015b" id="0x7f02015b" />
+    <public type="drawable" name="APKTOOL_DUMMY_015c" id="0x7f02015c" />
+    <public type="drawable" name="APKTOOL_DUMMY_015d" id="0x7f02015d" />
     <public type="drawable" name="message_btn_emotion_off" id="0x7f02015e" />
     <public type="drawable" name="message_btn_emotion_off_dim" id="0x7f02015f" />
     <public type="drawable" name="message_btn_emotion_off_focus" id="0x7f020160" />
@@ -476,6 +479,7 @@
     <public type="drawable" name="message_btn_emotion_on_emotion_dim" id="0x7f020163" />
     <public type="drawable" name="message_btn_emotion_on_focus" id="0x7f020164" />
     <public type="drawable" name="message_btn_emotion_on_press" id="0x7f020165" />
+    <public type="drawable" name="APKTOOL_DUMMY_0166" id="0x7f020166" />
     <public type="drawable" name="message_btn_send" id="0x7f020167" />
     <public type="drawable" name="message_btn_send_dim" id="0x7f020168" />
     <public type="drawable" name="message_btn_send_easymode" id="0x7f020169" />
@@ -677,12 +681,17 @@
     <public type="drawable" name="mms_emotion_top_icon_favorite" id="0x7f020232" />
     <public type="drawable" name="mms_emotion_top_icon_favorite_press" id="0x7f020233" />
     <public type="drawable" name="mms_emotion_top_icon_favorite_select" id="0x7f020234" />
+    <public type="drawable" name="APKTOOL_DUMMY_0235" id="0x7f020235" />
+    <public type="drawable" name="APKTOOL_DUMMY_0236" id="0x7f020236" />
     <public type="drawable" name="mms_emotion_top_icon_smiley" id="0x7f020237" />
     <public type="drawable" name="mms_emotion_top_icon_smiley_press" id="0x7f020238" />
     <public type="drawable" name="mms_emotion_top_icon_smiley_select" id="0x7f020239" />
     <public type="drawable" name="mms_emotion_top_icon_star" id="0x7f02023a" />
     <public type="drawable" name="mms_emotion_top_icon_star_press" id="0x7f02023b" />
     <public type="drawable" name="mms_emotion_top_icon_star_select" id="0x7f02023c" />
+    <public type="drawable" name="APKTOOL_DUMMY_023d" id="0x7f02023d" />
+    <public type="drawable" name="APKTOOL_DUMMY_023e" id="0x7f02023e" />
+    <public type="drawable" name="APKTOOL_DUMMY_023f" id="0x7f02023f" />
     <public type="drawable" name="mms_image_thumbnail_focus" id="0x7f020240" />
     <public type="drawable" name="mms_image_thumbnail_normal" id="0x7f020241" />
     <public type="drawable" name="mms_image_thumbnail_press" id="0x7f020242" />
@@ -697,6 +706,8 @@
     <public type="drawable" name="msg_bubble_icon_locked_01" id="0x7f020252" />
     <public type="drawable" name="msg_icon_02" id="0x7f020254" />
     <public type="drawable" name="msg_icon_03" id="0x7f020255" />
+    <public type="drawable" name="APKTOOL_DUMMY_0256" id="0x7f020256" />
+    <public type="drawable" name="APKTOOL_DUMMY_0257" id="0x7f020257" />
     <public type="drawable" name="msg_icon_title_read_check_msg" id="0x7f020258" />
     <public type="drawable" name="msg_icon_title_recieved_check_msg" id="0x7f020259" />
     <public type="drawable" name="msg_image_bg" id="0x7f02025a" />
@@ -888,17 +899,6 @@
     <public type="drawable" name="widget_title_bg" id="0x7f020379" />
     <public type="drawable" name="widget_title_bg_focused" id="0x7f02037a" />
     <public type="drawable" name="widget_title_bg_pressed" id="0x7f02037b" />
-    <public type="drawable" name="APKTOOL_DUMMY_015b" id="0x7f02015b" />
-    <public type="drawable" name="APKTOOL_DUMMY_015c" id="0x7f02015c" />
-    <public type="drawable" name="APKTOOL_DUMMY_015d" id="0x7f02015d" />
-    <public type="drawable" name="APKTOOL_DUMMY_0166" id="0x7f020166" />
-    <public type="drawable" name="APKTOOL_DUMMY_0235" id="0x7f020235" />
-    <public type="drawable" name="APKTOOL_DUMMY_0236" id="0x7f020236" />
-    <public type="drawable" name="APKTOOL_DUMMY_023d" id="0x7f02023d" />
-    <public type="drawable" name="APKTOOL_DUMMY_023e" id="0x7f02023e" />
-    <public type="drawable" name="APKTOOL_DUMMY_023f" id="0x7f02023f" />
-    <public type="drawable" name="APKTOOL_DUMMY_0256" id="0x7f020256" />
-    <public type="drawable" name="APKTOOL_DUMMY_0257" id="0x7f020257" />
     <public type="mipmap" name="ic_launcher_smsmms" id="0x7f030000" />
     <public type="layout" name="action_select_mode" id="0x7f040000" />
     <public type="layout" name="actionbar_compose_message_list" id="0x7f040001" />

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/header/SIPHeader;-><init>(Ljava/lang/String;)V
 
@@ -59,7 +58,6 @@
 
 .method public setAddress(Ljavax/sip/address/Address;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/Address;
 
     check-cast p1, Lgov/nist/javax/sip/address/AddressImpl;
 

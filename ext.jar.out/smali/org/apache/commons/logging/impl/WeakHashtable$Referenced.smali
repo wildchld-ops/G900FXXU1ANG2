@@ -23,7 +23,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,8 +43,6 @@
 
 .method private constructor <init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/ref/ReferenceQueue;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,9 +65,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;Lorg/apache/commons/logging/impl/WeakHashtable$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/ref/ReferenceQueue;
-    .param p3    # Lorg/apache/commons/logging/impl/WeakHashtable$1;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
@@ -79,8 +73,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Object;Lorg/apache/commons/logging/impl/WeakHashtable$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lorg/apache/commons/logging/impl/WeakHashtable$1;
 
     invoke-direct {p0, p1}, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;-><init>(Ljava/lang/Object;)V
 
@@ -89,7 +81,6 @@
 
 .method static synthetic access$100(Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
     invoke-direct {p0}, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;->getValue()Ljava/lang/Object;
 
@@ -114,7 +105,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 

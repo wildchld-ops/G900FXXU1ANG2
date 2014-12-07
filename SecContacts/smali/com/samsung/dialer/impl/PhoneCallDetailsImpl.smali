@@ -44,24 +44,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/String;[IJJILjava/lang/CharSequence;ILjava/lang/CharSequence;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;JLcom/samsung/dialer/impl/PhoneCallDetailsExtraImpl;Ljava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [I
-    .param p7    # J
-    .param p9    # J
-    .param p11    # I
-    .param p12    # Ljava/lang/CharSequence;
-    .param p13    # I
-    .param p14    # Ljava/lang/CharSequence;
-    .param p15    # Landroid/net/Uri;
-    .param p16    # Landroid/net/Uri;
-    .param p17    # Ljava/lang/String;
-    .param p18    # J
-    .param p20    # Lcom/samsung/dialer/impl/PhoneCallDetailsExtraImpl;
-    .param p21    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -128,22 +110,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/String;[IJJILjava/lang/CharSequence;ILjava/lang/CharSequence;Landroid/net/Uri;Landroid/net/Uri;JLcom/samsung/dialer/impl/PhoneCallDetailsExtraImpl;Ljava/lang/String;)V
     .locals 22
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # [I
-    .param p6    # J
-    .param p8    # J
-    .param p10    # I
-    .param p11    # Ljava/lang/CharSequence;
-    .param p12    # I
-    .param p13    # Ljava/lang/CharSequence;
-    .param p14    # Landroid/net/Uri;
-    .param p15    # Landroid/net/Uri;
-    .param p16    # J
-    .param p18    # Lcom/samsung/dialer/impl/PhoneCallDetailsExtraImpl;
-    .param p19    # Ljava/lang/String;
 
     const/4 v1, -0x1
 

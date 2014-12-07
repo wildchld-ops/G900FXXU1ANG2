@@ -76,9 +76,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +90,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,8 +116,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/net/NetworkTemplate$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/net/NetworkTemplate$1;
 
     invoke-direct {p0, p1}, Landroid/net/NetworkTemplate;-><init>(Landroid/os/Parcel;)V
 
@@ -144,7 +138,6 @@
 
 .method public static buildTemplateMobile3gLower(Ljava/lang/String;)Landroid/net/NetworkTemplate;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -161,7 +154,6 @@
 
 .method public static buildTemplateMobile4g(Ljava/lang/String;)Landroid/net/NetworkTemplate;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -178,7 +170,6 @@
 
 .method public static buildTemplateMobileAll(Ljava/lang/String;)Landroid/net/NetworkTemplate;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/NetworkTemplate;
 
@@ -219,7 +210,6 @@
 
 .method public static buildTemplateWifi(Ljava/lang/String;)Landroid/net/NetworkTemplate;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/NetworkTemplate;
 
@@ -270,7 +260,6 @@
 
 .method private static getMatchRuleName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -330,7 +319,6 @@
 
 .method private matchesEthernet(Landroid/net/NetworkIdentity;)Z
     .locals 2
-    .param p1    # Landroid/net/NetworkIdentity;
 
     iget v0, p1, Landroid/net/NetworkIdentity;->mType:I
 
@@ -351,7 +339,6 @@
 
 .method private matchesMobile(Landroid/net/NetworkIdentity;)Z
     .locals 3
-    .param p1    # Landroid/net/NetworkIdentity;
 
     const/4 v0, 0x1
 
@@ -399,7 +386,6 @@
 
 .method private matchesMobile3gLower(Landroid/net/NetworkIdentity;)Z
     .locals 3
-    .param p1    # Landroid/net/NetworkIdentity;
 
     const/4 v0, 0x0
 
@@ -447,7 +433,6 @@
 
 .method private matchesMobile4g(Landroid/net/NetworkIdentity;)Z
     .locals 3
-    .param p1    # Landroid/net/NetworkIdentity;
 
     const/4 v0, 0x1
 
@@ -493,7 +478,6 @@
 
 .method private matchesMobileWildcard(Landroid/net/NetworkIdentity;)Z
     .locals 3
-    .param p1    # Landroid/net/NetworkIdentity;
 
     const/4 v0, 0x1
 
@@ -529,7 +513,6 @@
 
 .method private matchesWifi(Landroid/net/NetworkIdentity;)Z
     .locals 2
-    .param p1    # Landroid/net/NetworkIdentity;
 
     iget v0, p1, Landroid/net/NetworkIdentity;->mType:I
 
@@ -567,7 +550,6 @@
 
 .method private matchesWifiWildcard(Landroid/net/NetworkIdentity;)Z
     .locals 1
-    .param p1    # Landroid/net/NetworkIdentity;
 
     iget v0, p1, Landroid/net/NetworkIdentity;->mType:I
 
@@ -604,7 +586,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -710,7 +691,6 @@
 
 .method public matches(Landroid/net/NetworkIdentity;)Z
     .locals 2
-    .param p1    # Landroid/net/NetworkIdentity;
 
     iget v0, p0, Landroid/net/NetworkTemplate;->mMatchRule:I
 
@@ -852,8 +832,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/net/NetworkTemplate;->mMatchRule:I
 

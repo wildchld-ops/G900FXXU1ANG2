@@ -37,9 +37,6 @@
 
 .method private argumentsMatch(Landroid/os/Bundle;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
@@ -108,8 +105,6 @@
 
 .method private varargs argumentsMatchExactly(Landroid/os/Bundle;[Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # [Ljava/lang/String;
 
     # getter for: Lcom/google/android/finsky/billing/iab/MarketBillingService;->EMPTY_STRING_ARRAY:[Ljava/lang/String;
     invoke-static {}, Lcom/google/android/finsky/billing/iab/MarketBillingService;->access$000()[Ljava/lang/String;
@@ -125,7 +120,6 @@
 
 .method private computeSignatureHash(Landroid/content/pm/PackageInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     iget-object v1, p1, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -146,7 +140,6 @@
 
 .method private getBillingRequest(Landroid/os/Bundle;)Lcom/google/android/finsky/billing/iab/MarketBillingService$BillingRequest;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -216,7 +209,6 @@
 
 .method private getPackageInfo(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/google/android/finsky/billing/iab/MarketBillingService$Stub;->this$0:Lcom/google/android/finsky/billing/iab/MarketBillingService;
@@ -256,8 +248,6 @@
 
 .method private handleBillingRequest(Lcom/google/android/finsky/billing/iab/MarketBillingService$BillingRequest;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 17
-    .param p1    # Lcom/google/android/finsky/billing/iab/MarketBillingService$BillingRequest;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v2, "API_VERSION"
 
@@ -731,8 +721,6 @@
 
 .method private isBillingEnabledForAccount(Landroid/accounts/Account;I)Z
     .locals 1
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -757,8 +745,6 @@
 
 .method private isBillingEnabledForPackage(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/iab/MarketBillingService$Stub;->this$0:Lcom/google/android/finsky/billing/iab/MarketBillingService;
 
@@ -776,7 +762,6 @@
 
 .method private isRequestAllowed(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -785,7 +770,6 @@
 
 .method private makeSignatureHash(Landroid/content/pm/PackageInfo;)Lcom/google/android/finsky/protos/VendingProtos$SignatureHashProto;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     const/4 v3, 0x1
 
@@ -826,8 +810,6 @@
 
 .method private setResponseCode(Landroid/os/Bundle;Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
     const-string v0, "RESPONSE_CODE"
 
@@ -842,8 +824,6 @@
 
 .method private updateWithRequestId(Landroid/os/Bundle;J)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # J
 
     const-wide/16 v0, -0x1
 
@@ -870,7 +850,6 @@
 # virtual methods
 .method public checkBillingApiVersionSupport(I)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -918,8 +897,6 @@
 
 .method public checkBillingEnabled(ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -993,8 +970,6 @@
 
 .method public checkTypeSupported(ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -1097,9 +1072,6 @@
 
 .method public confirmNotifications(ILjava/lang/String;[Ljava/lang/String;)J
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/google/android/finsky/billing/iab/MarketBillingService$Stub;->getPackageInfo(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
 
@@ -1195,10 +1167,6 @@
 
 .method public getPurchaseInformation(ILjava/lang/String;J[Ljava/lang/String;)J
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # [Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1310,11 +1278,6 @@
 
 .method public requestPurchase(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/util/Pair;
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1444,9 +1407,6 @@
 
 .method public restoreTransactions(ILjava/lang/String;J)J
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v6, 0x1
 
@@ -1556,7 +1516,6 @@
 
 .method public sendBillingRequest(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/iab/MarketBillingService$Stub;->getBillingRequest(Landroid/os/Bundle;)Lcom/google/android/finsky/billing/iab/MarketBillingService$BillingRequest;
 

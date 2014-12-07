@@ -141,7 +141,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/CbConfigPreferenceActivity;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mSwitch:Landroid/widget/Switch;
 
@@ -150,7 +149,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/CbConfigPreferenceActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iget v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mActivePhone:I
 
@@ -159,8 +157,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/CbConfigPreferenceActivity;Landroid/database/Cursor;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/CbConfigPreferenceActivity;->createChannelPreference(Landroid/database/Cursor;)Landroid/preference/CheckBoxPreference;
 
@@ -171,7 +167,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/CbConfigPreferenceActivity;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mSharedPref:Landroid/content/SharedPreferences;
 
@@ -180,7 +175,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/CbConfigPreferenceActivity;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mToast:Landroid/widget/Toast;
 
@@ -189,8 +183,6 @@
 
 .method static synthetic access$1202(Lcom/android/mms/ui/CbConfigPreferenceActivity;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mToast:Landroid/widget/Toast;
 
@@ -199,7 +191,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/CbConfigPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CbConfigPreferenceActivity;->setElementEnable()V
 
@@ -208,7 +199,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/CbConfigPreferenceActivity;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mCursor:Landroid/database/Cursor;
 
@@ -217,8 +207,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/CbConfigPreferenceActivity;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mCursor:Landroid/database/Cursor;
 
@@ -227,7 +215,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/CbConfigPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CbConfigPreferenceActivity;->addPreferencesForMyChannel()V
 
@@ -236,7 +223,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/CbConfigPreferenceActivity;)Landroid/preference/PreferenceGroup;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mChannelContainer:Landroid/preference/PreferenceGroup;
 
@@ -245,7 +231,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/CbConfigPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CbConfigPreferenceActivity;->refreshMyChannel()V
 
@@ -254,7 +239,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/CbConfigPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CbConfigPreferenceActivity;->addPreferencesAddMyChannel()V
 
@@ -271,7 +255,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/CbConfigPreferenceActivity;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -401,8 +384,6 @@
 
 .method private confirmDeleteDialog(Landroid/content/DialogInterface$OnClickListener;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -435,7 +416,6 @@
 
 .method private createChannelPreference(Landroid/database/Cursor;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     new-instance v0, Landroid/preference/CheckBoxPreference;
 
@@ -448,7 +428,6 @@
 
 .method private createNLChannelPreference([Ljava/lang/String;)Landroid/preference/CheckBoxPreference;
     .locals 8
-    .param p1    # [Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -576,8 +555,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -715,7 +692,6 @@
 # virtual methods
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 11
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getMenuInfo()Landroid/view/ContextMenu$ContextMenuInfo;
 
@@ -820,7 +796,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -980,7 +955,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/CbConfigPreferenceActivity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -1069,7 +1043,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -1145,7 +1118,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1254,8 +1226,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "add_my_channel"
 
@@ -1298,7 +1268,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     iget-object v1, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity;->mContext:Landroid/content/Context;
 
@@ -1528,8 +1497,6 @@
 
 .method public setPreferenceAttr(Landroid/preference/CheckBoxPreference;Landroid/database/Cursor;)V
     .locals 9
-    .param p1    # Landroid/preference/CheckBoxPreference;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v6, 0x1
 

@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/group/GroupAccountSelectionFragment;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupAccountSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupAccountSelectionFragment;->mSelectedAccounts:Ljava/util/List;
 
@@ -67,7 +66,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/GroupAccountSelectionFragment;)Lcom/samsung/contacts/group/GroupAccountSelectionFragment$AccountListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupAccountSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupAccountSelectionFragment;->mAdapter:Lcom/samsung/contacts/group/GroupAccountSelectionFragment$AccountListAdapter;
 
@@ -76,7 +74,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/group/GroupAccountSelectionFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupAccountSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupAccountSelectionFragment;->mContext:Landroid/content/Context;
 
@@ -85,7 +82,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/group/GroupAccountSelectionFragment;)Lcom/android/contacts/common/model/AccountTypeManager;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupAccountSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupAccountSelectionFragment;->mAccountTypeManager:Lcom/android/contacts/common/model/AccountTypeManager;
 
@@ -94,7 +90,6 @@
 
 .method private addAccount(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupAccountSelectionFragment;->mSelectedAccounts:Ljava/util/List;
 
@@ -302,7 +297,6 @@
 
 .method private removeAccount(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupAccountSelectionFragment;->mSelectedAccounts:Ljava/util/List;
 
@@ -534,7 +528,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -609,9 +602,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -739,9 +729,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 3
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -811,7 +798,6 @@
 
 .method public setGroupAccountSelectionUpdateListener(Lcom/samsung/contacts/group/GroupAccountSelectionFragment$onGroupAccountSelectionUpdateListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupAccountSelectionFragment$onGroupAccountSelectionUpdateListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupAccountSelectionFragment;->mListener:Lcom/samsung/contacts/group/GroupAccountSelectionFragment$onGroupAccountSelectionUpdateListener;
 

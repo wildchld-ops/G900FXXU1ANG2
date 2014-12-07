@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,9 +24,6 @@
 
 .method public constructor <init>(I[II)V
     .locals 0
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +40,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 

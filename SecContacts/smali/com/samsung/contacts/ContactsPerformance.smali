@@ -56,7 +56,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -121,7 +120,6 @@
 
 .method public endTimeAndMemoryStamp(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -182,7 +180,6 @@
 
 .method public getBindViewEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/ContactsPerformance;->mIsBindViewChecked:Z
 
@@ -292,7 +289,6 @@
 
 .method public getBindViewStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/ContactsPerformance;->mIsBindViewChecked:Z
 
@@ -352,7 +348,6 @@
 
 .method public getCustomEnd(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -465,7 +460,6 @@
 
 .method public getCustomStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -524,7 +518,6 @@
 
 .method public getDBQueryEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -623,7 +616,6 @@
 
 .method public getDBQueryStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -676,7 +668,6 @@
 
 .method public getFragmentOnCreateViewEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -775,7 +766,6 @@
 
 .method public getFragmentOnCreateViewStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -828,7 +818,6 @@
 
 .method public getFragmentOnStartEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -927,7 +916,6 @@
 
 .method public getFragmentOnStartStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -980,7 +968,6 @@
 
 .method public getGetViewEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/ContactsPerformance;->mIsGetViewChecked:Z
 
@@ -1090,7 +1077,6 @@
 
 .method public getGetViewStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/ContactsPerformance;->mIsGetViewChecked:Z
 
@@ -1150,7 +1136,6 @@
 
 .method public getGroupBindViewEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/ContactsPerformance;->mIsGroupBindViewChecked:Z
 
@@ -1260,7 +1245,6 @@
 
 .method public getGroupBindViewStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/ContactsPerformance;->mIsGroupBindViewChecked:Z
 
@@ -1320,7 +1304,6 @@
 
 .method public getOnCreateEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1419,7 +1402,6 @@
 
 .method public getOnCreateStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1472,7 +1454,6 @@
 
 .method public getOnCreateViewEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1571,7 +1552,6 @@
 
 .method public getOnCreateViewStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1624,7 +1604,6 @@
 
 .method public getOnResumeEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1723,7 +1702,6 @@
 
 .method public getOnResumeStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1776,7 +1754,6 @@
 
 .method public getOnStartEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1875,7 +1852,6 @@
 
 .method public getOnStartStart(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1987,9 +1963,6 @@
 
 .method public startTimeAndMemoryStamp(Landroid/content/Context;ZLjava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 

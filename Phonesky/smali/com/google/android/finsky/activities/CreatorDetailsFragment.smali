@@ -199,7 +199,6 @@
 
 .method private moveViewOneUp(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -239,8 +238,6 @@
 
 .method public static newInstance(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Lcom/google/android/finsky/activities/CreatorDetailsFragment;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/CreatorDetailsFragment;
 
@@ -263,9 +260,6 @@
 
 .method private rebindMusicSections(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Landroid/os/Bundle;)V
     .locals 19
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v17, 0x0
 
@@ -593,9 +587,6 @@
 
 .method private rebindTvSections(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Landroid/os/Bundle;)V
     .locals 19
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f08009f
 
@@ -962,7 +953,6 @@
 
 .method public onDeleteReview(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/CreatorDetailsFragment;->mReviewDialogListener:Lcom/google/android/finsky/activities/ReviewDialogListener;
 
@@ -1114,16 +1104,12 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x5
 
@@ -1151,9 +1137,6 @@
 
 .method public onRateReview(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/CreatorDetailsFragment;->mReviewDialogListener:Lcom/google/android/finsky/activities/ReviewDialogListener;
 
@@ -1164,11 +1147,6 @@
 
 .method public onSaveReview(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/CreatorDetailsFragment;->mReviewDialogListener:Lcom/google/android/finsky/activities/ReviewDialogListener;
 
@@ -1189,7 +1167,6 @@
 
 .method public onSeasonSelected(Lcom/google/android/finsky/api/model/Document;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/CreatorDetailsFragment;->mProductDetailsPanel:Lcom/google/android/finsky/layout/ListingView;
 
@@ -1263,7 +1240,6 @@
 
 .method protected rebindViews(Landroid/os/Bundle;)V
     .locals 39
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/activities/CreatorDetailsFragment;->rebindActionBar()V
 
@@ -1784,7 +1760,6 @@
 
 .method protected recordState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/CreatorDetailsFragment;->getView()Landroid/view/View;
 

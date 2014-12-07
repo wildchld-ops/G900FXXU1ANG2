@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/gson/internal/ConstructorConstructor;Z)V
     .locals 0
-    .param p1    # Lcom/google/gson/internal/ConstructorConstructor;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/google/gson/internal/bind/MapTypeAdapterFactory;)Z
     .locals 1
-    .param p0    # Lcom/google/gson/internal/bind/MapTypeAdapterFactory;
 
     iget-boolean v0, p0, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;->complexMapKeySerialization:Z
 
@@ -46,8 +43,6 @@
 
 .method static synthetic access$100(Lcom/google/gson/TypeAdapter;Ljava/lang/Object;)Lcom/google/gson/JsonElement;
     .locals 1
-    .param p0    # Lcom/google/gson/TypeAdapter;
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p0, p1}, Lcom/google/gson/internal/bind/MapTypeAdapterFactory;->toJsonTree(Lcom/google/gson/TypeAdapter;Ljava/lang/Object;)Lcom/google/gson/JsonElement;
 
@@ -58,8 +53,6 @@
 
 .method private getKeyAdapter(Lcom/google/gson/Gson;Ljava/lang/reflect/Type;)Lcom/google/gson/TypeAdapter;
     .locals 1
-    .param p1    # Lcom/google/gson/Gson;
-    .param p2    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -143,7 +136,6 @@
 # virtual methods
 .method public create(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
     .locals 12
-    .param p1    # Lcom/google/gson/Gson;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

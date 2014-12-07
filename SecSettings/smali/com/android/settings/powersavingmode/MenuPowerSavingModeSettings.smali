@@ -107,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     invoke-direct {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->updateUIPowerSaving()V
 
@@ -116,7 +115,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -127,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -136,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mHelpStep1Dialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -145,8 +141,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iput-object p1, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mHelpStep1Dialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -155,7 +149,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -166,7 +159,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -177,7 +169,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mIsFromHelp:Z
 
@@ -186,7 +177,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -809,7 +799,6 @@
 # virtual methods
 .method public getEntryByValue(I)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mEnableSettings:Landroid/preference/ListPreference;
 
@@ -1222,7 +1211,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "MenuPowerSavingModeSettings"
 
@@ -1247,7 +1235,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1277,7 +1264,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x10
 
@@ -1813,8 +1799,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1875,7 +1859,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2077,8 +2060,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x1
 
@@ -2195,8 +2176,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x1
 

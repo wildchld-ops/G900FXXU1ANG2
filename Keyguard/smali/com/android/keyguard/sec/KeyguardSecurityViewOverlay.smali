@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -93,8 +92,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -121,9 +118,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -144,7 +138,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardSecurityViewOverlay;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardSecurityViewOverlay;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardSecurityViewOverlay;->setCameraVisible()V
 
@@ -153,8 +146,6 @@
 
 .method private alignECA(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardSecurityViewOverlay;->mSecurityViewECA:Landroid/widget/LinearLayout;
 
@@ -196,8 +187,6 @@
 
 .method private handleVisibility(Landroid/view/View;I)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -1203,7 +1192,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 17
-    .param p1    # Landroid/view/MotionEvent;
 
     new-instance v7, Landroid/graphics/Rect;
 
@@ -1740,11 +1728,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isVZWFeature()Z
 
@@ -1839,7 +1822,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
@@ -1895,7 +1877,6 @@
 
 .method public setCallback(Lcom/android/keyguard/KeyguardViewBase$UserSwitcherCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardViewBase$UserSwitcherCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSecurityViewOverlay;->mCallback:Lcom/android/keyguard/KeyguardViewBase$UserSwitcherCallback;
 

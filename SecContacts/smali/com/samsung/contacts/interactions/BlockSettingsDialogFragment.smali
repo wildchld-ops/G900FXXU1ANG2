@@ -134,7 +134,6 @@
 # virtual methods
 .method public BlockNumberSettingsDialog(Landroid/content/Context;Ljava/util/ArrayList;)Landroid/app/AlertDialog;
     .locals 17
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -969,10 +968,6 @@
 
 .method checkBlock(Landroid/content/Context;Lcom/samsung/contacts/interactions/BlockSettingsDialogFragment$RejectValue;II)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/interactions/BlockSettingsDialogFragment$RejectValue;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -1123,8 +1118,6 @@
 
 .method doCheckBlocks(Landroid/content/Context;[I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     const/4 v0, 0x0
 
@@ -1205,7 +1198,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
@@ -1256,7 +1248,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v7, 0x0
 
@@ -1413,7 +1404,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "BlockSettingsDialogFragment"
 
@@ -1434,7 +1424,6 @@
 
 .method public show(Landroid/app/FragmentManager;Ljava/util/ArrayList;)V
     .locals 4
-    .param p1    # Landroid/app/FragmentManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1497,10 +1486,6 @@
 
 .method uncheckBlock(Landroid/content/Context;Lcom/samsung/contacts/interactions/BlockSettingsDialogFragment$RejectValue;II)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/interactions/BlockSettingsDialogFragment$RejectValue;
-    .param p3    # I
-    .param p4    # I
 
     packed-switch p3, :pswitch_data_0
 

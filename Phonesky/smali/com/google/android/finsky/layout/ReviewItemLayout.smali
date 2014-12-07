@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
@@ -43,8 +42,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -53,8 +50,6 @@
 
 .method private getReviewExtraInfo(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/DocumentV2$Review;)Ljava/lang/String;
     .locals 12
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/protos/DocumentV2$Review;
 
     const/4 v9, 0x0
 
@@ -290,11 +285,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/RelativeLayout;->onLayout(ZIIII)V
 
@@ -353,7 +343,6 @@
 
 .method public setActionClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ReviewItemLayout;->mActionContainer:Landroid/view/View;
 
@@ -364,11 +353,6 @@
 
 .method public setReviewInfo(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/DocumentV2$Review;Lcom/google/android/finsky/navigationmanager/NavigationManager;ZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 13
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/protos/DocumentV2$Review;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Z
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     move-object/from16 v0, p5
 

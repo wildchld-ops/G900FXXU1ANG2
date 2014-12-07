@@ -144,8 +144,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lgov/nist/core/StringTokenizer;-><init>(Ljava/lang/String;)V
 
@@ -156,7 +154,6 @@
 
 .method public static charAsString(C)Ljava/lang/String;
     .locals 1
-    .param p0    # C
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
@@ -167,7 +164,6 @@
 
 .method public static final isTokenChar(C)Z
     .locals 2
-    .param p0    # C
 
     const/4 v0, 0x1
 
@@ -250,8 +246,6 @@
 
 .method protected addKeyword(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -279,7 +273,6 @@
 
 .method protected addLexer(Ljava/lang/String;)Ljava/util/Hashtable;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lgov/nist/core/LexerCore;->lexerTables:Ljava/util/Hashtable;
 
@@ -484,7 +477,6 @@
 
 .method public charAsString(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lgov/nist/core/StringTokenizer;->buffer:Ljava/lang/String;
 
@@ -633,7 +625,6 @@
 
 .method public consumeValidChars([C)V
     .locals 8
-    .param p1    # [C
 
     const/4 v5, 0x1
 
@@ -811,7 +802,6 @@
 
 .method public getString(C)Ljava/lang/String;
     .locals 6
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -930,7 +920,6 @@
 
 .method public lookupToken(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/16 v1, 0x800
 
@@ -975,7 +964,6 @@
 
 .method public match(I)Lgov/nist/core/Token;
     .locals 12
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1567,7 +1555,6 @@
 
 .method public peekNextToken(I)[Lgov/nist/core/Token;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -1785,7 +1772,6 @@
 
 .method public rewindInputPosition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lgov/nist/core/StringTokenizer;->ptr:I
 
@@ -1794,7 +1780,6 @@
 
 .method public selectLexer(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/core/LexerCore;->currentLexerName:Ljava/lang/String;
 

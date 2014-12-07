@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -125,8 +124,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/FaceUnlock;Lcom/android/internal/policy/IFaceLockInterface;)Lcom/android/internal/policy/IFaceLockInterface;
     .locals 0
-    .param p0    # Lcom/android/keyguard/FaceUnlock;
-    .param p1    # Lcom/android/internal/policy/IFaceLockInterface;
 
     iput-object p1, p0, Lcom/android/keyguard/FaceUnlock;->mService:Lcom/android/internal/policy/IFaceLockInterface;
 
@@ -135,7 +132,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/FaceUnlock;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/FaceUnlock;
 
     iget-object v0, p0, Lcom/android/keyguard/FaceUnlock;->mHandler:Landroid/os/Handler;
 
@@ -144,11 +140,6 @@
 
 .method private startUi(Landroid/os/IBinder;IIII)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v8, p0, Lcom/android/keyguard/FaceUnlock;->mServiceRunningLock:Ljava/lang/Object;
 
@@ -403,7 +394,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -472,7 +462,6 @@
 
 .method handlePokeWakelock(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/keyguard/FaceUnlock;->mContext:Landroid/content/Context;
 
@@ -701,7 +690,6 @@
 
 .method handleUnlock(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/keyguard/FaceUnlock;->stop()Z
 
@@ -764,7 +752,6 @@
 
 .method public initializeView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-string v0, "FULLockscreen"
 
@@ -787,7 +774,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/FaceUnlock;->mKeyguardScreenCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 

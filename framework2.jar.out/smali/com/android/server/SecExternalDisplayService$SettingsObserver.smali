@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/SecExternalDisplayService;Landroid/os/Handler;)V
     .locals 7
-    .param p2    # Landroid/os/Handler;
 
     const/4 v3, 0x1
 
@@ -99,8 +98,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 

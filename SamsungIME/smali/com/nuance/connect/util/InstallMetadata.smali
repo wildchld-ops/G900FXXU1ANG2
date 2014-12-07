@@ -94,8 +94,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/util/InstallMetadata$MetaDataClient;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/util/InstallMetadata$MetaDataClient;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -158,7 +156,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/util/InstallMetadata;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/util/InstallMetadata;
 
     invoke-direct {p0}, Lcom/nuance/connect/util/InstallMetadata;->flush()V
 
@@ -210,7 +207,6 @@
 
 .method private getPackageList(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -315,7 +311,6 @@
 
 .method private loadPersistentData(Lcom/nuance/connect/util/InstallMetadata$MetaDataClient;)Ljava/util/HashMap;
     .locals 5
-    .param p1    # Lcom/nuance/connect/util/InstallMetadata$MetaDataClient;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -380,10 +375,6 @@
 
 .method private propWrite(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-direct {p0}, Lcom/nuance/connect/util/InstallMetadata;->checkLoaded()V
 
@@ -468,8 +459,6 @@
 
 .method private testPackageInstallsInRange(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/nuance/connect/util/InstallMetadata;->checkLoaded()V
 
@@ -553,7 +542,6 @@
 # virtual methods
 .method public addPackage(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -775,7 +763,6 @@
 
 .method public deletePackage(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/nuance/connect/util/InstallMetadata;->checkLoaded()V
 
@@ -913,8 +900,6 @@
 
 .method public getBoolProp(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/nuance/connect/util/InstallMetadata;->getProp(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -959,8 +944,6 @@
 
 .method public getIntProp(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/high16 v0, -0x80000000
 
@@ -986,8 +969,6 @@
 
 .method public getLongProp(Ljava/lang/String;Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-wide/high16 v0, -0x8000000000000000L
 
@@ -1013,8 +994,6 @@
 
 .method public getProp(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/nuance/connect/util/InstallMetadata;->checkLoaded()V
 
@@ -1048,7 +1027,6 @@
 
 .method public getProps(Ljava/lang/String;)Ljava/util/HashMap;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1090,7 +1068,6 @@
 
 .method public getStep(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "STEP"
 
@@ -1173,7 +1150,6 @@
 
 .method public hasPackage(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/nuance/connect/util/InstallMetadata;->checkLoaded()V
 
@@ -1212,7 +1188,6 @@
 
 .method public isAvailable(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1230,7 +1205,6 @@
 
 .method public isDownloading(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1254,7 +1228,6 @@
 
 .method public isInstalled(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1310,7 +1283,6 @@
 
 .method public isInstalling(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1334,8 +1306,6 @@
 
 .method public listFromPropEquals(Ljava/lang/String;I)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1543,8 +1513,6 @@
 
 .method public propsWrite(Ljava/lang/String;Ljava/util/HashMap;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1605,8 +1573,6 @@
 
 .method public removeProp(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/nuance/connect/util/InstallMetadata;->checkLoaded()V
 
@@ -1718,9 +1684,6 @@
 
 .method public setProp(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p3}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1733,9 +1696,6 @@
 
 .method public setProp(Ljava/lang/String;Ljava/lang/String;J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-static {p3, p4}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -1748,9 +1708,6 @@
 
 .method public setProp(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1761,9 +1718,6 @@
 
 .method public setProp(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {p3}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
 
@@ -1776,7 +1730,6 @@
 
 .method public setProps(Ljava/lang/String;Ljava/util/HashMap;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1798,8 +1751,6 @@
 
 .method public setStep(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "STEP"
 
@@ -1810,9 +1761,6 @@
 
 .method public setUnsavedProp(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p3}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1825,9 +1773,6 @@
 
 .method public setUnsavedProp(Ljava/lang/String;Ljava/lang/String;J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-static {p3, p4}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -1840,9 +1785,6 @@
 
 .method public setUnsavedProp(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1853,9 +1795,6 @@
 
 .method public setUnsavedProp(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {p3}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
 
@@ -1868,7 +1807,6 @@
 
 .method public setUnsavedProps(Ljava/lang/String;Ljava/util/HashMap;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1890,8 +1828,6 @@
 
 .method public setUnsavedStep(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "STEP"
 
@@ -1902,7 +1838,6 @@
 
 .method public uninstallPackage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

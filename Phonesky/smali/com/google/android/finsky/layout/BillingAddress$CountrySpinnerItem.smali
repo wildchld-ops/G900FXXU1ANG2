@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$PurchaseMetadataResponseProto$Countries$Country;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

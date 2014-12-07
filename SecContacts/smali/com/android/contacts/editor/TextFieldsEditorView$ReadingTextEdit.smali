@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/editor/TextFieldsEditorView;Landroid/content/Context;Lcom/android/contacts/common/model/account/AccountType$EditField;Lcom/android/contacts/common/model/ValuesDelta;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/contacts/common/model/account/AccountType$EditField;
-    .param p4    # Lcom/android/contacts/common/model/ValuesDelta;
 
     iput-object p1, p0, Lcom/android/contacts/editor/TextFieldsEditorView$ReadingTextEdit;->this$0:Lcom/android/contacts/editor/TextFieldsEditorView;
 
@@ -44,8 +41,6 @@
 # virtual methods
 .method public onPrivateIMECommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "com.sec.android.inputmethod.iwnnime.japan"
 

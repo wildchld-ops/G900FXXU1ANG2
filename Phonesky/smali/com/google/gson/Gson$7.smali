@@ -27,8 +27,6 @@
 # virtual methods
 .method public getNextAdapter(Lcom/google/gson/Gson;Lcom/google/gson/TypeAdapterFactory;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
     .locals 7
-    .param p1    # Lcom/google/gson/Gson;
-    .param p2    # Lcom/google/gson/TypeAdapterFactory;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

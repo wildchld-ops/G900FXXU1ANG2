@@ -1357,7 +1357,7 @@ Siz həmçinin geri düyməsini basıb saxlayaraq çoxpəncərəli görünüşü
     <string name="usb_tethering_errored_subtext">USB bağlanma səhvi</string>
     <string name="usb_tethering_on_during_sidesync_popup">SideSync funksiyasından istifadə edən zaman USB əlaqəsi qeyri-aktiv edilə bilməz. USB əlaqəsinin qeyri-aktiv edilməsi SideSync funksiyasını qeyri-aktiv edəcəkdir</string>
     <string name="usb_tethering_off_during_sidesync_popup">SideSync funksiyasından istifadə edən zaman USB əlaqəsi aktiv edilə bilməz. USB əlaqəsinin aktiv edilməsi SideSync funksiyasını qeyri-aktiv edəcəkdir</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth bağlanma</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth bağlanma</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Bu cihazın İnternet bağlantısı paylaşılır…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Cihazın Internet bağlantısı 1 cihazla paylaşıldı</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Cihazın Internet bağlantısı %d cihazla paylaşıldı</string>

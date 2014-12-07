@@ -16,7 +16,6 @@
 # direct methods
 .method public static showGPlusSignUpAndPublicReviewsDialog(Landroid/support/v4/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/support/v4/app/FragmentManager;
 
     invoke-static {}, Lcom/google/android/finsky/utils/GPlusDialogsHelper$GPlusSignUpAndPublicReviewsDialog;->newInstance()Lcom/google/android/finsky/utils/GPlusDialogsHelper$GPlusSignUpAndPublicReviewsDialog;
 
@@ -31,7 +30,6 @@
 
 .method public static showGPlusSignUpDialog(Landroid/support/v4/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/support/v4/app/FragmentManager;
 
     invoke-static {}, Lcom/google/android/finsky/utils/GPlusDialogsHelper$GPlusSignUpDialog;->newInstance()Lcom/google/android/finsky/utils/GPlusDialogsHelper$GPlusSignUpDialog;
 
@@ -46,7 +44,6 @@
 
 .method public static showPublicReviewsDialog(Landroid/support/v4/app/FragmentManager;)Z
     .locals 4
-    .param p0    # Landroid/support/v4/app/FragmentManager;
 
     sget-object v2, Lcom/google/android/finsky/utils/FinskyPreferences;->acceptedPlusReviews:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 

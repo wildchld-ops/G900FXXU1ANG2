@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p2    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$ImportRequestConnection;-><init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)V
 
@@ -48,8 +46,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v2, 0x1
 
@@ -111,7 +107,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v0, "VCardImport"
 

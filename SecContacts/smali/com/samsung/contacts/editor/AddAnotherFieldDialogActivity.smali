@@ -47,7 +47,6 @@
 
 .method private returnResultAndFinsish(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -88,7 +87,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-static {p1}, Lcom/android/contacts/ContactsUtils;->safeDialogDismiss(Landroid/content/DialogInterface;)V
 
@@ -101,8 +99,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -171,9 +167,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;IZ)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/AddAnotherFieldDialogActivity;->mSelectedIndexList:Ljava/util/ArrayList;
 
@@ -199,7 +192,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

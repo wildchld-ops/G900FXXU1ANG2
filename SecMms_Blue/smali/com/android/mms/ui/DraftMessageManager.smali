@@ -215,7 +215,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/DraftMessageManager;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -224,7 +223,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/DraftMessageManager;)Lcom/android/mms/animation/MsgDeleteActionAnimation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mMsgDeleteActionAnimation:Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
@@ -233,8 +231,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/DraftMessageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->setTotalQuantityTextView(I)V
 
@@ -243,7 +239,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/DraftMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/DraftMessageManager;->isFirstItemChanged()Z
 
@@ -254,7 +249,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/DraftMessageManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mVisibleOffset:I
 
@@ -263,7 +257,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/DraftMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/DraftMessageManager;->restoreListOffset()V
 
@@ -272,7 +265,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/DraftMessageManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mContext:Landroid/content/Context;
 
@@ -281,7 +273,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/DraftMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mDeleteComplete:Z
 
@@ -290,8 +281,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/ui/DraftMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mDeleteComplete:Z
 
@@ -300,7 +289,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/DraftMessageManager;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -309,8 +297,6 @@
 
 .method static synthetic access$1702(Lcom/android/mms/ui/DraftMessageManager;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -319,8 +305,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/DraftMessageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->startViewer(I)V
 
@@ -329,8 +313,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/DraftMessageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->openThread(I)V
 
@@ -339,8 +321,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/DraftMessageManager;I)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->getConversation(I)Lcom/android/mms/data/Conversation;
 
@@ -351,9 +331,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/DraftMessageManager;Landroid/net/Uri;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/DraftMessageManager;->deleteMessage(Landroid/net/Uri;Z)V
 
@@ -362,7 +339,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/ui/DraftMessageManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mDeleteEventHandler:Landroid/os/Handler;
 
@@ -371,7 +347,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/ui/DraftMessageManager;)Lcom/android/mms/ui/DraftMessageManager$MessageListQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mQueryHandler:Lcom/android/mms/ui/DraftMessageManager$MessageListQueryHandler;
 
@@ -380,7 +355,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/ui/DraftMessageManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -389,8 +363,6 @@
 
 .method static synthetic access$2302(Lcom/android/mms/ui/DraftMessageManager;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -399,7 +371,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/ui/DraftMessageManager;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -408,8 +379,6 @@
 
 .method static synthetic access$2402(Lcom/android/mms/ui/DraftMessageManager;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -418,7 +387,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/ui/DraftMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/DraftMessageManager;->deleteSelectedMessages()V
 
@@ -427,7 +395,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/ui/DraftMessageManager;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -436,8 +403,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/DraftMessageManager;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -446,8 +411,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/DraftMessageManager;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -456,7 +419,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/ui/DraftMessageManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mListMultiMode:I
 
@@ -465,8 +427,6 @@
 
 .method static synthetic access$2902(Lcom/android/mms/ui/DraftMessageManager;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mListMultiMode:I
 
@@ -475,7 +435,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/DraftMessageManager;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -484,7 +443,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/DraftMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mIsSelectAllmode:Z
 
@@ -493,8 +451,6 @@
 
 .method static synthetic access$3002(Lcom/android/mms/ui/DraftMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mIsSelectAllmode:Z
 
@@ -503,7 +459,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/ui/DraftMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mIsLastItemOfSelectAll:Z
 
@@ -512,8 +467,6 @@
 
 .method static synthetic access$3102(Lcom/android/mms/ui/DraftMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mIsLastItemOfSelectAll:Z
 
@@ -522,8 +475,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/DraftMessageManager;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->startAsyncQueryInternal(Z)V
 
@@ -532,7 +483,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/DraftMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/DraftMessageManager;->startAsyncQuery()V
 
@@ -541,7 +491,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/DraftMessageManager;)Lcom/android/mms/ui/DraftMessageListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mMsgListAdapter:Lcom/android/mms/ui/DraftMessageListAdapter;
 
@@ -550,9 +499,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/DraftMessageManager;IZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/DraftMessageManager;->updateEmptyScreen(IZ)V
 
@@ -561,8 +507,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/DraftMessageManager;J)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/DraftMessageManager;->startAsyncQueryDelayed(J)V
 
@@ -585,11 +529,6 @@
 
 .method public static confirmDeleteMessageDialog(Lcom/android/mms/ui/DraftMessageManager$DeleteMessageListener;IZLandroid/content/Context;Ljava/lang/String;)Landroid/app/AlertDialog;
     .locals 7
-    .param p0    # Lcom/android/mms/ui/DraftMessageManager$DeleteMessageListener;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/content/Context;
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -670,8 +609,6 @@
 
 .method private deleteMessage(Landroid/net/Uri;Z)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -1029,7 +966,6 @@
 
 .method private disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     const/4 v0, 0x0
 
@@ -1042,7 +978,6 @@
 
 .method private getConversation(I)Lcom/android/mms/data/Conversation;
     .locals 11
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1191,7 +1126,6 @@
 
 .method private getCreateDialog(Ljava/lang/String;)Landroid/app/ProgressDialog;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/DraftMessageManager;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -1263,9 +1197,6 @@
 
 .method private getQuantityText(III)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -1612,7 +1543,6 @@
 
 .method private isCursorValid(Landroid/database/Cursor;)Z
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-interface {p1}, Landroid/database/Cursor;->isClosed()Z
 
@@ -1742,7 +1672,6 @@
 
 .method private openThread(I)V
     .locals 7
-    .param p1    # I
 
     const-string v4, "Mms/DraftMessageManager"
 
@@ -1897,7 +1826,6 @@
 
 .method private setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     new-instance v0, Lcom/android/mms/ui/SweepHandler;
 
@@ -1914,7 +1842,6 @@
 
 .method private setTotalQuantityTextView(I)V
     .locals 4
-    .param p1    # I
 
     const v1, 0x7f0c00ed
 
@@ -1965,7 +1892,6 @@
 
 .method private startAsyncQueryDelayed(J)V
     .locals 2
-    .param p1    # J
 
     new-instance v0, Landroid/os/Handler;
 
@@ -1982,7 +1908,6 @@
 
 .method private startAsyncQueryInternal(Z)V
     .locals 11
-    .param p1    # Z
 
     :try_start_0
     const-string v7, "normalized_date DESC"
@@ -2091,7 +2016,6 @@
 
 .method private startViewer(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x1
 
@@ -2265,8 +2189,6 @@
 
 .method private updateEmptyScreen(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -2469,7 +2391,6 @@
 
 .method private updateEmptyViewBackground(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/mms/ui/DraftMessageManager;->isEmptyViewVisible()Z
 
@@ -2579,8 +2500,6 @@
 # virtual methods
 .method getMessageItem(Landroid/content/Context;Landroid/database/Cursor;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -2650,7 +2569,6 @@
 
 .method public getNumber(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2746,7 +2664,6 @@
 
 .method public isCallable(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->getNumber(I)Ljava/lang/String;
 
@@ -2767,7 +2684,6 @@
 
 .method public isListIndex(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->isMessageIndex(I)Z
 
@@ -2778,7 +2694,6 @@
 
 .method public isMessageIndex(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2822,7 +2737,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2890,7 +2804,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -3027,8 +2940,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -3050,7 +2961,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/mms/ui/DraftMessageManager;->startAsyncQuery()V
 
@@ -3061,7 +2971,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -3121,7 +3030,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const-string v0, "Mms/DraftMessageManager"
 
@@ -3177,7 +3085,6 @@
 
 .method public onProgressDlgCompleted(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/DraftMessageManager;->isFinishing()Z
 
@@ -3209,7 +3116,6 @@
 
 .method public onProgressDlgStart(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DraftMessageManager;->getCreateDialog(Ljava/lang/String;)Landroid/app/ProgressDialog;
 
@@ -3255,7 +3161,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/DraftMessageManager"
 
@@ -3379,7 +3284,6 @@
 
 .method public onSweepActionCanceled(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/DraftMessageManager"
 
@@ -3408,8 +3312,6 @@
 
 .method public onSweepActionFired(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -3516,7 +3418,6 @@
 
 .method public onSweepActionStarted(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/DraftMessageManager"
 
@@ -3545,7 +3446,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/DraftMessageManager;->mIsAnimationEnable:Z
 

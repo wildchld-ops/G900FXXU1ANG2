@@ -32,7 +32,6 @@
 
 .method static synthetic access$102(Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
     .locals 0
-    .param p0    # Landroid/app/PendingIntent;
 
     sput-object p0, Lcom/google/android/finsky/activities/GaiaRecoveryHelper;->sGaiaAuthIntent:Landroid/app/PendingIntent;
 
@@ -71,10 +70,6 @@
 
 .method public static launchGaiaRecoveryDialog(Landroid/content/res/Resources;Landroid/support/v4/app/FragmentManager;ILjava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Landroid/support/v4/app/FragmentManager;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const v5, 0x7f09017d
 
@@ -208,8 +203,6 @@
 
 .method public static prefetchAndCacheGaiaAuthRecoveryIntent(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

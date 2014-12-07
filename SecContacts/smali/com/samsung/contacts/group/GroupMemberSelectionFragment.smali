@@ -132,7 +132,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/group/GroupMemberSelectionFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -141,7 +140,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/group/GroupMemberSelectionFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberSelectionFragment;
 
     iget v0, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mMode:I
 
@@ -150,8 +148,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/group/GroupMemberSelectionFragment;I)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberSelectionFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->configureUri(I)Landroid/net/Uri;
 
@@ -162,7 +158,6 @@
 
 .method private configureUri(I)Landroid/net/Uri;
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -378,7 +373,6 @@
 
 .method private showSearchProgress(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mSearchProgress:Landroid/view/View;
 
@@ -399,7 +393,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -722,8 +715,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v0, 0x7f0300b8
 
@@ -764,7 +755,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -798,7 +788,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -845,8 +834,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -1040,8 +1027,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->getAdapter()Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -1110,7 +1095,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 2
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1166,8 +1150,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -1307,7 +1289,6 @@
 
 .method public setAutoAdd(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mIsAutoAdd:Z
 
@@ -1336,7 +1317,6 @@
 
 .method public setGroupInfo(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -1345,7 +1325,6 @@
 
 .method public setGroupMemberSelectionUpdateListener(Lcom/samsung/contacts/group/GroupMemberSelectionFragment$onGroupMemberSelectionUpdateListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupMemberSelectionFragment$onGroupMemberSelectionUpdateListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mListener:Lcom/samsung/contacts/group/GroupMemberSelectionFragment$onGroupMemberSelectionUpdateListener;
 
@@ -1354,7 +1333,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mMode:I
 
@@ -1383,8 +1361,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v3, 0x0
 
@@ -1530,8 +1506,6 @@
 
 .method protected updateDoneButton(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mListener:Lcom/samsung/contacts/group/GroupMemberSelectionFragment$onGroupMemberSelectionUpdateListener;
 
@@ -1568,7 +1542,6 @@
 
 .method protected updateSelectAll(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMemberSelectionFragment;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 

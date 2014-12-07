@@ -185,7 +185,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -335,8 +334,6 @@
 
 .method public onFinished(ZLandroid/os/Bundle;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v4, Landroid/content/Intent;
 
@@ -428,7 +425,6 @@
 
 .method public onFlowCanceled(Lcom/google/android/finsky/billing/BillingFlowFragment;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
 
     const/4 v0, 0x1
 
@@ -441,8 +437,6 @@
 
 .method public onFlowError(Lcom/google/android/finsky/billing/BillingFlowFragment;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -459,8 +453,6 @@
 
 .method public onFlowFinished(Lcom/google/android/finsky/billing/BillingFlowFragment;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowFragment;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -471,15 +463,12 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -511,8 +500,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -557,7 +544,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -582,7 +568,6 @@
 
 .method public setHostTitle(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "Swallowing title: resId=%d"
 
@@ -605,7 +590,6 @@
 
 .method public showProgress(I)V
     .locals 2
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/billing/creditcard/SetupWizardAddCreditCardActivity;->mSaveInstanceStateCalled:Z
 

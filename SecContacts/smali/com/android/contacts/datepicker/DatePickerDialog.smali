@@ -33,12 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/contacts/datepicker/DatePickerDialog$OnDateSetListener;IIIZ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/datepicker/DatePickerDialog$OnDateSetListener;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -135,7 +129,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/datepicker/DatePickerDialog;)Lcom/android/contacts/datepicker/DatePicker;
     .locals 1
-    .param p0    # Lcom/android/contacts/datepicker/DatePickerDialog;
 
     iget-object v0, p0, Lcom/android/contacts/datepicker/DatePickerDialog;->mDatePicker:Lcom/android/contacts/datepicker/DatePicker;
 
@@ -156,8 +149,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/contacts/datepicker/DatePickerDialog;->mCallBack:Lcom/android/contacts/datepicker/DatePickerDialog$OnDateSetListener;
 
@@ -222,7 +213,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -311,7 +301,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onWindowFocusChanged(Z)V
 

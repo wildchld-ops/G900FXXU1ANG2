@@ -141,7 +141,6 @@
 
 .method public static getQuotedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -186,7 +185,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 5
-    .param p0    # [Ljava/lang/String;
 
     new-instance v2, Ljava/util/HashSet;
 
@@ -240,7 +238,6 @@
 
 .method protected static reduceString(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -308,7 +305,6 @@
 
 .method public static toHexString([B)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
 
     const/4 v2, 0x0
 
@@ -451,7 +447,6 @@
 
 .method public declared-synchronized generateCallIdentifier(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -564,7 +559,6 @@
 
 .method public responseBelongsToUs(Lgov/nist/javax/sip/message/SIPResponse;)Z
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
 
     invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getTopmostVia()Lgov/nist/javax/sip/header/Via;
 

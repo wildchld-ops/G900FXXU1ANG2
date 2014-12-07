@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/internal/backup/IBackupTransport$Stub;-><init>()V
 
@@ -96,7 +95,6 @@
 
 .method private deleteContents(Ljava/io/File;)V
     .locals 6
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -138,7 +136,6 @@
 # virtual methods
 .method public clearBackupData(Landroid/content/pm/PackageInfo;)I
     .locals 9
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     const-string v6, "LocalTransport"
 
@@ -285,7 +282,6 @@
 
 .method public getRestoreData(Landroid/os/ParcelFileDescriptor;)I
     .locals 15
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     iget-object v12, p0, Lcom/android/internal/backup/LocalTransport;->mRestorePackages:[Landroid/content/pm/PackageInfo;
 
@@ -638,8 +634,6 @@
 
 .method public performBackup(Landroid/content/pm/PackageInfo;Landroid/os/ParcelFileDescriptor;)I
     .locals 13
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
 
     const-string v10, "LocalTransport"
 
@@ -909,8 +903,6 @@
 
 .method public startRestore(J[Landroid/content/pm/PackageInfo;)I
     .locals 3
-    .param p1    # J
-    .param p3    # [Landroid/content/pm/PackageInfo;
 
     const-string v0, "LocalTransport"
 

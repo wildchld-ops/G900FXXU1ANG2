@@ -90,9 +90,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/api/DfeApiContext;Ljava/lang/Class;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/api/DfeApiContext;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -183,7 +180,6 @@
 
 .method private getSignatureResponse(Lcom/android/volley/NetworkResponse;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/volley/NetworkResponse;
 
     iget-object v0, p1, Lcom/android/volley/NetworkResponse;->headers:Ljava/util/Map;
 
@@ -200,7 +196,6 @@
 
 .method private handleServerCommands(Lcom/google/android/finsky/protos/Response$ResponseWrapper;)Lcom/android/volley/Response;
     .locals 6
-    .param p1    # Lcom/google/android/finsky/protos/Response$ResponseWrapper;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -277,7 +272,6 @@
 
 .method private logProtoResponse(Lcom/google/android/finsky/protos/Response$ResponseWrapper;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/protos/Response$ResponseWrapper;
 
     sget-object v6, Lcom/google/android/finsky/api/DfeApiConfig;->protoLogUrlRegexp:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -430,7 +424,6 @@
 
 .method private makeCacheKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -467,7 +460,6 @@
 
 .method public static parseCacheHeaders(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Cache$Entry;
     .locals 12
-    .param p0    # Lcom/android/volley/NetworkResponse;
 
     const-wide/16 v10, 0x0
 
@@ -571,8 +563,6 @@
 
 .method private parseWrapperAndVerifyFromBytes(Lcom/android/volley/NetworkResponse;Ljava/lang/String;)Lcom/google/android/finsky/protos/Response$ResponseWrapper;
     .locals 3
-    .param p1    # Lcom/android/volley/NetworkResponse;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/protobuf/nano/InvalidProtocolBufferNanoException;,
@@ -606,8 +596,6 @@
 
 .method private parseWrapperAndVerifySignature(Lcom/android/volley/NetworkResponse;Z)Lcom/google/android/finsky/protos/Response$ResponseWrapper;
     .locals 7
-    .param p1    # Lcom/android/volley/NetworkResponse;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -706,8 +694,6 @@
 
 .method private parseWrapperAndVerifySignatureFromIs(Ljava/io/InputStream;Ljava/lang/String;)Lcom/google/android/finsky/protos/Response$ResponseWrapper;
     .locals 5
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -759,9 +745,6 @@
 
 .method private static pipeAndCloseOut(Ljava/io/InputStream;Ljava/io/OutputStream;[B)V
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -806,8 +789,6 @@
 # virtual methods
 .method public addExtraHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/api/DfeRequest;->mExtraHeaders:Ljava/util/Map;
 
@@ -829,7 +810,6 @@
 
 .method public deliverError(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v0, p1, Lcom/android/volley/AuthFailureError;
 
@@ -871,7 +851,6 @@
 
 .method public deliverResponse(Lcom/google/android/finsky/protos/Response$ResponseWrapper;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/Response$ResponseWrapper;
 
     const/4 v6, 0x0
 
@@ -962,7 +941,6 @@
 
 .method public bridge synthetic deliverResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Response$ResponseWrapper;
 
@@ -1474,7 +1452,6 @@
 
 .method public handleNotifications(Lcom/google/android/finsky/protos/Response$ResponseWrapper;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/Response$ResponseWrapper;
 
     iget-object v4, p0, Lcom/google/android/finsky/api/DfeRequest;->mApiContext:Lcom/google/android/finsky/api/DfeApiContext;
 
@@ -1520,7 +1497,6 @@
 
 .method protected parseNetworkError(Lcom/android/volley/VolleyError;)Lcom/android/volley/VolleyError;
     .locals 4
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v2, p1, Lcom/android/volley/ServerError;
 
@@ -1552,7 +1528,6 @@
 
 .method public parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 11
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1718,7 +1693,6 @@
 
 .method public setAllowMultipleResponses(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/api/DfeRequest;->mAllowMultipleResponses:Z
 
@@ -1755,8 +1729,6 @@
 
 .method stripForCache(Lcom/google/android/finsky/protos/Response$ResponseWrapper;Lcom/android/volley/Cache$Entry;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/protos/Response$ResponseWrapper;
-    .param p2    # Lcom/android/volley/Cache$Entry;
 
     const/4 v10, 0x1
 

@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -185,7 +183,6 @@
 
 .method public setType(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/GuideView;->mType:I
 
@@ -204,10 +201,6 @@
 
 .method public show(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-boolean v2, p0, Lcom/android/internal/policy/impl/GuideView;->mShowing:Z
 

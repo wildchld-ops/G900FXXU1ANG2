@@ -50,7 +50,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,8 +64,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/config/GservicesValue$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/config/GservicesValue$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/config/GservicesValue;-><init>(Ljava/lang/String;)V
 
@@ -83,8 +80,6 @@
 
 .method public static init(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/config/GservicesValue$GservicesReaderImpl;
 
@@ -101,8 +96,6 @@
 
 .method public static partnerSetting(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/config/GservicesValue;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -125,8 +118,6 @@
 
 .method public static value(Ljava/lang/String;Ljava/lang/Boolean;)Lcom/google/android/finsky/config/GservicesValue;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Boolean;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -149,8 +140,6 @@
 
 .method public static value(Ljava/lang/String;Ljava/lang/Float;)Lcom/google/android/finsky/config/GservicesValue;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Float;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -173,8 +162,6 @@
 
 .method public static value(Ljava/lang/String;Ljava/lang/Integer;)Lcom/google/android/finsky/config/GservicesValue;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Integer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -197,8 +184,6 @@
 
 .method public static value(Ljava/lang/String;Ljava/lang/Long;)Lcom/google/android/finsky/config/GservicesValue;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -221,8 +206,6 @@
 
 .method public static value(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/config/GservicesValue;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

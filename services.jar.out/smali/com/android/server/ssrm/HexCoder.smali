@@ -14,7 +14,6 @@
 
 .method public static decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -61,7 +60,6 @@
 
 .method public static encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuffer;
 

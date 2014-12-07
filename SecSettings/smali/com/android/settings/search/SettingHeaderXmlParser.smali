@@ -80,7 +80,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -192,7 +191,6 @@
 
 .method private addHeaderPreferencesFromRes(I)Ljava/util/ArrayList;
     .locals 20
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1145,7 +1143,6 @@
 
 .method private addPreferencesScreenFromRes(I)Ljava/util/ArrayList;
     .locals 18
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1906,7 +1903,6 @@
 
 .method private isBlockSummaryMenu(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -2445,7 +2441,6 @@
 
 .method public initTitleDB(Z)V
     .locals 22
-    .param p1    # Z
 
     new-instance v2, Ljava/util/ArrayList;
 

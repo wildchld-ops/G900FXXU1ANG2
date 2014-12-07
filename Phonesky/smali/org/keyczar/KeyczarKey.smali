@@ -13,7 +13,6 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,8 +23,6 @@
 
 .method static readKey(Lorg/keyczar/interfaces/KeyType;Ljava/lang/String;)Lorg/keyczar/KeyczarKey;
     .locals 1
-    .param p0    # Lorg/keyczar/interfaces/KeyType;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -47,7 +44,6 @@
 # virtual methods
 .method copyHeader(Ljava/nio/ByteBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
 
     const/4 v0, 0x0
 
@@ -64,7 +60,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     :try_start_0
     move-object v0, p1

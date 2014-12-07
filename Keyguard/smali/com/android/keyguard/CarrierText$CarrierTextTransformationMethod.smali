@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/keyguard/CarrierText;Landroid/content/Context;Z)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/keyguard/CarrierText$CarrierTextTransformationMethod;->this$0:Lcom/android/keyguard/CarrierText;
 
@@ -53,8 +51,6 @@
 # virtual methods
 .method public getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/view/View;
 
     invoke-super {p0, p1, p2}, Landroid/text/method/ReplacementTransformationMethod;->getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
 

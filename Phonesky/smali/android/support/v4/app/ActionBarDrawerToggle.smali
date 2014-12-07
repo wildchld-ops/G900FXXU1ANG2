@@ -95,11 +95,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/support/v4/widget/DrawerLayout;III)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/support/v4/widget/DrawerLayout;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -174,7 +169,6 @@
 
 .method static synthetic access$400(Landroid/support/v4/app/ActionBarDrawerToggle;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Landroid/support/v4/app/ActionBarDrawerToggle;
 
     iget-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle;->mActivity:Landroid/app/Activity;
 
@@ -221,7 +215,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-virtual {p0}, Landroid/support/v4/app/ActionBarDrawerToggle;->getThemeUpIndicator()Landroid/graphics/drawable/Drawable;
 
@@ -250,7 +243,6 @@
 
 .method public onDrawerClosed(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle;->mSlider:Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;
 
@@ -272,7 +264,6 @@
 
 .method public onDrawerOpened(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle;->mSlider:Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;
 
@@ -294,8 +285,6 @@
 
 .method public onDrawerSlide(Landroid/view/View;F)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/high16 v3, 0x40000000
 
@@ -344,14 +333,12 @@
 
 .method public onDrawerStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const v2, 0x800003
 
@@ -402,7 +389,6 @@
 
 .method setActionBarDescription(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle;->mActivityImpl:Landroid/support/v4/app/ActionBarDrawerToggle$Delegate;
 
@@ -433,8 +419,6 @@
 
 .method setActionBarUpIndicator(Landroid/graphics/drawable/Drawable;I)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle;->mActivityImpl:Landroid/support/v4/app/ActionBarDrawerToggle$Delegate;
 
@@ -465,7 +449,6 @@
 
 .method public setDrawerIndicatorEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/support/v4/app/ActionBarDrawerToggle;->mDrawerIndicatorEnabled:Z
 

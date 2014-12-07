@@ -27,9 +27,6 @@
 
 .method static addStreamItemText(Landroid/content/Context;Lcom/android/contacts/util/StreamItemEntry;Landroid/view/View;)Landroid/view/View;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/util/StreamItemEntry;
-    .param p2    # Landroid/view/View;
 
     const v3, 0x7f0802e4
 
@@ -86,10 +83,6 @@
 
 .method public static configureStarredImageView(Landroid/widget/ImageView;ZZZ)V
     .locals 3
-    .param p0    # Landroid/widget/ImageView;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     if-nez p1, :cond_2
 
@@ -150,8 +143,6 @@
 
 .method public static configureStarredMenuItem(Landroid/view/MenuItem;Z)V
     .locals 2
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -184,11 +175,6 @@
 
 .method public static createStreamItemView(Landroid/view/LayoutInflater;Landroid/content/Context;Landroid/view/View;Lcom/android/contacts/util/StreamItemEntry;Landroid/view/View$OnClickListener;)Landroid/view/View;
     .locals 16
-    .param p0    # Landroid/view/LayoutInflater;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/contacts/util/StreamItemEntry;
-    .param p4    # Landroid/view/View$OnClickListener;
 
     if-eqz p2, :cond_1
 
@@ -753,10 +739,6 @@
 
 .method public static getCompany(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -1017,8 +999,6 @@
 
 .method public static getDisplayName(Landroid/content/Context;Lcom/android/contacts/model/Contact;)Ljava/lang/CharSequence;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual {p1}, Lcom/android/contacts/model/Contact;->getDisplayName()Ljava/lang/String;
 
@@ -1080,9 +1060,6 @@
 
 .method public static getDisplayName(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/contacts/common/preference/ContactsPreferences;
 
@@ -1136,7 +1113,6 @@
 
 .method public static getFirstListItemOffset(Landroid/widget/ListView;)I
     .locals 1
-    .param p0    # Landroid/widget/ListView;
 
     if-eqz p0, :cond_0
 
@@ -1174,7 +1150,6 @@
 
 .method public static getImageGetter(Landroid/content/Context;)Landroid/text/Html$ImageGetter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/contacts/detail/ContactDetailDisplayUtils;->sImageGetter:Landroid/text/Html$ImageGetter;
 
@@ -1198,12 +1173,6 @@
 
 .method private static loadPhoto(Lcom/android/contacts/common/ContactPhotoManager;Lcom/android/contacts/util/StreamItemEntry;Lcom/android/contacts/util/StreamItemPhotoEntry;Landroid/view/View;ILandroid/view/View$OnClickListener;)V
     .locals 10
-    .param p0    # Lcom/android/contacts/common/ContactPhotoManager;
-    .param p1    # Lcom/android/contacts/util/StreamItemEntry;
-    .param p2    # Lcom/android/contacts/util/StreamItemPhotoEntry;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
-    .param p5    # Landroid/view/View$OnClickListener;
 
     const/4 v3, 0x0
 
@@ -1280,8 +1249,6 @@
 
 .method public static requestToMoveToOffset(Landroid/widget/ListView;I)V
     .locals 2
-    .param p0    # Landroid/widget/ListView;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1323,8 +1290,6 @@
 
 .method public static setAlphaOnViewBackground(Landroid/view/View;F)V
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # F
 
     if-eqz p0, :cond_0
 
@@ -1352,8 +1317,6 @@
 
 .method private static setDataOrHideIfNone(Ljava/lang/CharSequence;Landroid/widget/TextView;)V
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/widget/TextView;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1384,9 +1347,6 @@
 
 .method public static setDataOrHideIfNoneCompanyName(Ljava/lang/CharSequence;Landroid/widget/TextView;Landroid/view/View;)Z
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/view/View;
 
     const/16 v2, 0x8
 
@@ -1423,9 +1383,6 @@
 
 .method public static setDisplayName(Landroid/content/Context;Lcom/android/contacts/model/Contact;Landroid/widget/TextView;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/model/Contact;
-    .param p2    # Landroid/widget/TextView;
 
     if-nez p2, :cond_0
 

@@ -45,7 +45,6 @@
 # direct methods
 .method constructor <init>(Lcom/nuance/connect/service/manager/CategoryManager;Ljava/lang/String;)V
     .locals 5
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->this$0:Lcom/nuance/connect/service/manager/CategoryManager;
 
@@ -290,8 +289,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->subscribeResponse(Lcom/nuance/connect/service/comm/Response;)V
 
@@ -300,8 +297,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->getResponse(Lcom/nuance/connect/service/comm/Response;)V
 
@@ -310,8 +305,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->downloadResponse(Lcom/nuance/connect/service/comm/Response;)V
 
@@ -320,7 +313,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->properties:Ljava/util/HashMap;
 
@@ -329,8 +321,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->ackResponse(Lcom/nuance/connect/service/comm/Response;)V
 
@@ -339,7 +329,6 @@
 
 .method private ackResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->this$0:Lcom/nuance/connect/service/manager/CategoryManager;
 
@@ -488,7 +477,6 @@
 
 .method private downloadResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->this$0:Lcom/nuance/connect/service/manager/CategoryManager;
 
@@ -691,7 +679,6 @@
 
 .method private getResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v9, 0x1
 
@@ -864,7 +851,6 @@
 
 .method private subscribeResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v4, 0x1
 
@@ -1031,7 +1017,6 @@
 
 .method public createDownloadFile(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;->downloadFilePath:Ljava/lang/String;
 

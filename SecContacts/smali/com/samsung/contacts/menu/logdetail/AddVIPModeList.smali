@@ -22,8 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/OptionMenu;-><init>(Landroid/content/Context;)V
 

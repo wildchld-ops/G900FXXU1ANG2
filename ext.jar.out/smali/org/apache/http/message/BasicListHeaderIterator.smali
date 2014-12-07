@@ -19,8 +19,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/List;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/util/List;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method protected filterHeader(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lorg/apache/http/message/BasicListHeaderIterator;->headerName:Ljava/lang/String;
 
@@ -91,7 +88,6 @@
 
 .method protected findNext(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v2, -0x1
 

@@ -203,7 +203,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -642,7 +641,6 @@
 
 .method public declared-synchronized isEnabled(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

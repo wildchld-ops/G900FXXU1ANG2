@@ -55,7 +55,6 @@
 # virtual methods
 .method public declared-synchronized addCookie(Lorg/apache/http/cookie/Cookie;)V
     .locals 3
-    .param p1    # Lorg/apache/http/cookie/Cookie;
 
     monitor-enter p0
 
@@ -121,7 +120,6 @@
 
 .method public declared-synchronized addCookies([Lorg/apache/http/cookie/Cookie;)V
     .locals 5
-    .param p1    # [Lorg/apache/http/cookie/Cookie;
 
     monitor-enter p0
 
@@ -186,7 +184,6 @@
 
 .method public declared-synchronized clearExpired(Ljava/util/Date;)Z
     .locals 3
-    .param p1    # Ljava/util/Date;
 
     monitor-enter p0
 

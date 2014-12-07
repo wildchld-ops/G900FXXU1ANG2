@@ -44,12 +44,6 @@
 
 .method public constructor <init>(FFFFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/high16 v1, 0x3f800000
 
@@ -125,7 +119,6 @@
 
 .method public concat(Lcom/voovio/geometry/Matrix;)V
     .locals 4
-    .param p1    # Lcom/voovio/geometry/Matrix;
 
     invoke-virtual {p0}, Lcom/voovio/geometry/Matrix;->clone()Lcom/voovio/geometry/Matrix;
 
@@ -346,7 +339,6 @@
 
 .method public rotate(F)V
     .locals 8
-    .param p1    # F
 
     const/4 v5, 0x0
 
@@ -397,8 +389,6 @@
 
 .method public scale(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -523,7 +513,6 @@
 
 .method public transformPoint(Lcom/voovio/geometry/Point;)Lcom/voovio/geometry/Point;
     .locals 4
-    .param p1    # Lcom/voovio/geometry/Point;
 
     new-instance v0, Lcom/voovio/geometry/Point;
 
@@ -574,8 +563,6 @@
 
 .method public translate(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v1, 0x3f800000
 

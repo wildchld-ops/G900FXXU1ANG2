@@ -36,7 +36,6 @@
 # virtual methods
 .method public addAccountTypeImpl(Lcom/android/contacts/common/model/account/AccountType;Ljava/util/Map;Ljava/util/Map;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/common/model/account/AccountType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

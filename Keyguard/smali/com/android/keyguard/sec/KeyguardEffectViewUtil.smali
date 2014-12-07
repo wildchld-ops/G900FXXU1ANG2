@@ -40,8 +40,6 @@
 
 .method private static checkWallpaperDrawableAndReturn(Landroid/content/Context;Landroid/graphics/drawable/BitmapDrawable;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
 
     if-nez p0, :cond_0
 
@@ -117,7 +115,6 @@
 
 .method public static getCurrentWallpaper(Landroid/content/Context;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/keyguard/sec/MultiSimUtils;->isMultiSIMDevice()Z
 
@@ -182,8 +179,6 @@
 
 .method public static getCurrentWallpaper(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -448,7 +443,6 @@
 
 .method public static getDefaultInputStream(Landroid/content/Context;)Ljava/io/InputStream;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -507,7 +501,6 @@
 
 .method public static getDefaultLonglifeInputStream(Landroid/content/Context;)Ljava/io/InputStream;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -540,7 +533,6 @@
 
 .method public static getDefaultWallpaper(Landroid/content/Context;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -816,7 +808,6 @@
 
 .method public static isLiveWallpaper(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -854,7 +845,6 @@
 
 .method public static writeKeyguardCurrentWallpaperInfo(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, -0x2
 
@@ -905,7 +895,6 @@
 
 .method public static writeKeyguardDefaultWallpaperResId(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -936,8 +925,6 @@
 
 .method private static writeWallpaperInfoAndReturn(Landroid/content/Context;Landroid/graphics/drawable/BitmapDrawable;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-static {p0}, Lcom/android/keyguard/sec/KeyguardEffectViewUtil;->writeKeyguardCurrentWallpaperInfo(Landroid/content/Context;)V
 

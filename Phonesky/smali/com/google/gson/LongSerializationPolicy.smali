@@ -78,9 +78,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/gson/LongSerializationPolicy$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/gson/LongSerializationPolicy$1;
 
     invoke-direct {p0, p1, p2}, Lcom/google/gson/LongSerializationPolicy;-><init>(Ljava/lang/String;I)V
 
@@ -89,7 +86,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/gson/LongSerializationPolicy;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/gson/LongSerializationPolicy;
 

@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/concurrent/BlockingQueue;Lcom/android/volley/Network;Lcom/android/volley/Cache;Lcom/android/volley/ResponseDelivery;)V
     .locals 1
-    .param p2    # Lcom/android/volley/Network;
-    .param p3    # Lcom/android/volley/Cache;
-    .param p4    # Lcom/android/volley/ResponseDelivery;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63,7 +60,6 @@
 
 .method private parseAndDeliverNetworkError(Lcom/android/volley/Request;Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p2    # Lcom/android/volley/VolleyError;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

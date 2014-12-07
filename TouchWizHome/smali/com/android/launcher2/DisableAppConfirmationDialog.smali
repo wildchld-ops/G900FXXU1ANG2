@@ -63,10 +63,6 @@
 
 .method static createAndShow(Ljava/lang/String;Ljava/lang/String;Landroid/app/FragmentManager;Z)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/FragmentManager;
-    .param p3    # Z
 
     invoke-static {p2}, Lcom/android/launcher2/DisableAppConfirmationDialog;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -107,8 +103,6 @@
 
 .method static dismiss(Landroid/app/FragmentTransaction;Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentTransaction;
-    .param p1    # Landroid/app/FragmentManager;
 
     const-string v1, "DisableAppConfirm"
 
@@ -130,7 +124,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v0, "DisableAppConfirm"
 
@@ -155,8 +148,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -324,7 +315,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -357,7 +347,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x1
 

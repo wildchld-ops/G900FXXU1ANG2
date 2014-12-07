@@ -28,10 +28,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/LibTypeProvider;-><init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -78,8 +74,6 @@
 
 .method private checkMovingPacket([BI)Z
     .locals 2
-    .param p1    # [B
-    .param p2    # I
 
     add-int/lit8 v0, p2, 0x5
 
@@ -100,8 +94,6 @@
 
 .method private checkStayingAreaPacket([BI)Z
     .locals 2
-    .param p1    # [B
-    .param p2    # I
 
     add-int/lit8 v0, p2, 0x16
 
@@ -122,10 +114,6 @@
 
 .method private parseForMoving([BIJJ)I
     .locals 20
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
 
     move/from16 v18, p2
 
@@ -392,10 +380,6 @@
 
 .method private parseForStayingArea([BIJJ)I
     .locals 21
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
 
     move/from16 v19, p2
 
@@ -1104,8 +1088,6 @@
 
 .method public parse([BI)I
     .locals 14
-    .param p1    # [B
-    .param p2    # I
 
     move/from16 v2, p2
 
@@ -1203,7 +1185,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -1440,15 +1421,6 @@
 
 .method public updatePassiveCurrentPosition(I[IDDDDFFI)V
     .locals 2
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
-    .param p11    # F
-    .param p12    # F
-    .param p13    # I
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/LifeLogComponentRunner;->isDisable()Z
 
@@ -1488,7 +1460,6 @@
 
 .method public final updatePosition(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner$Position;)V
     .locals 17
-    .param p1    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner$Position;
 
     invoke-virtual/range {p0 .. p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/LifeLogComponentRunner;->isDisable()Z
 

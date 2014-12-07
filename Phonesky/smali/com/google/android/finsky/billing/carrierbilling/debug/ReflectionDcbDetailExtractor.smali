@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,8 +42,6 @@
 
 .method private static buildDetails(Ljava/lang/Object;Ljava/lang/String;)Ljava/util/Collection;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -70,8 +66,6 @@
 
 .method private static buildDetailsHelper(Ljava/lang/Object;Ljava/lang/String;Ljava/util/List;)V
     .locals 24
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -513,7 +507,6 @@
 
 .method static isArray(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -536,7 +529,6 @@
 
 .method static isIterable(Ljava/lang/Object;)Z
     .locals 2
-    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -561,7 +553,6 @@
 
 .method private static methodNameToTitle(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "get"
 

@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/client/HttpClient;)V
     .locals 0
-    .param p1    # Lorg/apache/http/client/HttpClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,7 +23,6 @@
 
 .method private static addHeaders(Lorg/apache/http/client/methods/HttpUriRequest;Ljava/util/Map;)V
     .locals 3
-    .param p0    # Lorg/apache/http/client/methods/HttpUriRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -231,7 +229,6 @@
 
 .method private static setEntityIfNonEmptyBody(Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;Lcom/android/volley/Request;)V
     .locals 2
-    .param p0    # Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -267,7 +264,6 @@
 # virtual methods
 .method protected onPrepareRequest(Lorg/apache/http/client/methods/HttpUriRequest;)V
     .locals 0
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

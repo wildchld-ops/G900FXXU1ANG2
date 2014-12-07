@@ -10,10 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/contacts/activities/ActionBarAdapter$Listener;Landroid/app/ActionBar;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/activities/ActionBarAdapter$Listener;
-    .param p3    # Landroid/app/ActionBar;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/contacts/activities/ActionBarAdapter;-><init>(Landroid/content/Context;Lcom/android/contacts/activities/ActionBarAdapter$Listener;Landroid/app/ActionBar;Z)V
 
@@ -28,9 +24,6 @@
 # virtual methods
 .method protected addTab(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     :goto_0
     iget-object v1, p0, Lcom/android/contacts/activities/ActionBarAdapter;->mActionBar:Landroid/app/ActionBar;
@@ -151,7 +144,6 @@
 
 .method protected changeTabIfOverflow(I)I
     .locals 1
-    .param p1    # I
 
     sget v0, Lcom/samsung/contacts/activities/ContactsTab;->COUNT:I
 
@@ -195,10 +187,6 @@
 
 .method protected setIconOrText(Landroid/app/ActionBar$Tab;III)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/contacts/activities/ActionBarAdapter;->setIconOrText(Landroid/app/ActionBar$Tab;III)V
 

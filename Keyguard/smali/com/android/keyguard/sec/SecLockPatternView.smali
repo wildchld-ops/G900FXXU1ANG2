@@ -63,7 +63,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -74,8 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x3
 
@@ -493,10 +490,6 @@
 
 .method private checkDistance(FFFF)V
     .locals 11
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/high16 v10, 0x3f800000
 
@@ -556,12 +549,6 @@
 
 .method private drawCircle(Landroid/graphics/Canvas;IIZII)V
     .locals 23
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
 
     move-object/from16 v0, p0
 
@@ -1185,11 +1172,6 @@
 
 .method private drawLastLine(Landroid/graphics/Path;FFFF)V
     .locals 2
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     sget-object v0, Lcom/android/keyguard/sec/SecLockPatternView$1;->$SwitchMap$com$android$keyguard$sec$SecLockPatternView$MorphStatus:[I
 
@@ -1225,10 +1207,6 @@
 
 .method private drawMorph(Landroid/graphics/Canvas;FFF)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v3, p0, Lcom/android/keyguard/sec/SecLockPatternView;->morphRatio:F
 
@@ -1290,10 +1268,6 @@
 
 .method private drawSmallCircle(Landroid/graphics/Canvas;FFZ)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     iget-object v2, p0, Lcom/android/internal/widget/LockPatternView;->mBitmapCircleDefault:Landroid/graphics/Bitmap;
 
@@ -1358,10 +1332,6 @@
 
 .method private getDegree(FFFF)D
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const-wide/16 v0, 0x0
 
@@ -1386,8 +1356,6 @@
 
 .method private getImagesForCircle(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -1777,7 +1745,6 @@
 
 .method private setStatus(Lcom/android/keyguard/sec/SecLockPatternView$MorphStatus;)V
     .locals 3
-    .param p1    # Lcom/android/keyguard/sec/SecLockPatternView$MorphStatus;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SecLockPatternView;->currentStatus:Lcom/android/keyguard/sec/SecLockPatternView$MorphStatus;
 
@@ -1814,7 +1781,6 @@
 # virtual methods
 .method protected addCellToPattern(Lcom/android/internal/widget/LockPatternView$Cell;)V
     .locals 2
-    .param p1    # Lcom/android/internal/widget/LockPatternView$Cell;
 
     invoke-super {p0, p1}, Lcom/android/internal/widget/LockPatternView;->addCellToPattern(Lcom/android/internal/widget/LockPatternView$Cell;)V
 
@@ -1834,7 +1800,6 @@
 
 .method protected handleActionMove(Landroid/view/MotionEvent;)V
     .locals 30
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/keyguard/sec/SecLockPatternView;->getLineRadius()F
 
@@ -2259,7 +2224,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 42
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 

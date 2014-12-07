@@ -39,9 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/utils/ClientMutationCache;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/utils/ClientMutationCache;
 
     invoke-direct {p0}, Lcom/google/android/finsky/fragments/ViewBinder;-><init>()V
 
@@ -83,12 +80,6 @@
 
 .method private getAdapterForBucketType(Lcom/google/android/finsky/api/model/Bucket;[Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;Ljava/lang/String;ILandroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Lcom/google/android/finsky/adapters/FinskyListAdapter;
     .locals 14
-    .param p1    # Lcom/google/android/finsky/api/model/Bucket;
-    .param p2    # [Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/BucketedListBinder;->mData:Ljava/lang/Object;
 
@@ -203,13 +194,6 @@
 # virtual methods
 .method public bind(Landroid/view/ViewGroup;ILcom/google/android/finsky/api/model/Bucket;[Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;Ljava/lang/String;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 8
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/api/model/Bucket;
-    .param p4    # [Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/fragments/BucketedListBinder;->mContentLayout:Landroid/view/ViewGroup;
 
@@ -363,7 +347,6 @@
 
 .method protected configureEmptyUi(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -437,7 +420,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/BucketedListBinder;->mListView:Lcom/google/android/finsky/layout/play/PlayListView;
 
@@ -453,8 +435,6 @@
 
 .method public onSaveInstanceState(Landroid/widget/ListView;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/BucketedListBinder;->mAdapter:Lcom/google/android/finsky/adapters/FinskyListAdapter;
 
@@ -508,7 +488,6 @@
 
 .method public bridge synthetic setData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/api/model/BucketedList;
 

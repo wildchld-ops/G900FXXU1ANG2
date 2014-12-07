@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +41,6 @@
 
 .method protected decryptDouble(Ljava/lang/String;)D
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/sqlite/SQLDataSource;->decryptString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -101,7 +99,6 @@
 
 .method protected decryptFloat(Ljava/lang/String;)F
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/sqlite/SQLDataSource;->decryptString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -160,7 +157,6 @@
 
 .method protected decryptInt(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/sqlite/SQLDataSource;->decryptString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -219,7 +215,6 @@
 
 .method protected decryptString(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ""
 
@@ -277,7 +272,6 @@
 
 .method protected encryptString(D)Ljava/lang/String;
     .locals 1
-    .param p1    # D
 
     invoke-static {p1, p2}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
@@ -292,7 +286,6 @@
 
 .method protected encryptString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -307,7 +300,6 @@
 
 .method protected encryptString(J)Ljava/lang/String;
     .locals 1
-    .param p1    # J
 
     invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -322,7 +314,6 @@
 
 .method protected encryptString(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ""
 

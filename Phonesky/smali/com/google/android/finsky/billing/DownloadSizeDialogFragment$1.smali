@@ -48,8 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-boolean v1, p0, Lcom/google/android/finsky/billing/DownloadSizeDialogFragment$1;->val$showWifiOnlyOption:Z
 

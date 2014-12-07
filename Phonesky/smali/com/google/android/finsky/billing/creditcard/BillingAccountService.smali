@@ -14,10 +14,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/creditcard/BillingAccountService;Lcom/google/android/finsky/api/DfeApi;[ILjava/util/concurrent/Semaphore;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/BillingAccountService;
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # [I
-    .param p3    # Ljava/util/concurrent/Semaphore;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/billing/creditcard/BillingAccountService;->checkValidInstrument(Lcom/google/android/finsky/api/DfeApi;[ILjava/util/concurrent/Semaphore;)V
 
@@ -26,8 +22,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/creditcard/BillingAccountService;Landroid/accounts/Account;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/BillingAccountService;
-    .param p1    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/volley/AuthFailureError;
@@ -43,10 +37,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/api/DfeApi;I[ILjava/util/concurrent/Semaphore;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # Ljava/util/concurrent/Semaphore;
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/finsky/billing/creditcard/BillingAccountService;->returnResult(Lcom/google/android/finsky/api/DfeApi;I[ILjava/util/concurrent/Semaphore;)V
 
@@ -55,8 +45,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/creditcard/BillingAccountService;Lcom/android/volley/VolleyError;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/BillingAccountService;
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/creditcard/BillingAccountService;->convertErrorCode(Lcom/android/volley/VolleyError;)I
 
@@ -67,7 +55,6 @@
 
 .method private checkPromoOffers(Landroid/accounts/Account;)Landroid/os/Bundle;
     .locals 10
-    .param p1    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/volley/AuthFailureError;
@@ -163,9 +150,6 @@
 
 .method private checkValidInstrument(Lcom/google/android/finsky/api/DfeApi;[ILjava/util/concurrent/Semaphore;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # [I
-    .param p3    # Ljava/util/concurrent/Semaphore;
 
     new-instance v0, Lcom/google/android/finsky/billing/creditcard/BillingAccountService$4;
 
@@ -182,7 +166,6 @@
 
 .method private convertErrorCode(Lcom/android/volley/VolleyError;)I
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v0, p1, Lcom/android/volley/ServerError;
 
@@ -228,17 +211,12 @@
 
 .method private static logOfferResultCode(I)V
     .locals 0
-    .param p0    # I
 
     return-void
 .end method
 
 .method private static returnResult(Lcom/google/android/finsky/api/DfeApi;I[ILjava/util/concurrent/Semaphore;)V
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # Ljava/util/concurrent/Semaphore;
 
     const/4 v0, 0x0
 
@@ -253,7 +231,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Lcom/google/android/finsky/billing/creditcard/BillingAccountService$1;
 

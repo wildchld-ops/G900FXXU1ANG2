@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -39,9 +37,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/DfeModel;-><init>()V
 
@@ -194,7 +189,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Details$DetailsResponse;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Details$DetailsResponse;
 
     iput-object p1, p0, Lcom/google/android/finsky/api/model/DfeDetails;->mDetailsResponse:Lcom/google/android/finsky/protos/Details$DetailsResponse;
 
@@ -205,7 +199,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Details$DetailsResponse;
 

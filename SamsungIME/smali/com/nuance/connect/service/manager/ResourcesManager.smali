@@ -66,7 +66,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v4, 0x0
 
@@ -109,7 +108,6 @@
 
 .method private getImageResource(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -144,7 +142,6 @@
 
 .method private getTextResource(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -181,8 +178,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -241,7 +236,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -298,7 +292,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x1
 
@@ -367,7 +360,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     return-void
 .end method

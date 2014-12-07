@@ -56,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/FlagItemFragment;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/FlagItemFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemFragment;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/FlagItemFragment;)Lcom/google/android/finsky/api/model/DfeDetails;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/FlagItemFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemFragment;->mDfeDetails:Lcom/google/android/finsky/api/model/DfeDetails;
 
@@ -74,7 +72,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/FlagItemFragment;)Lcom/google/android/finsky/fragments/PageFragmentHost;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/FlagItemFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemFragment;->mPageFragmentHost:Lcom/google/android/finsky/fragments/PageFragmentHost;
 
@@ -83,7 +80,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/FlagItemFragment;)Lcom/google/android/finsky/fragments/PageFragmentHost;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/FlagItemFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemFragment;->mPageFragmentHost:Lcom/google/android/finsky/fragments/PageFragmentHost;
 
@@ -145,7 +141,6 @@
 
 .method private getFlagTypesForCurrentCorpus(I)Ljava/util/List;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -261,7 +256,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Lcom/google/android/finsky/activities/FlagItemFragment;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/FlagItemFragment;
 
@@ -340,7 +334,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/UrlBasedPageFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -451,7 +444,6 @@
 
 .method public onDocumentLoaded(Lcom/google/android/finsky/api/model/Document;)V
     .locals 13
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v6, 0x0
 
@@ -744,7 +736,6 @@
 
 .method public onPositiveClick(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/FlagItemFragment;->mFlagMessage:Ljava/lang/String;
 
@@ -755,7 +746,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/UrlBasedPageFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

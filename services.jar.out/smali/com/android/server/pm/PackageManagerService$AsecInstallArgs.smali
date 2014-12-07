@@ -35,10 +35,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/net/Uri;Ljava/lang/String;ZZ)V
     .locals 8
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v0, 0x0
 
@@ -84,7 +80,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallParams;)V
     .locals 8
-    .param p2    # Lcom/android/server/pm/PackageManagerService$InstallParams;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$AsecInstallArgs;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -117,11 +112,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
     .locals 11
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$AsecInstallArgs;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -200,8 +190,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Z)V
     .locals 8
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -258,7 +246,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/pm/PackageManagerService$AsecInstallArgs;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService$AsecInstallArgs;
 
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService$AsecInstallArgs;->isExternal()Z
 
@@ -305,7 +292,6 @@
 
 .method private setCachePath(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -381,7 +367,6 @@
 # virtual methods
 .method checkFreeStorage(Lcom/android/internal/app/IMediaContainerService;)Z
     .locals 5
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -500,8 +485,6 @@
 
 .method copyApk(Lcom/android/internal/app/IMediaContainerService;Z)I
     .locals 10
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -622,7 +605,6 @@
 
 .method doPostCopy(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/pm/PackageManagerService$InstallArgs;->isFwdLocked()Z
 
@@ -690,7 +672,6 @@
 
 .method doPostDeleteLI(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -767,8 +748,6 @@
 
 .method doPostInstall(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const-string v3, "PackageManager"
 
@@ -921,7 +900,6 @@
 
 .method doPreInstall(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -973,9 +951,6 @@
 
 .method doRename(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1383,7 +1358,6 @@
 
 .method matchContainer(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$AsecInstallArgs;->cid:Ljava/lang/String;
 

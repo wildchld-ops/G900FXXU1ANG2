@@ -84,7 +84,6 @@
 
 .method public static registerType(Lorg/keyczar/interfaces/KeyType;)V
     .locals 4
-    .param p0    # Lorg/keyczar/interfaces/KeyType;
 
     invoke-interface {p0}, Lorg/keyczar/interfaces/KeyType;->getName()Ljava/lang/String;
 
@@ -134,9 +133,6 @@
 # virtual methods
 .method public bridge synthetic deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/google/gson/JsonElement;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonDeserializationContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonParseException;
@@ -152,9 +148,6 @@
 
 .method public deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;Lcom/google/gson/JsonDeserializationContext;)Lorg/keyczar/interfaces/KeyType;
     .locals 4
-    .param p1    # Lcom/google/gson/JsonElement;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/JsonDeserializationContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonParseException;

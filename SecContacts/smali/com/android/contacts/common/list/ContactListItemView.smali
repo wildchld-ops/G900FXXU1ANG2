@@ -200,7 +200,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/16 v5, 0x80
 
@@ -321,8 +320,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v8, 0x2
 
@@ -825,7 +822,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/common/list/ContactListItemView;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mHorizontalDividerVisible:Z
 
@@ -834,7 +830,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPreferredHeight:I
 
@@ -843,7 +838,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/common/list/ContactListItemView;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     invoke-direct {p0}, Lcom/android/contacts/common/list/ContactListItemView;->ensurePhotoViewSize()V
 
@@ -852,7 +846,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhotoViewWidth:I
 
@@ -861,7 +854,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/common/list/ContactListItemView;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mKeepHorizontalPaddingForPhotoView:Z
 
@@ -870,7 +862,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mGapBetweenImageAndText:I
 
@@ -879,7 +870,6 @@
 
 .method static synthetic access$1400(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mCheckedStateImageView:Landroid/widget/ImageView;
 
@@ -888,7 +878,6 @@
 
 .method static synthetic access$1500(Lcom/android/contacts/common/list/ContactListItemView;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mActivatedStateSupported:Z
 
@@ -897,7 +886,6 @@
 
 .method static synthetic access$1600(Lcom/android/contacts/common/list/ContactListItemView;)Lcom/samsung/contacts/impl/ListCallButtonControllerImpl;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mListCallButtonController:Lcom/samsung/contacts/impl/ListCallButtonControllerImpl;
 
@@ -906,7 +894,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mNameTextView:Landroid/widget/TextView;
 
@@ -915,7 +902,6 @@
 
 .method static synthetic access$1800(Lcom/android/contacts/common/list/ContactListItemView;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -924,7 +910,6 @@
 
 .method static synthetic access$1900(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mCheckBoxHeight:I
 
@@ -933,8 +918,6 @@
 
 .method static synthetic access$1902(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mCheckBoxHeight:I
 
@@ -943,7 +926,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mHorizontalDividerHeight:I
 
@@ -952,7 +934,6 @@
 
 .method static synthetic access$2000(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mCheckBoxMarginLeft:I
 
@@ -961,7 +942,6 @@
 
 .method static synthetic access$2100(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mCheckBoxMarginRight:I
 
@@ -970,7 +950,6 @@
 
 .method static synthetic access$2200(Lcom/android/contacts/common/list/ContactListItemView;)Lcom/android/contacts/common/list/ContactListItemView$PhotoPosition;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhotoPosition:Lcom/android/contacts/common/list/ContactListItemView$PhotoPosition;
 
@@ -979,7 +958,6 @@
 
 .method static synthetic access$2300(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mTextIndent:I
 
@@ -988,7 +966,6 @@
 
 .method static synthetic access$2400(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mGapBetweenLabelAndData:I
 
@@ -997,7 +974,6 @@
 
 .method static synthetic access$2500(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhoneticNameTextView:Landroid/widget/TextView;
 
@@ -1006,7 +982,6 @@
 
 .method static synthetic access$2600(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mDataView:Landroid/widget/TextView;
 
@@ -1015,7 +990,6 @@
 
 .method static synthetic access$2700(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mLabelView:Landroid/widget/TextView;
 
@@ -1024,7 +998,6 @@
 
 .method static synthetic access$2800(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mDataViewWidthWeight:I
 
@@ -1033,7 +1006,6 @@
 
 .method static synthetic access$2900(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mLabelViewWidthWeight:I
 
@@ -1042,7 +1014,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mNameTextViewHeight:I
 
@@ -1051,7 +1022,6 @@
 
 .method static synthetic access$3000(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mSnippetView:Landroid/widget/TextView;
 
@@ -1060,8 +1030,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mNameTextViewHeight:I
 
@@ -1070,7 +1038,6 @@
 
 .method static synthetic access$3100(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPresenceIcon:Landroid/widget/ImageView;
 
@@ -1079,7 +1046,6 @@
 
 .method static synthetic access$3200(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPresenceIconSize:I
 
@@ -1088,7 +1054,6 @@
 
 .method static synthetic access$3300(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mStatusView:Landroid/widget/TextView;
 
@@ -1097,7 +1062,6 @@
 
 .method static synthetic access$3400(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPresenceIconMargin:I
 
@@ -1106,7 +1070,6 @@
 
 .method static synthetic access$3500(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhotoViewHeight:I
 
@@ -1115,7 +1078,6 @@
 
 .method static synthetic access$3600(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/QuickContactBadge;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mQuickContact:Landroid/widget/QuickContactBadge;
 
@@ -1124,7 +1086,6 @@
 
 .method static synthetic access$3700(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhotoView:Landroid/widget/ImageView;
 
@@ -1133,7 +1094,6 @@
 
 .method static synthetic access$3800(Lcom/android/contacts/common/list/ContactListItemView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mStarredIcon:Landroid/widget/ImageView;
 
@@ -1142,7 +1102,6 @@
 
 .method static synthetic access$3900(Lcom/android/contacts/common/list/ContactListItemView;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->isGalSearchShowMoreItem:Z
 
@@ -1151,7 +1110,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhoneticNameTextViewHeight:I
 
@@ -1160,7 +1118,6 @@
 
 .method static synthetic access$4000(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mAccountIconMarginBottom:I
 
@@ -1169,8 +1126,6 @@
 
 .method static synthetic access$402(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhoneticNameTextViewHeight:I
 
@@ -1179,7 +1134,6 @@
 
 .method static synthetic access$4100(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mAccountIconSize:I
 
@@ -1188,7 +1142,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mLabelViewHeight:I
 
@@ -1197,8 +1150,6 @@
 
 .method static synthetic access$502(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mLabelViewHeight:I
 
@@ -1207,7 +1158,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mDataViewHeight:I
 
@@ -1216,8 +1166,6 @@
 
 .method static synthetic access$602(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mDataViewHeight:I
 
@@ -1226,7 +1174,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mLabelAndDataViewMaxHeight:I
 
@@ -1235,8 +1182,6 @@
 
 .method static synthetic access$702(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mLabelAndDataViewMaxHeight:I
 
@@ -1245,7 +1190,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mSnippetTextViewHeight:I
 
@@ -1254,8 +1198,6 @@
 
 .method static synthetic access$802(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mSnippetTextViewHeight:I
 
@@ -1264,7 +1206,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/common/list/ContactListItemView;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
 
     iget v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mStatusTextViewHeight:I
 
@@ -1273,8 +1214,6 @@
 
 .method static synthetic access$902(Lcom/android/contacts/common/list/ContactListItemView;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mStatusTextViewHeight:I
 
@@ -1283,7 +1222,6 @@
 
 .method private addAccountIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
 
@@ -1441,7 +1379,6 @@
 
 .method public static final getDefaultPhotoPosition(Z)Lcom/android/contacts/common/list/ContactListItemView$PhotoPosition;
     .locals 3
-    .param p0    # Z
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -1622,8 +1559,6 @@
 
 .method private setMarqueeText(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Lcom/android/contacts/common/list/ContactListItemView;->getTextEllipsis()Landroid/text/TextUtils$TruncateAt;
 
@@ -1662,9 +1597,6 @@
 
 .method private setMarqueeText(Landroid/widget/TextView;[CI)V
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # [C
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -1695,7 +1627,6 @@
 # virtual methods
 .method public adjustListItemSelectionBounds(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->top:I
 
@@ -1740,7 +1671,6 @@
 
 .method public dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mActivatedStateSupported:Z
 
@@ -2596,7 +2526,6 @@
 
 .method protected isVisible(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -2636,11 +2565,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v1, p5, p3
 
@@ -2805,8 +2729,6 @@
 
 .method protected onMeasure(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v6, 0x40000000
 
@@ -2919,8 +2841,6 @@
 
 .method public removePhotoView(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -2980,7 +2900,6 @@
 
 .method public setActivatedStateSupported(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mActivatedStateSupported:Z
 
@@ -2989,7 +2908,6 @@
 
 .method public setCountView(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -3049,9 +2967,6 @@
 
 .method public setData([CII)V
     .locals 3
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x3
 
@@ -3104,7 +3019,6 @@
 
 .method public setDividerVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mHorizontalDividerVisible:Z
 
@@ -3113,7 +3027,6 @@
 
 .method public setGalSearchShowMoreItem(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->isGalSearchShowMoreItem:Z
 
@@ -3122,7 +3035,6 @@
 
 .method public setHighlightedPrefix(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mHighlightedPrefix:Ljava/lang/String;
 
@@ -3131,7 +3043,6 @@
 
 .method public setHugeFontEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/contacts/common/list/ContactListItemView;->sHughFontEnabled:Z
 
@@ -3140,7 +3051,6 @@
 
 .method public setLabel(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3180,8 +3090,6 @@
 
 .method public setPhoneticName([CI)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
 
     invoke-static {}, Lcom/samsung/contacts/util/LoadCscFeatureUtils;->getInstance()Lcom/samsung/contacts/util/LoadCscFeatureUtils;
 
@@ -3230,7 +3138,6 @@
 
 .method public setPresence(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_2
 
@@ -3289,7 +3196,6 @@
 
 .method public setQuickContactEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mQuickContactEnabled:Z
 
@@ -3298,7 +3204,6 @@
 
 .method public setSectionHeader(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -3309,8 +3214,6 @@
 
 .method public setSectionHeader(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v2, 0x8
 
@@ -3469,7 +3372,6 @@
 
 .method public setSnippet(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3513,7 +3415,6 @@
 
 .method public setStatus(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3553,7 +3454,6 @@
 
 .method public setUnknownNameText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mUnknownNameText:Ljava/lang/CharSequence;
 
@@ -3562,8 +3462,6 @@
 
 .method public showAccountIcons(Landroid/database/Cursor;I)V
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     const/16 v3, 0x8
 
@@ -3622,11 +3520,6 @@
 
 .method public showCallButton(Lcom/samsung/contacts/impl/ListCallButtonControllerImpl;Landroid/database/Cursor;ILandroid/net/Uri;Z)V
     .locals 6
-    .param p1    # Lcom/samsung/contacts/impl/ListCallButtonControllerImpl;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mListCallButtonController:Lcom/samsung/contacts/impl/ListCallButtonControllerImpl;
 
@@ -3654,7 +3547,6 @@
 
 .method public showCheckBox(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/contacts/common/list/ContactListItemView;->getCheckBox()Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -3678,8 +3570,6 @@
 
 .method public showData(Landroid/database/Cursor;I)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mDataBuffer:Landroid/database/CharArrayBuffer;
 
@@ -3700,9 +3590,6 @@
 
 .method public showDisplayName(Landroid/database/Cursor;II)V
     .locals 5
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # I
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -3805,8 +3692,6 @@
 
 .method public showPhoneticName(Landroid/database/Cursor;I)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/contacts/common/list/ContactListItemView;->mPhoneticNameBuffer:Landroid/database/CharArrayBuffer;
 
@@ -3839,9 +3724,6 @@
 
 .method public showPresenceAndStatusMessage(Landroid/database/Cursor;II)V
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -3903,8 +3785,6 @@
 
 .method public showStarredIcon(Landroid/database/Cursor;I)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -3954,7 +3834,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactListItemView;->mActivatedBackgroundDrawable:Landroid/graphics/drawable/Drawable;
 

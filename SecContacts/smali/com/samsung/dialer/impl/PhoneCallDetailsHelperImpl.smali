@@ -14,8 +14,6 @@
 
 .method private addBoldAndColor(Ljava/lang/CharSequence;I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -52,9 +50,6 @@
 
 .method private setUnreadColor(Lcom/android/dialer/PhoneCallDetailsViews;Ljava/lang/CharSequence;Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # Lcom/android/dialer/PhoneCallDetailsViews;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/Integer;
 
     if-eqz p3, :cond_0
 
@@ -89,8 +84,6 @@
 # virtual methods
 .method public setCallDetailHistoryLogTypeImage(ILandroid/widget/ImageView;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/widget/ImageView;
 
     const v0, 0x7f02008e
 
@@ -179,13 +172,6 @@
 
 .method public setPhoneCallDetails(Landroid/content/Context;Lcom/android/dialer/PhoneCallDetailsViews;Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;ZILcom/android/dialer/calllog/PhoneNumberHelper;Landroid/content/res/Resources;)V
     .locals 23
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/PhoneCallDetailsViews;
-    .param p3    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # Lcom/android/dialer/calllog/PhoneNumberHelper;
-    .param p7    # Landroid/content/res/Resources;
 
     move-object/from16 v11, p6
 

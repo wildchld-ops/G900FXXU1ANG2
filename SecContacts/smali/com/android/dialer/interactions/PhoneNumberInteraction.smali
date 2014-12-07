@@ -120,9 +120,6 @@
 
 .method constructor <init>(Landroid/content/Context;ILandroid/content/DialogInterface$OnDismissListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/DialogInterface$OnDismissListener;
 
     const/4 v0, 0x0
 
@@ -133,10 +130,6 @@
 
 .method private constructor <init>(Landroid/content/Context;ILandroid/content/DialogInterface$OnDismissListener;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/DialogInterface$OnDismissListener;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -161,10 +154,6 @@
 
 .method static synthetic access$200(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/dialer/interactions/PhoneNumberInteraction;->performAction(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V
 
@@ -216,10 +205,6 @@
 
 .method private static performAction(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     packed-switch p2, :pswitch_data_0
 
@@ -358,7 +343,6 @@
 
 .method private performAction(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/dialer/interactions/PhoneNumberInteraction;->mContext:Landroid/content/Context;
 
@@ -373,8 +357,6 @@
 
 .method public static startInteractionForPhoneCall(Lcom/android/contacts/common/activity/TransactionSafeActivity;Landroid/net/Uri;)V
     .locals 3
-    .param p0    # Lcom/android/contacts/common/activity/TransactionSafeActivity;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x1
 
@@ -401,7 +383,6 @@
 
 .method public onLoadComplete(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 6
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -655,8 +636,6 @@
 
 .method public bridge synthetic onLoadComplete(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -698,7 +677,6 @@
 
 .method startInteraction(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x1
 
@@ -709,9 +687,6 @@
 
 .method startInteraction(Landroid/net/Uri;ZZ)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v5, 0x0
 

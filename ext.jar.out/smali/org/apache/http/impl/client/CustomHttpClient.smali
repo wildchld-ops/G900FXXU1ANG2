@@ -132,7 +132,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -165,7 +164,6 @@
 
 .method public static bBothInfAvail(I)Z
     .locals 5
-    .param p0    # I
 
     const/4 v2, 0x1
 
@@ -242,9 +240,6 @@
 
 .method public static getAddrsByHost(JLjava/lang/String;I)[Ljava/net/InetAddress;
     .locals 14
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/UnknownHostException;
@@ -548,8 +543,6 @@
 
 .method public static getIPStyle(Ljava/net/InetAddress;I)I
     .locals 5
-    .param p0    # Ljava/net/InetAddress;
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -613,8 +606,6 @@
 
 .method protected static getLocalAddrEx(II)Ljava/net/InetAddress;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -748,8 +739,6 @@
 
 .method private static getSBInterface(II)Ljava/net/InetAddress;
     .locals 9
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1036,7 +1025,6 @@
 
 .method private static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/Throwable;
 
     if-nez p0, :cond_0
 
@@ -1118,8 +1106,6 @@
 
 .method private isExcluded(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1374,7 +1360,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1418,7 +1403,6 @@
 
 .method public static log(Ljava/lang/Throwable;)V
     .locals 3
-    .param p0    # Ljava/lang/Throwable;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1466,7 +1450,6 @@
 
 .method private static logToFile(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     sget-object v4, Lorg/apache/http/impl/client/CustomHttpClient;->logFileLocker:Ljava/lang/Object;
 
@@ -1691,8 +1674,6 @@
 
 .method public static reportSBUsage(J[J)V
     .locals 9
-    .param p0    # J
-    .param p2    # [J
 
     :try_start_0
     invoke-static {}, Lorg/apache/http/impl/client/CustomHttpClient;->getService()V
@@ -1821,8 +1802,6 @@
 
 .method public static submitMultiSocketData([J[J)V
     .locals 10
-    .param p0    # [J
-    .param p1    # [J
 
     const-wide/16 v8, 0x0
 
@@ -2018,8 +1997,6 @@
 # virtual methods
 .method protected autoEnableMultiRAT(ZI)I
     .locals 9
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -2318,7 +2295,6 @@
 
 .method public createClientRequestDirector(Lorg/apache/http/HttpRequest;)Lorg/apache/http/impl/client/DefaultRequestDirector;
     .locals 14
-    .param p1    # Lorg/apache/http/HttpRequest;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractHttpClient;->getRequestExecutor()Lorg/apache/http/protocol/HttpRequestExecutor;
 
@@ -2741,7 +2717,6 @@
 
 .method protected getHttpProxy(I)[Ljava/lang/String;
     .locals 9
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2836,8 +2811,6 @@
 
 .method protected getProxy(ILorg/apache/http/HttpHost;)Lorg/apache/http/HttpHost;
     .locals 6
-    .param p1    # I
-    .param p2    # Lorg/apache/http/HttpHost;
 
     const/4 v1, 0x0
 
@@ -3069,7 +3042,6 @@
 
 .method protected getSBUsageStatus(J)I
     .locals 8
-    .param p1    # J
 
     const/4 v2, 0x2
 
@@ -3162,7 +3134,6 @@
 
 .method protected getSmartBondingData(I)[J
     .locals 14
-    .param p1    # I
 
     const-wide/16 v12, -0x1
 
@@ -3321,7 +3292,6 @@
 
 .method protected mydetermineParams(Lorg/apache/http/HttpRequest;)Lorg/apache/http/params/HttpParams;
     .locals 7
-    .param p1    # Lorg/apache/http/HttpRequest;
 
     const/4 v2, 0x0
 
@@ -3448,10 +3418,6 @@
 
 .method protected startSBDirectUsage(JJJLjava/lang/String;)Z
     .locals 8
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3606,9 +3572,6 @@
 
 .method protected startSBUsageURL(JJLjava/lang/String;)Z
     .locals 8
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3749,7 +3712,6 @@
 
 .method protected stopSBUsage(J)I
     .locals 8
-    .param p1    # J
 
     const/4 v1, 0x2
 
@@ -3866,8 +3828,6 @@
 
 .method protected stopSBUsageWithReason(JI)I
     .locals 8
-    .param p1    # J
-    .param p3    # I
 
     const/4 v1, 0x2
 

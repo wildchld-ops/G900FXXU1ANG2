@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/keyguard/KeyguardViewManager;Landroid/content/Context;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;->this$0:Lcom/android/keyguard/KeyguardViewManager;
 
@@ -79,7 +78,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;->mCustomBackground:Landroid/graphics/drawable/Drawable;
 
@@ -172,7 +170,6 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -258,7 +255,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -359,10 +355,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/FrameLayout;->onSizeChanged(IIII)V
 
@@ -373,7 +365,6 @@
 
 .method public setCustomBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardViewManager$ViewManagerHost;->mCustomBackground:Landroid/graphics/drawable/Drawable;
 

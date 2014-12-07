@@ -39,9 +39,6 @@
 
 .method public static recordError(Ljava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -104,9 +101,6 @@
 
 .method public static recordSuccess(Ljava/lang/String;IZ)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x1
 

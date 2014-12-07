@@ -54,7 +54,6 @@
 
 .method protected constructor <init>(Lgov/nist/javax/sip/SipStackImpl;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/SipStackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,7 +110,6 @@
 # virtual methods
 .method public declared-synchronized addListeningPoint(Ljavax/sip/ListeningPoint;)V
     .locals 5
-    .param p1    # Ljavax/sip/ListeningPoint;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/ObjectInUseException;
@@ -253,7 +251,6 @@
 
 .method public addSipListener(Ljavax/sip/SipListener;)V
     .locals 3
-    .param p1    # Ljavax/sip/SipListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/TooManyListenersException;
@@ -343,7 +340,6 @@
 
 .method public declared-synchronized dialogErrorEvent(Lgov/nist/javax/sip/stack/SIPDialogErrorEvent;)V
     .locals 6
-    .param p1    # Lgov/nist/javax/sip/stack/SIPDialogErrorEvent;
 
     monitor-enter p0
 
@@ -479,7 +475,6 @@
 
 .method public getListeningPoint(Ljava/lang/String;)Ljavax/sip/ListeningPoint;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -582,7 +577,6 @@
 
 .method public getNewClientTransaction(Ljavax/sip/message/Request;)Ljavax/sip/ClientTransaction;
     .locals 20
-    .param p1    # Ljavax/sip/message/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/TransactionUnavailableException;
@@ -1363,7 +1357,6 @@
 
 .method public getNewDialog(Ljavax/sip/Transaction;)Ljavax/sip/Dialog;
     .locals 12
-    .param p1    # Ljavax/sip/Transaction;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -1635,7 +1628,6 @@
 
 .method public getNewServerTransaction(Ljavax/sip/message/Request;)Ljavax/sip/ServerTransaction;
     .locals 12
-    .param p1    # Ljavax/sip/message/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/TransactionAlreadyExistsException;,
@@ -2293,8 +2285,6 @@
 
 .method public handleEvent(Ljava/util/EventObject;Lgov/nist/javax/sip/stack/SIPTransaction;)V
     .locals 5
-    .param p1    # Ljava/util/EventObject;
-    .param p2    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     iget-object v2, p0, Lgov/nist/javax/sip/SipProviderImpl;->sipStack:Lgov/nist/javax/sip/SipStackImpl;
 
@@ -2517,7 +2507,6 @@
 
 .method public declared-synchronized removeListeningPoint(Ljavax/sip/ListeningPoint;)V
     .locals 4
-    .param p1    # Ljavax/sip/ListeningPoint;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/ObjectInUseException;
@@ -2633,7 +2622,6 @@
 
 .method public removeSipListener(Ljavax/sip/SipListener;)V
     .locals 5
-    .param p1    # Ljavax/sip/SipListener;
 
     const/4 v4, 0x0
 
@@ -2691,7 +2679,6 @@
 
 .method public sendRequest(Ljavax/sip/message/Request;)V
     .locals 12
-    .param p1    # Ljavax/sip/message/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -3168,7 +3155,6 @@
 
 .method public sendResponse(Ljavax/sip/message/Response;)V
     .locals 13
-    .param p1    # Ljavax/sip/message/Response;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -3428,7 +3414,6 @@
 
 .method public setAutomaticDialogSupportEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/SipProviderImpl;->automaticDialogSupportEnabled:Z
 
@@ -3456,7 +3441,6 @@
 
 .method public declared-synchronized setListeningPoint(Ljavax/sip/ListeningPoint;)V
     .locals 5
-    .param p1    # Ljavax/sip/ListeningPoint;
 
     monitor-enter p0
 
@@ -3584,7 +3568,6 @@
 
 .method public transactionErrorEvent(Lgov/nist/javax/sip/stack/SIPTransactionErrorEvent;)V
     .locals 10
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionErrorEvent;
 
     invoke-virtual {p1}, Ljava/util/EventObject;->getSource()Ljava/lang/Object;
 

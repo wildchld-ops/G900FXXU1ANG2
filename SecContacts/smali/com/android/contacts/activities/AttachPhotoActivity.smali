@@ -52,8 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/activities/AttachPhotoActivity;Lcom/android/contacts/model/Contact;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/AttachPhotoActivity;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/AttachPhotoActivity;->saveContact(Lcom/android/contacts/model/Contact;)V
 
@@ -70,8 +68,6 @@
 
 .method private loadContact(Landroid/net/Uri;Lcom/android/contacts/activities/AttachPhotoActivity$Listener;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/contacts/activities/AttachPhotoActivity$Listener;
 
     new-instance v0, Lcom/android/contacts/model/ContactLoader;
 
@@ -94,7 +90,6 @@
 
 .method private saveContact(Lcom/android/contacts/model/Contact;)V
     .locals 22
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/contacts/model/Contact;->createRawContactDeltaList()Lcom/android/contacts/model/RawContactDeltaList;
 
@@ -281,9 +276,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -414,7 +406,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -559,7 +550,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/activity/TransactionSafeActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

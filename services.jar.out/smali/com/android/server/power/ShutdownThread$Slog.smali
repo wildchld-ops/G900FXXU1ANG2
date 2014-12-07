@@ -57,7 +57,6 @@
 
 .method private constructor <init>(Landroid/os/Looper;)V
     .locals 0
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -66,7 +65,6 @@
 
 .method static synthetic access$1202(Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Ljava/lang/Runnable;
 
     sput-object p0, Lcom/android/server/power/ShutdownThread$Slog;->delayDumpRaunnable:Ljava/lang/Runnable;
 
@@ -149,8 +147,6 @@
 
 .method static d(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -176,8 +172,6 @@
 
 .method static e(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -203,9 +197,6 @@
 
 .method static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
 
     const/4 v1, -0x1
 
@@ -231,8 +222,6 @@
 
 .method static i(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -258,8 +247,6 @@
 
 .method static onview(Ljava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x5
 
@@ -430,7 +417,6 @@
 
 .method private static setMessage(Ljava/lang/String;)V
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v10, 0x5
 
@@ -801,8 +787,6 @@
 
 .method static v(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -828,8 +812,6 @@
 
 .method static w(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -855,9 +837,6 @@
 
 .method static w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
 
     const/4 v1, -0x1
 
@@ -885,7 +864,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     sget-object v1, Lcom/android/server/power/ShutdownThread$Slog;->queueState:[Ljava/lang/String;
 

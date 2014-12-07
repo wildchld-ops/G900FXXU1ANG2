@@ -75,8 +75,6 @@
 
 .method public onContactSelected(Lcom/android/contacts/common/list/ContactTileView;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Lcom/android/contacts/common/list/ContactTileView;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p1}, Lcom/android/contacts/common/list/ContactTileView;->getLookupUri()Landroid/net/Uri;
 
@@ -191,7 +189,6 @@
 
 .method public onContextContactSelected(Lcom/android/contacts/common/list/ContactTileView;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/list/ContactTileView;
 
     iget-object v2, p0, Lcom/android/contacts/list/ContactTileListFragment$3;->this$0:Lcom/android/contacts/list/ContactTileListFragment;
 
@@ -260,9 +257,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     return-void
 .end method

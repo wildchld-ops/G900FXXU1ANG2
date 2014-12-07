@@ -22,7 +22,6 @@
 # direct methods
 .method constructor <init>(Lcom/nuance/connect/service/comm/Command;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,7 +104,6 @@
 
 .method public createDownloadFile(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/nuance/connect/service/comm/SingleCommandTransaction;->downloadFilePath:Ljava/lang/String;
 
@@ -226,7 +224,6 @@
 
 .method public isSame(Lcom/nuance/connect/service/comm/Transaction;)Z
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Transaction;
 
     invoke-interface {p1}, Lcom/nuance/connect/service/comm/Transaction;->getName()Ljava/lang/String;
 
@@ -245,7 +242,6 @@
 
 .method public onCancel(Lcom/nuance/connect/service/comm/Command;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v1, 0x0
 
@@ -275,9 +271,6 @@
 
 .method public onDownloadStatusResponse(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -307,7 +300,6 @@
 
 .method public onFailure(Lcom/nuance/connect/service/comm/Command;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v1, 0x0
 
@@ -337,7 +329,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v1, 0x0
 
@@ -367,7 +358,6 @@
 
 .method public onIOExceptionResponse(Lcom/nuance/connect/service/comm/Command;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v1, 0x0
 
@@ -397,7 +387,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v1, 0x0
 

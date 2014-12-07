@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/16 v2, 0xfa
 
@@ -73,8 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v2, 0xfa
 
@@ -123,9 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/16 v2, 0xfa
 
@@ -174,7 +168,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;)Lcom/samsung/android/magazinecard/MagazineCardRecord;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->mCardRecord:Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
@@ -183,7 +176,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;)Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->mMainView:Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
 
@@ -192,8 +184,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->setCardScale(Z)V
 
@@ -202,9 +192,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->startCardFadeAnim(Landroid/view/View;Landroid/view/View;)V
 
@@ -213,7 +200,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->mCardFadingAnimator:Landroid/animation/ValueAnimator;
 
@@ -222,8 +208,6 @@
 
 .method static synthetic access$402(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->mCardFadingAnimator:Landroid/animation/ValueAnimator;
 
@@ -232,8 +216,6 @@
 
 .method static synthetic access$502(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->mCardResizeAnimator:Landroid/animation/ValueAnimator;
 
@@ -242,8 +224,6 @@
 
 .method static synthetic access$602(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->mIsAnimating:Z
 
@@ -252,7 +232,6 @@
 
 .method private createChildren(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     if-nez p1, :cond_1
 
@@ -338,7 +317,6 @@
 
 .method private setCardScale(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v1, "KeyguardMagazineCardHolderView"
 
@@ -364,8 +342,6 @@
 
 .method private startCardFadeAnim(Landroid/view/View;Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -442,8 +418,6 @@
 
 .method private startCardResizeAnim(Landroid/view/View;Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const/4 v8, 0x1
 
@@ -564,8 +538,6 @@
 # virtual methods
 .method public build(Lcom/samsung/android/magazinecard/MagazineCardRecord;Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
-    .param p2    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
 
     iput-object p2, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardHolderView;->mMainView:Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
 

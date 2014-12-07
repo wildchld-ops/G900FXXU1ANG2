@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="dtmf_dialer_field_height">97.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_023b">false</item>
     <dimen name="more_menu_offset_x">215.0dip</dimen>
     <dimen name="more_menu_offset_y">95.0dip</dimen>
-    <item type="dimen" name="APKTOOL_DUMMY_023b">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_023e">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_023f">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_0240">false</item>

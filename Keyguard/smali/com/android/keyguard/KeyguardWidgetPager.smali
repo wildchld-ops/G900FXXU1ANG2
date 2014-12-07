@@ -98,7 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -111,8 +110,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -123,9 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, -0x2
 
@@ -283,8 +277,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/KeyguardWidgetPager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetPager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mIsWakeupBlocked:Z
 
@@ -293,7 +285,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardWidgetPager;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetPager;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -302,7 +293,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardWidgetPager;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetPager;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mWidgetToResetAfterFadeOut:I
 
@@ -311,8 +301,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/KeyguardWidgetPager;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetPager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mWidgetToResetAfterFadeOut:I
 
@@ -321,7 +309,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardWidgetPager;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardWidgetPager;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardWidgetPager;->updateWidgetFramesImportantForAccessibility()V
 
@@ -330,7 +317,6 @@
 
 .method private captureUserInteraction(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/android/keyguard/PagedView;->getCurrentPage()I
 
@@ -361,7 +347,6 @@
 
 .method private enforceKeyguardWidgetFrame(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     instance-of v0, p1, Lcom/android/keyguard/KeyguardWidgetFrame;
 
@@ -381,7 +366,6 @@
 
 .method private static findClockInHierarchy(Landroid/view/View;)I
     .locals 5
-    .param p0    # Landroid/view/View;
 
     instance-of v4, p0, Landroid/widget/TextClock;
 
@@ -439,7 +423,6 @@
 
 .method private static getClockFlags(Landroid/widget/TextClock;)I
     .locals 6
-    .param p0    # Landroid/widget/TextClock;
 
     const/4 v0, 0x0
 
@@ -579,14 +562,12 @@
 
 .method private updatePageAlphaValues(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method private updateWidgetFrameImportantForAccessibility(Lcom/android/keyguard/KeyguardWidgetFrame;)V
     .locals 2
-    .param p1    # Lcom/android/keyguard/KeyguardWidgetFrame;
 
     invoke-virtual {p1}, Lcom/android/keyguard/KeyguardWidgetFrame;->getContentAlpha()F
 
@@ -669,8 +650,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardWidgetPager;->enforceKeyguardWidgetFrame(Landroid/view/View;)V
 
@@ -681,9 +660,6 @@
 
 .method public addView(Landroid/view/View;II)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardWidgetPager;->enforceKeyguardWidgetFrame(Landroid/view/View;)V
 
@@ -694,9 +670,6 @@
 
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardWidgetPager;->enforceKeyguardWidgetFrame(Landroid/view/View;)V
 
@@ -707,8 +680,6 @@
 
 .method public addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardWidgetPager;->enforceKeyguardWidgetFrame(Landroid/view/View;)V
 
@@ -719,7 +690,6 @@
 
 .method public addWidget(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, -0x1
 
@@ -730,8 +700,6 @@
 
 .method public addWidget(Landroid/view/View;I)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -865,7 +833,6 @@
 
 .method animateOutlinesAndSidePages(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, -0x1
 
@@ -876,8 +843,6 @@
 
 .method animateOutlinesAndSidePages(ZI)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -1029,8 +994,6 @@
 
 .method boundByReorderablePages(Z[I)V
     .locals 4
-    .param p1    # Z
-    .param p2    # [I
 
     const/4 v3, 0x1
 
@@ -1117,7 +1080,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -1199,9 +1161,6 @@
 
 .method public getAlphaForPage(IIZ)F
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -1242,9 +1201,6 @@
 
 .method public getOutlineAlphaForPage(IIZ)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -1318,7 +1274,6 @@
 
 .method public getWidgetPageAt(I)Lcom/android/keyguard/KeyguardWidgetFrame;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -1331,7 +1286,6 @@
 
 .method public getWidgetPageIndex(Landroid/view/View;)I
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v1, -0x1
 
@@ -1400,7 +1354,6 @@
 
 .method public handleExternalCameraEvent(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/android/keyguard/PagedView;->beginCameraEvent()V
 
@@ -1515,7 +1468,6 @@
 
 .method public isCameraPage(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -1545,7 +1497,6 @@
 
 .method public isContextualPage(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1609,8 +1560,6 @@
 
 .method protected isOverScrollChild(IF)Z
     .locals 6
-    .param p1    # I
-    .param p2    # F
 
     const/4 v1, 0x1
 
@@ -1670,7 +1619,6 @@
 
 .method public isWidgetPage(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1718,8 +1666,6 @@
 
 .method public onAddView(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     move-object v2, p1
 
@@ -1784,7 +1730,6 @@
 
 .method public onBouncerStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1823,7 +1768,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1881,7 +1825,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -1965,8 +1908,6 @@
 
 .method protected onMeasure(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -2158,8 +2099,6 @@
 
 .method public onPageSwitched(Landroid/view/View;I)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -2302,8 +2241,6 @@
 
 .method public onPageSwitching(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mViewStateManager:Lcom/android/keyguard/KeyguardViewStateManager;
 
@@ -2336,8 +2273,6 @@
 
 .method public onRemoveView(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     move-object v1, p1
 
@@ -2405,7 +2340,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -2463,7 +2397,6 @@
 
 .method protected onUnhandledTap(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardWidgetPager;->showPagingFeedback()V
 
@@ -2472,7 +2405,6 @@
 
 .method protected overScroll(F)V
     .locals 0
-    .param p1    # F
 
     invoke-virtual {p0, p1}, Lcom/android/keyguard/PagedView;->acceleratedOverScroll(F)V
 
@@ -2481,7 +2413,6 @@
 
 .method public removeWidget(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     instance-of v2, p1, Lcom/android/keyguard/KeyguardWidgetFrame;
 
@@ -2549,7 +2480,6 @@
 
 .method protected screenScrolled(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -2688,7 +2618,6 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x1000
 
@@ -2766,7 +2695,6 @@
 
 .method setBouncerAnimationDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mBouncerZoomInOutDuration:I
 
@@ -2775,7 +2703,6 @@
 
 .method public setCallbacks(Lcom/android/keyguard/KeyguardWidgetPager$Callbacks;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardWidgetPager$Callbacks;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mCallbacks:Lcom/android/keyguard/KeyguardWidgetPager$Callbacks;
 
@@ -2784,7 +2711,6 @@
 
 .method setCurrentPage(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/keyguard/PagedView;->setCurrentPage(I)V
 
@@ -2799,7 +2725,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -2808,7 +2733,6 @@
 
 .method public setMusicWidgetAdded(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mIsMusicWidgetAdded:Z
 
@@ -2817,8 +2741,6 @@
 
 .method protected setPageHoveringOverDeleteDropTarget(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/keyguard/KeyguardWidgetPager;->getWidgetPageAt(I)Lcom/android/keyguard/KeyguardWidgetFrame;
 
@@ -2831,7 +2753,6 @@
 
 .method public setViewStateManager(Lcom/android/keyguard/KeyguardViewStateManager;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardViewStateManager;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mViewStateManager:Lcom/android/keyguard/KeyguardViewStateManager;
 
@@ -2840,7 +2761,6 @@
 
 .method public setWidgetToResetOnPageFadeOut(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardWidgetPager;->mWidgetToResetAfterFadeOut:I
 
@@ -2849,7 +2769,6 @@
 
 .method protected shouldSetTopAlignedPivotForWidget(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/keyguard/KeyguardWidgetPager;->isCameraPage(I)Z
 
@@ -2892,7 +2811,6 @@
 
 .method updateChildrenContentAlpha(F)V
     .locals 5
-    .param p1    # F
 
     const/4 v4, 0x0
 

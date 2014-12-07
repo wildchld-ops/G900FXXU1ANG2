@@ -23,8 +23,6 @@
 
 .method public static createIntent(Landroid/accounts/Account;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -49,7 +47,6 @@
 
 .method public static extractSelectedInstrumentId(Landroid/content/Intent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     if-eqz p0, :cond_0
 
@@ -131,7 +128,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const v2, 0x7f04001f
 
@@ -200,7 +196,6 @@
 
 .method public onInstrumentSelected(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -221,7 +216,6 @@
 
 .method protected onReady(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/BillingProfileActivity;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 

@@ -21,8 +21,6 @@
 
 .method protected static hideFragment(Landroid/app/FragmentTransaction;Landroid/app/Fragment;)V
     .locals 1
-    .param p0    # Landroid/app/FragmentTransaction;
-    .param p1    # Landroid/app/Fragment;
 
     if-eqz p1, :cond_0
 
@@ -40,8 +38,6 @@
 
 .method protected static showFragment(Landroid/app/FragmentTransaction;Landroid/app/Fragment;)V
     .locals 1
-    .param p0    # Landroid/app/FragmentTransaction;
-    .param p1    # Landroid/app/Fragment;
 
     if-eqz p1, :cond_0
 
@@ -97,7 +93,6 @@
 
 .method public getFragment(I)Landroid/app/Fragment;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -156,8 +151,6 @@
 
 .method public getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Lcom/android/contacts/ContactsApplication;->getInjectedServices()Lcom/android/contacts/test/InjectedServices;
 
@@ -184,7 +177,6 @@
 
 .method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -209,7 +201,6 @@
 
 .method public getView(I)Landroid/view/View;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -264,7 +255,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {p0}, Lcom/android/contacts/ContactSaveService;->registerListener(Lcom/android/contacts/ContactSaveService$Listener;)V
 
@@ -285,7 +275,6 @@
 
 .method public onServiceCompleted(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 

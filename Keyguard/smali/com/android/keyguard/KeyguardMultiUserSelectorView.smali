@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -49,8 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -63,9 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -88,8 +82,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/KeyguardMultiUserSelectorView;Lcom/android/keyguard/KeyguardMultiUserAvatar;)Lcom/android/keyguard/KeyguardMultiUserAvatar;
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardMultiUserSelectorView;
-    .param p1    # Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardMultiUserSelectorView;->mActiveUserAvatar:Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
@@ -98,7 +90,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardMultiUserSelectorView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardMultiUserSelectorView;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardMultiUserSelectorView;->setMobileDataMultiUser()V
 
@@ -107,7 +98,6 @@
 
 .method private createAndAddUser(Landroid/content/pm/UserInfo;)Lcom/android/keyguard/KeyguardMultiUserAvatar;
     .locals 5
-    .param p1    # Landroid/content/pm/UserInfo;
 
     const/4 v4, 0x0
 
@@ -150,7 +140,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -228,7 +217,6 @@
 
 .method private setAllClickable(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -593,7 +581,6 @@
 
 .method finalizeActiveUserNow(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMultiUserSelectorView;->mActiveUserAvatar:Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
@@ -614,7 +601,6 @@
 
 .method public finalizeActiveUserView(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -641,7 +627,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x1
 
@@ -741,7 +726,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -767,7 +751,6 @@
 
 .method public setCallback(Lcom/android/keyguard/KeyguardViewBase$UserSwitcherCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardViewBase$UserSwitcherCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardMultiUserSelectorView;->mCallback:Lcom/android/keyguard/KeyguardViewBase$UserSwitcherCallback;
 

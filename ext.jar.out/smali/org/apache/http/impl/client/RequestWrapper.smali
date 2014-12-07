@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpRequest;)V
     .locals 5
-    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ProtocolException;
@@ -310,7 +309,6 @@
 
 .method public setMethod(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -330,7 +328,6 @@
 
 .method public setProtocolVersion(Lorg/apache/http/ProtocolVersion;)V
     .locals 0
-    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/RequestWrapper;->version:Lorg/apache/http/ProtocolVersion;
 
@@ -339,7 +336,6 @@
 
 .method public setURI(Ljava/net/URI;)V
     .locals 0
-    .param p1    # Ljava/net/URI;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/RequestWrapper;->uri:Ljava/net/URI;
 

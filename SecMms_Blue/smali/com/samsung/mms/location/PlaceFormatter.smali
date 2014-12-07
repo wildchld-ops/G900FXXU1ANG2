@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nbi/map/data/Place;)V
     .locals 0
-    .param p1    # Lcom/nbi/map/data/Place;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,9 +26,6 @@
 
 .method public static setViewDisplayText(Landroid/widget/TextView;Ljava/lang/String;Z)Z
     .locals 2
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -352,7 +348,6 @@
 
 .method public getFormattedAddress(Z)Ljava/lang/String;
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -414,7 +409,6 @@
 
 .method public getFormattedAddressArray(Z)[Ljava/lang/String;
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x1
 
@@ -558,7 +552,6 @@
 
 .method public getFormattedPlaceArray(Z)[Ljava/lang/String;
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -611,7 +604,6 @@
 
 .method public getLatAndLong(Z)Ljava/lang/String;
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/samsung/mms/location/PlaceFormatter;->mPlace:Lcom/nbi/map/data/Place;
 

@@ -59,8 +59,6 @@
 
 .method public static getLabel(Landroid/content/Context;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -142,10 +140,6 @@
 
 .method private setupCheckbox(Landroid/view/LayoutInflater;Lcom/google/android/finsky/config/ContentLevel;II)V
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Lcom/google/android/finsky/config/ContentLevel;
-    .param p3    # I
-    .param p4    # I
 
     const v3, 0x1090010
 
@@ -338,7 +332,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -393,7 +386,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -552,7 +544,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

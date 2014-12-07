@@ -24,10 +24,6 @@
 
 .method static synthetic access$000(Lcom/android/vending/licensing/ILicenseResultListener;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/vending/licensing/ILicenseResultListener;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/finsky/services/LicensingService;->notifyListener(Lcom/android/vending/licensing/ILicenseResultListener;ILjava/lang/String;Ljava/lang/String;)V
 
@@ -36,10 +32,6 @@
 
 .method private static notifyListener(Lcom/android/vending/licensing/ILicenseResultListener;ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Lcom/android/vending/licensing/ILicenseResultListener;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     invoke-interface {p0, p1, p2, p3}, Lcom/android/vending/licensing/ILicenseResultListener;->verifyLicense(ILjava/lang/String;Ljava/lang/String;)V
@@ -67,7 +59,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/LicensingService;->mBinder:Lcom/android/vending/licensing/ILicensingService$Stub;
 

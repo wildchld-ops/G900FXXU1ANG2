@@ -27,7 +27,6 @@
 # virtual methods
 .method public promoteNameToValue(Lcom/google/gson/stream/JsonReader;)V
     .locals 3
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -36,11 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/support/v4/app/ActionBarDrawerToggle;FFLandroid/view/animation/Interpolator;ILandroid/support/v4/app/ActionBarDrawerToggle$SliderAnimationListener;)V
     .locals 2
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/view/animation/Interpolator;
-    .param p5    # I
-    .param p6    # Landroid/support/v4/app/ActionBarDrawerToggle$SliderAnimationListener;
 
     iput-object p1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SliderMoveRunnable;->this$0:Landroid/support/v4/app/ActionBarDrawerToggle;
 

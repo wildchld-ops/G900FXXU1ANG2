@@ -98,7 +98,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/SetupWizardWifiScreen;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
 
     iget v0, p0, Lcom/android/settings/wifi/SetupWizardWifiScreen;->mConnectionResult:I
 
@@ -107,8 +106,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/SetupWizardWifiScreen;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/SetupWizardWifiScreen;->mConnectionResult:I
 
@@ -117,9 +114,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/SetupWizardWifiScreen;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/SetupWizardWifiScreen;->handleConnectionEvent(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -128,7 +122,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/SetupWizardWifiScreen;)Lcom/android/settings/wifi/WifiSettings;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
 
     iget-object v0, p0, Lcom/android/settings/wifi/SetupWizardWifiScreen;->mWifiSettings:Lcom/android/settings/wifi/WifiSettings;
 
@@ -137,7 +130,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/SetupWizardWifiScreen;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/SetupWizardWifiScreen;->mIsWifiConnected:Z
 
@@ -146,8 +138,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/wifi/SetupWizardWifiScreen;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/SetupWizardWifiScreen;->mIsWifiConnected:Z
 
@@ -156,7 +146,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/SetupWizardWifiScreen;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
 
     iget-object v0, p0, Lcom/android/settings/wifi/SetupWizardWifiScreen;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -165,7 +154,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/SetupWizardWifiScreen;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
 
     iget-object v0, p0, Lcom/android/settings/wifi/SetupWizardWifiScreen;->mPositiveButtonText:Landroid/widget/TextView;
 
@@ -174,8 +162,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/SetupWizardWifiScreen;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/SetupWizardWifiScreen;->showAlertDialog(I)V
 
@@ -184,7 +170,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/SetupWizardWifiScreen;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/SetupWizardWifiScreen;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/SetupWizardWifiScreen;->wifiConnSuccess()V
 
@@ -193,7 +178,6 @@
 
 .method private getDimension(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
@@ -210,8 +194,6 @@
 
 .method private handleConnectionEvent(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const v11, 0x7f0913a0
 
@@ -633,11 +615,6 @@
 
 .method private setMargins(IIIILandroid/widget/LinearLayout;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/widget/LinearLayout;
 
     invoke-virtual {p5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -652,7 +629,6 @@
 
 .method private showAlertDialog(I)V
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f090811
 
@@ -1050,9 +1026,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1096,7 +1069,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "SetupWizard --> SetupWizardWifiScreen"
 
@@ -1145,7 +1117,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "SetupWizard --> SetupWizardWifiScreen"
 

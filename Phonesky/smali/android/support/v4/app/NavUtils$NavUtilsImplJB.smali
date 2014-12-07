@@ -27,8 +27,6 @@
 # virtual methods
 .method public shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {p1, p2}, Landroid/support/v4/app/NavUtilsJB;->shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
 

@@ -260,7 +260,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v3, 0x1
 
@@ -406,7 +405,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/DlmSyncManager;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -415,7 +413,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/manager/DlmSyncManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/DlmSyncManager;->setDlmEventsTimer()V
 
@@ -424,7 +421,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/service/manager/DlmSyncManager;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->categoriesInUse:Ljava/util/Set;
 
@@ -433,8 +429,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/service/manager/DlmSyncManager;I)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/DlmSyncManager;->immediateEvents(I)V
 
@@ -443,7 +437,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/service/manager/DlmSyncManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/DlmSyncManager;->disableDlmSync()V
 
@@ -452,7 +445,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/service/manager/DlmSyncManager;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->categoryState:Ljava/util/HashMap;
 
@@ -461,7 +453,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/service/manager/DlmSyncManager;)Z
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->userDlmEnabled:Z
 
@@ -470,7 +461,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/service/manager/DlmSyncManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/DlmSyncManager;->enableDlmSync()V
 
@@ -487,7 +477,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/service/manager/DlmSyncManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/DlmSyncManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/DlmSyncManager;->checkDlmSync()V
 
@@ -496,7 +485,6 @@
 
 .method private backup(Ljava/util/List;I)V
     .locals 8
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1015,7 +1003,6 @@
 
 .method private immediateEvents(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v5, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1330,7 +1317,6 @@
 
 .method private processBackupResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget v2, p1, Lcom/nuance/connect/service/comm/Response;->status:I
 
@@ -1396,7 +1382,6 @@
 
 .method private processGetImmediateEventsResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v7, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1603,7 +1588,6 @@
 
 .method private processPullAckResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget v2, p1, Lcom/nuance/connect/service/comm/Response;->status:I
 
@@ -1677,7 +1661,6 @@
 
 .method private processPullResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 10
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget v7, p1, Lcom/nuance/connect/service/comm/Response;->status:I
 
@@ -2034,7 +2017,6 @@
 
 .method private processPushResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget v1, p1, Lcom/nuance/connect/service/comm/Response;->status:I
 
@@ -2130,7 +2112,6 @@
 
 .method private processRestoreGetResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 17
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     move-object/from16 v0, p0
 
@@ -2549,7 +2530,6 @@
 
 .method private processRestoreRequestResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-boolean v3, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->dlmEnabled:Z
 
@@ -2696,7 +2676,6 @@
 
 .method private processSendImmediateEventsResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2720,7 +2699,6 @@
 
 .method private pull(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2829,7 +2807,6 @@
 
 .method private pullAck(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -3196,7 +3173,6 @@
 
 .method private restoreGet(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -3372,7 +3348,6 @@
 
 .method private restoreRequest(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -3584,8 +3559,6 @@
 
 .method private sendRestoreEvents(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -3854,8 +3827,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -3875,8 +3846,6 @@
 
 .method protected createEvent(Landroid/os/Bundle;Z)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->dlmEnabled:Z
 
@@ -4134,7 +4103,6 @@
 
 .method public onFailure(Lcom/nuance/connect/service/comm/Command;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -4255,7 +4223,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x0
 
@@ -4764,7 +4731,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v0, 0x0
 
@@ -4913,7 +4879,6 @@
 
 .method protected sendCommand(Lcom/nuance/connect/service/comm/Command;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->dlmEnabled:Z
 
@@ -4956,7 +4921,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/DlmSyncManager;->log:Lcom/nuance/connect/util/Logger$Log;
 

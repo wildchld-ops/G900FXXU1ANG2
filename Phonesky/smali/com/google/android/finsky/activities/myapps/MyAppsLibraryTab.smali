@@ -69,16 +69,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/activities/AuthenticatedActivity;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;Landroid/os/Bundle;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;Lcom/google/android/finsky/library/AccountLibrary;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p8    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
-    .param p9    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p10    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct/range {p0 .. p6}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;-><init>(Lcom/google/android/finsky/activities/AuthenticatedActivity;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/activities/myapps/OpenDetailsHandler;Landroid/os/Bundle;)V
 
@@ -140,7 +130,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;)Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;->mFragment:Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
 
@@ -149,7 +138,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;->mCurrentActionMode:Landroid/view/ActionMode;
 
@@ -158,8 +146,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;->mCurrentActionMode:Landroid/view/ActionMode;
 
@@ -168,7 +154,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;)Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;->mAdapter:Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;
 
@@ -290,7 +275,6 @@
 
 .method protected getDocumentForView(Landroid/view/View;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryAdapter;->getViewDoc(Landroid/view/View;)Lcom/google/android/finsky/api/model/Document;
 
@@ -317,7 +301,6 @@
 
 .method public getView(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;->mLibraryView:Landroid/view/ViewGroup;
 
@@ -345,7 +328,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;->mListView:Landroid/widget/ListView;
 
@@ -495,9 +477,6 @@
 
 .method public onInstallPackageEvent(Ljava/lang/String;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p3    # I
 
     sget-object v0, Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;->INSTALLED:Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
 
@@ -518,7 +497,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/library/AccountLibrary;->getAccount()Landroid/accounts/Account;
 
@@ -552,7 +530,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x3
 
@@ -715,7 +692,6 @@
 
 .method public setTabSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsTab;->setTabSelected(Z)V
 

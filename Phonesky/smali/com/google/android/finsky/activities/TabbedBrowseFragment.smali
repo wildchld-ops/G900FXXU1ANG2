@@ -222,10 +222,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;ILcom/google/android/finsky/api/model/DfeToc;)Lcom/google/android/finsky/activities/TabbedBrowseFragment;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/api/model/DfeToc;
 
     new-instance v0, Lcom/google/android/finsky/activities/TabbedBrowseFragment;
 
@@ -342,7 +338,6 @@
 
 .method private restoreFromBundle(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/TabbedBrowseFragment;->mBrowseData:Lcom/google/android/finsky/api/model/DfeBrowse;
 
@@ -600,7 +595,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/UrlBasedPageFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -657,7 +651,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/UrlBasedPageFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -819,7 +812,6 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TabbedBrowseFragment;->mTabContainer:Lcom/google/android/play/layout/PlayTabContainer;
 
@@ -834,9 +826,6 @@
 
 .method public onPageScrolled(IFI)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TabbedBrowseFragment;->mTabContainer:Lcom/google/android/play/layout/PlayTabContainer;
 
@@ -847,7 +836,6 @@
 
 .method public onPageSelected(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/TabbedBrowseFragment;->mTabbedAdapter:Lcom/google/android/finsky/activities/TabbedAdapter;
 
@@ -905,7 +893,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/TabbedBrowseFragment;->recordState()V
 

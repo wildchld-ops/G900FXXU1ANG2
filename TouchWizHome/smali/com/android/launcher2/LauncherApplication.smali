@@ -200,7 +200,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/LauncherApplication;)Lcom/android/launcher2/LauncherModel;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherApplication;
 
     iget-object v0, p0, Lcom/android/launcher2/LauncherApplication;->mModel:Lcom/android/launcher2/LauncherModel;
 
@@ -380,7 +379,6 @@
 
 .method public static isKioskModeEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -463,7 +461,6 @@
 
 .method public static isPossibleAddToPersonal(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const-string v3, ""
 
@@ -652,7 +649,6 @@
 
 .method private readOneLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string v6, ""
 
@@ -905,8 +901,6 @@
 
 .method public static setHomeScreenIndex(Landroid/content/Context;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -917,9 +911,6 @@
 
 .method public static setHomeScreenIndex(Landroid/content/Context;IZ)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     sget v3, Lcom/android/launcher2/LauncherApplication;->sScreenIndexNormal:I
 
@@ -980,8 +971,6 @@
 
 .method public static setScreenCount(Landroid/content/Context;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -992,9 +981,6 @@
 
 .method public static setScreenCount(Landroid/content/Context;IZ)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     sget v3, Lcom/android/launcher2/LauncherApplication;->sScreenCountNormal:I
 
@@ -2133,7 +2119,6 @@
 
 .method setLauncher(Lcom/android/launcher2/Launcher;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Launcher;
 
     new-instance v0, Ljava/lang/ref/WeakReference;
 
@@ -2146,7 +2131,6 @@
 
 .method setLauncherProvider(Lcom/android/launcher2/LauncherProvider;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/LauncherProvider;
 
     new-instance v0, Ljava/lang/ref/WeakReference;
 

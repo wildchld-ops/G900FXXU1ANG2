@@ -99,7 +99,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/smartclip/SmartClipDataCropper;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataCropper;
 
     const/high16 v3, 0x3f800000
 
@@ -122,9 +121,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/smartclip/SmartClipDataCropper;Landroid/graphics/Rect;Landroid/graphics/RectF;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataCropper;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/RectF;
 
     const/4 v1, 0x0
 
@@ -179,7 +175,6 @@
 
 .method public static createRepositoryFromString(Ljava/lang/String;)Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
     .locals 22
-    .param p0    # Ljava/lang/String;
 
     new-instance v13, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
@@ -511,10 +506,6 @@
 # virtual methods
 .method protected addMetaTagFromSmartParseResult(Landroid/util/secutil/SmartParsingData;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;ILjava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/util/secutil/SmartParsingData;
-    .param p2    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p1, p3}, Landroid/util/secutil/SmartParsingData;->getInfo(I)Ljava/util/ArrayList;
 
@@ -798,7 +789,6 @@
 
 .method public dump(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1194,8 +1184,6 @@
 
 .method public extractMetaTagFromString(Landroid/content/Context;Ljava/lang/String;)Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v2, Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
@@ -1731,7 +1719,6 @@
 
 .method public getMetaTag(Ljava/lang/String;)Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -1899,7 +1886,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -1968,7 +1954,6 @@
 
 .method public setAppPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;->mAppPackageName:Ljava/lang/String;
 
@@ -1977,7 +1962,6 @@
 
 .method public setCapturedImage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;->mCapturedImageFilePath:Ljava/lang/String;
 
@@ -1990,8 +1974,6 @@
 
 .method public setCapturedImage(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;->mCapturedImageFilePath:Ljava/lang/String;
 
@@ -2002,8 +1984,6 @@
 
 .method public setCapturedImage(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1}, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;->setCapturedImage(Ljava/lang/String;)V
 
@@ -2012,7 +1992,6 @@
 
 .method public setContentType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;->mContentType:Ljava/lang/String;
 
@@ -2021,7 +2000,6 @@
 
 .method public setWindowLayer(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;->mTargetWindowLayer:I
 
@@ -2030,8 +2008,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;->mContentType:Ljava/lang/String;
 

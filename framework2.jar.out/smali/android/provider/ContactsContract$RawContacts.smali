@@ -77,8 +77,6 @@
 
 .method public static getContactLookupUri(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 11
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v5, 0x1
 
@@ -171,7 +169,6 @@
 
 .method public static newEntityIterator(Landroid/database/Cursor;)Landroid/content/EntityIterator;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
 
     new-instance v0, Landroid/provider/ContactsContract$RawContacts$EntityIteratorImpl;
 

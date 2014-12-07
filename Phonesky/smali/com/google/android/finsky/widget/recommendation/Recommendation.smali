@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/model/Document;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -103,8 +102,6 @@
 
 .method private constructor <init>(Lcom/google/android/finsky/api/model/Document;J)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -123,9 +120,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/api/model/Document;JLcom/google/android/finsky/widget/recommendation/Recommendation$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # J
-    .param p4    # Lcom/google/android/finsky/widget/recommendation/Recommendation$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/widget/recommendation/Recommendation;-><init>(Lcom/google/android/finsky/api/model/Document;J)V
 
@@ -212,7 +206,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/google/android/finsky/widget/recommendation/Recommendation;
 
@@ -287,7 +280,6 @@
 
 .method public getImageUrl(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/widget/recommendation/Recommendation;->mImage:Lcom/google/android/finsky/protos/Doc$Image;
 
@@ -397,8 +389,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const-wide/16 v0, 0x2
 

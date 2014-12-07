@@ -30,9 +30,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;IZ)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Z
 
     # getter for: Lcom/samsung/contacts/menu/logdetail/BlockSettingsMenu;->mBlcoknumbersetting:[Z
     invoke-static {}, Lcom/samsung/contacts/menu/logdetail/BlockSettingsMenu;->access$000()[Z

@@ -70,9 +70,6 @@
 # direct methods
 .method public constructor <init>(Landroid/preference/VolumePreference;Landroid/content/Context;Landroid/widget/SeekBar;I)V
     .locals 6
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/widget/SeekBar;
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -93,10 +90,6 @@
 
 .method public constructor <init>(Landroid/preference/VolumePreference;Landroid/content/Context;Landroid/widget/SeekBar;ILandroid/net/Uri;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/widget/SeekBar;
-    .param p4    # I
-    .param p5    # Landroid/net/Uri;
 
     const/4 v1, -0x1
 
@@ -163,7 +156,6 @@
 
 .method static synthetic access$000(Landroid/preference/VolumePreference$SeekBarVolumizer;)V
     .locals 0
-    .param p0    # Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     invoke-direct {p0}, Landroid/preference/VolumePreference$SeekBarVolumizer;->postStopSample()V
 
@@ -172,7 +164,6 @@
 
 .method static synthetic access$500(Landroid/preference/VolumePreference$SeekBarVolumizer;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     iget-object v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer;->mSeekBar:Landroid/widget/SeekBar;
 
@@ -181,7 +172,6 @@
 
 .method static synthetic access$600(Landroid/preference/VolumePreference$SeekBarVolumizer;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     iget-object v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer;->mAudioManager:Landroid/media/AudioManager;
 
@@ -190,7 +180,6 @@
 
 .method static synthetic access$700(Landroid/preference/VolumePreference$SeekBarVolumizer;)I
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     iget v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer;->mStreamType:I
 
@@ -224,8 +213,6 @@
 
 .method private initSeekBar(Landroid/widget/SeekBar;Landroid/net/Uri;)V
     .locals 10
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # Landroid/net/Uri;
 
     const/16 v6, 0x8
 
@@ -718,8 +705,6 @@
 
 .method private initSeekBarSetVolume(Landroid/widget/SeekBar;Landroid/net/Uri;)V
     .locals 23
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # Landroid/net/Uri;
 
     move-object/from16 v0, p0
 
@@ -1944,7 +1929,6 @@
 # virtual methods
 .method public changeVolumeBy(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer;->mSeekBar:Landroid/widget/SeekBar;
 
@@ -1977,7 +1961,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -2119,8 +2102,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -2209,9 +2190,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 10
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v9, 0x3
 
@@ -2684,7 +2662,6 @@
 
 .method public onRestoreInstanceState(Landroid/preference/VolumePreference$VolumeStore;)V
     .locals 2
-    .param p1    # Landroid/preference/VolumePreference$VolumeStore;
 
     iget v0, p1, Landroid/preference/VolumePreference$VolumeStore;->volume:I
 
@@ -2710,7 +2687,6 @@
 
 .method public onSaveInstanceState(Landroid/preference/VolumePreference$VolumeStore;)V
     .locals 1
-    .param p1    # Landroid/preference/VolumePreference$VolumeStore;
 
     iget v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer;->mLastProgress:I
 
@@ -2730,14 +2706,12 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 3
-    .param p1    # Landroid/widget/SeekBar;
 
     const/4 v2, 0x1
 
@@ -2815,7 +2789,6 @@
 
 .method postSetVolume(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -3017,7 +2990,6 @@
 
 .method public setSeekBarVolume(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer;->mSeekBar:Landroid/widget/SeekBar;
 

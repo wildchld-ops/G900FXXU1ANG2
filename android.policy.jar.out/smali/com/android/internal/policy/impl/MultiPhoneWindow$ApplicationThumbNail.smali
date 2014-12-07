@@ -33,7 +33,6 @@
 # direct methods
 .method private constructor <init>(Landroid/app/Activity;)V
     .locals 7
-    .param p1    # Landroid/app/Activity;
 
     const/4 v5, 0x0
 
@@ -154,8 +153,6 @@
 
 .method private clipImagePath(Landroid/graphics/Bitmap;Landroid/graphics/Path;)Landroid/graphics/Bitmap;
     .locals 15
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Path;
 
     if-nez p1, :cond_0
 
@@ -364,7 +361,6 @@
 
 .method public static create(Landroid/app/Activity;)Lcom/android/internal/policy/impl/MultiPhoneWindow$ApplicationThumbNail;
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     new-instance v0, Lcom/android/internal/policy/impl/MultiPhoneWindow$ApplicationThumbNail;
 
@@ -375,7 +371,6 @@
 
 .method private getBitmapClippedCircle(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/high16 v6, 0x40000000
 
@@ -440,7 +435,6 @@
 
 .method private getFullResIcon(Landroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$ApplicationThumbNail;->mActivity:Landroid/app/Activity;
 
@@ -490,8 +484,6 @@
 
 .method private getFullResIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$ApplicationThumbNail;->mActivity:Landroid/app/Activity;
 
@@ -537,7 +529,6 @@
 
 .method private getMinimizedBitmap(Z)Landroid/graphics/Bitmap;
     .locals 11
-    .param p1    # Z
 
     const/high16 v10, 0x40000000
 
@@ -667,7 +658,6 @@
 
 .method private getScaledMinimizeIcon(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$ApplicationThumbNail;->mActivity:Landroid/app/Activity;
 
@@ -773,7 +763,6 @@
 
 .method public setCustomMinimizeIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     if-nez p1, :cond_1
 

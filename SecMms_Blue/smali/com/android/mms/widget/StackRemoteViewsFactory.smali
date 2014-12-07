@@ -60,8 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -167,7 +165,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/widget/StackRemoteViewsFactory;)V
     .locals 0
-    .param p0    # Lcom/android/mms/widget/StackRemoteViewsFactory;
 
     invoke-direct {p0}, Lcom/android/mms/widget/StackRemoteViewsFactory;->notifyDataChanged()V
 
@@ -229,7 +226,6 @@
 
 .method private getDefaultAvatar(I)I
     .locals 2
-    .param p1    # I
 
     rem-int/lit8 v0, p1, 0x5
 
@@ -277,8 +273,6 @@
 
 .method public static getRoundedCornerBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 11
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -821,9 +815,6 @@
 
 .method private setAvatar(Landroid/widget/RemoteViews;Landroid/graphics/drawable/Drawable;J)V
     .locals 10
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # J
 
     const v9, 0x7f0b0138
 
@@ -916,7 +907,6 @@
 
 .method public static stringToByte(Ljava/lang/String;)[B
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -943,7 +933,6 @@
 # virtual methods
 .method public byteArrayToBitmap([B)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -1049,7 +1038,6 @@
 
 .method public getFavoriteViewAt(I)Landroid/widget/RemoteViews;
     .locals 26
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1800,7 +1788,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -1877,7 +1864,6 @@
 
 .method public getPriorityViewAt(I)Landroid/widget/RemoteViews;
     .locals 19
-    .param p1    # I
 
     const-string v14, "Mms/StackRemoteViewsFactory"
 
@@ -2322,7 +2308,6 @@
 
 .method public getSpeedDialDefaultImage(J)I
     .locals 3
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/widget/StackRemoteViewsFactory;->SPEEDDIAL_DEFAULT_IMAGES:[I
 
@@ -2343,7 +2328,6 @@
 
 .method public getViewAt(I)Landroid/widget/RemoteViews;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/mms/widget/StackRemoteViewsFactory;->mWidgetType:I
 
@@ -2622,7 +2606,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v1, "Mms/StackRemoteViewsFactory"
 
@@ -2654,7 +2637,6 @@
 
 .method stringbuild(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/mms/widget/StackRemoteViewsFactory;->mStringBuilder:Ljava/lang/StringBuilder;
 

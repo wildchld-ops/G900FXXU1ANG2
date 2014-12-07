@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;
-    .param p2    # Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl$VoLTEStateChangedListener;-><init>(Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onReceive(Z)V
     .locals 3
-    .param p1    # Z
 
     # getter for: Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;->access$100()Ljava/lang/String;

@@ -20,7 +20,6 @@
 # virtual methods
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;
 
@@ -36,7 +35,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v1, 0x400
 

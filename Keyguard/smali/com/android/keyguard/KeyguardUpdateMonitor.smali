@@ -104,7 +104,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -432,7 +431,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardUpdateMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleTimeUpdate()V
 
@@ -441,8 +439,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardUpdateMonitor;Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleBatteryUpdate(Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;)V
 
@@ -451,7 +447,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/KeyguardUpdateMonitor;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mHandler:Landroid/os/Handler;
 
@@ -460,7 +455,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/KeyguardUpdateMonitor;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mTelephonyPlmn:[Ljava/lang/CharSequence;
 
@@ -469,8 +463,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/KeyguardUpdateMonitor;Landroid/content/Intent;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getTelephonyPlmnFrom(Landroid/content/Intent;)Ljava/lang/CharSequence;
 
@@ -481,7 +473,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/KeyguardUpdateMonitor;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mTelephonySpn:[Ljava/lang/CharSequence;
 
@@ -490,8 +481,6 @@
 
 .method static synthetic access$1400(Lcom/android/keyguard/KeyguardUpdateMonitor;Landroid/content/Intent;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getTelephonySpnFrom(Landroid/content/Intent;)Ljava/lang/CharSequence;
 
@@ -502,7 +491,6 @@
 
 .method static synthetic access$1500(Lcom/android/keyguard/KeyguardUpdateMonitor;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mContext:Landroid/content/Context;
 
@@ -511,8 +499,6 @@
 
 .method static synthetic access$1602(Lcom/android/keyguard/KeyguardUpdateMonitor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mSwitchingUser:Z
 
@@ -521,7 +507,6 @@
 
 .method static synthetic access$1700(Lcom/android/keyguard/KeyguardUpdateMonitor;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mDeviceProvisioned:Z
 
@@ -530,8 +515,6 @@
 
 .method static synthetic access$1702(Lcom/android/keyguard/KeyguardUpdateMonitor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mDeviceProvisioned:Z
 
@@ -540,7 +523,6 @@
 
 .method static synthetic access$1800(Lcom/android/keyguard/KeyguardUpdateMonitor;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isDeviceProvisionedInSettingsDb()Z
 
@@ -551,8 +533,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleCarrierInfoUpdate(I)V
 
@@ -561,8 +541,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardUpdateMonitor;Lcom/android/keyguard/KeyguardUpdateMonitor$SimArgs;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitor$SimArgs;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleSimStateChange(Lcom/android/keyguard/KeyguardUpdateMonitor$SimArgs;)V
 
@@ -571,7 +549,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/KeyguardUpdateMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleClockVisibilityChanged()V
 
@@ -580,8 +557,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleAirplaneUpdate(I)V
 
@@ -590,8 +565,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleKeyguardVisibilityChanged(I)V
 
@@ -600,8 +573,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleUserInfoChanged(I)V
 
@@ -610,7 +581,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/KeyguardUpdateMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleReportEmergencyCallAction()V
 
@@ -619,8 +589,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardUpdateMonitor;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->handleICCCardStateChange(Ljava/lang/String;)V
 
@@ -669,7 +637,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/keyguard/KeyguardUpdateMonitor;->sInstance:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
@@ -689,7 +656,6 @@
 
 .method private getTelephonyPlmnFrom(Landroid/content/Intent;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "showPlmn"
 
@@ -727,7 +693,6 @@
 
 .method private getTelephonySpnFrom(Landroid/content/Intent;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "showSpn"
 
@@ -758,7 +723,6 @@
 
 .method private handleAirplaneUpdate(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -882,7 +846,6 @@
 
 .method private handleBatteryUpdate(Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;)V
     .locals 5
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
 
     const-string v3, "KeyguardUpdateMonitor"
 
@@ -940,7 +903,6 @@
 
 .method private handleCarrierInfoUpdate(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "KeyguardUpdateMonitor"
 
@@ -1105,7 +1067,6 @@
 
 .method private handleICCCardStateChange(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "KeyguardUpdateMonitor"
 
@@ -1206,7 +1167,6 @@
 
 .method private handleKeyguardVisibilityChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -1329,7 +1289,6 @@
 
 .method private handleSimStateChange(Lcom/android/keyguard/KeyguardUpdateMonitor$SimArgs;)V
     .locals 7
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitor$SimArgs;
 
     iget-object v2, p1, Lcom/android/keyguard/KeyguardUpdateMonitor$SimArgs;->simState:Lcom/android/internal/telephony/IccCardConstants$State;
 
@@ -1536,7 +1495,6 @@
 
 .method private handleUserInfoChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1578,8 +1536,6 @@
 
 .method private static isBatteryUpdateInteresting(Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;)Z
     .locals 7
-    .param p0    # Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
 
     const/4 v4, 0x0
 
@@ -1682,7 +1638,6 @@
 
 .method public static isSimLocked(Lcom/android/internal/telephony/IccCardConstants$State;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     sget-object v0, Lcom/android/internal/telephony/IccCardConstants$State;->PIN_REQUIRED:Lcom/android/internal/telephony/IccCardConstants$State;
 
@@ -1714,7 +1669,6 @@
 
 .method public static isSimPinSecure(Lcom/android/internal/telephony/IccCardConstants$State;)Z
     .locals 2
-    .param p0    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     move-object v0, p0
 
@@ -1748,7 +1702,6 @@
 
 .method private sendUpdates(Lcom/android/keyguard/KeyguardUpdateMonitorCallback;)V
     .locals 6
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
 
     iget-object v3, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mBatteryStatus:Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
 
@@ -1953,7 +1906,6 @@
 
 .method public dispatchScreenTurndOff(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2028,7 +1980,6 @@
 
 .method public dispatchSetBackground(Landroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v3, "KeyguardUpdateMonitor"
 
@@ -2325,7 +2276,6 @@
 
 .method public getSimState(I)Lcom/android/internal/telephony/IccCardConstants$State;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mSimState:[Lcom/android/internal/telephony/IccCardConstants$State;
 
@@ -2354,7 +2304,6 @@
 
 .method public getTelephonyPlmn(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mTelephonyPlmn:[Ljava/lang/CharSequence;
 
@@ -2530,7 +2479,6 @@
 
 .method protected handlePhoneStateChanged(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "KeyguardUpdateMonitor"
 
@@ -2646,7 +2594,6 @@
 
 .method protected handleRingerModeChange(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "KeyguardUpdateMonitor"
 
@@ -2718,7 +2665,6 @@
 
 .method protected handleScreenTurnedOff(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mCallbacks:Ljava/util/ArrayList;
 
@@ -2801,9 +2747,6 @@
 
 .method protected handleSetGenerationId(IZLandroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/app/PendingIntent;
 
     iget-object v2, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mDisplayClientState:Lcom/android/keyguard/KeyguardUpdateMonitor$DisplayClientState;
 
@@ -2895,9 +2838,6 @@
 
 .method protected handleSetPlaybackState(IIJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const-string v2, "KeyguardUpdateMonitor"
 
@@ -3030,7 +2970,6 @@
 
 .method protected handleUserRemoved(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3072,7 +3011,6 @@
 
 .method protected handleUserSwitchComplete(I)V
     .locals 4
-    .param p1    # I
 
     iget-boolean v2, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->needToBeReturn:Z
 
@@ -3129,8 +3067,6 @@
 
 .method protected handleUserSwitching(ILandroid/os/IRemoteCallback;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     const/4 v6, 0x0
 
@@ -3461,7 +3397,6 @@
 
 .method public registerCallback(Lcom/android/keyguard/KeyguardUpdateMonitorCallback;)V
     .locals 5
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
 
     const-string v1, "KeyguardUpdateMonitor"
 
@@ -3550,7 +3485,6 @@
 
 .method public removeCallback(Lcom/android/keyguard/KeyguardUpdateMonitorCallback;)V
     .locals 4
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitorCallback;
 
     const-string v1, "KeyguardUpdateMonitor"
 
@@ -3614,7 +3548,6 @@
 
 .method public reportEmergencyCallAction(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -3679,7 +3612,6 @@
 
 .method public reportSimUnlocked(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "KeyguardUpdateMonitor"
 
@@ -3730,7 +3662,6 @@
 
 .method public sendKeyguardVisibilityChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "KeyguardUpdateMonitor"
 
@@ -3809,7 +3740,6 @@
 
 .method public setAlternateUnlockEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mAlternateUnlockEnabled:Z
 

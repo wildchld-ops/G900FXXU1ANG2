@@ -30,7 +30,6 @@
 # virtual methods
 .method public run(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierBillingAction;->canSkip()Z
 

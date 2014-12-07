@@ -401,7 +401,6 @@
 
 .method private EncodeNonGSMCharater(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->getInputmode(Landroid/content/Context;)I
 
@@ -502,7 +501,6 @@
 
 .method public static FilterCLRF(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -554,8 +552,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/transaction/SmsReceiverService;Lcom/tencent/engine/IEngineService;)Lcom/tencent/engine/IEngineService;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Lcom/tencent/engine/IEngineService;
 
     iput-object p1, p0, Lcom/android/mms/transaction/SmsReceiverService;->myService:Lcom/tencent/engine/IEngineService;
 
@@ -564,8 +560,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleSmsCbReceived(Landroid/content/Intent;)V
 
@@ -574,8 +568,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleErrCodeForSetCbReceived(Landroid/content/Intent;)V
 
@@ -584,8 +576,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleErrCodeForGetCbReceived(Landroid/content/Intent;)V
 
@@ -594,8 +584,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleCbSettingsAvailable(Landroid/content/Intent;)V
 
@@ -604,8 +592,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleSIMStatus(Landroid/content/Intent;)V
 
@@ -614,8 +600,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleSmsServiceCenter(Landroid/content/Intent;)V
 
@@ -624,12 +608,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Context;[Landroid/telephony/SmsMessage;IZLjava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/telephony/SmsMessage;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/transaction/SmsReceiverService;->storeMessage(Landroid/content/Context;[Landroid/telephony/SmsMessage;IZLjava/lang/String;)Landroid/net/Uri;
 
@@ -640,8 +618,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/transaction/SmsReceiverService;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handlePCWLockMessage(Z)V
 
@@ -650,9 +626,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/transaction/SmsReceiverService;->handleSmsReceivedNonDefault(Landroid/content/Intent;I)V
 
@@ -661,7 +634,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/transaction/SmsReceiverService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
 
     iget v0, p0, Lcom/android/mms/transaction/SmsReceiverService;->mCausecode:I
 
@@ -670,9 +642,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/transaction/SmsReceiverService;->handleSmsSent(Landroid/content/Intent;I)V
 
@@ -681,7 +650,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/transaction/SmsReceiverService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/SmsReceiverService;->mRecipient:Ljava/lang/String;
 
@@ -690,7 +658,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/transaction/SmsReceiverService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/SmsReceiverService;->mMessage:Ljava/lang/String;
 
@@ -699,9 +666,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/transaction/SmsReceiverService;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/transaction/SmsReceiverService;->sendPCWLockMessage(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -710,9 +674,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/transaction/SmsReceiverService;->handleSmsReceived(Landroid/content/Intent;I)V
 
@@ -721,7 +682,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/transaction/SmsReceiverService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/SmsReceiverService;->handleBootCompleted()V
 
@@ -730,8 +690,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleRoamingCdmaSmsPref(Landroid/content/Intent;)V
 
@@ -740,8 +698,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleServiceStateChanged(Landroid/content/Intent;)V
 
@@ -750,7 +706,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/transaction/SmsReceiverService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/SmsReceiverService;->isRoamGuardPending()Z
 
@@ -761,7 +716,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/transaction/SmsReceiverService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/SmsReceiverService;->handleSendMessage()V
 
@@ -770,8 +724,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/transaction/SmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService;->handleRoamingStatusChanged(Landroid/content/Intent;)V
 
@@ -802,9 +754,6 @@
 
 .method private displayClassZeroMessage(Landroid/content/Context;[Landroid/telephony/SmsMessage;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/telephony/SmsMessage;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -874,7 +823,6 @@
 
 .method private extractContentValues(Landroid/telephony/SmsMessage;)Landroid/content/ContentValues;
     .locals 6
-    .param p1    # Landroid/telephony/SmsMessage;
 
     const/4 v2, 0x0
 
@@ -1195,7 +1143,6 @@
 
 .method private static findFirstValidMessage([Landroid/telephony/SmsMessage;)Landroid/telephony/SmsMessage;
     .locals 5
-    .param p0    # [Landroid/telephony/SmsMessage;
 
     move-object v0, p0
 
@@ -1371,7 +1318,6 @@
 
 .method private handleCbSettingsAvailable(Landroid/content/Intent;)V
     .locals 21
-    .param p1    # Landroid/content/Intent;
 
     const-string v18, "simSlot"
 
@@ -1749,7 +1695,6 @@
 
 .method private handleErrCodeForGetCbReceived(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "getRsp"
 
@@ -1806,7 +1751,6 @@
 
 .method private handleErrCodeForSetCbReceived(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "setRsp"
 
@@ -1863,7 +1807,6 @@
 
 .method private handlePCWLockMessage(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -1993,7 +1936,6 @@
 
 .method private handleRoamingCdmaSmsPref(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v6, 0x2
 
@@ -2061,7 +2003,6 @@
 
 .method private handleRoamingStatusChanged(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/SmsReceiverService"
 
@@ -2087,7 +2028,6 @@
 
 .method private handleSIMStatus(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const-string v4, "Mms/SmsReceiverService"
 
@@ -2247,7 +2187,6 @@
 
 .method private handleServiceStateChanged(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -2275,7 +2214,6 @@
 
 .method private handleSharingTidMessage(Landroid/telephony/SmsMessage;)Z
     .locals 6
-    .param p1    # Landroid/telephony/SmsMessage;
 
     invoke-virtual {p1}, Landroid/telephony/SmsMessage;->getSharedCmd()Ljava/lang/String;
 
@@ -2422,7 +2360,6 @@
 
 .method private handleSmsCbReceived(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -2519,8 +2456,6 @@
 
 .method private handleSmsReceived(Landroid/content/Intent;I)V
     .locals 31
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const-string v4, "Mms/SmsReceiverService"
 
@@ -3613,8 +3548,6 @@
 
 .method private handleSmsReceivedNonDefault(Landroid/content/Intent;I)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const-string v0, "Mms/SmsReceiverService"
 
@@ -3633,8 +3566,6 @@
 
 .method private handleSmsSent(Landroid/content/Intent;I)V
     .locals 22
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const-string v3, "Mms/SmsReceiverService"
 
@@ -4564,7 +4495,6 @@
 
 .method private handleSmsServiceCenter(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -4669,11 +4599,6 @@
 
 .method private insertMessage(Landroid/content/Context;[Landroid/telephony/SmsMessage;ILjava/lang/String;Z)Landroid/net/Uri;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/telephony/SmsMessage;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const-string v0, "Mms/SmsReceiverService"
 
@@ -4762,8 +4687,6 @@
 
 .method private static isDuplicateSMS(Landroid/content/Context;Landroid/telephony/SmsMessage;)Z
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/telephony/SmsMessage;
 
     const-string v8, ""
 
@@ -5155,7 +5078,6 @@
 
 .method private static mergeAndTidyDisplayMessageBody([Landroid/telephony/SmsMessage;)Ljava/lang/String;
     .locals 8
-    .param p0    # [Landroid/telephony/SmsMessage;
 
     array-length v6, p0
 
@@ -5243,9 +5165,6 @@
 
 .method private messageFailedToSend(Landroid/net/Uri;IZ)V
     .locals 13
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "Mms/SmsReceiverService"
 
@@ -5455,8 +5374,6 @@
 
 .method private messageFailedtoDisplay(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iput p1, p0, Lcom/android/mms/transaction/SmsReceiverService;->mCausecode:I
 
@@ -5473,8 +5390,6 @@
 
 .method private moveMessagetoSentBox(Landroid/net/Uri;I)Z
     .locals 10
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -5752,7 +5667,6 @@
 
 .method public static replaceCarriageReturn(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "\r\n"
 
@@ -5775,7 +5689,6 @@
 
 .method public static replaceFormFeeds(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -5798,11 +5711,6 @@
 
 .method private replaceMessage(Landroid/content/Context;[Landroid/telephony/SmsMessage;IZLjava/lang/String;)Landroid/net/Uri;
     .locals 23
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/telephony/SmsMessage;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
 
     const-string v3, "Mms/SmsReceiverService"
 
@@ -6019,9 +5927,6 @@
 
 .method private retrySendSMSMessage(Landroid/content/Context;Landroid/net/Uri;I)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -6137,8 +6042,6 @@
 
 .method private sendPCWLockMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -6215,8 +6118,6 @@
 
 .method private storeCbMessage(Landroid/content/Context;Landroid/os/Bundle;)Landroid/net/Uri;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -6372,11 +6273,6 @@
 
 .method private storeMessage(Landroid/content/Context;[Landroid/telephony/SmsMessage;IZLjava/lang/String;)Landroid/net/Uri;
     .locals 24
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/telephony/SmsMessage;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
 
     const-string v20, "Mms/SmsReceiverService"
 
@@ -7215,7 +7111,6 @@
 
 .method private static tidyMessageBody(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0xa
 
@@ -7269,7 +7164,6 @@
 
 .method private static translateResultCode(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -7369,8 +7263,6 @@
 
 .method private updateGroupType(Landroid/net/Uri;I)Z
     .locals 19
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/16 v8, 0x19
 
@@ -7675,7 +7567,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -7800,9 +7691,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 

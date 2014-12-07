@@ -32,7 +32,6 @@
 
 .method public static DismissDialog(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "AttentionForSelectAccountDialogFragment"
 
@@ -62,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->mCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->mContext:Landroid/content/Context;
 
@@ -80,7 +77,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;)Lcom/android/contacts/common/model/account/AccountWithDataSet;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->mAccount:Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
@@ -89,8 +85,6 @@
 
 .method public static checkShowAttentionAgain(Landroid/content/Context;Lcom/android/contacts/common/model/account/AccountWithDataSet;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     const/4 v3, 0x1
 
@@ -189,8 +183,6 @@
 
 .method public static doNotShowAttentionAgain(Landroid/content/Context;Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     const/4 v3, 0x0
 
@@ -267,7 +259,6 @@
 
 .method public static getCheckedState(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -286,7 +277,6 @@
 
 .method private static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -297,7 +287,6 @@
 
 .method public static isShowing(Landroid/app/FragmentManager;)Z
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "AttentionForSelectAccountDialogFragment"
 
@@ -335,10 +324,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/content/Context;Lcom/android/contacts/common/model/account/AccountWithDataSet;Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment$Listener;)V
     .locals 5
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p3    # Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment$Listener;
 
     const-string v3, "AttentionForSelectAccountDialogFragment"
 
@@ -400,8 +385,6 @@
 
 .method public static storeCheckedState(Landroid/content/Context;Z)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p0}, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -426,7 +409,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -437,7 +419,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->getActivity()Landroid/app/Activity;
 
@@ -599,7 +580,6 @@
 
 .method public setAccount(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->mAccount:Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
@@ -608,7 +588,6 @@
 
 .method public setListener(Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment;->mListener:Lcom/samsung/contacts/editor/AttentionForSelectAccountDialogFragment$Listener;
 

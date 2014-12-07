@@ -59,12 +59,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;ZLcom/android/launcher2/DeleteDrawable$BulgeAnimationListener;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/graphics/drawable/Drawable;
-    .param p5    # Z
-    .param p6    # Lcom/android/launcher2/DeleteDrawable$BulgeAnimationListener;
 
     const/4 v6, 0x1
 
@@ -271,7 +265,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/DeleteDrawable;)Lcom/android/launcher2/DeleteDrawable$BulgeAnimationListener;
     .locals 1
-    .param p0    # Lcom/android/launcher2/DeleteDrawable;
 
     iget-object v0, p0, Lcom/android/launcher2/DeleteDrawable;->mBulgeAnimationListener:Lcom/android/launcher2/DeleteDrawable$BulgeAnimationListener;
 
@@ -280,7 +273,6 @@
 
 .method private drawShakeAnimation(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const v5, 0x3f99999a
 
@@ -455,8 +447,6 @@
 
 .method private startAnimator(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/android/launcher2/DeleteDrawable;->mCurrentAnimator:Landroid/animation/Animator;
 
@@ -603,7 +593,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
@@ -687,7 +676,6 @@
 
 .method public onBoundsChange(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/android/launcher2/DeleteDrawable;->mBounds:Landroid/graphics/Rect;
 
@@ -741,7 +729,6 @@
 
 .method protected onLevelChange(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/DeleteDrawable;->mTrashCan:Landroid/graphics/drawable/Drawable;
 
@@ -754,7 +741,6 @@
 
 .method protected onStateChange([I)Z
     .locals 8
-    .param p1    # [I
 
     const/4 v5, 0x0
 
@@ -862,21 +848,18 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method
 
 .method public setTrashCanFill(F)V
     .locals 4
-    .param p1    # F
 
     const/high16 v3, 0x3f800000
 
@@ -922,7 +905,6 @@
 
 .method public setTrashCanLidDown(F)V
     .locals 3
-    .param p1    # F
 
     const/high16 v2, 0x3f800000
 
@@ -962,7 +944,6 @@
 
 .method public setTrashCanLidShake(F)V
     .locals 8
-    .param p1    # F
 
     const/high16 v7, -0x3ec00000
 
@@ -1036,7 +1017,6 @@
 
 .method public setTrashCanLidUp(F)V
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 

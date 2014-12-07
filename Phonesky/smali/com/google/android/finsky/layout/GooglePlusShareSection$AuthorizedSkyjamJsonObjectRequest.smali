@@ -23,10 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/toolbox/Authenticator;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 6
-    .param p1    # Lcom/android/volley/toolbox/Authenticator;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/json/JSONObject;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -69,7 +65,6 @@
 # virtual methods
 .method public deliverError(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/api/SkyjamJsonObjectRequest;->deliverError(Lcom/android/volley/VolleyError;)V
 

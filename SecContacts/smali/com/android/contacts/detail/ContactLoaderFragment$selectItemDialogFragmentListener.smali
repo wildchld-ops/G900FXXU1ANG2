@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/detail/ContactLoaderFragment;Lcom/android/contacts/detail/ContactLoaderFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/detail/ContactLoaderFragment;
-    .param p2    # Lcom/android/contacts/detail/ContactLoaderFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactLoaderFragment$selectItemDialogFragmentListener;-><init>(Lcom/android/contacts/detail/ContactLoaderFragment;)V
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onItemChosen(IILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

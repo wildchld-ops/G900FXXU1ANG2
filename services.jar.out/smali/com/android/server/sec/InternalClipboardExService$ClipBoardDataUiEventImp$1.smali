@@ -33,7 +33,6 @@
 # virtual methods
 .method public removeItem(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -49,8 +48,6 @@
 
 .method public selectItem(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

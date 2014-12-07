@@ -26,9 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/gson/internal/ConstructorConstructor;Lcom/google/gson/FieldNamingStrategy;Lcom/google/gson/internal/Excluder;)V
     .locals 0
-    .param p1    # Lcom/google/gson/internal/ConstructorConstructor;
-    .param p2    # Lcom/google/gson/FieldNamingStrategy;
-    .param p3    # Lcom/google/gson/internal/Excluder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,11 +40,6 @@
 
 .method private createBoundField(Lcom/google/gson/Gson;Ljava/lang/reflect/Field;Ljava/lang/String;Lcom/google/gson/reflect/TypeToken;ZZ)Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;
     .locals 9
-    .param p1    # Lcom/google/gson/Gson;
-    .param p2    # Ljava/lang/reflect/Field;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -91,7 +83,6 @@
 
 .method private getBoundFields(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;Ljava/lang/Class;)Ljava/util/Map;
     .locals 17
-    .param p1    # Lcom/google/gson/Gson;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -280,7 +271,6 @@
 
 .method private getFieldName(Ljava/lang/reflect/Field;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/reflect/Field;
 
     const-class v1, Lcom/google/gson/annotations/SerializedName;
 
@@ -313,7 +303,6 @@
 # virtual methods
 .method public create(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
     .locals 5
-    .param p1    # Lcom/google/gson/Gson;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -366,8 +355,6 @@
 
 .method public excludeField(Ljava/lang/reflect/Field;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/reflect/Field;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->excluder:Lcom/google/gson/internal/Excluder;
 

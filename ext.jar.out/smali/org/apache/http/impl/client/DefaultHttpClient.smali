@@ -16,8 +16,6 @@
 
 .method public constructor <init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/impl/client/AbstractHttpClient;-><init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
 
@@ -26,7 +24,6 @@
 
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 1
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     const/4 v0, 0x0
 

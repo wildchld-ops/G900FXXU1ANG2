@@ -20,7 +20,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +66,6 @@
 
 .method public deletePlace(J)Z
     .locals 4
-    .param p1    # J
 
     iget-object v0, p0, Lcom/samsung/mms/location/PlaceDBAdapter;->db:Landroid/database/sqlite/SQLiteDatabase;
 
@@ -114,7 +112,6 @@
 
 .method public findPlace(Lcom/nbi/map/data/Place;)J
     .locals 35
-    .param p1    # Lcom/nbi/map/data/Place;
 
     invoke-virtual/range {p1 .. p1}, Lcom/nbi/map/data/Place;->getLocation()Lcom/nbi/map/data/MapLocation;
 
@@ -674,7 +671,6 @@
 
 .method public getPlace(J)Lcom/nbi/map/data/Place;
     .locals 12
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/database/SQLException;
@@ -839,7 +835,6 @@
 
 .method public insertPlace(Lcom/nbi/map/data/Place;)J
     .locals 13
-    .param p1    # Lcom/nbi/map/data/Place;
 
     const-wide/16 v8, -0x1
 
@@ -1059,7 +1054,6 @@
 
 .method public truncate(D)D
     .locals 8
-    .param p1    # D
 
     const-wide v6, 0x412e848000000000L
 
@@ -1078,8 +1072,6 @@
 
 .method public updatePlace(JLcom/nbi/map/data/Place;)Z
     .locals 9
-    .param p1    # J
-    .param p3    # Lcom/nbi/map/data/Place;
 
     new-instance v0, Landroid/content/ContentValues;
 

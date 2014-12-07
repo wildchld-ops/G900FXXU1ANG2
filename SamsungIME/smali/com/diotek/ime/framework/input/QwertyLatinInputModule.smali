@@ -1576,8 +1576,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 8
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x0
 
@@ -1749,7 +1747,6 @@
 
 .method private processSingleChar(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2026,8 +2023,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 14
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v10, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2955,8 +2950,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/input/AbstractInputModule;->getXt9Version()I
 
@@ -3400,8 +3393,6 @@
 
 .method private processWordSeparator_9(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v9, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -4000,7 +3991,6 @@
 
 .method public getSecondaryChar(I)I
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mShiftStateController:Lcom/diotek/ime/framework/common/ShiftStateController;
 
@@ -4098,8 +4088,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v10, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -4727,16 +4715,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method protected processSymbolicKey(I[I)V
     .locals 8
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v7, 0x20
 

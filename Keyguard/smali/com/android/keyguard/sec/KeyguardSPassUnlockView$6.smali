@@ -33,7 +33,6 @@
 # virtual methods
 .method public onPhoneStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "KeyguardSPassView"
 
@@ -68,7 +67,6 @@
 
 .method public onUserSwitchComplete(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "KeyguardSPassView"
 
@@ -103,7 +101,6 @@
 
 .method public onUserSwitching(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "KeyguardSPassView"
 

@@ -218,7 +218,6 @@
 
 .method public static getPattern(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/16 v7, 0x314e
 
@@ -315,8 +314,6 @@
 
 .method public static indexOfWord(Landroid/database/CharArrayBuffer;[C)I
     .locals 10
-    .param p0    # Landroid/database/CharArrayBuffer;
-    .param p1    # [C
 
     const/4 v9, 0x0
 

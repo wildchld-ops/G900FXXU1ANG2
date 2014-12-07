@@ -136,11 +136,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v9, 0x0
 
@@ -440,7 +435,6 @@
 
 .method public getModeItemByCommandId(I)Lcom/sec/android/app/camera/glwidget/TwGLModeItem;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -489,7 +483,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v4, 0xcb
 
@@ -554,11 +547,6 @@
 
 .method public onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v3, 0x0
 
@@ -799,9 +787,6 @@
 
 .method public onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x1
 
@@ -812,16 +797,12 @@
 
 .method public onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     return-void
 .end method
 
 .method public onDrop(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
@@ -861,16 +842,12 @@
 
 .method public onHoverEventChanged(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x4
 
@@ -952,7 +929,6 @@
 
 .method public onSelect(Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;)V
     .locals 5
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
     const/16 v4, 0xcb
 
@@ -1222,7 +1198,6 @@
 
 .method public resetOrder(Z)V
     .locals 7
-    .param p1    # Z
 
     const/16 v6, 0x63
 
@@ -1405,7 +1380,6 @@
 
 .method public setResourceData(Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)V
     .locals 4
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     const/4 v3, 0x4
 

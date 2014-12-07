@@ -2027,7 +2027,6 @@
 
 .method public setSyncToContactsEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

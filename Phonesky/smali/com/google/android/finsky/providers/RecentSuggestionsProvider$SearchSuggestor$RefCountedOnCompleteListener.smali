@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

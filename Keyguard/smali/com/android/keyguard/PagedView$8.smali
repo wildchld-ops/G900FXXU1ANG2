@@ -37,7 +37,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$8;->this$0:Lcom/android/keyguard/PagedView;
 
@@ -50,7 +49,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$8;->this$0:Lcom/android/keyguard/PagedView;
 
@@ -72,7 +70,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$8;->this$0:Lcom/android/keyguard/PagedView;
 

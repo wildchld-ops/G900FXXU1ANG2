@@ -32,9 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionService;Landroid/os/IBinder;II)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionService$Listener;->this$0:Landroid/hardware/motion/MotionRecognitionService;
 
@@ -292,7 +289,6 @@
 
 .method public callback(Landroid/hardware/motion/MREvent;)V
     .locals 9
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     invoke-virtual {p1}, Landroid/hardware/motion/MREvent;->getMotion()I
 

@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/receivers/Installer$InstallerState;JJI)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/receivers/Installer$InstallerState;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

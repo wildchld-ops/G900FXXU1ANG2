@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/keyguard/sec/CircleUnlockRippleRenderer$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/CircleUnlockRippleRenderer;
 

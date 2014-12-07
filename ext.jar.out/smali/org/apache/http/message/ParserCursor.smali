@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -152,7 +150,6 @@
 
 .method public updatePos(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lorg/apache/http/message/ParserCursor;->lowerBound:I
 

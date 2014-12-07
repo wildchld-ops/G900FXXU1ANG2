@@ -78,13 +78,6 @@
 
 .method private addAction(ILjava/lang/String;Ljava/lang/String;ILcom/google/android/finsky/utils/DocUtils$OfferFilter;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Lcom/google/android/finsky/utils/DocUtils$OfferFilter;
-    .param p6    # Lcom/google/android/finsky/api/model/Document;
-    .param p7    # Landroid/accounts/Account;
 
     iget v0, p0, Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;->actionCount:I
 
@@ -189,9 +182,6 @@
 # virtual methods
 .method public addAction(ILcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/accounts/Account;
 
     const/4 v2, 0x0
 
@@ -216,10 +206,6 @@
 
 .method public addActionFromOfferList(ILjava/util/List;Lcom/google/android/finsky/utils/DocUtils$OfferFilter;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)I
     .locals 10
-    .param p1    # I
-    .param p3    # Lcom/google/android/finsky/utils/DocUtils$OfferFilter;
-    .param p4    # Lcom/google/android/finsky/api/model/Document;
-    .param p5    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -371,10 +357,6 @@
 
 .method public addDisambiguationAction(ILcom/google/android/finsky/protos/Common$Offer;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Landroid/accounts/Account;
 
     const/4 v5, 0x0
 
@@ -412,10 +394,6 @@
 
 .method public addOfferAction(ILcom/google/android/finsky/protos/Common$Offer;Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # Landroid/accounts/Account;
 
     const/4 v5, 0x0
 
@@ -453,7 +431,6 @@
 
 .method public getAction(I)Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentAction;
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/utils/PurchaseButtonHelper$DocumentActions;->actionCount:I
 

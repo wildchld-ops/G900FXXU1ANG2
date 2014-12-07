@@ -66,7 +66,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiHiddenApListActivity;)Lcom/android/settings/wifi/WifiHiddenApAddDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListActivity;->mDialogConfigure:Lcom/android/settings/wifi/WifiHiddenApAddDialog;
 
@@ -75,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiHiddenApListActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListActivity;->mList:Ljava/util/ArrayList;
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiHiddenApListActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListActivity;->mListView:Landroid/widget/ListView;
 
@@ -93,7 +90,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiHiddenApListActivity;)Landroid/widget/ArrayAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListActivity;->mAdapter:Landroid/widget/ArrayAdapter;
 
@@ -102,7 +98,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiHiddenApListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListActivity;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiHiddenApListActivity;->saveFile()V
 
@@ -263,7 +258,6 @@
 
 .method private updateEmptyView(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x8
 
@@ -300,7 +294,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -313,7 +306,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -413,7 +405,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 

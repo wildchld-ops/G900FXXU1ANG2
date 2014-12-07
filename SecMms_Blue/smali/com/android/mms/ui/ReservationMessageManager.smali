@@ -259,7 +259,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ReservationMessageManager;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -268,8 +267,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/ReservationMessageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->setTotalQuantityTextView(I)V
 
@@ -278,7 +275,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/ReservationMessageManager;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -287,8 +283,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/ui/ReservationMessageManager;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -297,7 +291,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/ReservationMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ReservationMessageManager;->isFirstItemChanged()Z
 
@@ -308,7 +301,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/ReservationMessageManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mVisibleOffset:I
 
@@ -317,7 +309,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/ReservationMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ReservationMessageManager;->restoreListOffset()V
 
@@ -326,7 +317,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/ReservationMessageManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mContext:Landroid/content/Context;
 
@@ -335,8 +325,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/ReservationMessageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->openThread(I)V
 
@@ -345,9 +333,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/ReservationMessageManager;Landroid/net/Uri;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ReservationMessageManager;->deleteMessage(Landroid/net/Uri;Z)V
 
@@ -356,7 +341,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/ReservationMessageManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mDeleteEventHandler:Landroid/os/Handler;
 
@@ -365,7 +349,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/ReservationMessageManager;)Lcom/android/mms/ui/ReservationMessageManager$MessageListQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mQueryHandler:Lcom/android/mms/ui/ReservationMessageManager$MessageListQueryHandler;
 
@@ -374,8 +357,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ReservationMessageManager;I)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->getConversation(I)Lcom/android/mms/data/Conversation;
 
@@ -386,7 +367,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/ReservationMessageManager;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowUri:Landroid/net/Uri;
 
@@ -395,8 +375,6 @@
 
 .method static synthetic access$2002(Lcom/android/mms/ui/ReservationMessageManager;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowUri:Landroid/net/Uri;
 
@@ -405,7 +383,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/ui/ReservationMessageManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowType:Ljava/lang/String;
 
@@ -414,8 +391,6 @@
 
 .method static synthetic access$2102(Lcom/android/mms/ui/ReservationMessageManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowType:Ljava/lang/String;
 
@@ -424,7 +399,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/ui/ReservationMessageManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowAddr:Ljava/lang/String;
 
@@ -433,8 +407,6 @@
 
 .method static synthetic access$2202(Lcom/android/mms/ui/ReservationMessageManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowAddr:Ljava/lang/String;
 
@@ -443,7 +415,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/ui/ReservationMessageManager;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-wide v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowThreadId:J
 
@@ -452,8 +423,6 @@
 
 .method static synthetic access$2302(Lcom/android/mms/ui/ReservationMessageManager;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowThreadId:J
 
@@ -462,7 +431,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/ui/ReservationMessageManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowBody:Ljava/lang/String;
 
@@ -471,8 +439,6 @@
 
 .method static synthetic access$2402(Lcom/android/mms/ui/ReservationMessageManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowBody:Ljava/lang/String;
 
@@ -481,7 +447,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/ui/ReservationMessageManager;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-wide v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowSize:J
 
@@ -490,8 +455,6 @@
 
 .method static synthetic access$2502(Lcom/android/mms/ui/ReservationMessageManager;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowSize:J
 
@@ -500,7 +463,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/ui/ReservationMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowLocked:Z
 
@@ -509,8 +471,6 @@
 
 .method static synthetic access$2602(Lcom/android/mms/ui/ReservationMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowLocked:Z
 
@@ -519,7 +479,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/ReservationMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowDeliveryReport:Z
 
@@ -528,8 +487,6 @@
 
 .method static synthetic access$2702(Lcom/android/mms/ui/ReservationMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowDeliveryReport:Z
 
@@ -538,7 +495,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/ReservationMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowReadReport:Z
 
@@ -547,8 +503,6 @@
 
 .method static synthetic access$2802(Lcom/android/mms/ui/ReservationMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSendNowReadReport:Z
 
@@ -557,7 +511,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ReservationMessageManager;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -566,7 +519,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/ReservationMessageManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -575,8 +527,6 @@
 
 .method static synthetic access$3002(Lcom/android/mms/ui/ReservationMessageManager;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -585,7 +535,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/ui/ReservationMessageManager;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -594,8 +543,6 @@
 
 .method static synthetic access$3102(Lcom/android/mms/ui/ReservationMessageManager;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -604,7 +551,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/ui/ReservationMessageManager;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -613,8 +559,6 @@
 
 .method static synthetic access$3202(Lcom/android/mms/ui/ReservationMessageManager;Lcom/android/mms/ui/MessageItem;)Lcom/android/mms/ui/MessageItem;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -623,9 +567,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/ui/ReservationMessageManager;Lcom/android/mms/ui/MessageItem;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ReservationMessageManager;->confirmSendDialog(Lcom/android/mms/ui/MessageItem;Ljava/lang/String;)V
 
@@ -634,7 +575,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/ui/ReservationMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ReservationMessageManager;->cancelSelectedMessages()V
 
@@ -643,8 +583,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/ui/ReservationMessageManager;Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->getCurSlideBody(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
 
@@ -655,7 +593,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/ui/ReservationMessageManager;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -664,8 +601,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/ui/ReservationMessageManager;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -674,8 +609,6 @@
 
 .method static synthetic access$3800(Lcom/android/mms/ui/ReservationMessageManager;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -684,7 +617,6 @@
 
 .method static synthetic access$3900(Lcom/android/mms/ui/ReservationMessageManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mListMultiMode:I
 
@@ -693,8 +625,6 @@
 
 .method static synthetic access$3902(Lcom/android/mms/ui/ReservationMessageManager;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mListMultiMode:I
 
@@ -703,8 +633,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ReservationMessageManager;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->startAsyncQueryInternal(Z)V
 
@@ -713,8 +641,6 @@
 
 .method static synthetic access$4000(Lcom/android/mms/ui/ReservationMessageManager;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->disableAllMenu(Landroid/view/Menu;)V
 
@@ -723,8 +649,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/ReservationMessageManager;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->updateMultiActionMenu(Landroid/view/Menu;)V
 
@@ -733,7 +657,6 @@
 
 .method static synthetic access$4200(Lcom/android/mms/ui/ReservationMessageManager;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ReservationMessageManager;->getMessagItem()Lcom/android/mms/ui/MessageItem;
 
@@ -744,8 +667,6 @@
 
 .method static synthetic access$4300(Lcom/android/mms/ui/ReservationMessageManager;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->enableSelecteMenu(Landroid/view/Menu;)V
 
@@ -754,7 +675,6 @@
 
 .method static synthetic access$4400(Lcom/android/mms/ui/ReservationMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mIsSelectAllmode:Z
 
@@ -763,8 +683,6 @@
 
 .method static synthetic access$4402(Lcom/android/mms/ui/ReservationMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mIsSelectAllmode:Z
 
@@ -773,7 +691,6 @@
 
 .method static synthetic access$4500(Lcom/android/mms/ui/ReservationMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mIsLastItemOfSelectAll:Z
 
@@ -782,8 +699,6 @@
 
 .method static synthetic access$4502(Lcom/android/mms/ui/ReservationMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mIsLastItemOfSelectAll:Z
 
@@ -792,7 +707,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/ReservationMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ReservationMessageManager;->startAsyncQuery()V
 
@@ -801,7 +715,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ReservationMessageManager;)Lcom/android/mms/ui/ReservationMessageListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mMsgListAdapter:Lcom/android/mms/ui/ReservationMessageListAdapter;
 
@@ -810,9 +723,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/ReservationMessageManager;IZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ReservationMessageManager;->updateEmptyScreen(IZ)V
 
@@ -821,8 +731,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/ReservationMessageManager;J)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ReservationMessageManager;->startAsyncQueryDelayed(J)V
 
@@ -831,7 +739,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/ReservationMessageManager;)Lcom/android/mms/animation/MsgDeleteActionAnimation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mMsgDeleteActionAnimation:Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
@@ -1072,11 +979,6 @@
 
 .method public static confirmCancelMessageDialog(Lcom/android/mms/ui/ReservationMessageManager$DeleteMessageListener;ZZLandroid/content/Context;I)Landroid/app/AlertDialog;
     .locals 7
-    .param p0    # Lcom/android/mms/ui/ReservationMessageManager$DeleteMessageListener;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Landroid/content/Context;
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -1159,8 +1061,6 @@
 
 .method private confirmSendDialog(Lcom/android/mms/ui/MessageItem;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/android/mms/ui/MessageItem;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1233,8 +1133,6 @@
 
 .method private deleteMessage(Landroid/net/Uri;Z)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -1283,7 +1181,6 @@
 
 .method private disableAllMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x0
 
@@ -1356,7 +1253,6 @@
 
 .method private disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     const/4 v0, 0x0
 
@@ -1369,7 +1265,6 @@
 
 .method private enableSelecteMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->disableAllMenu(Landroid/view/Menu;)V
 
@@ -1404,7 +1299,6 @@
 
 .method private getConversation(I)Lcom/android/mms/data/Conversation;
     .locals 11
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1487,7 +1381,6 @@
 
 .method private getConversation(J)Lcom/android/mms/data/Conversation;
     .locals 4
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -1529,7 +1422,6 @@
 
 .method private getCurSlideBody(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v0, 0x0
 
@@ -1768,7 +1660,6 @@
 
 .method private getProgressDialog(Ljava/lang/String;)Landroid/app/ProgressDialog;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageManager;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -1799,9 +1690,6 @@
 
 .method private getQuantityText(III)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -2148,7 +2036,6 @@
 
 .method private isCursorValid(Landroid/database/Cursor;)Z
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-interface {p1}, Landroid/database/Cursor;->isClosed()Z
 
@@ -2278,7 +2165,6 @@
 
 .method private openThread(I)V
     .locals 8
-    .param p1    # I
 
     const-string v5, "Mms/ReservationMessageManager"
 
@@ -2476,7 +2362,6 @@
 
 .method private setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     new-instance v0, Lcom/android/mms/ui/SweepHandler;
 
@@ -2493,7 +2378,6 @@
 
 .method private setTotalQuantityTextView(I)V
     .locals 4
-    .param p1    # I
 
     const v1, 0x7f0c026e
 
@@ -2544,7 +2428,6 @@
 
 .method private startAsyncQueryDelayed(J)V
     .locals 2
-    .param p1    # J
 
     new-instance v0, Landroid/os/Handler;
 
@@ -2561,7 +2444,6 @@
 
 .method private startAsyncQueryInternal(Z)V
     .locals 11
-    .param p1    # Z
 
     :try_start_0
     const-string v7, "normalized_date DESC"
@@ -2702,8 +2584,6 @@
 
 .method private updateEmptyScreen(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -2837,7 +2717,6 @@
 
 .method private updateEmptyViewBackground(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/mms/ui/ReservationMessageManager;->isEmptyViewVisible()Z
 
@@ -2945,7 +2824,6 @@
 
 .method private updateMultiActionMenu(Landroid/view/Menu;)V
     .locals 13
-    .param p1    # Landroid/view/Menu;
 
     const v12, 0x7f0b032b
 
@@ -3255,8 +3133,6 @@
 # virtual methods
 .method getMessageItem(ILandroid/content/Context;)Lcom/android/mms/ui/MessageItem;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -3344,8 +3220,6 @@
 
 .method getMessageItem(Landroid/content/Context;Landroid/database/Cursor;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -3415,7 +3289,6 @@
 
 .method public getNumber(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -3511,7 +3384,6 @@
 
 .method public isCallable(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->getNumber(I)Ljava/lang/String;
 
@@ -3532,7 +3404,6 @@
 
 .method public isListIndex(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->isMessageIndex(I)Z
 
@@ -3543,7 +3414,6 @@
 
 .method public isMessageIndex(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -3587,7 +3457,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3655,7 +3524,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -3771,7 +3639,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ReservationMessageManager;->startAsyncQuery()V
 
@@ -3782,7 +3649,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -3838,7 +3704,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const-string v0, "Mms/ReservationMessageManager"
 
@@ -3880,7 +3745,6 @@
 
 .method public onProgressDlgCompleted(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ReservationMessageManager;->isFinishing()Z
 
@@ -3910,7 +3774,6 @@
 
 .method public onProgressDlgStart(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ReservationMessageManager;->getProgressDialog(Ljava/lang/String;)Landroid/app/ProgressDialog;
 
@@ -3954,7 +3817,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/ReservationMessageManager"
 
@@ -4078,7 +3940,6 @@
 
 .method public onSweepActionCanceled(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/ReservationMessageManager"
 
@@ -4107,8 +3968,6 @@
 
 .method public onSweepActionFired(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -4215,7 +4074,6 @@
 
 .method public onSweepActionStarted(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/ReservationMessageManager"
 
@@ -4295,7 +4153,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ReservationMessageManager;->mIsAnimationEnable:Z
 

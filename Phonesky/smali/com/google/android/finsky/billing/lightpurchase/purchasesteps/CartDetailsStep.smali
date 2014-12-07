@@ -93,9 +93,6 @@
 
 .method public static newInstance(IZLcom/google/android/finsky/protos/Purchase$ClientCart;)Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/CartDetailsStep;
     .locals 4
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # Lcom/google/android/finsky/protos/Purchase$ClientCart;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -130,8 +127,6 @@
 
 .method private static parseHtmlAndColorizeEm(Ljava/lang/String;I)Landroid/text/Spanned;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const-string v1, "#%06X"
 
@@ -210,11 +205,6 @@
 
 .method private populateContainerWithTextViews(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;I[Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # I
 
     const/4 v5, 0x0
 
@@ -393,7 +383,6 @@
 
 .method public getContinueButtonLabel(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/CartDetailsStep;->mCart:Lcom/google/android/finsky/protos/Purchase$ClientCart;
 
@@ -412,7 +401,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/CartDetailsStep;->mHeader:Landroid/view/View;
 
@@ -488,7 +476,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -558,9 +545,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 26
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/CartDetailsStep;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -1170,7 +1154,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

@@ -47,9 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/Spinner;Lcom/android/i18n/addressinput/AddressField;Lcom/android/i18n/addressinput/AddressField;)V
     .locals 0
-    .param p1    # Landroid/widget/Spinner;
-    .param p2    # Lcom/android/i18n/addressinput/AddressField;
-    .param p3    # Lcom/android/i18n/addressinput/AddressField;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +61,6 @@
 
 .method static synthetic access$200(Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;)Landroid/widget/ArrayAdapter;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->mAdapter:Landroid/widget/ArrayAdapter;
 
@@ -73,7 +69,6 @@
 
 .method static synthetic access$300(Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->mView:Landroid/widget/Spinner;
 
@@ -82,7 +77,6 @@
 
 .method static synthetic access$400(Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;)Lcom/android/i18n/addressinput/AddressField;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->mId:Lcom/android/i18n/addressinput/AddressField;
 
@@ -91,7 +85,6 @@
 
 .method static synthetic access$500(Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;)Lcom/android/i18n/addressinput/AddressField;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;
 
     iget-object v0, p0, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->mParentId:Lcom/android/i18n/addressinput/AddressField;
 
@@ -100,7 +93,6 @@
 
 .method private findRegionByDisplayName(Ljava/lang/String;)Lcom/android/i18n/addressinput/RegionData;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->mCurrentRegions:Ljava/util/List;
 
@@ -142,7 +134,6 @@
 
 .method private findRegionByKeyIgnoreCase(Ljava/lang/String;)Lcom/android/i18n/addressinput/RegionData;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->mCurrentRegions:Ljava/util/List;
 
@@ -186,7 +177,6 @@
 # virtual methods
 .method public getRegionDataKeyForValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->mCurrentRegions:Ljava/util/List;
 
@@ -232,9 +222,6 @@
 
 .method public initAdapter(Landroid/content/Context;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/widget/ArrayAdapter;
 
@@ -251,7 +238,6 @@
 
 .method public setSelectionByKey(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->findRegionByKeyIgnoreCase(Ljava/lang/String;)Lcom/android/i18n/addressinput/RegionData;
 
@@ -285,7 +271,6 @@
 
 .method public setSelectionByKeyOrDisplayName(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/AddressWidget$AddressSpinnerInfo;->findRegionByKeyIgnoreCase(Ljava/lang/String;)Lcom/android/i18n/addressinput/RegionData;
 
@@ -325,7 +310,6 @@
 
 .method public setSpinnerList(Ljava/util/List;Ljava/lang/String;)V
     .locals 5
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

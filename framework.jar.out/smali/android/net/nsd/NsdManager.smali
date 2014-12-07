@@ -110,8 +110,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/nsd/INsdManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/nsd/INsdManager;
 
     const/4 v1, 0x1
 
@@ -160,8 +158,6 @@
 
 .method static synthetic access$000(Landroid/net/nsd/NsdManager;I)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/net/nsd/NsdManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/net/nsd/NsdManager;->getListener(I)Ljava/lang/Object;
 
@@ -172,7 +168,6 @@
 
 .method static synthetic access$100(Landroid/net/nsd/NsdManager;)Lcom/android/internal/util/AsyncChannel;
     .locals 1
-    .param p0    # Landroid/net/nsd/NsdManager;
 
     iget-object v0, p0, Landroid/net/nsd/NsdManager;->mAsyncChannel:Lcom/android/internal/util/AsyncChannel;
 
@@ -181,7 +176,6 @@
 
 .method static synthetic access$200(Landroid/net/nsd/NsdManager;)Ljava/util/concurrent/CountDownLatch;
     .locals 1
-    .param p0    # Landroid/net/nsd/NsdManager;
 
     iget-object v0, p0, Landroid/net/nsd/NsdManager;->mConnected:Ljava/util/concurrent/CountDownLatch;
 
@@ -190,8 +184,6 @@
 
 .method static synthetic access$300(Landroid/net/nsd/NsdManager;I)Landroid/net/nsd/NsdServiceInfo;
     .locals 1
-    .param p0    # Landroid/net/nsd/NsdManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/net/nsd/NsdManager;->getNsdService(I)Landroid/net/nsd/NsdServiceInfo;
 
@@ -202,8 +194,6 @@
 
 .method static synthetic access$400(Landroid/net/nsd/NsdManager;I)V
     .locals 0
-    .param p0    # Landroid/net/nsd/NsdManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/net/nsd/NsdManager;->removeListener(I)V
 
@@ -212,7 +202,6 @@
 
 .method private getListener(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -249,7 +238,6 @@
 
 .method private getListenerKey(Ljava/lang/Object;)I
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v2, p0, Landroid/net/nsd/NsdManager;->mMapLock:Ljava/lang/Object;
 
@@ -319,7 +307,6 @@
 
 .method private getNsdService(I)Landroid/net/nsd/NsdServiceInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/net/nsd/NsdManager;->mMapLock:Ljava/lang/Object;
 
@@ -416,8 +403,6 @@
 
 .method private putListener(Ljava/lang/Object;Landroid/net/nsd/NsdServiceInfo;)I
     .locals 3
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/net/nsd/NsdServiceInfo;
 
     if-nez p1, :cond_0
 
@@ -465,7 +450,6 @@
 
 .method private removeListener(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -504,9 +488,6 @@
 # virtual methods
 .method public discoverServices(Ljava/lang/String;ILandroid/net/nsd/NsdManager$DiscoveryListener;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/net/nsd/NsdManager$DiscoveryListener;
 
     if-nez p3, :cond_0
 
@@ -570,9 +551,6 @@
 
 .method public registerService(Landroid/net/nsd/NsdServiceInfo;ILandroid/net/nsd/NsdManager$RegistrationListener;)V
     .locals 4
-    .param p1    # Landroid/net/nsd/NsdServiceInfo;
-    .param p2    # I
-    .param p3    # Landroid/net/nsd/NsdManager$RegistrationListener;
 
     invoke-virtual {p1}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
@@ -660,8 +638,6 @@
 
 .method public resolveService(Landroid/net/nsd/NsdServiceInfo;Landroid/net/nsd/NsdManager$ResolveListener;)V
     .locals 4
-    .param p1    # Landroid/net/nsd/NsdServiceInfo;
-    .param p2    # Landroid/net/nsd/NsdManager$ResolveListener;
 
     invoke-virtual {p1}, Landroid/net/nsd/NsdServiceInfo;->getServiceName()Ljava/lang/String;
 
@@ -721,7 +697,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/nsd/NsdManager;->mService:Landroid/net/nsd/INsdManager;
@@ -741,7 +716,6 @@
 
 .method public stopServiceDiscovery(Landroid/net/nsd/NsdManager$DiscoveryListener;)V
     .locals 4
-    .param p1    # Landroid/net/nsd/NsdManager$DiscoveryListener;
 
     invoke-direct {p0, p1}, Landroid/net/nsd/NsdManager;->getListenerKey(Ljava/lang/Object;)I
 
@@ -782,7 +756,6 @@
 
 .method public unregisterService(Landroid/net/nsd/NsdManager$RegistrationListener;)V
     .locals 4
-    .param p1    # Landroid/net/nsd/NsdManager$RegistrationListener;
 
     invoke-direct {p0, p1}, Landroid/net/nsd/NsdManager;->getListenerKey(Ljava/lang/Object;)I
 

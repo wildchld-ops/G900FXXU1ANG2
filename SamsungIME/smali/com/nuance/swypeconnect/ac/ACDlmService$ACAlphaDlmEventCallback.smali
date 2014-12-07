@@ -40,8 +40,6 @@
 # virtual methods
 .method public onAlphaDlmEvent([BZ)V
     .locals 6
-    .param p1    # [B
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService$ACAlphaDlmEventCallback;->this$0:Lcom/nuance/swypeconnect/ac/ACDlmService;
 
@@ -82,7 +80,6 @@
 
 .method public onReset(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService$ACAlphaDlmEventCallback;->this$0:Lcom/nuance/swypeconnect/ac/ACDlmService;
 

@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     invoke-direct {p0}, Landroid/view/IApplicationToken$Stub;-><init>()V
 
@@ -73,7 +72,6 @@
 
 .method public keyDispatchingTimedOut(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/am/ActivityRecord$Token;->weakActivity:Ljava/lang/ref/WeakReference;
 

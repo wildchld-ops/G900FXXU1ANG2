@@ -36,8 +36,6 @@
 # virtual methods
 .method public onLanguageUpdate([I[I)V
     .locals 7
-    .param p1    # [I
-    .param p2    # [I
 
     iget-object v5, p0, Lcom/nuance/connect/service/manager/DlmSyncManager$4;->this$0:Lcom/nuance/connect/service/manager/DlmSyncManager;
 
@@ -129,7 +127,6 @@
 
 .method public onLocaleUpdate(Ljava/util/Locale;)V
     .locals 0
-    .param p1    # Ljava/util/Locale;
 
     return-void
 .end method

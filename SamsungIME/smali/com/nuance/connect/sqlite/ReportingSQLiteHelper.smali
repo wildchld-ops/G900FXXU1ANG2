@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "reporting"
 
@@ -33,7 +32,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE table aa (a TEXT, b TEXT, d INTEGER, e INTEGER, f INTEGER, g TEXT, h DATETIME, i INTEGER);"
 
@@ -48,8 +46,6 @@
 
 .method public onInvalid(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "AA"
 
@@ -85,9 +81,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     if-le p2, p3, :cond_0
 
@@ -97,8 +90,6 @@
 
 .method public validateTable(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 

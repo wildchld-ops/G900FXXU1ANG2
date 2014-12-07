@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;)Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->mChallenge:Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;
 
@@ -67,7 +66,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;)Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->mAddressSpec:Lcom/google/android/finsky/protos/CommonDevice$BillingAddressSpec;
 
@@ -76,7 +74,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;)Lcom/google/android/finsky/layout/BillingAddress;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->mBillingAddress:Lcom/google/android/finsky/layout/BillingAddress;
 
@@ -85,7 +82,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;)Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->mListener:Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener;
 
@@ -94,8 +90,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->saveMyState(Landroid/os/Bundle;)V
 
@@ -104,7 +98,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->onBillingCountriesLoaded()V
 
@@ -123,7 +116,6 @@
 
 .method private displayError(Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;)Landroid/widget/TextView;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->mBillingAddress:Lcom/google/android/finsky/layout/BillingAddress;
 
@@ -374,9 +366,6 @@
 
 .method public static newInstance(Ljava/lang/String;Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;Landroid/os/Bundle;)Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v1, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;
 
@@ -509,7 +498,6 @@
 
 .method private saveMyState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -579,7 +567,6 @@
 
 .method private setupWidgets(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v2, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->mBillingAddress:Lcom/google/android/finsky/layout/BillingAddress;
 
@@ -747,8 +734,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 0
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->syncContinueButton()V
 
@@ -757,7 +742,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -810,9 +794,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 14
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     if-nez p2, :cond_0
 
@@ -1229,8 +1210,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1245,8 +1224,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->loadBillingCountries()V
 
@@ -1255,7 +1232,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1266,7 +1242,6 @@
 
 .method public setOnResultListener(Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment;->mListener:Lcom/google/android/finsky/billing/challenge/AddressChallengeFragment$AddressChallengeResultListener;
 

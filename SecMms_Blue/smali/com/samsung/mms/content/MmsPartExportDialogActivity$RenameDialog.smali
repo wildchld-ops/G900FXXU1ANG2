@@ -141,7 +141,6 @@
 
 .method public static newInstance(Landroid/os/Bundle;)Landroid/app/DialogFragment;
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/samsung/mms/content/MmsPartExportDialogActivity$RenameDialog;
 
@@ -169,7 +168,6 @@
 
 .method private requestInputMethod(Landroid/app/Dialog;)V
     .locals 4
-    .param p1    # Landroid/app/Dialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -218,7 +216,6 @@
 
 .method private setupDialogView(Landroid/os/Bundle;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x32
 
@@ -306,24 +303,18 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-direct {p0}, Lcom/samsung/mms/content/MmsPartExportDialogActivity$RenameDialog;->notifyActivity()V
 
@@ -334,8 +325,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v3, -0x1
 
@@ -401,7 +390,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/samsung/mms/content/MmsPartExportDialogActivity$RenameDialog;->extractFileName()V
 
@@ -456,10 +444,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getDialog()Landroid/app/Dialog;
 

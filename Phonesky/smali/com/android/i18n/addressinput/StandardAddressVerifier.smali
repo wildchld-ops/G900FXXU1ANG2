@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Lcom/android/i18n/addressinput/FieldVerifier;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/FieldVerifier;
 
     sget-object v0, Lcom/android/i18n/addressinput/StandardAddressVerifier;->DEFAULT_REFINER:Lcom/android/i18n/addressinput/StandardAddressVerifier$VerifierRefiner;
 
@@ -64,8 +63,6 @@
 
 .method public constructor <init>(Lcom/android/i18n/addressinput/FieldVerifier;Lcom/android/i18n/addressinput/StandardAddressVerifier$VerifierRefiner;Ljava/util/Map;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/FieldVerifier;
-    .param p2    # Lcom/android/i18n/addressinput/StandardAddressVerifier$VerifierRefiner;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -98,7 +95,6 @@
 # virtual methods
 .method protected getProblemIterator(Lcom/android/i18n/addressinput/AddressField;)Ljava/util/Iterator;
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -135,17 +131,12 @@
 
 .method protected postVerify(Lcom/android/i18n/addressinput/FieldVerifier;Lcom/android/i18n/addressinput/AddressData;Lcom/android/i18n/addressinput/AddressProblems;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/FieldVerifier;
-    .param p2    # Lcom/android/i18n/addressinput/AddressData;
-    .param p3    # Lcom/android/i18n/addressinput/AddressProblems;
 
     return-void
 .end method
 
 .method public verify(Lcom/android/i18n/addressinput/AddressData;Lcom/android/i18n/addressinput/AddressProblems;)V
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
-    .param p2    # Lcom/android/i18n/addressinput/AddressProblems;
 
     new-instance v1, Lcom/android/i18n/addressinput/NotifyingListener;
 
@@ -172,9 +163,6 @@
 
 .method public verifyAsync(Lcom/android/i18n/addressinput/AddressData;Lcom/android/i18n/addressinput/AddressProblems;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
-    .param p2    # Lcom/android/i18n/addressinput/AddressProblems;
-    .param p3    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     new-instance v1, Lcom/android/i18n/addressinput/StandardAddressVerifier$Verifier;
 
@@ -191,11 +179,6 @@
 
 .method protected verifyField(Lcom/android/i18n/addressinput/LookupKey$ScriptType;Lcom/android/i18n/addressinput/FieldVerifier;Lcom/android/i18n/addressinput/AddressField;Ljava/lang/String;Lcom/android/i18n/addressinput/AddressProblems;)Z
     .locals 8
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
-    .param p2    # Lcom/android/i18n/addressinput/FieldVerifier;
-    .param p3    # Lcom/android/i18n/addressinput/AddressField;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/i18n/addressinput/AddressProblems;
 
     invoke-virtual {p0, p3}, Lcom/android/i18n/addressinput/StandardAddressVerifier;->getProblemIterator(Lcom/android/i18n/addressinput/AddressField;)Ljava/util/Iterator;
 
@@ -245,12 +228,6 @@
 
 .method protected verifyProblemField(Lcom/android/i18n/addressinput/LookupKey$ScriptType;Lcom/android/i18n/addressinput/FieldVerifier;Lcom/android/i18n/addressinput/AddressProblemType;Lcom/android/i18n/addressinput/AddressField;Ljava/lang/String;Lcom/android/i18n/addressinput/AddressProblems;)Z
     .locals 6
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey$ScriptType;
-    .param p2    # Lcom/android/i18n/addressinput/FieldVerifier;
-    .param p3    # Lcom/android/i18n/addressinput/AddressProblemType;
-    .param p4    # Lcom/android/i18n/addressinput/AddressField;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/android/i18n/addressinput/AddressProblems;
 
     move-object v0, p2
 

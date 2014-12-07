@@ -150,7 +150,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/dormantmode/DormantmodeSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget-object v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mContext:Landroid/content/Context;
 
@@ -159,7 +158,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/dormantmode/DormantmodeSettings;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget-object v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mTimePickerDlg:Landroid/app/Dialog;
 
@@ -168,7 +166,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/dormantmode/DormantmodeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mEndhour:I
 
@@ -177,7 +174,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/dormantmode/DormantmodeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mEndmin:I
 
@@ -186,9 +182,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/dormantmode/DormantmodeSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/dormantmode/DormantmodeSettings;->setEndTime(II)V
 
@@ -197,8 +190,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/dormantmode/DormantmodeSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -207,7 +198,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/dormantmode/DormantmodeSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget-object v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mTimeFromBtn:Landroid/widget/Button;
 
@@ -216,8 +206,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/dormantmode/DormantmodeSettings;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mTimeFromBtn:Landroid/widget/Button;
 
@@ -226,7 +214,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/dormantmode/DormantmodeSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget-object v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mAlwaysPref:Landroid/preference/CheckBoxPreference;
 
@@ -235,7 +222,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/dormantmode/DormantmodeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mStarthour:I
 
@@ -244,7 +230,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/dormantmode/DormantmodeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mStartmin:I
 
@@ -253,9 +238,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/dormantmode/DormantmodeSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/dormantmode/DormantmodeSettings;->setStartTime(II)V
 
@@ -264,7 +246,6 @@
 
 .method static synthetic access$702(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->DIALOG_CURRENT_TIMEPICKER:I
 
@@ -273,8 +254,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/dormantmode/DormantmodeSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -283,7 +262,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/dormantmode/DormantmodeSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
 
     iget-object v0, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mTimeToBtn:Landroid/widget/Button;
 
@@ -292,8 +270,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/dormantmode/DormantmodeSettings;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantmodeSettings;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/dormantmode/DormantmodeSettings;->mTimeToBtn:Landroid/widget/Button;
 
@@ -302,7 +278,6 @@
 
 .method private setAllowListsummery(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/settings/Utils;->isSupportMenuTreeForK()Z
 
@@ -378,8 +353,6 @@
 
 .method private setEndTime(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -456,8 +429,6 @@
 
 .method private setStartTime(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1233,7 +1204,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1256,7 +1226,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1309,7 +1278,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1734,8 +1702,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 8
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v4, 0x0
 
@@ -2251,9 +2217,6 @@
 
 .method public onTimeSet(Landroid/widget/TimePicker;II)V
     .locals 4
-    .param p1    # Landroid/widget/TimePicker;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 

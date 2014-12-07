@@ -54,9 +54,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p2, p3}, Lcom/google/android/finsky/api/model/BucketedList;-><init>(Ljava/lang/String;Z)V
 
@@ -73,9 +70,6 @@
 
 .method private constructor <init>(Ljava/util/List;IZLjava/lang/String;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -120,11 +114,6 @@
 
 .method synthetic constructor <init>(Ljava/util/List;IZLjava/lang/String;Lcom/google/android/finsky/api/model/DfeList$1;)V
     .locals 0
-    .param p1    # Ljava/util/List;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/api/model/DfeList$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/api/model/DfeList;-><init>(Ljava/util/List;IZLjava/lang/String;)V
 
@@ -135,7 +124,6 @@
 # virtual methods
 .method public clearDataAndReplaceInitialUrl(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/api/model/DfeList;->mInitialListUrl:Ljava/lang/String;
 
@@ -154,7 +142,6 @@
 
 .method public filterDocId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/api/model/DfeList;->mFilteredDocId:Ljava/lang/String;
 
@@ -171,7 +158,6 @@
 
 .method protected getItemsFromResponse(Lcom/google/android/finsky/protos/DocList$ListResponse;)Ljava/util/List;
     .locals 10
-    .param p1    # Lcom/google/android/finsky/protos/DocList$ListResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -294,7 +280,6 @@
 
 .method protected bridge synthetic getItemsFromResponse(Ljava/lang/Object;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/DocList$ListResponse;
 
@@ -307,7 +292,6 @@
 
 .method protected getNextPageUrl(Lcom/google/android/finsky/protos/DocList$ListResponse;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/DocList$ListResponse;
 
     const/4 v1, 0x0
 
@@ -339,7 +323,6 @@
 
 .method protected bridge synthetic getNextPageUrl(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/DocList$ListResponse;
 
@@ -352,7 +335,6 @@
 
 .method protected makeRequest(Ljava/lang/String;)Lcom/android/volley/Request;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -374,7 +356,6 @@
 
 .method public setDfeApi(Lcom/google/android/finsky/api/DfeApi;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
 
     iput-object p1, p0, Lcom/google/android/finsky/api/model/DfeList;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -383,8 +364,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/google/android/finsky/api/model/DfeList;->mUrlOffsetList:Ljava/util/List;
 

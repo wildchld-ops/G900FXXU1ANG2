@@ -6,8 +6,6 @@
 # direct methods
 .method public static rewrite(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

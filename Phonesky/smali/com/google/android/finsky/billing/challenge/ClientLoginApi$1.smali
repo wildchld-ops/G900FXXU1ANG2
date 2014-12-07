@@ -50,7 +50,6 @@
 # virtual methods
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -61,7 +60,6 @@
 
 .method public onResponse(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/challenge/ClientLoginApi$1;->val$listener:Lcom/google/android/finsky/billing/challenge/ClientLoginApi$ClientLoginListener;
 

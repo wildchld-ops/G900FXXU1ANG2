@@ -20,12 +20,6 @@
 # direct methods
 .method private constructor <init>(Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/ImageView;Landroid/widget/ImageView;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Landroid/widget/TextView;
-    .param p4    # Landroid/widget/TextView;
-    .param p5    # Landroid/widget/ImageView;
-    .param p6    # Landroid/widget/ImageView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +40,6 @@
 
 .method public static createForTest(Landroid/content/Context;)Lcom/android/dialer/PhoneCallDetailsViews;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/dialer/PhoneCallDetailsViews;
 
@@ -81,7 +74,6 @@
 
 .method public static fromView(Landroid/view/View;)Lcom/android/dialer/PhoneCallDetailsViews;
     .locals 7
-    .param p0    # Landroid/view/View;
 
     new-instance v0, Lcom/android/dialer/PhoneCallDetailsViews;
 

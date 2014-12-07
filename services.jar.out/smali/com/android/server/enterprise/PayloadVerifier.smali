@@ -34,8 +34,6 @@
 
 .method private static compareEnterpriseSignature(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -173,7 +171,6 @@
 
 .method public static extractLicense(Ljava/lang/String;)[B
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -435,8 +432,6 @@
 
 .method private static extractPayload(Ljava/lang/String;I)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -740,10 +735,6 @@
 
 .method private static getFileData([BILjava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -993,8 +984,6 @@
 
 .method private static getFileData(Ljava/lang/String;Ljava/lang/String;)[B
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1284,8 +1273,6 @@
 
 .method private static getFileSize(Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1374,7 +1361,6 @@
 
 .method public static getPackageNameFromPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -1421,7 +1407,6 @@
 
 .method private static declared-synchronized getStoredPublicKeyPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const-class v3, Lcom/android/server/enterprise/PayloadVerifier;
 
@@ -1522,7 +1507,6 @@
 
 .method private static varargs joinBytes([[B)[B
     .locals 8
-    .param p0    # [[B
 
     new-instance v2, Ljava/io/ByteArrayOutputStream;
 
@@ -1580,9 +1564,6 @@
 
 .method private static loadCertificates(Ljava/util/jar/JarFile;Ljava/util/jar/JarEntry;[B)[Ljava/security/cert/Certificate;
     .locals 7
-    .param p0    # Ljava/util/jar/JarFile;
-    .param p1    # Ljava/util/jar/JarEntry;
-    .param p2    # [B
 
     const/4 v3, 0x0
 
@@ -1847,7 +1828,6 @@
 
 .method public static declared-synchronized removeStoredPublicKeyPath(Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const-class v3, Lcom/android/server/enterprise/PayloadVerifier;
 
@@ -1927,8 +1907,6 @@
 
 .method private static declared-synchronized setStoredPublicKeyPath(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-class v5, Lcom/android/server/enterprise/PayloadVerifier;
 
@@ -2033,8 +2011,6 @@
 
 .method public static verify(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -2226,8 +2202,6 @@
 
 .method private static verify(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 17
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2518,9 +2492,6 @@
 
 .method private static verify([B[BLjava/security/PublicKey;)Z
     .locals 5
-    .param p0    # [B
-    .param p1    # [B
-    .param p2    # Ljava/security/PublicKey;
 
     const/4 v1, 0x0
 

@@ -178,7 +178,6 @@
 # virtual methods
 .method public declared-synchronized addEditableKey(I)V
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -318,8 +317,6 @@
 
 .method public declared-synchronized getBitmap(ILandroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -428,8 +425,6 @@
 
 .method public declared-synchronized getLong(IJ)J
     .locals 3
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -503,8 +498,6 @@
 
 .method public declared-synchronized getObject(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -671,8 +664,6 @@
 
 .method public declared-synchronized getString(ILjava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -748,8 +739,6 @@
 
 .method public declared-synchronized putBitmap(ILandroid/graphics/Bitmap;)Landroid/media/MediaMetadataEditor;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -834,8 +823,6 @@
 
 .method public declared-synchronized putLong(IJ)Landroid/media/MediaMetadataEditor;
     .locals 4
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -932,8 +919,6 @@
 
 .method public declared-synchronized putObject(ILjava/lang/Object;)Landroid/media/MediaMetadataEditor;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1166,8 +1151,6 @@
 
 .method public declared-synchronized putString(ILjava/lang/String;)Landroid/media/MediaMetadataEditor;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

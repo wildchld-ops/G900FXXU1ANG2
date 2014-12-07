@@ -14,7 +14,6 @@
 
 .method public static getContentCharSet(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
     .locals 5
-    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -74,7 +73,6 @@
 
 .method public static toByteArray(Lorg/apache/http/HttpEntity;)[B
     .locals 9
-    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -181,7 +179,6 @@
 
 .method public static toString(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -200,8 +197,6 @@
 
 .method public static toString(Lorg/apache/http/HttpEntity;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Lorg/apache/http/HttpEntity;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

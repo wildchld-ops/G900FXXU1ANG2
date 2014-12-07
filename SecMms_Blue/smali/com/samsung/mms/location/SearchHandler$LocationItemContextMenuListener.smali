@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/mms/location/SearchHandler;Lcom/samsung/mms/location/SearchHandler$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/mms/location/SearchHandler;
-    .param p2    # Lcom/samsung/mms/location/SearchHandler$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/SearchHandler$LocationItemContextMenuListener;-><init>(Lcom/samsung/mms/location/SearchHandler;)V
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 12
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v11, 0x1
 

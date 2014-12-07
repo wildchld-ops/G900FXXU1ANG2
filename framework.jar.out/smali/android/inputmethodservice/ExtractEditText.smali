@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -23,8 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101006e
 
@@ -35,9 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -48,8 +42,6 @@
 # virtual methods
 .method public deleteAndReplace_internal(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 
@@ -60,8 +52,6 @@
 
 .method protected deleteText_internal(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 
@@ -154,7 +144,6 @@
 
 .method public onScreenStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/EditText;->onScreenStateChanged(I)V
 
@@ -180,8 +169,6 @@
 
 .method protected onSelectionChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/inputmethodservice/ExtractEditText;->mSettingExtractedText:I
 
@@ -205,7 +192,6 @@
 
 .method public onTextContextMenuItem(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 
@@ -288,9 +274,6 @@
 
 .method protected replaceText_internal(IILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 
@@ -301,8 +284,6 @@
 
 .method protected setCursorPosition_internal(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 
@@ -313,7 +294,6 @@
 
 .method public setExtractedText(Landroid/view/inputmethod/ExtractedText;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/ExtractedText;
 
     :try_start_0
     iget v0, p0, Landroid/inputmethodservice/ExtractEditText;->mSettingExtractedText:I
@@ -348,7 +328,6 @@
 
 .method setIME(Landroid/inputmethodservice/InputMethodService;)V
     .locals 0
-    .param p1    # Landroid/inputmethodservice/InputMethodService;
 
     iput-object p1, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 
@@ -357,10 +336,6 @@
 
 .method protected setSpan_internal(Ljava/lang/Object;III)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 
@@ -383,7 +358,6 @@
 
 .method protected viewClicked(Landroid/view/inputmethod/InputMethodManager;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v0, p0, Landroid/inputmethodservice/ExtractEditText;->mIME:Landroid/inputmethodservice/InputMethodService;
 

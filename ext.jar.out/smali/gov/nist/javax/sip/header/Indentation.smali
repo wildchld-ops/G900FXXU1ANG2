@@ -22,7 +22,6 @@
 
 .method protected constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +84,6 @@
 
 .method protected setIndentation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lgov/nist/javax/sip/header/Indentation;->indentation:I
 

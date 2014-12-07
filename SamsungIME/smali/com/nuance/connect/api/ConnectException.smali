@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
@@ -57,8 +56,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
@@ -73,8 +70,6 @@
 
 .method public constructor <init>(ILjava/lang/Throwable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Throwable;
 
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
@@ -91,7 +86,6 @@
 
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 

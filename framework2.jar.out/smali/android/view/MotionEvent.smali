@@ -866,7 +866,6 @@
 
 .method public static actionToString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1011,7 +1010,6 @@
 
 .method public static axisFromString(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -1077,7 +1075,6 @@
 
 .method public static axisToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     sget-object v1, Landroid/view/MotionEvent;->AXIS_SYMBOLIC_NAMES:Landroid/util/SparseArray;
 
@@ -1102,7 +1099,6 @@
 
 .method public static buttonStateToString(I)Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     if-nez p0, :cond_1
 
@@ -1173,9 +1169,6 @@
 
 .method private static final clamp(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     cmpg-float v0, p0, p1
 
@@ -1201,7 +1194,6 @@
 
 .method public static createFromParcelBody(Landroid/os/Parcel;)Landroid/view/MotionEvent;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-static {}, Landroid/view/MotionEvent;->obtain()Landroid/view/MotionEvent;
 
@@ -1220,7 +1212,6 @@
 
 .method private static final ensureSharedTempPointerCapacity(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v1, Landroid/view/MotionEvent;->gSharedTempPointerCoords:[Landroid/view/MotionEvent$PointerCoords;
 
@@ -1445,18 +1436,6 @@
 
 .method public static obtain(JJIFFFFIFFII)Landroid/view/MotionEvent;
     .locals 23
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # I
-    .param p10    # F
-    .param p11    # F
-    .param p12    # I
-    .param p13    # I
 
     invoke-static {}, Landroid/view/MotionEvent;->obtain()Landroid/view/MotionEvent;
 
@@ -1589,12 +1568,6 @@
 
 .method public static obtain(JJIFFI)Landroid/view/MotionEvent;
     .locals 14
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
 
     const/high16 v7, 0x3f800000
 
@@ -1629,19 +1602,6 @@
 
 .method public static obtain(JJIIFFFFIFFII)Landroid/view/MotionEvent;
     .locals 14
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # F
-    .param p10    # I
-    .param p11    # F
-    .param p12    # F
-    .param p13    # I
-    .param p14    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1678,19 +1638,6 @@
 
 .method public static obtain(JJII[I[Landroid/view/MotionEvent$PointerCoords;IFFIIII)Landroid/view/MotionEvent;
     .locals 20
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [I
-    .param p7    # [Landroid/view/MotionEvent$PointerCoords;
-    .param p8    # I
-    .param p9    # F
-    .param p10    # F
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
-    .param p14    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1773,20 +1720,6 @@
 
 .method public static obtain(JJII[Landroid/view/MotionEvent$PointerProperties;[Landroid/view/MotionEvent$PointerCoords;IIFFIIII)Landroid/view/MotionEvent;
     .locals 22
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [Landroid/view/MotionEvent$PointerProperties;
-    .param p7    # [Landroid/view/MotionEvent$PointerCoords;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # F
-    .param p11    # F
-    .param p12    # I
-    .param p13    # I
-    .param p14    # I
-    .param p15    # I
 
     invoke-static {}, Landroid/view/MotionEvent;->obtain()Landroid/view/MotionEvent;
 
@@ -1847,21 +1780,6 @@
 
 .method public static obtain(JJII[Landroid/view/MotionEvent$PointerProperties;[Landroid/view/MotionEvent$PointerCoords;IIIFFIIII)Landroid/view/MotionEvent;
     .locals 22
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [Landroid/view/MotionEvent$PointerProperties;
-    .param p7    # [Landroid/view/MotionEvent$PointerCoords;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # F
-    .param p12    # F
-    .param p13    # I
-    .param p14    # I
-    .param p15    # I
-    .param p16    # I
 
     invoke-static {}, Landroid/view/MotionEvent;->obtain()Landroid/view/MotionEvent;
 
@@ -1922,7 +1840,6 @@
 
 .method public static obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 4
-    .param p0    # Landroid/view/MotionEvent;
 
     if-nez p0, :cond_0
 
@@ -1956,7 +1873,6 @@
 
 .method public static obtainNoHistory(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 4
-    .param p0    # Landroid/view/MotionEvent;
 
     if-nez p0, :cond_0
 
@@ -1990,7 +1906,6 @@
 
 .method public static toolTypeToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     sget-object v1, Landroid/view/MotionEvent;->TOOL_TYPE_SYMBOLIC_NAMES:Landroid/util/SparseArray;
 
@@ -2017,12 +1932,6 @@
 # virtual methods
 .method public final addBatch(JFFFFI)V
     .locals 5
-    .param p1    # J
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
 
     sget-object v2, Landroid/view/MotionEvent;->gSharedTempLock:Ljava/lang/Object;
 
@@ -2089,9 +1998,6 @@
 
 .method public final addBatch(J[Landroid/view/MotionEvent$PointerCoords;I)V
     .locals 3
-    .param p1    # J
-    .param p3    # [Landroid/view/MotionEvent$PointerCoords;
-    .param p4    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -2106,7 +2012,6 @@
 
 .method public final addBatch(Landroid/view/MotionEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v11, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -2352,10 +2257,6 @@
 
 .method public final clampNoHistory(FFFF)Landroid/view/MotionEvent;
     .locals 25
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-static {}, Landroid/view/MotionEvent;->obtain()Landroid/view/MotionEvent;
 
@@ -2648,7 +2549,6 @@
 
 .method public final findPointerIndex(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -2759,7 +2659,6 @@
 
 .method public final getAngle(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -2776,7 +2675,6 @@
 
 .method public final getAxisValue(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -2793,8 +2691,6 @@
 
 .method public final getAxisValue(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -2897,7 +2793,6 @@
 
 .method public final getEccen(I)F
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x35
 
@@ -2990,8 +2885,6 @@
 
 .method public final getHistoricalAxisValue(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3006,9 +2899,6 @@
 
 .method public final getHistoricalAxisValue(III)F
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3021,7 +2911,6 @@
 
 .method public final getHistoricalEventTime(I)J
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3038,7 +2927,6 @@
 
 .method public final getHistoricalEventTimeNano(I)J
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3051,7 +2939,6 @@
 
 .method public final getHistoricalOrientation(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3068,8 +2955,6 @@
 
 .method public final getHistoricalOrientation(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3084,9 +2969,6 @@
 
 .method public final getHistoricalPointerCoords(IILandroid/view/MotionEvent$PointerCoords;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/MotionEvent$PointerCoords;
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3097,7 +2979,6 @@
 
 .method public final getHistoricalPressure(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3114,8 +2995,6 @@
 
 .method public final getHistoricalPressure(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3130,7 +3009,6 @@
 
 .method public final getHistoricalSize(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3147,8 +3025,6 @@
 
 .method public final getHistoricalSize(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3163,7 +3039,6 @@
 
 .method public final getHistoricalToolMajor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3180,8 +3055,6 @@
 
 .method public final getHistoricalToolMajor(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3196,7 +3069,6 @@
 
 .method public final getHistoricalToolMinor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3213,8 +3085,6 @@
 
 .method public final getHistoricalToolMinor(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3229,7 +3099,6 @@
 
 .method public final getHistoricalTouchMajor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3246,8 +3115,6 @@
 
 .method public final getHistoricalTouchMajor(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3262,7 +3129,6 @@
 
 .method public final getHistoricalTouchMinor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3279,8 +3145,6 @@
 
 .method public final getHistoricalTouchMinor(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3295,7 +3159,6 @@
 
 .method public final getHistoricalX(I)F
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3310,8 +3173,6 @@
 
 .method public final getHistoricalX(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3326,7 +3187,6 @@
 
 .method public final getHistoricalY(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3343,8 +3203,6 @@
 
 .method public final getHistoricalY(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3401,7 +3259,6 @@
 
 .method public final getOrientation(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3436,7 +3293,6 @@
 
 .method public final getPalm(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3453,8 +3309,6 @@
 
 .method public final getPointerCoords(ILandroid/view/MotionEvent$PointerCoords;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent$PointerCoords;
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3479,7 +3333,6 @@
 
 .method public final getPointerId(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3528,8 +3381,6 @@
 
 .method public final getPointerProperties(ILandroid/view/MotionEvent$PointerProperties;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent$PointerProperties;
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3558,7 +3409,6 @@
 
 .method public final getPressure(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3627,7 +3477,6 @@
 
 .method public final getSize(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -3723,7 +3572,6 @@
 
 .method public final getSumSize(I)Ljava/lang/Float;
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x36
 
@@ -3837,7 +3685,6 @@
 
 .method public final getSurfaceMajor(I)F
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x31
 
@@ -3928,7 +3775,6 @@
 
 .method public final getSurfaceMinor(I)F
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x32
 
@@ -4007,7 +3853,6 @@
 
 .method public final getSurfaceSize(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4042,7 +3887,6 @@
 
 .method public final getToolMajor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4077,7 +3921,6 @@
 
 .method public final getToolMinor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4094,7 +3937,6 @@
 
 .method public final getToolType(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4129,7 +3971,6 @@
 
 .method public final getTouchMajor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4168,7 +4009,6 @@
 
 .method public final getTouchMinor(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4201,7 +4041,6 @@
 
 .method public final getX(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4248,7 +4087,6 @@
 
 .method public final getY(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4313,10 +4151,6 @@
 
 .method public final isWithinBoundsNoHistory(FFFF)Z
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v5, 0x1
 
@@ -4380,8 +4214,6 @@
 
 .method public final offsetLocation(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -4447,7 +4279,6 @@
 
 .method public final scale(F)V
     .locals 1
-    .param p1    # F
 
     const/high16 v0, 0x3f800000
 
@@ -4465,7 +4296,6 @@
 
 .method public final setAction(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4476,7 +4306,6 @@
 
 .method public final setDownTime(J)V
     .locals 3
-    .param p1    # J
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4491,7 +4320,6 @@
 
 .method public final setEdgeFlags(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4502,8 +4330,6 @@
 
 .method public final setLocation(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getX()F
 
@@ -4524,8 +4350,6 @@
 
 .method public setScale(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/view/MotionEvent;->mScaleFactorX:F
 
@@ -4536,8 +4360,6 @@
 
 .method public setScaledWindowOffset(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/view/MotionEvent;->mScaledWindowOffsetX:F
 
@@ -4548,7 +4370,6 @@
 
 .method public final setSource(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/MotionEvent;->mNativePtr:I
 
@@ -4559,7 +4380,6 @@
 
 .method public final setTainted(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getFlags()I
 
@@ -4588,7 +4408,6 @@
 
 .method public final split(I)Landroid/view/MotionEvent;
     .locals 37
-    .param p1    # I
 
     invoke-static {}, Landroid/view/MotionEvent;->obtain()Landroid/view/MotionEvent;
 
@@ -5252,7 +5071,6 @@
 
 .method public final transform(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     if-nez p1, :cond_0
 
@@ -5274,8 +5092,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x1
 

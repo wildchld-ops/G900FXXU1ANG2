@@ -88,8 +88,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewClassic;Landroid/webkitsec/WebViewClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # Landroid/webkitsec/WebViewClassic$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewClassic$StylusEventListener;-><init>(Landroid/webkitsec/WebViewClassic;)V
 
@@ -163,8 +161,6 @@
 # virtual methods
 .method public onStylusButtonEvent(Landroid/view/MotionEvent;I)V
     .locals 16
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 

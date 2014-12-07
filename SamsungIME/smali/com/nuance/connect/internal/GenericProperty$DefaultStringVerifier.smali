@@ -40,8 +40,6 @@
 # virtual methods
 .method public verify(Ljava/lang/Object;Lcom/nuance/connect/internal/Property$Source;Lcom/nuance/connect/internal/Property;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lcom/nuance/connect/internal/Property$Source;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

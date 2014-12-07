@@ -36,8 +36,6 @@
 # virtual methods
 .method public execute(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/ssrm/Monitor;->TAG:Ljava/lang/String;
 

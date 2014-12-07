@@ -3524,8 +3524,6 @@
 
 .method public static getConfigurationKey(IZ)I
     .locals 4
-    .param p0    # I
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -3597,10 +3595,6 @@
 
 .method public static getMetadata(IIZI)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     invoke-static {p0}, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;->getAspectRatio(I)F
 

@@ -184,8 +184,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -206,7 +204,6 @@
 
 .method public static getAspectRatio(I)F
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -245,9 +242,6 @@
 # virtual methods
 .method public addTile(Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;II)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$CardMetadata;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;->mTiles:Ljava/util/List;
 
@@ -290,7 +284,6 @@
 
 .method public getTileMetadata(I)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata$ClusterTileMetadata;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;->mTiles:Ljava/util/List;
 
@@ -365,7 +358,6 @@
 
 .method public withLeadingGap(I)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;->mLeadingGap:I
 
@@ -374,7 +366,6 @@
 
 .method public withViewportWidth(I)Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/play/PlayCardClusterMetadata;->mViewportWidth:I
 

@@ -29,8 +29,6 @@
 
 .method public static show(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -69,7 +67,6 @@
 
 .method public getDfeApi(Ljava/lang/String;)Lcom/google/android/finsky/api/DfeApi;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -100,7 +97,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const v7, 0x7f080046
 
@@ -169,7 +165,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -196,16 +191,12 @@
 
 .method protected onReady(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showErrorDialog(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/FlagItemDialog;->getSupportFragmentManager()Landroid/support/v4/app/FragmentManager;
 
@@ -218,7 +209,6 @@
 
 .method public updateBreadcrumb(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemDialog;->mActionBar:Lcom/google/android/finsky/layout/CustomActionBar;
 
@@ -229,7 +219,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/FlagItemDialog;->mActionBar:Lcom/google/android/finsky/layout/CustomActionBar;
 

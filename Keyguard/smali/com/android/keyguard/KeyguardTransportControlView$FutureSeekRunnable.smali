@@ -56,7 +56,6 @@
 
 .method setProgress(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardTransportControlView$FutureSeekRunnable;->mProgress:I
 

@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 19
-    .param p1    # I
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -410,7 +409,6 @@
 
 .method public buildExternalStorageAppCacheDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForApp:[Ljava/io/File;
 
@@ -449,7 +447,6 @@
 
 .method public buildExternalStorageAppDataDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForApp:[Ljava/io/File;
 
@@ -482,7 +479,6 @@
 
 .method public buildExternalStorageAppDataDirsForVold(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForVold:[Ljava/io/File;
 
@@ -515,7 +511,6 @@
 
 .method public buildExternalStorageAppFilesDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForApp:[Ljava/io/File;
 
@@ -554,7 +549,6 @@
 
 .method public buildExternalStorageAppMediaDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForApp:[Ljava/io/File;
 
@@ -587,7 +581,6 @@
 
 .method public buildExternalStorageAppObbDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForApp:[Ljava/io/File;
 
@@ -620,7 +613,6 @@
 
 .method public buildExternalStorageAppObbDirsForVold(Ljava/lang/String;)[Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForVold:[Ljava/io/File;
 
@@ -653,7 +645,6 @@
 
 .method public buildExternalStoragePublicDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Environment$UserEnvironment;->mExternalDirsForApp:[Ljava/io/File;
 
@@ -704,7 +695,6 @@
 
 .method public getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

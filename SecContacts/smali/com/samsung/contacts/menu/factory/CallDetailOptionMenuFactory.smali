@@ -14,8 +14,6 @@
 
 .method public static createContactsMenu(Landroid/content/Context;I)Lcom/samsung/contacts/menu/OptionMenu;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v0, 0x0
 

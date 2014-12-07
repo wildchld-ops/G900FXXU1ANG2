@@ -216,7 +216,6 @@
 
 .method private checkGlError(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/opengl/GLES20;->glGetError()I
 
@@ -341,8 +340,6 @@
 
 .method private createProgram(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -429,8 +426,6 @@
 
 .method private doBitmaps([Lcom/android/launcher2/ShadowGen$QueuedBitmap;[Landroid/graphics/Bitmap;)V
     .locals 12
-    .param p1    # [Lcom/android/launcher2/ShadowGen$QueuedBitmap;
-    .param p2    # [Landroid/graphics/Bitmap;
 
     const/4 v11, 0x0
 
@@ -901,8 +896,6 @@
 
 .method private loadShader(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -974,8 +967,6 @@
 
 .method private notifyCallbacks([Lcom/android/launcher2/ShadowGen$QueuedBitmap;[Landroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # [Lcom/android/launcher2/ShadowGen$QueuedBitmap;
-    .param p2    # [Landroid/graphics/Bitmap;
 
     const/4 v4, 0x0
 
@@ -1083,9 +1074,6 @@
 
 .method createContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v1, 0x3
 

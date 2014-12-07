@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/KeyguardHostView;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/KeyguardHostView;
 
     invoke-direct {p0}, Landroid/widget/RemoteViews$OnClickHandler;-><init>()V
 
@@ -47,9 +46,6 @@
 # virtual methods
 .method public onClickHandler(Landroid/view/View;Landroid/app/PendingIntent;Landroid/content/Intent;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 

@@ -42,7 +42,6 @@
 
 .method public static getSnsAccountMgr(Landroid/content/Context;)Lcom/android/settings/accounts/SnsAccountManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -65,7 +64,6 @@
 
 .method public static isActionbarLightTheme(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -151,7 +149,6 @@
 
 .method public static isLightTheme(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 

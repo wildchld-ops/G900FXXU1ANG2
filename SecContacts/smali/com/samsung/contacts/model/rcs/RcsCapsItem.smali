@@ -39,14 +39,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/Intent;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,7 +65,6 @@
 # virtual methods
 .method public compareTo(Lcom/samsung/contacts/model/rcs/RcsCapsItem;)I
     .locals 1
-    .param p1    # Lcom/samsung/contacts/model/rcs/RcsCapsItem;
 
     const/4 v0, 0x0
 
@@ -82,7 +73,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/model/rcs/RcsCapsItem;
 

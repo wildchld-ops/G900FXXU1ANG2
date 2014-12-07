@@ -201,9 +201,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -820,7 +817,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->aniRectGrow:Landroid/view/animation/Animation;
 
@@ -829,7 +825,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;)Lcom/sec/android/glview/TwGLViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocus_Ani:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -838,8 +833,6 @@
 
 .method static synthetic access$302(Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mMode:I
 
@@ -856,7 +849,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;)F
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mDegrees:F
 
@@ -865,12 +857,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;JFFLandroid/view/animation/Interpolator;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
-    .param p1    # J
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/view/animation/Interpolator;
-    .param p6    # Z
 
     invoke-direct/range {p0 .. p6}, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->startAnimation(JFFLandroid/view/animation/Interpolator;Z)V
 
@@ -887,11 +873,6 @@
 
 .method private startAnimation(JFFLandroid/view/animation/Interpolator;Z)V
     .locals 8
-    .param p1    # J
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/view/animation/Interpolator;
-    .param p6    # Z
 
     const/4 v4, 0x0
 
@@ -1031,8 +1012,6 @@
 # virtual methods
 .method public declared-synchronized contains(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -1045,8 +1024,6 @@
 
 .method public declared-synchronized findViewByCoordinate(FF)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -1091,8 +1068,6 @@
 
 .method public onFocus(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1103,9 +1078,6 @@
 
 .method public onFocus(IIZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/16 v6, 0xb
 
@@ -1257,8 +1229,6 @@
 
 .method public resetInit(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;->mFocusRectSizeX:I
 
@@ -1281,7 +1251,6 @@
 
 .method public setFocusRectIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1398,7 +1367,6 @@
 
 .method public setFocusRotationDegree(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
@@ -1460,7 +1428,6 @@
 
 .method public showFocusIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x4
 

@@ -129,7 +129,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -144,8 +143,6 @@
 
 .method public constructor <init>(Lcom/android/contacts/model/Contact;Landroid/content/Context;)V
     .locals 8
-    .param p1    # Lcom/android/contacts/model/Contact;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -307,7 +304,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
@@ -455,8 +451,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Lcom/samsung/contacts/detail/TargetContactData;->mContactId:J
 

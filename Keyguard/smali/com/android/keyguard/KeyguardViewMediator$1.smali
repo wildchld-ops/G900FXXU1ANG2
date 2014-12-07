@@ -50,7 +50,6 @@
 
 .method public onICCCardStateChanged(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "REMOVED"
 
@@ -122,7 +121,6 @@
 
 .method onPhoneStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardViewMediator$1;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -195,7 +193,6 @@
 
 .method public onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;)V
     .locals 1
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
 
@@ -212,8 +209,6 @@
 
 .method public onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;I)V
     .locals 3
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # I
 
     const-string v0, "KeyguardViewMediator"
 
@@ -533,7 +528,6 @@
 
 .method public onUserInfoChanged(I)V
     .locals 1
-    .param p1    # I
 
     # getter for: Lcom/android/keyguard/KeyguardViewMediator;->sMultiUserAvatarCache:Lcom/android/keyguard/MultiUserAvatarCache;
     invoke-static {}, Lcom/android/keyguard/KeyguardViewMediator;->access$700()Lcom/android/keyguard/MultiUserAvatarCache;
@@ -566,7 +560,6 @@
 
 .method public onUserRemoved(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator$1;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -608,7 +601,6 @@
 
 .method public onUserSwitchComplete(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardViewMediator$1;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 
@@ -655,7 +647,6 @@
 
 .method public onUserSwitching(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardViewMediator$1;->this$0:Lcom/android/keyguard/KeyguardViewMediator;
 

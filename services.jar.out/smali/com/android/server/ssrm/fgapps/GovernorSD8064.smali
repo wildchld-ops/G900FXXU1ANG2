@@ -83,7 +83,6 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -201,8 +200,6 @@
 
 .method public updateParameter(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "SSRMv2:GovernorSD8064"
 

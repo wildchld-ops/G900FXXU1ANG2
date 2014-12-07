@@ -1379,7 +1379,7 @@ Bạn cũng có thể hiển thị hoặc ẩn phím điều khiển đa cửa s
     <string name="usb_tethering_errored_subtext">Lỗi kết nối USB internet</string>
     <string name="usb_tethering_on_during_sidesync_popup">Không thể tắt kết nối qua USB khi đang sử dụng SideSync. Việc tắt kết nối qua USB sẽ tắt SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Không thể bật kết nối qua USB khi đang sử dụng SideSync. Việc bật kết nối qua USB sẽ tắt SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Chia sẻ kết nối internet qua Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Chia sẻ kết nối internet qua Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Đang chia sẻ kết nối Internet của thiết bị này…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Đã chia sẻ kết nối Internet của thiết bị với 1 thiết bị khác</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Đã chia sẻ kết nối Internet của thiết bị với %d thiết bị khác</string>

@@ -129,7 +129,6 @@
 
 .method public setCSeqNumber(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -145,7 +144,6 @@
 
 .method public setCSequenceNumber(J)V
     .locals 3
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -197,7 +195,6 @@
 
 .method public setMethod(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -211,7 +208,6 @@
 
 .method public setRSeqNumber(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -227,7 +223,6 @@
 
 .method public setRSequenceNumber(J)V
     .locals 4
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

@@ -51,9 +51,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->setState(II)V
 
@@ -62,8 +59,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;Lcom/google/android/finsky/protos/PromoCode$RedeemCodeResponse;)Lcom/google/android/finsky/protos/PromoCode$RedeemCodeResponse;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # Lcom/google/android/finsky/protos/PromoCode$RedeemCodeResponse;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->mLastRedeemCodeResponse:Lcom/google/android/finsky/protos/PromoCode$RedeemCodeResponse;
 
@@ -72,7 +67,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;)Lcom/google/android/finsky/api/DfeApi;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -81,9 +75,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->setState(II)V
 
@@ -92,9 +83,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->setState(II)V
 
@@ -103,9 +91,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->setState(II)V
 
@@ -114,9 +99,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->setState(II)V
 
@@ -125,8 +107,6 @@
 
 .method static synthetic access$702(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->mErrorHtml:Ljava/lang/String;
 
@@ -135,9 +115,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;II)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->setState(II)V
 
@@ -146,8 +123,6 @@
 
 .method static synthetic access$902(Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;Lcom/android/volley/VolleyError;)Lcom/android/volley/VolleyError;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->mVolleyError:Lcom/android/volley/VolleyError;
 
@@ -156,8 +131,6 @@
 
 .method public static newInstance(Ljava/lang/String;I)Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -398,7 +371,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->getArguments()Landroid/os/Bundle;
 
@@ -481,7 +453,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -526,7 +497,6 @@
 
 .method public redeem(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->mRequest:Lcom/google/android/finsky/protos/PromoCode$RedeemCodeRequest;
 
@@ -539,8 +509,6 @@
 
 .method public respondWithAddress(Lcom/google/android/finsky/protos/BillingAddress$Address;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/BillingAddress$Address;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/giftcard/RedeemCodeSidecar;->getState()I
 

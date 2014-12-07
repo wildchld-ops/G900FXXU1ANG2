@@ -98,7 +98,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->mSelectedGroups:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -107,7 +106,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;)Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment$ListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->mAdapter:Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment$ListAdapter;
 
@@ -124,7 +122,6 @@
 
 .method static synthetic access$202(Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->mContext:Landroid/content/Context;
 
@@ -133,7 +130,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->updateSelectAll()V
 
@@ -142,8 +138,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->configureEmptyView(Z)V
 
@@ -152,7 +146,6 @@
 
 .method private configureEmptyView(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v1, 0x8
 
@@ -202,8 +195,6 @@
 
 .method private setDoneButton(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -362,7 +353,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -379,7 +369,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -390,9 +379,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     sget-object v1, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->TAG:Ljava/lang/String;
 
@@ -511,9 +497,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -604,7 +587,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v0, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->TAG:Ljava/lang/String;
 
@@ -745,7 +727,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v0, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->TAG:Ljava/lang/String;
 
@@ -782,7 +763,6 @@
 
 .method public setOnMultiDataPickerActionListener(Lcom/samsung/contacts/listener/InteractionListPickerListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;->mListener:Lcom/samsung/contacts/listener/InteractionListPickerListener;
 

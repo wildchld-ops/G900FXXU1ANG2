@@ -36,7 +36,6 @@
 # virtual methods
 .method public onHeightOffsetChanged(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs$1;->this$0:Lcom/google/android/finsky/layout/AddCreditCardFieldsIcs;
 

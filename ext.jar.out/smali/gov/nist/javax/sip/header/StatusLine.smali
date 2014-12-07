@@ -353,7 +353,6 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -473,7 +472,6 @@
 
 .method public setMatchStatusClass(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/header/StatusLine;->matchStatusClass:Z
 
@@ -482,7 +480,6 @@
 
 .method public setReasonPhrase(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/StatusLine;->reasonPhrase:Ljava/lang/String;
 
@@ -491,7 +488,6 @@
 
 .method public setSipVersion(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/StatusLine;->sipVersion:Ljava/lang/String;
 
@@ -500,7 +496,6 @@
 
 .method public setStatusCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lgov/nist/javax/sip/header/StatusLine;->statusCode:I
 

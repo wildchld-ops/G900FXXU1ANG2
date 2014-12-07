@@ -36,7 +36,6 @@
 # virtual methods
 .method public onItemSelected(Lcom/samsung/android/bezelinteraction/BezelEvent;)V
     .locals 6
-    .param p1    # Lcom/samsung/android/bezelinteraction/BezelEvent;
 
     iget v4, p1, Lcom/samsung/android/bezelinteraction/BezelEvent;->type:I
 

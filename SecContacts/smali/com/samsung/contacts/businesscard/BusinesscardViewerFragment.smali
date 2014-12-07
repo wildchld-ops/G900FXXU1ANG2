@@ -75,7 +75,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;)Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;->mAdapter:Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;
 
@@ -84,8 +83,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;)Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;
-    .param p1    # Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;
 
     iput-object p1, p0, Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;->mAdapter:Lcom/samsung/contacts/businesscard/BusinesscardViewerAdapter;
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardViewerFragment;->mPager:Landroid/support/v4/view/ViewPager;
 
@@ -105,7 +101,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -208,9 +203,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f030012
 
@@ -266,7 +258,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

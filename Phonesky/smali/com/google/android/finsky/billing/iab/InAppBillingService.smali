@@ -58,8 +58,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/iab/InAppBillingService;Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->validatePackageName(Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
@@ -70,9 +68,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/iab/InAppBillingService;ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->checkBillingEnabled(ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
@@ -83,9 +78,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/iab/InAppBillingService;ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->checkTypeSupported(ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
@@ -96,11 +88,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/iab/InAppBillingService;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->fetchSkuDetails(Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -109,10 +96,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/iab/InAppBillingService;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->isDocumentInLibrary(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -123,12 +106,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/iab/InAppBillingService;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p5}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->makePurchaseIntent(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/app/PendingIntent;
 
@@ -139,11 +116,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/billing/iab/InAppBillingService;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->populatePurchasesForPackage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -152,9 +124,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/billing/iab/InAppBillingService;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->consumeIabPurchase(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
@@ -165,9 +134,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/billing/iab/InAppBillingService;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->performIabPromoCheck(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
@@ -178,8 +144,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/billing/iab/InAppBillingService;Lcom/google/android/finsky/protos/Details$BulkDetailsEntry;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/iab/InAppBillingService;
-    .param p1    # Lcom/google/android/finsky/protos/Details$BulkDetailsEntry;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->buildDetailsJson(Lcom/google/android/finsky/protos/Details$BulkDetailsEntry;)Ljava/lang/String;
 
@@ -190,7 +154,6 @@
 
 .method private buildDetailsJson(Lcom/google/android/finsky/protos/Details$BulkDetailsEntry;)Ljava/lang/String;
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Details$BulkDetailsEntry;
 
     const/4 v8, 0x0
 
@@ -286,7 +249,6 @@
 
 .method private checkBillingApiVersionSupport(I)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -326,8 +288,6 @@
 
 .method private checkBillingEnabled(ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -380,8 +340,6 @@
 
 .method private checkTypeSupported(ILjava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -457,7 +415,6 @@
 
 .method private computeSignatureHash(Landroid/content/pm/PackageInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     iget-object v1, p1, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -478,8 +435,6 @@
 
 .method private consumeIabPurchase(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -556,10 +511,6 @@
 
 .method private fetchSkuDetails(Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     const-string v2, "ITEM_ID_LIST"
 
@@ -704,7 +655,6 @@
 
 .method private getInAppType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "inapp:"
 
@@ -740,7 +690,6 @@
 
 .method private static getListAndContinuationToken(Ljava/util/List;Ljava/lang/String;)Landroid/util/Pair;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -846,7 +795,6 @@
 
 .method private getPackageInfo(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -884,7 +832,6 @@
 
 .method private getPreferredAccount(Ljava/lang/String;)Landroid/accounts/Account;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1, p0}, Lcom/google/android/finsky/billing/iab/InAppBillingUtils;->getPreferredAccount(Ljava/lang/String;Landroid/content/Context;)Landroid/accounts/Account;
 
@@ -895,8 +842,6 @@
 
 .method private isBillingEnabledForAccount(Landroid/accounts/Account;I)Z
     .locals 1
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -921,8 +866,6 @@
 
 .method private isBillingEnabledForPackage(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->getPreferredAccount(Ljava/lang/String;)Landroid/accounts/Account;
 
@@ -937,9 +880,6 @@
 
 .method private isDocumentInLibrary(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p3}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->getPreferredAccount(Ljava/lang/String;)Landroid/accounts/Account;
 
@@ -982,9 +922,6 @@
 
 .method public static varargs logEvent(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     sget-boolean v0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->DEBUG:Z
 
@@ -1026,8 +963,6 @@
 
 .method public static logResponseBundle(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1061,8 +996,6 @@
 
 .method public static logResponseCode(Ljava/lang/String;Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
     const-string v0, "Response code: %s"
 
@@ -1081,11 +1014,6 @@
 
 .method private makePurchaseIntent(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->getPreferredAccount(Ljava/lang/String;)Landroid/accounts/Account;
 
@@ -1142,8 +1070,6 @@
 
 .method private performIabPromoCheck(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v11, 0x1
 
@@ -1249,10 +1175,6 @@
 
 .method private populatePurchasesForPackage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->getPreferredAccount(Ljava/lang/String;)Landroid/accounts/Account;
 
@@ -1452,7 +1374,6 @@
 
 .method private static positionToToken(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1487,7 +1408,6 @@
 
 .method private static tokenToPosition(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/String;
 
@@ -1532,7 +1452,6 @@
 
 .method private validatePackageName(Ljava/lang/String;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1614,7 +1533,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->mBinder:Lcom/google/android/finsky/billing/iab/InAppBillingService$Stub;
 

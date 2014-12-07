@@ -30,8 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/config/PreferenceFile;Ljava/lang/String;Ljava/lang/Boolean;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/google/android/finsky/config/PreferenceFile$7;->this$0:Lcom/google/android/finsky/config/PreferenceFile;
 
@@ -44,7 +42,6 @@
 # virtual methods
 .method protected valueWithKey(Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

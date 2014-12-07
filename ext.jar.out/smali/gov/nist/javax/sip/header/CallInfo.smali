@@ -74,7 +74,6 @@
 
 .method protected encodeBody(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p1    # Ljava/lang/StringBuffer;
 
     const-string v0, "<"
 
@@ -134,7 +133,6 @@
 
 .method public setInfo(Ljavax/sip/address/URI;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 
@@ -145,7 +143,6 @@
 
 .method public setPurpose(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

@@ -144,7 +144,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/BubbleTypePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BubbleTypePicker;->mIsSentAnimating:Z
 
@@ -153,7 +152,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/BubbleTypePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BubbleTypePicker;->mIsRecAnimating:Z
 
@@ -162,8 +160,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/BubbleTypePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BubbleTypePicker;->saveBubbleSentStyle(I)V
 
@@ -172,8 +168,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/BubbleTypePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BubbleTypePicker;->saveBubbleReceiveStyle(I)V
 
@@ -182,7 +176,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/BubbleTypePicker;)[Lcom/android/mms/ui/BubbleTypePicker$ImageAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     iget-object v0, p0, Lcom/android/mms/ui/BubbleTypePicker;->mImageAdapter:[Lcom/android/mms/ui/BubbleTypePicker$ImageAdapter;
 
@@ -191,7 +184,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/BubbleTypePicker;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BubbleTypePicker;->setScrollPosition()V
 
@@ -200,7 +192,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/BubbleTypePicker;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BubbleTypePicker;->setScrollPositionVertical()V
 
@@ -209,7 +200,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/BubbleTypePicker;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     iget-object v0, p0, Lcom/android/mms/ui/BubbleTypePicker;->mMenuSave:Landroid/view/MenuItem;
 
@@ -218,7 +208,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/BubbleTypePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BubbleTypePicker;->MoveToSelectedSent:Z
 
@@ -227,8 +216,6 @@
 
 .method static synthetic access$802(Lcom/android/mms/ui/BubbleTypePicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BubbleTypePicker;->MoveToSelectedSent:Z
 
@@ -237,7 +224,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/BubbleTypePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BubbleTypePicker;->MoveToSelectedReceive:Z
 
@@ -246,8 +232,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/ui/BubbleTypePicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BubbleTypePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BubbleTypePicker;->MoveToSelectedReceive:Z
 
@@ -256,7 +240,6 @@
 
 .method private makeBubbleVertical(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x3
 
@@ -392,7 +375,6 @@
 
 .method private saveBubbleReceiveStyle(I)V
     .locals 5
-    .param p1    # I
 
     sget-object v3, Lcom/android/mms/ui/BubbleTypePicker;->BUBBLE_RECEIVE_STYLE_ID:[I
 
@@ -443,7 +425,6 @@
 
 .method private saveBubbleSentStyle(I)V
     .locals 5
-    .param p1    # I
 
     sget-object v3, Lcom/android/mms/ui/BubbleTypePicker;->BUBBLE_SEND_STYLE_ID:[I
 
@@ -494,8 +475,6 @@
 
 .method private setImageView(ILandroid/widget/AdapterView;Landroid/view/View;)V
     .locals 7
-    .param p1    # I
-    .param p3    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -641,7 +620,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x0
 
@@ -658,7 +636,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -759,8 +736,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 

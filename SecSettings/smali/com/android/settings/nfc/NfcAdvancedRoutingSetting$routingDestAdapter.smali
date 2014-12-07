@@ -67,7 +67,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/nfc/NfcAdvancedRoutingSetting;Landroid/content/Context;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -144,7 +143,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter;->Title:Ljava/util/ArrayList;
 
@@ -153,7 +151,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcAdvancedRoutingSetting$routingDestAdapter;->Id_list:Ljava/util/ArrayList;
 
@@ -164,9 +161,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 

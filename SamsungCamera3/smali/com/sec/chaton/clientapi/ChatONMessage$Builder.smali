@@ -116,7 +116,6 @@
 
 .method public setAction(Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->action:Ljava/lang/String;
 
@@ -125,7 +124,6 @@
 
 .method public setApiVer(Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->apiver:Ljava/lang/String;
 
@@ -134,7 +132,6 @@
 
 .method public setAppName(Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->appName:Ljava/lang/String;
 
@@ -164,7 +161,6 @@
 
 .method public setAppVer(Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->appVersion:Ljava/lang/String;
 
@@ -173,7 +169,6 @@
 
 .method public setContentType(Lcom/sec/chaton/clientapi/ChatONMessage$contentType;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Lcom/sec/chaton/clientapi/ChatONMessage$contentType;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->type:Lcom/sec/chaton/clientapi/ChatONMessage$contentType;
 
@@ -182,7 +177,6 @@
 
 .method public setContext(Landroid/content/Context;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->context:Landroid/content/Context;
 
@@ -191,7 +185,6 @@
 
 .method public setEncoding(Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->encoding:Ljava/lang/String;
 
@@ -200,7 +193,6 @@
 
 .method public setMimeType(Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->mimeType:Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
 
@@ -209,7 +201,6 @@
 
 .method public setMsg(Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->msg:Ljava/lang/String;
 
@@ -218,7 +209,6 @@
 
 .method public setRecipients([Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     iget-object v1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->recipients:Ljava/util/List;
 
@@ -270,7 +260,6 @@
 
 .method public setRequiredAccessToken(Z)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->requiredAccessToken:Z
 
@@ -279,7 +268,6 @@
 
 .method public setUri(Ljava/lang/String;)Lcom/sec/chaton/clientapi/ChatONMessage$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/chaton/clientapi/ChatONMessage$Builder;->uri:Ljava/lang/String;
 

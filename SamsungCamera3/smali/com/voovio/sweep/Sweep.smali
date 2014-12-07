@@ -138,8 +138,6 @@
 
 .method public static final TradeOffHeuristic(Lcom/voovio/voo3d/data/Vector3;F)Lcom/voovio/voo3d/data/Vector3;
     .locals 6
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # F
 
     const/high16 v5, 0x43960000
 
@@ -235,7 +233,6 @@
 
 .method private appendVoovio([B)V
     .locals 6
-    .param p1    # [B
 
     new-instance v0, Lcom/voovio/sweep/Voovio;
 
@@ -276,8 +273,6 @@
 
 .method private static checkInputs([[B[Lcom/voovio/sweep/Template;)Lcom/voovio/geometry/Point;
     .locals 8
-    .param p0    # [[B
-    .param p1    # [Lcom/voovio/sweep/Template;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/voovio/sweep/SweepException;
@@ -404,11 +399,6 @@
 
 .method public static final createSweep([[BI[Lcom/voovio/sweep/Template;[Lcom/voovio/voo3d/data/Vector3;[F)Lcom/voovio/sweep/Sweep;
     .locals 15
-    .param p0    # [[B
-    .param p1    # I
-    .param p2    # [Lcom/voovio/sweep/Template;
-    .param p3    # [Lcom/voovio/voo3d/data/Vector3;
-    .param p4    # [F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/voovio/sweep/SweepException;
@@ -781,7 +771,6 @@
 # virtual methods
 .method adjustAngle(F)F
     .locals 12
-    .param p1    # F
 
     const/high16 v11, 0x3f000000
 
@@ -909,7 +898,6 @@
 
 .method append([B)V
     .locals 3
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Lcom/voovio/sweep/Sweep;->appendVoovio([B)V
 
@@ -940,8 +928,6 @@
 
 .method appendFromAngle([BF)V
     .locals 8
-    .param p1    # [B
-    .param p2    # F
 
     const/4 v7, 0x1
 
@@ -1010,9 +996,6 @@
 
 .method appendFromTemplate([BLcom/voovio/sweep/Template;F)V
     .locals 7
-    .param p1    # [B
-    .param p2    # Lcom/voovio/sweep/Template;
-    .param p3    # F
 
     const/4 v6, 0x1
 
@@ -1097,9 +1080,6 @@
 
 .method appendFromTranslation([BLcom/voovio/voo3d/data/Vector3;F)V
     .locals 7
-    .param p1    # [B
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # F
 
     const/4 v6, 0x1
 
@@ -1170,10 +1150,6 @@
 
 .method appendFromTurnMatchingData([BFFF)V
     .locals 20
-    .param p1    # [B
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-static/range {p3 .. p3}, Ljava/lang/Math;->abs(F)F
 
@@ -1647,7 +1623,6 @@
 
 .method getNeighbours(Lcom/voovio/sweep/Voovio;Ljava/util/ArrayList;)V
     .locals 8
-    .param p1    # Lcom/voovio/sweep/Voovio;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2253,7 +2228,6 @@
 
 .method public getTransition(I)Lcom/voovio/sweep/Transition;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/Sweep;->m_aTransitions:Ljava/util/ArrayList;
 

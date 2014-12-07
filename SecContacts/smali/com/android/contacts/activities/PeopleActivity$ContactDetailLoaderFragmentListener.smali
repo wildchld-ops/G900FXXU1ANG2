@@ -42,7 +42,6 @@
 
 .method public onDeleteRequested(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity$ContactDetailLoaderFragmentListener;->this$0:Lcom/android/contacts/activities/PeopleActivity;
 
@@ -55,7 +54,6 @@
 
 .method public onDetailsLoaded(Lcom/android/contacts/model/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     if-nez p1, :cond_0
 
@@ -90,14 +88,12 @@
 
 .method public onRcsCapsLoaded(Lcom/samsung/contacts/model/rcs/RcsCaps;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/model/rcs/RcsCaps;
 
     return-void
 .end method
 
 .method public onSnsFeedsLoaded(Lcom/samsung/contacts/model/SnsFeeds;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/model/SnsFeeds;
 
     return-void
 .end method

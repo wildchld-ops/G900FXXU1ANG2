@@ -65,8 +65,6 @@
 
 .method public setDensity(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/TactileAssist;->mService:Landroid/os/ITactileAssistService;
@@ -96,7 +94,6 @@
 
 .method public setEnable(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     const-string v1, "TactileAssist"
@@ -148,7 +145,6 @@
 
 .method public setInternalEnable(Z)Z
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/TactileAssist;->mService:Landroid/os/ITactileAssistService;
@@ -178,7 +174,6 @@
 
 .method public setLevel(I)Z
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/TactileAssist;->mService:Landroid/os/ITactileAssistService;
@@ -208,8 +203,6 @@
 
 .method public setSharpness(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/TactileAssist;->mService:Landroid/os/ITactileAssistService;
@@ -239,8 +232,6 @@
 
 .method public setStrength(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/TactileAssist;->mService:Landroid/os/ITactileAssistService;

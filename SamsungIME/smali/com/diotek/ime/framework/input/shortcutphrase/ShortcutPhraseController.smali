@@ -88,7 +88,6 @@
 
 .method public static isSingleDigitNumber(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x30
 
@@ -150,7 +149,6 @@
 # virtual methods
 .method public checkEmptyNumberKey(Lcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v3, 0x0
 
@@ -236,7 +234,6 @@
 
 .method public commitShortCutPhrase(I)V
     .locals 5
-    .param p1    # I
 
     const-string v1, ""
 
@@ -365,8 +362,6 @@
 
 .method public setShortCutPhrase(Ljava/lang/String;Lcom/diotek/ime/framework/view/Keyboard$Key;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v10, 0x0
 

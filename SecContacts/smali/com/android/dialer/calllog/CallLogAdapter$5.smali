@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogAdapter$5;->this$0:Lcom/android/dialer/calllog/CallLogAdapter;
 

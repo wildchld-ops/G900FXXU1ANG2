@@ -42,8 +42,6 @@
 
 .method public constructor <init>(Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest;Lorg/apache/http/HttpRequest;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest;
-    .param p2    # Lorg/apache/http/HttpRequest;
 
     const/4 v1, 0x0
 
@@ -110,7 +108,6 @@
 # virtual methods
 .method protected handleUnauthorizedRes(Lorg/apache/http/HttpResponse;)Lorg/apache/http/HttpResponse;
     .locals 31
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/16 v22, 0x0
 

@@ -55,10 +55,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILcom/nuance/connect/internal/common/ConnectAccount$CreationMethod;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Lcom/nuance/connect/internal/common/ConnectAccount$CreationMethod;
 
     const/4 v1, 0x0
 
@@ -93,7 +89,6 @@
 
 .method private setIdentifier(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -155,7 +150,6 @@
 # virtual methods
 .method public addDevice(Lcom/nuance/connect/internal/common/ConnectAccount$AccountDevice;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/internal/common/ConnectAccount$AccountDevice;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/common/ConnectAccount;->devices:Ljava/util/Map;
 
@@ -392,7 +386,6 @@
 
 .method public setAccountId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/common/ConnectAccount;->accountId:Ljava/lang/String;
 
@@ -401,7 +394,6 @@
 
 .method public setAccountState(Lcom/nuance/connect/internal/common/ConnectAccount$AccountState;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/internal/common/ConnectAccount$AccountState;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/common/ConnectAccount;->accountState:Lcom/nuance/connect/internal/common/ConnectAccount$AccountState;
 
@@ -410,7 +402,6 @@
 
 .method public setDeviceCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/internal/common/ConnectAccount;->deviceCount:I
 
@@ -419,7 +410,6 @@
 
 .method public setExistsOnServer(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/internal/common/ConnectAccount;->existsOnServer:Z
 

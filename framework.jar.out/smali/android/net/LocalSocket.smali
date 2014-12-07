@@ -43,7 +43,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -62,8 +61,6 @@
 
 .method constructor <init>(Landroid/net/LocalSocketImpl;I)V
     .locals 1
-    .param p1    # Landroid/net/LocalSocketImpl;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -82,7 +79,6 @@
 
 .method public constructor <init>(Ljava/io/FileDescriptor;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -170,7 +166,6 @@
 # virtual methods
 .method public bind(Landroid/net/LocalSocketAddress;)V
     .locals 2
-    .param p1    # Landroid/net/LocalSocketAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -243,7 +238,6 @@
 
 .method public connect(Landroid/net/LocalSocketAddress;)V
     .locals 2
-    .param p1    # Landroid/net/LocalSocketAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -301,8 +295,6 @@
 
 .method public connect(Landroid/net/LocalSocketAddress;I)V
     .locals 1
-    .param p1    # Landroid/net/LocalSocketAddress;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -569,7 +561,6 @@
 
 .method public setFileDescriptorsForSend([Ljava/io/FileDescriptor;)V
     .locals 1
-    .param p1    # [Ljava/io/FileDescriptor;
 
     iget-object v0, p0, Landroid/net/LocalSocket;->impl:Landroid/net/LocalSocketImpl;
 
@@ -580,7 +571,6 @@
 
 .method public setReceiveBufferSize(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -602,7 +592,6 @@
 
 .method public setSendBufferSize(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -624,7 +613,6 @@
 
 .method public setSoTimeout(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

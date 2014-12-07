@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -35,9 +34,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -145,7 +141,6 @@
 
 .method public getGroupInfo(I)Lcom/samsung/contacts/group/GroupInfo;
     .locals 9
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/group/SubGroupBrowseListAdapter;->mCursor:Landroid/database/Cursor;
 
@@ -223,9 +218,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -284,7 +276,6 @@
 
 .method public swapCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/SubGroupBrowseListAdapter;->mCursor:Landroid/database/Cursor;
 

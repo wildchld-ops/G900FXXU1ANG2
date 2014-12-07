@@ -81,7 +81,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -92,8 +91,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/DfeModel;-><init>()V
 
@@ -138,8 +135,6 @@
 
 .method protected constructor <init>(Ljava/util/List;IZ)V
     .locals 3
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -175,7 +170,6 @@
 
 .method private requestMoreItemsIfNoRequestExists(Lcom/google/android/finsky/api/model/PaginatedList$UrlOffsetPair;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/PaginatedList$UrlOffsetPair;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/PaginatedList;->inErrorState()Z
 
@@ -228,7 +222,6 @@
 
 .method private updateItemsUntilEndCount(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/api/model/PaginatedList;->mItemsUntilEndCount:I
 
@@ -259,7 +252,6 @@
 # virtual methods
 .method public clearDataAndReplaceInitialUrl(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/PaginatedList;->mUrlOffsetList:Ljava/util/List;
 
@@ -359,7 +351,6 @@
 
 .method public final getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TD;"
@@ -377,8 +368,6 @@
 
 .method public final getItem(IZ)Ljava/lang/Object;
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)TD;"
@@ -627,7 +616,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/PaginatedList;->clearTransientState()V
 
@@ -910,7 +898,6 @@
 
 .method public setWindowDistance(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/api/model/PaginatedList;->mWindowDistance:I
 

@@ -50,7 +50,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/Object;
     .locals 21
-    .param p1    # [Ljava/lang/Integer;
 
     const/16 v17, 0x0
 
@@ -746,7 +745,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -759,7 +757,6 @@
 
 .method protected onPostExecute(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -828,7 +825,6 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # [Ljava/lang/Integer;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogFragment$PerformScan;->this$0:Lcom/android/dialer/calllog/CallLogFragment;
 
@@ -864,7 +860,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

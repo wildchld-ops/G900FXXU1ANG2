@@ -26,9 +26,6 @@
 
 .method public static getIntent(ILcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 1
-    .param p0    # I
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;
-    .param p2    # Landroid/os/Bundle;
 
     const-class v0, Lcom/google/android/finsky/activities/AddressChallengeActivity;
 
@@ -41,9 +38,6 @@
 
 .method protected static getIntent(Ljava/lang/Class;ILcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -89,7 +83,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/ChallengeActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -168,7 +161,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -197,7 +189,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/ChallengeActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

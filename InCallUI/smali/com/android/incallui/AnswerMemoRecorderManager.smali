@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     const/4 v2, 0x0
 
@@ -73,7 +72,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/AnswerMemoRecorderManager;)Lcom/android/phone/IAnswerMemoRecorderServiceCallback;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mRecorderCallback:Lcom/android/phone/IAnswerMemoRecorderServiceCallback;
 
@@ -82,8 +80,6 @@
 
 .method static synthetic access$102(Lcom/android/incallui/AnswerMemoRecorderManager;Lcom/android/phone/IAnswerMemoRecorderServiceCallback;)Lcom/android/phone/IAnswerMemoRecorderServiceCallback;
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
-    .param p1    # Lcom/android/phone/IAnswerMemoRecorderServiceCallback;
 
     iput-object p1, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mRecorderCallback:Lcom/android/phone/IAnswerMemoRecorderServiceCallback;
 
@@ -92,7 +88,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/AnswerMemoRecorderManager;)Lcom/android/phone/IAnswerMemoRecorderService;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mRecorderSrv:Lcom/android/phone/IAnswerMemoRecorderService;
 
@@ -101,8 +96,6 @@
 
 .method static synthetic access$302(Lcom/android/incallui/AnswerMemoRecorderManager;Lcom/android/phone/IAnswerMemoRecorderService;)Lcom/android/phone/IAnswerMemoRecorderService;
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
-    .param p1    # Lcom/android/phone/IAnswerMemoRecorderService;
 
     iput-object p1, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mRecorderSrv:Lcom/android/phone/IAnswerMemoRecorderService;
 
@@ -111,7 +104,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/AnswerMemoRecorderManager;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
 
     iget-boolean v0, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mIsRecording:Z
 
@@ -120,8 +112,6 @@
 
 .method static synthetic access$402(Lcom/android/incallui/AnswerMemoRecorderManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mIsRecording:Z
 
@@ -130,7 +120,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/AnswerMemoRecorderManager;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
 
     iget-boolean v0, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mIsPaused:Z
 
@@ -139,8 +128,6 @@
 
 .method static synthetic access$502(Lcom/android/incallui/AnswerMemoRecorderManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mIsPaused:Z
 
@@ -149,7 +136,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/AnswerMemoRecorderManager;)Lcom/android/incallui/InCallActivity;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerMemoRecorderManager;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerMemoRecorderManager;->mInCallActivity:Lcom/android/incallui/InCallActivity;
 

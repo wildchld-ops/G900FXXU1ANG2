@@ -110,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/InCallActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallActivity;
 
     iget-boolean v0, p0, Lcom/android/incallui/InCallActivity;->mIsForegroundActivity:Z
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/InCallActivity;)Landroid/app/StatusBarManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallActivity;
 
     iget-object v0, p0, Lcom/android/incallui/InCallActivity;->mStatusBarManager:Landroid/app/StatusBarManager;
 
@@ -128,7 +126,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/InCallActivity;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallActivity;
 
     iget-object v0, p0, Lcom/android/incallui/InCallActivity;->mPowerManager:Landroid/os/PowerManager;
 
@@ -137,7 +134,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/InCallActivity;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallActivity;
 
     invoke-direct {p0}, Lcom/android/incallui/InCallActivity;->onDialogDismissed()V
 
@@ -146,9 +142,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/InCallActivity;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallActivity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/InCallActivity;->divertToVoiceCall(Ljava/lang/String;Z)V
 
@@ -892,7 +885,6 @@
 
 .method private isScreenTypeSensor(Landroid/content/res/Configuration;)Z
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x0
 
@@ -964,7 +956,6 @@
 
 .method private relaunchedFromDialer(Z)V
     .locals 4
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/InCallActivity;->mShowDialpadRequested:Z
 
@@ -1676,7 +1667,6 @@
 
 .method private showIMSErrorToast(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/incallui/InCallUtils;->showToastLong(Ljava/lang/String;)V
 
@@ -1706,7 +1696,6 @@
 
 .method private startAutoAnsTimer(I)V
     .locals 6
-    .param p1    # I
 
     const-string v0, "startAutoAnsTimer "
 
@@ -2160,7 +2149,6 @@
 
 .method public dismissKeyguard(Z)V
     .locals 2
-    .param p1    # Z
 
     const/high16 v1, 0x400000
 
@@ -2277,7 +2265,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v0, p0, Lcom/android/incallui/InCallActivity;->mCallCardFragmentManager:Lcom/android/incallui/CallCardFragmentManager;
 
@@ -2305,7 +2292,6 @@
 
 .method public displayDialpad(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -2616,7 +2602,6 @@
 
 .method public displayManageConferencePanel(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -2775,7 +2760,6 @@
 
 .method protected getProperOrientation(Landroid/content/res/Configuration;)I
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -2860,7 +2844,6 @@
 
 .method public handleCshInfo(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "ims_rcs"
 
@@ -3132,7 +3115,6 @@
 
 .method public handleIncommingIMandFT(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "ims_rcs"
 
@@ -3168,8 +3150,6 @@
 
 .method public handleInvitation(ZLandroid/content/Intent;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "ims_rcs"
 
@@ -4144,7 +4124,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x3
 
@@ -5868,7 +5847,6 @@
 
 .method public onSizeChanged(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     return-void
 .end method
@@ -6253,7 +6231,6 @@
 
 .method public onZoneChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -6324,7 +6301,6 @@
 
 .method public setInCallMenuInstacne(Lcom/android/incallui/InCallMenu;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/InCallMenu;
 
     iput-object p1, p0, Lcom/android/incallui/InCallActivity;->mInCallMenu:Lcom/android/incallui/InCallMenu;
 
@@ -6333,7 +6309,6 @@
 
 .method public setPrimaryCallElapsedTimeForDialpad(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/InCallActivity;->mDialpadFragmentManager:Lcom/android/incallui/DialpadFragmentManager;
 
@@ -6361,7 +6336,6 @@
 
 .method public setStatusBar(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -6439,7 +6413,6 @@
 
 .method public setUpRcsCallCard(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -6624,8 +6597,6 @@
 
 .method public updatePhotoringState(Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;I)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/incallui/InCallActivity;->mCallCardFragmentManager:Lcom/android/incallui/CallCardFragmentManager;
 

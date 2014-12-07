@@ -30,8 +30,6 @@
 # virtual methods
 .method public put(Ljava/lang/String;Lcom/android/contacts/quickcontact/Action;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/contacts/quickcontact/Action;
 
     const/4 v0, 0x0
 
@@ -42,9 +40,6 @@
 
 .method public put(Ljava/lang/String;Lcom/android/contacts/quickcontact/Action;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/contacts/quickcontact/Action;
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

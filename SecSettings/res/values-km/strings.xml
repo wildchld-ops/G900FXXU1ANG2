@@ -1370,7 +1370,7 @@ Wi-Fi និង ហត់ស្ពត់​ចល័ត មិន​អាច​
     <string name="usb_tethering_errored_subtext">កំហុស​ចំណង USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">មិន​អាច​បិទ​ចំណង USB ខណៈពេល​កំពុង​ប្រើ SideSync។ ការបិទ​ចំណង USB នឹង​បិទ SideSync។</string>
     <string name="usb_tethering_off_during_sidesync_popup">មិន​អាច​បើកប្រើ​ចំណង USB ខណៈពេល​កំពុង​ប្រើ SideSync។ ការបើកប្រើ​ចំណង USB នឹង​បិទ SideSync។</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>ចំណង Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>ចំណង Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">កំពុង​ចែក​រំលែក​ការភ្ជាប់​អ៊ីនធឺណិត​របស់​ឧបករណ៍​នេះ…</string>
     <string name="bluetooth_tethering_device_connected_subtext">បាន​ចែក​រំលែក​ការភ្ជាប់​អ៊ីនធឺណិត​របស់​ឧបករណ៍​ជាមួយ​ឧបករណ៍ 1</string>
     <string name="bluetooth_tethering_devices_connected_subtext">បាន​ចែក​រំលែក​ការភ្ជាប់​អ៊ីនធឺណិត​របស់​ឧបករណ៍​ជាមួយ​ឧបករណ៍ %d</string>

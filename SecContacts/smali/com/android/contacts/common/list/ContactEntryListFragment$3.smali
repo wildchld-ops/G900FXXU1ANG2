@@ -36,7 +36,6 @@
 # virtual methods
 .method public onIndexSelected(I)V
     .locals 11
-    .param p1    # I
 
     const/16 v10, 0x13
 

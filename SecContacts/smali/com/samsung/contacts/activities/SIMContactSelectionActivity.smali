@@ -144,7 +144,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mMode:I
 
@@ -153,7 +152,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->simcopycallfromAAB:Z
 
@@ -162,8 +160,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mMode:I
 
@@ -172,7 +168,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mCanceled:Z
 
@@ -181,8 +176,6 @@
 
 .method static synthetic access$1102(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mCanceled:Z
 
@@ -191,7 +184,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -200,7 +192,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->showConfirmationDialog:Z
 
@@ -209,7 +200,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Lcom/android/contacts/common/preference/ContactsPreferences;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mContactsPrefs:Lcom/android/contacts/common/preference/ContactsPreferences;
 
@@ -218,7 +208,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mActionCode:I
 
@@ -227,7 +216,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Landroid/accounts/Account;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mAccount:Landroid/accounts/Account;
 
@@ -236,7 +224,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ImportTask;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mImportTask:Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ImportTask;
 
@@ -245,8 +232,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ImportTask;)Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ImportTask;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ImportTask;
 
     iput-object p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mImportTask:Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ImportTask;
 
@@ -255,7 +240,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ExportTask;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mExportTask:Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ExportTask;
 
@@ -264,8 +248,6 @@
 
 .method static synthetic access$502(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ExportTask;)Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ExportTask;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ExportTask;
 
     iput-object p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mExportTask:Lcom/samsung/contacts/activities/SIMContactSelectionActivity$ExportTask;
 
@@ -274,7 +256,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Lcom/samsung/contacts/activities/SIMContactSelectionActivity$DeleteTask;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mDeleteTask:Lcom/samsung/contacts/activities/SIMContactSelectionActivity$DeleteTask;
 
@@ -283,8 +264,6 @@
 
 .method static synthetic access$602(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Lcom/samsung/contacts/activities/SIMContactSelectionActivity$DeleteTask;)Lcom/samsung/contacts/activities/SIMContactSelectionActivity$DeleteTask;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity$DeleteTask;
 
     iput-object p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mDeleteTask:Lcom/samsung/contacts/activities/SIMContactSelectionActivity$DeleteTask;
 
@@ -293,7 +272,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mSelectedCount:I
 
@@ -302,8 +280,6 @@
 
 .method static synthetic access$702(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mSelectedCount:I
 
@@ -312,8 +288,6 @@
 
 .method static synthetic access$802(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mTotalCount:I
 
@@ -322,7 +296,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mDoneButtonClickable:Z
 
@@ -331,8 +304,6 @@
 
 .method static synthetic access$902(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mDoneButtonClickable:Z
 
@@ -420,7 +391,6 @@
 
 .method private adjustActionBarMenuText(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->invalidateOptionsMenu()V
 
@@ -860,9 +830,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, -0x1
 
@@ -894,7 +861,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/android/contacts/common/list/ContactEntryListFragment;
 
@@ -991,7 +957,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1002,7 +967,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x1
 
@@ -1284,7 +1248,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1372,7 +1335,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -1529,7 +1491,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const-string v0, "SIMContactSelectionActivity"
 
@@ -1550,7 +1511,6 @@
 
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1587,7 +1547,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mSearchView:Landroid/widget/SearchView;
 
@@ -1609,7 +1568,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1642,7 +1600,6 @@
 
 .method protected setButtonClickable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;->mDoneButtonClickable:Z
 
@@ -1723,9 +1680,6 @@
 
 .method public showAlertDialogAndFinish(Landroid/content/Context;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 

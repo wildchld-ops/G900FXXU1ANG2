@@ -116,7 +116,6 @@
 
 .method public constructor <init>(Lcom/voovio/sweep/Sweep;)V
     .locals 4
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     const/4 v3, 0x0
 
@@ -467,11 +466,6 @@
 
 .method public CreateDefaultFrontal(FIIII)V
     .locals 4
-    .param p1    # F
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v3, 0x0
 
@@ -596,8 +590,6 @@
 
 .method public IsTransitionRegistered(Lcom/voovio/sweep/Transition;I)Z
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Transition;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/Voovio;->m_aTransitions:[Lcom/voovio/sweep/Transition;
 
@@ -618,8 +610,6 @@
 
 .method public RegisterTransition(Lcom/voovio/sweep/Transition;I)V
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Transition;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/voovio/sweep/Voovio;->IsTransitionRegistered(Lcom/voovio/sweep/Transition;I)Z
 
@@ -637,7 +627,6 @@
 
 .method public UnRegisterTransition(Lcom/voovio/sweep/Transition;)V
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Transition;
 
     const/4 v0, 0x0
 
@@ -669,8 +658,6 @@
 
 .method public cameraDistanceFromVoovioOrigin(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Matrix4;)F
     .locals 4
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Matrix4;
 
     invoke-virtual {p1}, Lcom/voovio/voo3d/data/Vector3;->clone()Lcom/voovio/voo3d/data/Vector3;
 
@@ -801,8 +788,6 @@
 
 .method public draw(Ljavax/microedition/khronos/opengles/GL10;F)V
     .locals 1
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -813,9 +798,6 @@
 
 .method public draw(Ljavax/microedition/khronos/opengles/GL10;F[F)V
     .locals 1
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # F
-    .param p3    # [F
 
     invoke-static {}, Landroid/opengl/GLES11;->glPushMatrix()V
 

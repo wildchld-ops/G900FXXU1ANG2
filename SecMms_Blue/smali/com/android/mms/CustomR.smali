@@ -20,7 +20,6 @@
 
 .method public static getResourceId(I)I
     .locals 4
-    .param p0    # I
 
     const/4 v3, 0x0
 

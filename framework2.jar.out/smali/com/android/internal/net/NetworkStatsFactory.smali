@@ -36,7 +36,6 @@
 
 .method public constructor <init>(Ljava/io/File;)V
     .locals 2
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,8 +68,6 @@
 
 .method public static javaReadNetworkStatsDetail(Ljava/io/File;I)Landroid/net/NetworkStats;
     .locals 11
-    .param p0    # Ljava/io/File;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -354,8 +351,6 @@
 # virtual methods
 .method public assertEquals(Landroid/net/NetworkStats;Landroid/net/NetworkStats;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStats;
-    .param p2    # Landroid/net/NetworkStats;
 
     invoke-virtual {p1}, Landroid/net/NetworkStats;->size()I
 
@@ -509,7 +504,6 @@
 
 .method public readNetworkStatsDetail(I)Landroid/net/NetworkStats;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/group/GroupChangeOrderListFragment;Landroid/content/Context;I)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupChangeOrderListFragment$ReOrderListAdapter;->this$0:Lcom/samsung/contacts/group/GroupChangeOrderListFragment;
 
@@ -55,7 +53,6 @@
 # virtual methods
 .method public allowDrag(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -64,8 +61,6 @@
 
 .method public allowDrop(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -74,8 +69,6 @@
 
 .method public dropDone(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/group/GroupChangeOrderListFragment$ReOrderListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -103,9 +96,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 

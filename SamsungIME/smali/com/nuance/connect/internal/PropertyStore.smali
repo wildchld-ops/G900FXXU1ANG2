@@ -313,7 +313,6 @@
 # virtual methods
 .method public addListener(Ljava/lang/String;Lcom/nuance/connect/internal/Property$ValueListener;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -369,7 +368,6 @@
 
 .method public getBoolean(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/PropertyStore;->properties:Ljava/util/HashMap;
 
@@ -402,7 +400,6 @@
 
 .method public getInteger(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/PropertyStore;->properties:Ljava/util/HashMap;
 
@@ -435,7 +432,6 @@
 
 .method public getProperty(Ljava/lang/String;)Lcom/nuance/connect/internal/Property;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -459,7 +455,6 @@
 
 .method public getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/PropertyStore;->properties:Ljava/util/HashMap;
 

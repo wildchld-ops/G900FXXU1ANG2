@@ -121,7 +121,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     const/4 v4, 0x0
 
@@ -240,7 +239,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/DLMServiceInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/DLMServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -249,8 +247,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/DLMServiceInternal;Lcom/nuance/connect/location/SwypeLocation;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/DLMServiceInternal;
-    .param p1    # Lcom/nuance/connect/location/SwypeLocation;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/DLMServiceInternal;->processLocationUpate(Lcom/nuance/connect/location/SwypeLocation;)V
 
@@ -259,7 +255,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/DLMServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/DLMServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/DLMServiceInternal;->getLocationFrequencyUpdate()V
 
@@ -276,7 +271,6 @@
 
 .method private deleteFile(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -308,7 +302,6 @@
 
 .method private enableLocation(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -437,9 +430,6 @@
 
 .method private onDlmEvent(ILjava/lang/String;J)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/DLMServiceInternal;->dlmSyncAllowed()Z
 
@@ -573,9 +563,6 @@
 
 .method private onHighPriorityDlmEvent(ILjava/lang/String;J)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/DLMServiceInternal;->dlmSyncAllowed()Z
 
@@ -635,7 +622,6 @@
 
 .method private processFile(Ljava/lang/String;)Ljava/util/List;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -780,7 +766,6 @@
 
 .method private processLocationUpate(Lcom/nuance/connect/location/SwypeLocation;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/location/SwypeLocation;
 
     const-string v2, ""
 
@@ -941,7 +926,6 @@
 # virtual methods
 .method backupDlm(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1015,7 +999,6 @@
 
 .method public onBeginBackup(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/util/LinkedList;
 
@@ -1054,10 +1037,6 @@
 
 .method public onDlmEvent(ILjava/lang/String;JZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
 
     if-eqz p5, :cond_0
 
@@ -1120,8 +1099,6 @@
 
 .method public onReset(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1142,7 +1119,6 @@
 
 .method processDLMCategory(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1266,8 +1242,6 @@
 
 .method processDlmDelete(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v5, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->allDlmYielding:Z
 
@@ -1430,8 +1404,6 @@
 
 .method processDlmEvents(ILjava/lang/String;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v8, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1769,9 +1741,6 @@
 
 .method recordDLMDeleteCategory(III)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1914,10 +1883,6 @@
 
 .method recordDLMRecordset(ILjava/lang/String;ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -2028,8 +1993,6 @@
 
 .method public registerDlmCallback(ILcom/nuance/connect/api/DLMService$DlmEventCallback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/nuance/connect/api/DLMService$DlmEventCallback;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->eventCallbacks:Landroid/util/SparseArray;
 
@@ -2050,7 +2013,6 @@
 
 .method public resume(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->dlmYielding:Landroid/util/SparseBooleanArray;
 
@@ -2069,7 +2031,6 @@
 
 .method public unregisterDlmCallback(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->eventCallbacks:Landroid/util/SparseArray;
 
@@ -2148,7 +2109,6 @@
 
 .method public yield(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/DLMServiceInternal;->dlmYielding:Landroid/util/SparseBooleanArray;
 

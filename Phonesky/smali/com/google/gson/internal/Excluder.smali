@@ -194,7 +194,6 @@
 
 .method private isValidSince(Lcom/google/gson/annotations/Since;)Z
     .locals 4
-    .param p1    # Lcom/google/gson/annotations/Since;
 
     if-eqz p1, :cond_0
 
@@ -221,7 +220,6 @@
 
 .method private isValidUntil(Lcom/google/gson/annotations/Until;)Z
     .locals 4
-    .param p1    # Lcom/google/gson/annotations/Until;
 
     if-eqz p1, :cond_0
 
@@ -248,8 +246,6 @@
 
 .method private isValidVersion(Lcom/google/gson/annotations/Since;Lcom/google/gson/annotations/Until;)Z
     .locals 1
-    .param p1    # Lcom/google/gson/annotations/Since;
-    .param p2    # Lcom/google/gson/annotations/Until;
 
     invoke-direct {p0, p1}, Lcom/google/gson/internal/Excluder;->isValidSince(Lcom/google/gson/annotations/Since;)Z
 
@@ -317,7 +313,6 @@
 
 .method public create(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
     .locals 7
-    .param p1    # Lcom/google/gson/Gson;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -372,7 +367,6 @@
 
 .method public excludeClass(Ljava/lang/Class;Z)Z
     .locals 8
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -490,8 +484,6 @@
 
 .method public excludeField(Ljava/lang/reflect/Field;Z)Z
     .locals 10
-    .param p1    # Ljava/lang/reflect/Field;
-    .param p2    # Z
 
     const/4 v7, 0x1
 

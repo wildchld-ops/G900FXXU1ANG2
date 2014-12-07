@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Landroid/accounts/Account;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;-><init>(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;)V
 
@@ -16,7 +14,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/DetailsSummaryMusicViewBinder;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsSummaryMusicViewBinder;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/DetailsSummaryMusicViewBinder;->goToArtistPage()V
 

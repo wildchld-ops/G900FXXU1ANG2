@@ -179,7 +179,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/InteractionTabActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/InteractionTabActivity;->hideSoftKeyboard()V
 
@@ -188,8 +187,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/InteractionTabActivity;Ljava/util/concurrent/ConcurrentHashMap;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
-    .param p1    # Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionTabActivity;->getVcardName(Ljava/util/concurrent/ConcurrentHashMap;)Ljava/lang/String;
 
@@ -208,8 +205,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/interactions/InteractionTabActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity;->mSelectedCount:I
 
@@ -218,8 +213,6 @@
 
 .method static synthetic access$502(Lcom/samsung/contacts/interactions/InteractionTabActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity;->mTotalCount:I
 
@@ -228,7 +221,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/interactions/InteractionTabActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity;->mIsTablet:Z
 
@@ -237,7 +229,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/interactions/InteractionTabActivity;)Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity;->mFavoritesFragment:Lcom/samsung/contacts/interactions/InteractionContactTileListFragment;
 
@@ -246,7 +237,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/interactions/InteractionTabActivity;)Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity;->mRCSeFragment:Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
 
@@ -749,7 +739,6 @@
 
 .method private configureFragments(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "InteractionTabActivity"
 
@@ -1047,7 +1036,6 @@
 
 .method private createViewsAndMultipleFragments(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const v9, 0x7f080036
 
@@ -2259,8 +2247,6 @@
 
 .method private scrollTab(Landroid/app/ActionBar;I)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -2887,11 +2873,6 @@
 
 .method protected createInteractionActionBarAdapter(Landroid/content/Context;Landroid/app/ActionBar;IZLandroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActionBar;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 
@@ -2924,7 +2905,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -3082,7 +3062,6 @@
 
 .method protected getRequest(Landroid/content/Intent;)Lcom/android/contacts/list/ContactsRequest;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity;->mIntentResolver:Lcom/android/contacts/list/ContactsIntentResolver;
 
@@ -3435,7 +3414,6 @@
 
 .method protected makeResultString(Ljava/util/Map$Entry;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4007,7 +3985,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -4762,7 +4739,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -5345,7 +5321,6 @@
 
 .method public onSetCurrentTab(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/samsung/contacts/interactions/InteractionTabActivity;->setVisibilitySelectionMenu()V
 

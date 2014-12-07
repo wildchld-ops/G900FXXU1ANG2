@@ -25,7 +25,6 @@
 
 .method public constructor <init>(Lorg/apache/http/protocol/HttpContext;)V
     .locals 1
-    .param p1    # Lorg/apache/http/protocol/HttpContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public getAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -86,7 +84,6 @@
 
 .method public removeAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -120,8 +117,6 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 

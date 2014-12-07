@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 

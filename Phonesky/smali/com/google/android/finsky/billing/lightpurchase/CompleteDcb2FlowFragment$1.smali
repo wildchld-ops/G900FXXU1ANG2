@@ -40,7 +40,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment$1;->this$0:Lcom/google/android/finsky/billing/lightpurchase/CompleteDcb2FlowFragment;
 
@@ -59,7 +58,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/Toc$TocResponse;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/Toc$TocResponse;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 

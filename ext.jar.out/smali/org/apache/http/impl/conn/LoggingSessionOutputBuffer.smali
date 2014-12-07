@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionOutputBuffer;Lorg/apache/http/impl/conn/Wire;)V
     .locals 0
-    .param p1    # Lorg/apache/http/io/SessionOutputBuffer;
-    .param p2    # Lorg/apache/http/impl/conn/Wire;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +56,6 @@
 
 .method public write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -87,7 +84,6 @@
 
 .method public write([B)V
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -116,9 +112,6 @@
 
 .method public write([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -147,7 +140,6 @@
 
 .method public writeLine(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -194,7 +186,6 @@
 
 .method public writeLine(Lorg/apache/http/util/CharArrayBuffer;)V
     .locals 4
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

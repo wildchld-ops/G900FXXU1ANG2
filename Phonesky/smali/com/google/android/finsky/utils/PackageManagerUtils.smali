@@ -41,14 +41,6 @@
 
 .method public static callInstallEncrypted(Landroid/content/ContentResolver;Landroid/content/pm/PackageManager;Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;IJLjava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/pm/IPackageInstallObserver;
-    .param p4    # I
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -87,9 +79,6 @@
 
 .method public static freeStorageAndNotify(Landroid/content/Context;JLcom/google/android/finsky/utils/PackageManagerUtils$FreeSpaceListener;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Lcom/google/android/finsky/utils/PackageManagerUtils$FreeSpaceListener;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -106,11 +95,6 @@
 
 .method private static generateEncryptionParams(Landroid/content/ContentResolver;Landroid/net/Uri;JLjava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
     .locals 35
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/16 v3, 0x10
 
@@ -680,8 +664,6 @@
 
 .method public static installExistingPackage(Landroid/content/Context;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -701,13 +683,6 @@
 
 .method public static installPackage(Landroid/content/Context;Landroid/net/Uri;Lcom/google/android/finsky/utils/PackageManagerUtils$PackageInstallObserver;IJLjava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/google/android/finsky/utils/PackageManagerUtils$PackageInstallObserver;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
 
     new-instance v3, Lcom/google/android/finsky/utils/PackageManagerUtils$1;
 
@@ -852,8 +827,6 @@
 
 .method public static uninstallPackage(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 

@@ -30,7 +30,6 @@
 
 .method static synthetic access$002(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
 
     sput-object p0, Lcom/android/incallui/AnswerMemoUtils;->mediaPlayer:Landroid/media/MediaPlayer;
 
@@ -423,7 +422,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "AnswerMemoUtils"
 
@@ -601,7 +599,6 @@
 
 .method public static setAutoAnswered(Z)V
     .locals 3
-    .param p0    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -650,7 +647,6 @@
 
 .method public static setAutoAnsweringMode(Z)V
     .locals 6
-    .param p0    # Z
 
     const-string v2, "callmemo_enabled="
 

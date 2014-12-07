@@ -156,9 +156,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/sec/android/glview/TwGLContext$OnGLInitializeListener;Landroid/opengl/GLSurfaceView;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/android/glview/TwGLContext$OnGLInitializeListener;
-    .param p3    # Landroid/opengl/GLSurfaceView;
 
     const/16 v4, 0x10
 
@@ -1067,7 +1064,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/glview/TwGLContext;)V
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
 
     invoke-direct {p0}, Lcom/sec/android/glview/TwGLContext;->updateTouchExplorationEnabled()V
 
@@ -1084,7 +1080,6 @@
 
 .method static synthetic access$102(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/sec/android/glview/TwGLContext;->mLastOrientation:I
 
@@ -1093,7 +1088,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/glview/TwGLContext;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLContext;->mNeedToUpdateOrientation:Z
 
@@ -1102,8 +1096,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/glview/TwGLContext;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mNeedToUpdateOrientation:Z
 
@@ -1112,7 +1104,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/glview/TwGLContext;)Lcom/sec/android/glview/TwGLViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -1121,7 +1112,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/glview/TwGLContext;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationEnabled:Z
 
@@ -1130,7 +1120,6 @@
 
 .method private convertTimeInfoForTTS(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -1423,7 +1412,6 @@
 
 .method public static getColor(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/glview/TwGLContext;->mResources:Landroid/content/res/Resources;
 
@@ -1436,7 +1424,6 @@
 
 .method public static getDimension(I)F
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/glview/TwGLContext;->mResources:Landroid/content/res/Resources;
 
@@ -1449,7 +1436,6 @@
 
 .method public static getInteger(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/glview/TwGLContext;->mResources:Landroid/content/res/Resources;
 
@@ -1478,7 +1464,6 @@
 
 .method public static getString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/glview/TwGLContext;->mResources:Landroid/content/res/Resources;
 
@@ -1491,7 +1476,6 @@
 
 .method private isTimeInfo(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[0-5][0-9]:[0-5][0-9]"
 
@@ -1523,7 +1507,6 @@
 
 .method public static setOrientationComensationValue(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/sec/android/glview/TwGLContext;->mOrientationCompensationValue:I
 
@@ -1607,7 +1590,6 @@
 # virtual methods
 .method public addTextureToDelete(Lcom/sec/android/glview/TwGLTexture;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLTexture;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mTexturesToDelete:Ljava/util/ArrayList;
 
@@ -1758,7 +1740,6 @@
 
 .method public enableOrientation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mOrientationEnabled:Z
 
@@ -1767,9 +1748,6 @@
 
 .method public findNextFocusFromView(Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/glview/TwGLView;I)Lcom/sec/android/glview/TwGLView;
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p2    # Lcom/sec/android/glview/TwGLView;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1794,7 +1772,6 @@
 
 .method public findViewById(I)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -1817,7 +1794,6 @@
 
 .method public findViewByTag(I)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mRootView:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -2310,8 +2286,6 @@
 
 .method protected notifyHoverEventChanged(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v2, p0, Lcom/sec/android/glview/TwGLContext;->mObservers:Ljava/util/List;
 
@@ -2361,7 +2335,6 @@
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 9
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     const/high16 v8, 0x3f800000
 
@@ -2496,7 +2469,6 @@
 
 .method public onFocusChanged(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v2, 0x1
 
@@ -2553,8 +2525,6 @@
 
 .method public onHoverChanged(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x4
 
@@ -2806,8 +2776,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;I)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -3037,15 +3005,12 @@
 
 .method public onInit(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v9, 0x82
 
@@ -3499,8 +3464,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 
@@ -3694,9 +3657,6 @@
 
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 8
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -3837,8 +3797,6 @@
 
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 8
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/16 v7, 0xcf
 
@@ -3990,7 +3948,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -4171,7 +4128,6 @@
 
 .method public queueGLEvent(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
@@ -4207,7 +4163,6 @@
 
 .method public registerHoverEventChangedObserver(Lcom/sec/android/glview/TwGLContext$OnHoverEventChangedObserver;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext$OnHoverEventChangedObserver;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mObservers:Ljava/util/List;
 
@@ -4287,7 +4242,6 @@
 
 .method public setAlignToPixel(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mAlignToPixel:Z
 
@@ -4296,7 +4250,6 @@
 
 .method public setDirty(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mDirty:Z
 
@@ -4322,7 +4275,6 @@
 
 .method public setEffectLibInitialized(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLContext;->mEffectLibInitialized:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -4333,7 +4285,6 @@
 
 .method public setFirstOrientation(I)V
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Lcom/sec/android/glview/TwGLUtil;->getGLOrientationByDisplayOrientation(I)I
 
@@ -4357,7 +4308,6 @@
 
 .method public setFocusIndicatorRefesh(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mIsFocusIndicatorrefresh:Z
 
@@ -4366,7 +4316,6 @@
 
 .method public setFocusResourceId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLContext;->mFocusResId:I
 
@@ -4375,7 +4324,6 @@
 
 .method public setHoverBaseView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLContext;->mHoverBaseView:Landroid/view/View;
 
@@ -4384,7 +4332,6 @@
 
 .method public setHoverResourceId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLContext;->mHoverResId:I
 
@@ -4393,9 +4340,6 @@
 
 .method public declared-synchronized setPreviewData(II[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     monitor-enter p0
 
@@ -4427,7 +4371,6 @@
 
 .method public setPreviewTransparent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mPreviewTransparent:Z
 
@@ -4436,7 +4379,6 @@
 
 .method public setScrollBarAutoHide(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLContext;->mScrollBarAutoHide:Z
 
@@ -4445,7 +4387,6 @@
 
 .method public unregisterHoverEventChangedObserver(Lcom/sec/android/glview/TwGLContext$OnHoverEventChangedObserver;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext$OnHoverEventChangedObserver;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLContext;->mObservers:Ljava/util/List;
 

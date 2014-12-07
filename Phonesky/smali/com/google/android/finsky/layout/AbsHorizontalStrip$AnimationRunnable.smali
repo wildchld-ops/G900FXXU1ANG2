@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/layout/AbsHorizontalStrip;FJ)V
     .locals 2
-    .param p2    # F
-    .param p3    # J
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/AbsHorizontalStrip$AnimationRunnable;->this$0:Lcom/google/android/finsky/layout/AbsHorizontalStrip;
 

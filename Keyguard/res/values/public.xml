@@ -545,9 +545,6 @@
     <public type="drawable" name="weather_icon_s_20" id="0x7f0202b4" />
     <public type="drawable" name="weather_icon_s_21" id="0x7f0202b5" />
     <public type="drawable" name="weather_icon_s_22" id="0x7f0202b6" />
-    <public type="drawable" name="spass_unlock_arrow_01" id="0x7f020277" />
-    <public type="drawable" name="spass_unlock_arrow_02" id="0x7f020278" />
-    <public type="drawable" name="spass_unlock_arrow_03" id="0x7f020279" />
     <public type="drawable" name="APKTOOL_DUMMY_0001" id="0x7f020001" />
     <public type="drawable" name="APKTOOL_DUMMY_0002" id="0x7f020002" />
     <public type="drawable" name="APKTOOL_DUMMY_000c" id="0x7f02000c" />
@@ -689,6 +686,9 @@
     <public type="drawable" name="APKTOOL_DUMMY_0259" id="0x7f020259" />
     <public type="drawable" name="APKTOOL_DUMMY_025a" id="0x7f02025a" />
     <public type="drawable" name="APKTOOL_DUMMY_025b" id="0x7f02025b" />
+    <public type="drawable" name="spass_unlock_arrow_01" id="0x7f020277" />
+    <public type="drawable" name="spass_unlock_arrow_02" id="0x7f020278" />
+    <public type="drawable" name="spass_unlock_arrow_03" id="0x7f020279" />
     <public type="drawable" name="APKTOOL_DUMMY_027d" id="0x7f02027d" />
     <public type="drawable" name="APKTOOL_DUMMY_0281" id="0x7f020281" />
     <public type="drawable" name="APKTOOL_DUMMY_0282" id="0x7f020282" />
@@ -1700,12 +1700,12 @@
     <public type="dimen" name="contextual_size_date_easy" id="0x7f0c00b1" />
     <public type="dimen" name="contextual_size_button_easy" id="0x7f0c00b2" />
     <public type="dimen" name="kg_emergency_button_shift" id="0x7f0c00b3" />
-    <public type="dimen" name="overlay_button_margin_top" id="0x7f0c00b8" />
-    <public type="dimen" name="kg_message_area_top_margin" id="0x7f0c00b9" />
     <public type="dimen" name="APKTOOL_DUMMY_00b4" id="0x7f0c00b4" />
     <public type="dimen" name="APKTOOL_DUMMY_00b5" id="0x7f0c00b5" />
     <public type="dimen" name="APKTOOL_DUMMY_00b6" id="0x7f0c00b6" />
     <public type="dimen" name="APKTOOL_DUMMY_00b7" id="0x7f0c00b7" />
+    <public type="dimen" name="overlay_button_margin_top" id="0x7f0c00b8" />
+    <public type="dimen" name="kg_message_area_top_margin" id="0x7f0c00b9" />
     <public type="dimen" name="APKTOOL_DUMMY_00ba" id="0x7f0c00ba" />
     <public type="style" name="Widget.Button.NumPadKey" id="0x7f0d0000" />
     <public type="style" name="TextAppearance.NumPadKey" id="0x7f0d0001" />

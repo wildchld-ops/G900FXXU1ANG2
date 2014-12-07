@@ -45,7 +45,6 @@
 
 .method public onCheckEvent(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/mms/spam/HelpActivity$6$1;->this$1:Lcom/android/mms/spam/HelpActivity$6;
 
@@ -68,7 +67,6 @@
 
 .method public onCheckFinished(Lcom/tencent/update/BinderCheckResult;)V
     .locals 3
-    .param p1    # Lcom/tencent/update/BinderCheckResult;
 
     const/4 v2, 0x1
 

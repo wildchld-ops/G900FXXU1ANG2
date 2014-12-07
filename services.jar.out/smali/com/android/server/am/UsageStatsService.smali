@@ -144,7 +144,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/app/IUsageStats$Stub;-><init>()V
 
@@ -388,9 +387,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/UsageStatsService;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/server/am/UsageStatsService;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/am/UsageStatsService;->writeStatsToFile(ZZ)V
 
@@ -399,7 +395,6 @@
 
 .method static synthetic access$200(Lcom/android/server/am/UsageStatsService;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Lcom/android/server/am/UsageStatsService;
 
     iget-object v0, p0, Lcom/android/server/am/UsageStatsService;->mUnforcedDiskWriteRunning:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -408,7 +403,6 @@
 
 .method static synthetic access$300(Lcom/android/server/am/UsageStatsService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/am/UsageStatsService;
 
     iget-object v0, p0, Lcom/android/server/am/UsageStatsService;->mContext:Landroid/content/Context;
 
@@ -417,7 +411,6 @@
 
 .method static synthetic access$400(Lcom/android/server/am/UsageStatsService;)Landroid/util/ArrayMap;
     .locals 1
-    .param p0    # Lcom/android/server/am/UsageStatsService;
 
     iget-object v0, p0, Lcom/android/server/am/UsageStatsService;->mLastResumeTimes:Landroid/util/ArrayMap;
 
@@ -497,9 +490,6 @@
 
 .method private collectDumpInfoFLOCK(Ljava/io/PrintWriter;ZZLjava/util/HashSet;)V
     .locals 11
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -698,10 +688,6 @@
 
 .method private collectDumpInfoFromParcelFLOCK(Landroid/os/Parcel;Ljava/io/PrintWriter;Ljava/lang/String;ZLjava/util/HashSet;)V
     .locals 17
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1384,7 +1370,6 @@
 
 .method private getCurrentDateStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/16 v7, 0xa
 
@@ -1481,7 +1466,6 @@
 
 .method private getParcelForFile(Ljava/io/File;)Landroid/os/Parcel;
     .locals 5
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1624,7 +1608,6 @@
 
 .method static readFully(Ljava/io/FileInputStream;)[B
     .locals 7
-    .param p0    # Ljava/io/FileInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1681,7 +1664,6 @@
 
 .method private readHistoryStatsFLOCK(Landroid/util/AtomicFile;)V
     .locals 15
-    .param p1    # Landroid/util/AtomicFile;
 
     const/4 v4, 0x0
 
@@ -2073,7 +2055,6 @@
 
 .method private readStatsFLOCK(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2234,8 +2215,6 @@
 
 .method private static scanArgs([Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -2274,8 +2253,6 @@
 
 .method private static scanArgsData([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2313,7 +2290,6 @@
 
 .method private writeHistoryStatsFLOCK(Landroid/util/AtomicFile;)V
     .locals 10
-    .param p1    # Landroid/util/AtomicFile;
 
     const/4 v2, 0x0
 
@@ -2531,7 +2507,6 @@
 
 .method private writeStatsFLOCK(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2579,8 +2554,6 @@
 
 .method private writeStatsToFile(ZZ)V
     .locals 12
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -2910,7 +2883,6 @@
 
 .method private writeStatsToParcelFLOCK(Landroid/os/Parcel;)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v5, p0, Lcom/android/server/am/UsageStatsService;->mStatsLock:Ljava/lang/Object;
 
@@ -2986,9 +2958,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v10, p0, Lcom/android/server/am/UsageStatsService;->mContext:Landroid/content/Context;
 
@@ -3323,7 +3292,6 @@
 
 .method public getPkgUsageStats(Landroid/content/ComponentName;)Lcom/android/internal/os/PkgUsageStats;
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x0
 
@@ -3443,8 +3411,6 @@
 
 .method public noteFullyDrawnTime(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -3503,8 +3469,6 @@
 
 .method public noteLaunchTime(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -3563,7 +3527,6 @@
 
 .method public notePauseComponent(Landroid/content/ComponentName;)V
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v8, 0x0
 
@@ -3708,8 +3671,6 @@
 
 .method public noteResumeComponent(Landroid/content/ComponentName;Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/android/server/am/UsageStatsService;->enforceCallingPermission()V
 
@@ -3930,8 +3891,6 @@
 
 .method public noteResumeComponentForMDM(Landroid/content/ComponentName;I)V
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/UsageStatsService;->enforceCallingPermission()V
 
@@ -4045,7 +4004,6 @@
 
 .method public publish(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/am/UsageStatsService;->mContext:Landroid/content/Context;
 
@@ -4062,7 +4020,6 @@
 
 .method public setUsageStatsWatcher(Lcom/android/internal/app/IUsageStatsWatcher;)V
     .locals 1
-    .param p1    # Lcom/android/internal/app/IUsageStatsWatcher;
 
     monitor-enter p0
 

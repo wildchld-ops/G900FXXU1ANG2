@@ -44,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsBadgeContainer$1;->val$fragmentManager:Landroid/support/v4/app/FragmentManager;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/iab/MarketBillingService;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/iab/MarketBillingService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method protected sendPurchaseStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/iab/MarketBillingService$BillingNotifier;->mService:Lcom/google/android/finsky/billing/iab/MarketBillingService;
 
@@ -79,9 +75,6 @@
 
 .method protected sendResponseCode(Ljava/lang/String;JLcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/iab/MarketBillingService$BillingNotifier;->mService:Lcom/google/android/finsky/billing/iab/MarketBillingService;
 
@@ -94,9 +87,6 @@
 
 .method protected showStatusBarNotifications(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/finsky/protos/VendingProtos$InAppPurchaseInformationResponseProto;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/protos/VendingProtos$InAppPurchaseInformationResponseProto;
 
     move-object/from16 v0, p3
 

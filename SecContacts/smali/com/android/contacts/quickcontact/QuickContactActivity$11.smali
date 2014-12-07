@@ -36,8 +36,6 @@
 # virtual methods
 .method public onItemClicked(Lcom/android/contacts/quickcontact/Action;I)V
     .locals 2
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
-    .param p2    # I
 
     new-instance v0, Lcom/android/contacts/quickcontact/QuickContactActivity$11$1;
 
@@ -54,7 +52,6 @@
 
 .method public onItemLongClicked(Lcom/android/contacts/quickcontact/Action;)Z
     .locals 2
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
 
     new-instance v0, Lcom/android/contacts/quickcontact/QuickContactActivity$11$2;
 

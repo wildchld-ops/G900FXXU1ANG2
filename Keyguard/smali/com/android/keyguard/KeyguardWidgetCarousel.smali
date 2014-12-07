@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -51,8 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -63,9 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/keyguard/KeyguardWidgetPager;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -106,9 +100,6 @@
 
 .method private getTransformForPage(II[F)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     const/high16 v8, 0x40000000
 
@@ -167,7 +158,6 @@
 
 .method private updatePageAlphaValues(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -801,9 +791,6 @@
 
 .method public getAlphaForPage(IIZ)F
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -900,9 +887,6 @@
 
 .method public getOutlineAlphaForPage(IIZ)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/android/keyguard/PagedView;->getNextPage()I
 
@@ -973,7 +957,6 @@
 
 .method protected screenScrolled(I)V
     .locals 14
-    .param p1    # I
 
     const/high16 v13, 0x40000000
 
@@ -1135,7 +1118,6 @@
 
 .method protected zoomIn(Ljava/lang/Runnable;)Z
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardWidgetCarousel;->animatePagesToCarousel()V
 

@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const v1, 0x3e99999a
 
@@ -142,7 +141,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;->mSoundPool:Landroid/media/SoundPool;
 
@@ -151,8 +149,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;Landroid/media/SoundPool;)Landroid/media/SoundPool;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;
-    .param p1    # Landroid/media/SoundPool;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;->mSoundPool:Landroid/media/SoundPool;
 
@@ -161,8 +157,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewParticleSpace;->releaseSoundRunnable:Ljava/lang/Runnable;
 
@@ -331,7 +325,6 @@
 
 .method private playSound(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -459,8 +452,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x2
 
@@ -543,8 +534,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -553,8 +542,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -633,15 +620,12 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setLayers(Lcom/android/keyguard/sec/KeyguardEffectWallpaperWidget;Landroid/widget/FrameLayout;)V
     .locals 3
-    .param p1    # Lcom/android/keyguard/sec/KeyguardEffectWallpaperWidget;
-    .param p2    # Landroid/widget/FrameLayout;
 
     const-string v0, "VisualEffectParticleEffect"
 
@@ -731,8 +715,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "VisualEffectParticleEffect"
 

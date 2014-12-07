@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/activities/PeopleActivity;Lcom/android/contacts/activities/PeopleActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/activities/PeopleActivity;
-    .param p2    # Lcom/android/contacts/activities/PeopleActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/PeopleActivity$FragmentCABListener;-><init>(Lcom/android/contacts/activities/PeopleActivity;)V
 

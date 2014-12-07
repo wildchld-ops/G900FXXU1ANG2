@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;Lcom/samsung/contacts/detail/ContactHistoryListAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
-    .param p2    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;-><init>(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;)V
 
@@ -43,7 +41,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;->headerViewTitle:Landroid/widget/TextView;
 
@@ -52,8 +49,6 @@
 
 .method static synthetic access$1102(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;->headerViewTitle:Landroid/widget/TextView;
 

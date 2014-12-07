@@ -54,8 +54,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/webkitsec/WebSettingsClassic;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/webkitsec/WebSettingsClassic;
 
     const/4 v2, 0x1
 
@@ -129,7 +127,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -140,7 +137,6 @@
 
 .method public onComputeInsets(Landroid/inputmethodservice/InputMethodService$Insets;)V
     .locals 6
-    .param p1    # Landroid/inputmethodservice/InputMethodService$Insets;
 
     const/4 v5, 0x1
 
@@ -221,7 +217,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const v2, 0x1050141
 
@@ -583,8 +578,6 @@
 
 .method setButtonEnabled(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     packed-switch p1, :pswitch_data_0
 
@@ -618,8 +611,6 @@
 
 .method setButtonOnClickListener(ILandroid/view/View$OnClickListener;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/view/View$OnClickListener;
 
     packed-switch p1, :pswitch_data_0
 
@@ -653,7 +644,6 @@
 
 .method setListView(Landroid/widget/ListView;)V
     .locals 2
-    .param p1    # Landroid/widget/ListView;
 
     iget-object v1, p0, Landroid/webkitsec/WebSelectDialog;->mListView:Landroid/widget/ListView;
 

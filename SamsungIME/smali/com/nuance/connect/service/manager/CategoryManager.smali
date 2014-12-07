@@ -326,7 +326,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v0, 0x1
 
@@ -465,7 +464,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/CategoryManager;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -474,7 +472,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/service/manager/CategoryManager;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/CategoryManager;->processNextCategory()V
 
@@ -483,7 +480,6 @@
 
 .method static synthetic access$1000(Lcom/nuance/connect/service/manager/CategoryManager;)Lcom/nuance/connect/service/manager/CategorySubmanagerChineseAddon;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->submanagerChinese:Lcom/nuance/connect/service/manager/CategorySubmanagerChineseAddon;
 
@@ -492,7 +488,6 @@
 
 .method static synthetic access$1100(Lcom/nuance/connect/service/manager/CategoryManager;)Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->submanagerLivingLang:Lcom/nuance/connect/service/manager/CategorySubmanagerLivingLanguage;
 
@@ -501,7 +496,6 @@
 
 .method static synthetic access$1200(Lcom/nuance/connect/service/manager/CategoryManager;)Lcom/nuance/connect/service/manager/CategorySubmanagerResources;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->submanagerResources:Lcom/nuance/connect/service/manager/CategorySubmanagerResources;
 
@@ -510,7 +504,6 @@
 
 .method static synthetic access$1300(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/nuance/connect/service/manager/CategoryManager;->getTransactionName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -521,8 +514,6 @@
 
 .method static synthetic access$1400(Lcom/nuance/connect/service/manager/CategoryManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/CategoryManager;->clearCategoryDownload(Ljava/lang/String;)V
 
@@ -531,7 +522,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/service/manager/CategoryManager;)Lcom/nuance/connect/util/InstallMetadata;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->categoryInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -540,9 +530,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/service/manager/CategoryManager;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/service/manager/CategoryManager;->sendDictionaryDownloadProgress(Ljava/lang/String;I)V
 
@@ -551,8 +538,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/service/manager/CategoryManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/CategoryManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/CategoryManager;->resetCategoryDownloadState(Ljava/lang/String;)V
 
@@ -561,7 +546,6 @@
 
 .method private clearCategoryDownload(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->categoryInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -623,8 +607,6 @@
 
 .method public static concat([I[I)[I
     .locals 4
-    .param p0    # [I
-    .param p1    # [I
 
     array-length v1, p0
 
@@ -728,7 +710,6 @@
 
 .method private static getTransactionName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -763,8 +744,6 @@
 
 .method private installComplete(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -921,7 +900,6 @@
 
 .method private isClientInstallableCategory(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1300,7 +1278,6 @@
 
 .method private removeDownloadFile(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/nuance/connect/service/manager/CategoryManager;->categoryInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -1395,7 +1372,6 @@
 
 .method private resetCategoryDownloadState(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1524,8 +1500,6 @@
 
 .method private sendDictionaryDownloadProgress(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v5, p0, Lcom/nuance/connect/service/manager/CategoryManager;->categoryInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -1613,7 +1587,6 @@
 
 .method private updateChineseDictionariesStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->chineseDictEnabled:Z
 
@@ -1673,7 +1646,6 @@
 
 .method private updateLivingLanguageStatus(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -1754,8 +1726,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager;->submanagerChinese:Lcom/nuance/connect/service/manager/CategorySubmanagerChineseAddon;
 
@@ -1774,8 +1744,6 @@
 
 .method public cancelActiveTransactions(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->activeTransactions:Ljava/util/Map;
 
@@ -1847,7 +1815,6 @@
 
 .method public forceForegroundActiveTransactions(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->activeTransactions:Ljava/util/Map;
 
@@ -1895,7 +1862,6 @@
 
 .method protected get(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2109,7 +2075,6 @@
 
 .method getAllEntriesWithCategoryId(I)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2359,7 +2324,6 @@
 
 .method protected installCategory(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2736,7 +2700,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     const/4 v6, 0x1
 
@@ -3212,7 +3175,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 
@@ -3284,7 +3246,6 @@
 
 .method protected processListResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 18
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     move-object/from16 v0, p0
 
@@ -3823,7 +3784,6 @@
 
 .method protected processStatusResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -3976,7 +3936,6 @@
 
 .method protected processUnsubscribeResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v5, 0x1
 
@@ -4148,9 +4107,6 @@
 
 .method sendDeleteCategoryToHost(Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -4274,7 +4230,6 @@
 
 .method protected subscribe(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -4455,7 +4410,6 @@
 
 .method protected unsubscribe(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -4631,7 +4585,6 @@
 
 .method unsubscribeAll(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v6, p0, Lcom/nuance/connect/service/manager/CategoryManager;->categoryInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -4706,10 +4659,6 @@
 
 .method protected updateCategoryEventAck(ZILjava/lang/String;I)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget-object v4, p0, Lcom/nuance/connect/service/manager/CategoryManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -4942,9 +4891,6 @@
 
 .method protected updateLastProcessed(Ljava/lang/String;JI)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/CategoryManager;->categoryInstallMetadata:Lcom/nuance/connect/util/InstallMetadata;
 

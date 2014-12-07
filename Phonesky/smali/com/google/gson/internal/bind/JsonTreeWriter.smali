@@ -91,7 +91,6 @@
 
 .method private put(Lcom/google/gson/JsonElement;)V
     .locals 3
-    .param p1    # Lcom/google/gson/JsonElement;
 
     iget-object v2, p0, Lcom/google/gson/internal/bind/JsonTreeWriter;->pendingName:Ljava/lang/String;
 
@@ -403,7 +402,6 @@
 
 .method public name(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -467,7 +465,6 @@
 
 .method public value(J)Lcom/google/gson/stream/JsonWriter;
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -489,7 +486,6 @@
 
 .method public value(Ljava/lang/Number;)Lcom/google/gson/stream/JsonWriter;
     .locals 5
-    .param p1    # Ljava/lang/Number;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -565,7 +561,6 @@
 
 .method public value(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -593,7 +588,6 @@
 
 .method public value(Z)Lcom/google/gson/stream/JsonWriter;
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

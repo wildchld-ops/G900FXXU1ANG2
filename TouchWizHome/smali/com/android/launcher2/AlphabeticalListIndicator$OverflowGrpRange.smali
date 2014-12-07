@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/AlphabeticalListIndicator;Lcom/android/launcher2/AlphabeticalListIndicator$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/AlphabeticalListIndicator;
-    .param p2    # Lcom/android/launcher2/AlphabeticalListIndicator$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/AlphabeticalListIndicator$OverflowGrpRange;-><init>(Lcom/android/launcher2/AlphabeticalListIndicator;)V
 

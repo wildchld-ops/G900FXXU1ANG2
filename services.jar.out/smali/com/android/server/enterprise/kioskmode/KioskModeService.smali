@@ -116,8 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/enterprise/application/ApplicationPolicy;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     const/4 v0, 0x0
 
@@ -205,8 +203,6 @@
 
 .method private _disableKioskMode(Landroid/app/enterprise/ContextInfo;I)V
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     sget-object v13, Lcom/android/server/enterprise/kioskmode/KioskModeService;->mLock:Ljava/lang/Object;
 
@@ -398,8 +394,6 @@
 
 .method private _enableKioskMode(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 19
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-object v16, Lcom/android/server/enterprise/kioskmode/KioskModeService;->mLock:Ljava/lang/Object;
 
@@ -710,9 +704,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/kioskmode/KioskModeService;Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->cleanUpKioskMode(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
 
@@ -721,7 +712,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/enterprise/kioskmode/KioskModeService;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getAllBlockedList()Ljava/util/Map;
 
@@ -732,7 +722,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/kioskmode/KioskModeService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
 
     iget-object v0, p0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->mContext:Landroid/content/Context;
 
@@ -741,8 +730,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/kioskmode/KioskModeService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->wipeRecentTasks(I)Z
 
@@ -753,8 +740,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/kioskmode/KioskModeService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->launchHomeActivity(I)V
 
@@ -763,10 +748,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/kioskmode/KioskModeService;III)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->broadcastKioskResult(III)V
 
@@ -775,7 +756,6 @@
 
 .method static synthetic access$502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->mProcessing:Z
 
@@ -784,8 +764,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/kioskmode/KioskModeService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->forceTerminateKiosk(I)V
 
@@ -794,7 +772,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/kioskmode/KioskModeService;)Lcom/android/server/enterprise/application/ApplicationPolicy;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
 
     iget-object v0, p0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->mAppPolicy:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -803,8 +780,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/kioskmode/KioskModeService;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getDefaultHomeScreen(I)Ljava/lang/String;
 
@@ -815,7 +790,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/kioskmode/KioskModeService;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->applyHideSystemBarPolicy()V
 
@@ -824,8 +798,6 @@
 
 .method private addToBlocked(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -890,9 +862,6 @@
 
 .method private broadcastKioskResult(III)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getPackageNameForUid(I)Ljava/lang/String;
 
@@ -994,8 +963,6 @@
 
 .method private cleanUpKioskMode(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1027,7 +994,6 @@
 
 .method private copyAssets(Ljava/io/File;)Z
     .locals 12
-    .param p1    # Ljava/io/File;
 
     const/4 v8, 0x0
 
@@ -1178,7 +1144,6 @@
 
 .method private enforceKioskModePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1195,7 +1160,6 @@
 
 .method private enforceOwnerOnlyAndKioskModePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1212,7 +1176,6 @@
 
 .method private forceTerminateKiosk(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getActiveKioskAdmin(I)I
 
@@ -1263,7 +1226,6 @@
 
 .method private getActiveKioskAdmin(I)I
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -1497,7 +1459,6 @@
 
 .method private getBlockedList(I)Ljava/util/Set;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1553,7 +1514,6 @@
 
 .method private getDefaultHomeScreen(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1657,8 +1617,6 @@
 
 .method private getHomeActivity(ILjava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -1745,7 +1703,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getAppId(I)I
 
@@ -1804,7 +1761,6 @@
 
 .method private getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     if-nez p1, :cond_0
 
@@ -1913,8 +1869,6 @@
 
 .method private initKioskMode(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v12, 0x1
 
@@ -2101,7 +2055,6 @@
 
 .method private isHardwareKeyValid(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->mAvailableKeyCodesList:Ljava/util/List;
 
@@ -2118,7 +2071,6 @@
 
 .method private isNavigationBarHiddenAsUser(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2165,7 +2117,6 @@
 
 .method private isStatusBarHiddenAsUser(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2212,7 +2163,6 @@
 
 .method private isSystemBarHiddenAsUser(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2263,8 +2213,6 @@
 
 .method private isTaskManagerAllowedAsUser(ZI)Z
     .locals 7
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -2321,7 +2269,6 @@
 
 .method private launchHomeActivity(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v1, Landroid/content/Intent;
 
@@ -2361,7 +2308,6 @@
 
 .method private registerPackageRemoveReceiver(I)V
     .locals 7
-    .param p1    # I
 
     :try_start_0
     sget-object v0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->packageRemoveIntentReceiver:Ljava/util/Map;
@@ -2436,7 +2382,6 @@
 
 .method private registerTerminationReceiver(I)V
     .locals 7
-    .param p1    # I
 
     :try_start_0
     sget-object v0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->terminateIntentReceiver:Ljava/util/Map;
@@ -2503,8 +2448,6 @@
 
 .method private removeFromBlocked(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -2571,7 +2514,6 @@
 
 .method private saveBlockedList(ILjava/util/Set;)Z
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2669,9 +2611,6 @@
 
 .method private setDefaultHomeScreen(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 22
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v14, Landroid/content/Intent;
 
@@ -2942,7 +2881,6 @@
 
 .method private unregisterPackageRemoveReceiver(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->packageRemoveIntentReceiver:Ljava/util/Map;
 
@@ -2997,7 +2935,6 @@
 
 .method private unregisterTerminationReceiver(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->terminateIntentReceiver:Ljava/util/Map;
 
@@ -3052,10 +2989,6 @@
 
 .method private updateDB(IZLjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/kioskmode/KioskModeService;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -3086,7 +3019,6 @@
 
 .method private wipeRecentTasks(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3105,9 +3037,6 @@
 # virtual methods
 .method public allowHardwareKeys(Landroid/app/enterprise/ContextInfo;[IZ)[I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [I
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->enforceKioskModePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3254,8 +3183,6 @@
 
 .method public allowMultiWindowMode(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -3309,8 +3236,6 @@
 
 .method public allowTaskManager(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -3387,7 +3312,6 @@
 
 .method public clearAllNotifications(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->enforceKioskModePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3456,7 +3380,6 @@
 
 .method public disableKioskMode(Landroid/app/enterprise/ContextInfo;)V
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x2
 
@@ -3493,8 +3416,6 @@
 
 .method public enableKioskMode(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -3529,7 +3450,6 @@
 
 .method public getAllBlockedHardwareKeys(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3641,7 +3561,6 @@
 
 .method public getHardwareKeyList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3679,7 +3598,6 @@
 
 .method public getKioskHomePackage(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3706,7 +3624,6 @@
 
 .method public getKioskHomePackageAsUser(I)Ljava/lang/String;
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -3818,8 +3735,6 @@
 
 .method public hideNavigationBar(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v8, 0x1
 
@@ -3929,8 +3844,6 @@
 
 .method public hideStatusBar(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v8, 0x1
 
@@ -4040,8 +3953,6 @@
 
 .method public hideSystemBar(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -4111,9 +4022,6 @@
 
 .method public isHardwareKeyAllowed(Landroid/app/enterprise/ContextInfo;IZ)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -4191,7 +4099,6 @@
 
 .method public isKioskModeEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v9, 0x0
 
@@ -4358,7 +4265,6 @@
 
 .method public isKioskModeEnabledAsUser(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -4463,8 +4369,6 @@
 
 .method public isMultiWindowModeAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4488,7 +4392,6 @@
 
 .method public isMultiWindowModeAllowedAsUser(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -4536,7 +4439,6 @@
 
 .method public isNavigationBarHidden(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4551,7 +4453,6 @@
 
 .method public isStatusBarHidden(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4566,7 +4467,6 @@
 
 .method public isSystemBarHidden(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4581,8 +4481,6 @@
 
 .method public isTaskManagerAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4597,14 +4495,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Landroid/app/enterprise/ContextInfo;
 
@@ -4634,7 +4530,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Landroid/app/enterprise/ContextInfo;
 
@@ -4748,7 +4643,6 @@
 
 .method public wipeRecentTasks(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService;->enforceKioskModePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 

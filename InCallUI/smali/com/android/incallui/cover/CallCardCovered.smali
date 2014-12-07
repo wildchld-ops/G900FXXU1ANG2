@@ -37,8 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -59,7 +57,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "CallCardCovered"
 
@@ -70,8 +67,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "CallCardCovered"
 
@@ -330,8 +325,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -348,8 +341,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x1
 

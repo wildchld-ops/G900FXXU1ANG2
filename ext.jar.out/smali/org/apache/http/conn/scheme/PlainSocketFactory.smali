@@ -39,7 +39,6 @@
 
 .method public constructor <init>(Lorg/apache/http/conn/scheme/HostNameResolver;)V
     .locals 0
-    .param p1    # Lorg/apache/http/conn/scheme/HostNameResolver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,12 +59,6 @@
 # virtual methods
 .method public connectSocket(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;
     .locals 7
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # I
-    .param p6    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -197,7 +190,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     if-ne p1, p0, :cond_0
 
@@ -226,7 +218,6 @@
 
 .method public final isSecure(Ljava/net/Socket;)Z
     .locals 2
-    .param p1    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

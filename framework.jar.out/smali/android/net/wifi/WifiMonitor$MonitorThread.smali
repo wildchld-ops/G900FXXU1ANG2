@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiNative;Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiNative;
-    .param p2    # Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;
 
     const-string v0, "WifiMonitor"
 
@@ -51,8 +49,6 @@
 
 .method private dispatchEvent(Ljava/lang/String;Z)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v8, "CTRL-EVENT-"
 
@@ -1029,7 +1025,6 @@
 
 .method private handleDriverEvent(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -1057,7 +1052,6 @@
 
 .method private handleHS20Events(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1196,7 +1190,6 @@
 
 .method private handleHostApEvents(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1256,7 +1249,6 @@
 
 .method private handleMsapEvents(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1356,8 +1348,6 @@
 
 .method private handleNetworkStateChange(Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1433,7 +1423,6 @@
 
 .method private handleP2pEvents(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "P2P-DEVICE-FOUND"
 
@@ -1917,7 +1906,6 @@
 
 .method private handleS69Events(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     # getter for: Landroid/net/wifi/WifiMonitor;->DBG:Z
@@ -2074,7 +2062,6 @@
 
 .method private handleSupplicantStateChange(Ljava/lang/String;)V
     .locals 20
-    .param p1    # Ljava/lang/String;
 
     const/16 v16, 0x0
 
@@ -2315,7 +2302,6 @@
 
 .method private handleWpsFailEvent(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const v8, 0x24009
 
@@ -2455,7 +2441,6 @@
 
 .method private p2pError(Ljava/lang/String;)Landroid/net/wifi/p2p/WifiP2pService$P2pStatus;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -2541,7 +2526,6 @@
 
 .method private p2pSSID(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, " "
 
@@ -2560,9 +2544,6 @@
 # virtual methods
 .method handleEvent(ILjava/lang/String;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/16 v2, 0xc
 
@@ -2707,7 +2688,6 @@
 
 .method handleKtNotification(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x0
 
@@ -2814,8 +2794,6 @@
 
 .method notifyAuthenticationFailure(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, -0x1
 
@@ -2907,9 +2885,6 @@
 
 .method notifyNetworkStateChange(Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -2950,7 +2925,6 @@
 
 .method notifySccDiffFreq(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -3034,10 +3008,6 @@
 
 .method notifySupplicantStateChange(ILandroid/net/wifi/WifiSsid;Ljava/lang/String;Landroid/net/wifi/SupplicantState;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/net/wifi/WifiSsid;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/wifi/SupplicantState;
 
     iget-object v0, p0, Landroid/net/wifi/WifiMonitor$MonitorThread;->mStateMachine:Lcom/android/internal/util/StateMachine;
 

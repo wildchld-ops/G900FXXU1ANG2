@@ -90,12 +90,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/security/KeyStore;Ljava/lang/String;Ljava/security/KeyStore;Ljava/security/SecureRandom;Lorg/apache/http/conn/scheme/HostNameResolver;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/KeyStore;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/security/KeyStore;
-    .param p5    # Ljava/security/SecureRandom;
-    .param p6    # Lorg/apache/http/conn/scheme/HostNameResolver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -159,7 +153,6 @@
 
 .method public constructor <init>(Ljava/security/KeyStore;)V
     .locals 7
-    .param p1    # Ljava/security/KeyStore;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -190,8 +183,6 @@
 
 .method public constructor <init>(Ljava/security/KeyStore;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/security/KeyStore;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -222,9 +213,6 @@
 
 .method public constructor <init>(Ljava/security/KeyStore;Ljava/lang/String;Ljava/security/KeyStore;)V
     .locals 7
-    .param p1    # Ljava/security/KeyStore;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/security/KeyStore;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -255,7 +243,6 @@
 
 .method public constructor <init>(Ljavax/net/ssl/SSLSocketFactory;)V
     .locals 2
-    .param p1    # Ljavax/net/ssl/SSLSocketFactory;
 
     const/4 v1, 0x0
 
@@ -276,7 +263,6 @@
 
 .method synthetic constructor <init>(Lorg/apache/http/conn/ssl/SSLSocketFactory$1;)V
     .locals 0
-    .param p1    # Lorg/apache/http/conn/ssl/SSLSocketFactory$1;
 
     invoke-direct {p0}, Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init>()V
 
@@ -285,8 +271,6 @@
 
 .method private static createKeyManagers(Ljava/security/KeyStore;Ljava/lang/String;)[Ljavax/net/ssl/KeyManager;
     .locals 3
-    .param p0    # Ljava/security/KeyStore;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;,
@@ -337,7 +321,6 @@
 
 .method private static createTrustManagers(Ljava/security/KeyStore;)[Ljavax/net/ssl/TrustManager;
     .locals 3
-    .param p0    # Ljava/security/KeyStore;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;,
@@ -388,12 +371,6 @@
 # virtual methods
 .method public connectSocket(Ljava/net/Socket;Ljava/lang/String;ILjava/net/InetAddress;ILorg/apache/http/params/HttpParams;)Ljava/net/Socket;
     .locals 8
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # I
-    .param p6    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -538,10 +515,6 @@
 
 .method public createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
     .locals 2
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -574,7 +547,6 @@
 
 .method public isSecure(Ljava/net/Socket;)Z
     .locals 2
-    .param p1    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -627,7 +599,6 @@
 
 .method public setHostnameVerifier(Lorg/apache/http/conn/ssl/X509HostnameVerifier;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ssl/X509HostnameVerifier;
 
     if-nez p1, :cond_0
 

@@ -124,8 +124,6 @@
 
 .method public static addToContact(Landroid/content/Context;Ljava/lang/String;)V
     .locals 19
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "ro.product.name"
 
@@ -524,9 +522,6 @@
 
 .method public static addToContact(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -670,9 +665,6 @@
 
 .method public static blockCallContact(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v12, 0x1
 
@@ -825,7 +817,6 @@
 
 .method public static blockContact(Landroid/content/Context;Ljava/util/ArrayList;)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1034,8 +1025,6 @@
 
 .method public static blockMessageContact(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1096,10 +1085,6 @@
 
 .method public static checkCallblocked(Landroid/content/Context;Ljava/lang/String;ZZ)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v7, 0x0
 
@@ -1345,9 +1330,6 @@
 
 .method public static checkMessageblocked(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v1, 0xb
 
@@ -1600,8 +1582,6 @@
 
 .method public static configBlacklistNumber(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "blacklist"
 
@@ -1612,9 +1592,6 @@
 
 .method private static configNumber(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1649,8 +1626,6 @@
 
 .method public static configWhitelistNumber(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "whitelist"
 
@@ -1661,8 +1636,6 @@
 
 .method public static editCall(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1701,8 +1674,6 @@
 
 .method public static formatDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const v11, 0x7f0e02ee
 
@@ -2020,10 +1991,6 @@
 
 .method public static formatDateTime(Landroid/content/Context;JILjava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/Formatter;
 
@@ -2062,8 +2029,6 @@
 
 .method public static getRejectNumberCount(Landroid/content/Context;Ljava/lang/String;)I
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2155,7 +2120,6 @@
 
 .method public static getTimeDisplayScheme(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -2176,8 +2140,6 @@
 
 .method public static isApplicationInstalled(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2217,8 +2179,6 @@
 
 .method public static isBlocked(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2318,7 +2278,6 @@
 
 .method public static isBlockedNumbers(Landroid/content/Context;Ljava/util/ArrayList;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2369,7 +2328,6 @@
 
 .method public static isCalledPartyBCDNumber(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2451,7 +2409,6 @@
 
 .method public static isCheckedBefore(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -2604,7 +2561,6 @@
 
 .method public static isTPhoneEnabled(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -2633,7 +2589,6 @@
 
 .method public static isUnBlockedNumbers(Landroid/content/Context;Ljava/util/ArrayList;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2684,8 +2639,6 @@
 
 .method public static makeCall(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2782,10 +2735,6 @@
 
 .method public static makeCallForResult(Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2899,8 +2848,6 @@
 
 .method public static sameDate(JJ)Z
     .locals 11
-    .param p0    # J
-    .param p2    # J
 
     const/4 v10, 0x5
 
@@ -2976,9 +2923,6 @@
 
 .method public static sendContactInfo(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const v4, 0x7f0e031e
 
@@ -3317,8 +3261,6 @@
 
 .method public static showDialog(Landroid/content/Context;Ljava/util/ArrayList;Landroid/view/ActionMode;)Landroid/app/AlertDialog;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p2    # Landroid/view/ActionMode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3440,9 +3382,6 @@
 
 .method public static unblockCallContact(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 16
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -3752,7 +3691,6 @@
 
 .method public static unblockContact(Landroid/content/Context;Ljava/util/ArrayList;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3850,8 +3788,6 @@
 
 .method public static unblockMessageContact(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -3910,9 +3846,6 @@
 
 .method public static updateCallunblocked(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v8, 0x1
 
@@ -3980,8 +3913,6 @@
 
 .method public static updateMessageunblocked(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -4038,8 +3969,6 @@
 
 .method public static viewContact(Landroid/content/Context;J)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuffer;
 

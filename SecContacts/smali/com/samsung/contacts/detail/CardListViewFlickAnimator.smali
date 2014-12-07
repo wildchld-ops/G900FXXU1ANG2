@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +42,6 @@
 # virtual methods
 .method public onFlick(Z)V
     .locals 8
-    .param p1    # Z
 
     const-wide/16 v6, 0x15e
 

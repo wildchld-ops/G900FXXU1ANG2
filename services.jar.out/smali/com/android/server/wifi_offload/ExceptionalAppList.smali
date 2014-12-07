@@ -1050,7 +1050,6 @@
 
 .method private static decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -1097,7 +1096,6 @@
 
 .method public static getListOfDependentPackageNamesForDataUsage(Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

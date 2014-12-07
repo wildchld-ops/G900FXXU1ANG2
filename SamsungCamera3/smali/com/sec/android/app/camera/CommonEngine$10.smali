@@ -36,8 +36,6 @@
 # virtual methods
 .method public onPictureTaken([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 3
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const-string v1, "CommonEngine"
 

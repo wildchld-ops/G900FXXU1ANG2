@@ -55,7 +55,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/scontext/SContextService;Landroid/os/IBinder;)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Landroid/hardware/scontext/SContextService$Listener;->this$0:Landroid/hardware/scontext/SContextService;
 
@@ -80,7 +79,6 @@
 
 .method static synthetic access$000(Landroid/hardware/scontext/SContextService$Listener;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService$Listener;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService$Listener;->mToken:Landroid/os/IBinder;
 
@@ -89,7 +87,6 @@
 
 .method static synthetic access$100(Landroid/hardware/scontext/SContextService$Listener;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService$Listener;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService$Listener;->mServices:Ljava/util/HashSet;
 
@@ -98,7 +95,6 @@
 
 .method static synthetic access$200(Landroid/hardware/scontext/SContextService$Listener;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService$Listener;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService$Listener;->mPropertyMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -401,7 +397,6 @@
 
 .method public callback(Landroid/hardware/scontext/SContextEvent;)V
     .locals 4
-    .param p1    # Landroid/hardware/scontext/SContextEvent;
 
     :try_start_0
     iget-object v2, p0, Landroid/hardware/scontext/SContextService$Listener;->mToken:Landroid/os/IBinder;

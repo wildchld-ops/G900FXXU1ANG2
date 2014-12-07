@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
-    .param p2    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity$InteractionGroupMemberPickerActionListener;-><init>(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;)V
 
@@ -46,15 +44,12 @@
 # virtual methods
 .method public onInteractionDoneButtonStateUpdated(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onInteractionSelectionChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity$InteractionGroupMemberPickerActionListener;->this$0:Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
 
@@ -187,7 +182,6 @@
 
 .method public onSingleSelectionAction(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity$InteractionGroupMemberPickerActionListener;->this$0:Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
 

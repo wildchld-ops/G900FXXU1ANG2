@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Z)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/dialer/impl/DialerTutorialDialog;-><init>(Landroid/app/Activity;Z)V
 
@@ -99,7 +97,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const v5, 0x7f0e04db
 

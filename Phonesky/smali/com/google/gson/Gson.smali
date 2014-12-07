@@ -117,15 +117,6 @@
 
 .method constructor <init>(Lcom/google/gson/internal/Excluder;Lcom/google/gson/FieldNamingStrategy;Ljava/util/Map;ZZZZZZLcom/google/gson/LongSerializationPolicy;Ljava/util/List;)V
     .locals 7
-    .param p1    # Lcom/google/gson/internal/Excluder;
-    .param p2    # Lcom/google/gson/FieldNamingStrategy;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Lcom/google/gson/LongSerializationPolicy;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -405,8 +396,6 @@
 
 .method static synthetic access$000(Lcom/google/gson/Gson;D)V
     .locals 0
-    .param p0    # Lcom/google/gson/Gson;
-    .param p1    # D
 
     invoke-direct {p0, p1, p2}, Lcom/google/gson/Gson;->checkValidFloatingPoint(D)V
 
@@ -415,7 +404,6 @@
 
 .method static synthetic access$100(Lcom/google/gson/Gson;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/gson/Gson;
 
     iget-object v0, p0, Lcom/google/gson/Gson;->factories:Ljava/util/List;
 
@@ -424,8 +412,6 @@
 
 .method private static assertFullConsumption(Ljava/lang/Object;Lcom/google/gson/stream/JsonReader;)V
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Lcom/google/gson/stream/JsonReader;
 
     if-eqz p0, :cond_0
 
@@ -473,7 +459,6 @@
 
 .method private checkValidFloatingPoint(D)V
     .locals 3
-    .param p1    # D
 
     invoke-static {p1, p2}, Ljava/lang/Double;->isNaN(D)Z
 
@@ -524,7 +509,6 @@
 
 .method private doubleAdapter(Z)Lcom/google/gson/TypeAdapter;
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -552,7 +536,6 @@
 
 .method private floatAdapter(Z)Lcom/google/gson/TypeAdapter;
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -580,7 +563,6 @@
 
 .method private longAdapter(Lcom/google/gson/LongSerializationPolicy;)Lcom/google/gson/TypeAdapter;
     .locals 1
-    .param p1    # Lcom/google/gson/LongSerializationPolicy;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -612,7 +594,6 @@
 
 .method private newJsonWriter(Ljava/io/Writer;)Lcom/google/gson/stream/JsonWriter;
     .locals 2
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -652,8 +633,6 @@
 # virtual methods
 .method public fromJson(Lcom/google/gson/stream/JsonReader;Ljava/lang/reflect/Type;)Ljava/lang/Object;
     .locals 5
-    .param p1    # Lcom/google/gson/stream/JsonReader;
-    .param p2    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -761,8 +740,6 @@
 
 .method public fromJson(Ljava/io/Reader;Ljava/lang/reflect/Type;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/io/Reader;
-    .param p2    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -796,7 +773,6 @@
 
 .method public fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -831,8 +807,6 @@
 
 .method public fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1027,7 +1001,6 @@
 
 .method public toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/google/gson/JsonElement;
 
     new-instance v0, Ljava/io/StringWriter;
 
@@ -1044,7 +1017,6 @@
 
 .method public toJson(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1071,8 +1043,6 @@
 
 .method public toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Type;
 
     new-instance v0, Ljava/io/StringWriter;
 
@@ -1089,8 +1059,6 @@
 
 .method public toJson(Lcom/google/gson/JsonElement;Lcom/google/gson/stream/JsonWriter;)V
     .locals 5
-    .param p1    # Lcom/google/gson/JsonElement;
-    .param p2    # Lcom/google/gson/stream/JsonWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonIOException;
@@ -1161,8 +1129,6 @@
 
 .method public toJson(Lcom/google/gson/JsonElement;Ljava/lang/Appendable;)V
     .locals 3
-    .param p1    # Lcom/google/gson/JsonElement;
-    .param p2    # Ljava/lang/Appendable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonIOException;
@@ -1196,9 +1162,6 @@
 
 .method public toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/stream/JsonWriter;)V
     .locals 6
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Lcom/google/gson/stream/JsonWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonIOException;
@@ -1277,9 +1240,6 @@
 
 .method public toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljava/lang/Appendable;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # Ljava/lang/Appendable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/gson/JsonIOException;

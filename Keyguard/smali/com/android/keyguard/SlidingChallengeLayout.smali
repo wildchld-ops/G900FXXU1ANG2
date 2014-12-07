@@ -192,7 +192,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -203,8 +202,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -215,9 +212,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/high16 v9, 0x41000000
 
@@ -504,7 +498,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/SlidingChallengeLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mScrimView:Landroid/view/View;
 
@@ -513,7 +506,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/SlidingChallengeLayout;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -522,8 +514,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/SlidingChallengeLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mFinishBouncing:Z
 
@@ -532,7 +522,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/SlidingChallengeLayout;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mSecondBorder:I
 
@@ -541,7 +530,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/SlidingChallengeLayout;)Lcom/android/keyguard/sec/KeyguardEffectViewBase;
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mUnlockView:Lcom/android/keyguard/sec/KeyguardEffectViewBase;
 
@@ -550,7 +538,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/SlidingChallengeLayout;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mFirstBorder:I
 
@@ -559,7 +546,6 @@
 
 .method static synthetic access$1400(Lcom/android/keyguard/SlidingChallengeLayout;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mUnlockEffect:I
 
@@ -568,8 +554,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/SlidingChallengeLayout;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/SlidingChallengeLayout;->onFadeStart(Z)V
 
@@ -578,8 +562,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/SlidingChallengeLayout;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/SlidingChallengeLayout;->onFadeEnd(Z)V
 
@@ -588,7 +570,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/SlidingChallengeLayout;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget-boolean v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mIsFirst:Z
 
@@ -597,8 +578,6 @@
 
 .method static synthetic access$402(Lcom/android/keyguard/SlidingChallengeLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mIsFirst:Z
 
@@ -607,7 +586,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/SlidingChallengeLayout;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget-boolean v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->isIgnoreTouch:Z
 
@@ -616,8 +594,6 @@
 
 .method static synthetic access$502(Lcom/android/keyguard/SlidingChallengeLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->isIgnoreTouch:Z
 
@@ -626,7 +602,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/SlidingChallengeLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mExpandChallengeView:Landroid/view/View;
 
@@ -635,7 +610,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/SlidingChallengeLayout;)F
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mStartX:F
 
@@ -644,8 +618,6 @@
 
 .method static synthetic access$702(Lcom/android/keyguard/SlidingChallengeLayout;F)F
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mStartX:F
 
@@ -654,7 +626,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/SlidingChallengeLayout;)F
     .locals 1
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mStartY:F
 
@@ -663,8 +634,6 @@
 
 .method static synthetic access$802(Lcom/android/keyguard/SlidingChallengeLayout;F)F
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mStartY:F
 
@@ -673,7 +642,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/SlidingChallengeLayout;)D
     .locals 2
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
 
     iget-wide v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mDistance:D
 
@@ -682,8 +650,6 @@
 
 .method static synthetic access$902(Lcom/android/keyguard/SlidingChallengeLayout;D)D
     .locals 0
-    .param p0    # Lcom/android/keyguard/SlidingChallengeLayout;
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mDistance:D
 
@@ -722,9 +688,6 @@
 
 .method private crossedDragHandle(FFF)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, 0x1
 
@@ -919,7 +882,6 @@
 
 .method private getChallengeMargin(Z)I
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1123,7 +1085,6 @@
 
 .method private isEdgeSwipeBeginEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -1172,7 +1133,6 @@
 
 .method private isExpandChallengeViewBeginEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -1203,8 +1163,6 @@
 
 .method private isInChallengeView(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mChallengeView:Lcom/android/keyguard/KeyguardSecurityContainer;
 
@@ -1217,8 +1175,6 @@
 
 .method private isInDragHandle(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mExpandChallengeView:Landroid/view/View;
 
@@ -1231,9 +1187,6 @@
 
 .method private isPointInView(FFLandroid/view/View;)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -1315,8 +1268,6 @@
 
 .method private makeChildMeasureSpec(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -1356,7 +1307,6 @@
 
 .method private moveChallengeTo(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -1486,7 +1436,6 @@
 
 .method private onFadeEnd(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1520,7 +1469,6 @@
 
 .method private onFadeStart(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1613,7 +1561,6 @@
 
 .method private setChallengeShowing(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x4
 
@@ -1757,7 +1704,6 @@
 
 .method private showChallenge(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1809,8 +1755,6 @@
 
 .method private showChallenge(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mChallengeView:Lcom/android/keyguard/KeyguardSecurityContainer;
 
@@ -1862,8 +1806,6 @@
 # virtual methods
 .method animateChallengeTo(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -2005,7 +1947,6 @@
 
 .method animateHandle(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mHandleAnimation:Landroid/animation/ObjectAnimator;
 
@@ -2077,7 +2018,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/keyguard/SlidingChallengeLayout$LayoutParams;
 
@@ -2183,7 +2123,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -2341,7 +2280,6 @@
 
 .method distanceInfluenceForSnapDuration(F)F
     .locals 4
-    .param p1    # F
 
     const/high16 v0, 0x3f000000
 
@@ -2368,7 +2306,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
@@ -2377,7 +2314,6 @@
 
 .method public fadeChallenge(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mChallengeView:Lcom/android/keyguard/KeyguardSecurityContainer;
 
@@ -2477,7 +2413,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/keyguard/SlidingChallengeLayout$LayoutParams;
 
@@ -2492,7 +2427,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/keyguard/SlidingChallengeLayout$LayoutParams;
 
@@ -2728,7 +2662,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x1
 
@@ -2949,11 +2882,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 27
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -4182,8 +4110,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mChallengeView:Lcom/android/keyguard/KeyguardSecurityContainer;
 
@@ -4212,7 +4138,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x1
 
@@ -4537,8 +4462,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-boolean v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mIsBouncing:Z
 
@@ -4558,14 +4481,12 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setChallengeInteractive(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mChallengeInteractiveExternal:Z
 
@@ -4583,7 +4504,6 @@
 
 .method public setEnableChallengeDragging(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mEnableChallengeDragging:Z
 
@@ -4592,7 +4512,6 @@
 
 .method public setHandleAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mExpandChallengeView:Landroid/view/View;
 
@@ -4617,7 +4536,6 @@
 
 .method public setInsets(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mInsets:Landroid/graphics/Rect;
 
@@ -4628,7 +4546,6 @@
 
 .method public setIsSecured(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mIsSecured:Z
 
@@ -4637,7 +4554,6 @@
 
 .method public setMusicWidgetAdded(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mIsMusicWidgetAdded:Z
 
@@ -4646,7 +4562,6 @@
 
 .method public setOnBouncerStateChangedListener(Lcom/android/keyguard/ChallengeLayout$OnBouncerStateChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/ChallengeLayout$OnBouncerStateChangedListener;
 
     iput-object p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mBouncerListener:Lcom/android/keyguard/ChallengeLayout$OnBouncerStateChangedListener;
 
@@ -4655,7 +4570,6 @@
 
 .method public setOnChallengeScrolledListener(Lcom/android/keyguard/SlidingChallengeLayout$OnChallengeScrolledListener;)V
     .locals 1
-    .param p1    # Lcom/android/keyguard/SlidingChallengeLayout$OnChallengeScrolledListener;
 
     iput-object p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mScrollListener:Lcom/android/keyguard/SlidingChallengeLayout$OnChallengeScrolledListener;
 
@@ -4671,7 +4585,6 @@
 
 .method setScrimView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mScrimView:Landroid/view/View;
 
@@ -4724,7 +4637,6 @@
 
 .method setScrollState(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mScrollState:I
 
@@ -4762,7 +4674,6 @@
 
 .method public setSecurityCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/SlidingChallengeLayout;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -4862,7 +4773,6 @@
 
 .method public showChallenge(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 

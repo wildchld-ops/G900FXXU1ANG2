@@ -6,8 +6,6 @@
 # direct methods
 .method public static addGameIntentExtras(Lcom/google/android/finsky/api/model/Document;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -55,7 +53,6 @@
 
 .method public static handlePositiveClick(Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 2
-    .param p0    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -72,7 +69,6 @@
 
 .method public static isGameIntent(Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     const/4 v2, 0x0
 
@@ -120,9 +116,6 @@
 
 .method public static launchPlayGamesInstallDialog(Landroid/support/v4/app/FragmentManager;ILjava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

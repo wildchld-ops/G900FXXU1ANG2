@@ -79,10 +79,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/systemui/screenshot/SaveImageInBackgroundData;Landroid/app/NotificationManager;I)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
-    .param p3    # Landroid/app/NotificationManager;
-    .param p4    # I
 
     invoke-direct/range {p0 .. p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -746,7 +742,6 @@
 
 .method private isComponentAvailable(Landroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v2, 0x0
 
@@ -785,7 +780,6 @@
 # virtual methods
 .method protected varargs doInBackground([Lcom/android/systemui/screenshot/SaveImageInBackgroundData;)Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
     .locals 33
-    .param p1    # [Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
 
     const-string v28, "SaveImageInBackgroundTask"
 
@@ -1821,7 +1815,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
 
@@ -1834,7 +1827,6 @@
 
 .method protected onPostExecute(Lcom/android/systemui/screenshot/SaveImageInBackgroundData;)V
     .locals 14
-    .param p1    # Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
 
     const/4 v13, 0x2
 
@@ -2237,7 +2229,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;
 

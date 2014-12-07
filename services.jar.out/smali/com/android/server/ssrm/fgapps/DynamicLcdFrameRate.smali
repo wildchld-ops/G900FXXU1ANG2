@@ -136,8 +136,6 @@
 
 .method static synthetic access$100(Lcom/android/server/ssrm/fgapps/DynamicLcdFrameRate;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/fgapps/DynamicLcdFrameRate;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/fgapps/DynamicLcdFrameRate;->isFPSValid(I)Z
 
@@ -148,7 +146,6 @@
 
 .method private isFPSValid(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -174,7 +171,6 @@
 
 .method static onFullScreenStatusChanged(Z)V
     .locals 2
-    .param p0    # Z
 
     sget-boolean v0, Lcom/android/server/ssrm/Feature;->MODEL_D2:Z
 
@@ -436,16 +432,12 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/server/ssrm/fgapps/FgAppListener;
 
     const/4 v6, 0x0
 
@@ -622,9 +614,6 @@
 
 .method public onStatusNotiReceived(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/ssrm/fgapps/DynamicLcdFrameRate;->TAG:Ljava/lang/String;
 

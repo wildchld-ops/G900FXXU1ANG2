@@ -64,12 +64,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Landroid/os/Bundle;Landroid/app/FragmentManager;Lcom/android/contacts/widget/TransitionAnimationView;Landroid/view/View;Lcom/android/contacts/detail/ContactDetailFragment$Listener;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/FragmentManager;
-    .param p4    # Lcom/android/contacts/widget/TransitionAnimationView;
-    .param p5    # Landroid/view/View;
-    .param p6    # Lcom/android/contacts/detail/ContactDetailFragment$Listener;
 
     const/4 v1, 0x1
 
@@ -225,7 +219,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/detail/ContactDetailLayoutController;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mViewPager:Landroid/support/v4/view/ViewPager;
 
@@ -234,7 +227,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/detail/ContactDetailLayoutController;)Lcom/android/contacts/detail/ContactDetailTabCarousel;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mTabCarousel:Lcom/android/contacts/detail/ContactDetailTabCarousel;
 
@@ -243,7 +235,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/detail/ContactDetailLayoutController;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
 
     iget v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mViewPagerState:I
 
@@ -252,8 +243,6 @@
 
 .method static synthetic access$202(Lcom/android/contacts/detail/ContactDetailLayoutController;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mViewPagerState:I
 
@@ -262,8 +251,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/detail/ContactDetailLayoutController;I)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailLayoutController;->syncScrollStateBetweenLists(I)V
 
@@ -272,8 +259,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/detail/ContactDetailLayoutController;I)I
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailLayoutController;->getOffsetOfFirstItemInList(I)I
 
@@ -284,7 +269,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/detail/ContactDetailLayoutController;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mActivity:Landroid/app/Activity;
 
@@ -293,7 +277,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/detail/ContactDetailLayoutController;)Landroid/animation/Animator$AnimatorListener;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mTabCarouselAnimatorListener:Landroid/animation/Animator$AnimatorListener;
 
@@ -302,7 +285,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/detail/ContactDetailLayoutController;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mTabCarouselIsAnimating:Z
 
@@ -311,8 +293,6 @@
 
 .method static synthetic access$702(Lcom/android/contacts/detail/ContactDetailLayoutController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mTabCarouselIsAnimating:Z
 
@@ -321,7 +301,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/detail/ContactDetailLayoutController;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailLayoutController;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mContactHasUpdates:Z
 
@@ -369,7 +348,6 @@
 
 .method private getOffsetOfFirstItemInList(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -394,7 +372,6 @@
 
 .method private initialize(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const v8, 0x7f0800ec
 
@@ -735,7 +712,6 @@
 
 .method private showContactWithUpdates(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1072,7 +1048,6 @@
 
 .method private syncScrollStateBetweenLists(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1150,7 +1125,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "contactUri"
 
@@ -1177,7 +1151,6 @@
 
 .method public setContactData(Lcom/android/contacts/model/Contact;)V
     .locals 9
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     const/4 v4, 0x1
 
@@ -1347,7 +1320,6 @@
 
 .method public setRcsCapsData(Lcom/samsung/contacts/model/rcs/RcsCaps;)V
     .locals 1
-    .param p1    # Lcom/samsung/contacts/model/rcs/RcsCaps;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mDetailFragment:Lcom/android/contacts/detail/ContactDetailFragment;
 
@@ -1358,7 +1330,6 @@
 
 .method public setSnsFeedsData(Lcom/samsung/contacts/model/SnsFeeds;)V
     .locals 1
-    .param p1    # Lcom/samsung/contacts/model/SnsFeeds;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailLayoutController;->mDetailFragment:Lcom/android/contacts/detail/ContactDetailFragment;
 

@@ -47,7 +47,6 @@
 
 .method public setSysfsPath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/ssrm/fgapps/DynamicLcdFrameRate$DynamicLCDFPS_ALL;->LCD_FRAME_RATE_PATH:Ljava/lang/String;
 

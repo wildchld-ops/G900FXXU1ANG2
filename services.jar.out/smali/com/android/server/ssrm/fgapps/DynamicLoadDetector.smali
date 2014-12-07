@@ -255,7 +255,6 @@
 
 .method public static reportLoadState(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v1, Lcom/android/server/ssrm/fgapps/DynamicLoadDetector;->mHandler:Landroid/os/Handler;
 
@@ -407,14 +406,12 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method protected onLoadDetected(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -515,7 +512,6 @@
 
 .method scheduleMonitoring(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -616,7 +612,6 @@
 
 .method shiftSiopTable(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -627,8 +622,6 @@
 
 .method shiftSiopTable(ZI)V
     .locals 8
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v7, 0x0
 

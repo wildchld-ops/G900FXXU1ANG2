@@ -213,7 +213,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -304,8 +303,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$EnterpriseIntegrityServiceAgentCallback;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
-    .param p1    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$EnterpriseIntegrityServiceAgentCallback;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->getAdminId(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$EnterpriseIntegrityServiceAgentCallback;)I
 
@@ -316,8 +313,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;I)Lcom/sec/enterprise/knox/IEnterpriseIntegrityServiceAgentInterface;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->getISAInterface(I)Lcom/sec/enterprise/knox/IEnterpriseIntegrityServiceAgentInterface;
 
@@ -336,7 +331,6 @@
 
 .method static synthetic access$1502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->mProgress:I
 
@@ -353,7 +347,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->mContext:Landroid/content/Context;
 
@@ -362,7 +355,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->getAdminISAMAPFromDB()Ljava/util/Map;
 
@@ -373,9 +365,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;ILjava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->getPackageListfromDB(ILjava/lang/String;)Ljava/util/List;
 
@@ -386,9 +375,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->sendBroadcastToMDM(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -397,7 +383,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;)Lcom/android/server/enterprise/storage/EdmIntegrityStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmIntegrityStorageProvider;
 
@@ -406,8 +391,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;I)Lcom/sec/enterprise/knox/IIntegrityResultSubscriber;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->getSubscriberInstance(I)Lcom/sec/enterprise/knox/IIntegrityResultSubscriber;
 
@@ -466,7 +449,6 @@
 
 .method static synthetic access$902(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->mFilesCount:I
 
@@ -487,7 +469,6 @@
 
 .method private enforceEnterpriseISLPermission(Landroid/app/enterprise/ContextInfo;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {}, Landroid/os/PersonaManager;->getKnoxInfo()Landroid/os/Bundle;
 
@@ -540,7 +521,6 @@
 
 .method private enforceOwnerOnlyAndEnterpriseISLPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -608,7 +588,6 @@
 
 .method private getAdminId(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$EnterpriseIntegrityServiceAgentCallback;)I
     .locals 5
-    .param p1    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$EnterpriseIntegrityServiceAgentCallback;
 
     const/4 v2, -0x1
 
@@ -701,7 +680,6 @@
 
 .method private getISAInterface(I)Lcom/sec/enterprise/knox/IEnterpriseIntegrityServiceAgentInterface;
     .locals 3
-    .param p1    # I
 
     sget-boolean v0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -770,8 +748,6 @@
 
 .method private getPackageListfromDB(ILjava/lang/String;)Ljava/util/List;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -840,7 +816,6 @@
 
 .method private getSubscriberInstance(I)Lcom/sec/enterprise/knox/IIntegrityResultSubscriber;
     .locals 3
-    .param p1    # I
 
     sget-boolean v0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -909,8 +884,6 @@
 
 .method private sendBroadcastToMDM(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 16
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, -0x1
 
@@ -1307,7 +1280,6 @@
 # virtual methods
 .method public clearBaseline(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     sget-boolean v3, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -1377,7 +1349,6 @@
 
 .method public convertEventToString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1443,8 +1414,6 @@
 
 .method public establishBaselineScan(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     sget-boolean v3, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -1514,7 +1483,6 @@
 
 .method public getISAList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1685,7 +1653,6 @@
 
 .method public isISAReady(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     sget-boolean v1, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -1750,14 +1717,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->mAdminIdList:Ljava/util/List;
 
@@ -1784,14 +1749,12 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public performPreBaselineScan(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     sget-boolean v3, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -1861,8 +1824,6 @@
 
 .method public performScanNow(Landroid/app/enterprise/ContextInfo;ILjava/util/List;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1943,8 +1904,6 @@
 
 .method public putPackageToBaseline(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v3, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -2073,8 +2032,6 @@
 
 .method public removePackageFromBaseline(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v3, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -2144,8 +2101,6 @@
 
 .method public requestBindISA(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 25
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/16 v18, 0x0
 
@@ -2720,7 +2675,6 @@
 
 .method public setISLCallBack(I)V
     .locals 5
-    .param p1    # I
 
     sget-boolean v3, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 
@@ -2799,8 +2753,6 @@
 
 .method public setIntegrityResultSubscriber(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/IIntegrityResultSubscriber;)V
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/IIntegrityResultSubscriber;
 
     if-nez p2, :cond_1
 
@@ -2895,7 +2847,6 @@
 
 .method public startRuntimeWatch(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/16 v3, 0xfc6
 
@@ -2982,7 +2933,6 @@
 
 .method public stopRuntimeWatch(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x0
 
@@ -3153,7 +3103,6 @@
 
 .method public updatePlatformBaseline(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     sget-boolean v3, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
 

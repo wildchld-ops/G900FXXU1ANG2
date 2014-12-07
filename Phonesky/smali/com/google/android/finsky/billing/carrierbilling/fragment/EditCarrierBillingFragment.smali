@@ -606,7 +606,6 @@
 
 .method private initViews(Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment;->mEditSection:Landroid/view/ViewGroup;
 
@@ -643,9 +642,6 @@
 
 .method public static newInstance(Ljava/lang/String;Lcom/google/android/finsky/billing/BillingUtils$AddressMode;Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;Ljava/util/ArrayList;)Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -695,9 +691,6 @@
 
 .method private setTextViewError(Landroid/widget/TextView;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p3}, Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment;->getString(I)Ljava/lang/String;
 
@@ -710,7 +703,6 @@
 
 .method private setupAddressEditView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment;->mAddressMode:Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
 
@@ -740,8 +732,6 @@
 
 .method private setupAddressEditView(Landroid/view/View;Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
 
     invoke-virtual {p2}, Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;->getName()Ljava/lang/String;
 
@@ -790,8 +780,6 @@
 
 .method private showAddressEditView(Landroid/view/View;Lcom/android/i18n/addressinput/AddressData;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/i18n/addressinput/AddressData;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment;->mAddressMode:Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
 
@@ -864,7 +852,6 @@
 
 .method private showNameView(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment;->mNameView:Landroid/widget/TextView;
 
@@ -875,7 +862,6 @@
 
 .method private showPhoneNumberEditView(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -913,7 +899,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/LoggingFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -929,7 +914,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1016,9 +1000,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -1128,7 +1109,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/LoggingFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1141,7 +1121,6 @@
 
 .method public setOnResultListener(Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment$EditCarrierBillingResultListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment$EditCarrierBillingResultListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment;->mListener:Lcom/google/android/finsky/billing/carrierbilling/fragment/EditCarrierBillingFragment$EditCarrierBillingResultListener;
 

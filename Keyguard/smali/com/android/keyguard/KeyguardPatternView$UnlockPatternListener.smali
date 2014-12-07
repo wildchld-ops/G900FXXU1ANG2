@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/keyguard/KeyguardPatternView;Lcom/android/keyguard/KeyguardPatternView$1;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardPatternView;
-    .param p2    # Lcom/android/keyguard/KeyguardPatternView$1;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardPatternView$UnlockPatternListener;-><init>(Lcom/android/keyguard/KeyguardPatternView;)V
 

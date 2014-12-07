@@ -130,8 +130,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/WindowManager;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/WindowManager;
 
     const/high16 v5, -0x1000000
 
@@ -566,7 +564,6 @@
 
 .method private initLoadingBubble(Landroid/util/DisplayMetrics;)V
     .locals 7
-    .param p1    # Landroid/util/DisplayMetrics;
 
     iget-object v2, p0, Lcom/samsung/mms/location/PinBubbleView;->paintLoading:Landroid/graphics/Paint;
 
@@ -669,7 +666,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Lcom/samsung/mms/location/PinBubbleView;->isMedia:Z
 
@@ -699,7 +695,6 @@
 
 .method protected drawAddressBubble(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v5, p0, Lcom/samsung/mms/location/PinBubbleView;->bubbleFrame:Landroid/graphics/drawable/NinePatchDrawable;
 
@@ -1118,7 +1113,6 @@
 
 .method protected drawLoadingBubble(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v5, p0, Lcom/samsung/mms/location/PinBubbleView;->bubbleFrame:Landroid/graphics/drawable/NinePatchDrawable;
 
@@ -1245,7 +1239,6 @@
 
 .method protected drawMediaBubble(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v6, 0x1
 
@@ -1452,8 +1445,6 @@
 
 .method public isInPinbuble(FF)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     iget-object v4, p0, Lcom/samsung/mms/location/PinBubbleView;->bubbleRectangle:Lcom/nbi/map/data/Rectangle;
 
@@ -1699,13 +1690,6 @@
 
 .method public setAddressData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZII)Lcom/nbi/map/data/Rectangle;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # I
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2432,12 +2416,6 @@
 
 .method public setImageData(Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Lcom/nbi/map/data/Rectangle;
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     iput-object p2, p0, Lcom/samsung/mms/location/PinBubbleView;->titleText:Ljava/lang/String;
 
@@ -2829,7 +2807,6 @@
 
 .method public setIsLoading(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/mms/location/PinBubbleView;->isLoading:Z
 
@@ -2838,8 +2815,6 @@
 
 .method public setLoadingData(II)Lcom/nbi/map/data/Rectangle;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/mms/location/PinBubbleView;->loadingBubbleRectangle:Lcom/nbi/map/data/Rectangle;
 

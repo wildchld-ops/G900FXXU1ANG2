@@ -36,7 +36,6 @@
 
 .method private decodedBitmapDrawable([B)Landroid/graphics/drawable/BitmapDrawable;
     .locals 4
-    .param p1    # [B
 
     iget-object v2, p0, Lcom/android/contacts/util/ImageViewDrawableSetter;->mTarget:Lcom/samsung/contacts/widget/ContactPhotoView;
 
@@ -186,8 +185,6 @@
 
 .method protected setCompressedImage([BJ)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # [B
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -321,7 +318,6 @@
 
 .method public setDefaultBackgroundColor(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/contacts/util/ImageViewDrawableSetter;->mTarget:Lcom/samsung/contacts/widget/ContactPhotoView;
 
@@ -342,7 +338,6 @@
 
 .method public setDefaultBackgroundColorWithAlpha(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/contacts/util/ImageViewDrawableSetter;->mTarget:Lcom/samsung/contacts/widget/ContactPhotoView;
 
@@ -357,7 +352,6 @@
 
 .method public setResources(Landroid/content/res/Resources;)V
     .locals 0
-    .param p1    # Landroid/content/res/Resources;
 
     iput-object p1, p0, Lcom/android/contacts/util/ImageViewDrawableSetter;->mResources:Landroid/content/res/Resources;
 
@@ -366,7 +360,6 @@
 
 .method protected setTarget(Lcom/samsung/contacts/widget/ContactPhotoView;)V
     .locals 2
-    .param p1    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     const/4 v1, 0x0
 
@@ -386,8 +379,6 @@
 
 .method protected setTarget(Lcom/samsung/contacts/widget/ContactPhotoView;J)V
     .locals 3
-    .param p1    # Lcom/samsung/contacts/widget/ContactPhotoView;
-    .param p2    # J
 
     const/4 v2, 0x0
 
@@ -414,8 +405,6 @@
 
 .method public setupContactPhoto(Lcom/android/contacts/model/Contact;Lcom/samsung/contacts/widget/ContactPhotoView;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/model/Contact;
-    .param p2    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     invoke-virtual {p1}, Lcom/android/contacts/model/Contact;->getId()J
 

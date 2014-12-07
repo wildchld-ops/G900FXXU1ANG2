@@ -458,8 +458,6 @@
 
 .method private static adjustValueToSysfsValue(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/ssrm/GenericFalImpl;->mPlatformType:Lcom/android/server/ssrm/GenericFalImpl$PlatformType;
 
@@ -496,7 +494,6 @@
 
 .method private checkFileExistence(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -786,8 +783,6 @@
 
 .method public static logOnAll(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -796,8 +791,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/GenericFalImpl;->DEBUG:Z
 
@@ -2155,7 +2148,6 @@
 # virtual methods
 .method public checkNodeExistence(I)Z
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2265,7 +2257,6 @@
 
 .method public initSupportedFrequency(I)[I
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2438,8 +2429,6 @@
 
 .method public modifyToValues(II)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -2838,7 +2827,6 @@
 
 .method public revertToDefault(I)Z
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

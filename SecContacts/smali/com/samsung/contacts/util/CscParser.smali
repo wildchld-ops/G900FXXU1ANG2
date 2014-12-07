@@ -76,7 +76,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -840,7 +839,6 @@
 
 .method private update(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/xml/parsers/ParserConfigurationException;,
@@ -924,7 +922,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/util/CscParser;->search(Ljava/lang/String;)Lorg/w3c/dom/Node;
 
@@ -951,7 +948,6 @@
 
 .method public search(Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -999,8 +995,6 @@
 
 .method public search(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 6
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

@@ -334,7 +334,6 @@
 
 .method static synthetic access$100(Lcom/android/dialer/CallDetailActivity;)Lcom/samsung/contacts/util/ImsLowSignalHelper;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mImsLowSignalHelper:Lcom/samsung/contacts/util/ImsLowSignalHelper;
 
@@ -343,9 +342,6 @@
 
 .method static synthetic access$1000(Lcom/android/dialer/CallDetailActivity;Lcom/android/dialer/CallDetailActivity$ViewEntry;I)V
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Lcom/android/dialer/CallDetailActivity$ViewEntry;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/dialer/CallDetailActivity;->configureCallButton(Lcom/android/dialer/CallDetailActivity$ViewEntry;I)V
 
@@ -354,8 +350,6 @@
 
 .method static synthetic access$1100(Lcom/android/dialer/CallDetailActivity;J)V
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/dialer/CallDetailActivity;->queryContact(J)V
 
@@ -364,7 +358,6 @@
 
 .method static synthetic access$1200(Lcom/android/dialer/CallDetailActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mContext:Landroid/content/Context;
 
@@ -373,7 +366,6 @@
 
 .method static synthetic access$1300(Lcom/android/dialer/CallDetailActivity;)V
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     invoke-direct {p0}, Lcom/android/dialer/CallDetailActivity;->disableCallButton()V
 
@@ -382,7 +374,6 @@
 
 .method static synthetic access$1400(Lcom/android/dialer/CallDetailActivity;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mContactNButtonsLayout:Landroid/widget/RelativeLayout;
 
@@ -391,7 +382,6 @@
 
 .method static synthetic access$1500(Lcom/android/dialer/CallDetailActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-boolean v0, p0, Lcom/android/dialer/CallDetailActivity;->mIsScoverFeatureEnabled:Z
 
@@ -400,7 +390,6 @@
 
 .method static synthetic access$1600(Lcom/android/dialer/CallDetailActivity;)Lcom/samsung/dialer/cover/MissedCallCoverManager;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mMissedCallCoverMgr:Lcom/samsung/dialer/cover/MissedCallCoverManager;
 
@@ -409,7 +398,6 @@
 
 .method static synthetic access$1700(Lcom/android/dialer/CallDetailActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mJobTitle:Ljava/lang/String;
 
@@ -418,7 +406,6 @@
 
 .method static synthetic access$1800(Lcom/android/dialer/CallDetailActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mCompany:Ljava/lang/String;
 
@@ -427,8 +414,6 @@
 
 .method static synthetic access$1902(Lcom/android/dialer/CallDetailActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/CallDetailActivity;->mIsPostExcuteDone:Z
 
@@ -437,8 +422,6 @@
 
 .method static synthetic access$200(Lcom/android/dialer/CallDetailActivity;Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/dialer/CallDetailActivity;->getPhotoUribyId(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -449,7 +432,6 @@
 
 .method static synthetic access$2000(Lcom/android/dialer/CallDetailActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mHistoryList:Landroid/widget/ListView;
 
@@ -458,8 +440,6 @@
 
 .method static synthetic access$2002(Lcom/android/dialer/CallDetailActivity;Landroid/widget/ListView;)Landroid/widget/ListView;
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Landroid/widget/ListView;
 
     iput-object p1, p0, Lcom/android/dialer/CallDetailActivity;->mHistoryList:Landroid/widget/ListView;
 
@@ -468,7 +448,6 @@
 
 .method static synthetic access$2100(Lcom/android/dialer/CallDetailActivity;)Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mAdapter:Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
@@ -477,8 +456,6 @@
 
 .method static synthetic access$2102(Lcom/android/dialer/CallDetailActivity;Lcom/android/dialer/calllog/CallDetailHistoryAdapter;)Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
     iput-object p1, p0, Lcom/android/dialer/CallDetailActivity;->mAdapter:Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
@@ -487,7 +464,6 @@
 
 .method static synthetic access$2200(Lcom/android/dialer/CallDetailActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mSystemUIBackgroundView:Landroid/view/View;
 
@@ -496,7 +472,6 @@
 
 .method static synthetic access$2400(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/dialer/CallDetailActivity;->formatAsMinutesAndSeconds(I)Ljava/lang/String;
 
@@ -515,10 +490,6 @@
 
 .method static synthetic access$300(Lcom/android/dialer/CallDetailActivity;Landroid/net/Uri;JZ)V
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/dialer/CallDetailActivity;->loadContactPhotos(Landroid/net/Uri;JZ)V
 
@@ -527,8 +498,6 @@
 
 .method static synthetic access$400(Lcom/android/dialer/CallDetailActivity;Ljava/lang/String;)[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/dialer/CallDetailActivity;->getPhoneCallDetailsImplForUri(Ljava/lang/String;)[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
@@ -539,7 +508,6 @@
 
 .method static synthetic access$500(Lcom/android/dialer/CallDetailActivity;)Lcom/android/dialer/calllog/PhoneNumberHelper;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mPhoneNumberHelper:Lcom/android/dialer/calllog/PhoneNumberHelper;
 
@@ -548,8 +516,6 @@
 
 .method static synthetic access$600(Lcom/android/dialer/CallDetailActivity;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/dialer/CallDetailActivity;->isAutoBlockedLog(Ljava/lang/String;)Z
 
@@ -560,7 +526,6 @@
 
 .method static synthetic access$700(Lcom/android/dialer/CallDetailActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-boolean v0, p0, Lcom/android/dialer/CallDetailActivity;->mIsSavedContact:Z
 
@@ -569,8 +534,6 @@
 
 .method static synthetic access$702(Lcom/android/dialer/CallDetailActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/CallDetailActivity;->mIsSavedContact:Z
 
@@ -579,7 +542,6 @@
 
 .method static synthetic access$800(Lcom/android/dialer/CallDetailActivity;)V
     .locals 0
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     invoke-direct {p0}, Lcom/android/dialer/CallDetailActivity;->configureActionBar()V
 
@@ -588,7 +550,6 @@
 
 .method static synthetic access$900(Lcom/android/dialer/CallDetailActivity;)Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;
     .locals 1
-    .param p0    # Lcom/android/dialer/CallDetailActivity;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mRcsPinner:Lcom/samsung/contacts/model/rcs/RcsDetailViewPinnerForCallLog;
 
@@ -1938,7 +1899,6 @@
 
 .method private isAutoBlockedLog(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -2138,7 +2098,6 @@
 
 .method private markVoicemailAsRead(Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mAsyncTaskExecutor:Lcom/android/dialer/util/AsyncTaskExecutor;
 
@@ -2306,7 +2265,6 @@
 
 .method private restoreSavedState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 
@@ -2432,7 +2390,6 @@
 
 .method private updateData(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/contacts/ContactsApplication;->callDetailEnter:Lcom/samsung/contacts/ContactsPerformance;
 
@@ -2475,7 +2432,6 @@
 
 .method public disableProximitySensor(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mProximitySensorManager:Lcom/android/dialer/ProximitySensorManager;
 
@@ -2496,7 +2452,6 @@
 
 .method public getCallLogEntryUris(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3120,7 +3075,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, -0x1
 
@@ -3878,7 +3832,6 @@
 
 .method public onMenuTrashVoicemail(Landroid/view/MenuItem;)V
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-direct {p0}, Lcom/android/dialer/CallDetailActivity;->getVoicemailUri()Landroid/net/Uri;
 
@@ -4097,7 +4050,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity;->mOMenuController:Lcom/samsung/contacts/menu/controller/CallDetailOptionsMenuControllerImpl;
 
@@ -4121,7 +4073,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -4372,7 +4323,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

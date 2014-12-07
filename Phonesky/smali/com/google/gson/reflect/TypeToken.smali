@@ -66,7 +66,6 @@
 
 .method constructor <init>(Ljava/lang/reflect/Type;)V
     .locals 1
-    .param p1    # Ljava/lang/reflect/Type;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,7 +123,6 @@
 
 .method public static get(Ljava/lang/reflect/Type;)Lcom/google/gson/reflect/TypeToken;
     .locals 1
-    .param p0    # Ljava/lang/reflect/Type;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -193,7 +191,6 @@
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/google/gson/reflect/TypeToken;
 

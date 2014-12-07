@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardWidgetFrame;-><init>(Landroid/content/Context;)V
 
@@ -39,9 +38,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/appwidget/AppWidgetHost;Landroid/appwidget/AppWidgetManager;)Lcom/android/keyguard/sec/ShortCutWidgetFrame;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/appwidget/AppWidgetHost;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
 
     const/4 v6, 0x0
 

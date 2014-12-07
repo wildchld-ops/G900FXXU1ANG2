@@ -31,9 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;ILjava/util/Timer;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
-    .param p3    # Ljava/util/Timer;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -338,7 +335,6 @@
 
 .method public write([B)V
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -393,9 +389,6 @@
 
 .method public write([BII)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

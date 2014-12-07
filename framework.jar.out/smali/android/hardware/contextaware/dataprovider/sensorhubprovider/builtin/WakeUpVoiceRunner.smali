@@ -6,9 +6,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/VoiceLibProvider;-><init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -101,7 +98,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

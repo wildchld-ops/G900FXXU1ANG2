@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b0122
 
@@ -98,7 +97,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/PersonalModeQuickSettingButton;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/PersonalModeQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/PersonalModeQuickSettingButton;->updateState()V
 
@@ -238,7 +236,6 @@
 
 .method public onClick(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mIsProcessing:Z
 

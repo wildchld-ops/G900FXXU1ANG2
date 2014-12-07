@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -24,8 +22,6 @@
 # virtual methods
 .method public configure(Lcom/google/android/finsky/api/model/DfeReviews;Lcom/google/android/finsky/adapters/ReviewsAdapter$ChooseListingOptionsHandler;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/DfeReviews;
-    .param p2    # Lcom/google/android/finsky/adapters/ReviewsAdapter$ChooseListingOptionsHandler;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ReviewsControlContainer;->mSortBox:Landroid/widget/TextView;
 

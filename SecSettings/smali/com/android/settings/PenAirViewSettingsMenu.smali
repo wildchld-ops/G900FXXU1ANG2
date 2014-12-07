@@ -63,7 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PenAirViewSettingsMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PenAirViewSettingsMenu;
 
     invoke-direct {p0}, Lcom/android/settings/PenAirViewSettingsMenu;->updatePenAirViewSettingsMenu()V
 
@@ -72,7 +71,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/PenAirViewSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/PenAirViewSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/PenAirViewSettingsMenu;->mSwitchPrefPenInformationPreview:Landroid/preference/SwitchPreferenceScreen;
 
@@ -208,7 +206,6 @@
 
 .method public static isAllOptionDisabled(Landroid/content/ContentResolver;)Z
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v6, 0x1
 
@@ -273,7 +270,6 @@
 
 .method private showAirViewDialog(Landroid/preference/Preference;)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/PenAirViewSettingsMenu;->mAirViewDialog:Landroid/app/AlertDialog;
 
@@ -435,7 +431,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -444,9 +439,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v0, "PenAirViewSettings"
 
@@ -485,7 +477,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -841,8 +832,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -995,8 +984,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 

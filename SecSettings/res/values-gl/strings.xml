@@ -1373,7 +1373,7 @@ Tamén podes amosar ou ocultar a agarradoira da multi window mantendo pulsada a 
     <string name="usb_tethering_errored_subtext">Erro na ancoraxe á rede USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Non se pode desactivar a ancoraxe á rede USB mentres se utiliza SideSync. A desactivación da ancoraxe á rede USB desactivará SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Non se pode activar a ancoraxe á rede USB mentres se utiliza SideSync. A activación da ancoraxe á rede USB desactivará SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Ancoraxe á rede do Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Ancoraxe á rede do Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Compartindo conex. a Internet deste dispositivo…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Conexión a Internet do dispositivo compartida con 1 dispositivo</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Conexión a Internet do dispositivo compartida con %d dispositivos</string>

@@ -1508,7 +1508,6 @@
 
 .method public static DEBUG_setBlockContextAwareness(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->DEBUG_mBlockContextAwareness:Z
 
@@ -1517,7 +1516,6 @@
 
 .method public static SetChameleonTextTemplate(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ";"
 
@@ -1532,7 +1530,6 @@
 
 .method public static SetPreloadTextTemplate(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ";"
 
@@ -1569,8 +1566,6 @@
 
 .method public static final beginDocument(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1657,7 +1652,6 @@
 
 .method private static checkContextProviderForAlways(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1698,7 +1692,6 @@
 
 .method private static checkTranslatorEnabled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1733,8 +1726,6 @@
 
 .method private static disableComponent(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1755,8 +1746,6 @@
 
 .method private static enableComponent(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1775,7 +1764,6 @@
 
 .method private static generateUaString(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -1973,7 +1961,6 @@
 
 .method private static generateUapUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2507,7 +2494,6 @@
 
 .method public static getCurrentPrefVersion(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -2997,7 +2983,6 @@
 
 .method public static getEnableAssistantMenu(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -3514,7 +3499,6 @@
 
 .method public static getEnableEasyMode(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -5296,7 +5280,6 @@
 
 .method public static getIMSIbySimSlot(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     if-eqz p0, :cond_0
 
@@ -5669,7 +5652,6 @@
 
 .method public static getNewPrefVersion(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "1.0.0"
 
@@ -5853,9 +5835,6 @@
 
 .method private static getTagListsToArray(Lcom/android/mms/transaction/CscParser;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 7
-    .param p0    # Lcom/android/mms/transaction/CscParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -5921,7 +5900,6 @@
 
 .method public static getTextTemplate(Landroid/content/Context;)[Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -6132,7 +6110,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/MmsConfig"
 
@@ -6305,7 +6282,6 @@
 
 .method public static isCDMANetworkRegistered(I)Z
     .locals 5
-    .param p0    # I
 
     invoke-static {p0}, Landroid/telephony/MultiSimTelephonyManager;->getDefault(I)Landroid/telephony/MultiSimTelephonyManager;
 
@@ -6407,7 +6383,6 @@
 
 .method public static isContextProviderForAlways(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/mms/MmsConfig;->sIsContextProviderForAlways:Z
 
@@ -6573,7 +6548,6 @@
 
 .method public static isFolderModel(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -6714,8 +6688,6 @@
 
 .method private static isPhoneAndServerTime(Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     if-nez p0, :cond_1
 
@@ -6739,8 +6711,6 @@
 
 .method private static isServerTime(Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     if-nez p0, :cond_1
 
@@ -6777,7 +6747,6 @@
 
 .method public static isSmsPromoDismissed(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -7006,7 +6975,6 @@
 
 .method public static loadChameleonFromPreference(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v2, Lcom/android/mms/MmsConfig;->sEnableChameleon:Z
 
@@ -7265,7 +7233,6 @@
 
 .method public static loadCscSettings(Landroid/content/Context;)V
     .locals 15
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -9815,7 +9782,6 @@
 
 .method public static loadFromPreference(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/16 v4, 0xa
 
@@ -10196,7 +10162,6 @@
 
 .method private static loadMmsSettings(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -10633,7 +10598,6 @@
 
 .method private static loadOtherSettings(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -10679,7 +10643,6 @@
 
 .method private static loadProvisioning(Landroid/content/Context;)V
     .locals 15
-    .param p0    # Landroid/content/Context;
 
     const/4 v14, 0x1
 
@@ -11157,7 +11120,6 @@
 
 .method public static final nextElement(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 2
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -11184,7 +11146,6 @@
 
 .method private static parseImageResizeQuality(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -11273,7 +11234,6 @@
 
 .method public static setApnOnOff(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->sEnableApnOnOff:Z
 
@@ -11282,7 +11242,6 @@
 
 .method public static setCBChannel(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -11368,7 +11327,6 @@
 
 .method public static setCmasConversationListQuery(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/MmsConfig;->sCmasConversationListQuery:Ljava/lang/String;
 
@@ -11377,7 +11335,6 @@
 
 .method public static setCmasTestOnOff(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->sEnableCMASTestOnOff:Z
 
@@ -11386,7 +11343,6 @@
 
 .method public static setContactMatchCliDigit(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/MmsConfig;->sContactMatchCliDigit:I
 
@@ -11395,8 +11351,6 @@
 
 .method public static setCurrentPrefVersion(Landroid/content/Context;[B)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -11482,7 +11436,6 @@
 
 .method public static setEmailGateway(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/MmsConfig;->sEmailGateway:Ljava/lang/String;
 
@@ -11491,7 +11444,6 @@
 
 .method private static setEnalbeLimitOnMmsSubject(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/16 v6, 0x28
 
@@ -11643,7 +11595,6 @@
 
 .method public static setImageResolution(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/16 v6, 0xa00
 
@@ -11993,7 +11944,6 @@
 
 .method public static setMaxMessageSize(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/MmsConfig;->sMaxMessageSize:I
 
@@ -12002,8 +11952,6 @@
 
 .method public static setMaxMessageSize(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "free"
 
@@ -12074,7 +12022,6 @@
 
 .method public static setMaxMessageSize(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -12283,7 +12230,6 @@
 
 .method public static setMessageConfigImeiTracker(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/MmsConfig;->sMessageConfigImeiTracker:Ljava/lang/String;
 
@@ -12292,7 +12238,6 @@
 
 .method public static setMmsExpiry(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -12429,7 +12374,6 @@
 
 .method public static setMmsMaxRecipient(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/MmsConfig;->sMmsRecipientLimit:I
 
@@ -12438,7 +12382,6 @@
 
 .method public static setMmsSlideMaxCount(I)V
     .locals 3
-    .param p0    # I
 
     if-gtz p0, :cond_0
 
@@ -12475,7 +12418,6 @@
 
 .method public static setMsgtoneRepeatInterval(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -12597,7 +12539,6 @@
 
 .method public static setOperatorNumeric(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/MmsConfig;->sOperatorNumeric:Ljava/lang/String;
 
@@ -12606,7 +12547,6 @@
 
 .method public static setOptionalFieldAttendance(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->sOptionalFieldAttendance:Z
 
@@ -12615,7 +12555,6 @@
 
 .method public static setRecipientLimit(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/MmsConfig;->sRecipientLimit:I
 
@@ -12624,7 +12563,6 @@
 
 .method public static setSavePduFiles(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->sSavePdu:Z
 
@@ -12633,7 +12571,6 @@
 
 .method public static setSetFontSizeByVolumeKey(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->sSetFontSizeByVolumeKey:Z
 
@@ -12642,7 +12579,6 @@
 
 .method public static setSmsMmsThreshold(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/MmsConfig;->sSmsToMmsTextThreshold:I
 
@@ -12651,7 +12587,6 @@
 
 .method public static setSmsPromoDismissed(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -12674,7 +12609,6 @@
 
 .method public static setTetheringMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->sTetheringmode:Z
 
@@ -12683,7 +12617,6 @@
 
 .method public static setTransactionLoggable(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/MmsConfig;->sTransactionLoggable:Z
 
@@ -12692,7 +12625,6 @@
 
 .method public static setTransactionTimeout(I)V
     .locals 1
-    .param p0    # I
 
     mul-int/lit16 v0, p0, 0x3e8
 
@@ -12703,7 +12635,6 @@
 
 .method public static setUaProfUrl(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/MmsConfig;->sUaProfUrl:Ljava/lang/String;
 
@@ -12712,7 +12643,6 @@
 
 .method public static setUserAgent(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/mms/MmsConfig;->sUserAgent:Ljava/lang/String;
 
@@ -13145,7 +13075,6 @@
 
 .method private static setmDisableSmscEditableOnlyFor(Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

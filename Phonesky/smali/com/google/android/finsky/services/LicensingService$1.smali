@@ -31,11 +31,6 @@
 
 .method private checkLicense(JLjava/lang/String;Lcom/android/vending/licensing/ILicenseResultListener;ILjava/lang/String;)V
     .locals 4
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/vending/licensing/ILicenseResultListener;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -80,9 +75,6 @@
 # virtual methods
 .method public checkLicense(JLjava/lang/String;Lcom/android/vending/licensing/ILicenseResultListener;)V
     .locals 23
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/vending/licensing/ILicenseResultListener;
 
     :try_start_0
     move-object/from16 v0, p0

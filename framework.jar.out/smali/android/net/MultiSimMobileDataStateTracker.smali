@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/net/MobileDataStateTracker;-><init>(ILjava/lang/String;)V
 
@@ -44,7 +42,6 @@
 
 .method static synthetic access$000(Landroid/net/MultiSimMobileDataStateTracker;)[Lcom/android/internal/util/AsyncChannel;
     .locals 1
-    .param p0    # Landroid/net/MultiSimMobileDataStateTracker;
 
     iget-object v0, p0, Landroid/net/MultiSimMobileDataStateTracker;->mDataConnectionTrackerAcs:[Lcom/android/internal/util/AsyncChannel;
 
@@ -55,7 +52,6 @@
 # virtual methods
 .method protected getPhoneService(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/net/MobileDataStateTracker;->getPhoneService(Z)V
 
@@ -74,7 +70,6 @@
 
 .method public setDependencyMet(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/net/MobileDataStateTracker;->setDependencyMet(Z)V
 
@@ -83,7 +78,6 @@
 
 .method public setEnableFailFastMobileData(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/net/MobileDataStateTracker;->setEnableFailFastMobileData(I)V
 
@@ -92,7 +86,6 @@
 
 .method public setPolicyDataEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/net/MobileDataStateTracker;->setPolicyDataEnable(Z)V
 
@@ -101,7 +94,6 @@
 
 .method public setUserDataEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/net/MobileDataStateTracker;->setUserDataEnable(Z)V
 
@@ -110,8 +102,6 @@
 
 .method public setUserDataEnableEx(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     invoke-super {p0, p1}, Landroid/net/MobileDataStateTracker;->setUserDataEnable(Z)V
 
@@ -120,8 +110,6 @@
 
 .method public startMonitoring(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-super {p0, p1, p2}, Landroid/net/MobileDataStateTracker;->startMonitoring(Landroid/content/Context;Landroid/os/Handler;)V
 
@@ -130,8 +118,6 @@
 
 .method public supplyMessenger(Landroid/os/Messenger;I)V
     .locals 0
-    .param p1    # Landroid/os/Messenger;
-    .param p2    # I
 
     invoke-super {p0, p1}, Landroid/net/MobileDataStateTracker;->supplyMessenger(Landroid/os/Messenger;)V
 

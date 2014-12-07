@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/activities/WebViewChallengeActivity;Landroid/app/Activity;)V
     .locals 0
-    .param p2    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/WebViewChallengeActivity$1;->this$0:Lcom/google/android/finsky/activities/WebViewChallengeActivity;
 

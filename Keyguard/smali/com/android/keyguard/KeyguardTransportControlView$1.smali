@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClientChange(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -50,7 +49,6 @@
 
 .method public onClientMetadataUpdate(Landroid/media/RemoteController$MetadataEditor;)V
     .locals 1
-    .param p1    # Landroid/media/RemoteController$MetadataEditor;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
@@ -69,7 +67,6 @@
 
 .method public onClientPlaybackStateUpdate(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
@@ -81,10 +78,6 @@
 
 .method public onClientPlaybackStateUpdate(IJJF)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # F
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 
@@ -167,7 +160,6 @@
 
 .method public onClientTransportControlUpdate(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$1;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 

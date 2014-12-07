@@ -100,8 +100,6 @@
 
 .method protected static addPassword(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -130,12 +128,6 @@
 
 .method protected static getActivityIntent(Landroid/content/Context;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -254,8 +246,6 @@
 
 .method static openMessageChatRoom(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -280,9 +270,6 @@
 
 .method static openMessageChatRoomWithDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -307,10 +294,6 @@
 
 .method static sendMessageContent(Landroid/content/Context;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;Ljava/lang/String;Landroid/net/Uri;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -335,11 +318,6 @@
 
 .method static sendMessageContent(Landroid/content/Context;Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/sec/chaton/clientapi/ChatONAPI$MimeType;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

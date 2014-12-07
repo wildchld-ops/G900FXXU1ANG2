@@ -33,10 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/editor/ContactEditorFragment;Landroid/content/Context;Lcom/android/contacts/editor/BaseRawContactEditorView;ILcom/android/contacts/model/RawContactDeltaList;)V
     .locals 6
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/contacts/editor/BaseRawContactEditorView;
-    .param p4    # I
-    .param p5    # Lcom/android/contacts/model/RawContactDeltaList;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;->this$0:Lcom/android/contacts/editor/ContactEditorFragment;
 
@@ -77,7 +73,6 @@
 
 .method static synthetic access$2600(Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;)Lcom/android/contacts/editor/BaseRawContactEditorView;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;->mEditor:Lcom/android/contacts/editor/BaseRawContactEditorView;
 
@@ -86,7 +81,6 @@
 
 .method static synthetic access$3100(Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
 
     iget-object v0, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mContext:Landroid/content/Context;
 
@@ -95,7 +89,6 @@
 
 .method static synthetic access$3300(Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
 
     iget-object v0, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mContext:Landroid/content/Context;
 
@@ -104,7 +97,6 @@
 
 .method static synthetic access$3400(Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
 
     iget-object v0, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mContext:Landroid/content/Context;
 
@@ -113,7 +105,6 @@
 
 .method static synthetic access$3500(Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
 
     iget-object v0, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mContext:Landroid/content/Context;
 
@@ -132,9 +123,6 @@
 
 .method protected startAvatarActivity(Landroid/content/Intent;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;->this$0:Lcom/android/contacts/editor/ContactEditorFragment;
 
@@ -173,9 +161,6 @@
 
 .method public startPhotoActivity(Landroid/content/Intent;ILandroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;->this$0:Lcom/android/contacts/editor/ContactEditorFragment;
 
@@ -214,9 +199,6 @@
 
 .method public startPhotoActivity(Landroid/content/Intent;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;->this$0:Lcom/android/contacts/editor/ContactEditorFragment;
 
@@ -255,8 +237,6 @@
 
 .method protected startSMemoActivity(Landroid/content/Intent;I)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;->this$0:Lcom/android/contacts/editor/ContactEditorFragment;
 
@@ -290,8 +270,6 @@
 
 .method protected startSNoteActivity(Landroid/content/Intent;I)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;->this$0:Lcom/android/contacts/editor/ContactEditorFragment;
 

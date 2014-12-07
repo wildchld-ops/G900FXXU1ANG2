@@ -36,13 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/api/model/BucketedList;Ljava/lang/String;ILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -116,11 +109,6 @@
 
 .method private bindRowEntry(Lcom/google/android/finsky/api/model/Bucket;Lcom/google/android/finsky/api/model/Document;ILandroid/view/View;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/api/model/Bucket;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # I
-    .param p4    # Landroid/view/View;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v5, 0x0
 
@@ -188,8 +176,6 @@
 
 .method private getBannerHeaderView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v9, 0x0
 
@@ -307,9 +293,6 @@
 
 .method private getBucketView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Lcom/google/android/finsky/adapters/CardSimpleListAdapter;->mBucketedList:Lcom/google/android/finsky/api/model/BucketedList;
 
@@ -426,7 +409,6 @@
 
 .method private getBucketedListItemViewType(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -552,9 +534,6 @@
 
 .method private getPaginatedRow(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v2, 0x0
 
@@ -668,7 +647,6 @@
 
 .method private getPaginatedRowIndex(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -697,8 +675,6 @@
 
 .method private getPlainHeaderView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -802,8 +778,6 @@
 
 .method private inflateViewForBucket(Lcom/google/android/finsky/api/model/Bucket;Landroid/view/ViewGroup;)Lcom/google/android/finsky/layout/play/PlayCardListingBucketView;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Bucket;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v1, 0x7f0400d3
 
@@ -828,7 +802,6 @@
 # virtual methods
 .method protected configureBucketRow(Lcom/google/android/finsky/layout/BucketRow;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/BucketRow;
 
     return-void
 .end method
@@ -845,7 +818,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/CardSimpleListAdapter;->mBucketedList:Lcom/google/android/finsky/api/model/BucketedList;
 
@@ -882,7 +854,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/CardSimpleListAdapter;->getBucketedListItemViewType(I)I
 
@@ -893,9 +864,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/CardSimpleListAdapter;->getBucketedListItemViewType(I)I
 
@@ -999,8 +967,6 @@
 
 .method protected makeHeaderClickListener(Lcom/google/android/finsky/api/model/Bucket;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Bucket;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Bucket;->getBrowseUrl()Ljava/lang/String;
 

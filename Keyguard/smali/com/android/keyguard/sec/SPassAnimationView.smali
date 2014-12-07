@@ -81,7 +81,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/16 v6, 0x22
 
@@ -312,8 +311,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v6, 0x22
 
@@ -544,7 +541,6 @@
 
 .method private fireAnmationEnd(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SPassAnimationView;->mAnimationListener:Lcom/android/keyguard/sec/SPassAnimationView$SPassAnimationListener;
 
@@ -560,8 +556,6 @@
 
 .method private nextFrame(IZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/SPassAnimationView;->setIsLast()V
 
@@ -952,7 +946,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 13
-    .param p1    # Landroid/os/Message;
 
     const-wide/16 v11, 0x1
 
@@ -1100,7 +1093,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 30
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -1778,8 +1770,6 @@
 
 .method public setAnimationTime(JI)V
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     iput-wide p1, p0, Lcom/android/keyguard/sec/SPassAnimationView;->mAnimationDuration:J
 
@@ -1804,7 +1794,6 @@
 
 .method public setResourceId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/SPassAnimationView;->mResId:I
 
@@ -1813,7 +1802,6 @@
 
 .method public setSPassAnimationListener(Lcom/android/keyguard/sec/SPassAnimationView$SPassAnimationListener;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/SPassAnimationView$SPassAnimationListener;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SPassAnimationView;->mAnimationListener:Lcom/android/keyguard/sec/SPassAnimationView$SPassAnimationListener;
 
@@ -1822,7 +1810,6 @@
 
 .method public startAnimation(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -1895,8 +1882,6 @@
 
 .method public startAnimation(IJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # J
 
     const-wide/16 v4, 0x0
 
@@ -1956,7 +1941,6 @@
 
 .method public stopAnimation(I)V
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 

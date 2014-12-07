@@ -26,11 +26,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IIILorg/ccil/cowan/tagsoup/Schema;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lorg/ccil/cowan/tagsoup/Schema;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +64,6 @@
 
 .method public static normalize(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -154,7 +148,6 @@
 
 .method public canContain(Lorg/ccil/cowan/tagsoup/ElementType;)Z
     .locals 2
-    .param p1    # Lorg/ccil/cowan/tagsoup/ElementType;
 
     iget v0, p0, Lorg/ccil/cowan/tagsoup/ElementType;->theModel:I
 
@@ -193,7 +186,6 @@
 
 .method public localName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x3a
 
@@ -256,8 +248,6 @@
 
 .method public namespace(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v2, 0x3a
 
@@ -348,9 +338,6 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/ElementType;->theAtts:Lorg/ccil/cowan/tagsoup/AttributesImpl;
 
@@ -361,10 +348,6 @@
 
 .method public setAttribute(Lorg/ccil/cowan/tagsoup/AttributesImpl;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Lorg/ccil/cowan/tagsoup/AttributesImpl;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const-string v0, "xmlns"
 
@@ -479,7 +462,6 @@
 
 .method public setFlags(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/ccil/cowan/tagsoup/ElementType;->theFlags:I
 
@@ -488,7 +470,6 @@
 
 .method public setMemberOf(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/ccil/cowan/tagsoup/ElementType;->theMemberOf:I
 
@@ -497,7 +478,6 @@
 
 .method public setModel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/ccil/cowan/tagsoup/ElementType;->theModel:I
 
@@ -506,7 +486,6 @@
 
 .method public setParent(Lorg/ccil/cowan/tagsoup/ElementType;)V
     .locals 0
-    .param p1    # Lorg/ccil/cowan/tagsoup/ElementType;
 
     iput-object p1, p0, Lorg/ccil/cowan/tagsoup/ElementType;->theParent:Lorg/ccil/cowan/tagsoup/ElementType;
 

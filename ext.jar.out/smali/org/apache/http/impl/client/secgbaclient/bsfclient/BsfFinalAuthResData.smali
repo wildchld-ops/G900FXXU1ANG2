@@ -98,7 +98,6 @@
 
 .method public setAuthInfoHeader(Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;)V
     .locals 0
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->authInfoHeader:Lorg/apache/http/impl/client/secgbaclient/AuthenticationInfoHeader;
 
@@ -107,7 +106,6 @@
 
 .method public setCk([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->ck:[B
 
@@ -116,7 +114,6 @@
 
 .method public setIk([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->ik:[B
 
@@ -125,7 +122,6 @@
 
 .method public setImpi(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->impi:Ljava/lang/String;
 
@@ -134,7 +130,6 @@
 
 .method public setLifeTime(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->lifeTime:Ljava/lang/String;
 
@@ -143,7 +138,6 @@
 
 .method public setRand([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->rand:[B
 
@@ -152,7 +146,6 @@
 
 .method public setStartTimeForKey(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->startTimeForKey:Ljava/lang/String;
 
@@ -161,7 +154,6 @@
 
 .method public setbTid(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;->bTid:Ljava/lang/String;
 

@@ -14,8 +14,6 @@
 
 .method public static getSocialDate(Lcom/android/contacts/util/StreamItemEntry;Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 19
-    .param p0    # Lcom/android/contacts/util/StreamItemEntry;
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/contacts/util/StreamItemEntry;->getTimestamp()J
 
@@ -241,8 +239,6 @@
 
 .method public static getSocialIcon(Lcom/android/contacts/util/StreamItemEntry;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p0    # Lcom/android/contacts/util/StreamItemEntry;
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 

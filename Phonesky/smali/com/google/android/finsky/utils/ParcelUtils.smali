@@ -22,7 +22,6 @@
 
 .method public static declared-synchronized readFromDisk(Ljava/io/File;)Landroid/os/Parcelable;
     .locals 11
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -255,7 +254,6 @@
 
 .method private static readObject(Ljava/io/DataInputStream;)Landroid/os/Parcelable;
     .locals 7
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -325,8 +323,6 @@
 
 .method private static writeObject(Ljava/io/DataOutputStream;Landroid/os/Parcelable;)V
     .locals 3
-    .param p0    # Ljava/io/DataOutputStream;
-    .param p1    # Landroid/os/Parcelable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -372,8 +368,6 @@
 
 .method public static declared-synchronized writeToDisk(Ljava/io/File;Landroid/os/Parcelable;)V
     .locals 5
-    .param p0    # Ljava/io/File;
-    .param p1    # Landroid/os/Parcelable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

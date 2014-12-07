@@ -93,7 +93,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion/MotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -104,7 +103,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion/MotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -115,7 +113,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion/MotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -126,7 +123,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion/MotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -137,8 +133,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/motion/MotionSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/MotionSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion/MotionSettings;->broadcastMotionChanged(Z)V
 
@@ -147,7 +141,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/motion/MotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -158,7 +151,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/motion/MotionSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -167,7 +159,6 @@
 
 .method private broadcastMotionChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -190,8 +181,6 @@
 
 .method public static isAllOptionDisabled(Landroid/content/ContentResolver;Landroid/content/Context;)Z
     .locals 14
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/content/Context;
 
     const/4 v12, 0x0
 
@@ -338,7 +327,6 @@
 
 .method private sendGlanceViewCheck(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -383,7 +371,6 @@
 
 .method private showMotionUnlockDialog(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -459,8 +446,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 8
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -720,7 +705,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -1198,8 +1182,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

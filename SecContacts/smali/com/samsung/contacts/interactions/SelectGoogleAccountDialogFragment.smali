@@ -26,8 +26,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/SelectGoogleAccountDialogFragment;Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/SelectGoogleAccountDialogFragment;
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/SelectGoogleAccountDialogFragment;->onAccountSelected(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
 
@@ -36,7 +34,6 @@
 
 .method private onAccountSelected(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     sget-object v0, Lcom/samsung/contacts/interactions/SelectGoogleAccountDialogFragment;->sListener:Lcom/samsung/contacts/interactions/SelectGoogleAccountDialogFragment$Listener;
 
@@ -62,10 +59,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Lcom/samsung/contacts/interactions/SelectGoogleAccountDialogFragment$Listener;ILandroid/os/Bundle;)V
     .locals 5
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/samsung/contacts/interactions/SelectGoogleAccountDialogFragment$Listener;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -124,7 +117,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
@@ -142,7 +134,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v2, Landroid/app/AlertDialog$Builder;
 

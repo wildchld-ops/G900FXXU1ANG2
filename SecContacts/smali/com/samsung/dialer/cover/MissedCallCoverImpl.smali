@@ -14,8 +14,6 @@
 
 .method public static getTitleTimeText(Landroid/content/Context;Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
     const/16 v4, 0x101
 

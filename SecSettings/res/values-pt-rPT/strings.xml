@@ -1379,7 +1379,7 @@ Também pode mostrar ou ocultar o cursor multi-janela premindo sem soltar a tecl
     <string name="usb_tethering_errored_subtext">Erro de ancoragem USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Não é possível desactivar a ancoragem USB durante a utilização do SideSync. A desactivação da ancoragem USB desactivará o SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Não é possível activar a ancoragem USB durante a utilização do SideSync. A activação da ancoragem USB desactivará o SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Ancoragem Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Ancoragem Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">A partilhar a ligação à Internet do dispositivo…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Ligação de Internet do dispositivo partilhada com 1 dispositivo</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Ligação de Internet do dispositivo partilhada com %d dispositivos</string>

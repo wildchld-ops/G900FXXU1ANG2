@@ -65,8 +65,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +85,6 @@
 # virtual methods
 .method public add(Lcom/google/android/finsky/widget/recommendation/Recommendation;)Z
     .locals 1
-    .param p1    # Lcom/google/android/finsky/widget/recommendation/Recommendation;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->mRecommendations:Ljava/util/List;
 
@@ -100,7 +97,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/widget/recommendation/Recommendation;
 
@@ -175,7 +171,6 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->mRecommendations:Ljava/util/List;
 
@@ -215,7 +210,6 @@
 
 .method public get(I)Lcom/google/android/finsky/widget/recommendation/Recommendation;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->mRecommendations:Ljava/util/List;
 
@@ -279,7 +273,6 @@
 
 .method public merge(Lcom/google/android/finsky/widget/recommendation/RecommendationList;)I
     .locals 2
-    .param p1    # Lcom/google/android/finsky/widget/recommendation/RecommendationList;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->size()I
 
@@ -336,7 +329,6 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->mRecommendations:Ljava/util/List;
 
@@ -349,7 +341,6 @@
 
 .method public remove(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->mRecommendations:Ljava/util/List;
 
@@ -577,7 +568,6 @@
 
 .method public writeToDisk(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     iget v2, p0, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->mBackendId:I
 
@@ -619,8 +609,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const-wide/16 v0, 0x1
 

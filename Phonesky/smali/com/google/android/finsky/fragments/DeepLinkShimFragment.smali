@@ -35,8 +35,6 @@
 
 .method protected static findInstallAccount([Landroid/accounts/Account;Landroid/net/Uri;)Ljava/lang/String;
     .locals 7
-    .param p0    # [Landroid/accounts/Account;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v5, 0x0
 
@@ -92,7 +90,6 @@
 
 .method public static getContinueUrl(Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     const-string v1, "url"
 
@@ -121,7 +118,6 @@
 
 .method public static getExternalReferrer(Landroid/net/Uri;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/net/Uri;
 
     const-string v2, "referrer"
 
@@ -183,7 +179,6 @@
 
 .method public static newInstance(Landroid/net/Uri;)Landroid/support/v4/app/Fragment;
     .locals 5
-    .param p0    # Landroid/net/Uri;
 
     new-instance v1, Lcom/google/android/finsky/fragments/DeepLinkShimFragment;
 
@@ -259,7 +254,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/UrlBasedPageFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -654,7 +648,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/fragments/DeepLinkShimFragment;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -675,7 +668,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;
 
     iput-object p1, p0, Lcom/google/android/finsky/fragments/DeepLinkShimFragment;->mResponse:Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;
 
@@ -686,7 +678,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;
 

@@ -40,14 +40,12 @@
 # virtual methods
 .method public onCancel(Lcom/google/android/finsky/download/Download;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     return-void
 .end method
 
 .method public onComplete(Lcom/google/android/finsky/download/Download;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const/4 v3, 0x0
 
@@ -95,8 +93,6 @@
 
 .method public onError(Lcom/google/android/finsky/download/Download;I)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -149,22 +145,18 @@
 
 .method public onNotificationClicked(Lcom/google/android/finsky/download/Download;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     return-void
 .end method
 
 .method public onProgress(Lcom/google/android/finsky/download/Download;Lcom/google/android/finsky/download/DownloadProgress;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # Lcom/google/android/finsky/download/DownloadProgress;
 
     return-void
 .end method
 
 .method public onStart(Lcom/google/android/finsky/download/Download;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const/4 v3, 0x0
 

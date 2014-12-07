@@ -28,7 +28,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -49,8 +48,6 @@
 
 .method protected setDfeTocAndUrl(Lcom/google/android/finsky/api/model/DfeToc;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/PageFragment;->setDfeToc(Lcom/google/android/finsky/api/model/DfeToc;)V
 

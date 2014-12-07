@@ -405,9 +405,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/location/ILocationManager;Landroid/os/Looper;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/location/ILocationManager;
-    .param p3    # Landroid/os/Looper;
 
     const/4 v10, 0x2
 
@@ -847,7 +844,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/GpsLocationProvider;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mListeners:Ljava/util/ArrayList;
 
@@ -856,8 +852,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/GpsLocationProvider;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/location/GpsLocationProvider;->startNavigating(Z)V
 
@@ -866,10 +860,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/location/GpsLocationProvider;IILjava/lang/Object;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/location/GpsLocationProvider;->sendMessage(IILjava/lang/Object;)V
 
@@ -878,7 +868,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/location/GpsLocationProvider;)Z
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-boolean v0, p0, Lcom/android/server/location/GpsLocationProvider;->mPeriodicTimeInjection:Z
 
@@ -887,7 +876,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/location/GpsLocationProvider;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -896,7 +884,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/location/GpsLocationProvider;)Ljava/util/Properties;
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mProperties:Ljava/util/Properties;
 
@@ -905,9 +892,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/location/GpsLocationProvider;[BI)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # [B
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider;->native_inject_xtra_data([BI)V
 
@@ -926,14 +910,6 @@
 
 .method static synthetic access$1600(IDDDIIII)Z
     .locals 1
-    .param p0    # I
-    .param p1    # D
-    .param p3    # D
-    .param p5    # D
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     invoke-static/range {p0 .. p10}, Lcom/android/server/location/GpsLocationProvider;->native_add_geofence(IDDDIIII)Z
 
@@ -944,7 +920,6 @@
 
 .method static synthetic access$1700(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/location/GpsLocationProvider;->native_remove_geofence(I)Z
 
@@ -955,7 +930,6 @@
 
 .method static synthetic access$1800(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/location/GpsLocationProvider;->native_pause_geofence(I)Z
 
@@ -966,8 +940,6 @@
 
 .method static synthetic access$1900(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/server/location/GpsLocationProvider;->native_resume_geofence(II)Z
 
@@ -978,7 +950,6 @@
 
 .method static synthetic access$200(Lcom/android/server/location/GpsLocationProvider;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/GpsLocationProvider;->hibernate()V
 
@@ -987,9 +958,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/location/GpsLocationProvider;II)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider;->native_send_ni_response(II)V
 
@@ -998,7 +966,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/location/GpsLocationProvider;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/GpsLocationProvider;->handleEnable()V
 
@@ -1007,7 +974,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/location/GpsLocationProvider;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/GpsLocationProvider;->handleDisable()V
 
@@ -1016,9 +982,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/location/GpsLocationProvider;Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # Lcom/android/internal/location/ProviderRequest;
-    .param p2    # Landroid/os/WorkSource;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider;->handleSetRequest(Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
 
@@ -1027,9 +990,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/location/GpsLocationProvider;ILandroid/net/NetworkInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider;->handleUpdateNetworkState(ILandroid/net/NetworkInfo;)V
 
@@ -1038,7 +998,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/location/GpsLocationProvider;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/GpsLocationProvider;->handleInjectNtpTime()V
 
@@ -1047,7 +1006,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/location/GpsLocationProvider;)Z
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-boolean v0, p0, Lcom/android/server/location/GpsLocationProvider;->mSupportsXtra:Z
 
@@ -1056,7 +1014,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/location/GpsLocationProvider;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/GpsLocationProvider;->handleDownloadXtraData()V
 
@@ -1065,8 +1022,6 @@
 
 .method static synthetic access$2802(Lcom/android/server/location/GpsLocationProvider;I)I
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/location/GpsLocationProvider;->mInjectNtpTimePending:I
 
@@ -1075,8 +1030,6 @@
 
 .method static synthetic access$2902(Lcom/android/server/location/GpsLocationProvider;I)I
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/location/GpsLocationProvider;->mDownloadXtraDataPending:I
 
@@ -1085,8 +1038,6 @@
 
 .method static synthetic access$300(Lcom/android/server/location/GpsLocationProvider;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/GpsLocationProvider;->checkSmsSuplInit(Landroid/content/Intent;)V
 
@@ -1095,8 +1046,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/location/GpsLocationProvider;Landroid/location/Location;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/GpsLocationProvider;->handleUpdateLocation(Landroid/location/Location;)V
 
@@ -1105,8 +1054,6 @@
 
 .method static synthetic access$400(Lcom/android/server/location/GpsLocationProvider;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/GpsLocationProvider;->checkWapSuplInit(Landroid/content/Intent;)V
 
@@ -1115,7 +1062,6 @@
 
 .method static synthetic access$500(Lcom/android/server/location/GpsLocationProvider;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mContext:Landroid/content/Context;
 
@@ -1124,7 +1070,6 @@
 
 .method static synthetic access$700(Lcom/android/server/location/GpsLocationProvider;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mHandler:Landroid/os/Handler;
 
@@ -1133,7 +1078,6 @@
 
 .method static synthetic access$800(Lcom/android/server/location/GpsLocationProvider;)Landroid/util/NtpTrustedTime;
     .locals 1
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
 
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mNtpTime:Landroid/util/NtpTrustedTime;
 
@@ -1142,10 +1086,6 @@
 
 .method static synthetic access$900(Lcom/android/server/location/GpsLocationProvider;JJI)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GpsLocationProvider;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/location/GpsLocationProvider;->native_inject_time(JJI)V
 
@@ -1154,14 +1094,6 @@
 
 .method private buildLocation(IDDDFFFJ)Landroid/location/Location;
     .locals 3
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # F
-    .param p9    # F
-    .param p10    # F
-    .param p11    # J
 
     new-instance v0, Landroid/location/Location;
 
@@ -1229,7 +1161,6 @@
 
 .method private checkSmsSuplInit(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-static {p1}, Landroid/provider/Telephony$Sms$Intents;->getMessagesFromIntent(Landroid/content/Intent;)[Landroid/telephony/SmsMessage;
 
@@ -1262,7 +1193,6 @@
 
 .method private checkWapSuplInit(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "data"
 
@@ -1288,7 +1218,6 @@
 
 .method private deleteAidingData(Landroid/os/Bundle;)Z
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 
@@ -1623,7 +1552,6 @@
 
 .method private getGeofenceStatus(I)I
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -1948,8 +1876,6 @@
 
 .method private handleSetRequest(Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
     .locals 9
-    .param p1    # Lcom/android/internal/location/ProviderRequest;
-    .param p2    # Landroid/os/WorkSource;
 
     const/4 v5, 0x1
 
@@ -2148,7 +2074,6 @@
 
 .method private handleUpdateLocation(Landroid/location/Location;)V
     .locals 6
-    .param p1    # Landroid/location/Location;
 
     invoke-virtual {p1}, Landroid/location/Location;->hasAccuracy()Z
 
@@ -2178,8 +2103,6 @@
 
 .method private handleUpdateNetworkState(ILandroid/net/NetworkInfo;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkInfo;
 
     const/4 v0, 0x2
 
@@ -2469,7 +2392,6 @@
 
 .method private hasCapability(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/location/GpsLocationProvider;->mEngineCapabilities:I
 
@@ -2721,9 +2643,6 @@
 
 .method private reportAGpsStatus(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -2946,8 +2865,6 @@
 
 .method private reportGeofenceAddStatus(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider_samsung;->extension_reportGeofenceAddStatus(II)V
 
@@ -2977,8 +2894,6 @@
 
 .method private reportGeofencePauseStatus(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider_samsung;->extension_reportGeofencePauseStatus(II)V
 
@@ -3008,8 +2923,6 @@
 
 .method private reportGeofenceRemoveStatus(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider_samsung;->extension_reportGeofenceRemoveStatus(II)V
 
@@ -3039,8 +2952,6 @@
 
 .method private reportGeofenceResumeStatus(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/location/GpsLocationProvider_samsung;->extension_reportGeofenceResumeStatus(II)V
 
@@ -3070,15 +2981,6 @@
 
 .method private reportGeofenceStatus(IIDDDFFFJ)V
     .locals 16
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # J
 
     invoke-virtual/range {p0 .. p13}, Lcom/android/server/location/GpsLocationProvider_samsung;->extension_reportGeofenceStatus(IIDDDFFFJ)V
 
@@ -3149,17 +3051,6 @@
 
 .method private reportGeofenceTransition(IIDDDFFFJIJ)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # J
-    .param p14    # I
-    .param p15    # J
 
     invoke-virtual/range {p0 .. p16}, Lcom/android/server/location/GpsLocationProvider_samsung;->extension_reportGeofenceTransition(IIDDDFFFJIJ)V
 
@@ -3217,14 +3108,6 @@
 
 .method private reportLocation(IDDDFFFJ)V
     .locals 13
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # F
-    .param p9    # F
-    .param p10    # F
-    .param p11    # J
 
     sget-boolean v2, Lcom/android/server/location/GpsLocationProvider;->VERBOSE:Z
 
@@ -3701,7 +3584,6 @@
 
 .method private reportNmea(J)V
     .locals 9
-    .param p1    # J
 
     iget-object v7, p0, Lcom/android/server/location/GpsLocationProvider;->mListeners:Ljava/util/ArrayList;
 
@@ -3797,7 +3679,6 @@
 
 .method private reportStatus(I)V
     .locals 9
-    .param p1    # I
 
     const-string v6, "GpsLocationProvider"
 
@@ -4535,7 +4416,6 @@
 
 .method private requestRefLocation(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v5, 0x3
 
@@ -4679,7 +4559,6 @@
 
 .method private requestSetID(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/location/GpsLocationProvider;->mContext:Landroid/content/Context;
 
@@ -4756,9 +4635,6 @@
 
 .method private sendMessage(IILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/server/location/GpsLocationProvider;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -4779,7 +4655,6 @@
 
 .method private setEngineCapabilities(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/location/GpsLocationProvider;->mEngineCapabilities:I
 
@@ -4790,7 +4665,6 @@
 
 .method private startNavigating(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x2
 
@@ -5104,7 +4978,6 @@
 
 .method private updateClientUids(Landroid/os/WorkSource;)V
     .locals 11
-    .param p1    # Landroid/os/WorkSource;
 
     iget-object v7, p0, Lcom/android/server/location/GpsLocationProvider;->mClientSource:Landroid/os/WorkSource;
 
@@ -5252,8 +5125,6 @@
 
 .method private updateStatus(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/location/GpsLocationProvider;->mStatus:I
 
@@ -5355,9 +5226,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5568,7 +5436,6 @@
 
 .method public getStatus(Landroid/os/Bundle;)I
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -5618,16 +5485,6 @@
 
 .method public reportNiNotification(IIIIILjava/lang/String;Ljava/lang/String;IILjava/lang/String;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Ljava/lang/String;
 
     const-string v7, "GpsLocationProvider"
 
@@ -5930,8 +5787,6 @@
 
 .method public sendExtraCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -6039,8 +5894,6 @@
 
 .method public setRequest(Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Lcom/android/internal/location/ProviderRequest;
-    .param p2    # Landroid/os/WorkSource;
 
     const/4 v0, 0x3
 
@@ -6057,8 +5910,6 @@
 
 .method public updateNetworkState(ILandroid/net/NetworkInfo;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkInfo;
 
     const/4 v0, 0x4
 

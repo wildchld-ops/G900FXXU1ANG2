@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public addAllCard(Landroid/content/ComponentName;Ljava/util/List;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -121,8 +119,6 @@
 
 .method public addCard(Landroid/content/ComponentName;Lcom/samsung/android/glancecard/GlanceCardInfo;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/samsung/android/glancecard/GlanceCardInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -222,7 +218,6 @@
 
 .method public close(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -293,7 +288,6 @@
 
 .method public getAllCardIds(Landroid/content/ComponentName;)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -384,7 +378,6 @@
 
 .method public getListenerAsBinder(Landroid/content/ComponentName;)Landroid/os/IBinder;
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -459,7 +452,6 @@
 
 .method public hide(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -530,7 +522,6 @@
 
 .method public removeAllCard(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -601,8 +592,6 @@
 
 .method public removeCard(Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -675,8 +664,6 @@
 
 .method public removeCardFromTray(Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -749,8 +736,6 @@
 
 .method public removeGroup(Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -823,8 +808,6 @@
 
 .method public setListenerAsBinder(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -897,7 +880,6 @@
 
 .method public show(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -968,8 +950,6 @@
 
 .method public updateCard(Landroid/content/ComponentName;Lcom/samsung/android/glancecard/GlanceCardInfo;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/samsung/android/glancecard/GlanceCardInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1061,7 +1041,6 @@
 
 .method public updateCards(Landroid/content/ComponentName;Ljava/util/List;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

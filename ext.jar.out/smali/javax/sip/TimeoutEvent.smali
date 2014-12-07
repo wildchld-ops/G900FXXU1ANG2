@@ -10,9 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljavax/sip/ClientTransaction;Ljavax/sip/Timeout;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljavax/sip/ClientTransaction;
-    .param p3    # Ljavax/sip/Timeout;
 
     invoke-direct {p0, p1, p2}, Ljavax/sip/TransactionTerminatedEvent;-><init>(Ljava/lang/Object;Ljavax/sip/ClientTransaction;)V
 
@@ -23,9 +20,6 @@
 
 .method public constructor <init>(Ljava/lang/Object;Ljavax/sip/ServerTransaction;Ljavax/sip/Timeout;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljavax/sip/ServerTransaction;
-    .param p3    # Ljavax/sip/Timeout;
 
     invoke-direct {p0, p1, p2}, Ljavax/sip/TransactionTerminatedEvent;-><init>(Ljava/lang/Object;Ljavax/sip/ServerTransaction;)V
 

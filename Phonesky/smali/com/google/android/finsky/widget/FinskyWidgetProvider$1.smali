@@ -30,7 +30,6 @@
 # virtual methods
 .method public getImageType(Lcom/google/android/finsky/api/model/Document;)I
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v0, 0x2
 
@@ -39,8 +38,6 @@
 
 .method public getImageUrl(Lcom/google/android/finsky/api/model/Document;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
 
     const/4 v0, 0x0
 

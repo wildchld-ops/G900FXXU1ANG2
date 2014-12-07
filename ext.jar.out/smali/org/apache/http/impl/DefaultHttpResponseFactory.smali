@@ -23,7 +23,6 @@
 
 .method public constructor <init>(Lorg/apache/http/ReasonPhraseCatalog;)V
     .locals 2
-    .param p1    # Lorg/apache/http/ReasonPhraseCatalog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method protected determineLocale(Lorg/apache/http/protocol/HttpContext;)Ljava/util/Locale;
     .locals 1
-    .param p1    # Lorg/apache/http/protocol/HttpContext;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -58,9 +56,6 @@
 
 .method public newHttpResponse(Lorg/apache/http/ProtocolVersion;ILorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 5
-    .param p1    # Lorg/apache/http/ProtocolVersion;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
 
     if-nez p1, :cond_0
 
@@ -98,8 +93,6 @@
 
 .method public newHttpResponse(Lorg/apache/http/StatusLine;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 3
-    .param p1    # Lorg/apache/http/StatusLine;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
 
     if-nez p1, :cond_0
 

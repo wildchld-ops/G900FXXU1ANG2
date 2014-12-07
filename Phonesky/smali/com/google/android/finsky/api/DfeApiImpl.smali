@@ -223,8 +223,6 @@
 
 .method public constructor <init>(Lcom/android/volley/RequestQueue;Lcom/google/android/finsky/api/DfeApiContext;)V
     .locals 0
-    .param p1    # Lcom/android/volley/RequestQueue;
-    .param p2    # Lcom/google/android/finsky/api/DfeApiContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -237,7 +235,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/api/DfeApiImpl;)Lcom/google/android/finsky/api/DfeApiContext;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/DfeApiImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/api/DfeApiImpl;->mApiContext:Lcom/google/android/finsky/api/DfeApiContext;
 
@@ -246,7 +243,6 @@
 
 .method private static encodeServerToken([B)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
 
     const/16 v0, 0x8
 
@@ -259,11 +255,6 @@
 
 .method private static getReviewsUrl(Ljava/lang/String;ZIII)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -341,9 +332,6 @@
 # virtual methods
 .method public acceptTos(Ljava/lang/String;Ljava/lang/Boolean;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Boolean;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -404,8 +392,6 @@
 
 .method public ackNotification(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -484,12 +470,6 @@
 
 .method public addReview(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZLcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
-    .param p7    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -565,8 +545,6 @@
 
 .method public addToLibrary(Ljava/util/Collection;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p2    # Ljava/lang/String;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -641,8 +619,6 @@
 
 .method public archiveFromLibrary(Ljava/util/Collection;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p2    # Ljava/lang/String;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -717,8 +693,6 @@
 
 .method public billingProfile(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -827,10 +801,6 @@
 
 .method public checkIabPromo(ILjava/lang/String;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -899,7 +869,6 @@
 
 .method public checkInstrument(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -949,7 +918,6 @@
 
 .method public checkPromoOffers(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1016,9 +984,6 @@
 
 .method public commitPurchase(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/google/android/finsky/api/DfeRequest;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1136,10 +1101,6 @@
 
 .method public consumePurchase(Ljava/lang/String;ILjava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1210,8 +1171,6 @@
 
 .method public deleteReview(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1260,15 +1219,6 @@
 
 .method public delivery(Ljava/lang/String;I[BLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # Ljava/lang/Integer;
-    .param p5    # Ljava/lang/Integer;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p10    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1406,10 +1356,6 @@
 
 .method public flagContent(Ljava/lang/String;ILjava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1504,8 +1450,6 @@
 
 .method public getBrowseLayout(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1546,9 +1490,6 @@
 
 .method public getDetails(Ljava/lang/String;ZLcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1599,7 +1540,6 @@
 
 .method public getDetails(Ljava/util/Collection;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1639,9 +1579,6 @@
 
 .method public getDetails(Ljava/util/Collection;Ljava/lang/String;ZLcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 10
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1750,10 +1687,6 @@
 
 .method public getLibraryUrl(ILjava/lang/String;I[B)Ljava/lang/String;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # [B
 
     sget-object v2, Lcom/google/android/finsky/api/DfeApiImpl;->LIBRARY_URI:Landroid/net/Uri;
 
@@ -1807,8 +1740,6 @@
 
 .method public getList(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1849,8 +1780,6 @@
 
 .method public getPlusProfile(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;Z)Lcom/android/volley/Request;
     .locals 6
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1911,12 +1840,6 @@
 
 .method public getReviews(Ljava/lang/String;ZIIILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p7    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1960,9 +1883,6 @@
 
 .method public getToc(ZLjava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -2026,8 +1946,6 @@
 
 .method public initiateAssociation(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2076,8 +1994,6 @@
 
 .method public invalidateDetailsCache(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -2116,8 +2032,6 @@
 
 .method public invalidateListCache(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -2156,7 +2070,6 @@
 
 .method public invalidatePlusProfile(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -2199,12 +2112,6 @@
 
 .method public invalidateReviewsCache(Ljava/lang/String;ZIIIZ)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     const/4 v4, 0x0
 
@@ -2289,8 +2196,6 @@
 
 .method public log(Lcom/google/android/finsky/protos/Log$LogRequest;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/Log$LogRequest;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2339,14 +2244,6 @@
 
 .method public makePurchase(Lcom/google/android/finsky/api/model/Document;IILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 8
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p10    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2530,9 +2427,6 @@
 
 .method public makePurchase(Lcom/google/android/finsky/api/model/Document;ILjava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 11
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2585,13 +2479,6 @@
 
 .method public preparePurchase(Ljava/lang/String;ILcom/google/android/finsky/api/DfeApi$IabParameters;Lcom/google/android/finsky/api/DfeApi$GaiaAuthParameters;Ljava/lang/String;ILjava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/google/android/finsky/api/DfeRequest;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/api/DfeApi$IabParameters;
-    .param p4    # Lcom/google/android/finsky/api/DfeApi$GaiaAuthParameters;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p9    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2740,10 +2627,6 @@
 
 .method public rateReview(Ljava/lang/String;Ljava/lang/String;ILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2820,8 +2703,6 @@
 
 .method public rateSuggestedContent(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2862,8 +2743,6 @@
 
 .method public redeemCode(Lcom/google/android/finsky/protos/PromoCode$RedeemCodeRequest;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/PromoCode$RedeemCodeRequest;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2918,8 +2797,6 @@
 
 .method public removeFromLibrary(Ljava/util/Collection;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p2    # Ljava/lang/String;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2994,8 +2871,6 @@
 
 .method public replicateLibrary(Lcom/google/android/finsky/protos/LibraryReplication$LibraryReplicationRequest;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/LibraryReplication$LibraryReplicationRequest;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3060,8 +2935,6 @@
 
 .method public resolveLink(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3116,9 +2989,6 @@
 
 .method public revoke(Ljava/lang/String;ILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3184,8 +3054,6 @@
 
 .method public search(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3226,9 +3094,6 @@
 
 .method public setPlusOne(Ljava/lang/String;ZLcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3296,8 +3161,6 @@
 
 .method public updateInstrument(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentRequest;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentRequest;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3375,10 +3238,6 @@
 
 .method public uploadDeviceConfig(Lcom/google/android/finsky/protos/DeviceConfigurationProto;Ljava/lang/String;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/DeviceConfigurationProto;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3472,10 +3331,6 @@
 
 .method public verifyAssociation(Ljava/lang/String;Ljava/lang/String;ZLcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -380,13 +380,6 @@
 
 .method public loadCircles(Lcom/google/android/gms/people/PeopleClient$OnCirclesLoadedListener;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Z)V
     .locals 8
-    .param p1    # Lcom/google/android/gms/people/PeopleClient$OnCirclesLoadedListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
 
     invoke-virtual {p0}, Lcom/google/android/gms/internal/ci;->bz()V
 
@@ -434,10 +427,6 @@
 
 .method public loadPeople(Lcom/google/android/gms/people/PeopleClient$OnPeopleLoadedListener;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;)V
     .locals 12
-    .param p1    # Lcom/google/android/gms/people/PeopleClient$OnPeopleLoadedListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
 
     invoke-virtual {p0}, Lcom/google/android/gms/internal/ci;->bz()V
 

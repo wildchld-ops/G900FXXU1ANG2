@@ -38,11 +38,6 @@
 
 .method protected createInteractionActionBarAdapter(Landroid/content/Context;Landroid/app/ActionBar;IZLandroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActionBar;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/samsung/contacts/interactions/EasyInteractionActionBarAdapter;
 
@@ -139,7 +134,6 @@
 
 .method protected getRequest(Landroid/content/Intent;)Lcom/android/contacts/list/ContactsRequest;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/interactions/EasyInteractionTabActivity;->getIntent()Landroid/content/Intent;
 
@@ -203,7 +197,6 @@
 
 .method public hideSoftKeyboardInFragment(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -508,8 +501,6 @@
 
 .method protected setupFragments(Landroid/app/FragmentTransaction;Z)V
     .locals 2
-    .param p1    # Landroid/app/FragmentTransaction;
-    .param p2    # Z
 
     iget v0, p0, Lcom/samsung/contacts/interactions/EasyInteractionTabActivity;->mTabState:I
 

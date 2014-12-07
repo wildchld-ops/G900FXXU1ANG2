@@ -110,7 +110,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -121,8 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -167,7 +164,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/DetailsPlusOne;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/DetailsPlusOne;->handleMainContentClick()V
 
@@ -176,7 +172,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/DetailsPlusOne;)Landroid/support/v4/app/FragmentManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne;->mFragmentManager:Landroid/support/v4/app/FragmentManager;
 
@@ -185,7 +180,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/DetailsPlusOne;)Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/DetailsPlusOne;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne;->mData:Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
 
@@ -361,8 +355,6 @@
 
 .method private bindPlusOneData(Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$PlusOneData;
-    .param p2    # Landroid/os/Bundle;
 
     const-wide/16 v7, 0x0
 
@@ -685,9 +677,6 @@
 
 .method public static formatPlusOneCount(Landroid/content/Context;JI)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
 
     const/4 v8, 0x2
 
@@ -962,7 +951,6 @@
 
 .method private setLoading(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/layout/DetailsPlusOne;->mIsWaitingServerResponse:Z
 
@@ -1087,15 +1075,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/utils/BitmapLoader;Ljava/lang/String;Landroid/support/v4/app/FragmentManager;Lcom/google/android/finsky/api/model/Document;ZZLandroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/support/v4/app/FragmentManager;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Landroid/os/Bundle;
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v0, 0x0
 
@@ -1199,7 +1178,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/DetailsPlusOne;->mIsDetached:Z
 
@@ -1293,7 +1271,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/PlusOne$PlusOneResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/PlusOne$PlusOneResponse;
 
     const/4 v3, 0x1
 
@@ -1341,7 +1318,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/PlusOne$PlusOneResponse;
 
@@ -1352,7 +1328,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "DetailsPlusOne.hasPlusOneData"
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/play/layout/PlayTextView;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/play/layout/PlayTextView$SelfishUrlSpan;->this$0:Lcom/google/android/play/layout/PlayTextView;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/google/android/play/layout/PlayTextView$SelfishUrlSpan;->this$0:Lcom/google/android/play/layout/PlayTextView;
 

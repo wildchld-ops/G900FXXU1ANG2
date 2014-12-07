@@ -36,7 +36,6 @@
 # virtual methods
 .method public onArchiveAction(Lcom/google/android/finsky/api/model/Document;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab$1;->this$0:Lcom/google/android/finsky/activities/myapps/MyAppsLibraryTab;
 

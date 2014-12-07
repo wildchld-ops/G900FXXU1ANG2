@@ -19,8 +19,6 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/message/SIPMessage;Lgov/nist/javax/sip/header/SIPHeader;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
-    .param p2    # Lgov/nist/javax/sip/header/SIPHeader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -227,7 +224,6 @@
 
 .method public set(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

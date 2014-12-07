@@ -35,8 +35,6 @@
 # virtual methods
 .method public process(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V
     .locals 4
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

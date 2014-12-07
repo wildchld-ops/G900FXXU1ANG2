@@ -254,7 +254,6 @@
 # virtual methods
 .method protected onBrowserDashMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/GovernorAdonisPrime;->mIsBrowserDashMode:Z
 
@@ -347,16 +346,12 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onStatusNotiReceived(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "Camera_recording"
 
@@ -389,7 +384,6 @@
 
 .method public setBrowserPageLoading(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/GovernorAdonisPrime;->mIsBrowserPageLoading:Z
 

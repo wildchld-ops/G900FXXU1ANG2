@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;
 
     iget-wide v0, p0, Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;->mContactId1:J
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;
 
     iget-wide v0, p0, Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;->mContactId2:J
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;->mShouldDestroyLoader:Z
 
@@ -65,7 +62,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -93,7 +89,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -142,7 +137,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -163,8 +157,6 @@
 
 .method public setContactId(JJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
 
     iput-wide p1, p0, Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;->mContactId1:J
 
@@ -175,7 +167,6 @@
 
 .method public setDisplayName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;->mDisplayName:Ljava/lang/String;
 
@@ -184,7 +175,6 @@
 
 .method public setShouldDestroyLoader(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;->mShouldDestroyLoader:Z
 

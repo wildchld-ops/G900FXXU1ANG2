@@ -80,8 +80,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/am/SmartTaskControler;Lcom/android/server/am/SmartTaskControler$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/SmartTaskControler;
-    .param p2    # Lcom/android/server/am/SmartTaskControler$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/SmartTaskControler$TaskKillTracer;-><init>(Lcom/android/server/am/SmartTaskControler;)V
 
@@ -255,7 +253,6 @@
 
 .method public pushLog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/SmartTaskControler$TaskKillTracer;->logList:Ljava/util/ArrayList;
 

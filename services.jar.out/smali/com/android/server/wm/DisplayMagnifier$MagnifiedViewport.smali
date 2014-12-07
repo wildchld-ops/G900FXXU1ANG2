@@ -191,7 +191,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;)Landroid/view/WindowManager;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;->mWindowManager:Landroid/view/WindowManager;
 
@@ -200,7 +199,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;)I
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
     iget v0, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;->mBorderWidth:I
 
@@ -209,7 +207,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;)I
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
     iget v0, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;->mHalfBorderWidth:I
 
@@ -218,7 +215,6 @@
 
 .method static synthetic access$900(Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;)Landroid/graphics/Point;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;->mTempPoint:Landroid/graphics/Point;
 
@@ -307,8 +303,6 @@
 
 .method private populateTransformationMatrix(Lcom/android/server/wm/WindowState;Landroid/graphics/Matrix;)V
     .locals 4
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Landroid/graphics/Matrix;
 
     const/4 v3, 0x0
 
@@ -433,7 +427,6 @@
 
 .method public getMagnifiedFrameInContentCoordsLocked(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;->mMagnificationSpec:Landroid/view/MagnificationSpec;
 
@@ -1191,8 +1184,6 @@
 
 .method public setMagnifiedRegionBorderShownLocked(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1216,7 +1207,6 @@
 
 .method public updateMagnificationSpecLocked(Landroid/view/MagnificationSpec;)V
     .locals 4
-    .param p1    # Landroid/view/MagnificationSpec;
 
     if-eqz p1, :cond_1
 

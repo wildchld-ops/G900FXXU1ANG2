@@ -23,8 +23,6 @@
 # direct methods
 .method protected constructor <init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/conn/OperatedClientConnection;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p2    # Lorg/apache/http/conn/OperatedClientConnection;
 
     const/4 v1, 0x0
 
@@ -125,7 +123,6 @@
 
 .method protected final assertValid(Lorg/apache/http/conn/OperatedClientConnection;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/OperatedClientConnection;
 
     if-nez p1, :cond_0
 
@@ -363,7 +360,6 @@
 
 .method public isResponseAvailable(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -440,7 +436,6 @@
 
 .method public receiveResponseEntity(Lorg/apache/http/HttpResponse;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -510,7 +505,6 @@
 
 .method public sendRequestEntity(Lorg/apache/http/HttpEntityEnclosingRequest;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpEntityEnclosingRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -535,7 +529,6 @@
 
 .method public sendRequestHeader(Lorg/apache/http/HttpRequest;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -560,8 +553,6 @@
 
 .method public setIdleDuration(JLjava/util/concurrent/TimeUnit;)V
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v0, 0x0
 
@@ -588,7 +579,6 @@
 
 .method public setSocketTimeout(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lorg/apache/http/impl/conn/AbstractClientConnAdapter;->getWrappedConnection()Lorg/apache/http/conn/OperatedClientConnection;
 

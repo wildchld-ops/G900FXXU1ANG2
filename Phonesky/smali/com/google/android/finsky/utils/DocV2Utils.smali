@@ -6,8 +6,6 @@
 # direct methods
 .method public static getFirstImageOfType(Lcom/google/android/finsky/protos/DocumentV2$DocV2;I)Lcom/google/android/finsky/protos/Doc$Image;
     .locals 3
-    .param p0    # Lcom/google/android/finsky/protos/DocumentV2$DocV2;
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/protos/DocumentV2$DocV2;->image:[Lcom/google/android/finsky/protos/Doc$Image;
 

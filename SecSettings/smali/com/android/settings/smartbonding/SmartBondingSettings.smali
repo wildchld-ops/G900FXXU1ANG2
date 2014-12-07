@@ -82,8 +82,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/smartbonding/SmartBondingSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/smartbonding/SmartBondingSettings;->updateSmartBondingState(Z)V
 
@@ -92,7 +90,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/smartbonding/SmartBondingSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartbonding/SmartBondingSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -101,7 +98,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/smartbonding/SmartBondingSettings;)Lcom/android/settings/UnclickablePreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartbonding/SmartBondingSettings;->mUnclickPref:Lcom/android/settings/UnclickablePreference;
 
@@ -110,7 +106,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/smartbonding/SmartBondingSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartbonding/SmartBondingSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -121,7 +116,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/smartbonding/SmartBondingSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartbonding/SmartBondingSettings;->mSmartBondingPopupPreference:Landroid/preference/CheckBoxPreference;
 
@@ -130,7 +124,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/smartbonding/SmartBondingSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartbonding/SmartBondingSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -141,7 +134,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/smartbonding/SmartBondingSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartbonding/SmartBondingSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -152,7 +144,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/smartbonding/SmartBondingSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartbonding/SmartBondingSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -163,7 +154,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/smartbonding/SmartBondingSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartbonding/SmartBondingSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartbonding/SmartBondingSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -611,7 +601,6 @@
 
 .method private updateSmartBondingState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/smartbonding/SmartBondingSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -632,8 +621,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 6
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -734,7 +721,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x10
 
@@ -1027,8 +1013,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x0
 
@@ -1076,7 +1060,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1128,8 +1111,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -1173,8 +1154,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 

@@ -359,7 +359,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x2
 
@@ -500,8 +499,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x2
 
@@ -642,7 +639,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/BoxListFrame;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -651,8 +647,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/BoxListFrame;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->startAsyncQueryInternal(Z)V
 
@@ -661,7 +655,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->startAsyncQuery()V
 
@@ -670,7 +663,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/BoxListFrame;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mMsgUri:Landroid/net/Uri;
 
@@ -679,7 +671,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/BoxListFrame;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mActivity:Landroid/app/Activity;
 
@@ -688,7 +679,6 @@
 
 .method static synthetic access$1402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/BoxListFrame;->mIsSearchMode:Z
 
@@ -697,8 +687,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/ui/BoxListFrame;Landroid/widget/SearchView;)Landroid/widget/SearchView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/widget/SearchView;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSearchView:Landroid/widget/SearchView;
 
@@ -707,7 +695,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -716,7 +703,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -725,7 +711,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/BoxListFrame;)Lcom/android/mms/ui/BoxListFrame$BoxListQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mQueryHandler:Lcom/android/mms/ui/BoxListFrame$BoxListQueryHandler;
 
@@ -734,7 +719,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->setPopMenuItemTitle()V
 
@@ -743,9 +727,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/BoxListFrame;Landroid/database/Cursor;Z)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/BoxListFrame;->getCountOfNotDelMsg(Landroid/database/Cursor;Z)I
 
@@ -756,7 +737,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/ui/BoxListFrame;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mCheckedList:Ljava/util/ArrayList;
 
@@ -765,8 +745,6 @@
 
 .method static synthetic access$2102(Lcom/android/mms/ui/BoxListFrame;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mCheckedList:Ljava/util/ArrayList;
 
@@ -775,8 +753,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/ui/BoxListFrame;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->deleteAllMessage(I)V
 
@@ -785,11 +761,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/ui/BoxListFrame;Landroid/database/Cursor;ZII)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/BoxListFrame;->deleteMessage(Landroid/database/Cursor;ZII)V
 
@@ -798,7 +769,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/ui/BoxListFrame;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mDeleteEventHandler:Landroid/os/Handler;
 
@@ -807,7 +777,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/ui/BoxListFrame;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mDeleteConfirmDialog:Landroid/app/AlertDialog;
 
@@ -816,8 +785,6 @@
 
 .method static synthetic access$2502(Lcom/android/mms/ui/BoxListFrame;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mDeleteConfirmDialog:Landroid/app/AlertDialog;
 
@@ -826,7 +793,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/ui/BoxListFrame;)Lcom/android/mms/ui/BoxListAdapter$MessageData;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mMsgToDelete:Lcom/android/mms/ui/BoxListAdapter$MessageData;
 
@@ -835,8 +801,6 @@
 
 .method static synthetic access$2602(Lcom/android/mms/ui/BoxListFrame;Lcom/android/mms/ui/BoxListAdapter$MessageData;)Lcom/android/mms/ui/BoxListAdapter$MessageData;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Lcom/android/mms/ui/BoxListAdapter$MessageData;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mMsgToDelete:Lcom/android/mms/ui/BoxListAdapter$MessageData;
 
@@ -845,7 +809,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/BoxListFrame;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -854,9 +817,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/BoxListFrame;Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/BoxListFrame;->confirmDeleteDialog(Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;Z)V
 
@@ -865,7 +825,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -874,7 +833,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/BoxListFrame;)Landroid/widget/PopupMenu;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mBoxSelMenu:Landroid/widget/PopupMenu;
 
@@ -883,8 +841,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/BoxListFrame;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->afterResult(I)V
 
@@ -893,7 +849,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->refreshCheckedList()V
 
@@ -902,7 +857,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/ui/BoxListFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->isFirstItemChanged()Z
 
@@ -913,7 +867,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/ui/BoxListFrame;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget v0, p0, Lcom/android/mms/ui/BoxListFrame;->mVisiblePosition:I
 
@@ -922,7 +875,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->restoreListOffset()V
 
@@ -931,8 +883,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/ui/BoxListFrame;J)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/BoxListFrame;->startAsyncQueryDelayed(J)V
 
@@ -949,7 +899,6 @@
 
 .method static synthetic access$3602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/BoxListFrame;->mStatusBarNoti:Z
 
@@ -958,8 +907,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/ui/BoxListFrame;Landroid/database/Cursor;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->invokeStartViewerNewMsg(Landroid/database/Cursor;)V
 
@@ -968,8 +915,6 @@
 
 .method static synthetic access$3802(Lcom/android/mms/ui/BoxListFrame;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/BoxListFrame;->mFirstItemId:J
 
@@ -978,7 +923,6 @@
 
 .method static synthetic access$3900(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->setListTitle()V
 
@@ -987,8 +931,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/BoxListFrame;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->updateList(I)V
 
@@ -997,7 +939,6 @@
 
 .method static synthetic access$4000(Lcom/android/mms/ui/BoxListFrame;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mDeletedThreadIds:Ljava/util/HashSet;
 
@@ -1006,7 +947,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->startFakeAsyncQuery()V
 
@@ -1015,7 +955,6 @@
 
 .method static synthetic access$4200(Lcom/android/mms/ui/BoxListFrame;)Lcom/android/mms/ui/ViewBySelectorAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mViewBySelectorAdapter:Lcom/android/mms/ui/ViewBySelectorAdapter;
 
@@ -1024,8 +963,6 @@
 
 .method static synthetic access$4300(Lcom/android/mms/ui/BoxListFrame;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->viewby(I)V
 
@@ -1034,7 +971,6 @@
 
 .method static synthetic access$4400(Lcom/android/mms/ui/BoxListFrame;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -1043,8 +979,6 @@
 
 .method static synthetic access$4402(Lcom/android/mms/ui/BoxListFrame;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -1053,7 +987,6 @@
 
 .method static synthetic access$4500(Lcom/android/mms/ui/BoxListFrame;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -1062,8 +995,6 @@
 
 .method static synthetic access$4502(Lcom/android/mms/ui/BoxListFrame;Lcom/android/mms/ui/MessageItem;)Lcom/android/mms/ui/MessageItem;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -1072,7 +1003,6 @@
 
 .method static synthetic access$4800(Lcom/android/mms/ui/BoxListFrame;)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -1081,8 +1011,6 @@
 
 .method static synthetic access$4802(Lcom/android/mms/ui/BoxListFrame;Lcom/android/mms/data/Conversation;)Lcom/android/mms/data/Conversation;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -1091,7 +1019,6 @@
 
 .method static synthetic access$4900(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->deleteSelectedItems()V
 
@@ -1108,7 +1035,6 @@
 
 .method static synthetic access$5000(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1117,7 +1043,6 @@
 
 .method static synthetic access$5100(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1126,7 +1051,6 @@
 
 .method static synthetic access$5200(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1135,7 +1059,6 @@
 
 .method static synthetic access$5300(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1144,7 +1067,6 @@
 
 .method static synthetic access$5400(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1153,7 +1075,6 @@
 
 .method static synthetic access$5500(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1162,7 +1083,6 @@
 
 .method static synthetic access$5600(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1171,7 +1091,6 @@
 
 .method static synthetic access$5700(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1180,9 +1099,6 @@
 
 .method static synthetic access$5800(Lcom/android/mms/ui/BoxListFrame;Landroid/content/DialogInterface$OnClickListener;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/BoxListFrame;->confirmCancelDialog(Landroid/content/DialogInterface$OnClickListener;Z)V
 
@@ -1191,8 +1107,6 @@
 
 .method static synthetic access$5900(Lcom/android/mms/ui/BoxListFrame;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->startActivity(Landroid/content/Intent;)V
 
@@ -1201,7 +1115,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/BoxListFrame;)Lcom/android/mms/ui/BoxListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mListAdapter:Lcom/android/mms/ui/BoxListAdapter;
 
@@ -1210,7 +1123,6 @@
 
 .method static synthetic access$6000(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->closeSearchView()V
 
@@ -1219,7 +1131,6 @@
 
 .method static synthetic access$6100(Lcom/android/mms/ui/BoxListFrame;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -1228,7 +1139,6 @@
 
 .method static synthetic access$6200(Lcom/android/mms/ui/BoxListFrame;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -1237,8 +1147,6 @@
 
 .method static synthetic access$6202(Lcom/android/mms/ui/BoxListFrame;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -1247,8 +1155,6 @@
 
 .method static synthetic access$6300(Lcom/android/mms/ui/BoxListFrame;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->disableSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -1257,7 +1163,6 @@
 
 .method static synthetic access$6400(Lcom/android/mms/ui/BoxListFrame;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget v0, p0, Lcom/android/mms/ui/BoxListFrame;->mListAdapterCount:I
 
@@ -1266,8 +1171,6 @@
 
 .method static synthetic access$6500(Lcom/android/mms/ui/BoxListFrame;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -1276,7 +1179,6 @@
 
 .method static synthetic access$6600(Lcom/android/mms/ui/BoxListFrame;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget v0, p0, Lcom/android/mms/ui/BoxListFrame;->mListMultiMode:I
 
@@ -1285,8 +1187,6 @@
 
 .method static synthetic access$6602(Lcom/android/mms/ui/BoxListFrame;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/BoxListFrame;->mListMultiMode:I
 
@@ -1295,8 +1195,6 @@
 
 .method static synthetic access$6700(Lcom/android/mms/ui/BoxListFrame;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->disableAllMenu(Landroid/view/Menu;)V
 
@@ -1305,8 +1203,6 @@
 
 .method static synthetic access$6800(Lcom/android/mms/ui/BoxListFrame;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->updateMultiActionMenu(Landroid/view/Menu;)V
 
@@ -1315,8 +1211,6 @@
 
 .method static synthetic access$6900(Lcom/android/mms/ui/BoxListFrame;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->enableSelectedMenu(Landroid/view/Menu;)V
 
@@ -1325,7 +1219,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/BoxListFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BoxListFrame;->mIsDeleteMode:Z
 
@@ -1334,7 +1227,6 @@
 
 .method static synthetic access$7000(Lcom/android/mms/ui/BoxListFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BoxListFrame;->mIsSelectAllmode:Z
 
@@ -1343,8 +1235,6 @@
 
 .method static synthetic access$7002(Lcom/android/mms/ui/BoxListFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListFrame;->mIsSelectAllmode:Z
 
@@ -1353,7 +1243,6 @@
 
 .method static synthetic access$7100(Lcom/android/mms/ui/BoxListFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BoxListFrame;->mIsLastItemOfSelectAll:Z
 
@@ -1362,8 +1251,6 @@
 
 .method static synthetic access$7102(Lcom/android/mms/ui/BoxListFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListFrame;->mIsLastItemOfSelectAll:Z
 
@@ -1372,7 +1259,6 @@
 
 .method static synthetic access$7200(Lcom/android/mms/ui/BoxListFrame;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowUri:Landroid/net/Uri;
 
@@ -1381,8 +1267,6 @@
 
 .method static synthetic access$7202(Lcom/android/mms/ui/BoxListFrame;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowUri:Landroid/net/Uri;
 
@@ -1391,7 +1275,6 @@
 
 .method static synthetic access$7300(Lcom/android/mms/ui/BoxListFrame;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowType:Ljava/lang/String;
 
@@ -1400,8 +1283,6 @@
 
 .method static synthetic access$7302(Lcom/android/mms/ui/BoxListFrame;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowType:Ljava/lang/String;
 
@@ -1410,7 +1291,6 @@
 
 .method static synthetic access$7400(Lcom/android/mms/ui/BoxListFrame;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowAddr:Ljava/lang/String;
 
@@ -1419,8 +1299,6 @@
 
 .method static synthetic access$7402(Lcom/android/mms/ui/BoxListFrame;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowAddr:Ljava/lang/String;
 
@@ -1429,7 +1307,6 @@
 
 .method static synthetic access$7500(Lcom/android/mms/ui/BoxListFrame;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-wide v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowThreadId:J
 
@@ -1438,8 +1315,6 @@
 
 .method static synthetic access$7502(Lcom/android/mms/ui/BoxListFrame;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowThreadId:J
 
@@ -1448,7 +1323,6 @@
 
 .method static synthetic access$7600(Lcom/android/mms/ui/BoxListFrame;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowBody:Ljava/lang/String;
 
@@ -1457,8 +1331,6 @@
 
 .method static synthetic access$7602(Lcom/android/mms/ui/BoxListFrame;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowBody:Ljava/lang/String;
 
@@ -1467,7 +1339,6 @@
 
 .method static synthetic access$7700(Lcom/android/mms/ui/BoxListFrame;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-wide v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowSize:J
 
@@ -1476,8 +1347,6 @@
 
 .method static synthetic access$7702(Lcom/android/mms/ui/BoxListFrame;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowSize:J
 
@@ -1486,7 +1355,6 @@
 
 .method static synthetic access$7800(Lcom/android/mms/ui/BoxListFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowLocked:Z
 
@@ -1495,8 +1363,6 @@
 
 .method static synthetic access$7802(Lcom/android/mms/ui/BoxListFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowLocked:Z
 
@@ -1505,7 +1371,6 @@
 
 .method static synthetic access$7900(Lcom/android/mms/ui/BoxListFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowDeliveryReport:Z
 
@@ -1514,8 +1379,6 @@
 
 .method static synthetic access$7902(Lcom/android/mms/ui/BoxListFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowDeliveryReport:Z
 
@@ -1524,7 +1387,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/BoxListFrame;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mCursor:Landroid/database/Cursor;
 
@@ -1533,7 +1395,6 @@
 
 .method static synthetic access$8000(Lcom/android/mms/ui/BoxListFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowReadReport:Z
 
@@ -1542,8 +1403,6 @@
 
 .method static synthetic access$8002(Lcom/android/mms/ui/BoxListFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListFrame;->mSendNowReadReport:Z
 
@@ -1552,8 +1411,6 @@
 
 .method static synthetic access$802(Lcom/android/mms/ui/BoxListFrame;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mCursor:Landroid/database/Cursor;
 
@@ -1562,7 +1419,6 @@
 
 .method static synthetic access$8100(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1571,7 +1427,6 @@
 
 .method static synthetic access$8200(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1580,7 +1435,6 @@
 
 .method static synthetic access$8300(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1589,7 +1443,6 @@
 
 .method static synthetic access$8400(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1598,7 +1451,6 @@
 
 .method static synthetic access$8500(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1607,7 +1459,6 @@
 
 .method static synthetic access$8600(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1616,7 +1467,6 @@
 
 .method static synthetic access$8700(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1625,7 +1475,6 @@
 
 .method static synthetic access$8800(Lcom/android/mms/ui/BoxListFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mContext:Landroid/content/Context;
 
@@ -1634,7 +1483,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/BoxListFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/BoxListFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->updateCheckedMsgCount()V
 
@@ -1651,8 +1499,6 @@
 
 .method private addVIPModeListMenu(Landroid/view/ContextMenu;J)V
     .locals 9
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # J
 
     iget-object v5, p0, Lcom/android/mms/ui/BoxListFrame;->mActivity:Landroid/app/Activity;
 
@@ -1943,7 +1789,6 @@
 
 .method private afterResult(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x2
 
@@ -2175,7 +2020,6 @@
 
 .method private applyImages(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     sget-object v6, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -2268,7 +2112,6 @@
 
 .method private checkContactValidityWithDelay(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v0, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -2309,7 +2152,6 @@
 
 .method private clearNewMessageIconForNoti(J)V
     .locals 2
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -2369,8 +2211,6 @@
 
 .method private confirmCancelDialog(Landroid/content/DialogInterface$OnClickListener;Z)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Z
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -2415,8 +2255,6 @@
 
 .method private confirmDeleteDialog(Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;Z)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;
-    .param p2    # Z
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -2473,7 +2311,6 @@
 
 .method private confirmRecvMmsDialog(Lcom/android/mms/ui/BoxListFrame$RecvMmsMessageListener;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/BoxListFrame$RecvMmsMessageListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -2510,7 +2347,6 @@
 
 .method private deleteAllMessage(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2596,10 +2432,6 @@
 
 .method private deleteMessage(Landroid/database/Cursor;ZII)V
     .locals 14
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -3007,7 +2839,6 @@
 
 .method private disableAllMenu(Landroid/view/Menu;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -3186,7 +3017,6 @@
 
 .method private disableSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     const/4 v0, 0x0
 
@@ -3199,7 +3029,6 @@
 
 .method private enableSelectedMenu(Landroid/view/Menu;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -3269,8 +3098,6 @@
 
 .method private getCountOfNotDelMsg(Landroid/database/Cursor;Z)I
     .locals 7
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -3369,9 +3196,6 @@
 
 .method public static getListTitle(Landroid/content/Context;IZ)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -3516,9 +3340,6 @@
 
 .method private static getMessageCount(Landroid/content/Context;IZ)I
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v15, 0x0
 
@@ -3812,8 +3633,6 @@
 
 .method private static getMessageCountString(Landroid/content/Context;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -3899,7 +3718,6 @@
 
 .method private getTokenFromIndex(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3945,7 +3763,6 @@
 
 .method private getUriFromIndex(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4123,9 +3940,6 @@
 
 .method private invokeStartViewerLatestNewMsg(Landroid/database/Cursor;ZZ)V
     .locals 16
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Z
 
     sget-object v13, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -4603,7 +4417,6 @@
 
 .method private invokeStartViewerNewMsg(Landroid/database/Cursor;)V
     .locals 14
-    .param p1    # Landroid/database/Cursor;
 
     if-nez p1, :cond_1
 
@@ -5089,7 +4902,6 @@
 
 .method private lockMessage(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -5418,7 +5230,6 @@
 
 .method private declared-synchronized setIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -5580,7 +5391,6 @@
 
 .method private setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     new-instance v0, Lcom/android/mms/ui/SweepHandler;
 
@@ -5597,7 +5407,6 @@
 
 .method private startActivity(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame;->mActivity:Landroid/app/Activity;
 
@@ -5618,7 +5427,6 @@
 
 .method private startAsyncQueryDelayed(J)V
     .locals 2
-    .param p1    # J
 
     new-instance v0, Landroid/os/Handler;
 
@@ -5635,7 +5443,6 @@
 
 .method private startAsyncQueryInternal(Z)V
     .locals 13
-    .param p1    # Z
 
     :try_start_0
     iget v0, p0, Lcom/android/mms/ui/BoxListFrame;->mListType:I
@@ -5739,7 +5546,6 @@
 
 .method private startMsgListViewByQuery(I)V
     .locals 9
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->beforeResult()V
 
@@ -5862,7 +5668,6 @@
 
 .method private updateEmptyScreen(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -6018,7 +5823,6 @@
 
 .method private updateList(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -6109,7 +5913,6 @@
 
 .method private updateListWithoutNotify(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6180,7 +5983,6 @@
 
 .method private updateMultiActionMenu(Landroid/view/Menu;)V
     .locals 13
-    .param p1    # Landroid/view/Menu;
 
     const v12, 0x7f0b032f
 
@@ -6842,7 +6644,6 @@
 
 .method private viewby(I)V
     .locals 0
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -6882,8 +6683,6 @@
 # virtual methods
 .method public checkedListContains(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/mms/ui/BoxListFrame$MessageData;
 
@@ -6900,8 +6699,6 @@
 
 .method public configurationChanged(Landroid/content/res/Configuration;Z)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Z
 
     sget-object v1, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -6979,11 +6776,6 @@
 
 .method public confirmDeleteDialog(Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;ZZLandroid/content/Context;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Landroid/content/Context;
-    .param p5    # Ljava/lang/String;
 
     sget-object v5, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -7132,8 +6924,6 @@
 
 .method public drawMessagePointer(JLjava/lang/String;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -7245,7 +7035,6 @@
 
 .method public getEmailAddress(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -7343,7 +7132,6 @@
 
 .method public getNumber(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     sget-object v3, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -7401,7 +7189,6 @@
 
 .method public getNumber_SweepCall(I)Ljava/lang/String;
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x3
 
@@ -7547,7 +7334,6 @@
 
 .method public isCallable(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/BoxListFrame;->getNumber_SweepCall(I)Ljava/lang/String;
 
@@ -7568,7 +7354,6 @@
 
 .method public isListIndex(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -7638,10 +7423,6 @@
 
 .method protected listItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 18
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwAdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     move-object/from16 v0, p1
 
@@ -8263,9 +8044,6 @@
 
 .method public declared-synchronized markAsRead(JLjava/lang/Runnable;Z)V
     .locals 10
-    .param p1    # J
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # Z
 
     const/4 v9, 0x1
 
@@ -8677,7 +8455,6 @@
 
 .method public markAsRead(Lcom/android/mms/ui/MessageItem;)V
     .locals 6
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v5, 0x1
 
@@ -8919,7 +8696,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 10
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v9, 0x2
 
@@ -9172,8 +8948,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -9532,8 +9306,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -9542,7 +9314,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -9684,7 +9455,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 9
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v5, 0x0
 
@@ -9921,7 +9691,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 9
-    .param p1    # Landroid/view/Menu;
 
     const/16 v8, 0x8
 
@@ -10435,7 +10204,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/mms/ui/BoxListFrame;->saveListOffset()V
@@ -10548,7 +10316,6 @@
 
 .method public onSweepActionCanceled(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -10594,8 +10361,6 @@
 
 .method public onSweepActionFired(II)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -10890,7 +10655,6 @@
 
 .method public onSweepActionStarted(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -10925,7 +10689,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     sget-object v0, Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
 
@@ -10946,7 +10709,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame;->mActivity:Landroid/app/Activity;
 

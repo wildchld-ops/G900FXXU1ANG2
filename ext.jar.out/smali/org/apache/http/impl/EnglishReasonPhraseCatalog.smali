@@ -369,8 +369,6 @@
 
 .method private static setReason(ILjava/lang/String;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     div-int/lit8 v0, p0, 0x64
 
@@ -391,8 +389,6 @@
 # virtual methods
 .method public getReason(ILjava/util/Locale;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/util/Locale;
 
     const/16 v3, 0x64
 

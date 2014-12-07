@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;)I
     .locals 5
-    .param p1    # Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
-    .param p2    # Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
 
     const/4 v3, 0x0
 
@@ -101,8 +99,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
 

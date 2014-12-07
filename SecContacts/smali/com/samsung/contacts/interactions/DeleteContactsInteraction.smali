@@ -88,7 +88,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/samsung/contacts/interactions/DeleteContactsInteraction;->mCanceled:Z
 
@@ -105,7 +104,6 @@
 
 .method static synthetic access$102(Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Landroid/app/ProgressDialog;
 
     sput-object p0, Lcom/samsung/contacts/interactions/DeleteContactsInteraction;->mCanceledDialog:Landroid/app/ProgressDialog;
 
@@ -122,7 +120,6 @@
 
 .method static synthetic access$202(Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
     .locals 0
-    .param p0    # Ljava/lang/ref/WeakReference;
 
     sput-object p0, Lcom/samsung/contacts/interactions/DeleteContactsInteraction;->mProgress:Ljava/lang/ref/WeakReference;
 
@@ -131,7 +128,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/samsung/contacts/interactions/DeleteContactsInteraction;->mIsTaskRunning:Z
 
@@ -140,7 +136,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/samsung/contacts/interactions/DeleteContactsInteraction;->mActive:Z
 
@@ -149,7 +144,6 @@
 
 .method public static isStoppedDeleting(Z)Z
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x1
 
@@ -167,8 +161,6 @@
 
 .method public static start(Landroid/app/Activity;Ljava/util/ArrayList;Z)Lcom/samsung/contacts/interactions/DeleteContactsInteraction;
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -239,8 +231,6 @@
 
 .method static startWithTestLoaderManager(Landroid/app/Activity;Ljava/util/ArrayList;Z)Lcom/samsung/contacts/interactions/DeleteContactsInteraction;
     .locals 4
-    .param p0    # Landroid/app/Activity;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -312,7 +302,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -342,7 +331,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -455,7 +443,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "contactUri"
 
@@ -618,7 +605,6 @@
 
 .method public setShowingToast(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/DeleteContactsInteraction;->mShouldShowWarningToast:Z
 

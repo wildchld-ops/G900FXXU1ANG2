@@ -50,7 +50,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/Rev$ReviewResponse;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/Rev$ReviewResponse;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -111,7 +110,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Rev$ReviewResponse;
 

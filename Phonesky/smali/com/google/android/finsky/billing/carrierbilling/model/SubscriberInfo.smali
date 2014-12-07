@@ -60,7 +60,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,8 +116,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -127,7 +124,6 @@
 
 .method private constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$Builder;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -192,8 +188,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$Builder;Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$Builder;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;-><init>(Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo$Builder;)V
 
@@ -202,7 +196,6 @@
 
 .method public static fromObfuscatedString(Ljava/lang/String;)Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0x8
 
@@ -364,7 +357,6 @@
 
 .method private static switchChars(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -492,7 +484,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -976,8 +967,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;->mName:Ljava/lang/String;
 

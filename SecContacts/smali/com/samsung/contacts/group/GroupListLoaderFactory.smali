@@ -112,7 +112,6 @@
 
 .method public static createAggregatedGroupLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -139,7 +138,6 @@
 
 .method public static createGroupSelectionLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -222,7 +220,6 @@
 
 .method public static createNotAssignedGroupLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

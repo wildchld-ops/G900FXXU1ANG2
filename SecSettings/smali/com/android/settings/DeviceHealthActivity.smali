@@ -47,7 +47,6 @@
 
 .method private findFragmentByTab(Landroid/app/ActionBar$Tab;)Landroid/app/Fragment;
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
 
     invoke-virtual {p1}, Landroid/app/ActionBar$Tab;->getText()Ljava/lang/CharSequence;
 
@@ -150,7 +149,6 @@
 
 .method private setHomeEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/DeviceHealthActivity;->mIsHomeEnabled:Z
 
@@ -244,7 +242,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -253,7 +250,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x2
 
@@ -558,7 +554,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 
@@ -567,7 +562,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -600,7 +594,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -609,7 +602,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -636,16 +628,12 @@
 
 .method public onTabReselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 0
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     return-void
 .end method
 
 .method public onTabSelected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 3
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     const/4 v0, 0x0
 
@@ -744,20 +732,12 @@
 
 .method public onTabUnselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 0
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     return-void
 .end method
 
 .method public startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Landroid/app/Fragment;
-    .param p6    # I
 
     invoke-static {p0, p1, p2}, Landroid/app/Fragment;->instantiate(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;)Landroid/app/Fragment;
 

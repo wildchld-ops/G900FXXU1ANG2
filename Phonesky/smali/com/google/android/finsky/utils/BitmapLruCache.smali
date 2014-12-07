@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/utils/LruCache;-><init>(I)V
 
@@ -29,8 +28,6 @@
 # virtual methods
 .method protected bridge synthetic sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -45,8 +42,6 @@
 
 .method protected sizeOf(Ljava/lang/String;Landroid/graphics/Bitmap;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getRowBytes()I
 

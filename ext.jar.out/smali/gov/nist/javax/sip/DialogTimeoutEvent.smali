@@ -24,9 +24,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljavax/sip/Dialog;Lgov/nist/javax/sip/DialogTimeoutEvent$Reason;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljavax/sip/Dialog;
-    .param p3    # Lgov/nist/javax/sip/DialogTimeoutEvent$Reason;
 
     const/4 v0, 0x0
 

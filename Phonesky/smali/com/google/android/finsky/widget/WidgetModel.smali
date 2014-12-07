@@ -55,11 +55,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/utils/BitmapLoader;[ILcom/google/android/finsky/widget/WidgetModel$ImageSelector;II)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # [I
-    .param p3    # Lcom/google/android/finsky/widget/WidgetModel$ImageSelector;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,10 +83,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/widget/WidgetModel;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/widget/WidgetModel;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/widget/WidgetModel;->bitmapLoaded(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;I)V
 
@@ -100,9 +91,6 @@
 
 .method private bitmapLoaded(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;I)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
-    .param p3    # I
 
     iget v0, p0, Lcom/google/android/finsky/widget/WidgetModel;->mLoadedImagesSoFar:I
 
@@ -148,7 +136,6 @@
 
 .method private isValidDocument(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v5, 0x1
 
@@ -342,7 +329,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v0, 0x0
 
@@ -365,10 +351,6 @@
 
 .method public refresh(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Ljava/lang/String;Lcom/google/android/finsky/widget/WidgetModel$RefreshListener;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/widget/WidgetModel$RefreshListener;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/widget/WidgetModel;->mUpdatePending:Z
 

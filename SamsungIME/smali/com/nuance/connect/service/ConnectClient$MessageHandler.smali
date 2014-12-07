@@ -58,7 +58,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -75,7 +74,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     sget-boolean v1, Lcom/nuance/connect/service/ConnectClient$MessageHandler;->$assertionsDisabled:Z
 

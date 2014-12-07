@@ -57,8 +57,6 @@
 
 .method public SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v4, 0x1
 
@@ -165,7 +163,6 @@
 
 .method public SetIntent(Landroid/content/Intent;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -209,7 +206,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -282,7 +278,6 @@
 
 .method protected readFormSource(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const-class v0, Ljava/lang/String;
 
@@ -351,8 +346,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     sget-boolean v0, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 

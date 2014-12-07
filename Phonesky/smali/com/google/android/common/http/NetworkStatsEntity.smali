@@ -28,13 +28,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpEntity;Ljava/lang/String;IJJJJ)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpEntity;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
 
     invoke-direct {p0, p1}, Lorg/apache/http/entity/HttpEntityWrapper;-><init>(Lorg/apache/http/HttpEntity;)V
 
@@ -55,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/google/android/common/http/NetworkStatsEntity;)J
     .locals 2
-    .param p0    # Lcom/google/android/common/http/NetworkStatsEntity;
 
     iget-wide v0, p0, Lcom/google/android/common/http/NetworkStatsEntity;->mProcessingStartTime:J
 
@@ -64,7 +56,6 @@
 
 .method static synthetic access$100(Lcom/google/android/common/http/NetworkStatsEntity;)I
     .locals 1
-    .param p0    # Lcom/google/android/common/http/NetworkStatsEntity;
 
     iget v0, p0, Lcom/google/android/common/http/NetworkStatsEntity;->mUid:I
 
@@ -73,7 +64,6 @@
 
 .method static synthetic access$200(Lcom/google/android/common/http/NetworkStatsEntity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/common/http/NetworkStatsEntity;
 
     iget-object v0, p0, Lcom/google/android/common/http/NetworkStatsEntity;->mUa:Ljava/lang/String;
 
@@ -82,7 +72,6 @@
 
 .method static synthetic access$300(Lcom/google/android/common/http/NetworkStatsEntity;)J
     .locals 2
-    .param p0    # Lcom/google/android/common/http/NetworkStatsEntity;
 
     iget-wide v0, p0, Lcom/google/android/common/http/NetworkStatsEntity;->mResponseLatency:J
 
@@ -91,7 +80,6 @@
 
 .method static synthetic access$400(Lcom/google/android/common/http/NetworkStatsEntity;)J
     .locals 2
-    .param p0    # Lcom/google/android/common/http/NetworkStatsEntity;
 
     iget-wide v0, p0, Lcom/google/android/common/http/NetworkStatsEntity;->mStartTx:J
 
@@ -100,7 +88,6 @@
 
 .method static synthetic access$500(Lcom/google/android/common/http/NetworkStatsEntity;)J
     .locals 2
-    .param p0    # Lcom/google/android/common/http/NetworkStatsEntity;
 
     iget-wide v0, p0, Lcom/google/android/common/http/NetworkStatsEntity;->mStartRx:J
 

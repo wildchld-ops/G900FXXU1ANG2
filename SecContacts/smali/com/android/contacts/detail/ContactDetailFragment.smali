@@ -715,7 +715,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/lang/StringBuilder;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mPhotoContentDescription:Ljava/lang/StringBuilder;
 
@@ -724,7 +723,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/detail/ContactDetailFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mIsBusinesscard:Z
 
@@ -733,7 +731,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/detail/ContactDetailFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mIsUserProfile:Z
 
@@ -742,7 +739,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/detail/ContactDetailFragment;)Lcom/samsung/contacts/model/rcs/RcsCaps;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mRcsCapsData:Lcom/samsung/contacts/model/rcs/RcsCaps;
 
@@ -751,7 +747,6 @@
 
 .method static synthetic access$1400(Lcom/android/contacts/detail/ContactDetailFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mHasVideoCall:Z
 
@@ -760,7 +755,6 @@
 
 .method static synthetic access$1500(Lcom/android/contacts/detail/ContactDetailFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mHasIpCall:Z
 
@@ -769,7 +763,6 @@
 
 .method static synthetic access$1600(Lcom/android/contacts/detail/ContactDetailFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mHasSms:Z
 
@@ -778,7 +771,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/util/WeakHashMap;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mFaceTaggedPhotoCache:Ljava/util/WeakHashMap;
 
@@ -787,7 +779,6 @@
 
 .method static synthetic access$1800(Lcom/android/contacts/detail/ContactDetailFragment;)Landroid/util/DisplayMetrics;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mMetrics:Landroid/util/DisplayMetrics;
 
@@ -796,7 +787,6 @@
 
 .method static synthetic access$1900(Lcom/android/contacts/detail/ContactDetailFragment;)Lcom/samsung/contacts/detail/ContactDetailButtonLayoutManager;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mButtonLayoutManager:Lcom/samsung/contacts/detail/ContactDetailButtonLayoutManager;
 
@@ -805,7 +795,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/detail/ContactDetailFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mListView:Landroid/widget/ListView;
 
@@ -814,7 +803,6 @@
 
 .method static synthetic access$2000(Lcom/android/contacts/detail/ContactDetailFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mIsHugeFontEnabled:Z
 
@@ -823,7 +811,6 @@
 
 .method static synthetic access$2100(Lcom/android/contacts/detail/ContactDetailFragment;)Lcom/android/contacts/detail/ContactDetailFragment$Listener;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mListener:Lcom/android/contacts/detail/ContactDetailFragment$Listener;
 
@@ -832,7 +819,6 @@
 
 .method static synthetic access$2200(Lcom/android/contacts/detail/ContactDetailFragment;)Lcom/samsung/contacts/util/ImsLowSignalHelper;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mImsLowSignalHelper:Lcom/samsung/contacts/util/ImsLowSignalHelper;
 
@@ -841,7 +827,6 @@
 
 .method static synthetic access$2300(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mChatOnAccountList:Ljava/util/ArrayList;
 
@@ -850,7 +835,6 @@
 
 .method static synthetic access$2400(Lcom/android/contacts/detail/ContactDetailFragment;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mPhoneNumberCount:I
 
@@ -859,7 +843,6 @@
 
 .method static synthetic access$2500(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mDefalutPhoneNumber:Ljava/lang/String;
 
@@ -868,7 +851,6 @@
 
 .method static synthetic access$2600(Lcom/android/contacts/detail/ContactDetailFragment;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mTypeList:[Ljava/lang/CharSequence;
 
@@ -877,7 +859,6 @@
 
 .method static synthetic access$2700(Lcom/android/contacts/detail/ContactDetailFragment;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mPhoneNumberList:[Ljava/lang/CharSequence;
 
@@ -886,8 +867,6 @@
 
 .method static synthetic access$2800(Lcom/android/contacts/detail/ContactDetailFragment;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailFragment;->getSmsIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -898,7 +877,6 @@
 
 .method static synthetic access$2900(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mAllEntries:Ljava/util/ArrayList;
 
@@ -907,7 +885,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/detail/ContactDetailFragment;)Landroid/view/VelocityTracker;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mVelocityTracker:Landroid/view/VelocityTracker;
 
@@ -916,8 +893,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/detail/ContactDetailFragment;Landroid/view/VelocityTracker;)Landroid/view/VelocityTracker;
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
-    .param p1    # Landroid/view/VelocityTracker;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mVelocityTracker:Landroid/view/VelocityTracker;
 
@@ -926,7 +901,6 @@
 
 .method static synthetic access$3100(Lcom/android/contacts/detail/ContactDetailFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mIsSim:Z
 
@@ -935,8 +909,6 @@
 
 .method static synthetic access$3200(Lcom/android/contacts/detail/ContactDetailFragment;Ljava/util/List;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailFragment;->getDefaultGroupId(Ljava/util/List;)J
 
@@ -947,7 +919,6 @@
 
 .method static synthetic access$3300(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mCustomRingtoneUri:Ljava/lang/String;
 
@@ -956,7 +927,6 @@
 
 .method static synthetic access$3400(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mCustomAlerttoneUri:Ljava/lang/String;
 
@@ -965,7 +935,6 @@
 
 .method static synthetic access$3500(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mCustomVibrationUri:Ljava/lang/String;
 
@@ -974,8 +943,6 @@
 
 .method static synthetic access$3600(Lcom/android/contacts/detail/ContactDetailFragment;Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailFragment;->createCopy(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
 
@@ -984,7 +951,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/detail/ContactDetailFragment;)Lcom/android/contacts/detail/ContactDetailFragment$QuickFix;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mQuickFix:Lcom/android/contacts/detail/ContactDetailFragment$QuickFix;
 
@@ -993,7 +959,6 @@
 
 .method static synthetic access$4000(Lcom/android/contacts/detail/ContactDetailFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mCurrentPhotoFile:Ljava/lang/String;
 
@@ -1002,8 +967,6 @@
 
 .method static synthetic access$4002(Lcom/android/contacts/detail/ContactDetailFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mCurrentPhotoFile:Ljava/lang/String;
 
@@ -1012,7 +975,6 @@
 
 .method static synthetic access$4100(Lcom/android/contacts/detail/ContactDetailFragment;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mCurrentPhotoUri:Landroid/net/Uri;
 
@@ -1021,8 +983,6 @@
 
 .method static synthetic access$4102(Lcom/android/contacts/detail/ContactDetailFragment;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mCurrentPhotoUri:Landroid/net/Uri;
 
@@ -1031,7 +991,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/detail/ContactDetailFragment;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mInflater:Landroid/view/LayoutInflater;
 
@@ -1040,7 +999,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/detail/ContactDetailFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mContext:Landroid/content/Context;
 
@@ -1049,7 +1007,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/detail/ContactDetailFragment;)Lcom/android/contacts/model/Contact;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mContactData:Lcom/android/contacts/model/Contact;
 
@@ -1058,7 +1015,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/detail/ContactDetailFragment;)Lcom/android/contacts/detail/ContactDetailPhotoSetter;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailFragment;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mPhotoSetter:Lcom/android/contacts/detail/ContactDetailPhotoSetter;
 
@@ -2980,9 +2936,6 @@
 
 .method private buildImEntries(Lcom/android/contacts/model/dataitem/DataItem;Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;Lcom/android/contacts/common/model/dataitem/DataKind;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/model/dataitem/DataItem;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$DetailViewEntry;
-    .param p3    # Lcom/android/contacts/common/model/dataitem/DataKind;
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mContext:Landroid/content/Context;
 
@@ -3945,7 +3898,6 @@
 
 .method private buildSnsLoadingEntries(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mSnsFeedsData:Lcom/samsung/contacts/model/SnsFeeds;
 
@@ -4179,7 +4131,6 @@
 
 .method private clearDefaultContactMethod(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mContext:Landroid/content/Context;
 
@@ -4377,7 +4328,6 @@
 
 .method private createCopy(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 2
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mListener:Lcom/android/contacts/detail/ContactDetailFragment$Listener;
 
@@ -5010,7 +4960,6 @@
 
 .method private handleGroupMembership(Ljava/util/ArrayList;Ljava/util/List;J)V
     .locals 5
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5314,7 +5263,6 @@
 
 .method private sendCallMessage(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mAllEntries:Ljava/util/ArrayList;
 
@@ -5347,7 +5295,6 @@
 
 .method private setDefaultContactMethod(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mContext:Landroid/content/Context;
 
@@ -6447,8 +6394,6 @@
 
 .method public onAccountChosen(Lcom/android/contacts/common/model/account/AccountWithDataSet;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailFragment;->createCopy(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
 
@@ -6614,7 +6559,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -6835,7 +6779,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -7355,9 +7298,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-wide/16 v4, 0x12c
 
@@ -7559,9 +7499,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7741,7 +7678,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "contactUri"
 
@@ -7813,10 +7749,6 @@
 
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 6
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v5, 0x8
 
@@ -7929,15 +7861,12 @@
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public requestToMoveToOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mListView:Landroid/widget/ListView;
 
@@ -8090,8 +8019,6 @@
 
 .method public setData(Landroid/net/Uri;Lcom/android/contacts/model/Contact;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/contacts/model/Contact;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mLookupUri:Landroid/net/Uri;
 
@@ -8122,7 +8049,6 @@
 
 .method public setListener(Lcom/android/contacts/detail/ContactDetailFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mListener:Lcom/android/contacts/detail/ContactDetailFragment$Listener;
 
@@ -8131,7 +8057,6 @@
 
 .method public setRcsCapsData(Lcom/samsung/contacts/model/rcs/RcsCaps;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/model/rcs/RcsCaps;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mRcsCapsData:Lcom/samsung/contacts/model/rcs/RcsCaps;
 
@@ -8142,7 +8067,6 @@
 
 .method public setShowStaticPhoto(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mShowStaticPhoto:Z
 
@@ -8151,7 +8075,6 @@
 
 .method public setSnsFeedsData(Lcom/samsung/contacts/model/SnsFeeds;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/model/SnsFeeds;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailFragment;->mSnsFeedsData:Lcom/samsung/contacts/model/SnsFeeds;
 
@@ -8172,8 +8095,6 @@
 
 .method public startActivityForResultImpl(Landroid/content/Intent;I)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 

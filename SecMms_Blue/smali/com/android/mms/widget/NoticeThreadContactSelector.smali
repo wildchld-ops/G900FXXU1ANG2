@@ -234,7 +234,6 @@
 
 .method public static byteToString([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     const/4 v1, 0x0
 
@@ -251,7 +250,6 @@
 
 .method public static stringToByte(Ljava/lang/String;)[B
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -278,10 +276,6 @@
 # virtual methods
 .method protected LoadUriData(Landroid/net/Uri;IIJ)V
     .locals 51
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
@@ -1335,7 +1329,6 @@
 
 .method public bitmapToByteArray(Landroid/graphics/Bitmap;)[B
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
 
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
@@ -1383,7 +1376,6 @@
 
 .method public byteArrayToBitmap([B)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -1398,9 +1390,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v1, 0x1
 
@@ -1639,7 +1628,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -1764,7 +1752,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "InteractionCheck"
 
@@ -1779,7 +1766,6 @@
 
 .method public queryPhoneNumbers(J)Landroid/database/Cursor;
     .locals 10
-    .param p1    # J
 
     const/4 v5, 0x0
 
@@ -1873,8 +1859,6 @@
 
 .method public queryPhoneNumbers(JJ)Landroid/database/Cursor;
     .locals 10
-    .param p1    # J
-    .param p3    # J
 
     const/4 v5, 0x0
 

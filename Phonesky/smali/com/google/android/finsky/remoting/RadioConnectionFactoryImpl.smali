@@ -63,7 +63,6 @@
 
 .method public constructor <init>(Landroid/net/ConnectivityManager;)V
     .locals 0
-    .param p1    # Landroid/net/ConnectivityManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +73,6 @@
 
 .method private createNewConnectionByType(Lcom/google/android/finsky/remoting/RadioConnectionFactoryImpl$ConnectionType;)Lcom/google/android/finsky/remoting/RadioConnection;
     .locals 6
-    .param p1    # Lcom/google/android/finsky/remoting/RadioConnectionFactoryImpl$ConnectionType;
 
     const/4 v5, 0x2
 

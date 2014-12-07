@@ -291,7 +291,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/NotificationPanelMenu;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu;->mBrightness:Landroid/preference/CheckBoxPreference;
 
@@ -300,7 +299,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/NotificationPanelMenu;)Lcom/android/settings/NotificationPanelMenu$PanelDragShadowBuilder;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu;->mShadowBuilder:Lcom/android/settings/NotificationPanelMenu$PanelDragShadowBuilder;
 
@@ -317,7 +315,6 @@
 
 .method static synthetic access$1002(Landroid/widget/ListView;)Landroid/widget/ListView;
     .locals 0
-    .param p0    # Landroid/widget/ListView;
 
     sput-object p0, Lcom/android/settings/NotificationPanelMenu;->mListView:Landroid/widget/ListView;
 
@@ -326,8 +323,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/NotificationPanelMenu;Lcom/android/settings/NotificationPanelMenu$PanelDragShadowBuilder;)Lcom/android/settings/NotificationPanelMenu$PanelDragShadowBuilder;
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
-    .param p1    # Lcom/android/settings/NotificationPanelMenu$PanelDragShadowBuilder;
 
     iput-object p1, p0, Lcom/android/settings/NotificationPanelMenu;->mShadowBuilder:Lcom/android/settings/NotificationPanelMenu$PanelDragShadowBuilder;
 
@@ -336,7 +331,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/NotificationPanelMenu;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu;->resetBtn:Landroid/widget/Button;
 
@@ -345,7 +339,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/NotificationPanelMenu;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -354,8 +347,6 @@
 
 .method static synthetic access$1202(Lcom/android/settings/NotificationPanelMenu;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/NotificationPanelMenu;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -364,7 +355,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/NotificationPanelMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     invoke-direct {p0}, Lcom/android/settings/NotificationPanelMenu;->resetPanel()V
 
@@ -373,7 +363,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/NotificationPanelMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     invoke-direct {p0}, Lcom/android/settings/NotificationPanelMenu;->loadAppslist()V
 
@@ -382,7 +371,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/NotificationPanelMenu;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu;->mLongClickedView:Landroid/view/View;
 
@@ -391,8 +379,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/NotificationPanelMenu;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/settings/NotificationPanelMenu;->mLongClickedView:Landroid/view/View;
 
@@ -401,7 +387,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/NotificationPanelMenu;)I
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget v0, p0, Lcom/android/settings/NotificationPanelMenu;->idxGap:I
 
@@ -410,7 +395,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/NotificationPanelMenu;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu;->mActiveNotificationPanelList:Ljava/util/ArrayList;
 
@@ -419,7 +403,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/NotificationPanelMenu;)I
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget v0, p0, Lcom/android/settings/NotificationPanelMenu;->mActiveAppsNum:I
 
@@ -428,7 +411,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/NotificationPanelMenu;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu;->mCandidateNotificationPanelList:Ljava/util/ArrayList;
 
@@ -437,8 +419,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/NotificationPanelMenu;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/NotificationPanelMenu;->changeQuickSettingsByPanel(Landroid/view/View;)V
 
@@ -447,7 +427,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/NotificationPanelMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
 
     invoke-direct {p0}, Lcom/android/settings/NotificationPanelMenu;->updateQuickSettingsList()V
 
@@ -456,8 +435,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/NotificationPanelMenu;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationPanelMenu;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/NotificationPanelMenu;->changeQuickSettingsByBar(Landroid/view/View;)V
 
@@ -854,9 +831,6 @@
 
 .method private displayQuickSettings(IIILjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 25
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -1697,7 +1671,6 @@
 
 .method private isEmptyPanel(Ljava/util/ArrayList;I)Z
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3134,8 +3107,6 @@
 
 .method private swapPanels(Ljava/util/ArrayList;ILjava/util/ArrayList;I)V
     .locals 2
-    .param p2    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3540,7 +3511,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -3601,7 +3571,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3659,7 +3628,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -3975,8 +3943,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -4071,7 +4037,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -4154,8 +4119,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -4218,8 +4181,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v1, p0, Lcom/android/settings/NotificationPanelMenu;->mBrightness:Landroid/preference/CheckBoxPreference;
 

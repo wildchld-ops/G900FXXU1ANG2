@@ -21,7 +21,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/address/AddressImpl;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/address/AddressImpl;
 
     const-string v0, "P-Served-User"
 
@@ -140,7 +139,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Lgov/nist/javax/sip/header/ims/PServedUser;
 
@@ -199,7 +197,6 @@
 
 .method public setRegistrationState(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -268,7 +265,6 @@
 
 .method public setSessionCase(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -337,7 +333,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/interactions/EasyInteractionActionBarAdapter;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/EasyInteractionActionBarAdapter$EasyActionSpinnerAdapter;->this$0:Lcom/samsung/contacts/interactions/EasyInteractionActionBarAdapter;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method protected getDisplayValue(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

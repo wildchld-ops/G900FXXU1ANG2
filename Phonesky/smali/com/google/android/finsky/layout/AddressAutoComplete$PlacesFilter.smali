@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/layout/AddressAutoComplete;Lcom/google/android/finsky/layout/AddressAutoComplete$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/AddressAutoComplete;
-    .param p2    # Lcom/google/android/finsky/layout/AddressAutoComplete$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/AddressAutoComplete$PlacesFilter;-><init>(Lcom/google/android/finsky/layout/AddressAutoComplete;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method protected performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -115,8 +112,6 @@
 
 .method protected publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/Filter$FilterResults;
 
     if-eqz p2, :cond_0
 

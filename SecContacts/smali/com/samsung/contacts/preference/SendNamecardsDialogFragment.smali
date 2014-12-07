@@ -32,8 +32,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;I)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;->setSendContactType(I)V
 
@@ -42,7 +40,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;->mSendContactType:Landroid/widget/TextView;
 
@@ -51,8 +48,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;->mSendContactType:Landroid/widget/TextView;
 
@@ -61,7 +56,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;)Landroid/widget/RadioButton;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;->mRadioButton:Landroid/widget/RadioButton;
 
@@ -70,8 +64,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;Landroid/widget/RadioButton;)Landroid/widget/RadioButton;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;
-    .param p1    # Landroid/widget/RadioButton;
 
     iput-object p1, p0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;->mRadioButton:Landroid/widget/RadioButton;
 
@@ -80,7 +72,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;
 
     iget v0, p0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;->mSendType:I
 
@@ -89,7 +80,6 @@
 
 .method private setSendContactType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;->mPreferences:Lcom/android/contacts/common/preference/ContactsPreferences;
 
@@ -100,7 +90,6 @@
 
 .method public static show(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     new-instance v0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment;
 
@@ -126,7 +115,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -153,7 +141,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/samsung/contacts/preference/SendNamecardsDialogFragment$SendContactAdapter;
 

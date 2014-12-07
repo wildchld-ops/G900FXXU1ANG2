@@ -88,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
 
     iget v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mSelectedCount:I
 
@@ -97,8 +96,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mSelectedCount:I
 
@@ -107,7 +104,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mDoneButtonClickable:Z
 
@@ -116,8 +112,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mDoneButtonClickable:Z
 
@@ -126,7 +120,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mIsTablet:Z
 
@@ -135,8 +128,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->actionbarTitle(I)Ljava/lang/String;
 
@@ -147,7 +138,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;)Landroid/app/ActionBar;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mActionBar:Landroid/app/ActionBar;
 
@@ -156,7 +146,6 @@
 
 .method private actionbarTitle(I)Ljava/lang/String;
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -326,7 +315,6 @@
 
 .method private getIntentInfo(Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -534,7 +522,6 @@
 
 .method private handleHomeKeyForVideoCall(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x3
 
@@ -789,7 +776,6 @@
 
 .method private makeResultString(Ljava/util/Map$Entry;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -908,8 +894,6 @@
 
 .method private requestSystemKeyEvent(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -1171,7 +1155,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1206,7 +1189,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mIsRecreatedInstance:Z
 
@@ -1228,7 +1210,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x122
 
@@ -1572,7 +1553,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1680,8 +1660,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -1708,7 +1686,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1791,7 +1768,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mRequest:Lcom/android/contacts/list/ContactsRequest;
 
@@ -1849,7 +1825,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     :try_start_0
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
@@ -1985,7 +1960,6 @@
 
 .method public returnPickPhoneResult(Landroid/net/Uri;)V
     .locals 16
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual/range {p0 .. p0}, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2163,7 +2137,6 @@
 
 .method public returnPickerResult(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -2803,7 +2776,6 @@
 
 .method protected setDoneButtonClickable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionGroupSelectionActivity;->mMenuDone:Landroid/view/MenuItem;
 

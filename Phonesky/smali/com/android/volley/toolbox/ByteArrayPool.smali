@@ -53,7 +53,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,7 +135,6 @@
 # virtual methods
 .method public declared-synchronized getBuf(I)[B
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -210,7 +208,6 @@
 
 .method public declared-synchronized returnBuf([B)V
     .locals 3
-    .param p1    # [B
 
     monitor-enter p0
 

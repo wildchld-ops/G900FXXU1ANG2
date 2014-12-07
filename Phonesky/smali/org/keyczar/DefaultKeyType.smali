@@ -519,7 +519,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/util/List;I)V
     .locals 5
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -652,8 +651,6 @@
 
 .method private static addToMapping(Ljava/lang/String;Lorg/keyczar/interfaces/KeyType;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lorg/keyczar/interfaces/KeyType;
 
     sget-object v0, Lorg/keyczar/DefaultKeyType;->typeMapping:Ljava/util/Map;
 
@@ -675,7 +672,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lorg/keyczar/DefaultKeyType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lorg/keyczar/DefaultKeyType;
 
@@ -783,7 +779,6 @@
 
 .method public getOutputSize(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lorg/keyczar/DefaultKeyType;->outputSizeMap:Ljava/util/Map;
 
@@ -806,7 +801,6 @@
 
 .method public isAcceptableSize(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lorg/keyczar/DefaultKeyType;->acceptableSizes:Ljava/util/List;
 

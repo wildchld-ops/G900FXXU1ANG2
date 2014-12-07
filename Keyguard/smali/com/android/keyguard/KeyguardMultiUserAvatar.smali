@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -89,8 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -101,9 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -228,7 +222,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardMultiUserAvatar;)Lcom/android/keyguard/KeyguardCircleFramedDrawable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/keyguard/KeyguardCircleFramedDrawable;
 
@@ -237,7 +230,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardMultiUserAvatar;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMultiUserAvatar;->mUserImage:Landroid/widget/ImageView;
 
@@ -246,7 +238,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardMultiUserAvatar;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardMultiUserAvatar;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardMultiUserAvatar;->mUserName:Landroid/widget/TextView;
 
@@ -255,10 +246,6 @@
 
 .method public static fromXml(ILandroid/content/Context;Lcom/android/keyguard/KeyguardMultiUserSelectorView;Landroid/content/pm/UserInfo;)Lcom/android/keyguard/KeyguardMultiUserAvatar;
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/keyguard/KeyguardMultiUserSelectorView;
-    .param p3    # Landroid/content/pm/UserInfo;
 
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -411,8 +398,6 @@
 
 .method public init(Landroid/content/pm/UserInfo;Lcom/android/keyguard/KeyguardMultiUserSelectorView;)V
     .locals 9
-    .param p1    # Landroid/content/pm/UserInfo;
-    .param p2    # Lcom/android/keyguard/KeyguardMultiUserSelectorView;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardMultiUserAvatar;->mUserInfo:Landroid/content/pm/UserInfo;
 
@@ -602,7 +587,6 @@
 
 .method public lockPressed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/KeyguardMultiUserAvatar;->mPressLock:Z
 
@@ -613,9 +597,6 @@
 
 .method public setActive(ZZLjava/lang/Runnable;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/lang/Runnable;
 
     iget-boolean v1, p0, Lcom/android/keyguard/KeyguardMultiUserAvatar;->mActive:Z
 
@@ -710,7 +691,6 @@
 
 .method public setPressed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardMultiUserAvatar;->mPressLock:Z
 
@@ -751,10 +731,6 @@
 
 .method updateVisualsForActive(ZZILjava/lang/Runnable;)V
     .locals 11
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
 
     const/high16 v3, 0x3f800000
 

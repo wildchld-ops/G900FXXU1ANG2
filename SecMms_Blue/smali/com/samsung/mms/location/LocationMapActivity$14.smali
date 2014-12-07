@@ -36,12 +36,6 @@
 # virtual methods
 .method public onMapCenterAndZoomChange(Lcom/nbi/map/android/MapView;DDDZZ)Z
     .locals 5
-    .param p1    # Lcom/nbi/map/android/MapView;
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # Z
-    .param p9    # Z
 
     iget-object v1, p0, Lcom/samsung/mms/location/LocationMapActivity$14;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 

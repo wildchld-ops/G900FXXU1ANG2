@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/placesapi/AdrMicroformatParser;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/placesapi/AdrMicroformatParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +28,6 @@
 
 .method private buildRequestUrl(Ljava/lang/StringBuilder;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     const-string v0, "&key="
 
@@ -66,9 +62,6 @@
 # virtual methods
 .method buildAutocompleteUrl(Ljava/lang/String;Landroid/location/Location;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/Location;
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -166,7 +159,6 @@
 
 .method buildPlaceDetailsUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -205,10 +197,6 @@
 
 .method public createAutocompleteRequest(Ljava/lang/String;Landroid/location/Location;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/google/android/finsky/placesapi/PlaceAutocompleteRequest;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/Location;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -238,8 +226,6 @@
 
 .method public createPlaceDetailsRequest(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/google/android/finsky/placesapi/PlaceDetailRequest;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

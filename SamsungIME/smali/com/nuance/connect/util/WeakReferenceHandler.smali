@@ -22,7 +22,6 @@
 
 .method public static create(Landroid/os/Handler$Callback;)Landroid/os/Handler;
     .locals 2
-    .param p0    # Landroid/os/Handler$Callback;
 
     new-instance v0, Landroid/os/Handler;
 

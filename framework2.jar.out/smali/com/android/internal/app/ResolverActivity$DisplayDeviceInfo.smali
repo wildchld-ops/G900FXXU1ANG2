@@ -35,7 +35,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/app/ResolverActivity;Ljava/lang/CharSequence;)V
     .locals 2
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -64,13 +63,6 @@
 
 .method constructor <init>(Lcom/android/internal/app/ResolverActivity;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;II)V
     .locals 1
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Ljava/lang/CharSequence;
-    .param p6    # Landroid/graphics/drawable/Drawable;
-    .param p7    # I
-    .param p8    # I
 
     const/4 v0, 0x0
 

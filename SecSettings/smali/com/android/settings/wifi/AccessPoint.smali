@@ -123,8 +123,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/net/wifi/ScanResult;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/ScanResult;
 
     const/4 v1, 0x0
 
@@ -159,8 +157,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v1, 0x0
 
@@ -195,8 +191,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -340,7 +334,6 @@
 
 .method static convertToQuotedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -371,7 +364,6 @@
 
 .method private static getPskType(Landroid/net/wifi/ScanResult;)Lcom/android/settings/wifi/AccessPoint$PskType;
     .locals 6
-    .param p0    # Landroid/net/wifi/ScanResult;
 
     iget-object v3, p0, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
@@ -468,7 +460,6 @@
 
 .method private static getSecurity(Landroid/net/wifi/ScanResult;)I
     .locals 2
-    .param p0    # Landroid/net/wifi/ScanResult;
 
     iget-object v0, p0, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
@@ -555,7 +546,6 @@
 
 .method static getSecurity(Landroid/net/wifi/WifiConfiguration;)I
     .locals 6
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v2, 0x3
 
@@ -646,7 +636,6 @@
 
 .method private static getSecurity(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "EAP"
 
@@ -729,8 +718,6 @@
 
 .method private internalCompareTo(Landroid/preference/Preference;Z)I
     .locals 9
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Z
 
     const v8, 0x7fffffff
 
@@ -947,7 +934,6 @@
 
 .method public static isVendorAccessPoint(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 8
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v5, 0x1
 
@@ -1050,7 +1036,6 @@
 
 .method private loadConfig(Landroid/net/wifi/WifiConfiguration;)V
     .locals 8
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v7, 0x7
 
@@ -1272,7 +1257,6 @@
 
 .method private loadResult(Landroid/net/wifi/ScanResult;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     const/4 v4, 0x2
 
@@ -2114,7 +2098,6 @@
 
 .method public static removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -2156,7 +2139,6 @@
 # virtual methods
 .method checkIfSame(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     if-eqz p1, :cond_0
 
@@ -2199,7 +2181,6 @@
 
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x0
 
@@ -2212,7 +2193,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -2225,7 +2205,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -2388,7 +2367,6 @@
 
 .method public getSecurityString(Z)Ljava/lang/String;
     .locals 9
-    .param p1    # Z
 
     const v8, 0x7f090408
 
@@ -3112,7 +3090,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const v7, 0x1020016
 
@@ -3304,7 +3281,6 @@
 
 .method public saveWifiState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "key_config"
 
@@ -3344,8 +3320,6 @@
 
 .method update(Landroid/net/wifi/WifiInfo;Landroid/net/NetworkInfo$DetailedState;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiInfo;
-    .param p2    # Landroid/net/NetworkInfo$DetailedState;
 
     const/4 v4, 0x0
 
@@ -3430,7 +3404,6 @@
 
 .method update(Landroid/net/wifi/ScanResult;)Z
     .locals 3
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     iget-object v1, p0, Lcom/android/settings/wifi/AccessPoint;->ssid:Ljava/lang/String;
 
@@ -3515,7 +3488,6 @@
 
 .method updateConfig(Landroid/net/wifi/WifiConfiguration;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iput-object p1, p0, Lcom/android/settings/wifi/AccessPoint;->mConfig:Landroid/net/wifi/WifiConfiguration;
 

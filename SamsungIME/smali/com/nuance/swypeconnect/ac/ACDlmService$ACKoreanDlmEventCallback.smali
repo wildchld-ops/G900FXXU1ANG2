@@ -40,8 +40,6 @@
 # virtual methods
 .method public onKoreanDlmEvent([BZ)V
     .locals 6
-    .param p1    # [B
-    .param p2    # Z
 
     const/4 v1, 0x2
 
@@ -80,7 +78,6 @@
 
 .method public onReset(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService$ACKoreanDlmEventCallback;->this$0:Lcom/nuance/swypeconnect/ac/ACDlmService;
 

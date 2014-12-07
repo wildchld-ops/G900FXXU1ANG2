@@ -31,12 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/dialer/calllog/PhoneNumberHelper;Ljava/lang/String;[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/calllog/PhoneNumberHelper;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -135,7 +129,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/cover/MissedCallCover;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCover;
 
     iget-object v0, p0, Lcom/samsung/dialer/cover/MissedCallCover;->mContext:Landroid/content/Context;
 
@@ -144,7 +137,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/cover/MissedCallCover;)Lcom/android/dialer/calllog/PhoneNumberHelper;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCover;
 
     iget-object v0, p0, Lcom/samsung/dialer/cover/MissedCallCover;->mPhoneNumberHelper:Lcom/android/dialer/calllog/PhoneNumberHelper;
 
@@ -153,7 +145,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/cover/MissedCallCover;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCover;
 
     iget-object v0, p0, Lcom/samsung/dialer/cover/MissedCallCover;->mCoverBgDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -162,8 +153,6 @@
 
 .method static synthetic access$202(Lcom/samsung/dialer/cover/MissedCallCover;Landroid/graphics/drawable/BitmapDrawable;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 0
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCover;
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
 
     iput-object p1, p0, Lcom/samsung/dialer/cover/MissedCallCover;->mCoverBgDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -172,8 +161,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/cover/MissedCallCover;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/cover/MissedCallCover;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/cover/MissedCallCover;->updateStatusBar(Z)V
 
@@ -182,7 +169,6 @@
 
 .method private updateStatusBar(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 

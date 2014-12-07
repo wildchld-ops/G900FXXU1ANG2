@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/ClientParamsStack;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/ClientParamsStack;
 
     invoke-virtual {p1}, Lorg/apache/http/impl/client/ClientParamsStack;->getApplicationParams()Lorg/apache/http/params/HttpParams;
 
@@ -43,11 +42,6 @@
 
 .method public constructor <init>(Lorg/apache/http/impl/client/ClientParamsStack;Lorg/apache/http/params/HttpParams;Lorg/apache/http/params/HttpParams;Lorg/apache/http/params/HttpParams;Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/impl/client/ClientParamsStack;
-    .param p2    # Lorg/apache/http/params/HttpParams;
-    .param p3    # Lorg/apache/http/params/HttpParams;
-    .param p4    # Lorg/apache/http/params/HttpParams;
-    .param p5    # Lorg/apache/http/params/HttpParams;
 
     if-eqz p2, :cond_0
 
@@ -96,10 +90,6 @@
 
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/params/HttpParams;Lorg/apache/http/params/HttpParams;Lorg/apache/http/params/HttpParams;)V
     .locals 1
-    .param p1    # Lorg/apache/http/params/HttpParams;
-    .param p2    # Lorg/apache/http/params/HttpParams;
-    .param p3    # Lorg/apache/http/params/HttpParams;
-    .param p4    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Lorg/apache/http/params/AbstractHttpParams;-><init>()V
 
@@ -158,7 +148,6 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -277,7 +266,6 @@
 
 .method public removeParameter(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -290,8 +278,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/UnsupportedOperationException;

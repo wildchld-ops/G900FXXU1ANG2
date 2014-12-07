@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     const/4 v1, 0x0
 
@@ -105,8 +104,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;I)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -133,8 +130,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;Landroid/os/Bundle;)V
     .locals 23
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -713,7 +708,6 @@
 
 .method public static getNotificationColor(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const v9, 0x106000c
 
@@ -794,7 +788,6 @@
 
 .method private getStringTranslation(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/util/ConnectNotification;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -815,7 +808,6 @@
 
 .method private static traverseGroup(Landroid/view/ViewGroup;)Z
     .locals 6
-    .param p0    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x1
 
@@ -938,7 +930,6 @@
 
 .method public cancel(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/util/ConnectNotification;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -959,7 +950,6 @@
 
 .method public final createIntent(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -984,7 +974,6 @@
 
 .method public final createServiceIntent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -995,8 +984,6 @@
 
 .method public final createServiceIntent(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/high16 v10, 0x8000000
 
@@ -1194,8 +1181,6 @@
 
 .method protected final initialize(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;I)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1252,7 +1237,6 @@
 
 .method public setIcon(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/util/ConnectNotification;->notificationIcon:I
 
@@ -1261,7 +1245,6 @@
 
 .method public final setIntent(Landroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->mContentIntent:Landroid/app/PendingIntent;
 
@@ -1282,7 +1265,6 @@
 
 .method public setRepeatingVariables(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->replacementText1:Ljava/lang/String;
 
@@ -1291,8 +1273,6 @@
 
 .method public setRepeatingVariables(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->replacementText1:Ljava/lang/String;
 
@@ -1303,9 +1283,6 @@
 
 .method public setRepeatingVariables(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->replacementText1:Ljava/lang/String;
 
@@ -1318,7 +1295,6 @@
 
 .method public setSound(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -1343,7 +1319,6 @@
 
 .method public setSoundMedia(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/MediaStore$Audio$Media;->INTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -1358,7 +1333,6 @@
 
 .method public setText(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/util/ConnectNotification;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1377,7 +1351,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->dynamicText:Ljava/lang/CharSequence;
 
@@ -1386,7 +1359,6 @@
 
 .method public final setText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->dynamicText:Ljava/lang/CharSequence;
 
@@ -1395,7 +1367,6 @@
 
 .method public setTickerText(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/util/ConnectNotification;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1414,7 +1385,6 @@
 
 .method public setTickerText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->tickerText:Ljava/lang/CharSequence;
 
@@ -1423,7 +1393,6 @@
 
 .method public setTickerText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->tickerText:Ljava/lang/CharSequence;
 
@@ -1432,7 +1401,6 @@
 
 .method public setTickerToText(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/nuance/connect/util/ConnectNotification;->showTextasTicker:Z
 
@@ -1441,7 +1409,6 @@
 
 .method public setTitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/util/ConnectNotification;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1460,7 +1427,6 @@
 
 .method public final setTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/util/ConnectNotification;->contentTitle:Ljava/lang/CharSequence;
 
@@ -1469,7 +1435,6 @@
 
 .method public setVibrate([J)V
     .locals 1
-    .param p1    # [J
 
     invoke-virtual {p1}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 

@@ -140,7 +140,6 @@
 
 .method public static getSmsPackageList(Landroid/content/Context;)Ljava/util/ArrayList;
     .locals 16
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

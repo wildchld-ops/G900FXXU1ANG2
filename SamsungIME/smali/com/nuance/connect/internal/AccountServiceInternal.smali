@@ -79,7 +79,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -102,9 +101,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/AccountServiceInternal;Landroid/os/Handler;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/AccountServiceInternal;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/internal/AccountServiceInternal;->handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
 
@@ -121,7 +117,6 @@
 
 .method private checkForKnownAccounts(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/nuance/connect/internal/AccountServiceInternal;->accounts:Ljava/util/HashMap;
 
@@ -253,8 +248,6 @@
 
 .method private handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
     .locals 13
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     sget-object v10, Lcom/nuance/connect/internal/AccountServiceInternal$2;->$SwitchMap$com$nuance$connect$internal$common$InternalMessages:[I
 
@@ -533,8 +526,6 @@
 
 .method private setActiveAccount(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -618,7 +609,6 @@
 # virtual methods
 .method public deleteAccount(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -681,7 +671,6 @@
 
 .method public getDeviceNameFromId(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ""
 
@@ -1025,8 +1014,6 @@
 
 .method public isAccountKnownAccount(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1227,7 +1214,6 @@
 
 .method public isValidEmail(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/util/Patterns;->EMAIL_ADDRESS:Ljava/util/regex/Pattern;
 
@@ -1272,8 +1258,6 @@
 
 .method public registerAccount(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -1304,7 +1288,6 @@
 
 .method public registerEmailAccount(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1359,7 +1342,6 @@
 
 .method public unlinkDevice(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -1429,7 +1411,6 @@
 
 .method public validateAccount(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/AccountServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/sec/KeyguardEffectViewMain;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain$5;->this$0:Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v4, 0x12f2
 

@@ -83,8 +83,6 @@
 
 .method public constructor <init>(JI)V
     .locals 1
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,7 +133,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -210,9 +207,6 @@
 
 .method private getTotal(Landroid/net/NetworkStats$Entry;Ljava/util/HashSet;IZ)Landroid/net/NetworkStats$Entry;
     .locals 11
-    .param p1    # Landroid/net/NetworkStats$Entry;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -387,7 +381,6 @@
 
 .method public static setToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -423,8 +416,6 @@
 
 .method public static subtract(Landroid/net/NetworkStats;Landroid/net/NetworkStats;Landroid/net/NetworkStats$NonMonotonicObserver;Ljava/lang/Object;)Landroid/net/NetworkStats;
     .locals 13
-    .param p0    # Landroid/net/NetworkStats;
-    .param p1    # Landroid/net/NetworkStats;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<C:",
@@ -740,7 +731,6 @@
 
 .method public static tagToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -771,11 +761,6 @@
 # virtual methods
 .method public addIfaceValues(Ljava/lang/String;JJJJ)Landroid/net/NetworkStats;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
 
     const/4 v2, -0x1
 
@@ -806,7 +791,6 @@
 
 .method public addValues(Landroid/net/NetworkStats$Entry;)Landroid/net/NetworkStats;
     .locals 5
-    .param p1    # Landroid/net/NetworkStats$Entry;
 
     iget v1, p0, Landroid/net/NetworkStats;->size:I
 
@@ -988,15 +972,6 @@
 
 .method public addValues(Ljava/lang/String;IIIJJJJJ)Landroid/net/NetworkStats;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
-    .param p13    # J
 
     new-instance v0, Landroid/net/NetworkStats$Entry;
 
@@ -1078,7 +1053,6 @@
 
 .method public combineAllValues(Landroid/net/NetworkStats;)V
     .locals 3
-    .param p1    # Landroid/net/NetworkStats;
 
     const/4 v0, 0x0
 
@@ -1105,7 +1079,6 @@
 
 .method public combineValues(Landroid/net/NetworkStats$Entry;)Landroid/net/NetworkStats;
     .locals 6
-    .param p1    # Landroid/net/NetworkStats$Entry;
 
     iget-object v1, p1, Landroid/net/NetworkStats$Entry;->iface:Ljava/lang/String;
 
@@ -1184,15 +1157,6 @@
 
 .method public combineValues(Ljava/lang/String;IIIJJJJJ)Landroid/net/NetworkStats;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
-    .param p13    # J
 
     new-instance v0, Landroid/net/NetworkStats$Entry;
 
@@ -1225,14 +1189,6 @@
 
 .method public combineValues(Ljava/lang/String;IIJJJJJ)Landroid/net/NetworkStats;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
-    .param p12    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1273,8 +1229,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1413,10 +1367,6 @@
 
 .method public findIndex(Ljava/lang/String;III)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -1469,11 +1419,6 @@
 
 .method public findIndexHinted(Ljava/lang/String;IIII)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -1576,7 +1521,6 @@
 
 .method public getTotal(Landroid/net/NetworkStats$Entry;)Landroid/net/NetworkStats$Entry;
     .locals 3
-    .param p1    # Landroid/net/NetworkStats$Entry;
 
     const/4 v0, 0x0
 
@@ -1593,8 +1537,6 @@
 
 .method public getTotal(Landroid/net/NetworkStats$Entry;I)Landroid/net/NetworkStats$Entry;
     .locals 2
-    .param p1    # Landroid/net/NetworkStats$Entry;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1609,7 +1551,6 @@
 
 .method public getTotal(Landroid/net/NetworkStats$Entry;Ljava/util/HashSet;)Landroid/net/NetworkStats$Entry;
     .locals 2
-    .param p1    # Landroid/net/NetworkStats$Entry;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1653,7 +1594,6 @@
 
 .method public getTotalIncludingTags(Landroid/net/NetworkStats$Entry;)Landroid/net/NetworkStats$Entry;
     .locals 3
-    .param p1    # Landroid/net/NetworkStats$Entry;
 
     const/4 v0, 0x0
 
@@ -1767,8 +1707,6 @@
 
 .method public getValues(ILandroid/net/NetworkStats$Entry;)Landroid/net/NetworkStats$Entry;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkStats$Entry;
 
     if-eqz p2, :cond_0
 
@@ -2035,7 +1973,6 @@
 
 .method public spliceOperationsFrom(Landroid/net/NetworkStats;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStats;
 
     const/4 v0, 0x0
 
@@ -2096,7 +2033,6 @@
 
 .method public subtract(Landroid/net/NetworkStats;)Landroid/net/NetworkStats;
     .locals 1
-    .param p1    # Landroid/net/NetworkStats;
 
     const/4 v0, 0x0
 
@@ -2131,7 +2067,6 @@
 
 .method public withoutUids([I)Landroid/net/NetworkStats;
     .locals 6
-    .param p1    # [I
 
     new-instance v2, Landroid/net/NetworkStats;
 
@@ -2177,8 +2112,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Landroid/net/NetworkStats;->elapsedRealtime:J
 

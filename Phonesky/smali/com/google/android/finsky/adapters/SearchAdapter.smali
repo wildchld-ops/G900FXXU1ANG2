@@ -20,15 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/api/model/DfeSearch;ZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p5    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p6    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p7    # Lcom/google/android/finsky/api/model/DfeSearch;
-    .param p8    # Z
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v9, 0x0
 
@@ -89,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/SearchAdapter;)Lcom/google/android/finsky/api/model/DfeSearch;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SearchAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SearchAdapter;->mDfeSearch:Lcom/google/android/finsky/api/model/DfeSearch;
 
@@ -98,7 +88,6 @@
 
 .method private bindSuggestionHeader(Lcom/google/android/finsky/layout/SuggestionBarLayout;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/layout/SuggestionBarLayout;
 
     const/4 v3, 0x1
 
@@ -149,8 +138,6 @@
 
 .method private getSuggestionHeaderView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -179,7 +166,6 @@
 
 .method private makeSuggestionClickListener(Ljava/lang/String;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/adapters/SearchAdapter$2;
 
@@ -192,9 +178,6 @@
 # virtual methods
 .method protected bindSpinnerData(Lcom/google/android/finsky/layout/play/Identifiable;Landroid/widget/Spinner;Landroid/view/View;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/layout/play/Identifiable;
-    .param p2    # Landroid/widget/Spinner;
-    .param p3    # Landroid/view/View;
 
     const-string v6, "corpus_selector"
 
@@ -281,8 +264,6 @@
 
 .method protected getClusterClickListener(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p1}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->hasClickListener(Lcom/google/android/finsky/api/model/Document;)Z
 
@@ -337,7 +318,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/google/android/finsky/adapters/SearchAdapter;->mHasSuggestedQuery:Z
 
@@ -363,9 +343,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/SearchAdapter;->getItemViewType(I)I
 

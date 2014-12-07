@@ -182,7 +182,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/TransactionService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     iget v0, p0, Lcom/android/mms/transaction/TransactionService;->mToastType:I
 
@@ -191,7 +190,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/TransactionService;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/TransactionService;->mToast:Landroid/widget/Toast;
 
@@ -200,7 +198,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/transaction/TransactionService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/TransactionService;->renewMmsConnectivity()V
 
@@ -209,8 +206,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/transaction/TransactionService;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/mms/transaction/TransactionService;->mToast:Landroid/widget/Toast;
 
@@ -219,7 +214,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/transaction/TransactionService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/TransactionService;->isDataEnabledInSettings()Z
 
@@ -230,7 +224,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/transaction/TransactionService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     iget-boolean v0, p0, Lcom/android/mms/transaction/TransactionService;->mWaitingMobileMmsConnected:Z
 
@@ -239,8 +232,6 @@
 
 .method static synthetic access$1202(Lcom/android/mms/transaction/TransactionService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/transaction/TransactionService;->mWaitingMobileMmsConnected:Z
 
@@ -249,7 +240,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/transaction/TransactionService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/TransactionService;->mProcessing:Ljava/util/ArrayList;
 
@@ -258,8 +248,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/transaction/TransactionService;I)I
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/TransactionService;->getTransactionType(I)I
 
@@ -270,7 +258,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/transaction/TransactionService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/TransactionService;->mPending:Ljava/util/ArrayList;
 
@@ -279,8 +266,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/transaction/TransactionService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/transaction/TransactionService;->mUsingNetworkFeatureRequested:Z
 
@@ -289,7 +274,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/transaction/TransactionService;)Lcom/android/mms/transaction/TransactionService$ServiceHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/TransactionService;->mServiceHandler:Lcom/android/mms/transaction/TransactionService$ServiceHandler;
 
@@ -298,7 +282,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/transaction/TransactionService;)Ljava/lang/Integer;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     iget-object v0, p0, Lcom/android/mms/transaction/TransactionService;->retry_count:Ljava/lang/Integer;
 
@@ -307,8 +290,6 @@
 
 .method static synthetic access$802(Lcom/android/mms/transaction/TransactionService;Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
-    .param p1    # Ljava/lang/Integer;
 
     iput-object p1, p0, Lcom/android/mms/transaction/TransactionService;->retry_count:Ljava/lang/Integer;
 
@@ -317,7 +298,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/transaction/TransactionService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/TransactionService;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/TransactionService;->isNetworkAvailable()Z
 
@@ -389,7 +369,6 @@
 
 .method private getTransactionType(I)I
     .locals 3
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -535,7 +514,6 @@
 
 .method private static isTransientFailure(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xa
 
@@ -556,9 +534,6 @@
 
 .method private launchTransaction(ILcom/android/mms/transaction/TransactionBundle;Z)V
     .locals 19
-    .param p1    # I
-    .param p2    # Lcom/android/mms/transaction/TransactionBundle;
-    .param p3    # Z
 
     if-eqz p3, :cond_8
 
@@ -934,7 +909,6 @@
 
 .method private onNetworkUnavailable(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -952,8 +926,6 @@
 
 .method private onNetworkUnavailable(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x2
 
@@ -1105,9 +1077,6 @@
 
 .method private processSendRetriveAck(Landroid/net/Uri;ZI)V
     .locals 15
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # I
 
     const-string v2, "Mms:transaction"
 
@@ -1318,7 +1287,6 @@
 
 .method private showToast(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x2
 
@@ -1355,7 +1323,6 @@
 
 .method private stopSelfIfIdle(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/mms/transaction/TransactionService;->mProcessing:Ljava/util/ArrayList;
 
@@ -1415,10 +1382,6 @@
 
 .method public static declared-synchronized updateThreadSnippet(Landroid/content/Context;ILandroid/net/Uri;Ljava/lang/String;)V
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
 
     const-class v17, Lcom/android/mms/transaction/TransactionService;
 
@@ -1998,7 +1961,6 @@
 
 .method protected endMmsConnectivity(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     const-string v0, "Mms:transaction"
@@ -2130,7 +2092,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -2232,9 +2193,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 47
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -3541,7 +3499,6 @@
 
 .method public update(Lcom/android/mms/transaction/Observable;)V
     .locals 26
-    .param p1    # Lcom/android/mms/transaction/Observable;
 
     move-object/from16 v24, p1
 

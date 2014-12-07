@@ -1238,7 +1238,7 @@ Mobile Hotspot is still active."</string>
     <string name="usb_tethering_errored_subtext">ການເຊື່ອມໂຍງເຄືອຂ່າຍ USB ຂັດຂ້ອງ</string>
     <string name="usb_tethering_on_during_sidesync_popup">ການເຊື່ອມໂຍງ USB ບໍ່ສາມາດປິດໃຊ້ງານໄດ້ໃນຂະນະທີ່ກໍາລັງໃຊ້ SideSync. ການປິດໃຊ້ງານການເຊື່ອມໂຍງ USB ແມ່ນຈະປິດໃຊ້ງານ SideSync ນໍາ.</string>
     <string name="usb_tethering_off_during_sidesync_popup">ການເຊື່ອມໂຍງ USB ບໍ່ສາມາດເປີດໃຊ້ງານໄດ້ໃນຂະນະທີ່ກໍາລັງໃຊ້ SideSync. ການເປີດໃຊ້ງານການເຊື່ອມໂຍງ USB ແມ່ນຈະປິດໃຊ້ງານ SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>ການເຊື່ອມໂຍງເຄືອຂ່າຍດ້ວຍບລູທູດ</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>ການເຊື່ອມໂຍງເຄືອຂ່າຍດ້ວຍບລູທູດ</b></p></string>
     <string name="bluetooth_tethering_available_subtext">ກໍາລັງໃຊ້ການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງເຄື່ອງຮ່ວມກັນ…</string>
     <string name="bluetooth_tethering_device_connected_subtext">ການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງເຄື່ອງໄດ້ໃຊ້ຮ່ວມກັບ 1 ເຄື່ອງ</string>
     <string name="bluetooth_tethering_devices_connected_subtext">ການເຊື່ອມຕໍ່ອິນເຕີເນັດຂອງເຄື່ອງໄດ້ໃຊ້ຮ່ວມກັບ %d ເຄື່ອງ</string>

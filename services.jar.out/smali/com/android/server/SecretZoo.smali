@@ -45,8 +45,6 @@
 
 .method private compareText(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -57,8 +55,6 @@
 
 .method private encryptText(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p2}, Ljava/lang/String;->getBytes()[B
 
@@ -95,8 +91,6 @@
 # virtual methods
 .method public confirmSecret(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "SDP.SecretZoo"
 
@@ -193,8 +187,6 @@
 
 .method public createSecret(ILjava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "SDP.SecretZoo"
 
@@ -268,7 +260,6 @@
 
 .method public forgetSecret(I)Z
     .locals 4
-    .param p1    # I
 
     const-string v1, "SDP.SecretZoo"
 

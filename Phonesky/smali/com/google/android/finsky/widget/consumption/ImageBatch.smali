@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(ILjava/util/List;Lcom/google/android/finsky/widget/consumption/BatchedImageLoader$BatchedImageCallback;)V
     .locals 0
-    .param p1    # I
-    .param p3    # Lcom/google/android/finsky/widget/consumption/BatchedImageLoader$BatchedImageCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -60,7 +58,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/google/android/finsky/widget/consumption/ImageBatch;
 

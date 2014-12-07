@@ -72,7 +72,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -175,7 +174,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->mRestart:Z
 
@@ -184,8 +182,6 @@
 
 .method static synthetic access$002(Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->mRestart:Z
 
@@ -194,7 +190,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->disableDesktopConnectivity()V
 
@@ -203,7 +198,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->mContext:Landroid/content/Context;
 
@@ -212,7 +206,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;)Ljava/util/concurrent/BlockingQueue;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->mLogQueue:Ljava/util/concurrent/BlockingQueue;
 
@@ -221,7 +214,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;)Lcom/android/server/enterprise/storage/EdmStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -317,7 +309,6 @@
 
 .method private enforceBluetoothPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -334,7 +325,6 @@
 
 .method private enforceOwnerOnlyAndBluetoothPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -351,8 +341,6 @@
 
 .method private getBluetoothLogEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v11, 0x1
 
@@ -1026,8 +1014,6 @@
 
 .method private isProfileEnabled(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -1144,8 +1130,6 @@
 
 .method private isProfileEnabledBySecureMode(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -1250,7 +1234,6 @@
 
 .method private showProfileBlockedToast(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -1327,8 +1310,6 @@
 # virtual methods
 .method public activateBluetoothDeviceRestriction(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -1413,8 +1394,6 @@
 
 .method public activateBluetoothUUIDRestriction(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -1499,7 +1478,6 @@
 
 .method public addBluetoothDevicesToBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1574,7 +1552,6 @@
 
 .method public addBluetoothDevicesToWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1649,7 +1626,6 @@
 
 .method public addBluetoothUUIDsToBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1724,7 +1700,6 @@
 
 .method public addBluetoothUUIDsToWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1799,8 +1774,6 @@
 
 .method public allowBluetooth(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->enforceOwnerOnlyAndBluetoothPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1896,8 +1869,6 @@
 
 .method public allowCallerIDDisplay(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->enforceOwnerOnlyAndBluetoothPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1939,8 +1910,6 @@
 
 .method public allowOutgoingCalls(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v5, "BluetoothPolicyService"
 
@@ -2114,9 +2083,6 @@
 
 .method public bluetoothLog(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2204,7 +2170,6 @@
 
 .method public clearBluetoothDevicesFromBlackList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v4, "BluetoothPolicyService"
 
@@ -2252,7 +2217,6 @@
 
 .method public clearBluetoothDevicesFromWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v4, "BluetoothPolicyService"
 
@@ -2300,7 +2264,6 @@
 
 .method public clearBluetoothUUIDsFromBlackList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v4, "BluetoothPolicyService"
 
@@ -2348,7 +2311,6 @@
 
 .method public clearBluetoothUUIDsFromWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v4, "BluetoothPolicyService"
 
@@ -2396,7 +2358,6 @@
 
 .method public getAllBluetoothDevicesBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2438,7 +2399,6 @@
 
 .method public getAllBluetoothDevicesWhiteLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2480,7 +2440,6 @@
 
 .method public getAllBluetoothUUIDsBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2522,7 +2481,6 @@
 
 .method public getAllBluetoothUUIDsWhiteLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2564,8 +2522,6 @@
 
 .method public getAllowBluetoothDataTransfer(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v4, "BluetoothPolicyService"
 
@@ -2643,7 +2599,6 @@
 
 .method public getBluetoothLog(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2828,7 +2783,6 @@
 
 .method public getEffectiveBluetoothDevicesBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2866,7 +2820,6 @@
 
 .method public getEffectiveBluetoothDevicesWhiteLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2904,7 +2857,6 @@
 
 .method public getEffectiveBluetoothUUIDsBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2942,7 +2894,6 @@
 
 .method public getEffectiveBluetoothUUIDsWhiteLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2980,7 +2931,6 @@
 
 .method getProfileFromUUID(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->mProfileMap:Ljava/util/Map;
 
@@ -3054,8 +3004,6 @@
 
 .method public isBluetoothDeviceAllowed(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3068,8 +3016,6 @@
 
 .method public isBluetoothDeviceAllowed(Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -3106,7 +3052,6 @@
 
 .method public isBluetoothDeviceRestrictionActive(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v3, "BluetoothPolicyService"
 
@@ -3135,7 +3080,6 @@
 
 .method public isBluetoothEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -3148,7 +3092,6 @@
 
 .method public isBluetoothEnabled(Z)Z
     .locals 7
-    .param p1    # Z
 
     const-string v4, "BluetoothPolicyService"
 
@@ -3210,7 +3153,6 @@
 
 .method public isBluetoothLogEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -3234,8 +3176,6 @@
 
 .method public isBluetoothUUIDAllowed(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p2}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->isBluetoothUUIDAllowed(Ljava/lang/String;)Z
 
@@ -3246,7 +3186,6 @@
 
 .method public isBluetoothUUIDAllowed(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->mProfilePolicy:Lcom/android/server/enterprise/bluetooth/BluetoothPolicy$BluetoothProfilePolicy;
 
@@ -3259,7 +3198,6 @@
 
 .method public isBluetoothUUIDAllowedInternal(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3302,7 +3240,6 @@
 
 .method public isBluetoothUUIDRestrictionActive(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v3, "BluetoothPolicyService"
 
@@ -3331,7 +3268,6 @@
 
 .method public isCallerIDDisplayAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -3393,7 +3329,6 @@
 
 .method public isDesktopConnectivityEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x1
 
@@ -3406,7 +3341,6 @@
 
 .method public isDesktopConnectivityEnabled(Z)Z
     .locals 7
-    .param p1    # Z
 
     const-string v4, "BluetoothPolicyService"
 
@@ -3468,7 +3402,6 @@
 
 .method public isDiscoverableEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v6, "BluetoothPolicyService"
 
@@ -3580,7 +3513,6 @@
 
 .method public isLimitedDiscoverableEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v4, "BluetoothPolicyService"
 
@@ -3655,7 +3587,6 @@
 
 .method public isOutgoingCallsAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -3668,7 +3599,6 @@
 
 .method public isOutgoingCallsAllowed(Z)Z
     .locals 7
-    .param p1    # Z
 
     const-string v4, "BluetoothPolicyService"
 
@@ -3730,7 +3660,6 @@
 
 .method public isPairingEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -3743,7 +3672,6 @@
 
 .method public isPairingEnabled(Z)Z
     .locals 7
-    .param p1    # Z
 
     const-string v4, "BluetoothPolicyService"
 
@@ -3805,8 +3733,6 @@
 
 .method public isProfileEnabled(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrUserUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3821,8 +3747,6 @@
 
 .method public isProfileEnabledInternal(IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -3944,7 +3868,6 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -3965,7 +3888,6 @@
 
 .method public onAdminRemoved(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "BluetoothPolicyService"
 
@@ -4029,14 +3951,12 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public removeBluetoothDevicesFromBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4111,7 +4031,6 @@
 
 .method public removeBluetoothDevicesFromWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4186,7 +4105,6 @@
 
 .method public removeBluetoothUUIDsFromBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4261,7 +4179,6 @@
 
 .method public removeBluetoothUUIDsFromWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4336,8 +4253,6 @@
 
 .method public setAllowBluetoothDataTransfer(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v0, "BluetoothPolicyService"
 
@@ -4382,8 +4297,6 @@
 
 .method public setBluetooth(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->enforceOwnerOnlyAndBluetoothPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4515,8 +4428,6 @@
 
 .method public setBluetoothLogEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v2, "BluetoothPolicyService"
 
@@ -4633,8 +4544,6 @@
 
 .method public setDesktopConnectivityState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v5, "BluetoothPolicyService"
 
@@ -4723,8 +4632,6 @@
 
 .method public setDiscoverableState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->enforceOwnerOnlyAndBluetoothPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4833,8 +4740,6 @@
 
 .method public setLimitedDiscoverableState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;->enforceOwnerOnlyAndBluetoothPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4977,8 +4882,6 @@
 
 .method public setPairingState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v0, "BluetoothPolicyService"
 
@@ -5023,9 +4926,6 @@
 
 .method public setProfileState(Landroid/app/enterprise/ContextInfo;ZI)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # I
 
     const-string v6, "BluetoothPolicyService"
 

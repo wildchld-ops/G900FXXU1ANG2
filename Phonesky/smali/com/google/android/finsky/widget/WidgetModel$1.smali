@@ -44,7 +44,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/WidgetModel$1;->this$0:Lcom/google/android/finsky/widget/WidgetModel;
 
@@ -60,7 +59,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 

@@ -64,8 +64,6 @@
 # virtual methods
 .method handleEndNestedTag(Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
 
     const-string/jumbo v0, "state"
 
@@ -158,8 +156,6 @@
 
 .method handleStartNestedTag(Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
 
     const/4 v12, 0x0
 
@@ -503,7 +499,6 @@
 
 .method handleStartTag(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
 
     const/4 v2, 0x0
 

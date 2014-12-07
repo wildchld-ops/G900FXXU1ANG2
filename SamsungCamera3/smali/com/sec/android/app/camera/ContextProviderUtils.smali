@@ -56,7 +56,6 @@
 
 .method public static convertToOrientation(I)I
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -121,7 +120,6 @@
 
 .method public static getFeatureSet(Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -142,13 +140,6 @@
 
 .method public static getRecordVideoSet(Ljava/lang/String;IILandroid/net/Uri;Ljava/lang/String;IJ)Landroid/os/Bundle;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # J
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -216,13 +207,6 @@
 
 .method public static getTakePhotoSet(Ljava/lang/String;IIILandroid/net/Uri;II)Landroid/os/Bundle;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
-    .param p5    # I
-    .param p6    # I
 
     new-instance v0, Landroid/os/Bundle;
 

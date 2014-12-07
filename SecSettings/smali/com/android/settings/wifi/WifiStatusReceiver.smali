@@ -330,7 +330,6 @@
 
 .method private launchHS20Browser(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const-string v4, "WifiStatusReceiver"
 
@@ -436,8 +435,6 @@
 
 .method private readSdcard(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -730,9 +727,6 @@
 
 .method private startWifiPickerActivity(Landroid/content/Context;Landroid/content/Intent;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     sget-boolean v2, Lcom/android/settings/wifi/WifiStatusReceiver;->DEBUG:Z
 
@@ -1452,8 +1446,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 41
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v35, "wifi"
 

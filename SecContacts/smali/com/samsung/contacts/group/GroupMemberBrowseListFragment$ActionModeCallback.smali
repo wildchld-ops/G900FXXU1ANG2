@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
-    .param p2    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;-><init>(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;)V
 
@@ -48,7 +46,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;
 
     invoke-direct {p0}, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;->updateSelectionMenu()V
 
@@ -184,7 +181,6 @@
 # virtual methods
 .method public deselectAll(Z)V
     .locals 5
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -352,8 +348,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -436,8 +430,6 @@
 
 .method public onContactSelected(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v2, p0, Lcom/samsung/contacts/group/GroupMemberBrowseListFragment$ActionModeCallback;->this$0:Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
@@ -604,8 +596,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -737,7 +727,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v4, 0x0
 
@@ -804,8 +793,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 

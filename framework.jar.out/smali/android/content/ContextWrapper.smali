@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/Context;-><init>()V
 
@@ -23,7 +22,6 @@
 # virtual methods
 .method protected attachBaseContext(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -45,9 +43,6 @@
 
 .method public bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -60,10 +55,6 @@
 
 .method public bindServiceAsUser(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -76,7 +67,6 @@
 
 .method public checkCallingOrSelfPermission(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -89,8 +79,6 @@
 
 .method public checkCallingOrSelfUriPermission(Landroid/net/Uri;I)I
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -103,7 +91,6 @@
 
 .method public checkCallingPermission(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -116,8 +103,6 @@
 
 .method public checkCallingUriPermission(Landroid/net/Uri;I)I
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -130,9 +115,6 @@
 
 .method public checkPermission(Ljava/lang/String;II)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -145,10 +127,6 @@
 
 .method public checkUriPermission(Landroid/net/Uri;III)I
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -161,12 +139,6 @@
 
 .method public checkUriPermission(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;III)I
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -206,7 +178,6 @@
 
 .method public createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -219,7 +190,6 @@
 
 .method public createDisplayContext(Landroid/view/Display;)Landroid/content/Context;
     .locals 1
-    .param p1    # Landroid/view/Display;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -232,8 +202,6 @@
 
 .method public createPackageContext(Ljava/lang/String;I)Landroid/content/Context;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -251,9 +219,6 @@
 
 .method public createPackageContextAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)Landroid/content/Context;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/UserHandle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -283,7 +248,6 @@
 
 .method public deleteDatabase(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -296,7 +260,6 @@
 
 .method public deleteFile(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -309,8 +272,6 @@
 
 .method public enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -321,9 +282,6 @@
 
 .method public enforceCallingOrSelfUriPermission(Landroid/net/Uri;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -334,8 +292,6 @@
 
 .method public enforceCallingPermission(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -346,9 +302,6 @@
 
 .method public enforceCallingUriPermission(Landroid/net/Uri;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -359,10 +312,6 @@
 
 .method public enforcePermission(Ljava/lang/String;IILjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -373,11 +322,6 @@
 
 .method public enforceUriPermission(Landroid/net/Uri;IIILjava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -398,13 +342,6 @@
 
 .method public enforceUriPermission(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -545,7 +482,6 @@
 
 .method public getDatabasePath(Ljava/lang/String;)Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -558,8 +494,6 @@
 
 .method public getDir(Ljava/lang/String;I)Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -572,7 +506,6 @@
 
 .method public getDisplayAdjustments(I)Landroid/view/DisplayAdjustments;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -609,7 +542,6 @@
 
 .method public getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -622,7 +554,6 @@
 
 .method public getExternalFilesDirs(Ljava/lang/String;)[Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -635,7 +566,6 @@
 
 .method public getFileStreamPath(Ljava/lang/String;)Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -778,8 +708,6 @@
 
 .method public getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -792,7 +720,6 @@
 
 .method public getSharedPrefsFile(Ljava/lang/String;)Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -817,7 +744,6 @@
 
 .method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -902,9 +828,6 @@
 
 .method public grantUriPermission(Ljava/lang/String;Landroid/net/Uri;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -939,7 +862,6 @@
 
 .method public openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -957,8 +879,6 @@
 
 .method public openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -976,9 +896,6 @@
 
 .method public openOrCreateDatabase(Ljava/lang/String;ILandroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -991,10 +908,6 @@
 
 .method public openOrCreateDatabase(Ljava/lang/String;ILandroid/database/sqlite/SQLiteDatabase$CursorFactory;Landroid/database/DatabaseErrorHandler;)Landroid/database/sqlite/SQLiteDatabase;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
-    .param p4    # Landroid/database/DatabaseErrorHandler;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1019,8 +932,6 @@
 
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/IntentFilter;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1033,10 +944,6 @@
 
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/IntentFilter;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Handler;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1049,11 +956,6 @@
 
 .method public registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
     .locals 6
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Landroid/content/IntentFilter;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Handler;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1076,7 +978,6 @@
 
 .method public removeStickyBroadcast(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1087,8 +988,6 @@
 
 .method public removeStickyBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1099,8 +998,6 @@
 
 .method public revokeUriPermission(Landroid/net/Uri;I)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1111,7 +1008,6 @@
 
 .method public sendBroadcast(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1122,8 +1018,6 @@
 
 .method public sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1134,9 +1028,6 @@
 
 .method public sendBroadcast(Landroid/content/Intent;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1147,8 +1038,6 @@
 
 .method public sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1159,9 +1048,6 @@
 
 .method public sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1172,8 +1058,6 @@
 
 .method public sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1184,14 +1068,6 @@
 
 .method public sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;ILandroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/BroadcastReceiver;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1218,13 +1094,6 @@
 
 .method public sendOrderedBroadcast(Landroid/content/Intent;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/BroadcastReceiver;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1249,14 +1118,6 @@
 
 .method public sendOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/BroadcastReceiver;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1283,7 +1144,6 @@
 
 .method public sendStickyBroadcast(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1294,8 +1154,6 @@
 
 .method public sendStickyBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1306,12 +1164,6 @@
 
 .method public sendStickyOrderedBroadcast(Landroid/content/Intent;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/BroadcastReceiver;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1334,13 +1186,6 @@
 
 .method public sendStickyOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Landroid/content/BroadcastReceiver;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1365,7 +1210,6 @@
 
 .method public setTheme(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1376,7 +1220,6 @@
 
 .method public setWallpaper(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1392,7 +1235,6 @@
 
 .method public setWallpaper(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1408,7 +1250,6 @@
 
 .method public startActivities([Landroid/content/Intent;)V
     .locals 1
-    .param p1    # [Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1419,8 +1260,6 @@
 
 .method public startActivities([Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1431,9 +1270,6 @@
 
 .method public startActivitiesAsUser([Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1444,7 +1280,6 @@
 
 .method public startActivity(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1455,8 +1290,6 @@
 
 .method public startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1467,9 +1300,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1480,8 +1310,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1492,9 +1320,6 @@
 
 .method public startInstrumentation(Landroid/content/ComponentName;Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1507,11 +1332,6 @@
 
 .method public startIntentSender(Landroid/content/IntentSender;Landroid/content/Intent;III)V
     .locals 6
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -1537,12 +1357,6 @@
 
 .method public startIntentSender(Landroid/content/IntentSender;Landroid/content/Intent;IIILandroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -1570,7 +1384,6 @@
 
 .method public startService(Landroid/content/Intent;)Landroid/content/ComponentName;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1583,8 +1396,6 @@
 
 .method public startServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Landroid/content/ComponentName;
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1597,7 +1408,6 @@
 
 .method public stopService(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1610,8 +1420,6 @@
 
 .method public stopServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1624,7 +1432,6 @@
 
 .method public unbindService(Landroid/content/ServiceConnection;)V
     .locals 1
-    .param p1    # Landroid/content/ServiceConnection;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 
@@ -1635,7 +1442,6 @@
 
 .method public unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     .locals 1
-    .param p1    # Landroid/content/BroadcastReceiver;
 
     iget-object v0, p0, Landroid/content/ContextWrapper;->mBase:Landroid/content/Context;
 

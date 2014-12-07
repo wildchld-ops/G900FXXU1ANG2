@@ -71,8 +71,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -157,7 +155,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/detail/ContactDetailTabCarousel;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailTabCarousel;
 
     iget v0, p0, Lcom/android/contacts/detail/ContactDetailTabCarousel;->mCurrentTab:I
 
@@ -166,7 +163,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/detail/ContactDetailTabCarousel;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailTabCarousel;
 
     iget v0, p0, Lcom/android/contacts/detail/ContactDetailTabCarousel;->mAllowedHorizontalScrollLength:I
 
@@ -175,7 +171,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/detail/ContactDetailTabCarousel;)Lcom/android/contacts/detail/ContactDetailTabCarousel$Listener;
     .locals 1
-    .param p0    # Lcom/android/contacts/detail/ContactDetailTabCarousel;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailTabCarousel;->mListener:Lcom/android/contacts/detail/ContactDetailTabCarousel$Listener;
 
@@ -202,7 +197,6 @@
 
 .method public getStoredYCoordinateForTab(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailTabCarousel;->mYCoordinateArray:[F
 
@@ -213,8 +207,6 @@
 
 .method public moveToYCoordinate(IF)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual {p0, p2}, Landroid/view/View;->setY(F)V
 
@@ -305,7 +297,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/widget/HorizontalScrollView;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -323,11 +314,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/HorizontalScrollView;->onLayout(ZIIII)V
 
@@ -354,8 +340,6 @@
 
 .method protected onMeasure(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v6, 0x40000000
 
@@ -463,10 +447,6 @@
 
 .method protected onScrollChanged(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onScrollChanged(IIII)V
 
@@ -505,7 +485,6 @@
 
 .method public restoreCurrentTab(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/detail/ContactDetailTabCarousel;->setCurrentTab(I)V
 
@@ -518,7 +497,6 @@
 
 .method public setCurrentTab(I)V
     .locals 5
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -584,7 +562,6 @@
 
 .method public setListener(Lcom/android/contacts/detail/ContactDetailTabCarousel$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/detail/ContactDetailTabCarousel$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/detail/ContactDetailTabCarousel;->mListener:Lcom/android/contacts/detail/ContactDetailTabCarousel$Listener;
 
@@ -593,8 +570,6 @@
 
 .method public storeYCoordinate(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailTabCarousel;->mYCoordinateArray:[F
 

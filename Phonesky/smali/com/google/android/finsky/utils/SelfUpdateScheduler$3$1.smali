@@ -36,9 +36,6 @@
 # virtual methods
 .method public installCompleted(ZILjava/lang/String;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

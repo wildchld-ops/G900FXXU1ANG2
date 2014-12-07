@@ -40,8 +40,6 @@
 
 .method private constructor <init>(Landroid/os/Handler;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -72,8 +70,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/emergencymode/EmergencyManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/emergencymode/EmergencyManager;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/emergencymode/EmergencyManager;->tipsUrl:Ljava/lang/String;
 
@@ -82,9 +78,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/emergencymode/EmergencyManager;ZI)V
     .locals 0
-    .param p0    # Lcom/sec/android/emergencymode/EmergencyManager;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/emergencymode/EmergencyManager;->triggerEmergencyMode(ZI)V
 
@@ -93,7 +86,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/emergencymode/EmergencyManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/sec/android/emergencymode/EmergencyManager;
 
     iget-object v0, p0, Lcom/sec/android/emergencymode/EmergencyManager;->mContext:Landroid/content/Context;
 
@@ -189,7 +181,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/sec/android/emergencymode/EmergencyManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v2, Lcom/sec/android/emergencymode/EmergencyManager;
 
@@ -233,7 +224,6 @@
 
 .method public static isEmergencyMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -307,9 +297,6 @@
 
 .method private declared-synchronized startService(Ljava/lang/String;ZI)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     monitor-enter p0
 
@@ -568,8 +555,6 @@
 
 .method private triggerEmergencyMode(ZI)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/sec/android/emergencymode/EmergencyManager;->ensureServiceConnected()V
 
@@ -612,8 +597,6 @@
 # virtual methods
 .method public addAppToLauncher(Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -904,8 +887,6 @@
 
 .method public checkInvalidBroadcast(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -960,7 +941,6 @@
 
 .method public checkInvalidProcess(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1015,7 +995,6 @@
 
 .method public checkModeType(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1070,8 +1049,6 @@
 
 .method public checkValidIntentAction(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1126,9 +1103,6 @@
 
 .method public checkValidPackage(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -1713,8 +1687,6 @@
 
 .method public requestCallPrivileged(Ljava/lang/String;Landroid/content/Context;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     :try_start_0
     const-string/jumbo v3, "tel"
@@ -1794,8 +1766,6 @@
 
 .method public setLocationProvider(ZLandroid/content/Context;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/sec/android/emergencymode/EmergencyManager;->ensureServiceConnected()V
 
@@ -1846,8 +1816,6 @@
 
 .method public setforceBlockUserPkg(ZLandroid/content/Context;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/sec/android/emergencymode/EmergencyManager;->ensureServiceConnected()V
 

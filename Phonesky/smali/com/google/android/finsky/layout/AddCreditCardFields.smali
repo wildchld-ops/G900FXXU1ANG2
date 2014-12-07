@@ -113,7 +113,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
@@ -122,8 +121,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -132,9 +129,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -143,7 +137,6 @@
 
 .method protected static focusNext(Landroid/view/View;)V
     .locals 3
-    .param p0    # Landroid/view/View;
 
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -177,7 +170,6 @@
 
 .method protected static focusPrevious(Landroid/view/View;)V
     .locals 3
-    .param p0    # Landroid/view/View;
 
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -246,8 +238,6 @@
 
 .method public onCreditCardTypeChanged(Lcom/google/android/finsky/billing/creditcard/CreditCardType;Lcom/google/android/finsky/billing/creditcard/CreditCardType;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/billing/creditcard/CreditCardType;
-    .param p2    # Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
     iput-object p2, p0, Lcom/google/android/finsky/layout/AddCreditCardFields;->mCurrentCardType:Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
@@ -489,7 +479,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v2, p1, Landroid/os/Bundle;
 
@@ -601,7 +590,6 @@
 
 .method public setOnAllFieldsVisibleListener(Lcom/google/android/finsky/layout/AddCreditCardFields$OnAllFieldsVisibleListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/AddCreditCardFields$OnAllFieldsVisibleListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/AddCreditCardFields;->mOnAllFieldsVisibleListener:Lcom/google/android/finsky/layout/AddCreditCardFields$OnAllFieldsVisibleListener;
 

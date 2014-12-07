@@ -42,11 +42,6 @@
 # direct methods
 .method public constructor <init>(IIIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,7 +70,6 @@
 # virtual methods
 .method protected changeStateFromPress(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -116,10 +110,6 @@
 
 .method public create(Landroid/content/Context;Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/LayoutInflater;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Landroid/view/LayoutInflater;
 
     const/4 v7, 0x0
 
@@ -449,7 +439,6 @@
 
 .method public updateState(Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 

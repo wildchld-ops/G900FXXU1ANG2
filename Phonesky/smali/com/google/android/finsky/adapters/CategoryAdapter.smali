@@ -40,15 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/api/model/DfeBrowse;Lcom/google/android/finsky/navigationmanager/NavigationManager;ILcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/BitmapLoader;[Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/DfeBrowse;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p4    # I
-    .param p5    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p6    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p7    # [Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -139,7 +130,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/CategoryAdapter;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/CategoryAdapter;
 
     iget v0, p0, Lcom/google/android/finsky/adapters/CategoryAdapter;->mBackendId:I
 
@@ -148,7 +138,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/adapters/CategoryAdapter;)Lcom/google/android/finsky/api/model/DfeToc;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/CategoryAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/CategoryAdapter;->mToc:Lcom/google/android/finsky/api/model/DfeToc;
 
@@ -157,7 +146,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/adapters/CategoryAdapter;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/CategoryAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/CategoryAdapter;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -166,9 +154,6 @@
 
 .method private getCategoryRowView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/CategoryAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -257,8 +242,6 @@
 
 .method private getSubheaderRowView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -286,7 +269,6 @@
 
 .method private isQuickLinkRow(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/adapters/CategoryAdapter;->mQuickLinkRowCount:I
 
@@ -309,7 +291,6 @@
 
 .method private isSubheaderRow(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/adapters/CategoryAdapter;->mQuickLinkRowCount:I
 
@@ -362,7 +343,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/CategoryAdapter;->mCategories:[Lcom/google/android/finsky/protos/Browse$BrowseLink;
 
@@ -373,7 +353,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -382,7 +361,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/CategoryAdapter;->isQuickLinkRow(I)Z
 
@@ -414,9 +392,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/CategoryAdapter;->getItemViewType(I)I
 
@@ -508,7 +483,6 @@
 
 .method public isEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/CategoryAdapter;->getItemViewType(I)I
 

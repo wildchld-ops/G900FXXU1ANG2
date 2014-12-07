@@ -56,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/MultiWindowSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/MultiWindowSettings;
 
     iget-object v0, p0, Lcom/android/settings/MultiWindowSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MultiWindowSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/MultiWindowSettings;
 
     iget-object v0, p0, Lcom/android/settings/MultiWindowSettings;->mOpenMultiWindowVIew:Landroid/preference/CheckBoxPreference;
 
@@ -74,7 +72,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/MultiWindowSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/MultiWindowSettings;
 
     iget-object v0, p0, Lcom/android/settings/MultiWindowSettings;->mTrayPosition:Landroid/preference/ListPreference;
 
@@ -85,7 +82,6 @@
 # virtual methods
 .method public getEntryByValue(I)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/settings/MultiWindowSettings;->mTrayPosition:Landroid/preference/ListPreference;
 
@@ -141,7 +137,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -244,15 +239,12 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 0
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -333,8 +325,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x0
 
@@ -386,7 +376,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -462,8 +451,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -517,8 +504,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 

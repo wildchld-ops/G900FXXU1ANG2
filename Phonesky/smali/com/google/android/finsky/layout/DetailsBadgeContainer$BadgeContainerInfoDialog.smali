@@ -32,8 +32,6 @@
 
 .method static showInfo(Landroid/support/v4/app/FragmentManager;Lcom/google/android/finsky/protos/DocAnnotations$BadgeContainer;)V
     .locals 4
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # Lcom/google/android/finsky/protos/DocAnnotations$BadgeContainer;
 
     const-string v2, "badge_container_dialog"
 
@@ -76,7 +74,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 

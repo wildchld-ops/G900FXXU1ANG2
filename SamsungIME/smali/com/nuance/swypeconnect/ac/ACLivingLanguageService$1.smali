@@ -46,12 +46,6 @@
 # virtual methods
 .method public downloadProgress(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$1;->this$0:Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;
 
@@ -146,12 +140,6 @@
 
 .method public subscriptionAdded(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$1;->this$0:Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;
 
@@ -246,11 +234,6 @@
 
 .method public subscriptionRemoved(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$1;->this$0:Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;
 
@@ -325,12 +308,6 @@
 
 .method public subscriptionUpdated(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$1;->this$0:Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;
 
@@ -425,7 +402,6 @@
 
 .method public updatesAvailable(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/nuance/swypeconnect/ac/ACLivingLanguageService$1;->this$0:Lcom/nuance/swypeconnect/ac/ACLivingLanguageService;
 

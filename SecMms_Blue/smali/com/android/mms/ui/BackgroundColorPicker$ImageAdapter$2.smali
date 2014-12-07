@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/android/mms/ui/BackgroundColorPicker$ImageAdapter$2;->this$1:Lcom/android/mms/ui/BackgroundColorPicker$ImageAdapter;
 
@@ -52,14 +51,12 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/android/mms/ui/BackgroundColorPicker$ImageAdapter$2;->this$1:Lcom/android/mms/ui/BackgroundColorPicker$ImageAdapter;
 

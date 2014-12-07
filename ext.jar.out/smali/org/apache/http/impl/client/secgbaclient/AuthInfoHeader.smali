@@ -82,7 +82,6 @@
 
 .method public setCnonce(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthInfoHeader;->cnonce:Ljava/lang/String;
 
@@ -91,7 +90,6 @@
 
 .method public setNonce(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthInfoHeader;->nonce:Ljava/lang/String;
 
@@ -100,7 +98,6 @@
 
 .method public setNonceCount(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthInfoHeader;->nonceCount:Ljava/lang/String;
 
@@ -109,7 +106,6 @@
 
 .method public setOpaque(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthInfoHeader;->opaque:Ljava/lang/String;
 
@@ -118,7 +114,6 @@
 
 .method public setQop(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthInfoHeader;->qop:Ljava/lang/String;
 
@@ -127,7 +122,6 @@
 
 .method public setRspauth(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/secgbaclient/AuthInfoHeader;->rspauth:Ljava/lang/String;
 

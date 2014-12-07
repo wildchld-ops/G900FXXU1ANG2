@@ -18,7 +18,6 @@
 
 .method public static getFileContents(Ljava/io/File;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/io/File;
 
     const/4 v0, 0x0
 
@@ -117,7 +116,6 @@
 
 .method public static implode(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -140,8 +138,6 @@
 
 .method public static implode(Lorg/json/JSONArray;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Lorg/json/JSONArray;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -191,8 +187,6 @@
 
 .method public static implode([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -236,7 +230,6 @@
 
 .method public static listToString(Ljava/util/Collection;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -302,7 +295,6 @@
 
 .method public static normalizeEmail(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     sget-boolean v1, Lcom/android/dialer/calllog/CallLogFragment;->keyPressed:Z
 

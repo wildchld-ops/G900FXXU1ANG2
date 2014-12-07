@@ -77,8 +77,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget v3, p0, Lcom/android/launcher2/ChooserActivity;->mode:I
 
@@ -200,7 +198,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/high16 v1, 0x40000
 
@@ -450,7 +447,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 

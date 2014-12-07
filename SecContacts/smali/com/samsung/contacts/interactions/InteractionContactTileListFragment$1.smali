@@ -36,8 +36,6 @@
 # virtual methods
 .method public onItemCheckedStateChanged(JZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
 
     const-string v0, "InteractionContactTileListFragment"
 

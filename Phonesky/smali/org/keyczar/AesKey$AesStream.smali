@@ -139,8 +139,6 @@
 # virtual methods
 .method public doFinalEncrypt(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -178,7 +176,6 @@
 
 .method public initEncrypt(Ljava/nio/ByteBuffer;)I
     .locals 4
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -218,7 +215,6 @@
 
 .method public maxOutputSize(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lorg/keyczar/AesKey$AesStream;->this$0:Lorg/keyczar/AesKey;
 
@@ -238,8 +234,6 @@
 
 .method public updateEncrypt(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

@@ -93,9 +93,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, -0x1
 
@@ -160,11 +157,6 @@
 
 .method public onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
     .locals 14
-    .param p1    # Landroid/widget/ExpandableListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->getAdapter()Lcom/android/contacts/group/GroupBrowseListAdapter;
 
@@ -439,7 +431,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -460,9 +451,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v0, "interaction_expanded_sections"
 
@@ -517,10 +505,6 @@
 
 .method public onGroupClick(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
     .locals 12
-    .param p1    # Landroid/widget/ExpandableListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p1}, Landroid/widget/ExpandableListView;->getExpandableListAdapter()Landroid/widget/ExpandableListAdapter;
 
@@ -720,7 +704,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "groupInfo"
 
@@ -741,7 +724,6 @@
 
 .method public setContactsRequest(Lcom/android/contacts/list/ContactsRequest;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/ContactsRequest;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupBrowseListFragment;->mRequest:Lcom/android/contacts/list/ContactsRequest;
 
@@ -750,9 +732,6 @@
 
 .method public setMMSinformation(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "InteractionGroupBrowseListFragment"
 

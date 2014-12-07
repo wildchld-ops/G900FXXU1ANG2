@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/dialer/dialpad/DialpadFragment;Z)V
     .locals 1
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/dialer/dialpad/DialpadFragment$BlockSpeeddial;->this$0:Lcom/android/dialer/dialpad/DialpadFragment;
 

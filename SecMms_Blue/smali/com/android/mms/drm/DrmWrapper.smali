@@ -126,9 +126,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;Lcom/google/android/mms/pdu/PduPart;)V
     .locals 24
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/google/android/mms/pdu/PduPart;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -877,7 +874,6 @@
 
 .method public static IsDrmFile(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -917,7 +913,6 @@
 
 .method public static IsDrmFileByExt(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -999,8 +994,6 @@
 
 .method public static acquireLicense(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1107,8 +1100,6 @@
 
 .method private convertDM2DCF(Landroid/drm/DrmManagerClient;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/drm/DrmManagerClient;
-    .param p2    # Ljava/lang/String;
 
     move-object v0, p2
 
@@ -1281,7 +1272,6 @@
 
 .method public static getContentType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -1311,7 +1301,6 @@
 
 .method public static getDrmMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ".dcf"
 
@@ -1417,7 +1406,6 @@
 
 .method private getFileType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ".dcf"
 
@@ -1508,7 +1496,6 @@
 
 .method public static getForwordType(Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1632,7 +1619,6 @@
 
 .method private static getObjString(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     if-eqz p0, :cond_0
 
@@ -1651,7 +1637,6 @@
 
 .method public static getOriginalMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/drm/DrmWrapper;->getDrmClient()Landroid/drm/DrmManagerClient;
 
@@ -1723,7 +1708,6 @@
 
 .method private getPermission(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -1862,7 +1846,6 @@
 
 .method public static isRightsFile(Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1951,7 +1934,6 @@
 
 .method private launchBrowser(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1991,8 +1973,6 @@
 
 .method private registerDRMFile(Landroid/drm/DrmManagerClient;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/drm/DrmManagerClient;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -3022,7 +3002,6 @@
 
 .method public isGetRightFromBrowser(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -3120,7 +3099,6 @@
 
 .method public isRightsInstalled(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

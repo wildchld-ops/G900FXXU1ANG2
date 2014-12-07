@@ -338,8 +338,6 @@
 
 .method public static contains([Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # [Landroid/accounts/Account;
-    .param p1    # Ljava/lang/String;
 
     move-object v1, p0
 
@@ -378,7 +376,6 @@
 
 .method public static getAccountExists(Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -434,7 +431,6 @@
 
 .method public static getMarketAlarmStartTime(Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -482,7 +478,6 @@
 
 .method public static getMarketAlarmTimeout(Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -530,7 +525,6 @@
 
 .method public static getNewAccounts([Landroid/accounts/Account;)[Ljava/lang/String;
     .locals 6
-    .param p0    # [Landroid/accounts/Account;
 
     const/4 v4, 0x0
 
@@ -601,7 +595,6 @@
 
 .method public static saveCurrentAccountList([Landroid/accounts/Account;)V
     .locals 11
-    .param p0    # [Landroid/accounts/Account;
 
     sget-object v9, Lcom/google/android/finsky/utils/VendingPreferences;->sPrefs:Lcom/google/android/finsky/config/PreferenceFile;
 

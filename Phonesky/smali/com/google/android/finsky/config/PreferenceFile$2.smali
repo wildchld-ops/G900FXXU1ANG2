@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/config/PreferenceFile;Lcom/google/android/finsky/config/PreferenceFile;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Lcom/google/android/finsky/config/PreferenceFile;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/config/PreferenceFile$2;->this$0:Lcom/google/android/finsky/config/PreferenceFile;
 
@@ -45,7 +42,6 @@
 # virtual methods
 .method protected bridge synthetic read(Landroid/content/SharedPreferences;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/config/PreferenceFile$2;->read(Landroid/content/SharedPreferences;)Ljava/lang/String;
 
@@ -56,7 +52,6 @@
 
 .method protected read(Landroid/content/SharedPreferences;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/SharedPreferences;
 
     iget-object v0, p0, Lcom/google/android/finsky/config/PreferenceFile$2;->mKey:Ljava/lang/String;
 
@@ -87,8 +82,6 @@
 
 .method protected bridge synthetic write(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/SharedPreferences$Editor;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/String;
 
@@ -99,8 +92,6 @@
 
 .method protected write(Landroid/content/SharedPreferences$Editor;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences$Editor;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/config/PreferenceFile$2;->mKey:Ljava/lang/String;
 

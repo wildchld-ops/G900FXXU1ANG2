@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/pm/IPersonaPolicyManager$Stub;-><init>()V
 
@@ -107,7 +106,6 @@
 
 .method static synthetic access$000(Lcom/android/server/pm/PersonaPolicyManagerService;)Lcom/android/server/pm/PersonaManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaPolicyManagerService;->getPersonaManagerService()Lcom/android/server/pm/PersonaManagerService;
 
@@ -118,8 +116,6 @@
 
 .method static synthetic access$100(Lcom/android/server/pm/PersonaPolicyManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaPolicyManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaPolicyManagerService;->removePersonaData(I)V
 
@@ -128,7 +124,6 @@
 
 .method private static checkCallerPermissionFor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "PersonaPolicyManagerService"
 
@@ -365,7 +360,6 @@
 
 .method private checkReturnStatus(Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -386,7 +380,6 @@
 
 .method private dumpRCPSettings(Lcom/android/server/pm/PersonaPolicyManagerService$PersonaPolicyData;)V
     .locals 4
-    .param p1    # Lcom/android/server/pm/PersonaPolicyManagerService$PersonaPolicyData;
 
     const-string v1, "PersonaPolicyManagerService"
 
@@ -694,9 +687,6 @@
 
 .method private getDataSyncPolicy(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 16
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/pm/PersonaPolicyManagerService;->getPersonaManagerService()Lcom/android/server/pm/PersonaManagerService;
 
@@ -904,8 +894,6 @@
 
 .method private final getDefaultRCPPolicy(ZLjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "knox-import-data"
 
@@ -975,9 +963,6 @@
 
 .method private getNotificationSyncPolicy(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaPolicyManagerService;->getPersonaManagerService()Lcom/android/server/pm/PersonaManagerService;
 
@@ -1146,8 +1131,6 @@
 
 .method private loadSettingsLocked(Lcom/android/server/pm/PersonaPolicyManagerService$PersonaPolicyData;I)V
     .locals 17
-    .param p1    # Lcom/android/server/pm/PersonaPolicyManagerService$PersonaPolicyData;
-    .param p2    # I
 
     invoke-static/range {p2 .. p2}, Lcom/android/server/pm/PersonaPolicyManagerService;->makeJournaledFile(I)Lcom/android/internal/util/JournaledFile;
 
@@ -2303,7 +2286,6 @@
 
 .method private static makeJournaledFile(I)Lcom/android/internal/util/JournaledFile;
     .locals 6
-    .param p0    # I
 
     new-instance v1, Ljava/io/File;
 
@@ -2354,7 +2336,6 @@
 
 .method private removePersonaData(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2424,7 +2405,6 @@
 
 .method private saveSettingsLocked(I)V
     .locals 14
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaPolicyManagerService;->getPersonaData(I)Lcom/android/server/pm/PersonaPolicyManagerService$PersonaPolicyData;
 
@@ -3642,10 +3622,6 @@
 
 .method private setRCPDataPolicyForUser(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -3777,10 +3753,6 @@
 
 .method private setRCPNotificationPolicyForUser(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -3914,7 +3886,6 @@
 # virtual methods
 .method public addLockOnImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3946,7 +3917,6 @@
 
 .method public getAirCommandEnabled(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3982,7 +3952,6 @@
 
 .method public getAllowAllShare(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4018,7 +3987,6 @@
 
 .method public getAllowContainerReset(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4054,7 +4022,6 @@
 
 .method public getAllowCustomBadgeIcon(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4090,7 +4057,6 @@
 
 .method public getAllowCustomColorIdentification(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4126,7 +4092,6 @@
 
 .method public getAllowCustomPersonaIcon(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4162,7 +4127,6 @@
 
 .method public getAllowDLNADataTransfer(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4198,7 +4162,6 @@
 
 .method public getAllowExportAndDeleteFiles(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4234,7 +4197,6 @@
 
 .method public getAllowExportFiles(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4270,7 +4232,6 @@
 
 .method public getAllowImportFiles(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4306,7 +4267,6 @@
 
 .method public getAllowPrint(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4342,7 +4302,6 @@
 
 .method public getAllowShortCutCreation(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4378,7 +4337,6 @@
 
 .method public getAllowUniversalCallerId(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4414,7 +4372,6 @@
 
 .method public getCameraModeChangeEnabled(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4472,7 +4429,6 @@
 
 .method public getDisableSwitchWidgetOnLockScreen(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4508,7 +4464,6 @@
 
 .method public getEncryptionStatus(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4544,7 +4499,6 @@
 
 .method public getGearSupportEnabled(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4580,7 +4534,6 @@
 
 .method public getModifyLockScreenTimeout(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4616,7 +4569,6 @@
 
 .method public getPasswordLockPolicy(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4652,7 +4604,6 @@
 
 .method public getPenWindowEnabled(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4688,7 +4639,6 @@
 
 .method getPersonaData(I)Lcom/android/server/pm/PersonaPolicyManagerService$PersonaPolicyData;
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4730,8 +4680,6 @@
 
 .method public getRCPDataPolicy(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "getRCPDataPolicy"
 
@@ -4770,9 +4718,6 @@
 
 .method public getRCPDataPolicyForUser(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "getRCPDataPolicyForUser"
 
@@ -4789,8 +4734,6 @@
 
 .method public getRCPNotificationPolicy(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "getRCPNotificationPolicy"
 
@@ -4829,9 +4772,6 @@
 
 .method public getRCPNotificationPolicyForUser(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "getRCPNotificationPolicyForUser"
 
@@ -4848,7 +4788,6 @@
 
 .method public getSecureKeystoreEnabled(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4884,7 +4823,6 @@
 
 .method public getSwitchNotifEnabled(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4937,7 +4875,6 @@
 
 .method public isBadgeRequiredFromOwner(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5012,8 +4949,6 @@
 
 .method public setAirCommandEnabled(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5062,8 +4997,6 @@
 
 .method public setAllowAllShare(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5112,8 +5045,6 @@
 
 .method public setAllowContainerReset(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5162,8 +5093,6 @@
 
 .method public setAllowCustomBadgeIcon(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5212,8 +5141,6 @@
 
 .method public setAllowCustomColorIdentification(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5262,8 +5189,6 @@
 
 .method public setAllowCustomPersonaIcon(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5312,8 +5237,6 @@
 
 .method public setAllowDLNADataTransfer(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5362,8 +5285,6 @@
 
 .method public setAllowExportAndDeleteFiles(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5412,8 +5333,6 @@
 
 .method public setAllowExportFiles(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5462,8 +5381,6 @@
 
 .method public setAllowImportFiles(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5512,8 +5429,6 @@
 
 .method public setAllowPrint(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5562,8 +5477,6 @@
 
 .method public setAllowShortCutCreation(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5612,8 +5525,6 @@
 
 .method public setAllowUniversalCallerId(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5662,8 +5573,6 @@
 
 .method public setCameraModeChangeEnabled(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5712,8 +5621,6 @@
 
 .method public setDisableSwitchWidgetOnLockScreen(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5762,8 +5669,6 @@
 
 .method public setEncryptionStatus(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5812,8 +5717,6 @@
 
 .method public setGearSupportEnabled(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5862,8 +5765,6 @@
 
 .method public setModifyLockScreenTimeout(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5912,8 +5813,6 @@
 
 .method public setPasswordLockPolicy(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5962,8 +5861,6 @@
 
 .method public setPenWindowEnabled(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6012,9 +5909,6 @@
 
 .method public setRCPDataPolicy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string/jumbo v2, "setRCPDataPolicy"
 
@@ -6037,9 +5931,6 @@
 
 .method public setRCPNotificationPolicy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string/jumbo v2, "setRCPNotificationPolicy"
 
@@ -6062,8 +5953,6 @@
 
 .method public setSecureKeystoreEnabled(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6112,8 +6001,6 @@
 
 .method public setSwitchNotifEnabled(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -70,8 +70,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/high16 v0, -0x40800000
 
@@ -102,10 +100,6 @@
 
 .method static generateBitmap(Landroid/content/Context;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -364,7 +358,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/app/WallpaperManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Landroid/app/WallpaperManager;->TAG:Ljava/lang/String;
 
@@ -385,12 +378,6 @@
 
 .method private static getMaxCropRect(IIIIFF)Landroid/graphics/RectF;
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
 
     const/4 v6, 0x0
 
@@ -483,7 +470,6 @@
 
 .method static initGlobals(Landroid/os/Looper;)V
     .locals 2
-    .param p0    # Landroid/os/Looper;
 
     sget-object v1, Landroid/app/WallpaperManager;->sSync:Ljava/lang/Object;
 
@@ -517,8 +503,6 @@
 
 .method private setWallpaper(Ljava/io/InputStream;Ljava/io/FileOutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/io/FileOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -548,9 +532,6 @@
 
 .method public static startBackup(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/wallpaperbackup/Controller;
 
@@ -563,9 +544,6 @@
 
 .method public static startRestore(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/wallpaperbackup/Controller;
 
@@ -595,7 +573,6 @@
 
 .method public clearWallpaperOffsets(Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     invoke-static {}, Landroid/view/WindowManagerGlobal;->getWindowSession()Landroid/view/IWindowSession;
@@ -653,7 +630,6 @@
 
 .method public getBitmapForMultiSim(I)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # I
 
     sget-object v1, Landroid/app/WallpaperManager;->sGlobals:Landroid/app/WallpaperManager$Globals;
 
@@ -703,11 +679,6 @@
 
 .method public getBuiltInDrawable(IIZFF)Landroid/graphics/drawable/Drawable;
     .locals 29
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # F
-    .param p5    # F
 
     sget-object v5, Landroid/app/WallpaperManager;->sGlobals:Landroid/app/WallpaperManager$Globals;
 
@@ -1264,7 +1235,6 @@
 
 .method public getCropAndSetWallpaperIntent(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 8
-    .param p1    # Landroid/net/Uri;
 
     const/4 v7, 0x0
 
@@ -1589,7 +1559,6 @@
 
 .method public hasResourceWallpaper(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1730,12 +1699,6 @@
 
 .method public sendWallpaperCommand(Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
 
     :try_start_0
     invoke-static {}, Landroid/view/WindowManagerGlobal;->getWindowSession()Landroid/view/IWindowSession;
@@ -1771,7 +1734,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1869,8 +1831,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;I)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1953,7 +1913,6 @@
 
 .method public setResource(I)V
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2077,8 +2036,6 @@
 
 .method public setResource(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2212,7 +2169,6 @@
 
 .method public setStream(Ljava/io/InputStream;)V
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2306,8 +2262,6 @@
 
 .method public setStream(Ljava/io/InputStream;I)V
     .locals 5
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2386,8 +2340,6 @@
 
 .method public setWallpaperOffsetSteps(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/app/WallpaperManager;->mWallpaperXStep:F
 
@@ -2398,9 +2350,6 @@
 
 .method public setWallpaperOffsets(Landroid/os/IBinder;FF)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # F
-    .param p3    # F
 
     :try_start_0
     invoke-static {}, Landroid/view/WindowManagerGlobal;->getWindowSession()Landroid/view/IWindowSession;
@@ -2432,8 +2381,6 @@
 
 .method public suggestDesiredDimensions(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     sget-object v0, Landroid/app/WallpaperManager;->sGlobals:Landroid/app/WallpaperManager$Globals;

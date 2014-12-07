@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/speeddial/SpeedDialListFragment;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment$QueryHandler;->this$0:Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
 
@@ -57,9 +56,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     iget-object v1, p0, Lcom/samsung/contacts/speeddial/SpeedDialListFragment$QueryHandler;->mActivity:Ljava/lang/ref/WeakReference;
 

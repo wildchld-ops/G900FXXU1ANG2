@@ -37,7 +37,6 @@
 
 .method public isVisible(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Z
     .locals 6
-    .param p1    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -98,7 +97,6 @@
 
 .method public isWaiting(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Z
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
     const/4 v0, 0x0
 
@@ -107,9 +105,6 @@
 
 .method public run(Landroid/content/Context;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;Lcom/google/android/finsky/installer/InstallPolicies;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
-    .param p3    # Lcom/google/android/finsky/installer/InstallPolicies;
 
     # getter for: Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->mInstaller:Lcom/google/android/finsky/receivers/Installer;
     invoke-static {p2}, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;->access$900(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;)Lcom/google/android/finsky/receivers/Installer;

@@ -66,8 +66,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/MenuAppsGrid$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$SelectableItemStateObj;-><init>(Lcom/android/launcher2/MenuAppsGrid;)V
 
@@ -81,7 +79,6 @@
 
 .method public enter(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 15
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -491,7 +488,6 @@
 
 .method public exit(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 2
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -587,7 +583,6 @@
 
 .method getAppIconViewWithId(J)Lcom/android/launcher2/AppIconView;
     .locals 6
-    .param p1    # J
 
     iget-object v4, p0, Lcom/android/launcher2/MenuAppsGrid$SelectableItemStateObj;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -916,8 +911,6 @@
 
 .method public onClickAppItem(Lcom/android/launcher2/AppItem;Landroid/view/View;)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -1104,8 +1097,6 @@
 
 .method public preCheckAppItem(Lcom/android/launcher2/AppItem;Landroid/view/View;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/view/View;
 
     const v5, 0x7f0e004e
 
@@ -1267,7 +1258,6 @@
 
 .method public restore(Landroid/os/Bundle;)Z
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -1312,7 +1302,6 @@
 
 .method public save(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 

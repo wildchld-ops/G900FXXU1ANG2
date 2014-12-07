@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const/4 v1, 0x0
 
@@ -72,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ComposeDeleteMessage;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mDeleteUri:Landroid/net/Uri;
 
@@ -81,8 +79,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/ComposeDeleteMessage;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mDeleteUri:Landroid/net/Uri;
 
@@ -91,7 +87,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ComposeDeleteMessage;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mDeleteLocked:Z
 
@@ -100,8 +95,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/ComposeDeleteMessage;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mDeleteLocked:Z
 
@@ -110,8 +103,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/ComposeDeleteMessage;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mHasLockedMessage:Z
 
@@ -120,7 +111,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ComposeDeleteMessage;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -129,7 +119,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ComposeDeleteMessage;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mActivity:Landroid/app/Activity;
 
@@ -138,9 +127,6 @@
 
 .method private static confirmCancelDialog(Landroid/app/Activity;Landroid/content/DialogInterface$OnClickListener;Z)Landroid/app/AlertDialog;
     .locals 3
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Z
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -185,9 +171,6 @@
 
 .method private static confirmDeleteDialog(Landroid/app/Activity;Landroid/content/DialogInterface$OnClickListener;Z)Landroid/app/AlertDialog;
     .locals 3
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Z
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -232,12 +215,6 @@
 
 .method public static confirmDeleteMessageDialog(Lcom/android/mms/ui/ComposeDeleteMessage$DeleteMessageListener;IZLandroid/content/Context;Ljava/lang/String;I)Landroid/app/AlertDialog;
     .locals 7
-    .param p0    # Lcom/android/mms/ui/ComposeDeleteMessage$DeleteMessageListener;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/content/Context;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -1188,7 +1165,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeDeleteMessage;->mActivity:Landroid/app/Activity;
 
@@ -1197,8 +1173,6 @@
 
 .method public showCancelConfirmDlg(Lcom/android/mms/ui/MessageItem;Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
-    .param p2    # Landroid/net/Uri;
 
     new-instance v1, Lcom/android/mms/ui/ComposeDeleteMessage$CancelMessageListener;
 
@@ -1236,7 +1210,6 @@
 
 .method public showDeleteConfirmDlg(Landroid/database/Cursor;)V
     .locals 9
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 
@@ -1319,8 +1292,6 @@
 
 .method public showDeleteConfirmDlg(Lcom/android/mms/ui/MessageItem;Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
-    .param p2    # Landroid/net/Uri;
 
     new-instance v1, Lcom/android/mms/ui/ComposeDeleteMessage$DeleteMessageListener;
 

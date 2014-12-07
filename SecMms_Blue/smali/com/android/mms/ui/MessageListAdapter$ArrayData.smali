@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MessageListAdapter;JLjava/lang/String;)V
     .locals 0
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListAdapter$ArrayData;->this$0:Lcom/android/mms/ui/MessageListAdapter;
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

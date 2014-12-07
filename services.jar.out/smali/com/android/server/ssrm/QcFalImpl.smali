@@ -192,7 +192,6 @@
 
 .method private checkFileExistence(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -411,7 +410,6 @@
 # virtual methods
 .method acquirePerfCoreMaxLock(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -548,7 +546,6 @@
 
 .method acquirePerfCoreMinLock(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x2
 
@@ -689,8 +686,6 @@
 
 .method adjustFreqToIndexValue(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x3
 
@@ -808,7 +803,6 @@
 
 .method public checkNodeExistence(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -883,7 +877,6 @@
 
 .method public initSupportedFrequency(I)[I
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -948,8 +941,6 @@
 
 .method public modifyToValues(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1079,7 +1070,6 @@
 
 .method public revertToDefault(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

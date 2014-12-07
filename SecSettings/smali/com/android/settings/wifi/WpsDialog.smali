@@ -53,8 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -113,9 +111,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -168,7 +163,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WpsDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mContext:Landroid/content/Context;
 
@@ -177,9 +171,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WpsDialog;Lcom/android/settings/wifi/WpsDialog$DialogState;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
-    .param p1    # Lcom/android/settings/wifi/WpsDialog$DialogState;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WpsDialog;->updateDialog(Lcom/android/settings/wifi/WpsDialog$DialogState;Ljava/lang/String;)V
 
@@ -188,7 +179,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/WpsDialog;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mTextView:Landroid/widget/TextView;
 
@@ -197,9 +187,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WpsDialog;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WpsDialog;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -208,7 +195,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WpsDialog;)Ljava/util/Timer;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mTimer:Ljava/util/Timer;
 
@@ -217,7 +203,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WpsDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/WpsDialog;->isWpsTethering:Z
 
@@ -226,7 +211,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WpsDialog;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -235,7 +219,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/WpsDialog;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mTimeoutBar:Landroid/widget/ProgressBar;
 
@@ -244,7 +227,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/WpsDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget v0, p0, Lcom/android/settings/wifi/WpsDialog;->WpsCount:I
 
@@ -253,8 +235,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/wifi/WpsDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/WpsDialog;->WpsCount:I
 
@@ -263,7 +243,6 @@
 
 .method static synthetic access$708(Lcom/android/settings/wifi/WpsDialog;)I
     .locals 2
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget v0, p0, Lcom/android/settings/wifi/WpsDialog;->WpsCount:I
 
@@ -276,7 +255,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/WpsDialog;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mHandler:Landroid/os/Handler;
 
@@ -285,7 +263,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/WpsDialog;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WpsDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mProgressBar:Landroid/widget/ProgressBar;
 
@@ -294,8 +271,6 @@
 
 .method private handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v7, 0x1
 
@@ -501,8 +476,6 @@
 
 .method private updateDialog(Lcom/android/settings/wifi/WpsDialog$DialogState;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/android/settings/wifi/WpsDialog$DialogState;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WpsDialog;->mDialogState:Lcom/android/settings/wifi/WpsDialog$DialogState;
 
@@ -569,7 +542,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v3, 0x8
 

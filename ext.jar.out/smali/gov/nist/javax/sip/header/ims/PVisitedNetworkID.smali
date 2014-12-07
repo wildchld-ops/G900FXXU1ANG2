@@ -27,7 +27,6 @@
 
 .method public constructor <init>(Lgov/nist/core/Token;)V
     .locals 1
-    .param p1    # Lgov/nist/core/Token;
 
     const-string v0, "P-Visited-Network-ID"
 
@@ -44,7 +43,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "P-Visited-Network-ID"
 
@@ -184,7 +182,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -232,7 +229,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -250,7 +246,6 @@
 
 .method public setVisitedNetworkID(Lgov/nist/core/Token;)V
     .locals 2
-    .param p1    # Lgov/nist/core/Token;
 
     if-nez p1, :cond_0
 
@@ -278,7 +273,6 @@
 
 .method public setVisitedNetworkID(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

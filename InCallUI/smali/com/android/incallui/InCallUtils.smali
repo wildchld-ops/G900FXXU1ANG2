@@ -345,7 +345,6 @@
 
 .method public static changeNameForSKT(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -415,7 +414,6 @@
 
 .method public static changeNameForSKTRAD(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -573,7 +571,6 @@
 
 .method public static forceWakeUpScreen(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "power"
 
@@ -763,7 +760,6 @@
 
 .method public static getFrameSize(Lcom/android/services/telephony/common/Call;)Ljava/lang/String;
     .locals 4
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v3, 0x1
 
@@ -1249,9 +1245,6 @@
 
 .method public static getSimCardIcon(IZZ)I
     .locals 3
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -1461,7 +1454,6 @@
 
 .method public static getSimIconIndex(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -1577,7 +1569,6 @@
 
 .method public static getTtsPhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuffer;
 
@@ -1747,7 +1738,6 @@
 
 .method public static isAnsweringBringToEar(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -1799,7 +1789,6 @@
 
 .method public static isAutoSpeakerPhoneMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -2047,7 +2036,6 @@
 
 .method public static isCoverClosed(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -2268,7 +2256,6 @@
 
 .method public static isEmergencyMode(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -2291,7 +2278,6 @@
 
 .method public static isFindServiceNumber(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -2355,7 +2341,6 @@
 
 .method public static isHDVideoLandscapeCall(Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -2492,7 +2477,6 @@
 
 .method public static isIMSConferenceCall(Lcom/android/services/telephony/common/Call;)Z
     .locals 3
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x0
 
@@ -2565,7 +2549,6 @@
 
 .method public static isIMSLandscapeConfCall(Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -3022,7 +3005,6 @@
 
 .method public static isPSDomain(Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -3072,7 +3054,6 @@
 
 .method public static isPackageInstalled(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -3150,7 +3131,6 @@
 
 .method public static isSafetyAssistanceMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3276,7 +3256,6 @@
 
 .method public static isShowHDVoiceIcon(Lcom/android/services/telephony/common/Call;)Z
     .locals 3
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x0
 
@@ -3544,7 +3523,6 @@
 
 .method public static isTalkBackEnabled(Landroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/16 v1, 0x3a
 
@@ -3617,8 +3595,6 @@
 
 .method public static isTopActivityRunning(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "activity"
 
@@ -3657,8 +3633,6 @@
 
 .method public static isTopActivityRunningEx(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3733,7 +3707,6 @@
 
 .method private static isValidNumber(C)Z
     .locals 2
-    .param p0    # C
 
     const/4 v0, 0x1
 
@@ -3805,7 +3778,6 @@
 
 .method public static isValidPhoneNumber(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -3865,7 +3837,6 @@
 
 .method public static isVideoCall(Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -3936,7 +3907,6 @@
 
 .method public static isVoiceCall(Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -4001,7 +3971,6 @@
 
 .method public static isWBMode(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/android/incallui/CallCommandClient;->getInstance()Lcom/android/incallui/CallCommandClient;
 
@@ -4016,7 +3985,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "InCallUtils"
 
@@ -4027,8 +3995,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "InCallUtils"
 
@@ -4074,7 +4040,6 @@
 
 .method public static pokeUserActivity(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "power"
 
@@ -4097,7 +4062,6 @@
 
 .method public static pokeUserActivityForCover(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "power"
 
@@ -4120,7 +4084,6 @@
 
 .method public static setCallForwardingState(Z)V
     .locals 2
-    .param p0    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4161,7 +4124,6 @@
 
 .method public static setChangingOrientation(Z)V
     .locals 2
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/incallui/InCallUtils;->misChangingOrientation:Z
 
@@ -4190,7 +4152,6 @@
 
 .method public static setHoldCallState(Z)V
     .locals 2
-    .param p0    # Z
 
     if-eqz p0, :cond_0
 
@@ -4224,7 +4185,6 @@
 
 .method public static setMediaShareEnabled(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/incallui/InCallUtils;->mIsMediaShareEnabled:Z
 
@@ -4233,7 +4193,6 @@
 
 .method public static setMediaShareIntentSent(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/incallui/InCallUtils;->mMediaShareIntentSent:Z
 
@@ -4242,7 +4201,6 @@
 
 .method public static setShowingIncomingPopup(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/incallui/InCallUtils;->mShowIncomingPopup:Z
 
@@ -4251,7 +4209,6 @@
 
 .method public static setToastGravity(Landroid/widget/Toast;)V
     .locals 5
-    .param p0    # Landroid/widget/Toast;
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -4340,7 +4297,6 @@
 
 .method public static showToastLong(I)V
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -4357,7 +4313,6 @@
 
 .method public static showToastLong(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -4408,7 +4363,6 @@
 
 .method public static showToastShort(I)V
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -4425,7 +4379,6 @@
 
 .method public static showToastShort(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 

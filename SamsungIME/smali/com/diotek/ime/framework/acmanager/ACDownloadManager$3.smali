@@ -36,11 +36,6 @@
 # virtual methods
 .method public downloadProgress(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const-string v0, "ACDownloadManager"
 
@@ -109,11 +104,6 @@
 
 .method public subscribed(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const-string v0, "ACDownloadManager"
 
@@ -182,10 +172,6 @@
 
 .method public unsubscribed(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const-string v0, "ACDownloadManager"
 
@@ -244,11 +230,6 @@
 
 .method public updated(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const-string v0, "ACDownloadManager"
 
@@ -317,7 +298,6 @@
 
 .method public updatesAvailable(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "ACDownloadManager"
 

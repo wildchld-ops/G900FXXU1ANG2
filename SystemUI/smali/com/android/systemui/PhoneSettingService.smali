@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/PhoneSettingService;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/PhoneSettingService;
 
     invoke-direct {p0}, Lcom/android/systemui/PhoneSettingService;->startWfdPickerDialog()V
 
@@ -68,8 +67,6 @@
 
 .method private changePhoneSetting(Lcom/android/systemui/PhoneSettingService$SettingMode;Z)V
     .locals 2
-    .param p1    # Lcom/android/systemui/PhoneSettingService$SettingMode;
-    .param p2    # Z
 
     sget-object v0, Lcom/android/systemui/PhoneSettingService$2;->$SwitchMap$com$android$systemui$PhoneSettingService$SettingMode:[I
 
@@ -187,7 +184,6 @@
 
 .method private setAirplaneMode(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -305,7 +301,6 @@
 
 .method private setAutoRotateMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -401,7 +396,6 @@
 
 .method private setBluetoothMode(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
@@ -461,7 +455,6 @@
 
 .method private setDormantMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -549,7 +542,6 @@
 
 .method private setDrivingMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -627,7 +619,6 @@
 
 .method private setLocationMode(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/systemui/PhoneSettingService;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -693,7 +684,6 @@
 
 .method private setMobileDataMode(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -839,7 +829,6 @@
 
 .method private setMultiWindowMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -917,7 +906,6 @@
 
 .method private setNfcMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "PhoneSettingService"
 
@@ -1002,7 +990,6 @@
 
 .method private setPowerSavingMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "PhoneSettingService"
 
@@ -1057,7 +1044,6 @@
 
 .method private setSBeamMode(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1131,7 +1117,6 @@
 
 .method private setSilentMode(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "PhoneSettingService"
 
@@ -1203,7 +1188,6 @@
 
 .method private setSmartStayMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1281,7 +1265,6 @@
 
 .method private setSyncMode(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Landroid/content/ContentResolver;->getMasterSyncAutomatically()Z
 
@@ -1329,7 +1312,6 @@
 
 .method private setWiFiHotspotMode(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, -0x2
 
@@ -1437,7 +1419,6 @@
 
 .method private setWifiMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "PhoneSettingService"
 
@@ -1518,7 +1499,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -1539,8 +1519,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const-string v0, "PhoneSettingService"
 
@@ -1555,9 +1533,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 14
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v11, "PhoneSettingService"
 
@@ -1767,7 +1742,6 @@
 
 .method protected setAllShareCastMode(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x1
 

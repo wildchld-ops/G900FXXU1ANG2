@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/services/RestoreService;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/services/RestoreService$RestoreResponseListener;->this$0:Lcom/google/android/finsky/services/RestoreService;
 
@@ -51,7 +50,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/VendingProtos$RestoreApplicationsResponseProto;)V
     .locals 24
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$RestoreApplicationsResponseProto;
 
     move-object/from16 v0, p0
 
@@ -455,7 +453,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/VendingProtos$RestoreApplicationsResponseProto;
 

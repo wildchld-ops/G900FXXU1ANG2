@@ -19,7 +19,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/swypeconnect/ac/ACDlmService;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACDlmService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,8 +65,6 @@
 
 .method private onEventCallback([BZ)V
     .locals 1
-    .param p1    # [B
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/nuance/dlm/KoreanInput;->callback:Lcom/nuance/swypeconnect/ac/ACDlmService$ACKoreanDlmEventCallback;
 
@@ -80,7 +77,6 @@
 # virtual methods
 .method public deleteCategory(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/nuance/dlm/KoreanInput;->acKoreanDeleteCategory(I)I
 
@@ -89,8 +85,6 @@
 
 .method public deleteCategoryLanguage(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/dlm/KoreanInput;->acKoreanDeleteCategoryLanguage(II)I
 
@@ -99,8 +93,6 @@
 
 .method public exportAsEvents(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/dlm/KoreanInput;->acKoreanExportAsEvent(ZI)I
 
@@ -109,7 +101,6 @@
 
 .method public processEvent([B)V
     .locals 2
-    .param p1    # [B
 
     const-string v0, "ACDownloadManager"
 

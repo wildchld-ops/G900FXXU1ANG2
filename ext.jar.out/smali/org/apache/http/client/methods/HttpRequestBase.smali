@@ -235,7 +235,6 @@
 
 .method public setConnectionRequest(Lorg/apache/http/conn/ClientConnectionRequest;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ClientConnectionRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -289,7 +288,6 @@
 
 .method public setReleaseTrigger(Lorg/apache/http/conn/ConnectionReleaseTrigger;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ConnectionReleaseTrigger;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -343,7 +341,6 @@
 
 .method public setURI(Ljava/net/URI;)V
     .locals 0
-    .param p1    # Ljava/net/URI;
 
     iput-object p1, p0, Lorg/apache/http/client/methods/HttpRequestBase;->uri:Ljava/net/URI;
 

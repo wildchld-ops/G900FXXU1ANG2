@@ -1374,7 +1374,7 @@ Leiho anitzaren eskulekua ere erakuts edo ezkuta dezakezu atzera tekla sakatuz e
     <string name="usb_tethering_errored_subtext">USB ainguraketa errorea</string>
     <string name="usb_tethering_on_during_sidesync_popup">Ezin da USB ainguraketa desgaitu SideSync erabili bitartean. USB ainguraketa desgaitzeak SideSync desgaituko du.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Ezin da USB ainguraketa gaitu SideSync erabili bitartean. USB ainguraketa gaitzeak SideSync desgaituko du.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth ainguraketa</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth ainguraketa</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Gailu honen Internet konexioa partekatzen…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Gailuaren Internet konexioa partekatuta gailu 1ekin</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Internet konexioa partekatuta %d gailurekin</string>

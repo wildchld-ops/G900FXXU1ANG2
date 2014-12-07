@@ -36,7 +36,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 4
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/FlagItemFragment$3;->this$0:Lcom/google/android/finsky/activities/FlagItemFragment;
 

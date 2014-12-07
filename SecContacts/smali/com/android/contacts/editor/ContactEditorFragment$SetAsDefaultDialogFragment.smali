@@ -35,11 +35,6 @@
 
 .method public static show(Lcom/android/contacts/editor/ContactEditorFragment;ZIZLandroid/net/Uri;)V
     .locals 3
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/net/Uri;
 
     new-instance v0, Lcom/android/contacts/editor/ContactEditorFragment$SetAsDefaultDialogFragment;
 
@@ -72,7 +67,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getTargetFragment()Landroid/app/Fragment;
 
@@ -112,7 +106,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -200,7 +193,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "hadChanges"
 

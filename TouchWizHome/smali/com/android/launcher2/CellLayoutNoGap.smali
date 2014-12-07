@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -47,8 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -59,9 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, -0x1
 
@@ -102,8 +96,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/CellLayoutNoGap;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/CellLayoutNoGap;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CellLayoutNoGap;->mCloseLayoutGapPosted:Z
 
@@ -128,8 +120,6 @@
 
 .method private updateItemToNewPosition(Lcom/android/launcher2/BaseItem;I)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
 
     iget v0, p1, Lcom/android/launcher2/BaseItem;->mScreen:I
 
@@ -245,7 +235,6 @@
 # virtual methods
 .method public addItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/CellLayout;->addItem(Lcom/android/launcher2/BaseItem;)Z
 
@@ -340,8 +329,6 @@
 
 .method cellToPosition(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayout;->getCountX()I
 
@@ -604,10 +591,6 @@
 
 .method public findDropLocation(IIILjava/lang/Object;)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     move-object/from16 v7, p4
 
@@ -901,7 +884,6 @@
 
 .method public findDropLocation(Landroid/view/DragEvent;)V
     .locals 4
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual {p1}, Landroid/view/DragEvent;->getX()F
 
@@ -973,7 +955,6 @@
 
 .method getCellXFromPos(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayout;->getCountX()I
 
@@ -986,7 +967,6 @@
 
 .method getCellYFromPos(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayout;->getCountX()I
 
@@ -1115,7 +1095,6 @@
 
 .method public hide(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/CellLayout;->hide(Lcom/android/launcher2/BaseItem;)V
 
@@ -1160,7 +1139,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 18
-    .param p1    # Landroid/view/DragEvent;
 
     sget-boolean v1, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -1868,7 +1846,6 @@
 
 .method public onFailedDrop(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayoutNoGap;->mReorderAlarm:Lcom/android/launcher2/Alarm;
 
@@ -1890,8 +1867,6 @@
 
 .method public onFolderIconViewDragEvent(Landroid/view/DragEvent;Lcom/android/launcher2/FolderIconView;)V
     .locals 9
-    .param p1    # Landroid/view/DragEvent;
-    .param p2    # Lcom/android/launcher2/FolderIconView;
 
     const/4 v6, 0x0
 
@@ -1963,7 +1938,6 @@
 
 .method public onViewAddedToLayout(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, -0x1
 
@@ -2261,7 +2235,6 @@
 
 .method public realTimeReorder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/CellLayoutNoGap;->mTargetCell:I
 
@@ -2272,8 +2245,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;Z)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Z
 
     if-eqz p2, :cond_3
 
@@ -2325,7 +2296,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v0, 0x0
 
@@ -2376,8 +2346,6 @@
 
 .method final setCellFromPosition(Lcom/android/launcher2/CellLayout$LayoutParams;I)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/CellLayout$LayoutParams;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Lcom/android/launcher2/CellLayoutNoGap;->getCellXFromPos(I)I
 
@@ -2396,7 +2364,6 @@
 
 .method public setEnableReOrdering(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CellLayoutNoGap;->mReOrderingEnabled:Z
 
@@ -2405,9 +2372,6 @@
 
 .method protected setItemLocation(Lcom/android/launcher2/BaseItem;II)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -2458,13 +2422,6 @@
 
 .method public setItemLocation(Lcom/android/launcher2/BaseItem;IIIIIJ)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
 
     iput p6, p1, Lcom/android/launcher2/BaseItem;->mScreen:I
 
@@ -2536,7 +2493,6 @@
 
 .method public show(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/CellLayout;->show(Lcom/android/launcher2/BaseItem;)V
 
@@ -2619,7 +2575,6 @@
 
 .method protected updateViewToCellLayout(I)V
     .locals 8
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayout;->getCountX()I
 

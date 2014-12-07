@@ -157,7 +157,6 @@
 
 .method public constructor <init>(Ljava/util/Properties;)V
     .locals 66
-    .param p1    # Ljava/util/Properties;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/PeerUnavailableException;
@@ -2939,8 +2938,6 @@
 
 .method public createListeningPoint(ILjava/lang/String;)Ljavax/sip/ListeningPoint;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/TransportNotSupportedException;,
@@ -2972,9 +2969,6 @@
 
 .method public declared-synchronized createListeningPoint(Ljava/lang/String;ILjava/lang/String;)Ljavax/sip/ListeningPoint;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/TransportNotSupportedException;,
@@ -3336,7 +3330,6 @@
 
 .method public createSipProvider(Ljavax/sip/ListeningPoint;)Ljavax/sip/SipProvider;
     .locals 5
-    .param p1    # Ljavax/sip/ListeningPoint;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/ObjectInUseException;
@@ -3419,7 +3412,6 @@
 
 .method public deleteListeningPoint(Ljavax/sip/ListeningPoint;)V
     .locals 4
-    .param p1    # Ljavax/sip/ListeningPoint;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/ObjectInUseException;
@@ -3458,7 +3450,6 @@
 
 .method public deleteSipProvider(Ljavax/sip/SipProvider;)V
     .locals 3
-    .param p1    # Ljavax/sip/SipProvider;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/ObjectInUseException;
@@ -3527,8 +3518,6 @@
 
 .method public getAuthenticationHelper(Lgov/nist/javax/sip/clientauthutils/AccountManager;Ljavax/sip/header/HeaderFactory;)Lgov/nist/javax/sip/clientauthutils/AuthenticationHelper;
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/clientauthutils/AccountManager;
-    .param p2    # Ljavax/sip/header/HeaderFactory;
 
     new-instance v0, Lgov/nist/javax/sip/clientauthutils/AuthenticationHelperImpl;
 
@@ -3599,8 +3588,6 @@
 
 .method public getSecureAuthenticationHelper(Lgov/nist/javax/sip/clientauthutils/SecureAccountManager;Ljavax/sip/header/HeaderFactory;)Lgov/nist/javax/sip/clientauthutils/AuthenticationHelper;
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/clientauthutils/SecureAccountManager;
-    .param p2    # Ljavax/sip/header/HeaderFactory;
 
     new-instance v0, Lgov/nist/javax/sip/clientauthutils/AuthenticationHelperImpl;
 
@@ -3690,7 +3677,6 @@
 
 .method public setEnabledCipherSuites([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/SipStackImpl;->cipherSuites:[Ljava/lang/String;
 
@@ -3699,7 +3685,6 @@
 
 .method public setEnabledProtocols([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/SipStackImpl;->enabledProtocols:[Ljava/lang/String;
 
@@ -3708,7 +3693,6 @@
 
 .method public setIsBackToBackUserAgent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isBackToBackUserAgent:Z
 

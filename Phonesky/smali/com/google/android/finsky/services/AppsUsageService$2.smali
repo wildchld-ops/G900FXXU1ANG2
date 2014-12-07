@@ -35,8 +35,6 @@
 # virtual methods
 .method public getDocuments(II)Ljava/util/List;
     .locals 31
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public ResetCwDefaultService(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,10 +87,6 @@
 
 .method public SetCwDefaultService(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -158,7 +152,6 @@
 
 .method public captivePortalCheckComplete(Landroid/net/NetworkInfo;)V
     .locals 5
-    .param p1    # Landroid/net/NetworkInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -229,8 +222,6 @@
 
 .method public captivePortalCheckCompleted(Landroid/net/NetworkInfo;Z)V
     .locals 5
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -315,7 +306,6 @@
 
 .method public checkMobileProvisioning(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -371,8 +361,6 @@
 
 .method public createEnterpriseVpn(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -437,8 +425,6 @@
 
 .method public disconnect(Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -518,7 +504,6 @@
 
 .method public disconnectSystemVpn(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -570,8 +555,6 @@
 
 .method public establishEnterpriseVpn(Lcom/android/internal/net/VpnConfig;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # Lcom/android/internal/net/VpnConfig;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -664,8 +647,6 @@
 
 .method public establishEnterpriseVpnIS(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -719,7 +700,6 @@
 
 .method public establishVpn(Lcom/android/internal/net/VpnConfig;)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # Lcom/android/internal/net/VpnConfig;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -810,7 +790,6 @@
 
 .method public findConnectionTypeForIface(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1073,7 +1052,6 @@
 
 .method public getActiveNetworkInfoForUid(I)Landroid/net/NetworkInfo;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1588,7 +1566,6 @@
 
 .method public getInterfaceName(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1644,7 +1621,6 @@
 
 .method public getLastTetherError(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1769,7 +1745,6 @@
 
 .method public getLinkProperties(I)Landroid/net/LinkProperties;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1841,7 +1816,6 @@
 
 .method public getLinkQualityInfo(I)Landroid/net/LinkQualityInfo;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1973,7 +1947,6 @@
 
 .method public getMobileDataEnabledEx(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2142,7 +2115,6 @@
 
 .method public getNetworkInfo(I)Landroid/net/NetworkInfo;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2912,7 +2884,6 @@
 
 .method public isNetworkSupported(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3035,8 +3006,6 @@
 
 .method public markSocketAsUser(Landroid/os/ParcelFileDescriptor;I)V
     .locals 5
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3109,8 +3078,6 @@
 
 .method public onSwitchDataNetworkCallback(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3171,7 +3138,6 @@
 
 .method public onSwitchToSim1DataNetworkCallback(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3230,7 +3196,6 @@
 
 .method public onSwitchToSim2DataNetworkCallback(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3289,11 +3254,6 @@
 
 .method public prepareEnterpriseVpn(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3389,8 +3349,6 @@
 
 .method public prepareVpn(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3455,8 +3413,6 @@
 
 .method public prepareVpnForMvp(Ljava/lang/String;Landroid/os/Messenger;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Messenger;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3545,8 +3501,6 @@
 
 .method public protectEnterpriseVpn(Landroid/os/ParcelFileDescriptor;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3635,7 +3589,6 @@
 
 .method public protectVpn(Landroid/os/ParcelFileDescriptor;)Z
     .locals 7
-    .param p1    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3722,9 +3675,6 @@
 
 .method public removeRouteToHostAddress(I[BLjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3791,8 +3741,6 @@
 
 .method public reportInetCondition(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3846,7 +3794,6 @@
 
 .method public requestNetworkTransitionWakelock(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3898,9 +3845,6 @@
 
 .method public requestRouteToHost(IILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3967,9 +3911,6 @@
 
 .method public requestRouteToHostAddress(I[BLjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4036,7 +3977,6 @@
 
 .method public saveDhcpServerConfiguration(Landroid/net/DhcpServerConfiguration;)Z
     .locals 7
-    .param p1    # Landroid/net/DhcpServerConfiguration;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4123,7 +4063,6 @@
 
 .method public setAirplaneMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4182,8 +4121,6 @@
 
 .method public setDataDependency(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4244,7 +4181,6 @@
 
 .method public setGlobalProxy(Landroid/net/ProxyProperties;)V
     .locals 5
-    .param p1    # Landroid/net/ProxyProperties;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4315,7 +4251,6 @@
 
 .method public setMobileDataEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4374,8 +4309,6 @@
 
 .method public setMobileDataEnabledEx(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4436,7 +4369,6 @@
 
 .method public setNetworkPreference(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4488,8 +4420,6 @@
 
 .method public setPolicyDataEnable(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4550,10 +4480,6 @@
 
 .method public setProvisioningNotificationVisible(ZILjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4618,8 +4544,6 @@
 
 .method public setRadio(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4699,7 +4623,6 @@
 
 .method public setRadios(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4777,7 +4700,6 @@
 
 .method public setUsbTethering(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4840,7 +4762,6 @@
 
 .method public startLegacyVpn(Lcom/android/internal/net/VpnProfile;)V
     .locals 5
-    .param p1    # Lcom/android/internal/net/VpnProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4911,9 +4832,6 @@
 
 .method public startUsingNetworkFeature(ILjava/lang/String;Landroid/os/IBinder;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4973,8 +4891,6 @@
 
 .method public stopUsingNetworkFeature(ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5032,8 +4948,6 @@
 
 .method public supplyMessenger(ILandroid/os/Messenger;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Messenger;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5106,9 +5020,6 @@
 
 .method public supplyMessengerEx(ILandroid/os/Messenger;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Messenger;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5183,7 +5094,6 @@
 
 .method public switchDataNetwork(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5235,7 +5145,6 @@
 
 .method public switchDataNetworkForMMS(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5385,7 +5294,6 @@
 
 .method public tether(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5441,7 +5349,6 @@
 
 .method public untether(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5497,9 +5404,6 @@
 
 .method public updateEnterpriseVpn(Ljava/lang/String;IZ)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/sec/KeyguardSPassUnlockView$7;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardSPassUnlockView$7$1;->this$1:Lcom/android/keyguard/sec/KeyguardSPassUnlockView$7;
 
@@ -110,7 +108,6 @@
 
 .method public onTick(J)V
     .locals 7
-    .param p1    # J
 
     const/4 v6, 0x1
 

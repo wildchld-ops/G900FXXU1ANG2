@@ -53,7 +53,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -64,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -132,7 +129,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/MSimKeyguardSimPukView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->isWrongPUK:Z
 
@@ -141,8 +137,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/MSimKeyguardSimPukView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->isWrongPUK:Z
 
@@ -151,7 +145,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/MSimKeyguardSimPukView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->isWrongPUKCrash:Z
 
@@ -160,8 +153,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/MSimKeyguardSimPukView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->isWrongPUKCrash:Z
 
@@ -170,7 +161,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/MSimKeyguardSimPukView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
 
     iget v0, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->mRemainingCount:I
 
@@ -179,8 +169,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/MSimKeyguardSimPukView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->mRemainingCount:I
 
@@ -189,7 +177,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/MSimKeyguardSimPukView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
 
     invoke-direct {p0}, Lcom/android/keyguard/MSimKeyguardSimPukView;->getSimPukRetry()I
 
@@ -208,7 +195,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/MSimKeyguardSimPukView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->mPukHandler:Landroid/os/Handler;
 
@@ -217,7 +203,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/MSimKeyguardSimPukView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
 
     iget v0, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->old_Num_of_retry:I
 
@@ -226,7 +211,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/MSimKeyguardSimPukView;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimKeyguardSimPukView;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -235,8 +219,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/MSimKeyguardSimPukView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPukView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/MSimKeyguardSimPukView;->handleTimeout(I)V
 
@@ -363,7 +345,6 @@
 
 .method private handleTimeout(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -409,7 +390,6 @@
 
 .method protected getSecurityMessageDisplay(I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -466,7 +446,6 @@
 
 .method protected getSecurityMessageDisplay(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -647,7 +626,6 @@
 
 .method public pokeWakelock(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 

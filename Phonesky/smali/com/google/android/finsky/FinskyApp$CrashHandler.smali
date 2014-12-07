@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/FinskyApp;Ljava/io/File;)V
     .locals 1
-    .param p2    # Ljava/io/File;
 
     iput-object p1, p0, Lcom/google/android/finsky/FinskyApp$CrashHandler;->this$0:Lcom/google/android/finsky/FinskyApp;
 
@@ -49,8 +48,6 @@
 # virtual methods
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Thread;
-    .param p2    # Ljava/lang/Throwable;
 
     :try_start_0
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp$CrashHandler;->mFile:Ljava/io/File;

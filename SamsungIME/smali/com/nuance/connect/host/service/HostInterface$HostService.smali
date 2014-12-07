@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/nuance/connect/host/service/HostInterface$HostService;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/nuance/connect/host/service/HostInterface$HostService;
 

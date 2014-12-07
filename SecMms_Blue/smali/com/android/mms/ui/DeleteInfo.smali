@@ -34,9 +34,6 @@
 
 .method public constructor <init>(JLandroid/net/Uri;Z)V
     .locals 0
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,8 +48,6 @@
 
 .method public constructor <init>(JZ)V
     .locals 1
-    .param p1    # J
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

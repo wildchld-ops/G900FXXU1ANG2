@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-class v0, Lgov/nist/javax/sip/header/ExtensionHeaderImpl;
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
-    .param p2    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater$SearchViewClickListener;-><init>(Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 

@@ -58,8 +58,6 @@
 
 .method synthetic constructor <init>(Lcom/android/keyguard/KeyguardSmartcardPINView;Lcom/android/keyguard/KeyguardSmartcardPINView$1;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSmartcardPINView;
-    .param p2    # Lcom/android/keyguard/KeyguardSmartcardPINView$1;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardSmartcardPINView$VerifyPasswordWithCACTask;-><init>(Lcom/android/keyguard/KeyguardSmartcardPINView;)V
 
@@ -70,7 +68,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/Integer;
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     # getter for: Lcom/android/keyguard/KeyguardSmartcardPINView;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/keyguard/KeyguardSmartcardPINView;->access$100()Ljava/lang/String;
@@ -131,7 +128,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
@@ -144,7 +140,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 5
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v4, 0x0
 
@@ -339,7 +334,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

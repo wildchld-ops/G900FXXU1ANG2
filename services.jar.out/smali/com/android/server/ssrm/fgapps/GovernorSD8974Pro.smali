@@ -404,7 +404,6 @@
 # virtual methods
 .method public onBrowserDashMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/GovernorSD8974Pro;->mIsBrowserDashMode:Z
 
@@ -533,7 +532,6 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/GovernorSD8974Pro;->mIsSpecialAppInForeground:Z
 
@@ -582,9 +580,6 @@
 
 .method public onStatusNotiReceived(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "FullScreen"
 

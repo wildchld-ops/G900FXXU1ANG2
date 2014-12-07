@@ -44,7 +44,6 @@
 
 .method static synthetic access$000(Lorg/keyczar/DsaPrivateKey;)Lorg/keyczar/DsaPublicKey;
     .locals 1
-    .param p0    # Lorg/keyczar/DsaPrivateKey;
 
     iget-object v0, p0, Lorg/keyczar/DsaPrivateKey;->publicKey:Lorg/keyczar/DsaPublicKey;
 
@@ -53,7 +52,6 @@
 
 .method static synthetic access$100(Lorg/keyczar/DsaPrivateKey;)Ljava/security/interfaces/DSAPrivateKey;
     .locals 1
-    .param p0    # Lorg/keyczar/DsaPrivateKey;
 
     iget-object v0, p0, Lorg/keyczar/DsaPrivateKey;->jcePrivateKey:Ljava/security/interfaces/DSAPrivateKey;
 
@@ -153,7 +151,6 @@
 
 .method static read(Ljava/lang/String;)Lorg/keyczar/DsaPrivateKey;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

@@ -33,8 +33,6 @@
 # virtual methods
 .method onRefreshCarrierInfo(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isKoreaFeature()Z
 
@@ -53,8 +51,6 @@
 
 .method public onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;I)V
     .locals 1
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # I
 
     invoke-static {}, Lcom/android/keyguard/sec/KeyguardProperties;->isExclusivePatentFamily()Z
 

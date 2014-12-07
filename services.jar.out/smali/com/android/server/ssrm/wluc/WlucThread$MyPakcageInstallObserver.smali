@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/ssrm/wluc/WlucThread;Lcom/android/server/ssrm/wluc/WlucThread$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/wluc/WlucThread;
-    .param p2    # Lcom/android/server/ssrm/wluc/WlucThread$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/wluc/WlucThread$MyPakcageInstallObserver;-><init>(Lcom/android/server/ssrm/wluc/WlucThread;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public packageInstalled(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

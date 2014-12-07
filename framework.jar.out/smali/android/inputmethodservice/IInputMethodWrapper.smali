@@ -80,8 +80,6 @@
 # direct methods
 .method public constructor <init>(Landroid/inputmethodservice/AbstractInputMethodService;Landroid/view/inputmethod/InputMethod;)V
     .locals 4
-    .param p1    # Landroid/inputmethodservice/AbstractInputMethodService;
-    .param p2    # Landroid/view/inputmethod/InputMethod;
 
     invoke-direct {p0}, Lcom/android/internal/view/IInputMethod$Stub;-><init>()V
 
@@ -126,7 +124,6 @@
 # virtual methods
 .method public attachToken(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -145,7 +142,6 @@
 
 .method public bindInput(Landroid/view/inputmethod/InputBinding;)V
     .locals 5
-    .param p1    # Landroid/view/inputmethod/InputBinding;
 
     new-instance v0, Lcom/android/internal/view/InputConnectionWrapper;
 
@@ -180,7 +176,6 @@
 
 .method public changeInputMethodSubtype(Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -199,8 +194,6 @@
 
 .method public createSession(Landroid/view/InputChannel;Lcom/android/internal/view/IInputSessionCallback;)V
     .locals 3
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # Lcom/android/internal/view/IInputSessionCallback;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -219,9 +212,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -340,7 +330,6 @@
 
 .method public executeMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const/4 v2, 0x0
 
@@ -750,8 +739,6 @@
 
 .method public hideSoftInput(ILandroid/os/ResultReceiver;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -770,8 +757,6 @@
 
 .method public restartInput(Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/IInputContext;
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -790,7 +775,6 @@
 
 .method public revokeSession(Lcom/android/internal/view/IInputMethodSession;)V
     .locals 6
-    .param p1    # Lcom/android/internal/view/IInputMethodSession;
 
     :try_start_0
     move-object v0, p1
@@ -877,8 +861,6 @@
 
 .method public setSessionEnabled(Lcom/android/internal/view/IInputMethodSession;Z)V
     .locals 7
-    .param p1    # Lcom/android/internal/view/IInputMethodSession;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -978,8 +960,6 @@
 
 .method public showSoftInput(ILandroid/os/ResultReceiver;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -998,9 +978,6 @@
 
 .method public showWritingBuddyInput(ILandroid/graphics/Rect;Landroid/os/ResultReceiver;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/os/ResultReceiver;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -1019,8 +996,6 @@
 
 .method public startInput(Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/IInputContext;
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -1057,7 +1032,6 @@
 
 .method public updateFloatingState(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -1076,7 +1050,6 @@
 
 .method public updateWacomState(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/IInputMethodWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 

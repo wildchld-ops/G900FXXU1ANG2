@@ -50,7 +50,6 @@
 
 .method public pokeWakelock(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/keyguard/FaceUnlock$2;->this$0:Lcom/android/keyguard/FaceUnlock;
 

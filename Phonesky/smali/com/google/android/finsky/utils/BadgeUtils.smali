@@ -6,9 +6,6 @@
 # direct methods
 .method public static configureCreatorBadge(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/DecoratedTextView;)V
     .locals 5
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # Lcom/google/android/finsky/layout/DecoratedTextView;
 
     const/4 v4, 0x0
 
@@ -54,9 +51,6 @@
 
 .method public static configureItemBadge(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/layout/DecoratedTextView;)V
     .locals 5
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # Lcom/google/android/finsky/layout/DecoratedTextView;
 
     const/4 v4, 0x0
 
@@ -102,9 +96,6 @@
 
 .method public static configureRatingItemSection(Lcom/google/android/finsky/api/model/Document;Landroid/widget/RatingBar;Lcom/google/android/finsky/layout/DecoratedTextView;)V
     .locals 10
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Landroid/widget/RatingBar;
-    .param p2    # Lcom/google/android/finsky/layout/DecoratedTextView;
 
     const/4 v9, 0x0
 
@@ -288,8 +279,6 @@
 
 .method private static configureReleaseDate(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayTextView;)V
     .locals 3
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/play/layout/PlayTextView;
 
     const/4 v2, 0x0
 
@@ -335,8 +324,6 @@
 
 .method public static configureTipperSticker(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/play/layout/PlayTextView;)V
     .locals 6
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/play/layout/PlayTextView;
 
     const/4 v5, -0x1
 
@@ -448,9 +435,6 @@
 
 .method public static getImage(Landroid/content/Context;Lcom/google/android/finsky/protos/DocAnnotations$Badge;I)Lcom/google/android/finsky/protos/Doc$Image;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/protos/DocAnnotations$Badge;
-    .param p2    # I
 
     iget-object v0, p1, Lcom/google/android/finsky/protos/DocAnnotations$Badge;->image:[Lcom/google/android/finsky/protos/Doc$Image;
 
@@ -483,10 +467,6 @@
 
 .method public static getImageUrl(Landroid/content/Context;Lcom/google/android/finsky/protos/DocAnnotations$Badge;II)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/protos/DocAnnotations$Badge;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 

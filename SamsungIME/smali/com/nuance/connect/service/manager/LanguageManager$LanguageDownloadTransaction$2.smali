@@ -33,9 +33,6 @@
 # virtual methods
 .method public onDownloadStatusResponse(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     if-ltz p2, :cond_0
 
@@ -157,7 +154,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v1, p1, Lcom/nuance/connect/service/comm/Response;->file:Ljava/io/File;
 
@@ -271,7 +267,6 @@
 
 .method public onIOExceptionResponse(Lcom/nuance/connect/service/comm/Command;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v3, 0x0
 
@@ -382,7 +377,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction$2;->this$1:Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
 

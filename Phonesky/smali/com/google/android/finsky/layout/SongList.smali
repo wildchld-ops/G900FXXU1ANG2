@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -50,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/SongList;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongList;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongList;->mHighlightedSongDocId:Ljava/lang/String;
 
@@ -59,7 +56,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/SongList;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongList;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongList;->mSongSnippets:Ljava/util/Map;
 
@@ -68,7 +64,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/SongList;)Landroid/widget/ScrollView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongList;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongList;->mParent:Landroid/widget/ScrollView;
 
@@ -160,7 +155,6 @@
 
 .method private shouldShowArtistNames(Lcom/google/android/finsky/api/model/Document;Ljava/util/List;)Z
     .locals 5
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -274,8 +268,6 @@
 
 .method public setHighlightedSong(Ljava/lang/String;Landroid/widget/ScrollView;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/ScrollView;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/SongList;->mHighlightedSongDocId:Ljava/lang/String;
 
@@ -286,11 +278,6 @@
 
 .method public setListDetails(Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/Document;Ljava/util/List;ZLjava/util/Set;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 25
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p5    # Z
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

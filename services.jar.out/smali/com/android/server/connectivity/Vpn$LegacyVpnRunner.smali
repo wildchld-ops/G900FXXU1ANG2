@@ -39,10 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/connectivity/Vpn;Lcom/android/internal/net/VpnConfig;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 9
-    .param p2    # Lcom/android/internal/net/VpnConfig;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
 
     const/4 v8, 0x3
 
@@ -187,7 +183,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)Ljava/util/concurrent/atomic/AtomicInteger;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->mOuterConnection:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -196,7 +191,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->mOuterInterface:Ljava/lang/String;
 
@@ -205,7 +199,6 @@
 
 .method private checkpoint(Z)V
     .locals 8
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -2182,7 +2175,6 @@
 # virtual methods
 .method public check(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->mOuterInterface:Ljava/lang/String;
 

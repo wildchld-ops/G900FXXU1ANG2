@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 0
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,7 +60,6 @@
 # virtual methods
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lorg/json/JSONObject;
 
@@ -72,7 +70,6 @@
 
 .method public onResponse(Lorg/json/JSONObject;)V
     .locals 4
-    .param p1    # Lorg/json/JSONObject;
 
     const-string v1, "OK"
 

@@ -51,7 +51,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     return-void
 .end method

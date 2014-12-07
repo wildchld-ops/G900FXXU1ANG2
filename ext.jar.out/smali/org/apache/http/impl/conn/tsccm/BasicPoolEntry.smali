@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/ref/ReferenceQueue;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ClientConnectionOperator;
-    .param p2    # Lorg/apache/http/conn/routing/HttpRoute;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

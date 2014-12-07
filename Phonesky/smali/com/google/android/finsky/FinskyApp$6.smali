@@ -36,10 +36,6 @@
 # virtual methods
 .method public handlePendingNotifications(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/finsky/protos/VendingProtos$PendingNotificationsProto;Z)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/protos/VendingProtos$PendingNotificationsProto;
-    .param p4    # Z
 
     invoke-static {p1, p2, p3, p4}, Lcom/google/android/finsky/billing/iab/PendingNotificationsService;->handlePendingNotifications(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/finsky/protos/VendingProtos$PendingNotificationsProto;Z)Z
 

@@ -135,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/list/JoinContactListFragment;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
 
     iget-wide v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mTargetContactId:J
 
@@ -144,8 +143,6 @@
 
 .method static synthetic access$102(Lcom/android/contacts/list/JoinContactListFragment;Lcom/samsung/contacts/detail/TargetContactData;)Lcom/samsung/contacts/detail/TargetContactData;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
-    .param p1    # Lcom/samsung/contacts/detail/TargetContactData;
 
     iput-object p1, p0, Lcom/android/contacts/list/JoinContactListFragment;->mTargetContactData:Lcom/samsung/contacts/detail/TargetContactData;
 
@@ -154,7 +151,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/list/JoinContactListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/list/JoinContactListFragment;->setTargetContactData()V
 
@@ -163,7 +159,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/list/JoinContactListFragment;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mCursor:Landroid/database/Cursor;
 
@@ -172,8 +167,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/list/JoinContactListFragment;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/contacts/list/JoinContactListFragment;->mCursor:Landroid/database/Cursor;
 
@@ -182,7 +175,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/list/JoinContactListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mIsDone:Z
 
@@ -191,7 +183,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/list/JoinContactListFragment;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mSuggestionCursor:Landroid/database/Cursor;
 
@@ -200,8 +191,6 @@
 
 .method static synthetic access$502(Lcom/android/contacts/list/JoinContactListFragment;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/contacts/list/JoinContactListFragment;->mSuggestionCursor:Landroid/database/Cursor;
 
@@ -210,8 +199,6 @@
 
 .method static synthetic access$602(Lcom/android/contacts/list/JoinContactListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/JoinContactListFragment;->mHasSuggestionList:Z
 
@@ -220,9 +207,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/list/JoinContactListFragment;Landroid/database/Cursor;Landroid/database/Cursor;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/list/JoinContactListFragment;->onContactListLoaded(Landroid/database/Cursor;Landroid/database/Cursor;)V
 
@@ -231,7 +215,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/list/JoinContactListFragment;)Landroid/app/LoaderManager$LoaderCallbacks;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/JoinContactListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mLoaderCallbacks:Landroid/app/LoaderManager$LoaderCallbacks;
 
@@ -240,7 +223,6 @@
 
 .method private addContactPhoto(Lcom/sec/android/touchwiz/widget/TwSweepActionListView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/list/JoinContactListFragment;->setTargetContactListView(Lcom/sec/android/touchwiz/widget/TwSweepActionListView;)V
 
@@ -315,8 +297,6 @@
 
 .method private onContactListLoaded(Landroid/database/Cursor;Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v5, 0x1
 
@@ -395,7 +375,6 @@
 
 .method private removeContactPhoto(Lcom/sec/android/touchwiz/widget/TwSweepActionListView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
     iget-object v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mPhotoConnectionLayout:Landroid/view/View;
 
@@ -411,7 +390,6 @@
 
 .method private setTargetContactConnectionLayout(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/view/View;)V
     .locals 6
-    .param p4    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -646,10 +624,6 @@
 
 .method private setTargetContactDisplayName(Lcom/samsung/contacts/widget/StrokeTextView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/samsung/contacts/widget/StrokeTextView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/contacts/common/preference/ContactsPreferences;
 
@@ -740,7 +714,6 @@
 
 .method private setTargetContactListView(Lcom/sec/android/touchwiz/widget/TwSweepActionListView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
     const/4 v2, 0x0
 
@@ -788,11 +761,6 @@
 
 .method private setTargetContactOrganization(Lcom/samsung/contacts/widget/StrokeTextView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View;)V
     .locals 8
-    .param p1    # Lcom/samsung/contacts/widget/StrokeTextView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/view/View;
 
     const/16 v7, 0x8
 
@@ -932,7 +900,6 @@
 
 .method private setTargetContactPhotoLayout([B)V
     .locals 6
-    .param p1    # [B
 
     iget-object v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mPhotoConnectionLayout:Landroid/view/View;
 
@@ -1066,8 +1033,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -1102,7 +1067,6 @@
 
 .method public isDone(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1113,7 +1077,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/contacts/list/JoinContactListFragment;->mTargetContactData:Lcom/samsung/contacts/detail/TargetContactData;
 
@@ -1224,8 +1187,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # J
 
     const/16 v5, 0xa
 
@@ -1368,7 +1329,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "targetContactId"
 
@@ -1407,7 +1367,6 @@
 
 .method public reLoadPartitionDelayed(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1442,7 +1401,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->restoreSavedState(Landroid/os/Bundle;)V
 
@@ -1498,7 +1456,6 @@
 
 .method public setListener(Lcom/android/contacts/list/JoinContactListFragment$ListOrSelectionUpdatedListener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/JoinContactListFragment$ListOrSelectionUpdatedListener;
 
     iput-object p1, p0, Lcom/android/contacts/list/JoinContactListFragment;->mListener:Lcom/android/contacts/list/JoinContactListFragment$ListOrSelectionUpdatedListener;
 
@@ -1507,8 +1464,6 @@
 
 .method public setQueryString(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Lcom/android/contacts/common/list/ContactEntryListFragment;->setQueryString(Ljava/lang/String;Z)V
 
@@ -1533,7 +1488,6 @@
 
 .method public setTargetContactData(Lcom/samsung/contacts/detail/TargetContactData;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/TargetContactData;
 
     iput-object p1, p0, Lcom/android/contacts/list/JoinContactListFragment;->mTargetContactData:Lcom/samsung/contacts/detail/TargetContactData;
 
@@ -1542,7 +1496,6 @@
 
 .method public setTargetContactId(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/contacts/list/JoinContactListFragment;->mTargetContactId:J
 

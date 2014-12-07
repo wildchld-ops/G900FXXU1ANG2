@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/RecentsPanelView;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsPanelView$7;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsPanelView$7;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 

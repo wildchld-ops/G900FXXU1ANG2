@@ -58,7 +58,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/comm/CommandQueue;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/CommandQueue;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -79,7 +78,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     sget-boolean v1, Lcom/nuance/connect/service/comm/CommandQueue$MessageHandler;->$assertionsDisabled:Z
 
@@ -116,8 +114,6 @@
 
 .method public sendMessageDelayedSeconds(Landroid/os/Message;I)V
     .locals 3
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
 
     mul-int/lit16 v0, p2, 0x3e8
 

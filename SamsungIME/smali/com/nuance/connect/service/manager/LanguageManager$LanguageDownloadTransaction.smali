@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/manager/LanguageManager;Ljava/lang/String;)V
     .locals 8
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -372,7 +371,6 @@
 
 .method static synthetic access$1000(Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->ackLanguagePack()V
 
@@ -381,8 +379,6 @@
 
 .method static synthetic access$1200(Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->processAckLanguagePackResponse(Lcom/nuance/connect/service/comm/Response;)V
 
@@ -391,8 +387,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;Lcom/nuance/connect/service/comm/Response;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->processGetLanguagePackResponse(Lcom/nuance/connect/service/comm/Response;)V
 
@@ -401,7 +395,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->lang:Ljava/lang/String;
 
@@ -410,7 +403,6 @@
 
 .method static synthetic access$800(Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->properties:Ljava/util/HashMap;
 
@@ -419,7 +411,6 @@
 
 .method static synthetic access$900(Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->downloadFilePath:Ljava/lang/String;
 
@@ -428,8 +419,6 @@
 
 .method static synthetic access$902(Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->downloadFilePath:Ljava/lang/String;
 
@@ -683,7 +672,6 @@
 
 .method private processAckLanguagePackResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v3, 0x0
 
@@ -766,7 +754,6 @@
 
 .method private processGetLanguagePackResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->this$0:Lcom/nuance/connect/service/manager/LanguageManager;
 
@@ -1101,7 +1088,6 @@
 
 .method public createDownloadFile(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/LanguageManager$LanguageDownloadTransaction;->downloadFilePath:Ljava/lang/String;
 

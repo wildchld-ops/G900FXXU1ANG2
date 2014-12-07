@@ -36,9 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

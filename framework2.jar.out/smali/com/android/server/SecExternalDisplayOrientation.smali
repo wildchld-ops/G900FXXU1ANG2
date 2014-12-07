@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Lcom/android/server/SecExternalDisplayService;)V
     .locals 10
-    .param p1    # Lcom/android/server/SecExternalDisplayService;
 
     const/16 v7, 0x500
 
@@ -215,7 +214,6 @@
 
 .method static synthetic access$102(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/SecExternalDisplayOrientation;->newOrientation:I
 
@@ -232,7 +230,6 @@
 
 .method private setOrientationListener(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/server/SecExternalDisplayOrientation;->mOrientationListener:Landroid/view/OrientationEventListener;
 
@@ -252,7 +249,6 @@
 # virtual methods
 .method public SecExternalDisplaySetOrientationMode(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -282,7 +278,6 @@
 
 .method public handleCameraConnection(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -834,7 +829,6 @@
 
 .method public handleRVFConnection(Z)Z
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Lcom/android/server/SecExternalDisplayOrientation;->bIsLogEnabled:Z
 
@@ -905,7 +899,6 @@
 
 .method public handleSideSyncConnection(Z)Z
     .locals 5
-    .param p1    # Z
 
     sget-boolean v2, Lcom/android/server/SecExternalDisplayOrientation;->bIsLogEnabled:Z
 

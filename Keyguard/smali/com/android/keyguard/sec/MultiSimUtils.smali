@@ -102,8 +102,6 @@
 
 .method public static appendPropertySimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     move-object v0, p0
 
@@ -233,7 +231,6 @@
 
 .method public static getCurrentWallpaper(Landroid/content/Context;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "ril.MSIMM"
 
@@ -498,7 +495,6 @@
 
 .method public static getPINPUKRequest(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -676,7 +672,6 @@
 
 .method public static getPINRequestWithSlot(I)Z
     .locals 4
-    .param p0    # I
 
     const-string v1, "gsm.sim.state"
 
@@ -952,7 +947,6 @@
 
 .method public static setPINPUKRequest(Z)V
     .locals 3
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/keyguard/sec/MultiSimUtils;->mPINPUKRequest:Z
 
@@ -985,7 +979,6 @@
 
 .method public static setPINPUKSlot(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "MultiSimUtils"
 

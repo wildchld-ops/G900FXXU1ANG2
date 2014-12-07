@@ -19,7 +19,6 @@
 # virtual methods
 .method public newInstance(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/cookie/CookieSpec;
     .locals 4
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     if-eqz p1, :cond_0
 

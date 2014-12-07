@@ -52,8 +52,6 @@
 # virtual methods
 .method public addPhoneNumber(Ljava/lang/String;I)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/mms/location/PlaceBuilder;->P:Ljava/util/HashMap;
 
@@ -96,7 +94,6 @@
 
 .method public setAddress(Ljava/lang/String;)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->S:Ljava/lang/String;
 
@@ -105,7 +102,6 @@
 
 .method public setCity(Ljava/lang/String;)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->T:Ljava/lang/String;
 
@@ -114,7 +110,6 @@
 
 .method public setCountry(Ljava/lang/String;)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->V:Ljava/lang/String;
 
@@ -123,7 +118,6 @@
 
 .method public setLatitude(D)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->Q:D
 
@@ -132,7 +126,6 @@
 
 .method public setLongitude(D)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->R:D
 
@@ -141,7 +134,6 @@
 
 .method public setName(Ljava/lang/String;)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->name:Ljava/lang/String;
 
@@ -150,7 +142,6 @@
 
 .method public setPostalCode(Ljava/lang/String;)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->W:Ljava/lang/String;
 
@@ -159,7 +150,6 @@
 
 .method public setState(Ljava/lang/String;)Lcom/samsung/mms/location/PlaceBuilder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/PlaceBuilder;->U:Ljava/lang/String;
 

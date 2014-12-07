@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/myplace/SelectMapActivity;Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;->this$0:Lcom/android/settings/myplace/SelectMapActivity;
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;->mOverlays:Ljava/util/ArrayList;
 
@@ -98,7 +95,6 @@
 # virtual methods
 .method public addOverlay(Lcom/google/android/maps/OverlayItem;)V
     .locals 1
-    .param p1    # Lcom/google/android/maps/OverlayItem;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;->mOverlays:Ljava/util/ArrayList;
 
@@ -131,7 +127,6 @@
 
 .method protected createItem(I)Lcom/google/android/maps/OverlayItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;->mOverlays:Ljava/util/ArrayList;
 
@@ -146,9 +141,6 @@
 
 .method public draw(Landroid/graphics/Canvas;Lcom/google/android/maps/MapView;Z)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/google/android/maps/MapView;
-    .param p3    # Z
 
     const/4 v3, 0x2
 
@@ -248,7 +240,6 @@
 
 .method protected getIndexToDraw(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;->mOverlays:Ljava/util/ArrayList;
 
@@ -287,7 +278,6 @@
 
 .method protected onTap(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/google/android/maps/ItemizedOverlay;->onTap(I)Z
 
@@ -351,8 +341,6 @@
 
 .method public onTap(Lcom/google/android/maps/GeoPoint;Lcom/google/android/maps/MapView;)Z
     .locals 4
-    .param p1    # Lcom/google/android/maps/GeoPoint;
-    .param p2    # Lcom/google/android/maps/MapView;
 
     const/4 v1, 0x0
 
@@ -434,8 +422,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;Lcom/google/android/maps/MapView;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Lcom/google/android/maps/MapView;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity$SelectMapOverlay;->this$0:Lcom/android/settings/myplace/SelectMapActivity;
 

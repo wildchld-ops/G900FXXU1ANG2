@@ -50,7 +50,6 @@
 
 .method public static commaPackStrings([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -114,7 +113,6 @@
 
 .method public static commaUnpackStrings(Ljava/lang/String;)[Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -213,8 +211,6 @@
 
 .method public static getPreferenceKey(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -243,7 +239,6 @@
 
 .method public static isBackgroundDataEnabled(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const-string v6, "connectivity"
 
@@ -309,7 +304,6 @@
 
 .method public static isCalledByFirstPartyPackage(Landroid/app/Activity;)Z
     .locals 14
-    .param p0    # Landroid/app/Activity;
 
     const/4 v11, 0x1
 
@@ -433,7 +427,6 @@
 
 .method public static urlDecode(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -495,7 +488,6 @@
 
 .method public static urlEncode(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     const-string v1, "UTF-8"

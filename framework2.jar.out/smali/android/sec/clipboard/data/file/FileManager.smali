@@ -48,8 +48,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;I)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -88,10 +86,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/io/File;II)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -142,7 +136,6 @@
 
 .method static synthetic access$000(Landroid/sec/clipboard/data/file/FileManager;)I
     .locals 1
-    .param p0    # Landroid/sec/clipboard/data/file/FileManager;
 
     iget v0, p0, Landroid/sec/clipboard/data/file/FileManager;->mContainerID:I
 
@@ -151,7 +144,6 @@
 
 .method static synthetic access$100(Landroid/sec/clipboard/data/file/FileManager;)Z
     .locals 1
-    .param p0    # Landroid/sec/clipboard/data/file/FileManager;
 
     iget-boolean v0, p0, Landroid/sec/clipboard/data/file/FileManager;->mSupportKOX:Z
 
@@ -162,7 +154,6 @@
 # virtual methods
 .method public UpdateClipboardDB(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/sec/clipboard/data/file/FileManager;->mContainerID:I
 
@@ -198,8 +189,6 @@
 
 .method public add(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v1, 0x1
 
@@ -342,7 +331,6 @@
 
 .method public add(Landroid/sec/clipboard/data/ClipboardData;)Z
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v1, 0x1
 
@@ -430,7 +418,6 @@
 
 .method public get(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -484,7 +471,6 @@
 
 .method public getWrap(I)Landroid/sec/clipboard/data/file/WrapFileClipData;
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -573,7 +559,6 @@
 
 .method public remove(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -702,7 +687,6 @@
 
 .method public remove(Landroid/sec/clipboard/data/ClipboardData;)Z
     .locals 2
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v0, 0x1
 
@@ -989,8 +973,6 @@
 
 .method public set(ILandroid/sec/clipboard/data/ClipboardData;)Landroid/sec/clipboard/data/ClipboardData;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     iget v3, p0, Landroid/sec/clipboard/data/file/FileManager;->mContainerID:I
 

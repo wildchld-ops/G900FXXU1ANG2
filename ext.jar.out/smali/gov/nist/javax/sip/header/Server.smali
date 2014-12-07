@@ -83,7 +83,6 @@
 # virtual methods
 .method public addProductToken(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/Server;->productTokens:Ljava/util/List;
 
@@ -135,7 +134,6 @@
 
 .method public setProduct(Ljava/util/List;)V
     .locals 2
-    .param p1    # Ljava/util/List;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

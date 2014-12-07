@@ -39,7 +39,6 @@
 # virtual methods
 .method public regexParser(Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "\\[([^\\[]+)\\]"
 

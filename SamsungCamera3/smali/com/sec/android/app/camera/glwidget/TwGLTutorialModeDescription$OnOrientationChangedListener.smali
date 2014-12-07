@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription;Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription$OnOrientationChangedListener;-><init>(Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription$OnOrientationChangedListener;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLTutorialModeDescription;
 

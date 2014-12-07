@@ -37,9 +37,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/io/File;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -69,7 +66,6 @@
 # virtual methods
 .method protected bridge synthetic deliverResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, [B
 
@@ -80,7 +76,6 @@
 
 .method protected deliverResponse([B)V
     .locals 1
-    .param p1    # [B
 
     iget-object v0, p0, Lcom/google/android/finsky/providers/AppIconProvider$FetchToFileRequest;->mListener:Lcom/android/volley/Response$Listener;
 
@@ -91,7 +86,6 @@
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 4
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

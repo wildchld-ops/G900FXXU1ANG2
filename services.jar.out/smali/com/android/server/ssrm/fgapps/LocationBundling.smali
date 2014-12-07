@@ -194,15 +194,12 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onPolicyUpdated(ZLjava/lang/String;)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/LocationBundling;->mGmsVersionMatched:Z
 

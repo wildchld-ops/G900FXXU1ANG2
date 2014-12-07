@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +41,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/AvailableSamsungWidgetListProvider;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/AvailableSamsungWidgetListProvider;
 
     iget-object v0, p0, Lcom/android/launcher2/AvailableSamsungWidgetListProvider;->mContext:Landroid/content/Context;
 

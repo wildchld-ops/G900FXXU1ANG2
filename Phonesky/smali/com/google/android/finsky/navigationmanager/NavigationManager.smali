@@ -49,7 +49,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/activities/MainActivity;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -92,11 +91,6 @@
 
 .method private getResolvedLinkClickListener(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p3    # Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Lcom/google/android/finsky/navigationmanager/NavigationManager$4;
 
@@ -119,7 +113,6 @@
 
 .method private goBack(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -373,12 +366,6 @@
 
 .method private goToDocPage(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 26
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -712,7 +699,6 @@
 
 .method public static hasClickListener(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/api/model/Document;->hasLinkAnnotation()Z
 
@@ -768,8 +754,6 @@
 
 .method private showPage(ILandroid/support/v4/app/Fragment;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
 
     const/4 v0, 0x0
 
@@ -780,9 +764,6 @@
 
 .method private showPage(ILandroid/support/v4/app/Fragment;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Z
 
     invoke-static {}, Lcom/google/android/finsky/utils/FinskyLog;->startTiming()V
 
@@ -826,7 +807,6 @@
 # virtual methods
 .method public addOnBackStackChangedListener(Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mFragmentManager:Landroid/support/v4/app/FragmentManager;
 
@@ -837,12 +817,6 @@
 
 .method public buy(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;ILcom/google/android/finsky/utils/DocUtils$OfferFilter;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/utils/DocUtils$OfferFilter;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -1015,7 +989,6 @@
 
 .method public deserialize(Landroid/os/Bundle;)Z
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "nm_state"
 
@@ -1109,13 +1082,6 @@
 
 .method public getBuyImmediateClickListener(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;ILjava/lang/String;Ljava/lang/String;ILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     if-eqz p7, :cond_0
 
@@ -1152,8 +1118,6 @@
 
 .method public getClickListener(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v0, 0x0
 
@@ -1166,9 +1130,6 @@
 
 .method public getClickListener(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;Ljava/lang/String;)Landroid/view/View$OnClickListener;
     .locals 6
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->hasLinkAnnotation()Z
 
@@ -1318,9 +1279,6 @@
 
 .method public getOpenClickListener(Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Lcom/google/android/finsky/navigationmanager/NavigationManager$6;
 
@@ -1343,11 +1301,6 @@
 
 .method public goBrowse(Ljava/lang/String;Ljava/lang/String;ILcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -1390,7 +1343,6 @@
 
 .method public goToAggregatedHome(Lcom/google/android/finsky/api/model/DfeToc;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
 
     const/4 v6, 0x1
 
@@ -1487,8 +1439,6 @@
 
 .method public goToAggregatedHome(Lcom/google/android/finsky/api/model/DfeToc;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1517,7 +1467,6 @@
 
 .method public goToAllReviews(Lcom/google/android/finsky/api/model/Document;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mActivity:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -1545,10 +1494,6 @@
 
 .method public goToCorpusHome(Ljava/lang/String;Ljava/lang/String;ILcom/google/android/finsky/api/model/DfeToc;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -1570,9 +1515,6 @@
 
 .method public goToDocPage(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getDetailsUrl()Ljava/lang/String;
 
@@ -1597,10 +1539,6 @@
 
 .method public goToDocPage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -1625,7 +1563,6 @@
 
 .method public goToFlagContent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -1643,9 +1580,6 @@
 
 .method public goToImagesLightbox(Lcom/google/android/finsky/api/model/Document;II)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mActivity:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -1673,8 +1607,6 @@
 
 .method public goToMyDownloads(Lcom/google/android/finsky/api/model/DfeToc;Z)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -1717,8 +1649,6 @@
 
 .method public goToScreenshots(Lcom/google/android/finsky/api/model/Document;I)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1729,7 +1659,6 @@
 
 .method public goToSearch(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1781,9 +1710,6 @@
 
 .method public goToSearch(Ljava/lang/String;ILcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-static {p1, p2}, Lcom/google/android/finsky/api/DfeUtils;->formSearchUrl(Ljava/lang/String;I)Ljava/lang/String;
 
@@ -1796,9 +1722,6 @@
 
 .method public goToSearch(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -2010,7 +1933,6 @@
 
 .method public handleDeepLink(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     const/16 v0, 0x9
 
@@ -2025,7 +1947,6 @@
 
 .method public handleDeepLink(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -2038,7 +1959,6 @@
 
 .method public init(Lcom/google/android/finsky/activities/MainActivity;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/MainActivity;
 
     iput-object p1, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mActivity:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -2077,8 +1997,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -2110,8 +2028,6 @@
 
 .method public openItem(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;)V
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mActivity:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -2194,7 +2110,6 @@
 
 .method public removeOnBackStackChangedListener(Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mFragmentManager:Landroid/support/v4/app/FragmentManager;
 
@@ -2205,11 +2120,6 @@
 
 .method public replaceDetailsShimWithDocPage(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -2232,11 +2142,6 @@
 
 .method public resolveLink(Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;Ljava/lang/String;ILcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/ResolveLink$ResolvedLink;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v5, 0x0
 
@@ -2391,8 +2296,6 @@
 
 .method public searchFromSuggestion(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/navigationmanager/NavigationManager;->canNavigate()Z
 
@@ -2420,7 +2323,6 @@
 
 .method public serialize(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mBackStack:Ljava/util/Stack;
 
@@ -2454,7 +2356,6 @@
 
 .method public showAppNeededDialog(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/navigationmanager/NavigationManager;->mActivity:Lcom/google/android/finsky/activities/MainActivity;
 

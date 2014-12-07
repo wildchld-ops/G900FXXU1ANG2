@@ -14,8 +14,6 @@
 
 .method private buildDescription(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/DetailsDescriptionViewBinder;->getExtraSummary(Lcom/google/android/finsky/api/model/Document;)Ljava/lang/String;
 
@@ -66,7 +64,6 @@
 
 .method private getExtraSummary(Lcom/google/android/finsky/api/model/Document;)Ljava/lang/String;
     .locals 15
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual/range {p1 .. p1}, Lcom/google/android/finsky/api/model/Document;->getDocumentType()I
 
@@ -423,10 +420,6 @@
 # virtual methods
 .method public bind(Landroid/view/View;Lcom/google/android/finsky/api/model/Document;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     invoke-virtual {p2}, Lcom/google/android/finsky/api/model/Document;->getBackend()I
 

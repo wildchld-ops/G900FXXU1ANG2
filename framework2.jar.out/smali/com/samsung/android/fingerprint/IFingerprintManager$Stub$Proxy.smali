@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public addPermission(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -114,8 +110,6 @@
 
 .method public attachClient(Landroid/os/IBinder;Lcom/samsung/android/fingerprint/IFingerprintClient;)Landroid/os/IBinder;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/fingerprint/IFingerprintClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -185,7 +179,6 @@
 
 .method public cancel(Landroid/os/IBinder;)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -241,7 +234,6 @@
 
 .method public closeTransaction(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -304,7 +296,6 @@
 
 .method public detachClient(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -367,9 +358,6 @@
 
 .method public enroll(Landroid/os/IBinder;Ljava/lang/String;I)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -429,10 +417,6 @@
 
 .method public enrollForMultiUser(Landroid/os/IBinder;ILjava/lang/String;I)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -494,8 +478,6 @@
 
 .method public finishIdentify(Landroid/os/IBinder;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -560,7 +542,6 @@
 
 .method public getEnrolledFingers(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -616,7 +597,6 @@
 
 .method public getEnrolledPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -800,7 +780,6 @@
 
 .method public getIndexName(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -864,7 +843,6 @@
 
 .method public getLastImageQuality(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -920,7 +898,6 @@
 
 .method public getLastImageQualityMessage(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1142,8 +1119,6 @@
 
 .method public identify(Landroid/os/IBinder;Ljava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1201,9 +1176,6 @@
 
 .method public identifyForMultiUser(Landroid/os/IBinder;ILjava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1263,9 +1235,6 @@
 
 .method public identifyWithDialog(Ljava/lang/String;Lcom/samsung/android/fingerprint/IFingerprintClient;Landroid/os/Bundle;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/android/fingerprint/IFingerprintClient;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1356,8 +1325,6 @@
 
 .method public isEnrolledPermission(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1531,8 +1498,6 @@
 
 .method public notifyApplicationState(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1845,7 +1810,6 @@
 
 .method public openTransaction(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1908,10 +1872,6 @@
 
 .method public processFIDO(Landroid/os/IBinder;Ljava/lang/String;Ljava/lang/String;[B)[B
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1973,9 +1933,6 @@
 
 .method public protect(Landroid/os/IBinder;Ljava/lang/String;[B)[B
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2035,8 +1992,6 @@
 
 .method public reEnroll(Landroid/os/IBinder;I)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2094,8 +2049,6 @@
 
 .method public registerClient(Lcom/samsung/android/fingerprint/IFingerprintClient;Landroid/os/Bundle;)Landroid/os/IBinder;
     .locals 6
-    .param p1    # Lcom/samsung/android/fingerprint/IFingerprintClient;
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2184,7 +2137,6 @@
 
 .method public removeAllEnrolledFingers(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2247,8 +2199,6 @@
 
 .method public removeEnrolledFinger(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2313,9 +2263,6 @@
 
 .method public removeEnrolledPermission(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2382,8 +2329,6 @@
 
 .method public removeEnrolledPermissions(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2448,8 +2393,6 @@
 
 .method public secondaryEnroll(Landroid/os/IBinder;I)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2507,8 +2450,6 @@
 
 .method public setIndexName(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2573,8 +2514,6 @@
 
 .method public setPassword(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2639,9 +2578,6 @@
 
 .method public showIdentifyDialog(Landroid/os/IBinder;Ljava/lang/String;Z)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2708,9 +2644,6 @@
 
 .method public unprotect(Landroid/os/IBinder;Ljava/lang/String;[B)[B
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2770,7 +2703,6 @@
 
 .method public unregisterClient(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2833,10 +2765,6 @@
 
 .method public verifyPassword(Landroid/os/IBinder;Ljava/lang/String;ZLjava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -1379,7 +1379,7 @@ Takođe možeš da prikažeš ili sakriješ ručicu za više prozora tako što �
     <string name="usb_tethering_errored_subtext">Greška pri USB vezivanju</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB vezivanje ne može da se onemogući tokom korišćenja Boče sinhronizacije. Onemogućavanjem USB vezivanja biće onemogućena i Bočna sinhronizacija.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB vezivanje ne može da se omogući tokom korišćenja Boče sinhronizacije. Omogućavanjem USB vezivanja biće onemogućena Bočna sinhronizacija.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth deljenje preko vezivanja</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth deljenje preko vezivanja</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Deljenje Internet veze na ovom uređaju u toku…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Internet veza na uređaju deli se sa jednim uređajem</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Internet veza na uređaju deli se sa %d uređaja</string>

@@ -197,7 +197,6 @@
 
 .method public setOwnFtCapable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/model/rcs/RcsCaps;->mOwnFtCapable:Z
 

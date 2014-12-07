@@ -21,8 +21,6 @@
 
 .method public static createIntent(Ljava/lang/String;I)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -35,9 +33,6 @@
 
 .method public static createIntent(Ljava/lang/String;ILjava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -112,7 +107,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/billingprofile/instruments/LoggingFragmentActivity;->onCreate(Landroid/os/Bundle;)V
 

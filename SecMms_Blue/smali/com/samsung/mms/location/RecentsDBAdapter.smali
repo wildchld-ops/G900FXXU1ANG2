@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/PlaceDBAdapter;-><init>(Landroid/content/Context;)V
 
@@ -115,7 +114,6 @@
 
 .method public insertPlace(Lcom/nbi/map/data/Place;)J
     .locals 10
-    .param p1    # Lcom/nbi/map/data/Place;
 
     const-wide/16 v6, -0x1
 

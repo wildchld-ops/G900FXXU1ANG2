@@ -37,7 +37,6 @@
 
 .method public constructor <init>(Lorg/keyczar/interfaces/KeyczarReader;)V
     .locals 1
-    .param p1    # Lorg/keyczar/interfaces/KeyczarReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -57,7 +56,6 @@
 
 .method private checkFormatAndGetHash(Ljava/nio/ByteBuffer;)[B
     .locals 3
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/BadVersionException;
@@ -88,7 +86,6 @@
 
 .method private getVerifyingKey([B)Lorg/keyczar/KeyczarKey;
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyNotFoundException;
@@ -115,7 +112,6 @@
 # virtual methods
 .method isAcceptablePurpose(Lorg/keyczar/enums/KeyPurpose;)Z
     .locals 1
-    .param p1    # Lorg/keyczar/enums/KeyPurpose;
 
     sget-object v0, Lorg/keyczar/enums/KeyPurpose;->VERIFY:Lorg/keyczar/enums/KeyPurpose;
 
@@ -139,8 +135,6 @@
 
 .method public verify(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -158,9 +152,6 @@
 
 .method verify(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Z
     .locals 9
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Ljava/nio/ByteBuffer;
-    .param p3    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -276,8 +267,6 @@
 
 .method public verify([B[B)Z
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

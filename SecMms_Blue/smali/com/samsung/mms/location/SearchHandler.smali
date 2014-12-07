@@ -63,12 +63,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/app/Activity;ZLandroid/widget/ListView;Lcom/nbi/map/android/MapView;Lcom/samsung/mms/location/PlaceDBAdapter;Lcom/samsung/mms/location/SearchHandlerListener;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Z
-    .param p3    # Landroid/widget/ListView;
-    .param p4    # Lcom/nbi/map/android/MapView;
-    .param p5    # Lcom/samsung/mms/location/PlaceDBAdapter;
-    .param p6    # Lcom/samsung/mms/location/SearchHandlerListener;
 
     const/4 v2, 0x0
 
@@ -139,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/samsung/mms/location/SearchHandler;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/SearchHandler;
 
     iget-object v0, p0, Lcom/samsung/mms/location/SearchHandler;->mSearchingDialog:Landroid/app/ProgressDialog;
 
@@ -148,8 +141,6 @@
 
 .method static synthetic access$302(Lcom/samsung/mms/location/SearchHandler;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/samsung/mms/location/SearchHandler;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/samsung/mms/location/SearchHandler;->mSearchingDialog:Landroid/app/ProgressDialog;
 
@@ -158,7 +149,6 @@
 
 .method static synthetic access$400(Landroid/content/Context;)Ljava/util/Vector;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/mms/location/SearchHandler;->getNoResultsVector(Landroid/content/Context;)Ljava/util/Vector;
 
@@ -169,7 +159,6 @@
 
 .method static synthetic access$500(Lcom/samsung/mms/location/SearchHandler;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/mms/location/SearchHandler;
 
     iget-object v0, p0, Lcom/samsung/mms/location/SearchHandler;->mSearchString:Ljava/lang/String;
 
@@ -178,7 +167,6 @@
 
 .method private getNBIContext(Landroid/content/Context;)Lcom/nbi/common/NBIContext;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     invoke-static {}, Lcom/samsung/mms/location/LBSManager;->getInstance()Lcom/samsung/mms/location/LBSManager;
@@ -206,7 +194,6 @@
 
 .method private static getNoResultsVector(Landroid/content/Context;)Ljava/util/Vector;
     .locals 2
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -249,7 +236,6 @@
 
 .method public displayNoResultsDialog(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -322,7 +308,6 @@
 
 .method public displayNoSearches(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -373,11 +358,6 @@
 
 .method protected performSingleSearch(ILjava/lang/String;Lcom/nbi/map/data/Coordinates;Lcom/nbi/search/singlesearch/SuggestionSearchInformation;I)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/nbi/map/data/Coordinates;
-    .param p4    # Lcom/nbi/search/singlesearch/SuggestionSearchInformation;
-    .param p5    # I
 
     const/16 v5, 0xa
 

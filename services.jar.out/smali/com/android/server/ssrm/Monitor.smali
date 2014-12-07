@@ -304,8 +304,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/app/IActivityManager;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/IActivityManager;
 
     const-string v8, "Monitor"
 
@@ -1119,8 +1117,6 @@
 
 .method static synthetic access$000(Lcom/android/server/ssrm/Monitor;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/ssrm/Monitor;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/Monitor;->onWifiConnected(Z)V
 
@@ -1129,7 +1125,6 @@
 
 .method static synthetic access$100(Lcom/android/server/ssrm/Monitor;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/Monitor;
 
     invoke-direct {p0}, Lcom/android/server/ssrm/Monitor;->readThermistorFile()Z
 
@@ -1170,8 +1165,6 @@
 
 .method public static declared-synchronized getMonitorInstance(Landroid/content/Context;Landroid/app/IActivityManager;)Lcom/android/server/ssrm/Monitor;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/IActivityManager;
 
     const-class v1, Lcom/android/server/ssrm/Monitor;
 
@@ -1474,8 +1467,6 @@
 
 .method static handleSsrmCommand(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/server/ssrm/Monitor;->sCmdTable:Ljava/util/Hashtable;
 
@@ -1495,7 +1486,6 @@
 
 .method public static isConditionExist(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/ssrm/Monitor;->mMainsController:Lcom/android/server/ssrm/settings/MainController;
 
@@ -1518,8 +1508,6 @@
 
 .method static logOnAll(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -1528,8 +1516,6 @@
 
 .method static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/Monitor;->DEBUG:Z
 
@@ -1543,7 +1529,6 @@
 
 .method private onBatteryChanged(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, -0x1
 
@@ -1792,7 +1777,6 @@
 
 .method private onClearCoverOn(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "com.samsung.ssrm.COVER_OPEN"
 
@@ -1825,7 +1809,6 @@
 
 .method private onNetworkBoosterEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/ssrm/Monitor;->TAG:Ljava/lang/String;
 
@@ -1858,7 +1841,6 @@
 
 .method private onPackageReplaced(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -2163,7 +2145,6 @@
 
 .method private onSsrmIntentReceived(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -2269,7 +2250,6 @@
 
 .method private onSsrmPolicyUpdated(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "GMS_INTENT_EXIST"
 
@@ -2294,7 +2274,6 @@
 
 .method private onTetheringChanged(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -2352,7 +2331,6 @@
 
 .method private onUsbCharged(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string/jumbo v1, "state"
 
@@ -2398,7 +2376,6 @@
 
 .method private onWifiConnected(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2766,7 +2743,6 @@
 
 .method private static registerFgAppListener(Ljava/lang/Class;Z)V
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3299,7 +3275,6 @@
 
 .method public static sendMessage(Landroid/os/Message;)V
     .locals 1
-    .param p0    # Landroid/os/Message;
 
     sget-object v0, Lcom/android/server/ssrm/Monitor;->mMonitor:Lcom/android/server/ssrm/Monitor;
 
@@ -3327,7 +3302,6 @@
 
 .method private setForegroundPackageName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/String;
 
@@ -3340,7 +3314,6 @@
 
 .method static setNotifiedMaxBrightness(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/ssrm/Monitor;->mNotifiedMaxBrightness:I
 
@@ -3349,7 +3322,6 @@
 
 .method public static speak(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SSRMv2:Speak"
 
@@ -3373,7 +3345,6 @@
 
 .method private trimKnoxPrefix(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "sec_container_"
 
@@ -3401,7 +3372,6 @@
 
 .method private trimPostfix(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":"
 
@@ -3418,7 +3388,6 @@
 
 .method private updateKnoxSystemProperty(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "sec_container_"
 
@@ -4011,7 +3980,6 @@
 # virtual methods
 .method PowerStretchSet(I)V
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Lcom/android/server/ssrm/Monitor;->mPrevLucid:I
 
@@ -4061,7 +4029,6 @@
 
 .method checkIsHeavyApp(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -4137,9 +4104,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/ssrm/Monitor;->mMainsController:Lcom/android/server/ssrm/settings/MainController;
 
@@ -4155,7 +4119,6 @@
 
 .method enableAcl(Z)V
     .locals 5
-    .param p1    # Z
 
     const-string v0, "/sys/class/lcd/panel/siop_enable"
 
@@ -4198,8 +4161,6 @@
 
 .method fileWriteInt(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/ssrm/Monitor;->TAG:Ljava/lang/String;
 
@@ -4378,7 +4339,6 @@
 
 .method isSignaled(Lcom/android/server/ssrm/settings/Condition;)Z
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/Condition;
 
     if-nez p1, :cond_0
 
@@ -4397,8 +4357,6 @@
 
 .method final notifyLimitBrightness(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const-string v1, "max_brightness"
 
@@ -4489,7 +4447,6 @@
 
 .method onDockConnected(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/16 v0, 0xb
 
@@ -4532,8 +4489,6 @@
 
 .method onForegroundAppChanged(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -4714,14 +4669,12 @@
 
 .method public onInit(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method onPolarisChanged(Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Intent;
 
     const v10, 0x124f80
 
@@ -4862,7 +4815,6 @@
 
 .method onReceiveBroadcastIntent(Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -5326,7 +5278,6 @@
 
 .method onSipChanged(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/server/ssrm/Monitor$SIPStatusInfo;->getInstance()Lcom/android/server/ssrm/Monitor$SIPStatusInfo;
 
@@ -5832,8 +5783,6 @@
 
 .method signal(Lcom/android/server/ssrm/settings/Condition;Z)V
     .locals 1
-    .param p1    # Lcom/android/server/ssrm/settings/Condition;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -5851,7 +5800,6 @@
 
 .method updateFallbackTime(Z)V
     .locals 6
-    .param p1    # Z
 
     const-string v0, "hf"
 

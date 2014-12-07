@@ -116,7 +116,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -191,7 +190,6 @@
 
 .method static synthetic access$100(Lcom/android/server/ssrm/LteTpBooster;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
 
     iget-object v0, p0, Lcom/android/server/ssrm/LteTpBooster;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -200,8 +198,6 @@
 
 .method static synthetic access$102(Lcom/android/server/ssrm/LteTpBooster;Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 0
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
-    .param p1    # Landroid/net/NetworkInfo;
 
     iput-object p1, p0, Lcom/android/server/ssrm/LteTpBooster;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -210,8 +206,6 @@
 
 .method static synthetic access$202(Lcom/android/server/ssrm/LteTpBooster;Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/ssrm/LteTpBooster;->mContext:Landroid/content/Context;
 
@@ -220,7 +214,6 @@
 
 .method static synthetic access$300(Lcom/android/server/ssrm/LteTpBooster;)Lcom/android/server/ssrm/LteTpBooster$TrafficHandler;
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
 
     iget-object v0, p0, Lcom/android/server/ssrm/LteTpBooster;->mTrafficHandler:Lcom/android/server/ssrm/LteTpBooster$TrafficHandler;
 
@@ -229,7 +222,6 @@
 
 .method static synthetic access$400(Lcom/android/server/ssrm/LteTpBooster;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
 
     iget-boolean v0, p0, Lcom/android/server/ssrm/LteTpBooster;->mEnableTrafficStatsPoll:Z
 
@@ -238,8 +230,6 @@
 
 .method static synthetic access$402(Lcom/android/server/ssrm/LteTpBooster;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/LteTpBooster;->mEnableTrafficStatsPoll:Z
 
@@ -248,7 +238,6 @@
 
 .method static synthetic access$500(Lcom/android/server/ssrm/LteTpBooster;)I
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
 
     iget v0, p0, Lcom/android/server/ssrm/LteTpBooster;->mTrafficStatsPollToken:I
 
@@ -257,7 +246,6 @@
 
 .method static synthetic access$508(Lcom/android/server/ssrm/LteTpBooster;)I
     .locals 2
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
 
     iget v0, p0, Lcom/android/server/ssrm/LteTpBooster;->mTrafficStatsPollToken:I
 
@@ -270,7 +258,6 @@
 
 .method static synthetic access$600(Lcom/android/server/ssrm/LteTpBooster;)I
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
 
     iget v0, p0, Lcom/android/server/ssrm/LteTpBooster;->mPollingPeriod:I
 
@@ -279,7 +266,6 @@
 
 .method static synthetic access$700(Lcom/android/server/ssrm/LteTpBooster;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/ssrm/LteTpBooster;
 
     iget-object v0, p0, Lcom/android/server/ssrm/LteTpBooster;->mClients:Ljava/util/List;
 
@@ -572,8 +558,6 @@
 
 .method public logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/ssrm/LteTpBooster;->DEBUG:Z
 
@@ -700,7 +684,6 @@
 
 .method public undateDVFSLevel(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 

@@ -54,7 +54,6 @@
 
 .method static final startEmergencyModeService(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-static {p0}, Lcom/sec/android/emergencymode/EmergencyManager;->getInstance(Landroid/content/Context;)Lcom/sec/android/emergencymode/EmergencyManager;
@@ -98,7 +97,6 @@
 
 .method static final startFingerprintService(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -167,7 +165,6 @@
 
 .method static final startSystemUi(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -6592,8 +6589,6 @@
 
 .method reportWtf(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const-string v0, "SystemServer"
 

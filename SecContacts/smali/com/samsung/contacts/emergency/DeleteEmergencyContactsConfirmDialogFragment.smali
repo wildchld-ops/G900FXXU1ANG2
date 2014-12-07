@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;->removeEmergencyMessages()V
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;)Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment$Listener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;->mListener:Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment$Listener;
 
@@ -173,9 +171,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Ljava/util/ArrayList;Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment$Listener;Z)V
     .locals 3
-    .param p0    # Landroid/app/FragmentManager;
-    .param p2    # Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment$Listener;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -219,7 +214,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -230,7 +224,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -384,7 +377,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "deleteIds"
 
@@ -405,7 +397,6 @@
 
 .method public setListener(Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;->mListener:Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment$Listener;
 
@@ -414,7 +405,6 @@
 
 .method public setSelectAllChecked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/emergency/DeleteEmergencyContactsConfirmDialogFragment;->mIsSelectAllChecked:Z
 

@@ -14,9 +14,6 @@
 
 .method public static clamp(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     cmpg-float v0, p0, p1
 

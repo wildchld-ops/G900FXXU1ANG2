@@ -14,7 +14,6 @@
 
 .method public static getAdditionalPrediction(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     const-string v4, "\ufffd\ufffd"

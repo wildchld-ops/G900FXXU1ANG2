@@ -29,7 +29,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "mysettings.db"
 
@@ -106,7 +105,6 @@
 
 .method private checkSaveItem(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -353,7 +351,6 @@
 
 .method private initDB(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 9
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v7, "MySettingsProvider"
 
@@ -467,7 +464,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE favorite (_id INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , key STRING NOT NULL)"
 
@@ -497,9 +493,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "MySettingsProvider"
 

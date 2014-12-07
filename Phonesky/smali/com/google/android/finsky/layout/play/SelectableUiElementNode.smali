@@ -10,10 +10,6 @@
 # direct methods
 .method public constructor <init>(I[BLcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Lcom/google/android/finsky/analytics/PlayStore$PlayStoreUiElementInfo;
-    .param p4    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v0, 0x0
 
@@ -30,7 +26,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-boolean v1, p0, Lcom/google/android/finsky/layout/play/SelectableUiElementNode;->mSelected:Z
 
@@ -88,7 +83,6 @@
 
 .method public setNodeSelected(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/play/SelectableUiElementNode;->getParentNode()Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 

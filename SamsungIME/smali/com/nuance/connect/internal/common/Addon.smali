@@ -216,7 +216,6 @@
 
 .method public isInstalled(Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -259,7 +258,6 @@
 
 .method public run(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/nuance/connect/internal/common/Addon;->isInstalled(Landroid/content/Context;)Z
 

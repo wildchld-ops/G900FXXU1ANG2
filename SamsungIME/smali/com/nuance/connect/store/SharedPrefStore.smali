@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +77,6 @@
 
 .method public delete(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/store/SharedPrefStore;->prefs:Landroid/content/SharedPreferences;
 
@@ -98,7 +95,6 @@
 
 .method public exists(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/store/SharedPrefStore;->prefs:Landroid/content/SharedPreferences;
 
@@ -111,8 +107,6 @@
 
 .method public readBoolean(Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Boolean;
 
     move-object v0, p2
 
@@ -139,8 +133,6 @@
 
 .method public readBoolean(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     move v0, p2
 
@@ -171,8 +163,6 @@
 
 .method public readInt(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     move v0, p2
 
@@ -204,8 +194,6 @@
 
 .method public readLong(Ljava/lang/String;J)J
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     move-wide v0, p2
 
@@ -237,7 +225,6 @@
 
 .method public readObject(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -254,8 +241,6 @@
 
 .method public readString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/store/SharedPrefStore;->prefs:Landroid/content/SharedPreferences;
 
@@ -279,8 +264,6 @@
 
 .method public saveBoolean(Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p2}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
 
@@ -295,8 +278,6 @@
 
 .method public saveInt(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -311,8 +292,6 @@
 
 .method public saveLong(Ljava/lang/String;J)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-static {p2, p3}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -327,8 +306,6 @@
 
 .method public saveObject(Ljava/lang/String;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {p2}, Lcom/nuance/connect/util/Data;->serializeObject(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -343,8 +320,6 @@
 
 .method public saveString(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/store/SharedPrefStore;->prefs:Landroid/content/SharedPreferences;
 

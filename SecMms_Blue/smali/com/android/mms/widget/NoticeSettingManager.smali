@@ -63,7 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/widget/NoticeSettingManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/widget/NoticeSettingManager;
 
     iget-object v0, p0, Lcom/android/mms/widget/NoticeSettingManager;->TAG:Ljava/lang/String;
 
@@ -72,9 +71,6 @@
 
 .method public static addThreadCount(Landroid/content/Context;IZ)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {p0, p1}, Lcom/android/mms/widget/NoticeSettingManager;->getThreadCount(Landroid/content/Context;I)I
 
@@ -97,9 +93,6 @@
 
 .method public static getEditFlag(Landroid/content/Context;IZ)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     const-string v1, "widget_id"
 
@@ -120,7 +113,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/mms/widget/NoticeSettingManager;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/widget/NoticeSettingManager;->mFavoriteDetail:Lcom/android/mms/widget/NoticeSettingManager;
 
@@ -170,8 +162,6 @@
 
 .method public static getThreadCount(Landroid/content/Context;I)I
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -192,9 +182,6 @@
 
 .method public static setEditFlag(Landroid/content/Context;IZ)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     const-string v2, "widget_id"
 
@@ -221,9 +208,6 @@
 
 .method public static setThreadCount(Landroid/content/Context;II)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v2, 0xa
 

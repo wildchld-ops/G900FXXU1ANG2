@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>([Landroid/widget/ImageView;[Lcom/google/android/finsky/billing/creditcard/CreditCardType;)V
     .locals 2
-    .param p1    # [Landroid/widget/ImageView;
-    .param p2    # [Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +59,6 @@
 
 .method protected findIndex(Lcom/google/android/finsky/billing/creditcard/CreditCardType;)I
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
     const/4 v0, 0x0
 

@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/ArrayList;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -81,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/detail/LinkedContactAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/LinkedContactAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/LinkedContactAdapter;->mContext:Landroid/content/Context;
 
@@ -90,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/LinkedContactAdapter;)Lcom/samsung/contacts/detail/LinkedContactFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/LinkedContactAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/LinkedContactAdapter;->mFragment:Lcom/samsung/contacts/detail/LinkedContactFragment;
 
@@ -99,9 +96,6 @@
 
 .method private bindPhoto(Lcom/samsung/contacts/detail/LinkedContactAdapter$LinkedContactItemCache;IJ)V
     .locals 5
-    .param p1    # Lcom/samsung/contacts/detail/LinkedContactAdapter$LinkedContactItemCache;
-    .param p2    # I
-    .param p3    # J
 
     iput p2, p1, Lcom/samsung/contacts/detail/LinkedContactAdapter$LinkedContactItemCache;->position:I
 
@@ -140,8 +134,6 @@
 
 .method private bindView(Landroid/view/View;Lcom/samsung/contacts/detail/LinkedContactEntry;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/contacts/detail/LinkedContactEntry;
 
     const/4 v5, 0x1
 
@@ -223,7 +215,6 @@
 
 .method private newView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Lcom/samsung/contacts/detail/LinkedContactAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -338,7 +329,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/LinkedContactAdapter;->mLinkedContactEntryList:Ljava/util/ArrayList;
 
@@ -351,7 +341,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -360,9 +349,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -401,7 +387,6 @@
 
 .method setTargetFragment(Lcom/samsung/contacts/detail/LinkedContactFragment;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/LinkedContactFragment;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/LinkedContactAdapter;->mFragment:Lcom/samsung/contacts/detail/LinkedContactFragment;
 

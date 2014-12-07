@@ -101,7 +101,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -112,8 +111,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -124,9 +121,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -163,7 +157,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/HomeEditBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeEditBar;->mAppInfoContainer:Landroid/widget/FrameLayout;
 
@@ -172,7 +165,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/HomeEditBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeEditBar;->mNewFolderContainer:Landroid/widget/FrameLayout;
 
@@ -181,7 +173,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/HomeEditBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeEditBar;->mDisableContainer:Landroid/widget/FrameLayout;
 
@@ -190,7 +181,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/HomeEditBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeEditBar;->mUninstallContainer:Landroid/widget/FrameLayout;
 
@@ -199,7 +189,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/HomeEditBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeEditBar;->mAddToPersonalContainer:Landroid/widget/FrameLayout;
 
@@ -208,7 +197,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/HomeEditBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeEditBar;->mCancelContainer:Landroid/widget/FrameLayout;
 
@@ -217,7 +205,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/HomeEditBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeEditBar;->mDeleteContainer:Landroid/widget/FrameLayout;
 
@@ -226,8 +213,6 @@
 
 .method static synthetic access$702(Lcom/android/launcher2/HomeEditBar;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomeEditBar;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/HomeEditBar;->mShowPosted:Z
 
@@ -236,9 +221,6 @@
 
 .method private addToPersonal(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual {p3}, Landroid/view/DragEvent;->getAction()I
 
@@ -444,9 +426,6 @@
 
 .method private appInfo(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 12
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual {p1}, Lcom/android/launcher2/BaseItem;->getPackageName()Ljava/lang/String;
 
@@ -644,9 +623,6 @@
 
 .method private cancel(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual {p3}, Landroid/view/DragEvent;->getAction()I
 
@@ -848,9 +824,6 @@
 
 .method private delete(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 16
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual/range {p3 .. p3}, Landroid/view/DragEvent;->getAction()I
 
@@ -1193,9 +1166,6 @@
 
 .method private disable(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual {p3}, Landroid/view/DragEvent;->getAction()I
 
@@ -1401,7 +1371,6 @@
 
 .method private doAddToPersonal(Lcom/android/launcher2/BaseItem;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     if-nez p1, :cond_0
 
@@ -1552,7 +1521,6 @@
 
 .method public static findFirstDrawable(Landroid/widget/TextView;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p0    # Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
@@ -1582,7 +1550,6 @@
 
 .method private isSystemSignature(Lcom/android/launcher2/AppItem;)Z
     .locals 7
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     const/4 v3, 0x0
 
@@ -1667,9 +1634,6 @@
 
 .method private newFolder(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 10
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->CSCFEATURE_LAUNCHER_HOMESCREENEDITMODE:Z
 
@@ -1953,10 +1917,6 @@
 
 .method private setDrawableForOrientation(Landroid/widget/TextView;Landroid/graphics/drawable/Drawable;[Landroid/graphics/drawable/Drawable;I)V
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # [Landroid/graphics/drawable/Drawable;
-    .param p4    # I
 
     if-eqz p1, :cond_0
 
@@ -2212,11 +2172,6 @@
 
 .method private setStates(Landroid/widget/FrameLayout;Landroid/widget/TextView;ZZZ)V
     .locals 0
-    .param p1    # Landroid/widget/FrameLayout;
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-virtual {p1, p3}, Landroid/view/View;->setEnabled(Z)V
 
@@ -2231,7 +2186,6 @@
 
 .method private showDisableConfirmationDialog(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     sget-object v0, Lcom/android/launcher2/HomeEditBar$3;->$SwitchMap$com$android$launcher2$BaseItem$Type:[I
 
@@ -2267,9 +2221,6 @@
 
 .method private uninstall(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual {p3}, Landroid/view/DragEvent;->getAction()I
 
@@ -2493,10 +2444,6 @@
 # virtual methods
 .method public collectWorkspaceStateAnimators(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Workspace$State;Lcom/android/launcher2/Workspace$State;Lcom/android/launcher2/BaseItem;Ljava/util/ArrayList;)V
     .locals 18
-    .param p1    # Lcom/android/launcher2/Workspace;
-    .param p2    # Lcom/android/launcher2/Workspace$State;
-    .param p3    # Lcom/android/launcher2/Workspace$State;
-    .param p4    # Lcom/android/launcher2/BaseItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3063,14 +3010,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 6
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v3, 0x1
 
@@ -3228,14 +3173,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget v0, p0, Lcom/android/launcher2/HomeEditBar;->mCurrentAnimatorRes:I
 
@@ -3291,7 +3234,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3306,8 +3248,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/4 v3, 0x0
 

@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/PinnedHeaderListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -57,7 +56,6 @@
 
 .method public configurePinnedHeaders(Lcom/android/contacts/common/list/PinnedHeaderListView;)V
     .locals 11
-    .param p1    # Lcom/android/contacts/common/list/PinnedHeaderListView;
 
     const/4 v10, -0x1
 
@@ -225,7 +223,6 @@
 
 .method public getItemPlacementInSection(I)Lcom/android/contacts/common/list/IndexerListAdapter$Placement;
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -372,9 +369,6 @@
 
 .method public getPinnedHeaderView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Lcom/android/contacts/common/list/IndexerListAdapter;->isSectionHeaderDisplayEnabled()Z
 
@@ -426,7 +420,6 @@
 
 .method public getPositionForSection(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/IndexerListAdapter;->mIndexer:Landroid/widget/SectionIndexer;
 
@@ -449,7 +442,6 @@
 
 .method public getSectionForPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/common/list/IndexerListAdapter;->mIndexer:Landroid/widget/SectionIndexer;
 
@@ -510,7 +502,6 @@
 
 .method public setIndexedPartition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/common/list/IndexerListAdapter;->mIndexedPartition:I
 
@@ -519,7 +510,6 @@
 
 .method public setIndexer(Landroid/widget/SectionIndexer;)V
     .locals 1
-    .param p1    # Landroid/widget/SectionIndexer;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/IndexerListAdapter;->mIndexer:Landroid/widget/SectionIndexer;
 
@@ -538,7 +528,6 @@
 
 .method public setSectionHeaderDisplayEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/list/IndexerListAdapter;->mSectionHeaderDisplayEnabled:Z
 

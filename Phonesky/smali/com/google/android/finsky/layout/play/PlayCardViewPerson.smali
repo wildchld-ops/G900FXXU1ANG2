@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -39,8 +38,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/layout/PlayCardViewBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -61,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/play/PlayCardViewPerson;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardViewPerson;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardViewPerson;->mCircles:Ljava/util/List;
 
@@ -70,8 +66,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/play/PlayCardViewPerson;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardViewPerson;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayCardViewPerson;->mCircles:Ljava/util/List;
 
@@ -80,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/play/PlayCardViewPerson;)Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayCardViewPerson;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayCardViewPerson;->mGplusCircleStatusButton:Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
 
@@ -99,7 +92,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/google/android/finsky/layout/play/PlayCardViewPerson;->mGplusCircleStatusButton:Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
 
@@ -191,11 +183,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 31
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/layout/play/PlayCardViewPerson;->getPaddingLeft()I
 
@@ -649,8 +636,6 @@
 
 .method protected onMeasure(II)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual/range {p0 .. p1}, Lcom/google/android/finsky/layout/play/PlayCardViewPerson;->measureThumbnailSpanningWidth(I)V
 
@@ -1034,8 +1019,6 @@
 
 .method public setData(Ljava/lang/Object;I)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/google/android/play/layout/PlayCardViewBase;->setData(Ljava/lang/Object;I)V
 

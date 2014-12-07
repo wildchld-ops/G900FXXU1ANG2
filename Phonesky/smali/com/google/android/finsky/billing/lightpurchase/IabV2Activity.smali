@@ -24,9 +24,6 @@
 
 .method public static createIntent(Landroid/accounts/Account;Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;J)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseParams;
-    .param p2    # J
 
     const/4 v1, 0x0
 
@@ -129,7 +126,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/IabV2Activity;->getIntent()Landroid/content/Intent;
 
@@ -152,7 +148,6 @@
 
 .method protected onFinish(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/IabV2Activity;->getResponseCode(Lcom/google/android/finsky/billing/lightpurchase/PurchaseFragment;)Lcom/google/android/finsky/billing/iab/InAppBillingUtils$ResponseCode;
 

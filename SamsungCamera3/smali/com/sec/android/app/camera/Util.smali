@@ -160,7 +160,6 @@
 
 .method public static Assert(Z)V
     .locals 1
-    .param p0    # Z
 
     if-nez p0, :cond_0
 
@@ -176,8 +175,6 @@
 
 .method public static broadcastNewPicture(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -200,9 +197,6 @@
 
 .method public static broadcastNewPicture(Landroid/content/Context;Landroid/net/Uri;Landroid/os/Bundle;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -230,8 +224,6 @@
 
 .method public static broadcastNewVideo(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -246,9 +238,6 @@
 
 .method public static broadcastNewVideo(Landroid/content/Context;Landroid/net/Uri;Landroid/os/Bundle;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -276,8 +265,6 @@
 
 .method public static broadcastVoiceControl(Landroid/content/Context;Landroid/content/ContentValues;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentValues;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -302,8 +289,6 @@
 
 .method public static byteArrayToInt([BI)I
     .locals 5
-    .param p0    # [B
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ArrayIndexOutOfBoundsException;
@@ -346,8 +331,6 @@
 
 .method public static calculateOrientation(IZ)I
     .locals 4
-    .param p0    # I
-    .param p1    # Z
 
     move v0, p0
 
@@ -466,9 +449,6 @@
 
 .method public static clamp(III)I
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-le p0, p2, :cond_0
 
@@ -490,7 +470,6 @@
 
 .method public static closeSilently(Landroid/os/ParcelFileDescriptor;)V
     .locals 1
-    .param p0    # Landroid/os/ParcelFileDescriptor;
 
     if-nez p0, :cond_0
 
@@ -513,7 +492,6 @@
 
 .method public static closeSilently(Ljava/io/Closeable;)V
     .locals 1
-    .param p0    # Ljava/io/Closeable;
 
     if-nez p0, :cond_0
 
@@ -536,9 +514,6 @@
 
 .method private static computeInitialSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
     .locals 11
-    .param p0    # Landroid/graphics/BitmapFactory$Options;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -629,9 +604,6 @@
 
 .method public static computeSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
     .locals 3
-    .param p0    # Landroid/graphics/BitmapFactory$Options;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Lcom/sec/android/app/camera/Util;->computeInitialSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
 
@@ -663,7 +635,6 @@
 
 .method public static convertExifOrientationToMediaOrientation(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x6
 
@@ -700,7 +671,6 @@
 
 .method public static convertOriginFilePath(Ljava/lang/String;)Ljava/lang/String;
     .locals 20
-    .param p0    # Ljava/lang/String;
 
     const/4 v13, 0x0
 
@@ -951,7 +921,6 @@
 
 .method public static convertToExifInterfaceOrientation(I)I
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -995,7 +964,6 @@
 
 .method public static convertVirtualFilePath(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1059,7 +1027,6 @@
 
 .method public static createCaptureBitmap([B)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # [B
 
     invoke-static {}, Lcom/sec/android/app/camera/ImageManager;->getTempJpegPath()Ljava/lang/String;
 
@@ -1109,7 +1076,6 @@
 
 .method public static createSetAsIntent(Lcom/sec/android/app/camera/gallery/IImage;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Lcom/sec/android/app/camera/gallery/IImage;
 
     invoke-interface {p0}, Lcom/sec/android/app/camera/gallery/IImage;->fullSizeImageUri()Landroid/net/Uri;
 
@@ -1140,8 +1106,6 @@
 
 .method public static decodeRgbaBitmap([B[Ljava/lang/Integer;)Landroid/graphics/Bitmap;
     .locals 17
-    .param p0    # [B
-    .param p1    # [Ljava/lang/Integer;
 
     if-eqz p0, :cond_0
 
@@ -1532,10 +1496,6 @@
 
 .method public static distance(FFFF)F
     .locals 4
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     sub-float v0, p0, p2
 
@@ -1560,7 +1520,6 @@
 
 .method public static dpToPixel(I)I
     .locals 2
-    .param p0    # I
 
     sget v0, Lcom/sec/android/app/camera/Util;->sPixelDensity:F
 
@@ -1577,7 +1536,6 @@
 
 .method public static dumpParameters(Lcom/sec/android/seccamera/SecCamera$Parameters;)V
     .locals 4
-    .param p0    # Lcom/sec/android/seccamera/SecCamera$Parameters;
 
     invoke-virtual {p0}, Lcom/sec/android/seccamera/SecCamera$Parameters;->flatten()Ljava/lang/String;
 
@@ -1618,8 +1576,6 @@
 
 .method public static dumpRect(Landroid/graphics/RectF;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/graphics/RectF;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Util"
 
@@ -1696,7 +1652,6 @@
 
 .method public static enterLightsOutMode(Landroid/view/Window;)V
     .locals 2
-    .param p0    # Landroid/view/Window;
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1713,8 +1668,6 @@
 
 .method public static equals(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-eq p0, p1, :cond_2
 
@@ -1741,8 +1694,6 @@
 
 .method public static equals(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eq p0, p1, :cond_0
 
@@ -1766,7 +1717,6 @@
 
 .method public static fadeIn(Landroid/view/View;)V
     .locals 3
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
@@ -1801,7 +1751,6 @@
 
 .method public static fadeOut(Landroid/view/View;)V
     .locals 3
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
@@ -1836,8 +1785,6 @@
 
 .method public static floatDivide(FF)F
     .locals 4
-    .param p0    # F
-    .param p1    # F
 
     new-instance v0, Ljava/math/BigDecimal;
 
@@ -1868,8 +1815,6 @@
 
 .method public static floatEquals(DD)Z
     .locals 4
-    .param p0    # D
-    .param p2    # D
 
     sub-double v0, p0, p2
 
@@ -1896,8 +1841,6 @@
 
 .method public static floatMulitiply(FF)F
     .locals 4
-    .param p0    # F
-    .param p1    # F
 
     new-instance v0, Ljava/math/BigDecimal;
 
@@ -1924,7 +1867,6 @@
 
 .method public static getCameraFacing(I)I
     .locals 2
-    .param p0    # I
 
     new-instance v0, Lcom/sec/android/seccamera/SecCamera$CameraInfo;
 
@@ -1939,7 +1881,6 @@
 
 .method public static getCameraFacingIntentExtras(Landroid/app/Activity;)I
     .locals 7
-    .param p0    # Landroid/app/Activity;
 
     const/4 v6, -0x1
 
@@ -2001,7 +1942,6 @@
 
 .method public static getCameraOrientation(I)I
     .locals 2
-    .param p0    # I
 
     new-instance v0, Lcom/sec/android/seccamera/SecCamera$CameraInfo;
 
@@ -2016,8 +1956,6 @@
 
 .method public static getDisplayOrientation(II)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Lcom/sec/android/seccamera/SecCamera$CameraInfo;
 
@@ -2058,7 +1996,6 @@
 
 .method public static getDisplayRotation(Landroid/app/Activity;)I
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -2106,7 +2043,6 @@
 
 .method public static getHelpVersion(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -2148,7 +2084,6 @@
 
 .method public static getMaxPreviewSize(Landroid/app/Activity;Ljava/util/List;)Landroid/graphics/Point;
     .locals 6
-    .param p0    # Landroid/app/Activity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2261,8 +2196,6 @@
 
 .method public static getOptimalPreviewSize(Landroid/app/Activity;Ljava/util/List;D)Lcom/sec/android/seccamera/SecCamera$Size;
     .locals 15
-    .param p0    # Landroid/app/Activity;
-    .param p2    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2444,7 +2377,6 @@
 
 .method public static getOptimalVideoSnapshotPictureSize(Ljava/util/List;D)Lcom/sec/android/seccamera/SecCamera$Size;
     .locals 11
-    .param p1    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2564,7 +2496,6 @@
 
 .method public static getOrientationFromtDisplayRotation(Landroid/app/Activity;)I
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -2626,10 +2557,6 @@
 
 .method public static getTransformedEventByScreenOrientation(Landroid/view/MotionEvent;III)Landroid/view/MotionEvent;
     .locals 3
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -2701,8 +2628,6 @@
 
 .method public static hasPackage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -2791,7 +2716,6 @@
 
 .method public static initialize(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -2844,8 +2768,6 @@
 
 .method public static initializeScreenBrightness(Landroid/view/Window;Landroid/content/ContentResolver;)V
     .locals 4
-    .param p0    # Landroid/view/Window;
-    .param p1    # Landroid/content/ContentResolver;
 
     const-string v2, "screen_brightness_mode"
 
@@ -2875,7 +2797,6 @@
 
 .method private static isBackCameraIntent(I)Z
     .locals 1
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -2937,7 +2858,6 @@
 
 .method public static isDeviceLandscape(Landroid/app/Activity;)Z
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     const/4 v1, 0x1
 
@@ -2971,7 +2891,6 @@
 
 .method private static isFrontCameraIntent(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -2988,7 +2907,6 @@
 
 .method public static isKNOXMode(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -3056,7 +2974,6 @@
 
 .method public static isMmsCapable(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -3128,8 +3045,6 @@
 
 .method public static isPkgEnabled(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3235,7 +3150,6 @@
 
 .method public static isSupportHelpMenu(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -3315,8 +3229,6 @@
 
 .method public static isUriValid(Landroid/net/Uri;Landroid/content/ContentResolver;)Z
     .locals 6
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x0
 
@@ -3376,12 +3288,6 @@
 
 .method public static makeBitmap(IILandroid/net/Uri;Landroid/content/ContentResolver;Landroid/os/ParcelFileDescriptor;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentResolver;
-    .param p4    # Landroid/os/ParcelFileDescriptor;
-    .param p5    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v5, -0x1
 
@@ -3511,11 +3417,6 @@
 
 .method public static makeBitmap(IILandroid/net/Uri;Landroid/content/ContentResolver;Z)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentResolver;
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -3574,10 +3475,6 @@
 
 .method public static makeBitmap(IILandroid/os/ParcelFileDescriptor;Z)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -3607,8 +3504,6 @@
 
 .method public static makeBitmap(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     :try_start_0
     new-instance v1, Landroid/graphics/BitmapFactory$Options;
@@ -3666,8 +3561,6 @@
 
 .method public static makeBitmap([BI)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # [B
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -3751,8 +3644,6 @@
 
 .method private static makeInputStream(Landroid/net/Uri;Landroid/content/ContentResolver;)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/ContentResolver;
 
     :try_start_0
     const-string v1, "r"
@@ -3776,9 +3667,6 @@
 
 .method public static moveAnimatedPhotoFile(Ljava/io/File;Ljava/io/File;Landroid/content/Context;)V
     .locals 14
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4113,9 +4001,6 @@
 
 .method public static final multiplyMM([F[F[F)V
     .locals 9
-    .param p0    # [F
-    .param p1    # [F
-    .param p2    # [F
 
     const/4 v8, 0x4
 
@@ -4853,7 +4738,6 @@
 
 .method public static nextPowerOf2(I)I
     .locals 1
-    .param p0    # I
 
     add-int/lit8 p0, p0, -0x1
 
@@ -4884,8 +4768,6 @@
 
 .method public static openCamera(Landroid/app/Activity;I)Lcom/sec/android/seccamera/SecCamera;
     .locals 4
-    .param p0    # Landroid/app/Activity;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/android/app/camera/CameraHardwareException;,
@@ -4956,9 +4838,6 @@
 
 .method public static pointInView(FFLandroid/view/View;)Z
     .locals 4
-    .param p0    # F
-    .param p1    # F
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -5031,11 +4910,6 @@
 
 .method public static prepareMatrix(Landroid/graphics/Matrix;ZIII)V
     .locals 4
-    .param p0    # Landroid/graphics/Matrix;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v3, 0x44fa0000
 
@@ -5084,8 +4958,6 @@
 
 .method public static rectFToRect(Landroid/graphics/RectF;Landroid/graphics/Rect;)V
     .locals 1
-    .param p0    # Landroid/graphics/RectF;
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -5124,8 +4996,6 @@
 
 .method public static rotate(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5138,9 +5008,6 @@
 
 .method public static rotateAndMirror(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
     .locals 8
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # Z
 
     const/high16 v3, 0x40000000
 
@@ -5295,7 +5162,6 @@
 
 .method public static roundOrientation(I)I
     .locals 1
-    .param p0    # I
 
     add-int/lit8 v0, p0, 0x2d
 
@@ -5310,8 +5176,6 @@
 
 .method public static roundOrientation(II)I
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5365,8 +5229,6 @@
 
 .method private static saveDataToFile(Ljava/lang/String;[B)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -5463,8 +5325,6 @@
 
 .method public static setGpsParameters(Lcom/sec/android/seccamera/SecCamera$Parameters;Landroid/location/Location;)V
     .locals 13
-    .param p0    # Lcom/sec/android/seccamera/SecCamera$Parameters;
-    .param p1    # Landroid/location/Location;
 
     const-wide/16 v11, 0x3e8
 
@@ -5577,9 +5437,6 @@
 
 .method public static setRotationParameter(Lcom/sec/android/seccamera/SecCamera$Parameters;II)V
     .locals 4
-    .param p0    # Lcom/sec/android/seccamera/SecCamera$Parameters;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -5629,9 +5486,6 @@
 
 .method public static showFatalErrorAndFinish(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/sec/android/app/camera/Util$2;
 
@@ -5668,8 +5522,6 @@
 
 .method public static slideIn(Landroid/view/View;I)Landroid/view/animation/Animation;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5763,8 +5615,6 @@
 
 .method public static slideOut(Landroid/view/View;I)Landroid/view/animation/Animation;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5858,11 +5708,6 @@
 
 .method public static startBackgroundJob(Lcom/sec/android/app/camera/MonitoredActivity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Runnable;Landroid/os/Handler;)V
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/MonitoredActivity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # Landroid/os/Handler;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -5879,12 +5724,6 @@
 
 .method public static transform(Landroid/graphics/Matrix;Landroid/graphics/Bitmap;IIZZ)Landroid/graphics/Bitmap;
     .locals 28
-    .param p0    # Landroid/graphics/Matrix;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -6205,8 +6044,6 @@
 
 .method public static viewUri(Landroid/net/Uri;Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

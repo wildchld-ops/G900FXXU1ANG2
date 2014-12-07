@@ -181,8 +181,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/net/wifi/WifiNative;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/WifiNative;
 
     const/4 v1, 0x0
 
@@ -257,8 +255,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/WifiConfigStore;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiConfigStore;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/WifiConfigStore;->localLog(Ljava/lang/String;)V
 
@@ -275,7 +271,6 @@
 
 .method static synthetic access$400(Landroid/net/wifi/WifiConfiguration;)I
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-static {p0}, Landroid/net/wifi/WifiConfigStore;->configKey(Landroid/net/wifi/WifiConfiguration;)I
 
@@ -286,7 +281,6 @@
 
 .method private addOrUpdateNetworkNative(Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/NetworkUpdateResult;
     .locals 28
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     sget-boolean v25, Landroid/net/wifi/WifiConfigStore;->VDBG:Z
 
@@ -3243,7 +3237,6 @@
 
 .method private static configKey(Landroid/net/wifi/WifiConfiguration;)I
     .locals 8
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/16 v7, 0x8
 
@@ -3496,7 +3489,6 @@
 
 .method private convertToQuotedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3527,7 +3519,6 @@
 
 .method private copyIpSettingsFromConfig(Landroid/net/wifi/WifiConfiguration;)Landroid/net/LinkProperties;
     .locals 6
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     new-instance v3, Landroid/net/LinkProperties;
 
@@ -3630,8 +3621,6 @@
 
 .method private static decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -3715,9 +3704,6 @@
 
 .method private edmCanEnableNetwork(IZZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v1, 0x1
 
@@ -3764,7 +3750,6 @@
 
 .method private localLog(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/wifi/WifiConfigStore;->mLocalLog:Landroid/util/LocalLog;
 
@@ -3780,8 +3765,6 @@
 
 .method private localLog(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mLocalLog:Landroid/util/LocalLog;
 
@@ -3888,7 +3871,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "WifiConfigStore"
 
@@ -3899,7 +3881,6 @@
 
 .method private loge(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "WifiConfigStore"
 
@@ -3910,8 +3891,6 @@
 
 .method private lookupString(Ljava/lang/String;[Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     array-length v1, p2
 
@@ -3972,8 +3951,6 @@
 
 .method private makeString(Ljava/util/BitSet;[Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/util/BitSet;
-    .param p2    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -4055,7 +4032,6 @@
 
 .method private markAllNetworksDisabledExcept(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -4923,7 +4899,6 @@
 
 .method private readNetworkVariables(Landroid/net/wifi/WifiConfiguration;)V
     .locals 18
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     move-object/from16 v0, p1
 
@@ -6780,7 +6755,6 @@
 
 .method private removeConfigAndSendBroadcastIfNeeded(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -6859,7 +6833,6 @@
 
 .method private removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -6927,8 +6900,6 @@
 
 .method private sendConfiguredNetworksChangedBroadcast(Landroid/net/wifi/WifiConfiguration;I)V
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -7009,8 +6980,6 @@
 
 .method private writeIpAndProxyConfigurationsOnChange(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/NetworkUpdateResult;
     .locals 19
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v8, 0x0
 
@@ -7639,7 +7608,6 @@
 # virtual methods
 .method addHs20Network(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiConfigStore;->addHs20NetworkNative(Ljava/lang/String;)I
 
@@ -7681,7 +7649,6 @@
 
 .method addHs20NetworkNative(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/net/wifi/WifiConfigStore;->mWifiNative:Landroid/net/wifi/WifiNative;
 
@@ -7737,7 +7704,6 @@
 
 .method addOrUpdateNetwork(Landroid/net/wifi/WifiConfiguration;)I
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     sget-boolean v1, Landroid/net/wifi/WifiConfigStore;->VDBG:Z
 
@@ -8005,7 +7971,6 @@
 
 .method clearLinkProperties(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -8141,7 +8106,6 @@
 
 .method disableNetwork(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -8154,8 +8118,6 @@
 
 .method disableNetwork(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -8276,10 +8238,6 @@
 
 .method disablePoorNetwork(IILjava/lang/String;Z)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -8399,9 +8357,6 @@
 
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, "WifiConfigStore"
 
@@ -8813,8 +8768,6 @@
 
 .method enableNetwork(IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/net/wifi/WifiConfigStore;->enableNetworkWithoutBroadcast(IZ)Z
 
@@ -8895,8 +8848,6 @@
 
 .method enableNetworkWithoutBroadcast(IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -8974,7 +8925,6 @@
 
 .method enableNetworks(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -9074,7 +9024,6 @@
 
 .method forgetNetwork(I)Z
     .locals 2
-    .param p1    # I
 
     sget-boolean v0, Landroid/net/wifi/WifiConfigStore;->VDBG:Z
 
@@ -9191,7 +9140,6 @@
 
 .method getLinkProperties(I)Landroid/net/LinkProperties;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -9224,7 +9172,6 @@
 
 .method getProxyProperties(I)Landroid/net/ProxyProperties;
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiConfigStore;->getLinkProperties(I)Landroid/net/LinkProperties;
 
@@ -9251,7 +9198,6 @@
 
 .method getSecuredNetworkInfo(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     sget-boolean v2, Landroid/net/wifi/WifiConfigStore;->DBG:Z
 
@@ -9416,7 +9362,6 @@
 
 .method getSpecificNetwork(I)Landroid/net/wifi/WifiConfiguration;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -9447,7 +9392,6 @@
 
 .method isEapNoPasswordRequire(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v0, 0x0
 
@@ -9456,7 +9400,6 @@
 
 .method isEnterpriseAp(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -9543,7 +9486,6 @@
 
 .method isIBSS(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -9578,7 +9520,6 @@
 
 .method isSkipInternetCheck(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -9609,8 +9550,6 @@
 
 .method isUsingSamsungFlag(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -9647,7 +9586,6 @@
 
 .method isUsingStaticIp(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -9682,7 +9620,6 @@
 
 .method isVendorSpecificSsid(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -10689,7 +10626,6 @@
 
 .method removeNetwork(I)Z
     .locals 2
-    .param p1    # I
 
     sget-boolean v1, Landroid/net/wifi/WifiConfigStore;->VDBG:Z
 
@@ -10728,7 +10664,6 @@
 
 .method saveNetwork(Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/NetworkUpdateResult;
     .locals 9
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v5, 0x2
 
@@ -10854,7 +10789,6 @@
 
 .method selectNetwork(I)Z
     .locals 14
-    .param p1    # I
 
     const/4 v1, 0x3
 
@@ -11383,8 +11317,6 @@
 
 .method setLinkProperties(ILandroid/net/LinkProperties;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/LinkProperties;
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -11421,7 +11353,6 @@
 
 .method startWpsPbc(Landroid/net/wifi/WpsInfo;)Landroid/net/wifi/WpsResult;
     .locals 3
-    .param p1    # Landroid/net/wifi/WpsInfo;
 
     new-instance v0, Landroid/net/wifi/WpsResult;
 
@@ -11460,7 +11391,6 @@
 
 .method startWpsWithPinFromAccessPoint(Landroid/net/wifi/WpsInfo;)Landroid/net/wifi/WpsResult;
     .locals 4
-    .param p1    # Landroid/net/wifi/WpsInfo;
 
     new-instance v0, Landroid/net/wifi/WpsResult;
 
@@ -11501,7 +11431,6 @@
 
 .method startWpsWithPinFromDevice(Landroid/net/wifi/WpsInfo;)Landroid/net/wifi/WpsResult;
     .locals 3
-    .param p1    # Landroid/net/wifi/WpsInfo;
 
     new-instance v0, Landroid/net/wifi/WpsResult;
 
@@ -11548,8 +11477,6 @@
 
 .method updateAutojoin(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v1, Landroid/net/wifi/WifiConfigStore;->WIFI_AUTOJOIN:Z
 
@@ -11714,7 +11641,6 @@
 
 .method updateDisabledPoorNetworkStatus(Landroid/net/wifi/WifiConfiguration;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     sget-boolean v1, Landroid/net/wifi/WifiConfigStore;->DBG:Z
 
@@ -11804,7 +11730,6 @@
 
 .method updateHs20Network(Landroid/net/wifi/WifiConfiguration;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iget v0, p1, Landroid/net/wifi/WifiConfiguration;->networkId:I
 
@@ -11848,8 +11773,6 @@
 
 .method updateSkipInternetCheck(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 
@@ -11876,8 +11799,6 @@
 
 .method updateStatus(ILandroid/net/NetworkInfo$DetailedState;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkInfo$DetailedState;
 
     const/4 v1, -0x1
 
@@ -11941,8 +11862,6 @@
 
 .method updateUsableInternet(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/net/wifi/WifiConfigStore;->mConfiguredNetworks:Ljava/util/HashMap;
 

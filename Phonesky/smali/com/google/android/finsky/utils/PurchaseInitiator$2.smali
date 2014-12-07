@@ -48,7 +48,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 11
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const-wide/16 v7, -0x1
 

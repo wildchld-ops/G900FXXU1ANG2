@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView$3;->val$actions:Lcom/google/android/finsky/activities/AppActionAnalyzer;
 

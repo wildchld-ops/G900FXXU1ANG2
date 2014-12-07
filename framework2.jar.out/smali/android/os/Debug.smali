@@ -145,7 +145,6 @@
 
 .method public static final cacheRegisterMap(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Ldalvik/system/VMDebug;->cacheRegisterMap(Ljava/lang/String;)Z
 
@@ -156,7 +155,6 @@
 
 .method public static changeDebugPort(I)V
     .locals 0
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -165,7 +163,6 @@
 
 .method public static countInstancesOfClass(Ljava/lang/Class;)J
     .locals 2
-    .param p0    # Ljava/lang/Class;
 
     const/4 v0, 0x1
 
@@ -178,7 +175,6 @@
 
 .method public static dumpHprofData(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -192,8 +188,6 @@
 
 .method public static dumpHprofData(Ljava/lang/String;Ljava/io/FileDescriptor;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -232,9 +226,6 @@
 
 .method public static dumpService(Ljava/lang/String;Ljava/io/FileDescriptor;[Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -317,7 +308,6 @@
 
 .method private static fieldTypeMatches(Ljava/lang/reflect/Field;Ljava/lang/Class;)Z
     .locals 6
-    .param p0    # Ljava/lang/reflect/Field;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -425,8 +415,6 @@
 
 .method private static getCaller([Ljava/lang/StackTraceElement;I)Ljava/lang/String;
     .locals 3
-    .param p0    # [Ljava/lang/StackTraceElement;
-    .param p1    # I
 
     add-int/lit8 v1, p1, 0x4
 
@@ -493,7 +481,6 @@
 
 .method public static getCallers(I)Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -538,8 +525,6 @@
 
 .method public static getCallers(II)Ljava/lang/String;
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -586,8 +571,6 @@
 
 .method public static getCallers(ILjava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -883,9 +866,6 @@
 
 .method private static modifyFieldIfSet(Ljava/lang/reflect/Field;Lcom/android/internal/util/TypedProperties;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/reflect/Field;
-    .param p1    # Lcom/android/internal/util/TypedProperties;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
 
@@ -1158,7 +1138,6 @@
 
 .method public static printLoadedClasses(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Ldalvik/system/VMDebug;->printLoadedClasses(I)V
 
@@ -1328,7 +1307,6 @@
 
 .method public static setAllocationLimit(I)I
     .locals 1
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1356,7 +1334,6 @@
 
 .method public static setFieldsOn(Ljava/lang/Class;Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1410,7 +1387,6 @@
 
 .method public static setGlobalAllocationLimit(I)I
     .locals 1
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1443,7 +1419,6 @@
 
 .method public static startMethodTracing(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1454,8 +1429,6 @@
 
 .method public static startMethodTracing(Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1466,9 +1439,6 @@
 
 .method public static startMethodTracing(Ljava/lang/String;II)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     move-object v0, p0
 
@@ -1535,10 +1505,6 @@
 
 .method public static startMethodTracing(Ljava/lang/String;Ljava/io/FileDescriptor;II)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Ldalvik/system/VMDebug;->startMethodTracing(Ljava/lang/String;Ljava/io/FileDescriptor;II)V
 
@@ -1547,10 +1513,6 @@
 
 .method public static startMethodTracingDdms(IIZI)V
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Ldalvik/system/VMDebug;->startMethodTracingDdms(IIZI)V
 

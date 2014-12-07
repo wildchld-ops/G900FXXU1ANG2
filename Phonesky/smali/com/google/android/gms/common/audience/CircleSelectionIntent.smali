@@ -14,7 +14,6 @@
 # direct methods
 .method public static getSelectedCirclesFromResult(Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

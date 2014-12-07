@@ -1380,7 +1380,7 @@ Du kan også få vist eller skjule håndtaget for multi-vinduet ved trykke på t
     <string name="usb_tethering_errored_subtext">Fejl i USB-internetdeling</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB-deling kan ikke deaktiveres, når SideSync anvendes. Deaktivering af USB-deling deaktiverer SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB-deling kan ikke aktiveres, når SideSync anvendes. Aktivering af USB-deling deaktiverer SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-deling</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-deling</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Del denne enheds internetforbindelse …</string>
     <string name="bluetooth_tethering_device_connected_subtext">Enheds internetforbindelse delt med 1 enhed</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Enheds internetforbindelse delt med %d enheder</string>

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/GetTocHelper$4;->val$listener:Lcom/google/android/finsky/utils/GetTocHelper$Listener;
 

@@ -38,7 +38,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,7 +59,6 @@
 # virtual methods
 .method public get(I)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -96,7 +94,6 @@
 
 .method public get(Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

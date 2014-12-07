@@ -597,7 +597,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->getCurrentLangauge()I
 
@@ -608,7 +607,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mHandler:Landroid/os/Handler;
 
@@ -617,7 +615,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->clearLanguagePackList()V
 
@@ -626,8 +623,6 @@
 
 .method static synthetic access$1100(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->reinstallLanguagePack(Lcom/touchtype_fluency/util/LanguagePack;)V
 
@@ -636,8 +631,6 @@
 
 .method static synthetic access$1200(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->checkDefaultLanguageForSwift(Lcom/touchtype_fluency/util/LanguagePack;)V
 
@@ -646,7 +639,6 @@
 
 .method static synthetic access$1300(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)Lcom/diotek/ime/framework/inputmode/InputModeManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -679,8 +671,6 @@
 
 .method static synthetic access$1702(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mActiveIndex:I
 
@@ -689,8 +679,6 @@
 
 .method static synthetic access$1802(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mActiveIndex:I
 
@@ -699,8 +687,6 @@
 
 .method static synthetic access$1902(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mActiveIndex:I
 
@@ -709,8 +695,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;I)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->clearLoadLangugagePackFlag(I)Z
 
@@ -721,8 +705,6 @@
 
 .method static synthetic access$2000(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;Ljava/io/File;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->removeOldLanguagePackFolder(Ljava/io/File;)V
 
@@ -731,7 +713,6 @@
 
 .method static synthetic access$2100(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->removeOldKPMFolder()V
 
@@ -740,7 +721,6 @@
 
 .method static synthetic access$2200(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->removeKPMExFolder()V
 
@@ -749,8 +729,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mLoadingLanguagePacks:Z
 
@@ -759,7 +737,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->setSessionPrivateSetting()V
 
@@ -768,7 +745,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -777,7 +753,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->updateSuggestionUIThread()V
 
@@ -786,7 +761,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 
     iget v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->downloadingLPCount:I
 
@@ -795,8 +769,6 @@
 
 .method static synthetic access$702(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->downloadingLPCount:I
 
@@ -813,8 +785,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->countDownloadingLanguagePack(Z)V
 
@@ -823,9 +793,6 @@
 
 .method private checkCurrentSequenceForJapanese(Ljava/lang/StringBuilder;[I[I)V
     .locals 21
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # [I
-    .param p3    # [I
 
     if-eqz p1, :cond_0
 
@@ -1649,7 +1616,6 @@
 
 .method private checkDefaultLanguageForSwift(Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1679,9 +1645,6 @@
 
 .method private checkLanguageEnabledForSwift(Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/LanguagePack;Landroid/content/SharedPreferences;)Z
     .locals 11
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p2    # Lcom/touchtype_fluency/util/LanguagePack;
-    .param p3    # Landroid/content/SharedPreferences;
 
     const/4 v0, 0x0
 
@@ -1884,7 +1847,6 @@
 
 .method private declared-synchronized clearLoadLangugagePackFlag(I)Z
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1925,7 +1887,6 @@
 
 .method private convertCodeforChinese(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -2124,7 +2085,6 @@
 
 .method private declared-synchronized countDownloadingLanguagePack(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -2166,7 +2126,6 @@
 
 .method private createSwiftKeySession(Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;)Z
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
     const/4 v1, 0x0
 
@@ -2261,7 +2220,6 @@
 
 .method public static getLanguagePackManager(Landroid/content/Context;)Lcom/touchtype_fluency/util/LanguagePackManager;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     sget-object v2, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->LANGUAGE_PACK_DB_DIR:Ljava/lang/String;
 
@@ -2384,7 +2342,6 @@
 
 .method private getSelectedLanguageList([Lcom/diotek/ime/framework/common/Language;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
     .locals 10
-    .param p1    # [Lcom/diotek/ime/framework/common/Language;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -2539,10 +2496,6 @@
 
 .method public static getSuggestions(Ljava/util/ArrayList;ILjava/lang/String;Ljava/lang/String;I)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3176,7 +3129,6 @@
 
 .method public static isPreloadLanguagePack(Lcom/touchtype_fluency/util/LanguagePack;)Z
     .locals 2
-    .param p0    # Lcom/touchtype_fluency/util/LanguagePack;
 
     invoke-interface {p0}, Lcom/touchtype_fluency/util/LanguagePack;->getPreinstallFile()Ljava/io/File;
 
@@ -3292,7 +3244,6 @@
 
 .method private loadKeyPressModelByThread(Lcom/diotek/ime/framework/view/Keyboard;)V
     .locals 11
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
 
     const/16 v10, 0x8
 
@@ -3465,7 +3416,6 @@
 
 .method private loadLanguageModels(Z)V
     .locals 37
-    .param p1    # Z
 
     sget-object v3, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mLanguagePackManager:Lcom/touchtype_fluency/util/LanguagePackManager;
 
@@ -4368,7 +4318,6 @@
 
 .method private reinstallLanguagePack(Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     const/4 v0, 0x1
 
@@ -4737,7 +4686,6 @@
 
 .method private removeOldLanguagePackFolder(Ljava/io/File;)V
     .locals 6
-    .param p1    # Ljava/io/File;
 
     if-eqz p1, :cond_0
 
@@ -4824,8 +4772,6 @@
 
 .method private setChineseInputType(Lcom/touchtype_fluency/util/LanguagePack;Z)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -4956,8 +4902,6 @@
 
 .method private setJapaneseInputType(Lcom/touchtype_fluency/util/LanguagePack;Z)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -4999,7 +4943,6 @@
 
 .method private declared-synchronized setLoadLangugagePackFlag(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -5026,9 +4969,6 @@
 
 .method private setParameter(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -5770,7 +5710,6 @@
 
 .method private skipReprospectiveCorrection(Ljava/lang/StringBuilder;)Z
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v1, 0x1
 
@@ -5830,8 +5769,6 @@
 
 .method private updateRetrospectiveCorrection(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/Sequence;)I
     .locals 5
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/Sequence;
 
     const/4 v2, 0x1
 
@@ -6026,7 +5963,6 @@
 
 .method public breakCurrentWord(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -6137,9 +6073,6 @@
 
 .method public checkCurrentSequence(Ljava/lang/StringBuilder;[I[I)V
     .locals 22
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # [I
-    .param p3    # [I
 
     move-object/from16 v0, p0
 
@@ -7301,7 +7234,6 @@
 
 .method public doNextWordPredictionForXt9(Z)I
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -7316,7 +7248,6 @@
 
 .method public doNoteWordDoneForXt9(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mVerbatim:Ljava/lang/String;
 
@@ -7354,9 +7285,6 @@
 
 .method public doRecaptureForXt9(Ljava/lang/String;SZ)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->updateSelectList()I
 
@@ -7367,7 +7295,6 @@
 
 .method public fullToHalfWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -7380,7 +7307,6 @@
 
 .method public getActiveIndex([I)I
     .locals 2
-    .param p1    # [I
 
     const/4 v1, 0x0
 
@@ -7393,7 +7319,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;)I
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v5, 0x0
 
@@ -7471,8 +7396,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;I)I
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -7536,7 +7459,6 @@
 
 .method public getCurrentInputBuffer(Ljava/lang/StringBuilder;)V
     .locals 1
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -7582,8 +7504,6 @@
 
 .method public getKeyPositionByTap(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mLoadingLanguagePacks:Z
 
@@ -7645,7 +7565,6 @@
 
 .method public getPredictWord(Ljava/lang/CharSequence;Ljava/util/ArrayList;)I
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7674,7 +7593,6 @@
 
 .method public getSuggestion(Ljava/util/ArrayList;Ljava/lang/String;)I
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7694,7 +7612,6 @@
 
 .method public getSuggestion(Ljava/util/ArrayList;Z)I
     .locals 18
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8351,8 +8268,6 @@
 
 .method public getSwiftKeyHangulCharSequenceHwKeyboard(ILjava/lang/StringBuilder;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/StringBuilder;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -8399,7 +8314,6 @@
 
 .method public halfToFullWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -8412,7 +8326,6 @@
 
 .method public hiraganaToKatakana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -8582,7 +8495,6 @@
 
 .method public inputKey(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x5
 
@@ -8611,8 +8523,6 @@
 
 .method public inputKey(ILandroid/graphics/PointF;)I
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     const/4 v8, -0x5
 
@@ -8762,7 +8672,6 @@
 
 .method public inputKeyWithoutBuild(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x5
 
@@ -8789,8 +8698,6 @@
 
 .method public inputKeyWithoutBuild(ILandroid/graphics/PointF;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     const/4 v4, -0x5
 
@@ -8892,7 +8799,6 @@
 
 .method public inputString(Ljava/lang/StringBuilder;)I
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -8911,9 +8817,6 @@
 
 .method public isAutoAcceptBeforeTrace([Landroid/graphics/PointF;I[Z)Z
     .locals 2
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
-    .param p3    # [Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -8938,7 +8841,6 @@
 
 .method public isContainInLanguageDB(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -8951,7 +8853,6 @@
 
 .method public isNumericCharacter(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x30
 
@@ -8986,7 +8887,6 @@
 
 .method public isTextCharacter(I)Z
     .locals 11
-    .param p1    # I
 
     const/16 v10, 0x39
 
@@ -9441,7 +9341,6 @@
 
 .method public joinChunjiin(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Chonjiin;->join(Ljava/lang/String;)Ljava/lang/String;
 
@@ -9456,7 +9355,6 @@
 
 .method public joinHangul(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Hangul;->join(Ljava/lang/String;)Ljava/lang/String;
 
@@ -9467,7 +9365,6 @@
 
 .method public joinNaragul(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/NaratGeul;->join(Ljava/lang/String;)Ljava/lang/String;
 
@@ -9482,7 +9379,6 @@
 
 .method public katakanaToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9495,7 +9391,6 @@
 
 .method public learnSequence(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mIsPrediction:Z
 
@@ -9559,7 +9454,6 @@
 
 .method public learnTempSuggestion(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9579,9 +9473,6 @@
 
 .method public processTrace([Landroid/graphics/PointF;IB)S
     .locals 6
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
-    .param p3    # B
 
     const/4 v0, -0x1
 
@@ -9667,7 +9558,6 @@
 
 .method public processWhenPickSuggestionManually(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9690,7 +9580,6 @@
 
 .method public removeTerm(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9708,8 +9597,6 @@
 
 .method public replaceKey(ILandroid/graphics/PointF;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     const/16 v6, 0x40
 
@@ -9860,7 +9747,6 @@
 
 .method public romajiToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9873,7 +9759,6 @@
 
 .method public setChinesePhoneticIndex(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9886,7 +9771,6 @@
 
 .method public setContextAwareUniqueID(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9897,7 +9781,6 @@
 
 .method public setFieldSpecificType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9908,7 +9791,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mHandler:Landroid/os/Handler;
 
@@ -9917,7 +9799,6 @@
 
 .method public setIntentionalEvent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -9928,7 +9809,6 @@
 
 .method public setIsPrivateImeOptionsCSC(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -9955,7 +9835,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/Keyboard;)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -10071,7 +9950,6 @@
 
 .method public setVerbatim(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->mVerbatim:Ljava/lang/String;
 
@@ -10099,7 +9977,6 @@
 
 .method public splitHangul(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Hangul;->split(Ljava/lang/String;)Ljava/lang/String;
 
@@ -10110,7 +9987,6 @@
 
 .method public updateAcuteAccentState(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -10334,7 +10210,6 @@
 
 .method public updateKeyPressModeling(Ljava/util/LinkedList;Ljava/lang/StringBuilder;)V
     .locals 7
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10746,8 +10621,6 @@
 
 .method public wordSelected(ILjava/lang/CharSequence;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 

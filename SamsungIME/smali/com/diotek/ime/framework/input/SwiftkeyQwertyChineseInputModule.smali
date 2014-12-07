@@ -555,8 +555,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v5, 0x27
 
@@ -1163,7 +1161,6 @@
 
 .method private removeDivChar([C)Ljava/lang/String;
     .locals 6
-    .param p1    # [C
 
     const/4 v4, 0x0
 
@@ -1221,8 +1218,6 @@
 # virtual methods
 .method public onCharacterKey(I[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v4, -0x7a
 
@@ -1347,15 +1342,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x0
 
@@ -1472,8 +1464,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v7, 0x1
 
@@ -1619,8 +1609,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v8, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 

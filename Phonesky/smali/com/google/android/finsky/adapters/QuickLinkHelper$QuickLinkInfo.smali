@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/protos/Browse$QuickLink;I)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/Browse$QuickLink;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;)Lcom/google/android/finsky/protos/Browse$QuickLink;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;->mQuickLink:Lcom/google/android/finsky/protos/Browse$QuickLink;
 
@@ -46,7 +43,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;
 
     iget v0, p0, Lcom/google/android/finsky/adapters/QuickLinkHelper$QuickLinkInfo;->mBackendId:I
 

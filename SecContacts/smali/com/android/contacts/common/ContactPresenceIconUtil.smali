@@ -14,8 +14,6 @@
 
 .method public static getPresenceIcon(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

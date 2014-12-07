@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/utils/Users$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/utils/Users$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/Users$UserManagerFacade;-><init>()V
 

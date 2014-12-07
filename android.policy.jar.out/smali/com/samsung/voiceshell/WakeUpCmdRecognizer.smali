@@ -334,7 +334,6 @@
 
 .method public constructor <init>(Lcom/samsung/voiceshell/VoiceEngineResultListener;)V
     .locals 2
-    .param p1    # Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
     sget-object v0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->ROOT:Ljava/lang/String;
 
@@ -351,8 +350,6 @@
 
 .method public constructor <init>(Lcom/samsung/voiceshell/VoiceEngineResultListener;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/samsung/voiceshell/VoiceEngineResultListener;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1284,7 +1281,6 @@
 
 .method static synthetic access$000(Lcom/samsung/voiceshell/WakeUpCmdRecognizer;)Lcom/samsung/voiceshell/VoiceEngineResultListener;
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
     iget-object v0, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->mResultListener:Lcom/samsung/voiceshell/VoiceEngineResultListener;
 
@@ -1293,7 +1289,6 @@
 
 .method static synthetic access$100(Lcom/samsung/voiceshell/WakeUpCmdRecognizer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
     iget-boolean v0, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->isRunning_all:Z
 
@@ -1302,8 +1297,6 @@
 
 .method static synthetic access$102(Lcom/samsung/voiceshell/WakeUpCmdRecognizer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->isRunning_all:Z
 
@@ -1312,7 +1305,6 @@
 
 .method static synthetic access$200(Lcom/samsung/voiceshell/WakeUpCmdRecognizer;)Z
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
     iget-boolean v0, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->isRunning_enroll:Z
 
@@ -1321,8 +1313,6 @@
 
 .method static synthetic access$202(Lcom/samsung/voiceshell/WakeUpCmdRecognizer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->isRunning_enroll:Z
 
@@ -1331,7 +1321,6 @@
 
 .method static synthetic access$300(Lcom/samsung/voiceshell/WakeUpCmdRecognizer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
     iget-object v0, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->TAG:Ljava/lang/String;
 
@@ -1340,7 +1329,6 @@
 
 .method private checkFile(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1510,7 +1498,6 @@
 
 .method private readString(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1815,9 +1802,6 @@
 
 .method public SendHandlerMessage(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v2, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->handler:Landroid/os/Handler;
 
@@ -1852,7 +1836,6 @@
 
 .method public SetDataPath(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->TAG:Ljava/lang/String;
 
@@ -2212,7 +2195,6 @@
 
 .method public choiceMultipleWakeUpIntent(I)Landroid/content/Intent;
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x3
 
@@ -2592,8 +2574,6 @@
 
 .method public functionAssignment([II)I
     .locals 3
-    .param p1    # [I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->mVElib:Lcom/samsung/voiceshell/VoiceEngine;
 
@@ -2927,7 +2907,6 @@
 
 .method public isWakeUpFile(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -3065,7 +3044,6 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer;->mContext:Landroid/content/Context;
 
@@ -4225,7 +4203,6 @@
 
 .method public startEnroll(S)I
     .locals 1
-    .param p1    # S
 
     const/4 v0, 0x0
 
@@ -4238,8 +4215,6 @@
 
 .method public startEnroll(SS)I
     .locals 7
-    .param p1    # S
-    .param p2    # S
 
     const/16 v6, 0x3e80
 
@@ -4401,7 +4376,6 @@
 
 .method public startVerify(I)I
     .locals 13
-    .param p1    # I
 
     const/4 v0, -0x1
 

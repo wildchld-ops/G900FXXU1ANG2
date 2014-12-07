@@ -18,8 +18,6 @@
 # direct methods
 .method protected constructor <init>(Lorg/apache/http/conn/ClientConnectionOperator;Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ClientConnectionOperator;
-    .param p2    # Lorg/apache/http/conn/routing/HttpRoute;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,8 +61,6 @@
 
 .method public layerProtocol(Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Lorg/apache/http/protocol/HttpContext;
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -165,9 +161,6 @@
 
 .method public open(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;)V
     .locals 8
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
-    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -293,10 +286,6 @@
 
 .method public open(Lorg/apache/http/conn/routing/HttpRoute;Lorg/apache/http/protocol/HttpContext;Lorg/apache/http/params/HttpParams;Ljava/net/InetAddress;)V
     .locals 9
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
-    .param p3    # Lorg/apache/http/params/HttpParams;
-    .param p4    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -424,7 +413,6 @@
 
 .method public setState(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lorg/apache/http/impl/conn/AbstractPoolEntry;->state:Ljava/lang/Object;
 
@@ -443,9 +431,6 @@
 
 .method public tunnelProxy(Lorg/apache/http/HttpHost;ZLorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Z
-    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -511,8 +496,6 @@
 
 .method public tunnelTarget(ZLorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

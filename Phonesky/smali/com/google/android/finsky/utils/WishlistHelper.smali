@@ -14,8 +14,6 @@
 # direct methods
 .method public static isInWishlist(Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)Z
     .locals 5
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Landroid/accounts/Account;
 
     iget-object v2, p1, Landroid/accounts/Account;->name:Ljava/lang/String;
 
@@ -48,9 +46,6 @@
 
 .method public static processWishlistClick(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/utils/WishlistHelper$WishlistStatusListener;)V
     .locals 10
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Lcom/google/android/finsky/utils/WishlistHelper$WishlistStatusListener;
 
     const/4 v7, 0x1
 
@@ -164,8 +159,6 @@
 
 .method public static shouldHideWishlistAction(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/DfeApi;)Z
     .locals 8
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
 
     const/4 v6, 0x0
 

@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/MenuDimController;I)V
     .locals 4
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -88,7 +87,6 @@
 
 .method public getSavedSettingValue(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuDimController$DimArray;->this$0:Lcom/sec/android/app/camera/MenuDimController;
 
@@ -146,7 +144,6 @@
 
 .method public restoreUserSettingValues(Z)V
     .locals 9
-    .param p1    # Z
 
     const/16 v8, 0xd
 
@@ -855,8 +852,6 @@
 
 .method public saveSetting(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/MenuDimController$DimArray;->this$0:Lcom/sec/android/app/camera/MenuDimController;
 
@@ -911,7 +906,6 @@
 
 .method public varargs saveSettingMulti([I)V
     .locals 8
-    .param p1    # [I
 
     const/4 v6, 0x1
 
@@ -1444,8 +1438,6 @@
 
 .method public set(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-ltz p1, :cond_1
 
@@ -1483,8 +1475,6 @@
 
 .method public setChangedOnly(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-ltz p1, :cond_1
 
@@ -1518,7 +1508,6 @@
 
 .method public varargs setDimMulti([I)V
     .locals 5
-    .param p1    # [I
 
     move-object v0, p1
 

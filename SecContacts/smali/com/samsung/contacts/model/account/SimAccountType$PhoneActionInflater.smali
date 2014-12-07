@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/model/account/SimAccountType$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/model/account/SimAccountType$1;
 
     invoke-direct {p0}, Lcom/samsung/contacts/model/account/SimAccountType$PhoneActionInflater;-><init>()V
 
@@ -36,7 +35,6 @@
 # virtual methods
 .method protected getTypeLabelResource(Ljava/lang/Integer;)I
     .locals 3
-    .param p1    # Ljava/lang/Integer;
 
     const v0, 0x7f0e00e3
 
@@ -211,7 +209,6 @@
 
 .method protected isCustom(Ljava/lang/Integer;)Z
     .locals 2
-    .param p1    # Ljava/lang/Integer;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 

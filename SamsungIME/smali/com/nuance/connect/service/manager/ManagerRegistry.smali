@@ -130,7 +130,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/manager/ManagerRegistry;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/manager/ManagerRegistry;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/manager/ManagerRegistry;->checkIdle()V
 
@@ -139,7 +138,6 @@
 
 .method private add(Lcom/nuance/connect/service/manager/interfaces/Manager;)Z
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/manager/interfaces/Manager;
 
     invoke-interface {p1}, Lcom/nuance/connect/service/manager/interfaces/Manager;->getManagerName()Ljava/lang/String;
 
@@ -193,7 +191,6 @@
 
 .method private addManager(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -716,7 +713,6 @@
 
 .method private find(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -762,7 +758,6 @@
 
 .method private isRegistered(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/ManagerRegistry;->managers:Ljava/util/List;
 
@@ -806,8 +801,6 @@
 
 .method private registerMessages(Lcom/nuance/connect/service/manager/interfaces/MessageProcessor;[I)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/manager/interfaces/MessageProcessor;
-    .param p2    # [I
 
     iget-object v4, p0, Lcom/nuance/connect/service/manager/ManagerRegistry;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -870,7 +863,6 @@
 
 .method private walkDependencyTree(Lcom/nuance/connect/service/manager/interfaces/Manager;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/manager/interfaces/Manager;
 
     if-eqz p1, :cond_0
 
@@ -911,7 +903,6 @@
 # virtual methods
 .method public addService(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/ManagerRegistry;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1148,9 +1139,6 @@
 
 .method public dispatchReceivedMessage(Ljava/lang/String;Ljava/lang/String;Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v5, p0, Lcom/nuance/connect/service/manager/ManagerRegistry;->managers:Ljava/util/List;
 
@@ -1247,7 +1235,6 @@
 
 .method public getManagerReference(Ljava/lang/String;)Lcom/nuance/connect/service/manager/interfaces/Manager;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/service/manager/ManagerRegistry;->find(Ljava/lang/String;)I
 
@@ -1274,7 +1261,6 @@
 
 .method public getManagerReferenceByClass(Ljava/lang/String;)Lcom/nuance/connect/service/manager/interfaces/Manager;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/ManagerRegistry;->managers:Ljava/util/List;
 
@@ -1389,7 +1375,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/ManagerRegistry;->messageHandlerMap:Ljava/util/HashMap;
 
@@ -1612,8 +1597,6 @@
 
 .method public setup(Lcom/nuance/connect/service/ConnectClient;Z)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
-    .param p2    # Z
 
     const/4 v1, 0x0
 

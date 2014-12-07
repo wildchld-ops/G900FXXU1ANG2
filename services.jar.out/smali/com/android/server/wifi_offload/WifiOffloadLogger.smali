@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,8 +52,6 @@
 
 .method public constructor <init>(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +82,6 @@
 
 .method private addLine(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v1, p0, Lcom/android/server/wifi_offload/WifiOffloadLogger;->mPrefixDate:Z
 
@@ -232,8 +228,6 @@
 
 .method public logLastDiscourse(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "WifiOffloadLogger"
 
@@ -318,7 +312,6 @@
 
 .method public logLastDiscourse(Z)V
     .locals 7
-    .param p1    # Z
 
     const-string v4, "WifiOffloadLogger"
 
@@ -399,7 +392,6 @@
 
 .method public logString(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi_offload/WifiOffloadLogger;->addLine(Ljava/lang/String;)V
 

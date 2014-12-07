@@ -36,14 +36,12 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/MiniModeService$10;->this$0:Lcom/android/mms/replyservice/MiniModeService;
 
@@ -126,14 +124,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method

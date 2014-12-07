@@ -169,7 +169,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -180,8 +179,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -768,7 +765,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardShortcutView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->reloadBadges()V
 
@@ -777,7 +773,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->TAG:Ljava/lang/String;
 
@@ -786,7 +781,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mPm:Landroid/content/pm/PackageManager;
 
@@ -795,9 +789,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->createIconThumbnail(Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
 
@@ -808,7 +799,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsTouchExplorationEnabled:Z
 
@@ -817,7 +807,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsFirst:Z
 
@@ -826,8 +815,6 @@
 
 .method static synthetic access$1302(Lcom/android/keyguard/sec/KeyguardShortcutView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mIsFirst:Z
 
@@ -836,7 +823,6 @@
 
 .method static synthetic access$1400(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->isIgnoreTouch:Z
 
@@ -845,7 +831,6 @@
 
 .method static synthetic access$1500(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/view/animation/AlphaAnimation;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
 
@@ -854,7 +839,6 @@
 
 .method static synthetic access$1600(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -863,7 +847,6 @@
 
 .method static synthetic access$1700(Lcom/android/keyguard/sec/KeyguardShortcutView;)F
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartX:F
 
@@ -872,8 +855,6 @@
 
 .method static synthetic access$1702(Lcom/android/keyguard/sec/KeyguardShortcutView;F)F
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartX:F
 
@@ -882,7 +863,6 @@
 
 .method static synthetic access$1800(Lcom/android/keyguard/sec/KeyguardShortcutView;)F
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartY:F
 
@@ -891,8 +871,6 @@
 
 .method static synthetic access$1802(Lcom/android/keyguard/sec/KeyguardShortcutView;F)F
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mStartY:F
 
@@ -901,7 +879,6 @@
 
 .method static synthetic access$1900(Lcom/android/keyguard/sec/KeyguardShortcutView;)D
     .locals 2
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-wide v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
 
@@ -910,8 +887,6 @@
 
 .method static synthetic access$1902(Lcom/android/keyguard/sec/KeyguardShortcutView;D)D
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # D
 
     iput-wide p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mDistance:D
 
@@ -920,7 +895,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardShortcutView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mHandler:Landroid/os/Handler;
 
@@ -929,9 +903,6 @@
 
 .method static synthetic access$2000(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/sec/KeyguardShortcutView;->hideOtherShortcuts(Landroid/view/View;Z)V
 
@@ -940,7 +911,6 @@
 
 .method static synthetic access$2100(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mHelpTextCallback:Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
 
@@ -949,7 +919,6 @@
 
 .method static synthetic access$2200(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mFirstBorder:I
 
@@ -958,7 +927,6 @@
 
 .method static synthetic access$2300(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mSecondBorder:I
 
@@ -967,7 +935,6 @@
 
 .method static synthetic access$2400(Lcom/android/keyguard/sec/KeyguardShortcutView;)Lcom/android/keyguard/sec/KeyguardEffectViewBase;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mUnlockView:Lcom/android/keyguard/sec/KeyguardEffectViewBase;
 
@@ -976,8 +943,6 @@
 
 .method static synthetic access$2502(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mLaunchIntent:Landroid/content/Intent;
 
@@ -986,7 +951,6 @@
 
 .method static synthetic access$2600(Lcom/android/keyguard/sec/KeyguardShortcutView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardShortcutView;->launchApplication()V
 
@@ -1099,7 +1063,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardShortcutView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mIconWidth:I
 
@@ -1108,8 +1071,6 @@
 
 .method static synthetic access$402(Lcom/android/keyguard/sec/KeyguardShortcutView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mIconWidth:I
 
@@ -1118,8 +1079,6 @@
 
 .method static synthetic access$502(Lcom/android/keyguard/sec/KeyguardShortcutView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mIconHeight:I
 
@@ -1128,7 +1087,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/KeyguardShortcutView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->DBG:Z
 
@@ -1137,8 +1095,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/KeyguardShortcutView;Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardShortcutView;
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/KeyguardShortcutView;->getLaunchIntent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -1165,8 +1121,6 @@
 
 .method private createIconThumbnail(Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 22
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/content/Context;
 
     move-object/from16 v0, p0
 
@@ -1742,7 +1696,6 @@
 
 .method private getLaunchIntent(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x0
 
@@ -1770,8 +1723,6 @@
 
 .method private hideOtherShortcuts(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2176,9 +2127,6 @@
 
 .method private static setContrastSaturation(Landroid/graphics/ColorMatrix;FF)V
     .locals 11
-    .param p0    # Landroid/graphics/ColorMatrix;
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v10, 0x3f800000
 
@@ -2309,9 +2257,6 @@
 
 .method private setEachItem(Landroid/content/Context;Ljava/lang/String;I)I
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     add-int/lit8 p3, p3, 0x1
 
@@ -2435,7 +2380,6 @@
 
 .method public getFullResIcon(Landroid/content/pm/ResolveInfo;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v1, 0x0
 
@@ -2530,8 +2474,6 @@
 
 .method public getFullResIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     :try_start_0
     iget v2, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mIconDpi:I
@@ -2700,7 +2642,6 @@
 
 .method public setHelpTextCallback(Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mHelpTextCallback:Lcom/android/keyguard/sec/KeyguardUnlockView$HelpTextCallback;
 
@@ -2709,7 +2650,6 @@
 
 .method public setKeyguardCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardShortcutView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 

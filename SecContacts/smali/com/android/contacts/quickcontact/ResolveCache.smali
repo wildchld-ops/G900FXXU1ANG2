@@ -95,7 +95,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -158,7 +157,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/contacts/quickcontact/ResolveCache;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-class v3, Lcom/android/contacts/quickcontact/ResolveCache;
 
@@ -228,7 +226,6 @@
 # virtual methods
 .method protected getBestResolve(Landroid/content/Intent;Ljava/util/List;)Landroid/content/pm/ResolveInfo;
     .locals 11
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -362,8 +359,6 @@
 
 .method public getDescription(Lcom/android/contacts/quickcontact/Action;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 11
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -503,7 +498,6 @@
 
 .method protected getEntry(Lcom/android/contacts/quickcontact/Action;)Lcom/android/contacts/quickcontact/ResolveCache$Entry;
     .locals 12
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
 
     const/4 v11, 0x0
 
@@ -782,7 +776,6 @@
 
 .method public getIcon(Lcom/android/contacts/quickcontact/Action;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/quickcontact/ResolveCache;->getEntry(Lcom/android/contacts/quickcontact/Action;)Lcom/android/contacts/quickcontact/ResolveCache$Entry;
 
@@ -795,7 +788,6 @@
 
 .method public hasResolve(Lcom/android/contacts/quickcontact/Action;)Z
     .locals 1
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/quickcontact/ResolveCache;->getEntry(Lcom/android/contacts/quickcontact/Action;)Lcom/android/contacts/quickcontact/ResolveCache$Entry;
 

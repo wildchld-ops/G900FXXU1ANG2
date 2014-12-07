@@ -60,7 +60,6 @@
 
 .method public constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     sget-object v0, Lcom/android/dialer/dialpad/SmartDialNameMatcher;->LATIN_LETTERS_TO_DIGITS:[C
 
@@ -71,8 +70,6 @@
 
 .method public constructor <init>([CZ)V
     .locals 1
-    .param p1    # [C
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,7 +92,6 @@
 
 .method private getAll(Lcom/android/dialer/dialpad/SmartDialTrie$Node;Ljava/util/ArrayList;)V
     .locals 2
-    .param p1    # Lcom/android/dialer/dialpad/SmartDialTrie$Node;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -170,9 +166,6 @@
 
 .method parseToIndexes(Ljava/lang/CharSequence;II)Lcom/android/dialer/dialpad/SmartDialTrie$ParseInfo;
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v10, 0x39
 

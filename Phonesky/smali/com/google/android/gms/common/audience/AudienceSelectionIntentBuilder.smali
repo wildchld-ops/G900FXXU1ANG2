@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +27,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -47,7 +45,6 @@
 
 .method public static getAddedAudienceDelta(Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,7 +68,6 @@
 
 .method public static getInitialAudienceMembers(Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -95,7 +91,6 @@
 
 .method public static getRemovedAudienceDelta(Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -119,7 +114,6 @@
 
 .method public static getSelectedAudienceMembers(Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 3
-    .param p0    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -184,7 +178,6 @@
 
 .method public setAccountName(Ljava/lang/String;)Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -197,7 +190,6 @@
 
 .method public bridge synthetic setAccountName(Ljava/lang/String;)Lcom/google/android/gms/common/audience/CircleSelectionIntent$UpdateBuilder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;->setAccountName(Ljava/lang/String;)Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;
 
@@ -208,7 +200,6 @@
 
 .method public setClientApplicationId(Ljava/lang/String;)Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -221,7 +212,6 @@
 
 .method public bridge synthetic setClientApplicationId(Ljava/lang/String;)Lcom/google/android/gms/common/audience/CircleSelectionIntent$SelectBuilder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;->setClientApplicationId(Ljava/lang/String;)Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;
 
@@ -272,7 +262,6 @@
 
 .method public bridge synthetic setInitialCircles(Ljava/util/ArrayList;)Lcom/google/android/gms/common/audience/CircleSelectionIntent$UpdateBuilder;
     .locals 1
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;->setInitialCircles(Ljava/util/ArrayList;)Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;
 
@@ -283,7 +272,6 @@
 
 .method public setUpdatePersonId(Ljava/lang/String;)Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "People qualified ID"
 
@@ -300,7 +288,6 @@
 
 .method public bridge synthetic setUpdatePersonId(Ljava/lang/String;)Lcom/google/android/gms/common/audience/CircleSelectionIntent$UpdateBuilder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;->setUpdatePersonId(Ljava/lang/String;)Lcom/google/android/gms/common/audience/AudienceSelectionIntentBuilder;
 

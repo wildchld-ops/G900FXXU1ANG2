@@ -52,7 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,7 +106,6 @@
 
 .method private recycleView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, -0x1
 
@@ -167,7 +165,6 @@
 
 .method public static setNeedRCSQuery(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/samsung/contacts/model/rcs/RcsContactListPinner;->mNeedQuery:Z
 
@@ -178,7 +175,6 @@
 # virtual methods
 .method isRcsInCache(Landroid/net/Uri;)Ljava/lang/Boolean;
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -218,7 +214,6 @@
 
 .method public pinBindViewEnd(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const-string v1, "RcsContactListPinner"
 
@@ -307,10 +302,6 @@
 
 .method public pinGetViewBeforeBindView(ILandroid/view/View;Landroid/view/ViewGroup;Landroid/net/Uri;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Landroid/net/Uri;
 
     const-string v1, "RcsContactListPinner"
 
@@ -365,9 +356,6 @@
 
 .method queryRcs(ILandroid/net/Uri;Landroid/view/View;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -401,7 +389,6 @@
 
 .method updateView(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 

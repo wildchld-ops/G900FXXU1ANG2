@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/template/TextTemplateListActivity;Lcom/android/mms/template/TextTemplateListActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p2    # Lcom/android/mms/template/TextTemplateListActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/template/TextTemplateListActivity$ModeCallback;-><init>(Lcom/android/mms/template/TextTemplateListActivity;)V
 
@@ -52,7 +50,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/template/TextTemplateListActivity$ModeCallback;)Landroid/view/Menu;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity$ModeCallback;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity$ModeCallback;->mOptionMenu:Landroid/view/Menu;
 
@@ -63,8 +60,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity$ModeCallback;->this$0:Lcom/android/mms/template/TextTemplateListActivity;
 
@@ -110,8 +105,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -294,7 +287,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 3
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v1, 0x0
 
@@ -410,10 +402,6 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 3
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     const/4 v2, 0x0
 
@@ -530,8 +518,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const v6, 0x7f0b031f
 

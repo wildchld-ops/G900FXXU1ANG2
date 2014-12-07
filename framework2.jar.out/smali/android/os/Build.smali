@@ -346,7 +346,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/os/Build;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -357,7 +356,6 @@
 
 .method private static getLong(Ljava/lang/String;)J
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -397,7 +395,6 @@
 
 .method private static getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string/jumbo v0, "unknown"
 

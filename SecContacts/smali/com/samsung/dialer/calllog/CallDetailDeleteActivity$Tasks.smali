@@ -71,7 +71,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/samsung/dialer/calllog/CallDetailDeleteActivity$Tasks;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/samsung/dialer/calllog/CallDetailDeleteActivity$Tasks;
 

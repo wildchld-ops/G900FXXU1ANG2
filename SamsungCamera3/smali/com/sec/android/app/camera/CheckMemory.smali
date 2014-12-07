@@ -1735,7 +1735,6 @@
 
 .method public static getAvailableStorage(I)J
     .locals 7
-    .param p0    # I
 
     const/4 v3, 0x1
 
@@ -1886,8 +1885,6 @@
 
 .method public static getMaxSizeOfImage(II)J
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const-wide/16 v2, 0x0
 
@@ -1991,9 +1988,6 @@
 
 .method public static getRemainCount(III)I
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, -0x1
 
@@ -2038,8 +2032,6 @@
 
 .method public static getRemainTime(II)I
     .locals 7
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, -0x1
 
@@ -2082,7 +2074,6 @@
 
 .method public static getTotalStorage(I)J
     .locals 7
-    .param p0    # I
 
     const/4 v3, 0x1
 
@@ -2277,7 +2268,6 @@
 
 .method public static setStorageVolume(Lcom/sec/android/app/camera/Camera;)V
     .locals 3
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     const-string v0, "storage"
 

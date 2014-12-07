@@ -40,7 +40,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v1, 0x0
 
@@ -61,7 +60,6 @@
 
 .method private constructor <init>(Ljava/lang/Object;Lcom/android/volley/Cache$Entry;)V
     .locals 1
-    .param p2    # Lcom/android/volley/Cache$Entry;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -89,7 +87,6 @@
 
 .method public static error(Lcom/android/volley/VolleyError;)Lcom/android/volley/Response;
     .locals 1
-    .param p0    # Lcom/android/volley/VolleyError;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -111,7 +108,6 @@
 
 .method public static success(Ljava/lang/Object;Lcom/android/volley/Cache$Entry;)Lcom/android/volley/Response;
     .locals 1
-    .param p1    # Lcom/android/volley/Cache$Entry;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

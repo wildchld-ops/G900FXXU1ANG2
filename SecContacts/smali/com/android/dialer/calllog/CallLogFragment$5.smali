@@ -36,18 +36,12 @@
 # virtual methods
 .method public onScroll(Lcom/sec/android/touchwiz/widget/TwAbsListView;III)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwAbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onScrollStateChanged(Lcom/sec/android/touchwiz/widget/TwAbsListView;I)V
     .locals 5
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwAbsListView;
-    .param p2    # I
 
     const/4 v4, 0x2
 

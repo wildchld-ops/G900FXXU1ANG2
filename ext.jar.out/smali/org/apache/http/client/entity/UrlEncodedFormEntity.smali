@@ -41,7 +41,6 @@
 
 .method public constructor <init>(Ljava/util/List;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

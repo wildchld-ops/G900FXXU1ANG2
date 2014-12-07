@@ -14,7 +14,6 @@
 
 .method public static getConstantPreLayoutWidth(Landroid/view/View;)I
     .locals 3
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 

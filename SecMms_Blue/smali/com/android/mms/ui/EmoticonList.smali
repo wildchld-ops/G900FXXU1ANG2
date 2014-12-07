@@ -52,7 +52,6 @@
 
 .method public static getEmoticonCategory(I)[Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/mms/ui/EmoticonList;->sEmoticonList:[[Ljava/lang/String;
 
@@ -85,7 +84,6 @@
 
 .method public static getEmoticonUTFCategory(I)[Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/mms/ui/EmoticonList;->sEmoticonUTFList:[[Ljava/lang/String;
 

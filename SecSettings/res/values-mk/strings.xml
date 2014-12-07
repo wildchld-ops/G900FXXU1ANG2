@@ -1373,7 +1373,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">Грешка на опсегот со USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Делењето преку USB не може да се исклучи додека се користи Сајд-синк. Со исклучување на делењето преку USB ќе се исклучи Сајд-синк.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Делењето преку USB не може да се вклучи додека се користи Сајд-синк. Со вклучување на делењето преку USB ќе се исклучи Сајд-синк.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Делење Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Делење Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Поделување на поврзувањето на интернет на уредот…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Поврзувањето на интернет на уредот се споделува со 1 уред</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Поврзување на интернет на уредот се споделува со %d уреди</string>

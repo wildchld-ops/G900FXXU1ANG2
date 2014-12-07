@@ -250,7 +250,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/4 v11, 0x0
 
@@ -493,7 +492,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/RCPManagerService;->checkCallerPermissionFor(Ljava/lang/String;)I
 
@@ -504,8 +502,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/RCPManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/RCPManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/RCPManagerService;->unregisterProxy(I)V
 
@@ -514,8 +510,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/RCPManagerService;Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/RCPManagerService;
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     invoke-direct {p0, p1}, Lcom/android/server/RCPManagerService;->getLabelForNotif(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
 
@@ -526,8 +520,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/RCPManagerService;I)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/RCPManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/RCPManagerService;->getAllowedIds(I)Ljava/util/ArrayList;
 
@@ -546,7 +538,6 @@
 
 .method static synthetic access$300(Lcom/android/server/RCPManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/RCPManagerService;
 
     iget-object v0, p0, Lcom/android/server/RCPManagerService;->mBridgeCommandExeUserMap:Ljava/util/HashMap;
 
@@ -555,7 +546,6 @@
 
 .method static synthetic access$400(Lcom/android/server/RCPManagerService;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/RCPManagerService;
 
     iget-object v0, p0, Lcom/android/server/RCPManagerService;->mCommandQueue:Ljava/util/Map;
 
@@ -564,9 +554,6 @@
 
 .method static synthetic access$500(Lcom/android/server/RCPManagerService;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/RCPManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/RCPManagerService;->startKnoxModeSwitcher(Ljava/lang/String;I)V
 
@@ -575,7 +562,6 @@
 
 .method static synthetic access$600(Lcom/android/server/RCPManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/RCPManagerService;
 
     iget-object v0, p0, Lcom/android/server/RCPManagerService;->mBridgeSyncUserMap:Ljava/util/HashMap;
 
@@ -592,7 +578,6 @@
 
 .method static synthetic access$800(Lcom/android/server/RCPManagerService;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/server/RCPManagerService;
 
     iget-object v0, p0, Lcom/android/server/RCPManagerService;->mRCPProxyScanSP:Landroid/content/SharedPreferences;
 
@@ -601,8 +586,6 @@
 
 .method static synthetic access$802(Lcom/android/server/RCPManagerService;Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences;
     .locals 0
-    .param p0    # Lcom/android/server/RCPManagerService;
-    .param p1    # Landroid/content/SharedPreferences;
 
     iput-object p1, p0, Lcom/android/server/RCPManagerService;->mRCPProxyScanSP:Landroid/content/SharedPreferences;
 
@@ -611,7 +594,6 @@
 
 .method static synthetic access$900(Lcom/android/server/RCPManagerService;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/RCPManagerService;
 
     iget-object v0, p0, Lcom/android/server/RCPManagerService;->mRCPProxyAliveList:Ljava/util/List;
 
@@ -620,8 +602,6 @@
 
 .method private buildSecureNotif(Landroid/os/PersonaManager;Landroid/os/UserHandle;Ljava/util/HashMap;Ljava/util/List;)Landroid/app/KnoxNotification;
     .locals 12
-    .param p1    # Landroid/os/PersonaManager;
-    .param p2    # Landroid/os/UserHandle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -722,7 +702,6 @@
 
 .method private static checkCallerPermissionFor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "RCPManagerService"
 
@@ -959,7 +938,6 @@
 
 .method private delete(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
 
     sget-object v4, Lcom/android/server/RCPManagerService;->TAG:Ljava/lang/String;
 
@@ -1043,8 +1021,6 @@
 
 .method private fileCopy(Ljava/io/File;Ljava/io/File;)Z
     .locals 16
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     sget-object v2, Lcom/android/server/RCPManagerService;->TAG:Ljava/lang/String;
 
@@ -1694,7 +1670,6 @@
 
 .method private getAllowedIds(I)Ljava/util/ArrayList;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1827,8 +1802,6 @@
 
 .method private getExchangeDataMap(IZ)Ljava/util/HashMap;
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -1904,7 +1877,6 @@
 
 .method private getLabelForNotif(Landroid/service/notification/StatusBarNotification;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     const/4 v4, 0x0
 
@@ -1998,7 +1970,6 @@
 
 .method private getUserOrItsPersonasIds(I)[I
     .locals 13
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -2153,7 +2124,6 @@
 
 .method public static isAllowedtoLaunch(Landroid/content/pm/ActivityInfo;)Z
     .locals 12
-    .param p0    # Landroid/content/pm/ActivityInfo;
 
     const/4 v11, 0x2
 
@@ -2348,8 +2318,6 @@
 
 .method private startKnoxModeSwitcher(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -2410,8 +2378,6 @@
 
 .method private switchPersonaAndLaunch(ILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2495,7 +2461,6 @@
 
 .method private unregisterProxy(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/RCPManagerService;->mBridgeProviderUserMap:Ljava/util/HashMap;
 
@@ -2580,9 +2545,6 @@
 # virtual methods
 .method bindToRCPProxy(ILjava/lang/String;Ljava/lang/String;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v11, 0x1
 
@@ -2861,7 +2823,6 @@
 
 .method public cancelCopyChunks(J)V
     .locals 4
-    .param p1    # J
 
     const-string v1, "cancelCopyChunks"
 
@@ -2902,8 +2863,6 @@
 
 .method public checkSAccount(Ljava/lang/String;Landroid/content/ISAccountCallback;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ISAccountCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2946,8 +2905,6 @@
 
 .method public checkSAccountPassword(Ljava/lang/String;Landroid/content/ISAccountCallback;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ISAccountCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2990,14 +2947,6 @@
 
 .method public copyChunks(ILjava/lang/String;ILjava/lang/String;JIJZ)I
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Z
 
     const-string v3, "copyChunks"
 
@@ -3138,9 +3087,6 @@
 
 .method public copyClipboardFile(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -3469,10 +3415,6 @@
 
 .method public copyFile(ILjava/lang/String;ILjava/lang/String;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const-string v1, "copyFile"
 
@@ -3545,7 +3487,6 @@
 
 .method deleteAllPersonaData(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3717,7 +3658,6 @@
 
 .method public deleteClipboardFile(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "deleteClipboardFile"
 
@@ -3756,8 +3696,6 @@
 
 .method public deleteFile(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "deleteFile"
 
@@ -3810,9 +3748,6 @@
 
 .method public exchangeData(Ljava/lang/String;ILandroid/os/Bundle;)Landroid/os/Bundle;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -3977,7 +3912,6 @@
 
 .method public executeCommandForPersona(Landroid/app/Command;)V
     .locals 8
-    .param p1    # Landroid/app/Command;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4206,7 +4140,6 @@
 
 .method public getCallerInfo(Ljava/lang/String;)Landroid/content/CustomCursor;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -4454,8 +4387,6 @@
 
 .method public getFileInfo(Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "getFileInfo"
 
@@ -4508,8 +4439,6 @@
 
 .method public getFiles(Ljava/lang/String;I)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4573,7 +4502,6 @@
 
 .method public getNotifications(Z)Ljava/util/List;
     .locals 30
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -5052,9 +4980,6 @@
 
 .method public getPolicy(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v9, 0x0
 
@@ -5384,7 +5309,6 @@
 
 .method public getUsersToSyncFrom(Ljava/lang/String;)[I
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -5645,12 +5569,6 @@
 
 .method public handleShortcut(ILjava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const-string v1, "handleShortcut"
 
@@ -5765,8 +5683,6 @@
 
 .method public isFileExist(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "isFileExist"
 
@@ -5819,8 +5735,6 @@
 
 .method isNotificationAllowed(Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     move-object v0, p2
 
@@ -5857,10 +5771,6 @@
 
 .method public moveFile(ILjava/lang/String;ILjava/lang/String;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const-string v1, "moveFile"
 
@@ -5933,7 +5843,6 @@
 
 .method public notificationCleared(Landroid/app/KnoxNotification;)V
     .locals 8
-    .param p1    # Landroid/app/KnoxNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6121,13 +6030,6 @@
 
 .method public queryAllProviders(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6441,13 +6343,6 @@
 
 .method public queryProvider(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/content/CustomCursor;
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
 
     const-string v2, "queryProvider"
 
@@ -6740,7 +6635,6 @@
 
 .method public registerCommandExe(Landroid/content/ICommandExeCallBack;)V
     .locals 8
-    .param p1    # Landroid/content/ICommandExeCallBack;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6988,8 +6882,6 @@
 
 .method public registerExchangeData(Ljava/lang/String;Landroid/os/IRunnableCallback;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IRunnableCallback;
 
     const/4 v2, 0x1
 
@@ -7061,8 +6953,6 @@
 
 .method public registerMonitorCb(Ljava/lang/String;Landroid/os/IRunnableCallback;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IRunnableCallback;
 
     const-string v0, "com.sec.knox.bridge"
 
@@ -7097,8 +6987,6 @@
 
 .method public registerProvider(Ljava/lang/String;Landroid/content/IProviderCallBack;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/IProviderCallBack;
 
     const-string v2, "registerProvider"
 
@@ -7223,7 +7111,6 @@
 
 .method public registerRCPGlobalContactsDir(Landroid/content/IRCPGlobalContactsDir;)V
     .locals 5
-    .param p1    # Landroid/content/IRCPGlobalContactsDir;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7331,7 +7218,6 @@
 
 .method public registerRCPInterface(Landroid/content/IRCPInterface;)V
     .locals 5
-    .param p1    # Landroid/content/IRCPInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7439,7 +7325,6 @@
 
 .method public registerSync(Landroid/content/ISyncCallBack;)V
     .locals 5
-    .param p1    # Landroid/content/ISyncCallBack;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7547,7 +7432,6 @@
 
 .method public saveSharedSandbox(I)V
     .locals 7
-    .param p1    # I
 
     const-string v4, "saveSharedSandbox"
 
@@ -7750,7 +7634,6 @@
 
 .method scanAndStartRCPProxy(I)V
     .locals 22
-    .param p1    # I
 
     sget-object v19, Lcom/android/server/RCPManagerService;->TAG:Ljava/lang/String;
 
@@ -8549,7 +8432,6 @@
 
 .method public startRCPProxy(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/RCPManagerService;->mBridgeSyncUserMap:Ljava/util/HashMap;
 
@@ -8697,7 +8579,6 @@
 
 .method public switchPersona(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

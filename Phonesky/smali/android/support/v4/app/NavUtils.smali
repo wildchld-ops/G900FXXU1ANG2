@@ -48,8 +48,6 @@
 
 .method public static shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Landroid/support/v4/app/NavUtils;->IMPL:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
 

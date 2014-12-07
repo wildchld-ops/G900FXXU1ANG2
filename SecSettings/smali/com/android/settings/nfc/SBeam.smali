@@ -66,7 +66,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/nfc/SBeam;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/SBeam;
 
     invoke-direct {p0}, Lcom/android/settings/nfc/SBeam;->createHelpStep2Dialog()V
 
@@ -75,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/nfc/SBeam;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/SBeam;
 
     invoke-direct {p0}, Lcom/android/settings/nfc/SBeam;->createHelpDialog()V
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/nfc/SBeam;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/SBeam;
 
     iget-object v0, p0, Lcom/android/settings/nfc/SBeam;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -93,8 +90,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/nfc/SBeam;Lcom/android/settings/helpdialog/TwHelpDialog;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/SBeam;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
 
     iput-object p1, p0, Lcom/android/settings/nfc/SBeam;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -103,7 +98,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/nfc/SBeam;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/SBeam;
 
     iget-object v0, p0, Lcom/android/settings/nfc/SBeam;->mActivity:Landroid/app/Activity;
 
@@ -371,7 +365,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -389,7 +382,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x10
 
@@ -629,8 +621,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -664,9 +654,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -847,7 +834,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -944,7 +930,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

@@ -53,7 +53,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/NotificationSettingsDS;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/NotificationSettingsDS;
 
     iget-object v0, p0, Lcom/android/mms/settings/NotificationSettingsDS;->mSwitch:Landroid/widget/Switch;
 
@@ -62,7 +61,6 @@
 
 .method private setupSimTab(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -143,7 +141,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onCreate(Landroid/os/Bundle;)V
 
@@ -193,7 +190,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -242,7 +238,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -274,7 +269,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -402,7 +396,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

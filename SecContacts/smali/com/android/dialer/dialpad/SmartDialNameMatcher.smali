@@ -54,7 +54,6 @@
 
 .method private isLowercaseLatinLetterOrDigit(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x61
 
@@ -87,7 +86,6 @@
 
 .method public static remapAccentedChars(C)C
     .locals 5
-    .param p0    # C
 
     const/16 v1, 0x65
 
@@ -2303,8 +2301,6 @@
 # virtual methods
 .method matchesCombination(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)Z
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

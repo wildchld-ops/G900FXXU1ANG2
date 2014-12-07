@@ -402,7 +402,6 @@
 # virtual methods
 .method protected getResizer(Landroid/content/Context;)Lcom/android/settings/AccountMenu$IconResizer;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     sget-object v2, Lcom/android/settings/AccountMenu;->sResizer:Lcom/android/settings/AccountMenu$IconResizer;
 
@@ -438,7 +437,6 @@
 
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 2
-    .param p1    # [Landroid/accounts/Account;
 
     iget-object v0, p0, Lcom/android/settings/AccountMenu;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -459,7 +457,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -532,8 +529,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -606,7 +601,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -662,7 +656,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v6, 0x0
 

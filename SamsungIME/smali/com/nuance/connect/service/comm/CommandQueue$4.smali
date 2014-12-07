@@ -36,8 +36,6 @@
 # virtual methods
 .method public rejectedExecution(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V
     .locals 5
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/util/concurrent/ThreadPoolExecutor;
 
     iget-object v2, p0, Lcom/nuance/connect/service/comm/CommandQueue$4;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 

@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/activities/EmergencyPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/EmergencyPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/EmergencyPeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -31,7 +30,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/activities/EmergencyPeopleActivity;)Lcom/android/dialer/calllog/CallLogFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/EmergencyPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/EmergencyPeopleActivity;->mCallLogFragment:Lcom/android/dialer/calllog/CallLogFragment;
 
@@ -40,7 +38,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/activities/EmergencyPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/EmergencyPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/EmergencyPeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -49,7 +46,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/activities/EmergencyPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/EmergencyPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/EmergencyPeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -58,7 +54,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/activities/EmergencyPeopleActivity;)Lcom/android/dialer/calllog/CallLogFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/EmergencyPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/EmergencyPeopleActivity;->mCallLogFragment:Lcom/android/dialer/calllog/CallLogFragment;
 
@@ -67,7 +62,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/activities/EmergencyPeopleActivity;)Lcom/android/contacts/list/DefaultContactBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/activities/EmergencyPeopleActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/EmergencyPeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -78,7 +72,6 @@
 # virtual methods
 .method protected addFragmentsToTransaction(Landroid/app/FragmentTransaction;)V
     .locals 3
-    .param p1    # Landroid/app/FragmentTransaction;
 
     const v2, 0x7f08014c
 
@@ -111,10 +104,6 @@
 
 .method protected createActionBarAdapter(Landroid/content/Context;Lcom/android/contacts/activities/ActionBarAdapter$Listener;Landroid/app/ActionBar;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/activities/ActionBarAdapter$Listener;
-    .param p3    # Landroid/app/ActionBar;
-    .param p4    # Z
 
     new-instance v0, Lcom/samsung/contacts/activities/EasyActionBarAdapter;
 
@@ -189,7 +178,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-static {}, Lcom/samsung/contacts/util/LoadCscFeatureUtils;->getInstance()Lcom/samsung/contacts/util/LoadCscFeatureUtils;
 
@@ -226,7 +214,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-static {}, Lcom/samsung/contacts/util/LoadCscFeatureUtils;->getInstance()Lcom/samsung/contacts/util/LoadCscFeatureUtils;
 
@@ -263,7 +250,6 @@
 
 .method protected setTransactionHide(Landroid/app/FragmentTransaction;)V
     .locals 1
-    .param p1    # Landroid/app/FragmentTransaction;
 
     iget-object v0, p0, Lcom/samsung/contacts/activities/EmergencyPeopleActivity;->mDialpadFragment:Lcom/android/dialer/dialpad/DialpadFragment;
 

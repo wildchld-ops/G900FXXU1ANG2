@@ -62,8 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/bluetooth/CachedBluetoothDevice;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/bluetooth/CachedBluetoothDevice;
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -158,7 +156,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mClickable:Z
 
@@ -167,7 +164,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/BluetoothDevicePreference;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mCachedDevice:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
 
@@ -846,7 +842,6 @@
 # virtual methods
 .method checkLanuchGM(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -913,7 +908,6 @@
 
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     instance-of v0, p1, Lcom/android/settings/bluetooth/BluetoothDevicePreference;
 
@@ -942,7 +936,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -982,7 +975,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -1012,7 +1004,6 @@
 
 .method getAppearanceDrawable(I)I
     .locals 4
-    .param p1    # I
 
     const v0, 0x7f0201bd
 
@@ -1179,7 +1170,6 @@
 
 .method launchGearManager(Z)V
     .locals 14
-    .param p1    # Z
 
     iget-object v10, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mCachedDevice:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
 
@@ -1498,7 +1488,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/16 v6, 0x8
 
@@ -1623,7 +1612,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mOnSettingsClickListener:Landroid/view/View$OnClickListener;
 
@@ -1928,7 +1916,6 @@
 
 .method public setOnSettingsClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->mOnSettingsClickListener:Landroid/view/View$OnClickListener;
 

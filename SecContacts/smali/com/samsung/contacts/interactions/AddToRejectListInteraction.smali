@@ -83,8 +83,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->makeRejectValues(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
 
@@ -93,8 +91,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->isOverBlackListSize(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)Z
 
@@ -105,7 +101,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->mContext:Landroid/content/Context;
 
@@ -114,8 +109,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;I)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->showBlackListSizeOverDialog(I)V
 
@@ -124,8 +117,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->checkSamePhoneNumberContacts(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
 
@@ -134,7 +125,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->showTipsPopup()V
 
@@ -143,7 +133,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->clearJobs()V
 
@@ -152,7 +141,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->executeNextJob()V
 
@@ -161,7 +149,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->getCountOfTotalBlackList()I
 
@@ -172,7 +159,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->queryExactlyMatchBlackList()Ljava/util/HashMap;
 
@@ -183,8 +169,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;J)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->getPhoneNumbers(J)Ljava/util/ArrayList;
 
@@ -195,8 +179,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->getDisplayName(J)Ljava/lang/String;
 
@@ -207,8 +189,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/interactions/AddToRejectListInteraction;Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->findSamePhoneNumberContacts(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
 
@@ -217,7 +197,6 @@
 
 .method private checkSamePhoneNumberContacts(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 3
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     iget-object v1, p1, Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;->samePhoneNumContactsIdsArr:Ljava/util/ArrayList;
 
@@ -346,7 +325,6 @@
 
 .method private findSamePhoneNumberContacts(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 22
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     move-object/from16 v0, p1
 
@@ -712,7 +690,6 @@
 
 .method private getDisplayName(J)Ljava/lang/String;
     .locals 11
-    .param p1    # J
 
     const v10, 0x104000e
 
@@ -801,7 +778,6 @@
 
 .method private getPhoneNumbers(J)Ljava/util/ArrayList;
     .locals 11
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J)",
@@ -884,7 +860,6 @@
 
 .method private isOverBlackListSize(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)Z
     .locals 9
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     move-object v5, p1
 
@@ -962,7 +937,6 @@
 
 .method private makeRejectValues(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 6
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     iget-object v0, p1, Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;->exactlyMatchblackListHashMap:Ljava/util/HashMap;
 
@@ -1127,7 +1101,6 @@
 
 .method private showBlackListSizeOverDialog(I)V
     .locals 6
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -1229,7 +1202,6 @@
 
 .method private showHasSamePhoneNumberContacts(Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;)V
     .locals 12
-    .param p1    # Lcom/samsung/contacts/interactions/AddToRejectListInteraction$RejectTaskResult;
 
     const/16 v8, 0x22
 
@@ -1561,9 +1533,6 @@
 
 .method public static start(Landroid/app/Activity;Landroid/net/Uri;Z)Lcom/samsung/contacts/interactions/AddToRejectListInteraction;
     .locals 4
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -1675,7 +1644,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1760,7 +1728,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1804,7 +1771,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v0, 0x0
 
@@ -1819,7 +1785,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "active"
 
@@ -1931,8 +1896,6 @@
 
 .method public setContactUri(Landroid/net/Uri;Z)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/AddToRejectListInteraction;->mActive:Z
 

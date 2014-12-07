@@ -1212,7 +1212,7 @@ Wi-Fi 和移动热点无法同时运行。"</string>
     <string name="usb_tethering_errored_subtext">USB网络分享错误</string>
     <string name="usb_tethering_on_during_sidesync_popup">使用 SideSync 时无法禁用 USB 网络共享。禁用 USB 网络共享将禁用 SideSync</string>
     <string name="usb_tethering_off_during_sidesync_popup">使用 SideSync 时无法启用 USB 网络共享。启用 USB 网络共享将禁用 SideSync</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>蓝牙网络共享</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>蓝牙网络共享</b></p></string>
     <string name="bluetooth_tethering_available_subtext">正在共享该设备的互联网连接…</string>
     <string name="bluetooth_tethering_device_connected_subtext">与1台设备共享设备网络连接</string>
     <string name="bluetooth_tethering_devices_connected_subtext">与%d台设备共享设备网络连接</string>

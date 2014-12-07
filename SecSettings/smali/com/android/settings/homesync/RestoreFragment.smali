@@ -344,7 +344,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/homesync/RestoreFragment;)I
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget v0, p0, Lcom/android/settings/homesync/RestoreFragment;->mPasteType:I
 
@@ -353,8 +352,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/homesync/RestoreFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/homesync/RestoreFragment;->mPasteType:I
 
@@ -363,7 +360,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/homesync/RestoreFragment;)Landroid/os/storage/StorageVolume;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/RestoreFragment;->mStorageVolume:Landroid/os/storage/StorageVolume;
 
@@ -372,7 +368,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/homesync/RestoreFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/RestoreFragment;->backupList:Landroid/widget/ListView;
 
@@ -381,8 +376,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/homesync/RestoreFragment;Landroid/os/storage/StorageVolume;)Landroid/os/storage/StorageVolume;
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     iput-object p1, p0, Lcom/android/settings/homesync/RestoreFragment;->mStorageVolume:Landroid/os/storage/StorageVolume;
 
@@ -391,7 +384,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/homesync/RestoreFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/RestoreFragment;->mAccountName:Ljava/lang/String;
 
@@ -400,7 +392,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/homesync/RestoreFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/RestoreFragment;->mDestDateName:Ljava/lang/String;
 
@@ -409,8 +400,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/homesync/RestoreFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/homesync/RestoreFragment;->mDestDateName:Ljava/lang/String;
 
@@ -419,7 +408,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/homesync/RestoreFragment;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/RestoreFragment;->startRestoreButton:Landroid/widget/Button;
 
@@ -428,7 +416,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/homesync/RestoreFragment;)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget-wide v0, p0, Lcom/android/settings/homesync/RestoreFragment;->mSourceTotalSize:J
 
@@ -437,8 +424,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/homesync/RestoreFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/homesync/RestoreFragment;->mSourceTotalSize:J
 
@@ -447,7 +432,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/homesync/RestoreFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/RestoreFragment;->list_info:Ljava/util/ArrayList;
 
@@ -458,7 +442,6 @@
 # virtual methods
 .method createAlertDialog(I)Landroid/app/AlertDialog;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -495,7 +478,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -510,7 +492,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -523,8 +504,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -553,9 +532,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v10, 0x1
 

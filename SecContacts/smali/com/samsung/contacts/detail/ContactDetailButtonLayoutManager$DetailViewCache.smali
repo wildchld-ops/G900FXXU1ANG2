@@ -35,9 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View$OnClickListener;
-    .param p3    # Landroid/view/View$OnClickListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

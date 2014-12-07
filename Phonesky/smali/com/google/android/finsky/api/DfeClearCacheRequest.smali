@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/Cache;Ljava/lang/String;ZLjava/lang/Runnable;)V
     .locals 1
-    .param p1    # Lcom/android/volley/Cache;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/Runnable;
 
     const/4 v0, 0x0
 
@@ -51,7 +47,6 @@
 # virtual methods
 .method protected deliverResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
@@ -99,7 +94,6 @@
 
 .method protected parseNetworkResponse(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Response;
     .locals 1
-    .param p1    # Lcom/android/volley/NetworkResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

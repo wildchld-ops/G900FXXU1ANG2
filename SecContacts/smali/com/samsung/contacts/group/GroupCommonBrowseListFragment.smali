@@ -113,7 +113,6 @@
 
 .method private setSelectedGroup(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 1
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->mSelectedGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -255,7 +254,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -272,9 +270,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -378,8 +373,6 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->mExpandableListView:Landroid/widget/ExpandableListView;
 
@@ -395,7 +388,6 @@
 
 .method public onGroupCollapsed(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->mExpandedSectoins:[Z
 
@@ -408,7 +400,6 @@
 
 .method public onGroupExpanded(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->mExpandedSectoins:[Z
 
@@ -421,7 +412,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "groupInfo"
 
@@ -462,8 +452,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->mExpandableListView:Landroid/widget/ExpandableListView;
 
@@ -583,7 +571,6 @@
 
 .method public setListener(Lcom/samsung/contacts/group/GroupCommonBrowseListFragment$OnGroupBrowserActionListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupCommonBrowseListFragment$OnGroupBrowserActionListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->mListener:Lcom/samsung/contacts/group/GroupCommonBrowseListFragment$OnGroupBrowserActionListener;
 
@@ -592,7 +579,6 @@
 
 .method public setLoaderManager(Landroid/app/LoaderManager;)V
     .locals 0
-    .param p1    # Landroid/app/LoaderManager;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->mLoaderManager:Landroid/app/LoaderManager;
 
@@ -601,7 +587,6 @@
 
 .method protected viewGroup(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 1
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/group/GroupCommonBrowseListFragment;->setSelectedGroup(Lcom/samsung/contacts/group/GroupInfo;)V
 

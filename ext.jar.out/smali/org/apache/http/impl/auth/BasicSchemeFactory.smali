@@ -19,7 +19,6 @@
 # virtual methods
 .method public newInstance(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/auth/AuthScheme;
     .locals 1
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/auth/BasicScheme;
 

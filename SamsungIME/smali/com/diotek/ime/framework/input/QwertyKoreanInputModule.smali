@@ -804,8 +804,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v4, 0x0
 
@@ -930,8 +928,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v9, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1398,8 +1394,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 11
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v8, -0x1
 
@@ -1655,7 +1649,6 @@
 
 .method protected commitText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1675,8 +1668,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v8, 0x20
 
@@ -1884,17 +1875,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1903,9 +1889,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1914,9 +1897,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1925,8 +1905,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 14
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v10, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2222,8 +2200,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v4, 0x1
 

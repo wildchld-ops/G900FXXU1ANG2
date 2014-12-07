@@ -1385,7 +1385,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">Ошибка USB-модема</string>
     <string name="usb_tethering_on_during_sidesync_popup">Невозможно отключить модем USB во время использования SideSync. При отключении модема USB служба SideSync будет отключена</string>
     <string name="usb_tethering_off_during_sidesync_popup">Невозможно включить модем USB во время использования SideSync. При включении модема USB служба SideSync будет отключена</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-модем</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-модем</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Общий доступ к подключению к Интернету…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Подключение устройства к Интернету используется совместно с 1 устройством</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Подключение устройства к Интернету используется совместно с %d устройствами</string>

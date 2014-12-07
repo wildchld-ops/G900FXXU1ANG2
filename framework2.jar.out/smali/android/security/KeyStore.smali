@@ -52,7 +52,6 @@
 # direct methods
 .method private constructor <init>(Landroid/security/IKeystoreService;)V
     .locals 1
-    .param p1    # Landroid/security/IKeystoreService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +92,6 @@
 
 .method static getKeyTypeForAlgorithm(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -167,7 +165,6 @@
 
 .method private static getSystemUidAsUser(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x186a0
 
@@ -180,7 +177,6 @@
 
 .method private refreshRollbackUserKeystore(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/security/KeyStore;->lMdmService:Landroid/sec/enterprise/IEDMProxy;
 
@@ -213,7 +209,6 @@
 # virtual methods
 .method public clearUid(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -269,7 +264,6 @@
 
 .method public contains(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -282,8 +276,6 @@
 
 .method public contains(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -324,7 +316,6 @@
 
 .method public delKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -337,8 +328,6 @@
 
 .method public delKey(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -379,9 +368,6 @@
 
 .method public delKeyAsUser(Ljava/lang/String;II)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -426,7 +412,6 @@
 
 .method public delete(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -439,8 +424,6 @@
 
 .method public delete(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -481,9 +464,6 @@
 
 .method public deleteAsUser(Ljava/lang/String;II)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -528,10 +508,6 @@
 
 .method public duplicate(Ljava/lang/String;ILjava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -572,12 +548,6 @@
 
 .method public generate(Ljava/lang/String;IIII[[B)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [[B
 
     :try_start_0
     iget-object v0, p0, Landroid/security/KeyStore;->mBinder:Landroid/security/IKeystoreService;
@@ -630,7 +600,6 @@
 
 .method public get(Ljava/lang/String;)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/security/KeyStore;->mBinder:Landroid/security/IKeystoreService;
@@ -660,8 +629,6 @@
 
 .method public getByUid(Ljava/lang/String;I)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/security/KeyStore;->mBinder:Landroid/security/IKeystoreService;
@@ -699,7 +666,6 @@
 
 .method public getPubkey(Ljava/lang/String;)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/security/KeyStore;->mBinder:Landroid/security/IKeystoreService;
@@ -729,7 +695,6 @@
 
 .method public getmtime(Ljava/lang/String;)J
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v3, -0x1
 
@@ -770,8 +735,6 @@
 
 .method public grant(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -812,10 +775,6 @@
 
 .method public importKey(Ljava/lang/String;[BII)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -856,11 +815,6 @@
 
 .method public importKeyAsUser(Ljava/lang/String;[BIII)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v7, 0x1
 
@@ -1012,7 +966,6 @@
 
 .method public isHardwareBacked(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1121,7 +1074,6 @@
 
 .method public password(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1176,10 +1128,6 @@
 
 .method public put(Ljava/lang/String;[BII)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -1246,11 +1194,6 @@
 
 .method public putAsUser(Ljava/lang/String;[BIII)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v7, 0x1
 
@@ -1371,7 +1314,6 @@
 
 .method public resetAsUser(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1412,7 +1354,6 @@
 
 .method public saw(Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -1425,8 +1366,6 @@
 
 .method public saw(Ljava/lang/String;I)[Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1461,8 +1400,6 @@
 
 .method public sign(Ljava/lang/String;[B)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     :try_start_0
     iget-object v1, p0, Landroid/security/KeyStore;->mBinder:Landroid/security/IKeystoreService;
@@ -1553,7 +1490,6 @@
 
 .method public stateAsUser(I)Landroid/security/KeyStore$State;
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v2, p0, Landroid/security/KeyStore;->mBinder:Landroid/security/IKeystoreService;
@@ -1615,8 +1551,6 @@
 
 .method public ungrant(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -1657,7 +1591,6 @@
 
 .method public unlock(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1716,9 +1649,6 @@
 
 .method public verify(Ljava/lang/String;[B[B)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [B
 
     const/4 v1, 0x1
 

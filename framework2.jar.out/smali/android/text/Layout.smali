@@ -208,12 +208,6 @@
 
 .method protected constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
 
     sget-object v5, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
@@ -238,13 +232,6 @@
 
 .method protected constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FF)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # Landroid/text/TextDirectionHeuristic;
-    .param p6    # F
-    .param p7    # F
 
     const/4 v1, 0x0
 
@@ -332,13 +319,6 @@
 
 .method static synthetic access$000(Landroid/text/Layout;III[CILandroid/text/TextUtils$TruncateAt;)V
     .locals 0
-    .param p0    # Landroid/text/Layout;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [C
-    .param p5    # I
-    .param p6    # Landroid/text/TextUtils$TruncateAt;
 
     invoke-direct/range {p0 .. p6}, Landroid/text/Layout;->ellipsize(III[CILandroid/text/TextUtils$TruncateAt;)V
 
@@ -347,12 +327,6 @@
 
 .method private addSelection(IIIIILandroid/graphics/Path;)V
     .locals 19
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Path;
 
     invoke-virtual/range {p0 .. p1}, Landroid/text/Layout;->getLineStart(I)I
 
@@ -508,12 +482,6 @@
 
 .method private ellipsize(III[CILandroid/text/TextUtils$TruncateAt;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [C
-    .param p5    # I
-    .param p6    # Landroid/text/TextUtils$TruncateAt;
 
     invoke-virtual {p0, p3}, Landroid/text/Layout;->getEllipsisCount(I)I
 
@@ -572,10 +540,6 @@
 
 .method public static getDesiredWidth(Ljava/lang/CharSequence;IILandroid/text/TextPaint;)F
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/text/TextPaint;
 
     const/4 v1, 0x0
 
@@ -618,8 +582,6 @@
 
 .method public static getDesiredWidth(Ljava/lang/CharSequence;Landroid/text/TextPaint;)F
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
 
     invoke-virtual {p1, p1}, Landroid/text/TextPaint;->set(Landroid/text/TextPaint;)V
 
@@ -638,7 +600,6 @@
 
 .method private getEllipsisChar(Landroid/text/TextUtils$TruncateAt;)C
     .locals 2
-    .param p1    # Landroid/text/TextUtils$TruncateAt;
 
     const/4 v1, 0x0
 
@@ -663,10 +624,6 @@
 
 .method private getHorizontal(IZIZ)F
     .locals 14
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
 
     move/from16 v0, p3
 
@@ -795,9 +752,6 @@
 
 .method private getHorizontal(IZZ)F
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Landroid/text/Layout;->getLineForOffset(I)I
 
@@ -812,9 +766,6 @@
 
 .method private getLineExtent(ILandroid/text/Layout$TabStops;Z)F
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/text/Layout$TabStops;
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Landroid/text/Layout;->getLineStart(I)I
 
@@ -871,8 +822,6 @@
 
 .method private getLineExtent(IZ)F
     .locals 11
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/text/Layout;->getLineStart(I)I
 
@@ -968,9 +917,6 @@
 
 .method private getLineStartPos(III)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v11, 0x1
 
@@ -1117,9 +1063,6 @@
 
 .method private getLineVisibleEnd(III)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/text/Layout;->mText:Ljava/lang/CharSequence;
 
@@ -1173,7 +1116,6 @@
 
 .method private getOffsetAtStartOf(I)I
     .locals 9
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1276,8 +1218,6 @@
 
 .method private getOffsetToLeftRightOf(IZ)I
     .locals 15
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual/range {p0 .. p1}, Landroid/text/Layout;->getLineForOffset(I)I
 
@@ -1433,7 +1373,6 @@
 
 .method private getParagraphLeadingMargin(I)I
     .locals 16
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1569,9 +1508,6 @@
 
 .method static getParagraphSpans(Landroid/text/Spanned;IILjava/lang/Class;)[Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/text/Spanned;
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1605,10 +1541,6 @@
 
 .method static measurePara(Landroid/text/TextPaint;Ljava/lang/CharSequence;II)F
     .locals 20
-    .param p0    # Landroid/text/TextPaint;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/text/MeasuredText;->obtain()Landroid/text/MeasuredText;
 
@@ -1781,11 +1713,6 @@
 
 .method static nextTab(Ljava/lang/CharSequence;IIF[Ljava/lang/Object;)F
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # [Ljava/lang/Object;
 
     const/high16 v5, 0x41a00000
 
@@ -1884,7 +1811,6 @@
 
 .method private primaryIsTrailingPrevious(I)Z
     .locals 13
-    .param p1    # I
 
     const v12, 0x3ffffff
 
@@ -2061,7 +1987,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -2074,10 +1999,6 @@
 
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;I)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Paint;
-    .param p4    # I
 
     invoke-virtual {p0, p1}, Landroid/text/Layout;->getLineRangeForDraw(Landroid/graphics/Canvas;)J
 
@@ -2116,12 +2037,6 @@
 
 .method public drawBackground(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;III)V
     .locals 26
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Paint;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     move-object/from16 v0, p0
 
@@ -2429,9 +2344,6 @@
 
 .method public drawText(Landroid/graphics/Canvas;II)V
     .locals 47
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -3044,9 +2956,6 @@
 
 .method public getCursorPath(ILandroid/graphics/Path;Ljava/lang/CharSequence;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Ljava/lang/CharSequence;
 
     invoke-virtual {p2}, Landroid/graphics/Path;->reset()V
 
@@ -3424,7 +3333,6 @@
 
 .method public final getLineAscent(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/text/Layout;->getLineTop(I)I
 
@@ -3449,7 +3357,6 @@
 
 .method public final getLineBaseline(I)I
     .locals 2
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x1
 
@@ -3468,7 +3375,6 @@
 
 .method public final getLineBottom(I)I
     .locals 1
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x1
 
@@ -3481,8 +3387,6 @@
 
 .method public getLineBounds(ILandroid/graphics/Rect;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     if-eqz p2, :cond_0
 
@@ -3530,7 +3434,6 @@
 
 .method public final getLineEnd(I)I
     .locals 1
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x1
 
@@ -3543,7 +3446,6 @@
 
 .method public getLineForOffset(I)I
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/text/Layout;->getLineCount()I
 
@@ -3588,7 +3490,6 @@
 
 .method public getLineForVertical(I)I
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/text/Layout;->getLineCount()I
 
@@ -3633,7 +3534,6 @@
 
 .method public getLineLeft(I)F
     .locals 8
-    .param p1    # I
 
     const/4 v7, -0x1
 
@@ -3744,7 +3644,6 @@
 
 .method public getLineMax(I)F
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/text/Layout;->getParagraphLeadingMargin(I)I
 
@@ -3777,7 +3676,6 @@
 
 .method public getLineRangeForDraw(Landroid/graphics/Canvas;)J
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v7, -0x1
 
@@ -3874,7 +3772,6 @@
 
 .method public getLineRight(I)F
     .locals 7
-    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -4002,7 +3899,6 @@
 
 .method public getLineVisibleEnd(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/text/Layout;->getLineStart(I)I
 
@@ -4023,7 +3919,6 @@
 
 .method public getLineWidth(I)F
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/text/Layout;->getParagraphLeadingMargin(I)I
 
@@ -4056,8 +3951,6 @@
 
 .method public getOffsetForHorizontal(IF)I
     .locals 20
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual/range {p0 .. p1}, Landroid/text/Layout;->getLineEnd(I)I
 
@@ -4364,7 +4257,6 @@
 
 .method public getOffsetToLeftOf(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -4377,7 +4269,6 @@
 
 .method public getOffsetToRightOf(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4398,7 +4289,6 @@
 
 .method public final getParagraphAlignment(I)Landroid/text/Layout$Alignment;
     .locals 7
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/Layout;->mAlignment:Landroid/text/Layout$Alignment;
 
@@ -4447,7 +4337,6 @@
 
 .method public final getParagraphLeft(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -4477,7 +4366,6 @@
 
 .method public final getParagraphRight(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/text/Layout;->mWidth:I
 
@@ -4509,7 +4397,6 @@
 
 .method public getPrimaryHorizontal(I)F
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4522,8 +4409,6 @@
 
 .method public getPrimaryHorizontal(IZ)F
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Landroid/text/Layout;->primaryIsTrailingPrevious(I)Z
 
@@ -4538,7 +4423,6 @@
 
 .method public getSecondaryHorizontal(I)F
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4551,8 +4435,6 @@
 
 .method public getSecondaryHorizontal(IZ)F
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Landroid/text/Layout;->primaryIsTrailingPrevious(I)Z
 
@@ -4577,9 +4459,6 @@
 
 .method public getSelectionPath(IILandroid/graphics/Path;)V
     .locals 19
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Path;
 
     invoke-virtual/range {p3 .. p3}, Landroid/graphics/Path;->reset()V
 
@@ -4910,7 +4789,6 @@
 
 .method public final increaseWidthTo(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/text/Layout;->mWidth:I
 
@@ -4932,7 +4810,6 @@
 
 .method public isLevelBoundary(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -5040,7 +4917,6 @@
 
 .method public isRtlCharAt(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -5133,12 +5009,6 @@
 
 .method replaceWith(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
 
     if-gez p3, :cond_0
 
@@ -5203,7 +5073,6 @@
 
 .method public shouldClampCursor(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 

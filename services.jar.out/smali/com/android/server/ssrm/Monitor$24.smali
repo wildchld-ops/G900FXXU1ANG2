@@ -33,7 +33,6 @@
 # virtual methods
 .method getPackageNameFromPID(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/ssrm/Monitor$24;->this$0:Lcom/android/server/ssrm/Monitor;
 
@@ -77,9 +76,6 @@
 
 .method public onForegroundActivitiesChanged(IIZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -191,17 +187,12 @@
 
 .method public onImportanceChanged(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onProcessDied(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

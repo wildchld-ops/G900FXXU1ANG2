@@ -12,7 +12,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/swypeconnect/ac/ACManager;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,8 +87,6 @@
 
 .method public onStartInput(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/nuance/swypeconnect/ac/ACLanguage;->manager:Lcom/nuance/swypeconnect/ac/ACManager;
@@ -127,7 +124,6 @@
 
 .method public setActiveLanguages([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguage;->config:Lcom/nuance/connect/api/ConfigService;
 
@@ -138,7 +134,6 @@
 
 .method public setActiveLocale(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACLanguage;->config:Lcom/nuance/connect/api/ConfigService;
 

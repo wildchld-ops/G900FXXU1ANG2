@@ -50,7 +50,6 @@
 
 .method private logClickEvent(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -250,7 +249,6 @@
 
 .method public refund(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0xd6
 
@@ -272,9 +270,6 @@
 
 .method public uninstall(ZZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v0, 0xd7
 

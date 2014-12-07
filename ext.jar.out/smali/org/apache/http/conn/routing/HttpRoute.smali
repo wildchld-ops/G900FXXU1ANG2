@@ -24,12 +24,6 @@
 # direct methods
 .method private constructor <init>(Ljava/net/InetAddress;Lorg/apache/http/HttpHost;[Lorg/apache/http/HttpHost;ZLorg/apache/http/conn/routing/RouteInfo$TunnelType;Lorg/apache/http/conn/routing/RouteInfo$LayerType;)V
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # [Lorg/apache/http/HttpHost;
-    .param p4    # Z
-    .param p5    # Lorg/apache/http/conn/routing/RouteInfo$TunnelType;
-    .param p6    # Lorg/apache/http/conn/routing/RouteInfo$LayerType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +80,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpHost;)V
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
 
     const/4 v1, 0x0
 
@@ -109,10 +102,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/HttpHost;Z)V
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Lorg/apache/http/HttpHost;
-    .param p4    # Z
 
     invoke-static {p3}, Lorg/apache/http/conn/routing/HttpRoute;->toChain(Lorg/apache/http/HttpHost;)[Lorg/apache/http/HttpHost;
 
@@ -164,12 +153,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Lorg/apache/http/HttpHost;ZLorg/apache/http/conn/routing/RouteInfo$TunnelType;Lorg/apache/http/conn/routing/RouteInfo$LayerType;)V
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Lorg/apache/http/HttpHost;
-    .param p4    # Z
-    .param p5    # Lorg/apache/http/conn/routing/RouteInfo$TunnelType;
-    .param p6    # Lorg/apache/http/conn/routing/RouteInfo$LayerType;
 
     invoke-static {p3}, Lorg/apache/http/conn/routing/HttpRoute;->toChain(Lorg/apache/http/HttpHost;)[Lorg/apache/http/HttpHost;
 
@@ -194,9 +177,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;Z)V
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -219,12 +199,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpHost;Ljava/net/InetAddress;[Lorg/apache/http/HttpHost;ZLorg/apache/http/conn/routing/RouteInfo$TunnelType;Lorg/apache/http/conn/routing/RouteInfo$LayerType;)V
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # [Lorg/apache/http/HttpHost;
-    .param p4    # Z
-    .param p5    # Lorg/apache/http/conn/routing/RouteInfo$TunnelType;
-    .param p6    # Lorg/apache/http/conn/routing/RouteInfo$LayerType;
 
     invoke-static {p3}, Lorg/apache/http/conn/routing/HttpRoute;->toChain([Lorg/apache/http/HttpHost;)[Lorg/apache/http/HttpHost;
 
@@ -249,7 +223,6 @@
 
 .method private static toChain(Lorg/apache/http/HttpHost;)[Lorg/apache/http/HttpHost;
     .locals 2
-    .param p0    # Lorg/apache/http/HttpHost;
 
     if-nez p0, :cond_0
 
@@ -272,7 +245,6 @@
 
 .method private static toChain([Lorg/apache/http/HttpHost;)[Lorg/apache/http/HttpHost;
     .locals 8
-    .param p0    # [Lorg/apache/http/HttpHost;
 
     const/4 v7, 0x0
 
@@ -348,7 +320,6 @@
 
 .method public final equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 
@@ -536,7 +507,6 @@
 
 .method public final getHopTarget(I)Lorg/apache/http/HttpHost;
     .locals 5
-    .param p1    # I
 
     if-gez p1, :cond_0
 

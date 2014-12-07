@@ -94,7 +94,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v4, 0x0
 
@@ -207,7 +206,6 @@
 
 .method private ackAddonFile(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -492,7 +490,6 @@
 
 .method private checkSuccessfulInstall(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/AddonManager;->addonList:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -511,7 +508,6 @@
 
 .method private cleanupFiles(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -635,7 +631,6 @@
 
 .method private fetchAddon(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -724,7 +719,6 @@
 
 .method private getAddon(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -902,7 +896,6 @@
 
 .method private getList(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1007,8 +1000,6 @@
 
 .method private getResource(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->client:Lcom/nuance/connect/service/ConnectClient;
 
@@ -1039,7 +1030,6 @@
 
 .method private installAddon(Ljava/lang/String;)V
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1480,7 +1470,6 @@
 
 .method private isPackageInstalled(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1529,7 +1518,6 @@
 
 .method private loadPropertiesFromJSON(Lorg/json/JSONObject;)Ljava/util/Map;
     .locals 5
-    .param p1    # Lorg/json/JSONObject;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1723,7 +1711,6 @@
 
 .method private processAckResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1804,7 +1791,6 @@
 
 .method private processAddonDownloadResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 6
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v3, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -1954,7 +1940,6 @@
 
 .method private processGetResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2053,7 +2038,6 @@
 
 .method private processListResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 9
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v6, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2251,7 +2235,6 @@
 
 .method private processStatusResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v4, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2491,8 +2474,6 @@
 
 .method private sendStatus(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2643,7 +2624,6 @@
 
 .method private unwindAddonInstall(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AddonManager;->addonList:Lcom/nuance/connect/util/InstallMetadata;
 
@@ -2676,8 +2656,6 @@
 # virtual methods
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AddonManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -2793,9 +2771,6 @@
 
 .method public onDownloadStatusResponse(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 
@@ -2881,7 +2856,6 @@
 
 .method public onFileResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 
@@ -2907,7 +2881,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 
@@ -3059,7 +3032,6 @@
 
 .method public onIOExceptionResponse(Lcom/nuance/connect/service/comm/Command;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v3, 0x0
 
@@ -3136,7 +3108,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 

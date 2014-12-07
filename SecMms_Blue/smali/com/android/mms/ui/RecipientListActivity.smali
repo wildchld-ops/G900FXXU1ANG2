@@ -82,7 +82,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/RecipientListActivity;)Lcom/android/mms/ui/RecipientListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientListActivity;->mListAdapter:Lcom/android/mms/ui/RecipientListAdapter;
 
@@ -91,7 +90,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/RecipientListActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientListActivity;->mListView:Landroid/widget/ListView;
 
@@ -224,7 +222,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -290,8 +287,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -447,7 +442,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v0, "ContactResult"
 

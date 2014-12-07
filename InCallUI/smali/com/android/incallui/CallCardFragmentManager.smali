@@ -48,7 +48,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     const/4 v0, 0x0
 
@@ -109,7 +108,6 @@
 # virtual methods
 .method public checkAndHideFragment(Ljava/lang/Enum;)V
     .locals 2
-    .param p1    # Ljava/lang/Enum;
 
     sget-object v0, Lcom/android/incallui/CallCardFragmentManager$1;->$SwitchMap$com$android$incallui$CallCardFragmentManager$CallCardMode:[I
 
@@ -179,7 +177,6 @@
 
 .method protected bridge synthetic checkAndSet(Z)Lcom/android/incallui/BaseFragment;
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/CallCardFragmentManager;->checkAndSet(Z)Lcom/android/incallui/CallCardFragment;
 
@@ -190,7 +187,6 @@
 
 .method protected checkAndSet(Z)Lcom/android/incallui/CallCardFragment;
     .locals 17
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -796,7 +792,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -811,7 +806,6 @@
 
 .method public onCoverStatusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardFragmentManager;->mIsCoverClosed:Z
 
@@ -872,8 +866,6 @@
 
 .method public onIncomingCall(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -886,30 +878,24 @@
 
 .method public onIncomingModifyCall(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onResultModifyCallRequest(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v0, 0x0
 
@@ -920,7 +906,6 @@
 
 .method public onWindowStatusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardFragmentManager;->mIsMultiWindowMode:Z
 
@@ -933,7 +918,6 @@
 
 .method protected bridge synthetic setCurrentFragment(Lcom/android/incallui/BaseFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/BaseFragment;
 
     check-cast p1, Lcom/android/incallui/CallCardFragment;
 
@@ -944,7 +928,6 @@
 
 .method protected setCurrentFragment(Lcom/android/incallui/CallCardFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/CallCardFragment;
 
     iput-object p1, p0, Lcom/android/incallui/CallCardFragmentManager;->currentFragment:Lcom/android/incallui/CallCardFragment;
 
@@ -953,8 +936,6 @@
 
 .method protected setFragment(Ljava/lang/Enum;Z)V
     .locals 4
-    .param p1    # Ljava/lang/Enum;
-    .param p2    # Z
 
     const v0, 0x7f080128
 

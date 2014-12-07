@@ -1458,8 +1458,6 @@
 
 .method private buildNationalNumberForParsing(Ljava/lang/String;Ljava/lang/StringBuilder;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuilder;
 
     const-string v4, ";phone-context="
 
@@ -1560,8 +1558,6 @@
 
 .method private checkRegionForParsing(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->isValidRegionCode(Ljava/lang/String;)Z
 
@@ -1603,7 +1599,6 @@
 
 .method private static close(Ljava/io/InputStream;)V
     .locals 4
-    .param p0    # Ljava/io/InputStream;
 
     if-eqz p0, :cond_0
 
@@ -1632,7 +1627,6 @@
 
 .method public static convertAlphaCharactersInNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->ALPHA_PHONE_MAPPINGS:Ljava/util/Map;
 
@@ -1647,7 +1641,6 @@
 
 .method private static createExtnPattern(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1714,7 +1707,6 @@
 
 .method static extractPossibleNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1815,9 +1807,6 @@
 
 .method private formatNsn(Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
 
     const/4 v0, 0x0
 
@@ -1830,10 +1819,6 @@
 
 .method private formatNsn(Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p2}, Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;->intlNumberFormats()Ljava/util/List;
 
@@ -1881,10 +1866,6 @@
 
 .method private formatNsnUsingPattern(Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p2}, Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;->getFormat()Ljava/lang/String;
 
@@ -2036,7 +2017,6 @@
 
 .method static formattingRuleHasFirstGroupOnly(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->FIRST_GROUP_ONLY_PREFIX_PATTERN:Ljava/util/regex/Pattern;
 
@@ -2053,7 +2033,6 @@
 
 .method private getCountryCodeForValidRegion(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getMetadataForRegion(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
 
@@ -2140,7 +2119,6 @@
 
 .method static declared-synchronized getInstance(Ljava/lang/String;Ljava/util/Map;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2198,8 +2176,6 @@
 
 .method private getMetadataForRegionOrCallingCode(ILjava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "001"
 
@@ -2226,8 +2202,6 @@
 
 .method private getNumberTypeHelper(Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
 
     invoke-virtual {p2}, Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;->getGeneralDesc()Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
@@ -2441,7 +2415,6 @@
 
 .method private getRegionCodeForNumberFromRegionList(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/util/List;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2527,7 +2500,6 @@
 
 .method private hasFormattingPatternForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 7
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     const/4 v5, 0x0
 
@@ -2571,7 +2543,6 @@
 
 .method private hasUnexpectedItalianLeadingZero(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 1
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->isItalianLeadingZero()Z
 
@@ -2602,7 +2573,6 @@
 
 .method private hasValidCountryCallingCode(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->countryCallingCodeToRegionCodeMap:Ljava/util/Map;
 
@@ -2619,7 +2589,6 @@
 
 .method private init(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -2732,8 +2701,6 @@
 
 .method private isNationalNumberSuffixOfTheOther(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 4
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->getNationalNumber()J
 
@@ -2777,8 +2744,6 @@
 
 .method private isNumberMatchingDesc(Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
 
     iget-object v2, p0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->regexCache:Lcom/android/i18n/phonenumbers/RegexCache;
 
@@ -2833,7 +2798,6 @@
 
 .method private isValidRegionCode(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2858,7 +2822,6 @@
 
 .method static isViablePhoneNumber(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2889,10 +2852,6 @@
 
 .method private maybeAppendFormattedExtension(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
-    .param p4    # Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->hasExtension()Z
 
@@ -2971,7 +2930,6 @@
 
 .method static normalize(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->VALID_ALPHA_PHONE_PATTERN:Ljava/util/regex/Pattern;
 
@@ -3006,7 +2964,6 @@
 
 .method static normalize(Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3029,8 +2986,6 @@
 
 .method static normalizeDigits(Ljava/lang/String;Z)Ljava/lang/StringBuilder;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -3084,7 +3039,6 @@
 
 .method public static normalizeDigitsOnly(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3101,8 +3055,6 @@
 
 .method private static normalizeHelper(Ljava/lang/String;Ljava/util/Map;Z)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3178,11 +3130,6 @@
 
 .method private parseHelper(Ljava/lang/String;Ljava/lang/String;ZZLcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)V
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/i18n/phonenumbers/NumberParseException;
@@ -3565,8 +3512,6 @@
 
 .method private parsePrefixAsIdd(Ljava/util/regex/Pattern;Ljava/lang/StringBuilder;)Z
     .locals 8
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/StringBuilder;
 
     const/4 v5, 0x1
 
@@ -3632,9 +3577,6 @@
 
 .method private prefixNumberWithCountryCallingCode(ILcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
-    .param p3    # Ljava/lang/StringBuilder;
 
     const/16 v3, 0x2b
 
@@ -3710,9 +3652,6 @@
 
 .method private rawInputContainsNationalPrefix(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3783,8 +3722,6 @@
 
 .method private testNumberLengthAgainstPattern(Ljava/util/regex/Pattern;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$ValidationResult;
     .locals 2
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -3822,7 +3759,6 @@
 # virtual methods
 .method canBeInternationallyDialled(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 4
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     const/4 v2, 0x1
 
@@ -3862,7 +3798,6 @@
 
 .method chooseFormattingPatternForNumber(Ljava/util/List;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
     .locals 6
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3953,8 +3888,6 @@
 
 .method extractCountryCode(Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;)I
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
 
@@ -4033,8 +3966,6 @@
 
 .method public findNumbers(Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/Iterable;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4067,10 +3998,6 @@
 
 .method public findNumbers(Ljava/lang/CharSequence;Ljava/lang/String;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;J)Ljava/lang/Iterable;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$Leniency;
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4104,8 +4031,6 @@
 
 .method public format(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->getNationalNumber()J
 
@@ -4154,9 +4079,6 @@
 
 .method public format(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;Ljava/lang/StringBuilder;)V
     .locals 5
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
-    .param p3    # Ljava/lang/StringBuilder;
 
     const/4 v4, 0x0
 
@@ -4218,8 +4140,6 @@
 
 .method public formatByPattern(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;Ljava/util/List;)Ljava/lang/String;
     .locals 11
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4353,8 +4273,6 @@
 
 .method public formatInOriginalFormat(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;)Ljava/lang/String;
     .locals 19
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->hasRawInput()Z
 
@@ -4693,8 +4611,6 @@
 
 .method public formatNationalNumberWithCarrierCode(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->getCountryCode()I
 
@@ -4753,8 +4669,6 @@
 
 .method public formatNationalNumberWithPreferredCarrierCode(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->hasPreferredDomesticCarrierCode()Z
 
@@ -4776,9 +4690,6 @@
 
 .method formatNsnUsingPattern(Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$NumberFormat;
-    .param p3    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberFormat;
 
     const/4 v0, 0x0
 
@@ -4791,9 +4702,6 @@
 
 .method public formatNumberForMobileDialing(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 9
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v7, 0x1
 
@@ -5020,8 +4928,6 @@
 
 .method public formatOutOfCountryCallingNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -5244,8 +5150,6 @@
 
 .method public formatOutOfCountryKeepingAlphaChars(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;)Ljava/lang/String;
     .locals 18
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->getRawInput()Ljava/lang/String;
 
@@ -5564,7 +5468,6 @@
 
 .method public getAsYouTypeFormatter(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/AsYouTypeFormatter;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/i18n/phonenumbers/AsYouTypeFormatter;
 
@@ -5575,7 +5478,6 @@
 
 .method public getCountryCodeForRegion(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->isValidRegionCode(Ljava/lang/String;)Z
 
@@ -5633,7 +5535,6 @@
 
 .method public getExampleNumber(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;->FIXED_LINE:Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
@@ -5646,7 +5547,6 @@
 
 .method public getExampleNumberForNonGeoEntity(I)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getMetadataForNonGeographicalRegion(I)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
 
@@ -5751,8 +5651,6 @@
 
 .method public getExampleNumberForType(Ljava/lang/String;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
     const/4 v2, 0x0
 
@@ -5836,7 +5734,6 @@
 
 .method public getLengthOfGeographicalAreaCode(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)I
     .locals 3
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     const/4 v1, 0x0
 
@@ -5883,7 +5780,6 @@
 
 .method public getLengthOfNationalDestinationCode(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)I
     .locals 6
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     const/4 v5, 0x3
 
@@ -5977,7 +5873,6 @@
 
 .method getMetadataForNonGeographicalRegion(I)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->countryCodeToNonGeographicalMetadataMap:Ljava/util/Map;
 
@@ -6054,7 +5949,6 @@
 
 .method getMetadataForRegion(Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->isValidRegionCode(Ljava/lang/String;)Z
 
@@ -6115,7 +6009,6 @@
 
 .method public getNationalSignificantNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6150,8 +6043,6 @@
 
 .method public getNddPrefixForRegion(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -6233,8 +6124,6 @@
 
 .method getNumberDescByType(Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;)Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneNumberDesc;
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
-    .param p2    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
     sget-object v0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil$2;->$SwitchMap$com$android$i18n$phonenumbers$PhoneNumberUtil$PhoneNumberType:[I
 
@@ -6341,7 +6230,6 @@
 
 .method public getNumberType(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
     .locals 4
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getRegionCodeForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Ljava/lang/String;
 
@@ -6376,7 +6264,6 @@
 
 .method public getRegionCodeForCountryCode(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->countryCallingCodeToRegionCodeMap:Ljava/util/Map;
 
@@ -6411,7 +6298,6 @@
 
 .method public getRegionCodeForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Ljava/lang/String;
     .locals 7
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p1}, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;->getCountryCode()I
 
@@ -6503,7 +6389,6 @@
 
 .method public getRegionCodesForCountryCode(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -6586,7 +6471,6 @@
 
 .method public isAlphaNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->isViablePhoneNumber(Ljava/lang/String;)Z
 
@@ -6621,7 +6505,6 @@
 
 .method isLeadingZeroPossible(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getRegionCodeForCountryCode(I)Ljava/lang/String;
 
@@ -6648,7 +6531,6 @@
 
 .method public isNANPACountry(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->nanpaRegions:Ljava/util/Set;
 
@@ -6661,7 +6543,6 @@
 
 .method isNumberGeographical(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getNumberType(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$PhoneNumberType;
 
@@ -6689,8 +6570,6 @@
 
 .method public isNumberMatch(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$MatchType;
     .locals 6
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     new-instance v0, Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
@@ -6858,8 +6737,6 @@
 
 .method public isNumberMatch(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$MatchType;
     .locals 11
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-string v0, "ZZ"
@@ -6958,8 +6835,6 @@
 
 .method public isNumberMatch(Ljava/lang/String;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$MatchType;
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-string v3, "ZZ"
@@ -7088,7 +6963,6 @@
 
 .method public isPossibleNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->isPossibleNumberWithReason(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$ValidationResult;
 
@@ -7111,8 +6985,6 @@
 
 .method public isPossibleNumber(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0, p1, p2}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->parse(Ljava/lang/String;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
@@ -7138,7 +7010,6 @@
 
 .method public isPossibleNumberWithReason(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Lcom/android/i18n/phonenumbers/PhoneNumberUtil$ValidationResult;
     .locals 10
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getNationalSignificantNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Ljava/lang/String;
 
@@ -7232,7 +7103,6 @@
 
 .method public isValidNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 2
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->getRegionCodeForNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Ljava/lang/String;
 
@@ -7247,8 +7117,6 @@
 
 .method public isValidNumberForRegion(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -7333,9 +7201,6 @@
 
 .method loadMetadataFromFile(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v9, "001"
 
@@ -7664,11 +7529,6 @@
 
 .method maybeExtractCountryCode(Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;Ljava/lang/StringBuilder;ZLcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)I
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
-    .param p3    # Ljava/lang/StringBuilder;
-    .param p4    # Z
-    .param p5    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/i18n/phonenumbers/NumberParseException;
@@ -7893,7 +7753,6 @@
 
 .method maybeStripExtension(Ljava/lang/StringBuilder;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     sget-object v4, Lcom/android/i18n/phonenumbers/PhoneNumberUtil;->EXTN_PATTERN:Ljava/util/regex/Pattern;
 
@@ -7968,8 +7827,6 @@
 
 .method maybeStripInternationalPrefixAndNormalize(Ljava/lang/StringBuilder;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber$CountryCodeSource;
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->length()I
 
@@ -8036,9 +7893,6 @@
 
 .method maybeStripNationalPrefixAndCarrierCode(Ljava/lang/StringBuilder;Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;Ljava/lang/StringBuilder;)Z
     .locals 12
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Lcom/android/i18n/phonenumbers/Phonemetadata$PhoneMetadata;
-    .param p3    # Ljava/lang/StringBuilder;
 
     const/4 v9, 0x1
 
@@ -8230,8 +8084,6 @@
 
 .method public parse(Ljava/lang/String;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/i18n/phonenumbers/NumberParseException;
@@ -8249,9 +8101,6 @@
 
 .method public parse(Ljava/lang/String;Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/i18n/phonenumbers/NumberParseException;
@@ -8277,8 +8126,6 @@
 
 .method public parseAndKeepRawInput(Ljava/lang/String;Ljava/lang/String;)Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/i18n/phonenumbers/NumberParseException;
@@ -8296,9 +8143,6 @@
 
 .method public parseAndKeepRawInput(Ljava/lang/String;Ljava/lang/String;Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/i18n/phonenumbers/NumberParseException;
@@ -8324,7 +8168,6 @@
 
 .method public truncateTooLongNumber(Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;)Z
     .locals 6
-    .param p1    # Lcom/android/i18n/phonenumbers/Phonenumber$PhoneNumber;
 
     const/4 v3, 0x1
 

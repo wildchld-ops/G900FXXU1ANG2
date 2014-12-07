@@ -33,7 +33,6 @@
 # virtual methods
 .method public onKeyguardVisibilityChanged(Z)V
     .locals 5
-    .param p1    # Z
 
     const-string v2, "FULKeyguardFaceUnlockView"
 
@@ -163,7 +162,6 @@
 
 .method public onPhoneStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "FULKeyguardFaceUnlockView"
 
@@ -292,7 +290,6 @@
 
 .method public onUserSwitchComplete(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "FULKeyguardFaceUnlockView"
 
@@ -342,7 +339,6 @@
 
 .method public onUserSwitching(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "FULKeyguardFaceUnlockView"
 

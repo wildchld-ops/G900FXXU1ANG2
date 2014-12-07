@@ -62,7 +62,6 @@
 
 .method public static declared-synchronized formatIso8601Date(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -120,7 +119,6 @@
 
 .method public static declared-synchronized formatShortDisplayDate(J)Ljava/lang/String;
     .locals 3
-    .param p0    # J
 
     const-class v1, Lcom/google/android/finsky/utils/DateUtils;
 
@@ -153,7 +151,6 @@
 
 .method public static declared-synchronized formatShortDisplayDateUtc(J)Ljava/lang/String;
     .locals 3
-    .param p0    # J
 
     const-class v1, Lcom/google/android/finsky/utils/DateUtils;
 

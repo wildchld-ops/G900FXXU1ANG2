@@ -69,7 +69,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
@@ -80,7 +79,6 @@
 
 .method public constructor <init>(ILjava/util/List;)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -100,7 +98,6 @@
 
 .method public static createFromBundles(ILjava/util/List;)Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
     .locals 4
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -157,7 +154,6 @@
 # virtual methods
 .method public add(Lcom/google/android/finsky/services/ConsumptionAppDoc;)Z
     .locals 4
-    .param p1    # Lcom/google/android/finsky/services/ConsumptionAppDoc;
 
     const/4 v0, 0x0
 
@@ -192,7 +188,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/services/ConsumptionAppDoc;
 
@@ -264,8 +259,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;->mBackend:I
 

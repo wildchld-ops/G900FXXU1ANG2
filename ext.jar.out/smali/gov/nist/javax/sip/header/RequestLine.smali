@@ -33,8 +33,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/address/GenericURI;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/address/GenericURI;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/header/SIPObject;-><init>()V
 
@@ -98,7 +96,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/header/RequestLine;->method:Ljava/lang/String;
 
@@ -139,7 +136,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -459,7 +455,6 @@
 
 .method public setMethod(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/RequestLine;->method:Ljava/lang/String;
 
@@ -468,7 +463,6 @@
 
 .method public setSipVersion(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/RequestLine;->sipVersion:Ljava/lang/String;
 
@@ -477,7 +471,6 @@
 
 .method public setUri(Ljavax/sip/address/URI;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 

@@ -214,10 +214,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 11
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/high16 v10, 0x1040000
 
@@ -464,7 +460,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const-string v0, "TwGLNfcConnectView"
 
@@ -521,8 +516,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x52
 
@@ -541,8 +534,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x52
 

@@ -134,7 +134,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -344,7 +343,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mContext:Landroid/content/Context;
 
@@ -353,8 +351,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/graphics/Rect;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->showGuide(Landroid/graphics/Rect;)V
 
@@ -363,9 +359,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/graphics/Rect;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->showGuide(Landroid/graphics/Rect;I)V
 
@@ -374,9 +367,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/graphics/Rect;Z)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->setStackBound(Landroid/graphics/Rect;Z)V
 
@@ -385,7 +375,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/policy/impl/MultiPhoneWindow;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->dismissGuide()V
 
@@ -394,7 +383,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/policy/impl/MultiPhoneWindow;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->adjustScaleFactor()V
 
@@ -403,7 +391,6 @@
 
 .method static synthetic access$1500(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mWindowTitleBar:Landroid/view/View;
 
@@ -412,7 +399,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mMultiPhoneWindowListener:Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;
 
@@ -421,7 +407,6 @@
 
 .method static synthetic access$1700(Lcom/android/internal/policy/impl/MultiPhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mFocusLineColor:I
 
@@ -430,7 +415,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/policy/impl/MultiPhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mUnFocusLineColor:I
 
@@ -439,7 +423,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mIsBorder:Z
 
@@ -448,8 +431,6 @@
 
 .method static synthetic access$1902(Lcom/android/internal/policy/impl/MultiPhoneWindow;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mIsBorder:Z
 
@@ -458,7 +439,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->getMultiWindowStyle()Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -469,7 +449,6 @@
 
 .method static synthetic access$2000(Lcom/android/internal/policy/impl/MultiPhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mOutLineColor:I
 
@@ -478,11 +457,6 @@
 
 .method static synthetic access$2100(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/graphics/Canvas;IILandroid/graphics/Paint;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Paint;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->drawBorderLine(Landroid/graphics/Canvas;IILandroid/graphics/Paint;)V
 
@@ -491,7 +465,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Lcom/android/internal/policy/impl/MultiPhoneWindow$VideoCapabilityReceiver;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mVideoCapabilityReceiver:Lcom/android/internal/policy/impl/MultiPhoneWindow$VideoCapabilityReceiver;
 
@@ -500,7 +473,6 @@
 
 .method static synthetic access$2300(Lcom/android/internal/policy/impl/MultiPhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->getState()I
 
@@ -511,7 +483,6 @@
 
 .method static synthetic access$2400(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/graphics/drawable/ColorDrawable;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mTrasnparentColor:Landroid/graphics/drawable/ColorDrawable;
 
@@ -520,7 +491,6 @@
 
 .method static synthetic access$2500(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mContents:Ljava/util/ArrayList;
 
@@ -529,7 +499,6 @@
 
 .method static synthetic access$2600(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mDecorBackground:Landroid/graphics/drawable/Drawable;
 
@@ -538,8 +507,6 @@
 
 .method static synthetic access$2602(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mDecorBackground:Landroid/graphics/drawable/Drawable;
 
@@ -548,7 +515,6 @@
 
 .method static synthetic access$2700(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Lcom/samsung/android/multiwindow/MultiWindowFacade;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
@@ -557,7 +523,6 @@
 
 .method static synthetic access$2800(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mToken:Landroid/os/IBinder;
 
@@ -566,8 +531,6 @@
 
 .method static synthetic access$2900(Lcom/android/internal/policy/impl/MultiPhoneWindow;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->requestState(I)V
 
@@ -576,7 +539,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/MultiPhoneWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mTitleBarHeight:I
 
@@ -585,7 +547,6 @@
 
 .method static synthetic access$3000(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mActivity:Landroid/app/Activity;
 
@@ -594,7 +555,6 @@
 
 .method static synthetic access$3100(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mMultiWindowExitListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;
 
@@ -603,7 +563,6 @@
 
 .method static synthetic access$3200(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mWindowIconic:Landroid/widget/ImageView;
 
@@ -612,7 +571,6 @@
 
 .method static synthetic access$3300(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Lcom/android/internal/policy/impl/GuideView;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mGuideView:Lcom/android/internal/policy/impl/GuideView;
 
@@ -621,10 +579,6 @@
 
 .method static synthetic access$3400(Lcom/android/internal/policy/impl/MultiPhoneWindow;IIZ)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->moveStackBound(IIZ)V
 
@@ -633,8 +587,6 @@
 
 .method static synthetic access$3500(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/widget/ImageView;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Landroid/widget/ImageView;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->setMinimizedDrawable(Landroid/widget/ImageView;)V
 
@@ -643,8 +595,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/MultiPhoneWindow;Z)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->initStackBound(Z)V
 
@@ -653,7 +603,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mResizablePadding:Landroid/graphics/Rect;
 
@@ -662,7 +611,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->forceHideInputMethod()Z
 
@@ -673,7 +621,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/MultiPhoneWindow;)[B
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mIvt:[B
 
@@ -682,7 +629,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/os/SystemVibrator;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mVibrator:Landroid/os/SystemVibrator;
 
@@ -691,7 +637,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/MultiPhoneWindow;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mTmpBound:Landroid/graphics/Rect;
 
@@ -700,7 +645,6 @@
 
 .method private adjustMinimizedStackBoxBound(Landroid/graphics/Rect;)V
     .locals 8
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
@@ -936,7 +880,6 @@
 
 .method private adjustStackBoxBound(Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
@@ -1248,10 +1191,6 @@
 
 .method private drawBorderLine(Landroid/graphics/Canvas;IILandroid/graphics/Paint;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Paint;
 
     const/4 v1, 0x0
 
@@ -1513,7 +1452,6 @@
 
 .method private initStackBound(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->getStackBound()Landroid/graphics/Rect;
 
@@ -1548,9 +1486,6 @@
 
 .method private moveStackBound(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v0, Landroid/graphics/Rect;
 
@@ -1590,7 +1525,6 @@
 
 .method private needTitleBar(Lcom/samsung/android/multiwindow/MultiWindowStyle;)Z
     .locals 4
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v1, 0x0
 
@@ -1629,7 +1563,6 @@
 
 .method private refreshUI(Z)V
     .locals 17
-    .param p1    # Z
 
     invoke-direct/range {p0 .. p0}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->getMultiWindowStyle()Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -2363,7 +2296,6 @@
 
 .method private requestState(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x10
 
@@ -2488,7 +2420,6 @@
 
 .method private setMinimizedDrawable(Landroid/widget/ImageView;)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mMinimizedIcon:Landroid/graphics/drawable/Drawable;
 
@@ -2535,8 +2466,6 @@
 
 .method private setStackBound(Landroid/graphics/Rect;Z)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     const/4 v1, 0x4
 
@@ -2628,7 +2557,6 @@
 
 .method private showGuide(Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mGuideView:Lcom/android/internal/policy/impl/GuideView;
 
@@ -2668,8 +2596,6 @@
 
 .method private showGuide(Landroid/graphics/Rect;I)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/MultiPhoneWindow;->showGuide(Landroid/graphics/Rect;)V
 
@@ -2682,7 +2608,6 @@
 
 .method private updateMultiWindowStyle(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v2, 0x1
 
@@ -2933,7 +2858,6 @@
 
 .method public disableMultiWindow(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2985,7 +2909,6 @@
 
 .method protected generateLayout(Lcom/android/internal/policy/impl/PhoneWindow$DecorView;)Landroid/view/ViewGroup;
     .locals 11
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow$DecorView;
 
     const v10, 0x1020356
 
@@ -3539,8 +3462,6 @@
 
 .method public minimizeWindow(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x4
 
@@ -3579,7 +3500,6 @@
 
 .method public moveWindow(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;
 
@@ -3592,8 +3512,6 @@
 
 .method public multiWindow(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x2
 
@@ -3604,7 +3522,6 @@
 
 .method public normalWindow(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3615,7 +3532,6 @@
 
 .method public onMultiWindowConfigurationChanged(I)V
     .locals 21
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -4180,8 +4096,6 @@
 
 .method public onMultiWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 9
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p2    # I
 
     const/4 v8, 0x2
 
@@ -4438,7 +4352,6 @@
 
 .method public setExitListener(Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mMultiWindowExitListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$ExitListener;
 
@@ -4449,7 +4362,6 @@
 
 .method public setIsolatedCenterPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     const/4 v0, 0x0
 
@@ -4477,7 +4389,6 @@
 
 .method public setMinimizeIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mThumbnail:Lcom/android/internal/policy/impl/MultiPhoneWindow$ApplicationThumbNail;
 
@@ -4534,7 +4445,6 @@
 
 .method public setStateChangeListener(Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$StateChangeListener;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$StateChangeListener;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow;->mMultiWindowListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowListener$StateChangeListener;
 

@@ -61,8 +61,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/keyguard/sec/KeyguardUnlockView$WakeUpCommandCallback;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/keyguard/sec/KeyguardUnlockView$WakeUpCommandCallback;
 
     const/4 v2, 0x1
 
@@ -191,7 +189,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mWakeUpCmdRecognizer:Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
@@ -200,8 +197,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;Lcom/samsung/voiceshell/WakeUpCmdRecognizer;)Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
-    .param p1    # Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mWakeUpCmdRecognizer:Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 
@@ -210,7 +205,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mVoiceVerifyStarted:Z
 
@@ -219,7 +213,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->dismissLockScreen()V
 
@@ -228,8 +221,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mVoiceVerifyStarted:Z
 
@@ -238,7 +229,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mVEPowerManager:Landroid/os/PowerManager;
 
@@ -247,7 +237,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)Landroid/app/KeyguardManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mKeyguardManager:Landroid/app/KeyguardManager;
 
@@ -256,8 +245,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->updateNotification(Z)V
 
@@ -266,7 +253,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)Lcom/android/keyguard/sec/KeyguardUnlockView$WakeUpCommandCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mWakeUpCallback:Lcom/android/keyguard/sec/KeyguardUnlockView$WakeUpCommandCallback;
 
@@ -275,8 +261,6 @@
 
 .method static synthetic access$602(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mIsRunning:Z
 
@@ -285,7 +269,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->cleanUpVariables()V
 
@@ -294,7 +277,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->isSecure()Z
 
@@ -305,7 +287,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mContext:Landroid/content/Context;
 
@@ -779,7 +760,6 @@
 
 .method private launch(S)V
     .locals 3
-    .param p1    # S
 
     iget-object v1, p0, Lcom/android/keyguard/sec/KeyguardVoiceEngineThread;->mVThreadHandler:Landroid/os/Handler;
 
@@ -800,7 +780,6 @@
 
 .method private updateNotification(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -862,31 +841,24 @@
 # virtual methods
 .method public OnEnrollResult(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public OnRmsForWave(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public OnSpectrumData([I)V
     .locals 0
-    .param p1    # [I
 
     return-void
 .end method
 
 .method public OnVerifyResult(IS)V
     .locals 3
-    .param p1    # I
-    .param p2    # S
 
     const-string v0, "KeyguardVoiceEngineThread"
 

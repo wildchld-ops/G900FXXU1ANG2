@@ -17,9 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/ConnectivityManager;ILcom/google/android/finsky/remoting/PhoneFeature;)V
     .locals 0
-    .param p1    # Landroid/net/ConnectivityManager;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/remoting/PhoneFeature;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,8 +151,6 @@
 
 .method private waitForRadio(II)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/finsky/remoting/RadioConnectionException;
@@ -257,7 +252,6 @@
 # virtual methods
 .method public ensureRouteToHost(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/finsky/remoting/RadioConnectionException;

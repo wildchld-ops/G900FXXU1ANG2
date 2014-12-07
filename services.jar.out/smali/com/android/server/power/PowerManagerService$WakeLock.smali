@@ -42,13 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/power/PowerManagerService;Landroid/os/IBinder;ILjava/lang/String;Ljava/lang/String;Landroid/os/WorkSource;II)V
     .locals 2
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/WorkSource;
-    .param p7    # I
-    .param p8    # I
 
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$WakeLock;->this$0:Lcom/android/server/power/PowerManagerService;
 
@@ -84,7 +77,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/power/PowerManagerService$WakeLock;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService$WakeLock;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService$WakeLock;->getLockLevelString()Ljava/lang/String;
 
@@ -223,11 +215,6 @@
 
 .method public hasSameProperties(ILjava/lang/String;Landroid/os/WorkSource;II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/WorkSource;
-    .param p4    # I
-    .param p5    # I
 
     iget v0, p0, Lcom/android/server/power/PowerManagerService$WakeLock;->mFlags:I
 
@@ -268,7 +255,6 @@
 
 .method public hasSameWorkSource(Landroid/os/WorkSource;)Z
     .locals 1
-    .param p1    # Landroid/os/WorkSource;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$WakeLock;->mWorkSource:Landroid/os/WorkSource;
 
@@ -395,12 +381,6 @@
 
 .method public updateProperties(ILjava/lang/String;Ljava/lang/String;Landroid/os/WorkSource;II)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/WorkSource;
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$WakeLock;->mPackageName:Ljava/lang/String;
 
@@ -546,7 +526,6 @@
 
 .method public updateWorkSource(Landroid/os/WorkSource;)V
     .locals 1
-    .param p1    # Landroid/os/WorkSource;
 
     # invokes: Lcom/android/server/power/PowerManagerService;->copyWorkSource(Landroid/os/WorkSource;)Landroid/os/WorkSource;
     invoke-static {p1}, Lcom/android/server/power/PowerManagerService;->access$4500(Landroid/os/WorkSource;)Landroid/os/WorkSource;

@@ -71,7 +71,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     const/4 v1, 0x0
 
@@ -106,8 +105,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;-><init>(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)V
 
@@ -122,8 +119,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;Landroid/view/View;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;-><init>(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)V
 
@@ -134,9 +129,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;-><init>(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;Landroid/view/View;)V
 
@@ -151,7 +143,6 @@
 
 .method private setNextSibling(Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mNextSibling:Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
@@ -160,7 +151,6 @@
 
 .method private setParent(Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mParent:Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
@@ -169,7 +159,6 @@
 
 .method private setPrevSibling(Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mPrevSibling:Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
@@ -180,7 +169,6 @@
 # virtual methods
 .method public addChild(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;)Z
     .locals 6
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
 
     const/4 v5, 0x0
 
@@ -239,7 +227,6 @@
 
 .method public addTag(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;
 
     if-nez p1, :cond_1
 
@@ -276,7 +263,6 @@
 
 .method public addTag(Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
     iget-object v0, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mTags:Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
@@ -794,7 +780,6 @@
 
 .method public getTag(Ljava/lang/String;)Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mTags:Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
@@ -835,7 +820,6 @@
 
 .method public isEmptyTag(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -909,7 +893,6 @@
 
 .method public removeChild(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;)Z
     .locals 5
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
 
     const/4 v1, 0x0
 
@@ -1019,7 +1002,6 @@
 
 .method public removeTag(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mTags:Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
@@ -1038,7 +1020,6 @@
 
 .method public setDataRepository(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mRepository:Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
@@ -1047,7 +1028,6 @@
 
 .method public setMetaAreaRect(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mRectOnScreen:Landroid/graphics/Rect;
 
@@ -1056,7 +1036,6 @@
 
 .method public setTag(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;)Z
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;
 
     const/4 v0, 0x0
 
@@ -1103,7 +1082,6 @@
 
 .method public setTagTable(Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mTags:Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
@@ -1112,7 +1090,6 @@
 
 .method public setView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/samsung/android/smartclip/SmartClipDataElementImpl;->mView:Landroid/view/View;
 
@@ -1121,7 +1098,6 @@
 
 .method public traverseNextElement(Lcom/samsung/android/smartclip/SmartClipDataElementImpl;)Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
     .locals 3
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataElementImpl;
 
     const/4 v1, 0x0
 

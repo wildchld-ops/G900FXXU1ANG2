@@ -36,7 +36,6 @@
 # virtual methods
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -116,7 +115,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment$1;->this$0:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 

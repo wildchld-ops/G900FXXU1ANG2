@@ -393,7 +393,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/quickcontact/QuickContactActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/quickcontact/QuickContactActivity;->startLoading()V
 
@@ -402,7 +401,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/quickcontact/QuickContactActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/quickcontact/QuickContactActivity;->handleOutsideTouch()V
 
@@ -411,7 +409,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/quickcontact/QuickContactActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mIsEASMode:Z
 
@@ -420,8 +417,6 @@
 
 .method static synthetic access$1002(Lcom/android/contacts/quickcontact/QuickContactActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mIsEASMode:Z
 
@@ -430,7 +425,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/quickcontact/QuickContactActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mIsEASDataLoaded:Z
 
@@ -439,8 +433,6 @@
 
 .method static synthetic access$1102(Lcom/android/contacts/quickcontact/QuickContactActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mIsEASDataLoaded:Z
 
@@ -449,8 +441,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/quickcontact/QuickContactActivity;Lcom/android/contacts/model/Contact;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/quickcontact/QuickContactActivity;->bindData(Lcom/android/contacts/model/Contact;)V
 
@@ -459,7 +449,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/quickcontact/QuickContactActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mSsp:Ljava/lang/String;
 
@@ -468,7 +457,6 @@
 
 .method static synthetic access$1400(Lcom/android/contacts/quickcontact/QuickContactActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mScheme:Ljava/lang/String;
 
@@ -477,7 +465,6 @@
 
 .method static synthetic access$1500(Lcom/android/contacts/quickcontact/QuickContactActivity;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mSortedActionMimeTypes:Ljava/util/List;
 
@@ -486,7 +473,6 @@
 
 .method static synthetic access$1600(Lcom/android/contacts/quickcontact/QuickContactActivity;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mListPager:Landroid/support/v4/view/ViewPager;
 
@@ -495,7 +481,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/quickcontact/QuickContactActivity;)Lcom/android/contacts/quickcontact/ActionMultiMap;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mActions:Lcom/android/contacts/quickcontact/ActionMultiMap;
 
@@ -504,8 +489,6 @@
 
 .method static synthetic access$1800(Lcom/android/contacts/quickcontact/QuickContactActivity;I)Lcom/android/contacts/quickcontact/CheckableImageView;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/quickcontact/QuickContactActivity;->getActionViewAt(I)Lcom/android/contacts/quickcontact/CheckableImageView;
 
@@ -516,7 +499,6 @@
 
 .method static synthetic access$1900(Lcom/android/contacts/quickcontact/QuickContactActivity;)Landroid/widget/HorizontalScrollView;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mTrackScroller:Landroid/widget/HorizontalScrollView;
 
@@ -525,7 +507,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/quickcontact/QuickContactActivity;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mLookupUri:Landroid/net/Uri;
 
@@ -534,7 +515,6 @@
 
 .method static synthetic access$2000(Lcom/android/contacts/quickcontact/QuickContactActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mSelectedTabRectangle:Landroid/view/View;
 
@@ -543,8 +523,6 @@
 
 .method static synthetic access$2100(Lcom/android/contacts/quickcontact/QuickContactActivity;I)I
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/quickcontact/QuickContactActivity;->getDimensionValuesByRoundOff(I)I
 
@@ -555,8 +533,6 @@
 
 .method static synthetic access$2202(Lcom/android/contacts/quickcontact/QuickContactActivity;Lcom/samsung/contacts/model/rcs/RcsCaps;)Lcom/samsung/contacts/model/rcs/RcsCaps;
     .locals 0
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
-    .param p1    # Lcom/samsung/contacts/model/rcs/RcsCaps;
 
     iput-object p1, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mRcsCapsData:Lcom/samsung/contacts/model/rcs/RcsCaps;
 
@@ -565,7 +541,6 @@
 
 .method static synthetic access$2300(Lcom/android/contacts/quickcontact/QuickContactActivity;)Lcom/android/contacts/model/Contact;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mContact:Lcom/android/contacts/model/Contact;
 
@@ -574,7 +549,6 @@
 
 .method static synthetic access$2400(Lcom/android/contacts/quickcontact/QuickContactActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/quickcontact/QuickContactActivity;->verifyIsEasAddress()Z
 
@@ -585,7 +559,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/quickcontact/QuickContactActivity;)Lcom/android/contacts/model/ContactLoader;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mContactLoader:Lcom/android/contacts/model/ContactLoader;
 
@@ -594,7 +567,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/quickcontact/QuickContactActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/quickcontact/QuickContactActivity;->getClassNameOfBaseActivity()Ljava/lang/String;
 
@@ -605,7 +577,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/quickcontact/QuickContactActivity;)Lcom/android/contacts/quickcontact/FloatingChildLayout;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mFloatingLayout:Lcom/android/contacts/quickcontact/FloatingChildLayout;
 
@@ -614,7 +585,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/quickcontact/QuickContactActivity;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mStarImage:Landroid/widget/ImageView;
 
@@ -623,7 +593,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/quickcontact/QuickContactActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mShowOrCreateMode:Z
 
@@ -632,7 +601,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/quickcontact/QuickContactActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/contacts/quickcontact/QuickContactActivity;
 
     iget-object v0, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -3003,9 +2971,6 @@
 
 .method private considerAdd(Lcom/android/contacts/quickcontact/Action;Lcom/android/contacts/quickcontact/ResolveCache;Z)Z
     .locals 2
-    .param p1    # Lcom/android/contacts/quickcontact/Action;
-    .param p2    # Lcom/android/contacts/quickcontact/ResolveCache;
-    .param p3    # Z
 
     invoke-virtual {p2, p1}, Lcom/android/contacts/quickcontact/ResolveCache;->hasResolve(Lcom/android/contacts/quickcontact/Action;)Z
 
@@ -3034,7 +2999,6 @@
 
 .method private getActionViewAt(I)Lcom/android/contacts/quickcontact/CheckableImageView;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/contacts/quickcontact/QuickContactActivity;->mTrack:Landroid/view/ViewGroup;
@@ -3417,7 +3381,6 @@
 
 .method private isMimeExcluded(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -4134,7 +4097,6 @@
 
 .method public close(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->getLoaderManager()Landroid/app/LoaderManager;
 
@@ -4184,7 +4146,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
 
     check-cast p1, Lcom/android/contacts/quickcontact/QuickContactListFragment;
 
@@ -4217,7 +4178,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/high16 v12, 0x20000
 
@@ -5021,7 +4981,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "is_eas_mode"
 

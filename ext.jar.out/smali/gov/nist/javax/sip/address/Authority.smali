@@ -86,7 +86,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/Authority;->userInfo:Lgov/nist/javax/sip/address/UserInfo;
 
@@ -117,7 +116,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -332,7 +330,6 @@
 
 .method public setHost(Lgov/nist/core/Host;)V
     .locals 1
-    .param p1    # Lgov/nist/core/Host;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/Authority;->hostPort:Lgov/nist/core/HostPort;
 
@@ -354,7 +351,6 @@
 
 .method public setHostPort(Lgov/nist/core/HostPort;)V
     .locals 0
-    .param p1    # Lgov/nist/core/HostPort;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/Authority;->hostPort:Lgov/nist/core/HostPort;
 
@@ -363,7 +359,6 @@
 
 .method public setPassword(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/Authority;->userInfo:Lgov/nist/javax/sip/address/UserInfo;
 
@@ -385,7 +380,6 @@
 
 .method public setPort(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/Authority;->hostPort:Lgov/nist/core/HostPort;
 
@@ -407,7 +401,6 @@
 
 .method public setUser(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/Authority;->userInfo:Lgov/nist/javax/sip/address/UserInfo;
 
@@ -429,7 +422,6 @@
 
 .method public setUserInfo(Lgov/nist/javax/sip/address/UserInfo;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/address/UserInfo;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/Authority;->userInfo:Lgov/nist/javax/sip/address/UserInfo;
 

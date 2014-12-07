@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/dialer/calllog/CallLogFragment;Z)V
     .locals 0
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/dialer/calllog/CallLogFragment$UpdateOnEntry;->this$0:Lcom/android/dialer/calllog/CallLogFragment;
 

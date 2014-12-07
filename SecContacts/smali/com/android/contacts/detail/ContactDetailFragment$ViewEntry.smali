@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,8 +45,6 @@
 # virtual methods
 .method public click(Landroid/view/View;Lcom/android/contacts/detail/ContactDetailFragment$Listener;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$Listener;
 
     return-void
 .end method

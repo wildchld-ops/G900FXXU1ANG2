@@ -215,7 +215,6 @@
 
 .method public getFrameAtTime(J)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -228,8 +227,6 @@
 
 .method public getFrameAtTime(JI)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # J
-    .param p3    # I
 
     if-ltz p3, :cond_0
 
@@ -275,8 +272,6 @@
 
 .method public setDataSource(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -480,7 +475,6 @@
 
 .method public setDataSource(Ljava/io/FileDescriptor;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -510,7 +504,6 @@
 
 .method public setDataSource(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -605,7 +598,6 @@
 
 .method public setDataSource(Ljava/lang/String;Ljava/util/Map;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

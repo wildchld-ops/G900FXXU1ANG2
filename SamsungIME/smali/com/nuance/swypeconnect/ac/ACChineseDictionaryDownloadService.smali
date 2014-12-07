@@ -70,9 +70,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/connect/api/AddonDictionariesService;Lcom/nuance/connect/api/ResourcesService;Lcom/nuance/connect/store/PersistentDataStore;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/api/AddonDictionariesService;
-    .param p2    # Lcom/nuance/connect/api/ResourcesService;
-    .param p3    # Lcom/nuance/connect/store/PersistentDataStore;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACService;-><init>()V
 
@@ -155,7 +152,6 @@
 
 .method static synthetic access$000(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->supportedLangs:Ljava/util/List;
 
@@ -164,7 +160,6 @@
 
 .method static synthetic access$100(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;)Lcom/nuance/connect/api/ResourcesService;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->resourcesService:Lcom/nuance/connect/api/ResourcesService;
 
@@ -173,7 +168,6 @@
 
 .method static synthetic access$200(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;)Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryListCallback;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->dictionaryListCallback:Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionaryListCallback;
 
@@ -182,7 +176,6 @@
 
 .method static synthetic access$300(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -191,7 +184,6 @@
 
 .method static synthetic access$400(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;)V
     .locals 0
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->markPreinstalledDictionaries()V
 
@@ -200,7 +192,6 @@
 
 .method static synthetic access$500(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->listCallbacks:Ljava/util/Set;
 
@@ -310,7 +301,6 @@
 # virtual methods
 .method public cancelDownload(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -343,8 +333,6 @@
 
 .method public downloadDictionary(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionaryDownloadFileCallback;)V
     .locals 3
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;
-    .param p2    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionaryDownloadFileCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -752,8 +740,6 @@
 
 .method public preinstallDictionary(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -827,7 +813,6 @@
 
 .method public registerCallback(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionaryDownloadListCallback;)V
     .locals 1
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionaryDownloadListCallback;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->listCallbacks:Ljava/util/Set;
 
@@ -838,7 +823,6 @@
 
 .method public removeDictionary(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;
 
     if-nez p1, :cond_0
 
@@ -878,7 +862,6 @@
 
 .method public unregisterCallback(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionaryDownloadListCallback;)V
     .locals 1
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionaryDownloadListCallback;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;->listCallbacks:Ljava/util/Set;
 

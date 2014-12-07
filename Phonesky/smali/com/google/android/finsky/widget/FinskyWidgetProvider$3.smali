@@ -71,7 +71,6 @@
 
 .method public onError(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Failed to load list for widget! %s"
 

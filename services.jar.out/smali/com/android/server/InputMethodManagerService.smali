@@ -386,8 +386,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/WindowManagerService;)V
     .locals 23
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/internal/view/IInputMethodManager$Stub;-><init>()V
 
@@ -1517,7 +1515,6 @@
 
 .method static synthetic access$000(Lcom/android/server/InputMethodManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->refreshImeWindowVisibilityLocked()V
 
@@ -1526,7 +1523,6 @@
 
 .method static synthetic access$100(Lcom/android/server/InputMethodManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->setImeWindowVisibilityStatusHiddenLocked()V
 
@@ -1535,7 +1531,6 @@
 
 .method static synthetic access$1002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/InputMethodManagerService;->mIsAutoBrightness:Z
 
@@ -1544,8 +1539,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/InputMethodManagerService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/InputMethodManagerService;->resetSelectedInputMethodAndSubtypeLocked(Ljava/lang/String;)V
 
@@ -1554,7 +1547,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/InputMethodManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->chooseNewDefaultIMELocked()Z
 
@@ -1565,7 +1557,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/InputMethodManagerService;)Lcom/android/server/InputMethodManagerService$InputMethodFileManager;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mFileManager:Lcom/android/server/InputMethodManagerService$InputMethodFileManager;
 
@@ -1574,7 +1565,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/InputMethodManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/InputMethodManagerService;->knoxV1Enabled:Z
 
@@ -1583,7 +1573,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/InputMethodManagerService;)Landroid/content/pm/IPackageManager;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mIPackageManager:Landroid/content/pm/IPackageManager;
 
@@ -1592,7 +1581,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/InputMethodManagerService;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mSwitchingDialog:Landroid/app/AlertDialog;
 
@@ -1601,7 +1589,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/InputMethodManagerService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mSwitchingDialogTitleView:Landroid/view/View;
 
@@ -1610,8 +1597,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/InputMethodManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/InputMethodManagerService;->switchUserLocked(I)V
 
@@ -1620,8 +1605,6 @@
 
 .method static synthetic access$202(Lcom/android/server/InputMethodManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/InputMethodManagerService;->mBootCompleted:Z
 
@@ -1630,7 +1613,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/InputMethodManagerService;)Lcom/android/server/wm/WindowManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mWindowManagerService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1639,8 +1621,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/InputMethodManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/InputMethodManagerService;->setOnScreenKeyboardSettingValue(Z)V
 
@@ -1649,7 +1629,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/InputMethodManagerService;)Lcom/android/server/InputMethodManagerService$ImeSubtypeListAdapter;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mSwitchingDialogAdapter:Lcom/android/server/InputMethodManagerService$ImeSubtypeListAdapter;
 
@@ -1658,7 +1637,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/InputMethodManagerService;)[Landroid/view/inputmethod/InputMethodInfo;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mIms:[Landroid/view/inputmethod/InputMethodInfo;
 
@@ -1667,7 +1645,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/InputMethodManagerService;)[I
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mSubtypeIds:[I
 
@@ -1676,7 +1653,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/InputMethodManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/InputMethodManagerService;->isKnoxKeypadUsed:Z
 
@@ -1685,7 +1661,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/InputMethodManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/InputMethodManagerService;->notificationcontrol_lock:Z
 
@@ -1694,8 +1669,6 @@
 
 .method static synthetic access$2702(Lcom/android/server/InputMethodManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/InputMethodManagerService;->notificationcontrol_lock:Z
 
@@ -1704,7 +1677,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/InputMethodManagerService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->curImeId_for_menu:Ljava/lang/String;
 
@@ -1713,8 +1685,6 @@
 
 .method static synthetic access$2902(Lcom/android/server/InputMethodManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/InputMethodManagerService;->switchingFromVoice:Z
 
@@ -1731,8 +1701,6 @@
 
 .method static synthetic access$3002(Lcom/android/server/InputMethodManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/InputMethodManagerService;->mForcedtoSecureKeypad:Z
 
@@ -1741,8 +1709,6 @@
 
 .method static synthetic access$3102(Lcom/android/server/InputMethodManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/InputMethodManagerService;->notificationcontrol_release:Z
 
@@ -1751,7 +1717,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/InputMethodManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->showConfigureInputMethods()V
 
@@ -1760,7 +1725,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/InputMethodManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->getExplicitlyOrImplicitlyEnabledInputMethodsAndSubtypeListLocked()Ljava/util/HashMap;
 
@@ -1771,7 +1735,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/InputMethodManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->isHWAccessoryKeyboard()Z
 
@@ -1790,7 +1753,6 @@
 
 .method static synthetic access$372(I)I
     .locals 1
-    .param p0    # I
 
     sget v0, Lcom/android/server/InputMethodManagerService;->keyboardState:I
 
@@ -1803,7 +1765,6 @@
 
 .method static synthetic access$376(I)I
     .locals 1
-    .param p0    # I
 
     sget v0, Lcom/android/server/InputMethodManagerService;->keyboardState:I
 
@@ -1816,7 +1777,6 @@
 
 .method static synthetic access$400(Lcom/android/server/InputMethodManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->isChineseIMEinstalled()Z
 
@@ -1835,7 +1795,6 @@
 
 .method static synthetic access$502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/InputMethodManagerService;->prevAutoMode:I
 
@@ -1852,7 +1811,6 @@
 
 .method static synthetic access$602(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/InputMethodManagerService;->mUSBKeyboardCount:I
 
@@ -1893,7 +1851,6 @@
 
 .method static synthetic access$702(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/InputMethodManagerService;->mBTKeyboardCount:I
 
@@ -1934,7 +1891,6 @@
 
 .method static synthetic access$802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/InputMethodManagerService;->mIsBTConnect:Z
 
@@ -1951,7 +1907,6 @@
 
 .method static synthetic access$902(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/InputMethodManagerService;->mFloatingForMultiWindow:Z
 
@@ -1960,8 +1915,6 @@
 
 .method private addShortcutInputMethodAndSubtypes(Landroid/view/inputmethod/InputMethodInfo;Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Landroid/view/inputmethod/InputMethodSubtype;
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService;->mShortcutInputMethodsAndSubtypes:Ljava/util/HashMap;
 
@@ -2000,9 +1953,6 @@
 
 .method private bindCurrentInputMethodService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -2208,7 +2158,6 @@
 
 .method private findLastResortApplicableShortcutInputMethodAndSubtypeLocked(Ljava/lang/String;)Landroid/util/Pair;
     .locals 14
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2420,7 +2369,6 @@
 
 .method private finishSessionLocked(Lcom/android/server/InputMethodManagerService$SessionState;)V
     .locals 4
-    .param p1    # Lcom/android/server/InputMethodManagerService$SessionState;
 
     const/4 v3, 0x0
 
@@ -2495,8 +2443,6 @@
 
 .method private getCurrentInputMethodPackageName(Landroid/content/Context;Landroid/content/ContentResolver;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ContentResolver;
 
     if-nez p2, :cond_1
 
@@ -3192,7 +3138,6 @@
 
 .method private isSamsungIme(Landroid/view/inputmethod/InputMethodInfo;)Z
     .locals 5
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
 
     const/4 v0, 0x1
 
@@ -3334,7 +3279,6 @@
 
 .method private isSecureIMEKnox(Landroid/view/inputmethod/InputMethodInfo;)Z
     .locals 8
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
 
     const/4 v4, 0x1
 
@@ -3416,7 +3360,6 @@
 
 .method private isSecureIMEKnox(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -3822,8 +3765,6 @@
 
 .method private resetAllInternalStateLocked(ZZ)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -3930,7 +3871,6 @@
 
 .method private resetDefaultImeLocked(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService;->mCurMethodId:Ljava/lang/String;
 
@@ -4089,7 +4029,6 @@
 
 .method private resetSelectedInputMethodAndSubtypeLocked(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -4192,9 +4131,6 @@
 
 .method private setInputMethodWithSubtypeId(Landroid/os/IBinder;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -4308,7 +4244,6 @@
 
 .method private setOnScreenKeyboardSettingValue(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mContext:Landroid/content/Context;
 
@@ -4378,9 +4313,6 @@
 
 .method private setSelectedInputMethodAndSubtypeLocked(Landroid/view/inputmethod/InputMethodInfo;IZ)V
     .locals 5
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v4, -0x1
 
@@ -4484,9 +4416,6 @@
 
 .method private setWritingBuddyInputMethodWithSubtypeId(Landroid/os/IBinder;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -4554,7 +4483,6 @@
 
 .method private showInputMethodAndSubtypeEnabler(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -4590,7 +4518,6 @@
 
 .method private showInputMethodMenu(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -4601,8 +4528,6 @@
 
 .method private showInputMethodMenuInternal(ZZ)V
     .locals 32
-    .param p1    # Z
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -5675,7 +5600,6 @@
 
 .method private showInputMethodMenuKNOX(Z)V
     .locals 41
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -6691,7 +6615,6 @@
 
 .method private switchUserLocked(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
 
@@ -6795,10 +6718,6 @@
 # virtual methods
 .method public addClient(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;II)V
     .locals 4
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -6843,7 +6762,6 @@
 
 .method attachNewInputLocked(Z)Lcom/android/internal/view/InputBindResult;
     .locals 7
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -6953,7 +6871,6 @@
 
 .method buildInputMethodListLocked(Ljava/util/ArrayList;Ljava/util/HashMap;Z)V
     .locals 22
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7644,7 +7561,6 @@
 
 .method clearClientSessionLocked(Lcom/android/server/InputMethodManagerService$ClientState;)V
     .locals 1
-    .param p1    # Lcom/android/server/InputMethodManagerService$ClientState;
 
     iget-object v0, p1, Lcom/android/server/InputMethodManagerService$ClientState;->curSession:Lcom/android/server/InputMethodManagerService$SessionState;
 
@@ -7753,9 +7669,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v9, p0, Lcom/android/server/InputMethodManagerService;->mContext:Landroid/content/Context;
 
@@ -8472,8 +8385,6 @@
 
 .method executeOrSendMessage(Landroid/os/IInterface;Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/IInterface;
-    .param p2    # Landroid/os/Message;
 
     invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
@@ -8500,7 +8411,6 @@
 
 .method public finishInput(Lcom/android/internal/view/IInputMethodClient;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
 
     return-void
 .end method
@@ -8596,8 +8506,6 @@
 
 .method public getEnabledInputMethodSubtypeList(Ljava/lang/String;Z)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8899,8 +8807,6 @@
 
 .method public getNextBrightValue(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/16 v5, 0xff
 
@@ -9117,7 +9023,6 @@
 
 .method getsystemimeKnox(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodInfo;
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -9207,7 +9112,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 13
-    .param p1    # Landroid/os/Message;
 
     const/4 v9, 0x0
 
@@ -9893,8 +9797,6 @@
 
 .method public hideCurrentInput(ILandroid/os/ResultReceiver;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -9940,8 +9842,6 @@
 
 .method hideCurrentInputLocked(ILandroid/os/ResultReceiver;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     const/4 v3, 0x0
 
@@ -10154,8 +10054,6 @@
 
 .method public hideMySoftInput(Landroid/os/IBinder;I)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -10247,9 +10145,6 @@
 
 .method public hideSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;)Z
     .locals 8
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # I
-    .param p3    # Landroid/os/ResultReceiver;
 
     const/4 v4, 0x0
 
@@ -10500,9 +10395,6 @@
 
 .method public notifySuggestionPicked(Landroid/text/style/SuggestionSpan;Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Landroid/text/style/SuggestionSpan;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -10634,7 +10526,6 @@
 
 .method public onBrightChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0xfaa
 
@@ -10665,8 +10556,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -10762,7 +10651,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -10846,9 +10734,6 @@
 
 .method onSessionCreated(Lcom/android/internal/view/IInputMethod;Lcom/android/internal/view/IInputMethodSession;Landroid/view/InputChannel;)V
     .locals 9
-    .param p1    # Lcom/android/internal/view/IInputMethod;
-    .param p2    # Lcom/android/internal/view/IInputMethodSession;
-    .param p3    # Landroid/view/InputChannel;
 
     iget-object v7, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -10955,7 +10840,6 @@
 
 .method public onShowBrightChanged(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -11075,10 +10959,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -11113,7 +10993,6 @@
 
 .method public registerSuggestionSpansForNotification([Landroid/text/style/SuggestionSpan;)V
     .locals 6
-    .param p1    # [Landroid/text/style/SuggestionSpan;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -11185,7 +11064,6 @@
 
 .method public removeClient(Lcom/android/internal/view/IInputMethodClient;)V
     .locals 4
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -11235,7 +11113,6 @@
 
 .method requestClientSessionLocked(Lcom/android/server/InputMethodManagerService$ClientState;)V
     .locals 9
-    .param p1    # Lcom/android/server/InputMethodManagerService$ClientState;
 
     const/4 v5, 0x1
 
@@ -11285,8 +11162,6 @@
 
 .method public setAdditionalInputMethodSubtypes(Ljava/lang/String;[Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Landroid/view/inputmethod/InputMethodSubtype;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -11439,7 +11314,6 @@
 
 .method public setCurrentInputMethodSubtype(Landroid/view/inputmethod/InputMethodSubtype;)Z
     .locals 6
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
 
     const/4 v2, 0x0
 
@@ -11604,7 +11478,6 @@
 
 .method setEnabledSessionInMainThread(Lcom/android/server/InputMethodManagerService$SessionState;)V
     .locals 3
-    .param p1    # Lcom/android/server/InputMethodManagerService$SessionState;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService;->mEnabledSession:Lcom/android/server/InputMethodManagerService$SessionState;
 
@@ -11661,9 +11534,6 @@
 
 .method public setImeWindowStatus(Landroid/os/IBinder;II)V
     .locals 16
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -12017,8 +11887,6 @@
 
 .method public setInputMethod(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -12039,9 +11907,6 @@
 
 .method public setInputMethodAndSubtype(Landroid/os/IBinder;Ljava/lang/String;Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/inputmethod/InputMethodSubtype;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -12103,8 +11968,6 @@
 
 .method public setInputMethodEnabled(Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -12184,8 +12047,6 @@
 
 .method setInputMethodEnabledLocked(Ljava/lang/String;Z)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -12331,8 +12192,6 @@
 
 .method setInputMethodLocked(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -12681,7 +12540,6 @@
 
 .method public setScreenBrightness(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -12751,7 +12609,6 @@
 
 .method public setWACOMPen(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/server/InputMethodManagerService;->mbWACOMPen:Z
 
@@ -12760,8 +12617,6 @@
 
 .method public setWritingBuddyInputMethod(Landroid/os/IBinder;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -12797,8 +12652,6 @@
 
 .method setWritingBuddyInputMethodLocked(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/server/InputMethodManagerService;->mMethodMap:Ljava/util/HashMap;
 
@@ -12895,7 +12748,6 @@
 
 .method public shouldOfferSwitchingToNextInputMethod(Landroid/os/IBinder;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v2, 0x0
 
@@ -12963,8 +12815,6 @@
 
 .method showCurrentInputLocked(ILandroid/os/ResultReceiver;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     const/4 v2, 0x0
 
@@ -13162,9 +13012,6 @@
 
 .method showCurrentWritingBuddyInputLocked(ILandroid/graphics/Rect;Landroid/os/ResultReceiver;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/os/ResultReceiver;
 
     const/4 v0, 0x0
 
@@ -13328,8 +13175,6 @@
 
 .method public showInputMethodAndSubtypeEnablerFromClient(Lcom/android/internal/view/IInputMethodClient;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -13418,7 +13263,6 @@
 
 .method public showInputMethodPickerFromClient(Lcom/android/internal/view/IInputMethodClient;)V
     .locals 4
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -13515,7 +13359,6 @@
 
 .method showKeyboardNotiDailog(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -13596,8 +13439,6 @@
 
 .method public showMySoftInput(Landroid/os/IBinder;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -13796,9 +13637,6 @@
 
 .method public showSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;)Z
     .locals 9
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # I
-    .param p3    # Landroid/os/ResultReceiver;
 
     const/4 v4, 0x0
 
@@ -13947,10 +13785,6 @@
 
 .method public showWritingBuddyInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/graphics/Rect;Landroid/os/ResultReceiver;)Z
     .locals 9
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/os/ResultReceiver;
 
     const/4 v4, 0x0
 
@@ -14139,10 +13973,6 @@
 
 .method public startInput(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;I)Lcom/android/internal/view/InputBindResult;
     .locals 4
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
-    .param p3    # Landroid/view/inputmethod/EditorInfo;
-    .param p4    # I
 
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -14433,10 +14263,6 @@
 
 .method startInputLocked(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;I)Lcom/android/internal/view/InputBindResult;
     .locals 4
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
-    .param p3    # Landroid/view/inputmethod/EditorInfo;
-    .param p4    # I
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService;->mCurMethodId:Ljava/lang/String;
 
@@ -14592,10 +14418,6 @@
 
 .method startInputUncheckedLocked(Lcom/android/server/InputMethodManagerService$ClientState;Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;I)Lcom/android/internal/view/InputBindResult;
     .locals 10
-    .param p1    # Lcom/android/server/InputMethodManagerService$ClientState;
-    .param p2    # Lcom/android/internal/view/IInputContext;
-    .param p3    # Landroid/view/inputmethod/EditorInfo;
-    .param p4    # I
 
     const/4 v9, 0x0
 
@@ -14827,7 +14649,6 @@
 
 .method public switchToLastInputMethod(Landroid/os/IBinder;)Z
     .locals 22
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 
@@ -15169,8 +14990,6 @@
 
 .method public switchToNextInputMethod(Landroid/os/IBinder;Z)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -15246,7 +15065,6 @@
 
 .method public systemRunning(Lcom/android/server/StatusBarManagerService;)V
     .locals 11
-    .param p1    # Lcom/android/server/StatusBarManagerService;
 
     const/4 v6, 0x1
 
@@ -15575,8 +15393,6 @@
 
 .method unbindCurrentMethodLocked(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -15677,7 +15493,6 @@
 
 .method updateFromSettingsLocked(Z)V
     .locals 12
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -15870,9 +15685,6 @@
 
 .method public updateStatusIcon(Landroid/os/IBinder;Ljava/lang/String;I)V
     .locals 12
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -16060,13 +15872,6 @@
 
 .method public windowGainedFocus(Lcom/android/internal/view/IInputMethodClient;Landroid/os/IBinder;IIILandroid/view/inputmethod/EditorInfo;Lcom/android/internal/view/IInputContext;)Lcom/android/internal/view/InputBindResult;
     .locals 32
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/inputmethod/EditorInfo;
-    .param p7    # Lcom/android/internal/view/IInputContext;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/InputMethodManagerService;->calledFromValidUser()Z
 

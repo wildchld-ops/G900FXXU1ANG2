@@ -36,9 +36,6 @@
 # virtual methods
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/contacts/common/list/ContactTileView$3;->this$0:Lcom/android/contacts/common/list/ContactTileView;
 

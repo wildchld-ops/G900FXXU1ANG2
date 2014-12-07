@@ -25,7 +25,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/google/android/gms/common/data/d;)V
     .locals 0
-    .param p1    # Lcom/google/android/gms/common/data/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

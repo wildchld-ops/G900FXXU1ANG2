@@ -64,8 +64,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wfd/WfdHelpActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WfdHelpActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WfdHelpActivity;->mIsReadOnlyChecked:Z
 
@@ -74,8 +72,6 @@
 
 .method public static changeNfcEnabled(Landroid/content/Context;Z)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -114,7 +110,6 @@
 
 .method private makeNdefMessage(Ljava/lang/String;)Landroid/nfc/NdefMessage;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "WfdHelpActivity"
 
@@ -375,7 +370,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v4, 0x0
 
@@ -476,7 +470,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     const-string v13, "WfdHelpActivity"
 
@@ -770,7 +763,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const/4 v6, 0x5
 
@@ -948,7 +940,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -1075,7 +1066,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 7
-    .param p1    # Landroid/view/MenuItem;
 
     const/high16 v6, 0x10800000
 
@@ -1330,8 +1320,6 @@
 
 .method writeTag(Landroid/nfc/NdefMessage;Landroid/nfc/Tag;)Z
     .locals 8
-    .param p1    # Landroid/nfc/NdefMessage;
-    .param p2    # Landroid/nfc/Tag;
 
     const/4 v5, 0x1
 

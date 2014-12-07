@@ -6,7 +6,6 @@
 # direct methods
 .method public static parseCacheHeaders(Lcom/android/volley/NetworkResponse;)Lcom/android/volley/Cache$Entry;
     .locals 22
-    .param p0    # Lcom/android/volley/NetworkResponse;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -364,7 +363,6 @@
 
 .method public static parseDateAsEpoch(Ljava/lang/String;)J
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p0}, Lorg/apache/http/impl/cookie/DateUtils;->parseDate(Ljava/lang/String;)Ljava/util/Date;

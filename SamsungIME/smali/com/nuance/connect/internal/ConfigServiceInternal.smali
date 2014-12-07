@@ -139,7 +139,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -254,7 +253,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/ConfigServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ConfigServiceInternal;->sendPollingFrequency()V
 
@@ -263,7 +261,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/ConfigServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ConfigServiceInternal;->sendConnectionConcurrentLimit()V
 
@@ -272,7 +269,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/ConfigServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ConfigServiceInternal;->sendDownloadIdleTimeout()V
 
@@ -281,7 +277,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/ConfigServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ConfigServiceInternal;->sendForegroundDataState()V
 
@@ -290,7 +285,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/internal/ConfigServiceInternal;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/ConfigServiceInternal;->sendBackgroundDataState()V
 
@@ -299,7 +293,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/internal/ConfigServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -308,8 +301,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/internal/ConfigServiceInternal;Lcom/nuance/connect/host/service/BuildSettings$Property;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
-    .param p1    # Lcom/nuance/connect/host/service/BuildSettings$Property;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/ConfigServiceInternal;->getProperty(Lcom/nuance/connect/host/service/BuildSettings$Property;)Ljava/lang/String;
 
@@ -320,8 +311,6 @@
 
 .method static synthetic access$702(Lcom/nuance/connect/internal/ConfigServiceInternal;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->swyperId:Ljava/lang/String;
 
@@ -330,8 +319,6 @@
 
 .method static synthetic access$802(Lcom/nuance/connect/internal/ConfigServiceInternal;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/ConfigServiceInternal;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->deviceId:Ljava/lang/String;
 
@@ -348,7 +335,6 @@
 
 .method private getProperty(Lcom/nuance/connect/host/service/BuildSettings$Property;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/nuance/connect/host/service/BuildSettings$Property;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -659,7 +645,6 @@
 
 .method protected getCoresForLanguages([I)[I
     .locals 13
-    .param p1    # [I
 
     iget-object v11, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -984,7 +969,6 @@
 
 .method public setActiveLanguages([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->activeLanguages:[I
 
@@ -995,7 +979,6 @@
 
 .method public setActiveLocale(Ljava/util/Locale;)V
     .locals 0
-    .param p1    # Ljava/util/Locale;
 
     iput-object p1, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->activeLocale:Ljava/util/Locale;
 
@@ -1006,7 +989,6 @@
 
 .method public setBackgroundNetworkState(Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1021,7 +1003,6 @@
 
 .method public setConnectionConcurrentLimit(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1036,7 +1017,6 @@
 
 .method public setCustomerString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1051,7 +1031,6 @@
 
 .method public setDownloadIdleTimeout(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1066,7 +1045,6 @@
 
 .method public setForegroundNetworkState(Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/system/NetworkState$NetworkConfiguration;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1081,7 +1059,6 @@
 
 .method public setLogLevel(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1096,7 +1073,6 @@
 
 .method public setRefreshInterval(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -1111,7 +1087,6 @@
 
 .method public setUsageDataState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConfigServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 

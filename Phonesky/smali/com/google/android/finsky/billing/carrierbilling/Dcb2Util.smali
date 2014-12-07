@@ -6,7 +6,6 @@
 # direct methods
 .method public static addPrepareOrBillingProfileParams(ZLjava/util/Map;)V
     .locals 6
-    .param p0    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -219,10 +218,6 @@
 
 .method public static getCompletePurchaseFlow(Ljava/lang/String;Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Landroid/os/Bundle;)Lcom/google/android/finsky/billing/BillingFlow;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p3    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;
 

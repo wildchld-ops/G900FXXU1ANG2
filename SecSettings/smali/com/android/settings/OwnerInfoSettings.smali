@@ -38,7 +38,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/OwnerInfoSettings;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/OwnerInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mCheckbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -47,7 +46,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/OwnerInfoSettings;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/settings/OwnerInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -56,7 +54,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/OwnerInfoSettings;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/OwnerInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mOwnerInfo:Landroid/widget/EditText;
 
@@ -65,7 +62,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/OwnerInfoSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/OwnerInfoSettings;
 
     invoke-direct {p0}, Lcom/android/settings/OwnerInfoSettings;->showInputMethod()V
 
@@ -101,7 +97,6 @@
 
 .method private initView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/16 v6, 0x41
 
@@ -322,7 +317,6 @@
 
 .method public static newInstance(I)Lcom/android/settings/OwnerInfoSettings;
     .locals 3
-    .param p0    # I
 
     new-instance v1, Lcom/android/settings/OwnerInfoSettings;
 
@@ -387,7 +381,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -445,7 +438,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -551,9 +543,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/DialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 

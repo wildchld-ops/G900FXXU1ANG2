@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/common/list/ContactListItemView;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/contacts/common/list/ContactListItemView$ContactListItemGroup;->this$0:Lcom/android/contacts/common/list/ContactListItemView;
 
@@ -34,11 +33,6 @@
 # virtual methods
 .method protected onLayout(ZIIII)V
     .locals 24
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v18, 0x0
 
@@ -2289,8 +2283,6 @@
 
 .method protected onMeasure(II)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
 
     const/4 v13, 0x0
 

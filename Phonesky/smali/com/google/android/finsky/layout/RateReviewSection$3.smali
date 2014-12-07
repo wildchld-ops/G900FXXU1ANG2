@@ -58,7 +58,6 @@
 
 .method public onCheckAndConfirmGPlusPassed(Lcom/google/android/finsky/api/model/Document;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/RateReviewSection$3;->val$fragment:Landroid/support/v4/app/Fragment;
 

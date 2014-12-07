@@ -110,7 +110,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -155,7 +154,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/util/DraftCache;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DraftCache;
 
     invoke-direct {p0}, Lcom/android/mms/util/DraftCache;->rebuildCache()V
 
@@ -172,7 +170,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -517,7 +514,6 @@
 # virtual methods
 .method public declared-synchronized addOnDraftChangedListener(Lcom/android/mms/util/DraftCache$OnDraftChangedListener;)V
     .locals 1
-    .param p1    # Lcom/android/mms/util/DraftCache$OnDraftChangedListener;
 
     monitor-enter p0
 
@@ -542,7 +538,6 @@
 
 .method public declared-synchronized addOnDraftContentsChangedListener(Lcom/android/mms/util/DraftCache$OnDraftContentsChangedListener;)V
     .locals 1
-    .param p1    # Lcom/android/mms/util/DraftCache$OnDraftContentsChangedListener;
 
     monitor-enter p0
 
@@ -573,7 +568,6 @@
 
 .method public declared-synchronized hasDraft(J)Z
     .locals 3
-    .param p1    # J
 
     monitor-enter p0
 
@@ -626,7 +620,6 @@
 
 .method public declared-synchronized removeOnDraftChangedListener(Lcom/android/mms/util/DraftCache$OnDraftChangedListener;)V
     .locals 1
-    .param p1    # Lcom/android/mms/util/DraftCache$OnDraftChangedListener;
 
     monitor-enter p0
 
@@ -651,7 +644,6 @@
 
 .method public declared-synchronized removeOnDraftContentsChangedListener(Lcom/android/mms/util/DraftCache$OnDraftContentsChangedListener;)V
     .locals 1
-    .param p1    # Lcom/android/mms/util/DraftCache$OnDraftContentsChangedListener;
 
     monitor-enter p0
 
@@ -676,8 +668,6 @@
 
 .method public declared-synchronized setDraftState(JZ)V
     .locals 1
-    .param p1    # J
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -702,9 +692,6 @@
 
 .method public declared-synchronized setDraftState(JZZ)V
     .locals 8
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Z
 
     monitor-enter p0
 

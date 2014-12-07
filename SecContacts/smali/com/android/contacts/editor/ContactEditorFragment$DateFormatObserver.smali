@@ -37,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     # getter for: Lcom/android/contacts/editor/ContactEditorFragment;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/contacts/editor/ContactEditorFragment;->access$1400()Ljava/lang/String;

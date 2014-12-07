@@ -21,7 +21,6 @@
 
 .method private buildDialog(Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const v13, 0x7f09075b
 
@@ -360,8 +359,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -389,7 +386,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 

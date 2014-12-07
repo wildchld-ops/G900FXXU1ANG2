@@ -16,7 +16,6 @@
 # virtual methods
 .method public sendBroadcast(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 

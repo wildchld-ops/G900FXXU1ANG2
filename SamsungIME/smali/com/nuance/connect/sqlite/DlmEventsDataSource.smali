@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/sqlite/SQLDataSource;-><init>(Landroid/content/Context;)V
 
@@ -101,8 +100,6 @@
 
 .method private clearUnusedLUEntries(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -293,10 +290,6 @@
 
 .method private getLUIndex(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)J
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const-wide/16 v10, -0x1
 
@@ -519,8 +512,6 @@
 
 .method private printCursor(Ljava/lang/String;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/Cursor;
 
     const-string v0, "[DLM_EVENTS]"
 
@@ -611,8 +602,6 @@
 # virtual methods
 .method public clearEvents(IJ)V
     .locals 18
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual/range {p0 .. p0}, Lcom/nuance/connect/sqlite/DlmEventsDataSource;->isOpen()Z
 
@@ -922,8 +911,6 @@
 
 .method public clearHighPriorityEvents(IJ)V
     .locals 11
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/nuance/connect/sqlite/DlmEventsDataSource;->isOpen()Z
 
@@ -1332,7 +1319,6 @@
 
 .method public getEvents(I)Lorg/json/JSONArray;
     .locals 10
-    .param p1    # I
 
     new-instance v1, Lorg/json/JSONArray;
 
@@ -1759,7 +1745,6 @@
 
 .method public getHighPriorityEvents(I)Lorg/json/JSONArray;
     .locals 13
-    .param p1    # I
 
     new-instance v9, Lorg/json/JSONArray;
 
@@ -1904,13 +1889,6 @@
 
 .method public insertEvent(Ljava/lang/String;IJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
 
     invoke-virtual {p0}, Lcom/nuance/connect/sqlite/DlmEventsDataSource;->isOpen()Z
 
@@ -2194,9 +2172,6 @@
 
 .method public insertHighPriorityEvent(Ljava/lang/String;IJ)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # J
 
     invoke-virtual {p0}, Lcom/nuance/connect/sqlite/DlmEventsDataSource;->isOpen()Z
 

@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -39,9 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/YoutubeFrameView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -62,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/HeroGraphicView;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/HeroGraphicView;
 
     iget v0, p0, Lcom/google/android/finsky/layout/HeroGraphicView;->mImageType:I
 
@@ -73,8 +66,6 @@
 # virtual methods
 .method public bindLightboxImage(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/HeroGraphicView;->mAccessibilityOverlay:Landroid/view/View;
 
@@ -107,9 +98,6 @@
 
 .method public varargs load(Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/Document;[I)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # [I
 
     const/4 v1, 0x0
 
@@ -142,7 +130,6 @@
 
 .method public load(Lcom/google/android/finsky/utils/BitmapLoader;Ljava/util/List;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -175,11 +162,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/HeroGraphicView;->getWidth()I
 
@@ -274,8 +256,6 @@
 
 .method protected onMeasure(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     iget-object v10, p0, Lcom/google/android/finsky/layout/HeroGraphicView;->mPlayImageView:Landroid/widget/ImageView;
 
@@ -420,7 +400,6 @@
 
 .method public setDefaultAspectRatio(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/google/android/finsky/layout/HeroGraphicView;->mDefaultAspectRatio:F
 

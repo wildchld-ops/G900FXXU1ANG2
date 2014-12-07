@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/sec/KeyguardEffectViewMain;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain$4;->this$0:Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/16 v4, 0x12f2
 

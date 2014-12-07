@@ -386,7 +386,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -967,7 +966,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mNwboosterSettingEnabled:Z
 
@@ -976,8 +974,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/policy/NetworkController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mNwboosterSettingEnabled:Z
 
@@ -986,7 +982,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/NetworkController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateTelephonySignalStrength()V
 
@@ -995,7 +990,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/statusbar/policy/NetworkController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mHandler:Landroid/os/Handler;
 
@@ -1004,7 +998,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mKeepFakeDuration:I
 
@@ -1013,7 +1006,6 @@
 
 .method static synthetic access$1200(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->isCdma()Z
 
@@ -1024,7 +1016,6 @@
 
 .method static synthetic access$1300(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->isCdmaLTE()Z
 
@@ -1035,8 +1026,6 @@
 
 .method static synthetic access$1402(Lcom/android/systemui/statusbar/policy/NetworkController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMessageUpdateNotDone:Z
 
@@ -1045,7 +1034,6 @@
 
 .method static synthetic access$1500(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mPreSvcSate:I
 
@@ -1054,8 +1042,6 @@
 
 .method static synthetic access$1502(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mPreSvcSate:I
 
@@ -1064,7 +1050,6 @@
 
 .method static synthetic access$1600(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCurSvcSate:I
 
@@ -1073,8 +1058,6 @@
 
 .method static synthetic access$1602(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCurSvcSate:I
 
@@ -1083,7 +1066,6 @@
 
 .method static synthetic access$1700(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getCurrentRSSIState()I
 
@@ -1094,8 +1076,6 @@
 
 .method static synthetic access$1802(Lcom/android/systemui/statusbar/policy/NetworkController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mShowAirPlane:Z
 
@@ -1104,7 +1084,6 @@
 
 .method static synthetic access$1900(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mTransitionState:Z
 
@@ -1113,8 +1092,6 @@
 
 .method static synthetic access$1902(Lcom/android/systemui/statusbar/policy/NetworkController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mTransitionState:Z
 
@@ -1123,8 +1100,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController;->radioTechnologyToNetworkType(I)I
 
@@ -1135,7 +1110,6 @@
 
 .method static synthetic access$2000(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCurrentSignalStrength:I
 
@@ -1144,8 +1118,6 @@
 
 .method static synthetic access$2002(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCurrentSignalStrength:I
 
@@ -1154,7 +1126,6 @@
 
 .method static synthetic access$2008(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 2
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCurrentSignalStrength:I
 
@@ -1167,7 +1138,6 @@
 
 .method static synthetic access$2010(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 2
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCurrentSignalStrength:I
 
@@ -1180,8 +1150,6 @@
 
 .method static synthetic access$2100(Lcom/android/systemui/statusbar/policy/NetworkController;I)[I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController;->getPhoneSignalIconList(I)[I
 
@@ -1192,9 +1160,6 @@
 
 .method static synthetic access$2200(Lcom/android/systemui/statusbar/policy/NetworkController;II)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/policy/NetworkController;->getDataSignalIconId(II)I
 
@@ -1205,8 +1170,6 @@
 
 .method static synthetic access$2300(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController;->getPhoneSignalDescriptionIconId(I)I
 
@@ -1217,7 +1180,6 @@
 
 .method static synthetic access$2400(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mTargetSignalStrength:I
 
@@ -1226,8 +1188,6 @@
 
 .method static synthetic access$2402(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mTargetSignalStrength:I
 
@@ -1236,7 +1196,6 @@
 
 .method static synthetic access$2500(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTetherDisconnected:Z
 
@@ -1245,8 +1204,6 @@
 
 .method static synthetic access$2502(Lcom/android/systemui/statusbar/policy/NetworkController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mBluetoothTetherDisconnected:Z
 
@@ -1255,8 +1212,6 @@
 
 .method static synthetic access$2600(Lcom/android/systemui/statusbar/policy/NetworkController;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/NetworkController;->displaySignalStrength(I)V
 
@@ -1265,7 +1220,6 @@
 
 .method static synthetic access$2700(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataRoamingSetting:Z
 
@@ -1274,8 +1228,6 @@
 
 .method static synthetic access$2702(Lcom/android/systemui/statusbar/policy/NetworkController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataRoamingSetting:Z
 
@@ -1284,7 +1236,6 @@
 
 .method static synthetic access$2800(Lcom/android/systemui/statusbar/policy/NetworkController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateRoamingNotification()V
 
@@ -1293,7 +1244,6 @@
 
 .method static synthetic access$2900(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->isMobileDataEnabled()Z
 
@@ -1304,8 +1254,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDataServiceState:I
 
@@ -1314,7 +1262,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getDataServiceState()I
 
@@ -1325,7 +1272,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/policy/NetworkController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->refreshOperatorLogoView()V
 
@@ -1334,7 +1280,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/policy/NetworkController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->getUpdateDataNetType()V
 
@@ -1343,7 +1288,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/policy/NetworkController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->updateDataIcon()V
 
@@ -1352,7 +1296,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/statusbar/policy/NetworkController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mEmgcCallState:I
 
@@ -1361,8 +1304,6 @@
 
 .method static synthetic access$802(Lcom/android/systemui/statusbar/policy/NetworkController;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mEmgcCallState:I
 
@@ -1371,7 +1312,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/statusbar/policy/NetworkController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mKeepFakeState:Z
 
@@ -1380,8 +1320,6 @@
 
 .method static synthetic access$902(Lcom/android/systemui/statusbar/policy/NetworkController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/NetworkController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mKeepFakeState:Z
 
@@ -1470,7 +1408,6 @@
 
 .method private final displaySignalStrength(I)V
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f0200db
 
@@ -1996,8 +1933,6 @@
 
 .method private getDataSignalIconId(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMaxLevelOfSignalStrengthIndicator:I
 
@@ -2226,8 +2161,6 @@
 
 .method private final getLGTEriIcon(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/NetworkController;->isCdmaEri()Z
 
@@ -2291,7 +2224,6 @@
 
 .method private getLGTWifiIcon(I)[[I
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -2430,7 +2362,6 @@
 
 .method private getPhoneSignalDescriptionIconId(I)I
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMaxLevelOfSignalStrengthIndicator:I
 
@@ -2476,7 +2407,6 @@
 
 .method private getPhoneSignalIconList(I)[I
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMaxLevelOfSignalStrengthIndicator:I
 
@@ -2522,7 +2452,6 @@
 
 .method private getResourceName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -3169,8 +3098,6 @@
 
 .method private final getVZWEriIcon(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x7f0200c5
 
@@ -3253,7 +3180,6 @@
 
 .method private huntForSsid(Landroid/net/wifi/WifiInfo;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/net/wifi/WifiInfo;
 
     invoke-virtual {p1}, Landroid/net/wifi/WifiInfo;->getSSID()Ljava/lang/String;
 
@@ -3401,7 +3327,6 @@
 
 .method private isLGTWifi(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -3520,7 +3445,6 @@
 
 .method private radioTechnologyToNetworkType(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -3661,7 +3585,6 @@
 
 .method private refreshNwBoosterIndicator(Lcom/android/systemui/statusbar/policy/NetworkController$SignalCluster;)V
     .locals 15
-    .param p1    # Lcom/android/systemui/statusbar/policy/NetworkController$SignalCluster;
 
     sget-object v0, Lcom/android/systemui/statusbar/policy/WifiIcons;->NWBOOSTER_WIFI_SIGNAL_STRENGTH:[[I
 
@@ -4138,10 +4061,6 @@
 
 .method private setLastNetworkName(ZLjava/lang/String;ZLjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mLastShowSpn:Z
 
@@ -4869,7 +4788,6 @@
 
 .method private updateConnectivity(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 
@@ -8684,7 +8602,6 @@
 
 .method private final updateSimState(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const-string v4, "ss"
 
@@ -10812,7 +10729,6 @@
 
 .method private updateWifiState(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -11058,7 +10974,6 @@
 
 .method private final updateWimaxState(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v6, 0x4
 
@@ -11658,7 +11573,6 @@
 # virtual methods
 .method public addATTMobileLabelView(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mATTMobileLabelViews:Ljava/util/ArrayList;
 
@@ -11669,7 +11583,6 @@
 
 .method public addCombinedLabelView(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mCombinedLabelViews:Ljava/util/ArrayList;
 
@@ -11680,7 +11593,6 @@
 
 .method public addEmergencyLabelView(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mEmergencyLabelViews:Ljava/util/ArrayList;
 
@@ -11691,7 +11603,6 @@
 
 .method public addMobileLabelView(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMobileLabelViews:Ljava/util/ArrayList;
 
@@ -11702,7 +11613,6 @@
 
 .method public addMoreIconView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mMoreIconView:Landroid/view/View;
 
@@ -11711,7 +11621,6 @@
 
 .method public addOperatorLogoIconView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mOperatorLogoIconView:Landroid/view/View;
 
@@ -11720,7 +11629,6 @@
 
 .method public addSignalCluster(Lcom/android/systemui/statusbar/policy/NetworkController$SignalCluster;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/policy/NetworkController$SignalCluster;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mSignalClusters:Ljava/util/ArrayList;
 
@@ -11733,7 +11641,6 @@
 
 .method public addWifiLabelView(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiLabelViews:Ljava/util/ArrayList;
 
@@ -11744,8 +11651,6 @@
 
 .method public dispatchDemoCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-boolean v11, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mDemoMode:Z
 
@@ -12210,9 +12115,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v5, 0x2
 
@@ -12998,8 +12900,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const v4, 0x7f0200d9
 
@@ -13604,7 +13504,6 @@
 
 .method public refreshSignalCluster(Lcom/android/systemui/statusbar/policy/NetworkController$SignalCluster;)V
     .locals 10
-    .param p1    # Lcom/android/systemui/statusbar/policy/NetworkController$SignalCluster;
 
     const v5, 0x7f020114
 
@@ -16346,7 +16245,6 @@
 
 .method public setStackedMode(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -16357,10 +16255,6 @@
 
 .method updateNetworkName(ZLjava/lang/String;ZLjava/lang/String;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -16610,12 +16504,6 @@
 
 .method updateNetworkName(ZLjava/lang/String;ZLjava/lang/String;ZLjava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

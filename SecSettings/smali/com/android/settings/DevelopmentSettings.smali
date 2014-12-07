@@ -205,7 +205,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DevelopmentSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DevelopmentSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DevelopmentSettings;->updateRuntimeValue()V
 
@@ -214,7 +213,6 @@
 
 .method private addListPreference(Ljava/lang/String;)Landroid/preference/ListPreference;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -292,7 +290,6 @@
 
 .method private disableForUser(Landroid/preference/Preference;)V
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -422,7 +419,6 @@
 
 .method private findAndInitCheckboxPref(Ljava/lang/String;)Landroid/preference/CheckBoxPreference;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -470,8 +466,6 @@
 
 .method private static isPackageInstalled(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -504,7 +498,6 @@
 
 .method private removePreference(Landroid/preference/Preference;)V
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -521,7 +514,6 @@
 
 .method private removePreferenceForProduction(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     const-string v0, "user"
 
@@ -654,7 +646,6 @@
 
 .method private setPrefsEnabledState(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1073,8 +1064,6 @@
 
 .method private updateAnimationScaleValue(ILandroid/preference/ListPreference;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/preference/ListPreference;
 
     :try_start_0
     iget-object v4, p0, Lcom/android/settings/DevelopmentSettings;->mWindowManager:Landroid/view/IWindowManager;
@@ -2623,9 +2612,6 @@
 
 .method private writeAnimationScaleOption(ILandroid/preference/ListPreference;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/preference/ListPreference;
-    .param p3    # Ljava/lang/Object;
 
     if-eqz p3, :cond_0
 
@@ -2663,7 +2649,6 @@
 
 .method private writeAppProcessLimitOptions(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -3130,7 +3115,6 @@
 
 .method private writeOverlayDisplayDevicesOptions(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -3659,7 +3643,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -3710,9 +3693,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v0, 0x3e8
 
@@ -4060,7 +4040,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x0
 
@@ -4785,7 +4764,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v2, 0x0
 
@@ -6066,8 +6044,6 @@
 
 .method updateCheckBox(Landroid/preference/CheckBoxPreference;Z)V
     .locals 1
-    .param p1    # Landroid/preference/CheckBoxPreference;
-    .param p2    # Z
 
     invoke-virtual {p1, p2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
 

@@ -37,7 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/library/LibraryReplicator$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/library/LibraryReplicator$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;-><init>()V
 
@@ -46,8 +45,6 @@
 
 .method static synthetic access$1602(Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;J)J
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;->timestampMs:J
 
@@ -56,8 +53,6 @@
 
 .method static synthetic access$1702(Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;->type:I
 
@@ -66,8 +61,6 @@
 
 .method static synthetic access$1802(Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;->tag:Ljava/lang/String;
 
@@ -76,8 +69,6 @@
 
 .method static synthetic access$1902(Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;Lcom/google/android/finsky/protos/Library$LibraryUpdate;)Lcom/google/android/finsky/protos/Library$LibraryUpdate;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;
-    .param p1    # Lcom/google/android/finsky/protos/Library$LibraryUpdate;
 
     iput-object p1, p0, Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;->libraryUpdate:Lcom/google/android/finsky/protos/Library$LibraryUpdate;
 
@@ -86,8 +77,6 @@
 
 .method static synthetic access$2002(Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;Lcom/android/volley/VolleyError;)Lcom/android/volley/VolleyError;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iput-object p1, p0, Lcom/google/android/finsky/library/LibraryReplicator$DebugEvent;->volleyError:Lcom/android/volley/VolleyError;
 
@@ -96,7 +85,6 @@
 
 .method private static typeToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -172,7 +160,6 @@
 # virtual methods
 .method public dumpState(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string v5, "FinskyLibrary"
 

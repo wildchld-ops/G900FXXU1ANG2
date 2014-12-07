@@ -19,8 +19,6 @@
 # virtual methods
 .method protected directStep(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I
     .locals 3
-    .param p1    # Lorg/apache/http/conn/routing/RouteInfo;
-    .param p2    # Lorg/apache/http/conn/routing/RouteInfo;
 
     const/4 v0, -0x1
 
@@ -89,7 +87,6 @@
 
 .method protected firstStep(Lorg/apache/http/conn/routing/RouteInfo;)I
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/RouteInfo;
 
     const/4 v0, 0x1
 
@@ -107,8 +104,6 @@
 
 .method public nextStep(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I
     .locals 3
-    .param p1    # Lorg/apache/http/conn/routing/RouteInfo;
-    .param p2    # Lorg/apache/http/conn/routing/RouteInfo;
 
     const/4 v2, 0x1
 
@@ -164,8 +159,6 @@
 
 .method protected proxiedStep(Lorg/apache/http/conn/routing/RouteInfo;Lorg/apache/http/conn/routing/RouteInfo;)I
     .locals 6
-    .param p1    # Lorg/apache/http/conn/routing/RouteInfo;
-    .param p2    # Lorg/apache/http/conn/routing/RouteInfo;
 
     const/4 v3, -0x1
 

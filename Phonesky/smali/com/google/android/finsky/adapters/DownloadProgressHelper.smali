@@ -12,11 +12,6 @@
 # direct methods
 .method public static configureDownloadProgressUi(Landroid/content/Context;Lcom/google/android/finsky/receivers/Installer$InstallerProgressReport;Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/ProgressBar;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/receivers/Installer$InstallerProgressReport;
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Landroid/widget/TextView;
-    .param p4    # Landroid/widget/ProgressBar;
 
     const-wide/16 v9, 0x0
 
@@ -193,7 +188,6 @@
 
 .method private static initializeStrings(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/google/android/finsky/adapters/DownloadProgressHelper;->sDownloadStatusFormatPercents:Ljava/lang/CharSequence;
 

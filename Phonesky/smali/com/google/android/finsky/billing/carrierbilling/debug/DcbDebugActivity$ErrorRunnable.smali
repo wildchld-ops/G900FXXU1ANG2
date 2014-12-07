@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;Ljava/lang/String;Ljava/lang/Runnable;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity$ErrorRunnable;->this$0:Lcom/google/android/finsky/billing/carrierbilling/debug/DcbDebugActivity;
 

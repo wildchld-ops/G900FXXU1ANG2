@@ -75,7 +75,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/FHoverPopupWindow;Landroid/content/Context;)V
     .locals 7
-    .param p2    # Landroid/content/Context;
 
     const/high16 v6, -0x40800000
 
@@ -246,7 +245,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 28
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/widget/HoverPopupWindow$HoverPopupContainer;->draw(Landroid/graphics/Canvas;)V
 
@@ -3756,7 +3754,6 @@
 
 .method public setFHmoveAnimation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/FHoverPopupWindow$FHPopupContainer;->isFHmoveAnimation:Z
 
@@ -3765,7 +3762,6 @@
 
 .method public setFHmoveAnimationOffset(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "FHPopupContainer"
 
@@ -3820,7 +3816,6 @@
 
 .method public setOverTopPickerOffset(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/FHoverPopupWindow$FHPopupContainer;->mTopPickerOffset:I
 
@@ -3829,8 +3824,6 @@
 
 .method public setPickerLimit(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/FHoverPopupWindow$FHPopupContainer;->mLeftLimit:I
 
@@ -3841,7 +3834,6 @@
 
 .method public setPopupState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/FHoverPopupWindow$FHPopupContainer;->mPopupState:I
 

@@ -40,7 +40,6 @@
 
 .method public constructor <init>(Ljavax/sip/header/ContentTypeHeader;)V
     .locals 1
-    .param p1    # Ljavax/sip/header/ContentTypeHeader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +66,6 @@
 # virtual methods
 .method public add(Lgov/nist/javax/sip/message/Content;)Z
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/message/Content;
 
     iget-object v0, p0, Lgov/nist/javax/sip/message/MultipartMimeContentImpl;->contentList:Ljava/util/List;
 
@@ -82,7 +80,6 @@
 
 .method public addContent(Lgov/nist/javax/sip/message/Content;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/message/Content;
 
     invoke-virtual {p0, p1}, Lgov/nist/javax/sip/message/MultipartMimeContentImpl;->add(Lgov/nist/javax/sip/message/Content;)Z
 
@@ -91,7 +88,6 @@
 
 .method public createContentList(Ljava/lang/String;)V
     .locals 26
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -539,8 +535,6 @@
 
 .method public getContentByType(Ljava/lang/String;Ljava/lang/String;)Lgov/nist/javax/sip/message/Content;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

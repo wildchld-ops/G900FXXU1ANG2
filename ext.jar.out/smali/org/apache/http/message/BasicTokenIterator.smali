@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HeaderIterator;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HeaderIterator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,9 +54,6 @@
 # virtual methods
 .method protected createToken(Ljava/lang/String;II)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1, p2, p3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -68,7 +64,6 @@
 
 .method protected findNext(I)I
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/ParseException;
@@ -143,7 +138,6 @@
 
 .method protected findTokenEnd(I)I
     .locals 5
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -205,7 +199,6 @@
 
 .method protected findTokenSeparator(I)I
     .locals 6
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -360,7 +353,6 @@
 
 .method protected findTokenStart(I)I
     .locals 6
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -553,7 +545,6 @@
 
 .method protected isHttpSeparator(C)Z
     .locals 1
-    .param p1    # C
 
     const-string v0, " ,;=()<>@:\\\"/[]?{}\t"
 
@@ -576,7 +567,6 @@
 
 .method protected isTokenChar(C)Z
     .locals 3
-    .param p1    # C
 
     const/4 v0, 0x1
 
@@ -617,7 +607,6 @@
 
 .method protected isTokenSeparator(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x2c
 
@@ -636,7 +625,6 @@
 
 .method protected isWhitespace(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x9
 

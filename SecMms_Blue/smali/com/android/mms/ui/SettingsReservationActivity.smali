@@ -113,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SettingsReservationActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mDateView:Landroid/widget/Button;
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SettingsReservationActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mTimeView:Landroid/widget/Button;
 
@@ -131,7 +129,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/SettingsReservationActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mHourofDay:I
 
@@ -140,7 +137,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/SettingsReservationActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mMin:I
 
@@ -149,7 +145,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/SettingsReservationActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SettingsReservationActivity;->refreshMinValue()V
 
@@ -158,7 +153,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SettingsReservationActivity;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget-wide v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mSendTimeBakup:J
 
@@ -167,8 +161,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/SettingsReservationActivity;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mSendTimeBakup:J
 
@@ -177,7 +169,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SettingsReservationActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SettingsReservationActivity;->setCancelResultDate()V
 
@@ -186,8 +177,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/SettingsReservationActivity;J)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/SettingsReservationActivity;->isEnableReservationTime(J)Z
 
@@ -198,7 +187,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SettingsReservationActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SettingsReservationActivity;->setResultData()V
 
@@ -207,7 +195,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SettingsReservationActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mYear:I
 
@@ -216,7 +203,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/SettingsReservationActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mMonth:I
 
@@ -225,7 +211,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/SettingsReservationActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
 
     iget v0, p0, Lcom/android/mms/ui/SettingsReservationActivity;->mDay:I
 
@@ -234,8 +219,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/SettingsReservationActivity;J)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SettingsReservationActivity;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/SettingsReservationActivity;->refreshReservationTime(J)V
 
@@ -244,7 +227,6 @@
 
 .method public static checkReservationTime(J)I
     .locals 6
-    .param p0    # J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -381,7 +363,6 @@
 
 .method private isEnableReservationTime(J)Z
     .locals 7
-    .param p1    # J
 
     const/4 v2, 0x1
 
@@ -548,7 +529,6 @@
 
 .method private refreshReservationTime(J)V
     .locals 12
-    .param p1    # J
 
     const/4 v11, 0x3
 
@@ -1112,7 +1092,6 @@
 # virtual methods
 .method public OnClickReservationOnOff(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, -0x1
 
@@ -1179,7 +1158,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const-string v0, "Mms/SettingsReservationActivity"
 
@@ -1370,7 +1348,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1405,7 +1382,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1548,7 +1524,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1625,7 +1600,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method

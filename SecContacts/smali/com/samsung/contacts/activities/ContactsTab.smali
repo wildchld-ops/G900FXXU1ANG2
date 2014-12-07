@@ -30,8 +30,6 @@
 
 .method public static setupContactsTab(ZZ)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Z
 
     if-eqz p0, :cond_0
 
@@ -65,7 +63,6 @@
 
 .method private static setupTabState(Z)V
     .locals 5
-    .param p0    # Z
 
     const/4 v4, 0x0
 
@@ -116,7 +113,6 @@
 
 .method private static setupTabStateEasy(Z)V
     .locals 4
-    .param p0    # Z
 
     const/4 v3, 0x3
 

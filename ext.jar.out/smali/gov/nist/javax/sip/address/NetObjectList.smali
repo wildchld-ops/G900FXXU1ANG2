@@ -18,7 +18,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/core/GenericObjectList;-><init>(Ljava/lang/String;)V
 
@@ -27,7 +26,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Class;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,7 +44,6 @@
 # virtual methods
 .method public add(Lgov/nist/javax/sip/address/NetObject;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/address/NetObject;
 
     invoke-super {p0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
@@ -55,7 +52,6 @@
 
 .method public concatenate(Lgov/nist/javax/sip/address/NetObjectList;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/address/NetObjectList;
 
     invoke-super {p0, p1}, Lgov/nist/core/GenericObjectList;->concatenate(Lgov/nist/core/GenericObjectList;)V
 
@@ -64,7 +60,6 @@
 
 .method public debugDump(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lgov/nist/core/GenericObjectList;->debugDump(I)Ljava/lang/String;
 
@@ -99,7 +94,6 @@
 
 .method public next(Ljava/util/ListIterator;)Lgov/nist/core/GenericObject;
     .locals 1
-    .param p1    # Ljava/util/ListIterator;
 
     invoke-super {p0, p1}, Lgov/nist/core/GenericObjectList;->next(Ljava/util/ListIterator;)Lgov/nist/core/GenericObject;
 
@@ -112,7 +106,6 @@
 
 .method public setMyClass(Ljava/lang/Class;)V
     .locals 0
-    .param p1    # Ljava/lang/Class;
 
     invoke-super {p0, p1}, Lgov/nist/core/GenericObjectList;->setMyClass(Ljava/lang/Class;)V
 

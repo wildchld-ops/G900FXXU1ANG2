@@ -21,7 +21,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/address/AddressImpl;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/address/AddressImpl;
 
     const-string v0, "P-Associated-URI"
 
@@ -34,7 +33,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/address/GenericURI;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/address/GenericURI;
 
     const-string v0, "P-Associated-URI"
 
@@ -181,7 +179,6 @@
 
 .method public setAssociatedURI(Ljavax/sip/address/URI;)V
     .locals 2
-    .param p1    # Ljavax/sip/address/URI;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -208,7 +205,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

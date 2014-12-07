@@ -14,11 +14,6 @@
 
 .method public static getCallDetailIntentProvider(Lcom/android/dialer/calllog/CallLogAdapter;IJILjava/lang/String;)Lcom/android/dialer/calllog/IntentProvider;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogAdapter;
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/dialer/calllog/IntentProvider$3;
 
@@ -29,11 +24,6 @@
 
 .method public static getCallDetailIntentProviderForOrange(Lcom/android/dialer/calllog/CallLogAdapter;IJILjava/lang/String;)Lcom/android/dialer/calllog/IntentProvider;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogAdapter;
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/dialer/calllog/IntentProvider$4;
 
@@ -44,8 +34,6 @@
 
 .method public static getPlayVoicemailIntentProvider(JLjava/lang/String;)Lcom/android/dialer/calllog/IntentProvider;
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/dialer/calllog/IntentProvider$2;
 
@@ -56,7 +44,6 @@
 
 .method public static getReturnCallIntentProvider(Ljava/lang/String;)Lcom/android/dialer/calllog/IntentProvider;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/dialer/calllog/IntentProvider$1;
 

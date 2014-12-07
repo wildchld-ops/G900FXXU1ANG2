@@ -56,7 +56,6 @@
 
 .method public pokeWakelock(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "FULLockscreen"
 

@@ -32,10 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/api/DfeApiImpl;Ljava/lang/String;Lcom/google/protobuf/nano/MessageNano;Lcom/google/android/finsky/api/DfeApiContext;Ljava/lang/Class;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;Ljava/util/List;)V
     .locals 7
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/protobuf/nano/MessageNano;
-    .param p4    # Lcom/google/android/finsky/api/DfeApiContext;
-    .param p7    # Lcom/android/volley/Response$ErrorListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/api/DfeApiImpl$1;->this$0:Lcom/google/android/finsky/api/DfeApiImpl;
 

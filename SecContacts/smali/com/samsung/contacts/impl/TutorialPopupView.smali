@@ -67,7 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     sget-object v0, Lcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;->HELP_BASIC:Lcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;
 
@@ -80,11 +79,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # Lcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;
-    .param p5    # Landroid/view/View;
 
     const v7, 0x7f0b0138
 
@@ -505,9 +499,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;
-    .param p3    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -528,7 +519,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/impl/TutorialPopupView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mContainer:Landroid/view/View;
 
@@ -537,7 +527,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/impl/TutorialPopupView;)Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mOnIndicatorTouchListener:Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
 
@@ -546,7 +535,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/impl/TutorialPopupView;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     invoke-direct {p0}, Lcom/samsung/contacts/impl/TutorialPopupView;->setDynamicTopPosition()V
 
@@ -555,7 +543,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/impl/TutorialPopupView;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mCurrentPointAnimation:I
 
@@ -564,7 +551,6 @@
 
 .method static synthetic access$1108(Lcom/samsung/contacts/impl/TutorialPopupView;)I
     .locals 2
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mCurrentPointAnimation:I
 
@@ -577,7 +563,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/impl/TutorialPopupView;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mPointAnimations:Ljava/util/List;
 
@@ -586,7 +571,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/impl/TutorialPopupView;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mIndicator:Landroid/widget/LinearLayout;
 
@@ -595,7 +579,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/impl/TutorialPopupView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mBubbleView:Landroid/view/View;
 
@@ -604,7 +587,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/contacts/impl/TutorialPopupView;)Landroid/util/DisplayMetrics;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     invoke-direct {p0}, Lcom/samsung/contacts/impl/TutorialPopupView;->getDefaultDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -615,7 +597,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/contacts/impl/TutorialPopupView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mMainView:Landroid/view/View;
 
@@ -624,8 +605,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/impl/TutorialPopupView;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/impl/TutorialPopupView;->dispatchTouchEventToActivity(Landroid/view/MotionEvent;)V
 
@@ -634,7 +613,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/impl/TutorialPopupView;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mIgnoreTouchEventOutOfIndicator:Z
 
@@ -643,7 +621,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/impl/TutorialPopupView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mContext:Landroid/content/Context;
 
@@ -652,8 +629,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/impl/TutorialPopupView;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/impl/TutorialPopupView;->constructPopupMenu(Landroid/view/View;)V
 
@@ -662,7 +637,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/impl/TutorialPopupView;)Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mOnIndicatorTouchListenerSecond:Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
 
@@ -671,7 +645,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/impl/TutorialPopupView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mAnchor:Landroid/view/View;
 
@@ -680,7 +653,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/impl/TutorialPopupView;)Lcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mLayoutType:Lcom/samsung/contacts/impl/HelpImpl$LAYOUT_TYPE;
 
@@ -689,7 +661,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/impl/TutorialPopupView;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/impl/TutorialPopupView;
 
     iget v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mCircleSize:I
 
@@ -698,7 +669,6 @@
 
 .method private constructPopupMenu(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/widget/PopupMenu;
 
@@ -731,7 +701,6 @@
 
 .method private dispatchTouchEventToActivity(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v2, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mContext:Landroid/content/Context;
 
@@ -958,7 +927,6 @@
 
 .method private setupMenuItems(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -1144,7 +1112,6 @@
 
 .method public setArrowVisibility(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mArrowIndicator:Landroid/widget/ImageView;
 
@@ -1165,7 +1132,6 @@
 
 .method public setBubbleAndIndicatorLeftPosition(I)V
     .locals 10
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/samsung/contacts/impl/TutorialPopupView;->getDefaultDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -1298,7 +1264,6 @@
 
 .method public setIndicatorVisibility(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -1345,7 +1310,6 @@
 
 .method public setOnIndicatorTouchListener(Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mOnIndicatorTouchListener:Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
 
@@ -1354,7 +1318,6 @@
 
 .method public setOnSecondIndicatorTouchListener(Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mOnIndicatorTouchListenerSecond:Lcom/samsung/contacts/impl/HelpImpl$OnIndicatorTouchListener;
 
@@ -1363,7 +1326,6 @@
 
 .method public setPostionFromBottom(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Lcom/samsung/contacts/impl/TutorialPopupView$11;
 
@@ -1402,7 +1364,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mTutorialTextView:Landroid/widget/TextView;
 
@@ -1413,7 +1374,6 @@
 
 .method public setTopPostion(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1426,7 +1386,6 @@
 
 .method public setTouchableArea(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/TutorialPopupView;->mTouchArea:Landroid/view/View;
 
@@ -1485,9 +1444,6 @@
 
 .method public show(ZZZ)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const v7, 0x7f0b022a
 

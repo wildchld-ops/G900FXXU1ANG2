@@ -40,8 +40,6 @@
 # virtual methods
 .method public makeHoverText(Landroid/widget/TextView;Landroid/view/View;)Ljava/lang/StringBuffer;
     .locals 9
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/view/View;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -198,8 +196,6 @@
 
 .method public onSetContentView(Landroid/view/View;Landroid/widget/HoverPopupWindow;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/HoverPopupWindow;
 
     const/4 v3, 0x0
 

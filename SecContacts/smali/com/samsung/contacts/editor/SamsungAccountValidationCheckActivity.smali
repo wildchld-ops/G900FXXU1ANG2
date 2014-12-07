@@ -34,8 +34,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;I)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;->finishActivityWithResult(I)V
 
@@ -44,7 +42,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -53,8 +50,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -63,7 +58,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;->writeValidationSamsungAccountToPreference()V
 
@@ -72,7 +66,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/editor/SamsungAccountValidationCheckActivity;->checkContactsSyncable()V
 
@@ -217,7 +210,6 @@
 
 .method private finishActivityWithResult(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -307,7 +299,6 @@
 
 .method private isVaildAccount(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -367,7 +358,6 @@
 
 .method private showSetContactSyncPopup(Landroid/accounts/Account;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -428,7 +418,6 @@
 
 .method private takeErrorMsg(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     if-eqz p1, :cond_0
 
@@ -559,9 +548,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const v4, 0x7f0e03a8
 
@@ -691,7 +677,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 

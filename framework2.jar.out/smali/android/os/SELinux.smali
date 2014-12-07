@@ -40,10 +40,6 @@
 
 .method public static getDomain(ILjava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -76,10 +72,6 @@
 
 .method public static getFileType(ILjava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -130,7 +122,6 @@
 
 .method public static restorecon(Ljava/io/File;)Z
     .locals 4
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -187,7 +178,6 @@
 
 .method public static restorecon(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -212,8 +202,6 @@
 
 .method public static restorecon_with_category(Ljava/lang/String;I)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -269,8 +257,6 @@
 
 .method public static restorecon_with_category(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;

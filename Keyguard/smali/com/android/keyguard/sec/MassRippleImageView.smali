@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/16 v1, 0xc8
 
@@ -63,11 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;FIIF)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
-    .param p5    # F
 
     const/high16 v2, 0x41a00000
 
@@ -334,7 +328,6 @@
 
 .method public setPivotX(F)V
     .locals 0
-    .param p1    # F
 
     invoke-super {p0, p1}, Landroid/view/View;->setPivotX(F)V
 
@@ -343,7 +336,6 @@
 
 .method public setPivotY(F)V
     .locals 0
-    .param p1    # F
 
     invoke-super {p0, p1}, Landroid/view/View;->setPivotY(F)V
 
@@ -352,7 +344,6 @@
 
 .method public translatedFromDPToPixel(F)F
     .locals 6
-    .param p1    # F
 
     const/4 v2, 0x0
 

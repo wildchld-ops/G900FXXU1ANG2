@@ -46,8 +46,6 @@
 
 .method static synthetic access$002(Lcom/samsung/dialer/interaction/InteractionRecentActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/dialer/interaction/InteractionRecentActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/interaction/InteractionRecentActivity;->mSelectedCount:I
 
@@ -56,8 +54,6 @@
 
 .method static synthetic access$102(Lcom/samsung/dialer/interaction/InteractionRecentActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/dialer/interaction/InteractionRecentActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/interaction/InteractionRecentActivity;->mTotalCount:I
 
@@ -85,7 +81,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
 
     const-string v0, "InteractionRecentActivity"
 
@@ -116,7 +111,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -127,7 +121,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -222,7 +215,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const-string v1, "InteractionRecentActivity"
 
@@ -290,7 +282,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -336,7 +327,6 @@
 
 .method protected setButtonClickable(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/dialer/interaction/InteractionRecentActivity;->mActionBar:Landroid/app/ActionBar;
 

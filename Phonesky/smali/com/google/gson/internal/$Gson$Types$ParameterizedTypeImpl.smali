@@ -33,9 +33,6 @@
 # direct methods
 .method public varargs constructor <init>(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)V
     .locals 5
-    .param p1    # Ljava/lang/reflect/Type;
-    .param p2    # Ljava/lang/reflect/Type;
-    .param p3    # [Ljava/lang/reflect/Type;
 
     const/4 v4, 0x1
 
@@ -159,7 +156,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Ljava/lang/reflect/ParameterizedType;
 

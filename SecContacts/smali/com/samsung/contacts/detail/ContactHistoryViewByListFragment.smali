@@ -80,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;->mHeaderAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -89,8 +88,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;->setAllItemCheckState(Z)V
 
@@ -99,7 +96,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;->checkOptionsChanged()Z
 
@@ -110,7 +106,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;->mListView:Landroid/widget/ListView;
 
@@ -161,7 +156,6 @@
 
 .method private linkOptionToListItem(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -197,7 +191,6 @@
 
 .method private setAllItemCheckState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/samsung/contacts/detail/ContactHistoryViewByListFragment;->mListView:Landroid/widget/ListView;
 
@@ -428,7 +421,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -481,9 +473,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -629,10 +618,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 3
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     if-nez p3, :cond_0
 
@@ -671,7 +656,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "sortOptions"
 
@@ -696,8 +680,6 @@
 
 .method public setExtras(Landroid/os/Bundle;Z)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 

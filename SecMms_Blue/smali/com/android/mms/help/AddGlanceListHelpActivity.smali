@@ -45,7 +45,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/help/AddGlanceListHelpActivity;)Lcom/android/mms/help/TwHelpAnimatedDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AddGlanceListHelpActivity;
 
     iget-object v0, p0, Lcom/android/mms/help/AddGlanceListHelpActivity;->mHelpDialog:Lcom/android/mms/help/TwHelpAnimatedDialog;
 
@@ -179,7 +178,6 @@
 
 .method private updatePointerPosition(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -249,7 +247,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "Mms/AddGlanceListHelpActivity"
 
@@ -281,7 +278,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

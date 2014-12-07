@@ -14,7 +14,6 @@
 
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/volley/NetworkError;-><init>(Ljava/lang/Throwable;)V
 

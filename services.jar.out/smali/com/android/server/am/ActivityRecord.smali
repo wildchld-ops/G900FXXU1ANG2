@@ -234,21 +234,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/ProcessRecord;ILjava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/content/pm/ActivityInfo;Landroid/content/res/Configuration;Lcom/android/server/am/ActivityRecord;Ljava/lang/String;IZLcom/android/server/am/ActivityStackSupervisor;Lcom/android/server/am/ActivityRecord;Landroid/os/IBinder;)V
     .locals 9
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/Intent;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/content/pm/ActivityInfo;
-    .param p8    # Landroid/content/res/Configuration;
-    .param p9    # Lcom/android/server/am/ActivityRecord;
-    .param p10    # Ljava/lang/String;
-    .param p11    # I
-    .param p12    # Z
-    .param p13    # Lcom/android/server/am/ActivityStackSupervisor;
-    .param p14    # Lcom/android/server/am/ActivityRecord;
-    .param p15    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -990,7 +975,6 @@
 
 .method static activityResumedLocked(Landroid/os/IBinder;)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     invoke-static {p0}, Lcom/android/server/am/ActivityRecord;->forToken(Landroid/os/IBinder;)Lcom/android/server/am/ActivityRecord;
 
@@ -1009,7 +993,6 @@
 
 .method private activityTypeToString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1051,7 +1034,6 @@
 
 .method static forToken(Landroid/os/IBinder;)Lcom/android/server/am/ActivityRecord;
     .locals 6
-    .param p0    # Landroid/os/IBinder;
 
     const/4 v3, 0x0
 
@@ -1115,7 +1097,6 @@
 
 .method static getStackLocked(Landroid/os/IBinder;)Lcom/android/server/am/ActivityStack;
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     invoke-static {p0}, Lcom/android/server/am/ActivityRecord;->isInStackLocked(Landroid/os/IBinder;)Lcom/android/server/am/ActivityRecord;
 
@@ -1138,8 +1119,6 @@
 
 .method static getTaskForActivityLocked(Landroid/os/IBinder;Z)I
     .locals 4
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Z
 
     const/4 v2, -0x1
 
@@ -1241,7 +1220,6 @@
 
 .method static isInStackLocked(Landroid/os/IBinder;)Lcom/android/server/am/ActivityRecord;
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     invoke-static {p0}, Lcom/android/server/am/ActivityRecord;->forToken(Landroid/os/IBinder;)Lcom/android/server/am/ActivityRecord;
 
@@ -1268,7 +1246,6 @@
 
 .method private reportLaunchTimeLocked(J)V
     .locals 13
-    .param p1    # J
 
     const-wide/16 v11, 0x0
 
@@ -1429,7 +1406,6 @@
 # virtual methods
 .method addNewIntentLocked(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/server/am/ActivityRecord;->newIntents:Ljava/util/ArrayList;
 
@@ -1451,11 +1427,6 @@
 
 .method addResultLocked(Lcom/android/server/am/ActivityRecord;Ljava/lang/String;IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/Intent;
 
     new-instance v0, Lcom/android/server/am/ActivityResult;
 
@@ -1755,7 +1726,6 @@
 
 .method changeWindowTranslucency(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1903,8 +1873,6 @@
 
 .method final deliverNewIntentLocked(ILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/android/server/am/ActivityRecord;->service:Lcom/android/server/am/ActivityManagerService;
 
@@ -2069,8 +2037,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     const/4 v12, 0x1
 
@@ -3337,7 +3303,6 @@
 
 .method public keyDispatchingTimedOut(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/am/ActivityRecord;->service:Lcom/android/server/am/ActivityManagerService;
 
@@ -3427,7 +3392,6 @@
 
 .method public mayFreezeScreenLocked(Lcom/android/server/am/ProcessRecord;)Z
     .locals 1
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     if-eqz p1, :cond_0
 
@@ -3506,9 +3470,6 @@
 
 .method removeResultsLocked(Lcom/android/server/am/ActivityRecord;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v2, p0, Lcom/android/server/am/ActivityRecord;->results:Ljava/util/ArrayList;
 
@@ -3792,7 +3753,6 @@
 
 .method setMultiWindowStyle(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v0, 0x0
 
@@ -3803,8 +3763,6 @@
 
 .method setMultiWindowStyle(Lcom/samsung/android/multiwindow/MultiWindowStyle;Z)V
     .locals 2
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/am/ActivityRecord;->multiWindowStyle:Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -3865,7 +3823,6 @@
 
 .method public setSleeping(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/server/am/ActivityRecord;->sleeping:Z
 
@@ -3956,9 +3913,6 @@
 
 .method setTask(Lcom/android/server/am/TaskRecord;Lcom/android/server/am/ThumbnailHolder;Z)V
     .locals 3
-    .param p1    # Lcom/android/server/am/TaskRecord;
-    .param p2    # Lcom/android/server/am/ThumbnailHolder;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/am/ActivityRecord;->task:Lcom/android/server/am/TaskRecord;
 
@@ -4092,8 +4046,6 @@
 
 .method public startFreezingScreenLocked(Lcom/android/server/am/ProcessRecord;I)V
     .locals 2
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/ActivityRecord;->mayFreezeScreenLocked(Lcom/android/server/am/ProcessRecord;)Z
 
@@ -4146,7 +4098,6 @@
 
 .method public stopFreezingScreenLocked(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -4345,7 +4296,6 @@
 
 .method updateOptionsLocked(Landroid/app/ActivityOptions;)V
     .locals 1
-    .param p1    # Landroid/app/ActivityOptions;
 
     if-eqz p1, :cond_1
 
@@ -4366,7 +4316,6 @@
 
 .method updateOptionsLocked(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_1
 
@@ -4391,8 +4340,6 @@
 
 .method updateThumbnail(Landroid/graphics/Bitmap;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/server/am/ActivityRecord;->thumbHolder:Lcom/android/server/am/ThumbnailHolder;
 

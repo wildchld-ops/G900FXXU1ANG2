@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -52,8 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -76,9 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -101,7 +95,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/ScreenshotView;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ScreenshotView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotView;->mProgressBar:Landroid/widget/ProgressBar;
 
@@ -154,7 +147,6 @@
 
 .method public onLoaded(Landroid/widget/ImageView;)V
     .locals 3
-    .param p1    # Landroid/widget/ImageView;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/ScreenshotView;->mHandler:Landroid/os/Handler;
 
@@ -198,8 +190,6 @@
 
 .method public setImage(Lcom/google/android/finsky/protos/Doc$Image;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/ScreenshotView;->mImageView:Lcom/google/android/finsky/layout/FifeImageView;
 

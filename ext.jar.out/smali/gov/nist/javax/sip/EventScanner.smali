@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/SipStackImpl;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/SipStackImpl;
 
     const/4 v2, 0x0
 
@@ -68,7 +67,6 @@
 # virtual methods
 .method public addEvent(Lgov/nist/javax/sip/EventWrapper;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/EventWrapper;
 
     iget-object v0, p0, Lgov/nist/javax/sip/EventScanner;->sipStack:Lgov/nist/javax/sip/SipStackImpl;
 
@@ -134,7 +132,6 @@
 
 .method public deliverEvent(Lgov/nist/javax/sip/EventWrapper;)V
     .locals 17
-    .param p1    # Lgov/nist/javax/sip/EventWrapper;
 
     move-object/from16 v0, p1
 

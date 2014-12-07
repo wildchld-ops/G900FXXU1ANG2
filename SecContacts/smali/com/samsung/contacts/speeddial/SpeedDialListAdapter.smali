@@ -93,10 +93,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -207,8 +203,6 @@
 
 .method static synthetic access$102(Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mIsFromQuickContact:Z
 
@@ -217,7 +211,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mListData:Ljava/util/ArrayList;
 
@@ -234,7 +227,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mContext:Landroid/content/Context;
 
@@ -243,7 +235,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->isCtcDuos:Z
 
@@ -252,11 +243,6 @@
 
 .method private bindAddContactView(ILcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;IZZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     const v6, 0x7f020162
 
@@ -461,10 +447,6 @@
 
 .method private bindDelButtonView(Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;IZZ)V
     .locals 3
-    .param p1    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -525,10 +507,6 @@
 
 .method private bindNumberView(Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;IZZ)V
     .locals 6
-    .param p1    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const v5, 0x7f0a0082
 
@@ -633,10 +611,6 @@
 
 .method private bindPhotoView(ILcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;IZ)V
     .locals 17
-    .param p1    # I
-    .param p2    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v3, 0x0
 
@@ -1180,8 +1154,6 @@
 
 .method private bindView(ILandroid/view/View;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1292,12 +1264,6 @@
 # virtual methods
 .method public bindViewHelpMode(ILandroid/view/View;Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;IZZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/samsung/contacts/speeddial/SpeedDialListAdapter$ViewHolder;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mContext:Landroid/content/Context;
 
@@ -1367,7 +1333,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mListData:Ljava/util/ArrayList;
 
@@ -1380,7 +1345,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -1389,9 +1353,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x0
 
@@ -1556,7 +1517,6 @@
 
 .method protected isMatchedAppPLSpl(I)Z
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mIsAppPreloadedSpl:Z
 
@@ -1802,7 +1762,6 @@
 
 .method protected setFromQuickContact(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mIsFromQuickContact:Z
 
@@ -1811,7 +1770,6 @@
 
 .method public setSpdlRange(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialListAdapter;->mSpinRange:I
 

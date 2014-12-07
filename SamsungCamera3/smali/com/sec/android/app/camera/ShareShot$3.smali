@@ -33,7 +33,6 @@
 # virtual methods
 .method public callbackTest(I)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -100,7 +99,6 @@
 
 .method public onRecvEnd(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -144,7 +142,6 @@
 
 .method public onShareWithRequestReceived(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -177,7 +174,6 @@
 
 .method public onTaskAdded(Lcom/samsung/dmc/ux/db/ProcessInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/dmc/ux/db/ProcessInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -189,7 +185,6 @@
 
 .method public onTaskEnded(Lcom/samsung/dmc/ux/db/ProcessInfo;)V
     .locals 6
-    .param p1    # Lcom/samsung/dmc/ux/db/ProcessInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -269,7 +264,6 @@
 
 .method public onTaskRemoved(Lcom/samsung/dmc/ux/db/ProcessInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/dmc/ux/db/ProcessInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -281,7 +275,6 @@
 
 .method public onTaskUpdated(Lcom/samsung/dmc/ux/db/ProcessInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/dmc/ux/db/ProcessInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -293,8 +286,6 @@
 
 .method public onUserActivated(Lcom/samsung/shareshot/User;I)V
     .locals 0
-    .param p1    # Lcom/samsung/shareshot/User;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -306,7 +297,6 @@
 
 .method public onUserChanged(Lcom/samsung/shareshot/User;)V
     .locals 2
-    .param p1    # Lcom/samsung/shareshot/User;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

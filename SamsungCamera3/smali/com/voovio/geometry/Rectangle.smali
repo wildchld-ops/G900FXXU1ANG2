@@ -26,10 +26,6 @@
 
 .method public constructor <init>(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,7 +77,6 @@
 
 .method public containsPoint(Lcom/voovio/geometry/Point;)Z
     .locals 3
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p1, Lcom/voovio/geometry/Point;->x:F
 
@@ -136,7 +131,6 @@
 
 .method public extend(Lcom/voovio/geometry/Point;)V
     .locals 6
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v1, p0, Lcom/voovio/geometry/Rectangle;->x:F
 
@@ -327,8 +321,6 @@
 
 .method public inflate(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v2, 0x40000000
 
@@ -365,7 +357,6 @@
 
 .method public makePoint(Lcom/voovio/geometry/Point;)V
     .locals 0
-    .param p1    # Lcom/voovio/geometry/Point;
 
     invoke-virtual {p0, p1}, Lcom/voovio/geometry/Rectangle;->setTopLeft(Lcom/voovio/geometry/Point;)V
 
@@ -376,7 +367,6 @@
 
 .method public setBottom(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/voovio/geometry/Rectangle;->y:F
 
@@ -389,7 +379,6 @@
 
 .method public setBottomRight(Lcom/voovio/geometry/Point;)V
     .locals 2
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p1, Lcom/voovio/geometry/Point;->x:F
 
@@ -412,7 +401,6 @@
 
 .method public setLeft(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/geometry/Rectangle;->x:F
 
@@ -421,7 +409,6 @@
 
 .method public setRight(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/voovio/geometry/Rectangle;->x:F
 
@@ -434,7 +421,6 @@
 
 .method public setTop(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/geometry/Rectangle;->y:F
 
@@ -443,7 +429,6 @@
 
 .method public setTopLeft(Lcom/voovio/geometry/Point;)V
     .locals 1
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p1, Lcom/voovio/geometry/Point;->x:F
 
@@ -538,7 +523,6 @@
 
 .method public union(Lcom/voovio/geometry/Rectangle;)Lcom/voovio/geometry/Rectangle;
     .locals 6
-    .param p1    # Lcom/voovio/geometry/Rectangle;
 
     new-instance v0, Lcom/voovio/geometry/Rectangle;
 

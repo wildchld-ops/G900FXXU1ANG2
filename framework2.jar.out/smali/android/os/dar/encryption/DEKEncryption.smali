@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;Ljava/io/File;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -88,7 +86,6 @@
 
 .method private fileRead(Ljava/io/File;)[B
     .locals 6
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -187,8 +184,6 @@
 
 .method private fileWrite(Ljava/io/File;[B)V
     .locals 5
-    .param p1    # Ljava/io/File;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -281,7 +276,6 @@
 
 .method private static getHexString([B)Ljava/lang/StringBuffer;
     .locals 3
-    .param p0    # [B
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -361,7 +355,6 @@
 # virtual methods
 .method public createKeyPair(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -554,7 +547,6 @@
 
 .method public decryptDEK([B)[B
     .locals 6
-    .param p1    # [B
 
     const/4 v2, 0x0
 
@@ -632,7 +624,6 @@
 
 .method public decryptPrivKey(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/os/dar/encryption/DEKEncryption;->mEncPrivKeyBuf:[B
 
@@ -765,7 +756,6 @@
 
 .method public encryptDEK([B)[B
     .locals 5
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -943,8 +933,6 @@
 
 .method public reEncryptPrivKey(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

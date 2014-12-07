@@ -52,7 +52,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -181,9 +180,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;I)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -210,10 +206,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;ILcom/google/android/finsky/billing/IabParameters;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/billing/IabParameters;
 
     const/4 v4, 0x0
 
@@ -240,13 +232,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -273,14 +258,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/billing/IabParameters;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Lcom/google/android/finsky/billing/IabParameters;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -333,8 +310,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

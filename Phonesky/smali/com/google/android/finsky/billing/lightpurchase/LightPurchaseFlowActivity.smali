@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;)Lcom/google/android/finsky/protos/Common$Docid;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->mDocid:Lcom/google/android/finsky/protos/Common$Docid;
 
@@ -67,7 +66,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->logConfirmFreeDownload()V
 
@@ -76,7 +74,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->success()V
 
@@ -85,7 +82,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;)Landroid/accounts/Account;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->mAccount:Landroid/accounts/Account;
 
@@ -94,7 +90,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->mDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -103,8 +98,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->handlePromptForFopResult(I)V
 
@@ -113,9 +106,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;ILandroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->handleAppPermissionResult(ILandroid/content/Intent;)V
 
@@ -124,9 +114,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;ILandroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->handleOfferResolutionResult(ILandroid/content/Intent;)V
 
@@ -135,8 +122,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->handlePaymentResult(I)V
 
@@ -145,7 +130,6 @@
 
 .method private acquire(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x1
 
@@ -324,13 +308,6 @@
 
 .method public static createIntent(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;ILcom/google/android/finsky/utils/DocUtils$OfferFilter;[BLjava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/accounts/Account;
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/utils/DocUtils$OfferFilter;
-    .param p4    # [B
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -400,7 +377,6 @@
 
 .method private getBackgroundEvent(I)Lcom/google/android/finsky/analytics/PlayStore$PlayStoreBackgroundActionEvent;
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -449,8 +425,6 @@
 
 .method private handleAppPermissionResult(ILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -565,8 +539,6 @@
 
 .method private handleOfferResolutionResult(ILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -643,7 +615,6 @@
 
 .method private handlePaymentResult(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -680,7 +651,6 @@
 
 .method private handlePromptForFopResult(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -787,7 +757,6 @@
 
 .method private logFinish(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x259
 
@@ -842,7 +811,6 @@
 
 .method private setupFromExternalPurchaseIntent(Landroid/content/Intent;)Z
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -1076,7 +1044,6 @@
 
 .method private setupFromInternalIntent(Landroid/content/Intent;)Z
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 
@@ -1251,7 +1218,6 @@
 
 .method private showDownloadSizeWarning(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -1489,9 +1455,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1561,7 +1524,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->getIntent()Landroid/content/Intent;
 
@@ -1716,7 +1678,6 @@
 
 .method public onDownloadOk(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->mDocid:Lcom/google/android/finsky/protos/Common$Docid;
 
@@ -1764,8 +1725,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->fail()V
 
@@ -1774,8 +1733,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1861,7 +1818,6 @@
 
 .method protected onReady(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/google/android/finsky/billing/lightpurchase/LightPurchaseFlowActivity;->mFailed:Z
 
@@ -1938,7 +1894,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2019,7 +1974,6 @@
 
 .method public showError(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

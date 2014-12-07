@@ -157,8 +157,6 @@
 
 .method static CreateScaledBitmapWithNormalSize(Landroid/graphics/Bitmap;Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Landroid/content/Context;
 
     sget v1, Lcom/android/launcher2/Utilities;->sIconNormalWidth:I
 
@@ -204,7 +202,6 @@
 
 .method static broadcastStkIntent(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "gsm.sim.screenEvent"
 
@@ -246,9 +243,6 @@
 
 .method public static centerChildInParent(Landroid/graphics/RectF;Landroid/graphics/PointF;Landroid/graphics/PointF;)V
     .locals 3
-    .param p0    # Landroid/graphics/RectF;
-    .param p1    # Landroid/graphics/PointF;
-    .param p2    # Landroid/graphics/PointF;
 
     const/high16 v2, 0x40000000
 
@@ -293,9 +287,6 @@
 
 .method public static centerChildInParent(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/PointF;)V
     .locals 4
-    .param p0    # Landroid/graphics/RectF;
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/PointF;
 
     const/high16 v3, 0x40000000
 
@@ -352,8 +343,6 @@
 
 .method static createIconBitmap(Landroid/graphics/Bitmap;Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 12
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Landroid/content/Context;
 
     const/high16 v11, 0x3f000000
 
@@ -510,8 +499,6 @@
 
 .method static createIconBitmap(Landroid/graphics/drawable/Drawable;Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 14
-    .param p0    # Landroid/graphics/drawable/Drawable;
-    .param p1    # Landroid/content/Context;
 
     const/4 v13, 0x0
 
@@ -732,9 +719,6 @@
 
 .method static createIconBitmap(Landroid/graphics/drawable/Drawable;Landroid/content/Context;I)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Landroid/graphics/drawable/Drawable;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     sget v2, Lcom/android/launcher2/Utilities;->sIconWidth:I
 
@@ -812,8 +796,6 @@
 
 .method static drawDisabledBitmap(Landroid/graphics/Bitmap;Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -876,11 +858,6 @@
 
 .method static drawSelectedAllAppsBitmap(Landroid/graphics/Canvas;IIZLandroid/graphics/Bitmap;)V
     .locals 8
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/graphics/Bitmap;
 
     sget-object v5, Lcom/android/launcher2/Utilities;->sCanvas:Landroid/graphics/Canvas;
 
@@ -987,9 +964,6 @@
 
 .method public static drawVerticalLine(Landroid/view/View;Landroid/graphics/Canvas;I)V
     .locals 8
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     invoke-static {}, Lcom/android/launcher2/Utilities;->ensureBlackPaint()V
 
@@ -1079,7 +1053,6 @@
 
 .method private static ensureViewBgPaint(Landroid/view/View;)Landroid/graphics/Paint;
     .locals 5
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
@@ -1145,8 +1118,6 @@
 
 .method public static getEditTextMaxLengthFilter(Landroid/content/Context;I)[Landroid/text/InputFilter;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1165,9 +1136,6 @@
 
 .method public static getLocationWithRespectTo([ILandroid/view/ViewParent;Landroid/view/View;)V
     .locals 9
-    .param p0    # [I
-    .param p1    # Landroid/view/ViewParent;
-    .param p2    # Landroid/view/View;
 
     const/4 v5, 0x2
 
@@ -1315,9 +1283,6 @@
 
 .method public static getRandomColor(III)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     new-instance v3, Ljava/util/Random;
 
@@ -1358,10 +1323,6 @@
 
 .method public static getSampleSize(IIII)I
     .locals 5
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     int-to-float v3, p1
 
@@ -1398,8 +1359,6 @@
 
 .method public static getScreenSize(Landroid/content/Context;Landroid/graphics/Point;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Point;
 
     const/high16 v4, 0x42400000
 
@@ -1517,7 +1476,6 @@
 
 .method public static hashCode(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
@@ -1532,7 +1490,6 @@
 
 .method private static initStatics(Landroid/content/Context;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/16 v9, 0x1e
 
@@ -1649,10 +1606,6 @@
 
 .method public static loadBitmapToDesiredDimension(Landroid/content/res/Resources;III)Landroid/graphics/Bitmap;
     .locals 15
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v12, Landroid/graphics/BitmapFactory$Options;
 
@@ -1917,14 +1870,6 @@
 
 .method public static loadSamsungWidgetThemePreview(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IIII[I)Landroid/graphics/Bitmap;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [I
 
     const/4 v11, 0x0
 
@@ -1985,13 +1930,6 @@
 
 .method public static loadWidgetPreview(Landroid/content/Context;Ljava/lang/String;IIII[I)Landroid/graphics/Bitmap;
     .locals 30
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [I
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -2390,13 +2328,6 @@
 
 .method public static loadWidgetThemePreview(Landroid/content/Context;Ljava/lang/String;IIII[I)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [I
 
     const/4 v2, 0x0
 
@@ -2449,8 +2380,6 @@
 
 .method public static onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v0, 0x0
 
@@ -2461,9 +2390,6 @@
 
 .method public static onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;Z)V
     .locals 13
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -2585,12 +2511,6 @@
 
 .method public static renderDrawableToBitmap(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap;IIII)V
     .locals 8
-    .param p0    # Landroid/graphics/drawable/Drawable;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/high16 v6, 0x3f800000
 
@@ -2615,13 +2535,6 @@
 
 .method public static renderDrawableToBitmap(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap;IIIIF)V
     .locals 8
-    .param p0    # Landroid/graphics/drawable/Drawable;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
 
     const/4 v7, -0x1
 
@@ -2646,14 +2559,6 @@
 
 .method public static renderDrawableToBitmap(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap;IIIIFI)V
     .locals 4
-    .param p0    # Landroid/graphics/drawable/Drawable;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # I
 
     if-eqz p1, :cond_1
 
@@ -2696,8 +2601,6 @@
 
 .method static resampleIconBitmap(Landroid/graphics/Bitmap;Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Landroid/content/Context;
 
     sget-object v1, Lcom/android/launcher2/Utilities;->sCanvas:Landroid/graphics/Canvas;
 
@@ -2754,7 +2657,6 @@
 
 .method static roundToPow2(I)I
     .locals 3
-    .param p0    # I
 
     move v1, p0
 
@@ -2796,9 +2698,6 @@
 
 .method public static scaleBitmapToDesiredDimension(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # I
 
     if-eqz p0, :cond_0
 
@@ -2889,8 +2788,6 @@
 
 .method public static showToast(Landroid/content/Context;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v4, 0x7f0e00ef
 

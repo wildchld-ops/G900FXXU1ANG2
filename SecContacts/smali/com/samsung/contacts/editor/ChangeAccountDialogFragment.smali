@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;
 
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
@@ -41,8 +40,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;Lcom/android/contacts/common/model/account/AccountWithDataSet;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;->onAccountSelected(Lcom/android/contacts/common/model/account/AccountWithDataSet;)Z
 
@@ -61,7 +58,6 @@
 
 .method static synthetic access$102(Lcom/android/contacts/editor/ContactEditorUtils;)Lcom/android/contacts/editor/ContactEditorUtils;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorUtils;
 
     sput-object p0, Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;->mEditorUtils:Lcom/android/contacts/editor/ContactEditorUtils;
 
@@ -70,7 +66,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;)Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;->mListener:Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;
 
@@ -79,7 +74,6 @@
 
 .method public static dismissDialog(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "ChangeAccountDialogFragment"
 
@@ -109,7 +103,6 @@
 
 .method public static isShowing(Landroid/app/FragmentManager;)Z
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "ChangeAccountDialogFragment"
 
@@ -147,7 +140,6 @@
 
 .method private onAccountSelected(Lcom/android/contacts/common/model/account/AccountWithDataSet;)Z
     .locals 1
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;->mListener:Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;
 
@@ -162,7 +154,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -182,7 +173,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -334,7 +324,6 @@
 
 .method public setListener(Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/ChangeAccountDialogFragment;->mListener:Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;
 
@@ -343,11 +332,6 @@
 
 .method public show(Landroid/app/FragmentManager;ILcom/android/contacts/common/util/AccountsListAdapter$AccountListFilter;Landroid/os/Bundle;Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;)V
     .locals 4
-    .param p1    # Landroid/app/FragmentManager;
-    .param p2    # I
-    .param p3    # Lcom/android/contacts/common/util/AccountsListAdapter$AccountListFilter;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Lcom/samsung/contacts/editor/ChangeAccountDialogFragment$Listener;
 
     new-instance v0, Landroid/os/Bundle;
 

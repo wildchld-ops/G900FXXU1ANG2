@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -152,7 +151,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/RecentsWindow;)Lcom/android/systemui/recent/RecentsPanelView;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -161,7 +159,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/RecentsWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mShowing:Z
 
@@ -170,7 +167,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/recent/RecentsWindow;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/RecentsWindow;->initRecentPanel()V
 

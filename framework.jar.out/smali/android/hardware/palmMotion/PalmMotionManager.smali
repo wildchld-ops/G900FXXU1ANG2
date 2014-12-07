@@ -26,7 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +93,6 @@
 # virtual methods
 .method public setUseGestureDetectorEx(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/hardware/palmMotion/PalmMotionManager;->getService()Landroid/hardware/palmMotion/IPalmMotionService;

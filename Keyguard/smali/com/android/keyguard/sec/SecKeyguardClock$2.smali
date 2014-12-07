@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/sec/SecKeyguardClock;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SecKeyguardClock$2;->this$0:Lcom/android/keyguard/sec/SecKeyguardClock;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v1, 0x12cb
 

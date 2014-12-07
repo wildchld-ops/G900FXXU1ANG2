@@ -102,8 +102,6 @@
 
 .method static synthetic access$002(Lcom/android/contacts/common/vcard/ImportVCardActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mErrorMessage:Ljava/lang/String;
 
@@ -112,8 +110,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/common/vcard/ImportVCardActivity;Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardFile;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardFile;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/vcard/ImportVCardActivity;->importVCardFromSDCard(Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardFile;)V
 
@@ -122,7 +118,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mImportPath:Ljava/lang/String;
 
@@ -131,7 +126,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mProgressDialogForScanVCard:Landroid/app/ProgressDialog;
 
@@ -140,8 +134,6 @@
 
 .method static synthetic access$1202(Lcom/android/contacts/common/vcard/ImportVCardActivity;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mProgressDialogForScanVCard:Landroid/app/ProgressDialog;
 
@@ -150,7 +142,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/common/vcard/ImportVCardActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/common/vcard/ImportVCardActivity;->startVCardSelectAndImport()V
 
@@ -159,7 +150,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mIsBound:Z
 
@@ -168,8 +158,6 @@
 
 .method static synthetic access$202(Lcom/android/contacts/common/vcard/ImportVCardActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mIsBound:Z
 
@@ -178,7 +166,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardCacheThread;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mVCardCacheThread:Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardCacheThread;
 
@@ -187,8 +174,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/common/vcard/ImportVCardActivity;Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardCacheThread;)Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardCacheThread;
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardCacheThread;
 
     iput-object p1, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mVCardCacheThread:Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardCacheThread;
 
@@ -197,7 +182,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Lcom/android/contacts/common/vcard/ImportVCardActivity$ImportRequestConnection;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mConnection:Lcom/android/contacts/common/vcard/ImportVCardActivity$ImportRequestConnection;
 
@@ -206,7 +190,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Lcom/android/contacts/common/vcard/ImportRequest;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->request:Lcom/android/contacts/common/vcard/ImportRequest;
 
@@ -215,8 +198,6 @@
 
 .method static synthetic access$502(Lcom/android/contacts/common/vcard/ImportVCardActivity;Lcom/android/contacts/common/vcard/ImportRequest;)Lcom/android/contacts/common/vcard/ImportRequest;
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Lcom/android/contacts/common/vcard/ImportRequest;
 
     iput-object p1, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->request:Lcom/android/contacts/common/vcard/ImportRequest;
 
@@ -225,7 +206,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mProgressDialogForCachingVCard:Landroid/app/ProgressDialog;
 
@@ -234,8 +214,6 @@
 
 .method static synthetic access$602(Lcom/android/contacts/common/vcard/ImportVCardActivity;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mProgressDialogForCachingVCard:Landroid/app/ProgressDialog;
 
@@ -244,7 +222,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Lcom/android/contacts/common/model/account/AccountWithDataSet;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mAccount:Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
@@ -253,7 +230,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/common/vcard/ImportVCardActivity;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
 
     iget-object v0, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mAllVCardFileList:Ljava/util/List;
 
@@ -262,8 +238,6 @@
 
 .method static synthetic access$802(Lcom/android/contacts/common/vcard/ImportVCardActivity;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mAllVCardFileList:Ljava/util/List;
 
@@ -272,8 +246,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/common/vcard/ImportVCardActivity;Ljava/util/List;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/common/vcard/ImportVCardActivity;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/vcard/ImportVCardActivity;->importVCardFromSDCard(Ljava/util/List;)V
 
@@ -411,7 +383,6 @@
 
 .method private getVCardFileSelectDialog(Z)Landroid/app/Dialog;
     .locals 13
-    .param p1    # Z
 
     iget-object v9, p0, Lcom/android/contacts/common/vcard/ImportVCardActivity;->mAllVCardFileList:Ljava/util/List;
 
@@ -576,7 +547,6 @@
 
 .method private importVCard(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x1
 
@@ -593,7 +563,6 @@
 
 .method private importVCard([Landroid/net/Uri;)V
     .locals 1
-    .param p1    # [Landroid/net/Uri;
 
     new-instance v0, Lcom/android/contacts/common/vcard/ImportVCardActivity$1;
 
@@ -606,7 +575,6 @@
 
 .method private importVCard([Ljava/lang/String;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     array-length v1, p1
 
@@ -637,7 +605,6 @@
 
 .method private importVCardFromSDCard(Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardFile;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/vcard/ImportVCardActivity$VCardFile;
 
     const/4 v0, 0x1
 
@@ -873,9 +840,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     if-nez p1, :cond_3
 
@@ -1203,8 +1167,6 @@
 
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -1618,7 +1580,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -1642,7 +1603,6 @@
 
 .method showFailureNotification(I)V
     .locals 4
-    .param p1    # I
 
     const-string v2, "notification"
 
@@ -1723,7 +1683,6 @@
 
 .method public unbindService(Landroid/content/ServiceConnection;)V
     .locals 1
-    .param p1    # Landroid/content/ServiceConnection;
 
     :try_start_0
     invoke-super {p0, p1}, Landroid/content/ContextWrapper;->unbindService(Landroid/content/ServiceConnection;)V

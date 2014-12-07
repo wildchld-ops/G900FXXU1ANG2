@@ -20,9 +20,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/HttpResponseFactory;)V
     .locals 1
-    .param p1    # Lorg/apache/http/protocol/HttpProcessor;
-    .param p2    # Lorg/apache/http/ConnectionReuseStrategy;
-    .param p3    # Lorg/apache/http/HttpResponseFactory;
 
     const/4 v0, 0x0
 
@@ -53,9 +50,6 @@
 # virtual methods
 .method protected doService(Lorg/apache/http/HttpRequest;Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpRequest;
-    .param p2    # Lorg/apache/http/HttpResponse;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -109,8 +103,6 @@
 
 .method protected handleException(Lorg/apache/http/HttpException;Lorg/apache/http/HttpResponse;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpException;
-    .param p2    # Lorg/apache/http/HttpResponse;
 
     instance-of v2, p1, Lorg/apache/http/MethodNotSupportedException;
 
@@ -173,8 +165,6 @@
 
 .method public handleRequest(Lorg/apache/http/HttpServerConnection;Lorg/apache/http/protocol/HttpContext;)V
     .locals 11
-    .param p1    # Lorg/apache/http/HttpServerConnection;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -460,7 +450,6 @@
 
 .method public setConnReuseStrategy(Lorg/apache/http/ConnectionReuseStrategy;)V
     .locals 2
-    .param p1    # Lorg/apache/http/ConnectionReuseStrategy;
 
     if-nez p1, :cond_0
 
@@ -480,7 +469,6 @@
 
 .method public setExpectationVerifier(Lorg/apache/http/protocol/HttpExpectationVerifier;)V
     .locals 0
-    .param p1    # Lorg/apache/http/protocol/HttpExpectationVerifier;
 
     iput-object p1, p0, Lorg/apache/http/protocol/HttpService;->expectationVerifier:Lorg/apache/http/protocol/HttpExpectationVerifier;
 
@@ -489,7 +477,6 @@
 
 .method public setHandlerResolver(Lorg/apache/http/protocol/HttpRequestHandlerResolver;)V
     .locals 0
-    .param p1    # Lorg/apache/http/protocol/HttpRequestHandlerResolver;
 
     iput-object p1, p0, Lorg/apache/http/protocol/HttpService;->handlerResolver:Lorg/apache/http/protocol/HttpRequestHandlerResolver;
 
@@ -498,7 +485,6 @@
 
 .method public setHttpProcessor(Lorg/apache/http/protocol/HttpProcessor;)V
     .locals 2
-    .param p1    # Lorg/apache/http/protocol/HttpProcessor;
 
     if-nez p1, :cond_0
 
@@ -518,7 +504,6 @@
 
 .method public setParams(Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     iput-object p1, p0, Lorg/apache/http/protocol/HttpService;->params:Lorg/apache/http/params/HttpParams;
 
@@ -527,7 +512,6 @@
 
 .method public setResponseFactory(Lorg/apache/http/HttpResponseFactory;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpResponseFactory;
 
     if-nez p1, :cond_0
 

@@ -14,7 +14,6 @@
 # direct methods
 .method private static buildSha256Digest([B)Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest$Digests;
     .locals 2
-    .param p0    # [B
 
     new-instance v0, Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest$Digests;
 
@@ -31,7 +30,6 @@
 
 .method private static createFileInfo(Lcom/google/android/vending/verifier/api/PackageVerificationApi$FileInfo;)Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest$FileInfo;
     .locals 2
-    .param p0    # Lcom/google/android/vending/verifier/api/PackageVerificationApi$FileInfo;
 
     new-instance v0, Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest$FileInfo;
 
@@ -58,10 +56,6 @@
 
 .method private static createResource(Landroid/net/Uri;Ljava/net/InetAddress;Landroid/net/Uri;I)Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest$Resource;
     .locals 4
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -128,7 +122,6 @@
 
 .method private static createSignatureInfo([[B)Lcom/google/android/vending/verifier/protos/CsdClient$ClientDownloadRequest$SignatureInfo;
     .locals 7
-    .param p0    # [[B
 
     const/4 v6, 0x1
 
@@ -185,9 +178,6 @@
 
 .method public static reportUserDecision(I[BLcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 3
-    .param p0    # I
-    .param p1    # [B
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I[B",
@@ -238,21 +228,6 @@
 
 .method public static verifyApp([BJLjava/lang/String;Ljava/lang/Integer;[[B[Lcom/google/android/vending/verifier/api/PackageVerificationApi$FileInfo;Landroid/net/Uri;Landroid/net/Uri;Ljava/net/InetAddress;Ljava/net/InetAddress;[Ljava/lang/String;[[BLjava/lang/String;JLcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)Lcom/android/volley/Request;
     .locals 11
-    .param p0    # [B
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Integer;
-    .param p5    # [[B
-    .param p6    # [Lcom/google/android/vending/verifier/api/PackageVerificationApi$FileInfo;
-    .param p7    # Landroid/net/Uri;
-    .param p8    # Landroid/net/Uri;
-    .param p9    # Ljava/net/InetAddress;
-    .param p10    # Ljava/net/InetAddress;
-    .param p11    # [Ljava/lang/String;
-    .param p12    # [[B
-    .param p13    # Ljava/lang/String;
-    .param p14    # J
-    .param p17    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BJ",

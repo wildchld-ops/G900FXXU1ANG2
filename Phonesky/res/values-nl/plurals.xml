@@ -56,23 +56,23 @@
         <item quantity="one">ster</item>
     </plurals>
     <plurals name="review_author_stars_title_comment">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s sterren - %3$s - %4$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s ster - %3$s - %4$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s sterren - %3$s - %4$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s ster - %3$s - %4$s</item>
     </plurals>
     <plurals name="review_author_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s sterren - %3$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s ster - %3$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s sterren - %3$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s ster - %3$s</item>
     </plurals>
     <plurals name="review_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s sterren&amp;lt;/b> %2$s</item>
-        <item quantity="one">&amp;lt;b>%1$s ster&amp;lt;/b> %2$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s sterren&amp;amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s ster&amp;amp;lt;/b> %2$s</item>
     </plurals>
     <plurals name="review_author_stars">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s sterren</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s ster</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s sterren</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s ster</item>
     </plurals>
     <plurals name="review_just_stars">
-        <item quantity="other">Heeft dit een beoordeling van &amp;lt;b>%1$s sterren&amp;lt;/b> gegeven</item>
-        <item quantity="one">Heeft dit een beoordeling van &amp;lt;b>%1$s ster&amp;lt;/b> gegeven</item>
+        <item quantity="other">Heeft dit een beoordeling van &amp;amp;lt;b>%1$s sterren&amp;amp;lt;/b> gegeven</item>
+        <item quantity="one">Heeft dit een beoordeling van &amp;amp;lt;b>%1$s ster&amp;amp;lt;/b> gegeven</item>
     </plurals>
 </resources>

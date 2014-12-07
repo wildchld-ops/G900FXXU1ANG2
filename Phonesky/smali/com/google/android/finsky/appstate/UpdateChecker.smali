@@ -22,12 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/installer/InstallPolicies;Lcom/google/android/finsky/receivers/Installer;Lcom/google/android/finsky/utils/Notifier;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/library/Libraries;
-    .param p3    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p4    # Lcom/google/android/finsky/installer/InstallPolicies;
-    .param p5    # Lcom/google/android/finsky/receivers/Installer;
-    .param p6    # Lcom/google/android/finsky/utils/Notifier;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/appstate/UpdateChecker;)Lcom/google/android/finsky/library/Libraries;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/appstate/UpdateChecker;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/UpdateChecker;->mLibraries:Lcom/google/android/finsky/library/Libraries;
 
@@ -57,7 +50,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/appstate/UpdateChecker;)Lcom/google/android/finsky/appstate/AppStates;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/appstate/UpdateChecker;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/UpdateChecker;->mAppStates:Lcom/google/android/finsky/appstate/AppStates;
 
@@ -66,7 +58,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/appstate/UpdateChecker;)Lcom/google/android/finsky/api/model/MultiWayUpdateController;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/appstate/UpdateChecker;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/UpdateChecker;->mDfeModel:Lcom/google/android/finsky/api/model/MultiWayUpdateController;
 
@@ -75,8 +66,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/appstate/UpdateChecker;Lcom/google/android/finsky/api/model/MultiWayUpdateController;)Lcom/google/android/finsky/api/model/MultiWayUpdateController;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/UpdateChecker;
-    .param p1    # Lcom/google/android/finsky/api/model/MultiWayUpdateController;
 
     iput-object p1, p0, Lcom/google/android/finsky/appstate/UpdateChecker;->mDfeModel:Lcom/google/android/finsky/api/model/MultiWayUpdateController;
 
@@ -85,7 +74,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/appstate/UpdateChecker;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/appstate/UpdateChecker;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/UpdateChecker;->mContext:Landroid/content/Context;
 
@@ -94,10 +82,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/appstate/UpdateChecker;Landroid/content/Context;Ljava/util/List;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/appstate/UpdateChecker;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/List;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/appstate/UpdateChecker;->handleUpdates(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;)V
 
@@ -106,7 +90,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/appstate/UpdateChecker;)Lcom/google/android/finsky/receivers/Installer;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/appstate/UpdateChecker;
 
     iget-object v0, p0, Lcom/google/android/finsky/appstate/UpdateChecker;->mInstaller:Lcom/google/android/finsky/receivers/Installer;
 
@@ -115,8 +98,6 @@
 
 .method private handleUpdates(Landroid/content/Context;Ljava/util/List;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -363,8 +344,6 @@
 
 .method public static logWifiAutoUpdate(ZLjava/lang/String;)V
     .locals 14
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
 
     const/4 v13, 0x1
 
@@ -568,10 +547,6 @@
 
 .method public static migrateAllAppsToUseGlobalUpdateSetting(Lcom/google/android/finsky/appstate/AppStates;ZLcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;Ljava/lang/String;)V
     .locals 12
-    .param p0    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p1    # Z
-    .param p2    # Lcom/google/android/finsky/appstate/InstallerDataStore$AutoUpdateState;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -670,7 +645,6 @@
 
 .method public static migrateAutoUpdateSettings(Lcom/google/android/finsky/appstate/AppStates;)V
     .locals 8
-    .param p0    # Lcom/google/android/finsky/appstate/AppStates;
 
     const/4 v3, 0x0
 
@@ -838,7 +812,6 @@
 
 .method public static setAllAppsToUseGlobalDefault(Lcom/google/android/finsky/appstate/AppStates;)V
     .locals 3
-    .param p0    # Lcom/google/android/finsky/appstate/AppStates;
 
     const/4 v0, 0x1
 
@@ -1137,9 +1110,6 @@
 # virtual methods
 .method public checkForUpdates(Ljava/lang/Runnable;Ljava/lang/Runnable;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x0
 

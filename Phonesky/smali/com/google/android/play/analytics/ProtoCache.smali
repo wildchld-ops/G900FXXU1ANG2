@@ -133,7 +133,6 @@
 
 .method private recycle(Lcom/google/android/play/analytics/ClientAnalytics$LogEventKeyValues;)V
     .locals 1
-    .param p1    # Lcom/google/android/play/analytics/ClientAnalytics$LogEventKeyValues;
 
     invoke-virtual {p1}, Lcom/google/android/play/analytics/ClientAnalytics$LogEventKeyValues;->clear()Lcom/google/android/play/analytics/ClientAnalytics$LogEventKeyValues;
 
@@ -176,7 +175,6 @@
 
 .method public recycle(Lcom/google/android/play/analytics/ClientAnalytics$LogEvent;)V
     .locals 3
-    .param p1    # Lcom/google/android/play/analytics/ClientAnalytics$LogEvent;
 
     iget-object v1, p1, Lcom/google/android/play/analytics/ClientAnalytics$LogEvent;->value:[Lcom/google/android/play/analytics/ClientAnalytics$LogEventKeyValues;
 
@@ -207,7 +205,6 @@
 
 .method public recycleLogRequest(Lcom/google/android/play/analytics/ClientAnalytics$LogRequest;)V
     .locals 3
-    .param p1    # Lcom/google/android/play/analytics/ClientAnalytics$LogRequest;
 
     iget-object v1, p1, Lcom/google/android/play/analytics/ClientAnalytics$LogRequest;->logEvent:[Lcom/google/android/play/analytics/ClientAnalytics$LogEvent;
 

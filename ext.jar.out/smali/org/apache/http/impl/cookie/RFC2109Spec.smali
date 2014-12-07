@@ -66,8 +66,6 @@
 
 .method public constructor <init>([Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lorg/apache/http/impl/cookie/CookieSpecBase;-><init>()V
 
@@ -359,9 +357,6 @@
 # virtual methods
 .method protected formatCookieAsVer(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/cookie/Cookie;I)V
     .locals 2
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # Lorg/apache/http/cookie/Cookie;
-    .param p3    # I
 
     invoke-interface {p2}, Lorg/apache/http/cookie/Cookie;->getName()Ljava/lang/String;
 
@@ -528,10 +523,6 @@
 
 .method protected formatParamAsVer(Lorg/apache/http/util/CharArrayBuffer;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v1, 0x22
 
@@ -579,8 +570,6 @@
 
 .method public parse(Lorg/apache/http/Header;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
     .locals 3
-    .param p1    # Lorg/apache/http/Header;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -635,8 +624,6 @@
 
 .method public validate(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V
     .locals 3
-    .param p1    # Lorg/apache/http/cookie/Cookie;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

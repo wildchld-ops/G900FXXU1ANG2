@@ -120,7 +120,6 @@
 
 .method public constructor <init>([Ljava/lang/String;)V
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/http/impl/cookie/CookieSpecBase;-><init>()V
 
@@ -336,8 +335,6 @@
 
 .method public parse(Lorg/apache/http/Header;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
     .locals 13
-    .param p1    # Lorg/apache/http/Header;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

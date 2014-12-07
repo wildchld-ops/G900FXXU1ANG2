@@ -16,7 +16,6 @@
 # virtual methods
 .method public getADNEditable(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -33,7 +32,6 @@
 
 .method public getADNEmailsUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -50,7 +48,6 @@
 
 .method public getAdnAnrUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -67,7 +64,6 @@
 
 .method public getAdnUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -84,7 +80,6 @@
 
 .method public getCardStatus(I)I
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -121,7 +116,6 @@
 
 .method public getFDNOnInitSimStatus(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -138,7 +132,6 @@
 
 .method public getFdnOnAdnDeleted(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -155,7 +148,6 @@
 
 .method public getICCType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -172,7 +164,6 @@
 
 .method public getIccChangeKey(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -189,7 +180,6 @@
 
 .method public getIccChangedBootTime(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -206,7 +196,6 @@
 
 .method public getIccPhoneBook(I)Lcom/android/internal/telephony/IIccPhoneBook;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -239,7 +228,6 @@
 
 .method public getPBInitKey(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -256,7 +244,6 @@
 
 .method public getRawContactsADNEmailsUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -273,7 +260,6 @@
 
 .method public getRawContactsADNUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -290,7 +276,6 @@
 
 .method public getSimAccountName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -307,7 +292,6 @@
 
 .method public getSimAccountType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -324,7 +308,6 @@
 
 .method public getSimDBReady(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -341,7 +324,6 @@
 
 .method public getTelephonyManager(I)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -362,7 +344,6 @@
 
 .method public isSimAccount(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 

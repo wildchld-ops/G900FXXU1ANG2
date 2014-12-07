@@ -51,7 +51,6 @@
 
 .method public static varargs hashCode([Ljava/lang/Object;)I
     .locals 1
-    .param p0    # [Ljava/lang/Object;
 
     invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 

@@ -103,7 +103,6 @@
 
 .method public onCancel(Lcom/nuance/connect/service/comm/Command;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue$6;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -157,9 +156,6 @@
 
 .method public onDownloadStatus(Lcom/nuance/connect/service/comm/Command;II)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue$6;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -184,9 +180,6 @@
 
 .method public onFailure(Lcom/nuance/connect/service/comm/Command;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/service/comm/CommandQueue$6;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -234,9 +227,6 @@
 
 .method public onIOException(Lcom/nuance/connect/service/comm/Command;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/CommandQueue$6;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -261,7 +251,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 8
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/16 v7, 0x2e
 
@@ -412,10 +401,6 @@
 
 .method public onRetry(Lcom/nuance/connect/service/comm/Command;IILjava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/service/comm/CommandQueue$6;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 
@@ -491,7 +476,6 @@
 
 .method public onSuccess(Lcom/nuance/connect/service/comm/Command;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     const/4 v4, 0x1
 
@@ -561,7 +545,6 @@
 
 .method public onValidateDeviceProperties(Lcom/nuance/connect/service/comm/Response;)V
     .locals 3
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v1, p0, Lcom/nuance/connect/service/comm/CommandQueue$6;->this$0:Lcom/nuance/connect/service/comm/CommandQueue;
 

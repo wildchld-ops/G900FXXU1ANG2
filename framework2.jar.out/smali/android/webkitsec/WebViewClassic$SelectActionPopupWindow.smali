@@ -2095,7 +2095,6 @@
 
 .method static synthetic access$2200(Landroid/webkitsec/WebViewClassic$SelectActionPopupWindow;)Landroid/widget/HorizontalScrollView;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewClassic$SelectActionPopupWindow;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$SelectActionPopupWindow;->mHorizontalScrollView:Landroid/widget/HorizontalScrollView;
 
@@ -2104,7 +2103,6 @@
 
 .method static synthetic access$2400(Landroid/webkitsec/WebViewClassic$SelectActionPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewClassic$SelectActionPopupWindow;
 
     iget v0, p0, Landroid/webkitsec/WebViewClassic$SelectActionPopupWindow;->mMenuCount:I
 
@@ -2423,7 +2421,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 21
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p0
 
@@ -3755,8 +3752,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/16 v1, 0xba
 
@@ -3823,7 +3818,6 @@
 
 .method popupAnimationEffect(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -3999,8 +3993,6 @@
 
 .method public show(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, -0x1
 

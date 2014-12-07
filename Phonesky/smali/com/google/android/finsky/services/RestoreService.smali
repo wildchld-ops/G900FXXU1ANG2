@@ -66,8 +66,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/services/RestoreService;I)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/services/RestoreService;->inErrorRetryBlacklist(I)Z
 
@@ -78,7 +76,6 @@
 
 .method static synthetic access$1100(Lcom/google/android/finsky/services/RestoreService;)Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/RestoreService;->mTracker:Lcom/google/android/finsky/services/RestoreService$RestoreTracker;
 
@@ -87,8 +84,6 @@
 
 .method static synthetic access$1200(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/services/RestoreService;->getPackageRestoreIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -99,8 +94,6 @@
 
 .method static synthetic access$1300(Lcom/google/android/finsky/services/RestoreService;J)J
     .locals 2
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/services/RestoreService;->jitterDelay(J)J
 
@@ -111,9 +104,6 @@
 
 .method static synthetic access$1400(Lcom/google/android/finsky/services/RestoreService;Landroid/content/Intent;J)J
     .locals 2
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/services/RestoreService;->setAlarm(Landroid/content/Intent;J)J
 
@@ -124,8 +114,6 @@
 
 .method static synthetic access$1600(Lcom/google/android/finsky/services/RestoreService;Landroid/content/Intent;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/services/RestoreService;->handleIntent(Landroid/content/Intent;)Z
 
@@ -136,7 +124,6 @@
 
 .method static synthetic access$1900(Lcom/google/android/finsky/services/RestoreService;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountAlreadyTracked:I
 
@@ -145,8 +132,6 @@
 
 .method static synthetic access$1902(Lcom/google/android/finsky/services/RestoreService;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountAlreadyTracked:I
 
@@ -155,7 +140,6 @@
 
 .method static synthetic access$2000(Lcom/google/android/finsky/services/RestoreService;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountObbStorage:I
 
@@ -164,8 +148,6 @@
 
 .method static synthetic access$2002(Lcom/google/android/finsky/services/RestoreService;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountObbStorage:I
 
@@ -174,7 +156,6 @@
 
 .method static synthetic access$2100(Lcom/google/android/finsky/services/RestoreService;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountAlreadyOtherAccount:I
 
@@ -183,8 +164,6 @@
 
 .method static synthetic access$2102(Lcom/google/android/finsky/services/RestoreService;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountAlreadyOtherAccount:I
 
@@ -193,7 +172,6 @@
 
 .method static synthetic access$2200(Lcom/google/android/finsky/services/RestoreService;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountAlreadyInstalled:I
 
@@ -202,8 +180,6 @@
 
 .method static synthetic access$2202(Lcom/google/android/finsky/services/RestoreService;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountAlreadyInstalled:I
 
@@ -212,7 +188,6 @@
 
 .method static synthetic access$2300(Lcom/google/android/finsky/services/RestoreService;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountMaxAttemptsExceeded:I
 
@@ -221,8 +196,6 @@
 
 .method static synthetic access$2302(Lcom/google/android/finsky/services/RestoreService;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/services/RestoreService;->mDebugCountMaxAttemptsExceeded:I
 
@@ -231,12 +204,6 @@
 
 .method static synthetic access$2400(Lcom/google/android/finsky/services/RestoreService;Ljava/lang/String;ILcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;Ljava/lang/String;Lcom/google/android/finsky/receivers/Installer;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/receivers/Installer;
 
     invoke-direct/range {p0 .. p5}, Lcom/google/android/finsky/services/RestoreService;->shouldRestore(Ljava/lang/String;ILcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;Ljava/lang/String;Lcom/google/android/finsky/receivers/Installer;)Z
 
@@ -247,7 +214,6 @@
 
 .method static synthetic access$2500(Landroid/content/Context;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/google/android/finsky/services/RestoreService;->getKickIntent(Landroid/content/Context;)Landroid/content/Intent;
 
@@ -258,8 +224,6 @@
 
 .method static synthetic access$2600(Lcom/google/android/finsky/services/RestoreService;Lcom/android/volley/VolleyError;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/services/RestoreService;->volleyErrorToInstallerError(Lcom/android/volley/VolleyError;)I
 
@@ -270,9 +234,6 @@
 
 .method static synthetic access$2700(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     invoke-static {p0, p1, p2}, Lcom/google/android/finsky/services/RestoreService;->getRestoreIntent(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
 
@@ -283,7 +244,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/services/RestoreService;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/services/RestoreService;
 
     iget v0, p0, Lcom/google/android/finsky/services/RestoreService;->mServiceStartId:I
 
@@ -330,7 +290,6 @@
 
 .method private doRetryPackage(Ljava/lang/String;)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -467,7 +426,6 @@
 
 .method private static getKickIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -494,8 +452,6 @@
 
 .method private static getPackageRestoreIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -536,9 +492,6 @@
 
 .method private static getRestoreIntent(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -592,7 +545,6 @@
 
 .method private handleIntent(Landroid/content/Intent;)Z
     .locals 14
-    .param p1    # Landroid/content/Intent;
 
     const/4 v12, 0x1
 
@@ -820,7 +772,6 @@
 
 .method private handleRetryPackageIntent(Landroid/content/Intent;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "package"
 
@@ -1124,7 +1075,6 @@
 
 .method private inErrorRetryBlacklist(I)Z
     .locals 5
-    .param p1    # I
 
     sget-object v3, Lcom/google/android/finsky/services/RestoreService;->sErrorRetryBlacklist:[I
 
@@ -1222,7 +1172,6 @@
 
 .method private jitterDelay(J)J
     .locals 10
-    .param p1    # J
 
     const-wide/high16 v4, 0x3fe8000000000000L
 
@@ -1247,7 +1196,6 @@
 
 .method public static recoverRestore(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -1280,8 +1228,6 @@
 
 .method private restore(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1378,9 +1324,6 @@
 
 .method public static restoreAccounts(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -1397,8 +1340,6 @@
 
 .method private setAlarm(Landroid/content/Intent;J)J
     .locals 8
-    .param p1    # Landroid/content/Intent;
-    .param p2    # J
 
     const/4 v7, 0x0
 
@@ -1450,11 +1391,6 @@
 
 .method private shouldRestore(Ljava/lang/String;ILcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;Ljava/lang/String;Lcom/google/android/finsky/receivers/Installer;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/receivers/Installer;
 
     new-instance v7, Lcom/google/android/finsky/analytics/PlayStore$AppData;
 
@@ -1825,7 +1761,6 @@
 
 .method private volleyErrorToInstallerError(Lcom/android/volley/VolleyError;)I
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v0, p1, Lcom/android/volley/AuthFailureError;
 
@@ -1909,7 +1844,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -1959,9 +1893,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     iput p3, p0, Lcom/google/android/finsky/services/RestoreService;->mServiceStartId:I
 

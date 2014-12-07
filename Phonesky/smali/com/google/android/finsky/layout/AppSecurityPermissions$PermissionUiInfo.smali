@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/layout/AppSecurityPermissions;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions$PermissionUiInfo;->this$0:Lcom/google/android/finsky/layout/AppSecurityPermissions;
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method public compareTo(Lcom/google/android/finsky/layout/AppSecurityPermissions$PermissionUiInfo;)I
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/AppSecurityPermissions$PermissionUiInfo;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/AppSecurityPermissions$PermissionUiInfo;->label:Ljava/lang/String;
 
@@ -71,7 +68,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/layout/AppSecurityPermissions$PermissionUiInfo;
 

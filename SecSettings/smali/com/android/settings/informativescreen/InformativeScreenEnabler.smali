@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -53,9 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/informativescreen/InformativeScreenEnabler;-><init>(Landroid/content/Context;Landroid/widget/Switch;)V
 
@@ -68,8 +63,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 

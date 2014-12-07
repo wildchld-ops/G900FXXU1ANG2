@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>([Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 7
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -147,8 +146,6 @@
 # virtual methods
 .method public fillWindow(ILandroid/database/CursorWindow;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/database/CursorWindow;
 
     if-ltz p1, :cond_0
 
@@ -311,7 +308,6 @@
 
 .method public getBlob(I)[B
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 
@@ -350,7 +346,6 @@
 
 .method public getDouble(I)D
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 
@@ -373,7 +368,6 @@
 
 .method public getFloat(I)F
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 
@@ -396,7 +390,6 @@
 
 .method public getInt(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 
@@ -419,7 +412,6 @@
 
 .method public getLong(I)J
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 
@@ -442,7 +434,6 @@
 
 .method public getShort(I)S
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 
@@ -465,7 +456,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 
@@ -494,7 +484,6 @@
 
 .method public isNull(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupBrowseListAdapter$ArrayListCursor;->mRows:[Ljava/util/ArrayList;
 

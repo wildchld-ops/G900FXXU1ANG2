@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Rect;Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Landroid/view/TouchDelegate;-><init>(Landroid/graphics/Rect;Landroid/view/View;)V
 
@@ -66,7 +64,6 @@
 # virtual methods
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v11, 0x1
 

@@ -37,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/ssrm/CameraQuickAccess$CameraQuickAccessObserver;->this$0:Lcom/android/server/ssrm/CameraQuickAccess;
 

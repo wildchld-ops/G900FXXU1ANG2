@@ -109,8 +109,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/net/wifi/WifiStateMachine;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/WifiStateMachine;
 
     const/4 v5, 0x0
 
@@ -251,8 +249,6 @@
 
 .method static synthetic access$002(Lcom/android/server/wifi/WifiNotificationController;I)I
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wifi/WifiNotificationController;->mWifiState:I
 
@@ -261,7 +257,6 @@
 
 .method static synthetic access$100(Lcom/android/server/wifi/WifiNotificationController;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiNotificationController;->resetNotification()V
 
@@ -278,7 +273,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/wifi/WifiNotificationController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiNotificationController;->checkIfLowSignalFromProvider()Z
 
@@ -289,7 +283,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/wifi/WifiNotificationController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiNotificationController;->mLowSignal:Z
 
@@ -298,8 +291,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/wifi/WifiNotificationController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiNotificationController;->mLowSignal:Z
 
@@ -308,8 +299,6 @@
 
 .method static synthetic access$1302(Lcom/android/server/wifi/WifiNotificationController;J)J
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/wifi/WifiNotificationController;->mNotificationRepeatTime:J
 
@@ -318,7 +307,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/wifi/WifiNotificationController;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     iget v0, p0, Lcom/android/server/wifi/WifiNotificationController;->mLowSignalNWs:I
 
@@ -327,11 +315,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/wifi/WifiNotificationController;ZIZI)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/wifi/WifiNotificationController;->setNotificationVisible(ZIZI)V
 
@@ -340,7 +323,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wifi/WifiNotificationController;)Landroid/net/wifi/WifiStateMachine;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiNotificationController;->mWifiStateMachine:Landroid/net/wifi/WifiStateMachine;
 
@@ -349,9 +331,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wifi/WifiNotificationController;Landroid/net/NetworkInfo;Ljava/util/List;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Ljava/util/List;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/wifi/WifiNotificationController;->checkAndSetNotification(Landroid/net/NetworkInfo;Ljava/util/List;)V
 
@@ -360,7 +339,6 @@
 
 .method static synthetic access$400(Lcom/android/server/wifi/WifiNotificationController;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiNotificationController;->updateResources()V
 
@@ -377,7 +355,6 @@
 
 .method static synthetic access$600(Lcom/android/server/wifi/WifiNotificationController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiNotificationController;->mNotificationShown:Z
 
@@ -386,8 +363,6 @@
 
 .method static synthetic access$602(Lcom/android/server/wifi/WifiNotificationController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiNotificationController;->mNotificationShown:Z
 
@@ -396,8 +371,6 @@
 
 .method static synthetic access$702(Lcom/android/server/wifi/WifiNotificationController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiNotificationController;->mVzwNotificationVisible:Z
 
@@ -406,7 +379,6 @@
 
 .method static synthetic access$800(Lcom/android/server/wifi/WifiNotificationController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiNotificationController;->mContext:Landroid/content/Context;
 
@@ -415,7 +387,6 @@
 
 .method static synthetic access$900(Lcom/android/server/wifi/WifiNotificationController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiNotificationController;->mNotificationEnabled:Z
 
@@ -424,8 +395,6 @@
 
 .method static synthetic access$902(Lcom/android/server/wifi/WifiNotificationController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiNotificationController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiNotificationController;->mNotificationEnabled:Z
 
@@ -434,7 +403,6 @@
 
 .method private declared-synchronized checkAndSetNotification(Landroid/net/NetworkInfo;Ljava/util/List;)V
     .locals 8
-    .param p1    # Landroid/net/NetworkInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -748,7 +716,6 @@
 
 .method private isSecuredAp(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -878,10 +845,6 @@
 
 .method private setNotificationVisible(ZIZI)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     if-nez p1, :cond_1
 
@@ -1306,7 +1269,6 @@
 
 .method private showVzwWifiNotification(Z)V
     .locals 11
-    .param p1    # Z
 
     const/16 v10, 0x146e
 
@@ -1627,9 +1589,6 @@
 # virtual methods
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1724,9 +1683,6 @@
 
 .method public showOngoingWifiNotification(ZIZ)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "WifiNotificationController"
 

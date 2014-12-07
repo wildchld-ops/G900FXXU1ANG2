@@ -46,7 +46,6 @@
 # virtual methods
 .method public addTag(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -55,7 +54,6 @@
 
 .method public addTag(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;
 
     if-nez p1, :cond_1
 
@@ -247,7 +245,6 @@
 
 .method public getTag(Ljava/lang/String;)Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTagArray;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Lcom/samsung/android/smartclip/SmartClipMetaTagArrayImpl;
 
@@ -293,7 +290,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 10
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -365,7 +361,6 @@
 
 .method public removeTag(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -407,8 +402,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 

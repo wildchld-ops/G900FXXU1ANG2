@@ -80,7 +80,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,7 +98,6 @@
 
 .method private appendXmlHeader(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -132,7 +130,6 @@
 # virtual methods
 .method getFirstAndRemove(Ljava/util/LinkedList;Lcom/google/android/finsky/placesapi/AdrMicroformatParser$PartType;)Ljava/lang/String;
     .locals 5
-    .param p2    # Lcom/google/android/finsky/placesapi/AdrMicroformatParser$PartType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -239,7 +236,6 @@
 
 .method public parse(Ljava/lang/String;)Lcom/google/android/finsky/protos/BillingAddress$Address;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/finsky/placesapi/AdrMicroformatParserException;
@@ -350,7 +346,6 @@
 
 .method removeAll(Ljava/util/LinkedList;Lcom/google/android/finsky/placesapi/AdrMicroformatParser$PartType;)V
     .locals 1
-    .param p2    # Lcom/google/android/finsky/placesapi/AdrMicroformatParser$PartType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -414,7 +409,6 @@
 
 .method split(Ljava/lang/String;)Ljava/util/LinkedList;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

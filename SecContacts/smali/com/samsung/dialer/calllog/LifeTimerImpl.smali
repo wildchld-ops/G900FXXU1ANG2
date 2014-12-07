@@ -14,7 +14,6 @@
 
 .method public static doLifeTimerImpl(Landroid/app/Activity;)V
     .locals 0
-    .param p0    # Landroid/app/Activity;
 
     return-void
 .end method

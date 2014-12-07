@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -41,8 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/SeparatorRelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -51,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/RateReviewSection;)Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/RateReviewSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/RateReviewSection;->mParentNode:Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
@@ -60,7 +56,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/RateReviewSection;)Lcom/google/android/finsky/protos/DocumentV2$Review;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/RateReviewSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/RateReviewSection;->mReview:Lcom/google/android/finsky/protos/DocumentV2$Review;
 
@@ -69,10 +64,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/RateReviewSection;Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/protos/DocumentV2$Review;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/RateReviewSection;
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Lcom/google/android/finsky/protos/DocumentV2$Review;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/layout/RateReviewSection;->launchReviewsDialog(Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/protos/DocumentV2$Review;I)V
 
@@ -81,7 +72,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/RateReviewSection;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/RateReviewSection;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/RateReviewSection;->mDocument:Lcom/google/android/finsky/api/model/Document;
 
@@ -90,9 +80,6 @@
 
 .method private launchReviewsDialog(Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/protos/DocumentV2$Review;I)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Lcom/google/android/finsky/protos/DocumentV2$Review;
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/support/v4/app/Fragment;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -109,10 +96,6 @@
 
 .method private updateVisibility(Lcom/google/android/finsky/library/Libraries;Lcom/google/android/finsky/api/model/Document;ZZ)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/Libraries;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Z
-    .param p4    # Z
 
     if-nez p4, :cond_0
 
@@ -144,15 +127,6 @@
 # virtual methods
 .method public configure(Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/library/Libraries;Landroid/support/v4/app/Fragment;Lcom/google/android/finsky/api/model/Document;ZZLcom/google/android/finsky/protos/DocumentV2$Review;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p2    # Lcom/google/android/finsky/library/Libraries;
-    .param p3    # Landroid/support/v4/app/Fragment;
-    .param p4    # Lcom/google/android/finsky/api/model/Document;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Lcom/google/android/finsky/protos/DocumentV2$Review;
-    .param p8    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p9    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v5, 0x0
 
@@ -252,7 +226,6 @@
 
 .method public initialize(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     return-void
 .end method

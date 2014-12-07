@@ -40,8 +40,6 @@
 # virtual methods
 .method public onShortcutIntentCreated(Landroid/net/Uri;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "com.android.launcher.action.INSTALL_SHORTCUT"
 

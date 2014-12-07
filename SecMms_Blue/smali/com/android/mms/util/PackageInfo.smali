@@ -138,10 +138,6 @@
 
 .method public static callCalendarImport(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -180,10 +176,6 @@
 
 .method public static callGallery(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -234,11 +226,6 @@
 
 .method public static callGallery(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -296,10 +283,6 @@
 
 .method public static callMusicPlayer(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -346,10 +329,6 @@
 
 .method public static callProperActivity(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -373,10 +352,6 @@
 
 .method public static callTaskImport(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -415,10 +390,6 @@
 
 .method public static callVContactImport(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -463,10 +434,6 @@
 
 .method public static callVContactList(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForVContact(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -496,10 +463,6 @@
 
 .method public static callVideoPlayer(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/mms/util/PackageInfo;->setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -538,7 +501,6 @@
 
 .method private static getEnabledServicesFromSettings(Landroid/content/Context;)Ljava/util/Set;
     .locals 7
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -602,7 +564,6 @@
 
 .method public static getIntentForUrl(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -635,8 +596,6 @@
 
 .method public static getPackageVersion(Landroid/content/Context;Ljava/lang/String;)I
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -704,7 +663,6 @@
 
 .method public static getTopActivity(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v3, "activity"
 
@@ -739,7 +697,6 @@
 
 .method public static isDmbRunning(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -786,7 +743,6 @@
 
 .method public static isDownloadablePkg(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "com.sec.android.app.voicenote"
 
@@ -818,8 +774,6 @@
 
 .method public static isEnabledPkg(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -949,8 +903,6 @@
 
 .method public static isInstalledPkg(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -1024,9 +976,6 @@
 
 .method public static isInstalledSvc(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1104,7 +1053,6 @@
 
 .method public static isKidsMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -1163,7 +1111,6 @@
 
 .method public static isMoviePlayerServiceRunning(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -1206,8 +1153,6 @@
 
 .method public static isProcessRunning(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1256,7 +1201,6 @@
 
 .method public static isSamsungAppsPackageInstalled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1286,8 +1230,6 @@
 
 .method public static isServiceRunning(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -1355,7 +1297,6 @@
 
 .method public static isTalkBackAvailable(Landroid/content/Context;)Z
     .locals 14
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/view/accessibility/AccessibilityManager;->getInstance(Landroid/content/Context;)Landroid/view/accessibility/AccessibilityManager;
 
@@ -1531,10 +1472,6 @@
 
 .method public static openVContact(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableVcardView()Z
 
@@ -1555,8 +1492,6 @@
 
 .method public static setIntentForMedia(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1575,8 +1510,6 @@
 
 .method public static setIntentForVContact(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1595,8 +1528,6 @@
 
 .method public static shouldGoDownload(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/mms/util/PackageInfo;->isInstalledPkg(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -1623,8 +1554,6 @@
 
 .method public static showDownloadDialog(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1687,7 +1616,6 @@
 
 .method public static showToastDownload(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x7f0c04ca
 
@@ -1704,8 +1632,6 @@
 
 .method public static startActivity(Landroid/app/Fragment;Landroid/content/Intent;)Z
     .locals 6
-    .param p0    # Landroid/app/Fragment;
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
@@ -1801,8 +1727,6 @@
 
 .method public static startActivity(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     instance-of v4, p0, Landroid/app/Activity;
@@ -1925,8 +1849,6 @@
 
 .method public static startActivityForVideoCall(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -2025,8 +1947,6 @@
 
 .method public static startSamsungApps(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/PackageInfo;->isSamsungAppsPackageInstalled(Landroid/content/Context;)Z
 

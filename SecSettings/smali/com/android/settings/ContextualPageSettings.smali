@@ -65,7 +65,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ContextualPageSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/ContextualPageSettings;
 
     invoke-direct {p0}, Lcom/android/settings/ContextualPageSettings;->updateContextualPageSaving()V
 
@@ -337,8 +336,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v0, "ContextualPageSettings"
 
@@ -387,7 +384,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x10
 
@@ -979,8 +975,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

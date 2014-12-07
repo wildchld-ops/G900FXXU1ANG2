@@ -108,7 +108,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/editor/EditGroupSelectionFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/EditGroupSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionFragment;->mContext:Landroid/content/Context;
 
@@ -117,7 +116,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/editor/EditGroupSelectionFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/EditGroupSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionFragment;->mAccountType:Ljava/lang/String;
 
@@ -126,7 +124,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/editor/EditGroupSelectionFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/EditGroupSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionFragment;->mAccountName:Ljava/lang/String;
 
@@ -316,7 +313,6 @@
 
 .method private setCreatedGroupChecked(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -555,7 +551,6 @@
 
 .method private updateListItems(Landroid/database/Cursor;)V
     .locals 12
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v10, 0x0
 
@@ -761,7 +756,6 @@
 
 .method public loadData(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -863,7 +857,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -890,7 +883,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -901,7 +893,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -989,8 +980,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1027,9 +1016,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -1139,10 +1125,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 8
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     const/4 v4, 0x0
 
@@ -1324,7 +1306,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 1
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1352,8 +1333,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -1379,7 +1358,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "android.intent.extra.HAS_PHONE_NUMBER"
 
@@ -1436,7 +1414,6 @@
 
 .method public setListener(Lcom/samsung/contacts/editor/EditGroupSelectionFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/editor/EditGroupSelectionFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/EditGroupSelectionFragment;->mListener:Lcom/samsung/contacts/editor/EditGroupSelectionFragment$Listener;
 
@@ -1445,7 +1422,6 @@
 
 .method setNewGroupTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/EditGroupSelectionFragment;->mNewGroupTitle:Ljava/lang/String;
 

@@ -34,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/cloud/CloudDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudDialog;
 
     invoke-direct {p0}, Lcom/android/settings/cloud/CloudDialog;->dismissProgressDialog()Z
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/cloud/CloudDialog;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudDialog;
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudDialog;->progressDialog:Landroid/app/ProgressDialog;
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/cloud/CloudDialog;)Lcom/android/settings/cloud/CloudDialog$DialogListener;
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudDialog;
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudDialog;->dialogListener:Lcom/android/settings/cloud/CloudDialog$DialogListener;
 
@@ -63,8 +60,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/cloud/CloudDialog;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudDialog;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/cloud/CloudDialog;->removeAccount(Ljava/lang/String;)V
 
@@ -107,9 +102,6 @@
 
 .method public static getInstance(ILjava/lang/String;Lcom/android/settings/cloud/CloudDialog$DialogListener;)Lcom/android/settings/cloud/CloudDialog;
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/settings/cloud/CloudDialog$DialogListener;
 
     new-instance v1, Lcom/android/settings/cloud/CloudDialog;
 
@@ -136,7 +128,6 @@
 
 .method private removeAccount(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -194,7 +185,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/high16 v4, 0x1040000
 

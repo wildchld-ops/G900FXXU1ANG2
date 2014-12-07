@@ -161,7 +161,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -216,7 +215,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/LanguageServiceInternal;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -225,8 +223,6 @@
 
 .method static synthetic access$100(Lcom/nuance/connect/internal/LanguageServiceInternal;Ljava/util/Map;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
-    .param p1    # Ljava/util/Map;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/LanguageServiceInternal;->updateLanguagesData(Ljava/util/Map;)V
 
@@ -235,7 +231,6 @@
 
 .method static synthetic access$200(Lcom/nuance/connect/internal/LanguageServiceInternal;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->downloadingCallbacks:Ljava/util/Map;
 
@@ -244,8 +239,6 @@
 
 .method static synthetic access$300(Lcom/nuance/connect/internal/LanguageServiceInternal;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/LanguageServiceInternal;->markLanguageInstalled(Ljava/lang/String;)V
 
@@ -254,7 +247,6 @@
 
 .method static synthetic access$400(Lcom/nuance/connect/internal/LanguageServiceInternal;)Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -263,7 +255,6 @@
 
 .method static synthetic access$500(Lcom/nuance/connect/internal/LanguageServiceInternal;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->canceledDownloads:Ljava/util/Set;
 
@@ -272,8 +263,6 @@
 
 .method static synthetic access$600(Lcom/nuance/connect/internal/LanguageServiceInternal;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/nuance/connect/internal/LanguageServiceInternal;->removeLanguage(Ljava/lang/String;)V
 
@@ -282,7 +271,6 @@
 
 .method static synthetic access$700(Lcom/nuance/connect/internal/LanguageServiceInternal;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/nuance/connect/internal/LanguageServiceInternal;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->redownload:Ljava/util/Map;
 
@@ -291,7 +279,6 @@
 
 .method static synthetic access$800(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/nuance/connect/internal/LanguageServiceInternal;->findLanguageIdByName(Ljava/lang/String;)I
 
@@ -310,7 +297,6 @@
 
 .method private cancelDownload(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -395,7 +381,6 @@
 
 .method private static findLanguageById(I)Ljava/lang/String;
     .locals 7
-    .param p0    # I
 
     sget-object v6, Lcom/nuance/connect/internal/LanguageServiceInternal;->languageList:Ljava/util/Map;
 
@@ -459,8 +444,6 @@
 
 .method private findLanguageById(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -487,7 +470,6 @@
 
 .method private static findLanguageFlavorFromName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "-"
 
@@ -504,7 +486,6 @@
 
 .method private static findLanguageIdByName(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     sget-object v2, Lcom/nuance/connect/internal/LanguageServiceInternal;->languageList:Ljava/util/Map;
 
@@ -560,7 +541,6 @@
 
 .method private static findLanguageIdFromFlavorByName(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "-"
 
@@ -581,7 +561,6 @@
 
 .method private installLanguage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -622,7 +601,6 @@
 
 .method private static isFlavor(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/nuance/connect/internal/LanguageServiceInternal;->findLanguageIdByName(Ljava/lang/String;)I
 
@@ -653,7 +631,6 @@
 
 .method private markLanguageInstalled(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->languageMetadata:Ljava/util/HashMap;
 
@@ -715,7 +692,6 @@
 
 .method private removeLanguage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -938,7 +914,6 @@
 # virtual methods
 .method public cancelDownload(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/connect/api/ConnectException;
@@ -956,8 +931,6 @@
 
 .method public cancelDownload(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/connect/api/ConnectException;
@@ -975,8 +948,6 @@
 
 .method public downloadLanguage(ILcom/nuance/connect/api/LanguageService$DownloadCallback;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/nuance/connect/api/LanguageService$DownloadCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/connect/api/ConnectException;
@@ -1079,9 +1050,6 @@
 
 .method public downloadLanguage(ILjava/lang/String;Lcom/nuance/connect/api/LanguageService$DownloadCallback;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/nuance/connect/api/LanguageService$DownloadCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/connect/api/ConnectException;
@@ -1452,7 +1420,6 @@
 
 .method public languageUninstalled(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/connect/api/ConnectException;
@@ -1495,8 +1462,6 @@
 
 .method public languageUninstalled(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/connect/api/ConnectException;
@@ -1588,7 +1553,6 @@
 
 .method public registerCallback(Lcom/nuance/connect/api/LanguageService$ListCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/api/LanguageService$ListCallback;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->languageCallbacks:Ljava/util/Set;
 
@@ -1615,7 +1579,6 @@
 
 .method public unregisterCallback(Lcom/nuance/connect/api/LanguageService$ListCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/api/LanguageService$ListCallback;
 
     iget-object v1, p0, Lcom/nuance/connect/internal/LanguageServiceInternal;->languageCallbacks:Ljava/util/Set;
 

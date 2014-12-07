@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -89,11 +86,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 6
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayCardThumbnail;->mThumbnail:Landroid/widget/ImageView;
 
@@ -128,8 +120,6 @@
 
 .method protected onMeasure(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v6, 0x40000000
 
@@ -182,7 +172,6 @@
 
 .method public updatePadding(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/play/layout/PlayCardThumbnail;->mCoverPadding:I
 

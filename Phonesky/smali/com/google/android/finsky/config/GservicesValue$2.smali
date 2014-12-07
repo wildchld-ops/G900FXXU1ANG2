@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p2, p0, Lcom/google/android/finsky/config/GservicesValue$2;->val$key:Ljava/lang/String;
 

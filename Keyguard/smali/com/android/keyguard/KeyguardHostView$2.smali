@@ -65,9 +65,6 @@
 
 .method public onMusicClientIdChanged(IZLandroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/app/PendingIntent;
 
     const/4 v0, 0x2
 
@@ -187,8 +184,6 @@
 
 .method public onMusicPlaybackStateChanged(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     const/4 v1, 0x1
 
@@ -296,7 +291,6 @@
 
 .method public onUserSwitchComplete(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView$2;->this$0:Lcom/android/keyguard/KeyguardHostView;
 

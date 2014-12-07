@@ -55,8 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x1
 
@@ -478,7 +476,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 18
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
@@ -702,11 +699,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 6
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -776,10 +768,6 @@
 
 .method public setDrawBounds(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget-object v0, p0, Lcom/android/launcher2/AlphabeticalListTextPopup;->mDrawBounds:Landroid/graphics/RectF;
 
@@ -792,7 +780,6 @@
 
 .method public setDrawBounds(Landroid/graphics/PointF;)V
     .locals 6
-    .param p1    # Landroid/graphics/PointF;
 
     new-instance v1, Landroid/graphics/RectF;
 
@@ -865,8 +852,6 @@
 
 .method public setStyle(ILandroid/text/style/CharacterStyle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/text/style/CharacterStyle;
 
     iget-object v0, p0, Lcom/android/launcher2/AlphabeticalListTextPopup;->mStyles:Landroid/util/SparseArray;
 
@@ -877,7 +862,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/launcher2/AlphabeticalListTextPopup;->mText:Ljava/lang/String;
 

@@ -48,8 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 10
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v7, p0, Lcom/android/mms/util/HandleComposerAttachment$41;->this$0:Lcom/android/mms/util/HandleComposerAttachment;
 

@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/ExecutorDelivery;Lcom/android/volley/Request;Lcom/android/volley/Response;Ljava/lang/Runnable;)V
     .locals 0
-    .param p2    # Lcom/android/volley/Request;
-    .param p3    # Lcom/android/volley/Response;
-    .param p4    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/volley/ExecutorDelivery$ResponseDeliveryRunnable;->this$0:Lcom/android/volley/ExecutorDelivery;
 

@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -189,7 +188,6 @@
 
 .method public onHover(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x1
 
@@ -384,7 +382,6 @@
 
 .method public onHoverForGA(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const-wide/16 v11, 0x320
 
@@ -710,7 +707,6 @@
 
 .method public onTouchDownForGA(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "AirButtonSideButtonController"
 
@@ -739,14 +735,12 @@
 
 .method public onTouchUpForGA(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public resetVariables(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/airbutton/AirButtonSideButtonController;->mIsHoverEnter:Z
 
@@ -763,7 +757,6 @@
 
 .method public setOnSideButtonClickedListener(Lcom/samsung/android/airbutton/AirButtonSideButtonController$OnSideButtonClickedListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/airbutton/AirButtonSideButtonController$OnSideButtonClickedListener;
 
     iput-object p1, p0, Lcom/samsung/android/airbutton/AirButtonSideButtonController;->mSideBtnClickedListener:Lcom/samsung/android/airbutton/AirButtonSideButtonController$OnSideButtonClickedListener;
 

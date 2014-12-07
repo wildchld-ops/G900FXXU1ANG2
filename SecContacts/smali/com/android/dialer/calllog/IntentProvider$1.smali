@@ -33,7 +33,6 @@
 # virtual methods
 .method public getIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

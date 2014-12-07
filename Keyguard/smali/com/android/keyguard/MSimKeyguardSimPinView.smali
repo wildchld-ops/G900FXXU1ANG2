@@ -58,7 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -69,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -186,7 +183,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/MSimKeyguardSimPinView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
 
     iget v0, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->mRemainingCount:I
 
@@ -195,8 +191,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/MSimKeyguardSimPinView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->mRemainingCount:I
 
@@ -205,7 +199,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/MSimKeyguardSimPinView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
 
     invoke-direct {p0}, Lcom/android/keyguard/MSimKeyguardSimPinView;->getSimPinRetry()I
 
@@ -216,7 +209,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/MSimKeyguardSimPinView;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -225,8 +217,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/MSimKeyguardSimPinView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/MSimKeyguardSimPinView;->handleTimeout(I)V
 
@@ -235,7 +225,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/MSimKeyguardSimPinView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
 
     iget v0, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->mSubscription:I
 
@@ -244,8 +233,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/MSimKeyguardSimPinView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->mSubscription:I
 
@@ -262,7 +249,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/MSimKeyguardSimPinView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->mHandler:Landroid/os/Handler;
 
@@ -271,8 +257,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/MSimKeyguardSimPinView;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/MSimKeyguardSimPinView;->closeKeyGuard(Z)V
 
@@ -281,7 +265,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/MSimKeyguardSimPinView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
 
     iget-object v0, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->mContext:Landroid/content/Context;
 
@@ -290,8 +273,6 @@
 
 .method static synthetic access$702(Lcom/android/keyguard/MSimKeyguardSimPinView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->isWrongPIN:Z
 
@@ -300,7 +281,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/MSimKeyguardSimPinView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
 
     iget v0, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->old_Num_of_retry:I
 
@@ -309,8 +289,6 @@
 
 .method static synthetic access$902(Lcom/android/keyguard/MSimKeyguardSimPinView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/MSimKeyguardSimPinView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/MSimKeyguardSimPinView;->isWrongPINCrash:Z
 
@@ -319,7 +297,6 @@
 
 .method private closeKeyGuard(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v9, 0x1
 
@@ -592,7 +569,6 @@
 
 .method private handleTimeout(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -638,7 +614,6 @@
 
 .method protected getSecurityMessageDisplay(I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -695,7 +670,6 @@
 
 .method protected getSecurityMessageDisplay(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -878,7 +852,6 @@
 
 .method public pokeWakelock(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 

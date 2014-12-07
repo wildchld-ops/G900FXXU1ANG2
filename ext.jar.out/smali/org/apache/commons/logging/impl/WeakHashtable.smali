@@ -134,7 +134,6 @@
 # virtual methods
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
@@ -225,7 +224,6 @@
 
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Lorg/apache/commons/logging/impl/WeakHashtable$Referenced;
 
@@ -316,8 +314,6 @@
 
 .method public put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -389,7 +385,6 @@
 
 .method public putAll(Ljava/util/Map;)V
     .locals 5
-    .param p1    # Ljava/util/Map;
 
     if-eqz p1, :cond_0
 
@@ -442,7 +437,6 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Lorg/apache/commons/logging/impl/WeakHashtable;->changeCount:I
 

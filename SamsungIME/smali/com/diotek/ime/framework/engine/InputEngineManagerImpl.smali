@@ -121,8 +121,6 @@
 # virtual methods
 .method public DLMAddWord([CS)S
     .locals 3
-    .param p1    # [C
-    .param p2    # S
 
     const/4 v2, 0x0
 
@@ -163,7 +161,6 @@
 
 .method public VOHWRCommitAndInit(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -197,8 +194,6 @@
 
 .method public VOHWRSetChangeMode(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -232,8 +227,6 @@
 
 .method public VOHWRSetInsertMode(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -267,7 +260,6 @@
 
 .method public VOHWRaddTextToHWRPanel(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -303,7 +295,6 @@
 
 .method public VOHWRappendText(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -337,7 +328,6 @@
 
 .method public addMyWord(Ljava/lang/CharSequence;)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -411,7 +401,6 @@
 
 .method public breakCurrentWord(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -520,9 +509,6 @@
 
 .method public checkCurrentSequence(Ljava/lang/StringBuilder;[I[I)V
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # [I
-    .param p3    # [I
 
     const/4 v2, 0x0
 
@@ -781,7 +767,6 @@
 
 .method public createInputEngineArray(I)Z
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -820,8 +805,6 @@
 
 .method public deleteWordFromLDB([CS)S
     .locals 3
-    .param p1    # [C
-    .param p2    # S
 
     const/4 v2, 0x0
 
@@ -862,7 +845,6 @@
 
 .method public doNextWordPredictionForXt9(Z)I
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -903,7 +885,6 @@
 
 .method public doNoteWordDoneForXt9(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -944,7 +925,6 @@
 
 .method public doNoteWordDoneForXt9WithoutIndex(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -985,9 +965,6 @@
 
 .method public doRecaptureForXt9(Ljava/lang/String;SZ)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -1068,8 +1045,6 @@
 
 .method public findWordFromDLM([CS)Z
     .locals 3
-    .param p1    # [C
-    .param p2    # S
 
     const/4 v0, 0x0
 
@@ -1105,7 +1080,6 @@
 
 .method public findWordInUDB(Ljava/lang/CharSequence;)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -1235,7 +1209,6 @@
 
 .method public fullToHalfWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1276,7 +1249,6 @@
 
 .method public getActiveIndex([I)I
     .locals 3
-    .param p1    # [I
 
     const/4 v2, 0x1
 
@@ -1317,7 +1289,6 @@
 
 .method public getAvailableLanguages(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1417,7 +1388,6 @@
 
 .method public getChar(C)I
     .locals 3
-    .param p1    # C
 
     const/4 v2, 0x0
 
@@ -1458,7 +1428,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;)I
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
@@ -1499,8 +1468,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;I)I
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1541,7 +1508,6 @@
 
 .method public getCharSequenceForHwKeyboard(Ljava/lang/StringBuilder;)I
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
@@ -1582,7 +1548,6 @@
 
 .method public getChineseWordCandidate(Ljava/util/ArrayList;I)I
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1680,7 +1645,6 @@
 
 .method public getCurrentInputBuffer(Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x1
 
@@ -1754,7 +1718,6 @@
 
 .method public getExactCharSequence(Ljava/lang/StringBuilder;)I
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
@@ -1959,7 +1922,6 @@
 
 .method public getInstallableLanguages(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2019,8 +1981,6 @@
 
 .method public getKeyPositionByTap(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -2056,7 +2016,6 @@
 
 .method public getKeyPositions([Landroid/graphics/Rect;)I
     .locals 3
-    .param p1    # [Landroid/graphics/Rect;
 
     const/4 v2, 0x0
 
@@ -2097,7 +2056,6 @@
 
 .method public getMultiTapSequence(I)Ljava/lang/StringBuilder;
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2187,7 +2145,6 @@
 
 .method public getPredictWord(Ljava/lang/CharSequence;Ljava/util/ArrayList;)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2287,7 +2244,6 @@
 
 .method public getSuggestion(Ljava/util/ArrayList;Z)I
     .locals 3
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2415,7 +2371,6 @@
 
 .method public getSuggestionForSwiftkey(Ljava/util/ArrayList;Z)V
     .locals 3
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2458,8 +2413,6 @@
 
 .method public getSwiftKeyHangulCharSequenceHwKeyboard(ILjava/lang/StringBuilder;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
@@ -2568,7 +2521,6 @@
 
 .method public getXt9LanguageId(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2670,7 +2622,6 @@
 
 .method public halfToFullWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2751,7 +2702,6 @@
 
 .method public hiraganaToKatakana(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2792,8 +2742,6 @@
 
 .method public initHwrPanel(Landroid/widget/FrameLayout;I)V
     .locals 3
-    .param p1    # Landroid/widget/FrameLayout;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -2827,7 +2775,6 @@
 
 .method public inputCharSequence(Ljava/lang/CharSequence;)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -2868,7 +2815,6 @@
 
 .method public inputKey(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2909,8 +2855,6 @@
 
 .method public inputKey(ILandroid/graphics/PointF;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     const/4 v2, 0x0
 
@@ -2951,7 +2895,6 @@
 
 .method public inputKeyForHwKeyboard(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2992,7 +2935,6 @@
 
 .method public inputKeyWithoutBuild(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -3033,8 +2975,6 @@
 
 .method public inputKeyWithoutBuild(ILandroid/graphics/PointF;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     const/4 v2, 0x0
 
@@ -3075,7 +3015,6 @@
 
 .method public inputString(Ljava/lang/StringBuilder;)I
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
@@ -3116,9 +3055,6 @@
 
 .method public inputStrokeData(III)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -3154,9 +3090,6 @@
 
 .method public isAutoAcceptBeforeTrace([Landroid/graphics/PointF;I[Z)Z
     .locals 3
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
-    .param p3    # [Z
 
     const/4 v0, 0x0
 
@@ -3192,7 +3125,6 @@
 
 .method public isContainInLanguageDB(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3233,7 +3165,6 @@
 
 .method public isNumericCharacter(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3269,7 +3200,6 @@
 
 .method public isSentenceTermPunct(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -3310,7 +3240,6 @@
 
 .method public isSentenceTermPunct(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -3351,7 +3280,6 @@
 
 .method public isTextCharacter(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3387,7 +3315,6 @@
 
 .method public isTextCharacterForHwKeyboard(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3423,7 +3350,6 @@
 
 .method public isTreatedAsLetter(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -3464,7 +3390,6 @@
 
 .method public joinChunjiin(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3505,7 +3430,6 @@
 
 .method public joinHangul(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3546,7 +3470,6 @@
 
 .method public joinNaragul(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3587,7 +3510,6 @@
 
 .method public katakanaToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3628,7 +3550,6 @@
 
 .method public learnSequence(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3662,7 +3583,6 @@
 
 .method public learnTempSuggestion(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3741,8 +3661,6 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3783,9 +3701,6 @@
 
 .method public processTrace([Landroid/graphics/PointF;IB)S
     .locals 3
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
-    .param p3    # B
 
     const/4 v2, 0x0
 
@@ -3826,7 +3741,6 @@
 
 .method public processWhenPickSuggestionManually(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -3906,8 +3820,6 @@
 
 .method public recognize(IZ)I
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -3988,7 +3900,6 @@
 
 .method public refreshContextBuffer(Z)I
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -4029,8 +3940,6 @@
 
 .method public refreshContextBuffer(ZZ)I
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -4160,7 +4069,6 @@
 
 .method public removeTerm(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4194,8 +4102,6 @@
 
 .method public replaceKey(ILandroid/graphics/PointF;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     const/4 v2, 0x0
 
@@ -4309,7 +4215,6 @@
 
 .method public romajiToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4350,7 +4255,6 @@
 
 .method public setActiveWordStatusChangable(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -4417,7 +4321,6 @@
 
 .method public setChinesePhoneticIndex(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4451,7 +4354,6 @@
 
 .method public setContextAwareUniqueID(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4485,7 +4387,6 @@
 
 .method public setCurrentEngineIndex(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4523,7 +4424,6 @@
 
 .method public setFieldSpecificType(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4557,7 +4457,6 @@
 
 .method public setHWInputEngineIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/InputEngineManagerImpl;->mCurrentHWInputEngineIndex:I
 
@@ -4566,7 +4465,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/os/Handler;
 
     const/4 v2, 0x0
 
@@ -4600,10 +4498,6 @@
 
 .method public setHwrPanelRect(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -4637,9 +4531,6 @@
 
 .method public setInputEngine(ILcom/diotek/ime/framework/engine/InputEngine;Lcom/diotek/ime/framework/engine/InputEngine;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/engine/InputEngine;
-    .param p3    # Lcom/diotek/ime/framework/engine/InputEngine;
 
     const/4 v0, 0x1
 
@@ -4703,9 +4594,6 @@
 
 .method public setInputEngineWithoutInit(ILcom/diotek/ime/framework/engine/InputEngine;Lcom/diotek/ime/framework/engine/InputEngine;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/engine/InputEngine;
-    .param p3    # Lcom/diotek/ime/framework/engine/InputEngine;
 
     const/4 v0, 0x1
 
@@ -4753,7 +4641,6 @@
 
 .method public setIntentionalEvent(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4787,7 +4674,6 @@
 
 .method public setIsPrivateImeOptionsCSC(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -4821,7 +4707,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/Keyboard;)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
 
     const/4 v2, 0x0
 
@@ -4855,8 +4740,6 @@
 
 .method public setKeyboardSize(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -4890,7 +4773,6 @@
 
 .method public setOnInputStrokeCallback(Lcom/diotek/ime/framework/engine/dhwr/AddStroke;)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/engine/dhwr/AddStroke;
 
     const/4 v2, 0x0
 
@@ -4964,7 +4846,6 @@
 
 .method public setSuggestionActiveIndex(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4998,7 +4879,6 @@
 
 .method public setVerbatim(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -5074,7 +4954,6 @@
 
 .method public setXt9AutoReplacementCondition(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -5108,7 +4987,6 @@
 
 .method public splitHangul(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -5149,7 +5027,6 @@
 
 .method public updateAcuteAccentState(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -5378,7 +5255,6 @@
 
 .method public updateKeyPressModeling(Ljava/util/LinkedList;Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5456,7 +5332,6 @@
 
 .method public updateLdbListDelete(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5563,8 +5438,6 @@
 
 .method public wordSelected(ILjava/lang/CharSequence;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x1
 
@@ -5723,11 +5596,6 @@
 
 .method public writeWordToDLM([CIIZZ)S
     .locals 6
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v2, 0x0
 

@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/dialer/dialpad/SearchFragment;Ljava/lang/String;Z)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/samsung/dialer/dialpad/SearchFragment$SearchTask;->this$0:Lcom/samsung/dialer/dialpad/SearchFragment;
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/samsung/dialer/dialpad/SearchFragment$SearchTask;->doInBackground([Ljava/lang/Object;)Ljava/util/ArrayList;
 
@@ -67,7 +64,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Object;)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -113,7 +109,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/ArrayList;
 

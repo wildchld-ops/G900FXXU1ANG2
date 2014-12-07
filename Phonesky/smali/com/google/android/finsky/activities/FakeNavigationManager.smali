@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     const/4 v0, 0x0
 
@@ -25,7 +24,6 @@
 # virtual methods
 .method public addOnBackStackChangedListener(Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;)V
     .locals 0
-    .param p1    # Landroid/support/v4/app/FragmentManager$OnBackStackChangedListener;
 
     return-void
 .end method
@@ -60,11 +58,6 @@
 
 .method public goBrowse(Ljava/lang/String;Ljava/lang/String;ILcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/FakeNavigationManager;->mActivity:Landroid/app/Activity;
 
@@ -87,10 +80,6 @@
 
 .method public goToDocPage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/FakeNavigationManager;->mActivity:Landroid/app/Activity;
 
@@ -121,7 +110,6 @@
 
 .method public init(Lcom/google/android/finsky/activities/MainActivity;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/activities/MainActivity;
 
     return-void
 .end method

@@ -20,8 +20,6 @@
 
 .method private static _decryptAES([BLjava/security/Key;)[B
     .locals 10
-    .param p0    # [B
-    .param p1    # Ljava/security/Key;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -122,8 +120,6 @@
 
 .method private static _encryptAES([BLjava/security/Key;)[B
     .locals 11
-    .param p0    # [B
-    .param p1    # Ljava/security/Key;
 
     const/4 v10, 0x0
 
@@ -215,7 +211,6 @@
 
 .method private static addPadding(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/16 v4, 0x20
 
@@ -260,7 +255,6 @@
 
 .method private static addPadding([B)[B
     .locals 4
-    .param p0    # [B
 
     const/16 v3, 0x20
 
@@ -297,7 +291,6 @@
 
 .method public static bytesToString([B)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -310,8 +303,6 @@
 
 .method public static decryptAES([B[B)[B
     .locals 3
-    .param p0    # [B
-    .param p1    # [B
 
     if-eqz p0, :cond_0
 
@@ -349,8 +340,6 @@
 
 .method public static decryptDEK([BLjava/security/PrivateKey;)[B
     .locals 11
-    .param p0    # [B
-    .param p1    # Ljava/security/PrivateKey;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -498,9 +487,6 @@
 
 .method public static decryptDEK([B[BLjava/lang/String;)[B
     .locals 6
-    .param p0    # [B
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -576,8 +562,6 @@
 
 .method public static decryptData([B[B)[B
     .locals 3
-    .param p0    # [B
-    .param p1    # [B
 
     if-eqz p0, :cond_0
 
@@ -615,8 +599,6 @@
 
 .method public static decryptPrivKey([BLjava/lang/String;)[B
     .locals 3
-    .param p0    # [B
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -658,8 +640,6 @@
 
 .method public static encryptAES([B[B)[B
     .locals 3
-    .param p0    # [B
-    .param p1    # [B
 
     if-eqz p0, :cond_0
 
@@ -697,8 +677,6 @@
 
 .method public static encryptDEK([BLjava/security/PublicKey;)[B
     .locals 11
-    .param p0    # [B
-    .param p1    # Ljava/security/PublicKey;
 
     const/4 v10, 0x0
 
@@ -790,8 +768,6 @@
 
 .method public static encryptData([B[B)[B
     .locals 3
-    .param p0    # [B
-    .param p1    # [B
 
     if-eqz p0, :cond_0
 
@@ -829,8 +805,6 @@
 
 .method public static encryptPrivKey([BLjava/lang/String;)[B
     .locals 3
-    .param p0    # [B
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -872,7 +846,6 @@
 
 .method public static generateSalt(I)[B
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/security/SecureRandom;
 
@@ -887,7 +860,6 @@
 
 .method public static generateText(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     invoke-static {p0}, Landroid/os/dar/encryption/EncryptionAPI;->generateSalt(I)[B
 
@@ -910,8 +882,6 @@
 
 .method public static hash(Ljava/lang/String;[B)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     const-string v6, "DAR.EncryptionAPI"
 

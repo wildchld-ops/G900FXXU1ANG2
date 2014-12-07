@@ -208,10 +208,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;)V
     .locals 10
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -520,9 +516,6 @@
 # virtual methods
 .method public resetPositionForCoverMode(IIZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v6, 0x3
 
@@ -639,7 +632,6 @@
 
 .method public setZoomValue(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -810,8 +802,6 @@
 
 .method public setZoomValue(IZ)V
     .locals 13
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v12, 0x0
 

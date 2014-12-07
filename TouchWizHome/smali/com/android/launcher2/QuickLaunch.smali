@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -47,8 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -59,9 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -86,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/QuickLaunch;)Lcom/android/launcher2/HomeView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickLaunch;
 
     iget-object v0, p0, Lcom/android/launcher2/QuickLaunch;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -95,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/QuickLaunch;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickLaunch;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -104,7 +96,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/QuickLaunch;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickLaunch;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -113,7 +104,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/QuickLaunch;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickLaunch;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -124,10 +114,6 @@
 # virtual methods
 .method public collectWorkspaceStateAnimators(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Workspace$State;Lcom/android/launcher2/Workspace$State;Lcom/android/launcher2/BaseItem;Ljava/util/ArrayList;)V
     .locals 10
-    .param p1    # Lcom/android/launcher2/Workspace;
-    .param p2    # Lcom/android/launcher2/Workspace$State;
-    .param p3    # Lcom/android/launcher2/Workspace$State;
-    .param p4    # Lcom/android/launcher2/BaseItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -372,7 +358,6 @@
 
 .method public dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/Utilities;->onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;)V
 
@@ -467,14 +452,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v2, 0x0
 
@@ -511,14 +494,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v2, 0x2
 
@@ -843,7 +824,6 @@
 
 .method public setIconDestination(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/QuickLaunch;->mIconDestination:I
 
@@ -852,7 +832,6 @@
 
 .method public setup(Lcom/android/launcher2/HomeView;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     iput-object p1, p0, Lcom/android/launcher2/QuickLaunch;->mHomeView:Lcom/android/launcher2/HomeView;
 

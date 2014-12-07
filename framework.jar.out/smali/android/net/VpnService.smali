@@ -54,7 +54,6 @@
 
 .method public static prepare(Landroid/content/Context;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -95,7 +94,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -136,7 +134,6 @@
 
 .method public protect(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -197,7 +194,6 @@
 
 .method public protect(Ljava/net/DatagramSocket;)Z
     .locals 1
-    .param p1    # Ljava/net/DatagramSocket;
 
     invoke-virtual {p1}, Ljava/net/DatagramSocket;->getFileDescriptor$()Ljava/io/FileDescriptor;
 
@@ -216,7 +212,6 @@
 
 .method public protect(Ljava/net/Socket;)Z
     .locals 1
-    .param p1    # Ljava/net/Socket;
 
     invoke-virtual {p1}, Ljava/net/Socket;->getFileDescriptor$()Ljava/io/FileDescriptor;
 

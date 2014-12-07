@@ -300,7 +300,6 @@
 
 .method private getPolicyWithLanguage(I)I
     .locals 5
-    .param p1    # I
 
     const/high16 v4, 0x74680000
 
@@ -396,7 +395,6 @@
 
 .method private isNoUpperCaseLanguage(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -792,7 +790,6 @@
 
 .method public setCapsLockState(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -828,7 +825,6 @@
 
 .method public setForcedCapslock(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mForcedCapslock:Z
 
@@ -837,7 +833,6 @@
 
 .method public setHWCapsLockLed(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -902,7 +897,6 @@
 
 .method public setNextShiftState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mIsNextShiftState:Z
 
@@ -911,7 +905,6 @@
 
 .method public setPolicyWithLanguage(I)Z
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mInputLanguage:I
 
@@ -943,7 +936,6 @@
 
 .method public setPressedShiftKeyCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mShiftKeyCode:I
 
@@ -952,7 +944,6 @@
 
 .method public setShiftHoldOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mShiftHoldOn:Z
 
@@ -961,7 +952,6 @@
 
 .method public setShiftMomentaryState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mShiftMomentary:Z
 
@@ -970,7 +960,6 @@
 
 .method public setShiftPressedState(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->isForcedCapsLockForGreek()Z
 
@@ -993,7 +982,6 @@
 
 .method public setShiftState(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mShifted:Z
 
@@ -1017,7 +1005,6 @@
 
 .method public setSplitTapState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/ShiftStateControllerImpl;->mSplitTap:Z
 

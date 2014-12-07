@@ -55,8 +55,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -80,7 +78,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const v1, 0x103032b
 
@@ -147,8 +144,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/mms/ui/WarnOfStorageLimitsActivity;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -173,8 +168,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/mms/ui/WarnOfStorageLimitsActivity;->mAlert:Lcom/android/internal/app/AlertController;
 

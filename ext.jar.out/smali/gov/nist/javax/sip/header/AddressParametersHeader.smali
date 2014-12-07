@@ -13,7 +13,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;-><init>(Ljava/lang/String;)V
 
@@ -22,8 +21,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lgov/nist/javax/sip/header/ParametersHeader;-><init>(Ljava/lang/String;Z)V
 
@@ -61,7 +58,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -129,7 +125,6 @@
 
 .method public setAddress(Ljavax/sip/address/Address;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/Address;
 
     check-cast p1, Lgov/nist/javax/sip/address/AddressImpl;
 

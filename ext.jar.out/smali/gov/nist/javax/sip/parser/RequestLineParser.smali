@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
@@ -23,7 +22,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/parser/Parser;-><init>()V
 
@@ -40,7 +38,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 7
-    .param p0    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

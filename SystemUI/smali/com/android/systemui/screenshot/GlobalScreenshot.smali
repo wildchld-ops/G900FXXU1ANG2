@@ -138,7 +138,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x1
 
@@ -409,7 +408,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
@@ -418,7 +416,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/screenshot/GlobalScreenshot;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmapList:Ljava/util/List;
 
@@ -427,8 +424,6 @@
 
 .method static synthetic access$102(Lcom/android/systemui/screenshot/GlobalScreenshot;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenBitmap:Landroid/graphics/Bitmap;
 
@@ -437,7 +432,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/screenshot/GlobalScreenshot;)Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mCaptureViewForShutterClick:Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;
 
@@ -446,8 +440,6 @@
 
 .method static synthetic access$1102(Lcom/android/systemui/screenshot/GlobalScreenshot;Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;)Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
-    .param p1    # Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;
 
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mCaptureViewForShutterClick:Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;
 
@@ -456,7 +448,6 @@
 
 .method static synthetic access$1200(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBackgroundView:Landroid/widget/ImageView;
 
@@ -465,7 +456,6 @@
 
 .method static synthetic access$1300(Lcom/android/systemui/screenshot/GlobalScreenshot;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mBgPaddingScale:F
 
@@ -474,7 +464,6 @@
 
 .method static synthetic access$1400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotFlash:Landroid/widget/ImageView;
 
@@ -483,9 +472,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/screenshot/GlobalScreenshot;Ljava/lang/Runnable;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/screenshot/GlobalScreenshot;->saveScreenshotInWorkerThread(Ljava/lang/Runnable;Landroid/graphics/Bitmap;)V
 
@@ -494,7 +480,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/view/WindowManager;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mWindowManager:Landroid/view/WindowManager;
 
@@ -503,7 +488,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Lcom/android/systemui/screenshot/CaptureEffectView;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mCaptureView:Lcom/android/systemui/screenshot/CaptureEffectView;
 
@@ -512,8 +496,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/screenshot/GlobalScreenshot;Lcom/android/systemui/screenshot/CaptureEffectView;)Lcom/android/systemui/screenshot/CaptureEffectView;
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
-    .param p1    # Lcom/android/systemui/screenshot/CaptureEffectView;
 
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mCaptureView:Lcom/android/systemui/screenshot/CaptureEffectView;
 
@@ -522,7 +504,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     invoke-direct {p0}, Lcom/android/systemui/screenshot/GlobalScreenshot;->playCaptureSound()V
 
@@ -531,7 +512,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/screenshot/GlobalScreenshot;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mDirection:I
 
@@ -540,7 +520,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotLayout:Landroid/view/View;
 
@@ -549,7 +528,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
 
@@ -558,7 +536,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/animation/AnimatorSet;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
 
@@ -617,10 +594,6 @@
 
 .method private createScreenshotDropOutAnimation(IIZZ)Landroid/animation/ValueAnimator;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const v10, 0x3ee66666
 
@@ -730,7 +703,6 @@
 
 .method private getDegreesForRotation(I)F
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -909,9 +881,6 @@
 
 .method static notifyScreenshotError(Landroid/content/Context;Landroid/app/NotificationManager;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/NotificationManager;
-    .param p2    # Ljava/lang/String;
 
     const v7, 0x7f0b0046
 
@@ -1108,8 +1077,6 @@
 
 .method private saveScreenshotInWorkerThread(Ljava/lang/Runnable;Landroid/graphics/Bitmap;)V
     .locals 9
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v8, 0x1
 
@@ -1240,7 +1207,6 @@
 
 .method private showToast(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mContext:Landroid/content/Context;
 
@@ -1257,11 +1223,6 @@
 
 .method private startAnimation(Ljava/lang/Runnable;IIZZ)V
     .locals 5
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
 
@@ -1345,8 +1306,6 @@
 
 .method private startAnimationForPalmSweep(Ljava/lang/Runnable;I)V
     .locals 7
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -1458,11 +1417,6 @@
 
 .method private startAnimationForShutterClickEffect(Ljava/lang/Runnable;IIZZ)V
     .locals 10
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     iget-object v9, p0, Lcom/android/systemui/screenshot/GlobalScreenshot;->mShutterEffectLock:Ljava/lang/Object;
 
@@ -1693,10 +1647,6 @@
 
 .method takeScreenshot(Ljava/lang/Runnable;ZZI)V
     .locals 17
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     move/from16 v0, p4
 

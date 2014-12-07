@@ -36,10 +36,6 @@
 
 .method constructor <init>(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)V
     .locals 7
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
-    .param p4    # Landroid/os/CancellationSignal;
 
     const/4 v0, 0x1
 
@@ -205,8 +201,6 @@
 
 .method private bind(ILjava/lang/Object;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -279,7 +273,6 @@
 # virtual methods
 .method public bindAllArgsAsStrings([Ljava/lang/String;)V
     .locals 2
-    .param p1    # [Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -304,8 +297,6 @@
 
 .method public bindBlob(I[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # [B
 
     if-nez p2, :cond_0
 
@@ -347,8 +338,6 @@
 
 .method public bindDouble(ID)V
     .locals 1
-    .param p1    # I
-    .param p2    # D
 
     invoke-static {p2, p3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -361,8 +350,6 @@
 
 .method public bindLong(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
 
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -375,7 +362,6 @@
 
 .method public bindNull(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -386,8 +372,6 @@
 
 .method public bindString(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 

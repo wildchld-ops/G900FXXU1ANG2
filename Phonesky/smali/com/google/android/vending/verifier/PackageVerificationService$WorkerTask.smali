@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/vending/verifier/PackageVerificationService;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 0
-    .param p2    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     iput-object p1, p0, Lcom/google/android/vending/verifier/PackageVerificationService$WorkerTask;->this$0:Lcom/google/android/vending/verifier/PackageVerificationService;
 
@@ -53,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 13
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v9, p0, Lcom/google/android/vending/verifier/PackageVerificationService$WorkerTask;->mState:Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
@@ -253,7 +251,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -296,7 +293,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 3
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -372,7 +368,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

@@ -49,8 +49,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/palmMotion/PalmMotionService;Lcom/android/server/palmMotion/PalmMotionService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService;
-    .param p2    # Lcom/android/server/palmMotion/PalmMotionService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;-><init>(Lcom/android/server/palmMotion/PalmMotionService;)V
 
@@ -59,7 +57,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;)Z
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;
 
     iget-boolean v0, p0, Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;->mPalmDown:Z
 
@@ -68,8 +65,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;->mPalmDown:Z
 
@@ -80,7 +75,6 @@
 # virtual methods
 .method public Initialize(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)V
     .locals 2
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     const/4 v0, 0x0
 
@@ -113,7 +107,6 @@
 
 .method public Process(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)V
     .locals 6
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     const/4 v5, 0x1
 

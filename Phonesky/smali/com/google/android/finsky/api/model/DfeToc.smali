@@ -52,7 +52,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/protos/Toc$TocResponse;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/protos/Toc$TocResponse;
 
     invoke-direct {p0}, Lcom/google/android/finsky/api/model/DfeModel;-><init>()V
 
@@ -135,7 +134,6 @@
 
 .method public getCorpus(I)Lcom/google/android/finsky/protos/Toc$CorpusMetadata;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/DfeToc;->mCorpusMap:Ljava/util/Map;
 
@@ -154,7 +152,6 @@
 
 .method public getCorpus(Ljava/lang/String;)Lcom/google/android/finsky/protos/Toc$CorpusMetadata;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/google/android/finsky/api/model/DfeToc;->mToc:Lcom/google/android/finsky/protos/Toc$TocResponse;
 
@@ -280,7 +277,6 @@
 
 .method public getWidgetUrl(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -348,8 +344,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/api/model/DfeToc;->mToc:Lcom/google/android/finsky/protos/Toc$TocResponse;
 

@@ -48,9 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/Observable;-><init>()V
 
@@ -81,8 +78,6 @@
 
 .method private ensureRouteToHost(Ljava/lang/String;Lcom/android/mms/transaction/TransactionSettings;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/transaction/TransactionSettings;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -366,7 +361,6 @@
 
 .method public static isNetworkAvailable(Landroid/net/ConnectivityManager;)Z
     .locals 2
-    .param p0    # Landroid/net/ConnectivityManager;
 
     const/4 v1, 0x2
 
@@ -391,7 +385,6 @@
 
 .method public static lookupHost(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p0}, Ljava/net/InetAddress;->getByName(Ljava/lang/String;)Ljava/net/InetAddress;
@@ -453,7 +446,6 @@
 
 .method public static waitForActivatedMmsConnection(Landroid/net/ConnectivityManager;)Z
     .locals 8
-    .param p0    # Landroid/net/ConnectivityManager;
 
     const/4 v0, 0x0
 
@@ -596,7 +588,6 @@
 
 .method protected getPdu(Ljava/lang/String;)[B
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -693,7 +684,6 @@
 
 .method public isEquivalent(Lcom/android/mms/transaction/Transaction;)Z
     .locals 7
-    .param p1    # Lcom/android/mms/transaction/Transaction;
 
     const/4 v1, 0x1
 
@@ -899,8 +889,6 @@
 
 .method protected sendPdu(J[B)[B
     .locals 7
-    .param p1    # J
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -933,10 +921,6 @@
 
 .method protected sendPdu(J[BLandroid/net/http/AndroidHttpClient;Lorg/apache/http/HttpRequest;)[B
     .locals 7
-    .param p1    # J
-    .param p3    # [B
-    .param p4    # Landroid/net/http/AndroidHttpClient;
-    .param p5    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -969,11 +953,6 @@
 
 .method protected sendPdu(J[BLjava/lang/String;Landroid/net/http/AndroidHttpClient;Lorg/apache/http/HttpRequest;)[B
     .locals 11
-    .param p1    # J
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/net/http/AndroidHttpClient;
-    .param p6    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1061,7 +1040,6 @@
 
 .method protected sendPdu([B)[B
     .locals 7
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1094,8 +1072,6 @@
 
 .method protected sendPdu([BLjava/lang/String;)[B
     .locals 7
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1124,7 +1100,6 @@
 
 .method public setConnectionSettings(Lcom/android/mms/transaction/TransactionSettings;)V
     .locals 0
-    .param p1    # Lcom/android/mms/transaction/TransactionSettings;
 
     iput-object p1, p0, Lcom/android/mms/transaction/Transaction;->mTransactionSettings:Lcom/android/mms/transaction/TransactionSettings;
 
@@ -1171,8 +1146,6 @@
 
 .method protected updateMessageSize(Landroid/net/Uri;Landroid/net/Uri;)V
     .locals 14
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 

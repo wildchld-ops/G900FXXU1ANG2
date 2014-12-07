@@ -385,7 +385,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion/MotionView;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->updateAnimation()V
 
@@ -394,7 +393,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -405,7 +403,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/motion/MotionView;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->showMotionDialog()V
 
@@ -414,7 +411,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -425,7 +421,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/motion/MotionView;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->stopAnimation()V
 
@@ -434,8 +429,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/motion/MotionView;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/MotionView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion/MotionView;->startTryActually(Z)V
 
@@ -444,7 +437,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion/MotionView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
@@ -453,7 +445,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -464,7 +455,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/motion/MotionView;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->updateCheckedUI()V
 
@@ -473,7 +463,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -484,7 +473,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -495,7 +483,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -506,7 +493,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/motion/MotionView;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->startTryActually()V
 
@@ -515,7 +501,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/MotionView;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2719,7 +2704,6 @@
 
 .method private startTryActually(Z)V
     .locals 3
-    .param p1    # Z
 
     iget v1, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
 
@@ -2990,7 +2974,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -3001,9 +2984,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v0, "MotionView"
 
@@ -3074,8 +3054,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -3139,7 +3117,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -3194,8 +3171,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
 

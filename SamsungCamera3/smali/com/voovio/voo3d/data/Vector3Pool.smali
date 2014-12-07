@@ -121,7 +121,6 @@
 
 .method public static returnVector3(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 2
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
 
     sget-object v0, Lcom/voovio/voo3d/data/Vector3Pool;->m_aPool:[Lcom/voovio/voo3d/data/Vector3;
 

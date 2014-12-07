@@ -195,7 +195,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)J
     .locals 2
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     iget-wide v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->mContactId:J
 
@@ -204,7 +203,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->mHeaderAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -213,8 +211,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/detail/ContactHistoryListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->setAllItemChecked(Z)V
 
@@ -223,7 +219,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->mListView:Landroid/widget/ListView;
 
@@ -232,7 +227,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->mLoadingLayout:Landroid/widget/LinearLayout;
 
@@ -241,7 +235,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->mIsDeleteMode:Z
 
@@ -652,7 +645,6 @@
 
 .method private makeDeleteAllHeaderView(Landroid/view/LayoutInflater;)V
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
 
     const v0, 0x7f030049
 
@@ -693,8 +685,6 @@
 
 .method public static queryForAllRawContactIds(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 8
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -853,7 +843,6 @@
 
 .method private setAllItemChecked(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v4, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->mListView:Landroid/widget/ListView;
 
@@ -1176,7 +1165,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1187,7 +1175,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 15
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface/range {p1 .. p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1508,7 +1495,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -1617,9 +1603,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 6
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v5, 0x1
 
@@ -1746,8 +1729,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1878,9 +1859,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f030047
 
@@ -2012,7 +1990,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 4
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2083,8 +2060,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -2141,7 +2116,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "DeleteStringArrayList"
 
@@ -2188,7 +2162,6 @@
 
 .method setCheckPosition(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/detail/ContactHistoryListFragment;->mAdapter:Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
 
@@ -2259,7 +2232,6 @@
 
 .method setMode(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 

@@ -16,8 +16,6 @@
 # virtual methods
 .method public bind(Ljava/net/Socket;Lorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -101,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/CallButtonPresenter;)Lcom/android/incallui/vt/VideoCallManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallButtonPresenter;
 
     invoke-direct {p0}, Lcom/android/incallui/CallButtonPresenter;->getVideoCallManager()Lcom/android/incallui/vt/VideoCallManager;
 
@@ -112,7 +111,6 @@
 
 .method private checkStorageMemorySpace(Z)Z
     .locals 17
-    .param p1    # Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -349,7 +347,6 @@
 
 .method private makeMultiWindowIntent(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     sget v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->ZONE_B:I
 
@@ -364,7 +361,6 @@
 
 .method private startActivity(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getContext()Landroid/content/Context;
@@ -388,8 +384,6 @@
 
 .method private startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getContext()Landroid/content/Context;
@@ -547,7 +541,6 @@
 
 .method private updateRcsElelements(Lcom/android/services/telephony/common/Call;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p1, :cond_0
 
@@ -593,8 +586,6 @@
 
 .method private updateUi(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 13
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -1218,7 +1209,6 @@
 # virtual methods
 .method public PromotedClicked(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallButtonPresenter;->mCall:Lcom/android/services/telephony/common/Call;
 
@@ -1357,7 +1347,6 @@
 
 .method public ShareClicked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallButtonPresenter;->mCall:Lcom/android/services/telephony/common/Call;
 
@@ -1484,7 +1473,6 @@
 
 .method public captureSurfaceImage(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1546,7 +1534,6 @@
 
 .method public dialpadClicked(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -1788,7 +1775,6 @@
 
 .method public holdClicked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallButtonPresenter;->mCall:Lcom/android/services/telephony/common/Call;
 
@@ -1950,7 +1936,6 @@
 
 .method public isAudio(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/CallButtonPresenter;->getAudioMode()I
 
@@ -2021,7 +2006,6 @@
 
 .method public isSupported(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/CallButtonPresenter;->getSupportedAudio()I
 
@@ -2436,7 +2420,6 @@
 
 .method public muteClicked(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2469,7 +2452,6 @@
 
 .method public onAudioMode(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "ims_video_default_speaker_mode"
 
@@ -2502,8 +2484,6 @@
 
 .method public onIncomingCall(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -2516,7 +2496,6 @@
 
 .method public onMute(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -2538,8 +2517,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 4
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v3, 0x0
 
@@ -2731,7 +2708,6 @@
 
 .method public onSupportedAudioMode(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -2753,7 +2729,6 @@
 
 .method public onUiReady(Lcom/android/incallui/CallButtonPresenter$CallButtonUi;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/CallButtonPresenter$CallButtonUi;
 
     const v1, 0x7f050010
 
@@ -2803,7 +2778,6 @@
 
 .method public bridge synthetic onUiReady(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/CallButtonPresenter$CallButtonUi;
 
@@ -2841,7 +2815,6 @@
 
 .method public onUiUnready(Lcom/android/incallui/CallButtonPresenter$CallButtonUi;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/CallButtonPresenter$CallButtonUi;
 
     invoke-super {p0, p1}, Lcom/android/incallui/Presenter;->onUiUnready(Lcom/android/incallui/Ui;)V
 
@@ -2868,7 +2841,6 @@
 
 .method public bridge synthetic onUiUnready(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/CallButtonPresenter$CallButtonUi;
 
@@ -2989,7 +2961,6 @@
 
 .method public setAudioMode(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3028,7 +2999,6 @@
 
 .method public setButtonsVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -3043,7 +3013,6 @@
 
 .method public setIncomingVTSpeakerState(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/CallButtonPresenter;->isIncomingVTSperkerMode()Z
 
@@ -3128,7 +3097,6 @@
 
 .method public showSeekBar(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 

@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/impl/ListCallButtonControllerImpl;-><init>(Landroid/content/Context;)V
 
@@ -55,12 +54,6 @@
 
 .method public static bindCallButton(Landroid/content/Context;Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;ILandroid/net/Uri;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Z
 
     invoke-virtual {p1}, Lcom/android/contacts/common/list/ContactListItemView;->getListCallButtonController()Lcom/samsung/contacts/impl/ListCallButtonControllerImpl;
 
@@ -94,10 +87,6 @@
 # virtual methods
 .method public setLayout(IIII)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Lcom/samsung/contacts/emergency/EmergencyContactListCallButtonControllerImpl;->mCallButton:Landroid/widget/ImageView;
 
@@ -152,11 +141,6 @@
 
 .method public showCallButton(Landroid/view/ViewGroup;Landroid/database/Cursor;ILandroid/net/Uri;Z)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Z
 
     const/4 v2, 0x0
 

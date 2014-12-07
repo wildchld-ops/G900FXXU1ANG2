@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/common/http/NetworkStatsEntity;Ljava/io/InputStream;)V
     .locals 0
-    .param p2    # Ljava/io/InputStream;
 
     iput-object p1, p0, Lcom/google/android/common/http/NetworkStatsEntity$NetworkStatsInputStream;->this$0:Lcom/google/android/common/http/NetworkStatsEntity;
 

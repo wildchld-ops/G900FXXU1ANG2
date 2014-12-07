@@ -42,7 +42,6 @@
 # virtual methods
 .method public Unlock(Landroid/widget/FrameLayout;)V
     .locals 8
-    .param p1    # Landroid/widget/FrameLayout;
 
     if-nez p1, :cond_0
 

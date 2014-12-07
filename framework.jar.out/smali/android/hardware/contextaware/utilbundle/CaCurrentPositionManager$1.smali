@@ -36,7 +36,6 @@
 # virtual methods
 .method public final onLocationChanged(Landroid/location/Location;)V
     .locals 20
-    .param p1    # Landroid/location/Location;
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/CaCurrentUtcTimeManager;->getInstance()Landroid/hardware/contextaware/utilbundle/CaCurrentUtcTimeManager;
 
@@ -255,7 +254,6 @@
 
 .method public final onProviderDisabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -282,7 +280,6 @@
 
 .method public final onProviderEnabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -309,9 +306,6 @@
 
 .method public final onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     return-void
 .end method

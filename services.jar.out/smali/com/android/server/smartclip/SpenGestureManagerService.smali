@@ -107,7 +107,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -178,8 +177,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/WindowManagerService;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/WindowManagerService;
 
     const/4 v5, 0x1
 
@@ -355,7 +352,6 @@
 
 .method static synthetic access$100(Lcom/android/server/smartclip/SpenGestureManagerService;)Lcom/samsung/android/airbutton/AirButtonImpl;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mGlobalAirButton:Lcom/samsung/android/airbutton/AirButtonImpl;
 
@@ -364,7 +360,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/smartclip/SpenGestureManagerService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     invoke-direct {p0}, Lcom/android/server/smartclip/SpenGestureManagerService;->getTopMostActivityClassName()Ljava/lang/String;
 
@@ -375,8 +370,6 @@
 
 .method static synthetic access$102(Lcom/android/server/smartclip/SpenGestureManagerService;Lcom/samsung/android/airbutton/AirButtonImpl;)Lcom/samsung/android/airbutton/AirButtonImpl;
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mGlobalAirButton:Lcom/samsung/android/airbutton/AirButtonImpl;
 
@@ -409,8 +402,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/smartclip/SpenGestureManagerService;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/smartclip/SpenGestureManagerService;->isPackageActivated(Ljava/lang/String;)Z
 
@@ -437,7 +428,6 @@
 
 .method static synthetic access$300(Lcom/android/server/smartclip/SpenGestureManagerService;)Landroid/view/WindowManager;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mWindowManager:Landroid/view/WindowManager;
 
@@ -446,8 +436,6 @@
 
 .method static synthetic access$302(Lcom/android/server/smartclip/SpenGestureManagerService;Landroid/view/WindowManager;)Landroid/view/WindowManager;
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Landroid/view/WindowManager;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mWindowManager:Landroid/view/WindowManager;
 
@@ -456,7 +444,6 @@
 
 .method static synthetic access$400(Lcom/android/server/smartclip/SpenGestureManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mClearCoverOpened:Z
 
@@ -465,8 +452,6 @@
 
 .method static synthetic access$402(Lcom/android/server/smartclip/SpenGestureManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mClearCoverOpened:Z
 
@@ -475,7 +460,6 @@
 
 .method static synthetic access$500(Lcom/android/server/smartclip/SpenGestureManagerService;)Lcom/android/server/smartclip/SmartClipView;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mSmartClipView:Lcom/android/server/smartclip/SmartClipView;
 
@@ -484,8 +468,6 @@
 
 .method static synthetic access$502(Lcom/android/server/smartclip/SpenGestureManagerService;Lcom/android/server/smartclip/SmartClipView;)Lcom/android/server/smartclip/SmartClipView;
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Lcom/android/server/smartclip/SmartClipView;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mSmartClipView:Lcom/android/server/smartclip/SmartClipView;
 
@@ -494,7 +476,6 @@
 
 .method static synthetic access$600(Lcom/android/server/smartclip/SpenGestureManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mIsEnableLockScreenQuickNote:Z
 
@@ -503,7 +484,6 @@
 
 .method static synthetic access$700(Lcom/android/server/smartclip/SpenGestureManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mIsVisibleSPenGestureView:Z
 
@@ -512,8 +492,6 @@
 
 .method static synthetic access$702(Lcom/android/server/smartclip/SpenGestureManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mIsVisibleSPenGestureView:Z
 
@@ -522,7 +500,6 @@
 
 .method static synthetic access$800(Lcom/android/server/smartclip/SpenGestureManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mShouldTransferEventToAirButton:Z
 
@@ -531,8 +508,6 @@
 
 .method static synthetic access$802(Lcom/android/server/smartclip/SpenGestureManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mShouldTransferEventToAirButton:Z
 
@@ -541,7 +516,6 @@
 
 .method static synthetic access$900(Lcom/android/server/smartclip/SpenGestureManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mShouldTransferTouchDownEventToAirButton:Z
 
@@ -550,8 +524,6 @@
 
 .method static synthetic access$902(Lcom/android/server/smartclip/SpenGestureManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SpenGestureManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mShouldTransferTouchDownEventToAirButton:Z
 
@@ -712,7 +684,6 @@
 
 .method private isPackageActivated(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1067,9 +1038,6 @@
 
 .method public getAirButtonHitTest(III)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, -0x1
 
@@ -1205,9 +1173,6 @@
 
 .method public getSmartClipDataByScreenRect(Landroid/graphics/Rect;Landroid/os/IBinder;I)Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
     .locals 8
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1607,8 +1572,6 @@
 
 .method public setAirButtonHitTestResult(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/smartclip/SpenGestureManagerService;->TAG:Ljava/lang/String;
 
@@ -1669,14 +1632,12 @@
 
 .method public setDisableGlobalAirBottonAppindex(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setFocusWindow(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/smartclip/SpenGestureManagerService;->mSmartClipView:Lcom/android/server/smartclip/SmartClipView;
 
@@ -1692,7 +1653,6 @@
 
 .method public setSmartClipDataExtractionResult(Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;
 
     if-eqz p1, :cond_1
 

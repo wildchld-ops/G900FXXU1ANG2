@@ -104,8 +104,6 @@
 
 .method public static final getRepeatedFieldArrayLength(Lcom/google/protobuf/nano/CodedInputByteBufferNano;I)I
     .locals 4
-    .param p0    # Lcom/google/protobuf/nano/CodedInputByteBufferNano;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -148,7 +146,6 @@
 
 .method public static getTagFieldNumber(I)I
     .locals 1
-    .param p0    # I
 
     ushr-int/lit8 v0, p0, 0x3
 
@@ -157,7 +154,6 @@
 
 .method static getTagWireType(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x7
 
@@ -166,8 +162,6 @@
 
 .method static makeTag(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     shl-int/lit8 v0, p0, 0x3
 
@@ -178,8 +172,6 @@
 
 .method public static parseUnknownField(Lcom/google/protobuf/nano/CodedInputByteBufferNano;I)Z
     .locals 1
-    .param p0    # Lcom/google/protobuf/nano/CodedInputByteBufferNano;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

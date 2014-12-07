@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -173,9 +172,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;II)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -284,7 +280,6 @@
 
 .method public setLogPath(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -336,8 +331,6 @@
 
 .method public setMotionAngle(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -391,12 +384,6 @@
 
 .method public setMotionTiltLevel(IIIIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -458,7 +445,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -510,8 +496,6 @@
 
 .method public useMotionAlways(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

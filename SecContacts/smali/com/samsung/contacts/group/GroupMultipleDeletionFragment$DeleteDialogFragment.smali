@@ -40,7 +40,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;->mSelectedList:Ljava/util/ArrayList;
 
@@ -49,7 +48,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;->mDeleteGroupDialogTitle:Ljava/lang/String;
 
@@ -58,7 +56,6 @@
 
 .method public static show(Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;)V
     .locals 3
-    .param p0    # Lcom/samsung/contacts/group/GroupMultipleDeletionFragment;
 
     new-instance v0, Lcom/samsung/contacts/group/GroupMultipleDeletionFragment$DeleteDialogFragment;
 
@@ -85,7 +82,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -219,7 +215,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "extraSelectedItemDialog"
 

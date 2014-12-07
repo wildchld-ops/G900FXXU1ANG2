@@ -78,10 +78,6 @@
 
 .method synthetic constructor <init>(Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;Lcom/google/gson/internal/ObjectConstructor;Ljava/util/Map;Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$1;)V
     .locals 0
-    .param p1    # Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;
-    .param p2    # Lcom/google/gson/internal/ObjectConstructor;
-    .param p3    # Ljava/util/Map;
-    .param p4    # Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;-><init>(Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;Lcom/google/gson/internal/ObjectConstructor;Ljava/util/Map;)V
 
@@ -92,7 +88,6 @@
 # virtual methods
 .method public read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
     .locals 6
-    .param p1    # Lcom/google/gson/stream/JsonReader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -200,7 +195,6 @@
 
 .method public write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Lcom/google/gson/stream/JsonWriter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

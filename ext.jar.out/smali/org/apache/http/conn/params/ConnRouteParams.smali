@@ -49,7 +49,6 @@
 
 .method public static getDefaultProxy(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/HttpHost;
     .locals 3
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -88,7 +87,6 @@
 
 .method public static getForcedRoute(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/conn/routing/HttpRoute;
     .locals 3
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -127,7 +125,6 @@
 
 .method public static getLocalAddress(Lorg/apache/http/params/HttpParams;)Ljava/net/InetAddress;
     .locals 3
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -153,8 +150,6 @@
 
 .method public static setDefaultProxy(Lorg/apache/http/params/HttpParams;Lorg/apache/http/HttpHost;)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Lorg/apache/http/HttpHost;
 
     if-nez p0, :cond_0
 
@@ -176,8 +171,6 @@
 
 .method public static setForcedRoute(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     if-nez p0, :cond_0
 
@@ -199,8 +192,6 @@
 
 .method public static setLocalAddress(Lorg/apache/http/params/HttpParams;Ljava/net/InetAddress;)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Ljava/net/InetAddress;
 
     if-nez p0, :cond_0
 

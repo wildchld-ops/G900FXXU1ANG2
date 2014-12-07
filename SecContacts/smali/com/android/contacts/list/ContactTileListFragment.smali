@@ -158,7 +158,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/list/ContactTileListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mSelectedContactIds:Ljava/util/ArrayList;
 
@@ -167,8 +166,6 @@
 
 .method static synthetic access$002(Lcom/android/contacts/list/ContactTileListFragment;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mSelectedContactIds:Ljava/util/ArrayList;
 
@@ -177,10 +174,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/list/ContactTileListFragment;IZLjava/lang/Long;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/Long;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/contacts/list/ContactTileListFragment;->changeShareViaMenuVisibility(IZLjava/lang/Long;)V
 
@@ -189,7 +182,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/list/ContactTileListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mRestoreActionMode:Z
 
@@ -198,8 +190,6 @@
 
 .method static synthetic access$1002(Lcom/android/contacts/list/ContactTileListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mRestoreActionMode:Z
 
@@ -208,7 +198,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/list/ContactTileListFragment;)Lcom/samsung/contacts/listener/ContextualActionbarListener;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mCABListener:Lcom/samsung/contacts/listener/ContextualActionbarListener;
 
@@ -217,7 +206,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/list/ContactTileListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mIsRecreatedInstance:Z
 
@@ -226,7 +214,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/list/ContactTileListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mDeleteOnlyMode:Z
 
@@ -235,8 +222,6 @@
 
 .method static synthetic access$1302(Lcom/android/contacts/list/ContactTileListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mDeleteOnlyMode:Z
 
@@ -245,7 +230,6 @@
 
 .method static synthetic access$1400(Lcom/android/contacts/list/ContactTileListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mShouldHideShareViaMenu:Z
 
@@ -254,8 +238,6 @@
 
 .method static synthetic access$1402(Lcom/android/contacts/list/ContactTileListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mShouldHideShareViaMenu:Z
 
@@ -264,7 +246,6 @@
 
 .method static synthetic access$1500(Lcom/android/contacts/list/ContactTileListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/list/ContactTileListFragment;->removeSelectAllHeader()V
 
@@ -273,8 +254,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/list/ContactTileListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/contacts/list/ContactTileListFragment;->updateSelectAllState(Z)V
 
@@ -283,7 +262,6 @@
 
 .method static synthetic access$1800(Lcom/android/contacts/list/ContactTileListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/list/ContactTileListFragment;->dismissProgressDialog()V
 
@@ -300,7 +278,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/list/ContactTileListFragment;)Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mActionModeCallback:Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;
 
@@ -309,7 +286,6 @@
 
 .method static synthetic access$2002(Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
     .locals 0
-    .param p0    # Ljava/lang/ref/WeakReference;
 
     sput-object p0, Lcom/android/contacts/list/ContactTileListFragment;->mProgressDialog:Ljava/lang/ref/WeakReference;
 
@@ -318,8 +294,6 @@
 
 .method static synthetic access$202(Lcom/android/contacts/list/ContactTileListFragment;Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;)Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mActionModeCallback:Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;
 
@@ -328,8 +302,6 @@
 
 .method static synthetic access$2102(Lcom/android/contacts/list/ContactTileListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mIsProgressShowing:Z
 
@@ -338,7 +310,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/list/ContactTileListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mIsSelectionMode:Z
 
@@ -347,8 +318,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/list/ContactTileListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mIsSelectionMode:Z
 
@@ -357,7 +326,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/list/ContactTileListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/list/ContactTileListFragment;->invalidateOptionsMenuIfNeeded()V
 
@@ -366,7 +334,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/list/ContactTileListFragment;)Lcom/android/contacts/list/ContactTileListFragment$Listener;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mListener:Lcom/android/contacts/list/ContactTileListFragment$Listener;
 
@@ -375,7 +342,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/list/ContactTileListFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mContext:Landroid/content/Context;
 
@@ -384,7 +350,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/list/ContactTileListFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mSelectedTextView:Landroid/widget/TextView;
 
@@ -393,8 +358,6 @@
 
 .method static synthetic access$802(Lcom/android/contacts/list/ContactTileListFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mSelectedTextView:Landroid/widget/TextView;
 
@@ -403,7 +366,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/list/ContactTileListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/list/ContactTileListFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/list/ContactTileListFragment;->addSelectAllHeader()V
 
@@ -499,9 +461,6 @@
 
 .method private changeShareViaMenuVisibility(IZLjava/lang/Long;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/Long;
 
     const/4 v2, 0x1
 
@@ -552,9 +511,6 @@
 
 .method private deleteFavoriteData(Landroid/content/ContentResolver;Landroid/content/ContentValues;Ljava/lang/StringBuffer;)V
     .locals 3
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/StringBuffer;
 
     const/4 v2, 0x0
 
@@ -636,7 +592,6 @@
 
 .method private getFrequentDeleteUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/ContactsContract$Data;->CONTENT_URI:Landroid/net/Uri;
 
@@ -655,7 +610,6 @@
 
 .method private getUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
@@ -756,7 +710,6 @@
 
 .method private updateSelectAllState(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -922,10 +875,6 @@
 
 .method protected inflateAndSetupView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;I)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -1049,7 +998,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -1102,7 +1050,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1145,9 +1092,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f030059
 
@@ -1283,7 +1227,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "actionMode"
 
@@ -1739,7 +1682,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -1854,7 +1796,6 @@
 
 .method public setColumnCount(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mAdapter:Lcom/android/contacts/common/list/ContactTileAdapter;
 
@@ -1865,7 +1806,6 @@
 
 .method public setContextualActionbarListener(Lcom/samsung/contacts/listener/ContextualActionbarListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/ContextualActionbarListener;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mCABListener:Lcom/samsung/contacts/listener/ContextualActionbarListener;
 
@@ -1874,7 +1814,6 @@
 
 .method public setDeleteOnlyMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mDeleteOnlyMode:Z
 
@@ -1883,7 +1822,6 @@
 
 .method public setListener(Lcom/android/contacts/list/ContactTileListFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/ContactTileListFragment$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mListener:Lcom/android/contacts/list/ContactTileListFragment$Listener;
 
@@ -1892,7 +1830,6 @@
 
 .method public setSweepActionEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/list/ContactTileListFragment;->mListView:Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
 
@@ -1932,7 +1869,6 @@
 
 .method public setVoLteEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/list/ContactTileListFragment;->mIsVoLteEnabled:Z
 

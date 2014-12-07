@@ -48,7 +48,6 @@
 
 .method private static getCharacterGbk(C)Ljava/lang/String;
     .locals 8
-    .param p0    # C
 
     :try_start_0
     invoke-static {p0}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
@@ -181,7 +180,6 @@
 
 .method private getMultiPinyinsByGBK(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "-"
 
@@ -218,7 +216,6 @@
 
 .method private initHashMap(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v4, "-"
 
@@ -258,7 +255,6 @@
 
 .method private initHashMapFragment(I)V
     .locals 0
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -15240,8 +15236,6 @@
 
 .method private static putMultiPinyin(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/samsung/mms/hanzi/HanziToMultiPinyin;->getInstance()Lcom/samsung/mms/hanzi/HanziToMultiPinyin;
 
@@ -15258,7 +15252,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15393,7 +15386,6 @@
 
 .method public getMultiPinyins(C)Ljava/lang/String;
     .locals 4
-    .param p1    # C
 
     invoke-static {p1}, Lcom/samsung/mms/hanzi/HanziToMultiPinyin;->getCharacterGbk(C)Ljava/lang/String;
 

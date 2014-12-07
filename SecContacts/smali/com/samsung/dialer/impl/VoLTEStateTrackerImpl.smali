@@ -41,7 +41,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -127,7 +126,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;->mContext:Landroid/content/Context;
 
@@ -136,8 +134,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;->onReceiveForPeopleActivity(Z)V
 
@@ -146,7 +142,6 @@
 
 .method private isSupportVoLTE(Landroid/content/Context;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -159,7 +154,6 @@
 
 .method private onReceiveForPeopleActivity(Z)V
     .locals 6
-    .param p1    # Z
 
     sget-object v4, Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;->TAG:Ljava/lang/String;
 
@@ -285,7 +279,6 @@
 
 .method public static preLoadCommonIMSInterface(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/samsung/contacts/util/LoadCscFeatureUtils;->getInstance()Lcom/samsung/contacts/util/LoadCscFeatureUtils;
 

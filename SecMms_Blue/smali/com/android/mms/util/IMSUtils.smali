@@ -18,10 +18,6 @@
 
 .method public static registerImsReceiver(Landroid/content/Context;ZLandroid/content/BroadcastReceiver;Z)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Landroid/content/BroadcastReceiver;
-    .param p3    # Z
 
     const-string v4, "IMS_LOWSIGNAL"
 

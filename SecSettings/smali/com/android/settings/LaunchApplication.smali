@@ -72,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/LaunchApplication;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/LaunchApplication;
 
     iget-object v0, p0, Lcom/android/settings/LaunchApplication;->mPm:Landroid/content/pm/PackageManager;
 
@@ -81,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/LaunchApplication;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LaunchApplication;
 
     invoke-direct {p0}, Lcom/android/settings/LaunchApplication;->updateHomeApplicationSetting()V
 
@@ -90,7 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/LaunchApplication;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LaunchApplication;
 
     invoke-direct {p0}, Lcom/android/settings/LaunchApplication;->updateSmsApplicationSetting()V
 
@@ -411,7 +408,6 @@
 
 .method private isHomePackage(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -900,7 +896,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1026,8 +1021,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 13
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     move-object v5, p2
 
@@ -1329,8 +1322,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x0
 

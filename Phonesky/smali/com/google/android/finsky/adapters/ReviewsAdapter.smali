@@ -38,13 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/DfeReviews;Lcom/google/android/finsky/adapters/ReviewsAdapter$RateReviewHandler;Lcom/google/android/finsky/adapters/ReviewsAdapter$ChooseListingOptionsHandler;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/api/model/DfeReviews;
-    .param p4    # Lcom/google/android/finsky/adapters/ReviewsAdapter$RateReviewHandler;
-    .param p5    # Lcom/google/android/finsky/adapters/ReviewsAdapter$ChooseListingOptionsHandler;
-    .param p6    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p7    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v0, 0x0
 
@@ -93,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/ReviewsAdapter;)Lcom/google/android/finsky/adapters/ReviewsAdapter$RateReviewHandler;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/ReviewsAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ReviewsAdapter;->mRatingHandler:Lcom/google/android/finsky/adapters/ReviewsAdapter$RateReviewHandler;
 
@@ -102,9 +94,6 @@
 
 .method private bindItemView(Landroid/view/View;Lcom/google/android/finsky/adapters/ReviewsAdapter$ViewHolder;I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/google/android/finsky/adapters/ReviewsAdapter$ViewHolder;
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -231,8 +220,6 @@
 
 .method private getFiltersView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -267,8 +254,6 @@
 
 .method private getHeaderView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -297,9 +282,6 @@
 
 .method private getItemView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -334,8 +316,6 @@
 
 .method private getNoMatchingView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -358,8 +338,6 @@
 
 .method private getStatisticsView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p1, :cond_0
 
@@ -537,7 +515,6 @@
 
 .method public getItem(I)Lcom/google/android/finsky/protos/DocumentV2$Review;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/ReviewsAdapter;->mData:Lcom/google/android/finsky/api/model/DfeReviews;
 
@@ -566,7 +543,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/ReviewsAdapter;->getItem(I)Lcom/google/android/finsky/protos/DocumentV2$Review;
 
@@ -577,7 +553,6 @@
 
 .method public getItemViewType(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x5
 
@@ -770,9 +745,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/adapters/ReviewsAdapter;->getItemViewType(I)I
 
@@ -914,7 +886,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/adapters/ReviewsAdapter;->triggerFooterErrorMode()V
 

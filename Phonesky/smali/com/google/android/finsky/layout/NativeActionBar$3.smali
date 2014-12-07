@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>([Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # [Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0, p1}, Landroid/graphics/drawable/LayerDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
 
@@ -28,7 +27,6 @@
 # virtual methods
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 

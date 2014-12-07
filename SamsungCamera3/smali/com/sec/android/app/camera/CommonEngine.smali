@@ -476,7 +476,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v3, -0x1
 
@@ -874,7 +873,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/app/camera/CommonEngine;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mFocusIndicatorUpdated:Z
 
@@ -883,8 +881,6 @@
 
 .method static synthetic access$1002(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mFocusIndicatorUpdated:Z
 
@@ -893,8 +889,6 @@
 
 .method static synthetic access$1102(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mIsContinousAFStopped:Z
 
@@ -903,7 +897,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/camera/CommonEngine;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/CommonEngine;->bIsAeAwbLocked:Z
 
@@ -920,7 +913,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->startFaceDetection()V
 
@@ -929,7 +921,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/app/camera/CommonEngine;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastOrientation:I
 
@@ -938,8 +929,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/camera/CommonEngine;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CommonEngine;->setLastOrientation(I)V
 
@@ -948,8 +937,6 @@
 
 .method static synthetic access$1702(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mIsFinishOneShotPreviewCallback:Z
 
@@ -958,7 +945,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/app/camera/CommonEngine$CommonEnginePreviewCallback;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mPreviewCallback:Lcom/sec/android/app/camera/CommonEngine$CommonEnginePreviewCallback;
 
@@ -967,7 +953,6 @@
 
 .method static synthetic access$1900(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mShootingModeManager:Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
 
@@ -976,7 +961,6 @@
 
 .method static synthetic access$2100(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/app/camera/CommonEngine$JpegPictureCallback;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mJpegPictureCallback:Lcom/sec/android/app/camera/CommonEngine$JpegPictureCallback;
 
@@ -985,7 +969,6 @@
 
 .method static synthetic access$2200(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/app/camera/CommonEngine$AutoFocusCallback;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mAutoFocusCallback:Lcom/sec/android/app/camera/CommonEngine$AutoFocusCallback;
 
@@ -994,7 +977,6 @@
 
 .method static synthetic access$2300(Lcom/sec/android/app/camera/CommonEngine;)Ljava/lang/Thread;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mPictureSavingThread:Ljava/lang/Thread;
 
@@ -1003,8 +985,6 @@
 
 .method static synthetic access$2302(Lcom/sec/android/app/camera/CommonEngine;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mPictureSavingThread:Ljava/lang/Thread;
 
@@ -1013,7 +993,6 @@
 
 .method static synthetic access$2408(Lcom/sec/android/app/camera/CommonEngine;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mNumberOfPictureSavingThread:I
 
@@ -1026,7 +1005,6 @@
 
 .method static synthetic access$2410(Lcom/sec/android/app/camera/CommonEngine;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mNumberOfPictureSavingThread:I
 
@@ -1039,7 +1017,6 @@
 
 .method static synthetic access$2600(Lcom/sec/android/app/camera/CommonEngine;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mNumOfSavedImageInHDR:I
 
@@ -1048,8 +1025,6 @@
 
 .method static synthetic access$2602(Lcom/sec/android/app/camera/CommonEngine;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mNumOfSavedImageInHDR:I
 
@@ -1058,7 +1033,6 @@
 
 .method static synthetic access$2700(Lcom/sec/android/app/camera/CommonEngine;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->getHDRFileName()Ljava/lang/String;
 
@@ -1069,8 +1043,6 @@
 
 .method static synthetic access$2802(Lcom/sec/android/app/camera/CommonEngine;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastCapturedTitle:Ljava/lang/String;
 
@@ -1079,7 +1051,6 @@
 
 .method static synthetic access$2900(Lcom/sec/android/app/camera/CommonEngine;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastCapturedFileName:Ljava/lang/String;
 
@@ -1088,8 +1059,6 @@
 
 .method static synthetic access$2902(Lcom/sec/android/app/camera/CommonEngine;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastCapturedFileName:Ljava/lang/String;
 
@@ -1098,8 +1067,6 @@
 
 .method static synthetic access$3002(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mSavedImageRichtoneCompleted:Z
 
@@ -1108,7 +1075,6 @@
 
 .method static synthetic access$3100(Lcom/sec/android/app/camera/CommonEngine;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mPanoramaLowResolutionBitmap:Landroid/graphics/Bitmap;
 
@@ -1117,8 +1083,6 @@
 
 .method static synthetic access$3102(Lcom/sec/android/app/camera/CommonEngine;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mPanoramaLowResolutionBitmap:Landroid/graphics/Bitmap;
 
@@ -1127,8 +1091,6 @@
 
 .method static synthetic access$3202(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mCaptureInitiated:Z
 
@@ -1137,7 +1099,6 @@
 
 .method static synthetic access$3300(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/app/camera/CommonEngine$RawPictureCallback;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mRawPictureCallback:Lcom/sec/android/app/camera/CommonEngine$RawPictureCallback;
 
@@ -1146,7 +1107,6 @@
 
 .method static synthetic access$3400(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/app/camera/CommonEngine$ShutterCallback;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mShutterCallback:Lcom/sec/android/app/camera/CommonEngine$ShutterCallback;
 
@@ -1155,7 +1115,6 @@
 
 .method static synthetic access$3500(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->openCameraDevice()V
 
@@ -1164,7 +1123,6 @@
 
 .method static synthetic access$3600(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->initializeRecorder()V
 
@@ -1173,7 +1131,6 @@
 
 .method static synthetic access$3700(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/secmediarecorder/SecMediaRecorder;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mMediaRecorder:Lcom/sec/android/secmediarecorder/SecMediaRecorder;
 
@@ -1182,7 +1139,6 @@
 
 .method static synthetic access$3800(Lcom/sec/android/app/camera/CommonEngine;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mMediaRecorderRecording:Z
 
@@ -1191,8 +1147,6 @@
 
 .method static synthetic access$3802(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mMediaRecorderRecording:Z
 
@@ -1201,7 +1155,6 @@
 
 .method static synthetic access$3900(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->setSystemSoundEffect()V
 
@@ -1210,7 +1163,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/CommonEngine;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/CommonEngine;->bFaceRectHidden:Z
 
@@ -1219,7 +1171,6 @@
 
 .method static synthetic access$4000(Lcom/sec/android/app/camera/CommonEngine;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraVideoFilename:Ljava/lang/String;
 
@@ -1228,8 +1179,6 @@
 
 .method static synthetic access$4002(Lcom/sec/android/app/camera/CommonEngine;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraVideoFilename:Ljava/lang/String;
 
@@ -1238,8 +1187,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->bFaceRectHidden:Z
 
@@ -1248,7 +1195,6 @@
 
 .method static synthetic access$4100(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->cleanupTempFile()V
 
@@ -1257,7 +1203,6 @@
 
 .method static synthetic access$4202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/android/app/camera/CommonEngine;->m_bIsRecordingThreadStopping:Z
 
@@ -1266,7 +1211,6 @@
 
 .method static synthetic access$4300(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->makeVideoFileSlow()V
 
@@ -1275,7 +1219,6 @@
 
 .method static synthetic access$4400(Lcom/sec/android/app/camera/CommonEngine;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraVideoFileDescriptor:Landroid/os/ParcelFileDescriptor;
 
@@ -1284,7 +1227,6 @@
 
 .method static synthetic access$4500(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->renameTempFile()V
 
@@ -1293,7 +1235,6 @@
 
 .method static synthetic access$4600(Lcom/sec/android/app/camera/CommonEngine;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCurrentVideoFilename:Ljava/lang/String;
 
@@ -1302,8 +1243,6 @@
 
 .method static synthetic access$4602(Lcom/sec/android/app/camera/CommonEngine;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mCurrentVideoFilename:Ljava/lang/String;
 
@@ -1312,7 +1251,6 @@
 
 .method static synthetic access$4700(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->registerVideo()V
 
@@ -1321,7 +1259,6 @@
 
 .method static synthetic access$4800(Lcom/sec/android/app/camera/CommonEngine;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -1330,7 +1267,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/seccamera/SecCamera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -1339,7 +1275,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/CommonEngine;)Lcom/sec/android/seccamera/SecCamera$Parameters;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mParameters:Lcom/sec/android/seccamera/SecCamera$Parameters;
 
@@ -1348,7 +1283,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/CommonEngine;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/CommonEngine;->bIsHalfShutter:Z
 
@@ -1357,8 +1291,6 @@
 
 .method static synthetic access$902(Lcom/sec/android/app/camera/CommonEngine;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->bIsHalfShutter:Z
 
@@ -3111,7 +3043,6 @@
 
 .method private isAutoExposureLockSupported(Lcom/sec/android/seccamera/SecCamera$Parameters;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/seccamera/SecCamera$Parameters;
 
     const-string v0, "true"
 
@@ -3130,7 +3061,6 @@
 
 .method private isAutoWhiteBalanceLockSupported(Lcom/sec/android/seccamera/SecCamera$Parameters;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/seccamera/SecCamera$Parameters;
 
     const-string v0, "true"
 
@@ -4217,8 +4147,6 @@
 
 .method private setFDOrientation(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -4240,7 +4168,6 @@
 
 .method private setLastOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastOrientation:I
 
@@ -5514,7 +5441,6 @@
 
 .method protected calculateOrientationForPicture(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -5831,7 +5757,6 @@
 
 .method public changeEngineState(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -5952,7 +5877,6 @@
 
 .method public checkFocusMode(I)I
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -6351,17 +6275,6 @@
 
 .method public coordinateSyncforDual(FFFFFFFFIIZ)V
     .locals 9
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # I
-    .param p10    # I
-    .param p11    # Z
 
     iget-object v6, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -6664,12 +6577,6 @@
 
 .method public coordinateSyncforDual(FFFFII)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
 
     const/4 v7, 0x0
 
@@ -6694,13 +6601,6 @@
 
 .method public coordinateSyncforDual(FFFFIIZ)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     iget-object v4, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -6908,7 +6808,6 @@
 
 .method public createCaptureData(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/CommonEngine;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -7850,8 +7749,6 @@
 
 .method public doChangeParameterSync(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/sec/android/app/camera/CommonEngine$CeSettingsParameter;
 
@@ -7864,7 +7761,6 @@
 
 .method public doChangeParameterSync(Ljava/lang/Object;)V
     .locals 13
-    .param p1    # Ljava/lang/Object;
 
     const/16 v12, 0x2f
 
@@ -10129,7 +10025,6 @@
 
 .method public doSetDualCaptureModeSync(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -10171,7 +10066,6 @@
 
 .method public doSetEffectOrientationSync(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CommonEngine;->isRecorderStarting()Z
 
@@ -10218,7 +10112,6 @@
 
 .method public doSetFaceRetouchLevelSync(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -10272,7 +10165,6 @@
 
 .method public doSetMultipleParametersSync(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const-string v1, "CommonEngine"
 
@@ -10298,7 +10190,6 @@
 
 .method public doSetOnShutterSound(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -10392,7 +10283,6 @@
 
 .method public doSetParameterSync(Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const-string v1, "CommonEngine"
 
@@ -10454,7 +10344,6 @@
 
 .method public doSetSingleEffectSync(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     move-object v0, p1
 
@@ -10525,7 +10414,6 @@
 
 .method public final doShutterTimerAsync(I)V
     .locals 5
-    .param p1    # I
 
     const-string v1, "CommonEngine"
 
@@ -15993,7 +15881,6 @@
 
 .method public final doWaitAsync(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/CommonEngine$StateMessageHandler;
 
@@ -16281,9 +16168,6 @@
 
 .method protected findBestFpsRange(Lcom/sec/android/seccamera/SecCamera$Parameters;II)[I
     .locals 10
-    .param p1    # Lcom/sec/android/seccamera/SecCamera$Parameters;
-    .param p2    # I
-    .param p3    # I
 
     const-string v7, "CommonEngine"
 
@@ -16776,8 +16660,6 @@
 
 .method public findThumbnailSize(Ljava/util/List;II)Lcom/sec/android/seccamera/SecCamera$Size;
     .locals 15
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17904,8 +17786,6 @@
 
 .method public getSurpportedVideoSize(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -18136,9 +18016,6 @@
 
 .method public handleDoubleTap(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -19299,7 +19176,6 @@
 
 .method public isCurrentState(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CommonEngine;->getCurrentStateId()I
 
@@ -19559,7 +19435,6 @@
 
 .method public isMediaScannerScanning(Landroid/content/Context;)Z
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v10, 0x1
 
@@ -20553,8 +20428,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x4
 
@@ -21038,9 +20911,6 @@
 
 .method public onError(Lcom/sec/android/secmediarecorder/SecMediaRecorder;II)V
     .locals 3
-    .param p1    # Lcom/sec/android/secmediarecorder/SecMediaRecorder;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -21108,9 +20978,6 @@
 
 .method public onInfo(Lcom/sec/android/secmediarecorder/SecMediaRecorder;II)V
     .locals 6
-    .param p1    # Lcom/sec/android/secmediarecorder/SecMediaRecorder;
-    .param p2    # I
-    .param p3    # I
 
     const v5, 0x7f0b000c
 
@@ -21667,7 +21534,6 @@
 
 .method public renamePostSavingFile(Ljava/lang/String;)Ljava/lang/String;
     .locals 27
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "CommonEngine"
 
@@ -22953,8 +22819,6 @@
 
 .method public final scheduleChangeParameter(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "CommonEngine"
 
@@ -23208,7 +23072,6 @@
 
 .method public scheduleSetDualCaptureMode(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -23251,7 +23114,6 @@
 
 .method public final scheduleSetEffectOrientation(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -23278,7 +23140,6 @@
 
 .method public scheduleSetFaceRetouchLevel(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -23321,7 +23182,6 @@
 
 .method public final scheduleSetMultipleParameters(Lcom/sec/android/seccamera/SecCamera$Parameters;)V
     .locals 2
-    .param p1    # Lcom/sec/android/seccamera/SecCamera$Parameters;
 
     const-string v0, "CommonEngine"
 
@@ -23344,7 +23204,6 @@
 
 .method public scheduleSetOnShutterSound(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x2e
 
@@ -23393,8 +23252,6 @@
 
 .method public final scheduleSetParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "CommonEngine"
 
@@ -23469,7 +23326,6 @@
 
 .method public final scheduleShutterTimer(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -24252,7 +24108,6 @@
 
 .method public final scheduleWait(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -24301,7 +24156,6 @@
 
 .method public final schedulesetSingleEffectSync(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mRequestQueue:Lcom/sec/android/app/camera/CeRequestQueue;
 
@@ -24701,7 +24555,6 @@
 
 .method public setAEAWBLockParameter(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "CommonEngine"
 
@@ -24760,7 +24613,6 @@
 
 .method public setAWBLockParameter(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "CommonEngine"
 
@@ -24806,7 +24658,6 @@
 
 .method public setAutoLowLight(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -24859,7 +24710,6 @@
 
 .method public setAutoShotNight(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -25245,7 +25095,6 @@
 
 .method public setDualEffectSync(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -25468,7 +25317,6 @@
 
 .method public setDualTrackingCoordinate(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "CommonEngine"
 
@@ -25506,7 +25354,6 @@
 
 .method public setDualTrackingMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -25522,7 +25369,6 @@
 
 .method public setEffectLayerOrderSync(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -25538,7 +25384,6 @@
 
 .method public setEffectVisibleForRecording(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "CommonEngine"
 
@@ -25576,7 +25421,6 @@
 
 .method public setExternalFilter(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -25717,7 +25561,6 @@
 
 .method public setFocusParameter(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x5
 
@@ -25844,7 +25687,6 @@
 
 .method public setFrontSensorMirror(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -25884,7 +25726,6 @@
 
 .method public setGolfShotFileString(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mGolfShotFileName:Ljava/lang/String;
 
@@ -25893,7 +25734,6 @@
 
 .method public setGroupID(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mGroupId:I
 
@@ -25902,7 +25742,6 @@
 
 .method public setHDMICableConnected(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -25988,7 +25827,6 @@
 
 .method public setHalfShutter(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->bIsHalfShutter:Z
 
@@ -25997,7 +25835,6 @@
 
 .method public setIsVideoCaptureIntent(Z)Z
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mIsVideoCaptureIntent:Z
 
@@ -26032,7 +25869,6 @@
 
 .method public setLandscapeActive(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mLandscapeActive:Z
 
@@ -26041,7 +25877,6 @@
 
 .method public setLastCapturedFileName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastCapturedFileName:Ljava/lang/String;
 
@@ -26050,7 +25885,6 @@
 
 .method public setLastCapturedTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastCapturedTitle:Ljava/lang/String;
 
@@ -26059,7 +25893,6 @@
 
 .method public setLastContentUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mLastContentUri:Landroid/net/Uri;
 
@@ -26068,7 +25901,6 @@
 
 .method public setLightPipShotCount(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/sec/android/app/camera/CommonEngine;->mLightPipShotCount:I
 
@@ -26077,7 +25909,6 @@
 
 .method public setLiveBeautyMode(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -26141,7 +25972,6 @@
 
 .method public setLowLightShot(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CommonEngine"
 
@@ -26179,7 +26009,6 @@
 
 .method public final setOnFacePositionChangedListener(Lcom/sec/android/app/camera/CommonEngine$OnFacePositionChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine$OnFacePositionChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mOnFacePositionChangedListener:Lcom/sec/android/app/camera/CommonEngine$OnFacePositionChangedListener;
 
@@ -26188,7 +26017,6 @@
 
 .method public final setOnFocusStateChangedListener(Lcom/sec/android/app/camera/CommonEngine$OnFocusStateChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine$OnFocusStateChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mOnFocusStateChangedListener:Lcom/sec/android/app/camera/CommonEngine$OnFocusStateChangedListener;
 
@@ -26197,7 +26025,6 @@
 
 .method public final setOnGuidePositionChangedListener(Lcom/sec/android/app/camera/CommonEngine$OnGuidePositionChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine$OnGuidePositionChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mOnGuidePositionChangedListener:Lcom/sec/android/app/camera/CommonEngine$OnGuidePositionChangedListener;
 
@@ -26206,7 +26033,6 @@
 
 .method public final setOnTimerEventListener(Lcom/sec/android/app/camera/CommonEngine$OnTimerEventListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine$OnTimerEventListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mOnTimerEventListener:Lcom/sec/android/app/camera/CommonEngine$OnTimerEventListener;
 
@@ -26295,7 +26121,6 @@
 
 .method protected setOrientationOnTake(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mOrientationOnTake:I
 
@@ -26304,7 +26129,6 @@
 
 .method public setOutputFile(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
@@ -26326,7 +26150,6 @@
 
 .method public setPanoramaLowResolutionData([B)V
     .locals 4
-    .param p1    # [B
 
     const/4 v3, 0x0
 
@@ -26370,7 +26193,6 @@
 
 .method public setPreviewCallback(Lcom/sec/android/app/camera/CommonEngine$CommonEnginePreviewCallback;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine$CommonEnginePreviewCallback;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine;->mPreviewCallback:Lcom/sec/android/app/camera/CommonEngine$CommonEnginePreviewCallback;
 
@@ -26379,7 +26201,6 @@
 
 .method public setRichtonePictureMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -26431,7 +26252,6 @@
 
 .method public setSingleEffectSync(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -26595,7 +26415,6 @@
 
 .method public setSingleShotBurst(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v5, 0x10
 
@@ -26694,7 +26513,6 @@
 
 .method public setTouchAutoFocusActive(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "CommonEngine"
 
@@ -26725,8 +26543,6 @@
 
 .method public setTouchFocusPosition(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v12, 0x1
 
@@ -26961,8 +26777,6 @@
 
 .method public setUsePreviewCallback(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -27331,10 +27145,6 @@
 
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 5
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -27625,7 +27435,6 @@
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder;
 
     const-string v0, "CommonEngine"
 
@@ -27646,7 +27455,6 @@
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder;
 
     const-string v0, "CommonEngine"
 

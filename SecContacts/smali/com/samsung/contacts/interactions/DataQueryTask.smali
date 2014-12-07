@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/common/list/ContactEntryListFragment;I)V
     .locals 4
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -142,9 +141,6 @@
 
 .method public constructor <init>(Lcom/android/contacts/common/list/ContactEntryListFragment;IZI)V
     .locals 3
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -349,7 +345,6 @@
 
 .method private getUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
@@ -370,7 +365,6 @@
 # virtual methods
 .method protected varargs doInBackground(Lcom/android/contacts/common/list/ContactEntryListFragment;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -475,8 +469,6 @@
 
 .method protected bridge synthetic doInBackground(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/common/list/ContactEntryListFragment;
 
@@ -539,8 +531,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/common/list/ContactEntryListFragment;
 
@@ -580,7 +570,6 @@
 
 .method protected bridge synthetic onPreExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/common/list/ContactEntryListFragment;
 

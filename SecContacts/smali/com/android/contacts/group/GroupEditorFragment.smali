@@ -306,7 +306,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/group/GroupEditorFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/group/GroupEditorFragment;->startSelectAccount()V
 
@@ -315,7 +314,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/group/GroupEditorFragment;)Lcom/android/contacts/group/GroupEditorFragment$Listener;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mListener:Lcom/android/contacts/group/GroupEditorFragment$Listener;
 
@@ -324,8 +322,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/group/GroupEditorFragment;Landroid/database/Cursor;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/group/GroupEditorFragment;->bindGroupMetaData(Landroid/database/Cursor;)V
 
@@ -334,7 +330,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/group/GroupEditorFragment;)Landroid/app/LoaderManager$LoaderCallbacks;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mGroupMemberListLoaderListener:Landroid/app/LoaderManager$LoaderCallbacks;
 
@@ -343,7 +338,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/group/GroupEditorFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mOriginalMemberIds:Ljava/util/ArrayList;
 
@@ -352,7 +346,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/group/GroupEditorFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mModifiedMemberIds:Ljava/util/ArrayList;
 
@@ -361,7 +354,6 @@
 
 .method static synthetic access$1400(Lcom/android/contacts/group/GroupEditorFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/group/GroupEditorFragment;->updateMemberCount()V
 
@@ -370,7 +362,6 @@
 
 .method static synthetic access$1500(Ljava/util/List;)[J
     .locals 1
-    .param p0    # Ljava/util/List;
 
     invoke-static {p0}, Lcom/android/contacts/group/GroupEditorFragment;->convertToArray(Ljava/util/List;)[J
 
@@ -381,7 +372,6 @@
 
 .method static synthetic access$1600(Lcom/android/contacts/group/GroupEditorFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mIsSystemGroup:Z
 
@@ -390,7 +380,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/group/GroupEditorFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/group/GroupEditorFragment;->getUpdatedName()Ljava/lang/String;
 
@@ -401,7 +390,6 @@
 
 .method static synthetic access$1800(Lcom/android/contacts/group/GroupEditorFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mSelectedGroups:Ljava/util/ArrayList;
 
@@ -410,7 +398,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/group/GroupEditorFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/group/GroupEditorFragment;->hasValidGroupName()Z
 
@@ -421,7 +408,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/group/GroupEditorFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mContext:Landroid/content/Context;
 
@@ -430,7 +416,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/group/GroupEditorFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mCustomRingtone:Ljava/lang/String;
 
@@ -439,7 +424,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/group/GroupEditorFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mCustomMessageAlert:Ljava/lang/String;
 
@@ -448,7 +432,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/group/GroupEditorFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mCustomVibration:Ljava/lang/String;
 
@@ -457,7 +440,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/group/GroupEditorFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/group/GroupEditorFragment;->startEditMember()V
 
@@ -466,7 +448,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/group/GroupEditorFragment;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mMode:I
 
@@ -475,7 +456,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/group/GroupEditorFragment;)Lcom/samsung/contacts/group/GroupInfo;
     .locals 1
-    .param p0    # Lcom/android/contacts/group/GroupEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment;->mOriginalGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -484,7 +464,6 @@
 
 .method private bindGroupMetaData(Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v5, 0x2
 
@@ -642,7 +621,6 @@
 
 .method private fillSelectedGroupsAndAccounts(Landroid/database/Cursor;)V
     .locals 10
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, -0x1
 
@@ -1444,7 +1422,6 @@
 
 .method private onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "action"
 
@@ -1619,7 +1596,6 @@
 
 .method private setupEditorForAccount(Z)V
     .locals 14
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -2562,9 +2538,6 @@
 
 .method public load(Ljava/lang/String;Lcom/samsung/contacts/group/GroupInfo;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/contacts/group/GroupInfo;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/contacts/group/GroupEditorFragment;->mAction:Ljava/lang/String;
 
@@ -2577,7 +2550,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -2859,7 +2831,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -2870,9 +2841,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -3129,7 +3097,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "action"
 
@@ -3460,7 +3427,6 @@
 
 .method public setListener(Lcom/android/contacts/group/GroupEditorFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/group/GroupEditorFragment$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/group/GroupEditorFragment;->mListener:Lcom/android/contacts/group/GroupEditorFragment$Listener;
 
@@ -3469,8 +3435,6 @@
 
 .method public setToneAndVibrationTitle(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3593,8 +3557,6 @@
 
 .method public startActivityForResultImpl(Landroid/content/Intent;I)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -3603,8 +3565,6 @@
 
 .method public updateDataImpl(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "custom_ringtone"
 

@@ -88,7 +88,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardActivityLauncher;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardActivityLauncher;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardActivityLauncher;->dismissKeyguardOnNextActivity()V
 
@@ -97,11 +96,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardActivityLauncher;Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardActivityLauncher;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/keyguard/KeyguardActivityLauncher;->startActivityForCurrentUser(Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/Handler;Ljava/lang/Runnable;)V
 
@@ -177,10 +171,6 @@
 
 .method private startActivityForCurrentUser(Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Ljava/lang/Runnable;
 
     new-instance v4, Landroid/os/UserHandle;
 
@@ -222,7 +212,6 @@
 
 .method private wouldLaunchResolverActivity(Landroid/content/Intent;)Z
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const/high16 v4, 0x10000
 
@@ -267,7 +256,6 @@
 
 .method private wouldLaunchResolverActivity(Landroid/content/pm/ResolveInfo;Ljava/util/List;)Z
     .locals 4
-    .param p1    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -548,7 +536,6 @@
 
 .method public isPreferedActivity(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -587,11 +574,6 @@
 
 .method public launchActivity(Landroid/content/Intent;ZZLandroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Ljava/lang/Runnable;
 
     const/4 v0, 0x0
 
@@ -632,11 +614,6 @@
 
 .method public launchActivityWithAnimation(Landroid/content/Intent;ZLandroid/os/Bundle;Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardActivityLauncher;->getLockPatternUtils()Lcom/android/internal/widget/LockPatternUtils;
 
@@ -770,8 +747,6 @@
 
 .method public launchCamera(Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 10
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v4, 0x0
 
@@ -855,7 +830,6 @@
 
 .method public launchWidgetPicker(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 

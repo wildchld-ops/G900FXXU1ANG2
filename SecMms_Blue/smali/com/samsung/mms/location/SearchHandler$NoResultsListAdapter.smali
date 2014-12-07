@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/mms/location/SearchHandler;Ljava/lang/String;)V
     .locals 3
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/location/SearchHandler$NoResultsListAdapter;->this$0:Lcom/samsung/mms/location/SearchHandler;
 
@@ -58,9 +57,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/16 v9, 0x8
 

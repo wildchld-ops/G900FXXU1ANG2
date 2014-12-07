@@ -67,9 +67,6 @@
 
 .method public constructor <init>(Landroid/content/ContentResolver;Lcom/android/dialer/calllog/CallLogQueryHandler$Listener;Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Lcom/android/dialer/calllog/CallLogQueryHandler$Listener;
-    .param p3    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/content/AsyncQueryHandler;-><init>(Landroid/content/ContentResolver;)V
 
@@ -113,9 +110,6 @@
 
 .method private fetchLogs(IIJ)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v2, 0x0
 
@@ -146,7 +140,6 @@
 
 .method private updateAdapterData(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v1, p0, Lcom/android/dialer/calllog/CallLogQueryHandler;->mListener:Ljava/lang/ref/WeakReference;
 
@@ -166,7 +159,6 @@
 
 .method private updateVoicemailStatus(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v1, p0, Lcom/android/dialer/calllog/CallLogQueryHandler;->mListener:Ljava/lang/ref/WeakReference;
 
@@ -188,7 +180,6 @@
 # virtual methods
 .method protected createHandler(Landroid/os/Looper;)Landroid/os/Handler;
     .locals 1
-    .param p1    # Landroid/os/Looper;
 
     new-instance v0, Lcom/android/dialer/calllog/CallLogQueryHandler$CatchingWorkerHandler;
 
@@ -199,7 +190,6 @@
 
 .method public fetchAllLogs(I)V
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, -0x1
 
@@ -210,8 +200,6 @@
 
 .method public fetchAllLogs(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     const-string v0, "CallLogQueryHandler"
 
@@ -256,7 +244,6 @@
 
 .method public fetchViewBy(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/dialer/calllog/CallLogQueryHandler;->fetchAllLogs(I)V
 
@@ -457,9 +444,6 @@
 
 .method protected declared-synchronized onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     monitor-enter p0
 
@@ -641,8 +625,6 @@
 
 .method public viewByQueryTextBuilder(IJ)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/android/dialer/calllog/CallLogQueryHandler;->mViewByImpl:Lcom/samsung/dialer/impl/ViewByImpl;
 

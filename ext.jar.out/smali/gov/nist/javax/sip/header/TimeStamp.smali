@@ -357,7 +357,6 @@
 
 .method public setDelay(F)V
     .locals 2
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -396,7 +395,6 @@
 
 .method public setTime(J)V
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -429,7 +427,6 @@
 
 .method public setTimeDelay(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;
@@ -476,7 +473,6 @@
 
 .method public setTimeStamp(F)V
     .locals 2
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;

@@ -1373,7 +1373,7 @@ Wi-Fi and Mobile Hotspot cannot run at the same time."</string>
     <string name="usb_tethering_errored_subtext">USB پالہنگ کی غلطی</string>
     <string name="usb_tethering_on_during_sidesync_popup">SideSync کا استعمال کرتے ہوئے USB باندھنا نااہل نہیں کیا جا سکتا۔ USB باندھنا نااہل کرنا SideSync کو نااہل کر دے گا۔</string>
     <string name="usb_tethering_off_during_sidesync_popup">سائڈ سنک کا استعمال کرتے ہوئے USB باندھنا نااہل نہیں کیا جا سکتا۔ USB باندھنا نااہل کرنا، نااہل کر دیا جائے گا۔</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>بلیوٹوتھ پالہنگ</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>بلیوٹوتھ پالہنگ</b></p></string>
     <string name="bluetooth_tethering_available_subtext">اس آلہ کے انٹرنیٹ کنکشن کو شیئر کیا جارہا ہے…</string>
     <string name="bluetooth_tethering_device_connected_subtext">آلہ کے انٹرنیٹ کنکشن کی 1 آلہ کے ساتھ شراکت ہوگئی</string>
     <string name="bluetooth_tethering_devices_connected_subtext">آلہ کے انٹرنیٹ کنکشن کی ‎%d آلات کے ساتھ شراکت ہوگئی</string>

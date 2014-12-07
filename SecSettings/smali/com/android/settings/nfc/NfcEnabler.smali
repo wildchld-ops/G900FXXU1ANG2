@@ -52,11 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreferenceScreen;Landroid/preference/SwitchPreferenceScreen;Landroid/preference/PreferenceScreen;Landroid/preference/PreferenceScreen;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreferenceScreen;
-    .param p3    # Landroid/preference/SwitchPreferenceScreen;
-    .param p4    # Landroid/preference/PreferenceScreen;
-    .param p5    # Landroid/preference/PreferenceScreen;
 
     const/4 v2, 0x0
 
@@ -154,15 +149,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;Landroid/preference/SwitchPreferenceScreen;Landroid/preference/SwitchPreferenceScreen;Landroid/preference/PreferenceScreen;Landroid/preference/PreferenceScreen;Lcom/android/settings/nfc/NfcEnabler$INfcHelpController;Landroid/preference/PreferenceScreen;Landroid/preference/SwitchPreferenceScreen;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
-    .param p3    # Landroid/preference/SwitchPreferenceScreen;
-    .param p4    # Landroid/preference/SwitchPreferenceScreen;
-    .param p5    # Landroid/preference/PreferenceScreen;
-    .param p6    # Landroid/preference/PreferenceScreen;
-    .param p7    # Lcom/android/settings/nfc/NfcEnabler$INfcHelpController;
-    .param p8    # Landroid/preference/PreferenceScreen;
-    .param p9    # Landroid/preference/SwitchPreferenceScreen;
 
     const/4 v2, 0x0
 
@@ -262,7 +248,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/nfc/NfcEnabler;)Landroid/nfc/NfcAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
@@ -271,7 +256,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/nfc/NfcEnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
 
     iget-boolean v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mFromCheckedChanged:Z
 
@@ -280,8 +264,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/nfc/NfcEnabler;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/nfc/NfcEnabler;->mFromCheckedChanged:Z
 
@@ -290,8 +272,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/nfc/NfcEnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/nfc/NfcEnabler;->handleNfcStateChanged(I)V
 
@@ -300,8 +280,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/nfc/NfcEnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/nfc/NfcEnabler;->handleNfcReaderStateChanged(I)V
 
@@ -310,10 +288,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/nfc/NfcEnabler;ZZZ)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/nfc/NfcEnabler;->setReaderSwitch(ZZZ)V
 
@@ -322,10 +296,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/nfc/NfcEnabler;ZZZ)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/nfc/NfcEnabler;->setAndroidBeamSwitch(ZZZ)V
 
@@ -334,7 +304,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/nfc/NfcEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mContext:Landroid/content/Context;
 
@@ -343,7 +312,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/nfc/NfcEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/NfcEnabler;
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mNfcSwitch:Landroid/widget/Switch;
 
@@ -352,7 +320,6 @@
 
 .method private handleNfcReaderStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -396,7 +363,6 @@
 
 .method private handleNfcStateChanged(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -624,7 +590,6 @@
 
 .method private procHelpCtrl(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "NfcEnabler"
 
@@ -671,9 +636,6 @@
 
 .method private setAndroidBeamSwitch(ZZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const v0, 0x7f0902fe
 
@@ -845,8 +807,6 @@
 
 .method private setNfcDefaultTransactionPref(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mNfcDefaultTransaction:Landroid/preference/PreferenceScreen;
 
@@ -929,8 +889,6 @@
 
 .method private setNfcSwitch(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mNfcSwitch:Landroid/widget/Switch;
 
@@ -1047,8 +1005,6 @@
 
 .method private setNfcSwitchPref(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mNfcSwitchPref:Landroid/preference/SwitchPreferenceScreen;
 
@@ -1141,9 +1097,6 @@
 
 .method private setReaderSwitch(ZZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mReaderSwitch:Landroid/preference/SwitchPreferenceScreen;
 
@@ -1257,7 +1210,6 @@
 
 .method private setTapPayPreference(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler;->mTapPay:Landroid/preference/PreferenceScreen;
 
@@ -1322,8 +1274,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 6
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -1467,8 +1417,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 9
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const v8, 0x104000a
 
@@ -2069,7 +2017,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/widget/Switch;
 
     sget-boolean v0, Lcom/android/settings/Utils;->DBG:Z
 

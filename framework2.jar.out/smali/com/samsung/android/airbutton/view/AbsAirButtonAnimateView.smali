@@ -56,9 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;Lcom/samsung/android/airbutton/Attributes;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;
-    .param p3    # Lcom/samsung/android/airbutton/Attributes;
 
     const/4 v1, 0x0
 
@@ -123,7 +120,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;
 
     invoke-direct {p0}, Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;->playYPositionAdjustAnimationIfNeeded()V
 
@@ -132,7 +128,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;
 
     invoke-direct {p0}, Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;->shouldSendItemSelectedNotiFirst()Z
 
@@ -299,8 +294,6 @@
 
 .method protected getChildDrawingOrder(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -403,9 +396,6 @@
 
 .method protected getScaleAnimation(IFF)Landroid/animation/AnimatorSet;
     .locals 9
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     const/4 v8, 0x2
 
@@ -486,7 +476,6 @@
 
 .method protected onHoverEnter(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mFocusedViewIdx:I
 
@@ -523,7 +512,6 @@
 
 .method protected onHoverExit(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;->showHoverExitAnimation(I)V
 
@@ -673,8 +661,6 @@
 
 .method public reAdjustViewYPosition(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -700,8 +686,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -710,14 +694,12 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected showHoverEnterAnimation(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;->mHoverExitAnimator:[Landroid/animation/AnimatorSet;
 
@@ -765,7 +747,6 @@
 
 .method protected showHoverExitAnimation(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;->mHoverEnterAnimator:[Landroid/animation/AnimatorSet;
 

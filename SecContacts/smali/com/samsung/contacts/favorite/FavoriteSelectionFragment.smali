@@ -126,7 +126,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -135,8 +134,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -145,7 +142,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -154,8 +150,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;Ljava/lang/ref/WeakReference;)Ljava/lang/ref/WeakReference;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;
-    .param p1    # Ljava/lang/ref/WeakReference;
 
     iput-object p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->sProgressDialog:Ljava/lang/ref/WeakReference;
 
@@ -164,7 +158,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->announceItStopped()V
 
@@ -173,8 +166,6 @@
 
 .method private addContactFromSelectAll(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -197,8 +188,6 @@
 
 .method private addSelectedContact(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0}, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->checkIfRunning()Z
 
@@ -276,7 +265,6 @@
 
 .method private getUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
@@ -289,7 +277,6 @@
 
 .method private isSelectedContact(J)Z
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mSelectedInfoHashSet:Ljava/util/HashMap;
 
@@ -330,7 +317,6 @@
 
 .method private removeContact(J)V
     .locals 2
-    .param p1    # J
 
     invoke-direct {p0}, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->checkIfRunning()Z
 
@@ -354,7 +340,6 @@
 
 .method private removeContactFromSelectAll(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mSelectedInfoHashSet:Ljava/util/HashMap;
 
@@ -369,8 +354,6 @@
 
 .method private setDoneButton(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -402,7 +385,6 @@
 
 .method private showSearchProgress(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mSearchProgress:Landroid/view/View;
 
@@ -423,7 +405,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -486,7 +467,6 @@
 
 .method private updateSelectAll(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -961,8 +941,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v0, 0x7f03009f
 
@@ -1064,7 +1042,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1082,7 +1059,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1129,7 +1105,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1149,8 +1124,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v6, 0x7f030112
 
@@ -1292,9 +1265,6 @@
 
 .method protected onHeaderViewClick(Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onHeaderViewClick(Landroid/view/View;IJ)V
 
@@ -1332,8 +1302,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     iget-object v2, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mAdapter:Lcom/android/contacts/common/list/ContactEntryListAdapter;
 
@@ -1362,7 +1330,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 2
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1439,8 +1406,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -1451,7 +1416,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1565,7 +1529,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ContactEntryListFragment;->restoreSavedState(Landroid/os/Bundle;)V
 
@@ -1639,7 +1602,6 @@
 
 .method public setActionCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mActionCode:I
 
@@ -1648,7 +1610,6 @@
 
 .method public setFilter(Lcom/android/contacts/common/list/ContactListFilter;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
 
     iput-object p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mFilter:Lcom/android/contacts/common/list/ContactListFilter;
 
@@ -1657,7 +1618,6 @@
 
 .method public setonFavoritesUpdateListener(Lcom/samsung/contacts/favorite/FavoriteSelectionFragment$onFavoritesUpdateListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/favorite/FavoriteSelectionFragment$onFavoritesUpdateListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/favorite/FavoriteSelectionFragment;->mListener:Lcom/samsung/contacts/favorite/FavoriteSelectionFragment$onFavoritesUpdateListener;
 
@@ -1666,8 +1626,6 @@
 
 .method protected showCount(ILandroid/database/Cursor;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v3, 0x0
 

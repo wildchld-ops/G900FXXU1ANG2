@@ -36,10 +36,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Lcom/samsung/contacts/speeddial/SpeedDialDialogFragment$Listener;IZ)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/samsung/contacts/speeddial/SpeedDialDialogFragment$Listener;
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v0, Lcom/samsung/contacts/speeddial/SpeedDialDialogFragment;
 
@@ -60,7 +56,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

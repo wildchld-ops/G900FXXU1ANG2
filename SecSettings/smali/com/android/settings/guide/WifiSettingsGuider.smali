@@ -100,7 +100,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     const/4 v3, 0x1
 
@@ -227,7 +226,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/guide/WifiSettingsGuider;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/guide/WifiSettingsGuider;
 
     iget-object v0, p0, Lcom/android/settings/guide/WifiSettingsGuider;->mActivity:Landroid/app/Activity;
 
@@ -236,8 +234,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/guide/WifiSettingsGuider;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/guide/WifiSettingsGuider;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/guide/WifiSettingsGuider;->mConnectSuccess:Z
 
@@ -246,8 +242,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/guide/WifiSettingsGuider;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/guide/WifiSettingsGuider;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/guide/WifiSettingsGuider;->mClosed:Z
 
@@ -264,7 +258,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/guide/WifiSettingsGuider;)Lcom/android/settings/guide/WifiSettingsGuider$OnCloseHelpDialogListener;
     .locals 1
-    .param p0    # Lcom/android/settings/guide/WifiSettingsGuider;
 
     iget-object v0, p0, Lcom/android/settings/guide/WifiSettingsGuider;->onCloseHelpDialogListener:Lcom/android/settings/guide/WifiSettingsGuider$OnCloseHelpDialogListener;
 
@@ -273,8 +266,6 @@
 
 .method private initHelpDialogContent(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -395,7 +386,6 @@
 
 .method private invalidateHelpDialog(Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;)V
     .locals 6
-    .param p1    # Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;
 
     const/4 v0, -0x1
 
@@ -520,7 +510,6 @@
 
 .method private setFocus(Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;)V
     .locals 4
-    .param p1    # Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;
 
     sget-object v2, Lcom/android/settings/guide/WifiSettingsGuider$8;->$SwitchMap$com$android$settings$guide$WifiSettingsGuider$GuideStates:[I
 
@@ -567,7 +556,6 @@
 
 .method private setGuidedActionBarClickable(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/settings/guide/WifiSettingsGuider;->mActivity:Landroid/app/Activity;
 
@@ -612,7 +600,6 @@
 
 .method private setScanOptionEnable(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/guide/WifiSettingsGuider;->mEnableScanMenuItem:Z
 
@@ -628,11 +615,6 @@
 
 .method private showHelpDialog(IILcom/android/settings/helpdialog/TwHelpDialog$TouchMode;Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/settings/helpdialog/TwHelpDialog$TouchMode;
-    .param p4    # Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;
-    .param p5    # Z
 
     new-instance v0, Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -823,7 +805,6 @@
 
 .method public dismissHelpDialog(Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;)V
     .locals 3
-    .param p1    # Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;
 
     const/4 v2, 0x0
 
@@ -884,7 +865,6 @@
 
 .method protected handleEvent(Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
 
     const/4 v8, 0x2
 
@@ -1300,15 +1280,12 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v0, -0x2
 
@@ -1322,7 +1299,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     sget-object v0, Lcom/android/settings/guide/WifiSettingsGuider;->mShowedDialog:Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;
 
@@ -1340,7 +1316,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -1503,15 +1478,12 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     return-void
 .end method
 
 .method public onKey(ILandroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v7, 0x6f
 
@@ -1758,9 +1730,6 @@
 
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1769,7 +1738,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)V
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1875,7 +1843,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x6
 
@@ -2114,15 +2081,12 @@
 
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     return-void
 .end method
 
 .method public bridge synthetic onSwitcherChanged(Landroid/widget/CompoundButton;Z)Z
     .locals 1
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/guide/GuiderBase;->onSwitcherChanged(Landroid/widget/CompoundButton;Z)Z
 
@@ -2133,7 +2097,6 @@
 
 .method public setEnabler(Lcom/android/settings/guide/GuideFragment$WrappedEnabler;)V
     .locals 1
-    .param p1    # Lcom/android/settings/guide/GuideFragment$WrappedEnabler;
 
     iput-object p1, p0, Lcom/android/settings/guide/GuiderBase;->mEnabler:Lcom/android/settings/guide/GuideFragment$WrappedEnabler;
 
@@ -2245,7 +2208,6 @@
 
 .method public showHelpDialog(Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;)V
     .locals 6
-    .param p1    # Lcom/android/settings/guide/WifiSettingsGuider$GuideStates;
 
     const v2, 0x7f0400ee
 
@@ -2504,7 +2466,6 @@
 
 .method public bridge synthetic showHelpDialog(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/settings/guide/GuiderBase;->showHelpDialog(Z)V
 

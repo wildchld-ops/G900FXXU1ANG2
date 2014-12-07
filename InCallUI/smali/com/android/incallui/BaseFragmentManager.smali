@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +88,6 @@
 
 .method protected log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "BaseFragmentManager"
 
@@ -100,8 +98,6 @@
 
 .method protected log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "BaseFragmentManager"
 
@@ -142,9 +138,6 @@
 
 .method protected declared-synchronized setFragmentInternal(ILandroid/app/Fragment;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/app/Fragment;
-    .param p3    # Z
 
     monitor-enter p0
 

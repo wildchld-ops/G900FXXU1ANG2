@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/CheckLongPressHelper;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/CheckLongPressHelper;
 
     iget-object v0, p0, Lcom/android/keyguard/CheckLongPressHelper;->mView:Landroid/view/View;
 
@@ -70,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/CheckLongPressHelper;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/CheckLongPressHelper;
 
     iget-boolean v0, p0, Lcom/android/keyguard/CheckLongPressHelper;->mHasPerformedLongPress:Z
 
@@ -79,8 +76,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/CheckLongPressHelper;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/CheckLongPressHelper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/CheckLongPressHelper;->mHasPerformedLongPress:Z
 
@@ -116,7 +111,6 @@
 
 .method public onMove(Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -191,7 +185,6 @@
 
 .method public postCheckForLongPress(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 

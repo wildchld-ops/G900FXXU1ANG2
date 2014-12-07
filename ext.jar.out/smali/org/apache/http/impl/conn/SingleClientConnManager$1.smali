@@ -50,8 +50,6 @@
 
 .method public getConnection(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/conn/ManagedClientConnection;
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
 
     iget-object v0, p0, Lorg/apache/http/impl/conn/SingleClientConnManager$1;->this$0:Lorg/apache/http/impl/conn/SingleClientConnManager;
 

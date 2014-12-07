@@ -92,7 +92,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/LockScreenWallpaper;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/launcher2/LockScreenWallpaper;->rList:Ljava/util/List;
 
@@ -101,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/LockScreenWallpaper;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LockScreenWallpaper;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LockScreenWallpaper;->isTypeBoth:Z
 
@@ -110,7 +108,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/LockScreenWallpaper;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/launcher2/LockScreenWallpaper;->mInflater:Landroid/view/LayoutInflater;
 
@@ -119,7 +116,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/LockScreenWallpaper;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/LockScreenWallpaper;
 
     iget v0, p0, Lcom/android/launcher2/LockScreenWallpaper;->mIconSize:I
 
@@ -128,7 +124,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/LockScreenWallpaper;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/launcher2/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
 
@@ -137,7 +132,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/LockScreenWallpaper;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/launcher2/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
 
@@ -148,7 +142,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/high16 v11, 0x10000
 
@@ -383,9 +376,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 7
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

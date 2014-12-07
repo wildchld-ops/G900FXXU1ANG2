@@ -24,8 +24,6 @@
 
 .method public static newInstance(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Lcom/google/android/finsky/activities/PeopleDetailsFragment;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/PeopleDetailsFragment;
 
@@ -156,7 +154,6 @@
 
 .method protected rebindViews(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/PeopleDetailsFragment;->rebindActionBar()V
 
@@ -184,7 +181,6 @@
 
 .method protected recordState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/PeopleDetailsFragment;->mStreamViewBinder:Lcom/google/android/finsky/activities/PeopleDetailsStreamViewBinder;
 

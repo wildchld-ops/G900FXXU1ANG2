@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/contacts/detail/SnsPhotoManager;Ljava/util/ArrayList;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/contacts/detail/SnsPhotoManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -170,7 +168,6 @@
 # virtual methods
 .method public deliverResult(Lcom/samsung/contacts/model/SnsFeeds;)V
     .locals 1
-    .param p1    # Lcom/samsung/contacts/model/SnsFeeds;
 
     invoke-virtual {p0}, Landroid/content/Loader;->isReset()Z
 
@@ -196,7 +193,6 @@
 
 .method public bridge synthetic deliverResult(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/model/SnsFeeds;
 

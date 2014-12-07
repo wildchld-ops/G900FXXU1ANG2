@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/io/SessionInputBuffer;)V
     .locals 2
-    .param p1    # Lorg/apache/http/io/SessionInputBuffer;
 
     const/4 v1, 0x0
 
@@ -70,7 +69,6 @@
 
 .method static exhaustInputStream(Ljava/io/InputStream;)V
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -435,7 +433,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -455,9 +452,6 @@
 
 .method public read([BII)I
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

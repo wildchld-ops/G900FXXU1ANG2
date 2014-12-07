@@ -50,10 +50,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/TwoChunkInputStream;IJJLorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;)V
     .locals 3
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Lorg/apache/http/impl/client/TwoChunkInputStream$SimpleDataBuffer;
 
     const/4 v2, 0x0
 
@@ -219,7 +215,6 @@
 
 .method public createTwoChunkInSec(Z)V
     .locals 26
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -3538,7 +3533,6 @@
 
 .method public setInput(Ljava/io/InputStream;)V
     .locals 0
-    .param p1    # Ljava/io/InputStream;
 
     iput-object p1, p0, Lorg/apache/http/impl/client/TwoChunkInputStream$SecondChunkThread;->input:Ljava/io/InputStream;
 
@@ -3547,7 +3541,6 @@
 
 .method public startTryBoth(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3558,7 +3551,6 @@
 
 .method public switchSocket(I)V
     .locals 3
-    .param p1    # I
 
     sget-boolean v0, Lorg/apache/http/impl/client/CustomHttpClient;->APACHE_HTTP_DBG:Z
 

@@ -103,9 +103,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/CellLayout;Lcom/android/launcher2/CellPositionerWorkspace$DeltaProvider;Lcom/android/launcher2/CellPositionerWorkspace$GridDimensionProvider;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p2    # Lcom/android/launcher2/CellPositionerWorkspace$DeltaProvider;
-    .param p3    # Lcom/android/launcher2/CellPositionerWorkspace$GridDimensionProvider;
 
     const/4 v5, 0x4
 
@@ -385,8 +382,6 @@
 
 .method private findDeltas(Lcom/android/launcher2/PositionDelta;Ljava/util/List;Ljava/util/List;Z)Z
     .locals 4
-    .param p1    # Lcom/android/launcher2/PositionDelta;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -586,12 +581,6 @@
 
 .method private findNearestArea(IIIIZ[I)Z
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # [I
 
     if-eqz p5, :cond_0
 
@@ -848,8 +837,6 @@
 
 .method private isDeltaValid(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 
@@ -868,8 +855,6 @@
 
 .method private markCellsForDelta(Lcom/android/launcher2/PositionDelta;Z)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/PositionDelta;
-    .param p2    # Z
 
     iget-object v8, p0, Lcom/android/launcher2/CellPositionerWorkspace;->mLayout:Lcom/android/launcher2/CellLayout;
 
@@ -944,7 +929,6 @@
 
 .method private quickCheckEnoughSpace(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1089,8 +1073,6 @@
 
 .method private shiftDeltas(Lcom/android/launcher2/PositionDelta;Z)Z
     .locals 21
-    .param p1    # Lcom/android/launcher2/PositionDelta;
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -1605,7 +1587,6 @@
 
 .method private toRect([ILjava/util/ArrayList;)V
     .locals 8
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I",
@@ -1735,7 +1716,6 @@
 
 .method private tryRearrange(Z)Z
     .locals 14
-    .param p1    # Z
 
     const/4 v13, 0x2
 
@@ -1991,7 +1971,6 @@
 # virtual methods
 .method public addDelta(Lcom/android/launcher2/PositionDelta;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     iget-object v0, p0, Lcom/android/launcher2/CellPositionerWorkspace;->mDeltas:Ljava/util/ArrayList;
 
@@ -2006,10 +1985,6 @@
 
 .method public deltaAt(IIII)Lcom/android/launcher2/PositionDelta;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v6, p0, Lcom/android/launcher2/CellPositionerWorkspace;->mDeltas:Ljava/util/ArrayList;
 
@@ -2084,11 +2059,6 @@
 
 .method public findNearestVacantArea(IIII[I)[I
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     const/4 v8, 0x1
 
@@ -2165,7 +2135,6 @@
 
 .method public removeDelta(Lcom/android/launcher2/PositionDelta;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     iget-object v0, p0, Lcom/android/launcher2/CellPositionerWorkspace;->mDeltas:Ljava/util/ArrayList;
 
@@ -2180,7 +2149,6 @@
 
 .method public reset(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2206,12 +2174,6 @@
 
 .method public updateDeltasForDrag(Lcom/android/launcher2/PositionDelta;IIZZZ)Z
     .locals 13
-    .param p1    # Lcom/android/launcher2/PositionDelta;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/CellPositionerWorkspace;->mDragDelta:Lcom/android/launcher2/PositionDelta;
 

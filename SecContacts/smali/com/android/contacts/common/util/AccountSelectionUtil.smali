@@ -44,9 +44,6 @@
 
 .method public static doImport(Landroid/content/Context;ILcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -369,10 +366,6 @@
 
 .method public static getSelectAccountDialog(Landroid/content/Context;ILandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/Dialog;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     const/4 v8, 0x1
 

@@ -40,8 +40,6 @@
 # virtual methods
 .method public onTabReselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar$5;->val$tabListener:Lcom/google/android/finsky/layout/CustomActionBar$TabListener;
 
@@ -56,8 +54,6 @@
 
 .method public onTabSelected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar$5;->val$tabListener:Lcom/google/android/finsky/layout/CustomActionBar$TabListener;
 
@@ -72,8 +68,6 @@
 
 .method public onTabUnselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar$5;->val$tabListener:Lcom/google/android/finsky/layout/CustomActionBar$TabListener;
 

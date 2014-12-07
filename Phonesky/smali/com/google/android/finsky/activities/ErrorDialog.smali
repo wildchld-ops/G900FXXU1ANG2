@@ -26,9 +26,6 @@
 
 .method private static newInstance(Ljava/lang/String;Ljava/lang/String;Z)Lcom/google/android/finsky/activities/ErrorDialog;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -70,10 +67,6 @@
 
 .method public static show(Landroid/support/v4/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Z)Lcom/google/android/finsky/activities/ErrorDialog;
     .locals 6
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0}, Landroid/support/v4/app/FragmentManager;->executePendingTransactions()Z
 
@@ -156,7 +149,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -245,7 +237,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-boolean v1, p0, Lcom/google/android/finsky/activities/ErrorDialog;->mIsRemoved:Z
 

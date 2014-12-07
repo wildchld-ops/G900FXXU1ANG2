@@ -83,7 +83,6 @@
 
 .method public duosAnswerCall(Lcom/android/services/telephony/common/Call;)V
     .locals 17
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const-string v14, "DuosAnswerCall..."
 
@@ -423,7 +422,6 @@
 
 .method public duosPhoneSwitch(I)V
     .locals 21
-    .param p1    # I
 
     new-instance v18, Ljava/lang/StringBuilder;
 
@@ -843,7 +841,6 @@
 
 .method public getCallerName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/incallui/InCallDUOSUIControl;->mContext:Landroid/content/Context;
 
@@ -883,7 +880,6 @@
 
 .method public getOtherSimId(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -900,7 +896,6 @@
 
 .method public getSIMName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -1239,7 +1234,6 @@
 
 .method public initialize(Lcom/android/incallui/InCallActivity;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     iput-object p1, p0, Lcom/android/incallui/InCallDUOSUIControl;->mInCallActivity:Lcom/android/incallui/InCallActivity;
 
@@ -1252,7 +1246,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "InCallDUOSUIControl"
 
@@ -1263,14 +1256,12 @@
 
 .method public ringtoneWaitingtoneCotrol(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setAudioPath(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1321,8 +1312,6 @@
 
 .method public showDuosAnswerCallDialog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1363,9 +1352,6 @@
 
 .method public showDuosAnswerCallDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1414,7 +1400,6 @@
 
 .method public showDuosControlDialog(Landroid/app/AlertDialog$Builder;)V
     .locals 2
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/incallui/InCallDUOSUIControl;->mControlDialog:Landroid/app/AlertDialog;
 
@@ -1446,8 +1431,6 @@
 
 .method public showDuosPhoneSwitchDialog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1488,9 +1471,6 @@
 
 .method public showDuosPhoneSwitchDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1539,7 +1519,6 @@
 
 .method public switchCallScreen(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1578,7 +1557,6 @@
 
 .method public switchPhone(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 

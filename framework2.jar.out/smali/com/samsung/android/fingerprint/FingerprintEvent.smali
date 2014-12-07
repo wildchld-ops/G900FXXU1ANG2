@@ -337,7 +337,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -362,7 +361,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x0
 
@@ -407,7 +405,6 @@
 
 .method private static generateNameMap(Landroid/util/SparseArray;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -820,8 +817,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/fingerprint/FingerprintEvent;->eventId:I
 

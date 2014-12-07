@@ -36,9 +36,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/protos/DocList$ListResponse;ILcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/widget/recommendation/RecommendationList;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/protos/DocList$ListResponse;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/library/Library;
 
     invoke-static {p0, p1, p2}, Lcom/google/android/finsky/widget/recommendation/RecommendationsStore;->parseNetworkResponse(Lcom/google/android/finsky/protos/DocList$ListResponse;ILcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/widget/recommendation/RecommendationList;
 
@@ -57,8 +54,6 @@
 
 .method public static deleteCachedRecommendations(Landroid/content/Context;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/widget/recommendation/RecommendationsStore;->getCacheFile(Landroid/content/Context;I)Ljava/io/File;
 
@@ -71,9 +66,6 @@
 
 .method public static getBitmap(Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/widget/recommendation/Recommendation;I)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p1    # Lcom/google/android/finsky/widget/recommendation/Recommendation;
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -169,8 +161,6 @@
 
 .method public static getCacheFile(Landroid/content/Context;I)Ljava/io/File;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -223,10 +213,6 @@
 
 .method public static getRecommendations(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;ILcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/widget/recommendation/RecommendationList;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/library/Library;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;,
@@ -304,11 +290,6 @@
 
 .method public static getRecommendationsOrShowError(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;IILcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/widget/recommendation/RecommendationList;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/library/Library;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureNotOnMainThread()V
 
@@ -472,7 +453,6 @@
 
 .method public static getRecsWidgetUrl(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->widgetUrlsByBackend:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 
@@ -491,10 +471,6 @@
 
 .method private static loadDocumentsFromNetwork(Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;ILcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/widget/recommendation/RecommendationList;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/library/Library;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;,
@@ -565,9 +541,6 @@
 
 .method private static parseNetworkResponse(Lcom/google/android/finsky/protos/DocList$ListResponse;ILcom/google/android/finsky/library/Library;)Lcom/google/android/finsky/widget/recommendation/RecommendationList;
     .locals 13
-    .param p0    # Lcom/google/android/finsky/protos/DocList$ListResponse;
-    .param p1    # I
-    .param p2    # Lcom/google/android/finsky/library/Library;
 
     const/4 v8, 0x1
 
@@ -694,11 +667,6 @@
 
 .method public static performBackFill(Lcom/google/android/finsky/api/DfeApi;Landroid/content/Context;Lcom/google/android/finsky/widget/recommendation/RecommendationList;Lcom/google/android/finsky/library/Library;I)V
     .locals 3
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/widget/recommendation/RecommendationList;
-    .param p3    # Lcom/google/android/finsky/library/Library;
-    .param p4    # I
 
     invoke-virtual {p2}, Lcom/google/android/finsky/widget/recommendation/RecommendationList;->getBackendId()I
 

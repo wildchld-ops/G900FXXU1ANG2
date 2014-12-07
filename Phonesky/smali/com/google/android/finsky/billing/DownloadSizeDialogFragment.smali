@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/DownloadSizeDialogFragment;)Lcom/google/android/finsky/billing/DownloadSizeDialogFragment$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/DownloadSizeDialogFragment;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/DownloadSizeDialogFragment;->getListener()Lcom/google/android/finsky/billing/DownloadSizeDialogFragment$Listener;
 
@@ -61,9 +60,6 @@
 
 .method public static makeArguments(ZZZ)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Z
-    .param p1    # Z
-    .param p2    # Z
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -86,8 +82,6 @@
 
 .method public static newInstance(Landroid/support/v4/app/Fragment;Landroid/os/Bundle;)Lcom/google/android/finsky/billing/DownloadSizeDialogFragment;
     .locals 3
-    .param p0    # Landroid/support/v4/app/Fragment;
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_0
 
@@ -124,7 +118,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/DownloadSizeDialogFragment;->getListener()Lcom/google/android/finsky/billing/DownloadSizeDialogFragment$Listener;
 
@@ -139,7 +132,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/billing/DownloadSizeDialogFragment;->getArguments()Landroid/os/Bundle;
 

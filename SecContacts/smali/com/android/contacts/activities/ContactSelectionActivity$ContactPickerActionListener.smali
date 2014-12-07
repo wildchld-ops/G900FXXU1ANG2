@@ -36,7 +36,6 @@
 # virtual methods
 .method protected launchAddToContactDialog(Landroid/os/Bundle;)Z
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -387,7 +386,6 @@
 
 .method public onPickContactAction(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactSelectionActivity$ContactPickerActionListener;->this$0:Lcom/android/contacts/activities/ContactSelectionActivity;
 
@@ -398,7 +396,6 @@
 
 .method public onShortcutIntentCreated(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/contacts/activities/ContactSelectionActivity$ContactPickerActionListener;->this$0:Lcom/android/contacts/activities/ContactSelectionActivity;
 

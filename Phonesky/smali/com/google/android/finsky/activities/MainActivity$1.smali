@@ -36,10 +36,6 @@
 # virtual methods
 .method public showAppAlert(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/MainActivity$1;->this$0:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -92,9 +88,6 @@
 
 .method public showAppNotification(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/MainActivity$1;->this$0:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -142,10 +135,6 @@
 
 .method public showDocAlert(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

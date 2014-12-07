@@ -207,7 +207,6 @@
 
 .method public setChangedSince(J)Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;->lv:J
 
@@ -216,7 +215,6 @@
 
 .method public setCircleId(Ljava/lang/String;)Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;->fh:Ljava/lang/String;
 
@@ -225,7 +223,6 @@
 
 .method public setPeopleOnly(Z)Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;->lu:Z
 
@@ -234,7 +231,6 @@
 
 .method public setProjection(I)Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;->lt:I
 
@@ -261,7 +257,6 @@
 
 .method public setQuery(Ljava/lang/String;)Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;->C:Ljava/lang/String;
 
@@ -270,7 +265,6 @@
 
 .method public setSearchFields(I)Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/gms/people/PeopleClient$LoadPeopleOptions;->lw:I
 

@@ -263,7 +263,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/personalvibration/SelectPatternDialog;)Lcom/android/settings/personalvibration/VibrationPatternListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/personalvibration/SelectPatternDialog;
 
     iget-object v0, p0, Lcom/android/settings/personalvibration/SelectPatternDialog;->mPatternListAdapter:Lcom/android/settings/personalvibration/VibrationPatternListAdapter;
 
@@ -274,7 +273,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 4
-    .param p1    # Landroid/text/Editable;
 
     const/4 v0, 0x0
 
@@ -333,17 +331,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public deletePattern(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -464,7 +457,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -882,8 +874,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 13
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/personalvibration/SelectPatternDialog;->vib:Landroid/os/SystemVibrator;
 
@@ -1166,7 +1156,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v7, 0x1
 
@@ -1316,7 +1305,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x1
 
@@ -1666,9 +1654,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 9
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const v5, 0x7f09011d
 
@@ -1805,9 +1790,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 11
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2028,10 +2010,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 11
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget v0, p0, Lcom/android/settings/personalvibration/SelectPatternDialog;->mStaticItem:I
 
@@ -2228,8 +2206,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -2363,7 +2339,6 @@
 
 .method public onNothingSelected(Landroid/widget/AdapterView;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView;
 
     return-void
 .end method
@@ -2397,17 +2372,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method showRenameDialog(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x1
 

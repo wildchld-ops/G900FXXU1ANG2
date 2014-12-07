@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -79,9 +76,6 @@
 # virtual methods
 .method public configure(IILandroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View$OnClickListener;
 
     invoke-virtual {p0}, Lcom/google/android/play/layout/PlayActionButton;->getResources()Landroid/content/res/Resources;
 
@@ -98,9 +92,6 @@
 
 .method public configure(ILjava/lang/String;Landroid/view/View$OnClickListener;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/View$OnClickListener;
 
     const/4 v7, 0x1
 
@@ -257,7 +248,6 @@
 
 .method public setDrawAsLabel(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/play/layout/PlayActionButton;->mDrawAsLabel:Z
 
@@ -273,7 +263,6 @@
 
 .method public setIgnoreCorpusColor(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/play/layout/PlayActionButton;->mIgnoreCorpusColor:Z
 
@@ -289,7 +278,6 @@
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/view/View$OnClickListener;
 
     const-string v0, "Don\'t call PlayActionButton.setOnClickListener() directly"
 

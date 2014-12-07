@@ -46,7 +46,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation$2;->this$0:Lcom/google/android/finsky/billing/carrierbilling/flow/association/CarrierOutAssociation;
 
@@ -58,7 +57,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;
 

@@ -64,7 +64,6 @@
 # virtual methods
 .method public collapseWith(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;)V
     .locals 1
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;->shouldCollapseWith(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;)Z
 
@@ -78,7 +77,6 @@
 
 .method public bridge synthetic collapseWith(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 
@@ -89,7 +87,6 @@
 
 .method public shouldCollapseWith(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;)Z
     .locals 4
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;->mimeType:Ljava/lang/String;
 
@@ -108,7 +105,6 @@
 
 .method public bridge synthetic shouldCollapseWith(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 

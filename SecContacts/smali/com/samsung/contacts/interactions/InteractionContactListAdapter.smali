@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -45,9 +44,6 @@
 
 .method private configureSelection(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 9
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     const/16 v8, 0x118
 
@@ -459,8 +455,6 @@
 
 .method private isSelectedItem(ILandroid/database/Cursor;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v2, 0x0
 
@@ -557,9 +551,6 @@
 # virtual methods
 .method protected bindHeaderView(Landroid/view/View;ILandroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/contacts/common/list/ContactListAdapter;->bindHeaderView(Landroid/view/View;ILandroid/database/Cursor;)V
 
@@ -568,10 +559,6 @@
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -690,8 +677,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 6
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     const-string v4, "InteractionContactListAdapter"
 
@@ -902,9 +887,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 6
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     const-wide/16 v4, 0x0
 
@@ -1031,7 +1013,6 @@
 
 .method public setActionCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionContactListAdapter;->mActionCode:I
 

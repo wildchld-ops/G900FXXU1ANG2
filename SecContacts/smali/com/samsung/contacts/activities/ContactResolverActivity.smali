@@ -20,7 +20,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -162,7 +161,6 @@
 
 .method public setTheme(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/ContextThemeWrapper;->setTheme(I)V
 

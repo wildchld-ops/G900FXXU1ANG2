@@ -179,7 +179,6 @@
 
 .method private constructor <init>(Lgov/nist/javax/sip/SipProviderImpl;)V
     .locals 6
-    .param p1    # Lgov/nist/javax/sip/SipProviderImpl;
 
     const-wide/16 v4, 0x0
 
@@ -244,8 +243,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/SipProviderImpl;Lgov/nist/javax/sip/message/SIPResponse;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/SipProviderImpl;
-    .param p2    # Lgov/nist/javax/sip/message/SIPResponse;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/stack/SIPDialog;-><init>(Lgov/nist/javax/sip/SipProviderImpl;)V
 
@@ -393,8 +390,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPClientTransaction;Lgov/nist/javax/sip/message/SIPResponse;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/stack/SIPClientTransaction;
-    .param p2    # Lgov/nist/javax/sip/message/SIPResponse;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/stack/SIPDialog;-><init>(Lgov/nist/javax/sip/stack/SIPTransaction;)V
 
@@ -422,7 +417,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPTransaction;)V
     .locals 4
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     invoke-virtual {p1}, Lgov/nist/javax/sip/stack/SIPTransaction;->getSipProvider()Lgov/nist/javax/sip/SipProviderImpl;
 
@@ -580,7 +574,6 @@
 
 .method static synthetic access$000(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/stack/SIPTransactionStack;
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -589,7 +582,6 @@
 
 .method static synthetic access$100(Lgov/nist/javax/sip/stack/SIPDialog;)Lgov/nist/javax/sip/SipProviderImpl;
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
 
@@ -598,8 +590,6 @@
 
 .method static synthetic access$1002(Lgov/nist/javax/sip/stack/SIPDialog;Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;)Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;
     .locals 0
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
-    .param p1    # Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->dialogDeleteIfNoAckSentTask:Lgov/nist/javax/sip/stack/SIPDialog$DialogDeleteIfNoAckSentTask;
 
@@ -608,7 +598,6 @@
 
 .method static synthetic access$1100(Lgov/nist/javax/sip/stack/SIPDialog;)Z
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget-boolean v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->isBackToBackUserAgent:Z
 
@@ -617,8 +606,6 @@
 
 .method static synthetic access$200(Lgov/nist/javax/sip/stack/SIPDialog;I)V
     .locals 0
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/stack/SIPDialog;->raiseErrorEvent(I)V
 
@@ -627,7 +614,6 @@
 
 .method static synthetic access$300(Lgov/nist/javax/sip/stack/SIPDialog;)I
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->reInviteWaitTime:I
 
@@ -636,7 +622,6 @@
 
 .method static synthetic access$400(Lgov/nist/javax/sip/stack/SIPDialog;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->eventListeners:Ljava/util/Set;
 
@@ -645,8 +630,6 @@
 
 .method static synthetic access$502(Lgov/nist/javax/sip/stack/SIPDialog;Ljava/util/concurrent/Semaphore;)Ljava/util/concurrent/Semaphore;
     .locals 0
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
-    .param p1    # Ljava/util/concurrent/Semaphore;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->timerTaskLock:Ljava/util/concurrent/Semaphore;
 
@@ -655,8 +638,6 @@
 
 .method static synthetic access$600(Lgov/nist/javax/sip/stack/SIPDialog;I)Z
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/stack/SIPDialog;->toRetransmitFinalResponse(I)Z
 
@@ -667,10 +648,6 @@
 
 .method static synthetic access$700(Lgov/nist/javax/sip/stack/SIPDialog;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lgov/nist/javax/sip/stack/SIPDialog;->raiseIOException(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -679,7 +656,6 @@
 
 .method static synthetic access$800(Lgov/nist/javax/sip/stack/SIPDialog;)I
     .locals 1
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->dialogState:I
 
@@ -688,7 +664,6 @@
 
 .method static synthetic access$900(Lgov/nist/javax/sip/stack/SIPDialog;)J
     .locals 2
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
 
     iget-wide v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->highestSequenceNumberAcknowledged:J
 
@@ -697,7 +672,6 @@
 
 .method private addRoute(Lgov/nist/javax/sip/header/RecordRouteList;)V
     .locals 11
-    .param p1    # Lgov/nist/javax/sip/header/RecordRouteList;
 
     :try_start_0
     invoke-direct {p0}, Lgov/nist/javax/sip/stack/SIPDialog;->isClientDialog()Z
@@ -1051,7 +1025,6 @@
 
 .method private declared-synchronized addRoute(Lgov/nist/javax/sip/message/SIPResponse;)V
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
 
     monitor-enter p0
 
@@ -1366,8 +1339,6 @@
 
 .method public static createFromNOTIFY(Lgov/nist/javax/sip/stack/SIPClientTransaction;Lgov/nist/javax/sip/stack/SIPTransaction;)Lgov/nist/javax/sip/stack/SIPDialog;
     .locals 4
-    .param p0    # Lgov/nist/javax/sip/stack/SIPClientTransaction;
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     const/4 v2, 0x0
 
@@ -1462,8 +1433,6 @@
 
 .method private createRequest(Ljava/lang/String;Lgov/nist/javax/sip/message/SIPResponse;)Ljavax/sip/message/Request;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lgov/nist/javax/sip/message/SIPResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -1958,7 +1927,6 @@
 
 .method private doTargetRefresh(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
 
     invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getContactHeaders()Lgov/nist/javax/sip/header/ContactList;
 
@@ -2219,8 +2187,6 @@
 
 .method private static final optionPresent(Ljava/util/ListIterator;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/util/ListIterator;
-    .param p1    # Ljava/lang/String;
 
     :cond_0
     invoke-interface {p0}, Ljava/util/ListIterator;->hasNext()Z
@@ -2333,7 +2299,6 @@
 
 .method private raiseErrorEvent(I)V
     .locals 5
-    .param p1    # I
 
     new-instance v1, Lgov/nist/javax/sip/stack/SIPDialogErrorEvent;
 
@@ -2408,9 +2373,6 @@
 
 .method private raiseIOException(Ljava/lang/String;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljavax/sip/IOExceptionEvent;
 
@@ -2461,8 +2423,6 @@
 
 .method private sendAck(Ljavax/sip/message/Request;Z)V
     .locals 13
-    .param p1    # Ljavax/sip/message/Request;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -3235,7 +3195,6 @@
 
 .method private setCallId(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
@@ -3248,7 +3207,6 @@
 
 .method private setLastAckReceived(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->lastAckReceived:Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -3257,7 +3215,6 @@
 
 .method private setLastAckSent(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->lastAckSent:Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -3266,7 +3223,6 @@
 
 .method private setLocalParty(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPDialog;->isServer()Z
 
@@ -3303,7 +3259,6 @@
 
 .method private setLocalSequenceNumber(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -3374,7 +3329,6 @@
 
 .method private setLocalTag(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -3438,7 +3392,6 @@
 
 .method private setRemoteParty(Lgov/nist/javax/sip/message/SIPMessage;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/message/SIPMessage;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPDialog;->isServer()Z
 
@@ -3512,7 +3465,6 @@
 
 .method private setRemoteTag(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -3762,8 +3714,6 @@
 
 .method private static storeFirstTransactionInfo(Lgov/nist/javax/sip/stack/SIPDialog;Lgov/nist/javax/sip/stack/SIPTransaction;)V
     .locals 6
-    .param p0    # Lgov/nist/javax/sip/stack/SIPDialog;
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->firstTransaction:Lgov/nist/javax/sip/stack/SIPTransaction;
 
@@ -3869,7 +3819,6 @@
 
 .method private toRetransmitFinalResponse(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->retransmissionTicksLeft:I
 
@@ -3916,7 +3865,6 @@
 
 .method private updateRequest(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/stack/SIPDialog;->getRouteList()Lgov/nist/javax/sip/header/RouteList;
 
@@ -3958,7 +3906,6 @@
 # virtual methods
 .method ackReceived(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 6
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     const/4 v5, 0x0
 
@@ -4146,7 +4093,6 @@
 
 .method public addEventListener(Lgov/nist/javax/sip/stack/SIPDialogEventListener;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/stack/SIPDialogEventListener;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->eventListeners:Ljava/util/Set;
 
@@ -4157,7 +4103,6 @@
 
 .method public declared-synchronized addRoute(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     monitor-enter p0
 
@@ -4307,7 +4252,6 @@
 
 .method public addTransaction(Lgov/nist/javax/sip/stack/SIPTransaction;)V
     .locals 4
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransaction;
 
     invoke-virtual {p1}, Lgov/nist/javax/sip/stack/SIPTransaction;->getOriginalRequest()Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -4630,7 +4574,6 @@
 
 .method public createAck(J)Ljavax/sip/message/Request;
     .locals 17
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;,
@@ -5305,7 +5248,6 @@
 
 .method public createPrack(Ljavax/sip/message/Response;)Ljavax/sip/message/Request;
     .locals 9
-    .param p1    # Ljavax/sip/message/Response;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/DialogDoesNotExistException;,
@@ -5452,7 +5394,6 @@
 
 .method public createReliableProvisionalResponse(I)Ljavax/sip/message/Response;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/InvalidArgumentException;,
@@ -5610,7 +5551,6 @@
 
 .method public createRequest(Ljava/lang/String;)Ljavax/sip/message/Request;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -5743,7 +5683,6 @@
 
 .method public declared-synchronized doDeferredDeleteIfNoAckSent(J)V
     .locals 4
-    .param p1    # J
 
     monitor-enter p0
 
@@ -6142,7 +6081,6 @@
 
 .method public handleAck(Lgov/nist/javax/sip/stack/SIPServerTransaction;)Z
     .locals 8
-    .param p1    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     const/4 v1, 0x0
 
@@ -6370,7 +6308,6 @@
 
 .method public handlePrack(Lgov/nist/javax/sip/message/SIPRequest;)Z
     .locals 10
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     const/4 v5, 0x0
 
@@ -6613,7 +6550,6 @@
 
 .method public isAckSent(J)Z
     .locals 4
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -6704,7 +6640,6 @@
 
 .method public declared-synchronized isRequestConsumable(Lgov/nist/javax/sip/message/SIPRequest;)Z
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     const/4 v0, 0x1
 
@@ -7090,7 +7025,6 @@
 
 .method public removeEventListener(Lgov/nist/javax/sip/stack/SIPDialogEventListener;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/stack/SIPDialogEventListener;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->eventListeners:Ljava/util/Set;
 
@@ -7244,7 +7178,6 @@
 
 .method public sendAck(Ljavax/sip/message/Request;)V
     .locals 1
-    .param p1    # Ljavax/sip/message/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -7260,7 +7193,6 @@
 
 .method public sendReliableProvisionalResponse(Ljavax/sip/message/Response;)V
     .locals 8
-    .param p1    # Ljavax/sip/message/Response;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -7434,7 +7366,6 @@
 
 .method public sendRequest(Ljavax/sip/ClientTransaction;)V
     .locals 1
-    .param p1    # Ljavax/sip/ClientTransaction;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/TransactionDoesNotExistException;,
@@ -7461,8 +7392,6 @@
 
 .method public sendRequest(Ljavax/sip/ClientTransaction;Z)V
     .locals 14
-    .param p1    # Ljavax/sip/ClientTransaction;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/TransactionDoesNotExistException;,
@@ -8505,7 +8434,6 @@
 
 .method public setApplicationData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->applicationData:Ljava/lang/Object;
 
@@ -8534,7 +8462,6 @@
 
 .method public setDialogId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->dialogId:Ljava/lang/String;
 
@@ -8543,7 +8470,6 @@
 
 .method setEarlyDialogId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->earlyDialogId:Ljava/lang/String;
 
@@ -8552,7 +8478,6 @@
 
 .method setEventHeader(Ljavax/sip/header/EventHeader;)V
     .locals 0
-    .param p1    # Ljavax/sip/header/EventHeader;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->eventHeader:Ljavax/sip/header/EventHeader;
 
@@ -8561,8 +8486,6 @@
 
 .method public setLastResponse(Lgov/nist/javax/sip/stack/SIPTransaction;Lgov/nist/javax/sip/message/SIPResponse;)V
     .locals 11
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransaction;
-    .param p2    # Lgov/nist/javax/sip/message/SIPResponse;
 
     invoke-virtual {p2}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
@@ -9620,7 +9543,6 @@
 
 .method setReInviteFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->reInviteFlag:Z
 
@@ -9629,7 +9551,6 @@
 
 .method public setRemoteSequenceNumber(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -9683,7 +9604,6 @@
 
 .method setRemoteTarget(Ljavax/sip/header/ContactHeader;)V
     .locals 3
-    .param p1    # Ljavax/sip/header/ContactHeader;
 
     invoke-interface {p1}, Ljavax/sip/header/ContactHeader;->getAddress()Ljavax/sip/address/Address;
 
@@ -9741,7 +9661,6 @@
 
 .method public setResponseTags(Lgov/nist/javax/sip/message/SIPResponse;)V
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/message/SIPResponse;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/stack/SIPDialog;->getLocalTag()Ljava/lang/String;
 
@@ -9839,7 +9758,6 @@
 
 .method setRouteList(Lgov/nist/javax/sip/header/RouteList;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/RouteList;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->routeList:Lgov/nist/javax/sip/header/RouteList;
 
@@ -9848,7 +9766,6 @@
 
 .method setServerTransactionFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->serverTransactionFlag:Z
 
@@ -9857,7 +9774,6 @@
 
 .method public setSipProvider(Lgov/nist/javax/sip/SipProviderImpl;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/SipProviderImpl;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipProvider:Lgov/nist/javax/sip/SipProviderImpl;
 
@@ -9866,7 +9782,6 @@
 
 .method setStack(Lgov/nist/javax/sip/stack/SIPTransactionStack;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -9875,7 +9790,6 @@
 
 .method public setState(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->sipStack:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 
@@ -10051,8 +9965,6 @@
 
 .method public startRetransmitTimer(Lgov/nist/javax/sip/stack/SIPServerTransaction;Ljavax/sip/message/Response;)V
     .locals 2
-    .param p1    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
-    .param p2    # Ljavax/sip/message/Response;
 
     invoke-virtual {p1}, Lgov/nist/javax/sip/stack/SIPTransaction;->getRequest()Ljavax/sip/message/Request;
 
@@ -10088,7 +10000,6 @@
 
 .method protected startTimer(Lgov/nist/javax/sip/stack/SIPServerTransaction;)V
     .locals 6
-    .param p1    # Lgov/nist/javax/sip/stack/SIPServerTransaction;
 
     iget-object v0, p0, Lgov/nist/javax/sip/stack/SIPDialog;->timerTask:Lgov/nist/javax/sip/stack/SIPDialog$DialogTimerTask;
 
@@ -10441,7 +10352,6 @@
 
 .method public terminateOnBye(Z)V
     .locals 0
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;

@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/mms/ui/ConversationListRestore;Lcom/samsung/mms/ui/ConversationListRestore$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/mms/ui/ConversationListRestore;
-    .param p2    # Lcom/samsung/mms/ui/ConversationListRestore$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/ui/ConversationListRestore$ModeCallback;-><init>(Lcom/samsung/mms/ui/ConversationListRestore;)V
 
@@ -48,8 +46,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -79,8 +75,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -219,7 +213,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 3
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v2, 0x0
 
@@ -285,10 +278,6 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     const-string v1, "Mms/ConversationListRestore"
 
@@ -401,8 +390,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const v4, 0x7f0b0347
 

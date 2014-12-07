@@ -55,9 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/sec/android/touchwiz/widget/TwSweepActionListView;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -344,11 +341,6 @@
 
 .method private drawSweepText(Landroid/graphics/Canvas;Ljava/lang/String;FFF)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/high16 v8, 0x437f0000
 
@@ -423,7 +415,6 @@
 
 .method private setupDrawablesBounds(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -570,7 +561,6 @@
 
 .method public onDefineSweepAction(I)Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionBarInfo;
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -640,12 +630,6 @@
 
 .method public onDrawSweepActionBar(Landroid/content/Context;IFILandroid/graphics/Rect;Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/graphics/Canvas;
 
     const/4 v7, 0x1
 
@@ -1044,9 +1028,6 @@
 
 .method public onListShouldDrawSelector(IFI)Z
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1069,7 +1050,6 @@
 
 .method public setHasEmailAddress(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/sweepaction/ContactListSweepActionHandler;->mHasEmailAddress:Z
 
@@ -1078,7 +1058,6 @@
 
 .method public setHasPhoneNumber(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/sweepaction/ContactListSweepActionHandler;->mHasPhoneNumber:Z
 

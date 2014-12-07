@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/list/DefaultContactBrowseListFragment;Landroid/app/Activity;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;->this$0:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -52,9 +50,6 @@
 
 .method private changeDeleteMenuVisiblity(IZLjava/lang/Long;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/Long;
 
     if-eqz p2, :cond_1
 
@@ -129,9 +124,6 @@
 
 .method private changeShareViaMenuVisibility(IZLjava/lang/Long;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/Long;
 
     const/4 v2, 0x1
 
@@ -231,7 +223,6 @@
 
 .method private createLauncherShortcutWithContact(Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     iget-object v2, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;->this$0:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -786,8 +777,6 @@
 # virtual methods
 .method protected doActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)V
     .locals 47
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const-wide/16 v12, -0x1
 
@@ -2538,8 +2527,6 @@
 
 .method protected doCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)V
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v4, 0x1
 
@@ -2755,7 +2742,6 @@
 
 .method protected doDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v5, 0x0
 
@@ -2946,8 +2932,6 @@
 
 .method protected doPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)V
     .locals 12
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const v11, 0x7f0e0165
 
@@ -3671,7 +3655,6 @@
 
 .method public findAndSelectPosition(J)V
     .locals 8
-    .param p1    # J
 
     iget-object v5, p0, Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;->this$0:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -3776,7 +3759,6 @@
 
 .method protected getValue(I)Ljava/lang/Long;
     .locals 4
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -3824,7 +3806,6 @@
 
 .method protected bridge synthetic getValue(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/contacts/list/DefaultContactBrowseListFragment$ActionModeAdapter;->getValue(I)Ljava/lang/Long;
 
@@ -3870,8 +3851,6 @@
 
 .method public onContactSelected(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     const/4 v4, 0x1
 

@@ -124,7 +124,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -221,9 +220,6 @@
 
 .method static synthetic access$000(Landroid/sec/enterprise/WifiPolicyCache;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Landroid/sec/enterprise/WifiPolicyCache;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/sec/enterprise/WifiPolicyCache;->readVariables(Ljava/lang/String;I)V
 
@@ -232,7 +228,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/sec/enterprise/WifiPolicyCache;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Landroid/sec/enterprise/WifiPolicyCache;->sInstance:Landroid/sec/enterprise/WifiPolicyCache;
 
@@ -252,7 +247,6 @@
 
 .method public static getLinkSecurity(Landroid/net/wifi/WifiConfiguration;)I
     .locals 9
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v8, 0x7
 
@@ -441,8 +435,6 @@
 
 .method private declared-synchronized readVariables(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -799,7 +791,6 @@
 
 .method private removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -959,7 +950,6 @@
 
 .method public declared-synchronized isEnterpriseNetwork(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -998,8 +988,6 @@
 
 .method public declared-synchronized isNetworkAllowed(Landroid/net/wifi/WifiConfiguration;Z)Z
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -1104,7 +1092,6 @@
 
 .method public declared-synchronized isWifiAllowed(Z)Z
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1137,9 +1124,6 @@
 
 .method public updateAllowedFields(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;I)Landroid/net/wifi/WifiConfiguration;
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
-    .param p3    # I
 
     const/4 v3, 0x0
 

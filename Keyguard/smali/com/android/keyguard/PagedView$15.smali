@@ -36,7 +36,6 @@
 # virtual methods
 .method public handleAirMove(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/PagedView$15;->this$0:Lcom/android/keyguard/PagedView;
 

@@ -163,7 +163,6 @@
 
 .method private isMacAddress(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "[0-9a-fA-F]{2}[-:][0-9a-fA-F]{2}[-:][0-9a-fA-F]{2}[-:][0-9a-fA-F]{2}[-:][0 -9a-fA-F]{2}[-:][0-9a-fA-F]{2}"
 
@@ -506,8 +505,6 @@
 # virtual methods
 .method public addWhiteList(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/WifiApWhiteList;->isMacAddress(Ljava/lang/String;)Z
 
@@ -572,7 +569,6 @@
 
 .method public getDeviceName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/net/wifi/WifiApWhiteList;->mWhiteList:Ljava/util/Vector;
 
@@ -665,7 +661,6 @@
 
 .method public isContains(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/net/wifi/WifiApWhiteList;->mWhiteList:Ljava/util/Vector;
 
@@ -709,8 +704,6 @@
 
 .method public modifyWhiteList(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/net/wifi/WifiApWhiteList;->mWhiteList:Ljava/util/Vector;
 
@@ -758,7 +751,6 @@
 
 .method public removeWhiteList(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/net/wifi/WifiApWhiteList;->mWhiteList:Ljava/util/Vector;
 

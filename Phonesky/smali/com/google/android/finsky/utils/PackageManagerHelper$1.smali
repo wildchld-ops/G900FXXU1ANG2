@@ -30,9 +30,6 @@
 # virtual methods
 .method public installCompleted(ZILjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     return-void
 .end method

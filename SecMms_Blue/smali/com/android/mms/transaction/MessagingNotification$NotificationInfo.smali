@@ -49,15 +49,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;JIJJI)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # I
-    .param p8    # J
-    .param p10    # J
-    .param p12    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,16 +79,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;JIJJII)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # I
-    .param p8    # J
-    .param p10    # J
-    .param p12    # I
-    .param p13    # I
 
     invoke-direct/range {p0 .. p12}, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;JIJJI)V
 
@@ -108,9 +89,6 @@
 
 .method private createTickTitle(Landroid/content/Context;IZ)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v5, 0x0
 
@@ -202,7 +180,6 @@
 
 .method private getSlideAttachCount(Lcom/android/mms/model/SlideshowModel;)I
     .locals 8
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v6, 0x0
 
@@ -290,8 +267,6 @@
 
 .method private parsingPdu(Landroid/content/Context;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     # getter for: Lcom/android/mms/transaction/MessagingNotification;->sEnablePreview:Z
     invoke-static {}, Lcom/android/mms/transaction/MessagingNotification;->access$700()Z
@@ -407,8 +382,6 @@
 # virtual methods
 .method public formatBigMessage(Landroid/content/Context;I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/16 v4, 0xa
 
@@ -503,9 +476,6 @@
 
 .method public formatInboxMessage(Landroid/content/Context;IZ)Ljava/lang/CharSequence;
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v10, 0x0
 
@@ -726,8 +696,6 @@
 
 .method public formatPictureMessage(Landroid/content/Context;I)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -812,7 +780,6 @@
 
 .method public getAddress(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mAddress:Ljava/lang/String;
 
@@ -854,8 +821,6 @@
 
 .method public getAttachmentBitmap(Landroid/content/Context;I)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mAttachmentBitmap:Landroid/graphics/Bitmap;
 
@@ -898,8 +863,6 @@
 
 .method public getAttachmentType(Landroid/content/Context;I)I
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iget v0, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mAttachmentType:I
 
@@ -922,8 +885,6 @@
 
 .method public getContact(Landroid/content/Context;Z)Lcom/android/mms/data/Contact;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mSender:Lcom/android/mms/data/Contact;
 
@@ -963,7 +924,6 @@
 
 .method public getIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1060,8 +1020,6 @@
 
 .method public getMessage(Landroid/content/Context;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mMessage:Ljava/lang/String;
 
@@ -1148,9 +1106,6 @@
 
 .method public getTicker(Landroid/content/Context;IZ)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mTicker:Ljava/lang/CharSequence;
 
@@ -1202,9 +1157,6 @@
 
 .method public getTitle(Landroid/content/Context;IZ)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mTitle:Ljava/lang/String;
 
@@ -1303,7 +1255,6 @@
 
 .method public isPrioritySender(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/mms/prioritysender/PrioritySenderCache;->getInstance(Landroid/content/Context;)Lcom/android/mms/prioritysender/PrioritySenderCache;
 
@@ -1380,12 +1331,6 @@
 
 .method public updateMmsInfo(Ljava/lang/String;Landroid/graphics/Bitmap;ILjava/lang/CharSequence;Ljava/lang/String;Lcom/android/mms/data/Contact;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/android/mms/data/Contact;
 
     iput-object p2, p0, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->mAttachmentBitmap:Landroid/graphics/Bitmap;
 

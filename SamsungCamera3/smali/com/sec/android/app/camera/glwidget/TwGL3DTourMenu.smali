@@ -1115,10 +1115,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 15
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v6, 0x6
 
@@ -3112,7 +3108,6 @@
 
 .method private ImageAlignment(I)I
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -3979,9 +3974,6 @@
 
 .method private TurnVectorEstimation(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;I)I
     .locals 20
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -4463,9 +4455,6 @@
 
 .method private WalkVectorEstimation(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;I)I
     .locals 10
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
 
     const/4 v9, 0x1
 
@@ -4637,7 +4626,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mHandlerActiveFlag:Z
 
@@ -4646,7 +4634,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLButton;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mThumbnailOpenButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -4655,7 +4642,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mCapturing:Z
 
@@ -4664,8 +4650,6 @@
 
 .method static synthetic access$1102(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mCapturing:Z
 
@@ -4674,7 +4658,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mOrientationForPicture:I
 
@@ -4683,8 +4666,6 @@
 
 .method static synthetic access$1202(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mOrientationForPicture:I
 
@@ -4693,7 +4674,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mOrientation:I
 
@@ -4702,7 +4682,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mCalibrationInProgressCount:I
 
@@ -4711,7 +4690,6 @@
 
 .method static synthetic access$1408(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mCalibrationInProgressCount:I
 
@@ -4724,7 +4702,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mProgressDegree:I
 
@@ -4733,8 +4710,6 @@
 
 .method static synthetic access$1512(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mProgressDegree:I
 
@@ -4747,7 +4722,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/app/camera/glwidget/TwGLProgressWheel;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mCapturableProgressWheel:Lcom/sec/android/app/camera/glwidget/TwGLProgressWheel;
 
@@ -4756,7 +4730,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mCurrentPhotoCount:I
 
@@ -4765,8 +4738,6 @@
 
 .method static synthetic access$1702(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mCurrentPhotoCount:I
 
@@ -4775,7 +4746,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mHandler:Landroid/os/Handler;
 
@@ -4784,7 +4754,6 @@
 
 .method static synthetic access$1900(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mLeftIndicator:Lcom/sec/android/glview/TwGLImage;
 
@@ -4793,7 +4762,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLButton;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mUndoButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -4802,7 +4770,6 @@
 
 .method static synthetic access$2000(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mRightIndicator:Lcom/sec/android/glview/TwGLImage;
 
@@ -4811,7 +4778,6 @@
 
 .method static synthetic access$2100(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mStraightIndicator:Lcom/sec/android/glview/TwGLImage;
 
@@ -4820,7 +4786,6 @@
 
 .method static synthetic access$2200(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mStraightWarningIndicator:Lcom/sec/android/glview/TwGLImage;
 
@@ -4829,8 +4794,6 @@
 
 .method static synthetic access$2300(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->onDone(Z)V
 
@@ -4839,9 +4802,6 @@
 
 .method static synthetic access$2400(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;ZI)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->setWarningArrowVisibleState(ZI)V
 
@@ -4850,7 +4810,6 @@
 
 .method static synthetic access$2500(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mBlinkingAnimation:Landroid/view/animation/Animation;
 
@@ -4859,9 +4818,6 @@
 
 .method static synthetic access$2600(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;IZ)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->setStabilizerVisibleState(IZ)V
 
@@ -4870,7 +4826,6 @@
 
 .method static synthetic access$2700(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->resetDirectionEstimator()V
 
@@ -4879,7 +4834,6 @@
 
 .method static synthetic access$2800(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mRemainingStepCount:I
 
@@ -4888,7 +4842,6 @@
 
 .method static synthetic access$2900(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mPlayWarningArrowSound:Z
 
@@ -4897,7 +4850,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLButton;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mDoneButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -4906,7 +4858,6 @@
 
 .method static synthetic access$3000(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mThumbnailList:Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList;
 
@@ -4915,7 +4866,6 @@
 
 .method static synthetic access$3100(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mRunning:Z
 
@@ -4924,8 +4874,6 @@
 
 .method static synthetic access$3102(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mRunning:Z
 
@@ -4934,7 +4882,6 @@
 
 .method static synthetic access$3200(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mIsTranslationValid:[I
 
@@ -4943,7 +4890,6 @@
 
 .method static synthetic access$3300(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)[Lcom/sec/android/secvision/solutions/virtualtour/Vector3;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mTranslations:[Lcom/sec/android/secvision/solutions/virtualtour/Vector3;
 
@@ -4952,7 +4898,6 @@
 
 .method static synthetic access$3400(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)[F
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mTransitionsData:[F
 
@@ -4961,7 +4906,6 @@
 
 .method static synthetic access$3500(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mTransitionsType:[I
 
@@ -4970,8 +4914,6 @@
 
 .method static synthetic access$3600(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->stopImageAlignmentThread(I)V
 
@@ -4980,7 +4922,6 @@
 
 .method static synthetic access$3700(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/secvision/solutions/virtualtour/VirtualTourDataManager;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mVirtualTourDataManager:Lcom/sec/android/secvision/solutions/virtualtour/VirtualTourDataManager;
 
@@ -4989,7 +4930,6 @@
 
 .method static synthetic access$3800(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->prepareDirectories()V
 
@@ -4998,8 +4938,6 @@
 
 .method static synthetic access$3900(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->calculateOrientationForPicture(I)I
 
@@ -5010,7 +4948,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLText;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mHelpText:Lcom/sec/android/glview/TwGLText;
 
@@ -5019,7 +4956,6 @@
 
 .method static synthetic access$4000(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mIAProgressCount:I
 
@@ -5028,8 +4964,6 @@
 
 .method static synthetic access$4002(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mIAProgressCount:I
 
@@ -5038,7 +4972,6 @@
 
 .method static synthetic access$4008(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mIAProgressCount:I
 
@@ -5051,7 +4984,6 @@
 
 .method static synthetic access$4100(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mBackGroundThreadRunning:Z
 
@@ -5060,8 +4992,6 @@
 
 .method static synthetic access$4102(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mBackGroundThreadRunning:Z
 
@@ -5070,7 +5000,6 @@
 
 .method static synthetic access$4200(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Ljava/lang/Thread;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mBackGroundThread:Ljava/lang/Thread;
 
@@ -5079,7 +5008,6 @@
 
 .method static synthetic access$4300(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mBackGroundThreadState:I
 
@@ -5088,7 +5016,6 @@
 
 .method static synthetic access$4400(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Ljava/util/Vector;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mImageAlignmentVector:Ljava/util/Vector;
 
@@ -5097,8 +5024,6 @@
 
 .method static synthetic access$4500(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->ImageAlignment(I)I
 
@@ -5109,7 +5034,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->resetStabilizer()V
 
@@ -5118,8 +5042,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->setProgress(I)V
 
@@ -5128,8 +5050,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->setStabilizerVisibleState(I)V
 
@@ -5138,7 +5058,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mGuideGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -5147,7 +5066,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;)Lcom/sec/android/glview/TwGLViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mUndoButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -5156,7 +5074,6 @@
 
 .method private calculateOrientationForPicture(I)I
     .locals 3
-    .param p1    # I
 
     move v0, p1
 
@@ -5262,11 +5179,6 @@
 
 .method private fillRectangle(Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;FFFF)V
     .locals 0
-    .param p1    # Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     iput p2, p1, Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;->x:F
 
@@ -5281,8 +5193,6 @@
 
 .method private fillRectangle(Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;)V
     .locals 1
-    .param p1    # Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;
-    .param p2    # Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;
 
     iget v0, p2, Lcom/sec/android/secvision/solutions/virtualtour/Rectangle;->x:F
 
@@ -5305,7 +5215,6 @@
 
 .method private getAnimation(I)Landroid/view/animation/AnimationSet;
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -5408,7 +5317,6 @@
 
 .method private onDone(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x5
 
@@ -6494,7 +6402,6 @@
 
 .method private setProgress(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mProgressDegree:I
 
@@ -6571,7 +6478,6 @@
 
 .method private setStabilizerVisibleState(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -6637,8 +6543,6 @@
 
 .method private setStabilizerVisibleState(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -6704,8 +6608,6 @@
 
 .method private setWarningArrowVisibleState(ZI)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v9, 0x3
 
@@ -7700,7 +7602,6 @@
 
 .method private stopImageAlignmentThread(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -7992,7 +7893,6 @@
 # virtual methods
 .method public SOnStepWalk_RemainingStepsUpdate(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGL3DTourMenu"
 
@@ -8644,7 +8544,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v4, 0x0
 
@@ -8955,8 +8854,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -9031,7 +8928,6 @@
 
 .method public onOnThumbnailListCloseListener(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mThumbnailList:Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList;
 
@@ -9072,7 +8968,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "TwGL3DTourMenu"
 
@@ -9244,7 +9139,6 @@
 
 .method public onStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGL3DTourMenu"
 
@@ -9277,8 +9171,6 @@
 
 .method public setAngles(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mAngleY:F
 
@@ -9327,7 +9219,6 @@
 
 .method public updateThumbnail([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;->mThumbnailList:Lcom/sec/android/app/camera/glwidget/TwGL3DTourThumbnailList;
 

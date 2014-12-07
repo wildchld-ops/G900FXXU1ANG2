@@ -80,8 +80,6 @@
 # virtual methods
 .method public doFinalEncrypt(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
     .locals 7
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -221,7 +219,6 @@
 
 .method public initEncrypt(Ljava/nio/ByteBuffer;)I
     .locals 4
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -294,7 +291,6 @@
 
 .method public maxOutputSize(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lorg/keyczar/RsaPublicKey$RsaStream;->this$0:Lorg/keyczar/RsaPublicKey;
 
@@ -315,8 +311,6 @@
 
 .method public updateEncrypt(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)I
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -346,7 +340,6 @@
 
 .method public updateVerify(Ljava/nio/ByteBuffer;)V
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -374,7 +367,6 @@
 
 .method public verify(Ljava/nio/ByteBuffer;)Z
     .locals 6
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;

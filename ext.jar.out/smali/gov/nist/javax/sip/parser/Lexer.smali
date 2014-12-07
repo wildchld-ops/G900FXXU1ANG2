@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lgov/nist/core/LexerCore;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -18,7 +16,6 @@
 
 .method public static getHeaderName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -70,7 +67,6 @@
 
 .method public static getHeaderValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -113,7 +109,6 @@
 # virtual methods
 .method public selectLexer(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lgov/nist/javax/sip/parser/Lexer;->lexerTables:Ljava/util/Hashtable;
 

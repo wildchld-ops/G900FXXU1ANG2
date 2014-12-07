@@ -31,8 +31,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/RateReviewDialog;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/RateReviewDialog;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/RateReviewDialog;->setRating(I)V
 
@@ -41,7 +39,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/RateReviewDialog;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/RateReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/RateReviewDialog;->syncOkButtonState()V
 
@@ -50,7 +47,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/RateReviewDialog;)Lcom/google/android/finsky/activities/RateReviewDialog$Listener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/RateReviewDialog;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/RateReviewDialog;->getListener()Lcom/google/android/finsky/activities/RateReviewDialog$Listener;
 
@@ -98,7 +94,6 @@
 
 .method private getRatingForIndex(I)Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;->values()[Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
@@ -136,9 +131,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;)Lcom/google/android/finsky/activities/RateReviewDialog;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
     new-instance v1, Lcom/google/android/finsky/activities/RateReviewDialog;
 
@@ -175,7 +167,6 @@
 
 .method private setRating(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/RateReviewDialog;->getRatingForIndex(I)Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
@@ -224,7 +215,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v4, Landroid/view/ContextThemeWrapper;
 
@@ -359,7 +349,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/RateReviewDialog;->mRating:Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 

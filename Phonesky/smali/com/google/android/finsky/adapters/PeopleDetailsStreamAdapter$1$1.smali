@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->warmWelcomeOwnProfileAcknowledged:Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
 
@@ -64,14 +63,12 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method

@@ -26,9 +26,6 @@
 # direct methods
 .method public constructor <init>(I[BLjava/util/Map;Z)V
     .locals 0
-    .param p1    # I
-    .param p2    # [B
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I[B",
@@ -55,7 +52,6 @@
 
 .method public constructor <init>([BLjava/util/Map;)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B",

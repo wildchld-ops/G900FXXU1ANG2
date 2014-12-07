@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/ssrm/CustomFrequencyManagerService;Lcom/android/server/ssrm/CustomFrequencyManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/CustomFrequencyManagerService;
-    .param p2    # Lcom/android/server/ssrm/CustomFrequencyManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLockList;-><init>(Lcom/android/server/ssrm/CustomFrequencyManagerService;)V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method addLock(Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLock;)V
     .locals 3
-    .param p1    # Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLock;
 
     iget-object v1, p1, Lcom/android/server/ssrm/CustomFrequencyManagerService$FrequencyRequest;->binder:Landroid/os/IBinder;
 
@@ -555,7 +552,6 @@
 
 .method getAllDVFSLocks(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -610,8 +606,6 @@
 
 .method getIndex(Landroid/os/IBinder;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -816,8 +810,6 @@
 
 .method removeLock(Landroid/os/IBinder;Ljava/lang/String;)Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLock;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/ssrm/CustomFrequencyManagerService$DVFSLockList;->getIndex(Landroid/os/IBinder;Ljava/lang/String;)I
 

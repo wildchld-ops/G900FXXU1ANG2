@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Serializable;Z)V
     .locals 2
-    .param p1    # Ljava/io/Serializable;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -48,7 +46,6 @@
 
 .method private createBytes(Ljava/io/Serializable;)V
     .locals 3
-    .param p1    # Ljava/io/Serializable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -155,7 +152,6 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

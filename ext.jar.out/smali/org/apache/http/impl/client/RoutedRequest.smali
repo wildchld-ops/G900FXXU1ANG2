@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/RequestWrapper;Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 0
-    .param p1    # Lorg/apache/http/impl/client/RequestWrapper;
-    .param p2    # Lorg/apache/http/conn/routing/HttpRoute;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

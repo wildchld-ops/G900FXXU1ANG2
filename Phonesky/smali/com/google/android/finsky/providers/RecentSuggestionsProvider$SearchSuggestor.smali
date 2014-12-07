@@ -103,9 +103,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -126,11 +123,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;ZZI)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
 
     invoke-direct {p0, p2, p1}, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$AsyncSuggestionAuthority;-><init>(Ljava/lang/String;Landroid/content/Context;)V
 
@@ -189,10 +181,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;Lorg/json/JSONObject;Ljava/lang/String;Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor$RefCountedOnCompleteListener;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;
-    .param p1    # Lorg/json/JSONObject;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor$RefCountedOnCompleteListener;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;->getIconUri(Lorg/json/JSONObject;Ljava/lang/String;Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor$RefCountedOnCompleteListener;)Landroid/net/Uri;
 
@@ -203,7 +191,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;
 
     iget-object v0, p0, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;->mDescription:Ljava/lang/String;
 
@@ -212,7 +199,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;->mAppsOnly:Z
 
@@ -221,7 +207,6 @@
 
 .method private getBackendCanonicalIconUri(I)Landroid/net/Uri;
     .locals 7
-    .param p1    # I
 
     :try_start_0
     sget-object v5, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;->BACKEND_ID_TO_ICON_PACKAGE_NAME:[Ljava/lang/String;
@@ -308,9 +293,6 @@
 
 .method private getIconUri(Lorg/json/JSONObject;Ljava/lang/String;Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor$RefCountedOnCompleteListener;)Landroid/net/Uri;
     .locals 7
-    .param p1    # Lorg/json/JSONObject;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor$RefCountedOnCompleteListener;
 
     const-string v6, "b"
 
@@ -465,7 +447,6 @@
 # virtual methods
 .method protected makeRequest(Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;
 
     sget-object v3, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$SearchSuggestor;->BASE_URI:Landroid/net/Uri;
 

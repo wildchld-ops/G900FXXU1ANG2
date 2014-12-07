@@ -164,13 +164,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/Cursor;Lcom/android/mms/ui/MessageListAdapter$ColumnsMap;Ljava/util/regex/Pattern;ZZ)V
     .locals 40
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Lcom/android/mms/ui/MessageListAdapter$ColumnsMap;
-    .param p5    # Ljava/util/regex/Pattern;
-    .param p6    # Z
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -3356,9 +3349,6 @@
 
 .method private ensureValidityMultimediaMessagePdu(Lcom/google/android/mms/pdu/MultimediaMessagePdu;Lcom/google/android/mms/pdu/PduPersister;Landroid/net/Uri;)Lcom/google/android/mms/pdu/MultimediaMessagePdu;
     .locals 6
-    .param p1    # Lcom/google/android/mms/pdu/MultimediaMessagePdu;
-    .param p2    # Lcom/google/android/mms/pdu/PduPersister;
-    .param p3    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -3576,7 +3566,6 @@
 
 .method private getPduForEmail(Lcom/google/android/mms/pdu/PduBody;)Lcom/google/android/mms/pdu/PduBody;
     .locals 28
-    .param p1    # Lcom/google/android/mms/pdu/PduBody;
 
     new-instance v20, Lcom/google/android/mms/pdu/PduBody;
 
@@ -4003,7 +3992,6 @@
 
 .method private getSlideBody(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/MessageItem;->isDownloaded()Z
 
@@ -4056,8 +4044,6 @@
 
 .method private interpretFrom(Lcom/google/android/mms/pdu/EncodedStringValue;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Lcom/google/android/mms/pdu/EncodedStringValue;
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -4152,7 +4138,6 @@
 
 .method public getBodyAt(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/MessageItem;->isMms()Z
 
@@ -5605,7 +5590,6 @@
 
 .method public setCachedBottomFormattedMessage(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageItem;->mCachedTopFormattedMessage:Ljava/lang/CharSequence;
 
@@ -5614,7 +5598,6 @@
 
 .method public setCachedFormattedMessage(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageItem;->mCachedFormattedMessage:Ljava/lang/CharSequence;
 
@@ -5623,7 +5606,6 @@
 
 .method public setCachedFormattedSender(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageItem;->mCachedFormattedSender:Ljava/lang/CharSequence;
 
@@ -5632,7 +5614,6 @@
 
 .method public setCachedFormattedSubject(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageItem;->mCachedFormattedSubject:Ljava/lang/CharSequence;
 

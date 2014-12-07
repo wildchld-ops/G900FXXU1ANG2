@@ -19,7 +19,6 @@
 # direct methods
 .method public static getHandler(Lcom/google/android/finsky/activities/DetailsDataBasedFragment;)Lcom/google/android/finsky/utils/Nfc$NfcHandler;
     .locals 5
-    .param p0    # Lcom/google/android/finsky/activities/DetailsDataBasedFragment;
 
     const/4 v4, 0x0
 

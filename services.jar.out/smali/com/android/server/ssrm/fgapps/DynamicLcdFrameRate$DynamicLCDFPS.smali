@@ -148,7 +148,6 @@
 
 .method protected updateSysFSFile(I)V
     .locals 5
-    .param p1    # I
 
     # getter for: Lcom/android/server/ssrm/fgapps/DynamicLcdFrameRate;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/ssrm/fgapps/DynamicLcdFrameRate;->access$000()Ljava/lang/String;

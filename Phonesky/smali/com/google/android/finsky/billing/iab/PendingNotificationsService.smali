@@ -34,8 +34,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/billing/iab/PendingNotificationsService;->rescheduleMarketAlarm(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -44,8 +42,6 @@
 
 .method public static cancelMarketAlarm(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "Canceling alarm for account=%s"
 
@@ -90,8 +86,6 @@
 
 .method private static createPendingIntentForMarketAlarm(Landroid/content/Context;Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -130,7 +124,6 @@
 
 .method private handleAlarm(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -155,10 +148,6 @@
 
 .method public static handlePendingNotifications(Landroid/content/Context;Ljava/lang/String;Lcom/google/android/finsky/protos/VendingProtos$PendingNotificationsProto;Z)Z
     .locals 22
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/protos/VendingProtos$PendingNotificationsProto;
-    .param p3    # Z
 
     const/4 v6, 0x0
 
@@ -403,8 +392,6 @@
 
 .method private static rescheduleMarketAlarm(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/billing/iab/PendingNotificationsService$4;
 
@@ -437,9 +424,6 @@
 
 .method public static setMarketAlarm(Landroid/content/Context;Ljava/lang/String;J)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -458,10 +442,6 @@
 
 .method public static setMarketAlarm(Landroid/content/Context;Ljava/lang/String;JJ)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     const-string v4, "Setting alarm for account=%s, duration=%d"
 
@@ -532,7 +512,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -541,9 +520,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x2
 

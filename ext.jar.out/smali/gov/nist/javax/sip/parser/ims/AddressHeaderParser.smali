@@ -6,7 +6,6 @@
 # direct methods
 .method protected constructor <init>(Lgov/nist/javax/sip/parser/Lexer;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/parser/Lexer;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/HeaderParser;-><init>(Lgov/nist/javax/sip/parser/Lexer;)V
 
@@ -15,7 +14,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/parser/HeaderParser;-><init>(Ljava/lang/String;)V
 
@@ -26,7 +24,6 @@
 # virtual methods
 .method protected parse(Lgov/nist/javax/sip/header/ims/AddressHeaderIms;)V
     .locals 5
-    .param p1    # Lgov/nist/javax/sip/header/ims/AddressHeaderIms;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

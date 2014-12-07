@@ -48,7 +48,6 @@
 
 .method protected static getAddAccountIntent(Landroid/content/Context;)Landroid/app/PendingIntent;
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -87,8 +86,6 @@
 
 .method protected static getBoundingBoxes(Landroid/content/Context;I)[I
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v3, 0x7f0b00c5
 
@@ -187,8 +184,6 @@
 
 .method private sendAnalytics(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {p1}, Landroid/appwidget/AppWidgetManager;->getInstance(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;
 
@@ -396,8 +391,6 @@
 
 .method public static varargs update(Landroid/content/Context;Ljava/lang/Class;[I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -428,7 +421,6 @@
 # virtual methods
 .method protected getComponentName(Landroid/content/Context;)Landroid/content/ComponentName;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/ComponentName;
 
@@ -446,10 +438,6 @@
 
 .method protected onDefaultConfiguration(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Landroid/content/Intent;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
 
     invoke-static {p1}, Lcom/google/android/finsky/widget/WidgetTypeMap;->get(Landroid/content/Context;)Lcom/google/android/finsky/widget/WidgetTypeMap;
 
@@ -482,8 +470,6 @@
 
 .method public onDeleted(Landroid/content/Context;[I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     invoke-static {p1}, Lcom/google/android/finsky/widget/WidgetTypeMap;->get(Landroid/content/Context;)Lcom/google/android/finsky/widget/WidgetTypeMap;
 
@@ -516,8 +502,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-super/range {p0 .. p2}, Landroid/appwidget/AppWidgetProvider;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -865,9 +849,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/finsky/widget/BaseWidgetProvider;->updateWidgets(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
 

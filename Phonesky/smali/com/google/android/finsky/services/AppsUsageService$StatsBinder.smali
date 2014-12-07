@@ -47,8 +47,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/services/AppsUsageService;Lcom/google/android/finsky/services/AppsUsageService$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/services/AppsUsageService;
-    .param p2    # Lcom/google/android/finsky/services/AppsUsageService$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/services/AppsUsageService$StatsBinder;-><init>(Lcom/google/android/finsky/services/AppsUsageService;)V
 

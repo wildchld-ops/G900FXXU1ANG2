@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/sec/android/touchwiz/widget/TwListView;Lcom/samsung/dialer/widget/CallLogListSweepActionHandler;Lcom/android/dialer/calllog/CallLogAdapter;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/android/touchwiz/widget/TwListView;
-    .param p3    # Lcom/samsung/dialer/widget/CallLogListSweepActionHandler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,7 +68,6 @@
 # virtual methods
 .method public onSweepActionCanceled(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CallLogListSweepActionListener"
 
@@ -100,8 +96,6 @@
 
 .method public onSweepActionFired(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -295,7 +289,6 @@
 
 .method public onSweepActionStarted(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "CallLogListSweepActionListener"
 
@@ -555,7 +548,6 @@
 
 .method public setImsLowSignalHelper(Lcom/samsung/contacts/util/ImsLowSignalHelper;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/util/ImsLowSignalHelper;
 
     iput-object p1, p0, Lcom/samsung/dialer/widget/CallLogListSweepActionListener;->mImsLowSignalHelper:Lcom/samsung/contacts/util/ImsLowSignalHelper;
 

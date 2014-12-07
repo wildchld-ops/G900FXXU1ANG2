@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/common/ContactPhotoManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/ContactPhotoManager$1;
 
     invoke-direct {p0}, Lcom/android/contacts/common/ContactPhotoManager$AvatarDefaultImageProvider;-><init>()V
 
@@ -36,10 +35,6 @@
 # virtual methods
 .method public applyDefaultImage(Landroid/widget/ImageView;IZJ)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # J
 
     invoke-static {p4, p5}, Lcom/android/contacts/util/ContactPhotoUtils;->getDefaultPhotoBackgroundColor(J)I
 

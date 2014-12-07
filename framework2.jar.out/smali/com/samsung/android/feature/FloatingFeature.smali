@@ -546,7 +546,6 @@
 # virtual methods
 .method public getEnableStatus(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -591,8 +590,6 @@
 
 .method public getEnableStatus(Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/feature/FloatingFeature;->mFeatureList:Ljava/util/Hashtable;
@@ -629,7 +626,6 @@
 
 .method public getInteger(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -674,8 +670,6 @@
 
 .method public getInteger(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/feature/FloatingFeature;->mFeatureList:Ljava/util/Hashtable;
@@ -712,7 +706,6 @@
 
 .method public getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/feature/FloatingFeature;->mFeatureList:Ljava/util/Hashtable;
@@ -751,8 +744,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/feature/FloatingFeature;->mFeatureList:Ljava/util/Hashtable;

@@ -6,8 +6,6 @@
 # direct methods
 .method public static get(Landroid/content/Context;Lcom/android/volley/VolleyError;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const v3, 0x7f090143
 

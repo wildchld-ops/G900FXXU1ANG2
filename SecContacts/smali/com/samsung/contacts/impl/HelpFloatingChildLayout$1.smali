@@ -41,7 +41,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/samsung/contacts/impl/HelpFloatingChildLayout$1;->this$0:Lcom/samsung/contacts/impl/HelpFloatingChildLayout;
 
@@ -128,7 +127,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/impl/HelpFloatingChildLayout$1;->val$isExitAnimation:Z
 

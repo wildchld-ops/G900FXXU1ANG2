@@ -42,8 +42,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-boolean v0, p0, Lcom/android/server/cepproxyks/ScepKeystoreProxyService$2;->mConnectedAtLeastOnce:Z
 
@@ -82,7 +80,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
 
     return-void
 .end method

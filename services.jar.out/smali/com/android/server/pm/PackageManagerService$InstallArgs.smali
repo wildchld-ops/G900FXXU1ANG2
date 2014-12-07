@@ -33,12 +33,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Landroid/content/pm/ManifestDigest;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/pm/IPackageInstallObserver;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/pm/ManifestDigest;
-    .param p6    # Landroid/os/UserHandle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,13 +57,6 @@
 
 .method constructor <init>(Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Ljava/lang/String;Landroid/content/pm/ManifestDigest;Landroid/os/UserHandle;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/pm/IPackageInstallObserver;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/content/pm/ManifestDigest;
-    .param p7    # Landroid/os/UserHandle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -116,7 +103,6 @@
 
 .method doPostCopy(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 

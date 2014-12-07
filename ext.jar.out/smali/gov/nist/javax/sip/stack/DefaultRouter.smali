@@ -23,8 +23,6 @@
 
 .method public constructor <init>(Ljavax/sip/SipStack;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljavax/sip/SipStack;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,8 +74,6 @@
 
 .method private final createHop(Ljavax/sip/address/SipURI;Ljavax/sip/message/Request;)Ljavax/sip/address/Hop;
     .locals 7
-    .param p1    # Ljavax/sip/address/SipURI;
-    .param p2    # Ljavax/sip/message/Request;
 
     invoke-interface {p1}, Ljavax/sip/address/SipURI;->isSecure()Z
 
@@ -180,7 +176,6 @@
 # virtual methods
 .method public fixStrictRouting(Lgov/nist/javax/sip/message/SIPRequest;)V
     .locals 8
-    .param p1    # Lgov/nist/javax/sip/message/SIPRequest;
 
     invoke-virtual {p1}, Lgov/nist/javax/sip/message/SIPMessage;->getRouteHeaders()Lgov/nist/javax/sip/header/RouteList;
 
@@ -262,7 +257,6 @@
 
 .method public getNextHop(Ljavax/sip/message/Request;)Ljavax/sip/address/Hop;
     .locals 11
-    .param p1    # Ljavax/sip/message/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;
@@ -614,7 +608,6 @@
 
 .method public getNextHops(Ljavax/sip/message/Request;)Ljava/util/ListIterator;
     .locals 3
-    .param p1    # Ljavax/sip/message/Request;
 
     :try_start_0
     new-instance v1, Ljava/util/LinkedList;

@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/CameraSharingDeviceDialog;Landroid/graphics/Bitmap;Ljava/lang/String;Z)V
     .locals 0
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraSharingDeviceDialog$DeviceList;->this$0:Lcom/sec/android/app/camera/CameraSharingDeviceDialog;
 

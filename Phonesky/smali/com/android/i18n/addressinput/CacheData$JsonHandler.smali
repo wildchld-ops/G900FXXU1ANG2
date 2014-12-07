@@ -27,9 +27,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/i18n/addressinput/CacheData;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/json/JSONObject;
-    .param p4    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/CacheData$JsonHandler;->this$0:Lcom/android/i18n/addressinput/CacheData;
 
@@ -48,11 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/android/i18n/addressinput/CacheData;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/i18n/addressinput/DataLoadListener;Lcom/android/i18n/addressinput/CacheData$1;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/CacheData;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/json/JSONObject;
-    .param p4    # Lcom/android/i18n/addressinput/DataLoadListener;
-    .param p5    # Lcom/android/i18n/addressinput/CacheData$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/i18n/addressinput/CacheData$JsonHandler;-><init>(Lcom/android/i18n/addressinput/CacheData;Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/i18n/addressinput/DataLoadListener;)V
 
@@ -61,8 +53,6 @@
 
 .method static synthetic access$500(Lcom/android/i18n/addressinput/CacheData$JsonHandler;Lcom/android/i18n/addressinput/JsoMap;)V
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/CacheData$JsonHandler;
-    .param p1    # Lcom/android/i18n/addressinput/JsoMap;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/CacheData$JsonHandler;->handleJson(Lcom/android/i18n/addressinput/JsoMap;)V
 
@@ -71,7 +61,6 @@
 
 .method private handleJson(Lcom/android/i18n/addressinput/JsoMap;)V
     .locals 5
-    .param p1    # Lcom/android/i18n/addressinput/JsoMap;
 
     if-nez p1, :cond_0
 

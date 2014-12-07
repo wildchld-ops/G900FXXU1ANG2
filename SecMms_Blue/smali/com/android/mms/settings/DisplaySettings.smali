@@ -34,8 +34,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -319,7 +317,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -381,7 +378,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -413,8 +409,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v1, "pref_key_font_size_by_volume_key_enable"
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public SecExternalDisplayCreateSurface(Ljava/lang/String;II)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -106,9 +102,6 @@
 
 .method public SecExternalDisplayDestroySurface(Ljava/lang/String;II)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -281,7 +274,6 @@
 
 .method public SecExternalDisplayGetStatus(I)Z
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -349,7 +341,6 @@
 
 .method public SecExternalDisplayRegisterEVF(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -412,7 +403,6 @@
 
 .method public SecExternalDisplaySet3DMode(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -468,7 +458,6 @@
 
 .method public SecExternalDisplaySetExternalUITransform(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -531,7 +520,6 @@
 
 .method public SecExternalDisplaySetForceMirrorMode(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -609,8 +597,6 @@
 
 .method public SecExternalDisplaySetGpuLock(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -675,7 +661,6 @@
 
 .method public SecExternalDisplaySetOutputMode(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -738,7 +723,6 @@
 
 .method public SecExternalDisplaySetPause(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -816,7 +800,6 @@
 
 .method public SecExternalDisplaySetResolution(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -879,8 +862,6 @@
 
 .method public SecExternalDisplaySetStatus(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -960,7 +941,6 @@
 
 .method public SecExternalDisplayType(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1038,7 +1018,6 @@
 
 .method public acquireCpuMinLock(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1090,7 +1069,6 @@
 
 .method public acquireGpuMinLock(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1256,10 +1234,6 @@
 
 .method public setHMTParams(FFF[F)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # [F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

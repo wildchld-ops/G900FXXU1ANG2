@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/Document;)I
     .locals 5
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/api/model/Document;->getTitle()Ljava/lang/String;
 
@@ -87,8 +85,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/api/model/Document;
 

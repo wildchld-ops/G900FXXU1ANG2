@@ -27,7 +27,6 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 1
-    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 

@@ -92,9 +92,6 @@
 
 .method private adjustPositions(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-gt p1, p2, :cond_1
 
@@ -140,12 +137,6 @@
 
 .method static createFromAppFolderItem(Landroid/content/Context;Lcom/android/launcher2/AppFolderItem;JIII)Lcom/android/launcher2/HomeFolderItem;
     .locals 16
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/AppFolderItem;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     new-instance v2, Lcom/android/launcher2/HomeFolderItem;
 
@@ -278,7 +269,6 @@
 # virtual methods
 .method public addItem(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v0, -0x1
 
@@ -289,8 +279,6 @@
 
 .method public addItemAt(Lcom/android/launcher2/BaseItem;I)V
     .locals 11
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
 
     const/4 v10, -0x1
 
@@ -455,7 +443,6 @@
 
 .method public addListener(Lcom/android/launcher2/HomeFolderItem$FolderListener;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeFolderItem$FolderListener;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeFolderItem;->listeners:Ljava/util/ArrayList;
 
@@ -466,7 +453,6 @@
 
 .method public contains(Lcom/android/launcher2/BaseItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeFolderItem;->contents:Ljava/util/ArrayList;
 
@@ -503,7 +489,6 @@
 
 .method public getItemAt(I)Lcom/android/launcher2/BaseItem;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -567,7 +552,6 @@
 
 .method public isValidItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p1, Lcom/android/launcher2/BaseItem;->mType:Lcom/android/launcher2/BaseItem$Type;
 
@@ -627,7 +611,6 @@
 
 .method loadItem(Lcom/android/launcher2/HomeItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeFolderItem;->contents:Ljava/util/ArrayList;
 
@@ -688,7 +671,6 @@
 
 .method onAddToDatabase(Landroid/content/ContentValues;)V
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/HomeItem;->onAddToDatabase(Landroid/content/ContentValues;)V
 
@@ -725,7 +707,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v1, p0, Lcom/android/launcher2/HomeFolderItem;->contents:Ljava/util/ArrayList;
 
@@ -782,7 +763,6 @@
 
 .method public removeListener(Lcom/android/launcher2/HomeFolderItem$FolderListener;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeFolderItem$FolderListener;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeFolderItem;->listeners:Ljava/util/ArrayList;
 
@@ -802,7 +782,6 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/HomeFolderItem;->mEnabled:Z
 
@@ -811,7 +790,6 @@
 
 .method public setFolderColor(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/BaseItem;->mColor:I
 
@@ -832,7 +810,6 @@
 
 .method public setOpened(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/HomeFolderItem;->mOpened:Z
 
@@ -841,8 +818,6 @@
 
 .method public setTitle(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     iput-object p2, p0, Lcom/android/launcher2/BaseItem;->mTitle:Ljava/lang/String;
 

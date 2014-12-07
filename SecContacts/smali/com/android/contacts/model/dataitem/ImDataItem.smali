@@ -10,7 +10,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/ContentValues;)V
     .locals 1
-    .param p1    # Landroid/content/ContentValues;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/model/dataitem/DataItem;-><init>(Landroid/content/ContentValues;)V
 
@@ -23,8 +22,6 @@
 
 .method private constructor <init>(Landroid/content/ContentValues;Z)V
     .locals 0
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/contacts/model/dataitem/DataItem;-><init>(Landroid/content/ContentValues;)V
 
@@ -35,7 +32,6 @@
 
 .method public static createFromEmail(Lcom/android/contacts/model/dataitem/EmailDataItem;)Lcom/android/contacts/model/dataitem/ImDataItem;
     .locals 3
-    .param p0    # Lcom/android/contacts/model/dataitem/EmailDataItem;
 
     new-instance v0, Lcom/android/contacts/model/dataitem/ImDataItem;
 

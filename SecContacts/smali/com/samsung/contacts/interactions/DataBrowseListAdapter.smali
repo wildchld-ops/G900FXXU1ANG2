@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -73,9 +70,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 
     const-string v3, ""
 
@@ -284,9 +278,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -321,8 +312,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/DataBrowseListAdapter;->mInflater:Landroid/view/LayoutInflater;
 

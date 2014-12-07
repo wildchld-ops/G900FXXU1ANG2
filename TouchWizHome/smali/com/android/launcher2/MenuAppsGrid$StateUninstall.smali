@@ -49,8 +49,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/MenuAppsGrid$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateUninstall;-><init>(Lcom/android/launcher2/MenuAppsGrid;)V
 
@@ -59,7 +57,6 @@
 
 .method static synthetic access$4800(Lcom/android/launcher2/MenuAppsGrid$StateUninstall;)Lcom/android/launcher2/MenuAppsGrid$State;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid$StateUninstall;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StateUninstall;->mPreviousState:Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -68,7 +65,6 @@
 
 .method private isUninstallable(Lcom/android/launcher2/AppItem;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     const/4 v1, 0x1
 
@@ -136,7 +132,6 @@
 # virtual methods
 .method public enter(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 11
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -505,7 +500,6 @@
 
 .method public exit(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 5
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -614,8 +608,6 @@
 
 .method public onClickAppItem(Lcom/android/launcher2/AppItem;Landroid/view/View;)Z
     .locals 4
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/launcher2/MenuAppsGrid$StateUninstall;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 

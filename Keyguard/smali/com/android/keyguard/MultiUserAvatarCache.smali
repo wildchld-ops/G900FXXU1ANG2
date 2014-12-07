@@ -36,7 +36,6 @@
 # virtual methods
 .method public clear(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/MultiUserAvatarCache;->mCache:Ljava/util/HashMap;
 
@@ -51,7 +50,6 @@
 
 .method public get(I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/keyguard/MultiUserAvatarCache;->mCache:Ljava/util/HashMap;
 
@@ -70,8 +68,6 @@
 
 .method public put(ILandroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/keyguard/MultiUserAvatarCache;->mCache:Ljava/util/HashMap;
 

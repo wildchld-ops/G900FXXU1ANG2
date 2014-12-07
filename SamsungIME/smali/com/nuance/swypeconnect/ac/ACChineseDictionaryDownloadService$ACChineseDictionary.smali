@@ -23,7 +23,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionary;)V
     .locals 0
-    .param p2    # Lcom/nuance/connect/api/AddonDictionariesService$AddonDictionary;
 
     iput-object p1, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;->this$0:Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 
@@ -36,7 +35,6 @@
 
 .method static synthetic access$600(Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;
 
     invoke-direct {p0}, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;->getDictionary()Ljava/lang/String;
 
@@ -59,7 +57,6 @@
 
 .method private getLocalizedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService$ACChineseDictionary;->this$0:Lcom/nuance/swypeconnect/ac/ACChineseDictionaryDownloadService;
 

@@ -17,7 +17,6 @@
 
 .method public static getContentCharset(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;
     .locals 3
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -48,7 +47,6 @@
 
 .method public static getHttpElementCharset(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;
     .locals 3
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -79,7 +77,6 @@
 
 .method public static getUserAgent(Lorg/apache/http/params/HttpParams;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -105,7 +102,6 @@
 
 .method public static getVersion(Lorg/apache/http/params/HttpParams;)Lorg/apache/http/ProtocolVersion;
     .locals 3
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 
@@ -139,8 +135,6 @@
 
 .method public static setContentCharset(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -162,8 +156,6 @@
 
 .method public static setHttpElementCharset(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -185,8 +177,6 @@
 
 .method public static setUseExpectContinue(Lorg/apache/http/params/HttpParams;Z)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Z
 
     if-nez p0, :cond_0
 
@@ -208,8 +198,6 @@
 
 .method public static setUserAgent(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -231,8 +219,6 @@
 
 .method public static setVersion(Lorg/apache/http/params/HttpParams;Lorg/apache/http/ProtocolVersion;)V
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
-    .param p1    # Lorg/apache/http/ProtocolVersion;
 
     if-nez p0, :cond_0
 
@@ -254,7 +240,6 @@
 
 .method public static useExpectContinue(Lorg/apache/http/params/HttpParams;)Z
     .locals 2
-    .param p0    # Lorg/apache/http/params/HttpParams;
 
     if-nez p0, :cond_0
 

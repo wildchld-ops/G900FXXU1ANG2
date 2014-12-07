@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/LauncherModel;Z)V
     .locals 0
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher2/LauncherModel;
 
@@ -43,8 +42,6 @@
 
 .method static synthetic access$1202(Lcom/android/launcher2/LauncherModel$LoaderTask;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherModel$LoaderTask;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherModel$LoaderTask;->mStep1Finished:Z
 
@@ -53,7 +50,6 @@
 
 .method static synthetic access$2300(Lcom/android/launcher2/LauncherModel$LoaderTask;)Lcom/android/launcher2/LauncherModel$Callbacks;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherModel$LoaderTask;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherModel$LoaderTask;->getLoaderTaskCallbacks()Lcom/android/launcher2/LauncherModel$Callbacks;
 
@@ -64,7 +60,6 @@
 
 .method static synthetic access$3400(Lcom/android/launcher2/LauncherModel$LoaderTask;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherModel$LoaderTask;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherModel$LoaderTask;->mStopped:Z
 
@@ -624,8 +619,6 @@
 
 .method private checkItemPlacement([[[Lcom/android/launcher2/HomeItem;Lcom/android/launcher2/HomeItem;)Z
     .locals 10
-    .param p1    # [[[Lcom/android/launcher2/HomeItem;
-    .param p2    # Lcom/android/launcher2/HomeItem;
 
     const/4 v5, 0x1
 
@@ -1325,7 +1318,6 @@
 
 .method private loadWorkspace(Z)V
     .locals 82
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

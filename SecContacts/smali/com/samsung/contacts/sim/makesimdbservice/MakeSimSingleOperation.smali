@@ -16,7 +16,6 @@
 # virtual methods
 .method public getADNEditable(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "adn_editable"
 
@@ -25,7 +24,6 @@
 
 .method public getADNEmailsUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/contacts/common/util/Constants;->ADN_EMAILS_URI:Landroid/net/Uri;
 
@@ -34,7 +32,6 @@
 
 .method public getAdnAnrUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/contacts/common/util/Constants;->ADN_ANR_URI:Landroid/net/Uri;
 
@@ -43,7 +40,6 @@
 
 .method public getAdnUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/contacts/common/util/Constants;->ADN_URI:Landroid/net/Uri;
 
@@ -52,7 +48,6 @@
 
 .method public getCardStatus(I)I
     .locals 2
-    .param p1    # I
 
     const-string v0, "gsm.sim.currentcardstatus"
 
@@ -71,7 +66,6 @@
 
 .method public getFDNOnInitSimStatus(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "fdn_init_sim_status"
 
@@ -80,7 +74,6 @@
 
 .method public getFdnOnAdnDeleted(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "fdn_on_adn_deleted"
 
@@ -89,7 +82,6 @@
 
 .method public getICCType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "ril.ICC_TYPE"
 
@@ -98,7 +90,6 @@
 
 .method public getIccChangeKey(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "ril.isIccChanged"
 
@@ -107,7 +98,6 @@
 
 .method public getIccChangedBootTime(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "runtime_firstboot_time"
 
@@ -116,7 +106,6 @@
 
 .method public getIccPhoneBook(I)Lcom/android/internal/telephony/IIccPhoneBook;
     .locals 1
-    .param p1    # I
 
     const-string v0, "simphonebook"
 
@@ -133,7 +122,6 @@
 
 .method public getPBInitKey(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "ril.initPB"
 
@@ -142,7 +130,6 @@
 
 .method public getRawContactsADNEmailsUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/contacts/common/util/Constants;->RAW_CONTACT_ADN_EMAILS_URI:Landroid/net/Uri;
 
@@ -151,7 +138,6 @@
 
 .method public getRawContactsADNUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/contacts/common/util/Constants;->RAW_CONTACT_ADN_URI:Landroid/net/Uri;
 
@@ -160,7 +146,6 @@
 
 .method public getSimAccountName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "primary.sim.account_name"
 
@@ -169,7 +154,6 @@
 
 .method public getSimAccountType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "vnd.sec.contact.sim"
 
@@ -178,7 +162,6 @@
 
 .method public getSimDBReady(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "sim_db_ready"
 
@@ -187,7 +170,6 @@
 
 .method public getTelephonyManager(I)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -198,7 +180,6 @@
 
 .method public isSimAccount(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, " account_type = \'vnd.sec.contact.sim\' AND account_name = \'primary.sim.account_name\' "
 

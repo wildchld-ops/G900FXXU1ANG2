@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Lcom/android/mms/model/RegionModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -52,11 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Lcom/android/mms/model/RegionModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -84,11 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/drm/DrmWrapper;Lcom/android/mms/model/RegionModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/mms/drm/DrmWrapper;
-    .param p5    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -116,7 +103,6 @@
 
 .method private initFromContentUri(Landroid/net/Uri;)V
     .locals 13
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -455,7 +441,6 @@
 
 .method private initFromFile(Landroid/net/Uri;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
@@ -597,7 +582,6 @@
 
 .method private initModelFromUri(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -690,7 +674,6 @@
 
 .method public handleEvent(Lorg/w3c/dom/events/Event;)V
     .locals 7
-    .param p1    # Lorg/w3c/dom/events/Event;
 
     const/4 v6, 0x0
 

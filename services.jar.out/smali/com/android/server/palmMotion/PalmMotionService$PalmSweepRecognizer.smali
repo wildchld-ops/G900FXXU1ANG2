@@ -143,8 +143,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/palmMotion/PalmMotionService;Lcom/android/server/palmMotion/PalmMotionService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService;
-    .param p2    # Lcom/android/server/palmMotion/PalmMotionService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;-><init>(Lcom/android/server/palmMotion/PalmMotionService;)V
 
@@ -153,7 +151,6 @@
 
 .method static synthetic access$600(Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;)Z
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;
 
     iget-boolean v0, p0, Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;->mPreSweepDown:Z
 
@@ -162,8 +159,6 @@
 
 .method static synthetic access$602(Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;->mPreSweepDown:Z
 
@@ -172,7 +167,6 @@
 
 .method static synthetic access$700(Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;)Z
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;
 
     iget-boolean v0, p0, Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;->mSweepDown:Z
 
@@ -181,8 +175,6 @@
 
 .method static synthetic access$702(Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;->mSweepDown:Z
 
@@ -193,7 +185,6 @@
 # virtual methods
 .method public CalculateHorizontalSweepData(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)V
     .locals 6
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     const/high16 v3, 0x42480000
 
@@ -466,7 +457,6 @@
 
 .method public GetRangeNum(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)I
     .locals 3
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     const/4 v0, 0x0
 
@@ -552,7 +542,6 @@
 
 .method public Initialize(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)V
     .locals 5
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     const/4 v4, 0x0
 
@@ -643,7 +632,6 @@
 
 .method public Process(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)V
     .locals 2
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     iget v0, p0, Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;->mSmeanX:F
 
@@ -673,7 +661,6 @@
 
 .method public RocognizeHorizontalSweepData(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)V
     .locals 9
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     const/high16 v4, 0x43960000
 
@@ -1179,7 +1166,6 @@
 
 .method public SetArrMaxTouchMajor(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)V
     .locals 3
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
     invoke-virtual {p0, p1}, Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;->GetRangeNum(Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;)I
 

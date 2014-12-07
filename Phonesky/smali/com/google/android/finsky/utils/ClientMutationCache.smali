@@ -53,7 +53,6 @@
 # virtual methods
 .method public dismissRecommendation(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/ClientMutationCache;->mDismissedRecommendationDocIds:Ljava/util/Set;
 
@@ -64,8 +63,6 @@
 
 .method public getCachedReview(Ljava/lang/String;Lcom/google/android/finsky/protos/DocumentV2$Review;)Lcom/google/android/finsky/protos/DocumentV2$Review;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/protos/DocumentV2$Review;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/ClientMutationCache;->mReviewedDocIds:Ljava/util/Map;
 
@@ -94,7 +91,6 @@
 
 .method public isDismissedRecommendation(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/ClientMutationCache;->mDismissedRecommendationDocIds:Ljava/util/Set;
 
@@ -107,7 +103,6 @@
 
 .method public removeCachedReview(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/ClientMutationCache;->mReviewedDocIds:Ljava/util/Map;
 
@@ -118,11 +113,6 @@
 
 .method public updateCachedReview(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v3, 0x1
 
@@ -165,7 +155,6 @@
 
 .method public updateCachedReviewDeleted(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/ClientMutationCache;->mReviewedDocIds:Ljava/util/Map;
 

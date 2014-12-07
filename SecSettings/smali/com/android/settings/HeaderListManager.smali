@@ -191,7 +191,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -417,7 +416,6 @@
 
 .method private updateHeaderListByType(ILjava/util/List;Ljava/util/HashMap;)V
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -660,7 +658,6 @@
 
 .method public setPosition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/HeaderListManager;->pos:I
 

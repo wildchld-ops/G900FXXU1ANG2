@@ -60,9 +60,6 @@
 
 .method private static appendQueryParameter(Landroid/net/Uri$Builder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/net/Uri$Builder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -78,9 +75,6 @@
 
 .method public static displayNameToStructuredName(Landroid/content/Context;Ljava/lang/String;Landroid/content/ContentValues;)Landroid/content/ContentValues;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     if-nez p2, :cond_0
 
@@ -130,8 +124,6 @@
 
 .method public static displayNameToStructuredName(Landroid/content/Context;Ljava/lang/String;)Ljava/util/Map;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -276,8 +268,6 @@
 
 .method private static fetchDisplayName(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -337,8 +327,6 @@
 
 .method public static structuredNameToDisplayName(Landroid/content/Context;Landroid/content/ContentValues;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentValues;
 
     sget-object v5, Landroid/provider/ContactsContract;->AUTHORITY_URI:Landroid/net/Uri;
 
@@ -394,7 +382,6 @@
 
 .method public static structuredNameToDisplayName(Landroid/content/Context;Ljava/util/Map;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

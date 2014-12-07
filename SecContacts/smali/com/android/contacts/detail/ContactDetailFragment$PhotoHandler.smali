@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/contacts/detail/ContactDetailFragment;Landroid/content/Context;IZLcom/android/contacts/model/RawContactDeltaList;)V
     .locals 6
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Lcom/android/contacts/model/RawContactDeltaList;
 
     const/4 v2, 0x0
 
@@ -71,9 +67,6 @@
 
 .method protected startAvatarActivity(Landroid/content/Intent;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;->this$0:Lcom/android/contacts/detail/ContactDetailFragment;
 
@@ -108,9 +101,6 @@
 
 .method public startPhotoActivity(Landroid/content/Intent;ILandroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;->this$0:Lcom/android/contacts/detail/ContactDetailFragment;
 
@@ -145,9 +135,6 @@
 
 .method protected startPhotoActivity(Landroid/content/Intent;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;->this$0:Lcom/android/contacts/detail/ContactDetailFragment;
 
@@ -182,8 +169,6 @@
 
 .method protected startSMemoActivity(Landroid/content/Intent;I)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;->this$0:Lcom/android/contacts/detail/ContactDetailFragment;
 
@@ -194,8 +179,6 @@
 
 .method protected startSNoteActivity(Landroid/content/Intent;I)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;->this$0:Lcom/android/contacts/detail/ContactDetailFragment;
 

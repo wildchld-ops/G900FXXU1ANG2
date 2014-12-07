@@ -269,7 +269,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

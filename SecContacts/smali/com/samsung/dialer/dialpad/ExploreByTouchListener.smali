@@ -57,8 +57,6 @@
 
 .method static synthetic access$102(Lcom/samsung/dialer/dialpad/ExploreByTouchListener;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/dialer/dialpad/ExploreByTouchListener;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/dialer/dialpad/ExploreByTouchListener;->mLongPressed:Z
 
@@ -67,7 +65,6 @@
 
 .method private findNumberByView(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -173,8 +170,6 @@
 # virtual methods
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/dialpad/ExploreByTouchListener;->findNumberByView(Landroid/view/View;)I
 

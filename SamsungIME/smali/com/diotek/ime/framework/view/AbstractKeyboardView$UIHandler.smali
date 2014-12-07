@@ -55,7 +55,6 @@
 
 .method public cancelDismissPreview(Lcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     const/4 v0, 0x2
 
@@ -135,7 +134,6 @@
 
 .method public dismissAllPreview(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v2, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$UIHandler;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -218,8 +216,6 @@
 
 .method public dismissPreview(JLcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     const/4 v0, 0x2
 
@@ -234,7 +230,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 21
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 
@@ -847,7 +842,6 @@
 
 .method public invalidateHoverKey(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x1e
 
@@ -939,9 +933,6 @@
 
 .method public startKeyRepeatTimer(JILcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     const/4 v0, 0x1
 
@@ -962,7 +953,6 @@
 
 .method public startLongPressSplitMoveTimer(J)V
     .locals 2
-    .param p1    # J
 
     const/16 v1, 0x12
 
@@ -990,9 +980,6 @@
 
 .method public startLongPressTimer(JILcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     const/4 v1, 0x4
 
@@ -1021,7 +1008,6 @@
 
 .method public startTextDeleteAllTimer(J)V
     .locals 1
-    .param p1    # J
 
     const/16 v0, 0x2a
 

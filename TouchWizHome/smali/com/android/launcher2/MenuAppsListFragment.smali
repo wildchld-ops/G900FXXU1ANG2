@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MenuAppsListFragment;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsListFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsListFragment;->mNormalTitleBar:Landroid/view/ViewGroup;
 
@@ -107,11 +106,6 @@
 
 .method public onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
     .locals 4
-    .param p1    # Landroid/widget/ExpandableListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
 
     const/4 v2, 0x1
 
@@ -171,7 +165,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "MenuAppsListFragment"
 
@@ -222,9 +215,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -350,10 +340,6 @@
 
 .method public onGroupClick(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
     .locals 4
-    .param p1    # Landroid/widget/ExpandableListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     const/4 v3, 0x0
 
@@ -411,14 +397,12 @@
 
 .method public onHideTab(Lcom/android/launcher2/MenuView;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     return-void
 .end method
 
 .method public onHomePressed(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -433,9 +417,6 @@
 
 .method public onItemLongClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)Z
     .locals 24
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -928,7 +909,6 @@
 
 .method public onShowTab(Lcom/android/launcher2/MenuView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsListFragment;->mNormalTitleBar:Landroid/view/ViewGroup;
 
@@ -952,7 +932,6 @@
 
 .method public setTabHost(Lcom/android/launcher2/MenuView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     if-nez p1, :cond_0
 

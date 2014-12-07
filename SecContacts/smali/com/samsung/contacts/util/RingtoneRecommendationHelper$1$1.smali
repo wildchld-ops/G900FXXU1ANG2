@@ -88,7 +88,6 @@
 
 .method public onSelected(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/samsung/contacts/util/RingtoneRecommendationHelper$1$1;->this$1:Lcom/samsung/contacts/util/RingtoneRecommendationHelper$1;
 

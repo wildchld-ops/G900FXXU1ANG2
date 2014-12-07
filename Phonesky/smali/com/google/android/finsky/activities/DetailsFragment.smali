@@ -269,8 +269,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/activities/DetailsFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mHideSocialDetails:Z
 
@@ -279,8 +277,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/activities/DetailsFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DetailsFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mFetchSocialDetailsDocument:Z
 
@@ -303,12 +299,6 @@
 
 .method public static newInstance(Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/google/android/finsky/activities/DetailsFragment;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     new-instance v0, Lcom/google/android/finsky/activities/DetailsFragment;
 
@@ -345,7 +335,6 @@
 
 .method private requestSocialDetailsDocument(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mSocialDfeDetails:Lcom/google/android/finsky/api/model/DfeDetails;
 
@@ -403,7 +392,6 @@
 
 .method private trackSingleColumnScrollingIfNecessary(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const v3, 0x7f0800c9
 
@@ -445,7 +433,6 @@
 
 .method private updateDetailsSections(Landroid/os/Bundle;)V
     .locals 92
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/activities/DetailsFragment;->getDocument()Lcom/google/android/finsky/api/model/Document;
 
@@ -2192,8 +2179,6 @@
 
 .method protected inflateSectionsIfNecessary(Lcom/google/android/finsky/api/model/Document;Landroid/view/ViewGroup;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v9, 0x0
 
@@ -2424,7 +2409,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mSocialDfeDetails:Lcom/google/android/finsky/api/model/DfeDetails;
 
@@ -2472,9 +2456,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/finsky/activities/DetailsDataBasedFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -2566,7 +2547,6 @@
 
 .method public onDeleteReview(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mReviewDialogListener:Lcom/google/android/finsky/activities/ReviewDialogListener;
 
@@ -2671,7 +2651,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 4
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v3, 0x1
 
@@ -2894,9 +2873,6 @@
 
 .method public onInstallPackageEvent(Ljava/lang/String;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/DetailsFragment;->getDocument()Lcom/google/android/finsky/api/model/Document;
 
@@ -2938,7 +2914,6 @@
 
 .method public onLibraryContentsChanged(Lcom/google/android/finsky/library/AccountLibrary;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -2952,8 +2927,6 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -3016,8 +2989,6 @@
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -3099,9 +3070,6 @@
 
 .method public onRateReview(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mReviewDialogListener:Lcom/google/android/finsky/activities/ReviewDialogListener;
 
@@ -3112,11 +3080,6 @@
 
 .method public onSaveReview(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsFragment;->mReviewDialogListener:Lcom/google/android/finsky/activities/ReviewDialogListener;
 
@@ -3168,7 +3131,6 @@
 
 .method protected rebindViews(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x1
 
@@ -3260,7 +3222,6 @@
 
 .method protected recordState(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/DetailsFragment;->getView()Landroid/view/View;
 

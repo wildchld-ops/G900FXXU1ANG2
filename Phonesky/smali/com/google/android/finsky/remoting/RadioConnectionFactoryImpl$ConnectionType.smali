@@ -119,7 +119,6 @@
 
 .method public static parse(Ljava/lang/String;)Lcom/google/android/finsky/remoting/RadioConnectionFactoryImpl$ConnectionType;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/remoting/RadioConnectionFactoryImpl$ConnectionType;->values()[Lcom/google/android/finsky/remoting/RadioConnectionFactoryImpl$ConnectionType;
 
@@ -160,7 +159,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/remoting/RadioConnectionFactoryImpl$ConnectionType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/remoting/RadioConnectionFactoryImpl$ConnectionType;
 

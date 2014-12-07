@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/common/http/UrlRules$Rule;)V
     .locals 2
-    .param p1    # Lcom/google/android/common/http/UrlRules$Rule;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

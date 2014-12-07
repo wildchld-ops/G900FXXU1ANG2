@@ -62,7 +62,6 @@
 
 .method public setOffset(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/CallDetailActivity$1UpdateContactDetailsTask$1;->mControls:Landroid/view/View;
 

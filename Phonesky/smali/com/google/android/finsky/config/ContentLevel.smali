@@ -143,7 +143,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -159,7 +158,6 @@
 
 .method public static convertFromLegacyValue(I)Lcom/google/android/finsky/config/ContentLevel;
     .locals 5
-    .param p0    # I
 
     const/4 v4, -0x1
 
@@ -201,7 +199,6 @@
 
 .method public static importFromSettings(Landroid/content/Context;)Lcom/google/android/finsky/config/ContentLevel;
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v8, -0x1
 
@@ -279,8 +276,6 @@
 
 .method private static migrateOldLevels(Landroid/content/Context;Landroid/content/SharedPreferences;)I
     .locals 16
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v11, 0x0
 
@@ -413,7 +408,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/config/ContentLevel;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/config/ContentLevel;
 
@@ -444,7 +438,6 @@
 # virtual methods
 .method public encompasses(Lcom/google/android/finsky/config/ContentLevel;)Z
     .locals 4
-    .param p1    # Lcom/google/android/finsky/config/ContentLevel;
 
     const/4 v1, 0x0
 

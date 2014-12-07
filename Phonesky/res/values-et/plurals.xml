@@ -44,7 +44,7 @@
         <item quantity="one">Saadaval on %1$d värskendus. Kas soovite selle installida?</item>
     </plurals>
     <plurals name="star_rating_review_bold_formatting">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b>: %2$d tärni</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b>: %2$d tärni</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b>: %2$d tärni</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b>: %2$d tärni</item>
     </plurals>
 </resources>

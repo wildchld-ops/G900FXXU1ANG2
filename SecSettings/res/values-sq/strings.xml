@@ -1373,7 +1373,7 @@ Mund edhe ta shfaqësh ose ta fshehësh dorezën multi-window duke shtypur dhe m
     <string name="usb_tethering_errored_subtext">Gabim lidhjeje USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Tethering USB nuk mund të paaftësohet kur je duke përdorur SideSync. Paaftësimi i tether USB do ta paaftësojë SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Tethering USB nuk mund të aftësohet kur je duke përdorur SideSync. Aftësimi i tethering USB do ta paaftësojë SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Lidhja e Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Lidhja e Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Ndarja e lidhjes së internetit të pajisjes…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Lidhja e internetit të pajisjes e ndarë me 1 pajisje</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Lidhja e internetit të pajisjes e ndarë me %d pajisje</string>

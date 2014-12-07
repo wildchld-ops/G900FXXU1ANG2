@@ -39,7 +39,6 @@
 
 .method protected static getList(Lgov/nist/javax/sip/header/SIPHeader;)Lgov/nist/javax/sip/header/SIPHeaderList;
     .locals 5
-    .param p0    # Lgov/nist/javax/sip/header/SIPHeader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -140,7 +139,6 @@
 
 .method protected static hasList(Lgov/nist/javax/sip/header/SIPHeader;)Z
     .locals 3
-    .param p0    # Lgov/nist/javax/sip/header/SIPHeader;
 
     const/4 v1, 0x0
 

@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -51,7 +50,6 @@
 
 .method private booleanToString(Ljava/lang/Boolean;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Boolean;
 
     if-nez p1, :cond_0
 
@@ -130,7 +128,6 @@
 
 .method private integerToString(Ljava/lang/Integer;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Integer;
 
     if-nez p1, :cond_0
 
@@ -153,7 +150,6 @@
 
 .method private longToString(Ljava/lang/Long;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/Long;
 
     if-nez p1, :cond_0
 
@@ -176,7 +172,6 @@
 
 .method private stringToBoolean(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -199,7 +194,6 @@
 
 .method private stringToInteger(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -222,7 +216,6 @@
 
 .method private stringToLong(Ljava/lang/String;)Ljava/lang/Long;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1003,7 +996,6 @@
 
 .method public init(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;->mStore:Lcom/google/android/finsky/utils/persistence/WriteThroughKeyValueStore;
 
@@ -1026,7 +1018,6 @@
 
 .method public setCredentials(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingCredentials;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingCredentials;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -1099,7 +1090,6 @@
 
 .method setInit(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;->mIsInit:Z
 
@@ -1108,7 +1098,6 @@
 
 .method public setParams(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingParameters;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingParameters;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -1223,7 +1212,6 @@
 
 .method public setProvisioning(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingProvisioning;
 
     new-instance v2, Ljava/util/HashMap;
 

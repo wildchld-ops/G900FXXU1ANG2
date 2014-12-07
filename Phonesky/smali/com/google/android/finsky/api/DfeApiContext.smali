@@ -48,19 +48,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;Lcom/android/volley/toolbox/AndroidAuthenticator;Lcom/android/volley/Cache;Lcom/google/android/finsky/experiments/Experiments;Lcom/google/android/finsky/api/DfeNotificationManager;Ljava/lang/String;IILjava/util/Locale;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/volley/toolbox/AndroidAuthenticator;
-    .param p3    # Lcom/android/volley/Cache;
-    .param p4    # Lcom/google/android/finsky/experiments/Experiments;
-    .param p5    # Lcom/google/android/finsky/api/DfeNotificationManager;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Ljava/util/Locale;
-    .param p10    # Ljava/lang/String;
-    .param p11    # Ljava/lang/String;
-    .param p12    # Ljava/lang/String;
-    .param p13    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -220,7 +207,6 @@
 
 .method private static checkUrlIsSecure(Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/net/URL;
@@ -382,12 +368,6 @@
 
 .method public static create(Landroid/content/Context;Lcom/android/volley/Cache;Lcom/google/android/finsky/experiments/Experiments;Lcom/google/android/finsky/api/DfeNotificationManager;Ljava/lang/String;I)Lcom/google/android/finsky/api/DfeApiContext;
     .locals 21
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/volley/Cache;
-    .param p2    # Lcom/google/android/finsky/experiments/Experiments;
-    .param p3    # Lcom/google/android/finsky/api/DfeNotificationManager;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     move-object/from16 v0, p4
 
@@ -508,7 +488,6 @@
 
 .method private getSmallestScreenWidthDp(Landroid/content/Context;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     sget v3, Lcom/google/android/finsky/api/DfeApiContext;->sCachedSmallestScreenWidthDp:I
 
@@ -584,9 +563,6 @@
 
 .method private makeUserAgentString(Ljava/lang/String;II)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v3, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -665,7 +641,6 @@
 
 .method static sanitizeHeaderValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
 

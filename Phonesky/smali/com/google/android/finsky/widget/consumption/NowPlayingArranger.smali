@@ -547,7 +547,6 @@
 
 .method public static arrange(Ljava/util/List;I)Lcom/google/android/finsky/widget/consumption/NowPlayingArranger$Arrangement;
     .locals 14
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -761,8 +760,6 @@
 
 .method private static computeBestCandidate([II)[I
     .locals 14
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -854,8 +851,6 @@
 
 .method private static determineLayoutVariant3([I[I)I
     .locals 3
-    .param p0    # [I
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -876,8 +871,6 @@
 
 .method private static getCacheKey([II)Ljava/lang/String;
     .locals 2
-    .param p0    # [I
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -910,8 +903,6 @@
 
 .method private static declared-synchronized getCachedCandidate([II)[I
     .locals 3
-    .param p0    # [I
-    .param p1    # I
 
     const-class v1, Lcom/google/android/finsky/widget/consumption/NowPlayingArranger;
 
@@ -946,8 +937,6 @@
 
 .method private static declared-synchronized getScore(II)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const-class v2, Lcom/google/android/finsky/widget/consumption/NowPlayingArranger;
 
@@ -1032,8 +1021,6 @@
 
 .method private static getScore([II)I
     .locals 5
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1066,9 +1053,6 @@
 
 .method private static increaseAndDecrease(Landroid/util/SparseIntArray;Landroid/util/SparseIntArray;I)V
     .locals 3
-    .param p0    # Landroid/util/SparseIntArray;
-    .param p1    # Landroid/util/SparseIntArray;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1190,9 +1174,6 @@
 
 .method private static permute([I[I[I)V
     .locals 3
-    .param p0    # [I
-    .param p1    # [I
-    .param p2    # [I
 
     const/4 v0, 0x0
 
@@ -1217,10 +1198,6 @@
 
 .method private static declared-synchronized putCachedCandidate([II[II)V
     .locals 6
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     const-class v4, Lcom/google/android/finsky/widget/consumption/NowPlayingArranger;
 
@@ -1275,8 +1252,6 @@
 
 .method private static declared-synchronized updateAffinity(II)V
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     const-class v1, Lcom/google/android/finsky/widget/consumption/NowPlayingArranger;
 

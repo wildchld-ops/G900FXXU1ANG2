@@ -1369,7 +1369,7 @@ Wi-Fi ႏွင့္ မိုဘိုင္း ေဟာ့စေပါ့ �
     <string name="usb_tethering_errored_subtext">USB လန္ထားမႈ အမွား</string>
     <string name="usb_tethering_on_during_sidesync_popup">SideSync ကို သံုးေနစဥ္ USB လံထားျခင္းကို ပိတ္မရႏိုင္ပါ။ USB လံထားျခင္း ပိတ္ထားျခင္းက SideSync ကို ပိတ္လိမ့္မည္။</string>
     <string name="usb_tethering_off_during_sidesync_popup">SideSync သံုးေနစဥ္ USB လံထားျခင္းကို ဖြင့္မရႏိုင္ပါ။ USB လံထားျခင္းကို ဖြင့္ျခင္းက SideSync ကို ပိတ္လိမ့္မည္။</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>ဘလူးတုသ္ျဖင့္ မွ်ေဝအသံုးျပဳျခင္း</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>ဘလူးတုသ္ျဖင့္ မွ်ေဝအသံုးျပဳျခင္း</b></p></string>
     <string name="bluetooth_tethering_available_subtext">ဤကိရိယာ၏ အင္တာနက္ ခ်ိတ္ဆက္ျခင္း မွ်ေဝေနသည္…</string>
     <string name="bluetooth_tethering_device_connected_subtext">ကိရိယာ ၁ ခုမွ မွ်ေဝထားသည့္ ကိရိယာ၏ အင္တာနက္ အဆက္အသြယ္မ်ား။</string>
     <string name="bluetooth_tethering_devices_connected_subtext">ကိရိယာ %d ခုမွ မွ်ေဝထားသည့္ ကိရိယာ၏ အင္တာနက္ အဆက္အသြယ္မ်ား</string>

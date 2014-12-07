@@ -22,7 +22,6 @@
 
 .method public static final mergeFrom(Lcom/google/protobuf/nano/MessageNano;[B)Lcom/google/protobuf/nano/MessageNano;
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -50,9 +49,6 @@
 
 .method public static final mergeFrom(Lcom/google/protobuf/nano/MessageNano;[BII)Lcom/google/protobuf/nano/MessageNano;
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -102,10 +98,6 @@
 
 .method public static final toByteArray(Lcom/google/protobuf/nano/MessageNano;[BII)V
     .locals 4
-    .param p0    # Lcom/google/protobuf/nano/MessageNano;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     invoke-static {p1, p2, p3}, Lcom/google/protobuf/nano/CodedOutputByteBufferNano;->newInstance([BII)Lcom/google/protobuf/nano/CodedOutputByteBufferNano;
@@ -134,7 +126,6 @@
 
 .method public static final toByteArray(Lcom/google/protobuf/nano/MessageNano;)[B
     .locals 3
-    .param p0    # Lcom/google/protobuf/nano/MessageNano;
 
     invoke-virtual {p0}, Lcom/google/protobuf/nano/MessageNano;->getSerializedSize()I
 

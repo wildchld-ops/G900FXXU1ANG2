@@ -53,11 +53,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;ZLcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Lcom/samsung/dialer/dialpad/DialpadSearchViewUpdater;
-    .param p5    # Z
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -78,7 +73,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/content/Context;
 
@@ -91,7 +85,6 @@
 
 .method protected varargs doInBackground([Landroid/content/Context;)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # [Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -156,7 +149,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/ArrayList;
 

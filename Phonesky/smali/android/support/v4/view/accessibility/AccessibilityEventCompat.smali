@@ -48,7 +48,6 @@
 
 .method public static asRecord(Landroid/view/accessibility/AccessibilityEvent;)Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityEvent;
 
     new-instance v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
 

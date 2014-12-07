@@ -40,7 +40,6 @@
 
 .method public static DismissDialog(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "RingtoneRecommendationDialogFragment"
 
@@ -70,7 +69,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
 
     iget v0, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mSelectedPosition:I
 
@@ -79,8 +77,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mSelectedPosition:I
 
@@ -89,7 +85,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mDialog:Landroid/app/AlertDialog;
 
@@ -98,8 +93,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->playRingtone(Z)V
 
@@ -108,7 +101,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;)Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mListener:Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;
 
@@ -117,7 +109,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mUri:Landroid/net/Uri;
 
@@ -126,7 +117,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
 
     iget v0, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mOffset:I
 
@@ -135,7 +125,6 @@
 
 .method public static isShowing(Landroid/app/FragmentManager;)Z
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "RingtoneRecommendationDialogFragment"
 
@@ -173,7 +162,6 @@
 
 .method private playRingtone(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mRingtone:Landroid/media/Ringtone;
 
@@ -242,10 +230,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/net/Uri;ILcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;
 
     new-instance v0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;
 
@@ -277,7 +261,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mListener:Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;
 
@@ -293,7 +276,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -434,7 +416,6 @@
 
 .method public setListener(Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mListener:Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment$Listener;
 
@@ -443,7 +424,6 @@
 
 .method public setOffset(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mOffset:I
 
@@ -452,7 +432,6 @@
 
 .method public setUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/RingtoneRecommendationDialogFragment;->mUri:Landroid/net/Uri;
 

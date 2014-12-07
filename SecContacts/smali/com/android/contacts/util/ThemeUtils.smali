@@ -14,8 +14,6 @@
 
 .method public static getAttribute(Landroid/content/res/Resources$Theme;I)I
     .locals 2
-    .param p0    # Landroid/content/res/Resources$Theme;
-    .param p1    # I
 
     new-instance v0, Landroid/util/TypedValue;
 
@@ -32,7 +30,6 @@
 
 .method public static getSelectableItemBackground(Landroid/content/res/Resources$Theme;)I
     .locals 1
-    .param p0    # Landroid/content/res/Resources$Theme;
 
     const v0, 0x101030e
 

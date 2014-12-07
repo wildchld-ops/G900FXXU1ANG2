@@ -297,7 +297,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/interaction/InteractionRecentFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/interaction/InteractionRecentFragment;
 
     invoke-direct {p0}, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->refreshData()V
 
@@ -306,7 +305,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/interaction/InteractionRecentFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/interaction/InteractionRecentFragment;
 
     iget-object v0, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mContext:Landroid/content/Context;
 
@@ -315,7 +313,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/interaction/InteractionRecentFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/interaction/InteractionRecentFragment;
 
     invoke-direct {p0}, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->updateAllCheckState()V
 
@@ -324,7 +321,6 @@
 
 .method static synthetic access$300(Lcom/samsung/dialer/interaction/InteractionRecentFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/dialer/interaction/InteractionRecentFragment;
 
     iget v0, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mTotalCount:I
 
@@ -690,8 +686,6 @@
 
 .method private saveFragmentView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     iput-object p1, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -702,7 +696,6 @@
 
 .method private setDoneButton(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1288,7 +1281,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/samsung/dialer/widget/CallLogListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1316,14 +1308,12 @@
 
 .method public onCallsFetched(Landroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
 
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -1410,9 +1400,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -1577,9 +1564,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1723,7 +1707,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -2124,7 +2107,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/samsung/dialer/widget/CallLogListFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2176,7 +2158,6 @@
 
 .method public onVoicemailStatusFetched(Landroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
 
     return-void
 .end method
@@ -2965,7 +2946,6 @@
 
 .method public setAllItemChecked(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -3234,7 +3214,6 @@
 
 .method public setContactsRequest(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mRequest:I
 
@@ -3292,7 +3271,6 @@
 
 .method public setDirectSendIntentMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mDirectSendIntentMode:Z
 
@@ -3301,7 +3279,6 @@
 
 .method public setMMSinformation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->SELECT_MAX_COUNT:I
 
@@ -3310,7 +3287,6 @@
 
 .method public setOnMultiDataPickerActionListener(Lcom/samsung/contacts/listener/InteractionListPickerListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
     iput-object p1, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mListener:Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
@@ -3319,7 +3295,6 @@
 
 .method public setOnRecentListListener(Lcom/samsung/dialer/interaction/OnRecentListListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/dialer/interaction/OnRecentListListener;
 
     iput-object p1, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mRecentListener:Lcom/samsung/dialer/interaction/OnRecentListListener;
 
@@ -3328,7 +3303,6 @@
 
 .method public updateSelectAllState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/dialer/interaction/InteractionRecentFragment;->mSelectAllHeaderView:Landroid/view/View;
 

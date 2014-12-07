@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;Lcom/android/contacts/detail/ContactDetailFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler$PhotoSelectionListener;-><init>(Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;)V
 
@@ -73,7 +71,6 @@
 
 .method public onPhotoSelected(Landroid/graphics/Bitmap;)V
     .locals 21
-    .param p1    # Landroid/graphics/Bitmap;
 
     move-object/from16 v0, p0
 
@@ -338,7 +335,6 @@
 
 .method public onPhotoSelected(Landroid/net/Uri;)V
     .locals 15
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler$PhotoSelectionListener;->this$1:Lcom/android/contacts/detail/ContactDetailFragment$PhotoHandler;
 

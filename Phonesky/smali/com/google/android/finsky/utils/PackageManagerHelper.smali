@@ -15,9 +15,6 @@
 # direct methods
 .method static synthetic access$100(Landroid/content/Context;Landroid/net/Uri;J)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -32,7 +29,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/PackageManagerHelper;->isAlreadyInstalled(Ljava/lang/String;)Z
 
@@ -43,7 +39,6 @@
 
 .method static synthetic access$700(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/google/android/finsky/utils/PackageManagerHelper;->getApplicationName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -54,8 +49,6 @@
 
 .method public static addAppShortcut(Landroid/content/Context;Ljava/lang/String;)V
     .locals 16
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Lcom/google/android/finsky/activities/AppActionAnalyzer;
 
@@ -226,7 +219,6 @@
 
 .method private static getApplicationName(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -274,7 +266,6 @@
 
 .method private static getInstallFailMessageId(I)I
     .locals 4
-    .param p0    # I
 
     const v3, 0x7f090104
 
@@ -466,16 +457,6 @@
 
 .method public static installPackage(Landroid/net/Uri;Ljava/lang/String;JLjava/lang/String;ZZLcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;ZLjava/lang/String;Lcom/google/android/finsky/protos/AndroidAppDelivery$EncryptionParams;)V
     .locals 14
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;
-    .param p8    # Z
-    .param p9    # Ljava/lang/String;
-    .param p10    # Lcom/google/android/finsky/protos/AndroidAppDelivery$EncryptionParams;
 
     if-nez p7, :cond_0
 
@@ -523,11 +504,6 @@
 
 .method public static installPackageWithDowngrade(Landroid/net/Uri;Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;ZLjava/lang/String;Z)V
     .locals 14
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     new-instance v0, Lcom/google/android/finsky/utils/PackageManagerHelper$OnCompleteListenerNotifier;
 
@@ -568,7 +544,6 @@
 
 .method private static isAlreadyInstalled(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -614,8 +589,6 @@
 
 .method public static notifyFailedInstall(Ljava/lang/String;I)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p1}, Lcom/google/android/finsky/utils/PackageManagerHelper;->getInstallFailMessageId(I)I
 
@@ -672,7 +645,6 @@
 
 .method public static uninstallPackage(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -685,9 +657,6 @@
 
 .method public static verifyApk(Ljava/io/InputStream;JLjava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -757,9 +726,6 @@
 
 .method private static verifySize(Landroid/content/Context;Landroid/net/Uri;J)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

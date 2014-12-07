@@ -16,7 +16,6 @@
 # virtual methods
 .method public getImage(I)I
     .locals 4
-    .param p1    # I
 
     const-string v1, "CmaWeatherImageArchive"
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public AddClipboardFormatListener(Landroid/sec/clipboard/IClipboardFormatListener;)Z
     .locals 7
-    .param p1    # Landroid/sec/clipboard/IClipboardFormatListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -117,7 +115,6 @@
 
 .method public GetClipboardData(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -189,7 +186,6 @@
 
 .method public GetClipboardFormatName(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -305,8 +301,6 @@
 
 .method public ObserverUpdate(ILandroid/sec/clipboard/data/ClipboardData;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -379,7 +373,6 @@
 
 .method public RegistClipboardWorkingFormUiInterface(Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;)V
     .locals 5
-    .param p1    # Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -443,7 +436,6 @@
 
 .method public RegisterClipboardFormat(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -499,7 +491,6 @@
 
 .method public RemoveClipboardFormatListener(Landroid/sec/clipboard/IClipboardFormatListener;)Z
     .locals 6
-    .param p1    # Landroid/sec/clipboard/IClipboardFormatListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -574,9 +565,6 @@
 
 .method public SetClipboardData(ILandroid/sec/clipboard/data/ClipboardData;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -667,8 +655,6 @@
 
 .method public SetClipboardDataOriginalToEx(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -757,9 +743,6 @@
 
 .method public SetClipboardDataWithoutSendingOrginalClipboard(ILandroid/sec/clipboard/data/ClipboardData;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -850,7 +833,6 @@
 
 .method public SetSyncClipboardData(Ljava/lang/CharSequence;)Z
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -937,8 +919,6 @@
 
 .method public ShowUIClipboardData(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1004,7 +984,6 @@
 
 .method public UpdateClipboardDB(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1056,8 +1035,6 @@
 
 .method public UpdateUIClipboardData(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1131,7 +1108,6 @@
 
 .method public callPasteMenuFromApp(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1232,8 +1208,6 @@
 
 .method public getClipedStrings(II)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",

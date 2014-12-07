@@ -75,7 +75,6 @@
 # virtual methods
 .method protected onDeliverToNext(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 4
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/high16 v3, 0x200000
 
@@ -138,7 +137,6 @@
 
 .method protected onProcess(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 5
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/high16 v4, 0x200000
 

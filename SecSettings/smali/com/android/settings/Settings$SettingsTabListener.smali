@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/Settings;Lcom/android/settings/Settings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/Settings;
-    .param p2    # Lcom/android/settings/Settings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/Settings$SettingsTabListener;-><init>(Lcom/android/settings/Settings;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onTabReselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     const-string v0, "Settings"
 
@@ -60,8 +56,6 @@
 
 .method public onTabSelected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 6
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     const/4 v5, 0x0
 
@@ -181,8 +175,6 @@
 
 .method public onTabUnselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 5
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     const-string v2, "Settings"
 

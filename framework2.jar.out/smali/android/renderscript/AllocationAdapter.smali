@@ -6,9 +6,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;Landroid/renderscript/Allocation;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
-    .param p3    # Landroid/renderscript/Allocation;
 
     iget-object v0, p3, Landroid/renderscript/Allocation;->mType:Landroid/renderscript/Type;
 
@@ -23,8 +20,6 @@
 
 .method public static create1D(Landroid/renderscript/RenderScript;Landroid/renderscript/Allocation;)Landroid/renderscript/AllocationAdapter;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Allocation;
 
     const/4 v2, 0x0
 
@@ -51,8 +46,6 @@
 
 .method public static create2D(Landroid/renderscript/RenderScript;Landroid/renderscript/Allocation;)Landroid/renderscript/AllocationAdapter;
     .locals 6
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Allocation;
 
     const/4 v5, 0x1
 
@@ -103,7 +96,6 @@
 # virtual methods
 .method getID(Landroid/renderscript/RenderScript;)I
     .locals 2
-    .param p1    # Landroid/renderscript/RenderScript;
 
     new-instance v0, Landroid/renderscript/RSInvalidStateException;
 
@@ -116,7 +108,6 @@
 
 .method initLOD(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -286,7 +277,6 @@
 
 .method public readData([F)V
     .locals 0
-    .param p1    # [F
 
     invoke-super {p0, p1}, Landroid/renderscript/Allocation;->copyTo([F)V
 
@@ -295,7 +285,6 @@
 
 .method public readData([I)V
     .locals 0
-    .param p1    # [I
 
     invoke-super {p0, p1}, Landroid/renderscript/Allocation;->copyTo([I)V
 
@@ -304,7 +293,6 @@
 
 .method public declared-synchronized resize(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -329,7 +317,6 @@
 
 .method public setFace(Landroid/renderscript/Type$CubemapFace;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Type$CubemapFace;
 
     iget-object v0, p0, Landroid/renderscript/Allocation;->mAdaptedAllocation:Landroid/renderscript/Allocation;
 
@@ -383,7 +370,6 @@
 
 .method public setLOD(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/Allocation;->mAdaptedAllocation:Landroid/renderscript/Allocation;
 
@@ -426,7 +412,6 @@
 
 .method public setY(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/Allocation;->mAdaptedAllocation:Landroid/renderscript/Allocation;
 
@@ -490,7 +475,6 @@
 
 .method public setZ(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/Allocation;->mAdaptedAllocation:Landroid/renderscript/Allocation;
 
@@ -554,8 +538,6 @@
 
 .method public subData(ILandroid/renderscript/FieldPacker;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/FieldPacker;
 
     invoke-super {p0, p1, p2}, Landroid/renderscript/Allocation;->setFromFieldPacker(ILandroid/renderscript/FieldPacker;)V
 
@@ -564,9 +546,6 @@
 
 .method public subData1D(II[B)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     invoke-super {p0, p1, p2, p3}, Landroid/renderscript/Allocation;->copy1DRangeFrom(II[B)V
 
@@ -575,9 +554,6 @@
 
 .method public subData1D(II[F)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     invoke-super {p0, p1, p2, p3}, Landroid/renderscript/Allocation;->copy1DRangeFrom(II[F)V
 
@@ -586,9 +562,6 @@
 
 .method public subData1D(II[I)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     invoke-super {p0, p1, p2, p3}, Landroid/renderscript/Allocation;->copy1DRangeFrom(II[I)V
 
@@ -597,9 +570,6 @@
 
 .method public subData1D(II[S)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [S
 
     invoke-super {p0, p1, p2, p3}, Landroid/renderscript/Allocation;->copy1DRangeFrom(II[S)V
 
@@ -608,11 +578,6 @@
 
 .method public subData2D(IIII[F)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [F
 
     invoke-super/range {p0 .. p5}, Landroid/renderscript/Allocation;->copy2DRangeFrom(IIII[F)V
 
@@ -621,11 +586,6 @@
 
 .method public subData2D(IIII[I)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     invoke-super/range {p0 .. p5}, Landroid/renderscript/Allocation;->copy2DRangeFrom(IIII[I)V
 
@@ -634,9 +594,6 @@
 
 .method public subElementData(IILandroid/renderscript/FieldPacker;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/renderscript/FieldPacker;
 
     invoke-super {p0, p1, p2, p3}, Landroid/renderscript/Allocation;->setFromFieldPacker(IILandroid/renderscript/FieldPacker;)V
 

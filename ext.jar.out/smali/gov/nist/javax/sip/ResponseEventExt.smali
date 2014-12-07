@@ -10,10 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Lgov/nist/javax/sip/ClientTransactionExt;Ljavax/sip/Dialog;Ljavax/sip/message/Response;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lgov/nist/javax/sip/ClientTransactionExt;
-    .param p3    # Ljavax/sip/Dialog;
-    .param p4    # Ljavax/sip/message/Response;
 
     invoke-direct {p0, p1, p2, p3, p4}, Ljavax/sip/ResponseEvent;-><init>(Ljava/lang/Object;Ljavax/sip/ClientTransaction;Ljavax/sip/Dialog;Ljavax/sip/message/Response;)V
 
@@ -58,7 +54,6 @@
 
 .method public setOriginalTransaction(Lgov/nist/javax/sip/ClientTransactionExt;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/ClientTransactionExt;
 
     iput-object p1, p0, Lgov/nist/javax/sip/ResponseEventExt;->m_originalTransaction:Lgov/nist/javax/sip/ClientTransactionExt;
 

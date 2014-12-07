@@ -427,7 +427,6 @@
 
 .method static synthetic access$000(Lcom/android/dialer/calllog/CallLogAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogAdapter;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogAdapter;->mContext:Landroid/content/Context;
 
@@ -444,7 +443,6 @@
 
 .method static synthetic access$200(Lcom/android/dialer/calllog/CallLogAdapter;)Landroid/view/View$OnLongClickListener;
     .locals 1
-    .param p0    # Lcom/android/dialer/calllog/CallLogAdapter;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogAdapter;->mPrimaryActionLongClickListener:Landroid/view/View$OnLongClickListener;
 
@@ -453,9 +451,6 @@
 
 .method private bindView(Landroid/view/View;Landroid/database/Cursor;I)V
     .locals 62
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     const-string v3, "CallLogAdapter"
 
@@ -2040,7 +2035,6 @@
 
 .method private findAndCacheViews(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v8, 0x1
 
@@ -2185,8 +2179,6 @@
 
 .method private getCallTypes(Landroid/database/Cursor;I)[I
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     invoke-interface {p1}, Landroid/database/Cursor;->getPosition()I
 
@@ -2221,9 +2213,6 @@
 
 .method private setPhoto(Landroid/widget/ImageView;JJ)V
     .locals 7
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogAdapter;->mContactPhotoManager:Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -2413,9 +2402,6 @@
 
 .method public addGroup(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/common/widget/GroupingListAdapter;->addGroup(IIZ)V
 
@@ -2424,7 +2410,6 @@
 
 .method protected addGroups(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const-string v0, "CallLogAdapter"
 
@@ -2443,9 +2428,6 @@
 
 .method protected bindChildView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const-string v0, "CallLogAdapter"
 
@@ -2462,11 +2444,6 @@
 
 .method protected bindGroupView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;IZ)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Z
 
     const-string v0, "CallLogAdapter"
 
@@ -2481,9 +2458,6 @@
 
 .method protected bindStandAloneView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const-string v0, "CallLogAdapter"
 
@@ -2500,7 +2474,6 @@
 
 .method public checkFontSize(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogAdapter;->mCallLogViewsHelper:Lcom/android/dialer/calllog/CallLogListItemHelper;
 
@@ -2771,9 +2744,6 @@
 
 .method injectContactInfoForTest(Ljava/lang/String;Ljava/lang/String;Lcom/android/dialer/calllog/ContactInfo;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/dialer/calllog/ContactInfo;
 
     new-instance v0, Lcom/samsung/dialer/calllog/NumberWithCountryIso;
 
@@ -2828,8 +2798,6 @@
 
 .method protected newChildView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -2890,8 +2858,6 @@
 
 .method protected newGroupView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -2952,8 +2918,6 @@
 
 .method protected newStandAloneView(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -3060,7 +3024,6 @@
 
 .method public setContext(Lcom/android/dialer/calllog/CallLogFragment;)V
     .locals 0
-    .param p1    # Lcom/android/dialer/calllog/CallLogFragment;
 
     sput-object p1, Lcom/android/dialer/calllog/CallLogAdapter;->mCallLogFragment:Lcom/android/dialer/calllog/CallLogFragment;
 
@@ -3069,7 +3032,6 @@
 
 .method public setLoading(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogAdapter;->mLoading:Z
 
@@ -3078,7 +3040,6 @@
 
 .method public setScrollState(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/dialer/calllog/CallLogAdapter;->mCallLogViewsHelper:Lcom/android/dialer/calllog/CallLogListItemHelper;
 
@@ -3089,7 +3050,6 @@
 
 .method public setVolteEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/calllog/CallLogAdapter;->mIsVolteEnabled:Z
 

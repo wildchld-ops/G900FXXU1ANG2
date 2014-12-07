@@ -49,7 +49,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/myplace/MyPlaceProfileSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/myplace/MyPlaceProfileSettings$1;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;-><init>()V
 
@@ -58,7 +57,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mGpsLocation:Ljava/lang/String;
 
@@ -67,7 +65,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mBtDeviceName:Ljava/lang/String;
 
@@ -76,8 +73,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mBtDeviceName:Ljava/lang/String;
 
@@ -86,8 +81,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mGpsLocation:Ljava/lang/String;
 
@@ -96,7 +89,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mBtMacAddress:Ljava/lang/String;
 
@@ -105,8 +97,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mBtMacAddress:Ljava/lang/String;
 
@@ -115,7 +105,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mProfileName:Ljava/lang/String;
 
@@ -124,8 +113,6 @@
 
 .method static synthetic access$1802(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mProfileName:Ljava/lang/String;
 
@@ -134,8 +121,6 @@
 
 .method static synthetic access$1902(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mTimestamp:Ljava/lang/String;
 
@@ -144,7 +129,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/Double;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mGpsLatitude:Ljava/lang/Double;
 
@@ -153,8 +137,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/Double;)Ljava/lang/Double;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/Double;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mGpsLatitude:Ljava/lang/Double;
 
@@ -163,7 +145,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/Double;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mGpsLongitude:Ljava/lang/Double;
 
@@ -172,8 +153,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/Double;)Ljava/lang/Double;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/Double;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mGpsLongitude:Ljava/lang/Double;
 
@@ -182,7 +161,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)I
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mType:I
 
@@ -191,8 +169,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mType:I
 
@@ -201,7 +177,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)[B
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mByteMap:[B
 
@@ -210,8 +185,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;[B)[B
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mByteMap:[B
 
@@ -220,7 +193,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mWifiApName:Ljava/lang/String;
 
@@ -229,8 +201,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mWifiApName:Ljava/lang/String;
 
@@ -239,7 +209,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mWifiApBSSID:Ljava/lang/String;
 
@@ -248,8 +217,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;->mWifiApBSSID:Ljava/lang/String;
 

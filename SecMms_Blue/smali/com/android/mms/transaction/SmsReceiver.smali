@@ -36,8 +36,6 @@
 
 .method public static beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v2, Lcom/android/mms/transaction/SmsReceiver;->mStartingServiceSync:Ljava/lang/Object;
 
@@ -100,8 +98,6 @@
 
 .method private filterMsgServiceIntent(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -222,8 +218,6 @@
 
 .method public static finishStartingService(Landroid/app/Service;I)V
     .locals 2
-    .param p0    # Landroid/app/Service;
-    .param p1    # I
 
     sget-object v1, Lcom/android/mms/transaction/SmsReceiver;->mStartingServiceSync:Ljava/lang/Object;
 
@@ -298,8 +292,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -310,9 +302,6 @@
 
 .method protected onReceiveWithPrivilege(Landroid/content/Context;Landroid/content/Intent;Z)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     if-nez p3, :cond_1
 

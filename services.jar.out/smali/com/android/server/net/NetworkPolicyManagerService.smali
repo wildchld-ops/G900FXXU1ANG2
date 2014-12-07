@@ -260,11 +260,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/IActivityManager;Landroid/os/IPowerManager;Landroid/net/INetworkStatsService;Landroid/os/INetworkManagementService;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/IActivityManager;
-    .param p3    # Landroid/os/IPowerManager;
-    .param p4    # Landroid/net/INetworkStatsService;
-    .param p5    # Landroid/os/INetworkManagementService;
 
     invoke-static {p1}, Landroid/util/NtpTrustedTime;->getInstance(Landroid/content/Context;)Landroid/util/NtpTrustedTime;
 
@@ -295,14 +290,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/app/IActivityManager;Landroid/os/IPowerManager;Landroid/net/INetworkStatsService;Landroid/os/INetworkManagementService;Landroid/util/TrustedTime;Ljava/io/File;Z)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/IActivityManager;
-    .param p3    # Landroid/os/IPowerManager;
-    .param p4    # Landroid/net/INetworkStatsService;
-    .param p5    # Landroid/os/INetworkManagementService;
-    .param p6    # Landroid/util/TrustedTime;
-    .param p7    # Ljava/io/File;
-    .param p8    # Z
 
     invoke-direct {p0}, Landroid/net/INetworkPolicyManager$Stub;-><init>()V
 
@@ -565,7 +552,6 @@
 
 .method static synthetic access$000(Lcom/android/server/net/NetworkPolicyManagerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mHandler:Landroid/os/Handler;
 
@@ -574,7 +560,6 @@
 
 .method static synthetic access$100(Lcom/android/server/net/NetworkPolicyManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mRulesLock:Ljava/lang/Object;
 
@@ -583,9 +568,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/net/NetworkPolicyManagerService;Landroid/net/NetworkTemplate;I)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/net/NetworkPolicyManagerService;->performSnooze(Landroid/net/NetworkTemplate;I)V
 
@@ -594,7 +576,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/net/NetworkPolicyManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkPolicy:Ljava/util/HashMap;
 
@@ -603,8 +584,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/net/NetworkPolicyManagerService;Landroid/net/NetworkPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
-    .param p1    # Landroid/net/NetworkPolicy;
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkPolicyManagerService;->addNetworkPolicyLocked(Landroid/net/NetworkPolicy;)V
 
@@ -613,7 +592,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->updateNetworkRulesLocked()V
 
@@ -622,7 +600,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/net/NetworkPolicyManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -631,7 +608,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->ensureActiveMobilePolicyLocked()V
 
@@ -640,7 +616,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/net/NetworkPolicyManagerService;)Landroid/os/RemoteCallbackList;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mListeners:Landroid/os/RemoteCallbackList;
 
@@ -649,7 +624,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/net/NetworkPolicyManagerService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mUidPidForeground:Landroid/util/SparseArray;
 
@@ -658,8 +632,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/net/NetworkPolicyManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkPolicyManagerService;->computeUidForegroundLocked(I)V
 
@@ -668,7 +640,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/net/NetworkPolicyManagerService;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mMeteredIfaces:Ljava/util/HashSet;
 
@@ -677,8 +648,6 @@
 
 .method static synthetic access$200(Lcom/android/server/net/NetworkPolicyManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkPolicyManagerService;->updateRulesForUidLocked(I)V
 
@@ -687,7 +656,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/net/NetworkPolicyManagerService;)Landroid/net/INetworkStatsService;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkStats:Landroid/net/INetworkStatsService;
 
@@ -696,7 +664,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->updateScreenOn()V
 
@@ -705,7 +672,6 @@
 
 .method static synthetic access$300(Lcom/android/server/net/NetworkPolicyManagerService;)Landroid/util/SparseIntArray;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mUidPolicy:Landroid/util/SparseIntArray;
 
@@ -714,7 +680,6 @@
 
 .method static synthetic access$400(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->writePolicyLocked()V
 
@@ -723,8 +688,6 @@
 
 .method static synthetic access$500(Lcom/android/server/net/NetworkPolicyManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkPolicyManagerService;->removePoliciesForUserLocked(I)V
 
@@ -733,7 +696,6 @@
 
 .method static synthetic access$600(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->updateRulesForRestrictBackgroundLocked()V
 
@@ -742,7 +704,6 @@
 
 .method static synthetic access$700(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->maybeRefreshTrustedTime()V
 
@@ -751,7 +712,6 @@
 
 .method static synthetic access$800(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->updateNetworkEnabledLocked()V
 
@@ -760,7 +720,6 @@
 
 .method static synthetic access$900(Lcom/android/server/net/NetworkPolicyManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->updateNotificationsLocked()V
 
@@ -769,7 +728,6 @@
 
 .method private addNetworkPolicyLocked(Landroid/net/NetworkPolicy;)V
     .locals 2
-    .param p1    # Landroid/net/NetworkPolicy;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkPolicy:Ljava/util/HashMap;
 
@@ -802,7 +760,6 @@
 
 .method private static buildNetworkOverLimitIntent(Landroid/net/NetworkTemplate;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/net/NetworkTemplate;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -831,8 +788,6 @@
 
 .method private buildNotificationTag(Landroid/net/NetworkPolicy;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/net/NetworkPolicy;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -873,7 +828,6 @@
 
 .method private static buildSnoozeWarningIntent(Landroid/net/NetworkTemplate;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/net/NetworkTemplate;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -890,7 +844,6 @@
 
 .method private static buildViewDataUsageIntent(Landroid/net/NetworkTemplate;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/net/NetworkTemplate;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -919,7 +872,6 @@
 
 .method private cancelNotification(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
@@ -949,8 +901,6 @@
 
 .method private static collectKeys(Landroid/util/SparseBooleanArray;Landroid/util/SparseBooleanArray;)V
     .locals 4
-    .param p0    # Landroid/util/SparseBooleanArray;
-    .param p1    # Landroid/util/SparseBooleanArray;
 
     invoke-virtual {p0}, Landroid/util/SparseBooleanArray;->size()I
 
@@ -979,8 +929,6 @@
 
 .method private static collectKeys(Landroid/util/SparseIntArray;Landroid/util/SparseBooleanArray;)V
     .locals 4
-    .param p0    # Landroid/util/SparseIntArray;
-    .param p1    # Landroid/util/SparseBooleanArray;
 
     invoke-virtual {p0}, Landroid/util/SparseIntArray;->size()I
 
@@ -1009,7 +957,6 @@
 
 .method private computeUidForegroundLocked(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mUidPidForeground:Landroid/util/SparseArray;
 
@@ -1094,8 +1041,6 @@
 
 .method private static dumpSparseBooleanArray(Ljava/io/PrintWriter;Landroid/util/SparseBooleanArray;)V
     .locals 4
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Landroid/util/SparseBooleanArray;
 
     const-string v2, "["
 
@@ -1165,9 +1110,6 @@
 
 .method private enqueueNotification(Landroid/net/NetworkPolicy;IJ)V
     .locals 18
-    .param p1    # Landroid/net/NetworkPolicy;
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct/range {p0 .. p2}, Lcom/android/server/net/NetworkPolicyManagerService;->buildNotificationTag(Landroid/net/NetworkPolicy;I)Ljava/lang/String;
 
@@ -1566,7 +1508,6 @@
 
 .method private enqueueRestrictedNotification(Ljava/lang/String;)V
     .locals 21
-    .param p1    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -2041,7 +1982,6 @@
 
 .method private findPolicyForNetworkLocked(Landroid/net/NetworkIdentity;)Landroid/net/NetworkPolicy;
     .locals 3
-    .param p1    # Landroid/net/NetworkIdentity;
 
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkPolicy:Ljava/util/HashMap;
 
@@ -2085,7 +2025,6 @@
 
 .method private getNetworkQuotaInfoUnchecked(Landroid/net/NetworkState;)Landroid/net/NetworkQuotaInfo;
     .locals 24
-    .param p1    # Landroid/net/NetworkState;
 
     move-object/from16 v0, p0
 
@@ -2267,9 +2206,6 @@
 
 .method private getTotalBytes(Landroid/net/NetworkTemplate;JJ)J
     .locals 9
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # J
-    .param p4    # J
 
     const-wide/16 v7, 0x0
 
@@ -2368,7 +2304,6 @@
 
 .method private isTemplateRelevant(Landroid/net/NetworkTemplate;)Z
     .locals 3
-    .param p1    # Landroid/net/NetworkTemplate;
 
     invoke-static {}, Lcom/android/internal/telephony/MultiSimManager;->getTelephonyManagerFromDataPrefer()Landroid/telephony/TelephonyManager;
 
@@ -2421,7 +2356,6 @@
 
 .method private static isUidValidForRules(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x3f5
 
@@ -2474,7 +2408,6 @@
 
 .method private notifyOverLimitLocked(Landroid/net/NetworkTemplate;)V
     .locals 3
-    .param p1    # Landroid/net/NetworkTemplate;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mOverLimitNotified:Ljava/util/HashSet;
 
@@ -2504,7 +2437,6 @@
 
 .method private notifyUnderLimitLocked(Landroid/net/NetworkTemplate;)V
     .locals 1
-    .param p1    # Landroid/net/NetworkTemplate;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mOverLimitNotified:Ljava/util/HashSet;
 
@@ -2515,8 +2447,6 @@
 
 .method private performSnooze(Landroid/net/NetworkTemplate;I)V
     .locals 7
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkPolicyManagerService;->maybeRefreshTrustedTime()V
 
@@ -3252,7 +3182,6 @@
 
 .method private removeInterfaceQuota(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkManager:Landroid/os/INetworkManagementService;
@@ -3284,7 +3213,6 @@
 
 .method private removePoliciesForUserLocked(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -3357,8 +3285,6 @@
 
 .method private setInterfaceQuota(Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkManager:Landroid/os/INetworkManagementService;
@@ -3390,8 +3316,6 @@
 
 .method private setNetworkTemplateEnabled(Landroid/net/NetworkTemplate;Z)V
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/net/NetworkTemplate;->getMatchRule()I
 
@@ -3466,8 +3390,6 @@
 
 .method private setPolicyDataEnable(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mConnManager:Landroid/net/IConnectivityManager;
@@ -3487,8 +3409,6 @@
 
 .method private setUidAllowedForDataUnchecked(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mRulesLock:Ljava/lang/Object;
 
@@ -3530,8 +3450,6 @@
 
 .method private setUidNetworkRules(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mNetworkManager:Landroid/os/INetworkManagementService;
@@ -3563,9 +3481,6 @@
 
 .method private setUidPolicyUnchecked(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mRulesLock:Ljava/lang/Object;
 
@@ -4642,7 +4557,6 @@
 
 .method private updateRulesForUidLocked(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -4854,7 +4768,6 @@
 
 .method private validatePoliciesToSet([Landroid/net/NetworkPolicy;)V
     .locals 7
-    .param p1    # [Landroid/net/NetworkPolicy;
 
     move-object v0, p1
 
@@ -5223,7 +5136,6 @@
 # virtual methods
 .method public addIdleHandler(Landroid/os/MessageQueue$IdleHandler;)V
     .locals 1
-    .param p1    # Landroid/os/MessageQueue$IdleHandler;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mHandler:Landroid/os/Handler;
 
@@ -5242,7 +5154,6 @@
 
 .method public bindConnectivityManager(Landroid/net/IConnectivityManager;)V
     .locals 1
-    .param p1    # Landroid/net/IConnectivityManager;
 
     const-string v0, "missing IConnectivityManager"
 
@@ -5259,7 +5170,6 @@
 
 .method public bindNotificationManager(Landroid/app/INotificationManager;)V
     .locals 1
-    .param p1    # Landroid/app/INotificationManager;
 
     const-string v0, "missing INotificationManager"
 
@@ -5276,9 +5186,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 17
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -5716,7 +5623,6 @@
 
 .method public getNetworkQuotaInfo(Landroid/net/NetworkState;)Landroid/net/NetworkQuotaInfo;
     .locals 5
-    .param p1    # Landroid/net/NetworkState;
 
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -5783,7 +5689,6 @@
 
 .method public getUidAllowedForData(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -5822,7 +5727,6 @@
 
 .method public getUidPolicy(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -5861,7 +5765,6 @@
 
 .method public getUidsWithPolicy(I)[I
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -5931,7 +5834,6 @@
 
 .method public isNetworkMetered(Landroid/net/NetworkState;)Z
     .locals 5
-    .param p1    # Landroid/net/NetworkState;
 
     const/4 v3, 0x1
 
@@ -6005,7 +5907,6 @@
 
 .method public isUidForeground(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6055,7 +5956,6 @@
 
 .method public registerListener(Landroid/net/INetworkPolicyListener;)V
     .locals 3
-    .param p1    # Landroid/net/INetworkPolicyListener;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -6074,7 +5974,6 @@
 
 .method public setLimitBackground(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -6146,7 +6045,6 @@
 
 .method public setNetworkPolicies([Landroid/net/NetworkPolicy;)V
     .locals 7
-    .param p1    # [Landroid/net/NetworkPolicy;
 
     iget-object v4, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -6215,7 +6113,6 @@
 
 .method public setRestrictBackground(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -6341,8 +6238,6 @@
 
 .method public setUidAllowedForData(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -6390,8 +6285,6 @@
 
 .method public setUidPolicy(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -6441,7 +6334,6 @@
 
 .method public snoozeLimit(Landroid/net/NetworkTemplate;)V
     .locals 5
-    .param p1    # Landroid/net/NetworkTemplate;
 
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 
@@ -6735,7 +6627,6 @@
 
 .method public unregisterListener(Landroid/net/INetworkPolicyListener;)V
     .locals 3
-    .param p1    # Landroid/net/INetworkPolicyListener;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkPolicyManagerService;->mContext:Landroid/content/Context;
 

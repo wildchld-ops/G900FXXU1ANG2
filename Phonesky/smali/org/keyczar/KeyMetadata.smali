@@ -90,9 +90,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lorg/keyczar/enums/KeyPurpose;Lorg/keyczar/interfaces/KeyType;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/keyczar/enums/KeyPurpose;
-    .param p3    # Lorg/keyczar/interfaces/KeyType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,7 +132,6 @@
 
 .method public static read(Ljava/lang/String;)Lorg/keyczar/KeyMetadata;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lorg/keyczar/util/Util;->gson()Lcom/google/gson/Gson;
 
@@ -192,7 +188,6 @@
 # virtual methods
 .method public addVersion(Lorg/keyczar/KeyVersion;)Z
     .locals 3
-    .param p1    # Lorg/keyczar/KeyVersion;
 
     invoke-virtual {p1}, Lorg/keyczar/KeyVersion;->getVersionNumber()I
 

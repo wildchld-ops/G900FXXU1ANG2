@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,9 +112,6 @@
 
 .method public static makeText(Landroid/content/Context;II)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -139,9 +135,6 @@
 
 .method public static makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -324,7 +317,6 @@
 
 .method public setDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Toast;->mDuration:I
 
@@ -333,9 +325,6 @@
 
 .method public setGravity(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/widget/Toast;->mTN:Landroid/widget/Toast$TN;
 
@@ -354,8 +343,6 @@
 
 .method public setMargin(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Landroid/widget/Toast;->mTN:Landroid/widget/Toast$TN;
 
@@ -380,7 +367,6 @@
 
 .method public setText(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Toast;->mContext:Landroid/content/Context;
 
@@ -395,7 +381,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Landroid/widget/Toast;->mNextView:Landroid/view/View;
 
@@ -438,7 +423,6 @@
 
 .method public setView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/widget/Toast;->mNextView:Landroid/view/View;
 

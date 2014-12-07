@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/common/vcard/CancelActivity;Lcom/android/contacts/common/vcard/CancelActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/vcard/CancelActivity;
-    .param p2    # Lcom/android/contacts/common/vcard/CancelActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/vcard/CancelActivity$RequestCancelListener;-><init>(Lcom/android/contacts/common/vcard/CancelActivity;)V
 

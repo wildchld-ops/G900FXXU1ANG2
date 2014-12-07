@@ -16,9 +16,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +30,6 @@
 
 .method private notifyError(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingFlow;->mListener:Lcom/google/android/finsky/billing/BillingFlowListener;
 
@@ -44,8 +40,6 @@
 
 .method private notifyFinished(ZLandroid/os/Bundle;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/BillingFlow;->mListener:Lcom/google/android/finsky/billing/BillingFlowListener;
 
@@ -90,7 +84,6 @@
 
 .method protected fail(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -113,7 +106,6 @@
 
 .method protected finish(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 

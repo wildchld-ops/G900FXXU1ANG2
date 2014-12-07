@@ -36,10 +36,6 @@
 # virtual methods
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 8
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v7, 0x1
 
@@ -222,8 +218,6 @@
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 4
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     const-string v0, "CallDetailActivity"
 

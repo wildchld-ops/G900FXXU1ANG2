@@ -44,7 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/nuance/connect/service/comm/CommandQueue$1;)V
     .locals 0
-    .param p1    # Lcom/nuance/connect/service/comm/CommandQueue$1;
 
     invoke-direct {p0}, Lcom/nuance/connect/service/comm/CommandQueue$PriorityTaskComparator;-><init>()V
 
@@ -55,8 +54,6 @@
 # virtual methods
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Runnable;
 
@@ -71,8 +68,6 @@
 
 .method public compare(Ljava/lang/Runnable;Ljava/lang/Runnable;)I
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v0, 0x0
 

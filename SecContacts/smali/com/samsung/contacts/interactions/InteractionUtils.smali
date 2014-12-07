@@ -22,11 +22,6 @@
 
 .method protected static addPrimaryDataInHashMap(Landroid/database/Cursor;Ljava/lang/String;Ljava/util/concurrent/ConcurrentHashMap;III)V
     .locals 6
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -183,11 +178,6 @@
 
 .method protected static getPhoneEmailDataByContactId(Landroid/content/Context;Ljava/util/concurrent/ConcurrentHashMap;Ljava/util/List;Ljava/util/List;Ljava/lang/String;III)V
     .locals 29
-    .param p0    # Landroid/content/Context;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -808,7 +798,6 @@
 
 .method protected static final getProjection(I)[Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -827,8 +816,6 @@
 
 .method protected static getSelection(Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -938,7 +925,6 @@
 
 .method protected static getSelectionArg(Ljava/util/ArrayList;I)[Ljava/lang/String;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1012,8 +998,6 @@
 
 .method protected static getSelectionArgForProfile(Ljava/lang/String;I)[Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1074,7 +1058,6 @@
 
 .method protected static getSelectionForDirectoryEntityQuery(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x96
 
@@ -1107,8 +1090,6 @@
 
 .method protected static isValidMimeType(Ljava/lang/String;I)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1173,9 +1154,6 @@
 
 .method protected static makeContactIdArrayForQuerySelection(Ljava/util/List;JILandroid/net/Uri;)Ljava/util/List;
     .locals 3
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1228,9 +1206,6 @@
 
 .method protected static makeContactUriForDirectoryEntityQuery(Ljava/util/List;JILandroid/net/Uri;)Ljava/util/List;
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1287,9 +1262,6 @@
 
 .method protected static makeSelectedPrimaryDataString(Landroid/database/Cursor;Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x0
 

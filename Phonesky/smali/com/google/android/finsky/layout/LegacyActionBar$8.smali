@@ -36,9 +36,6 @@
 # virtual methods
 .method public onWishlistStatusChanged(Ljava/lang/String;ZZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/LegacyActionBar$8;->this$0:Lcom/google/android/finsky/layout/LegacyActionBar;
 

@@ -68,11 +68,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v2, 0x6
 
@@ -153,7 +148,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->mTextNoChange:Ljava/lang/Boolean;
 
@@ -162,8 +156,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
-    .param p1    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->mTextNoChange:Ljava/lang/Boolean;
 
@@ -172,7 +164,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)[Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->mEtMacArray:[Landroid/widget/EditText;
 
@@ -181,7 +172,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->mIsTalkBackEnabled:Z
 
@@ -190,7 +180,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->validate()V
 
@@ -199,7 +188,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->mTempSsid:Ljava/lang/String;
 
@@ -208,8 +196,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->mTempSsid:Ljava/lang/String;
 
@@ -218,7 +204,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->mEtDeviceName:Landroid/widget/EditText;
 
@@ -227,7 +212,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->sToast:Landroid/widget/Toast;
 
@@ -236,8 +220,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->sToast:Landroid/widget/Toast;
 
@@ -246,7 +228,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;->context:Landroid/content/Context;
 
@@ -537,7 +518,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const v12, 0x7f090455
 

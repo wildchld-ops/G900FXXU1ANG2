@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/i18n/addressinput/CacheData;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/CacheData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -238,7 +237,6 @@
 
 .method private fetchDataIfNotAvailable(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/i18n/addressinput/ClientData;->mCacheData:Lcom/android/i18n/addressinput/CacheData;
 
@@ -322,7 +320,6 @@
 
 .method private getCountryKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -416,7 +413,6 @@
 
 .method private isCountryKey(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Cannot use null as a key"
 
@@ -447,7 +443,6 @@
 
 .method private isValidDataKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "data"
 
@@ -462,7 +457,6 @@
 # virtual methods
 .method protected createNodeData(Lcom/android/i18n/addressinput/JsoMap;)Lcom/android/i18n/addressinput/AddressVerificationNodeData;
     .locals 6
-    .param p1    # Lcom/android/i18n/addressinput/JsoMap;
 
     new-instance v3, Ljava/util/EnumMap;
 
@@ -533,7 +527,6 @@
 
 .method public get(Ljava/lang/String;)Lcom/android/i18n/addressinput/AddressVerificationNodeData;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/i18n/addressinput/ClientData;->mCacheData:Lcom/android/i18n/addressinput/CacheData;
 
@@ -575,7 +568,6 @@
 
 .method public getDefaultData(Ljava/lang/String;)Lcom/android/i18n/addressinput/AddressVerificationNodeData;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "/"
 
@@ -706,8 +698,6 @@
 
 .method public requestData(Lcom/android/i18n/addressinput/LookupKey;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p2    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     const-string v1, "Null lookup key not allowed"
 

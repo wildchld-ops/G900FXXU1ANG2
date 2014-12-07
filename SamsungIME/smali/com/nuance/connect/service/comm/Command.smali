@@ -140,7 +140,6 @@
 # virtual methods
 .method public setOutgoingFileLocation(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/comm/Command;->sendFileLocation:Ljava/lang/String;
 

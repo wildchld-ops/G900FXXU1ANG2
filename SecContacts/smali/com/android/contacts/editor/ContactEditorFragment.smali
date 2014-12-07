@@ -325,7 +325,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/editor/ContactEditorFragment;)Landroid/widget/ListPopupWindow;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mAggregationSuggestionPopup:Landroid/widget/ListPopupWindow;
 
@@ -334,7 +333,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/editor/ContactEditorFragment;)Lcom/android/contacts/model/RawContactDeltaList;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mState:Lcom/android/contacts/model/RawContactDeltaList;
 
@@ -343,8 +341,6 @@
 
 .method static synthetic access$102(Lcom/android/contacts/editor/ContactEditorFragment;Landroid/widget/ListPopupWindow;)Landroid/widget/ListPopupWindow;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Landroid/widget/ListPopupWindow;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mAggregationSuggestionPopup:Landroid/widget/ListPopupWindow;
 
@@ -353,7 +349,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/editor/ContactEditorFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/ContactEditorFragment;->doRevertAction()V
 
@@ -362,7 +357,6 @@
 
 .method static synthetic access$1200(Lcom/android/contacts/editor/ContactEditorFragment;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-wide v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mLoaderStartTime:J
 
@@ -371,8 +365,6 @@
 
 .method static synthetic access$1202(Lcom/android/contacts/editor/ContactEditorFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mLoaderStartTime:J
 
@@ -381,7 +373,6 @@
 
 .method static synthetic access$1300(Lcom/android/contacts/editor/ContactEditorFragment;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mLookupUri:Landroid/net/Uri;
 
@@ -390,8 +381,6 @@
 
 .method static synthetic access$1302(Lcom/android/contacts/editor/ContactEditorFragment;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mLookupUri:Landroid/net/Uri;
 
@@ -408,7 +397,6 @@
 
 .method static synthetic access$1500(Lcom/android/contacts/editor/ContactEditorFragment;)Lcom/android/contacts/editor/ContactEditorFragment$Listener;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mListener:Lcom/android/contacts/editor/ContactEditorFragment$Listener;
 
@@ -417,8 +405,6 @@
 
 .method static synthetic access$1602(Lcom/android/contacts/editor/ContactEditorFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mStatus:I
 
@@ -427,8 +413,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/editor/ContactEditorFragment;Lcom/android/contacts/model/Contact;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/editor/ContactEditorFragment;->setMoreDataIfChanged(Lcom/android/contacts/model/Contact;)V
 
@@ -437,8 +421,6 @@
 
 .method static synthetic access$1802(Lcom/android/contacts/editor/ContactEditorFragment;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mGroupMetaData:Landroid/database/Cursor;
 
@@ -447,7 +429,6 @@
 
 .method static synthetic access$1900(Lcom/android/contacts/editor/ContactEditorFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/ContactEditorFragment;->bindGroupMetaData()V
 
@@ -456,7 +437,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/editor/ContactEditorFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/ContactEditorFragment;->isEditingUserProfile()Z
 
@@ -467,8 +447,6 @@
 
 .method static synthetic access$2102(Lcom/android/contacts/editor/ContactEditorFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mRawContactIdRequestingPhoto:J
 
@@ -477,8 +455,6 @@
 
 .method static synthetic access$2202(Lcom/android/contacts/editor/ContactEditorFragment;Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;)Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mCurrentPhotoHandler:Lcom/android/contacts/editor/ContactEditorFragment$PhotoHandler;
 
@@ -487,7 +463,6 @@
 
 .method static synthetic access$2300(Lcom/android/contacts/editor/ContactEditorFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mCurrentPhotoFile:Ljava/lang/String;
 
@@ -496,8 +471,6 @@
 
 .method static synthetic access$2302(Lcom/android/contacts/editor/ContactEditorFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mCurrentPhotoFile:Ljava/lang/String;
 
@@ -506,7 +479,6 @@
 
 .method static synthetic access$2400(Lcom/android/contacts/editor/ContactEditorFragment;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mCurrentPhotoUri:Landroid/net/Uri;
 
@@ -515,8 +487,6 @@
 
 .method static synthetic access$2402(Lcom/android/contacts/editor/ContactEditorFragment;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mCurrentPhotoUri:Landroid/net/Uri;
 
@@ -525,7 +495,6 @@
 
 .method static synthetic access$2500(Lcom/android/contacts/editor/ContactEditorFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/ContactEditorFragment;->hasValidState()Z
 
@@ -536,7 +505,6 @@
 
 .method static synthetic access$2700(Lcom/android/contacts/editor/ContactEditorFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-boolean v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mIsEasyMode:Z
 
@@ -545,9 +513,6 @@
 
 .method static synthetic access$2800(Lcom/android/contacts/editor/ContactEditorFragment;Lcom/android/contacts/editor/BaseRawContactEditorView;Z)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Lcom/android/contacts/editor/BaseRawContactEditorView;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/editor/ContactEditorFragment;->setPhotoButtonVisibility(Lcom/android/contacts/editor/BaseRawContactEditorView;Z)V
 
@@ -556,7 +521,6 @@
 
 .method static synthetic access$2900(Lcom/android/contacts/editor/ContactEditorFragment;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mUpdatedPhotos:Landroid/os/Bundle;
 
@@ -565,9 +529,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/editor/ContactEditorFragment;Landroid/content/Context;Lcom/android/contacts/editor/RawContactEditorView;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/editor/RawContactEditorView;
 
     invoke-direct {p0, p1, p2}, Lcom/android/contacts/editor/ContactEditorFragment;->acquireAggregationSuggestions(Landroid/content/Context;Lcom/android/contacts/editor/RawContactEditorView;)V
 
@@ -576,10 +537,6 @@
 
 .method static synthetic access$3000(Lcom/android/contacts/editor/ContactEditorFragment;JLandroid/graphics/Bitmap;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # J
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/contacts/editor/ContactEditorFragment;->setPhoto(JLandroid/graphics/Bitmap;Ljava/lang/String;)V
 
@@ -588,10 +545,6 @@
 
 .method static synthetic access$3200(Lcom/android/contacts/editor/ContactEditorFragment;JLandroid/graphics/Bitmap;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # J
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/net/Uri;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/contacts/editor/ContactEditorFragment;->setPhoto(JLandroid/graphics/Bitmap;Landroid/net/Uri;)V
 
@@ -600,7 +553,6 @@
 
 .method static synthetic access$3600(Lcom/android/contacts/editor/ContactEditorFragment;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/ContactEditorFragment;->bindEditors()V
 
@@ -609,7 +561,6 @@
 
 .method static synthetic access$3700(Lcom/android/contacts/editor/ContactEditorFragment;)Lcom/samsung/contacts/editor/MoreEditorView;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mVibrationEditorView:Lcom/samsung/contacts/editor/MoreEditorView;
 
@@ -618,8 +569,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/editor/ContactEditorFragment;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/editor/ContactEditorFragment;->hideSoftInput(Landroid/view/View;)V
 
@@ -628,10 +577,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/editor/ContactEditorFragment;Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/account/AccountWithDataSet;Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p3    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/contacts/editor/ContactEditorFragment;->rebindEditorsForNewContact(Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/common/model/account/AccountWithDataSet;Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
 
@@ -640,7 +585,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/editor/ContactEditorFragment;)Lcom/android/contacts/common/model/account/AccountWithDataSet;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/ContactEditorFragment;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mCustomAccount:Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
@@ -649,8 +593,6 @@
 
 .method private acquireAggregationSuggestions(Landroid/content/Context;Lcom/android/contacts/editor/RawContactEditorView;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/editor/RawContactEditorView;
 
     invoke-virtual {p2}, Lcom/android/contacts/editor/RawContactEditorView;->getRawContactId()J
 
@@ -2109,8 +2051,6 @@
 
 .method private bindEditorsForNewContact(Lcom/android/contacts/common/model/account/AccountWithDataSet;Lcom/android/contacts/common/model/account/AccountType;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountType;
 
     const/4 v0, 0x0
 
@@ -2338,9 +2278,6 @@
 
 .method private bindPhotoHandler(Lcom/android/contacts/editor/BaseRawContactEditorView;Lcom/android/contacts/common/model/account/AccountType;Lcom/android/contacts/model/RawContactDeltaList;)V
     .locals 9
-    .param p1    # Lcom/android/contacts/editor/BaseRawContactEditorView;
-    .param p2    # Lcom/android/contacts/common/model/account/AccountType;
-    .param p3    # Lcom/android/contacts/model/RawContactDeltaList;
 
     const/4 v3, 0x0
 
@@ -2958,7 +2895,6 @@
 
 .method private hideSoftInput(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -3356,7 +3292,6 @@
 
 .method private setMoreDataIfChanged(Lcom/android/contacts/model/Contact;)V
     .locals 6
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-virtual {p1}, Lcom/android/contacts/model/Contact;->getCustomRingtone()Ljava/lang/String;
 
@@ -3759,7 +3694,6 @@
 
 .method private showSoftInput(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -3776,8 +3710,6 @@
 
 .method private showSoftInputWithDelay(Landroid/view/View;J)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # J
 
     new-instance v0, Landroid/os/Handler;
 
@@ -3876,7 +3808,6 @@
 # virtual methods
 .method public changeView(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mContent:Landroid/widget/LinearLayout;
 
@@ -3932,7 +3863,6 @@
 
 .method protected createContact(Lcom/android/contacts/common/model/account/AccountWithDataSet;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     const/4 v2, 0x0
 
@@ -3998,7 +3928,6 @@
 
 .method protected doEditSuggestedContact(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mListener:Lcom/android/contacts/editor/ContactEditorFragment$Listener;
 
@@ -4032,7 +3961,6 @@
 
 .method protected doJoinSuggestedContact([J)V
     .locals 2
-    .param p1    # [J
 
     const/4 v1, 0x1
 
@@ -4137,7 +4065,6 @@
 
 .method public getRawContactEditorView(J)Lcom/android/contacts/editor/BaseRawContactEditorView;
     .locals 5
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -4460,7 +4387,6 @@
 
 .method public isMoreExpanded(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mMoreState:Landroid/os/Bundle;
 
@@ -4473,9 +4399,6 @@
 
 .method public load(Ljava/lang/String;Landroid/net/Uri;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -4698,7 +4621,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x2
 
@@ -5823,7 +5745,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -5852,7 +5773,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -6190,9 +6110,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -6363,8 +6280,6 @@
 
 .method public onExternalEditorRequest(Lcom/android/contacts/common/model/account/AccountWithDataSet;Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
-    .param p2    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mListener:Lcom/android/contacts/editor/ContactEditorFragment$Listener;
 
@@ -6598,7 +6513,6 @@
 
 .method public onJoinCompleted(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x1
 
@@ -7179,7 +7093,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "uri"
 
@@ -7387,8 +7300,6 @@
 
 .method public onStartActivityForResult(Landroid/content/Intent;I)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -8438,7 +8349,6 @@
 
 .method public setData(Lcom/android/contacts/model/Contact;)V
     .locals 13
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     const/4 v12, 0x1
 
@@ -8561,7 +8471,6 @@
 
 .method public setEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v3, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mEnabled:Z
 
@@ -8613,7 +8522,6 @@
 
 .method public setIntentExtras(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -8701,7 +8609,6 @@
 
 .method public setListener(Lcom/android/contacts/editor/ContactEditorFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/editor/ContactEditorFragment$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mListener:Lcom/android/contacts/editor/ContactEditorFragment$Listener;
 
@@ -8754,8 +8661,6 @@
 
 .method public setMoreExpanded(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/contacts/editor/ContactEditorFragment;->mMoreState:Landroid/os/Bundle;
 
@@ -8766,8 +8671,6 @@
 
 .method public startActivityForResultImpl(Landroid/content/Intent;I)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     return-void
 .end method
@@ -8851,7 +8754,6 @@
 
 .method protected validateAction(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "android.intent.action.EDIT"
 

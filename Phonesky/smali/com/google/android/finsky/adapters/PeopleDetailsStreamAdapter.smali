@@ -14,16 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/model/Document;Landroid/content/Context;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/ClientMutationCache;Lcom/google/android/finsky/api/model/DfeList;ZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 14
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/google/android/finsky/api/DfeApi;
-    .param p4    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p6    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p7    # Lcom/google/android/finsky/utils/ClientMutationCache;
-    .param p8    # Lcom/google/android/finsky/api/model/DfeList;
-    .param p9    # Z
-    .param p10    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/4 v8, 0x0
 
@@ -112,8 +102,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/adapters/PeopleDetailsStreamAdapter;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/PeopleDetailsStreamAdapter;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/adapters/PeopleDetailsStreamAdapter;->mIsShowingOwnWarmWelcome:Z
 
@@ -122,8 +110,6 @@
 
 .method private getEmptyStateView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p1, :cond_0
 
@@ -168,8 +154,6 @@
 
 .method private getProfileInfoView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -203,8 +187,6 @@
 
 .method private getWarmWelcomeCardView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -287,7 +269,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -341,9 +322,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p1, :cond_0
 
@@ -407,7 +385,6 @@
 
 .method protected isDismissed(Lcom/google/android/finsky/api/model/Document;)Z
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v0, 0x0
 

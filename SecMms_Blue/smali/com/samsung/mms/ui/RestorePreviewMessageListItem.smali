@@ -336,7 +336,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v4, 0x0
 
@@ -427,8 +426,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const-wide/16 v4, 0x0
 
@@ -519,7 +516,6 @@
 
 .method static synthetic access$000(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Lcom/samsung/mms/data/SavedSmsMessage;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mMessageItem:Lcom/samsung/mms/data/SavedSmsMessage;
 
@@ -528,7 +524,6 @@
 
 .method static synthetic access$100(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mContext:Landroid/content/Context;
 
@@ -537,7 +532,6 @@
 
 .method static synthetic access$200(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mContext:Landroid/content/Context;
 
@@ -546,7 +540,6 @@
 
 .method static synthetic access$300(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mContext:Landroid/content/Context;
 
@@ -555,7 +548,6 @@
 
 .method static synthetic access$400(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mContext:Landroid/content/Context;
 
@@ -564,7 +556,6 @@
 
 .method static synthetic access$500(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mContext:Landroid/content/Context;
 
@@ -573,7 +564,6 @@
 
 .method static synthetic access$600(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mHandler:Landroid/os/Handler;
 
@@ -582,7 +572,6 @@
 
 .method static synthetic access$700(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mSelectedUrl:Ljava/lang/String;
 
@@ -591,8 +580,6 @@
 
 .method static synthetic access$702(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mSelectedUrl:Ljava/lang/String;
 
@@ -601,7 +588,6 @@
 
 .method static synthetic access$800(Lcom/samsung/mms/ui/RestorePreviewMessageListItem;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/samsung/mms/ui/RestorePreviewMessageListItem;
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mBubbleLayout:Landroid/widget/LinearLayout;
 
@@ -610,8 +596,6 @@
 
 .method private bindCommonMessage(Lcom/samsung/mms/data/SavedSmsMessage;Landroid/content/Context;)V
     .locals 12
-    .param p1    # Lcom/samsung/mms/data/SavedSmsMessage;
-    .param p2    # Landroid/content/Context;
 
     const/4 v8, 0x6
 
@@ -808,7 +792,6 @@
 
 .method private drawLeftStatusIndicator(Lcom/samsung/mms/data/SavedSmsMessage;)V
     .locals 5
-    .param p1    # Lcom/samsung/mms/data/SavedSmsMessage;
 
     const/4 v1, 0x1
 
@@ -889,8 +872,6 @@
 
 .method private formatDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-static {p1}, Landroid/text/format/DateFormat;->getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 
@@ -947,7 +928,6 @@
 
 .method private formatMessage(Lcom/samsung/mms/data/SavedSmsMessage;)Ljava/lang/CharSequence;
     .locals 15
-    .param p1    # Lcom/samsung/mms/data/SavedSmsMessage;
 
     new-instance v1, Landroid/text/SpannableStringBuilder;
 
@@ -1117,8 +1097,6 @@
 
 .method private getSmsPageCount(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -1438,7 +1416,6 @@
 
 .method private setBodyTextViewColor(Z)V
     .locals 4
-    .param p1    # Z
 
     const v3, 0x7f09000c
 
@@ -1494,12 +1471,6 @@
 
 .method private setDateViewTextAndColor(Ljava/lang/String;ZZZLjava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
 
     const/4 v2, 0x1
 
@@ -1649,8 +1620,6 @@
 
 .method private setMessageBubbleStyle(Lcom/samsung/mms/data/SavedSmsMessage;I)V
     .locals 4
-    .param p1    # Lcom/samsung/mms/data/SavedSmsMessage;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mContext:Landroid/content/Context;
 
@@ -1716,8 +1685,6 @@
 
 .method private showLinksContextMenu(Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const v8, 0x7f0c01a2
 
@@ -2000,8 +1967,6 @@
 
 .method private smsGetPage(Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -2045,9 +2010,6 @@
 # virtual methods
 .method public bind(Lcom/samsung/mms/data/SavedSmsMessage;Landroid/content/Context;Z)V
     .locals 12
-    .param p1    # Lcom/samsung/mms/data/SavedSmsMessage;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -2826,7 +2788,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3190,8 +3151,6 @@
 
 .method public setCheckBox(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -3206,7 +3165,6 @@
 
 .method public setListView(Lcom/android/mms/ui/MessageListView;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListView;
 
     sput-object p1, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->gListview:Lcom/android/mms/ui/MessageListView;
 
@@ -3215,7 +3173,6 @@
 
 .method public setMsgListItemHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/mms/ui/RestorePreviewMessageListItem;->mHandler:Landroid/os/Handler;
 

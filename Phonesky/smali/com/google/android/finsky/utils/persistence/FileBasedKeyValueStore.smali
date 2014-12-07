@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +42,6 @@
 
 .method private parseMapFromJson(Lorg/json/JSONObject;)Ljava/util/Map;
     .locals 4
-    .param p1    # Lorg/json/JSONObject;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -114,7 +111,6 @@
 # virtual methods
 .method public delete(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 
@@ -370,7 +366,6 @@
 
 .method public put(Ljava/lang/String;Ljava/util/Map;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

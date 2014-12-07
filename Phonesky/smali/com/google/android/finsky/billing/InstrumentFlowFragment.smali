@@ -16,7 +16,6 @@
 # virtual methods
 .method protected finishWithUpdateInstrumentResponse(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     new-instance v0, Landroid/os/Bundle;
 

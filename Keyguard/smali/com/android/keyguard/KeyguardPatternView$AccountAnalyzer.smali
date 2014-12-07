@@ -40,7 +40,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/keyguard/KeyguardPatternView;Landroid/accounts/AccountManager;)V
     .locals 3
-    .param p2    # Landroid/accounts/AccountManager;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardPatternView;
 
@@ -74,9 +73,6 @@
 
 .method synthetic constructor <init>(Lcom/android/keyguard/KeyguardPatternView;Landroid/accounts/AccountManager;Lcom/android/keyguard/KeyguardPatternView$1;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardPatternView;
-    .param p2    # Landroid/accounts/AccountManager;
-    .param p3    # Lcom/android/keyguard/KeyguardPatternView$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/keyguard/KeyguardPatternView$AccountAnalyzer;-><init>(Lcom/android/keyguard/KeyguardPatternView;Landroid/accounts/AccountManager;)V
 

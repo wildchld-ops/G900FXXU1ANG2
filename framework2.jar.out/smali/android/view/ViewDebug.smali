@@ -138,8 +138,6 @@
 
 .method private static callMethodOnAppropriateTheadBlocking(Ljava/lang/reflect/Method;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 9
-    .param p0    # Ljava/lang/reflect/Method;
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalAccessException;,
@@ -261,9 +259,6 @@
 
 .method public static capture(Landroid/view/View;Ljava/io/OutputStream;Landroid/view/View;)V
     .locals 6
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -355,9 +350,6 @@
 
 .method private static capture(Landroid/view/View;Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -375,8 +367,6 @@
 
 .method public static captureLayers(Landroid/view/View;Ljava/io/DataOutputStream;)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -447,9 +437,6 @@
 
 .method private static captureViewLayer(Landroid/view/View;Ljava/io/DataOutputStream;Z)V
     .locals 12
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/io/DataOutputStream;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -635,8 +622,6 @@
 
 .method private static capturedViewExportFields(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -741,8 +726,6 @@
 
 .method private static capturedViewExportMethods(Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p0    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1110,10 +1093,6 @@
 
 .method static dispatchCommand(Landroid/view/View;Ljava/lang/String;Ljava/lang/String;Ljava/io/OutputStream;)V
     .locals 5
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1280,10 +1259,6 @@
 
 .method public static dump(Landroid/view/View;ZZLjava/io/OutputStream;)V
     .locals 10
-    .param p0    # Landroid/view/View;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1400,8 +1375,6 @@
 
 .method public static dumpCapturedView(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1460,11 +1433,6 @@
 
 .method private static dumpGLHierarchyWithProperties(Landroid/content/Context;Landroid/view/IGLViewGroup;Ljava/io/BufferedWriter;IZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/IGLViewGroup;
-    .param p2    # Ljava/io/BufferedWriter;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/view/ViewDebug;->dumpView(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;IZ)Z
 
@@ -1522,11 +1490,6 @@
 
 .method private static dumpGLSurfaceView(Landroid/content/Context;Landroid/opengl/GLSurfaceView;Ljava/io/BufferedWriter;IZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/opengl/GLSurfaceView;
-    .param p2    # Ljava/io/BufferedWriter;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/view/ViewDebug;->dumpView(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;IZ)Z
 
@@ -1564,11 +1527,6 @@
 
 .method private static dumpView(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;IZ)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/io/BufferedWriter;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -1654,12 +1612,6 @@
 
 .method private static dumpViewHierarchy(Landroid/content/Context;Landroid/view/ViewGroup;Ljava/io/BufferedWriter;IZZ)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Ljava/io/BufferedWriter;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-static {p0, p1, p2, p3, p5}, Landroid/view/ViewDebug;->dumpView(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;IZ)Z
 
@@ -1773,9 +1725,6 @@
 
 .method private static dumpViewProperties(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/io/BufferedWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1791,10 +1740,6 @@
 
 .method private static dumpViewProperties(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/io/BufferedWriter;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1849,10 +1794,6 @@
 
 .method public static dump_s(Landroid/view/View;ZZLjava/io/OutputStream;)V
     .locals 141
-    .param p0    # Landroid/view/View;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -14367,10 +14308,6 @@
 
 .method private static exportFields(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;Ljava/lang/Class;Ljava/lang/String;)V
     .locals 23
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/io/BufferedWriter;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14771,10 +14708,6 @@
 
 .method private static exportMethods(Landroid/content/Context;Ljava/lang/Object;Ljava/io/BufferedWriter;Ljava/lang/Class;Ljava/lang/String;)V
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/io/BufferedWriter;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15179,12 +15112,6 @@
 
 .method private static exportUnrolledArray(Landroid/content/Context;Ljava/io/BufferedWriter;Landroid/view/ViewDebug$ExportedProperty;[ILjava/lang/String;Ljava/lang/String;)V
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/io/BufferedWriter;
-    .param p2    # Landroid/view/ViewDebug$ExportedProperty;
-    .param p3    # [I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -15357,10 +15284,6 @@
 
 .method private static exportUnrolledFlags(Ljava/io/BufferedWriter;[Landroid/view/ViewDebug$FlagToString;ILjava/lang/String;)V
     .locals 10
-    .param p0    # Ljava/io/BufferedWriter;
-    .param p1    # [Landroid/view/ViewDebug$FlagToString;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -15451,8 +15374,6 @@
 
 .method public static findView(Landroid/view/View;Ljava/lang/String;)Landroid/view/View;
     .locals 8
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -15528,9 +15449,6 @@
 
 .method private static findView(Landroid/view/ViewGroup;Ljava/lang/String;I)Landroid/view/View;
     .locals 5
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Landroid/view/ViewDebug;->isRequestedView(Landroid/view/View;Ljava/lang/String;I)Z
 
@@ -15900,8 +15818,6 @@
 
 .method private static invalidate(Landroid/view/View;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/view/ViewDebug;->findView(Landroid/view/View;Ljava/lang/String;)Landroid/view/View;
 
@@ -15917,9 +15833,6 @@
 
 .method public static invokeViewMethod(Landroid/view/View;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 8
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # [Ljava/lang/Object;
 
     new-instance v6, Ljava/util/concurrent/CountDownLatch;
 
@@ -15989,9 +15902,6 @@
 
 .method private static isRequestedView(Landroid/view/View;Ljava/lang/String;I)Z
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
@@ -16039,8 +15949,6 @@
 
 .method public static outputDisplayList(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
@@ -16053,8 +15961,6 @@
 
 .method private static outputDisplayList(Landroid/view/View;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -16076,8 +15982,6 @@
 
 .method private static performViewCapture(Landroid/view/View;Z)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Landroid/view/View;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -16150,9 +16054,6 @@
 
 .method private static profile(Landroid/view/View;Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -16269,8 +16170,6 @@
 
 .method public static profileViewAndChildren(Landroid/view/View;Ljava/io/BufferedWriter;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/io/BufferedWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -16286,9 +16185,6 @@
 
 .method private static profileViewAndChildren(Landroid/view/View;Ljava/io/BufferedWriter;Z)V
     .locals 11
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/io/BufferedWriter;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -16428,7 +16324,6 @@
 
 .method private static profileViewOperation(Landroid/view/View;Landroid/view/ViewDebug$ViewOperation;)J
     .locals 8
-    .param p0    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -16537,8 +16432,6 @@
 
 .method private static requestLayout(Landroid/view/View;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/view/ViewDebug;->findView(Landroid/view/View;Ljava/lang/String;)Landroid/view/View;
 
@@ -16558,8 +16451,6 @@
 
 .method static resolveId(Landroid/content/Context;I)Ljava/lang/Object;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -16638,9 +16529,6 @@
 
 .method public static setLayoutParameter(Landroid/view/View;Ljava/lang/String;I)V
     .locals 5
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NoSuchFieldException;,
@@ -16728,8 +16616,6 @@
 
 .method public static startHierarchyTracing(Ljava/lang/String;Landroid/view/View;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -16738,8 +16624,6 @@
 
 .method public static startRecyclerTracing(Ljava/lang/String;Landroid/view/View;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -16764,8 +16648,6 @@
 
 .method public static trace(Landroid/view/View;Landroid/view/ViewDebug$HierarchyTraceType;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/ViewDebug$HierarchyTraceType;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -16774,9 +16656,6 @@
 
 .method public static varargs trace(Landroid/view/View;Landroid/view/ViewDebug$RecyclerTraceType;[I)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/ViewDebug$RecyclerTraceType;
-    .param p2    # [I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -16785,11 +16664,6 @@
 
 .method private static writeEntry(Ljava/io/BufferedWriter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p0    # Ljava/io/BufferedWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -16817,8 +16691,6 @@
 
 .method private static writeValue(Ljava/io/BufferedWriter;Ljava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/io/BufferedWriter;
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

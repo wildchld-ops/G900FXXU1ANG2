@@ -19,8 +19,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,7 +57,6 @@
 
 .method public setContent(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/ContentImpl;->content:Ljava/lang/Object;
 
@@ -68,7 +65,6 @@
 
 .method public setContentDispositionHeader(Ljavax/sip/header/ContentDispositionHeader;)V
     .locals 0
-    .param p1    # Ljavax/sip/header/ContentDispositionHeader;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/ContentImpl;->contentDispositionHeader:Ljavax/sip/header/ContentDispositionHeader;
 
@@ -77,7 +73,6 @@
 
 .method public setContentTypeHeader(Ljavax/sip/header/ContentTypeHeader;)V
     .locals 0
-    .param p1    # Ljavax/sip/header/ContentTypeHeader;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/ContentImpl;->contentTypeHeader:Ljavax/sip/header/ContentTypeHeader;
 

@@ -44,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/launcher2/Workspace$28;->val$magazine_cling_message_checkbox_check:Landroid/widget/CheckBox;
 

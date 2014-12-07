@@ -50,9 +50,6 @@
 
 .method public static launchAutoUpdateMigrationDialog(Landroid/support/v4/app/FragmentManager;ILjava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/support/v4/app/FragmentManager;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

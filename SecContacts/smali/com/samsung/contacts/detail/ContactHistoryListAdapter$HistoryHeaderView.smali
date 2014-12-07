@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderView;->this$0:Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
 
@@ -42,7 +41,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderView;
 
     invoke-direct {p0}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderView;->getTitle()Ljava/lang/String;
 

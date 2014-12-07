@@ -42,8 +42,6 @@
 
 .method private parse(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -82,8 +80,6 @@
 
 .method private setAlgorithm(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -113,8 +109,6 @@
 
 .method private setNonce(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -144,8 +138,6 @@
 
 .method private setOpaque(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -175,8 +167,6 @@
 
 .method private setQop(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -206,8 +196,6 @@
 
 .method private setRealm(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -237,8 +225,6 @@
 
 .method private setScheme(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "Digest"
 
@@ -280,8 +266,6 @@
 
 .method private setStale(Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -317,7 +301,6 @@
 # virtual methods
 .method public WwwAuthHeaderParse(Lorg/apache/http/HttpResponse;)Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
     .locals 6
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/4 v0, 0x0
 
@@ -395,7 +378,6 @@
 
 .method public proxyAuthHeaderParse(Lorg/apache/http/HttpResponse;)Lorg/apache/http/impl/client/secgbaclient/WwwAuthenticateHeader;
     .locals 6
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     const/4 v0, 0x0
 

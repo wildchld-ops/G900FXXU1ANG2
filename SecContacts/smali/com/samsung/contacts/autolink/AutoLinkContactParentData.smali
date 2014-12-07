@@ -74,7 +74,6 @@
 # virtual methods
 .method public addSelectedChildCount(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/contacts/autolink/AutoLinkContactParentData;->mSelectedChildrenCount:I
 
@@ -111,7 +110,6 @@
 
 .method public minusSelectedChildCount(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 

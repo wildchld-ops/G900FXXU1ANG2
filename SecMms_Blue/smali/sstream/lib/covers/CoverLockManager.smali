@@ -57,7 +57,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lsstream/lib/covers/CoverLockManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -90,7 +89,6 @@
 
 .method private isStringEmptyOrNull(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -114,9 +112,6 @@
 
 .method private queryStories(Landroid/content/Context;Ljava/lang/String;I)Ljava/util/List;
     .locals 31
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -440,9 +435,6 @@
 # virtual methods
 .method public getCoverItems(Landroid/content/Context;Ljava/lang/String;I)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -551,9 +543,6 @@
 
 .method public updateItemsFromSever(Landroid/content/Context;Ljava/lang/String;Lsstream/lib/covers/StreamUpdateListener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lsstream/lib/covers/StreamUpdateListener;
 
     if-eqz p1, :cond_1
 

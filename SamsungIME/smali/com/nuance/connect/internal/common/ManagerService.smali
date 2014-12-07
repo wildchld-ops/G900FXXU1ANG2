@@ -427,9 +427,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;Lcom/nuance/connect/common/ConnectFeature;[Lcom/nuance/connect/internal/common/ManagerService;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/nuance/connect/common/ConnectFeature;
-    .param p5    # [Lcom/nuance/connect/internal/common/ManagerService;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -454,7 +451,6 @@
 
 .method public static managerForService(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -505,7 +501,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/nuance/connect/internal/common/ManagerService;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/nuance/connect/internal/common/ManagerService;
 

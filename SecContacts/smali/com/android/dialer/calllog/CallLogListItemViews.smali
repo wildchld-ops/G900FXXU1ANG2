@@ -53,28 +53,6 @@
 # direct methods
 .method private constructor <init>(Landroid/widget/RelativeLayout;Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/RelativeLayout;Landroid/widget/ImageView;Landroid/widget/ImageButton;Landroid/widget/QuickContactBadge;Landroid/view/View;Landroid/view/View;Landroid/widget/Button;Landroid/widget/ImageView;Landroid/widget/TextView;Landroid/widget/TextView;Landroid/widget/ImageView;Landroid/widget/TextView;Landroid/widget/TextView;Lcom/android/dialer/PhoneCallDetailsViews;Landroid/widget/TextView;Landroid/view/View;Landroid/widget/ImageView;Landroid/view/View;Lcom/sec/android/touchwiz/widget/TwCheckBox;)V
     .locals 1
-    .param p1    # Landroid/widget/RelativeLayout;
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Landroid/widget/TextView;
-    .param p4    # Landroid/widget/RelativeLayout;
-    .param p5    # Landroid/widget/ImageView;
-    .param p6    # Landroid/widget/ImageButton;
-    .param p7    # Landroid/widget/QuickContactBadge;
-    .param p8    # Landroid/view/View;
-    .param p9    # Landroid/view/View;
-    .param p10    # Landroid/widget/Button;
-    .param p11    # Landroid/widget/ImageView;
-    .param p12    # Landroid/widget/TextView;
-    .param p13    # Landroid/widget/TextView;
-    .param p14    # Landroid/widget/ImageView;
-    .param p15    # Landroid/widget/TextView;
-    .param p16    # Landroid/widget/TextView;
-    .param p17    # Lcom/android/dialer/PhoneCallDetailsViews;
-    .param p18    # Landroid/widget/TextView;
-    .param p19    # Landroid/view/View;
-    .param p20    # Landroid/widget/ImageView;
-    .param p21    # Landroid/view/View;
-    .param p22    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,7 +117,6 @@
 
 .method public static createForTest(Landroid/content/Context;)Lcom/android/dialer/calllog/CallLogListItemViews;
     .locals 25
-    .param p0    # Landroid/content/Context;
 
     new-instance v2, Lcom/android/dialer/calllog/CallLogListItemViews;
 
@@ -316,7 +293,6 @@
 
 .method public static fromView(Landroid/view/View;)Lcom/android/dialer/calllog/CallLogListItemViews;
     .locals 25
-    .param p0    # Landroid/view/View;
 
     new-instance v2, Lcom/android/dialer/calllog/CallLogListItemViews;
 
@@ -565,7 +541,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/dialer/calllog/CallLogListItemViews;->findCheckBox()Lcom/sec/android/touchwiz/widget/TwCheckBox;
 

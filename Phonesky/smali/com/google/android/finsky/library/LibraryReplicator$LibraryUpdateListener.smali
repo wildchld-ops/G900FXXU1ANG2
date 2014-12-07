@@ -92,7 +92,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/library/LibraryReplicator$LibraryUpdateListener;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/library/LibraryReplicator$LibraryUpdateListener;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator$LibraryUpdateListener;->mOriginalTokens:Ljava/util/Map;
 
@@ -103,7 +102,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 4
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v3, 0x0
 
@@ -154,7 +152,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/LibraryReplication$LibraryReplicationResponse;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/LibraryReplication$LibraryReplicationResponse;
 
     iget-object v0, p0, Lcom/google/android/finsky/library/LibraryReplicator$LibraryUpdateListener;->this$0:Lcom/google/android/finsky/library/LibraryReplicator;
 
@@ -174,7 +171,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/LibraryReplication$LibraryReplicationResponse;
 

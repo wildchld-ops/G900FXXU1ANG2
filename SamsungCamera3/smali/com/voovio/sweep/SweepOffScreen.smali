@@ -83,10 +83,6 @@
 # direct methods
 .method public constructor <init>(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -107,11 +103,6 @@
 
 .method public constructor <init>(IIIILcom/voovio/sweep/ResourceManager;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lcom/voovio/sweep/ResourceManager;
 
     const/4 v3, 0x0
 
@@ -264,7 +255,6 @@
 
 .method private cameraToVoovioStartPosition(Lcom/voovio/sweep/Voovio;)V
     .locals 11
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     const/4 v5, 0x0
 
@@ -725,9 +715,6 @@
 
 .method private processDisplacements(FFF)V
     .locals 29
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     move-object/from16 v0, p0
 
@@ -1839,7 +1826,6 @@
 
 .method private setCurrentVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 11
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     const/4 v10, 0x1
 
@@ -2281,7 +2267,6 @@
 
 .method private startFrom(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/voovio/sweep/SweepOffScreen;->m_oSweep:Lcom/voovio/sweep/Sweep;
 
@@ -2375,8 +2360,6 @@
 
 .method private testTransition(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/sweep/Transition;
     .locals 4
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v2, 0x0
 
@@ -2879,7 +2862,6 @@
 
 .method public getNextFrameAsByteBuffer(Ljava/nio/ByteBuffer;)Z
     .locals 4
-    .param p1    # Ljava/nio/ByteBuffer;
 
     const/4 v0, 0x1
 
@@ -3012,7 +2994,6 @@
 
 .method public init(Lcom/voovio/sweep/ResourceManager;)V
     .locals 8
-    .param p1    # Lcom/voovio/sweep/ResourceManager;
 
     const/16 v1, 0x64
 
@@ -3177,7 +3158,6 @@
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 14
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     const/16 v13, 0x100
 
@@ -3511,8 +3491,6 @@
 
 .method public onInit(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/high16 v2, 0x3f800000
 
@@ -3726,8 +3704,6 @@
 
 .method public setAutodriveVelocity(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/voovio/sweep/SweepOffScreen;->m_fAutodriveVelocityForward:F
 
@@ -3738,8 +3714,6 @@
 
 .method protected setSize(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/voovio/sweep/SweepOffScreen;->m_nWidth:I
 
@@ -3786,7 +3760,6 @@
 
 .method public setSweep(Lcom/voovio/sweep/Sweep;)V
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     const/4 v0, 0x0
 
@@ -3797,8 +3770,6 @@
 
 .method public setSweep(Lcom/voovio/sweep/Sweep;I)V
     .locals 2
-    .param p1    # Lcom/voovio/sweep/Sweep;
-    .param p2    # I
 
     const/4 v1, 0x0
 

@@ -164,7 +164,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/TipsDialog;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mOneHandedTutorialAnimationDrawble:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -173,8 +172,6 @@
 
 .method static synthetic access$002(Lcom/diotek/ime/framework/view/TipsDialog;Landroid/graphics/drawable/AnimationDrawable;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Landroid/graphics/drawable/AnimationDrawable;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mOneHandedTutorialAnimationDrawble:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -183,7 +180,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowPinchZoomGuide:Z
 
@@ -192,7 +188,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/framework/view/TipsDialog;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -201,8 +196,6 @@
 
 .method static synthetic access$102(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowPinchZoomGuide:Z
 
@@ -211,7 +204,6 @@
 
 .method static synthetic access$1100(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowEmptyShortcutsGuide:Z
 
@@ -220,8 +212,6 @@
 
 .method static synthetic access$1102(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowEmptyShortcutsGuide:Z
 
@@ -230,7 +220,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/TipsDialog;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mMotionTutorialAnimationDrawble:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -239,7 +228,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/view/TipsDialog;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mMovingTutorialAnimationDrawble:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -248,7 +236,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowGestureGuide:Z
 
@@ -257,8 +244,6 @@
 
 .method static synthetic access$402(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowGestureGuide:Z
 
@@ -267,7 +252,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowTraceGuide:Z
 
@@ -276,8 +260,6 @@
 
 .method static synthetic access$502(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowTraceGuide:Z
 
@@ -286,7 +268,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckboxStandardData:Z
 
@@ -295,8 +276,6 @@
 
 .method static synthetic access$602(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckboxStandardData:Z
 
@@ -305,7 +284,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowOneHandedGuide:Z
 
@@ -314,8 +292,6 @@
 
 .method static synthetic access$702(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowOneHandedGuide:Z
 
@@ -324,7 +300,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowPenDetectionGuide:Z
 
@@ -333,8 +308,6 @@
 
 .method static synthetic access$802(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsCheckDontShowPenDetectionGuide:Z
 
@@ -343,7 +316,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/framework/view/TipsDialog;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsTipCheckDontShowAllGuide:Z
 
@@ -352,8 +324,6 @@
 
 .method static synthetic access$902(Lcom/diotek/ime/framework/view/TipsDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/TipsDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mIsTipCheckDontShowAllGuide:Z
 
@@ -400,7 +370,6 @@
 
 .method private isAvailableShowXt9_9RemoveDialog(Ljava/lang/String;)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -779,7 +748,6 @@
 
 .method protected getOnDismissListener(Z)Landroid/content/DialogInterface$OnDismissListener;
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -977,9 +945,6 @@
 
 .method public showDiscoverability(ILandroid/view/View;Landroid/view/View;)V
     .locals 26
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
 
     move-object/from16 v0, p0
 
@@ -2354,7 +2319,6 @@
 
 .method public showEmptyShortcutsGuideDialog(Landroid/view/View;)V
     .locals 19
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -2800,7 +2764,6 @@
 
 .method public showGestureGuideDialog(Landroid/view/View;)V
     .locals 17
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -3163,7 +3126,6 @@
 
 .method public showHalfFullWidthSwitchDialog(Landroid/view/View;)V
     .locals 13
-    .param p1    # Landroid/view/View;
 
     iget-object v10, p0, Lcom/diotek/ime/framework/view/TipsDialog;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -3429,7 +3391,6 @@
 
 .method public showLanguageSelectDialog(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v8, 0x1
 
@@ -3622,7 +3583,6 @@
 
 .method public showOneHandedGuideDialog(Landroid/view/View;)V
     .locals 20
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -4102,7 +4062,6 @@
 
 .method public showPenDetectionGuideDialog(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     instance-of v11, p1, Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -4382,7 +4341,6 @@
 
 .method public showPinchZoomGuideDialog(Landroid/view/View;)V
     .locals 21
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -4874,7 +4832,6 @@
 
 .method public showSwiftkeyGuideDialog(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const/4 v13, 0x1
 
@@ -5153,9 +5110,6 @@
 
 .method public showSwiftkeyRemoveTermDialog(Ljava/lang/String;ILandroid/view/View;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     const/4 v11, 0x1
 
@@ -5386,7 +5340,6 @@
 
 .method public showTipsCMkeyGuideDialog(Landroid/view/View;)V
     .locals 17
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -5783,8 +5736,6 @@
 
 .method public showTipsDialogByIndex(ILandroid/view/View;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     packed-switch p1, :pswitch_data_0
 
@@ -5822,7 +5773,6 @@
 
 .method public showTipsHwrInstallGuideDialog(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     instance-of v11, p1, Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -6106,7 +6056,6 @@
 
 .method public showTipsOneHandedGuideDialog(Landroid/view/View;)V
     .locals 21
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -6583,7 +6532,6 @@
 
 .method public showTipsRemoveWordsGuideDialog(Landroid/view/View;)V
     .locals 17
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -6978,7 +6926,6 @@
 
 .method public showTipsSwiftKeyLearnsGuideDialog(Landroid/view/View;)V
     .locals 17
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -7373,7 +7320,6 @@
 
 .method public showTipsSwiftkeyGuideDialog(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     instance-of v11, p1, Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -7644,7 +7590,6 @@
 
 .method public showTipsTraceGuideDialog(Landroid/view/View;)V
     .locals 18
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -8088,7 +8033,6 @@
 
 .method public showTraceGuideDialog(Landroid/view/View;)V
     .locals 19
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p1
 
@@ -8601,7 +8545,6 @@
 
 .method public showXt9PersonalizerAttentionDialog(Landroid/view/View;)V
     .locals 17
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p0
 
@@ -8963,9 +8906,6 @@
 
 .method public showXt9_9RemoveTermDialog(Ljava/lang/String;ILandroid/view/View;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     const/4 v10, 0x1
 

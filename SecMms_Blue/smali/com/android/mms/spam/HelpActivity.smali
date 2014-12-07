@@ -112,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/spam/HelpActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/HelpActivity;
 
     iget-object v0, p0, Lcom/android/mms/spam/HelpActivity;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -121,8 +120,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/spam/HelpActivity;Lcom/tencent/update/BinderCheckResult;)Lcom/tencent/update/BinderCheckResult;
     .locals 0
-    .param p0    # Lcom/android/mms/spam/HelpActivity;
-    .param p1    # Lcom/tencent/update/BinderCheckResult;
 
     iput-object p1, p0, Lcom/android/mms/spam/HelpActivity;->mCheckResults:Lcom/tencent/update/BinderCheckResult;
 
@@ -131,7 +128,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/spam/HelpActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/HelpActivity;
 
     invoke-direct {p0}, Lcom/android/mms/spam/HelpActivity;->updateRuleStore()V
 
@@ -601,7 +597,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v4, 0x10
 
@@ -757,7 +752,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -830,7 +824,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -878,7 +871,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 

@@ -305,7 +305,6 @@
 
 .method public setAfter(Landroid/content/ContentValues;)V
     .locals 0
-    .param p1    # Landroid/content/ContentValues;
 
     iput-object p1, p0, Lcom/samsung/contacts/model/MoreValuesDelta;->mAfter:Landroid/content/ContentValues;
 
@@ -314,7 +313,6 @@
 
 .method public setBefore(Landroid/content/ContentValues;)V
     .locals 0
-    .param p1    # Landroid/content/ContentValues;
 
     iput-object p1, p0, Lcom/samsung/contacts/model/MoreValuesDelta;->mBefore:Landroid/content/ContentValues;
 
@@ -323,8 +321,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/model/MoreValuesDelta;->mBefore:Landroid/content/ContentValues;
 

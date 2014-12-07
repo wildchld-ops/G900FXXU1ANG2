@@ -28,9 +28,6 @@
 
 .method public static decodeByteArray([BII)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -43,10 +40,6 @@
 
 .method public static decodeByteArray([BIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/BitmapFactory$Options;
 
     const-wide/16 v3, 0x2
 
@@ -115,7 +108,6 @@
 
 .method public static decodeFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -128,8 +120,6 @@
 
 .method public static decodeFile(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 16
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v1, 0x0
 
@@ -464,7 +454,6 @@
 
 .method public static decodeFileDescriptor(Ljava/io/FileDescriptor;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/io/FileDescriptor;
 
     const/4 v0, 0x0
 
@@ -477,9 +466,6 @@
 
 .method public static decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     const-wide/16 v4, 0x2
 
@@ -582,8 +568,6 @@
 
 .method public static decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -596,9 +580,6 @@
 
 .method public static decodeResource(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v0, 0x0
 
@@ -694,11 +675,6 @@
 
 .method public static decodeResourceStream(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Landroid/util/TypedValue;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/BitmapFactory$Options;
 
     if-nez p4, :cond_0
 
@@ -761,7 +737,6 @@
 
 .method public static decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/io/InputStream;
 
     const/4 v0, 0x0
 
@@ -774,9 +749,6 @@
 
 .method public static decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     const-wide/16 v4, 0x2
 
@@ -855,9 +827,6 @@
 
 .method private static decodeStreamInternal(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v0, 0x0
 
@@ -897,8 +866,6 @@
 
 .method private static setDensityFromOptions(Landroid/graphics/Bitmap;Landroid/graphics/BitmapFactory$Options;)V
     .locals 5
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Landroid/graphics/BitmapFactory$Options;
 
     if-eqz p0, :cond_0
 

@@ -130,9 +130,6 @@
 
 .method static copyMedia(Landroid/content/Context;Landroid/net/Uri;Ljava/io/File;)Lcom/samsung/mms/content/MmsPartExport$ExportResult;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/io/File;
 
     invoke-static {}, Lcom/samsung/mms/content/MmsPartExport;->checkDownloadDir()Z
 
@@ -190,9 +187,6 @@
 
 .method private static copyPart(Landroid/content/Context;Landroid/net/Uri;Ljava/io/File;)Lcom/samsung/mms/content/MmsPartExport$ExportResult;
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -649,9 +643,6 @@
 
 .method private static findPduPart(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;)Lcom/google/android/mms/pdu/PduPart;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v5, 0x0
 
@@ -728,10 +719,6 @@
 
 .method public static generateFileName(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p0, p2, p1}, Lcom/samsung/mms/content/MmsPartExport;->findPduPart(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;)Lcom/google/android/mms/pdu/PduPart;
 
@@ -746,9 +733,6 @@
 
 .method static generateFileName(Landroid/content/Context;Lcom/google/android/mms/pdu/PduPart;Ljava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/PduPart;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1201,7 +1185,6 @@
 
 .method static getFileStreamPath(Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -1218,9 +1201,6 @@
 
 .method public static getMmsAttachmentsAsModelList(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1245,10 +1225,6 @@
 
 .method public static getMmsAttachmentsAsModelList(Landroid/content/Context;Landroid/net/Uri;ZZ)Ljava/util/ArrayList;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1413,7 +1389,6 @@
 
 .method static isInvalidFilenameCharacter(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1528,7 +1503,6 @@
 
 .method private static isVContentType(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "text/x-vCard"
 
@@ -1576,7 +1550,6 @@
 
 .method public static normalizeFileName(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1639,10 +1612,6 @@
 
 .method static queueRenameDialog(Landroid/content/Context;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1684,10 +1653,6 @@
 
 .method static queueSaveRequest(Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Z)V
     .locals 3
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getContext()Landroid/content/Context;
 
@@ -1722,11 +1687,6 @@
 
 .method static queueSaveRequestForRingtone(Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;ZZ)V
     .locals 3
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getContext()Landroid/content/Context;
 
@@ -1765,7 +1725,6 @@
 
 .method static replaceInvalidFilename(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     move-object v3, p0
 
@@ -1841,8 +1800,6 @@
 
 .method public static savePart(Landroid/net/Uri;Landroid/net/Uri;)V
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -1855,10 +1812,6 @@
 
 .method public static savePartForRingtone(Landroid/net/Uri;Landroid/net/Uri;ZZ)V
     .locals 1
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -1869,7 +1822,6 @@
 
 .method public static saveParts(Landroid/net/Uri;Ljava/util/List;)V
     .locals 4
-    .param p0    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

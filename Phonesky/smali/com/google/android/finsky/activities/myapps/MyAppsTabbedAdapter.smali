@@ -54,15 +54,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/activities/AuthenticatedActivity;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/utils/BitmapLoader;ZLandroid/os/Bundle;Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;Z)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Lcom/google/android/finsky/api/DfeApi;
-    .param p4    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p5    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p6    # Z
-    .param p7    # Landroid/os/Bundle;
-    .param p8    # Lcom/google/android/finsky/activities/myapps/MyAppsTabbedFragment;
-    .param p9    # Z
 
     invoke-direct {p0}, Landroid/support/v4/view/PagerAdapter;-><init>()V
 
@@ -101,7 +92,6 @@
 
 .method private generateTabList(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -352,7 +342,6 @@
 
 .method private restoreTabBundles(Landroid/os/Bundle;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -391,9 +380,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     move-object v0, p3
 
@@ -472,7 +458,6 @@
 
 .method public finishUpdate(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     return-void
 .end method
@@ -539,7 +524,6 @@
 
 .method public bridge synthetic getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedAdapter;->getPageTitle(I)Ljava/lang/String;
 
@@ -550,7 +534,6 @@
 
 .method public getPageTitle(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedAdapter;->mTabTitles:Ljava/util/List;
 
@@ -565,7 +548,6 @@
 
 .method public getTabType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedAdapter;->mTabDataList:Ljava/util/List;
 
@@ -582,8 +564,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 12
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsTabbedAdapter;->mTabDataList:Ljava/util/List;
 
@@ -727,8 +707,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lcom/google/android/finsky/activities/ViewPagerTab;
 
@@ -753,7 +731,6 @@
 
 .method public onPageSelected(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -811,7 +788,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "MyAppsTabbedAdapter.TabParcels"
 
@@ -826,8 +802,6 @@
 
 .method public restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # Ljava/lang/ClassLoader;
 
     return-void
 .end method
@@ -842,7 +816,6 @@
 
 .method public startUpdate(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     return-void
 .end method

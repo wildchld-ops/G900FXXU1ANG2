@@ -36,8 +36,6 @@
 # virtual methods
 .method public metricsAvailable(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsTextViewBinder$2;->this$0:Lcom/google/android/finsky/activities/DetailsTextViewBinder;
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public addApn(Ljava/util/Map;)V
     .locals 5
-    .param p1    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,8 +87,6 @@
 
 .method public addOrUpdateApn(Ljava/util/Map;I)Z
     .locals 6
-    .param p1    # Ljava/util/Map;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -155,8 +151,6 @@
 
 .method public addOrUpdateApnResult(Ljava/util/Map;I)I
     .locals 6
-    .param p1    # Ljava/util/Map;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -222,7 +216,6 @@
 
 .method public blockAdb(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -281,7 +274,6 @@
 
 .method public blockScreenshot(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -340,7 +332,6 @@
 
 .method public blockTethering(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -399,7 +390,6 @@
 
 .method public blockUsb(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -458,7 +448,6 @@
 
 .method public checkAppUninstallPolicies(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -521,8 +510,6 @@
 
 .method public checkPackagePermission(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -587,7 +574,6 @@
 
 .method public checkSignature(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -748,7 +734,6 @@
 
 .method public clearApplicationUserData(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -860,8 +845,6 @@
 
 .method public completePackageScan(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -915,7 +898,6 @@
 
 .method public deleteApn(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -978,7 +960,6 @@
 
 .method public deleteApnResult(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1034,8 +1015,6 @@
 
 .method public deletePackage(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1096,7 +1075,6 @@
 
 .method public disablePackage(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1148,7 +1126,6 @@
 
 .method public enablePackage(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1260,7 +1237,6 @@
 
 .method public getApn(I)Ljava/util/Map;
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1324,8 +1300,6 @@
 
 .method public getApnByMccMnc(II)Ljava/util/List;
     .locals 7
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1996,7 +1970,6 @@
 
 .method public installPackage(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2108,7 +2081,6 @@
 
 .method public isApnSelectable(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2171,7 +2143,6 @@
 
 .method public isPackageDisabled(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2234,7 +2205,6 @@
 
 .method public isPackageWhitelisted(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2417,7 +2387,6 @@
 
 .method public isSsidAllowed(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2480,7 +2449,6 @@
 
 .method public isSsidLocked(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2603,8 +2571,6 @@
 
 .method public keyStoreChangePassword(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2669,7 +2635,6 @@
 
 .method public keyStoreContains(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2732,7 +2697,6 @@
 
 .method public keyStoreDeleteKey(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2795,7 +2759,6 @@
 
 .method public keyStoreGetKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2851,8 +2814,6 @@
 
 .method public keyStorePutKey(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2977,7 +2938,6 @@
 
 .method public keyStoreSetPassword(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3029,7 +2989,6 @@
 
 .method public keyStoreUnlock(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3092,7 +3051,6 @@
 
 .method public lockAdmin(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3151,7 +3109,6 @@
 
 .method public lockApn(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3210,9 +3167,6 @@
 
 .method public notification(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3268,8 +3222,6 @@
 
 .method public putSettingsSecureInt(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3334,8 +3286,6 @@
 
 .method public putSettingsSecureString(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3449,7 +3399,6 @@
 
 .method public setActivationState(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3508,7 +3457,6 @@
 
 .method public setAllowedPackages(Ljava/util/Map;)Z
     .locals 6
-    .param p1    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3632,7 +3580,6 @@
 
 .method public setAppInstallPermissionPolicies(Ljava/util/Map;)Z
     .locals 6
-    .param p1    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3695,7 +3642,6 @@
 
 .method public setAppInstallPkgNamePolicies(Ljava/util/Map;)Z
     .locals 6
-    .param p1    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3758,7 +3704,6 @@
 
 .method public setAppInstallPubkeyPolicies(Ljava/util/Map;)Z
     .locals 6
-    .param p1    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3821,7 +3766,6 @@
 
 .method public setAppUninstallPkgNamePolicies(Ljava/util/Map;)Z
     .locals 6
-    .param p1    # Ljava/util/Map;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3884,7 +3828,6 @@
 
 .method public setBluetoothEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3943,7 +3886,6 @@
 
 .method public setBootLock(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4002,7 +3944,6 @@
 
 .method public setExternalStorageEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4061,7 +4002,6 @@
 
 .method public setLocationMode(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4124,8 +4064,6 @@
 
 .method public setLocationProviderEnabled(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4186,7 +4124,6 @@
 
 .method public setMultiUserEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4245,7 +4182,6 @@
 
 .method public setNfcState(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4297,7 +4233,6 @@
 
 .method public setNotificationText(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4349,7 +4284,6 @@
 
 .method public setOtaDelay(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4401,9 +4335,6 @@
 
 .method public setPackagePermission(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4485,9 +4416,6 @@
 
 .method public setPackageScanner(Ljava/lang/String;ZI)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4611,7 +4539,6 @@
 
 .method public setPreferredApn(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4674,7 +4601,6 @@
 
 .method public setPreferredApnResult(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4791,7 +4717,6 @@
 
 .method public setSdEncryptionRequired(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4911,7 +4836,6 @@
 
 .method public setWifiState(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4963,7 +4887,6 @@
 
 .method public setisSimulatorPermitted(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

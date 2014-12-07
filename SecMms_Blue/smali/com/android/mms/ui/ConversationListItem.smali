@@ -108,7 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -137,8 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -173,7 +170,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ConversationListItem;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListItem;->updateFromView()V
 
@@ -373,7 +369,6 @@
 
 .method private setConversationDetailsMargin(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/mms/ui/ConversationListItem;->mConversationDetailsLayout:Landroid/widget/RelativeLayout;
 
@@ -948,9 +943,6 @@
 # virtual methods
 .method public bind(Landroid/content/Context;Lcom/android/mms/data/Conversation;Z)V
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/data/Conversation;
-    .param p3    # Z
 
     move-object/from16 v0, p2
 
@@ -1749,7 +1741,6 @@
 
 .method public changeFontSize(I)V
     .locals 11
-    .param p1    # I
 
     iget v7, p0, Lcom/android/mms/ui/ConversationListItem;->mOldFontSize:I
 
@@ -1955,7 +1946,6 @@
 
 .method public changeFontSize7Step(I)V
     .locals 21
-    .param p1    # I
 
     const-string v17, "Mms/ConversationListItem"
 
@@ -2524,8 +2514,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const v11, 0x7f0c014c
 
@@ -2771,7 +2759,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListItem;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -2802,7 +2789,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onWindowFocusChanged(Z)V
 
@@ -2842,7 +2828,6 @@
 
 .method public setMutiMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListItem;->mIsMultiMode:Z
 
@@ -2871,7 +2856,6 @@
 
 .method public setSplitMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListItem;->mIsSplitMode:Z
 

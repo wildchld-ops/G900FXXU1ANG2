@@ -40,7 +40,6 @@
 # virtual methods
 .method public CreateDefaultFrontal(Lcom/voovio/sweep/Sweep;)V
     .locals 36
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     move-object/from16 v0, p1
 
@@ -1141,8 +1140,6 @@
 
 .method public draw(Ljavax/microedition/khronos/opengles/GL10;F)V
     .locals 7
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # F
 
     const v6, 0x8078
 

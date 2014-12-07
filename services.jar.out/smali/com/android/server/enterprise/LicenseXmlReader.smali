@@ -36,7 +36,6 @@
 
 .method public readXmlData(Ljava/io/InputStream;)V
     .locals 10
-    .param p1    # Ljava/io/InputStream;
 
     :try_start_0
     invoke-static {}, Ljavax/xml/parsers/DocumentBuilderFactory;->newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;

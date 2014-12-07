@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,7 +112,6 @@
 
 .method static synthetic access$300(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/settingssearch/SettingsSearchUtils;->samsungAccountExists(Landroid/content/Context;)Z
 
@@ -16848,7 +16846,6 @@
 
 .method private static getHeadTabIndex(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -17732,8 +17729,6 @@
 
 .method private static isPackageInstalled(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -17766,7 +17761,6 @@
 
 .method private isPackageLoaded(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -18027,7 +18021,6 @@
 
 .method private static samsungAccountExists(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 

@@ -58,7 +58,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
@@ -79,7 +78,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     sget-boolean v1, Lcom/nuance/connect/internal/ConnectServiceManagerInternal$IncomingHandler;->$assertionsDisabled:Z
 

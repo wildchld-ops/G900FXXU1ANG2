@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
-    .param p2    # Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$CancelListener;-><init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;)V
 
@@ -47,7 +45,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$CancelListener;->this$0:Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
@@ -64,8 +61,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$CancelListener;->this$0:Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 

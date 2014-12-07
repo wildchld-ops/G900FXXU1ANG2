@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1}, Lorg/apache/http/params/HttpAbstractParamBean;-><init>(Lorg/apache/http/params/HttpParams;)V
 
@@ -17,7 +16,6 @@
 # virtual methods
 .method public setDefaultProxy(Lorg/apache/http/HttpHost;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -30,7 +28,6 @@
 
 .method public setForcedRoute(Lorg/apache/http/conn/routing/HttpRoute;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 
@@ -43,7 +40,6 @@
 
 .method public setLocalAddress(Ljava/net/InetAddress;)V
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 

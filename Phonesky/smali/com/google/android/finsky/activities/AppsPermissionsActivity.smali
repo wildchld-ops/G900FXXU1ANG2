@@ -47,10 +47,6 @@
 
 .method public static createIntent(Ljava/lang/String;Lcom/google/android/finsky/protos/Common$Docid;Ljava/lang/String;Lcom/google/android/finsky/api/model/Document;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/protos/Common$Docid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -87,7 +83,6 @@
 
 .method public static extractDoc(Landroid/content/Intent;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "AppsPermissionsActivity.doc"
 
@@ -102,7 +97,6 @@
 
 .method public static extractTitle(Landroid/content/Intent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "AppsPermissionsActivity.appTitle"
 
@@ -115,7 +109,6 @@
 
 .method public static extractVersionCode(Landroid/content/Intent;)I
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "AppsPermissionsActivity.appVersion"
 
@@ -130,7 +123,6 @@
 
 .method public static getDownloadSizeWarningArguments(Landroid/content/Intent;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "AppsPermissionsActivity.appDownloadSizeWarningArguments"
 
@@ -255,7 +247,6 @@
 
 .method private showError(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/SimpleAlertDialog$Builder;
 
@@ -473,7 +464,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const-string v0, "Not using tree impressions."
 
@@ -539,7 +529,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/AppsPermissionsActivity;->mContinueButton:Lcom/google/android/play/layout/PlayActionButton;
 
@@ -619,7 +608,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/AppsPermissionsActivity;->mSavedInstanceState:Landroid/os/Bundle;
 
@@ -869,7 +857,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/utils/ErrorStrings;->get(Landroid/content/Context;Lcom/android/volley/VolleyError;)Ljava/lang/String;
 
@@ -882,16 +869,12 @@
 
 .method public onNegativeClick(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onPositiveClick(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -904,7 +887,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

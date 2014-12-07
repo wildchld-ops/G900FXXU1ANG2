@@ -36,7 +36,6 @@
 
 .method public constructor <init>(Ljava/util/Date;)V
     .locals 0
-    .param p1    # Ljava/util/Date;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method public getDate(Ljava/util/Date;)V
     .locals 2
-    .param p1    # Ljava/util/Date;
 
     invoke-virtual {p1}, Ljava/util/Date;->getYear()I
 

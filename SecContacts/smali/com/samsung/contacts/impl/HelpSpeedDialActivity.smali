@@ -72,7 +72,6 @@
 # virtual methods
 .method protected deleteSpdl(I)Z
     .locals 2
-    .param p1    # I
 
     const v0, 0x7f0e03db
 
@@ -91,7 +90,6 @@
 
 .method protected insertSpdl(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -134,9 +132,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, 0x0
 

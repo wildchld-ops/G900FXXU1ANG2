@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -30,7 +28,6 @@
 
 .method private getStateDrawable(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -68,8 +65,6 @@
 
 .method private updateUiVisiblity(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -174,7 +169,6 @@
 
 .method public setState(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/layout/SongIndex;->mState:I
 
@@ -201,7 +195,6 @@
 
 .method public setTrackNumber(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongIndex;->mSongIndexText:Landroid/widget/TextView;
 

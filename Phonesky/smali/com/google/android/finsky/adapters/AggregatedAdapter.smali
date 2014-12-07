@@ -204,7 +204,6 @@
 
 .method private translate(I)Lcom/google/android/finsky/adapters/AggregatedAdapter$IndexTranslation;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/AggregatedAdapter;->mCachedTranslations:Ljava/util/ArrayList;
 
@@ -368,7 +367,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/AggregatedAdapter;->translate(I)Lcom/google/android/finsky/adapters/AggregatedAdapter$IndexTranslation;
 
@@ -393,7 +391,6 @@
 
 .method public getItemId(I)J
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/AggregatedAdapter;->translate(I)Lcom/google/android/finsky/adapters/AggregatedAdapter$IndexTranslation;
 
@@ -418,7 +415,6 @@
 
 .method public getItemViewType(I)I
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/AggregatedAdapter;->translate(I)Lcom/google/android/finsky/adapters/AggregatedAdapter$IndexTranslation;
 
@@ -443,9 +439,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/AggregatedAdapter;->translate(I)Lcom/google/android/finsky/adapters/AggregatedAdapter$IndexTranslation;
 
@@ -496,7 +489,6 @@
 
 .method public isEnabled(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/AggregatedAdapter;->translate(I)Lcom/google/android/finsky/adapters/AggregatedAdapter$IndexTranslation;
 

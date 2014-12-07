@@ -14,7 +14,6 @@
 
 .method public static shouldShowPopup(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -23,7 +22,6 @@
 
 .method public static showPopupAgain(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     return-void
 .end method
@@ -32,7 +30,6 @@
 # virtual methods
 .method public startAabService(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     return-void
 .end method

@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/download/DownloadManagerImpl;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadManagerImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadManagerImpl;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -57,8 +55,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/download/DownloadManagerImpl;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/download/DownloadManagerImpl;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/download/DownloadManagerImpl;->synchronousRemove(Landroid/net/Uri;)V
 
@@ -67,7 +63,6 @@
 
 .method private synchronousRemove(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -101,7 +96,6 @@
 # virtual methods
 .method public enqueue(Lcom/google/android/finsky/download/DownloadRequest;Lcom/google/android/finsky/utils/ParameterizedRunnable;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/download/DownloadRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -228,7 +222,6 @@
 
 .method public queryStatus(Landroid/net/Uri;)Landroid/database/Cursor;
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -261,7 +254,6 @@
 
 .method public remove(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadManagerImpl;->mHandler:Landroid/os/Handler;
 

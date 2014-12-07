@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/dialer/impl/DialerTutorialActivity;Lcom/samsung/dialer/impl/DialerTutorialActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/dialer/impl/DialerTutorialActivity;
-    .param p2    # Lcom/samsung/dialer/impl/DialerTutorialActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/dialer/impl/DialerTutorialActivity$TabPagerAdapter;-><init>(Lcom/samsung/dialer/impl/DialerTutorialActivity;)V
 
@@ -51,8 +49,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/DialerTutorialActivity$TabPagerAdapter;->this$0:Lcom/samsung/dialer/impl/DialerTutorialActivity;
 
@@ -63,8 +59,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/app/Fragment;
 

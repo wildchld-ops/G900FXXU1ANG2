@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/location/Location;)V
     .locals 1
-    .param p1    # Landroid/location/Location;
 
     const/4 v0, 0x0
 
@@ -143,7 +142,6 @@
 
 .method public setAddress(Landroid/location/Address;)V
     .locals 1
-    .param p1    # Landroid/location/Address;
 
     iput-object p1, p0, Lcom/nuance/connect/location/SwypeLocation;->address:Landroid/location/Address;
 
@@ -187,7 +185,6 @@
 
 .method public setAdminArea(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/location/SwypeLocation;->adminArea:Ljava/lang/String;
 
@@ -196,7 +193,6 @@
 
 .method public setCountryCode(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/location/SwypeLocation;->countryCode:Ljava/lang/String;
 
@@ -205,7 +201,6 @@
 
 .method public setLocality(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/location/SwypeLocation;->locality:Ljava/lang/String;
 
@@ -214,7 +209,6 @@
 
 .method public setLocation(Landroid/location/Location;)V
     .locals 0
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Lcom/nuance/connect/location/SwypeLocation;->location:Landroid/location/Location;
 

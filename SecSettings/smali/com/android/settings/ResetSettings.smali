@@ -66,7 +66,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ResetSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/ResetSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/ResetSettings;->databaseReset:Z
 
@@ -75,8 +74,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/ResetSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/ResetSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/ResetSettings;->databaseReset:Z
 
@@ -85,7 +82,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ResetSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/ResetSettings;
 
     iget-object v0, p0, Lcom/android/settings/ResetSettings;->context:Landroid/content/Context;
 
@@ -94,7 +90,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ResetSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/ResetSettings;
 
     invoke-direct {p0}, Lcom/android/settings/ResetSettings;->resetCompleted()V
 
@@ -127,7 +122,6 @@
 
 .method private static getEnabledServicesFromSettings(Landroid/content/Context;)Ljava/util/Set;
     .locals 7
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -656,9 +650,6 @@
 
 .method public static startTalkback(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p0}, Lcom/android/settings/ResetSettings;->getEnabledServicesFromSettings(Landroid/content/Context;)Ljava/util/Set;
 
@@ -820,7 +811,6 @@
 # virtual methods
 .method public getUriOfDefaultTone(I)Landroid/net/Uri;
     .locals 14
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -1068,9 +1058,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -1297,7 +1284,6 @@
 
 .method public resetAllSettings(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/ResetSettings;->context:Landroid/content/Context;
 

@@ -54,7 +54,6 @@
 
 .method private constructor <init>(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -106,7 +105,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/os/Bundle;)Lcom/android/settings/cloud/CloudSettings;
     .locals 2
-    .param p0    # Landroid/os/Bundle;
 
     const-class v1, Lcom/android/settings/cloud/CloudSettings;
 
@@ -152,7 +150,6 @@
 
 .method private parceCloudSettings(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -438,7 +435,6 @@
 
 .method public isPhoneModel(Landroid/content/Context;)Z
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -463,7 +459,6 @@
 
 .method public isSupportSync(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -513,7 +508,6 @@
 
 .method public isWifiOnly(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -555,7 +549,6 @@
 
 .method public setDocumentSync(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/cloud/CloudSettings;->documentSync:Z
 
@@ -564,7 +557,6 @@
 
 .method public setMusicSync(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/cloud/CloudSettings;->musicSync:Z
 
@@ -573,7 +565,6 @@
 
 .method public setPhotoSync(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/cloud/CloudSettings;->photoSync:Z
 
@@ -582,7 +573,6 @@
 
 .method public setStorageUsage(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -608,7 +598,6 @@
 
 .method public setVideoSync(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/cloud/CloudSettings;->videoSync:Z
 
@@ -617,8 +606,6 @@
 
 .method public setWifiOnly(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     packed-switch p1, :pswitch_data_0
 

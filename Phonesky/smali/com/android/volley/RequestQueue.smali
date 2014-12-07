@@ -75,8 +75,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/Cache;Lcom/android/volley/Network;)V
     .locals 1
-    .param p1    # Lcom/android/volley/Cache;
-    .param p2    # Lcom/android/volley/Network;
 
     const/4 v0, 0x4
 
@@ -87,9 +85,6 @@
 
 .method public constructor <init>(Lcom/android/volley/Cache;Lcom/android/volley/Network;I)V
     .locals 3
-    .param p1    # Lcom/android/volley/Cache;
-    .param p2    # Lcom/android/volley/Network;
-    .param p3    # I
 
     new-instance v0, Lcom/android/volley/ExecutorDelivery;
 
@@ -110,10 +105,6 @@
 
 .method public constructor <init>(Lcom/android/volley/Cache;Lcom/android/volley/Network;ILcom/android/volley/ResponseDelivery;)V
     .locals 1
-    .param p1    # Lcom/android/volley/Cache;
-    .param p2    # Lcom/android/volley/Network;
-    .param p3    # I
-    .param p4    # Lcom/android/volley/ResponseDelivery;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -164,7 +155,6 @@
 # virtual methods
 .method public add(Lcom/android/volley/Request;)Lcom/android/volley/Request;
     .locals 6
-    .param p1    # Lcom/android/volley/Request;
 
     invoke-virtual {p1, p0}, Lcom/android/volley/Request;->setRequestQueue(Lcom/android/volley/RequestQueue;)V
 
@@ -303,7 +293,6 @@
 
 .method public cancelAll(Lcom/android/volley/RequestQueue$RequestFilter;)V
     .locals 4
-    .param p1    # Lcom/android/volley/RequestQueue$RequestFilter;
 
     iget-object v3, p0, Lcom/android/volley/RequestQueue;->mCurrentRequests:Ljava/util/Set;
 
@@ -360,7 +349,6 @@
 
 .method finish(Lcom/android/volley/Request;)V
     .locals 7
-    .param p1    # Lcom/android/volley/Request;
 
     iget-object v3, p0, Lcom/android/volley/RequestQueue;->mCurrentRequests:Ljava/util/Set;
 

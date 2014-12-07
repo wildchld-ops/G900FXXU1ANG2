@@ -20,8 +20,6 @@
 
 .method public static equals(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-nez p0, :cond_1
 
@@ -47,8 +45,6 @@
 
 .method public static equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
     .locals 5
-    .param p0    # [Ljava/lang/Object;
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -110,8 +106,6 @@
 
 .method public static hashCode(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     mul-int/lit8 v0, p0, 0x25
 
@@ -122,8 +116,6 @@
 
 .method public static hashCode(ILjava/lang/Object;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -146,8 +138,6 @@
 
 .method public static hashCode(IZ)I
     .locals 1
-    .param p0    # I
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

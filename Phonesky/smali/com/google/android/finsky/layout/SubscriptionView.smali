@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -56,8 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -122,7 +119,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/SubscriptionView;)Lcom/google/android/finsky/layout/SubscriptionView$CancelListener;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SubscriptionView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SubscriptionView;->mCancelListener:Lcom/google/android/finsky/layout/SubscriptionView$CancelListener;
 
@@ -131,7 +127,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/SubscriptionView;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SubscriptionView;
 
     iget v0, p0, Lcom/google/android/finsky/layout/SubscriptionView;->mExpansionState:I
 
@@ -140,8 +135,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/layout/SubscriptionView;I)I
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/SubscriptionView;
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/SubscriptionView;->mExpansionState:I
 
@@ -150,7 +143,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/SubscriptionView;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/SubscriptionView;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/SubscriptionView;->collapseDescription()V
 
@@ -159,7 +151,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/SubscriptionView;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/SubscriptionView;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/SubscriptionView;->expandDescription()V
 
@@ -212,9 +203,6 @@
 
 .method public static fillSubscriptionDateInfo(Lcom/google/android/finsky/layout/SubscriptionView$SubscriptionDateInfo;Lcom/google/android/finsky/library/LibrarySubscriptionEntry;Landroid/content/res/Resources;)V
     .locals 8
-    .param p0    # Lcom/google/android/finsky/layout/SubscriptionView$SubscriptionDateInfo;
-    .param p1    # Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
-    .param p2    # Landroid/content/res/Resources;
 
     const/4 v7, 0x1
 
@@ -341,9 +329,6 @@
 
 .method public static getSubscriptionPriceDescription(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/Common$Offer;Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 8
-    .param p0    # Lcom/google/android/finsky/api/model/Document;
-    .param p1    # Lcom/google/android/finsky/protos/Common$Offer;
-    .param p2    # Landroid/content/res/Resources;
 
     const/4 v7, 0x1
 
@@ -449,11 +434,6 @@
 # virtual methods
 .method public configure(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/library/LibrarySubscriptionEntry;Lcom/google/android/finsky/layout/SubscriptionView$CancelListener;Landroid/os/Bundle;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/library/LibrarySubscriptionEntry;
-    .param p3    # Lcom/google/android/finsky/layout/SubscriptionView$CancelListener;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/SubscriptionView;->mDocument:Lcom/google/android/finsky/api/model/Document;
 
@@ -827,7 +807,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/SubscriptionView;->getWidth()I
 
@@ -946,7 +925,6 @@
 
 .method public saveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/SubscriptionView;->mDocument:Lcom/google/android/finsky/api/model/Document;
 

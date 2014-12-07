@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 1
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$PagersAdapter;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -44,9 +43,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/View;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p1, Landroid/support/v4/view/ViewPager;
 
@@ -59,7 +55,6 @@
 
 .method public finishUpdate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     # getter for: Lcom/android/mms/ui/ComposeMessageFragment;->mEmoticonCategory:I
     invoke-static {}, Lcom/android/mms/ui/ComposeMessageFragment;->access$7000()I
@@ -117,7 +112,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, -0x2
 
@@ -126,8 +120,6 @@
 
 .method public instantiateItem(Landroid/view/View;I)Ljava/lang/Object;
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/mms/ui/ComposeMessageFragment$PagersAdapter;->inflater:Landroid/view/LayoutInflater;
 
@@ -185,8 +177,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     if-ne p1, p2, :cond_0
 

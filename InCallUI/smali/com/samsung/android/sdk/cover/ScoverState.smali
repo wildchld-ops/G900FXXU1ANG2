@@ -46,11 +46,6 @@
 
 .method public constructor <init>(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

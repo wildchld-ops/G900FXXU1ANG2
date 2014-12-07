@@ -22,7 +22,6 @@
 
 .method private loadAuthorityPref(Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -65,8 +64,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/smishing/PackageInstallReceiver;->loadAuthorityPref(Landroid/content/Context;)Z
 

@@ -19,7 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -30,8 +29,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -112,10 +109,6 @@
 # virtual methods
 .method public configureMerch(Lcom/google/android/finsky/utils/BitmapLoader;ILcom/google/android/finsky/protos/Doc$Image;Landroid/view/View$OnClickListener;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p4    # Landroid/view/View$OnClickListener;
 
     const/4 v0, 0x1
 
@@ -239,11 +232,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 12
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewContent;->onLayout(ZIIII)V
 
@@ -340,7 +328,6 @@
 
 .method public onLoaded(Landroid/widget/ImageView;)V
     .locals 0
-    .param p1    # Landroid/widget/ImageView;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/play/PlayCardMerchClusterViewContent;->configureImageFadingEdge()V
 
@@ -349,8 +336,6 @@
 
 .method protected onMeasure(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v4, 0x40000000
 

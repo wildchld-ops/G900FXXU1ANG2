@@ -18,7 +18,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/core/GenericObjectList;-><init>(Ljava/lang/String;)V
 
@@ -29,7 +28,6 @@
 # virtual methods
 .method public concatenate(Lgov/nist/javax/sip/header/SIPObjectList;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/SIPObjectList;
 
     invoke-super {p0, p1}, Lgov/nist/core/GenericObjectList;->concatenate(Lgov/nist/core/GenericObjectList;)V
 
@@ -38,8 +36,6 @@
 
 .method public concatenate(Lgov/nist/javax/sip/header/SIPObjectList;Z)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/SIPObjectList;
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Lgov/nist/core/GenericObjectList;->concatenate(Lgov/nist/core/GenericObjectList;Z)V
 
@@ -48,7 +44,6 @@
 
 .method public debugDump(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lgov/nist/core/GenericObjectList;->debugDump(I)Ljava/lang/String;
 
@@ -71,7 +66,6 @@
 
 .method public mergeObjects(Lgov/nist/core/GenericObjectList;)V
     .locals 5
-    .param p1    # Lgov/nist/core/GenericObjectList;
 
     invoke-virtual {p0}, Ljava/util/AbstractList;->listIterator()Ljava/util/ListIterator;
 

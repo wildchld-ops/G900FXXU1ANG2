@@ -423,7 +423,6 @@
 
 .method private constructor <init>(Ljava/lang/String;I[Lcom/nuance/connect/common/ConnectFeature;)V
     .locals 0
-    .param p3    # [Lcom/nuance/connect/common/ConnectFeature;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -441,7 +440,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/nuance/connect/common/ConnectFeature;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/nuance/connect/common/ConnectFeature;
 

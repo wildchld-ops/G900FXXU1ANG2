@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -41,8 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/support/v4/widget/DrawerLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -73,7 +70,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)Lcom/google/android/finsky/activities/MainActivity;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout;->mMainActivity:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -82,7 +78,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -91,7 +86,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout;->mSideContent:Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;
 
@@ -100,7 +94,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)Lcom/google/android/finsky/layout/play/PlayDrawerLayout$PlayActionBarDrawerToggle;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout;->mDrawerToggle:Lcom/google/android/finsky/layout/play/PlayDrawerLayout$PlayActionBarDrawerToggle;
 
@@ -140,9 +133,6 @@
 
 .method public configure(Lcom/google/android/finsky/activities/MainActivity;Lcom/google/android/finsky/navigationmanager/NavigationManager;I)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/activities/MainActivity;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout;->mMainActivity:Lcom/google/android/finsky/activities/MainActivity;
 
@@ -295,8 +285,6 @@
 
 .method public refresh(Lcom/google/android/finsky/api/model/DfeToc;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout;->mSideContent:Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;
 
@@ -357,7 +345,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerLayout;->mSideContent:Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;
 

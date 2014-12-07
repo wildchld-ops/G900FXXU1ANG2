@@ -48,7 +48,6 @@
 
 .method public static getMsgIdFromUri(Landroid/net/Uri;)J
     .locals 7
-    .param p0    # Landroid/net/Uri;
 
     const-string v4, "Mms/TelephonyDBUtils"
 
@@ -119,7 +118,6 @@
 
 .method public static getPendingMmsCount(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -202,7 +200,6 @@
 
 .method public static getPendingSmsCount(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "content://sms/queued"
 
@@ -289,9 +286,6 @@
 
 .method public static isReadMsg(Landroid/content/Context;IJ)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # J
 
     const/4 v7, 0x0
 

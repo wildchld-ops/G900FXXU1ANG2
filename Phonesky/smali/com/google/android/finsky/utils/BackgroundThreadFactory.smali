@@ -17,7 +17,6 @@
 
 .method public static createHandlerThread(Ljava/lang/String;)Landroid/os/HandlerThread;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/HandlerThread;
 
@@ -30,7 +29,6 @@
 
 .method public static createThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 2
-    .param p0    # Ljava/lang/Runnable;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -45,8 +43,6 @@
 
 .method public static createThread(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -61,7 +57,6 @@
 
 .method private static wrap(Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/google/android/finsky/utils/BackgroundThreadFactory$1;
 
@@ -74,7 +69,6 @@
 # virtual methods
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-static {p1}, Lcom/google/android/finsky/utils/BackgroundThreadFactory;->createThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
 

@@ -222,7 +222,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ApplicationInfo;)V
     .locals 4
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     const/4 v3, 0x0
 
@@ -395,7 +394,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v3, 0x0
 
@@ -640,8 +638,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/ApplicationInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/ApplicationInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/ApplicationInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -650,7 +646,6 @@
 
 .method private isPackageUnavailable(Landroid/content/pm/PackageManager;)Z
     .locals 5
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x1
 
@@ -709,8 +704,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1, p2}, Landroid/content/pm/PackageItemInfo;->dumpFront(Landroid/util/Printer;Ljava/lang/String;)V
 
@@ -1560,7 +1553,6 @@
 
 .method protected loadDefaultIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v0, p0, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -1599,7 +1591,6 @@
 
 .method public loadDescription(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v1, p0, Landroid/content/pm/ApplicationInfo;->descriptionRes:I
 
@@ -1676,8 +1667,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/content/pm/PackageItemInfo;->writeToParcel(Landroid/os/Parcel;I)V
 

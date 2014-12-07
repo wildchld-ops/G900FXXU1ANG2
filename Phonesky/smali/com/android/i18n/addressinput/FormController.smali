@@ -62,9 +62,6 @@
 
 .method constructor <init>(Lcom/android/i18n/addressinput/ClientData;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/i18n/addressinput/ClientData;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,9 +126,6 @@
 
 .method static synthetic access$000(Lcom/android/i18n/addressinput/FormController;Lcom/android/i18n/addressinput/LookupKey;Ljava/lang/String;)Lcom/android/i18n/addressinput/LookupKey;
     .locals 1
-    .param p0    # Lcom/android/i18n/addressinput/FormController;
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/i18n/addressinput/FormController;->buildDataLookupKey(Lcom/android/i18n/addressinput/LookupKey;Ljava/lang/String;)Lcom/android/i18n/addressinput/LookupKey;
 
@@ -142,10 +136,6 @@
 
 .method static synthetic access$100(Lcom/android/i18n/addressinput/FormController;Lcom/android/i18n/addressinput/LookupKey;Ljava/util/Queue;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/FormController;
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p2    # Ljava/util/Queue;
-    .param p3    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/i18n/addressinput/FormController;->requestDataRecursively(Lcom/android/i18n/addressinput/LookupKey;Ljava/util/Queue;Lcom/android/i18n/addressinput/DataLoadListener;)V
 
@@ -154,8 +144,6 @@
 
 .method private buildDataLookupKey(Lcom/android/i18n/addressinput/LookupKey;Ljava/lang/String;)Lcom/android/i18n/addressinput/LookupKey;
     .locals 5
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/android/i18n/addressinput/LookupKey;->toString()Ljava/lang/String;
 
@@ -317,8 +305,6 @@
 
 .method private getSubKey(Lcom/android/i18n/addressinput/LookupKey;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/i18n/addressinput/FormController;->getRegionData(Lcom/android/i18n/addressinput/LookupKey;)Ljava/util/List;
 
@@ -362,7 +348,6 @@
 
 .method private normalizeLookupKey(Lcom/android/i18n/addressinput/LookupKey;)Lcom/android/i18n/addressinput/LookupKey;
     .locals 10
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
 
     const/4 v9, 0x1
 
@@ -530,8 +515,6 @@
 
 .method private requestDataRecursively(Lcom/android/i18n/addressinput/LookupKey;Ljava/util/Queue;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
-    .param p3    # Lcom/android/i18n/addressinput/DataLoadListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -566,7 +549,6 @@
 
 .method private splitData(Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -598,7 +580,6 @@
 # virtual methods
 .method getDataKeyFor(Lcom/android/i18n/addressinput/AddressData;)Lcom/android/i18n/addressinput/LookupKey;
     .locals 2
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
 
     new-instance v0, Lcom/android/i18n/addressinput/LookupKey$Builder;
 
@@ -619,7 +600,6 @@
 
 .method getRegionData(Lcom/android/i18n/addressinput/LookupKey;)Ljava/util/List;
     .locals 10
-    .param p1    # Lcom/android/i18n/addressinput/LookupKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -826,7 +806,6 @@
 
 .method isDefaultLanguage(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -898,8 +877,6 @@
 
 .method requestDataForAddress(Lcom/android/i18n/addressinput/AddressData;Lcom/android/i18n/addressinput/DataLoadListener;)V
     .locals 8
-    .param p1    # Lcom/android/i18n/addressinput/AddressData;
-    .param p2    # Lcom/android/i18n/addressinput/DataLoadListener;
 
     invoke-virtual {p1}, Lcom/android/i18n/addressinput/AddressData;->getPostalCountry()Ljava/lang/String;
 
@@ -967,7 +944,6 @@
 
 .method setCurrentCountry(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/FormController;->mCurrentCountry:Ljava/lang/String;
 
@@ -976,7 +952,6 @@
 
 .method setLanguageCode(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/FormController;->mLanguageCode:Ljava/lang/String;
 

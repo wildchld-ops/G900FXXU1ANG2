@@ -16,9 +16,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/AppWindowToken;Lcom/android/server/wm/TaskStack;I)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # Lcom/android/server/wm/TaskStack;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,8 +44,6 @@
 # virtual methods
 .method addAppToken(ILcom/android/server/wm/AppWindowToken;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/server/wm/AppWindowToken;
 
     iget-object v0, p0, Lcom/android/server/wm/Task;->mAppTokens:Lcom/android/server/wm/AppTokenList;
 
@@ -71,7 +66,6 @@
 
 .method removeAppToken(Lcom/android/server/wm/AppWindowToken;)Z
     .locals 5
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     const/4 v0, 0x1
 

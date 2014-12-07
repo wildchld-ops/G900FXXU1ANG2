@@ -43,7 +43,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/businesscard/BusinesscardListActivity;)Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/businesscard/BusinesscardListActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/businesscard/BusinesscardListActivity;->mListFragment:Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
@@ -52,7 +51,6 @@
 
 .method private buildDialog(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -147,9 +145,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, -0x1
 
@@ -254,7 +249,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/samsung/contacts/businesscard/BusinesscardListFragment;
 
@@ -282,7 +276,6 @@
 
 .method public onCountChanged(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -335,7 +328,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -441,7 +433,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -510,7 +501,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -583,7 +573,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 

@@ -63,7 +63,6 @@
 
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     const/4 v4, 0x0
 
@@ -134,9 +133,6 @@
 
 .method private doNotify(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "com.nuance.swype.input.MessagesActivity"
 
@@ -267,7 +263,6 @@
 
 .method private messageFromResponse(Lcom/nuance/connect/service/comm/Response;)Lcom/nuance/connect/service/manager/MessageManager$SwypeMessage;
     .locals 14
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     const/4 v5, 0x0
 
@@ -464,7 +459,6 @@
 
 .method private processAckMessageResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     sget-object v2, Lcom/nuance/connect/internal/common/InternalMessages;->MESSAGE_COMMAND_RETRIEVE_MESSAGE:Lcom/nuance/connect/internal/common/InternalMessages;
 
@@ -590,7 +584,6 @@
 
 .method private processMessageResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget v0, p1, Lcom/nuance/connect/service/comm/Response;->status:I
 
@@ -610,7 +603,6 @@
 
 .method private processNextMessageResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/MessageManager;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -670,7 +662,6 @@
 
 .method private translateTargetId(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0x1fd
 
@@ -750,7 +741,6 @@
 # virtual methods
 .method public ackMessage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -789,8 +779,6 @@
 
 .method public alarmNotification(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -853,7 +841,6 @@
 
 .method public getMessage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/HashMap;
 
@@ -942,7 +929,6 @@
 
 .method public onHandleMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -988,7 +974,6 @@
 
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/AbstractCommandManager;->validCommands:Lcom/nuance/connect/service/manager/AbstractCommandManager$ValidCommands;
 

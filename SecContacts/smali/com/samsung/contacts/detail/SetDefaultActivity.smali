@@ -241,7 +241,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/detail/SetDefaultActivity;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     invoke-direct {p0}, Lcom/samsung/contacts/detail/SetDefaultActivity;->performSaveAction()V
 
@@ -250,7 +249,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/SetDefaultActivity;)Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mAdapter:Lcom/samsung/contacts/detail/SetDefaultActivity$DefaultSettingAdapter;
 
@@ -259,7 +257,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstName:Z
 
@@ -268,8 +265,6 @@
 
 .method static synthetic access$1002(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstName:Z
 
@@ -278,7 +273,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedNumberIndex:I
 
@@ -287,8 +281,6 @@
 
 .method static synthetic access$1102(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedNumberIndex:I
 
@@ -297,7 +289,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedNumberIndex:I
 
@@ -306,8 +297,6 @@
 
 .method static synthetic access$1202(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedNumberIndex:I
 
@@ -316,7 +305,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsNumberChanged:Z
 
@@ -325,8 +313,6 @@
 
 .method static synthetic access$1302(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsNumberChanged:Z
 
@@ -335,7 +321,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstNumber:Z
 
@@ -344,8 +329,6 @@
 
 .method static synthetic access$1402(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstNumber:Z
 
@@ -354,7 +337,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedEmailIndex:I
 
@@ -363,8 +345,6 @@
 
 .method static synthetic access$1502(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedEmailIndex:I
 
@@ -373,7 +353,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedEmailIndex:I
 
@@ -382,8 +361,6 @@
 
 .method static synthetic access$1602(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedEmailIndex:I
 
@@ -392,7 +369,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsEmailChanged:Z
 
@@ -401,8 +377,6 @@
 
 .method static synthetic access$1702(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsEmailChanged:Z
 
@@ -411,7 +385,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstEmail:Z
 
@@ -420,8 +393,6 @@
 
 .method static synthetic access$1802(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstEmail:Z
 
@@ -430,7 +401,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/contacts/detail/SetDefaultActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mMenuDone:Landroid/widget/Button;
 
@@ -439,7 +409,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/detail/SetDefaultActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mAllEntries:Ljava/util/ArrayList;
 
@@ -448,8 +417,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/contacts/detail/SetDefaultActivity;Lcom/android/contacts/model/Contact;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/SetDefaultActivity;->bindData(Lcom/android/contacts/model/Contact;)V
 
@@ -458,7 +425,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/contacts/detail/SetDefaultActivity;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mOnClickListener:Landroid/view/View$OnClickListener;
 
@@ -467,9 +433,6 @@
 
 .method static synthetic access$2200(Lcom/android/contacts/common/model/dataitem/DataKind;Landroid/content/ContentValues;Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Landroid/content/Context;
 
     invoke-static {p0, p1, p2}, Lcom/samsung/contacts/detail/SetDefaultActivity;->buildDataString(Lcom/android/contacts/common/model/dataitem/DataKind;Landroid/content/ContentValues;Landroid/content/Context;)Ljava/lang/String;
 
@@ -480,7 +443,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedPhotoIndex:I
 
@@ -489,8 +451,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedPhotoIndex:I
 
@@ -499,7 +459,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedPhotoIndex:I
 
@@ -508,8 +467,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedPhotoIndex:I
 
@@ -518,7 +475,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsPhotoChanged:Z
 
@@ -527,8 +483,6 @@
 
 .method static synthetic access$502(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsPhotoChanged:Z
 
@@ -537,7 +491,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstPhoto:Z
 
@@ -546,8 +499,6 @@
 
 .method static synthetic access$602(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsFirstPhoto:Z
 
@@ -556,7 +507,6 @@
 
 .method static synthetic access$700(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedNameIndex:I
 
@@ -565,8 +515,6 @@
 
 .method static synthetic access$702(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mCheckedNameIndex:I
 
@@ -575,7 +523,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/detail/SetDefaultActivity;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedNameIndex:I
 
@@ -584,8 +531,6 @@
 
 .method static synthetic access$802(Lcom/samsung/contacts/detail/SetDefaultActivity;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mFirstCheckedNameIndex:I
 
@@ -594,7 +539,6 @@
 
 .method static synthetic access$900(Lcom/samsung/contacts/detail/SetDefaultActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsNameChanged:Z
 
@@ -603,8 +547,6 @@
 
 .method static synthetic access$902(Lcom/samsung/contacts/detail/SetDefaultActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/SetDefaultActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mIsNameChanged:Z
 
@@ -640,7 +582,6 @@
 
 .method private bindData(Lcom/android/contacts/model/Contact;)V
     .locals 25
-    .param p1    # Lcom/android/contacts/model/Contact;
 
     if-nez p1, :cond_0
 
@@ -1046,9 +987,6 @@
 
 .method private bindEmailData(Landroid/graphics/drawable/Drawable;Landroid/content/ContentValues;Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
     invoke-direct {p0, p2}, Lcom/samsung/contacts/detail/SetDefaultActivity;->isDefaultData(Landroid/content/ContentValues;)Z
 
@@ -1178,10 +1116,6 @@
 
 .method private bindNameData(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
     const/4 v5, 0x1
 
@@ -1263,9 +1197,6 @@
 
 .method private bindPhoneNumberData(Landroid/graphics/drawable/Drawable;Landroid/content/ContentValues;Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
     invoke-direct {p0, p2}, Lcom/samsung/contacts/detail/SetDefaultActivity;->isDefaultData(Landroid/content/ContentValues;)Z
 
@@ -1395,11 +1326,6 @@
 
 .method private bindPhotoData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
-    .param p5    # Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
     const/4 v6, 0x0
 
@@ -1515,9 +1441,6 @@
 
 .method private static buildDataString(Lcom/android/contacts/common/model/dataitem/DataKind;Landroid/content/ContentValues;Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -1618,7 +1541,6 @@
 
 .method private getAccountIcon(Lcom/android/contacts/common/model/account/AccountType;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Lcom/android/contacts/common/model/account/AccountType;
 
     if-nez p1, :cond_0
 
@@ -1695,7 +1617,6 @@
 
 .method private isCustomType(I)Z
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1712,7 +1633,6 @@
 
 .method private isDefaultData(Landroid/content/ContentValues;)Z
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v0, 0x1
 
@@ -1756,7 +1676,6 @@
 
 .method private isDefaultName(Landroid/content/ContentValues;)Z
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v0, 0x1
 
@@ -2166,7 +2085,6 @@
 
 .method private updateFlag(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/contacts/detail/SetDefaultActivity;->mProviderStatusWatcher:Lcom/android/contacts/list/ProviderStatusWatcher;
 
@@ -2207,7 +2125,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x3
 
@@ -2377,7 +2294,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -2482,9 +2398,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2555,7 +2468,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x4
 

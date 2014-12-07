@@ -29,7 +29,6 @@
 
 .method synthetic constructor <init>(Lcom/android/i18n/addressinput/RegionData$1;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/RegionData$1;
 
     invoke-direct {p0}, Lcom/android/i18n/addressinput/RegionData;-><init>()V
 
@@ -38,7 +37,6 @@
 
 .method private constructor <init>(Lcom/android/i18n/addressinput/RegionData;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/RegionData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,8 +55,6 @@
 
 .method synthetic constructor <init>(Lcom/android/i18n/addressinput/RegionData;Lcom/android/i18n/addressinput/RegionData$1;)V
     .locals 0
-    .param p1    # Lcom/android/i18n/addressinput/RegionData;
-    .param p2    # Lcom/android/i18n/addressinput/RegionData$1;
 
     invoke-direct {p0, p1}, Lcom/android/i18n/addressinput/RegionData;-><init>(Lcom/android/i18n/addressinput/RegionData;)V
 
@@ -67,8 +63,6 @@
 
 .method static synthetic access$202(Lcom/android/i18n/addressinput/RegionData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/RegionData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/RegionData;->mKey:Ljava/lang/String;
 
@@ -77,8 +71,6 @@
 
 .method static synthetic access$302(Lcom/android/i18n/addressinput/RegionData;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/i18n/addressinput/RegionData;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/i18n/addressinput/RegionData;->mName:Ljava/lang/String;
 
@@ -115,7 +107,6 @@
 
 .method isValidName(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

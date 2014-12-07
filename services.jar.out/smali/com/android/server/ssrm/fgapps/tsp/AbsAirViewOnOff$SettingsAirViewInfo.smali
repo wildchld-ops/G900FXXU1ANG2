@@ -45,7 +45,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$SettingsAirViewInfo;->this$0:Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff;
 

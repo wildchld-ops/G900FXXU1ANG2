@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0, p1}, Landroid/util/AtomicFile;-><init>(Ljava/io/File;)V
 
@@ -67,7 +66,6 @@
 
 .method public finishWrite(Ljava/io/FileOutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/FileOutputStream;
 
     iget-object v0, p0, Landroid/util/MoreAtomicFile;->mMoreBackupName:Ljava/io/File;
 
@@ -88,7 +86,6 @@
 
 .method isDamaged(Ljava/io/File;)Z
     .locals 9
-    .param p1    # Ljava/io/File;
 
     const/4 v3, 0x0
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/mms/location/SearchHandler;Lcom/samsung/mms/location/SearchHandler$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/mms/location/SearchHandler;
-    .param p2    # Lcom/samsung/mms/location/SearchHandler$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/mms/location/SearchHandler$PlacesSearchListener;-><init>(Lcom/samsung/mms/location/SearchHandler;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onRequestCancelled(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "SearchHandler"
 
@@ -66,7 +63,6 @@
 
 .method public onRequestComplete(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "SearchHandler"
 
@@ -79,8 +75,6 @@
 
 .method public onRequestError(Lcom/nbi/common/NBIException;Lcom/nbi/common/NBIRequest;)V
     .locals 3
-    .param p1    # Lcom/nbi/common/NBIException;
-    .param p2    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "SearchHandler"
 
@@ -139,8 +133,6 @@
 
 .method public onRequestProgress(ILcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "SearchHandler"
 
@@ -153,7 +145,6 @@
 
 .method public onRequestStart(Lcom/nbi/common/NBIRequest;)V
     .locals 2
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "SearchHandler"
 
@@ -166,7 +157,6 @@
 
 .method public onRequestTimeOut(Lcom/nbi/common/NBIRequest;)V
     .locals 3
-    .param p1    # Lcom/nbi/common/NBIRequest;
 
     const-string v0, "SearchHandler"
 
@@ -219,8 +209,6 @@
 
 .method public onSingleSearch(Lcom/nbi/search/singlesearch/SingleSearchInformation;Lcom/nbi/search/singlesearch/SingleSearchRequest;)V
     .locals 8
-    .param p1    # Lcom/nbi/search/singlesearch/SingleSearchInformation;
-    .param p2    # Lcom/nbi/search/singlesearch/SingleSearchRequest;
 
     const/4 v5, 0x1
 

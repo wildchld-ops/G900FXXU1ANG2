@@ -41,7 +41,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/InCallButtonCoverFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonCoverFragment;
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonCoverFragment;->mHandler:Landroid/os/Handler;
 
@@ -50,7 +49,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/InCallButtonCoverFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallButtonCoverFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/InCallButtonCoverFragment;->dismissPopupWindow()V
 
@@ -226,7 +224,6 @@
 # virtual methods
 .method public enableMute(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->enableMute(Z)V
 
@@ -244,7 +241,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -253,7 +249,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const v5, 0x7f0702a2
 
@@ -345,9 +340,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -434,7 +426,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->onFinishInflate(Landroid/view/View;)V
 
@@ -526,8 +517,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -558,7 +547,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -677,8 +665,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -736,8 +722,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -746,7 +730,6 @@
 
 .method public setCallState(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -775,7 +758,6 @@
 
 .method public setMute(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->setMute(Z)V
 
@@ -853,8 +835,6 @@
 
 .method updateSpeakerState(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonCoverFragment;->mCoverSpeakerToggleButton:Landroid/widget/ToggleButton;
 

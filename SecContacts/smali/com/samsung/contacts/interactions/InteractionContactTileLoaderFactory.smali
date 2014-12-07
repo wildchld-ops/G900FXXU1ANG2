@@ -138,7 +138,6 @@
 
 .method public static createInteractionStrequentLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -199,7 +198,6 @@
 
 .method public static setSelection(I)V
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 

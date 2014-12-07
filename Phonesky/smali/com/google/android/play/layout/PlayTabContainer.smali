@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -42,8 +41,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/HorizontalScrollView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/google/android/play/layout/PlayTabContainer;)Lcom/google/android/play/layout/PlayTabContainer$PagePreSelectionListener;
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayTabContainer;
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayTabContainer;->mPagePreSelectionListener:Lcom/google/android/play/layout/PlayTabContainer$PagePreSelectionListener;
 
@@ -79,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/google/android/play/layout/PlayTabContainer;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayTabContainer;
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayTabContainer;->mViewPager:Landroid/support/v4/view/ViewPager;
 
@@ -88,9 +83,6 @@
 
 .method static synthetic access$200(Lcom/google/android/play/layout/PlayTabContainer;II)V
     .locals 0
-    .param p0    # Lcom/google/android/play/layout/PlayTabContainer;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/layout/PlayTabContainer;->scrollToChild(II)V
 
@@ -99,7 +91,6 @@
 
 .method static synthetic access$300(Lcom/google/android/play/layout/PlayTabContainer;)Lcom/google/android/play/layout/PlayTabStrip;
     .locals 1
-    .param p0    # Lcom/google/android/play/layout/PlayTabContainer;
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayTabContainer;->mTabStrip:Lcom/google/android/play/layout/PlayTabStrip;
 
@@ -108,8 +99,6 @@
 
 .method private scrollToChild(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v4, p0, Lcom/google/android/play/layout/PlayTabContainer;->mTabStrip:Lcom/google/android/play/layout/PlayTabStrip;
 
@@ -213,7 +202,6 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/play/layout/PlayTabContainer;->mScrollState:I
 
@@ -222,9 +210,6 @@
 
 .method public onPageScrolled(IFI)V
     .locals 4
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     iget-object v3, p0, Lcom/google/android/play/layout/PlayTabContainer;->mTabStrip:Lcom/google/android/play/layout/PlayTabStrip;
 
@@ -278,7 +263,6 @@
 
 .method public onPageSelected(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/play/layout/PlayTabContainer;->mScrollState:I
 
@@ -298,7 +282,6 @@
 
 .method public setPagePreSelectionListener(Lcom/google/android/play/layout/PlayTabContainer$PagePreSelectionListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/play/layout/PlayTabContainer$PagePreSelectionListener;
 
     iput-object p1, p0, Lcom/google/android/play/layout/PlayTabContainer;->mPagePreSelectionListener:Lcom/google/android/play/layout/PlayTabContainer$PagePreSelectionListener;
 
@@ -307,7 +290,6 @@
 
 .method public setSelectedIndicatorColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayTabContainer;->mTabStrip:Lcom/google/android/play/layout/PlayTabStrip;
 
@@ -318,7 +300,6 @@
 
 .method public setViewPager(Landroid/support/v4/view/ViewPager;)V
     .locals 8
-    .param p1    # Landroid/support/v4/view/ViewPager;
 
     iput-object p1, p0, Lcom/google/android/play/layout/PlayTabContainer;->mViewPager:Landroid/support/v4/view/ViewPager;
 

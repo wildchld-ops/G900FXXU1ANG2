@@ -50,8 +50,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/WifiOffloadDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiOffloadDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/WifiOffloadDialog;->userPress:I
 
@@ -286,7 +284,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "WifiOffloadDialog"
 
@@ -336,7 +333,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 

@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Lorg/xml/sax/XMLReader;)V
     .locals 0
-    .param p1    # Lorg/xml/sax/XMLReader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,6 @@
 # virtual methods
 .method public parse(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -63,7 +61,6 @@
 
 .method public parse(Lorg/xml/sax/InputSource;)V
     .locals 2
-    .param p1    # Lorg/xml/sax/InputSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -91,7 +88,6 @@
 
 .method public setDTDHandler(Lorg/xml/sax/DTDHandler;)V
     .locals 1
-    .param p1    # Lorg/xml/sax/DTDHandler;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter;->xmlReader:Lorg/xml/sax/XMLReader;
 
@@ -102,7 +98,6 @@
 
 .method public setDocumentHandler(Lorg/xml/sax/DocumentHandler;)V
     .locals 2
-    .param p1    # Lorg/xml/sax/DocumentHandler;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter;->xmlReader:Lorg/xml/sax/XMLReader;
 
@@ -117,7 +112,6 @@
 
 .method public setEntityResolver(Lorg/xml/sax/EntityResolver;)V
     .locals 1
-    .param p1    # Lorg/xml/sax/EntityResolver;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter;->xmlReader:Lorg/xml/sax/XMLReader;
 
@@ -128,7 +122,6 @@
 
 .method public setErrorHandler(Lorg/xml/sax/ErrorHandler;)V
     .locals 1
-    .param p1    # Lorg/xml/sax/ErrorHandler;
 
     iget-object v0, p0, Lorg/ccil/cowan/tagsoup/jaxp/SAX1ParserAdapter;->xmlReader:Lorg/xml/sax/XMLReader;
 
@@ -139,7 +132,6 @@
 
 .method public setLocale(Ljava/util/Locale;)V
     .locals 2
-    .param p1    # Ljava/util/Locale;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;

@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/TabbedAdapter$TabType;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/TabbedAdapter$TabType;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TabbedAdapter$TabType;->tabBundle:Landroid/os/Bundle;
 
@@ -53,8 +51,6 @@
 
 .method static synthetic access$102(Lcom/google/android/finsky/activities/TabbedAdapter$TabType;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/TabbedAdapter$TabType;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/TabbedAdapter$TabType;->tabBundle:Landroid/os/Bundle;
 

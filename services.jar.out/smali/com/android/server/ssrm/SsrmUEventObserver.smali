@@ -78,7 +78,6 @@
 
 .method private static executeCommand(Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-string v5, "SSRMv2:SsrmUEventObserver"
 
@@ -145,7 +144,6 @@
 
 .method public static systemReady(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -255,7 +253,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 9
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     const/4 v8, -0x1
 

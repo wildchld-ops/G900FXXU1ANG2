@@ -33,14 +33,12 @@
 # virtual methods
 .method public packageAcquired(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public packageReleased(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/InstallerImpl$6;->this$0:Lcom/google/android/finsky/receivers/InstallerImpl;
 

@@ -46,7 +46,6 @@
 # virtual methods
 .method public fromStringList([Ljava/lang/String;)Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -81,7 +80,6 @@
 
 .method public bridge synthetic fromStringList([Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/DebugActivity$4;->fromStringList([Ljava/lang/String;)Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
 
@@ -92,7 +90,6 @@
 
 .method public isSelected(Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;)Z
     .locals 5
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
 
     iget-object v3, p1, Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;->dfeBaseUrl:Ljava/lang/String;
 
@@ -146,7 +143,6 @@
 
 .method public bridge synthetic isSelected(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
 
@@ -159,7 +155,6 @@
 
 .method public selectItem(Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DebugActivity$4;->this$0:Lcom/google/android/finsky/activities/DebugActivity;
 
@@ -171,7 +166,6 @@
 
 .method public bridge synthetic selectItem(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
 

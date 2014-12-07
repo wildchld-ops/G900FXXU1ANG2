@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -32,8 +31,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -54,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;)Lcom/google/android/finsky/protos/DocumentV2$DocV2;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;->mPlusDoc:Lcom/google/android/finsky/protos/DocumentV2$DocV2;
 
@@ -63,8 +59,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;Lcom/google/android/finsky/protos/DocumentV2$DocV2;)Lcom/google/android/finsky/protos/DocumentV2$DocV2;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;
-    .param p1    # Lcom/google/android/finsky/protos/DocumentV2$DocV2;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;->mPlusDoc:Lcom/google/android/finsky/protos/DocumentV2$DocV2;
 
@@ -73,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;)Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;->mProfileInfoView:Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;
 
@@ -82,9 +75,6 @@
 
 .method private getPlusDocAndConfigureProfileInfoView(Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;Lcom/google/android/finsky/layout/play/PlayDrawerLayout;Lcom/google/android/finsky/navigationmanager/NavigationManager;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
-    .param p3    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
     const/4 v1, 0x0
 
@@ -145,8 +135,6 @@
 
 .method private updateVisibility(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     packed-switch p1, :pswitch_data_0
 
@@ -412,7 +400,6 @@
 
 .method public onNavigationModeChange(Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;
 
     invoke-virtual {p1}, Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;->getNavigationMode()I
 
@@ -427,8 +414,6 @@
 
 .method public refresh(Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     const/4 v2, 0x1
 
@@ -526,7 +511,6 @@
 
 .method public setNavigationMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;->mProfileInfoView:Lcom/google/android/finsky/layout/play/DrawerProfileInfoView;
 
@@ -537,7 +521,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/play/PlayDrawerSideContentLayout;->mDrawerDestinationsListView:Landroid/widget/ListView;
 

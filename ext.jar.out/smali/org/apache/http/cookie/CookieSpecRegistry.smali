@@ -36,7 +36,6 @@
 # virtual methods
 .method public declared-synchronized getCookieSpec(Ljava/lang/String;)Lorg/apache/http/cookie/CookieSpec;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -68,8 +67,6 @@
 
 .method public declared-synchronized getCookieSpec(Ljava/lang/String;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/cookie/CookieSpec;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -196,8 +193,6 @@
 
 .method public declared-synchronized register(Ljava/lang/String;Lorg/apache/http/cookie/CookieSpecFactory;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/cookie/CookieSpecFactory;
 
     monitor-enter p0
 
@@ -297,7 +292,6 @@
 
 .method public declared-synchronized unregister(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

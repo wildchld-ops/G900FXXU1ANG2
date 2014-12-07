@@ -198,8 +198,6 @@
 
 .method private static varargs addToMap(Ljava/util/Map;Lcom/android/i18n/addressinput/AddressField;[Lcom/android/i18n/addressinput/AddressProblemType;)V
     .locals 1
-    .param p1    # Lcom/android/i18n/addressinput/AddressField;
-    .param p2    # [Lcom/android/i18n/addressinput/AddressProblemType;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -73,7 +73,6 @@
 
 .method static conversationInfo(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 10
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -230,7 +229,6 @@
 
 .method static conversationInfoCursor(Ljava/lang/String;)Landroid/database/MatrixCursor;
     .locals 21
-    .param p0    # Ljava/lang/String;
 
     new-instance v14, Landroid/database/MatrixCursor;
 
@@ -1078,7 +1076,6 @@
 
 .method static conversationInfoCursorForFindo([Ljava/lang/String;)Landroid/database/MatrixCursor;
     .locals 21
-    .param p0    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1667,7 +1664,6 @@
 
 .method static conversationInfoOneBubbleCursor(Ljava/lang/String;)Landroid/database/MatrixCursor;
     .locals 21
-    .param p0    # Ljava/lang/String;
 
     new-instance v14, Landroid/database/MatrixCursor;
 
@@ -2936,7 +2932,6 @@
 
 .method static get(J)Lcom/android/mms/data/Conversation;
     .locals 3
-    .param p0    # J
 
     sget-object v1, Lcom/android/mms/data/Conversation$Cache;->sInstance:Lcom/android/mms/data/Conversation$Cache;
 
@@ -2973,7 +2968,6 @@
 
 .method static get(Lcom/android/mms/data/ContactList;)Lcom/android/mms/data/Conversation;
     .locals 7
-    .param p0    # Lcom/android/mms/data/ContactList;
 
     const/4 v3, 0x0
 
@@ -3152,7 +3146,6 @@
 
 .method static put(Lcom/android/mms/data/Conversation;)V
     .locals 7
-    .param p0    # Lcom/android/mms/data/Conversation;
 
     sget-object v2, Lcom/android/mms/data/Conversation$Cache;->sInstance:Lcom/android/mms/data/Conversation$Cache;
 
@@ -3262,7 +3255,6 @@
 
 .method static remove(J)V
     .locals 3
-    .param p0    # J
 
     sget-object v1, Lcom/android/mms/data/Conversation$Cache;->sInstance:Lcom/android/mms/data/Conversation$Cache;
 

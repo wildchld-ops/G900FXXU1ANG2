@@ -67,8 +67,6 @@
 
 .method protected bind(Ljava/net/Socket;Lorg/apache/http/params/HttpParams;)V
     .locals 3
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -184,9 +182,6 @@
 
 .method protected createSessionInputBuffer(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionInputBuffer;
     .locals 1
-    .param p1    # Ljava/net/Socket;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -202,9 +197,6 @@
 
 .method protected createSessionOutputBuffer(Ljava/net/Socket;ILorg/apache/http/params/HttpParams;)Lorg/apache/http/io/SessionOutputBuffer;
     .locals 1
-    .param p1    # Ljava/net/Socket;
-    .param p2    # I
-    .param p3    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -352,7 +344,6 @@
 
 .method public setSocketTimeout(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lorg/apache/http/impl/SocketHttpClientConnection;->assertOpen()V
 

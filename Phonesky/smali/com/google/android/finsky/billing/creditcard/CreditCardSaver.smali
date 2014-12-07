@@ -53,7 +53,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;)Lcom/google/android/finsky/protos/CommonDevice$Instrument;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;->mInstrument:Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
@@ -62,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;->performRequest()V
 
@@ -71,9 +69,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;->logError(ILjava/lang/String;)V
 
@@ -82,9 +77,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;Lcom/android/volley/VolleyError;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
-    .param p1    # Lcom/android/volley/VolleyError;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;->setVolleyError(Lcom/android/volley/VolleyError;I)V
 
@@ -109,7 +101,6 @@
 
 .method private static isInputValidationResponse(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)Z
     .locals 2
-    .param p0    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     iget v0, p0, Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;->result:I
 
@@ -130,7 +121,6 @@
 
 .method private isSuccess(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)Z
     .locals 1
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     iget v0, p1, Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;->result:I
 
@@ -149,8 +139,6 @@
 
 .method private logError(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -173,7 +161,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;
 
@@ -212,8 +199,6 @@
 
 .method private queueEscrowCredentialsRequest(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -280,7 +265,6 @@
 
 .method private setErrorWithMessage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x3
 
@@ -293,7 +277,6 @@
 
 .method private setErrorWithMessageWithChoice(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;->mErrorHtml:Ljava/lang/String;
 
@@ -308,8 +291,6 @@
 
 .method private setVolleyError(Lcom/android/volley/VolleyError;I)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/creditcard/CreditCardSaver;->mVolleyError:Lcom/android/volley/VolleyError;
 
@@ -348,7 +329,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -393,7 +373,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const-string v0, "Error received: %s"
 
@@ -416,7 +395,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     const v3, 0x7f09007e
 
@@ -532,7 +510,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
@@ -543,7 +520,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/fragments/SidecarFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -573,7 +549,6 @@
 
 .method protected restoreFromSavedInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -613,9 +588,6 @@
 
 .method public saveCreditCard(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/protos/CommonDevice$Instrument;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/protos/CommonDevice$Instrument;
 
     const/4 v7, 0x1
 

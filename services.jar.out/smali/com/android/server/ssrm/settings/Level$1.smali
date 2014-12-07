@@ -36,7 +36,6 @@
 # virtual methods
 .method public createBatteryState(I)Lcom/android/server/ssrm/settings/BatteryState;
     .locals 1
-    .param p1    # I
 
     new-instance v0, Lcom/android/server/ssrm/settings/BatteryState;
 

@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

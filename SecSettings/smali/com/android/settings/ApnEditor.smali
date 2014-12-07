@@ -294,7 +294,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ApnEditor;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/settings/ApnEditor;
 
     iget-object v0, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
 
@@ -303,8 +302,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/ApnEditor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/ApnEditor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/ApnEditor;->mHasMdmEditedApn:Z
 
@@ -313,7 +310,6 @@
 
 .method private bearerDescription(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -354,7 +350,6 @@
 
 .method private changeNwkNameQuotesString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -459,7 +454,6 @@
 
 .method private checkNull(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -3626,7 +3620,6 @@
 
 .method private mvnoDescription(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -3814,8 +3807,6 @@
 
 .method private protocolDescription(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/preference/ListPreference;
 
     const/4 v3, 0x0
 
@@ -3854,7 +3845,6 @@
 
 .method private starify(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -4743,7 +4733,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x0
 
@@ -5605,8 +5594,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -5641,7 +5628,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x0
 
@@ -5725,8 +5711,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 11
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v9, 0x0
 
@@ -6000,8 +5984,6 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
 
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onPrepareDialog(ILandroid/app/Dialog;)V
 
@@ -6070,7 +6052,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

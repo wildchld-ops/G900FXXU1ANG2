@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/utils/IntentUtils$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/utils/IntentUtils$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/IntentUtils$ConsumptionApp;-><init>()V
 
@@ -34,9 +33,6 @@
 
 .method protected static final addAccountExtra(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -52,7 +48,6 @@
 
 .method protected static final setDefaultFlags(Landroid/content/Intent;)V
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     const/high16 v0, 0x10000000
 
@@ -65,9 +60,6 @@
 # virtual methods
 .method public buildManageItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/finsky/utils/IntentUtils$ConsumptionApp;->buildViewItemIntent(Landroid/content/Context;Lcom/google/android/finsky/api/model/Document;Ljava/lang/String;)Landroid/content/Intent;
 

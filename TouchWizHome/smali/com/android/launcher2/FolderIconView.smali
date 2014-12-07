@@ -64,7 +64,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -75,8 +74,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -87,9 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -166,7 +160,6 @@
 
 .method private acceptDrop(Lcom/android/launcher2/DragState;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/DragState;
 
     invoke-virtual {p1}, Lcom/android/launcher2/DragState;->getView()Landroid/view/View;
 
@@ -205,7 +198,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/FolderIconView;)Lcom/android/launcher2/FolderAnimator;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconView;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderIconView;->mFolderAnimator:Lcom/android/launcher2/FolderAnimator;
 
@@ -214,7 +206,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/FolderIconView;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderIconView;
 
     iget-boolean v0, p0, Lcom/android/launcher2/FolderIconView;->mDraggingOver:Z
 
@@ -223,7 +214,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/FolderIconView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/FolderIconView;
 
     invoke-direct {p0}, Lcom/android/launcher2/FolderIconView;->onDragEnter()V
 
@@ -232,7 +222,6 @@
 
 .method private draw_(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v5, p0, Lcom/android/launcher2/FolderIconView;->mDrawPlate:Z
 
@@ -318,7 +307,6 @@
 
 .method private droppedInOurFolder(Lcom/android/launcher2/DragState;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/4 v2, 0x0
 
@@ -360,7 +348,6 @@
 
 .method private getHiddenIconItem(Lcom/android/launcher2/FolderItem;)Lcom/android/launcher2/BaseItem;
     .locals 6
-    .param p1    # Lcom/android/launcher2/FolderItem;
 
     const/4 v0, 0x0
 
@@ -399,9 +386,6 @@
 
 .method static mix(FFF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v0, 0x3f800000
 
@@ -480,7 +464,6 @@
 
 .method private setFolderItem(Lcom/android/launcher2/FolderItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/FolderItem;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderIconView;->mFolderItem:Lcom/android/launcher2/FolderItem;
 
@@ -507,7 +490,6 @@
 
 .method public static setMenuAppsGridFragment(Lcom/android/launcher2/MenuAppsGridFragment;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     sput-object p0, Lcom/android/launcher2/FolderIconView;->mMenuAppsGridFragment:Lcom/android/launcher2/MenuAppsGridFragment;
 
@@ -518,7 +500,6 @@
 # virtual methods
 .method public addItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderIconView;->mFolderItem:Lcom/android/launcher2/FolderItem;
 
@@ -537,7 +518,6 @@
 
 .method public applyBaseItem(Lcom/android/launcher2/BaseItem;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p1, Lcom/android/launcher2/BaseItem;->mIconBitmap:Landroid/graphics/Bitmap;
 
@@ -686,7 +666,6 @@
 
 .method public createViewForItem(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     instance-of v0, p1, Lcom/android/launcher2/HomeShortcutItem;
 
@@ -719,7 +698,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
@@ -767,7 +745,6 @@
 
 .method public drawPlate(Landroid/graphics/Canvas;)V
     .locals 24
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -1059,7 +1036,6 @@
 
 .method public drawPlateWithFolderScale(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v11, 0x3f800000
 
@@ -1153,7 +1129,6 @@
 
 .method public drawShadow(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v3, p0, Lcom/android/launcher2/AppIconView;->mIconShadowDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1597,7 +1572,6 @@
 
 .method public onAdd(Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-virtual {p0}, Lcom/android/launcher2/FolderIconView;->showBadge()V
 
@@ -1620,7 +1594,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual {p1}, Landroid/view/DragEvent;->getLocalState()Ljava/lang/Object;
 
@@ -2055,7 +2028,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 23
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
@@ -2577,8 +2549,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -2660,7 +2630,6 @@
 
 .method public onRemove(Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-virtual {p0}, Lcom/android/launcher2/FolderIconView;->showBadge()V
 
@@ -2671,7 +2640,6 @@
 
 .method public onTitleChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -2820,7 +2788,6 @@
 
 .method public resetPlateIfNeeded(Lcom/android/launcher2/DragState;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/4 v1, 0x0
 
@@ -2856,7 +2823,6 @@
 
 .method public setBounceItem(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/FolderIconView;->mHasBounceItem:Z
 
@@ -2879,7 +2845,6 @@
 
 .method public setDraggedIconId(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/launcher2/FolderIconView;->mDraggedIconId:J
 
@@ -2888,7 +2853,6 @@
 
 .method public setFolder(Lcom/android/launcher2/Folder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/Folder;
 
     iput-object p1, p0, Lcom/android/launcher2/FolderIconView;->mLastAttachedFolder:Lcom/android/launcher2/Folder;
 
@@ -2897,13 +2861,6 @@
 
 .method public setItemLocation(Lcom/android/launcher2/BaseItem;IIIIIJ)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
 
     iget-object v0, p0, Lcom/android/launcher2/FolderIconView;->mFolderItem:Lcom/android/launcher2/FolderItem;
 
@@ -2955,7 +2912,6 @@
 
 .method public show(Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     return-void
 .end method

@@ -594,7 +594,6 @@
 
 .method public static updateBubbleFontRateArray(Landroid/content/Context;)[F
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSupport7StepFontSize()Z
 
@@ -638,7 +637,6 @@
 
 .method public static updateFontRateArray(I)[F
     .locals 3
-    .param p0    # I
 
     const/4 v2, 0x5
 
@@ -749,7 +747,6 @@
 
 .method public static updateFontSizeNormal(I)F
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 

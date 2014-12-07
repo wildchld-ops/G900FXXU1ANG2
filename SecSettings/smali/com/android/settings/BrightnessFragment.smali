@@ -135,7 +135,6 @@
 
 .method private BtoR(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Lcom/android/settings/BrightnessFragment;->mScreenBrightnessDim:I
 
@@ -154,8 +153,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/BrightnessFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/BrightnessFragment;->mCurBrightness:I
 
@@ -164,7 +161,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/BrightnessFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessFragment;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessFragment;->onBrightnessChanged()V
 
@@ -173,7 +169,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/BrightnessFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessFragment;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessFragment;->onBrightnessModeChanged()V
 
@@ -182,7 +177,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/BrightnessFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessFragment;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessFragment;->onAutoBrightnessDetailChanged()V
 
@@ -199,7 +193,6 @@
 
 .method static synthetic access$500(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/BrightnessFragment;->isDualFolderType(Landroid/content/Context;)Z
 
@@ -210,7 +203,6 @@
 
 .method static synthetic access$600(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/BrightnessFragment;->isFolderOpen(Landroid/content/Context;)Z
 
@@ -221,7 +213,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/BrightnessFragment;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0    # Lcom/android/settings/BrightnessFragment;
 
     iget-object v0, p0, Lcom/android/settings/BrightnessFragment;->mSeekBar:Landroid/widget/SeekBar;
 
@@ -230,9 +221,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/BrightnessFragment;IZ)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessFragment;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/BrightnessFragment;->setBrightness(IZ)V
 
@@ -241,7 +229,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/BrightnessFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessFragment;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessFragment;->restoreOldState()V
 
@@ -348,7 +335,6 @@
 
 .method private getBrightnessMode(I)I
     .locals 3
-    .param p1    # I
 
     move v0, p1
 
@@ -380,7 +366,6 @@
 
 .method private initializeView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -537,7 +522,6 @@
 
 .method private static isDualFolderType(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -576,7 +560,6 @@
 
 .method private static isFolderOpen(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -892,8 +875,6 @@
 
 .method private setBrightness(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const v7, 0x461c4000
 
@@ -1048,7 +1029,6 @@
 
 .method private setMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1112,7 +1092,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessFragment;->restoreOldState()V
 
@@ -1123,8 +1102,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 5
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -1210,14 +1187,12 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x64
 
@@ -1462,7 +1437,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x8
 
@@ -1880,9 +1854,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1891,9 +1862,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -1932,9 +1900,6 @@
 
 .method public onProgressChanged(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;IZ)V
     .locals 5
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v2, "BrightnessFragment"
 
@@ -2033,35 +1998,30 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStartTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     return-void
 .end method
 
 .method public returnMaxBrightness(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 

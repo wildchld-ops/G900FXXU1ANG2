@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/menu/controller/PeopleOptionsMenuControllerImpl;-><init>(Landroid/content/Context;)V
 
@@ -17,9 +16,6 @@
 # virtual methods
 .method protected configureCommon(Landroid/view/Menu;II)V
     .locals 20
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
-    .param p3    # I
 
     const v15, 0x7f080334
 
@@ -425,9 +421,6 @@
 
 .method protected configureFlagship(Landroid/view/Menu;II)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
-    .param p3    # I
 
     const v3, 0x7f08033b
 

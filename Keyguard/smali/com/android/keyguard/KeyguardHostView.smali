@@ -224,7 +224,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -777,7 +776,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/KeyguardHostView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mGuidetext:Landroid/widget/TextView;
 
@@ -786,7 +784,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -795,7 +792,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/KeyguardHostView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mSecurityViewArea:Landroid/view/View;
 
@@ -804,7 +800,6 @@
 
 .method static synthetic access$1100(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/CarrierText;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mCarrierText:Lcom/android/keyguard/CarrierText;
 
@@ -813,7 +808,6 @@
 
 .method static synthetic access$1200(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardSelectorView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mKeyguardSelectorView:Lcom/android/keyguard/KeyguardSelectorView;
 
@@ -822,7 +816,6 @@
 
 .method static synthetic access$1300(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -831,7 +824,6 @@
 
 .method static synthetic access$1400(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -840,7 +832,6 @@
 
 .method static synthetic access$1500(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -849,7 +840,6 @@
 
 .method static synthetic access$1600(Lcom/android/keyguard/KeyguardHostView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardHostView;->shouldEnableAddWidget()Z
 
@@ -860,7 +850,6 @@
 
 .method static synthetic access$1700(Lcom/android/keyguard/KeyguardHostView;)Landroid/appwidget/AppWidgetHost;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mAppWidgetHost:Landroid/appwidget/AppWidgetHost;
 
@@ -869,8 +858,6 @@
 
 .method static synthetic access$1800(Lcom/android/keyguard/KeyguardHostView;Z)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardHostView;->showNextSecurityScreenOrFinish(Z)V
 
@@ -879,7 +866,6 @@
 
 .method static synthetic access$1900(Lcom/android/keyguard/KeyguardHostView;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardHostView;->mIsVerifyUnlockOnly:Z
 
@@ -888,7 +874,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/KeyguardHostView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mPostBootCompletedRunnable:Ljava/lang/Runnable;
 
@@ -897,7 +882,6 @@
 
 .method static synthetic access$2000(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -906,8 +890,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/KeyguardHostView;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardHostView;->mPostBootCompletedRunnable:Ljava/lang/Runnable;
 
@@ -916,7 +898,6 @@
 
 .method static synthetic access$2100(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -925,7 +906,6 @@
 
 .method static synthetic access$2200(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -934,7 +914,6 @@
 
 .method static synthetic access$2300(Lcom/android/keyguard/KeyguardHostView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardHostView;->reportFailedUnlockAttempt()V
 
@@ -943,7 +922,6 @@
 
 .method static synthetic access$2400(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardSecurityModel;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mSecurityModel:Lcom/android/keyguard/KeyguardSecurityModel;
 
@@ -952,7 +930,6 @@
 
 .method static synthetic access$2500(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -961,7 +938,6 @@
 
 .method static synthetic access$2600(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -970,8 +946,6 @@
 
 .method static synthetic access$2700(Lcom/android/keyguard/KeyguardHostView;Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardHostView;->showBackupSecurityScreen(Lcom/android/keyguard/KeyguardSecurityModel$SecurityMode;)V
 
@@ -980,8 +954,6 @@
 
 .method static synthetic access$2800(Lcom/android/keyguard/KeyguardHostView;I)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardHostView;->performWipeout(I)V
 
@@ -990,7 +962,6 @@
 
 .method static synthetic access$2900(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -999,7 +970,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardMultiUserSelectorView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mKeyguardMultiUserSelectorView:Lcom/android/keyguard/KeyguardMultiUserSelectorView;
 
@@ -1008,7 +978,6 @@
 
 .method static synthetic access$3000(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1017,7 +986,6 @@
 
 .method static synthetic access$3100(Lcom/android/keyguard/KeyguardHostView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardHostView;->mDialogTheme:I
 
@@ -1026,7 +994,6 @@
 
 .method static synthetic access$3200(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardViewStateManager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mViewStateManager:Lcom/android/keyguard/KeyguardViewStateManager;
 
@@ -1035,7 +1002,6 @@
 
 .method static synthetic access$3300(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1044,7 +1010,6 @@
 
 .method static synthetic access$3400(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardActivityLauncher;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mActivityLauncher:Lcom/android/keyguard/KeyguardActivityLauncher;
 
@@ -1053,7 +1018,6 @@
 
 .method static synthetic access$3500(Lcom/android/keyguard/KeyguardHostView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mFMMPhoneNumber:Ljava/lang/String;
 
@@ -1062,7 +1026,6 @@
 
 .method static synthetic access$3600(Lcom/android/keyguard/KeyguardHostView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1071,7 +1034,6 @@
 
 .method static synthetic access$3700(Lcom/android/keyguard/KeyguardHostView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardHostView;->showAppropriateWidgetPage()V
 
@@ -1080,8 +1042,6 @@
 
 .method static synthetic access$3902(Lcom/android/keyguard/KeyguardHostView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardHostView;->mAppWidgetToShow:I
 
@@ -1090,7 +1050,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/KeyguardHostView;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget v0, p0, Lcom/android/keyguard/KeyguardHostView;->mTransportState:I
 
@@ -1099,8 +1058,6 @@
 
 .method static synthetic access$402(Lcom/android/keyguard/KeyguardHostView;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardHostView;->mTransportState:I
 
@@ -1109,7 +1066,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/KeyguardHostView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mSwitchPageRunnable:Ljava/lang/Runnable;
 
@@ -1118,7 +1074,6 @@
 
 .method static synthetic access$600(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/keyguard/KeyguardHostView;->isMusicPlaying(I)Z
 
@@ -1129,7 +1084,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/KeyguardHostView;)Lcom/android/keyguard/KeyguardWidgetPager;
     .locals 1
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mAppWidgetContainer:Lcom/android/keyguard/KeyguardWidgetPager;
 
@@ -1138,7 +1092,6 @@
 
 .method static synthetic access$802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/keyguard/KeyguardHostView;->mIsBlockToResetByContextualWidgetUpdated:Z
 
@@ -1147,7 +1100,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/KeyguardHostView;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/KeyguardHostView;
 
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardHostView;->updateAndAddWidgets()V
 
@@ -2391,8 +2343,6 @@
 
 .method private static contains([II)Z
     .locals 5
-    .param p0    # [I
-    .param p1    # I
 
     move-object v0, p0
 
@@ -3387,7 +3337,6 @@
 
 .method private getDisabledFeatures(Landroid/app/admin/DevicePolicyManager;)I
     .locals 3
-    .param p1    # Landroid/app/admin/DevicePolicyManager;
 
     const/4 v1, 0x0
 
@@ -4242,7 +4191,6 @@
 
 .method private static final isMusicPlaying(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -5130,7 +5078,6 @@
 
 .method private setInsets(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardHostView;->mInsets:Landroid/graphics/Rect;
 
@@ -6674,8 +6621,6 @@
 # virtual methods
 .method addWidget(Landroid/appwidget/AppWidgetHostView;I)V
     .locals 1
-    .param p1    # Landroid/appwidget/AppWidgetHostView;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mAppWidgetContainer:Lcom/android/keyguard/KeyguardWidgetPager;
 
@@ -6979,7 +6924,6 @@
 
 .method public dispatch(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mAppWidgetContainer:Lcom/android/keyguard/KeyguardWidgetPager;
 
@@ -6990,7 +6934,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -7234,7 +7177,6 @@
 
 .method protected fitSystemWindows(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/KeyguardHostView;->setInsets(Landroid/graphics/Rect;)V
 
@@ -7275,7 +7217,6 @@
 
 .method public goToWidget(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/KeyguardHostView;->mAppWidgetToShow:I
 
@@ -7389,7 +7330,6 @@
 
 .method public initializeSwitchingUserState(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -9229,7 +9169,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -9595,7 +9534,6 @@
 
 .method public setLockPatternUtils(Lcom/android/internal/widget/LockPatternUtils;)V
     .locals 1
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mSecurityModel:Lcom/android/keyguard/KeyguardSecurityModel;
 
@@ -9610,7 +9548,6 @@
 
 .method protected setOnDismissAction(Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardHostView;->mDismissAction:Lcom/android/keyguard/KeyguardViewBase$OnDismissAction;
 
@@ -9704,7 +9641,6 @@
 
 .method public showBouncer(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardHostView;->mViewStateManager:Lcom/android/keyguard/KeyguardViewStateManager;
 

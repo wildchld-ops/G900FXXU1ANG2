@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lgov/nist/javax/sip/stack/SIPTransactionStack;Lgov/nist/javax/sip/stack/SIPClientTransaction;)V
     .locals 0
-    .param p2    # Lgov/nist/javax/sip/stack/SIPClientTransaction;
 
     iput-object p1, p0, Lgov/nist/javax/sip/stack/SIPTransactionStack$RemoveForkedTransactionTimerTask;->this$0:Lgov/nist/javax/sip/stack/SIPTransactionStack;
 

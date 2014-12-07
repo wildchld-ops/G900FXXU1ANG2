@@ -63,7 +63,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/activities/TabbedAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/activities/TabbedAdapter$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;-><init>()V
 
@@ -72,8 +71,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;Lcom/google/android/finsky/activities/ListTab;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;
-    .param p1    # Lcom/google/android/finsky/activities/ListTab;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;->addDeferredTab(Lcom/google/android/finsky/activities/ListTab;)V
 
@@ -82,8 +79,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;->onPageIsAboutToBeSelected(I)V
 
@@ -92,8 +87,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;->onPageScrollStateChanged(I)V
 
@@ -102,7 +95,6 @@
 
 .method private addDeferredTab(Lcom/google/android/finsky/activities/ListTab;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/activities/ListTab;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/TabbedAdapter$TabSelectionTracker;->mDeferredTabs:Ljava/util/List;
 
@@ -153,7 +145,6 @@
 
 .method private onPageIsAboutToBeSelected(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -170,7 +161,6 @@
 
 .method private onPageScrollStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 

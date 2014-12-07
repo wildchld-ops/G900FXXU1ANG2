@@ -61,7 +61,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Lcom/samsung/contacts/activities/SIMContactSelectionActivity;Ljava/util/HashSet;)V
     .locals 1
-    .param p2    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -101,8 +100,6 @@
 # virtual methods
 .method protected varargs doInBackground(Lcom/samsung/contacts/activities/SIMContactSelectionActivity;[Ljava/lang/Void;)Ljava/lang/Integer;
     .locals 9
-    .param p1    # Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
-    .param p2    # [Ljava/lang/Void;
 
     const/4 v8, 0x0
 
@@ -223,8 +220,6 @@
 
 .method protected bridge synthetic doInBackground(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
@@ -736,8 +731,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 
@@ -818,7 +811,6 @@
 
 .method protected bridge synthetic onPreExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/activities/SIMContactSelectionActivity;
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public bridge synthetic preBind(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/api/model/Document;)V
     .locals 0
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     check-cast p1, Lcom/google/android/play/layout/PlayCardViewSmall;
 
@@ -48,8 +46,6 @@
 
 .method public preBind(Lcom/google/android/play/layout/PlayCardViewSmall;Lcom/google/android/finsky/api/model/Document;)V
     .locals 2
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewSmall;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-super {p0, p1, p2}, Lcom/google/android/finsky/utils/PlayCardCustomizer;->preBind(Lcom/google/android/play/layout/PlayCardViewBase;Lcom/google/android/finsky/api/model/Document;)V
 

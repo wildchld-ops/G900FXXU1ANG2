@@ -84,7 +84,6 @@
 
 .method constructor <init>(Lcom/nuance/connect/internal/ConnectServiceManagerInternal;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/AbstactService;-><init>()V
 
@@ -127,9 +126,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/internal/DocumentServiceInternal;Landroid/os/Handler;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/nuance/connect/internal/DocumentServiceInternal;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/connect/internal/DocumentServiceInternal;->handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
 
@@ -232,7 +228,6 @@
 
 .method private addDocument(Lcom/nuance/connect/internal/common/Document;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/internal/common/Document;
 
     invoke-virtual {p1}, Lcom/nuance/connect/internal/common/Document;->getType()I
 
@@ -359,7 +354,6 @@
 
 .method private addToResources(Lcom/nuance/connect/internal/common/Document;)V
     .locals 7
-    .param p1    # Lcom/nuance/connect/internal/common/Document;
 
     iget-object v5, p0, Lcom/nuance/connect/internal/DocumentServiceInternal;->connectService:Lcom/nuance/connect/internal/ConnectServiceManagerInternal;
 
@@ -446,8 +440,6 @@
 
 .method private getLatestDocumentRevision(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1, p2}, Lcom/nuance/connect/internal/common/Document;->getPrimaryKey(II)Ljava/lang/String;
 
@@ -506,8 +498,6 @@
 
 .method private handleMessage(Landroid/os/Handler;Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Message;
 
     sget-object v3, Lcom/nuance/connect/internal/DocumentServiceInternal$2;->$SwitchMap$com$nuance$connect$internal$common$InternalMessages:[I
 
@@ -570,7 +560,6 @@
 
 .method private readResourceFile(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const-string v0, "/com/nuance/connect/internal/docs/connect_tos.dat"
 
@@ -662,7 +651,6 @@
 
 .method private setup(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/nuance/connect/internal/DocumentServiceInternal;->addApkDocuments()V
 
@@ -673,7 +661,6 @@
 # virtual methods
 .method public acceptDocument(Lcom/nuance/connect/internal/common/Document$DocumentType;)V
     .locals 8
-    .param p1    # Lcom/nuance/connect/internal/common/Document$DocumentType;
 
     invoke-virtual {p1}, Lcom/nuance/connect/internal/common/Document$DocumentType;->getDocTypeId()I
 
@@ -861,7 +848,6 @@
 
 .method public getDocument(Lcom/nuance/connect/internal/common/Document$DocumentType;)Ljava/lang/String;
     .locals 7
-    .param p1    # Lcom/nuance/connect/internal/common/Document$DocumentType;
 
     invoke-virtual {p1}, Lcom/nuance/connect/internal/common/Document$DocumentType;->getDocTypeId()I
 
@@ -967,7 +953,6 @@
 
 .method public getDocumentRevisionNumber(Lcom/nuance/connect/internal/common/Document$DocumentType;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/nuance/connect/internal/common/Document$DocumentType;
 
     invoke-virtual {p1}, Lcom/nuance/connect/internal/common/Document$DocumentType;->getDocTypeId()I
 

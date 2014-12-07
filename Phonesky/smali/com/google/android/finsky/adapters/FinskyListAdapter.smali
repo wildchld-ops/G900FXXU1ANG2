@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Lcom/google/android/finsky/api/model/BucketedList;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -98,15 +96,12 @@
 
 .method public onMovedToScrapHeap(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onRestoreInstanceState(Landroid/widget/ListView;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "ListTab.ListParcelKey"
 
@@ -121,8 +116,6 @@
 
 .method public onSaveInstanceState(Landroid/widget/ListView;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "ListTab.ListParcelKey"
 

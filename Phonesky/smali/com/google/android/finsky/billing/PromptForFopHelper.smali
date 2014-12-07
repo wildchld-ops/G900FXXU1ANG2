@@ -6,8 +6,6 @@
 # direct methods
 .method static synthetic access$000(Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/google/android/finsky/billing/PromptForFopHelper;->updateHasValidFopCache(Ljava/lang/String;Z)V
 
@@ -16,7 +14,6 @@
 
 .method public static expireHasNoFop(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->accountHasFopLastUpdateMs:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 
@@ -49,7 +46,6 @@
 
 .method public static getSessionLoggingData(Ljava/lang/String;)Lcom/google/android/finsky/analytics/PlayStore$PromptForFopData;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -162,7 +158,6 @@
 
 .method private static getSnoozePeriodMs(I)J
     .locals 11
-    .param p0    # I
 
     const/4 v10, 0x1
 
@@ -256,7 +251,6 @@
 
 .method private static isExperimentEnabled(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -277,8 +271,6 @@
 
 .method private static isHasFopCacheValid(Ljava/lang/String;J)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -400,8 +392,6 @@
 
 .method public static isSnoozed(Ljava/lang/String;J)Z
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     const/4 v8, 0x1
 
@@ -502,7 +492,6 @@
 
 .method public static recordDialogImpression(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lcom/google/android/finsky/utils/FinskyPreferences;->promptForFopNumDialogImpressions:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 
@@ -533,7 +522,6 @@
 
 .method public static recordFopAdded(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->promptForFopAddedFop:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 
@@ -554,7 +542,6 @@
 
 .method public static recordFopSelectorImpression(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lcom/google/android/finsky/utils/FinskyPreferences;->promptForFopNumFopSelectorImpressions:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 
@@ -585,7 +572,6 @@
 
 .method public static refreshHasFopCacheIfNecessary(Lcom/google/android/finsky/api/DfeApi;)V
     .locals 7
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
 
     const/4 v4, 0x1
 
@@ -672,7 +658,6 @@
 
 .method public static shouldPromptForFop(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -727,7 +712,6 @@
 
 .method public static snooze(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     sget-object v3, Lcom/google/android/finsky/utils/FinskyPreferences;->promptForFopLastSnoozedTimestampMs:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 
@@ -810,8 +794,6 @@
 
 .method private static updateHasValidFopCache(Ljava/lang/String;Z)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->accountHasFop:Lcom/google/android/finsky/config/PreferenceFile$PrefixSharedPreference;
 

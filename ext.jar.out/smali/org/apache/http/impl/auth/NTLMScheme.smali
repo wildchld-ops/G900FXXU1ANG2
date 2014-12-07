@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/auth/NTLMEngine;)V
     .locals 2
-    .param p1    # Lorg/apache/http/impl/auth/NTLMEngine;
 
     invoke-direct {p0}, Lorg/apache/http/impl/auth/AuthSchemeBase;-><init>()V
 
@@ -54,8 +53,6 @@
 # virtual methods
 .method public authenticate(Lorg/apache/http/auth/Credentials;Lorg/apache/http/HttpRequest;)Lorg/apache/http/Header;
     .locals 11
-    .param p1    # Lorg/apache/http/auth/Credentials;
-    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/AuthenticationException;
@@ -245,7 +242,6 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -305,9 +301,6 @@
 
 .method protected parseChallenge(Lorg/apache/http/util/CharArrayBuffer;II)V
     .locals 3
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/auth/MalformedChallengeException;

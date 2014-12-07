@@ -45,7 +45,6 @@
 # virtual methods
 .method public getString(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Lcom/google/android/finsky/utils/PurchaseButtonHelper$TextStyle;->resourceId:I
 

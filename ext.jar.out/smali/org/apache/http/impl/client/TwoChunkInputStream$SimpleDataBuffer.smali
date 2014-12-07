@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/impl/client/TwoChunkInputStream;JJ)V
     .locals 7
-    .param p2    # J
-    .param p4    # J
 
     const/4 v6, 0x0
 
@@ -660,9 +658,6 @@
 
 .method public push(I[BI)J
     .locals 10
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
 
     const-wide/16 v8, -0x1
 
@@ -1052,9 +1047,6 @@
 
 .method public push(Ljava/io/InputStream;JJ)V
     .locals 6
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # J
-    .param p4    # J
 
     monitor-enter p0
 
@@ -1186,9 +1178,6 @@
 
 .method public read([BII)I
     .locals 10
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const-wide/16 v8, 0x1
 

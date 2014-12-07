@@ -201,7 +201,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/toolbox/ToolboxMenu;)I
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxMenu;
 
     iget v0, p0, Lcom/android/settings/toolbox/ToolboxMenu;->TYPE_ALL:I
 
@@ -210,7 +209,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/toolbox/ToolboxMenu;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxMenu;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxMenu;->editBtn:Landroid/widget/Button;
 
@@ -219,7 +217,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/toolbox/ToolboxMenu;)Landroid/app/Fragment;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxMenu;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxMenu;->mFragment:Landroid/app/Fragment;
 
@@ -228,8 +225,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     const/4 v5, 0x0
 
@@ -383,7 +378,6 @@
 
 .method private loadAppIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/settings/toolbox/ToolboxMenu;->mIconCache:Ljava/util/HashMap;
 
@@ -931,14 +925,12 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -1047,9 +1039,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v10, 0x7f0f0222
 
@@ -1389,7 +1378,6 @@
 
 .method public refreshUI(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 

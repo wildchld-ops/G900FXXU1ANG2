@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
-    .param p2    # Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$ActionModeCallback;-><init>(Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;)V
 
@@ -142,8 +140,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -219,8 +215,6 @@
 
 .method public onContactSelected(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment$ActionModeCallback;->this$0:Lcom/samsung/contacts/emergency/InteractionEmergencyMessageFragment;
 
@@ -285,8 +279,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v5, 0x1
 
@@ -439,7 +431,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v3, 0x0
 
@@ -490,8 +481,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 

@@ -57,9 +57,6 @@
 
 .method public write([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Ljava/lang/AssertionError;
 

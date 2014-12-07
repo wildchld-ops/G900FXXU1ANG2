@@ -34,8 +34,6 @@
 
 .method public static logError(Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Exception;
 
     sget-boolean v0, Lgov/nist/core/Debug;->parserDebug:Z
 
@@ -60,7 +58,6 @@
 
 .method public static printStackTrace(Ljava/lang/Exception;)V
     .locals 2
-    .param p0    # Ljava/lang/Exception;
 
     sget-boolean v0, Lgov/nist/core/Debug;->parserDebug:Z
 
@@ -87,7 +84,6 @@
 
 .method public static println(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lgov/nist/core/Debug;->parserDebug:Z
 
@@ -130,7 +126,6 @@
 
 .method public static setStackLogger(Lgov/nist/core/StackLogger;)V
     .locals 0
-    .param p0    # Lgov/nist/core/StackLogger;
 
     sput-object p0, Lgov/nist/core/Debug;->stackLogger:Lgov/nist/core/StackLogger;
 

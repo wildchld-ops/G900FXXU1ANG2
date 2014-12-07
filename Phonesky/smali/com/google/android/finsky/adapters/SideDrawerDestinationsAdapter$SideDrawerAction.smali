@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;Ljava/lang/String;ZLjava/lang/Runnable;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;->this$0:Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter;
 
@@ -46,7 +43,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;->mIsActive:Z
 
@@ -55,7 +51,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/SideDrawerDestinationsAdapter$SideDrawerAction;->mActionText:Ljava/lang/String;
 

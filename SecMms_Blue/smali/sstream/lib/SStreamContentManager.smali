@@ -38,7 +38,6 @@
 
 .method private static IsStreamEnabled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -112,9 +111,6 @@
 
 .method public static deleteAllStoryItemsFromStream(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -175,10 +171,6 @@
 
 .method public static deleteAllStoryItemsFromStream(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -195,9 +187,6 @@
 
 .method public static deleteAllStoryItemsFromStreamByCategory(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -258,10 +247,6 @@
 
 .method public static deleteStoryItem(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -323,10 +308,6 @@
 
 .method public static deleteStoryItemByCategory(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -388,7 +369,6 @@
 
 .method public static getIsMoreFromIntent(Landroid/content/Intent;)Z
     .locals 5
-    .param p0    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -489,7 +469,6 @@
 
 .method private static getStoryContentValues(Lsstream/lib/objs/StoryItem;)Landroid/content/ContentValues;
     .locals 9
-    .param p0    # Lsstream/lib/objs/StoryItem;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lsstream/lib/InvalidStoryItemException;
@@ -760,7 +739,6 @@
 
 .method public static getStoryItemIdFromIntent(Landroid/content/Intent;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Intent;
 
     if-nez p0, :cond_1
 
@@ -842,7 +820,6 @@
 
 .method private static isStoryItemValid(Lsstream/lib/objs/StoryItem;)V
     .locals 5
-    .param p0    # Lsstream/lib/objs/StoryItem;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lsstream/lib/InvalidStoryItemException;
@@ -977,8 +954,6 @@
 
 .method public static sendStoryItem(Landroid/content/Context;Lsstream/lib/objs/StoryItem;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lsstream/lib/objs/StoryItem;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lsstream/lib/InvalidStoryItemException;
@@ -1012,7 +987,6 @@
 
 .method public static sendStoryItems(Landroid/content/Context;Ljava/util/List;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

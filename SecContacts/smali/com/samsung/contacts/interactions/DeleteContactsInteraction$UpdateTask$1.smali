@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/interactions/DeleteContactsInteraction$UpdateTask;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/DeleteContactsInteraction$UpdateTask$1;->this$0:Lcom/samsung/contacts/interactions/DeleteContactsInteraction$UpdateTask;
 

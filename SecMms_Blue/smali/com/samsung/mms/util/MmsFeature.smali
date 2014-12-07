@@ -34,7 +34,6 @@
 
 .method public static hasFeature(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

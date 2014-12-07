@@ -48,7 +48,6 @@
 
 .method public onRingtoneRecommend(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/group/GroupEditorFragment$9;->this$0:Lcom/android/contacts/group/GroupEditorFragment;
 

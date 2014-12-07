@@ -18,8 +18,6 @@
 
 .method public static checkSQLiteException(Landroid/content/Context;Landroid/database/sqlite/SQLiteException;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/sqlite/SQLiteException;
 
     invoke-static {p1}, Lcom/samsung/mms/location/SqliteWrapper;->isLowMemory(Landroid/database/sqlite/SQLiteException;)Z
 
@@ -45,11 +43,6 @@
 
 .method public static delete(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p1, p2, p3, p4}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
@@ -79,10 +72,6 @@
 
 .method public static insert(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentValues;
 
     :try_start_0
     invoke-virtual {p1, p2, p3}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
@@ -112,7 +101,6 @@
 
 .method private static isLowMemory(Landroid/database/sqlite/SQLiteException;)Z
     .locals 2
-    .param p0    # Landroid/database/sqlite/SQLiteException;
 
     invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
@@ -129,13 +117,6 @@
 
 .method public static query(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -181,8 +162,6 @@
 
 .method public static requery(Landroid/content/Context;Landroid/database/Cursor;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
 
     :try_start_0
     invoke-interface {p1}, Landroid/database/Cursor;->requery()Z
@@ -212,12 +191,6 @@
 
 .method public static update(Landroid/content/Context;Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p1, p2, p3, p4, p5}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I

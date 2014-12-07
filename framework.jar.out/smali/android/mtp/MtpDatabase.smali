@@ -349,10 +349,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -583,12 +579,6 @@
 
 .method private beginSendObject(Ljava/lang/String;IIIJJ)I
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpDatabase;->inStorageSubDirectory(Ljava/lang/String;)Z
 
@@ -816,9 +806,6 @@
 
 .method private createObjectQuery(III)Landroid/database/Cursor;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1105,7 +1092,6 @@
 
 .method private deleteFile(I)I
     .locals 14
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1449,10 +1435,6 @@
 
 .method private endSendObject(Ljava/lang/String;IIZ)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     if-eqz p4, :cond_3
 
@@ -1586,9 +1568,6 @@
 
 .method private getDeviceProperty(I[J[C)I
     .locals 11
-    .param p1    # I
-    .param p2    # [J
-    .param p3    # [C
 
     const/16 v7, 0x2001
 
@@ -1712,9 +1691,6 @@
 
 .method private getNumObjects(III)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1782,9 +1758,6 @@
 
 .method private getObjectFilePath(I[C[J)I
     .locals 12
-    .param p1    # I
-    .param p2    # [C
-    .param p3    # [J
 
     const/16 v11, 0x2001
 
@@ -1968,10 +1941,6 @@
 
 .method private getObjectInfo(I[I[C[J)Z
     .locals 15
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # [C
-    .param p4    # [J
 
     const/4 v9, 0x0
 
@@ -2185,9 +2154,6 @@
 
 .method private getObjectList(III)[I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -2295,11 +2261,6 @@
 
 .method private getObjectPropertyList(JIJII)Landroid/mtp/MtpPropertyList;
     .locals 6
-    .param p1    # J
-    .param p3    # I
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
 
     const/4 v3, 0x0
 
@@ -2419,7 +2380,6 @@
 
 .method private getObjectReferences(I)[I
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x0
 
@@ -2578,7 +2538,6 @@
 
 .method private getSupportedObjectProperties(I)[I
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -2669,7 +2628,6 @@
 
 .method private inStorageSubDirectory(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Landroid/mtp/MtpDatabase;->mSubDirectories:[Ljava/lang/String;
 
@@ -2740,7 +2698,6 @@
 
 .method private initDeviceProperties(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -2922,7 +2879,6 @@
 
 .method private isStorageSubDirectory(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2972,8 +2928,6 @@
 
 .method private renameFile(ILjava/lang/String;)I
     .locals 18
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -3470,9 +3424,6 @@
 
 .method private setDeviceProperty(IJLjava/lang/String;)I
     .locals 2
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     packed-switch p1, :pswitch_data_0
 
@@ -3520,10 +3471,6 @@
 
 .method private setObjectProperty(IIJLjava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
 
     packed-switch p2, :pswitch_data_0
 
@@ -3547,8 +3494,6 @@
 
 .method private setObjectReferences(I[I)I
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v6, 0x1
 
@@ -3629,7 +3574,6 @@
 # virtual methods
 .method public addStorage(Landroid/mtp/MtpStorage;)V
     .locals 2
-    .param p1    # Landroid/mtp/MtpStorage;
 
     iget-object v0, p0, Landroid/mtp/MtpDatabase;->mStorageMap:Ljava/util/HashMap;
 
@@ -3669,7 +3613,6 @@
 
 .method public removeStorage(Landroid/mtp/MtpStorage;)V
     .locals 2
-    .param p1    # Landroid/mtp/MtpStorage;
 
     iget-object v0, p0, Landroid/mtp/MtpDatabase;->mStorageMap:Ljava/util/HashMap;
 

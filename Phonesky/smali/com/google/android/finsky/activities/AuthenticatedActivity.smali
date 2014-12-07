@@ -99,8 +99,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/AuthenticatedActivity;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->isAccountSwitchNeeded(Ljava/lang/String;)Z
 
@@ -111,8 +109,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/AuthenticatedActivity;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->restrictLimitedOrEduUserAndContinue(Z)V
 
@@ -121,8 +117,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/activities/AuthenticatedActivity;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->fireOnReadyRunnable(Z)V
 
@@ -131,7 +125,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/AuthenticatedActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->addAccount()V
 
@@ -140,8 +133,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/activities/AuthenticatedActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/AuthenticatedActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/AuthenticatedActivity;->mWaitingForUserInput:Z
 
@@ -180,7 +171,6 @@
 
 .method private checkTosAcceptanceAndContinue(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->displayTos()Z
 
@@ -206,7 +196,6 @@
 
 .method private static convertToStringArray([Landroid/accounts/Account;)[Ljava/lang/String;
     .locals 3
-    .param p0    # [Landroid/accounts/Account;
 
     array-length v2, p0
 
@@ -235,7 +224,6 @@
 
 .method public static createAddAccountOptions(Landroid/content/Context;)Landroid/os/Bundle;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -407,7 +395,6 @@
 
 .method private fireOnReadyRunnable(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -434,8 +421,6 @@
 
 .method private static getIndexOfAccount([Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -512,7 +497,6 @@
 
 .method private isAccountSwitchNeeded(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -541,7 +525,6 @@
 
 .method private loadPlusProfileAndContinue(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -585,7 +568,6 @@
 
 .method private loadTocAndContinue(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -610,7 +592,6 @@
 
 .method private restrictLimitedOrEduUserAndContinue(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/google/android/finsky/activities/AccessRestrictedActivity;->isLimitedOrEduUser()Z
 
@@ -633,7 +614,6 @@
 
 .method private setupAccountAndContinue(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->determineAccount()Ljava/lang/String;
 
@@ -810,7 +790,6 @@
 
 .method private startLoadingLibrariesAndContinue(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -841,7 +820,6 @@
 
 .method private waitForLibrariesAndContinue(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Lcom/google/android/finsky/activities/AuthenticatedActivity$10;
 
@@ -874,7 +852,6 @@
 # virtual methods
 .method protected authenticateOnNewIntent(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->startInitializationActions(Z)V
 
@@ -961,14 +938,12 @@
 
 .method protected handleAuthenticationError(Lcom/android/volley/VolleyError;)V
     .locals 0
-    .param p1    # Lcom/android/volley/VolleyError;
 
     return-void
 .end method
 
 .method protected handleUserAuthentication(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -1066,9 +1041,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -1192,7 +1164,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -1318,8 +1289,6 @@
 
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1373,7 +1342,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -1411,7 +1379,6 @@
 
 .method protected onNewIntentDirect(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -1477,7 +1444,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -1572,9 +1538,6 @@
 
 .method protected reinitialize(Landroid/accounts/Account;Landroid/content/Intent;Z)V
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -1690,7 +1653,6 @@
 
 .method protected runOrScheduleActiveStateRunnable(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/activities/AuthenticatedActivity;->mStateSaved:Z
 
@@ -1709,7 +1671,6 @@
 
 .method protected setJustReturnedFromDialog(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/activities/AuthenticatedActivity;->mJustReturnedFromDialog:Z
 
@@ -1764,7 +1725,6 @@
 
 .method protected startInitializationActions(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/AuthenticatedActivity;->showLoadingIndicator()V
 
@@ -1775,8 +1735,6 @@
 
 .method protected switchAccount(Ljava/lang/String;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -1834,7 +1792,6 @@
 
 .method public switchToAccount(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/AuthenticatedActivity$2;
 

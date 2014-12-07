@@ -50,8 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/visionobjects/resourcemanager/VOLanguagePackManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
     const/4 v0, 0x0
 
@@ -88,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/visionobjects/resourcemanager/RMHelper;)Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
     .locals 1
-    .param p0    # Lcom/visionobjects/resourcemanager/RMHelper;
 
     iget-object v0, p0, Lcom/visionobjects/resourcemanager/RMHelper;->mParent:Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -382,8 +379,6 @@
 
 .method public getResources(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x0
 

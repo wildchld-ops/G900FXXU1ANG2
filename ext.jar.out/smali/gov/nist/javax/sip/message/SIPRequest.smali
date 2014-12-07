@@ -167,7 +167,6 @@
 
 .method public static getCannonicalName(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lgov/nist/javax/sip/message/SIPRequest;->nameTable:Ljava/util/Hashtable;
 
@@ -196,7 +195,6 @@
 
 .method public static isDialogCreating(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lgov/nist/javax/sip/stack/SIPTransactionStack;->isDialogCreated(Ljava/lang/String;)Z
 
@@ -207,7 +205,6 @@
 
 .method public static isTargetRefresh(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lgov/nist/javax/sip/message/SIPRequest;->targetRefreshMethods:Ljava/util/Set;
 
@@ -220,7 +217,6 @@
 
 .method private final mustCopyRR(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -256,7 +252,6 @@
 
 .method private static putName(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lgov/nist/javax/sip/message/SIPRequest;->nameTable:Ljava/util/Hashtable;
 
@@ -917,7 +912,6 @@
 
 .method public createAckRequest(Lgov/nist/javax/sip/header/To;)Lgov/nist/javax/sip/message/SIPRequest;
     .locals 8
-    .param p1    # Lgov/nist/javax/sip/header/To;
 
     new-instance v4, Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -1115,7 +1109,6 @@
 
 .method public createBYERequest(Z)Lgov/nist/javax/sip/message/SIPRequest;
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lgov/nist/javax/sip/message/SIPRequest;->requestLine:Lgov/nist/javax/sip/header/RequestLine;
 
@@ -1321,7 +1314,6 @@
 
 .method public final createErrorAck(Lgov/nist/javax/sip/header/To;)Lgov/nist/javax/sip/message/SIPRequest;
     .locals 3
-    .param p1    # Lgov/nist/javax/sip/header/To;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/sip/SipException;,
@@ -1452,7 +1444,6 @@
 
 .method public createResponse(I)Lgov/nist/javax/sip/message/SIPResponse;
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Lgov/nist/javax/sip/message/SIPResponse;->getReasonPhrase(I)Ljava/lang/String;
 
@@ -1467,8 +1458,6 @@
 
 .method public createResponse(ILjava/lang/String;)Lgov/nist/javax/sip/message/SIPResponse;
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Lgov/nist/javax/sip/message/SIPResponse;
 
@@ -1641,8 +1630,6 @@
 
 .method public createSIPRequest(Lgov/nist/javax/sip/header/RequestLine;Z)Lgov/nist/javax/sip/message/SIPRequest;
     .locals 10
-    .param p1    # Lgov/nist/javax/sip/header/RequestLine;
-    .param p2    # Z
 
     new-instance v5, Lgov/nist/javax/sip/message/SIPRequest;
 
@@ -1978,7 +1965,6 @@
 
 .method public encodeAsBytes(Ljava/lang/String;)[B
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -2121,7 +2107,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -2171,7 +2156,6 @@
 
 .method public getDialogId(Z)Ljava/lang/String;
     .locals 5
-    .param p1    # Z
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/message/SIPMessage;->getCallId()Ljavax/sip/header/CallIdHeader;
 
@@ -2285,8 +2269,6 @@
 
 .method public getDialogId(ZLjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lgov/nist/javax/sip/message/SIPMessage;->getFrom()Ljavax/sip/header/FromHeader;
 
@@ -2645,7 +2627,6 @@
 
 .method public match(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -2803,7 +2784,6 @@
 
 .method public setInviteTransaction(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/SIPRequest;->inviteTransaction:Ljava/lang/Object;
 
@@ -2812,7 +2792,6 @@
 
 .method public setMessageChannel(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/SIPRequest;->messageChannel:Ljava/lang/Object;
 
@@ -2821,7 +2800,6 @@
 
 .method public setMethod(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2876,7 +2854,6 @@
 
 .method public setRequestLine(Lgov/nist/javax/sip/header/RequestLine;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/RequestLine;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/SIPRequest;->requestLine:Lgov/nist/javax/sip/header/RequestLine;
 
@@ -2920,7 +2897,6 @@
 
 .method public setRequestURI(Ljavax/sip/address/URI;)V
     .locals 2
-    .param p1    # Ljavax/sip/address/URI;
 
     if-nez p1, :cond_0
 
@@ -2959,7 +2935,6 @@
 
 .method public setSIPVersion(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2997,7 +2972,6 @@
 
 .method public setTransaction(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lgov/nist/javax/sip/message/SIPRequest;->transactionPointer:Ljava/lang/Object;
 

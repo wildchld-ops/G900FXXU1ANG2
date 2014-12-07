@@ -42,7 +42,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -171,7 +170,6 @@
 
 .method private static executeCommand(Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     sget-object v5, Lcom/android/server/ssrm/EmergencyMode;->TAG:Ljava/lang/String;
 
@@ -262,7 +260,6 @@
 # virtual methods
 .method onSettingChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/server/ssrm/DeviceStatus;->sEmergencyMode:Z
 

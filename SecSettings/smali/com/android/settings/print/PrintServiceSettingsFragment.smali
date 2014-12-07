@@ -78,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateUiForServiceState()V
 
@@ -87,7 +86,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->updateEmptyView()V
 
@@ -96,7 +94,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->announceSearchResult()V
 
@@ -105,7 +102,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -116,7 +112,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -127,7 +122,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -138,7 +132,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/print/PrintServiceSettingsFragment;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mComponentName:Landroid/content/ComponentName;
 
@@ -147,7 +140,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/print/PrintServiceSettingsFragment;)Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPrintersAdapter:Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
 
@@ -156,7 +148,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/print/PrintServiceSettingsFragment;)I
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     iget v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mLastUnfilteredItemCount:I
 
@@ -165,8 +156,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/print/PrintServiceSettingsFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mLastUnfilteredItemCount:I
 
@@ -175,7 +164,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/print/PrintServiceSettingsFragment;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mEnableWarningMessage:Ljava/lang/CharSequence;
 
@@ -184,8 +172,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/print/PrintServiceSettingsFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -194,7 +180,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/print/PrintServiceSettingsFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment;->mPreferenceKey:Ljava/lang/String;
 
@@ -203,9 +188,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/print/PrintServiceSettingsFragment;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/print/PrintServiceSettingsFragment;->onPreferenceToggled(Ljava/lang/String;Z)V
 
@@ -237,7 +219,6 @@
 
 .method private createAndAddActionBarToggleSwitch(Landroid/app/Activity;)Lcom/android/settings/print/PrintSettingsFragment$ToggleSwitch;
     .locals 7
-    .param p1    # Landroid/app/Activity;
 
     const/16 v6, 0x10
 
@@ -350,8 +331,6 @@
 
 .method private onPreferenceToggled(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
 
@@ -875,8 +854,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -940,7 +917,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1013,8 +989,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v6, 0x7f0b0755
 
@@ -1217,8 +1191,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 

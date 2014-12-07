@@ -103,8 +103,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/UserHandle;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v5, 0x0
 
@@ -269,8 +267,6 @@
 
 .method static synthetic access$000(Lcom/android/server/usb/UsbSettingsManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbSettingsManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/usb/UsbSettingsManager;->handlePackageUpdate(Ljava/lang/String;)V
 
@@ -279,8 +275,6 @@
 
 .method private clearCompatibleMatchesLocked(Ljava/lang/String;Lcom/android/server/usb/UsbSettingsManager$AccessoryFilter;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/usb/UsbSettingsManager$AccessoryFilter;
 
     const/4 v0, 0x0
 
@@ -328,8 +322,6 @@
 
 .method private clearCompatibleMatchesLocked(Ljava/lang/String;Lcom/android/server/usb/UsbSettingsManager$DeviceFilter;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/usb/UsbSettingsManager$DeviceFilter;
 
     const/4 v0, 0x0
 
@@ -377,7 +369,6 @@
 
 .method private clearPackageDefaultsLocked(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -504,8 +495,6 @@
 
 .method private final getAccessoryMatchesLocked(Landroid/hardware/usb/UsbAccessory;Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -571,8 +560,6 @@
 
 .method private final getDeviceMatchesLocked(Landroid/hardware/usb/UsbDevice;Landroid/content/Intent;)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -638,8 +625,6 @@
 
 .method private grantAccessoryPermissionLocked(Landroid/hardware/usb/UsbAccessory;I)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -669,8 +654,6 @@
 
 .method private grantDevicePermissionLocked(Landroid/hardware/usb/UsbDevice;I)V
     .locals 4
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -704,7 +687,6 @@
 
 .method private handlePackageUpdate(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/usb/UsbSettingsManager;->mLock:Ljava/lang/Object;
 
@@ -826,9 +808,6 @@
 
 .method private handlePackageUpdateLocked(Ljava/lang/String;Landroid/content/pm/ActivityInfo;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -989,10 +968,6 @@
 
 .method private packageMatchesLocked(Landroid/content/pm/ResolveInfo;Ljava/lang/String;Landroid/hardware/usb/UsbDevice;Landroid/hardware/usb/UsbAccessory;)Z
     .locals 9
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/hardware/usb/UsbDevice;
-    .param p4    # Landroid/hardware/usb/UsbAccessory;
 
     const/4 v5, 0x0
 
@@ -1189,7 +1164,6 @@
 
 .method private readPreference(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1403,9 +1377,6 @@
 
 .method private requestPermissionDialog(Landroid/content/Intent;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1559,10 +1530,6 @@
 
 .method private resolveActivity(Landroid/content/Intent;Ljava/util/ArrayList;Ljava/lang/String;Landroid/hardware/usb/UsbDevice;Landroid/hardware/usb/UsbAccessory;)V
     .locals 12
-    .param p1    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/hardware/usb/UsbDevice;
-    .param p5    # Landroid/hardware/usb/UsbAccessory;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2325,7 +2292,6 @@
 # virtual methods
 .method public accessoryAttached(Landroid/hardware/usb/UsbAccessory;)V
     .locals 7
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -2386,7 +2352,6 @@
 
 .method public accessoryDetached(Landroid/hardware/usb/UsbAccessory;)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     iget-object v1, p0, Lcom/android/server/usb/UsbSettingsManager;->mAccessoryPermissionMap:Ljava/util/HashMap;
 
@@ -2413,7 +2378,6 @@
 
 .method public checkPermission(Landroid/hardware/usb/UsbAccessory;)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     invoke-virtual {p0, p1}, Lcom/android/server/usb/UsbSettingsManager;->hasPermission(Landroid/hardware/usb/UsbAccessory;)Z
 
@@ -2451,7 +2415,6 @@
 
 .method public checkPermission(Landroid/hardware/usb/UsbDevice;)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     invoke-virtual {p0, p1}, Lcom/android/server/usb/UsbSettingsManager;->hasPermission(Landroid/hardware/usb/UsbDevice;)Z
 
@@ -2489,7 +2452,6 @@
 
 .method public clearDefaults(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/usb/UsbSettingsManager;->mLock:Ljava/lang/Object;
 
@@ -2521,7 +2483,6 @@
 
 .method public deviceAttached(Landroid/hardware/usb/UsbDevice;)V
     .locals 7
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -2608,7 +2569,6 @@
 
 .method public deviceDetached(Landroid/hardware/usb/UsbDevice;)V
     .locals 4
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     iget-object v1, p0, Lcom/android/server/usb/UsbSettingsManager;->mDevicePermissionMap:Ljava/util/HashMap;
 
@@ -2661,8 +2621,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;)V
     .locals 10
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
 
     iget-object v8, p0, Lcom/android/server/usb/UsbSettingsManager;->mLock:Ljava/lang/Object;
 
@@ -3044,8 +3002,6 @@
 
 .method public grantAccessoryPermission(Landroid/hardware/usb/UsbAccessory;I)V
     .locals 2
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/usb/UsbSettingsManager;->mLock:Ljava/lang/Object;
 
@@ -3070,8 +3026,6 @@
 
 .method public grantDevicePermission(Landroid/hardware/usb/UsbDevice;I)V
     .locals 2
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/usb/UsbSettingsManager;->mLock:Ljava/lang/Object;
 
@@ -3096,7 +3050,6 @@
 
 .method public hasDefaults(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -3161,7 +3114,6 @@
 
 .method public hasPermission(Landroid/hardware/usb/UsbAccessory;)Z
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     iget-object v3, p0, Lcom/android/server/usb/UsbSettingsManager;->mLock:Ljava/lang/Object;
 
@@ -3256,7 +3208,6 @@
 
 .method public hasPermission(Landroid/hardware/usb/UsbDevice;)Z
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     iget-object v3, p0, Lcom/android/server/usb/UsbSettingsManager;->mLock:Ljava/lang/Object;
 
@@ -3355,9 +3306,6 @@
 
 .method public requestPermission(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -3414,9 +3362,6 @@
 
 .method public requestPermission(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 8
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     const/4 v7, 0x1
 
@@ -3605,8 +3550,6 @@
 
 .method public setAccessoryPackage(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -3692,8 +3635,6 @@
 
 .method public setDevicePackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 

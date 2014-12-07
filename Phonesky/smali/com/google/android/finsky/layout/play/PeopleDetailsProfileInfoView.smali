@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -51,8 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/IdentifiableFrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -73,7 +70,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;->mCircles:Ljava/util/ArrayList;
 
@@ -82,8 +78,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;->mCircles:Ljava/util/ArrayList;
 
@@ -92,7 +86,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;)Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;->mCircleStatusButton:Lcom/google/android/finsky/layout/play/PlayPersonFollowButton;
 
@@ -101,7 +94,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;->mPlusDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -110,9 +102,6 @@
 
 .method private launchGPlusProfileView(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;->mPlusDoc:Lcom/google/android/finsky/api/model/Document;
 
@@ -167,8 +156,6 @@
 # virtual methods
 .method public bind(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     const/16 v10, 0x8
 
@@ -350,7 +337,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -535,11 +521,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 20
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/layout/play/PeopleDetailsProfileInfoView;->getWidth()I
 
@@ -801,8 +782,6 @@
 
 .method protected onMeasure(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v11, 0x40000000
 

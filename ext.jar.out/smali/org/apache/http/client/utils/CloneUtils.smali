@@ -14,7 +14,6 @@
 
 .method public static clone(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
-    .param p0    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/CloneNotSupportedException;

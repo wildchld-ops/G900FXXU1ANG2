@@ -32,7 +32,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -219,7 +218,6 @@
 
 .method public setCallId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/extensions/Join;->callId:Ljava/lang/String;
 
@@ -228,7 +226,6 @@
 
 .method public setCallIdentifier(Lgov/nist/javax/sip/header/CallIdentifier;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/header/CallIdentifier;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/extensions/Join;->callIdentifier:Lgov/nist/javax/sip/header/CallIdentifier;
 
@@ -237,7 +234,6 @@
 
 .method public setFromTag(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -287,7 +283,6 @@
 
 .method public setToTag(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -337,7 +332,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

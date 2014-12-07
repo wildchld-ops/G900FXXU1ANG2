@@ -40,7 +40,6 @@
 # virtual methods
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v1, p0, Lcom/google/android/finsky/activities/SimpleAlertDialog$1;->val$alertDialog:Landroid/app/AlertDialog;
 

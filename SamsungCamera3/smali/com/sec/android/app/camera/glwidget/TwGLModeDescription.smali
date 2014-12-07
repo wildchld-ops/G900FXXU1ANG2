@@ -437,11 +437,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFF)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -839,7 +834,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLModeDescription;)Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLModeDescription;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeDescription;->mData:Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
 
@@ -850,7 +844,6 @@
 # virtual methods
 .method public getDescription(I)Ljava/lang/String;
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1279,8 +1272,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -1384,7 +1375,6 @@
 
 .method public setDescription(Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeDescription;->mDescriptionGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -1399,8 +1389,6 @@
 
 .method public setDescription(Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;I)V
     .locals 13
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
-    .param p2    # I
 
     const/4 v12, 0x2
 

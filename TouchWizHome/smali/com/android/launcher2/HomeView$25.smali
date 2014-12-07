@@ -45,7 +45,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 6
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v5, 0x0
 
@@ -105,7 +104,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 6
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v2, p0, Lcom/android/launcher2/HomeView$25;->this$0:Lcom/android/launcher2/HomeView;
 

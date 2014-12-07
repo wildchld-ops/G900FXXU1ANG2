@@ -52,8 +52,6 @@
 # virtual methods
 .method enoughTimePassed(JJ)Z
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     sget-object v0, Lcom/google/android/finsky/config/G;->vendingBillingCountriesRefreshMs:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -86,8 +84,6 @@
 
 .method public run(Ljava/lang/String;Ljava/lang/Runnable;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/GetBillingCountriesAction;->canSkip()Z
 

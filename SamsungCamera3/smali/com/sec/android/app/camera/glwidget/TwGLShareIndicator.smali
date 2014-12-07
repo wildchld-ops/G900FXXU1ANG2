@@ -22,9 +22,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, 0x0
 
@@ -99,7 +96,6 @@
 # virtual methods
 .method public setShareStatus(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x5
 

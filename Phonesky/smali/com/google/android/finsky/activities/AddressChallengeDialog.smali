@@ -14,9 +14,6 @@
 
 .method public static getIntent(ILcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 1
-    .param p0    # I
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$AddressChallenge;
-    .param p2    # Landroid/os/Bundle;
 
     const-class v0, Lcom/google/android/finsky/activities/AddressChallengeDialog;
 
@@ -31,7 +28,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 

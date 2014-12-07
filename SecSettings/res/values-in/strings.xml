@@ -1380,7 +1380,7 @@ Anda juga dapat menampilkan atau menyembunyikan gagang multi window dengan menek
     <string name="usb_tethering_errored_subtext">Kesalahan penambatan USB</string>
     <string name="usb_tethering_on_during_sidesync_popup">Penambatan USB tidak bisa dinonaktifkan saat menggunakan SideSync. Menonaktifkan penambatan USB akan menonaktifkan SideSync.</string>
     <string name="usb_tethering_off_during_sidesync_popup">Penambatan USB tidak bisa diaktifkan saat menggunakan SideSync. Mengaktifkan penambatan USB akan menonaktifkan SideSync.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Penambatan Bluetooth</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Penambatan Bluetooth</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Membagi koneksi Internet perangkat ini…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Koneksi Internet perangkat dibagi dengan 1 perangkat</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Koneksi Internet perangkat dibagi dengan %d perangkat</string>

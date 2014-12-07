@@ -114,10 +114,6 @@
 
 .method public static configure(ZILcom/nuance/connect/util/Logger$OutputMode;Ljava/io/File;)V
     .locals 3
-    .param p0    # Z
-    .param p1    # I
-    .param p2    # Lcom/nuance/connect/util/Logger$OutputMode;
-    .param p3    # Ljava/io/File;
 
     sput-boolean p0, Lcom/nuance/connect/util/Logger;->developerLogEnabled:Z
 
@@ -231,7 +227,6 @@
 
 .method public static getLog(Lcom/nuance/connect/util/Logger$LoggerType;)Lcom/nuance/connect/util/Logger$Log;
     .locals 2
-    .param p0    # Lcom/nuance/connect/util/Logger$LoggerType;
 
     sget-object v0, Lcom/nuance/connect/util/Logger$1;->$SwitchMap$com$nuance$connect$util$Logger$LoggerType:[I
 
@@ -263,8 +258,6 @@
 
 .method public static getLog(Lcom/nuance/connect/util/Logger$LoggerType;Ljava/lang/String;)Lcom/nuance/connect/util/Logger$Log;
     .locals 3
-    .param p0    # Lcom/nuance/connect/util/Logger$LoggerType;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

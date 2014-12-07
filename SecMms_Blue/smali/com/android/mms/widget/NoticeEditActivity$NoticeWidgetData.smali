@@ -49,9 +49,6 @@
 
 .method constructor <init>(Lcom/android/mms/widget/NoticeEditActivity;I[BLjava/lang/String;)V
     .locals 0
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/widget/NoticeEditActivity$NoticeWidgetData;->this$0:Lcom/android/mms/widget/NoticeEditActivity;
 

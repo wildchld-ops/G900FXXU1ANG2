@@ -36,8 +36,6 @@
 # virtual methods
 .method public onSetContentView(Landroid/view/View;Landroid/widget/HoverPopupWindow;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/HoverPopupWindow;
 
     const/4 v0, 0x1
 

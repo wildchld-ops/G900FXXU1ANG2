@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->runTheadRecognize()V
 
@@ -69,8 +68,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;Z)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->processEnterInput(Z)Z
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->clearHwrPath()V
 
@@ -90,7 +86,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
 
     iget v0, p0, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->mStrokeCount:I
 
@@ -99,8 +94,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->mStrokeCount:I
 
@@ -109,7 +102,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->startRecognizeAllTimer()V
 
@@ -118,7 +110,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->recognizeAll()V
 
@@ -127,8 +118,6 @@
 
 .method static synthetic access$602(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->mThreadRunning:Z
 
@@ -137,7 +126,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;)Lcom/diotek/ime/framework/engine/dhwr/RecognizedResultsController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->mRecognizedStringsController:Lcom/diotek/ime/framework/engine/dhwr/RecognizedResultsController;
 
@@ -146,7 +134,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/framework/input/CompleteHwrInputModule;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/CompleteHwrInputModule;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->startRecogThreadTimer()V
 
@@ -508,7 +495,6 @@
 
 .method private processEnterInput(Z)Z
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->mRecognizedStringsController:Lcom/diotek/ime/framework/engine/dhwr/RecognizedResultsController;
 
@@ -627,8 +613,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x0
 
@@ -1218,8 +1202,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 8
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v7, 0x7
 
@@ -1365,8 +1347,6 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1555,9 +1535,6 @@
 
 .method public onHwrTouchCancel(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1572,9 +1549,6 @@
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget v0, p0, Lcom/diotek/ime/framework/input/CompleteHwrInputModule;->mStrokeCount:I
 
@@ -1597,9 +1571,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1614,9 +1585,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v1, 0x1
 
@@ -1629,7 +1597,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -1666,8 +1633,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 16
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {}, Lcom/diotek/ime/framework/input/IndianInputModule;->getInstance()Lcom/diotek/ime/framework/input/IndianInputModule;
 
@@ -2460,8 +2425,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x1
 
@@ -2735,7 +2698,6 @@
 
 .method protected replaceSpaceToSymbol(Ljava/lang/StringBuilder;)V
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v4, 0x0
 

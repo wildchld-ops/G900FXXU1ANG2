@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;Landroid/content/Context;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment$ListAdapter;->this$0:Lcom/samsung/contacts/interactions/InteractionGroupPickerFragment;
 
@@ -40,9 +39,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const v8, 0x7f0b020c
 

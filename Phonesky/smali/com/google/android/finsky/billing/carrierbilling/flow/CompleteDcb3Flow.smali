@@ -186,11 +186,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/billing/BillingFlowListener;Lcom/google/android/finsky/analytics/FinskyEventLog;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p4    # Lcom/google/android/finsky/analytics/FinskyEventLog;
-    .param p5    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/google/android/finsky/billing/BillingLocator;->getCarrierBillingStorage()Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -215,12 +210,6 @@
 
 .method constructor <init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/billing/BillingFlowListener;Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;Lcom/google/android/finsky/analytics/FinskyEventLog;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/api/DfeApi;
-    .param p3    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p4    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
-    .param p5    # Lcom/google/android/finsky/analytics/FinskyEventLog;
-    .param p6    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -380,8 +369,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteDcb3Flow;Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteDcb3Flow;
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteDcb3Flow;->mUpdateInstrumentResponse:Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
@@ -409,7 +396,6 @@
 
 .method private encryptPassword(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -680,7 +666,6 @@
 
 .method createAndShowTosFragment(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteDcb3Flow;->mDfeApi:Lcom/google/android/finsky/api/DfeApi;
 
@@ -737,8 +722,6 @@
 
 .method public onCarrierBillingPasswordResult(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingPasswordDialogFragment$CarrierBillingPasswordResultListener$PasswordResult;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingPasswordDialogFragment$CarrierBillingPasswordResultListener$PasswordResult;
-    .param p2    # Ljava/lang/String;
 
     const v5, 0x7f09007c
 
@@ -859,7 +842,6 @@
 
 .method public onCarrierTosResult(Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener$TosResult;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierTosDialogFragment$CarrierTosResultListener$TosResult;
 
     const/4 v2, 0x0
 
@@ -942,7 +924,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteDcb3Flow;->dissmissPasswordFragment()V
 
@@ -974,7 +955,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;
 
     const/4 v2, 0x1
 
@@ -1094,7 +1074,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/CarrierBilling$VerifyAssociationResponse;
 
@@ -1353,7 +1332,6 @@
 
 .method public resumeFromSavedState(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteDcb3Flow;->mState:Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteDcb3Flow$State;
 
@@ -1549,7 +1527,6 @@
 
 .method public saveState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "state"
 

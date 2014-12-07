@@ -36,8 +36,6 @@
 # virtual methods
 .method public onRate(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 

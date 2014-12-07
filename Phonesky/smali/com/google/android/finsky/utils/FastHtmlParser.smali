@@ -6,7 +6,6 @@
 # direct methods
 .method public static fromHtml(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v8, -0x1
 
@@ -240,9 +239,6 @@
 
 .method private static replace(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 

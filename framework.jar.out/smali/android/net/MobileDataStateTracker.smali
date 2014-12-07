@@ -331,8 +331,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -401,8 +399,6 @@
 
 .method static synthetic access$102(Landroid/net/MobileDataStateTracker;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
     .locals 0
-    .param p0    # Landroid/net/MobileDataStateTracker;
-    .param p1    # Landroid/telephony/SignalStrength;
 
     iput-object p1, p0, Landroid/net/MobileDataStateTracker;->mSignalStrength:Landroid/telephony/SignalStrength;
 
@@ -411,8 +407,6 @@
 
 .method static synthetic access$202(Landroid/net/MobileDataStateTracker;Lcom/android/internal/util/AsyncChannel;)Lcom/android/internal/util/AsyncChannel;
     .locals 0
-    .param p0    # Landroid/net/MobileDataStateTracker;
-    .param p1    # Lcom/android/internal/util/AsyncChannel;
 
     iput-object p1, p0, Landroid/net/MobileDataStateTracker;->mDataConnectionTrackerAc:Lcom/android/internal/util/AsyncChannel;
 
@@ -421,8 +415,6 @@
 
 .method static synthetic access$300(Landroid/net/MobileDataStateTracker;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Landroid/net/MobileDataStateTracker;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Landroid/net/MobileDataStateTracker;->updateLinkProperitesAndCapatilities(Landroid/content/Intent;)V
 
@@ -431,7 +423,6 @@
 
 .method static synthetic access$400(Landroid/net/MobileDataStateTracker;)Landroid/net/SamplingDataTracker;
     .locals 1
-    .param p0    # Landroid/net/MobileDataStateTracker;
 
     iget-object v0, p0, Landroid/net/MobileDataStateTracker;->mSamplingDataTracker:Landroid/net/SamplingDataTracker;
 
@@ -440,7 +431,6 @@
 
 .method private static getNetworkDataEntry(I)Landroid/net/MobileDataStateTracker$NetworkDataEntry;
     .locals 7
-    .param p0    # I
 
     sget-object v0, Landroid/net/MobileDataStateTracker;->mTheoreticalBWTable:[Landroid/net/MobileDataStateTracker$NetworkDataEntry;
 
@@ -499,8 +489,6 @@
 
 .method private static getNormalizedSignalStrength(ILandroid/telephony/SignalStrength;)I
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/telephony/SignalStrength;
 
     packed-switch p0, :pswitch_data_0
 
@@ -583,7 +571,6 @@
 
 .method public static networkTypeToApnType(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -735,8 +722,6 @@
 
 .method private setEnableApn(Ljava/lang/String;Z)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -904,7 +889,6 @@
 
 .method protected static sloge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "MobileDataStateTracker"
 
@@ -915,7 +899,6 @@
 
 .method private updateLinkProperitesAndCapatilities(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "linkProperties"
 
@@ -990,7 +973,6 @@
 # virtual methods
 .method public addStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/MobileDataStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -1007,7 +989,6 @@
 
 .method public captivePortalCheckCompleted(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/MobileDataStateTracker;->mIsCaptivePortal:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -1035,7 +1016,6 @@
 
 .method public defaultRouteSet(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/MobileDataStateTracker;->mDefaultRouteSet:Z
 
@@ -1044,7 +1024,6 @@
 
 .method public enableMobileProvisioning(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1310,7 +1289,6 @@
 
 .method protected getPhoneService(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
 
@@ -1692,7 +1670,6 @@
 
 .method protected log(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MobileDataStateTracker"
 
@@ -1727,7 +1704,6 @@
 
 .method protected loge(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MobileDataStateTracker"
 
@@ -1762,7 +1738,6 @@
 
 .method public privateDnsRouteSet(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/MobileDataStateTracker;->mPrivateDnsRouteSet:Z
 
@@ -1842,7 +1817,6 @@
 
 .method public removeStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/MobileDataStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -1853,7 +1827,6 @@
 
 .method public setDependencyMet(Z)V
     .locals 5
-    .param p1    # Z
 
     const-string v3, "apnType"
 
@@ -1943,9 +1916,6 @@
 
 .method protected setDetailedState(Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2054,7 +2024,6 @@
 
 .method public setEnableFailFastMobileData(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2096,7 +2065,6 @@
 
 .method public setPolicyDataEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2150,7 +2118,6 @@
 
 .method public setRadio(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -2310,7 +2277,6 @@
 
 .method public setTeardownRequested(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/MobileDataStateTracker;->mTeardownRequested:Z
 
@@ -2319,7 +2285,6 @@
 
 .method public setUserDataEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2367,8 +2332,6 @@
 
 .method public setUserDataEnableEx(ZI)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2397,8 +2360,6 @@
 
 .method public startMonitoring(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     iput-object p2, p0, Landroid/net/MobileDataStateTracker;->mTarget:Landroid/os/Handler;
 
@@ -2465,7 +2426,6 @@
 
 .method public startSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 1
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     iget-object v0, p0, Landroid/net/MobileDataStateTracker;->mSamplingDataTracker:Landroid/net/SamplingDataTracker;
 
@@ -2476,7 +2436,6 @@
 
 .method public stopSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 1
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     iget-object v0, p0, Landroid/net/MobileDataStateTracker;->mSamplingDataTracker:Landroid/net/SamplingDataTracker;
 
@@ -2487,7 +2446,6 @@
 
 .method public supplyMessenger(Landroid/os/Messenger;)V
     .locals 3
-    .param p1    # Landroid/os/Messenger;
 
     new-instance v0, Lcom/android/internal/util/AsyncChannel;
 

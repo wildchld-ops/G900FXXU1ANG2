@@ -38,8 +38,6 @@
 
 .method public constructor <init>(Lcom/google/android/vending/remoting/api/VendingApiContext;Z)V
     .locals 3
-    .param p1    # Lcom/google/android/vending/remoting/api/VendingApiContext;
-    .param p2    # Z
 
     sget v0, Lcom/google/android/vending/remoting/api/VendingRetryPolicy;->VENDING_TIMEOUT_MS:I
 
@@ -60,7 +58,6 @@
 # virtual methods
 .method public retry(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/volley/VolleyError;

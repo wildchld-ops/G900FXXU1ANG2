@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Landroid/content/Context;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
 
     invoke-direct {p0, p2, p3}, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$AsyncSuggestionAuthority;-><init>(Ljava/lang/String;Landroid/content/Context;)V
 
@@ -48,7 +45,6 @@
 
 .method private constructUrl(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$ThirdPartySearchSuggestor;->BASE_URI:Landroid/net/Uri;
 
@@ -158,7 +154,6 @@
 # virtual methods
 .method protected makeRequest(Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/providers/RecentSuggestionsProvider$OnCompleteListener;
 
     iget-object v1, p0, Lcom/google/android/finsky/providers/RecentSuggestionsProvider$ThirdPartySearchSuggestor;->mQuery:Ljava/lang/String;
 

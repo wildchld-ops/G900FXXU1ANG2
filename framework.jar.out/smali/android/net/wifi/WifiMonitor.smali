@@ -434,8 +434,6 @@
 
 .method public constructor <init>(Lcom/android/internal/util/StateMachine;Landroid/net/wifi/WifiNative;)V
     .locals 2
-    .param p1    # Lcom/android/internal/util/StateMachine;
-    .param p2    # Landroid/net/wifi/WifiNative;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -483,7 +481,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/WifiMonitor;)Z
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiMonitor;
 
     iget-boolean v0, p0, Landroid/net/wifi/WifiMonitor;->mMonitoring:Z
 
@@ -492,8 +489,6 @@
 
 .method static synthetic access$102(Landroid/net/wifi/WifiMonitor;Z)Z
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiMonitor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiMonitor;->mMonitoring:Z
 
@@ -502,7 +497,6 @@
 
 .method static synthetic access$200(Landroid/net/wifi/WifiMonitor;)Lcom/android/internal/util/StateMachine;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiMonitor;
 
     iget-object v0, p0, Landroid/net/wifi/WifiMonitor;->mWifiStateMachine:Lcom/android/internal/util/StateMachine;
 
@@ -511,7 +505,6 @@
 
 .method static synthetic access$300(Landroid/net/wifi/WifiMonitor;)Landroid/net/wifi/WifiNative;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiMonitor;
 
     iget-object v0, p0, Landroid/net/wifi/WifiMonitor;->mWifiNative:Landroid/net/wifi/WifiNative;
 
@@ -546,7 +539,6 @@
 # virtual methods
 .method public killSupplicant(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;->getMonitor()Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;
 

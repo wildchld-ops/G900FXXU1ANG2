@@ -14,10 +14,6 @@
 # direct methods
 .method static synthetic access$000(ZLcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/GetTocHelper$Listener;)V
     .locals 0
-    .param p0    # Z
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/utils/GetTocHelper$Listener;
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/finsky/utils/GetTocHelper;->doGetToc(ZLcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/GetTocHelper$Listener;)V
 
@@ -26,10 +22,6 @@
 
 .method static synthetic access$100(ZLcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/GetTocHelper$Listener;)V
     .locals 0
-    .param p0    # Z
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/utils/GetTocHelper$Listener;
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/finsky/utils/GetTocHelper;->doRequestToken(ZLcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/GetTocHelper$Listener;)V
 
@@ -38,7 +30,6 @@
 
 .method public static changedDeviceConfigToken(Lcom/google/android/finsky/api/DfeApi;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
 
     invoke-interface {p0}, Lcom/google/android/finsky/api/DfeApi;->invalidateTocCache()V
 
@@ -47,10 +38,6 @@
 
 .method private static doGetToc(ZLcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/GetTocHelper$Listener;)V
     .locals 3
-    .param p0    # Z
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/utils/GetTocHelper$Listener;
 
     invoke-static {}, Lcom/google/android/finsky/utils/DeviceConfigurationHelper;->getToken()Ljava/lang/String;
 
@@ -71,10 +58,6 @@
 
 .method private static doRequestToken(ZLcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/GetTocHelper$Listener;)V
     .locals 1
-    .param p0    # Z
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/utils/GetTocHelper$Listener;
 
     new-instance v0, Lcom/google/android/finsky/utils/GetTocHelper$2;
 
@@ -87,9 +70,6 @@
 
 .method public static getToc(Lcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/GetTocHelper$Listener;)V
     .locals 2
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
-    .param p1    # Z
-    .param p2    # Lcom/google/android/finsky/utils/GetTocHelper$Listener;
 
     invoke-static {}, Lcom/google/android/finsky/utils/DeviceConfigurationHelper;->getToken()Ljava/lang/String;
 
@@ -110,7 +90,6 @@
 
 .method public static getTocBlocking(Lcom/google/android/finsky/api/DfeApi;)Lcom/google/android/finsky/protos/Toc$TocResponse;
     .locals 4
-    .param p0    # Lcom/google/android/finsky/api/DfeApi;
 
     const/4 v3, 0x0
 

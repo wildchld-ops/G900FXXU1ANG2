@@ -62,7 +62,6 @@
 
 .method private declared-synchronized doGet(Ljava/lang/Long;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -201,7 +200,6 @@
 # virtual methods
 .method public declared-synchronized cancel(Z)Z
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -284,8 +282,6 @@
 
 .method public get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -386,7 +382,6 @@
 
 .method public declared-synchronized onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     monitor-enter p0
 

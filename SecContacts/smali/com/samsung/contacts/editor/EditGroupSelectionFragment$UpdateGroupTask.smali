@@ -43,9 +43,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/editor/EditGroupSelectionFragment;Landroid/content/Context;JZ)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # J
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/samsung/contacts/editor/EditGroupSelectionFragment$UpdateGroupTask;->this$0:Lcom/samsung/contacts/editor/EditGroupSelectionFragment;
 
@@ -62,7 +59,6 @@
 
 .method private getGroupValues(Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -355,7 +351,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/util/ArrayList;
 
@@ -468,7 +463,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -479,7 +473,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 1
-    .param p1    # Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionFragment$UpdateGroupTask;->mProgress:Landroid/app/ProgressDialog;
 

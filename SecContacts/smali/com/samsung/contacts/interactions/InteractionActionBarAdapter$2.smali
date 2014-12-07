@@ -36,8 +36,6 @@
 # virtual methods
 .method public onNavigationItemSelected(IJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionActionBarAdapter$2;->this$0:Lcom/samsung/contacts/interactions/InteractionActionBarAdapter;
 

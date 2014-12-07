@@ -52,7 +52,6 @@
 # virtual methods
 .method enableDBurstMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const-string v3, "SSRMv2:MtpObexBooster"
 
@@ -241,7 +240,6 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -360,9 +358,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/server/ssrm/fgapps/FgAppListener;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/server/ssrm/fgapps/FgAppListener;->onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
 
@@ -488,9 +483,6 @@
 
 .method public onStatusNotiReceived(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "MTP_fileTransfer"
 
@@ -534,7 +526,6 @@
 
 .method onUsb30StatusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/ssrm/fgapps/MtpObexBooster;->mUsb30Enabled:Z
 
@@ -550,7 +541,6 @@
 
 .method public onUsbConnectionStatusChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 

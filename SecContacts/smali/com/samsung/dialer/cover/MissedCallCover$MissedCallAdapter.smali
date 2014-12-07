@@ -31,9 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/dialer/cover/MissedCallCover;Landroid/content/Context;I[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;)V
     .locals 4
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
     const/4 v3, 0x0
 
@@ -99,7 +96,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/dialer/cover/MissedCallCover$MissedCallAdapter;->mDetails:[Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
@@ -110,7 +106,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -119,9 +114,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 15
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const-string v10, "MissedCallCover"
 

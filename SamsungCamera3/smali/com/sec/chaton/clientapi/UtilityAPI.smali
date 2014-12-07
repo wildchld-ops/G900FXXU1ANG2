@@ -22,7 +22,6 @@
 
 .method static getChatONVersionCode(Landroid/content/Context;)I
     .locals 6
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -67,8 +66,6 @@
 
 .method static varargs isAvailableAPI(Landroid/content/Context;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -139,7 +136,6 @@
 
 .method public static isChatONActivated(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
     .annotation runtime Lcom/sec/chaton/clientapi/API;
         description = "1.10.3"
         versionCode = 0xa7dcbd
@@ -223,7 +219,6 @@
 
 .method public static isChatONInstalled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -268,7 +263,6 @@
 
 .method public static openChatONDownloadPage(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 

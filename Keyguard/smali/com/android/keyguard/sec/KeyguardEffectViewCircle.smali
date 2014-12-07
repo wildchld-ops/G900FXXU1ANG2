@@ -133,7 +133,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/16 v7, 0x258
 
@@ -246,7 +245,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->isAffordanceLoop:Z
 
@@ -255,8 +253,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->isAffordanceLoop:Z
 
@@ -265,7 +261,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Z
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-boolean v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->isAnimationOn:Z
 
@@ -274,7 +269,6 @@
 
 .method static synthetic access$1000(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->playUnlockAffordance()V
 
@@ -283,8 +277,6 @@
 
 .method static synthetic access$102(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->isAnimationOn:Z
 
@@ -293,8 +285,6 @@
 
 .method static synthetic access$1102(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->isPlayAffordance:Z
 
@@ -303,8 +293,6 @@
 
 .method static synthetic access$1202(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->affordanceRunnable:Ljava/lang/Runnable;
 
@@ -313,7 +301,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->mCircleInPress:Landroid/widget/ImageView;
 
@@ -322,7 +309,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->arrow:Landroid/widget/ImageView;
 
@@ -331,7 +317,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->arrowContainer:Landroid/widget/LinearLayout;
 
@@ -340,7 +325,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Landroid/view/animation/AlphaAnimation;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->mCircleCenterAlphaAnimUp:Landroid/view/animation/AlphaAnimation;
 
@@ -349,7 +333,6 @@
 
 .method static synthetic access$600(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->mCircleCenter:Landroid/widget/ImageView;
 
@@ -358,7 +341,6 @@
 
 .method static synthetic access$700(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Landroid/animation/AnimatorSet;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->circleUpSet:Landroid/animation/AnimatorSet;
 
@@ -367,7 +349,6 @@
 
 .method static synthetic access$800(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->startCircleAnimation()V
 
@@ -376,7 +357,6 @@
 
 .method static synthetic access$900(Lcom/android/keyguard/sec/KeyguardEffectViewCircle;)Landroid/view/animation/AnimationSet;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewCircle;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewCircle;->arrowFadeSet:Landroid/view/animation/AnimationSet;
 
@@ -889,7 +869,6 @@
 
 .method private getUnlockscreenLockImageIdAt(D)I
     .locals 4
-    .param p1    # D
 
     const/16 v2, 0x1c
 
@@ -1207,8 +1186,6 @@
 
 .method private setInnerCircle(Landroid/view/View;D)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # D
 
     const-wide v1, 0x406fe00000000000L
 
@@ -1395,8 +1372,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 38
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -2980,8 +2955,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -2990,8 +2963,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     return-void
 .end method
@@ -3022,7 +2993,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -3095,7 +3065,6 @@
 
 .method public setCenterImage(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-wide/16 v0, 0x0
 
@@ -3106,8 +3075,6 @@
 
 .method protected setCenterImage(Landroid/view/View;D)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # D
 
     const/4 v2, 0x1
 
@@ -3147,7 +3114,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

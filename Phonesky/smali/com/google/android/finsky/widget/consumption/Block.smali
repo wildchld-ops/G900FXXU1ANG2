@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,7 +55,6 @@
 # virtual methods
 .method public getHeight(Landroid/content/Context;)I
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget v0, p0, Lcom/google/android/finsky/widget/consumption/Block;->mHeightRes:I
 
@@ -69,7 +67,6 @@
 
 .method public getImageHeightRes(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/Block;->mChildResArray:Landroid/util/SparseArray;
 
@@ -98,7 +95,6 @@
 
 .method public getImageWidthRes(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/Block;->mChildResArray:Landroid/util/SparseArray;
 
@@ -159,7 +155,6 @@
 
 .method public getWidth(Landroid/content/Context;)I
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget v0, p0, Lcom/google/android/finsky/widget/consumption/Block;->mWidthRes:I
 
@@ -226,7 +221,6 @@
 
 .method public hosting(I)Lcom/google/android/finsky/widget/consumption/Block;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/widget/consumption/Block;->mNumImages:I
 
@@ -235,9 +229,6 @@
 
 .method public hosting(III)Lcom/google/android/finsky/widget/consumption/Block;
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p1, p0, Lcom/google/android/finsky/widget/consumption/Block;->mNumImages:I
 
@@ -250,7 +241,6 @@
 
 .method public limitRowStartTo(I)Lcom/google/android/finsky/widget/consumption/Block;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/widget/consumption/Block;->mMaxRowStartCount:I
 
@@ -269,7 +259,6 @@
 
 .method public replaceLastOccurenceInRowWith(Lcom/google/android/finsky/widget/consumption/Block;)Lcom/google/android/finsky/widget/consumption/Block;
     .locals 0
-    .param p1    # Lcom/google/android/finsky/widget/consumption/Block;
 
     iput-object p1, p0, Lcom/google/android/finsky/widget/consumption/Block;->mLastInRowReplacement:Lcom/google/android/finsky/widget/consumption/Block;
 
@@ -278,8 +267,6 @@
 
 .method public sized(II)Lcom/google/android/finsky/widget/consumption/Block;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/google/android/finsky/widget/consumption/Block;->mWidthRes:I
 
@@ -306,9 +293,6 @@
 
 .method public withChild(III)Lcom/google/android/finsky/widget/consumption/Block;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/widget/consumption/Block;->mChildResArray:Landroid/util/SparseArray;
 

@@ -29,7 +29,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/common/ContactPhotoManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/ContactPhotoManager$1;
 
     invoke-direct {p0}, Lcom/android/contacts/common/ContactPhotoManager$BlankDefaultImageProvider;-><init>()V
 
@@ -40,10 +39,6 @@
 # virtual methods
 .method public applyDefaultImage(Landroid/widget/ImageView;IZJ)V
     .locals 4
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # J
 
     sget-object v1, Lcom/android/contacts/common/ContactPhotoManager$BlankDefaultImageProvider;->sDrawable:Landroid/graphics/drawable/Drawable;
 

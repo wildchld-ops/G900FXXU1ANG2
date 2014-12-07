@@ -36,8 +36,6 @@
 # virtual methods
 .method public onAuthFailure(Ljava/lang/String;Lcom/google/android/finsky/billing/challenge/ClientLoginApi$ErrorType;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/billing/challenge/ClientLoginApi$ErrorType;
 
     iget-object v3, p0, Lcom/google/android/finsky/fragments/GaiaAuthFragment$2;->this$0:Lcom/google/android/finsky/fragments/GaiaAuthFragment;
 

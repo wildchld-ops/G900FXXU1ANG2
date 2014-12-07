@@ -276,7 +276,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->updateWifiInternetServiceCheck()V
 
@@ -285,7 +284,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -296,8 +294,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/AdvancedWifiSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mIsConn:Z
 
@@ -306,7 +302,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -317,7 +312,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -328,7 +322,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->poorNetworkDetection:Landroid/preference/CheckBoxPreference;
 
@@ -337,7 +330,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -346,7 +338,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -357,7 +348,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->refreshWifiInfo()V
 
@@ -366,8 +356,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/AdvancedWifiSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->changeHotspot20(Z)V
 
@@ -376,7 +364,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
@@ -385,7 +372,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/AdvancedWifiSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mMobilePolicyDataEnable:Z
 
@@ -394,7 +380,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->updateScanAlwaysAvailableCheck()V
 
@@ -403,7 +388,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->scanAlwaysAvailable:Landroid/preference/CheckBoxPreference;
 
@@ -412,7 +396,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -423,7 +406,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/AdvancedWifiSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/AdvancedWifiSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mContext:Landroid/content/Context;
 
@@ -2792,9 +2774,6 @@
 
 .method private showIwlanDialog(Landroid/content/Context;Lcom/android/settings/wifi/IwlanNetwork;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/wifi/IwlanNetwork;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mIwlanDialog:Lcom/android/settings/wifi/IwlanDialog;
 
@@ -2853,8 +2832,6 @@
 
 .method private updateApListPrioritySummary(Landroid/preference/Preference;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_1
 
@@ -2943,8 +2920,6 @@
 
 .method private updateFrequencyBandSummary(Landroid/preference/Preference;I)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getResources()Landroid/content/res/Resources;
 
@@ -3000,8 +2975,6 @@
 
 .method private updateSleepPolicySummary(Landroid/preference/Preference;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_2
 
@@ -3203,7 +3176,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -3304,7 +3276,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

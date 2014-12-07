@@ -46,7 +46,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/BuyInstruments$CheckInstrumentResponse;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$CheckInstrumentResponse;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/PromptForFopHelper$1;->val$accountName:Ljava/lang/String;
 
@@ -60,7 +59,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/BuyInstruments$CheckInstrumentResponse;
 

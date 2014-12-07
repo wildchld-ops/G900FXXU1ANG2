@@ -33,7 +33,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/editor/EditGroupSelectionActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/EditGroupSelectionActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionActivity;->mIsInsert:Z
 
@@ -42,7 +41,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/editor/EditGroupSelectionActivity;)J
     .locals 2
-    .param p0    # Lcom/samsung/contacts/editor/EditGroupSelectionActivity;
 
     iget-wide v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionActivity;->mRawContactId:J
 
@@ -51,7 +49,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/editor/EditGroupSelectionActivity;)Lcom/samsung/contacts/editor/EditGroupSelectionFragment;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/editor/EditGroupSelectionActivity;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionActivity;->mFragment:Lcom/samsung/contacts/editor/EditGroupSelectionFragment;
 
@@ -107,7 +104,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const-wide/16 v4, -0x1
 
@@ -190,7 +186,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     iget-object v3, p0, Lcom/samsung/contacts/editor/EditGroupSelectionActivity;->mActionBar:Landroid/app/ActionBar;
 
@@ -252,7 +247,6 @@
 
 .method public onDoneButtonStatusChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionActivity;->mDoneButtonStatus:Z
 
@@ -268,7 +262,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -300,7 +293,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     iget-object v1, p0, Lcom/samsung/contacts/editor/EditGroupSelectionActivity;->mActionBar:Landroid/app/ActionBar;
 
@@ -340,7 +332,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "android.intent.extra.RAWCONTACT_ID"
 
@@ -361,7 +352,6 @@
 
 .method public setCreatedGroupChecked(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/contacts/editor/EditGroupSelectionActivity;->mFragment:Lcom/samsung/contacts/editor/EditGroupSelectionFragment;
 

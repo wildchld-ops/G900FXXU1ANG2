@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -73,8 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -85,9 +82,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -328,7 +322,6 @@
 
 .method static synthetic access$000(Landroid/widget/ActivityChooserView;)Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mAdapter:Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;
 
@@ -337,7 +330,6 @@
 
 .method static synthetic access$100(Landroid/widget/ActivityChooserView;)Landroid/widget/ListPopupWindow;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     invoke-direct {p0}, Landroid/widget/ActivityChooserView;->getListPopupWindow()Landroid/widget/ListPopupWindow;
 
@@ -348,7 +340,6 @@
 
 .method static synthetic access$1000(Landroid/widget/ActivityChooserView;)Landroid/widget/PopupWindow$OnDismissListener;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
 
@@ -357,7 +348,6 @@
 
 .method static synthetic access$1100(Landroid/widget/ActivityChooserView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -366,7 +356,6 @@
 
 .method static synthetic access$1200(Landroid/widget/ActivityChooserView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -375,7 +364,6 @@
 
 .method static synthetic access$1300(Landroid/widget/ActivityChooserView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -384,7 +372,6 @@
 
 .method static synthetic access$1400(Landroid/widget/ActivityChooserView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -393,7 +380,6 @@
 
 .method static synthetic access$1500(Landroid/widget/ActivityChooserView;)Landroid/database/DataSetObserver;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mModelDataSetOberver:Landroid/database/DataSetObserver;
 
@@ -402,7 +388,6 @@
 
 .method static synthetic access$1600(Landroid/widget/ActivityChooserView;)Z
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-boolean v0, p0, Landroid/widget/ActivityChooserView;->mIsParentThemeDeviceDefault:Z
 
@@ -411,7 +396,6 @@
 
 .method static synthetic access$1700(Landroid/widget/ActivityChooserView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -420,7 +404,6 @@
 
 .method static synthetic access$1800(Landroid/widget/ActivityChooserView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -429,7 +412,6 @@
 
 .method static synthetic access$400(Landroid/widget/ActivityChooserView;)V
     .locals 0
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     invoke-direct {p0}, Landroid/widget/ActivityChooserView;->updateAppearance()V
 
@@ -438,8 +420,6 @@
 
 .method static synthetic access$500(Landroid/widget/ActivityChooserView;I)V
     .locals 0
-    .param p0    # Landroid/widget/ActivityChooserView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/ActivityChooserView;->showPopupUnchecked(I)V
 
@@ -448,7 +428,6 @@
 
 .method static synthetic access$600(Landroid/widget/ActivityChooserView;)Z
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-boolean v0, p0, Landroid/widget/ActivityChooserView;->mIsSelectingDefaultActivity:Z
 
@@ -457,8 +436,6 @@
 
 .method static synthetic access$602(Landroid/widget/ActivityChooserView;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/ActivityChooserView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ActivityChooserView;->mIsSelectingDefaultActivity:Z
 
@@ -467,7 +444,6 @@
 
 .method static synthetic access$700(Landroid/widget/ActivityChooserView;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mDefaultActivityButton:Landroid/widget/FrameLayout;
 
@@ -476,7 +452,6 @@
 
 .method static synthetic access$800(Landroid/widget/ActivityChooserView;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mExpandActivityOverflowButton:Landroid/widget/FrameLayout;
 
@@ -485,7 +460,6 @@
 
 .method static synthetic access$900(Landroid/widget/ActivityChooserView;)I
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserView;
 
     iget v0, p0, Landroid/widget/ActivityChooserView;->mInitialActivityCount:I
 
@@ -545,7 +519,6 @@
 
 .method private showPopupUnchecked(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -981,11 +954,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v3, 0x0
 
@@ -1011,8 +979,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mActivityChooserContent:Landroid/widget/LinearLayout;
 
@@ -1052,7 +1018,6 @@
 
 .method public setActivityChooserModel(Landroid/widget/ActivityChooserModel;)V
     .locals 1
-    .param p1    # Landroid/widget/ActivityChooserModel;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mAdapter:Landroid/widget/ActivityChooserView$ActivityChooserViewAdapter;
 
@@ -1074,7 +1039,6 @@
 
 .method public setDefaultActionButtonContentDescription(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ActivityChooserView;->mDefaultActionButtonContentDescription:I
 
@@ -1083,7 +1047,6 @@
 
 .method public setExpandActivityOverflowButtonContentDescription(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1100,7 +1063,6 @@
 
 .method public setExpandActivityOverflowButtonDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserView;->mExpandActivityOverflowButtonImage:Landroid/widget/ImageView;
 
@@ -1111,7 +1073,6 @@
 
 .method public setInitialActivityCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ActivityChooserView;->mInitialActivityCount:I
 
@@ -1120,7 +1081,6 @@
 
 .method public setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
     .locals 0
-    .param p1    # Landroid/widget/PopupWindow$OnDismissListener;
 
     iput-object p1, p0, Landroid/widget/ActivityChooserView;->mOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
 
@@ -1129,7 +1089,6 @@
 
 .method public setProvider(Landroid/view/ActionProvider;)V
     .locals 0
-    .param p1    # Landroid/view/ActionProvider;
 
     iput-object p1, p0, Landroid/widget/ActivityChooserView;->mProvider:Landroid/view/ActionProvider;
 

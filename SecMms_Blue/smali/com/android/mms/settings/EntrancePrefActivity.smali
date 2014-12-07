@@ -101,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/EntrancePrefActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/EntrancePrefActivity;
 
     invoke-direct {p0}, Lcom/android/mms/settings/EntrancePrefActivity;->restoreDefaultPreferences()V
 
@@ -110,7 +109,6 @@
 
 .method private backupNetworkStatus(Landroid/content/SharedPreferences;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v2, 0x0
 
@@ -184,7 +182,6 @@
 
 .method private confirmRestoreDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -306,8 +303,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -404,7 +399,6 @@
 
 .method private restoreNetworkStatus(Landroid/content/SharedPreferences;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -464,8 +458,6 @@
 
 .method private setEnabled(Landroid/preference/Preference;Z)V
     .locals 0
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -480,7 +472,6 @@
 
 .method private updateMessagesSettings(Z)V
     .locals 28
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -1594,7 +1585,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1626,7 +1616,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -1664,7 +1653,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1734,8 +1722,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v8, 0x3
 
@@ -2049,8 +2035,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

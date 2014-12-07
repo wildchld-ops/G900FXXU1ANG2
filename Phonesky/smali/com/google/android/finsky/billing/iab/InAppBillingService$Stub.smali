@@ -33,9 +33,6 @@
 # virtual methods
 .method public consumePurchase(ILjava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -182,11 +179,6 @@
 
 .method public getBuyIntent(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -438,10 +430,6 @@
 
 .method public getPurchases(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -622,10 +610,6 @@
 
 .method public getSkuDetails(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -856,9 +840,6 @@
 
 .method public isBillingSupported(ILjava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -993,9 +974,6 @@
 
 .method public isPromoEligible(ILjava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -121,7 +121,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/16 v2, 0x500
 
@@ -236,8 +235,6 @@
 
 .method private SecExternalDisplayInitWakeMode(Landroid/content/Context;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -352,7 +349,6 @@
 
 .method private SecExternalDisplaySetWakeLock(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/SecExternalDisplayService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -431,8 +427,6 @@
 
 .method static synthetic access$000(Lcom/android/server/SecExternalDisplayService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/SecExternalDisplayService;->SecExternalDisplaySetWakeLock(Z)V
 
@@ -441,7 +435,6 @@
 
 .method static synthetic access$100(Lcom/android/server/SecExternalDisplayService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget-boolean v0, p0, Lcom/android/server/SecExternalDisplayService;->bIsHomeTheatreConnected:Z
 
@@ -450,7 +443,6 @@
 
 .method static synthetic access$200(Lcom/android/server/SecExternalDisplayService;)I
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget v0, p0, Lcom/android/server/SecExternalDisplayService;->mDockSurfaceWidth:I
 
@@ -459,7 +451,6 @@
 
 .method static synthetic access$300(Lcom/android/server/SecExternalDisplayService;)I
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget v0, p0, Lcom/android/server/SecExternalDisplayService;->mDockSurfaceHeight:I
 
@@ -476,7 +467,6 @@
 
 .method static synthetic access$500(Lcom/android/server/SecExternalDisplayService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget-boolean v0, p0, Lcom/android/server/SecExternalDisplayService;->bDreamsEnabledByDefaultConfig:Z
 
@@ -485,8 +475,6 @@
 
 .method static synthetic access$502(Lcom/android/server/SecExternalDisplayService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/SecExternalDisplayService;->bDreamsEnabledByDefaultConfig:Z
 
@@ -495,7 +483,6 @@
 
 .method static synthetic access$600(Lcom/android/server/SecExternalDisplayService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget-boolean v0, p0, Lcom/android/server/SecExternalDisplayService;->bIsDayDreamEnabled:Z
 
@@ -504,8 +491,6 @@
 
 .method static synthetic access$602(Lcom/android/server/SecExternalDisplayService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/SecExternalDisplayService;->bIsDayDreamEnabled:Z
 
@@ -514,7 +499,6 @@
 
 .method public static dispatchacquireCpuMinLock(I)V
     .locals 4
-    .param p0    # I
 
     const-string v2, "SecExternalDisplayService"
 
@@ -554,7 +538,6 @@
 
 .method public static dispatchacquireGpuMinLock(I)V
     .locals 4
-    .param p0    # I
 
     const-string v2, "SecExternalDisplayService"
 
@@ -672,7 +655,6 @@
 
 .method public static setAidDim(I)V
     .locals 8
-    .param p0    # I
 
     const/16 v2, 0x1f4a
 
@@ -753,7 +735,6 @@
 
 .method public static setEnableDualScanMode(I)V
     .locals 8
-    .param p0    # I
 
     const/16 v2, 0x1f4b
 
@@ -834,7 +815,6 @@
 
 .method public static setHmtOn(I)V
     .locals 8
-    .param p0    # I
 
     const/16 v2, 0x1f4c
 
@@ -917,9 +897,6 @@
 # virtual methods
 .method public SecExternalDisplayCreateSurface(Ljava/lang/String;II)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -932,9 +909,6 @@
 
 .method public SecExternalDisplayDestroySurface(Ljava/lang/String;II)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -971,7 +945,6 @@
 
 .method public SecExternalDisplayGetStatus(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -984,7 +957,6 @@
 
 .method public SecExternalDisplayRegisterEVF(Z)I
     .locals 1
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -997,7 +969,6 @@
 
 .method public SecExternalDisplaySet3DMode(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1010,7 +981,6 @@
 
 .method public SecExternalDisplaySetExternalUITransform(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1023,7 +993,6 @@
 
 .method public SecExternalDisplaySetForceMirrorMode(Z)Z
     .locals 1
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1036,8 +1005,6 @@
 
 .method public SecExternalDisplaySetGpuLock(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1050,7 +1017,6 @@
 
 .method public SecExternalDisplaySetOutputMode(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1063,7 +1029,6 @@
 
 .method public SecExternalDisplaySetPause(Z)Z
     .locals 1
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1076,7 +1041,6 @@
 
 .method public SecExternalDisplaySetResolution(I)Z
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1089,8 +1053,6 @@
 
 .method public SecExternalDisplaySetStatus(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1138,7 +1100,6 @@
 
 .method public SecExternalDisplayToast(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -1294,7 +1255,6 @@
 
 .method public SecExternalDisplayType(Z)Z
     .locals 1
-    .param p1    # Z
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 
@@ -1307,7 +1267,6 @@
 
 .method public acquireCpuMinLock(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "SecExternalDisplayService_Java"
 
@@ -1443,7 +1402,6 @@
 
 .method public acquireGpuMinLock(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "SecExternalDisplayService_Java"
 
@@ -1587,7 +1545,6 @@
 
 .method public handleAlarm(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1706,7 +1663,6 @@
 
 .method public handleHDMIConnection(Z)Z
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -1880,7 +1836,6 @@
 
 .method handleHTPluggedEvent(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -1940,7 +1895,6 @@
 
 .method public handleSmartDockConnection(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2153,7 +2107,6 @@
 
 .method public handleWFDConnection(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -2266,10 +2219,6 @@
 
 .method public setHMTParams(FFF[F)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # [F
 
     sget-object v0, Lcom/android/server/SecExternalDisplayService;->mEDSInterface:Landroid/hardware/SecExternalDisplayJNIInterface;
 

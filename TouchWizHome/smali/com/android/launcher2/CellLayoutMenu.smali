@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -39,9 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -205,8 +199,6 @@
 
 .method public handleStateChange(Lcom/android/launcher2/MenuAppsGrid$State;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     const/4 v0, 0x0
 
@@ -217,7 +209,6 @@
 
 .method public hide(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-direct {p0}, Lcom/android/launcher2/CellLayoutMenu;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -309,7 +300,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 19
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher2/CellLayoutMenu;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -666,7 +656,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayout;->getBackgroundAlpha()F
 
@@ -681,8 +670,6 @@
 
 .method public onFolderIconViewDragEvent(Landroid/view/DragEvent;Lcom/android/launcher2/FolderIconView;)V
     .locals 3
-    .param p1    # Landroid/view/DragEvent;
-    .param p2    # Lcom/android/launcher2/FolderIconView;
 
     invoke-direct {p0}, Lcom/android/launcher2/CellLayoutMenu;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -740,7 +727,6 @@
 
 .method public onViewAddedToLayout(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -907,7 +893,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 6
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v2, 0x0
 
@@ -979,7 +964,6 @@
 
 .method snake(Lcom/android/launcher2/AppItem;)V
     .locals 10
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     const/4 v9, 0x0
 
@@ -1181,7 +1165,6 @@
 
 .method undoSnake(Z)Lcom/android/launcher2/AppItem;
     .locals 7
-    .param p1    # Z
 
     const/4 v1, 0x0
 

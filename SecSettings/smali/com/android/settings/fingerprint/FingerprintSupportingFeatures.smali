@@ -39,7 +39,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -48,7 +47,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;->checkedChangeListener()V
 
@@ -57,7 +55,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerprintSupportingFeatures;->mContext:Landroid/content/Context;
 
@@ -76,7 +73,6 @@
 
 .method private isSamsungAccountSignedIn(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -249,8 +245,6 @@
 
 .method private setFingerPrintOnSAConfirmed(Landroid/content/Context;I)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -309,8 +303,6 @@
 
 .method private setUseFingerprintForSA(Landroid/content/Context;I)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -413,9 +405,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v9, 0x65
 
@@ -640,8 +629,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -817,7 +804,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, -0x2
 
@@ -1011,9 +997,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0400bc
 
@@ -1042,7 +1025,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

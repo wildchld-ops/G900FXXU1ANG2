@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentState;ILcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentBulkAction;)V
     .locals 1
-    .param p2    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentState;
-    .param p3    # I
-    .param p4    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentBulkAction;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;->this$0:Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter;
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$1100(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
 
     iget v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;->mHeaderTextId:I
 
@@ -72,7 +68,6 @@
 
 .method static synthetic access$1200(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;)Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentBulkAction;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;->mHeaderAction:Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$DocumentBulkAction;
 
@@ -81,7 +76,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;->mDocs:Ljava/util/List;
 
@@ -92,7 +86,6 @@
 # virtual methods
 .method addDoc(Lcom/google/android/finsky/api/model/Document;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;->mDocs:Ljava/util/List;
 
@@ -139,7 +132,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -162,7 +154,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -171,7 +162,6 @@
 
 .method public getItemViewType(I)I
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -199,9 +189,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/activities/myapps/MyAppsInstalledAdapter$SectionAdapter;->getItemViewType(I)I
 

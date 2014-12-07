@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/interactions/InteractionTabActivity;Lcom/samsung/contacts/interactions/InteractionTabActivity$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionTabActivity;
-    .param p2    # Lcom/samsung/contacts/interactions/InteractionTabActivity$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionTabActivity$TabPagerListener;-><init>(Lcom/samsung/contacts/interactions/InteractionTabActivity;)V
 
@@ -46,23 +44,18 @@
 # virtual methods
 .method public onPageScrollStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPageScrolled(IFI)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onPageSelected(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionTabActivity$TabPagerListener;->this$0:Lcom/samsung/contacts/interactions/InteractionTabActivity;
 

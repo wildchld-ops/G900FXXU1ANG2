@@ -1373,7 +1373,7 @@ Orqaga tugmasini bosib turish orqali ko‘p oynani yashirishingiz yoki ko‘rsat
     <string name="usb_tethering_errored_subtext">USB bog‘lanish xatosi</string>
     <string name="usb_tethering_on_during_sidesync_popup">SideSyncdan foydalanayotganda, USB bog‘lanishni o‘chirib bo‘lmaydi. USB bog‘lanishni o‘chirish SideSyncni o‘chiradi</string>
     <string name="usb_tethering_off_during_sidesync_popup">SideSyncdan foydalanayotganda, USB bog‘lanishni yoqib bo‘lmaydi. USB bog‘lanishni yoqish SideSyncni o‘chiradi</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth bog‘lanishi</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth bog‘lanishi</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Qurilma Internet ulanishi ulashilmoqda…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Qurilma Internet ulanishi 1 qurilma bilan baham ko‘rilmoqda</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Qurilma Internet ulanishi %d qurilma bilan baham ko‘rilmoqda</string>

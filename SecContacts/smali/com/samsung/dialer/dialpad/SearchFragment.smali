@@ -61,10 +61,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/dialpad/SearchFragment;Landroid/widget/ImageView;JJ)V
     .locals 0
-    .param p0    # Lcom/samsung/dialer/dialpad/SearchFragment;
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Lcom/samsung/dialer/dialpad/SearchFragment;->setPhoto(Landroid/widget/ImageView;JJ)V
 
@@ -149,9 +145,6 @@
 
 .method private setPhoto(Landroid/widget/ImageView;JJ)V
     .locals 7
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/SearchFragment;->mContactPhotoManager:Lcom/android/contacts/common/ContactPhotoManager;
 
@@ -174,7 +167,6 @@
 
 .method private showNumberListDialog(I)Z
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/samsung/dialer/dialpad/SearchFragment;->mAdapter:Lcom/samsung/dialer/dialpad/SearchFragment$SearchResultAdapter;
 
@@ -323,7 +315,6 @@
 
 .method public executeSearch(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -334,8 +325,6 @@
 
 .method public executeSearch(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     sget-object v1, Lcom/samsung/dialer/dialpad/SearchFragment;->TAG:Ljava/lang/String;
 
@@ -414,9 +403,6 @@
 
 .method public getHighlightedString(Ljava/lang/String;II)Landroid/text/SpannableString;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_1
 
@@ -510,7 +496,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -545,7 +530,6 @@
 
 .method public onKeywordChanged(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/dialer/dialpad/SearchFragment;->mLastKeyword:Ljava/lang/String;
 
@@ -579,10 +563,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 3
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p1}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 

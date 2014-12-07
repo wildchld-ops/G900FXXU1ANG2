@@ -18,8 +18,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/download/DownloadBroadcastReceiver;Landroid/net/Uri;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadBroadcastReceiver;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/download/DownloadBroadcastReceiver;->getHttpStatusForUri(Landroid/net/Uri;)I
 
@@ -38,7 +36,6 @@
 
 .method private getHttpStatusForUri(Landroid/net/Uri;)I
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     sget-object v2, Lcom/google/android/finsky/download/DownloadBroadcastReceiver;->sDownloadQueueImpl:Lcom/google/android/finsky/download/DownloadQueueImpl;
 
@@ -82,7 +79,6 @@
 
 .method public static initialize(Lcom/google/android/finsky/download/DownloadQueueImpl;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     sput-object p0, Lcom/google/android/finsky/download/DownloadBroadcastReceiver;->sDownloadQueueImpl:Lcom/google/android/finsky/download/DownloadQueueImpl;
 
@@ -93,8 +89,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v12, "Intent received at DownloadBroadcastReceiver"
 

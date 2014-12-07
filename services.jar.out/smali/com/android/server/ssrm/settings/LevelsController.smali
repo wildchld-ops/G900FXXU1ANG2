@@ -50,8 +50,6 @@
 # virtual methods
 .method public addLevelGetCondition(Lcom/android/server/ssrm/settings/Level;Ljava/lang/String;)Lcom/android/server/ssrm/settings/Condition;
     .locals 3
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/server/ssrm/settings/LevelsController;->checkLevel(Lcom/android/server/ssrm/settings/Level;)V
 
@@ -78,7 +76,6 @@
 
 .method public addLevelSetConditions(Lcom/android/server/ssrm/settings/Level;Ljava/util/Set;)V
     .locals 4
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -148,7 +145,6 @@
 
 .method protected checkLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 2
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -366,7 +362,6 @@
 
 .method public removeLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 4
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     iget-object v3, p0, Lcom/android/server/ssrm/settings/LevelsController;->mLevels:Ljava/util/List;
 
@@ -407,14 +402,12 @@
 
 .method setDefaultLevel(Lcom/android/server/ssrm/settings/Level;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/settings/Level;
 
     return-void
 .end method
 
 .method public final setTemperature(I)V
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/server/ssrm/settings/LevelsController;->mTemperature:I
 

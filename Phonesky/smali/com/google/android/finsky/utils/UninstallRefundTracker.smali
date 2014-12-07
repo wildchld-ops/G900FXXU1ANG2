@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/receivers/PackageMonitorReceiver;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p3    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,8 +37,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/utils/UninstallRefundTracker;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/utils/UninstallRefundTracker;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/utils/UninstallRefundTracker;->refundIfNecessary(Ljava/lang/String;)V
 
@@ -50,7 +45,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/utils/UninstallRefundTracker;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/utils/UninstallRefundTracker;
 
     iget-object v0, p0, Lcom/google/android/finsky/utils/UninstallRefundTracker;->mContext:Landroid/content/Context;
 
@@ -59,7 +53,6 @@
 
 .method private refundIfNecessary(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/finsky/activities/AppActionAnalyzer;
 
@@ -104,37 +97,30 @@
 # virtual methods
 .method public onPackageAdded(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageAvailabilityChanged([Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onPackageChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageFirstLaunch(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageRemoved(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 

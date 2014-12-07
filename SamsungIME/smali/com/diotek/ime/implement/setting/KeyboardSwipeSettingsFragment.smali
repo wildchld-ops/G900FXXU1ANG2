@@ -50,8 +50,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;Landroid/preference/Preference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;
-    .param p1    # Landroid/preference/Preference;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;->changeSwipe(Landroid/preference/Preference;)V
 
@@ -60,7 +58,6 @@
 
 .method private changeSwipe(Landroid/preference/Preference;)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v2, 0x1
 
@@ -200,7 +197,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x400
 
@@ -392,7 +388,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

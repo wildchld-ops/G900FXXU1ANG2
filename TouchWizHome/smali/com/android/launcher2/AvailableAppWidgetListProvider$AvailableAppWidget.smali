@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/AvailableAppWidgetListProvider;Landroid/appwidget/AppWidgetProviderInfo;Z)V
     .locals 0
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/AvailableAppWidgetListProvider$AvailableAppWidget;->this$0:Lcom/android/launcher2/AvailableAppWidgetListProvider;
 
@@ -190,7 +188,6 @@
 
 .method public dump(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/launcher2/AvailableAppWidgetListProvider$AvailableAppWidget;->mProviderInfo:Landroid/appwidget/AppWidgetProviderInfo;
 
@@ -298,7 +295,6 @@
 
 .method public getCellSpan([I)V
     .locals 2
-    .param p1    # [I
 
     sget-object v0, Lcom/android/launcher2/WorkspaceSpanCalculator;->INSTANCE:Lcom/android/launcher2/WorkspaceSpanCalculator;
 
@@ -321,8 +317,6 @@
 
 .method public declared-synchronized getPreview(II)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 

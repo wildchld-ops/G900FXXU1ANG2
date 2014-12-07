@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/sim/detail/DetailSimOperation;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/sim/detail/DetailSimOperation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,7 +22,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/detail/DetailSimManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/samsung/contacts/sim/detail/DetailSimManager;->sDetailSim:Lcom/samsung/contacts/sim/detail/DetailSimManager;
 
@@ -65,7 +63,6 @@
 
 .method public static getOperation(Landroid/content/Context;)Lcom/samsung/contacts/sim/detail/DetailSimOperation;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/samsung/contacts/sim/detail/DetailSimManager;->getInstance(Landroid/content/Context;)Lcom/samsung/contacts/sim/detail/DetailSimManager;
 

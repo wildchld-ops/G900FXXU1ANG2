@@ -79,7 +79,6 @@
 
 .method public onItemClicked(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_1
 

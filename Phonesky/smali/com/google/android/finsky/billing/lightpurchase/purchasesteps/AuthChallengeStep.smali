@@ -75,7 +75,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->verifyGaia()V
 
@@ -84,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->fail()V
 
@@ -103,7 +101,6 @@
 
 .method private fail(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->mFailedCount:I
 
@@ -228,7 +225,6 @@
 
 .method private hideKeyboardDelayed(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -255,8 +251,6 @@
 
 .method public static newInstance(Ljava/lang/String;Lcom/google/android/finsky/protos/ChallengeProtos$AuthenticationChallenge;)Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/protos/ChallengeProtos$AuthenticationChallenge;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -285,7 +279,6 @@
 
 .method private showErrorMessage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->mErrorMessage:Ljava/lang/String;
 
@@ -312,7 +305,6 @@
 
 .method private showKeyboardDelayed(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->getActivity()Landroid/support/v4/app/FragmentActivity;
 
@@ -397,7 +389,6 @@
 # virtual methods
 .method public getContinueButtonLabel(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     const v0, 0x7f0900a4
 
@@ -418,9 +409,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -448,8 +436,6 @@
 
 .method public onAuthFailure(Ljava/lang/String;Lcom/google/android/finsky/billing/challenge/ClientLoginApi$ErrorType;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/billing/challenge/ClientLoginApi$ErrorType;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->isResumed()Z
 
@@ -699,8 +685,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->mOptOutCheckbox:Landroid/widget/CheckBox;
 
@@ -736,7 +720,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/lightpurchase/purchasesteps/AuthChallengeStep;->mHelpToggle:Landroid/widget/ImageView;
 
@@ -766,7 +749,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -874,9 +856,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v4, 0x7f040090
 
@@ -1109,7 +1088,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/multistep/StepFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

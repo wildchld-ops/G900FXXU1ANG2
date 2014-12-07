@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$DialogDisplayer;->this$0:Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 
@@ -39,7 +38,6 @@
 
 .method public constructor <init>(Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity$DialogDisplayer;->this$0:Lcom/samsung/contacts/vcard/ImportVCardPreviewActivity;
 

@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/HtmlComposerView;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView$SelectionOffset;->this$0:Landroid/webkitsec/HtmlComposerView;
 

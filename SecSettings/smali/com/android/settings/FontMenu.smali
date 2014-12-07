@@ -72,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/FontMenu;)Lcom/android/settings/FontSizeListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/FontMenu;
 
     iget-object v0, p0, Lcom/android/settings/FontMenu;->mFontSizePref:Lcom/android/settings/FontSizeListPreference;
 
@@ -81,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/FontMenu;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/FontMenu;
 
     iget-object v0, p0, Lcom/android/settings/FontMenu;->mClearfont:Landroid/preference/CheckBoxPreference;
 
@@ -90,7 +88,6 @@
 
 .method private update7StepFontsizeList(Landroid/preference/ListPreference;)V
     .locals 5
-    .param p1    # Landroid/preference/ListPreference;
 
     iget-object v3, p0, Lcom/android/settings/FontMenu;->mContext:Landroid/content/Context;
 
@@ -155,7 +152,6 @@
 # virtual methods
 .method floatToIndex(F)I
     .locals 6
-    .param p1    # F
 
     invoke-static {}, Lcom/android/settings/Utils;->has7StepsFontSizeFeature()Z
 
@@ -246,7 +242,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/FontMenu;->mCurConfig:Landroid/content/res/Configuration;
@@ -282,7 +277,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -479,7 +473,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 10
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -683,8 +676,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 11
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v10, 0x0
 
@@ -848,7 +839,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 
@@ -884,8 +874,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v1, p0, Lcom/android/settings/FontMenu;->mClearfont:Landroid/preference/CheckBoxPreference;
 
@@ -1061,7 +1049,6 @@
 
 .method public readFontSizePreference(Landroid/preference/ListPreference;)V
     .locals 11
-    .param p1    # Landroid/preference/ListPreference;
 
     const/4 v10, 0x1
 
@@ -1504,7 +1491,6 @@
 
 .method public writeFontSizePreference(Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;

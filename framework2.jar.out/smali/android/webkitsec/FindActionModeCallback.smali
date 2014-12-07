@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const v6, 0x10202b5
 
@@ -248,7 +247,6 @@
 
 .method private findNext(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/webkitsec/FindActionModeCallback;->mWebView:Landroid/webkitsec/WebView;
 
@@ -341,17 +339,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -524,8 +517,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -585,7 +576,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -596,8 +586,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -725,7 +713,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v2, 0x0
 
@@ -776,9 +763,6 @@
 
 .method public onFindResultReceived(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -792,7 +776,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -801,8 +784,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -811,10 +792,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/webkitsec/FindActionModeCallback;->findAll()V
 
@@ -823,7 +800,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -854,7 +830,6 @@
 
 .method public setWebView(Landroid/webkitsec/WebView;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebView;
 
     if-nez p1, :cond_0
 
@@ -908,9 +883,6 @@
 
 .method public updateMatchCount(IIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     if-nez p3, :cond_0
 

@@ -40,18 +40,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsstream/lib/objs/StoryItem$StoryType;Lsstream/lib/objs/Author;Lsstream/lib/objs/Image;JILjava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Lsstream/lib/objs/StoryItem$StoryType;
-    .param p8    # Lsstream/lib/objs/Author;
-    .param p9    # Lsstream/lib/objs/Image;
-    .param p10    # J
-    .param p12    # I
-    .param p13    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -168,17 +156,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsstream/lib/objs/StoryItem$StoryType;Lsstream/lib/objs/Author;Lsstream/lib/objs/Image;JILjava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lsstream/lib/objs/StoryItem$StoryType;
-    .param p7    # Lsstream/lib/objs/Author;
-    .param p8    # Lsstream/lib/objs/Image;
-    .param p9    # J
-    .param p11    # I
-    .param p12    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -213,7 +190,6 @@
 
 .method public static getTypeFromString(Ljava/lang/String;)Lsstream/lib/objs/StoryItem$StoryType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lsstream/lib/objs/StoryItem$StoryType;->CALENDAR:Lsstream/lib/objs/StoryItem$StoryType;
 

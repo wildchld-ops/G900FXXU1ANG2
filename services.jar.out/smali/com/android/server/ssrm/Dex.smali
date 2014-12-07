@@ -62,7 +62,6 @@
 # direct methods
 .method constructor <init>([B)V
     .locals 2
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -131,9 +130,6 @@
 # virtual methods
 .method public decode([B[CI)Ljava/lang/String;
     .locals 11
-    .param p1    # [B
-    .param p2    # [C
-    .param p3    # I
 
     const/16 v10, 0x80
 
@@ -523,7 +519,6 @@
 
 .method public readSignedLeb128([B)I
     .locals 7
-    .param p1    # [B
 
     const/16 v6, 0x80
 
@@ -591,7 +586,6 @@
 
 .method public readString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const/16 v1, 0x80
 
@@ -608,7 +602,6 @@
 
 .method public readUint(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x4
 
@@ -639,7 +632,6 @@
 
 .method public readUleb128(I)I
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0xa
 
@@ -660,7 +652,6 @@
 
 .method public readUnsignedLeb128([B)I
     .locals 6
-    .param p1    # [B
 
     const/16 v5, 0x80
 

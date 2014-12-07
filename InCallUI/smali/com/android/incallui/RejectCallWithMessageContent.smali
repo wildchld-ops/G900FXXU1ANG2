@@ -50,8 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/RejectCallWithMessageContent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/incallui/RejectCallWithMessageContent;
 
     iget-object v0, p0, Lcom/android/incallui/RejectCallWithMessageContent;->RingingCallnumber:Ljava/lang/String;
 
@@ -582,7 +579,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -591,7 +587,6 @@
 
 .method public setOnAnswerMemoClickListener(Lcom/android/incallui/RejectCallWithMessageContent$OnAnswerMemoClickListener;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/RejectCallWithMessageContent$OnAnswerMemoClickListener;
 
     iput-object p1, p0, Lcom/android/incallui/RejectCallWithMessageContent;->mOnAnswerMemoClickListener:Lcom/android/incallui/RejectCallWithMessageContent$OnAnswerMemoClickListener;
 
@@ -600,7 +595,6 @@
 
 .method public setOnItemClickListener(Lcom/android/incallui/RejectCallWithMessageContent$OnItemClickListener;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/RejectCallWithMessageContent$OnItemClickListener;
 
     iput-object p1, p0, Lcom/android/incallui/RejectCallWithMessageContent;->mOnItemClickListener:Lcom/android/incallui/RejectCallWithMessageContent$OnItemClickListener;
 

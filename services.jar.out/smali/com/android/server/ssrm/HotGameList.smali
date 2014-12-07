@@ -1193,7 +1193,6 @@
 
 .method public static isKnownGame(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/ssrm/HotGameList;->sKnownGameHashMap:Ljava/util/HashMap;
 

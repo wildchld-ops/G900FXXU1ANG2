@@ -43,7 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,7 +87,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager;->sInstance:Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager;
 
@@ -152,7 +150,6 @@
 
 .method private isSecurityFiltered(Lcom/samsung/android/magazinecard/MagazineCardRecord;)Z
     .locals 3
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     const/4 v1, 0x1
 
@@ -421,8 +418,6 @@
 
 .method public notifyItemChanged(ILcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     const-string v2, "KeyguardMagazineCardManager"
 
@@ -568,7 +563,6 @@
 
 .method public registerCardChangedListener(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager$MagazineCardChangedListener;)V
     .locals 5
-    .param p1    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager$MagazineCardChangedListener;
 
     iget-object v2, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager;->mCardChangedListeners:Ljava/util/ArrayList;
 
@@ -639,7 +633,6 @@
 
 .method public unregisterCardChangedListener(Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager$MagazineCardChangedListener;)V
     .locals 5
-    .param p1    # Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager$MagazineCardChangedListener;
 
     iget-object v2, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardManager;->mCardChangedListeners:Ljava/util/ArrayList;
 

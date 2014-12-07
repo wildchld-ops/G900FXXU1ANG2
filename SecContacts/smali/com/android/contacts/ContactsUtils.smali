@@ -36,7 +36,6 @@
 
 .method public static areContactWritableAccountsAvailable(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -65,7 +64,6 @@
 
 .method public static areGroupWritableAccountsAvailable(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/contacts/common/model/AccountTypeManager;->getInstance(Landroid/content/Context;)Lcom/android/contacts/common/model/AccountTypeManager;
 
@@ -94,8 +92,6 @@
 
 .method public static final areIntentActionEqual(Landroid/content/Intent;Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -141,8 +137,6 @@
 
 .method public static areObjectsEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -499,7 +493,6 @@
 
 .method public static getAdn2Editable(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -528,7 +521,6 @@
 
 .method public static getAdnEditable(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -557,8 +549,6 @@
 
 .method public static getAlerttonePickerIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -630,7 +620,6 @@
 
 .method public static final getCurrentCountryIso(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "country_detector"
 
@@ -671,7 +660,6 @@
 
 .method public static getDialable(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -719,7 +707,6 @@
 
 .method public static getHelpAppVersion(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -768,7 +755,6 @@
 
 .method public static getIpCallIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -819,8 +805,6 @@
 
 .method public static getMediaContentUri(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v10, 0x0
 
@@ -1227,8 +1211,6 @@
 
 .method public static getPhoneNumberFromLookupKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x2
 
@@ -1337,8 +1319,6 @@
 
 .method public static getRingtonePickerIntent(Landroid/content/Context;Landroid/net/Uri;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v5, 0x1
 
@@ -1412,8 +1392,6 @@
 
 .method public static getRingtonePickerIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/contacts/ContactsUtils;->getRingtoneUri(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -1428,8 +1406,6 @@
 
 .method public static getRingtoneTitle(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1470,7 +1446,6 @@
 
 .method public static getRingtoneUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1947,7 +1922,6 @@
 
 .method public static getSim2DBReady(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -1976,7 +1950,6 @@
 
 .method public static getSimDBReady(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -2341,7 +2314,6 @@
 
 .method public static getThumbnailSize(Landroid/content/Context;)I
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -2671,7 +2643,6 @@
 
 .method public static getVibrationPickerIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -2704,8 +2675,6 @@
 
 .method public static getVibrationTitle(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -2766,7 +2735,6 @@
 
 .method public static getVideoCallIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2838,8 +2806,6 @@
 
 .method public static handleAlerttonePicked(Lcom/android/contacts/ContactsUtils$UpdateDataInterface;Landroid/net/Uri;)V
     .locals 2
-    .param p0    # Lcom/android/contacts/ContactsUtils$UpdateDataInterface;
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -2869,9 +2835,6 @@
 
 .method public static handleRingtonePicked(Lcom/android/contacts/ContactsUtils$UpdateDataInterface;Landroid/content/Context;Landroid/net/Uri;)V
     .locals 4
-    .param p0    # Lcom/android/contacts/ContactsUtils$UpdateDataInterface;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p2, :cond_0
 
@@ -2931,8 +2894,6 @@
 
 .method public static handleVibrationPicked(Lcom/android/contacts/ContactsUtils$UpdateDataInterface;Landroid/net/Uri;)V
     .locals 2
-    .param p0    # Lcom/android/contacts/ContactsUtils$UpdateDataInterface;
-    .param p1    # Landroid/net/Uri;
 
     if-nez p1, :cond_0
 
@@ -3442,7 +3403,6 @@
 
 .method public static isAvailableOCR(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3472,7 +3432,6 @@
 
 .method public static final isDialable(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -3575,7 +3534,6 @@
 
 .method public static isEasyMode(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/contacts/ContactsUtils;->isEasyModeSettings(Landroid/content/Context;)Z
 
@@ -3614,7 +3572,6 @@
 
 .method public static isEasyModeContacts(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -3653,7 +3610,6 @@
 
 .method public static isEasyModeSettings(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -3692,7 +3648,6 @@
 
 .method public static isEmergencyMode(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/16 v4, 0x200
 
@@ -3779,7 +3734,6 @@
 
 .method public static isGraphic(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3806,7 +3760,6 @@
 
 .method public static isKnoxContainerOnlyMode(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/os/PersonaManager;->isKioskModeEnabled(Landroid/content/Context;)Z
 
@@ -3851,8 +3804,6 @@
 
 .method public static isMMSAvailable(Landroid/content/Context;I)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -4100,7 +4051,6 @@
 
 .method public static isUltraPowerSavingMode(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/16 v4, 0x200
 
@@ -4159,7 +4109,6 @@
 
 .method public static isUndeletableProfile(J)Z
     .locals 2
-    .param p0    # J
 
     const/4 v0, 0x1
 
@@ -4190,9 +4139,6 @@
 
 .method public static loadContactPhotoWithRawContactId(Landroid/content/Context;JLandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v7, 0x0
 
@@ -4304,9 +4250,6 @@
 
 .method public static loadProfileIntentWithRawContactId(Landroid/content/Context;JLcom/android/contacts/common/model/account/AccountType;)Landroid/content/Intent;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Lcom/android/contacts/common/model/account/AccountType;
 
     const/4 v1, 0x1
 
@@ -4460,7 +4403,6 @@
 
 .method public static lookupProviderNameFromId(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -4648,7 +4590,6 @@
 
 .method private static preAccountCheck(Lcom/android/contacts/common/model/account/AccountType;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/common/model/account/AccountType;
 
     if-eqz p0, :cond_1
 
@@ -4678,7 +4619,6 @@
 
 .method public static safeDialogDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p0    # Landroid/content/DialogInterface;
 
     if-eqz p0, :cond_0
 
@@ -4701,9 +4641,6 @@
 
 .method public static safeDialogShow(Landroid/app/DialogFragment;Landroid/app/FragmentManager;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/app/DialogFragment;
-    .param p1    # Landroid/app/FragmentManager;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -4766,9 +4703,6 @@
 
 .method public static setTextSize(Landroid/content/Context;Landroid/widget/TextView;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
 
     if-eqz p0, :cond_0
 
@@ -4807,7 +4741,6 @@
 
 .method public static shouldSamsungMergeMenuHide(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -4849,7 +4782,6 @@
 
 .method public static shouldShowHelpMenu(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -4928,11 +4860,6 @@
 
 .method public static startToneAndVibrationSelection(Lcom/android/contacts/ContactsUtils$UpdateDataInterface;Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Lcom/android/contacts/ContactsUtils$UpdateDataInterface;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

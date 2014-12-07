@@ -63,8 +63,6 @@
 
 .method public onScroll(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/activities/DetailsFragment$1;->findSummaryStrup()V
 

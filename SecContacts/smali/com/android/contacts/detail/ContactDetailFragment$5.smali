@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/contacts/detail/ContactDetailFragment$ViewEntry;Lcom/android/contacts/detail/ContactDetailFragment$ViewEntry;)I
     .locals 10
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment$ViewEntry;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$ViewEntry;
 
     const-wide/16 v8, 0x0
 
@@ -107,8 +105,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/detail/ContactDetailFragment$ViewEntry;
 

@@ -20,7 +20,6 @@
 
 .method public static getAccountIcon(Ljava/lang/String;)Lcom/samsung/contacts/list/AccountIconInfo;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lcom/samsung/contacts/list/AccountIconInfo;
 
@@ -63,7 +62,6 @@
 
 .method public static getAccountIconInfoArray(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -191,7 +189,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -241,7 +238,6 @@
 
 .method public getAccountIcon(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/contacts/common/model/AccountTypeManager;->getInstance(Landroid/content/Context;)Lcom/android/contacts/common/model/AccountTypeManager;
 

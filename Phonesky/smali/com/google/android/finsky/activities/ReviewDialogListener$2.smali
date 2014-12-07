@@ -36,9 +36,6 @@
 # virtual methods
 .method public onRateReviewCommitted(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/ReviewDialogListener$2;->this$0:Lcom/google/android/finsky/activities/ReviewDialogListener;
 

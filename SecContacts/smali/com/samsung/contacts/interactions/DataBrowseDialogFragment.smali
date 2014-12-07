@@ -51,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;->mChecked:Z
 
@@ -60,8 +59,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;->mChecked:Z
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;)Lcom/samsung/contacts/interactions/DataBrowseListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;->mAdapter:Lcom/samsung/contacts/interactions/DataBrowseListAdapter;
 
@@ -79,7 +75,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;->mPartition:Ljava/lang/String;
 
@@ -88,7 +83,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;->mUri:Landroid/net/Uri;
 
@@ -97,11 +91,6 @@
 
 .method public static show(Landroid/app/FragmentManager;Landroid/app/Fragment;Lcom/samsung/contacts/interactions/InteractionContactDatas;Ljava/lang/String;Landroid/net/Uri;Z)V
     .locals 6
-    .param p0    # Landroid/app/FragmentManager;
-    .param p2    # Lcom/samsung/contacts/interactions/InteractionContactDatas;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -197,7 +186,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x0
 
@@ -385,7 +373,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/interactions/DataBrowseDialogFragment;->getTargetFragment()Landroid/app/Fragment;
 
@@ -402,7 +389,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "DataBrowseDialogContactsFragment"
 

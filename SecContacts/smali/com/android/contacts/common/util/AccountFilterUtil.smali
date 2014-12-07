@@ -32,9 +32,6 @@
 
 .method public static handleAccountFilterResult(Lcom/android/contacts/common/list/ContactListFilterController;ILandroid/content/Intent;)V
     .locals 3
-    .param p0    # Lcom/android/contacts/common/list/ContactListFilterController;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     const/4 v1, -0x1
 
@@ -127,10 +124,6 @@
 
 .method private static updateAccountFilterTitle(Landroid/view/View;Lcom/android/contacts/common/list/ContactListFilter;ZZ)Z
     .locals 10
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v9, -0x2
 
@@ -511,9 +504,6 @@
 
 .method public static updateAccountFilterTitleForPeople(Landroid/view/View;Lcom/android/contacts/common/list/ContactListFilter;Z)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -526,9 +516,6 @@
 
 .method public static updateAccountFilterTitleForPhone(Landroid/view/View;Lcom/android/contacts/common/list/ContactListFilter;Z)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
-    .param p2    # Z
 
     const/4 v0, 0x1
 

@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/tts/TtsEngineSettingsFragment;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/tts/TtsEngineSettingsFragment;
 
     iget-object v0, p0, Lcom/android/settings/tts/TtsEngineSettingsFragment;->mLocalePreference:Landroid/preference/ListPreference;
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/tts/TtsEngineSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/tts/TtsEngineSettingsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/tts/TtsEngineSettingsFragment;->checkTtsData()V
 
@@ -367,7 +365,6 @@
 
 .method private setLocalePreference(I)V
     .locals 2
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -681,7 +678,6 @@
 
 .method private updateLanguageTo(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -955,9 +951,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v0, 0x7b9
 
@@ -973,7 +966,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1229,8 +1221,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/settings/tts/TtsEngineSettingsFragment;->mLocalePreference:Landroid/preference/ListPreference;
 
@@ -1253,7 +1243,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 

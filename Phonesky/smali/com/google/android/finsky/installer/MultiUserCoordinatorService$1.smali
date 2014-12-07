@@ -31,8 +31,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/installer/MultiUserCoordinatorService$1;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/installer/MultiUserCoordinatorService$1;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/installer/MultiUserCoordinatorService$1;->notifyReleased(Ljava/lang/String;)V
 
@@ -41,7 +39,6 @@
 
 .method private notifyReleased(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService$1;->this$0:Lcom/google/android/finsky/installer/MultiUserCoordinatorService;
 
@@ -139,7 +136,6 @@
 
 .method private notifyTaken(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/google/android/finsky/installer/MultiUserCoordinatorService$1;->this$0:Lcom/google/android/finsky/installer/MultiUserCoordinatorService;
 
@@ -239,7 +235,6 @@
 # virtual methods
 .method public acquirePackage(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -403,7 +398,6 @@
 
 .method public registerListener(Lcom/google/android/finsky/installer/IMultiUserCoordinatorServiceListener;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/installer/IMultiUserCoordinatorServiceListener;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUserHandle()Landroid/os/UserHandle;
 
@@ -605,7 +599,6 @@
 
 .method public releasePackage(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUserHandle()Landroid/os/UserHandle;
 

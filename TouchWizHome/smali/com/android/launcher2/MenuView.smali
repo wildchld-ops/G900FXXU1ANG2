@@ -91,7 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -102,8 +101,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x0
 
@@ -265,8 +262,6 @@
 
 .method private collectAnimators(Ljava/util/ArrayList;Landroid/animation/Animator;Landroid/animation/Animator;)V
     .locals 6
-    .param p2    # Landroid/animation/Animator;
-    .param p3    # Landroid/animation/Animator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -357,7 +352,6 @@
 
 .method private static removeButton(Landroid/view/View;)V
     .locals 1
-    .param p0    # Landroid/view/View;
 
     if-eqz p0, :cond_0
 
@@ -809,7 +803,6 @@
 
 .method public changeState(Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     iget-object v1, p0, Lcom/android/launcher2/MenuView;->mTabManager:Lcom/android/launcher2/tabs/TabManager;
 
@@ -1273,7 +1266,6 @@
 
 .method public getQuickView(Z)Lcom/android/launcher2/QuickViewMainMenu;
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/launcher2/MenuView;->mQuickView:Lcom/android/launcher2/QuickViewMainMenu;
 
@@ -1536,7 +1528,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 13
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v12, 0x0
 
@@ -2352,7 +2343,6 @@
 
 .method public onHomePressed(Z)Z
     .locals 2
-    .param p1    # Z
 
     sget-boolean v1, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -2390,7 +2380,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -2414,11 +2403,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 9
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
@@ -2478,8 +2462,6 @@
 
 .method public onMeasure(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -2775,7 +2757,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v2, p1, Lcom/android/launcher2/MenuView$SavedState;
 
@@ -2933,8 +2914,6 @@
 
 .method public onVisibilityChanged(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -2980,7 +2959,6 @@
 
 .method public packagesChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/android/launcher2/MenuView;->mTabManager:Lcom/android/launcher2/tabs/TabManager;
 
@@ -3164,7 +3142,6 @@
 
 .method public setAccessibilityEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -3317,7 +3294,6 @@
 
 .method public setViewType(Lcom/android/launcher2/MenuView$ViewType;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/MenuView$ViewType;
 
     const-string v3, "MenuView"
 

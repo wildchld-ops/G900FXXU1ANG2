@@ -136,10 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/launcher2/HomeItem;Landroid/view/View;Lcom/android/launcher2/CellLayoutWithResizableWidgets;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/HomeItem;
-    .param p3    # Landroid/view/View;
-    .param p4    # Lcom/android/launcher2/CellLayoutWithResizableWidgets;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -614,8 +610,6 @@
 
 .method private beginResizeIfPointInRegion(II)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v7, 0x3f800000
 
@@ -2207,8 +2201,6 @@
 
 .method private updateDeltas(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -2393,8 +2385,6 @@
 
 .method private visualizeResizeForDelta(II)V
     .locals 20
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct/range {p0 .. p2}, Lcom/android/launcher2/AppWidgetResizeFrame;->updateDeltas(II)V
 
@@ -2917,7 +2907,6 @@
 # virtual methods
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -3002,8 +2991,6 @@
 
 .method public isPointInFrame(FF)Z
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -3124,7 +3111,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -3133,7 +3119,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -3177,7 +3162,6 @@
 
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 7
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v6, 0x1
 
@@ -3230,7 +3214,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getCurrentSpanX()F
 
@@ -3259,7 +3242,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v0, 0x0
 
@@ -3274,7 +3256,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x1
 
@@ -3568,7 +3549,6 @@
 
 .method public preScaleParentMatrix(Landroid/graphics/Matrix;)V
     .locals 4
-    .param p1    # Landroid/graphics/Matrix;
 
     iget v2, p0, Lcom/android/launcher2/AppWidgetResizeFrame;->mBackgroundPadding:I
 
@@ -3625,7 +3605,6 @@
 
 .method public snapToWidget(Z)V
     .locals 18
-    .param p1    # Z
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 

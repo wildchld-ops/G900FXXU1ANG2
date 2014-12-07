@@ -36,7 +36,6 @@
 # virtual methods
 .method public onItemSelected(Lcom/samsung/android/bezelinteraction/BezelEvent;)V
     .locals 21
-    .param p1    # Lcom/samsung/android/bezelinteraction/BezelEvent;
 
     move-object/from16 v0, p0
 

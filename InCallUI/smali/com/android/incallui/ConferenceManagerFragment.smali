@@ -60,10 +60,6 @@
 
 .method public displayCallerInfoForConferenceRow(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/incallui/ConferenceManagerFragment;->mConferenceCallList:[Landroid/view/ViewGroup;
 
@@ -124,12 +120,6 @@
 
 .method public displayCallerInfoForConferenceRow(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/drawable/Drawable;Z)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/graphics/drawable/Drawable;
-    .param p6    # Z
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/android/incallui/ConferenceManagerFragment;->displayCallerInfoForConferenceRow(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -138,8 +128,6 @@
 
 .method public enableEndButtonForRow(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/incallui/ConferenceManagerFragment;->mConferenceCallList:[Landroid/view/ViewGroup;
 
@@ -158,7 +146,6 @@
 
 .method public enableEndButtonForRows(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -213,7 +200,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -222,7 +208,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -231,9 +216,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v3, 0x7f040018
 
@@ -361,7 +343,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const v2, 0x7f080065
 
@@ -481,8 +462,6 @@
 
 .method public setCanSeparateButtonForRow(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -523,8 +502,6 @@
 
 .method public setRowVisible(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -553,7 +530,6 @@
 
 .method public setVisible(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -620,7 +596,6 @@
 
 .method public setupEndButtonForRow(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/ConferenceManagerFragment;->mConferenceCallList:[Landroid/view/ViewGroup;
 

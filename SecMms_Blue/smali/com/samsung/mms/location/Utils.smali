@@ -14,8 +14,6 @@
 
 .method public static compareDouble(DD)Z
     .locals 8
-    .param p0    # D
-    .param p2    # D
 
     const-wide v6, 0x3f1a36e2e0000000L
 
@@ -34,9 +32,6 @@
 
 .method public static compareDouble(DDD)Z
     .locals 2
-    .param p0    # D
-    .param p2    # D
-    .param p4    # D
 
     sub-double v0, p0, p2
 
@@ -61,8 +56,6 @@
 
 .method public static compareFloat(FF)Z
     .locals 2
-    .param p0    # F
-    .param p1    # F
 
     const v0, 0x38d1b717
 
@@ -77,9 +70,6 @@
 
 .method public static compareFloat(FFF)Z
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     sub-float v0, p0, p1
 

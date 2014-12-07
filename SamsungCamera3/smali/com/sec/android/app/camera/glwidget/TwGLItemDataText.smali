@@ -61,12 +61,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFI)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -107,10 +101,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFI)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -194,7 +184,6 @@
 
 .method private updateText(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemDataText;->mText:Lcom/sec/android/glview/TwGLText;
 
@@ -407,8 +396,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemDataText;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -524,8 +511,6 @@
 
 .method public setAlign(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemDataText;->mText:Lcom/sec/android/glview/TwGLText;
 
@@ -541,7 +526,6 @@
 
 .method public setColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemDataText;->mText:Lcom/sec/android/glview/TwGLText;
 

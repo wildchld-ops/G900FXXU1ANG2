@@ -320,7 +320,6 @@
 
 .method private checkCallType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -367,9 +366,6 @@
 
 .method private checkContains(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     array-length v1, p3
 
@@ -445,8 +441,6 @@
 
 .method private checkGroup(Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;)Z
     .locals 13
-    .param p1    # Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;
-    .param p2    # Lcom/samsung/dialer/calllog/LogsFindoSuggestionsProvider$LogItem;
 
     move-object v7, p1
 
@@ -648,7 +642,6 @@
 
 .method private checkLogGroup(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -689,9 +682,6 @@
 
 .method private formatPhoneNumber(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -730,7 +720,6 @@
 
 .method private getFindoSuggestions([Ljava/lang/String;)Landroid/database/Cursor;
     .locals 24
-    .param p1    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1600,7 +1589,6 @@
 
 .method private getPhotoUri(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1778,7 +1766,6 @@
 
 .method private getType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2204,7 +2191,6 @@
 
 .method private setGrouping(Ljava/util/ArrayList;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 11
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2387,9 +2373,6 @@
 # virtual methods
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2398,7 +2381,6 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -2407,8 +2389,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v0, 0x0
 
@@ -2425,11 +2405,6 @@
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const-wide/16 v6, 0x0
 
@@ -2706,10 +2681,6 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v0, 0x0
 

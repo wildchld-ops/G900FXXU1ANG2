@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/sim/ContactBroadCastReceiver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/sim/ContactBroadCastReceiver;
 
     iget-object v0, p0, Lcom/samsung/contacts/sim/ContactBroadCastReceiver;->mContext:Landroid/content/Context;
 

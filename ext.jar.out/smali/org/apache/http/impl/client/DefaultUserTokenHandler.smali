@@ -17,7 +17,6 @@
 
 .method private static getAuthPrincipal(Lorg/apache/http/auth/AuthState;)Ljava/security/Principal;
     .locals 3
-    .param p0    # Lorg/apache/http/auth/AuthState;
 
     invoke-virtual {p0}, Lorg/apache/http/auth/AuthState;->getAuthScheme()Lorg/apache/http/auth/AuthScheme;
 
@@ -60,7 +59,6 @@
 # virtual methods
 .method public getUserToken(Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;
     .locals 6
-    .param p1    # Lorg/apache/http/protocol/HttpContext;
 
     const/4 v4, 0x0
 

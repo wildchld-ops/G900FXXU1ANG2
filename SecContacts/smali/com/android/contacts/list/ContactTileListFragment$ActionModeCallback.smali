@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/list/ContactTileListFragment;Lcom/android/contacts/list/ContactTileListFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/list/ContactTileListFragment;
-    .param p2    # Lcom/android/contacts/list/ContactTileListFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;-><init>(Lcom/android/contacts/list/ContactTileListFragment;)V
 
@@ -48,7 +46,6 @@
 
 .method private createLauncherShortcutWithContact(Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     iget-object v2, p0, Lcom/android/contacts/list/ContactTileListFragment$ActionModeCallback;->this$0:Lcom/android/contacts/list/ContactTileListFragment;
 
@@ -140,8 +137,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 27
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     new-instance v21, Ljava/util/ArrayList;
 
@@ -898,8 +893,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"
@@ -1088,7 +1081,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v3, 0x0
 
@@ -1167,8 +1159,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 
@@ -1463,8 +1453,6 @@
 
 .method public setActionContextBarVisibility(ZLandroid/view/ActionMode;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Landroid/view/ActionMode;
 
     const/4 v5, 0x0
 

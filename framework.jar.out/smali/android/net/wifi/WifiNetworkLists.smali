@@ -90,8 +90,6 @@
 
 .method private appendHex(Ljava/lang/StringBuffer;B)V
     .locals 3
-    .param p1    # Ljava/lang/StringBuffer;
-    .param p2    # B
 
     const-string v0, "0123456789ABCDEF"
 
@@ -124,7 +122,6 @@
 # virtual methods
 .method public addExistNetworkList(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -372,7 +369,6 @@
 
 .method public addNewNetworkList(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -630,8 +626,6 @@
 
 .method public encrypt([B[B)[B
     .locals 4
-    .param p1    # [B
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -663,7 +657,6 @@
 
 .method public encryptedBssid(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -720,7 +713,6 @@
 
 .method public findDuplicatedNetwork(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -854,8 +846,6 @@
 
 .method public findIpLeasedBefore(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -903,7 +893,6 @@
 
 .method public findNetwork(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Landroid/net/wifi/WifiNetworkLists;->mLists:Ljava/util/ArrayList;
 
@@ -1013,7 +1002,6 @@
 
 .method public final getNetwork(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1079,7 +1067,6 @@
 
 .method public getRawKey([B)[B
     .locals 5
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1117,7 +1104,6 @@
 
 .method public mergeNetwork(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v8, Landroid/net/wifi/WifiNetworkLists;->DBG:Z
 
@@ -1341,7 +1327,6 @@
 
 .method public printNetworkContains(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "WifiNetworkLists"
 
@@ -1374,7 +1359,6 @@
 
 .method public putNewNetworkMap(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/net/wifi/WifiNetworkLists;->mNetworkMap:Ljava/util/HashMap;
 
@@ -1454,7 +1438,6 @@
 
 .method public removeNetworkMap(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/net/wifi/WifiNetworkLists;->mNetworkMap:Ljava/util/HashMap;
 
@@ -1635,7 +1618,6 @@
 
 .method public toHex([B)Ljava/lang/String;
     .locals 3
-    .param p1    # [B
 
     if-nez p1, :cond_0
 

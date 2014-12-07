@@ -14,9 +14,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/placesapi/AdrMicroformatParser;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/placesapi/AdrMicroformatParser;
-    .param p4    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/volley/AndroidHttpClient;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p2    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     iput-object p1, p0, Lcom/google/android/volley/AndroidHttpClient$2;->this$0:Lcom/google/android/volley/AndroidHttpClient;
 
@@ -35,18 +33,6 @@
 # virtual methods
 .method protected createClientRequestDirector(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/conn/routing/HttpRoutePlanner;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/HttpRequestRetryHandler;Lorg/apache/http/client/RedirectHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/UserTokenHandler;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/client/RequestDirector;
     .locals 13
-    .param p1    # Lorg/apache/http/protocol/HttpRequestExecutor;
-    .param p2    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p3    # Lorg/apache/http/ConnectionReuseStrategy;
-    .param p4    # Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
-    .param p5    # Lorg/apache/http/conn/routing/HttpRoutePlanner;
-    .param p6    # Lorg/apache/http/protocol/HttpProcessor;
-    .param p7    # Lorg/apache/http/client/HttpRequestRetryHandler;
-    .param p8    # Lorg/apache/http/client/RedirectHandler;
-    .param p9    # Lorg/apache/http/client/AuthenticationHandler;
-    .param p10    # Lorg/apache/http/client/AuthenticationHandler;
-    .param p11    # Lorg/apache/http/client/UserTokenHandler;
-    .param p12    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lcom/google/android/volley/elegant/ElegantRequestDirector;
 

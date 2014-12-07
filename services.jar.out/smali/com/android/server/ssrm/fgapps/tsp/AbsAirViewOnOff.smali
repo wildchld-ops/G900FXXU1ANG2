@@ -221,8 +221,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff;->logOnEng(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -231,8 +229,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff;->logOnEng(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -366,8 +362,6 @@
 
 .method checkFPS(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -661,7 +655,6 @@
 
 .method protected discoverAndRegisterPackagesWithFingerHoverIntentFilter(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const-string v2, "activity"
 
@@ -801,15 +794,12 @@
 
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onFrameRateUpdate(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -826,9 +816,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/server/ssrm/fgapps/FgAppListener;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/server/ssrm/fgapps/FgAppListener;->onReceive(Landroid/content/Context;Landroid/content/Intent;Lcom/android/server/ssrm/fgapps/FgAppListener;)V
 
@@ -1675,7 +1662,6 @@
 
 .method declared-synchronized sendHoverCommand(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1734,7 +1720,6 @@
 
 .method public setMultiverseEnable(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff;->mDevice:Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff$DeviceInfo;
 
@@ -1747,7 +1732,6 @@
 
 .method public setWindowOrientation(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1835,7 +1819,6 @@
 
 .method updateAirViewStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/ssrm/fgapps/tsp/AbsAirViewOnOff;->mLastFps:I
 
@@ -1846,8 +1829,6 @@
 
 .method protected updatePackagesWithFingerHoverIntentFilter(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/16 v11, 0x200
 
@@ -2275,8 +2256,6 @@
 
 .method writeToSysfs(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "SSRMv2:TSP:AirViewOnOff"
 

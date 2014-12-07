@@ -53,9 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/sec/android/touchwiz/widget/TwSweepActionListView;Lcom/samsung/contacts/sweepaction/ContactListSweepActionHandler;Lcom/android/contacts/common/list/ContactListAdapter;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/android/touchwiz/widget/TwSweepActionListView;
-    .param p3    # Lcom/samsung/contacts/sweepaction/ContactListSweepActionHandler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -129,15 +126,12 @@
 # virtual methods
 .method public onSweepActionCanceled(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onSweepActionFired(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -456,7 +450,6 @@
 
 .method public onSweepActionStarted(I)V
     .locals 19
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1235,7 +1228,6 @@
 
 .method public setImsLowSignalHelper(Lcom/samsung/contacts/util/ImsLowSignalHelper;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/util/ImsLowSignalHelper;
 
     iput-object p1, p0, Lcom/samsung/contacts/sweepaction/ContactListSweepActionListener;->mImsLowSignalHelper:Lcom/samsung/contacts/util/ImsLowSignalHelper;
 

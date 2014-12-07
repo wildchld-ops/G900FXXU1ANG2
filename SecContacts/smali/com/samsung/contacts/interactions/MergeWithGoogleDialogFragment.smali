@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;
 
     invoke-direct {p0}, Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;->createAccountSelectionDialog()V
 
@@ -67,8 +66,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;Lcom/android/contacts/common/model/account/AccountWithDataSet;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;->mergeWithGoogle(Lcom/android/contacts/common/model/account/AccountWithDataSet;)Ljava/lang/String;
 
@@ -79,8 +76,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;->showResultToast(Ljava/lang/String;)V
 
@@ -160,7 +155,6 @@
 
 .method private mergeWithGoogle(Lcom/android/contacts/common/model/account/AccountWithDataSet;)Ljava/lang/String;
     .locals 12
-    .param p1    # Lcom/android/contacts/common/model/account/AccountWithDataSet;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;->mActivity:Landroid/app/Activity;
 
@@ -349,7 +343,6 @@
 
 .method private showResultToast(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment;->mActivity:Landroid/app/Activity;
 
@@ -368,7 +361,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -379,7 +371,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v2, Lcom/samsung/contacts/interactions/MergeWithGoogleDialogFragment$1;
 

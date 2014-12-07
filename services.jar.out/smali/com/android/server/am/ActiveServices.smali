@@ -114,7 +114,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;)V
     .locals 3
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -188,9 +187,6 @@
 
 .method private final bringDownServiceIfNeededLocked(Lcom/android/server/am/ServiceRecord;ZZ)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/am/ActiveServices;->isServiceNeeded(Lcom/android/server/am/ServiceRecord;ZZ)Z
 
@@ -218,7 +214,6 @@
 
 .method private final bringDownServiceLocked(Lcom/android/server/am/ServiceRecord;)V
     .locals 13
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     iget-object v10, p1, Lcom/android/server/am/ServiceRecord;->connections:Landroid/util/ArrayMap;
 
@@ -745,10 +740,6 @@
 
 .method private final bringUpServiceLocked(Lcom/android/server/am/ServiceRecord;IZZ)Ljava/lang/String;
     .locals 14
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v1, p1, Lcom/android/server/am/ServiceRecord;->app:Lcom/android/server/am/ProcessRecord;
 
@@ -1375,9 +1366,6 @@
 
 .method private final bumpServiceExecutingLocked(Lcom/android/server/am/ServiceRecord;ZLjava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1529,7 +1517,6 @@
 
 .method private clearRestartingIfNeededLocked(Lcom/android/server/am/ServiceRecord;)V
     .locals 7
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     iget-object v2, p1, Lcom/android/server/am/ServiceRecord;->restartTracker:Lcom/android/internal/app/ProcessStats$ServiceState;
 
@@ -1600,10 +1587,6 @@
 
 .method private collectForceStopServicesLocked(Ljava/lang/String;IZZLandroid/util/ArrayMap;Ljava/util/ArrayList;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1733,12 +1716,6 @@
 
 .method private dumpService(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Lcom/android/server/am/ServiceRecord;[Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # Lcom/android/server/am/ServiceRecord;
-    .param p5    # [Ljava/lang/String;
-    .param p6    # Z
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1969,9 +1946,6 @@
 
 .method private final findServiceLocked(Landroid/content/ComponentName;Landroid/os/IBinder;I)Lcom/android/server/am/ServiceRecord;
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p3}, Lcom/android/server/am/ActiveServices;->getServiceByName(Landroid/content/ComponentName;I)Lcom/android/server/am/ServiceRecord;
 
@@ -1990,7 +1964,6 @@
 
 .method private getServiceMap(I)Lcom/android/server/am/ActiveServices$ServiceMap;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/am/ActiveServices;->mServiceMap:Landroid/util/SparseArray;
 
@@ -2024,8 +1997,6 @@
 
 .method private isForceStopDisabled(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -2054,9 +2025,6 @@
 
 .method private final isServiceNeeded(Lcom/android/server/am/ServiceRecord;ZZ)Z
     .locals 2
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -2085,9 +2053,6 @@
 
 .method private final realStartServiceLocked(Lcom/android/server/am/ServiceRecord;Lcom/android/server/am/ProcessRecord;Z)V
     .locals 10
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2349,10 +2314,6 @@
 
 .method private final requestServiceBindingLocked(Lcom/android/server/am/ServiceRecord;Lcom/android/server/am/IntentBindRecord;ZZ)Z
     .locals 6
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Lcom/android/server/am/IntentBindRecord;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v2, 0x1
 
@@ -2445,8 +2406,6 @@
 
 .method private final requestServiceBindingsLocked(Lcom/android/server/am/ServiceRecord;Z)V
     .locals 3
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
 
     iget-object v2, p1, Lcom/android/server/am/ServiceRecord;->bindings:Landroid/util/ArrayMap;
 
@@ -2486,13 +2445,6 @@
 
 .method private retrieveServiceLocked(Landroid/content/Intent;Ljava/lang/String;IIIZZ)Lcom/android/server/am/ActiveServices$ServiceLookupResult;
     .locals 28
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
 
     const/16 v23, 0x0
 
@@ -3165,8 +3117,6 @@
 
 .method private final scheduleServiceRestartLocked(Lcom/android/server/am/ServiceRecord;Z)Z
     .locals 25
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -3983,9 +3933,6 @@
 
 .method private final sendServiceArgsLocked(Lcom/android/server/am/ServiceRecord;ZZ)V
     .locals 10
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v9, 0x1
 
@@ -4129,9 +4076,6 @@
 
 .method private serviceDoneExecutingLocked(Lcom/android/server/am/ServiceRecord;ZZ)V
     .locals 7
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v6, 0x0
 
@@ -4304,7 +4248,6 @@
 
 .method private serviceProcessGoneLocked(Lcom/android/server/am/ServiceRecord;)V
     .locals 6
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     const/4 v5, 0x1
 
@@ -4346,7 +4289,6 @@
 
 .method private stopServiceLocked(Lcom/android/server/am/ServiceRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     const/4 v4, 0x0
 
@@ -4421,9 +4363,6 @@
 
 .method private final unscheduleServiceRestartLocked(Lcom/android/server/am/ServiceRecord;IZ)Z
     .locals 5
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # I
-    .param p3    # Z
 
     if-nez p3, :cond_0
 
@@ -4479,8 +4418,6 @@
 
 .method private updateServiceClientActivitiesLocked(Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ConnectionRecord;)Z
     .locals 9
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # Lcom/android/server/am/ConnectionRecord;
 
     const/4 v7, 0x0
 
@@ -4630,8 +4567,6 @@
 
 .method private updateServiceForegroundLocked(Lcom/android/server/am/ProcessRecord;Z)V
     .locals 4
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -4686,8 +4621,6 @@
 # virtual methods
 .method attachApplicationLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -4893,13 +4826,6 @@
 
 .method bindServiceLocked(Landroid/app/IApplicationThread;Landroid/os/IBinder;Landroid/content/Intent;Ljava/lang/String;Landroid/app/IServiceConnection;II)I
     .locals 22
-    .param p1    # Landroid/app/IApplicationThread;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/app/IServiceConnection;
-    .param p6    # I
-    .param p7    # I
 
     move-object/from16 v0, p0
 
@@ -5580,9 +5506,6 @@
 
 .method cleanUpRemovedTaskLocked(Lcom/android/server/am/TaskRecord;Landroid/content/ComponentName;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Lcom/android/server/am/TaskRecord;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -5735,12 +5658,6 @@
 
 .method protected dumpService(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;[Ljava/lang/String;IZ)Z
     .locals 22
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Z
 
     new-instance v18, Ljava/util/ArrayList;
 
@@ -6067,13 +5984,6 @@
 
 .method dumpServicesLocked(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;IZZLjava/lang/String;)V
     .locals 35
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
 
     const/16 v17, 0x0
 
@@ -7704,10 +7614,6 @@
 
 .method forceStopLocked(Ljava/lang/String;IZZ)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v8, 0x0
 
@@ -7827,7 +7733,6 @@
 
 .method public getRunningServiceControlPanelLocked(Landroid/content/ComponentName;)Landroid/app/PendingIntent;
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -7910,8 +7815,6 @@
 
 .method getRunningServiceInfoLocked(II)Ljava/util/List;
     .locals 14
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -8146,8 +8049,6 @@
 
 .method getServiceByName(Landroid/content/ComponentName;I)Lcom/android/server/am/ServiceRecord;
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/am/ActiveServices;->getServiceMap(I)Lcom/android/server/am/ActiveServices$ServiceMap;
 
@@ -8166,7 +8067,6 @@
 
 .method getServices(I)Landroid/util/ArrayMap;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -8189,7 +8089,6 @@
 
 .method hasBackgroundServices(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -8221,8 +8120,6 @@
 
 .method final killServicesLocked(Lcom/android/server/am/ProcessRecord;Z)V
     .locals 14
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # Z
 
     iget-object v9, p1, Lcom/android/server/am/ProcessRecord;->services:Landroid/util/ArraySet;
 
@@ -8806,7 +8703,6 @@
 
 .method makeRunningServiceInfoLocked(Lcom/android/server/am/ServiceRecord;)Landroid/app/ActivityManager$RunningServiceInfo;
     .locals 7
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     new-instance v4, Landroid/app/ActivityManager$RunningServiceInfo;
 
@@ -8991,8 +8887,6 @@
 
 .method peekServiceLocked(Landroid/content/Intent;Ljava/lang/String;)Landroid/os/IBinder;
     .locals 11
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -9121,7 +9015,6 @@
 
 .method final performServiceRestartLocked(Lcom/android/server/am/ServiceRecord;)V
     .locals 3
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     iget-object v0, p0, Lcom/android/server/am/ActiveServices;->mRestartingServices:Ljava/util/ArrayList;
 
@@ -9156,7 +9049,6 @@
 
 .method processStartTimedOutLocked(Lcom/android/server/am/ProcessRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     const/4 v0, 0x0
 
@@ -9246,9 +9138,6 @@
 
 .method publishServiceLocked(Lcom/android/server/am/ServiceRecord;Landroid/content/Intent;Landroid/os/IBinder;)V
     .locals 12
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/IBinder;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -9455,9 +9344,6 @@
 
 .method removeConnectionLocked(Lcom/android/server/am/ConnectionRecord;Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/ActivityRecord;)V
     .locals 11
-    .param p1    # Lcom/android/server/am/ConnectionRecord;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
-    .param p3    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v10, 0x0
 
@@ -9767,7 +9653,6 @@
 
 .method scheduleServiceTimeoutLocked(Lcom/android/server/am/ProcessRecord;)V
     .locals 6
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     iget-object v3, p1, Lcom/android/server/am/ProcessRecord;->executingServices:Landroid/util/ArraySet;
 
@@ -9829,10 +9714,6 @@
 
 .method serviceDoneExecutingLocked(Lcom/android/server/am/ServiceRecord;III)V
     .locals 7
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -9977,7 +9858,6 @@
 
 .method serviceTimeout(Lcom/android/server/am/ProcessRecord;)V
     .locals 14
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     const/4 v2, 0x0
 
@@ -10195,11 +10075,6 @@
 
 .method public setServiceForegroundLocked(Landroid/content/ComponentName;Landroid/os/IBinder;ILandroid/app/Notification;Z)V
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Landroid/app/Notification;
-    .param p5    # Z
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -10339,11 +10214,6 @@
 
 .method startServiceInnerLocked(Lcom/android/server/am/ActiveServices$ServiceMap;Landroid/content/Intent;Lcom/android/server/am/ServiceRecord;ZZ)Landroid/content/ComponentName;
     .locals 7
-    .param p1    # Lcom/android/server/am/ActiveServices$ServiceMap;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/server/am/ServiceRecord;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v1, 0x1
 
@@ -10471,13 +10341,6 @@
 
 .method startServiceLocked(Landroid/app/IApplicationThread;Landroid/content/Intent;Ljava/lang/String;IIILandroid/content/Context;)Landroid/content/ComponentName;
     .locals 21
-    .param p1    # Landroid/app/IApplicationThread;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/content/Context;
 
     const-string v2, "com.google.android.location.reporting.ACTION_INSISTENT_SYNC"
 
@@ -10913,10 +10776,6 @@
 
 .method stopServiceLocked(Landroid/app/IApplicationThread;Landroid/content/Intent;Ljava/lang/String;I)I
     .locals 13
-    .param p1    # Landroid/app/IApplicationThread;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget-object v1, p0, Lcom/android/server/am/ActiveServices;->mAm:Lcom/android/server/am/ActivityManagerService;
 
@@ -11062,9 +10921,6 @@
 
 .method stopServiceTokenLocked(Landroid/content/ComponentName;Landroid/os/IBinder;I)Z
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -11239,9 +11095,6 @@
 
 .method unbindFinishedLocked(Lcom/android/server/am/ServiceRecord;Landroid/content/Intent;Z)V
     .locals 9
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -11354,7 +11207,6 @@
 
 .method unbindServiceLocked(Landroid/app/IServiceConnection;)Z
     .locals 9
-    .param p1    # Landroid/app/IServiceConnection;
 
     const/4 v5, 0x0
 

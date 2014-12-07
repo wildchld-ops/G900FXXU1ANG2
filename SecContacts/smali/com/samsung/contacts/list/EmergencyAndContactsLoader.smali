@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -451,7 +449,6 @@
 
 .method public setLoadEmergency(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/list/EmergencyAndContactsLoader;->mLoadEmergency:Z
 
@@ -460,7 +457,6 @@
 
 .method public setProjection([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     invoke-super {p0, p1}, Lcom/android/contacts/common/list/ProfileAndContactsLoader;->setProjection([Ljava/lang/String;)V
 
@@ -471,7 +467,6 @@
 
 .method public setSortOrder(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/content/CursorLoader;->setSortOrder(Ljava/lang/String;)V
 

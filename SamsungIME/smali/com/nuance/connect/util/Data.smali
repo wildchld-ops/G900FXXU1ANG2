@@ -14,7 +14,6 @@
 
 .method public static serializeObject(Ljava/lang/Object;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -63,7 +62,6 @@
 
 .method public static unserializeObject(Ljava/lang/String;)Ljava/lang/Object;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

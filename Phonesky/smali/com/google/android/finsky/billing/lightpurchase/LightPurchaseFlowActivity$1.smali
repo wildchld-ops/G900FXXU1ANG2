@@ -36,8 +36,6 @@
 # virtual methods
 .method public onFreePurchaseSuccess(Landroid/accounts/Account;Lcom/google/android/finsky/api/model/Document;)V
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
 
     const/4 v4, 0x0
 

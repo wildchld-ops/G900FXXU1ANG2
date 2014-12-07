@@ -33,7 +33,6 @@
 # virtual methods
 .method public getOffers(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureNotOnMainThread()V
 
@@ -120,7 +119,6 @@
 
 .method public hasValidCreditCard(Ljava/lang/String;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

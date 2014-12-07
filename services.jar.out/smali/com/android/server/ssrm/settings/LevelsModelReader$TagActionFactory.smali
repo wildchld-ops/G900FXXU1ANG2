@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/ssrm/settings/LevelsModelReader;Lcom/android/server/ssrm/settings/LevelsModelReader$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/settings/LevelsModelReader;
-    .param p2    # Lcom/android/server/ssrm/settings/LevelsModelReader$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/settings/LevelsModelReader$TagActionFactory;-><init>(Lcom/android/server/ssrm/settings/LevelsModelReader;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method getAction(Ljava/lang/String;)Lcom/android/server/ssrm/settings/LevelsModelReader$TagAction;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "step"
 

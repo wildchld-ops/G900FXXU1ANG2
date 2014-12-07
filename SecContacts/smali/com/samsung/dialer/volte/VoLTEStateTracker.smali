@@ -62,7 +62,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/volte/VoLTEStateTracker;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/volte/VoLTEStateTracker;
 
     iget-object v0, p0, Lcom/samsung/dialer/volte/VoLTEStateTracker;->mContext:Landroid/content/Context;
 
@@ -79,7 +78,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/volte/VoLTEStateTracker;)Lcom/samsung/dialer/volte/OnVoLTEStateChangedListener;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/volte/VoLTEStateTracker;
 
     iget-object v0, p0, Lcom/samsung/dialer/volte/VoLTEStateTracker;->mListener:Lcom/samsung/dialer/volte/OnVoLTEStateChangedListener;
 
@@ -88,7 +86,6 @@
 
 .method private isFlightMode(Landroid/content/Context;)Z
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -259,7 +256,6 @@
 # virtual methods
 .method public isVolteEnabled(Landroid/content/Context;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -272,8 +268,6 @@
 
 .method public isVolteEnabled(Landroid/content/Context;Z)Z
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     sget-object v15, Lcom/samsung/dialer/volte/VoLTEStateTracker;->TAG:Ljava/lang/String;
 
@@ -775,8 +769,6 @@
 
 .method public startTracking(Landroid/content/Context;Lcom/samsung/dialer/volte/OnVoLTEStateChangedListener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/dialer/volte/OnVoLTEStateChangedListener;
 
     sget-object v0, Lcom/samsung/dialer/volte/VoLTEStateTracker;->TAG:Ljava/lang/String;
 

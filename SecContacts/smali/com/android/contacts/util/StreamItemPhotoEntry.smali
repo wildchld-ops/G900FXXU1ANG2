@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v2, -0x1
 
@@ -104,9 +103,6 @@
 
 .method private static getInt(Landroid/database/Cursor;Ljava/lang/String;I)I
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -131,8 +127,6 @@
 
 .method private static getLong(Landroid/database/Cursor;Ljava/lang/String;)J
     .locals 3
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -147,8 +141,6 @@
 
 .method private static getString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -165,7 +157,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/contacts/util/StreamItemPhotoEntry;)I
     .locals 7
-    .param p1    # Lcom/android/contacts/util/StreamItemPhotoEntry;
 
     const/4 v2, 0x1
 
@@ -256,7 +247,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/util/StreamItemPhotoEntry;
 

@@ -137,7 +137,6 @@
 # virtual methods
 .method public onFgAppInPackageList(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ssrm/fgapps/TurboModeOnOff;->mIsForeground:Z
 
@@ -148,7 +147,6 @@
 
 .method public declared-synchronized onListScrollBoost(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 

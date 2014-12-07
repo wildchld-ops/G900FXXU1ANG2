@@ -180,7 +180,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/gson/stream/JsonScope;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/gson/stream/JsonScope;
 

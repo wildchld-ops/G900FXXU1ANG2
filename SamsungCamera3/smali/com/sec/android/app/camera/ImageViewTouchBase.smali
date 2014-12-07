@@ -48,7 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -105,8 +104,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -163,8 +160,6 @@
 
 .method private getProperBaseMatrix(Lcom/sec/android/app/camera/RotateBitmap;Landroid/graphics/Matrix;)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/RotateBitmap;
-    .param p2    # Landroid/graphics/Matrix;
 
     const/high16 v8, 0x40400000
 
@@ -249,8 +244,6 @@
 
 .method private setImageBitmap(Landroid/graphics/Bitmap;I)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
@@ -299,8 +292,6 @@
 # virtual methods
 .method protected center(ZZ)V
     .locals 12
-    .param p1    # Z
-    .param p2    # Z
 
     const/high16 v11, 0x40000000
 
@@ -533,7 +524,6 @@
 
 .method protected getScale(Landroid/graphics/Matrix;)F
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     const/4 v0, 0x0
 
@@ -546,8 +536,6 @@
 
 .method protected getValue(Landroid/graphics/Matrix;I)F
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ImageViewTouchBase;->mMatrixValues:[F
 
@@ -618,8 +606,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -648,8 +634,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/high16 v1, 0x3f800000
 
@@ -694,11 +678,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -747,8 +726,6 @@
 
 .method protected panBy(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/android/app/camera/ImageViewTouchBase;->postTranslate(FF)V
 
@@ -763,8 +740,6 @@
 
 .method protected postTranslate(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ImageViewTouchBase;->mSuppMatrix:Landroid/graphics/Matrix;
 
@@ -775,7 +750,6 @@
 
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x0
 
@@ -786,8 +760,6 @@
 
 .method public setImageBitmapResetBase(Landroid/graphics/Bitmap;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Z
 
     new-instance v0, Lcom/sec/android/app/camera/RotateBitmap;
 
@@ -800,8 +772,6 @@
 
 .method public setImageRotateBitmapResetBase(Lcom/sec/android/app/camera/RotateBitmap;Z)V
     .locals 3
-    .param p1    # Lcom/sec/android/app/camera/RotateBitmap;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -875,7 +845,6 @@
 
 .method public setRecycler(Lcom/sec/android/app/camera/ImageViewTouchBase$Recycler;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/ImageViewTouchBase$Recycler;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ImageViewTouchBase;->mRecycler:Lcom/sec/android/app/camera/ImageViewTouchBase$Recycler;
 
@@ -894,7 +863,6 @@
 
 .method protected zoomIn(F)V
     .locals 5
-    .param p1    # F
 
     const/high16 v4, 0x40000000
 
@@ -952,9 +920,6 @@
 
 .method protected zoomIn(FFF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v6, 0x1
 
@@ -1038,7 +1003,6 @@
 
 .method protected zoomOut(F)V
     .locals 7
-    .param p1    # F
 
     const/4 v6, 0x1
 
@@ -1123,9 +1087,6 @@
 
 .method protected zoomOut(FFF)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v7, 0x1
 
@@ -1222,7 +1183,6 @@
 
 .method protected zoomTo(F)V
     .locals 4
-    .param p1    # F
 
     const/high16 v3, 0x40000000
 
@@ -1249,9 +1209,6 @@
 
 .method protected zoomTo(FFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, 0x1
 
@@ -1287,10 +1244,6 @@
 
 .method protected zoomTo(FFFF)V
     .locals 10
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/ImageViewTouchBase;->getScale()F
 
@@ -1329,9 +1282,6 @@
 
 .method protected zoomToPoint(FFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/high16 v3, 0x40000000
 

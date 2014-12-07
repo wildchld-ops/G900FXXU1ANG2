@@ -183,8 +183,6 @@
 
 .method private static computeCorpusScore(Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;J)Lcom/google/android/finsky/widget/consumption/NowPlayingScorer$CorpusScore;
     .locals 30
-    .param p0    # Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
-    .param p1    # J
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;->getBackend()I
 
@@ -505,7 +503,6 @@
 
 .method private static computeScoresAndReturnMostRecent(Ljava/util/List;JLjava/util/Map;)Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
     .locals 8
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -583,8 +580,6 @@
 
 .method private static getImportantBackends(Ljava/util/List;ILjava/util/Map;Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;)Ljava/util/List;
     .locals 11
-    .param p1    # I
-    .param p3    # Lcom/google/android/finsky/widget/consumption/ConsumptionAppDocList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -734,8 +729,6 @@
 
 .method public static score(Ljava/util/List;IJ)Ljava/util/List;
     .locals 4
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -36,9 +36,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/dialer/BackScrollManager$ScrollableHeader;Landroid/widget/ListView;Landroid/view/View;)V
     .locals 1
-    .param p1    # Lcom/android/dialer/BackScrollManager$ScrollableHeader;
-    .param p2    # Landroid/widget/ListView;
-    .param p3    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/dialer/BackScrollManager;)Lcom/android/dialer/BackScrollManager$ScrollableHeader;
     .locals 1
-    .param p0    # Lcom/android/dialer/BackScrollManager;
 
     iget-object v0, p0, Lcom/android/dialer/BackScrollManager;->mHeader:Lcom/android/dialer/BackScrollManager$ScrollableHeader;
 
@@ -72,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/dialer/BackScrollManager;)Z
     .locals 1
-    .param p0    # Lcom/android/dialer/BackScrollManager;
 
     iget-boolean v0, p0, Lcom/android/dialer/BackScrollManager;->mIsSystemUIAppear:Z
 
@@ -81,8 +76,6 @@
 
 .method static synthetic access$102(Lcom/android/dialer/BackScrollManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/dialer/BackScrollManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/dialer/BackScrollManager;->mIsSystemUIAppear:Z
 
@@ -91,7 +84,6 @@
 
 .method static synthetic access$200(Lcom/android/dialer/BackScrollManager;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/dialer/BackScrollManager;
 
     iget-object v0, p0, Lcom/android/dialer/BackScrollManager;->mDisappearAnimation:Landroid/view/animation/Animation;
 
@@ -100,7 +92,6 @@
 
 .method static synthetic access$300(Lcom/android/dialer/BackScrollManager;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/dialer/BackScrollManager;
 
     iget-object v0, p0, Lcom/android/dialer/BackScrollManager;->mSystemUIBackgroundView:Landroid/view/View;
 
@@ -109,7 +100,6 @@
 
 .method static synthetic access$400(Lcom/android/dialer/BackScrollManager;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/dialer/BackScrollManager;
 
     iget-object v0, p0, Lcom/android/dialer/BackScrollManager;->mAppearAnimation:Landroid/view/animation/Animation;
 
@@ -118,7 +108,6 @@
 
 .method static synthetic access$500(Lcom/android/dialer/BackScrollManager;)I
     .locals 1
-    .param p0    # Lcom/android/dialer/BackScrollManager;
 
     iget v0, p0, Lcom/android/dialer/BackScrollManager;->mScrollState:I
 
@@ -127,8 +116,6 @@
 
 .method static synthetic access$502(Lcom/android/dialer/BackScrollManager;I)I
     .locals 0
-    .param p0    # Lcom/android/dialer/BackScrollManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/dialer/BackScrollManager;->mScrollState:I
 
@@ -194,10 +181,6 @@
 
 .method public static bind(Lcom/android/dialer/BackScrollManager$ScrollableHeader;Landroid/widget/ListView;Landroid/view/View;Lcom/android/dialer/calllog/CallDetailHistoryAdapter;)V
     .locals 1
-    .param p0    # Lcom/android/dialer/BackScrollManager$ScrollableHeader;
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/dialer/calllog/CallDetailHistoryAdapter;
 
     new-instance v0, Lcom/android/dialer/BackScrollManager;
 

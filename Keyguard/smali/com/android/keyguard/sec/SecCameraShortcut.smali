@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -65,8 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -91,9 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -118,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/SecCameraShortcut;)Lcom/android/keyguard/KeyguardSecurityCallback;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecCameraShortcut;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecCameraShortcut;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
@@ -127,7 +120,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/SecCameraShortcut;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecCameraShortcut;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecCameraShortcut;->TAG:Ljava/lang/String;
 
@@ -136,7 +128,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/SecCameraShortcut;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecCameraShortcut;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecCameraShortcut;->mCameraButton:Landroid/widget/ImageView;
 
@@ -183,8 +174,6 @@
 
 .method private handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecCameraShortcut;->mAdditionalUnlockView:Lcom/android/keyguard/sec/KeyguardEffectViewNone;
 
@@ -219,8 +208,6 @@
 
 .method private handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecCameraShortcut;->mAdditionalUnlockView:Lcom/android/keyguard/sec/KeyguardEffectViewNone;
 
@@ -609,7 +596,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 25
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -1217,7 +1203,6 @@
 
 .method protected rotateIcon(F)V
     .locals 7
-    .param p1    # F
 
     const/high16 v6, 0x43870000
 
@@ -1296,7 +1281,6 @@
 
 .method public setAdditionalUnlockView(Lcom/android/keyguard/sec/KeyguardEffectViewNone;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/KeyguardEffectViewNone;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/SecCameraShortcut;->mAdditionalUnlockView:Lcom/android/keyguard/sec/KeyguardEffectViewNone;
 
@@ -1305,7 +1289,6 @@
 
 .method public setSecurityCallback(Lcom/android/keyguard/KeyguardSecurityCallback;)V
     .locals 2
-    .param p1    # Lcom/android/keyguard/KeyguardSecurityCallback;
 
     if-nez p1, :cond_0
 

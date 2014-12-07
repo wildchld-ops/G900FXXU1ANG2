@@ -6,7 +6,6 @@
 # direct methods
 .method public static assetResponseToDeliveryData(Lcom/google/android/finsky/protos/VendingProtos$GetAssetResponseProto;)Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
     .locals 10
-    .param p0    # Lcom/google/android/finsky/protos/VendingProtos$GetAssetResponseProto;
 
     const/4 v9, 0x1
 
@@ -132,9 +131,6 @@
 
 .method public static extractObb(Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;Ljava/lang/String;Z)Lcom/google/android/finsky/download/obb/Obb;
     .locals 11
-    .param p0    # Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -195,7 +191,6 @@
 
 .method public static makeAssetId(Lcom/google/android/finsky/protos/DocDetails$AppDetails;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/google/android/finsky/protos/DocDetails$AppDetails;
 
     iget-object v0, p0, Lcom/google/android/finsky/protos/DocDetails$AppDetails;->packageName:Ljava/lang/String;
 
@@ -210,8 +205,6 @@
 
 .method public static makeAssetId(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -246,7 +239,6 @@
 
 .method public static totalDeliverySize(Lcom/google/android/finsky/protos/DocDetails$AppDetails;)J
     .locals 13
-    .param p0    # Lcom/google/android/finsky/protos/DocDetails$AppDetails;
 
     const-wide/16 v11, 0x0
 

@@ -69,7 +69,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILandroid/app/Application;)V
     .locals 1
-    .param p3    # Landroid/app/Application;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,7 +102,6 @@
 
 .method static synthetic access$000(Lcom/sec/dtl/launcher/Talk;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/sec/dtl/launcher/Talk;
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/Talk;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
@@ -112,7 +110,6 @@
 
 .method static synthetic access$100(Lcom/sec/dtl/launcher/Talk;)Landroid/content/res/Resources;
     .locals 1
-    .param p0    # Lcom/sec/dtl/launcher/Talk;
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/Talk;->mResources:Landroid/content/res/Resources;
 
@@ -121,8 +118,6 @@
 
 .method static synthetic access$200(Lcom/sec/dtl/launcher/Talk;Ljava/util/Locale;)V
     .locals 0
-    .param p0    # Lcom/sec/dtl/launcher/Talk;
-    .param p1    # Ljava/util/Locale;
 
     invoke-direct {p0, p1}, Lcom/sec/dtl/launcher/Talk;->setTextToSpeechLanguage(Ljava/util/Locale;)V
 
@@ -157,7 +152,6 @@
 
 .method private setTextToSpeechLanguage(Ljava/util/Locale;)V
     .locals 2
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/Talk;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
@@ -215,7 +209,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/dtl/launcher/Talk;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/dtl/launcher/Talk;
 
@@ -412,7 +405,6 @@
 
 .method public say(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/Talk;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
@@ -438,9 +430,6 @@
 
 .method public say(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/Talk;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
@@ -490,7 +479,6 @@
 
 .method public say(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/sec/dtl/launcher/Talk;->getTextToSpeech()Landroid/speech/tts/TextToSpeech;
 
@@ -537,9 +525,6 @@
 
 .method public sayByTalkback(ILjava/lang/String;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/sec/dtl/launcher/Talk;->isTalkbackEnabled()Z
 
@@ -619,11 +604,6 @@
 
 .method public sayByTalkback(Landroid/view/View;IIIZ)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/Talk;->mResources:Landroid/content/res/Resources;
 
@@ -662,9 +642,6 @@
 
 .method public sayByTalkback(Landroid/view/View;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/sec/dtl/launcher/Talk;->isTalkbackEnabled()Z
 

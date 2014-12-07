@@ -51,8 +51,6 @@
 
 .method synthetic constructor <init>(Landroid/os/DVFSHelper;Landroid/os/DVFSHelper$1;)V
     .locals 0
-    .param p1    # Landroid/os/DVFSHelper;
-    .param p2    # Landroid/os/DVFSHelper$1;
 
     invoke-direct {p0, p1}, Landroid/os/DVFSHelper$Model;-><init>(Landroid/os/DVFSHelper;)V
 
@@ -207,7 +205,6 @@
 
 .method public getTimeoutForAction(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Launcher_touch"
 
@@ -230,8 +227,6 @@
 
 .method public onAppLaunchEvent(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method

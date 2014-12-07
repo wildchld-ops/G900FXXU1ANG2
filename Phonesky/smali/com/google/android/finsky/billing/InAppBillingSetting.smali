@@ -6,7 +6,6 @@
 # direct methods
 .method private static getSharedIabMaxVersionPreference(Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
     .locals 5
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,8 +59,6 @@
 
 .method public static isEnabled(Ljava/lang/String;I)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -146,8 +143,6 @@
 
 .method private static setVersion(Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0}, Lcom/google/android/finsky/billing/InAppBillingSetting;->getSharedIabMaxVersionPreference(Ljava/lang/String;)Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
 
@@ -167,8 +162,6 @@
 
 .method public static setVersionFromBillingConfig(Ljava/lang/String;Lcom/google/android/finsky/protos/Toc$BillingConfig;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/google/android/finsky/protos/Toc$BillingConfig;
 
     if-eqz p1, :cond_0
 

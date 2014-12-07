@@ -238,8 +238,6 @@
 
 .method private extCtcSelectPositionMode(ZZ)I
     .locals 11
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v10, 0x4
 
@@ -587,7 +585,6 @@
 
 .method private extSelectPositionMode(I)I
     .locals 14
-    .param p1    # I
 
     const/16 v13, 0xa
 
@@ -1054,7 +1051,6 @@
 
 .method private extension_hasCapability(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/location/GpsLocationProvider_samsung;->mEngineCapabilities:I
 
@@ -1075,7 +1071,6 @@
 
 .method public static getGpsCurrentApn(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -1903,8 +1898,6 @@
 
 .method private setCscParameters(Landroid/os/Bundle;Z)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -2090,7 +2083,6 @@
 
 .method private setSKAFEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/location/GpsLocationProvider_samsung;->mIsSKAF:Z
 
@@ -2123,7 +2115,6 @@
 
 .method private setServer(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const-string v5, "GpsLocationProvider_ex"
 
@@ -2367,11 +2358,6 @@
 
 .method public extension_ctcStartTracking(ZIZZI)Z
     .locals 8
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
 
     const/4 v5, 0x1
 
@@ -2562,7 +2548,6 @@
 
 .method public extension_ctcStopTracking(Z)Z
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/server/location/GpsLocationProvider_samsung;->getVendor()Lcom/android/server/location/GpsLocationProvider_samsung$Vendor;
 
@@ -2590,8 +2575,6 @@
 
 .method public extension_listenForBroadcasts(Landroid/content/BroadcastReceiver;Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v3, 0x0
 
@@ -2642,7 +2625,6 @@
 
 .method public extension_mBroadcastReciever(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -2727,8 +2709,6 @@
 
 .method public extension_printSvStatus([FI)V
     .locals 6
-    .param p1    # [F
-    .param p2    # I
 
     const-string/jumbo v3, "user"
 
@@ -2844,7 +2824,6 @@
 
 .method public extension_reloadMakeAutoSuplUrl(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -2892,8 +2871,6 @@
 
 .method public extension_reportGeofenceAddStatus(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "sec_location"
 
@@ -2932,8 +2909,6 @@
 
 .method public extension_reportGeofencePauseStatus(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "sec_location"
 
@@ -2972,8 +2947,6 @@
 
 .method public extension_reportGeofenceRemoveStatus(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "sec_location"
 
@@ -3012,8 +2985,6 @@
 
 .method public extension_reportGeofenceResumeStatus(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "sec_location"
 
@@ -3052,15 +3023,6 @@
 
 .method public extension_reportGeofenceStatus(IIDDDFFFJ)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # J
 
     const-string v1, "sec_location"
 
@@ -3117,17 +3079,6 @@
 
 .method public extension_reportGeofenceTransition(IIDDDFFFJIJ)V
     .locals 19
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # J
-    .param p14    # I
-    .param p15    # J
 
     const-string v2, "sec_location"
 
@@ -3194,9 +3145,6 @@
 
 .method public extension_sendExtraCommand(Ljava/lang/String;Landroid/os/Bundle;Z)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Z
 
     const/4 v8, 0x1
 
@@ -3621,8 +3569,6 @@
 
 .method public extension_sendGpsTime(JJ)V
     .locals 7
-    .param p1    # J
-    .param p3    # J
 
     const/4 v6, 0x0
 
@@ -3765,10 +3711,6 @@
 
 .method public extension_setStartNavigatingModes(ILandroid/net/ConnectivityManager;ZZ)I
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/net/ConnectivityManager;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v9, 0x2
 
@@ -4485,8 +4427,6 @@
 
 .method public init_GpsLocationPrivider_samsung(Landroid/content/Context;Ljava/util/Properties;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/Properties;
 
     iput-object p1, p0, Lcom/android/server/location/GpsLocationProvider_samsung;->mContext:Landroid/content/Context;
 

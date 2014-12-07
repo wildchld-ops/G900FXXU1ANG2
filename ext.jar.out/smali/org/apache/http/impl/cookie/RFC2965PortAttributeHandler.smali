@@ -17,7 +17,6 @@
 
 .method private static parsePortAttribute(Ljava/lang/String;)[I
     .locals 7
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;
@@ -116,8 +115,6 @@
 
 .method private static portMatch(I[I)Z
     .locals 4
-    .param p0    # I
-    .param p1    # [I
 
     const/4 v2, 0x0
 
@@ -147,8 +144,6 @@
 # virtual methods
 .method public match(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z
     .locals 4
-    .param p1    # Lorg/apache/http/cookie/Cookie;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
 
     const/4 v2, 0x0
 
@@ -228,8 +223,6 @@
 
 .method public parse(Lorg/apache/http/cookie/SetCookie;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lorg/apache/http/cookie/SetCookie;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;
@@ -279,8 +272,6 @@
 
 .method public validate(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V
     .locals 3
-    .param p1    # Lorg/apache/http/cookie/Cookie;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

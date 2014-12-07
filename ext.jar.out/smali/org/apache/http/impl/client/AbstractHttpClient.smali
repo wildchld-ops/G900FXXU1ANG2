@@ -45,8 +45,6 @@
 # direct methods
 .method protected constructor <init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
     .locals 1
-    .param p1    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +67,6 @@
 
 .method private determineTarget(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpHost;
     .locals 5
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
 
     const/4 v1, 0x0
 
@@ -107,7 +104,6 @@
 # virtual methods
 .method public declared-synchronized addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpRequestInterceptor;
 
     monitor-enter p0
 
@@ -134,8 +130,6 @@
 
 .method public declared-synchronized addRequestInterceptor(Lorg/apache/http/HttpRequestInterceptor;I)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpRequestInterceptor;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -162,7 +156,6 @@
 
 .method public declared-synchronized addResponseInterceptor(Lorg/apache/http/HttpResponseInterceptor;)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpResponseInterceptor;
 
     monitor-enter p0
 
@@ -189,8 +182,6 @@
 
 .method public declared-synchronized addResponseInterceptor(Lorg/apache/http/HttpResponseInterceptor;I)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpResponseInterceptor;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -275,18 +266,6 @@
 
 .method protected createClientRequestDirector(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/conn/routing/HttpRoutePlanner;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/HttpRequestRetryHandler;Lorg/apache/http/client/RedirectHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/AuthenticationHandler;Lorg/apache/http/client/UserTokenHandler;Lorg/apache/http/params/HttpParams;)Lorg/apache/http/client/RequestDirector;
     .locals 13
-    .param p1    # Lorg/apache/http/protocol/HttpRequestExecutor;
-    .param p2    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p3    # Lorg/apache/http/ConnectionReuseStrategy;
-    .param p4    # Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
-    .param p5    # Lorg/apache/http/conn/routing/HttpRoutePlanner;
-    .param p6    # Lorg/apache/http/protocol/HttpProcessor;
-    .param p7    # Lorg/apache/http/client/HttpRequestRetryHandler;
-    .param p8    # Lorg/apache/http/client/RedirectHandler;
-    .param p9    # Lorg/apache/http/client/AuthenticationHandler;
-    .param p10    # Lorg/apache/http/client/AuthenticationHandler;
-    .param p11    # Lorg/apache/http/client/UserTokenHandler;
-    .param p12    # Lorg/apache/http/params/HttpParams;
 
     new-instance v0, Lorg/apache/http/impl/client/DefaultRequestDirector;
 
@@ -366,7 +345,6 @@
 
 .method protected determineParams(Lorg/apache/http/HttpRequest;)Lorg/apache/http/params/HttpParams;
     .locals 4
-    .param p1    # Lorg/apache/http/HttpRequest;
 
     const/4 v3, 0x0
 
@@ -387,8 +365,6 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -419,9 +395,6 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p4    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -539,7 +512,6 @@
 
 .method public execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -569,8 +541,6 @@
 
 .method public execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -604,8 +574,6 @@
 
 .method public final execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;
     .locals 1
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -626,9 +594,6 @@
 
 .method public final execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 21
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -880,7 +845,6 @@
 
 .method public final execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
     .locals 1
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -901,8 +865,6 @@
 
 .method public final execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 2
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1363,7 +1325,6 @@
 
 .method public declared-synchronized getRequestInterceptor(I)Lorg/apache/http/HttpRequestInterceptor;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1420,7 +1381,6 @@
 
 .method public declared-synchronized getResponseInterceptor(I)Lorg/apache/http/HttpResponseInterceptor;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1618,7 +1578,6 @@
 
 .method public declared-synchronized setAuthSchemes(Lorg/apache/http/auth/AuthSchemeRegistry;)V
     .locals 1
-    .param p1    # Lorg/apache/http/auth/AuthSchemeRegistry;
 
     monitor-enter p0
 
@@ -1641,7 +1600,6 @@
 
 .method public declared-synchronized setCookieSpecs(Lorg/apache/http/cookie/CookieSpecRegistry;)V
     .locals 1
-    .param p1    # Lorg/apache/http/cookie/CookieSpecRegistry;
 
     monitor-enter p0
 
@@ -1664,7 +1622,6 @@
 
 .method public declared-synchronized setCookieStore(Lorg/apache/http/client/CookieStore;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/CookieStore;
 
     monitor-enter p0
 
@@ -1687,7 +1644,6 @@
 
 .method public declared-synchronized setCredentialsProvider(Lorg/apache/http/client/CredentialsProvider;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/CredentialsProvider;
 
     monitor-enter p0
 
@@ -1710,7 +1666,6 @@
 
 .method public declared-synchronized setHttpRequestRetryHandler(Lorg/apache/http/client/HttpRequestRetryHandler;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/HttpRequestRetryHandler;
 
     monitor-enter p0
 
@@ -1733,7 +1688,6 @@
 
 .method public declared-synchronized setKeepAliveStrategy(Lorg/apache/http/conn/ConnectionKeepAliveStrategy;)V
     .locals 1
-    .param p1    # Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
 
     monitor-enter p0
 
@@ -1756,7 +1710,6 @@
 
 .method public declared-synchronized setParams(Lorg/apache/http/params/HttpParams;)V
     .locals 1
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     monitor-enter p0
 
@@ -1779,7 +1732,6 @@
 
 .method public declared-synchronized setProxyAuthenticationHandler(Lorg/apache/http/client/AuthenticationHandler;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/AuthenticationHandler;
 
     monitor-enter p0
 
@@ -1802,7 +1754,6 @@
 
 .method public declared-synchronized setRedirectHandler(Lorg/apache/http/client/RedirectHandler;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/RedirectHandler;
 
     monitor-enter p0
 
@@ -1825,7 +1776,6 @@
 
 .method public declared-synchronized setReuseStrategy(Lorg/apache/http/ConnectionReuseStrategy;)V
     .locals 1
-    .param p1    # Lorg/apache/http/ConnectionReuseStrategy;
 
     monitor-enter p0
 
@@ -1848,7 +1798,6 @@
 
 .method public declared-synchronized setRoutePlanner(Lorg/apache/http/conn/routing/HttpRoutePlanner;)V
     .locals 1
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoutePlanner;
 
     monitor-enter p0
 
@@ -1871,7 +1820,6 @@
 
 .method public declared-synchronized setTargetAuthenticationHandler(Lorg/apache/http/client/AuthenticationHandler;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/AuthenticationHandler;
 
     monitor-enter p0
 
@@ -1894,7 +1842,6 @@
 
 .method public declared-synchronized setUserTokenHandler(Lorg/apache/http/client/UserTokenHandler;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/UserTokenHandler;
 
     monitor-enter p0
 

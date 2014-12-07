@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUserSwitchComplete(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -78,8 +77,6 @@
 
 .method public onUserSwitching(ILandroid/os/IRemoteCallback;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$5;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 

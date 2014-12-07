@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
 
     invoke-direct {p0, p1}, Landroid/preference/Preference$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 

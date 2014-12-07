@@ -88,8 +88,6 @@
 
 .method static synthetic access$000(Lcom/google/android/vending/verifier/PackageVerificationService;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)Z
     .locals 1
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService;
-    .param p1    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     invoke-direct {p0, p1}, Lcom/google/android/vending/verifier/PackageVerificationService;->getPackageInfo(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)Z
 
@@ -100,7 +98,6 @@
 
 .method static synthetic access$100([Landroid/content/pm/Signature;)[[B
     .locals 1
-    .param p0    # [Landroid/content/pm/Signature;
 
     invoke-static {p0}, Lcom/google/android/vending/verifier/PackageVerificationService;->getRawSignatures([Landroid/content/pm/Signature;)[[B
 
@@ -111,9 +108,6 @@
 
 .method static synthetic access$200(Lcom/google/android/vending/verifier/PackageVerificationService;[[B[[B)Z
     .locals 1
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService;
-    .param p1    # [[B
-    .param p2    # [[B
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/vending/verifier/PackageVerificationService;->rawSignaturesMatch([[B[[B)Z
 
@@ -124,7 +118,6 @@
 
 .method static synthetic access$300(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 0
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     invoke-static {p0}, Lcom/google/android/vending/verifier/PackageVerificationService;->resolveHosts(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
 
@@ -133,8 +126,6 @@
 
 .method static synthetic access$400(Lcom/google/android/vending/verifier/PackageVerificationService;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 0
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService;
-    .param p1    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     invoke-direct {p0, p1}, Lcom/google/android/vending/verifier/PackageVerificationService;->sendVerificationRequest(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
 
@@ -143,9 +134,6 @@
 
 .method static synthetic access$500(Lcom/google/android/vending/verifier/PackageVerificationService;II)V
     .locals 0
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/vending/verifier/PackageVerificationService;->extendTimeout(II)V
 
@@ -154,9 +142,6 @@
 
 .method static synthetic access$600(Lcom/google/android/vending/verifier/PackageVerificationService;Landroid/content/Context;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 0
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/vending/verifier/PackageVerificationService;->reportAndCleanup(Landroid/content/Context;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
 
@@ -165,10 +150,6 @@
 
 .method static synthetic access$700(Lcom/google/android/vending/verifier/PackageVerificationService;Landroid/content/Context;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;I)V
     .locals 0
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/vending/verifier/PackageVerificationService;->reportResult(Landroid/content/Context;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;I)V
 
@@ -177,7 +158,6 @@
 
 .method private cancelDialog(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 1
-    .param p1    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     iget-object v0, p1, Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;->mDialog:Landroid/app/Activity;
 
@@ -197,7 +177,6 @@
 
 .method private cancelVerificationIntent(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -249,8 +228,6 @@
 
 .method private static final chooseRandom([II)[I
     .locals 6
-    .param p0    # [I
-    .param p1    # I
 
     array-length v5, p0
 
@@ -351,8 +328,6 @@
 
 .method private extendTimeout(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/google/android/vending/verifier/PackageVerificationService;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -377,7 +352,6 @@
 
 .method private findVerification(I)Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/google/android/vending/verifier/PackageVerificationService;->mVerifications:Ljava/util/ArrayList;
 
@@ -413,7 +387,6 @@
 
 .method private static getFileInfos(Ljava/io/File;)[Lcom/google/android/vending/verifier/api/PackageVerificationApi$FileInfo;
     .locals 33
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -912,7 +885,6 @@
 
 .method private getPackageInfo(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)Z
     .locals 14
-    .param p1    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     const/4 v13, 0x2
 
@@ -1217,7 +1189,6 @@
 
 .method private static getRawSignatures([Landroid/content/pm/Signature;)[[B
     .locals 3
-    .param p0    # [Landroid/content/pm/Signature;
 
     if-eqz p0, :cond_0
 
@@ -1261,7 +1232,6 @@
 
 .method private static getSha256Hash(Ljava/io/File;)[B
     .locals 2
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1294,7 +1264,6 @@
 
 .method private static getSha256Hash(Ljava/io/InputStream;)[B
     .locals 4
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1335,7 +1304,6 @@
 
 .method private handleVerificationIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
@@ -1356,7 +1324,6 @@
 
 .method private static isImportantFile(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1395,8 +1362,6 @@
 
 .method private rawSignaturesMatch([[B[[B)Z
     .locals 7
-    .param p1    # [[B
-    .param p2    # [[B
 
     if-eqz p1, :cond_0
 
@@ -1470,8 +1435,6 @@
 
 .method public static registerDialog(ILandroid/app/Activity;)Z
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -1503,8 +1466,6 @@
 
 .method private reportAndCleanup(Landroid/content/Context;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -1534,8 +1495,6 @@
 
 .method public static reportConsentDialog(IZ)V
     .locals 7
-    .param p0    # I
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -1629,9 +1588,6 @@
 
 .method private reportResult(Landroid/content/Context;Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
-    .param p3    # I
 
     iget-boolean v1, p2, Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;->fromVerificationActivity:Z
 
@@ -1677,8 +1633,6 @@
 
 .method public static reportUserChoice(II)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1759,9 +1713,6 @@
 
 .method private reportVerificationResult(Landroid/content/Context;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1774,7 +1725,6 @@
 
 .method private static resolveHosts(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 6
-    .param p0    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     const/4 v5, 0x1
 
@@ -1853,7 +1803,6 @@
 
 .method private sendVerificationRequest(Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;)V
     .locals 21
-    .param p1    # Lcom/google/android/vending/verifier/PackageVerificationService$VerificationState;
 
     invoke-virtual/range {p0 .. p0}, Lcom/google/android/vending/verifier/PackageVerificationService;->getResources()Landroid/content/res/Resources;
 
@@ -1950,8 +1899,6 @@
 
 .method public static start(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1972,7 +1919,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -2005,9 +1951,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v2, "broadcast_intent"
 

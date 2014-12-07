@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/receivers/PackageMonitorReceiver$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/receivers/PackageMonitorReceiver$1;
 
     invoke-direct {p0}, Lcom/google/android/finsky/receivers/PackageMonitorReceiver$ReferrerRebroadcaster;-><init>()V
 
@@ -37,8 +36,6 @@
 
 .method private broadcastInstallReferrer(Ljava/lang/String;Z)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -240,9 +237,6 @@
 
 .method private getActivityNameForBroadcast(Ljava/lang/String;Landroid/content/Intent;Landroid/content/pm/PackageManager;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/content/pm/PackageManager;
 
     const/4 v0, 0x0
 
@@ -295,7 +289,6 @@
 # virtual methods
 .method public onPackageAdded(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -306,22 +299,18 @@
 
 .method public onPackageAvailabilityChanged([Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onPackageChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageFirstLaunch(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -332,8 +321,6 @@
 
 .method public onPackageRemoved(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method

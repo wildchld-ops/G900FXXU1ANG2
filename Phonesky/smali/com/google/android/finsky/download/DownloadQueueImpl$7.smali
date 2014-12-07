@@ -54,7 +54,6 @@
 # virtual methods
 .method public run(Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const-string v0, "Enqueued %s as %s"
 
@@ -99,7 +98,6 @@
 
 .method public bridge synthetic run(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/Uri;
 

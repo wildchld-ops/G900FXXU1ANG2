@@ -112,8 +112,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -400,7 +398,6 @@
 
 .method static synthetic access$000(Lcom/nuance/swypeconnect/ac/ACManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACManager;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->applicationId:Ljava/lang/String;
 
@@ -409,7 +406,6 @@
 
 .method static synthetic access$100(Lcom/nuance/swypeconnect/ac/ACManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACManager;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->coreVersionAlpha:Ljava/lang/String;
 
@@ -418,7 +414,6 @@
 
 .method static synthetic access$200(Lcom/nuance/swypeconnect/ac/ACManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACManager;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->coreVersionChinese:Ljava/lang/String;
 
@@ -427,7 +422,6 @@
 
 .method static synthetic access$300(Lcom/nuance/swypeconnect/ac/ACManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACManager;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->coreVersionJapanese:Ljava/lang/String;
 
@@ -436,7 +430,6 @@
 
 .method static synthetic access$400(Lcom/nuance/swypeconnect/ac/ACManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACManager;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->coreVersionKorean:Ljava/lang/String;
 
@@ -445,7 +438,6 @@
 
 .method static synthetic access$500(Lcom/nuance/swypeconnect/ac/ACManager;)Lcom/nuance/connect/host/service/BuildSettings;
     .locals 1
-    .param p0    # Lcom/nuance/swypeconnect/ac/ACManager;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->buildSettings:Lcom/nuance/connect/host/service/BuildSettings;
 
@@ -454,7 +446,6 @@
 
 .method private checkPermission(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->context:Landroid/content/Context;
 
@@ -529,7 +520,6 @@
 
 .method private validApplicationId(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -652,7 +642,6 @@
 
 .method public getService(Ljava/lang/String;)Lcom/nuance/swypeconnect/ac/ACService;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/nuance/swypeconnect/ac/ACException;
@@ -767,7 +756,6 @@
 
 .method public registerConnectionCallback(Lcom/nuance/swypeconnect/ac/ACManager$ACConnectionCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACManager$ACConnectionCallback;
 
     new-instance v0, Lcom/nuance/swypeconnect/ac/ACManager$2;
 
@@ -796,10 +784,6 @@
 
 .method public setCoreVersions(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/swypeconnect/ac/ACManager;->coreVersionAlpha:Ljava/lang/String;
 
@@ -1167,7 +1151,6 @@
 
 .method public unregisterConnectionCallback(Lcom/nuance/swypeconnect/ac/ACManager$ACConnectionCallback;)V
     .locals 2
-    .param p1    # Lcom/nuance/swypeconnect/ac/ACManager$ACConnectionCallback;
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACManager;->connectionCallbacks:Ljava/util/Map;
 

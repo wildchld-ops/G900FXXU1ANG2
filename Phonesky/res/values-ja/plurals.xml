@@ -56,23 +56,23 @@
         <item quantity="one">つ星</item>
     </plurals>
     <plurals name="review_author_stars_title_comment">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s - %4$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s - %4$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$sつ星 - %3$s - %4$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$sつ星 - %3$s - %4$s</item>
     </plurals>
     <plurals name="review_author_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星 - %3$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$sつ星 - %3$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$sつ星 - %3$s</item>
     </plurals>
     <plurals name="review_stars_title">
-        <item quantity="other">&amp;lt;b>%1$sつ星&amp;lt;/b> %2$s</item>
-        <item quantity="one">&amp;lt;b>%1$sつ星&amp;lt;/b> %2$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$sつ星&amp;amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$sつ星&amp;amp;lt;/b> %2$s</item>
     </plurals>
     <plurals name="review_author_stars">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$sつ星</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$sつ星</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$sつ星</item>
     </plurals>
     <plurals name="review_just_stars">
-        <item quantity="other">&amp;lt;b>%1$sつ星&amp;lt;/b>と評価しました</item>
-        <item quantity="one">&amp;lt;b>%1$sつ星&amp;lt;/b>と評価しました</item>
+        <item quantity="other">&amp;amp;lt;b>%1$sつ星&amp;amp;lt;/b>と評価しました</item>
+        <item quantity="one">&amp;amp;lt;b>%1$sつ星&amp;amp;lt;/b>と評価しました</item>
     </plurals>
 </resources>

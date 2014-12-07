@@ -51,7 +51,6 @@
 
 .method private static AppServiceOff(I)I
     .locals 0
-    .param p0    # I
 
     xor-int/lit8 p0, p0, 0x1
 
@@ -60,7 +59,6 @@
 
 .method private static AppServiceOn(I)I
     .locals 0
-    .param p0    # I
 
     or-int/lit8 p0, p0, 0x1
 
@@ -69,8 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/InformationTicker;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/InformationTicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/InformationTicker;->saveFBAutoRefreshRate(I)V
 
@@ -79,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/InformationTicker;)V
     .locals 0
-    .param p0    # Lcom/android/settings/InformationTicker;
 
     invoke-direct {p0}, Lcom/android/settings/InformationTicker;->updateFacebookState()V
 
@@ -186,7 +181,6 @@
 
 .method private saveFBAutoRefreshRate(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -253,28 +247,24 @@
 
 .method private sendAutoRefreshRate(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method private sendContentsType(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method private sendInfoTickerNotiToFacebook(Ljava/lang/Boolean;)V
     .locals 0
-    .param p1    # Ljava/lang/Boolean;
 
     return-void
 .end method
 
 .method private showNotiOfChargesDialog(I)V
     .locals 8
-    .param p1    # I
 
     const v7, 0x7f0900ac
 
@@ -599,7 +589,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -692,9 +681,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -779,8 +765,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 11
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -1284,7 +1268,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1566,8 +1549,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 9
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x0
 
@@ -1866,8 +1847,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 

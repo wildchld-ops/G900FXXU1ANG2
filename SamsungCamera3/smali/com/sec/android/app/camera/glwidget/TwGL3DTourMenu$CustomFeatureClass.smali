@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu;ILjava/lang/String;I)V
     .locals 2
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, -0x1
 
@@ -56,7 +53,6 @@
 
 .method static synthetic access$4600(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu$CustomFeatureClass;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu$CustomFeatureClass;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu$CustomFeatureClass;->m_s32State:I
 
@@ -65,7 +61,6 @@
 
 .method static synthetic access$4700(Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu$CustomFeatureClass;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu$CustomFeatureClass;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGL3DTourMenu$CustomFeatureClass;->m_FileName:Ljava/lang/String;
 

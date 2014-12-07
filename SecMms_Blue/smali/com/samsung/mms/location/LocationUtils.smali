@@ -64,9 +64,6 @@
 
 .method private static findFileGeoCoordinates(Landroid/net/Uri;Landroid/content/Context;[F)V
     .locals 7
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Context;
-    .param p2    # [F
 
     const/4 v6, 0x0
 
@@ -151,9 +148,6 @@
 
 .method private static findMediaContentGeoCoordinates(Landroid/net/Uri;Landroid/content/Context;[F)V
     .locals 13
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Context;
-    .param p2    # [F
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -386,8 +380,6 @@
 
 .method private static floatComp(FF)Z
     .locals 3
-    .param p0    # F
-    .param p1    # F
 
     const v0, 0x38d1b717
 
@@ -416,8 +408,6 @@
 
 .method public static getPlacesObject(Landroid/app/Activity;Landroid/net/Uri;)Lcom/samsung/mms/location/Place;
     .locals 8
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v7, 0x1
 
@@ -489,7 +479,6 @@
 
 .method public static haveInternet(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -541,7 +530,6 @@
 
 .method public static isAllLocationProviderEnabled(Landroid/content/Context;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v8, 0x1
 
@@ -599,8 +587,6 @@
 
 .method public static isBetterLocation(Lcom/nbi/location/Location;Lcom/nbi/location/Location;)Z
     .locals 14
-    .param p0    # Lcom/nbi/location/Location;
-    .param p1    # Lcom/nbi/location/Location;
 
     const/4 v9, 0x0
 
@@ -718,7 +704,6 @@
 
 .method private static isValidGeoCoordinates([F)Z
     .locals 4
-    .param p0    # [F
 
     const/4 v0, 0x1
 
@@ -753,8 +738,6 @@
 
 .method public static retrieveGeocoordinates(Landroid/net/Uri;Landroid/content/Context;)[F
     .locals 5
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -827,9 +810,6 @@
 
 .method public static showToastOnUIThread(Landroid/app/Activity;II)V
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/samsung/mms/location/LocationUtils$3;
 
@@ -842,10 +822,6 @@
 
 .method private static startMediaLocationActivity(Landroid/app/Activity;Landroid/net/Uri;I[F)V
     .locals 8
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # [F
 
     const/4 v7, 0x1
 
@@ -954,8 +930,6 @@
 
 .method public static startVzwNavigate(Landroid/app/Activity;Lcom/nbi/map/data/Place;)V
     .locals 10
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Lcom/nbi/map/data/Place;
 
     if-nez p0, :cond_0
 
@@ -1053,9 +1027,6 @@
 
 .method public static useMediaLocation(Landroid/app/Activity;Landroid/net/Uri;I)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 

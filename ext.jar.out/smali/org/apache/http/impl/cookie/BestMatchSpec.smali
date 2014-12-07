@@ -33,8 +33,6 @@
 
 .method public constructor <init>([Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -232,8 +230,6 @@
 
 .method public match(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z
     .locals 2
-    .param p1    # Lorg/apache/http/cookie/Cookie;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
 
     if-nez p1, :cond_0
 
@@ -288,8 +284,6 @@
 
 .method public parse(Lorg/apache/http/Header;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
     .locals 9
-    .param p1    # Lorg/apache/http/Header;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -420,8 +414,6 @@
 
 .method public validate(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V
     .locals 2
-    .param p1    # Lorg/apache/http/cookie/Cookie;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

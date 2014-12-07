@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -50,8 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -82,7 +79,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/LegacyActionBar;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -91,7 +87,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/LegacyActionBar;)Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mSideDrawerLayout:Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
@@ -100,7 +95,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/LegacyActionBar;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mActivity:Landroid/app/Activity;
 
@@ -109,7 +103,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/LegacyActionBar;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/LegacyActionBar;->syncActionBar()V
 
@@ -118,7 +111,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/LegacyActionBar;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mCorpusChevronIcon:Landroid/widget/ImageView;
 
@@ -127,7 +119,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/layout/LegacyActionBar;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mCorpusUpPack:Landroid/view/View;
 
@@ -136,7 +127,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/layout/LegacyActionBar;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mChevronUpDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -145,7 +135,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/layout/LegacyActionBar;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mCorpusIcon:Landroid/widget/ImageView;
 
@@ -154,8 +143,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/layout/LegacyActionBar;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/LegacyActionBar;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/LegacyActionBar;->syncWishlistStatus(Z)V
 
@@ -535,7 +522,6 @@
 
 .method private syncWishlistStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -590,15 +576,12 @@
 # virtual methods
 .method public addTab(Ljava/lang/String;Lcom/google/android/finsky/layout/CustomActionBar$TabListener;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/layout/CustomActionBar$TabListener;
 
     return-void
 .end method
 
 .method public autoUpdateButtonClicked(Landroid/support/v4/app/FragmentActivity;)V
     .locals 0
-    .param p1    # Landroid/support/v4/app/FragmentActivity;
 
     return-void
 .end method
@@ -611,8 +594,6 @@
 
 .method public configureMenu(Landroid/app/Activity;Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/view/Menu;
 
     return-void
 .end method
@@ -663,9 +644,6 @@
 
 .method public initialize(Lcom/google/android/finsky/navigationmanager/NavigationManager;Landroid/app/Activity;Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -786,7 +764,6 @@
 
 .method public searchButtonClicked(Landroid/app/Activity;)Z
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     const/4 v0, 0x0
 
@@ -795,14 +772,12 @@
 
 .method public setSelectedTab(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public shareButtonClicked(Landroid/app/Activity;)V
     .locals 7
-    .param p1    # Landroid/app/Activity;
 
     const/4 v6, 0x0
 
@@ -879,7 +854,6 @@
 
 .method public updateBreadcrumb(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mRequestedTitle:Ljava/lang/String;
 
@@ -892,7 +866,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mCurrentBackendId:I
 
@@ -909,14 +882,12 @@
 
 .method public updateSearchQuery(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public wishlistButtonClicked(Landroid/app/Activity;)V
     .locals 8
-    .param p1    # Landroid/app/Activity;
 
     iget-object v6, p0, Lcom/google/android/finsky/layout/LegacyActionBar;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 

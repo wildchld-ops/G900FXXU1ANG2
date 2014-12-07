@@ -37,10 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/library/SQLiteLibrary;Lcom/google/android/finsky/library/AccountLibrary;Landroid/os/Handler;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/library/SQLiteLibrary;
-    .param p2    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +65,6 @@
 # virtual methods
 .method public declared-synchronized load(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     monitor-enter p0
 

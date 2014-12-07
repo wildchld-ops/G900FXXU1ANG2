@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;Lcom/google/android/finsky/billing/BillingProfileBaseFragment$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment;
-    .param p2    # Lcom/google/android/finsky/billing/BillingProfileBaseFragment$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/BillingProfileBaseFragment$CarrierBillingProvisioningListener;-><init>(Lcom/google/android/finsky/billing/BillingProfileBaseFragment;)V
 
@@ -118,7 +116,6 @@
 # virtual methods
 .method public onStateChange(Lcom/google/android/finsky/fragments/SidecarFragment;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/fragments/SidecarFragment;
 
     const/4 v4, 0x1
 

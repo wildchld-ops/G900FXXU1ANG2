@@ -109,9 +109,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -193,7 +190,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -428,7 +424,6 @@
 # virtual methods
 .method public applySsid(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mBtnText:Landroid/widget/TextView;
 
@@ -475,7 +470,6 @@
 
 .method protected callActivity(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->isDeviceProvisioned()Z
 
@@ -529,7 +523,6 @@
 
 .method protected callActivity(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->isDeviceProvisioned()Z
 
@@ -583,8 +576,6 @@
 
 .method protected callActivity(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->isDeviceProvisioned()Z
 
@@ -640,7 +631,6 @@
 
 .method public changeTextSize(I)V
     .locals 7
-    .param p1    # I
 
     new-instance v0, Landroid/util/DisplayMetrics;
 
@@ -861,7 +851,6 @@
 
 .method public dynamicallyReduceTextSize(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v12, -0x1
 
@@ -1117,9 +1106,6 @@
 
 .method public initLayout(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1190,13 +1176,6 @@
 
 .method public initLayout(IIIIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     sget-boolean v0, Lcom/android/systemui/statusbar/Feature;->mUseJellyBeanGUI:Z
 
@@ -1442,7 +1421,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -1490,7 +1468,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -1515,8 +1492,6 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const v2, 0x7f020213
 
@@ -1585,7 +1560,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mListener:Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton$Listener;
 
@@ -1705,7 +1679,6 @@
 
 .method public setActivateStatus(I)V
     .locals 4
-    .param p1    # I
 
     const v3, 0x7f02020b
 
@@ -1962,8 +1935,6 @@
 
 .method public setAltIcon(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mOnIconID2:I
 
@@ -1974,7 +1945,6 @@
 
 .method public setContextTextId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mContentTextID:I
 
@@ -1983,12 +1953,6 @@
 
 .method public setIcon(IIIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mTextID:I
 
@@ -2007,7 +1971,6 @@
 
 .method public setListener(Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton$Listener;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mListener:Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton$Listener;
 
@@ -2016,7 +1979,6 @@
 
 .method public setOffIconId2(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mOffIconID2:I
 
@@ -2025,7 +1987,6 @@
 
 .method public setOnIconId2(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mOnIconID2:I
 
@@ -2034,7 +1995,6 @@
 
 .method public setTextId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mTextID:I
 
@@ -2043,8 +2003,6 @@
 
 .method public setTextId(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mTextID:I
 
@@ -2055,8 +2013,6 @@
 
 .method protected showTalkBackDisablePopup(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->mAlertDialog:Landroid/app/AlertDialog;
 

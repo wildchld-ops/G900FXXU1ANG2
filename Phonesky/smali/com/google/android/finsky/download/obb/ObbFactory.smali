@@ -10,12 +10,6 @@
 # direct methods
 .method public static create(ZLjava/lang/String;ILjava/lang/String;JI)Lcom/google/android/finsky/download/obb/Obb;
     .locals 8
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
 
     new-instance v0, Lcom/google/android/finsky/download/obb/ObbImpl;
 
@@ -38,7 +32,6 @@
 
 .method public static getParentDirectory(Ljava/lang/String;)Ljava/io/File;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 

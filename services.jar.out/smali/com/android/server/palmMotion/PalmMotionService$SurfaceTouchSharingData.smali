@@ -245,8 +245,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/palmMotion/PalmMotionService;Lcom/android/server/palmMotion/PalmMotionService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/palmMotion/PalmMotionService;
-    .param p2    # Lcom/android/server/palmMotion/PalmMotionService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;-><init>(Lcom/android/server/palmMotion/PalmMotionService;)V
 
@@ -374,7 +372,6 @@
 
 .method public PreUpdate(Landroid/view/MotionEvent;)V
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v13, 0x2
 
@@ -666,7 +663,6 @@
 
 .method public Update(Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x2
 

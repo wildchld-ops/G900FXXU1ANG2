@@ -41,7 +41,6 @@
 
 .method public constructor <init>(Lcom/android/volley/toolbox/HttpStack;)V
     .locals 2
-    .param p1    # Lcom/android/volley/toolbox/HttpStack;
 
     new-instance v0, Lcom/android/volley/toolbox/ByteArrayPool;
 
@@ -56,8 +55,6 @@
 
 .method public constructor <init>(Lcom/android/volley/toolbox/HttpStack;Lcom/android/volley/toolbox/ByteArrayPool;)V
     .locals 0
-    .param p1    # Lcom/android/volley/toolbox/HttpStack;
-    .param p2    # Lcom/android/volley/toolbox/ByteArrayPool;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,7 +67,6 @@
 
 .method private addCacheHeaders(Ljava/util/Map;Lcom/android/volley/Cache$Entry;)V
     .locals 5
-    .param p2    # Lcom/android/volley/Cache$Entry;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -129,8 +125,6 @@
 
 .method private static attemptRetryOnException(Ljava/lang/String;Lcom/android/volley/Request;Lcom/android/volley/VolleyError;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p2    # Lcom/android/volley/VolleyError;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -213,7 +207,6 @@
 
 .method private static convertHeaders([Lorg/apache/http/Header;)Ljava/util/Map;
     .locals 4
-    .param p0    # [Lorg/apache/http/Header;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -262,7 +255,6 @@
 
 .method private entityToBytes(Lorg/apache/http/HttpEntity;)[B
     .locals 9
-    .param p1    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -389,9 +381,6 @@
 
 .method private logSlowRequests(JLcom/android/volley/Request;[BLorg/apache/http/StatusLine;)V
     .locals 4
-    .param p1    # J
-    .param p4    # [B
-    .param p5    # Lorg/apache/http/StatusLine;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",

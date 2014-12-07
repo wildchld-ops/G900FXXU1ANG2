@@ -89,7 +89,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fuelgauge/PowerUsageSummary;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/fuelgauge/PowerUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mBatteryStatusPref:Landroid/preference/Preference;
 
@@ -98,7 +97,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fuelgauge/PowerUsageSummary;)Lcom/android/settings/fuelgauge/BatteryStatsHelper;
     .locals 1
-    .param p0    # Lcom/android/settings/fuelgauge/PowerUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageSummary;->mStatsHelper:Lcom/android/settings/fuelgauge/BatteryStatsHelper;
 
@@ -107,7 +105,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fuelgauge/PowerUsageSummary;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fuelgauge/PowerUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageSummary;->refreshStats()V
 
@@ -630,7 +627,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -647,7 +643,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -872,8 +867,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v5, 0x0
 
@@ -949,7 +942,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

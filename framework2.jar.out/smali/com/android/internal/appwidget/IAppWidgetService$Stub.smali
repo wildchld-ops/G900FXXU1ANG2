@@ -90,7 +90,6 @@
 
 .method public static asInterface(Landroid/os/IBinder;)Lcom/android/internal/appwidget/IAppWidgetService;
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     if-nez p0, :cond_0
 
@@ -134,10 +133,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 15
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

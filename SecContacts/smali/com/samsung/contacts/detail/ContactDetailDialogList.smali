@@ -61,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/detail/ContactDetailDialogList;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactDetailDialogList;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactDetailDialogList;->mTitle:Ljava/lang/String;
 
@@ -70,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/detail/ContactDetailDialogList;)Lcom/samsung/contacts/detail/ContactDetailDialogListAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactDetailDialogList;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactDetailDialogList;->mAdapter:Lcom/samsung/contacts/detail/ContactDetailDialogListAdapter;
 
@@ -79,8 +77,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/detail/ContactDetailDialogList;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactDetailDialogList;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/ContactDetailDialogList;->safeStartActivity(Landroid/content/Intent;)V
 
@@ -149,7 +145,6 @@
 
 .method private safeStartActivity(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     if-eqz p1, :cond_0
 
@@ -233,10 +228,6 @@
 
 .method public static show(Landroid/app/FragmentManager;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # [Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
@@ -317,7 +308,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 

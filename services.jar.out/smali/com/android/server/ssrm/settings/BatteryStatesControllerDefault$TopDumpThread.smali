@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 

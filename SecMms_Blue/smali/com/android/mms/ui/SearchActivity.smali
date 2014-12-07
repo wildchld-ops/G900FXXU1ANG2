@@ -470,7 +470,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SearchActivity;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SearchActivity;->mContactMap:Ljava/util/HashMap;
 
@@ -479,8 +478,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/SearchActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SearchActivity;->mThreadCount:I
 
@@ -489,8 +486,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/SearchActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SearchActivity;->mBubbleCount:I
 
@@ -499,9 +494,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SearchActivity;Landroid/database/MatrixCursor;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
-    .param p1    # Landroid/database/MatrixCursor;
-    .param p2    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/SearchActivity;->getTotalCursor(Landroid/database/MatrixCursor;Landroid/database/Cursor;)Landroid/database/Cursor;
 
@@ -512,8 +504,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/SearchActivity;Landroid/database/Cursor;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SearchActivity;->setSeparatorInfo(Landroid/database/Cursor;)V
 
@@ -522,7 +512,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SearchActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SearchActivity;->mHandler2:Landroid/os/Handler;
 
@@ -531,7 +520,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SearchActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SearchActivity;->showProgressDialog()V
 
@@ -540,7 +528,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/SearchActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SearchActivity;->mSearchString:Ljava/lang/String;
 
@@ -549,8 +536,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/SearchActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SearchActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SearchActivity;->startQuery(Ljava/lang/String;)V
 
@@ -559,7 +544,6 @@
 
 .method private getSearchStringOrEmpty(Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "query"
 
@@ -638,8 +622,6 @@
 
 .method private getTotalCursor(Landroid/database/MatrixCursor;Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Landroid/database/MatrixCursor;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v9, 0x3
 
@@ -1510,7 +1492,6 @@
 
 .method private getTrimedOrEmpty(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1529,7 +1510,6 @@
 
 .method private setSeparatorInfo(Landroid/database/Cursor;)V
     .locals 11
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v5, -0x1
 
@@ -1851,7 +1831,6 @@
 
 .method private startQuery(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x1fa4
 
@@ -2017,7 +1996,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -2136,7 +2114,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const-string v0, "Mms/SearchActivity"
 
@@ -2174,8 +2151,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -2199,7 +2174,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/SearchActivity"
 
@@ -2255,7 +2229,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const-string v0, "Mms/SearchActivity"
 
@@ -2315,7 +2288,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 

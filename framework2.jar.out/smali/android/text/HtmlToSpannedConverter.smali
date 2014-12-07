@@ -71,10 +71,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;Lorg/ccil/cowan/tagsoup/Parser;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/text/Html$ImageGetter;
-    .param p3    # Landroid/text/Html$TagHandler;
-    .param p4    # Lorg/ccil/cowan/tagsoup/Parser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -97,9 +93,6 @@
 
 .method private static end(Landroid/text/SpannableStringBuilder;Ljava/lang/Class;Ljava/lang/Object;)V
     .locals 4
-    .param p0    # Landroid/text/SpannableStringBuilder;
-    .param p1    # Ljava/lang/Class;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/text/SpannableStringBuilder;->length()I
 
@@ -127,7 +120,6 @@
 
 .method private static endA(Landroid/text/SpannableStringBuilder;)V
     .locals 6
-    .param p0    # Landroid/text/SpannableStringBuilder;
 
     invoke-virtual {p0}, Landroid/text/SpannableStringBuilder;->length()I
 
@@ -171,7 +163,6 @@
 
 .method private static endFont(Landroid/text/SpannableStringBuilder;)V
     .locals 15
-    .param p0    # Landroid/text/SpannableStringBuilder;
 
     const/4 v1, 0x0
 
@@ -298,7 +289,6 @@
 
 .method private static endHeader(Landroid/text/SpannableStringBuilder;)V
     .locals 8
-    .param p0    # Landroid/text/SpannableStringBuilder;
 
     const/16 v7, 0x21
 
@@ -371,8 +361,6 @@
 
 .method private static getLast(Landroid/text/Spanned;Ljava/lang/Class;)Ljava/lang/Object;
     .locals 3
-    .param p0    # Landroid/text/Spanned;
-    .param p1    # Ljava/lang/Class;
 
     const/4 v1, 0x0
 
@@ -405,7 +393,6 @@
 
 .method private static handleBr(Landroid/text/SpannableStringBuilder;)V
     .locals 1
-    .param p0    # Landroid/text/SpannableStringBuilder;
 
     const-string v0, "\n"
 
@@ -416,7 +403,6 @@
 
 .method private handleEndTag(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -846,7 +832,6 @@
 
 .method private static handleP(Landroid/text/SpannableStringBuilder;)V
     .locals 3
-    .param p0    # Landroid/text/SpannableStringBuilder;
 
     const/16 v2, 0xa
 
@@ -901,8 +886,6 @@
 
 .method private handleStartTag(Ljava/lang/String;Lorg/xml/sax/Attributes;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xml/sax/Attributes;
 
     const/4 v3, 0x1
 
@@ -1325,8 +1308,6 @@
 
 .method private static start(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Landroid/text/SpannableStringBuilder;
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/text/SpannableStringBuilder;->length()I
 
@@ -1341,8 +1322,6 @@
 
 .method private static startA(Landroid/text/SpannableStringBuilder;Lorg/xml/sax/Attributes;)V
     .locals 4
-    .param p0    # Landroid/text/SpannableStringBuilder;
-    .param p1    # Lorg/xml/sax/Attributes;
 
     const-string v2, ""
 
@@ -1369,8 +1348,6 @@
 
 .method private static startFont(Landroid/text/SpannableStringBuilder;Lorg/xml/sax/Attributes;)V
     .locals 5
-    .param p0    # Landroid/text/SpannableStringBuilder;
-    .param p1    # Lorg/xml/sax/Attributes;
 
     const-string v3, ""
 
@@ -1405,9 +1382,6 @@
 
 .method private static startImg(Landroid/text/SpannableStringBuilder;Lorg/xml/sax/Attributes;Landroid/text/Html$ImageGetter;)V
     .locals 6
-    .param p0    # Landroid/text/SpannableStringBuilder;
-    .param p1    # Lorg/xml/sax/Attributes;
-    .param p2    # Landroid/text/Html$ImageGetter;
 
     const/4 v5, 0x0
 
@@ -1478,9 +1452,6 @@
 # virtual methods
 .method public characters([CII)V
     .locals 9
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1725,9 +1696,6 @@
 
 .method public endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1741,7 +1709,6 @@
 
 .method public endPrefixMapping(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1753,9 +1720,6 @@
 
 .method public ignorableWhitespace([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1767,8 +1731,6 @@
 
 .method public processingInstruction(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1780,14 +1742,12 @@
 
 .method public setDocumentLocator(Lorg/xml/sax/Locator;)V
     .locals 0
-    .param p1    # Lorg/xml/sax/Locator;
 
     return-void
 .end method
 
 .method public skippedEntity(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1810,10 +1770,6 @@
 
 .method public startElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lorg/xml/sax/Attributes;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -1827,8 +1783,6 @@
 
 .method public startPrefixMapping(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;

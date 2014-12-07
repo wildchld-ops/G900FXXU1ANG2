@@ -252,16 +252,6 @@
 
 .method public static addImage(ILjava/lang/String;Ljava/lang/String;JLandroid/location/Location;Landroid/graphics/Bitmap;[BIII)Z
     .locals 8
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Landroid/location/Location;
-    .param p6    # Landroid/graphics/Bitmap;
-    .param p7    # [B
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     const/4 v4, 0x0
 
@@ -458,7 +448,6 @@
 
 .method public static convertGpsToExif(D)Ljava/lang/String;
     .locals 12
-    .param p0    # D
 
     const/4 v7, 0x3
 
@@ -543,7 +532,6 @@
 
 .method public static createName(J)Ljava/lang/String;
     .locals 1
-    .param p0    # J
 
     const-string v0, "yyyyMMdd_kkmmss"
 
@@ -560,8 +548,6 @@
 
 .method public static createName(JI)Ljava/lang/String;
     .locals 2
-    .param p0    # J
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -600,8 +586,6 @@
 
 .method public static createName(JLjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -640,7 +624,6 @@
 
 .method public static getCoverModeImageSavingDir(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -659,8 +642,6 @@
 
 .method public static getHiddenSavingDir(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -695,7 +676,6 @@
 
 .method public static getImageSavingDir(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -714,8 +694,6 @@
 
 .method public static getImageSavingDir(II)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -748,12 +726,6 @@
 
 .method public static setExif(Ljava/lang/String;JLandroid/location/Location;III)V
     .locals 25
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
-    .param p3    # Landroid/location/Location;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v9, 0x0
 
@@ -1021,9 +993,6 @@
 
 .method public static setImageSize(Landroid/content/ContentResolver;Landroid/net/Uri;J)V
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
 
     const/4 v3, 0x0
 
@@ -1063,9 +1032,6 @@
 
 .method public static updatePostSavingFile(Landroid/content/ContentResolver;Landroid/net/Uri;J)V
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
 
     const/4 v9, 0x0
 

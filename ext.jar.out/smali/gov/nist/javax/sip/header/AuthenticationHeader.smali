@@ -60,7 +60,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lgov/nist/javax/sip/header/ParametersHeader;-><init>(Ljava/lang/String;)V
 
@@ -313,7 +312,6 @@
 
 .method public setAlgorithm(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -340,7 +338,6 @@
 
 .method public setCK(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -367,7 +364,6 @@
 
 .method public setCNonce(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -383,7 +379,6 @@
 
 .method public setChallenge(Lgov/nist/javax/sip/header/Challenge;)V
     .locals 1
-    .param p1    # Lgov/nist/javax/sip/header/Challenge;
 
     iget-object v0, p1, Lgov/nist/javax/sip/header/Challenge;->scheme:Ljava/lang/String;
 
@@ -398,7 +393,6 @@
 
 .method public setDomain(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -425,7 +419,6 @@
 
 .method public setIK(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -452,7 +445,6 @@
 
 .method public setIntegrityProtected(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -479,7 +471,6 @@
 
 .method public setNonce(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -506,7 +497,6 @@
 
 .method public setNonceCount(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -567,7 +557,6 @@
 
 .method public setOpaque(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -594,8 +583,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -805,7 +792,6 @@
 
 .method public setQop(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -832,7 +818,6 @@
 
 .method public setRealm(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -859,7 +844,6 @@
 
 .method public setResponse(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -886,7 +870,6 @@
 
 .method public setScheme(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lgov/nist/javax/sip/header/AuthenticationHeader;->scheme:Ljava/lang/String;
 
@@ -895,7 +878,6 @@
 
 .method public setStale(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -914,7 +896,6 @@
 
 .method public setURI(Ljavax/sip/address/URI;)V
     .locals 3
-    .param p1    # Ljavax/sip/address/URI;
 
     if-eqz p1, :cond_0
 
@@ -944,7 +925,6 @@
 
 .method public setUsername(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

@@ -50,10 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/utils/GPlusUtils$GetCirclesListener;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/finsky/utils/GPlusUtils$GetCirclesListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -227,8 +223,6 @@
 
 .method public onCirclesLoaded(Lcom/google/android/gms/common/ConnectionResult;Lcom/google/android/gms/people/model/CircleBuffer;)V
     .locals 5
-    .param p1    # Lcom/google/android/gms/common/ConnectionResult;
-    .param p2    # Lcom/google/android/gms/people/model/CircleBuffer;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -305,7 +299,6 @@
 
 .method public onConnected(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/google/android/finsky/utils/GPlusUtils$CirclesLoader;->loadData()V
 
@@ -314,7 +307,6 @@
 
 .method public onConnectionFailed(Lcom/google/android/gms/common/ConnectionResult;)V
     .locals 1
-    .param p1    # Lcom/google/android/gms/common/ConnectionResult;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -333,8 +325,6 @@
 
 .method public onPeopleLoaded(Lcom/google/android/gms/common/ConnectionResult;Lcom/google/android/gms/people/model/PersonBuffer;)V
     .locals 2
-    .param p1    # Lcom/google/android/gms/common/ConnectionResult;
-    .param p2    # Lcom/google/android/gms/people/model/PersonBuffer;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 

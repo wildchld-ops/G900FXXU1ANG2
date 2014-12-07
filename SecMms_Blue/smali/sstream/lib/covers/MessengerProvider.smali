@@ -85,7 +85,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -195,8 +194,6 @@
 
 .method private static sendMessage(ILandroid/os/Bundle;)V
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/os/Bundle;
 
     sget-boolean v1, Lsstream/lib/covers/MessengerProvider;->mIsBound:Z
 
@@ -271,8 +268,6 @@
 
 .method updateStoryItems(Ljava/lang/String;Lsstream/lib/covers/StreamUpdateListener;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lsstream/lib/covers/StreamUpdateListener;
 
     sget-object v4, Lsstream/lib/covers/MessengerProvider;->userRequests:Ljava/util/Map;
 

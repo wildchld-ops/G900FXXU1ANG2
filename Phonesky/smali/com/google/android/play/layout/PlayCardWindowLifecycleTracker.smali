@@ -67,7 +67,6 @@
 # virtual methods
 .method declared-synchronized cardAttachedToWindow(Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 3
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     monitor-enter p0
 
@@ -114,7 +113,6 @@
 
 .method declared-synchronized cardDetachedFromWindow(Lcom/google/android/play/layout/PlayCardViewBase;)V
     .locals 3
-    .param p1    # Lcom/google/android/play/layout/PlayCardViewBase;
 
     monitor-enter p0
 
@@ -161,7 +159,6 @@
 
 .method public declared-synchronized registerListener(Lcom/google/android/play/layout/PlayCardWindowLifecycleTracker$CardLifecycleListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/play/layout/PlayCardWindowLifecycleTracker$CardLifecycleListener;
 
     monitor-enter p0
 

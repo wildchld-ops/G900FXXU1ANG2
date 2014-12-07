@@ -119,7 +119,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mHandler:Landroid/os/Handler;
 
@@ -128,8 +127,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mHandler:Landroid/os/Handler;
 
@@ -138,8 +135,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mRegisterStarted:Z
 
@@ -148,9 +143,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;ILlibcore/util/MutableBoolean;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
-    .param p1    # I
-    .param p2    # Llibcore/util/MutableBoolean;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->upgradeQuality(ILlibcore/util/MutableBoolean;)I
 
@@ -161,7 +153,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;)Landroid/app/admin/DevicePolicyManager;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mDPM:Landroid/app/admin/DevicePolicyManager;
 
@@ -170,7 +161,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->odePasswordQuality:Ljava/lang/String;
 
@@ -179,7 +169,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -188,7 +177,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
 
     invoke-direct {p0}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->showSensorErrorDialog()V
 
@@ -197,7 +185,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mFingerprintManager:Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -206,7 +193,6 @@
 
 .method private allowedForBlock(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "unlock_backup_info"
 
@@ -238,7 +224,6 @@
 
 .method private allowedForFallback(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "unlock_backup_info"
 
@@ -278,8 +263,6 @@
 
 .method private disableUnusablePreferences(ILlibcore/util/MutableBoolean;)V
     .locals 22
-    .param p1    # I
-    .param p2    # Llibcore/util/MutableBoolean;
 
     invoke-virtual/range {p0 .. p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -1394,7 +1377,6 @@
 
 .method private setCacChosen(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->CAC_LOCK_CHOSEN:Z
 
@@ -1844,8 +1826,6 @@
 
 .method private upgradeQuality(ILlibcore/util/MutableBoolean;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Llibcore/util/MutableBoolean;
 
     const v2, 0x8000
 
@@ -1906,7 +1886,6 @@
 
 .method private upgradeQualityForDPM(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mDPM:Landroid/app/admin/DevicePolicyManager;
 
@@ -1926,7 +1905,6 @@
 
 .method private upgradeQualityForEncryption(I)I
     .locals 5
-    .param p1    # I
 
     const/high16 v4, 0x20000
 
@@ -1986,7 +1964,6 @@
 
 .method private upgradeQualityForKeyStore(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2020,9 +1997,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -2208,7 +2182,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2217,7 +2190,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -2452,9 +2424,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -3249,7 +3218,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

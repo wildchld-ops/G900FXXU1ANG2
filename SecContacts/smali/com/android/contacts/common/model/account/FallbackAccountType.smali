@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const v3, 0x7f0e024e
 
@@ -635,8 +633,6 @@
 
 .method static createWithPackageNameForTest(Landroid/content/Context;Ljava/lang/String;)Lcom/android/contacts/common/model/account/AccountType;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/contacts/common/model/account/FallbackAccountType;
 

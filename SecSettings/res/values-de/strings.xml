@@ -1386,7 +1386,7 @@ Sie können das Multi Window-Symbol auch ein- oder ausblenden, indem Sie die Zur
     <string name="usb_tethering_errored_subtext">USB-Tethering-Fehler</string>
     <string name="usb_tethering_on_during_sidesync_popup">USB-Tethering kann während der Verwendung von SideSync nicht deaktiviert werden. Wenn USB-Tethering deaktiviert wird, wird auch SideSync deaktiviert.</string>
     <string name="usb_tethering_off_during_sidesync_popup">USB-Tethering kann während der Verwendung von SideSync nicht aktiviert werden. Wenn USB-Tethering aktiviert wird, wird SideSync deaktiviert.</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth-Tethering</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth-Tethering</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Internetverbindung des Geräts wird freigegeben…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Internetverbindung des Geräts für 1 Gerät freigegeben.</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Internetverbindung des Geräts für %d Geräte freigegeben.</string>

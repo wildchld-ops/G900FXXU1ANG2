@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V
     .locals 3
-    .param p1    # Lorg/apache/http/params/HttpParams;
-    .param p2    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     const/4 v2, 0x0
 
@@ -150,8 +148,6 @@
 
 .method public closeIdleConnections(JLjava/util/concurrent/TimeUnit;)V
     .locals 7
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/conn/SingleClientConnManager;->assertStillUp()V
 
@@ -221,7 +217,6 @@
 
 .method protected createConnectionOperator(Lorg/apache/http/conn/scheme/SchemeRegistry;)Lorg/apache/http/conn/ClientConnectionOperator;
     .locals 1
-    .param p1    # Lorg/apache/http/conn/scheme/SchemeRegistry;
 
     new-instance v0, Lorg/apache/http/impl/conn/DefaultClientConnectionOperator;
 
@@ -247,8 +242,6 @@
 
 .method public getConnection(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ManagedClientConnection;
     .locals 8
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -435,9 +428,6 @@
 
 .method public releaseConnection(Lorg/apache/http/conn/ManagedClientConnection;JLjava/util/concurrent/TimeUnit;)V
     .locals 9
-    .param p1    # Lorg/apache/http/conn/ManagedClientConnection;
-    .param p2    # J
-    .param p4    # Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/conn/SingleClientConnManager;->assertStillUp()V
 
@@ -709,8 +699,6 @@
 
 .method public final requestConnection(Lorg/apache/http/conn/routing/HttpRoute;Ljava/lang/Object;)Lorg/apache/http/conn/ClientConnectionRequest;
     .locals 1
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lorg/apache/http/impl/conn/SingleClientConnManager$1;
 

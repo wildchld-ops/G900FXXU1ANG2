@@ -226,7 +226,6 @@
 
 .method public constructor <init>(Lcom/android/server/firewall/IntentFirewall$AMSInterface;)V
     .locals 3
-    .param p1    # Lcom/android/server/firewall/IntentFirewall$AMSInterface;
 
     const/4 v2, 0x0
 
@@ -281,8 +280,6 @@
 
 .method static synthetic access$300(Lcom/android/server/firewall/IntentFirewall;Ljava/io/File;)V
     .locals 0
-    .param p0    # Lcom/android/server/firewall/IntentFirewall;
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0, p1}, Lcom/android/server/firewall/IntentFirewall;->readRulesDir(Ljava/io/File;)V
 
@@ -299,7 +296,6 @@
 
 .method private static joinPackages([Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # [Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -422,10 +418,6 @@
 
 .method private static logIntent(ILandroid/content/Intent;ILjava/lang/String;)V
     .locals 13
-    .param p0    # I
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -503,7 +495,6 @@
 
 .method static parseFilter(Lorg/xmlpull/v1/XmlPullParser;)Lcom/android/server/firewall/Filter;
     .locals 5
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -559,8 +550,6 @@
 
 .method private readRules(Ljava/io/File;[Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;)V
     .locals 17
-    .param p1    # Ljava/io/File;
-    .param p2    # [Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;
 
     new-instance v11, Ljava/util/ArrayList;
 
@@ -1032,7 +1021,6 @@
 
 .method private readRulesDir(Ljava/io/File;)V
     .locals 10
-    .param p1    # Ljava/io/File;
 
     const/4 v9, 0x2
 
@@ -1220,11 +1208,6 @@
 # virtual methods
 .method public checkBroadcast(Landroid/content/Intent;IILjava/lang/String;I)Z
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     iget-object v1, p0, Lcom/android/server/firewall/IntentFirewall;->mBroadcastResolver:Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;
 
@@ -1255,12 +1238,6 @@
 
 .method checkComponentPermission(Landroid/content/Intent;Ljava/lang/String;IIIZ)Z
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     iget-object v0, p0, Lcom/android/server/firewall/IntentFirewall;->mAms:Lcom/android/server/firewall/IntentFirewall$AMSInterface;
 
@@ -1295,14 +1272,6 @@
 
 .method public checkIntent(Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;Landroid/content/ComponentName;ILandroid/content/Intent;IILjava/lang/String;I)Z
     .locals 16
-    .param p1    # Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
-    .param p4    # Landroid/content/Intent;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
 
     const/4 v15, 0x0
 
@@ -1420,12 +1389,6 @@
 
 .method public checkService(Landroid/content/ComponentName;Landroid/content/Intent;IILjava/lang/String;Landroid/content/pm/ApplicationInfo;)Z
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, p0, Lcom/android/server/firewall/IntentFirewall;->mServiceResolver:Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;
 
@@ -1454,11 +1417,6 @@
 
 .method public checkStartActivity(Landroid/content/Intent;IILjava/lang/String;Landroid/content/pm/ApplicationInfo;)Z
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, p0, Lcom/android/server/firewall/IntentFirewall;->mActivityResolver:Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;
 
@@ -1489,8 +1447,6 @@
 
 .method signaturesMatch(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 

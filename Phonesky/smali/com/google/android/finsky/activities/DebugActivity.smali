@@ -102,7 +102,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/DebugActivity;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DebugActivity;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/DebugActivity;->clearCacheAndQuit()V
 
@@ -111,8 +110,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/DebugActivity;Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DebugActivity;
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/DebugActivity;->selectCarrier(Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;)V
 
@@ -129,8 +126,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/activities/DebugActivity;Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/activities/DebugActivity;
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/activities/DebugActivity;->selectEnvironment(Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;)V
 
@@ -155,7 +150,6 @@
 
 .method private exportDatabase(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x0
 
@@ -275,7 +269,6 @@
 
 .method private getOptionsFromCsv(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Lcom/google/android/finsky/activities/DebugActivity$ICsvSelectorHelper;)I
     .locals 15
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -559,7 +552,6 @@
 
 .method private override(Lcom/google/android/finsky/config/GservicesValue;Ljava/lang/String;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -591,7 +583,6 @@
 
 .method private selectCarrier(Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$CarrierOverride;
 
     sget-object v0, Lcom/google/android/finsky/api/DfeApiConfig;->ipCountryOverride:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -610,7 +601,6 @@
 
 .method private selectEnvironment(Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/activities/DebugActivity$EnvironmentOverride;
 
     const/4 v4, 0x0
 
@@ -968,9 +958,6 @@
 
 .method public buildSelectorFromCsv(Lcom/google/android/finsky/activities/DebugActivity$ICsvSelectorHelper;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 7
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1031,7 +1018,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x7
 
@@ -1123,8 +1109,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x0
 

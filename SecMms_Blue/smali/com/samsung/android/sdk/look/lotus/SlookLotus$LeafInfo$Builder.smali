@@ -109,9 +109,6 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -222,10 +219,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -336,7 +329,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mSubTitle_2:Ljava/lang/String;
 
@@ -345,7 +337,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mTextDescription:Ljava/lang/String;
 
@@ -354,7 +345,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mFileNameDescription:Ljava/lang/String;
 
@@ -363,7 +353,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mImageURI_1:Ljava/lang/String;
 
@@ -372,7 +361,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mImageURI_2:Ljava/lang/String;
 
@@ -381,7 +369,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mImageURI_3:Ljava/lang/String;
 
@@ -390,7 +377,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mImageURI_4:Ljava/lang/String;
 
@@ -399,7 +385,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mContentIntent:Landroid/content/Intent;
 
@@ -408,7 +393,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_1:Ljava/lang/String;
 
@@ -417,7 +401,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonString_1:Ljava/lang/String;
 
@@ -426,7 +409,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCardViewType:I
 
@@ -435,7 +417,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonIntent_1:Landroid/content/Intent;
 
@@ -444,7 +425,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_1:I
 
@@ -453,7 +433,6 @@
 
 .method static synthetic access$2200(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_2:Ljava/lang/String;
 
@@ -462,7 +441,6 @@
 
 .method static synthetic access$2300(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonString_2:Ljava/lang/String;
 
@@ -471,7 +449,6 @@
 
 .method static synthetic access$2400(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonIntent_2:Landroid/content/Intent;
 
@@ -480,7 +457,6 @@
 
 .method static synthetic access$2500(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_2:I
 
@@ -489,7 +465,6 @@
 
 .method static synthetic access$2600(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_3:Ljava/lang/String;
 
@@ -498,7 +473,6 @@
 
 .method static synthetic access$2700(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonString_3:Ljava/lang/String;
 
@@ -507,7 +481,6 @@
 
 .method static synthetic access$2800(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonIntent_3:Landroid/content/Intent;
 
@@ -516,7 +489,6 @@
 
 .method static synthetic access$2900(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_3:I
 
@@ -525,7 +497,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCardGroupId:I
 
@@ -534,7 +505,6 @@
 
 .method static synthetic access$3000(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_4:Ljava/lang/String;
 
@@ -543,7 +513,6 @@
 
 .method static synthetic access$3100(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonString_4:Ljava/lang/String;
 
@@ -552,7 +521,6 @@
 
 .method static synthetic access$3200(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonIntent_4:Landroid/content/Intent;
 
@@ -561,7 +529,6 @@
 
 .method static synthetic access$3300(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_4:I
 
@@ -570,7 +537,6 @@
 
 .method static synthetic access$3400(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_5:Ljava/lang/String;
 
@@ -579,7 +545,6 @@
 
 .method static synthetic access$3500(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonString_5:Ljava/lang/String;
 
@@ -588,7 +553,6 @@
 
 .method static synthetic access$3600(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonIntent_5:Landroid/content/Intent;
 
@@ -597,7 +561,6 @@
 
 .method static synthetic access$3700(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_5:I
 
@@ -606,7 +569,6 @@
 
 .method static synthetic access$3800(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mSwitch:I
 
@@ -615,7 +577,6 @@
 
 .method static synthetic access$3900(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mSwitchIntent:Landroid/content/Intent;
 
@@ -624,7 +585,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCardId:I
 
@@ -633,7 +593,6 @@
 
 .method static synthetic access$4000(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mSwitchVolatile:I
 
@@ -642,7 +601,6 @@
 
 .method static synthetic access$4100(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCheck:I
 
@@ -651,7 +609,6 @@
 
 .method static synthetic access$4200(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCheckIntent:Landroid/content/Intent;
 
@@ -660,7 +617,6 @@
 
 .method static synthetic access$4300(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCheckVolatile:I
 
@@ -669,7 +625,6 @@
 
 .method static synthetic access$4400(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/widget/RemoteViews;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mRemoteView:Landroid/widget/RemoteViews;
 
@@ -678,7 +633,6 @@
 
 .method static synthetic access$4500(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mBundle:Landroid/os/Bundle;
 
@@ -687,7 +641,6 @@
 
 .method static synthetic access$4600(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mRelayAction:I
 
@@ -696,7 +649,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mVolatile:I
 
@@ -705,7 +657,6 @@
 
 .method static synthetic access$600(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mGroupPriority:I
 
@@ -714,7 +665,6 @@
 
 .method static synthetic access$700(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCardPriority:I
 
@@ -723,7 +673,6 @@
 
 .method static synthetic access$800(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mTitle:Ljava/lang/String;
 
@@ -732,7 +681,6 @@
 
 .method static synthetic access$900(Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mSubTitle:Ljava/lang/String;
 
@@ -1377,7 +1325,6 @@
 
 .method public setButtonVolatile_1(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_1:I
 
@@ -1386,7 +1333,6 @@
 
 .method public setButtonVolatile_2(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_2:I
 
@@ -1395,7 +1341,6 @@
 
 .method public setButtonVolatile_3(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_3:I
 
@@ -1404,7 +1349,6 @@
 
 .method public setButtonVolatile_4(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_4:I
 
@@ -1413,7 +1357,6 @@
 
 .method public setButtonVolatile_5(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonVolatile_5:I
 
@@ -1422,8 +1365,6 @@
 
 .method public setButton_1(Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_1:Ljava/lang/String;
 
@@ -1434,9 +1375,6 @@
 
 .method public setButton_1(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_1:Ljava/lang/String;
 
@@ -1449,8 +1387,6 @@
 
 .method public setButton_2(Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_2:Ljava/lang/String;
 
@@ -1461,9 +1397,6 @@
 
 .method public setButton_2(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_2:Ljava/lang/String;
 
@@ -1476,8 +1409,6 @@
 
 .method public setButton_3(Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_3:Ljava/lang/String;
 
@@ -1488,9 +1419,6 @@
 
 .method public setButton_3(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_3:Ljava/lang/String;
 
@@ -1503,8 +1431,6 @@
 
 .method public setButton_4(Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_4:Ljava/lang/String;
 
@@ -1515,9 +1441,6 @@
 
 .method public setButton_4(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_4:Ljava/lang/String;
 
@@ -1530,8 +1453,6 @@
 
 .method public setButton_5(Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_5:Ljava/lang/String;
 
@@ -1542,9 +1463,6 @@
 
 .method public setButton_5(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mButtonURI_5:Ljava/lang/String;
 
@@ -1557,7 +1475,6 @@
 
 .method public setCardPriority(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCardPriority:I
 
@@ -1566,8 +1483,6 @@
 
 .method public setCheck(ILandroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCheck:I
 
@@ -1578,7 +1493,6 @@
 
 .method public setCheckVolatile(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mCheckVolatile:I
 
@@ -1587,7 +1501,6 @@
 
 .method public setContentIntent(Landroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mContentIntent:Landroid/content/Intent;
 
@@ -1596,7 +1509,6 @@
 
 .method public setGroupPriority(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mGroupPriority:I
 
@@ -1605,10 +1517,6 @@
 
 .method public setImage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mImageURI_1:Ljava/lang/String;
 
@@ -1623,7 +1531,6 @@
 
 .method public setRelayAction(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mRelayAction:I
 
@@ -1632,7 +1539,6 @@
 
 .method public setRemoteView(Landroid/widget/RemoteViews;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mRemoteView:Landroid/widget/RemoteViews;
 
@@ -1641,7 +1547,6 @@
 
 .method public setSpecificExtraData(Landroid/os/Bundle;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mBundle:Landroid/os/Bundle;
 
@@ -1650,8 +1555,6 @@
 
 .method public setSwitch(ILandroid/content/Intent;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mSwitch:I
 
@@ -1662,7 +1565,6 @@
 
 .method public setSwitchVolatile(I)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mSwitchVolatile:I
 
@@ -1671,9 +1573,6 @@
 
 .method public setText(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mTitle:Ljava/lang/String;
 
@@ -1686,10 +1585,6 @@
 
 .method public setText(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mTitle:Ljava/lang/String;
 
@@ -1704,9 +1599,6 @@
 
 .method public setTextFileName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mTitle:Ljava/lang/String;
 
@@ -1719,10 +1611,6 @@
 
 .method public setTextFileName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/lotus/SlookLotus$LeafInfo$Builder;->mTitle:Ljava/lang/String;
 

@@ -100,12 +100,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/google/android/finsky/receivers/InstallerImpl;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/download/DownloadQueue;Lcom/google/android/finsky/utils/Notifier;Lcom/google/android/finsky/installer/InstallPolicies;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/receivers/InstallerImpl;
-    .param p3    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p4    # Lcom/google/android/finsky/download/DownloadQueue;
-    .param p5    # Lcom/google/android/finsky/utils/Notifier;
-    .param p6    # Lcom/google/android/finsky/installer/InstallPolicies;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -132,7 +126,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/receivers/InstallerTask;)Lcom/google/android/finsky/appstate/InstallerDataStore;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mInstallerDataStore:Lcom/google/android/finsky/appstate/InstallerDataStore;
 
@@ -141,7 +134,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/receivers/InstallerTask;)Lcom/google/android/finsky/appstate/AppStates;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mAppStates:Lcom/google/android/finsky/appstate/AppStates;
 
@@ -150,7 +142,6 @@
 
 .method static synthetic access$1000(Lcom/google/android/finsky/receivers/InstallerTask;)Lcom/google/android/finsky/analytics/PlayStore$AppData;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mLogAppData:Lcom/google/android/finsky/analytics/PlayStore$AppData;
 
@@ -159,9 +150,6 @@
 
 .method static synthetic access$1100(Lcom/google/android/finsky/receivers/InstallerTask;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/receivers/InstallerTask;->setInstallerState(ILjava/lang/String;)V
 
@@ -170,7 +158,6 @@
 
 .method static synthetic access$1200(Lcom/google/android/finsky/receivers/InstallerTask;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     invoke-direct {p0}, Lcom/google/android/finsky/receivers/InstallerTask;->advanceState()V
 
@@ -179,9 +166,6 @@
 
 .method static synthetic access$1300(Lcom/google/android/finsky/receivers/InstallerTask;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/receivers/InstallerTask;->reportPatchFailure(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -190,9 +174,6 @@
 
 .method static synthetic access$1400(Lcom/google/android/finsky/receivers/InstallerTask;ILandroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/receivers/InstallerTask;->setInstallerState(ILandroid/net/Uri;)V
 
@@ -201,7 +182,6 @@
 
 .method static synthetic access$1500(Lcom/google/android/finsky/receivers/InstallerTask;)Lcom/google/android/finsky/download/DownloadQueue;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mDownloadQueue:Lcom/google/android/finsky/download/DownloadQueue;
 
@@ -210,7 +190,6 @@
 
 .method static synthetic access$1600(Lcom/google/android/finsky/receivers/InstallerTask;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     invoke-direct {p0}, Lcom/google/android/finsky/receivers/InstallerTask;->tryRestartWithoutPatch()Z
 
@@ -221,9 +200,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/receivers/InstallerTask;Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/receivers/InstallerTask;->processDeliveryData(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Z)V
 
@@ -232,8 +208,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/receivers/InstallerTask;Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/receivers/InstallerTask;->startNextDownload(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)V
 
@@ -242,8 +216,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/receivers/InstallerTask;I)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/receivers/InstallerTask;->deliveryResponseToInstallerError(I)I
 
@@ -254,9 +226,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/receivers/InstallerTask;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/receivers/InstallerTask;->notifyListeners(Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
 
@@ -265,9 +234,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/receivers/InstallerTask;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/receivers/InstallerTask;->showDownloadNotification(ILjava/lang/String;)V
 
@@ -276,8 +242,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/receivers/InstallerTask;Lcom/android/volley/VolleyError;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
-    .param p1    # Lcom/android/volley/VolleyError;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/receivers/InstallerTask;->volleyErrorToInstallerError(Lcom/android/volley/VolleyError;)I
 
@@ -288,7 +252,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/receivers/InstallerTask;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mShowCompletionNotifications:Z
 
@@ -297,7 +260,6 @@
 
 .method static synthetic access$900(Lcom/google/android/finsky/receivers/InstallerTask;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/receivers/InstallerTask;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mIsUpdate:Z
 
@@ -539,7 +501,6 @@
 
 .method private canDownloadPatch(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)Z
     .locals 27
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     invoke-virtual/range {p1 .. p1}, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->getFlags()I
 
@@ -1152,7 +1113,6 @@
 
 .method private cancelCleanup(Lcom/google/android/finsky/appstate/AppStates$AppState;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     const/4 v5, 0x0
 
@@ -1253,7 +1213,6 @@
 
 .method private checkValidDeliveryData(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)Z
     .locals 13
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     const-wide/16 v11, 0x0
 
@@ -1343,9 +1302,6 @@
 
 .method public static cleanObbDirectory(Lcom/google/android/finsky/download/obb/Obb;Lcom/google/android/finsky/download/obb/Obb;Ljava/lang/String;)V
     .locals 11
-    .param p0    # Lcom/google/android/finsky/download/obb/Obb;
-    .param p1    # Lcom/google/android/finsky/download/obb/Obb;
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x3
 
@@ -1451,7 +1407,6 @@
 
 .method private cleanup(Lcom/google/android/finsky/appstate/AppStates$AppState;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     const/4 v9, 0x5
 
@@ -1655,7 +1610,6 @@
 
 .method private deliveryResponseToInstallerError(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1691,7 +1645,6 @@
 
 .method private generateDownload(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)Lcom/google/android/finsky/download/InternalDownload;
     .locals 20
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     invoke-virtual/range {p1 .. p1}, Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;->getDeliveryData()Lcom/google/android/finsky/protos/AndroidAppDelivery$AndroidAppDeliveryData;
 
@@ -1823,8 +1776,6 @@
 
 .method private generateObbDownload(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Lcom/google/android/finsky/download/obb/Obb;)Lcom/google/android/finsky/download/InternalDownload;
     .locals 19
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p2    # Lcom/google/android/finsky/download/obb/Obb;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -1935,7 +1886,6 @@
 
 .method private getInstalledVersionForOtherUser(Lcom/google/android/finsky/appstate/AppStates$AppState;)I
     .locals 8
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     const/4 v3, -0x1
 
@@ -2027,7 +1977,6 @@
 
 .method private getInstallerListener(Landroid/net/Uri;)Lcom/google/android/finsky/utils/PackageManagerHelper$InstallPackageListener;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Lcom/google/android/finsky/receivers/InstallerTask$3;
 
@@ -2038,8 +1987,6 @@
 
 .method private notifyListeners(Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mInstaller:Lcom/google/android/finsky/receivers/InstallerImpl;
 
@@ -2052,7 +1999,6 @@
 
 .method private populateFields(Lcom/google/android/finsky/appstate/AppStates$AppState;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     const/4 v4, 0x0
 
@@ -2173,8 +2119,6 @@
 
 .method private processDeliveryData(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;Z)V
     .locals 11
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
-    .param p2    # Z
 
     const/4 v10, 0x4
 
@@ -2346,11 +2290,6 @@
 
 .method private recoverApk(Lcom/google/android/finsky/appstate/AppStates$AppState;Landroid/net/Uri;III)Z
     .locals 7
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x2
 
@@ -2483,11 +2422,6 @@
 
 .method private recoverInstalling(Lcom/google/android/finsky/appstate/AppStates$AppState;Landroid/net/Uri;III)Z
     .locals 5
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v3, 0x1
 
@@ -2571,12 +2505,6 @@
 
 .method private recoverObb(Lcom/google/android/finsky/appstate/AppStates$AppState;Landroid/net/Uri;IIIZ)Z
     .locals 9
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     if-eqz p6, :cond_0
 
@@ -2844,8 +2772,6 @@
 
 .method private reportPatchFailure(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -2874,7 +2800,6 @@
 
 .method private requestDeliveryData(Lcom/google/android/finsky/appstate/AppStates$AppState;)V
     .locals 17
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     move-object/from16 v0, p1
 
@@ -3111,7 +3036,6 @@
 
 .method private requireExternalStorageOrCancel(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)Z
     .locals 8
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     const/4 v7, 0x1
 
@@ -3187,8 +3111,6 @@
 
 .method private setInstallerState(ILandroid/net/Uri;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p2, :cond_0
 
@@ -3209,8 +3131,6 @@
 
 .method private setInstallerState(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mInstallerDataStore:Lcom/google/android/finsky/appstate/InstallerDataStore;
 
@@ -3223,8 +3143,6 @@
 
 .method private showDownloadNotification(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/receivers/InstallerTask;->mShowErrorNotifications:Z
 
@@ -3250,7 +3168,6 @@
 
 .method private startActivation(Lcom/google/android/finsky/appstate/AppStates$AppState;)Z
     .locals 4
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     const/4 v2, 0x0
 
@@ -3297,7 +3214,6 @@
 
 .method private startApplyingPatch(Lcom/google/android/finsky/appstate/AppStates$AppState;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     iget-object v2, p1, Lcom/google/android/finsky/appstate/AppStates$AppState;->installerData:Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
@@ -3328,7 +3244,6 @@
 
 .method private startInstaller(Lcom/google/android/finsky/appstate/AppStates$AppState;)V
     .locals 23
-    .param p1    # Lcom/google/android/finsky/appstate/AppStates$AppState;
 
     invoke-direct/range {p0 .. p1}, Lcom/google/android/finsky/receivers/InstallerTask;->startActivation(Lcom/google/android/finsky/appstate/AppStates$AppState;)Z
 
@@ -3623,7 +3538,6 @@
 
 .method private startNextDownload(Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/appstate/InstallerDataStore$InstallerData;
 
     const/16 v6, 0x386
 
@@ -3884,7 +3798,6 @@
 
 .method private volleyErrorToInstallerError(Lcom/android/volley/VolleyError;)I
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     instance-of v0, p1, Lcom/android/volley/AuthFailureError;
 
@@ -3968,7 +3881,6 @@
 # virtual methods
 .method public cancel(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -4158,7 +4070,6 @@
 
 .method public onComplete(Lcom/google/android/finsky/download/Download;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const/4 v7, 0x1
 
@@ -4367,8 +4278,6 @@
 
 .method public onError(Lcom/google/android/finsky/download/Download;I)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -4462,8 +4371,6 @@
 
 .method public onProgress(Lcom/google/android/finsky/download/Download;Lcom/google/android/finsky/download/DownloadProgress;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # Lcom/google/android/finsky/download/DownloadProgress;
 
     const-wide/16 v4, 0x0
 
@@ -4558,7 +4465,6 @@
 
 .method public onStart(Lcom/google/android/finsky/download/Download;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const/16 v9, 0x387
 
@@ -4677,8 +4583,6 @@
 
 .method public recover(Landroid/net/Uri;I)Z
     .locals 10
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v3, 0x2
 
@@ -4857,7 +4761,6 @@
 
 .method releaseInstalledUri(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     const-string v1, "file"
 

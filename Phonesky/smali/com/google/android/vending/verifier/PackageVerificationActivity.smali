@@ -127,7 +127,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -206,7 +205,6 @@
 
 .method sendToPackageInstaller(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "com.android.packageinstaller"
 

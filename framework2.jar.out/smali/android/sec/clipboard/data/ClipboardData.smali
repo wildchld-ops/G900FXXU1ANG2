@@ -47,7 +47,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +79,6 @@
 # virtual methods
 .method public GetAlternateFormat(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 4
-    .param p1    # I
 
     invoke-static {p1}, Landroid/sec/clipboard/data/ClipboardDataFactory;->CreateClipBoardData(I)Landroid/sec/clipboard/data/ClipboardData;
 
@@ -148,7 +146,6 @@
 
 .method public IsAlternateformatAvailable(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -177,8 +174,6 @@
 
 .method public SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     if-nez p2, :cond_0
 
@@ -195,7 +190,6 @@
 
 .method public SetProtectState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/sec/clipboard/data/ClipboardData;->mIsProtected:Z
 
@@ -215,7 +209,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -271,8 +264,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/sec/clipboard/data/ClipboardData;->mFormatID:I
 

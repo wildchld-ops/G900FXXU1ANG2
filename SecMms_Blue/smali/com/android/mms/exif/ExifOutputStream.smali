@@ -50,8 +50,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/io/OutputStream;Lcom/android/mms/exif/ExifInterface;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Lcom/android/mms/exif/ExifInterface;
 
     new-instance v0, Ljava/io/BufferedOutputStream;
 
@@ -294,8 +292,6 @@
 
 .method private calculateOffsetOfIfd(Lcom/android/mms/exif/IfdData;I)I
     .locals 7
-    .param p1    # Lcom/android/mms/exif/IfdData;
-    .param p2    # I
 
     invoke-virtual {p1}, Lcom/android/mms/exif/IfdData;->getTagCount()I
 
@@ -915,10 +911,6 @@
 
 .method private requestByteToBuffer(I[BII)I
     .locals 3
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Lcom/android/mms/exif/ExifOutputStream;->mBuffer:Ljava/nio/ByteBuffer;
 
@@ -947,7 +939,6 @@
 
 .method private stripNullValueTags(Lcom/android/mms/exif/ExifData;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Lcom/android/mms/exif/ExifData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1022,7 +1013,6 @@
 
 .method private writeAllTags(Lcom/android/mms/exif/OrderedDataOutputStream;)V
     .locals 6
-    .param p1    # Lcom/android/mms/exif/OrderedDataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1236,8 +1226,6 @@
 
 .method private writeIfd(Lcom/android/mms/exif/IfdData;Lcom/android/mms/exif/OrderedDataOutputStream;)V
     .locals 9
-    .param p1    # Lcom/android/mms/exif/IfdData;
-    .param p2    # Lcom/android/mms/exif/OrderedDataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1361,8 +1349,6 @@
 
 .method static writeTagValue(Lcom/android/mms/exif/ExifTag;Lcom/android/mms/exif/OrderedDataOutputStream;)V
     .locals 6
-    .param p0    # Lcom/android/mms/exif/ExifTag;
-    .param p1    # Lcom/android/mms/exif/OrderedDataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1510,7 +1496,6 @@
 
 .method private writeThumbnail(Lcom/android/mms/exif/OrderedDataOutputStream;)V
     .locals 2
-    .param p1    # Lcom/android/mms/exif/OrderedDataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1581,7 +1566,6 @@
 
 .method protected setExifData(Lcom/android/mms/exif/ExifData;)V
     .locals 0
-    .param p1    # Lcom/android/mms/exif/ExifData;
 
     iput-object p1, p0, Lcom/android/mms/exif/ExifOutputStream;->mExifData:Lcom/android/mms/exif/ExifData;
 
@@ -1590,7 +1574,6 @@
 
 .method public write(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1616,7 +1599,6 @@
 
 .method public write([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1634,9 +1616,6 @@
 
 .method public write([BII)V
     .locals 10
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

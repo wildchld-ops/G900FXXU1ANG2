@@ -224,7 +224,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -233,8 +232,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mCustomSearchQueryString:Ljava/lang/String;
 
@@ -243,7 +240,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mCustomSearchView:Landroid/widget/SearchView;
 
@@ -252,8 +248,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Z)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->doSelectAllAction(Z)Z
 
@@ -264,7 +258,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mContext:Landroid/content/Context;
 
@@ -273,8 +266,6 @@
 
 .method static synthetic access$502(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mShowMaxCountDialog:Z
 
@@ -283,8 +274,6 @@
 
 .method static synthetic access$600(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Z)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->setSelectAllCheckedVcard(Z)Z
 
@@ -295,8 +284,6 @@
 
 .method static synthetic access$702(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mIsSelectAllRunning:Z
 
@@ -305,7 +292,6 @@
 
 .method static synthetic access$800(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mIsDoneButtonClicked:Z
 
@@ -314,8 +300,6 @@
 
 .method static synthetic access$802(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mIsDoneButtonClicked:Z
 
@@ -324,8 +308,6 @@
 
 .method static synthetic access$902(Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mIsSelectAllTaskRunning:Z
 
@@ -482,7 +464,6 @@
 
 .method private configureEmptyView(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1359,7 +1340,6 @@
 
 .method private setSelectAllCheckedVcard(Z)Z
     .locals 13
-    .param p1    # Z
 
     const/4 v9, 0x1
 
@@ -1569,7 +1549,6 @@
 
 .method private showSearchProgress(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mSearchProgress:Landroid/view/View;
 
@@ -1595,7 +1574,6 @@
 
 .method private showSelectAllHeader(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -1667,7 +1645,6 @@
 
 .method private updateSelectAll(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1863,7 +1840,6 @@
 
 .method public createCursorLoader(Landroid/content/Context;)Landroid/content/CursorLoader;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->shouldIncludeProfile()Z
 
@@ -2249,7 +2225,6 @@
 
 .method public getSelectedContactName(Lcom/samsung/contacts/interactions/InteractionContactDatas;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas;
 
     invoke-virtual {p0}, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->getContactNameDisplayOrder()I
 
@@ -2272,8 +2247,6 @@
 
 .method protected inflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const-string v1, "InteractionPickerContactsFragment"
 
@@ -2411,7 +2384,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "InteractionPickerContactsFragment"
 
@@ -2457,7 +2429,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -2497,8 +2468,6 @@
 
 .method protected onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     const v5, 0x7f030112
 
@@ -2649,10 +2618,6 @@
 
 .method public onDataChosen(Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;Ljava/lang/String;ZLandroid/net/Uri;)V
     .locals 8
-    .param p1    # Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Landroid/net/Uri;
 
     const-wide/16 v4, 0x0
 
@@ -2782,9 +2747,6 @@
 
 .method protected onHeaderViewClick(Landroid/view/View;IJ)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/contacts/common/list/ContactEntryListFragment;->onHeaderViewClick(Landroid/view/View;IJ)V
 
@@ -2881,8 +2843,6 @@
 
 .method protected onItemClick(IJ)V
     .locals 8
-    .param p1    # I
-    .param p2    # J
 
     const/4 v7, 0x1
 
@@ -3046,9 +3006,6 @@
 
 .method public onItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3066,7 +3023,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 8
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3341,8 +3297,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -3464,7 +3418,6 @@
 
 .method public onPickerResult(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mListener:Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
@@ -3700,7 +3653,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "InteractionPickerContactsFragment"
 
@@ -3917,7 +3869,6 @@
 
 .method public pickContact(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mListener:Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
@@ -4045,7 +3996,6 @@
 
 .method public restoreSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "InteractionPickerContactsFragment"
 
@@ -4189,8 +4139,6 @@
 
 .method protected setDoneButton(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mIsFragmentShowing:Z
 
@@ -4233,7 +4181,6 @@
 
 .method public setExceptedList(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mExceptedRcsList:Ljava/lang/String;
 
@@ -4242,7 +4189,6 @@
 
 .method public setFilter(Lcom/android/contacts/common/list/ContactListFilter;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactListFilter;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mFilter:Lcom/android/contacts/common/list/ContactListFilter;
 
@@ -4251,7 +4197,6 @@
 
 .method public setIsFragmentShowing(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mIsFragmentShowing:Z
 
@@ -4260,9 +4205,6 @@
 
 .method public setMMSinformation(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mActionCode:I
 
@@ -4297,7 +4239,6 @@
 
 .method public setOnMultiDataPickerActionListener(Lcom/samsung/contacts/listener/InteractionListPickerListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
     iput-object p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mListener:Lcom/samsung/contacts/listener/InteractionListPickerListener;
 
@@ -4306,7 +4247,6 @@
 
 .method public setSelectAllEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mSelectAllEnabled:Z
 
@@ -4376,7 +4316,6 @@
 
 .method public setSpeedDial(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/interactions/InteractionPickerRCSeFragment;->mSpeedDial:Z
 

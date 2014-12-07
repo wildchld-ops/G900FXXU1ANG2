@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;IILjava/lang/String;)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -308,8 +305,6 @@
 
 .method public declared-synchronized onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     monitor-enter p0
 
@@ -420,7 +415,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
 
     new-instance v3, Ljava/util/ArrayList;
 

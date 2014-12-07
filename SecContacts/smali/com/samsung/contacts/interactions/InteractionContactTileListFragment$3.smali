@@ -73,8 +73,6 @@
 
 .method public onContactSelected(Lcom/android/contacts/common/list/ContactTileView;Landroid/graphics/Rect;)V
     .locals 8
-    .param p1    # Lcom/android/contacts/common/list/ContactTileView;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
@@ -185,16 +183,12 @@
 
 .method public onContextContactSelected(Lcom/android/contacts/common/list/ContactTileView;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/common/list/ContactTileView;
 
     return-void
 .end method
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     return-void
 .end method

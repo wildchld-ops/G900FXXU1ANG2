@@ -118,8 +118,6 @@
 # virtual methods
 .method public decrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -190,8 +188,6 @@
 
 .method public encrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -263,7 +259,6 @@
 
 .method public getSecretKey(Ljava/lang/String;)Ljavax/crypto/SecretKey;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v2, Ljavax/crypto/spec/PBEKeySpec;

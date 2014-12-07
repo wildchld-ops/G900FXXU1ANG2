@@ -162,7 +162,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -388,7 +387,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/server/ssrm/SortingMachine;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/ssrm/SortingMachine;->sInstance:Lcom/android/server/ssrm/SortingMachine;
 
@@ -498,7 +496,6 @@
 
 .method private getPackageList(I)Ljava/lang/String;
     .locals 7
-    .param p1    # I
 
     new-instance v4, Ljava/lang/StringBuffer;
 
@@ -571,7 +568,6 @@
 
 .method public static isEmailApp(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "com.android.email"
 
@@ -603,7 +599,6 @@
 
 .method public static isSnsApp(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "com.facebook.katana"
 
@@ -659,8 +654,6 @@
 
 .method public static onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Lcom/android/server/ssrm/SortingMachine;->sInstance:Lcom/android/server/ssrm/SortingMachine;
 
@@ -943,8 +936,6 @@
 
 .method public isAppInCategory(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -978,7 +969,6 @@
 
 .method public isBrowserApp(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1008,7 +998,6 @@
 
 .method public isHeavyApp(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1059,7 +1048,6 @@
 
 .method public isPreloadApp(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/ssrm/SortingMachine;->mTables:Ljava/util/ArrayList;
 
@@ -1091,8 +1079,6 @@
 
 .method public onReceiveImpl(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1183,7 +1169,6 @@
 
 .method parseDex(Ljava/io/ByteArrayOutputStream;)Lcom/android/server/ssrm/Dex;
     .locals 7
-    .param p1    # Ljava/io/ByteArrayOutputStream;
 
     if-nez p1, :cond_0
 
@@ -1823,8 +1808,6 @@
 
 .method public reviewPackage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v10, 0x2710
 
@@ -1991,8 +1974,6 @@
 
 .method public reviewPackageForDynamicAnalysis(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "SSRMv2:SortingMachine"
 
@@ -2031,8 +2012,6 @@
 
 .method public reviewPackageForStaticAnalysis(Ljava/lang/String;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 

@@ -109,7 +109,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     const/4 v2, 0x0
 
@@ -157,7 +156,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/google/android/finsky/layout/NativeActionBar;->sSawFirstBackstackChange:Z
 
@@ -166,7 +164,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/NativeActionBar;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/NativeActionBar;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/NativeActionBar;->clearSearchIfNecessary()V
 
@@ -175,7 +172,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/NativeActionBar;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/NativeActionBar;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/NativeActionBar;->syncActionBar()V
 
@@ -184,7 +180,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/NativeActionBar;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/NativeActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -193,8 +188,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/NativeActionBar;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/NativeActionBar;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/NativeActionBar;->syncWishlistStatus(Z)V
 
@@ -203,7 +196,6 @@
 
 .method static synthetic access$500(Lcom/google/android/finsky/layout/NativeActionBar;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/NativeActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mActivity:Landroid/app/Activity;
 
@@ -212,7 +204,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/layout/NativeActionBar;)Landroid/app/ActionBar;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/NativeActionBar;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mActionBar:Landroid/app/ActionBar;
 
@@ -268,8 +259,6 @@
 
 .method private static getBackgroundDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v3, Lcom/google/android/finsky/layout/NativeActionBar;->sBackgroundCache:Ljava/util/Map;
 
@@ -773,7 +762,6 @@
 
 .method private syncWishlistStatus(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -812,8 +800,6 @@
 # virtual methods
 .method public addTab(Ljava/lang/String;Lcom/google/android/finsky/layout/CustomActionBar$TabListener;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/layout/CustomActionBar$TabListener;
 
     iget-boolean v1, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mUseActionBarTabs:Z
 
@@ -865,7 +851,6 @@
 
 .method public autoUpdateButtonClicked(Landroid/support/v4/app/FragmentActivity;)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/FragmentActivity;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -902,8 +887,6 @@
 
 .method public configureMenu(Landroid/app/Activity;Landroid/view/Menu;)V
     .locals 6
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v5, 0x0
 
@@ -1093,9 +1076,6 @@
 
 .method public initialize(Lcom/google/android/finsky/navigationmanager/NavigationManager;Landroid/app/Activity;Lcom/google/android/finsky/layout/play/PlayDrawerLayout;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Lcom/google/android/finsky/layout/play/PlayDrawerLayout;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -1126,7 +1106,6 @@
 
 .method public searchButtonClicked(Landroid/app/Activity;)Z
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mSearchItem:Landroid/view/MenuItem;
 
@@ -1169,7 +1148,6 @@
 
 .method public setSelectedTab(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mActionBar:Landroid/app/ActionBar;
 
@@ -1180,7 +1158,6 @@
 
 .method public shareButtonClicked(Landroid/app/Activity;)V
     .locals 7
-    .param p1    # Landroid/app/Activity;
 
     const/4 v6, 0x0
 
@@ -1257,7 +1234,6 @@
 
 .method public updateBreadcrumb(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mRequestedTitle:Ljava/lang/String;
 
@@ -1270,7 +1246,6 @@
 
 .method public updateCurrentBackendId(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mCurrentBackendId:I
 
@@ -1287,7 +1262,6 @@
 
 .method public updateSearchQuery(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mSearchView:Landroid/widget/SearchView;
 
@@ -1309,7 +1283,6 @@
 
 .method public wishlistButtonClicked(Landroid/app/Activity;)V
     .locals 8
-    .param p1    # Landroid/app/Activity;
 
     iget-object v6, p0, Lcom/google/android/finsky/layout/NativeActionBar;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 

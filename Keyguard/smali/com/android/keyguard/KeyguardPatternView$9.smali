@@ -33,7 +33,6 @@
 # virtual methods
 .method public onPhoneStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

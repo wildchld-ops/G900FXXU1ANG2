@@ -114,9 +114,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IIII)V
     .locals 0
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III)V"
@@ -136,7 +133,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;->getIndex()I
 
@@ -147,7 +143,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 
     invoke-direct {p0}, Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;->getTextResourceId()I
 
@@ -174,7 +169,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/google/android/finsky/activities/RateReviewDialog$CommentRating;
 

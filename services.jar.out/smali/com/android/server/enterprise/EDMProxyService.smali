@@ -16,12 +16,6 @@
 # virtual methods
 .method public AuditLogger(IIZILjava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const-string v0, "auditlog"
 
@@ -52,7 +46,6 @@
 
 .method public addCallsCount(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "device_info"
 
@@ -141,8 +134,6 @@
 
 .method public bluetoothLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "bluetooth_policy"
 
@@ -167,7 +158,6 @@
 
 .method public canIncomingCall(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "phone_restriction_policy"
 
@@ -186,7 +176,6 @@
 
 .method public canIncomingSms(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "phone_restriction_policy"
 
@@ -205,7 +194,6 @@
 
 .method public canOutgoingCall(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "phone_restriction_policy"
 
@@ -224,7 +212,6 @@
 
 .method public canOutgoingSms(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "phone_restriction_policy"
 
@@ -261,8 +248,6 @@
 
 .method public edmAddOrUpdate(Landroid/net/wifi/WifiConfiguration;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v0, "wifi_policy"
 
@@ -279,7 +264,6 @@
 
 .method public getAliasesForPackage(Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -317,7 +301,6 @@
 
 .method public getAllowBluetoothDataTransfer(Z)Z
     .locals 2
-    .param p1    # Z
 
     const-string v0, "bluetooth_policy"
 
@@ -358,8 +341,6 @@
 
 .method public getAllowUserProfiles(ZI)Z
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     const-string/jumbo v0, "wifi_policy"
 
@@ -380,7 +361,6 @@
 
 .method public getApplicationIconFromDb(Ljava/lang/String;)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "application_policy"
 
@@ -407,8 +387,6 @@
 
 .method public getApplicationNameFromDb(Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "application_policy"
 
@@ -427,7 +405,6 @@
 
 .method public getApplicationNotificationMode(Z)I
     .locals 3
-    .param p1    # Z
 
     const-string v0, "application_policy"
 
@@ -454,8 +431,6 @@
 
 .method public getApplicationStateEnabled(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "application_policy"
 
@@ -482,9 +457,6 @@
 
 .method public getApplicationStateEnabledAsUser(Ljava/lang/String;ZI)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     const-string v0, "application_policy"
 
@@ -558,7 +530,6 @@
 
 .method public getBrowserSettingStatus(I)Z
     .locals 3
-    .param p1    # I
 
     const-string v0, "browser_policy"
 
@@ -585,7 +556,6 @@
 
 .method public getELMPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -615,7 +585,6 @@
 
 .method public getEmergencyCallOnly(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "phone_restriction_policy"
 
@@ -753,7 +722,6 @@
 
 .method public getSlotIdForCaller(Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "knox_ccm_policy"
 
@@ -780,8 +748,6 @@
 
 .method public getSlotIdForPackage(Ljava/lang/String;Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "knox_ccm_policy"
 
@@ -808,7 +774,6 @@
 
 .method public getWifiSsidRestrictionList(I)Ljava/util/List;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -838,9 +803,6 @@
 
 .method public isAccountAdditionAllowed(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "device_account_policy"
 
@@ -859,9 +821,6 @@
 
 .method public isAccountRemovalAllowed(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "device_account_policy"
 
@@ -880,7 +839,6 @@
 
 .method public isAndroidBeamAllowed(Z)Z
     .locals 2
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -901,9 +859,6 @@
 
 .method public isApplicationForceStopDisabled(Ljava/lang/String;IZ)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "application_policy"
 
@@ -922,7 +877,6 @@
 
 .method public isAudioRecordAllowed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -969,7 +923,6 @@
 
 .method public isBackupAllowed(Z)Z
     .locals 2
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -1042,7 +995,6 @@
 
 .method public isBluetoothDeviceAllowed(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "bluetooth_policy"
 
@@ -1103,7 +1055,6 @@
 
 .method public isBluetoothUUIDAllowed(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "bluetooth_policy"
 
@@ -1148,7 +1099,6 @@
 
 .method public isCCMPolicyEnabledForPackage(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "knox_ccm_policy"
 
@@ -1175,8 +1125,6 @@
 
 .method public isCaCertificateTrusted([BZ)Z
     .locals 10
-    .param p1    # [B
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -1326,7 +1274,6 @@
 
 .method public isCameraEnabled(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -1379,7 +1326,6 @@
 
 .method public isClipboardAllowed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -1432,7 +1378,6 @@
 
 .method public isCopyContactToSimAllowed(I)Z
     .locals 1
-    .param p1    # I
 
     const-string v0, "phone_restriction_policy"
 
@@ -1543,8 +1488,6 @@
 
 .method public isHardwareKeyAllowed(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "kioskmode"
 
@@ -1617,7 +1560,6 @@
 
 .method public isIntentDisabled(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "application_policy"
 
@@ -1702,7 +1644,6 @@
 
 .method public isLocationProviderBlocked(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "location_policy"
 
@@ -1747,7 +1688,6 @@
 
 .method public isMicrophoneEnabled(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -1908,7 +1848,6 @@
 
 .method public isPackageWhitelistedFromBTSecureAccess(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "smartcard_access_policy"
 
@@ -1935,7 +1874,6 @@
 
 .method public isPackageWhitelistedFromBTSecureAccessUid(I)Z
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v0, "smartcard_access_policy"
 
@@ -1982,7 +1920,6 @@
 
 .method public isPowerOffAllowed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -2009,7 +1946,6 @@
 
 .method public isProfileEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     const-string v0, "bluetooth_policy"
 
@@ -2096,7 +2032,6 @@
 
 .method public isSBeamAllowed(Z)Z
     .locals 2
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -2143,7 +2078,6 @@
 
 .method public isSVoiceAllowed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -2170,7 +2104,6 @@
 
 .method public isScreenCaptureEnabled(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -2223,7 +2156,6 @@
 
 .method public isSettingsChangesAllowed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -2250,7 +2182,6 @@
 
 .method public isSimLockedByAdmin(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "phone_restriction_policy"
 
@@ -2269,7 +2200,6 @@
 
 .method public isStatusBarNotificationAllowed(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "application_policy"
 
@@ -2296,7 +2226,6 @@
 
 .method public isTaskManagerAllowed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "kioskmode"
 
@@ -2349,7 +2278,6 @@
 
 .method public isTimaKeystoreEnabledForPackage(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "knox_timakeystore_policy"
 
@@ -2376,7 +2304,6 @@
 
 .method public isUrlBlocked(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "firewall_policy"
 
@@ -2415,7 +2342,6 @@
 
 .method public isVideoRecordAllowed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -2462,7 +2388,6 @@
 
 .method public isWifiDirectAllowed(Z)Z
     .locals 2
-    .param p1    # Z
 
     const-string v0, "restriction_policy"
 
@@ -2503,9 +2428,6 @@
 
 .method public notifyCertificateFailure(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "certificate_policy"
 
@@ -2522,7 +2444,6 @@
 
 .method public notifyCertificateRemoved(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "certificate_policy"
 
@@ -2539,7 +2460,6 @@
 
 .method public notifyUserKeystoreUnlocked(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "certificate_policy"
 
@@ -2556,7 +2476,6 @@
 
 .method public removeNetworkConfiguration(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "wifi_policy"
 
@@ -2583,11 +2502,6 @@
 
 .method public storeBlockedSmsMms(Z[BLjava/lang/String;ILjava/lang/String;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const-string v0, "phone_restriction_policy"
 
@@ -2622,11 +2536,6 @@
 
 .method public storeCalling(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const-string v0, "device_info"
 
@@ -2653,10 +2562,6 @@
 
 .method public storeMMS(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const-string v0, "device_info"
 
@@ -2673,10 +2578,6 @@
 
 .method public storeSMS(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const-string v0, "device_info"
 

@@ -71,7 +71,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,8 +87,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/tencent/update/BinderCheckResult$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/tencent/update/BinderCheckResult$1;
 
     invoke-direct {p0, p1}, Lcom/tencent/update/BinderCheckResult;-><init>(Landroid/os/Parcel;)V
 
@@ -125,7 +122,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -209,8 +205,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/tencent/update/BinderCheckResult;->mTitle:Ljava/lang/String;
 

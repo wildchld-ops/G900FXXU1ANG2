@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;
-    .param p2    # Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow$AfterCredentials;-><init>(Lcom/google/android/finsky/billing/carrierbilling/flow/CompleteCarrierBillingFlow;)V
 

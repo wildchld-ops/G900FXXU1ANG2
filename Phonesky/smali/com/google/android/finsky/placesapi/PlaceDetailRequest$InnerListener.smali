@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/placesapi/AdrMicroformatParser;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/placesapi/AdrMicroformatParser;
-    .param p3    # Lcom/android/volley/Response$ErrorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,7 +54,6 @@
 # virtual methods
 .method protected parseFromJson(Lorg/json/JSONObject;)Lcom/google/android/finsky/placesapi/PlaceDetailResponse;
     .locals 2
-    .param p1    # Lorg/json/JSONObject;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -80,7 +77,6 @@
 
 .method protected bridge synthetic parseFromJson(Lorg/json/JSONObject;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lorg/json/JSONObject;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;

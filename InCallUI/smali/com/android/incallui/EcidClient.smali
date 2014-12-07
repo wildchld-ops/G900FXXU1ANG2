@@ -209,7 +209,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/EcidClient;)Ljava/lang/ref/WeakReference;
     .locals 1
-    .param p0    # Lcom/android/incallui/EcidClient;
 
     iget-object v0, p0, Lcom/android/incallui/EcidClient;->m_ownerCtx:Ljava/lang/ref/WeakReference;
 
@@ -218,7 +217,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/EcidClient;)Lcom/android/incallui/EcidClient$Listener;
     .locals 1
-    .param p0    # Lcom/android/incallui/EcidClient;
 
     iget-object v0, p0, Lcom/android/incallui/EcidClient;->m_listener:Lcom/android/incallui/EcidClient$Listener;
 
@@ -227,7 +225,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/EcidClient;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p0    # Lcom/android/incallui/EcidClient;
 
     iget-object v0, p0, Lcom/android/incallui/EcidClient;->m_call:Lcom/android/services/telephony/common/Call;
 
@@ -256,12 +253,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/EcidClient;ILjava/lang/String;Ljava/lang/String;ILandroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/EcidClient;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/content/Context;
 
     invoke-direct/range {p0 .. p5}, Lcom/android/incallui/EcidClient;->executeLookupQuery(ILjava/lang/String;Ljava/lang/String;ILandroid/content/Context;)V
 
@@ -270,7 +261,6 @@
 
 .method public static addContact(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "Phone-ECID"
 
@@ -465,8 +455,6 @@
 
 .method private static decodeBitmapFromUrl(Landroid/content/ContentResolver;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -502,11 +490,6 @@
 
 .method private executeLookupQuery(ILjava/lang/String;Ljava/lang/String;ILandroid/content/Context;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -578,7 +561,6 @@
 
 .method public static getCityId(Lcom/android/services/telephony/common/Call;)Ljava/lang/String;
     .locals 3
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -732,7 +714,6 @@
 
 .method private static getClient(I)Lcom/android/incallui/EcidClient;
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/incallui/EcidClient;->m_mapLookupsInProcess:Ljava/util/HashMap;
 
@@ -751,7 +732,6 @@
 
 .method private static isContact(I)Z
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/incallui/EcidClient;->m_contacts:Ljava/util/HashSet;
 
@@ -768,7 +748,6 @@
 
 .method private static isIncoming(I)Z
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/incallui/EcidClient;->m_IncomingCalls:Ljava/util/HashSet;
 
@@ -785,7 +764,6 @@
 
 .method public static newIncoming(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -807,7 +785,6 @@
 
 .method public static onCallStateChange(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -835,10 +812,6 @@
 
 .method public static startEcidLookupQuery(Lcom/android/services/telephony/common/Call;Landroid/content/Context;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Lcom/android/incallui/EcidClient$Listener;)V
     .locals 10
-    .param p0    # Lcom/android/services/telephony/common/Call;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p3    # Lcom/android/incallui/EcidClient$Listener;
 
     const/4 v9, 0x1
 
@@ -1124,8 +1097,6 @@
 
 .method public static updateContactInfo(Lcom/android/services/telephony/common/Call;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 1
-    .param p0    # Lcom/android/services/telephony/common/Call;
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     if-eqz p0, :cond_0
 
@@ -1141,8 +1112,6 @@
 
 .method public static updateContactInfo(Lcom/android/services/telephony/common/CallIdentification;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     if-eqz p0, :cond_0
 
@@ -1172,7 +1141,6 @@
 # virtual methods
 .method public canUpdateContactPhoto(Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;)Z
     .locals 4
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     const/4 v0, 0x1
 
@@ -1249,8 +1217,6 @@
 
 .method public doUpdateContactInfo(Lcom/android/services/telephony/common/CallIdentification;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     const/4 v4, 0x1
 
@@ -1551,8 +1517,6 @@
 
 .method public getImage(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1595,8 +1559,6 @@
 
 .method public getImageAttOrTmo(Landroid/content/Context;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/incallui/EcidClient;->mNameIDLogo:Ljava/lang/ref/WeakReference;
 

@@ -19,7 +19,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -36,8 +35,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method

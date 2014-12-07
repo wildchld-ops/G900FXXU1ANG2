@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity$3;->this$0:Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onUrlClick(Landroid/view/View;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/AvailablePromoOfferActivity$3;->this$0:Lcom/google/android/finsky/activities/AvailablePromoOfferActivity;
 

@@ -130,7 +130,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -145,7 +144,6 @@
 
 .method public static final decodeUrl([B)[B
     .locals 9
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -273,8 +271,6 @@
 
 .method public static final encodeUrl(Ljava/util/BitSet;[B)[B
     .locals 7
-    .param p0    # Ljava/util/BitSet;
-    .param p1    # [B
 
     const/16 v6, 0x10
 
@@ -374,7 +370,6 @@
 # virtual methods
 .method public decode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -458,7 +453,6 @@
 
 .method public decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -502,8 +496,6 @@
 
 .method public decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;,
@@ -538,7 +530,6 @@
 
 .method public decode([B)[B
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -554,7 +545,6 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -638,7 +628,6 @@
 
 .method public encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -682,8 +671,6 @@
 
 .method public encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -717,7 +704,6 @@
 
 .method public encode([B)[B
     .locals 1
-    .param p1    # [B
 
     sget-object v0, Lorg/apache/commons/codec/net/URLCodec;->WWW_FORM_URL:Ljava/util/BitSet;
 

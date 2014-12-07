@@ -476,7 +476,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -487,8 +486,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010084
 
@@ -499,9 +496,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 91
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct/range {p0 .. p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -4800,8 +4794,6 @@
 
 .method static synthetic access$000(Landroid/widget/TextView;Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 0
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView;->pasteCipBoardData(Landroid/sec/clipboard/data/ClipboardData;)V
 
@@ -4810,11 +4802,6 @@
 
 .method static synthetic access$1000(Landroid/widget/TextView;Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->sendBeforeTextChanged(Ljava/lang/CharSequence;III)V
 
@@ -4823,7 +4810,6 @@
 
 .method static synthetic access$1100(Landroid/widget/TextView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -4832,7 +4818,6 @@
 
 .method static synthetic access$1200(Landroid/widget/TextView;)Z
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     invoke-direct {p0}, Landroid/widget/TextView;->canMarquee()Z
 
@@ -4843,7 +4828,6 @@
 
 .method static synthetic access$1300(Landroid/widget/TextView;)Z
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     iget-boolean v0, p0, Landroid/widget/TextView;->mSingleLine:Z
 
@@ -4852,7 +4836,6 @@
 
 .method static synthetic access$1400(Landroid/widget/TextView;)I
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     iget v0, p0, Landroid/view/View;->mScrollX:I
 
@@ -4861,7 +4844,6 @@
 
 .method static synthetic access$1500(Landroid/widget/TextView;)Landroid/widget/Editor;
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -4870,7 +4852,6 @@
 
 .method static synthetic access$1600(Landroid/widget/TextView;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
@@ -4879,7 +4860,6 @@
 
 .method static synthetic access$300(Landroid/widget/TextView;)V
     .locals 0
-    .param p0    # Landroid/widget/TextView;
 
     invoke-direct {p0}, Landroid/widget/TextView;->updateTextServicesLocaleLocked()V
 
@@ -4888,7 +4868,6 @@
 
 .method static synthetic access$500(Landroid/widget/TextView;)Landroid/text/Layout;
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     iget-object v0, p0, Landroid/widget/TextView;->mLayout:Landroid/text/Layout;
 
@@ -4897,7 +4876,6 @@
 
 .method static synthetic access$600(Landroid/widget/TextView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -4906,7 +4884,6 @@
 
 .method static synthetic access$700(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/widget/TextView;->isPasswordInputType(I)Z
 
@@ -4917,7 +4894,6 @@
 
 .method static synthetic access$800(Landroid/widget/TextView;)Z
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     invoke-direct {p0}, Landroid/widget/TextView;->hasPasswordTransformationMethod()Z
 
@@ -4928,7 +4904,6 @@
 
 .method static synthetic access$900(Landroid/widget/TextView;)Z
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     invoke-direct {p0}, Landroid/widget/TextView;->shouldSpeakPasswordsForAccessibility()Z
 
@@ -4939,12 +4914,6 @@
 
 .method private addOuterGlowTextEffect(FI[I[F[FF)I
     .locals 7
-    .param p1    # F
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [F
-    .param p5    # [F
-    .param p6    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -4969,11 +4938,6 @@
 
 .method private addStrokeTextEffect(FIFII)I
     .locals 6
-    .param p1    # F
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -4996,9 +4960,6 @@
 
 .method private applySingleLine(ZZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -5701,7 +5662,6 @@
 
 .method private compressText(F)Z
     .locals 7
-    .param p1    # F
 
     const/4 v3, 0x1
 
@@ -5795,7 +5755,6 @@
 
 .method private convertFromViewportToContentCoordinates(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/widget/TextView;->viewportToContentHorizontalOffset()I
 
@@ -5851,7 +5810,6 @@
 
 .method private static desired(Landroid/text/Layout;)I
     .locals 6
-    .param p0    # Landroid/text/Layout;
 
     invoke-virtual {p0}, Landroid/text/Layout;->getLineCount()I
 
@@ -5930,9 +5888,6 @@
 
 .method private doKeyDown(ILandroid/view/KeyEvent;Landroid/view/KeyEvent;)I
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v8, 0x2
 
@@ -6393,7 +6348,6 @@
 
 .method private drawTextStrikethrough(Landroid/graphics/Canvas;)V
     .locals 23
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getTotalPaddingLeft()I
 
@@ -6698,7 +6652,6 @@
 
 .method private getBottomVerticalOffset(Z)I
     .locals 6
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -6767,7 +6720,6 @@
 
 .method private getBoxHeight(Landroid/text/Layout;)I
     .locals 4
-    .param p1    # Landroid/text/Layout;
 
     iget-object v2, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
@@ -6914,8 +6866,6 @@
 
 .method private getDesiredHeight(Landroid/text/Layout;Z)I
     .locals 7
-    .param p1    # Landroid/text/Layout;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -7054,8 +7004,6 @@
 
 .method private getInterestingRect(Landroid/graphics/Rect;I)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/widget/TextView;->convertFromViewportToContentCoordinates(Landroid/graphics/Rect;)V
 
@@ -7223,8 +7171,6 @@
 
 .method private getOffsetAtCoordinate(IF)I
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual {p0, p2}, Landroid/widget/TextView;->convertToLocalHorizontalCoordinate(F)F
 
@@ -7243,7 +7189,6 @@
 
 .method private getScreenPointOfView(Landroid/view/View;)Landroid/graphics/Point;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -7272,9 +7217,6 @@
 
 .method public static getTextColor(Landroid/content/Context;Landroid/content/res/TypedArray;I)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
 
     invoke-static {p0, p1}, Landroid/widget/TextView;->getTextColors(Landroid/content/Context;Landroid/content/res/TypedArray;)Landroid/content/res/ColorStateList;
 
@@ -7295,8 +7237,6 @@
 
 .method public static getTextColors(Landroid/content/Context;Landroid/content/res/TypedArray;)Landroid/content/res/ColorStateList;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/res/TypedArray;
 
     const/4 v4, -0x1
 
@@ -7336,7 +7276,6 @@
 
 .method private getTextServicesLocale(Z)Ljava/util/Locale;
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/widget/TextView;->updateTextServicesLocaleAsync()V
 
@@ -7531,9 +7470,6 @@
 
 .method private invalidateCursor(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-gez p1, :cond_0
 
@@ -7568,7 +7504,6 @@
 
 .method private static isMultilineInputType(I)Z
     .locals 2
-    .param p0    # I
 
     const v0, 0x2000f
 
@@ -7591,7 +7526,6 @@
 
 .method private static isPasswordInputType(I)Z
     .locals 2
-    .param p0    # I
 
     and-int/lit16 v0, p0, 0xfff
 
@@ -7651,7 +7585,6 @@
 
 .method private static isVisiblePasswordInputType(I)Z
     .locals 2
-    .param p0    # I
 
     and-int/lit16 v0, p0, 0xfff
 
@@ -7672,7 +7605,6 @@
 
 .method private logLetterMode(I)V
     .locals 5
-    .param p1    # I
 
     const-string/jumbo v2, "service.gate.enabled"
 
@@ -7764,13 +7696,6 @@
 
 .method private makeSingleLayout(ILandroid/text/BoringLayout$Metrics;ILandroid/text/Layout$Alignment;ZLandroid/text/TextUtils$TruncateAt;Z)Landroid/text/Layout;
     .locals 37
-    .param p1    # I
-    .param p2    # Landroid/text/BoringLayout$Metrics;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # Z
-    .param p6    # Landroid/text/TextUtils$TruncateAt;
-    .param p7    # Z
 
     const/4 v15, 0x0
 
@@ -8685,8 +8610,6 @@
 
 .method private paste(II)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -8960,7 +8883,6 @@
 
 .method private pasteCipBoardData(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 19
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v6, 0x0
 
@@ -9554,8 +9476,6 @@
 
 .method private removeIntersectingNonAdjacentSpans(IILjava/lang/Class;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -9618,9 +9538,6 @@
 
 .method static removeParcelableSpans(Landroid/text/Spannable;II)V
     .locals 3
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
-    .param p2    # I
 
     const-class v2, Landroid/text/ParcelableSpan;
 
@@ -9706,10 +9623,6 @@
 
 .method private sendBeforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v3, p0, Landroid/widget/TextView;->mListeners:Ljava/util/ArrayList;
 
@@ -9776,8 +9689,6 @@
 
 .method private setFilters(Landroid/text/Editable;[Landroid/text/InputFilter;)V
     .locals 6
-    .param p1    # Landroid/text/Editable;
-    .param p2    # [Landroid/text/InputFilter;
 
     const/4 v4, 0x0
 
@@ -9872,8 +9783,6 @@
 
 .method private setInputType(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -10054,7 +9963,6 @@
 
 .method private setInputTypeSingleLine(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -10102,7 +10010,6 @@
 
 .method private setKeyListenerOnly(Landroid/text/method/KeyListener;)V
     .locals 2
-    .param p1    # Landroid/text/method/KeyListener;
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -10153,7 +10060,6 @@
 
 .method private setPrimaryClip(Landroid/content/ClipData;)V
     .locals 3
-    .param p1    # Landroid/content/ClipData;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -10180,7 +10086,6 @@
 
 .method private setPrimaryClipEx(Landroid/sec/clipboard/data/list/ClipboardDataText;)V
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/list/ClipboardDataText;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -10211,7 +10116,6 @@
 
 .method private setRawTextSize(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -10243,8 +10147,6 @@
 
 .method private setRelativeDrawablesIfNeeded(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 7
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x1
 
@@ -10380,10 +10282,6 @@
 
 .method private setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;ZI)V
     .locals 22
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/TextView$BufferType;
-    .param p3    # Z
-    .param p4    # I
 
     if-nez p1, :cond_0
 
@@ -11075,9 +10973,6 @@
 
 .method private setTypefaceFromAttrs(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -11387,7 +11282,6 @@
 
 .method private startStopMarquee(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TextView;->mEllipsize:Landroid/text/TextUtils$TruncateAt;
 
@@ -11616,11 +11510,6 @@
 # virtual methods
 .method public addInnerShadowTextEffect(FFFIF)I
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -11643,12 +11532,6 @@
 
 .method public addLinearGradientTextEffect(FF[I[F[FF)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # [I
-    .param p4    # [F
-    .param p5    # [F
-    .param p6    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -11673,9 +11556,6 @@
 
 .method public addOuterGlowTextEffect(FIF)I
     .locals 1
-    .param p1    # F
-    .param p2    # I
-    .param p3    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -11688,11 +11568,6 @@
 
 .method public addOuterShadowTextEffect(FFFIF)I
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -11715,9 +11590,6 @@
 
 .method public addStrokeTextEffect(FIF)I
     .locals 1
-    .param p1    # F
-    .param p2    # I
-    .param p3    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -11730,7 +11602,6 @@
 
 .method public addTextChangedListener(Landroid/text/TextWatcher;)V
     .locals 1
-    .param p1    # Landroid/text/TextWatcher;
 
     iget-object v0, p0, Landroid/widget/TextView;->mListeners:Ljava/util/ArrayList;
 
@@ -11752,7 +11623,6 @@
 
 .method public final append(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -11767,9 +11637,6 @@
 
 .method public append(Ljava/lang/CharSequence;II)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
@@ -11795,7 +11662,6 @@
 
 .method public applyWBTextBuffer(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -11948,7 +11814,6 @@
 
 .method public bringPointIntoView(I)Z
     .locals 29
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->isLayoutRequested()Z
 
@@ -13019,7 +12884,6 @@
 
 .method public changeClipboardDataFormat(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/TextView;->mClipboardDataFormat:I
 
@@ -13294,7 +13158,6 @@
 
 .method convertToLocalHorizontalCoordinate(F)F
     .locals 2
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getTotalPaddingLeft()I
 
@@ -13341,7 +13204,6 @@
 
 .method public debug(I)V
     .locals 3
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->debug(I)V
 
@@ -13592,8 +13454,6 @@
 
 .method protected deleteText_internal(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
@@ -13821,7 +13681,6 @@
 
 .method public extractEditorInfo(Landroid/view/inputmethod/EditorInfo;)V
     .locals 6
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     const/high16 v5, 0x40000000
 
@@ -14068,8 +13927,6 @@
 
 .method public extractText(Landroid/view/inputmethod/ExtractedTextRequest;Landroid/view/inputmethod/ExtractedText;)Z
     .locals 1
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # Landroid/view/inputmethod/ExtractedText;
 
     invoke-direct {p0}, Landroid/widget/TextView;->createEditorIfNeeded()V
 
@@ -14084,8 +13941,6 @@
 
 .method public findViewsWithText(Ljava/util/ArrayList;Ljava/lang/CharSequence;I)V
     .locals 3
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14156,7 +14011,6 @@
 
 .method public forceHideSoftInput(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/TextView;->mHideSoftInput:Z
 
@@ -14925,7 +14779,6 @@
 
 .method protected getFadeHeight(Z)I
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TextView;->mLayout:Landroid/text/Layout;
 
@@ -14948,7 +14801,6 @@
 
 .method protected getFadeTop(Z)I
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/widget/TextView;->mLayout:Landroid/text/Layout;
 
@@ -15005,7 +14857,6 @@
 
 .method public getFocusedRect(Landroid/graphics/Rect;)V
     .locals 14
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v10, 0x1
 
@@ -15426,7 +15277,6 @@
 
 .method public getHoverPopupWindow(I)Landroid/widget/HoverPopupWindow;
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -15628,7 +15478,6 @@
 
 .method public getInputExtras(Z)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -15731,7 +15580,6 @@
 
 .method public getIteratorForGranularity(I)Landroid/view/AccessibilityIterators$TextSegmentIterator;
     .locals 3
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -16105,7 +15953,6 @@
 
 .method getLineAtCoordinate(F)I
     .locals 2
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getTotalPaddingTop()I
 
@@ -16162,8 +16009,6 @@
 
 .method public getLineBounds(ILandroid/graphics/Rect;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v2, 0x0
 
@@ -16481,8 +16326,6 @@
 
 .method public getOffsetForPosition(FF)I
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -16899,7 +16742,6 @@
 
 .method public getSpannedTextRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 22
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -17459,8 +17301,6 @@
 
 .method getTransformedText(II)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mTransformed:Ljava/lang/CharSequence;
 
@@ -17547,7 +17387,6 @@
 
 .method getVerticalOffset(Z)I
     .locals 6
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -17616,7 +17455,6 @@
 
 .method public getWBTextBuffer(Z)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -17702,10 +17540,6 @@
 
 .method handleTextChanged(Ljava/lang/CharSequence;III)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -17954,7 +17788,6 @@
 
 .method public initTextStrikeThroughAnim(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/graphics/Paint;
 
@@ -18179,7 +18012,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 14
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 
@@ -18402,9 +18234,6 @@
 
 .method invalidateRegion(IIZ)V
     .locals 16
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -19073,12 +18902,6 @@
 
 .method protected makeNewLayout(IILandroid/text/BoringLayout$Metrics;Landroid/text/BoringLayout$Metrics;IZ)V
     .locals 34
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/text/BoringLayout$Metrics;
-    .param p4    # Landroid/text/BoringLayout$Metrics;
-    .param p5    # I
-    .param p6    # Z
 
     move-object/from16 v0, p0
 
@@ -20367,8 +20190,6 @@
 
 .method public onAssociatedCheckBoxChecked(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-boolean v0, p0, Landroid/widget/TextView;->ADVANCED_VI_EFFECTS_ENABLED:Z
 
@@ -20484,14 +20305,12 @@
 
 .method public onCommitCompletion(Landroid/view/inputmethod/CompletionInfo;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     return-void
 .end method
 
 .method public onCommitCorrection(Landroid/view/inputmethod/CorrectionInfo;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -20507,7 +20326,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -20550,7 +20368,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -20625,7 +20442,6 @@
 
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
     .locals 5
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     const/high16 v4, 0x40000000
 
@@ -20889,7 +20705,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v2, 0x0
 
@@ -21030,7 +20845,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 41
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-direct/range {p0 .. p0}, Landroid/widget/TextView;->restartMarqueeIfNeeded()V
 
@@ -22150,7 +21964,6 @@
 
 .method public onEditorAction(I)V
     .locals 21
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -22442,9 +22255,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     iget-boolean v0, p0, Landroid/widget/TextView;->mTemporaryDetach:Z
 
@@ -22508,7 +22318,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/widget/TextView;->mMovement:Landroid/text/method/MovementMethod;
 
@@ -22557,7 +22366,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -22613,7 +22421,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 12
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v11, 0x1
 
@@ -22990,8 +22797,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -23162,9 +22967,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x1
 
@@ -23289,8 +23091,6 @@
 
 .method public onKeyPreIme(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -23394,8 +23194,6 @@
 
 .method public onKeyShortcut(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getMetaState()I
 
@@ -23566,8 +23364,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v5, 0x82
 
@@ -23878,11 +23674,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -23926,8 +23717,6 @@
 
 .method protected onMeasure(II)V
     .locals 30
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -24743,7 +24532,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -24918,8 +24706,6 @@
 
 .method public onPrivateIMECommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -24928,7 +24714,6 @@
 
 .method public onResolveDrawables(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/TextView;->mLastLayoutDirection:I
 
@@ -24954,7 +24739,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 8
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v5, p1, Landroid/widget/TextView$SavedState;
 
@@ -25182,7 +24966,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onRtlPropertiesChanged(I)V
 
@@ -25315,7 +25098,6 @@
 
 .method public onScreenStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onScreenStateChanged(I)V
 
@@ -25333,10 +25115,6 @@
 
 .method protected onScrollChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onScrollChanged(IIII)V
 
@@ -25354,8 +25132,6 @@
 
 .method protected onSelectionChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x2000
 
@@ -25392,21 +25168,18 @@
 
 .method public onStrikeThroughAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onStrikeThroughAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onStrikeThroughAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-boolean v0, p0, Landroid/widget/TextView;->ADVANCED_VI_EFFECTS_ENABLED:Z
 
@@ -25429,17 +25202,12 @@
 
 .method protected onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onTextContextMenuItem(I)Z
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x2
 
@@ -25856,7 +25624,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x1
 
@@ -26075,7 +25842,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/widget/TextView;->mMovement:Landroid/text/method/MovementMethod;
 
@@ -26118,8 +25884,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -26139,7 +25903,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
@@ -26159,8 +25922,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -26448,7 +26209,6 @@
 
 .method public performWBEditorAction(I)V
     .locals 21
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -26759,9 +26519,6 @@
 
 .method prepareSpacesAroundPaste(IILjava/lang/CharSequence;)J
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     const/16 v6, 0xa
 
@@ -26938,7 +26695,6 @@
 
 .method removeAdjacentSuggestionSpans(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v6, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
@@ -27004,7 +26760,6 @@
 
 .method removeMisspelledSpans(Landroid/text/Spannable;)V
     .locals 6
-    .param p1    # Landroid/text/Spannable;
 
     const/4 v3, 0x0
 
@@ -27056,7 +26811,6 @@
 
 .method removeSuggestionSpans(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     instance-of v3, p1, Landroid/text/Spanned;
 
@@ -27115,7 +26869,6 @@
 
 .method public removeTextChangedListener(Landroid/text/TextWatcher;)V
     .locals 2
-    .param p1    # Landroid/text/TextWatcher;
 
     iget-object v1, p0, Landroid/widget/TextView;->mListeners:Ljava/util/ArrayList;
 
@@ -27139,7 +26892,6 @@
 
 .method public removeTextEffect(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -27150,9 +26902,6 @@
 
 .method protected replaceText_internal(IILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
@@ -27270,7 +27019,6 @@
 
 .method savePreText(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -27305,7 +27053,6 @@
 
 .method saveRedoText(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -27346,7 +27093,6 @@
 
 .method saveUndoText(Ljava/lang/CharSequence;)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -27426,7 +27172,6 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x1000
 
@@ -27443,10 +27188,6 @@
 
 .method sendAccessibilityEventTypeViewTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v1, 0x10
 
@@ -27469,7 +27210,6 @@
 
 .method sendAfterTextChanged(Landroid/text/Editable;)V
     .locals 4
-    .param p1    # Landroid/text/Editable;
 
     const/4 v3, 0x1
 
@@ -27508,10 +27248,6 @@
 
 .method sendOnTextChanged(Ljava/lang/CharSequence;III)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p4, p0, Landroid/widget/TextView;->mChangedSize:I
 
@@ -27557,8 +27293,6 @@
 
 .method public setAccessibilitySelection(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getAccessibilitySelectionStart()I
 
@@ -27621,7 +27355,6 @@
 
 .method public setAllCaps(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -27648,7 +27381,6 @@
 
 .method public final setAutoLinkMask(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -27659,7 +27391,6 @@
 
 .method public setCompoundDrawablePadding(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -27700,10 +27431,6 @@
 
 .method public setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 7
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/graphics/drawable/Drawable;
 
     const/4 v4, 0x0
 
@@ -28020,10 +27747,6 @@
 
 .method public setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 8
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x1
 
@@ -28335,10 +28058,6 @@
 
 .method public setCompoundDrawablesRelativeWithIntrinsicBounds(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -28406,10 +28125,6 @@
 
 .method public setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
 
@@ -28472,10 +28187,6 @@
 
 .method public setCompoundDrawablesWithIntrinsicBounds(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -28543,10 +28254,6 @@
 
 .method public setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
 
@@ -28609,7 +28316,6 @@
 
 .method public setCursorColor(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -28637,8 +28343,6 @@
 
 .method protected setCursorPosition_internal(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mText:Ljava/lang/CharSequence;
 
@@ -28651,7 +28355,6 @@
 
 .method public setCursorVisible(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -28693,7 +28396,6 @@
 
 .method public setCustomSelectionActionModeCallback(Landroid/view/ActionMode$Callback;)V
     .locals 1
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     invoke-direct {p0}, Landroid/widget/TextView;->createEditorIfNeeded()V
 
@@ -28706,7 +28408,6 @@
 
 .method public setDeviceDefaultTheme(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -28718,7 +28419,6 @@
 
 .method public final setEditableFactory(Landroid/text/Editable$Factory;)V
     .locals 1
-    .param p1    # Landroid/text/Editable$Factory;
 
     iput-object p1, p0, Landroid/widget/TextView;->mEditableFactory:Landroid/text/Editable$Factory;
 
@@ -28731,7 +28431,6 @@
 
 .method public setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
     .locals 2
-    .param p1    # Landroid/text/TextUtils$TruncateAt;
 
     const/4 v1, -0x1
 
@@ -28769,9 +28468,6 @@
 
 .method public setEllipsize(Landroid/text/TextUtils$TruncateAt;II)V
     .locals 1
-    .param p1    # Landroid/text/TextUtils$TruncateAt;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mEllipsize:Landroid/text/TextUtils$TruncateAt;
 
@@ -28805,7 +28501,6 @@
 
 .method public setEms(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -28828,7 +28523,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
@@ -28898,7 +28592,6 @@
 
 .method public setError(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -28945,8 +28638,6 @@
 
 .method public setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Landroid/widget/TextView;->createEditorIfNeeded()V
 
@@ -28963,7 +28654,6 @@
 
 .method public setExtractedText(Landroid/view/inputmethod/ExtractedText;)V
     .locals 8
-    .param p1    # Landroid/view/inputmethod/ExtractedText;
 
     const/4 v7, 0x0
 
@@ -29125,7 +28815,6 @@
 
 .method public setExtracting(Landroid/view/inputmethod/ExtractedTextRequest;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -29149,7 +28838,6 @@
 
 .method public setFilters([Landroid/text/InputFilter;)V
     .locals 1
-    .param p1    # [Landroid/text/InputFilter;
 
     if-nez p1, :cond_0
 
@@ -29180,10 +28868,6 @@
 
 .method protected setFrame(IIII)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->setFrame(IIII)Z
 
@@ -29205,7 +28889,6 @@
 
 .method public setFreezesText(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29216,7 +28899,6 @@
 
 .method public setGravity(I)V
     .locals 8
-    .param p1    # I
 
     const v4, 0x800007
 
@@ -29320,7 +29002,6 @@
 
 .method public setHeight(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29343,7 +29024,6 @@
 
 .method public setHighlightColor(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29361,7 +29041,6 @@
 
 .method public final setHint(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29391,7 +29070,6 @@
 
 .method public final setHint(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29452,7 +29130,6 @@
 
 .method public final setHintTextColor(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29469,7 +29146,6 @@
 
 .method public final setHintTextColor(Landroid/content/res/ColorStateList;)V
     .locals 0
-    .param p1    # Landroid/content/res/ColorStateList;
 
     iput-object p1, p0, Landroid/widget/TextView;->mHintTextColor:Landroid/content/res/ColorStateList;
 
@@ -29480,7 +29156,6 @@
 
 .method public setHorizontallyScrolling(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/TextView;->mHorizontallyScrolling:Z
 
@@ -29504,8 +29179,6 @@
 
 .method public setImeActionLabel(Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/widget/TextView;->createEditorIfNeeded()V
 
@@ -29530,7 +29203,6 @@
 
 .method public setImeOptions(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/widget/TextView;->createEditorIfNeeded()V
 
@@ -29549,7 +29221,6 @@
 
 .method public setIncludeFontPadding(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/TextView;->mIncludePad:Z
 
@@ -29573,7 +29244,6 @@
 
 .method public setInputExtras(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -29622,7 +29292,6 @@
 
 .method public setInputType(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, -0x1
 
@@ -29776,7 +29445,6 @@
 
 .method public setKeyListener(Landroid/text/method/KeyListener;)V
     .locals 4
-    .param p1    # Landroid/text/method/KeyListener;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView;->setKeyListenerOnly(Landroid/text/method/KeyListener;)V
 
@@ -29846,8 +29514,6 @@
 
 .method public setLineSpacing(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/widget/TextView;->mSpacingAdd:F
 
@@ -29882,7 +29548,6 @@
 
 .method public setLines(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29905,7 +29570,6 @@
 
 .method public final setLinkTextColor(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29922,7 +29586,6 @@
 
 .method public final setLinkTextColor(Landroid/content/res/ColorStateList;)V
     .locals 0
-    .param p1    # Landroid/content/res/ColorStateList;
 
     iput-object p1, p0, Landroid/widget/TextView;->mLinkTextColor:Landroid/content/res/ColorStateList;
 
@@ -29933,7 +29596,6 @@
 
 .method public final setLinksClickable(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29944,7 +29606,6 @@
 
 .method public setMarqueeRepeatLimit(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/TextView;->mMarqueeRepeatLimit:I
 
@@ -29953,7 +29614,6 @@
 
 .method public setMaxEms(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29972,7 +29632,6 @@
 
 .method public setMaxHeight(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -29991,7 +29650,6 @@
 
 .method public setMaxLines(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30010,7 +29668,6 @@
 
 .method public setMaxWidth(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30029,7 +29686,6 @@
 
 .method public setMinEms(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30048,7 +29704,6 @@
 
 .method public setMinHeight(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30067,7 +29722,6 @@
 
 .method public setMinLines(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30086,7 +29740,6 @@
 
 .method public setMinWidth(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30105,7 +29758,6 @@
 
 .method public final setMovementMethod(Landroid/text/method/MovementMethod;)V
     .locals 1
-    .param p1    # Landroid/text/method/MovementMethod;
 
     iget-object v0, p0, Landroid/widget/TextView;->mMovement:Landroid/text/method/MovementMethod;
 
@@ -30142,8 +29794,6 @@
 
 .method public setNewActionPopupMenu(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -30159,7 +29809,6 @@
 
 .method public setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView$OnEditorActionListener;
 
     invoke-direct {p0}, Landroid/widget/TextView;->createEditorIfNeeded()V
 
@@ -30178,10 +29827,6 @@
 
 .method public setPadding(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/view/View;->mPaddingLeft:I
 
@@ -30212,10 +29857,6 @@
 
 .method public setPaddingRelative(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingStart()I
 
@@ -30250,7 +29891,6 @@
 
 .method public setPaintFlags(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30282,7 +29922,6 @@
 
 .method public setPrivateImeOptions(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/widget/TextView;->createEditorIfNeeded()V
 
@@ -30301,7 +29940,6 @@
 
 .method public setRawInputType(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -30337,7 +29975,6 @@
 
 .method public setScroller(Landroid/widget/Scroller;)V
     .locals 0
-    .param p1    # Landroid/widget/Scroller;
 
     iput-object p1, p0, Landroid/widget/TextView;->mScroller:Landroid/widget/Scroller;
 
@@ -30346,7 +29983,6 @@
 
 .method public setSelectAllOnFocus(Z)V
     .locals 2
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30376,7 +30012,6 @@
 
 .method public setSelected(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30397,7 +30032,6 @@
 
 .method public setSelected(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->isSelected()Z
 
@@ -30429,10 +30063,6 @@
 
 .method public setShadowLayer(FFFI)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -30460,7 +30090,6 @@
 
 .method public final setShowSoftInputOnFocus(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30485,7 +30114,6 @@
 
 .method public setSingleLine(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30500,10 +30128,6 @@
 
 .method protected setSpan_internal(Ljava/lang/Object;III)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-lt p3, p2, :cond_0
 
@@ -30519,7 +30143,6 @@
 
 .method public final setSpannableFactory(Landroid/text/Spannable$Factory;)V
     .locals 1
-    .param p1    # Landroid/text/Spannable$Factory;
 
     iput-object p1, p0, Landroid/widget/TextView;->mSpannableFactory:Landroid/text/Spannable$Factory;
 
@@ -30532,7 +30155,6 @@
 
 .method public setStrikeThroughAnimationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/TextView;->ADVANCED_VI_EFFECTS_ENABLED:Z
 
@@ -30546,7 +30168,6 @@
 
 .method public final setStringName(I)V
     .locals 1
-    .param p1    # I
 
     sget-boolean v0, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -30572,7 +30193,6 @@
 
 .method public final setStringName(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     sget-boolean v1, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -30602,7 +30222,6 @@
 
 .method public final setText(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30632,8 +30251,6 @@
 
 .method public final setText(ILandroid/widget/TextView$BufferType;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/widget/TextView$BufferType;
 
     sget-boolean v0, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -30661,7 +30278,6 @@
 
 .method public final setText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -30674,8 +30290,6 @@
 
 .method public setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/TextView$BufferType;
 
     const/4 v0, 0x1
 
@@ -30700,9 +30314,6 @@
 
 .method public final setText([CII)V
     .locals 4
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -30799,8 +30410,6 @@
 
 .method public setTextAppearance(Landroid/content/Context;I)V
     .locals 40
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     sget-object v5, Lcom/android/internal/R$styleable;->TextAppearance:[I
 
@@ -31343,7 +30952,6 @@
 
 .method public setTextColor(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -31360,7 +30968,6 @@
 
 .method public setTextColor(Landroid/content/res/ColorStateList;)V
     .locals 1
-    .param p1    # Landroid/content/res/ColorStateList;
 
     if-nez p1, :cond_0
 
@@ -31380,7 +30987,6 @@
 
 .method public setTextEffectOpacity(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -31391,7 +30997,6 @@
 
 .method public setTextIsSelectable(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_1
 
@@ -31476,7 +31081,6 @@
 
 .method public final setTextKeepState(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -31489,8 +31093,6 @@
 
 .method public final setTextKeepState(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/TextView$BufferType;
 
     const/4 v6, 0x0
 
@@ -31547,7 +31149,6 @@
 
 .method public setTextLocale(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -31558,7 +31159,6 @@
 
 .method public setTextScaleX(F)V
     .locals 1
-    .param p1    # F
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -31596,7 +31196,6 @@
 
 .method public setTextSize(F)V
     .locals 1
-    .param p1    # F
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -31609,8 +31208,6 @@
 
 .method public setTextSize(IF)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -31645,7 +31242,6 @@
 
 .method public final setTransformationMethod(Landroid/text/method/TransformationMethod;)V
     .locals 4
-    .param p1    # Landroid/text/method/TransformationMethod;
 
     const/4 v2, 0x0
 
@@ -31736,7 +31332,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;)V
     .locals 1
-    .param p1    # Landroid/graphics/Typeface;
 
     iget-object v0, p0, Landroid/widget/TextView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -31773,8 +31368,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;I)V
     .locals 6
-    .param p1    # Landroid/graphics/Typeface;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -31860,9 +31453,6 @@
 
 .method public setTypefaceForState(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -31950,8 +31540,6 @@
 
 .method public final setUndoManager(Landroid/content/UndoManager;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/UndoManager;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -32028,7 +31616,6 @@
 
 .method public setWBPositionListenerEnalbed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -32044,7 +31631,6 @@
 
 .method public setWBTextBuffer(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/widget/TextView;->mWBTextBuffer:Ljava/lang/CharSequence;
 
@@ -32053,7 +31639,6 @@
 
 .method public setWidth(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -32076,12 +31661,6 @@
 
 .method spanChange(Landroid/text/Spanned;Ljava/lang/Object;IIII)V
     .locals 8
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v7, 0x1
 
@@ -32378,7 +31957,6 @@
 
 .method public stopCursorBlink(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
@@ -32502,7 +32080,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/view/View;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 
@@ -32569,7 +32146,6 @@
 
 .method protected viewClicked(Landroid/view/inputmethod/InputMethodManager;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
 
     if-eqz p1, :cond_0
 

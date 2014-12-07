@@ -30,8 +30,6 @@
 # virtual methods
 .method public onMutationsApplied(Lcom/google/android/finsky/library/AccountLibrary;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/library/AccountLibrary;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/finsky/library/AccountLibrary;->LIBRARY_ID_APPS:Ljava/lang/String;
 

@@ -183,7 +183,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -217,8 +216,6 @@
 
 .method private SeperateLockString(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -271,8 +268,6 @@
 
 .method private SeperateUnlockString(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -325,7 +320,6 @@
 
 .method static synthetic access$102(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/internal/widget/LockPatternUtils;->mScVerifyStatus:I
 
@@ -334,7 +328,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/widget/LockPatternUtils;->mIsCallbackCalled:Z
 
@@ -371,8 +364,6 @@
 
 .method private static combineStrings([ILjava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # [I
-    .param p1    # Ljava/lang/String;
 
     array-length v1, p0
 
@@ -480,7 +471,6 @@
 
 .method public static computePasswordQuality(Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -645,7 +635,6 @@
 
 .method private getAppWidgets(I)[I
     .locals 10
-    .param p1    # I
 
     iget-object v7, p0, Lcom/android/internal/widget/LockPatternUtils;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -740,8 +729,6 @@
 
 .method private getBoolean(Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -756,9 +743,6 @@
 
 .method private getBoolean(Ljava/lang/String;ZI)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -829,8 +813,6 @@
 
 .method private getLong(Ljava/lang/String;J)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -845,9 +827,6 @@
 
 .method private getLong(Ljava/lang/String;JI)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -885,7 +864,6 @@
 
 .method private getSalt(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const-wide/16 v4, 0x0
 
@@ -1127,7 +1105,6 @@
 
 .method private getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -1142,8 +1119,6 @@
 
 .method private getString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1409,8 +1384,6 @@
 
 .method private setAlternativePasswordState(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->getDevicePolicyManager()Landroid/app/admin/DevicePolicyManager;
 
@@ -1520,8 +1493,6 @@
 
 .method private setBoolean(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -1534,9 +1505,6 @@
 
 .method private setBoolean(Ljava/lang/String;ZI)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -1584,8 +1552,6 @@
 
 .method private setLong(Ljava/lang/String;J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -1598,9 +1564,6 @@
 
 .method private setLong(Ljava/lang/String;JI)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -1648,9 +1611,6 @@
 
 .method private setString(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -1698,7 +1658,6 @@
 
 .method public static stringToPattern(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1748,7 +1707,6 @@
 
 .method private static toHex([B)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
 
     const-string v0, "0123456789ABCDEF"
 
@@ -1916,7 +1874,6 @@
 
 .method private updateCACAuthentication(I)V
     .locals 6
-    .param p1    # I
 
     const/high16 v5, 0x70000
 
@@ -1997,7 +1954,6 @@
 
 .method private updateEncryptionPassword(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->getDevicePolicyManager()Landroid/app/admin/DevicePolicyManager;
 
@@ -2061,7 +2017,6 @@
 
 .method private update_lockscreen_type(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Landroid/content/Intent;
 
@@ -2112,7 +2067,6 @@
 
 .method private writeAppWidgets([I)V
     .locals 4
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -2135,8 +2089,6 @@
 # virtual methods
 .method public addAppWidget(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -2204,7 +2156,6 @@
 
 .method public addContextualWidget(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->getContextualWidgets()[I
 
@@ -2253,7 +2204,6 @@
 
 .method public checkBackupPin(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -2283,7 +2233,6 @@
 
 .method public checkFingerprintPassword(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -2298,8 +2247,6 @@
 
 .method public checkFingerprintPassword(Ljava/lang/String;I)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -2437,7 +2384,6 @@
 
 .method public checkParentControlPassword(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -2479,8 +2425,6 @@
 
 .method public checkPassword(ILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -2506,7 +2450,6 @@
 
 .method public checkPassword(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -2521,7 +2464,6 @@
 
 .method public checkPasswordHistory(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2588,7 +2530,6 @@
 
 .method public checkPasswordWithCAC(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "LockPatternUtils"
 
@@ -2795,7 +2736,6 @@
 
 .method public checkPcwPassword(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2900,7 +2840,6 @@
 
 .method public checkPersonalModeFingerPrintPassword(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -2930,7 +2869,6 @@
 
 .method public checkPersonalModeLockBackupPin(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -2960,7 +2898,6 @@
 
 .method public checkPersonalModeLockPassword(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -2990,7 +2927,6 @@
 
 .method public checkPersonalModeLockPin(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -3062,7 +2998,6 @@
 
 .method public checkSKTPassword(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -3092,7 +3027,6 @@
 
 .method public checkSignatureBackupPin(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -3137,7 +3071,6 @@
 
 .method public clearLock(Z)V
     .locals 3
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -3181,7 +3114,6 @@
 
 .method public clearLockExceptPwd(Z)V
     .locals 0
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -3446,7 +3378,6 @@
 
 .method public getCarrierLockPlusInfo(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -3861,7 +3792,6 @@
 
 .method public getOwnerInfo(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "lock_screen_owner_info"
 
@@ -4310,7 +4240,6 @@
 
 .method public getWidgetsEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     const-string v0, "lockscreen.widgets_enabled"
 
@@ -4325,7 +4254,6 @@
 
 .method public hasWidgetsEnabledInKeyguard(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/LockPatternUtils;->getAppWidgets(I)[I
 
@@ -4657,7 +4585,6 @@
 
 .method public isContextualWidget(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4773,7 +4700,6 @@
 
 .method public isDevicePasswordSimple(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -4904,7 +4830,6 @@
 
 .method public isLockFingerprintEnabled(I)Z
     .locals 5
-    .param p1    # I
 
     const-wide/32 v3, 0x61000
 
@@ -6037,7 +5962,6 @@
 
 .method public passwordToHash(Ljava/lang/String;)[B
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -6211,8 +6135,6 @@
 
 .method public passwordToHash(Ljava/lang/String;I)[B
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -6390,7 +6312,6 @@
 
 .method public passwordToHashOriginal(Ljava/lang/String;)[B
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -6527,7 +6448,6 @@
 
 .method public removeAppWidget(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -6591,7 +6511,6 @@
 
 .method public removeContextualWidget(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -6677,7 +6596,6 @@
 
 .method public removeUser(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -6911,8 +6829,6 @@
 
 .method public saveLockBackupPin(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -6925,9 +6841,6 @@
 
 .method public saveLockBackupPin(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -7058,7 +6971,6 @@
 
 .method public saveLockFingerprintPassword(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -7071,8 +6983,6 @@
 
 .method public saveLockFingerprintPassword(Ljava/lang/String;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/os/PersonaManager;->getKnoxInfo()Landroid/os/Bundle;
@@ -7228,9 +7138,6 @@
 
 .method public saveLockFingerprintPassword(Ljava/lang/String;II)V
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/LockPatternUtils;->getDevicePolicyManager()Landroid/app/admin/DevicePolicyManager;
@@ -7516,8 +7423,6 @@
 
 .method public saveLockParentControlPassword(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/LockPatternUtils;->passwordToHash(Ljava/lang/String;)[B
 
@@ -7569,8 +7474,6 @@
 
 .method public saveLockPassword(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -7585,9 +7488,6 @@
 
 .method public saveLockPassword(Ljava/lang/String;IZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -7600,10 +7500,6 @@
 
 .method public saveLockPassword(Ljava/lang/String;IZI)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -7624,10 +7520,6 @@
 
 .method public saveLockPassword(Ljava/lang/String;IZZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -7650,11 +7542,6 @@
 
 .method public saveLockPassword(Ljava/lang/String;IZZI)V
     .locals 33
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
 
     :try_start_0
     invoke-direct/range {p0 .. p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -8156,7 +8043,6 @@
 
 .method public saveLockPattern(Ljava/util/List;Z)V
     .locals 1
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8176,8 +8062,6 @@
 
 .method public saveLockPattern(Ljava/util/List;ZZ)V
     .locals 1
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8197,9 +8081,6 @@
 
 .method public saveLockPattern(Ljava/util/List;ZZZ)V
     .locals 15
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8477,7 +8358,6 @@
 
 .method public saveLockSKTPassword(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -8490,8 +8370,6 @@
 
 .method public saveLockSKTPassword(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -8573,7 +8451,6 @@
 
 .method public savePersonalModeFingerPrintPassword(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -8621,7 +8498,6 @@
 
 .method public savePersonalModeLockBackupPin(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -8669,7 +8545,6 @@
 
 .method public savePersonalModeLockPassword(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -8777,7 +8652,6 @@
 
 .method public savePersonalModeLockPin(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -8825,7 +8699,6 @@
 
 .method public saveSignatureBackupPin(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -8838,8 +8711,6 @@
 
 .method public saveSignatureBackupPin(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/LockPatternUtils;->passwordToHash(Ljava/lang/String;)[B
 
@@ -8887,7 +8758,6 @@
 
 .method public saveSignatureLockInfo([B)V
     .locals 4
-    .param p1    # [B
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -8978,7 +8848,6 @@
 
 .method public savedFingerprintPasswordExists(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getLockSettings()Lcom/android/internal/widget/ILockSettings;
@@ -9313,7 +9182,6 @@
 
 .method public setBeforeTimeout(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/LockPatternUtils;->mBeforeTimeout:Z
 
@@ -9322,7 +9190,6 @@
 
 .method public setBiometricWeakLivelinessEnabled(Z)V
     .locals 7
-    .param p1    # Z
 
     const-string v4, "lock_biometric_weak_flags"
 
@@ -9355,7 +9222,6 @@
 
 .method public setCACPasswordEnabled(Z)Z
     .locals 1
-    .param p1    # Z
 
     const-string v0, "lockscreen.smartcard_type"
 
@@ -9368,7 +9234,6 @@
 
 .method public setCarrierLockPlusEnabled(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -9671,7 +9536,6 @@
 
 .method public setCarrierLockPlusOnOff(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -9974,7 +9838,6 @@
 
 .method public setCurrentUser(I)V
     .locals 9
-    .param p1    # I
 
     const-wide/16 v7, 0x0
 
@@ -10086,7 +9949,6 @@
 
 .method public setLockAsSignature(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -10130,7 +9992,6 @@
 
 .method public setLockFingerprintEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "lock_fingerprint_autolock"
 
@@ -10145,8 +10006,6 @@
 
 .method public setLockFingerprintEnabled(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     const-string v0, "lock_fingerprint_autolock"
 
@@ -10157,7 +10016,6 @@
 
 .method public setLockPatternEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string v0, "lock_pattern_autolock"
 
@@ -10168,7 +10026,6 @@
 
 .method public setLockScreenDisabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v2, "lockscreen.disabled"
 
@@ -10207,8 +10064,6 @@
 
 .method public setOwnerInfo(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "lock_screen_owner_info"
 
@@ -10219,7 +10074,6 @@
 
 .method public setOwnerInfoEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string v0, "lock_screen_owner_info_enabled"
 
@@ -10230,7 +10084,6 @@
 
 .method public setPermanentlyLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string v0, "lockscreen.lockedoutpermanently"
 
@@ -10241,7 +10094,6 @@
 
 .method public setPowerButtonInstantlyLocks(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string v0, "lockscreen.power_button_instantly_locks"
 
@@ -10252,7 +10104,6 @@
 
 .method public setRecoveryLock(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -10297,7 +10148,6 @@
 
 .method public setSignatureVerificationLevel(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "lock_signature_verification_level"
 
@@ -10310,7 +10160,6 @@
 
 .method public setSmartUnlockEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string v0, "lock_smart_unlock_enabled"
 
@@ -10321,7 +10170,6 @@
 
 .method public setSwipeSmartLock(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/internal/widget/LockPatternUtils;->mSwipeSmartLock:Z
 
@@ -10330,7 +10178,6 @@
 
 .method public setVisiblePatternEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternUtils;->isVisiblePatternDisabledByMDM()Z
 
@@ -10353,7 +10200,6 @@
 
 .method public setVisibleSignatureEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string v0, "lock_signature_visible_pattern"
 
@@ -10364,7 +10210,6 @@
 
 .method public setWidgetsEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils;->getCurrentOrCallingUserId()I
 
@@ -10377,8 +10222,6 @@
 
 .method public setWidgetsEnabled(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     const-string v0, "lockscreen.widgets_enabled"
 
@@ -10415,10 +10258,6 @@
 
 .method public updateEmergencyCallButtonState(Landroid/widget/Button;IZZ)V
     .locals 5
-    .param p1    # Landroid/widget/Button;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v3, 0x0
 
@@ -10583,7 +10422,6 @@
 
 .method public writeContextualWidgets([I)V
     .locals 4
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -10604,7 +10442,6 @@
 
 .method public writeFallbackAppWidgetId(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -10619,7 +10456,6 @@
 
 .method public writeShortcutAppWidgetId(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils;->mContentResolver:Landroid/content/ContentResolver;
 

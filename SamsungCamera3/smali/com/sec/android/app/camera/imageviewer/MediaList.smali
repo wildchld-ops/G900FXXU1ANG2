@@ -131,7 +131,6 @@
 
 .method public constructor <init>(Landroid/content/ContentResolver;)V
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -148,10 +147,6 @@
 
 .method public static getVideoThumbnail(Ljava/io/FileDescriptor;IIZ)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -164,10 +159,6 @@
 
 .method public static getVideoThumbnail(Ljava/lang/String;IIZ)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -180,11 +171,6 @@
 
 .method public static getVideoThumbnail(Ljava/lang/String;Ljava/io/FileDescriptor;IIZ)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -317,9 +303,6 @@
 
 .method public static getVideoThumbnail(Ljava/lang/String;Ljava/io/FileDescriptor;Z)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -467,7 +450,6 @@
 
 .method public deleteFile(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/imageviewer/MediaList;->mList:Ljava/util/ArrayList;
 
@@ -573,7 +555,6 @@
 
 .method public getId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/imageviewer/MediaList;->mList:Ljava/util/ArrayList;
 
@@ -611,7 +592,6 @@
 
 .method public getImagePath(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "MediaList"
 
@@ -664,7 +644,6 @@
 
 .method public getMimeType(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "MediaList"
 
@@ -705,7 +684,6 @@
 
 .method public getOrientation(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/imageviewer/MediaList;->mList:Ljava/util/ArrayList;
 
@@ -740,7 +718,6 @@
 
 .method public getTitle(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/imageviewer/MediaList;->mList:Ljava/util/ArrayList;
 
@@ -775,7 +752,6 @@
 
 .method public getType(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/imageviewer/MediaList;->mList:Ljava/util/ArrayList;
 
@@ -848,7 +824,6 @@
 
 .method public getUri(I)Landroid/net/Uri;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/imageviewer/MediaList;->mList:Ljava/util/ArrayList;
 
@@ -901,7 +876,6 @@
 
 .method public getVideoThumbnail(I)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/imageviewer/MediaList;->getImagePath(I)Ljava/lang/String;
 
@@ -1006,9 +980,6 @@
 
 .method public getVideoThumbnail(III)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/imageviewer/MediaList;->getImagePath(I)Ljava/lang/String;
 
@@ -1119,8 +1090,6 @@
 
 .method public initialize(ZZ)V
     .locals 15
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v3, 0x0
 

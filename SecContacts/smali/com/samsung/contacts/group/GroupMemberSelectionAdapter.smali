@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -49,7 +48,6 @@
 
 .method private createFilterUriBuilder(I)Landroid/net/Uri$Builder;
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -269,8 +267,6 @@
 # virtual methods
 .method protected bindSeletedItems(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     iget-object v1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionAdapter;->mSelectedContactIds:Ljava/util/List;
 
@@ -295,10 +291,6 @@
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v8, 0x0
 
@@ -390,8 +382,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 6
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/group/GroupMemberSelectionAdapter;->getMode()I
 
@@ -540,9 +530,6 @@
 
 .method protected configureSelection(Landroid/content/CursorLoader;JI)V
     .locals 13
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # I
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -885,9 +872,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;JI)V
     .locals 8
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # I
 
     const-wide/16 v6, 0x0
 
@@ -1128,11 +1112,6 @@
 
 .method protected newView(Landroid/content/Context;ILandroid/database/Cursor;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Landroid/view/ViewGroup;
 
     invoke-super/range {p0 .. p5}, Lcom/android/contacts/common/list/ContactListAdapter;->newView(Landroid/content/Context;ILandroid/database/Cursor;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -1143,7 +1122,6 @@
 
 .method public setAutoAdd(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -1170,7 +1148,6 @@
 
 .method public setGroupInfo(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iput-object p1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionAdapter;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -1179,7 +1156,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/group/GroupMemberSelectionAdapter;->mMode:I
 

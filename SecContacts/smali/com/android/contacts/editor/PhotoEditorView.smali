@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -64,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/editor/PhotoEditorView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/PhotoEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/PhotoEditorView;->mLargeBitmap:Landroid/graphics/Bitmap;
 
@@ -103,7 +99,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/editor/PhotoEditorView;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/PhotoEditorView;
 
     invoke-direct {p0}, Lcom/android/contacts/editor/PhotoEditorView;->updateLargePhoto()V
 
@@ -112,7 +107,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/editor/PhotoEditorView;)Lcom/android/contacts/editor/Editor$EditorListener;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/PhotoEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/PhotoEditorView;->mListener:Lcom/android/contacts/editor/Editor$EditorListener;
 
@@ -121,8 +115,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/editor/PhotoEditorView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/PhotoEditorView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/editor/PhotoEditorView;->mAsyncLoadRequested:Z
 
@@ -131,8 +123,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/editor/PhotoEditorView;Lcom/android/contacts/model/RawContactDelta;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/PhotoEditorView;
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/editor/PhotoEditorView;->getLargePhoto(Lcom/android/contacts/model/RawContactDelta;)V
 
@@ -141,7 +131,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/editor/PhotoEditorView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/PhotoEditorView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/PhotoEditorView;->mHandler:Landroid/os/Handler;
 
@@ -150,7 +139,6 @@
 
 .method private getLargePhoto(Lcom/android/contacts/model/RawContactDelta;)V
     .locals 12
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
 
     :try_start_0
     sget-object v9, Landroid/provider/ContactsContract$RawContacts;->CONTENT_URI:Landroid/net/Uri;
@@ -564,14 +552,12 @@
 
 .method public setDeletable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setEditorListener(Lcom/android/contacts/editor/Editor$EditorListener;)V
     .locals 3
-    .param p1    # Lcom/android/contacts/editor/Editor$EditorListener;
 
     const/4 v1, 0x0
 
@@ -604,7 +590,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -617,7 +602,6 @@
 
 .method public setIsBusinesscard(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/editor/PhotoEditorView;->mBusinesscardDataId:I
 
@@ -626,7 +610,6 @@
 
 .method public setIsChangedBusinesscardPhoto(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/editor/PhotoEditorView;->mEntry:Lcom/android/contacts/common/model/ValuesDelta;
 
@@ -661,7 +644,6 @@
 
 .method public setPhotoBitmap(Landroid/graphics/Bitmap;)V
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v6, 0x1
 
@@ -743,7 +725,6 @@
 
 .method public setSuperPrimary(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/contacts/editor/PhotoEditorView;->mEntry:Lcom/android/contacts/common/model/ValuesDelta;
 
@@ -766,11 +747,6 @@
 
 .method public setValues(Lcom/android/contacts/common/model/dataitem/DataKind;Lcom/android/contacts/common/model/ValuesDelta;Lcom/android/contacts/model/RawContactDelta;ZLcom/android/contacts/editor/ViewIdGenerator;)V
     .locals 16
-    .param p1    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p2    # Lcom/android/contacts/common/model/ValuesDelta;
-    .param p3    # Lcom/android/contacts/model/RawContactDelta;
-    .param p4    # Z
-    .param p5    # Lcom/android/contacts/editor/ViewIdGenerator;
 
     move-object/from16 v0, p2
 

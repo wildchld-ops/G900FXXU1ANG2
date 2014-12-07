@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,9 +53,6 @@
 # virtual methods
 .method public addMenuItem(Ljava/lang/CharSequence;ZLcom/google/android/play/layout/PlayPopupMenu$OnActionSelectedListener;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/play/layout/PlayPopupMenu$OnActionSelectedListener;
 
     iget-object v0, p0, Lcom/google/android/play/layout/PlayPopupMenu;->mPopupActions:Ljava/util/List;
 

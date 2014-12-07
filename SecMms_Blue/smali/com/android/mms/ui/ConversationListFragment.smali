@@ -377,7 +377,6 @@
 
 .method public constructor <init>(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -511,7 +510,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->addPrioritySender()V
 
@@ -520,7 +518,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ConversationListFragment;)Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mSmartClip:Lcom/samsung/android/sdk/look/smartclip/SlookSmartClip;
 
@@ -529,8 +526,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/ui/ConversationListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mDiscardContentChanged:Z
 
@@ -539,7 +534,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->startAsyncQuery()V
 
@@ -548,7 +542,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/ConversationListFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mHandler:Landroid/os/Handler;
 
@@ -557,7 +550,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->markCheckedMessageLimit()V
 
@@ -574,7 +566,6 @@
 
 .method static synthetic access$1402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/ConversationListFragment;->deleteComplete:Z
 
@@ -583,7 +574,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/ui/ConversationListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mListAdapter:Lcom/android/mms/ui/ConversationListAdapter;
 
@@ -592,7 +582,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/ConversationListFragment;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -601,8 +590,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/ui/ConversationListFragment;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -611,8 +598,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/ConversationListFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->startAsyncQueryInternal(Z)V
 
@@ -621,7 +606,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->startPrioritySenderQuery()V
 
@@ -630,7 +614,6 @@
 
 .method static synthetic access$1902(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/ConversationListFragment;->mIsSearchMode:Z
 
@@ -639,7 +622,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ConversationListFragment;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mActivity:Landroid/app/Activity;
 
@@ -648,7 +630,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/ConversationListFragment;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mSearchView:Landroid/widget/SearchView;
 
@@ -657,7 +638,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->CheckInitSpinner:Z
 
@@ -666,8 +646,6 @@
 
 .method static synthetic access$2102(Lcom/android/mms/ui/ConversationListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment;->CheckInitSpinner:Z
 
@@ -676,7 +654,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/ui/ConversationListFragment;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mSpinner:Landroid/widget/Spinner;
 
@@ -685,7 +662,6 @@
 
 .method static synthetic access$2302(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/ui/ConversationListFragment;->mSelected_spinner_item:I
 
@@ -694,7 +670,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/ui/ConversationListFragment;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -703,7 +678,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/ui/ConversationListFragment;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mMenuDone:Landroid/view/MenuItem;
 
@@ -712,9 +686,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/ui/ConversationListFragment;JI)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/ConversationListFragment;->openThread(JI)V
 
@@ -723,8 +694,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/ConversationListFragment;J)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ConversationListFragment;->openThread(J)V
 
@@ -733,7 +702,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -742,8 +710,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/ui/ConversationListFragment;I)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->getConversation(I)Lcom/android/mms/data/Conversation;
 
@@ -754,7 +720,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->getListView()Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -765,7 +730,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/ui/ConversationListFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mCountToDelete:I
 
@@ -774,8 +738,6 @@
 
 .method static synthetic access$3102(Lcom/android/mms/ui/ConversationListFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mCountToDelete:I
 
@@ -784,7 +746,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/ui/ConversationListFragment$ThreadListQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mQueryHandler:Lcom/android/mms/ui/ConversationListFragment$ThreadListQueryHandler;
 
@@ -793,7 +754,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/animation/MsgDeleteActionAnimation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mMsgDeleteActionAnimation:Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
@@ -802,8 +762,6 @@
 
 .method static synthetic access$3302(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/animation/MsgDeleteActionAnimation;)Lcom/android/mms/animation/MsgDeleteActionAnimation;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mMsgDeleteActionAnimation:Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
@@ -812,7 +770,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsDeleteMsgAnimating:Z
 
@@ -821,8 +778,6 @@
 
 .method static synthetic access$3402(Lcom/android/mms/ui/ConversationListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsDeleteMsgAnimating:Z
 
@@ -831,7 +786,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->saveListOffset()V
 
@@ -840,7 +794,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsAnimationEnable:Z
 
@@ -849,7 +802,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/ui/ConversationListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mCheckedThreadIds:Ljava/util/ArrayList;
 
@@ -858,8 +810,6 @@
 
 .method static synthetic access$3702(Lcom/android/mms/ui/ConversationListFragment;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mCheckedThreadIds:Ljava/util/ArrayList;
 
@@ -868,7 +818,6 @@
 
 .method static synthetic access$3800(Lcom/android/mms/ui/ConversationListFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mSelectedPosition:I
 
@@ -877,7 +826,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ConversationListFragment;)Lcom/sec/android/touchwiz/widget/TwHorizontalDndListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mPrioritySenderListView:Lcom/sec/android/touchwiz/widget/TwHorizontalDndListView;
 
@@ -886,8 +834,6 @@
 
 .method static synthetic access$4002(Lcom/android/mms/ui/ConversationListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsDeleting:Z
 
@@ -896,8 +842,6 @@
 
 .method static synthetic access$4102(Lcom/android/mms/ui/ConversationListFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mDeletedCount:J
 
@@ -906,8 +850,6 @@
 
 .method static synthetic access$4114(Lcom/android/mms/ui/ConversationListFragment;J)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mDeletedCount:J
 
@@ -928,8 +870,6 @@
 
 .method static synthetic access$5000(Lcom/android/mms/ui/ConversationListFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->updateEmptyScreen(I)V
 
@@ -938,7 +878,6 @@
 
 .method static synthetic access$5100(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mEnablePrioritySender:Z
 
@@ -947,8 +886,6 @@
 
 .method static synthetic access$5200(Lcom/android/mms/ui/ConversationListFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->setTotalQuantityTextView(I)V
 
@@ -957,7 +894,6 @@
 
 .method static synthetic access$5300(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->startedFromLaundher()Z
 
@@ -968,7 +904,6 @@
 
 .method static synthetic access$5400(Lcom/android/mms/ui/ConversationListFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mVisibleOffset:I
 
@@ -977,8 +912,6 @@
 
 .method static synthetic access$5402(Lcom/android/mms/ui/ConversationListFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mVisibleOffset:I
 
@@ -987,7 +920,6 @@
 
 .method static synthetic access$5500(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->isFirstItemChanged()Z
 
@@ -998,7 +930,6 @@
 
 .method static synthetic access$5600(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->restoreListOffset()V
 
@@ -1007,7 +938,6 @@
 
 .method static synthetic access$5700(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->notifyDeleteStart()V
 
@@ -1016,7 +946,6 @@
 
 .method static synthetic access$5800(Lcom/android/mms/ui/ConversationListFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->getDeleteEventHandler()Landroid/os/Handler;
 
@@ -1027,7 +956,6 @@
 
 .method static synthetic access$5900(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsLandscape:Z
 
@@ -1036,7 +964,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/prioritysender/PrioritySenderListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mPrioritySenderListAdapter:Lcom/android/mms/prioritysender/PrioritySenderListAdapter;
 
@@ -1045,7 +972,6 @@
 
 .method static synthetic access$6000(Lcom/android/mms/ui/ConversationListFragment;)Lcom/samsung/mms/util/SaveRestoreOperation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mSaveRestoreOperation:Lcom/samsung/mms/util/SaveRestoreOperation;
 
@@ -1054,7 +980,6 @@
 
 .method static synthetic access$6100(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->createNewMessage()V
 
@@ -1063,7 +988,6 @@
 
 .method static synthetic access$6200(Lcom/android/mms/ui/ConversationListFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -1072,8 +996,6 @@
 
 .method static synthetic access$6202(Lcom/android/mms/ui/ConversationListFragment;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -1082,7 +1004,6 @@
 
 .method static synthetic access$6300(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->deleteSelectedConversations()V
 
@@ -1091,7 +1012,6 @@
 
 .method static synthetic access$6400(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/ui/ConversationListAdapter$OnContentChangedListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mContentChangedListener:Lcom/android/mms/ui/ConversationListAdapter$OnContentChangedListener;
 
@@ -1100,8 +1020,6 @@
 
 .method static synthetic access$6500(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/data/Conversation;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->splitThread(Lcom/android/mms/data/Conversation;)V
 
@@ -1110,7 +1028,6 @@
 
 .method static synthetic access$6600(Lcom/android/mms/ui/ConversationListFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mListMultiMode:I
 
@@ -1119,8 +1036,6 @@
 
 .method static synthetic access$6602(Lcom/android/mms/ui/ConversationListFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mListMultiMode:I
 
@@ -1129,8 +1044,6 @@
 
 .method static synthetic access$6700(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -1139,7 +1052,6 @@
 
 .method static synthetic access$6800(Lcom/android/mms/ui/ConversationListFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mListAdapterCount:I
 
@@ -1148,7 +1060,6 @@
 
 .method static synthetic access$6900(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsEasyMode:Z
 
@@ -1157,7 +1068,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/ConversationListFragment;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1166,7 +1076,6 @@
 
 .method static synthetic access$7000(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->hideEasyMode()V
 
@@ -1175,7 +1084,6 @@
 
 .method static synthetic access$7100(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->updatePrioritySenderVisibility()V
 
@@ -1184,7 +1092,6 @@
 
 .method static synthetic access$7200(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->unRegisterAssistantMenu()V
 
@@ -1193,8 +1100,6 @@
 
 .method static synthetic access$7300(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -1203,7 +1108,6 @@
 
 .method static synthetic access$7400(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->registerAssistantMenu()V
 
@@ -1212,7 +1116,6 @@
 
 .method static synthetic access$7500(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->initEasyMode()V
 
@@ -1221,8 +1124,6 @@
 
 .method static synthetic access$7600(Lcom/android/mms/ui/ConversationListFragment;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->disableAllMenu(Landroid/view/Menu;)V
 
@@ -1231,8 +1132,6 @@
 
 .method static synthetic access$7700(Lcom/android/mms/ui/ConversationListFragment;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->updateMultiActionMenu(Landroid/view/Menu;)V
 
@@ -1241,8 +1140,6 @@
 
 .method static synthetic access$7800(Lcom/android/mms/ui/ConversationListFragment;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->enableSelecteMenu(Landroid/view/Menu;)V
 
@@ -1251,7 +1148,6 @@
 
 .method static synthetic access$7900(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsSelectAllmode:Z
 
@@ -1260,8 +1156,6 @@
 
 .method static synthetic access$7902(Lcom/android/mms/ui/ConversationListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsSelectAllmode:Z
 
@@ -1270,7 +1164,6 @@
 
 .method static synthetic access$8000(Lcom/android/mms/ui/ConversationListFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsLastItemOfSelectAll:Z
 
@@ -1279,8 +1172,6 @@
 
 .method static synthetic access$8002(Lcom/android/mms/ui/ConversationListFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsLastItemOfSelectAll:Z
 
@@ -1289,8 +1180,6 @@
 
 .method static synthetic access$8102(Lcom/android/mms/ui/ConversationListFragment;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mSelectedContactUri:Landroid/net/Uri;
 
@@ -1299,8 +1188,6 @@
 
 .method static synthetic access$8202(Lcom/android/mms/ui/ConversationListFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mSelectedAddress:Ljava/lang/String;
 
@@ -1309,7 +1196,6 @@
 
 .method static synthetic access$8300(Lcom/android/mms/ui/ConversationListFragment;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mMenuMode:I
 
@@ -1318,8 +1204,6 @@
 
 .method static synthetic access$8400(Lcom/android/mms/ui/ConversationListFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->setMenuMode(I)V
 
@@ -1328,7 +1212,6 @@
 
 .method static synthetic access$8500(Lcom/android/mms/ui/ConversationListFragment;)Lcom/android/mms/animation/MsgListAnimation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mMsgListAnimation:Lcom/android/mms/animation/MsgListAnimation;
 
@@ -1337,7 +1220,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/ConversationListFragment;)Landroid/content/DialogInterface;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mDeleteConfirmDialog:Landroid/content/DialogInterface;
 
@@ -1346,8 +1228,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/ui/ConversationListFragment;Landroid/content/DialogInterface;)Landroid/content/DialogInterface;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p1    # Landroid/content/DialogInterface;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mDeleteConfirmDialog:Landroid/content/DialogInterface;
 
@@ -1374,7 +1254,6 @@
 
 .method private applyImages(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const-string v6, "Mms/ConversationListFragment"
 
@@ -1591,8 +1470,6 @@
 
 .method private closeSearchView(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -1677,8 +1554,6 @@
 
 .method public static confirmDeleteThread(JLandroid/content/AsyncQueryHandler;)V
     .locals 3
-    .param p0    # J
-    .param p2    # Landroid/content/AsyncQueryHandler;
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -1711,11 +1586,6 @@
 
 .method public static confirmDeleteThreadDialog(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;ZZLandroid/content/Context;I)Landroid/app/AlertDialog;
     .locals 11
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Landroid/content/Context;
-    .param p4    # I
 
     const-string v6, "Mms/ConversationListFragment"
 
@@ -1972,7 +1842,6 @@
 
 .method private disableAllMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x0
 
@@ -2041,7 +1910,6 @@
 
 .method private disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     const/4 v0, 0x0
 
@@ -2054,7 +1922,6 @@
 
 .method private enableSelecteMenu(Landroid/view/Menu;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
 
     const v5, 0x7f0b031c
 
@@ -2189,7 +2056,6 @@
 
 .method private getConversation(I)Lcom/android/mms/data/Conversation;
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment;->mActivity:Landroid/app/Activity;
 
@@ -2286,9 +2152,6 @@
 
 .method private getQuantityText(III)Ljava/lang/String;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ConversationListFragment;->isAdded()Z
 
@@ -3069,7 +2932,6 @@
 
 .method private openThread(J)V
     .locals 9
-    .param p1    # J
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->saveListOffset()V
 
@@ -3263,8 +3125,6 @@
 
 .method private openThread(JI)V
     .locals 9
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->saveListOffset()V
 
@@ -3559,7 +3419,6 @@
 
 .method private setMenuMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -3731,7 +3590,6 @@
 
 .method public static setSearchQuery(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/CharSequence;
 
     sput-object p0, Lcom/android/mms/ui/ConversationListFragment;->mSearchQuery:Ljava/lang/CharSequence;
 
@@ -3740,7 +3598,6 @@
 
 .method private setSpinnerItem(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/android/mms/ui/ConversationListFragment;->mSelected_spinner_item:I
 
@@ -3749,7 +3606,6 @@
 
 .method private setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     new-instance v0, Lcom/android/mms/ui/SweepHandler;
 
@@ -3766,7 +3622,6 @@
 
 .method private setTotalQuantityTextView(I)V
     .locals 4
-    .param p1    # I
 
     const v1, 0x7f0c00ec
 
@@ -3807,7 +3662,6 @@
 
 .method private splitThread(Lcom/android/mms/data/Conversation;)V
     .locals 26
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/mms/data/Conversation;->getThreadId()J
 
@@ -4072,7 +3926,6 @@
 
 .method private startAsyncQueryInternal(Z)V
     .locals 5
-    .param p1    # Z
 
     :try_start_0
     const-string v1, "(_id>0)"
@@ -4413,7 +4266,6 @@
 
 .method private static updateCmasExpiry(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -4472,7 +4324,6 @@
 
 .method private updateEmptyScreen(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x8
 
@@ -4675,7 +4526,6 @@
 
 .method private updateEmptyViewBackground(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment;->isEmptyViewVisible()Z
 
@@ -4827,7 +4677,6 @@
 
 .method private updateMultiActionMenu(Landroid/view/Menu;)V
     .locals 11
-    .param p1    # Landroid/view/Menu;
 
     const v10, 0x7f0b0319
 
@@ -5294,8 +5143,6 @@
 # virtual methods
 .method public FindThread(Landroid/database/Cursor;J)Landroid/database/Cursor;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # J
 
     const/4 v1, 0x0
 
@@ -5464,7 +5311,6 @@
 
 .method closeSearchView(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -5496,7 +5342,6 @@
 
 .method public confirmRegisterAsSpamNumber(Lcom/android/mms/data/Conversation;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -5541,7 +5386,6 @@
 
 .method public deleteSelectedConversationsRemote(J)V
     .locals 2
-    .param p1    # J
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -5580,7 +5424,6 @@
 
 .method public drawMessagePointer(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -5630,8 +5473,6 @@
 
 .method public drawMessagePointer(JI)V
     .locals 1
-    .param p1    # J
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/mms/ui/ConversationListFragment;->drawMessagePointer(J)V
 
@@ -5731,7 +5572,6 @@
 
 .method public getNumber(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -5900,7 +5740,6 @@
 
 .method public isCallable(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->getNumber(I)Ljava/lang/String;
 
@@ -5921,7 +5760,6 @@
 
 .method public isConversationIndex(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -5965,7 +5803,6 @@
 
 .method public isListIndex(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/ConversationListFragment;->isConversationIndex(I)Z
 
@@ -6028,7 +5865,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -6249,7 +6085,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -6264,7 +6099,6 @@
 
 .method public onCloseSearchView(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -6290,7 +6124,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 8
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v7, 0x2
 
@@ -6446,7 +6279,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v1, p0, Lcom/android/mms/ui/ConversationListFragment;->mActivity:Landroid/app/Activity;
 
@@ -6530,7 +6362,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -6549,9 +6380,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -6900,9 +6728,6 @@
 
 .method public onDraftChanged(JZZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Z
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -6923,8 +6748,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -7326,8 +7149,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -7397,7 +7218,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -7425,7 +7245,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 12
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v8, 0x0
 
@@ -7774,7 +7593,6 @@
 
 .method public onPrepareListOptionsMenu(Landroid/view/Menu;)V
     .locals 14
-    .param p1    # Landroid/view/Menu;
 
     const-string v1, "Mms/ConversationListFragment"
 
@@ -8874,7 +8692,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/ConversationListFragment"
 
@@ -9227,7 +9044,6 @@
 
 .method public onSweepActionCanceled(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -9256,8 +9072,6 @@
 
 .method public onSweepActionFired(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -9415,7 +9229,6 @@
 
 .method public onSweepActionStarted(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -9444,7 +9257,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -9541,7 +9353,6 @@
 
 .method public requestDrawPointerOnConverationList(J)Z
     .locals 2
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -9564,7 +9375,6 @@
 
 .method public requestFocusOnConversationList(J)Z
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/mms/ui/ConversationListFragment;->mListAdapter:Lcom/android/mms/ui/ConversationListAdapter;
 
@@ -9682,7 +9492,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment;->mIsAnimationEnable:Z
 
@@ -9713,15 +9522,12 @@
 
 .method public setIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public setLayoutAnim_slideSideToSide(Landroid/view/ViewGroup;Z)Landroid/view/animation/AnimationSet;
     .locals 13
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Z
 
     const/high16 v2, 0x3f800000
 
@@ -9816,7 +9622,6 @@
 
 .method public startAsyncQueryDelayed(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "Mms/ConversationListFragment"
 
@@ -9877,7 +9682,6 @@
 
 .method public startPrioritySenderQueryDelayed(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "Mms/ConversationListFragment"
 

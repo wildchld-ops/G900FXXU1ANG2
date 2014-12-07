@@ -72,7 +72,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -117,8 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -173,9 +170,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -220,7 +214,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/SecKeyguardClock;)I
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardClock;
 
     iget v0, p0, Lcom/android/keyguard/sec/SecKeyguardClock;->mBatteryLevel:I
 
@@ -229,8 +222,6 @@
 
 .method static synthetic access$002(Lcom/android/keyguard/sec/SecKeyguardClock;I)I
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardClock;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/keyguard/sec/SecKeyguardClock;->mBatteryLevel:I
 
@@ -239,7 +230,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/SecKeyguardClock;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardClock;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/SecKeyguardClock;->setClockContentDesciption()V
 
@@ -248,7 +238,6 @@
 
 .method static synthetic access$200(Lcom/android/keyguard/sec/SecKeyguardClock;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardClock;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/SecKeyguardClock;->mHandler:Landroid/os/Handler;
 
@@ -257,7 +246,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/SecKeyguardClock;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardClock;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/SecKeyguardClock;->handleUpdateClock()V
 
@@ -266,7 +254,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/SecKeyguardClock;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/SecKeyguardClock;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -283,7 +270,6 @@
 
 .method private hasFile(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -374,7 +360,6 @@
 
 .method private static isDeviceProvisioned(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -398,7 +383,6 @@
 
 .method private isPreferedActivity(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -487,8 +471,6 @@
 
 .method private plusFullDateDescription(Landroid/widget/TextView;Ljava/util/Calendar;)V
     .locals 5
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/util/Calendar;
 
     iget-object v3, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -863,7 +845,6 @@
 
 .method private static setAutoHomeTimezone(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1025,10 +1006,6 @@
 
 .method private setClockContentDesciptionPlusBattery(Landroid/view/View;Lcom/android/keyguard/sec/SecKeyguardTextClock;Lcom/android/keyguard/sec/SecKeyguardTextClock;Z)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/keyguard/sec/SecKeyguardTextClock;
-    .param p3    # Lcom/android/keyguard/sec/SecKeyguardTextClock;
-    .param p4    # Z
 
     if-eqz p1, :cond_0
 
@@ -1066,7 +1043,6 @@
 
 .method private setDualClockStyle(I)V
     .locals 11
-    .param p1    # I
 
     const/high16 v10, 0x41700000
 
@@ -1330,7 +1306,6 @@
 
 .method private setSingleClockStyle(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -3015,9 +2990,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/View;->onFocusChanged(ZILandroid/graphics/Rect;)V
 

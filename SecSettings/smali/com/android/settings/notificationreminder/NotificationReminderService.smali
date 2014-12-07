@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/notificationreminder/NotificationReminderService;)[Landroid/service/notification/StatusBarNotification;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderService;
 
     iget-object v0, p0, Lcom/android/settings/notificationreminder/NotificationReminderService;->currentNotiList:[Landroid/service/notification/StatusBarNotification;
 
@@ -67,8 +66,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/notificationreminder/NotificationReminderService;[Landroid/service/notification/StatusBarNotification;)[Landroid/service/notification/StatusBarNotification;
     .locals 0
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderService;
-    .param p1    # [Landroid/service/notification/StatusBarNotification;
 
     iput-object p1, p0, Lcom/android/settings/notificationreminder/NotificationReminderService;->currentNotiList:[Landroid/service/notification/StatusBarNotification;
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/notificationreminder/NotificationReminderService;)[Landroid/service/notification/StatusBarNotification;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderService;
 
     invoke-direct {p0}, Lcom/android/settings/notificationreminder/NotificationReminderService;->loadNotifications()[Landroid/service/notification/StatusBarNotification;
 
@@ -88,8 +84,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/notificationreminder/NotificationReminderService;[Landroid/service/notification/StatusBarNotification;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderService;
-    .param p1    # [Landroid/service/notification/StatusBarNotification;
 
     invoke-direct {p0, p1}, Lcom/android/settings/notificationreminder/NotificationReminderService;->hasClearableItems([Landroid/service/notification/StatusBarNotification;)Z
 
@@ -100,8 +94,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/notificationreminder/NotificationReminderService;[Landroid/service/notification/StatusBarNotification;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderService;
-    .param p1    # [Landroid/service/notification/StatusBarNotification;
 
     invoke-direct {p0, p1}, Lcom/android/settings/notificationreminder/NotificationReminderService;->hasCheckedPacakages([Landroid/service/notification/StatusBarNotification;)Z
 
@@ -112,7 +104,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/notificationreminder/NotificationReminderService;)V
     .locals 0
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderService;
 
     invoke-direct {p0}, Lcom/android/settings/notificationreminder/NotificationReminderService;->updateSoundLocked()V
 
@@ -121,7 +112,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/notificationreminder/NotificationReminderService;)V
     .locals 0
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderService;
 
     invoke-direct {p0}, Lcom/android/settings/notificationreminder/NotificationReminderService;->updateAlaramRepeating()V
 
@@ -130,7 +120,6 @@
 
 .method private hasCheckedPacakages([Landroid/service/notification/StatusBarNotification;)Z
     .locals 7
-    .param p1    # [Landroid/service/notification/StatusBarNotification;
 
     const-string v4, "NotificationReminderService"
 
@@ -269,7 +258,6 @@
 
 .method private hasClearableItems([Landroid/service/notification/StatusBarNotification;)Z
     .locals 4
-    .param p1    # [Landroid/service/notification/StatusBarNotification;
 
     const-string v1, "NotificationReminderService"
 
@@ -549,7 +537,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -691,9 +678,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 

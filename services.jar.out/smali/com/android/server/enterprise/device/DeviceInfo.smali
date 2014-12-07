@@ -121,7 +121,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -316,7 +315,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/device/DeviceInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->updateSignalStrength()V
 
@@ -325,8 +323,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/enterprise/device/DeviceInfo;J)J
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataCallLogLastTime:J
 
@@ -335,7 +331,6 @@
 
 .method static synthetic access$102(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/enterprise/device/DeviceInfo;->mRooting:I
 
@@ -344,8 +339,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/enterprise/device/DeviceInfo;J)J
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataCallLogLastValue:J
 
@@ -354,7 +347,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/device/DeviceInfo;)J
     .locals 2
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->updateDataStatisticsUsage()J
 
@@ -365,7 +357,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/device/DeviceInfo;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     iget v0, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataUsageTimer:I
 
@@ -374,7 +365,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/device/DeviceInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->registerCarrierNetworkListener()V
 
@@ -383,7 +373,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/device/DeviceInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->dataUsageValuesInit()V
 
@@ -392,7 +381,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/device/DeviceInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->deregisterCarrierNetworkListener()V
 
@@ -401,8 +389,6 @@
 
 .method static synthetic access$502(Lcom/android/server/enterprise/device/DeviceInfo;I)I
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataStatsCounter:I
 
@@ -411,7 +397,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/device/DeviceInfo;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     iget-object v0, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataStatisticsUpdateRun:Ljava/lang/Runnable;
 
@@ -420,7 +405,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/device/DeviceInfo;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     iget-object v0, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataUsageEventsHandler:Landroid/os/Handler;
 
@@ -429,7 +413,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/device/DeviceInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataUsageTimerActivated:Z
 
@@ -438,8 +421,6 @@
 
 .method static synthetic access$902(Lcom/android/server/enterprise/device/DeviceInfo;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/device/DeviceInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mDataCallConnected:Z
 
@@ -658,7 +639,6 @@
 
 .method private enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -675,7 +655,6 @@
 
 .method private enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -715,7 +694,6 @@
 
 .method private enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)V
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -739,8 +717,6 @@
 
 .method private getCallsCount(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -821,7 +797,6 @@
 
 .method private getInt(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -908,8 +883,6 @@
 
 .method private getString(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1113,7 +1086,6 @@
 
 .method private logDataCall(J)Z
     .locals 8
-    .param p1    # J
 
     const-wide/16 v6, 0x0
 
@@ -1737,7 +1709,6 @@
 # virtual methods
 .method public addCallsCount(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -1788,7 +1759,6 @@
 
 .method public clearCallingLog(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -1833,7 +1803,6 @@
 
 .method public clearMMSLog(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1867,7 +1836,6 @@
 
 .method public clearSMSLog(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1901,7 +1869,6 @@
 
 .method public dataUsageTimerActivation(Landroid/app/enterprise/ContextInfo;)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -1986,8 +1953,6 @@
 
 .method public enableCallingCapture(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2024,8 +1989,6 @@
 
 .method public enableMMSCapture(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2065,8 +2028,6 @@
 
 .method public enableSMSCapture(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2106,7 +2067,6 @@
 
 .method public getAvailableCapacityExternal(Landroid/app/enterprise/ContextInfo;)J
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     new-instance v0, Lcom/android/server/enterprise/device/DeviceStorageUtil;
 
@@ -2123,7 +2083,6 @@
 
 .method public getAvailableCapacityInternal(Landroid/app/enterprise/ContextInfo;)J
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     new-instance v0, Lcom/android/server/enterprise/device/DeviceStorageUtil;
 
@@ -2140,7 +2099,6 @@
 
 .method public getAvailableRamMemory(Landroid/app/enterprise/ContextInfo;)J
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v8, 0x1
 
@@ -2197,7 +2155,6 @@
 
 .method public getBytesReceivedNetwork(Landroid/app/enterprise/ContextInfo;)J
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2208,7 +2165,6 @@
 
 .method public getBytesReceivedWiFi(Landroid/app/enterprise/ContextInfo;)J
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2219,7 +2175,6 @@
 
 .method public getBytesSentNetwork(Landroid/app/enterprise/ContextInfo;)J
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2230,7 +2185,6 @@
 
 .method public getBytesSentWiFi(Landroid/app/enterprise/ContextInfo;)J
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2241,7 +2195,6 @@
 
 .method public getCellTowerCID(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2275,7 +2228,6 @@
 
 .method public getCellTowerLAC(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2309,7 +2261,6 @@
 
 .method public getCellTowerPSC(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2343,7 +2294,6 @@
 
 .method public getCellTowerRSSI(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2451,8 +2401,6 @@
 
 .method public getDataCallLog(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2625,7 +2573,6 @@
 
 .method public getDataCallLoggingEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2674,7 +2621,6 @@
 
 .method public getDataCallStatisticsEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -2721,7 +2667,6 @@
 
 .method public getDataUsageTimer(Landroid/app/enterprise/ContextInfo;)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mCallerUid:I
 
@@ -2759,7 +2704,6 @@
 
 .method public getDeviceMaker(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "ro.product.manufacturer"
 
@@ -2774,7 +2718,6 @@
 
 .method public getDeviceName(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "ro.product.device"
 
@@ -2789,7 +2732,6 @@
 
 .method public getDeviceOS(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "os.name"
 
@@ -2804,7 +2746,6 @@
 
 .method public getDeviceOSVersion(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "os.version"
 
@@ -2819,7 +2760,6 @@
 
 .method public getDevicePlatform(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v1, "ro.build.version.release"
 
@@ -2860,7 +2800,6 @@
 
 .method public getDeviceProcessorSpeed(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v3, ""
 
@@ -2979,7 +2918,6 @@
 
 .method public getDeviceProcessorType(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -3133,7 +3071,6 @@
 
 .method public getDroppedCallsCount(Landroid/app/enterprise/ContextInfo;)I
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "dropped"
 
@@ -3146,7 +3083,6 @@
 
 .method public getInboundMMSCaptured(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3290,7 +3226,6 @@
 
 .method public getInboundSMSCaptured(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3434,7 +3369,6 @@
 
 .method public getIncomingCallingCaptured(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3610,7 +3544,6 @@
 
 .method public getMissedCallsCount(Landroid/app/enterprise/ContextInfo;)I
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "missed"
 
@@ -3623,7 +3556,6 @@
 
 .method public getModelName(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "ro.product.name"
 
@@ -3638,7 +3570,6 @@
 
 .method public getModelNumber(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "ro.product.model"
 
@@ -3653,7 +3584,6 @@
 
 .method public getModemFirmware(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "gsm.version.baseband"
 
@@ -3668,7 +3598,6 @@
 
 .method public getOutboundMMSCaptured(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3812,7 +3741,6 @@
 
 .method public getOutboundSMSCaptured(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3956,7 +3884,6 @@
 
 .method public getOutgoingCallingCaptured(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4132,7 +4059,6 @@
 
 .method public getPlatformSDK(Landroid/app/enterprise/ContextInfo;)I
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "ro.build.version.sdk"
 
@@ -4145,7 +4071,6 @@
 
 .method public getPlatformVersion(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "ro.build.version.release"
 
@@ -4160,7 +4085,6 @@
 
 .method public getPlatformVersionName(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "UNKNOWN"
 
@@ -4223,7 +4147,6 @@
 
 .method public getSerialNumber(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x0
 
@@ -4260,7 +4183,6 @@
 
 .method public getSuccessCallsCount(Landroid/app/enterprise/ContextInfo;)I
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string/jumbo v0, "success"
 
@@ -4273,7 +4195,6 @@
 
 .method public getTotalCapacityExternal(Landroid/app/enterprise/ContextInfo;)J
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     new-instance v0, Lcom/android/server/enterprise/device/DeviceStorageUtil;
 
@@ -4290,7 +4211,6 @@
 
 .method public getTotalCapacityInternal(Landroid/app/enterprise/ContextInfo;)J
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     new-instance v0, Lcom/android/server/enterprise/device/DeviceStorageUtil;
 
@@ -4307,7 +4227,6 @@
 
 .method public getTotalRamMemory(Landroid/app/enterprise/ContextInfo;)J
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v7, 0x0
 
@@ -4354,7 +4273,6 @@
 
 .method public getWifiStatisticEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -4401,7 +4319,6 @@
 
 .method public isCallingCaptureEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v5, 0x0
 
@@ -4478,7 +4395,6 @@
 
 .method public isDeviceLocked(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -4514,7 +4430,6 @@
 
 .method public declared-synchronized isDeviceRooted(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x1
 
@@ -4564,7 +4479,6 @@
 
 .method public isDeviceSecure(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4607,7 +4521,6 @@
 
 .method public isMMSCaptureEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     :try_start_0
     iget-object v4, p0, Lcom/android/server/enterprise/device/DeviceInfo;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
@@ -4667,7 +4580,6 @@
 
 .method public isSMSCaptureEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforcePhoneAppOrAdmin(Landroid/app/enterprise/ContextInfo;)V
 
@@ -4729,14 +4641,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->updateDataUsageState()V
 
@@ -4745,14 +4655,12 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public resetCallsCount(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4813,8 +4721,6 @@
 
 .method public resetDataCallLogging(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v1, 0x0
 
@@ -4850,7 +4756,6 @@
 
 .method public resetDataUsage(Landroid/app/enterprise/ContextInfo;)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-wide/16 v4, 0x0
 
@@ -4960,8 +4865,6 @@
 
 .method public setDataCallLoggingEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4997,8 +4900,6 @@
 
 .method public setDataCallStatisticsEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5034,8 +4935,6 @@
 
 .method public setDataUsageTimer(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5104,8 +5003,6 @@
 
 .method public setWifiStatisticEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/device/DeviceInfo;->enforceOwnerOnlyAndDeviceInventoryPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5141,11 +5038,6 @@
 
 .method public storeCalling(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->enforcePhone()V
 
@@ -5206,10 +5098,6 @@
 
 .method public storeMMS(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -5267,10 +5155,6 @@
 
 .method public storeSMS(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-direct {p0}, Lcom/android/server/enterprise/device/DeviceInfo;->enforcePhone()V
 

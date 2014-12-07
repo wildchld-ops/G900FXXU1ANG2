@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/keyguard/KeyguardTransportControlView$4;->this$0:Lcom/android/keyguard/KeyguardTransportControlView;
 

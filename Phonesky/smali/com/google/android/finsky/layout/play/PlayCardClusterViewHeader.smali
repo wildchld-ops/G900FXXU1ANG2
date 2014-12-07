@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -31,8 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -119,11 +116,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 15
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Lcom/google/android/finsky/layout/play/PlayCardClusterViewHeader;->getWidth()I
 
@@ -256,8 +248,6 @@
 
 .method protected onMeasure(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/16 v9, 0x8
 
@@ -402,8 +392,6 @@
 
 .method public replaceTitles(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/16 v1, 0x8
 
@@ -456,11 +444,6 @@
 
 .method public setContent(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/view/View$OnClickListener;
 
     const/4 v1, 0x0
 
@@ -485,13 +468,6 @@
 
 .method public setContent(Lcom/google/android/finsky/utils/BitmapLoader;ILcom/google/android/finsky/protos/Doc$Image;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/view/View$OnClickListener;
 
     const/16 v4, 0x8
 

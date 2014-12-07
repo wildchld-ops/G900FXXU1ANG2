@@ -55,8 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/SeparatorRelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/SongSnippet;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongSnippet;->mSongBadge:Landroid/widget/ImageView;
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/SongSnippet;)Lcom/google/android/finsky/protos/DocDetails$SongDetails;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongSnippet;->mSongDetails:Lcom/google/android/finsky/protos/DocDetails$SongDetails;
 
@@ -105,7 +101,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/SongSnippet;)Lcom/google/android/finsky/previews/PreviewController;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongSnippet;->mConnection:Lcom/google/android/finsky/previews/PreviewController;
 
@@ -114,7 +109,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/layout/SongSnippet;)Lcom/google/android/finsky/api/model/Document;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongSnippet;->mSongDocument:Lcom/google/android/finsky/api/model/Document;
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/layout/SongSnippet;)Lcom/google/android/finsky/navigationmanager/NavigationManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongSnippet;->mNavigationManager:Lcom/google/android/finsky/navigationmanager/NavigationManager;
 
@@ -132,8 +125,6 @@
 
 .method static synthetic access$502(Lcom/google/android/finsky/layout/SongSnippet;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/layout/SongSnippet;->mInitialized:Z
 
@@ -142,7 +133,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/layout/SongSnippet;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/SongSnippet;->resetUI()V
 
@@ -151,7 +141,6 @@
 
 .method static synthetic access$700(Lcom/google/android/finsky/layout/SongSnippet;)Lcom/google/android/finsky/layout/SongIndex;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/SongSnippet;->mSongIndex:Lcom/google/android/finsky/layout/SongIndex;
 
@@ -160,8 +149,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/layout/SongSnippet;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/SongSnippet;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/SongSnippet;->setHighlighted(Z)V
 
@@ -170,7 +157,6 @@
 
 .method private clearBuyButtonStyle(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -237,7 +223,6 @@
 
 .method private setHighlighted(Z)V
     .locals 9
-    .param p1    # Z
 
     const v8, 0x7f07006b
 
@@ -559,7 +544,6 @@
 # virtual methods
 .method public childImpression(Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -963,14 +947,6 @@
 
 .method public setSongDetails(Lcom/google/android/finsky/utils/BitmapLoader;Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/api/model/Document;IZLcom/google/android/finsky/navigationmanager/NavigationManager;ZLcom/google/android/finsky/layout/play/PlayStoreUiElementNode;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader;
-    .param p2    # Lcom/google/android/finsky/api/model/Document;
-    .param p3    # Lcom/google/android/finsky/api/model/Document;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p7    # Z
-    .param p8    # Lcom/google/android/finsky/layout/play/PlayStoreUiElementNode;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/SongSnippet;->mBitmapLoader:Lcom/google/android/finsky/utils/BitmapLoader;
 
@@ -1007,7 +983,6 @@
 
 .method public setState(I)V
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

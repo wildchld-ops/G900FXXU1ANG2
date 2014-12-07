@@ -33,7 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/nuance/connect/service/ConnectClient;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +53,6 @@
 
 .method private commandToURL(Lcom/nuance/connect/service/comm/Command;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -89,11 +87,6 @@
 
 .method private generateStatsBundle(Ljava/lang/String;Ljava/lang/String;JIJ)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # J
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -254,7 +247,6 @@
 
 .method public setTrackingInterval(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/nuance/connect/service/comm/AnalyticsDataUsageScribeImpl;->trackNetworkUsageLength:I
 
@@ -285,8 +277,6 @@
 
 .method public writeRequest(Lcom/nuance/connect/service/comm/Command;J)V
     .locals 9
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # J
 
     const-string v1, "C002"
 
@@ -319,8 +309,6 @@
 
 .method public writeResponse(Lcom/nuance/connect/service/comm/Command;J)V
     .locals 9
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # J
 
     const-string v1, "C003"
 

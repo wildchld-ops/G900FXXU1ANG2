@@ -106,8 +106,6 @@
 
 .method private copyParams(Landroid/view/ViewGroup;Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -377,8 +375,6 @@
 # virtual methods
 .method public changeVideoLocation(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -746,7 +742,6 @@
 
 .method public getSurfaceViewHeight(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -784,7 +779,6 @@
 
 .method public getSurfaceViewWidth(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -822,7 +816,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallCardFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -831,7 +824,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -895,9 +887,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -1072,9 +1061,6 @@
 
 .method public onSurfaceTextureAvailable(Landroid/graphics/SurfaceTexture;II)V
     .locals 5
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -1194,7 +1180,6 @@
 
 .method public onSurfaceTextureDestroyed(Landroid/graphics/SurfaceTexture;)Z
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     const/4 v2, 0x1
 
@@ -1266,9 +1251,6 @@
 
 .method public onSurfaceTextureSizeChanged(Landroid/graphics/SurfaceTexture;II)V
     .locals 2
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "onSurfaceTextureSizeChanged..."
 
@@ -1281,7 +1263,6 @@
 
 .method public onSurfaceTextureUpdated(Landroid/graphics/SurfaceTexture;)V
     .locals 2
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mFarEndView:Landroid/view/TextureView;
 
@@ -1337,8 +1318,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const v2, 0x3f800054
 
@@ -1707,11 +1686,6 @@
 
 .method public setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/services/telephony/common/Call$DisconnectCause;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1845,8 +1819,6 @@
 
 .method protected setDrawableToImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     if-nez p1, :cond_0
 
@@ -1874,7 +1846,6 @@
 
 .method public setIncomingHideButton(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mIncomingHideButton:Landroid/widget/ToggleButton;
 
@@ -1904,17 +1875,6 @@
 
 .method public setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/graphics/drawable/Drawable;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
 
     const-string v0, "setPrimary.. CallCardVideoFragment"
 
@@ -1933,9 +1893,6 @@
 
 .method public setPrimaryCallElapsedTime(ZLjava/lang/String;J)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1971,8 +1928,6 @@
 
 .method public setPrimaryCdnipNumber(ZLjava/lang/String;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/incallui/CallCardVideoFragment;->mPrimaryCdnipNumber:Landroid/widget/TextView;
 
@@ -2064,8 +2019,6 @@
 
 .method public setPrimaryCnapName(ZLjava/lang/String;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mPrimaryCnapNameContainer:Landroid/view/View;
 
@@ -2142,8 +2095,6 @@
 
 .method public setPrimaryImage(Landroid/graphics/drawable/Drawable;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     const-string v0, "setPrimaryImage..CallCardVideoFragment"
 
@@ -2162,14 +2113,12 @@
 
 .method public setPrimaryLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setPrimaryVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mPrimaryCallBanner:Landroid/view/ViewGroup;
 
@@ -2214,7 +2163,6 @@
 
 .method public showIncomingHideButton(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mIncomingHideButton:Landroid/widget/ToggleButton;
 
@@ -2291,7 +2239,6 @@
 
 .method public updateBgColorForCallState(I)V
     .locals 5
-    .param p1    # I
 
     const v3, 0x7f090072
 
@@ -2495,7 +2442,6 @@
 
 .method public updateConfUI(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2588,7 +2534,6 @@
 
 .method public updateFarEndPreparingAnimationImage(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -2851,7 +2796,6 @@
 
 .method public updatePrimaryCallBanner(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v1, 0x8
 
@@ -2967,7 +2911,6 @@
 
 .method public updatePrimaryCallBannerLayout(I)V
     .locals 4
-    .param p1    # I
 
     const v2, 0x7f0c00eb
 
@@ -3102,7 +3045,6 @@
 
 .method public updatePrimaryCallStateContainer(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v1, 0x8
 
@@ -3178,7 +3120,6 @@
 
 .method public updatePrimaryName(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -3345,7 +3286,6 @@
 
 .method public updateSurfaceViewVisibility(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x3
 
@@ -3373,7 +3313,6 @@
 
 .method public updateVideoCallStateLabel(I)V
     .locals 5
-    .param p1    # I
 
     const v4, 0x7f070200
 

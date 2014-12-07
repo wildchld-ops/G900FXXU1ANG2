@@ -382,12 +382,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFI)V
     .locals 21
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     invoke-virtual/range {p1 .. p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -822,8 +816,6 @@
 # virtual methods
 .method public addEmptyItem(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;->mDragDropBoxList:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -910,7 +902,6 @@
 
 .method public coordiYtoCellPosition(I)I
     .locals 2
-    .param p1    # I
 
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;->MENU_HEIGHT:I
 
@@ -953,7 +944,6 @@
 
 .method public indexOf(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -1417,14 +1407,12 @@
 
 .method public onCancelDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
 
 .method public onDragEndItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v3, 0x0
 
@@ -1489,11 +1477,6 @@
 
 .method public onDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v4, 0x0
 
@@ -1594,7 +1577,6 @@
 
 .method public onDragStartItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/16 v4, 0x1b
 
@@ -1689,7 +1671,6 @@
 
 .method public onDrop(Lcom/sec/android/glview/TwGLView;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1721,7 +1702,6 @@
 
 .method public onSideBarBoxCancelListener(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 
@@ -2170,7 +2150,6 @@
 
 .method public removeEmptyItem(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;->mDragDropBoxList:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -2380,7 +2359,6 @@
 
 .method public setDraggable(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;->mDragDropBoxList:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -2411,7 +2389,6 @@
 
 .method public setEditableSideBarVisibility(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;->mDragDropBoxList:Ljava/util/concurrent/CopyOnWriteArrayList;
 

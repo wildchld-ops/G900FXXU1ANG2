@@ -234,7 +234,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mIsTablet:Z
 
@@ -243,9 +242,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApSettings;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -254,8 +250,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/wifi/mobileap/WifiApSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mContinueOpen:Z
 
@@ -264,8 +258,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -274,8 +266,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->removeDialog(I)V
 
@@ -284,8 +274,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/wifi/mobileap/WifiApSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mDismissDialog:Z
 
@@ -294,8 +282,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -304,8 +290,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->removeDialog(I)V
 
@@ -314,8 +298,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -324,7 +306,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mSharedPref:Landroid/content/SharedPreferences;
 
@@ -333,8 +314,6 @@
 
 .method static synthetic access$1702(Lcom/android/settings/wifi/mobileap/WifiApSettings;Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Landroid/content/SharedPreferences;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mSharedPref:Landroid/content/SharedPreferences;
 
@@ -343,8 +322,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->removeDialog(I)V
 
@@ -353,7 +330,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -362,8 +338,6 @@
 
 .method static synthetic access$1902(Lcom/android/settings/wifi/mobileap/WifiApSettings;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -372,7 +346,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/mobileap/WifiApSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->createHelpStep1Dialog()V
 
@@ -381,7 +354,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Lcom/android/settings/wifi/WifiApDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mDialogConfigure:Lcom/android/settings/wifi/WifiApDialog;
 
@@ -390,7 +362,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -399,7 +370,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/wifi/mobileap/WifiApSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->updateStatus()V
 
@@ -408,7 +378,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/wifi/mobileap/WifiApSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->getRvfMode()I
 
@@ -419,7 +388,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mOldWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -428,10 +396,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/wifi/mobileap/WifiApSettings;Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;I)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->compareWifiConfiguration(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;I)Z
 
@@ -442,8 +406,6 @@
 
 .method static synthetic access$2600(Lcom/android/settings/wifi/mobileap/WifiApSettings;Landroid/net/wifi/WifiConfiguration;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->resetWifiAp(Landroid/net/wifi/WifiConfiguration;)V
 
@@ -452,7 +414,6 @@
 
 .method static synthetic access$2700(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mContext:Landroid/content/Context;
 
@@ -461,8 +422,6 @@
 
 .method static synthetic access$2800(Lcom/android/settings/wifi/mobileap/WifiApSettings;Ljava/lang/Boolean;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->setHelpPreference(Ljava/lang/Boolean;)V
 
@@ -471,8 +430,6 @@
 
 .method static synthetic access$2902(Lcom/android/settings/wifi/mobileap/WifiApSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->isNoHotSpotModeWarningShown:Z
 
@@ -481,7 +438,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/mobileap/WifiApSettings;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mHelpStep1Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -490,8 +446,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/wifi/mobileap/WifiApSettings;Lcom/android/settings/helpdialog/TwHelpDialog;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mHelpStep1Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -500,7 +454,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/mobileap/WifiApSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mSelectedTimeoutValue:I
 
@@ -509,8 +462,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mSelectedTimeoutValue:I
 
@@ -519,8 +470,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->getTimeoutValueFromIndex(I)I
 
@@ -531,8 +480,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->setTimeout(I)V
 
@@ -541,8 +488,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->removeDialog(I)V
 
@@ -551,8 +496,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/mobileap/WifiApSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->removeDialog(I)V
 
@@ -561,9 +504,6 @@
 
 .method private compareWifiConfiguration(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;I)Z
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -750,7 +690,6 @@
 
 .method private getTimeoutIndexFromValue(I)I
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -804,7 +743,6 @@
 
 .method private getTimeoutValueFromIndex(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x4b0
 
@@ -1004,7 +942,6 @@
 
 .method private resetWifiAp(Landroid/net/wifi/WifiConfiguration;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     new-instance v0, Landroid/os/Message;
 
@@ -1281,7 +1218,6 @@
 
 .method private setTimeout(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApSettings;->saveTimeoutPreference(I)V
 
@@ -1848,7 +1784,6 @@
 
 .method private updateOptionsMenuIcon(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x5
 
@@ -2216,7 +2151,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v3, 0x10
 
@@ -2577,7 +2511,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mIsTablet:Z
 
@@ -2607,7 +2540,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -3014,8 +2946,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v5, 0x3
 
@@ -3570,8 +3500,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings;->mSsidPreference:Landroid/preference/Preference;
 
@@ -3761,7 +3689,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

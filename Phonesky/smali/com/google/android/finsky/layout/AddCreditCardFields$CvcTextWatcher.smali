@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/layout/AddCreditCardFields;Lcom/google/android/finsky/layout/AddCreditCardFields$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/AddCreditCardFields;
-    .param p2    # Lcom/google/android/finsky/layout/AddCreditCardFields$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/layout/AddCreditCardFields$CvcTextWatcher;-><init>(Lcom/google/android/finsky/layout/AddCreditCardFields;)V
 
@@ -69,7 +67,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
-    .param p1    # Landroid/text/Editable;
 
     invoke-interface {p1}, Landroid/text/Editable;->length()I
 
@@ -107,20 +104,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

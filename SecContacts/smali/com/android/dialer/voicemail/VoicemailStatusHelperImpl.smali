@@ -81,7 +81,6 @@
 
 .method private isVoicemailSourceActive(Landroid/database/Cursor;)Z
     .locals 3
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x1
 
@@ -112,7 +111,6 @@
 # virtual methods
 .method public getNumberActivityVoicemailSources(Landroid/database/Cursor;)I
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 

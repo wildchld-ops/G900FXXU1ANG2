@@ -653,7 +653,6 @@
 # virtual methods
 .method getStepByTemp(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -683,7 +682,6 @@
 
 .method getStepByTemp2(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -713,7 +711,6 @@
 
 .method getTempByStep(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/ssrm/AmoledAdjustTimer;->TEMP_TABLE:[I
 

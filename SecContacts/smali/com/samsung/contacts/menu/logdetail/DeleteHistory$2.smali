@@ -36,8 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     # getter for: Lcom/samsung/contacts/menu/logdetail/DeleteHistory;->mContext:Landroid/content/Context;
     invoke-static {}, Lcom/samsung/contacts/menu/logdetail/DeleteHistory;->access$000()Landroid/content/Context;

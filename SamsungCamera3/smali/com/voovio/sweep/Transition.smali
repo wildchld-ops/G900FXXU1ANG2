@@ -97,7 +97,6 @@
 
 .method public constructor <init>(Lcom/voovio/sweep/Sweep;)V
     .locals 8
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     const/4 v7, 0x0
 
@@ -228,8 +227,6 @@
 
 .method private GetIntermediatePoint(Lcom/voovio/voo3d/data/Vector3;F)Lcom/voovio/voo3d/data/Vector3;
     .locals 20
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # F
 
     const/4 v12, 0x0
 
@@ -945,8 +942,6 @@
 # virtual methods
 .method public AddVoovio(Lcom/voovio/sweep/Voovio;Z)I
     .locals 4
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/voovio/sweep/Transition;->m_aVoovios:Ljava/util/ArrayList;
 
@@ -1019,7 +1014,6 @@
 
 .method protected ComputeInOut(Lcom/voovio/voo3d/scenegraph/Camera3D;)V
     .locals 8
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
 
     const/4 v7, 0x0
 
@@ -1429,7 +1423,6 @@
 
 .method public FromAngle(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -1440,8 +1433,6 @@
 
 .method public FromAngle(FF)V
     .locals 41
-    .param p1    # F
-    .param p2    # F
 
     move-object/from16 v0, p0
 
@@ -2348,7 +2339,6 @@
 
 .method public FromTemplate(Lcom/voovio/sweep/Template;)V
     .locals 25
-    .param p1    # Lcom/voovio/sweep/Template;
 
     move-object/from16 v0, p0
 
@@ -3111,7 +3101,6 @@
 
 .method public FromTranslation(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 13
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget-object v9, p0, Lcom/voovio/sweep/Transition;->m_aVoovios:Ljava/util/ArrayList;
 
@@ -3370,7 +3359,6 @@
 
 .method public GetFinalPosition(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 5
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget-object v3, p0, Lcom/voovio/sweep/Transition;->m_aPortals:[[Lcom/voovio/sweep/Portal;
 
@@ -3447,9 +3435,6 @@
 
 .method public GetPositionAndDirection(FLcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 5
-    .param p1    # F
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v4, 0x0
 
@@ -3623,7 +3608,6 @@
 
 .method public RemoveVoovio(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/Transition;->m_aVoovios:Ljava/util/ArrayList;
 
@@ -3664,7 +3648,6 @@
 
 .method public RemoveVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     iget-object v2, p0, Lcom/voovio/sweep/Transition;->m_aVoovios:Ljava/util/ArrayList;
 
@@ -3739,10 +3722,6 @@
 
 .method public TestTransition(ILcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/scenegraph/Camera3D;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
-    .param p4    # Lcom/voovio/voo3d/scenegraph/Camera3D;
 
     const/4 v2, 0x1
 
@@ -3930,7 +3909,6 @@
 
 .method public getAngleToV1(Lcom/voovio/voo3d/data/Vector3;)F
     .locals 6
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v0, 0x0
 
@@ -4026,7 +4004,6 @@
 
 .method public setRotationAngle(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/sweep/Transition;->m_fRotationAngle:F
 
@@ -4035,7 +4012,6 @@
 
 .method public setWalkingSteps(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/sweep/Transition;->m_fWalkingSteps:F
 

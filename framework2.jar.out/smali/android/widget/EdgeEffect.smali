@@ -118,7 +118,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -487,7 +486,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)Z
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v10, 0x437f0000
 
@@ -702,7 +700,6 @@
 
 .method public getBounds(Z)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -758,7 +755,6 @@
 
 .method public onAbsorb(I)V
     .locals 5
-    .param p1    # I
 
     const/high16 v4, 0x3f800000
 
@@ -893,7 +889,6 @@
 
 .method public onPull(F)V
     .locals 9
-    .param p1    # F
 
     const/4 v6, 0x1
 
@@ -1146,8 +1141,6 @@
 
 .method setPosition(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/EdgeEffect;->mX:I
 
@@ -1158,8 +1151,6 @@
 
 .method public setSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/EdgeEffect;->mWidth:I
 
@@ -1170,8 +1161,6 @@
 
 .method public setTouchWizCustomization(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x1
 

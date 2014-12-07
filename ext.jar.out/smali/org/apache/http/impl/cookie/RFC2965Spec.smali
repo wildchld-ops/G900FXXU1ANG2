@@ -18,8 +18,6 @@
 
 .method public constructor <init>([Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lorg/apache/http/impl/cookie/RFC2109Spec;-><init>([Ljava/lang/String;Z)V
 
@@ -68,7 +66,6 @@
 
 .method private static adjustEffectiveHost(Lorg/apache/http/cookie/CookieOrigin;)Lorg/apache/http/cookie/CookieOrigin;
     .locals 8
-    .param p0    # Lorg/apache/http/cookie/CookieOrigin;
 
     invoke-virtual {p0}, Lorg/apache/http/cookie/CookieOrigin;->getHost()Ljava/lang/String;
 
@@ -150,9 +147,6 @@
 
 .method private createCookie(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/cookie/CookieOrigin;)Lorg/apache/http/impl/cookie/BasicClientCookie;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/apache/http/cookie/CookieOrigin;
 
     new-instance v0, Lorg/apache/http/impl/cookie/BasicClientCookie;
 
@@ -175,9 +169,6 @@
 
 .method private createCookie2(Ljava/lang/String;Ljava/lang/String;Lorg/apache/http/cookie/CookieOrigin;)Lorg/apache/http/impl/cookie/BasicClientCookie;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/apache/http/cookie/CookieOrigin;
 
     new-instance v0, Lorg/apache/http/impl/cookie/BasicClientCookie2;
 
@@ -216,9 +207,6 @@
 # virtual methods
 .method protected formatCookieAsVer(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/cookie/Cookie;I)V
     .locals 6
-    .param p1    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p2    # Lorg/apache/http/cookie/Cookie;
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Lorg/apache/http/impl/cookie/RFC2109Spec;->formatCookieAsVer(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/cookie/Cookie;I)V
 
@@ -345,8 +333,6 @@
 
 .method public match(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)Z
     .locals 2
-    .param p1    # Lorg/apache/http/cookie/Cookie;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
 
     if-nez p1, :cond_0
 
@@ -383,8 +369,6 @@
 
 .method public parse(Lorg/apache/http/Header;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
     .locals 24
-    .param p1    # Lorg/apache/http/Header;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -656,8 +640,6 @@
 
 .method public validate(Lorg/apache/http/cookie/Cookie;Lorg/apache/http/cookie/CookieOrigin;)V
     .locals 2
-    .param p1    # Lorg/apache/http/cookie/Cookie;
-    .param p2    # Lorg/apache/http/cookie/CookieOrigin;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/cookie/MalformedCookieException;

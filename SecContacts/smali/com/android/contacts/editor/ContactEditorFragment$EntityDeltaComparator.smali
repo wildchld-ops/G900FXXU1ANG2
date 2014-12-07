@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/editor/ContactEditorFragment;Lcom/android/contacts/editor/ContactEditorFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/editor/ContactEditorFragment;
-    .param p2    # Lcom/android/contacts/editor/ContactEditorFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/editor/ContactEditorFragment$EntityDeltaComparator;-><init>(Lcom/android/contacts/editor/ContactEditorFragment;)V
 
@@ -56,8 +54,6 @@
 # virtual methods
 .method public compare(Lcom/android/contacts/model/RawContactDelta;Lcom/android/contacts/model/RawContactDelta;)I
     .locals 21
-    .param p1    # Lcom/android/contacts/model/RawContactDelta;
-    .param p2    # Lcom/android/contacts/model/RawContactDelta;
 
     invoke-virtual/range {p1 .. p2}, Lcom/android/contacts/model/RawContactDelta;->equals(Ljava/lang/Object;)Z
 
@@ -327,8 +323,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/contacts/model/RawContactDelta;
 

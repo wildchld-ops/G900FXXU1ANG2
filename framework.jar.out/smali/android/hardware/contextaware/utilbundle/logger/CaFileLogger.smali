@@ -103,8 +103,6 @@
 
 .method private getLogFile(Ljava/lang/String;Ljava/io/File;)Ljava/io/File;
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -494,8 +492,6 @@
 # virtual methods
 .method public final logging(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/hardware/contextaware/utilbundle/logger/CaFileLogger;->mFile:Ljava/util/Map;
 
@@ -569,11 +565,6 @@
 
 .method public final loggingForKML(Ljava/lang/String;J[D[FJ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # [D
-    .param p5    # [F
-    .param p6    # J
 
     const/4 v2, 0x3
 
@@ -746,7 +737,6 @@
 
 .method public final startLogging(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -864,7 +854,6 @@
 
 .method public final stopLogging(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

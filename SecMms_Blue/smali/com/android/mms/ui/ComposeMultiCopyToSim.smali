@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ComposeMultiCopyToSim;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMultiCopyToSim;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMultiCopyToSim;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ComposeMultiCopyToSim;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMultiCopyToSim;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMultiCopyToSim;->mActivity:Landroid/app/Activity;
 
@@ -63,11 +60,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ComposeMultiCopyToSim;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMultiCopyToSim;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # Ljava/util/ArrayList;
-    .param p3    # Ljava/util/ArrayList;
-    .param p4    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/ComposeMultiCopyToSim;->copyToSimSelectedSMS(Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)I
 
@@ -196,10 +188,6 @@
 # virtual methods
 .method public confirmCopytoSIMMessageDialog(Lcom/android/mms/ui/ComposeMultiCopyToSim$CopytoSIMMessageListener;ZLandroid/content/Context;I)Landroid/app/AlertDialog;
     .locals 7
-    .param p1    # Lcom/android/mms/ui/ComposeMultiCopyToSim$CopytoSIMMessageListener;
-    .param p2    # Z
-    .param p3    # Landroid/content/Context;
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -349,7 +337,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMultiCopyToSim;->mActivity:Landroid/app/Activity;
 

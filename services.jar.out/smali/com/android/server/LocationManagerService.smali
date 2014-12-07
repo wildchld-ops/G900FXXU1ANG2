@@ -274,7 +274,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -391,7 +390,6 @@
 
 .method static synthetic access$000(Lcom/android/server/LocationManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
@@ -400,7 +398,6 @@
 
 .method static synthetic access$100(Lcom/android/server/LocationManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mReceivers:Ljava/util/HashMap;
 
@@ -409,7 +406,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/LocationManagerService;)Landroid/app/AppOpsManager;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mAppOps:Landroid/app/AppOpsManager;
 
@@ -418,7 +414,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/LocationManagerService;)Lcom/android/server/LocationManagerService$LocationWorkerHandler;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mLocationHandler:Lcom/android/server/LocationManagerService$LocationWorkerHandler;
 
@@ -427,8 +422,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/LocationManagerService;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/LocationManagerService;->getResolutionPermission(I)Ljava/lang/String;
 
@@ -447,8 +440,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/LocationManagerService;Lcom/android/server/LocationManagerService$Receiver;)V
     .locals 0
-    .param p0    # Lcom/android/server/LocationManagerService;
-    .param p1    # Lcom/android/server/LocationManagerService$Receiver;
 
     invoke-direct {p0, p1}, Lcom/android/server/LocationManagerService;->removeUpdatesLocked(Lcom/android/server/LocationManagerService$Receiver;)V
 
@@ -457,7 +448,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/LocationManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mRecordsByProvider:Ljava/util/HashMap;
 
@@ -466,9 +456,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/LocationManagerService;Landroid/location/Location;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/LocationManagerService;
-    .param p1    # Landroid/location/Location;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/LocationManagerService;->handleLocationChanged(Landroid/location/Location;Z)V
 
@@ -477,7 +464,6 @@
 
 .method static synthetic access$200(Lcom/android/server/LocationManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->applyAllProviderRequirementsLocked()V
 
@@ -486,7 +472,6 @@
 
 .method static synthetic access$300(Lcom/android/server/LocationManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->updateProvidersLocked()V
 
@@ -495,8 +480,6 @@
 
 .method static synthetic access$400(Lcom/android/server/LocationManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/LocationManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/LocationManagerService;->switchUser(I)V
 
@@ -505,7 +488,6 @@
 
 .method static synthetic access$500(Lcom/android/server/LocationManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
@@ -514,9 +496,6 @@
 
 .method static synthetic access$600(Lcom/android/server/LocationManagerService;II)I
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/LocationManagerService;->getAllowedResolutionLevel(II)I
 
@@ -527,7 +506,6 @@
 
 .method static synthetic access$700(Lcom/android/server/LocationManagerService;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mPowerManager:Landroid/os/PowerManager;
 
@@ -536,8 +514,6 @@
 
 .method static synthetic access$800(Lcom/android/server/LocationManagerService;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/LocationManagerService;->isAllowedByCurrentUserSettingsLocked(Ljava/lang/String;)Z
 
@@ -548,7 +524,6 @@
 
 .method static synthetic access$900(Lcom/android/server/LocationManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/LocationManagerService;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -557,7 +532,6 @@
 
 .method private addProviderLocked(Lcom/android/server/location/LocationProviderInterface;)V
     .locals 2
-    .param p1    # Lcom/android/server/location/LocationProviderInterface;
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mProviders:Ljava/util/ArrayList;
 
@@ -621,7 +595,6 @@
 
 .method private applyRequirementsLocked(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     iget-object v9, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -929,13 +902,6 @@
 
 .method private checkListenerOrIntentLocked(Landroid/location/ILocationListener;Landroid/app/PendingIntent;IILjava/lang/String;Landroid/os/WorkSource;Z)Lcom/android/server/LocationManagerService$Receiver;
     .locals 7
-    .param p1    # Landroid/location/ILocationListener;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/WorkSource;
-    .param p7    # Z
 
     if-nez p2, :cond_0
 
@@ -1072,7 +1038,6 @@
 
 .method private checkPackageName(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1190,7 +1155,6 @@
 
 .method private checkPendingIntent(Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/app/PendingIntent;
 
     if-nez p1, :cond_0
 
@@ -1224,7 +1188,6 @@
 
 .method private checkResolutionLevelIsSufficientForGeofenceUse(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -1244,8 +1207,6 @@
 
 .method private checkResolutionLevelIsSufficientForProviderUse(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/server/LocationManagerService;->getMinimumResolutionLevelForProviderUse(Ljava/lang/String;)I
 
@@ -1387,8 +1348,6 @@
 
 .method private createSanitizedRequest(Landroid/location/LocationRequest;I)Landroid/location/LocationRequest;
     .locals 5
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # I
 
     const-wide/32 v3, 0x927c0
 
@@ -1473,8 +1432,6 @@
 
 .method private doesPackageHaveUid(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1828,8 +1785,6 @@
 
 .method private getAllowedResolutionLevel(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
@@ -1887,7 +1842,6 @@
 
 .method private getMinimumResolutionLevelForProviderUse(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1972,12 +1926,6 @@
 
 .method private getReceiverLocked(Landroid/app/PendingIntent;IILjava/lang/String;Landroid/os/WorkSource;Z)Lcom/android/server/LocationManagerService$Receiver;
     .locals 9
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/WorkSource;
-    .param p6    # Z
 
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mReceivers:Ljava/util/HashMap;
 
@@ -2019,12 +1967,6 @@
 
 .method private getReceiverLocked(Landroid/location/ILocationListener;IILjava/lang/String;Landroid/os/WorkSource;Z)Lcom/android/server/LocationManagerService$Receiver;
     .locals 11
-    .param p1    # Landroid/location/ILocationListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/WorkSource;
-    .param p6    # Z
 
     invoke-interface {p1}, Landroid/location/ILocationListener;->asBinder()Landroid/os/IBinder;
 
@@ -2101,7 +2043,6 @@
 
 .method private getResolutionPermission(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2131,8 +2072,6 @@
 
 .method private handleLocationChanged(Landroid/location/Location;Z)V
     .locals 4
-    .param p1    # Landroid/location/Location;
-    .param p2    # Z
 
     new-instance v0, Landroid/location/Location;
 
@@ -2208,8 +2147,6 @@
 
 .method private handleLocationChangedLocked(Landroid/location/Location;Z)V
     .locals 35
-    .param p1    # Landroid/location/Location;
-    .param p2    # Z
 
     sget-boolean v31, Lcom/android/server/LocationManagerService;->DBG:Z
 
@@ -3015,7 +2952,6 @@
 
 .method private isAllowedByCurrentUserSettingsLocked(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mEnabledProviders:Ljava/util/Set;
 
@@ -3061,8 +2997,6 @@
 
 .method private isAllowedByUserSettingsLocked(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p2}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -3093,7 +3027,6 @@
 
 .method private isMockProvider(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
@@ -3122,7 +3055,6 @@
 
 .method private isUidALocationProvider(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -3656,7 +3588,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "LocationManagerService"
 
@@ -3729,7 +3660,6 @@
 
 .method private removeProviderLocked(Lcom/android/server/location/LocationProviderInterface;)V
     .locals 2
-    .param p1    # Lcom/android/server/location/LocationProviderInterface;
 
     invoke-interface {p1}, Lcom/android/server/location/LocationProviderInterface;->disable()V
 
@@ -3750,7 +3680,6 @@
 
 .method private removeUpdatesLocked(Lcom/android/server/LocationManagerService$Receiver;)V
     .locals 9
-    .param p1    # Lcom/android/server/LocationManagerService$Receiver;
 
     const/4 v8, 0x0
 
@@ -3919,11 +3848,6 @@
 
 .method private requestLocationUpdatesLocked(Landroid/location/LocationRequest;Lcom/android/server/LocationManagerService$Receiver;IILjava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Lcom/android/server/LocationManagerService$Receiver;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -4098,7 +4022,6 @@
 
 .method public static resolutionLevelToOp(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -4120,8 +4043,6 @@
 
 .method private screenLocationLocked(Landroid/location/Location;Ljava/lang/String;)Landroid/location/Location;
     .locals 7
-    .param p1    # Landroid/location/Location;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "network"
 
@@ -4272,10 +4193,6 @@
 
 .method private static shouldBroadcastSafe(Landroid/location/Location;Landroid/location/Location;Lcom/android/server/LocationManagerService$UpdateRecord;J)Z
     .locals 10
-    .param p0    # Landroid/location/Location;
-    .param p1    # Landroid/location/Location;
-    .param p2    # Lcom/android/server/LocationManagerService$UpdateRecord;
-    .param p3    # J
 
     if-nez p1, :cond_0
 
@@ -4382,7 +4299,6 @@
 
 .method private switchUser(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mBlacklist:Lcom/android/server/location/LocationBlacklist;
 
@@ -4462,9 +4378,6 @@
 
 .method private updateProviderListenersLocked(Ljava/lang/String;ZI)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -4700,8 +4613,6 @@
 # virtual methods
 .method public addGpsStatusListener(Landroid/location/IGpsStatusListener;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/location/IGpsStatusListener;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -4777,8 +4688,6 @@
 
 .method public addTestProvider(Ljava/lang/String;Lcom/android/internal/location/ProviderProperties;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/location/ProviderProperties;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
@@ -4934,9 +4843,6 @@
 
 .method checkLocationAccess(ILjava/lang/String;I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p3}, Lcom/android/server/LocationManagerService;->resolutionLevelToOp(I)I
 
@@ -4965,7 +4871,6 @@
 
 .method public clearTestProviderEnabled(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
@@ -5050,7 +4955,6 @@
 
 .method public clearTestProviderLocation(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
@@ -5121,7 +5025,6 @@
 
 .method public clearTestProviderStatus(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
@@ -5192,9 +5095,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 17
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -6119,8 +6019,6 @@
 
 .method public getBestProvider(Landroid/location/Criteria;Z)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/location/Criteria;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -6296,10 +6194,6 @@
 
 .method public getFromLocation(DDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
     .locals 8
-    .param p1    # D
-    .param p3    # D
-    .param p5    # I
-    .param p6    # Landroid/location/GeocoderParams;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(DDI",
@@ -6343,13 +6237,6 @@
 
 .method public getFromLocationName(Ljava/lang/String;DDDDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # D
-    .param p10    # I
-    .param p11    # Landroid/location/GeocoderParams;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6401,8 +6288,6 @@
 
 .method public getLastLocation(Landroid/location/LocationRequest;Ljava/lang/String;)Landroid/location/Location;
     .locals 13
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Ljava/lang/String;
 
     const/4 v12, 0x2
 
@@ -6663,7 +6548,6 @@
 
 .method public getProviderProperties(Ljava/lang/String;)Lcom/android/internal/location/ProviderProperties;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6724,8 +6608,6 @@
 
 .method public getProviders(Landroid/location/Criteria;Z)Ljava/util/List;
     .locals 11
-    .param p1    # Landroid/location/Criteria;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6886,7 +6768,6 @@
 
 .method public isProviderEnabled(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -6975,7 +6856,6 @@
 
 .method public locationCallbackFinished(Landroid/location/ILocationListener;)V
     .locals 6
-    .param p1    # Landroid/location/ILocationListener;
 
     iget-object v5, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
@@ -7045,8 +6925,6 @@
 
 .method public providerMeetsCriteria(Ljava/lang/String;Landroid/location/Criteria;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/Criteria;
 
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mProvidersByName:Ljava/util/HashMap;
 
@@ -7142,9 +7020,6 @@
 
 .method public removeGeofence(Landroid/location/Geofence;Landroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/location/Geofence;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->getCallerAllowedResolutionLevel()I
 
@@ -7232,7 +7107,6 @@
 
 .method public removeGpsStatusListener(Landroid/location/IGpsStatusListener;)V
     .locals 4
-    .param p1    # Landroid/location/IGpsStatusListener;
 
     iget-object v2, p0, Lcom/android/server/LocationManagerService;->mLock:Ljava/lang/Object;
 
@@ -7275,7 +7149,6 @@
 
 .method public removeTestProvider(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
@@ -7396,9 +7269,6 @@
 
 .method public removeUpdates(Landroid/location/ILocationListener;Landroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Landroid/location/ILocationListener;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p3}, Lcom/android/server/LocationManagerService;->checkPackageName(Ljava/lang/String;)V
 
@@ -7471,8 +7341,6 @@
 
 .method public reportLocation(Landroid/location/Location;Z)V
     .locals 4
-    .param p1    # Landroid/location/Location;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -7539,9 +7407,6 @@
 
 .method reportLocationAccessNoThrow(ILjava/lang/String;I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p3}, Lcom/android/server/LocationManagerService;->resolutionLevelToOp(I)I
 
@@ -7570,10 +7435,6 @@
 
 .method public requestGeofence(Landroid/location/LocationRequest;Landroid/location/Geofence;Landroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 20
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Landroid/location/Geofence;
-    .param p3    # Landroid/app/PendingIntent;
-    .param p4    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -7788,10 +7649,6 @@
 
 .method public requestLocationUpdates(Landroid/location/LocationRequest;Landroid/location/ILocationListener;Landroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 14
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Landroid/location/ILocationListener;
-    .param p3    # Landroid/app/PendingIntent;
-    .param p4    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -7918,9 +7775,6 @@
 
 .method public sendExtraCommand(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -7999,8 +7853,6 @@
 
 .method public sendNiResponse(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -8049,8 +7901,6 @@
 
 .method public setTestProviderEnabled(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
@@ -8153,8 +8003,6 @@
 
 .method public setTestProviderLocation(Ljava/lang/String;Landroid/location/Location;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/Location;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 
@@ -8231,10 +8079,6 @@
 
 .method public setTestProviderStatus(Ljava/lang/String;ILandroid/os/Bundle;J)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # J
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService;->checkMockPermissionsSafe()V
 

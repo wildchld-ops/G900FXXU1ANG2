@@ -71,9 +71,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/google/android/finsky/download/DownloadManager;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/google/android/finsky/download/DownloadManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,8 +105,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/download/DownloadManager;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/download/DownloadManager;
 
     const/4 v0, 0x1
 
@@ -120,7 +115,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/download/DownloadQueueImpl;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mListeners:Ljava/util/LinkedList;
 
@@ -129,7 +123,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/download/DownloadQueueImpl;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mRunningMap:Ljava/util/HashMap;
 
@@ -138,7 +131,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/download/DownloadQueueImpl;)I
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     iget v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mMaxConcurrent:I
 
@@ -147,7 +139,6 @@
 
 .method static synthetic access$300(Lcom/google/android/finsky/download/DownloadQueueImpl;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mPendingQueue:Ljava/util/LinkedHashMap;
 
@@ -156,7 +147,6 @@
 
 .method static synthetic access$400(Lcom/google/android/finsky/download/DownloadQueueImpl;)Lcom/google/android/finsky/download/DownloadProgressManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mDownloadProgressManager:Lcom/google/android/finsky/download/DownloadProgressManager;
 
@@ -165,8 +155,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/download/DownloadQueueImpl;Lcom/google/android/finsky/download/DownloadProgressManager;)Lcom/google/android/finsky/download/DownloadProgressManager;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
-    .param p1    # Lcom/google/android/finsky/download/DownloadProgressManager;
 
     iput-object p1, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mDownloadProgressManager:Lcom/google/android/finsky/download/DownloadProgressManager;
 
@@ -175,7 +163,6 @@
 
 .method static synthetic access$600(Lcom/google/android/finsky/download/DownloadQueueImpl;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mContext:Landroid/content/Context;
 
@@ -184,7 +171,6 @@
 
 .method static synthetic access$800(Lcom/google/android/finsky/download/DownloadQueueImpl;)Lcom/google/android/finsky/download/DownloadManager;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/download/DownloadQueueImpl;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mDownloadManager:Lcom/google/android/finsky/download/DownloadManager;
 
@@ -193,7 +179,6 @@
 
 .method private enqueueDownload(Lcom/google/android/finsky/download/InternalDownload;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -226,7 +211,6 @@
 
 .method private remove(Lcom/google/android/finsky/download/InternalDownload;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
 
     const-string v1, "Download %s removed from DownloadQueue"
 
@@ -279,7 +263,6 @@
 
 .method private removeFromDownloadManager(Lcom/google/android/finsky/download/InternalDownload;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
 
     invoke-interface {p1}, Lcom/google/android/finsky/download/InternalDownload;->getContentUri()Landroid/net/Uri;
 
@@ -391,7 +374,6 @@
 # virtual methods
 .method public add(Lcom/google/android/finsky/download/InternalDownload;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
 
     const/4 v3, 0x0
 
@@ -471,7 +453,6 @@
 
 .method public addListener(Lcom/google/android/finsky/download/DownloadQueueListener;)V
     .locals 1
-    .param p1    # Lcom/google/android/finsky/download/DownloadQueueListener;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -484,7 +465,6 @@
 
 .method public addRecoveredDownload(Lcom/google/android/finsky/download/InternalDownload;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -528,7 +508,6 @@
 
 .method public cancel(Lcom/google/android/finsky/download/Download;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -579,7 +558,6 @@
 
 .method public getByPackageName(Ljava/lang/String;)Lcom/google/android/finsky/download/Download;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/google/android/finsky/utils/Utils;->ensureOnMainThread()V
 
@@ -680,7 +658,6 @@
 
 .method public getDownloadByContentUri(Landroid/net/Uri;)Lcom/google/android/finsky/download/Download;
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -757,7 +734,6 @@
 
 .method getExisting(Ljava/lang/String;)Lcom/google/android/finsky/download/InternalDownload;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mRunningMap:Ljava/util/HashMap;
 
@@ -943,7 +919,6 @@
 
 .method public notifyClicked(Lcom/google/android/finsky/download/InternalDownload;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
 
     const-string v0, "%s: onNotificationClicked"
 
@@ -970,8 +945,6 @@
 
 .method notifyListeners(Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;Lcom/google/android/finsky/download/Download;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/download/DownloadQueueImpl$UpdateListenerType;
-    .param p2    # Lcom/google/android/finsky/download/Download;
 
     move-object v2, p2
 
@@ -1085,8 +1058,6 @@
 
 .method public notifyProgress(Lcom/google/android/finsky/download/InternalDownload;Lcom/google/android/finsky/download/DownloadProgress;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
-    .param p2    # Lcom/google/android/finsky/download/DownloadProgress;
 
     invoke-interface {p1}, Lcom/google/android/finsky/download/InternalDownload;->getProgress()Lcom/google/android/finsky/download/DownloadProgress;
 
@@ -1184,7 +1155,6 @@
 
 .method public onCancel(Lcom/google/android/finsky/download/Download;)V
     .locals 5
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     move-object v0, p1
 
@@ -1215,7 +1185,6 @@
 
 .method public onComplete(Lcom/google/android/finsky/download/Download;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const-string v0, "%s: onComplete"
 
@@ -1242,8 +1211,6 @@
 
 .method public onError(Lcom/google/android/finsky/download/Download;I)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -1306,22 +1273,18 @@
 
 .method public onNotificationClicked(Lcom/google/android/finsky/download/Download;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     return-void
 .end method
 
 .method public onProgress(Lcom/google/android/finsky/download/Download;Lcom/google/android/finsky/download/DownloadProgress;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/download/Download;
-    .param p2    # Lcom/google/android/finsky/download/DownloadProgress;
 
     return-void
 .end method
 
 .method public onStart(Lcom/google/android/finsky/download/Download;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/Download;
 
     const-string v0, "%s: onStart"
 
@@ -1344,7 +1307,6 @@
 
 .method public release(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/google/android/finsky/download/DownloadQueueImpl;->mDownloadManager:Lcom/google/android/finsky/download/DownloadManager;
 
@@ -1355,8 +1317,6 @@
 
 .method public setDownloadState(Lcom/google/android/finsky/download/InternalDownload;Lcom/google/android/finsky/download/Download$DownloadState;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
-    .param p2    # Lcom/google/android/finsky/download/Download$DownloadState;
 
     invoke-interface {p1, p2}, Lcom/google/android/finsky/download/InternalDownload;->setState(Lcom/google/android/finsky/download/Download$DownloadState;)V
 
@@ -1427,7 +1387,6 @@
 
 .method startDownload(Lcom/google/android/finsky/download/InternalDownload;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/download/InternalDownload;
 
     if-nez p1, :cond_0
 

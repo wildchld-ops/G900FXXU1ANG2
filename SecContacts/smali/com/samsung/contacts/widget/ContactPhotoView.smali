@@ -67,7 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -128,8 +127,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x1
 
@@ -190,9 +187,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -298,8 +292,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/widget/ContactPhotoView;Landroid/graphics/drawable/Drawable;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/widget/ContactPhotoView;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/widget/ContactPhotoView;->makeBlurEffectIfNeeded(Landroid/graphics/drawable/Drawable;)I
 
@@ -310,7 +302,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/widget/ContactPhotoView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     iget-object v0, p0, Lcom/samsung/contacts/widget/ContactPhotoView;->mBlurredBitmap:Landroid/graphics/Bitmap;
 
@@ -319,7 +310,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/widget/ContactPhotoView;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     invoke-direct {p0}, Lcom/samsung/contacts/widget/ContactPhotoView;->ApplyBlurEffect()V
 
@@ -328,7 +318,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/widget/ContactPhotoView;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     invoke-direct {p0}, Lcom/samsung/contacts/widget/ContactPhotoView;->ApplyHighQualityPhoto()V
 
@@ -337,7 +326,6 @@
 
 .method private drawDefaultImage(Landroid/graphics/Canvas;)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v9, 0x0
 
@@ -529,7 +517,6 @@
 
 .method private getDefaultBitmapImage(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     move-object v0, p1
 
@@ -557,8 +544,6 @@
 
 .method private initFromAttributest(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -795,7 +780,6 @@
 
 .method private makeBlurEffectIfNeeded(Landroid/graphics/drawable/Drawable;)I
     .locals 14
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/16 v13, 0xc
 
@@ -1052,7 +1036,6 @@
 # virtual methods
 .method public hasCompanyName(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/widget/ContactPhotoView;->mHasCompanyName:Z
 
@@ -1071,7 +1054,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v11, 0x0
 
@@ -1383,7 +1365,6 @@
 
 .method public setBlurEffectAlways(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/widget/ContactPhotoView;->mIsBlurEffectAlwaysOn:Z
 
@@ -1392,7 +1373,6 @@
 
 .method public setDefaultBackgroundColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/widget/ContactPhotoView;->mDefaultImageBackgroundColor:I
 
@@ -1401,7 +1381,6 @@
 
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -1418,7 +1397,6 @@
 
 .method public setImageCenter(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/widget/ContactPhotoView;->mIsSmailImageCenter:Z
 
@@ -1427,7 +1405,6 @@
 
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const-string v1, "ContactPhotoView"
 
@@ -1490,7 +1467,6 @@
 
 .method public setImageResource(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "ContactPhotoView"
 
@@ -1511,7 +1487,6 @@
 
 .method public setIsDefaultImage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/widget/ContactPhotoView;->mIsDefaultImage:Z
 
@@ -1520,7 +1495,6 @@
 
 .method public setTextAlphaBackgroundTop(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/widget/ContactPhotoView;->mTextAlphaBackgroundTop:I
 

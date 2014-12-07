@@ -139,7 +139,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -156,8 +155,6 @@
 # virtual methods
 .method protected bindPhoneNumber(Lcom/android/contacts/common/list/ContactListItemView;Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # Lcom/android/contacts/common/list/ContactListItemView;
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v3, 0x10
 
@@ -243,10 +240,6 @@
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -315,8 +308,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 1
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageAdapter;->configureUri(Landroid/content/CursorLoader;J)V
 
@@ -331,7 +322,6 @@
 
 .method protected configureProjection(Landroid/content/CursorLoader;)V
     .locals 1
-    .param p1    # Landroid/content/CursorLoader;
 
     sget-object v0, Lcom/samsung/contacts/emergency/InteractionEmergencyMessageAdapter;->PROJECTION_ICE:[Ljava/lang/String;
 
@@ -342,8 +332,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;J)V
     .locals 5
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     const-string v2, "ICE"
 

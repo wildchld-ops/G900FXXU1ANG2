@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Lorg/apache/http/HttpResponse;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -83,7 +82,6 @@
 # virtual methods
 .method public parse(Lorg/apache/http/HttpResponse;)Ljava/util/ArrayList;
     .locals 10
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -186,7 +184,6 @@
 
 .method public setCookies(Lorg/apache/http/HttpRequest;Ljava/util/ArrayList;)V
     .locals 8
-    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

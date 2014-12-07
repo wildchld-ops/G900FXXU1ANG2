@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/volley/toolbox/HttpStack;Lcom/google/android/finsky/remoting/RadioConnectionFactory;)V
     .locals 0
-    .param p2    # Lcom/google/android/finsky/remoting/RadioConnectionFactory;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",
@@ -57,7 +56,6 @@
 
 .method private ensureRouteToHost(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -89,7 +87,6 @@
 
 .method private fetchEntity(Lorg/apache/http/HttpResponse;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -210,7 +207,6 @@
 
 .method private throwExceptionIfError(Lorg/apache/http/HttpResponse;)V
     .locals 4
-    .param p1    # Lorg/apache/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

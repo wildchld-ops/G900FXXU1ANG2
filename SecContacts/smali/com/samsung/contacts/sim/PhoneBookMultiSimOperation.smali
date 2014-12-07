@@ -146,7 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/sim/PhoneBookSimOperation;-><init>(Landroid/content/Context;)V
 
@@ -333,9 +332,6 @@
 # virtual methods
 .method public copyAllNumberToSim(JII)I
     .locals 34
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     if-nez p3, :cond_1
 
@@ -1104,9 +1100,6 @@
 
 .method public copyToSim(JIZ)I
     .locals 36
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     if-nez p3, :cond_1
 
@@ -1971,7 +1964,6 @@
 
 .method public getAnrFieldCount(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2119,7 +2111,6 @@
 
 .method public getEmailLength(I)I
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -2222,7 +2213,6 @@
 
 .method public getEnableCount(I)I
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -2284,7 +2274,6 @@
 
 .method public getNameLength(I)I
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -2387,7 +2376,6 @@
 
 .method public getNumberLength(I)I
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -2927,8 +2915,6 @@
 
 .method public getSimStatus(Ljava/lang/String;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Lcom/samsung/contacts/sim/editor/EditSim;->getOperation()Lcom/samsung/contacts/sim/editor/EditSimOperation;
 
@@ -4828,7 +4814,6 @@
 
 .method public getSimType(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -5574,7 +5559,6 @@
 
 .method public isEmailFull(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5826,7 +5810,6 @@
 
 .method public isSimDBReady(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6024,7 +6007,6 @@
 
 .method public isSimEnabled(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x3
 
@@ -6433,8 +6415,6 @@
 
 .method public isSimEnabled(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x3
 
@@ -6847,7 +6827,6 @@
 
 .method public isSimFull(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 

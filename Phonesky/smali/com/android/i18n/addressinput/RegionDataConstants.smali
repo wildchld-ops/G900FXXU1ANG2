@@ -70,7 +70,6 @@
 
 .method static convertArrayToJsonString([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
 
     new-instance v1, Lorg/json/JSONObject;
 

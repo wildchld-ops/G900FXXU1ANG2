@@ -33,35 +33,24 @@
 # virtual methods
 .method public setAllMetadata(ILandroid/os/Bundle;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
 .method public setArtwork(ILandroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
 .method public setCommandToDisplay(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public setCurrentClientId(ILandroid/app/PendingIntent;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -105,26 +94,18 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setMetadata(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public setPlaybackState(IIJJF)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # F
 
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$2;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
@@ -157,9 +138,6 @@
 
 .method public setTransportControlInfo(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method

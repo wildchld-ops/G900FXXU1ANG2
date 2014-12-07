@@ -78,8 +78,6 @@
 
 .method public static getEmergencyContactData(Landroid/content/Context;J)Lcom/samsung/contacts/util/EmergencyContactsUtils$EmergencyContactData;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -182,8 +180,6 @@
 
 .method public static startPhoneCall(Landroid/content/Context;J)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-static {p0, p1, p2}, Lcom/samsung/contacts/util/EmergencyContactsUtils;->getEmergencyContactData(Landroid/content/Context;J)Lcom/samsung/contacts/util/EmergencyContactsUtils$EmergencyContactData;
 

@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApi;ZLcom/google/android/finsky/utils/DeviceConfigurationHelper$Listener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/DfeApi;
-    .param p2    # Z
-    .param p3    # Lcom/google/android/finsky/utils/DeviceConfigurationHelper$Listener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

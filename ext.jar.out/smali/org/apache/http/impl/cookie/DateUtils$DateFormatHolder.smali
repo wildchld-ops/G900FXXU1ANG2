@@ -55,7 +55,6 @@
 
 .method public static formatFor(Ljava/lang/String;)Ljava/text/SimpleDateFormat;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     sget-object v3, Lorg/apache/http/impl/cookie/DateUtils$DateFormatHolder;->THREADLOCAL_FORMATS:Ljava/lang/ThreadLocal;
 

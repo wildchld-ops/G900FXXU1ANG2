@@ -84,8 +84,6 @@
 # virtual methods
 .method public cpuSetOptions(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lorg/codeaurora/Performance;->native_cpu_setoptions(II)I
 
@@ -104,8 +102,6 @@
 
 .method public varargs perfLockAcquire(I[I)I
     .locals 2
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v0, 0x0
 

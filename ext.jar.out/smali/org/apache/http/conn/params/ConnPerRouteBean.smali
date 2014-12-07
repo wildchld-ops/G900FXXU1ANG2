@@ -39,7 +39,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method public getMaxForRoute(Lorg/apache/http/conn/routing/HttpRoute;)I
     .locals 3
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
 
     if-nez p1, :cond_0
 
@@ -104,7 +102,6 @@
 
 .method public setDefaultMaxPerRoute(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -126,8 +123,6 @@
 
 .method public setMaxForRoute(Lorg/apache/http/conn/routing/HttpRoute;I)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/routing/HttpRoute;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

@@ -112,8 +112,6 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -131,8 +129,6 @@
 
 .method public static fromId(II)Lcom/nuance/connect/internal/common/Document$DocumentType;
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Lcom/nuance/connect/internal/common/Document$DocumentType;->values()[Lcom/nuance/connect/internal/common/Document$DocumentType;
 
@@ -175,7 +171,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/nuance/connect/internal/common/Document$DocumentType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/nuance/connect/internal/common/Document$DocumentType;
 

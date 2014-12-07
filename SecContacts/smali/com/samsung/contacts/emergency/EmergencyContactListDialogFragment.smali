@@ -83,7 +83,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mActivity:Landroid/app/Activity;
 
@@ -92,7 +91,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;)Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment$EmergencyContactAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mEmergencyContactAdapter:Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment$EmergencyContactAdapter;
 
@@ -101,7 +99,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mEmergencyContactsCount:I
 
@@ -110,8 +107,6 @@
 
 .method static synthetic access$202(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mEmergencyContactsCount:I
 
@@ -120,7 +115,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mFavoritesCount:I
 
@@ -129,8 +123,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mFavoritesCount:I
 
@@ -139,7 +131,6 @@
 
 .method static synthetic access$400(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;)I
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
     iget v0, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mFrequentsCount:I
 
@@ -148,8 +139,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;I)I
     .locals 0
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mFrequentsCount:I
 
@@ -158,7 +147,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
     iget-object v0, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mEmergencyCallNumber:Ljava/lang/String;
 
@@ -312,7 +300,6 @@
 
 .method public static show(Landroid/app/FragmentManager;)V
     .locals 3
-    .param p0    # Landroid/app/FragmentManager;
 
     new-instance v1, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;
 
@@ -335,7 +322,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     const/4 v3, 0x0
 
@@ -441,7 +427,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -474,7 +459,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
 
@@ -492,9 +476,6 @@
 
 .method public onItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -568,7 +549,6 @@
 
 .method public setListener(Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment$Listener;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment$Listener;
 
     iput-object p1, p0, Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment;->mListener:Lcom/samsung/contacts/emergency/EmergencyContactListDialogFragment$Listener;
 

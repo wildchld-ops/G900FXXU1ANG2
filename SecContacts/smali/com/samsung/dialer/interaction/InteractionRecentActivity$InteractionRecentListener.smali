@@ -42,7 +42,6 @@
 
 .method public onInteractionDoneButtonStateUpdated(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/dialer/interaction/InteractionRecentActivity$InteractionRecentListener;->this$0:Lcom/samsung/dialer/interaction/InteractionRecentActivity;
 
@@ -53,8 +52,6 @@
 
 .method public onInteractionSelectionChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/dialer/interaction/InteractionRecentActivity$InteractionRecentListener;->this$0:Lcom/samsung/dialer/interaction/InteractionRecentActivity;
 
@@ -91,7 +88,6 @@
 
 .method public onRecentListAction(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -112,7 +108,6 @@
 
 .method public onSingleSelectionAction(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     return-void
 .end method

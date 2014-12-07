@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;J)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +37,6 @@
 # virtual methods
 .method public deliver(Landroid/content/Context;ZI)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # I
 
     iget-object v2, p0, Lcom/android/mms/transaction/MessagingNotification$MmsSmsDeliveryInfo;->mTicker:Ljava/lang/CharSequence;
 

@@ -72,7 +72,6 @@
 
 .method public static createIMSCallFailError(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const-string v1, "createIMSCallFailError"
 
@@ -107,7 +106,6 @@
 
 .method public static getDisconnectCauseAction_KTT(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -796,7 +794,6 @@
 
 .method public static getDisconnectCauseAction_LGT(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -1636,7 +1633,6 @@
 
 .method public static getDisconnectCauseAction_SKT(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -2420,7 +2416,6 @@
 
 .method private static getError(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     const-string v0, ""
 
@@ -2464,7 +2459,6 @@
 
 .method public static handleDisconnectCause(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-nez p0, :cond_0
 
@@ -2537,7 +2531,6 @@
 
 .method public static handlePSBaringEvent(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v12, 0x1
 
@@ -2960,7 +2953,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PSVTCallUtils"
 
@@ -2971,7 +2963,6 @@
 
 .method public static setIMSCallFailErrorBundle(Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Landroid/os/Bundle;
 
     sput-object p0, Lcom/android/incallui/vt/PSVTCallUtils;->mImsCallFailErrorBundle:Landroid/os/Bundle;
 
@@ -2980,7 +2971,6 @@
 
 .method public static setPSBarringEventReceived(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/incallui/vt/PSVTCallUtils;->mPSBarringEventReceived:Z
 

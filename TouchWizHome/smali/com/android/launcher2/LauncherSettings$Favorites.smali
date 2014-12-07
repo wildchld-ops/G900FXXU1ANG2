@@ -140,7 +140,6 @@
 
 .method static CONTENT_URI(Z)Landroid/net/Uri;
     .locals 2
-    .param p0    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -209,7 +208,6 @@
 
 .method static CONTENT_URI_NO_NOTIFICATION(Z)Landroid/net/Uri;
     .locals 2
-    .param p0    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -266,8 +264,6 @@
 
 .method static getContentUri(JZ)Landroid/net/Uri;
     .locals 2
-    .param p0    # J
-    .param p2    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -318,9 +314,6 @@
 
 .method static getContentUri(JZZ)Landroid/net/Uri;
     .locals 2
-    .param p0    # J
-    .param p2    # Z
-    .param p3    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 

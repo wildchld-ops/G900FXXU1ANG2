@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/KeyguardSimPinView;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/keyguard/KeyguardSimPinView$4;->this$0:Lcom/android/keyguard/KeyguardSimPinView;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method onSimCheckResponse(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x0
 

@@ -38,7 +38,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/contacts/widget/CustomCursorTreeAdapter;Landroid/database/Cursor;)V
     .locals 3
-    .param p2    # Landroid/database/Cursor;
 
     iput-object p1, p0, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;->this$0:Lcom/samsung/contacts/widget/CustomCursorTreeAdapter;
 
@@ -104,7 +103,6 @@
 
 .method static synthetic access$300(Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;
 
     iget-object v0, p0, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;->mCursor:Landroid/database/Cursor;
 
@@ -113,8 +111,6 @@
 
 .method static synthetic access$402(Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;->mDataValid:Z
 
@@ -125,8 +121,6 @@
 # virtual methods
 .method changeCursor(Landroid/database/Cursor;Z)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;->swapCursor(Landroid/database/Cursor;Z)Landroid/database/Cursor;
 
@@ -210,7 +204,6 @@
 
 .method getId(I)J
     .locals 3
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -266,7 +259,6 @@
 
 .method moveTo(I)Landroid/database/Cursor;
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;->mDataValid:Z
 
@@ -297,8 +289,6 @@
 
 .method swapCursor(Landroid/database/Cursor;Z)Landroid/database/Cursor;
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;->mCursor:Landroid/database/Cursor;
 

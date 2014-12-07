@@ -40,8 +40,6 @@
 
 .method private parseSetBtid(Lorg/w3c/dom/Element;Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;)V
     .locals 7
-    .param p1    # Lorg/w3c/dom/Element;
-    .param p2    # Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
 
     const-string v3, "btid"
 
@@ -103,8 +101,6 @@
 
 .method private parseSetLifetime(Lorg/w3c/dom/Element;Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;)V
     .locals 7
-    .param p1    # Lorg/w3c/dom/Element;
-    .param p2    # Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
 
     const-string v3, "lifetime"
 
@@ -168,8 +164,6 @@
 # virtual methods
 .method public parseFinalBsfRes(Lorg/apache/http/HttpResponse;Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;)V
     .locals 6
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/impl/client/secgbaclient/parser/HttpResponseXmlParser;->getDoc(Lorg/apache/http/HttpResponse;)Lorg/w3c/dom/Document;
 

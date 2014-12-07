@@ -56,23 +56,23 @@
         <item quantity="one">stea</item>
     </plurals>
     <plurals name="review_author_stars_title_comment">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s stele – %3$s – %4$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s stea – %3$s – %4$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s stele – %3$s – %4$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s stea – %3$s – %4$s</item>
     </plurals>
     <plurals name="review_author_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s stele – %3$s</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s stea – %3$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s stele – %3$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s stea – %3$s</item>
     </plurals>
     <plurals name="review_stars_title">
-        <item quantity="other">&amp;lt;b>%1$s stele&amp;lt;/b> %2$s</item>
-        <item quantity="one">&amp;lt;b>%1$s stea&amp;lt;/b> %2$s</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s stele&amp;amp;lt;/b> %2$s</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s stea&amp;amp;lt;/b> %2$s</item>
     </plurals>
     <plurals name="review_author_stars">
-        <item quantity="other">&amp;lt;b>%1$s&amp;lt;/b> %2$s stele</item>
-        <item quantity="one">&amp;lt;b>%1$s&amp;lt;/b> %2$s stea</item>
+        <item quantity="other">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s stele</item>
+        <item quantity="one">&amp;amp;lt;b>%1$s&amp;amp;lt;/b> %2$s stea</item>
     </plurals>
     <plurals name="review_just_stars">
-        <item quantity="other">A evaluat cu &amp;lt;b>%1$s stele&amp;lt;/b></item>
-        <item quantity="one">A evaluat cu &amp;lt;b>%1$s stea&amp;lt;/b></item>
+        <item quantity="other">A evaluat cu &amp;amp;lt;b>%1$s stele&amp;amp;lt;/b></item>
+        <item quantity="one">A evaluat cu &amp;amp;lt;b>%1$s stea&amp;amp;lt;/b></item>
     </plurals>
 </resources>

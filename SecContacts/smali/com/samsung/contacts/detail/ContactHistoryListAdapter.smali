@@ -82,8 +82,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -162,8 +160,6 @@
 
 .method private IsExistedSmsMms(JI)Z
     .locals 10
-    .param p1    # J
-    .param p3    # I
 
     const/16 v6, 0x12c
 
@@ -344,7 +340,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mIsDeleteMode:Z
 
@@ -353,7 +348,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mContext:Landroid/content/Context;
 
@@ -362,9 +356,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;ZJ)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
-    .param p1    # Z
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->verifySmsMms(ZJ)V
 
@@ -373,8 +364,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/contacts/detail/ContactHistoryListAdapter;J)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->verifyEmail(J)V
 
@@ -383,8 +372,6 @@
 
 .method private calcSection(JLandroid/database/Cursor;)V
     .locals 6
-    .param p1    # J
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -501,7 +488,6 @@
 
 .method private calcSection(Landroid/database/Cursor;)V
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v3, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mSections:Ljava/util/ArrayList;
 
@@ -569,9 +555,6 @@
 
 .method private findThreadId(Landroid/content/Context;ZJ)J
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # J
 
     const-wide/16 v8, -0x1
 
@@ -728,7 +711,6 @@
 
 .method private getFormatDuration(J)Ljava/lang/String;
     .locals 9
-    .param p1    # J
 
     const-wide/16 v1, 0x0
 
@@ -832,9 +814,6 @@
 
 .method private getHistoryHeaderView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -880,9 +859,6 @@
 
 .method private getHistoryItemView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v3, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mHistoryViewList:Ljava/util/ArrayList;
 
@@ -1008,7 +984,6 @@
 
 .method private newHeaderView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -1046,10 +1021,6 @@
 
 .method private setContentsText(ILjava/lang/String;Ljava/lang/String;Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     const/16 v1, 0x8
 
@@ -1212,12 +1183,6 @@
 
 .method private setContentsText(ILjava/lang/String;Ljava/lang/String;Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;ZZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
-    .param p5    # Z
-    .param p6    # Z
 
     const/4 v2, 0x0
 
@@ -1414,9 +1379,6 @@
 
 .method private setDurationText(Ljava/lang/String;ILcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -1489,8 +1451,6 @@
 
 .method private setHeaderView(ILcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;
 
     # getter for: Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;->headerViewTitle:Landroid/widget/TextView;
     invoke-static {p2}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;->access$1100(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryHeaderCache;)Landroid/widget/TextView;
@@ -1517,8 +1477,6 @@
 
 .method private setLogTypeText(ILcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -1636,9 +1594,6 @@
 
 .method private setNumber(Landroid/view/View;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -1716,10 +1671,6 @@
 
 .method private setNumberText(Landroid/view/View;Ljava/lang/String;Ljava/lang/String;Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     # getter for: Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->tNumber:Landroid/widget/TextView;
     invoke-static {p4}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;->access$700(Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)Landroid/widget/TextView;
@@ -1737,8 +1688,6 @@
 
 .method private setSendTypeIcon(ILcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1814,8 +1763,6 @@
 
 .method private setTimeText(Ljava/lang/String;Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/contacts/detail/ContactHistoryListAdapter$HistoryItemCache;
 
     if-eqz p1, :cond_0
 
@@ -1858,7 +1805,6 @@
 
 .method private verifyEmail(J)V
     .locals 12
-    .param p1    # J
 
     const/4 v5, 0x1
 
@@ -1986,8 +1932,6 @@
 
 .method private verifySmsMms(ZJ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # J
 
     iget-object v3, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mContext:Landroid/content/Context;
 
@@ -2082,9 +2026,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 26
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v4, 0x1
 
@@ -2370,7 +2311,6 @@
 
 .method getChechBox(I)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mCheckBoxList:Landroid/util/SparseArray;
 
@@ -2405,7 +2345,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mHistoryViewList:Ljava/util/ArrayList;
 
@@ -2418,7 +2357,6 @@
 
 .method public getItemViewType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mHistoryViewList:Ljava/util/ArrayList;
 
@@ -2437,9 +2375,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->getItemViewType(I)I
 
@@ -2489,7 +2424,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mHistoryViewList:Ljava/util/ArrayList;
 
@@ -2506,9 +2440,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -2662,7 +2593,6 @@
 
 .method public setFragment(Lcom/samsung/contacts/detail/ContactHistoryListFragment;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
     iput-object p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mFragment:Lcom/samsung/contacts/detail/ContactHistoryListFragment;
 
@@ -2671,7 +2601,6 @@
 
 .method setMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->mIsDeleteMode:Z
 
@@ -2697,7 +2626,6 @@
 
 .method public swapCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/ContactHistoryListAdapter;->calcSection(Landroid/database/Cursor;)V
 

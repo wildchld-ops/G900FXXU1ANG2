@@ -184,7 +184,6 @@
 
 .method private restartLoader(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -233,10 +232,6 @@
 # virtual methods
 .method doSplitContactAction(Landroid/net/Uri;JZLjava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/contacts/editor/SplitContactConfirmationDialogFragment;
 
@@ -291,7 +286,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -343,8 +337,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -386,9 +378,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -467,7 +456,6 @@
 
 .method public onJoinCompleted(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/LinkedContactFragment;->restartLoader(Landroid/net/Uri;)V
 
@@ -476,7 +464,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 2
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -548,8 +535,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -575,7 +560,6 @@
 
 .method public onSplitCompleted(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/detail/LinkedContactFragment;->restartLoader(Landroid/net/Uri;)V
 
@@ -635,8 +619,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/ListFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 

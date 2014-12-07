@@ -50,7 +50,6 @@
 
 .method static synthetic access$000(Lcom/samsung/contacts/speeddial/SpeedDialActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->mChecked:Z
 
@@ -59,8 +58,6 @@
 
 .method static synthetic access$002(Lcom/samsung/contacts/speeddial/SpeedDialActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->mChecked:Z
 
@@ -69,8 +66,6 @@
 
 .method static synthetic access$100(Lcom/samsung/contacts/speeddial/SpeedDialActivity;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialActivity;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->setDoNotShowAgainDialog(Landroid/content/Context;)V
 
@@ -79,7 +74,6 @@
 
 .method static synthetic access$200(Lcom/samsung/contacts/speeddial/SpeedDialActivity;)Z
     .locals 1
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialActivity;
 
     iget-boolean v0, p0, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->mIsFromDetail:Z
 
@@ -88,8 +82,6 @@
 
 .method static synthetic access$302(Lcom/samsung/contacts/speeddial/SpeedDialActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->mDisplaySpdInfo:Z
 
@@ -98,9 +90,6 @@
 
 .method static synthetic access$500(Lcom/samsung/contacts/speeddial/SpeedDialActivity;JLandroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/samsung/contacts/speeddial/SpeedDialActivity;
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->assignSpeedDial(JLandroid/net/Uri;)V
 
@@ -109,8 +98,6 @@
 
 .method private assignSpeedDial(JLandroid/net/Uri;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
 
     const-wide/16 v1, -0x1
 
@@ -200,8 +187,6 @@
 
 .method private customActivityResult(ILandroid/content/Intent;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     const/4 v0, -0x1
 
@@ -696,7 +681,6 @@
 
 .method private getDoNotShowAgainDialog(Landroid/content/Context;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -805,7 +789,6 @@
 
 .method private getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -816,7 +799,6 @@
 
 .method private setDoNotShowAgainDialog(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -843,7 +825,6 @@
 # virtual methods
 .method protected deleteSpdl(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/contacts/speeddial/SpeedDialActivity;->mSpdlFragment:Lcom/samsung/contacts/speeddial/SpeedDialListFragment;
@@ -892,7 +873,6 @@
 
 .method protected insertSpdl(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -964,9 +944,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, -0x1
 
@@ -1024,7 +1001,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x1e
 
@@ -1136,7 +1112,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1168,7 +1143,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -1240,7 +1214,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "spin_range"
 

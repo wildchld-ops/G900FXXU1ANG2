@@ -37,10 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/nuance/connect/service/ConnectClient;Lcom/nuance/connect/service/comm/CommandQueue$ConnectionStatus;Lcom/nuance/connect/service/comm/ConnectorCallback;Lcom/nuance/connect/service/comm/AnalyticsDataUsageScribe;)V
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/ConnectClient;
-    .param p2    # Lcom/nuance/connect/service/comm/CommandQueue$ConnectionStatus;
-    .param p3    # Lcom/nuance/connect/service/comm/ConnectorCallback;
-    .param p4    # Lcom/nuance/connect/service/comm/AnalyticsDataUsageScribe;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +85,6 @@
 
 .method static synthetic access$000(Lcom/nuance/connect/service/comm/HttpConnector;)Lcom/nuance/connect/util/Logger$Log;
     .locals 1
-    .param p0    # Lcom/nuance/connect/service/comm/HttpConnector;
 
     iget-object v0, p0, Lcom/nuance/connect/service/comm/HttpConnector;->log:Lcom/nuance/connect/util/Logger$Log;
 
@@ -98,8 +93,6 @@
 
 .method static synthetic access$102(Lcom/nuance/connect/service/comm/HttpConnector;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/nuance/connect/service/comm/HttpConnector;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nuance/connect/service/comm/HttpConnector;->serverURL:Ljava/lang/String;
 
@@ -125,7 +118,6 @@
 
 .method private commandToURL(Lcom/nuance/connect/service/comm/Command;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -162,7 +154,6 @@
 
 .method private connectToUrl(Lcom/nuance/connect/service/comm/Command;)Ljava/net/HttpURLConnection;
     .locals 12
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -281,7 +272,6 @@
 
 .method private generateBody(Lcom/nuance/connect/service/comm/Command;)Lorg/json/JSONObject;
     .locals 12
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -533,7 +523,6 @@
 
 .method private hasSufficientSpace(I)Z
     .locals 9
-    .param p1    # I
 
     new-instance v6, Landroid/os/StatFs;
 
@@ -582,8 +571,6 @@
 
 .method private processFileResult(Lcom/nuance/connect/service/comm/Command;Ljava/io/File;)V
     .locals 5
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # Ljava/io/File;
 
     new-instance v0, Lcom/nuance/connect/service/comm/Response;
 
@@ -668,8 +655,6 @@
 
 .method private processResult(Lcom/nuance/connect/service/comm/Command;Lorg/json/JSONObject;)Z
     .locals 18
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # Lorg/json/JSONObject;
 
     const/4 v8, 0x1
 
@@ -1387,9 +1372,6 @@
 
 .method public processCommand(Lcom/nuance/connect/service/comm/Command;Lcom/nuance/connect/service/comm/Transaction;Lcom/nuance/connect/service/comm/CommandQueue$NetworkExpirer;)Z
     .locals 56
-    .param p1    # Lcom/nuance/connect/service/comm/Command;
-    .param p2    # Lcom/nuance/connect/service/comm/Transaction;
-    .param p3    # Lcom/nuance/connect/service/comm/CommandQueue$NetworkExpirer;
 
     const/16 v31, 0x1
 

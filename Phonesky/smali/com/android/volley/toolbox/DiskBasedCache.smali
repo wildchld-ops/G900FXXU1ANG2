@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;I)V
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +67,6 @@
 
 .method private getFilenameForKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -124,7 +121,6 @@
 
 .method private pruneIfNeeded(I)V
     .locals 14
-    .param p1    # I
 
     iget-wide v9, p0, Lcom/android/volley/toolbox/DiskBasedCache;->mTotalSize:J
 
@@ -319,8 +315,6 @@
 
 .method private putEntry(Ljava/lang/String;Lcom/android/volley/toolbox/DiskBasedCache$CacheHeader;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/volley/toolbox/DiskBasedCache$CacheHeader;
 
     iget-object v1, p0, Lcom/android/volley/toolbox/DiskBasedCache;->mEntries:Ljava/util/Map;
 
@@ -371,7 +365,6 @@
 
 .method private static read(Ljava/io/InputStream;)I
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -398,7 +391,6 @@
 
 .method static readInt(Ljava/io/InputStream;)I
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -444,7 +436,6 @@
 
 .method static readLong(Ljava/io/InputStream;)J
     .locals 7
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -572,7 +563,6 @@
 
 .method static readString(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -600,7 +590,6 @@
 
 .method static readStringStringMap(Ljava/io/InputStream;)Ljava/util/Map;
     .locals 6
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -671,7 +660,6 @@
 
 .method private removeEntry(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/volley/toolbox/DiskBasedCache;->mEntries:Ljava/util/Map;
 
@@ -701,8 +689,6 @@
 
 .method private static streamToBytes(Ljava/io/InputStream;I)[B
     .locals 6
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -779,8 +765,6 @@
 
 .method static writeInt(Ljava/io/OutputStream;I)V
     .locals 1
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -816,8 +800,6 @@
 
 .method static writeLong(Ljava/io/OutputStream;J)V
     .locals 2
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -909,8 +891,6 @@
 
 .method static writeString(Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -940,7 +920,6 @@
 
 .method static writeStringStringMap(Ljava/util/Map;Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1082,7 +1061,6 @@
 
 .method public declared-synchronized get(Ljava/lang/String;)Lcom/android/volley/Cache$Entry;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1273,7 +1251,6 @@
 
 .method public getFileForKey(Ljava/lang/String;)Ljava/io/File;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -1485,8 +1462,6 @@
 
 .method public declared-synchronized invalidate(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -1527,8 +1502,6 @@
 
 .method public declared-synchronized put(Ljava/lang/String;Lcom/android/volley/Cache$Entry;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/volley/Cache$Entry;
 
     monitor-enter p0
 
@@ -1613,7 +1586,6 @@
 
 .method public declared-synchronized remove(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

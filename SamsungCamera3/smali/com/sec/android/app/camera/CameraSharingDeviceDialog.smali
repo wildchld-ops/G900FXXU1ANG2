@@ -53,7 +53,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/CameraSharingDeviceDialog;)[Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CameraSharingDeviceDialog;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraSharingDeviceDialog;->DeviceCheckStatus:[Z
 
@@ -64,7 +63,6 @@
 # virtual methods
 .method public loadBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
@@ -91,7 +89,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

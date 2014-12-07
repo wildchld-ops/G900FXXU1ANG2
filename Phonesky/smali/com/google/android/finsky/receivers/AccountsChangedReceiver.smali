@@ -14,7 +14,6 @@
 
 .method private restoreNewAccountApps(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -74,8 +73,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     sget-object v0, Lcom/google/android/finsky/utils/FinskyPreferences;->autoUpdateFirstTimeForAccounts:Lcom/google/android/finsky/config/PreferenceFile$SharedPreference;
 

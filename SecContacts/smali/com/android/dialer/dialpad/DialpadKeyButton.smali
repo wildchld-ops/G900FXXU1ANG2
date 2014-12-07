@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -40,9 +38,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -59,7 +54,6 @@
 
 .method private initForAccessibility(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "accessibility"
 
@@ -104,10 +98,6 @@
 # virtual methods
 .method public onSizeChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/FrameLayout;->onSizeChanged(IIII)V
 
@@ -152,8 +142,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v0, 0x10
 
@@ -176,7 +164,6 @@
 
 .method public setPressed(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setPressed(Z)V
 

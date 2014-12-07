@@ -1379,7 +1379,7 @@ Aynı zamanda geri tuşuna basarak ve basılı tutarak çoklu pencere işlecini 
     <string name="usb_tethering_errored_subtext">USB bağlanma hatası</string>
     <string name="usb_tethering_on_during_sidesync_popup">"SideSync kullanırken USB bağlanma devre dışı bırakılamıyor. USB bağlanmayı devre dışı bırakmak SideSync'i devre dışı bırakacaktır."</string>
     <string name="usb_tethering_off_during_sidesync_popup">"SideSync kullanırken USB bağlanma etkinleştirilemez. USB bağlanmayı etkinleştirmek SideSync'i devre dışı bırakacaktır."</string>
-    <string name="bluetooth_tether_checkbox_text"><b><p>Bluetooth bağlantısı</p></b></string>
+    <string name="bluetooth_tether_checkbox_text"><p><b>Bluetooth bağlantısı</b></p></string>
     <string name="bluetooth_tethering_available_subtext">Bu cihazın internet bağlantısı paylaşılıyor…</string>
     <string name="bluetooth_tethering_device_connected_subtext">Cihazın İnternet bağlantısı 1 cihazla paylaşıldı</string>
     <string name="bluetooth_tethering_devices_connected_subtext">Cihazın İnternet bağlantısı %d cihazla paylaşıldı</string>

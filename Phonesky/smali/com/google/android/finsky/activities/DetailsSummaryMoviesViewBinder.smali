@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/api/model/DfeToc;
-    .param p2    # Landroid/accounts/Account;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/activities/DetailsSummaryViewBinder;-><init>(Lcom/google/android/finsky/api/model/DfeToc;Landroid/accounts/Account;)V
 
@@ -18,11 +16,6 @@
 # virtual methods
 .method protected displayActionButtonsIfNecessary(Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;)Z
     .locals 1
-    .param p1    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p2    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p3    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p4    # Lcom/google/android/play/layout/PlayActionButton;
-    .param p5    # Lcom/google/android/play/layout/PlayActionButton;
 
     invoke-virtual/range {p0 .. p5}, Lcom/google/android/finsky/activities/DetailsSummaryMoviesViewBinder;->displayActionButtonsIfNecessaryNew(Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;Lcom/google/android/play/layout/PlayActionButton;)Z
 
@@ -33,8 +26,6 @@
 
 .method protected getDownloadClickListener(Lcom/google/android/finsky/api/model/Document;Landroid/accounts/Account;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Landroid/accounts/Account;
 
     new-instance v0, Lcom/google/android/finsky/activities/DetailsSummaryMoviesViewBinder$1;
 

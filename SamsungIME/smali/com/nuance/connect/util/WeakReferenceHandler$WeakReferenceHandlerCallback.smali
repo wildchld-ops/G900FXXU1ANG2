@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler$Callback;)V
     .locals 1
-    .param p1    # Landroid/os/Handler$Callback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +49,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/nuance/connect/util/WeakReferenceHandler$WeakReferenceHandlerCallback;->callbackRef:Ljava/lang/ref/WeakReference;
 

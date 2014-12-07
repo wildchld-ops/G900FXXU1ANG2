@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -37,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/ReviewReplyLayout;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/layout/ReviewReplyLayout;
 
     iget-boolean v0, p0, Lcom/google/android/finsky/layout/ReviewReplyLayout;->mIsExpanded:Z
 
@@ -46,8 +42,6 @@
 
 .method static synthetic access$002(Lcom/google/android/finsky/layout/ReviewReplyLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/ReviewReplyLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/finsky/layout/ReviewReplyLayout;->mIsExpanded:Z
 
@@ -56,7 +50,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/layout/ReviewReplyLayout;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/ReviewReplyLayout;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/ReviewReplyLayout;->showMoreIndicator()V
 
@@ -65,7 +58,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/layout/ReviewReplyLayout;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/ReviewReplyLayout;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/ReviewReplyLayout;->showLessIndicator()V
 
@@ -186,8 +178,6 @@
 
 .method public setReviewInfo(Lcom/google/android/finsky/api/model/Document;Lcom/google/android/finsky/protos/DocumentV2$Review;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/api/model/Document;
-    .param p2    # Lcom/google/android/finsky/protos/DocumentV2$Review;
 
     const/4 v7, 0x2
 

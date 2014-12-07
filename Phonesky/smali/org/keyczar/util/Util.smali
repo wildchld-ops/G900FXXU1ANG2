@@ -65,7 +65,6 @@
 
 .method public static varargs cat([[B)[B
     .locals 9
-    .param p0    # [[B
 
     const/4 v4, 0x0
 
@@ -124,7 +123,6 @@
 
 .method public static decodeBigInteger(Ljava/lang/String;)Ljava/math/BigInteger;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/Base64DecodingException;
@@ -144,7 +142,6 @@
 
 .method public static fromInt(I)[B
     .locals 2
-    .param p0    # I
 
     const/4 v1, 0x4
 
@@ -173,7 +170,6 @@
 
 .method public static varargs hash([[B)[B
     .locals 8
-    .param p0    # [[B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -240,7 +236,6 @@
 
 .method public static lenPrefix([B)[B
     .locals 2
-    .param p0    # [B
 
     if-eqz p0, :cond_0
 
@@ -286,7 +281,6 @@
 
 .method public static varargs prefixHash([[B)[B
     .locals 8
-    .param p0    # [[B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/keyczar/exceptions/KeyczarException;
@@ -361,7 +355,6 @@
 
 .method public static rand([B)V
     .locals 2
-    .param p0    # [B
 
     sget-object v1, Lorg/keyczar/util/Util;->RAND_QUEUE:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
@@ -389,7 +382,6 @@
 
 .method public static rand(I)[B
     .locals 1
-    .param p0    # I
 
     new-array v0, p0, [B
 
@@ -400,8 +392,6 @@
 
 .method static readInt([BI)I
     .locals 3
-    .param p0    # [B
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -448,8 +438,6 @@
 
 .method public static safeArrayEquals([B[B)Z
     .locals 6
-    .param p0    # [B
-    .param p1    # [B
 
     const/4 v2, 0x1
 
@@ -516,7 +504,6 @@
 
 .method public static stripLeadingZeros([B)[B
     .locals 4
-    .param p0    # [B
 
     const/4 v1, 0x0
 
@@ -559,7 +546,6 @@
 
 .method public static toInt([B)I
     .locals 1
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -572,9 +558,6 @@
 
 .method static writeInt(I[BI)V
     .locals 2
-    .param p0    # I
-    .param p1    # [B
-    .param p2    # I
 
     add-int/lit8 v0, p2, 0x1
 

@@ -16,9 +16,6 @@
 # virtual methods
 .method public setupContactPhoto(Landroid/content/Context;Lcom/android/contacts/model/Contact;Lcom/samsung/contacts/widget/ContactPhotoView;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/model/Contact;
-    .param p3    # Lcom/samsung/contacts/widget/ContactPhotoView;
 
     invoke-virtual {p2}, Lcom/android/contacts/model/Contact;->getId()J
 

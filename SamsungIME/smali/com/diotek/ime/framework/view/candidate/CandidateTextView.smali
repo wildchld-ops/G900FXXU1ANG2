@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -97,8 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -155,9 +152,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -281,7 +275,6 @@
 
 .method private isNotArabic(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -389,7 +382,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
@@ -696,10 +688,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -716,8 +704,6 @@
 
 .method public setAttribute(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/candidate/CandidateTextView;->mIsExpandView:Z
 
@@ -728,7 +714,6 @@
 
 .method public setHighlightColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/candidate/CandidateTextView;->mHighlightColor:I
 
@@ -737,7 +722,6 @@
 
 .method public setInputedTextColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/candidate/CandidateTextView;->mInputedTextColor:I
 
@@ -746,7 +730,6 @@
 
 .method public setPressedTextColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/candidate/CandidateTextView;->mPressedTextColor:I
 
@@ -755,10 +738,6 @@
 
 .method public setText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IZ)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # Z
 
     iput p3, p0, Lcom/diotek/ime/framework/view/candidate/CandidateTextView;->mIndex:I
 
@@ -775,7 +754,6 @@
 
 .method public setTextColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/candidate/CandidateTextView;->mTextColor:I
 
@@ -786,7 +764,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;)V
     .locals 0
-    .param p1    # Landroid/graphics/Typeface;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/candidate/CandidateTextView;->mTypeface:Landroid/graphics/Typeface;
 

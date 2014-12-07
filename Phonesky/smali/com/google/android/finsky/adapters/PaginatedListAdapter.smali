@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/finsky/navigationmanager/NavigationManager;ZZ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/google/android/finsky/navigationmanager/NavigationManager;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -80,7 +76,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/adapters/PaginatedListAdapter;)Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/adapters/PaginatedListAdapter;
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/PaginatedListAdapter;->mFooterMode:Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;
 
@@ -89,8 +84,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/adapters/PaginatedListAdapter;Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/adapters/PaginatedListAdapter;
-    .param p1    # Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/adapters/PaginatedListAdapter;->setFooterMode(Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;)V
 
@@ -99,7 +92,6 @@
 
 .method private setFooterMode(Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;
 
     iput-object p1, p0, Lcom/google/android/finsky/adapters/PaginatedListAdapter;->mFooterMode:Lcom/google/android/finsky/adapters/PaginatedListAdapter$FooterMode;
 
@@ -112,8 +104,6 @@
 # virtual methods
 .method protected getErrorFooterView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p1, :cond_0
 
@@ -154,7 +144,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -166,8 +155,6 @@
 
 .method protected getLoadingFooterView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p1, :cond_0
 
@@ -188,9 +175,6 @@
 
 .method protected inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/adapters/PaginatedListAdapter;->mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -203,7 +187,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

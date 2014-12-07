@@ -36,7 +36,6 @@
 # virtual methods
 .method public getAccount(Ljava/lang/String;)Landroid/accounts/Account;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/finsky/FinskyApp$2;->this$0:Lcom/google/android/finsky/FinskyApp;
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/contacts/common/list/AccountFilterActivity$FilterListAdapter$1;->val$view:Lcom/android/contacts/common/list/ContactListFilterView;
 

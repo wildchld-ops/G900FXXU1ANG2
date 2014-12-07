@@ -34,11 +34,6 @@
 
 .method public static addSEFData(Ljava/lang/String;Ljava/lang/String;[BII)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -61,12 +56,6 @@
 
 .method public static addSEFData(Ljava/lang/String;Ljava/lang/String;[B[BII)I
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x0
 
@@ -190,11 +179,6 @@
 
 .method public static addSEFDataFile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -217,12 +201,6 @@
 
 .method public static addSEFDataFile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BII)I
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x0
 
@@ -362,11 +340,6 @@
 
 .method public static addSEFDataFiles(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[II)I
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # I
 
     array-length v6, p1
 
@@ -543,7 +516,6 @@
 
 .method public static checkAudioInJPEG(Ljava/lang/String;)Lcom/sec/android/secvision/sef/SEF$QdioJPEGData;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -591,7 +563,6 @@
 
 .method public static clearQdioData(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -639,7 +610,6 @@
 
 .method public static clearSEFData(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -687,8 +657,6 @@
 
 .method public static copyAdioInJPEGtoPNG(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -770,8 +738,6 @@
 
 .method public static copyAllSEFData(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -853,8 +819,6 @@
 
 .method public static deleteQdioData(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -940,8 +904,6 @@
 
 .method public static deleteSEFData(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1027,8 +989,6 @@
 
 .method public static getAudioStreamBuffer(Lcom/sec/android/secvision/sef/SEF$QdioJPEGData;I)[B
     .locals 1
-    .param p0    # Lcom/sec/android/secvision/sef/SEF$QdioJPEGData;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1044,7 +1004,6 @@
 
 .method public static getMajorDataType(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -1207,8 +1166,6 @@
 
 .method public static getSEFData(Ljava/lang/String;Ljava/lang/String;)[B
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1440,7 +1397,6 @@
 
 .method public static getSEFDataCount(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -1488,8 +1444,6 @@
 
 .method public static getSEFDataPosition(Ljava/lang/String;Ljava/lang/String;)Lcom/sec/android/secvision/sef/SEF$SEFDataPosition;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1620,8 +1574,6 @@
 
 .method public static getSEFDataPositionArray(Ljava/lang/String;Ljava/lang/String;)[I
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1740,8 +1692,6 @@
 
 .method public static getSEFDataType(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -1851,8 +1801,6 @@
 
 .method public static hasDataType(Ljava/lang/String;I)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v4, -0x1
 
@@ -1991,7 +1939,6 @@
 
 .method public static isJPEG(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/sec/android/secvision/sef/QdioJNI;->isJPEG(Ljava/lang/String;)I
 
@@ -2002,7 +1949,6 @@
 
 .method public static isSEFFile(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -2059,7 +2005,6 @@
 
 .method public static listKeyNames(Ljava/lang/String;)[Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -2107,7 +2052,6 @@
 
 .method public static listSEFDataTypes(Ljava/lang/String;)[I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -2155,9 +2099,6 @@
 
 .method public static saveAudioJPEG(Ljava/lang/String;Ljava/lang/String;[B)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     if-eqz p0, :cond_0
 
@@ -2247,8 +2188,6 @@
 
 .method public static saveAudioJPEG(Ljava/lang/String;[B)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     const-string v0, "SoundShot_000"
 
@@ -2261,7 +2200,6 @@
 
 .method public static showSEFDataList(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 

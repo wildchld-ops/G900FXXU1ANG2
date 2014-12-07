@@ -33,8 +33,6 @@
 # virtual methods
 .method public onPackageUpdateFinished(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v7, "EnterpriseDeviceManagerService"
 

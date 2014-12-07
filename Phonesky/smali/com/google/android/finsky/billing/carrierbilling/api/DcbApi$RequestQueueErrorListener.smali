@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;Lcom/android/volley/Response$ErrorListener;)V
     .locals 0
-    .param p2    # Lcom/android/volley/Response$ErrorListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi$RequestQueueErrorListener;->this$0:Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;
 
@@ -41,7 +40,6 @@
 # virtual methods
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi$RequestQueueErrorListener;->this$0:Lcom/google/android/finsky/billing/carrierbilling/api/DcbApi;
 

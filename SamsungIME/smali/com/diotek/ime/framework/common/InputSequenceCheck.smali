@@ -5763,8 +5763,6 @@
 
 .method public static adjustKhmerPosition(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v0, 0x17d0
 
@@ -5786,8 +5784,6 @@
 
 .method public static adjustZawgyiPosition(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0x102f
 
@@ -5826,8 +5822,6 @@
 
 .method public static convertFrenchAccentedCharacter(Ljava/lang/String;I)I
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -5970,7 +5964,6 @@
 
 .method public static getFrenchAccentableAccentType(I)[Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x41
 
@@ -6039,8 +6032,6 @@
 
 .method private static getKey(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     shl-int/lit8 v0, p1, 0x10
 
@@ -6051,7 +6042,6 @@
 
 .method public static getKhmerCharType(I)I
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/diotek/ime/framework/common/InputSequenceCheck;->isKhmerUnicode(I)Z
 
@@ -6078,7 +6068,6 @@
 
 .method public static getLaoCharType(I)I
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/diotek/ime/framework/common/InputSequenceCheck;->isLaoUnicode(I)Z
 
@@ -6105,7 +6094,6 @@
 
 .method public static getThaiCharType(I)I
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/diotek/ime/framework/common/InputSequenceCheck;->isThaiUnicode(I)Z
 
@@ -6149,7 +6137,6 @@
 
 .method public static getVietnameseLeadingChar(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -6276,7 +6263,6 @@
 
 .method public static getZawgyiCharType(I)I
     .locals 2
-    .param p0    # I
 
     invoke-static {p0}, Lcom/diotek/ime/framework/common/InputSequenceCheck;->isZawgyiChar(I)Z
 
@@ -6301,8 +6287,6 @@
 
 .method public static inputStack(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/common/InputSequenceCheck;->mCharMap:Landroid/util/SparseArray;
 
@@ -6340,7 +6324,6 @@
 
 .method public static isFreanchAccentType(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -6376,8 +6359,6 @@
 
 .method public static isKhmerAcceptale(II)Z
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const/16 v5, 0x17bb
 
@@ -6462,8 +6443,6 @@
 
 .method public static isKhmerSubConsonant(II)Z
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -6511,7 +6490,6 @@
 
 .method public static isKhmerUnicode(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1780
 
@@ -6534,8 +6512,6 @@
 
 .method public static isLaoAcceptable(II)Z
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -6579,7 +6555,6 @@
 
 .method public static isLaoUnicode(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xe80
 
@@ -6602,8 +6577,6 @@
 
 .method public static isThaiAcceptable(II)Z
     .locals 7
-    .param p0    # I
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -6663,8 +6636,6 @@
 
 .method public static isThaiComposable(II)Z
     .locals 7
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -6712,7 +6683,6 @@
 
 .method public static isThaiUnicode(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xe01
 
@@ -6735,7 +6705,6 @@
 
 .method public static isVietUnicode(I)Z
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -6784,7 +6753,6 @@
 
 .method public static isVietameseTone(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -6812,7 +6780,6 @@
 
 .method public static isVietameseVowel(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -6844,8 +6811,6 @@
 
 .method public static isVietnameseAcceptable(II)Z
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -6877,9 +6842,6 @@
 
 .method public static isZawgyiAcceptable(III)Z
     .locals 10
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x3
 
@@ -6972,7 +6934,6 @@
 
 .method public static isZawgyiChar(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1000
 
@@ -6995,7 +6956,6 @@
 
 .method public static normalizedNFD(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, 0x1
 

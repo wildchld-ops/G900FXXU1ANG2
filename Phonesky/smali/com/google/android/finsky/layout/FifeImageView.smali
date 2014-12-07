@@ -81,7 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -92,8 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -104,9 +101,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -202,9 +196,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/layout/FifeImageView;Landroid/graphics/Bitmap;Z)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/layout/FifeImageView;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/FifeImageView;->loadFromCache(Landroid/graphics/Bitmap;Z)V
 
@@ -228,7 +219,6 @@
 
 .method private getFifeUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -419,7 +409,6 @@
 
 .method private getImageUrlToLoad(Lcom/google/android/finsky/protos/Doc$Image;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/google/android/finsky/protos/Doc$Image;
 
     if-nez p1, :cond_0
 
@@ -483,7 +472,6 @@
 
 .method private static isFinalBitmapLoaded(Landroid/graphics/Bitmap;)Z
     .locals 1
-    .param p0    # Landroid/graphics/Bitmap;
 
     if-eqz p0, :cond_0
 
@@ -500,8 +488,6 @@
 
 .method private loadFromCache(Landroid/graphics/Bitmap;Z)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/google/android/finsky/layout/FifeImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
@@ -584,7 +570,6 @@
 
 .method loadImageIfNecessary(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x0
 
@@ -765,7 +750,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x0
 
@@ -876,11 +860,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/ImageView;->onLayout(ZIIII)V
 
@@ -893,7 +872,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;)V
     .locals 4
-    .param p1    # Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
     const/4 v1, 0x0
 
@@ -987,7 +965,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/utils/BitmapLoader$BitmapContainer;
 
@@ -998,7 +975,6 @@
 
 .method public releaseLoading(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1024,7 +1000,6 @@
 
 .method public setBitmapTransformation(Lcom/google/android/finsky/utils/image/BitmapTransformation;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/utils/image/BitmapTransformation;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/FifeImageView;->mBitmapTransformation:Lcom/google/android/finsky/utils/image/BitmapTransformation;
 
@@ -1033,8 +1008,6 @@
 
 .method public setImage(Lcom/google/android/finsky/protos/Doc$Image;Lcom/google/android/finsky/utils/BitmapLoader;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/protos/Doc$Image;
-    .param p2    # Lcom/google/android/finsky/utils/BitmapLoader;
 
     const/4 v1, 0x0
 
@@ -1068,7 +1041,6 @@
 
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/FifeImageView;->blockLayoutIfPossible()V
 
@@ -1083,7 +1055,6 @@
 
 .method public setImageResource(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/FifeImageView;->blockLayoutIfPossible()V
 
@@ -1098,7 +1069,6 @@
 
 .method public setImageURI(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0}, Lcom/google/android/finsky/layout/FifeImageView;->blockLayoutIfPossible()V
 
@@ -1113,7 +1083,6 @@
 
 .method declared-synchronized setLoaded(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1154,7 +1123,6 @@
 
 .method public setMaxHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/FifeImageView;->mMaxHeight:I
 
@@ -1163,7 +1131,6 @@
 
 .method public setMaxWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/google/android/finsky/layout/FifeImageView;->mMaxWidth:I
 
@@ -1172,7 +1139,6 @@
 
 .method public setOnLoadedListener(Lcom/google/android/finsky/layout/FifeImageView$OnLoadedListener;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/layout/FifeImageView$OnLoadedListener;
 
     iput-object p1, p0, Lcom/google/android/finsky/layout/FifeImageView;->mOnLoadedListener:Lcom/google/android/finsky/layout/FifeImageView$OnLoadedListener;
 
@@ -1181,7 +1147,6 @@
 
 .method public setOverlay(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/google/android/finsky/layout/FifeImageView;->mOverlayDrawable:Landroid/graphics/drawable/Drawable;
 

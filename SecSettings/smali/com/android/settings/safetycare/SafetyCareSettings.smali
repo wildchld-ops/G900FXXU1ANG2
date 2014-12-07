@@ -76,7 +76,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/safetycare/SafetyCareSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareSettings;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareSettings;->EmerContact:Ljava/lang/String;
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/safetycare/SafetyCareSettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareSettings;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareSettings;->mAssistance:Landroid/preference/PreferenceScreen;
 
@@ -94,7 +92,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/safetycare/SafetyCareSettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareSettings;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareSettings;->mDisaster:Landroid/preference/PreferenceScreen;
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$300(Landroid/content/Context;)I
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/safetycare/SafetyCareSettings;->queryEmergencyContactSize(Landroid/content/Context;)I
 
@@ -114,7 +110,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/safetycare/SafetyCareSettings;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareSettings;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareSettings;->mCompleteHandler:Landroid/os/Handler;
 
@@ -139,7 +134,6 @@
 
 .method private static queryEmergencyContactSize(Landroid/content/Context;)I
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v10, 0x0
 
@@ -284,9 +278,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -312,7 +303,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -599,8 +589,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -627,7 +615,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -722,8 +709,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

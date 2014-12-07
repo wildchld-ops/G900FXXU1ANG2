@@ -275,8 +275,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -441,7 +439,6 @@
 # virtual methods
 .method public query(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -645,7 +642,6 @@
 
 .method public queryByLog(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 18
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -870,7 +866,6 @@
 
 .method protected queryByName(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 28
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1485,7 +1480,6 @@
 
 .method public queryByNumber(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 19
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1750,7 +1744,6 @@
 
 .method public queryBySpeedDial(Ljava/lang/String;)Lcom/samsung/dialer/dialpad/ContactItem;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/16 v6, 0x39
 
@@ -2037,7 +2030,6 @@
 
 .method public queryExtra(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

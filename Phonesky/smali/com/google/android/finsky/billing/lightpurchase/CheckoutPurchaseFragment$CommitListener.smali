@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;
-    .param p2    # Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment$CommitListener;-><init>(Lcom/google/android/finsky/billing/lightpurchase/CheckoutPurchaseFragment;)V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/Purchase$CommitPurchaseResponse;)V
     .locals 12
-    .param p1    # Lcom/google/android/finsky/protos/Purchase$CommitPurchaseResponse;
 
     const/4 v11, 0x5
 
@@ -288,7 +285,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/Purchase$CommitPurchaseResponse;
 

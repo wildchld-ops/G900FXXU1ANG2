@@ -50,7 +50,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/activities/GroupDetailActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mCustomActionBarView:Landroid/view/View;
 
@@ -59,7 +58,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/activities/GroupDetailActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/activities/GroupDetailActivity;->addMemberToGroup()V
 
@@ -68,8 +66,6 @@
 
 .method static synthetic access$202(Lcom/android/contacts/activities/GroupDetailActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mDeletedMemberCount:I
 
@@ -78,8 +74,6 @@
 
 .method static synthetic access$302(Lcom/android/contacts/activities/GroupDetailActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mIsDefaultIceIncluded:Z
 
@@ -88,8 +82,6 @@
 
 .method static synthetic access$402(Lcom/android/contacts/activities/GroupDetailActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mDefaultIceCount:I
 
@@ -98,7 +90,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/activities/GroupDetailActivity;)I
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
 
     iget v0, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mGroupType:I
 
@@ -107,7 +98,6 @@
 
 .method static synthetic access$600(Ljava/util/List;)[J
     .locals 1
-    .param p0    # Ljava/util/List;
 
     invoke-static {p0}, Lcom/android/contacts/activities/GroupDetailActivity;->convertToArray(Ljava/util/List;)[J
 
@@ -118,7 +108,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/activities/GroupDetailActivity;)Lcom/samsung/contacts/group/GroupInfo;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mGroupInfo:Lcom/samsung/contacts/group/GroupInfo;
 
@@ -127,7 +116,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/activities/GroupDetailActivity;)Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mFragment:Lcom/samsung/contacts/group/GroupMemberBrowseListFragment;
 
@@ -136,8 +124,6 @@
 
 .method static synthetic access$902(Lcom/android/contacts/activities/GroupDetailActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/GroupDetailActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mShowSelectMenu:Z
 
@@ -213,7 +199,6 @@
 
 .method private adjustActionBar(Lcom/samsung/contacts/group/GroupInfo;)V
     .locals 9
-    .param p1    # Lcom/samsung/contacts/group/GroupInfo;
 
     iget-object v3, p0, Lcom/android/contacts/activities/GroupDetailActivity;->mActionBar:Landroid/app/ActionBar;
 
@@ -390,8 +375,6 @@
 
 .method private updateTitle(Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x5
 
@@ -596,9 +579,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v1, -0x1
 
@@ -938,7 +918,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const-wide/16 v4, 0x0
 
@@ -1171,7 +1150,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1211,8 +1189,6 @@
 
 .method public onMenuOpened(ILandroid/view/Menu;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const-string v1, "input_method"
 
@@ -1253,7 +1229,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v6, 0x0
 
@@ -1538,7 +1513,6 @@
 
 .method public onOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -1551,7 +1525,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const/4 v6, 0x5
 
@@ -1708,7 +1681,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/contacts/ContactsActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

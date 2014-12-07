@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/dialer/impl/ViewByImpl$ViewByFetcher;)V
     .locals 2
-    .param p1    # Lcom/samsung/dialer/impl/ViewByImpl$ViewByFetcher;
 
     const/4 v1, 0x0
 
@@ -76,7 +75,6 @@
 
 .method static synthetic access$000(Lcom/samsung/dialer/impl/ViewByImpl;)Z
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/ViewByImpl;
 
     iget-boolean v0, p0, Lcom/samsung/dialer/impl/ViewByImpl;->mVoicemailSourcesAvailable:Z
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/samsung/dialer/impl/ViewByImpl;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/ViewByImpl;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/ViewByImpl;->viewbyItemsArray:[Ljava/lang/String;
 
@@ -94,8 +91,6 @@
 
 .method static synthetic access$102(Lcom/samsung/dialer/impl/ViewByImpl;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/dialer/impl/ViewByImpl;
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dialer/impl/ViewByImpl;->viewbyItemsArray:[Ljava/lang/String;
 
@@ -104,7 +99,6 @@
 
 .method static synthetic access$200(Lcom/samsung/dialer/impl/ViewByImpl;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/ViewByImpl;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/ViewByImpl;->mContext:Landroid/content/Context;
 
@@ -113,8 +107,6 @@
 
 .method static synthetic access$302(Lcom/samsung/dialer/impl/ViewByImpl;I)I
     .locals 0
-    .param p0    # Lcom/samsung/dialer/impl/ViewByImpl;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/impl/ViewByImpl;->MAX_LEN:I
 
@@ -123,7 +115,6 @@
 
 .method static synthetic access$400(Lcom/samsung/dialer/impl/ViewByImpl;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/samsung/dialer/impl/ViewByImpl;
 
     iget-object v0, p0, Lcom/samsung/dialer/impl/ViewByImpl;->sp:Landroid/widget/Spinner;
 
@@ -163,7 +154,6 @@
 
 .method public getViewBySpinner(Landroid/content/Context;)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/16 v6, 0xa
 
@@ -561,9 +551,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -642,7 +629,6 @@
 
 .method public setViewbyVariables(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/dialer/impl/ViewByImpl;->mContext:Landroid/content/Context;
 
@@ -651,7 +637,6 @@
 
 .method public setVoicemailSourcesAvailable(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/samsung/dialer/impl/ViewByImpl;->mVoicemailSourcesAvailable:Z
 
@@ -668,7 +653,6 @@
 
 .method public setWhichButton(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dialer/impl/ViewByImpl;->mWhichButton:I
 
@@ -688,8 +672,6 @@
 
 .method public viewByQueryTextBuilder(IJ)Ljava/lang/String;
     .locals 8
-    .param p1    # I
-    .param p2    # J
 
     const/16 v7, 0x96
 

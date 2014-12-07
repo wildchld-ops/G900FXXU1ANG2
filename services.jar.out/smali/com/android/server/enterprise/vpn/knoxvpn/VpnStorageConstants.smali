@@ -68,7 +68,6 @@
 
 .method public static getDbName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -92,7 +91,6 @@
 
 .method public static getDbVersion(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x2
 

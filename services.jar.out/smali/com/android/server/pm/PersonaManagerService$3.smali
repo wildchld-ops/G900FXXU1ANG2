@@ -37,7 +37,6 @@
 # virtual methods
 .method public userStopAborted(I)V
     .locals 1
-    .param p1    # I
 
     const-string/jumbo v0, "userStopAborted"
 
@@ -49,7 +48,6 @@
 
 .method public userStopped(I)V
     .locals 14
-    .param p1    # I
 
     const-string/jumbo v11, "userStopped"
 

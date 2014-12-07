@@ -75,8 +75,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/IPackageManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/IPackageManager;
 
     invoke-direct {p0}, Landroid/app/enterprise/license/IEnterpriseLicense$Stub;-><init>()V
 
@@ -115,7 +113,6 @@
 
 .method private deleteELMInfo(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -170,7 +167,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -183,7 +179,6 @@
 
 .method public static getPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 10
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -290,7 +285,6 @@
 
 .method private resetELMInfo(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -449,9 +443,6 @@
 # virtual methods
 .method public declared-synchronized activateKnoxLicense(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -697,9 +688,6 @@
 
 .method public declared-synchronized activateKnoxLicenseForUMC(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -900,9 +888,6 @@
 
 .method public declared-synchronized activateLicense(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 16
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1200,10 +1185,6 @@
 
 .method public declared-synchronized activateLicenseForUMC(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1408,9 +1389,6 @@
 
 .method public declared-synchronized deActivateKnoxLicense(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1664,9 +1642,6 @@
 
 .method public declared-synchronized deActivateKnoxLicenseForUMC(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1875,9 +1850,6 @@
 
 .method public deleteApiCallData(Ljava/lang/String;Ljava/lang/String;Landroid/app/enterprise/license/Error;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/license/Error;
 
     const/4 v5, 0x0
 
@@ -1976,7 +1948,6 @@
 
 .method public deleteLicense(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -2116,7 +2087,6 @@
 
 .method public deleteLicenseByAdmin(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -2390,7 +2360,6 @@
 
 .method public getApiCallData(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2489,8 +2458,6 @@
 
 .method public getApiCallDataByAdmin(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2540,7 +2507,6 @@
 
 .method public getELMLicenseKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -2600,7 +2566,6 @@
 
 .method public getELMPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2639,7 +2604,6 @@
 
 .method public getKLMLicenseKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -2699,7 +2663,6 @@
 
 .method public getKLMLicenseKeyForDeactivation(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -2759,7 +2722,6 @@
 
 .method public getLicenseInfo(Ljava/lang/String;)Landroid/app/enterprise/license/LicenseInfo;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -2904,7 +2866,6 @@
 
 .method public getRightsObject(Ljava/lang/String;)Landroid/app/enterprise/license/RightsObject;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -2976,8 +2937,6 @@
 
 .method public log(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/server/enterprise/license/LicenseLog;->log(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
 
@@ -2986,32 +2945,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public processKnoxLicenseResponse(Ljava/lang/String;Ljava/lang/String;Landroid/app/enterprise/license/Error;II)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/license/Error;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -3092,11 +3043,6 @@
 
 .method public processKnoxLicenseResponseForUMC(Ljava/lang/String;Ljava/lang/String;Landroid/app/enterprise/license/Error;II)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/license/Error;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -3187,13 +3133,6 @@
 
 .method public declared-synchronized processLicenseActivationResponse(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/enterprise/license/RightsObject;Landroid/app/enterprise/license/Error;Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/app/enterprise/license/RightsObject;
-    .param p6    # Landroid/app/enterprise/license/Error;
-    .param p7    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3637,13 +3576,6 @@
 
 .method public declared-synchronized processLicenseActivationResponseForUMC(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/app/enterprise/license/RightsObject;Landroid/app/enterprise/license/Error;Ljava/lang/String;)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/app/enterprise/license/RightsObject;
-    .param p6    # Landroid/app/enterprise/license/Error;
-    .param p7    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4355,11 +4287,6 @@
 
 .method public processLicenseValidationResult(Ljava/lang/String;Ljava/lang/String;Landroid/app/enterprise/license/RightsObject;Landroid/app/enterprise/license/Error;Ljava/lang/String;)Z
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/license/RightsObject;
-    .param p4    # Landroid/app/enterprise/license/Error;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 
@@ -5906,7 +5833,6 @@
 
 .method public resetLicense(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -6046,7 +5972,6 @@
 
 .method public resetLicenseByAdmin(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->enforcePermission()V
 

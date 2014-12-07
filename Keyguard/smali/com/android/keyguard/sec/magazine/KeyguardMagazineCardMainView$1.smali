@@ -36,7 +36,6 @@
 # virtual methods
 .method public cardAdded(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     iget-object v1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView$1;->this$0:Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
 
@@ -65,7 +64,6 @@
 
 .method public cardRemoved(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     iget-object v1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView$1;->this$0:Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
 
@@ -94,7 +92,6 @@
 
 .method public cardUpdated(Lcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     iget-object v1, p0, Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView$1;->this$0:Lcom/android/keyguard/sec/magazine/KeyguardMagazineCardMainView;
 

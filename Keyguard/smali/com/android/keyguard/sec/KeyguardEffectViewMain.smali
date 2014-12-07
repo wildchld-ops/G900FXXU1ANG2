@@ -109,7 +109,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -232,7 +231,6 @@
 
 .method static synthetic access$000(Lcom/android/keyguard/sec/KeyguardEffectViewMain;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->handleChangeWallpaperType()V
 
@@ -241,7 +239,6 @@
 
 .method static synthetic access$100(Lcom/android/keyguard/sec/KeyguardEffectViewMain;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->handleUpdateKeygaurdBackground()V
 
@@ -250,8 +247,6 @@
 
 .method static synthetic access$202(Lcom/android/keyguard/sec/KeyguardEffectViewMain;Z)Z
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewMain;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mUserSwitching:Z
 
@@ -260,7 +255,6 @@
 
 .method static synthetic access$300(Lcom/android/keyguard/sec/KeyguardEffectViewMain;)V
     .locals 0
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
     invoke-direct {p0}, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->setWallpaperFileObserver()V
 
@@ -269,7 +263,6 @@
 
 .method static synthetic access$400(Lcom/android/keyguard/sec/KeyguardEffectViewMain;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mHandler:Landroid/os/Handler;
 
@@ -278,7 +271,6 @@
 
 .method static synthetic access$500(Lcom/android/keyguard/sec/KeyguardEffectViewMain;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/keyguard/sec/KeyguardEffectViewMain;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mContext:Landroid/content/Context;
 
@@ -287,7 +279,6 @@
 
 .method private changeBackgroundViewVisibility(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x4
 
@@ -426,7 +417,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/keyguard/sec/KeyguardEffectViewMain;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "KeyguardEffectViewMain"
 
@@ -452,7 +442,6 @@
 
 .method public static getScaledBitmap(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -494,7 +483,6 @@
 
 .method public static getScaledBitmapDrawable(Landroid/content/Context;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -807,7 +795,6 @@
 
 .method public static isLockScreenEffect(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -851,7 +838,6 @@
 
 .method private makeBackground(Lcom/android/keyguard/sec/KeyguardEffectViewMain$Background;)V
     .locals 3
-    .param p1    # Lcom/android/keyguard/sec/KeyguardEffectViewMain$Background;
 
     const/4 v2, 0x0
 
@@ -1120,7 +1106,6 @@
 
 .method private makeForeground(Lcom/android/keyguard/sec/KeyguardEffectViewMain$Foreground;)V
     .locals 4
-    .param p1    # Lcom/android/keyguard/sec/KeyguardEffectViewMain$Foreground;
 
     const/4 v3, -0x1
 
@@ -1708,7 +1693,6 @@
 
 .method public getARGB8888Bitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v8, 0x0
 
@@ -1806,7 +1790,6 @@
 
 .method public getKeyguardHostView(Landroid/widget/FrameLayout;)V
     .locals 1
-    .param p1    # Landroid/widget/FrameLayout;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mKeyguardHostView:Landroid/widget/FrameLayout;
 
@@ -1841,8 +1824,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mUnlockEffectView:Lcom/android/keyguard/sec/KeyguardEffectViewBase;
 
@@ -1865,8 +1846,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mUnlockEffectView:Lcom/android/keyguard/sec/KeyguardEffectViewBase;
 
@@ -1889,8 +1868,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mUnlockEffectView:Lcom/android/keyguard/sec/KeyguardEffectViewBase;
 
@@ -1906,7 +1883,6 @@
 
 .method public handleUpdateKeyguardMusicBackground(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "KeyguardEffectViewMain"
 
@@ -2108,7 +2084,6 @@
 
 .method public setHidden(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "KeyguardEffectViewMain"
 
@@ -2358,7 +2333,6 @@
 
 .method public showGradation(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mContext:Landroid/content/Context;
 
@@ -2423,8 +2397,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardEffectViewMain;->mUnlockEffectView:Lcom/android/keyguard/sec/KeyguardEffectViewBase;
 

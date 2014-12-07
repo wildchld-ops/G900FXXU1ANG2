@@ -37,7 +37,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/common/list/ContactListAdapter;-><init>(Landroid/content/Context;)V
 
@@ -48,10 +47,6 @@
 # virtual methods
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -158,8 +153,6 @@
 
 .method public changeCursor(ILandroid/database/Cursor;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     invoke-virtual {p0, p1, p2}, Lcom/samsung/contacts/favorite/FavoriteSelectionAdapter;->FavoritechangeCursor(ILandroid/database/Cursor;)V
 
@@ -168,8 +161,6 @@
 
 .method public configureLoader(Landroid/content/CursorLoader;J)V
     .locals 6
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/samsung/contacts/favorite/FavoriteSelectionAdapter;->getFilter()Lcom/android/contacts/common/list/ContactListFilter;
 
@@ -316,9 +307,6 @@
 
 .method protected configureSelection(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 4
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     if-nez p4, :cond_1
 
@@ -387,9 +375,6 @@
 
 .method protected configureUri(Landroid/content/CursorLoader;JLcom/android/contacts/common/list/ContactListFilter;)V
     .locals 3
-    .param p1    # Landroid/content/CursorLoader;
-    .param p2    # J
-    .param p4    # Lcom/android/contacts/common/list/ContactListFilter;
 
     sget-object v0, Landroid/provider/ContactsContract$Contacts;->CONTENT_URI:Landroid/net/Uri;
 
@@ -438,7 +423,6 @@
 
 .method public getContactLookupKey(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/favorite/FavoriteSelectionAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -465,11 +449,6 @@
 
 .method protected getView(ILandroid/database/Cursor;ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/ViewGroup;
 
     if-eqz p4, :cond_0
 

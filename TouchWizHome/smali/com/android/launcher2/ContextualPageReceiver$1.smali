@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -28,7 +27,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     # getter for: Lcom/android/launcher2/ContextualPageReceiver;->mResolver:Landroid/content/ContentResolver;
     invoke-static {}, Lcom/android/launcher2/ContextualPageReceiver;->access$000()Landroid/content/ContentResolver;

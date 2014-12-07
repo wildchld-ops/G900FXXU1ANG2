@@ -396,10 +396,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -1065,7 +1061,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1074,7 +1069,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1083,7 +1077,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mDualAreaHandle:Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
@@ -1092,7 +1085,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1101,7 +1093,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1110,7 +1101,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mGlueAreaHandle:Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;
 
@@ -1119,7 +1109,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1128,7 +1117,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1137,7 +1125,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/glview/TwGLProgressBar;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mDualRearProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
@@ -1146,7 +1133,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;)Lcom/sec/android/glview/TwGLProgressBar;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mDualFrontProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
@@ -1582,7 +1568,6 @@
 
 .method private getRectIndex(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2959,7 +2944,6 @@
 # virtual methods
 .method public adjustRectMargin(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v2, 0x33
 
@@ -3896,8 +3880,6 @@
 
 .method public checkTrackingBoundary(FF)Z
     .locals 11
-    .param p1    # F
-    .param p2    # F
 
     const/4 v10, 0x3
 
@@ -4613,7 +4595,6 @@
 
 .method public decideEffectSize(I)F
     .locals 18
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -5183,8 +5164,6 @@
 
 .method public getMaxValue(FF)F
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-static {p1, p2}, Ljava/lang/Math;->max(FF)F
 
@@ -5195,8 +5174,6 @@
 
 .method public getMinValue(FF)F
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-static {p1, p2}, Ljava/lang/Math;->min(FF)F
 
@@ -5318,14 +5295,6 @@
 
 .method public isOutOfBoundary(FFFFFFFF)Z
     .locals 11
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     iget-object v9, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mGlueAreaHandle:Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;
 
@@ -5521,7 +5490,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v5, 0x33
 
@@ -5838,7 +5806,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mTrackingOffButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -5863,7 +5830,6 @@
 
 .method public onDragEnd(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mDragChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$onGLHandlerDragChangedListener;
 
@@ -5879,7 +5845,6 @@
 
 .method public onDragStart(Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mDragChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$onGLHandlerDragChangedListener;
 
@@ -6151,8 +6116,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -6373,11 +6336,6 @@
 
 .method public onMove(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 10
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -6751,14 +6709,6 @@
 
 .method public onQuadHandlerMove(FFFFFFFF)V
     .locals 18
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     move-object/from16 v0, p0
 
@@ -7194,7 +7144,6 @@
 
 .method public roundOrientation(I)I
     .locals 1
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x2d
 
@@ -7724,7 +7673,6 @@
 
 .method public setAlphaDualModeProgressbar(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
 
@@ -7774,7 +7722,6 @@
 
 .method public setEditableShortMenuShow(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mShowEditableShortMenu:Z
 
@@ -7790,7 +7737,6 @@
 
 .method public setEffect(I)V
     .locals 20
-    .param p1    # I
 
     const-string v2, "TwGLDualMenu"
 
@@ -10962,7 +10908,6 @@
 
 .method public setEffectMenuSelect(I)V
     .locals 23
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -15305,8 +15250,6 @@
 
 .method public setOrientationChanged(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -15584,7 +15527,6 @@
 
 .method public setPreviousPosition(I)V
     .locals 18
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->calulateCoordinateForNormalPreviewRatio()V
 
@@ -16212,7 +16154,6 @@
 
 .method public setResizeHandleDragVibration(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mDualAreaHandle:Lcom/sec/android/app/camera/glwidget/TwGLRectHandler;
 
@@ -16227,7 +16168,6 @@
 
 .method public setTrackingStart(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mTrackingStart:Z
 
@@ -16236,7 +16176,6 @@
 
 .method public setonGLHandlerChangedListener(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$onGLHandlerDragChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$onGLHandlerDragChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;->mDragChangedListener:Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$onGLHandlerDragChangedListener;
 

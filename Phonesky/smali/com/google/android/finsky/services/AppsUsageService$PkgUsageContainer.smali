@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/os/PkgUsageStats;JLcom/google/android/finsky/api/model/Document;)V
     .locals 0
-    .param p1    # Lcom/android/internal/os/PkgUsageStats;
-    .param p2    # J
-    .param p4    # Lcom/google/android/finsky/api/model/Document;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

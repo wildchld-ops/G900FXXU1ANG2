@@ -32,7 +32,6 @@
 
 .method private static getGoToMarketHomeIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -51,10 +50,6 @@
 
 .method protected static handleUrl(Landroid/content/Context;Landroid/content/Intent;Lcom/google/android/finsky/appstate/AppStates;Lcom/google/android/finsky/analytics/FinskyEventLog;)Landroid/content/Intent;
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Lcom/google/android/finsky/appstate/AppStates;
-    .param p3    # Lcom/google/android/finsky/analytics/FinskyEventLog;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -334,7 +329,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

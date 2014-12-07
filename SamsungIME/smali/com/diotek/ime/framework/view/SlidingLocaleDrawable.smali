@@ -78,12 +78,6 @@
 # direct methods
 .method public constructor <init>(IILandroid/graphics/Paint;III)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Paint;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v5, 0x1
 
@@ -767,7 +761,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v3, 0x0
 
@@ -1087,21 +1080,18 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method
 
 .method public setDiff(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1260,7 +1250,6 @@
 
 .method public setPreviewArrowPositionY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/SlidingLocaleDrawable;->mPreviewArrowPositionY:I
 
@@ -1269,7 +1258,6 @@
 
 .method public setPreviewBgImage(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v3, 0x0
 
@@ -1293,9 +1281,6 @@
 
 .method public setPreviewSpaceImage(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     const/4 v3, 0x0
 

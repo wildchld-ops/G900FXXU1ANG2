@@ -99,8 +99,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -291,7 +289,6 @@
 
 .method private createGlobalTable(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE global (_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT UNIQUE ON CONFLICT REPLACE,value TEXT);"
 
@@ -306,7 +303,6 @@
 
 .method private createSecureTable(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE secure (_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT UNIQUE ON CONFLICT REPLACE,value TEXT);"
 
@@ -519,10 +515,6 @@
 
 .method private getIntValueFromTable(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -2715,7 +2707,6 @@
 
 .method private hasApplication(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/providers/settings/DatabaseHelper;->mContext:Landroid/content/Context;
 
@@ -2809,8 +2800,6 @@
 
 .method public static isEnabledPkg(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3055,7 +3044,6 @@
 
 .method public static isValidTable(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/providers/settings/DatabaseHelper;->mValidTables:Ljava/util/HashSet;
 
@@ -3481,9 +3469,6 @@
 
 .method private loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteStatement;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/providers/settings/DatabaseHelper;->mContext:Landroid/content/Context;
 
@@ -3661,7 +3646,6 @@
 
 .method private loadEasyModeApps(Landroid/database/sqlite/SQLiteStatement;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteStatement;
 
     const/4 v2, 0x0
 
@@ -3800,10 +3784,6 @@
 
 .method private loadFractionSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteStatement;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/providers/settings/DatabaseHelper;->mContext:Landroid/content/Context;
 
@@ -4435,9 +4415,6 @@
 
 .method private loadIntegerSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteStatement;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/providers/settings/DatabaseHelper;->mContext:Landroid/content/Context;
 
@@ -5413,9 +5390,6 @@
 
 .method private loadSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteStatement;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v2, 0x2
 
@@ -5478,7 +5452,6 @@
 
 .method private loadSettings(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, p1}, Lcom/android/providers/settings/DatabaseHelper;->loadSystemSettings(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -5496,9 +5469,6 @@
 
 .method private loadStringSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteStatement;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/providers/settings/DatabaseHelper;->mContext:Landroid/content/Context;
 
@@ -5517,9 +5487,6 @@
 
 .method private loadStringSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteStatement;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/providers/settings/DatabaseHelper;->loadSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -14095,7 +14062,6 @@
 
 .method private upgradeAutoBrightness(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 7
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -14640,7 +14606,6 @@
 
 .method public SetRegionalDate_Update([Ljava/lang/String;)I
     .locals 12
-    .param p1    # [Ljava/lang/String;
 
     const/4 v5, 0x0
 

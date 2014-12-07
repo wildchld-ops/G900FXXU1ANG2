@@ -23,8 +23,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +35,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/android/volley/AndroidHttpClient$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Lcom/google/android/volley/AndroidHttpClient$1;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;-><init>(Ljava/lang/String;I)V
 
@@ -48,7 +43,6 @@
 
 .method static synthetic access$400(Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;)Z
     .locals 1
-    .param p0    # Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;
 
     invoke-direct {p0}, Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;->isLoggable()Z
 
@@ -59,8 +53,6 @@
 
 .method static synthetic access$600(Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;->println(Ljava/lang/String;)V
 
@@ -83,7 +75,6 @@
 
 .method private println(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/google/android/volley/AndroidHttpClient$LoggingConfiguration;->level:I
 

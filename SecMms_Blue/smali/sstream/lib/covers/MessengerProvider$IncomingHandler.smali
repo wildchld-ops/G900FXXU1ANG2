@@ -25,7 +25,6 @@
 
 .method private onFeedItemUpdate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v6, Lsstream/lib/covers/MessengerProvider;->userRequests:Ljava/util/Map;
 
@@ -150,7 +149,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     sget-object v1, Lsstream/lib/covers/MessengerProvider;->userRequests:Ljava/util/Map;
 

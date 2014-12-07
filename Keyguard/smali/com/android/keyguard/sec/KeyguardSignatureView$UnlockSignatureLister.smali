@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/keyguard/sec/KeyguardSignatureView;Lcom/android/keyguard/sec/KeyguardSignatureView$1;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/sec/KeyguardSignatureView;
-    .param p2    # Lcom/android/keyguard/sec/KeyguardSignatureView$1;
 
     invoke-direct {p0, p1}, Lcom/android/keyguard/sec/KeyguardSignatureView$UnlockSignatureLister;-><init>(Lcom/android/keyguard/sec/KeyguardSignatureView;)V
 
@@ -165,14 +163,12 @@
 
 .method public onAddSignFailed(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAddSignSucceeded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

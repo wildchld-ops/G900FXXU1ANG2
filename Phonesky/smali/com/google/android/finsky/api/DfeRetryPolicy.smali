@@ -12,10 +12,6 @@
 # direct methods
 .method public constructor <init>(IIFLcom/google/android/finsky/api/DfeApiContext;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # Lcom/google/android/finsky/api/DfeApiContext;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/volley/DefaultRetryPolicy;-><init>(IIF)V
 
@@ -26,7 +22,6 @@
 
 .method public constructor <init>(Lcom/google/android/finsky/api/DfeApiContext;)V
     .locals 3
-    .param p1    # Lcom/google/android/finsky/api/DfeApiContext;
 
     sget-object v0, Lcom/google/android/finsky/api/DfeApiConfig;->dfeRequestTimeoutMs:Lcom/google/android/finsky/config/GservicesValue;
 
@@ -75,7 +70,6 @@
 # virtual methods
 .method public retry(Lcom/android/volley/VolleyError;)V
     .locals 1
-    .param p1    # Lcom/android/volley/VolleyError;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/volley/VolleyError;

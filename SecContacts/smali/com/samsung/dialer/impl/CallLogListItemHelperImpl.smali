@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 0
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,9 +22,6 @@
 # virtual methods
 .method public configureButton(Landroid/content/Context;Lcom/android/dialer/calllog/CallLogListItemViews;Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/calllog/CallLogListItemViews;
-    .param p3    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
     const/4 v5, 0x0
 
@@ -110,9 +106,6 @@
 
 .method public setListItemInfo(Landroid/content/Context;Lcom/android/dialer/calllog/CallLogListItemViews;Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/dialer/calllog/CallLogListItemViews;
-    .param p3    # Lcom/samsung/dialer/impl/PhoneCallDetailsImpl;
 
     return-void
 .end method

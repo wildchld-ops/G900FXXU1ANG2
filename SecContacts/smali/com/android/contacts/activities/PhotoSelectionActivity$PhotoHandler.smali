@@ -29,10 +29,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/contacts/activities/PhotoSelectionActivity;Landroid/content/Context;Landroid/view/View;ILcom/android/contacts/model/RawContactDeltaList;)V
     .locals 6
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
-    .param p5    # Lcom/android/contacts/model/RawContactDeltaList;
 
     iput-object p1, p0, Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;->this$0:Lcom/android/contacts/activities/PhotoSelectionActivity;
 
@@ -66,12 +62,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/activities/PhotoSelectionActivity;Landroid/content/Context;Landroid/view/View;ILcom/android/contacts/model/RawContactDeltaList;Lcom/android/contacts/activities/PhotoSelectionActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/activities/PhotoSelectionActivity;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
-    .param p5    # Lcom/android/contacts/model/RawContactDeltaList;
-    .param p6    # Lcom/android/contacts/activities/PhotoSelectionActivity$1;
 
     invoke-direct/range {p0 .. p5}, Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;-><init>(Lcom/android/contacts/activities/PhotoSelectionActivity;Landroid/content/Context;Landroid/view/View;ILcom/android/contacts/model/RawContactDeltaList;)V
 
@@ -80,7 +70,6 @@
 
 .method static synthetic access$1700(Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;
 
     invoke-virtual {p0}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getWritableEntityId()J
 
@@ -91,7 +80,6 @@
 
 .method static synthetic access$1800(Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;
 
     iget-object v0, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mContext:Landroid/content/Context;
 
@@ -100,7 +88,6 @@
 
 .method static synthetic access$2000(Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;)J
     .locals 2
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;
 
     invoke-virtual {p0}, Lcom/android/contacts/detail/PhotoSelectionHandler;->getWritableEntityId()J
 
@@ -111,7 +98,6 @@
 
 .method static synthetic access$2100(Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;
 
     iget-object v0, p0, Lcom/android/contacts/detail/PhotoSelectionHandler;->mContext:Landroid/content/Context;
 
@@ -130,9 +116,6 @@
 
 .method protected startAvatarActivity(Landroid/content/Intent;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;->this$0:Lcom/android/contacts/activities/PhotoSelectionActivity;
 
@@ -155,9 +138,6 @@
 
 .method public startPhotoActivity(Landroid/content/Intent;ILandroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;->this$0:Lcom/android/contacts/activities/PhotoSelectionActivity;
 
@@ -180,9 +160,6 @@
 
 .method public startPhotoActivity(Landroid/content/Intent;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;->this$0:Lcom/android/contacts/activities/PhotoSelectionActivity;
 
@@ -205,8 +182,6 @@
 
 .method protected startSMemoActivity(Landroid/content/Intent;I)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;->this$0:Lcom/android/contacts/activities/PhotoSelectionActivity;
 
@@ -224,8 +199,6 @@
 
 .method protected startSNoteActivity(Landroid/content/Intent;I)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/contacts/activities/PhotoSelectionActivity$PhotoHandler;->this$0:Lcom/android/contacts/activities/PhotoSelectionActivity;
 

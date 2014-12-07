@@ -73,11 +73,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;Ljava/lang/String;Landroid/net/Uri;ZI)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,12 +134,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;Ljava/lang/String;Landroid/net/Uri;ZIZ)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -209,7 +198,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v4, 0x1
 
@@ -382,8 +370,6 @@
 
 .method private makeDataSet(Landroid/database/Cursor;Z)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -456,7 +442,6 @@
 
 .method private saveData(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     new-instance v0, Lcom/samsung/contacts/interactions/InteractionContactDatas$DataInfo;
 
@@ -554,7 +539,6 @@
 
 .method private saveDataType(Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
 
     const/16 v2, 0x9
 
@@ -656,7 +640,6 @@
 
 .method private setPrimaryContact(Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 
@@ -751,7 +734,6 @@
 
 .method public getDisplayNameByDisplayOrder(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -770,8 +752,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

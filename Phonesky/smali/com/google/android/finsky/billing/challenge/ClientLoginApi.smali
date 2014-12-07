@@ -100,7 +100,6 @@
 
 .method public constructor <init>(Lcom/android/volley/RequestQueue;)V
     .locals 0
-    .param p1    # Lcom/android/volley/RequestQueue;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -201,9 +200,6 @@
 # virtual methods
 .method public validateUser(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/finsky/billing/challenge/ClientLoginApi$ClientLoginListener;)Lcom/android/volley/Request;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/finsky/billing/challenge/ClientLoginApi$ClientLoginListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

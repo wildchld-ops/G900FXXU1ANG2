@@ -30,8 +30,6 @@
 # virtual methods
 .method public packageInstalled(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

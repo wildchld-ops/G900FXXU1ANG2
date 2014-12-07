@@ -123,7 +123,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/analytics/AnalyticsStreamWriter;)Z
     .locals 1
-    .param p0    # Lcom/google/android/finsky/analytics/AnalyticsStreamWriter;
 
     invoke-direct {p0}, Lcom/google/android/finsky/analytics/AnalyticsStreamWriter;->checkDebugWriterRunning()Z
 
@@ -134,7 +133,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/analytics/AnalyticsStreamWriter;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/analytics/AnalyticsStreamWriter;
 
     invoke-direct {p0}, Lcom/google/android/finsky/analytics/AnalyticsStreamWriter;->queueCommandWatcher()V
 
@@ -380,7 +378,6 @@
 
 .method private handleCommand(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -457,7 +454,6 @@
 
 .method private writeProtoBytes([B)V
     .locals 6
-    .param p1    # [B
 
     const/4 v2, 0x0
 
@@ -569,9 +565,6 @@
 # virtual methods
 .method public varargs writeEvent(Ljava/lang/String;[B[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [Ljava/lang/String;
 
     iget-boolean v6, p0, Lcom/google/android/finsky/analytics/AnalyticsStreamWriter;->mEnabled:Z
 

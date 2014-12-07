@@ -48,7 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder$2;->this$0:Lcom/google/android/finsky/activities/DetailsSummaryAppsViewBinder;
 

@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p1    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0, p1}, Lorg/apache/http/params/HttpAbstractParamBean;-><init>(Lorg/apache/http/params/HttpParams;)V
 
@@ -38,7 +37,6 @@
 
 .method public setSingleHeader(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lorg/apache/http/params/HttpAbstractParamBean;->params:Lorg/apache/http/params/HttpParams;
 

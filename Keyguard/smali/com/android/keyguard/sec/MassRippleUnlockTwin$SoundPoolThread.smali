@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/keyguard/sec/MassRippleUnlockTwin;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/keyguard/sec/MassRippleUnlockTwin$SoundPoolThread;->this$0:Lcom/android/keyguard/sec/MassRippleUnlockTwin;
 

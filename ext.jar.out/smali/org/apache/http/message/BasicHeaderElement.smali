@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -30,9 +28,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;[Lorg/apache/http/NameValuePair;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Lorg/apache/http/NameValuePair;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +82,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -166,7 +160,6 @@
 
 .method public getParameter(I)Lorg/apache/http/NameValuePair;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/http/message/BasicHeaderElement;->parameters:[Lorg/apache/http/NameValuePair;
 
@@ -177,7 +170,6 @@
 
 .method public getParameterByName(Ljava/lang/String;)Lorg/apache/http/NameValuePair;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public onResponse(Lcom/nuance/connect/service/comm/Response;)V
     .locals 1
-    .param p1    # Lcom/nuance/connect/service/comm/Response;
 
     iget-object v0, p0, Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction$1;->this$1:Lcom/nuance/connect/service/manager/CategoryManager$DownloadDatabaseTransaction;
 

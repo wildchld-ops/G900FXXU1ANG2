@@ -294,7 +294,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, -0x1
 
@@ -329,8 +328,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, -0x1
 
@@ -367,9 +364,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -406,7 +400,6 @@
 
 .method static synthetic access$000(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p0    # Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Landroid/view/ViewGroup;->notifyAnimationListener()V
 
@@ -415,7 +408,6 @@
 
 .method static synthetic access$100(Landroid/view/ViewGroup;)Landroid/view/animation/LayoutAnimationController;
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mLayoutAnimationController:Landroid/view/animation/LayoutAnimationController;
 
@@ -424,7 +416,6 @@
 
 .method static synthetic access$200(Landroid/view/ViewGroup;)Landroid/view/animation/Animation$AnimationListener;
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mAnimationListener:Landroid/view/animation/Animation$AnimationListener;
 
@@ -433,7 +424,6 @@
 
 .method static synthetic access$300(Landroid/view/ViewGroup;)Z
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
 
     iget-boolean v0, p0, Landroid/view/ViewGroup;->mLayoutCalledWhileSuppressed:Z
 
@@ -442,8 +432,6 @@
 
 .method static synthetic access$302(Landroid/view/ViewGroup;Z)Z
     .locals 0
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ViewGroup;->mLayoutCalledWhileSuppressed:Z
 
@@ -452,7 +440,6 @@
 
 .method static synthetic access$400(Landroid/view/ViewGroup;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mTransitioningViews:Ljava/util/ArrayList;
 
@@ -461,16 +448,6 @@
 
 .method static synthetic access$500(Landroid/graphics/Canvas;IIIIIIIILandroid/graphics/Paint;)V
     .locals 0
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Landroid/graphics/Paint;
 
     invoke-static/range {p0 .. p9}, Landroid/view/ViewGroup;->fillDifference(Landroid/graphics/Canvas;IIIIIIIILandroid/graphics/Paint;)V
 
@@ -479,7 +456,6 @@
 
 .method private addDisappearingView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mDisappearingChildren:Ljava/util/ArrayList;
 
@@ -499,8 +475,6 @@
 
 .method private addInArray(Landroid/view/View;I)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -632,8 +606,6 @@
 
 .method private addTouchTarget(Landroid/view/View;I)Landroid/view/ViewGroup$TouchTarget;
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/view/ViewGroup$TouchTarget;->obtain(Landroid/view/View;I)Landroid/view/ViewGroup$TouchTarget;
 
@@ -650,10 +622,6 @@
 
 .method private addViewInner(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;Z)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
-    .param p4    # Z
 
     const/4 v5, 0x1
 
@@ -836,7 +804,6 @@
 
 .method private bindLayoutAnimation(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/view/ViewGroup;->mLayoutAnimationController:Landroid/view/animation/LayoutAnimationController;
 
@@ -851,7 +818,6 @@
 
 .method private static canViewReceivePointerEvents(Landroid/view/View;)Z
     .locals 3
-    .param p0    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -888,7 +854,6 @@
 
 .method private cancelAndClearTouchTargets(Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x0
 
@@ -957,7 +922,6 @@
 
 .method private cancelHoverTarget(Landroid/view/View;)V
     .locals 12
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -1023,7 +987,6 @@
 
 .method private cancelTouchTarget(Landroid/view/View;)V
     .locals 12
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -1161,7 +1124,6 @@
 
 .method private dipsToPixels(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1192,8 +1154,6 @@
 
 .method private dispatchTransformedGenericPointerEvent(Landroid/view/MotionEvent;Landroid/view/View;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/View;
 
     iget v4, p0, Landroid/view/View;->mScrollX:I
 
@@ -1256,10 +1216,6 @@
 
 .method private dispatchTransformedTouchEvent(Landroid/view/MotionEvent;ZLandroid/view/View;I)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
-    .param p3    # Landroid/view/View;
-    .param p4    # I
 
     const/4 v7, 0x3
 
@@ -1422,13 +1378,6 @@
 
 .method private static drawCorner(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIII)V
     .locals 6
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     add-int v4, p2, p4
 
@@ -1475,12 +1424,6 @@
 
 .method private static drawRect(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIII)V
     .locals 3
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sget-object v0, Landroid/view/ViewGroup;->sDebugLines:[F
 
@@ -1630,14 +1573,6 @@
 
 .method private static drawRectCorners(Landroid/graphics/Canvas;IIIILandroid/graphics/Paint;II)V
     .locals 7
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Paint;
-    .param p6    # I
-    .param p7    # I
 
     move-object v0, p0
 
@@ -1750,16 +1685,6 @@
 
 .method private static fillDifference(Landroid/graphics/Canvas;IIIIIIIILandroid/graphics/Paint;)V
     .locals 12
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Landroid/graphics/Paint;
 
     sub-int v2, p1, p5
 
@@ -1824,12 +1749,6 @@
 
 .method private static fillRect(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIII)V
     .locals 7
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     if-eq p2, p4, :cond_2
 
@@ -1873,9 +1792,6 @@
 
 .method public static getChildMeasureSpec(III)I
     .locals 9
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, -0x1
 
@@ -2048,7 +1964,6 @@
 
 .method private getTouchTarget(Landroid/view/View;)Landroid/view/ViewGroup$TouchTarget;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mFirstTouchTarget:Landroid/view/ViewGroup$TouchTarget;
 
@@ -2075,7 +1990,6 @@
 
 .method private hasBooleanFlag(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/ViewGroup;->mGroupFlags:I
 
@@ -2096,8 +2010,6 @@
 
 .method private initFromAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v10, -0x1
 
@@ -2420,7 +2332,6 @@
 
 .method private static obtainMotionEventNoHistoryOrSelf(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 1
-    .param p0    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getHistorySize()I
 
@@ -2441,7 +2352,6 @@
 
 .method private removeFromArray(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2548,8 +2458,6 @@
 
 .method private removeFromArray(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -2638,7 +2546,6 @@
 
 .method private removePointersFromTouchTargets(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2696,8 +2603,6 @@
 
 .method private removeViewInternal(ILandroid/view/View;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -2816,7 +2721,6 @@
 
 .method private removeViewInternal(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -2832,8 +2736,6 @@
 
 .method private removeViewsInternal(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -2961,7 +2863,6 @@
 
 .method private static resetCancelNextUpFlag(Landroid/view/View;)Z
     .locals 3
-    .param p0    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -3013,8 +2914,6 @@
 
 .method private setBooleanFlag(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -3041,8 +2940,6 @@
 
 .method private setLayoutMode(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iput p1, p0, Landroid/view/ViewGroup;->mLayoutMode:I
 
@@ -3055,7 +2952,6 @@
 
 .method private static sign(I)I
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -3146,8 +3042,6 @@
 
 .method public addFocusables(Ljava/util/ArrayList;II)V
     .locals 7
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3276,7 +3170,6 @@
 
 .method public addView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, -0x1
 
@@ -3287,8 +3180,6 @@
 
 .method public addView(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -3318,9 +3209,6 @@
 
 .method public addView(Landroid/view/View;II)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -3339,9 +3227,6 @@
 
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
@@ -3358,8 +3243,6 @@
 
 .method public addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v0, -0x1
 
@@ -3370,9 +3253,6 @@
 
 .method protected addViewInLayout(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v0, 0x0
 
@@ -3385,10 +3265,6 @@
 
 .method protected addViewInLayout(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;Z)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -3413,10 +3289,6 @@
 
 .method protected attachLayoutAnimationParameters(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;II)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p2, Landroid/view/ViewGroup$LayoutParams;->layoutAnimationParameters:Landroid/view/animation/LayoutAnimationController$AnimationParameters;
 
@@ -3438,9 +3310,6 @@
 
 .method protected attachViewToParent(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     const/high16 v2, -0x80000000
 
@@ -3495,7 +3364,6 @@
 
 .method public bringChildToFront(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -3539,7 +3407,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     if-eqz p1, :cond_0
 
@@ -3556,7 +3423,6 @@
 
 .method public childDrawableStateChanged(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget v0, p0, Landroid/view/ViewGroup;->mGroupFlags:I
 
@@ -3572,8 +3438,6 @@
 
 .method public childHasTransientStateChanged(Landroid/view/View;Z)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->hasTransientState()Z
 
@@ -3658,7 +3522,6 @@
 
 .method protected cleanupLayoutState(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget v0, p1, Landroid/view/View;->mPrivateFlags:I
 
@@ -3671,7 +3534,6 @@
 
 .method public clearChildFocus(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -3813,9 +3675,6 @@
 
 .method createSnapshot(Landroid/graphics/Bitmap$Config;IZ)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap$Config;
-    .param p2    # I
-    .param p3    # Z
 
     iget v2, p0, Landroid/view/ViewGroup;->mChildrenCount:I
 
@@ -3883,7 +3742,6 @@
 
 .method protected debug(I)V
     .locals 6
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->debug(I)V
 
@@ -4040,7 +3898,6 @@
 
 .method protected detachViewFromParent(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;->removeFromArray(I)V
 
@@ -4049,7 +3906,6 @@
 
 .method protected detachViewFromParent(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -4062,8 +3918,6 @@
 
 .method protected detachViewsFromParent(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;->removeFromArray(II)V
 
@@ -4072,8 +3926,6 @@
 
 .method dispatchAttachedToWindow(Landroid/view/View$AttachInfo;I)V
     .locals 6
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # I
 
     iget v4, p0, Landroid/view/ViewGroup;->mGroupFlags:I
 
@@ -4153,8 +4005,6 @@
 
 .method dispatchCollectViewAttributes(Landroid/view/View$AttachInfo;I)V
     .locals 5
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # I
 
     and-int/lit8 v4, p2, 0xc
 
@@ -4191,7 +4041,6 @@
 
 .method public dispatchConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -4272,7 +4121,6 @@
 
 .method public dispatchDisplayHint(I)V
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchDisplayHint(I)V
 
@@ -4299,7 +4147,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 19
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v11, 0x0
 
@@ -4842,7 +4689,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 27
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -5513,7 +5359,6 @@
 
 .method protected dispatchGenericFocusedEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -5561,7 +5406,6 @@
 
 .method protected dispatchGenericPointerEvent(Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v3, p0, Landroid/view/ViewGroup;->mChildrenCount:I
 
@@ -5754,7 +5598,6 @@
 
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 24
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -6251,7 +6094,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -6322,7 +6164,6 @@
 
 .method public dispatchKeyEventPreIme(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -6370,7 +6211,6 @@
 
 .method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -6418,7 +6258,6 @@
 
 .method dispatchPopulateAccessibilityEventInternal(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v3, 0x0
 
@@ -6590,7 +6429,6 @@
 
 .method dispatchScreenStateChanged(I)V
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchScreenStateChanged(I)V
 
@@ -6617,7 +6455,6 @@
 
 .method public dispatchSetActivated(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mChildren:[Landroid/view/View;
 
@@ -6642,7 +6479,6 @@
 
 .method protected dispatchSetPressed(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewGroup;->mChildren:[Landroid/view/View;
 
@@ -6683,7 +6519,6 @@
 
 .method public dispatchSetSelected(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mChildren:[Landroid/view/View;
 
@@ -6734,7 +6569,6 @@
 
 .method public dispatchSystemUiVisibilityChanged(I)V
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchSystemUiVisibilityChanged(I)V
 
@@ -6778,7 +6612,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 41
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -8212,7 +8045,6 @@
 
 .method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -8283,8 +8115,6 @@
 
 .method public dispatchUnhandledMove(Landroid/view/View;I)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mFocused:Landroid/view/View;
 
@@ -8311,8 +8141,6 @@
 
 .method protected dispatchVisibilityChanged(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->dispatchVisibilityChanged(Landroid/view/View;I)V
 
@@ -8339,7 +8167,6 @@
 
 .method public dispatchWindowFocusChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchWindowFocusChanged(Z)V
 
@@ -8366,7 +8193,6 @@
 
 .method public dispatchWindowSystemUiVisiblityChanged(I)V
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchWindowSystemUiVisiblityChanged(I)V
 
@@ -8393,7 +8219,6 @@
 
 .method public dispatchWindowVisibilityChanged(I)V
     .locals 4
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchWindowVisibilityChanged(I)V
 
@@ -8420,9 +8245,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # J
 
     invoke-virtual {p2, p1, p0, p3, p4}, Landroid/view/View;->draw(Landroid/graphics/Canvas;Landroid/view/ViewGroup;J)Z
 
@@ -8491,7 +8313,6 @@
 
 .method public endViewTransition(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/view/ViewGroup;->mTransitioningViews:Ljava/util/ArrayList;
 
@@ -8588,9 +8409,6 @@
 
 .method findFrontmostDroppableChildAt(FFLandroid/graphics/PointF;)Landroid/view/View;
     .locals 5
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/graphics/PointF;
 
     iget v2, p0, Landroid/view/ViewGroup;->mChildrenCount:I
 
@@ -8632,7 +8450,6 @@
 
 .method public findViewByAccessibilityIdTraversal(I)Landroid/view/View;
     .locals 6
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->findViewByAccessibilityIdTraversal(I)Landroid/view/View;
 
@@ -8680,7 +8497,6 @@
 
 .method protected findViewByPredicateTraversal(Lcom/android/internal/util/Predicate;Landroid/view/View;)Landroid/view/View;
     .locals 5
-    .param p2    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8746,7 +8562,6 @@
 
 .method protected findViewTraversal(I)Landroid/view/View;
     .locals 5
-    .param p1    # I
 
     iget v4, p0, Landroid/view/View;->mID:I
 
@@ -8796,7 +8611,6 @@
 
 .method protected findViewWithTagTraversal(Ljava/lang/Object;)Landroid/view/View;
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -8852,8 +8666,6 @@
 
 .method public findViewsWithText(Ljava/util/ArrayList;Ljava/lang/CharSequence;I)V
     .locals 5
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8904,8 +8716,6 @@
 
 .method finishAnimatingView(Landroid/view/View;Landroid/view/animation/Animation;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/animation/Animation;
 
     const/high16 v2, 0x10000
 
@@ -8976,7 +8786,6 @@
 
 .method protected fitSystemWindows(Landroid/graphics/Rect;)Z
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1}, Landroid/view/View;->fitSystemWindows(Landroid/graphics/Rect;)Z
 
@@ -9012,8 +8821,6 @@
 
 .method public focusSearch(Landroid/view/View;I)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->isRootNamespace()Z
 
@@ -9053,7 +8860,6 @@
 
 .method public focusableViewAvailable(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
@@ -9092,7 +8898,6 @@
 
 .method public gatherTransparentRegion(Landroid/graphics/Region;)Z
     .locals 9
-    .param p1    # Landroid/graphics/Region;
 
     const/4 v6, 0x0
 
@@ -9189,7 +8994,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/view/ViewGroup$LayoutParams;
 
@@ -9204,14 +9008,12 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     return-object p1
 .end method
 
 .method public getChildAt(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -9243,16 +9045,12 @@
 
 .method protected getChildDrawingOrder(II)I
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return p2
 .end method
 
 .method protected getChildStaticTransformation(Landroid/view/View;Landroid/view/animation/Transformation;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/animation/Transformation;
 
     const/4 v0, 0x0
 
@@ -9280,9 +9078,6 @@
 
 .method public getChildVisibleRect(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Point;
 
     const/4 v10, 0x0
 
@@ -9579,7 +9374,6 @@
 
 .method public getHoverPopupWindow(I)Landroid/widget/HoverPopupWindow;
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -9812,8 +9606,6 @@
 
 .method handleFocusGainInternal(ILandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mFocused:Landroid/view/View;
 
@@ -9967,7 +9759,6 @@
 
 .method public indexOfChild(Landroid/view/View;)I
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget v1, p0, Landroid/view/ViewGroup;->mChildrenCount:I
 
@@ -9998,10 +9789,6 @@
 
 .method protected internalSetPadding(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->internalSetPadding(IIII)V
 
@@ -10042,8 +9829,6 @@
 
 .method public final invalidateChild(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 23
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     move-object/from16 v13, p0
 
@@ -10567,8 +10352,6 @@
 
 .method public invalidateChildFast(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     move-object v3, p0
 
@@ -10655,8 +10438,6 @@
 
 .method public invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 8
-    .param p1    # [I
-    .param p2    # Landroid/graphics/Rect;
 
     const v4, 0x8000
 
@@ -10865,9 +10646,6 @@
 
 .method protected invalidateChildInParentFast(IILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     const v2, 0x8000
 
@@ -10979,7 +10757,6 @@
 
 .method invalidateInheritedLayoutMode(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -11176,10 +10953,6 @@
 
 .method protected isTransformedTouchPointInView(FFLandroid/view/View;Landroid/graphics/PointF;)Z
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/PointF;
 
     const/4 v7, 0x1
 
@@ -11262,7 +11035,6 @@
 
 .method isViewTransitioning(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mTransitioningViews:Ljava/util/ArrayList;
 
@@ -11315,10 +11087,6 @@
 
 .method public final layout(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-boolean v0, p0, Landroid/view/ViewGroup;->mSuppressLayout:Z
 
@@ -11387,9 +11155,6 @@
 
 .method protected measureChild(Landroid/view/View;II)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -11435,11 +11200,6 @@
 
 .method protected measureChildWithMargins(Landroid/view/View;IIII)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -11507,8 +11267,6 @@
 
 .method protected measureChildren(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget v3, p0, Landroid/view/ViewGroup;->mChildrenCount:I
 
@@ -11542,7 +11300,6 @@
 
 .method notifyChildOfDrag(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -11586,9 +11343,6 @@
 
 .method public notifySubtreeAccessibilityStateChanged(Landroid/view/View;Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getAccessibilityLiveRegion()I
 
@@ -11656,7 +11410,6 @@
 
 .method public offsetChildrenTopAndBottom(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -11713,8 +11466,6 @@
 
 .method public final offsetDescendantRectToMyCoords(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x1
 
@@ -11727,10 +11478,6 @@
 
 .method offsetRectBetweenParentAndChild(Landroid/view/View;Landroid/graphics/Rect;ZZ)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -11885,8 +11632,6 @@
 
 .method public final offsetRectIntoDescendantCoords(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -12012,9 +11757,6 @@
 
 .method protected onChildVisibilityChanged(Landroid/view/View;II)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mTransition:Landroid/animation/LayoutTransition;
 
@@ -12078,7 +11820,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 6
-    .param p1    # I
 
     iget v5, p0, Landroid/view/ViewGroup;->mGroupFlags:I
 
@@ -12158,7 +11899,6 @@
 
 .method protected onDebugDraw(Landroid/graphics/Canvas;)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
 
     const/16 v7, 0x3f
 
@@ -12321,8 +12061,6 @@
 
 .method protected onDebugDrawMargins(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
 
     const/4 v1, 0x0
 
@@ -12363,7 +12101,6 @@
 
 .method onInitializeAccessibilityEventInternal(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEventInternal(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -12380,7 +12117,6 @@
 
 .method onInitializeAccessibilityNodeInfoInternal(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 5
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfoInternal(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -12426,7 +12162,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -12435,7 +12170,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -12447,8 +12181,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget v2, p0, Landroid/view/ViewGroup;->mChildrenCount:I
 
@@ -12511,8 +12243,6 @@
 
 .method public onRequestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v0, p0, Landroid/view/View;->mAccessibilityDelegate:Landroid/view/View$AccessibilityDelegate;
 
@@ -12537,8 +12267,6 @@
 
 .method onRequestSendAccessibilityEventInternal(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -12547,15 +12275,12 @@
 
 .method protected onSetLayoutParams(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     return-void
 .end method
 
 .method protected onViewAdded(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mOnHierarchyChangeListener:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
@@ -12571,7 +12296,6 @@
 
 .method protected onViewRemoved(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mOnHierarchyChangeListener:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
@@ -12587,7 +12311,6 @@
 
 .method public recomputeViewAttributes(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -12764,8 +12487,6 @@
 
 .method protected removeDetachedView(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/view/ViewGroup;->mTransition:Landroid/animation/LayoutTransition;
 
@@ -12842,7 +12563,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;->removeViewInternal(Landroid/view/View;)V
 
@@ -12857,7 +12577,6 @@
 
 .method public removeViewAt(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -12876,7 +12595,6 @@
 
 .method public removeViewInLayout(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;->removeViewInternal(Landroid/view/View;)V
 
@@ -12885,8 +12603,6 @@
 
 .method public removeViews(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;->removeViewsInternal(II)V
 
@@ -12901,8 +12617,6 @@
 
 .method public removeViewsInLayout(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;->removeViewsInternal(II)V
 
@@ -12911,8 +12625,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getDescendantFocusability()I
 
@@ -12958,9 +12670,6 @@
 
 .method public requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -12969,7 +12678,6 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 2
-    .param p1    # Z
 
     const/high16 v1, 0x80000
 
@@ -13027,8 +12735,6 @@
 
 .method public requestFocus(ILandroid/graphics/Rect;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getDescendantFocusability()I
 
@@ -13107,7 +12813,6 @@
 
 .method public requestOnStylusButtonEvent(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -13126,8 +12831,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v2, 0x0
 
@@ -13155,7 +12858,6 @@
 
 .method public requestTransitionStart(Landroid/animation/LayoutTransition;)V
     .locals 1
-    .param p1    # Landroid/animation/LayoutTransition;
 
     invoke-virtual {p0}, Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
@@ -13171,7 +12873,6 @@
 
 .method public requestTransparentRegion(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -13195,7 +12896,6 @@
 
 .method public resetDragableChildren(Landroid/view/DragEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v7, 0x0
 
@@ -13800,7 +13500,6 @@
 
 .method public setAddStatesFromChildren(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -13827,7 +13526,6 @@
 
 .method public setAlwaysDrawnWithCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x4000
 
@@ -13838,7 +13536,6 @@
 
 .method public setAnimationCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x40
 
@@ -13849,7 +13546,6 @@
 
 .method protected setChildrenDrawingCacheEnabled(Z)V
     .locals 5
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -13885,7 +13581,6 @@
 
 .method protected setChildrenDrawingOrderEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x400
 
@@ -13896,7 +13591,6 @@
 
 .method protected setChildrenDrawnWithCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const v0, 0x8000
 
@@ -13907,7 +13601,6 @@
 
 .method public setClipChildren(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -13959,7 +13652,6 @@
 
 .method public setClipToPadding(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x2
 
@@ -13970,7 +13662,6 @@
 
 .method public setDescendantFocusability(I)V
     .locals 2
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -14015,7 +13706,6 @@
 
 .method public setFingerHoveredInAppWidget(Z)V
     .locals 3
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -14044,8 +13734,6 @@
 
 .method protected setFingerHoveredInAppWidgetWithChild(Landroid/view/View;Z)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     instance-of v4, p1, Landroid/view/ViewGroup;
 
@@ -14091,7 +13779,6 @@
 
 .method public setLayoutAnimation(Landroid/view/animation/LayoutAnimationController;)V
     .locals 1
-    .param p1    # Landroid/view/animation/LayoutAnimationController;
 
     iput-object p1, p0, Landroid/view/ViewGroup;->mLayoutAnimationController:Landroid/view/animation/LayoutAnimationController;
 
@@ -14111,7 +13798,6 @@
 
 .method public setLayoutAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation$AnimationListener;
 
     iput-object p1, p0, Landroid/view/ViewGroup;->mAnimationListener:Landroid/view/animation/Animation$AnimationListener;
 
@@ -14120,7 +13806,6 @@
 
 .method public setLayoutMode(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/ViewGroup;->mLayoutMode:I
 
@@ -14150,7 +13835,6 @@
 
 .method public setLayoutTransition(Landroid/animation/LayoutTransition;)V
     .locals 3
-    .param p1    # Landroid/animation/LayoutTransition;
 
     iget-object v1, p0, Landroid/view/ViewGroup;->mTransition:Landroid/animation/LayoutTransition;
 
@@ -14183,7 +13867,6 @@
 
 .method public setMotionEventSplittingEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -14212,7 +13895,6 @@
 
 .method public setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     iput-object p1, p0, Landroid/view/ViewGroup;->mOnHierarchyChangeListener:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
@@ -14221,7 +13903,6 @@
 
 .method public setPersistentDrawingCache(I)V
     .locals 1
-    .param p1    # I
 
     and-int/lit8 v0, p1, 0x3
 
@@ -14232,7 +13913,6 @@
 
 .method protected setStaticTransformationsEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x800
 
@@ -14251,7 +13931,6 @@
 
 .method public showContextMenuForChild(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
@@ -14278,8 +13957,6 @@
 
 .method public startActionModeForChild(Landroid/view/View;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ActionMode$Callback;
 
     iget-object v0, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
@@ -14321,7 +13998,6 @@
 
 .method public startViewTransition(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p1, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
@@ -14348,7 +14024,6 @@
 
 .method public suppressLayout(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ViewGroup;->mSuppressLayout:Z
 
@@ -14378,7 +14053,6 @@
 
 .method public twOffsetChildrenLeftAndRight(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -14435,14 +14109,12 @@
 
 .method public twSetSelection(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public twSmoothScrollBy(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -14473,8 +14145,6 @@
 
 .method updateLocalSystemUiVisibility(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->updateLocalSystemUiVisibility(II)Z
 
@@ -14507,8 +14177,6 @@
 
 .method public updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
 

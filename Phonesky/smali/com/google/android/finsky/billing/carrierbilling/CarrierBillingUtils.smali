@@ -6,8 +6,6 @@
 # direct methods
 .method public static addPrepareOrBillingProfileParams(ZZLjava/util/Map;)V
     .locals 1
-    .param p0    # Z
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZZ",
@@ -35,7 +33,6 @@
 
 .method public static areCredentialsValid(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;)Z
     .locals 11
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
     const/4 v8, 0x0
 
@@ -106,7 +103,6 @@
 
 .method private static getInvalidEntries([Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;)Ljava/util/ArrayList;
     .locals 10
-    .param p0    # [Lcom/google/android/finsky/protos/ChallengeProtos$InputValidationError;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -197,7 +193,6 @@
 
 .method public static getRetriableErrors(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)Ljava/util/ArrayList;
     .locals 3
-    .param p0    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -284,9 +279,6 @@
 
 .method public static initializeCarrierBillingParams(Landroid/content/Context;ZLjava/lang/Runnable;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-static {}, Lcom/google/android/finsky/FinskyApp;->get()Lcom/google/android/finsky/FinskyApp;
 
@@ -323,7 +315,6 @@
 
 .method public static initializeCarrierBillingProvisioning(Ljava/lang/Runnable;)V
     .locals 2
-    .param p0    # Ljava/lang/Runnable;
 
     invoke-static {}, Lcom/google/android/finsky/billing/carrierbilling/CarrierBillingUtils;->isCarrierBillingParamsAvailable()Z
 
@@ -351,7 +342,6 @@
 
 .method public static initializeCarrierBillingStorage(Ljava/lang/Runnable;)V
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/google/android/finsky/billing/carrierbilling/action/CarrierBillingAction;
 
@@ -364,9 +354,6 @@
 
 .method public static initializeStorageAndParams(Landroid/content/Context;ZLjava/lang/Runnable;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/google/android/finsky/billing/carrierbilling/CarrierBillingUtils$2;
 
@@ -452,7 +439,6 @@
 
 .method public static isProvisioned(Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;)Z
     .locals 4
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
     const/4 v1, 0x0
 

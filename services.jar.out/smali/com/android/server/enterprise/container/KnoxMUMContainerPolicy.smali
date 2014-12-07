@@ -227,7 +227,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -388,8 +387,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->registerPersonaObserver(I)V
 
@@ -398,8 +395,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->unregisterPersonaObserver(I)V
 
@@ -408,11 +403,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Ljava/lang/String;III)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->sendContainerCreationIntent(Ljava/lang/String;III)V
 
@@ -429,7 +419,6 @@
 
 .method static synthetic access$1102(Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .locals 0
-    .param p0    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     sput-object p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mSetupCallback:Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
@@ -438,11 +427,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Ljava/lang/String;III)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->sendContainerCreationIntentBC(Ljava/lang/String;III)V
 
@@ -451,7 +435,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Lcom/android/server/enterprise/storage/EdmStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -460,9 +443,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;IZ)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->removeContainer(IZ)I
 
@@ -473,8 +453,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;I)Lcom/sec/knox/container/ContainerCreationParams;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getCreationParams(I)Lcom/sec/knox/container/ContainerCreationParams;
 
@@ -485,8 +463,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Lcom/sec/knox/container/ContainerCreationParams;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->processCreationParams(Lcom/sec/knox/container/ContainerCreationParams;)V
 
@@ -495,10 +471,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Lcom/sec/knox/container/ContainerCreationParams;II)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->updateContainerCreationStatus(Lcom/sec/knox/container/ContainerCreationParams;II)V
 
@@ -515,7 +487,6 @@
 
 .method static synthetic access$2000(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->translateStatus(I)I
 
@@ -526,12 +497,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Ljava/lang/String;IIII)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->sendContainerStateChangeIntent(Ljava/lang/String;IIII)V
 
@@ -540,10 +505,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->sendContainerAdminLockIntent(Ljava/lang/String;II)V
 
@@ -552,7 +513,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mHandler:Landroid/os/Handler;
 
@@ -561,8 +521,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->isSystemApp(Ljava/lang/String;)Z
 
@@ -573,7 +531,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mDefaultPkgList:Ljava/util/List;
 
@@ -582,8 +539,6 @@
 
 .method static synthetic access$2502(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mDefaultPkgList:Ljava/util/List;
 
@@ -600,7 +555,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$ContainerHandler;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mContainerHandler:Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$ContainerHandler;
 
@@ -609,7 +563,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Landroid/os/PersonaManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getService()Landroid/os/PersonaManager;
 
@@ -620,7 +573,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Landroid/app/ActivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mActivityManager:Landroid/app/ActivityManager;
 
@@ -629,7 +581,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mParamsList:Ljava/util/List;
 
@@ -638,8 +589,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;Lcom/sec/knox/container/ContainerCreationParams;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->removeCreationParams(Lcom/sec/knox/container/ContainerCreationParams;)Z
 
@@ -650,7 +599,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;)Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$KnoxSetupWizardObserver;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mProcessObserver:Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$KnoxSetupWizardObserver;
 
@@ -667,8 +615,6 @@
 
 .method private addConfigurationTypeToList(ILcom/sec/enterprise/knox/container/KnoxConfigurationType;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -700,8 +646,6 @@
 
 .method private addContainerOwnerRelationship(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     sget-object v2, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -786,7 +730,6 @@
 
 .method private static checkCallerPermissionFor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "KnoxMUMContainerPolicy"
 
@@ -1301,8 +1244,6 @@
 
 .method private enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1317,7 +1258,6 @@
 
 .method private enforceWifiPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1334,8 +1274,6 @@
 
 .method private filterType(ILjava/lang/String;)Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mTypeList:Ljava/util/List;
 
@@ -1383,7 +1321,6 @@
 
 .method private filterType(I)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1434,7 +1371,6 @@
 
 .method private filterTypeByContainerId(I)Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
     .locals 6
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mTypeList:Ljava/util/List;
 
@@ -1493,8 +1429,6 @@
 
 .method private findMatchingComponent(II)Landroid/content/ComponentName;
     .locals 15
-    .param p1    # I
-    .param p2    # I
 
     sget-object v12, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -1792,7 +1726,6 @@
 
 .method private getContainers(I)Ljava/util/List;
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1978,7 +1911,6 @@
 
 .method private getCreationParams(I)Lcom/sec/knox/container/ContainerCreationParams;
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2062,7 +1994,6 @@
 
 .method private getDefaultTypeObj(Z)Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
     .locals 5
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getDefaultConfigurationTypes()Ljava/util/List;
 
@@ -2425,7 +2356,6 @@
 
 .method private installDefaultApplications(ILjava/util/List;)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2743,7 +2673,6 @@
 
 .method private isSystemApp(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -2910,7 +2839,6 @@
 
 .method private matchCreationParams(Lcom/sec/knox/container/ContainerCreationParams;)Lcom/sec/knox/container/ContainerCreationParams;
     .locals 5
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     iget-object v3, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mParamsList:Ljava/util/List;
 
@@ -2965,8 +2893,6 @@
 
 .method private matchPackages([Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -3374,7 +3300,6 @@
 
 .method private processConfigurationType(Lcom/sec/enterprise/knox/container/KnoxConfigurationType;)Z
     .locals 3
-    .param p1    # Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
 
     const/4 v1, 0x0
 
@@ -3424,7 +3349,6 @@
 
 .method private processCreationParams(Lcom/sec/knox/container/ContainerCreationParams;)V
     .locals 8
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     const/4 v7, 0x0
 
@@ -3533,8 +3457,6 @@
 
 .method private processNewTypeObject(ILcom/sec/enterprise/knox/container/KnoxConfigurationType;)Z
     .locals 17
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4303,7 +4225,6 @@
 
 .method private registerPersonaObserver(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getService()Landroid/os/PersonaManager;
 
@@ -4351,7 +4272,6 @@
 
 .method private removeConfigurationType(Lcom/sec/enterprise/knox/container/KnoxConfigurationType;)V
     .locals 0
-    .param p1    # Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
 
     if-nez p1, :cond_0
 
@@ -4366,8 +4286,6 @@
 
 .method private removeConfigurationTypeInternal(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mTypeList:Ljava/util/List;
 
@@ -4427,7 +4345,6 @@
 
 .method private removeConfigurationTypeInternal(Lcom/sec/enterprise/knox/container/KnoxConfigurationType;)Z
     .locals 12
-    .param p1    # Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
 
     const/4 v9, 0x0
 
@@ -4879,8 +4796,6 @@
 
 .method private removeContainer(IZ)I
     .locals 21
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v12, -0x4b1
 
@@ -5263,7 +5178,6 @@
 
 .method private removeContainerOwnerRelationship(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5368,7 +5282,6 @@
 
 .method private removeCreationParams(Lcom/sec/knox/container/ContainerCreationParams;)Z
     .locals 6
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     iget-object v3, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mParamsList:Ljava/util/List;
 
@@ -5449,9 +5362,6 @@
 
 .method private sendContainerAdminLockIntent(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5489,9 +5399,6 @@
 
 .method private sendContainerAdminUnlockIntent(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5529,10 +5436,6 @@
 
 .method private sendContainerCreationIntent(Ljava/lang/String;III)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5578,10 +5481,6 @@
 
 .method private sendContainerCreationIntentBC(Ljava/lang/String;III)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-lez p2, :cond_2
 
@@ -5743,8 +5642,6 @@
 
 .method private sendContainerRemovalIntent(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5813,11 +5710,6 @@
 
 .method private sendContainerStateChangeIntent(Ljava/lang/String;IIII)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     new-instance v1, Landroid/content/Intent;
 
@@ -5871,8 +5763,6 @@
 
 .method private setEnforceAuthForContainerInternal(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -6060,10 +5950,6 @@
 
 .method private setupDefaultPolicies(Landroid/content/ComponentName;IILcom/sec/enterprise/knox/container/KnoxConfigurationType;)Z
     .locals 37
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
 
     :try_start_0
     invoke-direct/range {p0 .. p0}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getService()Landroid/os/PersonaManager;
@@ -7783,7 +7669,6 @@
 
 .method private static translateStatus(I)I
     .locals 0
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -7840,7 +7725,6 @@
 
 .method private trimHiddenVersion(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x5f
 
@@ -7903,7 +7787,6 @@
 
 .method private unregisterPersonaObserver(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mPersonaObservers:Ljava/util/HashMap;
 
@@ -7965,9 +7848,6 @@
 
 .method private updateContainerCreationStatus(Lcom/sec/knox/container/ContainerCreationParams;II)V
     .locals 10
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x3
 
@@ -8197,8 +8077,6 @@
 # virtual methods
 .method public addConfigurationType(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/util/List;
 
     const/4 v3, 0x0
 
@@ -8364,7 +8242,6 @@
 
 .method public cancelCreateContainer(Lcom/sec/knox/container/ContainerCreationParams;)Z
     .locals 6
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     sget-object v2, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -8460,10 +8337,6 @@
 
 .method public createContainer(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;I)I
     .locals 24
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     sget-object v20, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -9645,7 +9518,6 @@
 
 .method public createContainerInternal(Lcom/sec/knox/container/ContainerCreationParams;)I
     .locals 54
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     sget-object v7, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -11280,7 +11152,6 @@
 
 .method public createContainerMarkSuccess(Lcom/sec/knox/container/ContainerCreationParams;)Z
     .locals 4
-    .param p1    # Lcom/sec/knox/container/ContainerCreationParams;
 
     sget-object v1, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -11345,11 +11216,6 @@
 
 .method public createContainerWithCallback(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)I
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     sput-object p5, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->mSetupCallback:Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
@@ -11445,8 +11311,6 @@
 
 .method public enforceMultifactorAuthentication(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -11650,7 +11514,6 @@
 
 .method public forceResetPassword(Landroid/app/enterprise/ContextInfo;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v7, 0x0
 
@@ -11786,8 +11649,6 @@
 
 .method public getConfigurationType(Landroid/app/enterprise/ContextInfo;I)Ljava/util/List;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11956,8 +11817,6 @@
 
 .method public getConfigurationTypeByName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12029,7 +11888,6 @@
 
 .method public getConfigurationTypes(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12178,7 +12036,6 @@
 
 .method public getContainerCreationParams(I)Lcom/sec/knox/container/ContainerCreationParams;
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->getCreationParams(I)Lcom/sec/knox/container/ContainerCreationParams;
 
@@ -12201,7 +12058,6 @@
 
 .method public getContainers(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12340,7 +12196,6 @@
 
 .method public getEnforceAuthForContainer(Landroid/app/enterprise/ContextInfo;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v7, 0x0
 
@@ -12455,7 +12310,6 @@
 
 .method public getHibernationTimeout(Landroid/app/enterprise/ContextInfo;)J
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-wide/16 v6, 0x0
 
@@ -12837,7 +12691,6 @@
 
 .method public getStatus(Landroid/app/enterprise/ContextInfo;)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v4, "android.permission.sec.MDM_ENTERPRISE_CONTAINER"
 
@@ -12916,7 +12769,6 @@
 
 .method public isMultifactorAuthenticationEnforced(Landroid/app/enterprise/ContextInfo;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x1
 
@@ -13111,7 +12963,6 @@
 
 .method public isResetContainerOnRebootEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     if-nez p1, :cond_0
 
@@ -13181,8 +13032,6 @@
 
 .method public lockContainer(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-object v4, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -13250,14 +13099,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -13286,7 +13133,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 8
-    .param p1    # I
 
     sget-object v5, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 
@@ -13439,7 +13285,6 @@
 
 .method public removeContainer(Landroid/app/enterprise/ContextInfo;)I
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     :try_start_0
     const-string v1, "removeContainer"
@@ -13515,8 +13360,6 @@
 
 .method public resetContainerOnReboot(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -13586,8 +13429,6 @@
 
 .method public setEnforceAuthForContainer(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -13739,8 +13580,6 @@
 
 .method public setHibernationTimeout(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     const-string v4, "android.permission.sec.MDM_ENTERPRISE_CONTAINER"
 
@@ -13914,7 +13753,6 @@
 
 .method public unlockContainer(Landroid/app/enterprise/ContextInfo;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     sget-object v11, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
 

@@ -44,7 +44,6 @@
 
 .method private genUaSecureProtoId([B)[B
     .locals 4
-    .param p1    # [B
 
     const/4 v2, 0x0
 
@@ -83,7 +82,6 @@
 # virtual methods
 .method public getUaSecureProtoId(Ljava/lang/String;)[B
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lorg/apache/http/impl/client/secgbaclient/nafclient/UaSecurityProtocolId;->Log:Lorg/apache/http/impl/client/secgbaclient/util/GbaLogger;
 

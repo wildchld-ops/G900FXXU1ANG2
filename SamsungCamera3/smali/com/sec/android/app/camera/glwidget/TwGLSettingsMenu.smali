@@ -411,13 +411,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;II)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
 
     const/4 v6, 0x1
 
@@ -642,7 +635,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -659,7 +651,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mFrontCameraResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
@@ -668,7 +659,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -677,7 +667,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mFrontCameraList:Ljava/util/HashMap;
 
@@ -686,7 +675,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -695,7 +683,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/glview/TwGLList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mFrontSettingList:Lcom/sec/android/glview/TwGLList;
 
@@ -704,7 +691,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -713,7 +699,6 @@
 
 .method static synthetic access$1900(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -722,7 +707,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mRearCameraResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
@@ -731,7 +715,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mCols:I
 
@@ -740,7 +723,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -749,7 +731,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mRearCameraList:Ljava/util/HashMap;
 
@@ -758,7 +739,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -767,7 +747,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/glview/TwGLList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mRearSettingList:Lcom/sec/android/glview/TwGLList;
 
@@ -776,7 +755,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1878,7 +1856,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -1898,7 +1875,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/MenuBase;->isActive()Z
 
@@ -1954,7 +1930,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2000,14 +1975,12 @@
 
 .method public onCancelDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
 
 .method public onDragEndItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x4
 
@@ -2030,11 +2003,6 @@
 
 .method public onDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v3, 0x4
 
@@ -2109,7 +2077,6 @@
 
 .method public onDragStartItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v1, 0x0
 
@@ -2209,7 +2176,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2423,7 +2389,6 @@
 
 .method public onShortcutBoxCancelListener(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2608,7 +2573,6 @@
 
 .method public setEditableSideBarAreaVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mEditableSideBarAreaBg:Lcom/sec/android/glview/TwGLImage;
 
@@ -2624,7 +2588,6 @@
 
 .method public setEditableSideBarBlueAreaVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mEditableSideBarAreaBlueBg:Lcom/sec/android/glview/TwGLImage;
 
@@ -2640,7 +2603,6 @@
 
 .method public setSelectedMenuId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;->mSelectedMenuId:I
 

@@ -5352,9 +5352,9 @@
     <public type="dimen" name="caller_info_card_padding_left" id="0x7f0c0238" />
     <public type="dimen" name="caller_info_card_padding_right" id="0x7f0c0239" />
     <public type="dimen" name="vt_call_banner_side_padding_top" id="0x7f0c023a" />
+    <public type="dimen" name="APKTOOL_DUMMY_023b" id="0x7f0c023b" />
     <public type="dimen" name="more_menu_offset_x" id="0x7f0c023c" />
     <public type="dimen" name="more_menu_offset_y" id="0x7f0c023d" />
-    <public type="dimen" name="APKTOOL_DUMMY_023b" id="0x7f0c023b" />
     <public type="dimen" name="APKTOOL_DUMMY_023e" id="0x7f0c023e" />
     <public type="dimen" name="APKTOOL_DUMMY_023f" id="0x7f0c023f" />
     <public type="dimen" name="APKTOOL_DUMMY_0240" id="0x7f0c0240" />

@@ -40,14 +40,12 @@
 # virtual methods
 .method public onResponse(Lcom/google/android/finsky/protos/VendingProtos$BillingEventResponseProto;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/VendingProtos$BillingEventResponseProto;
 
     return-void
 .end method
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/VendingProtos$BillingEventResponseProto;
 

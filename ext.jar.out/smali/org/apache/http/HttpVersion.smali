@@ -51,8 +51,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "HTTP"
 
@@ -65,8 +63,6 @@
 # virtual methods
 .method public forVersion(II)Lorg/apache/http/ProtocolVersion;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 

@@ -191,7 +191,6 @@
 
 .method public encode(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/GenericURI;->scheme:Ljava/lang/String;
 
@@ -251,7 +250,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 18
-    .param p1    # Ljava/lang/Object;
 
     move-object/from16 v0, p1
 
@@ -1001,7 +999,6 @@
 
 .method public getHeader(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->qheaders:Lgov/nist/core/NameValueList;
 
@@ -1195,7 +1192,6 @@
 
 .method public getParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -1262,7 +1258,6 @@
 
 .method public getParm(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -1674,7 +1669,6 @@
 
 .method public hasParameter(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -1763,7 +1757,6 @@
 
 .method public removeHeader(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->qheaders:Lgov/nist/core/NameValueList;
 
@@ -1825,7 +1818,6 @@
 
 .method public removeParameter(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -1919,7 +1911,6 @@
 
 .method public setAuthority(Lgov/nist/javax/sip/address/Authority;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/address/Authority;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/SipUri;->authority:Lgov/nist/javax/sip/address/Authority;
 
@@ -1928,8 +1919,6 @@
 
 .method public setDefaultParm(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v1, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -1953,7 +1942,6 @@
 
 .method public setGrParam(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -1966,8 +1954,6 @@
 
 .method public setHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -1982,7 +1968,6 @@
 
 .method public setHost(Lgov/nist/core/Host;)V
     .locals 1
-    .param p1    # Lgov/nist/core/Host;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->authority:Lgov/nist/javax/sip/address/Authority;
 
@@ -2004,7 +1989,6 @@
 
 .method public setHost(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2022,7 +2006,6 @@
 
 .method public setHostPort(Lgov/nist/core/HostPort;)V
     .locals 1
-    .param p1    # Lgov/nist/core/HostPort;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->authority:Lgov/nist/javax/sip/address/Authority;
 
@@ -2044,7 +2027,6 @@
 
 .method public setIsdnSubAddress(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->telephoneSubscriber:Lgov/nist/javax/sip/address/TelephoneNumber;
 
@@ -2080,7 +2062,6 @@
 
 .method public setMAddr(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -2119,7 +2100,6 @@
 
 .method public setMAddrParam(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2146,7 +2126,6 @@
 
 .method public setMethod(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -2159,7 +2138,6 @@
 
 .method public setMethodParam(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2175,8 +2153,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2235,7 +2211,6 @@
 
 .method public setPort(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->authority:Lgov/nist/javax/sip/address/Authority;
 
@@ -2257,7 +2232,6 @@
 
 .method public setQHeader(Lgov/nist/core/NameValue;)V
     .locals 1
-    .param p1    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->qheaders:Lgov/nist/core/NameValueList;
 
@@ -2268,7 +2242,6 @@
 
 .method public setQheaders(Lgov/nist/core/NameValueList;)V
     .locals 0
-    .param p1    # Lgov/nist/core/NameValueList;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/SipUri;->qheaders:Lgov/nist/core/NameValueList;
 
@@ -2277,7 +2250,6 @@
 
 .method public setScheme(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "sip"
 
@@ -2331,7 +2303,6 @@
 
 .method public setSecure(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2352,7 +2323,6 @@
 
 .method public setTTLParam(I)V
     .locals 3
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -2389,7 +2359,6 @@
 
 .method public setTelephoneSubscriber(Lgov/nist/javax/sip/address/TelephoneNumber;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/address/TelephoneNumber;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/SipUri;->telephoneSubscriber:Lgov/nist/javax/sip/address/TelephoneNumber;
 
@@ -2398,7 +2367,6 @@
 
 .method public setTransportParam(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2495,7 +2463,6 @@
 
 .method public setUriParameter(Lgov/nist/core/NameValue;)V
     .locals 1
-    .param p1    # Lgov/nist/core/NameValue;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -2506,8 +2473,6 @@
 
 .method public setUriParm(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lgov/nist/core/NameValue;
 
@@ -2522,7 +2487,6 @@
 
 .method public setUriParms(Lgov/nist/core/NameValueList;)V
     .locals 0
-    .param p1    # Lgov/nist/core/NameValueList;
 
     iput-object p1, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -2531,7 +2495,6 @@
 
 .method public setUser(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->authority:Lgov/nist/javax/sip/address/Authority;
 
@@ -2553,7 +2516,6 @@
 
 .method public setUserParam(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->uriParms:Lgov/nist/core/NameValueList;
 
@@ -2566,7 +2528,6 @@
 
 .method public setUserPassword(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lgov/nist/javax/sip/address/SipUri;->authority:Lgov/nist/javax/sip/address/Authority;
 

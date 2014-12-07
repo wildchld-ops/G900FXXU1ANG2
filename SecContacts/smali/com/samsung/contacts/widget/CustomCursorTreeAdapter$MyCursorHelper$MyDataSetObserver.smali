@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;
-    .param p2    # Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper$MyDataSetObserver;-><init>(Lcom/samsung/contacts/widget/CustomCursorTreeAdapter$MyCursorHelper;)V
 

@@ -94,7 +94,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -105,8 +104,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x1
 
@@ -307,7 +304,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
@@ -597,7 +593,6 @@
 
 .method protected measureThumbnailSpanningHeight(I)V
     .locals 8
-    .param p1    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
@@ -664,7 +659,6 @@
 
 .method protected measureThumbnailSpanningWidth(I)V
     .locals 8
-    .param p1    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
@@ -759,7 +753,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Lcom/google/android/play/layout/AccessibleRelativeLayout;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1024,11 +1017,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/google/android/play/layout/AccessibleRelativeLayout;->onLayout(ZIIII)V
 
@@ -1039,8 +1027,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/google/android/play/layout/AccessibleRelativeLayout;->onMeasure(II)V
 
@@ -1256,8 +1242,6 @@
 
 .method public setData(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/google/android/play/layout/PlayCardViewBase;->mData:Ljava/lang/Object;
 
@@ -1268,7 +1252,6 @@
 
 .method public setDisplayAsDisabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/play/layout/PlayCardViewBase;->mToDisplayAsDisabled:Z
 
@@ -1287,7 +1270,6 @@
 
 .method public setItemOwned(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/play/layout/PlayCardViewBase;->mIsItemOwned:Z
 
@@ -1296,7 +1278,6 @@
 
 .method public setLoggingData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/google/android/play/layout/PlayCardViewBase;->mLoggingData:Ljava/lang/Object;
 
@@ -1305,7 +1286,6 @@
 
 .method public setThumbnailAspectRatio(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/google/android/play/layout/PlayCardViewBase;->mThumbnailAspectRatio:F
 

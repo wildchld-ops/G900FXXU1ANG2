@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/PersonaManagerService;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -51,8 +50,6 @@
 
 .method private killProcess(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -168,7 +165,6 @@
 
 .method private softRestartPersona(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -321,7 +317,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 80
-    .param p1    # Landroid/os/Message;
 
     const-string v4, "PersonaHandler"
 

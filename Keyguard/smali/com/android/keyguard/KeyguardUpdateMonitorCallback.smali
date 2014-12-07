@@ -52,21 +52,18 @@
 
 .method onICCCardStateChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method onKeyguardVisibilityChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method onKeyguardVisibilityChangedRaw(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -107,62 +104,48 @@
 
 .method public onMusicClientIdChanged(IZLandroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/app/PendingIntent;
 
     return-void
 .end method
 
 .method public onMusicPlaybackStateChanged(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     return-void
 .end method
 
 .method onPhoneStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method onRefreshBatteryInfo(Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;)V
     .locals 0
-    .param p1    # Lcom/android/keyguard/KeyguardUpdateMonitor$BatteryStatus;
 
     return-void
 .end method
 
 .method onRefreshCarrierInfo(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public onRefreshCarrierInfo(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
 
     return-void
 .end method
 
 .method onRingerModeChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onScreenTurnedOff(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -175,22 +158,18 @@
 
 .method public onSetBackground(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
 .method onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;)V
     .locals 0
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
 
     return-void
 .end method
 
 .method public onSimStateChanged(Lcom/android/internal/telephony/IccCardConstants$State;I)V
     .locals 0
-    .param p1    # Lcom/android/internal/telephony/IccCardConstants$State;
-    .param p2    # I
 
     return-void
 .end method
@@ -203,28 +182,24 @@
 
 .method onUserInfoChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method onUserRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onUserSwitchComplete(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onUserSwitching(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

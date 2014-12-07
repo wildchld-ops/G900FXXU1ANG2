@@ -62,7 +62,6 @@
 
 .method public constructor <init>(Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest;)V
     .locals 4
-    .param p1    # Lorg/apache/http/impl/client/secgbaclient/nafclient/NafRequest;
 
     const/4 v2, 0x0
 
@@ -233,8 +232,6 @@
 
 .method private handleBsf200Response(Lorg/apache/http/HttpResponse;Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;)Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
     .locals 6
-    .param p1    # Lorg/apache/http/HttpResponse;
-    .param p2    # Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
 
     new-instance v0, Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfResponseXmlParser;
 
@@ -1054,7 +1051,6 @@
 
 .method public performBsfAuth([B)Lorg/apache/http/impl/client/secgbaclient/bsfclient/BsfFinalAuthResData;
     .locals 12
-    .param p1    # [B
 
     const/4 v5, 0x0
 

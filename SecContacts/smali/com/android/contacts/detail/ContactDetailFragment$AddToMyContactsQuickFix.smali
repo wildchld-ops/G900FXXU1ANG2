@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/android/contacts/detail/ContactDetailFragment;Lcom/android/contacts/detail/ContactDetailFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/detail/ContactDetailFragment;
-    .param p2    # Lcom/android/contacts/detail/ContactDetailFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/detail/ContactDetailFragment$AddToMyContactsQuickFix;-><init>(Lcom/android/contacts/detail/ContactDetailFragment;)V
 

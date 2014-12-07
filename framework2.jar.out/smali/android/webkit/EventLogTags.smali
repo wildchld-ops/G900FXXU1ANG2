@@ -22,8 +22,6 @@
 
 .method public static writeBrowserDoubleTapDuration(IJ)V
     .locals 4
-    .param p0    # I
-    .param p1    # J
 
     const v0, 0x111d6
 
@@ -68,9 +66,6 @@
 
 .method public static writeBrowserZoomLevelChange(IIJ)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # J
 
     const v0, 0x111d5
 

@@ -301,7 +301,6 @@
 
 .method static synthetic access$1000(Lcom/android/contacts/activities/PeopleActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/PeopleActivity;->misAssistantMenuVisibility:Z
 
@@ -310,7 +309,6 @@
 
 .method static synthetic access$1100(Lcom/android/contacts/activities/PeopleActivity;)Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mAssistantMenu:Lcom/samsung/contacts/menu/EnhancedAssistantMenu;
 
@@ -319,7 +317,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/activities/PeopleActivity;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     invoke-direct {p0}, Lcom/android/contacts/activities/PeopleActivity;->finishActionModeAllFragments()V
 
@@ -328,8 +325,6 @@
 
 .method static synthetic access$300(Lcom/android/contacts/activities/PeopleActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/PeopleActivity;->showEmptyStateForTab(I)V
 
@@ -338,7 +333,6 @@
 
 .method static synthetic access$400(Lcom/android/contacts/activities/PeopleActivity;)Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mVoLTEStateTrackerImpl:Lcom/samsung/dialer/impl/VoLTEStateTrackerImpl;
 
@@ -347,8 +341,6 @@
 
 .method static synthetic access$500(Lcom/android/contacts/activities/PeopleActivity;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/activities/PeopleActivity;->setupContactDetailFragment(Landroid/net/Uri;)V
 
@@ -357,7 +349,6 @@
 
 .method static synthetic access$600(Lcom/android/contacts/activities/PeopleActivity;)Lcom/android/contacts/common/list/ContactListFilterController;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mContactListFilterController:Lcom/android/contacts/common/list/ContactListFilterController;
 
@@ -366,7 +357,6 @@
 
 .method static synthetic access$700(Lcom/android/contacts/activities/PeopleActivity;)Lcom/android/contacts/detail/ContactDetailLayoutController;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mContactDetailLayoutController:Lcom/android/contacts/detail/ContactDetailLayoutController;
 
@@ -375,7 +365,6 @@
 
 .method static synthetic access$800(Lcom/android/contacts/activities/PeopleActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mHandler:Landroid/os/Handler;
 
@@ -384,7 +373,6 @@
 
 .method static synthetic access$900(Lcom/android/contacts/activities/PeopleActivity;)Lcom/samsung/contacts/util/ImsLowSignalHelper;
     .locals 1
-    .param p0    # Lcom/android/contacts/activities/PeopleActivity;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mImsLowSignalHelper:Lcom/samsung/contacts/util/ImsLowSignalHelper;
 
@@ -592,7 +580,6 @@
 
 .method private configureFragments(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -1406,7 +1393,6 @@
 
 .method private setQueryTextToFragment(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -1419,7 +1405,6 @@
 
 .method private setupContactDetailFragment(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mContactDetailLoaderFragment:Lcom/android/contacts/detail/ContactLoaderFragment;
 
@@ -1565,7 +1550,6 @@
 
 .method private updateDebugOptionsVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mEnableDebugMenuOptions:Z
 
@@ -1835,7 +1819,6 @@
 # virtual methods
 .method protected addFragmentsToTransaction(Landroid/app/FragmentTransaction;)V
     .locals 3
-    .param p1    # Landroid/app/FragmentTransaction;
 
     const v2, 0x7f08014c
 
@@ -1926,7 +1909,6 @@
 
 .method public configureSweepAction(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2024,10 +2006,6 @@
 
 .method protected createActionBarAdapter(Landroid/content/Context;Lcom/android/contacts/activities/ActionBarAdapter$Listener;Landroid/app/ActionBar;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/contacts/activities/ActionBarAdapter$Listener;
-    .param p3    # Landroid/app/ActionBar;
-    .param p4    # Z
 
     new-instance v0, Lcom/android/contacts/activities/ActionBarAdapter;
 
@@ -2609,8 +2587,6 @@
 
 .method public hideDialpadFragment(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     return-void
 .end method
@@ -3066,7 +3042,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
 
     instance-of v0, p1, Lcom/android/contacts/detail/ContactDetailFragment;
 
@@ -3883,7 +3858,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -3959,7 +3933,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -4121,7 +4094,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x0
 
@@ -4900,7 +4872,6 @@
 
 .method public requestSmartDialSearch(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mDialpadSearchImpl:Lcom/samsung/dialer/impl/DialpadSearchImpl;
 
@@ -4916,8 +4887,6 @@
 
 .method public requestSmartDialSearch(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mDialpadSearchImpl:Lcom/samsung/dialer/impl/DialpadSearchImpl;
 
@@ -4933,9 +4902,6 @@
 
 .method public requestSmartDialSearch(Ljava/lang/String;ZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mDialpadSearchImpl:Lcom/samsung/dialer/impl/DialpadSearchImpl;
 
@@ -4951,7 +4917,6 @@
 
 .method protected setTransactionHide(Landroid/app/FragmentTransaction;)V
     .locals 1
-    .param p1    # Landroid/app/FragmentTransaction;
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mDialpadFragment:Lcom/android/dialer/dialpad/DialpadFragment;
 
@@ -4974,7 +4939,6 @@
 
 .method public setVisibilityDialpadSearchView(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/contacts/activities/PeopleActivity;->mActionBarAdapter:Lcom/android/contacts/activities/ActionBarAdapter;
 
@@ -5012,7 +4976,6 @@
 
 .method public startActionMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mActionBarAdapter:Lcom/android/contacts/activities/ActionBarAdapter;
 
@@ -5049,7 +5012,6 @@
 
 .method public startActionModeKnox(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/contacts/activities/PeopleActivity;->mAllFragment:Lcom/android/contacts/list/DefaultContactBrowseListFragment;
 
@@ -5102,7 +5064,6 @@
 
 .method protected updateActionBarCustomView(I)V
     .locals 2
-    .param p1    # I
 
     sget v0, Lcom/samsung/contacts/activities/ContactsTab;->DIALER:I
 

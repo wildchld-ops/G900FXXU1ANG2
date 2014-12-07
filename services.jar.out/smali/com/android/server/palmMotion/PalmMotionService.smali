@@ -96,8 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/input/InputManagerService;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/input/InputManagerService;
 
     const/4 v0, 0x0
 
@@ -394,7 +392,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/palmMotion/PalmMotionService;)Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
 
     iget-object v0, p0, Lcom/android/server/palmMotion/PalmMotionService;->mPalmTouchRecognizer:Lcom/android/server/palmMotion/PalmMotionService$PalmTouchRecognizer;
 
@@ -403,7 +400,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/palmMotion/PalmMotionService;)Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
 
     iget-object v0, p0, Lcom/android/server/palmMotion/PalmMotionService;->mSurfaceTouchSharingData:Lcom/android/server/palmMotion/PalmMotionService$SurfaceTouchSharingData;
 
@@ -412,7 +408,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/palmMotion/PalmMotionService;)Landroid/database/ContentObserver;
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
 
     iget-object v0, p0, Lcom/android/server/palmMotion/PalmMotionService;->mPalmObserver:Landroid/database/ContentObserver;
 
@@ -421,7 +416,6 @@
 
 .method static synthetic access$300(Lcom/android/server/palmMotion/PalmMotionService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
 
     iget-boolean v0, p0, Lcom/android/server/palmMotion/PalmMotionService;->mUseGestureDetectorTouchEventEx:Z
 
@@ -430,8 +424,6 @@
 
 .method static synthetic access$302(Lcom/android/server/palmMotion/PalmMotionService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/palmMotion/PalmMotionService;->mUseGestureDetectorTouchEventEx:Z
 
@@ -440,7 +432,6 @@
 
 .method static synthetic access$400(Lcom/android/server/palmMotion/PalmMotionService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
 
     iget-object v0, p0, Lcom/android/server/palmMotion/PalmMotionService;->mContext:Landroid/content/Context;
 
@@ -449,7 +440,6 @@
 
 .method static synthetic access$500(Lcom/android/server/palmMotion/PalmMotionService;)Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
 
     iget-object v0, p0, Lcom/android/server/palmMotion/PalmMotionService;->mPalmSweepRecognizer:Lcom/android/server/palmMotion/PalmMotionService$PalmSweepRecognizer;
 
@@ -458,8 +448,6 @@
 
 .method static synthetic access$802(Lcom/android/server/palmMotion/PalmMotionService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/palmMotion/PalmMotionService;->mPalmMotionRecognizer:Z
 
@@ -468,7 +456,6 @@
 
 .method static synthetic access$900(Lcom/android/server/palmMotion/PalmMotionService;)Lcom/android/server/palmMotion/PalmMotionService$GestureSurfaceTouch;
     .locals 1
-    .param p0    # Lcom/android/server/palmMotion/PalmMotionService;
 
     iget-object v0, p0, Lcom/android/server/palmMotion/PalmMotionService;->mGestureSurfaceTouch:Lcom/android/server/palmMotion/PalmMotionService$GestureSurfaceTouch;
 
@@ -479,7 +466,6 @@
 # virtual methods
 .method public onTouchEvent_ex(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -671,7 +657,6 @@
 
 .method public setUseGestureDetectorEx(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/palmMotion/PalmMotionService;->mUseGestureDetectorTouchEventEx:Z
 

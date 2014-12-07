@@ -56,8 +56,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const-wide/16 v4, 0x0
 

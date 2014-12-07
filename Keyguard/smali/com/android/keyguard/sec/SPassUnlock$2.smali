@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationEnd(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x1
 

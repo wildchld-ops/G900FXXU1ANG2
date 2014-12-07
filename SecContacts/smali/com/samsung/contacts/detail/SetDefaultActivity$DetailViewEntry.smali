@@ -78,11 +78,6 @@
 
 .method public static fromValues(Landroid/content/Context;Ljava/lang/String;Lcom/android/contacts/common/model/dataitem/DataKind;JLandroid/content/ContentValues;)Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p3    # J
-    .param p5    # Landroid/content/ContentValues;
 
     const/4 v3, 0x0
 
@@ -245,7 +240,6 @@
 # virtual methods
 .method public collapseWith(Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)V
     .locals 3
-    .param p1    # Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
     invoke-virtual {p0, p1}, Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;->shouldCollapseWith(Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)Z
 
@@ -321,7 +315,6 @@
 
 .method public bridge synthetic collapseWith(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
@@ -332,7 +325,6 @@
 
 .method public shouldCollapseWith(Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;)Z
     .locals 5
-    .param p1    # Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 
     const/4 v0, 0x0
 
@@ -364,7 +356,6 @@
 
 .method public bridge synthetic shouldCollapseWith(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/contacts/detail/SetDefaultActivity$DetailViewEntry;
 

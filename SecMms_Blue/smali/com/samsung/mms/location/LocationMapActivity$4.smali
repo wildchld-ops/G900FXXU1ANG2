@@ -36,7 +36,6 @@
 # virtual methods
 .method public onSuggestionClick(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/mms/location/LocationMapActivity$4;->this$0:Lcom/samsung/mms/location/LocationMapActivity;
 
@@ -105,7 +104,6 @@
 
 .method public onSuggestionSelect(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 

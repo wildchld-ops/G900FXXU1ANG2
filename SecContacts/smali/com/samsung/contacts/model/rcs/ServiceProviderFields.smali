@@ -136,8 +136,6 @@
 
 .method public static addOptionsToQuery(Landroid/net/Uri;Z)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

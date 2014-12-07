@@ -218,7 +218,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x0
 
@@ -229,8 +228,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;Landroid/widget/RemoteViews$BitmapCache;)V
     .locals 11
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/widget/RemoteViews$BitmapCache;
 
     const/4 v9, 0x1
 
@@ -751,9 +748,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/widget/RemoteViews$BitmapCache;Landroid/widget/RemoteViews$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/widget/RemoteViews$BitmapCache;
-    .param p3    # Landroid/widget/RemoteViews$1;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RemoteViews;-><init>(Landroid/os/Parcel;Landroid/widget/RemoteViews$BitmapCache;)V
 
@@ -762,8 +756,6 @@
 
 .method public constructor <init>(Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 3
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/4 v2, 0x0
 
@@ -887,8 +879,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -959,7 +949,6 @@
 
 .method static synthetic access$100(Landroid/widget/RemoteViews;)Z
     .locals 1
-    .param p0    # Landroid/widget/RemoteViews;
 
     iget-boolean v0, p0, Landroid/widget/RemoteViews;->mIsWidgetCollectionChild:Z
 
@@ -976,7 +965,6 @@
 
 .method static synthetic access$200(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-static {p0}, Landroid/widget/RemoteViews;->getSourceBounds(Landroid/view/View;)Landroid/graphics/Rect;
 
@@ -987,10 +975,6 @@
 
 .method static synthetic access$300(Landroid/widget/RemoteViews;Landroid/view/View;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViews;
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Class;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RemoteViews;->getMethod(Landroid/view/View;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
@@ -1001,7 +985,6 @@
 
 .method static synthetic access$400(Landroid/widget/RemoteViews;)Landroid/widget/RemoteViews$BitmapCache;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Landroid/widget/RemoteViews;->mBitmapCache:Landroid/widget/RemoteViews$BitmapCache;
 
@@ -1010,7 +993,6 @@
 
 .method static synthetic access$500(Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     invoke-static {p0}, Landroid/widget/RemoteViews;->wrapArg(Ljava/lang/Object;)[Ljava/lang/Object;
 
@@ -1021,8 +1003,6 @@
 
 .method static synthetic access$600(Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 0
-    .param p0    # Landroid/widget/RemoteViews;
-    .param p1    # Landroid/widget/RemoteViews;
 
     invoke-direct {p0, p1}, Landroid/widget/RemoteViews;->configureRemoteViewsAsChild(Landroid/widget/RemoteViews;)V
 
@@ -1031,8 +1011,6 @@
 
 .method static synthetic access$800(Landroid/widget/RemoteViews;Landroid/widget/RemoteViews$BitmapCache;)V
     .locals 0
-    .param p0    # Landroid/widget/RemoteViews;
-    .param p1    # Landroid/widget/RemoteViews$BitmapCache;
 
     invoke-direct {p0, p1}, Landroid/widget/RemoteViews;->setBitmapCache(Landroid/widget/RemoteViews$BitmapCache;)V
 
@@ -1041,7 +1019,6 @@
 
 .method private addAction(Landroid/widget/RemoteViews$Action;)V
     .locals 2
-    .param p1    # Landroid/widget/RemoteViews$Action;
 
     invoke-direct {p0}, Landroid/widget/RemoteViews;->hasLandscapeAndPortraitLayouts()Z
 
@@ -1082,7 +1059,6 @@
 
 .method private configureRemoteViewsAsChild(Landroid/widget/RemoteViews;)V
     .locals 2
-    .param p1    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Landroid/widget/RemoteViews;->mBitmapCache:Landroid/widget/RemoteViews$BitmapCache;
 
@@ -1101,8 +1077,6 @@
 
 .method private getMethod(Landroid/view/View;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1373,7 +1347,6 @@
 
 .method private getRemoteViewsToApply(Landroid/content/Context;)Landroid/widget/RemoteViews;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/widget/RemoteViews;->hasLandscapeAndPortraitLayouts()Z
 
@@ -1409,7 +1382,6 @@
 
 .method private static getSourceBounds(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 7
-    .param p0    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1528,9 +1500,6 @@
 
 .method private performApply(Landroid/view/View;Landroid/view/ViewGroup;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iget-object v3, p0, Landroid/widget/RemoteViews;->mActions:Ljava/util/ArrayList;
 
@@ -1572,7 +1541,6 @@
 
 .method private prepareContext(Landroid/content/Context;)Landroid/content/Context;
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     iget-object v2, p0, Landroid/widget/RemoteViews;->mPackage:Ljava/lang/String;
 
@@ -1724,7 +1692,6 @@
 
 .method private setBitmapCache(Landroid/widget/RemoteViews$BitmapCache;)V
     .locals 3
-    .param p1    # Landroid/widget/RemoteViews$BitmapCache;
 
     iput-object p1, p0, Landroid/widget/RemoteViews;->mBitmapCache:Landroid/widget/RemoteViews$BitmapCache;
 
@@ -1778,7 +1745,6 @@
 
 .method private updateResourceMap(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v3, p0, Landroid/widget/RemoteViews;->stringNamesMap:Ljava/util/Map;
 
@@ -1825,7 +1791,6 @@
 
 .method private static wrapArg(Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 2
-    .param p0    # Ljava/lang/Object;
 
     sget-object v1, Landroid/widget/RemoteViews;->sInvokeArgsTls:Ljava/lang/ThreadLocal;
 
@@ -1846,12 +1811,6 @@
 # virtual methods
 .method public addInnerShadowTextEffect(IFFFIF)V
     .locals 8
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # F
 
     new-instance v0, Landroid/widget/RemoteViews$AddInnerShadowAction;
 
@@ -1878,13 +1837,6 @@
 
 .method public addLinearGradientTextEffect(IFF[I[F[FF)V
     .locals 9
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # [I
-    .param p5    # [F
-    .param p6    # [F
-    .param p7    # F
 
     new-instance v0, Landroid/widget/RemoteViews$AddLinearGradientAction;
 
@@ -1913,10 +1865,6 @@
 
 .method public addOuterGlowTextEffect(IFIF)V
     .locals 6
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
-    .param p4    # F
 
     new-instance v0, Landroid/widget/RemoteViews$AddOuterGlowAction;
 
@@ -1939,12 +1887,6 @@
 
 .method public addOuterShadowTextEffect(IFFFIF)V
     .locals 8
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # F
 
     new-instance v0, Landroid/widget/RemoteViews$AddOuterShadowAction;
 
@@ -1971,10 +1913,6 @@
 
 .method public addStrokeTextEffect(IFIF)V
     .locals 6
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
-    .param p4    # F
 
     new-instance v0, Landroid/widget/RemoteViews$AddStrokeAction;
 
@@ -1997,8 +1935,6 @@
 
 .method public addView(ILandroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     new-instance v0, Landroid/widget/RemoteViews$ViewGroupAction;
 
@@ -2011,8 +1947,6 @@
 
 .method public apply(Landroid/content/Context;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
@@ -2025,9 +1959,6 @@
 
 .method public apply(Landroid/content/Context;Landroid/view/ViewGroup;Landroid/widget/RemoteViews$OnClickHandler;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
 
     invoke-direct {p0, p1}, Landroid/widget/RemoteViews;->getRemoteViewsToApply(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
@@ -2079,7 +2010,6 @@
 
 .method public clearAllTextEffect(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Landroid/widget/RemoteViews$ClearAllTextEffectAction;
 
@@ -2163,7 +2093,6 @@
 
 .method public mergeRemoteViews(Landroid/widget/RemoteViews;)V
     .locals 10
-    .param p1    # Landroid/widget/RemoteViews;
 
     if-nez p1, :cond_1
 
@@ -2311,7 +2240,6 @@
 
 .method public onLoadClass(Ljava/lang/Class;)Z
     .locals 1
-    .param p1    # Ljava/lang/Class;
 
     const-class v0, Landroid/widget/RemoteViews$RemoteView;
 
@@ -2324,8 +2252,6 @@
 
 .method public reapply(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -2336,9 +2262,6 @@
 
 .method public reapply(Landroid/content/Context;Landroid/view/View;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
 
     invoke-direct {p0, p1}, Landroid/widget/RemoteViews;->getRemoteViewsToApply(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
@@ -2384,7 +2307,6 @@
 
 .method public removeAllViews(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/widget/RemoteViews$ViewGroupAction;
 
@@ -2399,9 +2321,6 @@
 
 .method public setBitmap(ILjava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Bitmap;
 
     new-instance v0, Landroid/widget/RemoteViews$BitmapReflectionAction;
 
@@ -2414,9 +2333,6 @@
 
 .method public setBoolean(ILjava/lang/String;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2441,9 +2357,6 @@
 
 .method public setBundle(ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2466,9 +2379,6 @@
 
 .method public setByte(ILjava/lang/String;B)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # B
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2493,9 +2403,6 @@
 
 .method public setChar(ILjava/lang/String;C)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # C
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2520,9 +2427,6 @@
 
 .method public setCharSequence(ILjava/lang/String;Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2545,10 +2449,6 @@
 
 .method public setChronometer(IJLjava/lang/String;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const-string/jumbo v0, "setBase"
 
@@ -2567,8 +2467,6 @@
 
 .method public setContentDescription(ILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const-string/jumbo v0, "setContentDescription"
 
@@ -2579,8 +2477,6 @@
 
 .method public setDisplayedChild(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "setDisplayedChild"
 
@@ -2591,9 +2487,6 @@
 
 .method public setDouble(ILjava/lang/String;D)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # D
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2618,12 +2511,6 @@
 
 .method public setDrawableParameters(IZIILandroid/graphics/PorterDuff$Mode;I)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/PorterDuff$Mode;
-    .param p6    # I
 
     new-instance v0, Landroid/widget/RemoteViews$SetDrawableParameters;
 
@@ -2650,8 +2537,6 @@
 
 .method public setEmptyView(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/widget/RemoteViews$SetEmptyView;
 
@@ -2664,9 +2549,6 @@
 
 .method public setFloat(ILjava/lang/String;F)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2691,8 +2573,6 @@
 
 .method public setImageViewBitmap(ILandroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     const-string/jumbo v0, "setImageBitmap"
 
@@ -2703,8 +2583,6 @@
 
 .method public setImageViewResource(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "setImageResource"
 
@@ -2715,8 +2593,6 @@
 
 .method public setImageViewUri(ILandroid/net/Uri;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     const-string/jumbo v0, "setImageURI"
 
@@ -2727,9 +2603,6 @@
 
 .method public setInt(ILjava/lang/String;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2754,9 +2627,6 @@
 
 .method public setIntent(ILjava/lang/String;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2779,7 +2649,6 @@
 
 .method setIsWidgetCollectionChild(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/RemoteViews;->mIsWidgetCollectionChild:Z
 
@@ -2788,8 +2657,6 @@
 
 .method public setLabelFor(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "setLabelFor"
 
@@ -2800,8 +2667,6 @@
 
 .method public setLaunchPendingIntent(ILandroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     new-instance v0, Landroid/widget/RemoteViews$SetLaunchPendingIntent;
 
@@ -2814,9 +2679,6 @@
 
 .method public setLong(ILjava/lang/String;J)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -2851,8 +2713,6 @@
 
 .method public setOnClickFillInIntent(ILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Landroid/widget/RemoteViews$SetOnClickFillInIntent;
 
@@ -2865,8 +2725,6 @@
 
 .method public setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     new-instance v0, Landroid/widget/RemoteViews$SetOnClickPendingIntent;
 
@@ -2879,10 +2737,6 @@
 
 .method public setOnLongClickPendingIntent(Landroid/os/IBinder;ILandroid/app/PendingIntent;Landroid/app/PendingIntent;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Landroid/app/PendingIntent;
-    .param p4    # Landroid/app/PendingIntent;
 
     new-instance v0, Landroid/widget/RemoteViews$SetOnLongClickPendingIntent;
 
@@ -2905,8 +2759,6 @@
 
 .method public setPendingIntentTemplate(ILandroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     new-instance v0, Landroid/widget/RemoteViews$SetPendingIntentTemplate;
 
@@ -2919,10 +2771,6 @@
 
 .method public setProgressBar(IIIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const-string/jumbo v0, "setIndeterminate"
 
@@ -2944,8 +2792,6 @@
 
 .method public setRelativeScrollPosition(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "smoothScrollByOffset"
 
@@ -2956,9 +2802,6 @@
 
 .method public setRemoteAdapter(IILandroid/content/Intent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2969,8 +2812,6 @@
 
 .method public setRemoteAdapter(ILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Landroid/widget/RemoteViews$SetRemoteViewsAdapterIntent;
 
@@ -2983,8 +2824,6 @@
 
 .method public setRemoteAdapter(ILjava/util/ArrayList;I)V
     .locals 1
-    .param p1    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3006,8 +2845,6 @@
 
 .method public setScrollPosition(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "smoothScrollToPosition"
 
@@ -3018,9 +2855,6 @@
 
 .method public setShort(ILjava/lang/String;S)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # S
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -3045,9 +2879,6 @@
 
 .method public setString(ILjava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionAction;
 
@@ -3103,8 +2934,6 @@
 
 .method public setTextColor(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "setTextColor"
 
@@ -3115,11 +2944,6 @@
 
 .method public setTextViewCompoundDrawables(IIIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     new-instance v0, Landroid/widget/RemoteViews$TextViewDrawableAction;
 
@@ -3146,11 +2970,6 @@
 
 .method public setTextViewCompoundDrawablesRelative(IIIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     new-instance v0, Landroid/widget/RemoteViews$TextViewDrawableAction;
 
@@ -3177,8 +2996,6 @@
 
 .method public setTextViewText(ILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const-string/jumbo v0, "setText"
 
@@ -3189,9 +3006,6 @@
 
 .method public setTextViewTextSize(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     new-instance v0, Landroid/widget/RemoteViews$TextViewSizeAction;
 
@@ -3204,9 +3018,6 @@
 
 .method public setUri(ILjava/lang/String;Landroid/net/Uri;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
 
     if-eqz p3, :cond_0
 
@@ -3246,7 +3057,6 @@
 
 .method public setUser(Landroid/os/UserHandle;)V
     .locals 0
-    .param p1    # Landroid/os/UserHandle;
 
     iput-object p1, p0, Landroid/widget/RemoteViews;->mUser:Landroid/os/UserHandle;
 
@@ -3255,8 +3065,6 @@
 
 .method public setViewFingerHovered(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v0, "setFingerHoveredInAppWidget"
 
@@ -3267,11 +3075,6 @@
 
 .method public setViewPadding(IIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     new-instance v0, Landroid/widget/RemoteViews$ViewPaddingAction;
 
@@ -3296,8 +3099,6 @@
 
 .method public setViewVisibility(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "setVisibility"
 
@@ -3308,7 +3109,6 @@
 
 .method public showNext(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionActionWithoutParams;
 
@@ -3323,7 +3123,6 @@
 
 .method public showPrevious(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/widget/RemoteViews$ReflectionActionWithoutParams;
 
@@ -3338,8 +3137,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 9
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v6, 0x1
 

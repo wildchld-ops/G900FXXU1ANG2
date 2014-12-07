@@ -111,7 +111,6 @@
 
 .method public constructor <init>(Landroid/net/Uri;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x1
 
@@ -207,7 +206,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -250,7 +248,6 @@
 
 .method private encodeHttpHeaders(Landroid/content/ContentValues;)V
     .locals 6
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v3, 0x0
 
@@ -333,9 +330,6 @@
 
 .method private putIfNonNull(Landroid/content/ContentValues;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     if-eqz p3, :cond_0
 
@@ -351,8 +345,6 @@
 
 .method private setDestinationFromBase(Ljava/io/File;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -382,8 +374,6 @@
 # virtual methods
 .method public addRequestHeader(Ljava/lang/String;Ljava/lang/String;)Landroid/app/DownloadManager$Request;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -441,7 +431,6 @@
 
 .method sectoContentValues(Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -615,7 +604,6 @@
 
 .method public setAllowedNetworkTypes(I)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/DownloadManager$Request;->mAllowedNetworkTypes:I
 
@@ -624,7 +612,6 @@
 
 .method public setAllowedOverMetered(Z)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/DownloadManager$Request;->mMeteredAllowed:Z
 
@@ -633,7 +620,6 @@
 
 .method public setAllowedOverRoaming(Z)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/DownloadManager$Request;->mRoamingAllowed:Z
 
@@ -642,7 +628,6 @@
 
 .method public setDescription(Ljava/lang/CharSequence;)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/app/DownloadManager$Request;->mDescription:Ljava/lang/CharSequence;
 
@@ -651,9 +636,6 @@
 
 .method public setDestinationInExternalFilesDir(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/app/DownloadManager$Request;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 
@@ -753,8 +735,6 @@
 
 .method public setDestinationInExternalPublicDir(Ljava/lang/String;Ljava/lang/String;)Landroid/app/DownloadManager$Request;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
 
@@ -864,7 +844,6 @@
 
 .method public setDestinationUri(Landroid/net/Uri;)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Landroid/app/DownloadManager$Request;->mDestinationUri:Landroid/net/Uri;
 
@@ -873,7 +852,6 @@
 
 .method public setMimeType(Ljava/lang/String;)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/DownloadManager$Request;->mMimeType:Ljava/lang/String;
 
@@ -882,7 +860,6 @@
 
 .method public setNotificationVisibility(I)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/DownloadManager$Request;->mNotificationVisibility:I
 
@@ -891,7 +868,6 @@
 
 .method public setShowRunningNotification(Z)Landroid/app/DownloadManager$Request;
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -918,7 +894,6 @@
 
 .method public setStorageType(I)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/DownloadManager$Request;->mStorageType:I
 
@@ -927,7 +902,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/app/DownloadManager$Request;->mTitle:Ljava/lang/CharSequence;
 
@@ -936,7 +910,6 @@
 
 .method public setVisibleInDownloadsUi(Z)Landroid/app/DownloadManager$Request;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/DownloadManager$Request;->mIsVisibleInDownloadsUi:Z
 
@@ -945,7 +918,6 @@
 
 .method toContentValues(Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x2
 

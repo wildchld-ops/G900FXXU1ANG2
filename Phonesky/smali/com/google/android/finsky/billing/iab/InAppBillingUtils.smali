@@ -14,8 +14,6 @@
 # direct methods
 .method public static buildDocid(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/finsky/protos/Common$Docid;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -69,9 +67,6 @@
 
 .method public static buildDocidStr(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -110,8 +105,6 @@
 
 .method public static getPreferredAccount(Ljava/lang/String;Landroid/content/Context;)Landroid/accounts/Account;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x1
 
@@ -213,7 +206,6 @@
 
 .method public static pickAccount(Lcom/google/android/finsky/appstate/AppStates$AppState;Ljava/util/List;)Landroid/accounts/Account;
     .locals 8
-    .param p0    # Lcom/google/android/finsky/appstate/AppStates$AppState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

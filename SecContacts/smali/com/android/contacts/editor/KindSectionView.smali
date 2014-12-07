@@ -52,7 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -63,8 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/contacts/editor/KindSectionView;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/contacts/editor/KindSectionView;
 
     iget-object v0, p0, Lcom/android/contacts/editor/KindSectionView;->mEditors:Landroid/view/ViewGroup;
 
@@ -90,8 +86,6 @@
 
 .method static synthetic access$100(Lcom/android/contacts/editor/KindSectionView;Lcom/android/contacts/editor/Editor;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/KindSectionView;
-    .param p1    # Lcom/android/contacts/editor/Editor;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/editor/KindSectionView;->delete(Lcom/android/contacts/editor/Editor;)V
 
@@ -100,8 +94,6 @@
 
 .method static synthetic access$200(Lcom/android/contacts/editor/KindSectionView;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/android/contacts/editor/KindSectionView;
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1}, Lcom/android/contacts/editor/KindSectionView;->runWhenWindowFocused(Ljava/lang/Runnable;)V
 
@@ -110,7 +102,6 @@
 
 .method private createEditorView(Lcom/android/contacts/common/model/ValuesDelta;)Landroid/view/View;
     .locals 9
-    .param p1    # Lcom/android/contacts/common/model/ValuesDelta;
 
     const/4 v4, 0x0
 
@@ -272,7 +263,6 @@
 
 .method private delete(Lcom/android/contacts/editor/Editor;)V
     .locals 1
-    .param p1    # Lcom/android/contacts/editor/Editor;
 
     invoke-interface {p1}, Lcom/android/contacts/editor/Editor;->deleteEditor()V
 
@@ -308,7 +298,6 @@
 
 .method private isEmptyNoop(Lcom/android/contacts/common/model/ValuesDelta;)Z
     .locals 6
-    .param p1    # Lcom/android/contacts/common/model/ValuesDelta;
 
     const/4 v5, 0x0
 
@@ -376,7 +365,6 @@
 
 .method private postWhenWindowFocused(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/contacts/editor/KindSectionView$5;
 
@@ -389,7 +377,6 @@
 
 .method private reBuildEditors(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -445,7 +432,6 @@
 
 .method private runWhenWindowFocused(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Landroid/view/View;->hasWindowFocus()Z
 
@@ -516,7 +502,6 @@
 # virtual methods
 .method public addItem(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -595,7 +580,6 @@
 
 .method public onDeleteRequested(Lcom/android/contacts/editor/Editor;)V
     .locals 4
-    .param p1    # Lcom/android/contacts/editor/Editor;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -757,7 +741,6 @@
 
 .method public onRequest(I)V
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/samsung/contacts/sim/editor/EditSim;->getOperation()Lcom/samsung/contacts/sim/editor/EditSimOperation;
 
@@ -779,7 +762,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowFocusChanged(Z)V
 
@@ -891,7 +873,6 @@
 
 .method public setDeleteIconEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     const v1, 0x7f0801db
 
@@ -911,7 +892,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -964,7 +944,6 @@
 
 .method public setListener(Lcom/android/contacts/editor/KindSectionView$Listener;)V
     .locals 0
-    .param p1    # Lcom/android/contacts/editor/KindSectionView$Listener;
 
     iput-object p1, p0, Lcom/android/contacts/editor/KindSectionView;->mListener:Lcom/android/contacts/editor/KindSectionView$Listener;
 
@@ -973,10 +952,6 @@
 
 .method public setState(Lcom/android/contacts/common/model/dataitem/DataKind;Lcom/android/contacts/model/RawContactDelta;ZLcom/android/contacts/editor/ViewIdGenerator;)Z
     .locals 3
-    .param p1    # Lcom/android/contacts/common/model/dataitem/DataKind;
-    .param p2    # Lcom/android/contacts/model/RawContactDelta;
-    .param p3    # Z
-    .param p4    # Lcom/android/contacts/editor/ViewIdGenerator;
 
     const/4 v2, -0x1
 
@@ -1090,7 +1065,6 @@
 
 .method protected updateTwAddBtnVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/contacts/editor/KindSectionView;->mTwAddBtn:Landroid/widget/ImageView;
 

@@ -144,7 +144,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/WindowState;)V
     .locals 7
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v3, 0x0
 
@@ -305,7 +304,6 @@
 
 .method static drawStateToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -355,7 +353,6 @@
 
 .method private stepAnimation(J)Z
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/wm/WindowStateAnimator;->mAnimation:Landroid/view/animation/Animation;
 
@@ -391,8 +388,6 @@
 # virtual methods
 .method applyAnimationLocked(IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -520,7 +515,6 @@
 
 .method applyDecorRect(Landroid/graphics/Rect;)V
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
@@ -773,7 +767,6 @@
 
 .method commitFinishDrawingLocked(J)Z
     .locals 6
-    .param p1    # J
 
     const/4 v5, 0x3
 
@@ -4056,9 +4049,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/high16 v2, 0x3f800000
 
@@ -4674,8 +4664,6 @@
 
 .method public hideSurfaceBeofreScreenRotationAnimation(Landroid/graphics/Matrix;F)V
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/server/wm/WindowStateAnimator;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -5019,7 +5007,6 @@
 
 .method public prepareSurfaceLocked(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -5550,7 +5537,6 @@
 
 .method public setAnimation(Landroid/view/animation/Animation;)V
     .locals 3
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x0
 
@@ -5605,7 +5591,6 @@
 
 .method setSurfaceBoundariesLocked(Z)V
     .locals 22
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -6481,7 +6466,6 @@
 
 .method setTransparentRegionHintLocked(Landroid/graphics/Region;)V
     .locals 2
-    .param p1    # Landroid/graphics/Region;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowStateAnimator;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -6520,7 +6504,6 @@
 
 .method setWallpaperOffset(Landroid/graphics/RectF;)V
     .locals 6
-    .param p1    # Landroid/graphics/RectF;
 
     iget v3, p1, Landroid/graphics/RectF;->left:F
 
@@ -6824,7 +6807,6 @@
 
 .method stepAnimationLocked(J)Z
     .locals 10
-    .param p1    # J
 
     const/4 v9, 0x0
 
@@ -7621,7 +7603,6 @@
 
 .method updateSurfaceWindowCrop(Z)V
     .locals 19
-    .param p1    # Z
 
     move-object/from16 v0, p0
 

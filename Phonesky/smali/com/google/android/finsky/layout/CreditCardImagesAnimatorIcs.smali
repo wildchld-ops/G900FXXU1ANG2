@@ -12,9 +12,6 @@
 # direct methods
 .method public constructor <init>([Landroid/widget/ImageView;[Lcom/google/android/finsky/billing/creditcard/CreditCardType;Landroid/widget/ImageView;)V
     .locals 0
-    .param p1    # [Landroid/widget/ImageView;
-    .param p2    # [Lcom/google/android/finsky/billing/creditcard/CreditCardType;
-    .param p3    # Landroid/widget/ImageView;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/finsky/layout/CreditCardImagesAnimator;-><init>([Landroid/widget/ImageView;[Lcom/google/android/finsky/billing/creditcard/CreditCardType;)V
 
@@ -27,7 +24,6 @@
 # virtual methods
 .method public animateToType(Lcom/google/android/finsky/billing/creditcard/CreditCardType;)V
     .locals 9
-    .param p1    # Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
     const/4 v8, -0x1
 
@@ -173,7 +169,6 @@
 
 .method public restoreCardType(Lcom/google/android/finsky/billing/creditcard/CreditCardType;)V
     .locals 8
-    .param p1    # Lcom/google/android/finsky/billing/creditcard/CreditCardType;
 
     const/high16 v3, 0x3f800000
 

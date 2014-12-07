@@ -40,8 +40,6 @@
 # virtual methods
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 3
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/samsung/mms/location/LocationMapActivity$19;->val$pref:Landroid/content/SharedPreferences;
 

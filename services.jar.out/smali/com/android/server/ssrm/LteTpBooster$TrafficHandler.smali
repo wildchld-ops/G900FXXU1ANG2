@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/ssrm/LteTpBooster;Lcom/android/server/ssrm/LteTpBooster$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/ssrm/LteTpBooster;
-    .param p2    # Lcom/android/server/ssrm/LteTpBooster$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/ssrm/LteTpBooster$TrafficHandler;-><init>(Lcom/android/server/ssrm/LteTpBooster;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x2
 

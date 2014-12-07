@@ -125,7 +125,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -194,7 +193,6 @@
 
 .method private getCachedDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-object v3, Lcom/samsung/android/theme/SThemeManager;->sCacheMap:Ljava/lang/Object;
 
@@ -289,7 +287,6 @@
 
 .method private getCachedString(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-object v3, Lcom/samsung/android/theme/SThemeManager;->sCacheMap:Ljava/lang/Object;
 
@@ -760,8 +757,6 @@
 
 .method private putCachedIcon(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     sget-object v1, Lcom/samsung/android/theme/SThemeManager;->sCacheMap:Ljava/lang/Object;
 
@@ -796,8 +791,6 @@
 
 .method private putCachedString(Ljava/lang/String;Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
 
     sget-object v1, Lcom/samsung/android/theme/SThemeManager;->sCacheMap:Ljava/lang/Object;
 
@@ -1014,7 +1007,6 @@
 # virtual methods
 .method public getItemBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1050,7 +1042,6 @@
 
 .method public getItemColor(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1086,7 +1077,6 @@
 
 .method public getItemDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/samsung/android/theme/SThemeManager;->validateCurrentTheme()V
 
@@ -1137,7 +1127,6 @@
 
 .method public getItemText(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/samsung/android/theme/SThemeManager;->validateCurrentTheme()V
 
@@ -1188,7 +1177,6 @@
 
 .method public getPackageIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/samsung/android/theme/SThemeManager;->sPackageIconMap:Ljava/util/HashMap;
 
@@ -1260,7 +1248,6 @@
 
 .method public setThemePackageName(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

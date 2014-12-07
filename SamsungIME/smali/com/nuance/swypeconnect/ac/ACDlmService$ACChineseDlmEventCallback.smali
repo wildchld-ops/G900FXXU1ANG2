@@ -40,8 +40,6 @@
 # virtual methods
 .method public onChineseDlmEvent([BZ)V
     .locals 6
-    .param p1    # [B
-    .param p2    # Z
 
     const/4 v0, 0x2
 
@@ -71,7 +69,6 @@
 
 .method public onReset(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/nuance/swypeconnect/ac/ACDlmService$ACChineseDlmEventCallback;->this$0:Lcom/nuance/swypeconnect/ac/ACDlmService;
 

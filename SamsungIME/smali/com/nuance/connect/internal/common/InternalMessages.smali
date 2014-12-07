@@ -4398,7 +4398,6 @@
 
 .method public static fromInt(I)Lcom/nuance/connect/internal/common/InternalMessages;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/nuance/connect/internal/common/InternalMessages;->values:[Lcom/nuance/connect/internal/common/InternalMessages;
 
@@ -4432,7 +4431,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/nuance/connect/internal/common/InternalMessages;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/nuance/connect/internal/common/InternalMessages;
 

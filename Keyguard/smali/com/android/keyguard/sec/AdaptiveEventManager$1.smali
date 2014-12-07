@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/keyguard/sec/AdaptiveEventManager;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/keyguard/sec/AdaptiveEventManager$1;->this$0:Lcom/android/keyguard/sec/AdaptiveEventManager;
 

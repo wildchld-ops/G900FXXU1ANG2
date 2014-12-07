@@ -26,7 +26,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/google/android/finsky/services/MarketCatalogService;->mBinder:Lcom/google/android/finsky/services/IMarketCatalogService$Stub;
 

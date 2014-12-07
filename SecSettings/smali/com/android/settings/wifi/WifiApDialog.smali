@@ -132,9 +132,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/net/wifi/WifiConfiguration;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v1, 0x0
 
@@ -262,7 +259,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiApDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->getChgType()Z
 
@@ -273,7 +269,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiApDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mNumBasedOnCharger:I
 
@@ -282,7 +277,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/WifiApDialog;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->CheckBoxChannel5g:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -291,8 +285,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/WifiApDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/WifiApDialog;->mNumBasedOnCharger:I
 
@@ -301,7 +293,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/WifiApDialog;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->CheckBoxChannel2g:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -310,7 +301,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mChannel:Landroid/widget/Spinner;
 
@@ -319,7 +309,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/WifiApDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mLast2gChannel:I
 
@@ -328,7 +317,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/wifi/WifiApDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
 
@@ -337,8 +325,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/wifi/WifiApDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
 
@@ -347,7 +333,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
@@ -356,7 +341,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->sToast:Landroid/widget/Toast;
 
@@ -365,8 +349,6 @@
 
 .method static synthetic access$1602(Lcom/android/settings/wifi/WifiApDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->sToast:Landroid/widget/Toast;
 
@@ -375,7 +357,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/wifi/WifiApDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->validate()V
 
@@ -384,7 +365,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/wifi/WifiApDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
 
@@ -393,8 +373,6 @@
 
 .method static synthetic access$1802(Lcom/android/settings/wifi/WifiApDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
 
@@ -403,7 +381,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
@@ -412,7 +389,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiApDialog;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->wifiAp5gItem:[Ljava/lang/String;
 
@@ -421,7 +397,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->pToast:Landroid/widget/Toast;
 
@@ -430,8 +405,6 @@
 
 .method static synthetic access$2002(Lcom/android/settings/wifi/WifiApDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->pToast:Landroid/widget/Toast;
 
@@ -440,8 +413,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/wifi/WifiApDialog;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->wifiAp5gItem:[Ljava/lang/String;
 
@@ -450,7 +421,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/wifi/WifiApDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->restartFocusedViewInput()V
 
@@ -459,7 +429,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiApDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mNumBasedOnCountry:I
 
@@ -468,7 +437,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiApDialog;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->wifiAp5gItemBasedOnCharger:[Ljava/lang/String;
 
@@ -477,7 +445,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WifiApDialog;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->wifiAp5gItemBasedOnCountry:[Ljava/lang/String;
 
@@ -486,7 +453,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/WifiApDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mContext:Landroid/content/Context;
 
@@ -495,7 +461,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mChannel5g:Landroid/widget/Spinner;
 
@@ -504,7 +469,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/WifiApDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mLast5gChannel:I
 
@@ -513,7 +477,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/WifiApDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSelectedChannel:I
 
@@ -522,8 +485,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/wifi/WifiApDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiApDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/WifiApDialog;->mSelectedChannel:I
 
@@ -692,7 +653,6 @@
 
 .method public static getSecurityTypeIndex(Landroid/net/wifi/WifiConfiguration;)I
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v0, 0x1
 
@@ -730,7 +690,6 @@
 
 .method private getTimeoutValueFromIndex(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x4b0
 
@@ -839,7 +798,6 @@
 
 .method private restartViewInput(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -857,7 +815,6 @@
 
 .method private setTimeout(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mSharedPref:Landroid/content/SharedPreferences;
 
@@ -1207,7 +1164,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->validate()V
 
@@ -1216,10 +1172,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -1578,7 +1530,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1777,7 +1728,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const v13, 0x7f0b05cd
 
@@ -2305,9 +2255,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2484,17 +2431,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onWindowFocusChanged(Z)V
     .locals 7
-    .param p1    # Z
 
     const v6, 0x7f0b05cd
 
@@ -2587,7 +2529,6 @@
 
 .method public setTimeoutValueChangedFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/WifiApDialog;->isTimeoutValueChanged:Z
 

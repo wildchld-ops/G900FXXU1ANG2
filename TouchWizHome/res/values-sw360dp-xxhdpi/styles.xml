@@ -115,6 +115,13 @@
         <item name="android:paddingTop">7.0dip</item>
         <item name="android:drawablePadding">0.0dip</item>
     </style>
+    <item type="style" name="APKTOOL_DUMMY_000a">false</item>
+    <item type="style" name="APKTOOL_DUMMY_000b">false</item>
+    <item type="style" name="APKTOOL_DUMMY_000c">false</item>
+    <item type="style" name="APKTOOL_DUMMY_000d">false</item>
+    <item type="style" name="APKTOOL_DUMMY_000e">false</item>
+    <item type="style" name="APKTOOL_DUMMY_000f">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0010">false</item>
     <style name="HomeIconMovie" parent="@style/BaseHomeIcon">
         <item name="android:textSize">14.0dip</item>
         <item name="android:textColor">#ff000000</item>
@@ -128,12 +135,5 @@
         <item name="android:singleLine">true</item>
         <item name="android:drawablePadding">0.0dip</item>
     </style>
-    <item type="style" name="APKTOOL_DUMMY_000a">false</item>
-    <item type="style" name="APKTOOL_DUMMY_000b">false</item>
-    <item type="style" name="APKTOOL_DUMMY_000c">false</item>
-    <item type="style" name="APKTOOL_DUMMY_000d">false</item>
-    <item type="style" name="APKTOOL_DUMMY_000e">false</item>
-    <item type="style" name="APKTOOL_DUMMY_000f">false</item>
-    <item type="style" name="APKTOOL_DUMMY_0010">false</item>
     <item type="style" name="APKTOOL_DUMMY_001e">false</item>
 </resources>

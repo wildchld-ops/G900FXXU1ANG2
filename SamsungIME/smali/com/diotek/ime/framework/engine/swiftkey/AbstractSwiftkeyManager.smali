@@ -393,10 +393,6 @@
 
 .method private buildCorrectiosInternal(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;Lcom/touchtype_fluency/Sequence;I)Lcom/touchtype_fluency/Predictions;
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # Lcom/touchtype_fluency/Sequence;
-    .param p4    # I
 
     const/4 v3, 0x1
 
@@ -433,9 +429,6 @@
 
 .method private buildPredictionListener(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;I)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeyUtilSession:Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -450,9 +443,6 @@
 
 .method private displayLogForInitialOnly(JLcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;)V
     .locals 6
-    .param p1    # J
-    .param p3    # Lcom/touchtype_fluency/Sequence;
-    .param p4    # Lcom/touchtype_fluency/TouchHistory;
 
     sget-boolean v2, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -684,7 +674,6 @@
 
 .method private getFieldSpecificID(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -720,7 +709,6 @@
 
 .method private getFilteredFieldSpecificPredictions(Lcom/touchtype_fluency/Predictions;)Ljava/util/ArrayList;
     .locals 10
-    .param p1    # Lcom/touchtype_fluency/Predictions;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -835,7 +823,6 @@
 
 .method private getResultsFilterForCorrection(I)Lcom/touchtype_fluency/ResultsFilter;
     .locals 7
-    .param p1    # I
 
     new-instance v0, Lcom/touchtype_fluency/ResultsFilter;
 
@@ -858,7 +845,6 @@
 
 .method private isEnableContactSpecificContext(Lcom/touchtype_fluency/Sequence;)Z
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/Sequence;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mEnableContactSpecificContext:Z
 
@@ -913,7 +899,6 @@
 
 .method private learnStringWithExclusionPattern(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Landroid/util/Patterns;->EMAIL_ADDRESS:Ljava/util/regex/Pattern;
 
@@ -1064,9 +1049,6 @@
 
 .method private processPreviewFlow(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;I)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mPreviewSequence:Lcom/touchtype_fluency/Sequence;
 
@@ -1132,8 +1114,6 @@
 
 .method private setContactSpecificSequence(Lcom/touchtype_fluency/Sequence;Z)Z
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->isEnableContactSpecificContext(Lcom/touchtype_fluency/Sequence;)Z
 
@@ -1165,7 +1145,6 @@
 
 .method private setFieldSpecificSequence(Lcom/touchtype_fluency/Sequence;)V
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/Sequence;
 
     iget v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mFieldSpecificType:I
 
@@ -1192,8 +1171,6 @@
 
 .method private verifyFieldSpecificFormat(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -1241,8 +1218,6 @@
 # virtual methods
 .method protected SafeGetInSequence(Lcom/touchtype_fluency/Sequence;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # I
 
     const-string v1, ""
 
@@ -1283,8 +1258,6 @@
 
 .method protected SafeSequenceRemove(Lcom/touchtype_fluency/Sequence;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # I
 
     const-string v1, ""
 
@@ -1325,8 +1298,6 @@
 
 .method public addCPPhrase(ILjava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1335,14 +1306,12 @@
 
 .method public addCPSpell(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public addString(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1519,7 +1488,6 @@
 
 .method public addTouchHistory(Ljava/lang/Character;)V
     .locals 2
-    .param p1    # Ljava/lang/Character;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mIsAlreadyAddTouchHistory:Z
 
@@ -1568,8 +1536,6 @@
 
 .method public addTouchPoint(ILandroid/graphics/PointF;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     if-eqz p2, :cond_0
 
@@ -1626,7 +1592,6 @@
 
 .method public buildPredictionListener(Lcom/touchtype_fluency/Sequence;)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/Sequence;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->clearReservePredictions()V
 
@@ -1647,9 +1612,6 @@
 
 .method public buildPredictions(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/Sequence;I)Lcom/touchtype_fluency/Predictions;
     .locals 10
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/Sequence;
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -1821,9 +1783,6 @@
 
 .method protected buildPredictions(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;I)Lcom/touchtype_fluency/Predictions;
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -1861,9 +1820,6 @@
 
 .method protected buildPredictionsInternal(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;I)Lcom/touchtype_fluency/Predictions;
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -1907,10 +1863,6 @@
 
 .method public changeChineseInputType(Ljava/util/List;ZLjava/lang/String;Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/CompletionListener;)Z
     .locals 1
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p5    # Lcom/touchtype_fluency/util/CompletionListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1932,10 +1884,6 @@
 
 .method public changeJapaneseInputType(Ljava/util/List;ZLjava/lang/String;Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/CompletionListener;)Z
     .locals 1
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p5    # Lcom/touchtype_fluency/util/CompletionListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1957,7 +1905,6 @@
 
 .method public checkPostPosition(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1966,8 +1913,6 @@
 
 .method public choosePrediction(Lcom/touchtype_fluency/Sequence;I)V
     .locals 6
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # I
 
     if-ltz p2, :cond_1
 
@@ -2091,8 +2036,6 @@
 
 .method public choosePrediction(Lcom/touchtype_fluency/Sequence;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -2449,7 +2392,6 @@
 
 .method public enableLanguageModel(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeySession:Lcom/touchtype_fluency/Session;
 
@@ -2516,7 +2458,6 @@
 
 .method public fullToHalfWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2525,8 +2466,6 @@
 
 .method public getClosestKey(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -2595,8 +2534,6 @@
 
 .method public getContextCorrentWord(Ljava/lang/String;I)Lcom/touchtype_fluency/ContextCurrentWord;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTokenizer:Lcom/touchtype_fluency/Tokenizer;
 
@@ -2689,8 +2626,6 @@
 
 .method public getContextCorrentWord(Ljava/lang/String;Ljava/lang/String;)Lcom/touchtype_fluency/ContextCurrentWord;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTokenizer:Lcom/touchtype_fluency/Tokenizer;
 
@@ -2733,7 +2668,6 @@
 
 .method public getFirtstTokenFromSequence(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2799,11 +2733,6 @@
 
 .method public getKey(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;IIZ)I
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const-string v0, "ko"
 
@@ -3009,7 +2938,6 @@
 
 .method public getLastTokenFromSequence(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ""
 
@@ -3069,10 +2997,6 @@
 
 .method public getMostLikelyCharacter(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;II)I
     .locals 6
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
-    .param p4    # I
 
     const-string v1, "SamsungIME"
 
@@ -3129,11 +3053,6 @@
 
 .method public getMostLikelyCharacter(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;III)I
     .locals 5
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mPredictor:Lcom/touchtype_fluency/Predictor;
 
@@ -3178,8 +3097,6 @@
 
 .method public getMostLikelyKey(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -3240,7 +3157,6 @@
 
 .method public getPhoneticSpellGroup(Ljava/util/ArrayList;I)V
     .locals 0
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3361,10 +3277,6 @@
 
 .method public getSuggestion(Ljava/util/ArrayList;ILjava/lang/String;Ljava/lang/String;I)V
     .locals 8
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3517,7 +3429,6 @@
 
 .method public getSwiftKeyConfigurationURL(Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeyVersion:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyDatatype$SWIFTKEY_VERSION;
 
@@ -3805,7 +3716,6 @@
 
 .method public halfToFullWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3814,7 +3724,6 @@
 
 .method public hiraganaToKatakana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3823,7 +3732,6 @@
 
 .method public isAutoAceeptBeforeFlow(Lcom/touchtype_fluency/Sequence;)Z
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/Sequence;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mAppendVerbatimInSequence:Z
 
@@ -3889,7 +3797,6 @@
 
 .method public isValidCharacter(C)Z
     .locals 1
-    .param p1    # C
 
     const/4 v0, 0x0
 
@@ -3898,7 +3805,6 @@
 
 .method public isValidWord(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3922,7 +3828,6 @@
 
 .method public katakanaToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3931,7 +3836,6 @@
 
 .method public learnDynamicModel(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -4040,8 +3944,6 @@
 
 .method public learnFieldSpecificContext(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -4098,7 +4000,6 @@
 
 .method public learnKeyPressModel(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -4156,7 +4057,6 @@
 
 .method public learnTempDynamicModel(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTrainer:Lcom/touchtype_fluency/Trainer;
 
@@ -4201,8 +4101,6 @@
 
 .method protected loadCurrentKeyPressModelFileName(II)Ljava/lang/String;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "model_%d_%d.im"
 
@@ -4235,7 +4133,6 @@
 
 .method public loadKorCharacterMap(I)V
     .locals 5
-    .param p1    # I
 
     const/high16 v4, 0x6b6f0000
 
@@ -4286,7 +4183,6 @@
 
 .method public loadKorCharacterMap(ILjava/util/List;)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4348,8 +4244,6 @@
 
 .method public loadLanguageModel(Ljava/util/List;Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/LoadProgressListener;)V
     .locals 2
-    .param p2    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p3    # Lcom/touchtype_fluency/util/LoadProgressListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4393,9 +4287,6 @@
 
 .method public loadLanguageModel(Ljava/util/List;Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/LoadProgressListener;Z)V
     .locals 2
-    .param p2    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p3    # Lcom/touchtype_fluency/util/LoadProgressListener;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4439,8 +4330,6 @@
 
 .method public loadOrUnloadDynamicUserModel(Lcom/touchtype_fluency/util/LanguagePackManager;Z)V
     .locals 5
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -4605,11 +4494,6 @@
 
 .method public previewFlow(Lcom/touchtype_fluency/Sequence;[Landroid/graphics/PointF;ILjava/lang/String;I)I
     .locals 7
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # [Landroid/graphics/PointF;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v6, 0x1
 
@@ -4769,8 +4653,6 @@
 
 .method public processFlow([Landroid/graphics/PointF;I)V
     .locals 6
-    .param p1    # [Landroid/graphics/PointF;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -4870,7 +4752,6 @@
 
 .method public registerPreviewFlowPredictionListener(Lcom/touchtype_fluency/util/PredictionsListener;)V
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/util/PredictionsListener;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeyUtilSession:Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -4922,7 +4803,6 @@
 
 .method public removeTerm(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -5001,8 +4881,6 @@
 
 .method public replaceLanguageModel(Ljava/util/List;Ljava/util/List;Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/CompletionListener;)V
     .locals 2
-    .param p3    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p4    # Lcom/touchtype_fluency/util/CompletionListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5092,8 +4970,6 @@
 
 .method public resetParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeySession:Lcom/touchtype_fluency/Session;
 
@@ -5140,7 +5016,6 @@
 
 .method public restoredTouchHistory(Ljava/lang/String;)Lcom/touchtype_fluency/TouchHistory;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -5183,7 +5058,6 @@
 
 .method public romajiToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Japanese;->romajiToHiragana(Ljava/lang/String;)Ljava/lang/String;
 
@@ -5310,8 +5184,6 @@
 
 .method protected saveAndLoadKeyPressModel(Ljava/lang/String;Ljava/util/HashMap;Ljava/util/HashMap;Ljava/util/HashSet;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5617,8 +5489,6 @@
 
 .method protected saveAndLoadKeyPressModel(Ljava/lang/String;Ljava/util/HashMap;Ljava/util/HashMap;Ljava/util/HashSet;ILjava/util/List;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6032,7 +5902,6 @@
 
 .method public setBlacklist(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTrainer:Lcom/touchtype_fluency/Trainer;
 
@@ -6048,8 +5917,6 @@
 
 .method protected declared-synchronized setCacheSequenceAndTouchHistory(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;)V
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
 
     monitor-enter p0
 
@@ -6074,23 +5941,18 @@
 
 .method public setChinesePhoneticIndex(Lcom/touchtype_fluency/Sequence;I)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setChineseSearchType(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public setContactSpecificID(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mContactSpecificID:Ljava/lang/String;
 
@@ -6099,9 +5961,6 @@
 
 .method public setCurrentInputType(Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/LanguagePack;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p2    # Lcom/touchtype_fluency/util/LanguagePack;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1, p2, p3}, Lcom/touchtype_fluency/util/LanguagePackManager;->setCurrentInputType(Lcom/touchtype_fluency/util/LanguagePack;Ljava/lang/String;)V
 
@@ -6110,7 +5969,6 @@
 
 .method public setDynamicModelsEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeyUtilSession:Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -6153,7 +6011,6 @@
 
 .method public setFieldSpecificType(I)V
     .locals 5
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mFieldSpecificType:I
 
@@ -6239,7 +6096,6 @@
 
 .method public setIntentionalEvent(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "_-\'&"
 
@@ -6269,8 +6125,6 @@
 
 .method protected setKeyShpae(Lcom/touchtype_fluency/KeyShape;[Ljava/lang/Character;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/KeyShape;
-    .param p2    # [Ljava/lang/Character;
 
     if-eqz p1, :cond_0
 
@@ -6296,7 +6150,6 @@
 
 .method public setLiveLanguageModelsEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeyUtilSession:Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -6307,9 +6160,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeySession:Lcom/touchtype_fluency/Session;
 
@@ -6354,9 +6204,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeySession:Lcom/touchtype_fluency/Session;
 
@@ -6405,9 +6252,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Float;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Float;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeySession:Lcom/touchtype_fluency/Session;
 
@@ -6452,7 +6296,6 @@
 
 .method public setPredictions(Lcom/touchtype_fluency/Predictions;)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/Predictions;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mPredictions:Lcom/touchtype_fluency/Predictions;
 
@@ -6461,7 +6304,6 @@
 
 .method public setPredictionsListener(Lcom/touchtype_fluency/util/PredictionsListener;)V
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/util/PredictionsListener;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSwiftKeyUtilSession:Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -6472,7 +6314,6 @@
 
 .method public setPreviewFlowPredicions(Lcom/touchtype_fluency/Predictions;)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/Predictions;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mPreviewFlowPredictions:Lcom/touchtype_fluency/Predictions;
 
@@ -6568,7 +6409,6 @@
 
 .method public setSequenceType(Lcom/touchtype_fluency/Sequence$Type;)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/Sequence$Type;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mSequnceType:Lcom/touchtype_fluency/Sequence$Type;
 
@@ -6577,8 +6417,6 @@
 
 .method public setTouchHistory(Lcom/touchtype_fluency/TouchHistory;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/TouchHistory;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTouchHistory:Lcom/touchtype_fluency/TouchHistory;
 
@@ -6600,7 +6438,6 @@
 
 .method public setTouchHistory(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/touchtype_fluency/TouchHistory;
 
@@ -6623,7 +6460,6 @@
 
 .method protected shouldLoadKeyPressModel(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mCurrentKeyPressModelName:Ljava/lang/String;
 
@@ -6664,8 +6500,6 @@
 
 .method public storeTouchHistory(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -6725,7 +6559,6 @@
 
 .method toInitialCaps(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -6805,7 +6638,6 @@
 
 .method public tokenizerSplit(Ljava/lang/String;)Lcom/touchtype_fluency/Sequence;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTokenizer:Lcom/touchtype_fluency/Tokenizer;
 
@@ -6818,15 +6650,12 @@
 
 .method public updateCPSpell(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public updateKeyPressModeling(Lcom/touchtype_fluency/TouchHistory;Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/TouchHistory;
-    .param p2    # Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTrainer:Lcom/touchtype_fluency/Trainer;
 
@@ -6876,8 +6705,6 @@
 
 .method public updateShiftState(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x0
 

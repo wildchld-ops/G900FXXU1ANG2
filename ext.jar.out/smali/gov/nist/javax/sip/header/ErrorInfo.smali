@@ -27,7 +27,6 @@
 
 .method public constructor <init>(Lgov/nist/javax/sip/address/GenericURI;)V
     .locals 0
-    .param p1    # Lgov/nist/javax/sip/address/GenericURI;
 
     invoke-direct {p0}, Lgov/nist/javax/sip/header/ErrorInfo;-><init>()V
 
@@ -142,7 +141,6 @@
 
 .method public setErrorInfo(Ljavax/sip/address/URI;)V
     .locals 0
-    .param p1    # Ljavax/sip/address/URI;
 
     check-cast p1, Lgov/nist/javax/sip/address/GenericURI;
 
@@ -153,7 +151,6 @@
 
 .method public setErrorMessage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;

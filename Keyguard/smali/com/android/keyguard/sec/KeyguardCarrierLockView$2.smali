@@ -33,7 +33,6 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 2
-    .param p1    # Landroid/telephony/ServiceState;
 
     iget-object v0, p0, Lcom/android/keyguard/sec/KeyguardCarrierLockView$2;->this$0:Lcom/android/keyguard/sec/KeyguardCarrierLockView;
 

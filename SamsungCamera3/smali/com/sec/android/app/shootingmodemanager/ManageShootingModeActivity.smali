@@ -40,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/shootingmodemanager/ManageShootingModeActivity;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/ManageShootingModeActivity;
 
     invoke-direct {p0}, Lcom/sec/android/app/shootingmodemanager/ManageShootingModeActivity;->saveOrder()V
 
@@ -49,7 +48,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/shootingmodemanager/ManageShootingModeActivity;)Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/ManageShootingModeActivity;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/ManageShootingModeActivity;->mGridView:Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
@@ -58,7 +56,6 @@
 
 .method private static booleanToInt(Z)I
     .locals 1
-    .param p0    # Z
 
     if-eqz p0, :cond_0
 
@@ -75,7 +72,6 @@
 
 .method private initLayout(Lcom/sec/android/app/shootingmodemanager/ItemsLoader;)V
     .locals 3
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/ItemsLoader;
 
     const v1, 0x7f0e0001
 
@@ -271,9 +267,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -292,7 +285,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -323,7 +315,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -375,7 +366,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 
@@ -396,7 +386,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -417,7 +406,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 

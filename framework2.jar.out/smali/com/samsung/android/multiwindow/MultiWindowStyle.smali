@@ -313,7 +313,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -352,7 +351,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -391,7 +389,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v1, 0x0
 
@@ -432,7 +429,6 @@
 
 .method public constructor <init>(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -471,7 +467,6 @@
 
 .method public static cleanMultiWindowLaunchInSame(Landroid/content/Intent;)V
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getMultiWindowStyle()Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -484,7 +479,6 @@
 
 .method public static cleanMultiWindowLaunchInSame(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 2
-    .param p0    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     if-nez p0, :cond_0
 
@@ -503,7 +497,6 @@
 
 .method public static isMultiWindowLaunchInSame(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getMultiWindowStyle()Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -518,7 +511,6 @@
 
 .method public static isMultiWindowLaunchInSame(Lcom/samsung/android/multiwindow/MultiWindowStyle;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     if-nez p0, :cond_0
 
@@ -539,7 +531,6 @@
 
 .method private parseStyleOptions(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -656,7 +647,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -728,7 +718,6 @@
 
 .method public static skipMultiWindowLaunch(Landroid/content/Intent;)V
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getMultiWindowStyle()Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -754,7 +743,6 @@
 
 .method public static zoneToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -837,7 +825,6 @@
 # virtual methods
 .method public convertToMultiWindowStyle(I)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Lcom/samsung/android/multiwindow/MultiWindowStyle$CompatMultiWindowStyle;
 
@@ -880,7 +867,6 @@
 
 .method public equals(Lcom/samsung/android/multiwindow/MultiWindowStyle;)Z
     .locals 3
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v0, 0x0
 
@@ -1092,7 +1078,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mOptionFlags:I
 
@@ -1209,8 +1194,6 @@
 
 .method public parseStyleOptions(Landroid/content/Context;Landroid/content/pm/ActivityInfo;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     if-nez p2, :cond_1
 
@@ -1320,7 +1303,6 @@
 
 .method public setAppRequestOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mAppRequestOrientation:I
 
@@ -1329,7 +1311,6 @@
 
 .method public setBounds(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     if-nez p1, :cond_0
 
@@ -1380,7 +1361,6 @@
 
 .method public setIsolatedCenterPoint(Landroid/graphics/Point;)V
     .locals 3
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mIsolatedCenterPoint:Landroid/graphics/Point;
 
@@ -1395,7 +1375,6 @@
 
 .method public setMinBoundForLandscapeOrientation(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mMinBoundForLandscapeMode:Landroid/graphics/Rect;
 
@@ -1406,7 +1385,6 @@
 
 .method public setMinBoundForPortraitOrientation(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mMinBoundForPortraitMode:Landroid/graphics/Rect;
 
@@ -1417,7 +1395,6 @@
 
 .method public setNull(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mIsNull:Z
 
@@ -1426,8 +1403,6 @@
 
 .method public setOption(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mOptionFlags:I
 
@@ -1450,8 +1425,6 @@
 
 .method public setOption(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget v0, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mOptionFlags:I
 
@@ -1475,7 +1448,6 @@
 
 .method public setTo(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v0, 0x0
 
@@ -1486,8 +1458,6 @@
 
 .method public setTo(Lcom/samsung/android/multiwindow/MultiWindowStyle;Z)V
     .locals 3
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -1593,7 +1563,6 @@
 
 .method public setType(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mType:I
 
@@ -1631,8 +1600,6 @@
 
 .method public setType(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1649,7 +1616,6 @@
 
 .method public setZone(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mZone:I
 
@@ -1816,8 +1782,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle;->mType:I
 

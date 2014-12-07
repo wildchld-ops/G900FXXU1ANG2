@@ -72,10 +72,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/content/res/Resources;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/res/Resources;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -165,7 +161,6 @@
 
 .method private normalizeLocaleString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -264,7 +259,6 @@
 # virtual methods
 .method clearResourcesForLanguage(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -349,7 +343,6 @@
 
 .method getBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/nuance/connect/internal/ConnectResources;->fileMap:Ljava/util/HashMap;
 
@@ -396,8 +389,6 @@
 
 .method getLanguageBitmap(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -424,7 +415,6 @@
 
 .method getLanguageString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -443,8 +433,6 @@
 
 .method getLanguageString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -482,7 +470,6 @@
 
 .method getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/nuance/connect/internal/ConnectResources;->store:Lcom/nuance/connect/store/PersistentDataStore;
 
@@ -520,7 +507,6 @@
 
 .method hasResourcesForLanguage(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -555,7 +541,6 @@
 
 .method replaceResourcesBegin(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/nuance/connect/internal/ConnectResources;->replaceStrings:Ljava/util/Map;
 
@@ -661,7 +646,6 @@
 
 .method replaceResourcesEnd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/nuance/connect/internal/ConnectResources;->replaceStrings:Ljava/util/Map;
 
@@ -806,9 +790,6 @@
 
 .method replaceResourcesString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/nuance/connect/internal/ConnectResources;->setLanguageString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -875,8 +856,6 @@
 
 .method setBitmap(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     new-instance v0, Ljava/io/File;
@@ -939,9 +918,6 @@
 
 .method setLanguageBitmap(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -966,8 +942,6 @@
 
 .method setLanguageString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -984,9 +958,6 @@
 
 .method setLanguageString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1024,7 +995,6 @@
 
 .method setLanguageStrings(Ljava/lang/String;Ljava/util/HashMap;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1095,8 +1065,6 @@
 
 .method setString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/nuance/connect/internal/ConnectResources;->store:Lcom/nuance/connect/store/PersistentDataStore;
 

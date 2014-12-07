@@ -106,10 +106,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;)V
     .locals 6
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p3    # Lcom/google/android/finsky/api/DfeApi;
-    .param p4    # Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;
 
     invoke-static {}, Lcom/google/android/finsky/billing/BillingLocator;->getCarrierBillingStorage()Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
 
@@ -132,11 +128,6 @@
 
 .method constructor <init>(Lcom/google/android/finsky/billing/BillingFlowContext;Lcom/google/android/finsky/billing/BillingFlowListener;Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;Lcom/google/android/finsky/api/DfeApi;Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;)V
     .locals 10
-    .param p1    # Lcom/google/android/finsky/billing/BillingFlowContext;
-    .param p2    # Lcom/google/android/finsky/billing/BillingFlowListener;
-    .param p3    # Lcom/google/android/finsky/billing/carrierbilling/model/CarrierBillingStorage;
-    .param p4    # Lcom/google/android/finsky/api/DfeApi;
-    .param p5    # Lcom/google/android/finsky/protos/CommonDevice$CarrierBillingInstrumentStatus;
 
     const/4 v9, 0x0
 
@@ -329,8 +320,6 @@
 
 .method static synthetic access$000(Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->continueResume(Landroid/os/Bundle;)V
 
@@ -339,7 +328,6 @@
 
 .method static synthetic access$100(Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;)V
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->hideVerifyAssociationDialog()V
 
@@ -348,7 +336,6 @@
 
 .method static synthetic access$200(Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;)Lcom/google/android/finsky/protos/BillingAddress$Address;
     .locals 1
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mSubscriberAddress:Lcom/google/android/finsky/protos/BillingAddress$Address;
 
@@ -357,8 +344,6 @@
 
 .method static synthetic access$202(Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;Lcom/google/android/finsky/protos/BillingAddress$Address;)Lcom/google/android/finsky/protos/BillingAddress$Address;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;
-    .param p1    # Lcom/google/android/finsky/protos/BillingAddress$Address;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mSubscriberAddress:Lcom/google/android/finsky/protos/BillingAddress$Address;
 
@@ -367,8 +352,6 @@
 
 .method static synthetic access$302(Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;Lcom/google/android/finsky/billing/BillingUtils$AddressMode;)Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;
-    .param p1    # Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mAddressMode:Lcom/google/android/finsky/billing/BillingUtils$AddressMode;
 
@@ -377,8 +360,6 @@
 
 .method static synthetic access$402(Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mDcbTosUrl:Ljava/lang/String;
 
@@ -387,8 +368,6 @@
 
 .method static synthetic access$502(Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mDcbTosVersion:Ljava/lang/String;
 
@@ -397,7 +376,6 @@
 
 .method private continueResume(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mState:Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow$State;
 
@@ -863,7 +841,6 @@
 
 .method private isSubscriberAddressValid(Lcom/google/android/finsky/protos/BillingAddress$Address;)Z
     .locals 5
-    .param p1    # Lcom/google/android/finsky/protos/BillingAddress$Address;
 
     const/4 v1, 0x1
 
@@ -941,8 +918,6 @@
 
 .method private logDcbAddError(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -965,7 +940,6 @@
 
 .method private logDcbAddError(Lcom/android/volley/VolleyError;)V
     .locals 2
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v0, 0x1
 
@@ -984,15 +958,12 @@
 
 .method private logError(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method private showErrorDialog(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog;->newInstance(Ljava/lang/String;Z)Lcom/google/android/finsky/billing/carrierbilling/fragment/CarrierBillingErrorDialog;
 
@@ -1154,7 +1125,6 @@
 
 .method public onAddCarrierBillingResult(Lcom/google/android/finsky/billing/carrierbilling/fragment/AddCarrierBillingFragment$AddCarrierBillingResultListener$AddResult;)V
     .locals 2
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/fragment/AddCarrierBillingFragment$AddCarrierBillingResultListener$AddResult;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mAddResult:Lcom/google/android/finsky/billing/carrierbilling/fragment/AddCarrierBillingFragment$AddCarrierBillingResultListener$AddResult;
 
@@ -1199,7 +1169,6 @@
 
 .method public onEditCarrierBillingResult(Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
 
     invoke-direct {p0}, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->hideEditFragment()V
 
@@ -1220,7 +1189,6 @@
 
 .method public onErrorDismiss(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mAssociationAction:Lcom/google/android/finsky/billing/carrierbilling/flow/association/AssociationAction;
 
@@ -1256,7 +1224,6 @@
 
 .method public onErrorResponse(Lcom/android/volley/VolleyError;)V
     .locals 3
-    .param p1    # Lcom/android/volley/VolleyError;
 
     const/4 v2, 0x0
 
@@ -1289,7 +1256,6 @@
 
 .method public onResponse(Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;)V
     .locals 0
-    .param p1    # Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
     iput-object p1, p0, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->mAddCarrierBillingResponse:Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
@@ -1302,7 +1268,6 @@
 
 .method public bridge synthetic onResponse(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/finsky/protos/BuyInstruments$UpdateInstrumentResponse;
 
@@ -1689,7 +1654,6 @@
 
 .method public resumeFromSavedState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/google/android/finsky/billing/carrierbilling/flow/CreateDcb3Flow;->initParams()Z
 
@@ -1716,7 +1680,6 @@
 
 .method public saveState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "state"
 
@@ -1907,10 +1870,6 @@
 
 .method showError(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -1927,8 +1886,6 @@
 
 .method showGenericError(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1957,9 +1914,6 @@
 
 .method showTosFragment(Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/google/android/finsky/billing/carrierbilling/model/SubscriberInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/google/android/finsky/activities/myapps/DocumentView;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/finsky/activities/myapps/DocumentView$WatchedInstallerListener;->this$0:Lcom/google/android/finsky/activities/myapps/DocumentView;
 
@@ -41,9 +40,6 @@
 # virtual methods
 .method public onInstallPackageEvent(Ljava/lang/String;Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/finsky/installer/InstallerListener$InstallerPackageEvent;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/google/android/finsky/activities/myapps/DocumentView$WatchedInstallerListener;->mWatchedDocId:Ljava/lang/String;
 

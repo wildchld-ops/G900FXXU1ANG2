@@ -284,11 +284,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/ChatOnShot$ChatONBuddyInfo;IFF)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/ChatOnShot$ChatONBuddyInfo;
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
 
     const/4 v2, 0x0
 
@@ -327,7 +322,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
 
     const/4 v7, 0x0
 
@@ -732,7 +726,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v1, 0x1
 
@@ -810,8 +803,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -824,7 +815,6 @@
 
 .method public setCheckBox(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLChatOnBuddyItem;->mDataCheckBox:Lcom/sec/android/app/camera/glwidget/TwGLDeviceListItemDataCheckbox;
 
@@ -1032,7 +1022,6 @@
 
 .method public setOnTouchListener(Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
     const/4 v1, 0x0
 

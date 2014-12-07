@@ -69,7 +69,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,8 +99,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -140,7 +137,6 @@
 
 .method private getPotentialMultiline(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -195,7 +191,6 @@
 
 .method private getPropertyNameUpperCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -253,7 +248,6 @@
 
 .method private getQuotedPrintablePart(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -374,10 +368,6 @@
 
 .method private handleAdrOrgN(Lcom/android/vcard/VCardProperty;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 14
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;,
@@ -584,7 +574,6 @@
 
 .method private isAsciiLetter(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x61
 
@@ -617,8 +606,6 @@
 
 .method private parseItemInter(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -861,7 +848,6 @@
 
 .method static unescapeCharacter(C)Ljava/lang/String;
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x3c
 
@@ -906,7 +892,6 @@
 # virtual methods
 .method public addInterpreter(Lcom/android/vcard/VCardInterpreter;)V
     .locals 1
-    .param p1    # Lcom/android/vcard/VCardInterpreter;
 
     iget-object v0, p0, Lcom/android/vcard/VCardParserImpl_V21;->mInterpreterList:Ljava/util/List;
 
@@ -947,7 +932,6 @@
 
 .method protected constructPropertyData(Ljava/lang/String;)Lcom/android/vcard/VCardProperty;
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -1245,7 +1229,6 @@
 
 .method protected getBase64(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1487,7 +1470,6 @@
 
 .method protected handleAgent(Lcom/android/vcard/VCardProperty;)V
     .locals 4
-    .param p1    # Lcom/android/vcard/VCardProperty;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -1548,9 +1530,6 @@
 
 .method protected handleAnyParam(Lcom/android/vcard/VCardProperty;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1, p2, p3}, Lcom/android/vcard/VCardProperty;->addParameter(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1559,8 +1538,6 @@
 
 .method protected handleCharset(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
 
     iput-object p2, p0, Lcom/android/vcard/VCardParserImpl_V21;->mCurrentCharset:Ljava/lang/String;
 
@@ -1573,8 +1550,6 @@
 
 .method protected handleEncoding(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -1646,8 +1621,6 @@
 
 .method protected handleLanguage(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -1824,8 +1797,6 @@
 
 .method protected handleParamWithoutName(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/vcard/VCardParserImpl_V21;->handleType(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
 
@@ -1834,8 +1805,6 @@
 
 .method protected handleParams(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/exception/VCardException;
@@ -2002,8 +1971,6 @@
 
 .method protected handlePropertyValue(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 28
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -2727,8 +2694,6 @@
 
 .method protected handleType(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/vcard/VCardParserImpl_V21;->getKnownTypeSet()Ljava/util/Set;
 
@@ -2804,8 +2769,6 @@
 
 .method protected handleValue(Lcom/android/vcard/VCardProperty;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/vcard/VCardProperty;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/vcard/VCardParserImpl_V21;->getKnownValueSet()Ljava/util/Set;
 
@@ -2881,7 +2844,6 @@
 
 .method protected isValidPropertyName(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/vcard/VCardParserImpl_V21;->getKnownPropertyNameSet()Ljava/util/Set;
 
@@ -2947,14 +2909,12 @@
 
 .method protected maybeUnescapeText(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-object p1
 .end method
 
 .method public parse(Ljava/io/InputStream;)V
     .locals 7
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -3291,7 +3251,6 @@
 
 .method protected readBeginVCard(Z)Z
     .locals 8
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
